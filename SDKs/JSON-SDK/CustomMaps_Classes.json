@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "Guid",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -20,14 +20,14 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_4Z8DN[0x8]",
+        "Name": "pad0x8_26OPA[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x890"
       },
       {
         "Name": "Font",
-        "Type": "Class Font*",
+        "Type": "class Font*",
         "Size": "0x8",
         "Offset": "0x898"
       },
@@ -38,7 +38,7 @@
         "Offset": "0x8a0"
       },
       {
-        "Name": "pad0x10_11PRX[0x10]",
+        "Name": "pad0x10_6NVKK[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x8b0"
@@ -60,7 +60,7 @@
     "Attributes": [
       {
         "Name": "Guid",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -74,13 +74,13 @@
     "Attributes": [
       {
         "Name": "CustomMapItemDescClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "Font",
-        "Type": "Class Font*",
+        "Type": "class Font*",
         "Size": "0x8",
         "Offset": "0x30"
       },
@@ -100,7 +100,7 @@
     "Attributes": [
       {
         "Name": "Position",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x38"
       },
@@ -111,7 +111,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x4_GHIT9[0x4]",
+        "Name": "pad0x4_INL3U[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x44"
@@ -126,7 +126,7 @@
     "Attributes": [
       {
         "Name": "Position",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x38"
       },
@@ -137,7 +137,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x4_2JLFK[0x4]",
+        "Name": "pad0x4_CQW1A[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x44"
@@ -152,7 +152,7 @@
     "Attributes": [
       {
         "Name": "Text",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x48"
       },
@@ -169,7 +169,7 @@
         "Offset": "0x84"
       },
       {
-        "Name": "pad0x3_2L0HH[0x3]",
+        "Name": "pad0x3_0LVD2[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x85"
@@ -181,7 +181,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x4c_RGMOW[0x4c]",
+        "Name": "pad0x4c_87GIL[0x4c]",
         "Type": "char",
         "Size": "0x4c",
         "Offset": "0x8c"
@@ -196,7 +196,7 @@
     "Attributes": [
       {
         "Name": "Text",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x48"
       },
@@ -213,7 +213,7 @@
         "Offset": "0x84"
       },
       {
-        "Name": "pad0x3_MUK1U[0x3]",
+        "Name": "pad0x3_QTMH9[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x85"
@@ -225,7 +225,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x4_3BD39[0x4]",
+        "Name": "pad0x4_74ZL1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x8c"
@@ -240,7 +240,7 @@
     "Attributes": [
       {
         "Name": "CustomMapItemDescClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x38"
       }

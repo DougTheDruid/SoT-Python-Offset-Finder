@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct TaleWorldLocationPopUpServiceEntry
 {
 public:
-	Struct Vector                                                Location;                                          // 0x0(0xc)
+	struct Vector                                                Location;                                          // 0x0(0xc)
 	float                                                        MaxDistance;                                       // 0xc(0x4)
 };
 
@@ -19,9 +19,9 @@ public:
 struct PlayerEnteredWorldLocationNotificationEvent
 {
 public:
-	Class PopUpAudioDesc*                                        AudioOverride;                                     // 0x0(0x8)
-	Struct FString                                               IconPath;                                          // 0x8(0x10)
-	Struct FString                                               DisplayText;                                       // 0x18(0x10)
+	class PopUpAudioDesc*                                        AudioOverride;                                     // 0x0(0x8)
+	struct FString                                               IconPath;                                          // 0x8(0x10)
+	struct FString                                               DisplayText;                                       // 0x18(0x10)
 };
 
 

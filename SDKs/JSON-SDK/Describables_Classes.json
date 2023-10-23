@@ -1,45 +1,45 @@
 {
   "DescribableComponent": {
     "Super": "InteractableComponent",
-    "FullSize": "0x188",
-    "InheritedSize": "0x128",
+    "FullSize": "0x198",
+    "InheritedSize": "0x138",
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_ZZ0KL[0x8]",
+        "Name": "pad0x8_QDLNN[0x8]",
         "Type": "char",
         "Size": "0x8",
-        "Offset": "0x128"
+        "Offset": "0x138"
       },
       {
         "Name": "TooltipActiveOnBeginPlay",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x130"
+        "Offset": "0x140"
       },
       {
-        "Name": "pad0x7_QEYZD[0x7]",
+        "Name": "pad0x7_U74RS[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x131"
+        "Offset": "0x141"
       },
       {
         "Name": "DescribableTooltipText",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x138"
+        "Offset": "0x148"
       },
       {
         "Name": "TooltipActive",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x170"
+        "Offset": "0x180"
       },
       {
-        "Name": "pad0x17_AYOYE[0x17]",
+        "Name": "pad0x17_QVLWV[0x17]",
         "Type": "char",
         "Size": "0x17",
-        "Offset": "0x171"
+        "Offset": "0x181"
       }
     ]
   },

@@ -2,970 +2,970 @@
 # https://github.com/DougTheDruid
 BP_sod_bld_oos_int_dressing_01_a_C:
   Attributes:
-  - Name: None
+  - Name: Box14
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: Box13
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: Box12
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: Box11
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: Box10
     Offset: '0x3e8'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: Box9
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: Box8
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: Box7
     Offset: '0x400'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: Box6
     Offset: '0x408'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: Box5
     Offset: '0x410'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: Box4
     Offset: '0x418'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: Box3
     Offset: '0x420'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: Box2
     Offset: '0x428'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: Box1
     Offset: '0x430'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: Box
     Offset: '0x438'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: Box_Collision
     Offset: '0x440'
     Size: '0x8'
-    Type: Class BoxComponent*
-  - Name: None
+    Type: class BoxComponent*
+  - Name: WorldLocationPopUp
     Offset: '0x448'
     Size: '0x8'
-    Type: Class WorldLocationPopUpComponent*
-  - Name: None
+    Type: class WorldLocationPopUpComponent*
+  - Name: MagicBox
     Offset: '0x450'
     Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
+    Type: class ChildActorComponent*
+  - Name: StaticMeshComponent0221
     Offset: '0x458'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0220
     Offset: '0x460'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0219
     Offset: '0x468'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0218
     Offset: '0x470'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0217
     Offset: '0x478'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0216
     Offset: '0x480'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0215
     Offset: '0x488'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0214
     Offset: '0x490'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0213
     Offset: '0x498'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0212
     Offset: '0x4a0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: SkeletalMesh
     Offset: '0x4a8'
     Size: '0x8'
-    Type: Class SkeletalMeshComponent*
-  - Name: None
+    Type: class SkeletalMeshComponent*
+  - Name: DefaultSceneRoot1
     Offset: '0x4b0'
     Size: '0x8'
-    Type: Class SceneComponent*
-  - Name: None
+    Type: class SceneComponent*
+  - Name: StaticMeshComponent0211
     Offset: '0x4b8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0210
     Offset: '0x4c0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0209
     Offset: '0x4c8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0208
     Offset: '0x4d0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0207
     Offset: '0x4d8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0206
     Offset: '0x4e0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0205
     Offset: '0x4e8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: SkeletalMeshComponent01
     Offset: '0x4f0'
     Size: '0x8'
-    Type: Class SkeletalMeshComponent*
-  - Name: None
+    Type: class SkeletalMeshComponent*
+  - Name: SkeletalMeshComponent0
     Offset: '0x4f8'
     Size: '0x8'
-    Type: Class SkeletalMeshComponent*
-  - Name: None
+    Type: class SkeletalMeshComponent*
+  - Name: StaticMeshComponent0201
     Offset: '0x500'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0200
     Offset: '0x508'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0199
     Offset: '0x510'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0198
     Offset: '0x518'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0197
     Offset: '0x520'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0196
     Offset: '0x528'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0195
     Offset: '0x530'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0194
     Offset: '0x538'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0193
     Offset: '0x540'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0192
     Offset: '0x548'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0191
     Offset: '0x550'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0190
     Offset: '0x558'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0189
     Offset: '0x560'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0188
     Offset: '0x568'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0187
     Offset: '0x570'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0186
     Offset: '0x578'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0185
     Offset: '0x580'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0184
     Offset: '0x588'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0183
     Offset: '0x590'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0182
     Offset: '0x598'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0181
     Offset: '0x5a0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0180
     Offset: '0x5a8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0179
     Offset: '0x5b0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0178
     Offset: '0x5b8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0177
     Offset: '0x5c0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0176
     Offset: '0x5c8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0175
     Offset: '0x5d0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0174
     Offset: '0x5d8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0173
     Offset: '0x5e0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0172
     Offset: '0x5e8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0171
     Offset: '0x5f0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0170
     Offset: '0x5f8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0169
     Offset: '0x600'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0168
     Offset: '0x608'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0167
     Offset: '0x610'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0166
     Offset: '0x618'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0165
     Offset: '0x620'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0164
     Offset: '0x628'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0163
     Offset: '0x630'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0162
     Offset: '0x638'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0161
     Offset: '0x640'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0160
     Offset: '0x648'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0159
     Offset: '0x650'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0158
     Offset: '0x658'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0157
     Offset: '0x660'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0156
     Offset: '0x668'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0155
     Offset: '0x670'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0154
     Offset: '0x678'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0153
     Offset: '0x680'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0152
     Offset: '0x688'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0151
     Offset: '0x690'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0150
     Offset: '0x698'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0149
     Offset: '0x6a0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0148
     Offset: '0x6a8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0147
     Offset: '0x6b0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0146
     Offset: '0x6b8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0145
     Offset: '0x6c0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0144
     Offset: '0x6c8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0143
     Offset: '0x6d0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0142
     Offset: '0x6d8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0141
     Offset: '0x6e0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0140
     Offset: '0x6e8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0139
     Offset: '0x6f0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0138
     Offset: '0x6f8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0137
     Offset: '0x700'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0136
     Offset: '0x708'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0135
     Offset: '0x710'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0134
     Offset: '0x718'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0133
     Offset: '0x720'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0132
     Offset: '0x728'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0131
     Offset: '0x730'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0130
     Offset: '0x738'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0129
     Offset: '0x740'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0128
     Offset: '0x748'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0127
     Offset: '0x750'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0126
     Offset: '0x758'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0125
     Offset: '0x760'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0124
     Offset: '0x768'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0123
     Offset: '0x770'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0122
     Offset: '0x778'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0121
     Offset: '0x780'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0120
     Offset: '0x788'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0119
     Offset: '0x790'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0118
     Offset: '0x798'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0117
     Offset: '0x7a0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0116
     Offset: '0x7a8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0115
     Offset: '0x7b0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0114
     Offset: '0x7b8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0113
     Offset: '0x7c0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0112
     Offset: '0x7c8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0111
     Offset: '0x7d0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0110
     Offset: '0x7d8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0109
     Offset: '0x7e0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0108
     Offset: '0x7e8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0107
     Offset: '0x7f0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0106
     Offset: '0x7f8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0105
     Offset: '0x800'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0104
     Offset: '0x808'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0103
     Offset: '0x810'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0102
     Offset: '0x818'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0101
     Offset: '0x820'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0100
     Offset: '0x828'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent099
     Offset: '0x830'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent098
     Offset: '0x838'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent097
     Offset: '0x840'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent096
     Offset: '0x848'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent095
     Offset: '0x850'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent094
     Offset: '0x858'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent093
     Offset: '0x860'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent092
     Offset: '0x868'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent091
     Offset: '0x870'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent090
     Offset: '0x878'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent089
     Offset: '0x880'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent088
     Offset: '0x888'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent087
     Offset: '0x890'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent086
     Offset: '0x898'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent085
     Offset: '0x8a0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent084
     Offset: '0x8a8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent083
     Offset: '0x8b0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent082
     Offset: '0x8b8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent081
     Offset: '0x8c0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent080
     Offset: '0x8c8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent079
     Offset: '0x8d0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent078
     Offset: '0x8d8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent077
     Offset: '0x8e0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent076
     Offset: '0x8e8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent075
     Offset: '0x8f0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent074
     Offset: '0x8f8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent073
     Offset: '0x900'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent072
     Offset: '0x908'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent071
     Offset: '0x910'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent070
     Offset: '0x918'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent069
     Offset: '0x920'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent068
     Offset: '0x928'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent067
     Offset: '0x930'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent066
     Offset: '0x938'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent065
     Offset: '0x940'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent064
     Offset: '0x948'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent063
     Offset: '0x950'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent062
     Offset: '0x958'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent061
     Offset: '0x960'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent060
     Offset: '0x968'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent059
     Offset: '0x970'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent058
     Offset: '0x978'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent057
     Offset: '0x980'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent056
     Offset: '0x988'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent055
     Offset: '0x990'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent054
     Offset: '0x998'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent053
     Offset: '0x9a0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent052
     Offset: '0x9a8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent051
     Offset: '0x9b0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent050
     Offset: '0x9b8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent049
     Offset: '0x9c0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent048
     Offset: '0x9c8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent047
     Offset: '0x9d0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent046
     Offset: '0x9d8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent044
     Offset: '0x9e0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent043
     Offset: '0x9e8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent042
     Offset: '0x9f0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent041
     Offset: '0x9f8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent040
     Offset: '0xa00'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent039
     Offset: '0xa08'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent038
     Offset: '0xa10'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent037
     Offset: '0xa18'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent036
     Offset: '0xa20'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent035
     Offset: '0xa28'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent034
     Offset: '0xa30'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent033
     Offset: '0xa38'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent032
     Offset: '0xa40'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent031
     Offset: '0xa48'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent030
     Offset: '0xa50'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent029
     Offset: '0xa58'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent028
     Offset: '0xa60'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent027
     Offset: '0xa68'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent026
     Offset: '0xa70'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent025
     Offset: '0xa78'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent024
     Offset: '0xa80'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent023
     Offset: '0xa88'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent022
     Offset: '0xa90'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent021
     Offset: '0xa98'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent020
     Offset: '0xaa0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent019
     Offset: '0xaa8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent018
     Offset: '0xab0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent017
     Offset: '0xab8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent016
     Offset: '0xac0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent015
     Offset: '0xac8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent014
     Offset: '0xad0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent013
     Offset: '0xad8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent012
     Offset: '0xae0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent011
     Offset: '0xae8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent010
     Offset: '0xaf0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent09
     Offset: '0xaf8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent08
     Offset: '0xb00'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent07
     Offset: '0xb08'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent06
     Offset: '0xb10'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent05
     Offset: '0xb18'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent04
     Offset: '0xb20'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent03
     Offset: '0xb28'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent02
     Offset: '0xb30'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent01
     Offset: '0xb38'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0
     Offset: '0xb40'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: SharedRoot
     Offset: '0xb48'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x788'
   FullSize: '0xb50'
   InheritedSize: '0x3c8'

@@ -4,7 +4,14 @@
     "FullSize": "0x458",
     "InheritedSize": "0x410",
     "ClassSize": "0x48",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x48_6UROY[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x410"
+      }
+    ]
   },
   "WaterEmissionVolumeInterface": {
     "Super": "Interface",
@@ -18,7 +25,14 @@
     "FullSize": "0x3d8",
     "InheritedSize": "0x3d0",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_3WCOR[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      }
+    ]
   },
   "FFTWaterInterface": {
     "Super": "Interface",
@@ -35,7 +49,7 @@
     "Attributes": [
       {
         "Name": "WaterInfo",
-        "Type": "TArray<struct WaterInfo>",
+        "Type": "TArray<struct WaterInformation>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -55,7 +69,7 @@
     "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "pad0x78_ZNBU1[0x78]",
+        "Name": "pad0x78_SWWQL[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0x3c8"
@@ -73,14 +87,28 @@
     "FullSize": "0x5e0",
     "InheritedSize": "0x5d0",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_N5EOS[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x5d0"
+      }
+    ]
   },
   "MockWaterInterface": {
     "Super": "Object",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_HQP3B[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
   },
   "MockWaterServiceWithValidWaterPlane": {
     "Super": "MockWaterInterface",
@@ -90,7 +118,7 @@
     "Attributes": [
       {
         "Name": "DefaultWaterComponent",
-        "Type": "Class FFTWaterComponent*",
+        "Type": "class FFTWaterComponent*",
         "Size": "0x8",
         "Offset": "0x38"
       }
@@ -143,7 +171,14 @@
     "FullSize": "0x48",
     "InheritedSize": "0x28",
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x20_M63O5[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
   },
   "WaterExclusionSurfaceInterface": {
     "Super": "Interface",
@@ -164,7 +199,26 @@
     "FullSize": "0x610",
     "InheritedSize": "0x5f0",
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x14_HY8BY[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0x5f0"
+      },
+      {
+        "Name": "ServerCorrectedWaterExclusionZoneCount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x604"
+      },
+      {
+        "Name": "pad0x8_U4IBS[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x608"
+      }
+    ]
   },
   "WaterPlaneExclusionComponent": {
     "Super": "ActorComponent",
@@ -174,7 +228,7 @@
     "Attributes": [
       {
         "Name": "UseSpecificComponentForOverlaps",
-        "Type": "Struct ActorComponentSelector",
+        "Type": "struct ActorComponentSelector",
         "Size": "0x10",
         "Offset": "0xc8"
       }
@@ -202,7 +256,7 @@
     "Attributes": [
       {
         "Name": "Probes",
-        "Type": "TArray<struct Probes>",
+        "Type": "TArray<struct SplashProbe>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -215,32 +269,32 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x28_WESTC[0x28]",
+        "Name": "pad0x28_3C45B[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xc8"
       },
       {
         "Name": "Probes",
-        "Type": "Class SplashProbeDataAsset*",
+        "Type": "class SplashProbeDataAsset*",
         "Size": "0x8",
         "Offset": "0xf0"
       },
       {
         "Name": "ProbesInstance",
-        "Type": "Class SplashProbeDataAsset*",
+        "Type": "class SplashProbeDataAsset*",
         "Size": "0x8",
         "Offset": "0xf8"
       },
       {
         "Name": "AttachProbesToOwner",
-        "Type": "Struct ActorComponentSelector",
+        "Type": "struct ActorComponentSelector",
         "Size": "0x10",
         "Offset": "0x100"
       },
       {
         "Name": "AttachProbesToComponent",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x110"
       },
@@ -251,7 +305,7 @@
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x7_WK7L5[0x7]",
+        "Name": "pad0x7_ZJW5I[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x119"
@@ -273,31 +327,31 @@
     "Attributes": [
       {
         "Name": "WaterSpouts",
-        "Type": "TArray<struct WaterSpouts>",
+        "Type": "TArray<struct WaterSpout>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "SplashEffectPointBottomZ",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x4_L9KI0[0x4]",
+        "Name": "pad0x4_R8MX3[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xe4"
       },
       {
         "Name": "SpoutParticleSystem",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0xe8"
       },
       {
         "Name": "SplashParticleSystem",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0xf0"
       },
@@ -332,43 +386,43 @@
         "Offset": "0x108"
       },
       {
-        "Name": "pad0x7_3HSWO[0x7]",
+        "Name": "pad0x7_6X7N0[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x109"
       },
       {
         "Name": "SplashKillPlaneMesh",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x110"
       },
       {
         "Name": "SplashKillPlaneScale",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x4_42QDK[0x4]",
+        "Name": "pad0x4_WXBH6[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x124"
       },
       {
         "Name": "SplashKillPlane",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x128"
       },
       {
         "Name": "ActiveWaterSpouts",
-        "Type": "TArray<struct ActiveWaterSpouts>",
+        "Type": "TArray<struct WaterSpout>",
         "Size": "0x10",
         "Offset": "0x130"
       },
       {
-        "Name": "pad0x18_MKM5I[0x18]",
+        "Name": "pad0x18_TP2XO[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x140"

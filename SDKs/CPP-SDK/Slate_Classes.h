@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class ButtonWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
-	Struct ButtonStyle                                           ButtonStyle;                                       // 0x30(0x2a8)
+	struct ButtonStyle                                           ButtonStyle;                                       // 0x30(0x2a8)
 };
 
 
@@ -18,7 +18,7 @@ public:
 class CheckBoxWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
-	Struct CheckBoxStyle                                         CheckBoxStyle;                                     // 0x30(0x5f0)
+	struct CheckBoxStyle                                         CheckBoxStyle;                                     // 0x30(0x5f0)
 };
 
 
@@ -26,7 +26,7 @@ public:
 class ComboBoxWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
-	Struct ComboBoxStyle                                         ComboBoxStyle;                                     // 0x30(0x428)
+	struct ComboBoxStyle                                         ComboBoxStyle;                                     // 0x30(0x428)
 };
 
 
@@ -34,7 +34,7 @@ public:
 class ComboButtonWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
-	Struct ComboButtonStyle                                      ComboButtonStyle;                                  // 0x30(0x3e0)
+	struct ComboButtonStyle                                      ComboButtonStyle;                                  // 0x30(0x3e0)
 };
 
 
@@ -42,7 +42,7 @@ public:
 class EditableTextBoxWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
-	Struct EditableTextBoxStyle                                  EditableTextBoxStyle;                              // 0x30(0x860)
+	struct EditableTextBoxStyle                                  EditableTextBoxStyle;                              // 0x30(0x860)
 };
 
 
@@ -50,7 +50,7 @@ public:
 class EditableTextWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
-	Struct EditableTextStyle                                     EditableTextStyle;                                 // 0x30(0x228)
+	struct EditableTextStyle                                     EditableTextStyle;                                 // 0x30(0x228)
 };
 
 
@@ -58,7 +58,7 @@ public:
 class ProgressWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
-	Struct ProgressBarStyle                                      ProgressBarStyle;                                  // 0x30(0x1b8)
+	struct ProgressBarStyle                                      ProgressBarStyle;                                  // 0x30(0x1b8)
 };
 
 
@@ -66,7 +66,7 @@ public:
 class ScrollBarWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
-	Struct ScrollBarStyle                                        ScrollBarStyle;                                    // 0x30(0x518)
+	struct ScrollBarStyle                                        ScrollBarStyle;                                    // 0x30(0x518)
 };
 
 
@@ -74,7 +74,7 @@ public:
 class ScrollBoxWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
-	Struct ScrollBoxStyle                                        ScrollBoxStyle;                                    // 0x30(0x248)
+	struct ScrollBoxStyle                                        ScrollBoxStyle;                                    // 0x30(0x248)
 };
 
 
@@ -82,7 +82,7 @@ public:
 class SpinBoxWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
-	Struct SpinBoxStyle                                          SpinBoxStyle;                                      // 0x30(0x318)
+	struct SpinBoxStyle                                          SpinBoxStyle;                                      // 0x30(0x318)
 };
 
 
@@ -90,7 +90,7 @@ public:
 class TextBlockWidgetStyle: public SlateWidgetStyleContainerBase
 {
 public:
-	Struct TextBlockStyle                                        TextBlockStyle;                                    // 0x30(0x160)
+	struct TextBlockStyle                                        TextBlockStyle;                                    // 0x30(0x160)
 };
 
 

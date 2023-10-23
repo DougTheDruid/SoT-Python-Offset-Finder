@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct HullDamagePersistenceModel
 {
 public:
-	TArray<struct DamageZones>                                   DamageZones;                                       // 0x0(0x10)
+	TArray<struct HullDamageZoneInfo>                            DamageZones;                                       // 0x0(0x10)
 };
 
 
@@ -18,12 +18,12 @@ public:
 struct HullDamageZoneInfo
 {
 public:
-	Struct FString                                               DamageZoneId;                                      // 0x0(0x10)
+	struct FString                                               DamageZoneId;                                      // 0x0(0x10)
 	int                                                          DamageLevel;                                       // 0x10(0x4)
 	int                                                          RepairedDamageLevel;                               // 0x14(0x4)
 	byte                                                         RepairableState;                                   // 0x18(0x1)
-	char                                                         pad0x7_YXJMG[0x7];                                 // 0x19(0x7)
-	TArray<struct ExternalHitList>                               ExternalHitList;                                   // 0x20(0x10)
+	char                                                         pad0x7_FWRX7[0x7];                                 // 0x19(0x7)
+	TArray<struct HullDamageHit>                                 ExternalHitList;                                   // 0x20(0x10)
 };
 
 
@@ -31,35 +31,10 @@ public:
 struct HullDamageHit
 {
 public:
-	Struct Vector                                                HitPosition;                                       // 0x0(0xc)
-	Struct Vector                                                HitNormal;                                         // 0xc(0xc)
+	struct Vector                                                HitPosition;                                       // 0x0(0xc)
+	struct Vector                                                HitNormal;                                         // 0xc(0xc)
 	bool                                                         HasDecal;                                          // 0x18(0x1)
-};
-
-
-// Size 0x10
-struct ShipDamageParams
-{
-public:
-	TArray<struct DamageParams>                                  DamageParams;                                      // 0x0(0x10)
-};
-
-
-// Size 0x40
-struct ShipPartLevelsOfDamage
-{
-public:
-	TArray<struct DamagePerDistance>                             DamagePerDistance;                                 // 0x20(0x10)
-	Struct FeatureFlag                                           FeatureName;                                       // 0x30(0xc)
-};
-
-
-// Size 0x8
-struct DistanceAndLevelOfDamage
-{
-public:
-	float                                                        DistanceLimit;                                     // 0x0(0x4)
-	int                                                          LevelOfDamage;                                     // 0x4(0x4)
+	char                                                         pad0x3_A2MAQ[0x3];                                 // 0x19(0x3)
 };
 
 
@@ -67,11 +42,11 @@ public:
 struct EventShipDamageApplied
 {
 public:
-	Class Actor*                                                 Ship;                                              // 0x0(0x8)
+	class Actor*                                                 Ship;                                              // 0x0(0x8)
 	struct FName                                                 DamagedShipPartIdentifier;                         // 0x8(0x8)
 	int                                                          NewDamageLevel;                                    // 0x10(0x4)
-	char                                                         pad0x4_31HIY[0x4];                                 // 0x14(0x4)
-	Struct ImpactDamageEvent                                     ImpactDamageEvent;                                 // 0x18(0x58)
+	char                                                         pad0x4_C9LAT[0x4];                                 // 0x14(0x4)
+	struct ImpactDamageEvent                                     ImpactDamageEvent;                                 // 0x18(0x58)
 };
 
 
@@ -79,8 +54,8 @@ public:
 struct EventShipDamaged
 {
 public:
-	Class Actor*                                                 Ship;                                              // 0x0(0x8)
-	Struct ImpactDamageEvent                                     ImpactDamageEvent;                                 // 0x8(0x58)
+	class Actor*                                                 Ship;                                              // 0x0(0x8)
+	struct ImpactDamageEvent                                     ImpactDamageEvent;                                 // 0x8(0x58)
 };
 
 
@@ -88,8 +63,9 @@ public:
 struct DamageZoneDamageLevelChanged
 {
 public:
-	Class Actor*                                                 DamageZone;                                        // 0x0(0x8)
+	class Actor*                                                 DamageZone;                                        // 0x0(0x8)
 	int                                                          DamageLevel;                                       // 0x8(0x4)
+	char                                                         pad0x4_1XG75[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -97,8 +73,8 @@ public:
 struct AppliedDamageToShipEvent
 {
 public:
-	class                                                        ShipType;                                          // 0x0(0x8)
-	Class Actor*                                                 Ship;                                              // 0x8(0x8)
+	class UClass*                                                ShipType;                                          // 0x0(0x8)
+	class Actor*                                                 Ship;                                              // 0x8(0x8)
 };
 
 
@@ -106,6 +82,7 @@ public:
 struct ShipRestoredNetworkEvent
 {
 public:
+	char                                                         pad0x10_27ZKG[0x10];                               // 0x0(0x10)
 };
 
 
@@ -113,7 +90,8 @@ public:
 struct SendShipRestoredRpc
 {
 public:
-	Struct Guid                                                  CrewId;                                            // 0x10(0x10)
+	char                                                         pad0x10_RCFPY[0x10];                               // 0x0(0x10)
+	struct Guid                                                  CrewId;                                            // 0x10(0x10)
 };
 
 
@@ -122,6 +100,36 @@ struct EventRestoreShip
 {
 public:
 	bool                                                         OnlyRepaired;                                      // 0x0(0x1)
+};
+
+
+// Size 0x10
+struct ShipDamageParams
+{
+public:
+	TArray<struct ShipPartLevelsOfDamage>                        DamageParams;                                      // 0x0(0x10)
+};
+
+
+// Size 0x40
+struct ShipPartLevelsOfDamage
+{
+public:
+	char                                                         pad0x20_OSYX3[0x20];                               // 0x0(0x20)
+	TArray<struct DistanceAndLevelOfDamage>                      DamagePerDistance;                                 // 0x20(0x10)
+	struct FeatureFlag                                           FeatureName;                                       // 0x30(0xc)
+	char                                                         pad0x4_OEVF5[0x4];                                 // 0x3c(0x4)
+};
+
+
+// Size 0xc
+struct DistanceAndLevelOfDamage
+{
+public:
+	float                                                        DistanceLimit;                                     // 0x0(0x4)
+	int                                                          LevelOfDamage;                                     // 0x4(0x4)
+	bool                                                         OnlyDamagesOnce;                                   // 0x8(0x1)
+	char                                                         pad0x3_V8VQC[0x3];                                 // 0x9(0x3)
 };
 
 

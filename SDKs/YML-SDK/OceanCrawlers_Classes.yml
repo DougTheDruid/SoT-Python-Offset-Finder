@@ -6,7 +6,7 @@ BTTask_BroadcastOceanCrawlerAbilityAudioEvent:
     Offset: '0x60'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_VBKY6[0x7]
+  - Name: pad0x7_ZL5K1[0x7]
     Offset: '0x61'
     Size: '0x7'
     Type: char
@@ -19,12 +19,12 @@ OceanCrawlerAudioBroadcaster:
   - Name: AudioDataAsset
     Offset: '0xc8'
     Size: '0x8'
-    Type: Class OceanCrawlerAudioParamsDataAsset*
+    Type: class OceanCrawlerAudioParamsDataAsset*
   - Name: CachedOwner
     Offset: '0xd0'
     Size: '0x8'
-    Type: Class Actor*
-  - Name: pad0xe8_TP3WP[0xe8]
+    Type: class Actor*
+  - Name: pad0xe8_BHULJ[0xe8]
     Offset: '0xd8'
     Size: '0xe8'
     Type: char
@@ -37,27 +37,27 @@ OceanCrawlerAudioParamsDataAsset:
   - Name: WwiseObjectPoolWrapper
     Offset: '0x28'
     Size: '0x8'
-    Type: Class WwiseObjectPoolWrapper*
+    Type: class WwiseObjectPoolWrapper*
   - Name: AudioKeyPairs
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<struct AudioKeyPairs>
+    Type: TArray<struct OceanCrawlerAudioKeyPair>
   - Name: BuffThankDelay
     Offset: '0x40'
     Size: '0x30'
-    Type: Struct WeightedProbabilityRangeOfRanges
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: CrabBuffAudioSettings
     Offset: '0x70'
     Size: '0x10'
-    Type: Struct OceanCrawlerBuffAudioSettings
+    Type: struct OceanCrawlerBuffAudioSettings
   - Name: EelBuffAudioSettings
     Offset: '0x80'
     Size: '0x10'
-    Type: Struct OceanCrawlerBuffAudioSettings
+    Type: struct OceanCrawlerBuffAudioSettings
   - Name: HermitBuffAudioSettings
     Offset: '0x90'
     Size: '0x10'
-    Type: Struct OceanCrawlerBuffAudioSettings
+    Type: struct OceanCrawlerBuffAudioSettings
   ClassSize: '0x78'
   FullSize: '0xa0'
   InheritedSize: '0x28'

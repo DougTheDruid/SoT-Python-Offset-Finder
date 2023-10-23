@@ -5,19 +5,19 @@ bsp_bottle_hanging_light_b_C:
   - Name: PointLight1
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class PointLightComponent*
+    Type: class PointLightComponent*
   - Name: PointLight
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class PointLightComponent*
+    Type: class PointLightComponent*
   - Name: StaticMesh1
     Offset: '0x3e8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   ClassSize: '0x20'
   FullSize: '0x3f8'
   InheritedSize: '0x3d8'

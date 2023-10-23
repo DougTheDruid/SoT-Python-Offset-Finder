@@ -5,23 +5,23 @@ BP_Placement_Garden_C:
   - Name: UberGraphFrame
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: Billboard
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class BillboardComponent*
+    Type: class BillboardComponent*
   - Name: Spherical Volume
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class SphereComponent*
+    Type: class SphereComponent*
   - Name: Scene
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   - Name: Meshes
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<struct Meshes>
+    Type: TArray<struct PlacementGardenSeed>
   - Name: Radius
     Offset: '0x3f8'
     Size: '0x4'
@@ -30,7 +30,7 @@ BP_Placement_Garden_C:
     Offset: '0x3fc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_4OBU8[0x3]
+  - Name: pad0x3_L0HN9[0x3]
     Offset: '0x3fd'
     Size: '0x3'
     Type: char
@@ -46,7 +46,7 @@ BP_Placement_Garden_C:
     Offset: '0x408'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_V14M0[0x4]
+  - Name: pad0x4_TAS3G[0x4]
     Offset: '0x40c'
     Size: '0x4'
     Type: char
@@ -58,7 +58,7 @@ BP_Placement_Garden_C:
     Offset: '0x420'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_SNO7E[0x7]
+  - Name: pad0x7_RMQYS[0x7]
     Offset: '0x421'
     Size: '0x7'
     Type: char
@@ -73,19 +73,19 @@ BP_Placement_Garden_C:
   - Name: Random
     Offset: '0x448'
     Size: '0x8'
-    Type: Struct RandomStream
+    Type: struct RandomStream
   - Name: Instance Count
     Offset: '0x450'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_7KR57[0x4]
+  - Name: pad0x4_II8IH[0x4]
     Offset: '0x454'
     Size: '0x4'
     Type: char
   - Name: Mesh Radii
     Offset: '0x458'
     Size: '0x10'
-    Type: TArray<struct Mesh Radii>
+    Type: TArray<struct LinearColor>
   - Name: Max Draw Distance
     Offset: '0x468'
     Size: '0x4'

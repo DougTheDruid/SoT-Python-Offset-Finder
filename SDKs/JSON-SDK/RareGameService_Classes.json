@@ -20,7 +20,7 @@
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "pad0x8_93WNY[0x8]",
+        "Name": "pad0x8_MI49P[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -32,14 +32,14 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x40_L403A[0x40]",
+        "Name": "pad0x40_KHQXS[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0xe0"
       },
       {
         "Name": "ServiceSpecifications",
-        "Type": "TArray<struct ServiceSpecifications>",
+        "Type": "TArray<struct RareGameServiceSpecification>",
         "Size": "0x10",
         "Offset": "0x120"
       }

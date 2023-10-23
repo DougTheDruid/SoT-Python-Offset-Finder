@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 DeliverableComponent:
   Attributes:
-  - Name: pad0x10_VGD2T[0x10]
+  - Name: pad0x10_B877R[0x10]
     Offset: '0xc8'
     Size: '0x10'
     Type: char
   - Name: DeliveryRequirementsAsset
     Offset: '0xd8'
     Size: '0x8'
-    Type: Class DeliverableRequirementsDataAsset*
-  - Name: pad0x8_EX3O6[0x8]
+    Type: class DeliverableRequirementsDataAsset*
+  - Name: pad0x8_NYWR3[0x8]
     Offset: '0xe0'
     Size: '0x8'
     Type: char
@@ -26,14 +26,14 @@ DeliverableInterface:
   Super: Interface
 DeliverableRedirectionComponent:
   Attributes:
-  - Name: pad0x8_7BGJ5[0x8]
+  - Name: pad0x8_E0U13[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
   - Name: Context
     Offset: '0xd0'
     Size: '0x8'
-    Type: Class DeliverableRedirectionContextBase*
+    Type: class DeliverableRedirectionContextBase*
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'
@@ -44,7 +44,7 @@ DeliverableRedirectionCompositeContext:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<class DeliverableRedirectionContextBase*>
-  - Name: pad0x18_5W6LN[0x18]
+  - Name: pad0x18_FH384[0x18]
     Offset: '0x38'
     Size: '0x18'
     Type: char
@@ -63,7 +63,7 @@ DeliverableRedirectionContextHandlerBase:
   - Name: DestinationDescriptor
     Offset: '0x28'
     Size: '0x8'
-    Type: Class DeliverableRedirectionDestinationDescriptorBase*
+    Type: class DeliverableRedirectionDestinationDescriptorBase*
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
@@ -85,7 +85,7 @@ DeliverableRedirectionLiteralDestinationDescriptor:
   - Name: Destination
     Offset: '0x28'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
@@ -97,7 +97,11 @@ DeliverableRedirectionNoContext:
   InheritedSize: '0x28'
   Super: DeliverableRedirectionContextBase
 DeliverableRequirementBase:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_MPVBX[0x8]
+    Offset: '0x28'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
@@ -111,7 +115,7 @@ DeliverableRequirementsDataAsset:
   - Name: FeatureOverrideRequirements
     Offset: '0x38'
     Size: '0x18'
-    Type: Struct DeliverableRequirementFeatureOverride
+    Type: struct DeliverableRequirementFeatureOverride
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'

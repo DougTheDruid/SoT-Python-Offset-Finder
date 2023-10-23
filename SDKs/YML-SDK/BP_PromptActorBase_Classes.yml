@@ -5,16 +5,16 @@ BP_PromptActorBase_C:
   - Name: UberGraphFrame
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: DefaultSceneRoot
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   - Name: IsCompleted
     Offset: '0x3d8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_V9C0K[0x7]
+  - Name: pad0x7_LKBIP[0x7]
     Offset: '0x3d9'
     Size: '0x7'
     Type: char
@@ -22,7 +22,7 @@ BP_PromptActorBase_C:
     Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<class BP_PromptCoordinator_Base_C*>
-  - Name: pad0x10_80ZRD[0x10]
+  - Name: pad0x10_95OVK[0x10]
     Offset: '0x3f0'
     Size: '0x10'
     Type: char

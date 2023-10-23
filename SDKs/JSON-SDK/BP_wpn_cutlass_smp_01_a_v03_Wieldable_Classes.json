@@ -7,19 +7,19 @@
     "Attributes": [
       {
         "Name": "shroud_fp",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xb58"
       },
       {
         "Name": "shroudmask_tp",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xb60"
       },
       {
         "Name": "shroud_tp",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xb68"
       }

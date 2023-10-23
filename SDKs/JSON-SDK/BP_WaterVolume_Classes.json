@@ -7,37 +7,37 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x448"
       },
       {
         "Name": "WaterPlaneActivatationVolume",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x450"
       },
       {
         "Name": "DynamicFlow",
-        "Type": "Class DynamicFlowComponent*",
+        "Type": "class DynamicFlowComponent*",
         "Size": "0x8",
         "Offset": "0x458"
       },
       {
         "Name": "FlatWaterPlane",
-        "Type": "Class FlatWaterPlaneComponent*",
+        "Type": "class FlatWaterPlaneComponent*",
         "Size": "0x8",
         "Offset": "0x460"
       },
       {
         "Name": "FlatWaterMesh",
-        "Type": "Class FlatWaterMeshComponent*",
+        "Type": "class FlatWaterMeshComponent*",
         "Size": "0x8",
         "Offset": "0x468"
       },
       {
         "Name": "Root",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x470"
       },
@@ -48,7 +48,7 @@
         "Offset": "0x478"
       },
       {
-        "Name": "pad0x3_2ACZ0[0x3]",
+        "Name": "pad0x3_KHXFZ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x479"

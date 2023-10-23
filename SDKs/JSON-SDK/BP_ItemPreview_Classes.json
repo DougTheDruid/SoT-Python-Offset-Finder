@@ -7,78 +7,78 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x5a8"
       },
       {
         "Name": "Camera_Dog",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x5b0"
       },
       {
         "Name": "Camera_Far",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x5b8"
       },
       {
         "Name": "Camera_Mid",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x5c0"
       },
       {
         "Name": "Camera_Near",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x5c8"
       },
       {
         "Name": "IconBillboard",
-        "Type": "Class BillboardComponent*",
+        "Type": "class BillboardComponent*",
         "Size": "0x8",
         "Offset": "0x5d0"
       },
       {
         "Name": "Camera_Default",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x5d8"
       },
       {
         "Name": "ChildActor",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x5e0"
       },
       {
         "Name": "HiddenDftMesh",
-        "Type": "Class SkeletalMeshComponent*",
+        "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5e8"
       },
       {
         "Name": "ItemMesh",
-        "Type": "Class SkeletalMeshComponent*",
+        "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5f0"
       },
       {
         "Name": "Camera",
-        "Type": "Class CameraComponent*",
+        "Type": "class CameraComponent*",
         "Size": "0x8",
         "Offset": "0x5f8"
       },
       {
         "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x600"
       },
       {
-        "Name": "pad0x30_7JM8Y[0x30]",
+        "Name": "pad0x30_OYY8Q[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x608"

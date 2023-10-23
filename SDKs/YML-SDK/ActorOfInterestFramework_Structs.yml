@@ -5,22 +5,22 @@ ActorOfInterestRegisteredEvent:
   - Name: ActorOfInterest
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: ActorOfInterestId
     Offset: '0x8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x10'
 ActorOfInterestUnregisteredEvent:
   Attributes:
   - Name: ActorOfInterest
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: ActorOfInterestId
     Offset: '0x8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x10'
 ActorsOfInterestList:
   Attributes:

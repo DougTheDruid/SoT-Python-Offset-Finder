@@ -5,51 +5,51 @@ BP_large_mast_main_C:
   - Name: UberGraphFrame
     Offset: '0xa68'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: GuildPlaque
     Offset: '0xa70'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: BP_MastEmissaryFlag
     Offset: '0xa78'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: shp_flag_pennant_alliance_01_a
     Offset: '0xa80'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: BP_ShipFlagCustomizationChest
     Offset: '0xa88'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: BP_Bell
     Offset: '0xa90'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: shp_flag_jolly_roger_01_a
     Offset: '0xa98'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Ladder
     Offset: '0xaa0'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: WeldedCrowsNestPhysics
     Offset: '0xaa8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: WeldedMastPhysics
     Offset: '0xab0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: shp_mast_ladder_step_01_a
     Offset: '0xab8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: CrowsNest
     Offset: '0xac0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   ClassSize: '0x60'
   FullSize: '0xac8'
   InheritedSize: '0xa68'

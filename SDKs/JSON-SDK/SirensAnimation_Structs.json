@@ -4,25 +4,25 @@
     "Attributes": [
       {
         "Name": "LocomotionAnims",
-        "Type": "Struct SirenAnimationLocomotion",
+        "Type": "struct SirenAnimationLocomotion",
         "Size": "0x48",
         "Offset": "0x0"
       },
       {
         "Name": "FullBodyMontageListings",
-        "Type": "Class CustomAnimationMontageDefinitionListingDataAsset*",
+        "Type": "class CustomAnimationMontageDefinitionListingDataAsset*",
         "Size": "0x8",
         "Offset": "0x48"
       },
       {
         "Name": "AttackAnimationAsset",
-        "Type": "Class AthenaAnimationWeaponDataAsset*",
+        "Type": "class AthenaAnimationWeaponDataAsset*",
         "Size": "0x8",
         "Offset": "0x50"
       },
       {
         "Name": "HitReactAnimationData",
-        "Type": "Struct HitReactionAnimationData",
+        "Type": "struct HitReactionAnimationData",
         "Size": "0x8",
         "Offset": "0x58"
       }
@@ -33,55 +33,55 @@
     "Attributes": [
       {
         "Name": "TreadwaterSequence",
-        "Type": "Class AnimSequence*",
+        "Type": "class AnimSequence*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "AggressiveTreadwaterSequence",
-        "Type": "Class AnimSequence*",
+        "Type": "class AnimSequence*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "LongwaysLocomotionBlendSpace",
-        "Type": "Class BlendSpace1D*",
+        "Type": "class BlendSpace1D*",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
         "Name": "AggressiveLongwaysLocomotionBlendSpace",
-        "Type": "Class BlendSpace1D*",
+        "Type": "class BlendSpace1D*",
         "Size": "0x8",
         "Offset": "0x18"
       },
       {
         "Name": "AlternativeAggressiveLongwaysLocomotionBlendSpace",
-        "Type": "Class BlendSpace1D*",
+        "Type": "class BlendSpace1D*",
         "Size": "0x8",
         "Offset": "0x20"
       },
       {
         "Name": "LocomotionTurningAdditiveBlendSpace",
-        "Type": "Class BlendSpace1D*",
+        "Type": "class BlendSpace1D*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "LocomotionSpinningAdditiveBlendSpace",
-        "Type": "Class BlendSpace1D*",
+        "Type": "class BlendSpace1D*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "DivingFromSurfaceSequence",
-        "Type": "Class AnimSequence*",
+        "Type": "class AnimSequence*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "EmergingToSurfaceSequence",
-        "Type": "Class AnimSequence*",
+        "Type": "class AnimSequence*",
         "Size": "0x8",
         "Offset": "0x40"
       }

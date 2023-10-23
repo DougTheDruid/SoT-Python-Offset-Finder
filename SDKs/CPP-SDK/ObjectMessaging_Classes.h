@@ -17,6 +17,7 @@ public:
 class ObjectMessagingDispatcherComponent: public ActorComponent
 {
 public:
+	char                                                         pad0xa8_ESGNI[0xa8];                               // 0xc8(0xa8)
 };
 
 

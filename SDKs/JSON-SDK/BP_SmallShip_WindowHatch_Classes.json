@@ -6,26 +6,26 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x5f8"
       },
       {
-        "Name": "None",
-        "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
+        "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
+        "Type": "class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
         "Size": "0x8",
         "Offset": "0x600"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "shp_mid_serving_hatch_R_01_a",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x608"
       },
       {
-        "Name": "None",
-        "Type": "Class InteractableComponent*",
+        "Name": "Interactable",
+        "Type": "class InteractableComponent*",
         "Size": "0x8",
         "Offset": "0x610"
       }

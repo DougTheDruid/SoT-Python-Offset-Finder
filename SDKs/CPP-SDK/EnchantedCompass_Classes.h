@@ -6,21 +6,23 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x40 (Full Size[0xa10] - InheritedSize[0x9d0]
+// Size 0x90 (Full Size[0xa60] - InheritedSize[0x9d0]
 class RotatingCompass: public EnchantedCompass
 {
 public:
-	Class PickupableComponent*                                   PickupableComponent;                               // 0x9c8(0x8)
-	Class PoseableMeshMemoryConstraintComponent*                 PoseableStashedMeshComponent;                      // 0x9d0(0x8)
-	Class WieldableInteractableComponent*                        WieldableInteractableComponent;                    // 0x9d8(0x8)
-	Class Actor*                                                 SplinePathActor;                                   // 0x9e0(0x8)
-	Class CurveFloat*                                            RotationSequenceCurve;                             // 0x9e8(0x8)
-	Class RotatingCompassSpinComponent*                          RotatingCompassSpinComponent;                      // 0x9f0(0x8)
-	byte                                                         RotationState;                                     // 0x9f8(0x1)
-	char                                                         pad0x3_GKI3F[0x3];                                 // 0x9f9(0x3)
-	float                                                        SplineDistanceOffset;                              // 0x9fc(0x4)
-	float                                                        TargetYawAngleBeforeRotationSequence;              // 0xa00(0x4)
-	char                                                         pad0xc_JTIG3[0xc];                                 // 0xa04(0xc)
+	class PickupableComponent*                                   PickupableComponent;                               // 0x9c8(0x8)
+	class PoseableMeshMemoryConstraintComponent*                 PoseableStashedMeshComponent;                      // 0x9d0(0x8)
+	class WieldableInteractableComponent*                        WieldableInteractableComponent;                    // 0x9d8(0x8)
+	class Actor*                                                 SplinePathActor;                                   // 0x9e0(0x8)
+	class CurveFloat*                                            RotationSequenceCurve;                             // 0x9e8(0x8)
+	bool                                                         StartRotationSequenceCurve;                        // 0x9f0(0x1)
+	char                                                         pad0x3_IZQAM[0x3];                                 // 0x9f1(0x3)
+	float                                                        SplineDistanceOffset;                              // 0x9f4(0x4)
+	float                                                        TargetYawAngleBeforeRotationSequence;              // 0x9f8(0x4)
+	char                                                         pad0x4_VZIPL[0x4];                                 // 0x9fc(0x4)
+	struct RotatingCompassAudioParams                            AudioParams;                                       // 0xa00(0x48)
+	float                                                        MaxSpeedToTriggerOneShotSfx;                       // 0xa48(0x4)
+	char                                                         pad0x14_UT8BQ[0x14];                               // 0xa4c(0x14)
 };
 
 
@@ -28,12 +30,12 @@ public:
 class EnchantedCompassProximityAnnouncementComponent: public ActorComponent
 {
 public:
-	Class WwiseEvent*                                            StartAnnouncingEvent;                              // 0xc8(0x8)
-	Class WwiseEvent*                                            StopAnnouncingEvent;                               // 0xd0(0x8)
+	class WwiseEvent*                                            StartAnnouncingEvent;                              // 0xc8(0x8)
+	class WwiseEvent*                                            StopAnnouncingEvent;                               // 0xd0(0x8)
 	float                                                        MaxFrequencyDistanceSquared;                       // 0xd8(0x4)
-	char                                                         pad0x4_UEZCT[0x4];                                 // 0xdc(0x4)
+	char                                                         pad0x4_D1JH9[0x4];                                 // 0xdc(0x4)
 	bool                                                         IsSettingEnabled;                                  // 0x120(0x1)
-	char                                                         pad0xef_USU48[0xef];                               // 0x121(0xef)
+	char                                                         pad0xef_UZ6ZD[0xef];                               // 0x121(0xef)
 };
 
 
@@ -41,11 +43,11 @@ public:
 class MultiTargetEnchantedCompass: public Compass
 {
 public:
-	TArray<struct Locations>                                     Locations;                                         // 0x8d8(0x10)
-	TArray<struct LocationIds>                                   LocationIds;                                       // 0x8e8(0x10)
-	Class InventoryItemComponent*                                InventoryItem;                                     // 0x8f8(0x8)
-	Class EnchantedCompassProximityAnnouncementComponent*        ProximityAnnouncementComponent;                    // 0x900(0x8)
-	char                                                         pad0x8_NCKXK[0x8];                                 // 0x908(0x8)
+	TArray<struct Vector>                                        Locations;                                         // 0x8d8(0x10)
+	TArray<struct Guid>                                          LocationIds;                                       // 0x8e8(0x10)
+	class InventoryItemComponent*                                InventoryItem;                                     // 0x8f8(0x8)
+	class EnchantedCompassProximityAnnouncementComponent*        ProximityAnnouncementComponent;                    // 0x900(0x8)
+	char                                                         pad0x8_T7C59[0x8];                                 // 0x908(0x8)
 };
 
 
@@ -60,6 +62,7 @@ public:
 class RotatingCompassSpinComponent: public CompassSpinComponent
 {
 public:
+	char                                                         pad0x8_XX4R5[0x8];                                 // 0x1e8(0x8)
 };
 
 
@@ -67,7 +70,7 @@ public:
 class TaleQuestMultiTargetCompassAddTrackedLocationStep: public TaleQuestStep
 {
 public:
-	Class TaleQuestMultiTargetCompassAddTrackedLocationStepDesc* Desc;                                              // 0x98(0x8)
+	class TaleQuestMultiTargetCompassAddTrackedLocationStepDesc* Desc;                                              // 0x98(0x8)
 };
 
 
@@ -75,8 +78,8 @@ public:
 class TaleQuestMultiTargetCompassAddTrackedLocationStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableVector                                   Location;                                          // 0x80(0x30)
-	Struct QuestVariableGuid                                     TargetID;                                          // 0xb0(0x30)
+	struct QuestVariableVector                                   Location;                                          // 0x80(0x30)
+	struct QuestVariableGuid                                     TargetID;                                          // 0xb0(0x30)
 };
 
 
@@ -84,6 +87,7 @@ public:
 class TaleQuestMultiTargetCompassRemoveTrackedLocationStep: public TaleQuestStep
 {
 public:
+	char                                                         pad0x10_W5KBL[0x10];                               // 0x98(0x10)
 };
 
 
@@ -91,7 +95,7 @@ public:
 class TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableGuid                                     TargetID;                                          // 0x80(0x30)
+	struct QuestVariableGuid                                     TargetID;                                          // 0x80(0x30)
 };
 
 
@@ -99,6 +103,7 @@ public:
 class TaleQuestMultiTargetCompassService: public TaleQuestToolService
 {
 public:
+	char                                                         pad0x20_HE1J5[0x20];                               // 0x170(0x20)
 };
 
 
@@ -106,17 +111,18 @@ public:
 class TaleQuestMultiTargetCompassServiceDesc: public TaleQuestToolServiceDesc
 {
 public:
-	class                                                        CompassDesc;                                       // 0x30(0x8)
+	class UClass*                                                CompassDesc;                                       // 0x30(0x8)
 };
 
 
-// Size 0xa8 (Full Size[0x108] - InheritedSize[0x60]
+// Size 0xc0 (Full Size[0x120] - InheritedSize[0x60]
 class TaleQuestRotatingCompassService: public TaleQuestService
 {
 public:
-	Class Actor*                                                 SplinePathActor;                                   // 0x60(0x8)
-	Class RotatingCompass*                                       RotatingCompass;                                   // 0x68(0x8)
-	char                                                         pad0x98_GTW2R[0x98];                               // 0x70(0x98)
+	char                                                         pad0x18_4BUB7[0x18];                               // 0x60(0x18)
+	class Actor*                                                 SplinePathActor;                                   // 0x78(0x8)
+	class RotatingCompass*                                       RotatingCompass;                                   // 0x80(0x8)
+	char                                                         pad0x98_F2WI7[0x98];                               // 0x88(0x98)
 };
 
 
@@ -138,6 +144,7 @@ public:
 class TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStep: public TaleQuestStep
 {
 public:
+	char                                                         pad0x8_DKYPF[0x8];                                 // 0x98(0x8)
 };
 
 
@@ -145,7 +152,7 @@ public:
 class TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableActor                                    SplinePathActor;                                   // 0x80(0x30)
+	struct QuestVariableActor                                    SplinePathActor;                                   // 0x80(0x30)
 };
 
 
@@ -153,6 +160,7 @@ public:
 class TaleQuestSetCompassTargetToTargetStep: public TaleQuestStep
 {
 public:
+	char                                                         pad0x60_7N6RR[0x60];                               // 0x98(0x60)
 };
 
 
@@ -161,7 +169,7 @@ class TaleQuestSetCompassTargetBaseStepDesc: public TaleQuestStepDesc
 {
 public:
 	byte                                                         TargetUpdateReason;                                // 0x80(0x1)
-	char                                                         pad0x7_NMYY8[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_2MWLW[0x7];                                 // 0x81(0x7)
 };
 
 
@@ -169,7 +177,7 @@ public:
 class TaleQuestSetCompassTargetToActorStepDesc: public TaleQuestSetCompassTargetBaseStepDesc
 {
 public:
-	Struct QuestVariableActor                                    TargetActor;                                       // 0x88(0x30)
+	struct QuestVariableActor                                    TargetActor;                                       // 0x88(0x30)
 };
 
 
@@ -177,7 +185,7 @@ public:
 class TaleQuestSetCompassTargetToPointStepDesc: public TaleQuestSetCompassTargetBaseStepDesc
 {
 public:
-	Struct QuestVariableOrientedPoint                            TargetPoint;                                       // 0x88(0x30)
+	struct QuestVariableOrientedPoint                            TargetPoint;                                       // 0x88(0x30)
 };
 
 
@@ -192,7 +200,7 @@ public:
 class TaleQuestSetRotationCurveForRotatingCompassStepDesc: public TaleQuestStepDesc
 {
 public:
-	Class CurveFloat*                                            RotationSequenceCurve;                             // 0x80(0x8)
+	class CurveFloat*                                            RotationSequenceCurve;                             // 0x80(0x8)
 };
 
 

@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 struct ActorSequenceObjectReferenceMap
 {
 public:
-	TArray<struct BindingIds>                                    BindingIds;                                        // 0x0(0x10)
-	TArray<struct References>                                    References;                                        // 0x10(0x10)
+	TArray<struct Guid>                                          BindingIds;                                        // 0x0(0x10)
+	TArray<struct ActorSequenceObjectReferences>                 References;                                        // 0x10(0x10)
 };
 
 
@@ -19,7 +19,7 @@ public:
 struct ActorSequenceObjectReferences
 {
 public:
-	TArray<struct Array>                                         Array;                                             // 0x0(0x10)
+	TArray<struct ActorSequenceObjectReference>                  Array;                                             // 0x0(0x10)
 };
 
 
@@ -28,10 +28,10 @@ struct ActorSequenceObjectReference
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_P25L8[0x3];                                 // 0x1(0x3)
-	Struct Guid                                                  ActorId;                                           // 0x4(0x10)
-	char                                                         pad0x4_ND6E7[0x4];                                 // 0x14(0x4)
-	Struct FString                                               PathToComponent;                                   // 0x18(0x10)
+	char                                                         pad0x3_GTVY6[0x3];                                 // 0x1(0x3)
+	struct Guid                                                  ActorId;                                           // 0x4(0x10)
+	char                                                         pad0x4_YI2DA[0x4];                                 // 0x14(0x4)
+	struct FString                                               PathToComponent;                                   // 0x18(0x10)
 };
 
 

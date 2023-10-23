@@ -16,18 +16,18 @@ EventAIGoalHighPriorityTargetSuggestion:
   - Name: HighPriorityTarget
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x8'
 EventAIGoalTargetActorChanged:
   Attributes:
   - Name: PreviousTargetActor
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: NewTargetActor
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: TargetChangedReason
     Offset: '0x10'
     Size: '0x1'
@@ -36,4 +36,8 @@ EventAIGoalTargetActorChanged:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_O1CHS[0x6]
+    Offset: '0x12'
+    Size: '0x6'
+    Type: char
   ClassSize: '0x18'

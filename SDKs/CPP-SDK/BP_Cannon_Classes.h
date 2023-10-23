@@ -6,13 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18 (Full Size[0xdc0] - InheritedSize[0xda8]
+// Size 0x18 (Full Size[0xdc8] - InheritedSize[0xdb0]
 class BP_Cannon_C: public Cannon
 {
 public:
-	Class GroupedInteractableAreaComponent*                      GroupedInteractableArea;                           // 0xda8(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0xdb0(0x8)
-	Class StaticMeshComponent*                                   Collision;                                         // 0xdb8(0x8)
+	class GroupedInteractableAreaComponent*                      GroupedInteractableArea;                           // 0xdb0(0x8)
+	class InteractableComponent*                                 Interactable;                                      // 0xdb8(0x8)
+	class StaticMeshComponent*                                   Collision;                                         // 0xdc0(0x8)
 };
 
 

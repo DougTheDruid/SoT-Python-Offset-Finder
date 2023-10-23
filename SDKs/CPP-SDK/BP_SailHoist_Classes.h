@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_SailHoist_C: public SailHoist
 {
 public:
-	Class InteractableComponent*                                 Interactable;                                      // 0x860(0x8)
+	class InteractableComponent*                                 Interactable;                                      // 0x860(0x8)
 };
 
 

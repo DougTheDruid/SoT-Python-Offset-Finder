@@ -6,14 +6,14 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "pad0x8_S8BVW[0x8]",
+        "Name": "pad0x8_GRKDC[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "Settings",
-        "Type": "Struct LightPropagationVolumeSettings",
+        "Type": "struct LightPropagationVolumeSettings",
         "Size": "0x70",
         "Offset": "0x30"
       },
@@ -24,7 +24,7 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0xc_BKSSN[0xc]",
+        "Name": "pad0xc_CA8UI[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0xa4"

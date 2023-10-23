@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_Rugs_Large_C: public BP_Rugs_C
 {
 public:
-	Class StaticMeshComponent*                                   CircularRugMeshComponent;                          // 0x3d8(0x8)
-	Class StaticMeshComponent*                                   RectangularRugMeshComponent;                       // 0x3e0(0x8)
+	class StaticMeshComponent*                                   CircularRugMeshComponent;                          // 0x3d8(0x8)
+	class StaticMeshComponent*                                   RectangularRugMeshComponent;                       // 0x3e0(0x8)
 };
 
 

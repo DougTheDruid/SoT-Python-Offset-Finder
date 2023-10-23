@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "Battles",
-        "Type": "TArray<struct Battles>",
+        "Type": "TArray<struct AIShipBattleParams>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -19,7 +19,7 @@
       },
       {
         "Name": "EncounterCompleteText",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x48"
       }
@@ -39,19 +39,19 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x20_M0GLD[0x20]",
+        "Name": "pad0x20_0DVGL[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x88"
       },
       {
         "Name": "TrackingNoiseGenerator",
-        "Type": "Struct TrackingNoiseGenerator",
+        "Type": "struct TrackingNoiseGenerator",
         "Size": "0x18",
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x18_6OQ8T[0x18]",
+        "Name": "pad0x18_ARK5C[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xc0"
@@ -66,25 +66,25 @@
     "Attributes": [
       {
         "Name": "TrackingMovementParams",
-        "Type": "Struct ShipMovementParams",
+        "Type": "struct ShipMovementParams",
         "Size": "0x38",
         "Offset": "0x138"
       },
       {
         "Name": "TimesToSailBesideTarget",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x170"
       },
       {
         "Name": "PerpendicularDistanceOffsets",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x1a0"
       },
       {
         "Name": "TimesBeforeDistanceChange",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x1d0"
       },
@@ -114,7 +114,7 @@
       },
       {
         "Name": "TrackingNoiseGenerator",
-        "Type": "Struct TrackingNoiseGenerator",
+        "Type": "struct TrackingNoiseGenerator",
         "Size": "0x18",
         "Offset": "0x210"
       },
@@ -149,32 +149,32 @@
         "Offset": "0x238"
       },
       {
-        "Name": "pad0x4_CVNBB[0x4]",
+        "Name": "pad0x4_Q124A[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x23c"
       },
       {
         "Name": "TrackingLatencyTimes",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x240"
       },
       {
         "Name": "TrackingLatencyTimesWhenAnchorLowered",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x270"
       },
       {
         "Name": "DistToTargetShipVSTrackingLatencyCurve",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x2a0"
       },
       {
         "Name": "CirclingMovementParams",
-        "Type": "Struct ShipMovementParams",
+        "Type": "struct ShipMovementParams",
         "Size": "0x38",
         "Offset": "0x2a8"
       },
@@ -192,19 +192,19 @@
       },
       {
         "Name": "CircleRadiuses",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x2e8"
       },
       {
         "Name": "CirclingSpeedsInDegreesPerSecond",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x318"
       },
       {
         "Name": "TimesToCircleBeforeChangingRadius",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x348"
       },
@@ -246,13 +246,13 @@
       },
       {
         "Name": "RammingLocationOffsets",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x390"
       },
       {
         "Name": "SailingForwardMovementParams",
-        "Type": "Struct ShipMovementParams",
+        "Type": "struct ShipMovementParams",
         "Size": "0x38",
         "Offset": "0x3c0"
       },
@@ -270,7 +270,7 @@
       },
       {
         "Name": "PassiveSailingMovementParams",
-        "Type": "Struct ShipMovementParams",
+        "Type": "struct ShipMovementParams",
         "Size": "0x38",
         "Offset": "0x400"
       },
@@ -281,14 +281,14 @@
         "Offset": "0x438"
       },
       {
-        "Name": "pad0x4_57AA7[0x4]",
+        "Name": "pad0x4_968HG[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x43c"
       },
       {
         "Name": "TimesToStayAnchored",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x440"
       },
@@ -311,7 +311,7 @@
         "Offset": "0x478"
       },
       {
-        "Name": "pad0x4_65L24[0x4]",
+        "Name": "pad0x4_HUS8J[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x47c"
@@ -343,62 +343,62 @@
         "Offset": "0x29"
       },
       {
-        "Name": "pad0x6_IB1TJ[0x6]",
+        "Name": "pad0x6_U0PKZ[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2a"
       },
       {
         "Name": "ShipDesc",
-        "Type": "Class ShipDescAsset*",
+        "Type": "class ShipDescAsset*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "ControllerParams",
-        "Type": "Class AthenaAIShipControllerParamsDataAsset*",
+        "Type": "class AthenaAIShipControllerParamsDataAsset*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "Spawners",
-        "Type": "TArray<struct Spawners>",
+        "Type": "TArray<struct AIShipEncounterParamsSpawnerData>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "DamageParams",
-        "Type": "Struct AIShipContextDescDamageParams",
+        "Type": "struct AIShipContextDescDamageParams",
         "Size": "0x14",
         "Offset": "0x50"
       },
       {
         "Name": "SailsCustomisation",
-        "Type": "Struct AIShipSailData",
+        "Type": "struct AIShipSailData",
         "Size": "0x10",
         "Offset": "0x64"
       },
       {
         "Name": "SailColour",
-        "Type": "Struct Color",
+        "Type": "struct Color",
         "Size": "0x4",
         "Offset": "0x74"
       },
       {
         "Name": "FormType",
-        "Type": "Struct AIShipCrewFormType",
+        "Type": "struct AIShipCrewFormType",
         "Size": "0x20",
         "Offset": "0x78"
       },
       {
         "Name": "AmmoType",
-        "Type": "Struct AIShipCrewAmmoType",
+        "Type": "struct AIShipCrewAmmoType",
         "Size": "0x18",
         "Offset": "0x98"
       },
       {
         "Name": "RewardMarkerParams",
-        "Type": "Class ShortRangeMarkerDataAsset*",
+        "Type": "class ShortRangeMarkerDataAsset*",
         "Size": "0x8",
         "Offset": "0xb0"
       }
@@ -429,7 +429,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_AURTM[0x3]",
+        "Name": "pad0x3_Z9FJ8[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -567,7 +567,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_Y3KXT[0x7]",
+        "Name": "pad0x7_FEW1I[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
@@ -582,19 +582,19 @@
     "Attributes": [
       {
         "Name": "ShipPool",
-        "Type": "TArray<struct ShipPool>",
+        "Type": "TArray<struct AIShipSizeDynamicContexts>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "FinalShip",
-        "Type": "Class AIShipContextDescDataAsset*",
+        "Type": "class AIShipContextDescDataAsset*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "DynamicBalancingDesc",
-        "Type": "Struct AIShipEncounterDynamicBalancingDesc",
+        "Type": "struct AIShipEncounterDynamicBalancingDesc",
         "Size": "0x58",
         "Offset": "0x40"
       }
@@ -632,7 +632,7 @@
       },
       {
         "Name": "RelativeSpawnLocationParams",
-        "Type": "Struct RelativeSpawnLocationGeneratorParams",
+        "Type": "struct RelativeSpawnLocationGeneratorParams",
         "Size": "0xa0",
         "Offset": "0x38"
       }
@@ -646,18 +646,18 @@
     "Attributes": [
       {
         "Name": "Ship",
-        "Type": "Class Ship*",
+        "Type": "class Ship*",
         "Size": "0x8",
         "Offset": "0x440"
       },
       {
         "Name": "SpawnTargetShip",
-        "Type": "Class Ship*",
+        "Type": "class Ship*",
         "Size": "0x8",
         "Offset": "0x448"
       },
       {
-        "Name": "pad0x28_NLK2C[0x28]",
+        "Name": "pad0x28_833HJ[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x450"
@@ -672,37 +672,37 @@
     "Attributes": [
       {
         "Name": "SpawnParams",
-        "Type": "Class AIShipEncounterSpawnParamsDataAsset*",
+        "Type": "class AIShipEncounterSpawnParamsDataAsset*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "ContextParams",
-        "Type": "Class AIShipContextParamsDataAsset*",
+        "Type": "class AIShipContextParamsDataAsset*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "DefaultContextDesc",
-        "Type": "Class AIShipContextDescDataAsset*",
+        "Type": "class AIShipContextDescDataAsset*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "ShipPawnClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x40"
       },
       {
         "Name": "BuoyantObjectSpawnProfileAsset",
-        "Type": "Class BuoyantObjectSpawnProfileDataAsset*",
+        "Type": "class BuoyantObjectSpawnProfileDataAsset*",
         "Size": "0x8",
         "Offset": "0x48"
       },
       {
         "Name": "EventSignalAssetClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x50"
       },
@@ -713,14 +713,14 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x4_E5OLN[0x4]",
+        "Name": "pad0x4_5O0IB[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x5c"
       },
       {
         "Name": "EncounterCompleteText",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x60"
       },
@@ -755,7 +755,7 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x3_71OPF[0x3]",
+        "Name": "pad0x3_15EE8[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xa9"
@@ -773,7 +773,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x4_JHH3P[0x4]",
+        "Name": "pad0x4_CCWRU[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xb4"
@@ -788,25 +788,25 @@
     "Attributes": [
       {
         "Name": "BattleEncounterParams",
-        "Type": "Class AIShipEncounterParamsDataAsset*",
+        "Type": "class AIShipEncounterParamsDataAsset*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "AggressiveEncounterParams",
-        "Type": "Struct AIShipEncounterParams",
+        "Type": "struct AIShipEncounterParams",
         "Size": "0x18",
         "Offset": "0x30"
       },
       {
         "Name": "PassiveEncounterParams",
-        "Type": "Struct AIShipEncounterParams",
+        "Type": "struct AIShipEncounterParams",
         "Size": "0x18",
         "Offset": "0x48"
       },
       {
         "Name": "ObstacleBucketDimensions",
-        "Type": "Struct IntPoint",
+        "Type": "struct IntPoint",
         "Size": "0x8",
         "Offset": "0x60"
       },
@@ -817,44 +817,44 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x4_TUWEP[0x4]",
+        "Name": "pad0x4_LIBJN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x6c"
       },
       {
         "Name": "ContextDescGenerationParams",
-        "Type": "Struct AIShipContextDescGenerationParams",
+        "Type": "struct AIShipContextDescGenerationParams",
         "Size": "0x80",
         "Offset": "0x70"
       },
       {
         "Name": "EncounterGenerationParams",
-        "Type": "Struct AIShipBattleEncounterDescGenerationParams",
+        "Type": "struct AIShipBattleEncounterDescGenerationParams",
         "Size": "0x80",
         "Offset": "0xf0"
       },
       {
         "Name": "AggressiveEncounterGenerationParams",
-        "Type": "Struct AIShipSingleWaveEncounterDescGenerationParams",
+        "Type": "struct AIShipSingleWaveEncounterDescGenerationParams",
         "Size": "0x10",
         "Offset": "0x170"
       },
       {
         "Name": "PassiveEncounterGenerationParams",
-        "Type": "Struct AIShipSingleWaveEncounterDescGenerationParams",
+        "Type": "struct AIShipSingleWaveEncounterDescGenerationParams",
         "Size": "0x10",
         "Offset": "0x180"
       },
       {
         "Name": "TimerBattleFirstRegenInterval",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x190"
       },
       {
         "Name": "TimerBattleRegenInterval",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x1c0"
       },
@@ -865,14 +865,14 @@
         "Offset": "0x1f0"
       },
       {
-        "Name": "pad0x4_VHANR[0x4]",
+        "Name": "pad0x4_H69HE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1f4"
       },
       {
         "Name": "TimerBattleRetryRegenInterval",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x1f8"
       },
@@ -883,14 +883,14 @@
         "Offset": "0x228"
       },
       {
-        "Name": "pad0x4_ICF3Q[0x4]",
+        "Name": "pad0x4_ZBI48[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x22c"
       },
       {
         "Name": "RewardMarkerParams",
-        "Type": "Class ShortRangeMarkerDataAsset*",
+        "Type": "class ShortRangeMarkerDataAsset*",
         "Size": "0x8",
         "Offset": "0x230"
       },
@@ -907,7 +907,7 @@
         "Offset": "0x248"
       },
       {
-        "Name": "pad0x4_Q8ELU[0x4]",
+        "Name": "pad0x4_O4ULU[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24c"
@@ -929,7 +929,7 @@
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x28"
       },
@@ -976,7 +976,7 @@
         "Offset": "0x39"
       },
       {
-        "Name": "pad0x2_0305Y[0x2]",
+        "Name": "pad0x2_EBIA0[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3a"
@@ -994,7 +994,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x3_OW7AG[0x3]",
+        "Name": "pad0x3_BRI9C[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x41"
@@ -1012,14 +1012,14 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x7_HPUX8[0x7]",
+        "Name": "pad0x7_5GV5Y[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x49"
       },
       {
         "Name": "Waves",
-        "Type": "TArray<struct Waves>",
+        "Type": "TArray<struct AIShipEncounterWave>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -1038,7 +1038,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x3_DC59G[0x3]",
+        "Name": "pad0x3_GWHEI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xc9"
@@ -1050,7 +1050,7 @@
         "Offset": "0xcc"
       },
       {
-        "Name": "pad0x20_FAB91[0x20]",
+        "Name": "pad0x20_DINFN[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xd0"
@@ -1062,7 +1062,14 @@
     "FullSize": "0x450",
     "InheritedSize": "0x3c8",
     "ClassSize": "0x88",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x88_GJGSA[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x3c8"
+      }
+    ]
   },
   "AIShipServiceInterface": {
     "Super": "Interface",
@@ -1073,27 +1080,45 @@
   },
   "AIShipService": {
     "Super": "Actor",
-    "FullSize": "0x718",
+    "FullSize": "0x758",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x350",
+    "ClassSize": "0x390",
     "Attributes": [
       {
-        "Name": "pad0x20_EWM89[0x20]",
+        "Name": "pad0x10_168QA[0x10]",
         "Type": "char",
-        "Size": "0x20",
+        "Size": "0x10",
         "Offset": "0x3c8"
       },
       {
-        "Name": "Params",
-        "Type": "Class AIShipServiceDataAsset*",
+        "Name": "GameEventOnDemandAvailabilityHandler",
+        "Type": "class GameEventOnDemandAvailabilityHandler*",
         "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "GameEventOnDemandAnnouncementComponent",
+        "Type": "class GameEventOnDemandAnnouncementComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "pad0x18_P03CJ[0x18]",
+        "Type": "char",
+        "Size": "0x18",
         "Offset": "0x3e8"
       },
       {
-        "Name": "pad0x328_QJAR2[0x328]",
+        "Name": "Params",
+        "Type": "class AIShipServiceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "pad0x350_A7KCJ[0x350]",
         "Type": "char",
-        "Size": "0x328",
-        "Offset": "0x3f0"
+        "Size": "0x350",
+        "Offset": "0x408"
       }
     ]
   },
@@ -1102,7 +1127,14 @@
     "FullSize": "0x108",
     "InheritedSize": "0xc8",
     "ClassSize": "0x40",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x40_RISRQ[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0xc8"
+      }
+    ]
   },
   "AthenaAIShipController": {
     "Super": "AthenaAIControllerBase",
@@ -1112,36 +1144,36 @@
     "Attributes": [
       {
         "Name": "BTAsset",
-        "Type": "Class BehaviorTree*",
+        "Type": "class BehaviorTree*",
         "Size": "0x8",
         "Offset": "0x610"
       },
       {
-        "Name": "pad0x18_0MUMX[0x18]",
+        "Name": "pad0x18_CY67M[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x618"
       },
       {
         "Name": "ShipParamsDataAsset",
-        "Type": "Class AthenaAIShipControllerParamsDataAsset*",
+        "Type": "class AthenaAIShipControllerParamsDataAsset*",
         "Size": "0x8",
         "Offset": "0x630"
       },
       {
         "Name": "StatusEffectManagerComponent",
-        "Type": "Class StatusEffectManagerComponent*",
+        "Type": "class StatusEffectManagerComponent*",
         "Size": "0x8",
         "Offset": "0x638"
       },
       {
         "Name": "AnchorDynamicsParams",
-        "Type": "Struct StandardAnchorDynamicsParameters",
+        "Type": "struct StandardAnchorDynamicsParameters",
         "Size": "0x28",
         "Offset": "0x640"
       },
       {
-        "Name": "pad0x118_ATG6S[0x118]",
+        "Name": "pad0x118_ZACFD[0x118]",
         "Type": "char",
         "Size": "0x118",
         "Offset": "0x668"
@@ -1156,36 +1188,36 @@
     "Attributes": [
       {
         "Name": "TargetActorKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x70"
       },
       {
         "Name": "DisableTrackingKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x98"
       },
       {
         "Name": "ShouldSailForwardKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0xc0"
       },
       {
         "Name": "TimeToSailForwardKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0xe8"
       },
       {
         "Name": "CaptainIsPresentKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x18_6I217[0x18]",
+        "Name": "pad0x18_8DOX8[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x138"
@@ -1200,13 +1232,13 @@
     "Attributes": [
       {
         "Name": "LocationKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x70"
       },
       {
         "Name": "ActorKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x98"
       }
@@ -1220,12 +1252,12 @@
     "Attributes": [
       {
         "Name": "TargetLocationKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x70"
       },
       {
-        "Name": "pad0x30_DMLKL[0x30]",
+        "Name": "pad0x30_AYW18[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x98"
@@ -1251,7 +1283,7 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x8_KMA3Y[0x8]",
+        "Name": "pad0x8_FY0MD[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x90"
@@ -1263,14 +1295,28 @@
     "FullSize": "0x168",
     "InheritedSize": "0x88",
     "ClassSize": "0xe0",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xe0_5TVBE[0xe0]",
+        "Type": "char",
+        "Size": "0xe0",
+        "Offset": "0x88"
+      }
+    ]
   },
   "BTTask_SailShipCircleTarget": {
     "Super": "BTTask_BlackboardBase",
     "FullSize": "0xc0",
     "InheritedSize": "0x88",
     "ClassSize": "0x38",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x38_F7K55[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x88"
+      }
+    ]
   },
   "BTTask_SailShipForward": {
     "Super": "BTTask_BlackboardBase",
@@ -1280,24 +1326,24 @@
     "Attributes": [
       {
         "Name": "ShouldSailForwardKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x88"
       },
       {
         "Name": "TimeToSailForwardKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0xb0"
       },
       {
         "Name": "IsCaptainPresentKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x30_V2VB4[0x30]",
+        "Name": "pad0x30_URL5J[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x100"
@@ -1312,7 +1358,7 @@
     "Attributes": [
       {
         "Name": "TargetLocationKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x88"
       },
@@ -1323,7 +1369,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x1c_YE7IL[0x1c]",
+        "Name": "pad0x1c_P6HIX[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0xb4"
@@ -1345,7 +1391,7 @@
     "Attributes": [
       {
         "Name": "Battles",
-        "Type": "TArray<struct Battles>",
+        "Type": "TArray<struct CursedSailsBattleParams>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -1371,7 +1417,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_UE8C0[0x7]",
+        "Name": "pad0x7_TSWCG[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"

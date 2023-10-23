@@ -10,7 +10,8 @@ namespace DougsSDKDumper
 struct ClueDestinationToTextIndex
 {
 public:
-	class                                                        DestinationType;                                   // 0x0(0x8)
+	class UClass*                                                DestinationType;                                   // 0x0(0x8)
+	char                                                         pad0x20_EBLJ8[0x20];                               // 0x8(0x20)
 };
 
 
@@ -18,7 +19,8 @@ public:
 struct ClueDestinationChoice
 {
 public:
-	Class ClueDestinationDescriptor*                             Destination;                                       // 0x0(0x8)
+	class ClueDestinationDescriptor*                             Destination;                                       // 0x0(0x8)
+	char                                                         pad0x8_II5M6[0x8];                                 // 0x8(0x8)
 };
 
 
@@ -26,8 +28,8 @@ public:
 struct GenderSpecificTextPairings
 {
 public:
-	Struct FText                                                 MasculineClueDestinationDescription;               // 0x0(0x38)
-	Struct FText                                                 FeminineClueDestinationDescription;                // 0x38(0x38)
+	struct FText                                                 MasculineClueDestinationDescription;               // 0x0(0x38)
+	struct FText                                                 FeminineClueDestinationDescription;                // 0x38(0x38)
 };
 
 
@@ -35,8 +37,9 @@ public:
 struct TextEntryWithLayout
 {
 public:
-	Struct FText                                                 TextEntry;                                         // 0x0(0x38)
-	Struct TreasureMapWidgetText                                 TextLayout;                                        // 0x38(0x3c)
+	struct FText                                                 TextEntry;                                         // 0x0(0x38)
+	struct TreasureMapWidgetText                                 TextLayout;                                        // 0x38(0x3c)
+	char                                                         pad0x4_UR2BX[0x4];                                 // 0x74(0x4)
 };
 
 
@@ -44,8 +47,9 @@ public:
 struct MapRadialIconData
 {
 public:
-	Struct StringAssetReference                                  AssetReference;                                    // 0x0(0x10)
+	struct StringAssetReference                                  AssetReference;                                    // 0x0(0x10)
 	float                                                        Rotation;                                          // 0x10(0x4)
+	char                                                         pad0x4_I843M[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -53,6 +57,7 @@ public:
 struct ExistingNPCToPhasedNPC
 {
 public:
+	char                                                         pad0x40_V4QLE[0x40];                               // 0x0(0x40)
 };
 
 

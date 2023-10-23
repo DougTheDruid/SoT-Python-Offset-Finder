@@ -5,7 +5,7 @@ BP_VotableCancelVoyageSeaOfThievesOnDemand_C:
   - Name: UberGraphFrame
     Offset: '0x4f0'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: Tokens
     Offset: '0x4f8'
     Size: '0x10'
@@ -13,23 +13,23 @@ BP_VotableCancelVoyageSeaOfThievesOnDemand_C:
   - Name: Token Asset
     Offset: '0x508'
     Size: '0x8'
-    Type: Class StaticMesh*
+    Type: class StaticMesh*
   - Name: Show Token Animation Time
     Offset: '0x510'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_PA41L[0x4]
+  - Name: pad0x4_93AX4[0x4]
     Offset: '0x514'
     Size: '0x4'
     Type: char
   - Name: Token Material
     Offset: '0x518'
     Size: '0x8'
-    Type: Class MaterialInterface*
+    Type: class MaterialInterface*
   - Name: DaggerPositions
     Offset: '0x520'
     Size: '0x10'
-    Type: TArray<struct DaggerPositions>
+    Type: TArray<struct Transform>
   ClassSize: '0x40'
   FullSize: '0x530'
   InheritedSize: '0x4f0'

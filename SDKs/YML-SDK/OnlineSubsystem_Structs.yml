@@ -5,88 +5,92 @@ AchievementUpdatedEvent:
   - Name: AchievementId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: Successful
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_VJSMD[0x3]
+  - Name: pad0x3_ET578[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
   - Name: Reason
     Offset: '0x18'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: Platform
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x38'
 InAppPurchaseProductInfo:
   Attributes:
   - Name: Identifier
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: TransactionIdentifier
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: DisplayName
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: DisplayDescription
     Offset: '0x30'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: DisplayPrice
     Offset: '0x40'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: CurrencyCode
     Offset: '0x50'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: CurrencySymbol
     Offset: '0x60'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: DecimalSeparator
     Offset: '0x70'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: GroupingSeparator
     Offset: '0x80'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ReceiptData
     Offset: '0x90'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0xa0'
 InAppPurchaseProductRequest:
   Attributes:
   - Name: ProductIdentifier
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: bIsConsumable
     Offset: '0x10'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_XM28D[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x18'
 InAppPurchaseRestoreInfo:
   Attributes:
   - Name: Identifier
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ReceiptData
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x20'
 NamedInterface:
   Attributes:
@@ -97,7 +101,7 @@ NamedInterface:
   - Name: InterfaceObject
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   ClassSize: '0x10'
 NamedInterfaceDef:
   Attributes:
@@ -108,50 +112,50 @@ NamedInterfaceDef:
   - Name: InterfaceClassName
     Offset: '0x8'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x18'
 OnlineStoreCatalogItem:
   Attributes:
   - Name: ProductId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: Title
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: Description
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: FormattedPrice
     Offset: '0x30'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: FormattedBasePrice
     Offset: '0x40'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: IsOnSale
     Offset: '0x50'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_TGOHL[0x7]
+  - Name: pad0x7_VRUSJ[0x7]
     Offset: '0x51'
     Size: '0x7'
     Type: char
   - Name: SaleEndDate
     Offset: '0x58'
     Size: '0x8'
-    Type: Struct DateTime
+    Type: struct DateTime
   - Name: ImageUri
     Offset: '0x60'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: CurrencyCode
     Offset: '0x70'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: MetaTags
     Offset: '0x80'
     Size: '0x10'

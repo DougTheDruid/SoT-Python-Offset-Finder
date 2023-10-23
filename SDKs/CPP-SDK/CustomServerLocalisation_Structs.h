@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 struct CustomServerLocalisationModel
 {
 public:
+	char                                                         pad0x50_SFLXE[0x50];                               // 0x0(0x50)
 };
 
 
@@ -17,8 +18,8 @@ public:
 struct CustomServerLocalisationData
 {
 public:
-	Struct FString                                               Key;                                               // 0x0(0x10)
-	TArray<struct LocaleEntries>                                 LocaleEntries;                                     // 0x10(0x10)
+	struct FString                                               Key;                                               // 0x0(0x10)
+	TArray<struct LocPairData>                                   LocaleEntries;                                     // 0x10(0x10)
 };
 
 
@@ -26,8 +27,8 @@ public:
 struct LocPairData
 {
 public:
-	Struct FString                                               Locale;                                            // 0x0(0x10)
-	Struct FString                                               Value;                                             // 0x10(0x10)
+	struct FString                                               Locale;                                            // 0x0(0x10)
+	struct FString                                               Value;                                             // 0x10(0x10)
 };
 
 
@@ -35,7 +36,8 @@ public:
 struct CustomServerClientData
 {
 public:
-	Struct FString                                               Key;                                               // 0x0(0x10)
+	struct FString                                               Key;                                               // 0x0(0x10)
+	char                                                         pad0x10_9E4PV[0x10];                               // 0x10(0x10)
 };
 
 

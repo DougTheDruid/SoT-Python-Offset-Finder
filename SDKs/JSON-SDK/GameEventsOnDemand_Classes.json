@@ -8,27 +8,27 @@
   },
   "GameEventsOnDemandAvailabilityService": {
     "Super": "Object",
-    "FullSize": "0x88",
+    "FullSize": "0xe8",
     "InheritedSize": "0x28",
-    "ClassSize": "0x60",
+    "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "pad0x40_JLXLD[0x40]",
+        "Name": "pad0xa0_J1MB1[0xa0]",
         "Type": "char",
-        "Size": "0x40",
+        "Size": "0xa0",
         "Offset": "0x28"
       },
       {
         "Name": "World",
-        "Type": "Class World*",
+        "Type": "class World*",
         "Size": "0x8",
-        "Offset": "0x68"
+        "Offset": "0xc8"
       },
       {
-        "Name": "pad0x18_O7WBT[0x18]",
+        "Name": "pad0x18_8CH6V[0x18]",
         "Type": "char",
         "Size": "0x18",
-        "Offset": "0x70"
+        "Offset": "0xd0"
       }
     ]
   },
@@ -39,38 +39,38 @@
     "ClassSize": "0x140",
     "Attributes": [
       {
-        "Name": "pad0x8_Z1UCV[0x8]",
+        "Name": "pad0x8_LOBYD[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "World",
-        "Type": "Class World*",
+        "Type": "class World*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x58_OAVIB[0x58]",
+        "Name": "pad0x58_HOIBE[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x3d8"
       },
       {
         "Name": "LoserTunnelVoyageDescDataAsset",
-        "Type": "Class VoyageDescDataAsset*",
+        "Type": "class VoyageDescDataAsset*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
-        "Name": "pad0x50_GUUU2[0x50]",
+        "Name": "pad0x50_NXETH[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x438"
       },
       {
         "Name": "TrackedCrews",
-        "Type": "TArray<struct TrackedCrews>",
+        "Type": "TArray<struct GameEventsOnDemandLoserTunnelCrewData>",
         "Size": "0x10",
         "Offset": "0x488"
       },
@@ -81,7 +81,7 @@
         "Offset": "0x498"
       },
       {
-        "Name": "pad0x68_KWF9T[0x68]",
+        "Name": "pad0x68_MFW3J[0x68]",
         "Type": "char",
         "Size": "0x68",
         "Offset": "0x4a0"

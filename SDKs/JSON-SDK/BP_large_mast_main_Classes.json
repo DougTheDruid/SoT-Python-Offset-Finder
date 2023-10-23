@@ -7,73 +7,73 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0xa68"
       },
       {
         "Name": "GuildPlaque",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa70"
       },
       {
         "Name": "BP_MastEmissaryFlag",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa78"
       },
       {
         "Name": "shp_flag_pennant_alliance_01_a",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa80"
       },
       {
         "Name": "BP_ShipFlagCustomizationChest",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa88"
       },
       {
         "Name": "BP_Bell",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xa90"
       },
       {
         "Name": "shp_flag_jolly_roger_01_a",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa98"
       },
       {
         "Name": "Ladder",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0xaa0"
       },
       {
         "Name": "WeldedCrowsNestPhysics",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xaa8"
       },
       {
         "Name": "WeldedMastPhysics",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xab0"
       },
       {
         "Name": "shp_mast_ladder_step_01_a",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xab8"
       },
       {
         "Name": "CrowsNest",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xac0"
       }

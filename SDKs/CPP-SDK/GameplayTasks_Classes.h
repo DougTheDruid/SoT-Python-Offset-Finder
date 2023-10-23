@@ -18,7 +18,7 @@ class GameplayTask: public Object
 {
 public:
 	struct FName                                                 InstanceName;                                      // 0x28(0x8)
-	char                                                         pad0x28_EI0KC[0x28];                               // 0x30(0x28)
+	char                                                         pad0x28_6ZA92[0x28];                               // 0x30(0x28)
 };
 
 
@@ -26,8 +26,8 @@ public:
 class GameplayTask_SpawnActor: public GameplayTask
 {
 public:
-	char                                                         pad0x38_E6TSJ[0x38];                               // 0x58(0x38)
-	class                                                        ClassToSpawn;                                      // 0x90(0x8)
+	char                                                         pad0x38_TUWBX[0x38];                               // 0x58(0x38)
+	class UClass*                                                ClassToSpawn;                                      // 0x90(0x8)
 };
 
 
@@ -35,6 +35,7 @@ public:
 class GameplayTask_WaitDelay: public GameplayTask
 {
 public:
+	char                                                         pad0x18_3BAJS[0x18];                               // 0x58(0x18)
 };
 
 
@@ -43,9 +44,9 @@ class GameplayTaskResource: public Object
 {
 public:
 	int                                                          ManualResourceID;                                  // 0x28(0x4)
-	char                                                         pad0x4_SQYNF[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_NLOAP[0x4];                                 // 0x2c(0x4)
 	bool                                                         bManuallySetID;                                    // 0x30(0x1)
-	char                                                         pad0x7_4RUMG[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_DH5EF[0x7];                                 // 0x31(0x7)
 };
 
 
@@ -53,11 +54,11 @@ public:
 class GameplayTasksComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_XDV6O[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_VQUG4[0x8];                                 // 0xc8(0x8)
 	TArray<class GameplayTask*>                                  SimulatedTasks;                                    // 0xd0(0x10)
 	TArray<class GameplayTask*>                                  TaskPriorityQueue;                                 // 0xe0(0x10)
-	char                                                         pad0x28_AJTQP[0x28];                               // 0xf0(0x28)
-	char                                                         pad0x10_41AFP[0x10];                               // 0x118(0x10)
+	char                                                         pad0x28_H05LQ[0x28];                               // 0xf0(0x28)
+	char                                                         pad0x10_14DC5[0x10];                               // 0x118(0x10)
 };
 
 

@@ -10,9 +10,10 @@ namespace DougsSDKDumper
 struct ContextualTutorialPromptDesc
 {
 public:
-	class                                                        AccessKey;                                         // 0x20(0x8)
-	struct FName                                                 FeatureName;                                       // 0x28(0x8)
-	int                                                          MustBeUnderCount;                                  // 0x30(0x4)
+	char                                                         pad0x20_1X6IC[0x20];                               // 0x0(0x20)
+	class UClass*                                                AccessKey;                                         // 0x20(0x8)
+	struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	int                                                          MustBeUnderCount;                                  // 0x34(0x4)
 };
 
 
@@ -28,7 +29,9 @@ public:
 struct BeachNPCSpawnFlowNetworkEvent
 {
 public:
+	char                                                         pad0x10_XSGT6[0x10];                               // 0x0(0x10)
 	bool                                                         HasTaleCheckpointVoyage;                           // 0x10(0x1)
+	char                                                         pad0x7_U71JL[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -36,7 +39,9 @@ public:
 struct HasTutorialStarterBegunCondition
 {
 public:
+	char                                                         pad0x28_CS7F2[0x28];                               // 0x0(0x28)
 	byte                                                         TutorialStarterType;                               // 0x28(0x1)
+	char                                                         pad0x7_NQQAG[0x7];                                 // 0x29(0x7)
 };
 
 
@@ -44,10 +49,11 @@ public:
 struct TutorialStepEndedTelemetryEvent
 {
 public:
-	Struct FString                                               SequenceName;                                      // 0x0(0x10)
-	Struct FString                                               StepName;                                          // 0x10(0x10)
+	struct FString                                               SequenceName;                                      // 0x0(0x10)
+	struct FString                                               StepName;                                          // 0x10(0x10)
 	bool                                                         StepCompleted;                                     // 0x20(0x1)
 	bool                                                         IsFinalStep;                                       // 0x21(0x1)
+	char                                                         pad0x6_EWPU3[0x6];                                 // 0x22(0x6)
 };
 
 
@@ -55,6 +61,7 @@ public:
 struct TutorialShowTutorialLegendaryTavernStrangerEvent
 {
 public:
+	char                                                         pad0x1_EOBLE[0x1];                                 // 0x0(0x1)
 };
 
 

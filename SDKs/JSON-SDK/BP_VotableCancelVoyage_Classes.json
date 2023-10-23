@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x4f0"
       },
@@ -19,7 +19,7 @@
       },
       {
         "Name": "Token Asset",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x508"
       },
@@ -30,20 +30,20 @@
         "Offset": "0x510"
       },
       {
-        "Name": "pad0x4_LMABV[0x4]",
+        "Name": "pad0x4_L2GDC[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x514"
       },
       {
         "Name": "Token Material",
-        "Type": "Class MaterialInterface*",
+        "Type": "class MaterialInterface*",
         "Size": "0x8",
         "Offset": "0x518"
       },
       {
         "Name": "DaggerPositions",
-        "Type": "TArray<struct DaggerPositions>",
+        "Type": "TArray<struct Transform>",
         "Size": "0x10",
         "Offset": "0x520"
       }

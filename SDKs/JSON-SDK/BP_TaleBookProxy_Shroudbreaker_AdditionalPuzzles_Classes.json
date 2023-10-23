@@ -6,14 +6,14 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Class PhasedActorComponent*",
+        "Name": "PhasedBook",
+        "Type": "class PhasedActorComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "None",
-        "Type": "Class SceneComponent*",
+        "Name": "DefaultSceneRoot1",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       }

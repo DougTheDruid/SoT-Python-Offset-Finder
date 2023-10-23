@@ -5,71 +5,71 @@ wsp_beach_rocks_01_C:
   - Name: StaticMesh16
     Offset: '0x408'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh15
     Offset: '0x410'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh14
     Offset: '0x418'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh13
     Offset: '0x420'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh12
     Offset: '0x428'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh11
     Offset: '0x430'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh10
     Offset: '0x438'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh9
     Offset: '0x440'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh8
     Offset: '0x448'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh7
     Offset: '0x450'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh6
     Offset: '0x458'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh5
     Offset: '0x460'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh4
     Offset: '0x468'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh3
     Offset: '0x470'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh2
     Offset: '0x478'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh1
     Offset: '0x480'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Scene
     Offset: '0x488'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x88'
   FullSize: '0x490'
   InheritedSize: '0x408'

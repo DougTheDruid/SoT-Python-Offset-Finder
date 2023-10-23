@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AIAreaOfOperationComponent:
   Attributes:
-  - Name: pad0x8_F7UVE[0x8]
+  - Name: pad0x8_K7OV4[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -10,7 +10,7 @@ AIAreaOfOperationComponent:
     Offset: '0xd0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ITFYX[0x3]
+  - Name: pad0x3_6J75A[0x3]
     Offset: '0xd1'
     Size: '0x3'
     Type: char
@@ -33,13 +33,17 @@ AIGoal:
   - Name: BehaviorTree
     Offset: '0x28'
     Size: '0x8'
-    Type: Class BehaviorTree*
-  - Name: pad0x8_7B2HB[0x8]
+    Type: class BehaviorTree*
+  - Name: WhileActiveActivityType
     Offset: '0x30'
     Size: '0x8'
+    Type: class UClass*
+  - Name: pad0x8_DDGTD[0x8]
+    Offset: '0x38'
+    Size: '0x8'
     Type: char
-  ClassSize: '0x10'
-  FullSize: '0x38'
+  ClassSize: '0x18'
+  FullSize: '0x40'
   InheritedSize: '0x28'
   Super: Object
 AIGoalAssetList:
@@ -54,7 +58,7 @@ AIGoalAssetList:
   Super: DataAsset
 AIGoalProcessorComponent:
   Attributes:
-  - Name: pad0x8_9KJ8V[0x8]
+  - Name: pad0x8_36S0J[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -65,16 +69,16 @@ AIGoalProcessorComponent:
   - Name: AIGoalAssetList
     Offset: '0xe0'
     Size: '0x8'
-    Type: Class AIGoalAssetList*
+    Type: class AIGoalAssetList*
   - Name: ActiveGoal
     Offset: '0xe8'
     Size: '0x8'
-    Type: Class AIGoal*
+    Type: class AIGoal*
   - Name: AdditionalGoalLists
     Offset: '0xf0'
     Size: '0x10'
     Type: TArray<class AIGoalAssetList*>
-  - Name: pad0x28_VZPSG[0x28]
+  - Name: pad0x28_2ITFU[0x28]
     Offset: '0x100'
     Size: '0x28'
     Type: char
@@ -83,6 +87,12 @@ AIGoalProcessorComponent:
   InheritedSize: '0xc8'
   Super: ActorComponent
 AIGoalProcessorInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+AIHomeInterface:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'

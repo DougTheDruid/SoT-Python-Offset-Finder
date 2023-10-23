@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x820"
       },
@@ -19,7 +19,7 @@
       },
       {
         "Name": "RepairGroup",
-        "Type": "Struct BP_InternalDamageGroup",
+        "Type": "struct BP_InternalDamageGroup",
         "Size": "0x10",
         "Offset": "0x830"
       },

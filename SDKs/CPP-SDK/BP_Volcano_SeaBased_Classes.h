@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_Volcano_SeaBased_C: public BP_Volcano_C
 {
 public:
-	Class NamedPointsComponent*                                  NamedPoints;                                       // 0x5f0(0x8)
+	class NamedPointsComponent*                                  NamedPoints;                                       // 0x5f0(0x8)
 };
 
 

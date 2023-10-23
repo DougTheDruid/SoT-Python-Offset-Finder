@@ -5,59 +5,59 @@ BP_LargeShip_MapDeck_Dressing_01_a_C:
   - Name: UberGraphFrame
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: fod_rum_01_a
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: cmn_bottle_01_a2
     Offset: '0x3e8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: cmn_bottle_01_a1
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: cmn_bottle_01_a
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: shp_fry_pan_01_a
     Offset: '0x400'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: fod_rum_01_a1
     Offset: '0x408'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: tls_tankard_01_b2
     Offset: '0x410'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: tls_tankard_01_b
     Offset: '0x418'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: ptn_pois_01_a
     Offset: '0x420'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: ptn_cure_01_a2
     Offset: '0x428'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: ptn_cure_01_a
     Offset: '0x430'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: tls_tankard_01_b1
     Offset: '0x438'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: MergedStaticMesh
     Offset: '0x440'
     Size: '0x8'
-    Type: Class MergedStaticMeshComponent*
+    Type: class MergedStaticMeshComponent*
   ClassSize: '0x70'
   FullSize: '0x448'
   InheritedSize: '0x3d8'

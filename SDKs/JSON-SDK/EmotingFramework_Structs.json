@@ -4,19 +4,19 @@
     "Attributes": [
       {
         "Name": "EmoteId",
-        "Type": "Struct EmoteId",
+        "Type": "struct EmoteId",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "EmoteDisplayName",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x8"
       },
       {
         "Name": "AudioDescription",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x40"
       },
@@ -39,14 +39,14 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x7_RIP1D[0x7]",
+        "Name": "pad0x7_4ZVQ2[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x81"
       },
       {
         "Name": "EmotePropDataAsset",
-        "Type": "Class EmotePropData*",
+        "Type": "class EmotePropData*",
         "Size": "0x8",
         "Offset": "0x88"
       },
@@ -63,14 +63,14 @@
         "Offset": "0x91"
       },
       {
-        "Name": "pad0x6_WXW4H[0x6]",
+        "Name": "pad0x6_28BJA[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x92"
       },
       {
         "Name": "CustomSpringArmParamsAsset",
-        "Type": "Class AthenaSpringArmComponentParams*",
+        "Type": "class AthenaSpringArmComponentParams*",
         "Size": "0x8",
         "Offset": "0x98"
       }
@@ -92,7 +92,7 @@
     "Attributes": [
       {
         "Name": "Mesh",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -103,14 +103,14 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_R66UW[0x7]",
+        "Name": "pad0x7_RK3S1[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
       },
       {
         "Name": "Transform",
-        "Type": "Struct Transform",
+        "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0x10"
       },
@@ -125,6 +125,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x4_IKFH4[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4c"
       }
     ]
   },
@@ -133,13 +139,13 @@
     "Attributes": [
       {
         "Name": "Mesh",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "PossibleTransforms",
-        "Type": "TArray<struct PossibleTransforms>",
+        "Type": "TArray<struct Transform>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -151,7 +157,7 @@
       },
       {
         "Name": "RandomParameterRange",
-        "Type": "Struct Int32Range",
+        "Type": "struct Int32Range",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -171,19 +177,32 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x3_DWJ74[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
       }
     ]
   },
   "EventEndEmoteAnimation": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_SDHHA[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventEmoteSwapped": {
     "ClassSize": "0xa0",
     "Attributes": [
       {
         "Name": "EmoteData",
-        "Type": "Struct EmoteData",
+        "Type": "struct EmoteData",
         "Size": "0xa0",
         "Offset": "0x0"
       }
@@ -197,6 +216,12 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_SWVHI[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x8"
       }
     ]
   },
@@ -205,7 +230,7 @@
     "Attributes": [
       {
         "Name": "EmoteData",
-        "Type": "Struct EmoteData",
+        "Type": "struct EmoteData",
         "Size": "0xa0",
         "Offset": "0x0"
       }
@@ -216,7 +241,7 @@
     "Attributes": [
       {
         "Name": "EmoteData",
-        "Type": "Struct EmoteData",
+        "Type": "struct EmoteData",
         "Size": "0xa0",
         "Offset": "0x0"
       },
@@ -231,16 +256,36 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xa8"
+      },
+      {
+        "Name": "pad0x7_Z8QRW[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xa9"
       }
     ]
   },
   "EventDisableLookAtEmoteCamera": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_7G61Y[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventEnableLookAtEmoteCamera": {
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_ATERI[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EmoteDiceOutcomeTelemetryEvent": {
     "ClassSize": "0x14",
@@ -259,7 +304,7 @@
       },
       {
         "Name": "OrientationUsed",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x8"
       }
@@ -270,19 +315,19 @@
     "Attributes": [
       {
         "Name": "MeshName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Transform",
-        "Type": "Struct Transform",
+        "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0x10"
       },
       {
         "Name": "TextureParameterName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -291,6 +336,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x50"
+      },
+      {
+        "Name": "pad0xc_OBD83[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x54"
       }
     ]
   },

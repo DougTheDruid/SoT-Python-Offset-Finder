@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "Interactable",
-        "Type": "Class InteractableComponent*",
+        "Type": "class InteractableComponent*",
         "Size": "0x8",
         "Offset": "0x868"
       }

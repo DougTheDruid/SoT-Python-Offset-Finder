@@ -20,20 +20,20 @@
     "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "pad0x10_MJSXD[0x10]",
+        "Name": "pad0x10_840Z6[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "DirtinessStrengthToMaterialStrength",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
       {
         "Name": "CleanlinessInfo",
-        "Type": "Struct CleanlinessInfo",
+        "Type": "struct CleanlinessInfo",
         "Size": "0xc",
         "Offset": "0xe0"
       },
@@ -50,7 +50,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x54_H33Q5[0x54]",
+        "Name": "pad0x54_8FABI[0x54]",
         "Type": "char",
         "Size": "0x54",
         "Offset": "0xf4"

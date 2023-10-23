@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_Base_Capstan_C: public Capstan
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x8b0(0x8)
-	Class SphereComponent*                                       ProjectileCollision;                               // 0x8b8(0x8)
-	Class WwiseEmitterComponent*                                 NewVar;                                            // 0x8c0(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x8b0(0x8)
+	class SphereComponent*                                       ProjectileCollision;                               // 0x8b8(0x8)
+	class WwiseEmitterComponent*                                 NewVar;                                            // 0x8c0(0x8)
 };
 
 

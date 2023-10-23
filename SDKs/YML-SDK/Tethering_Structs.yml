@@ -5,5 +5,5 @@ TetherProjectileImpact:
   - Name: HitActor
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x8'

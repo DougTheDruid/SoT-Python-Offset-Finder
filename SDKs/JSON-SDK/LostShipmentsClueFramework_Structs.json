@@ -4,21 +4,27 @@
     "Attributes": [
       {
         "Name": "SiteType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "SiteData",
-        "Type": "Class ClueSiteData*",
+        "Type": "class ClueSiteData*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "Location",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_UYM1R[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       }
     ]
   },
@@ -27,7 +33,7 @@
     "Attributes": [
       {
         "Name": "ClueSiteType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -39,7 +45,7 @@
       },
       {
         "Name": "ClueCreator",
-        "Type": "Class LandClueCreator*",
+        "Type": "class LandClueCreator*",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -50,15 +56,21 @@
     "Attributes": [
       {
         "Name": "SiteType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "ClueCreator",
-        "Type": "Class SeaClueCreator*",
+        "Type": "class SeaClueCreator*",
         "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x10_LAIZG[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -67,7 +79,7 @@
     "Attributes": [
       {
         "Name": "DestinationType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -84,13 +96,13 @@
     "Attributes": [
       {
         "Name": "SiteType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "SupportedDescriptors",
-        "Type": "TArray<struct SupportedDescriptors>",
+        "Type": "TArray<struct WeightedClueDescriptor>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -101,7 +113,7 @@
     "Attributes": [
       {
         "Name": "Descriptor",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -118,7 +130,7 @@
     "Attributes": [
       {
         "Name": "Type",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -127,6 +139,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_U8NQZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       }
     ]
   },
@@ -135,7 +153,7 @@
     "Attributes": [
       {
         "Name": "SiteType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -144,6 +162,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_7T4NO[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       }
     ]
   },
@@ -152,13 +176,13 @@
     "Attributes": [
       {
         "Name": "NumberOfDebrisItemsToSpawn",
-        "Type": "Struct WeightedProbabilityRange",
+        "Type": "struct WeightedProbabilityRange",
         "Size": "0x20",
         "Offset": "0x0"
       },
       {
         "Name": "WeightedDebrisTypeAsset",
-        "Type": "Class WeightedDebrisDataAsset*",
+        "Type": "class WeightedDebrisDataAsset*",
         "Size": "0x8",
         "Offset": "0x20"
       }
@@ -169,13 +193,13 @@
     "Attributes": [
       {
         "Name": "NumberOfLootItemsToSpawn",
-        "Type": "Struct WeightedProbabilityRange",
+        "Type": "struct WeightedProbabilityRange",
         "Size": "0x20",
         "Offset": "0x0"
       },
       {
         "Name": "WeightedLootDescAsset",
-        "Type": "Class WeightedTreasureChestDescAsset*",
+        "Type": "class WeightedTreasureChestDescAsset*",
         "Size": "0x8",
         "Offset": "0x20"
       }
@@ -183,18 +207,32 @@
   },
   "QuestVariableClueSiteArray": {
     "ClassSize": "0x30",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x30_H9PBK[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
   },
   "QuestVariableClueSite": {
     "ClassSize": "0x30",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x30_3FSDK[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ClueSiteLootHistory": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "History",
-        "Type": "TArray<struct History>",
+        "Type": "TArray<struct LootSpawnedAtClueSite>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -205,13 +243,13 @@
     "Attributes": [
       {
         "Name": "SiteType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "SiteLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x8"
       },
@@ -225,16 +263,35 @@
   },
   "QuestVariableClueDescriptor": {
     "ClassSize": "0x30",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x30_T4NFW[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
   },
   "WeightedDebris": {
     "ClassSize": "0x28",
     "Attributes": [
       {
+        "Name": "pad0x20_JKK0U[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Weight",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_TCM5K[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
@@ -243,15 +300,21 @@
     "Attributes": [
       {
         "Name": "ObtainedClue",
-        "Type": "Class ClueDescriptor*",
+        "Type": "class ClueDescriptor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "ObtainedSiteType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x10_OQLSN[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

@@ -1,12 +1,12 @@
 {
   "InteractableComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x128",
+    "FullSize": "0x138",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x60",
+    "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "pad0x8_D7MY5[0x8]",
+        "Name": "pad0x8_XGJBU[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -19,19 +19,19 @@
       },
       {
         "Name": "BoxExtent",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xd8"
       },
       {
         "Name": "BoxOrigin",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xe4"
       },
       {
         "Name": "BoxRotation",
-        "Type": "Struct Rotator",
+        "Type": "struct Rotator",
         "Size": "0xc",
         "Offset": "0xf0"
       },
@@ -66,7 +66,7 @@
         "Offset": "0xfc"
       },
       {
-        "Name": "pad0x3_QUM3P[0x3]",
+        "Name": "pad0x3_UMIVL[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xfd"
@@ -78,7 +78,7 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x4_VMC7N[0x4]",
+        "Name": "pad0x4_ZSKS3[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x104"
@@ -91,7 +91,7 @@
       },
       {
         "Name": "InteractableArea",
-        "Type": "Class InteractableArea*",
+        "Type": "class InteractableArea*",
         "Size": "0x8",
         "Offset": "0x118"
       },
@@ -102,10 +102,24 @@
         "Offset": "0x120"
       },
       {
-        "Name": "pad0x7_2OD2L[0x7]",
+        "Name": "pad0x17_U7RIN[0x17]",
         "Type": "char",
-        "Size": "0x7",
+        "Size": "0x17",
         "Offset": "0x121"
+      }
+    ]
+  },
+  "ModalInteraction": {
+    "Super": "Actor",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_MR9TB[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3c8"
       }
     ]
   },
@@ -124,12 +138,12 @@
     "Attributes": [
       {
         "Name": "CurrentOptimalInteractable",
-        "Type": "Class InteractableArea*",
+        "Type": "class InteractableArea*",
         "Size": "0x8",
         "Offset": "0x5f0"
       },
       {
-        "Name": "pad0xc8_61OEI[0xc8]",
+        "Name": "pad0xc8_5JXQ6[0xc8]",
         "Type": "char",
         "Size": "0xc8",
         "Offset": "0x5f8"
@@ -145,13 +159,13 @@
   },
   "InteractableArea": {
     "Super": "Object",
-    "FullSize": "0x60",
+    "FullSize": "0x70",
     "InheritedSize": "0x28",
-    "ClassSize": "0x38",
+    "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "Bounds",
-        "Type": "Struct BoxSphereBounds",
+        "Type": "struct BoxSphereBounds",
         "Size": "0x1c",
         "Offset": "0x28"
       },
@@ -162,22 +176,28 @@
         "Offset": "0x44"
       },
       {
-        "Name": "pad0x4_A78OX[0x4]",
+        "Name": "pad0x4_YZBZD[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
       },
       {
         "Name": "Interactable",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x50"
       },
       {
         "Name": "Parent",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x58"
+      },
+      {
+        "Name": "pad0x10_TIOUV[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x60"
       }
     ]
   },
@@ -216,7 +236,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x10_GCUP3[0x10]",
+        "Name": "pad0x10_ZI94W[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -228,7 +248,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x28_5QRCC[0x28]",
+        "Name": "pad0x28_5NYHS[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x48"
@@ -249,7 +269,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_4K5B7[0x8]",
+        "Name": "pad0x8_RBZ03[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -281,7 +301,14 @@
     "FullSize": "0xd0",
     "InheritedSize": "0xc8",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_OHROP[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      }
+    ]
   },
   "MockActorWithCharacterInteractionComponent": {
     "Super": "Character",
@@ -290,19 +317,19 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x8_K5671[0x8]",
+        "Name": "pad0x8_RWTL6[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x5e0"
       },
       {
         "Name": "CharacterInteractionComponent",
-        "Type": "Class CharacterInteractionComponent*",
+        "Type": "class CharacterInteractionComponent*",
         "Size": "0x8",
         "Offset": "0x5e8"
       },
       {
-        "Name": "pad0xa0_WKYDE[0xa0]",
+        "Name": "pad0xa0_UKA9I[0xa0]",
         "Type": "char",
         "Size": "0xa0",
         "Offset": "0x5f0"
@@ -314,7 +341,14 @@
     "FullSize": "0x40",
     "InheritedSize": "0x28",
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_K2ZT7[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x28"
+      }
+    ]
   },
   "MockInteractorActor": {
     "Super": "Actor",
@@ -323,26 +357,26 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_S7U63[0x8]",
+        "Name": "pad0x8_KG0KK[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "FocusedInteractable",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "InteractedObject",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
         "Name": "InteractNotificationType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
@@ -368,19 +402,19 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x8_HRSUF[0x8]",
+        "Name": "pad0x8_PH1K5[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "InteractedPlayers",
-        "Type": "TArray<struct InteractedPlayers>",
+        "Type": "TArray<struct UniqueNetIdRepl>",
         "Size": "0x10",
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x10_TY94J[0x10]",
+        "Name": "pad0x10_NQ4A9[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xe0"

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct GameTime
 {
 public:
-	Struct DateTime                                              DateTimeRepresentation;                            // 0x0(0x8)
+	struct DateTime                                              DateTimeRepresentation;                            // 0x0(0x8)
 };
 
 
@@ -18,8 +18,8 @@ public:
 struct GameTimeRange
 {
 public:
-	Struct GameTime                                              Start;                                             // 0x0(0x8)
-	Struct GameTime                                              End;                                               // 0x8(0x8)
+	struct GameTime                                              Start;                                             // 0x0(0x8)
+	struct GameTime                                              End;                                               // 0x8(0x8)
 };
 
 
@@ -27,6 +27,7 @@ public:
 struct ReplicatedDateTime
 {
 public:
+	char                                                         pad0x8_45720[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -34,8 +35,8 @@ public:
 struct ReplicatedAuthoritativeTime
 {
 public:
-	Struct ReplicatedDateTime                                    WorldTime;                                         // 0x0(0x8)
-	Struct ReplicatedDateTime                                    SyncTime;                                          // 0x8(0x8)
+	struct ReplicatedDateTime                                    WorldTime;                                         // 0x0(0x8)
+	struct ReplicatedDateTime                                    SyncTime;                                          // 0x8(0x8)
 };
 
 
@@ -43,6 +44,7 @@ public:
 struct ReplicatedTimespan
 {
 public:
+	char                                                         pad0x8_PZ4WC[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -50,6 +52,7 @@ public:
 struct EventTimeServiceMigrated
 {
 public:
+	char                                                         pad0x1_RH5JZ[0x1];                                 // 0x0(0x1)
 };
 
 

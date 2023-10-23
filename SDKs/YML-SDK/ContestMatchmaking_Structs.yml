@@ -5,45 +5,49 @@ ClientMatchmakingResponseModel:
   - Name: EstimatedWaitTime
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct Timespan
+    Type: struct Timespan
   - Name: RetryAfter
     Offset: '0x8'
     Size: '0x8'
-    Type: Struct Timespan
+    Type: struct Timespan
   ClassSize: '0x10'
 ContestMatchmakingFactionMapEntry:
   Attributes:
   - Name: GameFaction
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: MatchmakingFaction
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_RYMPZ[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
 ContestMatchmakingServerRequestModel:
   Attributes:
   - Name: ServerId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: ServerAddress
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: VmId
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: PrivateServerId
     Offset: '0x30'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ServerLocation
     Offset: '0x40'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: PlayModeTags
     Offset: '0x58'
     Size: '0x10'
@@ -55,26 +59,34 @@ ContestMatchmakingServerRequestModel:
   - Name: Crews
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<struct Crews>
+    Type: TArray<struct ServerCrewModel>
   - Name: MatchmakingRequestReason
     Offset: '0x88'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_09PRW[0x3]
+  - Name: pad0x3_R7F0P[0x3]
     Offset: '0x89'
     Size: '0x3'
     Type: char
   - Name: RequestCorrelationId
     Offset: '0x8c'
     Size: '0x10'
-    Type: Struct Guid
-  ClassSize: '0xa0'
+    Type: struct Guid
+  - Name: SaferSeasServerIdOverride
+    Offset: '0x9c'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: pad0x4_R4VGF[0x4]
+    Offset: '0xac'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0xb0'
 ExistingServerCrewModel:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: SessionType
     Offset: '0x10'
     Size: '0x4'
@@ -83,7 +95,7 @@ ExistingServerCrewModel:
     Offset: '0x14'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_9LBQU[0x3]
+  - Name: pad0x3_AN7IJ[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -91,36 +103,40 @@ ExistingServerCrewModel:
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_XOORF[0x4]
+  - Name: pad0x4_RQBO8[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
   - Name: TimeInMatchmaking
     Offset: '0x20'
     Size: '0x8'
-    Type: Struct Timespan
+    Type: struct Timespan
   - Name: ForcedStamp
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0x38'
+    Type: struct FString
+  - Name: GuildId
+    Offset: '0x38'
+    Size: '0x10'
+    Type: struct Guid
+  ClassSize: '0x48'
 GameEventAvailabilityModel:
   Attributes:
   - Name: MainEvents
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct MainEvents>
+    Type: TArray<struct GameMainEventTypeModel>
   - Name: SubEvents
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct SubEvents>
+    Type: TArray<struct GameSubEventTypeModel>
   ClassSize: '0x20'
 GameMainEventTypeModel:
   Attributes:
   - Name: EventName
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ExcludedEvents
     Offset: '0x10'
     Size: '0x10'
@@ -128,7 +144,7 @@ GameMainEventTypeModel:
   - Name: ExcludedCrewIds
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<struct ExcludedCrewIds>
+    Type: TArray<struct Guid>
   - Name: Status
     Offset: '0x30'
     Size: '0x1'
@@ -137,31 +153,43 @@ GameMainEventTypeModel:
     Offset: '0x31'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_DVU3I[0x6]
+    Offset: '0x32'
+    Size: '0x6'
+    Type: char
   ClassSize: '0x38'
 GameSubEventTypeModel:
   Attributes:
   - Name: EventName
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: MaxCount
     Offset: '0x10'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_OSVN7[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
 OptionalPlayModeModel:
-  Attributes: []
+  Attributes:
+  - Name: pad0x50_9KO83[0x50]
+    Offset: '0x0'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x50'
 ServerContendedModel:
   Attributes:
   - Name: Positions
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct Positions>
+    Type: TArray<struct Vector2D>
   - Name: Regions
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct Regions>
+    Type: TArray<struct ServerRegionModel>
   - Name: Resources
     Offset: '0x20'
     Size: '0x10'
@@ -172,31 +200,31 @@ ServerCrewModel:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: UserId
     Offset: '0x10'
     Size: '0x18'
-    Type: Struct UniqueNetIdRepl
+    Type: struct UniqueNetIdRepl
   - Name: ServerId
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: ServerAddress
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: SessionType
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_MRARZ[0x4]
+  - Name: pad0x4_3Y14Q[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
   - Name: Positions
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<struct Positions>
+    Type: TArray<struct Vector2D>
   - Name: Resources
     Offset: '0x60'
     Size: '0x10'
@@ -205,7 +233,7 @@ ServerCrewModel:
     Offset: '0x70'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_BBZ1B[0x3]
+  - Name: pad0x3_RQJSQ[0x3]
     Offset: '0x71'
     Size: '0x3'
     Type: char
@@ -220,151 +248,159 @@ ServerCrewModel:
   - Name: RivalCrewId
     Offset: '0x7c'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: MatchmakingRequestReason
     Offset: '0x8c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_485JP[0x3]
+  - Name: pad0x3_2OZZH[0x3]
     Offset: '0x8d'
     Size: '0x3'
     Type: char
   - Name: RequestedGameEvent
     Offset: '0x90'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: TimeWaitingForMatch
     Offset: '0xa0'
     Size: '0x8'
-    Type: Struct Timespan
+    Type: struct Timespan
   - Name: ForcedStamp
     Offset: '0xa8'
     Size: '0x10'
-    Type: Struct FString
-  ClassSize: '0xb8'
+    Type: struct FString
+  - Name: GuildId
+    Offset: '0xb8'
+    Size: '0x10'
+    Type: struct Guid
+  ClassSize: '0xc8'
 ServerCrewRequestModel:
   Attributes:
   - Name: ServerId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: VmId
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: PrivateServerId
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct FString
-  - Name: ServerLocation
+    Type: struct FString
+  - Name: SaferSeasServerId
     Offset: '0x30'
     Size: '0x10'
-    Type: Struct FString
-  - Name: StampId
+    Type: struct Guid
+  - Name: ServerLocation
     Offset: '0x40'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
+  - Name: StampId
+    Offset: '0x50'
+    Size: '0x10'
+    Type: struct FString
   - Name: PlayModeTags
-    Offset: '0x58'
+    Offset: '0x68'
     Size: '0x10'
     Type: TArray<Str PlayModeTags>
   - Name: PlayModeState
-    Offset: '0x68'
-    Size: '0x10'
-    Type: Struct FString
-  - Name: CrewCount
     Offset: '0x78'
+    Size: '0x10'
+    Type: struct FString
+  - Name: CrewCount
+    Offset: '0x88'
     Size: '0x4'
     Type: int
   - Name: CrewCountBucket
-    Offset: '0x7c'
+    Offset: '0x8c'
     Size: '0x4'
     Type: int
   - Name: CrewMin
-    Offset: '0x80'
+    Offset: '0x90'
     Size: '0x4'
     Type: int
   - Name: CrewMax
-    Offset: '0x84'
+    Offset: '0x94'
     Size: '0x4'
     Type: int
   - Name: CrewSessionTypes
-    Offset: '0x88'
+    Offset: '0x98'
     Size: '0x10'
     Type: TArray<Int CrewSessionTypes>
   - Name: Crews
-    Offset: '0x98'
-    Size: '0x10'
-    Type: TArray<struct Crews>
-  - Name: Uptime
     Offset: '0xa8'
+    Size: '0x10'
+    Type: TArray<struct ExistingServerCrewModel>
+  - Name: Uptime
+    Offset: '0xb8'
     Size: '0x8'
-    Type: Struct Timespan
+    Type: struct Timespan
   - Name: Contended
-    Offset: '0xb0'
+    Offset: '0xc0'
     Size: '0x30'
-    Type: Struct ServerContendedModel
+    Type: struct ServerContendedModel
   - Name: GameEvents
-    Offset: '0xe0'
+    Offset: '0xf0'
     Size: '0x20'
-    Type: Struct GameEventAvailabilityModel
-  ClassSize: '0x100'
+    Type: struct GameEventAvailabilityModel
+  ClassSize: '0x110'
 ServerCrewResponseModel:
   Attributes:
   - Name: ResultCode
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_6GU3D[0x7]
+  - Name: pad0x7_J84GZ[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
   - Name: Crews
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct Crews>
+    Type: TArray<struct ServerCrewModel>
   - Name: RetryAfter
     Offset: '0x68'
     Size: '0x8'
-    Type: Struct Timespan
+    Type: struct Timespan
   - Name: MigrationThreshold
     Offset: '0x70'
     Size: '0x8'
-    Type: Struct Timespan
+    Type: struct Timespan
   - Name: ExpireAfter
     Offset: '0x78'
     Size: '0x8'
-    Type: Struct Timespan
+    Type: struct Timespan
   ClassSize: '0x80'
 ServerQueueWaitTimeModel:
   Attributes:
   - Name: QueueScopeId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: AvgWaitTime
     Offset: '0x10'
     Size: '0x8'
-    Type: Struct Timespan
+    Type: struct Timespan
   - Name: MaxWaitTime
     Offset: '0x18'
     Size: '0x8'
-    Type: Struct Timespan
+    Type: struct Timespan
   ClassSize: '0x20'
 ServerQueueWaitTimesRequestModel:
   Attributes:
   - Name: ServerId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: ServerLocation
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: PrivateServerId
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: PlayModeTags
     Offset: '0x38'
     Size: '0x10'
@@ -372,21 +408,21 @@ ServerQueueWaitTimesRequestModel:
   - Name: PlayModeState
     Offset: '0x48'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x58'
 ServerQueueWaitTimesResponseModel:
   Attributes:
   - Name: QueueWaitTimes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct QueueWaitTimes>
+    Type: TArray<struct ServerQueueWaitTimeModel>
   ClassSize: '0x10'
 ServerRegionModel:
   Attributes:
   - Name: Position
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: Radius
     Offset: '0x8'
     Size: '0x4'

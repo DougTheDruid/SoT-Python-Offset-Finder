@@ -5,7 +5,7 @@ SerialisedNestedStruct:
   - Name: String
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: IntArray
     Offset: '0x10'
     Size: '0x10'
@@ -32,7 +32,7 @@ SerialisedTestStruct:
   - Name: String
     Offset: '0x8'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: IntArray
     Offset: '0x18'
     Size: '0x10'
@@ -40,9 +40,9 @@ SerialisedTestStruct:
   - Name: StructArray
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct StructArray>
+    Type: TArray<struct SerialisedNestedStruct>
   - Name: NestedStruct
     Offset: '0x38'
     Size: '0x28'
-    Type: Struct SerialisedNestedStruct
+    Type: struct SerialisedNestedStruct
   ClassSize: '0x60'

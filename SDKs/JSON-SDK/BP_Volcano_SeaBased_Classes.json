@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "NamedPoints",
-        "Type": "Class NamedPointsComponent*",
+        "Type": "class NamedPointsComponent*",
         "Size": "0x8",
         "Offset": "0x5f0"
       }

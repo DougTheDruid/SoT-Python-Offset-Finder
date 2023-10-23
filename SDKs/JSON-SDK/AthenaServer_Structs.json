@@ -4,9 +4,15 @@
     "Attributes": [
       {
         "Name": "InactivityThreshold",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x30_PLNNL[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x8"
       }
     ]
   },

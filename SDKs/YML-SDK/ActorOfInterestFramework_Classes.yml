@@ -11,8 +11,8 @@ ActorOfInterestComponent:
   - Name: ActorOfInterestId
     Offset: '0xc8'
     Size: '0x8'
-    Type: class
-  - Name: pad0x18_SWVVR[0x18]
+    Type: class UClass*
+  - Name: pad0x18_ZB53G[0x18]
     Offset: '0xd0'
     Size: '0x18'
     Type: char
@@ -28,14 +28,14 @@ ActorOfInterestId:
   Super: Object
 ActorOfInterestService:
   Attributes:
-  - Name: pad0x60_AWKDI[0x60]
+  - Name: pad0x60_NG31D[0x60]
     Offset: '0x3c8'
     Size: '0x60'
     Type: char
   - Name: EventDispatcher
     Offset: '0x428'
     Size: '0xa0'
-    Type: Struct ObjectMessagingDispatcher
+    Type: struct ObjectMessagingDispatcher
   ClassSize: '0x100'
   FullSize: '0x4c8'
   InheritedSize: '0x3c8'

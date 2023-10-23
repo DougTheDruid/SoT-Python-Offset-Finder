@@ -4,13 +4,13 @@
     "Attributes": [
       {
         "Name": "GiveBuffAudioEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "ReceiveBuffAudioEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -26,14 +26,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_DQYBP[0x7]",
+        "Name": "pad0x7_HQZET[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "AudioEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
       }

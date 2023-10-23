@@ -7,37 +7,37 @@
     "Attributes": [
       {
         "Name": "CinematicCameraController",
-        "Type": "Class CinematicCameraController*",
+        "Type": "class CinematicCameraController*",
         "Size": "0x8",
         "Offset": "0x78"
       },
       {
         "Name": "CinematicCameraControllerClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x28_LMT2W[0x28]",
+        "Name": "pad0x28_C3TKJ[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x88"
       },
       {
         "Name": "CreatedWorldMarkers",
-        "Type": "TArray<struct CreatedWorldMarkers>",
+        "Type": "TArray<struct WorldMarkerDesc>",
         "Size": "0x10",
         "Offset": "0xb0"
       },
       {
         "Name": "DebugSchedulerSettings",
-        "Type": "Class GameEventSchedulerSettingsAsset*",
+        "Type": "class GameEventSchedulerSettingsAsset*",
         "Size": "0x8",
         "Offset": "0xc0"
       },
       {
         "Name": "ServerPerformanceReplicator",
-        "Type": "Class ServerPerformanceReplicator*",
+        "Type": "class ServerPerformanceReplicator*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
@@ -48,7 +48,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x64_6KKWV[0x64]",
+        "Name": "pad0x64_FX1YI[0x64]",
         "Type": "char",
         "Size": "0x64",
         "Offset": "0xd4"

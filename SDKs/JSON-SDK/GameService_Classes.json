@@ -4,7 +4,14 @@
     "FullSize": "0x540",
     "InheritedSize": "0x420",
     "ClassSize": "0x120",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x120_MCE7A[0x120]",
+        "Type": "char",
+        "Size": "0x120",
+        "Offset": "0x420"
+      }
+    ]
   },
   "GameServiceLifecycleInterface": {
     "Super": "Interface",

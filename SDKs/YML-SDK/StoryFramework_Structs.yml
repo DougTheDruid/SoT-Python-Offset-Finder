@@ -5,7 +5,11 @@ ActorLocationPair:
   - Name: SpawnLocation
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
+  - Name: pad0x20_3DO0B[0x20]
+    Offset: '0x10'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x30'
 DuplicateStoriesReceivedTelemetryEvent:
   Attributes:
@@ -19,31 +23,47 @@ InstancedLayerLocation:
   - Name: ActorWithInstancedLayerComponent
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: LayerToSpawn
     Offset: '0x10'
     Size: '0x8'
-    Type: Class LayerActorsDataAsset*
+    Type: class LayerActorsDataAsset*
   ClassSize: '0x18'
 IsAllStoryActiveCondition:
-  Attributes: []
+  Attributes:
+  - Name: pad0x48_MHBIQ[0x48]
+    Offset: '0x0'
+    Size: '0x48'
+    Type: char
   ClassSize: '0x48'
 IsAnyStoryActiveCondition:
-  Attributes: []
+  Attributes:
+  - Name: pad0x48_LYV3K[0x48]
+    Offset: '0x0'
+    Size: '0x48'
+    Type: char
   ClassSize: '0x48'
 IsStoryActiveConditionBase:
   Attributes:
+  - Name: pad0x28_7V1MB[0x28]
+    Offset: '0x0'
+    Size: '0x28'
+    Type: char
   - Name: StoryFlags
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct StoryFlags>
+    Type: TArray<struct StoryFlag>
+  - Name: pad0x10_NCXGZ[0x10]
+    Offset: '0x38'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x48'
 LightingZoneStoryRelatedSettings:
   Attributes:
   - Name: Story
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct StoryFlag
+    Type: struct StoryFlag
   - Name: TargetPointOnCurve
     Offset: '0x8'
     Size: '0x4'
@@ -58,11 +78,11 @@ NamedPointsActorLocation:
   - Name: ActorWithNamedPointsComponent
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: GroupLocations
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct GroupLocations>
+    Type: TArray<struct NamedPointsGroupActorLocation>
   ClassSize: '0x20'
 NamedPointsGroupActorLocation:
   Attributes:
@@ -70,6 +90,10 @@ NamedPointsGroupActorLocation:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x20_IJKWR[0x20]
+    Offset: '0x8'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x28'
 StoriesChangedTelemetryEvent:
   Attributes:
@@ -89,6 +113,10 @@ StoriesChangedTelemetryEvent:
     Offset: '0x21'
     Size: '0x1'
     Type: bool
+  - Name: pad0x6_QXXBJ[0x6]
+    Offset: '0x22'
+    Size: '0x6'
+    Type: char
   ClassSize: '0x28'
 StoriesRefreshRequestedTelemetryEvent:
   Attributes:
@@ -102,12 +130,12 @@ StoryClaimableResourcesList:
   - Name: StoryFlag
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct StoryFlag
+    Type: struct StoryFlag
   - Name: AreResourcesClaimed
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_I3LW6[0x7]
+  - Name: pad0x7_H4DW6[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -121,7 +149,7 @@ StoryClaimedResourcesChangedTelemetryEvent:
   - Name: StoryResourceStateChanges
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct StoryResourceStateChanges>
+    Type: TArray<struct StoryResourceStateChanged>
   ClassSize: '0x10'
 StoryFlag:
   Attributes:
@@ -136,6 +164,10 @@ StoryInfo:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x10_W3CVU[0x10]
+    Offset: '0x8'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x18'
 StoryNameInfo:
   Attributes:
@@ -146,7 +178,7 @@ StoryNameInfo:
   - Name: StoryDesc
     Offset: '0x8'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x18'
 StoryResourceStateChanged:
   Attributes:
@@ -172,33 +204,33 @@ StorySpawnedActorsChangeTelemetryEvent:
   - Name: StorySpawnedActors
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct StorySpawnedActors>
+    Type: TArray<struct StorySpawnedActorsIndividualStoryInfo>
   - Name: StoryDespawnedActors
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct StoryDespawnedActors>
+    Type: TArray<struct StorySpawnedActorsIndividualStoryInfo>
   ClassSize: '0x20'
 StorySpawnedActorsComponentList:
   Attributes:
   - Name: Story
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct StoryFlag
+    Type: struct StoryFlag
   - Name: GroupLocations
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct GroupLocations>
+    Type: TArray<struct NamedPointsGroupActorLocation>
   - Name: LayerToSpawn
     Offset: '0x18'
     Size: '0x8'
-    Type: Class LayerActorsDataAsset*
+    Type: class LayerActorsDataAsset*
   ClassSize: '0x20'
 StorySpawnedActorsIndividualStoryInfo:
   Attributes:
   - Name: StoryName
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: NumActorsSpawned
     Offset: '0x10'
     Size: '0x4'
@@ -213,17 +245,17 @@ StorySpawnedActorsList:
   - Name: Story
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct StoryFlag
+    Type: struct StoryFlag
   - Name: ActorLocations
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct ActorLocations>
+    Type: TArray<struct ActorLocationPair>
   - Name: NamedPointsActorLocations
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<struct NamedPointsActorLocations>
+    Type: TArray<struct NamedPointsActorLocation>
   - Name: InstancedLayerLocations
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct InstancedLayerLocations>
+    Type: TArray<struct InstancedLayerLocation>
   ClassSize: '0x38'

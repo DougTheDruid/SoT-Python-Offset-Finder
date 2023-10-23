@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "AthenaPlayerZonePenetrationTracker",
-        "Type": "Class AthenaPlayerZonePenetrationTrackerComponent*",
+        "Type": "class AthenaPlayerZonePenetrationTrackerComponent*",
         "Size": "0x8",
         "Offset": "0x590"
       }

@@ -4,13 +4,13 @@
     "Attributes": [
       {
         "Name": "BackOfShipEmissaryFlagMeshAssetReference",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "MastEmissaryFlagMeshAssetReference",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -21,7 +21,7 @@
     "Attributes": [
       {
         "Name": "TargetParticles",
-        "Type": "Struct ActorComponentSelector",
+        "Type": "struct ActorComponentSelector",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -39,13 +39,13 @@
       },
       {
         "Name": "PutOutParticles",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x18"
       },
       {
         "Name": "ParticleSystem",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x20"
       }
@@ -56,7 +56,7 @@
     "Attributes": [
       {
         "Name": "TargetLight",
-        "Type": "Struct ActorComponentSelector",
+        "Type": "struct ActorComponentSelector",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -79,14 +79,14 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_W3TC0[0x4]",
+        "Name": "pad0x4_VTWFR[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
       },
       {
         "Name": "Light",
-        "Type": "Class LightComponent*",
+        "Type": "class LightComponent*",
         "Size": "0x8",
         "Offset": "0x20"
       }
@@ -97,7 +97,7 @@
     "Attributes": [
       {
         "Name": "TargetMesh",
-        "Type": "Struct ActorComponentSelector",
+        "Type": "struct ActorComponentSelector",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -133,7 +133,7 @@
       },
       {
         "Name": "DynamicMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x28"
       }
@@ -144,67 +144,67 @@
     "Attributes": [
       {
         "Name": "Company",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "CompanyLevelData",
-        "Type": "TArray<struct CompanyLevelData>",
+        "Type": "TArray<struct EmissaryLevelData>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "MaxRankPopUpToastData",
-        "Type": "Class DataAsset*",
+        "Type": "class DataAsset*",
         "Size": "0x8",
         "Offset": "0x18"
       },
       {
         "Name": "EmissaryJoinedPopUpToastData",
-        "Type": "Class DataAsset*",
+        "Type": "class DataAsset*",
         "Size": "0x8",
         "Offset": "0x20"
       },
       {
         "Name": "EmissarySunkPopUpToastData",
-        "Type": "Class DataAsset*",
+        "Type": "class DataAsset*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "CompanyCosmetics",
-        "Type": "Struct EmissaryCompanyCosmetics",
+        "Type": "struct EmissaryCompanyCosmetics",
         "Size": "0x20",
         "Offset": "0x30"
       },
       {
         "Name": "TimeSpentAtMaxRankStat",
-        "Type": "Struct PlayerStat",
+        "Type": "struct PlayerStat",
         "Size": "0x4",
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_8V46J[0x4]",
+        "Name": "pad0x4_R4EP9[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
       },
       {
         "Name": "StatsToFireOnFullEmissaryClothing",
-        "Type": "TArray<struct StatsToFireOnFullEmissaryClothing>",
+        "Type": "TArray<struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "StatsToFireOnFullEmissaryShipCustomizations",
-        "Type": "TArray<struct StatsToFireOnFullEmissaryShipCustomizations>",
+        "Type": "TArray<struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
         "Name": "StatsToFireOnFullShipCustomizationsAndClothing",
-        "Type": "TArray<struct StatsToFireOnFullShipCustomizationsAndClothing>",
+        "Type": "TArray<struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x78"
       }
@@ -237,62 +237,62 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_3X9MH[0x4]",
+        "Name": "pad0x4_SEQJO[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "EmissaryFlagMeshAssetReferences",
-        "Type": "Struct EmissaryFlagMeshReferences",
+        "Type": "struct EmissaryFlagMeshReferences",
         "Size": "0x20",
         "Offset": "0x8"
       },
       {
         "Name": "CustomisedFlagSettings",
-        "Type": "Class EmissaryColourSwatchSettingsAsset*",
+        "Type": "class EmissaryColourSwatchSettingsAsset*",
         "Size": "0x8",
         "Offset": "0x68"
       },
       {
         "Name": "EmissaryDeactivationReward",
-        "Type": "Struct RewardId",
+        "Type": "struct RewardId",
         "Size": "0x8",
         "Offset": "0x70"
       },
       {
         "Name": "StatsToFireOnEmissaryLevelReached",
-        "Type": "TArray<struct StatsToFireOnEmissaryLevelReached>",
+        "Type": "TArray<struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x78"
       },
       {
         "Name": "StatsToFireOnEmissaryLevelReachedGuildOnly",
-        "Type": "TArray<struct StatsToFireOnEmissaryLevelReachedGuildOnly>",
+        "Type": "TArray<struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x88"
       },
       {
         "Name": "StatsToFireOnEmissaryDeactivated",
-        "Type": "TArray<struct StatsToFireOnEmissaryDeactivated>",
+        "Type": "TArray<struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0x98"
       },
       {
         "Name": "StatsToFireOnEmissaryDeactivatedGuildOnly",
-        "Type": "TArray<struct StatsToFireOnEmissaryDeactivatedGuildOnly>",
+        "Type": "TArray<struct PlayerStat>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
       {
         "Name": "TreasureSoldNotificationFlag",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0xb8"
       },
       {
         "Name": "EmissaryFlagTextureReference",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0xc8"
       }
@@ -303,19 +303,19 @@
     "Attributes": [
       {
         "Name": "ColourSwatchIdentifier",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "EmissaryFlagMeshAssetReferences",
-        "Type": "Struct EmissaryFlagMeshReferences",
+        "Type": "struct EmissaryFlagMeshReferences",
         "Size": "0x20",
         "Offset": "0x10"
       },
       {
         "Name": "EmissaryFlagTextureReference",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -343,7 +343,7 @@
     "Attributes": [
       {
         "Name": "StatToFire",
-        "Type": "Struct PlayerStat",
+        "Type": "struct PlayerStat",
         "Size": "0x4",
         "Offset": "0x0"
       }
@@ -351,14 +351,21 @@
   },
   "EmissaryPointsBoostCriteria": {
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_FIJST[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
   },
   "TrackedPlayerKillEntry": {
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "KilledPlayer",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -381,19 +388,19 @@
     "Attributes": [
       {
         "Name": "FeatureFlag",
-        "Type": "Struct FeatureFlag",
+        "Type": "struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_4LIII[0x4]",
+        "Name": "pad0x4_WTWF2[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       },
       {
         "Name": "QuestDesc",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -404,19 +411,19 @@
     "Attributes": [
       {
         "Name": "Company",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "KillPlayers",
-        "Type": "TArray<struct KillPlayers>",
+        "Type": "TArray<struct EmissaryCompanyCampaignKillPlayer>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "GameEvents",
-        "Type": "TArray<struct GameEvents>",
+        "Type": "TArray<struct EmissaryCompanyCampaignGameEvent>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -427,13 +434,13 @@
     "Attributes": [
       {
         "Name": "EventType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Scales",
-        "Type": "TArray<struct Scales>",
+        "Type": "TArray<struct EmissaryCompanyCampaignScale>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -461,13 +468,13 @@
     "Attributes": [
       {
         "Name": "Company",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Scales",
-        "Type": "TArray<struct Scales>",
+        "Type": "TArray<struct EmissaryCompanyCampaignScale>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -478,13 +485,13 @@
     "Attributes": [
       {
         "Name": "Company",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "ActionRewardData",
-        "Type": "Struct EmissaryActionRewardData",
+        "Type": "struct EmissaryActionRewardData",
         "Size": "0x88",
         "Offset": "0x8"
       }
@@ -495,43 +502,43 @@
     "Attributes": [
       {
         "Name": "OwnershipChangedRewards",
-        "Type": "TArray<struct OwnershipChangedRewards>",
+        "Type": "TArray<struct EmissaryEventAward>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "PlacedOnShipRewards",
-        "Type": "TArray<struct PlacedOnShipRewards>",
+        "Type": "TArray<struct EmissaryEventAward>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "KillPlayerReward",
-        "Type": "Struct EmissaryKillPlayerReward",
+        "Type": "struct EmissaryKillPlayerReward",
         "Size": "0x28",
         "Offset": "0x20"
       },
       {
         "Name": "GameEventsRewards",
-        "Type": "TArray<struct GameEventsRewards>",
+        "Type": "TArray<struct EmissaryGameEventsReward>",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
         "Name": "HandinRewards",
-        "Type": "TArray<struct HandinRewards>",
+        "Type": "TArray<struct EmissaryEventAward>",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "CompanyActionRewards",
-        "Type": "TArray<struct CompanyActionRewards>",
+        "Type": "TArray<struct EmissaryCompanyActionReward>",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
         "Name": "FactionActionRewards",
-        "Type": "TArray<struct FactionActionRewards>",
+        "Type": "TArray<struct EmissaryFactionActionReward>",
         "Size": "0x10",
         "Offset": "0x78"
       }
@@ -547,7 +554,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_QLVP1[0x3]",
+        "Name": "pad0x3_56UUC[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -570,7 +577,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_0G9AL[0x3]",
+        "Name": "pad0x3_VR29Q[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -605,7 +612,7 @@
         "Offset": "0x2"
       },
       {
-        "Name": "pad0x1_L4N3Y[0x1]",
+        "Name": "pad0x1_M1042[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x3"
@@ -623,7 +630,7 @@
     "Attributes": [
       {
         "Name": "FinishedEventType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -632,6 +639,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_RJWCP[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       }
     ]
   },
@@ -645,14 +658,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_FKIM0[0x4]",
+        "Name": "pad0x4_JSXM3[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "EmissaryLevelKillCountScaleFactors",
-        "Type": "TArray<struct EmissaryLevelKillCountScaleFactors>",
+        "Type": "TArray<struct EmissaryKillScaleFactor>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -708,13 +721,13 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "CompanyVotes",
-        "Type": "TArray<struct CompanyVotes>",
+        "Type": "TArray<struct PerCompanyVotes>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -751,6 +764,12 @@
   "EmissaryEncounteredSkellyFortNetworkEvent": {
     "ClassSize": "0x18",
     "Attributes": [
+      {
+        "Name": "pad0x10_A75GL[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
       {
         "Name": "CompanyName",
         "Type": "struct FName",
@@ -797,7 +816,7 @@
     "Attributes": [
       {
         "Name": "OfferId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -835,6 +854,12 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
+        "Name": "pad0x10_WK3CR[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
@@ -852,6 +877,12 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
+        "Name": "pad0x10_446TP[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
@@ -862,6 +893,12 @@
   "EmissaryStoleLootNetworkEvent": {
     "ClassSize": "0x18",
     "Attributes": [
+      {
+        "Name": "pad0x10_RVR5I[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
       {
         "Name": "CompanyName",
         "Type": "struct FName",
@@ -874,6 +911,12 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
+        "Name": "pad0x10_AC0QL[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
@@ -884,6 +927,12 @@
   "EmissaryDiscoveredLootNetworkEvent": {
     "ClassSize": "0x18",
     "Attributes": [
+      {
+        "Name": "pad0x10_AOX0A[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
       {
         "Name": "CompanyName",
         "Type": "struct FName",
@@ -896,6 +945,12 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
+        "Name": "pad0x10_QWOR8[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "CompanyName",
         "Type": "struct FName",
         "Size": "0x8",
@@ -907,14 +962,20 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
+        "Name": "pad0x10_R6N9J[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "PopUpDesc",
-        "Type": "Class DataAsset*",
+        "Type": "class DataAsset*",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
         "Name": "GuildId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -924,8 +985,14 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
+        "Name": "pad0x10_4ODT6[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "PopUpDesc",
-        "Type": "Class DataAsset*",
+        "Type": "class DataAsset*",
         "Size": "0x8",
         "Offset": "0x10"
       },
@@ -937,7 +1004,7 @@
       },
       {
         "Name": "GuildId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -947,14 +1014,20 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
+        "Name": "pad0x10_84CD2[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "PopUpDesc",
-        "Type": "Class DataAsset*",
+        "Type": "class DataAsset*",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
         "Name": "GuildId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -962,7 +1035,14 @@
   },
   "EmissaryDeactivatedNetworkEvent": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_CTPR3[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EmissaryStateUpdateEvent": {
     "ClassSize": "0xc",
@@ -984,6 +1064,12 @@
   "EmissaryProgressUpdatedNetworkEvent": {
     "ClassSize": "0x20",
     "Attributes": [
+      {
+        "Name": "pad0x10_X54JZ[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
       {
         "Name": "OldRepTotal",
         "Type": "float",
@@ -1015,7 +1101,7 @@
       },
       {
         "Name": "AssociatedCrew",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
       }
@@ -1023,14 +1109,21 @@
   },
   "ActivateEmissaryMaxRankQuestForSession": {
     "ClassSize": "0x1",
-    "Attributes": []
-  },
-  "UpdateEmissaryValueForCompany": {
-    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "SessionId",
-        "Type": "Struct Guid",
+        "Name": "pad0x1_BCWP5[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "UpdateGuildEmissaryValueForCompany": {
+    "ClassSize": "0x34",
+    "Attributes": [
+      {
+        "Name": "GuildId",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -1042,7 +1135,48 @@
       },
       {
         "Name": "AssociatedCrew",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "UpdateAmount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "From",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "To",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "UpdateEmissaryValueForCompany": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "SessionId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Company",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "AssociatedCrew",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -1053,7 +1187,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x3_7RNPT[0x3]",
+        "Name": "pad0x3_L8SEG[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x29"
@@ -1071,7 +1205,7 @@
     "Attributes": [
       {
         "Name": "SessionId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -1083,7 +1217,7 @@
       },
       {
         "Name": "AssociatedCrew",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -1094,13 +1228,13 @@
     "Attributes": [
       {
         "Name": "SessionId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "GuildId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -1112,7 +1246,7 @@
       },
       {
         "Name": "AssociatedCrew",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -1123,7 +1257,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_8VI6G[0x3]",
+        "Name": "pad0x3_IVK9O[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -1141,7 +1275,7 @@
     "Attributes": [
       {
         "Name": "SessionId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -1153,7 +1287,7 @@
       },
       {
         "Name": "AssociatedCrew",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -1170,7 +1304,7 @@
       },
       {
         "Name": "AssociatedCrew",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
       },
@@ -1184,11 +1318,25 @@
   },
   "EmissaryLevelResetProgress": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_X2F2L[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "PlayerRemovedFromEmissaryCrew": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_MPLSM[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "PlayerAddedToEmissaryCrew": {
     "ClassSize": "0x10",
@@ -1218,7 +1366,7 @@
     "Attributes": [
       {
         "Name": "EmissarySessionId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -1241,7 +1389,7 @@
         "Offset": "0x1c"
       },
       {
-        "Name": "pad0x3_LB03V[0x3]",
+        "Name": "pad0x3_KZIXK[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1d"
@@ -1271,7 +1419,7 @@
     "Attributes": [
       {
         "Name": "EmissarySessionId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -1286,6 +1434,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x3_PV1I5[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x19"
       }
     ]
   },
@@ -1294,7 +1448,7 @@
     "Attributes": [
       {
         "Name": "EmissarySessionId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -1312,7 +1466,7 @@
       },
       {
         "Name": "GuildId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x1c"
       }
@@ -1322,6 +1476,12 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
+        "Name": "pad0x10_52ETR[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "CompanyId",
         "Type": "struct FName",
         "Size": "0x8",
@@ -1329,7 +1489,7 @@
       },
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -1339,6 +1499,12 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
+        "Name": "pad0x10_XZRCS[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "CompanyId",
         "Type": "struct FName",
         "Size": "0x8",
@@ -1346,7 +1512,7 @@
       },
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       }

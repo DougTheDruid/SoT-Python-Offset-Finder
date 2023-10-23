@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 struct ChecklistItem
 {
 public:
-	Struct FText                                                 Description;                                       // 0x0(0x38)
+	struct FText                                                 Description;                                       // 0x0(0x38)
 	int                                                          NumRequiredActionCompletions;                      // 0x38(0x4)
-	char                                                         pad0x4_3DKL3[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_8074L[0x4];                                 // 0x3c(0x4)
 	TArray<class ChecklistActionData*>                           ActionData;                                        // 0x40(0x10)
 };
 
@@ -21,8 +21,9 @@ public:
 struct ChecklistMapItemData
 {
 public:
-	Struct TreasureMapTextDesc                                   Description;                                       // 0x0(0x48)
+	struct TreasureMapTextDesc                                   Description;                                       // 0x0(0x48)
 	bool                                                         IsComplete;                                        // 0x48(0x1)
+	char                                                         pad0x7_W29LO[0x7];                                 // 0x49(0x7)
 };
 
 
@@ -30,10 +31,10 @@ public:
 struct ChecklistMapContents
 {
 public:
-	Struct TreasureMapTextDesc                                   Title;                                             // 0x0(0x48)
-	Struct TreasureMapTextDesc                                   Description;                                       // 0x48(0x48)
-	TArray<struct ChecklistItems>                                ChecklistItems;                                    // 0x90(0x10)
-	Struct TreasureMapTextDesc                                   Afternote;                                         // 0xa0(0x48)
+	struct TreasureMapTextDesc                                   Title;                                             // 0x0(0x48)
+	struct TreasureMapTextDesc                                   Description;                                       // 0x48(0x48)
+	TArray<struct ChecklistMapItemData>                          ChecklistItems;                                    // 0x90(0x10)
+	struct TreasureMapTextDesc                                   Afternote;                                         // 0xa0(0x48)
 };
 
 
@@ -41,6 +42,7 @@ public:
 struct CompleteEntireChecklistEvent
 {
 public:
+	char                                                         pad0x1_GQYL6[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -48,8 +50,8 @@ public:
 struct ChecklistBootyDeliveredEvent
 {
 public:
-	Class Actor*                                                 Seller;                                            // 0x0(0x8)
-	Class Actor*                                                 BuyingNPC;                                         // 0x8(0x8)
+	class Actor*                                                 Seller;                                            // 0x0(0x8)
+	class Actor*                                                 BuyingNPC;                                         // 0x8(0x8)
 };
 
 
@@ -57,7 +59,7 @@ public:
 struct ChecklistCompletionEvent
 {
 public:
-	Class ChecklistActionData*                                   ActionData;                                        // 0x0(0x8)
+	class ChecklistActionData*                                   ActionData;                                        // 0x0(0x8)
 };
 
 
@@ -65,10 +67,10 @@ public:
 struct ChecklistItemCompletedTelemetryEvent
 {
 public:
-	Struct Guid                                                  ChecklistMapId;                                    // 0x0(0x10)
+	struct Guid                                                  ChecklistMapId;                                    // 0x0(0x10)
 	byte                                                         ReceivedActionType;                                // 0x10(0x1)
-	char                                                         pad0x7_4D0B0[0x7];                                 // 0x11(0x7)
-	Struct FString                                               ActionDescryption;                                 // 0x18(0x10)
+	char                                                         pad0x7_35PFZ[0x7];                                 // 0x11(0x7)
+	struct FString                                               ActionDescryption;                                 // 0x18(0x10)
 };
 
 

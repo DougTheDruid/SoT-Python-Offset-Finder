@@ -5,15 +5,15 @@ BP_Linstock_C:
   - Name: UberGraphFrame
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: StaticMesh
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: DefaultSceneRoot
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x18'
   FullSize: '0x3e0'
   InheritedSize: '0x3c8'

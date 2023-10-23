@@ -5,42 +5,62 @@ DamageZoneRepairableStateChangedEvent:
   - Name: DamageZoneActor
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: RepairableState
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_AOC90[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
 EventPlayerUndoRepairCompleted:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_7GY7N[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
 EventPlayerUndoRepairEnd:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_1II52[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
 EventPlayerUndoRepairStart:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_ESNNW[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
 EventRepairableObjectDestroyed:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_R3OVS[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EventRepairableObjectRepairEndedEvent:
   Attributes:
   - Name: Repairable
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   - Name: Position
     Offset: '0x8'
     Size: '0xc'
-    Type: Struct Vector
-  - Name: pad0x4_NGUBN[0x4]
+    Type: struct Vector
+  - Name: pad0x4_B7XXU[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
   - Name: RepairerActor
     Offset: '0x18'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: RepairPercentage
     Offset: '0x20'
     Size: '0x4'
@@ -49,17 +69,25 @@ EventRepairableObjectRepairEndedEvent:
     Offset: '0x24'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_1ZMHL[0x3]
+    Offset: '0x25'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x28'
 RepairableComponentRepairableStateChangedEvent:
   Attributes:
   - Name: RepairableComponent
     Offset: '0x0'
     Size: '0x8'
-    Type: Class ActorComponent*
+    Type: class ActorComponent*
   - Name: RepairableState
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_DONB8[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
 ShipPartDamagePersistenceModel:
   Attributes:
@@ -70,5 +98,5 @@ ShipPartDamagePersistenceModel:
   - Name: Identifier
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x20'

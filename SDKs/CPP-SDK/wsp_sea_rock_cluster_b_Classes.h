@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class wsp_sea_rock_cluster_b_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   wsp_sea_rocks_b;                                   // 0x3c8(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x3d8(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x3e0(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x3e8(0x8)
+	class StaticMeshComponent*                                   wsp_sea_rocks_b;                                   // 0x3c8(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x3d0(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x3d8(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x3e0(0x8)
+	class SceneComponent*                                        SharedRoot;                                        // 0x3e8(0x8)
 };
 
 

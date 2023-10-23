@@ -16,20 +16,24 @@ EventOptimalInteractionObjectChanged:
   - Name: PreviousFocusObject
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   - Name: NewFocusObject
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   ClassSize: '0x10'
 IsNewInteractingPlayerCondition:
   Attributes:
+  - Name: pad0x8_3BE0G[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: PlayerPayloadSelector
     Offset: '0x8'
     Size: '0x20'
-    Type: Struct ConditionContextPayloadSelectorInstance
+    Type: struct ConditionContextPayloadSelectorInstance
   - Name: InteractablePayloadSelector
     Offset: '0x28'
     Size: '0x20'
-    Type: Struct ConditionContextPayloadSelectorInstance
+    Type: struct ConditionContextPayloadSelectorInstance
   ClassSize: '0x48'

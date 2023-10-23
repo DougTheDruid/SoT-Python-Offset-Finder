@@ -24,9 +24,9 @@ public:
 class LevelAssetCachingService: public Object
 {
 public:
-	char                                                         pad0x18_EEQ8C[0x18];                               // 0x28(0x18)
+	char                                                         pad0x18_KLKYK[0x18];                               // 0x28(0x18)
 	struct FName                                                 CurrentRegion;                                     // 0x40(0x8)
-	char                                                         pad0x28_HIDFQ[0x28];                               // 0x48(0x28)
+	char                                                         pad0x28_LP8L1[0x28];                               // 0x48(0x28)
 };
 
 
@@ -34,7 +34,7 @@ public:
 class RegionalAssetListDataAsset: public DataAsset
 {
 public:
-	TArray<struct RegionAssets>                                  RegionAssets;                                      // 0x28(0x10)
+	TArray<struct StringAssetReference>                          RegionAssets;                                      // 0x28(0x10)
 };
 
 
@@ -42,9 +42,9 @@ public:
 class RegionalAssetCache: public Object
 {
 public:
-	char                                                         pad0x10_VRTIC[0x10];                               // 0x28(0x10)
-	Class RegionalAssetListDataAsset*                            CurrentListAsset;                                  // 0x38(0x8)
-	char                                                         pad0x98_MASYU[0x98];                               // 0x40(0x98)
+	char                                                         pad0x10_RQP1K[0x10];                               // 0x28(0x10)
+	class RegionalAssetListDataAsset*                            CurrentListAsset;                                  // 0x38(0x8)
+	char                                                         pad0x98_VUEBL[0x98];                               // 0x40(0x98)
 };
 
 
@@ -52,6 +52,7 @@ public:
 class RegionalAssetListSetupDataAsset: public DataAsset
 {
 public:
+	char                                                         pad0x50_MIH51[0x50];                               // 0x28(0x50)
 };
 
 
@@ -59,6 +60,7 @@ public:
 class RegionalAssetListWorldSetupDataAsset: public DataAsset
 {
 public:
+	char                                                         pad0x50_2AL1H[0x50];                               // 0x28(0x50)
 };
 
 
@@ -66,9 +68,9 @@ public:
 class RegionLookupGeneratedGrid: public Object
 {
 public:
-	char                                                         pad0x8_90GAU[0x8];                                 // 0x28(0x8)
-	Struct WorldRegionSetup                                      WorldSetup;                                        // 0x30(0x28)
-	char                                                         pad0x58_5TQD4[0x58];                               // 0x58(0x58)
+	char                                                         pad0x8_6LRWE[0x8];                                 // 0x28(0x8)
+	struct WorldRegionSetup                                      WorldSetup;                                        // 0x30(0x28)
+	char                                                         pad0x58_SAPKT[0x58];                               // 0x58(0x58)
 };
 
 
@@ -76,6 +78,7 @@ public:
 class RegionLookupSeaId: public Object
 {
 public:
+	char                                                         pad0x20_ZD8Y9[0x20];                               // 0x28(0x20)
 };
 
 

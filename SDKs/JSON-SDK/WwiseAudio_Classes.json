@@ -7,37 +7,37 @@
     "Attributes": [
       {
         "Name": "PauseEventStart",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "PauseEventRelease",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "StopAllEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "WwiseMediaSoundComponentEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x40"
       },
       {
         "Name": "NonShippingAudioRootAsset",
-        "Type": "Class WwiseNonShippingAudioRootAsset*",
+        "Type": "class WwiseNonShippingAudioRootAsset*",
         "Size": "0x8",
         "Offset": "0x48"
       },
       {
         "Name": "WwiseIDsDatabase",
-        "Type": "Class WwiseIDsDatabase*",
+        "Type": "class WwiseIDsDatabase*",
         "Size": "0x8",
         "Offset": "0x50"
       }
@@ -55,87 +55,14 @@
     "FullSize": "0x78",
     "InheritedSize": "0x28",
     "ClassSize": "0x50",
-    "Attributes": []
-  },
-  "MovieSceneAkAudioEventSection": {
-    "Super": "MovieSceneSection",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Event",
-        "Type": "Class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "MovieSceneAkAudioRTPCSection": {
-    "Super": "MovieSceneSection",
-    "FullSize": "0x128",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "pad0x8_SXNJO[0x8]",
+        "Name": "pad0x50_TTX6B[0x50]",
         "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "Name",
-        "Type": "Struct FString",
-        "Size": "0x10",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "FloatCurve",
-        "Type": "Struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0xb0"
+        "Size": "0x50",
+        "Offset": "0x28"
       }
     ]
-  },
-  "MovieSceneAkTrack": {
-    "Super": "MovieSceneTrack",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Sections",
-        "Type": "TArray<class MovieSceneSection*>",
-        "Size": "0x10",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "bIsAMasterTrack",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "pad0x7_B3JAK[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x99"
-      }
-    ]
-  },
-  "MovieSceneAkAudioEventTrack": {
-    "Super": "MovieSceneAkTrack",
-    "FullSize": "0xa0",
-    "InheritedSize": "0xa0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MovieSceneAkAudioRTPCTrack": {
-    "Super": "MovieSceneAkTrack",
-    "FullSize": "0xa0",
-    "InheritedSize": "0xa0",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "MultiEmitterRootComponent": {
     "Super": "SceneComponent",
@@ -145,13 +72,13 @@
     "Attributes": [
       {
         "Name": "MultiEmitterDataArray",
-        "Type": "TArray<struct MultiEmitterDataArray>",
+        "Type": "TArray<struct MultiEmitterData>",
         "Size": "0x10",
         "Offset": "0x2e0"
       },
       {
         "Name": "PlayingEmitters",
-        "Type": "TArray<struct PlayingEmitters>",
+        "Type": "TArray<struct WwiseEmitter>",
         "Size": "0x10",
         "Offset": "0x2f0"
       }
@@ -162,7 +89,14 @@
     "FullSize": "0x88",
     "InheritedSize": "0x28",
     "ClassSize": "0x60",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x60_CZ3HM[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x28"
+      }
+    ]
   },
   "WwiseEmitterInterface": {
     "Super": "Interface",
@@ -179,13 +113,13 @@
     "Attributes": [
       {
         "Name": "EmitterPool",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x310"
       },
       {
         "Name": "PlayEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x318"
       }
@@ -196,7 +130,14 @@
     "FullSize": "0x48",
     "InheritedSize": "0x28",
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x20_WBKPH[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
   },
   "WwiseInputManagerInterface": {
     "Super": "Interface",
@@ -210,28 +151,56 @@
     "FullSize": "0x50",
     "InheritedSize": "0x28",
     "ClassSize": "0x28",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x28_23JNC[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x28"
+      }
+    ]
   },
   "WwiseMediaManager": {
     "Super": "Object",
     "FullSize": "0x78",
     "InheritedSize": "0x28",
     "ClassSize": "0x50",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x50_CZJLQ[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x28"
+      }
+    ]
   },
   "WwisePoolManager": {
     "Super": "Object",
     "FullSize": "0x100",
     "InheritedSize": "0x28",
     "ClassSize": "0xd8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xd8_XKUW3[0xd8]",
+        "Type": "char",
+        "Size": "0xd8",
+        "Offset": "0x28"
+      }
+    ]
   },
   "WwiseSoundFrameManager": {
     "Super": "Object",
     "FullSize": "0x48",
     "InheritedSize": "0x28",
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x20_EUGYS[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
   },
   "WwiseEvent": {
     "Super": "Object",
@@ -241,7 +210,7 @@
     "Attributes": [
       {
         "Name": "RequiredBank",
-        "Type": "Class WwiseBank*",
+        "Type": "class WwiseBank*",
         "Size": "0x8",
         "Offset": "0x28"
       },
@@ -252,7 +221,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_18XPG[0x3]",
+        "Name": "pad0x3_VQ4DT[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -288,7 +257,7 @@
         "Offset": "0x45"
       },
       {
-        "Name": "pad0xa_RW13F[0xa]",
+        "Name": "pad0xa_BMQU3[0xa]",
         "Type": "char",
         "Size": "0xa",
         "Offset": "0x46"
@@ -359,19 +328,19 @@
     "Attributes": [
       {
         "Name": "CodeName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "UAssetRelativePath",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "StreamRelativePath",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x48"
       }
@@ -390,7 +359,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x10_M5467[0x10]",
+        "Name": "pad0x10_JGIRS[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x38"
@@ -405,18 +374,18 @@
     "Attributes": [
       {
         "Name": "path",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "InitBank",
-        "Type": "Class WwiseBank*",
+        "Type": "class WwiseBank*",
         "Size": "0x8",
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x28_WD5OT[0x28]",
+        "Name": "pad0x28_GYC1M[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x48"
@@ -436,6 +405,86 @@
         "Offset": "0x50"
       }
     ]
+  },
+  "MovieSceneAkAudioEventSection": {
+    "Super": "MovieSceneSection",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Event",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "MovieSceneAkAudioRTPCSection": {
+    "Super": "MovieSceneSection",
+    "FullSize": "0x128",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "pad0x8_IYBUS[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "Name",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "FloatCurve",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0xb0"
+      }
+    ]
+  },
+  "MovieSceneAkTrack": {
+    "Super": "MovieSceneTrack",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Sections",
+        "Type": "TArray<class MovieSceneSection*>",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "bIsAMasterTrack",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x7_8X2U0[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x99"
+      }
+    ]
+  },
+  "MovieSceneAkAudioEventTrack": {
+    "Super": "MovieSceneAkTrack",
+    "FullSize": "0xa0",
+    "InheritedSize": "0xa0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MovieSceneAkAudioRTPCTrack": {
+    "Super": "MovieSceneAkTrack",
+    "FullSize": "0xa0",
+    "InheritedSize": "0xa0",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

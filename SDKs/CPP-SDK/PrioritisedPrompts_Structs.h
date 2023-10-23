@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 struct PrioritisedPromptWithHandle
 {
 public:
-	Struct PrioritisedPromptHandle                               PromptHandle;                                      // 0x0(0x10)
-	Struct PrioritisedPrompt                                     Prompt;                                            // 0x10(0x60)
+	struct PrioritisedPromptHandle                               PromptHandle;                                      // 0x0(0x10)
+	struct PrioritisedPrompt                                     Prompt;                                            // 0x10(0x60)
 };
 
 
@@ -20,12 +20,13 @@ struct PrioritisedPrompt
 {
 public:
 	bool                                                         UsePopupMessageDescForText;                        // 0x0(0x1)
-	char                                                         pad0x7_N81NT[0x7];                                 // 0x1(0x7)
-	Struct FText                                                 Message;                                           // 0x8(0x38)
-	Struct FString                                               Key;                                               // 0x40(0x10)
-	Class PopUpMessageDesc*                                      PopUpMessageDesc;                                  // 0x50(0x8)
+	char                                                         pad0x7_NIUG0[0x7];                                 // 0x1(0x7)
+	struct FText                                                 Message;                                           // 0x8(0x38)
+	struct FString                                               Key;                                               // 0x40(0x10)
+	class PopUpMessageDesc*                                      PopUpMessageDesc;                                  // 0x50(0x8)
 	byte                                                         BasePriority;                                      // 0x58(0x1)
 	byte                                                         MenuNavigation;                                    // 0x59(0x1)
+	char                                                         pad0x6_KL7TV[0x6];                                 // 0x5a(0x6)
 };
 
 
@@ -33,7 +34,7 @@ public:
 struct PrioritisedPromptHandle
 {
 public:
-	Struct Guid                                                  Id;                                                // 0x0(0x10)
+	struct Guid                                                  Id;                                                // 0x0(0x10)
 };
 
 
@@ -42,8 +43,8 @@ struct PromptEvaluation
 {
 public:
 	byte                                                         PromptType;                                        // 0x0(0x1)
-	char                                                         pad0x7_XPQCH[0x7];                                 // 0x1(0x7)
-	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x8(0x70)
+	char                                                         pad0x7_XC5VD[0x7];                                 // 0x1(0x7)
+	struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x8(0x70)
 };
 
 
@@ -51,8 +52,10 @@ public:
 struct PermanentPromptNetworkEvent
 {
 public:
-	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x10(0x70)
+	char                                                         pad0x10_0REOW[0x10];                               // 0x0(0x10)
+	struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x10(0x70)
 	byte                                                         StartOrStop;                                       // 0x80(0x1)
+	char                                                         pad0x7_QYUYZ[0x7];                                 // 0x81(0x7)
 };
 
 
@@ -60,7 +63,7 @@ public:
 struct PromptsCounterIncrementEvent
 {
 public:
-	class                                                        AccessKey;                                         // 0x0(0x8)
+	class UClass*                                                AccessKey;                                         // 0x0(0x8)
 };
 
 
@@ -68,6 +71,7 @@ public:
 struct PromptsServiceSetupEvent
 {
 public:
+	char                                                         pad0x1_KVGVB[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -75,8 +79,8 @@ public:
 struct PlayerPromptTelemetryEvent
 {
 public:
-	Struct FString                                               Message;                                           // 0x0(0x10)
-	Struct FString                                               Key;                                               // 0x10(0x10)
+	struct FString                                               Message;                                           // 0x0(0x10)
+	struct FString                                               Key;                                               // 0x10(0x10)
 };
 
 

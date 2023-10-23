@@ -7,13 +7,13 @@
     "Attributes": [
       {
         "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
-        "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
+        "Type": "class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
         "Size": "0x8",
         "Offset": "0x5e0"
       },
       {
         "Name": "CookerIgnition",
-        "Type": "Class CookerIgnitionComponent*",
+        "Type": "class CookerIgnitionComponent*",
         "Size": "0x8",
         "Offset": "0x5e8"
       }

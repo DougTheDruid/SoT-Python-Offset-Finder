@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "TemplateName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -15,7 +15,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_BY3RD[0x3]",
+        "Name": "pad0x3_6ZQ7F[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -32,14 +32,20 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
+        "Name": "pad0x18_G8O7M[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
         "Name": "MatchmakingHopper",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "ShipSize",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x28"
       },
@@ -48,27 +54,54 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_8S0I1[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       }
     ]
   },
   "OnlineSessionMemberLostEvent": {
     "ClassSize": "0x28",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x28_C4ODP[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      }
+    ]
   },
   "SessionLostEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_57ZTG[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "SessionDetailsChangedEvent": {
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x20_BLI2U[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
   },
   "SessionInfoUpdateAvailableEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -79,13 +112,13 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "UserStatus",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -108,7 +141,7 @@
     "Attributes": [
       {
         "Name": "ErrorMessage",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -123,6 +156,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x14"
+      },
+      {
+        "Name": "pad0x3_NIMA1[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x15"
       }
     ]
   },
@@ -130,8 +169,14 @@
     "ClassSize": "0x78",
     "Attributes": [
       {
+        "Name": "pad0x50_73EI8[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      },
+      {
         "Name": "NewCrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -142,14 +187,14 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x4_X9LZX[0x4]",
+        "Name": "pad0x4_UU792[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x64"
       },
       {
         "Name": "Message",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x68"
       }
@@ -159,8 +204,14 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
+        "Name": "pad0x10_C397M[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Session",
-        "Type": "Struct CrewSessionTelemetry",
+        "Type": "struct CrewSessionTelemetry",
         "Size": "0x40",
         "Offset": "0x10"
       }
@@ -171,7 +222,7 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -182,25 +233,25 @@
     "Attributes": [
       {
         "Name": "SessionMembers",
-        "Type": "TArray<struct SessionMembers>",
+        "Type": "TArray<struct CrewSessionMemberTelemetry>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "SessionTemplate",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "SessionVisibility",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "PlayMode",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -211,13 +262,13 @@
     "Attributes": [
       {
         "Name": "UserId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "StatusString",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -226,6 +277,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x7_WTM8R[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x21"
       }
     ]
   },
@@ -233,44 +290,50 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
+        "Name": "pad0x10_KPX08[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "NewCrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "CrewMatchmakingAttemptId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "SessionType",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "MatchmakingHopper",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "MatchmakingType",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "MatchmakingResult",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "ErrorMessage",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x70"
       },
@@ -298,26 +361,32 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
+        "Name": "pad0x10_BLUM6[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "CrewMatchmakingAttemptId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "SessionType",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "MatchmakingHopper",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "MatchmakingType",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -344,25 +413,44 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x68"
+      },
+      {
+        "Name": "pad0x4_IUHVK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x6c"
       }
     ]
   },
   "CrewSessionLeaveTelemetryEvent": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_SQOFK[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "CrewSessionJoinedTelemetryEvent": {
     "ClassSize": "0x70",
     "Attributes": [
       {
+        "Name": "pad0x50_432XH[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      },
+      {
         "Name": "JoinMethod",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "QoSTelemetry",
-        "Type": "TArray<struct QoSTelemetry>",
+        "Type": "TArray<struct CrewSessionQoSMeasurementTelemetry>",
         "Size": "0x10",
         "Offset": "0x60"
       }
@@ -373,7 +461,7 @@
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -400,6 +488,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1d"
+      },
+      {
+        "Name": "pad0x2_GAZZK[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x1e"
       }
     ]
   },
@@ -407,8 +501,14 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
+        "Name": "pad0x50_39GJH[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      },
+      {
         "Name": "QoSTelemetry",
-        "Type": "TArray<struct QoSTelemetry>",
+        "Type": "TArray<struct CrewSessionQoSMeasurementTelemetry>",
         "Size": "0x10",
         "Offset": "0x50"
       }

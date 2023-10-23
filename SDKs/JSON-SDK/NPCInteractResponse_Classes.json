@@ -35,7 +35,7 @@
     "Attributes": [
       {
         "Name": "NPCInteractResponseAnimData",
-        "Type": "TArray<struct NPCInteractResponseAnimData>",
+        "Type": "TArray<struct NPCInteractResponseStruct>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -60,7 +60,14 @@
     "FullSize": "0xd0",
     "InheritedSize": "0xc8",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_I1L4F[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      }
+    ]
   },
   "NPCInteractResponseDialogInterface": {
     "Super": "Interface",

@@ -10,14 +10,14 @@ namespace DougsSDKDumper
 class BP_Sewer_GoldenSands_AudioLayer_C: public Actor
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x3c8(0x8)
-	Class AudioPortalComponent*                                  None;                                              // 0x3d0(0x8)
-	Class AudioPortalComponent*                                  None;                                              // 0x3d8(0x8)
-	Class AudioSpaceComponent*                                   None;                                              // 0x3e0(0x8)
-	Class AudioPortalComponent*                                  None;                                              // 0x3e8(0x8)
-	Class AudioSpaceComponent*                                   None;                                              // 0x3f0(0x8)
-	Class AudioPortalComponent*                                  None;                                              // 0x3f8(0x8)
-	Class SceneComponent*                                        None;                                              // 0x400(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
+	class AudioPortalComponent*                                  AudioPortal_03;                                    // 0x3d0(0x8)
+	class AudioPortalComponent*                                  AudioPortal_04;                                    // 0x3d8(0x8)
+	class AudioSpaceComponent*                                   AudioSpace_Sewer_SmallSection;                     // 0x3e0(0x8)
+	class AudioPortalComponent*                                  AudioPortal_02;                                    // 0x3e8(0x8)
+	class AudioSpaceComponent*                                   AudioSpace_Sewer_LargeSection;                     // 0x3f0(0x8)
+	class AudioPortalComponent*                                  AudioPortal_01;                                    // 0x3f8(0x8)
+	class SceneComponent*                                        Scene;                                             // 0x400(0x8)
 };
 
 

@@ -5,22 +5,30 @@ EventLocalPlayerOpenedWarMap:
   - Name: Faction
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Company*
+    Type: class Company*
   ClassSize: '0x8'
 EventWarMapHardModeStateChanged:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_G1GIN[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EventWarMapStateChanged:
   Attributes:
+  - Name: pad0x8_WJOOR[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: WarMapProposalContainer
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x10'
 WarMapVoteAddedEvent:
   Attributes:
   - Name: Voter
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x8'

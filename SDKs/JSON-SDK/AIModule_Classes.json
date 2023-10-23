@@ -6,31 +6,31 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_A26NO[0x8]",
+        "Name": "pad0x8_U0RHG[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "NodeName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "TreeAsset",
-        "Type": "Class BehaviorTree*",
+        "Type": "class BehaviorTree*",
         "Size": "0x8",
         "Offset": "0x40"
       },
       {
         "Name": "ParentNode",
-        "Type": "Class BTCompositeNode*",
+        "Type": "class BTCompositeNode*",
         "Size": "0x8",
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x8_2ILEJ[0x8]",
+        "Name": "pad0x8_JQVLT[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x50"
@@ -42,7 +42,14 @@
     "FullSize": "0x60",
     "InheritedSize": "0x58",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_XFC7V[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x58"
+      }
+    ]
   },
   "BTService": {
     "Super": "BTAuxiliaryNode",
@@ -75,7 +82,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x7_7JXK7[0x7]",
+        "Name": "pad0x7_4LESL[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x69"
@@ -95,7 +102,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x3_UOTEZ[0x3]",
+        "Name": "pad0x3_UP8Y7[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x61"
@@ -107,7 +114,7 @@
         "Offset": "0x64"
       },
       {
-        "Name": "pad0x3_PMSCZ[0x3]",
+        "Name": "pad0x3_XJLED[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x65"
@@ -122,7 +129,7 @@
     "Attributes": [
       {
         "Name": "BlackboardKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x68"
       }
@@ -133,7 +140,14 @@
     "FullSize": "0x60",
     "InheritedSize": "0x58",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_5PI66[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x58"
+      }
+    ]
   },
   "BTTask_BlackboardBase": {
     "Super": "BTTaskNode",
@@ -143,7 +157,7 @@
     "Attributes": [
       {
         "Name": "BlackboardKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x60"
       }
@@ -157,13 +171,13 @@
     "Attributes": [
       {
         "Name": "QueryTemplate",
-        "Type": "Class EnvQuery*",
+        "Type": "class EnvQuery*",
         "Size": "0x8",
         "Offset": "0x88"
       },
       {
         "Name": "QueryParams",
-        "Type": "TArray<struct QueryParams>",
+        "Type": "TArray<struct EnvNamedValue>",
         "Size": "0x10",
         "Offset": "0x90"
       },
@@ -174,7 +188,7 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x7_PQOHB[0x7]",
+        "Name": "pad0x7_65PAC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xa1"
@@ -194,7 +208,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x4_SHTKF[0x4]",
+        "Name": "pad0x4_GK259[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x8c"
@@ -221,7 +235,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_1R0YU[0x4]",
+        "Name": "pad0x4_RY78L[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -236,7 +250,7 @@
     "Attributes": [
       {
         "Name": "OptionName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -247,20 +261,20 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x3_VM6ZG[0x3]",
+        "Name": "pad0x3_1CITG[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x41"
       },
       {
         "Name": "Feature",
-        "Type": "Struct FeatureFlag",
+        "Type": "struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x44"
       },
       {
         "Name": "ItemType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x50"
       }
@@ -304,24 +318,24 @@
       },
       {
         "Name": "BoolValue",
-        "Type": "Struct AIDataProviderBoolValue",
+        "Type": "struct AIDataProviderBoolValue",
         "Size": "0x30",
         "Offset": "0x38"
       },
       {
         "Name": "FloatValueMin",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0x68"
       },
       {
         "Name": "FloatValueMax",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x1_U600J[0x1]",
+        "Name": "pad0x1_7NM9O[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0xc8"
@@ -345,31 +359,31 @@
         "Offset": "0xcb"
       },
       {
-        "Name": "pad0x4_NBDMC[0x4]",
+        "Name": "pad0x4_EN9LQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xcc"
       },
       {
         "Name": "ScoreClampMin",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0xd0"
       },
       {
         "Name": "ScoreClampMax",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0x100"
       },
       {
         "Name": "ScoringFactor",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0x130"
       },
       {
-        "Name": "pad0x8_HNOFL[0x8]",
+        "Name": "pad0x8_VJLTF[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x160"
@@ -381,149 +395,12 @@
         "Offset": "0x168"
       },
       {
-        "Name": "pad0x7_4MT3J[0x7]",
+        "Name": "pad0x7_5IPGS[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x169"
       }
     ]
-  },
-  "AIResourceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PathFollowingComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x2b8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x1f0",
-    "Attributes": [
-      {
-        "Name": "pad0x58_LXLP0[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "MovementComp",
-        "Type": "Class NavMovementComponent*",
-        "Size": "0x8",
-        "Offset": "0x120"
-      },
-      {
-        "Name": "pad0x8_7UDQ3[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "MyNavData",
-        "Type": "Class NavigationData*",
-        "Size": "0x8",
-        "Offset": "0x130"
-      },
-      {
-        "Name": "pad0xbc_MN9DH[0xbc]",
-        "Type": "char",
-        "Size": "0xbc",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "bUseVisibilityTestsSimplification",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1f4"
-      },
-      {
-        "Name": "pad0xc3_TQI6U[0xc3]",
-        "Type": "char",
-        "Size": "0xc3",
-        "Offset": "0x1f5"
-      }
-    ]
-  },
-  "AIAsyncTaskBlueprintProxy": {
-    "Super": "Object",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": []
-  },
-  "AIBlueprintHelperLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PawnActionsComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x100",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "ControlledPawn",
-        "Type": "Class Pawn*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "ActionStacks",
-        "Type": "TArray<struct ActionStacks>",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "ActionEvents",
-        "Type": "TArray<struct ActionEvents>",
-        "Size": "0x10",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "CurrentAction",
-        "Type": "Class PawnAction*",
-        "Size": "0x8",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "pad0x8_S7SJN[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xf8"
-      }
-    ]
-  },
-  "AIPerceptionListenerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BlackboardKeyType": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": []
-  },
-  "BehaviorTreeTypes": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "GenericTeamAgentInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "AIController": {
     "Super": "Controller",
@@ -532,7 +409,7 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x28_G7OKI[0x28]",
+        "Name": "pad0x28_C4T78[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x428"
@@ -568,60 +445,211 @@
         "Offset": "0x450"
       },
       {
-        "Name": "pad0x7_FZE0S[0x7]",
+        "Name": "pad0x7_W4U65[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x451"
       },
       {
         "Name": "PathFollowingComponent",
-        "Type": "Class PathFollowingComponent*",
+        "Type": "class PathFollowingComponent*",
         "Size": "0x8",
         "Offset": "0x458"
       },
       {
         "Name": "BrainComponent",
-        "Type": "Class BrainComponent*",
+        "Type": "class BrainComponent*",
         "Size": "0x8",
         "Offset": "0x460"
       },
       {
         "Name": "PerceptionComponent",
-        "Type": "Class AIPerceptionComponent*",
+        "Type": "class AIPerceptionComponent*",
         "Size": "0x8",
         "Offset": "0x468"
       },
       {
         "Name": "ActionsComp",
-        "Type": "Class PawnActionsComponent*",
+        "Type": "class PawnActionsComponent*",
         "Size": "0x8",
         "Offset": "0x470"
       },
       {
         "Name": "Blackboard",
-        "Type": "Class BlackboardComponent*",
+        "Type": "class BlackboardComponent*",
         "Size": "0x8",
         "Offset": "0x478"
       },
       {
         "Name": "CachedGameplayTasksComponent",
-        "Type": "Class GameplayTasksComponent*",
+        "Type": "class GameplayTasksComponent*",
         "Size": "0x8",
         "Offset": "0x480"
       },
       {
-        "Name": "pad0x10_NNH02[0x10]",
+        "Name": "pad0x10_H2Q09[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x488"
       },
       {
-        "Name": "pad0x20_7T6KF[0x20]",
+        "Name": "pad0x20_YABB6[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x498"
       }
     ]
+  },
+  "PathFollowingComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x2b8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x1f0",
+    "Attributes": [
+      {
+        "Name": "pad0x58_2VDVS[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "MovementComp",
+        "Type": "class NavMovementComponent*",
+        "Size": "0x8",
+        "Offset": "0x120"
+      },
+      {
+        "Name": "pad0x8_OII5B[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "MyNavData",
+        "Type": "class NavigationData*",
+        "Size": "0x8",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "pad0xbc_N3G6E[0xbc]",
+        "Type": "char",
+        "Size": "0xbc",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "bUseVisibilityTestsSimplification",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1f4"
+      },
+      {
+        "Name": "pad0xc3_7JK21[0xc3]",
+        "Type": "char",
+        "Size": "0xc3",
+        "Offset": "0x1f5"
+      }
+    ]
+  },
+  "AIResourceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIAsyncTaskBlueprintProxy": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x38_36D1K[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AIBlueprintHelperLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PawnActionsComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x100",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "ControlledPawn",
+        "Type": "class Pawn*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "ActionStacks",
+        "Type": "TArray<struct PawnActionStack>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "ActionEvents",
+        "Type": "TArray<struct PawnActionEvent>",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "CurrentAction",
+        "Type": "class PawnAction*",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "pad0x8_S6BDA[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      }
+    ]
+  },
+  "AIPerceptionListenerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BlackboardKeyType": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_V12SQ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "BehaviorTreeTypes": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GenericTeamAgentInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "DetourCrowdAIController": {
     "Super": "AIController",
@@ -652,7 +680,7 @@
     "Attributes": [
       {
         "Name": "ObjectProperty",
-        "Type": "Struct CustomDataProviderObjectPropertySelector",
+        "Type": "struct CustomDataProviderObjectPropertySelector",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -675,7 +703,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_O65AR[0x7]",
+        "Name": "pad0x7_WVOU6[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -713,7 +741,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_95ELY[0x7]",
+        "Name": "pad0x7_OM270[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
@@ -735,13 +763,13 @@
     "Attributes": [
       {
         "Name": "PerceptionSystemClassName",
-        "Type": "Struct StringClassReference",
+        "Type": "struct StringClassReference",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "HotSpotManagerClassName",
-        "Type": "Struct StringClassReference",
+        "Type": "struct StringClassReference",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -777,19 +805,19 @@
       },
       {
         "Name": "BehaviorTreeManager",
-        "Type": "Class BehaviorTreeManager*",
+        "Type": "class BehaviorTreeManager*",
         "Size": "0x8",
         "Offset": "0x68"
       },
       {
         "Name": "EnvironmentQueryManager",
-        "Type": "Class EnvQueryManager*",
+        "Type": "class EnvQueryManager*",
         "Size": "0x8",
         "Offset": "0x70"
       },
       {
         "Name": "PerceptionSystem",
-        "Type": "Class AIPerceptionSystem*",
+        "Type": "class AIPerceptionSystem*",
         "Size": "0x8",
         "Offset": "0x78"
       },
@@ -801,12 +829,12 @@
       },
       {
         "Name": "HotSpotManager",
-        "Type": "Class AIHotSpotManager*",
+        "Type": "class AIHotSpotManager*",
         "Size": "0x8",
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x58_FKX32[0x58]",
+        "Name": "pad0x58_Z0QAC[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x98"
@@ -821,19 +849,19 @@
     "Attributes": [
       {
         "Name": "DebugDrawColor",
-        "Type": "Struct Color",
+        "Type": "struct Color",
         "Size": "0x4",
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_HH1FG[0x4]",
+        "Name": "pad0x4_E3IQ2[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
       },
       {
         "Name": "DebugName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -850,7 +878,7 @@
         "Offset": "0x44"
       },
       {
-        "Name": "pad0x3_APHIU[0x3]",
+        "Name": "pad0x3_MJT04[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x45"
@@ -868,19 +896,19 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x7_4OP38[0x7]",
+        "Name": "pad0x7_8E844[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x49"
       },
       {
         "Name": "PerceptionSystemInstance",
-        "Type": "Class AIPerceptionSystem*",
+        "Type": "class AIPerceptionSystem*",
         "Size": "0x8",
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x30_S4AFT[0x30]",
+        "Name": "pad0x30_CNV1V[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x58"
@@ -894,7 +922,7 @@
     "ClassSize": "0x100",
     "Attributes": [
       {
-        "Name": "pad0x58_Q3QL0[0x58]",
+        "Name": "pad0x58_YME6Q[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x28"
@@ -912,7 +940,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x94_TVNZ4[0x94]",
+        "Name": "pad0x94_0VFUP[0x94]",
         "Type": "char",
         "Size": "0x94",
         "Offset": "0x94"
@@ -956,7 +984,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x4_6GFU7[0x4]",
+        "Name": "pad0x4_AARGQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xdc"
@@ -969,30 +997,30 @@
       },
       {
         "Name": "DominantSense",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x10_08ACF[0x10]",
+        "Name": "pad0x10_QNKCU[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xf8"
       },
       {
         "Name": "AIOwner",
-        "Type": "Class AIController*",
+        "Type": "class AIController*",
         "Size": "0x8",
         "Offset": "0x108"
       },
       {
-        "Name": "pad0x80_X0A50[0x80]",
+        "Name": "pad0x80_N4CSI[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x38_RUP7L[0x38]",
+        "Name": "pad0x38_JFOVR[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x190"
@@ -1012,7 +1040,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x7_1DGYF[0x7]",
+        "Name": "pad0x7_GYQW6[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xc9"
@@ -1047,7 +1075,7 @@
     "Attributes": [
       {
         "Name": "ListenerDataType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x88"
       },
@@ -1073,7 +1101,7 @@
     "Attributes": [
       {
         "Name": "RegisteredEvents",
-        "Type": "TArray<struct RegisteredEvents>",
+        "Type": "TArray<struct AIDamageEvent>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -1098,25 +1126,25 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x8_05XXX[0x8]",
+        "Name": "pad0x8_6NSKI[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x90"
       },
       {
         "Name": "NoiseEventsArrayA",
-        "Type": "TArray<struct NoiseEventsArrayA>",
+        "Type": "TArray<struct AINoiseEvent>",
         "Size": "0x10",
         "Offset": "0x98"
       },
       {
         "Name": "NoiseEventsArrayB",
-        "Type": "TArray<struct NoiseEventsArrayB>",
+        "Type": "TArray<struct AINoiseEvent>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x10_DOZWG[0x10]",
+        "Name": "pad0x10_FGYRY[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xb8"
@@ -1128,7 +1156,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x54_22WOY[0x54]",
+        "Name": "pad0x54_FGNAE[0x54]",
         "Type": "char",
         "Size": "0x54",
         "Offset": "0xcc"
@@ -1143,7 +1171,7 @@
     "Attributes": [
       {
         "Name": "RegisteredEvents",
-        "Type": "TArray<struct RegisteredEvents>",
+        "Type": "TArray<struct AIPredictionEvent>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -1156,7 +1184,7 @@
     "ClassSize": "0xc8",
     "Attributes": [
       {
-        "Name": "pad0xb0_4M2VE[0xb0]",
+        "Name": "pad0xb0_3RIFE[0xb0]",
         "Type": "char",
         "Size": "0xb0",
         "Offset": "0x88"
@@ -1174,7 +1202,7 @@
         "Offset": "0x13c"
       },
       {
-        "Name": "pad0x4_SWMSQ[0x4]",
+        "Name": "pad0x4_T1NUZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x140"
@@ -1192,7 +1220,7 @@
         "Offset": "0x148"
       },
       {
-        "Name": "pad0x4_KJM3V[0x4]",
+        "Name": "pad0x4_F8QXN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14c"
@@ -1207,7 +1235,7 @@
     "Attributes": [
       {
         "Name": "RegisteredEvents",
-        "Type": "TArray<struct RegisteredEvents>",
+        "Type": "TArray<struct AITeamStimulusEvent>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -1221,7 +1249,7 @@
     "Attributes": [
       {
         "Name": "RegisteredEvents",
-        "Type": "TArray<struct RegisteredEvents>",
+        "Type": "TArray<struct AITouchEvent>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -1253,7 +1281,7 @@
         "Offset": "0x2c"
       },
       {
-        "Name": "pad0x3_ULA12[0x3]",
+        "Name": "pad0x3_LWNXE[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2d"
@@ -1268,7 +1296,7 @@
     "Attributes": [
       {
         "Name": "Implementation",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x30"
       }
@@ -1282,7 +1310,7 @@
     "Attributes": [
       {
         "Name": "Implementation",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x30"
       }
@@ -1296,7 +1324,7 @@
     "Attributes": [
       {
         "Name": "Implementation",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x30"
       },
@@ -1319,14 +1347,14 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x3_28YGE[0x3]",
+        "Name": "pad0x3_28DJV[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x41"
       },
       {
         "Name": "DetectionByAffiliation",
-        "Type": "Struct AISenseAffiliationFilter",
+        "Type": "struct AISenseAffiliationFilter",
         "Size": "0x4",
         "Offset": "0x44"
       }
@@ -1347,7 +1375,7 @@
     "Attributes": [
       {
         "Name": "Implementation",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x30"
       },
@@ -1371,7 +1399,7 @@
       },
       {
         "Name": "DetectionByAffiliation",
-        "Type": "Struct AISenseAffiliationFilter",
+        "Type": "struct AISenseAffiliationFilter",
         "Size": "0x4",
         "Offset": "0x44"
       },
@@ -1382,7 +1410,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_VQUCR[0x4]",
+        "Name": "pad0x4_UB7JQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -1418,7 +1446,7 @@
     "Attributes": [
       {
         "Name": "Event",
-        "Type": "Struct AIDamageEvent",
+        "Type": "struct AIDamageEvent",
         "Size": "0x30",
         "Offset": "0x28"
       }
@@ -1432,7 +1460,7 @@
     "Attributes": [
       {
         "Name": "Event",
-        "Type": "Struct AINoiseEvent",
+        "Type": "struct AINoiseEvent",
         "Size": "0x30",
         "Offset": "0x28"
       }
@@ -1453,7 +1481,7 @@
     "Attributes": [
       {
         "Name": "OwnerController",
-        "Type": "Class AIController*",
+        "Type": "class AIController*",
         "Size": "0x8",
         "Offset": "0x58"
       }
@@ -1466,26 +1494,26 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x20_Z3SLG[0x20]",
+        "Name": "pad0x20_TWXZF[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x60"
       },
       {
         "Name": "MoveGoalLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x80"
       },
       {
-        "Name": "pad0xc_Y62PN[0xc]",
+        "Name": "pad0xc_OF42E[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x8c"
       },
       {
         "Name": "MoveGoalActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x98"
       },
@@ -1514,7 +1542,7 @@
         "Offset": "0xa6"
       },
       {
-        "Name": "pad0x9_0FSF4[0x9]",
+        "Name": "pad0x9_ML6M3[0x9]",
         "Type": "char",
         "Size": "0x9",
         "Offset": "0xa7"
@@ -1528,25 +1556,25 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_30B3V[0x8]",
+        "Name": "pad0x8_X9DOT[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "BlackboardComp",
-        "Type": "Class BlackboardComponent*",
+        "Type": "class BlackboardComponent*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
       {
         "Name": "AIOwner",
-        "Type": "Class AIController*",
+        "Type": "class AIController*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x48_3724H[0x48]",
+        "Name": "pad0x48_1O9TC[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0xe0"
@@ -1560,7 +1588,7 @@
     "ClassSize": "0x160",
     "Attributes": [
       {
-        "Name": "pad0x20_G7K86[0x20]",
+        "Name": "pad0x20_YO9F1[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x128"
@@ -1572,7 +1600,7 @@
         "Offset": "0x148"
       },
       {
-        "Name": "pad0x130_DEJ46[0x130]",
+        "Name": "pad0x130_KEKOL[0x130]",
         "Type": "char",
         "Size": "0x130",
         "Offset": "0x158"
@@ -1587,7 +1615,7 @@
     "Attributes": [
       {
         "Name": "Children",
-        "Type": "TArray<struct Children>",
+        "Type": "TArray<struct BTCompositeChild>",
         "Size": "0x10",
         "Offset": "0x58"
       },
@@ -1598,7 +1626,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x10_7HMAN[0x10]",
+        "Name": "pad0x10_SCO0B[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x78"
@@ -1613,13 +1641,13 @@
     "Attributes": [
       {
         "Name": "RootNode",
-        "Type": "Class BTCompositeNode*",
+        "Type": "class BTCompositeNode*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "BlackboardAsset",
-        "Type": "Class BlackboardData*",
+        "Type": "class BlackboardData*",
         "Size": "0x8",
         "Offset": "0x30"
       },
@@ -1631,12 +1659,12 @@
       },
       {
         "Name": "RootDecoratorOps",
-        "Type": "TArray<struct RootDecoratorOps>",
+        "Type": "TArray<struct BTDecoratorLogic>",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x8_1CK49[0x8]",
+        "Name": "pad0x8_SBD9P[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x58"
@@ -1656,14 +1684,14 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_D6IHS[0x4]",
+        "Name": "pad0x4_IXU8W[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
       },
       {
         "Name": "LoadedTemplates",
-        "Type": "TArray<struct LoadedTemplates>",
+        "Type": "TArray<struct BehaviorTreeTemplateInfo>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -1683,13 +1711,13 @@
     "Attributes": [
       {
         "Name": "EnumType",
-        "Type": "Class Enum*",
+        "Type": "class Enum*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "EnumName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -1700,7 +1728,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x7_RXTDK[0x7]",
+        "Name": "pad0x7_U7X38[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x49"
@@ -1715,13 +1743,13 @@
     "Attributes": [
       {
         "Name": "EnumName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "EnumType",
-        "Type": "Class Enum*",
+        "Type": "class Enum*",
         "Size": "0x8",
         "Offset": "0x40"
       }
@@ -1735,13 +1763,13 @@
     "Attributes": [
       {
         "Name": "Parent",
-        "Type": "Class BlackboardData*",
+        "Type": "class BlackboardData*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "Keys",
-        "Type": "TArray<struct Keys>",
+        "Type": "TArray<struct BlackboardEntry>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -1752,7 +1780,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_D7GFI[0x7]",
+        "Name": "pad0x7_VH1O9[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -1767,18 +1795,18 @@
     "Attributes": [
       {
         "Name": "BrainComp",
-        "Type": "Class BrainComponent*",
+        "Type": "class BrainComponent*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "BlackboardAsset",
-        "Type": "Class BlackboardData*",
+        "Type": "class BlackboardData*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x20_OE1SD[0x20]",
+        "Name": "pad0x20_M1Q1E[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xd8"
@@ -1790,7 +1818,7 @@
         "Offset": "0xf8"
       },
       {
-        "Name": "pad0x108_Z84W5[0x108]",
+        "Name": "pad0x108_F71YJ[0x108]",
         "Type": "char",
         "Size": "0x108",
         "Offset": "0x108"
@@ -1812,7 +1840,7 @@
     "Attributes": [
       {
         "Name": "BaseClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x30"
       }
@@ -1847,7 +1875,7 @@
     "Attributes": [
       {
         "Name": "BaseClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x30"
       }
@@ -1868,7 +1896,7 @@
     "Attributes": [
       {
         "Name": "StringValue",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -1908,13 +1936,13 @@
       },
       {
         "Name": "StringValue",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x98"
       },
       {
         "Name": "CachedDescription",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0xa8"
       },
@@ -1931,7 +1959,7 @@
         "Offset": "0xb9"
       },
       {
-        "Name": "pad0x6_01AMA[0x6]",
+        "Name": "pad0x6_U6KIN[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0xba"
@@ -1964,7 +1992,7 @@
         "Offset": "0x94"
       },
       {
-        "Name": "pad0x3_OX3GS[0x3]",
+        "Name": "pad0x3_JN2HI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x95"
@@ -1979,7 +2007,7 @@
     "Attributes": [
       {
         "Name": "TestClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x90"
       }
@@ -1993,13 +2021,13 @@
     "Attributes": [
       {
         "Name": "AIOwner",
-        "Type": "Class AIController*",
+        "Type": "class AIController*",
         "Size": "0x8",
         "Offset": "0x68"
       },
       {
         "Name": "ActorOwner",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x70"
       },
@@ -2010,7 +2038,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x10_O7Y19[0x10]",
+        "Name": "pad0x10_48ESW[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x88"
@@ -2034,7 +2062,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x7_PXFT4[0x7]",
+        "Name": "pad0x7_6AVGV[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x99"
@@ -2049,7 +2077,7 @@
     "Attributes": [
       {
         "Name": "ActorToCheck",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x68"
       },
@@ -2060,20 +2088,20 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x7_QQ6WF[0x7]",
+        "Name": "pad0x7_E9HOS[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x91"
       },
       {
         "Name": "GameplayTags",
-        "Type": "Struct GameplayTagContainer",
+        "Type": "struct GameplayTagContainer",
         "Size": "0x28",
         "Offset": "0x98"
       },
       {
         "Name": "CachedDescription",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0xc0"
       }
@@ -2092,20 +2120,20 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x7_ENU29[0x7]",
+        "Name": "pad0x7_UDBZJ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x69"
       },
       {
         "Name": "BlackboardKeyA",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x70"
       },
       {
         "Name": "BlackboardKeyB",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x98"
       }
@@ -2124,31 +2152,31 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x4_ZMPPX[0x4]",
+        "Name": "pad0x4_R4ITP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x6c"
       },
       {
         "Name": "ConeOrigin",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x70"
       },
       {
         "Name": "ConeDirection",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x98"
       },
       {
         "Name": "Observed",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0xc0"
       },
       {
-        "Name": "pad0x8_I9UD5[0x8]",
+        "Name": "pad0x8_31MA9[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xe8"
@@ -2168,7 +2196,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x4_P1CBX[0x4]",
+        "Name": "pad0x4_47VRZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x6c"
@@ -2183,13 +2211,13 @@
     "Attributes": [
       {
         "Name": "BlackboardKeyA",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x68"
       },
       {
         "Name": "BlackboardKeyB",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x90"
       },
@@ -2200,7 +2228,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x3_SN1TS[0x3]",
+        "Name": "pad0x3_2GMPU[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xb9"
@@ -2212,14 +2240,14 @@
         "Offset": "0xbc"
       },
       {
-        "Name": "pad0x3_6SCXV[0x3]",
+        "Name": "pad0x3_1Y88A[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xbd"
       },
       {
         "Name": "FilterClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xc0"
       }
@@ -2245,20 +2273,20 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x4_8A15A[0x4]",
+        "Name": "pad0x4_T4RVT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x6c"
       },
       {
         "Name": "ConeOrigin",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x70"
       },
       {
         "Name": "Observed",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x98"
       },
@@ -2275,7 +2303,7 @@
         "Offset": "0xc0"
       },
       {
-        "Name": "pad0x7_IXB3S[0x7]",
+        "Name": "pad0x7_UM77F[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xc1"
@@ -2301,7 +2329,7 @@
         "Offset": "0x6c"
       },
       {
-        "Name": "pad0x3_AOMHD[0x3]",
+        "Name": "pad0x3_4VONM[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x6d"
@@ -2323,7 +2351,7 @@
     "Attributes": [
       {
         "Name": "CooldownTag",
-        "Type": "Struct GameplayTag",
+        "Type": "struct GameplayTag",
         "Size": "0x8",
         "Offset": "0x68"
       },
@@ -2340,7 +2368,7 @@
         "Offset": "0x74"
       },
       {
-        "Name": "pad0x3_Y6HQW[0x3]",
+        "Name": "pad0x3_MUPNU[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x75"
@@ -2355,7 +2383,7 @@
     "Attributes": [
       {
         "Name": "CooldownTag",
-        "Type": "Struct GameplayTag",
+        "Type": "struct GameplayTag",
         "Size": "0x8",
         "Offset": "0x68"
       },
@@ -2378,7 +2406,7 @@
         "Offset": "0x75"
       },
       {
-        "Name": "pad0x2_HHAP9[0x2]",
+        "Name": "pad0x2_PHZNL[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x76"
@@ -2398,7 +2426,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x4_F3GVM[0x4]",
+        "Name": "pad0x4_VK1EX[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x6c"
@@ -2413,7 +2441,7 @@
     "Attributes": [
       {
         "Name": "BlackboardKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x70"
       }
@@ -2432,7 +2460,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x7_Y898D[0x7]",
+        "Name": "pad0x7_YT1LD[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x99"
@@ -2447,18 +2475,18 @@
     "Attributes": [
       {
         "Name": "AIOwner",
-        "Type": "Class AIController*",
+        "Type": "class AIController*",
         "Size": "0x8",
         "Offset": "0x70"
       },
       {
         "Name": "ActorOwner",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x10_I8GSA[0x10]",
+        "Name": "pad0x10_BTWGY[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x80"
@@ -2476,7 +2504,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x7_AN0NM[0x7]",
+        "Name": "pad0x7_GJOKZ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x91"
@@ -2510,7 +2538,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_G896Z[0x7]",
+        "Name": "pad0x7_0ZQSI[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
@@ -2554,7 +2582,7 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x3_LUWXM[0x3]",
+        "Name": "pad0x3_XUIIE[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x8d"
@@ -2574,14 +2602,14 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x4_MTTMF[0x4]",
+        "Name": "pad0x4_VKM8M[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x8c"
       },
       {
         "Name": "FilterClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x90"
       },
@@ -2604,7 +2632,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x7_ADSQA[0x7]",
+        "Name": "pad0x7_8FKC7[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x99"
@@ -2616,7 +2644,14 @@
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_VOPZB[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
   },
   "EnvQueryTypes": {
     "Super": "Object",
@@ -2633,18 +2668,18 @@
     "Attributes": [
       {
         "Name": "AIOwner",
-        "Type": "Class AIController*",
+        "Type": "class AIController*",
         "Size": "0x8",
         "Offset": "0x60"
       },
       {
         "Name": "ActorOwner",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x18_R6H62[0x18]",
+        "Name": "pad0x18_2PG05[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x70"
@@ -2656,7 +2691,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_OHWY0[0x7]",
+        "Name": "pad0x7_UHCY5[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
@@ -2676,7 +2711,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x4_WGQQS[0x4]",
+        "Name": "pad0x4_RIXWO[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x64"
@@ -2691,36 +2726,36 @@
     "Attributes": [
       {
         "Name": "ChildAction",
-        "Type": "Class PawnAction*",
+        "Type": "class PawnAction*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "ParentAction",
-        "Type": "Class PawnAction*",
+        "Type": "class PawnAction*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "OwnerComponent",
-        "Type": "Class PawnActionsComponent*",
+        "Type": "class PawnActionsComponent*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "Instigator",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x40"
       },
       {
         "Name": "BrainComp",
-        "Type": "Class BrainComponent*",
+        "Type": "class BrainComponent*",
         "Size": "0x8",
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x28_S46T7[0x28]",
+        "Name": "pad0x28_QPHF5[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x50"
@@ -2744,7 +2779,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x17_BM1TF[0x17]",
+        "Name": "pad0x17_VUFIM[0x17]",
         "Type": "char",
         "Size": "0x17",
         "Offset": "0x79"
@@ -2766,7 +2801,7 @@
     "Attributes": [
       {
         "Name": "Action",
-        "Type": "Class PawnAction*",
+        "Type": "class PawnAction*",
         "Size": "0x8",
         "Offset": "0x60"
       }
@@ -2780,7 +2815,7 @@
     "Attributes": [
       {
         "Name": "AnimationToPlay",
-        "Type": "Class AnimationAsset*",
+        "Type": "class AnimationAsset*",
         "Size": "0x8",
         "Offset": "0x60"
       },
@@ -2797,25 +2832,25 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x7_0R5R2[0x7]",
+        "Name": "pad0x7_3MX2A[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x69"
       },
       {
         "Name": "MyOwnerComp",
-        "Type": "Class BehaviorTreeComponent*",
+        "Type": "class BehaviorTreeComponent*",
         "Size": "0x8",
         "Offset": "0x70"
       },
       {
         "Name": "CachedSkelMesh",
-        "Type": "Class SkeletalMeshComponent*",
+        "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x18_H2Q2Y[0x18]",
+        "Name": "pad0x18_4VY7O[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x80"
@@ -2830,7 +2865,7 @@
     "Attributes": [
       {
         "Name": "SoundToPlay",
-        "Type": "Class SoundCue*",
+        "Type": "class SoundCue*",
         "Size": "0x8",
         "Offset": "0x60"
       }
@@ -2844,7 +2879,7 @@
     "Attributes": [
       {
         "Name": "BehaviorAsset",
-        "Type": "Class BehaviorTree*",
+        "Type": "class BehaviorTree*",
         "Size": "0x8",
         "Offset": "0x60"
       }
@@ -2858,19 +2893,19 @@
     "Attributes": [
       {
         "Name": "InjectionTag",
-        "Type": "Struct GameplayTag",
+        "Type": "struct GameplayTag",
         "Size": "0x8",
         "Offset": "0x60"
       },
       {
         "Name": "DefaultBehaviorAsset",
-        "Type": "Class BehaviorTree*",
+        "Type": "class BehaviorTree*",
         "Size": "0x8",
         "Offset": "0x68"
       },
       {
         "Name": "BehaviorAsset",
-        "Type": "Class BehaviorTree*",
+        "Type": "class BehaviorTree*",
         "Size": "0x8",
         "Offset": "0x70"
       }
@@ -2884,7 +2919,7 @@
     "Attributes": [
       {
         "Name": "CooldownTag",
-        "Type": "Struct GameplayTag",
+        "Type": "struct GameplayTag",
         "Size": "0x8",
         "Offset": "0x60"
       },
@@ -2895,7 +2930,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x3_JOSR4[0x3]",
+        "Name": "pad0x3_4YJ0M[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x69"
@@ -2936,7 +2971,7 @@
     "Attributes": [
       {
         "Name": "BlackboardKey",
-        "Type": "Struct BlackboardKeySelector",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x68"
       }
@@ -2957,19 +2992,19 @@
     "Attributes": [
       {
         "Name": "MyNavData",
-        "Type": "Class NavigationData*",
+        "Type": "class NavigationData*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "AvoidanceConfig",
-        "Type": "TArray<struct AvoidanceConfig>",
+        "Type": "TArray<struct CrowdAvoidanceConfig>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "SamplingPatterns",
-        "Type": "TArray<struct SamplingPatterns>",
+        "Type": "TArray<struct CrowdAvoidanceSamplingPattern>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -3016,7 +3051,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x77_B97CN[0x77]",
+        "Name": "pad0x77_07H9D[0x77]",
         "Type": "char",
         "Size": "0x77",
         "Offset": "0x69"
@@ -3042,7 +3077,14 @@
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_WYXSM[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
   },
   "EnvQueryContext_Item": {
     "Super": "EnvQueryContext",
@@ -3086,7 +3128,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_K2KZK[0x8]",
+        "Name": "pad0x8_4SDQ5[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -3098,14 +3140,14 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x1c_Q3II5[0x1c]",
+        "Name": "pad0x1c_BC9CO[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0x34"
       },
       {
         "Name": "ItemType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x50"
       },
@@ -3116,13 +3158,13 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x4_VTXTF[0x4]",
+        "Name": "pad0x4_PVNXR[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x5c"
       },
       {
-        "Name": "pad0x10_2IAP5[0x10]",
+        "Name": "pad0x10_EJCBF[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x60"
@@ -3171,14 +3213,14 @@
     "ClassSize": "0xe8",
     "Attributes": [
       {
-        "Name": "pad0x70_42MAB[0x70]",
+        "Name": "pad0x70_CBA95[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x28"
       },
       {
         "Name": "InstanceCache",
-        "Type": "TArray<struct InstanceCache>",
+        "Type": "TArray<struct EnvQueryInstanceCache>",
         "Size": "0x10",
         "Offset": "0x98"
       },
@@ -3189,7 +3231,7 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x58_4WHPO[0x58]",
+        "Name": "pad0x58_W3A25[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0xb8"
@@ -3204,19 +3246,19 @@
     "Attributes": [
       {
         "Name": "SearchRadius",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0x58"
       },
       {
         "Name": "SearchedActorClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x88"
       },
       {
         "Name": "SearchCenter",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x90"
       }
@@ -3230,24 +3272,24 @@
     "Attributes": [
       {
         "Name": "GeneratorsActionDescription",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x58"
       },
       {
         "Name": "Context",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x90"
       },
       {
         "Name": "GeneratedItemType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x8_K8W04[0x8]",
+        "Name": "pad0x8_J06WY[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xa0"
@@ -3273,7 +3315,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x7_07OI2[0x7]",
+        "Name": "pad0x7_Q6OZE[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x69"
@@ -3288,7 +3330,7 @@
     "Attributes": [
       {
         "Name": "ProjectionData",
-        "Type": "Struct EnvTraceData",
+        "Type": "struct EnvTraceData",
         "Size": "0x40",
         "Offset": "0x58"
       }
@@ -3302,37 +3344,37 @@
     "Attributes": [
       {
         "Name": "InnerRadius",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0x98"
       },
       {
         "Name": "OuterRadius",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0xc8"
       },
       {
         "Name": "NumberOfRings",
-        "Type": "Struct AIDataProviderIntValue",
+        "Type": "struct AIDataProviderIntValue",
         "Size": "0x30",
         "Offset": "0xf8"
       },
       {
         "Name": "PointsPerRing",
-        "Type": "Struct AIDataProviderIntValue",
+        "Type": "struct AIDataProviderIntValue",
         "Size": "0x30",
         "Offset": "0x128"
       },
       {
         "Name": "ArcDirection",
-        "Type": "Struct EnvDirection",
+        "Type": "struct EnvDirection",
         "Size": "0x20",
         "Offset": "0x158"
       },
       {
         "Name": "ArcAngle",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0x178"
       },
@@ -3343,14 +3385,14 @@
         "Offset": "0x1a8"
       },
       {
-        "Name": "pad0x7_M1675[0x7]",
+        "Name": "pad0x7_LLHRQ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1a9"
       },
       {
         "Name": "Center",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x1b0"
       },
@@ -3361,7 +3403,7 @@
         "Offset": "0x1b8"
       },
       {
-        "Name": "pad0x7_F9S7T[0x7]",
+        "Name": "pad0x7_A9CEQ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1b9"
@@ -3376,25 +3418,25 @@
     "Attributes": [
       {
         "Name": "CircleRadius",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0x98"
       },
       {
         "Name": "SpaceBetween",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0xc8"
       },
       {
         "Name": "ArcDirection",
-        "Type": "Struct EnvDirection",
+        "Type": "struct EnvDirection",
         "Size": "0x20",
         "Offset": "0xf8"
       },
       {
         "Name": "ArcAngle",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0x118"
       },
@@ -3405,20 +3447,20 @@
         "Offset": "0x148"
       },
       {
-        "Name": "pad0x4_VG6JD[0x4]",
+        "Name": "pad0x4_5HYAC[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14c"
       },
       {
         "Name": "CircleCenter",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x150"
       },
       {
         "Name": "TraceData",
-        "Type": "Struct EnvTraceData",
+        "Type": "struct EnvTraceData",
         "Size": "0x40",
         "Offset": "0x158"
       },
@@ -3429,7 +3471,7 @@
         "Offset": "0x198"
       },
       {
-        "Name": "pad0x7_3VHRS[0x7]",
+        "Name": "pad0x7_BEYF6[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x199"
@@ -3444,19 +3486,19 @@
     "Attributes": [
       {
         "Name": "GridSize",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0x98"
       },
       {
         "Name": "SpaceBetween",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0xc8"
       },
       {
         "Name": "GenerateAround",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xf8"
       }
@@ -3470,19 +3512,19 @@
     "Attributes": [
       {
         "Name": "PathToItem",
-        "Type": "Struct AIDataProviderBoolValue",
+        "Type": "struct AIDataProviderBoolValue",
         "Size": "0x30",
         "Offset": "0x100"
       },
       {
         "Name": "NavigationFilter",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x130"
       },
       {
         "Name": "ScanRangeMultiplier",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0x138"
       }
@@ -3501,14 +3543,14 @@
         "Offset": "0x170"
       },
       {
-        "Name": "pad0x7_7U94U[0x7]",
+        "Name": "pad0x7_T2RAT[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x171"
       },
       {
         "Name": "DistanceTo",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x178"
       }
@@ -3522,13 +3564,13 @@
     "Attributes": [
       {
         "Name": "LineA",
-        "Type": "Struct EnvDirection",
+        "Type": "struct EnvDirection",
         "Size": "0x20",
         "Offset": "0x170"
       },
       {
         "Name": "LineB",
-        "Type": "Struct EnvDirection",
+        "Type": "struct EnvDirection",
         "Size": "0x20",
         "Offset": "0x190"
       },
@@ -3545,7 +3587,7 @@
         "Offset": "0x1b1"
       },
       {
-        "Name": "pad0x6_FN8KO[0x6]",
+        "Name": "pad0x6_VKJ02[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x1b2"
@@ -3565,14 +3607,14 @@
         "Offset": "0x170"
       },
       {
-        "Name": "pad0x7_Y5X8E[0x7]",
+        "Name": "pad0x7_YTIIL[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x171"
       },
       {
         "Name": "GameplayTags",
-        "Type": "Struct GameplayTagContainer",
+        "Type": "struct GameplayTagContainer",
         "Size": "0x28",
         "Offset": "0x178"
       }
@@ -3591,44 +3633,44 @@
         "Offset": "0x170"
       },
       {
-        "Name": "pad0x7_ZTSU4[0x7]",
+        "Name": "pad0x7_KWCW1[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x171"
       },
       {
         "Name": "Context",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x178"
       },
       {
         "Name": "PathFromContext",
-        "Type": "Struct AIDataProviderBoolValue",
+        "Type": "struct AIDataProviderBoolValue",
         "Size": "0x30",
         "Offset": "0x180"
       },
       {
         "Name": "SkipUnreachable",
-        "Type": "Struct AIDataProviderBoolValue",
+        "Type": "struct AIDataProviderBoolValue",
         "Size": "0x30",
         "Offset": "0x1b0"
       },
       {
         "Name": "MaxNumPathSegments",
-        "Type": "Struct AIDataProviderIntValue",
+        "Type": "struct AIDataProviderIntValue",
         "Size": "0x30",
         "Offset": "0x1e0"
       },
       {
         "Name": "PassThroughUnreachable",
-        "Type": "Struct AIDataProviderBoolValue",
+        "Type": "struct AIDataProviderBoolValue",
         "Size": "0x30",
         "Offset": "0x210"
       },
       {
         "Name": "FilterClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x240"
       }
@@ -3642,7 +3684,7 @@
     "Attributes": [
       {
         "Name": "ScanRangeMultiplier",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0x248"
       }
@@ -3663,31 +3705,31 @@
     "Attributes": [
       {
         "Name": "TraceData",
-        "Type": "Struct EnvTraceData",
+        "Type": "struct EnvTraceData",
         "Size": "0x40",
         "Offset": "0x170"
       },
       {
         "Name": "TraceFromContext",
-        "Type": "Struct AIDataProviderBoolValue",
+        "Type": "struct AIDataProviderBoolValue",
         "Size": "0x30",
         "Offset": "0x1b0"
       },
       {
         "Name": "ItemHeightOffset",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0x1e0"
       },
       {
         "Name": "ContextHeightOffset",
-        "Type": "Struct AIDataProviderFloatValue",
+        "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0x210"
       },
       {
         "Name": "Context",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x240"
       }
@@ -3701,7 +3743,7 @@
     "Attributes": [
       {
         "Name": "Generator",
-        "Type": "Class EnvQueryGenerator*",
+        "Type": "class EnvQueryGenerator*",
         "Size": "0x8",
         "Offset": "0x28"
       },
@@ -3718,7 +3760,14 @@
     "FullSize": "0x5d0",
     "InheritedSize": "0x5c0",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_Q6FPQ[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x5c0"
+      }
+    ]
   },
   "EQSTestingPawn": {
     "Super": "Character",
@@ -3728,19 +3777,19 @@
     "Attributes": [
       {
         "Name": "QueryTemplate",
-        "Type": "Class EnvQuery*",
+        "Type": "class EnvQuery*",
         "Size": "0x8",
         "Offset": "0x5e0"
       },
       {
         "Name": "QueryParams",
-        "Type": "TArray<struct QueryParams>",
+        "Type": "TArray<struct EnvNamedValue>",
         "Size": "0x10",
         "Offset": "0x5e8"
       },
       {
         "Name": "ContextToLinkWithThis",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x5f8"
       },
@@ -3763,7 +3812,7 @@
         "Offset": "0x608"
       },
       {
-        "Name": "pad0x3_B5PQH[0x3]",
+        "Name": "pad0x3_W8NSO[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x609"
@@ -3793,7 +3842,7 @@
         "Offset": "0x60c"
       },
       {
-        "Name": "pad0x3_DWUYJ[0x3]",
+        "Name": "pad0x3_FDKC8[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x60d"
@@ -3805,7 +3854,7 @@
         "Offset": "0x610"
       },
       {
-        "Name": "pad0x2f_LSFRU[0x2f]",
+        "Name": "pad0x2f_3QP6O[0x2f]",
         "Type": "char",
         "Size": "0x2f",
         "Offset": "0x611"
@@ -3819,49 +3868,49 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x8_LJ7P4[0x8]",
+        "Name": "pad0x8_YXD6Z[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2b8"
       },
       {
         "Name": "CrowdAgentMoveDirection",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x2c0"
       },
       {
-        "Name": "pad0x4_SQDWI[0x4]",
+        "Name": "pad0x4_TD79D[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2cc"
       },
       {
         "Name": "CharacterMovement",
-        "Type": "Class CharacterMovementComponent*",
+        "Type": "class CharacterMovementComponent*",
         "Size": "0x8",
         "Offset": "0x2d0"
       },
       {
         "Name": "AvoidanceGroup",
-        "Type": "Struct NavAvoidanceMask",
+        "Type": "struct NavAvoidanceMask",
         "Size": "0x4",
         "Offset": "0x2d8"
       },
       {
         "Name": "GroupsToAvoid",
-        "Type": "Struct NavAvoidanceMask",
+        "Type": "struct NavAvoidanceMask",
         "Size": "0x4",
         "Offset": "0x2dc"
       },
       {
         "Name": "GroupsToIgnore",
-        "Type": "Struct NavAvoidanceMask",
+        "Type": "struct NavAvoidanceMask",
         "Size": "0x4",
         "Offset": "0x2e0"
       },
       {
-        "Name": "pad0x24_AT8RF[0x24]",
+        "Name": "pad0x24_SRI87[0x24]",
         "Type": "char",
         "Size": "0x24",
         "Offset": "0x2e4"
@@ -3883,13 +3932,13 @@
     "Attributes": [
       {
         "Name": "GoalActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x90"
       },
       {
         "Name": "GoalLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x98"
       },
@@ -3901,7 +3950,7 @@
       },
       {
         "Name": "FilterClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xa8"
       },
@@ -3948,7 +3997,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x2f_ML6AZ[0x2f]",
+        "Name": "pad0x2f_P7B2P[0x2f]",
         "Type": "char",
         "Size": "0x2f",
         "Offset": "0xb1"
@@ -3963,13 +4012,13 @@
     "Attributes": [
       {
         "Name": "ActionToRepeat",
-        "Type": "Class PawnAction*",
+        "Type": "class PawnAction*",
         "Size": "0x8",
         "Offset": "0x90"
       },
       {
         "Name": "RecentActionCopy",
-        "Type": "Class PawnAction*",
+        "Type": "class PawnAction*",
         "Size": "0x8",
         "Offset": "0x98"
       },
@@ -3980,7 +4029,7 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0xf_H1RTS[0xf]",
+        "Name": "pad0xf_38R8B[0xf]",
         "Type": "char",
         "Size": "0xf",
         "Offset": "0xa1"
@@ -4006,19 +4055,19 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x7_G5HQ7[0x7]",
+        "Name": "pad0x7_QSDN7[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xa1"
       },
       {
         "Name": "RecentActionCopy",
-        "Type": "Class PawnAction*",
+        "Type": "class PawnAction*",
         "Size": "0x8",
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x8_AK4EZ[0x8]",
+        "Name": "pad0x8_TX49W[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb0"
@@ -4038,7 +4087,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0xc_J0DV0[0xc]",
+        "Name": "pad0xc_P5SE4[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x94"
@@ -4106,7 +4155,7 @@
         "Offset": "0xdc"
       },
       {
-        "Name": "pad0xb_IP4DJ[0xb]",
+        "Name": "pad0xb_F4Y63[0xb]",
         "Type": "char",
         "Size": "0xb",
         "Offset": "0xdd"

@@ -8,22 +8,22 @@ VoiceChatEmitterInterface:
   Super: Interface
 VoiceChatRenderer:
   Attributes:
-  - Name: pad0x10_921J2[0x10]
+  - Name: pad0x10_XLYO0[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
   - Name: AttenuatedVoiceEvent
     Offset: '0x38'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: AttenuatedAndSpatialisedVoiceEvent
     Offset: '0x40'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: UnattenuatedVoiceEvent
     Offset: '0x48'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: PreBufferInMilliseconds
     Offset: '0x50'
     Size: '0x4'
@@ -36,7 +36,7 @@ VoiceChatRenderer:
     Offset: '0x58'
     Size: '0x4'
     Type: float
-  - Name: pad0x124_V5OL5[0x124]
+  - Name: pad0x124_UKMAO[0x124]
     Offset: '0x5c'
     Size: '0x124'
     Type: char

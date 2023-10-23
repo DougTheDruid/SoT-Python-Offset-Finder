@@ -2,14 +2,14 @@
 # https://github.com/DougTheDruid
 ActorSpecifierComponent:
   Attributes:
-  - Name: pad0x8_IW3CV[0x8]
+  - Name: pad0x8_7HAGG[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
   - Name: SpecifiedActor
     Offset: '0xd0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'
@@ -25,7 +25,7 @@ ConditionRootAsset:
   - Name: ConditionRoot
     Offset: '0x28'
     Size: '0x20'
-    Type: Struct ConditionInstance
+    Type: struct ConditionInstance
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'

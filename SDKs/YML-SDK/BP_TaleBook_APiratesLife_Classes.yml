@@ -5,31 +5,31 @@ BP_TaleBook_APiratesLife_C:
   - Name: Arrow
     Offset: '0x7e8'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: TaleSelectionSlot
     Offset: '0x7f0'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: TaleSelectionSlot
     Offset: '0x7f8'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: TaleSelectionSlot
     Offset: '0x800'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: TaleSelectionSlot
     Offset: '0x808'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: TaleSelectionSlot
     Offset: '0x810'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: TaleSelectionSlot
     Offset: '0x818'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   ClassSize: '0x38'
   FullSize: '0x820'
   InheritedSize: '0x7e8'

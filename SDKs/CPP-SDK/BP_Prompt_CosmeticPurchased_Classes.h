@@ -10,14 +10,14 @@ namespace DougsSDKDumper
 class BP_Prompt_CosmeticPurchased_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
-	char                                                         pad0x117_KI27S[0x117];                             // 0x140(0x117)
-	Struct ObjectMessagingHandle                                 Handle_OfferPurchasedEvent;                        // 0x140(0x58)
-	Struct ObjectMessagingHandle                                 Handle_ShopClosedEvent;                            // 0x198(0x58)
-	Struct ObjectMessagingHandle                                 Handle_PlayerEntitlementUpdatedEvent;              // 0x1f0(0x58)
-	Struct PrioritisedPromptWithHandle                           Prompt_CosmeticPurchased;                          // 0x248(0x70)
-	Struct PrioritisedPromptWithHandle                           Prompt_VisitCustomizationChest;                    // 0x2b8(0x70)
-	class                                                        AccessKey;                                         // 0x328(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x151_BN7XU[0x151];                             // 0x140(0x151)
+	struct ObjectMessagingHandle                                 Handle_OfferPurchasedEvent;                        // 0x140(0x58)
+	struct ObjectMessagingHandle                                 Handle_ShopClosedEvent;                            // 0x198(0x58)
+	struct ObjectMessagingHandle                                 Handle_PlayerEntitlementUpdatedEvent;              // 0x1f0(0x58)
+	struct PrioritisedPromptWithHandle                           Prompt_CosmeticPurchased;                          // 0x248(0x70)
+	struct PrioritisedPromptWithHandle                           Prompt_VisitCustomizationChest;                    // 0x2b8(0x70)
+	class UClass*                                                AccessKey;                                         // 0x328(0x8)
 	TArray<class Class*>                                         CategoryTypes;                                     // 0x330(0x10)
 	TArray<Str PurchasedEntitlementIds>                          PurchasedEntitlementIds;                           // 0x340(0x10)
 	float                                                        DelayUntilPromptDisplays;                          // 0x350(0x4)

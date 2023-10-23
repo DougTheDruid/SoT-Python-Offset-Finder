@@ -7,85 +7,85 @@
     "Attributes": [
       {
         "Name": "Idles",
-        "Type": "Struct ADS_IdlesNative",
+        "Type": "struct ADS_IdlesNative",
         "Size": "0x10",
         "Offset": "0x78"
       },
       {
         "Name": "Locomotion",
-        "Type": "Struct ADS_LocomotionNative",
+        "Type": "struct ADS_LocomotionNative",
         "Size": "0x50",
         "Offset": "0x88"
       },
       {
         "Name": "Jumping",
-        "Type": "Struct ADS_JumpingNative",
+        "Type": "struct ADS_JumpingNative",
         "Size": "0x78",
         "Offset": "0xd8"
       },
       {
         "Name": "Swimming",
-        "Type": "Struct ADS_SwimmingNative",
+        "Type": "struct ADS_SwimmingNative",
         "Size": "0x68",
         "Offset": "0x150"
       },
       {
         "Name": "Wheel",
-        "Type": "Struct ADS_WheelNative",
+        "Type": "struct ADS_WheelNative",
         "Size": "0x88",
         "Offset": "0x1b8"
       },
       {
         "Name": "Capstan",
-        "Type": "Struct ADS_CapstanNative",
+        "Type": "struct ADS_CapstanNative",
         "Size": "0x68",
         "Offset": "0x240"
       },
       {
         "Name": "CameraAdditive",
-        "Type": "Struct ADS_CameraAdditiveNative",
+        "Type": "struct ADS_CameraAdditiveNative",
         "Size": "0x50",
         "Offset": "0x2a8"
       },
       {
         "Name": "Items",
-        "Type": "Struct ADS_ObjectsNative",
+        "Type": "struct ADS_ObjectsNative",
         "Size": "0x10",
         "Offset": "0x2f8"
       },
       {
         "Name": "Sockets",
-        "Type": "Struct ADS_Sockets",
+        "Type": "struct ADS_Sockets",
         "Size": "0x2",
         "Offset": "0x308"
       },
       {
-        "Name": "pad0x6_NWMTC[0x6]",
+        "Name": "pad0x6_0Y0CQ[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x30a"
       },
       {
         "Name": "Cannon",
-        "Type": "Struct ADS_CannonNative",
+        "Type": "struct ADS_CannonNative",
         "Size": "0x38",
         "Offset": "0x310"
       },
       {
         "Name": "Rowboat",
-        "Type": "Struct ADS_RowingBoatNative",
+        "Type": "struct ADS_RowingBoatNative",
         "Size": "0x98",
         "Offset": "0x348"
       },
       {
         "Name": "WaterPump",
-        "Type": "Struct ADS_WaterPumpNative",
+        "Type": "struct ADS_WaterPumpNative",
         "Size": "0x28",
         "Offset": "0x3e0"
       },
       {
         "Name": "Facial",
-        "Type": "Struct ADS_FacialNative",
+        "Type": "struct ADS_FacialNative",
         "Size": "0x90",
         "Offset": "0x408"
       }

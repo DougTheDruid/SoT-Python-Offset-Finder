@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_Skull_OoS_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   gmp_bounty_skull_01_b;                             // 0x3c8(0x8)
+	class StaticMeshComponent*                                   gmp_bounty_skull_01_b;                             // 0x3c8(0x8)
 };
 
 

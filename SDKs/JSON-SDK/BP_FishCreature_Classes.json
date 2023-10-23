@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
@@ -24,7 +24,7 @@
         "Offset": "0x3d1"
       },
       {
-        "Name": "pad0x2_MIBSJ[0x2]",
+        "Name": "pad0x2_P1F0H[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3d2"
@@ -37,13 +37,13 @@
       },
       {
         "Name": "StaticMeshComponent",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
         "Name": "currMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
@@ -78,7 +78,7 @@
         "Offset": "0x404"
       },
       {
-        "Name": "pad0x3_11AOE[0x3]",
+        "Name": "pad0x3_NP01N[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x405"
@@ -102,14 +102,14 @@
         "Offset": "0x410"
       },
       {
-        "Name": "shoalSpeed",
+        "Name": "ShoalSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x414"
       },
       {
         "Name": "ShoalingSpread",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x418"
       },
@@ -120,14 +120,14 @@
         "Offset": "0x420"
       },
       {
-        "Name": "fishSpeed",
+        "Name": "FishSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x424"
       },
       {
         "Name": "FishSpread",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x428"
       },
@@ -193,7 +193,7 @@
       },
       {
         "Name": "BBox",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x47c"
       },
@@ -210,7 +210,7 @@
         "Offset": "0x498"
       },
       {
-        "Name": "pad0x4_R39VS[0x4]",
+        "Name": "pad0x4_LX99O[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x49c"
@@ -228,7 +228,7 @@
         "Offset": "0x4b0"
       },
       {
-        "Name": "pad0x4_SVOSY[0x4]",
+        "Name": "pad0x4_Y3X31[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4b4"
@@ -247,7 +247,7 @@
       },
       {
         "Name": "FishDistribution",
-        "Type": "Struct LinearColor",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x4d8"
       }

@@ -31,10 +31,10 @@ public:
 class CharacterWithActionStateMachine: public Character
 {
 public:
-	Class ActionStateMachineComponent*                           ActionStateMachineComponent;                       // 0x5e0(0x8)
-	Class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x5e8(0x8)
-	class                                                        ActionStateCreatorDefinition;                      // 0x5f0(0x8)
-	class                                                        ActionStateInitialStateCreatorDefinition;          // 0x5f8(0x8)
+	class ActionStateMachineComponent*                           ActionStateMachineComponent;                       // 0x5e0(0x8)
+	class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x5e8(0x8)
+	class UClass*                                                ActionStateCreatorDefinition;                      // 0x5f0(0x8)
+	class UClass*                                                ActionStateInitialStateCreatorDefinition;          // 0x5f8(0x8)
 };
 
 
@@ -42,6 +42,7 @@ public:
 class TestActionStateCreatorDefinition: public ActionStateCreatorDefinition
 {
 public:
+	char                                                         pad0x18_ID9EN[0x18];                               // 0x3c8(0x18)
 };
 
 
@@ -84,6 +85,7 @@ public:
 class ActionStateMachineComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x790_AS47J[0x790];                             // 0xc8(0x790)
 };
 
 
@@ -98,11 +100,11 @@ public:
 class SelfInitialisingActionStateMachineComponent: public ActionStateMachineComponent
 {
 public:
-	char                                                         pad0x8_PWKL0[0x8];                                 // 0x858(0x8)
-	Class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x860(0x8)
-	class                                                        ActionStateCreatorDefinition;                      // 0x868(0x8)
-	class                                                        ActionStateInitialStateCreatorDefinition;          // 0x870(0x8)
-	char                                                         pad0x28_0KU56[0x28];                               // 0x878(0x28)
+	char                                                         pad0x8_N336C[0x8];                                 // 0x858(0x8)
+	class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x860(0x8)
+	class UClass*                                                ActionStateCreatorDefinition;                      // 0x868(0x8)
+	class UClass*                                                ActionStateInitialStateCreatorDefinition;          // 0x870(0x8)
+	char                                                         pad0x28_HR4GJ[0x28];                               // 0x878(0x28)
 };
 
 
@@ -111,7 +113,7 @@ class CustomClientValidityCheckCallback: public Object
 {
 public:
 	bool                                                         ShouldPassClientValidation;                        // 0x28(0x1)
-	char                                                         pad0x7_6V1JA[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_OLZNJ[0x7];                                 // 0x29(0x7)
 };
 
 
@@ -126,8 +128,8 @@ public:
 class ActionStatePriorityTableData: public DataAsset
 {
 public:
-	TArray<struct StateDefaultValue>                             StateDefaultValue;                                 // 0x28(0x10)
-	TArray<struct PriorityTableEntry>                            PriorityTableEntry;                                // 0x38(0x10)
+	TArray<struct ActionStatePriorityRelationship>               StateDefaultValue;                                 // 0x28(0x10)
+	TArray<struct ActionStatePriorityList>                       PriorityTableEntry;                                // 0x38(0x10)
 };
 
 

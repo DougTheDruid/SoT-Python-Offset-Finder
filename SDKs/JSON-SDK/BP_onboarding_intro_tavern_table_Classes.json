@@ -7,67 +7,67 @@
     "Attributes": [
       {
         "Name": "Candle VFX",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "OnboardingIntroLocation",
-        "Type": "Class OnboardingIntroLocationComponent*",
+        "Type": "class OnboardingIntroLocationComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "Table",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
         "Name": "Tankard 2",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
         "Name": "Plate 2",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
         "Name": "Candle 3",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
         "Name": "Candle 2",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
         "Name": "Tankard 1",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x400"
       },
       {
         "Name": "Plate 1",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
         "Name": "Candle 1",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
         "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       }

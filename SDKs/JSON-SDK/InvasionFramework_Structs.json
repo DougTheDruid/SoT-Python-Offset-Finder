@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "Faction",
-        "Type": "Class Company*",
+        "Type": "class Company*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -15,7 +15,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_3T56C[0x7]",
+        "Name": "pad0x7_HLDZA[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -33,7 +33,7 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -44,7 +44,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_3QDQX[0x3]",
+        "Name": "pad0x3_N5TTB[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -60,6 +60,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1c"
+      },
+      {
+        "Name": "pad0x3_TSHAN[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1d"
       }
     ]
   },
@@ -68,13 +74,13 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "CurrentTimeStampedMusicState",
-        "Type": "Struct TimeStampedInvasionMusicState",
+        "Type": "struct TimeStampedInvasionMusicState",
         "Size": "0x18",
         "Offset": "0x10"
       }
@@ -84,14 +90,20 @@
     "ClassSize": "0x68",
     "Attributes": [
       {
+        "Name": "pad0x10_GYUMU[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Message",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x10"
       },
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x48"
       },
@@ -102,7 +114,7 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x3_K18VS[0x3]",
+        "Name": "pad0x3_N0UKS[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x59"
@@ -118,6 +130,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x64"
+      },
+      {
+        "Name": "pad0x3_NHSBA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x65"
       }
     ]
   },
@@ -126,7 +144,7 @@
     "Attributes": [
       {
         "Name": "Player",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -137,7 +155,7 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -148,7 +166,7 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -159,7 +177,7 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -170,7 +188,7 @@
     "Attributes": [
       {
         "Name": "InvasionCrewMusicState",
-        "Type": "Struct TimeStampedInvasionMusicState",
+        "Type": "struct TimeStampedInvasionMusicState",
         "Size": "0x18",
         "Offset": "0x0"
       }
@@ -181,7 +199,7 @@
     "Attributes": [
       {
         "Name": "CrewIds",
-        "Type": "TArray<struct CrewIds>",
+        "Type": "TArray<struct InvasionCrewData>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -190,6 +208,12 @@
         "Type": "TArray<class CrewVoyageParticipant*>",
         "Size": "0x10",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x58_2AG6L[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x20"
       }
     ]
   },
@@ -198,13 +222,13 @@
     "Attributes": [
       {
         "Name": "Participants",
-        "Type": "TArray<struct Participants>",
+        "Type": "TArray<struct InvasionCrewData>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Winner",
-        "Type": "Struct InvasionCrewData",
+        "Type": "struct InvasionCrewData",
         "Size": "0x20",
         "Offset": "0x10"
       },
@@ -215,14 +239,14 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_IM38O[0x4]",
+        "Name": "pad0x4_C1ASO[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
       },
       {
         "Name": "ParticipantFactionData",
-        "Type": "TArray<struct ParticipantFactionData>",
+        "Type": "TArray<struct CrewFactionTelemetryData>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -231,6 +255,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x7_R36SI[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x49"
       }
     ]
   },
@@ -250,7 +280,7 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -259,6 +289,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_NVEHA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
       }
     ]
   },

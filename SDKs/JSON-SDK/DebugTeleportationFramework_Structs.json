@@ -4,27 +4,33 @@
     "Attributes": [
       {
         "Name": "DebugMenuSubPath",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Destination",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x10"
       },
       {
         "Name": "AssociatedCrew",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x1c"
       },
       {
         "Name": "Id",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x2c"
+      },
+      {
+        "Name": "pad0x4_QUSJ0[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
       }
     ]
   },

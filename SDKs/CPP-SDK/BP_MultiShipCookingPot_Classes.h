@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_MultiShipCookingPot_C: public BP_CookingPotBase_C
 {
 public:
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x5e0(0x8)
-	Class CookerIgnitionComponent*                               CookerIgnition;                                    // 0x5e8(0x8)
+	class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x5e0(0x8)
+	class CookerIgnitionComponent*                               CookerIgnition;                                    // 0x5e8(0x8)
 };
 
 

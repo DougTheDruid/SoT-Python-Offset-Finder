@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "RowboatLiveryPickerDataAsset",
-        "Type": "Class RowboatLiveryPickerDataAsset*",
+        "Type": "class RowboatLiveryPickerDataAsset*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -16,7 +16,7 @@
       },
       {
         "Name": "Feature",
-        "Type": "Struct FeatureFlag",
+        "Type": "struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0xc"
       }
@@ -26,10 +26,22 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
+        "Name": "pad0x20_Z0C15[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Weight",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_MJ6XG[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
@@ -38,7 +50,7 @@
     "Attributes": [
       {
         "Name": "DynamicMaterialInstance",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -47,6 +59,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0xc_WAT8V[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0xc"
       }
     ]
   },
@@ -108,13 +126,13 @@
     "Attributes": [
       {
         "Name": "SpeedBand",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "ForceFeedbackEffect",
-        "Type": "Class ForceFeedbackEffect*",
+        "Type": "class ForceFeedbackEffect*",
         "Size": "0x8",
         "Offset": "0x8"
       },
@@ -123,6 +141,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_TDZHT[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -140,6 +164,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x4_KXB1I[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x8"
       }
     ]
   },
@@ -160,13 +190,13 @@
       },
       {
         "Name": "OarOffsetDirection",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x8"
       },
       {
         "Name": "OarForwardForceDirection",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x14"
       },
@@ -184,7 +214,7 @@
       },
       {
         "Name": "RowingPowerCurve",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x28"
       },
@@ -207,38 +237,79 @@
     "Attributes": [
       {
         "Name": "OarParams",
-        "Type": "Struct OarParams",
+        "Type": "struct OarParams",
         "Size": "0x38",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x28_MDGY0[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x38"
       }
     ]
   },
   "QuestVariableWatercraft": {
     "ClassSize": "0x30",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x30_E74G9[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventRowboatLoaded": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_OXX9V[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventOarStrokeEnded": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_9HCFA[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventRowboatExitedWater": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_SK60M[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventRowboatEnteredWater": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_OCF9U[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "RowboatMountStateTelemetryEvent": {
     "ClassSize": "0x14",
     "Attributes": [
       {
         "Name": "WatercraftId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -247,6 +318,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_MG2YR[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
       }
     ]
   },
@@ -255,13 +332,13 @@
     "Attributes": [
       {
         "Name": "WatercraftId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Location",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x10"
       },
@@ -270,6 +347,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x1c"
+      },
+      {
+        "Name": "pad0x3_0PQLA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1d"
       }
     ]
   },
@@ -278,31 +361,31 @@
     "Attributes": [
       {
         "Name": "WatercraftId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "WatercraftType",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "OriginDescription",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "Location",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x30"
       },
       {
         "Name": "Forward",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x3c"
       }
@@ -313,13 +396,13 @@
     "Attributes": [
       {
         "Name": "Watercraft",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Actor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -330,13 +413,13 @@
     "Attributes": [
       {
         "Name": "Watercraft",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Actor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
       }

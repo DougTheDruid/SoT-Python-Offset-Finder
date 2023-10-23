@@ -10,15 +10,15 @@ namespace DougsSDKDumper
 class CharacterAnimationInstance: public AnimInstance
 {
 public:
-	char                                                         pad0x10_U24UK[0x10];                               // 0x440(0x10)
-	Struct CharacterAnimationIKUpdateParams                      IKLeftHandUpdateParams;                            // 0x450(0x40)
-	Struct CharacterAnimationIKUpdateParams                      IKRightHandUpdateParams;                           // 0x490(0x40)
+	char                                                         pad0x10_25Z6I[0x10];                               // 0x440(0x10)
+	struct CharacterAnimationIKUpdateParams                      IKLeftHandUpdateParams;                            // 0x450(0x40)
+	struct CharacterAnimationIKUpdateParams                      IKRightHandUpdateParams;                           // 0x490(0x40)
 	struct FName                                                 RightHandIKSocketName;                             // 0x4d0(0x8)
 	struct FName                                                 LeftHandIKSocketName;                              // 0x4d8(0x8)
-	Struct LimbIK                                                RightHandIK;                                       // 0x4e0(0x60)
-	Struct LimbIK                                                LeftHandIK;                                        // 0x540(0x60)
-	Struct LimbIK                                                RightFootIK;                                       // 0x5a0(0x60)
-	Struct LimbIK                                                LeftFootIK;                                        // 0x600(0x60)
+	struct LimbIK                                                RightHandIK;                                       // 0x4e0(0x60)
+	struct LimbIK                                                LeftHandIK;                                        // 0x540(0x60)
+	struct LimbIK                                                RightFootIK;                                       // 0x5a0(0x60)
+	struct LimbIK                                                LeftFootIK;                                        // 0x600(0x60)
 };
 
 
@@ -82,9 +82,9 @@ public:
 class AnimationDataStore: public Object
 {
 public:
-	char                                                         pad0x18_WL3F2[0x18];                               // 0x28(0x18)
-	TArray<struct Data>                                          Data;                                              // 0x40(0x10)
-	TArray<struct LoadingData>                                   LoadingData;                                       // 0x50(0x10)
+	char                                                         pad0x18_H3AXL[0x18];                               // 0x28(0x18)
+	TArray<struct AnimationDataStoreEntry>                       Data;                                              // 0x40(0x10)
+	TArray<struct AnimationDataStoreLoadingEntry>                LoadingData;                                       // 0x50(0x10)
 };
 
 
@@ -92,7 +92,7 @@ public:
 class AnimationDataStoreAsset: public DataAsset
 {
 public:
-	TArray<struct AssetRefs>                                     AssetRefs;                                         // 0x28(0x10)
+	TArray<struct AnimationDataStoreAssetEntry>                  AssetRefs;                                         // 0x28(0x10)
 };
 
 
@@ -100,7 +100,7 @@ public:
 class AnimationDataStoreWeakReferenceAsset: public DataAsset
 {
 public:
-	TArray<struct AssetWeakRefs>                                 AssetWeakRefs;                                     // 0x28(0x10)
+	TArray<struct AnimationDataStoreAssetWeakReferenceEntry>     AssetWeakRefs;                                     // 0x28(0x10)
 };
 
 
@@ -115,9 +115,9 @@ public:
 class AnimationDataStoreComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_ZYPNS[0x8];                                 // 0xc8(0x8)
-	Class AnimationDataStoreWeakReferenceAsset*                  AnimationDataStoreWeakReferences;                  // 0xd0(0x8)
-	char                                                         pad0xb8_Q0KH8[0xb8];                               // 0xd8(0xb8)
+	char                                                         pad0x8_WZ8E1[0x8];                                 // 0xc8(0x8)
+	class AnimationDataStoreWeakReferenceAsset*                  AnimationDataStoreWeakReferences;                  // 0xd0(0x8)
+	char                                                         pad0xb8_U6YAU[0xb8];                               // 0xd8(0xb8)
 };
 
 
@@ -132,7 +132,7 @@ public:
 class AnimationEditorSettings: public DeveloperSettings
 {
 public:
-	Struct StringAssetReference                                  CustomAnimationMontageIdListings;                  // 0x38(0x10)
+	struct StringAssetReference                                  CustomAnimationMontageIdListings;                  // 0x38(0x10)
 };
 
 
@@ -162,7 +162,7 @@ class AnimNotify_DestroyCosmeticItem: public AnimNotify
 {
 public:
 	byte                                                         DestroyLocation;                                   // 0x38(0x1)
-	char                                                         pad0x7_WY18V[0x7];                                 // 0x39(0x7)
+	char                                                         pad0x7_XPMW4[0x7];                                 // 0x39(0x7)
 };
 
 
@@ -171,10 +171,10 @@ class AnimNotify_DetachAndMaintainWorldPosition: public AnimNotify
 {
 public:
 	byte                                                         CurrentLocation;                                   // 0x38(0x1)
-	char                                                         pad0x3_Y560D[0x3];                                 // 0x39(0x3)
-	Struct Vector                                                PreviewLocationOffset;                             // 0x3c(0xc)
+	char                                                         pad0x3_290S2[0x3];                                 // 0x39(0x3)
+	struct Vector                                                PreviewLocationOffset;                             // 0x3c(0xc)
 	float                                                        PreviewScaleMultiplier;                            // 0x48(0x4)
-	char                                                         pad0x4_QOJXR[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_LP09U[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -183,10 +183,10 @@ class AnimNotify_PlayAnimationForCosmetic: public AnimNotify
 {
 public:
 	byte                                                         CosmeticLocation;                                  // 0x38(0x1)
-	char                                                         pad0x7_MMZUW[0x7];                                 // 0x39(0x7)
-	Class AnimSequenceBase*                                      CosmeticItemAnimation;                             // 0x40(0x8)
+	char                                                         pad0x7_1ZI42[0x7];                                 // 0x39(0x7)
+	class AnimSequenceBase*                                      CosmeticItemAnimation;                             // 0x40(0x8)
 	bool                                                         Looping;                                           // 0x48(0x1)
-	char                                                         pad0x7_69ERX[0x7];                                 // 0x49(0x7)
+	char                                                         pad0x7_PN7A4[0x7];                                 // 0x49(0x7)
 };
 
 
@@ -194,7 +194,7 @@ public:
 class AnimNotify_PlayMontage: public AnimNotify
 {
 public:
-	Class AnimMontage*                                           MontageToPlay;                                     // 0x38(0x8)
+	class AnimMontage*                                           MontageToPlay;                                     // 0x38(0x8)
 };
 
 
@@ -204,7 +204,7 @@ class AnimNotify_ReattachCosmeticItem: public AnimNotify
 public:
 	byte                                                         CurrentLocation;                                   // 0x38(0x1)
 	byte                                                         NewLocation;                                       // 0x39(0x1)
-	char                                                         pad0x6_4CGH5[0x6];                                 // 0x3a(0x6)
+	char                                                         pad0x6_HAW6J[0x6];                                 // 0x3a(0x6)
 };
 
 
@@ -218,7 +218,7 @@ public:
 	bool                                                         RenderShadowWhenHidden;                            // 0x3b(0x1)
 	bool                                                         UpdateForRole;                                     // 0x3c(0x1)
 	byte                                                         UpdateRole;                                        // 0x3d(0x1)
-	char                                                         pad0x2_I1GE3[0x2];                                 // 0x3e(0x2)
+	char                                                         pad0x2_CYCSF[0x2];                                 // 0x3e(0x2)
 };
 
 
@@ -227,7 +227,7 @@ class AnimNotify_SetLookAtEnabled: public AnimNotify
 {
 public:
 	bool                                                         Enabled;                                           // 0x38(0x1)
-	char                                                         pad0x7_VEAQP[0x7];                                 // 0x39(0x7)
+	char                                                         pad0x7_5LAWZ[0x7];                                 // 0x39(0x7)
 };
 
 
@@ -235,14 +235,14 @@ public:
 class AnimNotify_SpawnCosmeticItem: public AnimNotify
 {
 public:
-	class                                                        ItemSpawnClass;                                    // 0x38(0x8)
+	class UClass*                                                ItemSpawnClass;                                    // 0x38(0x8)
 	byte                                                         SpawnLocation;                                     // 0x40(0x1)
-	char                                                         pad0x7_1TN83[0x7];                                 // 0x41(0x7)
-	Class CosmeticItemAnimationSetDataAsset*                     CosmeticItemAnimationDataSet;                      // 0x48(0x8)
+	char                                                         pad0x7_LHZDQ[0x7];                                 // 0x41(0x7)
+	class CosmeticItemAnimationSetDataAsset*                     CosmeticItemAnimationDataSet;                      // 0x48(0x8)
 	bool                                                         SpawnHidden;                                       // 0x50(0x1)
 	bool                                                         SpawnForRole;                                      // 0x51(0x1)
 	byte                                                         SpawnRole;                                         // 0x52(0x1)
-	char                                                         pad0x5_3KZQ7[0x5];                                 // 0x53(0x5)
+	char                                                         pad0x5_X189W[0x5];                                 // 0x53(0x5)
 };
 
 
@@ -250,7 +250,7 @@ public:
 class AnimNotify_StateComplete: public AnimNotify
 {
 public:
-	class                                                        CompletedStateId;                                  // 0x38(0x8)
+	class UClass*                                                CompletedStateId;                                  // 0x38(0x8)
 };
 
 
@@ -260,7 +260,7 @@ class AnimNotify_SwitchCosmeticItemAttachment: public AnimNotify
 public:
 	byte                                                         PreviousLocation;                                  // 0x38(0x1)
 	byte                                                         NewLocation;                                       // 0x39(0x1)
-	char                                                         pad0x6_Q5BKJ[0x6];                                 // 0x3a(0x6)
+	char                                                         pad0x6_3KIEQ[0x6];                                 // 0x3a(0x6)
 };
 
 
@@ -270,7 +270,7 @@ class AnimNotify_ToggleIK: public AnimNotify
 public:
 	TArray<Byte IKLimbsToAdjust>                                 IKLimbsToAdjust;                                   // 0x38(0x10)
 	bool                                                         Enabled;                                           // 0x48(0x1)
-	char                                                         pad0x7_INT62[0x7];                                 // 0x49(0x7)
+	char                                                         pad0x7_AN4L5[0x7];                                 // 0x49(0x7)
 };
 
 
@@ -280,7 +280,7 @@ class AnimNotifyCondition_FeatureConfigValidation: public AnimNotifyCondition
 public:
 	struct FName                                                 Feature;                                           // 0x28(0x8)
 	bool                                                         TriggerWhenDisabled;                               // 0x30(0x1)
-	char                                                         pad0x7_RO7SC[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_7669U[0x7];                                 // 0x31(0x7)
 };
 
 
@@ -296,9 +296,9 @@ public:
 class AnimNotifyState_PropagateCurveValuesToMaterials: public AnimNotifyState
 {
 public:
-	TArray<struct CurveValues>                                   CurveValues;                                       // 0x30(0x10)
+	TArray<struct CurveUpdateValues>                             CurveValues;                                       // 0x30(0x10)
 	bool                                                         DoNotPropagteCurveValues;                          // 0x40(0x1)
-	char                                                         pad0x17_2DRR1[0x17];                               // 0x41(0x17)
+	char                                                         pad0x17_T68R0[0x17];                               // 0x41(0x17)
 };
 
 
@@ -327,15 +327,15 @@ public:
 class AnimNotifyState_SpawnCosmeticItem: public AnimNotifyState
 {
 public:
-	class                                                        CosmeticItemToSpawn;                               // 0x30(0x8)
+	class UClass*                                                CosmeticItemToSpawn;                               // 0x30(0x8)
 	byte                                                         SpawnLocation;                                     // 0x38(0x1)
-	char                                                         pad0x7_Z5JUR[0x7];                                 // 0x39(0x7)
-	Class CosmeticItemAnimationSetDataAsset*                     CosmeticItemAnimationDataSet;                      // 0x40(0x8)
+	char                                                         pad0x7_7W336[0x7];                                 // 0x39(0x7)
+	class CosmeticItemAnimationSetDataAsset*                     CosmeticItemAnimationDataSet;                      // 0x40(0x8)
 	bool                                                         SpawnHidden;                                       // 0x48(0x1)
 	bool                                                         DestroyOnEnd;                                      // 0x49(0x1)
 	bool                                                         OverrideDestroyLocation;                           // 0x4a(0x1)
 	byte                                                         DestroyLocation;                                   // 0x4b(0x1)
-	char                                                         pad0x4_FV6X8[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_LOOYW[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -345,7 +345,7 @@ class AnimNotifyState_ToggleIK: public AnimNotifyState
 public:
 	TArray<Byte IKLimbsToAdjust>                                 IKLimbsToAdjust;                                   // 0x30(0x10)
 	bool                                                         Enabled;                                           // 0x40(0x1)
-	char                                                         pad0x57_F0JCG[0x57];                               // 0x41(0x57)
+	char                                                         pad0x57_9J0DY[0x57];                               // 0x41(0x57)
 };
 
 
@@ -367,8 +367,8 @@ public:
 class PreviewCharacterAnimationInstance: public CharacterAnimationInstance
 {
 public:
-	Class AnimMontage*                                           ActiveMontage;                                     // 0x660(0x8)
-	char                                                         pad0x88_BA3H0[0x88];                               // 0x668(0x88)
+	class AnimMontage*                                           ActiveMontage;                                     // 0x660(0x8)
+	char                                                         pad0x88_5E97Q[0x88];                               // 0x668(0x88)
 };
 
 
@@ -383,9 +383,9 @@ public:
 class CosmeticItemActor: public Actor
 {
 public:
-	char                                                         pad0x8_VP16X[0x8];                                 // 0x3c8(0x8)
-	Class SkeletalMeshComponent*                                 MeshComponent;                                     // 0x3d0(0x8)
-	char                                                         pad0xa0_0GYXV[0xa0];                               // 0x3d8(0xa0)
+	char                                                         pad0x8_58VPF[0x8];                                 // 0x3c8(0x8)
+	class SkeletalMeshComponent*                                 MeshComponent;                                     // 0x3d0(0x8)
+	char                                                         pad0xa0_KRVVN[0xa0];                               // 0x3d8(0xa0)
 };
 
 
@@ -400,9 +400,9 @@ public:
 class CosmeticItemAnimationComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x58_8SVG2[0x58];                               // 0xc8(0x58)
-	Class CosmeticItemAnimationDataAsset*                        DataAsset;                                         // 0x120(0x8)
-	char                                                         pad0x8_0OWPK[0x8];                                 // 0x128(0x8)
+	char                                                         pad0x58_UNRVQ[0x58];                               // 0xc8(0x58)
+	class CosmeticItemAnimationDataAsset*                        DataAsset;                                         // 0x120(0x8)
+	char                                                         pad0x8_DU7K1[0x8];                                 // 0x128(0x8)
 };
 
 
@@ -411,7 +411,7 @@ class CosmeticItemAnimationDataAsset: public DataAsset
 {
 public:
 	struct FName                                                 WieldSockets;                                      // 0x28(0x8)
-	char                                                         pad0x30_IN461[0x30];                               // 0x30(0x30)
+	char                                                         pad0x30_SVCZM[0x30];                               // 0x30(0x30)
 };
 
 
@@ -426,10 +426,10 @@ public:
 class CosmeticItemAnimationInstance: public AnimInstance
 {
 public:
-	char                                                         pad0x8_2F1QG[0x8];                                 // 0x440(0x8)
-	Class CosmeticItemAnimationSetDataAsset*                     AnimationDataSet;                                  // 0x448(0x8)
-	Class AnimMontage*                                           ActiveMontage;                                     // 0x450(0x8)
-	char                                                         pad0xa8_4VL5F[0xa8];                               // 0x458(0xa8)
+	char                                                         pad0x8_JYXS2[0x8];                                 // 0x440(0x8)
+	class CosmeticItemAnimationSetDataAsset*                     AnimationDataSet;                                  // 0x448(0x8)
+	class AnimMontage*                                           ActiveMontage;                                     // 0x450(0x8)
+	char                                                         pad0xa8_NIQ5H[0xa8];                               // 0x458(0xa8)
 };
 
 
@@ -437,7 +437,7 @@ public:
 class CosmeticItemAnimationSetDataAsset: public DataAsset
 {
 public:
-	Struct CosmeticItemAnimationSetLoopData                      LoopData;                                          // 0x28(0x20)
+	struct CosmeticItemAnimationSetLoopData                      LoopData;                                          // 0x28(0x20)
 	TArray<class AnimSequenceBase*>                              OneShotSequences;                                  // 0x48(0x10)
 };
 
@@ -474,9 +474,9 @@ public:
 class CustomAnimationMontageComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_MPL32[0x8];                                 // 0xc8(0x8)
-	Struct CustomAnimationMontageComponentReplicatedData         ReplicatedData;                                    // 0xd0(0xc)
-	char                                                         pad0x6c_8NSEA[0x6c];                               // 0xdc(0x6c)
+	char                                                         pad0x8_G2MF3[0x8];                                 // 0xc8(0x8)
+	struct CustomAnimationMontageComponentReplicatedData         ReplicatedData;                                    // 0xd0(0xc)
+	char                                                         pad0x6c_93XVO[0x6c];                               // 0xdc(0x6c)
 };
 
 
@@ -486,11 +486,11 @@ class CustomAnimationMontageDefinitionDataAsset: public DataAsset
 public:
 	struct FName                                                 MontageId;                                         // 0x28(0x8)
 	byte                                                         MontageType;                                       // 0x30(0x1)
-	char                                                         pad0x7_YGCDJ[0x7];                                 // 0x31(0x7)
-	Class AnimMontage*                                           MontageData;                                       // 0x38(0x8)
-	Struct CustomAnimationMontageStagedLoopingData               LoopingData;                                       // 0x40(0x28)
+	char                                                         pad0x7_LMS24[0x7];                                 // 0x31(0x7)
+	class AnimMontage*                                           MontageData;                                       // 0x38(0x8)
+	struct CustomAnimationMontageStagedLoopingData               LoopingData;                                       // 0x40(0x28)
 	bool                                                         Interrupts;                                        // 0x68(0x1)
-	char                                                         pad0x7_W6S98[0x7];                                 // 0x69(0x7)
+	char                                                         pad0x7_0WYSG[0x7];                                 // 0x69(0x7)
 };
 
 
@@ -498,7 +498,7 @@ public:
 class CustomAnimationMontageDefinitionListingDataAsset: public DataAsset
 {
 public:
-	TArray<struct Entries>                                       Entries;                                           // 0x28(0x10)
+	TArray<struct CustomAnimationMontageDefinitionEntry>         Entries;                                           // 0x28(0x10)
 };
 
 
@@ -569,9 +569,9 @@ public:
 	float                                                        ReplicatedAnimationProgression;                    // 0xd4(0x4)
 	int                                                          ReplicatedPlayingAnimationIndex;                   // 0xd8(0x4)
 	float                                                        ReplicatedPlayRate;                                // 0xdc(0x4)
-	char                                                         pad0x8_VBDKF[0x8];                                 // 0xe0(0x8)
-	Class AnimInstance*                                          AnimInstance;                                      // 0xe8(0x8)
-	char                                                         pad0x20_2IC2A[0x20];                               // 0xf0(0x20)
+	char                                                         pad0x8_YZKAT[0x8];                                 // 0xe0(0x8)
+	class AnimInstance*                                          AnimInstance;                                      // 0xe8(0x8)
+	char                                                         pad0x20_BD5ON[0x20];                               // 0xf0(0x20)
 };
 
 
@@ -601,8 +601,8 @@ public:
 class TransformBlendCurveComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_0E4CR[0x8];                                 // 0xc8(0x8)
-	Struct TransformBlendCurve                                   Curve;                                             // 0xd0(0x500)
+	char                                                         pad0x8_TQWJW[0x8];                                 // 0xc8(0x8)
+	struct TransformBlendCurve                                   Curve;                                             // 0xd0(0x500)
 };
 
 
@@ -617,6 +617,7 @@ public:
 class WaitForAnimationStateEntryProxy: public Object
 {
 public:
+	char                                                         pad0x28_5VJGC[0x28];                               // 0x28(0x28)
 };
 
 
@@ -624,6 +625,7 @@ public:
 class WaitForAnimationStateExitProxy: public Object
 {
 public:
+	char                                                         pad0x20_SWAUO[0x20];                               // 0x28(0x20)
 };
 
 
@@ -631,8 +633,8 @@ public:
 class WeightedAnimationLoadOnDemandDataAsset: public DataAsset
 {
 public:
-	TArray<struct WeightedAnimationList>                         WeightedAnimationList;                             // 0x28(0x10)
-	Class AnimSequence*                                          FallBackAnimation;                                 // 0x38(0x8)
+	TArray<struct WeightedAnimationData>                         WeightedAnimationList;                             // 0x28(0x10)
+	class AnimSequence*                                          FallBackAnimation;                                 // 0x38(0x8)
 };
 
 
@@ -640,9 +642,9 @@ public:
 class WeightedAnimSequenceLoadOnDemand: public Object
 {
 public:
-	Class AnimSequence*                                          FallBackAnimation;                                 // 0x28(0x8)
-	TArray<struct WeightedAnimationList>                         WeightedAnimationList;                             // 0x30(0x10)
-	char                                                         pad0xe0_ER027[0xe0];                               // 0x40(0xe0)
+	class AnimSequence*                                          FallBackAnimation;                                 // 0x28(0x8)
+	TArray<struct WeightedAnimationData>                         WeightedAnimationList;                             // 0x30(0x10)
+	char                                                         pad0xe0_1HMUZ[0xe0];                               // 0x40(0xe0)
 };
 
 

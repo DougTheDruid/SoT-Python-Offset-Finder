@@ -5,7 +5,7 @@ BP_Bed_Large_C:
   - Name: DrapesMeshComponent
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   ClassSize: '0x8'
   FullSize: '0x3e0'
   InheritedSize: '0x3d8'

@@ -2,18 +2,18 @@
 # https://github.com/DougTheDruid
 BP_SmallShip_StandardHull_C:
   Attributes:
-  - Name: None
+  - Name: Occluder
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: Damage
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
+    Type: class ChildActorComponent*
+  - Name: Art
     Offset: '0x400'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   ClassSize: '0x18'
   FullSize: '0x408'
   InheritedSize: '0x3f0'

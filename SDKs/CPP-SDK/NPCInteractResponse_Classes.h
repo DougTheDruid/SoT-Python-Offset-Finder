@@ -38,7 +38,7 @@ public:
 class NPCInteractAnimResponseDataAsset: public DataAsset
 {
 public:
-	TArray<struct NPCInteractResponseAnimData>                   NPCInteractResponseAnimData;                       // 0x28(0x10)
+	TArray<struct NPCInteractResponseStruct>                     NPCInteractResponseAnimData;                       // 0x28(0x10)
 };
 
 
@@ -60,6 +60,7 @@ public:
 class NPCInteractResponseComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_I1L4F[0x8];                                 // 0xc8(0x8)
 };
 
 

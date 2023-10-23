@@ -5,66 +5,66 @@ OceanCrawlerAnimationDataStructure:
   - Name: LocomotionData
     Offset: '0x0'
     Size: '0x30'
-    Type: Struct OceanCrawlerLocomotionAnimationDataStructure
+    Type: struct OceanCrawlerLocomotionAnimationDataStructure
   - Name: MontageData
     Offset: '0x30'
     Size: '0x8'
-    Type: Class CustomAnimationMontageDefinitionListingDataAsset*
+    Type: class CustomAnimationMontageDefinitionListingDataAsset*
   - Name: AttackAnimations
     Offset: '0x38'
     Size: '0x8'
-    Type: Class AthenaAnimationWeaponDataAsset*
+    Type: class AthenaAnimationWeaponDataAsset*
   - Name: HitReactionData
     Offset: '0x40'
     Size: '0x8'
-    Type: Struct HitReactionAnimationData
+    Type: struct HitReactionAnimationData
   - Name: SporeBreathData
     Offset: '0x48'
     Size: '0x18'
-    Type: Struct OceanCrawlerSporeBreathAnimationData
+    Type: struct OceanCrawlerSporeBreathAnimationData
   - Name: AttackInterruptMontages
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<struct AttackInterruptMontages>
+    Type: TArray<struct CustomAnimationMontageId>
   - Name: DeathMontageId
     Offset: '0x70'
     Size: '0x8'
-    Type: Struct CustomAnimationMontageId
+    Type: struct CustomAnimationMontageId
   - Name: SpawnMontageId
     Offset: '0x78'
     Size: '0x8'
-    Type: Struct CustomAnimationMontageId
+    Type: struct CustomAnimationMontageId
   - Name: SpawnOnShipMontageId
     Offset: '0x80'
     Size: '0x8'
-    Type: Struct CustomAnimationMontageId
+    Type: struct CustomAnimationMontageId
   - Name: SpawnBoardedMontageId
     Offset: '0x88'
     Size: '0x8'
-    Type: Struct CustomAnimationMontageId
+    Type: struct CustomAnimationMontageId
   ClassSize: '0x90'
 OceanCrawlerLocomotionAnimationDataStructure:
   Attributes:
   - Name: LocomotionIntoAsBlendspace
     Offset: '0x0'
     Size: '0x8'
-    Type: Class BlendSpace1D*
+    Type: class BlendSpace1D*
   - Name: Idle
     Offset: '0x8'
     Size: '0x8'
-    Type: Class AnimSequence*
+    Type: class AnimSequence*
   - Name: LocomotionOutOf
     Offset: '0x10'
     Size: '0x8'
-    Type: Class AnimSequence*
+    Type: class AnimSequence*
   - Name: LocomotionOutOfAsBlendspace
     Offset: '0x18'
     Size: '0x8'
-    Type: Class BlendSpace1D*
+    Type: class BlendSpace1D*
   - Name: Locomotion
     Offset: '0x20'
     Size: '0x8'
-    Type: Class BlendSpace*
+    Type: class BlendSpace*
   - Name: IntoDeadZone
     Offset: '0x28'
     Size: '0x4'
@@ -79,13 +79,13 @@ OceanCrawlerSporeBreathAnimationData:
   - Name: Into
     Offset: '0x0'
     Size: '0x8'
-    Type: Class BlendSpace1D*
+    Type: class BlendSpace1D*
   - Name: Locomotion
     Offset: '0x8'
     Size: '0x8'
-    Type: Class BlendSpace1D*
+    Type: class BlendSpace1D*
   - Name: Outof
     Offset: '0x10'
     Size: '0x8'
-    Type: Class BlendSpace1D*
+    Type: class BlendSpace1D*
   ClassSize: '0x18'

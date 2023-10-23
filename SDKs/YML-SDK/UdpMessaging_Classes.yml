@@ -6,23 +6,23 @@ UdpMessagingSettings:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_2WOI1[0x7]
+  - Name: pad0x7_ANUCK[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
   - Name: UnicastEndpoint
     Offset: '0x30'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: MulticastEndpoint
     Offset: '0x40'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: MulticastTimeToLive
     Offset: '0x50'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_1XH5S[0x7]
+  - Name: pad0x7_3L143[0x7]
     Offset: '0x51'
     Size: '0x7'
     Type: char
@@ -34,18 +34,18 @@ UdpMessagingSettings:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_W46RA[0x7]
+  - Name: pad0x7_JX9TL[0x7]
     Offset: '0x69'
     Size: '0x7'
     Type: char
   - Name: TunnelUnicastEndpoint
     Offset: '0x70'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: TunnelMulticastEndpoint
     Offset: '0x80'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: RemoteTunnelEndpoints
     Offset: '0x90'
     Size: '0x10'

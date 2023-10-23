@@ -5,19 +5,19 @@ BP_LargeShip_Capstan_C:
   - Name: Arm1
     Offset: '0x8c8'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: Arm4
     Offset: '0x8d0'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: Arm3
     Offset: '0x8d8'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: Arm2
     Offset: '0x8e0'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   ClassSize: '0x20'
   FullSize: '0x8e8'
   InheritedSize: '0x8c8'

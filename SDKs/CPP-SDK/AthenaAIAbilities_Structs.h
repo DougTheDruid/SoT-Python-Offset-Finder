@@ -10,8 +10,9 @@ namespace DougsSDKDumper
 struct MeleeAttackIdWeights
 {
 public:
-	class                                                        MeleeAttackType;                                   // 0x0(0x8)
+	class UClass*                                                MeleeAttackType;                                   // 0x0(0x8)
 	float                                                        Weight;                                            // 0x8(0x4)
+	char                                                         pad0x4_P9ZSQ[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -19,8 +20,9 @@ public:
 struct AshenLordFireShroudParams
 {
 public:
-	class                                                        FireShroudZoneClass;                               // 0x0(0x8)
-	Struct Vector                                                FireShroudCollisionVolume;                         // 0x8(0xc)
+	class UClass*                                                FireShroudZoneClass;                               // 0x0(0x8)
+	struct Vector                                                FireShroudCollisionVolume;                         // 0x8(0xc)
+	char                                                         pad0x4_LW53F[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -28,8 +30,8 @@ public:
 struct AshenLordFireShroud
 {
 public:
-	Class StatusEffectOverlapZone*                               FireShroudOverlapZone;                             // 0x0(0x8)
-	Struct AshenLordFireShroudParams                             Params;                                            // 0x8(0x18)
+	class StatusEffectOverlapZone*                               FireShroudOverlapZone;                             // 0x0(0x8)
+	struct AshenLordFireShroudParams                             Params;                                            // 0x8(0x18)
 };
 
 

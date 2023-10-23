@@ -7,13 +7,13 @@
     "Attributes": [
       {
         "Name": "NudgeInterpParams",
-        "Type": "Struct NudgeInterpolationParams",
+        "Type": "struct NudgeInterpolationParams",
         "Size": "0x20",
         "Offset": "0x28"
       },
       {
         "Name": "ControllerForceFeedbackEffect",
-        "Type": "Class ForceFeedbackEffect*",
+        "Type": "class ForceFeedbackEffect*",
         "Size": "0x8",
         "Offset": "0x48"
       }
@@ -40,20 +40,20 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0x90_OWKIS[0x90]",
+        "Name": "pad0x90_AF8DC[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x28"
       },
       {
         "Name": "OwningActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0xb8"
       },
       {
         "Name": "OwnerComponent",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0xc0"
       }

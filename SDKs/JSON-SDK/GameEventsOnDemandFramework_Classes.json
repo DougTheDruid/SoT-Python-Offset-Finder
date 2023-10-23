@@ -1,19 +1,19 @@
 {
   "GameEventAvailabilityParamsDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x90",
+    "FullSize": "0x98",
     "InheritedSize": "0x28",
-    "ClassSize": "0x68",
+    "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "MatchmakingCooldownRanges",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x28"
       },
       {
         "Name": "CrewsJoinedOnDemandLimitRange",
-        "Type": "Struct WeightedProbabilityRange",
+        "Type": "struct WeightedProbabilityRange",
         "Size": "0x20",
         "Offset": "0x58"
       },
@@ -36,28 +36,46 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x3_LLQK4[0x3]",
-        "Type": "char",
-        "Size": "0x3",
+        "Name": "ShouldIgnoreIfCrewsEngagingEmergently",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x81"
       },
       {
-        "Name": "SendCrewToLoserTunnelFeature",
-        "Type": "Struct FeatureFlag",
-        "Size": "0xc",
+        "Name": "pad0x2_E9TPX[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x82"
+      },
+      {
+        "Name": "EmergentCrewLeftRegionCooldown",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x84"
+      },
+      {
+        "Name": "SendCrewToLoserTunnelFeature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x4_NZZ8P[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x94"
       }
     ]
   },
   "GameEventOnDemandAnnouncementComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x180",
+    "FullSize": "0x198",
     "InheritedSize": "0xc8",
-    "ClassSize": "0xb8",
+    "ClassSize": "0xd0",
     "Attributes": [
       {
         "Name": "FeatureFlag",
-        "Type": "Struct FeatureFlag",
+        "Type": "struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0xc8"
       },
@@ -68,10 +86,22 @@
         "Offset": "0xd4"
       },
       {
-        "Name": "pad0x3_1LK98[0x3]",
-        "Type": "char",
-        "Size": "0x3",
+        "Name": "ShouldFireGameEventCompletedBannerForEmergentCrews",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0xd5"
+      },
+      {
+        "Name": "ResetCachedCrewsTrigger",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xd6"
+      },
+      {
+        "Name": "pad0x1_KEGG9[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0xd7"
       },
       {
         "Name": "IslandName",
@@ -87,76 +117,108 @@
       },
       {
         "Name": "OnDemandParticipatingCrewIds",
-        "Type": "TArray<struct OnDemandParticipatingCrewIds>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0xf0"
       },
       {
         "Name": "TrackedShipCrewIds",
-        "Type": "TArray<struct TrackedShipCrewIds>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x100"
       },
       {
         "Name": "GameEventType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x5c_MBEAT[0x5c]",
+        "Name": "pad0x74_NZT24[0x74]",
         "Type": "char",
-        "Size": "0x5c",
+        "Size": "0x74",
         "Offset": "0x118"
       },
       {
         "Name": "TemporaryBannerTag",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x174"
+        "Offset": "0x18c"
       },
       {
-        "Name": "pad0x4_32UQN[0x4]",
+        "Name": "pad0x4_ACCZU[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x17c"
+        "Offset": "0x194"
+      }
+    ]
+  },
+  "GameEventOnDemandAvailabilityHandler": {
+    "Super": "Object",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "AvailabilityParamsAsset",
+        "Type": "class GameEventAvailabilityParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "AvailabilityStateTracker",
+        "Type": "class GameEventOnDemandAvailabilityStateTracker*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "GameEventType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x60_S6235[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x40"
       }
     ]
   },
   "GameEventOnDemandAvailabilityStateTracker": {
     "Super": "Object",
-    "FullSize": "0x150",
+    "FullSize": "0x130",
     "InheritedSize": "0x28",
-    "ClassSize": "0x128",
+    "ClassSize": "0x108",
     "Attributes": [
       {
-        "Name": "pad0x88_VSWRQ[0x88]",
+        "Name": "pad0x88_EF5FL[0x88]",
         "Type": "char",
         "Size": "0x88",
         "Offset": "0x28"
       },
       {
         "Name": "ShipTypeLimit",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xb0"
       },
       {
-        "Name": "ParticipatingCrewIds",
-        "Type": "TArray<struct ParticipatingCrewIds>",
+        "Name": "OnDemandParticipatingCrewIds",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0xb8"
       },
       {
-        "Name": "PreparingToJoinCrewIds",
-        "Type": "TArray<struct PreparingToJoinCrewIds>",
+        "Name": "EmergentlyParticipatingCrewIds",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x78_FQQ8H[0x78]",
+        "Name": "pad0x58_RCX02[0x58]",
         "Type": "char",
-        "Size": "0x78",
+        "Size": "0x58",
         "Offset": "0xd8"
       }
     ]
@@ -169,6 +231,13 @@
     "Attributes": []
   },
   "GameEventsOnDemandAvailabilityServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GameEventsOnDemandInstanceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -188,6 +257,40 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "WaitForGameEventOnDemandToCompleteStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x128",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "pad0x90_E1CEX[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "WaitForGameEventOnDemandToCompleteStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DeactivationMeansCompletion",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x7_IN85S[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x81"
+      }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

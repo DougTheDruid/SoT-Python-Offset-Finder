@@ -10,14 +10,14 @@ namespace DougsSDKDumper
 class BP_PlayerPirate_Ghost_C: public AthenaGhostPlayerCharacter
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x20c0(0x8)
-	BlueprintGeneratedClass BP_GhostCharacterAudioComponent_C*   BP_GhostCharacterAudioComponent;                   // 0x20c8(0x8)
-	Class WaterInteractionComponent*                             WaterInteraction;                                  // 0x20d0(0x8)
-	Class PlayerNameplateComponent*                              PlayerNameplate;                                   // 0x20d8(0x8)
-	Class BodyLightControllerComponent*                          BodyLightController;                               // 0x20e0(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x20e8(0x8)
-	Class AmbientLightSourceComponent*                           BodyLight;                                         // 0x20f0(0x8)
-	Class CharacterFootImpactComponent*                          CharacterFootImpact;                               // 0x20f8(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x20c0(0x8)
+	blueprintgeneratedclass BP_GhostCharacterAudioComponent_C*   BP_GhostCharacterAudioComponent;                   // 0x20c8(0x8)
+	class WaterInteractionComponent*                             WaterInteraction;                                  // 0x20d0(0x8)
+	class PlayerNameplateComponent*                              PlayerNameplate;                                   // 0x20d8(0x8)
+	class BodyLightControllerComponent*                          BodyLightController;                               // 0x20e0(0x8)
+	class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x20e8(0x8)
+	class AmbientLightSourceComponent*                           BodyLight;                                         // 0x20f0(0x8)
+	class CharacterFootImpactComponent*                          CharacterFootImpact;                               // 0x20f8(0x8)
 	float                                                        Default Ghost Parameter;                           // 0x2100(0x4)
 };
 

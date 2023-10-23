@@ -11,7 +11,11 @@ AssetReferencer:
   InheritedSize: '0x28'
   Super: DataAsset
 AudioHardwareDeviceService:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_2CWS7[0x18]
+    Offset: '0x28'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -27,13 +31,17 @@ MemoryUsageVisualiserSettings:
   - Name: VisualiserCategories
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct VisualiserCategories>
+    Type: TArray<struct MemoryVisualiserCategory>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
 RareGameEngine:
-  Attributes: []
+  Attributes:
+  - Name: pad0x58_EUT7A[0x58]
+    Offset: '0xa30'
+    Size: '0x58'
+    Type: char
   ClassSize: '0x58'
   FullSize: '0xa88'
   InheritedSize: '0xa30'
@@ -45,7 +53,11 @@ RareHUD:
   InheritedSize: '0x4c0'
   Super: HUD
 StallDetector:
-  Attributes: []
+  Attributes:
+  - Name: pad0x28_H2OE1[0x28]
+    Offset: '0x28'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'

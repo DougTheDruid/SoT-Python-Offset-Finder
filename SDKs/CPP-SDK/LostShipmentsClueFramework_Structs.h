@@ -10,9 +10,10 @@ namespace DougsSDKDumper
 struct ClueSite
 {
 public:
-	class                                                        SiteType;                                          // 0x0(0x8)
-	Class ClueSiteData*                                          SiteData;                                          // 0x8(0x8)
-	Struct Vector                                                Location;                                          // 0x10(0xc)
+	class UClass*                                                SiteType;                                          // 0x0(0x8)
+	class ClueSiteData*                                          SiteData;                                          // 0x8(0x8)
+	struct Vector                                                Location;                                          // 0x10(0xc)
+	char                                                         pad0x4_UYM1R[0x4];                                 // 0x1c(0x4)
 };
 
 
@@ -20,9 +21,9 @@ public:
 struct LandClueCreationChoice
 {
 public:
-	class                                                        ClueSiteType;                                      // 0x0(0x8)
+	class UClass*                                                ClueSiteType;                                      // 0x0(0x8)
 	struct FName                                                 IslandIdentifier;                                  // 0x8(0x8)
-	Class LandClueCreator*                                       ClueCreator;                                       // 0x10(0x8)
+	class LandClueCreator*                                       ClueCreator;                                       // 0x10(0x8)
 };
 
 
@@ -30,8 +31,9 @@ public:
 struct SeaClueCreationChoice
 {
 public:
-	class                                                        SiteType;                                          // 0x0(0x8)
-	Class SeaClueCreator*                                        ClueCreator;                                       // 0x8(0x8)
+	class UClass*                                                SiteType;                                          // 0x0(0x8)
+	class SeaClueCreator*                                        ClueCreator;                                       // 0x8(0x8)
+	char                                                         pad0x10_LAIZG[0x10];                               // 0x10(0x10)
 };
 
 
@@ -39,7 +41,7 @@ public:
 struct WeightedClueDestinationDescriptor
 {
 public:
-	class                                                        DestinationType;                                   // 0x0(0x8)
+	class UClass*                                                DestinationType;                                   // 0x0(0x8)
 	TArray<Float DifficultyWeightings>                           DifficultyWeightings;                              // 0x8(0x10)
 };
 
@@ -48,8 +50,8 @@ public:
 struct ClueSiteTypeSupportedDescribedByEntry
 {
 public:
-	class                                                        SiteType;                                          // 0x0(0x8)
-	TArray<struct SupportedDescriptors>                          SupportedDescriptors;                              // 0x8(0x10)
+	class UClass*                                                SiteType;                                          // 0x0(0x8)
+	TArray<struct WeightedClueDescriptor>                        SupportedDescriptors;                              // 0x8(0x10)
 };
 
 
@@ -57,7 +59,7 @@ public:
 struct WeightedClueDescriptor
 {
 public:
-	class                                                        Descriptor;                                        // 0x0(0x8)
+	class UClass*                                                Descriptor;                                        // 0x0(0x8)
 	TArray<Float DifficultyWeightings>                           DifficultyWeightings;                              // 0x8(0x10)
 };
 
@@ -66,8 +68,9 @@ public:
 struct RestrictedClueType
 {
 public:
-	class                                                        Type;                                              // 0x0(0x8)
+	class UClass*                                                Type;                                              // 0x0(0x8)
 	int                                                          Max;                                               // 0x8(0x4)
+	char                                                         pad0x4_U8NQZ[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -75,8 +78,9 @@ public:
 struct ClueSiteLootRestriction
 {
 public:
-	class                                                        SiteType;                                          // 0x0(0x8)
+	class UClass*                                                SiteType;                                          // 0x0(0x8)
 	int                                                          LootMax;                                           // 0x8(0x4)
+	char                                                         pad0x4_7T4NO[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -84,8 +88,8 @@ public:
 struct DebrisToRangeDist
 {
 public:
-	Struct WeightedProbabilityRange                              NumberOfDebrisItemsToSpawn;                        // 0x0(0x20)
-	Class WeightedDebrisDataAsset*                               WeightedDebrisTypeAsset;                           // 0x20(0x8)
+	struct WeightedProbabilityRange                              NumberOfDebrisItemsToSpawn;                        // 0x0(0x20)
+	class WeightedDebrisDataAsset*                               WeightedDebrisTypeAsset;                           // 0x20(0x8)
 };
 
 
@@ -93,8 +97,8 @@ public:
 struct LootToRangeDist
 {
 public:
-	Struct WeightedProbabilityRange                              NumberOfLootItemsToSpawn;                          // 0x0(0x20)
-	Class WeightedTreasureChestDescAsset*                        WeightedLootDescAsset;                             // 0x20(0x8)
+	struct WeightedProbabilityRange                              NumberOfLootItemsToSpawn;                          // 0x0(0x20)
+	class WeightedTreasureChestDescAsset*                        WeightedLootDescAsset;                             // 0x20(0x8)
 };
 
 
@@ -102,6 +106,7 @@ public:
 struct QuestVariableClueSiteArray
 {
 public:
+	char                                                         pad0x30_H9PBK[0x30];                               // 0x0(0x30)
 };
 
 
@@ -109,6 +114,7 @@ public:
 struct QuestVariableClueSite
 {
 public:
+	char                                                         pad0x30_3FSDK[0x30];                               // 0x0(0x30)
 };
 
 
@@ -116,7 +122,7 @@ public:
 struct ClueSiteLootHistory
 {
 public:
-	TArray<struct History>                                       History;                                           // 0x0(0x10)
+	TArray<struct LootSpawnedAtClueSite>                         History;                                           // 0x0(0x10)
 };
 
 
@@ -124,8 +130,8 @@ public:
 struct LootSpawnedAtClueSite
 {
 public:
-	class                                                        SiteType;                                          // 0x0(0x8)
-	Struct Vector                                                SiteLocation;                                      // 0x8(0xc)
+	class UClass*                                                SiteType;                                          // 0x0(0x8)
+	struct Vector                                                SiteLocation;                                      // 0x8(0xc)
 	int                                                          NumLoot;                                           // 0x14(0x4)
 };
 
@@ -134,6 +140,7 @@ public:
 struct QuestVariableClueDescriptor
 {
 public:
+	char                                                         pad0x30_T4NFW[0x30];                               // 0x0(0x30)
 };
 
 
@@ -141,7 +148,9 @@ public:
 struct WeightedDebris
 {
 public:
+	char                                                         pad0x20_JKK0U[0x20];                               // 0x0(0x20)
 	float                                                        Weight;                                            // 0x20(0x4)
+	char                                                         pad0x4_TCM5K[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -149,8 +158,9 @@ public:
 struct EventClueObtained
 {
 public:
-	Class ClueDescriptor*                                        ObtainedClue;                                      // 0x0(0x8)
-	class                                                        ObtainedSiteType;                                  // 0x8(0x8)
+	class ClueDescriptor*                                        ObtainedClue;                                      // 0x0(0x8)
+	class UClass*                                                ObtainedSiteType;                                  // 0x8(0x8)
+	char                                                         pad0x10_OQLSN[0x10];                               // 0x10(0x10)
 };
 
 

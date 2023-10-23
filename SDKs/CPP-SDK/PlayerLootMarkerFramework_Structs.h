@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct PlayerLootMarkerWorldEdgeBatchData
 {
 public:
-	Struct Guid                                                  BatchId;                                           // 0x0(0x10)
+	struct Guid                                                  BatchId;                                           // 0x0(0x10)
 	TArray<Weakclass Actors>                                     Actors;                                            // 0x10(0x10)
 };
 
@@ -19,7 +19,7 @@ public:
 struct PlayerLootMarkerTelemetryEvent
 {
 public:
-	Struct Vector                                                Location;                                          // 0x0(0xc)
+	struct Vector                                                Location;                                          // 0x0(0xc)
 	int                                                          ItemCount;                                         // 0xc(0x4)
 	TArray<Str LootTypes>                                        LootTypes;                                         // 0x10(0x10)
 };

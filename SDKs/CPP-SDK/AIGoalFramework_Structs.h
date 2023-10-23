@@ -19,7 +19,7 @@ public:
 struct EventAIGoalHighPriorityTargetSuggestion
 {
 public:
-	Class Actor*                                                 HighPriorityTarget;                                // 0x0(0x8)
+	class Actor*                                                 HighPriorityTarget;                                // 0x0(0x8)
 };
 
 
@@ -27,10 +27,11 @@ public:
 struct EventAIGoalTargetActorChanged
 {
 public:
-	Class Actor*                                                 PreviousTargetActor;                               // 0x0(0x8)
-	Class Actor*                                                 NewTargetActor;                                    // 0x8(0x8)
+	class Actor*                                                 PreviousTargetActor;                               // 0x0(0x8)
+	class Actor*                                                 NewTargetActor;                                    // 0x8(0x8)
 	byte                                                         TargetChangedReason;                               // 0x10(0x1)
 	byte                                                         InvalidMovementMode;                               // 0x11(0x1)
+	char                                                         pad0x6_O1CHS[0x6];                                 // 0x12(0x6)
 };
 
 

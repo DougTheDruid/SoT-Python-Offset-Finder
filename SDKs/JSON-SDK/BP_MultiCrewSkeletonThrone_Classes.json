@@ -7,31 +7,31 @@
     "Attributes": [
       {
         "Name": "VFX Skull 4",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
         "Name": "VFX Skull 3",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
         "Name": "VFX Skull 2",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
         "Name": "VFX Skull 1",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
         "Name": "VFX Under Chair",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       }

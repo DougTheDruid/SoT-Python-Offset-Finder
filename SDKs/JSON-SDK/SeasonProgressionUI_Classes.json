@@ -13,103 +13,103 @@
       },
       {
         "Name": "TierInfos",
-        "Type": "TArray<struct TierInfos>",
+        "Type": "TArray<struct SeasonIconPopupAsset>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "TrialInfos",
-        "Type": "TArray<struct TrialInfos>",
+        "Type": "TArray<struct SeasonGoalPopupAsset>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "DeedInfos",
-        "Type": "TArray<struct DeedInfos>",
+        "Type": "TArray<struct SeasonGoalPopupAsset>",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "RenownActionInfos",
-        "Type": "TArray<struct RenownActionInfos>",
+        "Type": "TArray<struct SeasonGoalPopupAsset>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "SeasonInfo",
-        "Type": "Struct SeasonIconPopupAsset",
+        "Type": "struct SeasonIconPopupAsset",
         "Size": "0x68",
         "Offset": "0x70"
       },
       {
         "Name": "LevelIncreaseInfo",
-        "Type": "Struct SeasonIconPopupAsset",
+        "Type": "struct SeasonIconPopupAsset",
         "Size": "0x68",
         "Offset": "0xd8"
       },
       {
         "Name": "RewardInfo",
-        "Type": "Struct SeasonIconPopupAsset",
+        "Type": "struct SeasonIconPopupAsset",
         "Size": "0x68",
         "Offset": "0x140"
       },
       {
         "Name": "MultipleRewardsInfo",
-        "Type": "Struct SeasonIconPopupAsset",
+        "Type": "struct SeasonIconPopupAsset",
         "Size": "0x68",
         "Offset": "0x1a8"
       },
       {
         "Name": "BackgroundImage",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x210"
       },
       {
         "Name": "DefaultToastSfxEventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x220"
       },
       {
         "Name": "DefaultToastEventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x230"
       },
       {
         "Name": "DefaultToastSwitchName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x240"
       },
       {
         "Name": "DefaultToastSwitchValue",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x250"
       },
       {
         "Name": "DefaultChatSfxEventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x260"
       },
       {
         "Name": "DefaultChatEventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x270"
       },
       {
         "Name": "DefaultChatSwitchName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x280"
       },
       {
         "Name": "DefaultChatSwitchValue",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x290"
       }
@@ -150,25 +150,25 @@
     "ClassSize": "0xf8",
     "Attributes": [
       {
-        "Name": "pad0x20_00FVP[0x20]",
+        "Name": "pad0x20_C5MZ3[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xc8"
       },
       {
         "Name": "DetailsNavigationDesc",
-        "Type": "TArray<struct DetailsNavigationDesc>",
+        "Type": "TArray<struct EnableMoreButtonEvent>",
         "Size": "0x10",
         "Offset": "0xe8"
       },
       {
         "Name": "NextReceivedEventsTelemetryData",
-        "Type": "Struct SeasonProgressionUITelemetryFragment",
+        "Type": "struct SeasonProgressionUITelemetryFragment",
         "Size": "0x18",
         "Offset": "0xf8"
       },
       {
-        "Name": "pad0xb0_O9WCL[0xb0]",
+        "Name": "pad0xb0_P2EME[0xb0]",
         "Type": "char",
         "Size": "0xb0",
         "Offset": "0x110"
@@ -189,19 +189,19 @@
     "ClassSize": "0x1e0",
     "Attributes": [
       {
-        "Name": "pad0x30_P1J77[0x30]",
+        "Name": "pad0x30_XXLW1[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x3c8"
       },
       {
         "Name": "SeasonPopupListAsset",
-        "Type": "Class SeasonPopupListAsset*",
+        "Type": "class SeasonPopupListAsset*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x1a8_QKZ23[0x1a8]",
+        "Name": "pad0x1a8_L8IOM[0x1a8]",
         "Type": "char",
         "Size": "0x1a8",
         "Offset": "0x400"
@@ -216,7 +216,7 @@
     "Attributes": [
       {
         "Name": "SeasonPopupListAsset",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x28"
       }

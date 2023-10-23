@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "HitActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       }

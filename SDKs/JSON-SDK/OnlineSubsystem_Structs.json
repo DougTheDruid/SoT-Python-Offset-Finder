@@ -4,61 +4,61 @@
     "Attributes": [
       {
         "Name": "Identifier",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "TransactionIdentifier",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "DisplayName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "DisplayDescription",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "DisplayPrice",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "CurrencyCode",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "CurrencySymbol",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "DecimalSeparator",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "GroupingSeparator",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x80"
       },
       {
         "Name": "ReceiptData",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x90"
       }
@@ -69,13 +69,13 @@
     "Attributes": [
       {
         "Name": "Identifier",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "ReceiptData",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -86,7 +86,7 @@
     "Attributes": [
       {
         "Name": "AchievementId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -97,20 +97,20 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_VJSMD[0x3]",
+        "Name": "pad0x3_ET578[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
       },
       {
         "Name": "Reason",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "Platform",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -127,7 +127,7 @@
       },
       {
         "Name": "InterfaceClassName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -144,7 +144,7 @@
       },
       {
         "Name": "InterfaceObject",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -155,31 +155,31 @@
     "Attributes": [
       {
         "Name": "ProductId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Title",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Description",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "FormattedPrice",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "FormattedBasePrice",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -190,26 +190,26 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x7_TGOHL[0x7]",
+        "Name": "pad0x7_VRUSJ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x51"
       },
       {
         "Name": "SaleEndDate",
-        "Type": "Struct DateTime",
+        "Type": "struct DateTime",
         "Size": "0x8",
         "Offset": "0x58"
       },
       {
         "Name": "ImageUri",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "CurrencyCode",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x70"
       },
@@ -226,7 +226,7 @@
     "Attributes": [
       {
         "Name": "ProductIdentifier",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -235,6 +235,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_XM28D[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       }
     ]
   },

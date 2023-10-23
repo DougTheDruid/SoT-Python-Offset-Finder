@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "PortalEffects",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x670"
       }

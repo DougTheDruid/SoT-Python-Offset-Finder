@@ -1,18 +1,32 @@
 {
   "FixedSplinePathingActorMovementEndedEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_9OTT8[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "FixedSplinePathingActorMovementStartedEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_NHWDY[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "SplinePathingActorAtDestination": {
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "Actor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       }

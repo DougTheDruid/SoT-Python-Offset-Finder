@@ -18,7 +18,8 @@ public:
 struct SocketPath
 {
 public:
-	TArray<struct Nodes>                                         Nodes;                                             // 0x0(0x10)
+	TArray<struct SocketPathNode>                                Nodes;                                             // 0x0(0x10)
+	char                                                         pad0x8_318T1[0x8];                                 // 0x10(0x8)
 };
 
 
@@ -26,7 +27,7 @@ public:
 struct SocketId
 {
 public:
-	Struct SocketPath                                            path;                                              // 0x0(0x18)
+	struct SocketPath                                            path;                                              // 0x0(0x18)
 	struct FName                                                 Name;                                              // 0x18(0x8)
 };
 
@@ -35,6 +36,7 @@ public:
 struct SocketLookupCache
 {
 public:
+	char                                                         pad0x50_257GV[0x50];                               // 0x0(0x50)
 };
 
 

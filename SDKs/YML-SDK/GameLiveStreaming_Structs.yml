@@ -5,13 +5,13 @@ BlueprintLiveStreamInfo:
   - Name: GameName
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: StreamName
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: URL
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x30'

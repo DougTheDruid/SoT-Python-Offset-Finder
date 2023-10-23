@@ -6,20 +6,20 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_ZCJ9T[0x8]",
+        "Name": "pad0x8_W5LHS[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2e0"
       },
       {
         "Name": "Emitter",
-        "Type": "Struct WwiseEmitter",
+        "Type": "struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x2e8"
       },
       {
         "Name": "WwiseObjectPoolWrapper",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x308"
       }
@@ -40,7 +40,7 @@
     "Attributes": [
       {
         "Name": "WwiseEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x38"
       },
@@ -51,14 +51,14 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x3_0UZYB[0x3]",
+        "Name": "pad0x3_7SX93[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x41"
       },
       {
         "Name": "OwnedByWorldEmitterOffset",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x44"
       },
@@ -69,19 +69,19 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x7_ZA8C4[0x7]",
+        "Name": "pad0x7_21BST[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x51"
       },
       {
         "Name": "OwnedByWorldWisePoolToUse",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x20_W7TUD[0x20]",
+        "Name": "pad0x20_16C3W[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x60"
@@ -102,7 +102,7 @@
       },
       {
         "Name": "MeshOverrides",
-        "Type": "TArray<struct MeshOverrides>",
+        "Type": "TArray<struct AnimNotify_SoundSwitch>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -116,18 +116,18 @@
     "Attributes": [
       {
         "Name": "WwiseEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "WwiseEventEnd",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x50_NLOQK[0x50]",
+        "Name": "pad0x50_PMX9W[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x40"
@@ -179,19 +179,19 @@
         "Offset": "0x35"
       },
       {
-        "Name": "pad0x2_DIQUR[0x2]",
+        "Name": "pad0x2_CHBD7[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x36"
       },
       {
         "Name": "PoolDensityParams",
-        "Type": "Struct WwiseNativeEmitterPoolDensityParams",
+        "Type": "struct WwiseNativeEmitterPoolDensityParams",
         "Size": "0x28",
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x18_XIW68[0x18]",
+        "Name": "pad0x18_B9248[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x60"
@@ -219,13 +219,13 @@
       },
       {
         "Name": "AmbienceToStart",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "AmbienceToStop",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x38"
       }
@@ -236,7 +236,14 @@
     "FullSize": "0x50",
     "InheritedSize": "0x40",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_4W3Z5[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x40"
+      }
+    ]
   },
   "StaticMeshAudioDataAsset": {
     "Super": "DataAsset",
@@ -246,7 +253,7 @@
     "Attributes": [
       {
         "Name": "MeshToAudioAssociations",
-        "Type": "TArray<struct MeshToAudioAssociations>",
+        "Type": "TArray<struct StaticMeshAudioAssociation>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -260,7 +267,7 @@
     "Attributes": [
       {
         "Name": "InstanceAssociations",
-        "Type": "TArray<struct InstanceAssociations>",
+        "Type": "TArray<struct StaticMeshComponentAudioAssociation>",
         "Size": "0x10",
         "Offset": "0x2e0"
       }
@@ -274,7 +281,7 @@
     "Attributes": [
       {
         "Name": "TritonMapFilename",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -285,7 +292,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x2c_6GW9C[0x2c]",
+        "Name": "pad0x2c_DOOLX[0x2c]",
         "Type": "char",
         "Size": "0x2c",
         "Offset": "0x3c"
@@ -300,7 +307,7 @@
     "Attributes": [
       {
         "Name": "TritonMapAsset",
-        "Type": "Class TritonAcousticMap*",
+        "Type": "class TritonAcousticMap*",
         "Size": "0x8",
         "Offset": "0x2e0"
       },
@@ -311,7 +318,7 @@
         "Offset": "0x2e8"
       },
       {
-        "Name": "pad0x4_Q238U[0x4]",
+        "Name": "pad0x4_J7U0N[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2ec"
@@ -325,7 +332,7 @@
     "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "pad0x10_5S22Z[0x10]",
+        "Name": "pad0x10_CQGVD[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -337,19 +344,19 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0xa8_T6HMQ[0xa8]",
+        "Name": "pad0xa8_F2QDN[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0x48"
       },
       {
         "Name": "CachedListenerInfo",
-        "Type": "Class TritonComponent*",
+        "Type": "class TritonComponent*",
         "Size": "0x8",
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x58_RUCTJ[0x58]",
+        "Name": "pad0x58_NQQCK[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0xf8"

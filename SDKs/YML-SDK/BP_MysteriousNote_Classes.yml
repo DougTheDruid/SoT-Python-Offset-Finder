@@ -5,7 +5,7 @@ BP_MysteriousNote_C:
   - Name: ZoomInOnWieldableItem
     Offset: '0x980'
     Size: '0x8'
-    Type: Class ZoomInOnWieldableItemComponent*
+    Type: class ZoomInOnWieldableItemComponent*
   ClassSize: '0x8'
   FullSize: '0x988'
   InheritedSize: '0x980'

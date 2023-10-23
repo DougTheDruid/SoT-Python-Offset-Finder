@@ -5,15 +5,15 @@ EmoteData:
   - Name: EmoteId
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct EmoteId
+    Type: struct EmoteId
   - Name: EmoteDisplayName
     Offset: '0x8'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: AudioDescription
     Offset: '0x40'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: DelayBeforeAllowingExit
     Offset: '0x78'
     Size: '0x4'
@@ -26,14 +26,14 @@ EmoteData:
     Offset: '0x80'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_RIP1D[0x7]
+  - Name: pad0x7_4ZVQ2[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
   - Name: EmotePropDataAsset
     Offset: '0x88'
     Size: '0x8'
-    Type: Class EmotePropData*
+    Type: class EmotePropData*
   - Name: CanPlayInSuccession
     Offset: '0x90'
     Size: '0x1'
@@ -42,14 +42,14 @@ EmoteData:
     Offset: '0x91'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_WXW4H[0x6]
+  - Name: pad0x6_28BJA[0x6]
     Offset: '0x92'
     Size: '0x6'
     Type: char
   - Name: CustomSpringArmParamsAsset
     Offset: '0x98'
     Size: '0x8'
-    Type: Class AthenaSpringArmComponentParams*
+    Type: class AthenaSpringArmComponentParams*
   ClassSize: '0xa0'
 EmoteDiceOutcomeTelemetryEvent:
   Attributes:
@@ -64,7 +64,7 @@ EmoteDiceOutcomeTelemetryEvent:
   - Name: OrientationUsed
     Offset: '0x8'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   ClassSize: '0x14'
 EmoteId:
   Attributes:
@@ -78,11 +78,11 @@ EmotePropRandomObjectInfo:
   - Name: Mesh
     Offset: '0x0'
     Size: '0x8'
-    Type: Class StaticMesh*
+    Type: class StaticMesh*
   - Name: PossibleTransforms
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct PossibleTransforms>
+    Type: TArray<struct Transform>
   - Name: RandomParameterName
     Offset: '0x18'
     Size: '0x8'
@@ -90,26 +90,26 @@ EmotePropRandomObjectInfo:
   - Name: RandomParameterRange
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct Int32Range
+    Type: struct Int32Range
   ClassSize: '0x30'
 EmotePropRandomObjectResult:
   Attributes:
   - Name: Mesh
     Offset: '0x0'
     Size: '0x8'
-    Type: Class StaticMesh*
+    Type: class StaticMesh*
   - Name: HasTransformValue
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_R66UW[0x7]
+  - Name: pad0x7_RK3S1[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
   - Name: Transform
     Offset: '0x10'
     Size: '0x30'
-    Type: Struct Transform
+    Type: struct Transform
   - Name: TextureParameterName
     Offset: '0x40'
     Size: '0x8'
@@ -118,28 +118,40 @@ EmotePropRandomObjectResult:
     Offset: '0x48'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_IKFH4[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x50'
 EmoteRandomObjectOutcomeTelemetryEvent:
   Attributes:
   - Name: MeshName
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: Transform
     Offset: '0x10'
     Size: '0x30'
-    Type: Struct Transform
+    Type: struct Transform
   - Name: TextureParameterName
     Offset: '0x40'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: TextureParameterValue
     Offset: '0x50'
     Size: '0x4'
     Type: int
+  - Name: pad0xc_OBD83[0xc]
+    Offset: '0x54'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x60'
 EventDisableLookAtEmoteCamera:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_7G61Y[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EventEmoteCompleted:
   Attributes:
@@ -147,6 +159,10 @@ EventEmoteCompleted:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x4_SWVHI[0x4]
+    Offset: '0x8'
+    Size: '0x4'
+    Type: char
   ClassSize: '0xc'
 EventEmoteEndRequested:
   Attributes:
@@ -158,13 +174,17 @@ EventEmoteEndRequested:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_DWJ74[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
   ClassSize: '0xc'
 EventEmoteRequested:
   Attributes:
   - Name: EmoteData
     Offset: '0x0'
     Size: '0xa0'
-    Type: Struct EmoteData
+    Type: struct EmoteData
   - Name: ForcedEmoteIdentifier
     Offset: '0xa0'
     Size: '0x8'
@@ -173,24 +193,36 @@ EventEmoteRequested:
     Offset: '0xa8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_Z8QRW[0x7]
+    Offset: '0xa9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0xb0'
 EventEmoteStarted:
   Attributes:
   - Name: EmoteData
     Offset: '0x0'
     Size: '0xa0'
-    Type: Struct EmoteData
+    Type: struct EmoteData
   ClassSize: '0xa0'
 EventEmoteSwapped:
   Attributes:
   - Name: EmoteData
     Offset: '0x0'
     Size: '0xa0'
-    Type: Struct EmoteData
+    Type: struct EmoteData
   ClassSize: '0xa0'
 EventEnableLookAtEmoteCamera:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_ATERI[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
 EventEndEmoteAnimation:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_SDHHA[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'

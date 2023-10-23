@@ -5,7 +5,7 @@ BP_Compass_C:
   - Name: InventoryItem
     Offset: '0x8e0'
     Size: '0x8'
-    Type: Class InventoryItemComponent*
+    Type: class InventoryItemComponent*
   ClassSize: '0x8'
   FullSize: '0x8e8'
   InheritedSize: '0x8e0'

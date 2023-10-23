@@ -19,10 +19,11 @@ public:
 struct MultiEmitterData
 {
 public:
-	Class WwiseObjectPoolWrapper*                                PoolWrapper;                                       // 0x0(0x8)
-	Class WwiseEvent*                                            PlayEvent;                                         // 0x8(0x8)
+	class WwiseObjectPoolWrapper*                                PoolWrapper;                                       // 0x0(0x8)
+	class WwiseEvent*                                            PlayEvent;                                         // 0x8(0x8)
 	struct FName                                                 Name;                                              // 0x10(0x8)
-	Struct Vector                                                Offset;                                            // 0x18(0xc)
+	struct Vector                                                Offset;                                            // 0x18(0xc)
+	char                                                         pad0x4_6XLYM[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -39,11 +40,11 @@ public:
 struct WwiseListenerInfo
 {
 public:
-	Struct Vector                                                Position;                                          // 0x0(0xc)
-	Struct Vector                                                Up;                                                // 0xc(0xc)
-	Struct Vector                                                Right;                                             // 0x18(0xc)
-	Struct Vector                                                Front;                                             // 0x24(0xc)
-	Struct Vector                                                Velocity;                                          // 0x30(0xc)
+	struct Vector                                                Position;                                          // 0x0(0xc)
+	struct Vector                                                Up;                                                // 0xc(0xc)
+	struct Vector                                                Right;                                             // 0x18(0xc)
+	struct Vector                                                Front;                                             // 0x24(0xc)
+	struct Vector                                                Velocity;                                          // 0x30(0xc)
 };
 
 
@@ -52,9 +53,9 @@ struct WwiseNativeEmitterPoolDensityParams
 {
 public:
 	bool                                                         PlayPoolDensityAudio;                              // 0x0(0x1)
-	char                                                         pad0x7_2TNV0[0x7];                                 // 0x1(0x7)
-	Class WwiseEvent*                                            PoolDensityAudioPlayEvent;                         // 0x8(0x8)
-	Class WwiseEvent*                                            PoolDensityAudioStopEvent;                         // 0x10(0x8)
+	char                                                         pad0x7_BGX15[0x7];                                 // 0x1(0x7)
+	class WwiseEvent*                                            PoolDensityAudioPlayEvent;                         // 0x8(0x8)
+	class WwiseEvent*                                            PoolDensityAudioStopEvent;                         // 0x10(0x8)
 	struct FName                                                 DensityRtpcName;                                   // 0x18(0x8)
 	int                                                          FullDensityAmount;                                 // 0x20(0x4)
 	float                                                        DensityDistance;                                   // 0x24(0x4)
@@ -65,7 +66,7 @@ public:
 struct WwiseExternalSource
 {
 public:
-	Struct FString                                               path;                                              // 0x0(0x10)
+	struct FString                                               path;                                              // 0x0(0x10)
 };
 
 
@@ -73,7 +74,7 @@ public:
 struct WwiseSubtitle
 {
 public:
-	Struct FString                                               Subtitle;                                          // 0x0(0x10)
+	struct FString                                               Subtitle;                                          // 0x0(0x10)
 };
 
 
@@ -81,7 +82,8 @@ public:
 struct MovieSceneAkAudioEventTemplate
 {
 public:
-	Class MovieSceneAkAudioEventSection*                         Section;                                           // 0x18(0x8)
+	char                                                         pad0x18_W4KZU[0x18];                               // 0x0(0x18)
+	class MovieSceneAkAudioEventSection*                         Section;                                           // 0x18(0x8)
 };
 
 
@@ -89,7 +91,8 @@ public:
 struct MovieSceneAkAudioRTPCTemplate
 {
 public:
-	Class MovieSceneAkAudioRTPCSection*                          Section;                                           // 0x18(0x8)
+	char                                                         pad0x18_KJGIG[0x18];                               // 0x0(0x18)
+	class MovieSceneAkAudioRTPCSection*                          Section;                                           // 0x18(0x8)
 };
 
 
@@ -97,8 +100,8 @@ public:
 struct MovieSceneAkAudioRTPCSectionData
 {
 public:
-	Struct FString                                               RTPCName;                                          // 0x0(0x10)
-	Struct RichCurve                                             RTPCCurve;                                         // 0x10(0x78)
+	struct FString                                               RTPCName;                                          // 0x0(0x10)
+	struct RichCurve                                             RTPCCurve;                                         // 0x10(0x78)
 };
 
 

@@ -23,14 +23,21 @@
   },
   "EventListenForCinematicEndEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_MDOIR[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventTriggerMysteriousNotesPopup": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "PlayerController",
-        "Type": "Class PlayerController*",
+        "Type": "class PlayerController*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -39,6 +46,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_C4DP7[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       }
     ]
   },
@@ -47,13 +60,13 @@
     "Attributes": [
       {
         "Name": "PlayerController",
-        "Type": "Class PlayerController*",
+        "Type": "class PlayerController*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "NoteId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -64,7 +77,7 @@
     "Attributes": [
       {
         "Name": "PlayerController",
-        "Type": "Class PlayerController*",
+        "Type": "class PlayerController*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -81,7 +94,7 @@
     "Attributes": [
       {
         "Name": "PlayerController",
-        "Type": "Class PlayerController*",
+        "Type": "class PlayerController*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -95,20 +108,27 @@
   },
   "EventNotesUpdated": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_CH7LM[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventMarkNoteRead": {
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "PlayerController",
-        "Type": "Class PlayerController*",
+        "Type": "class PlayerController*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "NoteId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -119,18 +139,7 @@
     "Attributes": [
       {
         "Name": "PlayerController",
-        "Type": "Class PlayerController*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventPlayerControllerPossessed": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "PlayerController",
-        "Type": "Class PlayerController*",
+        "Type": "class PlayerController*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -138,26 +147,54 @@
   },
   "EventMysteriousNoteContentUpdated": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_OHQKJ[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventMysteriousNoteSettingsLoaded": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_448VA[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventMysteriousNoteCustomContentUpdate": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_K7514[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventMysteriousNoteRemoved": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_X5LS1[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "MysteriousNoteInfo": {
     "ClassSize": "0x14",
     "Attributes": [
       {
         "Name": "NoteId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -172,6 +209,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x11"
+      },
+      {
+        "Name": "pad0x2_OFS7W[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x12"
       }
     ]
   },
@@ -180,7 +223,7 @@
     "Attributes": [
       {
         "Name": "NoteType",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -191,37 +234,37 @@
     "Attributes": [
       {
         "Name": "Theme",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Font",
-        "Type": "Class Font*",
+        "Type": "class Font*",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
         "Name": "Image",
-        "Type": "Struct TreasureMapWidgetStreamedTexture",
+        "Type": "struct TreasureMapWidgetStreamedTexture",
         "Size": "0x38",
         "Offset": "0x18"
       },
       {
         "Name": "RadialIcon",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "NoteTitleWidgetText",
-        "Type": "Struct TreasureMapWidgetText",
+        "Type": "struct TreasureMapWidgetText",
         "Size": "0x3c",
         "Offset": "0x60"
       },
       {
         "Name": "NoteBodyWidgetText",
-        "Type": "Struct TreasureMapWidgetText",
+        "Type": "struct TreasureMapWidgetText",
         "Size": "0x3c",
         "Offset": "0x9c"
       },
@@ -244,19 +287,19 @@
     "Attributes": [
       {
         "Name": "NotesRemoteServiceNoteModels",
-        "Type": "TArray<struct NotesRemoteServiceNoteModels>",
+        "Type": "TArray<struct NotesRemoteServiceNoteModel>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "PendingCompletionEntries",
-        "Type": "TArray<struct PendingCompletionEntries>",
+        "Type": "TArray<struct NoteCompletionEntry>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "PendingDetailRequestIDs",
-        "Type": "TArray<struct PendingDetailRequestIDs>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -267,7 +310,7 @@
     "Attributes": [
       {
         "Name": "NoteId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -284,13 +327,13 @@
     "Attributes": [
       {
         "Name": "PlayerController",
-        "Type": "Class PlayerController*",
+        "Type": "class PlayerController*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "PirateIdentity",
-        "Type": "Struct PirateIdentity",
+        "Type": "struct PirateIdentity",
         "Size": "0x78",
         "Offset": "0x8"
       }
@@ -301,27 +344,33 @@
     "Attributes": [
       {
         "Name": "OriginalNoteID",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "LocalisedTitle",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "LocalisedBody",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "NoteType",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x8_9UO17[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x40"
       }
     ]
   },
@@ -335,14 +384,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_3IZQQ[0x7]",
+        "Name": "pad0x7_EBDD4[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "PendingNotes",
-        "Type": "TArray<struct PendingNotes>",
+        "Type": "TArray<struct MysteriousNoteInfo>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -364,13 +413,13 @@
     "Attributes": [
       {
         "Name": "NoteId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "NoteState",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       }

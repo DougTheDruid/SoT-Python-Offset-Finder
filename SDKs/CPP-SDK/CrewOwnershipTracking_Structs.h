@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 struct CrewTrackedItemOwnershipSet
 {
 public:
-	Class Actor*                                                 Item;                                              // 0x0(0x8)
-	Struct Guid                                                  CrewId;                                            // 0x8(0x10)
+	class Actor*                                                 Item;                                              // 0x0(0x8)
+	struct Guid                                                  CrewId;                                            // 0x8(0x10)
 };
 
 
@@ -19,10 +19,11 @@ public:
 struct CrewTrackedItemOwnershipChanged
 {
 public:
-	Class Actor*                                                 Item;                                              // 0x0(0x8)
-	Struct Guid                                                  CrewId;                                            // 0x8(0x10)
-	Struct Guid                                                  PreviousCrewId;                                    // 0x18(0x10)
+	class Actor*                                                 Item;                                              // 0x0(0x8)
+	struct Guid                                                  CrewId;                                            // 0x8(0x10)
+	struct Guid                                                  PreviousCrewId;                                    // 0x18(0x10)
 	bool                                                         IsFirstTimeOwnedByThisCrew;                        // 0x28(0x1)
+	char                                                         pad0x7_58LRJ[0x7];                                 // 0x29(0x7)
 };
 
 
@@ -30,7 +31,7 @@ public:
 struct OwnerListEntry
 {
 public:
-	TArray<struct OwnerList>                                     OwnerList;                                         // 0x0(0x10)
+	TArray<struct Guid>                                          OwnerList;                                         // 0x0(0x10)
 };
 
 
@@ -38,7 +39,8 @@ public:
 struct TrackItemOwnershipEvent
 {
 public:
-	Class Actor*                                                 TrackedItem;                                       // 0x0(0x8)
+	class Actor*                                                 TrackedItem;                                       // 0x0(0x8)
+	char                                                         pad0x10_BVPG4[0x10];                               // 0x8(0x10)
 };
 
 

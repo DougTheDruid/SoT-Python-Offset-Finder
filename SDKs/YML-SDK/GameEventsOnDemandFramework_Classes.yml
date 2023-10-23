@@ -5,11 +5,11 @@ GameEventAvailabilityParamsDataAsset:
   - Name: MatchmakingCooldownRanges
     Offset: '0x28'
     Size: '0x30'
-    Type: Struct WeightedProbabilityRangeOfRanges
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: CrewsJoinedOnDemandLimitRange
     Offset: '0x58'
     Size: '0x20'
-    Type: Struct WeightedProbabilityRange
+    Type: struct WeightedProbabilityRange
   - Name: InitialCooldown
     Offset: '0x78'
     Size: '0x4'
@@ -22,16 +22,28 @@ GameEventAvailabilityParamsDataAsset:
     Offset: '0x80'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_LLQK4[0x3]
+  - Name: ShouldIgnoreIfCrewsEngagingEmergently
     Offset: '0x81'
-    Size: '0x3'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x2_E9TPX[0x2]
+    Offset: '0x82'
+    Size: '0x2'
     Type: char
-  - Name: SendCrewToLoserTunnelFeature
+  - Name: EmergentCrewLeftRegionCooldown
     Offset: '0x84'
+    Size: '0x4'
+    Type: float
+  - Name: SendCrewToLoserTunnelFeature
+    Offset: '0x88'
     Size: '0xc'
-    Type: Struct FeatureFlag
-  ClassSize: '0x68'
-  FullSize: '0x90'
+    Type: struct FeatureFlag
+  - Name: pad0x4_NZZ8P[0x4]
+    Offset: '0x94'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x70'
+  FullSize: '0x98'
   InheritedSize: '0x28'
   Super: DataAsset
 GameEventOnDemandAnnouncementComponent:
@@ -39,14 +51,22 @@ GameEventOnDemandAnnouncementComponent:
   - Name: FeatureFlag
     Offset: '0xc8'
     Size: '0xc'
-    Type: Struct FeatureFlag
+    Type: struct FeatureFlag
   - Name: ShouldFireBannerForAnyCrewEnteringIslandVicinity
     Offset: '0xd4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_1LK98[0x3]
+  - Name: ShouldFireGameEventCompletedBannerForEmergentCrews
     Offset: '0xd5'
-    Size: '0x3'
+    Size: '0x1'
+    Type: bool
+  - Name: ResetCachedCrewsTrigger
+    Offset: '0xd6'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x1_KEGG9[0x1]
+    Offset: '0xd7'
+    Size: '0x1'
     Type: char
   - Name: IslandName
     Offset: '0xd8'
@@ -59,55 +79,77 @@ GameEventOnDemandAnnouncementComponent:
   - Name: OnDemandParticipatingCrewIds
     Offset: '0xf0'
     Size: '0x10'
-    Type: TArray<struct OnDemandParticipatingCrewIds>
+    Type: TArray<struct Guid>
   - Name: TrackedShipCrewIds
     Offset: '0x100'
     Size: '0x10'
-    Type: TArray<struct TrackedShipCrewIds>
+    Type: TArray<struct Guid>
   - Name: GameEventType
     Offset: '0x110'
     Size: '0x8'
-    Type: class
-  - Name: pad0x5c_MBEAT[0x5c]
+    Type: class UClass*
+  - Name: pad0x74_NZT24[0x74]
     Offset: '0x118'
-    Size: '0x5c'
+    Size: '0x74'
     Type: char
   - Name: TemporaryBannerTag
-    Offset: '0x174'
+    Offset: '0x18c'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_32UQN[0x4]
-    Offset: '0x17c'
+  - Name: pad0x4_ACCZU[0x4]
+    Offset: '0x194'
     Size: '0x4'
     Type: char
-  ClassSize: '0xb8'
-  FullSize: '0x180'
+  ClassSize: '0xd0'
+  FullSize: '0x198'
   InheritedSize: '0xc8'
   Super: ActorComponent
+GameEventOnDemandAvailabilityHandler:
+  Attributes:
+  - Name: AvailabilityParamsAsset
+    Offset: '0x28'
+    Size: '0x8'
+    Type: class GameEventAvailabilityParamsDataAsset*
+  - Name: AvailabilityStateTracker
+    Offset: '0x30'
+    Size: '0x8'
+    Type: class GameEventOnDemandAvailabilityStateTracker*
+  - Name: GameEventType
+    Offset: '0x38'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: pad0x60_S6235[0x60]
+    Offset: '0x40'
+    Size: '0x60'
+    Type: char
+  ClassSize: '0x78'
+  FullSize: '0xa0'
+  InheritedSize: '0x28'
+  Super: Object
 GameEventOnDemandAvailabilityStateTracker:
   Attributes:
-  - Name: pad0x88_VSWRQ[0x88]
+  - Name: pad0x88_EF5FL[0x88]
     Offset: '0x28'
     Size: '0x88'
     Type: char
   - Name: ShipTypeLimit
     Offset: '0xb0'
     Size: '0x8'
-    Type: class
-  - Name: ParticipatingCrewIds
+    Type: class UClass*
+  - Name: OnDemandParticipatingCrewIds
     Offset: '0xb8'
     Size: '0x10'
-    Type: TArray<struct ParticipatingCrewIds>
-  - Name: PreparingToJoinCrewIds
+    Type: TArray<struct Guid>
+  - Name: EmergentlyParticipatingCrewIds
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<struct PreparingToJoinCrewIds>
-  - Name: pad0x78_FQQ8H[0x78]
+    Type: TArray<struct Guid>
+  - Name: pad0x58_RCX02[0x58]
     Offset: '0xd8'
-    Size: '0x78'
+    Size: '0x58'
     Type: char
-  ClassSize: '0x128'
-  FullSize: '0x150'
+  ClassSize: '0x108'
+  FullSize: '0x130'
   InheritedSize: '0x28'
   Super: Object
 GameEventOnDemandVoyageProposalDesc:
@@ -117,6 +159,12 @@ GameEventOnDemandVoyageProposalDesc:
   InheritedSize: '0x128'
   Super: VoyageProposalDesc
 GameEventsOnDemandAvailabilityServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+GameEventsOnDemandInstanceInterface:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
@@ -134,3 +182,27 @@ GameEventsOnDemandLoserTunnelServiceInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+WaitForGameEventOnDemandToCompleteStep:
+  Attributes:
+  - Name: pad0x90_E1CEX[0x90]
+    Offset: '0x98'
+    Size: '0x90'
+    Type: char
+  ClassSize: '0x90'
+  FullSize: '0x128'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+WaitForGameEventOnDemandToCompleteStepDesc:
+  Attributes:
+  - Name: DeactivationMeansCompletion
+    Offset: '0x80'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x7_IN85S[0x7]
+    Offset: '0x81'
+    Size: '0x7'
+    Type: char
+  ClassSize: '0x8'
+  FullSize: '0x88'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc

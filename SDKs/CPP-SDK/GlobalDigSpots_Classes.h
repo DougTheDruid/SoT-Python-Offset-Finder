@@ -7,6 +7,29 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GlobalDigSpotDebugCheatInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class GlobalDigSpotDebugCheat: public Actor
+{
+public:
+	char                                                         pad0x8_9DZHW[0x8];                                 // 0x3c8(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class GlobalDigSpotDefinitionList: public DataAsset
+{
+public:
+	TArray<struct GlobalDigSpotDefinition>                       DigSpotDefinitions;                                // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class GlobalDigSpotServiceInterface: public Interface
 {
 public:
@@ -17,6 +40,25 @@ public:
 class GlobalDigSpotService: public Actor
 {
 public:
+	char                                                         pad0x8_53L23[0x8];                                 // 0x3c8(0x8)
+	class PopUpMessageDesc*                                      Notification;                                      // 0x3d0(0x8)
+	class GlobalDigSpotDefinitionList*                           DigSpotDefinitions;                                // 0x3d8(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class GlobalDigSpotSettings: public DeveloperSettings
+{
+public:
+	class UClass*                                                GlobalDigSpotServiceClass;                         // 0x38(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x430] - InheritedSize[0x418]
+class GlobalDigSpotVoyageTriggerActor: public GlobalVoyageTriggerActor
+{
+public:
+	char                                                         pad0x18_4JDBI[0x18];                               // 0x418(0x18)
 };
 
 

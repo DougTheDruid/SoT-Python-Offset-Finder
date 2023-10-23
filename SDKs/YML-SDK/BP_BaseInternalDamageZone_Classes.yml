@@ -2,26 +2,26 @@
 # https://github.com/DougTheDruid
 BP_BaseInternalDamageZone_C:
   Attributes:
-  - Name: pad0x7_T5JED[0x7]
+  - Name: pad0x7_80YEK[0x7]
     Offset: '0x861'
     Size: '0x7'
     Type: char
   - Name: UberGraphFrame
     Offset: '0x868'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: RepairWood
     Offset: '0x870'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Start Repair Cue
     Offset: '0x878'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: RepairEmitter
     Offset: '0x880'
     Size: '0x20'
-    Type: Struct WwiseEmitter
+    Type: struct WwiseEmitter
   ClassSize: '0x3f'
   FullSize: '0x8a0'
   InheritedSize: '0x861'

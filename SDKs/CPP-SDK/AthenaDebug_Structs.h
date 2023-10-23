@@ -12,10 +12,10 @@ struct DrawDebugItemString
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
 	bool                                                         ReplaceInGroup;                                    // 0x8(0x1)
-	char                                                         pad0x7_NKT69[0x7];                                 // 0x9(0x7)
-	Struct FString                                               String;                                            // 0x10(0x10)
-	Struct Color                                                 Colour;                                            // 0x20(0x4)
-	Struct Vector                                                StringPos;                                         // 0x24(0xc)
+	char                                                         pad0x7_TGFX2[0x7];                                 // 0x9(0x7)
+	struct FString                                               String;                                            // 0x10(0x10)
+	struct Color                                                 Colour;                                            // 0x20(0x4)
+	struct Vector                                                StringPos;                                         // 0x24(0xc)
 };
 
 
@@ -25,9 +25,10 @@ struct DrawDebugItemMessage
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
 	bool                                                         ReplaceInGroup;                                    // 0x8(0x1)
-	char                                                         pad0x7_G3HUI[0x7];                                 // 0x9(0x7)
-	Struct FString                                               Message;                                           // 0x10(0x10)
-	Struct Color                                                 Colour;                                            // 0x20(0x4)
+	char                                                         pad0x7_9VLLZ[0x7];                                 // 0x9(0x7)
+	struct FString                                               Message;                                           // 0x10(0x10)
+	struct Color                                                 Colour;                                            // 0x20(0x4)
+	char                                                         pad0x4_GO2ZB[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -37,14 +38,14 @@ struct DrawDebugItemSector
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
 	bool                                                         ReplaceInGroup;                                    // 0x8(0x1)
-	char                                                         pad0x3_7XJAU[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_ASXMD[0x3];                                 // 0x9(0x3)
 	float                                                        RotationAngle;                                     // 0xc(0x4)
-	Struct Vector                                                Centre;                                            // 0x10(0xc)
+	struct Vector                                                Centre;                                            // 0x10(0xc)
 	float                                                        SectorAngle;                                       // 0x1c(0x4)
 	float                                                        Radius;                                            // 0x20(0x4)
-	Struct Color                                                 Colour;                                            // 0x24(0x4)
-	Struct Vector                                                ZeroAngleVector;                                   // 0x28(0xc)
-	Struct Vector                                                RotationAxis;                                      // 0x34(0xc)
+	struct Color                                                 Colour;                                            // 0x24(0x4)
+	struct Vector                                                ZeroAngleVector;                                   // 0x28(0xc)
+	struct Vector                                                RotationAxis;                                      // 0x34(0xc)
 	float                                                        SubAngles;                                         // 0x40(0x4)
 	float                                                        Thickness;                                         // 0x44(0x4)
 };
@@ -56,10 +57,10 @@ struct DrawDebugItemLine
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
 	bool                                                         ReplaceInGroup;                                    // 0x8(0x1)
-	char                                                         pad0x3_Z03QC[0x3];                                 // 0x9(0x3)
-	Struct Vector                                                LineStart;                                         // 0xc(0xc)
-	Struct Vector                                                LineEnd;                                           // 0x18(0xc)
-	Struct Color                                                 Colour;                                            // 0x24(0x4)
+	char                                                         pad0x3_EBN2X[0x3];                                 // 0x9(0x3)
+	struct Vector                                                LineStart;                                         // 0xc(0xc)
+	struct Vector                                                LineEnd;                                           // 0x18(0xc)
+	struct Color                                                 Colour;                                            // 0x24(0x4)
 	float                                                        Thickness;                                         // 0x28(0x4)
 };
 
@@ -70,12 +71,13 @@ struct DrawDebugItemCapsule
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
 	bool                                                         ReplaceInGroup;                                    // 0x8(0x1)
-	char                                                         pad0x3_C8ZWX[0x3];                                 // 0x9(0x3)
-	Struct Vector                                                CentrePos;                                         // 0xc(0xc)
+	char                                                         pad0x3_PHLD7[0x3];                                 // 0x9(0x3)
+	struct Vector                                                CentrePos;                                         // 0xc(0xc)
 	float                                                        HalfHeight;                                        // 0x18(0x4)
 	float                                                        Radius;                                            // 0x1c(0x4)
-	Struct Quat                                                  Rotation;                                          // 0x20(0x10)
-	Struct Color                                                 Colour;                                            // 0x30(0x4)
+	struct Quat                                                  Rotation;                                          // 0x20(0x10)
+	struct Color                                                 Colour;                                            // 0x30(0x4)
+	char                                                         pad0xc_RSESM[0xc];                                 // 0x34(0xc)
 };
 
 
@@ -85,12 +87,13 @@ struct DrawDebugItemBox
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
 	bool                                                         ReplaceInGroup;                                    // 0x8(0x1)
-	char                                                         pad0x3_DNQRA[0x3];                                 // 0x9(0x3)
-	Struct Vector                                                CentrePos;                                         // 0xc(0xc)
-	Struct Vector                                                Box;                                               // 0x18(0xc)
-	char                                                         pad0xc_2GP0B[0xc];                                 // 0x24(0xc)
-	Struct Quat                                                  Rotation;                                          // 0x30(0x10)
-	Struct Color                                                 Colour;                                            // 0x40(0x4)
+	char                                                         pad0x3_9603K[0x3];                                 // 0x9(0x3)
+	struct Vector                                                CentrePos;                                         // 0xc(0xc)
+	struct Vector                                                Box;                                               // 0x18(0xc)
+	char                                                         pad0xc_3PON9[0xc];                                 // 0x24(0xc)
+	struct Quat                                                  Rotation;                                          // 0x30(0x10)
+	struct Color                                                 Colour;                                            // 0x40(0x4)
+	char                                                         pad0xc_D1RBO[0xc];                                 // 0x44(0xc)
 };
 
 
@@ -100,10 +103,10 @@ struct DrawDebugItemSphere
 public:
 	struct FName                                                 GroupName;                                         // 0x0(0x8)
 	bool                                                         ReplaceInGroup;                                    // 0x8(0x1)
-	char                                                         pad0x3_JEQ0V[0x3];                                 // 0x9(0x3)
-	Struct Vector                                                CentrePos;                                         // 0xc(0xc)
+	char                                                         pad0x3_MWCOJ[0x3];                                 // 0x9(0x3)
+	struct Vector                                                CentrePos;                                         // 0xc(0xc)
 	float                                                        Radius;                                            // 0x18(0x4)
-	Struct Color                                                 Colour;                                            // 0x1c(0x4)
+	struct Color                                                 Colour;                                            // 0x1c(0x4)
 };
 
 
@@ -111,10 +114,10 @@ public:
 struct SphereData
 {
 public:
-	Struct Vector                                                Location;                                          // 0x0(0xc)
+	struct Vector                                                Location;                                          // 0x0(0xc)
 	float                                                        Radius;                                            // 0xc(0x4)
 	int                                                          Segments;                                          // 0x10(0x4)
-	Struct Color                                                 Colour;                                            // 0x14(0x4)
+	struct Color                                                 Colour;                                            // 0x14(0x4)
 };
 
 

@@ -11,18 +11,18 @@ class ShipBumperZone: public Actor
 {
 public:
 	bool                                                         UseInverseRightVector;                             // 0x3c8(0x1)
-	char                                                         pad0x2f_ZEUH2[0x2f];                               // 0x3c9(0x2f)
-	Class BoxComponent*                                          BumperZoneComponent;                               // 0x3f8(0x8)
-	Class SphereComponent*                                       DistanceRadiusComponent;                           // 0x400(0x8)
+	char                                                         pad0x2f_6DJCN[0x2f];                               // 0x3c9(0x2f)
+	class BoxComponent*                                          BumperZoneComponent;                               // 0x3f8(0x8)
+	class SphereComponent*                                       DistanceRadiusComponent;                           // 0x400(0x8)
 	bool                                                         ApplyAngularImpulse;                               // 0x408(0x1)
-	char                                                         pad0x3_Q8RP0[0x3];                                 // 0x409(0x3)
+	char                                                         pad0x3_C4K5B[0x3];                                 // 0x409(0x3)
 	float                                                        AngularImpulse;                                    // 0x40c(0x4)
 	bool                                                         OverrideWheelControl;                              // 0x410(0x1)
 	bool                                                         ApplyWheelTurbulence;                              // 0x411(0x1)
-	char                                                         pad0x2_0JHBE[0x2];                                 // 0x412(0x2)
+	char                                                         pad0x2_BF85B[0x2];                                 // 0x412(0x2)
 	float                                                        MinWheelTurbulence;                                // 0x414(0x4)
 	float                                                        MaxWheelTurbulence;                                // 0x418(0x4)
-	char                                                         pad0x4_QUBK1[0x4];                                 // 0x41c(0x4)
+	char                                                         pad0x4_N8YZ5[0x4];                                 // 0x41c(0x4)
 };
 
 

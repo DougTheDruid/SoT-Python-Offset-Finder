@@ -7,7 +7,11 @@ AnimNotifyWwiseEmitterComponentRetrievalInterface:
   InheritedSize: '0x28'
   Super: Interface
 AudioReporterSubSystem:
-  Attributes: []
+  Attributes:
+  - Name: pad0x50_TTX6B[0x50]
+    Offset: '0x28'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x50'
   FullSize: '0x78'
   InheritedSize: '0x28'
@@ -17,11 +21,11 @@ MergedMultiEmitterComponent:
   - Name: EmitterPool
     Offset: '0x310'
     Size: '0x8'
-    Type: Class WwiseObjectPoolWrapper*
+    Type: class WwiseObjectPoolWrapper*
   - Name: PlayEvent
     Offset: '0x318'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   ClassSize: '0x10'
   FullSize: '0x320'
   InheritedSize: '0x310'
@@ -31,7 +35,7 @@ MovieSceneAkAudioEventSection:
   - Name: Event
     Offset: '0x98'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   ClassSize: '0x8'
   FullSize: '0xa0'
   InheritedSize: '0x98'
@@ -44,18 +48,18 @@ MovieSceneAkAudioEventTrack:
   Super: MovieSceneAkTrack
 MovieSceneAkAudioRTPCSection:
   Attributes:
-  - Name: pad0x8_SXNJO[0x8]
+  - Name: pad0x8_IYBUS[0x8]
     Offset: '0x98'
     Size: '0x8'
     Type: char
   - Name: Name
     Offset: '0xa0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: FloatCurve
     Offset: '0xb0'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   ClassSize: '0x90'
   FullSize: '0x128'
   InheritedSize: '0x98'
@@ -76,7 +80,7 @@ MovieSceneAkTrack:
     Offset: '0x98'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_B3JAK[0x7]
+  - Name: pad0x7_8X2U0[0x7]
     Offset: '0x99'
     Size: '0x7'
     Type: char
@@ -89,11 +93,11 @@ MultiEmitterRootComponent:
   - Name: MultiEmitterDataArray
     Offset: '0x2e0'
     Size: '0x10'
-    Type: TArray<struct MultiEmitterDataArray>
+    Type: TArray<struct MultiEmitterData>
   - Name: PlayingEmitters
     Offset: '0x2f0'
     Size: '0x10'
-    Type: TArray<struct PlayingEmitters>
+    Type: TArray<struct WwiseEmitter>
   ClassSize: '0x20'
   FullSize: '0x300'
   InheritedSize: '0x2e0'
@@ -103,12 +107,12 @@ WwiseBank:
   - Name: path
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: InitBank
     Offset: '0x40'
     Size: '0x8'
-    Type: Class WwiseBank*
-  - Name: pad0x28_WD5OT[0x28]
+    Type: class WwiseBank*
+  - Name: pad0x28_GYC1M[0x28]
     Offset: '0x48'
     Size: '0x28'
     Type: char
@@ -121,27 +125,27 @@ WwiseCoreAssets:
   - Name: PauseEventStart
     Offset: '0x28'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: PauseEventRelease
     Offset: '0x30'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: StopAllEvent
     Offset: '0x38'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: WwiseMediaSoundComponentEvent
     Offset: '0x40'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: NonShippingAudioRootAsset
     Offset: '0x48'
     Size: '0x8'
-    Type: Class WwiseNonShippingAudioRootAsset*
+    Type: class WwiseNonShippingAudioRootAsset*
   - Name: WwiseIDsDatabase
     Offset: '0x50'
     Size: '0x8'
-    Type: Class WwiseIDsDatabase*
+    Type: class WwiseIDsDatabase*
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -157,7 +161,11 @@ WwiseDDSEvent:
   InheritedSize: '0x50'
   Super: WwiseEvent
 WwiseDebugManager:
-  Attributes: []
+  Attributes:
+  - Name: pad0x60_CZ3HM[0x60]
+    Offset: '0x28'
+    Size: '0x60'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
@@ -169,7 +177,11 @@ WwiseEmitterInterface:
   InheritedSize: '0x28'
   Super: Interface
 WwiseEmitterManager:
-  Attributes: []
+  Attributes:
+  - Name: pad0x20_WBKPH[0x20]
+    Offset: '0x28'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -179,12 +191,12 @@ WwiseEvent:
   - Name: RequiredBank
     Offset: '0x28'
     Size: '0x8'
-    Type: Class WwiseBank*
+    Type: class WwiseBank*
   - Name: WaitForBankToLoad
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_18XPG[0x3]
+  - Name: pad0x3_VQ4DT[0x3]
     Offset: '0x31'
     Size: '0x3'
     Type: char
@@ -208,7 +220,7 @@ WwiseEvent:
     Offset: '0x45'
     Size: '0x1'
     Type: bool
-  - Name: pad0xa_RW13F[0xa]
+  - Name: pad0xa_BMQU3[0xa]
     Offset: '0x46'
     Size: '0xa'
     Type: char
@@ -255,7 +267,11 @@ WwiseIDsDatabase:
   InheritedSize: '0x28'
   Super: DataAsset
 WwiseInputManager:
-  Attributes: []
+  Attributes:
+  - Name: pad0x28_23JNC[0x28]
+    Offset: '0x28'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -267,7 +283,11 @@ WwiseInputManagerInterface:
   InheritedSize: '0x28'
   Super: Interface
 WwiseMediaManager:
-  Attributes: []
+  Attributes:
+  - Name: pad0x50_CZJLQ[0x50]
+    Offset: '0x28'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x50'
   FullSize: '0x78'
   InheritedSize: '0x28'
@@ -277,15 +297,15 @@ WwiseNonShippingAudioAsset:
   - Name: CodeName
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: UAssetRelativePath
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: StreamRelativePath
     Offset: '0x48'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -296,7 +316,7 @@ WwiseNonShippingAudioRootAsset:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<class WwiseNonShippingAudioAsset*>
-  - Name: pad0x10_M5467[0x10]
+  - Name: pad0x10_JGIRS[0x10]
     Offset: '0x38'
     Size: '0x10'
     Type: char
@@ -305,13 +325,21 @@ WwiseNonShippingAudioRootAsset:
   InheritedSize: '0x28'
   Super: DataAsset
 WwisePoolManager:
-  Attributes: []
+  Attributes:
+  - Name: pad0xd8_XKUW3[0xd8]
+    Offset: '0x28'
+    Size: '0xd8'
+    Type: char
   ClassSize: '0xd8'
   FullSize: '0x100'
   InheritedSize: '0x28'
   Super: Object
 WwiseSoundFrameManager:
-  Attributes: []
+  Attributes:
+  - Name: pad0x20_EUGYS[0x20]
+    Offset: '0x28'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'

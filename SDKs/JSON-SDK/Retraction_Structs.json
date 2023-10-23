@@ -27,7 +27,7 @@
     "Attributes": [
       {
         "Name": "ItemLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       }
@@ -38,7 +38,7 @@
     "Attributes": [
       {
         "Name": "Item",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       }

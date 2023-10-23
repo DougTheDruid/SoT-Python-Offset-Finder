@@ -9,26 +9,26 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_0VWNH[0x3]",
+        "Name": "pad0x3_8T9CS[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
       },
       {
         "Name": "FogColour",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x4"
       },
       {
         "Name": "LiquidColour",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x10"
       },
       {
         "Name": "ScumColour",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x1c"
       },

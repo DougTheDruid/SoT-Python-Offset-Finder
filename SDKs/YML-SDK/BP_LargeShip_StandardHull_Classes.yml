@@ -5,15 +5,15 @@ BP_LargeShip_StandardHull_C:
   - Name: Occluder
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Damage
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: Art
     Offset: '0x400'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   ClassSize: '0x18'
   FullSize: '0x408'
   InheritedSize: '0x3f0'

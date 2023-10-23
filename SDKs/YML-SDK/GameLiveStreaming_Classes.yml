@@ -7,7 +7,11 @@ GameLiveStreamingFunctionLibrary:
   InheritedSize: '0x28'
   Super: BlueprintFunctionLibrary
 QueryLiveStreamsCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x20_97S2O[0x20]
+    Offset: '0x28'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'

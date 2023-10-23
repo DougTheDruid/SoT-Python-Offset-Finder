@@ -10,8 +10,9 @@ namespace DougsSDKDumper
 struct GameEventsOnDemandLoserTunnelCrewData
 {
 public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	class                                                        GameEventType;                                     // 0x10(0x8)
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	class UClass*                                                GameEventType;                                     // 0x10(0x8)
+	char                                                         pad0x8_N8D38[0x8];                                 // 0x18(0x8)
 };
 
 
@@ -19,9 +20,10 @@ public:
 struct GameEventAvailabilityTelemetryData
 {
 public:
-	Struct FString                                               EventName;                                         // 0x0(0x10)
+	struct FString                                               EventName;                                         // 0x0(0x10)
 	byte                                                         EventCategory;                                     // 0x10(0x1)
 	byte                                                         AvailabilityState;                                 // 0x11(0x1)
+	char                                                         pad0x6_VSI70[0x6];                                 // 0x12(0x6)
 };
 
 
@@ -29,7 +31,7 @@ public:
 struct ProcessGameEventOnDemandAvailabilityTelemetryEvent
 {
 public:
-	TArray<struct GameEventAvailabilityData>                     GameEventAvailabilityData;                         // 0x0(0x10)
+	TArray<struct GameEventAvailabilityTelemetryData>            GameEventAvailabilityData;                         // 0x0(0x10)
 };
 
 
@@ -37,7 +39,7 @@ public:
 struct AdvertiseGameEventOnDemandAvailabilityTelemetryEvent
 {
 public:
-	Struct GameEventAvailabilityModel                            GameEventAvailability;                             // 0x0(0x20)
+	struct GameEventAvailabilityModel                            GameEventAvailability;                             // 0x0(0x20)
 };
 
 

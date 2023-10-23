@@ -7,31 +7,31 @@
     "Attributes": [
       {
         "Name": "UsableWieldable",
-        "Type": "Class UsableWieldableComponent*",
+        "Type": "class UsableWieldableComponent*",
         "Size": "0x8",
         "Offset": "0x7e0"
       },
       {
         "Name": "WieldableInteractable",
-        "Type": "Class WieldableInteractableComponent*",
+        "Type": "class WieldableInteractableComponent*",
         "Size": "0x8",
         "Offset": "0x7e8"
       },
       {
         "Name": "Pickupable",
-        "Type": "Class PickupableComponent*",
+        "Type": "class PickupableComponent*",
         "Size": "0x8",
         "Offset": "0x7f0"
       },
       {
         "Name": "ConsumableWieldable",
-        "Type": "Class ConsumableWieldableComponent*",
+        "Type": "class ConsumableWieldableComponent*",
         "Size": "0x8",
         "Offset": "0x7f8"
       },
       {
         "Name": "InventoryItem",
-        "Type": "Class InventoryItemComponent*",
+        "Type": "class InventoryItemComponent*",
         "Size": "0x8",
         "Offset": "0x800"
       }

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct IncomingMigrationPreventionZone
 {
 public:
-	Struct Vector2D                                              Location;                                          // 0x0(0x8)
+	struct Vector2D                                              Location;                                          // 0x0(0x8)
 	float                                                        Radius;                                            // 0x8(0x4)
 };
 
@@ -19,6 +19,7 @@ public:
 struct ServerMigrationSetupCompleteEvent
 {
 public:
+	char                                                         pad0x1_OMK3S[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -26,6 +27,7 @@ public:
 struct ServerMigrationSetupRequestEvent
 {
 public:
+	char                                                         pad0x1_E2QJH[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -33,6 +35,15 @@ public:
 struct ServerMigrationReadyToTransferActors
 {
 public:
+	char                                                         pad0x90_AQ3PM[0x90];                               // 0x0(0x90)
+};
+
+
+// Size 0x48
+struct AddedPendingIncomingGameEventOnDemandCrewEvent
+{
+public:
+	char                                                         pad0x48_ZI8DF[0x48];                               // 0x0(0x48)
 };
 
 
@@ -40,6 +51,7 @@ public:
 struct AddedPendingIncomingInvaderCrewEvent
 {
 public:
+	char                                                         pad0x48_DW01N[0x48];                               // 0x0(0x48)
 };
 
 
@@ -47,6 +59,7 @@ public:
 struct ServerMigrationAboutToStartEvent
 {
 public:
+	char                                                         pad0x20_CRJ44[0x20];                               // 0x0(0x20)
 };
 
 
@@ -54,6 +67,7 @@ public:
 struct ServerMigrationAbortEvent
 {
 public:
+	char                                                         pad0x10_YOMW9[0x10];                               // 0x0(0x10)
 };
 
 
@@ -61,6 +75,7 @@ public:
 struct ServerMigrationCompleteEvent
 {
 public:
+	char                                                         pad0x1_1WFQ9[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -68,8 +83,8 @@ public:
 struct ServerMigrationRefusedEvent
 {
 public:
-	Struct Guid                                                  MigrationId;                                       // 0x0(0x10)
-	TArray<struct CrewIds>                                       CrewIds;                                           // 0x10(0x10)
+	struct Guid                                                  MigrationId;                                       // 0x0(0x10)
+	TArray<struct Guid>                                          CrewIds;                                           // 0x10(0x10)
 };
 
 
@@ -77,6 +92,7 @@ public:
 struct OutgoingServerMigrationAbortedEvent
 {
 public:
+	char                                                         pad0x20_9MUOE[0x20];                               // 0x0(0x20)
 };
 
 
@@ -84,8 +100,8 @@ public:
 struct ServerMigrationInstanceEventBase
 {
 public:
-	Struct Guid                                                  ServerId;                                          // 0x0(0x10)
-	Struct Guid                                                  MigrationId;                                       // 0x10(0x10)
+	struct Guid                                                  ServerId;                                          // 0x0(0x10)
+	struct Guid                                                  MigrationId;                                       // 0x10(0x10)
 };
 
 
@@ -93,6 +109,7 @@ public:
 struct OutgoingServerMigrationCompletedEvent
 {
 public:
+	char                                                         pad0x20_Z1XGC[0x20];                               // 0x0(0x20)
 };
 
 
@@ -100,6 +117,7 @@ public:
 struct OutgoingServerMigrationStartedEvent
 {
 public:
+	char                                                         pad0x20_UXBAL[0x20];                               // 0x0(0x20)
 };
 
 
@@ -107,10 +125,10 @@ public:
 struct ServerMigrationRequestEvent
 {
 public:
-	Struct Guid                                                  MigrationId;                                       // 0x0(0x10)
-	Struct FString                                               DestinationAddress;                                // 0x10(0x10)
-	TArray<struct CrewIds>                                       CrewIds;                                           // 0x20(0x10)
-	Struct FString                                               SubMode;                                           // 0x30(0x10)
+	struct Guid                                                  MigrationId;                                       // 0x0(0x10)
+	struct FString                                               DestinationAddress;                                // 0x10(0x10)
+	TArray<struct Guid>                                          CrewIds;                                           // 0x20(0x10)
+	struct FString                                               SubMode;                                           // 0x30(0x10)
 	TArray<Byte MatchmakingReasons>                              MatchmakingReasons;                                // 0x40(0x10)
 };
 
@@ -119,8 +137,8 @@ public:
 struct ServerMigrationRequestBroadcastEvent
 {
 public:
-	Struct FString                                               DestinationAddress;                                // 0x0(0x10)
-	Struct Guid                                                  CrewId;                                            // 0x10(0x10)
+	struct FString                                               DestinationAddress;                                // 0x0(0x10)
+	struct Guid                                                  CrewId;                                            // 0x10(0x10)
 };
 
 
@@ -128,6 +146,7 @@ public:
 struct PrepareForWorldSwitchRpc
 {
 public:
+	char                                                         pad0x10_D8VFC[0x10];                               // 0x0(0x10)
 };
 
 
@@ -135,7 +154,7 @@ public:
 struct AthenaServerMigrationClientContext
 {
 public:
-	Struct FString                                               StampId;                                           // 0x0(0x10)
+	struct FString                                               StampId;                                           // 0x0(0x10)
 };
 
 

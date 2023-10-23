@@ -7,31 +7,31 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "InnerSphere",
-        "Type": "Class SphereComponent*",
+        "Type": "class SphereComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "OuterSphere",
-        "Type": "Class SphereComponent*",
+        "Type": "class SphereComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
         "Name": "LightingZone",
-        "Type": "Class LightingZoneComponent*",
+        "Type": "class LightingZoneComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
         "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },

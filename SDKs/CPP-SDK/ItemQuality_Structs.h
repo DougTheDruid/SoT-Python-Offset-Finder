@@ -10,8 +10,9 @@ namespace DougsSDKDumper
 struct PerComanyItemQualityEntry
 {
 public:
-	class                                                        Company;                                           // 0x0(0x8)
+	class UClass*                                                Company;                                           // 0x0(0x8)
 	byte                                                         Quality;                                           // 0x8(0x1)
+	char                                                         pad0x7_5P663[0x7];                                 // 0x9(0x7)
 };
 
 
@@ -19,8 +20,8 @@ public:
 struct PerComanyComplexItemQualityEntry
 {
 public:
-	class                                                        Company;                                           // 0x0(0x8)
-	TArray<struct QualityData>                                   QualityData;                                       // 0x8(0x10)
+	class UClass*                                                Company;                                           // 0x0(0x8)
+	TArray<struct ComplexItemQualityEntry>                       QualityData;                                       // 0x8(0x10)
 };
 
 
@@ -34,7 +35,7 @@ public:
 	byte                                                         IsStolen;                                          // 0x3(0x1)
 	byte                                                         QueryReason;                                       // 0x4(0x1)
 	byte                                                         QualityLevel;                                      // 0x5(0x1)
-	char                                                         pad0x2_L4B37[0x2];                                 // 0x6(0x2)
+	char                                                         pad0x2_OATL9[0x2];                                 // 0x6(0x2)
 	struct FName                                                 Rarity;                                            // 0x8(0x8)
 };
 

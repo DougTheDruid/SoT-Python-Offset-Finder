@@ -3,26 +3,26 @@
 BP_Castaway_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x6f0'
-    Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
-  - Name: NPCDialogCamera
     Offset: '0x6f8'
     Size: '0x8'
-    Type: Class CameraComponent*
-  - Name: ActorPhasing
+    Type: struct PointerToUberGraphFrame
+  - Name: NPCDialogCamera
     Offset: '0x700'
     Size: '0x8'
-    Type: Class ActorPhasingComponent*
-  - Name: AnimNotifyWwiseEmitter
+    Type: class CameraComponent*
+  - Name: ActorPhasing
     Offset: '0x708'
     Size: '0x8'
-    Type: Class AnimNotifyWwiseEmitterComponent*
-  - Name: AudioEvents
+    Type: class ActorPhasingComponent*
+  - Name: AnimNotifyWwiseEmitter
     Offset: '0x710'
+    Size: '0x8'
+    Type: class AnimNotifyWwiseEmitterComponent*
+  - Name: AudioEvents
+    Offset: '0x718'
     Size: '0x10'
     Type: TArray<class WwiseEvent*>
   ClassSize: '0x30'
-  FullSize: '0x720'
-  InheritedSize: '0x6f0'
+  FullSize: '0x728'
+  InheritedSize: '0x6f8'
   Super: BP_Orderofsouls_TallTales_C

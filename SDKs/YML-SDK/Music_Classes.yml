@@ -5,11 +5,11 @@ AISpawnerMusicZoneComponent:
   - Name: BattleWonEvent
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: AISpawner
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class AISpawner*
+    Type: class AISpawner*
   - Name: SpawnerPawns
     Offset: '0x3d8'
     Size: '0x10'
@@ -18,7 +18,7 @@ AISpawnerMusicZoneComponent:
     Offset: '0x3e8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_V3UG4[0x7]
+  - Name: pad0x7_0C0EF[0x7]
     Offset: '0x3e9'
     Size: '0x7'
     Type: char
@@ -34,7 +34,7 @@ EmitterManipulatorInterface:
   Super: Interface
 MusicZoneComponent:
   Attributes:
-  - Name: pad0x8_X79LB[0x8]
+  - Name: pad0x8_3PY1C[0x8]
     Offset: '0x2e0'
     Size: '0x8'
     Type: char
@@ -58,18 +58,18 @@ MusicZoneComponent:
     Offset: '0x300'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_MHCXH[0x7]
+  - Name: pad0x7_34UTZ[0x7]
     Offset: '0x301'
     Size: '0x7'
     Type: char
   - Name: PlayEvent
     Offset: '0x308'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: StopEvent
     Offset: '0x310'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: OneShotEvents
     Offset: '0x318'
     Size: '0x10'
@@ -77,7 +77,7 @@ MusicZoneComponent:
   - Name: EmitterPool
     Offset: '0x328'
     Size: '0x8'
-    Type: Class WwiseObjectPoolWrapper*
+    Type: class WwiseObjectPoolWrapper*
   - Name: DisableAfterPlayThrough
     Offset: '0x330'
     Size: '0x1'
@@ -86,15 +86,15 @@ MusicZoneComponent:
     Offset: '0x331'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_OMSKU[0x6]
+  - Name: pad0x6_1CC43[0x6]
     Offset: '0x332'
     Size: '0x6'
     Type: char
   - Name: EmitterRemoteValues
     Offset: '0x370'
     Size: '0x20'
-    Type: Struct MusicZoneRemoteValues
-  - Name: pad0x40_WUVV5[0x40]
+    Type: struct MusicZoneRemoteValues
+  - Name: pad0x40_I4WI7[0x40]
     Offset: '0x390'
     Size: '0x40'
     Type: char
@@ -109,7 +109,11 @@ MusicZoneInterface:
   InheritedSize: '0x28'
   Super: EmitterManipulatorInterface
 MusicZoneService:
-  Attributes: []
+  Attributes:
+  - Name: pad0xc8_ZQZYO[0xc8]
+    Offset: '0x3c8'
+    Size: '0xc8'
+    Type: char
   ClassSize: '0xc8'
   FullSize: '0x490'
   InheritedSize: '0x3c8'
@@ -125,7 +129,7 @@ NetMusicZoneActor:
   - Name: MusicZone
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class MusicZoneComponent*
+    Type: class MusicZoneComponent*
   ClassSize: '0x8'
   FullSize: '0x3d0'
   InheritedSize: '0x3c8'
@@ -140,7 +144,7 @@ SynchedMusicZoneComponent:
     Offset: '0x3cc'
     Size: '0x4'
     Type: int
-  - Name: pad0x30_E8R3D[0x30]
+  - Name: pad0x30_9H0HT[0x30]
     Offset: '0x3d0'
     Size: '0x30'
     Type: char

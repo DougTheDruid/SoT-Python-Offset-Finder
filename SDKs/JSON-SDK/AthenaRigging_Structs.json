@@ -4,13 +4,13 @@
     "Attributes": [
       {
         "Name": "Length",
-        "Type": "Struct RopeCatenaryLengthParams",
+        "Type": "struct RopeCatenaryLengthParams",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Slope",
-        "Type": "Struct RopeCatenarySlopeBlendParams",
+        "Type": "struct RopeCatenarySlopeBlendParams",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -93,6 +93,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_J5MT6[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
       }
     ]
   },
@@ -101,13 +107,13 @@
     "Attributes": [
       {
         "Name": "Start",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
       {
         "Name": "End",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
@@ -143,19 +149,19 @@
       },
       {
         "Name": "Shape",
-        "Type": "Struct RopeCatenaryShapeParams",
+        "Type": "struct RopeCatenaryShapeParams",
         "Size": "0x18",
         "Offset": "0x2c"
       },
       {
         "Name": "Swing",
-        "Type": "Struct RopeCatenarySwingParams",
+        "Type": "struct RopeCatenarySwingParams",
         "Size": "0x8",
         "Offset": "0x44"
       },
       {
         "Name": "Dynamics",
-        "Type": "Struct RopeCatenaryDynamicsParams",
+        "Type": "struct RopeCatenaryDynamicsParams",
         "Size": "0x8",
         "Offset": "0x4c"
       }
@@ -163,7 +169,14 @@
   },
   "RiggingSystemLine": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_QT2SV[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "RiggingSystemPulleyData": {
     "ClassSize": "0x60",
@@ -234,19 +247,19 @@
     "Attributes": [
       {
         "Name": "Mesh",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "DiffuseTexture",
-        "Type": "Class Texture2D*",
+        "Type": "class Texture2D*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "NormalTexture",
-        "Type": "Class Texture2D*",
+        "Type": "class Texture2D*",
         "Size": "0x8",
         "Offset": "0x10"
       },
@@ -255,6 +268,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_1WC90[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       }
     ]
   },
@@ -263,7 +282,7 @@
     "Attributes": [
       {
         "Name": "Mesh",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -286,7 +305,7 @@
     "Attributes": [
       {
         "Name": "Anchor",
-        "Type": "Struct SocketId",
+        "Type": "struct SocketId",
         "Size": "0x20",
         "Offset": "0x0"
       },
@@ -297,22 +316,28 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_MXFEI[0x4]",
+        "Name": "pad0x4_83J9D[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
       },
       {
         "Name": "Visuals",
-        "Type": "Struct PulleyVisualParams",
+        "Type": "struct PulleyVisualParams",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "AttachmentRope",
-        "Type": "Struct RiggingSystemPulleyAttachmentParams",
+        "Type": "struct RiggingSystemPulleyAttachmentParams",
         "Size": "0x14",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_WTTIG[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4c"
       }
     ]
   },
@@ -321,7 +346,7 @@
     "Attributes": [
       {
         "Name": "Visuals",
-        "Type": "Struct RopeVisualParams",
+        "Type": "struct RopeVisualParams",
         "Size": "0xc",
         "Offset": "0x0"
       },
@@ -344,33 +369,39 @@
     "Attributes": [
       {
         "Name": "Start",
-        "Type": "Struct SocketId",
+        "Type": "struct SocketId",
         "Size": "0x20",
         "Offset": "0x0"
       },
       {
         "Name": "Pulleys",
-        "Type": "TArray<struct Pulleys>",
+        "Type": "TArray<struct RiggingSystemPulleyParams>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "End",
-        "Type": "Struct SocketId",
+        "Type": "struct SocketId",
         "Size": "0x20",
         "Offset": "0x30"
       },
       {
         "Name": "Visuals",
-        "Type": "Struct RopeVisualParams",
+        "Type": "struct RopeVisualParams",
         "Size": "0xc",
         "Offset": "0x50"
       },
       {
         "Name": "Shape",
-        "Type": "Struct RopeCatenaryShapeParams",
+        "Type": "struct RopeCatenaryShapeParams",
         "Size": "0x18",
         "Offset": "0x5c"
+      },
+      {
+        "Name": "pad0x4_66Z96[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x74"
       }
     ]
   },
@@ -385,7 +416,7 @@
       },
       {
         "Name": "Lines",
-        "Type": "TArray<struct Lines>",
+        "Type": "TArray<struct RiggingSystemLineParams>",
         "Size": "0x10",
         "Offset": "0x8"
       }

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class JwtAuthenticationTokenSettings: public Object
 {
 public:
-	Struct FString                                               TokenSecretKey;                                    // 0x28(0x10)
+	struct FString                                               TokenSecretKey;                                    // 0x28(0x10)
 };
 
 
@@ -18,7 +18,7 @@ public:
 class JwtAuthenticationTokenEditorSettings: public Object
 {
 public:
-	Struct FString                                               TokenSecretKey;                                    // 0x28(0x10)
+	struct FString                                               TokenSecretKey;                                    // 0x28(0x10)
 };
 
 

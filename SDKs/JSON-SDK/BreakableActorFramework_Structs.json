@@ -4,13 +4,13 @@
     "Attributes": [
       {
         "Name": "Instigator",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "DirectInstigator",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -21,7 +21,7 @@
     "Attributes": [
       {
         "Name": "ImpactDamageEvent",
-        "Type": "Struct ImpactDamageEvent",
+        "Type": "struct ImpactDamageEvent",
         "Size": "0x58",
         "Offset": "0x0"
       }

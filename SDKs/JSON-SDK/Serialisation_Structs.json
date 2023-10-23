@@ -16,7 +16,7 @@
       },
       {
         "Name": "String",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -28,13 +28,13 @@
       },
       {
         "Name": "StructArray",
-        "Type": "TArray<struct StructArray>",
+        "Type": "TArray<struct SerialisedNestedStruct>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "NestedStruct",
-        "Type": "Struct SerialisedNestedStruct",
+        "Type": "struct SerialisedNestedStruct",
         "Size": "0x28",
         "Offset": "0x38"
       }
@@ -45,7 +45,7 @@
     "Attributes": [
       {
         "Name": "String",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },

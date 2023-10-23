@@ -7,49 +7,49 @@
     "Attributes": [
       {
         "Name": "StaticMeshComponent06",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
         "Name": "StaticMeshComponent05",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
         "Name": "StaticMeshComponent04",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
         "Name": "StaticMeshComponent03",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
         "Name": "StaticMeshComponent02",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
         "Name": "StaticMeshComponent01",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
         "Name": "StaticMeshComponent0",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
         "Name": "SharedRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x440"
       }

@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 struct GameServerWebSocketEntityEvent
 {
 public:
-	Struct FString                                               EventID;                                           // 0x0(0x10)
-	Struct FString                                               ServerId;                                          // 0x10(0x10)
-	Struct DateTime                                              ServerTimeUTC;                                     // 0x20(0x8)
+	struct FString                                               EventID;                                           // 0x0(0x10)
+	struct FString                                               ServerId;                                          // 0x10(0x10)
+	struct DateTime                                              ServerTimeUTC;                                     // 0x20(0x8)
 };
 
 
@@ -20,9 +20,10 @@ public:
 struct EventOverMemoryThreshold
 {
 public:
-	Struct FString                                               EventID;                                           // 0x0(0x10)
-	Struct DateTime                                              ServerTimeUTC;                                     // 0x10(0x8)
+	struct FString                                               EventID;                                           // 0x0(0x10)
+	struct DateTime                                              ServerTimeUTC;                                     // 0x10(0x8)
 	int                                                          MemoryUsedPercentage;                              // 0x18(0x4)
+	char                                                         pad0x4_0F587[0x4];                                 // 0x1c(0x4)
 };
 
 
@@ -30,7 +31,7 @@ public:
 struct EntityEventSubscriptionGameServerRequestModel
 {
 public:
-	TArray<struct EventsSwitched>                                EventsSwitched;                                    // 0x0(0x10)
+	TArray<struct EventEntityIdsSwitch>                          EventsSwitched;                                    // 0x0(0x10)
 	TArray<struct FName>                                         EventsWithAllIdsEnabled;                           // 0x10(0x10)
 	TArray<struct FName>                                         EventsWithAllIdsDisabled;                          // 0x20(0x10)
 };

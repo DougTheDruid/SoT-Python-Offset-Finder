@@ -15,13 +15,13 @@
     "Attributes": [
       {
         "Name": "ActorOfInterest",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "ActorOfInterestId",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -32,13 +32,13 @@
     "Attributes": [
       {
         "Name": "ActorOfInterest",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "ActorOfInterestId",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x8"
       }

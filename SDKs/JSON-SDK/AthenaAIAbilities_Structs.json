@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "MeleeAttackType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -13,6 +13,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_P9ZSQ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       }
     ]
   },
@@ -21,15 +27,21 @@
     "Attributes": [
       {
         "Name": "FireShroudZoneClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "FireShroudCollisionVolume",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_LW53F[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -38,13 +50,13 @@
     "Attributes": [
       {
         "Name": "FireShroudOverlapZone",
-        "Type": "Class StatusEffectOverlapZone*",
+        "Type": "class StatusEffectOverlapZone*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Params",
-        "Type": "Struct AshenLordFireShroudParams",
+        "Type": "struct AshenLordFireShroudParams",
         "Size": "0x18",
         "Offset": "0x8"
       }

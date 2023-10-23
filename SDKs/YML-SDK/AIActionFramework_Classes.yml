@@ -32,7 +32,7 @@ AIActionContextTag:
   Super: Object
 AIActionInstigatorComponent:
   Attributes:
-  - Name: pad0x8_A0GN2[0x8]
+  - Name: pad0x8_96G9T[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -43,11 +43,11 @@ AIActionInstigatorComponent:
   - Name: InitialActivity
     Offset: '0xe0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: CurrentActivity
     Offset: '0xe8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x28'
   FullSize: '0xf0'
   InheritedSize: '0xc8'
@@ -66,7 +66,7 @@ AIActionRole:
   Super: Object
 AIActionSpotComponent:
   Attributes:
-  - Name: pad0x8_Q52JE[0x8]
+  - Name: pad0x8_JW6IE[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -85,8 +85,8 @@ AIActionSpotComponent:
   - Name: CustomAnimInstance
     Offset: '0x100'
     Size: '0x8'
-    Type: class
-  - Name: pad0x18_2R190[0x18]
+    Type: class UClass*
+  - Name: pad0x18_WTXGJ[0x18]
     Offset: '0x108'
     Size: '0x18'
     Type: char
@@ -101,12 +101,40 @@ AIActionSpotInterface:
   InheritedSize: '0x28'
   Super: Interface
 AIActionSpotService:
-  Attributes: []
+  Attributes:
+  - Name: pad0x68_U635R[0x68]
+    Offset: '0x28'
+    Size: '0x68'
+    Type: char
   ClassSize: '0x68'
   FullSize: '0x90'
   InheritedSize: '0x28'
   Super: Object
 AIActionSpotServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+DockableRotationOverrideComponent:
+  Attributes:
+  - Name: pad0x8_NV7J6[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
+  - Name: KeepOwnerRotationWhileDocked
+    Offset: '0xd0'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x7_RWPCH[0x7]
+    Offset: '0xd1'
+    Size: '0x7'
+    Type: char
+  ClassSize: '0x10'
+  FullSize: '0xd8'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+DockableRotationOverrideInterface:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'

@@ -5,7 +5,7 @@ EntityEventSubscriptionGameServerRequestModel:
   - Name: EventsSwitched
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct EventsSwitched>
+    Type: TArray<struct EventEntityIdsSwitch>
   - Name: EventsWithAllIdsEnabled
     Offset: '0x10'
     Size: '0x10'
@@ -35,30 +35,34 @@ EventOverMemoryThreshold:
   - Name: EventID
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ServerTimeUTC
     Offset: '0x10'
     Size: '0x8'
-    Type: Struct DateTime
+    Type: struct DateTime
   - Name: MemoryUsedPercentage
     Offset: '0x18'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_0F587[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x20'
 GameServerWebSocketEntityEvent:
   Attributes:
   - Name: EventID
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ServerId
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ServerTimeUTC
     Offset: '0x20'
     Size: '0x8'
-    Type: Struct DateTime
+    Type: struct DateTime
   ClassSize: '0x28'
 GlobalEventSubscriptionGameServerRequestModel:
   Attributes:

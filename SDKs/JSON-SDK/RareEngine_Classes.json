@@ -4,7 +4,14 @@
     "FullSize": "0xa88",
     "InheritedSize": "0xa30",
     "ClassSize": "0x58",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x58_EUT7A[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0xa30"
+      }
+    ]
   },
   "AssetReferencer": {
     "Super": "DataAsset",
@@ -25,7 +32,14 @@
     "FullSize": "0x40",
     "InheritedSize": "0x28",
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_2CWS7[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x28"
+      }
+    ]
   },
   "HitchDiagnosisBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
@@ -42,7 +56,7 @@
     "Attributes": [
       {
         "Name": "VisualiserCategories",
-        "Type": "TArray<struct VisualiserCategories>",
+        "Type": "TArray<struct MemoryVisualiserCategory>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -60,7 +74,14 @@
     "FullSize": "0x50",
     "InheritedSize": "0x28",
     "ClassSize": "0x28",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x28_H2OE1[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x28"
+      }
+    ]
   },
   "StaticMeshActorBlueprintLibrary": {
     "Super": "BlueprintFunctionLibrary",

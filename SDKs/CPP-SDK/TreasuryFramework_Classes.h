@@ -10,6 +10,41 @@ namespace DougsSDKDumper
 class ShimmerActor: public Actor
 {
 public:
+	char                                                         pad0xa8_RQX4Y[0xa8];                               // 0x3c8(0xa8)
+};
+
+
+// Size 0x60 (Full Size[0x498] - InheritedSize[0x438]
+class SunkenKingdomShrineDeepSeaRegion: public DeepSeaRegion
+{
+public:
+	char                                                         pad0x8_B5BT5[0x8];                                 // 0x438(0x8)
+	class GameEventOnDemandAvailabilityHandler*                  GameEventOnDemandAvailabilityHandler;              // 0x440(0x8)
+	struct StringAssetReference                                  AvailabilityParamsAssetFileLocation;               // 0x448(0x10)
+	class GameEventOnDemandAnnouncementComponent*                GameEventOnDemandAnnouncementComponent;            // 0x458(0x8)
+	char                                                         pad0x38_R8496[0x38];                               // 0x460(0x38)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SunkenKingdomTreasuryGameEventType: public GameEventType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SunkenKingdomShrineGameEventType: public GameEventType
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x440] - InheritedSize[0x438]
+class SunkenKingdomTreasuryDeepSeaRegion: public DeepSeaRegion
+{
+public:
+	char                                                         pad0x8_ILDY1[0x8];                                 // 0x438(0x8)
 };
 
 
@@ -24,40 +59,43 @@ public:
 };
 
 
-// Size 0x130 (Full Size[0x4f8] - InheritedSize[0x3c8]
+// Size 0x158 (Full Size[0x520] - InheritedSize[0x3c8]
 class TreasuryRoom: public Actor
 {
 public:
-	char                                                         pad0x8_VCAJ7[0x8];                                 // 0x3c8(0x8)
-	Class BoxComponent*                                          RoomAreaComponent;                                 // 0x3d0(0x8)
-	float                                                        TreasuryInactiveDurationMinSeconds;                // 0x3d8(0x4)
-	float                                                        TreasuryInactiveDurationMaxSeconds;                // 0x3dc(0x4)
-	float                                                        RoomFailureDurationSeconds;                        // 0x3e0(0x4)
-	float                                                        WaveDelaySeconds;                                  // 0x3e4(0x4)
-	float                                                        EncounterDelaySeconds;                             // 0x3e8(0x4)
-	float                                                        VaultDoorAnimDurationSeconds;                      // 0x3ec(0x4)
-	float                                                        VaultDoorOpenDurationSeconds;                      // 0x3f0(0x4)
-	int                                                          MinWavesInEncounter;                               // 0x3f4(0x4)
-	int                                                          MaxWavesInEncounter;                               // 0x3f8(0x4)
-	int                                                          MaxEncounters;                                     // 0x3fc(0x4)
-	TArray<struct WaveEncounters>                                WaveEncounters;                                    // 0x400(0x10)
-	Class Actor*                                                 FloodMechanismActor;                               // 0x410(0x8)
-	Class Actor*                                                 FloodTriggerActor;                                 // 0x418(0x8)
-	Class Actor*                                                 DrainMechanismActor;                               // 0x420(0x8)
-	Class Actor*                                                 DrainTriggerActor;                                 // 0x428(0x8)
-	Class Actor*                                                 VaultMechanismActor;                               // 0x430(0x8)
-	Class Actor*                                                 VaultTriggerActor;                                 // 0x438(0x8)
-	class                                                        VaultLootSpawner;                                  // 0x440(0x8)
-	Class Actor*                                                 VaultLootSpawnLocationActor;                       // 0x448(0x8)
-	TArray<class Actor*>                                         OverlappingActors;                                 // 0x470(0x10)
-	TArray<Weakclass CachedParticipantControllers>               CachedParticipantControllers;                      // 0x480(0x10)
-	Class Actor*                                                 VaultLootSpawnerActor;                             // 0x490(0x8)
-	Struct PlayerStat                                            VaultOpenStat;                                     // 0x498(0x4)
-	char                                                         pad0x4_9CLGE[0x4];                                 // 0x49c(0x4)
-	Class MechanismActionComponent*                              FloodMechanismComponent;                           // 0x4a0(0x8)
-	Class MechanismActionComponent*                              DrainMechanismComponent;                           // 0x4a8(0x8)
-	Class MechanismActionComponent*                              VaultMechanismComponent;                           // 0x4b0(0x8)
-	char                                                         pad0x40_CJXAA[0x40];                               // 0x4b8(0x40)
+	char                                                         pad0x10_ACAS9[0x10];                               // 0x3c8(0x10)
+	class BoxComponent*                                          RoomAreaComponent;                                 // 0x3d8(0x8)
+	float                                                        TreasuryInactiveDurationMinSeconds;                // 0x3e0(0x4)
+	float                                                        TreasuryInactiveDurationMaxSeconds;                // 0x3e4(0x4)
+	float                                                        RoomFailureDurationSeconds;                        // 0x3e8(0x4)
+	float                                                        WaveDelaySeconds;                                  // 0x3ec(0x4)
+	float                                                        EncounterDelaySeconds;                             // 0x3f0(0x4)
+	float                                                        VaultDoorAnimDurationSeconds;                      // 0x3f4(0x4)
+	float                                                        VaultDoorOpenDurationSeconds;                      // 0x3f8(0x4)
+	int                                                          MinWavesInEncounter;                               // 0x3fc(0x4)
+	int                                                          MaxWavesInEncounter;                               // 0x400(0x4)
+	int                                                          MaxEncounters;                                     // 0x404(0x4)
+	TArray<struct TreasuryWaveEncounter>                         WaveEncounters;                                    // 0x408(0x10)
+	struct StringAssetReference                                  SunkenTreasuryAvailabilityParamsAssetFileLocation; // 0x418(0x10)
+	class Actor*                                                 FloodMechanismActor;                               // 0x428(0x8)
+	class Actor*                                                 FloodTriggerActor;                                 // 0x430(0x8)
+	class Actor*                                                 DrainMechanismActor;                               // 0x438(0x8)
+	class Actor*                                                 DrainTriggerActor;                                 // 0x440(0x8)
+	class Actor*                                                 VaultMechanismActor;                               // 0x448(0x8)
+	class Actor*                                                 VaultTriggerActor;                                 // 0x450(0x8)
+	class UClass*                                                VaultLootSpawner;                                  // 0x458(0x8)
+	class Actor*                                                 VaultLootSpawnLocationActor;                       // 0x460(0x8)
+	class GameEventOnDemandAvailabilityHandler*                  GameEventOnDemandAvailabilityHandler;              // 0x488(0x8)
+	TArray<class Actor*>                                         OverlappingActors;                                 // 0x490(0x10)
+	TArray<Weakclass CachedParticipantControllers>               CachedParticipantControllers;                      // 0x4a0(0x10)
+	class Actor*                                                 VaultLootSpawnerActor;                             // 0x4b0(0x8)
+	struct PlayerStat                                            VaultOpenStat;                                     // 0x4b8(0x4)
+	char                                                         pad0x4_01BDE[0x4];                                 // 0x4bc(0x4)
+	class MechanismActionComponent*                              FloodMechanismComponent;                           // 0x4c0(0x8)
+	class MechanismActionComponent*                              DrainMechanismComponent;                           // 0x4c8(0x8)
+	class MechanismActionComponent*                              VaultMechanismComponent;                           // 0x4d0(0x8)
+	class GameEventOnDemandAnnouncementComponent*                GameEventOnDemandAnnouncementComponent;            // 0x508(0x8)
+	char                                                         pad0x10_TFLGS[0x10];                               // 0x510(0x10)
 };
 
 

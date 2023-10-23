@@ -11,7 +11,7 @@ CaptaincyStarter:
   - Name: TutorialTale
     Offset: '0x60'
     Size: '0x8'
-    Type: Class VoyageDescDataAsset*
+    Type: class VoyageDescDataAsset*
   - Name: CheckIfShipNeverSetSail
     Offset: '0x68'
     Size: '0x1'
@@ -24,19 +24,19 @@ CaptaincyStarter:
     Offset: '0x6a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_OGCKS[0x5]
+  - Name: pad0x5_ODTV0[0x5]
     Offset: '0x6b'
     Size: '0x5'
     Type: char
   - Name: CheckIfEntitlementIsOwned
     Offset: '0x70'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: CheckIfCaptainingANewShip
     Offset: '0x78'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_E3853[0x3]
+  - Name: pad0x3_33VXS[0x3]
     Offset: '0x79'
     Size: '0x3'
     Type: char
@@ -48,19 +48,19 @@ CaptaincyStarter:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_UPJJ4[0x3]
+  - Name: pad0x3_RG0PU[0x3]
     Offset: '0x85'
     Size: '0x3'
     Type: char
   - Name: PromptCounterKey
     Offset: '0x88'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: MaxAttemptCount
     Offset: '0x90'
     Size: '0x4'
     Type: int
-  - Name: pad0x64_YUTS7[0x64]
+  - Name: pad0x64_ZOHL5[0x64]
     Offset: '0x94'
     Size: '0x64'
     Type: char
@@ -85,12 +85,12 @@ CompanyTutorialVoyageProgress:
   - Name: AssignedVoyageProposalDescClass
     Offset: '0x28'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: AssignedTaleRankDescClass
     Offset: '0x30'
     Size: '0x8'
-    Type: class
-  - Name: pad0xa8_GRC26[0xa8]
+    Type: class UClass*
+  - Name: pad0xa8_1NZ3Z[0xa8]
     Offset: '0x38'
     Size: '0xa8'
     Type: char
@@ -103,12 +103,12 @@ ContextualTutorialComponent:
   - Name: ContextualTutorialClasses
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<struct ContextualTutorialClasses>
+    Type: TArray<struct ContextualTutorialPromptDesc>
   - Name: SpawnedPromptActors
     Offset: '0xd8'
     Size: '0x10'
     Type: TArray<class Actor*>
-  - Name: pad0x58_93MVO[0x58]
+  - Name: pad0x58_MGCVL[0x58]
     Offset: '0xe8'
     Size: '0x58'
     Type: char
@@ -122,7 +122,7 @@ HasTutorialStarterBegunNPCDialogConditional:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_689PK[0x7]
+  - Name: pad0x7_FSCBF[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -130,6 +130,16 @@ HasTutorialStarterBegunNPCDialogConditional:
   FullSize: '0x38'
   InheritedSize: '0x30'
   Super: NPCDialogConditional
+IntroductionToSOTFlowStarter:
+  Attributes:
+  - Name: TutorialTale
+    Offset: '0x60'
+    Size: '0x8'
+    Type: class VoyageDescDataAsset*
+  ClassSize: '0x8'
+  FullSize: '0x68'
+  InheritedSize: '0x60'
+  Super: TutorialStarter
 MaidenVoyageStarter:
   Attributes: []
   ClassSize: '0x0'
@@ -152,7 +162,7 @@ Tutorial2019Component:
     Offset: '0xc9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_ZDQUB[0x6]
+  - Name: pad0x6_4HFGX[0x6]
     Offset: '0xca'
     Size: '0x6'
     Type: char
@@ -165,7 +175,7 @@ Tutorial2019ContextualDelegatingComponent:
   - Name: ContextualTutorialComponent
     Offset: '0xd0'
     Size: '0x8'
-    Type: Class ContextualTutorialComponent*
+    Type: class ContextualTutorialComponent*
   ClassSize: '0x8'
   FullSize: '0xd8'
   InheritedSize: '0xd0'
@@ -184,80 +194,84 @@ TutorialHelpersBlueprintLibrary:
   Super: BlueprintFunctionLibrary
 TutorialManager:
   Attributes:
-  - Name: pad0x8_V1U8W[0x8]
+  - Name: pad0x8_NOR1E[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
   - Name: CompanyOnboardingStarterClass
     Offset: '0xd0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: MaidenVoyageStarterClass
     Offset: '0xd8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: BeachNPCSpawnFlowStarterClass
     Offset: '0xe0'
     Size: '0x8'
-    Type: class
-  - Name: CaptaincyStarterClass
+    Type: class UClass*
+  - Name: IntroductionToSOTFlowStarterClass
     Offset: '0xe8'
     Size: '0x8'
-    Type: class
-  - Name: CaptaincyNewShipStarterClass
+    Type: class UClass*
+  - Name: CaptaincyStarterClass
     Offset: '0xf0'
     Size: '0x8'
-    Type: class
-  - Name: CaptaincyWithBeachNPCSpawnStarterClass
+    Type: class UClass*
+  - Name: CaptaincyNewShipStarterClass
     Offset: '0xf8'
     Size: '0x8'
-    Type: class
-  - Name: SelectedTutorialClass
+    Type: class UClass*
+  - Name: CaptaincyWithBeachNPCSpawnStarterClass
     Offset: '0x100'
     Size: '0x8'
-    Type: class
-  - Name: SelectedTutorial
+    Type: class UClass*
+  - Name: SelectedTutorialClass
     Offset: '0x108'
     Size: '0x8'
-    Type: Class TutorialStarter*
-  - Name: TutorialType
+    Type: class UClass*
+  - Name: SelectedTutorial
     Offset: '0x110'
+    Size: '0x8'
+    Type: class TutorialStarter*
+  - Name: TutorialType
+    Offset: '0x118'
     Size: '0x1'
     Type: byte
   - Name: HasEverPlayedFirstPersonAnimation
-    Offset: '0x111'
+    Offset: '0x119'
     Size: '0x1'
     Type: bool
   - Name: HasStartedTutorial
-    Offset: '0x112'
+    Offset: '0x11a'
     Size: '0x1'
     Type: bool
   - Name: HasReceivedEntitlements
-    Offset: '0x113'
+    Offset: '0x11b'
     Size: '0x1'
     Type: bool
   - Name: HasPosessedPawn
-    Offset: '0x114'
+    Offset: '0x11c'
     Size: '0x1'
     Type: bool
   - Name: HasPlayerFinshedSpawning
-    Offset: '0x115'
+    Offset: '0x11d'
     Size: '0x1'
     Type: bool
   - Name: IsPlayerWaitingForCaptaincySessionResponse
-    Offset: '0x116'
+    Offset: '0x11e'
     Size: '0x1'
     Type: bool
   - Name: HasPlayerPromptsServiceSetup
-    Offset: '0x117'
+    Offset: '0x11f'
     Size: '0x1'
     Type: bool
-  - Name: pad0x20_IV8VU[0x20]
-    Offset: '0x118'
+  - Name: pad0x20_SJDLN[0x20]
+    Offset: '0x120'
     Size: '0x20'
     Type: char
-  ClassSize: '0x70'
-  FullSize: '0x138'
+  ClassSize: '0x78'
+  FullSize: '0x140'
   InheritedSize: '0xc8'
   Super: ActorComponent
 TutorialManagerInterface:
@@ -271,7 +285,7 @@ TutorialStarter:
   - Name: AthenaPlayerController
     Offset: '0x28'
     Size: '0x8'
-    Type: Class AthenaPlayerController*
+    Type: class AthenaPlayerController*
   - Name: ShouldPlayIntroAnimatic
     Offset: '0x30'
     Size: '0x1'
@@ -280,14 +294,14 @@ TutorialStarter:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_QUQAU[0x2]
+  - Name: pad0x2_33V5N[0x2]
     Offset: '0x32'
     Size: '0x2'
     Type: char
   - Name: IntroAnimationSettings
     Offset: '0x34'
     Size: '0x2c'
-    Type: Struct FirstPersonAnimaticSettings
+    Type: struct FirstPersonAnimaticSettings
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'

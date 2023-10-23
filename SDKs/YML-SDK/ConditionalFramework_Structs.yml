@@ -2,39 +2,67 @@
 # https://github.com/DougTheDruid
 AndCondition:
   Attributes:
+  - Name: pad0x8_COZMN[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Conditions
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct Conditions>
+    Type: TArray<struct ConditionInstance>
   ClassSize: '0x18'
 ConditionBase:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_I8GRP[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
 ConditionContextPayloadBase:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_CFHD9[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
 ConditionContextPayloadComponentOwnerSelector:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_WW3LU[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
 ConditionContextPayloadObjectSelector:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_Q9RO4[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
 ConditionContextPayloadSelectorBase:
   Attributes:
+  - Name: pad0x8_QFF8B[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: PayloadTarget
     Offset: '0x8'
     Size: '0x10'
-    Type: Struct ConditionContextPayloadTarget
+    Type: struct ConditionContextPayloadTarget
   ClassSize: '0x18'
 ConditionContextPayloadSelectorInstance:
-  Attributes: []
+  Attributes:
+  - Name: pad0x20_C9F9O[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x20'
 ConditionContextPayloadTarget:
   Attributes:
   - Name: PayloadStruct
     Offset: '0x0'
     Size: '0x8'
-    Type: Class ScriptStruct*
+    Type: class ScriptStruct*
   - Name: PayloadMember
     Offset: '0x8'
     Size: '0x8'
@@ -42,44 +70,84 @@ ConditionContextPayloadTarget:
   ClassSize: '0x10'
 ConditionFromAsset:
   Attributes:
+  - Name: pad0x8_CP9MR[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: ConditionAsset
     Offset: '0x8'
     Size: '0x8'
-    Type: Class ConditionRootAsset*
+    Type: class ConditionRootAsset*
   ClassSize: '0x10'
 ConditionInstance:
-  Attributes: []
+  Attributes:
+  - Name: pad0x20_81QM8[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x20'
 InstigatorConditionContextPayload:
   Attributes:
+  - Name: pad0x8_XZ8F2[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Instigator
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x10'
 IsFeatureEnabledCondition:
   Attributes:
+  - Name: pad0x8_IVHKR[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Feature
     Offset: '0x8'
     Size: '0xc'
-    Type: Struct FeatureFlag
+    Type: struct FeatureFlag
+  - Name: pad0x4_47N12[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
 IsGameOnSpecificPlayModeCondition:
   Attributes:
+  - Name: pad0x28_QJZ9X[0x28]
+    Offset: '0x0'
+    Size: '0x28'
+    Type: char
   - Name: TargetMode
     Offset: '0x28'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_95P60[0x7]
+    Offset: '0x29'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x30'
 IsGameOnSpecificPlayModeVariantCondition:
   Attributes:
+  - Name: pad0x28_CASKZ[0x28]
+    Offset: '0x0'
+    Size: '0x28'
+    Type: char
   - Name: TargetMode
     Offset: '0x28'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_LB0L5[0x7]
+    Offset: '0x29'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x30'
 IsObjectOfTypeCondition:
   Attributes:
+  - Name: pad0x28_3PP8G[0x28]
+    Offset: '0x0'
+    Size: '0x28'
+    Type: char
   - Name: TargetObjectClasses
     Offset: '0x28'
     Size: '0x10'
@@ -87,47 +155,71 @@ IsObjectOfTypeCondition:
   ClassSize: '0x38'
 IsSpecifiedActorCondition:
   Attributes:
+  - Name: pad0x8_PC1AQ[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: SpecifyingActorPayloadSelector
     Offset: '0x8'
     Size: '0x20'
-    Type: Struct ConditionContextPayloadSelectorInstance
+    Type: struct ConditionContextPayloadSelectorInstance
   - Name: TargetActorPayloadSelector
     Offset: '0x28'
     Size: '0x20'
-    Type: Struct ConditionContextPayloadSelectorInstance
+    Type: struct ConditionContextPayloadSelectorInstance
   ClassSize: '0x48'
 NotCondition:
   Attributes:
+  - Name: pad0x8_50RVZ[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Condition
     Offset: '0x8'
     Size: '0x20'
-    Type: Struct ConditionInstance
+    Type: struct ConditionInstance
   ClassSize: '0x28'
 OrCondition:
   Attributes:
+  - Name: pad0x8_I7R2D[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Conditions
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct Conditions>
+    Type: TArray<struct ConditionInstance>
   ClassSize: '0x18'
 TargetConditionContextPayload:
   Attributes:
+  - Name: pad0x8_K82C8[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Target
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x10'
 TargetedPayloadConditionBase:
   Attributes:
+  - Name: pad0x8_YXFCV[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: PayloadSelector
     Offset: '0x8'
     Size: '0x20'
-    Type: Struct ConditionContextPayloadSelectorInstance
+    Type: struct ConditionContextPayloadSelectorInstance
   ClassSize: '0x28'
 WorldObjectConditionContextPayload:
   Attributes:
+  - Name: pad0x8_C91Q8[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: WorldObject
     Offset: '0x8'
     Size: '0x8'
-    Type: Class World*
+    Type: class World*
   ClassSize: '0x10'

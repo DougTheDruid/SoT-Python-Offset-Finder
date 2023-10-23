@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 LevelAssetCachingService:
   Attributes:
-  - Name: pad0x18_EEQ8C[0x18]
+  - Name: pad0x18_KLKYK[0x18]
     Offset: '0x28'
     Size: '0x18'
     Type: char
@@ -10,7 +10,7 @@ LevelAssetCachingService:
     Offset: '0x40'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x28_HIDFQ[0x28]
+  - Name: pad0x28_LP8L1[0x28]
     Offset: '0x48'
     Size: '0x28'
     Type: char
@@ -20,15 +20,15 @@ LevelAssetCachingService:
   Super: Object
 RegionLookupGeneratedGrid:
   Attributes:
-  - Name: pad0x8_90GAU[0x8]
+  - Name: pad0x8_6LRWE[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
   - Name: WorldSetup
     Offset: '0x30'
     Size: '0x28'
-    Type: Struct WorldRegionSetup
-  - Name: pad0x58_5TQD4[0x58]
+    Type: struct WorldRegionSetup
+  - Name: pad0x58_SAPKT[0x58]
     Offset: '0x58'
     Size: '0x58'
     Type: char
@@ -43,22 +43,26 @@ RegionLookupInterface:
   InheritedSize: '0x28'
   Super: Interface
 RegionLookupSeaId:
-  Attributes: []
+  Attributes:
+  - Name: pad0x20_ZD8Y9[0x20]
+    Offset: '0x28'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
   Super: Object
 RegionalAssetCache:
   Attributes:
-  - Name: pad0x10_VRTIC[0x10]
+  - Name: pad0x10_RQP1K[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
   - Name: CurrentListAsset
     Offset: '0x38'
     Size: '0x8'
-    Type: Class RegionalAssetListDataAsset*
-  - Name: pad0x98_MASYU[0x98]
+    Type: class RegionalAssetListDataAsset*
+  - Name: pad0x98_VUEBL[0x98]
     Offset: '0x40'
     Size: '0x98'
     Type: char
@@ -77,19 +81,27 @@ RegionalAssetListDataAsset:
   - Name: RegionAssets
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct RegionAssets>
+    Type: TArray<struct StringAssetReference>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 RegionalAssetListSetupDataAsset:
-  Attributes: []
+  Attributes:
+  - Name: pad0x50_MIH51[0x50]
+    Offset: '0x28'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x50'
   FullSize: '0x78'
   InheritedSize: '0x28'
   Super: DataAsset
 RegionalAssetListWorldSetupDataAsset:
-  Attributes: []
+  Attributes:
+  - Name: pad0x50_2AL1H[0x50]
+    Offset: '0x28'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x50'
   FullSize: '0x78'
   InheritedSize: '0x28'

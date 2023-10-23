@@ -14,13 +14,13 @@
     "Attributes": [
       {
         "Name": "MediaTexture",
-        "Type": "Class MediaTexture*",
+        "Type": "class MediaTexture*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "MediaPlayer",
-        "Type": "Class MediaPlayer*",
+        "Type": "class MediaPlayer*",
         "Size": "0x8",
         "Offset": "0xd0"
       }
@@ -34,12 +34,12 @@
     "Attributes": [
       {
         "Name": "Time",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x8_AQ966[0x8]",
+        "Name": "pad0x8_MQYB6[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x30"
@@ -53,26 +53,26 @@
     "ClassSize": "0x148",
     "Attributes": [
       {
-        "Name": "pad0x80_9ZDS8[0x80]",
+        "Name": "pad0x80_BHDA3[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0x28"
       },
       {
         "Name": "CacheAhead",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0xa8"
       },
       {
         "Name": "CacheBehind",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0xb0"
       },
       {
         "Name": "CacheBehindGame",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0xb8"
       },
@@ -89,7 +89,7 @@
         "Offset": "0xc1"
       },
       {
-        "Name": "pad0x2_324CI[0x2]",
+        "Name": "pad0x2_2EZIA[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xc2"
@@ -107,14 +107,14 @@
         "Offset": "0xc4"
       },
       {
-        "Name": "pad0x3_REK8O[0x3]",
+        "Name": "pad0x3_2TH9C[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xc5"
       },
       {
         "Name": "Playlist",
-        "Type": "Class MediaPlaylist*",
+        "Type": "class MediaPlaylist*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
@@ -125,14 +125,14 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x4_IVLD1[0x4]",
+        "Name": "pad0x4_NPUG5[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xd4"
       },
       {
         "Name": "TimeDelay",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0xd8"
       },
@@ -150,24 +150,24 @@
       },
       {
         "Name": "ViewRotation",
-        "Type": "Struct Rotator",
+        "Type": "struct Rotator",
         "Size": "0xc",
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x64_EEPLA[0x64]",
+        "Name": "pad0x64_IYHBJ[0x64]",
         "Type": "char",
         "Size": "0x64",
         "Offset": "0xf4"
       },
       {
         "Name": "PlayerGuid",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x158"
       },
       {
-        "Name": "pad0x8_47SZD[0x8]",
+        "Name": "pad0x8_WHFLF[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x168"
@@ -193,7 +193,14 @@
     "FullSize": "0x80",
     "InheritedSize": "0x28",
     "ClassSize": "0x58",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x58_VD2SL[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x28"
+      }
+    ]
   },
   "BaseMediaSource": {
     "Super": "MediaSource",
@@ -217,7 +224,7 @@
     "Attributes": [
       {
         "Name": "FilePath",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x88"
       },
@@ -228,7 +235,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x17_DJCJO[0x17]",
+        "Name": "pad0x17_JM2TQ[0x17]",
         "Type": "char",
         "Size": "0x17",
         "Offset": "0x99"
@@ -243,7 +250,7 @@
     "Attributes": [
       {
         "Name": "StreamUrl",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -262,7 +269,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x3_LKTS1[0x3]",
+        "Name": "pad0x3_AC2YD[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x89"
@@ -289,7 +296,7 @@
     "Attributes": [
       {
         "Name": "MediaSource",
-        "Type": "Class MediaSource*",
+        "Type": "class MediaSource*",
         "Size": "0x8",
         "Offset": "0x80"
       }
@@ -320,14 +327,14 @@
         "Offset": "0x13a"
       },
       {
-        "Name": "pad0x1_NFFHO[0x1]",
+        "Name": "pad0x1_47FOM[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x13b"
       },
       {
         "Name": "ClearColor",
-        "Type": "Struct LinearColor",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x13c"
       },
@@ -368,19 +375,19 @@
         "Offset": "0x154"
       },
       {
-        "Name": "pad0x3_7YNUV[0x3]",
+        "Name": "pad0x3_OSOGI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x155"
       },
       {
         "Name": "MediaPlayer",
-        "Type": "Class MediaPlayer*",
+        "Type": "class MediaPlayer*",
         "Size": "0x8",
         "Offset": "0x158"
       },
       {
-        "Name": "pad0xc8_Q9PBQ[0xc8]",
+        "Name": "pad0xc8_7P9E6[0xc8]",
         "Type": "char",
         "Size": "0xc8",
         "Offset": "0x160"

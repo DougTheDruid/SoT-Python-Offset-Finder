@@ -4,19 +4,19 @@
     "Attributes": [
       {
         "Name": "VFX",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Sfx",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "SecondarySFX",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x10"
       },
@@ -28,9 +28,15 @@
       },
       {
         "Name": "AmbientLightColour",
-        "Type": "Struct LinearColor",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x1c"
+      },
+      {
+        "Name": "pad0x4_KBJTB[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
       }
     ]
   },
@@ -38,44 +44,50 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
+        "Name": "pad0xc_OBL9I[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
         "Name": "FireworkAmbientLightData",
-        "Type": "Struct FireworkAmbientLightData",
+        "Type": "struct FireworkAmbientLightData",
         "Size": "0x14",
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x8_0THLK[0x8]",
+        "Name": "pad0x8_29YM1[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x20"
       },
       {
         "Name": "ExplosionData",
-        "Type": "TArray<struct ExplosionData>",
+        "Type": "TArray<struct FireworkExplosionData>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "SfxPool",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "LaunchSfx",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x8_FLDG9[0x8]",
+        "Name": "pad0x8_23TYS[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x48"
       },
       {
         "Name": "FireworkFeedbackData",
-        "Type": "Class FireworkFeedbackDataAsset*",
+        "Type": "class FireworkFeedbackDataAsset*",
         "Size": "0x8",
         "Offset": "0x50"
       }
@@ -85,22 +97,34 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
+        "Name": "pad0x8_A6E8P[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
         "Name": "VFX",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "Sfx",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
         "Name": "SecondarySFX",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x20_IS42Q[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x20"
       }
     ]
   },
@@ -139,12 +163,29 @@
       }
     ]
   },
+  "FireworkSequentialSelectionType": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "SelectionIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TimeUntilNextExplosion",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "WeightedProjectileMeshAnimationData": {
     "ClassSize": "0x178",
     "Attributes": [
       {
         "Name": "AnimationCurve",
-        "Type": "Struct RuntimeVectorCurve",
+        "Type": "struct RuntimeVectorCurve",
         "Size": "0x170",
         "Offset": "0x0"
       },
@@ -153,6 +194,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x170"
+      },
+      {
+        "Name": "pad0x4_E5F0Q[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x174"
       }
     ]
   },

@@ -19,7 +19,7 @@ struct ActiveNPCDemands
 {
 public:
 	TArray<UInt32 NPCIdHashes>                                   NPCIdHashes;                                       // 0x0(0x10)
-	TArray<struct NPCDemands>                                    NPCDemands;                                        // 0x10(0x10)
+	TArray<struct ActiveCommodityDemands>                        NPCDemands;                                        // 0x10(0x10)
 };
 
 
@@ -45,8 +45,8 @@ public:
 struct CommodityDescWithRedeemId
 {
 public:
-	Struct CommoditySelectionType                                RedeemId;                                          // 0x0(0x8)
-	class                                                        RedeemItemDesc;                                    // 0x8(0x8)
+	struct CommoditySelectionType                                RedeemId;                                          // 0x0(0x8)
+	class UClass*                                                RedeemItemDesc;                                    // 0x8(0x8)
 };
 
 
@@ -54,8 +54,8 @@ public:
 struct EntitlementToRedeemItems
 {
 public:
-	class                                                        RequiredEntitlement;                               // 0x0(0x8)
-	TArray<struct RedeemItems>                                   RedeemItems;                                       // 0x8(0x10)
+	class UClass*                                                RequiredEntitlement;                               // 0x0(0x8)
+	TArray<struct CommodityDescWithRedeemId>                     RedeemItems;                                       // 0x8(0x10)
 };
 
 
@@ -63,6 +63,7 @@ public:
 struct CommoditySourceMetaWrapper
 {
 public:
+	char                                                         pad0x18_7OXOW[0x18];                               // 0x0(0x18)
 	struct FName                                                 NPCIdentifier;                                     // 0x18(0x8)
 	struct FName                                                 IslandIdentifier;                                  // 0x20(0x8)
 };
@@ -81,6 +82,7 @@ public:
 struct EventCommodityCrateRedeemed
 {
 public:
+	char                                                         pad0x18_JCO23[0x18];                               // 0x0(0x18)
 };
 
 
@@ -88,8 +90,10 @@ public:
 struct CommodityRedemptionTrackingModel
 {
 public:
+	char                                                         pad0x2_WS5SX[0x2];                                 // 0x0(0x2)
 	byte                                                         NPCName;                                           // 0x2(0x1)
-	char                                                         pad0x5_WQREU[0x5];                                 // 0x3(0x5)
+	char                                                         pad0x5_AZI3I[0x5];                                 // 0x3(0x5)
+	char                                                         pad0x8_LVC5T[0x8];                                 // 0x8(0x8)
 };
 
 
@@ -97,9 +101,10 @@ public:
 struct CommodityTrackingModel
 {
 public:
-	Struct Guid                                                  ItemOfferId;                                       // 0x0(0x10)
+	struct Guid                                                  ItemOfferId;                                       // 0x0(0x10)
 	byte                                                         NPCName;                                           // 0x10(0x1)
-	char                                                         pad0x7_VWOJA[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_TUH67[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x8_CDRWK[0x8];                                 // 0x18(0x8)
 };
 
 
@@ -107,10 +112,11 @@ public:
 struct TrackCommodityPurchaseOnServerRpc
 {
 public:
-	Class Object*                                                CommodityDemandStorageObject;                      // 0x10(0x8)
+	char                                                         pad0x10_L7SY2[0x10];                               // 0x0(0x10)
+	class Object*                                                CommodityDemandStorageObject;                      // 0x10(0x8)
 	struct FName                                                 NPCName;                                           // 0x18(0x8)
-	Struct Guid                                                  ItemOfferId;                                       // 0x20(0x10)
-	Struct FString                                               ItemClientId;                                      // 0x30(0x10)
+	struct Guid                                                  ItemOfferId;                                       // 0x20(0x10)
+	struct FString                                               ItemClientId;                                      // 0x30(0x10)
 };
 
 

@@ -5,15 +5,15 @@ BP_LargeShipLadderMainMast_C:
   - Name: Interactable
     Offset: '0x5e0'
     Size: '0x8'
-    Type: Class InteractableComponent*
+    Type: class InteractableComponent*
   - Name: OnTopSplinePositions
     Offset: '0x5e8'
     Size: '0x10'
-    Type: TArray<struct OnTopSplinePositions>
+    Type: TArray<struct Vector>
   - Name: OffTopSplinePositions
     Offset: '0x5f8'
     Size: '0x10'
-    Type: TArray<struct OffTopSplinePositions>
+    Type: TArray<struct Vector>
   ClassSize: '0x28'
   FullSize: '0x608'
   InheritedSize: '0x5e0'

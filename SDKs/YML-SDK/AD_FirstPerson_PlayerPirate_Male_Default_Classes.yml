@@ -5,59 +5,59 @@ AD_FirstPerson_PlayerPirate_Male_Default_C:
   - Name: Idles
     Offset: '0x78'
     Size: '0x10'
-    Type: Struct ADS_IdlesNative
+    Type: struct ADS_IdlesNative
   - Name: Locomotion
     Offset: '0x88'
     Size: '0x50'
-    Type: Struct ADS_LocomotionNative
+    Type: struct ADS_LocomotionNative
   - Name: Jumping
     Offset: '0xd8'
     Size: '0x78'
-    Type: Struct ADS_JumpingNative
+    Type: struct ADS_JumpingNative
   - Name: Swimming
     Offset: '0x150'
     Size: '0x68'
-    Type: Struct ADS_SwimmingNative
+    Type: struct ADS_SwimmingNative
   - Name: Wheel
     Offset: '0x1b8'
     Size: '0x88'
-    Type: Struct ADS_WheelNative
+    Type: struct ADS_WheelNative
   - Name: Capstan
     Offset: '0x240'
     Size: '0x68'
-    Type: Struct ADS_CapstanNative
+    Type: struct ADS_CapstanNative
   - Name: CameraAdditive
     Offset: '0x2a8'
     Size: '0x50'
-    Type: Struct ADS_CameraAdditiveNative
+    Type: struct ADS_CameraAdditiveNative
   - Name: Items
     Offset: '0x2f8'
     Size: '0x10'
-    Type: Struct ADS_ObjectsNative
+    Type: struct ADS_ObjectsNative
   - Name: Sockets
     Offset: '0x308'
     Size: '0x2'
-    Type: Struct ADS_Sockets
-  - Name: pad0x6_NWMTC[0x6]
+    Type: struct ADS_Sockets
+  - Name: pad0x6_0Y0CQ[0x6]
     Offset: '0x30a'
     Size: '0x6'
     Type: char
   - Name: Cannon
     Offset: '0x310'
     Size: '0x38'
-    Type: Struct ADS_CannonNative
+    Type: struct ADS_CannonNative
   - Name: Rowboat
     Offset: '0x348'
     Size: '0x98'
-    Type: Struct ADS_RowingBoatNative
+    Type: struct ADS_RowingBoatNative
   - Name: WaterPump
     Offset: '0x3e0'
     Size: '0x28'
-    Type: Struct ADS_WaterPumpNative
+    Type: struct ADS_WaterPumpNative
   - Name: Facial
     Offset: '0x408'
     Size: '0x90'
-    Type: Struct ADS_FacialNative
+    Type: struct ADS_FacialNative
   ClassSize: '0x420'
   FullSize: '0x498'
   InheritedSize: '0x78'

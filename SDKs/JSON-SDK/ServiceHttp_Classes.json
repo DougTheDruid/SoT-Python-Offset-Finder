@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "DiscoveryServiceUrl",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -24,26 +24,26 @@
         "Offset": "0x39"
       },
       {
-        "Name": "pad0x6_V8W8L[0x6]",
+        "Name": "pad0x6_I6WDF[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x3a"
       },
       {
         "Name": "SubStringToFindInUrlForXBLiveTokenRequest",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "UrlReplacementStringForXBLiveTokenRequest",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "CustomBuildVersionTag",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x60"
       }
@@ -57,31 +57,31 @@
     "Attributes": [
       {
         "Name": "SandboxId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "TokenServiceUrl",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "ClientId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
         "Name": "ClientSecret",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "LivePrivileges",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x68"
       }

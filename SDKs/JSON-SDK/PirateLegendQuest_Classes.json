@@ -12,20 +12,20 @@
         "Offset": "0x400"
       },
       {
-        "Name": "pad0x4_6HKHJ[0x4]",
+        "Name": "pad0x4_O3ATL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x404"
       },
       {
         "Name": "LockComponent",
-        "Type": "Class LockComponent*",
+        "Type": "class LockComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
         "Name": "StaticMeshComponent",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       }
@@ -38,43 +38,43 @@
     "ClassSize": "0x120",
     "Attributes": [
       {
-        "Name": "pad0x20_K4TTY[0x20]",
+        "Name": "pad0x20_UMJ7Q[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x60"
       },
       {
         "Name": "World",
-        "Type": "Class World*",
+        "Type": "class World*",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "GameState",
-        "Type": "Class GameState*",
+        "Type": "class GameState*",
         "Size": "0x8",
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x8_J3ZCP[0x8]",
+        "Name": "pad0x8_M2ADL[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x90"
       },
       {
         "Name": "TrackedVeil",
-        "Type": "Class VeilOfTheAncients*",
+        "Type": "class VeilOfTheAncients*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
         "Name": "Ship",
-        "Type": "Class Ship*",
+        "Type": "class Ship*",
         "Size": "0x8",
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0xd8_7RZCS[0xd8]",
+        "Name": "pad0xd8_ENQAC[0xd8]",
         "Type": "char",
         "Size": "0xd8",
         "Offset": "0xa8"
@@ -103,7 +103,7 @@
     "Attributes": [
       {
         "Name": "QuestVeil",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       }

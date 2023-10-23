@@ -17,7 +17,7 @@ public:
 class WorldEdgeItemServiceParams: public DataAsset
 {
 public:
-	Class EnvQuery*                                              TeleportItemsEQSQuery;                             // 0x28(0x8)
+	class EnvQuery*                                              TeleportItemsEQSQuery;                             // 0x28(0x8)
 	float                                                        ThrottledItemSpawnRate;                            // 0x30(0x4)
 	float                                                        TimeToSinkFor;                                     // 0x34(0x4)
 	float                                                        AdditionalMoveDistance;                            // 0x38(0x4)
@@ -29,10 +29,10 @@ public:
 class WorldEdgeItemService: public Actor
 {
 public:
-	char                                                         pad0x8_T029C[0x8];                                 // 0x3c8(0x8)
-	Class WorldEdgeItemServiceParams*                            WorldEdgeItemParameters;                           // 0x3d0(0x8)
-	Struct EnvQueryRequest                                       SpawnItemEQSRequest;                               // 0x3d8(0x170)
-	char                                                         pad0xd8_FUZVP[0xd8];                               // 0x548(0xd8)
+	char                                                         pad0x8_3BSWT[0x8];                                 // 0x3c8(0x8)
+	class WorldEdgeItemServiceParams*                            WorldEdgeItemParameters;                           // 0x3d0(0x8)
+	struct EnvQueryRequest                                       SpawnItemEQSRequest;                               // 0x3d8(0x170)
+	char                                                         pad0xd8_C2PK0[0xd8];                               // 0x548(0xd8)
 };
 
 

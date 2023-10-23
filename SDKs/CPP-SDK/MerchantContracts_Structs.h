@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 struct MerchantContractItemDesc
 {
 public:
-	class                                                        AllocatedCrate;                                    // 0x0(0x8)
-	TArray<struct ItemData>                                      ItemData;                                          // 0x8(0x10)
-	class                                                        FaunaSpecies;                                      // 0x18(0x8)
-	class                                                        FaunaBreed;                                        // 0x20(0x8)
+	class UClass*                                                AllocatedCrate;                                    // 0x0(0x8)
+	TArray<struct ItemAndReward>                                 ItemData;                                          // 0x8(0x10)
+	class UClass*                                                FaunaSpecies;                                      // 0x18(0x8)
+	class UClass*                                                FaunaBreed;                                        // 0x20(0x8)
 };
 
 
@@ -21,8 +21,8 @@ public:
 struct ItemAndReward
 {
 public:
-	class                                                        ItemDesc;                                          // 0x0(0x8)
-	Struct RewardId                                              HandInOnTimeRewardId;                              // 0x8(0x8)
+	class UClass*                                                ItemDesc;                                          // 0x0(0x8)
+	struct RewardId                                              HandInOnTimeRewardId;                              // 0x8(0x8)
 };
 
 
@@ -31,11 +31,12 @@ struct MerchantContractDeliveryRequest
 {
 public:
 	int                                                          Id;                                                // 0x0(0x4)
-	char                                                         pad0x4_SVFYT[0x4];                                 // 0x4(0x4)
-	Struct MerchantContractItemDesc                              ItemDesc;                                          // 0x8(0x28)
+	char                                                         pad0x4_79OTA[0x4];                                 // 0x4(0x4)
+	struct MerchantContractItemDesc                              ItemDesc;                                          // 0x8(0x28)
 	int                                                          NumToAllocate;                                     // 0x30(0x4)
 	int                                                          NumToCollect;                                      // 0x34(0x4)
 	int                                                          NumToDeliver;                                      // 0x38(0x4)
+	char                                                         pad0x4_QG0YD[0x4];                                 // 0x3c(0x4)
 };
 
 
@@ -43,7 +44,9 @@ public:
 struct MerchantContract
 {
 public:
-	TArray<struct DeliveryRequests>                              DeliveryRequests;                                  // 0x18(0x10)
+	char                                                         pad0x18_7TV6R[0x18];                               // 0x0(0x18)
+	TArray<struct MerchantContractDeliveryRequest>               DeliveryRequests;                                  // 0x18(0x10)
+	char                                                         pad0x98_N7MV1[0x98];                               // 0x28(0x98)
 };
 
 
@@ -51,9 +54,9 @@ public:
 struct PlayerMerchantContract
 {
 public:
-	Struct Guid                                                  Id;                                                // 0x0(0x10)
+	struct Guid                                                  Id;                                                // 0x0(0x10)
 	struct FName                                                 IslandName;                                        // 0x10(0x8)
-	TArray<struct Requests>                                      Requests;                                          // 0x18(0x10)
+	TArray<struct MerchantContractDeliveryRequest>               Requests;                                          // 0x18(0x10)
 };
 
 

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ItemQualityComponent:
   Attributes:
-  - Name: pad0x8_P12A7[0x8]
+  - Name: pad0x8_FPVI0[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -10,26 +10,26 @@ ItemQualityComponent:
     Offset: '0xd0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_GAA2H[0x7]
+  - Name: pad0x7_GCMVB[0x7]
     Offset: '0xd1'
     Size: '0x7'
     Type: char
   - Name: CompanySpecificItemQualityLevels
     Offset: '0xd8'
     Size: '0x10'
-    Type: TArray<struct CompanySpecificItemQualityLevels>
+    Type: TArray<struct PerComanyItemQualityEntry>
   - Name: CompanySpecificComplexItemQualityLevels
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<struct CompanySpecificComplexItemQualityLevels>
+    Type: TArray<struct PerComanyComplexItemQualityEntry>
   - Name: CompanySpecificComplexItemQualityLevelsHandin
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<struct CompanySpecificComplexItemQualityLevelsHandin>
+    Type: TArray<struct PerComanyComplexItemQualityEntry>
   - Name: GuildSettings
     Offset: '0x108'
     Size: '0x8'
-    Type: Class GuildSettings*
+    Type: class GuildSettings*
   ClassSize: '0x48'
   FullSize: '0x110'
   InheritedSize: '0xc8'

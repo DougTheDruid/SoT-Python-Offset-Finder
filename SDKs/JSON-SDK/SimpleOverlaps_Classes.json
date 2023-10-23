@@ -11,7 +11,14 @@
     "FullSize": "0xd0",
     "InheritedSize": "0xc8",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_X8TG9[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      }
+    ]
   },
   "SimpleOverlapZone": {
     "Super": "Actor",
@@ -20,14 +27,14 @@
     "ClassSize": "0xd8",
     "Attributes": [
       {
-        "Name": "pad0xc8_FAV10[0xc8]",
+        "Name": "pad0xc8_8TSTU[0xc8]",
         "Type": "char",
         "Size": "0xc8",
         "Offset": "0x3c8"
       },
       {
         "Name": "CollisionMesh",
-        "Type": "Class BoxComponent*",
+        "Type": "class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x490"
       },
@@ -38,7 +45,7 @@
         "Offset": "0x498"
       },
       {
-        "Name": "pad0x7_BDAS4[0x7]",
+        "Name": "pad0x7_Q2B26[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x499"

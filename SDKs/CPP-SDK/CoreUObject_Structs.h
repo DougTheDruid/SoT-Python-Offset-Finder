@@ -58,8 +58,8 @@ public:
 struct TwoVectors
 {
 public:
-	Struct Vector                                                v1;                                                // 0x0(0xc)
-	Struct Vector                                                v2;                                                // 0xc(0xc)
+	struct Vector                                                v1;                                                // 0x0(0xc)
+	struct Vector                                                v2;                                                // 0xc(0xc)
 };
 
 
@@ -67,6 +67,7 @@ public:
 struct Plane
 {
 public:
+	char                                                         pad0xc_9ZGO1[0xc];                                 // 0x0(0xc)
 	float                                                        W;                                                 // 0xc(0x4)
 };
 
@@ -148,9 +149,10 @@ public:
 struct Box
 {
 public:
-	Struct Vector                                                Min;                                               // 0x0(0xc)
-	Struct Vector                                                Max;                                               // 0xc(0xc)
+	struct Vector                                                Min;                                               // 0x0(0xc)
+	struct Vector                                                Max;                                               // 0xc(0xc)
 	byte                                                         IsValid;                                           // 0x18(0x1)
+	char                                                         pad0x3_Z1W5F[0x3];                                 // 0x19(0x3)
 };
 
 
@@ -158,9 +160,10 @@ public:
 struct Box2D
 {
 public:
-	Struct Vector2D                                              Min;                                               // 0x0(0x8)
-	Struct Vector2D                                              Max;                                               // 0x8(0x8)
+	struct Vector2D                                              Min;                                               // 0x0(0x8)
+	struct Vector2D                                              Max;                                               // 0x8(0x8)
 	byte                                                         IsValid;                                           // 0x10(0x1)
+	char                                                         pad0x3_QX3L8[0x3];                                 // 0x11(0x3)
 };
 
 
@@ -168,8 +171,8 @@ public:
 struct BoxSphereBounds
 {
 public:
-	Struct Vector                                                Origin;                                            // 0x0(0xc)
-	Struct Vector                                                BoxExtent;                                         // 0xc(0xc)
+	struct Vector                                                Origin;                                            // 0x0(0xc)
+	struct Vector                                                BoxExtent;                                         // 0xc(0xc)
 	float                                                        SphereRadius;                                      // 0x18(0x4)
 };
 
@@ -178,10 +181,10 @@ public:
 struct OrientedBox
 {
 public:
-	Struct Vector                                                Center;                                            // 0x0(0xc)
-	Struct Vector                                                AxisX;                                             // 0xc(0xc)
-	Struct Vector                                                AxisY;                                             // 0x18(0xc)
-	Struct Vector                                                AxisZ;                                             // 0x24(0xc)
+	struct Vector                                                Center;                                            // 0x0(0xc)
+	struct Vector                                                AxisX;                                             // 0xc(0xc)
+	struct Vector                                                AxisY;                                             // 0x18(0xc)
+	struct Vector                                                AxisZ;                                             // 0x24(0xc)
 	float                                                        ExtentX;                                           // 0x30(0x4)
 	float                                                        ExtentY;                                           // 0x34(0x4)
 	float                                                        ExtentZ;                                           // 0x38(0x4)
@@ -192,10 +195,10 @@ public:
 struct Matrix
 {
 public:
-	Struct Plane                                                 XPlane;                                            // 0x0(0x10)
-	Struct Plane                                                 YPlane;                                            // 0x10(0x10)
-	Struct Plane                                                 ZPlane;                                            // 0x20(0x10)
-	Struct Plane                                                 WPlane;                                            // 0x30(0x10)
+	struct Plane                                                 XPlane;                                            // 0x0(0x10)
+	struct Plane                                                 YPlane;                                            // 0x10(0x10)
+	struct Plane                                                 ZPlane;                                            // 0x20(0x10)
+	struct Plane                                                 WPlane;                                            // 0x30(0x10)
 };
 
 
@@ -208,6 +211,7 @@ public:
 	float                                                        ArriveTangent;                                     // 0x8(0x4)
 	float                                                        LeaveTangent;                                      // 0xc(0x4)
 	byte                                                         InterpMode;                                        // 0x10(0x1)
+	char                                                         pad0x3_PUW0R[0x3];                                 // 0x11(0x3)
 };
 
 
@@ -215,9 +219,9 @@ public:
 struct InterpCurveFloat
 {
 public:
-	TArray<struct Points>                                        Points;                                            // 0x0(0x10)
+	TArray<struct InterpCurvePointFloat>                         Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_Z4PCF[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_G1BH7[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -227,10 +231,11 @@ struct InterpCurvePointVector2D
 {
 public:
 	float                                                        InVal;                                             // 0x0(0x4)
-	Struct Vector2D                                              OutVal;                                            // 0x4(0x8)
-	Struct Vector2D                                              ArriveTangent;                                     // 0xc(0x8)
-	Struct Vector2D                                              LeaveTangent;                                      // 0x14(0x8)
+	struct Vector2D                                              OutVal;                                            // 0x4(0x8)
+	struct Vector2D                                              ArriveTangent;                                     // 0xc(0x8)
+	struct Vector2D                                              LeaveTangent;                                      // 0x14(0x8)
 	byte                                                         InterpMode;                                        // 0x1c(0x1)
+	char                                                         pad0x3_I69NN[0x3];                                 // 0x1d(0x3)
 };
 
 
@@ -238,9 +243,9 @@ public:
 struct InterpCurveVector2D
 {
 public:
-	TArray<struct Points>                                        Points;                                            // 0x0(0x10)
+	TArray<struct InterpCurvePointVector2D>                      Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_2F3HE[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_QHNTI[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -250,10 +255,11 @@ struct InterpCurvePointVector
 {
 public:
 	float                                                        InVal;                                             // 0x0(0x4)
-	Struct Vector                                                OutVal;                                            // 0x4(0xc)
-	Struct Vector                                                ArriveTangent;                                     // 0x10(0xc)
-	Struct Vector                                                LeaveTangent;                                      // 0x1c(0xc)
+	struct Vector                                                OutVal;                                            // 0x4(0xc)
+	struct Vector                                                ArriveTangent;                                     // 0x10(0xc)
+	struct Vector                                                LeaveTangent;                                      // 0x1c(0xc)
 	byte                                                         InterpMode;                                        // 0x28(0x1)
+	char                                                         pad0x3_J5PY2[0x3];                                 // 0x29(0x3)
 };
 
 
@@ -261,9 +267,9 @@ public:
 struct InterpCurveVector
 {
 public:
-	TArray<struct Points>                                        Points;                                            // 0x0(0x10)
+	TArray<struct InterpCurvePointVector>                        Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_G8VCG[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_9E67H[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -273,11 +279,12 @@ struct InterpCurvePointQuat
 {
 public:
 	float                                                        InVal;                                             // 0x0(0x4)
-	char                                                         pad0xc_E11EH[0xc];                                 // 0x4(0xc)
-	Struct Quat                                                  OutVal;                                            // 0x10(0x10)
-	Struct Quat                                                  ArriveTangent;                                     // 0x20(0x10)
-	Struct Quat                                                  LeaveTangent;                                      // 0x30(0x10)
+	char                                                         pad0xc_HS1GV[0xc];                                 // 0x4(0xc)
+	struct Quat                                                  OutVal;                                            // 0x10(0x10)
+	struct Quat                                                  ArriveTangent;                                     // 0x20(0x10)
+	struct Quat                                                  LeaveTangent;                                      // 0x30(0x10)
 	byte                                                         InterpMode;                                        // 0x40(0x1)
+	char                                                         pad0xf_CST9V[0xf];                                 // 0x41(0xf)
 };
 
 
@@ -285,9 +292,9 @@ public:
 struct InterpCurveQuat
 {
 public:
-	TArray<struct Points>                                        Points;                                            // 0x0(0x10)
+	TArray<struct InterpCurvePointQuat>                          Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_JFRRM[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_7PQVI[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -297,10 +304,11 @@ struct InterpCurvePointTwoVectors
 {
 public:
 	float                                                        InVal;                                             // 0x0(0x4)
-	Struct TwoVectors                                            OutVal;                                            // 0x4(0x18)
-	Struct TwoVectors                                            ArriveTangent;                                     // 0x1c(0x18)
-	Struct TwoVectors                                            LeaveTangent;                                      // 0x34(0x18)
+	struct TwoVectors                                            OutVal;                                            // 0x4(0x18)
+	struct TwoVectors                                            ArriveTangent;                                     // 0x1c(0x18)
+	struct TwoVectors                                            LeaveTangent;                                      // 0x34(0x18)
 	byte                                                         InterpMode;                                        // 0x4c(0x1)
+	char                                                         pad0x3_LZTD5[0x3];                                 // 0x4d(0x3)
 };
 
 
@@ -308,9 +316,9 @@ public:
 struct InterpCurveTwoVectors
 {
 public:
-	TArray<struct Points>                                        Points;                                            // 0x0(0x10)
+	TArray<struct InterpCurvePointTwoVectors>                    Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_WOOQ7[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_T50VK[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -320,10 +328,11 @@ struct InterpCurvePointLinearColor
 {
 public:
 	float                                                        InVal;                                             // 0x0(0x4)
-	Struct LinearColor                                           OutVal;                                            // 0x4(0x10)
-	Struct LinearColor                                           ArriveTangent;                                     // 0x14(0x10)
-	Struct LinearColor                                           LeaveTangent;                                      // 0x24(0x10)
+	struct LinearColor                                           OutVal;                                            // 0x4(0x10)
+	struct LinearColor                                           ArriveTangent;                                     // 0x14(0x10)
+	struct LinearColor                                           LeaveTangent;                                      // 0x24(0x10)
 	byte                                                         InterpMode;                                        // 0x34(0x1)
+	char                                                         pad0x3_RV99K[0x3];                                 // 0x35(0x3)
 };
 
 
@@ -331,9 +340,9 @@ public:
 struct InterpCurveLinearColor
 {
 public:
-	TArray<struct Points>                                        Points;                                            // 0x0(0x10)
+	TArray<struct InterpCurvePointLinearColor>                   Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_3N4D1[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_HWCT3[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -342,10 +351,11 @@ public:
 struct Transform
 {
 public:
-	Struct Quat                                                  Rotation;                                          // 0x0(0x10)
-	Struct Vector                                                Translation;                                       // 0x10(0xc)
-	char                                                         pad0x4_E68NF[0x4];                                 // 0x1c(0x4)
-	Struct Vector                                                Scale3D;                                           // 0x20(0xc)
+	struct Quat                                                  Rotation;                                          // 0x0(0x10)
+	struct Vector                                                Translation;                                       // 0x10(0xc)
+	char                                                         pad0x4_ALULH[0x4];                                 // 0x1c(0x4)
+	struct Vector                                                Scale3D;                                           // 0x20(0xc)
+	char                                                         pad0x4_XU92Y[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -362,6 +372,7 @@ public:
 struct DateTime
 {
 public:
+	char                                                         pad0x8_V0RP1[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -369,6 +380,7 @@ public:
 struct Timespan
 {
 public:
+	char                                                         pad0x8_ZCIAO[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -376,7 +388,7 @@ public:
 struct StringAssetReference
 {
 public:
-	Struct FString                                               AssetLongPathname;                                 // 0x0(0x10)
+	struct FString                                               AssetLongPathname;                                 // 0x0(0x10)
 };
 
 
@@ -384,6 +396,7 @@ public:
 struct StringClassReference
 {
 public:
+	char                                                         pad0x10_ZYVEG[0x10];                               // 0x0(0x10)
 };
 
 
@@ -391,6 +404,7 @@ public:
 struct FallbackStruct
 {
 public:
+	char                                                         pad0x1_F0XND[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -399,7 +413,7 @@ struct FloatRangeBound
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_6A1XZ[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_OZ95Z[0x3];                                 // 0x1(0x3)
 	float                                                        Value;                                             // 0x4(0x4)
 };
 
@@ -408,8 +422,8 @@ public:
 struct FloatRange
 {
 public:
-	Struct FloatRangeBound                                       LowerBound;                                        // 0x0(0x8)
-	Struct FloatRangeBound                                       UpperBound;                                        // 0x8(0x8)
+	struct FloatRangeBound                                       LowerBound;                                        // 0x0(0x8)
+	struct FloatRangeBound                                       UpperBound;                                        // 0x8(0x8)
 };
 
 
@@ -418,7 +432,7 @@ struct Int32RangeBound
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_XOTJS[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_FD8UE[0x3];                                 // 0x1(0x3)
 	int                                                          Value;                                             // 0x4(0x4)
 };
 
@@ -427,8 +441,8 @@ public:
 struct Int32Range
 {
 public:
-	Struct Int32RangeBound                                       LowerBound;                                        // 0x0(0x8)
-	Struct Int32RangeBound                                       UpperBound;                                        // 0x8(0x8)
+	struct Int32RangeBound                                       LowerBound;                                        // 0x0(0x8)
+	struct Int32RangeBound                                       UpperBound;                                        // 0x8(0x8)
 };
 
 

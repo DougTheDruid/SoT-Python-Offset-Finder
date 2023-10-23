@@ -5,14 +5,14 @@ ShantyPuzzleCompleteEvent:
   - Name: ParticipatingCrews
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct ParticipatingCrews>
+    Type: TArray<struct Guid>
   ClassSize: '0x10'
 ShantyPuzzleInteractionZoneDefinition:
   Attributes:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: Radius
     Offset: '0xc'
     Size: '0x4'
@@ -21,7 +21,7 @@ ShantyPuzzleInteractionZoneDefinition:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_UA5E0[0x3]
+  - Name: pad0x3_Q939T[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -35,40 +35,56 @@ ShantyPuzzlePlayerEnterInteractionZoneEvent:
   - Name: Player
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x8'
 ShantyPuzzlePlayerExitInteractionZoneEvent:
   Attributes:
   - Name: Player
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x8'
 ShantyPuzzleSingleInteractionZoneStopInteractingEvent:
   Attributes:
   - Name: Player
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: InteractionZoneIdx
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_I05JZ[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
 ShantyPuzzleSingleInteractionZoneUnlockEvent:
   Attributes:
   - Name: Player
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: InteractionZoneIdx
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_NGEEX[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
 ShantyPuzzleUnlockCanceledEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_Y00PV[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 ShantyPuzzleUnlockedCompleteEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_296KD[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'

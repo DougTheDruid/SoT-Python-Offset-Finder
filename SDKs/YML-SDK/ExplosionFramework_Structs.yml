@@ -5,22 +5,30 @@ EventAffectedByExplosion:
   - Name: DamagerType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
+  - Name: pad0x10_FW1WX[0x10]
+    Offset: '0x8'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x18'
 EventExplosionIgnitedActor:
   Attributes:
   - Name: IgnitedActor
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x8'
 EventExplosionOverlap:
   Attributes:
   - Name: DamagerType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x8'
 EventOnExploded:
-  Attributes: []
+  Attributes:
+  - Name: pad0xc_ET8JN[0xc]
+    Offset: '0x0'
+    Size: '0xc'
+    Type: char
   ClassSize: '0xc'

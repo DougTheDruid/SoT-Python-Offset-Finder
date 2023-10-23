@@ -7,25 +7,25 @@
     "Attributes": [
       {
         "Name": "Sphere",
-        "Type": "Class SphereComponent*",
+        "Type": "class SphereComponent*",
         "Size": "0x8",
         "Offset": "0x730"
       },
       {
         "Name": "Replenishable",
-        "Type": "Class ReplenishableComponent*",
+        "Type": "class ReplenishableComponent*",
         "Size": "0x8",
         "Offset": "0x738"
       },
       {
         "Name": "TelemetrySubject",
-        "Type": "Class TelemetrySubjectComponent*",
+        "Type": "class TelemetrySubjectComponent*",
         "Size": "0x8",
         "Offset": "0x740"
       },
       {
         "Name": "StorageContainer",
-        "Type": "Class StorageContainerComponent*",
+        "Type": "class StorageContainerComponent*",
         "Size": "0x8",
         "Offset": "0x748"
       }

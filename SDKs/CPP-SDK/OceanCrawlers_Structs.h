@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 struct OceanCrawlerBuffAudioSettings
 {
 public:
-	Class WwiseEvent*                                            GiveBuffAudioEvent;                                // 0x0(0x8)
-	Class WwiseEvent*                                            ReceiveBuffAudioEvent;                             // 0x8(0x8)
+	class WwiseEvent*                                            GiveBuffAudioEvent;                                // 0x0(0x8)
+	class WwiseEvent*                                            ReceiveBuffAudioEvent;                             // 0x8(0x8)
 };
 
 
@@ -20,8 +20,8 @@ struct OceanCrawlerAudioKeyPair
 {
 public:
 	byte                                                         AudioKey;                                          // 0x0(0x1)
-	char                                                         pad0x7_DQYBP[0x7];                                 // 0x1(0x7)
-	Class WwiseEvent*                                            AudioEvent;                                        // 0x8(0x8)
+	char                                                         pad0x7_HQZET[0x7];                                 // 0x1(0x7)
+	class WwiseEvent*                                            AudioEvent;                                        // 0x8(0x8)
 };
 
 

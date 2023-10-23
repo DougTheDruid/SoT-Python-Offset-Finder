@@ -5,19 +5,19 @@ BP_ShipStorageBarrel_Grog_C:
   - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
     Offset: '0x400'
     Size: '0x8'
-    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
+    Type: class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
   - Name: TankardRefiller
     Offset: '0x408'
     Size: '0x8'
-    Type: Class TankardRefillerComponent*
+    Type: class TankardRefillerComponent*
   - Name: Interactable
     Offset: '0x410'
     Size: '0x8'
-    Type: Class InteractableComponent*
+    Type: class InteractableComponent*
   - Name: StaticMesh
     Offset: '0x418'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   ClassSize: '0x20'
   FullSize: '0x420'
   InheritedSize: '0x400'

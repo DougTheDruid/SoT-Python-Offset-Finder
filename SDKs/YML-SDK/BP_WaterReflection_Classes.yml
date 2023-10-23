@@ -5,7 +5,7 @@ BP_WaterReflection_C:
   - Name: PlanarReflectionPlane
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class PlanarReflectionPlaneComponent*
+    Type: class PlanarReflectionPlaneComponent*
   ClassSize: '0x8'
   FullSize: '0x3d0'
   InheritedSize: '0x3c8'

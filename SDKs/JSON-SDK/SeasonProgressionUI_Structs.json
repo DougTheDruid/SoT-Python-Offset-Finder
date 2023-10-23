@@ -4,37 +4,37 @@
     "Attributes": [
       {
         "Name": "GlowIcon",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Icon",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "ToastSfxEventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "ToastEventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "ToastSwitchName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "ToastSwitchValue",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -43,6 +43,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x4_CJ32R[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x64"
       }
     ]
   },
@@ -51,43 +57,43 @@
     "Attributes": [
       {
         "Name": "GlowIcon",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Icon",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Message",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x20"
       },
       {
         "Name": "ToastSfxEventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "ToastEventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
         "Name": "ToastSwitchName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x78"
       },
       {
         "Name": "ToastSwitchValue",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x88"
       },
@@ -96,6 +102,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x4_Y2MK7[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x9c"
       }
     ]
   },
@@ -110,43 +122,43 @@
       },
       {
         "Name": "GlowIcon",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "Icon",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "ChatIcon",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "ToastSfxEventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "ToastEventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
         "Name": "ToastSwitchName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "ToastSwitchValue",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x68"
       },
@@ -155,6 +167,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x78"
+      },
+      {
+        "Name": "pad0x4_UJ19W[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x7c"
       }
     ]
   },
@@ -163,37 +181,37 @@
     "Attributes": [
       {
         "Name": "GlowIcon",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Icon",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "SfxEventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "EventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "SwitchName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "SwitchValue",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -202,6 +220,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x4_QSIS1[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x64"
       }
     ]
   },
@@ -210,19 +234,19 @@
     "Attributes": [
       {
         "Name": "Description",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Icon",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "NavigationDesc",
-        "Type": "Struct NavigationDesc",
+        "Type": "struct NavigationDesc",
         "Size": "0x14",
         "Offset": "0x20"
       },
@@ -239,14 +263,14 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_Z94TG[0x4]",
+        "Name": "pad0x4_16GCA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
       },
       {
         "Name": "Audio",
-        "Type": "Struct GenericPopupAudioDescriptor",
+        "Type": "struct GenericPopupAudioDescriptor",
         "Size": "0x40",
         "Offset": "0x40"
       }
@@ -262,14 +286,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_AIPIK[0x3]",
+        "Name": "pad0x3_JUW7L[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
       },
       {
         "Name": "Id",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
       }
@@ -280,19 +304,19 @@
     "Attributes": [
       {
         "Name": "IconUrl",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Message",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x10"
       },
       {
         "Name": "Audio",
-        "Type": "Struct GenericPopupAudioDescriptor",
+        "Type": "struct GenericPopupAudioDescriptor",
         "Size": "0x40",
         "Offset": "0x48"
       }
@@ -303,19 +327,19 @@
     "Attributes": [
       {
         "Name": "IconUrl",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Message",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Audio",
-        "Type": "Struct GenericPopupAudioDescriptor",
+        "Type": "struct GenericPopupAudioDescriptor",
         "Size": "0x40",
         "Offset": "0x20"
       }
@@ -323,7 +347,14 @@
   },
   "SeasonsDataRefreshEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_LMUTW[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "OpenSeasonsMenuEvent": {
     "ClassSize": "0x14",
@@ -335,14 +366,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_9FLO5[0x3]",
+        "Name": "pad0x3_F64VR[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
       },
       {
         "Name": "Id",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
       }
@@ -369,14 +400,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_GA77W[0x3]",
+        "Name": "pad0x3_2ULLJ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
       },
       {
         "Name": "Navigation",
-        "Type": "Struct NavigationDesc",
+        "Type": "struct NavigationDesc",
         "Size": "0x14",
         "Offset": "0x4"
       }
@@ -387,7 +418,7 @@
     "Attributes": [
       {
         "Name": "DeedProgressDesc",
-        "Type": "Struct DeedProgressDesc",
+        "Type": "struct DeedProgressDesc",
         "Size": "0x80",
         "Offset": "0x0"
       }
@@ -397,8 +428,14 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
+        "Name": "pad0x10_ANI87[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "SeasonsTextNotification",
-        "Type": "Struct SeasonsTextNotification",
+        "Type": "struct SeasonsTextNotification",
         "Size": "0x88",
         "Offset": "0x10"
       }
@@ -408,8 +445,14 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
+        "Name": "pad0x10_CNPDI[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "SeasonsChatNotificationEvent",
-        "Type": "Struct SeasonsChatNotificationEvent",
+        "Type": "struct SeasonsChatNotificationEvent",
         "Size": "0x60",
         "Offset": "0x10"
       }
@@ -420,7 +463,7 @@
     "Attributes": [
       {
         "Name": "SeasonsChatNotification",
-        "Type": "Struct SeasonsChatNotification",
+        "Type": "struct SeasonsChatNotification",
         "Size": "0x60",
         "Offset": "0x0"
       }
@@ -428,14 +471,21 @@
   },
   "SeasonProgressionUITelemetryFragmentInput": {
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_GZHRS[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
   },
   "SeasonProgressionUITelemetryFragment": {
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "ReceivedEventsData",
-        "Type": "TArray<struct ReceivedEventsData>",
+        "Type": "TArray<struct SeasonProgressionUIEventTypeTelemetryFragment>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -444,6 +494,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_5Q9WN[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -452,7 +508,7 @@
     "Attributes": [
       {
         "Name": "EventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -461,6 +517,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_IUZ4Q[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -481,13 +543,13 @@
       },
       {
         "Name": "Background",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "Audio",
-        "Type": "Struct GenericPopupAudioDescriptor",
+        "Type": "struct GenericPopupAudioDescriptor",
         "Size": "0x40",
         "Offset": "0x30"
       },
@@ -505,7 +567,7 @@
       },
       {
         "Name": "NavigationDesc",
-        "Type": "Struct NavigationDesc",
+        "Type": "struct NavigationDesc",
         "Size": "0x14",
         "Offset": "0x84"
       },
@@ -514,6 +576,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x4_GFMPZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x9c"
       }
     ]
   },

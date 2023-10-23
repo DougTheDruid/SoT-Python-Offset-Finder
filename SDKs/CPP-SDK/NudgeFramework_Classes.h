@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class NudgeInterpolationParamsDataAsset: public DataAsset
 {
 public:
-	Struct NudgeInterpolationParams                              NudgeInterpParams;                                 // 0x28(0x20)
-	Class ForceFeedbackEffect*                                   ControllerForceFeedbackEffect;                     // 0x48(0x8)
+	struct NudgeInterpolationParams                              NudgeInterpParams;                                 // 0x28(0x20)
+	class ForceFeedbackEffect*                                   ControllerForceFeedbackEffect;                     // 0x48(0x8)
 };
 
 
@@ -33,9 +33,9 @@ public:
 class NudgePolicy: public Object
 {
 public:
-	char                                                         pad0x90_OWKIS[0x90];                               // 0x28(0x90)
-	Class Actor*                                                 OwningActor;                                       // 0xb8(0x8)
-	Class SceneComponent*                                        OwnerComponent;                                    // 0xc0(0x8)
+	char                                                         pad0x90_AF8DC[0x90];                               // 0x28(0x90)
+	class Actor*                                                 OwningActor;                                       // 0xb8(0x8)
+	class SceneComponent*                                        OwnerComponent;                                    // 0xc0(0x8)
 };
 
 

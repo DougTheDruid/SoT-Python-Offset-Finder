@@ -5,14 +5,14 @@ EventAttachedRetractableToItemProxy:
   - Name: Item
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x8'
 EventItemProxyMovedFromSlot:
   Attributes:
   - Name: ItemLocation
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   ClassSize: '0xc'
 RetractorOrientationAdjustmentFlags:
   Attributes:

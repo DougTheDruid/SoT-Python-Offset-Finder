@@ -4,13 +4,13 @@
     "Attributes": [
       {
         "Name": "Property",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Value",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -37,14 +37,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_YLPYY[0x7]",
+        "Name": "pad0x7_2O370[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "Properties",
-        "Type": "Struct TextureAuditorProperties",
+        "Type": "struct TextureAuditorProperties",
         "Size": "0x20",
         "Offset": "0x8"
       }
@@ -60,7 +60,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_RDGGJ[0x7]",
+        "Name": "pad0x7_1UEJO[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -70,6 +70,12 @@
         "Type": "TArray<Byte AllowedTextureFormats>",
         "Size": "0x10",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x8_MFPTS[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x18"
       }
     ]
   },
@@ -78,13 +84,13 @@
     "Attributes": [
       {
         "Name": "SubstringQueries",
-        "Type": "TArray<struct SubstringQueries>",
+        "Type": "TArray<struct SubstringAuditQueryData>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "FolderMeshLimits",
-        "Type": "Struct FolderTotals",
+        "Type": "struct FolderTotals",
         "Size": "0x28",
         "Offset": "0x10"
       }
@@ -100,7 +106,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_G63X6[0x7]",
+        "Name": "pad0x7_7SW3K[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -147,7 +153,7 @@
     "Attributes": [
       {
         "Name": "AssetAuditConstants",
-        "Type": "TArray<struct AssetAuditConstants>",
+        "Type": "TArray<struct AssetAuditConstantEntry>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -158,7 +164,7 @@
     "Attributes": [
       {
         "Name": "Name",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -167,6 +173,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_CTN0J[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -192,32 +204,32 @@
         "Offset": "0x9"
       },
       {
-        "Name": "pad0x2_3BPTK[0x2]",
+        "Name": "pad0x2_FWGF2[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xa"
       },
       {
         "Name": "CollectionTotals",
-        "Type": "Struct CollectionTotalsLimits",
+        "Type": "struct CollectionTotalsLimits",
         "Size": "0x10",
         "Offset": "0xc"
       },
       {
         "Name": "StaticMeshLimits",
-        "Type": "Struct CollectionStaticMeshLimits",
+        "Type": "struct CollectionStaticMeshLimits",
         "Size": "0x8",
         "Offset": "0x1c"
       },
       {
         "Name": "SkeleMeshLimits",
-        "Type": "Struct CollectionSkeleMeshLimits",
+        "Type": "struct CollectionSkeleMeshLimits",
         "Size": "0x8",
         "Offset": "0x24"
       },
       {
         "Name": "AnimLimits",
-        "Type": "Struct CollectionAnimSequenceLimits",
+        "Type": "struct CollectionAnimSequenceLimits",
         "Size": "0x4",
         "Offset": "0x2c"
       },
@@ -232,6 +244,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x31"
+      },
+      {
+        "Name": "pad0x2_MO2I9[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x32"
       }
     ]
   },
@@ -248,7 +266,14 @@
   },
   "CollectionSkeleMeshLimits": {
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_4L7XV[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
   },
   "CollectionMeshLimitsBase": {
     "ClassSize": "0x8",
@@ -269,7 +294,14 @@
   },
   "CollectionStaticMeshLimits": {
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_4M4M7[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
   },
   "CollectionTotalsLimits": {
     "ClassSize": "0x10",

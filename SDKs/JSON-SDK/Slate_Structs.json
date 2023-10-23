@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "Key",
-        "Type": "Struct Key",
+        "Type": "struct Key",
         "Size": "0x20",
         "Offset": "0x0"
       },
@@ -31,6 +31,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x7_ZEZ4J[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x21"
       }
     ]
   },
@@ -39,13 +45,13 @@
     "Attributes": [
       {
         "Name": "Minimum",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Maximum",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x8"
       }

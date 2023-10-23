@@ -5,7 +5,7 @@ BP_ShipClothingChest_C:
   - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
     Offset: '0x5a0'
     Size: '0x8'
-    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
+    Type: class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
   ClassSize: '0x8'
   FullSize: '0x5a8'
   InheritedSize: '0x5a0'

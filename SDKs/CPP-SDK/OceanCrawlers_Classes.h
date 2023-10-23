@@ -11,7 +11,7 @@ class BTTask_BroadcastOceanCrawlerAbilityAudioEvent: public BTTaskNode
 {
 public:
 	byte                                                         OceanCrawlerAudioKeyToBroadcast;                   // 0x60(0x1)
-	char                                                         pad0x7_VBKY6[0x7];                                 // 0x61(0x7)
+	char                                                         pad0x7_ZL5K1[0x7];                                 // 0x61(0x7)
 };
 
 
@@ -19,12 +19,12 @@ public:
 class OceanCrawlerAudioParamsDataAsset: public DataAsset
 {
 public:
-	Class WwiseObjectPoolWrapper*                                WwiseObjectPoolWrapper;                            // 0x28(0x8)
-	TArray<struct AudioKeyPairs>                                 AudioKeyPairs;                                     // 0x30(0x10)
-	Struct WeightedProbabilityRangeOfRanges                      BuffThankDelay;                                    // 0x40(0x30)
-	Struct OceanCrawlerBuffAudioSettings                         CrabBuffAudioSettings;                             // 0x70(0x10)
-	Struct OceanCrawlerBuffAudioSettings                         EelBuffAudioSettings;                              // 0x80(0x10)
-	Struct OceanCrawlerBuffAudioSettings                         HermitBuffAudioSettings;                           // 0x90(0x10)
+	class WwiseObjectPoolWrapper*                                WwiseObjectPoolWrapper;                            // 0x28(0x8)
+	TArray<struct OceanCrawlerAudioKeyPair>                      AudioKeyPairs;                                     // 0x30(0x10)
+	struct WeightedProbabilityRangeOfRanges                      BuffThankDelay;                                    // 0x40(0x30)
+	struct OceanCrawlerBuffAudioSettings                         CrabBuffAudioSettings;                             // 0x70(0x10)
+	struct OceanCrawlerBuffAudioSettings                         EelBuffAudioSettings;                              // 0x80(0x10)
+	struct OceanCrawlerBuffAudioSettings                         HermitBuffAudioSettings;                           // 0x90(0x10)
 };
 
 
@@ -32,9 +32,9 @@ public:
 class OceanCrawlerAudioBroadcaster: public ActorComponent
 {
 public:
-	Class OceanCrawlerAudioParamsDataAsset*                      AudioDataAsset;                                    // 0xc8(0x8)
-	Class Actor*                                                 CachedOwner;                                       // 0xd0(0x8)
-	char                                                         pad0xe8_TP3WP[0xe8];                               // 0xd8(0xe8)
+	class OceanCrawlerAudioParamsDataAsset*                      AudioDataAsset;                                    // 0xc8(0x8)
+	class Actor*                                                 CachedOwner;                                       // 0xd0(0x8)
+	char                                                         pad0xe8_BHULJ[0xe8];                               // 0xd8(0xe8)
 };
 
 

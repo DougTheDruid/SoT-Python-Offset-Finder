@@ -5,7 +5,7 @@ BP_AudioIslandStaticMeshAssociator_C:
   - Name: StaticMeshAudioEmitters
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class StaticMeshAudioEmittersComponent*
+    Type: class StaticMeshAudioEmittersComponent*
   ClassSize: '0x8'
   FullSize: '0x3d0'
   InheritedSize: '0x3c8'

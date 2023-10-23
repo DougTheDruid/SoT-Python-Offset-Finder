@@ -5,14 +5,14 @@ SirenAnimationData:
   - Name: SirenAnimationData
     Offset: '0x28'
     Size: '0x60'
-    Type: Struct SirenAnimationDataStructure
+    Type: struct SirenAnimationDataStructure
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
   Super: AnimationData
 SirenAnimationInstance:
   Attributes:
-  - Name: pad0x18_9RF1U[0x18]
+  - Name: pad0x18_E69FK[0x18]
     Offset: '0x440'
     Size: '0x18'
     Type: char
@@ -23,16 +23,16 @@ SirenAnimationInstance:
   - Name: SirenAnimationData
     Offset: '0x460'
     Size: '0x60'
-    Type: Struct SirenAnimationDataStructure
+    Type: struct SirenAnimationDataStructure
   - Name: AttackAnimations
     Offset: '0x4c0'
     Size: '0xb8'
-    Type: Struct AthenaAnimationWeapon
+    Type: struct AthenaAnimationWeapon
   - Name: ForwardSpeed
     Offset: '0x578'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_JLDKH[0xc]
+  - Name: pad0xc_679BM[0xc]
     Offset: '0x57c'
     Size: '0xc'
     Type: char
@@ -68,7 +68,7 @@ SirenAnimationInstance:
     Offset: '0x59b'
     Size: '0x1'
     Type: bool
-  - Name: pad0x4_FUBS2[0x4]
+  - Name: pad0x4_I3U3R[0x4]
     Offset: '0x59c'
     Size: '0x4'
     Type: char
@@ -79,8 +79,8 @@ SirenAnimationInstance:
   - Name: TimeBeforeAlternativeAggressiveAnimationToggleFlips
     Offset: '0x5b0'
     Size: '0x10'
-    Type: Struct FloatRange
-  - Name: pad0x8_1L0YH[0x8]
+    Type: struct FloatRange
+  - Name: pad0x8_Z4658[0x8]
     Offset: '0x5c0'
     Size: '0x8'
     Type: char
@@ -88,7 +88,7 @@ SirenAnimationInstance:
     Offset: '0x5c8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_4OCBP[0x3]
+  - Name: pad0x3_XTUC7[0x3]
     Offset: '0x5c9'
     Size: '0x3'
     Type: char
@@ -100,19 +100,19 @@ SirenAnimationInstance:
     Offset: '0x5d0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_SZNKN[0x4]
+  - Name: pad0x4_7D5N6[0x4]
     Offset: '0x5d4'
     Size: '0x4'
     Type: char
   - Name: FullBodyStateMachine
     Offset: '0x5d8'
     Size: '0xd8'
-    Type: Struct CustomAnimationMontageStateMachine
+    Type: struct CustomAnimationMontageStateMachine
   - Name: HitReacts
     Offset: '0x6b0'
     Size: '0x28'
-    Type: Struct HitReactionAnimationState
-  - Name: pad0x38_A7TVF[0x38]
+    Type: struct HitReactionAnimationState
+  - Name: pad0x38_QFMMO[0x38]
     Offset: '0x6d8'
     Size: '0x38'
     Type: char

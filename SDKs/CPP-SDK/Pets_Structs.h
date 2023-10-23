@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 struct PetCustomisation
 {
 public:
-	Struct FString                                               DefaultPetName;                                    // 0x0(0x10)
-	Struct FString                                               PetName;                                           // 0x10(0x10)
-	Struct AIPartId                                              PetPartId;                                         // 0x20(0x8)
+	struct FString                                               DefaultPetName;                                    // 0x0(0x10)
+	struct FString                                               PetName;                                           // 0x10(0x10)
+	struct AIPartId                                              PetPartId;                                         // 0x20(0x8)
 };
 
 
@@ -28,8 +28,9 @@ public:
 struct PetTurnToFaceData
 {
 public:
-	Struct Quat                                                  EndRotation;                                       // 0x0(0x10)
+	struct Quat                                                  EndRotation;                                       // 0x0(0x10)
 	float                                                        RotationTime;                                      // 0x10(0x4)
+	char                                                         pad0xc_ERK13[0xc];                                 // 0x14(0xc)
 };
 
 
@@ -49,8 +50,8 @@ struct HangoutSpotParams
 public:
 	struct FName                                                 HangoutSpotName;                                   // 0x0(0x8)
 	float                                                        Weight;                                            // 0x8(0x4)
-	char                                                         pad0x4_ZGY6U[0x4];                                 // 0xc(0x4)
-	TArray<struct PetParams>                                     PetParams;                                         // 0x10(0x10)
+	char                                                         pad0x4_504KH[0x4];                                 // 0xc(0x4)
+	TArray<struct PetHangoutSpotParams>                          PetParams;                                         // 0x10(0x10)
 	struct FName                                                 FeatureName;                                       // 0x20(0x8)
 };
 
@@ -59,9 +60,9 @@ public:
 struct PetHangoutSpotParams
 {
 public:
-	class                                                        PetType;                                           // 0x0(0x8)
-	Struct FloatRange                                            HangoutTime;                                       // 0x8(0x10)
-	Struct WeightedPetAnimationSelector                          AnimationSelector;                                 // 0x18(0xa0)
+	class UClass*                                                PetType;                                           // 0x0(0x8)
+	struct FloatRange                                            HangoutTime;                                       // 0x8(0x10)
+	struct WeightedPetAnimationSelector                          AnimationSelector;                                 // 0x18(0xa0)
 };
 
 
@@ -69,8 +70,8 @@ public:
 struct PetCustomiationOverrideMappingEntry
 {
 public:
-	Struct FString                                               Identifier;                                        // 0x0(0x10)
-	Class PetCustomisationOverrideDataAsset*                     OverrideAsset;                                     // 0x10(0x8)
+	struct FString                                               Identifier;                                        // 0x0(0x10)
+	class PetCustomisationOverrideDataAsset*                     OverrideAsset;                                     // 0x10(0x8)
 };
 
 
@@ -80,8 +81,8 @@ struct PetDangerHearingThreat
 public:
 	struct FName                                                 SoundTag;                                          // 0x0(0x8)
 	float                                                        TimeBeforeForgotten;                               // 0x8(0x4)
-	char                                                         pad0x4_8IM8Y[0x4];                                 // 0xc(0x4)
-	TArray<struct Responses>                                     Responses;                                         // 0x10(0x10)
+	char                                                         pad0x4_RPSU0[0x4];                                 // 0xc(0x4)
+	TArray<struct PetDangerHearingThreatResponse>                Responses;                                         // 0x10(0x10)
 };
 
 
@@ -89,11 +90,11 @@ public:
 struct PetFeedingParams
 {
 public:
-	Struct PetFeedingAnimationData                               EatingAnimData;                                    // 0x0(0x8)
-	Struct PetFeedingAnimationData                               FedAnimData;                                       // 0x8(0x8)
-	Struct PetFeedingAnimationData                               NotFedAnimData;                                    // 0x10(0x8)
-	Struct PetFeedingAnimationData                               SickAnimData;                                      // 0x18(0x8)
-	Struct PetFeedingAnimationData                               RefusalAnimData;                                   // 0x20(0x8)
+	struct PetFeedingAnimationData                               EatingAnimData;                                    // 0x0(0x8)
+	struct PetFeedingAnimationData                               FedAnimData;                                       // 0x8(0x8)
+	struct PetFeedingAnimationData                               NotFedAnimData;                                    // 0x10(0x8)
+	struct PetFeedingAnimationData                               SickAnimData;                                      // 0x18(0x8)
+	struct PetFeedingAnimationData                               RefusalAnimData;                                   // 0x20(0x8)
 	float                                                        TimeToStartEating;                                 // 0x28(0x4)
 	float                                                        TimeUntilGivingUp;                                 // 0x2c(0x4)
 	float                                                        DistToleranceSquared;                              // 0x30(0x4)
@@ -106,7 +107,7 @@ struct PetFeedingAnimationData
 {
 public:
 	byte                                                         AnimationState;                                    // 0x0(0x1)
-	char                                                         pad0x3_I9T0D[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_30TGO[0x3];                                 // 0x1(0x3)
 	float                                                        AnimationTimeout;                                  // 0x4(0x4)
 };
 
@@ -115,20 +116,21 @@ public:
 struct HangoutSpotPosition
 {
 public:
-	Struct HangoutSpotId                                         Id;                                                // 0x0(0x8)
-	char                                                         pad0x8_UMR4Y[0x8];                                 // 0x8(0x8)
-	Struct Transform                                             Transform;                                         // 0x10(0x30)
+	struct HangoutSpotId                                         Id;                                                // 0x0(0x8)
+	char                                                         pad0x8_UPRDM[0x8];                                 // 0x8(0x8)
+	struct Transform                                             Transform;                                         // 0x10(0x30)
 	byte                                                         RotationMode;                                      // 0x40(0x1)
 	byte                                                         ShipDeck;                                          // 0x41(0x1)
-	char                                                         pad0x6_M8LF9[0x6];                                 // 0x42(0x6)
-	Class Pawn*                                                  Occupier;                                          // 0x48(0x8)
-	char                                                         pad0x10_2YHE3[0x10];                               // 0x50(0x10)
+	char                                                         pad0x6_T8BND[0x6];                                 // 0x42(0x6)
+	class Pawn*                                                  Occupier;                                          // 0x48(0x8)
+	char                                                         pad0x10_OHZDV[0x10];                               // 0x50(0x10)
 	bool                                                         IsPerch;                                           // 0x60(0x1)
 	bool                                                         NeedOverrideInteractionPoint;                      // 0x61(0x1)
-	char                                                         pad0x2_OC4X6[0x2];                                 // 0x62(0x2)
-	Struct Vector                                                OverrideInteractionPointPosition;                  // 0x64(0xc)
+	char                                                         pad0x2_SR9M5[0x2];                                 // 0x62(0x2)
+	struct Vector                                                OverrideInteractionPointPosition;                  // 0x64(0xc)
 	bool                                                         BlockPetEmoteReactions;                            // 0x70(0x1)
 	bool                                                         IgnorePickupFromHangoutTooltipDisplayOffset;       // 0x71(0x1)
+	char                                                         pad0xe_9CXVI[0xe];                                 // 0x72(0xe)
 };
 
 
@@ -136,10 +138,10 @@ public:
 struct PetListingTypeEntry
 {
 public:
-	Struct StringAssetReference                                  PetPartsCategory;                                  // 0x0(0x10)
-	Struct StringClassReference                                  PetType;                                           // 0x10(0x10)
+	struct StringAssetReference                                  PetPartsCategory;                                  // 0x0(0x10)
+	struct StringClassReference                                  PetType;                                           // 0x10(0x10)
 	struct FName                                                 FeatureToggleName;                                 // 0x20(0x8)
-	Struct FString                                               PetListingName;                                    // 0x28(0x10)
+	struct FString                                               PetListingName;                                    // 0x28(0x10)
 };
 
 
@@ -147,6 +149,7 @@ public:
 struct PetsServiceParams
 {
 public:
+	char                                                         pad0x8_4MGAQ[0x8];                                 // 0x0(0x8)
 	int                                                          MaxPetsInProximity;                                // 0x8(0x4)
 	float                                                        RespawnRequestTimeout;                             // 0xc(0x4)
 	float                                                        SpawnTimeDelay;                                    // 0x10(0x4)
@@ -163,7 +166,8 @@ public:
 struct PetRelationship
 {
 public:
-	Class PetItemInfo*                                           PetInfo;                                           // 0x0(0x8)
+	class PetItemInfo*                                           PetInfo;                                           // 0x0(0x8)
+	char                                                         pad0x18_IT9OR[0x18];                               // 0x8(0x18)
 };
 
 
@@ -173,12 +177,12 @@ struct ReactStateMapping
 public:
 	struct FName                                                 AnimationID;                                       // 0x0(0x8)
 	bool                                                         CanTimeout;                                        // 0x8(0x1)
-	char                                                         pad0x3_A6NW6[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_33838[0x3];                                 // 0x9(0x3)
 	float                                                        AnimationTimeout;                                  // 0xc(0x4)
-	Struct WeightedPetAnimationSelector                          PetStateSelector;                                  // 0x10(0xa0)
+	struct WeightedPetAnimationSelector                          PetStateSelector;                                  // 0x10(0xa0)
 	float                                                        AnimationChance;                                   // 0xb0(0x4)
-	Struct FloatRange                                            AnimationDelay;                                    // 0xb4(0x10)
-	char                                                         pad0x4_EUBWE[0x4];                                 // 0xc4(0x4)
+	struct FloatRange                                            AnimationDelay;                                    // 0xb4(0x10)
+	char                                                         pad0x4_IVHR0[0x4];                                 // 0xc4(0x4)
 	TArray<class Class*>                                         IgnoringStrategies;                                // 0xc8(0x10)
 };
 
@@ -196,7 +200,7 @@ struct WieldablePetDropTimeout
 {
 public:
 	byte                                                         RequestReason;                                     // 0x0(0x1)
-	char                                                         pad0x3_QCY2H[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_BNDTP[0x3];                                 // 0x1(0x3)
 	float                                                        DropDelay;                                         // 0x4(0x4)
 };
 
@@ -205,8 +209,9 @@ public:
 struct WieldablePetFoodSourceEntry
 {
 public:
-	Class Actor*                                                 FoodSourceActor;                                   // 0x0(0x8)
+	class Actor*                                                 FoodSourceActor;                                   // 0x0(0x8)
 	float                                                        TimeUntilConsumption;                              // 0x8(0x4)
+	char                                                         pad0x4_H9NWJ[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -215,7 +220,7 @@ struct WieldablePetHungerAnimationData
 {
 public:
 	byte                                                         AnimState;                                         // 0x0(0x1)
-	char                                                         pad0x3_ZF6B4[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_2JLUQ[0x3];                                 // 0x1(0x3)
 	float                                                        AnimTimeout;                                       // 0x4(0x4)
 };
 
@@ -224,6 +229,7 @@ public:
 struct EventNewPetThreatDetected
 {
 public:
+	char                                                         pad0x1_LD63W[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -231,7 +237,7 @@ public:
 struct EventPetDismissed
 {
 public:
-	Class Actor*                                                 DismissingActor;                                   // 0x0(0x8)
+	class Actor*                                                 DismissingActor;                                   // 0x0(0x8)
 };
 
 
@@ -239,6 +245,7 @@ public:
 struct DismissPetNotificationEvent
 {
 public:
+	char                                                         pad0x1_LG1PG[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -246,7 +253,8 @@ public:
 struct EventPetRefusedFood
 {
 public:
-	Class Actor*                                                 FeedingActor;                                      // 0x10(0x8)
+	char                                                         pad0x10_2TALL[0x10];                               // 0x0(0x10)
+	class Actor*                                                 FeedingActor;                                      // 0x10(0x8)
 };
 
 
@@ -254,7 +262,7 @@ public:
 struct EventPetFoodBase
 {
 public:
-	Struct Guid                                                  FeedingInteractionId;                              // 0x0(0x10)
+	struct Guid                                                  FeedingInteractionId;                              // 0x0(0x10)
 };
 
 
@@ -262,7 +270,9 @@ public:
 struct EventPetReactedToFood
 {
 public:
+	char                                                         pad0x10_5HCDZ[0x10];                               // 0x0(0x10)
 	byte                                                         ReactionType;                                      // 0x10(0x1)
+	char                                                         pad0x3_9TTNN[0x3];                                 // 0x11(0x3)
 };
 
 
@@ -270,7 +280,8 @@ public:
 struct EventPetNotFed
 {
 public:
-	Class Actor*                                                 FeedingActor;                                      // 0x10(0x8)
+	char                                                         pad0x10_N058J[0x10];                               // 0x0(0x10)
+	class Actor*                                                 FeedingActor;                                      // 0x10(0x8)
 };
 
 
@@ -278,8 +289,9 @@ public:
 struct EventPetFed
 {
 public:
-	Class Actor*                                                 FedWithActor;                                      // 0x10(0x8)
-	Class Actor*                                                 FeedingActor;                                      // 0x18(0x8)
+	char                                                         pad0x10_KZNO1[0x10];                               // 0x0(0x10)
+	class Actor*                                                 FedWithActor;                                      // 0x10(0x8)
+	class Actor*                                                 FeedingActor;                                      // 0x18(0x8)
 };
 
 
@@ -287,6 +299,7 @@ public:
 struct EventPetPerchSpotEnabledStateChanged
 {
 public:
+	char                                                         pad0x1_TGG49[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -294,7 +307,7 @@ public:
 struct EventPetLeftHangout
 {
 public:
-	Class Actor*                                                 Pet;                                               // 0x0(0x8)
+	class Actor*                                                 Pet;                                               // 0x0(0x8)
 };
 
 
@@ -302,6 +315,7 @@ public:
 struct EventPetEnteredHangout
 {
 public:
+	char                                                         pad0x2_57QUU[0x2];                                 // 0x0(0x2)
 };
 
 
@@ -309,6 +323,7 @@ public:
 struct EventPetSadnessEnd
 {
 public:
+	char                                                         pad0x1_14JUA[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -316,6 +331,7 @@ public:
 struct EventPetSadnessBegin
 {
 public:
+	char                                                         pad0x1_YE1RW[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -323,7 +339,7 @@ public:
 struct EventPetInfoAssigned
 {
 public:
-	Class ItemInfo*                                              PetInfo;                                           // 0x0(0x8)
+	class ItemInfo*                                              PetInfo;                                           // 0x0(0x8)
 };
 
 
@@ -331,7 +347,7 @@ public:
 struct EventPetOwnerAssigned
 {
 public:
-	Class Actor*                                                 Owner;                                             // 0x0(0x8)
+	class Actor*                                                 Owner;                                             // 0x0(0x8)
 };
 
 
@@ -339,6 +355,7 @@ public:
 struct EventPetCustomisationComplete
 {
 public:
+	char                                                         pad0x1_4N02Y[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -346,6 +363,7 @@ public:
 struct EventPetCustomisationReady
 {
 public:
+	char                                                         pad0x10_NWW1B[0x10];                               // 0x0(0x10)
 };
 
 
@@ -353,8 +371,9 @@ public:
 struct EventWieldablePetPutOnPerch
 {
 public:
-	Class Actor*                                                 Pet;                                               // 0x0(0x8)
+	class Actor*                                                 Pet;                                               // 0x0(0x8)
 	struct FName                                                 HangoutSpotName;                                   // 0x8(0x8)
+	char                                                         pad0x10_PEX8H[0x10];                               // 0x10(0x10)
 };
 
 
@@ -362,6 +381,7 @@ public:
 struct EventPetDropped
 {
 public:
+	char                                                         pad0x8_N66Z3[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -370,7 +390,8 @@ struct EventPetPickedUp
 {
 public:
 	bool                                                         IsOnPerch;                                         // 0x0(0x1)
-	char                                                         pad0x3_SIB2H[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_ORYBK[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x8_7Z6C2[0x8];                                 // 0x4(0x8)
 };
 
 
@@ -380,6 +401,7 @@ struct EventPetReactBegun
 public:
 	struct FName                                                 ReactId;                                           // 0x0(0x8)
 	byte                                                         ReactState;                                        // 0x8(0x1)
+	char                                                         pad0x3_P46VI[0x3];                                 // 0x9(0x3)
 };
 
 
@@ -387,7 +409,7 @@ public:
 struct EventPetReactCancellation
 {
 public:
-	Class Actor*                                                 ReactSource;                                       // 0x0(0x8)
+	class Actor*                                                 ReactSource;                                       // 0x0(0x8)
 	struct FName                                                 ReactId;                                           // 0x8(0x8)
 };
 
@@ -396,7 +418,7 @@ public:
 struct EventPetReactRequest
 {
 public:
-	Class Actor*                                                 ReactSource;                                       // 0x0(0x8)
+	class Actor*                                                 ReactSource;                                       // 0x0(0x8)
 	struct FName                                                 ReactId;                                           // 0x8(0x8)
 };
 
@@ -405,7 +427,7 @@ public:
 struct RespawnPetEvent
 {
 public:
-	Class Actor*                                                 PetOwner;                                          // 0x0(0x8)
+	class Actor*                                                 PetOwner;                                          // 0x0(0x8)
 };
 
 
@@ -413,7 +435,7 @@ public:
 struct EventPetEndPlay
 {
 public:
-	Class Pawn*                                                  LinkedPet;                                         // 0x0(0x8)
+	class Pawn*                                                  LinkedPet;                                         // 0x0(0x8)
 };
 
 
@@ -421,8 +443,8 @@ public:
 struct EventPetSpawnedForShip
 {
 public:
-	Class Pawn*                                                  LinkedPet;                                         // 0x0(0x8)
-	Class Actor*                                                 LinkedShip;                                        // 0x8(0x8)
+	class Pawn*                                                  LinkedPet;                                         // 0x0(0x8)
+	class Actor*                                                 LinkedShip;                                        // 0x8(0x8)
 };
 
 
@@ -430,6 +452,7 @@ public:
 struct PetBaseTelemetryFragmentInput
 {
 public:
+	char                                                         pad0x8_0ELZX[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -437,11 +460,11 @@ public:
 struct PetBaseTelemetryFragment
 {
 public:
-	Struct FString                                               OwnerId;                                           // 0x0(0x10)
-	Struct FString                                               PetPartId;                                         // 0x10(0x10)
+	struct FString                                               OwnerId;                                           // 0x0(0x10)
+	struct FString                                               PetPartId;                                         // 0x10(0x10)
 	byte                                                         CurrentPetRepresentation;                          // 0x20(0x1)
-	char                                                         pad0x3_2F4QX[0x3];                                 // 0x21(0x3)
-	Struct Vector                                                PetLocation;                                       // 0x24(0xc)
+	char                                                         pad0x3_HPWG6[0x3];                                 // 0x21(0x3)
+	struct Vector                                                PetLocation;                                       // 0x24(0xc)
 };
 
 
@@ -449,8 +472,8 @@ public:
 struct WieldablePetPutOnPerchTelemetryEvent
 {
 public:
-	Struct FString                                               HangoutSpotName;                                   // 0x0(0x10)
-	Struct FString                                               WieldingActorTelemetrySubjectId;                   // 0x18(0x10)
+	struct FString                                               HangoutSpotName;                                   // 0x0(0x10)
+	struct FString                                               WieldingActorTelemetrySubjectId;                   // 0x18(0x10)
 };
 
 
@@ -458,6 +481,7 @@ public:
 struct PetDismissedTelemetryEvent
 {
 public:
+	char                                                         pad0x1_67IIF[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -465,8 +489,8 @@ public:
 struct PetRefusedFoodTelemetryEvent
 {
 public:
-	Struct FString                                               TryingToFeedPlayerId;                              // 0x0(0x10)
-	Struct Guid                                                  FeedingInteractionId;                              // 0x10(0x10)
+	struct FString                                               TryingToFeedPlayerId;                              // 0x0(0x10)
+	struct Guid                                                  FeedingInteractionId;                              // 0x10(0x10)
 };
 
 
@@ -474,8 +498,9 @@ public:
 struct PetReactedToFoodTelemetryEvent
 {
 public:
-	Struct Guid                                                  FeedingInteractionId;                              // 0x0(0x10)
+	struct Guid                                                  FeedingInteractionId;                              // 0x0(0x10)
 	byte                                                         FeedingReaction;                                   // 0x10(0x1)
+	char                                                         pad0x3_2PQR6[0x3];                                 // 0x11(0x3)
 };
 
 
@@ -483,8 +508,8 @@ public:
 struct PetNotFedTelemetryEvent
 {
 public:
-	Struct FString                                               IgnoringPlayerId;                                  // 0x0(0x10)
-	Struct Guid                                                  FeedingInteractionId;                              // 0x10(0x10)
+	struct FString                                               IgnoringPlayerId;                                  // 0x0(0x10)
+	struct Guid                                                  FeedingInteractionId;                              // 0x10(0x10)
 };
 
 
@@ -492,9 +517,9 @@ public:
 struct PetFedTelemetryEvent
 {
 public:
-	Struct FString                                               FedWithItemId;                                     // 0x0(0x10)
-	Struct FString                                               FeedingPlayerId;                                   // 0x10(0x10)
-	Struct Guid                                                  FeedingInteractionId;                              // 0x20(0x10)
+	struct FString                                               FedWithItemId;                                     // 0x0(0x10)
+	struct FString                                               FeedingPlayerId;                                   // 0x10(0x10)
+	struct Guid                                                  FeedingInteractionId;                              // 0x20(0x10)
 };
 
 
@@ -502,8 +527,9 @@ public:
 struct PetReactedTelemetryEvent
 {
 public:
-	Struct FString                                               ReactId;                                           // 0x0(0x10)
+	struct FString                                               ReactId;                                           // 0x0(0x10)
 	byte                                                         AnimationState;                                    // 0x10(0x1)
+	char                                                         pad0x7_24E04[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -511,6 +537,7 @@ public:
 struct PetDroppedTelemetryEvent
 {
 public:
+	char                                                         pad0x1_3TROO[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -526,7 +553,7 @@ public:
 struct PetControllerSetTickOrderEvent
 {
 public:
-	Class Actor*                                                 Actor;                                             // 0x0(0x8)
+	class Actor*                                                 Actor;                                             // 0x0(0x8)
 };
 
 
@@ -542,6 +569,7 @@ public:
 struct EventPerchHangoutSpotSetEnabledState
 {
 public:
+	char                                                         pad0xc_O076Y[0xc];                                 // 0x0(0xc)
 };
 
 
@@ -549,6 +577,7 @@ public:
 struct EventHangoutSpotMadeAvailable
 {
 public:
+	char                                                         pad0x50_3O729[0x50];                               // 0x0(0x50)
 };
 
 
@@ -556,6 +585,7 @@ public:
 struct EventHangoutSpotMadeUnavailable
 {
 public:
+	char                                                         pad0x50_KW3GQ[0x50];                               // 0x0(0x50)
 };
 
 
@@ -567,11 +597,12 @@ public:
 	float                                                        TakeOffTime;                                       // 0x4(0x4)
 	float                                                        TotalGhostShaderTime;                              // 0x8(0x4)
 	float                                                        TimeToTriggerVFX;                                  // 0xc(0x4)
-	Class Object*                                                DespawnVFX;                                        // 0x10(0x8)
-	Struct LinearColor                                           DespawnVFXColour;                                  // 0x18(0x10)
-	Class WwiseEvent*                                            DespawnSFX;                                        // 0x28(0x8)
-	Class WwiseEvent*                                            StopDespawnSFX;                                    // 0x30(0x8)
+	class Object*                                                DespawnVFX;                                        // 0x10(0x8)
+	struct LinearColor                                           DespawnVFXColour;                                  // 0x18(0x10)
+	class WwiseEvent*                                            DespawnSFX;                                        // 0x28(0x8)
+	class WwiseEvent*                                            StopDespawnSFX;                                    // 0x30(0x8)
 	float                                                        TotalDespawningTime;                               // 0x38(0x4)
+	char                                                         pad0x4_R5W1E[0x4];                                 // 0x3c(0x4)
 };
 
 
@@ -579,6 +610,7 @@ public:
 struct PetSpawnActionStateConstructionInfo
 {
 public:
+	char                                                         pad0x30_3RR52[0x30];                               // 0x0(0x30)
 };
 
 
@@ -590,11 +622,12 @@ public:
 	float                                                        LandingTime;                                       // 0x4(0x4)
 	float                                                        TotalGhostShaderTime;                              // 0x8(0x4)
 	float                                                        TimeToTriggerVFX;                                  // 0xc(0x4)
-	Class Object*                                                SpawnVFX;                                          // 0x10(0x8)
-	Struct LinearColor                                           SpawnVFXColour;                                    // 0x18(0x10)
-	Class WwiseEvent*                                            SpawnSFX;                                          // 0x28(0x8)
-	Class WwiseEvent*                                            StopSpawnSFX;                                      // 0x30(0x8)
+	class Object*                                                SpawnVFX;                                          // 0x10(0x8)
+	struct LinearColor                                           SpawnVFXColour;                                    // 0x18(0x10)
+	class WwiseEvent*                                            SpawnSFX;                                          // 0x28(0x8)
+	class WwiseEvent*                                            StopSpawnSFX;                                      // 0x30(0x8)
 	float                                                        TotalSpawningTime;                                 // 0x38(0x4)
+	char                                                         pad0x4_C3TH9[0x4];                                 // 0x3c(0x4)
 };
 
 

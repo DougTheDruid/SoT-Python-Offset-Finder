@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 struct ShantyPuzzleUnlockCanceledEvent
 {
 public:
+	char                                                         pad0x1_Y00PV[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -17,8 +18,9 @@ public:
 struct ShantyPuzzleSingleInteractionZoneStopInteractingEvent
 {
 public:
-	Class Actor*                                                 Player;                                            // 0x0(0x8)
+	class Actor*                                                 Player;                                            // 0x0(0x8)
 	int                                                          InteractionZoneIdx;                                // 0x8(0x4)
+	char                                                         pad0x4_I05JZ[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -26,8 +28,9 @@ public:
 struct ShantyPuzzleSingleInteractionZoneUnlockEvent
 {
 public:
-	Class Actor*                                                 Player;                                            // 0x0(0x8)
+	class Actor*                                                 Player;                                            // 0x0(0x8)
 	int                                                          InteractionZoneIdx;                                // 0x8(0x4)
+	char                                                         pad0x4_NGEEX[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -35,7 +38,7 @@ public:
 struct ShantyPuzzlePlayerExitInteractionZoneEvent
 {
 public:
-	Class Actor*                                                 Player;                                            // 0x0(0x8)
+	class Actor*                                                 Player;                                            // 0x0(0x8)
 };
 
 
@@ -43,7 +46,7 @@ public:
 struct ShantyPuzzlePlayerEnterInteractionZoneEvent
 {
 public:
-	Class Actor*                                                 Player;                                            // 0x0(0x8)
+	class Actor*                                                 Player;                                            // 0x0(0x8)
 };
 
 
@@ -51,6 +54,7 @@ public:
 struct ShantyPuzzleUnlockedCompleteEvent
 {
 public:
+	char                                                         pad0x1_296KD[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -58,10 +62,10 @@ public:
 struct ShantyPuzzleInteractionZoneDefinition
 {
 public:
-	Struct Vector                                                Location;                                          // 0x0(0xc)
+	struct Vector                                                Location;                                          // 0x0(0xc)
 	float                                                        Radius;                                            // 0xc(0x4)
 	byte                                                         RequiredMusicalInstrumentType;                     // 0x10(0x1)
-	char                                                         pad0x3_UA5E0[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_Q939T[0x3];                                 // 0x11(0x3)
 	int                                                          RequiredNumInteractors;                            // 0x14(0x4)
 };
 
@@ -70,7 +74,7 @@ public:
 struct ShantyPuzzleCompleteEvent
 {
 public:
-	TArray<struct ParticipatingCrews>                            ParticipatingCrews;                                // 0x0(0x10)
+	TArray<struct Guid>                                          ParticipatingCrews;                                // 0x0(0x10)
 };
 
 

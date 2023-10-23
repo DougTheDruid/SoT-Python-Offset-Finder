@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_LargeShipLadderMainMast_C: public Ladder
 {
 public:
-	Class InteractableComponent*                                 Interactable;                                      // 0x5e0(0x8)
-	TArray<struct OnTopSplinePositions>                          OnTopSplinePositions;                              // 0x5e8(0x10)
-	TArray<struct OffTopSplinePositions>                         OffTopSplinePositions;                             // 0x5f8(0x10)
+	class InteractableComponent*                                 Interactable;                                      // 0x5e0(0x8)
+	TArray<struct Vector>                                        OnTopSplinePositions;                              // 0x5e8(0x10)
+	TArray<struct Vector>                                        OffTopSplinePositions;                             // 0x5f8(0x10)
 };
 
 

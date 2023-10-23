@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 struct GameServiceMap
 {
 public:
+	char                                                         pad0x70_KMJI8[0x70];                               // 0x0(0x70)
 };
 
 
@@ -17,7 +18,8 @@ public:
 struct GameServiceCoordinator
 {
 public:
-	TArray<struct Services>                                      Services;                                          // 0x0(0x10)
+	TArray<struct GameServiceCoordinatorUnit>                    Services;                                          // 0x0(0x10)
+	char                                                         pad0x10_RBJGI[0x10];                               // 0x10(0x10)
 };
 
 
@@ -25,7 +27,8 @@ public:
 struct GameServiceCoordinatorUnit
 {
 public:
-	Class Object*                                                Service;                                           // 0x0(0x8)
+	class Object*                                                Service;                                           // 0x0(0x8)
+	char                                                         pad0x10_PN0A3[0x10];                               // 0x8(0x10)
 };
 
 

@@ -5,48 +5,68 @@ ClueDestinationChoice:
   - Name: Destination
     Offset: '0x0'
     Size: '0x8'
-    Type: Class ClueDestinationDescriptor*
+    Type: class ClueDestinationDescriptor*
+  - Name: pad0x8_II5M6[0x8]
+    Offset: '0x8'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x10'
 ClueDestinationToTextIndex:
   Attributes:
   - Name: DestinationType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
+  - Name: pad0x20_EBLJ8[0x20]
+    Offset: '0x8'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x28'
 ExistingNPCToPhasedNPC:
-  Attributes: []
+  Attributes:
+  - Name: pad0x40_V4QLE[0x40]
+    Offset: '0x0'
+    Size: '0x40'
+    Type: char
   ClassSize: '0x40'
 GenderSpecificTextPairings:
   Attributes:
   - Name: MasculineClueDestinationDescription
     Offset: '0x0'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: FeminineClueDestinationDescription
     Offset: '0x38'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   ClassSize: '0x70'
 MapRadialIconData:
   Attributes:
   - Name: AssetReference
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: Rotation
     Offset: '0x10'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_I843M[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
 TextEntryWithLayout:
   Attributes:
   - Name: TextEntry
     Offset: '0x0'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: TextLayout
     Offset: '0x38'
     Size: '0x3c'
-    Type: Struct TreasureMapWidgetText
+    Type: struct TreasureMapWidgetText
+  - Name: pad0x4_UR2BX[0x4]
+    Offset: '0x74'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x78'

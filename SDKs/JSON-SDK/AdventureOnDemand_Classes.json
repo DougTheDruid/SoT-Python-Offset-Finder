@@ -1,77 +1,83 @@
 {
   "AdventureOnDemandService": {
     "Super": "Actor",
-    "FullSize": "0x668",
+    "FullSize": "0x688",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x2a0",
+    "ClassSize": "0x2c0",
     "Attributes": [
       {
-        "Name": "pad0x10_Q5U69[0x10]",
+        "Name": "pad0x10_VJN6B[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
       },
       {
         "Name": "Params",
-        "Type": "Class AdventureOnDemandServiceParams*",
+        "Type": "class AdventureOnDemandServiceParams*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
         "Name": "VoyageSelectionDataAsset",
-        "Type": "Class AdventureOnDemandVoyageSelectionDataAsset*",
+        "Type": "class AdventureOnDemandVoyageSelectionDataAsset*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "pad0xb0_PLY3C[0xb0]",
-        "Type": "char",
-        "Size": "0xb0",
+        "Name": "QuestTableAdventureOnDemandParams",
+        "Type": "class QuestTableAdventureOnDemandParams*",
+        "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
+        "Name": "pad0xb0_A9UTH[0xb0]",
+        "Type": "char",
+        "Size": "0xb0",
+        "Offset": "0x3f0"
+      },
+      {
         "Name": "DiveToTunnelEntries",
-        "Type": "TArray<struct DiveToTunnelEntries>",
+        "Type": "TArray<struct AdventureOnDemandServiceCrewEntry>",
         "Size": "0x10",
-        "Offset": "0x498"
+        "Offset": "0x4a0"
       },
       {
         "Name": "LeaveTunnelEntries",
-        "Type": "TArray<struct LeaveTunnelEntries>",
+        "Type": "TArray<struct AdventureOnDemandServiceCrewEntry>",
         "Size": "0x10",
-        "Offset": "0x4a8"
+        "Offset": "0x4b0"
       },
       {
         "Name": "CrewsDivingToTunnel",
-        "Type": "TArray<struct CrewsDivingToTunnel>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
-        "Offset": "0x4b8"
+        "Offset": "0x4c0"
       },
       {
         "Name": "CrewsInArrivalTunnel",
-        "Type": "TArray<struct CrewsInArrivalTunnel>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
-        "Offset": "0x4c8"
+        "Offset": "0x4d0"
       },
       {
         "Name": "CrewsOnCooldown",
-        "Type": "TArray<struct CrewsOnCooldown>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
-        "Offset": "0x4d8"
+        "Offset": "0x4e0"
       },
       {
-        "Name": "pad0x180_YXIN2[0x180]",
+        "Name": "pad0x198_Y3468[0x198]",
         "Type": "char",
-        "Size": "0x180",
-        "Offset": "0x4e8"
+        "Size": "0x198",
+        "Offset": "0x4f0"
       }
     ]
   },
   "GameEventOnDemandArrivalTunnelWorkerBase": {
     "Super": "AdventureOnDemandArrivalTunnelWorkerBase",
-    "FullSize": "0xa8",
+    "FullSize": "0x120",
     "InheritedSize": "0x30",
-    "ClassSize": "0x78",
+    "ClassSize": "0xf0",
     "Attributes": [
       {
         "Name": "TriggerTunnelFailureTimeout",
@@ -98,128 +104,192 @@
         "Offset": "0x3c"
       },
       {
-        "Name": "pad0x48_WV1SI[0x48]",
-        "Type": "char",
-        "Size": "0x48",
+        "Name": "GameEventType",
+        "Type": "class UClass*",
+        "Size": "0x8",
         "Offset": "0x40"
       },
       {
-        "Name": "LeaveTunnelVoyageDesc",
-        "Type": "Class VoyageDescDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x88"
+        "Name": "pad0xa0_14HIG[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x48"
       },
       {
-        "Name": "pad0x18_F5HTY[0x18]",
+        "Name": "LeaveTunnelVoyageDesc",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "pad0x24_8C6G0[0x24]",
         "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x90"
+        "Size": "0x24",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "RetryRequestEventFrequency",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x114"
+      },
+      {
+        "Name": "pad0x8_A6XOO[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x118"
+      }
+    ]
+  },
+  "AIShipBattleGameEventOnDemandArrivalTunnelWorker": {
+    "Super": "GameEventOnDemandArrivalTunnelWorkerBase",
+    "FullSize": "0x130",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_F26CD[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x120"
       }
     ]
   },
   "IslandBasedGameEventOnDemandArrivalTunnelWorker": {
     "Super": "GameEventOnDemandArrivalTunnelWorkerBase",
-    "FullSize": "0xc0",
-    "InheritedSize": "0xa8",
-    "ClassSize": "0x18",
+    "FullSize": "0x148",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "UseSpawnDistanceFromIslandForResurfaceRadius",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xa8"
+        "Offset": "0x120"
       },
       {
-        "Name": "pad0x3_2KQ2J[0x3]",
+        "Name": "pad0x3_TP5ZT[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0xa9"
+        "Offset": "0x121"
       },
       {
         "Name": "ResurfaceMaxRadiusModifier",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xac"
+        "Offset": "0x124"
       },
       {
-        "Name": "pad0x10_54FMY[0x10]",
+        "Name": "pad0x20_3CYD9[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x128"
+      }
+    ]
+  },
+  "AggressiveGhostShipsEncounterOnDemandArrivalTunnelWorker": {
+    "Super": "IslandBasedGameEventOnDemandArrivalTunnelWorker",
+    "FullSize": "0x158",
+    "InheritedSize": "0x148",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_GB4Q0[0x10]",
         "Type": "char",
         "Size": "0x10",
-        "Offset": "0xb0"
+        "Offset": "0x148"
+      }
+    ]
+  },
+  "AshenLordEventOnDemandArrivalTunnelWorker": {
+    "Super": "IslandBasedGameEventOnDemandArrivalTunnelWorker",
+    "FullSize": "0x158",
+    "InheritedSize": "0x148",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_E1ZLA[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x148"
+      }
+    ]
+  },
+  "SeaFortGameEventOnDemandArrivalTunnelWorker": {
+    "Super": "IslandBasedGameEventOnDemandArrivalTunnelWorker",
+    "FullSize": "0x160",
+    "InheritedSize": "0x148",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_2Y8GY[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x148"
       }
     ]
   },
   "SkellyFortEventOnDemandArrivalTunnelWorker": {
     "Super": "IslandBasedGameEventOnDemandArrivalTunnelWorker",
     "FullSize": "0x158",
-    "InheritedSize": "0xc0",
-    "ClassSize": "0x98",
+    "InheritedSize": "0x148",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "SkellyFortType",
-        "Type": "class",
-        "Size": "0x8",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x84_QEP29[0x84]",
+        "Name": "pad0x10_K4S7O[0x10]",
         "Type": "char",
-        "Size": "0x84",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "RetryRequestEventFrequency",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x14c"
-      },
-      {
-        "Name": "pad0x8_HE72V[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x150"
+        "Size": "0x10",
+        "Offset": "0x148"
       }
     ]
   },
   "SeaBasedGameEventOnDemandArrivalTunnelWorker": {
     "Super": "GameEventOnDemandArrivalTunnelWorkerBase",
-    "FullSize": "0x110",
-    "InheritedSize": "0xa8",
-    "ClassSize": "0x68",
+    "FullSize": "0x168",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x48",
     "Attributes": [
-      {
-        "Name": "pad0x20_3OV0R[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0xa8"
-      },
       {
         "Name": "VacateOccupiedLocationTimer",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xc8"
+        "Offset": "0x120"
       },
       {
-        "Name": "pad0x44_1J6PQ[0x44]",
+        "Name": "pad0x44_XLSTD[0x44]",
         "Type": "char",
         "Size": "0x44",
-        "Offset": "0xcc"
+        "Offset": "0x124"
       }
     ]
   },
-  "KrakenGameEventOnDemandArrivalTunnelWorker": {
-    "Super": "SeaBasedGameEventOnDemandArrivalTunnelWorker",
-    "FullSize": "0x120",
-    "InheritedSize": "0x110",
-    "ClassSize": "0x10",
-    "Attributes": []
+  "SunkenKingdomShrineGameEventOnDemandArrivalTunnelWorker": {
+    "Super": "GameEventOnDemandArrivalTunnelWorkerBase",
+    "FullSize": "0x138",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_MWD9F[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x120"
+      }
+    ]
   },
-  "TinySharkGameEventOnDemandArrivalTunnelWorker": {
-    "Super": "SeaBasedGameEventOnDemandArrivalTunnelWorker",
-    "FullSize": "0x120",
-    "InheritedSize": "0x110",
-    "ClassSize": "0x10",
-    "Attributes": []
+  "SunkenKingdomTreasuryGameEventOnDemandArrivalTunnelWorker": {
+    "Super": "GameEventOnDemandArrivalTunnelWorkerBase",
+    "FullSize": "0x138",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_2E3SM[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x120"
+      }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

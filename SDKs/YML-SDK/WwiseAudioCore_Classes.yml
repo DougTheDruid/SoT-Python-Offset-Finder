@@ -2,59 +2,59 @@
 # https://github.com/DougTheDruid
 WwiseAudioSettings:
   Attributes:
-  - Name: pad0xc0_ATWJB[0xc0]
+  - Name: pad0xc0_H897A[0xc0]
     Offset: '0x28'
     Size: '0xc0'
     Type: char
   - Name: PlatformMappings
     Offset: '0xe8'
     Size: '0x20'
-    Type: Struct WwisePlatformMappings
+    Type: struct WwisePlatformMappings
   - Name: ReverbPresetSettings
     Offset: '0x108'
     Size: '0x64'
-    Type: Struct WwiseAudioReverbPresets
-  - Name: pad0x4_DMLW8[0x4]
+    Type: struct WwiseAudioReverbPresets
+  - Name: pad0x4_NOTS0[0x4]
     Offset: '0x16c'
     Size: '0x4'
     Type: char
   - Name: WwiseCoreAssetsPath
     Offset: '0x170'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: WwiseSoundbanksRoot
     Offset: '0x180'
     Size: '0x10'
-    Type: Struct DirectoryPath
+    Type: struct DirectoryPath
   - Name: WwiseStreamedFilesRoot
     Offset: '0x190'
     Size: '0x10'
-    Type: Struct DirectoryPath
+    Type: struct DirectoryPath
   - Name: AsyncIOPriorityMappings
     Offset: '0x1a0'
     Size: '0x10'
-    Type: TArray<struct AsyncIOPriorityMappings>
+    Type: TArray<struct WwiseIOPriorityMappingConfig>
   - Name: TritonAcousticMapsDirectory
     Offset: '0x1b0'
     Size: '0x10'
-    Type: Struct DirectoryPath
+    Type: struct DirectoryPath
   - Name: DefaultLanguage
     Offset: '0x1c0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: SinkSharesetName
     Offset: '0x1d0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: NetworkRelationship
     Offset: '0x1e0'
     Size: '0x18'
-    Type: Struct WwiseNetworkRelationship
+    Type: struct WwiseNetworkRelationship
   - Name: WwiseCoreAssets
     Offset: '0x200'
     Size: '0x8'
-    Type: Class WwiseCoreAssets*
-  - Name: pad0x58_W551V[0x58]
+    Type: class WwiseCoreAssets*
+  - Name: pad0x58_TU58L[0x58]
     Offset: '0x208'
     Size: '0x58'
     Type: char

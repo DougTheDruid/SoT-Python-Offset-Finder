@@ -12,20 +12,20 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_2WOI1[0x7]",
+        "Name": "pad0x7_ANUCK[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
       },
       {
         "Name": "UnicastEndpoint",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "MulticastEndpoint",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -36,7 +36,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x7_1XH5S[0x7]",
+        "Name": "pad0x7_3L143[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x51"
@@ -54,20 +54,20 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x7_W46RA[0x7]",
+        "Name": "pad0x7_JX9TL[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x69"
       },
       {
         "Name": "TunnelUnicastEndpoint",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "TunnelMulticastEndpoint",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x80"
       },

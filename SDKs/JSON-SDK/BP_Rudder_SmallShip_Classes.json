@@ -6,14 +6,14 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMesh",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x440"
       },
       {
-        "Name": "None",
-        "Type": "Class SceneComponent*",
+        "Name": "Root",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x448"
       }

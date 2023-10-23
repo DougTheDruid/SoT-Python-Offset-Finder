@@ -10,7 +10,8 @@ namespace DougsSDKDumper
 struct IdleTimeTracker
 {
 public:
-	Struct Timespan                                              InactivityThreshold;                               // 0x0(0x8)
+	struct Timespan                                              InactivityThreshold;                               // 0x0(0x8)
+	char                                                         pad0x30_PLNNL[0x30];                               // 0x8(0x30)
 };
 
 

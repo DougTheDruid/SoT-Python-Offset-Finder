@@ -4,7 +4,14 @@
     "FullSize": "0xc0",
     "InheritedSize": "0x28",
     "ClassSize": "0x98",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x98_UUN4D[0x98]",
+        "Type": "char",
+        "Size": "0x98",
+        "Offset": "0x28"
+      }
+    ]
   },
   "FontProviderInterface": {
     "Super": "Interface",
@@ -32,7 +39,14 @@
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_9M9SA[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
   },
   "SlateWidgetStyleAsset": {
     "Super": "Object",
@@ -42,7 +56,7 @@
     "Attributes": [
       {
         "Name": "CustomStyle",
-        "Type": "Class SlateWidgetStyleContainerBase*",
+        "Type": "class SlateWidgetStyleContainerBase*",
         "Size": "0x8",
         "Offset": "0x28"
       }

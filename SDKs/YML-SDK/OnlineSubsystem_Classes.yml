@@ -5,15 +5,15 @@ DefaultOnlineEnvironmentSettings:
   - Name: EnvironmentId
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ServiceConfigId
     Offset: '0x40'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ClientCertificateThumbprint
     Offset: '0x50'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
@@ -23,12 +23,12 @@ NamedInterfaces:
   - Name: NamedInterfaces
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct NamedInterfaces>
+    Type: TArray<struct NamedInterface>
   - Name: NamedInterfaceDefs
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<struct NamedInterfaceDefs>
-  - Name: pad0x18_DLBIM[0x18]
+    Type: TArray<struct NamedInterfaceDef>
+  - Name: pad0x18_7IZXK[0x18]
     Offset: '0x48'
     Size: '0x18'
     Type: char

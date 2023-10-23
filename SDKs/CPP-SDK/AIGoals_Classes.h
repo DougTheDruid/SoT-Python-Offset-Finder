@@ -6,66 +6,80 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+class AIHomeComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_Z92XC[0x8];                                 // 0xc8(0x8)
+	class Actor*                                                 HomeActor;                                         // 0xd0(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x40] - InheritedSize[0x40]
 class AlwaysEvaluatesTrueAIGoal: public AIGoal
 {
 public:
 };
 
 
-// Size 0x98 (Full Size[0x108] - InheritedSize[0x70]
+// Size 0xa0 (Full Size[0x110] - InheritedSize[0x70]
 class BTService_SetBestActionSpotNearTarget: public BTService
 {
 public:
-	Struct BlackboardKeySelector                                 TargetKey;                                         // 0x70(0x28)
-	Struct BlackboardKeySelector                                 BestActionSpotKey;                                 // 0x98(0x28)
-	Struct BestActionSpotSelectionCriteria                       BestActionSpotSelectionCriteria;                   // 0xc0(0x2c)
-	char                                                         pad0x1c_K0KQK[0x1c];                               // 0xec(0x1c)
+	struct BlackboardKeySelector                                 TargetKey;                                         // 0x70(0x28)
+	struct BlackboardKeySelector                                 BestActionSpotKey;                                 // 0x98(0x28)
+	struct BestActionSpotSelectionCriteria                       BestActionSpotSelectionCriteria;                   // 0xc0(0x34)
+	char                                                         pad0x1c_H962L[0x1c];                               // 0xf4(0x1c)
 };
 
 
-// Size 0x40 (Full Size[0x78] - InheritedSize[0x38]
+// Size 0x38 (Full Size[0x78] - InheritedSize[0x40]
 class WhileActionSpotAvailableForPatrolAIGoal: public AIGoal
 {
 public:
-	float                                                        MinTimeToChangePatrolSpot;                         // 0x38(0x4)
-	float                                                        MaxTimeToChangePatrolSpot;                         // 0x3c(0x4)
-	class                                                        PatrolActivityType;                                // 0x40(0x8)
-	char                                                         pad0x30_AM3JR[0x30];                               // 0x48(0x30)
+	float                                                        MinTimeToChangePatrolSpot;                         // 0x40(0x4)
+	float                                                        MaxTimeToChangePatrolSpot;                         // 0x44(0x4)
+	char                                                         pad0x30_AKEHM[0x30];                               // 0x48(0x30)
 };
 
 
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+// Size 0x8 (Full Size[0x48] - InheritedSize[0x40]
 class WhileBlackboardKeySetAIGoal: public AIGoal
 {
 public:
-	struct FName                                                 BlackboardKey;                                     // 0x38(0x8)
+	struct FName                                                 BlackboardKey;                                     // 0x40(0x8)
 };
 
 
-// Size 0x38 (Full Size[0x70] - InheritedSize[0x38]
+// Size 0x38 (Full Size[0x78] - InheritedSize[0x40]
 class WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal: public AIGoal
 {
 public:
-	float                                                        InnerRadius;                                       // 0x38(0x4)
-	float                                                        OuterRadius;                                       // 0x3c(0x4)
-	Struct AIGoalMovementModeFilter                              MovementModeFilter;                                // 0x40(0x20)
-	bool                                                         ShouldOnlyActivateWhileDocked;                     // 0x60(0x1)
-	char                                                         pad0x7_PDPMK[0x7];                                 // 0x61(0x7)
-	Class Pawn*                                                  TargetPlayerPawn;                                  // 0x68(0x8)
+	float                                                        InnerRadius;                                       // 0x40(0x4)
+	float                                                        OuterRadius;                                       // 0x44(0x4)
+	struct AIGoalMovementModeFilter                              MovementModeFilter;                                // 0x48(0x20)
+	bool                                                         ShouldOnlyActivateWhileDocked;                     // 0x68(0x1)
+	char                                                         pad0x7_4G1R6[0x7];                                 // 0x69(0x7)
+	class Pawn*                                                  TargetPlayerPawn;                                  // 0x70(0x8)
 };
 
 
-// Size 0xb8 (Full Size[0xf0] - InheritedSize[0x38]
+// Size 0x0 (Full Size[0x40] - InheritedSize[0x40]
+class WhileHomeSetAIGoal: public AIGoal
+{
+public:
+};
+
+
+// Size 0xb0 (Full Size[0xf0] - InheritedSize[0x40]
 class WhilePlayerWithinAreaAIGoal: public AIGoal
 {
 public:
-	float                                                        EnterAreaTriggerDistance;                          // 0x38(0x4)
-	float                                                        ExitAreaTriggerDistance;                           // 0x3c(0x4)
-	Struct AIGoalMovementModeFilter                              MovementModeFilter;                                // 0x40(0x20)
-	class                                                        WhileActiveActivityType;                           // 0x60(0x8)
-	Class Pawn*                                                  TargetPlayerPawn;                                  // 0x68(0x8)
-	char                                                         pad0x80_KM9EB[0x80];                               // 0x70(0x80)
+	float                                                        EnterAreaTriggerDistance;                          // 0x40(0x4)
+	float                                                        ExitAreaTriggerDistance;                           // 0x44(0x4)
+	struct AIGoalMovementModeFilter                              MovementModeFilter;                                // 0x48(0x20)
+	class Pawn*                                                  TargetPlayerPawn;                                  // 0x68(0x8)
+	char                                                         pad0x80_62KXW[0x80];                               // 0x70(0x80)
 };
 
 

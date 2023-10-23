@@ -5,7 +5,7 @@ BP_LavaZone_C:
   - Name: DefaultSceneRoot
     Offset: '0x470'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x8'
   FullSize: '0x478'
   InheritedSize: '0x470'

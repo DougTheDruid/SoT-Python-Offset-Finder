@@ -13,19 +13,19 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_630JC[0x8]",
+        "Name": "pad0x8_MYMBW[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2e0"
       },
       {
         "Name": "InstancedLayers",
-        "Type": "TArray<struct InstancedLayers>",
+        "Type": "TArray<struct InstancedLayer>",
         "Size": "0x10",
         "Offset": "0x2e8"
       },
       {
-        "Name": "pad0x18_XLHO5[0x18]",
+        "Name": "pad0x18_B9RN8[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x2f8"

@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 struct AutoCompleteCommand
 {
 public:
-	Struct FString                                               Command;                                           // 0x0(0x10)
-	Struct FString                                               Desc;                                              // 0x10(0x10)
-	Struct FString                                               Keywords;                                          // 0x20(0x10)
+	struct FString                                               Command;                                           // 0x0(0x10)
+	struct FString                                               Desc;                                              // 0x10(0x10)
+	struct FString                                               Keywords;                                          // 0x20(0x10)
 };
 
 

@@ -7,19 +7,19 @@
     "Attributes": [
       {
         "Name": "CubeNotWalkable",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xcb0"
       },
       {
         "Name": "MountCollision",
-        "Type": "Class CapsuleComponent*",
+        "Type": "class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0xcb8"
       },
       {
         "Name": "BarrelCollision",
-        "Type": "Class CapsuleComponent*",
+        "Type": "class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0xcc0"
       }

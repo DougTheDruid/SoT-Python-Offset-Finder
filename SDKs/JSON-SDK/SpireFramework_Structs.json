@@ -10,15 +10,21 @@
       },
       {
         "Name": "Location",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x4"
       },
       {
         "Name": "SpireActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x50_GKAXU[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x18"
       }
     ]
   },
@@ -42,6 +48,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x5"
+      },
+      {
+        "Name": "pad0x2_YVKVO[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x6"
       }
     ]
   },
@@ -50,7 +62,7 @@
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },

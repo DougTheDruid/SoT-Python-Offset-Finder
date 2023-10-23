@@ -10,8 +10,9 @@ namespace DougsSDKDumper
 struct VideoPlaybackStateEvent
 {
 public:
-	Struct FString                                               MediaTextureName;                                  // 0x0(0x10)
+	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
 	byte                                                         State;                                             // 0x10(0x1)
+	char                                                         pad0x7_J3CJU[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -19,8 +20,8 @@ public:
 struct VideoSubtitleEvent
 {
 public:
-	Struct FString                                               MediaTextureName;                                  // 0x0(0x10)
-	Struct FString                                               SubtitleString;                                    // 0x10(0x10)
+	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
+	struct FString                                               SubtitleString;                                    // 0x10(0x10)
 	double                                                       SubtitleDuration;                                  // 0x20(0x8)
 };
 
@@ -29,7 +30,7 @@ public:
 struct VideoPlaybackStopEvent
 {
 public:
-	Struct FString                                               MediaTextureName;                                  // 0x0(0x10)
+	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
 };
 
 
@@ -37,7 +38,7 @@ public:
 struct VideoPlaybackPauseEvent
 {
 public:
-	Struct FString                                               MediaTextureName;                                  // 0x0(0x10)
+	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
 };
 
 
@@ -45,7 +46,7 @@ public:
 struct VideoPlaybackStartEvent
 {
 public:
-	Struct FString                                               MediaTextureName;                                  // 0x0(0x10)
+	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
 };
 
 
@@ -53,8 +54,8 @@ public:
 struct VideoPlaybackLoadEvent
 {
 public:
-	Struct FString                                               MediaTextureName;                                  // 0x0(0x10)
-	Struct FString                                               VideoUri;                                          // 0x10(0x10)
+	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
+	struct FString                                               VideoUri;                                          // 0x10(0x10)
 };
 
 
@@ -62,10 +63,11 @@ public:
 struct MediaPlayedTelemetryEvent
 {
 public:
-	Struct FString                                               MediaName;                                         // 0x0(0x10)
-	Struct IntPoint                                              LowestResolution;                                  // 0x10(0x8)
-	Struct IntPoint                                              MedianResolution;                                  // 0x18(0x8)
-	Struct IntPoint                                              HighestResolution;                                 // 0x20(0x8)
+	struct FString                                               MediaName;                                         // 0x0(0x10)
+	struct IntPoint                                              LowestResolution;                                  // 0x10(0x8)
+	struct IntPoint                                              MedianResolution;                                  // 0x18(0x8)
+	struct IntPoint                                              HighestResolution;                                 // 0x20(0x8)
+	char                                                         pad0x18_OGMZJ[0x18];                               // 0x28(0x18)
 };
 
 

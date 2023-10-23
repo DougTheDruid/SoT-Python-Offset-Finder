@@ -5,15 +5,15 @@ BP_LeverMechanismTrigger_SovereignHut_C:
   - Name: Interactable
     Offset: '0x5f8'
     Size: '0x8'
-    Type: Class InteractableComponent*
+    Type: class InteractableComponent*
   - Name: LeverMesh
     Offset: '0x600'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: BaseMesh
     Offset: '0x608'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   ClassSize: '0x18'
   FullSize: '0x610'
   InheritedSize: '0x5f8'

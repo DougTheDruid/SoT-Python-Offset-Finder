@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_ShipFlagCustomizationChestInteraction_C: public ShipFlagCustomizationChestInteraction
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x550(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x550(0x8)
 };
 
 

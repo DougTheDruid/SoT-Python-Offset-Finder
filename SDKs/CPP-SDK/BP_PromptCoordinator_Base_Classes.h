@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class BP_PromptCoordinator_Base_C: public BasePromptCoordinator
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
-	char                                                         pad0x136_F6H3B[0x136];                             // 0x120(0x136)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x118(0x8)
+	char                                                         pad0x170_IS33W[0x170];                             // 0x120(0x170)
 	bool                                                         IsCompleted;                                       // 0x120(0x1)
-	char                                                         pad0x7_UDCDS[0x7];                                 // 0x121(0x7)
-	char                                                         pad0x10_D6ZL0[0x10];                               // 0x128(0x10)
+	char                                                         pad0x7_GEI52[0x7];                                 // 0x121(0x7)
+	char                                                         pad0x10_LAWEA[0x10];                               // 0x128(0x10)
 };
 
 

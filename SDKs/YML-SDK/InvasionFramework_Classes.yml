@@ -11,23 +11,23 @@ DisplayInvasionBannersStepDesc:
   - Name: Message
     Offset: '0x80'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: DisableMusic
     Offset: '0xb8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_40PR5[0x7]
+  - Name: pad0x7_AM75G[0x7]
     Offset: '0xb9'
     Size: '0x7'
     Type: char
   - Name: DisplayShipsNameForCrewId
     Offset: '0xc0'
     Size: '0x30'
-    Type: Struct QuestVariableGuid
+    Type: struct QuestVariableGuid
   - Name: DisplayBannersForFaction
     Offset: '0xf0'
     Size: '0x30'
-    Type: Struct QuestVariableName
+    Type: struct QuestVariableName
   ClassSize: '0xa0'
   FullSize: '0x120'
   InheritedSize: '0x80'
@@ -49,11 +49,11 @@ GetInvasionBattleLocationStepDesc:
   - Name: Location
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableVector
+    Type: struct QuestVariableVector
   - Name: Radius
     Offset: '0xb0'
     Size: '0x30'
-    Type: Struct QuestVariableFloat
+    Type: struct QuestVariableFloat
   ClassSize: '0x60'
   FullSize: '0xe0'
   InheritedSize: '0x80'
@@ -69,39 +69,39 @@ GetInvasionShipsStepDesc:
   - Name: AggressiveShip
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableActor
+    Type: struct QuestVariableActor
   - Name: AggressiveShip
     Offset: '0xb0'
     Size: '0x30'
-    Type: Struct QuestVariableActor
+    Type: struct QuestVariableActor
   - Name: PassiveShip
     Offset: '0xe0'
     Size: '0x30'
-    Type: Struct QuestVariableActor
+    Type: struct QuestVariableActor
   - Name: AggressiveCrewId
     Offset: '0x110'
     Size: '0x30'
-    Type: Struct QuestVariableGuid
+    Type: struct QuestVariableGuid
   - Name: AggressiveCrewId
     Offset: '0x140'
     Size: '0x30'
-    Type: Struct QuestVariableGuid
+    Type: struct QuestVariableGuid
   - Name: PassiveCrewId
     Offset: '0x170'
     Size: '0x30'
-    Type: Struct QuestVariableGuid
+    Type: struct QuestVariableGuid
   - Name: AggressiveFaction
     Offset: '0x1a0'
     Size: '0x30'
-    Type: Struct QuestVariableName
+    Type: struct QuestVariableName
   - Name: AggressiveFaction
     Offset: '0x1d0'
     Size: '0x30'
-    Type: Struct QuestVariableName
+    Type: struct QuestVariableName
   - Name: PassiveFaction
     Offset: '0x200'
     Size: '0x30'
-    Type: Struct QuestVariableName
+    Type: struct QuestVariableName
   ClassSize: '0x1b0'
   FullSize: '0x230'
   InheritedSize: '0x80'
@@ -111,15 +111,15 @@ InvasionBattleBounds:
   - Name: Root
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   - Name: ShipToTrack1
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: ShipToTrack2
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: InnerRadius
     Offset: '0x3e0'
     Size: '0x4'
@@ -128,20 +128,28 @@ InvasionBattleBounds:
     Offset: '0x3e4'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_W68DN[0x8]
+  - Name: pad0x8_G9WS8[0x8]
     Offset: '0x3e8'
     Size: '0x8'
     Type: char
   - Name: ShipThatWasDestroyed
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: HasLeftBattleBounds
     Offset: '0x3f8'
     Size: '0x10'
     Type: TArray<class Actor*>
-  ClassSize: '0x40'
-  FullSize: '0x408'
+  - Name: pad0x8_5ZSA7[0x8]
+    Offset: '0x408'
+    Size: '0x8'
+    Type: char
+  - Name: pad0x50_I52HU[0x50]
+    Offset: '0x410'
+    Size: '0x50'
+    Type: char
+  ClassSize: '0x98'
+  FullSize: '0x460'
   InheritedSize: '0x3c8'
   Super: Actor
 InvasionBattleBoundsShipComponentInterface:
@@ -161,7 +169,7 @@ InvasionLocationsDataAsset:
   - Name: AggressiveAggressiveLocations
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct AggressiveAggressiveLocations>
+    Type: TArray<struct Vector2D>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -174,51 +182,51 @@ InvasionLocationsDataAssetGetterInterface:
   Super: Interface
 InvasionService:
   Attributes:
-  - Name: pad0x40_WDZZJ[0x40]
+  - Name: pad0x40_F8XKW[0x40]
     Offset: '0x3c8'
     Size: '0x40'
     Type: char
   - Name: InvasionSettings
     Offset: '0x408'
     Size: '0x8'
-    Type: Class InvasionSettings*
+    Type: class InvasionSettings*
   - Name: InvasionServiceDataAsset
     Offset: '0x410'
     Size: '0x8'
-    Type: Class InvasionServiceDataAsset*
+    Type: class InvasionServiceDataAsset*
   - Name: InvasionLocationsDataAsset
     Offset: '0x418'
     Size: '0x8'
-    Type: Class InvasionLocationsDataAsset*
-  - Name: pad0x178_3C71N[0x178]
+    Type: class InvasionLocationsDataAsset*
+  - Name: pad0x178_G2ZL5[0x178]
     Offset: '0x420'
     Size: '0x178'
     Type: char
   - Name: MatchmakingCrews
     Offset: '0x598'
     Size: '0x10'
-    Type: TArray<struct MatchmakingCrews>
+    Type: TArray<struct InvasionParticipatingCrewData>
   - Name: InvadingCrews
     Offset: '0x5a8'
     Size: '0x10'
-    Type: TArray<struct InvadingCrews>
+    Type: TArray<struct InvasionParticipatingCrewData>
   - Name: ReplicatedInvasionCrewMusicStates
     Offset: '0x5b8'
     Size: '0x10'
-    Type: TArray<struct ReplicatedInvasionCrewMusicStates>
+    Type: TArray<struct ReplicatedInvasionCrewMusicState>
   - Name: MatchmakingCrewsReplicated
     Offset: '0x5c8'
     Size: '0x10'
-    Type: TArray<struct MatchmakingCrewsReplicated>
+    Type: TArray<struct InvasionServiceMatchmakingCrewInfo>
   - Name: InvadingCrewsReplicated
     Offset: '0x5d8'
     Size: '0x10'
-    Type: TArray<struct InvadingCrewsReplicated>
+    Type: TArray<struct Guid>
   - Name: InvasionBattleBoundsList
     Offset: '0x5e8'
     Size: '0x10'
     Type: TArray<class InvasionBattleBounds*>
-  - Name: pad0x68_HVOAL[0x68]
+  - Name: pad0x68_2LGJR[0x68]
     Offset: '0x5f8'
     Size: '0x68'
     Type: char
@@ -231,43 +239,43 @@ InvasionServiceDataAsset:
   - Name: Matchmaking_VoyageDescDataAsset
     Offset: '0x28'
     Size: '0x8'
-    Type: Class VoyageDescDataAsset*
+    Type: class VoyageDescDataAsset*
   - Name: Invasion_AggressivePassive_VoyageDescDataAsset
     Offset: '0x30'
     Size: '0x8'
-    Type: Class VoyageDescDataAsset*
+    Type: class VoyageDescDataAsset*
   - Name: Invasion_AggressiveAggressive_VoyageDescDataAsset
     Offset: '0x38'
     Size: '0x8'
-    Type: Class VoyageDescDataAsset*
+    Type: class VoyageDescDataAsset*
   - Name: VoteValidationRivalShipDetectionRadius
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_YQ8EU[0x4]
+  - Name: pad0x4_JBMSN[0x4]
     Offset: '0x44'
     Size: '0x4'
     Type: char
   - Name: Invasion_LosingCrew_VoyageDescDataAsset
     Offset: '0x48'
     Size: '0x8'
-    Type: Class VoyageDescDataAsset*
+    Type: class VoyageDescDataAsset*
   - Name: AggressivePassive_EnvQueryTemplate
     Offset: '0x50'
     Size: '0x8'
-    Type: Class EnvQuery*
+    Type: class EnvQuery*
   - Name: AggressiveAggressive_InvasionLocation_EnvQueryTemplate
     Offset: '0x58'
     Size: '0x8'
-    Type: Class EnvQuery*
+    Type: class EnvQuery*
   - Name: AggressiveAggressive_PrimaryShipLocation_EnvQueryTemplate
     Offset: '0x60'
     Size: '0x8'
-    Type: Class EnvQuery*
+    Type: class EnvQuery*
   - Name: AggressiveAggressive_SecondaryShipLocation_EnvQueryTemplate
     Offset: '0x68'
     Size: '0x8'
-    Type: Class EnvQuery*
+    Type: class EnvQuery*
   - Name: AggressivePassive_EQSQueryParamData_SailingTargetDistanceInMetres_Min
     Offset: '0x70'
     Size: '0x4'
@@ -311,11 +319,11 @@ InvasionServiceDataAsset:
   - Name: Invasion_Debug_AggressivePassive_VoyageDescDataAsset
     Offset: '0x98'
     Size: '0x8'
-    Type: Class VoyageDescDataAsset*
+    Type: class VoyageDescDataAsset*
   - Name: Invasion_Debug_AggressiveAggressive_VoyageDescDataAsset
     Offset: '0xa0'
     Size: '0x8'
-    Type: Class VoyageDescDataAsset*
+    Type: class VoyageDescDataAsset*
   - Name: StopPlayingEmergeMusicAfterSeconds
     Offset: '0xa8'
     Size: '0x4'
@@ -339,7 +347,7 @@ InvasionSettings:
   - Name: InvasionServiceDataAsset
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -356,7 +364,7 @@ SetInvasionMusicStateForCrewStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_LTQ1H[0x7]
+  - Name: pad0x7_SSMVO[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -375,11 +383,11 @@ TaleQuestInvasionCreateBattleBoundsStepDesc:
   - Name: Ship1
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableActor
+    Type: struct QuestVariableActor
   - Name: Ship2
     Offset: '0xb0'
     Size: '0x30'
-    Type: Struct QuestVariableActor
+    Type: struct QuestVariableActor
   ClassSize: '0x60'
   FullSize: '0xe0'
   InheritedSize: '0x80'
@@ -389,8 +397,8 @@ TaleQuestInvasionMatchmakingService:
   - Name: ServiceDesc
     Offset: '0x60'
     Size: '0x8'
-    Type: Class TaleQuestInvasionMatchmakingServiceDesc*
-  - Name: pad0x1c0_SGB03[0x1c0]
+    Type: class TaleQuestInvasionMatchmakingServiceDesc*
+  - Name: pad0x1c0_QD78K[0x1c0]
     Offset: '0x68'
     Size: '0x1c0'
     Type: char
@@ -403,11 +411,11 @@ TaleQuestInvasionMatchmakingServiceDesc:
   - Name: OnCrewLeftServerMessage
     Offset: '0x28'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: OnCrewLeftFightMessage
     Offset: '0x60'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   ClassSize: '0x70'
   FullSize: '0x98'
   InheritedSize: '0x28'
@@ -423,7 +431,7 @@ TaleQuestInvasionRemoveBattleBoundsStepDesc:
   - Name: ShipInBattleBounds
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableActor
+    Type: struct QuestVariableActor
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
@@ -433,8 +441,8 @@ TaleQuestInvasionService:
   - Name: ServiceDesc
     Offset: '0x60'
     Size: '0x8'
-    Type: Class TaleQuestInvasionServiceDesc*
-  - Name: pad0x1a0_8OFLZ[0x1a0]
+    Type: class TaleQuestInvasionServiceDesc*
+  - Name: pad0x1a0_21ZMR[0x1a0]
     Offset: '0x68'
     Size: '0x1a0'
     Type: char
@@ -447,25 +455,29 @@ TaleQuestInvasionServiceDesc:
   - Name: OnCrewLeftServerMessage
     Offset: '0x28'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: OnCrewLeftFightMessage
     Offset: '0x60'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: FactionGBannerTag
     Offset: '0x98'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: FactionBBannerTag
     Offset: '0xd0'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   ClassSize: '0xe0'
   FullSize: '0x108'
   InheritedSize: '0x28'
   Super: TaleQuestServiceDesc
 WaitForShipToBeDefeatedStep:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_JIEZ1[0x18]
+    Offset: '0x98'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0xb0'
   InheritedSize: '0x98'
@@ -475,39 +487,39 @@ WaitForShipToBeDefeatedStepDesc:
   - Name: WinningShip
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableActor
+    Type: struct QuestVariableActor
   - Name: DefeatedShip
     Offset: '0xb0'
     Size: '0x30'
-    Type: Struct QuestVariableActor
+    Type: struct QuestVariableActor
   - Name: WinningCrewId
     Offset: '0xe0'
     Size: '0x30'
-    Type: Struct QuestVariableGuid
+    Type: struct QuestVariableGuid
   - Name: DefeatedCrewId
     Offset: '0x110'
     Size: '0x30'
-    Type: Struct QuestVariableGuid
+    Type: struct QuestVariableGuid
   - Name: WinningFaction
     Offset: '0x140'
     Size: '0x30'
-    Type: Struct QuestVariableName
+    Type: struct QuestVariableName
   - Name: DefeatedFaction
     Offset: '0x170'
     Size: '0x30'
-    Type: Struct QuestVariableName
+    Type: struct QuestVariableName
   - Name: TimeoutTimerIntervalInMinutes
     Offset: '0x1a0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_TR03M[0x4]
+  - Name: pad0x4_VSDUX[0x4]
     Offset: '0x1a4'
     Size: '0x4'
     Type: char
   - Name: FailMessage
     Offset: '0x1a8'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   ClassSize: '0x160'
   FullSize: '0x1e0'
   InheritedSize: '0x80'

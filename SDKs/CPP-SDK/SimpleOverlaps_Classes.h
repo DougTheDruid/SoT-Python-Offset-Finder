@@ -17,6 +17,7 @@ public:
 class SimpleOverlapComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_X8TG9[0x8];                                 // 0xc8(0x8)
 };
 
 
@@ -24,10 +25,10 @@ public:
 class SimpleOverlapZone: public Actor
 {
 public:
-	char                                                         pad0xc8_FAV10[0xc8];                               // 0x3c8(0xc8)
-	Class BoxComponent*                                          CollisionMesh;                                     // 0x490(0x8)
+	char                                                         pad0xc8_8TSTU[0xc8];                               // 0x3c8(0xc8)
+	class BoxComponent*                                          CollisionMesh;                                     // 0x490(0x8)
 	bool                                                         StartActive;                                       // 0x498(0x1)
-	char                                                         pad0x7_BDAS4[0x7];                                 // 0x499(0x7)
+	char                                                         pad0x7_Q2B26[0x7];                                 // 0x499(0x7)
 };
 
 

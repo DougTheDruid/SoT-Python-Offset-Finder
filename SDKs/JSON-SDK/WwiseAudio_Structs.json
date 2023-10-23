@@ -21,13 +21,13 @@
     "Attributes": [
       {
         "Name": "PoolWrapper",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "PlayEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
       },
@@ -39,9 +39,15 @@
       },
       {
         "Name": "Offset",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_6XLYM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
@@ -67,31 +73,31 @@
     "Attributes": [
       {
         "Name": "Position",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
       {
         "Name": "Up",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
       {
         "Name": "Right",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x18"
       },
       {
         "Name": "Front",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x24"
       },
       {
         "Name": "Velocity",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x30"
       }
@@ -107,20 +113,20 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_2TNV0[0x7]",
+        "Name": "pad0x7_BGX15[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "PoolDensityAudioPlayEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "PoolDensityAudioStopEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x10"
       },
@@ -149,7 +155,7 @@
     "Attributes": [
       {
         "Name": "path",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -160,7 +166,7 @@
     "Attributes": [
       {
         "Name": "Subtitle",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -170,8 +176,14 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
+        "Name": "pad0x18_W4KZU[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Section",
-        "Type": "Class MovieSceneAkAudioEventSection*",
+        "Type": "class MovieSceneAkAudioEventSection*",
         "Size": "0x8",
         "Offset": "0x18"
       }
@@ -181,8 +193,14 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
+        "Name": "pad0x18_KJGIG[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Section",
-        "Type": "Class MovieSceneAkAudioRTPCSection*",
+        "Type": "class MovieSceneAkAudioRTPCSection*",
         "Size": "0x8",
         "Offset": "0x18"
       }
@@ -193,13 +211,13 @@
     "Attributes": [
       {
         "Name": "RTPCName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "RTPCCurve",
-        "Type": "Struct RichCurve",
+        "Type": "struct RichCurve",
         "Size": "0x78",
         "Offset": "0x10"
       }

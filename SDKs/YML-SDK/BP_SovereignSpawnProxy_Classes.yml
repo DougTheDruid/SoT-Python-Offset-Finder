@@ -5,11 +5,11 @@ BP_SovereignSpawnProxy_C:
   - Name: PhasedActor
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class PhasedActorComponent*
+    Type: class PhasedActorComponent*
   - Name: DefaultSceneRoot
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x10'
   FullSize: '0x3d8'
   InheritedSize: '0x3c8'

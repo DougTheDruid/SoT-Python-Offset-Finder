@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class RepairTypeId: public Object
 {
 public:
-	Struct FText                                                 DisplayName;                                       // 0x28(0x38)
+	struct FText                                                 DisplayName;                                       // 0x28(0x38)
 };
 
 

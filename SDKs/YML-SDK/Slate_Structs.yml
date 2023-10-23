@@ -5,18 +5,18 @@ Anchors:
   - Name: Minimum
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: Maximum
     Offset: '0x8'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   ClassSize: '0x10'
 InputChord:
   Attributes:
   - Name: Key
     Offset: '0x0'
     Size: '0x20'
-    Type: Struct Key
+    Type: struct Key
   - Name: bShift
     Offset: '0x20'
     Size: '0x1'
@@ -33,4 +33,8 @@ InputChord:
     Offset: '0x20'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_ZEZ4J[0x7]
+    Offset: '0x21'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x28'

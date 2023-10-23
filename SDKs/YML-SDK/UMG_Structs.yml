@@ -5,22 +5,22 @@ AnchorData:
   - Name: Offsets
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Margin
+    Type: struct Margin
   - Name: Anchors
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct Anchors
+    Type: struct Anchors
   - Name: Alignment
     Offset: '0x20'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   ClassSize: '0x28'
 DelegateRuntimeBinding:
   Attributes:
   - Name: ObjectName
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: PropertyName
     Offset: '0x10'
     Size: '0x8'
@@ -32,78 +32,102 @@ DelegateRuntimeBinding:
   - Name: SourcePath
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct DynamicPropertyPath
+    Type: struct DynamicPropertyPath
   - Name: Kind
     Offset: '0x30'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_SWZA2[0x7]
+    Offset: '0x31'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x38'
 DynamicPropertyPath:
   Attributes:
   - Name: Segments
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct Segments>
+    Type: TArray<struct PropertyPathSegment>
   ClassSize: '0x10'
 EventReply:
-  Attributes: []
+  Attributes:
+  - Name: pad0xe8_36P7K[0xe8]
+    Offset: '0x0'
+    Size: '0xe8'
+    Type: char
   ClassSize: '0xe8'
 MovieScene2DTransformSectionTemplate:
   Attributes:
+  - Name: pad0x18_G4Y5X[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: PropertyData
     Offset: '0x18'
     Size: '0x20'
-    Type: Struct MovieScenePropertySectionData
+    Type: struct MovieScenePropertySectionData
   - Name: Translation
     Offset: '0x38'
     Size: '0x78'
-    Type: Struct RichCurve
-  - Name: pad0x78_9DION[0x78]
+    Type: struct RichCurve
+  - Name: pad0x78_VNURN[0x78]
     Offset: '0xb0'
     Size: '0x78'
     Type: char
   - Name: Rotation
     Offset: '0x128'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   - Name: Scale
     Offset: '0x1a0'
     Size: '0x78'
-    Type: Struct RichCurve
-  - Name: pad0x78_I7LRQ[0x78]
+    Type: struct RichCurve
+  - Name: pad0x78_D16IW[0x78]
     Offset: '0x218'
     Size: '0x78'
     Type: char
   - Name: Shear
     Offset: '0x290'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
+  - Name: pad0x78_GVHY6[0x78]
+    Offset: '0x308'
+    Size: '0x78'
+    Type: char
   ClassSize: '0x380'
 MovieSceneMarginSectionTemplate:
   Attributes:
+  - Name: pad0x18_5V6XU[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: PropertyData
     Offset: '0x18'
     Size: '0x20'
-    Type: Struct MovieScenePropertySectionData
+    Type: struct MovieScenePropertySectionData
   - Name: TopCurve
     Offset: '0x38'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   - Name: LeftCurve
     Offset: '0xb0'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   - Name: RightCurve
     Offset: '0x128'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   - Name: BottomCurve
     Offset: '0x1a0'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   ClassSize: '0x218'
 MovieSceneWidgetMaterialSectionTemplate:
   Attributes:
+  - Name: pad0x48_99VC5[0x48]
+    Offset: '0x0'
+    Size: '0x48'
+    Type: char
   - Name: BrushPropertyNamePath
     Offset: '0x48'
     Size: '0x10'
@@ -118,10 +142,14 @@ NamedSlotBinding:
   - Name: Content
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Widget*
+    Type: class Widget*
   ClassSize: '0x10'
 PaintContext:
-  Attributes: []
+  Attributes:
+  - Name: pad0x30_J05FC[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x30'
 PropertyPathSegment:
   Attributes:
@@ -133,18 +161,18 @@ PropertyPathSegment:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_E3WBA[0x4]
+  - Name: pad0x4_6YHNX[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
   - Name: Struct
     Offset: '0x10'
     Size: '0x8'
-    Type: Class Struct*
+    Type: class Struct*
   - Name: Field
     Offset: '0x18'
     Size: '0x8'
-    Type: Class Field*
+    Type: class Field*
   ClassSize: '0x20'
 SlateChildSize:
   Attributes:
@@ -156,6 +184,10 @@ SlateChildSize:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_1QF35[0x3]
+    Offset: '0x5'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x8'
 WidgetAnimationBinding:
   Attributes:
@@ -170,11 +202,15 @@ WidgetAnimationBinding:
   - Name: AnimationGuid
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: bIsRootWidget
     Offset: '0x20'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_PX40C[0x3]
+    Offset: '0x21'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x24'
 WidgetNavigationData:
   Attributes:
@@ -182,7 +218,7 @@ WidgetNavigationData:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_VG8ZN[0x3]
+  - Name: pad0x3_8LI2J[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -190,21 +226,25 @@ WidgetNavigationData:
     Offset: '0x4'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x8_X0HY3[0x8]
+    Offset: '0xc'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x14'
 WidgetTransform:
   Attributes:
   - Name: Translation
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: Scale
     Offset: '0x8'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: Shear
     Offset: '0x10'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: Angle
     Offset: '0x18'
     Size: '0x4'

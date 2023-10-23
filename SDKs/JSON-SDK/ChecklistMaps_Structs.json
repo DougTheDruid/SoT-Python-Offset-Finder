@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "Description",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x0"
       },
@@ -15,7 +15,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_3DKL3[0x4]",
+        "Name": "pad0x4_8074L[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -33,7 +33,7 @@
     "Attributes": [
       {
         "Name": "Description",
-        "Type": "Struct TreasureMapTextDesc",
+        "Type": "struct TreasureMapTextDesc",
         "Size": "0x48",
         "Offset": "0x0"
       },
@@ -42,6 +42,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x7_W29LO[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x49"
       }
     ]
   },
@@ -50,25 +56,25 @@
     "Attributes": [
       {
         "Name": "Title",
-        "Type": "Struct TreasureMapTextDesc",
+        "Type": "struct TreasureMapTextDesc",
         "Size": "0x48",
         "Offset": "0x0"
       },
       {
         "Name": "Description",
-        "Type": "Struct TreasureMapTextDesc",
+        "Type": "struct TreasureMapTextDesc",
         "Size": "0x48",
         "Offset": "0x48"
       },
       {
         "Name": "ChecklistItems",
-        "Type": "TArray<struct ChecklistItems>",
+        "Type": "TArray<struct ChecklistMapItemData>",
         "Size": "0x10",
         "Offset": "0x90"
       },
       {
         "Name": "Afternote",
-        "Type": "Struct TreasureMapTextDesc",
+        "Type": "struct TreasureMapTextDesc",
         "Size": "0x48",
         "Offset": "0xa0"
       }
@@ -76,20 +82,27 @@
   },
   "CompleteEntireChecklistEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_GQYL6[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ChecklistBootyDeliveredEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "Seller",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "BuyingNPC",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -100,7 +113,7 @@
     "Attributes": [
       {
         "Name": "ActionData",
-        "Type": "Class ChecklistActionData*",
+        "Type": "class ChecklistActionData*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -111,7 +124,7 @@
     "Attributes": [
       {
         "Name": "ChecklistMapId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -122,14 +135,14 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_4D0B0[0x7]",
+        "Name": "pad0x7_35PFZ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
       },
       {
         "Name": "ActionDescryption",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x18"
       }

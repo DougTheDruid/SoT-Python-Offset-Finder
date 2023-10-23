@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class AbandonedNoteClueDescriptor: public ClueDescriptor
 {
 public:
-	Class ClueDestinationDescriptor*                             DestinationDescriptor;                             // 0x28(0x8)
+	class ClueDestinationDescriptor*                             DestinationDescriptor;                             // 0x28(0x8)
 };
 
 
@@ -25,6 +25,7 @@ public:
 class AbandonedNoteClueTextChoiceSource: public Object
 {
 public:
+	char                                                         pad0xb8_19QBS[0xb8];                               // 0x28(0xb8)
 };
 
 
@@ -40,7 +41,7 @@ class AbandonedNoteClueTextAsset: public DataAsset
 {
 public:
 	TArray<struct FText>                                         Descriptions;                                      // 0x28(0x10)
-	class                                                        DestinationType;                                   // 0x38(0x8)
+	class UClass*                                                DestinationType;                                   // 0x38(0x8)
 };
 
 
@@ -55,7 +56,7 @@ public:
 class AbandonedNoteClueTextIndexAssetMap: public DataAsset
 {
 public:
-	TArray<struct TextIndexMappings>                             TextIndexMappings;                                 // 0x28(0x10)
+	TArray<struct ClueDestinationToTextIndex>                    TextIndexMappings;                                 // 0x28(0x10)
 };
 
 
@@ -84,13 +85,13 @@ public:
 class AbandonedNoteClueDestinationContainerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x20_AUQJD[0x20];                               // 0xc8(0x20)
-	Class AbandonedNoteClueTextIndexAssetMap*                    ClueTextIndexAssetMap;                             // 0xe8(0x8)
-	Struct FString                                               CompositeFormatString;                             // 0xf0(0x10)
-	Struct ClueDestinationChoice                                 CurrentClueDestination;                            // 0x100(0x10)
-	Struct FText                                                 CurrentTitleText;                                  // 0x110(0x38)
-	Class AbandonedNoteClueTextChoiceSource*                     ClueTextChoiceSource;                              // 0x148(0x8)
-	char                                                         pad0x80_19A3X[0x80];                               // 0x150(0x80)
+	char                                                         pad0x20_7WECO[0x20];                               // 0xc8(0x20)
+	class AbandonedNoteClueTextIndexAssetMap*                    ClueTextIndexAssetMap;                             // 0xe8(0x8)
+	struct FString                                               CompositeFormatString;                             // 0xf0(0x10)
+	struct ClueDestinationChoice                                 CurrentClueDestination;                            // 0x100(0x10)
+	struct FText                                                 CurrentTitleText;                                  // 0x110(0x38)
+	class AbandonedNoteClueTextChoiceSource*                     ClueTextChoiceSource;                              // 0x148(0x8)
+	char                                                         pad0x80_BQWQ1[0x80];                               // 0x150(0x80)
 };
 
 
@@ -98,7 +99,7 @@ public:
 class NPCByNameClueDestinationDescriptor: public ClueDestinationDescriptor
 {
 public:
-	Struct Guid                                                  NPCIdentifier;                                     // 0x40(0x10)
+	struct Guid                                                  NPCIdentifier;                                     // 0x40(0x10)
 };
 
 
@@ -106,8 +107,8 @@ public:
 class AbandonedNoteClueGenderSpecificTextAsset: public DataAsset
 {
 public:
-	TArray<struct Descriptions>                                  Descriptions;                                      // 0x28(0x10)
-	class                                                        DestinationType;                                   // 0x38(0x8)
+	TArray<struct GenderSpecificTextPairings>                    Descriptions;                                      // 0x28(0x10)
+	class UClass*                                                DestinationType;                                   // 0x38(0x8)
 };
 
 
@@ -133,14 +134,14 @@ class AbandonedNoteWieldableRenderingComponent: public ActorComponent
 public:
 	int                                                          CanvasWidth;                                       // 0xc8(0x4)
 	int                                                          CanvasHeight;                                      // 0xcc(0x4)
-	Class Font*                                                  BodyTextFont;                                      // 0xd0(0x8)
-	Class Font*                                                  TitleTextFont;                                     // 0xd8(0x8)
+	class Font*                                                  BodyTextFont;                                      // 0xd0(0x8)
+	class Font*                                                  TitleTextFont;                                     // 0xd8(0x8)
 	float                                                        FontLineSpacing;                                   // 0xe0(0x4)
 	float                                                        FontScale;                                         // 0xe4(0x4)
-	Struct TreasureMapWidgetText                                 BodyTextLayout;                                    // 0xe8(0x3c)
-	Struct TreasureMapWidgetText                                 TitleTextLayout;                                   // 0x124(0x3c)
-	TArray<struct ExtraTextFields>                               ExtraTextFields;                                   // 0x160(0x10)
-	char                                                         pad0x50_4GVMB[0x50];                               // 0x170(0x50)
+	struct TreasureMapWidgetText                                 BodyTextLayout;                                    // 0xe8(0x3c)
+	struct TreasureMapWidgetText                                 TitleTextLayout;                                   // 0x124(0x3c)
+	TArray<struct TextEntryWithLayout>                           ExtraTextFields;                                   // 0x160(0x10)
+	char                                                         pad0x50_W2H4I[0x50];                               // 0x170(0x50)
 };
 
 
@@ -148,13 +149,13 @@ public:
 class AbandonedNoteWieldable: public SkeletalMeshWieldableItem
 {
 public:
-	char                                                         pad0x10_8D4FA[0x10];                               // 0x7e0(0x10)
-	Class WieldableItemCanvasRenderingComponent*                 WieldableItemCanvasRenderingComponent;             // 0x7f0(0x8)
-	Class AbandonedNoteWieldableRenderingComponent*              AbandonedNoteRenderingComponent;                   // 0x7f8(0x8)
-	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x800(0x8)
-	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x808(0x8)
+	char                                                         pad0x10_CLHWS[0x10];                               // 0x7e0(0x10)
+	class WieldableItemCanvasRenderingComponent*                 WieldableItemCanvasRenderingComponent;             // 0x7f0(0x8)
+	class AbandonedNoteWieldableRenderingComponent*              AbandonedNoteRenderingComponent;                   // 0x7f8(0x8)
+	class InventoryItemComponent*                                InventoryItemComponent;                            // 0x800(0x8)
+	class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x808(0x8)
 	byte                                                         QuestMapIcon;                                      // 0x810(0x1)
-	char                                                         pad0xf_9G8JE[0xf];                                 // 0x811(0xf)
+	char                                                         pad0xf_E9UAA[0xf];                                 // 0x811(0xf)
 };
 
 
@@ -169,8 +170,8 @@ public:
 class BarrelsOfPlentyClueSiteData: public ClueSiteData
 {
 public:
-	Struct Vector                                                SpawnLocation;                                     // 0x38(0xc)
-	char                                                         pad0x2c_7SMYF[0x2c];                               // 0x44(0x2c)
+	struct Vector                                                SpawnLocation;                                     // 0x38(0xc)
+	char                                                         pad0x2c_JADUZ[0x2c];                               // 0x44(0x2c)
 };
 
 
@@ -194,7 +195,7 @@ public:
 class CircleMapClueDescriptor: public ClueDescriptor
 {
 public:
-	Class ClueDestinationDescriptor*                             DestinationDescriptor;                             // 0x28(0x8)
+	class ClueDestinationDescriptor*                             DestinationDescriptor;                             // 0x28(0x8)
 };
 
 
@@ -216,19 +217,19 @@ public:
 class CircleMapClueDestinationContainerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x10_E7NCX[0x10];                               // 0xc8(0x10)
-	class                                                        MapMarkId;                                         // 0xd8(0x8)
+	char                                                         pad0x10_UHKXN[0x10];                               // 0xc8(0x10)
+	class UClass*                                                MapMarkId;                                         // 0xd8(0x8)
 	float                                                        MapMarkArea;                                       // 0xe0(0x4)
 	float                                                        MapMarkScaleMin;                                   // 0xe4(0x4)
 	float                                                        MapMarkScaleMax;                                   // 0xe8(0x4)
 	float                                                        MapMarkNoiseModifier;                              // 0xec(0x4)
 	byte                                                         MapMarkBlendMode;                                  // 0xf0(0x1)
-	char                                                         pad0x7_CPC8D[0x7];                                 // 0xf1(0x7)
-	class                                                        DebugCrossId;                                      // 0xf8(0x8)
+	char                                                         pad0x7_RTN50[0x7];                                 // 0xf1(0x7)
+	class UClass*                                                DebugCrossId;                                      // 0xf8(0x8)
 	bool                                                         ShowCluePositionOnMap;                             // 0x100(0x1)
-	char                                                         pad0x7_Y55XK[0x7];                                 // 0x101(0x7)
-	TArray<struct ClueRenderData>                                ClueRenderData;                                    // 0x108(0x10)
-	char                                                         pad0x48_RCAB1[0x48];                               // 0x118(0x48)
+	char                                                         pad0x7_ASC3T[0x7];                                 // 0x101(0x7)
+	TArray<struct MapTextureRenderData>                          ClueRenderData;                                    // 0x108(0x10)
+	char                                                         pad0x48_B53J0[0x48];                               // 0x118(0x48)
 };
 
 
@@ -236,9 +237,9 @@ public:
 class ClueSiteCircleMapWieldable: public RenderToTextureMapBase
 {
 public:
-	char                                                         pad0x20_C3UN6[0x20];                               // 0x890(0x20)
-	Struct MapRadialIconData                                     MapRadialIconData;                                 // 0x8b0(0x18)
-	char                                                         pad0x8_Y0AXT[0x8];                                 // 0x8c8(0x8)
+	char                                                         pad0x20_I1KK1[0x20];                               // 0x890(0x20)
+	struct MapRadialIconData                                     MapRadialIconData;                                 // 0x8b0(0x18)
+	char                                                         pad0x8_DDIV3[0x8];                                 // 0x8c8(0x8)
 };
 
 
@@ -253,8 +254,8 @@ public:
 class CompositeClueDestinationDescriptor: public ClueDestinationDescriptor
 {
 public:
-	Class ClueDestinationDescriptor*                             PrimaryClueDestDescriptor;                         // 0x40(0x8)
-	Class ClueDestinationDescriptor*                             SecondaryClueDestDescriptor;                       // 0x48(0x8)
+	class ClueDestinationDescriptor*                             PrimaryClueDestDescriptor;                         // 0x40(0x8)
+	class ClueDestinationDescriptor*                             SecondaryClueDestDescriptor;                       // 0x48(0x8)
 };
 
 
@@ -269,7 +270,7 @@ public:
 class ExistingToPhasedNPCIndexAssetMap: public DataAsset
 {
 public:
-	TArray<struct NPCIndexMappings>                              NPCIndexMappings;                                  // 0x28(0x10)
+	TArray<struct ExistingNPCToPhasedNPC>                        NPCIndexMappings;                                  // 0x28(0x10)
 };
 
 
@@ -284,8 +285,8 @@ public:
 class FloatingMessageInABottleClueSiteData: public ClueSiteData
 {
 public:
-	Struct Vector                                                SpawnLocation;                                     // 0x38(0xc)
-	char                                                         pad0x2c_YKG49[0x2c];                               // 0x44(0x2c)
+	struct Vector                                                SpawnLocation;                                     // 0x38(0xc)
+	char                                                         pad0x2c_S43NU[0x2c];                               // 0x44(0x2c)
 };
 
 
@@ -317,7 +318,7 @@ class IslandByCompassBearingClueDestinationDescriptor: public ClueDestinationDes
 {
 public:
 	byte                                                         CompassDirection;                                  // 0x40(0x1)
-	char                                                         pad0x7_87NYH[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_VBRRF[0x7];                                 // 0x41(0x7)
 };
 
 
@@ -342,8 +343,8 @@ class LocationOnIslandClueDestinationDescriptor: public ClueDestinationDescripto
 {
 public:
 	struct FName                                                 IslandIdentifier;                                  // 0x40(0x8)
-	Struct Vector                                                WorldPosition;                                     // 0x48(0xc)
-	char                                                         pad0x4_1VSCX[0x4];                                 // 0x54(0x4)
+	struct Vector                                                WorldPosition;                                     // 0x48(0xc)
+	char                                                         pad0x4_T6N1P[0x4];                                 // 0x54(0x4)
 };
 
 
@@ -365,6 +366,7 @@ public:
 class MerchantCaptainSpawnComponent: public ItemSpawnComponent
 {
 public:
+	char                                                         pad0x10_HJYES[0x10];                               // 0x470(0x10)
 };
 
 
@@ -372,11 +374,11 @@ public:
 class NPCHintDialogueClueCreator: public LandClueCreator
 {
 public:
-	Class ExistingToPhasedNPCIndexAssetMap*                      NPCMappingAsset;                                   // 0x30(0x8)
+	class ExistingToPhasedNPCIndexAssetMap*                      NPCMappingAsset;                                   // 0x30(0x8)
 	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x38(0x4)
 	int                                                          LootItemSpawnXYDistanceFromClueIncrementMax;       // 0x3c(0x4)
 	int                                                          LootItemSpawnZOffset;                              // 0x40(0x4)
-	char                                                         pad0x4_DQE35[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_A0DYL[0x4];                                 // 0x44(0x4)
 };
 
 
@@ -391,8 +393,8 @@ public:
 class NPCHintDialogueClueSiteData: public ClueSiteData
 {
 public:
-	Struct NPCData                                               NPCData;                                           // 0x38(0xb8)
-	char                                                         pad0x30_NU8HF[0x30];                               // 0xf0(0x30)
+	struct NPCData                                               NPCData;                                           // 0x38(0xb8)
+	char                                                         pad0x30_CJG74[0x30];                               // 0xf0(0x30)
 };
 
 
@@ -407,9 +409,9 @@ public:
 class ObtainClueOnWieldComponent: public OnItemWieldedComponent
 {
 public:
-	char                                                         pad0x8_L155W[0x8];                                 // 0x148(0x8)
-	Class ClueDescriptor*                                        ClueToObtain;                                      // 0x150(0x8)
-	class                                                        ClueSiteType;                                      // 0x158(0x8)
+	char                                                         pad0x8_C8D5Z[0x8];                                 // 0x148(0x8)
+	class ClueDescriptor*                                        ClueToObtain;                                      // 0x150(0x8)
+	class UClass*                                                ClueSiteType;                                      // 0x158(0x8)
 };
 
 
@@ -417,6 +419,7 @@ public:
 class ObtainClueFromContainerOnWieldComponent: public ObtainClueOnWieldComponent
 {
 public:
+	char                                                         pad0x80_CQ5NQ[0x80];                               // 0x160(0x80)
 };
 
 
@@ -424,8 +427,8 @@ public:
 class SeaLocationByGridSquareClueDestinationDescriptor: public ClueDestinationDescriptor
 {
 public:
-	Struct Vector                                                SeaLocationIdentifier;                             // 0x40(0xc)
-	char                                                         pad0x4_XPCCW[0x4];                                 // 0x4c(0x4)
+	struct Vector                                                SeaLocationIdentifier;                             // 0x40(0xc)
+	char                                                         pad0x4_G04F3[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -461,11 +464,11 @@ public:
 class TaleQuestClueInventoryService: public TaleQuestService
 {
 public:
-	char                                                         pad0x18_JA0NK[0x18];                               // 0x60(0x18)
+	char                                                         pad0x18_9ND5X[0x18];                               // 0x60(0x18)
 	TArray<class ClueDescriptor*>                                ObtainedClues;                                     // 0x78(0x10)
-	char                                                         pad0x50_5Y2UW[0x50];                               // 0x88(0x50)
-	Struct FText                                                 TitleText;                                         // 0x248(0x38)
-	Class AbandonedNoteClueTextChoiceSource*                     ClueTextChoiceSource;                              // 0x280(0x8)
+	char                                                         pad0x50_JNQI1[0x50];                               // 0x88(0x50)
+	struct FText                                                 TitleText;                                         // 0x248(0x38)
+	class AbandonedNoteClueTextChoiceSource*                     ClueTextChoiceSource;                              // 0x280(0x8)
 };
 
 
@@ -473,6 +476,7 @@ public:
 class TaleQuestClueInventoryServiceDesc: public TaleQuestServiceDesc
 {
 public:
+	char                                                         pad0x40_RRG4I[0x40];                               // 0x28(0x40)
 };
 
 
@@ -487,8 +491,8 @@ public:
 class TaleQuestGetNPCActorFromClueSiteStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableClueSite                                 ClueSite;                                          // 0x80(0x30)
-	Struct QuestVariableActor                                    NPCFromClueSite;                                   // 0xb0(0x30)
+	struct QuestVariableClueSite                                 ClueSite;                                          // 0x80(0x30)
+	struct QuestVariableActor                                    NPCFromClueSite;                                   // 0xb0(0x30)
 };
 
 
@@ -496,7 +500,7 @@ public:
 class TaleQuestGetPhasedVersionOfActorFromAssetMapStep: public TaleQuestStep
 {
 public:
-	Class ExistingToPhasedNPCIndexAssetMap*                      NPCIndexAssetMap;                                  // 0x98(0x8)
+	class ExistingToPhasedNPCIndexAssetMap*                      NPCIndexAssetMap;                                  // 0x98(0x8)
 };
 
 
@@ -504,10 +508,10 @@ public:
 class TaleQuestGetPhasedVersionOfActorFromAssetMapStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableActor                                    ExistingNPCActor;                                  // 0x80(0x30)
-	Struct QuestVariableActorAssetType                           ObtainedPhasedNPCActorType;                        // 0xb0(0x30)
-	Struct QuestVariableActor                                    PhasingSourceActor;                                // 0xe0(0x30)
-	Class ExistingToPhasedNPCIndexAssetMap*                      IndexAssetMap;                                     // 0x110(0x8)
+	struct QuestVariableActor                                    ExistingNPCActor;                                  // 0x80(0x30)
+	struct QuestVariableActorAssetType                           ObtainedPhasedNPCActorType;                        // 0xb0(0x30)
+	struct QuestVariableActor                                    PhasingSourceActor;                                // 0xe0(0x30)
+	class ExistingToPhasedNPCIndexAssetMap*                      IndexAssetMap;                                     // 0x110(0x8)
 };
 
 
@@ -522,8 +526,8 @@ public:
 class TaleQuestRetrieveSpawnedMerchantCaptainFromShipwreckStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableShipwreck                                ShipwreckSpawnedOn;                                // 0x80(0x30)
-	Struct QuestVariableActor                                    SpawnedMerchantCaptain;                            // 0xb0(0x30)
+	struct QuestVariableShipwreck                                ShipwreckSpawnedOn;                                // 0x80(0x30)
+	struct QuestVariableActor                                    SpawnedMerchantCaptain;                            // 0xb0(0x30)
 };
 
 
@@ -538,9 +542,9 @@ public:
 class TaleQuestSpawnWashedUpMessageInABottleClueStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableClueSite                                 ClueSite;                                          // 0x80(0x30)
-	Struct QuestVariableClueDescriptor                           ClueDescriptor;                                    // 0xb0(0x30)
-	Struct QuestVariableActor                                    MessageInABottle;                                  // 0xe0(0x30)
+	struct QuestVariableClueSite                                 ClueSite;                                          // 0x80(0x30)
+	struct QuestVariableClueDescriptor                           ClueDescriptor;                                    // 0xb0(0x30)
+	struct QuestVariableActor                                    MessageInABottle;                                  // 0xe0(0x30)
 };
 
 
@@ -555,10 +559,10 @@ public:
 class TaleQuestSpawnWashedUpSkeletonClueStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableClueSite                                 ClueSite;                                          // 0x80(0x30)
-	Struct QuestVariableClueDescriptor                           ClueDescriptor;                                    // 0xb0(0x30)
-	Struct QuestVariableActor                                    SkeletonActor;                                     // 0xe0(0x30)
-	Struct QuestVariableItemInfo                                 ClueItem;                                          // 0x110(0x30)
+	struct QuestVariableClueSite                                 ClueSite;                                          // 0x80(0x30)
+	struct QuestVariableClueDescriptor                           ClueDescriptor;                                    // 0xb0(0x30)
+	struct QuestVariableActor                                    SkeletonActor;                                     // 0xe0(0x30)
+	struct QuestVariableItemInfo                                 ClueItem;                                          // 0x110(0x30)
 	struct FName                                                 SkeletonClueSocketName;                            // 0x140(0x8)
 };
 
@@ -567,9 +571,9 @@ public:
 class WaitForClueCollectedStep: public TaleQuestStep
 {
 public:
-	Class ClueDescriptor*                                        ClueDesc;                                          // 0x98(0x8)
-	Class Actor*                                                 ClueActor;                                         // 0xa0(0x8)
-	char                                                         pad0x98_VIPU0[0x98];                               // 0xa8(0x98)
+	class ClueDescriptor*                                        ClueDesc;                                          // 0x98(0x8)
+	class Actor*                                                 ClueActor;                                         // 0xa0(0x8)
+	char                                                         pad0x98_9OXJU[0x98];                               // 0xa8(0x98)
 };
 
 
@@ -577,9 +581,9 @@ public:
 class WaitForClueCollectedStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableClueDescriptor                           Clue;                                              // 0x80(0x30)
-	Struct QuestVariableActor                                    ClueActor;                                         // 0xb0(0x30)
-	Struct QuestVariableActor                                    Discoverer;                                        // 0xe0(0x30)
+	struct QuestVariableClueDescriptor                           Clue;                                              // 0x80(0x30)
+	struct QuestVariableActor                                    ClueActor;                                         // 0xb0(0x30)
+	struct QuestVariableActor                                    Discoverer;                                        // 0xe0(0x30)
 };
 
 
@@ -587,7 +591,7 @@ public:
 class WashedUpMessageInABottleClueCreator: public LandClueCreator
 {
 public:
-	char                                                         pad0x20_1LUI8[0x20];                               // 0x30(0x20)
+	char                                                         pad0x20_3C1LK[0x20];                               // 0x30(0x20)
 	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x50(0x4)
 	int                                                          LootItemSpawnXYDistanceFromClueIncrementMax;       // 0x54(0x4)
 	int                                                          LootItemSpawnZOffset;                              // 0x58(0x4)
@@ -595,7 +599,7 @@ public:
 	float                                                        LootItemSinkIntoSandZDistanceMax;                  // 0x60(0x4)
 	float                                                        LootItemSinkIntoSandRotationMin;                   // 0x64(0x4)
 	float                                                        LootItemSinkIntoSandRotationMax;                   // 0x68(0x4)
-	char                                                         pad0x4_SE04Z[0x4];                                 // 0x6c(0x4)
+	char                                                         pad0x4_CCCEG[0x4];                                 // 0x6c(0x4)
 	TArray<Assetclass SinkIntoSandItems>                         SinkIntoSandItems;                                 // 0x70(0x10)
 };
 
@@ -611,13 +615,13 @@ public:
 class WashedUpMessageInABottleClueSiteData: public ClueSiteData
 {
 public:
-	class                                                        BottleItemType;                                    // 0x38(0x8)
+	class UClass*                                                BottleItemType;                                    // 0x38(0x8)
 	struct FName                                                 IslandNameToSpawnOn;                               // 0x40(0x8)
-	Struct Guid                                                  IslandSpawnLocationReservationId;                  // 0x48(0x10)
-	char                                                         pad0x8_IDPTM[0x8];                                 // 0x58(0x8)
-	Struct Transform                                             SpawnTransform;                                    // 0x60(0x30)
+	struct Guid                                                  IslandSpawnLocationReservationId;                  // 0x48(0x10)
+	char                                                         pad0x8_56FQU[0x8];                                 // 0x58(0x8)
+	struct Transform                                             SpawnTransform;                                    // 0x60(0x30)
 	TArray<class Class*>                                         SinkIntoSandItems;                                 // 0x90(0x10)
-	char                                                         pad0x40_YKB35[0x40];                               // 0xa0(0x40)
+	char                                                         pad0x40_KPHVW[0x40];                               // 0xa0(0x40)
 };
 
 
@@ -639,12 +643,12 @@ public:
 class WashedUpSkeletonClueSiteData: public ClueSiteData
 {
 public:
-	class                                                        SkeletonPoseType;                                  // 0x38(0x8)
-	class                                                        ClueItemType;                                      // 0x40(0x8)
+	class UClass*                                                SkeletonPoseType;                                  // 0x38(0x8)
+	class UClass*                                                ClueItemType;                                      // 0x40(0x8)
 	struct FName                                                 IslandNameToSpawnOn;                               // 0x48(0x8)
-	Struct Guid                                                  IslandSpawnLocationReservationId;                  // 0x50(0x10)
-	Struct Transform                                             SpawnTransform;                                    // 0x60(0x30)
-	char                                                         pad0x30_LXMEK[0x30];                               // 0x90(0x30)
+	struct Guid                                                  IslandSpawnLocationReservationId;                  // 0x50(0x10)
+	struct Transform                                             SpawnTransform;                                    // 0x60(0x30)
+	char                                                         pad0x30_A49RI[0x30];                               // 0x90(0x30)
 };
 
 
@@ -663,7 +667,7 @@ public:
 	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x60(0x4)
 	int                                                          LootItemSpawnXYDistanceFromClueIncrementMax;       // 0x64(0x4)
 	int                                                          LootItemSpawnZOffset;                              // 0x68(0x4)
-	char                                                         pad0x4_165C6[0x4];                                 // 0x6c(0x4)
+	char                                                         pad0x4_COO3W[0x4];                                 // 0x6c(0x4)
 };
 
 
@@ -671,9 +675,9 @@ public:
 class InteractableGrammaticalGenderComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_IR7EL[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_T8451[0x8];                                 // 0xc8(0x8)
 	byte                                                         GrammaticalGender;                                 // 0xd0(0x1)
-	char                                                         pad0x7_A41MB[0x7];                                 // 0xd1(0x7)
+	char                                                         pad0x7_8FBOT[0x7];                                 // 0xd1(0x7)
 };
 
 

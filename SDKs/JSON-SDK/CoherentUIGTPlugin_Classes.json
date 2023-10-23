@@ -6,14 +6,14 @@
     "ClassSize": "0x248",
     "Attributes": [
       {
-        "Name": "pad0xa8_ND9QV[0xa8]",
+        "Name": "pad0xa8_7UQ3O[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0xc8"
       },
       {
         "Name": "Texture",
-        "Type": "Class TextureRenderTarget2D*",
+        "Type": "class TextureRenderTarget2D*",
         "Size": "0x8",
         "Offset": "0x170"
       },
@@ -96,7 +96,7 @@
         "Offset": "0x199"
       },
       {
-        "Name": "pad0x176_RJXBH[0x176]",
+        "Name": "pad0x176_I2USH[0x176]",
         "Type": "char",
         "Size": "0x176",
         "Offset": "0x19a"
@@ -111,7 +111,7 @@
     "Attributes": [
       {
         "Name": "URL",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x310"
       },
@@ -134,7 +134,7 @@
         "Offset": "0x328"
       },
       {
-        "Name": "pad0x3_O2J6Z[0x3]",
+        "Name": "pad0x3_H7EJO[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x329"
@@ -152,7 +152,7 @@
         "Offset": "0x330"
       },
       {
-        "Name": "pad0x17_C4RLY[0x17]",
+        "Name": "pad0x17_UG2JW[0x17]",
         "Type": "char",
         "Size": "0x17",
         "Offset": "0x331"
@@ -167,18 +167,18 @@
     "Attributes": [
       {
         "Name": "LinkName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "Texture",
-        "Type": "Class TextureRenderTarget2D*",
+        "Type": "class TextureRenderTarget2D*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x18_2BN2T[0x18]",
+        "Name": "pad0x18_GDN42[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xe0"
@@ -190,7 +190,14 @@
     "FullSize": "0x100",
     "InheritedSize": "0xf8",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_BZQWA[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      }
+    ]
   },
   "CoherentUIGTAssetReferencer": {
     "Super": "Object",
@@ -204,7 +211,14 @@
     "FullSize": "0x418",
     "InheritedSize": "0x3c8",
     "ClassSize": "0x50",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x50_7N0VD[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x3c8"
+      }
+    ]
   },
   "CoherentUIGTJSEvent": {
     "Super": "Object",
@@ -213,7 +227,7 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x80_0PHJO[0x80]",
+        "Name": "pad0x80_4F34B[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0x28"
@@ -234,12 +248,12 @@
     "Attributes": [
       {
         "Name": "EventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x8_IUU2K[0x8]",
+        "Name": "pad0x8_U42AH[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x38"
@@ -261,24 +275,24 @@
     "Attributes": [
       {
         "Name": "HUDMaterialName",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x310"
       },
       {
         "Name": "HUDMaterial",
-        "Type": "Class Material*",
+        "Type": "class Material*",
         "Size": "0x8",
         "Offset": "0x320"
       },
       {
         "Name": "HUDMaterialInstance",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x328"
       },
       {
-        "Name": "pad0x8_8D54C[0x8]",
+        "Name": "pad0x8_6WTTN[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x330"
@@ -300,12 +314,12 @@
     "Attributes": [
       {
         "Name": "CoherentUIGTHUD",
-        "Type": "Class CoherentUIGTHUD*",
+        "Type": "class CoherentUIGTHUD*",
         "Size": "0x8",
         "Offset": "0x4c0"
       },
       {
-        "Name": "pad0x90_AUPMA[0x90]",
+        "Name": "pad0x90_H8T79[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x4c8"
@@ -317,7 +331,14 @@
     "FullSize": "0x428",
     "InheritedSize": "0x3c8",
     "ClassSize": "0x60",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x60_WVO7G[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x3c8"
+      }
+    ]
   },
   "CoherentUIGTSettings": {
     "Super": "Object",
@@ -332,7 +353,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x3_8H7QC[0x3]",
+        "Name": "pad0x3_KE8PT[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x29"
@@ -416,20 +437,20 @@
         "Offset": "0x3e"
       },
       {
-        "Name": "pad0x1_5YV9O[0x1]",
+        "Name": "pad0x1_K8PCW[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x3f"
       },
       {
         "Name": "HUDMaterialName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "CoUIResourcesRoot",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -446,7 +467,7 @@
         "Offset": "0x61"
       },
       {
-        "Name": "pad0x6_MSSXZ[0x6]",
+        "Name": "pad0x6_WIO5M[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x62"
@@ -460,14 +481,14 @@
     "ClassSize": "0x2a0",
     "Attributes": [
       {
-        "Name": "pad0x20_8342U[0x20]",
+        "Name": "pad0x20_85X0E[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x138"
       },
       {
         "Name": "Owner",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x158"
       },
@@ -502,7 +523,7 @@
         "Offset": "0x1fc"
       },
       {
-        "Name": "pad0x3_29R0J[0x3]",
+        "Name": "pad0x3_HEXRD[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1fd"
@@ -556,14 +577,14 @@
         "Offset": "0x21c"
       },
       {
-        "Name": "pad0x1a3_N5DZ9[0x1a3]",
+        "Name": "pad0x1a3_T67ZL[0x1a3]",
         "Type": "char",
         "Size": "0x1a3",
         "Offset": "0x21d"
       },
       {
         "Name": "URL",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x3c0"
       },
@@ -580,7 +601,7 @@
         "Offset": "0x3d4"
       },
       {
-        "Name": "pad0x3_TWEWS[0x3]",
+        "Name": "pad0x3_N4JKB[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3d5"

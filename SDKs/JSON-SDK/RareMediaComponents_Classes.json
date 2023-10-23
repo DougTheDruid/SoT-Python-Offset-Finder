@@ -4,7 +4,14 @@
     "FullSize": "0x130",
     "InheritedSize": "0xc8",
     "ClassSize": "0x68",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x68_3SH1C[0x68]",
+        "Type": "char",
+        "Size": "0x68",
+        "Offset": "0xc8"
+      }
+    ]
   },
   "WwiseMediaSoundComponent": {
     "Super": "SceneComponent",
@@ -13,19 +20,19 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x60_ILX0T[0x60]",
+        "Name": "pad0x60_B7PT2[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x2e0"
       },
       {
         "Name": "MediaSoundEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x340"
       },
       {
-        "Name": "pad0x48_T45OF[0x48]",
+        "Name": "pad0x48_EQVJK[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x348"

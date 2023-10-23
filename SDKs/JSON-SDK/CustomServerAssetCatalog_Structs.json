@@ -1,20 +1,27 @@
 {
   "GameAssetCatalogModel": {
     "ClassSize": "0xa0",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xa0_SCNB3[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x0"
+      }
+    ]
   },
   "GameAssetModel": {
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "fullPath",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "FriendlyName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -23,6 +30,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_TY2PS[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },

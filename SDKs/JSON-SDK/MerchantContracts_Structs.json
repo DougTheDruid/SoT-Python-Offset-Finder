@@ -4,25 +4,25 @@
     "Attributes": [
       {
         "Name": "AllocatedCrate",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "ItemData",
-        "Type": "TArray<struct ItemData>",
+        "Type": "TArray<struct ItemAndReward>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "FaunaSpecies",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x18"
       },
       {
         "Name": "FaunaBreed",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x20"
       }
@@ -33,13 +33,13 @@
     "Attributes": [
       {
         "Name": "ItemDesc",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "HandInOnTimeRewardId",
-        "Type": "Struct RewardId",
+        "Type": "struct RewardId",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -55,14 +55,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_SVFYT[0x4]",
+        "Name": "pad0x4_79OTA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "ItemDesc",
-        "Type": "Struct MerchantContractItemDesc",
+        "Type": "struct MerchantContractItemDesc",
         "Size": "0x28",
         "Offset": "0x8"
       },
@@ -83,6 +83,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_QG0YD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
       }
     ]
   },
@@ -90,10 +96,22 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
+        "Name": "pad0x18_7TV6R[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
         "Name": "DeliveryRequests",
-        "Type": "TArray<struct DeliveryRequests>",
+        "Type": "TArray<struct MerchantContractDeliveryRequest>",
         "Size": "0x10",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x98_N7MV1[0x98]",
+        "Type": "char",
+        "Size": "0x98",
+        "Offset": "0x28"
       }
     ]
   },
@@ -102,7 +120,7 @@
     "Attributes": [
       {
         "Name": "Id",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -114,7 +132,7 @@
       },
       {
         "Name": "Requests",
-        "Type": "TArray<struct Requests>",
+        "Type": "TArray<struct MerchantContractDeliveryRequest>",
         "Size": "0x10",
         "Offset": "0x18"
       }

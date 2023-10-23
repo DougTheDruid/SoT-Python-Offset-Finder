@@ -11,8 +11,8 @@ struct RegionAssetsList
 {
 public:
 	byte                                                         Region;                                            // 0x0(0x1)
-	char                                                         pad0x7_X1XDY[0x7];                                 // 0x1(0x7)
-	TArray<struct CachedAssetsForRegion>                         CachedAssetsForRegion;                             // 0x8(0x10)
+	char                                                         pad0x7_P88YR[0x7];                                 // 0x1(0x7)
+	TArray<struct StringAssetReference>                          CachedAssetsForRegion;                             // 0x8(0x10)
 };
 
 

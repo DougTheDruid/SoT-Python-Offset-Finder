@@ -3,94 +3,94 @@
 BP_Crest_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x448'
+    Offset: '0x4d8'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: VFX_Back
-    Offset: '0x450'
+    Offset: '0x4e0'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Type: class ParticleSystemComponent*
   - Name: VFX_Front
-    Offset: '0x458'
+    Offset: '0x4e8'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Type: class ParticleSystemComponent*
   - Name: TextCanvasRenderTarget
-    Offset: '0x460'
+    Offset: '0x4f0'
     Size: '0x8'
-    Type: Class MaybeCompressedCanvasRenderTarget2D*
+    Type: class MaybeCompressedCanvasRenderTarget2D*
   - Name: BlurCanvasRenderTarget
-    Offset: '0x468'
+    Offset: '0x4f8'
     Size: '0x8'
-    Type: Class MaybeCompressedCanvasRenderTarget2D*
+    Type: class MaybeCompressedCanvasRenderTarget2D*
   - Name: BevelCanvasRenderTarget
-    Offset: '0x470'
+    Offset: '0x500'
     Size: '0x8'
-    Type: Class MaybeCompressedCanvasRenderTarget2D*
+    Type: class MaybeCompressedCanvasRenderTarget2D*
   - Name: BlurCanvasMaterial
-    Offset: '0x478'
+    Offset: '0x508'
     Size: '0x8'
-    Type: Class Material*
+    Type: class Material*
   - Name: BevelCanvasMaterial
-    Offset: '0x480'
+    Offset: '0x510'
     Size: '0x8'
-    Type: Class Material*
+    Type: class Material*
   - Name: DynamicBlurCanvasMaterial
-    Offset: '0x488'
+    Offset: '0x518'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
   - Name: DynamicBevelCanvasMaterial
-    Offset: '0x490'
+    Offset: '0x520'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
   - Name: CrestDynamicMaterial
-    Offset: '0x498'
+    Offset: '0x528'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
   - Name: CanvasWidth
-    Offset: '0x4a0'
+    Offset: '0x530'
     Size: '0x4'
     Type: int
   - Name: CanvasHeight
-    Offset: '0x4a4'
+    Offset: '0x534'
     Size: '0x4'
     Type: int
   - Name: Font
-    Offset: '0x4a8'
+    Offset: '0x538'
     Size: '0x8'
-    Type: Class Font*
+    Type: class Font*
   - Name: NameplatePool
-    Offset: '0x4b0'
+    Offset: '0x540'
     Size: '0x8'
-    Type: Class WwiseObjectPoolWrapper*
+    Type: class WwiseObjectPoolWrapper*
   - Name: EmitterCreationParams
-    Offset: '0x4b8'
+    Offset: '0x548'
     Size: '0x28'
-    Type: Struct WwiseEmitterCreationParams
+    Type: struct WwiseEmitterCreationParams
   - Name: Cooldown
-    Offset: '0x4e0'
+    Offset: '0x570'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_P42IZ[0x4]
-    Offset: '0x4e4'
+  - Name: pad0x4_RGWO9[0x4]
+    Offset: '0x574'
     Size: '0x4'
     Type: char
   - Name: FontInfo
-    Offset: '0x4e8'
+    Offset: '0x578'
     Size: '0x40'
-    Type: Struct SlateFontInfo
+    Type: struct SlateFontInfo
   - Name: VFXSizeVariants
-    Offset: '0x528'
+    Offset: '0x5b8'
     Size: '0x10'
     Type: TArray<class ParticleSystem*>
   - Name: NameSizeIndex
-    Offset: '0x538'
+    Offset: '0x5c8'
     Size: '0x4'
     Type: int
   - Name: FeatureName
-    Offset: '0x53c'
+    Offset: '0x5cc'
     Size: '0xc'
-    Type: Struct FeatureFlag
+    Type: struct FeatureFlag
   ClassSize: '0x100'
-  FullSize: '0x548'
-  InheritedSize: '0x448'
+  FullSize: '0x5d8'
+  InheritedSize: '0x4d8'
   Super: Crest

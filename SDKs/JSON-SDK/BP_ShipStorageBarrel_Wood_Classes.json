@@ -7,25 +7,25 @@
     "Attributes": [
       {
         "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
-        "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
+        "Type": "class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
         "Size": "0x8",
         "Offset": "0x4c8"
       },
       {
         "Name": "Replenishable",
-        "Type": "Class ReplenishableComponent*",
+        "Type": "class ReplenishableComponent*",
         "Size": "0x8",
         "Offset": "0x4d0"
       },
       {
         "Name": "ShipTelemetrySubject",
-        "Type": "Class ShipTelemetrySubjectComponent*",
+        "Type": "class ShipTelemetrySubjectComponent*",
         "Size": "0x8",
         "Offset": "0x4d8"
       },
       {
         "Name": "StorageContainer",
-        "Type": "Class StorageContainerComponent*",
+        "Type": "class StorageContainerComponent*",
         "Size": "0x8",
         "Offset": "0x4e0"
       }

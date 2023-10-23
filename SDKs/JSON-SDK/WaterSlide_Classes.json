@@ -6,20 +6,20 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_3SSVP[0x8]",
+        "Name": "pad0x8_EEYON[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "SplineComponent",
-        "Type": "Class SplineComponent*",
+        "Type": "class SplineComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "Root",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       }
@@ -33,7 +33,7 @@
     "Attributes": [
       {
         "Name": "WaterSlideParams",
-        "Type": "Struct WaterSlideParams",
+        "Type": "struct WaterSlideParams",
         "Size": "0x28",
         "Offset": "0x28"
       }
@@ -41,37 +41,37 @@
   },
   "WaterSlide": {
     "Super": "Ride",
-    "FullSize": "0x420",
+    "FullSize": "0x428",
     "InheritedSize": "0x3e0",
-    "ClassSize": "0x40",
+    "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "WaterSlideParamsDataAsset",
-        "Type": "Class WaterSlideParamsDataAsset*",
+        "Type": "class WaterSlideParamsDataAsset*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
         "Name": "EntranceCollisionComponent",
-        "Type": "Class PrimitiveComponent*",
+        "Type": "class PrimitiveComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
         "Name": "ContinuedWaterSlideRoute",
-        "Type": "Class WaterSlide*",
+        "Type": "class WaterSlide*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
         "Name": "LeftWaterSlideRoute",
-        "Type": "Class WaterSlide*",
+        "Type": "class WaterSlide*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
         "Name": "RightWaterSlideRoute",
-        "Type": "Class WaterSlide*",
+        "Type": "class WaterSlide*",
         "Size": "0x8",
         "Offset": "0x400"
       },
@@ -82,22 +82,28 @@
         "Offset": "0x408"
       },
       {
-        "Name": "pad0x3_ZJUSQ[0x3]",
+        "Name": "pad0x3_DOMHK[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x409"
       },
       {
         "Name": "EndOfSlideLaunchForce",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x40c"
       },
       {
         "Name": "WaterSlideAudioParams",
-        "Type": "Class WaterSlideAudioParams*",
+        "Type": "class WaterSlideAudioParams*",
         "Size": "0x8",
         "Offset": "0x418"
+      },
+      {
+        "Name": "pad0x8_VVDL0[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x420"
       }
     ]
   },
@@ -120,7 +126,7 @@
         "Offset": "0x3e1"
       },
       {
-        "Name": "pad0x2_DMDMN[0x2]",
+        "Name": "pad0x2_JULXI[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3e2"
@@ -133,49 +139,55 @@
       },
       {
         "Name": "ZiplineFeelParameters",
-        "Type": "Struct ZiplineFeelParameters",
+        "Type": "struct ZiplineFeelParameters",
         "Size": "0x310",
         "Offset": "0x3e8"
       },
       {
         "Name": "ZiplineFXParams",
-        "Type": "Class ZiplineFXParams*",
+        "Type": "class ZiplineFXParams*",
         "Size": "0x8",
         "Offset": "0x6f8"
       },
       {
-        "Name": "ForwardsAttachDetachOffsets",
-        "Type": "Struct Vector2D",
-        "Size": "0x8",
+        "Name": "AttachPointSize",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x700"
       },
       {
-        "Name": "BackwardsAttachDetachOffsets",
-        "Type": "Struct Vector2D",
+        "Name": "ForwardsAttachDetachOffsets",
+        "Type": "struct Vector2D",
         "Size": "0x8",
-        "Offset": "0x708"
+        "Offset": "0x704"
       },
       {
-        "Name": "pad0x30_40KME[0x30]",
+        "Name": "BackwardsAttachDetachOffsets",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x70c"
+      },
+      {
+        "Name": "pad0x2c_098XH[0x2c]",
         "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x710"
+        "Size": "0x2c",
+        "Offset": "0x714"
       },
       {
         "Name": "ZiplineGeometry",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x740"
       },
       {
         "Name": "ZiplineTrolleyGeometry",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x748"
       },
       {
         "Name": "ZiplineGeometryMaterialOverride",
-        "Type": "Class MaterialInterface*",
+        "Type": "class MaterialInterface*",
         "Size": "0x8",
         "Offset": "0x750"
       },
@@ -186,7 +198,7 @@
         "Offset": "0x758"
       },
       {
-        "Name": "pad0x8_36RQV[0x8]",
+        "Name": "pad0x8_PW2F0[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x760"
@@ -201,43 +213,43 @@
     "Attributes": [
       {
         "Name": "ZiplineStartInteractionPoint",
-        "Type": "Class InteractableComponentWithActionRules*",
+        "Type": "class InteractableComponentWithActionRules*",
         "Size": "0x8",
         "Offset": "0x768"
       },
       {
         "Name": "ZiplineEndInteractionPoint",
-        "Type": "Class InteractableComponentWithActionRules*",
+        "Type": "class InteractableComponentWithActionRules*",
         "Size": "0x8",
         "Offset": "0x770"
       },
       {
         "Name": "PressedNotificationInputId",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x778"
       },
       {
         "Name": "ReleasedNotificationInputId",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x780"
       },
       {
         "Name": "AttachPointLocationOffset",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x788"
       },
       {
-        "Name": "AttachPointSize",
+        "Name": "HoldTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x790"
       },
       {
-        "Name": "HoldTime",
-        "Type": "float",
+        "Name": "pad0x4_QLAPB[0x4]",
+        "Type": "char",
         "Size": "0x4",
         "Offset": "0x794"
       }
@@ -257,20 +269,20 @@
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "pad0x8_GK8RV[0x8]",
+        "Name": "pad0x8_0CP83[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xe0"
       },
       {
         "Name": "PlayerWaterSlideVFXComponent",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0xe8"
       },
       {
         "Name": "PlayerWaterSlideVFX",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0xf0"
       },
@@ -281,50 +293,50 @@
         "Offset": "0xf8"
       },
       {
-        "Name": "pad0x4_WS6GO[0x4]",
+        "Name": "pad0x4_NR5JX[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xfc"
       },
       {
         "Name": "PlayerZiplineWindVFXComponent",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x100"
       },
       {
         "Name": "PlayerZiplineTrailVFXComponent",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x108"
       },
       {
         "Name": "PlayerZiplineTrailVFX",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x110"
       },
       {
         "Name": "PlayerZiplineWindVFX",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x118"
       },
       {
         "Name": "PlayerZiplineTrailVFXSpawnLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x120"
       },
       {
-        "Name": "pad0x14_5PRMF[0x14]",
+        "Name": "pad0x14_4WJPR[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x12c"
       },
       {
         "Name": "CurrentRide",
-        "Type": "Class Ride*",
+        "Type": "class Ride*",
         "Size": "0x8",
         "Offset": "0x140"
       }
@@ -352,25 +364,25 @@
     "Attributes": [
       {
         "Name": "WaterSlideStart",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "WaterSlideEnd",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "WaterSlideIsEndOneShot",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "WaterSlideChangeForkOneShot",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x40"
       },
@@ -399,7 +411,14 @@
     "FullSize": "0x2b0",
     "InheritedSize": "0x2a0",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_3T209[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x2a0"
+      }
+    ]
   },
   "WaterSlideVeeringAnalogInputId": {
     "Super": "AnalogInputId",
@@ -430,37 +449,37 @@
     "Attributes": [
       {
         "Name": "ZiplineStartSFX",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "AttachToZiplineAdditiveOneShotSFX",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "DetachFromZiplineAdditiveOneShotSFX",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "ZiplineLoopStartSFX",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x40"
       },
       {
         "Name": "ZiplineEndSFX",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x48"
       },
       {
         "Name": "ZiplineLoopEndSFX",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x50"
       },
@@ -472,19 +491,19 @@
       },
       {
         "Name": "PlayerZiplineWindVFX",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x60"
       },
       {
         "Name": "PlayerZiplineTrailVFX",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x68"
       },
       {
         "Name": "SpawnParticleSpeedThreshold",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x70"
       }
@@ -495,7 +514,14 @@
     "FullSize": "0x2a8",
     "InheritedSize": "0x2a0",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_74H3N[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x2a0"
+      }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

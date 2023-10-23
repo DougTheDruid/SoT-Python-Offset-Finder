@@ -5,19 +5,19 @@ BP_TunnelOfTheDamnedPortalLocator_WLD_C:
   - Name: SeaRockBounds
     Offset: '0x400'
     Size: '0x8'
-    Type: Class SphereComponent*
+    Type: class SphereComponent*
   - Name: SignalAnchor
     Offset: '0x408'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: CalmWater
     Offset: '0x410'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: Visuals
     Offset: '0x418'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   ClassSize: '0x20'
   FullSize: '0x420'
   InheritedSize: '0x400'

@@ -5,15 +5,15 @@ BP_ShipAmmoChest_C:
   - Name: LockMesh
     Offset: '0x4b0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: CrewLockableComponent
     Offset: '0x4b8'
     Size: '0x8'
-    Type: Class CrewLockableComponent*
+    Type: class CrewLockableComponent*
   - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
     Offset: '0x4c0'
     Size: '0x8'
-    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
+    Type: class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
   ClassSize: '0x18'
   FullSize: '0x4c8'
   InheritedSize: '0x4b0'

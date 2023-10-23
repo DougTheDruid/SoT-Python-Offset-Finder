@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct LandscapeInfoLayerSettings
 {
 public:
-	Class LandscapeLayerInfoObject*                              LayerInfoObj;                                      // 0x0(0x8)
+	class LandscapeLayerInfoObject*                              LayerInfoObj;                                      // 0x0(0x8)
 	struct FName                                                 LayerName;                                         // 0x8(0x8)
 };
 
@@ -19,10 +19,11 @@ public:
 struct WeightmapLayerAllocationInfo
 {
 public:
-	Class LandscapeLayerInfoObject*                              LayerInfo;                                         // 0x0(0x8)
+	class LandscapeLayerInfoObject*                              LayerInfo;                                         // 0x0(0x8)
 	byte                                                         WeightmapTextureIndex;                             // 0x8(0x1)
 	byte                                                         WeightmapTextureChannel;                           // 0x9(0x1)
 	byte                                                         GrassMapChannelIndex;                              // 0xa(0x1)
+	char                                                         pad0x5_1CMH1[0x5];                                 // 0xb(0x5)
 };
 
 
@@ -30,6 +31,7 @@ public:
 struct GizmoSelectData
 {
 public:
+	char                                                         pad0x50_PEMFM[0x50];                               // 0x0(0x50)
 };
 
 
@@ -37,16 +39,16 @@ public:
 struct GrassVariety
 {
 public:
-	Class StaticMesh*                                            GrassMesh;                                         // 0x0(0x8)
+	class StaticMesh*                                            GrassMesh;                                         // 0x0(0x8)
 	float                                                        GrassDensity;                                      // 0x8(0x4)
 	bool                                                         bUseGrid;                                          // 0xc(0x1)
-	char                                                         pad0x3_9ZZYJ[0x3];                                 // 0xd(0x3)
+	char                                                         pad0x3_86233[0x3];                                 // 0xd(0x3)
 	float                                                        PlacementJitter;                                   // 0x10(0x4)
 	int                                                          StartCullDistance;                                 // 0x14(0x4)
 	int                                                          EndCullDistance;                                   // 0x18(0x4)
 	int                                                          MinLOD;                                            // 0x1c(0x4)
 	bool                                                         RandomRotation;                                    // 0x20(0x1)
-	char                                                         pad0x3_3YBJ6[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_GAYO1[0x3];                                 // 0x21(0x3)
 	float                                                        AlignToSurface;                                    // 0x24(0x4)
 	float                                                        ScaleVariationMin;                                 // 0x28(0x4)
 	float                                                        ScaleVariationMax;                                 // 0x2c(0x4)
@@ -57,6 +59,7 @@ public:
 struct LandscapeImportLayerInfo
 {
 public:
+	char                                                         pad0x1_WF3VE[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -64,7 +67,7 @@ public:
 struct LandscapeLayerStruct
 {
 public:
-	Class LandscapeLayerInfoObject*                              LayerInfoObj;                                      // 0x0(0x8)
+	class LandscapeLayerInfoObject*                              LayerInfoObj;                                      // 0x0(0x8)
 };
 
 
@@ -72,6 +75,7 @@ public:
 struct LandscapeEditorLayerSettings
 {
 public:
+	char                                                         pad0x1_EE6HL[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -79,7 +83,8 @@ public:
 struct LandscapeWeightmapUsage
 {
 public:
-	Class LandscapeComponent*                                    ChannelUsage;                                      // 0x0(0x8)
+	class LandscapeComponent*                                    ChannelUsage;                                      // 0x0(0x8)
+	char                                                         pad0x18_BA980[0x18];                               // 0x8(0x18)
 };
 
 
@@ -87,17 +92,18 @@ public:
 struct LandscapeSplineMeshEntry
 {
 public:
-	Class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
+	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
 	TArray<class MaterialInterface*>                             MaterialOverrides;                                 // 0x8(0x10)
 	bool                                                         bCenterH;                                          // 0x18(0x1)
-	char                                                         pad0x3_EWSLG[0x3];                                 // 0x19(0x3)
-	Struct Vector2D                                              CenterAdjust;                                      // 0x1c(0x8)
+	char                                                         pad0x3_6HTUE[0x3];                                 // 0x19(0x3)
+	struct Vector2D                                              CenterAdjust;                                      // 0x1c(0x8)
 	bool                                                         bScaleToWidth;                                     // 0x24(0x1)
-	char                                                         pad0x3_AQEIL[0x3];                                 // 0x25(0x3)
-	Struct Vector                                                Scale;                                             // 0x28(0xc)
+	char                                                         pad0x3_V0346[0x3];                                 // 0x25(0x3)
+	struct Vector                                                Scale;                                             // 0x28(0xc)
 	byte                                                         Orientation;                                       // 0x34(0x1)
 	byte                                                         ForwardAxis;                                       // 0x35(0x1)
 	byte                                                         UpAxis;                                            // 0x36(0x1)
+	char                                                         pad0x1_VH089[0x1];                                 // 0x37(0x1)
 };
 
 
@@ -105,9 +111,10 @@ public:
 struct LandscapeSplineSegmentConnection
 {
 public:
-	Class LandscapeSplineControlPoint*                           ControlPoint;                                      // 0x0(0x8)
+	class LandscapeSplineControlPoint*                           ControlPoint;                                      // 0x0(0x8)
 	float                                                        TangentLen;                                        // 0x8(0x4)
 	struct FName                                                 SocketName;                                        // 0xc(0x8)
+	char                                                         pad0x4_01U0A[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -115,11 +122,11 @@ public:
 struct LandscapeSplineInterpPoint
 {
 public:
-	Struct Vector                                                Center;                                            // 0x0(0xc)
-	Struct Vector                                                Left;                                              // 0xc(0xc)
-	Struct Vector                                                Right;                                             // 0x18(0xc)
-	Struct Vector                                                FalloffLeft;                                       // 0x24(0xc)
-	Struct Vector                                                FalloffRight;                                      // 0x30(0xc)
+	struct Vector                                                Center;                                            // 0x0(0xc)
+	struct Vector                                                Left;                                              // 0xc(0xc)
+	struct Vector                                                Right;                                             // 0x18(0xc)
+	struct Vector                                                FalloffLeft;                                       // 0x24(0xc)
+	struct Vector                                                FalloffRight;                                      // 0x30(0xc)
 	float                                                        StartEndFalloff;                                   // 0x3c(0x4)
 };
 
@@ -128,8 +135,9 @@ public:
 struct LandscapeSplineConnection
 {
 public:
-	Class LandscapeSplineSegment*                                Segment;                                           // 0x0(0x8)
+	class LandscapeSplineSegment*                                Segment;                                           // 0x0(0x8)
 	bool                                                         End;                                               // 0x8(0x1)
+	char                                                         pad0x7_JR3FY[0x7];                                 // 0x9(0x7)
 };
 
 
@@ -137,6 +145,7 @@ public:
 struct ForeignWorldSplineData
 {
 public:
+	char                                                         pad0x1_8QMXR[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -144,6 +153,7 @@ public:
 struct ForeignSplineSegmentData
 {
 public:
+	char                                                         pad0x1_NF1ZK[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -151,6 +161,7 @@ public:
 struct ForeignControlPointData
 {
 public:
+	char                                                         pad0x1_3DJOP[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -159,8 +170,8 @@ struct GrassInput
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
-	Class LandscapeGrassType*                                    GrassType;                                         // 0x8(0x8)
-	Struct ExpressionInput                                       Input;                                             // 0x10(0x38)
+	class LandscapeGrassType*                                    GrassType;                                         // 0x8(0x8)
+	struct ExpressionInput                                       Input;                                             // 0x10(0x38)
 };
 
 
@@ -170,12 +181,13 @@ struct LayerBlendInput
 public:
 	struct FName                                                 LayerName;                                         // 0x0(0x8)
 	byte                                                         BlendType;                                         // 0x8(0x1)
-	char                                                         pad0x7_J748B[0x7];                                 // 0x9(0x7)
-	Struct ExpressionInput                                       LayerInput;                                        // 0x10(0x38)
-	Struct ExpressionInput                                       HeightInput;                                       // 0x48(0x38)
+	char                                                         pad0x7_ZZZZ3[0x7];                                 // 0x9(0x7)
+	struct ExpressionInput                                       LayerInput;                                        // 0x10(0x38)
+	struct ExpressionInput                                       HeightInput;                                       // 0x48(0x38)
 	float                                                        PreviewWeight;                                     // 0x80(0x4)
-	Struct Vector                                                ConstLayerInput;                                   // 0x84(0xc)
+	struct Vector                                                ConstLayerInput;                                   // 0x84(0xc)
 	float                                                        ConstHeightInput;                                  // 0x90(0x4)
+	char                                                         pad0x4_O23ON[0x4];                                 // 0x94(0x4)
 };
 
 

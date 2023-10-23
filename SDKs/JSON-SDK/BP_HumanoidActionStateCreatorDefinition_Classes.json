@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0xa98"
       }

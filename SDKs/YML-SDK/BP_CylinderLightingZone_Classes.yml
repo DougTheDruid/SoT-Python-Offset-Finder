@@ -5,23 +5,23 @@ BP_CylinderLightingZone_C:
   - Name: UberGraphFrame
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: InnerCapsule
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class CapsuleComponent*
+    Type: class CapsuleComponent*
   - Name: OuterCapsule
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class CapsuleComponent*
+    Type: class CapsuleComponent*
   - Name: LightingZone
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class LightingZoneComponent*
+    Type: class LightingZoneComponent*
   - Name: DefaultSceneRoot
     Offset: '0x3e8'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   - Name: Outer Radius
     Offset: '0x3f0'
     Size: '0x4'

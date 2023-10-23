@@ -5,11 +5,11 @@ BP_RotatableSignalCloud_C:
   - Name: UberGraphFrame
     Offset: '0x528'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: RotateMeshToLocalPlayer
     Offset: '0x530'
     Size: '0x8'
-    Type: Class RotateMeshToLocalPlayerComponent*
+    Type: class RotateMeshToLocalPlayerComponent*
   ClassSize: '0x10'
   FullSize: '0x538'
   InheritedSize: '0x528'

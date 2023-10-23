@@ -1,6 +1,6 @@
 {
   "BestActionSpotSelectionCriteria": {
-    "ClassSize": "0x2c",
+    "ClassSize": "0x34",
     "Attributes": [
       {
         "Name": "PreferActionSpotsRelativeToTargetForwardFacingDirection",
@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_N8T7H[0x3]",
+        "Name": "pad0x3_FGWYT[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -45,7 +45,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_WQNCB[0x3]",
+        "Name": "pad0x3_Y09E9[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
@@ -57,52 +57,76 @@
         "Offset": "0x18"
       },
       {
-        "Name": "ShouldAlwaysRefreshWhileOwnerMoving",
+        "Name": "PreferActionSpotsCloserToSelf",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1c"
       },
       {
-        "Name": "ShouldRefreshAfterTargetMovesBeyondThreshold",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "pad0x3_2YXQ9[0x3]",
+        "Type": "char",
+        "Size": "0x3",
         "Offset": "0x1d"
       },
       {
-        "Name": "pad0x2_TSXW6[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x1e"
-      },
-      {
-        "Name": "TargetMovementRefreshThresholdDistance",
+        "Name": "MaximumDistanceAllowedFromTarget",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20"
       },
       {
-        "Name": "ShouldRefreshAfterStayingForTooLong",
+        "Name": "ShouldAlwaysRefreshWhileOwnerMoving",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x24"
       },
       {
-        "Name": "pad0x3_NADPN[0x3]",
+        "Name": "ShouldRefreshAfterTargetMovesBeyondThreshold",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x25"
+      },
+      {
+        "Name": "pad0x2_844XU[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x26"
+      },
+      {
+        "Name": "TargetMovementRefreshThresholdDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ShouldRefreshAfterStayingForTooLong",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "pad0x3_WP9AN[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0x25"
+        "Offset": "0x2d"
       },
       {
         "Name": "RefreshTimeInSeconds",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x28"
+        "Offset": "0x30"
       }
     ]
   },
   "HasAllActionContextTagsCondition": {
     "ClassSize": "0x40",
     "Attributes": [
+      {
+        "Name": "pad0x28_0M073[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
       {
         "Name": "RequiredContextTags",
         "Type": "TArray<class Class*>",
@@ -114,6 +138,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x7_YHVHX[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x39"
       }
     ]
   },

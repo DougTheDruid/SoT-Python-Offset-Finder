@@ -1,18 +1,18 @@
 {
   "AdventureOnDemandServiceCrewEntry": {
-    "ClassSize": "0x88",
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "Participants",
-        "Type": "TArray<class CrewVoyageParticipant*>",
-        "Size": "0x10",
-        "Offset": "0x40"
+        "Name": "pad0x38_US45S[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x0"
       },
       {
         "Name": "TunnelDesc",
-        "Type": "Class TunnelDesc*",
+        "Type": "class TunnelDesc*",
         "Size": "0x8",
-        "Offset": "0x50"
+        "Offset": "0x38"
       }
     ]
   },

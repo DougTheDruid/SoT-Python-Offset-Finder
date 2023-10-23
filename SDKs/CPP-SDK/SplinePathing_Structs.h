@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 struct FixedSplinePathingActorMovementEndedEvent
 {
 public:
+	char                                                         pad0x1_9OTT8[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -17,6 +18,7 @@ public:
 struct FixedSplinePathingActorMovementStartedEvent
 {
 public:
+	char                                                         pad0x1_NHWDY[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -24,7 +26,7 @@ public:
 struct SplinePathingActorAtDestination
 {
 public:
-	Class Actor*                                                 Actor;                                             // 0x0(0x8)
+	class Actor*                                                 Actor;                                             // 0x0(0x8)
 };
 
 

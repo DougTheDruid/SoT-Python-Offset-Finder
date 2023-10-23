@@ -2,51 +2,51 @@
 # https://github.com/DougTheDruid
 bsp_flower_cluster_01_b_C:
   Attributes:
-  - Name: None
+  - Name: wsp_rock_xtra_small__b
     Offset: '0x408'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: wsp_rock_pebbles__e
     Offset: '0x410'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: wsp_rock_pebbles__b
     Offset: '0x418'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: wsp_rock_pebbles__d
     Offset: '0x420'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: wsp_rock_pebbles__c
     Offset: '0x428'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: wsp_rock_xtra_small__d
     Offset: '0x430'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: wsp_rock_xtra_small__c
     Offset: '0x438'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMesh
     Offset: '0x440'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent02
     Offset: '0x448'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent01
     Offset: '0x450'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: SharedRoot
     Offset: '0x458'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x58'
   FullSize: '0x460'
   InheritedSize: '0x408'
-  Super: None
+  Super: BP_Placement_HeightDrop_C

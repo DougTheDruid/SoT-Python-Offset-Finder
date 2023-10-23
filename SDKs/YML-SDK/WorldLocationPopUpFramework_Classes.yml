@@ -12,14 +12,14 @@ TaleAllowWorldLocationPopUpStepDesc:
     Offset: '0x80'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_JSS3G[0x4]
+  - Name: pad0x4_OVU1M[0x4]
     Offset: '0x84'
     Size: '0x4'
     Type: char
   - Name: NearbyActor
     Offset: '0x88'
     Size: '0x30'
-    Type: Struct QuestVariableActor
+    Type: struct QuestVariableActor
   ClassSize: '0x38'
   FullSize: '0xb8'
   InheritedSize: '0x80'
@@ -36,7 +36,7 @@ TalePreventWorldLocationPopUpStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_QIZJR[0x3]
+  - Name: pad0x3_ZUI0L[0x3]
     Offset: '0x81'
     Size: '0x3'
     Type: char
@@ -47,7 +47,7 @@ TalePreventWorldLocationPopUpStepDesc:
   - Name: NearbyLocation
     Offset: '0x88'
     Size: '0x30'
-    Type: Struct QuestVariableVector
+    Type: struct QuestVariableVector
   ClassSize: '0x38'
   FullSize: '0xb8'
   InheritedSize: '0x80'
@@ -57,8 +57,8 @@ TaleWorldLocationPopUpService:
   - Name: SuppressedWorldLocationPopUpNearbyLocations
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<struct SuppressedWorldLocationPopUpNearbyLocations>
-  - Name: pad0x20_3MJQQ[0x20]
+    Type: TArray<struct TaleWorldLocationPopUpServiceEntry>
+  - Name: pad0x20_I8U6Z[0x20]
     Offset: '0x70'
     Size: '0x20'
     Type: char
@@ -77,11 +77,11 @@ WorldLocationPopUpComponent:
   - Name: PopUpData
     Offset: '0x2e0'
     Size: '0x8'
-    Type: Class WorldLocationPopUpDataAsset*
+    Type: class WorldLocationPopUpDataAsset*
   - Name: LocationOverlapVolume
     Offset: '0x2e8'
     Size: '0x8'
-    Type: Class ShapeComponent*
+    Type: class ShapeComponent*
   - Name: LocationCooldown
     Offset: '0x2f0'
     Size: '0x4'
@@ -90,15 +90,15 @@ WorldLocationPopUpComponent:
     Offset: '0x2f4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x63_Z2L2S[0x63]
+  - Name: pad0x63_6RWQM[0x63]
     Offset: '0x2f5'
     Size: '0x63'
     Type: char
   - Name: SuppressedCrews
     Offset: '0x358'
     Size: '0x10'
-    Type: TArray<struct SuppressedCrews>
-  - Name: pad0x8_VMMCG[0x8]
+    Type: TArray<struct Guid>
+  - Name: pad0x8_2WAYC[0x8]
     Offset: '0x368'
     Size: '0x8'
     Type: char
@@ -115,22 +115,22 @@ WorldLocationPopUpDataAsset:
   - Name: BannerIcon
     Offset: '0x30'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: DisplayText
     Offset: '0x40'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: AudioOverride
     Offset: '0x78'
     Size: '0x8'
-    Type: Class PopUpAudioDesc*
+    Type: class PopUpAudioDesc*
   ClassSize: '0x58'
   FullSize: '0x80'
   InheritedSize: '0x28'
   Super: DataAsset
 WorldLocationVisitorComponent:
   Attributes:
-  - Name: pad0x8_YFB1O[0x8]
+  - Name: pad0x8_0B3VW[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -138,7 +138,7 @@ WorldLocationVisitorComponent:
     Offset: '0xd0'
     Size: '0x4'
     Type: float
-  - Name: pad0x34_TF3K1[0x34]
+  - Name: pad0x34_TZM5K[0x34]
     Offset: '0xd4'
     Size: '0x34'
     Type: char

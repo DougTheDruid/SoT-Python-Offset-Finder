@@ -7,24 +7,24 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x78 (Full Size[0x480] - InheritedSize[0x408]
-class bsp_plm_cluster_03_c_C: public None
+class bsp_plm_cluster_03_c_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x408(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x410(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x418(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x420(0x8)
-	Class NonVagueNonUniqueLandmarkComponent*                    None;                                              // 0x428(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x430(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x438(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x440(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x448(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x450(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x458(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x460(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x468(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x470(0x8)
-	Class SceneComponent*                                        None;                                              // 0x478(0x8)
+	class StaticMeshComponent*                                   wsp_tree_palm_02_a;                                // 0x408(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent015;                            // 0x410(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent012;                            // 0x418(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent011;                            // 0x420(0x8)
+	class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x428(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent09;                             // 0x430(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent08;                             // 0x438(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x440(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x448(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x450(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x458(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x460(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x468(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x470(0x8)
+	class SceneComponent*                                        SharedRoot;                                        // 0x478(0x8)
 };
 
 

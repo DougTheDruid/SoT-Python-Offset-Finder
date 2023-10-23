@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "wsp_bush_08_c",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       }

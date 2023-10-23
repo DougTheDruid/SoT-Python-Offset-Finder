@@ -7,25 +7,25 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "WwiseEmitter1",
-        "Type": "Class WwiseEmitterComponent*",
+        "Type": "class WwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "WwiseEmitter",
-        "Type": "Class WwiseEmitterComponent*",
+        "Type": "class WwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
         "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       }

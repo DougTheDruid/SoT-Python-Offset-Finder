@@ -16,13 +16,13 @@
       },
       {
         "Name": "AngleCurveOut",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "AngleCurveIn",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x10"
       },
@@ -31,6 +31,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_7OEJP[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
       }
     ]
   },
@@ -38,22 +44,34 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
+        "Name": "pad0x8_BL3GV[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
         "Name": "TrinketRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x10_UOV3Y[0x10]",
+        "Name": "pad0x10_I39R9[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Curve",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x8_KUUJN[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
       }
     ]
   },

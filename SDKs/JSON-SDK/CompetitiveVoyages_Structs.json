@@ -1,0 +1,266 @@
+{
+  "OnCompetitiveVoyageMainVoyageStopped": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_3344L[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "OnCompetitiveVoyageMainVoyageStarted": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_5CUOR[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "OnCompetitiveVoyageOptOutVotePassed": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CompetitiveVoyageItemData": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x8_BFNOO[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FirstHoldingCrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "PreviousHoldingCrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "CurrentHoldingCrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "NumTimesSwappedHands",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0xc_5BULV[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x3c"
+      }
+    ]
+  },
+  "CompetitiveVoyagesRespawnPOIData": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "MinPreferredDistanceFromPOI",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxPreferredDistanceFromPOI",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "MinBonusForPreferredDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MaxBonusForPreferredDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "ScorePenaltyForEachMeterAwayFromVoyageItem",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ResourceOrFeatureMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "OutpostMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "CompetitiveVoyagesRespawnConfig": {
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "ScorePenaltyForEachMeterAwayFromShipwreck",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MinRespawnLocDistanceFromSunkShip",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "MinScorePenaltyForEnemyShipProximity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MaxScorePenaltyForEnemyShipProximity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "MinDistanceFromEnemyShipToApplyPenalty",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MaxDistanceFromEnemyShipToApplyPenalty",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "GenerateRespawnVisualizationImages",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x3_0M5KW[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x19"
+      },
+      {
+        "Name": "NumDebugGenerations",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "TreasureHuntPOIData",
+        "Type": "struct CompetitiveVoyagesRespawnPOIData",
+        "Size": "0x1c",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "HandInPOIData",
+        "Type": "struct CompetitiveVoyagesRespawnPOIData",
+        "Size": "0x1c",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "MapMin",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "MapMax",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "CompetitiveVoyagesRespawnDebugMapData": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x38_6QLF2[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CompetitiveVoyagesRespawnSpawnScoreData": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "pad0x14_SWWMV[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ShipSpeedCurseModifyingValues": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "SloopSpeedCurseModifier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BrigantineSpeedCurseModifier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "GalleonSpeedCurseModifier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PhasedMarkerItem": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_QB2LQ[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

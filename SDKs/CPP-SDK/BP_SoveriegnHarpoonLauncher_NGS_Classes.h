@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class BP_SoveriegnHarpoonLauncher_NGS_C: public HarpoonLauncher
 {
 public:
-	Class HarpoonItemLocationComponent*                          None;                                              // 0xcb0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0xcb8(0x8)
-	Class CapsuleComponent*                                      None;                                              // 0xcc0(0x8)
-	Class CapsuleComponent*                                      None;                                              // 0xcc8(0x8)
+	class HarpoonItemLocationComponent*                          HarpoonItemLocation;                               // 0xcb0(0x8)
+	class StaticMeshComponent*                                   CubeNotWalkable;                                   // 0xcb8(0x8)
+	class CapsuleComponent*                                      MountCollision;                                    // 0xcc0(0x8)
+	class CapsuleComponent*                                      BarrelCollision;                                   // 0xcc8(0x8)
 };
 
 

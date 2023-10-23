@@ -5,35 +5,35 @@ BP_PromptCoordinator_DiceEmote_C:
   - Name: UberGraphFrame
     Offset: '0x138'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
-  - Name: pad0x117_BJJRU[0x117]
+    Type: struct PointerToUberGraphFrame
+  - Name: pad0x151_UWKW5[0x151]
     Offset: '0x140'
-    Size: '0x117'
+    Size: '0x151'
     Type: char
   - Name: DiceEmotePromptAccessKey
     Offset: '0x140'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: EmoteStartedEvent
     Offset: '0x148'
     Size: '0x58'
-    Type: Struct ObjectMessagingHandle
+    Type: struct ObjectMessagingHandle
   - Name: Prompt
     Offset: '0x1a0'
     Size: '0x70'
-    Type: Struct PrioritisedPromptWithHandle
+    Type: struct PrioritisedPromptWithHandle
   - Name: StartedDiceEmote
     Offset: '0x210'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_MH93Z[0x7]
+  - Name: pad0x7_B9PDP[0x7]
     Offset: '0x211'
     Size: '0x7'
     Type: char
   - Name: CharacterDispatcher
     Offset: '0x218'
     Size: '0x8'
-    Type: Struct ObjectMessagingDispatcherHandle
+    Type: struct ObjectMessagingDispatcherHandle
   - Name: HasShown
     Offset: '0x220'
     Size: '0x1'

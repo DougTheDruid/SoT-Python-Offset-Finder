@@ -5,47 +5,47 @@ wld_sea_rock_cluster_c_C:
   - Name: StaticMeshComponent09
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent08
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent07
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent06
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent01
     Offset: '0x3e8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent04
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent03
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent02
     Offset: '0x400'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent05
     Offset: '0x408'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent0
     Offset: '0x410'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: SharedRoot
     Offset: '0x418'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x58'
   FullSize: '0x420'
   InheritedSize: '0x3c8'

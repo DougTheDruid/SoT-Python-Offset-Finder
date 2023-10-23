@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 struct TimeStampedInvasionMusicState
 {
 public:
-	Class Company*                                               Faction;                                           // 0x0(0x8)
+	class Company*                                               Faction;                                           // 0x0(0x8)
 	byte                                                         InvasionMusicState;                                // 0x8(0x1)
-	char                                                         pad0x7_3T56C[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_HLDZA[0x7];                                 // 0x9(0x7)
 	double                                                       EnteredStateServerTimeStamp;                       // 0x10(0x8)
 };
 
@@ -21,11 +21,12 @@ public:
 struct InvasionCrewData
 {
 public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	byte                                                         InvasionStatus;                                    // 0x10(0x1)
-	char                                                         pad0x3_3QDQX[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_N5TTB[0x3];                                 // 0x11(0x3)
 	struct FName                                                 FactionIdentifier;                                 // 0x14(0x8)
 	bool                                                         ReadyForInvasion;                                  // 0x1c(0x1)
+	char                                                         pad0x3_TSHAN[0x3];                                 // 0x1d(0x3)
 };
 
 
@@ -33,8 +34,8 @@ public:
 struct ReplicatedInvasionCrewMusicState
 {
 public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	Struct TimeStampedInvasionMusicState                         CurrentTimeStampedMusicState;                      // 0x10(0x18)
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	struct TimeStampedInvasionMusicState                         CurrentTimeStampedMusicState;                      // 0x10(0x18)
 };
 
 
@@ -42,12 +43,14 @@ public:
 struct InvasionBannerNetworkEvent
 {
 public:
-	Struct FText                                                 Message;                                           // 0x10(0x38)
-	Struct Guid                                                  CrewId;                                            // 0x48(0x10)
+	char                                                         pad0x10_GYUMU[0x10];                               // 0x0(0x10)
+	struct FText                                                 Message;                                           // 0x10(0x38)
+	struct Guid                                                  CrewId;                                            // 0x48(0x10)
 	byte                                                         Faction;                                           // 0x58(0x1)
-	char                                                         pad0x3_K18VS[0x3];                                 // 0x59(0x3)
+	char                                                         pad0x3_N0UKS[0x3];                                 // 0x59(0x3)
 	struct FName                                                 Tag;                                               // 0x5c(0x8)
 	bool                                                         DisableMusic;                                      // 0x64(0x1)
+	char                                                         pad0x3_NHSBA[0x3];                                 // 0x65(0x3)
 };
 
 
@@ -55,7 +58,7 @@ public:
 struct TaleDisplayedInvasionBanner
 {
 public:
-	Class Actor*                                                 Player;                                            // 0x0(0x8)
+	class Actor*                                                 Player;                                            // 0x0(0x8)
 };
 
 
@@ -63,7 +66,7 @@ public:
 struct CrewMatchmakingCancelledDueToInvasion
 {
 public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
 };
 
 
@@ -71,7 +74,7 @@ public:
 struct CrewStoppedInvasion
 {
 public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
 };
 
 
@@ -79,7 +82,7 @@ public:
 struct CrewStartedInvasion
 {
 public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
 };
 
 
@@ -87,7 +90,7 @@ public:
 struct InvasionCrewMusicStateChangedClientEvent
 {
 public:
-	Struct TimeStampedInvasionMusicState                         InvasionCrewMusicState;                            // 0x0(0x18)
+	struct TimeStampedInvasionMusicState                         InvasionCrewMusicState;                            // 0x0(0x18)
 };
 
 
@@ -95,8 +98,9 @@ public:
 struct InvasionParticipatingCrewData
 {
 public:
-	TArray<struct CrewIds>                                       CrewIds;                                           // 0x0(0x10)
+	TArray<struct InvasionCrewData>                              CrewIds;                                           // 0x0(0x10)
 	TArray<class CrewVoyageParticipant*>                         Participants;                                      // 0x10(0x10)
+	char                                                         pad0x58_2AG6L[0x58];                               // 0x20(0x58)
 };
 
 
@@ -104,12 +108,13 @@ public:
 struct InvasionEndedTelemetryEvent
 {
 public:
-	TArray<struct Participants>                                  Participants;                                      // 0x0(0x10)
-	Struct InvasionCrewData                                      Winner;                                            // 0x10(0x20)
+	TArray<struct InvasionCrewData>                              Participants;                                      // 0x0(0x10)
+	struct InvasionCrewData                                      Winner;                                            // 0x10(0x20)
 	float                                                        InvasionDurationInSeconds;                         // 0x30(0x4)
-	char                                                         pad0x4_IM38O[0x4];                                 // 0x34(0x4)
-	TArray<struct ParticipantFactionData>                        ParticipantFactionData;                            // 0x38(0x10)
+	char                                                         pad0x4_C1ASO[0x4];                                 // 0x34(0x4)
+	TArray<struct CrewFactionTelemetryData>                      ParticipantFactionData;                            // 0x38(0x10)
 	byte                                                         InvasionEndedReason;                               // 0x48(0x1)
+	char                                                         pad0x7_R36SI[0x7];                                 // 0x49(0x7)
 };
 
 
@@ -125,8 +130,9 @@ public:
 struct InvasionServiceMatchmakingCrewInfo
 {
 public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	byte                                                         CrewSessionType;                                   // 0x10(0x1)
+	char                                                         pad0x3_NVEHA[0x3];                                 // 0x11(0x3)
 };
 
 

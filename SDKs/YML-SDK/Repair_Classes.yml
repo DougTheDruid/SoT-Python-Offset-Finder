@@ -5,7 +5,7 @@ RepairTypeId:
   - Name: DisplayName
     Offset: '0x28'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'

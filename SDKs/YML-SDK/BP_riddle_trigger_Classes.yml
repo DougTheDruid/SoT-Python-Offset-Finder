@@ -5,15 +5,15 @@ BP_riddle_trigger_C:
   - Name: Shockwave
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: DefaultSceneRoot
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   - Name: DynamicMaterial
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
   - Name: Duration
     Offset: '0x3e0'
     Size: '0x4'

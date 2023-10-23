@@ -17,8 +17,8 @@ public:
 class MediaComponent: public ActorComponent
 {
 public:
-	Class MediaTexture*                                          MediaTexture;                                      // 0xc8(0x8)
-	Class MediaPlayer*                                           MediaPlayer;                                       // 0xd0(0x8)
+	class MediaTexture*                                          MediaTexture;                                      // 0xc8(0x8)
+	class MediaPlayer*                                           MediaPlayer;                                       // 0xd0(0x8)
 };
 
 
@@ -26,8 +26,8 @@ public:
 class MediaTimeStampInfo: public Object
 {
 public:
-	Struct Timespan                                              Time;                                              // 0x28(0x8)
-	char                                                         pad0x8_AQ966[0x8];                                 // 0x30(0x8)
+	struct Timespan                                              Time;                                              // 0x28(0x8)
+	char                                                         pad0x8_MQYB6[0x8];                                 // 0x30(0x8)
 };
 
 
@@ -35,26 +35,26 @@ public:
 class MediaPlayer: public Object
 {
 public:
-	char                                                         pad0x80_9ZDS8[0x80];                               // 0x28(0x80)
-	Struct Timespan                                              CacheAhead;                                        // 0xa8(0x8)
-	Struct Timespan                                              CacheBehind;                                       // 0xb0(0x8)
-	Struct Timespan                                              CacheBehindGame;                                   // 0xb8(0x8)
+	char                                                         pad0x80_BHDA3[0x80];                               // 0x28(0x80)
+	struct Timespan                                              CacheAhead;                                        // 0xa8(0x8)
+	struct Timespan                                              CacheBehind;                                       // 0xb0(0x8)
+	struct Timespan                                              CacheBehindGame;                                   // 0xb8(0x8)
 	bool                                                         NativeAudioOut;                                    // 0xc0(0x1)
 	bool                                                         PlayOnOpen;                                        // 0xc1(0x1)
-	char                                                         pad0x2_324CI[0x2];                                 // 0xc2(0x2)
+	char                                                         pad0x2_2EZIA[0x2];                                 // 0xc2(0x2)
 	bool                                                         Shuffle;                                           // 0xc4(0x1)
 	bool                                                         Loop;                                              // 0xc4(0x1)
-	char                                                         pad0x3_REK8O[0x3];                                 // 0xc5(0x3)
-	Class MediaPlaylist*                                         Playlist;                                          // 0xc8(0x8)
+	char                                                         pad0x3_2TH9C[0x3];                                 // 0xc5(0x3)
+	class MediaPlaylist*                                         Playlist;                                          // 0xc8(0x8)
 	int                                                          PlaylistIndex;                                     // 0xd0(0x4)
-	char                                                         pad0x4_IVLD1[0x4];                                 // 0xd4(0x4)
-	Struct Timespan                                              TimeDelay;                                         // 0xd8(0x8)
+	char                                                         pad0x4_NPUG5[0x4];                                 // 0xd4(0x4)
+	struct Timespan                                              TimeDelay;                                         // 0xd8(0x8)
 	float                                                        HorizontalFieldOfView;                             // 0xe0(0x4)
 	float                                                        VerticalFieldOfView;                               // 0xe4(0x4)
-	Struct Rotator                                               ViewRotation;                                      // 0xe8(0xc)
-	char                                                         pad0x64_EEPLA[0x64];                               // 0xf4(0x64)
-	Struct Guid                                                  PlayerGuid;                                        // 0x158(0x10)
-	char                                                         pad0x8_47SZD[0x8];                                 // 0x168(0x8)
+	struct Rotator                                               ViewRotation;                                      // 0xe8(0xc)
+	char                                                         pad0x64_IYHBJ[0x64];                               // 0xf4(0x64)
+	struct Guid                                                  PlayerGuid;                                        // 0x158(0x10)
+	char                                                         pad0x8_WHFLF[0x8];                                 // 0x168(0x8)
 };
 
 
@@ -70,6 +70,7 @@ public:
 class MediaSource: public Object
 {
 public:
+	char                                                         pad0x58_VD2SL[0x58];                               // 0x28(0x58)
 };
 
 
@@ -85,9 +86,9 @@ public:
 class FileMediaSource: public BaseMediaSource
 {
 public:
-	Struct FString                                               FilePath;                                          // 0x88(0x10)
+	struct FString                                               FilePath;                                          // 0x88(0x10)
 	bool                                                         PrecacheFile;                                      // 0x98(0x1)
-	char                                                         pad0x17_DJCJO[0x17];                               // 0x99(0x17)
+	char                                                         pad0x17_JM2TQ[0x17];                               // 0x99(0x17)
 };
 
 
@@ -95,7 +96,7 @@ public:
 class StreamMediaSource: public BaseMediaSource
 {
 public:
-	Struct FString                                               StreamUrl;                                         // 0x88(0x10)
+	struct FString                                               StreamUrl;                                         // 0x88(0x10)
 };
 
 
@@ -104,7 +105,7 @@ class TimeSynchronizableMediaSource: public BaseMediaSource
 {
 public:
 	bool                                                         bUseTimeSynchronization;                           // 0x88(0x1)
-	char                                                         pad0x3_LKTS1[0x3];                                 // 0x89(0x3)
+	char                                                         pad0x3_AC2YD[0x3];                                 // 0x89(0x3)
 	int                                                          FrameDelay;                                        // 0x8c(0x4)
 	double                                                       TimeDelay;                                         // 0x90(0x8)
 };
@@ -114,7 +115,7 @@ public:
 class PlatformMediaSource: public MediaSource
 {
 public:
-	Class MediaSource*                                           MediaSource;                                       // 0x80(0x8)
+	class MediaSource*                                           MediaSource;                                       // 0x80(0x8)
 };
 
 
@@ -125,17 +126,17 @@ public:
 	byte                                                         AddressX;                                          // 0x138(0x1)
 	byte                                                         AddressY;                                          // 0x139(0x1)
 	bool                                                         AutoClear;                                         // 0x13a(0x1)
-	char                                                         pad0x1_NFFHO[0x1];                                 // 0x13b(0x1)
-	Struct LinearColor                                           ClearColor;                                        // 0x13c(0x10)
+	char                                                         pad0x1_47FOM[0x1];                                 // 0x13b(0x1)
+	struct LinearColor                                           ClearColor;                                        // 0x13c(0x10)
 	bool                                                         EnableGenMips;                                     // 0x14c(0x1)
 	byte                                                         NumMips;                                           // 0x14d(0x1)
 	bool                                                         NewStyleOutput;                                    // 0x14e(0x1)
 	byte                                                         OutputFormat;                                      // 0x14f(0x1)
 	float                                                        CurrentAspectRatio;                                // 0x150(0x4)
 	byte                                                         CurrentOrientation;                                // 0x154(0x1)
-	char                                                         pad0x3_7YNUV[0x3];                                 // 0x155(0x3)
-	Class MediaPlayer*                                           MediaPlayer;                                       // 0x158(0x8)
-	char                                                         pad0xc8_Q9PBQ[0xc8];                               // 0x160(0xc8)
+	char                                                         pad0x3_OSOGI[0x3];                                 // 0x155(0x3)
+	class MediaPlayer*                                           MediaPlayer;                                       // 0x158(0x8)
+	char                                                         pad0xc8_7P9E6[0xc8];                               // 0x160(0xc8)
 };
 
 

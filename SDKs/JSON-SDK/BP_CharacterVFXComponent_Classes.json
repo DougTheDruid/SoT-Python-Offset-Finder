@@ -7,43 +7,43 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x16e_4AAER[0x16e]",
+        "Name": "pad0x1a8_HCI58[0x1a8]",
         "Type": "char",
-        "Size": "0x16e",
+        "Size": "0x1a8",
         "Offset": "0xe8"
       },
       {
         "Name": "EnterWaterEvent",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0xe8"
       },
       {
         "Name": "UnderwaterStateChanged",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x140"
       },
       {
         "Name": "Splash Emitter",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x198"
       },
       {
         "Name": "Large Foot Splash",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x1a0"
       },
       {
         "Name": "Small Foot Splash",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x1a8"
       },
@@ -61,37 +61,37 @@
       },
       {
         "Name": "FallingIntoWaterHandle",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x1b8"
       },
       {
         "Name": "Large Falling Splash",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x210"
       },
       {
         "Name": "PlayerViewUnderWaterHandle",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x218"
       },
       {
         "Name": "EnterShipEventHandle",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x270"
       },
       {
         "Name": "ExitShipEventHandle",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x2c8"
       },
       {
         "Name": "WindOffsetFromShip",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x320"
       },
@@ -102,7 +102,7 @@
         "Offset": "0x32c"
       },
       {
-        "Name": "pad0x3_8ZEJB[0x3]",
+        "Name": "pad0x3_VBO7Y[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x32d"
@@ -114,32 +114,32 @@
         "Offset": "0x330"
       },
       {
-        "Name": "pad0x4_FQRJB[0x4]",
+        "Name": "pad0x4_KBSJA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x334"
       },
       {
         "Name": "WindDirectionChangedHandle",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x338"
       },
       {
         "Name": "vfx_particle_underwater_ambient",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x390"
       },
       {
         "Name": "vfx_player_underwater_ambient",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x398"
       },
       {
         "Name": "FeatureName",
-        "Type": "Struct FeatureFlag",
+        "Type": "struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x3a0"
       }

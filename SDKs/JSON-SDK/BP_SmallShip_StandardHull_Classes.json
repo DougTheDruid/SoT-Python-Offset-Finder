@@ -6,20 +6,20 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "Occluder",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
+        "Name": "Damage",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
+        "Name": "Art",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x400"
       }

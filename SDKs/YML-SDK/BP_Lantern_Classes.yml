@@ -5,43 +5,43 @@ BP_Lantern_C:
   - Name: UberGraphFrame
     Offset: '0x9a0'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: LanternTriggerGlow
     Offset: '0x9a8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: LanternGlow
     Offset: '0x9b0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: AmbientLightSource
     Offset: '0x9b8'
     Size: '0x8'
-    Type: Class AmbientLightSourceComponent*
+    Type: class AmbientLightSourceComponent*
   - Name: SpotLight
     Offset: '0x9c0'
     Size: '0x8'
-    Type: Class SpotLightComponent*
+    Type: class SpotLightComponent*
   - Name: UsableWieldable
     Offset: '0x9c8'
     Size: '0x8'
-    Type: Class UsableWieldableComponent*
+    Type: class UsableWieldableComponent*
   - Name: LanternGlowDynamicMaterial
     Offset: '0x9d0'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
   - Name: EmissiveInt_threshold
     Offset: '0x9d8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_9HKPV[0x4]
+  - Name: pad0x4_X4H7Y[0x4]
     Offset: '0x9dc'
     Size: '0x4'
     Type: char
   - Name: LanternTriggerGlowDynamicMaterial
     Offset: '0x9e0'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
   - Name: TriggerGlowDuration
     Offset: '0x9e8'
     Size: '0x4'
@@ -57,16 +57,16 @@ BP_Lantern_C:
   - Name: DefaultSpotlightColour
     Offset: '0x9f4'
     Size: '0x10'
-    Type: Struct LinearColor
+    Type: struct LinearColor
   - Name: DefaultAmbientLightColour
     Offset: '0xa04'
     Size: '0x10'
-    Type: Struct LinearColor
+    Type: struct LinearColor
   - Name: DefaultGlowColour
     Offset: '0xa14'
     Size: '0x10'
-    Type: Struct LinearColor
-  - Name: pad0x4_B2Y3N[0x4]
+    Type: struct LinearColor
+  - Name: pad0x4_HURJR[0x4]
     Offset: '0xa24'
     Size: '0x4'
     Type: char

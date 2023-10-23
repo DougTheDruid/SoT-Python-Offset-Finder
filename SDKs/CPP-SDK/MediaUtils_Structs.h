@@ -10,11 +10,12 @@ namespace DougsSDKDumper
 struct MediaPlayerOptions
 {
 public:
-	Struct MediaPlayerTrackOptions                               Tracks;                                            // 0x0(0x1c)
-	char                                                         pad0x4_6LELR[0x4];                                 // 0x1c(0x4)
-	Struct Timespan                                              SeekTime;                                          // 0x20(0x8)
+	struct MediaPlayerTrackOptions                               Tracks;                                            // 0x0(0x1c)
+	char                                                         pad0x4_YNRAQ[0x4];                                 // 0x1c(0x4)
+	struct Timespan                                              SeekTime;                                          // 0x20(0x8)
 	byte                                                         PlayOnOpen;                                        // 0x28(0x1)
 	byte                                                         Loop;                                              // 0x29(0x1)
+	char                                                         pad0x6_379RN[0x6];                                 // 0x2a(0x6)
 };
 
 

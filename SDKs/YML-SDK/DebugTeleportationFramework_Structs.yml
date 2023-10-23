@@ -5,17 +5,21 @@ DebugTeleportDestinationEntry:
   - Name: DebugMenuSubPath
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: Destination
     Offset: '0x10'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: AssociatedCrew
     Offset: '0x1c'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: Id
     Offset: '0x2c'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
+  - Name: pad0x4_QUSJ0[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x40'

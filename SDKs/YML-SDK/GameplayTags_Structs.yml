@@ -9,17 +9,25 @@ GameplayTag:
   ClassSize: '0x8'
 GameplayTagContainer:
   Attributes:
+  - Name: pad0x8_U3FU9[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: GameplayTags
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct GameplayTags>
+    Type: TArray<struct GameplayTag>
   - Name: Tags
     Offset: '0x18'
     Size: '0x10'
     Type: TArray<struct FName>
   ClassSize: '0x28'
 GameplayTagNode:
-  Attributes: []
+  Attributes:
+  - Name: pad0x78_ZLA0N[0x78]
+    Offset: '0x0'
+    Size: '0x78'
+    Type: char
   ClassSize: '0x78'
 GameplayTagQuery:
   Attributes:
@@ -27,14 +35,14 @@ GameplayTagQuery:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_H3SJU[0x4]
+  - Name: pad0x4_RPAOX[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
   - Name: TagDictionary
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct TagDictionary>
+    Type: TArray<struct GameplayTag>
   - Name: QueryTokenStream
     Offset: '0x18'
     Size: '0x10'
@@ -42,20 +50,20 @@ GameplayTagQuery:
   - Name: UserDescription
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: AutoDescription
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x48'
 GameplayTagTableRow:
   Attributes:
   - Name: Tag
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: CategoryText
     Offset: '0x10'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   ClassSize: '0x48'

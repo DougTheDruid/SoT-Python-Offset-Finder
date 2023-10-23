@@ -7,13 +7,13 @@
     "Attributes": [
       {
         "Name": "MovieScene",
-        "Type": "Class MovieScene*",
+        "Type": "class MovieScene*",
         "Size": "0x8",
         "Offset": "0x2a8"
       },
       {
         "Name": "ObjectReferences",
-        "Type": "Struct ActorSequenceObjectReferenceMap",
+        "Type": "struct ActorSequenceObjectReferenceMap",
         "Size": "0x20",
         "Offset": "0x2b0"
       }
@@ -27,19 +27,19 @@
     "Attributes": [
       {
         "Name": "PlaybackSettings",
-        "Type": "Struct MovieSceneSequencePlaybackSettings",
+        "Type": "struct MovieSceneSequencePlaybackSettings",
         "Size": "0x28",
         "Offset": "0xc8"
       },
       {
         "Name": "Sequence",
-        "Type": "Class ActorSequence*",
+        "Type": "class ActorSequence*",
         "Size": "0x8",
         "Offset": "0xf0"
       },
       {
         "Name": "SequencePlayer",
-        "Type": "Class ActorSequencePlayer*",
+        "Type": "class ActorSequencePlayer*",
         "Size": "0x8",
         "Offset": "0xf8"
       },
@@ -50,7 +50,7 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x7_D5F60[0x7]",
+        "Name": "pad0x7_W1IY4[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x101"

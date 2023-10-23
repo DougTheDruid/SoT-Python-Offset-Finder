@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 struct RegionActionSpotContainer
 {
 public:
+	char                                                         pad0x50_GZOQ8[0x50];                               // 0x0(0x50)
 };
 
 
@@ -17,6 +18,7 @@ public:
 struct ActivityActionSpotContainer
 {
 public:
+	char                                                         pad0x10_COWHC[0x10];                               // 0x0(0x10)
 };
 
 

@@ -7,12 +7,12 @@
     "Attributes": [
       {
         "Name": "CommunityEmissaryDataAsset",
-        "Type": "Class CommunityEmissaryFlagData*",
+        "Type": "class CommunityEmissaryFlagData*",
         "Size": "0x8",
         "Offset": "0x620"
       },
       {
-        "Name": "pad0x28_LO8KI[0x28]",
+        "Name": "pad0x28_2SZX6[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x628"
@@ -27,7 +27,7 @@
     "Attributes": [
       {
         "Name": "GradeData",
-        "Type": "TArray<struct GradeData>",
+        "Type": "TArray<struct CommunityFlagGradeData>",
         "Size": "0x10",
         "Offset": "0x28"
       }

@@ -33,19 +33,19 @@
     "Attributes": [
       {
         "Name": "RangeName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "QualityProperty",
-        "Type": "Class BoolProperty*",
+        "Type": "class BoolProperty*",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
         "Name": "SettingContainer",
-        "Type": "Class ShaderPlatformQualitySettings*",
+        "Type": "class ShaderPlatformQualitySettings*",
         "Size": "0x8",
         "Offset": "0x18"
       }

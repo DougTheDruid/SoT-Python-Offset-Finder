@@ -4,7 +4,14 @@
     "FullSize": "0x4f0",
     "InheritedSize": "0x4a0",
     "ClassSize": "0x50",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x50_MSX3A[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x4a0"
+      }
+    ]
   },
   "FireworkDamagerType": {
     "Super": "DamagerType",
@@ -26,14 +33,14 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_A9XZQ[0x4]",
+        "Name": "pad0x4_UJOZ0[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
       },
       {
         "Name": "CameraShake",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x30"
       },
@@ -44,14 +51,14 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_7RDO6[0x4]",
+        "Name": "pad0x4_091L7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
       },
       {
         "Name": "ExplosionRumble",
-        "Type": "Class ForceFeedbackEffect*",
+        "Type": "class ForceFeedbackEffect*",
         "Size": "0x8",
         "Offset": "0x40"
       }
@@ -65,13 +72,13 @@
     "Attributes": [
       {
         "Name": "PercentageTimeUntilTrailDisappears",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x28"
       },
       {
         "Name": "TimeUntilExplosion",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x58"
       },
@@ -88,38 +95,38 @@
         "Offset": "0x89"
       },
       {
-        "Name": "pad0x2_3DWKD[0x2]",
+        "Name": "pad0x2_4B0BL[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x8a"
       },
       {
         "Name": "FireworkAmbientLightData",
-        "Type": "Struct FireworkAmbientLightData",
+        "Type": "struct FireworkAmbientLightData",
         "Size": "0x14",
         "Offset": "0x8c"
       },
       {
         "Name": "Explosions",
-        "Type": "TArray<struct Explosions>",
+        "Type": "TArray<struct WeightedFireworkVFXData>",
         "Size": "0x10",
         "Offset": "0xa0"
       },
       {
         "Name": "NumExplosions",
-        "Type": "Struct WeightedProbabilityRange",
+        "Type": "struct WeightedProbabilityRange",
         "Size": "0x20",
         "Offset": "0xb0"
       },
       {
         "Name": "TimeBetweenExplosions",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0xd0"
       },
       {
         "Name": "ExplosionLocationOffset",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x100"
       },
@@ -130,28 +137,42 @@
         "Offset": "0x130"
       },
       {
-        "Name": "pad0x4_PJHO7[0x4]",
+        "Name": "pad0x4_OC5N6[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x134"
       },
       {
         "Name": "ExplosionSfxPool",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x138"
       },
       {
         "Name": "LaunchSfx",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x140"
       },
       {
         "Name": "FireworkFeedbackData",
-        "Type": "Class FireworkFeedbackDataAsset*",
+        "Type": "class FireworkFeedbackDataAsset*",
         "Size": "0x8",
         "Offset": "0x148"
+      }
+    ]
+  },
+  "FireworkSequentialDataAsset": {
+    "Super": "FireworkDataAsset",
+    "FullSize": "0x160",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FireworkSequentialSelections",
+        "Type": "TArray<struct FireworkSequentialSelectionType>",
+        "Size": "0x10",
+        "Offset": "0x150"
       }
     ]
   },
@@ -162,43 +183,43 @@
     "ClassSize": "0xd8",
     "Attributes": [
       {
-        "Name": "pad0x8_FYBC2[0x8]",
+        "Name": "pad0x8_UGOLJ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "GeneratedFireworkData",
-        "Type": "Struct GeneratedFireworkData",
+        "Type": "struct GeneratedFireworkData",
         "Size": "0x58",
         "Offset": "0x3d0"
       },
       {
         "Name": "RootSceneComponent",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
         "Name": "FireworkAmbientLightComponent",
-        "Type": "Class FireworkAmbientLightComponent*",
+        "Type": "class FireworkAmbientLightComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
         "Name": "SpawnedExplosionParticles",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
         "Name": "AudioEmitter",
-        "Type": "Struct WwiseEmitter",
+        "Type": "struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x440"
       },
       {
-        "Name": "pad0x40_M831H[0x40]",
+        "Name": "pad0x40_QJE4C[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x460"
@@ -213,13 +234,13 @@
     "Attributes": [
       {
         "Name": "LoadableProjectileComponent",
-        "Type": "Class LoadableFireworkComponent*",
+        "Type": "class LoadableFireworkComponent*",
         "Size": "0x8",
         "Offset": "0x528"
       },
       {
         "Name": "FireworkDataAsset",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x530"
       },
@@ -230,7 +251,7 @@
         "Offset": "0x540"
       },
       {
-        "Name": "pad0x4_5ML88[0x4]",
+        "Name": "pad0x4_6H2W9[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x544"
@@ -251,55 +272,55 @@
     "ClassSize": "0x108",
     "Attributes": [
       {
-        "Name": "pad0x10_JNKNI[0x10]",
+        "Name": "pad0x10_7LK2K[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x600"
       },
       {
         "Name": "CollisionComponent",
-        "Type": "Class SphereComponent*",
+        "Type": "class SphereComponent*",
         "Size": "0x8",
         "Offset": "0x610"
       },
       {
         "Name": "MeshComponent",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x618"
       },
       {
         "Name": "ExplosionComponent",
-        "Type": "Class ExplosionComponent*",
+        "Type": "class ExplosionComponent*",
         "Size": "0x8",
         "Offset": "0x620"
       },
       {
         "Name": "FireworkStatsComponent",
-        "Type": "Class FireworkStatsComponent*",
+        "Type": "class FireworkStatsComponent*",
         "Size": "0x8",
         "Offset": "0x628"
       },
       {
         "Name": "MeshDirectionComponent",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x630"
       },
       {
         "Name": "AnimationComponent",
-        "Type": "Class ProjectileAnimationComponent*",
+        "Type": "class ProjectileAnimationComponent*",
         "Size": "0x8",
         "Offset": "0x638"
       },
       {
         "Name": "GeneratedFireworkData",
-        "Type": "Struct GeneratedFireworkData",
+        "Type": "struct GeneratedFireworkData",
         "Size": "0x58",
         "Offset": "0x640"
       },
       {
-        "Name": "pad0x70_G6WK9[0x70]",
+        "Name": "pad0x70_RGHCV[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x698"
@@ -313,7 +334,7 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x78_8ICB0[0x78]",
+        "Name": "pad0x78_KYLZC[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0x3c8"
@@ -325,7 +346,7 @@
         "Offset": "0x440"
       },
       {
-        "Name": "pad0x1c_X346M[0x1c]",
+        "Name": "pad0x1c_WWZTE[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0x444"
@@ -369,7 +390,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_FLL7P[0x4]",
+        "Name": "pad0x4_DT742[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -389,44 +410,44 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_RF0JC[0x4]",
+        "Name": "pad0x4_PWYKT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
       },
       {
         "Name": "FuseSoundWisePool",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "FuseActivateSoundPlayEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "FuseSoundPlayEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x40"
       },
       {
         "Name": "FuseSoundStopEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x48"
       },
       {
         "Name": "FuseParticleSystem",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x50"
       },
       {
         "Name": "FuseMeshAssetReference",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x58"
       }
@@ -445,7 +466,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x4_DAGT8[0x4]",
+        "Name": "pad0x4_QLIDW[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xcc"
@@ -469,7 +490,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0xbc_9ZD54[0xbc]",
+        "Name": "pad0xbc_VCDOC[0xbc]",
         "Type": "char",
         "Size": "0xbc",
         "Offset": "0xdc"
@@ -520,14 +541,14 @@
         "Offset": "0x134"
       },
       {
-        "Name": "pad0x3_3AHR7[0x3]",
+        "Name": "pad0x3_E5EF8[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x135"
       },
       {
         "Name": "FireworksSettingsDataAsset",
-        "Type": "Class FireworksSettingsDataAsset*",
+        "Type": "class FireworksSettingsDataAsset*",
         "Size": "0x8",
         "Offset": "0x138"
       }
@@ -541,24 +562,24 @@
     "Attributes": [
       {
         "Name": "ProjectileAnimationCurves",
-        "Type": "TArray<struct ProjectileAnimationCurves>",
+        "Type": "TArray<struct WeightedProjectileMeshAnimationData>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "MeshComponent",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
       {
         "Name": "AnimationOffsetCurve",
-        "Type": "Struct RuntimeVectorCurve",
+        "Type": "struct RuntimeVectorCurve",
         "Size": "0x170",
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x40_3B8UN[0x40]",
+        "Name": "pad0x40_4JRT7[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x250"

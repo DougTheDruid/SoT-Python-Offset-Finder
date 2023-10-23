@@ -7,13 +7,13 @@
     "Attributes": [
       {
         "Name": "AnimNotifyWwiseEmitter",
-        "Type": "Class AnimNotifyWwiseEmitterComponent*",
+        "Type": "class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "SkeletalMesh",
-        "Type": "Class SkeletalMeshComponent*",
+        "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       }

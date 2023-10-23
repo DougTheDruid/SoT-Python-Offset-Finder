@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "TokenSecretKey",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -21,7 +21,7 @@
     "Attributes": [
       {
         "Name": "TokenSecretKey",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       }

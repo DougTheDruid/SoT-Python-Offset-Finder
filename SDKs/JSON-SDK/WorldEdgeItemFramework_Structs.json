@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "BatchId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -15,13 +15,13 @@
     "Attributes": [
       {
         "Name": "ShipLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
       {
         "Name": "TeleportLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
@@ -38,13 +38,13 @@
     "Attributes": [
       {
         "Name": "DropLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
       {
         "Name": "TeleportLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       }

@@ -5,51 +5,51 @@ wsp_mushroom_glow_01_a_C:
   - Name: StaticMeshComponent010
     Offset: '0x408'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent09
     Offset: '0x410'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent08
     Offset: '0x418'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent07
     Offset: '0x420'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent06
     Offset: '0x428'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent05
     Offset: '0x430'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent04
     Offset: '0x438'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent03
     Offset: '0x440'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent02
     Offset: '0x448'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent01
     Offset: '0x450'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent0
     Offset: '0x458'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: SharedRoot
     Offset: '0x460'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x60'
   FullSize: '0x468'
   InheritedSize: '0x408'

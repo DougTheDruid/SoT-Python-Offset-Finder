@@ -6,14 +6,14 @@
     "ClassSize": "0x1b",
     "Attributes": [
       {
-        "Name": "pad0x7_T5VVG[0x7]",
+        "Name": "pad0x7_319QA[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x439"
       },
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x440"
       },

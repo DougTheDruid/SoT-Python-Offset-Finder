@@ -10,18 +10,18 @@ namespace DougsSDKDumper
 struct EmoteData
 {
 public:
-	Struct EmoteId                                               EmoteId;                                           // 0x0(0x8)
-	Struct FText                                                 EmoteDisplayName;                                  // 0x8(0x38)
-	Struct FText                                                 AudioDescription;                                  // 0x40(0x38)
+	struct EmoteId                                               EmoteId;                                           // 0x0(0x8)
+	struct FText                                                 EmoteDisplayName;                                  // 0x8(0x38)
+	struct FText                                                 AudioDescription;                                  // 0x40(0x38)
 	float                                                        DelayBeforeAllowingExit;                           // 0x78(0x4)
 	float                                                        VerticalOffsetFactorWhenZoomed;                    // 0x7c(0x4)
 	bool                                                         HideNameplate;                                     // 0x80(0x1)
-	char                                                         pad0x7_RIP1D[0x7];                                 // 0x81(0x7)
-	Class EmotePropData*                                         EmotePropDataAsset;                                // 0x88(0x8)
+	char                                                         pad0x7_4ZVQ2[0x7];                                 // 0x81(0x7)
+	class EmotePropData*                                         EmotePropDataAsset;                                // 0x88(0x8)
 	bool                                                         CanPlayInSuccession;                               // 0x90(0x1)
 	bool                                                         ShowDescriptionInTextChat;                         // 0x91(0x1)
-	char                                                         pad0x6_WXW4H[0x6];                                 // 0x92(0x6)
-	Class AthenaSpringArmComponentParams*                        CustomSpringArmParamsAsset;                        // 0x98(0x8)
+	char                                                         pad0x6_28BJA[0x6];                                 // 0x92(0x6)
+	class AthenaSpringArmComponentParams*                        CustomSpringArmParamsAsset;                        // 0x98(0x8)
 };
 
 
@@ -37,12 +37,13 @@ public:
 struct EmotePropRandomObjectResult
 {
 public:
-	Class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
+	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
 	bool                                                         HasTransformValue;                                 // 0x8(0x1)
-	char                                                         pad0x7_R66UW[0x7];                                 // 0x9(0x7)
-	Struct Transform                                             Transform;                                         // 0x10(0x30)
+	char                                                         pad0x7_RK3S1[0x7];                                 // 0x9(0x7)
+	struct Transform                                             Transform;                                         // 0x10(0x30)
 	struct FName                                                 TextureParameterName;                              // 0x40(0x8)
 	int                                                          TextureParameterValue;                             // 0x48(0x4)
+	char                                                         pad0x4_IKFH4[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -50,10 +51,10 @@ public:
 struct EmotePropRandomObjectInfo
 {
 public:
-	Class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
-	TArray<struct PossibleTransforms>                            PossibleTransforms;                                // 0x8(0x10)
+	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
+	TArray<struct Transform>                                     PossibleTransforms;                                // 0x8(0x10)
 	struct FName                                                 RandomParameterName;                               // 0x18(0x8)
-	Struct Int32Range                                            RandomParameterRange;                              // 0x20(0x10)
+	struct Int32Range                                            RandomParameterRange;                              // 0x20(0x10)
 };
 
 
@@ -63,6 +64,7 @@ struct EventEmoteEndRequested
 public:
 	struct FName                                                 EmoteIdentifier;                                   // 0x0(0x8)
 	bool                                                         EndForcedEmote;                                    // 0x8(0x1)
+	char                                                         pad0x3_DWJ74[0x3];                                 // 0x9(0x3)
 };
 
 
@@ -70,6 +72,7 @@ public:
 struct EventEndEmoteAnimation
 {
 public:
+	char                                                         pad0x1_SDHHA[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -77,7 +80,7 @@ public:
 struct EventEmoteSwapped
 {
 public:
-	Struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
+	struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
 };
 
 
@@ -86,6 +89,7 @@ struct EventEmoteCompleted
 {
 public:
 	struct FName                                                 EmoteName;                                         // 0x0(0x8)
+	char                                                         pad0x4_SWVHI[0x4];                                 // 0x8(0x4)
 };
 
 
@@ -93,7 +97,7 @@ public:
 struct EventEmoteStarted
 {
 public:
-	Struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
+	struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
 };
 
 
@@ -101,9 +105,10 @@ public:
 struct EventEmoteRequested
 {
 public:
-	Struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
+	struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
 	struct FName                                                 ForcedEmoteIdentifier;                             // 0xa0(0x8)
 	bool                                                         ForcedEmote;                                       // 0xa8(0x1)
+	char                                                         pad0x7_Z8QRW[0x7];                                 // 0xa9(0x7)
 };
 
 
@@ -111,6 +116,7 @@ public:
 struct EventDisableLookAtEmoteCamera
 {
 public:
+	char                                                         pad0x1_7G61Y[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -118,6 +124,7 @@ public:
 struct EventEnableLookAtEmoteCamera
 {
 public:
+	char                                                         pad0x8_ATERI[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -127,7 +134,7 @@ struct EmoteDiceOutcomeTelemetryEvent
 public:
 	int                                                          MaxLimit;                                          // 0x0(0x4)
 	int                                                          RollNumber;                                        // 0x4(0x4)
-	Struct Vector                                                OrientationUsed;                                   // 0x8(0xc)
+	struct Vector                                                OrientationUsed;                                   // 0x8(0xc)
 };
 
 
@@ -135,10 +142,11 @@ public:
 struct EmoteRandomObjectOutcomeTelemetryEvent
 {
 public:
-	Struct FString                                               MeshName;                                          // 0x0(0x10)
-	Struct Transform                                             Transform;                                         // 0x10(0x30)
-	Struct FString                                               TextureParameterName;                              // 0x40(0x10)
+	struct FString                                               MeshName;                                          // 0x0(0x10)
+	struct Transform                                             Transform;                                         // 0x10(0x30)
+	struct FString                                               TextureParameterName;                              // 0x40(0x10)
 	int                                                          TextureParameterValue;                             // 0x50(0x4)
+	char                                                         pad0xc_OBD83[0xc];                                 // 0x54(0xc)
 };
 
 

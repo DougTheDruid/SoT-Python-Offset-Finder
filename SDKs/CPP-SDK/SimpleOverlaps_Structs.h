@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct SimpleOverlapEnd
 {
 public:
-	Struct SimpleOverlapInfo                                     OverlapInfo;                                       // 0x0(0x10)
+	struct SimpleOverlapInfo                                     OverlapInfo;                                       // 0x0(0x10)
 };
 
 
@@ -18,8 +18,8 @@ public:
 struct SimpleOverlapInfo
 {
 public:
-	Class Actor*                                                 OtherActor;                                        // 0x0(0x8)
-	Class PrimitiveComponent*                                    OtherComponent;                                    // 0x8(0x8)
+	class Actor*                                                 OtherActor;                                        // 0x0(0x8)
+	class PrimitiveComponent*                                    OtherComponent;                                    // 0x8(0x8)
 };
 
 
@@ -27,7 +27,7 @@ public:
 struct SimpleOverlapBegin
 {
 public:
-	Struct SimpleOverlapInfo                                     OverlapInfo;                                       // 0x0(0x10)
+	struct SimpleOverlapInfo                                     OverlapInfo;                                       // 0x0(0x10)
 };
 
 

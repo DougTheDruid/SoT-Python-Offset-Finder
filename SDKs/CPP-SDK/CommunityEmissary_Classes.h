@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class CommunityEmissaryFlagComponent: public StaticMeshComponent
 {
 public:
-	Class CommunityEmissaryFlagData*                             CommunityEmissaryDataAsset;                        // 0x620(0x8)
-	char                                                         pad0x28_LO8KI[0x28];                               // 0x628(0x28)
+	class CommunityEmissaryFlagData*                             CommunityEmissaryDataAsset;                        // 0x620(0x8)
+	char                                                         pad0x28_2SZX6[0x28];                               // 0x628(0x28)
 };
 
 
@@ -19,7 +19,7 @@ public:
 class CommunityEmissaryFlagData: public DataAsset
 {
 public:
-	TArray<struct GradeData>                                     GradeData;                                         // 0x28(0x10)
+	TArray<struct CommunityFlagGradeData>                        GradeData;                                         // 0x28(0x10)
 };
 
 

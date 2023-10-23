@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class DebugMenuComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x28_N79MA[0x28];                               // 0xc8(0x28)
-	Class DebugMenu*                                             DebugMenuInstance;                                 // 0xf0(0x8)
-	char                                                         pad0x20_PFDQX[0x20];                               // 0xf8(0x20)
+	char                                                         pad0x28_6KKH0[0x28];                               // 0xc8(0x28)
+	class DebugMenu*                                             DebugMenuInstance;                                 // 0xf0(0x8)
+	char                                                         pad0x20_6KLHG[0x20];                               // 0xf8(0x20)
 };
 
 
@@ -28,8 +28,8 @@ class DebugMenuDataAsset: public DataAsset
 {
 public:
 	TArray<class DebugMenuDataAsset*>                            DataAssets;                                        // 0x28(0x10)
-	TArray<struct MenuEntires>                                   MenuEntires;                                       // 0x38(0x10)
-	TArray<struct ButtonShortcuts>                               ButtonShortcuts;                                   // 0x48(0x10)
+	TArray<struct DebugMenuDataAssetEntry>                       MenuEntires;                                       // 0x38(0x10)
+	TArray<struct DebugMenuButtonShortcut>                       ButtonShortcuts;                                   // 0x48(0x10)
 	TArray<class DebugMenuEntryGenerator*>                       MenuEntryGenerators;                               // 0x58(0x10)
 };
 
@@ -38,6 +38,7 @@ public:
 class DebugMenu: public Actor
 {
 public:
+	char                                                         pad0xb0_IP6JB[0xb0];                               // 0x3c8(0xb0)
 };
 
 
@@ -45,6 +46,7 @@ public:
 class DebugMenuComponentMock: public DebugMenuComponent
 {
 public:
+	char                                                         pad0x8_6HCY8[0x8];                                 // 0x118(0x8)
 };
 
 

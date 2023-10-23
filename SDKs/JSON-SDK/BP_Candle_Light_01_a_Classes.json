@@ -7,25 +7,25 @@
     "Attributes": [
       {
         "Name": "StaticMeshComponent0",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "LightComponent0",
-        "Type": "Class PointLightComponent*",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "ParticleSystemComponent0",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
         "Name": "SharedRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       }

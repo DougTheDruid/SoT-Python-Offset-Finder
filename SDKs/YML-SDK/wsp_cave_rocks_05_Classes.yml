@@ -5,35 +5,35 @@ wsp_cave_rocks_05_C:
   - Name: StaticMesh
     Offset: '0x408'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMesh1
     Offset: '0x410'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent06
     Offset: '0x418'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent05
     Offset: '0x420'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent03
     Offset: '0x428'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent01
     Offset: '0x430'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent0
     Offset: '0x438'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: SharedRoot
     Offset: '0x440'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x40'
   FullSize: '0x448'
   InheritedSize: '0x408'

@@ -6,25 +6,25 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x8_Z18ZB[0x8]",
+        "Name": "pad0x8_U0Q9W[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x170"
       },
       {
         "Name": "SoundComponent",
-        "Type": "Class WwiseMediaSoundComponent*",
+        "Type": "class WwiseMediaSoundComponent*",
         "Size": "0x8",
         "Offset": "0x178"
       },
       {
         "Name": "SubtitleComponent",
-        "Type": "Class MediaSubtitleComponent*",
+        "Type": "class MediaSubtitleComponent*",
         "Size": "0x8",
         "Offset": "0x180"
       },
       {
-        "Name": "pad0x8_WOSAZ[0x8]",
+        "Name": "pad0x8_1OSA7[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x188"

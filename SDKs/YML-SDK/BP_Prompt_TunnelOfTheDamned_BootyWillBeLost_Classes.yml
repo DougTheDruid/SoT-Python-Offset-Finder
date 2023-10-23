@@ -5,19 +5,19 @@ BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C:
   - Name: UberGraphFrame
     Offset: '0x138'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
-  - Name: pad0x117_UDK2Y[0x117]
+    Type: struct PointerToUberGraphFrame
+  - Name: pad0x151_44A3E[0x151]
     Offset: '0x140'
-    Size: '0x117'
+    Size: '0x151'
     Type: char
   - Name: Handle_CrewEnteredTunnelOfTheDamnedPortalProximity
     Offset: '0x140'
     Size: '0x58'
-    Type: Struct ObjectMessagingHandle
+    Type: struct ObjectMessagingHandle
   - Name: Prompt_BootyWillBeLost
     Offset: '0x198'
     Size: '0x70'
-    Type: Struct PrioritisedPromptWithHandle
+    Type: struct PrioritisedPromptWithHandle
   - Name: PromptDisplayDuration
     Offset: '0x208'
     Size: '0x4'
@@ -30,7 +30,7 @@ BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C:
     Offset: '0x20d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_PJK99[0x2]
+  - Name: pad0x2_LWHJR[0x2]
     Offset: '0x20e'
     Size: '0x2'
     Type: char
@@ -38,14 +38,14 @@ BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C:
     Offset: '0x210'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_MA3B7[0x4]
+  - Name: pad0x4_TWUSE[0x4]
     Offset: '0x214'
     Size: '0x4'
     Type: char
   - Name: LootFilterDataAsset
     Offset: '0x218'
     Size: '0x8'
-    Type: Class TunnelsOfTheDamnedLootFilterDataAsset*
+    Type: class TunnelsOfTheDamnedLootFilterDataAsset*
   ClassSize: '0xe8'
   FullSize: '0x220'
   InheritedSize: '0x138'

@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "trs_briggsys_skull_01_c",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       }

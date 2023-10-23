@@ -6,12 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20 (Full Size[0x590] - InheritedSize[0x570]
+// Size 0x2c (Full Size[0x59c] - InheritedSize[0x570]
 class BP_Sail_C: public Sail
 {
 public:
-	TArray<struct Sail Positions Top>                            Sail Positions Top;                                // 0x570(0x10)
-	TArray<struct Sail Positions Bottom>                         Sail Positions Bottom;                             // 0x580(0x10)
+	TArray<struct Vector>                                        Sail Positions Top;                                // 0x570(0x10)
+	TArray<struct Vector>                                        Sail Positions Bottom;                             // 0x580(0x10)
+	struct FeatureFlag                                           AlternateSailForceFeatureToggle;                   // 0x590(0xc)
 };
 
 

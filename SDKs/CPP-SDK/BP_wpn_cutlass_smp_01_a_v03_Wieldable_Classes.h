@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_wpn_cutlass_smp_01_a_v03_Wieldable_C: public BP_Cutlass_Item_C
 {
 public:
-	Class StaticMeshComponent*                                   shroud_fp;                                         // 0xb58(0x8)
-	Class StaticMeshComponent*                                   shroudmask_tp;                                     // 0xb60(0x8)
-	Class StaticMeshComponent*                                   shroud_tp;                                         // 0xb68(0x8)
+	class StaticMeshComponent*                                   shroud_fp;                                         // 0xb58(0x8)
+	class StaticMeshComponent*                                   shroudmask_tp;                                     // 0xb60(0x8)
+	class StaticMeshComponent*                                   shroud_tp;                                         // 0xb68(0x8)
 };
 
 

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class ClientCommandHandler: public Actor
 {
 public:
-	Struct ClientCommandQueue                                    CommandQueue;                                      // 0x3c8(0x18)
+	struct ClientCommandQueue                                    CommandQueue;                                      // 0x3c8(0x18)
 };
 
 
@@ -18,8 +18,8 @@ public:
 class TaleStruct: public Struct
 {
 public:
-	Struct Guid                                                  StructId;                                          // 0x88(0x10)
-	char                                                         pad0x20_NF5RM[0x20];                               // 0x98(0x20)
+	struct Guid                                                  StructId;                                          // 0x88(0x10)
+	char                                                         pad0x20_1OUQ2[0x20];                               // 0x98(0x20)
 };
 
 

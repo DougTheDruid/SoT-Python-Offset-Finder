@@ -6,19 +6,19 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "pad0x60_IMOKO[0x60]",
+        "Name": "pad0x60_JGD03[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x28"
       },
       {
         "Name": "TaleStepDesc",
-        "Type": "Class TaleQuestStepDesc*",
+        "Type": "class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x8_KD1OY[0x8]",
+        "Name": "pad0x8_OS0QK[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x90"
@@ -30,7 +30,14 @@
     "FullSize": "0x60",
     "InheritedSize": "0x28",
     "ClassSize": "0x38",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x38_YVCP9[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x28"
+      }
+    ]
   },
   "TaleQuestServiceDesc": {
     "Super": "Object",
@@ -52,13 +59,13 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_IES5D[0x7]",
+        "Name": "pad0x7_A6IW5[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
       },
       {
-        "Name": "pad0x50_3N1WQ[0x50]",
+        "Name": "pad0x50_WG88C[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x30"
@@ -70,7 +77,14 @@
     "FullSize": "0xe8",
     "InheritedSize": "0x80",
     "ClassSize": "0x68",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x68_V5CP3[0x68]",
+        "Type": "char",
+        "Size": "0x68",
+        "Offset": "0x80"
+      }
+    ]
   },
   "TaleQuestFunctionStepLibrary": {
     "Super": "TaleQuestRunnableStepDesc",
@@ -79,14 +93,14 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x8_BQ4EY[0x8]",
+        "Name": "pad0x8_C5DNH[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xe8"
       },
       {
         "Name": "Function",
-        "Type": "Class Function*",
+        "Type": "class Function*",
         "Size": "0x8",
         "Offset": "0xf0"
       },
@@ -97,7 +111,7 @@
         "Offset": "0x178"
       },
       {
-        "Name": "pad0x7_5O7FY[0x7]",
+        "Name": "pad0x7_5FDLZ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x179"
@@ -118,7 +132,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_NSOQE[0x8]",
+        "Name": "pad0x8_SVPYT[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x98"
@@ -131,19 +145,19 @@
       },
       {
         "Name": "FrameDesc",
-        "Type": "Class TaleQuestFramedStepDesc*",
+        "Type": "class TaleQuestFramedStepDesc*",
         "Size": "0x8",
         "Offset": "0xb0"
       },
       {
         "Name": "Variables",
-        "Type": "Struct UserDefinedStructWithSerialisableValue",
+        "Type": "struct UserDefinedStructWithSerialisableValue",
         "Size": "0x20",
         "Offset": "0xb8"
       },
       {
         "Name": "LocalVariables",
-        "Type": "Struct UserDefinedStructWithSerialisableValue",
+        "Type": "struct UserDefinedStructWithSerialisableValue",
         "Size": "0x20",
         "Offset": "0xd8"
       }
@@ -163,13 +177,13 @@
       },
       {
         "Name": "VariablesWithDefaults",
-        "Type": "Struct UserDefinedStructWithSerialisableValue",
+        "Type": "struct UserDefinedStructWithSerialisableValue",
         "Size": "0x20",
         "Offset": "0x90"
       },
       {
         "Name": "GeneratedVariables",
-        "Type": "Struct InlineUserDefinedStructDetails",
+        "Type": "struct InlineUserDefinedStructDetails",
         "Size": "0x8",
         "Offset": "0xb0"
       }
@@ -180,7 +194,14 @@
     "FullSize": "0x108",
     "InheritedSize": "0xc8",
     "ClassSize": "0x40",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x40_ZR3IY[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0xc8"
+      }
+    ]
   },
   "EnvQueryContext_TaleContextBase": {
     "Super": "EnvQueryContext",
@@ -197,7 +218,7 @@
     "Attributes": [
       {
         "Name": "IslandTypeWeightsForDifficultyRanks",
-        "Type": "TArray<struct IslandTypeWeightsForDifficultyRanks>",
+        "Type": "TArray<struct IslandTypeWeights>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -230,25 +251,25 @@
         "Offset": "0x638"
       },
       {
-        "Name": "pad0x4_T4NST[0x4]",
+        "Name": "pad0x4_RF824[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x63c"
       },
       {
         "Name": "DecalMaterial",
-        "Type": "Class MaterialInterface*",
+        "Type": "class MaterialInterface*",
         "Size": "0x8",
         "Offset": "0x640"
       },
       {
         "Name": "PathTool",
-        "Type": "Struct SplineFootprintPathTool",
+        "Type": "struct SplineFootprintPathTool",
         "Size": "0x1",
         "Offset": "0x648"
       },
       {
-        "Name": "pad0x3_LM9RP[0x3]",
+        "Name": "pad0x3_TOE8I[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x649"
@@ -261,12 +282,12 @@
       },
       {
         "Name": "DecalUniformScale",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x650"
       },
       {
-        "Name": "pad0x4_9V9VJ[0x4]",
+        "Name": "pad0x4_9L1EU[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x65c"
@@ -300,7 +321,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_BQMQI[0x4]",
+        "Name": "pad0x4_NDU1Z[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -319,7 +340,14 @@
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_FS6MU[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
   },
   "TaleQuestCargoRunContract": {
     "Super": "Object",
@@ -328,37 +356,37 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "pad0x40_27JCD[0x40]",
+        "Name": "pad0x40_2588N[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x28"
       },
       {
         "Name": "ItemsToCollect",
-        "Type": "TArray<struct ItemsToCollect>",
+        "Type": "TArray<struct TaleQuestCargoRunContractItem>",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x10_MOBHB[0x10]",
+        "Name": "pad0x10_B1XHN[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x78"
       },
       {
         "Name": "DeliverToNPC",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x88"
       },
       {
         "Name": "CollectFromNPC",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x50_XHC64[0x50]",
+        "Name": "pad0x50_1Q59L[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x98"
@@ -378,7 +406,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x38_3HGL7[0x38]",
+        "Name": "pad0x38_Q1RAG[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x70"
@@ -399,14 +427,14 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_FV4JV[0x8]",
+        "Name": "pad0x8_0S6OI[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "Desc",
-        "Type": "Class TaleQuestForEachStepDescBase*",
+        "Type": "class TaleQuestForEachStepDescBase*",
         "Size": "0x8",
         "Offset": "0x30"
       },
@@ -417,7 +445,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4c_3A9ZI[0x4c]",
+        "Name": "pad0x4c_D2Q4I[0x4c]",
         "Type": "char",
         "Size": "0x4c",
         "Offset": "0x3c"
@@ -429,7 +457,14 @@
     "FullSize": "0x88",
     "InheritedSize": "0x28",
     "ClassSize": "0x60",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x60_OHLS7[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x28"
+      }
+    ]
   },
   "TaleQuestMerchantContractsService": {
     "Super": "TaleQuestService",
@@ -442,6 +477,33 @@
         "Type": "TArray<class TaleQuestMerchantContract*>",
         "Size": "0x10",
         "Offset": "0x60"
+      }
+    ]
+  },
+  "TaleQuestPhaseBranchSelectorPredicateBase": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NumPlayerStatsFromListPhaseBranchSelector": {
+    "Super": "TaleQuestPhaseBranchSelectorPredicateBase",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "UniqueStats",
+        "Type": "TArray<struct PlayerStat>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x18_QSJYB[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x38"
       }
     ]
   },
@@ -471,7 +533,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_C7TW1[0x7]",
+        "Name": "pad0x7_2SMSO[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -497,7 +559,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_NNFSL[0x7]",
+        "Name": "pad0x7_KJ9PA[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -523,7 +585,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_1RJCG[0x7]",
+        "Name": "pad0x7_J20FZ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -549,7 +611,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_I9KOM[0x7]",
+        "Name": "pad0x7_ZFAXG[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -564,7 +626,7 @@
     "Attributes": [
       {
         "Name": "DataID",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x30"
       },
@@ -581,7 +643,7 @@
         "Offset": "0x3c"
       },
       {
-        "Name": "pad0x3_QARCN[0x3]",
+        "Name": "pad0x3_M9SZ1[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3d"
@@ -609,14 +671,14 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x10_5UBUN[0x10]",
+        "Name": "pad0x10_AT7TC[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "TalesData",
-        "Type": "TArray<struct TalesData>",
+        "Type": "TArray<struct TaleQuestQueryableStateDataInfo>",
         "Size": "0x10",
         "Offset": "0xd8"
       }
@@ -636,20 +698,20 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x8_L9KI8[0x8]",
+        "Name": "pad0x8_YWY6I[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "QuantityDataID",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
       {
         "Name": "OptionalCapacityOverrideDataID",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
@@ -660,7 +722,7 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x4_46LJA[0x4]",
+        "Name": "pad0x4_6WC8R[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xe4"
@@ -672,7 +734,14 @@
     "FullSize": "0xc0",
     "InheritedSize": "0x38",
     "ClassSize": "0x88",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x88_OK63D[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x38"
+      }
+    ]
   },
   "TaleQuestSeasonNotificationDataAsset": {
     "Super": "DataAsset",
@@ -682,7 +751,7 @@
     "Attributes": [
       {
         "Name": "SeasonTextPopupAsset",
-        "Type": "Struct SeasonTextPopupAsset",
+        "Type": "struct SeasonTextPopupAsset",
         "Size": "0xa0",
         "Offset": "0x28"
       }
@@ -726,14 +795,28 @@
     "FullSize": "0x98",
     "InheritedSize": "0x60",
     "ClassSize": "0x38",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x38_F4VOE[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x60"
+      }
+    ]
   },
   "GameEventExclusionZoneTaleService": {
     "Super": "TaleQuestService",
     "FullSize": "0x88",
     "InheritedSize": "0x60",
     "ClassSize": "0x28",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x28_X61PW[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x60"
+      }
+    ]
   },
   "RewardGenTaleQuestService": {
     "Super": "TaleQuestService",
@@ -743,7 +826,7 @@
     "Attributes": [
       {
         "Name": "GlobalSpawnData",
-        "Type": "Class TaleQuestWeightedItemDescSpawnDataAsset*",
+        "Type": "class TaleQuestWeightedItemDescSpawnDataAsset*",
         "Size": "0x8",
         "Offset": "0x60"
       },
@@ -760,7 +843,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x8_EOFLJ[0x8]",
+        "Name": "pad0x8_PXJSC[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x88"
@@ -775,12 +858,12 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Class TaleQuestActorOfInterestServiceDesc*",
+        "Type": "class TaleQuestActorOfInterestServiceDesc*",
         "Size": "0x8",
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x30_DWTVL[0x30]",
+        "Name": "pad0x30_LWWK3[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x68"
@@ -789,63 +872,77 @@
   },
   "TaleQuestActorService": {
     "Super": "TaleQuestService",
-    "FullSize": "0x3c0",
+    "FullSize": "0x3d0",
     "InheritedSize": "0x60",
-    "ClassSize": "0x360",
+    "ClassSize": "0x370",
     "Attributes": [
       {
         "Name": "TrackedActors",
-        "Type": "TArray<struct TrackedActors>",
+        "Type": "TArray<struct TrackedActorData>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "CriticalActors",
-        "Type": "TArray<struct CriticalActors>",
+        "Type": "TArray<struct CriticalActorDelegateData>",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "SnapshottedActors",
-        "Type": "TArray<struct SnapshottedActors>",
+        "Type": "TArray<struct SnapshottedActorData>",
         "Size": "0x10",
         "Offset": "0x80"
       },
       {
         "Name": "Desc",
-        "Type": "Class TaleQuestActorServiceDesc*",
+        "Type": "class TaleQuestActorServiceDesc*",
         "Size": "0x8",
         "Offset": "0x90"
       },
       {
         "Name": "PhasedClusterRoot",
-        "Type": "Class PhasedClusterRoot*",
+        "Type": "class PhasedClusterRoot*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
         "Name": "PhasedActors",
-        "Type": "TArray<struct PhasedActors>",
+        "Type": "TArray<struct PhasedActor>",
         "Size": "0x10",
         "Offset": "0xa0"
       },
       {
         "Name": "PhasedItems",
-        "Type": "TArray<struct PhasedItems>",
+        "Type": "TArray<struct PhasedItem>",
         "Size": "0x10",
         "Offset": "0xb0"
       },
       {
         "Name": "CriticalActorHandedInByAnotherCrewFailureMessage",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0xc0"
       },
       {
-        "Name": "pad0x2c8_NJ7WL[0x2c8]",
+        "Name": "pad0x2d8_OEAXS[0x2d8]",
         "Type": "char",
-        "Size": "0x2c8",
+        "Size": "0x2d8",
         "Offset": "0xf8"
+      }
+    ]
+  },
+  "TaleQuestCrewGameEventBlockingTaleService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x98",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x38_8HNWI[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x60"
       }
     ]
   },
@@ -854,7 +951,14 @@
     "FullSize": "0x138",
     "InheritedSize": "0x60",
     "ClassSize": "0xd8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xd8_FR583[0xd8]",
+        "Type": "char",
+        "Size": "0xd8",
+        "Offset": "0x60"
+      }
+    ]
   },
   "TaleQuestInteractionPreventionService": {
     "Super": "TaleQuestService",
@@ -870,7 +974,7 @@
       },
       {
         "Name": "Desc",
-        "Type": "Class TaleQuestInteractionPreventionServiceDesc*",
+        "Type": "class TaleQuestInteractionPreventionServiceDesc*",
         "Size": "0x8",
         "Offset": "0x70"
       }
@@ -884,7 +988,7 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Class TaleQuestLockGhostShipDoorServiceDesc*",
+        "Type": "class TaleQuestLockGhostShipDoorServiceDesc*",
         "Size": "0x8",
         "Offset": "0x60"
       }
@@ -895,7 +999,60 @@
     "FullSize": "0x80",
     "InheritedSize": "0x60",
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x20_K738F[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "TaleQuestPlayerItemsCleaupService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x70",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ServiceDesc",
+        "Type": "class TaleQuestPlayerItemsCleaupServiceDesc*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x8_QH62L[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "TaleQuestPredicatedBranchPhasingService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x88",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "SpawnedPhaseClustersRoots",
+        "Type": "TArray<class PhasedClusterRoot*>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "ServiceDesc",
+        "Type": "class TaleQuestPredicatedBranchPhasingServiceDesc*",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "pad0x10_IEB5F[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x78"
+      }
+    ]
   },
   "TaleQuestQueryableStatesService": {
     "Super": "TaleQuestService",
@@ -905,12 +1062,12 @@
     "Attributes": [
       {
         "Name": "AllData",
-        "Type": "TArray<struct AllData>",
+        "Type": "TArray<struct TaleQuestQueryableStateDataInfo>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x40_AYHL4[0x40]",
+        "Name": "pad0x40_29PEJ[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x70"
@@ -922,7 +1079,14 @@
     "FullSize": "0xb0",
     "InheritedSize": "0x60",
     "ClassSize": "0x50",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x50_IB3Z7[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x60"
+      }
+    ]
   },
   "TaleQuestSelectorService": {
     "Super": "TaleQuestService",
@@ -932,12 +1096,12 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Class TaleQuestSelectorServiceDesc*",
+        "Type": "class TaleQuestSelectorServiceDesc*",
         "Size": "0x8",
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x20_RO9V1[0x20]",
+        "Name": "pad0x20_5B5Q4[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x68"
@@ -952,14 +1116,34 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Class TaleQuestShipSetSinkingParamsServiceDesc*",
+        "Type": "class TaleQuestShipSetSinkingParamsServiceDesc*",
         "Size": "0x8",
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x48_J1VFE[0x48]",
+        "Name": "pad0x48_LL0HV[0x48]",
         "Type": "char",
         "Size": "0x48",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "TaleQuestSuppressIslandBannersService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x80",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Desc",
+        "Type": "class TaleQuestSuppressIslandBannersServiceDesc*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x18_7QS4Z[0x18]",
+        "Type": "char",
+        "Size": "0x18",
         "Offset": "0x68"
       }
     ]
@@ -971,14 +1155,14 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x50_95R0P[0x50]",
+        "Name": "pad0x50_ARTRH[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x60"
       },
       {
         "Name": "Desc",
-        "Type": "Class TaleQuestToggleInteractionDescriptionServiceDesc*",
+        "Type": "class TaleQuestToggleInteractionDescriptionServiceDesc*",
         "Size": "0x8",
         "Offset": "0xb0"
       }
@@ -991,19 +1175,19 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x20_XW3Z2[0x20]",
+        "Name": "pad0x20_JCUKB[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x60"
       },
       {
         "Name": "MigrationActions",
-        "Type": "TArray<struct MigrationActions>",
+        "Type": "TArray<struct MigrationActionPair>",
         "Size": "0x10",
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x18_68QVE[0x18]",
+        "Name": "pad0x18_QEM9C[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x90"
@@ -1039,7 +1223,7 @@
     "Attributes": [
       {
         "Name": "SpawnData",
-        "Type": "Class TaleQuestWeightedItemDescSpawnDataAsset*",
+        "Type": "class TaleQuestWeightedItemDescSpawnDataAsset*",
         "Size": "0x8",
         "Offset": "0x28"
       }
@@ -1059,7 +1243,7 @@
       },
       {
         "Name": "ActorOfInterestUnregisteredFailureMessage",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x38"
       }
@@ -1073,13 +1257,20 @@
     "Attributes": [
       {
         "Name": "ItemLostFailureRunnable",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x28"
       }
     ]
   },
   "TaleQuestCargoRunContractsServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestCrewGameEventBlockingTaleServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -1121,6 +1312,46 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TaleQuestPlayerItemsCleaupServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ItemDescsToRemove",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TaleQuestPredicatedBranchPhasingServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NumberOfClusters",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_ERG7B[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "PlayerAssignmentFunction",
+        "Type": "class TaleQuestPhaseBranchSelectorPredicateBase*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "TaleQuestQueryableStatesServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x28",
@@ -1150,27 +1381,47 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct QuestVariableGuid",
+        "Type": "struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0x28"
       },
       {
         "Name": "SmallShipSinkingData",
-        "Type": "Class ShipSinkingParametersDataAsset*",
+        "Type": "class ShipSinkingParametersDataAsset*",
         "Size": "0x8",
         "Offset": "0x58"
       },
       {
         "Name": "MediumShipSinkingData",
-        "Type": "Class ShipSinkingParametersDataAsset*",
+        "Type": "class ShipSinkingParametersDataAsset*",
         "Size": "0x8",
         "Offset": "0x60"
       },
       {
         "Name": "LargeShipSinkingData",
-        "Type": "Class ShipSinkingParametersDataAsset*",
+        "Type": "class ShipSinkingParametersDataAsset*",
         "Size": "0x8",
         "Offset": "0x68"
+      }
+    ]
+  },
+  "TaleQuestSuppressIslandBannersServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DoNotSuppressDiveTargetIsland",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_N18AM[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
       }
     ]
   },
@@ -1193,7 +1444,7 @@
         "Offset": "0x29"
       },
       {
-        "Name": "pad0x6_9HQDQ[0x6]",
+        "Name": "pad0x6_3LSUK[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2a"
@@ -1208,18 +1459,18 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Class ActorRadiusTrackerStepDesc*",
+        "Type": "class ActorRadiusTrackerStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
         "Name": "TargetActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x28_TZCBK[0x28]",
+        "Name": "pad0x28_R28JT[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xa8"
@@ -1247,25 +1498,25 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x8_ZVFG9[0x8]",
+        "Name": "pad0x8_KYSAD[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
         "Name": "StepDesc",
-        "Type": "Class DebugTaleAddInstancedLevelStepDesc*",
+        "Type": "class DebugTaleAddInstancedLevelStepDesc*",
         "Size": "0x8",
         "Offset": "0xa0"
       },
       {
         "Name": "InstancedLevelPath",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x20_1QSRL[0x20]",
+        "Name": "pad0x20_03YD2[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xb8"
@@ -1280,12 +1531,12 @@
     "Attributes": [
       {
         "Name": "InstancedLevelKeyword",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x8_MI0XS[0x8]",
+        "Name": "pad0x8_NMMXQ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -1307,13 +1558,13 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Class DoEQSQueryStepDesc*",
+        "Type": "class DoEQSQueryStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
         "Name": "CachedTaleEQSService",
-        "Type": "Class TaleQuestEQSService*",
+        "Type": "class TaleQuestEQSService*",
         "Size": "0x8",
         "Offset": "0xa0"
       }
@@ -1359,14 +1610,28 @@
     "FullSize": "0xf8",
     "InheritedSize": "0x98",
     "ClassSize": "0x60",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x60_1V5T0[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x98"
+      }
+    ]
   },
   "GenerateDigLocationInRadiusStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x148",
     "InheritedSize": "0x98",
     "ClassSize": "0xb0",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xb0_6XSLN[0xb0]",
+        "Type": "char",
+        "Size": "0xb0",
+        "Offset": "0x98"
+      }
+    ]
   },
   "GetActorOfInterestStep": {
     "Super": "TaleQuestStep",
@@ -1380,7 +1645,14 @@
     "FullSize": "0xd0",
     "InheritedSize": "0x98",
     "ClassSize": "0x38",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x38_F37Y0[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x98"
+      }
+    ]
   },
   "InvokeDamageStep": {
     "Super": "TaleQuestStep",
@@ -1397,7 +1669,7 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Class LinkEQSContextWithVariableStepDesc*",
+        "Type": "class LinkEQSContextWithVariableStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       }
@@ -1411,19 +1683,19 @@
     "Attributes": [
       {
         "Name": "StepDesc",
-        "Type": "Class LoadSequencerAnimationStepDesc*",
+        "Type": "class LoadSequencerAnimationStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
         "Name": "SequencerCutSceneActor",
-        "Type": "Class SequencerCutSceneActor*",
+        "Type": "class SequencerCutSceneActor*",
         "Size": "0x8",
         "Offset": "0xa0"
       },
       {
         "Name": "TargetToSpawnActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0xa8"
       }
@@ -1444,12 +1716,12 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Class ParticipantRadiusArrayTrackerStepDesc*",
+        "Type": "class ParticipantRadiusArrayTrackerStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x18_PFN40[0x18]",
+        "Name": "pad0x18_DD2IM[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xa0"
@@ -1464,12 +1736,12 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Class ParticipantRadiusTrackerStepDesc*",
+        "Type": "class ParticipantRadiusTrackerStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x18_TSPRO[0x18]",
+        "Name": "pad0x18_EQPE3[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xa0"
@@ -1484,24 +1756,24 @@
     "Attributes": [
       {
         "Name": "StepDesc",
-        "Type": "Class PlaySequencerAnimationOnCutsceneActorStepDesc*",
+        "Type": "class PlaySequencerAnimationOnCutsceneActorStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
         "Name": "SequencerCutSceneActor",
-        "Type": "Class SequencerCutSceneActor*",
+        "Type": "class SequencerCutSceneActor*",
         "Size": "0x8",
         "Offset": "0xa0"
       },
       {
         "Name": "PossessableSequences",
-        "Type": "TArray<struct PossessableSequences>",
+        "Type": "TArray<struct PossessableSequence>",
         "Size": "0x10",
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x10_A9MOA[0x10]",
+        "Name": "pad0x10_VTBVS[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xb8"
@@ -1516,18 +1788,18 @@
     "Attributes": [
       {
         "Name": "StepDesc",
-        "Type": "Class PlaySequencerAnimationStepDesc*",
+        "Type": "class PlaySequencerAnimationStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
         "Name": "SequencerCutSceneActor",
-        "Type": "Class SequencerCutSceneActor*",
+        "Type": "class SequencerCutSceneActor*",
         "Size": "0x8",
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x28_UZ3QA[0x28]",
+        "Name": "pad0x28_ENKXV[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xa8"
@@ -1584,25 +1856,46 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Class SetEQSNamedContextStepDesc*",
+        "Type": "class SetEQSNamedContextStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       }
     ]
+  },
+  "SetReplenishableContentSelectorStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "SpawnLayerStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xb0",
     "InheritedSize": "0x98",
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_KDM26[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x98"
+      }
+    ]
   },
   "SpawnPhasedActorWithTransformStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x100",
     "InheritedSize": "0x98",
     "ClassSize": "0x68",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x68_DA4CD[0x68]",
+        "Type": "char",
+        "Size": "0x68",
+        "Offset": "0x98"
+      }
+    ]
   },
   "SpawnPhasedItemStep": {
     "Super": "TaleQuestStep",
@@ -1644,7 +1937,14 @@
     "FullSize": "0xa8",
     "InheritedSize": "0x98",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_VUMZ9[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x98"
+      }
+    ]
   },
   "TaleQuestAddCommonToolsStep": {
     "Super": "TaleQuestStep",
@@ -1693,14 +1993,28 @@
     "FullSize": "0x158",
     "InheritedSize": "0x98",
     "ClassSize": "0xc0",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xc0_H5KKT[0xc0]",
+        "Type": "char",
+        "Size": "0xc0",
+        "Offset": "0x98"
+      }
+    ]
   },
   "TaleQuestAwaitEventStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xf0",
     "InheritedSize": "0x98",
     "ClassSize": "0x58",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x58_3GRQ2[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x98"
+      }
+    ]
   },
   "TaleQuestChooseIslandFromWeightsStep": {
     "Super": "TaleQuestStep",
@@ -1709,14 +2023,14 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x90_I896C[0x90]",
+        "Name": "pad0x90_92M6L[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x98"
       },
       {
         "Name": "IslandTypeWeights",
-        "Type": "Class IslandTypeWeightsDataAsset*",
+        "Type": "class IslandTypeWeightsDataAsset*",
         "Size": "0x8",
         "Offset": "0x128"
       }
@@ -1727,7 +2041,14 @@
     "FullSize": "0xd0",
     "InheritedSize": "0x98",
     "ClassSize": "0x38",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x38_9CAYN[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x98"
+      }
+    ]
   },
   "TaleQuestDisableInteractionStep": {
     "Super": "TaleQuestStep",
@@ -1744,7 +2065,7 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Class TaleQuestEmissaryCompanyActionRewardBoostStepDesc*",
+        "Type": "class TaleQuestEmissaryCompanyActionRewardBoostStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       }
@@ -1762,7 +2083,14 @@
     "FullSize": "0xb0",
     "InheritedSize": "0x98",
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_WGJ67[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x98"
+      }
+    ]
   },
   "TaleQuestFireEventStep": {
     "Super": "TaleQuestStep",
@@ -1779,7 +2107,7 @@
     "Attributes": [
       {
         "Name": "Bodies",
-        "Type": "TArray<struct Bodies>",
+        "Type": "TArray<struct BodyFramePair>",
         "Size": "0x10",
         "Offset": "0x98"
       }
@@ -1800,12 +2128,12 @@
     "Attributes": [
       {
         "Name": "Frame",
-        "Type": "Class TaleQuestIndexedFrame*",
+        "Type": "class TaleQuestIndexedFrame*",
         "Size": "0x8",
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x38_45VFN[0x38]",
+        "Name": "pad0x38_8Q581[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0xb0"
@@ -1833,6 +2161,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TaleQuestGetGlobalDigSpotDataStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TaleQuestGetParticipatingCrewsInRadiusStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
@@ -1852,14 +2187,28 @@
     "FullSize": "0xd8",
     "InheritedSize": "0x98",
     "ClassSize": "0x40",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x40_E4QML[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x98"
+      }
+    ]
   },
   "TaleQuestObstacleCourseSetupAndWaitForCompletionStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xa0",
     "InheritedSize": "0x98",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_WHDRA[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x98"
+      }
+    ]
   },
   "TaleQuestPermanentPromptStep": {
     "Super": "TaleQuestStep",
@@ -1876,12 +2225,12 @@
     "Attributes": [
       {
         "Name": "StepDesc",
-        "Type": "Class TaleQuestPersistentForEachCrewTaskStepDesc*",
+        "Type": "class TaleQuestPersistentForEachCrewTaskStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x50_VYIP6[0x50]",
+        "Name": "pad0x50_VI064[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0xa0"
@@ -1910,23 +2259,30 @@
     "Attributes": [
       {
         "Name": "InputArray",
-        "Type": "Struct QuestVariableArray",
+        "Type": "struct QuestVariableArray",
         "Size": "0x30",
         "Offset": "0x98"
       },
       {
         "Name": "OutputEntry",
-        "Type": "Struct QuestVariable",
+        "Type": "struct QuestVariable",
         "Size": "0x30",
         "Offset": "0xc8"
       },
       {
         "Name": "OutputEntryIndex",
-        "Type": "Struct QuestVariableInt",
+        "Type": "struct QuestVariableInt",
         "Size": "0x30",
         "Offset": "0xf8"
       }
     ]
+  },
+  "TaleQuestSetDigSpotVoyageStatusStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "TaleQuestShipDiveStep": {
     "Super": "TaleQuestStep",
@@ -1954,14 +2310,28 @@
     "FullSize": "0xa8",
     "InheritedSize": "0x98",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_GL2YR[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x98"
+      }
+    ]
   },
   "TaleQuestStarFieldPuzzleSetupAndWaitForCompletionStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xb0",
     "InheritedSize": "0x98",
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_MTSXC[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x98"
+      }
+    ]
   },
   "TaleQuestStartCameraFadeStep": {
     "Super": "TaleQuestStep",
@@ -1975,7 +2345,14 @@
     "FullSize": "0xc0",
     "InheritedSize": "0x98",
     "ClassSize": "0x28",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x28_V02UN[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x98"
+      }
+    ]
   },
   "TaleQuestStructStepBase": {
     "Super": "TaleQuestStep",
@@ -2013,12 +2390,12 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Class TaleQuestWaitForHandInStepDesc*",
+        "Type": "class TaleQuestWaitForHandInStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x8_I19R0[0x8]",
+        "Name": "pad0x8_KM4T5[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xa0"
@@ -2033,7 +2410,7 @@
     "Attributes": [
       {
         "Name": "StepDesc",
-        "Type": "Class TrackResponseCoordinatorStepDesc*",
+        "Type": "class TrackResponseCoordinatorStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       }
@@ -2054,12 +2431,12 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Class WaitForActorOfInterestToUnregisterStepDesc*",
+        "Type": "class WaitForActorOfInterestToUnregisterStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x80_JD0AD[0x80]",
+        "Name": "pad0x80_N233K[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0xa0"
@@ -2071,7 +2448,14 @@
     "FullSize": "0xf0",
     "InheritedSize": "0x98",
     "ClassSize": "0x58",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x58_GGGJQ[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x98"
+      }
+    ]
   },
   "WaitForGameEventToCompleteStep": {
     "Super": "TaleQuestStep",
@@ -2081,12 +2465,12 @@
     "Attributes": [
       {
         "Name": "GameEvent",
-        "Type": "Class GameEvent*",
+        "Type": "class GameEvent*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x8_0598C[0x8]",
+        "Name": "pad0x8_605RT[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xa0"
@@ -2098,21 +2482,42 @@
     "FullSize": "0x118",
     "InheritedSize": "0x98",
     "ClassSize": "0x80",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x80_09T9D[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x98"
+      }
+    ]
   },
   "WaitForItemPickupStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x178",
     "InheritedSize": "0x98",
     "ClassSize": "0xe0",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xe0_D57GN[0xe0]",
+        "Type": "char",
+        "Size": "0xe0",
+        "Offset": "0x98"
+      }
+    ]
   },
   "WaitForQueryableStateValueStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x128",
     "InheritedSize": "0x98",
     "ClassSize": "0x90",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x90_OYCB8[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x98"
+      }
+    ]
   },
   "WaitForSpawnedPawnBaseStep": {
     "Super": "TaleQuestStep",
@@ -2122,12 +2527,12 @@
     "Attributes": [
       {
         "Name": "AISpawner",
-        "Type": "Class AISpawner*",
+        "Type": "class AISpawner*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x10_3KHXG[0x10]",
+        "Name": "pad0x10_2C8YV[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xa0"
@@ -2142,7 +2547,7 @@
     "Attributes": [
       {
         "Name": "TargetActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       },
@@ -2153,14 +2558,14 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x4_HEV3S[0x4]",
+        "Name": "pad0x4_11WXE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xb4"
       },
       {
         "Name": "Location",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0xb8"
       },
@@ -2171,14 +2576,14 @@
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x4_9TSIM[0x4]",
+        "Name": "pad0x4_7GXEU[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xec"
       },
       {
         "Name": "ActorInsideRadius",
-        "Type": "Struct QuestVariableBool",
+        "Type": "struct QuestVariableBool",
         "Size": "0x30",
         "Offset": "0xf0"
       }
@@ -2203,7 +2608,7 @@
         "Offset": "0x84"
       },
       {
-        "Name": "pad0x3_5P7QB[0x3]",
+        "Name": "pad0x3_AXHS6[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x85"
@@ -2216,7 +2621,7 @@
       },
       {
         "Name": "Location",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0x90"
       }
@@ -2230,18 +2635,18 @@
     "Attributes": [
       {
         "Name": "Target",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "Function",
-        "Type": "Struct ClassFunctionSelectionType",
+        "Type": "struct ClassFunctionSelectionType",
         "Size": "0x10",
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x50_ZHQ6G[0x50]",
+        "Name": "pad0x50_RSUET[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x98"
@@ -2256,7 +2661,7 @@
     "Attributes": [
       {
         "Name": "ActorVar",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -2270,13 +2675,13 @@
     "Attributes": [
       {
         "Name": "EQSQuery",
-        "Type": "Class EnvQuery*",
+        "Type": "class EnvQuery*",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "OutPoints",
-        "Type": "Struct QuestVariableArray",
+        "Type": "struct QuestVariableArray",
         "Size": "0x30",
         "Offset": "0x88"
       }
@@ -2290,7 +2695,7 @@
     "Attributes": [
       {
         "Name": "TargetActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -2298,27 +2703,39 @@
   },
   "FindItemInCollectorsChestStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe8",
+    "FullSize": "0xf0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x68",
+    "ClassSize": "0x70",
     "Attributes": [
       {
         "Name": "CollectorsChest",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "ItemInChest",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xb0"
       },
       {
         "Name": "ItemToFind",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xe0"
+      },
+      {
+        "Name": "AllowChildClasses",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "pad0x7_PF99X[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xe9"
       }
     ]
   },
@@ -2329,20 +2746,20 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x20_58H2J[0x20]",
+        "Name": "pad0x20_TZX3L[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x80"
       },
       {
         "Name": "ActorToSearch",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xa0"
       },
       {
         "Name": "GroupNamePin",
-        "Type": "Struct QuestVariableName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0xd0"
       },
@@ -2365,7 +2782,7 @@
         "Offset": "0x109"
       },
       {
-        "Name": "pad0x6_Y1XAW[0x6]",
+        "Name": "pad0x6_FE5UL[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x10a"
@@ -2380,7 +2797,7 @@
     "Attributes": [
       {
         "Name": "OutputOrientedPoint",
-        "Type": "Struct QuestVariableOrientedPoint",
+        "Type": "struct QuestVariableOrientedPoint",
         "Size": "0x30",
         "Offset": "0x110"
       }
@@ -2394,7 +2811,7 @@
     "Attributes": [
       {
         "Name": "OutputVectorLocation",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0x110"
       }
@@ -2408,7 +2825,7 @@
     "Attributes": [
       {
         "Name": "OutputTransform",
-        "Type": "Struct QuestVariableTransform",
+        "Type": "struct QuestVariableTransform",
         "Size": "0x38",
         "Offset": "0x110"
       }
@@ -2422,13 +2839,13 @@
     "Attributes": [
       {
         "Name": "Cannon",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "Projectile",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xb0"
       }
@@ -2442,13 +2859,13 @@
     "Attributes": [
       {
         "Name": "IslandName",
-        "Type": "Struct QuestVariableName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "Center",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0xb0"
       },
@@ -2459,14 +2876,14 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x4_S8EER[0x4]",
+        "Name": "pad0x4_PFS5U[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xe4"
       },
       {
         "Name": "DigLocation",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0xe8"
       }
@@ -2480,13 +2897,13 @@
     "Attributes": [
       {
         "Name": "ActorOfInterestId",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "ActorOfInterest",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x88"
       }
@@ -2500,13 +2917,13 @@
     "Attributes": [
       {
         "Name": "ActorToDamage",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "DamageType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xb0"
       },
@@ -2523,7 +2940,7 @@
         "Offset": "0xbc"
       },
       {
-        "Name": "pad0x3_98BJK[0x3]",
+        "Name": "pad0x3_AOKCP[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xbd"
@@ -2538,13 +2955,13 @@
     "Attributes": [
       {
         "Name": "Context",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "Variable",
-        "Type": "Struct QuestVariableSetEQSTaleContextValue",
+        "Type": "struct QuestVariableSetEQSTaleContextValue",
         "Size": "0x30",
         "Offset": "0x88"
       }
@@ -2564,19 +2981,19 @@
       },
       {
         "Name": "TargetActorToSpawn",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x90"
       },
       {
         "Name": "LevelSequenceActorSpawnLocation",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xc0"
       },
       {
         "Name": "SequencerCutSceneActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xf0"
       },
@@ -2587,7 +3004,7 @@
         "Offset": "0x120"
       },
       {
-        "Name": "pad0x3_6UP4G[0x3]",
+        "Name": "pad0x3_PWHK6[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x121"
@@ -2605,7 +3022,7 @@
         "Offset": "0x12c"
       },
       {
-        "Name": "pad0x3_3PVIP[0x3]",
+        "Name": "pad0x3_2SRCO[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x12d"
@@ -2620,7 +3037,7 @@
     "Attributes": [
       {
         "Name": "ActorVar",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       },
@@ -2637,14 +3054,14 @@
         "Offset": "0xb1"
       },
       {
-        "Name": "pad0x6_NK8M0[0x6]",
+        "Name": "pad0x6_R6A96[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0xb2"
       },
       {
         "Name": "CriticalActorLostMessage",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0xb8"
       }
@@ -2663,32 +3080,32 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_9I5IS[0x4]",
+        "Name": "pad0x4_HNJET[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
       },
       {
         "Name": "Actors",
-        "Type": "Struct QuestVariableActorArray",
+        "Type": "struct QuestVariableActorArray",
         "Size": "0x30",
         "Offset": "0x88"
       },
       {
         "Name": "Locations",
-        "Type": "Struct QuestVariableVectorArray",
+        "Type": "struct QuestVariableVectorArray",
         "Size": "0x30",
         "Offset": "0xb8"
       },
       {
         "Name": "Radius",
-        "Type": "Struct QuestVariableFloat",
+        "Type": "struct QuestVariableFloat",
         "Size": "0x30",
         "Offset": "0xe8"
       },
       {
         "Name": "OutLocation",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0x118"
       }
@@ -2703,9 +3120,9 @@
   },
   "ParticipantRadiusTrackerStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe8",
+    "FullSize": "0x148",
     "InheritedSize": "0x80",
-    "ClassSize": "0x68",
+    "ClassSize": "0xc8",
     "Attributes": [
       {
         "Name": "DurationBetweenChecks",
@@ -2714,43 +3131,55 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_YU00Q[0x4]",
+        "Name": "pad0x4_I8NKS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
       },
       {
         "Name": "Location",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0x88"
       },
       {
         "Name": "Radius",
-        "Type": "Struct QuestVariableFloat",
+        "Type": "struct QuestVariableFloat",
         "Size": "0x30",
         "Offset": "0xb8"
+      },
+      {
+        "Name": "PlayersOutsideRadius",
+        "Type": "struct QuestVariableActorArray",
+        "Size": "0x30",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "PlayersInsideRadius",
+        "Type": "struct QuestVariableActorArray",
+        "Size": "0x30",
+        "Offset": "0x118"
       }
     ]
   },
   "WaitUntilAllParticipantsEnterRadiusStep": {
     "Super": "ParticipantRadiusTrackerStepDesc",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xe8",
+    "FullSize": "0x148",
+    "InheritedSize": "0x148",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "WaitUntilAllParticipantsLeaveRadiusStep": {
     "Super": "ParticipantRadiusTrackerStepDesc",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xe8",
+    "FullSize": "0x148",
+    "InheritedSize": "0x148",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "WaitUntilAnyParticipantEntersRadiusStep": {
     "Super": "ParticipantRadiusTrackerStepDesc",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xe8",
+    "FullSize": "0x148",
+    "InheritedSize": "0x148",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -2762,7 +3191,7 @@
     "Attributes": [
       {
         "Name": "LevelSequence",
-        "Type": "Class LevelSequence*",
+        "Type": "class LevelSequence*",
         "Size": "0x8",
         "Offset": "0x80"
       },
@@ -2773,56 +3202,56 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x4_DBG2D[0x4]",
+        "Name": "pad0x4_0YKNX[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x8c"
       },
       {
         "Name": "DockableBaseActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x90"
       },
       {
         "Name": "SequencerCutSceneActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xc0"
       },
       {
         "Name": "ActorToPossess",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xf0"
       },
       {
         "Name": "AdditionalPossessables",
-        "Type": "Struct QuestVariableArray",
+        "Type": "struct QuestVariableArray",
         "Size": "0x30",
         "Offset": "0x120"
       },
       {
         "Name": "ManuallySetInteractor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x150"
       },
       {
         "Name": "InteractingActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x180"
       },
       {
         "Name": "PossessableName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x1b0"
       },
       {
         "Name": "DialogueData",
-        "Type": "Class SceneDialogueData*",
+        "Type": "class SceneDialogueData*",
         "Size": "0x8",
         "Offset": "0x1c0"
       },
@@ -2845,7 +3274,7 @@
         "Offset": "0x1d9"
       },
       {
-        "Name": "pad0x2_DSCLE[0x2]",
+        "Name": "pad0x2_PNQ5A[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x1da"
@@ -2858,7 +3287,7 @@
       },
       {
         "Name": "FemaleLevelSequence",
-        "Type": "Class LevelSequence*",
+        "Type": "class LevelSequence*",
         "Size": "0x8",
         "Offset": "0x1e0"
       }
@@ -2872,31 +3301,31 @@
     "Attributes": [
       {
         "Name": "LevelSequenceToPlay",
-        "Type": "Class LevelSequence*",
+        "Type": "class LevelSequence*",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "TargetActorToSpawn",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x88"
       },
       {
         "Name": "LevelSequenceActorSpawnLocation",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xb8"
       },
       {
         "Name": "DockableBaseActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xe8"
       },
       {
         "Name": "InteractingActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x118"
       },
@@ -2913,14 +3342,14 @@
         "Offset": "0x149"
       },
       {
-        "Name": "pad0x6_K6KQV[0x6]",
+        "Name": "pad0x6_1I6GY[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x14a"
       },
       {
         "Name": "DialogueData",
-        "Type": "Class SceneDialogueData*",
+        "Type": "class SceneDialogueData*",
         "Size": "0x8",
         "Offset": "0x150"
       },
@@ -2937,7 +3366,7 @@
         "Offset": "0x168"
       },
       {
-        "Name": "pad0x3_5J9EB[0x3]",
+        "Name": "pad0x3_WRPF8[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x169"
@@ -2950,7 +3379,7 @@
       },
       {
         "Name": "FemaleLevelSequenceToPlay",
-        "Type": "Class LevelSequence*",
+        "Type": "class LevelSequence*",
         "Size": "0x8",
         "Offset": "0x170"
       }
@@ -2964,7 +3393,7 @@
     "Attributes": [
       {
         "Name": "TargetActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -2978,13 +3407,13 @@
     "Attributes": [
       {
         "Name": "ActorToProvoke",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "DamageType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xb0"
       },
@@ -3001,7 +3430,7 @@
         "Offset": "0xbc"
       },
       {
-        "Name": "pad0x3_HEYUY[0x3]",
+        "Name": "pad0x3_VQBFV[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xbd"
@@ -3034,7 +3463,7 @@
         "Offset": "0x84"
       },
       {
-        "Name": "pad0x3_IEP40[0x3]",
+        "Name": "pad0x3_QXST3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x85"
@@ -3047,7 +3476,7 @@
       },
       {
         "Name": "Location",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0x90"
       }
@@ -3067,7 +3496,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x20_RPRYR[0x20]",
+        "Name": "pad0x20_1OV9G[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x80"
@@ -3091,14 +3520,14 @@
         "Offset": "0xac"
       },
       {
-        "Name": "pad0x3_5L79A[0x3]",
+        "Name": "pad0x3_BSTL7[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xad"
       },
       {
         "Name": "Point",
-        "Type": "Struct QuestVariableOrientedPoint",
+        "Type": "struct QuestVariableOrientedPoint",
         "Size": "0x30",
         "Offset": "0xb0"
       }
@@ -3118,7 +3547,27 @@
       },
       {
         "Name": "Value",
-        "Type": "Struct QuestVariableLinkEQSContext",
+        "Type": "struct QuestVariableLinkEQSContext",
+        "Size": "0x30",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "SetReplenishableContentSelectorStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "ContentTypeSelector",
+        "Type": "class StorageContainerContentTypeSelector*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "ReplenishableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x88"
       }
@@ -3132,7 +3581,7 @@
     "Attributes": [
       {
         "Name": "LayerAsset",
-        "Type": "Class LayerActorsDataAsset*",
+        "Type": "class LayerActorsDataAsset*",
         "Size": "0x8",
         "Offset": "0x80"
       },
@@ -3143,20 +3592,20 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_02PID[0x7]",
+        "Name": "pad0x7_R11P7[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
       },
       {
         "Name": "ActorWithLayers",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x90"
       },
       {
         "Name": "SpawnedActors",
-        "Type": "TArray<struct SpawnedActors>",
+        "Type": "TArray<struct QuestVariableActor>",
         "Size": "0x10",
         "Offset": "0xc0"
       }
@@ -3169,7 +3618,7 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x20_3WLLQ[0x20]",
+        "Name": "pad0x20_TF9AU[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x80"
@@ -3181,20 +3630,20 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x7_SXBI6[0x7]",
+        "Name": "pad0x7_Z7NSR[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xa1"
       },
       {
         "Name": "CriticalActorLostMessage",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0xa8"
       },
       {
         "Name": "ActorVar",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xe0"
       }
@@ -3208,7 +3657,7 @@
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "Struct QuestVariableTransform",
+        "Type": "struct QuestVariableTransform",
         "Size": "0x38",
         "Offset": "0x110"
       }
@@ -3233,14 +3682,14 @@
         "Offset": "0x81"
       },
       {
-        "Name": "pad0x6_8D93P[0x6]",
+        "Name": "pad0x6_Z2W5H[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x82"
       },
       {
         "Name": "CriticalActorLostMessage",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x88"
       },
@@ -3252,25 +3701,25 @@
       },
       {
         "Name": "Item",
-        "Type": "Struct QuestVariableItemDescType",
+        "Type": "struct QuestVariableItemDescType",
         "Size": "0x30",
         "Offset": "0xc8"
       },
       {
         "Name": "LocatorVar",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xf8"
       },
       {
         "Name": "LocatorPoint",
-        "Type": "Struct QuestVariableOrientedPoint",
+        "Type": "struct QuestVariableOrientedPoint",
         "Size": "0x30",
         "Offset": "0x128"
       },
       {
         "Name": "SpawnedItemVar",
-        "Type": "Struct QuestVariableItemInfo",
+        "Type": "struct QuestVariableItemInfo",
         "Size": "0x30",
         "Offset": "0x158"
       }
@@ -3284,13 +3733,13 @@
     "Attributes": [
       {
         "Name": "SplinePathingActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "IsActivated",
-        "Type": "Struct QuestVariableBool",
+        "Type": "struct QuestVariableBool",
         "Size": "0x30",
         "Offset": "0xb0"
       }
@@ -3304,13 +3753,13 @@
     "Attributes": [
       {
         "Name": "SplinePathingActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "ActorToManipulate",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xb0"
       }
@@ -3344,7 +3793,7 @@
       },
       {
         "Name": "PlayerToWieldImmediately",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x90"
       }
@@ -3358,13 +3807,13 @@
     "Attributes": [
       {
         "Name": "QuestBookDesc",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "RemapperClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x88"
       }
@@ -3405,7 +3854,7 @@
     "Attributes": [
       {
         "Name": "Result",
-        "Type": "Struct QuestVariableBool",
+        "Type": "struct QuestVariableBool",
         "Size": "0x30",
         "Offset": "0x90"
       }
@@ -3459,7 +3908,7 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct QuestVariableGuid",
+        "Type": "struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -3473,25 +3922,25 @@
     "Attributes": [
       {
         "Name": "IslandsToChooseFrom",
-        "Type": "Struct QuestVariableNameArray",
+        "Type": "struct QuestVariableNameArray",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "DifficultyRank",
-        "Type": "Struct QuestVariableInt",
+        "Type": "struct QuestVariableInt",
         "Size": "0x30",
         "Offset": "0xb0"
       },
       {
         "Name": "ChosenIsland",
-        "Type": "Struct QuestVariableName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0xe0"
       },
       {
         "Name": "IslandTypeWeights",
-        "Type": "Class IslandTypeWeightsDataAsset*",
+        "Type": "class IslandTypeWeightsDataAsset*",
         "Size": "0x8",
         "Offset": "0x110"
       }
@@ -3505,7 +3954,7 @@
     "Attributes": [
       {
         "Name": "TargetActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -3524,7 +3973,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x7_8CPEX[0x7]",
+        "Name": "pad0x7_J3BIJ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x81"
@@ -3539,7 +3988,7 @@
     "Attributes": [
       {
         "Name": "TargetActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -3553,24 +4002,24 @@
     "Attributes": [
       {
         "Name": "EnumVar",
-        "Type": "Struct QuestVariable",
+        "Type": "struct QuestVariable",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "Enum",
-        "Type": "Class Enum*",
+        "Type": "class Enum*",
         "Size": "0x8",
         "Offset": "0xb0"
       },
       {
         "Name": "DefaultBranch",
-        "Type": "Class TaleQuestStepDesc*",
+        "Type": "class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x50_NR9SY[0x50]",
+        "Name": "pad0x50_9K9XQ[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0xc0"
@@ -3585,18 +4034,18 @@
     "Attributes": [
       {
         "Name": "Dispatcher",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "EventType",
-        "Type": "Struct NativeAndUserDefinedStructSelector",
+        "Type": "struct NativeAndUserDefinedStructSelector",
         "Size": "0x8",
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x50_10Q2G[0x50]",
+        "Name": "pad0x50_K67ZO[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x90"
@@ -3631,7 +4080,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x8_G50UQ[0x8]",
+        "Name": "pad0x8_M4VF5[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x80"
@@ -3644,7 +4093,7 @@
       },
       {
         "Name": "Body",
-        "Type": "Class TaleQuestStepDesc*",
+        "Type": "class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x90"
       },
@@ -3691,7 +4140,7 @@
     "Attributes": [
       {
         "Name": "InputArray",
-        "Type": "Struct QuestVariableArray",
+        "Type": "struct QuestVariableArray",
         "Size": "0x30",
         "Offset": "0x80"
       },
@@ -3702,14 +4151,14 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x4_0SEWT[0x4]",
+        "Name": "pad0x4_959LT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xb4"
       },
       {
         "Name": "OutputEntry",
-        "Type": "Struct QuestVariableAny",
+        "Type": "struct QuestVariableAny",
         "Size": "0x30",
         "Offset": "0xb8"
       }
@@ -3723,15 +4172,47 @@
     "Attributes": [
       {
         "Name": "Collection",
-        "Type": "Struct QuestVariableCollection",
+        "Type": "struct QuestVariableCollection",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "Num",
-        "Type": "Struct QuestVariableInt",
+        "Type": "struct QuestVariableInt",
         "Size": "0x30",
         "Offset": "0xb0"
+      }
+    ]
+  },
+  "TaleQuestGetGlobalDigSpotDataStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "DigSpotIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x4_779KG[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "OutputItemSpawnData",
+        "Type": "struct QuestVariableItemSpawnDataType",
+        "Size": "0x30",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "OutputOrientedPoint",
+        "Type": "struct QuestVariableOrientedPoint",
+        "Size": "0x30",
+        "Offset": "0xb8"
       }
     ]
   },
@@ -3743,13 +4224,13 @@
     "Attributes": [
       {
         "Name": "CrewIds",
-        "Type": "Struct QuestVariableGuidArray",
+        "Type": "struct QuestVariableGuidArray",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "Location",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0xb0"
       },
@@ -3760,7 +4241,7 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x4_0WIC5[0x4]",
+        "Name": "pad0x4_SSGZO[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xe4"
@@ -3775,7 +4256,7 @@
     "Attributes": [
       {
         "Name": "CrewIds",
-        "Type": "Struct QuestVariableGuidArray",
+        "Type": "struct QuestVariableGuidArray",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -3789,19 +4270,19 @@
     "Attributes": [
       {
         "Name": "RewardId",
-        "Type": "Struct RewardId",
+        "Type": "struct RewardId",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "Company",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x88"
       },
       {
         "Name": "Id",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x90"
       },
@@ -3812,14 +4293,14 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x7_MBFRU[0x7]",
+        "Name": "pad0x7_72U3O[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xa1"
       },
       {
         "Name": "SpecificPlayerToAward",
-        "Type": "Struct QuestVariablePlayerActor",
+        "Type": "struct QuestVariablePlayerActor",
         "Size": "0x30",
         "Offset": "0xa8"
       },
@@ -3839,7 +4320,7 @@
     "Attributes": [
       {
         "Name": "ObstacleCourseActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -3853,7 +4334,7 @@
     "Attributes": [
       {
         "Name": "Prompt",
-        "Type": "Struct QuestVariablePrioritisedPrompt",
+        "Type": "struct QuestVariablePrioritisedPrompt",
         "Size": "0x30",
         "Offset": "0x80"
       },
@@ -3864,7 +4345,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x7_ZT989[0x7]",
+        "Name": "pad0x7_9C3AM[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xb1"
@@ -3900,13 +4381,13 @@
     "Attributes": [
       {
         "Name": "FromVar",
-        "Type": "Struct QuestVariable",
+        "Type": "struct QuestVariable",
         "Size": "0x30",
         "Offset": "0xe8"
       },
       {
         "Name": "ToVar",
-        "Type": "Struct QuestVariable",
+        "Type": "struct QuestVariable",
         "Size": "0x30",
         "Offset": "0x118"
       }
@@ -4122,6 +4603,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TaleQuestPredicatedBranchPhasingFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TaleQuestQueryableStateAddToIntFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
     "FullSize": "0x180",
@@ -4171,6 +4659,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TaleQuestShipInteractionHandlerFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TaleQuestSpawnShipFunctionLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
     "FullSize": "0x180",
@@ -4186,12 +4681,12 @@
     "Attributes": [
       {
         "Name": "Stat",
-        "Type": "Struct PlayerStat",
+        "Type": "struct PlayerStat",
         "Size": "0x4",
         "Offset": "0x180"
       },
       {
-        "Name": "pad0x4_FPC7B[0x4]",
+        "Name": "pad0x4_EJK0A[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x184"
@@ -4219,25 +4714,25 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_LTKT0[0x8]",
+        "Name": "pad0x8_07PNN[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x180"
       },
       {
         "Name": "Active",
-        "Type": "Class TaleQuestStepDesc*",
+        "Type": "class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x188"
       },
       {
         "Name": "Inactive",
-        "Type": "Class TaleQuestStepDesc*",
+        "Type": "class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x190"
       },
       {
-        "Name": "pad0x30_YSSBS[0x30]",
+        "Name": "pad0x30_H75GD[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x198"
@@ -4301,27 +4796,47 @@
     "Attributes": [
       {
         "Name": "SelectionStrategy",
-        "Type": "Class TaleQuestArrayEntrySelectionStrategy*",
+        "Type": "class TaleQuestArrayEntrySelectionStrategy*",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "InputArray",
-        "Type": "Struct QuestVariableArray",
+        "Type": "struct QuestVariableArray",
         "Size": "0x30",
         "Offset": "0x88"
       },
       {
         "Name": "OutputEntry",
-        "Type": "Struct QuestVariableAny",
+        "Type": "struct QuestVariableAny",
         "Size": "0x30",
         "Offset": "0xb8"
       },
       {
         "Name": "OutputEntryIndex",
-        "Type": "Struct QuestVariableInt",
+        "Type": "struct QuestVariableInt",
         "Size": "0x30",
         "Offset": "0xe8"
+      }
+    ]
+  },
+  "TaleQuestSetDigSpotVoyageStatusStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "VoyageStatus",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x7_YXW6A[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x81"
       }
     ]
   },
@@ -4345,7 +4860,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_V3TD9[0x4]",
+        "Name": "pad0x4_KAADS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
@@ -4360,7 +4875,7 @@
     "Attributes": [
       {
         "Name": "StarFieldPuzzleActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -4374,7 +4889,7 @@
     "Attributes": [
       {
         "Name": "StarFieldPuzzleActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -4388,7 +4903,7 @@
     "Attributes": [
       {
         "Name": "StarFieldPuzzleActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -4420,7 +4935,7 @@
       },
       {
         "Name": "FadeColour",
-        "Type": "Struct LinearColor",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x8c"
       },
@@ -4437,7 +4952,7 @@
         "Offset": "0x9d"
       },
       {
-        "Name": "pad0x2_YTH7E[0x2]",
+        "Name": "pad0x2_54SCY[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x9e"
@@ -4452,7 +4967,7 @@
     "Attributes": [
       {
         "Name": "Prompt",
-        "Type": "Struct QuestVariablePrioritisedPrompt",
+        "Type": "struct QuestVariablePrioritisedPrompt",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -4466,12 +4981,12 @@
     "Attributes": [
       {
         "Name": "Struct",
-        "Type": "Class ScriptStruct*",
+        "Type": "class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x50_U4RJE[0x50]",
+        "Name": "pad0x50_9KP2J[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x88"
@@ -4500,7 +5015,7 @@
     "Attributes": [
       {
         "Name": "Task",
-        "Type": "Class TaleQuestStepDesc*",
+        "Type": "class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x80"
       }
@@ -4521,7 +5036,7 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct QuestVariableGuid",
+        "Type": "struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0x88"
       }
@@ -4547,7 +5062,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x7_7TX6A[0x7]",
+        "Name": "pad0x7_EKHBK[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x81"
@@ -4562,19 +5077,19 @@
     "Attributes": [
       {
         "Name": "HandInActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "SpecificItem",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xb0"
       },
       {
         "Name": "HandInItem",
-        "Type": "Struct QuestVariableItemDescType",
+        "Type": "struct QuestVariableItemDescType",
         "Size": "0x30",
         "Offset": "0xb8"
       }
@@ -4588,7 +5103,7 @@
     "Attributes": [
       {
         "Name": "CutsceneResponseCoordinator",
-        "Type": "Struct QuestVariableUObject",
+        "Type": "struct QuestVariableUObject",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -4602,13 +5117,13 @@
     "Attributes": [
       {
         "Name": "ResultsArray",
-        "Type": "Struct QuestVariableArray",
+        "Type": "struct QuestVariableArray",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "SelectedResult",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0xb0"
       }
@@ -4622,13 +5137,13 @@
     "Attributes": [
       {
         "Name": "ActorOfInterestId",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "ActorOfInterestUnregisteredFailureMessage",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x88"
       }
@@ -4642,13 +5157,13 @@
     "Attributes": [
       {
         "Name": "DockerActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "DockableTargetActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xb0"
       }
@@ -4662,7 +5177,7 @@
     "Attributes": [
       {
         "Name": "GameEvent",
-        "Type": "Struct QuestVariableGameEvent",
+        "Type": "struct QuestVariableGameEvent",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -4676,7 +5191,7 @@
     "Attributes": [
       {
         "Name": "HealthOwner",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x80"
       },
@@ -4687,7 +5202,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x4_7A0I0[0x4]",
+        "Name": "pad0x4_3P0OM[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x8c"
@@ -4702,13 +5217,13 @@
     "Attributes": [
       {
         "Name": "Item",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "PickerUpper",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xb0"
       }
@@ -4722,7 +5237,7 @@
     "Attributes": [
       {
         "Name": "DataID",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x80"
       }
@@ -4741,7 +5256,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_3A1FA[0x7]",
+        "Name": "pad0x7_22CZF[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
@@ -4767,7 +5282,7 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x3_EDIAI[0x3]",
+        "Name": "pad0x3_KZUTJ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x8d"
@@ -4782,7 +5297,7 @@
     "Attributes": [
       {
         "Name": "AISpawner",
-        "Type": "Struct QuestVariableAISpawner",
+        "Type": "struct QuestVariableAISpawner",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -4795,19 +5310,19 @@
     "ClassSize": "0x198",
     "Attributes": [
       {
-        "Name": "pad0x78_CN31S[0x78]",
+        "Name": "pad0x78_C2V76[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0x98"
       },
       {
         "Name": "CachedSelectorService",
-        "Type": "Class TaleQuestSelectorService*",
+        "Type": "class TaleQuestSelectorService*",
         "Size": "0x8",
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x118_RRMXN[0x118]",
+        "Name": "pad0x118_U8E13[0x118]",
         "Type": "char",
         "Size": "0x118",
         "Offset": "0x118"
@@ -4822,25 +5337,25 @@
     "Attributes": [
       {
         "Name": "SelectionStrategy",
-        "Type": "Class TaleQuestArrayEntrySelectionStrategy*",
+        "Type": "class TaleQuestArrayEntrySelectionStrategy*",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "InputArray",
-        "Type": "Struct QuestVariableVectorArray",
+        "Type": "struct QuestVariableVectorArray",
         "Size": "0x30",
         "Offset": "0x88"
       },
       {
         "Name": "OutputEntry",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0xb8"
       },
       {
         "Name": "ShuffleLists",
-        "Type": "Struct QuestVariableBool",
+        "Type": "struct QuestVariableBool",
         "Size": "0x30",
         "Offset": "0xe8"
       }
@@ -4868,7 +5383,7 @@
     "Attributes": [
       {
         "Name": "RewardIdToAward",
-        "Type": "Struct RewardId",
+        "Type": "struct RewardId",
         "Size": "0x8",
         "Offset": "0x80"
       },
@@ -4899,14 +5414,14 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x7_GP4DU[0x7]",
+        "Name": "pad0x7_X5UNJ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x81"
       },
       {
         "Name": "LanternItemCategory",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x88"
       }
@@ -4920,12 +5435,12 @@
     "Attributes": [
       {
         "Name": "ServiceDesc",
-        "Type": "Class TaleQuestFlameOfFateServiceDesc*",
+        "Type": "class TaleQuestFlameOfFateServiceDesc*",
         "Size": "0x8",
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x58_QZGCT[0x58]",
+        "Name": "pad0x58_9A8R3[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x68"
@@ -4940,7 +5455,7 @@
     "Attributes": [
       {
         "Name": "LanternItemCategory",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x28"
       },
@@ -4957,7 +5472,7 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x6_N9FZX[0x6]",
+        "Name": "pad0x6_FPBMO[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x32"
@@ -4978,50 +5493,50 @@
     "ClassSize": "0x108",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "IslandName",
-        "Type": "Struct QuestVariableName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0x88"
       },
       {
         "Name": "Location",
-        "Type": "Struct QuestVariableText",
+        "Type": "struct QuestVariableText",
         "Size": "0x30",
         "Offset": "0xb8"
       },
       {
         "Name": "Description",
-        "Type": "Struct QuestVariableTextArray",
+        "Type": "struct QuestVariableTextArray",
         "Size": "0x30",
         "Offset": "0xe8"
       },
       {
         "Name": "CaptainTargets",
-        "Type": "Struct QuestVariableBountyTargetArray",
+        "Type": "struct QuestVariableBountyTargetArray",
         "Size": "0x30",
         "Offset": "0x118"
       },
       {
         "Name": "CrewTargets",
-        "Type": "Struct QuestVariableBountyTargetArray",
+        "Type": "struct QuestVariableBountyTargetArray",
         "Size": "0x30",
         "Offset": "0x148"
       },
       {
         "Name": "CustomLayout",
-        "Type": "Class BountyMapLayout*",
+        "Type": "class BountyMapLayout*",
         "Size": "0x8",
         "Offset": "0x178"
       },
       {
         "Name": "OverrideTreasureMapItemDesc",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x180"
       }
@@ -5081,7 +5596,14 @@
     "FullSize": "0x110",
     "InheritedSize": "0x60",
     "ClassSize": "0xb0",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xb0_SMDOM[0xb0]",
+        "Type": "char",
+        "Size": "0xb0",
+        "Offset": "0x60"
+      }
+    ]
   },
   "TaleQuestMapServiceDesc": {
     "Super": "TaleQuestServiceDesc",
@@ -5097,32 +5619,32 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "IslandName",
-        "Type": "Struct QuestVariableName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0x88"
       },
       {
         "Name": "NumItems",
-        "Type": "Struct QuestVariableInt",
+        "Type": "struct QuestVariableInt",
         "Size": "0x30",
         "Offset": "0xb8"
       },
       {
         "Name": "NPCId",
-        "Type": "Struct QuestVariableGuid",
+        "Type": "struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0xe8"
       },
       {
         "Name": "Layout",
-        "Type": "Class CargoRunMapLayout*",
+        "Type": "class CargoRunMapLayout*",
         "Size": "0x8",
         "Offset": "0x118"
       }
@@ -5135,38 +5657,38 @@
     "ClassSize": "0x120",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "Title",
-        "Type": "Struct QuestVariableText",
+        "Type": "struct QuestVariableText",
         "Size": "0x30",
         "Offset": "0xa8"
       },
       {
         "Name": "Description",
-        "Type": "Struct QuestVariableText",
+        "Type": "struct QuestVariableText",
         "Size": "0x30",
         "Offset": "0xd8"
       },
       {
         "Name": "ChecklistItemsData",
-        "Type": "Struct QuestVariableDataAsset",
+        "Type": "struct QuestVariableDataAsset",
         "Size": "0x30",
         "Offset": "0x108"
       },
       {
         "Name": "Afternote",
-        "Type": "Struct QuestVariableText",
+        "Type": "struct QuestVariableText",
         "Size": "0x30",
         "Offset": "0x138"
       },
       {
         "Name": "Layout",
-        "Type": "Struct QuestVariableDataAsset",
+        "Type": "struct QuestVariableDataAsset",
         "Size": "0x30",
         "Offset": "0x168"
       },
@@ -5177,7 +5699,7 @@
         "Offset": "0x198"
       },
       {
-        "Name": "pad0x7_YQ0X8[0x7]",
+        "Name": "pad0x7_0NJ05[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x199"
@@ -5191,20 +5713,20 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "IslandName",
-        "Type": "Struct QuestVariableName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0x88"
       },
       {
         "Name": "Location",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0xb8"
       },
@@ -5221,7 +5743,7 @@
         "Offset": "0xec"
       },
       {
-        "Name": "pad0x3_DRC29[0x3]",
+        "Name": "pad0x3_ZIELL[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xed"
@@ -5235,38 +5757,38 @@
     "ClassSize": "0xd0",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "IslandName",
-        "Type": "Struct QuestVariableName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0x88"
       },
       {
         "Name": "DeliveryLocation",
-        "Type": "Struct QuestVariableText",
+        "Type": "struct QuestVariableText",
         "Size": "0x30",
         "Offset": "0xb8"
       },
       {
         "Name": "DeliverByTime",
-        "Type": "Struct QuestVariableText",
+        "Type": "struct QuestVariableText",
         "Size": "0x30",
         "Offset": "0xe8"
       },
       {
         "Name": "Items",
-        "Type": "Struct QuestVariableMerchantItemArray",
+        "Type": "struct QuestVariableMerchantItemArray",
         "Size": "0x30",
         "Offset": "0x118"
       },
       {
         "Name": "Layout",
-        "Type": "Class MerchantMapLayout*",
+        "Type": "class MerchantMapLayout*",
         "Size": "0x8",
         "Offset": "0x148"
       }
@@ -5279,14 +5801,14 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "IslandName",
-        "Type": "Struct QuestVariableName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0x88"
       }
@@ -5314,7 +5836,7 @@
     "Attributes": [
       {
         "Name": "TextVariable",
-        "Type": "Struct QuestVariableTextArray",
+        "Type": "struct QuestVariableTextArray",
         "Size": "0x30",
         "Offset": "0xb8"
       }
@@ -5327,32 +5849,32 @@
     "ClassSize": "0xc8",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "IslandName",
-        "Type": "Struct QuestVariableName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0x88"
       },
       {
         "Name": "Location",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0xb8"
       },
       {
         "Name": "IsUnderground",
-        "Type": "Struct QuestVariableBool",
+        "Type": "struct QuestVariableBool",
         "Size": "0x30",
         "Offset": "0xe8"
       },
       {
         "Name": "TreasureMapOverride",
-        "Type": "Struct TaleQuestVariableTreasureMapItemDescType",
+        "Type": "struct TaleQuestVariableTreasureMapItemDescType",
         "Size": "0x30",
         "Offset": "0x118"
       }
@@ -5365,7 +5887,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
@@ -5380,7 +5902,7 @@
     "Attributes": [
       {
         "Name": "StepDesc",
-        "Type": "Class TaleQuestRemoveMapStepDesc*",
+        "Type": "class TaleQuestRemoveMapStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       }
@@ -5393,14 +5915,14 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "Location",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0x88"
       }
@@ -5414,7 +5936,7 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Class TaleQuestUpdateMerchantMapStepDesc*",
+        "Type": "class TaleQuestUpdateMerchantMapStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       }
@@ -5427,20 +5949,20 @@
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "Item",
-        "Type": "Struct QuestVariableMerchantItem",
+        "Type": "struct QuestVariableMerchantItem",
         "Size": "0x30",
         "Offset": "0x88"
       },
       {
         "Name": "Index",
-        "Type": "Struct QuestVariableInt",
+        "Type": "struct QuestVariableInt",
         "Size": "0x30",
         "Offset": "0xb8"
       }
@@ -5453,7 +5975,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "MapId",
+        "Name": "MapID",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"

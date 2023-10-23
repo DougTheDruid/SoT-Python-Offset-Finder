@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 class AudioReportReaction: public Object
 {
 public:
+	char                                                         pad0x8_1JV50[0x8];                                 // 0x28(0x8)
 };
 
 
@@ -17,8 +18,8 @@ public:
 class AudioReportingComponent: public ActorComponent
 {
 public:
-	Class PlayerController*                                      CachedOwningController;                            // 0xc8(0x8)
-	char                                                         pad0x170_TZZ1X[0x170];                             // 0xd0(0x170)
+	class PlayerController*                                      CachedOwningController;                            // 0xc8(0x8)
+	char                                                         pad0x170_AV3NP[0x170];                             // 0xd0(0x170)
 };
 
 
@@ -26,7 +27,7 @@ public:
 class AudioReportingConfig: public DeveloperSettings
 {
 public:
-	Struct StringAssetReference                                  AudioReportingSettings;                            // 0x38(0x10)
+	struct StringAssetReference                                  AudioReportingSettings;                            // 0x38(0x10)
 };
 
 
@@ -41,7 +42,7 @@ public:
 class EventReactionsDataAsset: public DataAsset
 {
 public:
-	TArray<struct Reactions>                                     Reactions;                                         // 0x28(0x10)
+	TArray<struct EventReactionDesc>                             Reactions;                                         // 0x28(0x10)
 };
 
 
@@ -52,7 +53,7 @@ public:
 	int                                                          MaxReactionCount;                                  // 0x28(0x4)
 	float                                                        AudioVeryCloseThresholdDistance;                   // 0x2c(0x4)
 	float                                                        AttenuationFilterScaler;                           // 0x30(0x4)
-	char                                                         pad0x4_YOINW[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_U34VM[0x4];                                 // 0x34(0x4)
 	TArray<class EventReactionsDataAsset*>                       EventReactionDataAssets;                           // 0x38(0x10)
 };
 

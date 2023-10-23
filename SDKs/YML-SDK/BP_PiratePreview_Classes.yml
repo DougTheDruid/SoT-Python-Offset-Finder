@@ -5,96 +5,96 @@ BP_PiratePreview_C:
   - Name: UberGraphFrame
     Offset: '0x810'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: Camera_Behind
     Offset: '0x818'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Camera_SideViewLeft
     Offset: '0x820'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Camera_SideView
     Offset: '0x828'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Camera_ProfileImage
     Offset: '0x830'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Head_old
     Offset: '0x838'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Camera_Hat
     Offset: '0x840'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Camera_Gloves
     Offset: '0x848'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Camera_Boots
     Offset: '0x850'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Camera_PegLeg
     Offset: '0x858'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Camera_Hook
     Offset: '0x860'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Camera_Glove
     Offset: '0x868'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Camera_Torso
     Offset: '0x870'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Camera_Mid
     Offset: '0x878'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Camera_Legs
     Offset: '0x880'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Camera_Feet
     Offset: '0x888'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Camera_Head
     Offset: '0x890'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: Camera_Default
     Offset: '0x898'
     Size: '0x8'
-    Type: Class ArrowComponent*
+    Type: class ArrowComponent*
   - Name: ChildActor
     Offset: '0x8a0'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: HiddenDftMesh
     Offset: '0x8a8'
     Size: '0x8'
-    Type: Class SkeletalMeshComponent*
+    Type: class SkeletalMeshComponent*
   - Name: PirateMesh
     Offset: '0x8b0'
     Size: '0x8'
-    Type: Class SkeletalMeshComponent*
+    Type: class SkeletalMeshComponent*
   - Name: Camera
     Offset: '0x8b8'
     Size: '0x8'
-    Type: Class CameraComponent*
+    Type: class CameraComponent*
   - Name: DefaultSceneRoot
     Offset: '0x8c0'
     Size: '0x8'
-    Type: Class SceneComponent*
-  - Name: pad0x30_PEFI1[0x30]
+    Type: class SceneComponent*
+  - Name: pad0x30_UXSL2[0x30]
     Offset: '0x8c8'
     Size: '0x30'
     Type: char

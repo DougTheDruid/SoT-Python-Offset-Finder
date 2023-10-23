@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 AthenaMediaPlayer:
   Attributes:
-  - Name: pad0x8_Z18ZB[0x8]
+  - Name: pad0x8_U0Q9W[0x8]
     Offset: '0x170'
     Size: '0x8'
     Type: char
   - Name: SoundComponent
     Offset: '0x178'
     Size: '0x8'
-    Type: Class WwiseMediaSoundComponent*
+    Type: class WwiseMediaSoundComponent*
   - Name: SubtitleComponent
     Offset: '0x180'
     Size: '0x8'
-    Type: Class MediaSubtitleComponent*
-  - Name: pad0x8_WOSAZ[0x8]
+    Type: class MediaSubtitleComponent*
+  - Name: pad0x8_1OSA7[0x8]
     Offset: '0x188'
     Size: '0x8'
     Type: char

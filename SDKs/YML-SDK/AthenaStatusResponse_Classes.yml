@@ -5,7 +5,7 @@ StatusResponseApplyOneShotStatus:
   - Name: StatusToApply
     Offset: '0x30'
     Size: '0x18'
-    Type: Struct Status
+    Type: struct Status
   ClassSize: '0x18'
   FullSize: '0x48'
   InheritedSize: '0x30'
@@ -15,12 +15,12 @@ StatusResponseApplyPersistentStatus:
   - Name: StatusToApply
     Offset: '0x30'
     Size: '0x18'
-    Type: Struct Status
+    Type: struct Status
   - Name: DurationMultiplier
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_TNLEX[0x4]
+  - Name: pad0x4_BQLN3[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -50,7 +50,7 @@ StatusResponseHealthRegenerationPoolChange:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_KCJJT[0x4]
+  - Name: pad0x4_4545Y[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -63,7 +63,7 @@ StatusResponseReportNoiseEvent:
   - Name: NoiseInstigator
     Offset: '0x30'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: NoiseTag
     Offset: '0x38'
     Size: '0x8'
@@ -80,7 +80,7 @@ StatusResponseReportNoiseEvent:
     Offset: '0x48'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_4SCZ8[0x3]
+  - Name: pad0x3_KUYMW[0x3]
     Offset: '0x49'
     Size: '0x3'
     Type: char
@@ -88,7 +88,7 @@ StatusResponseReportNoiseEvent:
     Offset: '0x4c'
     Size: '0x4'
     Type: float
-  - Name: pad0x20_ZA1NU[0x20]
+  - Name: pad0x20_XHFJI[0x20]
     Offset: '0x50'
     Size: '0x20'
     Type: char
@@ -101,7 +101,7 @@ StatusResponseSetScalarParamOnCharacter:
   - Name: ParamsToChange
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<struct ParamsToChange>
+    Type: TArray<struct ScalarParamInfo>
   ClassSize: '0x10'
   FullSize: '0x40'
   InheritedSize: '0x30'

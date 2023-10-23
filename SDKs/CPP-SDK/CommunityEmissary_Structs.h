@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 struct CommunityFlagGradeData
 {
 public:
-	Struct StoryFlag                                             Story;                                             // 0x0(0x8)
-	Class StaticMesh*                                            StaticMesh;                                        // 0x8(0x8)
-	Class MaterialInterface*                                     Material;                                          // 0x10(0x8)
+	struct StoryFlag                                             Story;                                             // 0x0(0x8)
+	class StaticMesh*                                            StaticMesh;                                        // 0x8(0x8)
+	class MaterialInterface*                                     Material;                                          // 0x10(0x8)
 };
 
 

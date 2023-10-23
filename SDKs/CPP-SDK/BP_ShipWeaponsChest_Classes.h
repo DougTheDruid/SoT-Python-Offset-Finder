@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_ShipWeaponsChest_C: public PossessionsChest
 {
 public:
-	Class CrewLockableComponent*                                 CrewLockableComponent;                             // 0x5a0(0x8)
-	Class StaticMeshComponent*                                   LockMesh;                                          // 0x5a8(0x8)
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x5b0(0x8)
+	class CrewLockableComponent*                                 CrewLockableComponent;                             // 0x5a0(0x8)
+	class StaticMeshComponent*                                   LockMesh;                                          // 0x5a8(0x8)
+	class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x5b0(0x8)
 };
 
 

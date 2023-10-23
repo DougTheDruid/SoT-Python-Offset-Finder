@@ -5,7 +5,7 @@ BP_FlyingCreature_C:
   - Name: DefaultSceneRoot
     Offset: '0x420'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   - Name: CreatureType
     Offset: '0x428'
     Size: '0x1'
@@ -14,7 +14,7 @@ BP_FlyingCreature_C:
     Offset: '0x429'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_IW0O1[0x2]
+  - Name: pad0x2_LR4BA[0x2]
     Offset: '0x42a'
     Size: '0x2'
     Type: char
@@ -25,11 +25,11 @@ BP_FlyingCreature_C:
   - Name: StaticMeshComponent
     Offset: '0x430'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: currMaterial
     Offset: '0x438'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
   - Name: MaterialInstance
     Offset: '0x440'
     Size: '0x10'
@@ -50,7 +50,7 @@ BP_FlyingCreature_C:
     Offset: '0x45c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_23NX6[0x3]
+  - Name: pad0x3_G95MD[0x3]
     Offset: '0x45d'
     Size: '0x3'
     Type: char
@@ -73,7 +73,7 @@ BP_FlyingCreature_C:
   - Name: FlockingSpread
     Offset: '0x470'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: FlockingHeight
     Offset: '0x478'
     Size: '0x4'
@@ -85,7 +85,7 @@ BP_FlyingCreature_C:
   - Name: BirdSpread
     Offset: '0x480'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: BirdHeight
     Offset: '0x488'
     Size: '0x4'
@@ -106,7 +106,7 @@ BP_FlyingCreature_C:
     Offset: '0x498'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_RDSYO[0x4]
+  - Name: pad0x4_ZCDZA[0x4]
     Offset: '0x49c'
     Size: '0x4'
     Type: char
@@ -133,7 +133,7 @@ BP_FlyingCreature_C:
   - Name: BBox
     Offset: '0x4cc'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: Skellygull_01
     Offset: '0x4d8'
     Size: '0x10'
@@ -150,7 +150,7 @@ BP_FlyingCreature_C:
     Offset: '0x508'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_91SUZ[0x3]
+  - Name: pad0x3_E3GBD[0x3]
     Offset: '0x509'
     Size: '0x3'
     Type: char
@@ -166,7 +166,7 @@ BP_FlyingCreature_C:
     Offset: '0x514'
     Size: '0x4'
     Type: float
-  - Name: ForceHibernation
+  - Name: forceHibernation
     Offset: '0x518'
     Size: '0x4'
     Type: float
@@ -174,23 +174,23 @@ BP_FlyingCreature_C:
     Offset: '0x51c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_X34AE[0x3]
+  - Name: pad0x3_CJ8WI[0x3]
     Offset: '0x51d'
     Size: '0x3'
     Type: char
   - Name: HibernateBoundsExtension
     Offset: '0x520'
     Size: '0xc'
-    Type: Struct Vector
-  - Name: hibernationStartTime
+    Type: struct Vector
+  - Name: HibernationStartTime
     Offset: '0x52c'
     Size: '0x4'
     Type: float
-  - Name: hibernationEndTime
+  - Name: HibernationEndTime
     Offset: '0x530'
     Size: '0x4'
     Type: float
-  - Name: HibernationTransitionTime
+  - Name: hibernationTransitionTime
     Offset: '0x534'
     Size: '0x4'
     Type: float

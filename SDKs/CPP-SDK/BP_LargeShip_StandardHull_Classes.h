@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_LargeShip_StandardHull_C: public Hull
 {
 public:
-	Class StaticMeshComponent*                                   Occluder;                                          // 0x3f0(0x8)
-	Class ChildActorComponent*                                   Damage;                                            // 0x3f8(0x8)
-	Class ChildActorComponent*                                   Art;                                               // 0x400(0x8)
+	class StaticMeshComponent*                                   Occluder;                                          // 0x3f0(0x8)
+	class ChildActorComponent*                                   Damage;                                            // 0x3f8(0x8)
+	class ChildActorComponent*                                   Art;                                               // 0x400(0x8)
 };
 
 

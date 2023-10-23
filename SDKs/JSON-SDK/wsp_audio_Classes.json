@@ -12,20 +12,20 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x4_T0QD9[0x4]",
+        "Name": "pad0x4_1PVGG[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3d4"
       },
       {
         "Name": "WSP_Audio_2D_Emitter",
-        "Type": "Struct WwiseEmitter",
+        "Type": "struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x3d8"
       },
       {
         "Name": "TimeInterface",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x3f8"
       }

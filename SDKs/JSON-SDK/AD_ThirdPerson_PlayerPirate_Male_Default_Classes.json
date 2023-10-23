@@ -7,169 +7,169 @@
     "Attributes": [
       {
         "Name": "Idles",
-        "Type": "Struct ADS_IdlesNative",
+        "Type": "struct ADS_IdlesNative",
         "Size": "0x10",
         "Offset": "0x90"
       },
       {
         "Name": "Locomotion",
-        "Type": "Struct ADS_LocomotionNative",
+        "Type": "struct ADS_LocomotionNative",
         "Size": "0x50",
         "Offset": "0xa0"
       },
       {
         "Name": "LocomotionAlternate",
-        "Type": "Struct ADS_LocomotionAlternateNative",
+        "Type": "struct ADS_LocomotionAlternateNative",
         "Size": "0x140",
         "Offset": "0xf0"
       },
       {
         "Name": "Jumping",
-        "Type": "Struct ADS_JumpingNative",
+        "Type": "struct ADS_JumpingNative",
         "Size": "0x78",
         "Offset": "0x230"
       },
       {
         "Name": "Swimming",
-        "Type": "Struct ADS_SwimmingNative",
+        "Type": "struct ADS_SwimmingNative",
         "Size": "0x68",
         "Offset": "0x2a8"
       },
       {
         "Name": "Wheel",
-        "Type": "Struct ADS_WheelNative",
+        "Type": "struct ADS_WheelNative",
         "Size": "0x88",
         "Offset": "0x310"
       },
       {
         "Name": "Capstan",
-        "Type": "Struct ADS_CapstanNative",
+        "Type": "struct ADS_CapstanNative",
         "Size": "0x68",
         "Offset": "0x398"
       },
       {
         "Name": "Ladder",
-        "Type": "Struct ADS_LadderNative",
+        "Type": "struct ADS_LadderNative",
         "Size": "0x68",
         "Offset": "0x400"
       },
       {
         "Name": "Items",
-        "Type": "Struct ADS_ObjectsNative",
+        "Type": "struct ADS_ObjectsNative",
         "Size": "0x10",
         "Offset": "0x468"
       },
       {
         "Name": "Cannon",
-        "Type": "Struct ADS_CannonNative",
+        "Type": "struct ADS_CannonNative",
         "Size": "0x38",
         "Offset": "0x478"
       },
       {
         "Name": "HarpoonLauncher",
-        "Type": "Struct ADS_HarpoonLauncherNative",
+        "Type": "struct ADS_HarpoonLauncherNative",
         "Size": "0x28",
         "Offset": "0x4b0"
       },
       {
         "Name": "Sockets",
-        "Type": "Struct ADS_Sockets",
+        "Type": "struct ADS_Sockets",
         "Size": "0x2",
         "Offset": "0x4d8"
       },
       {
-        "Name": "pad0x6_RA711[0x6]",
+        "Name": "pad0x6_I4H04[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x4da"
       },
       {
         "Name": "Facial",
-        "Type": "Struct ADS_FacialNative",
+        "Type": "struct ADS_FacialNative",
         "Size": "0x90",
         "Offset": "0x4e0"
       },
       {
         "Name": "IkFootPlanting",
-        "Type": "Struct ADS_IKFootPlantingNative",
+        "Type": "struct ADS_IKFootPlantingNative",
         "Size": "0x1c",
         "Offset": "0x570"
       },
       {
-        "Name": "pad0x4_IB5CT[0x4]",
+        "Name": "pad0x4_NKY7B[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x58c"
       },
       {
         "Name": "HitReacts",
-        "Type": "Struct ADS_HitReactsNative",
+        "Type": "struct ADS_HitReactsNative",
         "Size": "0x40",
         "Offset": "0x590"
       },
       {
         "Name": "MapTable",
-        "Type": "Struct ADS_MapTableNative",
+        "Type": "struct ADS_MapTableNative",
         "Size": "0x30",
         "Offset": "0x5d0"
       },
       {
         "Name": "Spawning",
-        "Type": "Struct ADS_SpawnNative2",
+        "Type": "struct ADS_SpawnNative2",
         "Size": "0x10",
         "Offset": "0x600"
       },
       {
         "Name": "CharacterSelect",
-        "Type": "Struct ADS_CharacterSelectNative",
+        "Type": "struct ADS_CharacterSelectNative",
         "Size": "0x10",
         "Offset": "0x610"
       },
       {
         "Name": "SkeletonFlee",
-        "Type": "Struct ADS_SkeletonFleeNative",
+        "Type": "struct ADS_SkeletonFleeNative",
         "Size": "0x10",
         "Offset": "0x620"
       },
       {
         "Name": "ShopInteraction",
-        "Type": "Struct ADS_InteractionNative",
+        "Type": "struct ADS_InteractionNative",
         "Size": "0x10",
         "Offset": "0x630"
       },
       {
         "Name": "SkeletonSensing",
-        "Type": "Struct ADS_SkeletonSensing",
+        "Type": "struct ADS_SkeletonSensing",
         "Size": "0x10",
         "Offset": "0x640"
       },
       {
         "Name": "SkeletonActionEmotes",
-        "Type": "Struct ADS_SkeletonEmoteActions",
+        "Type": "struct ADS_SkeletonEmoteActions",
         "Size": "0x10",
         "Offset": "0x650"
       },
       {
         "Name": "Rowboat",
-        "Type": "Struct ADS_RowingBoatNative",
+        "Type": "struct ADS_RowingBoatNative",
         "Size": "0x98",
         "Offset": "0x660"
       },
       {
         "Name": "SkeletonShipCaptain",
-        "Type": "Struct ADS_SkeletonCaptainNative",
+        "Type": "struct ADS_SkeletonCaptainNative",
         "Size": "0x48",
         "Offset": "0x6f8"
       },
       {
         "Name": "SkeletonCurse",
-        "Type": "Struct ADS_SkeletonCurseNative",
+        "Type": "struct ADS_SkeletonCurseNative",
         "Size": "0x28",
         "Offset": "0x740"
       },
       {
         "Name": "WaterPump",
-        "Type": "Struct ADS_WaterPumpNative",
+        "Type": "struct ADS_WaterPumpNative",
         "Size": "0x28",
         "Offset": "0x768"
       }

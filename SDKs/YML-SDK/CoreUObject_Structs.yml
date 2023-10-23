@@ -5,41 +5,49 @@ Box:
   - Name: Min
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: Max
     Offset: '0xc'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: IsValid
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_Z1W5F[0x3]
+    Offset: '0x19'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x1c'
 Box2D:
   Attributes:
   - Name: Min
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: Max
     Offset: '0x8'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: IsValid
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_QX3L8[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x14'
 BoxSphereBounds:
   Attributes:
   - Name: Origin
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: BoxExtent
     Offset: '0xc'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: SphereRadius
     Offset: '0x18'
     Size: '0x4'
@@ -65,13 +73,21 @@ Color:
     Type: byte
   ClassSize: '0x4'
 DateTime:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_V0RP1[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
 Default__ScriptStruct:
   Attributes: []
   ClassSize: '0x0'
 FallbackStruct:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_F0XND[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 FloatInterval:
   Attributes:
@@ -89,11 +105,11 @@ FloatRange:
   - Name: LowerBound
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct FloatRangeBound
+    Type: struct FloatRangeBound
   - Name: UpperBound
     Offset: '0x8'
     Size: '0x8'
-    Type: Struct FloatRangeBound
+    Type: struct FloatRangeBound
   ClassSize: '0x10'
 FloatRangeBound:
   Attributes:
@@ -101,7 +117,7 @@ FloatRangeBound:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_6A1XZ[0x3]
+  - Name: pad0x3_OZ95Z[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -145,11 +161,11 @@ Int32Range:
   - Name: LowerBound
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct Int32RangeBound
+    Type: struct Int32RangeBound
   - Name: UpperBound
     Offset: '0x8'
     Size: '0x8'
-    Type: Struct Int32RangeBound
+    Type: struct Int32RangeBound
   ClassSize: '0x10'
 Int32RangeBound:
   Attributes:
@@ -157,7 +173,7 @@ Int32RangeBound:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_XOTJS[0x3]
+  - Name: pad0x3_FD8UE[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -197,12 +213,12 @@ InterpCurveFloat:
   - Name: Points
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct Points>
+    Type: TArray<struct InterpCurvePointFloat>
   - Name: bIsLooped
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_Z4PCF[0x3]
+  - Name: pad0x3_G1BH7[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -216,12 +232,12 @@ InterpCurveLinearColor:
   - Name: Points
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct Points>
+    Type: TArray<struct InterpCurvePointLinearColor>
   - Name: bIsLooped
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_3N4D1[0x3]
+  - Name: pad0x3_HWCT3[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -252,6 +268,10 @@ InterpCurvePointFloat:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_PUW0R[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x14'
 InterpCurvePointLinearColor:
   Attributes:
@@ -262,19 +282,23 @@ InterpCurvePointLinearColor:
   - Name: OutVal
     Offset: '0x4'
     Size: '0x10'
-    Type: Struct LinearColor
+    Type: struct LinearColor
   - Name: ArriveTangent
     Offset: '0x14'
     Size: '0x10'
-    Type: Struct LinearColor
+    Type: struct LinearColor
   - Name: LeaveTangent
     Offset: '0x24'
     Size: '0x10'
-    Type: Struct LinearColor
+    Type: struct LinearColor
   - Name: InterpMode
     Offset: '0x34'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_RV99K[0x3]
+    Offset: '0x35'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x38'
 InterpCurvePointQuat:
   Attributes:
@@ -282,26 +306,30 @@ InterpCurvePointQuat:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_E11EH[0xc]
+  - Name: pad0xc_HS1GV[0xc]
     Offset: '0x4'
     Size: '0xc'
     Type: char
   - Name: OutVal
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct Quat
+    Type: struct Quat
   - Name: ArriveTangent
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct Quat
+    Type: struct Quat
   - Name: LeaveTangent
     Offset: '0x30'
     Size: '0x10'
-    Type: Struct Quat
+    Type: struct Quat
   - Name: InterpMode
     Offset: '0x40'
     Size: '0x1'
     Type: byte
+  - Name: pad0xf_CST9V[0xf]
+    Offset: '0x41'
+    Size: '0xf'
+    Type: char
   ClassSize: '0x50'
 InterpCurvePointTwoVectors:
   Attributes:
@@ -312,19 +340,23 @@ InterpCurvePointTwoVectors:
   - Name: OutVal
     Offset: '0x4'
     Size: '0x18'
-    Type: Struct TwoVectors
+    Type: struct TwoVectors
   - Name: ArriveTangent
     Offset: '0x1c'
     Size: '0x18'
-    Type: Struct TwoVectors
+    Type: struct TwoVectors
   - Name: LeaveTangent
     Offset: '0x34'
     Size: '0x18'
-    Type: Struct TwoVectors
+    Type: struct TwoVectors
   - Name: InterpMode
     Offset: '0x4c'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_LZTD5[0x3]
+    Offset: '0x4d'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x50'
 InterpCurvePointVector:
   Attributes:
@@ -335,19 +367,23 @@ InterpCurvePointVector:
   - Name: OutVal
     Offset: '0x4'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: ArriveTangent
     Offset: '0x10'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: LeaveTangent
     Offset: '0x1c'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: InterpMode
     Offset: '0x28'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_J5PY2[0x3]
+    Offset: '0x29'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x2c'
 InterpCurvePointVector2D:
   Attributes:
@@ -358,31 +394,35 @@ InterpCurvePointVector2D:
   - Name: OutVal
     Offset: '0x4'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: ArriveTangent
     Offset: '0xc'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: LeaveTangent
     Offset: '0x14'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: InterpMode
     Offset: '0x1c'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_I69NN[0x3]
+    Offset: '0x1d'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x20'
 InterpCurveQuat:
   Attributes:
   - Name: Points
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct Points>
+    Type: TArray<struct InterpCurvePointQuat>
   - Name: bIsLooped
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_JFRRM[0x3]
+  - Name: pad0x3_7PQVI[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -396,12 +436,12 @@ InterpCurveTwoVectors:
   - Name: Points
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct Points>
+    Type: TArray<struct InterpCurvePointTwoVectors>
   - Name: bIsLooped
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_WOOQ7[0x3]
+  - Name: pad0x3_T50VK[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -415,12 +455,12 @@ InterpCurveVector:
   - Name: Points
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct Points>
+    Type: TArray<struct InterpCurvePointVector>
   - Name: bIsLooped
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_G8VCG[0x3]
+  - Name: pad0x3_9E67H[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -434,12 +474,12 @@ InterpCurveVector2D:
   - Name: Points
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct Points>
+    Type: TArray<struct InterpCurvePointVector2D>
   - Name: bIsLooped
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_2F3HE[0x3]
+  - Name: pad0x3_QHNTI[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -472,38 +512,38 @@ Matrix:
   - Name: XPlane
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Plane
+    Type: struct Plane
   - Name: YPlane
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct Plane
+    Type: struct Plane
   - Name: ZPlane
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct Plane
+    Type: struct Plane
   - Name: WPlane
     Offset: '0x30'
     Size: '0x10'
-    Type: Struct Plane
+    Type: struct Plane
   ClassSize: '0x40'
 OrientedBox:
   Attributes:
   - Name: Center
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: AxisX
     Offset: '0xc'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: AxisY
     Offset: '0x18'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: AxisZ
     Offset: '0x24'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: ExtentX
     Offset: '0x30'
     Size: '0x4'
@@ -538,6 +578,10 @@ PackedNormal:
   ClassSize: '0x4'
 Plane:
   Attributes:
+  - Name: pad0xc_9ZGO1[0xc]
+    Offset: '0x0'
+    Size: '0xc'
+    Type: char
   - Name: W
     Offset: '0xc'
     Size: '0x4'
@@ -593,43 +637,55 @@ StringAssetReference:
   - Name: AssetLongPathname
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x10'
 StringClassReference:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_ZYVEG[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
 Timespan:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_ZCIAO[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
 Transform:
   Attributes:
   - Name: Rotation
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Quat
+    Type: struct Quat
   - Name: Translation
     Offset: '0x10'
     Size: '0xc'
-    Type: Struct Vector
-  - Name: pad0x4_E68NF[0x4]
+    Type: struct Vector
+  - Name: pad0x4_ALULH[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
   - Name: Scale3D
     Offset: '0x20'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
+  - Name: pad0x4_XU92Y[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x30'
 TwoVectors:
   Attributes:
   - Name: v1
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: v2
     Offset: '0xc'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   ClassSize: '0x18'
 Vector:
   Attributes:

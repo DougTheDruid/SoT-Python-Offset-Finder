@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class BP_CylinderLightingZone_C: public Actor
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
-	Class CapsuleComponent*                                      InnerCapsule;                                      // 0x3d0(0x8)
-	Class CapsuleComponent*                                      OuterCapsule;                                      // 0x3d8(0x8)
-	Class LightingZoneComponent*                                 LightingZone;                                      // 0x3e0(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e8(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
+	class CapsuleComponent*                                      InnerCapsule;                                      // 0x3d0(0x8)
+	class CapsuleComponent*                                      OuterCapsule;                                      // 0x3d8(0x8)
+	class LightingZoneComponent*                                 LightingZone;                                      // 0x3e0(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e8(0x8)
 	float                                                        Outer Radius;                                      // 0x3f0(0x4)
 	float                                                        Outer Half Height;                                 // 0x3f4(0x4)
 	float                                                        Inner Radius;                                      // 0x3f8(0x4)

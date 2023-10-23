@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_TunnelOfTheDamnedPortal_Ship_C: public TunnelOfTheDamnedPortal
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x660(0x8)
-	Class SynchedMusicZoneComponent*                             SynchedMusicZone;                                  // 0x668(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x660(0x8)
+	class SynchedMusicZoneComponent*                             SynchedMusicZone;                                  // 0x668(0x8)
 };
 
 

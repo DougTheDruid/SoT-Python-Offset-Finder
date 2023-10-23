@@ -10,7 +10,8 @@ namespace DougsSDKDumper
 struct EnemyAIOnShipActiveEncounters
 {
 public:
-	Class Actor*                                                 Ship;                                              // 0x0(0x8)
+	class Actor*                                                 Ship;                                              // 0x0(0x8)
+	char                                                         pad0x10_6DDSW[0x10];                               // 0x8(0x10)
 };
 
 

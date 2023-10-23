@@ -11,6 +11,7 @@ struct CycleFlameOfFateSequence
 {
 public:
 	TArray<Byte FlameTypeSequence>                               FlameTypeSequence;                                 // 0x0(0x10)
+	char                                                         pad0x8_SNLOK[0x8];                                 // 0x10(0x8)
 };
 
 
@@ -27,9 +28,10 @@ public:
 struct PlayerTookFlameOfFateEvent
 {
 public:
-	Class Character*                                             PlayerCharacter;                                   // 0x0(0x8)
-	Class Object*                                                Source;                                            // 0x8(0x8)
+	class Character*                                             PlayerCharacter;                                   // 0x0(0x8)
+	class Object*                                                Source;                                            // 0x8(0x8)
 	byte                                                         FlameOfFateType;                                   // 0x10(0x1)
+	char                                                         pad0x7_BGQWI[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -37,9 +39,10 @@ public:
 struct PlayerSetFlameOfFateEvent
 {
 public:
-	Class Character*                                             PlayerCharacter;                                   // 0x0(0x8)
-	Class Object*                                                Target;                                            // 0x8(0x8)
+	class Character*                                             PlayerCharacter;                                   // 0x0(0x8)
+	class Object*                                                Target;                                            // 0x8(0x8)
 	byte                                                         FlameOfFateType;                                   // 0x10(0x1)
+	char                                                         pad0x7_MDW51[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -48,9 +51,9 @@ struct SetShipFlameOfFateEvent
 {
 public:
 	byte                                                         FlameOfFateType;                                   // 0x0(0x1)
-	char                                                         pad0x7_VQEIX[0x7];                                 // 0x1(0x7)
-	Class Object*                                                Source;                                            // 0x8(0x8)
-	Class Object*                                                Ship;                                              // 0x10(0x8)
+	char                                                         pad0x7_V8PXQ[0x7];                                 // 0x1(0x7)
+	class Object*                                                Source;                                            // 0x8(0x8)
+	class Object*                                                Ship;                                              // 0x10(0x8)
 };
 
 
@@ -59,8 +62,8 @@ struct SetFlameOfFateEvent
 {
 public:
 	byte                                                         FlameOfFateType;                                   // 0x0(0x1)
-	char                                                         pad0x7_KAC1M[0x7];                                 // 0x1(0x7)
-	Class Object*                                                Source;                                            // 0x8(0x8)
+	char                                                         pad0x7_3IQ6P[0x7];                                 // 0x1(0x7)
+	class Object*                                                Source;                                            // 0x8(0x8)
 };
 
 

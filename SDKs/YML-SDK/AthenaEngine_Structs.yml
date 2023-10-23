@@ -9,50 +9,62 @@ ActorComponentSelector:
   - Name: CachedComponent
     Offset: '0x8'
     Size: '0x8'
-    Type: Class ActorComponent*
+    Type: class ActorComponent*
   ClassSize: '0x10'
 AthenaAsyncAssetLoaderWrapper:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_CRPCX[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
 BoxedRpc:
   Attributes:
+  - Name: pad0x8_SLAK9[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Type
     Offset: '0x8'
     Size: '0x8'
-    Type: Class ScriptStruct*
+    Type: class ScriptStruct*
   ClassSize: '0x10'
 ConfigurableStructureInstanceWrapper:
   Attributes:
   - Name: Value
     Offset: '0x0'
     Size: '0x20'
-    Type: Struct UserDefinedStructWithSerialisableValue
+    Type: struct UserDefinedStructWithSerialisableValue
   ClassSize: '0x20'
 EventCancelForceFeedback:
   Attributes:
   - Name: ForceFeedbackEffect
     Offset: '0x0'
     Size: '0x8'
-    Type: Class ForceFeedbackEffect*
+    Type: class ForceFeedbackEffect*
   - Name: Tag
     Offset: '0x8'
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x10'
 EventMeshAssigned:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_AD9JQ[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EventTriggerForceFeedback:
   Attributes:
   - Name: ForceFeedbackEffect
     Offset: '0x0'
     Size: '0x8'
-    Type: Class ForceFeedbackEffect*
+    Type: class ForceFeedbackEffect*
   - Name: Looping
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_1ZAQ6[0x3]
+  - Name: pad0x3_IBQ4J[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -60,20 +72,24 @@ EventTriggerForceFeedback:
     Offset: '0xc'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x4_JQMOG[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
 InlineUserDefinedStructDetails:
   Attributes:
   - Name: Struct
     Offset: '0x0'
     Size: '0x8'
-    Type: Class ScriptStruct*
+    Type: class ScriptStruct*
   ClassSize: '0x8'
 NativeAndUserDefinedStructSelector:
   Attributes:
   - Name: Struct
     Offset: '0x0'
     Size: '0x8'
-    Type: Class ScriptStruct*
+    Type: class ScriptStruct*
   ClassSize: '0x8'
 PlayModeDefiniton:
   Attributes:
@@ -96,39 +112,51 @@ PlayModeDefiniton:
   ClassSize: '0x28'
 PlaySoundRpc:
   Attributes:
+  - Name: pad0x10_OQCOP[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   - Name: WwiseEvent
     Offset: '0x10'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: PlayOnTarget
     Offset: '0x18'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_FMKMP[0x7]
+    Offset: '0x19'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x20'
 SerialisedRpc:
   Attributes:
+  - Name: pad0x18_K0MZN[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: ContentsType
     Offset: '0x18'
     Size: '0x8'
-    Type: Class ScriptStruct*
+    Type: class ScriptStruct*
   ClassSize: '0x20'
 ServicesStampId:
   Attributes:
   - Name: StampId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x10'
 StringAssetClassPair:
   Attributes:
   - Name: String
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: FeatureOverrides
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<struct FeatureOverrides>
+    Type: TArray<struct StringAssetClassPairFeatureOverride>
   ClassSize: '0x40'
 StringAssetClassPairFeatureOverride:
   Attributes:
@@ -136,11 +164,19 @@ StringAssetClassPairFeatureOverride:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x20_VY0E1[0x20]
+    Offset: '0x8'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x28'
 UserDefinedStructWithSerialisableValue:
   Attributes:
   - Name: InternalStruct
     Offset: '0x0'
     Size: '0x8'
-    Type: Class ScriptStruct*
+    Type: class ScriptStruct*
+  - Name: pad0x18_6IIT1[0x18]
+    Offset: '0x8'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x20'

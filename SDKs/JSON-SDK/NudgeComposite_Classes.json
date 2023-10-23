@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "AcceptedDamagerTypes",
-        "Type": "TArray<struct AcceptedDamagerTypes>",
+        "Type": "TArray<struct NudgeChancePerDamagerType>",
         "Size": "0x10",
         "Offset": "0xc8"
       }
@@ -46,19 +46,19 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x4_G69V7[0x4]",
+        "Name": "pad0x4_MHU7Z[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xcc"
       },
       {
         "Name": "WeightedTimers",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x58_UCRVY[0x58]",
+        "Name": "pad0x58_ZPW5F[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x100"
@@ -78,7 +78,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x14_GV8AI[0x14]",
+        "Name": "pad0x14_E20GT[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0xcc"
@@ -96,7 +96,7 @@
         "Offset": "0xe4"
       },
       {
-        "Name": "pad0x8_IQ3G1[0x8]",
+        "Name": "pad0x8_FDLUD[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xe8"

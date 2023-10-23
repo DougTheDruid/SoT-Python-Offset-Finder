@@ -10,12 +10,12 @@ namespace DougsSDKDumper
 class BP_SecretChamberDoorManager_C: public Actor
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x3c8(0x8)
-	Class MechanismActionComponent*                              None;                                              // 0x3d0(0x8)
-	Class MechanismTriggerComponent*                             None;                                              // 0x3d8(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3e0(0x8)
-	BlueprintGeneratedClass None*                                None;                                              // 0x3e8(0x8)
-	bool                                                         None;                                              // 0x3f0(0x1)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
+	class MechanismActionComponent*                              MechanismAction;                                   // 0x3d0(0x8)
+	class MechanismTriggerComponent*                             MechanismTrigger;                                  // 0x3d8(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e0(0x8)
+	blueprintgeneratedclass bp_secret_chamber_door_Toggleable_Animated_Mechanism_C* ChamberDoor;                                       // 0x3e8(0x8)
+	bool                                                         ToggleActive;                                      // 0x3f0(0x1)
 };
 
 

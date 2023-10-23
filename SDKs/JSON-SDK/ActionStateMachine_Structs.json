@@ -1,22 +1,35 @@
 {
   "ActorActionStateConstructionInfo": {
     "ClassSize": "0x30",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x30_H2S9N[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ActionStateConstructionInfo": {
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "Id",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Type",
-        "Type": "Class ScriptStruct*",
+        "Type": "class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x18_HKI7U[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x10"
       }
     ]
   },
@@ -24,16 +37,28 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
+        "Name": "pad0x8_7OKLY[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Id",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "Type",
-        "Type": "Class ScriptStruct*",
+        "Type": "class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x18_XSPNK[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x18"
       }
     ]
   },
@@ -41,8 +66,14 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
+        "Name": "pad0x8_K7896[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Type",
-        "Type": "Class ScriptStruct*",
+        "Type": "class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -61,20 +92,40 @@
   },
   "SerialisedActionStateInfo": {
     "ClassSize": "0x40",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x40_CU9FR[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x0"
+      }
+    ]
   },
   "SerialisedActionStateMessage": {
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_Q0NRA[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
   },
   "SerialisedConstructionInfoStore": {
     "ClassSize": "0x140",
     "Attributes": [
       {
         "Name": "SerialisedConstructionInfo",
-        "Type": "Struct SerialisedActionStateInfo",
+        "Type": "struct SerialisedActionStateInfo",
         "Size": "0x40",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x100_B075Q[0x100]",
+        "Type": "char",
+        "Size": "0x100",
+        "Offset": "0x40"
       }
     ]
   },
@@ -83,31 +134,31 @@
     "Attributes": [
       {
         "Name": "LatestEpochIds",
-        "Type": "Struct ActionStateChangeRequestId",
+        "Type": "struct ActionStateChangeRequestId",
         "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_WATZ8[0x4]",
+        "Name": "pad0x4_OCCF1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1"
       },
       {
         "Name": "LatestRequestIds",
-        "Type": "Struct ActionStateChangeRequestId",
+        "Type": "struct ActionStateChangeRequestId",
         "Size": "0x1",
         "Offset": "0x5"
       },
       {
-        "Name": "pad0xa_A5M8B[0xa]",
+        "Name": "pad0xa_DGYRQ[0xa]",
         "Type": "char",
         "Size": "0xa",
         "Offset": "0x6"
       },
       {
         "Name": "PerTrackConstructionInfoStore",
-        "Type": "Struct SerialisedConstructionInfoStore",
+        "Type": "struct SerialisedConstructionInfoStore",
         "Size": "0x140",
         "Offset": "0x10"
       }
@@ -117,10 +168,22 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
+        "Name": "pad0x30_EGJ74[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
         "Name": "IntProp",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_XJAVL[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       }
     ]
   },
@@ -129,13 +192,13 @@
     "Attributes": [
       {
         "Name": "State",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Entries",
-        "Type": "TArray<struct Entries>",
+        "Type": "TArray<struct ActionStatePriorityRelationship>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -146,7 +209,7 @@
     "Attributes": [
       {
         "Name": "State",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -155,25 +218,44 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_LHHSH[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       }
     ]
   },
   "ActionStatePriorityTable": {
     "ClassSize": "0xa0",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xa0_018RO[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x0"
+      }
+    ]
   },
   "TestActionStateConstructionInfoWithObjPointers": {
     "ClassSize": "0x48",
     "Attributes": [
       {
+        "Name": "pad0x28_5SABB[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
         "Name": "ObjPointer",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "Inner",
-        "Type": "Struct InnerWithObjTestStruct",
+        "Type": "struct InnerWithObjTestStruct",
         "Size": "0x8",
         "Offset": "0x30"
       },
@@ -190,7 +272,7 @@
     "Attributes": [
       {
         "Name": "ObjPointer",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -200,20 +282,26 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
+        "Name": "pad0x28_FZVQ0[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
         "Name": "FloatProp",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_30C9I[0x4]",
+        "Name": "pad0x4_OWK7J[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
       },
       {
         "Name": "InnerStruct",
-        "Type": "Struct InnerTestStruct",
+        "Type": "struct InnerTestStruct",
         "Size": "0x18",
         "Offset": "0x30"
       }
@@ -229,14 +317,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_O4SZX[0x7]",
+        "Name": "pad0x7_H4KEK[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "StringProp",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -246,41 +334,100 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
+        "Name": "pad0x28_336FK[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
         "Name": "IntProp",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_H2C4C[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
       }
     ]
   },
   "EventWaitingToSpawnActionStateEndedClient": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_4XMRS[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventWaitingToSpawnActionStateStartedClient": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_R0T6K[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventFirstPersonAnimaticActionStateEndedClient": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_LSSFE[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "NullActionStateConstructionInfo": {
     "ClassSize": "0x30",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x30_7FBQN[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
   },
   "TestActionStateMessage2": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_9ZN07[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "TestActionStateMessage": {
     "ClassSize": "0x18",
     "Attributes": [
       {
+        "Name": "pad0x10_LQUZ1[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "TestProperty",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_7SKEA[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -288,10 +435,22 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
+        "Name": "pad0x30_OQ5L2[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
         "Name": "IntProp",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_DAQZV[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       }
     ]
   },

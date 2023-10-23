@@ -10,20 +10,20 @@ namespace DougsSDKDumper
 class WwiseAudioSettings: public Object
 {
 public:
-	char                                                         pad0xc0_ATWJB[0xc0];                               // 0x28(0xc0)
-	Struct WwisePlatformMappings                                 PlatformMappings;                                  // 0xe8(0x20)
-	Struct WwiseAudioReverbPresets                               ReverbPresetSettings;                              // 0x108(0x64)
-	char                                                         pad0x4_DMLW8[0x4];                                 // 0x16c(0x4)
-	Struct StringAssetReference                                  WwiseCoreAssetsPath;                               // 0x170(0x10)
-	Struct DirectoryPath                                         WwiseSoundbanksRoot;                               // 0x180(0x10)
-	Struct DirectoryPath                                         WwiseStreamedFilesRoot;                            // 0x190(0x10)
-	TArray<struct AsyncIOPriorityMappings>                       AsyncIOPriorityMappings;                           // 0x1a0(0x10)
-	Struct DirectoryPath                                         TritonAcousticMapsDirectory;                       // 0x1b0(0x10)
-	Struct FString                                               DefaultLanguage;                                   // 0x1c0(0x10)
-	Struct FString                                               SinkSharesetName;                                  // 0x1d0(0x10)
-	Struct WwiseNetworkRelationship                              NetworkRelationship;                               // 0x1e0(0x18)
-	Class WwiseCoreAssets*                                       WwiseCoreAssets;                                   // 0x200(0x8)
-	char                                                         pad0x58_W551V[0x58];                               // 0x208(0x58)
+	char                                                         pad0xc0_H897A[0xc0];                               // 0x28(0xc0)
+	struct WwisePlatformMappings                                 PlatformMappings;                                  // 0xe8(0x20)
+	struct WwiseAudioReverbPresets                               ReverbPresetSettings;                              // 0x108(0x64)
+	char                                                         pad0x4_NOTS0[0x4];                                 // 0x16c(0x4)
+	struct StringAssetReference                                  WwiseCoreAssetsPath;                               // 0x170(0x10)
+	struct DirectoryPath                                         WwiseSoundbanksRoot;                               // 0x180(0x10)
+	struct DirectoryPath                                         WwiseStreamedFilesRoot;                            // 0x190(0x10)
+	TArray<struct WwiseIOPriorityMappingConfig>                  AsyncIOPriorityMappings;                           // 0x1a0(0x10)
+	struct DirectoryPath                                         TritonAcousticMapsDirectory;                       // 0x1b0(0x10)
+	struct FString                                               DefaultLanguage;                                   // 0x1c0(0x10)
+	struct FString                                               SinkSharesetName;                                  // 0x1d0(0x10)
+	struct WwiseNetworkRelationship                              NetworkRelationship;                               // 0x1e0(0x18)
+	class WwiseCoreAssets*                                       WwiseCoreAssets;                                   // 0x200(0x8)
+	char                                                         pad0x58_TU58L[0x58];                               // 0x208(0x58)
 };
 
 

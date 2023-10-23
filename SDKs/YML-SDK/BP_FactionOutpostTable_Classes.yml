@@ -5,39 +5,39 @@ BP_FactionOutpostTable_C:
   - Name: VoteAudio
     Offset: '0x5f8'
     Size: '0x8'
-    Type: Class VoteAudioComponent*
+    Type: class VoteAudioComponent*
   - Name: StaticMeshVoteVisualiser
     Offset: '0x600'
     Size: '0x8'
-    Type: Class StaticMeshVoteVisualiserComponent*
+    Type: class StaticMeshVoteVisualiserComponent*
   - Name: InlineVotingInteraction
     Offset: '0x608'
     Size: '0x8'
-    Type: Class InlineVotingInteractionComponent*
+    Type: class InlineVotingInteractionComponent*
   - Name: ActionRules
     Offset: '0x610'
     Size: '0x8'
-    Type: Class ActionRulesComponent*
+    Type: class ActionRulesComponent*
   - Name: VoteIndicator4
     Offset: '0x618'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: VoteIndicator3
     Offset: '0x620'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: VoteIndicator2
     Offset: '0x628'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: VoteIndicator1
     Offset: '0x630'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: DefaultSceneRoot
     Offset: '0x638'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x48'
   FullSize: '0x640'
   InheritedSize: '0x5f8'

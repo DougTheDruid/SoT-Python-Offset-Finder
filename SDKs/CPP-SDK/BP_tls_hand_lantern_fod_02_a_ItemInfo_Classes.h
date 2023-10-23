@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_tls_hand_lantern_fod_02_a_ItemInfo_C: public ItemInfo
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x528(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x528(0x8)
 };
 
 

@@ -1,26 +1,33 @@
 {
   "WwiseEmitter": {
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x20_4FKZC[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
   },
   "WwiseEmitterCreationParams": {
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "Event",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "RTPCs",
-        "Type": "TArray<struct RTPCs>",
+        "Type": "TArray<struct WWiseEmitterCreationRTPCSetting>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "Switches",
-        "Type": "TArray<struct Switches>",
+        "Type": "TArray<struct WWiseEmitterCreationSwitchSetting>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -65,7 +72,7 @@
     "Attributes": [
       {
         "Name": "PlaybackDataArray",
-        "Type": "TArray<struct PlaybackDataArray>",
+        "Type": "TArray<struct StaticMeshWwiseEmitterData>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -82,18 +89,18 @@
     "Attributes": [
       {
         "Name": "Pool",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "LocalOriginOffset",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_S5ICT[0x4]",
+        "Name": "pad0x4_H3NRX[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -117,15 +124,21 @@
     "Attributes": [
       {
         "Name": "PlaybackData",
-        "Type": "Struct StaticMeshWwiseEmitterData",
+        "Type": "struct StaticMeshWwiseEmitterData",
         "Size": "0x38",
         "Offset": "0x0"
       },
       {
         "Name": "EmitterPositionRelativeToComponentOrigin",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x24_4MDR9[0x24]",
+        "Type": "char",
+        "Size": "0x24",
+        "Offset": "0x44"
       }
     ]
   },

@@ -5,7 +5,7 @@ wsp_bush_08_c_C:
   - Name: wsp_bush_08_c
     Offset: '0x408'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   ClassSize: '0x8'
   FullSize: '0x410'
   InheritedSize: '0x408'

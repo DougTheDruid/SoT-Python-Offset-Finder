@@ -13,7 +13,7 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0x90_AW7YA[0x90]",
+        "Name": "pad0x90_Z2Z94[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x28"
@@ -34,7 +34,7 @@
     "Attributes": [
       {
         "Name": "RegionData",
-        "Type": "TArray<struct RegionData>",
+        "Type": "TArray<struct RegionAssetsList>",
         "Size": "0x10",
         "Offset": "0x3c8"
       },
@@ -45,7 +45,7 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x20_XKI1H[0x20]",
+        "Name": "pad0x20_4S7NM[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3e8"

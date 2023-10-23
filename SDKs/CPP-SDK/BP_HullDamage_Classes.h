@@ -10,21 +10,21 @@ namespace DougsSDKDumper
 class BP_HullDamage_C: public HullDamage
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x5d0(0x8)
-	Class HitReactionComponent*                                  HitReaction;                                       // 0x5d8(0x8)
-	Class BakedDecalComponent*                                   ImpactDecalComponent;                              // 0x5e0(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x5d0(0x8)
+	class HitReactionComponent*                                  HitReaction;                                       // 0x5d8(0x8)
+	class BakedDecalComponent*                                   ImpactDecalComponent;                              // 0x5e0(0x8)
 	TArray<class Texture2D*>                                     Persistent Damage Decals;                          // 0x5e8(0x10)
-	Class ParticleSystem*                                        Damage VFX;                                        // 0x5f8(0x8)
+	class ParticleSystem*                                        Damage VFX;                                        // 0x5f8(0x8)
 	TArray<class MaterialInstance*>                              Deferred Damage Decals;                            // 0x600(0x10)
 	float                                                        Deferred Min Size;                                 // 0x610(0x4)
 	float                                                        Deferred Max Size;                                 // 0x614(0x4)
 	float                                                        Persistent Min Size;                               // 0x618(0x4)
 	float                                                        Persistent Max Size;                               // 0x61c(0x4)
-	Struct RandomStream                                          RandomDecalStream;                                 // 0x620(0x8)
+	struct RandomStream                                          RandomDecalStream;                                 // 0x620(0x8)
 	float                                                        TEST_HitStrength;                                  // 0x628(0x4)
 	float                                                        TEST_PenetrationThreshold;                         // 0x62c(0x4)
-	Class Ship*                                                  ParentShip;                                        // 0x630(0x8)
-	Struct WwiseEmitter                                          CannonballHitEmitter;                              // 0x638(0x20)
+	class Ship*                                                  ParentShip;                                        // 0x630(0x8)
+	struct WwiseEmitter                                          CannonballHitEmitter;                              // 0x638(0x20)
 };
 
 

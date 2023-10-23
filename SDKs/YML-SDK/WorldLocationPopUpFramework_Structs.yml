@@ -5,22 +5,22 @@ PlayerEnteredWorldLocationNotificationEvent:
   - Name: AudioOverride
     Offset: '0x0'
     Size: '0x8'
-    Type: Class PopUpAudioDesc*
+    Type: class PopUpAudioDesc*
   - Name: IconPath
     Offset: '0x8'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: DisplayText
     Offset: '0x18'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x28'
 TaleWorldLocationPopUpServiceEntry:
   Attributes:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: MaxDistance
     Offset: '0xc'
     Size: '0x4'

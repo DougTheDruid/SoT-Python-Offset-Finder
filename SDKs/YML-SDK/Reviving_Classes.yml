@@ -2,21 +2,21 @@
 # https://github.com/DougTheDruid
 DeathSelfInteractionComponent:
   Attributes:
-  - Name: pad0x8_PQLOS[0x8]
-    Offset: '0x128'
+  - Name: pad0x8_B0LHP[0x8]
+    Offset: '0x138'
     Size: '0x8'
     Type: char
   - Name: HasGivenUp
-    Offset: '0x130'
+    Offset: '0x140'
     Size: '0x1'
     Type: bool
-  - Name: pad0x47_84UHZ[0x47]
-    Offset: '0x131'
+  - Name: pad0x47_TFKKR[0x47]
+    Offset: '0x141'
     Size: '0x47'
     Type: char
   ClassSize: '0x50'
-  FullSize: '0x178'
-  InheritedSize: '0x128'
+  FullSize: '0x188'
+  InheritedSize: '0x138'
   Super: InteractableComponent
 PostReviveLocomotionActionStateId:
   Attributes: []
@@ -35,8 +35,8 @@ ReviveAudioComponent:
   - Name: ReviveEffectsDataAsset
     Offset: '0x310'
     Size: '0x8'
-    Type: Class ReviveEffectsDataAsset*
-  - Name: pad0x18_QM5R1[0x18]
+    Type: class ReviveEffectsDataAsset*
+  - Name: pad0x18_TMTT5[0x18]
     Offset: '0x318'
     Size: '0x18'
     Type: char
@@ -46,57 +46,57 @@ ReviveAudioComponent:
   Super: WwiseEmitterComponent
 ReviveComponent:
   Attributes:
-  - Name: pad0x10_IQQGW[0x10]
-    Offset: '0x128'
+  - Name: pad0x10_ZD9ZQ[0x10]
+    Offset: '0x138'
     Size: '0x10'
     Type: char
   - Name: OwningCharacter
-    Offset: '0x138'
-    Size: '0x8'
-    Type: Class Character*
-  - Name: ReviveableRepresentationActor
-    Offset: '0x140'
-    Size: '0x8'
-    Type: Class Actor*
-  - Name: ReviveState
     Offset: '0x148'
+    Size: '0x8'
+    Type: class Character*
+  - Name: ReviveableRepresentationActor
+    Offset: '0x150'
+    Size: '0x8'
+    Type: class Actor*
+  - Name: ReviveState
+    Offset: '0x158'
     Size: '0x1'
     Type: byte
   - Name: InteractionState
-    Offset: '0x149'
+    Offset: '0x159'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_XGIMX[0x6]
-    Offset: '0x14a'
+  - Name: pad0x6_XC5L9[0x6]
+    Offset: '0x15a'
     Size: '0x6'
     Type: char
   - Name: ReviveableRepresentationClass
-    Offset: '0x150'
+    Offset: '0x160'
     Size: '0x8'
-    Type: class
-  - Name: pad0xc_88MLS[0xc]
-    Offset: '0x158'
+    Type: class UClass*
+  - Name: pad0xc_U238Z[0xc]
+    Offset: '0x168'
     Size: '0xc'
     Type: char
   - Name: ReviveWindowIsOpen
-    Offset: '0x164'
+    Offset: '0x174'
     Size: '0x1'
     Type: bool
-  - Name: pad0xd3_YJUEK[0xd3]
-    Offset: '0x165'
+  - Name: pad0xd3_EUNIG[0xd3]
+    Offset: '0x175'
     Size: '0xd3'
     Type: char
   - Name: RevivableStatus
-    Offset: '0x238'
+    Offset: '0x248'
     Size: '0x18'
-    Type: Struct Status
-  - Name: pad0x18_U86KW[0x18]
-    Offset: '0x250'
+    Type: struct Status
+  - Name: pad0x18_3W2SU[0x18]
+    Offset: '0x260'
     Size: '0x18'
     Type: char
   ClassSize: '0x140'
-  FullSize: '0x268'
-  InheritedSize: '0x128'
+  FullSize: '0x278'
+  InheritedSize: '0x138'
   Super: InteractableComponent
 ReviveConditionalStatTrigger:
   Attributes: []
@@ -105,7 +105,11 @@ ReviveConditionalStatTrigger:
   InheritedSize: '0x30'
   Super: ConditionalStatsTriggerType
 ReviveDebugComponent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x98_FYRBZ[0x98]
+    Offset: '0xc8'
+    Size: '0x98'
+    Type: char
   ClassSize: '0x98'
   FullSize: '0x160'
   InheritedSize: '0xc8'
@@ -115,7 +119,7 @@ ReviveEffectsDataAsset:
   - Name: ReviveMaterialParameterCollection
     Offset: '0x28'
     Size: '0x8'
-    Type: Class MaterialParameterCollection*
+    Type: class MaterialParameterCollection*
   - Name: AstralCordReviveInProgressMaterialCollectionScalarParameterName
     Offset: '0x30'
     Size: '0x8'
@@ -131,11 +135,11 @@ ReviveEffectsDataAsset:
   - Name: AstralCordBorderParamValueByAbsoluteTimeSinceDeath
     Offset: '0x48'
     Size: '0x8'
-    Type: Class CurveFloat*
+    Type: class CurveFloat*
   - Name: ReviveePostProcessMaterial
     Offset: '0x50'
     Size: '0x8'
-    Type: Class Material*
+    Type: class Material*
   - Name: GhostShaderGhostEffectInterpolationValue
     Offset: '0x58'
     Size: '0x4'
@@ -147,15 +151,15 @@ ReviveEffectsDataAsset:
   - Name: ReviveSuccessfulOneShotVFX
     Offset: '0x60'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   - Name: ReviveSuccessfulOneShotVFX_Revivee
     Offset: '0x68'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   - Name: ReviveInProgressLoopingVFX
     Offset: '0x70'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   - Name: AstralCordReviveInProgressInterpolationSpeed
     Offset: '0x78'
     Size: '0x4'
@@ -167,7 +171,7 @@ ReviveEffectsDataAsset:
   - Name: ContinuousBodyLoopingVFX
     Offset: '0x80'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   - Name: AstralCordFadeInInterpolationSpeed
     Offset: '0x88'
     Size: '0x4'
@@ -187,38 +191,38 @@ ReviveEffectsDataAsset:
   - Name: DeadPlayerBodyEvaporatesOneShotVFX
     Offset: '0x98'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   - Name: OtherPlayers_ReviveGhostAmbientStart
     Offset: '0xa0'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: OtherPlayers_ReviveGhostAmbientStop
     Offset: '0xa8'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: DeadPlayer_ReviveInProgressStart
     Offset: '0xb0'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: DeadPlayer_ReviveInProgressStop
     Offset: '0xb8'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: OtherPlayers_ReviveInProgressStart
     Offset: '0xc0'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: OtherPlayers_ReviveInProgressStop
     Offset: '0xc8'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   ClassSize: '0xa8'
   FullSize: '0xd0'
   InheritedSize: '0x28'
   Super: DataAsset
 ReviveGhost:
   Attributes:
-  - Name: pad0x10_LFN6I[0x10]
+  - Name: pad0x10_LPX07[0x10]
     Offset: '0x3c8'
     Size: '0x10'
     Type: char
@@ -229,32 +233,32 @@ ReviveGhost:
   - Name: Root
     Offset: '0x3e8'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   - Name: MeshComponent
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class SkeletalMeshComponent*
+    Type: class SkeletalMeshComponent*
   - Name: AstralCordContainer
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   - Name: AnimationDataStoreComponent
     Offset: '0x400'
     Size: '0x8'
-    Type: Class AnimationDataStoreComponent*
+    Type: class AnimationDataStoreComponent*
   - Name: PostProcessComponent
     Offset: '0x408'
     Size: '0x8'
-    Type: Class PostProcessComponent*
+    Type: class PostProcessComponent*
   - Name: DitherComponent
     Offset: '0x410'
     Size: '0x8'
-    Type: Class DitherComponent*
+    Type: class DitherComponent*
   - Name: AudioComponent
     Offset: '0x418'
     Size: '0x8'
-    Type: Class ReviveAudioComponent*
-  - Name: pad0x10_VFLFY[0x10]
+    Type: class ReviveAudioComponent*
+  - Name: pad0x10_IXO0K[0x10]
     Offset: '0x420'
     Size: '0x10'
     Type: char
@@ -262,27 +266,27 @@ ReviveGhost:
     Offset: '0x430'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_FWD15[0x7]
+  - Name: pad0x7_T6SPX[0x7]
     Offset: '0x431'
     Size: '0x7'
     Type: char
   - Name: ReviveGhostDataAsset
     Offset: '0x438'
     Size: '0x8'
-    Type: Class GhostDataAsset*
+    Type: class GhostDataAsset*
   - Name: ReviveEffectsDataAsset
     Offset: '0x440'
     Size: '0x8'
-    Type: Class ReviveEffectsDataAsset*
+    Type: class ReviveEffectsDataAsset*
   - Name: ReviveEffectsValues
     Offset: '0x448'
     Size: '0x20'
-    Type: Struct ReviveEffectsValues
+    Type: struct ReviveEffectsValues
   - Name: ReviveSettings
     Offset: '0x468'
     Size: '0x38'
-    Type: Struct ModeSpecificReviveSettings
-  - Name: pad0x13c_KGZT3[0x13c]
+    Type: struct ModeSpecificReviveSettings
+  - Name: pad0x13c_SLYP3[0x13c]
     Offset: '0x4a0'
     Size: '0x13c'
     Type: char
@@ -293,8 +297,8 @@ ReviveGhost:
   - Name: GhostPlayModeSpecificParameters
     Offset: '0x618'
     Size: '0xc'
-    Type: Struct GhostPlayModeParameters
-  - Name: pad0x4_1QZ5U[0x4]
+    Type: struct GhostPlayModeParameters
+  - Name: pad0x4_7104W[0x4]
     Offset: '0x624'
     Size: '0x4'
     Type: char
@@ -327,12 +331,12 @@ ReviveSettings:
   - Name: FadeColour
     Offset: '0x40'
     Size: '0x10'
-    Type: Struct LinearColor
+    Type: struct LinearColor
   - Name: ShouldFadeAudio
     Offset: '0x50'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_3D3UJ[0x3]
+  - Name: pad0x3_VDJZ2[0x3]
     Offset: '0x51'
     Size: '0x3'
     Type: char
@@ -355,7 +359,7 @@ ReviveSettings:
   - Name: ModeSpecificSettings
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<struct ModeSpecificSettings>
+    Type: TArray<struct ModeSpecificReviveSettings>
   - Name: GiveUpHoldTime
     Offset: '0x80'
     Size: '0x4'
@@ -368,7 +372,7 @@ ReviveSettings:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_RZ42F[0x4]
+  - Name: pad0x4_NMU2Q[0x4]
     Offset: '0x8c'
     Size: '0x4'
     Type: char

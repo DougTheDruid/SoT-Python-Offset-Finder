@@ -11,11 +11,12 @@ struct LootLevelReward
 {
 public:
 	byte                                                         LootLevel;                                         // 0x0(0x1)
-	char                                                         pad0x3_D1LD2[0x3];                                 // 0x1(0x3)
-	Struct RewardId                                              RewardId;                                          // 0x4(0x8)
-	char                                                         pad0x4_FYP76[0x4];                                 // 0xc(0x4)
-	TArray<struct LootLevelPopUpMessageDesc>                     LootLevelPopUpMessageDesc;                         // 0x10(0x10)
+	char                                                         pad0x3_ZHU4J[0x3];                                 // 0x1(0x3)
+	struct RewardId                                              RewardId;                                          // 0x4(0x8)
+	char                                                         pad0x4_ZQB5I[0x4];                                 // 0xc(0x4)
+	TArray<struct FactionServicePopUpData>                       LootLevelPopUpMessageDesc;                         // 0x10(0x10)
 	int                                                          PopUpIndex;                                        // 0x20(0x4)
+	char                                                         pad0x4_C6ZVI[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -23,7 +24,8 @@ public:
 struct FactionRequest
 {
 public:
-	class                                                        Faction;                                           // 0x0(0x8)
+	class UClass*                                                Faction;                                           // 0x0(0x8)
+	char                                                         pad0x18_U67Q8[0x18];                               // 0x8(0x18)
 };
 
 
@@ -31,12 +33,12 @@ public:
 struct FactionDisplayInfo
 {
 public:
-	class                                                        Faction;                                           // 0x0(0x8)
-	Struct FText                                                 Title;                                             // 0x8(0x38)
-	Struct FText                                                 Description;                                       // 0x40(0x38)
-	Struct Vector2D                                              CardOffset;                                        // 0x78(0x8)
-	Struct StringAssetReference                                  KeyArt;                                            // 0x80(0x10)
-	Struct StringAssetReference                                  Icon;                                              // 0x90(0x10)
+	class UClass*                                                Faction;                                           // 0x0(0x8)
+	struct FText                                                 Title;                                             // 0x8(0x38)
+	struct FText                                                 Description;                                       // 0x40(0x38)
+	struct Vector2D                                              CardOffset;                                        // 0x78(0x8)
+	struct StringAssetReference                                  KeyArt;                                            // 0x80(0x10)
+	struct StringAssetReference                                  Icon;                                              // 0x90(0x10)
 };
 
 
@@ -54,6 +56,7 @@ public:
 struct KillStreakHideEvent
 {
 public:
+	char                                                         pad0x1_5JK32[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -61,6 +64,7 @@ public:
 struct KillStreakShowEvent
 {
 public:
+	char                                                         pad0x1_832CA[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -76,6 +80,7 @@ public:
 struct DeactivateKillStreakEvent
 {
 public:
+	char                                                         pad0x1_8DG0X[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -91,6 +96,7 @@ public:
 struct DeactivateKillStreakNetworkEvent
 {
 public:
+	char                                                         pad0x10_PTNFX[0x10];                               // 0x0(0x10)
 };
 
 
@@ -98,7 +104,9 @@ public:
 struct ActivateKillStreakNetworkEvent
 {
 public:
+	char                                                         pad0x10_ZW22T[0x10];                               // 0x0(0x10)
 	byte                                                         FactionId;                                         // 0x10(0x1)
+	char                                                         pad0x7_CLWP3[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -107,8 +115,8 @@ struct FactionShipSunkUIEvent
 {
 public:
 	byte                                                         OpponentFaction;                                   // 0x0(0x1)
-	char                                                         pad0x7_XPY69[0x7];                                 // 0x1(0x7)
-	Struct FString                                               ShipName;                                          // 0x8(0x10)
+	char                                                         pad0x7_M3N5S[0x7];                                 // 0x1(0x7)
+	struct FString                                               ShipName;                                          // 0x8(0x10)
 	int                                                          MyKillStreak;                                      // 0x18(0x4)
 	int                                                          TheirKillStreak;                                   // 0x1c(0x4)
 };
@@ -118,14 +126,16 @@ public:
 struct FactionShipSunkNetworkEvent
 {
 public:
+	char                                                         pad0x10_JK3AL[0x10];                               // 0x0(0x10)
 	byte                                                         OpponentFaction;                                   // 0x10(0x1)
-	char                                                         pad0x3_OX1L1[0x3];                                 // 0x11(0x3)
-	Struct Guid                                                  OpponentCrewId;                                    // 0x14(0x10)
+	char                                                         pad0x3_NCU4M[0x3];                                 // 0x11(0x3)
+	struct Guid                                                  OpponentCrewId;                                    // 0x14(0x10)
 	int                                                          MyKillStreak;                                      // 0x24(0x4)
 	int                                                          TheirKillStreak;                                   // 0x28(0x4)
 	int                                                          SandsOfFateBefore;                                 // 0x2c(0x4)
 	int                                                          SandsOfFateAfter;                                  // 0x30(0x4)
 	bool                                                         IsIntraFactionBattle;                              // 0x34(0x1)
+	char                                                         pad0x3_SE8SH[0x3];                                 // 0x35(0x3)
 };
 
 
@@ -133,7 +143,8 @@ public:
 struct FactionPopupEvent
 {
 public:
-	Class DataAsset*                                             PopUpDesc;                                         // 0x10(0x8)
+	char                                                         pad0x10_YR28W[0x10];                               // 0x0(0x10)
+	class DataAsset*                                             PopUpDesc;                                         // 0x10(0x8)
 };
 
 
@@ -141,8 +152,9 @@ public:
 struct StreakMesh
 {
 public:
-	Class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
+	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
 	byte                                                         PartType;                                          // 0x8(0x1)
+	char                                                         pad0x7_V4SHQ[0x7];                                 // 0x9(0x7)
 };
 
 
@@ -150,8 +162,9 @@ public:
 struct StreakMaterial
 {
 public:
-	Class MaterialInstance*                                      Material;                                          // 0x0(0x8)
+	class MaterialInstance*                                      Material;                                          // 0x0(0x8)
 	byte                                                         PartType;                                          // 0x8(0x1)
+	char                                                         pad0x7_LC4EW[0x7];                                 // 0x9(0x7)
 };
 
 
@@ -159,8 +172,8 @@ public:
 struct CinematicFactionEvent
 {
 public:
-	class                                                        Company;                                           // 0x0(0x8)
-	Struct CinematicQuestEvent                                   CinematicData;                                     // 0x8(0x80)
+	class UClass*                                                Company;                                           // 0x0(0x8)
+	struct CinematicQuestEvent                                   CinematicData;                                     // 0x8(0x80)
 };
 
 
@@ -168,8 +181,9 @@ public:
 struct FactionStreakData
 {
 public:
-	class                                                        Faction;                                           // 0x0(0x8)
+	class UClass*                                                Faction;                                           // 0x0(0x8)
 	int                                                          StreakLevel;                                       // 0x8(0x4)
+	char                                                         pad0x4_F0D5U[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -177,7 +191,7 @@ public:
 struct StreakDynamicMaterials
 {
 public:
-	class                                                        Company;                                           // 0x0(0x8)
+	class UClass*                                                Company;                                           // 0x0(0x8)
 	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x8(0x10)
 };
 
@@ -186,8 +200,8 @@ public:
 struct StreakCompanyMaterials
 {
 public:
-	class                                                        Company;                                           // 0x0(0x8)
-	TArray<struct Materials>                                     Materials;                                         // 0x8(0x10)
+	class UClass*                                                Company;                                           // 0x0(0x8)
+	TArray<struct StreakMaterial>                                Materials;                                         // 0x8(0x10)
 };
 
 
@@ -204,7 +218,7 @@ public:
 struct FactionBlockedTaleVoteConsensusReached
 {
 public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
 };
 
 
@@ -212,7 +226,7 @@ public:
 struct FactionBlockedTaleVoteAdded
 {
 public:
-	Class Actor*                                                 Voter;                                             // 0x0(0x8)
+	class Actor*                                                 Voter;                                             // 0x0(0x8)
 };
 
 
@@ -220,9 +234,10 @@ public:
 struct FactionVoteAdded
 {
 public:
-	Class Actor*                                                 Voter;                                             // 0x0(0x8)
-	Struct Guid                                                  CrewId;                                            // 0x8(0x10)
+	class Actor*                                                 Voter;                                             // 0x0(0x8)
+	struct Guid                                                  CrewId;                                            // 0x8(0x10)
 	bool                                                         VotePassed;                                        // 0x18(0x1)
+	char                                                         pad0x7_U9V67[0x7];                                 // 0x19(0x7)
 };
 
 
@@ -230,6 +245,7 @@ public:
 struct EventLocalPlayerApproachedHourglass
 {
 public:
+	char                                                         pad0x1_526ID[0x1];                                 // 0x0(0x1)
 };
 
 

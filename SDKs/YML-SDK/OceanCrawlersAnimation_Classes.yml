@@ -5,37 +5,37 @@ OceanCrawlerAnimationData:
   - Name: OceanCrawlerAnimationDataStructure
     Offset: '0x28'
     Size: '0x90'
-    Type: Struct OceanCrawlerAnimationDataStructure
+    Type: struct OceanCrawlerAnimationDataStructure
   ClassSize: '0x90'
   FullSize: '0xb8'
   InheritedSize: '0x28'
   Super: AnimationData
 OceanCrawlerAnimationInstance:
   Attributes:
-  - Name: pad0x18_3OBYH[0x18]
+  - Name: pad0x18_M3YTE[0x18]
     Offset: '0x440'
     Size: '0x18'
     Type: char
   - Name: LoadedAnimations
     Offset: '0x458'
     Size: '0x90'
-    Type: Struct OceanCrawlerAnimationDataStructure
+    Type: struct OceanCrawlerAnimationDataStructure
   - Name: MovementData
     Offset: '0x4e8'
     Size: '0x18'
-    Type: Struct ActorVelocityData
+    Type: struct ActorVelocityData
   - Name: CurrentDirection
     Offset: '0x500'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_MV3AH[0x4]
+  - Name: pad0x4_6T4M0[0x4]
     Offset: '0x504'
     Size: '0x4'
     Type: char
   - Name: AttackAnims
     Offset: '0x508'
     Size: '0xb8'
-    Type: Struct AthenaAnimationWeapon
+    Type: struct AthenaAnimationWeapon
   - Name: UseDefaultAnimations
     Offset: '0x5c0'
     Size: '0x1'
@@ -48,7 +48,7 @@ OceanCrawlerAnimationInstance:
     Offset: '0x5c2'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_LEA8J[0x1]
+  - Name: pad0x1_6ZOL1[0x1]
     Offset: '0x5c3'
     Size: '0x1'
     Type: char
@@ -56,19 +56,19 @@ OceanCrawlerAnimationInstance:
     Offset: '0x5c4'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_X2S7X[0x4]
+  - Name: pad0x4_CH561[0x4]
     Offset: '0x5cc'
     Size: '0x4'
     Type: char
   - Name: MontagePlayer
     Offset: '0x5d0'
     Size: '0xd8'
-    Type: Struct CustomAnimationMontageStateMachine
+    Type: struct CustomAnimationMontageStateMachine
   - Name: HitReacts
     Offset: '0x6a8'
     Size: '0x28'
-    Type: Struct HitReactionAnimationState
-  - Name: pad0x50_9QNUT[0x50]
+    Type: struct HitReactionAnimationState
+  - Name: pad0x50_D884U[0x50]
     Offset: '0x6d0'
     Size: '0x50'
     Type: char
@@ -78,14 +78,14 @@ OceanCrawlerAnimationInstance:
   Super: AnimInstance
 OceanCrawlerAnimationServerData:
   Attributes:
-  - Name: pad0x8_BTMQ7[0x8]
+  - Name: pad0x8_8YG86[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
   - Name: AnimInstanceType
     Offset: '0x30'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: MaxSpawnAnimDuration
     Offset: '0x38'
     Size: '0x4'
@@ -98,7 +98,7 @@ OceanCrawlerAnimationServerData:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_380LU[0x4]
+  - Name: pad0x4_NCY6V[0x4]
     Offset: '0x44'
     Size: '0x4'
     Type: char

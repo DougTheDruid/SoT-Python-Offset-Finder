@@ -26,7 +26,7 @@ ComplexItemQualityEntry:
     Offset: '0x5'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_L4B37[0x2]
+  - Name: pad0x2_OATL9[0x2]
     Offset: '0x6'
     Size: '0x2'
     Type: char
@@ -40,20 +40,24 @@ PerComanyComplexItemQualityEntry:
   - Name: Company
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: QualityData
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct QualityData>
+    Type: TArray<struct ComplexItemQualityEntry>
   ClassSize: '0x18'
 PerComanyItemQualityEntry:
   Attributes:
   - Name: Company
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Quality
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_5P663[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'

@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 struct EventBreakableActorWasDestroyed
 {
 public:
-	Class Actor*                                                 Instigator;                                        // 0x0(0x8)
-	Class Actor*                                                 DirectInstigator;                                  // 0x8(0x8)
+	class Actor*                                                 Instigator;                                        // 0x0(0x8)
+	class Actor*                                                 DirectInstigator;                                  // 0x8(0x8)
 };
 
 
@@ -19,7 +19,7 @@ public:
 struct EventBreakableActorWasDamaged
 {
 public:
-	Struct ImpactDamageEvent                                     ImpactDamageEvent;                                 // 0x0(0x58)
+	struct ImpactDamageEvent                                     ImpactDamageEvent;                                 // 0x0(0x58)
 };
 
 

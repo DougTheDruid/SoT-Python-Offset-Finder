@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "ReviveAnimationsDataAsset",
-        "Type": "Class ReviveGhostAnimationDataAsset*",
+        "Type": "class ReviveGhostAnimationDataAsset*",
         "Size": "0x8",
         "Offset": "0x28"
       }
@@ -21,7 +21,7 @@
     "Attributes": [
       {
         "Name": "Animations",
-        "Type": "Struct ReviveGhostAnimations",
+        "Type": "struct ReviveGhostAnimations",
         "Size": "0x28",
         "Offset": "0x28"
       }
@@ -34,14 +34,14 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x8_90S52[0x8]",
+        "Name": "pad0x8_G3A19[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x440"
       },
       {
         "Name": "ReviveAnimations",
-        "Type": "Struct ReviveGhostAnimations",
+        "Type": "struct ReviveGhostAnimations",
         "Size": "0x28",
         "Offset": "0x448"
       },
@@ -64,7 +64,7 @@
         "Offset": "0x472"
       },
       {
-        "Name": "pad0x1d_2CVUU[0x1d]",
+        "Name": "pad0x1d_AQV9R[0x1d]",
         "Type": "char",
         "Size": "0x1d",
         "Offset": "0x473"

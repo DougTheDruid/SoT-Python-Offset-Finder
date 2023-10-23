@@ -7,7 +7,11 @@ CustomMysteriousNotesInterface:
   InheritedSize: '0x28'
   Super: Interface
 CustomMysteriousNotesService:
-  Attributes: []
+  Attributes:
+  - Name: pad0x58_XSVJ4[0x58]
+    Offset: '0x3c8'
+    Size: '0x58'
+    Type: char
   ClassSize: '0x58'
   FullSize: '0x420'
   InheritedSize: '0x3c8'

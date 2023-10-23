@@ -5,12 +5,12 @@ AssetExclusionCanaryAsset:
   - Name: TextMustNotBeEmpty
     Offset: '0x28'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: ValueMustBeSetTo10
     Offset: '0x60'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_KENYG[0x4]
+  - Name: pad0x4_9SJSW[0x4]
     Offset: '0x64'
     Size: '0x4'
     Type: char

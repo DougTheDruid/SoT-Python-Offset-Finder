@@ -17,6 +17,7 @@ public:
 class AthenaCalmWaterZone: public CalmWaterZone
 {
 public:
+	char                                                         pad0x20_4LKSC[0x20];                               // 0x3d0(0x20)
 };
 
 
@@ -24,6 +25,7 @@ public:
 class CalmWaterMappingService: public Object
 {
 public:
+	char                                                         pad0x28_D1VIH[0x28];                               // 0x28(0x28)
 };
 
 

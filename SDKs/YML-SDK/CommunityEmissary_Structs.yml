@@ -5,13 +5,13 @@ CommunityFlagGradeData:
   - Name: Story
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct StoryFlag
+    Type: struct StoryFlag
   - Name: StaticMesh
     Offset: '0x8'
     Size: '0x8'
-    Type: Class StaticMesh*
+    Type: class StaticMesh*
   - Name: Material
     Offset: '0x10'
     Size: '0x8'
-    Type: Class MaterialInterface*
+    Type: class MaterialInterface*
   ClassSize: '0x18'

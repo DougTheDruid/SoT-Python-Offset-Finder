@@ -18,7 +18,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x1f_POVSX[0x1f]",
+        "Name": "pad0x1f_105Y7[0x1f]",
         "Type": "char",
         "Size": "0x1f",
         "Offset": "0x61"
@@ -33,12 +33,12 @@
     "Attributes": [
       {
         "Name": "StoryFlag",
-        "Type": "Struct StoryFlag",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x10_PG79C[0x10]",
+        "Name": "pad0x10_KXQIB[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x38"
@@ -53,12 +53,12 @@
     "Attributes": [
       {
         "Name": "ClaimedStoryFlag",
-        "Type": "Struct StoryFlag",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x20_6B7R8[0x20]",
+        "Name": "pad0x20_04PEZ[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xd0"
@@ -79,7 +79,7 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "pad0x60_1FUD9[0x60]",
+        "Name": "pad0x60_JZOMV[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x3c8"
@@ -91,7 +91,7 @@
         "Offset": "0x428"
       },
       {
-        "Name": "pad0x50_GEP9A[0x50]",
+        "Name": "pad0x50_PBSTL[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x438"
@@ -106,18 +106,18 @@
     "Attributes": [
       {
         "Name": "StoryDrivenLightingAssetsCollection",
-        "Type": "Class StoryDrivenBlendedLightingZoneComponentDataAsset*",
+        "Type": "class StoryDrivenBlendedLightingZoneComponentDataAsset*",
         "Size": "0x8",
         "Offset": "0x328"
       },
       {
         "Name": "CurrentStoryResponse",
-        "Type": "Struct LightingZoneStoryRelatedSettings",
+        "Type": "struct LightingZoneStoryRelatedSettings",
         "Size": "0x10",
         "Offset": "0x330"
       },
       {
-        "Name": "pad0x20_47AZY[0x20]",
+        "Name": "pad0x20_4RHQF[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x340"
@@ -132,19 +132,19 @@
     "Attributes": [
       {
         "Name": "Feature",
-        "Type": "Struct FeatureFlag",
+        "Type": "struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_ZZ0UO[0x4]",
+        "Name": "pad0x4_LF0PL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
       },
       {
         "Name": "StoryResponses",
-        "Type": "TArray<struct StoryResponses>",
+        "Type": "TArray<struct LightingZoneStoryRelatedSettings>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -164,12 +164,12 @@
     "Attributes": [
       {
         "Name": "Story",
-        "Type": "Struct StoryFlag",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x5c8"
       },
       {
-        "Name": "pad0x20_X0M2U[0x20]",
+        "Name": "pad0x20_VFEFX[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x5d0"
@@ -184,12 +184,12 @@
     "Attributes": [
       {
         "Name": "AssetsCollection",
-        "Type": "Class StorySpawnedActorsComponentDataAsset*",
+        "Type": "class StorySpawnedActorsComponentDataAsset*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x38_7YZC4[0x38]",
+        "Name": "pad0x38_OA11H[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0xd0"
@@ -204,19 +204,19 @@
     "Attributes": [
       {
         "Name": "Feature",
-        "Type": "Struct FeatureFlag",
+        "Type": "struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_CD9S9[0x4]",
+        "Name": "pad0x4_8L7BM[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
       },
       {
         "Name": "StoryResponses",
-        "Type": "TArray<struct StoryResponses>",
+        "Type": "TArray<struct StorySpawnedActorsComponentList>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -236,19 +236,19 @@
     "Attributes": [
       {
         "Name": "Feature",
-        "Type": "Struct FeatureFlag",
+        "Type": "struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_93J3L[0x4]",
+        "Name": "pad0x4_KSDOR[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
       },
       {
         "Name": "StoryResponses",
-        "Type": "TArray<struct StoryResponses>",
+        "Type": "TArray<struct StorySpawnedActorsList>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -274,7 +274,7 @@
     "ClassSize": "0x138",
     "Attributes": [
       {
-        "Name": "pad0x18_SOI9J[0x18]",
+        "Name": "pad0x18_UDUB7[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3c8"
@@ -287,12 +287,12 @@
       },
       {
         "Name": "Asset",
-        "Type": "Class StorySpawnedActorsDataAsset*",
+        "Type": "class StorySpawnedActorsDataAsset*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
-        "Name": "pad0x108_UCKOF[0x108]",
+        "Name": "pad0x108_ON753[0x108]",
         "Type": "char",
         "Size": "0x108",
         "Offset": "0x3f8"
@@ -307,7 +307,7 @@
     "Attributes": [
       {
         "Name": "StorySpawnActorsDataAssetLocation",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -327,14 +327,14 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x8_ARR4M[0x8]",
+        "Name": "pad0x8_O9E0E[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "AllStories",
-        "Type": "TArray<struct AllStories>",
+        "Type": "TArray<struct StoryInfo>",
         "Size": "0x10",
         "Offset": "0x3d0"
       },
@@ -351,7 +351,7 @@
         "Offset": "0x3f0"
       },
       {
-        "Name": "pad0x20_56U84[0x20]",
+        "Name": "pad0x20_EB2JY[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x400"
@@ -366,7 +366,7 @@
     "Attributes": [
       {
         "Name": "StoryNamesCollectionDataAssetLocation",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -380,7 +380,7 @@
     "Attributes": [
       {
         "Name": "Stories",
-        "Type": "TArray<struct Stories>",
+        "Type": "TArray<struct StoryNameInfo>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -406,25 +406,25 @@
     "ClassSize": "0xd8",
     "Attributes": [
       {
-        "Name": "pad0x28_HGEVH[0x28]",
+        "Name": "pad0x28_1OFRT[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x3c8"
       },
       {
         "Name": "Stories",
-        "Type": "TArray<struct Stories>",
+        "Type": "TArray<struct StoryInfo>",
         "Size": "0x10",
         "Offset": "0x3f0"
       },
       {
         "Name": "ActiveStories",
-        "Type": "TArray<struct ActiveStories>",
+        "Type": "TArray<struct StoryInfo>",
         "Size": "0x10",
         "Offset": "0x400"
       },
       {
-        "Name": "pad0x90_E8S4A[0x90]",
+        "Name": "pad0x90_O4GTX[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x410"

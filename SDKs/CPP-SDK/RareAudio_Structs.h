@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 struct WwiseEmitter
 {
 public:
+	char                                                         pad0x20_4FKZC[0x20];                               // 0x0(0x20)
 };
 
 
@@ -17,9 +18,9 @@ public:
 struct WwiseEmitterCreationParams
 {
 public:
-	Class WwiseEvent*                                            Event;                                             // 0x0(0x8)
-	TArray<struct RTPCs>                                         RTPCs;                                             // 0x8(0x10)
-	TArray<struct Switches>                                      Switches;                                          // 0x18(0x10)
+	class WwiseEvent*                                            Event;                                             // 0x0(0x8)
+	TArray<struct WWiseEmitterCreationRTPCSetting>               RTPCs;                                             // 0x8(0x10)
+	TArray<struct WWiseEmitterCreationSwitchSetting>             Switches;                                          // 0x18(0x10)
 };
 
 
@@ -45,7 +46,7 @@ public:
 struct StaticMeshAudioAssociation
 {
 public:
-	TArray<struct PlaybackDataArray>                             PlaybackDataArray;                                 // 0x0(0x10)
+	TArray<struct StaticMeshWwiseEmitterData>                    PlaybackDataArray;                                 // 0x0(0x10)
 	TArray<class StaticMesh*>                                    Meshes;                                            // 0x10(0x10)
 };
 
@@ -54,9 +55,9 @@ public:
 struct StaticMeshWwiseEmitterData
 {
 public:
-	Class WwiseObjectPoolWrapper*                                Pool;                                              // 0x0(0x8)
-	Struct Vector                                                LocalOriginOffset;                                 // 0x8(0xc)
-	char                                                         pad0x4_S5ICT[0x4];                                 // 0x14(0x4)
+	class WwiseObjectPoolWrapper*                                Pool;                                              // 0x0(0x8)
+	struct Vector                                                LocalOriginOffset;                                 // 0x8(0xc)
+	char                                                         pad0x4_H3NRX[0x4];                                 // 0x14(0x4)
 	TArray<class WwiseEvent*>                                    StartEvents;                                       // 0x18(0x10)
 	TArray<class WwiseEvent*>                                    StopEvents;                                        // 0x28(0x10)
 };
@@ -66,8 +67,9 @@ public:
 struct StaticMeshComponentAudioAssociation
 {
 public:
-	Struct StaticMeshWwiseEmitterData                            PlaybackData;                                      // 0x0(0x38)
-	Struct Vector                                                EmitterPositionRelativeToComponentOrigin;          // 0x38(0xc)
+	struct StaticMeshWwiseEmitterData                            PlaybackData;                                      // 0x0(0x38)
+	struct Vector                                                EmitterPositionRelativeToComponentOrigin;          // 0x38(0xc)
+	char                                                         pad0x24_4MDR9[0x24];                               // 0x44(0x24)
 };
 
 

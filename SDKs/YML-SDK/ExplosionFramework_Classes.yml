@@ -5,8 +5,8 @@ CreateActorInstanceOnExplodeComponent:
   - Name: ActorToInstance
     Offset: '0xc8'
     Size: '0x8'
-    Type: class
-  - Name: pad0x68_3B319[0x68]
+    Type: class UClass*
+  - Name: pad0x68_2LHBT[0x68]
     Offset: '0xd0'
     Size: '0x68'
     Type: char
@@ -48,14 +48,14 @@ StatusResponseExplodeAfterTime:
     Offset: '0x34'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_WEL9Q[0x8]
+  - Name: pad0x8_WXZPC[0x8]
     Offset: '0x38'
     Size: '0x8'
     Type: char
   - Name: CachedWorld
     Offset: '0x40'
     Size: '0x8'
-    Type: Class World*
+    Type: class World*
   ClassSize: '0x18'
   FullSize: '0x48'
   InheritedSize: '0x30'

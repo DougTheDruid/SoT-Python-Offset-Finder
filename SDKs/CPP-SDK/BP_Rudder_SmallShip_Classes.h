@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_Rudder_SmallShip_C: public Rudder
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x440(0x8)
-	Class SceneComponent*                                        None;                                              // 0x448(0x8)
+	class StaticMeshComponent*                                   StaticMesh;                                        // 0x440(0x8)
+	class SceneComponent*                                        Root;                                              // 0x448(0x8)
 };
 
 

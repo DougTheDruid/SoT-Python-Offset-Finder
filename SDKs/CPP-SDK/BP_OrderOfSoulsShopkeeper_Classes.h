@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_OrderOfSoulsShopkeeper_C: public ShopkeeperInteractionProxy
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x488(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x488(0x8)
 };
 
 

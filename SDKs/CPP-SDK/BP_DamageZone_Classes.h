@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_DamageZone_C: public DamageZone
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x820(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x820(0x8)
 	struct FName                                                 Repair Tag;                                        // 0x828(0x8)
-	Struct BP_InternalDamageGroup                                RepairGroup;                                       // 0x830(0x10)
+	struct BP_InternalDamageGroup                                RepairGroup;                                       // 0x830(0x10)
 	int                                                          ExternalHitBufferIndex;                            // 0x840(0x4)
 	int                                                          MaxStoredHits;                                     // 0x844(0x4)
 	TArray<class DecalComponent*>                                Deferred Decals;                                   // 0x848(0x10)

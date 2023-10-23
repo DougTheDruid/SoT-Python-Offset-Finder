@@ -7,14 +7,14 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x177_6H2JO[0x177]",
+        "Name": "pad0x1b0_7880N[0x1b0]",
         "Type": "char",
-        "Size": "0x177",
+        "Size": "0x1b0",
         "Offset": "0xe0"
       },
       {
@@ -25,13 +25,13 @@
       },
       {
         "Name": "GoldHoarderLocations",
-        "Type": "TArray<struct GoldHoarderLocations>",
+        "Type": "TArray<struct Vector>",
         "Size": "0x10",
         "Offset": "0xf0"
       },
       {
         "Name": "GoToVendorPromptObject",
-        "Type": "BlueprintGeneratedClass BP_Prompt_CTPurchaseVoyageSequence_C*",
+        "Type": "blueprintgeneratedclass BP_Prompt_CTPurchaseVoyageSequence_C*",
         "Size": "0x8",
         "Offset": "0x100"
       },
@@ -54,14 +54,14 @@
         "Offset": "0x128"
       },
       {
-        "Name": "pad0x7_ANWRI[0x7]",
+        "Name": "pad0x7_QUEUM[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x129"
       },
       {
         "Name": "Handle_PlayerFinishedSpawning",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x130"
       }

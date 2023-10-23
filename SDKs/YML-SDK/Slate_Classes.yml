@@ -5,7 +5,7 @@ ButtonWidgetStyle:
   - Name: ButtonStyle
     Offset: '0x30'
     Size: '0x2a8'
-    Type: Struct ButtonStyle
+    Type: struct ButtonStyle
   ClassSize: '0x2a8'
   FullSize: '0x2d8'
   InheritedSize: '0x30'
@@ -15,7 +15,7 @@ CheckBoxWidgetStyle:
   - Name: CheckBoxStyle
     Offset: '0x30'
     Size: '0x5f0'
-    Type: Struct CheckBoxStyle
+    Type: struct CheckBoxStyle
   ClassSize: '0x5f0'
   FullSize: '0x620'
   InheritedSize: '0x30'
@@ -25,7 +25,7 @@ ComboBoxWidgetStyle:
   - Name: ComboBoxStyle
     Offset: '0x30'
     Size: '0x428'
-    Type: Struct ComboBoxStyle
+    Type: struct ComboBoxStyle
   ClassSize: '0x428'
   FullSize: '0x458'
   InheritedSize: '0x30'
@@ -35,7 +35,7 @@ ComboButtonWidgetStyle:
   - Name: ComboButtonStyle
     Offset: '0x30'
     Size: '0x3e0'
-    Type: Struct ComboButtonStyle
+    Type: struct ComboButtonStyle
   ClassSize: '0x3e0'
   FullSize: '0x410'
   InheritedSize: '0x30'
@@ -45,7 +45,7 @@ EditableTextBoxWidgetStyle:
   - Name: EditableTextBoxStyle
     Offset: '0x30'
     Size: '0x860'
-    Type: Struct EditableTextBoxStyle
+    Type: struct EditableTextBoxStyle
   ClassSize: '0x860'
   FullSize: '0x890'
   InheritedSize: '0x30'
@@ -55,7 +55,7 @@ EditableTextWidgetStyle:
   - Name: EditableTextStyle
     Offset: '0x30'
     Size: '0x228'
-    Type: Struct EditableTextStyle
+    Type: struct EditableTextStyle
   ClassSize: '0x228'
   FullSize: '0x258'
   InheritedSize: '0x30'
@@ -65,7 +65,7 @@ ProgressWidgetStyle:
   - Name: ProgressBarStyle
     Offset: '0x30'
     Size: '0x1b8'
-    Type: Struct ProgressBarStyle
+    Type: struct ProgressBarStyle
   ClassSize: '0x1b8'
   FullSize: '0x1e8'
   InheritedSize: '0x30'
@@ -75,7 +75,7 @@ ScrollBarWidgetStyle:
   - Name: ScrollBarStyle
     Offset: '0x30'
     Size: '0x518'
-    Type: Struct ScrollBarStyle
+    Type: struct ScrollBarStyle
   ClassSize: '0x518'
   FullSize: '0x548'
   InheritedSize: '0x30'
@@ -85,7 +85,7 @@ ScrollBoxWidgetStyle:
   - Name: ScrollBoxStyle
     Offset: '0x30'
     Size: '0x248'
-    Type: Struct ScrollBoxStyle
+    Type: struct ScrollBoxStyle
   ClassSize: '0x248'
   FullSize: '0x278'
   InheritedSize: '0x30'
@@ -95,7 +95,7 @@ SpinBoxWidgetStyle:
   - Name: SpinBoxStyle
     Offset: '0x30'
     Size: '0x318'
-    Type: Struct SpinBoxStyle
+    Type: struct SpinBoxStyle
   ClassSize: '0x318'
   FullSize: '0x348'
   InheritedSize: '0x30'
@@ -105,7 +105,7 @@ TextBlockWidgetStyle:
   - Name: TextBlockStyle
     Offset: '0x30'
     Size: '0x160'
-    Type: Struct TextBlockStyle
+    Type: struct TextBlockStyle
   ClassSize: '0x160'
   FullSize: '0x190'
   InheritedSize: '0x30'

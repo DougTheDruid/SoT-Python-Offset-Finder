@@ -5,23 +5,23 @@ wsp_post_pot_light_C:
   - Name: SpotLight1
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class SpotLightComponent*
+    Type: class SpotLightComponent*
   - Name: SpotLight
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class SpotLightComponent*
+    Type: class SpotLightComponent*
   - Name: ParticleSystem2
     Offset: '0x3e8'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Type: class ParticleSystemComponent*
   - Name: ParticleSystem1
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Type: class ParticleSystemComponent*
   - Name: ParticleSystem
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Type: class ParticleSystemComponent*
   ClassSize: '0x28'
   FullSize: '0x400'
   InheritedSize: '0x3d8'

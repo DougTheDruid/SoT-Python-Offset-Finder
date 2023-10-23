@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class InstancedRopeComponent: public PrimitiveComponent
 {
 public:
-	Class StaticMesh*                                            StaticMesh;                                        // 0x5b8(0x8)
-	TArray<struct Ropes>                                         Ropes;                                             // 0x5c0(0x10)
+	class StaticMesh*                                            StaticMesh;                                        // 0x5b8(0x8)
+	TArray<struct InstancedRopeParams>                           Ropes;                                             // 0x5c0(0x10)
 	int                                                          ShadowLOD;                                         // 0x5d0(0x4)
-	char                                                         pad0xac_IPHA6[0xac];                               // 0x5d4(0xac)
+	char                                                         pad0xac_0PBH5[0xac];                               // 0x5d4(0xac)
 };
 
 
@@ -22,7 +22,7 @@ class MaterialExpressionRopeParameter: public MaterialExpression
 {
 public:
 	byte                                                         RopeParameterType;                                 // 0x70(0x1)
-	char                                                         pad0x7_NI2N3[0x7];                                 // 0x71(0x7)
+	char                                                         pad0x7_BEANJ[0x7];                                 // 0x71(0x7)
 };
 
 
@@ -30,16 +30,16 @@ public:
 class RiggingSystem: public Actor
 {
 public:
-	char                                                         pad0x8_179XZ[0x8];                                 // 0x3c8(0x8)
-	Class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
-	Class InstancedRopeComponent*                                InstancedRopes;                                    // 0x3d8(0x8)
-	TArray<struct Lines>                                         Lines;                                             // 0x3e0(0x10)
-	TArray<struct Ropes>                                         Ropes;                                             // 0x3f0(0x10)
+	char                                                         pad0x8_OZCSY[0x8];                                 // 0x3c8(0x8)
+	class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
+	class InstancedRopeComponent*                                InstancedRopes;                                    // 0x3d8(0x8)
+	TArray<struct RiggingSystemLine>                             Lines;                                             // 0x3e0(0x10)
+	TArray<struct InstancedRopeParams>                           Ropes;                                             // 0x3f0(0x10)
 	TArray<class MobileInstancedStaticMeshComponent*>            PulleyInstances;                                   // 0x400(0x10)
-	Struct RiggingSystemPulleyData                               Pulleys;                                           // 0x410(0x60)
-	TArray<struct Sockets>                                       Sockets;                                           // 0x470(0x10)
+	struct RiggingSystemPulleyData                               Pulleys;                                           // 0x410(0x60)
+	TArray<struct SocketId>                                      Sockets;                                           // 0x470(0x10)
 	TArray<Float InitialMainRopeLengths>                         InitialMainRopeLengths;                            // 0x480(0x10)
-	char                                                         pad0x88_B34XG[0x88];                               // 0x490(0x88)
+	char                                                         pad0x88_JOPKZ[0x88];                               // 0x490(0x88)
 };
 
 
@@ -47,10 +47,10 @@ public:
 class RiggingSystemComponent: public SceneComponent
 {
 public:
-	Struct RopeStyleParams                                       RopeStyle;                                         // 0x2e0(0x20)
-	TArray<struct LineGroups>                                    LineGroups;                                        // 0x300(0x10)
-	Class RiggingSystem*                                         Impl;                                              // 0x310(0x8)
-	char                                                         pad0x8_I6RUO[0x8];                                 // 0x318(0x8)
+	struct RopeStyleParams                                       RopeStyle;                                         // 0x2e0(0x20)
+	TArray<struct RiggingSystemLineGroup>                        LineGroups;                                        // 0x300(0x10)
+	class RiggingSystem*                                         Impl;                                              // 0x310(0x8)
+	char                                                         pad0x8_0KPJV[0x8];                                 // 0x318(0x8)
 };
 
 

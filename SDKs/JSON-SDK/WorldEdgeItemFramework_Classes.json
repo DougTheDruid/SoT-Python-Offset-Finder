@@ -14,7 +14,7 @@
     "Attributes": [
       {
         "Name": "TeleportItemsEQSQuery",
-        "Type": "Class EnvQuery*",
+        "Type": "class EnvQuery*",
         "Size": "0x8",
         "Offset": "0x28"
       },
@@ -51,25 +51,25 @@
     "ClassSize": "0x258",
     "Attributes": [
       {
-        "Name": "pad0x8_T029C[0x8]",
+        "Name": "pad0x8_3BSWT[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "WorldEdgeItemParameters",
-        "Type": "Class WorldEdgeItemServiceParams*",
+        "Type": "class WorldEdgeItemServiceParams*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "SpawnItemEQSRequest",
-        "Type": "Struct EnvQueryRequest",
+        "Type": "struct EnvQueryRequest",
         "Size": "0x170",
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0xd8_FUZVP[0xd8]",
+        "Name": "pad0xd8_C2PK0[0xd8]",
         "Type": "char",
         "Size": "0xd8",
         "Offset": "0x548"

@@ -5,46 +5,46 @@ CookEndTelemetryEvent:
   - Name: ItemName
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: CookState
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_VA02A[0x3]
+  - Name: pad0x3_IAL48[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
   - Name: Location
     Offset: '0x14'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: CookId
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x30'
 CookStartTelemetryEvent:
   Attributes:
   - Name: ItemName
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: CookState
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_B7CT1[0x3]
+  - Name: pad0x3_71L49[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
   - Name: Location
     Offset: '0x14'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: CookId
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x30'
 CookableComponentSmokeFeedbackTimingEntry:
   Attributes:
@@ -56,6 +56,10 @@ CookableComponentSmokeFeedbackTimingEntry:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_9UAWL[0x3]
+    Offset: '0x5'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x8'
 CookerSmokeFeedbackEntry:
   Attributes:
@@ -63,14 +67,14 @@ CookerSmokeFeedbackEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_FIKP2[0x7]
+  - Name: pad0x7_FWSLH[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
   - Name: SmokeVFX
     Offset: '0x8'
     Size: '0x8'
-    Type: Class ParticleSystem*
+    Type: class ParticleSystem*
   ClassSize: '0x10'
 CookingClientRepresentation:
   Attributes:
@@ -82,27 +86,27 @@ CookingClientRepresentation:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_EWJBI[0x6]
+  - Name: pad0x6_JA4V8[0x6]
     Offset: '0x2'
     Size: '0x6'
     Type: char
   - Name: CurrentlyCookingItem
     Offset: '0x8'
     Size: '0x8'
-    Type: Class ItemInfo*
+    Type: class ItemInfo*
   - Name: CurrentCookingItemDisplayName
     Offset: '0x10'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: CurrentCookingItemCategory
     Offset: '0x48'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: SmokeFeedbackLevel
     Offset: '0x50'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_R52G1[0x3]
+  - Name: pad0x3_EIP15[0x3]
     Offset: '0x51'
     Size: '0x3'
     Type: char
@@ -118,31 +122,47 @@ CookingClientRepresentation:
     Offset: '0x5c'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x4_PDQ73[0x4]
+    Offset: '0x64'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x68'
 CookingInfo:
-  Attributes: []
+  Attributes:
+  - Name: pad0xc_52VZP[0xc]
+    Offset: '0x0'
+    Size: '0xc'
+    Type: char
   ClassSize: '0xc'
 OnItemStartedCooking:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_42JV2[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
 OnItemStoppedCooking:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_SEE9D[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 OnPlacedItemInCookingPot:
   Attributes:
   - Name: Interactor
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: ItemToCook
     Offset: '0x8'
     Size: '0x8'
-    Type: Class ItemInfo*
+    Type: class ItemInfo*
   ClassSize: '0x10'
 OnRemovedItemFromCookingPot:
   Attributes:
   - Name: Interactor
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x8'

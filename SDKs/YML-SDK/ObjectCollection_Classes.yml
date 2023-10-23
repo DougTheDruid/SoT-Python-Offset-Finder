@@ -7,13 +7,21 @@ ObjectCollectorInterface:
   InheritedSize: '0x28'
   Super: Interface
 TestCollector:
-  Attributes: []
+  Attributes:
+  - Name: pad0x60_JXTQA[0x60]
+    Offset: '0x28'
+    Size: '0x60'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
   Super: Object
 TestObjectForCollection:
-  Attributes: []
+  Attributes:
+  - Name: pad0x48_073VX[0x48]
+    Offset: '0x28'
+    Size: '0x48'
+    Type: char
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'

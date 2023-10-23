@@ -1,51 +1,51 @@
 {
   "BP_Tutorial_Tavern_Stranger_NPC_C": {
     "Super": "TutorialTavernStrangerNPC",
-    "FullSize": "0x8c8",
-    "InheritedSize": "0x860",
+    "FullSize": "0x8d0",
+    "InheritedSize": "0x868",
     "ClassSize": "0x68",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
-        "Size": "0x8",
-        "Offset": "0x860"
-      },
-      {
-        "Name": "SolidHits",
-        "Type": "Class CapsuleComponent*",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x868"
       },
       {
-        "Name": "StaticMesh",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "SolidHits",
+        "Type": "class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0x870"
       },
       {
-        "Name": "NPCDialog",
-        "Type": "Class NPCDialogComponent*",
+        "Name": "StaticMesh",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x878"
       },
       {
-        "Name": "AnimNotifyWwiseEmitter",
-        "Type": "Class AnimNotifyWwiseEmitterComponent*",
+        "Name": "NPCDialog",
+        "Type": "class NPCDialogComponent*",
         "Size": "0x8",
         "Offset": "0x880"
       },
       {
-        "Name": "MysteriousStranger",
-        "Type": "Struct FText",
-        "Size": "0x38",
+        "Name": "AnimNotifyWwiseEmitter",
+        "Type": "class AnimNotifyWwiseEmitterComponent*",
+        "Size": "0x8",
         "Offset": "0x888"
       },
       {
+        "Name": "MysteriousStranger",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x890"
+      },
+      {
         "Name": "CutSceneActor",
-        "Type": "Class CutSceneActor*",
+        "Type": "class CutSceneActor*",
         "Size": "0x8",
-        "Offset": "0x8c0"
+        "Offset": "0x8c8"
       }
     ]
   },

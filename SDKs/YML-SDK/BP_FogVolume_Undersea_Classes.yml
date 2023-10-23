@@ -5,7 +5,7 @@ BP_FogVolume_Undersea_C:
   - Name: UberGraphFrame
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: WorldFadeDistanceStart
     Offset: '0x3e0'
     Size: '0x4'

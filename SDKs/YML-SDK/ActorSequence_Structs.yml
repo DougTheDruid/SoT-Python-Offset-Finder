@@ -6,38 +6,38 @@ ActorSequenceObjectReference:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_P25L8[0x3]
+  - Name: pad0x3_GTVY6[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
   - Name: ActorId
     Offset: '0x4'
     Size: '0x10'
-    Type: Struct Guid
-  - Name: pad0x4_ND6E7[0x4]
+    Type: struct Guid
+  - Name: pad0x4_YI2DA[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
   - Name: PathToComponent
     Offset: '0x18'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x28'
 ActorSequenceObjectReferenceMap:
   Attributes:
   - Name: BindingIds
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct BindingIds>
+    Type: TArray<struct Guid>
   - Name: References
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct References>
+    Type: TArray<struct ActorSequenceObjectReferences>
   ClassSize: '0x20'
 ActorSequenceObjectReferences:
   Attributes:
   - Name: Array
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct Array>
+    Type: TArray<struct ActorSequenceObjectReference>
   ClassSize: '0x10'

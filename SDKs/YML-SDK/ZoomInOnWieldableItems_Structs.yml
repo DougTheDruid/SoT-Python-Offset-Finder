@@ -2,6 +2,10 @@
 # https://github.com/DougTheDruid
 ZoomedInOnWieldableItemActionStateConstructionInfo:
   Attributes:
+  - Name: pad0x30_92G2K[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
   - Name: ZoomedInFov
     Offset: '0x30'
     Size: '0x4'
@@ -22,4 +26,8 @@ ZoomedInOnWieldableItemActionStateConstructionInfo:
     Offset: '0x40'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_KTYEP[0x4]
+    Offset: '0x44'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x48'

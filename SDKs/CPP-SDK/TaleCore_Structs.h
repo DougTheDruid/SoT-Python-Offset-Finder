@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 struct ClientCommandBase
 {
 public:
+	char                                                         pad0x8_8Y569[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -17,6 +18,7 @@ public:
 struct ClientCommandQueue
 {
 public:
+	char                                                         pad0x18_Q2W2F[0x18];                               // 0x0(0x18)
 };
 
 
@@ -24,7 +26,8 @@ public:
 struct TaleStructInstance
 {
 public:
-	Class TaleStruct*                                            MyType;                                            // 0x0(0x8)
+	class TaleStruct*                                            MyType;                                            // 0x0(0x8)
+	char                                                         pad0x8_7FYRC[0x8];                                 // 0x8(0x8)
 };
 
 

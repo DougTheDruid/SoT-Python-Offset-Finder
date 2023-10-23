@@ -17,16 +17,16 @@ public:
 class KnockbackColliderComponent: public BoxComponent
 {
 public:
-	Struct CollisionProfileName                                  SolidCollisionProfile;                             // 0x5e8(0x8)
-	Struct CollisionProfileName                                  KnockbackTraceProfile;                             // 0x5f0(0x8)
+	struct CollisionProfileName                                  SolidCollisionProfile;                             // 0x5e8(0x8)
+	struct CollisionProfileName                                  KnockbackTraceProfile;                             // 0x5f0(0x8)
 	byte                                                         KnockbackType;                                     // 0x5f8(0x1)
-	char                                                         pad0x3_3BKJT[0x3];                                 // 0x5f9(0x3)
-	Struct KnockBackInfo                                         KnockbackParams;                                   // 0x5fc(0x50)
-	class                                                        KnockbackDamageType;                               // 0x658(0x8)
+	char                                                         pad0x3_Z2FYP[0x3];                                 // 0x5f9(0x3)
+	struct KnockBackInfo                                         KnockbackParams;                                   // 0x5fc(0x50)
+	class UClass*                                                KnockbackDamageType;                               // 0x658(0x8)
 	float                                                        KnockbackInterval;                                 // 0x660(0x4)
-	char                                                         pad0x4_NTIF8[0x4];                                 // 0x664(0x4)
+	char                                                         pad0x4_RP7JQ[0x4];                                 // 0x664(0x4)
 	byte                                                         SolidState;                                        // 0x668(0x1)
-	char                                                         pad0x7_HGB5P[0x7];                                 // 0x669(0x7)
+	char                                                         pad0x7_OQT7I[0x7];                                 // 0x669(0x7)
 };
 
 

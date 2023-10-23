@@ -12,7 +12,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x7_VBKY6[0x7]",
+        "Name": "pad0x7_ZL5K1[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x61"
@@ -27,37 +27,37 @@
     "Attributes": [
       {
         "Name": "WwiseObjectPoolWrapper",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "AudioKeyPairs",
-        "Type": "TArray<struct AudioKeyPairs>",
+        "Type": "TArray<struct OceanCrawlerAudioKeyPair>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "BuffThankDelay",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x40"
       },
       {
         "Name": "CrabBuffAudioSettings",
-        "Type": "Struct OceanCrawlerBuffAudioSettings",
+        "Type": "struct OceanCrawlerBuffAudioSettings",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "EelBuffAudioSettings",
-        "Type": "Struct OceanCrawlerBuffAudioSettings",
+        "Type": "struct OceanCrawlerBuffAudioSettings",
         "Size": "0x10",
         "Offset": "0x80"
       },
       {
         "Name": "HermitBuffAudioSettings",
-        "Type": "Struct OceanCrawlerBuffAudioSettings",
+        "Type": "struct OceanCrawlerBuffAudioSettings",
         "Size": "0x10",
         "Offset": "0x90"
       }
@@ -71,18 +71,18 @@
     "Attributes": [
       {
         "Name": "AudioDataAsset",
-        "Type": "Class OceanCrawlerAudioParamsDataAsset*",
+        "Type": "class OceanCrawlerAudioParamsDataAsset*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "CachedOwner",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0xe8_TP3WP[0xe8]",
+        "Name": "pad0xe8_BHULJ[0xe8]",
         "Type": "char",
         "Size": "0xe8",
         "Offset": "0xd8"

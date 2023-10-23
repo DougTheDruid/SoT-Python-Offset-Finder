@@ -11,17 +11,18 @@ struct RareGameServiceSpecification
 {
 public:
 	struct FName                                                 ServiceName;                                       // 0x0(0x8)
-	class                                                        ServiceClassToInstantiate;                         // 0x8(0x8)
+	class UClass*                                                ServiceClassToInstantiate;                         // 0x8(0x8)
 	byte                                                         ServiceRole;                                       // 0x10(0x1)
 	bool                                                         Replicates;                                        // 0x11(0x1)
+	char                                                         pad0x6_SU9JW[0x6];                                 // 0x12(0x6)
 };
 
 
 // Size 0x8
-struct RareGameServiceManagerServiceInitialisedEvent
+struct RareGameServiceManagerServiceRegisteredEvent
 {
 public:
-	Class Object*                                                ServiceObject;                                     // 0x0(0x8)
+	class Object*                                                ServiceObject;                                     // 0x0(0x8)
 };
 
 
@@ -29,6 +30,7 @@ public:
 struct RareGameServiceManagerStateChangedEvent
 {
 public:
+	char                                                         pad0x2_26R8C[0x2];                                 // 0x0(0x2)
 };
 
 

@@ -1,51 +1,51 @@
 {
   "BP_Blunderbuss_C": {
     "Super": "ProjectileWeapon",
-    "FullSize": "0xb50",
-    "InheritedSize": "0xb20",
+    "FullSize": "0xb90",
+    "InheritedSize": "0xb60",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0xb20"
+        "Offset": "0xb60"
       },
       {
         "Name": "PostProcess",
-        "Type": "Class PostProcessComponent*",
+        "Type": "class PostProcessComponent*",
         "Size": "0x8",
-        "Offset": "0xb28"
+        "Offset": "0xb68"
       },
       {
         "Name": "sfx relationship",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0xb30"
+        "Offset": "0xb70"
       },
       {
-        "Name": "pad0x7_WLO89[0x7]",
+        "Name": "pad0x7_O66XM[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0xb31"
+        "Offset": "0xb71"
       },
       {
         "Name": "DynamicMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0xb38"
+        "Offset": "0xb78"
       },
       {
         "Name": "FiringVFX3rdPerson",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
-        "Offset": "0xb40"
+        "Offset": "0xb80"
       },
       {
         "Name": "Blunderbuss Firing sfx 3rd person",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0xb48"
+        "Offset": "0xb88"
       }
     ]
   },

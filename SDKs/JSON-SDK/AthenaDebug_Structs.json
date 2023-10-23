@@ -15,26 +15,26 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_NKT69[0x7]",
+        "Name": "pad0x7_TGFX2[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
       },
       {
         "Name": "String",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Colour",
-        "Type": "Struct Color",
+        "Type": "struct Color",
         "Size": "0x4",
         "Offset": "0x20"
       },
       {
         "Name": "StringPos",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x24"
       }
@@ -56,22 +56,28 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_G3HUI[0x7]",
+        "Name": "pad0x7_9VLLZ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
       },
       {
         "Name": "Message",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Colour",
-        "Type": "Struct Color",
+        "Type": "struct Color",
         "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_GO2ZB[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
@@ -91,7 +97,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_7XJAU[0x3]",
+        "Name": "pad0x3_ASXMD[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
@@ -104,7 +110,7 @@
       },
       {
         "Name": "Centre",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x10"
       },
@@ -122,19 +128,19 @@
       },
       {
         "Name": "Colour",
-        "Type": "Struct Color",
+        "Type": "struct Color",
         "Size": "0x4",
         "Offset": "0x24"
       },
       {
         "Name": "ZeroAngleVector",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x28"
       },
       {
         "Name": "RotationAxis",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x34"
       },
@@ -168,26 +174,26 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_Z03QC[0x3]",
+        "Name": "pad0x3_EBN2X[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
       },
       {
         "Name": "LineStart",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
       {
         "Name": "LineEnd",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x18"
       },
       {
         "Name": "Colour",
-        "Type": "Struct Color",
+        "Type": "struct Color",
         "Size": "0x4",
         "Offset": "0x24"
       },
@@ -215,14 +221,14 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_C8ZWX[0x3]",
+        "Name": "pad0x3_PHLD7[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
       },
       {
         "Name": "CentrePos",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
@@ -240,15 +246,21 @@
       },
       {
         "Name": "Rotation",
-        "Type": "Struct Quat",
+        "Type": "struct Quat",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "Colour",
-        "Type": "Struct Color",
+        "Type": "struct Color",
         "Size": "0x4",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0xc_RSESM[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x34"
       }
     ]
   },
@@ -268,40 +280,46 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_DNQRA[0x3]",
+        "Name": "pad0x3_9603K[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
       },
       {
         "Name": "CentrePos",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
       {
         "Name": "Box",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x18"
       },
       {
-        "Name": "pad0xc_2GP0B[0xc]",
+        "Name": "pad0xc_3PON9[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x24"
       },
       {
         "Name": "Rotation",
-        "Type": "Struct Quat",
+        "Type": "struct Quat",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "Colour",
-        "Type": "Struct Color",
+        "Type": "struct Color",
         "Size": "0x4",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0xc_D1RBO[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x44"
       }
     ]
   },
@@ -321,14 +339,14 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_JEQ0V[0x3]",
+        "Name": "pad0x3_MWCOJ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
       },
       {
         "Name": "CentrePos",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
@@ -340,7 +358,7 @@
       },
       {
         "Name": "Colour",
-        "Type": "Struct Color",
+        "Type": "struct Color",
         "Size": "0x4",
         "Offset": "0x1c"
       }
@@ -351,7 +369,7 @@
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
@@ -369,7 +387,7 @@
       },
       {
         "Name": "Colour",
-        "Type": "Struct Color",
+        "Type": "struct Color",
         "Size": "0x4",
         "Offset": "0x14"
       }

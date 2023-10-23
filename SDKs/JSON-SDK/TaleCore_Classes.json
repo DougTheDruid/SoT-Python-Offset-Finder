@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "CommandQueue",
-        "Type": "Struct ClientCommandQueue",
+        "Type": "struct ClientCommandQueue",
         "Size": "0x18",
         "Offset": "0x3c8"
       }
@@ -21,12 +21,12 @@
     "Attributes": [
       {
         "Name": "StructId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x20_NF5RM[0x20]",
+        "Name": "pad0x20_1OUQ2[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x98"

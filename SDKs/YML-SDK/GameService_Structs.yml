@@ -5,15 +5,27 @@ GameServiceCoordinator:
   - Name: Services
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct Services>
+    Type: TArray<struct GameServiceCoordinatorUnit>
+  - Name: pad0x10_RBJGI[0x10]
+    Offset: '0x10'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x20'
 GameServiceCoordinatorUnit:
   Attributes:
   - Name: Service
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
+  - Name: pad0x10_PN0A3[0x10]
+    Offset: '0x8'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x18'
 GameServiceMap:
-  Attributes: []
+  Attributes:
+  - Name: pad0x70_KMJI8[0x70]
+    Offset: '0x0'
+    Size: '0x70'
+    Type: char
   ClassSize: '0x70'

@@ -5,27 +5,27 @@ CompanyFactionAlignment:
   - Name: Company
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Faction
     Offset: '0x8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x10'
 CrewFactionEntry:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: Faction
     Offset: '0x10'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: EnemyFactionShipRangeState
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_NXMEU[0x3]
+  - Name: pad0x3_U9H6R[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -51,20 +51,20 @@ CrewFactionEntryData:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: SessionId
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: Faction
     Offset: '0x20'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Streak
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_XPUS6[0x4]
+  - Name: pad0x4_H6HC1[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -76,19 +76,19 @@ CrewFactionEntryData:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_8792Q[0x7]
+  - Name: pad0x7_FMEPE[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
   - Name: EligibleLootBootyIds
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<struct EligibleLootBootyIds>
+    Type: TArray<struct Guid>
   - Name: CurrentLootValue
     Offset: '0x50'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_L2R3S[0x4]
+  - Name: pad0x4_PU59G[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -96,17 +96,21 @@ CrewFactionEntryData:
     Offset: '0x58'
     Size: '0x10'
     Type: TArray<Bool HasDisplayedPromptForLootLevel>
+  - Name: pad0x10_A4R09[0x10]
+    Offset: '0x68'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x78'
 CrewFactionTelemetryData:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: SessionId
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: Faction
     Offset: '0x20'
     Size: '0x8'
@@ -125,59 +129,67 @@ CrewJoinedFaction:
   - Name: JoiningCrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: FactionJoined
     Offset: '0x10'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x18'
 CrewJoinedFactionSuccess:
   Attributes:
   - Name: JoiningCrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: FactionJoined
     Offset: '0x10'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x18'
 CrewLeavingFaction:
   Attributes:
   - Name: LeavingCrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: FactionToLeave
     Offset: '0x10'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: FactionLeftReason
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_KE1GA[0x7]
+    Offset: '0x19'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x20'
 CrewLeftFaction:
   Attributes:
   - Name: LeavingCrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: FactionLeft
     Offset: '0x10'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: FactionLeftReason
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_7GA1A[0x7]
+    Offset: '0x19'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x20'
 CrewStreakLevelIncreased:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: StreakLevel
     Offset: '0x10'
     Size: '0x4'
@@ -188,18 +200,18 @@ CrewsSunkShipEvent:
   - Name: AttackingCrewIds
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct AttackingCrewIds>
+    Type: TArray<struct Guid>
   - Name: SunkShipCrewId
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x20'
 FactionCrewAttackedPreviouslySunkCrewTelemetryEvent:
   Attributes:
   - Name: FactionSessionId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: AlignedFactionName
     Offset: '0x10'
     Size: '0x8'
@@ -207,18 +219,18 @@ FactionCrewAttackedPreviouslySunkCrewTelemetryEvent:
   - Name: AttackingCrewId
     Offset: '0x18'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: SunkCrewId
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x38'
 FactionJoinedTelemetryEvent:
   Attributes:
   - Name: FactionSessionId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: AlignedFactionName
     Offset: '0x10'
     Size: '0x8'
@@ -229,7 +241,7 @@ FactionLeftTelemetryEvent:
   - Name: FactionSessionId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: AlignedFactionName
     Offset: '0x10'
     Size: '0x8'
@@ -238,46 +250,50 @@ FactionLeftTelemetryEvent:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_9OPFF[0x3]
+    Offset: '0x19'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x1c'
 FactionServicePopUpData:
   Attributes:
   - Name: Faction
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: PopUpMessageDesc
     Offset: '0x8'
     Size: '0x8'
-    Type: Class DataAsset*
+    Type: class DataAsset*
   ClassSize: '0x10'
 FactionServicePostMigrationEvent:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: Faction
     Offset: '0x10'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x18'
 FactionShipDefeatedEvent:
   Attributes:
   - Name: VictoriousCrewIds
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct VictoriousCrewIds>
+    Type: TArray<struct Guid>
   - Name: DefeatedCrewId
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x20'
 FactionStreakIncreasedTelemetryEvent:
   Attributes:
   - Name: CrewFactionData
     Offset: '0x0'
     Size: '0x30'
-    Type: Struct CrewFactionTelemetryData
+    Type: struct CrewFactionTelemetryData
   ClassSize: '0x30'
 FactionStreakLevelData:
   Attributes:
@@ -300,9 +316,13 @@ FactionWaitTimesData:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_WTLKV[0x6]
+  - Name: pad0x6_2M04R[0x6]
     Offset: '0x2'
     Size: '0x6'
+    Type: char
+  - Name: pad0x8_9GY0K[0x8]
+    Offset: '0x8'
+    Size: '0x8'
     Type: char
   ClassSize: '0x10'
 SandsOfFateData:
@@ -325,5 +345,5 @@ ShipDestroyedByBattleBoundsEvent:
   - Name: SunkShipCrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x10'

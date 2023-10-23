@@ -18,8 +18,8 @@ public:
 struct ActorOfInterestUnregisteredEvent
 {
 public:
-	Class Actor*                                                 ActorOfInterest;                                   // 0x0(0x8)
-	class                                                        ActorOfInterestId;                                 // 0x8(0x8)
+	class Actor*                                                 ActorOfInterest;                                   // 0x0(0x8)
+	class UClass*                                                ActorOfInterestId;                                 // 0x8(0x8)
 };
 
 
@@ -27,8 +27,8 @@ public:
 struct ActorOfInterestRegisteredEvent
 {
 public:
-	Class Actor*                                                 ActorOfInterest;                                   // 0x0(0x8)
-	class                                                        ActorOfInterestId;                                 // 0x8(0x8)
+	class Actor*                                                 ActorOfInterest;                                   // 0x0(0x8)
+	class UClass*                                                ActorOfInterestId;                                 // 0x8(0x8)
 };
 
 

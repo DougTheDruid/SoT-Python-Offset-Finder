@@ -12,14 +12,14 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_123VI[0x4]",
+        "Name": "pad0x4_F4KS3[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
       },
       {
         "Name": "Entries",
-        "Type": "TArray<struct Entries>",
+        "Type": "TArray<struct AnimationSwitchEntry>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -37,7 +37,14 @@
     "FullSize": "0x78",
     "InheritedSize": "0x28",
     "ClassSize": "0x50",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x50_5HEUD[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x28"
+      }
+    ]
   },
   "CharacterMeshBakeSpecification": {
     "Super": "Object",
@@ -52,26 +59,26 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_Z97NJ[0x7]",
+        "Name": "pad0x7_REYOH[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
       },
       {
         "Name": "CharacterMesh",
-        "Type": "Class SkeletalMesh*",
+        "Type": "class SkeletalMesh*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "BaseMeshReferenceSkeleton",
-        "Type": "Class SkeletalMesh*",
+        "Type": "class SkeletalMesh*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "SourceSkeletons",
-        "Type": "Class SkeletonsDataAsset*",
+        "Type": "class SkeletonsDataAsset*",
         "Size": "0x8",
         "Offset": "0x40"
       },
@@ -89,7 +96,7 @@
       },
       {
         "Name": "BlendedSubMeshes",
-        "Type": "TArray<struct BlendedSubMeshes>",
+        "Type": "TArray<struct BlendedSubMeshSpecification>",
         "Size": "0x10",
         "Offset": "0x68"
       },
@@ -101,7 +108,7 @@
       },
       {
         "Name": "BlendShapes",
-        "Type": "TArray<struct BlendShapes>",
+        "Type": "TArray<struct IPGBlendShape>",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -122,7 +129,7 @@
     "Attributes": [
       {
         "Name": "Color",
-        "Type": "Struct LinearColor",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x138"
       }
@@ -143,7 +150,7 @@
     "Attributes": [
       {
         "Name": "MaterialReferences",
-        "Type": "TArray<struct MaterialReferences>",
+        "Type": "TArray<struct MaterialReferencesEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -191,14 +198,14 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0xa0_4PDZ5[0xa0]",
+        "Name": "pad0xa0_WAJSV[0xa0]",
         "Type": "char",
         "Size": "0xa0",
         "Offset": "0x28"
       },
       {
         "Name": "AssetMap",
-        "Type": "TArray<struct AssetMap>",
+        "Type": "TArray<struct MeshPatchEntry>",
         "Size": "0x10",
         "Offset": "0xc8"
       }
@@ -212,31 +219,31 @@
     "Attributes": [
       {
         "Name": "WardrobeDataAsset",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "EditorWardrobeDataAsset",
-        "Type": "Class WardrobeDataAsset*",
+        "Type": "class WardrobeDataAsset*",
         "Size": "0x8",
         "Offset": "0x48"
       },
       {
         "Name": "ConfigJson",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "PiratesFolder",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "WardrobeFolder",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x70"
       },
@@ -248,25 +255,25 @@
       },
       {
         "Name": "MaterialReferencesDataAsset",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x90"
       },
       {
         "Name": "SkeletonsDataAsset",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0xa0"
       },
       {
         "Name": "BaseSkeletonMeshes",
-        "Type": "TArray<struct BaseSkeletonMeshes>",
+        "Type": "TArray<struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0xb0"
       },
       {
         "Name": "Characterization",
-        "Type": "TArray<struct Characterization>",
+        "Type": "TArray<struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0xc0"
       },
@@ -278,13 +285,13 @@
       },
       {
         "Name": "FirstPersonAnimations",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0xe0"
       },
       {
         "Name": "ThirdPersonAnimations",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0xf0"
       },
@@ -302,7 +309,7 @@
       },
       {
         "Name": "ExcludeDataAssets",
-        "Type": "TArray<struct ExcludeDataAssets>",
+        "Type": "TArray<struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x120"
       },
@@ -313,7 +320,7 @@
         "Offset": "0x130"
       },
       {
-        "Name": "pad0x4_JQZ1M[0x4]",
+        "Name": "pad0x4_LXT1Z[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x134"
@@ -334,7 +341,7 @@
     "ClassSize": "0xe0",
     "Attributes": [
       {
-        "Name": "pad0x80_ZLL3O[0x80]",
+        "Name": "pad0x80_R8LJI[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0x140"
@@ -346,14 +353,14 @@
         "Offset": "0x1c0"
       },
       {
-        "Name": "pad0x7_QJC8V[0x7]",
+        "Name": "pad0x7_4Z0IB[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1c1"
       },
       {
         "Name": "DefaultParameters",
-        "Type": "Struct TextureSwitchParameters",
+        "Type": "struct TextureSwitchParameters",
         "Size": "0x58",
         "Offset": "0x1c8"
       }
@@ -384,20 +391,20 @@
         "Offset": "0x22c"
       },
       {
-        "Name": "pad0x4_MQUJ7[0x4]",
+        "Name": "pad0x4_TVSYL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x234"
       },
       {
         "Name": "FallbackTexture",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x238"
       },
       {
         "Name": "Entries",
-        "Type": "TArray<struct Entries>",
+        "Type": "TArray<struct TextureSwitchSeedEntry>",
         "Size": "0x10",
         "Offset": "0x248"
       }
@@ -411,7 +418,7 @@
     "Attributes": [
       {
         "Name": "Entries",
-        "Type": "TArray<struct Entries>",
+        "Type": "TArray<struct TextureSwitchGenderEntry>",
         "Size": "0x10",
         "Offset": "0x220"
       }
@@ -425,7 +432,7 @@
     "Attributes": [
       {
         "Name": "Entries",
-        "Type": "TArray<struct Entries>",
+        "Type": "TArray<struct TextureSwitchEthnicityEntry>",
         "Size": "0x10",
         "Offset": "0x220"
       }
@@ -439,7 +446,7 @@
     "Attributes": [
       {
         "Name": "Entries",
-        "Type": "TArray<struct Entries>",
+        "Type": "TArray<struct TextureSwitchBodyShapeEntry>",
         "Size": "0x10",
         "Offset": "0x220"
       }
@@ -453,13 +460,13 @@
     "Attributes": [
       {
         "Name": "FallbackTexture",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x220"
       },
       {
         "Name": "Entries",
-        "Type": "TArray<struct Entries>",
+        "Type": "TArray<struct TextureSwitchItemEntry>",
         "Size": "0x10",
         "Offset": "0x230"
       }
@@ -479,7 +486,7 @@
       },
       {
         "Name": "Entries",
-        "Type": "TArray<struct Entries>",
+        "Type": "TArray<struct ColorTextureSwitchSeedEntry>",
         "Size": "0x10",
         "Offset": "0x228"
       }
@@ -505,7 +512,7 @@
       },
       {
         "Name": "BiasPerCategory",
-        "Type": "TArray<struct BiasPerCategory>",
+        "Type": "TArray<struct WardrobeOutfitCategoryBias>",
         "Size": "0x10",
         "Offset": "0x48"
       }

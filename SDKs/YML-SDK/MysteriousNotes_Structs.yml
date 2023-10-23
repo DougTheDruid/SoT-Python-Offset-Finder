@@ -5,15 +5,15 @@ ActiveNoteData:
   - Name: NotesRemoteServiceNoteModels
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct NotesRemoteServiceNoteModels>
+    Type: TArray<struct NotesRemoteServiceNoteModel>
   - Name: PendingCompletionEntries
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct PendingCompletionEntries>
+    Type: TArray<struct NoteCompletionEntry>
   - Name: PendingDetailRequestIDs
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<struct PendingDetailRequestIDs>
+    Type: TArray<struct Guid>
   ClassSize: '0x30'
 ClientNoteData:
   Attributes:
@@ -21,58 +21,78 @@ ClientNoteData:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_3IZQQ[0x7]
+  - Name: pad0x7_EBDD4[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
   - Name: PendingNotes
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct PendingNotes>
+    Type: TArray<struct MysteriousNoteInfo>
   ClassSize: '0x18'
 EventListenForCinematicEndEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_MDOIR[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EventMarkNoteDeleted:
   Attributes:
   - Name: PlayerController
     Offset: '0x0'
     Size: '0x8'
-    Type: Class PlayerController*
+    Type: class PlayerController*
   - Name: NoteId
     Offset: '0x8'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x18'
 EventMarkNoteRead:
   Attributes:
   - Name: PlayerController
     Offset: '0x0'
     Size: '0x8'
-    Type: Class PlayerController*
+    Type: class PlayerController*
   - Name: NoteId
     Offset: '0x8'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x18'
 EventMysteriousNoteContentUpdated:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_OHQKJ[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
 EventMysteriousNoteCustomContentUpdate:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_K7514[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EventMysteriousNoteRemoved:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_X5LS1[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
 EventMysteriousNoteSettingsLoaded:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_448VA[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EventNoteClientCompletionStep:
   Attributes:
   - Name: PlayerController
     Offset: '0x0'
     Size: '0x8'
-    Type: Class PlayerController*
+    Type: class PlayerController*
   - Name: CompletionStepID
     Offset: '0x8'
     Size: '0x8'
@@ -83,46 +103,47 @@ EventNoteCompletionStep:
   - Name: PlayerController
     Offset: '0x0'
     Size: '0x8'
-    Type: Class PlayerController*
+    Type: class PlayerController*
   - Name: CompletionStepID
     Offset: '0x8'
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x10'
 EventNotesUpdated:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_CH7LM[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EventOnlineAthenaPlayerControllerUnpossessed:
   Attributes:
   - Name: PlayerController
     Offset: '0x0'
     Size: '0x8'
-    Type: Class PlayerController*
-  ClassSize: '0x8'
-EventPlayerControllerPossessed:
-  Attributes:
-  - Name: PlayerController
-    Offset: '0x0'
-    Size: '0x8'
-    Type: Class PlayerController*
+    Type: class PlayerController*
   ClassSize: '0x8'
 EventTriggerMysteriousNotesPopup:
   Attributes:
   - Name: PlayerController
     Offset: '0x0'
     Size: '0x8'
-    Type: Class PlayerController*
+    Type: class PlayerController*
   - Name: CinematicSkipped
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_C4DP7[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
 MysteriousNoteInfo:
   Attributes:
   - Name: NoteId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: NoteRead
     Offset: '0x10'
     Size: '0x1'
@@ -131,24 +152,28 @@ MysteriousNoteInfo:
     Offset: '0x11'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_OFS7W[0x2]
+    Offset: '0x12'
+    Size: '0x2'
+    Type: char
   ClassSize: '0x14'
 MysteriousNoteRequest:
   Attributes:
   - Name: PlayerController
     Offset: '0x0'
     Size: '0x8'
-    Type: Class PlayerController*
+    Type: class PlayerController*
   - Name: PirateIdentity
     Offset: '0x8'
     Size: '0x78'
-    Type: Struct PirateIdentity
+    Type: struct PirateIdentity
   ClassSize: '0x80'
 MysteriousNoteTheme:
   Attributes:
   - Name: NoteType
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x10'
 MysteriousNotesCompletionEventsModel:
   Attributes:
@@ -169,7 +194,7 @@ NoteCompletionEntry:
   - Name: NoteId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: CompletionEventIds
     Offset: '0x10'
     Size: '0x10'
@@ -180,30 +205,34 @@ PlayerMysteriousNoteItem:
   - Name: OriginalNoteID
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: LocalisedTitle
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: LocalisedBody
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: NoteType
     Offset: '0x30'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
+  - Name: pad0x8_9UO17[0x8]
+    Offset: '0x40'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x48'
 PlayerNoteStateChangeTelemetryEvent:
   Attributes:
   - Name: NoteId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: NoteState
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x20'
 PlayerSentNotesTelemetryEvent:
   Attributes:
@@ -217,27 +246,27 @@ WieldableMysteriousNoteLayoutItem:
   - Name: Theme
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: Font
     Offset: '0x10'
     Size: '0x8'
-    Type: Class Font*
+    Type: class Font*
   - Name: Image
     Offset: '0x18'
     Size: '0x38'
-    Type: Struct TreasureMapWidgetStreamedTexture
+    Type: struct TreasureMapWidgetStreamedTexture
   - Name: RadialIcon
     Offset: '0x50'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: NoteTitleWidgetText
     Offset: '0x60'
     Size: '0x3c'
-    Type: Struct TreasureMapWidgetText
+    Type: struct TreasureMapWidgetText
   - Name: NoteBodyWidgetText
     Offset: '0x9c'
     Size: '0x3c'
-    Type: Struct TreasureMapWidgetText
+    Type: struct TreasureMapWidgetText
   - Name: NoteWidth
     Offset: '0xd8'
     Size: '0x4'

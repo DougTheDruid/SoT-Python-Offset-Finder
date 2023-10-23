@@ -7,7 +7,11 @@ InvalidTrinketCategory:
   InheritedSize: '0x78'
   Super: TrinketCategory
 SameActorTrinketLoadoutFinderPolicy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_FQP18[0x10]
+    Offset: '0x28'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -29,15 +33,15 @@ TrinketDesc:
   - Name: TrinketClass
     Offset: '0xc8'
     Size: '0x10'
-    Type: Struct StringClassReference
+    Type: struct StringClassReference
   - Name: PreviousItem
     Offset: '0xd8'
     Size: '0x10'
-    Type: Struct StringClassReference
+    Type: struct StringClassReference
   - Name: NextItem
     Offset: '0xe8'
     Size: '0x10'
-    Type: Struct StringClassReference
+    Type: struct StringClassReference
   ClassSize: '0x30'
   FullSize: '0xf8'
   InheritedSize: '0xc8'
@@ -61,7 +65,11 @@ TrinketLoadoutViewInterface:
   InheritedSize: '0x28'
   Super: Interface
 TrinketReplacementActor:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_HDN12[0x10]
+    Offset: '0x3c8'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x3d8'
   InheritedSize: '0x3c8'
@@ -77,19 +85,19 @@ TrinketSfxDataAsset:
   - Name: MountSfx
     Offset: '0x28'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: RemoveSfx
     Offset: '0x30'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: NudgeSfx
     Offset: '0x38'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: StraightenSfx
     Offset: '0x40'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'

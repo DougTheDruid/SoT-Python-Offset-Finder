@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "Factions",
-        "Type": "TArray<struct Factions>",
+        "Type": "TArray<struct ContestMatchmakingFactionMapEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }

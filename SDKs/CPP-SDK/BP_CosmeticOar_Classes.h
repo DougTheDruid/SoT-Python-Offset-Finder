@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_CosmeticOar_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   Oar;                                               // 0x3c8(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d0(0x8)
+	class StaticMeshComponent*                                   Oar;                                               // 0x3c8(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d0(0x8)
 };
 
 

@@ -2,23 +2,23 @@
 # https://github.com/DougTheDruid
 CrewOwnershipTrackingComponent:
   Attributes:
-  - Name: pad0x18_YP2EY[0x18]
+  - Name: pad0x18_F3E0N[0x18]
     Offset: '0xc8'
     Size: '0x18'
     Type: char
   - Name: SpawningCrewId
     Offset: '0xe0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: CurrentOwnedByCrewId
     Offset: '0xf0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: PreviousOwnedByCrewIdList
     Offset: '0x100'
     Size: '0x10'
-    Type: Struct OwnerListEntry
-  - Name: pad0x60_UF8CK[0x60]
+    Type: struct OwnerListEntry
+  - Name: pad0x60_MECEQ[0x60]
     Offset: '0x110'
     Size: '0x60'
     Type: char

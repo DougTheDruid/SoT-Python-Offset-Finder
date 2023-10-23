@@ -5,27 +5,27 @@ HeightTriggerableAudioComponentParams:
   - Name: Pool
     Offset: '0x28'
     Size: '0x8'
-    Type: Class WwiseObjectPoolWrapper*
+    Type: class WwiseObjectPoolWrapper*
   - Name: RisingOneShot
     Offset: '0x30'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: RisingStart
     Offset: '0x38'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: RisingStop
     Offset: '0x40'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: LoweringStart
     Offset: '0x48'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: LoweringStop
     Offset: '0x50'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -35,20 +35,20 @@ HeightTriggerableEffectsComponent:
   - Name: AudioParams
     Offset: '0xc8'
     Size: '0x8'
-    Type: Class HeightTriggerableAudioComponentParams*
+    Type: class HeightTriggerableAudioComponentParams*
   - Name: EmitterOwner
     Offset: '0xd0'
     Size: '0x10'
-    Type: Struct ActorComponentSelector
+    Type: struct ActorComponentSelector
   - Name: EmitterOffset
     Offset: '0xe0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: UseParentEmitter
     Offset: '0xec'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_545XL[0x3]
+  - Name: pad0x3_LBFWG[0x3]
     Offset: '0xed'
     Size: '0x3'
     Type: char
@@ -56,14 +56,14 @@ HeightTriggerableEffectsComponent:
     Offset: '0xf0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_HLGGZ[0x4]
+  - Name: pad0x4_ZMLU7[0x4]
     Offset: '0xf4'
     Size: '0x4'
     Type: char
   - Name: CameraShake
     Offset: '0xf8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: ShakeInnerRadius
     Offset: '0x100'
     Size: '0x4'
@@ -72,7 +72,7 @@ HeightTriggerableEffectsComponent:
     Offset: '0x104'
     Size: '0x4'
     Type: float
-  - Name: pad0x50_JLB0D[0x50]
+  - Name: pad0x50_W8OAH[0x50]
     Offset: '0x108'
     Size: '0x50'
     Type: char
@@ -81,30 +81,34 @@ HeightTriggerableEffectsComponent:
   InheritedSize: '0xc8'
   Super: ActorComponent
 SpireResource:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_BXGO7[0x10]
+    Offset: '0x3c8'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x3d8'
   InheritedSize: '0x3c8'
   Super: Actor
 SpireService:
   Attributes:
-  - Name: pad0x8_9K58S[0x8]
+  - Name: pad0x8_GFIZN[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
   - Name: Params
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class SpireServiceParams*
+    Type: class SpireServiceParams*
   - Name: ServerOnlySpireInfo
     Offset: '0x3d8'
     Size: '0x10'
-    Type: TArray<struct ServerOnlySpireInfo>
+    Type: TArray<struct ServerSpireInfo>
   - Name: SpireLevels
     Offset: '0x3e8'
     Size: '0x10'
-    Type: TArray<struct SpireLevels>
-  - Name: pad0x68_VL2PE[0x68]
+    Type: TArray<struct SpireInfo>
+  - Name: pad0x68_Q4FO9[0x68]
     Offset: '0x3f8'
     Size: '0x68'
     Type: char
@@ -123,7 +127,7 @@ SpireServiceParams:
   - Name: OnCancelFakeSpire
     Offset: '0x28'
     Size: '0x8'
-    Type: Class ActorSpawnData*
+    Type: class ActorSpawnData*
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
@@ -149,11 +153,11 @@ SpireStreamedLevelDataAsset:
   - Name: StreamedLevel
     Offset: '0x28'
     Size: '0x8'
-    Type: Class AthenaStreamedLevelDataAsset*
+    Type: class AthenaStreamedLevelDataAsset*
   - Name: Entries
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<struct Entries>
+    Type: TArray<struct SpireEntry>
   - Name: FeatureToggle
     Offset: '0x40'
     Size: '0x8'
@@ -191,8 +195,8 @@ TaleRegisterSpireStep:
   - Name: StepDesc
     Offset: '0x98'
     Size: '0x8'
-    Type: Class TaleRegisterSpireStepDesc*
-  - Name: pad0x8_252GZ[0x8]
+    Type: class TaleRegisterSpireStepDesc*
+  - Name: pad0x8_O8AD3[0x8]
     Offset: '0xa0'
     Size: '0x8'
     Type: char
@@ -205,25 +209,29 @@ TaleRegisterSpireStepDesc:
   - Name: SelectionOriginPoint
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableVector
+    Type: struct QuestVariableVector
   - Name: PlayerExclusionSelectionRadius
     Offset: '0xb0'
     Size: '0x30'
-    Type: Struct QuestVariableFloat
+    Type: struct QuestVariableFloat
   - Name: AllocatedSpireHandle
     Offset: '0xe0'
     Size: '0x30'
-    Type: Struct QuestVariableTaleResourceHandle
+    Type: struct QuestVariableTaleResourceHandle
   - Name: AllocatedSpireLocation
     Offset: '0x110'
     Size: '0x30'
-    Type: Struct QuestVariableVector
+    Type: struct QuestVariableVector
   ClassSize: '0xc0'
   FullSize: '0x140'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleReleaseSpireStep:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_435EZ[0x8]
+    Offset: '0x98'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0xa0'
   InheritedSize: '0x98'
@@ -233,13 +241,17 @@ TaleReleaseSpireStepDesc:
   - Name: SpireHandle
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableTaleResourceHandle
+    Type: struct QuestVariableTaleResourceHandle
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleSpireService:
-  Attributes: []
+  Attributes:
+  - Name: pad0x48_J91JP[0x48]
+    Offset: '0x60'
+    Size: '0x48'
+    Type: char
   ClassSize: '0x48'
   FullSize: '0xa8'
   InheritedSize: '0x60'
@@ -263,7 +275,11 @@ TaleUnloadSpireStepDesc:
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleWaitForSpireToLoadStep:
-  Attributes: []
+  Attributes:
+  - Name: pad0x50_A1H8J[0x50]
+    Offset: '0x98'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x50'
   FullSize: '0xe8'
   InheritedSize: '0x98'

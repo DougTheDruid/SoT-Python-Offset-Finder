@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "ProjectileTickPools",
-        "Type": "TArray<struct ProjectileTickPools>",
+        "Type": "TArray<struct ThrottledProjectileTickPool>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -21,7 +21,7 @@
     "Attributes": [
       {
         "Name": "GlobalSettings",
-        "Type": "TArray<struct GlobalSettings>",
+        "Type": "TArray<struct GlobalProjectileSettings>",
         "Size": "0x10",
         "Offset": "0x38"
       }

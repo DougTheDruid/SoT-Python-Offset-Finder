@@ -5,7 +5,7 @@ BP_SkullRitual_Pipe_C:
   - Name: gmp_sm_pipe_oos_01_a
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   ClassSize: '0x8'
   FullSize: '0x3d0'
   InheritedSize: '0x3c8'

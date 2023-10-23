@@ -9,14 +9,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_39W08[0x3]",
+        "Name": "pad0x3_25U57[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
       },
       {
         "Name": "AssociatedCrew",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
       }
@@ -27,13 +27,13 @@
     "Attributes": [
       {
         "Name": "FinishedEventType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "AssociatedCrew",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -55,14 +55,14 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_X8XJO[0x3]",
+        "Name": "pad0x3_39SOM[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
       },
       {
         "Name": "AssociatedCrew",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0xc"
       }
@@ -73,7 +73,7 @@
     "Attributes": [
       {
         "Name": "GameEventType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -100,14 +100,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_I6E0T[0x3]",
+        "Name": "pad0x3_MPGA3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
       },
       {
         "Name": "QuestId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
       }
@@ -115,14 +115,21 @@
   },
   "EmissaryCompanyChangedEvent": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_K5MXK[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EmissaryLedgerVisited": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "CompanyId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }

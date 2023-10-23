@@ -14,30 +14,30 @@
     "Attributes": [
       {
         "Name": "ClassToSpawn",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "Resolution",
-        "Type": "Struct IntPoint",
+        "Type": "struct IntPoint",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "World",
-        "Type": "Class World*",
+        "Type": "class World*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "RenderTarget",
-        "Type": "Class TextureRenderTarget2D*",
+        "Type": "class TextureRenderTarget2D*",
         "Size": "0x8",
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x50_OC301[0x50]",
+        "Name": "pad0x50_44MGQ[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x58"

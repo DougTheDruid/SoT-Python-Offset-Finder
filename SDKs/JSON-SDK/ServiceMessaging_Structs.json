@@ -15,7 +15,7 @@
     "Attributes": [
       {
         "Name": "RoutingKey",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -26,7 +26,7 @@
     "Attributes": [
       {
         "Name": "RoutingKey",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -37,7 +37,7 @@
     "Attributes": [
       {
         "Name": "NetId",
-        "Type": "Struct UniqueNetIdRepl",
+        "Type": "struct UniqueNetIdRepl",
         "Size": "0x18",
         "Offset": "0x0"
       }

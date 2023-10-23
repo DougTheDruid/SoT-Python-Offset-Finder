@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct WarMapVoteAddedEvent
 {
 public:
-	Class Actor*                                                 Voter;                                             // 0x0(0x8)
+	class Actor*                                                 Voter;                                             // 0x0(0x8)
 };
 
 
@@ -18,7 +18,7 @@ public:
 struct EventLocalPlayerOpenedWarMap
 {
 public:
-	Class Company*                                               Faction;                                           // 0x0(0x8)
+	class Company*                                               Faction;                                           // 0x0(0x8)
 };
 
 
@@ -26,6 +26,7 @@ public:
 struct EventWarMapHardModeStateChanged
 {
 public:
+	char                                                         pad0x1_G1GIN[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -33,7 +34,8 @@ public:
 struct EventWarMapStateChanged
 {
 public:
-	Class Actor*                                                 WarMapProposalContainer;                           // 0x8(0x8)
+	char                                                         pad0x8_WJOOR[0x8];                                 // 0x0(0x8)
+	class Actor*                                                 WarMapProposalContainer;                           // 0x8(0x8)
 };
 
 

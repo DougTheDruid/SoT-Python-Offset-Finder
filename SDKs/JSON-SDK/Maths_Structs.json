@@ -3,6 +3,12 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
+        "Name": "pad0x10_LH7RX[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Weights",
         "Type": "TArray<Float Weights>",
         "Size": "0x10",
@@ -14,8 +20,14 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
+        "Name": "pad0x20_76VLZ[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
         "Name": "SubRanges",
-        "Type": "TArray<struct SubRanges>",
+        "Type": "TArray<struct WeightedProbabilityRangeOfRangesFloatPair>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -43,13 +55,13 @@
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
       {
         "Name": "Rotation",
-        "Type": "Struct Rotator",
+        "Type": "struct Rotator",
         "Size": "0xc",
         "Offset": "0xc"
       }
@@ -77,7 +89,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_XMJHG[0x3]",
+        "Name": "pad0x3_4N6K5[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
@@ -119,14 +131,14 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0xc_8VZLL[0xc]",
+        "Name": "pad0xc_SAMOI[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x24"
       },
       {
         "Name": "InterpolationAsTransform",
-        "Type": "Struct Transform",
+        "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0x30"
       }
@@ -137,7 +149,7 @@
     "Attributes": [
       {
         "Name": "UpdatedRotation",
-        "Type": "Struct Rotator",
+        "Type": "struct Rotator",
         "Size": "0xc",
         "Offset": "0x0"
       },
@@ -163,14 +175,21 @@
   },
   "TimedBuffer": {
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_VVFOX[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
   },
   "FixedStepInterpCurveVector2D": {
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<struct Points>",
+        "Type": "TArray<struct FixedStepInterpCurvePointVector2D>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -185,6 +204,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x14"
+      },
+      {
+        "Name": "pad0x3_DSNLJ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x15"
       }
     ]
   },
@@ -193,13 +218,13 @@
     "Attributes": [
       {
         "Name": "OutVal",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Tangent",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -207,7 +232,14 @@
   },
   "GrabBag": {
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x20_Z75BQ[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
   },
   "InertialSmoothedFloat": {
     "ClassSize": "0x10",
@@ -252,6 +284,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_Q1N17[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
       }
     ]
   },

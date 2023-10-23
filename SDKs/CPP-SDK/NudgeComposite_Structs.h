@@ -10,8 +10,9 @@ namespace DougsSDKDumper
 struct NudgeChancePerDamagerType
 {
 public:
-	class                                                        DamagerType;                                       // 0x0(0x8)
+	class UClass*                                                DamagerType;                                       // 0x0(0x8)
 	float                                                        ChanceOfNudge;                                     // 0x8(0x4)
+	char                                                         pad0x4_98DIJ[0x4];                                 // 0xc(0x4)
 };
 
 

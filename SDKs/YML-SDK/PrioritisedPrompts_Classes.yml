@@ -5,20 +5,20 @@ BasePromptCoordinator:
   - Name: PlayerController
     Offset: '0x28'
     Size: '0x8'
-    Type: Class AthenaPlayerController*
-  - Name: pad0x10_Q46LQ[0x10]
+    Type: class AthenaPlayerController*
+  - Name: pad0x10_GKF36[0x10]
     Offset: '0x30'
     Size: '0x10'
     Type: char
   - Name: PrioritisedPromptsManager
     Offset: '0x40'
     Size: '0x8'
-    Type: Class PrioritisedPromptsManager*
+    Type: class PrioritisedPromptsManager*
   - Name: CharacterWithRegisteredEvents
     Offset: '0x48'
     Size: '0x8'
-    Type: Class Character*
-  - Name: pad0xc8_0ZMJ2[0xc8]
+    Type: class Character*
+  - Name: pad0xc8_8WV6X[0xc8]
     Offset: '0x50'
     Size: '0xc8'
     Type: char
@@ -34,33 +34,33 @@ GenericVoyagePrioritisedPrompt_PromptAccessKey:
   Super: PromptCounterAccessKey
 GetPromptsLocalService:
   Attributes:
-  - Name: pad0x10_NAPG0[0x10]
+  - Name: pad0x10_4MBLT[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
   - Name: WorldContextObject
     Offset: '0x38'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
   Super: BlueprintAsyncActionBase
 PrioritisedPromptsManager:
   Attributes:
-  - Name: pad0x8_7NUET[0x8]
+  - Name: pad0x8_OK808[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
   - Name: AllPrompts
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<struct AllPrompts>
+    Type: TArray<struct PrioritisedPromptWithHandle>
   - Name: PlayerController
     Offset: '0x40'
     Size: '0x8'
-    Type: Class PlayerController*
-  - Name: pad0x30_42BQW[0x30]
+    Type: class PlayerController*
+  - Name: pad0x30_YLG1O[0x30]
     Offset: '0x48'
     Size: '0x30'
     Type: char
@@ -79,13 +79,17 @@ PromptCounterAccessKey:
   - Name: Key
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
 PromptsLocalService:
-  Attributes: []
+  Attributes:
+  - Name: pad0x70_DE0YW[0x70]
+    Offset: '0x28'
+    Size: '0x70'
+    Type: char
   ClassSize: '0x70'
   FullSize: '0x98'
   InheritedSize: '0x28'

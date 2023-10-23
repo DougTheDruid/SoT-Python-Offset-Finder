@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "PlanarReflectionPlane",
-        "Type": "Class PlanarReflectionPlaneComponent*",
+        "Type": "class PlanarReflectionPlaneComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       }

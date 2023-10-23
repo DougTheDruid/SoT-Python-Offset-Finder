@@ -10,7 +10,7 @@
       },
       {
         "Name": "NoteGUID",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
       }
@@ -26,14 +26,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_VY2AI[0x3]",
+        "Name": "pad0x3_E9HVX[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
       },
       {
         "Name": "NoteId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
       }
@@ -49,26 +49,26 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_PH297[0x4]",
+        "Name": "pad0x4_MGYO4[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "NoteType",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "NoteTitle",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "NoteBody",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -79,7 +79,7 @@
     "Attributes": [
       {
         "Name": "Notes",
-        "Type": "TArray<struct Notes>",
+        "Type": "TArray<struct NotesRemoteServiceNoteDetailModel>",
         "Size": "0x10",
         "Offset": "0x0"
       }

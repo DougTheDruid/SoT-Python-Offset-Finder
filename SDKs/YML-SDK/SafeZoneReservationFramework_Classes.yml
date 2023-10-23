@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 SafeZoneComponent:
   Attributes:
-  - Name: pad0x10_VRDKS[0x10]
+  - Name: pad0x10_INM7B[0x10]
     Offset: '0x5e0'
     Size: '0x10'
     Type: char
@@ -10,7 +10,7 @@ SafeZoneComponent:
     Offset: '0x5f0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_77SV8[0x4]
+  - Name: pad0x4_QD5E9[0x4]
     Offset: '0x5f4'
     Size: '0x4'
     Type: char
@@ -34,7 +34,7 @@ SafeZoneComponent:
     Offset: '0x606'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_1OGCQ[0x1]
+  - Name: pad0x1_VOCOA[0x1]
     Offset: '0x607'
     Size: '0x1'
     Type: char
@@ -42,7 +42,7 @@ SafeZoneComponent:
     Offset: '0x608'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_MZ0YE[0x4]
+  - Name: pad0x4_4RFKY[0x4]
     Offset: '0x60c'
     Size: '0x4'
     Type: char
@@ -50,7 +50,7 @@ SafeZoneComponent:
     Offset: '0x610'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_8YAXX[0x3]
+  - Name: pad0x3_SBMX4[0x3]
     Offset: '0x611'
     Size: '0x3'
     Type: char
@@ -58,7 +58,7 @@ SafeZoneComponent:
     Offset: '0x614'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_CC0U6[0x4]
+  - Name: pad0x4_6PLHW[0x4]
     Offset: '0x618'
     Size: '0x4'
     Type: char
@@ -78,19 +78,19 @@ SafeZoneComponent:
     Offset: '0x628'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_O3MM8[0x7]
+  - Name: pad0x7_9LX8H[0x7]
     Offset: '0x629'
     Size: '0x7'
     Type: char
   - Name: RepelForceGradientCurve
     Offset: '0x630'
     Size: '0x80'
-    Type: Struct RuntimeFloatCurve
+    Type: struct RuntimeFloatCurve
   - Name: UseAngularImpulse
     Offset: '0x6b0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_FOQEF[0x3]
+  - Name: pad0x3_TYQVE[0x3]
     Offset: '0x6b1'
     Size: '0x3'
     Type: char
@@ -98,7 +98,7 @@ SafeZoneComponent:
     Offset: '0x6b4'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_BSSTV[0x4]
+  - Name: pad0x4_XCW7F[0x4]
     Offset: '0x6b8'
     Size: '0x4'
     Type: char
@@ -118,7 +118,7 @@ SafeZoneComponent:
     Offset: '0x6c5'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_UB9F7[0x2]
+  - Name: pad0x2_VQLB3[0x2]
     Offset: '0x6c6'
     Size: '0x2'
     Type: char
@@ -130,7 +130,7 @@ SafeZoneComponent:
     Offset: '0x6d0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5f_DEX6M[0x5f]
+  - Name: pad0x5f_1RB6X[0x5f]
     Offset: '0x6d1'
     Size: '0x5f'
     Type: char

@@ -6,12 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x88
+// Size 0x40
 struct AdventureOnDemandServiceCrewEntry
 {
 public:
-	TArray<class CrewVoyageParticipant*>                         Participants;                                      // 0x40(0x10)
-	Class TunnelDesc*                                            TunnelDesc;                                        // 0x50(0x8)
+	char                                                         pad0x38_US45S[0x38];                               // 0x0(0x38)
+	class TunnelDesc*                                            TunnelDesc;                                        // 0x38(0x8)
 };
 
 

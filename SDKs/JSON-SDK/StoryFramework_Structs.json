@@ -15,7 +15,7 @@
     "Attributes": [
       {
         "Name": "StoryResourceStateChanges",
-        "Type": "TArray<struct StoryResourceStateChanges>",
+        "Type": "TArray<struct StoryResourceStateChanged>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -55,7 +55,7 @@
     "Attributes": [
       {
         "Name": "StoryFlag",
-        "Type": "Struct StoryFlag",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -66,7 +66,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_I3LW6[0x7]",
+        "Name": "pad0x7_H4DW6[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -84,7 +84,7 @@
     "Attributes": [
       {
         "Name": "Story",
-        "Type": "Struct StoryFlag",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -110,6 +110,12 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x20_IJKWR[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x8"
       }
     ]
   },
@@ -118,19 +124,19 @@
     "Attributes": [
       {
         "Name": "Story",
-        "Type": "Struct StoryFlag",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "GroupLocations",
-        "Type": "TArray<struct GroupLocations>",
+        "Type": "TArray<struct NamedPointsGroupActorLocation>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "LayerToSpawn",
-        "Type": "Class LayerActorsDataAsset*",
+        "Type": "class LayerActorsDataAsset*",
         "Size": "0x8",
         "Offset": "0x18"
       }
@@ -141,25 +147,25 @@
     "Attributes": [
       {
         "Name": "Story",
-        "Type": "Struct StoryFlag",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "ActorLocations",
-        "Type": "TArray<struct ActorLocations>",
+        "Type": "TArray<struct ActorLocationPair>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "NamedPointsActorLocations",
-        "Type": "TArray<struct NamedPointsActorLocations>",
+        "Type": "TArray<struct NamedPointsActorLocation>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "InstancedLayerLocations",
-        "Type": "TArray<struct InstancedLayerLocations>",
+        "Type": "TArray<struct InstancedLayerLocation>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -170,13 +176,13 @@
     "Attributes": [
       {
         "Name": "ActorWithInstancedLayerComponent",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "LayerToSpawn",
-        "Type": "Class LayerActorsDataAsset*",
+        "Type": "class LayerActorsDataAsset*",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -187,13 +193,13 @@
     "Attributes": [
       {
         "Name": "ActorWithNamedPointsComponent",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "GroupLocations",
-        "Type": "TArray<struct GroupLocations>",
+        "Type": "TArray<struct NamedPointsGroupActorLocation>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -204,9 +210,15 @@
     "Attributes": [
       {
         "Name": "SpawnLocation",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x20_3DO0B[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x10"
       }
     ]
   },
@@ -215,13 +227,13 @@
     "Attributes": [
       {
         "Name": "StorySpawnedActors",
-        "Type": "TArray<struct StorySpawnedActors>",
+        "Type": "TArray<struct StorySpawnedActorsIndividualStoryInfo>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "StoryDespawnedActors",
-        "Type": "TArray<struct StoryDespawnedActors>",
+        "Type": "TArray<struct StorySpawnedActorsIndividualStoryInfo>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -232,7 +244,7 @@
     "Attributes": [
       {
         "Name": "StoryName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -254,20 +266,46 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
+        "Name": "pad0x28_7V1MB[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
         "Name": "StoryFlags",
-        "Type": "TArray<struct StoryFlags>",
+        "Type": "TArray<struct StoryFlag>",
         "Size": "0x10",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x10_NCXGZ[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x38"
       }
     ]
   },
   "IsAllStoryActiveCondition": {
     "ClassSize": "0x48",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x48_MHBIQ[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
+      }
+    ]
   },
   "IsAnyStoryActiveCondition": {
     "ClassSize": "0x48",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x48_LYV3K[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
+      }
+    ]
   },
   "StoryInfo": {
     "ClassSize": "0x18",
@@ -277,6 +315,12 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_W3CVU[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -291,7 +335,7 @@
       },
       {
         "Name": "StoryDesc",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -345,6 +389,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x21"
+      },
+      {
+        "Name": "pad0x6_QXXBJ[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x22"
       }
     ]
   },

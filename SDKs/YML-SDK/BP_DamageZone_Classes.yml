@@ -5,7 +5,7 @@ BP_DamageZone_C:
   - Name: UberGraphFrame
     Offset: '0x820'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: Repair Tag
     Offset: '0x828'
     Size: '0x8'
@@ -13,7 +13,7 @@ BP_DamageZone_C:
   - Name: RepairGroup
     Offset: '0x830'
     Size: '0x10'
-    Type: Struct BP_InternalDamageGroup
+    Type: struct BP_InternalDamageGroup
   - Name: ExternalHitBufferIndex
     Offset: '0x840'
     Size: '0x4'

@@ -10,16 +10,16 @@ namespace DougsSDKDumper
 struct InAppPurchaseProductInfo
 {
 public:
-	Struct FString                                               Identifier;                                        // 0x0(0x10)
-	Struct FString                                               TransactionIdentifier;                             // 0x10(0x10)
-	Struct FString                                               DisplayName;                                       // 0x20(0x10)
-	Struct FString                                               DisplayDescription;                                // 0x30(0x10)
-	Struct FString                                               DisplayPrice;                                      // 0x40(0x10)
-	Struct FString                                               CurrencyCode;                                      // 0x50(0x10)
-	Struct FString                                               CurrencySymbol;                                    // 0x60(0x10)
-	Struct FString                                               DecimalSeparator;                                  // 0x70(0x10)
-	Struct FString                                               GroupingSeparator;                                 // 0x80(0x10)
-	Struct FString                                               ReceiptData;                                       // 0x90(0x10)
+	struct FString                                               Identifier;                                        // 0x0(0x10)
+	struct FString                                               TransactionIdentifier;                             // 0x10(0x10)
+	struct FString                                               DisplayName;                                       // 0x20(0x10)
+	struct FString                                               DisplayDescription;                                // 0x30(0x10)
+	struct FString                                               DisplayPrice;                                      // 0x40(0x10)
+	struct FString                                               CurrencyCode;                                      // 0x50(0x10)
+	struct FString                                               CurrencySymbol;                                    // 0x60(0x10)
+	struct FString                                               DecimalSeparator;                                  // 0x70(0x10)
+	struct FString                                               GroupingSeparator;                                 // 0x80(0x10)
+	struct FString                                               ReceiptData;                                       // 0x90(0x10)
 };
 
 
@@ -27,8 +27,8 @@ public:
 struct InAppPurchaseRestoreInfo
 {
 public:
-	Struct FString                                               Identifier;                                        // 0x0(0x10)
-	Struct FString                                               ReceiptData;                                       // 0x10(0x10)
+	struct FString                                               Identifier;                                        // 0x0(0x10)
+	struct FString                                               ReceiptData;                                       // 0x10(0x10)
 };
 
 
@@ -36,11 +36,11 @@ public:
 struct AchievementUpdatedEvent
 {
 public:
-	Struct FString                                               AchievementId;                                     // 0x0(0x10)
+	struct FString                                               AchievementId;                                     // 0x0(0x10)
 	bool                                                         Successful;                                        // 0x14(0x1)
-	char                                                         pad0x3_VJSMD[0x3];                                 // 0x15(0x3)
-	Struct FString                                               Reason;                                            // 0x18(0x10)
-	Struct FString                                               Platform;                                          // 0x28(0x10)
+	char                                                         pad0x3_ET578[0x3];                                 // 0x15(0x3)
+	struct FString                                               Reason;                                            // 0x18(0x10)
+	struct FString                                               Platform;                                          // 0x28(0x10)
 };
 
 
@@ -49,7 +49,7 @@ struct NamedInterfaceDef
 {
 public:
 	struct FName                                                 InterfaceName;                                     // 0x0(0x8)
-	Struct FString                                               InterfaceClassName;                                // 0x8(0x10)
+	struct FString                                               InterfaceClassName;                                // 0x8(0x10)
 };
 
 
@@ -58,7 +58,7 @@ struct NamedInterface
 {
 public:
 	struct FName                                                 InterfaceName;                                     // 0x0(0x8)
-	Class Object*                                                InterfaceObject;                                   // 0x8(0x8)
+	class Object*                                                InterfaceObject;                                   // 0x8(0x8)
 };
 
 
@@ -66,16 +66,16 @@ public:
 struct OnlineStoreCatalogItem
 {
 public:
-	Struct FString                                               ProductId;                                         // 0x0(0x10)
-	Struct FString                                               Title;                                             // 0x10(0x10)
-	Struct FString                                               Description;                                       // 0x20(0x10)
-	Struct FString                                               FormattedPrice;                                    // 0x30(0x10)
-	Struct FString                                               FormattedBasePrice;                                // 0x40(0x10)
+	struct FString                                               ProductId;                                         // 0x0(0x10)
+	struct FString                                               Title;                                             // 0x10(0x10)
+	struct FString                                               Description;                                       // 0x20(0x10)
+	struct FString                                               FormattedPrice;                                    // 0x30(0x10)
+	struct FString                                               FormattedBasePrice;                                // 0x40(0x10)
 	bool                                                         IsOnSale;                                          // 0x50(0x1)
-	char                                                         pad0x7_TGOHL[0x7];                                 // 0x51(0x7)
-	Struct DateTime                                              SaleEndDate;                                       // 0x58(0x8)
-	Struct FString                                               ImageUri;                                          // 0x60(0x10)
-	Struct FString                                               CurrencyCode;                                      // 0x70(0x10)
+	char                                                         pad0x7_VRUSJ[0x7];                                 // 0x51(0x7)
+	struct DateTime                                              SaleEndDate;                                       // 0x58(0x8)
+	struct FString                                               ImageUri;                                          // 0x60(0x10)
+	struct FString                                               CurrencyCode;                                      // 0x70(0x10)
 	TArray<Str MetaTags>                                         MetaTags;                                          // 0x80(0x10)
 };
 
@@ -84,8 +84,9 @@ public:
 struct InAppPurchaseProductRequest
 {
 public:
-	Struct FString                                               ProductIdentifier;                                 // 0x0(0x10)
+	struct FString                                               ProductIdentifier;                                 // 0x0(0x10)
 	bool                                                         bIsConsumable;                                     // 0x10(0x1)
+	char                                                         pad0x7_XM28D[0x7];                                 // 0x11(0x7)
 };
 
 

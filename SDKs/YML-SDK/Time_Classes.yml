@@ -7,7 +7,11 @@ CustomizableTimeInterface:
   InheritedSize: '0x28'
   Super: Interface
 CustomizableTimeService:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_WCYL0[0x8]
+    Offset: '0x500'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x508'
   InheritedSize: '0x500'
@@ -19,7 +23,11 @@ DebugTimeInterface:
   InheritedSize: '0x28'
   Super: Interface
 DebugTimeService:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_QS0L1[0x8]
+    Offset: '0x4f8'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x500'
   InheritedSize: '0x4f8'
@@ -50,15 +58,15 @@ TimeInterface:
   Super: Interface
 TimeService:
   Attributes:
-  - Name: pad0x38_GVR01[0x38]
+  - Name: pad0x38_8BLRJ[0x38]
     Offset: '0x3c8'
     Size: '0x38'
     Type: char
   - Name: GameWorldTimeOffset
     Offset: '0x400'
     Size: '0x8'
-    Type: Struct Timespan
-  - Name: pad0x4_0A2C6[0x4]
+    Type: struct Timespan
+  - Name: pad0x4_XRQAB[0x4]
     Offset: '0x408'
     Size: '0x4'
     Type: char
@@ -109,8 +117,8 @@ TimeService:
   - Name: ReplicatedServerTime
     Offset: '0x498'
     Size: '0x10'
-    Type: Struct ReplicatedAuthoritativeTime
-  - Name: pad0x50_9NS9V[0x50]
+    Type: struct ReplicatedAuthoritativeTime
+  - Name: pad0x50_M8SSF[0x50]
     Offset: '0x4a8'
     Size: '0x50'
     Type: char

@@ -10,11 +10,12 @@ namespace DougsSDKDumper
 struct DebugMenuButtonShortcut
 {
 public:
-	Struct FString                                               DisplayName;                                       // 0x0(0x10)
-	Struct FString                                               ConsoleCommand;                                    // 0x10(0x10)
-	TArray<struct Buttons>                                       Buttons;                                           // 0x20(0x10)
+	struct FString                                               DisplayName;                                       // 0x0(0x10)
+	struct FString                                               ConsoleCommand;                                    // 0x10(0x10)
+	TArray<struct Key>                                           Buttons;                                           // 0x20(0x10)
 	float                                                        RequiredHoldTime;                                  // 0x30(0x4)
 	bool                                                         AvailableInShippingBuilds;                         // 0x34(0x1)
+	char                                                         pad0xb_EBZX0[0xb];                                 // 0x35(0xb)
 };
 
 
@@ -22,12 +23,13 @@ public:
 struct DebugMenuDataAssetEntry
 {
 public:
-	Struct FString                                               MenuPath;                                          // 0x0(0x10)
-	Struct FString                                               DisplayName;                                       // 0x10(0x10)
-	Struct FString                                               ConsoleCommand;                                    // 0x20(0x10)
+	struct FString                                               MenuPath;                                          // 0x0(0x10)
+	struct FString                                               DisplayName;                                       // 0x10(0x10)
+	struct FString                                               ConsoleCommand;                                    // 0x20(0x10)
 	bool                                                         CloseMenuWhenExecuted;                             // 0x30(0x1)
 	bool                                                         AvailableInShippingBuilds;                         // 0x31(0x1)
 	bool                                                         AddToCommonlyUsedMenu;                             // 0x32(0x1)
+	char                                                         pad0x5_V2NCI[0x5];                                 // 0x33(0x5)
 };
 
 
@@ -35,8 +37,8 @@ public:
 struct DebugMenuUserItem
 {
 public:
-	Struct FString                                               path;                                              // 0x0(0x10)
-	Struct FString                                               Command;                                           // 0x10(0x10)
+	struct FString                                               path;                                              // 0x0(0x10)
+	struct FString                                               Command;                                           // 0x10(0x10)
 };
 
 
@@ -44,6 +46,7 @@ public:
 struct DebugErrorHappeningEvent
 {
 public:
+	char                                                         pad0x1_Q0W6W[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -51,8 +54,8 @@ public:
 struct DebugMenuOptionExecutedEvent
 {
 public:
-	Struct FString                                               DebugMenuItemName;                                 // 0x0(0x10)
-	Struct FString                                               ConsoleCommand;                                    // 0x10(0x10)
+	struct FString                                               DebugMenuItemName;                                 // 0x0(0x10)
+	struct FString                                               ConsoleCommand;                                    // 0x10(0x10)
 };
 
 

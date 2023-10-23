@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_Compass_C: public Compass
 {
 public:
-	Class InventoryItemComponent*                                InventoryItem;                                     // 0x8e0(0x8)
+	class InventoryItemComponent*                                InventoryItem;                                     // 0x8e0(0x8)
 };
 
 

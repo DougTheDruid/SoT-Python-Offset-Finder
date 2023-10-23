@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_AudioIslandStaticMeshAssociator_C: public AudioIslandStaticMeshAssociatorBase
 {
 public:
-	Class StaticMeshAudioEmittersComponent*                      StaticMeshAudioEmitters;                           // 0x3c8(0x8)
+	class StaticMeshAudioEmittersComponent*                      StaticMeshAudioEmitters;                           // 0x3c8(0x8)
 };
 
 

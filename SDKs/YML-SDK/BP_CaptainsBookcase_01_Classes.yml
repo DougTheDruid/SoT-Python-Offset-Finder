@@ -5,51 +5,51 @@ BP_CaptainsBookcase_01_C:
   - Name: UberGraphFrame
     Offset: '0x6a8'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: OrderOfSouls_ScrollStack
     Offset: '0x6b0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: MerchantsAliance_ScrollStack
     Offset: '0x6b8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Mercenary_ScrollStack
     Offset: '0x6c0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Legendary_ScrollStack
     Offset: '0x6c8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: GoldHoarder_ScrollStack
     Offset: '0x6d0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: MergedBookcaseAndDressing
     Offset: '0x6d8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Company_GH
     Offset: '0x6e0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Company_MA
     Offset: '0x6e8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Company_OoS
     Offset: '0x6f0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Company_Leg
     Offset: '0x6f8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Company_Merc
     Offset: '0x700'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x60'
   FullSize: '0x708'
   InheritedSize: '0x6a8'

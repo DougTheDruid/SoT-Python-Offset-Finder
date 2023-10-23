@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_OnlineAthenaGameMode_C: public OnlineAthenaGameMode
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0xd50(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0xd50(0x8)
 };
 
 

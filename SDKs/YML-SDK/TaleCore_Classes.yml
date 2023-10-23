@@ -5,7 +5,7 @@ ClientCommandHandler:
   - Name: CommandQueue
     Offset: '0x3c8'
     Size: '0x18'
-    Type: Struct ClientCommandQueue
+    Type: struct ClientCommandQueue
   ClassSize: '0x18'
   FullSize: '0x3e0'
   InheritedSize: '0x3c8'
@@ -15,8 +15,8 @@ TaleStruct:
   - Name: StructId
     Offset: '0x88'
     Size: '0x10'
-    Type: Struct Guid
-  - Name: pad0x20_NF5RM[0x20]
+    Type: struct Guid
+  - Name: pad0x20_1OUQ2[0x20]
     Offset: '0x98'
     Size: '0x20'
     Type: char

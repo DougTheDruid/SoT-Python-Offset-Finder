@@ -10,7 +10,8 @@ namespace DougsSDKDumper
 struct EventAffectedByExplosion
 {
 public:
-	class                                                        DamagerType;                                       // 0x0(0x8)
+	class UClass*                                                DamagerType;                                       // 0x0(0x8)
+	char                                                         pad0x10_FW1WX[0x10];                               // 0x8(0x10)
 };
 
 
@@ -18,7 +19,7 @@ public:
 struct EventExplosionIgnitedActor
 {
 public:
-	Class Actor*                                                 IgnitedActor;                                      // 0x0(0x8)
+	class Actor*                                                 IgnitedActor;                                      // 0x0(0x8)
 };
 
 
@@ -26,6 +27,7 @@ public:
 struct EventOnExploded
 {
 public:
+	char                                                         pad0xc_ET8JN[0xc];                                 // 0x0(0xc)
 };
 
 
@@ -33,7 +35,7 @@ public:
 struct EventExplosionOverlap
 {
 public:
-	class                                                        DamagerType;                                       // 0x0(0x8)
+	class UClass*                                                DamagerType;                                       // 0x0(0x8)
 };
 
 

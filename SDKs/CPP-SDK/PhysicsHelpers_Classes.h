@@ -17,6 +17,7 @@ public:
 class MockPostPhysicsTickerComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x10_0P6NJ[0x10];                               // 0xc8(0x10)
 };
 
 

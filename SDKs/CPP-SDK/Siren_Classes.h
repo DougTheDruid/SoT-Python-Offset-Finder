@@ -62,10 +62,11 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0xa68] - InheritedSize[0xa60]
+// Size 0x8 (Full Size[0xa78] - InheritedSize[0xa70]
 class SirenController: public AthenaSwimmingAIController
 {
 public:
+	char                                                         pad0x8_P835V[0x8];                                 // 0xa70(0x8)
 };
 
 
@@ -80,7 +81,7 @@ public:
 class SirenPartsDesc: public MeshMemoryConstraintsAIPartsDesc
 {
 public:
-	class                                                        AnimationID;                                       // 0x80(0x8)
+	class UClass*                                                AnimationID;                                       // 0x80(0x8)
 };
 
 

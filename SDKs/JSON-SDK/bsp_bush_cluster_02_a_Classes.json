@@ -1,55 +1,55 @@
 {
   "bsp_bush_cluster_02_a_C": {
-    "Super": "None",
+    "Super": "BP_Placement_HeightDrop_C",
     "FullSize": "0x448",
     "InheritedSize": "0x408",
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMesh",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMesh4",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMesh3",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMesh2",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMesh1",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent02",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent01",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
-        "Name": "None",
-        "Type": "Class SceneComponent*",
+        "Name": "SharedRoot",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x440"
       }

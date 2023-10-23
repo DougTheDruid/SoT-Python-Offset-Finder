@@ -4,13 +4,13 @@
     "Attributes": [
       {
         "Name": "Company",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Faction",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -21,13 +21,13 @@
     "Attributes": [
       {
         "Name": "Faction",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "PopUpMessageDesc",
-        "Type": "Class DataAsset*",
+        "Type": "class DataAsset*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -78,13 +78,13 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Faction",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x10"
       },
@@ -95,7 +95,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x3_NXMEU[0x3]",
+        "Name": "pad0x3_U9H6R[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x19"
@@ -131,19 +131,19 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "SessionId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Faction",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x20"
       },
@@ -154,7 +154,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_XPUS6[0x4]",
+        "Name": "pad0x4_H6HC1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -172,14 +172,14 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_8792Q[0x7]",
+        "Name": "pad0x7_FMEPE[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
       },
       {
         "Name": "EligibleLootBootyIds",
-        "Type": "TArray<struct EligibleLootBootyIds>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -190,7 +190,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_L2R3S[0x4]",
+        "Name": "pad0x4_PU59G[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
@@ -200,6 +200,12 @@
         "Type": "TArray<Bool HasDisplayedPromptForLootLevel>",
         "Size": "0x10",
         "Offset": "0x58"
+      },
+      {
+        "Name": "pad0x10_A4R09[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x68"
       }
     ]
   },
@@ -208,13 +214,13 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "SessionId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -243,13 +249,13 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Faction",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -260,13 +266,13 @@
     "Attributes": [
       {
         "Name": "VictoriousCrewIds",
-        "Type": "TArray<struct VictoriousCrewIds>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "DefeatedCrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -277,7 +283,7 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -294,7 +300,7 @@
     "Attributes": [
       {
         "Name": "SunkShipCrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -305,13 +311,13 @@
     "Attributes": [
       {
         "Name": "AttackingCrewIds",
-        "Type": "TArray<struct AttackingCrewIds>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "SunkShipCrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -322,13 +328,13 @@
     "Attributes": [
       {
         "Name": "LeavingCrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "FactionLeft",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x10"
       },
@@ -337,6 +343,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_7GA1A[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
       }
     ]
   },
@@ -345,13 +357,13 @@
     "Attributes": [
       {
         "Name": "LeavingCrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "FactionToLeave",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x10"
       },
@@ -360,6 +372,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_KE1GA[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
       }
     ]
   },
@@ -368,13 +386,13 @@
     "Attributes": [
       {
         "Name": "JoiningCrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "FactionJoined",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -385,13 +403,13 @@
     "Attributes": [
       {
         "Name": "JoiningCrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "FactionJoined",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -402,7 +420,7 @@
     "Attributes": [
       {
         "Name": "FactionSessionId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -414,13 +432,13 @@
       },
       {
         "Name": "AttackingCrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "SunkCrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -431,7 +449,7 @@
     "Attributes": [
       {
         "Name": "CrewFactionData",
-        "Type": "Struct CrewFactionTelemetryData",
+        "Type": "struct CrewFactionTelemetryData",
         "Size": "0x30",
         "Offset": "0x0"
       }
@@ -442,7 +460,7 @@
     "Attributes": [
       {
         "Name": "FactionSessionId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -457,6 +475,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x3_9OPFF[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x19"
       }
     ]
   },
@@ -465,7 +489,7 @@
     "Attributes": [
       {
         "Name": "FactionSessionId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -493,10 +517,16 @@
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x6_WTLKV[0x6]",
+        "Name": "pad0x6_2M04R[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2"
+      },
+      {
+        "Name": "pad0x8_9GY0K[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },

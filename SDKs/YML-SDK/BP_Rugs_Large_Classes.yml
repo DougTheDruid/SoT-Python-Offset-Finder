@@ -5,11 +5,11 @@ BP_Rugs_Large_C:
   - Name: CircularRugMeshComponent
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: RectangularRugMeshComponent
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   ClassSize: '0x10'
   FullSize: '0x3e8'
   InheritedSize: '0x3d8'

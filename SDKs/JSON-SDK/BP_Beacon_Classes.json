@@ -7,73 +7,73 @@
     "Attributes": [
       {
         "Name": "PointLight3",
-        "Type": "Class PointLightComponent*",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x7f8"
       },
       {
         "Name": "PointLight2",
-        "Type": "Class PointLightComponent*",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x800"
       },
       {
         "Name": "PointLight1",
-        "Type": "Class PointLightComponent*",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x808"
       },
       {
         "Name": "ParticleSystem6",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x810"
       },
       {
         "Name": "vfx_candle_01_smoke_tavern",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x818"
       },
       {
         "Name": "ParticleSystem5",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x820"
       },
       {
         "Name": "ParticleSystem4",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x828"
       },
       {
         "Name": "ParticleSystem3",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x830"
       },
       {
         "Name": "ParticleSystem2",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x838"
       },
       {
         "Name": "ParticleSystem1",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x840"
       },
       {
         "Name": "ParticleSystem",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x848"
       },
       {
         "Name": "vfx_candle_01_tavern",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x850"
       }

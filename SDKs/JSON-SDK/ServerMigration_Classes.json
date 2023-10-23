@@ -4,7 +4,14 @@
     "FullSize": "0xb0",
     "InheritedSize": "0x68",
     "ClassSize": "0x48",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x48_3EFWD[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x68"
+      }
+    ]
   },
   "MigrationRelevancyClusterActor": {
     "Super": "Actor",
@@ -35,7 +42,7 @@
     "Attributes": [
       {
         "Name": "ActorReferenceWithMigrationMarkup",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x28"
       }
@@ -49,7 +56,7 @@
     "Attributes": [
       {
         "Name": "PrimitiveComponent",
-        "Type": "Class PrimitiveComponent*",
+        "Type": "class PrimitiveComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       }
@@ -63,7 +70,7 @@
     "Attributes": [
       {
         "Name": "ChildActorComponent",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       }
@@ -77,7 +84,7 @@
     "Attributes": [
       {
         "Name": "ChildActorComponent",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       }
@@ -91,19 +98,19 @@
     "Attributes": [
       {
         "Name": "SubObject",
-        "Type": "Class ServerMigrationSerialisationDetailsTestsMigratableComponent*",
+        "Type": "class ServerMigrationSerialisationDetailsTestsMigratableComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "ActorComponent",
-        "Type": "Class ServerMigrationSerialisationDetailsTestsMigratableComponent*",
+        "Type": "class ServerMigrationSerialisationDetailsTestsMigratableComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "Subobject2",
-        "Type": "Class ServerMigrationSerialisationDetailsTestsMigratableComponent*",
+        "Type": "class ServerMigrationSerialisationDetailsTestsMigratableComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       }
@@ -117,12 +124,12 @@
     "Attributes": [
       {
         "Name": "ActorPtr",
-        "Type": "Struct NetActorPtr",
+        "Type": "struct NetActorPtr",
         "Size": "0x14",
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x4_U22GY[0x4]",
+        "Name": "pad0x4_AMA7O[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3dc"
@@ -137,7 +144,7 @@
     "Attributes": [
       {
         "Name": "UniqueId",
-        "Type": "Struct UniqueNetIdRepl",
+        "Type": "struct UniqueNetIdRepl",
         "Size": "0x18",
         "Offset": "0x3c8"
       }
@@ -171,7 +178,7 @@
     "Attributes": [
       {
         "Name": "ComponentWithMigrationMarkup",
-        "Type": "Class ServerMigrationSerialisationDetailsTestsMigratableComponent*",
+        "Type": "class ServerMigrationSerialisationDetailsTestsMigratableComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       }
@@ -185,7 +192,7 @@
     "Attributes": [
       {
         "Name": "ComponentWithMigrationMarkup",
-        "Type": "Class ServerMigrationSerialisationDetailsTestsMigratableComponent*",
+        "Type": "class ServerMigrationSerialisationDetailsTestsMigratableComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       }
@@ -196,7 +203,14 @@
     "FullSize": "0x3d0",
     "InheritedSize": "0x3c8",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_08L63[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      }
+    ]
   },
   "ServerMigrationSerialisationDetailsTestsMigrationActorWithRootComponentSimulatePhysicsEnabledByDefault": {
     "Super": "Actor",
@@ -213,7 +227,7 @@
     "Attributes": [
       {
         "Name": "Component",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       }
@@ -227,12 +241,12 @@
     "Attributes": [
       {
         "Name": "TestStruct",
-        "Type": "Struct ServerMigrationCustomMigrationSerialisationStruct",
+        "Type": "struct ServerMigrationCustomMigrationSerialisationStruct",
         "Size": "0x4",
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x4_0Q85V[0x4]",
+        "Name": "pad0x4_R09PE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3cc"
@@ -254,7 +268,7 @@
     "Attributes": [
       {
         "Name": "DependentActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x3c8"
       }
@@ -268,12 +282,12 @@
     "Attributes": [
       {
         "Name": "ActorReferenceWithMigrationMarkup",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x8_VWJY3[0x8]",
+        "Name": "pad0x8_UTVLO[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3d0"
@@ -299,14 +313,14 @@
         "Offset": "0x2c"
       },
       {
-        "Name": "pad0x3_HHOMT[0x3]",
+        "Name": "pad0x3_94WRC[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2d"
       },
       {
         "Name": "StringWithSaveGameMarkup",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -317,7 +331,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x4_59UZ9[0x4]",
+        "Name": "pad0x4_QVN1N[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x44"
@@ -346,12 +360,12 @@
     "Attributes": [
       {
         "Name": "SubStructWithMigrationMarkup",
-        "Type": "Struct ServerMigrationSerialisationDetailsTestsUStruct",
+        "Type": "struct ServerMigrationSerialisationDetailsTestsUStruct",
         "Size": "0xc",
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_D2CO1[0x4]",
+        "Name": "pad0x4_DLJCL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
@@ -371,14 +385,14 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_J5KTG[0x4]",
+        "Name": "pad0x4_RDHBJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
       },
       {
         "Name": "TransportImplementation",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -401,14 +415,14 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_3FH5R[0x4]",
+        "Name": "pad0x4_FMUNH[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
       },
       {
         "Name": "InstanceImplementation",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -446,7 +460,7 @@
     "Attributes": [
       {
         "Name": "ObjectProperty",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x3c8"
       }
@@ -460,7 +474,7 @@
     "Attributes": [
       {
         "Name": "ObjectProperty",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x28"
       }

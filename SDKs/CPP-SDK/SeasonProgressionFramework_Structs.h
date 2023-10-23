@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct PlayerTrackedObjective
 {
 public:
-	Struct Guid                                                  ObjectiveId;                                       // 0x0(0x10)
+	struct Guid                                                  ObjectiveId;                                       // 0x0(0x10)
 };
 
 
@@ -18,7 +18,8 @@ public:
 struct SeasonReward
 {
 public:
-	Struct Guid                                                  Id;                                                // 0x0(0x10)
+	struct Guid                                                  Id;                                                // 0x0(0x10)
+	char                                                         pad0x10_FHIUT[0x10];                               // 0x10(0x10)
 };
 
 
@@ -26,6 +27,7 @@ public:
 struct SeasonServiceDataUpdatedEvent
 {
 public:
+	char                                                         pad0x1_L7P2U[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -33,10 +35,10 @@ public:
 struct SeasonRewardEarnedEvent
 {
 public:
-	Struct Guid                                                  SeasonId;                                          // 0x0(0x10)
+	struct Guid                                                  SeasonId;                                          // 0x0(0x10)
 	bool                                                         MultipleRewards;                                   // 0x10(0x1)
-	char                                                         pad0x7_O2F6G[0x7];                                 // 0x11(0x7)
-	TArray<struct Rewards>                                       Rewards;                                           // 0x18(0x10)
+	char                                                         pad0x7_AR07R[0x7];                                 // 0x11(0x7)
+	TArray<struct SeasonReward>                                  Rewards;                                           // 0x18(0x10)
 };
 
 
@@ -44,13 +46,14 @@ public:
 struct LevelCompletionEvent
 {
 public:
-	Struct Guid                                                  SeasonId;                                          // 0x0(0x10)
+	struct Guid                                                  SeasonId;                                          // 0x0(0x10)
 	int                                                          Level;                                             // 0x10(0x4)
 	int                                                          TimeSpentInLevel;                                  // 0x14(0x4)
 	int                                                          Tier;                                              // 0x18(0x4)
 	int                                                          TimeSpentInTier;                                   // 0x1c(0x4)
 	bool                                                         TierCompleted;                                     // 0x20(0x1)
 	bool                                                         SeasonCompleted;                                   // 0x21(0x1)
+	char                                                         pad0x2_NKCHW[0x2];                                 // 0x22(0x2)
 };
 
 
@@ -58,8 +61,8 @@ public:
 struct LevelProgressionEvent
 {
 public:
-	Struct Guid                                                  SeasonId;                                          // 0x0(0x10)
-	Struct Guid                                                  SourceGoalId;                                      // 0x10(0x10)
+	struct Guid                                                  SeasonId;                                          // 0x0(0x10)
+	struct Guid                                                  SourceGoalId;                                      // 0x10(0x10)
 	int                                                          XpChange;                                          // 0x20(0x4)
 	int                                                          CurrentXP;                                         // 0x24(0x4)
 	int                                                          CurrentTier;                                       // 0x28(0x4)
@@ -71,11 +74,11 @@ public:
 struct SeasonGoalCompletionEvent
 {
 public:
-	Struct Guid                                                  SeasonId;                                          // 0x0(0x10)
-	Struct Guid                                                  GoalId;                                            // 0x10(0x10)
+	struct Guid                                                  SeasonId;                                          // 0x0(0x10)
+	struct Guid                                                  GoalId;                                            // 0x10(0x10)
 	byte                                                         GoalType;                                          // 0x20(0x1)
-	char                                                         pad0x3_QT14X[0x3];                                 // 0x21(0x3)
-	Struct Guid                                                  GoalGroupId;                                       // 0x24(0x10)
+	char                                                         pad0x3_6MQ4Q[0x3];                                 // 0x21(0x3)
+	struct Guid                                                  GoalGroupId;                                       // 0x24(0x10)
 };
 
 
@@ -86,11 +89,11 @@ public:
 	int                                                          PreviousProgress;                                  // 0x0(0x4)
 	int                                                          CurrentProgress;                                   // 0x4(0x4)
 	int                                                          CompletionThreshold;                               // 0x8(0x4)
-	Struct Guid                                                  SeasonId;                                          // 0xc(0x10)
-	Struct Guid                                                  GoalId;                                            // 0x1c(0x10)
+	struct Guid                                                  SeasonId;                                          // 0xc(0x10)
+	struct Guid                                                  GoalId;                                            // 0x1c(0x10)
 	byte                                                         GoalType;                                          // 0x2c(0x1)
-	char                                                         pad0x3_6HJ4P[0x3];                                 // 0x2d(0x3)
-	Struct Guid                                                  GoalGroupId;                                       // 0x30(0x10)
+	char                                                         pad0x3_9N1EV[0x3];                                 // 0x2d(0x3)
+	struct Guid                                                  GoalGroupId;                                       // 0x30(0x10)
 };
 
 
@@ -98,29 +101,28 @@ public:
 struct TrackedObjectiveCompletionMessage
 {
 public:
-	Struct Guid                                                  ObjectiveId;                                       // 0x0(0x10)
-	Struct PirateIdentity                                        PirateIdentity;                                    // 0x10(0x78)
-	Struct PlayerBaseTelemetryFragment                           PlayerInfo;                                        // 0x88(0x48)
+	struct Guid                                                  ObjectiveId;                                       // 0x0(0x10)
+	struct PirateIdentity                                        PirateIdentity;                                    // 0x10(0x78)
+	struct PlayerBaseTelemetryFragment                           PlayerInfo;                                        // 0x88(0x48)
 	byte                                                         PlayMode;                                          // 0xd0(0x1)
 	byte                                                         PlayModeVariant;                                   // 0xd1(0x1)
-	char                                                         pad0x6_XA2YM[0x6];                                 // 0xd2(0x6)
+	char                                                         pad0x6_TJODK[0x6];                                 // 0xd2(0x6)
 	double                                                       CreatedAt;                                         // 0xd8(0x8)
 };
 
 
-// Size 0xe8
+// Size 0xe0
 struct TrackedObjectiveProgressUpdateMessage
 {
 public:
-	Struct Guid                                                  ObjectiveId;                                       // 0x0(0x10)
-	Struct PirateIdentity                                        PirateIdentity;                                    // 0x10(0x78)
-	Struct PlayerBaseTelemetryFragment                           PlayerInfo;                                        // 0x88(0x48)
+	struct Guid                                                  ObjectiveId;                                       // 0x0(0x10)
+	struct PirateIdentity                                        PirateIdentity;                                    // 0x10(0x78)
+	struct PlayerBaseTelemetryFragment                           PlayerInfo;                                        // 0x88(0x48)
 	byte                                                         PlayMode;                                          // 0xd0(0x1)
 	byte                                                         PlayModeVariant;                                   // 0xd1(0x1)
-	char                                                         pad0x2_UZSEW[0x2];                                 // 0xd2(0x2)
+	char                                                         pad0x2_M7KHJ[0x2];                                 // 0xd2(0x2)
 	int                                                          Value;                                             // 0xd4(0x4)
 	double                                                       CreatedAt;                                         // 0xd8(0x8)
-	bool                                                         ShouldNotifyPlayer;                                // 0xe0(0x1)
 };
 
 
@@ -128,6 +130,7 @@ public:
 struct TrackedObjectiveEvent
 {
 public:
+	char                                                         pad0x18_TWD31[0x18];                               // 0x0(0x18)
 };
 
 

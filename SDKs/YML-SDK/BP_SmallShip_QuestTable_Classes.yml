@@ -3,50 +3,50 @@
 BP_SmallShip_QuestTable_C:
   Attributes:
   - Name: CancelVoyageSeaOfThievesOnDemand
-    Offset: '0x8f0'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: WarMap
-    Offset: '0x8f8'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: FactionHourglass
-    Offset: '0x900'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: CancelAdventure
-    Offset: '0x908'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: PlayerBuiredItemsMapBundleInteractionPoint
-    Offset: '0x910'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: CancelTale
-    Offset: '0x918'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: CancelVoyage
-    Offset: '0x920'
-    Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot4
     Offset: '0x928'
     Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot3
+    Type: class ChildActorComponent*
+  - Name: WarMap
     Offset: '0x930'
     Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot2
+    Type: class ChildActorComponent*
+  - Name: FactionHourglass
     Offset: '0x938'
     Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: VoyageSelectionSlot1
+    Type: class ChildActorComponent*
+  - Name: CancelAdventure
     Offset: '0x940'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
+  - Name: PlayerBuiredItemsMapBundleInteractionPoint
+    Offset: '0x948'
+    Size: '0x8'
+    Type: class ChildActorComponent*
+  - Name: CancelTale
+    Offset: '0x950'
+    Size: '0x8'
+    Type: class ChildActorComponent*
+  - Name: CancelVoyage
+    Offset: '0x958'
+    Size: '0x8'
+    Type: class ChildActorComponent*
+  - Name: VoyageSelectionSlot4
+    Offset: '0x960'
+    Size: '0x8'
+    Type: class ChildActorComponent*
+  - Name: VoyageSelectionSlot3
+    Offset: '0x968'
+    Size: '0x8'
+    Type: class ChildActorComponent*
+  - Name: VoyageSelectionSlot2
+    Offset: '0x970'
+    Size: '0x8'
+    Type: class ChildActorComponent*
+  - Name: VoyageSelectionSlot1
+    Offset: '0x978'
+    Size: '0x8'
+    Type: class ChildActorComponent*
   ClassSize: '0x58'
-  FullSize: '0x948'
-  InheritedSize: '0x8f0'
+  FullSize: '0x980'
+  InheritedSize: '0x928'
   Super: VoyageTable

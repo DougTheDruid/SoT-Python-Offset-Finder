@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 struct PuzzleSwitchResetEvent
 {
 public:
+	char                                                         pad0x1_DY7FV[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -17,6 +18,7 @@ public:
 struct PuzzleSwitchActivationRequestedAtIndexEvent
 {
 public:
+	char                                                         pad0x4_YTYRK[0x4];                                 // 0x0(0x4)
 };
 
 
@@ -24,6 +26,7 @@ public:
 struct PuzzleSwitchActionStateChangedAtIndexEvent
 {
 public:
+	char                                                         pad0x8_KNQ2C[0x8];                                 // 0x0(0x8)
 };
 
 

@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "SkeletalMeshReference",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -103,19 +103,19 @@
     "Attributes": [
       {
         "Name": "Story",
-        "Type": "Struct StoryFlag",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "AudioInsideSpace",
-        "Type": "Class AudioSpaceDataAsset*",
+        "Type": "class AudioSpaceDataAsset*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "AudioOutsideSpace",
-        "Type": "Class AudioSpaceDataAsset*",
+        "Type": "class AudioSpaceDataAsset*",
         "Size": "0x8",
         "Offset": "0x10"
       }

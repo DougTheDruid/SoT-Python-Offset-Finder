@@ -13,19 +13,19 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x8_PWNKB[0x8]",
+        "Name": "pad0x8_JR1QT[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "ShipDamageableComponent",
-        "Type": "Class ShipDamageableComponent*",
+        "Type": "class ShipDamageableComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x10_SXPL1[0x10]",
+        "Name": "pad0x10_7LMKB[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3d8"
@@ -73,7 +73,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x4_Q8T3P[0x4]",
+        "Name": "pad0x4_4CIJM[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xcc"
@@ -93,13 +93,13 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_95RYX[0x4]",
+        "Name": "pad0x4_MZ60S[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
       },
       {
-        "Name": "pad0x8_FYP2D[0x8]",
+        "Name": "pad0x8_J64CV[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x40"

@@ -7,13 +7,13 @@
     "Attributes": [
       {
         "Name": "Sphere",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x748"
       },
       {
         "Name": "Collision",
-        "Type": "Class SphereComponent*",
+        "Type": "class SphereComponent*",
         "Size": "0x8",
         "Offset": "0x750"
       }

@@ -5,17 +5,29 @@ ExtraWind:
   - Name: Source
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   - Name: Basis
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
+  - Name: pad0x28_NIQ44[0x28]
+    Offset: '0x10'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x38'
 WindDirectionChanged:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_R7IEY[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 WindMagnitudeChanged:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_184CJ[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 WindServiceParams:
   Attributes:
@@ -61,15 +73,15 @@ WindTurbulenceParameters:
   - Name: GustPower
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: GustTime
     Offset: '0x10'
     Size: '0x30'
-    Type: Struct WeightedProbabilityRangeOfRanges
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: CalmTime
     Offset: '0x40'
     Size: '0x30'
-    Type: Struct WeightedProbabilityRangeOfRanges
+    Type: struct WeightedProbabilityRangeOfRanges
   ClassSize: '0x70'
 WindZoneParams:
   Attributes:
@@ -89,6 +101,10 @@ WindZoneParams:
     Offset: '0xc'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_ESG1W[0x3]
+    Offset: '0xd'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x10'
 WindZoneTurbulence:
   Attributes:

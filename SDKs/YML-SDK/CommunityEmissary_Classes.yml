@@ -5,8 +5,8 @@ CommunityEmissaryFlagComponent:
   - Name: CommunityEmissaryDataAsset
     Offset: '0x620'
     Size: '0x8'
-    Type: Class CommunityEmissaryFlagData*
-  - Name: pad0x28_LO8KI[0x28]
+    Type: class CommunityEmissaryFlagData*
+  - Name: pad0x28_2SZX6[0x28]
     Offset: '0x628'
     Size: '0x28'
     Type: char
@@ -19,7 +19,7 @@ CommunityEmissaryFlagData:
   - Name: GradeData
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct GradeData>
+    Type: TArray<struct CommunityFlagGradeData>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

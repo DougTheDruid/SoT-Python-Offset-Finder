@@ -6,20 +6,20 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Class ReplenishableComponent*",
+        "Name": "Replenishable",
+        "Type": "class ReplenishableComponent*",
         "Size": "0x8",
         "Offset": "0x4c8"
       },
       {
-        "Name": "None",
-        "Type": "Class ShipTelemetrySubjectComponent*",
+        "Name": "ShipTelemetrySubject",
+        "Type": "class ShipTelemetrySubjectComponent*",
         "Size": "0x8",
         "Offset": "0x4d0"
       },
       {
-        "Name": "None",
-        "Type": "Class StorageContainerComponent*",
+        "Name": "StorageContainer",
+        "Type": "class StorageContainerComponent*",
         "Size": "0x8",
         "Offset": "0x4d8"
       }

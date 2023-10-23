@@ -7,13 +7,13 @@
     "Attributes": [
       {
         "Name": "Objects",
-        "Type": "TArray<struct Objects>",
+        "Type": "TArray<struct BarrelsOfPlentyDebugLocationEntry>",
         "Size": "0x10",
         "Offset": "0x3c8"
       },
       {
         "Name": "SpawnCentre",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x3d8"
       },
@@ -33,19 +33,19 @@
     "Attributes": [
       {
         "Name": "Ship",
-        "Type": "Class Ship*",
+        "Type": "class Ship*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x18_255KM[0x18]",
+        "Name": "pad0x18_TMDO4[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3d0"
       },
       {
         "Name": "SceneComponent",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       }
@@ -66,7 +66,7 @@
     "Attributes": [
       {
         "Name": "LocatorVar",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0x80"
       }

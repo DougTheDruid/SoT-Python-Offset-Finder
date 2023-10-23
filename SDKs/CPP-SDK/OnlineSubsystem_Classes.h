@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class DefaultOnlineEnvironmentSettings: public Object
 {
 public:
-	Struct FString                                               EnvironmentId;                                     // 0x28(0x10)
-	Struct FString                                               ServiceConfigId;                                   // 0x40(0x10)
-	Struct FString                                               ClientCertificateThumbprint;                       // 0x50(0x10)
+	struct FString                                               EnvironmentId;                                     // 0x28(0x10)
+	struct FString                                               ServiceConfigId;                                   // 0x40(0x10)
+	struct FString                                               ClientCertificateThumbprint;                       // 0x50(0x10)
 };
 
 
@@ -20,9 +20,9 @@ public:
 class NamedInterfaces: public Object
 {
 public:
-	TArray<struct NamedInterfaces>                               NamedInterfaces;                                   // 0x28(0x10)
-	TArray<struct NamedInterfaceDefs>                            NamedInterfaceDefs;                                // 0x38(0x10)
-	char                                                         pad0x18_DLBIM[0x18];                               // 0x48(0x18)
+	TArray<struct NamedInterface>                                NamedInterfaces;                                   // 0x28(0x10)
+	TArray<struct NamedInterfaceDef>                             NamedInterfaceDefs;                                // 0x38(0x10)
+	char                                                         pad0x18_7IZXK[0x18];                               // 0x48(0x18)
 };
 
 

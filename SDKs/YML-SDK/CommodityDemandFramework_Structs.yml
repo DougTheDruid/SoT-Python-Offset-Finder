@@ -20,28 +20,36 @@ ActiveNPCDemands:
   - Name: NPCDemands
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct NPCDemands>
+    Type: TArray<struct ActiveCommodityDemands>
   ClassSize: '0x20'
 CommodityDescWithRedeemId:
   Attributes:
   - Name: RedeemId
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct CommoditySelectionType
+    Type: struct CommoditySelectionType
   - Name: RedeemItemDesc
     Offset: '0x8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x10'
 CommodityRedemptionTrackingModel:
   Attributes:
+  - Name: pad0x2_WS5SX[0x2]
+    Offset: '0x0'
+    Size: '0x2'
+    Type: char
   - Name: NPCName
     Offset: '0x2'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5_WQREU[0x5]
+  - Name: pad0x5_AZI3I[0x5]
     Offset: '0x3'
     Size: '0x5'
+    Type: char
+  - Name: pad0x8_LVC5T[0x8]
+    Offset: '0x8'
+    Size: '0x8'
     Type: char
   ClassSize: '0x10'
 CommoditySelectionType:
@@ -53,6 +61,10 @@ CommoditySelectionType:
   ClassSize: '0x8'
 CommoditySourceMetaWrapper:
   Attributes:
+  - Name: pad0x18_7OXOW[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: NPCIdentifier
     Offset: '0x18'
     Size: '0x8'
@@ -67,14 +79,18 @@ CommodityTrackingModel:
   - Name: ItemOfferId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: NPCName
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_VWOJA[0x7]
+  - Name: pad0x7_TUH67[0x7]
     Offset: '0x11'
     Size: '0x7'
+    Type: char
+  - Name: pad0x8_CDRWK[0x8]
+    Offset: '0x18'
+    Size: '0x8'
     Type: char
   ClassSize: '0x20'
 CommodityTypeDataEntry:
@@ -93,14 +109,18 @@ EntitlementToRedeemItems:
   - Name: RequiredEntitlement
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: RedeemItems
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct RedeemItems>
+    Type: TArray<struct CommodityDescWithRedeemId>
   ClassSize: '0x18'
 EventCommodityCrateRedeemed:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_JCO23[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
 MerchantSovereignHandInNameInformation:
   Attributes:
@@ -115,10 +135,14 @@ MerchantSovereignHandInNameInformation:
   ClassSize: '0x10'
 TrackCommodityPurchaseOnServerRpc:
   Attributes:
+  - Name: pad0x10_L7SY2[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   - Name: CommodityDemandStorageObject
     Offset: '0x10'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   - Name: NPCName
     Offset: '0x18'
     Size: '0x8'
@@ -126,9 +150,9 @@ TrackCommodityPurchaseOnServerRpc:
   - Name: ItemOfferId
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: ItemClientId
     Offset: '0x30'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x40'

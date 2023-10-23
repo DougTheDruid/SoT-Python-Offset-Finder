@@ -5,7 +5,7 @@ BP_PetPreview_Base_C:
   - Name: CosmeticItemAnimation
     Offset: '0x4b0'
     Size: '0x8'
-    Type: Class CosmeticItemAnimationComponent*
+    Type: class CosmeticItemAnimationComponent*
   ClassSize: '0x8'
   FullSize: '0x4b8'
   InheritedSize: '0x4b0'

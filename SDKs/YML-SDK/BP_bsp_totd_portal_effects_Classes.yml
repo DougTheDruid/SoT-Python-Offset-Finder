@@ -5,59 +5,59 @@ BP_bsp_totd_portal_effects_C:
   - Name: UberGraphFrame
     Offset: '0x430'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: PointLight
     Offset: '0x438'
     Size: '0x8'
-    Type: Class PointLightComponent*
+    Type: class PointLightComponent*
   - Name: vfx_PortalAmbience_02
     Offset: '0x440'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Type: class ParticleSystemComponent*
   - Name: vfx_PortalAmbience_01
     Offset: '0x448'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Type: class ParticleSystemComponent*
   - Name: vfx_cloud
     Offset: '0x450'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Portal
     Offset: '0x458'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: vfx_cloud_depth
     Offset: '0x460'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: vfx_big_cloud
     Offset: '0x468'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: roundedcube_invertednormals
     Offset: '0x470'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: crack_decal2
     Offset: '0x478'
     Size: '0x8'
-    Type: Class DecalComponent*
+    Type: class DecalComponent*
   - Name: crack_decal
     Offset: '0x480'
     Size: '0x8'
-    Type: Class DecalComponent*
+    Type: class DecalComponent*
   - Name: volume_glow
     Offset: '0x488'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: LightComponent0
     Offset: '0x490'
     Size: '0x8'
-    Type: Class PointLightComponent*
+    Type: class PointLightComponent*
   - Name: SharedRoot
     Offset: '0x498'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x70'
   FullSize: '0x4a0'
   InheritedSize: '0x430'

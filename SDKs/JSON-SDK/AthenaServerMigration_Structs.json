@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -18,44 +18,104 @@
   },
   "ServerMigrationSetupCompleteEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_OMK3S[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ServerMigrationSetupRequestEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_E2QJH[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ServerMigrationReadyToTransferActors": {
     "ClassSize": "0x90",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x90_AQ3PM[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AddedPendingIncomingGameEventOnDemandCrewEvent": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x48_ZI8DF[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
+      }
+    ]
   },
   "AddedPendingIncomingInvaderCrewEvent": {
     "ClassSize": "0x48",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x48_DW01N[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ServerMigrationAboutToStartEvent": {
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x20_CRJ44[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ServerMigrationAbortEvent": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_YOMW9[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ServerMigrationCompleteEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_1WFQ9[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ServerMigrationRefusedEvent": {
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "MigrationId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "CrewIds",
-        "Type": "TArray<struct CrewIds>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -63,20 +123,27 @@
   },
   "OutgoingServerMigrationAbortedEvent": {
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x20_9MUOE[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ServerMigrationInstanceEventBase": {
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "ServerId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "MigrationId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -84,36 +151,50 @@
   },
   "OutgoingServerMigrationCompletedEvent": {
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x20_Z1XGC[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
   },
   "OutgoingServerMigrationStartedEvent": {
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x20_UXBAL[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ServerMigrationRequestEvent": {
     "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "MigrationId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "DestinationAddress",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "CrewIds",
-        "Type": "TArray<struct CrewIds>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "SubMode",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -130,13 +211,13 @@
     "Attributes": [
       {
         "Name": "DestinationAddress",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -144,14 +225,21 @@
   },
   "PrepareForWorldSwitchRpc": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_D8VFC[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "AthenaServerMigrationClientContext": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "StampId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }

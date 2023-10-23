@@ -57,10 +57,17 @@
   },
   "SirenController": {
     "Super": "AthenaSwimmingAIController",
-    "FullSize": "0xa68",
-    "InheritedSize": "0xa60",
+    "FullSize": "0xa78",
+    "InheritedSize": "0xa70",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_P835V[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xa70"
+      }
+    ]
   },
   "SirenEmeraldHealStatus": {
     "Super": "StatusBase",
@@ -77,7 +84,7 @@
     "Attributes": [
       {
         "Name": "AnimationID",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x80"
       }

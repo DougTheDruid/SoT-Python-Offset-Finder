@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_LotS_reward027_C: public ModalInteractionProxy
 {
 public:
-	Class NPCDialogComponent*                                    None;                                              // 0x520(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x528(0x8)
-	Class SceneComponent*                                        None;                                              // 0x530(0x8)
+	class NPCDialogComponent*                                    InspectDialog;                                     // 0x520(0x8)
+	class StaticMeshComponent*                                   StaticMesh;                                        // 0x528(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x530(0x8)
 };
 
 

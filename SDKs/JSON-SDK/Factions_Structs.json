@@ -9,26 +9,26 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_D1LD2[0x3]",
+        "Name": "pad0x3_ZHU4J[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
       },
       {
         "Name": "RewardId",
-        "Type": "Struct RewardId",
+        "Type": "struct RewardId",
         "Size": "0x8",
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x4_FYP76[0x4]",
+        "Name": "pad0x4_ZQB5I[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       },
       {
         "Name": "LootLevelPopUpMessageDesc",
-        "Type": "TArray<struct LootLevelPopUpMessageDesc>",
+        "Type": "TArray<struct FactionServicePopUpData>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -37,6 +37,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_C6ZVI[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
@@ -45,9 +51,15 @@
     "Attributes": [
       {
         "Name": "Faction",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x18_U67Q8[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x8"
       }
     ]
   },
@@ -56,37 +68,37 @@
     "Attributes": [
       {
         "Name": "Faction",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Title",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x8"
       },
       {
         "Name": "Description",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x40"
       },
       {
         "Name": "CardOffset",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x78"
       },
       {
         "Name": "KeyArt",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x80"
       },
       {
         "Name": "Icon",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x90"
       }
@@ -117,11 +129,25 @@
   },
   "KillStreakHideEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_5JK32[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "KillStreakShowEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_832CA[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "UpdateKillStreakEvent": {
     "ClassSize": "0x4",
@@ -136,7 +162,14 @@
   },
   "DeactivateKillStreakEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_8DG0X[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ActivateKillStreakEvent": {
     "ClassSize": "0x1",
@@ -151,16 +184,35 @@
   },
   "DeactivateKillStreakNetworkEvent": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_PTNFX[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ActivateKillStreakNetworkEvent": {
     "ClassSize": "0x18",
     "Attributes": [
       {
+        "Name": "pad0x10_ZW22T[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "FactionId",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_CLWP3[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       }
     ]
   },
@@ -174,14 +226,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_XPY69[0x7]",
+        "Name": "pad0x7_M3N5S[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "ShipName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -203,20 +255,26 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
+        "Name": "pad0x10_JK3AL[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "OpponentFaction",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_OX1L1[0x3]",
+        "Name": "pad0x3_NCU4M[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
       },
       {
         "Name": "OpponentCrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x14"
       },
@@ -249,6 +307,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x34"
+      },
+      {
+        "Name": "pad0x3_SE8SH[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x35"
       }
     ]
   },
@@ -256,8 +320,14 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
+        "Name": "pad0x10_YR28W[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "PopUpDesc",
-        "Type": "Class DataAsset*",
+        "Type": "class DataAsset*",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -268,7 +338,7 @@
     "Attributes": [
       {
         "Name": "Mesh",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -277,6 +347,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_V4SHQ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       }
     ]
   },
@@ -285,7 +361,7 @@
     "Attributes": [
       {
         "Name": "Material",
-        "Type": "Class MaterialInstance*",
+        "Type": "class MaterialInstance*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -294,6 +370,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_LC4EW[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       }
     ]
   },
@@ -302,13 +384,13 @@
     "Attributes": [
       {
         "Name": "Company",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "CinematicData",
-        "Type": "Struct CinematicQuestEvent",
+        "Type": "struct CinematicQuestEvent",
         "Size": "0x80",
         "Offset": "0x8"
       }
@@ -319,7 +401,7 @@
     "Attributes": [
       {
         "Name": "Faction",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -328,6 +410,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_F0D5U[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       }
     ]
   },
@@ -336,7 +424,7 @@
     "Attributes": [
       {
         "Name": "Company",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -353,13 +441,13 @@
     "Attributes": [
       {
         "Name": "Company",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Materials",
-        "Type": "TArray<struct Materials>",
+        "Type": "TArray<struct StreakMaterial>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -387,7 +475,7 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -398,7 +486,7 @@
     "Attributes": [
       {
         "Name": "Voter",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -409,13 +497,13 @@
     "Attributes": [
       {
         "Name": "Voter",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -424,12 +512,25 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_U9V67[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
       }
     ]
   },
   "EventLocalPlayerApproachedHourglass": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_526ID[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

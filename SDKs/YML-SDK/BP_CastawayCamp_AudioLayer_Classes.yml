@@ -5,35 +5,35 @@ BP_CastawayCamp_AudioLayer_C:
   - Name: UberGraphFrame
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: Flapping
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class WwiseEmitterComponent*
+    Type: class WwiseEmitterComponent*
   - Name: Campfire
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class WwiseEmitterComponent*
+    Type: class WwiseEmitterComponent*
   - Name: CastawayCamp_Audio
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class WwiseEmitterComponent*
+    Type: class WwiseEmitterComponent*
   - Name: Campfire_Play
     Offset: '0x3e8'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: Campfire_Stop
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: Flapping_Play
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: Flapping_Stop
     Offset: '0x400'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   ClassSize: '0x40'
   FullSize: '0x408'
   InheritedSize: '0x3c8'

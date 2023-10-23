@@ -4,7 +4,14 @@
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_1JV50[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
   },
   "AudioReportingComponent": {
     "Super": "ActorComponent",
@@ -14,12 +21,12 @@
     "Attributes": [
       {
         "Name": "CachedOwningController",
-        "Type": "Class PlayerController*",
+        "Type": "class PlayerController*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x170_TZZ1X[0x170]",
+        "Name": "pad0x170_AV3NP[0x170]",
         "Type": "char",
         "Size": "0x170",
         "Offset": "0xd0"
@@ -34,7 +41,7 @@
     "Attributes": [
       {
         "Name": "AudioReportingSettings",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -55,7 +62,7 @@
     "Attributes": [
       {
         "Name": "Reactions",
-        "Type": "TArray<struct Reactions>",
+        "Type": "TArray<struct EventReactionDesc>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -86,7 +93,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_YOINW[0x4]",
+        "Name": "pad0x4_U34VM[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"

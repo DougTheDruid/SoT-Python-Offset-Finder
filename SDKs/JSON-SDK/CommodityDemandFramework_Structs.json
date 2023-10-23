@@ -21,7 +21,7 @@
       },
       {
         "Name": "NPCDemands",
-        "Type": "TArray<struct NPCDemands>",
+        "Type": "TArray<struct ActiveCommodityDemands>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -66,13 +66,13 @@
     "Attributes": [
       {
         "Name": "RedeemId",
-        "Type": "Struct CommoditySelectionType",
+        "Type": "struct CommoditySelectionType",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "RedeemItemDesc",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -83,13 +83,13 @@
     "Attributes": [
       {
         "Name": "RequiredEntitlement",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "RedeemItems",
-        "Type": "TArray<struct RedeemItems>",
+        "Type": "TArray<struct CommodityDescWithRedeemId>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -98,6 +98,12 @@
   "CommoditySourceMetaWrapper": {
     "ClassSize": "0x28",
     "Attributes": [
+      {
+        "Name": "pad0x18_7OXOW[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
       {
         "Name": "NPCIdentifier",
         "Type": "struct FName",
@@ -131,11 +137,24 @@
   },
   "EventCommodityCrateRedeemed": {
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_JCO23[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
   },
   "CommodityRedemptionTrackingModel": {
     "ClassSize": "0x10",
     "Attributes": [
+      {
+        "Name": "pad0x2_WS5SX[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x0"
+      },
       {
         "Name": "NPCName",
         "Type": "byte",
@@ -143,10 +162,16 @@
         "Offset": "0x2"
       },
       {
-        "Name": "pad0x5_WQREU[0x5]",
+        "Name": "pad0x5_AZI3I[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x3"
+      },
+      {
+        "Name": "pad0x8_LVC5T[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -155,7 +180,7 @@
     "Attributes": [
       {
         "Name": "ItemOfferId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -166,10 +191,16 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_VWOJA[0x7]",
+        "Name": "pad0x7_TUH67[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
+      },
+      {
+        "Name": "pad0x8_CDRWK[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x18"
       }
     ]
   },
@@ -177,8 +208,14 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
+        "Name": "pad0x10_L7SY2[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "CommodityDemandStorageObject",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x10"
       },
@@ -190,13 +227,13 @@
       },
       {
         "Name": "ItemOfferId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "ItemClientId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       }

@@ -5,18 +5,26 @@ ItemAndReward:
   - Name: ItemDesc
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: HandInOnTimeRewardId
     Offset: '0x8'
     Size: '0x8'
-    Type: Struct RewardId
+    Type: struct RewardId
   ClassSize: '0x10'
 MerchantContract:
   Attributes:
+  - Name: pad0x18_7TV6R[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: DeliveryRequests
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<struct DeliveryRequests>
+    Type: TArray<struct MerchantContractDeliveryRequest>
+  - Name: pad0x98_N7MV1[0x98]
+    Offset: '0x28'
+    Size: '0x98'
+    Type: char
   ClassSize: '0xc0'
 MerchantContractDeliveryRequest:
   Attributes:
@@ -24,14 +32,14 @@ MerchantContractDeliveryRequest:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_SVFYT[0x4]
+  - Name: pad0x4_79OTA[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
   - Name: ItemDesc
     Offset: '0x8'
     Size: '0x28'
-    Type: Struct MerchantContractItemDesc
+    Type: struct MerchantContractItemDesc
   - Name: NumToAllocate
     Offset: '0x30'
     Size: '0x4'
@@ -44,32 +52,36 @@ MerchantContractDeliveryRequest:
     Offset: '0x38'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_QG0YD[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x40'
 MerchantContractItemDesc:
   Attributes:
   - Name: AllocatedCrate
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: ItemData
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct ItemData>
+    Type: TArray<struct ItemAndReward>
   - Name: FaunaSpecies
     Offset: '0x18'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: FaunaBreed
     Offset: '0x20'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x28'
 PlayerMerchantContract:
   Attributes:
   - Name: Id
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: IslandName
     Offset: '0x10'
     Size: '0x8'
@@ -77,5 +89,5 @@ PlayerMerchantContract:
   - Name: Requests
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<struct Requests>
+    Type: TArray<struct MerchantContractDeliveryRequest>
   ClassSize: '0x28'

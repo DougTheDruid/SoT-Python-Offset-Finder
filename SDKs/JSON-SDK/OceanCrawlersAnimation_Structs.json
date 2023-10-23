@@ -4,61 +4,61 @@
     "Attributes": [
       {
         "Name": "LocomotionData",
-        "Type": "Struct OceanCrawlerLocomotionAnimationDataStructure",
+        "Type": "struct OceanCrawlerLocomotionAnimationDataStructure",
         "Size": "0x30",
         "Offset": "0x0"
       },
       {
         "Name": "MontageData",
-        "Type": "Class CustomAnimationMontageDefinitionListingDataAsset*",
+        "Type": "class CustomAnimationMontageDefinitionListingDataAsset*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "AttackAnimations",
-        "Type": "Class AthenaAnimationWeaponDataAsset*",
+        "Type": "class AthenaAnimationWeaponDataAsset*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "HitReactionData",
-        "Type": "Struct HitReactionAnimationData",
+        "Type": "struct HitReactionAnimationData",
         "Size": "0x8",
         "Offset": "0x40"
       },
       {
         "Name": "SporeBreathData",
-        "Type": "Struct OceanCrawlerSporeBreathAnimationData",
+        "Type": "struct OceanCrawlerSporeBreathAnimationData",
         "Size": "0x18",
         "Offset": "0x48"
       },
       {
         "Name": "AttackInterruptMontages",
-        "Type": "TArray<struct AttackInterruptMontages>",
+        "Type": "TArray<struct CustomAnimationMontageId>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "DeathMontageId",
-        "Type": "Struct CustomAnimationMontageId",
+        "Type": "struct CustomAnimationMontageId",
         "Size": "0x8",
         "Offset": "0x70"
       },
       {
         "Name": "SpawnMontageId",
-        "Type": "Struct CustomAnimationMontageId",
+        "Type": "struct CustomAnimationMontageId",
         "Size": "0x8",
         "Offset": "0x78"
       },
       {
         "Name": "SpawnOnShipMontageId",
-        "Type": "Struct CustomAnimationMontageId",
+        "Type": "struct CustomAnimationMontageId",
         "Size": "0x8",
         "Offset": "0x80"
       },
       {
         "Name": "SpawnBoardedMontageId",
-        "Type": "Struct CustomAnimationMontageId",
+        "Type": "struct CustomAnimationMontageId",
         "Size": "0x8",
         "Offset": "0x88"
       }
@@ -69,19 +69,19 @@
     "Attributes": [
       {
         "Name": "Into",
-        "Type": "Class BlendSpace1D*",
+        "Type": "class BlendSpace1D*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Locomotion",
-        "Type": "Class BlendSpace1D*",
+        "Type": "class BlendSpace1D*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "Outof",
-        "Type": "Class BlendSpace1D*",
+        "Type": "class BlendSpace1D*",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -92,31 +92,31 @@
     "Attributes": [
       {
         "Name": "LocomotionIntoAsBlendspace",
-        "Type": "Class BlendSpace1D*",
+        "Type": "class BlendSpace1D*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Idle",
-        "Type": "Class AnimSequence*",
+        "Type": "class AnimSequence*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "LocomotionOutOf",
-        "Type": "Class AnimSequence*",
+        "Type": "class AnimSequence*",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
         "Name": "LocomotionOutOfAsBlendspace",
-        "Type": "Class BlendSpace1D*",
+        "Type": "class BlendSpace1D*",
         "Size": "0x8",
         "Offset": "0x18"
       },
       {
         "Name": "Locomotion",
-        "Type": "Class BlendSpace*",
+        "Type": "class BlendSpace*",
         "Size": "0x8",
         "Offset": "0x20"
       },

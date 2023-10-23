@@ -6,6 +6,10 @@ CycleFlameOfFateSequence:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<Byte FlameTypeSequence>
+  - Name: pad0x8_SNLOK[0x8]
+    Offset: '0x10'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x18'
 FlameData:
   Attributes:
@@ -23,30 +27,38 @@ PlayerSetFlameOfFateEvent:
   - Name: PlayerCharacter
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Character*
+    Type: class Character*
   - Name: Target
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   - Name: FlameOfFateType
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_MDW51[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x18'
 PlayerTookFlameOfFateEvent:
   Attributes:
   - Name: PlayerCharacter
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Character*
+    Type: class Character*
   - Name: Source
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   - Name: FlameOfFateType
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_BGQWI[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x18'
 SetFlameOfFateEvent:
   Attributes:
@@ -54,14 +66,14 @@ SetFlameOfFateEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_KAC1M[0x7]
+  - Name: pad0x7_3IQ6P[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
   - Name: Source
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   ClassSize: '0x10'
 SetShipFlameOfFateEvent:
   Attributes:
@@ -69,16 +81,16 @@ SetShipFlameOfFateEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_VQEIX[0x7]
+  - Name: pad0x7_V8PXQ[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
   - Name: Source
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   - Name: Ship
     Offset: '0x10'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   ClassSize: '0x18'

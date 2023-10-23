@@ -7,109 +7,109 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x458"
       },
       {
         "Name": "vfx_ShroudBreaker_OnShip_stage4",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x460"
       },
       {
         "Name": "ShieldPulseMesh",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x468"
       },
       {
         "Name": "vfx_ShroudBreaker_OnShip_stage3",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x470"
       },
       {
         "Name": "vfx_shroudbreaker_ember",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x478"
       },
       {
         "Name": "vfx_shroudbreaker_shipTip",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x480"
       },
       {
         "Name": "ShieldMesh",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x488"
       },
       {
         "Name": "WwiseEmitter",
-        "Type": "Class WwiseEmitterComponent*",
+        "Type": "class WwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x490"
       },
       {
         "Name": "vfx_ShroudBreaker_disappear_smoke_cloud",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x498"
       },
       {
         "Name": "vfx_ShroudBreaker_OnShip_stage1",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x4a0"
       },
       {
         "Name": "MusicZone",
-        "Type": "Class MusicZoneComponent*",
+        "Type": "class MusicZoneComponent*",
         "Size": "0x8",
         "Offset": "0x4a8"
       },
       {
         "Name": "StaticMesh",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4b0"
       },
       {
         "Name": "ActivateShroudbreakerHandle",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x4b8"
       },
       {
         "Name": "DeactivateShroudbreakerHandle",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x510"
       },
       {
         "Name": "ActivateEffectsHandle",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x568"
       },
       {
         "Name": "DeactivateEffectsHandle",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x5c0"
       },
       {
         "Name": "ShipDestroyedHandle",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x618"
       },
       {
         "Name": "ParentShipActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x670"
       },
@@ -120,7 +120,7 @@
         "Offset": "0x678"
       },
       {
-        "Name": "pad0x3_WGZ6C[0x3]",
+        "Name": "pad0x3_QZ0W4[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x679"
@@ -133,7 +133,7 @@
       },
       {
         "Name": "Shroudbreaker Material",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x680"
       },
@@ -156,20 +156,20 @@
         "Offset": "0x68d"
       },
       {
-        "Name": "pad0x2_40MJF[0x2]",
+        "Name": "pad0x2_53XZ9[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x68e"
       },
       {
         "Name": "PlayerEnteredIslandVincityEventHandle",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x690"
       },
       {
         "Name": "PlayerLeftIslandVincityEventHandle",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x6e8"
       },
@@ -187,13 +187,13 @@
       },
       {
         "Name": "ShieldMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x760"
       },
       {
         "Name": "ShieldPulseMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x768"
       },
@@ -211,19 +211,19 @@
       },
       {
         "Name": "NewVar",
-        "Type": "Class SoundBase*",
+        "Type": "class SoundBase*",
         "Size": "0x8",
         "Offset": "0x778"
       },
       {
         "Name": "ShipHullAudio",
-        "Type": "Class ShipHullAudio*",
+        "Type": "class ShipHullAudio*",
         "Size": "0x8",
         "Offset": "0x780"
       },
       {
         "Name": "ShroudBreakerAmbientLoopingWwiseEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x788"
       }

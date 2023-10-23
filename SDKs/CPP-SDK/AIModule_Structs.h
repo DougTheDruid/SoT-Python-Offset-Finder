@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 struct AIRequestID
 {
 public:
+	char                                                         pad0x4_E2CN3[0x4];                                 // 0x0(0x4)
 };
 
 
@@ -20,11 +21,12 @@ public:
 	float                                                        Age;                                               // 0x0(0x4)
 	float                                                        ExpirationAge;                                     // 0x4(0x4)
 	float                                                        Strength;                                          // 0x8(0x4)
-	Struct Vector                                                StimulusLocation;                                  // 0xc(0xc)
-	Struct Vector                                                ReceiverLocation;                                  // 0x18(0xc)
+	struct Vector                                                StimulusLocation;                                  // 0xc(0xc)
+	struct Vector                                                ReceiverLocation;                                  // 0x18(0xc)
 	struct FName                                                 Tag;                                               // 0x24(0x8)
-	char                                                         pad0xc_3GQTV[0xc];                                 // 0x2c(0xc)
+	char                                                         pad0xc_XP2AD[0xc];                                 // 0x2c(0xc)
 	bool                                                         bSuccessfullySensed;                               // 0x38(0x1)
+	char                                                         pad0x3_4RQKL[0x3];                                 // 0x39(0x3)
 };
 
 
@@ -32,7 +34,8 @@ public:
 struct AIMoveRequest
 {
 public:
-	Class Actor*                                                 GoalActor;                                         // 0x0(0x8)
+	class Actor*                                                 GoalActor;                                         // 0x0(0x8)
+	char                                                         pad0x38_8SXUJ[0x38];                               // 0x8(0x38)
 };
 
 
@@ -40,7 +43,7 @@ public:
 struct PawnActionStack
 {
 public:
-	Class PawnAction*                                            TopAction;                                         // 0x0(0x8)
+	class PawnAction*                                            TopAction;                                         // 0x0(0x8)
 };
 
 
@@ -48,7 +51,8 @@ public:
 struct PawnActionEvent
 {
 public:
-	Class PawnAction*                                            Action;                                            // 0x0(0x8)
+	class PawnAction*                                            Action;                                            // 0x0(0x8)
+	char                                                         pad0x10_0DVX5[0x10];                               // 0x8(0x10)
 };
 
 
@@ -58,10 +62,11 @@ struct BlackboardKeySelector
 public:
 	TArray<class BlackboardKeyType*>                             AllowedTypes;                                      // 0x0(0x10)
 	struct FName                                                 SelectedKeyName;                                   // 0x10(0x8)
-	class                                                        SelectedKeyType;                                   // 0x18(0x8)
+	class UClass*                                                SelectedKeyType;                                   // 0x18(0x8)
 	byte                                                         SelectedKeyID;                                     // 0x20(0x1)
-	char                                                         pad0x3_S50KK[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_BQZ81[0x3];                                 // 0x21(0x3)
 	bool                                                         bNoneIsAllowedValue;                               // 0x24(0x1)
+	char                                                         pad0x3_7UZWA[0x3];                                 // 0x25(0x3)
 };
 
 
@@ -77,7 +82,9 @@ public:
 struct AIDataProviderBoolValue
 {
 public:
+	char                                                         pad0x28_71MVB[0x28];                               // 0x0(0x28)
 	bool                                                         DefaultValue;                                      // 0x28(0x1)
+	char                                                         pad0x7_2DCYC[0x7];                                 // 0x29(0x7)
 };
 
 
@@ -85,7 +92,8 @@ public:
 struct AIDataProviderTypedValue
 {
 public:
-	class                                                        PropertyType;                                      // 0x20(0x8)
+	char                                                         pad0x20_0DNUP[0x20];                               // 0x0(0x20)
+	class UClass*                                                PropertyType;                                      // 0x20(0x8)
 };
 
 
@@ -93,8 +101,9 @@ public:
 struct AIDataProviderValue
 {
 public:
-	Class Property*                                              CachedProperty;                                    // 0x8(0x8)
-	Class AIDataProvider*                                        DataBinding;                                       // 0x10(0x8)
+	char                                                         pad0x8_BUOUR[0x8];                                 // 0x0(0x8)
+	class Property*                                              CachedProperty;                                    // 0x8(0x8)
+	class AIDataProvider*                                        DataBinding;                                       // 0x10(0x8)
 	struct FName                                                 DataField;                                         // 0x18(0x8)
 };
 
@@ -103,7 +112,9 @@ public:
 struct AIDataProviderFloatValue
 {
 public:
+	char                                                         pad0x28_TTD5P[0x28];                               // 0x0(0x28)
 	float                                                        DefaultValue;                                      // 0x28(0x4)
+	char                                                         pad0x4_QTVL9[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -111,7 +122,9 @@ public:
 struct AIDataProviderIntValue
 {
 public:
+	char                                                         pad0x28_B7FTD[0x28];                               // 0x0(0x28)
 	int                                                          DefaultValue;                                      // 0x28(0x4)
+	char                                                         pad0x4_CCPY3[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -119,6 +132,7 @@ public:
 struct AIDataProviderStructValue
 {
 public:
+	char                                                         pad0x30_I7L6B[0x30];                               // 0x0(0x30)
 };
 
 
@@ -126,7 +140,7 @@ public:
 struct CustomDataProviderObjectPropertySelector
 {
 public:
-	class                                                        ObjectClass;                                       // 0x0(0x8)
+	class UClass*                                                ObjectClass;                                       // 0x0(0x8)
 	struct FName                                                 PropertyName;                                      // 0x8(0x8)
 };
 
@@ -135,6 +149,7 @@ public:
 struct IgnoreActorInfo
 {
 public:
+	char                                                         pad0x8_83QAU[0x8];                                 // 0x0(0x8)
 	float                                                        TimeRemaining;                                     // 0x8(0x4)
 };
 
@@ -146,6 +161,7 @@ public:
 	bool                                                         bDetectEnemies;                                    // 0x0(0x1)
 	bool                                                         bDetectNeutrals;                                   // 0x0(0x1)
 	bool                                                         bDetectFriendlies;                                 // 0x0(0x1)
+	char                                                         pad0x3_FAXDJ[0x3];                                 // 0x1(0x3)
 };
 
 
@@ -153,9 +169,10 @@ public:
 struct ActorPerceptionBlueprintInfo
 {
 public:
-	Class Actor*                                                 Target;                                            // 0x0(0x8)
-	TArray<struct LastSensedStimuli>                             LastSensedStimuli;                                 // 0x8(0x10)
+	class Actor*                                                 Target;                                            // 0x0(0x8)
+	TArray<struct AIStimulus>                                    LastSensedStimuli;                                 // 0x8(0x10)
 	bool                                                         bIsHostile;                                        // 0x18(0x1)
+	char                                                         pad0x7_GM98J[0x7];                                 // 0x19(0x7)
 };
 
 
@@ -164,11 +181,11 @@ struct AIDamageEvent
 {
 public:
 	float                                                        Amount;                                            // 0x0(0x4)
-	Struct Vector                                                Location;                                          // 0x4(0xc)
-	Struct Vector                                                HitLocation;                                       // 0x10(0xc)
-	char                                                         pad0x4_0QEYI[0x4];                                 // 0x1c(0x4)
-	Class Actor*                                                 DamagedActor;                                      // 0x20(0x8)
-	Class Actor*                                                 Instigator;                                        // 0x28(0x8)
+	struct Vector                                                Location;                                          // 0x4(0xc)
+	struct Vector                                                HitLocation;                                       // 0x10(0xc)
+	char                                                         pad0x4_WMJF8[0x4];                                 // 0x1c(0x4)
+	class Actor*                                                 DamagedActor;                                      // 0x20(0x8)
+	class Actor*                                                 Instigator;                                        // 0x28(0x8)
 };
 
 
@@ -176,11 +193,13 @@ public:
 struct AINoiseEvent
 {
 public:
-	Struct Vector                                                NoiseLocation;                                     // 0x4(0xc)
+	char                                                         pad0x4_B1R9W[0x4];                                 // 0x0(0x4)
+	struct Vector                                                NoiseLocation;                                     // 0x4(0xc)
 	float                                                        Loudness;                                          // 0x10(0x4)
 	float                                                        MaxRange;                                          // 0x14(0x4)
-	Class Actor*                                                 Instigator;                                        // 0x18(0x8)
+	class Actor*                                                 Instigator;                                        // 0x18(0x8)
 	struct FName                                                 Tag;                                               // 0x20(0x8)
+	char                                                         pad0x8_0GVSP[0x8];                                 // 0x28(0x8)
 };
 
 
@@ -188,8 +207,9 @@ public:
 struct AIPredictionEvent
 {
 public:
-	Class Actor*                                                 Requestor;                                         // 0x0(0x8)
-	Class Actor*                                                 PredictedActor;                                    // 0x8(0x8)
+	class Actor*                                                 Requestor;                                         // 0x0(0x8)
+	class Actor*                                                 PredictedActor;                                    // 0x8(0x8)
+	char                                                         pad0x8_MLK4Y[0x8];                                 // 0x10(0x8)
 };
 
 
@@ -197,8 +217,9 @@ public:
 struct AISightEvent
 {
 public:
-	Class Actor*                                                 SeenActor;                                         // 0x8(0x8)
-	Class Actor*                                                 Observer;                                          // 0x10(0x8)
+	char                                                         pad0x8_KSWQQ[0x8];                                 // 0x0(0x8)
+	class Actor*                                                 SeenActor;                                         // 0x8(0x8)
+	class Actor*                                                 Observer;                                          // 0x10(0x8)
 };
 
 
@@ -206,8 +227,9 @@ public:
 struct AITeamStimulusEvent
 {
 public:
-	Class Actor*                                                 Broadcaster;                                       // 0x28(0x8)
-	Class Actor*                                                 Enemy;                                             // 0x30(0x8)
+	char                                                         pad0x28_N5MX5[0x28];                               // 0x0(0x28)
+	class Actor*                                                 Broadcaster;                                       // 0x28(0x8)
+	class Actor*                                                 Enemy;                                             // 0x30(0x8)
 };
 
 
@@ -215,8 +237,9 @@ public:
 struct AITouchEvent
 {
 public:
-	Class Actor*                                                 TouchReceiver;                                     // 0x10(0x8)
-	Class Actor*                                                 OtherActor;                                        // 0x18(0x8)
+	char                                                         pad0x10_NNXX2[0x10];                               // 0x0(0x10)
+	class Actor*                                                 TouchReceiver;                                     // 0x10(0x8)
+	class Actor*                                                 OtherActor;                                        // 0x18(0x8)
 };
 
 
@@ -224,10 +247,10 @@ public:
 struct BTCompositeChild
 {
 public:
-	Class BTCompositeNode*                                       ChildComposite;                                    // 0x0(0x8)
-	Class BTTaskNode*                                            ChildTask;                                         // 0x8(0x8)
+	class BTCompositeNode*                                       ChildComposite;                                    // 0x0(0x8)
+	class BTTaskNode*                                            ChildTask;                                         // 0x8(0x8)
 	TArray<class BTDecorator*>                                   Decorators;                                        // 0x10(0x10)
-	TArray<struct DecoratorOps>                                  DecoratorOps;                                      // 0x20(0x10)
+	TArray<struct BTDecoratorLogic>                              DecoratorOps;                                      // 0x20(0x10)
 };
 
 
@@ -236,7 +259,8 @@ struct BTDecoratorLogic
 {
 public:
 	byte                                                         Operation;                                         // 0x0(0x1)
-	char                                                         pad0x1_88AXQ[0x1];                                 // 0x1(0x1)
+	char                                                         pad0x1_1BEW9[0x1];                                 // 0x1(0x1)
+	char                                                         pad0x2_VG47B[0x2];                                 // 0x2(0x2)
 };
 
 
@@ -244,8 +268,9 @@ public:
 struct BehaviorTreeTemplateInfo
 {
 public:
-	Class BehaviorTree*                                          Asset;                                             // 0x0(0x8)
-	Class BTCompositeNode*                                       Template;                                          // 0x8(0x8)
+	class BehaviorTree*                                          Asset;                                             // 0x0(0x8)
+	class BTCompositeNode*                                       Template;                                          // 0x8(0x8)
+	char                                                         pad0x8_C3UUX[0x8];                                 // 0x10(0x8)
 };
 
 
@@ -254,8 +279,9 @@ struct BlackboardEntry
 {
 public:
 	struct FName                                                 EntryName;                                         // 0x0(0x8)
-	Class BlackboardKeyType*                                     KeyType;                                           // 0x8(0x8)
+	class BlackboardKeyType*                                     KeyType;                                           // 0x8(0x8)
 	bool                                                         bInstanceSynced;                                   // 0x10(0x1)
+	char                                                         pad0x7_KCWM3[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -263,6 +289,7 @@ public:
 struct EnvBoolParam
 {
 public:
+	char                                                         pad0xc_D27KY[0xc];                                 // 0x0(0xc)
 };
 
 
@@ -271,7 +298,7 @@ struct EnvBoolParam_DEPRECATED
 {
 public:
 	bool                                                         Value;                                             // 0x0(0x1)
-	char                                                         pad0x3_QTK4S[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_HOUXA[0x3];                                 // 0x1(0x3)
 	struct FName                                                 ParamName;                                         // 0x4(0x8)
 };
 
@@ -280,6 +307,7 @@ public:
 struct EnvIntParam
 {
 public:
+	char                                                         pad0xc_A28CM[0xc];                                 // 0x0(0xc)
 };
 
 
@@ -296,6 +324,7 @@ public:
 struct EnvFloatParam
 {
 public:
+	char                                                         pad0xc_6W3B5[0xc];                                 // 0x0(0xc)
 };
 
 
@@ -312,10 +341,12 @@ public:
 struct EnvQueryResult
 {
 public:
-	class                                                        ItemType;                                          // 0x10(0x8)
-	char                                                         pad0x14_668O0[0x14];                               // 0x18(0x14)
+	char                                                         pad0x10_4N0BM[0x10];                               // 0x0(0x10)
+	class UClass*                                                ItemType;                                          // 0x10(0x8)
+	char                                                         pad0x14_EOB7Q[0x14];                               // 0x18(0x14)
 	int                                                          OptionIndex;                                       // 0x2c(0x4)
 	int                                                          QueryID;                                           // 0x30(0x4)
+	char                                                         pad0xc_ORXXW[0xc];                                 // 0x34(0xc)
 };
 
 
@@ -324,8 +355,8 @@ struct EnvTraceData
 {
 public:
 	int                                                          VersionNum;                                        // 0x0(0x4)
-	char                                                         pad0x4_YBU1W[0x4];                                 // 0x4(0x4)
-	class                                                        NavigationFilter;                                  // 0x8(0x8)
+	char                                                         pad0x4_U9II5[0x4];                                 // 0x4(0x4)
+	class UClass*                                                NavigationFilter;                                  // 0x8(0x8)
 	struct FName                                                 OverrideNavMesh;                                   // 0x10(0x8)
 	float                                                        ProjectDown;                                       // 0x18(0x4)
 	float                                                        ProjectUp;                                         // 0x1c(0x4)
@@ -343,9 +374,10 @@ public:
 	bool                                                         bCanTraceOnGeometry;                               // 0x34(0x1)
 	bool                                                         bCanDisableTrace;                                  // 0x34(0x1)
 	bool                                                         bCanProjectDown;                                   // 0x34(0x1)
-	char                                                         pad0x3_J3NUC[0x3];                                 // 0x35(0x3)
+	char                                                         pad0x3_KN7MT[0x3];                                 // 0x35(0x3)
 	bool                                                         bUseUpDownAsAbsoluteZStartAndEnd;                  // 0x38(0x1)
 	bool                                                         bUseSourceZAsEnd;                                  // 0x39(0x1)
+	char                                                         pad0x6_UQJ5B[0x6];                                 // 0x3a(0x6)
 };
 
 
@@ -353,10 +385,11 @@ public:
 struct EnvDirection
 {
 public:
-	class                                                        LineFrom;                                          // 0x0(0x8)
-	class                                                        LineTo;                                            // 0x8(0x8)
-	class                                                        Rotation;                                          // 0x10(0x8)
+	class UClass*                                                LineFrom;                                          // 0x0(0x8)
+	class UClass*                                                LineTo;                                            // 0x8(0x8)
+	class UClass*                                                Rotation;                                          // 0x10(0x8)
 	byte                                                         DirMode;                                           // 0x18(0x1)
+	char                                                         pad0x7_THBG9[0x7];                                 // 0x19(0x7)
 };
 
 
@@ -366,7 +399,7 @@ struct EnvNamedValue
 public:
 	struct FName                                                 ParamName;                                         // 0x0(0x8)
 	byte                                                         ParamType;                                         // 0x8(0x1)
-	char                                                         pad0x3_UVD3H[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_YI25Q[0x3];                                 // 0x9(0x3)
 	float                                                        Value;                                             // 0xc(0x4)
 };
 
@@ -401,7 +434,8 @@ public:
 struct EnvQueryInstanceCache
 {
 public:
-	Class EnvQuery*                                              Template;                                          // 0x0(0x8)
+	class EnvQuery*                                              Template;                                          // 0x0(0x8)
+	char                                                         pad0x288_0IKKO[0x288];                             // 0x8(0x288)
 };
 
 
@@ -409,9 +443,10 @@ public:
 struct EnvQueryRequest
 {
 public:
-	Class EnvQuery*                                              QueryTemplate;                                     // 0x0(0x8)
-	Class Object*                                                Owner;                                             // 0x8(0x8)
-	Class World*                                                 World;                                             // 0x10(0x8)
+	class EnvQuery*                                              QueryTemplate;                                     // 0x0(0x8)
+	class Object*                                                Owner;                                             // 0x8(0x8)
+	class World*                                                 World;                                             // 0x10(0x8)
+	char                                                         pad0x158_JM84S[0x158];                             // 0x18(0x158)
 };
 
 

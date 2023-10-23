@@ -5,73 +5,85 @@ ClueSite:
   - Name: SiteType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: SiteData
     Offset: '0x8'
     Size: '0x8'
-    Type: Class ClueSiteData*
+    Type: class ClueSiteData*
   - Name: Location
     Offset: '0x10'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
+  - Name: pad0x4_UYM1R[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x20'
 ClueSiteLootHistory:
   Attributes:
   - Name: History
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct History>
+    Type: TArray<struct LootSpawnedAtClueSite>
   ClassSize: '0x10'
 ClueSiteLootRestriction:
   Attributes:
   - Name: SiteType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: LootMax
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_7T4NO[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
 ClueSiteTypeSupportedDescribedByEntry:
   Attributes:
   - Name: SiteType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: SupportedDescriptors
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct SupportedDescriptors>
+    Type: TArray<struct WeightedClueDescriptor>
   ClassSize: '0x18'
 DebrisToRangeDist:
   Attributes:
   - Name: NumberOfDebrisItemsToSpawn
     Offset: '0x0'
     Size: '0x20'
-    Type: Struct WeightedProbabilityRange
+    Type: struct WeightedProbabilityRange
   - Name: WeightedDebrisTypeAsset
     Offset: '0x20'
     Size: '0x8'
-    Type: Class WeightedDebrisDataAsset*
+    Type: class WeightedDebrisDataAsset*
   ClassSize: '0x28'
 EventClueObtained:
   Attributes:
   - Name: ObtainedClue
     Offset: '0x0'
     Size: '0x8'
-    Type: Class ClueDescriptor*
+    Type: class ClueDescriptor*
   - Name: ObtainedSiteType
     Offset: '0x8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
+  - Name: pad0x10_OQLSN[0x10]
+    Offset: '0x10'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x20'
 LandClueCreationChoice:
   Attributes:
   - Name: ClueSiteType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: IslandIdentifier
     Offset: '0x8'
     Size: '0x8'
@@ -79,18 +91,18 @@ LandClueCreationChoice:
   - Name: ClueCreator
     Offset: '0x10'
     Size: '0x8'
-    Type: Class LandClueCreator*
+    Type: class LandClueCreator*
   ClassSize: '0x18'
 LootSpawnedAtClueSite:
   Attributes:
   - Name: SiteType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: SiteLocation
     Offset: '0x8'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: NumLoot
     Offset: '0x14'
     Size: '0x4'
@@ -101,49 +113,69 @@ LootToRangeDist:
   - Name: NumberOfLootItemsToSpawn
     Offset: '0x0'
     Size: '0x20'
-    Type: Struct WeightedProbabilityRange
+    Type: struct WeightedProbabilityRange
   - Name: WeightedLootDescAsset
     Offset: '0x20'
     Size: '0x8'
-    Type: Class WeightedTreasureChestDescAsset*
+    Type: class WeightedTreasureChestDescAsset*
   ClassSize: '0x28'
 QuestVariableClueDescriptor:
-  Attributes: []
+  Attributes:
+  - Name: pad0x30_T4NFW[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x30'
 QuestVariableClueSite:
-  Attributes: []
+  Attributes:
+  - Name: pad0x30_3FSDK[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x30'
 QuestVariableClueSiteArray:
-  Attributes: []
+  Attributes:
+  - Name: pad0x30_H9PBK[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x30'
 RestrictedClueType:
   Attributes:
   - Name: Type
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Max
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_U8NQZ[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
 SeaClueCreationChoice:
   Attributes:
   - Name: SiteType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: ClueCreator
     Offset: '0x8'
     Size: '0x8'
-    Type: Class SeaClueCreator*
+    Type: class SeaClueCreator*
+  - Name: pad0x10_LAIZG[0x10]
+    Offset: '0x10'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x20'
 WeightedClueDescriptor:
   Attributes:
   - Name: Descriptor
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: DifficultyWeightings
     Offset: '0x8'
     Size: '0x10'
@@ -154,7 +186,7 @@ WeightedClueDestinationDescriptor:
   - Name: DestinationType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: DifficultyWeightings
     Offset: '0x8'
     Size: '0x10'
@@ -162,8 +194,16 @@ WeightedClueDestinationDescriptor:
   ClassSize: '0x18'
 WeightedDebris:
   Attributes:
+  - Name: pad0x20_JKK0U[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: Weight
     Offset: '0x20'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_TCM5K[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'

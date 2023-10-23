@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 CustomItemService:
   Attributes:
-  - Name: pad0x8_R50MB[0x8]
+  - Name: pad0x8_YWES7[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
   - Name: World
     Offset: '0x30'
     Size: '0x8'
-    Type: Class World*
-  - Name: pad0x18_LPTLU[0x18]
+    Type: class World*
+  - Name: pad0x18_DCUGF[0x18]
     Offset: '0x38'
     Size: '0x18'
     Type: char

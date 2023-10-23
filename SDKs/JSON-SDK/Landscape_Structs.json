@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "LayerInfoObj",
-        "Type": "Class LandscapeLayerInfoObject*",
+        "Type": "class LandscapeLayerInfoObject*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -21,7 +21,7 @@
     "Attributes": [
       {
         "Name": "LayerInfo",
-        "Type": "Class LandscapeLayerInfoObject*",
+        "Type": "class LandscapeLayerInfoObject*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -42,19 +42,32 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xa"
+      },
+      {
+        "Name": "pad0x5_1CMH1[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0xb"
       }
     ]
   },
   "GizmoSelectData": {
     "ClassSize": "0x50",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x50_PEMFM[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
   },
   "GrassVariety": {
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "GrassMesh",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -71,7 +84,7 @@
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x3_9ZZYJ[0x3]",
+        "Name": "pad0x3_86233[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xd"
@@ -107,7 +120,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x3_3YBJ6[0x3]",
+        "Name": "pad0x3_GAYO1[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x21"
@@ -134,14 +147,21 @@
   },
   "LandscapeImportLayerInfo": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_WF3VE[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "LandscapeLayerStruct": {
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "LayerInfoObj",
-        "Type": "Class LandscapeLayerInfoObject*",
+        "Type": "class LandscapeLayerInfoObject*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -149,16 +169,29 @@
   },
   "LandscapeEditorLayerSettings": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_EE6HL[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "LandscapeWeightmapUsage": {
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "ChannelUsage",
-        "Type": "Class LandscapeComponent*",
+        "Type": "class LandscapeComponent*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x18_BA980[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x8"
       }
     ]
   },
@@ -167,7 +200,7 @@
     "Attributes": [
       {
         "Name": "Mesh",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -184,14 +217,14 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x3_EWSLG[0x3]",
+        "Name": "pad0x3_6HTUE[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x19"
       },
       {
         "Name": "CenterAdjust",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x1c"
       },
@@ -202,14 +235,14 @@
         "Offset": "0x24"
       },
       {
-        "Name": "pad0x3_AQEIL[0x3]",
+        "Name": "pad0x3_V0346[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x25"
       },
       {
         "Name": "Scale",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x28"
       },
@@ -230,6 +263,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x36"
+      },
+      {
+        "Name": "pad0x1_VH089[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x37"
       }
     ]
   },
@@ -238,7 +277,7 @@
     "Attributes": [
       {
         "Name": "ControlPoint",
-        "Type": "Class LandscapeSplineControlPoint*",
+        "Type": "class LandscapeSplineControlPoint*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -253,6 +292,12 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0xc"
+      },
+      {
+        "Name": "pad0x4_01U0A[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -261,31 +306,31 @@
     "Attributes": [
       {
         "Name": "Center",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
       {
         "Name": "Left",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
       {
         "Name": "Right",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x18"
       },
       {
         "Name": "FalloffLeft",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x24"
       },
       {
         "Name": "FalloffRight",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x30"
       },
@@ -302,7 +347,7 @@
     "Attributes": [
       {
         "Name": "Segment",
-        "Type": "Class LandscapeSplineSegment*",
+        "Type": "class LandscapeSplineSegment*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -311,20 +356,47 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_JR3FY[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       }
     ]
   },
   "ForeignWorldSplineData": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_8QMXR[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ForeignSplineSegmentData": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_NF1ZK[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ForeignControlPointData": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_3DJOP[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "GrassInput": {
     "ClassSize": "0x48",
@@ -337,13 +409,13 @@
       },
       {
         "Name": "GrassType",
-        "Type": "Class LandscapeGrassType*",
+        "Type": "class LandscapeGrassType*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "Input",
-        "Type": "Struct ExpressionInput",
+        "Type": "struct ExpressionInput",
         "Size": "0x38",
         "Offset": "0x10"
       }
@@ -365,20 +437,20 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_J748B[0x7]",
+        "Name": "pad0x7_ZZZZ3[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
       },
       {
         "Name": "LayerInput",
-        "Type": "Struct ExpressionInput",
+        "Type": "struct ExpressionInput",
         "Size": "0x38",
         "Offset": "0x10"
       },
       {
         "Name": "HeightInput",
-        "Type": "Struct ExpressionInput",
+        "Type": "struct ExpressionInput",
         "Size": "0x38",
         "Offset": "0x48"
       },
@@ -390,7 +462,7 @@
       },
       {
         "Name": "ConstLayerInput",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x84"
       },
@@ -399,6 +471,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x4_O23ON[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x94"
       }
     ]
   },

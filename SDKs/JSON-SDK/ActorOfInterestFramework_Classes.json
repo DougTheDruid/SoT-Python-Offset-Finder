@@ -14,12 +14,12 @@
     "Attributes": [
       {
         "Name": "ActorOfInterestId",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x18_SWVVR[0x18]",
+        "Name": "pad0x18_ZB53G[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xd0"
@@ -47,14 +47,14 @@
     "ClassSize": "0x100",
     "Attributes": [
       {
-        "Name": "pad0x60_AWKDI[0x60]",
+        "Name": "pad0x60_NG31D[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x3c8"
       },
       {
         "Name": "EventDispatcher",
-        "Type": "Struct ObjectMessagingDispatcher",
+        "Type": "struct ObjectMessagingDispatcher",
         "Size": "0xa0",
         "Offset": "0x428"
       }

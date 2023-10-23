@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class Lantern_candle_a_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x3c8(0x8)
-	Class PointLightComponent*                                   None;                                              // 0x3d0(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x3d8(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3e0(0x8)
+	class StaticMeshComponent*                                   cmn_lantern_01_a;                                  // 0x3c8(0x8)
+	class PointLightComponent*                                   PointLight;                                        // 0x3d0(0x8)
+	class ParticleSystemComponent*                               ParticleSystem;                                    // 0x3d8(0x8)
+	class SceneComponent*                                        SharedRoot;                                        // 0x3e0(0x8)
 };
 
 

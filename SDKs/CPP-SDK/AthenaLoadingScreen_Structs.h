@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 struct SlateLoadingScreenImageParams
 {
 public:
-	Struct StringAssetReference                                  ImageAsset;                                        // 0x0(0x10)
+	struct StringAssetReference                                  ImageAsset;                                        // 0x0(0x10)
 	TArray<struct FText>                                         ImageTips;                                         // 0x10(0x10)
-	Struct SlateLoadingScreenAdvancedTipsParams                  AdvancedTips;                                      // 0x20(0x10)
+	struct SlateLoadingScreenAdvancedTipsParams                  AdvancedTips;                                      // 0x20(0x10)
 };
 
 
@@ -20,7 +20,7 @@ public:
 struct SlateLoadingScreenAdvancedTipsParams
 {
 public:
-	TArray<struct TipDescriptions>                               TipDescriptions;                                   // 0x0(0x10)
+	TArray<struct SlateLoadingScreenAdvancedTipDescription>      TipDescriptions;                                   // 0x0(0x10)
 };
 
 
@@ -28,14 +28,15 @@ public:
 struct SlateLoadingScreenAdvancedTipDescription
 {
 public:
-	Struct FText                                                 Text;                                              // 0x0(0x38)
+	struct FText                                                 Text;                                              // 0x0(0x38)
 	float                                                        Centre;                                            // 0x38(0x4)
 	float                                                        TopEdge;                                           // 0x3c(0x4)
 	float                                                        Width;                                             // 0x40(0x4)
 	float                                                        Footer;                                            // 0x44(0x4)
-	Struct SlateFontInfo                                         Font;                                              // 0x48(0x40)
-	Struct SlateColor                                            Colour;                                            // 0x88(0x30)
+	struct SlateFontInfo                                         Font;                                              // 0x48(0x40)
+	struct SlateColor                                            Colour;                                            // 0x88(0x30)
 	float                                                        LineHeightPercentage;                              // 0xb8(0x4)
+	char                                                         pad0x4_5RYXX[0x4];                                 // 0xbc(0x4)
 };
 
 
@@ -51,6 +52,7 @@ public:
 struct EventAthenaLoadingScreenStateRequest
 {
 public:
+	char                                                         pad0x1_55FR8[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -58,7 +60,7 @@ public:
 struct EventAthenaLoadingScreenBlockUntilUIIntialisedClear
 {
 public:
-	Struct FString                                               Description;                                       // 0x0(0x10)
+	struct FString                                               Description;                                       // 0x0(0x10)
 };
 
 
@@ -66,7 +68,7 @@ public:
 struct EventAthenaLoadingScreenBlockUntilUIIntialised
 {
 public:
-	Struct FString                                               Description;                                       // 0x0(0x10)
+	struct FString                                               Description;                                       // 0x0(0x10)
 };
 
 
@@ -74,6 +76,7 @@ public:
 struct EventAthenaLoadingScreenClose
 {
 public:
+	char                                                         pad0x1_C0AXL[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -81,6 +84,7 @@ public:
 struct EventAthenaLoadingScreenOpen
 {
 public:
+	char                                                         pad0x1_T29Z8[0x1];                                 // 0x0(0x1)
 };
 
 

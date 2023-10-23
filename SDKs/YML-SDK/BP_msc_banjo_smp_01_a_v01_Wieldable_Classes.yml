@@ -5,15 +5,15 @@ BP_msc_banjo_smp_01_a_v01_Wieldable_C:
   - Name: shroudmask_tp
     Offset: '0x930'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: shroud_tp
     Offset: '0x938'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: shroud_fp
     Offset: '0x940'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   ClassSize: '0x18'
   FullSize: '0x948'
   InheritedSize: '0x930'

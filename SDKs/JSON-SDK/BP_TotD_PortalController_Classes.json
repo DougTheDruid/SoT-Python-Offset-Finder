@@ -7,19 +7,19 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "AnimNotifyWwiseEmitter",
-        "Type": "Class AnimNotifyWwiseEmitterComponent*",
+        "Type": "class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
@@ -60,14 +60,14 @@
         "Offset": "0x3f4"
       },
       {
-        "Name": "pad0x3_DP59X[0x3]",
+        "Name": "pad0x3_9V28E[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3f5"
       },
       {
         "Name": "Timeline",
-        "Type": "Class TimelineComponent*",
+        "Type": "class TimelineComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
@@ -97,7 +97,7 @@
       },
       {
         "Name": "PortalMask",
-        "Type": "Class Texture2D*",
+        "Type": "class Texture2D*",
         "Size": "0x8",
         "Offset": "0x428"
       }

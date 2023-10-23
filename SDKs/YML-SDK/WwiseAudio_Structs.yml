@@ -2,39 +2,47 @@
 # https://github.com/DougTheDruid
 MovieSceneAkAudioEventTemplate:
   Attributes:
+  - Name: pad0x18_W4KZU[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: Section
     Offset: '0x18'
     Size: '0x8'
-    Type: Class MovieSceneAkAudioEventSection*
+    Type: class MovieSceneAkAudioEventSection*
   ClassSize: '0x20'
 MovieSceneAkAudioRTPCSectionData:
   Attributes:
   - Name: RTPCName
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: RTPCCurve
     Offset: '0x10'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   ClassSize: '0x88'
 MovieSceneAkAudioRTPCTemplate:
   Attributes:
+  - Name: pad0x18_KJGIG[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: Section
     Offset: '0x18'
     Size: '0x8'
-    Type: Class MovieSceneAkAudioRTPCSection*
+    Type: class MovieSceneAkAudioRTPCSection*
   ClassSize: '0x20'
 MultiEmitterData:
   Attributes:
   - Name: PoolWrapper
     Offset: '0x0'
     Size: '0x8'
-    Type: Class WwiseObjectPoolWrapper*
+    Type: class WwiseObjectPoolWrapper*
   - Name: PlayEvent
     Offset: '0x8'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: Name
     Offset: '0x10'
     Size: '0x8'
@@ -42,7 +50,11 @@ MultiEmitterData:
   - Name: Offset
     Offset: '0x18'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
+  - Name: pad0x4_6XLYM[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
 WwiseAudioAcousticSurfaceParams:
   Attributes:
@@ -71,30 +83,30 @@ WwiseExternalSource:
   - Name: path
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x10'
 WwiseListenerInfo:
   Attributes:
   - Name: Position
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: Up
     Offset: '0xc'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: Right
     Offset: '0x18'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: Front
     Offset: '0x24'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: Velocity
     Offset: '0x30'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   ClassSize: '0x3c'
 WwiseNativeEmitterPoolDensityParams:
   Attributes:
@@ -102,18 +114,18 @@ WwiseNativeEmitterPoolDensityParams:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_2TNV0[0x7]
+  - Name: pad0x7_BGX15[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
   - Name: PoolDensityAudioPlayEvent
     Offset: '0x8'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: PoolDensityAudioStopEvent
     Offset: '0x10'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: DensityRtpcName
     Offset: '0x18'
     Size: '0x8'
@@ -132,5 +144,5 @@ WwiseSubtitle:
   - Name: Subtitle
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x10'

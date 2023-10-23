@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct BarrelsOfPlentyDebugLocationEntry
 {
 public:
-	Struct Vector                                                WorldSpacePosition;                                // 0x0(0xc)
+	struct Vector                                                WorldSpacePosition;                                // 0x0(0xc)
 	float                                                        SinkTime;                                          // 0xc(0x4)
 };
 

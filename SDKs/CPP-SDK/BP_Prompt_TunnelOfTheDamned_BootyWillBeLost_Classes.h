@@ -10,17 +10,17 @@ namespace DougsSDKDumper
 class BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
-	char                                                         pad0x117_UDK2Y[0x117];                             // 0x140(0x117)
-	Struct ObjectMessagingHandle                                 Handle_CrewEnteredTunnelOfTheDamnedPortalProximity; // 0x140(0x58)
-	Struct PrioritisedPromptWithHandle                           Prompt_BootyWillBeLost;                            // 0x198(0x70)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x151_44A3E[0x151];                             // 0x140(0x151)
+	struct ObjectMessagingHandle                                 Handle_CrewEnteredTunnelOfTheDamnedPortalProximity; // 0x140(0x58)
+	struct PrioritisedPromptWithHandle                           Prompt_BootyWillBeLost;                            // 0x198(0x70)
 	float                                                        PromptDisplayDuration;                             // 0x208(0x4)
 	bool                                                         CrewInRadius;                                      // 0x20c(0x1)
 	bool                                                         PromptOnCooldown;                                  // 0x20d(0x1)
-	char                                                         pad0x2_PJK99[0x2];                                 // 0x20e(0x2)
+	char                                                         pad0x2_LWHJR[0x2];                                 // 0x20e(0x2)
 	float                                                        PromptDisplayCooldown;                             // 0x210(0x4)
-	char                                                         pad0x4_MA3B7[0x4];                                 // 0x214(0x4)
-	Class TunnelsOfTheDamnedLootFilterDataAsset*                 LootFilterDataAsset;                               // 0x218(0x8)
+	char                                                         pad0x4_TWUSE[0x4];                                 // 0x214(0x4)
+	class TunnelsOfTheDamnedLootFilterDataAsset*                 LootFilterDataAsset;                               // 0x218(0x8)
 };
 
 

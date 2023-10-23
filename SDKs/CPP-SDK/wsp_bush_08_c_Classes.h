@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class wsp_bush_08_c_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Class StaticMeshComponent*                                   wsp_bush_08_c;                                     // 0x408(0x8)
+	class StaticMeshComponent*                                   wsp_bush_08_c;                                     // 0x408(0x8)
 };
 
 

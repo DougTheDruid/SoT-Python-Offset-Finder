@@ -6,13 +6,85 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x28
+struct AdventureOnDemandVoyageDiscoveryPageMysteryProposal
+{
+public:
+	struct FName                                                 MysteryName;                                       // 0x0(0x8)
+	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x8(0x10)
+	class UClass*                                                MysteryProposalTemplate;                           // 0x18(0x8)
+	bool                                                         SelectTallTales;                                   // 0x20(0x1)
+	char                                                         pad0x7_QTM2J[0x7];                                 // 0x21(0x7)
+};
+
+
+// Size 0x70
+struct AdventureOnDemandTallTaleProposalGroup
+{
+public:
+	struct StringAssetReference                                  BackgroundImageUrl;                                // 0x0(0x10)
+	struct StringAssetReference                                  RewardImageUrl;                                    // 0x10(0x10)
+	TArray<struct FText>                                         RewardDescriptions;                                // 0x20(0x10)
+	TArray<struct FText>                                         LockedDescriptions;                                // 0x30(0x10)
+	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x40(0x10)
+	struct PlayerStat                                            StatForNewTag;                                     // 0x50(0x4)
+	byte                                                         SailToQuestAvailability;                           // 0x54(0x1)
+	byte                                                         DiveToQuestAvailability;                           // 0x55(0x1)
+	char                                                         pad0x2_U01OW[0x2];                                 // 0x56(0x2)
+	class UClass*                                                InitialProposal;                                   // 0x58(0x8)
+	TArray<struct AdventureOnDemandTallTaleCheckpoint>           Checkpoints;                                       // 0x60(0x10)
+};
+
+
+// Size 0x10
+struct AdventureOnDemandTallTaleCheckpoint
+{
+public:
+	TArray<struct AdventureOnDemandTallTaleCheckpointProposal>   Proposals;                                         // 0x0(0x10)
+};
+
+
+// Size 0x18
+struct AdventureOnDemandTallTaleCheckpointProposal
+{
+public:
+	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x0(0x10)
+	class UClass*                                                Proposal;                                          // 0x10(0x8)
+};
+
+
+// Size 0x38
+struct AdventureOnDemandVoyageSelectionVoyageProposalGroup
+{
+public:
+	struct FName                                                 GroupName;                                         // 0x0(0x8)
+	class UClass*                                                CategoryId;                                        // 0x8(0x8)
+	class UClass*                                                Company;                                           // 0x10(0x8)
+	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x18(0x10)
+	TArray<struct AdventureOnDemandVoyageSelectionVoyageProposal> Proposals;                                         // 0x28(0x10)
+};
+
+
+// Size 0x20
+struct AdventureOnDemandVoyageSelectionVoyageProposal
+{
+public:
+	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x0(0x10)
+	struct PlayerStat                                            StatForNewTag;                                     // 0x10(0x4)
+	byte                                                         SailToQuestAvailability;                           // 0x14(0x1)
+	byte                                                         DiveToQuestAvailability;                           // 0x15(0x1)
+	char                                                         pad0x2_HBEOI[0x2];                                 // 0x16(0x2)
+	class UClass*                                                Proposal;                                          // 0x18(0x8)
+};
+
+
 // Size 0x10
 struct VoyageHintPopupDescEntry
 {
 public:
 	byte                                                         QuestType;                                         // 0x0(0x1)
-	char                                                         pad0x7_HIFNL[0x7];                                 // 0x1(0x7)
-	Class PopUpMessageDesc*                                      HintPopUpMessageDesc;                              // 0x8(0x8)
+	char                                                         pad0x7_O2L8W[0x7];                                 // 0x1(0x7)
+	class PopUpMessageDesc*                                      HintPopUpMessageDesc;                              // 0x8(0x8)
 };
 
 
@@ -20,8 +92,8 @@ public:
 struct ExtraSpawnDistanceFromIsland
 {
 public:
-	class                                                        ShipSize;                                          // 0x0(0x8)
-	TArray<struct DistanceByIslandType>                          DistanceByIslandType;                              // 0x8(0x10)
+	class UClass*                                                ShipSize;                                          // 0x0(0x8)
+	TArray<struct ExtraSpawnDistanceByIslandType>                DistanceByIslandType;                              // 0x8(0x10)
 };
 
 
@@ -30,27 +102,8 @@ struct ExtraSpawnDistanceByIslandType
 {
 public:
 	byte                                                         IslandType;                                        // 0x0(0x1)
-	char                                                         pad0x3_77OG2[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_7R4H6[0x3];                                 // 0x1(0x3)
 	float                                                        ExtraSpawnDistance;                                // 0x4(0x4)
-};
-
-
-// Size 0x28
-struct AdventureOnDemandVoyageSelectionVoyageProposalGroup
-{
-public:
-	struct FName                                                 GroupName;                                         // 0x0(0x8)
-	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x8(0x10)
-	TArray<struct Proposals>                                     Proposals;                                         // 0x18(0x10)
-};
-
-
-// Size 0x18
-struct AdventureOnDemandVoyageSelectionVoyageProposal
-{
-public:
-	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x0(0x10)
-	class                                                        Proposal;                                          // 0x10(0x8)
 };
 
 
@@ -58,6 +111,16 @@ public:
 struct OnDemandQuestResumeConditionMetReasonQuestVariable
 {
 public:
+	char                                                         pad0x30_9VYTP[0x30];                               // 0x0(0x30)
+};
+
+
+// Size 0x10
+struct GameEventOnDemandCompanyBannerData
+{
+public:
+	class UClass*                                                Company;                                           // 0x0(0x8)
+	struct FName                                                 BannerTag;                                         // 0x8(0x8)
 };
 
 
@@ -66,9 +129,9 @@ struct GameEventOnDemandBannerTextData
 {
 public:
 	TArray<class Class*>                                         GameEventTypes;                                    // 0x0(0x10)
-	Struct FText                                                 OnShipSunkBannerText;                              // 0x10(0x38)
-	Struct FText                                                 OnVoyageCancelledBannerText;                       // 0x48(0x38)
-	Struct FText                                                 OnGameEventCompletedBannerHeaderText;              // 0x80(0x38)
+	struct FText                                                 OnShipSunkBannerText;                              // 0x10(0x38)
+	struct FText                                                 OnVoyageCancelledBannerText;                       // 0x48(0x38)
+	struct FText                                                 OnGameEventCompletedBannerHeaderText;              // 0x80(0x38)
 };
 
 
@@ -76,7 +139,7 @@ public:
 struct AdventureOnDemandCrewReadyToResurfaceEvent
 {
 public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
 };
 
 
@@ -84,7 +147,7 @@ public:
 struct AdventureOnDemandDiveCrewAlreadyAtDestinationEvent
 {
 public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
 };
 
 
@@ -92,6 +155,7 @@ public:
 struct AdventureOnDemandVoyageSurfaceTaleFinished
 {
 public:
+	char                                                         pad0x1_I0726[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -99,7 +163,7 @@ public:
 struct SeaBasedGameEventOnDemandLocationRequestFailedTelemetryEvent
 {
 public:
-	Struct FString                                               GameEventType;                                     // 0x0(0x10)
+	struct FString                                               GameEventType;                                     // 0x0(0x10)
 };
 
 
@@ -107,8 +171,8 @@ public:
 struct SeaBasedGameEventOnDemandLocationRequestCompletedTelemetryEvent
 {
 public:
-	Struct FString                                               GameEventType;                                     // 0x0(0x10)
-	Struct Vector2D                                              Result;                                            // 0x10(0x8)
+	struct FString                                               GameEventType;                                     // 0x0(0x10)
+	struct Vector2D                                              Result;                                            // 0x10(0x8)
 };
 
 

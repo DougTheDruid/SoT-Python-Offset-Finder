@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class bsp_bottle_hanging_light_c_C: public StaticMeshActor
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x3d8(0x8)
-	Class PointLightComponent*                                   None;                                              // 0x3e0(0x8)
-	Class PointLightComponent*                                   None;                                              // 0x3e8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x3f0(0x8)
+	class StaticMeshComponent*                                   StaticMesh2;                                       // 0x3d8(0x8)
+	class PointLightComponent*                                   PointLight1;                                       // 0x3e0(0x8)
+	class PointLightComponent*                                   PointLight;                                        // 0x3e8(0x8)
+	class StaticMeshComponent*                                   StaticMesh;                                        // 0x3f0(0x8)
 };
 
 

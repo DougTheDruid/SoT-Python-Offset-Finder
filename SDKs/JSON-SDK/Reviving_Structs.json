@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_DMQXC[0x3]",
+        "Name": "pad0x3_QGS27[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -75,14 +75,14 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_HUMGC[0x4]",
+        "Name": "pad0x4_1COYT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
       },
       {
         "Name": "CachedReviveSettings",
-        "Type": "Class ReviveSettings*",
+        "Type": "class ReviveSettings*",
         "Size": "0x8",
         "Offset": "0x30"
       }
@@ -93,15 +93,28 @@
     "Attributes": [
       {
         "Name": "AstralCordPostProcessMID",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x18_OM95R[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x8"
       }
     ]
   },
   "PlayerInReviveableStateTelemetryEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_0TUR6[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "PlayerRevivalTelemetryEvent": {
     "ClassSize": "0x1",
@@ -116,7 +129,14 @@
   },
   "PostReviveLocomotionActionStateConstructionInfo": {
     "ClassSize": "0x30",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x30_DKMFS[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventRevivableRepresentationSpawnCompleted": {
     "ClassSize": "0x1",
@@ -131,20 +151,33 @@
   },
   "EventRevivableRepresentationSpawnStarted": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_FMU1W[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ReviveableActionStateConstructionInfo": {
     "ClassSize": "0x70",
     "Attributes": [
       {
+        "Name": "pad0x30_7Z0C2[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
         "Name": "ActionStateId",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "DamageInstance",
-        "Type": "Struct DamageInstance",
+        "Type": "struct DamageInstance",
         "Size": "0x30",
         "Offset": "0x38"
       },
@@ -159,12 +192,25 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x69"
+      },
+      {
+        "Name": "pad0x6_YRXKR[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x6a"
       }
     ]
   },
   "RevivedActionStateConstructionInfo": {
     "ClassSize": "0x30",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x30_AP6QF[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
   },
   "RevivedActionStateParams": {
     "ClassSize": "0x10",
@@ -183,7 +229,7 @@
       },
       {
         "Name": "ReviveGaspAudio",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -191,14 +237,21 @@
   },
   "ReviveableActionStateStarted": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_GA9CP[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventCharacterDiedDuringReviving": {
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "OwningCharacter",
-        "Type": "Class Character*",
+        "Type": "class Character*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -206,50 +259,120 @@
   },
   "EventRevivePlayerActionStateLeft": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_2CO92[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventRevivePlayerActionStateEntered": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_0UR6W[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventCharacterFullyRevived": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_A7YSX[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ReviveEndedEarlyEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_W2X3P[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventRevivableRepresentationReturnedToBody": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_BOVYQ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "SuccessfulReviveEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_4MTYK[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "BeingRevivedStoppedEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_Q9GJJ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "BeingRevivedStartedEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_PEHOC[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "RevivableCharacterGhostlyBodyEvaporateStarted": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_7H024[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "RevivingWindowEnd": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_PGZ4X[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "RevivingWindowStart": {
     "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "DamageInstance",
-        "Type": "Struct DamageInstance",
+        "Type": "struct DamageInstance",
         "Size": "0x30",
         "Offset": "0x0"
       },
@@ -260,14 +383,14 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_ID7KX[0x7]",
+        "Name": "pad0x7_0XAM6[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
       },
       {
         "Name": "RevivableCharacter",
-        "Type": "Class Character*",
+        "Type": "class Character*",
         "Size": "0x8",
         "Offset": "0x38"
       }
@@ -277,20 +400,26 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
+        "Name": "pad0x30_VE59K[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
         "Name": "CharacterReviving",
-        "Type": "Struct NetActorPtr",
+        "Type": "struct NetActorPtr",
         "Size": "0x14",
         "Offset": "0x30"
       },
       {
         "Name": "CharacterBeingRevived",
-        "Type": "Struct NetSubObjectPtr",
+        "Type": "struct NetSubObjectPtr",
         "Size": "0x14",
         "Offset": "0x44"
       },
       {
         "Name": "InputID",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x58"
       }

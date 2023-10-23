@@ -7,14 +7,14 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x138"
       },
       {
-        "Name": "pad0x117_K9JB2[0x117]",
+        "Name": "pad0x150_7UBZR[0x150]",
         "Type": "char",
-        "Size": "0x117",
+        "Size": "0x150",
         "Offset": "0x140"
       },
       {
@@ -48,122 +48,122 @@
         "Offset": "0x168"
       },
       {
-        "Name": "pad0x4_P686I[0x4]",
+        "Name": "pad0x4_OIFK6[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x16c"
       },
       {
         "Name": "Prompt_GoToVendors",
-        "Type": "Struct PrioritisedPromptWithHandle",
+        "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x170"
       },
       {
         "Name": "Prompt_GoToGoldhoarders",
-        "Type": "Struct PrioritisedPromptWithHandle",
+        "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x1e0"
       },
       {
         "Name": "Prompt_GoToOrderOfSouls",
-        "Type": "Struct PrioritisedPromptWithHandle",
+        "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x250"
       },
       {
         "Name": "Prompt_GoToMerchantAlliance",
-        "Type": "Struct PrioritisedPromptWithHandle",
+        "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x2c0"
       },
       {
         "Name": "Prompt_ProposeVoyage",
-        "Type": "Struct PrioritisedPromptWithHandle",
+        "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x330"
       },
       {
         "Name": "Prompt_VoteOnVoyage",
-        "Type": "Struct PrioritisedPromptWithHandle",
+        "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x3a0"
       },
       {
         "Name": "Prompt_BoardShip",
-        "Type": "Struct PrioritisedPromptWithHandle",
+        "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x410"
       },
       {
         "Name": "Prompt_VisitSignpost_GH",
-        "Type": "Struct PrioritisedPromptWithHandle",
+        "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x480"
       },
       {
         "Name": "Prompt_VisitSignpost_MA",
-        "Type": "Struct PrioritisedPromptWithHandle",
+        "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x4f0"
       },
       {
         "Name": "Prompt_VisitSignpost_OOS",
-        "Type": "Struct PrioritisedPromptWithHandle",
+        "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x560"
       },
       {
         "Name": "Handle_OfferPurchased",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x5d0"
       },
       {
         "Name": "Handle_VoyageProposalDiscarded",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x628"
       },
       {
         "Name": "Handle_VoyageProposed",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x680"
       },
       {
         "Name": "Handle_VoyageBegun",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x6d8"
       },
       {
         "Name": "Handle_VoyageComplete",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x730"
       },
       {
         "Name": "Handle_PlayerEnteredShip",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x788"
       },
       {
         "Name": "Handle_PlayerExitedShip",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x7e0"
       },
       {
         "Name": "Handle_PlayerWithdrewVoyage",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x838"
       },
       {
         "Name": "Handle_VoyageCancelled",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x890"
       },
@@ -217,19 +217,19 @@
       },
       {
         "Name": "CompanyTutorialProgress",
-        "Type": "BlueprintGeneratedClass BP_CT_TutorialProgress_C*",
+        "Type": "blueprintgeneratedclass BP_CT_TutorialProgress_C*",
         "Size": "0x8",
         "Offset": "0x8f0"
       },
       {
         "Name": "Handle_CompanyRankPurchased",
-        "Type": "Struct ObjectMessagingHandle",
+        "Type": "struct ObjectMessagingHandle",
         "Size": "0x58",
         "Offset": "0x8f8"
       },
       {
         "Name": "FeatureName",
-        "Type": "Struct FeatureFlag",
+        "Type": "struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x950"
       }

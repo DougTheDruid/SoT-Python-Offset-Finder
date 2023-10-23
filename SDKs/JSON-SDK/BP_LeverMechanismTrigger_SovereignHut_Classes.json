@@ -7,19 +7,19 @@
     "Attributes": [
       {
         "Name": "Interactable",
-        "Type": "Class InteractableComponent*",
+        "Type": "class InteractableComponent*",
         "Size": "0x8",
         "Offset": "0x5f8"
       },
       {
         "Name": "LeverMesh",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x600"
       },
       {
         "Name": "BaseMesh",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x608"
       }

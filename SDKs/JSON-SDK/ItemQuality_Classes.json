@@ -13,7 +13,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_P12A7[0x8]",
+        "Name": "pad0x8_FPVI0[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -25,32 +25,32 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x7_GAA2H[0x7]",
+        "Name": "pad0x7_GCMVB[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xd1"
       },
       {
         "Name": "CompanySpecificItemQualityLevels",
-        "Type": "TArray<struct CompanySpecificItemQualityLevels>",
+        "Type": "TArray<struct PerComanyItemQualityEntry>",
         "Size": "0x10",
         "Offset": "0xd8"
       },
       {
         "Name": "CompanySpecificComplexItemQualityLevels",
-        "Type": "TArray<struct CompanySpecificComplexItemQualityLevels>",
+        "Type": "TArray<struct PerComanyComplexItemQualityEntry>",
         "Size": "0x10",
         "Offset": "0xe8"
       },
       {
         "Name": "CompanySpecificComplexItemQualityLevelsHandin",
-        "Type": "TArray<struct CompanySpecificComplexItemQualityLevelsHandin>",
+        "Type": "TArray<struct PerComanyComplexItemQualityEntry>",
         "Size": "0x10",
         "Offset": "0xf8"
       },
       {
         "Name": "GuildSettings",
-        "Type": "Class GuildSettings*",
+        "Type": "class GuildSettings*",
         "Size": "0x8",
         "Offset": "0x108"
       }

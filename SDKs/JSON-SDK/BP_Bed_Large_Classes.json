@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "DrapesMeshComponent",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       }

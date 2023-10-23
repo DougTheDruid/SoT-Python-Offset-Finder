@@ -7,48 +7,48 @@
     "Attributes": [
       {
         "Name": "ExponentialHeightFog",
-        "Type": "Class ExponentialHeightFogComponent*",
+        "Type": "class ExponentialHeightFogComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "SkyLight",
-        "Type": "Class SkyLightComponent*",
+        "Type": "class SkyLightComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "SpotLight2",
-        "Type": "Class SpotLightComponent*",
+        "Type": "class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
         "Name": "SpotLight1",
-        "Type": "Class SpotLightComponent*",
+        "Type": "class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
         "Name": "SpotLight",
-        "Type": "Class SpotLightComponent*",
+        "Type": "class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
         "Name": "PostProcess",
-        "Type": "Class PostProcessComponent*",
+        "Type": "class PostProcessComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
         "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x20_7VRBF[0x20]",
+        "Name": "pad0x20_MNVYX[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x400"

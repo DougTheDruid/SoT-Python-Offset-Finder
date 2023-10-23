@@ -5,9 +5,9 @@ NPCInteractResponseStruct:
   - Name: InteractResponseType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: StateAnim
     Offset: '0x8'
     Size: '0x8'
-    Type: Class AnimSequence*
+    Type: class AnimSequence*
   ClassSize: '0x10'

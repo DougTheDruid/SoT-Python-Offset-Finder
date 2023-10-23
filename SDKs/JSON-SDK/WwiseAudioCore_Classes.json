@@ -6,85 +6,85 @@
     "ClassSize": "0x238",
     "Attributes": [
       {
-        "Name": "pad0xc0_ATWJB[0xc0]",
+        "Name": "pad0xc0_H897A[0xc0]",
         "Type": "char",
         "Size": "0xc0",
         "Offset": "0x28"
       },
       {
         "Name": "PlatformMappings",
-        "Type": "Struct WwisePlatformMappings",
+        "Type": "struct WwisePlatformMappings",
         "Size": "0x20",
         "Offset": "0xe8"
       },
       {
         "Name": "ReverbPresetSettings",
-        "Type": "Struct WwiseAudioReverbPresets",
+        "Type": "struct WwiseAudioReverbPresets",
         "Size": "0x64",
         "Offset": "0x108"
       },
       {
-        "Name": "pad0x4_DMLW8[0x4]",
+        "Name": "pad0x4_NOTS0[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x16c"
       },
       {
         "Name": "WwiseCoreAssetsPath",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x170"
       },
       {
         "Name": "WwiseSoundbanksRoot",
-        "Type": "Struct DirectoryPath",
+        "Type": "struct DirectoryPath",
         "Size": "0x10",
         "Offset": "0x180"
       },
       {
         "Name": "WwiseStreamedFilesRoot",
-        "Type": "Struct DirectoryPath",
+        "Type": "struct DirectoryPath",
         "Size": "0x10",
         "Offset": "0x190"
       },
       {
         "Name": "AsyncIOPriorityMappings",
-        "Type": "TArray<struct AsyncIOPriorityMappings>",
+        "Type": "TArray<struct WwiseIOPriorityMappingConfig>",
         "Size": "0x10",
         "Offset": "0x1a0"
       },
       {
         "Name": "TritonAcousticMapsDirectory",
-        "Type": "Struct DirectoryPath",
+        "Type": "struct DirectoryPath",
         "Size": "0x10",
         "Offset": "0x1b0"
       },
       {
         "Name": "DefaultLanguage",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x1c0"
       },
       {
         "Name": "SinkSharesetName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x1d0"
       },
       {
         "Name": "NetworkRelationship",
-        "Type": "Struct WwiseNetworkRelationship",
+        "Type": "struct WwiseNetworkRelationship",
         "Size": "0x18",
         "Offset": "0x1e0"
       },
       {
         "Name": "WwiseCoreAssets",
-        "Type": "Class WwiseCoreAssets*",
+        "Type": "class WwiseCoreAssets*",
         "Size": "0x8",
         "Offset": "0x200"
       },
       {
-        "Name": "pad0x58_W551V[0x58]",
+        "Name": "pad0x58_TU58L[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x208"

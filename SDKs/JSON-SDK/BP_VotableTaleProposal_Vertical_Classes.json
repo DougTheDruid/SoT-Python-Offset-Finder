@@ -6,52 +6,64 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x4f0"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "Token 1",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4f8"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "Token 4",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x500"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "Token 3",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x508"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "Token 2",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x510"
       },
       {
-        "Name": "None",
+        "Name": "Tokens",
         "Type": "TArray<class StaticMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x518"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMesh*",
+        "Name": "Token Asset",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x528"
       },
       {
-        "Name": "pad0x10_XIZFK[0x10]",
-        "Type": "char",
-        "Size": "0x10",
+        "Name": "VoteCount",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x530"
+      },
+      {
+        "Name": "Show Token Animation Time",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x534"
+      },
+      {
+        "Name": "Token Material",
+        "Type": "class MaterialInterface*",
+        "Size": "0x8",
+        "Offset": "0x538"
       }
     ]
   },

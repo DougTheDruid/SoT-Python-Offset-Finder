@@ -6,12 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10 (Full Size[0x700] - InheritedSize[0x6f0]
+// Size 0x10 (Full Size[0x708] - InheritedSize[0x6f8]
 class BP_Larinna_Permanent_C: public BP_SoleTrader_C
 {
 public:
-	Class StaticMeshComponent*                                   StaticMesh1;                                       // 0x6f0(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x6f8(0x8)
+	class StaticMeshComponent*                                   StaticMesh1;                                       // 0x6f8(0x8)
+	class StaticMeshComponent*                                   StaticMesh;                                        // 0x700(0x8)
 };
 
 

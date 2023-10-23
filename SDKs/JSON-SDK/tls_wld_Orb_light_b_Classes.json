@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "PointLight",
-        "Type": "Class PointLightComponent*",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       }

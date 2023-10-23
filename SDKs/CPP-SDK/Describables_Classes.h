@@ -6,16 +6,16 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x60 (Full Size[0x188] - InheritedSize[0x128]
+// Size 0x60 (Full Size[0x198] - InheritedSize[0x138]
 class DescribableComponent: public InteractableComponent
 {
 public:
-	char                                                         pad0x8_ZZ0KL[0x8];                                 // 0x128(0x8)
-	bool                                                         TooltipActiveOnBeginPlay;                          // 0x130(0x1)
-	char                                                         pad0x7_QEYZD[0x7];                                 // 0x131(0x7)
-	Struct FText                                                 DescribableTooltipText;                            // 0x138(0x38)
-	bool                                                         TooltipActive;                                     // 0x170(0x1)
-	char                                                         pad0x17_AYOYE[0x17];                               // 0x171(0x17)
+	char                                                         pad0x8_QDLNN[0x8];                                 // 0x138(0x8)
+	bool                                                         TooltipActiveOnBeginPlay;                          // 0x140(0x1)
+	char                                                         pad0x7_U74RS[0x7];                                 // 0x141(0x7)
+	struct FText                                                 DescribableTooltipText;                            // 0x148(0x38)
+	bool                                                         TooltipActive;                                     // 0x180(0x1)
+	char                                                         pad0x17_QVLWV[0x17];                               // 0x181(0x17)
 };
 
 

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_TunnelOfTheDamnedPortal_BSP_C: public BP_TunnelOfTheDamnedPortal_Ship_C
 {
 public:
-	Class ChildActorComponent*                                   PortalEffects;                                     // 0x670(0x8)
+	class ChildActorComponent*                                   PortalEffects;                                     // 0x670(0x8)
 };
 
 

@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 struct MediaCaptureDevice
 {
 public:
-	Struct FText                                                 DisplayName;                                       // 0x0(0x38)
-	Struct FString                                               URL;                                               // 0x38(0x10)
+	struct FText                                                 DisplayName;                                       // 0x0(0x38)
+	struct FString                                               URL;                                               // 0x38(0x10)
 };
 
 
@@ -19,7 +19,7 @@ public:
 struct PlatformPlayerEntry
 {
 public:
-	Struct FString                                               Key;                                               // 0x0(0x10)
+	struct FString                                               Key;                                               // 0x0(0x10)
 	struct FName                                                 Value;                                             // 0x10(0x8)
 };
 

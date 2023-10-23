@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 struct ObjectMessagingDispatcher
 {
 public:
+	char                                                         pad0xa0_ONPGF[0xa0];                               // 0x0(0xa0)
 };
 
 
@@ -17,6 +18,7 @@ public:
 struct ObjectMessagingDispatcherHandle
 {
 public:
+	char                                                         pad0x8_ENO24[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -24,7 +26,9 @@ public:
 struct ObjectMessagingHandle
 {
 public:
-	Class Struct*                                                EventType;                                         // 0x8(0x8)
+	char                                                         pad0x8_EVAD8[0x8];                                 // 0x0(0x8)
+	class Struct*                                                EventType;                                         // 0x8(0x8)
+	char                                                         pad0x48_FH8V1[0x48];                               // 0x10(0x48)
 };
 
 
@@ -32,6 +36,7 @@ public:
 struct ObjectMessagingObjectScoper
 {
 public:
+	char                                                         pad0x50_93IB5[0x50];                               // 0x0(0x50)
 };
 
 
@@ -39,6 +44,7 @@ public:
 struct EventObjectMessagingDispatcherBeingDestroyed
 {
 public:
+	char                                                         pad0x8_KI4FA[0x8];                                 // 0x0(0x8)
 };
 
 

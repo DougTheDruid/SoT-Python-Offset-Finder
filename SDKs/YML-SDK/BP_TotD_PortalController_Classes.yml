@@ -5,15 +5,15 @@ BP_TotD_PortalController_C:
   - Name: UberGraphFrame
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: AnimNotifyWwiseEmitter
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class AnimNotifyWwiseEmitterComponent*
+    Type: class AnimNotifyWwiseEmitterComponent*
   - Name: DefaultSceneRoot
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   - Name: Timeline_0_CloudVisibility_E720F06846CDD3DCC686A1B40E94C68C
     Offset: '0x3e0'
     Size: '0x4'
@@ -38,14 +38,14 @@ BP_TotD_PortalController_C:
     Offset: '0x3f4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_DP59X[0x3]
+  - Name: pad0x3_9V28E[0x3]
     Offset: '0x3f5'
     Size: '0x3'
     Type: char
   - Name: Timeline
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class TimelineComponent*
+    Type: class TimelineComponent*
   - Name: DynamicMaterials
     Offset: '0x400'
     Size: '0x10'
@@ -65,7 +65,7 @@ BP_TotD_PortalController_C:
   - Name: PortalMask
     Offset: '0x428'
     Size: '0x8'
-    Type: Class Texture2D*
+    Type: class Texture2D*
   ClassSize: '0x68'
   FullSize: '0x430'
   InheritedSize: '0x3c8'

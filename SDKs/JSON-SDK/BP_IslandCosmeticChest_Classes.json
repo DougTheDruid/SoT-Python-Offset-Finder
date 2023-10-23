@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "Harbour",
-        "Type": "Class HarbourComponent*",
+        "Type": "class HarbourComponent*",
         "Size": "0x8",
         "Offset": "0x608"
       }

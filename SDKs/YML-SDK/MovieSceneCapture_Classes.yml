@@ -17,12 +17,12 @@ CompositionGraphCaptureSettings:
   - Name: IncludeRenderPasses
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct CompositionGraphCapturePasses
+    Type: struct CompositionGraphCapturePasses
   - Name: bCaptureFramesInHDR
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_UAU7A[0x3]
+  - Name: pad0x3_ON565[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -34,20 +34,24 @@ CompositionGraphCaptureSettings:
     Offset: '0x40'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_5PUKK[0x7]
+  - Name: pad0x7_D97YQ[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
   - Name: PostProcessingMaterial
     Offset: '0x48'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
   Super: MovieSceneCaptureProtocolSettings
 FrameGrabberProtocolSettings:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_JF0ZS[0x8]
+    Offset: '0x28'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
@@ -58,7 +62,7 @@ ImageCaptureSettings:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_J13YY[0x4]
+  - Name: pad0x4_036V0[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -72,15 +76,15 @@ LevelCapture:
     Offset: '0x1e0'
     Size: '0x1'
     Type: bool
-  - Name: pad0xb_HC6T7[0xb]
+  - Name: pad0xb_UO5H2[0xb]
     Offset: '0x1e1'
     Size: '0xb'
     Type: char
   - Name: PrerequisiteActorId
     Offset: '0x1ec'
     Size: '0x10'
-    Type: Struct Guid
-  - Name: pad0x4_8LCKW[0x4]
+    Type: struct Guid
+  - Name: pad0x4_SL688[0x4]
     Offset: '0x1fc'
     Size: '0x4'
     Type: char
@@ -90,22 +94,22 @@ LevelCapture:
   Super: MovieSceneCapture
 MovieSceneCapture:
   Attributes:
-  - Name: pad0x10_3T0E5[0x10]
+  - Name: pad0x10_20AUF[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
   - Name: CaptureType
     Offset: '0x38'
     Size: '0x8'
-    Type: Struct CaptureProtocolID
+    Type: struct CaptureProtocolID
   - Name: ProtocolSettings
     Offset: '0x40'
     Size: '0x8'
-    Type: Class MovieSceneCaptureProtocolSettings*
+    Type: class MovieSceneCaptureProtocolSettings*
   - Name: Settings
     Offset: '0x48'
     Size: '0x50'
-    Type: Struct MovieSceneCaptureSettings
+    Type: struct MovieSceneCaptureSettings
   - Name: bUseSeparateProcess
     Offset: '0x98'
     Size: '0x1'
@@ -114,19 +118,19 @@ MovieSceneCapture:
     Offset: '0x99'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_HYSZJ[0x6]
+  - Name: pad0x6_9UCU8[0x6]
     Offset: '0x9a'
     Size: '0x6'
     Type: char
   - Name: AdditionalCommandLineArguments
     Offset: '0xa0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: InheritedCommandLineArguments
     Offset: '0xb0'
     Size: '0x10'
-    Type: Struct FString
-  - Name: pad0x120_SMZWR[0x120]
+    Type: struct FString
+  - Name: pad0x120_VMW0A[0x120]
     Offset: '0xc0'
     Size: '0x120'
     Type: char
@@ -158,7 +162,7 @@ VideoCaptureSettings:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_VSBM6[0x3]
+  - Name: pad0x3_PFXPW[0x3]
     Offset: '0x31'
     Size: '0x3'
     Type: char
@@ -169,7 +173,7 @@ VideoCaptureSettings:
   - Name: VideoCodec
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x18'
   FullSize: '0x48'
   InheritedSize: '0x30'

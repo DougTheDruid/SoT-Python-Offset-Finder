@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "OverlapInfo",
-        "Type": "Struct SimpleOverlapInfo",
+        "Type": "struct SimpleOverlapInfo",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -15,13 +15,13 @@
     "Attributes": [
       {
         "Name": "OtherActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "OtherComponent",
-        "Type": "Class PrimitiveComponent*",
+        "Type": "class PrimitiveComponent*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -32,7 +32,7 @@
     "Attributes": [
       {
         "Name": "OverlapInfo",
-        "Type": "Struct SimpleOverlapInfo",
+        "Type": "struct SimpleOverlapInfo",
         "Size": "0x10",
         "Offset": "0x0"
       }

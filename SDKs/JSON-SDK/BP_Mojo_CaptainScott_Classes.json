@@ -1,27 +1,27 @@
 {
   "BP_Mojo_CaptainScott_C": {
-    "Super": "None",
-    "FullSize": "0x708",
-    "InheritedSize": "0x6f0",
+    "Super": "BP_SoleTrader_C",
+    "FullSize": "0x710",
+    "InheritedSize": "0x6f8",
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x6f0"
-      },
-      {
-        "Name": "None",
-        "Type": "Class SceneComponent*",
+        "Name": "InteractionPromptOverride",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x6f8"
       },
       {
-        "Name": "None",
-        "Type": "Class ActorOfInterestComponent*",
+        "Name": "DialogueLookAtOverride",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x700"
+      },
+      {
+        "Name": "ActorOfInterest",
+        "Type": "class ActorOfInterestComponent*",
+        "Size": "0x8",
+        "Offset": "0x708"
       }
     ]
   },

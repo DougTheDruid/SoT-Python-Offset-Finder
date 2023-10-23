@@ -5,35 +5,35 @@ BP_PlayerPirate_Ghost_C:
   - Name: UberGraphFrame
     Offset: '0x20c0'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: BP_GhostCharacterAudioComponent
     Offset: '0x20c8'
     Size: '0x8'
-    Type: BlueprintGeneratedClass BP_GhostCharacterAudioComponent_C*
+    Type: blueprintgeneratedclass BP_GhostCharacterAudioComponent_C*
   - Name: WaterInteraction
     Offset: '0x20d0'
     Size: '0x8'
-    Type: Class WaterInteractionComponent*
+    Type: class WaterInteractionComponent*
   - Name: PlayerNameplate
     Offset: '0x20d8'
     Size: '0x8'
-    Type: Class PlayerNameplateComponent*
+    Type: class PlayerNameplateComponent*
   - Name: BodyLightController
     Offset: '0x20e0'
     Size: '0x8'
-    Type: Class BodyLightControllerComponent*
+    Type: class BodyLightControllerComponent*
   - Name: AnimNotifyWwiseEmitter
     Offset: '0x20e8'
     Size: '0x8'
-    Type: Class AnimNotifyWwiseEmitterComponent*
+    Type: class AnimNotifyWwiseEmitterComponent*
   - Name: BodyLight
     Offset: '0x20f0'
     Size: '0x8'
-    Type: Class AmbientLightSourceComponent*
+    Type: class AmbientLightSourceComponent*
   - Name: CharacterFootImpact
     Offset: '0x20f8'
     Size: '0x8'
-    Type: Class CharacterFootImpactComponent*
+    Type: class CharacterFootImpactComponent*
   - Name: Default Ghost Parameter
     Offset: '0x2100'
     Size: '0x4'

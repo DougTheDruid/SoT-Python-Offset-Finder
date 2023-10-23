@@ -7,31 +7,31 @@
     "Attributes": [
       {
         "Name": "BeachNPCSpawnFlowLocation4",
-        "Type": "Class BeachNPCSpawnFlowLocationComponent*",
+        "Type": "class BeachNPCSpawnFlowLocationComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "BeachNPCSpawnFlowLocation3",
-        "Type": "Class BeachNPCSpawnFlowLocationComponent*",
+        "Type": "class BeachNPCSpawnFlowLocationComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "BeachNPCSpawnFlowLocation2",
-        "Type": "Class BeachNPCSpawnFlowLocationComponent*",
+        "Type": "class BeachNPCSpawnFlowLocationComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
         "Name": "BeachNPCSpawnFlowLocation1",
-        "Type": "Class BeachNPCSpawnFlowLocationComponent*",
+        "Type": "class BeachNPCSpawnFlowLocationComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
         "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       }

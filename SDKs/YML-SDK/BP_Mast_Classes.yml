@@ -5,43 +5,43 @@ BP_Mast_C:
   - Name: UberGraphFrame
     Offset: '0x9c8'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: MastTopComponent
     Offset: '0x9d0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: TopgallantActor
     Offset: '0x9d8'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: MainsailActor
     Offset: '0x9e0'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: TopsailActor
     Offset: '0x9e8'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: Main Yard
     Offset: '0x9f0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Topgallant Yard
     Offset: '0x9f8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Top Yard
     Offset: '0xa00'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: MastBaseComponent
     Offset: '0xa08'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Sail Parameters
     Offset: '0xa10'
     Size: '0x10'
-    Type: TArray<struct Sail Parameters>
+    Type: TArray<struct BP_SailStructure>
   - Name: Yards
     Offset: '0xa20'
     Size: '0x10'
@@ -53,7 +53,7 @@ BP_Mast_C:
   - Name: Sail Material
     Offset: '0xa40'
     Size: '0x8'
-    Type: Class MaterialInstance*
+    Type: class MaterialInstance*
   - Name: SailActors
     Offset: '0xa48'
     Size: '0x10'
@@ -61,11 +61,11 @@ BP_Mast_C:
   - Name: DamageDecalRight
     Offset: '0xa58'
     Size: '0x8'
-    Type: Class DecalComponent*
+    Type: class DecalComponent*
   - Name: DamageDecalLeft
     Offset: '0xa60'
     Size: '0x8'
-    Type: Class DecalComponent*
+    Type: class DecalComponent*
   ClassSize: '0xa0'
   FullSize: '0xa68'
   InheritedSize: '0x9c8'

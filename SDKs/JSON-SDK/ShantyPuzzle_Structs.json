@@ -1,14 +1,21 @@
 {
   "ShantyPuzzleUnlockCanceledEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_Y00PV[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ShantyPuzzleSingleInteractionZoneStopInteractingEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "Player",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -17,6 +24,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_I05JZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       }
     ]
   },
@@ -25,7 +38,7 @@
     "Attributes": [
       {
         "Name": "Player",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -34,6 +47,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_NGEEX[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       }
     ]
   },
@@ -42,7 +61,7 @@
     "Attributes": [
       {
         "Name": "Player",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -53,7 +72,7 @@
     "Attributes": [
       {
         "Name": "Player",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -61,14 +80,21 @@
   },
   "ShantyPuzzleUnlockedCompleteEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_296KD[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ShantyPuzzleInteractionZoneDefinition": {
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
@@ -85,7 +111,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_UA5E0[0x3]",
+        "Name": "pad0x3_Q939T[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -103,7 +129,7 @@
     "Attributes": [
       {
         "Name": "ParticipatingCrews",
-        "Type": "TArray<struct ParticipatingCrews>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x0"
       }

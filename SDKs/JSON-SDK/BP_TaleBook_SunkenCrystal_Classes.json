@@ -7,43 +7,43 @@
     "Attributes": [
       {
         "Name": "Arrow",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x7e8"
       },
       {
         "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x7f0"
       },
       {
         "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x7f8"
       },
       {
         "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x800"
       },
       {
         "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x808"
       },
       {
         "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x810"
       },
       {
         "Name": "TaleSelectionSlot",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x818"
       }

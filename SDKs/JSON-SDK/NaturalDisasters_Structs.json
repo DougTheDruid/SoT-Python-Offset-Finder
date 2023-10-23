@@ -9,14 +9,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_2N0C6[0x4]",
+        "Name": "pad0x4_5CX7E[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "ProjectileClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x8"
       },
@@ -51,32 +51,32 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_L7EVG[0x4]",
+        "Name": "pad0x4_6TRMJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
       },
       {
         "Name": "RotationRatePitch",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x28"
       },
       {
         "Name": "RotationRateRoll",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x58"
       },
       {
         "Name": "RotationRateYaw",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x88"
       },
       {
         "Name": "LaunchAudioPlayEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xb8"
       }
@@ -98,14 +98,14 @@
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x6_YQ6BX[0x6]",
+        "Name": "pad0x6_O9PBQ[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2"
       },
       {
         "Name": "Target",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
       },
@@ -114,6 +114,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_4QO38[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -139,20 +145,20 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_82FJI[0x4]",
+        "Name": "pad0x4_D6GKC[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       },
       {
         "Name": "OnTargetNumExtraShots",
-        "Type": "Struct WeightedProbabilityRange",
+        "Type": "struct WeightedProbabilityRange",
         "Size": "0x20",
         "Offset": "0x10"
       },
       {
         "Name": "NearMissNumExtraShots",
-        "Type": "Struct WeightedProbabilityRange",
+        "Type": "struct WeightedProbabilityRange",
         "Size": "0x20",
         "Offset": "0x30"
       },
@@ -161,6 +167,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x4_Y1OCV[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x54"
       }
     ]
   },
@@ -174,14 +186,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_CTP9F[0x4]",
+        "Name": "pad0x4_FXCUA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "Effect",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -204,31 +216,31 @@
       },
       {
         "Name": "Speed",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x8"
       },
       {
         "Name": "RotationRatePitch",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x38"
       },
       {
         "Name": "RotationRateRoll",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x68"
       },
       {
         "Name": "RotationRateYaw",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x98"
       },
       {
         "Name": "ProjectileClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xc8"
       }
@@ -256,13 +268,13 @@
     "Attributes": [
       {
         "Name": "StoryFlag",
-        "Type": "Struct StoryFlag",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "GeyserSetupData",
-        "Type": "Class GeyserSetupDataAsset*",
+        "Type": "class GeyserSetupDataAsset*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -273,7 +285,7 @@
     "Attributes": [
       {
         "Name": "ForceFeedback",
-        "Type": "Struct EarthquakeForceFeedback",
+        "Type": "struct EarthquakeForceFeedback",
         "Size": "0x40",
         "Offset": "0x0"
       },
@@ -285,7 +297,7 @@
       },
       {
         "Name": "StaggerStrength",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x50"
       }
@@ -296,13 +308,13 @@
     "Attributes": [
       {
         "Name": "ForceFeedbackOptions",
-        "Type": "TArray<struct ForceFeedbackOptions>",
+        "Type": "TArray<struct EarthquakeForceFeedbackOption>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "TimeBetweenRumbles",
-        "Type": "Struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x10"
       }
@@ -313,7 +325,7 @@
     "Attributes": [
       {
         "Name": "ForceFeedback",
-        "Type": "TArray<struct ForceFeedback>",
+        "Type": "TArray<struct LandmarkReactionEventPlayForceFeedbackEntry>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -324,13 +336,13 @@
     "Attributes": [
       {
         "Name": "StoryFlag",
-        "Type": "Struct StoryFlag",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "EarthquakeSetupData",
-        "Type": "Class EarthquakeSetupDataAsset*",
+        "Type": "class EarthquakeSetupDataAsset*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -364,13 +376,13 @@
     "Attributes": [
       {
         "Name": "StoryFlag",
-        "Type": "Struct StoryFlag",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "GeyserManagerSetupData",
-        "Type": "Class GeyserManagerSetupDataAsset*",
+        "Type": "class GeyserManagerSetupDataAsset*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -381,9 +393,15 @@
     "Attributes": [
       {
         "Name": "Target",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_REL44[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -398,13 +416,13 @@
       },
       {
         "Name": "LaunchVelocity",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x4"
       },
       {
         "Name": "RotationRate",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x10"
       }
@@ -420,7 +438,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_N4A6R[0x3]",
+        "Name": "pad0x3_IXHAA[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -444,13 +462,13 @@
     "Attributes": [
       {
         "Name": "StoryFlag",
-        "Type": "Struct StoryFlag",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "VolcanoSetupData",
-        "Type": "Class VolcanoSetupDataAsset*",
+        "Type": "class VolcanoSetupDataAsset*",
         "Size": "0x8",
         "Offset": "0x8"
       }

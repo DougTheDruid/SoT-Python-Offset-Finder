@@ -5,23 +5,23 @@ DevelopmentAuthenticationSettings:
   - Name: SandboxId
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: TokenServiceUrl
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ClientId
     Offset: '0x48'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ClientSecret
     Offset: '0x58'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: LivePrivileges
     Offset: '0x68'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x50'
   FullSize: '0x78'
   InheritedSize: '0x28'
@@ -31,7 +31,7 @@ ServiceHttpSettings:
   - Name: DiscoveryServiceUrl
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ServerMetricsLevel
     Offset: '0x38'
     Size: '0x1'
@@ -40,22 +40,22 @@ ServiceHttpSettings:
     Offset: '0x39'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_V8W8L[0x6]
+  - Name: pad0x6_I6WDF[0x6]
     Offset: '0x3a'
     Size: '0x6'
     Type: char
   - Name: SubStringToFindInUrlForXBLiveTokenRequest
     Offset: '0x40'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: UrlReplacementStringForXBLiveTokenRequest
     Offset: '0x50'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: CustomBuildVersionTag
     Offset: '0x60'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'

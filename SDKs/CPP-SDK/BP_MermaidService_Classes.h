@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x5f8] - InheritedSize[0x5f0]
+// Size 0x8 (Full Size[0x600] - InheritedSize[0x5f8]
 class BP_MermaidService_C: public MermaidService
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x5f0(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x5f8(0x8)
 };
 
 

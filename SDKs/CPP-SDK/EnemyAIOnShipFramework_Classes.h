@@ -10,12 +10,12 @@ namespace DougsSDKDumper
 class EnemyAIOnShipEncounterDesc: public DataAsset
 {
 public:
-	Class AIFixedWavesSpawner*                                   SpawnerCrewSize1;                                  // 0x28(0x8)
-	Class AIFixedWavesSpawner*                                   SpawnerCrewSize2;                                  // 0x30(0x8)
-	Class AIFixedWavesSpawner*                                   SpawnerCrewSize3;                                  // 0x38(0x8)
-	Class AIFixedWavesSpawner*                                   SpawnerCrewSize4;                                  // 0x40(0x8)
+	class AIFixedWavesSpawner*                                   SpawnerCrewSize1;                                  // 0x28(0x8)
+	class AIFixedWavesSpawner*                                   SpawnerCrewSize2;                                  // 0x30(0x8)
+	class AIFixedWavesSpawner*                                   SpawnerCrewSize3;                                  // 0x38(0x8)
+	class AIFixedWavesSpawner*                                   SpawnerCrewSize4;                                  // 0x40(0x8)
 	float                                                        MigrationPreventionRadius;                         // 0x48(0x4)
-	char                                                         pad0x4_J62B8[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_WK2FY[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -30,10 +30,10 @@ public:
 class EnemyAIOnShipService: public Actor
 {
 public:
-	char                                                         pad0x20_WH1E0[0x20];                               // 0x3c8(0x20)
-	Class EnemyAIOnShipServiceDataAsset*                         Params;                                            // 0x3e8(0x8)
-	TArray<struct ReplicatedEncounters>                          ReplicatedEncounters;                              // 0x3f0(0x10)
-	char                                                         pad0x70_TDNN7[0x70];                               // 0x400(0x70)
+	char                                                         pad0x20_5BZ84[0x20];                               // 0x3c8(0x20)
+	class EnemyAIOnShipServiceDataAsset*                         Params;                                            // 0x3e8(0x8)
+	TArray<struct EnemyAIOnShipActiveEncounters>                 ReplicatedEncounters;                              // 0x3f0(0x10)
+	char                                                         pad0x70_RTSGO[0x70];                               // 0x400(0x70)
 };
 
 
@@ -41,7 +41,7 @@ public:
 class EnemyAIOnShipServiceDataAsset: public DataAsset
 {
 public:
-	Class EnemyAIOnShipEncounterDesc*                            OceanCrawlersOnShipEncounterParams;                // 0x28(0x8)
+	class EnemyAIOnShipEncounterDesc*                            OceanCrawlersOnShipEncounterParams;                // 0x28(0x8)
 };
 
 

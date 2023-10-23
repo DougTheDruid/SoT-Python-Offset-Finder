@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_SkellyFort_SkullCloud_C: public BP_RotatableSignalCloud_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x538(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x538(0x8)
 };
 
 

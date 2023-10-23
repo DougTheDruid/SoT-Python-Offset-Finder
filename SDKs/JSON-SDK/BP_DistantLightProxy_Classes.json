@@ -7,25 +7,25 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "InstancedStaticMesh",
-        "Type": "Class InstancedStaticMeshComponent*",
+        "Type": "class InstancedStaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
         "Name": "LightList",
-        "Type": "TArray<struct LightList>",
+        "Type": "TArray<struct PointLightProxy>",
         "Size": "0x10",
         "Offset": "0x3e0"
       }

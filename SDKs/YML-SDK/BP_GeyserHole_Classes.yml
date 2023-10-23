@@ -5,27 +5,27 @@ BP_GeyserHole_C:
   - Name: UberGraphFrame
     Offset: '0x438'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: CrackMesh
     Offset: '0x440'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: CrackDecal
     Offset: '0x448'
     Size: '0x8'
-    Type: Class DecalComponent*
+    Type: class DecalComponent*
   - Name: SharedRoot
     Offset: '0x450'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   - Name: MeshDynamicMaterial
     Offset: '0x458'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
   - Name: DecalDynamicMaterial
     Offset: '0x460'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
   ClassSize: '0x30'
   FullSize: '0x468'
   InheritedSize: '0x438'

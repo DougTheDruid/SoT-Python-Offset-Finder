@@ -4,19 +4,19 @@
     "Attributes": [
       {
         "Name": "Story",
-        "Type": "Struct StoryFlag",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "StaticMesh",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "Material",
-        "Type": "Class MaterialInterface*",
+        "Type": "class MaterialInterface*",
         "Size": "0x8",
         "Offset": "0x10"
       }

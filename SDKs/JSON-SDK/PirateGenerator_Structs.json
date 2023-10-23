@@ -49,7 +49,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_I6MVK[0x3]",
+        "Name": "pad0x3_FTBTZ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -73,32 +73,32 @@
         "Offset": "0x9"
       },
       {
-        "Name": "pad0x2_4TO01[0x2]",
+        "Name": "pad0x2_8W7QJ[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xa"
       },
       {
         "Name": "BodyShapeCoordinate",
-        "Type": "Struct RadialCoordinate",
+        "Type": "struct RadialCoordinate",
         "Size": "0x8",
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x4_ZG0GK[0x4]",
+        "Name": "pad0x4_0ID4X[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
       },
       {
         "Name": "BlendShapes",
-        "Type": "TArray<struct BlendShapes>",
+        "Type": "TArray<struct IPGBlendShape>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "DynamicSliders",
-        "Type": "TArray<struct DynamicSliders>",
+        "Type": "TArray<struct IPGDynamicSlider>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -109,7 +109,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_UHVUE[0x4]",
+        "Name": "pad0x4_G43R8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -134,7 +134,7 @@
       },
       {
         "Name": "ScalarParameters",
-        "Type": "TArray<struct ScalarParameters>",
+        "Type": "TArray<struct IPGScalarParameter>",
         "Size": "0x10",
         "Offset": "0x70"
       }
@@ -219,7 +219,7 @@
       },
       {
         "Name": "ScalarParameters",
-        "Type": "TArray<struct ScalarParameters>",
+        "Type": "TArray<struct IPGScalarParameter>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -248,7 +248,7 @@
     "Attributes": [
       {
         "Name": "Items",
-        "Type": "TArray<struct Items>",
+        "Type": "TArray<struct ClothingCreatorSlotItem>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -259,25 +259,25 @@
     "Attributes": [
       {
         "Name": "Name",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "DisplayName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Description",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "Category",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -317,32 +317,32 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_CGQC1[0x3]",
+        "Name": "pad0x3_Y27K7[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
       },
       {
         "Name": "ObjectTest",
-        "Type": "Struct IPGTestSimpleType",
+        "Type": "struct IPGTestSimpleType",
         "Size": "0xc",
         "Offset": "0x14"
       },
       {
         "Name": "ObjectNoneTest",
-        "Type": "Struct IPGTestSimpleType",
+        "Type": "struct IPGTestSimpleType",
         "Size": "0xc",
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_QKVF2[0x4]",
+        "Name": "pad0x4_YTZNF[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
       },
       {
         "Name": "VectorTest",
-        "Type": "TArray<struct VectorTest>",
+        "Type": "TArray<struct IPGTestSimpleType>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -382,7 +382,7 @@
     "Attributes": [
       {
         "Name": "IPG",
-        "Type": "Struct IPGData",
+        "Type": "struct IPGData",
         "Size": "0x48",
         "Offset": "0x0"
       },
@@ -400,7 +400,7 @@
       },
       {
         "Name": "BodyShapes",
-        "Type": "Struct IPGBodyShapes",
+        "Type": "struct IPGBodyShapes",
         "Size": "0x20",
         "Offset": "0x58"
       }
@@ -411,13 +411,13 @@
     "Attributes": [
       {
         "Name": "Male",
-        "Type": "TArray<struct Male>",
+        "Type": "TArray<struct IPGBodyShape>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Female",
-        "Type": "TArray<struct Female>",
+        "Type": "TArray<struct IPGBodyShape>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -445,19 +445,19 @@
     "Attributes": [
       {
         "Name": "DynamicSliderNames",
-        "Type": "TArray<struct DynamicSliderNames>",
+        "Type": "TArray<struct IPGDynamicSliderName>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "BlendingMethods",
-        "Type": "TArray<struct BlendingMethods>",
+        "Type": "TArray<struct IPGBlendingMethod>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Groups",
-        "Type": "TArray<struct Groups>",
+        "Type": "TArray<struct IPGSetGroup>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -468,14 +468,14 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_FT6PP[0x4]",
+        "Name": "pad0x4_1MATZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
       },
       {
         "Name": "Versions",
-        "Type": "TArray<struct Versions>",
+        "Type": "TArray<struct IPGSetsData>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -491,14 +491,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_S8PAO[0x4]",
+        "Name": "pad0x4_XYPWZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "Sets",
-        "Type": "TArray<struct Sets>",
+        "Type": "TArray<struct IPGSetData>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -526,7 +526,7 @@
         "Offset": "0x9"
       },
       {
-        "Name": "pad0x2_NZR2X[0x2]",
+        "Name": "pad0x2_YW5C0[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xa"
@@ -539,7 +539,7 @@
       },
       {
         "Name": "Nodes",
-        "Type": "TArray<struct Nodes>",
+        "Type": "TArray<struct IPGBlendNode>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -556,7 +556,7 @@
       },
       {
         "Name": "Ranges",
-        "Type": "TArray<struct Ranges>",
+        "Type": "TArray<struct IPGBlendRange>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -590,14 +590,14 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_0T50M[0x4]",
+        "Name": "pad0x4_SVK3V[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
       },
       {
         "Name": "Compatibility",
-        "Type": "TArray<struct Compatibility>",
+        "Type": "TArray<struct IPGCompatibleSet>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -628,6 +628,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_XNEON[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
       }
     ]
   },
@@ -651,6 +657,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xc"
+      },
+      {
+        "Name": "pad0x3_609BO[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xd"
       }
     ]
   },
@@ -676,7 +688,7 @@
     "Attributes": [
       {
         "Name": "Slots",
-        "Type": "TArray<struct Slots>",
+        "Type": "TArray<struct ClothingSlot>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -708,6 +720,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_0TK0X[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
       }
     ]
   },
@@ -728,7 +746,7 @@
       },
       {
         "Name": "ScalarParameters",
-        "Type": "TArray<struct ScalarParameters>",
+        "Type": "TArray<struct IPGScalarParameter>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -740,7 +758,7 @@
       },
       {
         "Name": "VFXs",
-        "Type": "TArray<struct VFXs>",
+        "Type": "TArray<struct ClothingVFX>",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -810,19 +828,19 @@
       },
       {
         "Name": "Parts",
-        "Type": "TArray<struct Parts>",
+        "Type": "TArray<struct ClothingPart>",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
         "Name": "VFXs",
-        "Type": "TArray<struct VFXs>",
+        "Type": "TArray<struct ClothingVFX>",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "ScalarParameters",
-        "Type": "TArray<struct ScalarParameters>",
+        "Type": "TArray<struct IPGScalarParameter>",
         "Size": "0x10",
         "Offset": "0x68"
       },
@@ -860,6 +878,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x19"
+      },
+      {
+        "Name": "pad0x6_KD7WA[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x1a"
       }
     ]
   },
@@ -874,7 +898,7 @@
       },
       {
         "Name": "AnimSetDataId",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -885,7 +909,7 @@
     "Attributes": [
       {
         "Name": "Mesh",
-        "Type": "Class SkeletalMesh*",
+        "Type": "class SkeletalMesh*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -896,7 +920,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_L5CQV[0x4]",
+        "Name": "pad0x4_QTG6E[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -926,7 +950,7 @@
       },
       {
         "Name": "References",
-        "Type": "TArray<struct References>",
+        "Type": "TArray<struct MaterialReferenceEntry>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -948,20 +972,20 @@
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x6_7YDVE[0x6]",
+        "Name": "pad0x6_3N10Q[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2"
       },
       {
         "Name": "FromMaterial",
-        "Type": "Class MaterialInterface*",
+        "Type": "class MaterialInterface*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "ToMaterial",
-        "Type": "Class MaterialInstanceConstant*",
+        "Type": "class MaterialInstanceConstant*",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -995,7 +1019,7 @@
       },
       {
         "Name": "Reference",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -1012,7 +1036,7 @@
       },
       {
         "Name": "Color",
-        "Type": "Struct LinearColor",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -1029,7 +1053,7 @@
       },
       {
         "Name": "Texture",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -1046,7 +1070,7 @@
       },
       {
         "Name": "Texture",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -1062,14 +1086,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_G7FY9[0x7]",
+        "Name": "pad0x7_T9Y2O[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "Texture",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -1085,14 +1109,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_EW1UJ[0x7]",
+        "Name": "pad0x7_THET8[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "Texture",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -1109,7 +1133,7 @@
       },
       {
         "Name": "Texture",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -1118,6 +1142,12 @@
   "TextureSwitchParameters": {
     "ClassSize": "0x58",
     "Attributes": [
+      {
+        "Name": "pad0x8_CC5OV[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
       {
         "Name": "bAsync",
         "Type": "bool",
@@ -1131,7 +1161,7 @@
         "Offset": "0x9"
       },
       {
-        "Name": "pad0x2_D1CV0[0x2]",
+        "Name": "pad0x2_H524N[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xa"
@@ -1155,7 +1185,7 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x2_RGXWM[0x2]",
+        "Name": "pad0x2_CXFSD[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x12"
@@ -1167,7 +1197,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x4_4LT9R[0x4]",
+        "Name": "pad0x4_5KK2Z[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -1183,6 +1213,12 @@
         "Type": "TArray<struct FName>",
         "Size": "0x10",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x18_UMBAD[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x40"
       }
     ]
   },

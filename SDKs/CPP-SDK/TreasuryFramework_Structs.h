@@ -11,22 +11,24 @@ struct TreasuryWaveEncounter
 {
 public:
 	byte                                                         EncounterType;                                     // 0x0(0x1)
-	char                                                         pad0x7_EY5FN[0x7];                                 // 0x1(0x7)
-	Class SpawnAIWaveMechanismAction*                            SpawnerMechanism;                                  // 0x8(0x8)
-	Class Actor*                                                 MechanismTrigger;                                  // 0x10(0x8)
-	Class SpawnAIWaveMechanismAction*                            SpawnerMechanismVaultMaster;                       // 0x18(0x8)
-	Class Actor*                                                 MechanismTriggerVaultMaster;                       // 0x20(0x8)
-	Class TreasuryWaveDataAsset*                                 Waves;                                             // 0x28(0x8)
-	Class TreasuryWaveDataAsset*                                 FinalWaves;                                        // 0x30(0x8)
-	Class TreasuryWaveDataAsset*                                 FinalWavesVaultMaster;                             // 0x38(0x8)
+	char                                                         pad0x7_GF68S[0x7];                                 // 0x1(0x7)
+	class SpawnAIWaveMechanismAction*                            SpawnerMechanism;                                  // 0x8(0x8)
+	class Actor*                                                 MechanismTrigger;                                  // 0x10(0x8)
+	class SpawnAIWaveMechanismAction*                            SpawnerMechanismVaultMaster;                       // 0x18(0x8)
+	class Actor*                                                 MechanismTriggerVaultMaster;                       // 0x20(0x8)
+	class TreasuryWaveDataAsset*                                 Waves;                                             // 0x28(0x8)
+	class TreasuryWaveDataAsset*                                 FinalWaves;                                        // 0x30(0x8)
+	class TreasuryWaveDataAsset*                                 FinalWavesVaultMaster;                             // 0x38(0x8)
 	bool                                                         NeedsRoomFlooded;                                  // 0x40(0x1)
+	char                                                         pad0x7_YWCH5[0x7];                                 // 0x41(0x7)
 };
 
 
-// Size 0x18
+// Size 0x1c
 struct TreasuryWaveTracker
 {
 public:
+	char                                                         pad0x1c_1W68Q[0x1c];                               // 0x0(0x1c)
 };
 
 
@@ -34,6 +36,7 @@ public:
 struct EventTreasuryRoomInactive
 {
 public:
+	char                                                         pad0x1_WLNB5[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -41,6 +44,7 @@ public:
 struct EventTreasuryRoomActive
 {
 public:
+	char                                                         pad0x1_LUH02[0x1];                                 // 0x0(0x1)
 };
 
 

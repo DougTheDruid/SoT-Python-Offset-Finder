@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "DestinationDescriptor",
-        "Type": "Class ClueDestinationDescriptor*",
+        "Type": "class ClueDestinationDescriptor*",
         "Size": "0x8",
         "Offset": "0x28"
       }
@@ -25,7 +25,14 @@
     "FullSize": "0xe0",
     "InheritedSize": "0x28",
     "ClassSize": "0xb8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xb8_19QBS[0xb8]",
+        "Type": "char",
+        "Size": "0xb8",
+        "Offset": "0x28"
+      }
+    ]
   },
   "AbandonedNoteClueTextChoiceSourceConsumerInterface": {
     "Super": "Interface",
@@ -48,7 +55,7 @@
       },
       {
         "Name": "DestinationType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x38"
       }
@@ -69,7 +76,7 @@
     "Attributes": [
       {
         "Name": "TextIndexMappings",
-        "Type": "TArray<struct TextIndexMappings>",
+        "Type": "TArray<struct ClueDestinationToTextIndex>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -103,43 +110,43 @@
     "ClassSize": "0x108",
     "Attributes": [
       {
-        "Name": "pad0x20_AUQJD[0x20]",
+        "Name": "pad0x20_7WECO[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xc8"
       },
       {
         "Name": "ClueTextIndexAssetMap",
-        "Type": "Class AbandonedNoteClueTextIndexAssetMap*",
+        "Type": "class AbandonedNoteClueTextIndexAssetMap*",
         "Size": "0x8",
         "Offset": "0xe8"
       },
       {
         "Name": "CompositeFormatString",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0xf0"
       },
       {
         "Name": "CurrentClueDestination",
-        "Type": "Struct ClueDestinationChoice",
+        "Type": "struct ClueDestinationChoice",
         "Size": "0x10",
         "Offset": "0x100"
       },
       {
         "Name": "CurrentTitleText",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x110"
       },
       {
         "Name": "ClueTextChoiceSource",
-        "Type": "Class AbandonedNoteClueTextChoiceSource*",
+        "Type": "class AbandonedNoteClueTextChoiceSource*",
         "Size": "0x8",
         "Offset": "0x148"
       },
       {
-        "Name": "pad0x80_19A3X[0x80]",
+        "Name": "pad0x80_BQWQ1[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0x150"
@@ -154,7 +161,7 @@
     "Attributes": [
       {
         "Name": "NPCIdentifier",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x40"
       }
@@ -168,13 +175,13 @@
     "Attributes": [
       {
         "Name": "Descriptions",
-        "Type": "TArray<struct Descriptions>",
+        "Type": "TArray<struct GenderSpecificTextPairings>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "DestinationType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x38"
       }
@@ -228,13 +235,13 @@
       },
       {
         "Name": "BodyTextFont",
-        "Type": "Class Font*",
+        "Type": "class Font*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
       {
         "Name": "TitleTextFont",
-        "Type": "Class Font*",
+        "Type": "class Font*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
@@ -252,24 +259,24 @@
       },
       {
         "Name": "BodyTextLayout",
-        "Type": "Struct TreasureMapWidgetText",
+        "Type": "struct TreasureMapWidgetText",
         "Size": "0x3c",
         "Offset": "0xe8"
       },
       {
         "Name": "TitleTextLayout",
-        "Type": "Struct TreasureMapWidgetText",
+        "Type": "struct TreasureMapWidgetText",
         "Size": "0x3c",
         "Offset": "0x124"
       },
       {
         "Name": "ExtraTextFields",
-        "Type": "TArray<struct ExtraTextFields>",
+        "Type": "TArray<struct TextEntryWithLayout>",
         "Size": "0x10",
         "Offset": "0x160"
       },
       {
-        "Name": "pad0x50_4GVMB[0x50]",
+        "Name": "pad0x50_W2H4I[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x170"
@@ -283,32 +290,32 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x10_8D4FA[0x10]",
+        "Name": "pad0x10_CLHWS[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x7e0"
       },
       {
         "Name": "WieldableItemCanvasRenderingComponent",
-        "Type": "Class WieldableItemCanvasRenderingComponent*",
+        "Type": "class WieldableItemCanvasRenderingComponent*",
         "Size": "0x8",
         "Offset": "0x7f0"
       },
       {
         "Name": "AbandonedNoteRenderingComponent",
-        "Type": "Class AbandonedNoteWieldableRenderingComponent*",
+        "Type": "class AbandonedNoteWieldableRenderingComponent*",
         "Size": "0x8",
         "Offset": "0x7f8"
       },
       {
         "Name": "InventoryItemComponent",
-        "Type": "Class InventoryItemComponent*",
+        "Type": "class InventoryItemComponent*",
         "Size": "0x8",
         "Offset": "0x800"
       },
       {
         "Name": "UsableWieldableComponent",
-        "Type": "Class UsableWieldableComponent*",
+        "Type": "class UsableWieldableComponent*",
         "Size": "0x8",
         "Offset": "0x808"
       },
@@ -319,7 +326,7 @@
         "Offset": "0x810"
       },
       {
-        "Name": "pad0xf_9G8JE[0xf]",
+        "Name": "pad0xf_E9UAA[0xf]",
         "Type": "char",
         "Size": "0xf",
         "Offset": "0x811"
@@ -341,12 +348,12 @@
     "Attributes": [
       {
         "Name": "SpawnLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x2c_7SMYF[0x2c]",
+        "Name": "pad0x2c_JADUZ[0x2c]",
         "Type": "char",
         "Size": "0x2c",
         "Offset": "0x44"
@@ -388,7 +395,7 @@
     "Attributes": [
       {
         "Name": "DestinationDescriptor",
-        "Type": "Class ClueDestinationDescriptor*",
+        "Type": "class ClueDestinationDescriptor*",
         "Size": "0x8",
         "Offset": "0x28"
       }
@@ -415,14 +422,14 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x10_E7NCX[0x10]",
+        "Name": "pad0x10_UHKXN[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "MapMarkId",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
@@ -457,14 +464,14 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x7_CPC8D[0x7]",
+        "Name": "pad0x7_RTN50[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xf1"
       },
       {
         "Name": "DebugCrossId",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xf8"
       },
@@ -475,19 +482,19 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x7_Y55XK[0x7]",
+        "Name": "pad0x7_ASC3T[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x101"
       },
       {
         "Name": "ClueRenderData",
-        "Type": "TArray<struct ClueRenderData>",
+        "Type": "TArray<struct MapTextureRenderData>",
         "Size": "0x10",
         "Offset": "0x108"
       },
       {
-        "Name": "pad0x48_RCAB1[0x48]",
+        "Name": "pad0x48_B53J0[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x118"
@@ -501,19 +508,19 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x20_C3UN6[0x20]",
+        "Name": "pad0x20_I1KK1[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x890"
       },
       {
         "Name": "MapRadialIconData",
-        "Type": "Struct MapRadialIconData",
+        "Type": "struct MapRadialIconData",
         "Size": "0x18",
         "Offset": "0x8b0"
       },
       {
-        "Name": "pad0x8_Y0AXT[0x8]",
+        "Name": "pad0x8_DDIV3[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x8c8"
@@ -535,13 +542,13 @@
     "Attributes": [
       {
         "Name": "PrimaryClueDestDescriptor",
-        "Type": "Class ClueDestinationDescriptor*",
+        "Type": "class ClueDestinationDescriptor*",
         "Size": "0x8",
         "Offset": "0x40"
       },
       {
         "Name": "SecondaryClueDestDescriptor",
-        "Type": "Class ClueDestinationDescriptor*",
+        "Type": "class ClueDestinationDescriptor*",
         "Size": "0x8",
         "Offset": "0x48"
       }
@@ -562,7 +569,7 @@
     "Attributes": [
       {
         "Name": "NPCIndexMappings",
-        "Type": "TArray<struct NPCIndexMappings>",
+        "Type": "TArray<struct ExistingNPCToPhasedNPC>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -583,12 +590,12 @@
     "Attributes": [
       {
         "Name": "SpawnLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x2c_YKG49[0x2c]",
+        "Name": "pad0x2c_S43NU[0x2c]",
         "Type": "char",
         "Size": "0x2c",
         "Offset": "0x44"
@@ -642,7 +649,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_87NYH[0x7]",
+        "Name": "pad0x7_VBRRF[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -691,12 +698,12 @@
       },
       {
         "Name": "WorldPosition",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_1VSCX[0x4]",
+        "Name": "pad0x4_T6N1P[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
@@ -722,7 +729,14 @@
     "FullSize": "0x480",
     "InheritedSize": "0x470",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_HJYES[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x470"
+      }
+    ]
   },
   "NPCHintDialogueClueCreator": {
     "Super": "LandClueCreator",
@@ -732,7 +746,7 @@
     "Attributes": [
       {
         "Name": "NPCMappingAsset",
-        "Type": "Class ExistingToPhasedNPCIndexAssetMap*",
+        "Type": "class ExistingToPhasedNPCIndexAssetMap*",
         "Size": "0x8",
         "Offset": "0x30"
       },
@@ -755,7 +769,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x4_DQE35[0x4]",
+        "Name": "pad0x4_A0DYL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x44"
@@ -777,12 +791,12 @@
     "Attributes": [
       {
         "Name": "NPCData",
-        "Type": "Struct NPCData",
+        "Type": "struct NPCData",
         "Size": "0xb8",
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x30_NU8HF[0x30]",
+        "Name": "pad0x30_CJG74[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0xf0"
@@ -803,20 +817,20 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_L155W[0x8]",
+        "Name": "pad0x8_C8D5Z[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x148"
       },
       {
         "Name": "ClueToObtain",
-        "Type": "Class ClueDescriptor*",
+        "Type": "class ClueDescriptor*",
         "Size": "0x8",
         "Offset": "0x150"
       },
       {
         "Name": "ClueSiteType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x158"
       }
@@ -827,7 +841,14 @@
     "FullSize": "0x1e0",
     "InheritedSize": "0x160",
     "ClassSize": "0x80",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x80_CQ5NQ[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x160"
+      }
+    ]
   },
   "SeaLocationByGridSquareClueDestinationDescriptor": {
     "Super": "ClueDestinationDescriptor",
@@ -837,12 +858,12 @@
     "Attributes": [
       {
         "Name": "SeaLocationIdentifier",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x4_XPCCW[0x4]",
+        "Name": "pad0x4_G04F3[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -884,7 +905,7 @@
     "ClassSize": "0x228",
     "Attributes": [
       {
-        "Name": "pad0x18_JA0NK[0x18]",
+        "Name": "pad0x18_9ND5X[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x60"
@@ -896,20 +917,20 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x50_5Y2UW[0x50]",
+        "Name": "pad0x50_JNQI1[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x88"
       },
       {
         "Name": "TitleText",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x248"
       },
       {
         "Name": "ClueTextChoiceSource",
-        "Type": "Class AbandonedNoteClueTextChoiceSource*",
+        "Type": "class AbandonedNoteClueTextChoiceSource*",
         "Size": "0x8",
         "Offset": "0x280"
       }
@@ -920,7 +941,14 @@
     "FullSize": "0x68",
     "InheritedSize": "0x28",
     "ClassSize": "0x40",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x40_RRG4I[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x28"
+      }
+    ]
   },
   "TaleQuestGetNPCActorFromClueSiteStep": {
     "Super": "TaleQuestStep",
@@ -937,13 +965,13 @@
     "Attributes": [
       {
         "Name": "ClueSite",
-        "Type": "Struct QuestVariableClueSite",
+        "Type": "struct QuestVariableClueSite",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "NPCFromClueSite",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xb0"
       }
@@ -957,7 +985,7 @@
     "Attributes": [
       {
         "Name": "NPCIndexAssetMap",
-        "Type": "Class ExistingToPhasedNPCIndexAssetMap*",
+        "Type": "class ExistingToPhasedNPCIndexAssetMap*",
         "Size": "0x8",
         "Offset": "0x98"
       }
@@ -971,25 +999,25 @@
     "Attributes": [
       {
         "Name": "ExistingNPCActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "ObtainedPhasedNPCActorType",
-        "Type": "Struct QuestVariableActorAssetType",
+        "Type": "struct QuestVariableActorAssetType",
         "Size": "0x30",
         "Offset": "0xb0"
       },
       {
         "Name": "PhasingSourceActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xe0"
       },
       {
         "Name": "IndexAssetMap",
-        "Type": "Class ExistingToPhasedNPCIndexAssetMap*",
+        "Type": "class ExistingToPhasedNPCIndexAssetMap*",
         "Size": "0x8",
         "Offset": "0x110"
       }
@@ -1010,13 +1038,13 @@
     "Attributes": [
       {
         "Name": "ShipwreckSpawnedOn",
-        "Type": "Struct QuestVariableShipwreck",
+        "Type": "struct QuestVariableShipwreck",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "SpawnedMerchantCaptain",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xb0"
       }
@@ -1037,19 +1065,19 @@
     "Attributes": [
       {
         "Name": "ClueSite",
-        "Type": "Struct QuestVariableClueSite",
+        "Type": "struct QuestVariableClueSite",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "ClueDescriptor",
-        "Type": "Struct QuestVariableClueDescriptor",
+        "Type": "struct QuestVariableClueDescriptor",
         "Size": "0x30",
         "Offset": "0xb0"
       },
       {
         "Name": "MessageInABottle",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xe0"
       }
@@ -1070,25 +1098,25 @@
     "Attributes": [
       {
         "Name": "ClueSite",
-        "Type": "Struct QuestVariableClueSite",
+        "Type": "struct QuestVariableClueSite",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "ClueDescriptor",
-        "Type": "Struct QuestVariableClueDescriptor",
+        "Type": "struct QuestVariableClueDescriptor",
         "Size": "0x30",
         "Offset": "0xb0"
       },
       {
         "Name": "SkeletonActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xe0"
       },
       {
         "Name": "ClueItem",
-        "Type": "Struct QuestVariableItemInfo",
+        "Type": "struct QuestVariableItemInfo",
         "Size": "0x30",
         "Offset": "0x110"
       },
@@ -1108,18 +1136,18 @@
     "Attributes": [
       {
         "Name": "ClueDesc",
-        "Type": "Class ClueDescriptor*",
+        "Type": "class ClueDescriptor*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
         "Name": "ClueActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x98_VIPU0[0x98]",
+        "Name": "pad0x98_9OXJU[0x98]",
         "Type": "char",
         "Size": "0x98",
         "Offset": "0xa8"
@@ -1134,19 +1162,19 @@
     "Attributes": [
       {
         "Name": "Clue",
-        "Type": "Struct QuestVariableClueDescriptor",
+        "Type": "struct QuestVariableClueDescriptor",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "ClueActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xb0"
       },
       {
         "Name": "Discoverer",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xe0"
       }
@@ -1159,7 +1187,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x20_1LUI8[0x20]",
+        "Name": "pad0x20_3C1LK[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x30"
@@ -1207,7 +1235,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x4_SE04Z[0x4]",
+        "Name": "pad0x4_CCCEG[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x6c"
@@ -1235,7 +1263,7 @@
     "Attributes": [
       {
         "Name": "BottleItemType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x38"
       },
@@ -1247,19 +1275,19 @@
       },
       {
         "Name": "IslandSpawnLocationReservationId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x8_IDPTM[0x8]",
+        "Name": "pad0x8_56FQU[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x58"
       },
       {
         "Name": "SpawnTransform",
-        "Type": "Struct Transform",
+        "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0x60"
       },
@@ -1270,7 +1298,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x40_YKB35[0x40]",
+        "Name": "pad0x40_KPHVW[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0xa0"
@@ -1299,13 +1327,13 @@
     "Attributes": [
       {
         "Name": "SkeletonPoseType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "ClueItemType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x40"
       },
@@ -1317,18 +1345,18 @@
       },
       {
         "Name": "IslandSpawnLocationReservationId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "SpawnTransform",
-        "Type": "Struct Transform",
+        "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x30_LXMEK[0x30]",
+        "Name": "pad0x30_A49RI[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x90"
@@ -1373,7 +1401,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x4_165C6[0x4]",
+        "Name": "pad0x4_COO3W[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x6c"
@@ -1387,7 +1415,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_IR7EL[0x8]",
+        "Name": "pad0x8_T8451[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -1399,7 +1427,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x7_A41MB[0x7]",
+        "Name": "pad0x7_8FBOT[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xd1"

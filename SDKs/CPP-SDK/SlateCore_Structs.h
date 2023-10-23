@@ -10,23 +10,23 @@ namespace DougsSDKDumper
 struct SlateBrush
 {
 public:
-	Struct Vector2D                                              ImageSize;                                         // 0x0(0x8)
+	struct Vector2D                                              ImageSize;                                         // 0x0(0x8)
 	byte                                                         DrawAs;                                            // 0x8(0x1)
-	char                                                         pad0x3_2AMAA[0x3];                                 // 0x9(0x3)
-	Struct Margin                                                Margin;                                            // 0xc(0x10)
-	Struct LinearColor                                           Tint;                                              // 0x1c(0x10)
-	char                                                         pad0x4_BUORH[0x4];                                 // 0x2c(0x4)
-	Struct SlateColor                                            TintColor;                                         // 0x30(0x30)
+	char                                                         pad0x3_YAGSZ[0x3];                                 // 0x9(0x3)
+	struct Margin                                                Margin;                                            // 0xc(0x10)
+	struct LinearColor                                           Tint;                                              // 0x1c(0x10)
+	char                                                         pad0x4_PVW94[0x4];                                 // 0x2c(0x4)
+	struct SlateColor                                            TintColor;                                         // 0x30(0x30)
 	byte                                                         Tiling;                                            // 0x60(0x1)
 	byte                                                         Mirroring;                                         // 0x61(0x1)
 	byte                                                         ImageType;                                         // 0x62(0x1)
-	char                                                         pad0x5_E0Q9B[0x5];                                 // 0x63(0x5)
-	Class Object*                                                ResourceObject;                                    // 0x68(0x8)
+	char                                                         pad0x5_RY6Z1[0x5];                                 // 0x63(0x5)
+	class Object*                                                ResourceObject;                                    // 0x68(0x8)
 	struct FName                                                 ResourceName;                                      // 0x70(0x8)
 	bool                                                         bIsDynamicallyLoaded;                              // 0x78(0x1)
 	bool                                                         bHasUObject;                                       // 0x79(0x1)
-	char                                                         pad0x2_0SGB1[0x2];                                 // 0x7a(0x2)
-	Struct Box2D                                                 UVRegion;                                          // 0x7c(0x14)
+	char                                                         pad0x2_4OQHE[0x2];                                 // 0x7a(0x2)
+	struct Box2D                                                 UVRegion;                                          // 0x7c(0x14)
 };
 
 
@@ -34,8 +34,9 @@ public:
 struct SlateColor
 {
 public:
-	Struct LinearColor                                           SpecifiedColor;                                    // 0x0(0x10)
+	struct LinearColor                                           SpecifiedColor;                                    // 0x0(0x10)
 	byte                                                         ColorUseRule;                                      // 0x10(0x1)
+	char                                                         pad0x1f_6VN3O[0x1f];                               // 0x11(0x1f)
 };
 
 
@@ -54,6 +55,7 @@ public:
 struct PointerEvent
 {
 public:
+	char                                                         pad0x88_9O4UH[0x88];                               // 0x0(0x88)
 };
 
 
@@ -61,6 +63,7 @@ public:
 struct InputEvent
 {
 public:
+	char                                                         pad0x28_GY5MG[0x28];                               // 0x0(0x28)
 };
 
 
@@ -68,6 +71,7 @@ public:
 struct Geometry
 {
 public:
+	char                                                         pad0x34_1W7ZJ[0x34];                               // 0x0(0x34)
 };
 
 
@@ -75,9 +79,10 @@ public:
 struct ComboBoxStyle
 {
 public:
-	Struct ComboButtonStyle                                      ComboButtonStyle;                                  // 0x8(0x3e0)
-	Struct SlateSound                                            PressedSlateSound;                                 // 0x3e8(0x18)
-	Struct SlateSound                                            SelectionChangeSlateSound;                         // 0x400(0x18)
+	char                                                         pad0x8_OF2DF[0x8];                                 // 0x0(0x8)
+	struct ComboButtonStyle                                      ComboButtonStyle;                                  // 0x8(0x3e0)
+	struct SlateSound                                            PressedSlateSound;                                 // 0x3e8(0x18)
+	struct SlateSound                                            SelectionChangeSlateSound;                         // 0x400(0x18)
 	struct FName                                                 PressedSound;                                      // 0x418(0x8)
 	struct FName                                                 SelectionChangeSound;                              // 0x420(0x8)
 };
@@ -87,6 +92,7 @@ public:
 struct SlateWidgetStyle
 {
 public:
+	char                                                         pad0x8_8AECT[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -94,7 +100,8 @@ public:
 struct SlateSound
 {
 public:
-	Class Object*                                                ResourceObject;                                    // 0x0(0x8)
+	class Object*                                                ResourceObject;                                    // 0x0(0x8)
+	char                                                         pad0x10_PFFVY[0x10];                               // 0x8(0x10)
 };
 
 
@@ -102,10 +109,11 @@ public:
 struct ComboButtonStyle
 {
 public:
-	Struct ButtonStyle                                           ButtonStyle;                                       // 0x8(0x2a8)
-	Struct SlateBrush                                            DownArrowImage;                                    // 0x2b0(0x90)
-	Struct SlateBrush                                            MenuBorderBrush;                                   // 0x340(0x90)
-	Struct Margin                                                MenuBorderPadding;                                 // 0x3d0(0x10)
+	char                                                         pad0x8_SH8MW[0x8];                                 // 0x0(0x8)
+	struct ButtonStyle                                           ButtonStyle;                                       // 0x8(0x2a8)
+	struct SlateBrush                                            DownArrowImage;                                    // 0x2b0(0x90)
+	struct SlateBrush                                            MenuBorderBrush;                                   // 0x340(0x90)
+	struct Margin                                                MenuBorderPadding;                                 // 0x3d0(0x10)
 };
 
 
@@ -113,14 +121,15 @@ public:
 struct ButtonStyle
 {
 public:
-	Struct SlateBrush                                            Normal;                                            // 0x8(0x90)
-	Struct SlateBrush                                            Hovered;                                           // 0x98(0x90)
-	Struct SlateBrush                                            Pressed;                                           // 0x128(0x90)
-	Struct SlateBrush                                            Disabled;                                          // 0x1b8(0x90)
-	Struct Margin                                                NormalPadding;                                     // 0x248(0x10)
-	Struct Margin                                                PressedPadding;                                    // 0x258(0x10)
-	Struct SlateSound                                            PressedSlateSound;                                 // 0x268(0x18)
-	Struct SlateSound                                            HoveredSlateSound;                                 // 0x280(0x18)
+	char                                                         pad0x8_EGD0C[0x8];                                 // 0x0(0x8)
+	struct SlateBrush                                            Normal;                                            // 0x8(0x90)
+	struct SlateBrush                                            Hovered;                                           // 0x98(0x90)
+	struct SlateBrush                                            Pressed;                                           // 0x128(0x90)
+	struct SlateBrush                                            Disabled;                                          // 0x1b8(0x90)
+	struct Margin                                                NormalPadding;                                     // 0x248(0x10)
+	struct Margin                                                PressedPadding;                                    // 0x258(0x10)
+	struct SlateSound                                            PressedSlateSound;                                 // 0x268(0x18)
+	struct SlateSound                                            HoveredSlateSound;                                 // 0x280(0x18)
 	struct FName                                                 PressedSound;                                      // 0x298(0x8)
 	struct FName                                                 HoveredSound;                                      // 0x2a0(0x8)
 };
@@ -130,13 +139,14 @@ public:
 struct SlateFontInfo
 {
 public:
-	Class Object*                                                FontObject;                                        // 0x0(0x8)
-	Class Object*                                                FontMaterial;                                      // 0x8(0x8)
-	char                                                         pad0x18_OZYN1[0x18];                               // 0x10(0x18)
+	class Object*                                                FontObject;                                        // 0x0(0x8)
+	class Object*                                                FontMaterial;                                      // 0x8(0x8)
+	char                                                         pad0x18_BR0XO[0x18];                               // 0x10(0x18)
 	struct FName                                                 TypefaceFontName;                                  // 0x28(0x8)
 	int                                                          Size;                                              // 0x30(0x4)
 	struct FName                                                 FontName;                                          // 0x34(0x8)
 	byte                                                         Hinting;                                           // 0x3c(0x1)
+	char                                                         pad0x3_7RB2G[0x3];                                 // 0x3d(0x3)
 };
 
 
@@ -144,11 +154,12 @@ public:
 struct EditableTextStyle
 {
 public:
-	Struct SlateFontInfo                                         Font;                                              // 0x8(0x40)
-	Struct SlateColor                                            ColorAndOpacity;                                   // 0x48(0x30)
-	Struct SlateBrush                                            BackgroundImageSelected;                           // 0x78(0x90)
-	Struct SlateBrush                                            BackgroundImageComposing;                          // 0x108(0x90)
-	Struct SlateBrush                                            CaretImage;                                        // 0x198(0x90)
+	char                                                         pad0x8_ZW65U[0x8];                                 // 0x0(0x8)
+	struct SlateFontInfo                                         Font;                                              // 0x8(0x40)
+	struct SlateColor                                            ColorAndOpacity;                                   // 0x48(0x30)
+	struct SlateBrush                                            BackgroundImageSelected;                           // 0x78(0x90)
+	struct SlateBrush                                            BackgroundImageComposing;                          // 0x108(0x90)
+	struct SlateBrush                                            CaretImage;                                        // 0x198(0x90)
 };
 
 
@@ -156,18 +167,19 @@ public:
 struct EditableTextBoxStyle
 {
 public:
-	Struct SlateBrush                                            BackgroundImageNormal;                             // 0x8(0x90)
-	Struct SlateBrush                                            BackgroundImageHovered;                            // 0x98(0x90)
-	Struct SlateBrush                                            BackgroundImageFocused;                            // 0x128(0x90)
-	Struct SlateBrush                                            BackgroundImageReadOnly;                           // 0x1b8(0x90)
-	Struct Margin                                                Padding;                                           // 0x248(0x10)
-	Struct SlateFontInfo                                         Font;                                              // 0x258(0x40)
-	Struct SlateColor                                            ForegroundColor;                                   // 0x298(0x30)
-	Struct SlateColor                                            BackgroundColor;                                   // 0x2c8(0x30)
-	Struct SlateColor                                            ReadOnlyForegroundColor;                           // 0x2f8(0x30)
-	Struct Margin                                                HScrollBarPadding;                                 // 0x328(0x10)
-	Struct Margin                                                VScrollBarPadding;                                 // 0x338(0x10)
-	Struct ScrollBarStyle                                        ScrollBarStyle;                                    // 0x348(0x518)
+	char                                                         pad0x8_V5PJI[0x8];                                 // 0x0(0x8)
+	struct SlateBrush                                            BackgroundImageNormal;                             // 0x8(0x90)
+	struct SlateBrush                                            BackgroundImageHovered;                            // 0x98(0x90)
+	struct SlateBrush                                            BackgroundImageFocused;                            // 0x128(0x90)
+	struct SlateBrush                                            BackgroundImageReadOnly;                           // 0x1b8(0x90)
+	struct Margin                                                Padding;                                           // 0x248(0x10)
+	struct SlateFontInfo                                         Font;                                              // 0x258(0x40)
+	struct SlateColor                                            ForegroundColor;                                   // 0x298(0x30)
+	struct SlateColor                                            BackgroundColor;                                   // 0x2c8(0x30)
+	struct SlateColor                                            ReadOnlyForegroundColor;                           // 0x2f8(0x30)
+	struct Margin                                                HScrollBarPadding;                                 // 0x328(0x10)
+	struct Margin                                                VScrollBarPadding;                                 // 0x338(0x10)
+	struct ScrollBarStyle                                        ScrollBarStyle;                                    // 0x348(0x518)
 };
 
 
@@ -175,15 +187,16 @@ public:
 struct ScrollBarStyle
 {
 public:
-	Struct SlateBrush                                            HorizontalBackgroundImage;                         // 0x8(0x90)
-	Struct SlateBrush                                            VerticalBackgroundImage;                           // 0x98(0x90)
-	Struct SlateBrush                                            VerticalTopSlotImage;                              // 0x128(0x90)
-	Struct SlateBrush                                            HorizontalTopSlotImage;                            // 0x1b8(0x90)
-	Struct SlateBrush                                            VerticalBottomSlotImage;                           // 0x248(0x90)
-	Struct SlateBrush                                            HorizontalBottomSlotImage;                         // 0x2d8(0x90)
-	Struct SlateBrush                                            NormalThumbImage;                                  // 0x368(0x90)
-	Struct SlateBrush                                            HoveredThumbImage;                                 // 0x3f8(0x90)
-	Struct SlateBrush                                            DraggedThumbImage;                                 // 0x488(0x90)
+	char                                                         pad0x8_YUN53[0x8];                                 // 0x0(0x8)
+	struct SlateBrush                                            HorizontalBackgroundImage;                         // 0x8(0x90)
+	struct SlateBrush                                            VerticalBackgroundImage;                           // 0x98(0x90)
+	struct SlateBrush                                            VerticalTopSlotImage;                              // 0x128(0x90)
+	struct SlateBrush                                            HorizontalTopSlotImage;                            // 0x1b8(0x90)
+	struct SlateBrush                                            VerticalBottomSlotImage;                           // 0x248(0x90)
+	struct SlateBrush                                            HorizontalBottomSlotImage;                         // 0x2d8(0x90)
+	struct SlateBrush                                            NormalThumbImage;                                  // 0x368(0x90)
+	struct SlateBrush                                            HoveredThumbImage;                                 // 0x3f8(0x90)
+	struct SlateBrush                                            DraggedThumbImage;                                 // 0x488(0x90)
 };
 
 
@@ -191,13 +204,14 @@ public:
 struct TextBlockStyle
 {
 public:
-	Struct SlateFontInfo                                         Font;                                              // 0x8(0x40)
-	Struct SlateColor                                            ColorAndOpacity;                                   // 0x48(0x30)
-	Struct Vector2D                                              ShadowOffset;                                      // 0x78(0x8)
-	Struct LinearColor                                           ShadowColorAndOpacity;                             // 0x80(0x10)
-	Struct SlateColor                                            SelectedBackgroundColor;                           // 0x90(0x30)
-	Struct LinearColor                                           HighlightColor;                                    // 0xc0(0x10)
-	Struct SlateBrush                                            HighlightShape;                                    // 0xd0(0x90)
+	char                                                         pad0x8_1NYQP[0x8];                                 // 0x0(0x8)
+	struct SlateFontInfo                                         Font;                                              // 0x8(0x40)
+	struct SlateColor                                            ColorAndOpacity;                                   // 0x48(0x30)
+	struct Vector2D                                              ShadowOffset;                                      // 0x78(0x8)
+	struct LinearColor                                           ShadowColorAndOpacity;                             // 0x80(0x10)
+	struct SlateColor                                            SelectedBackgroundColor;                           // 0x90(0x30)
+	struct LinearColor                                           HighlightColor;                                    // 0xc0(0x10)
+	struct SlateBrush                                            HighlightShape;                                    // 0xd0(0x90)
 };
 
 
@@ -205,13 +219,14 @@ public:
 struct SpinBoxStyle
 {
 public:
-	Struct SlateBrush                                            BackgroundBrush;                                   // 0x8(0x90)
-	Struct SlateBrush                                            HoveredBackgroundBrush;                            // 0x98(0x90)
-	Struct SlateBrush                                            ActiveFillBrush;                                   // 0x128(0x90)
-	Struct SlateBrush                                            InactiveFillBrush;                                 // 0x1b8(0x90)
-	Struct SlateBrush                                            ArrowsImage;                                       // 0x248(0x90)
-	Struct SlateColor                                            ForegroundColor;                                   // 0x2d8(0x30)
-	Struct Margin                                                TextPadding;                                       // 0x308(0x10)
+	char                                                         pad0x8_QUYI6[0x8];                                 // 0x0(0x8)
+	struct SlateBrush                                            BackgroundBrush;                                   // 0x8(0x90)
+	struct SlateBrush                                            HoveredBackgroundBrush;                            // 0x98(0x90)
+	struct SlateBrush                                            ActiveFillBrush;                                   // 0x128(0x90)
+	struct SlateBrush                                            InactiveFillBrush;                                 // 0x1b8(0x90)
+	struct SlateBrush                                            ArrowsImage;                                       // 0x248(0x90)
+	struct SlateColor                                            ForegroundColor;                                   // 0x2d8(0x30)
+	struct Margin                                                TextPadding;                                       // 0x308(0x10)
 };
 
 
@@ -219,8 +234,9 @@ public:
 struct CompositeFont
 {
 public:
-	Struct Typeface                                              DefaultTypeface;                                   // 0x0(0x10)
-	TArray<struct SubTypefaces>                                  SubTypefaces;                                      // 0x10(0x10)
+	struct Typeface                                              DefaultTypeface;                                   // 0x0(0x10)
+	TArray<struct CompositeSubFont>                              SubTypefaces;                                      // 0x10(0x10)
+	char                                                         pad0x8_QOIFR[0x8];                                 // 0x20(0x8)
 };
 
 
@@ -228,10 +244,11 @@ public:
 struct CompositeSubFont
 {
 public:
-	Struct Typeface                                              Typeface;                                          // 0x0(0x10)
-	TArray<struct CharacterRanges>                               CharacterRanges;                                   // 0x10(0x10)
+	struct Typeface                                              Typeface;                                          // 0x0(0x10)
+	TArray<struct Int32Range>                                    CharacterRanges;                                   // 0x10(0x10)
 	TArray<Byte Languages>                                       Languages;                                         // 0x20(0x10)
 	float                                                        ScalingFactor;                                     // 0x30(0x4)
+	char                                                         pad0x4_QPE17[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -239,7 +256,7 @@ public:
 struct Typeface
 {
 public:
-	TArray<struct Fonts>                                         Fonts;                                             // 0x0(0x10)
+	TArray<struct TypefaceEntry>                                 Fonts;                                             // 0x0(0x10)
 };
 
 
@@ -248,7 +265,7 @@ struct TypefaceEntry
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
-	Struct FontData                                              Font;                                              // 0x8(0x30)
+	struct FontData                                              Font;                                              // 0x8(0x30)
 };
 
 
@@ -256,10 +273,10 @@ public:
 struct FontData
 {
 public:
-	Struct FString                                               FontFilename;                                      // 0x0(0x10)
-	Class FontBulkData*                                          BulkDataPtr;                                       // 0x10(0x8)
+	struct FString                                               FontFilename;                                      // 0x0(0x10)
+	class FontBulkData*                                          BulkDataPtr;                                       // 0x10(0x8)
 	byte                                                         Hinting;                                           // 0x18(0x1)
-	char                                                         pad0x7_SYAZQ[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_UB8YK[0x7];                                 // 0x19(0x7)
 	TArray<Byte FontData>                                        FontData;                                          // 0x20(0x10)
 };
 
@@ -268,19 +285,20 @@ public:
 struct WindowStyle
 {
 public:
-	Struct ButtonStyle                                           MinimizeButtonStyle;                               // 0x8(0x2a8)
-	Struct ButtonStyle                                           MaximizeButtonStyle;                               // 0x2b0(0x2a8)
-	Struct ButtonStyle                                           RestoreButtonStyle;                                // 0x558(0x2a8)
-	Struct ButtonStyle                                           CloseButtonStyle;                                  // 0x800(0x2a8)
-	Struct TextBlockStyle                                        TitleTextStyle;                                    // 0xaa8(0x160)
-	Struct SlateBrush                                            ActiveTitleBrush;                                  // 0xc08(0x90)
-	Struct SlateBrush                                            InactiveTitleBrush;                                // 0xc98(0x90)
-	Struct SlateBrush                                            FlashTitleBrush;                                   // 0xd28(0x90)
-	Struct SlateBrush                                            OutlineBrush;                                      // 0xdb8(0x90)
-	Struct SlateColor                                            OutlineColor;                                      // 0xe48(0x30)
-	Struct SlateBrush                                            BorderBrush;                                       // 0xe78(0x90)
-	Struct SlateBrush                                            BackgroundBrush;                                   // 0xf08(0x90)
-	Struct SlateBrush                                            ChildBackgroundBrush;                              // 0xf98(0x90)
+	char                                                         pad0x8_LDGBQ[0x8];                                 // 0x0(0x8)
+	struct ButtonStyle                                           MinimizeButtonStyle;                               // 0x8(0x2a8)
+	struct ButtonStyle                                           MaximizeButtonStyle;                               // 0x2b0(0x2a8)
+	struct ButtonStyle                                           RestoreButtonStyle;                                // 0x558(0x2a8)
+	struct ButtonStyle                                           CloseButtonStyle;                                  // 0x800(0x2a8)
+	struct TextBlockStyle                                        TitleTextStyle;                                    // 0xaa8(0x160)
+	struct SlateBrush                                            ActiveTitleBrush;                                  // 0xc08(0x90)
+	struct SlateBrush                                            InactiveTitleBrush;                                // 0xc98(0x90)
+	struct SlateBrush                                            FlashTitleBrush;                                   // 0xd28(0x90)
+	struct SlateBrush                                            OutlineBrush;                                      // 0xdb8(0x90)
+	struct SlateColor                                            OutlineColor;                                      // 0xe48(0x30)
+	struct SlateBrush                                            BorderBrush;                                       // 0xe78(0x90)
+	struct SlateBrush                                            BackgroundBrush;                                   // 0xf08(0x90)
+	struct SlateBrush                                            ChildBackgroundBrush;                              // 0xf98(0x90)
 };
 
 
@@ -288,8 +306,9 @@ public:
 struct ScrollBorderStyle
 {
 public:
-	Struct SlateBrush                                            TopShadowBrush;                                    // 0x8(0x90)
-	Struct SlateBrush                                            BottomShadowBrush;                                 // 0x98(0x90)
+	char                                                         pad0x8_SA32W[0x8];                                 // 0x0(0x8)
+	struct SlateBrush                                            TopShadowBrush;                                    // 0x8(0x90)
+	struct SlateBrush                                            BottomShadowBrush;                                 // 0x98(0x90)
 };
 
 
@@ -297,10 +316,11 @@ public:
 struct ScrollBoxStyle
 {
 public:
-	Struct SlateBrush                                            TopShadowBrush;                                    // 0x8(0x90)
-	Struct SlateBrush                                            BottomShadowBrush;                                 // 0x98(0x90)
-	Struct SlateBrush                                            LeftShadowBrush;                                   // 0x128(0x90)
-	Struct SlateBrush                                            RightShadowBrush;                                  // 0x1b8(0x90)
+	char                                                         pad0x8_U8TSO[0x8];                                 // 0x0(0x8)
+	struct SlateBrush                                            TopShadowBrush;                                    // 0x8(0x90)
+	struct SlateBrush                                            BottomShadowBrush;                                 // 0x98(0x90)
+	struct SlateBrush                                            LeftShadowBrush;                                   // 0x128(0x90)
+	struct SlateBrush                                            RightShadowBrush;                                  // 0x1b8(0x90)
 };
 
 
@@ -308,18 +328,19 @@ public:
 struct DockTabStyle
 {
 public:
-	Struct ButtonStyle                                           CloseButtonStyle;                                  // 0x8(0x2a8)
-	Struct SlateBrush                                            NormalBrush;                                       // 0x2b0(0x90)
-	Struct SlateBrush                                            ActiveBrush;                                       // 0x340(0x90)
-	Struct SlateBrush                                            ColorOverlayBrush;                                 // 0x3d0(0x90)
-	Struct SlateBrush                                            ForegroundBrush;                                   // 0x460(0x90)
-	Struct SlateBrush                                            HoveredBrush;                                      // 0x4f0(0x90)
-	Struct SlateBrush                                            ContentAreaBrush;                                  // 0x580(0x90)
-	Struct SlateBrush                                            TabWellBrush;                                      // 0x610(0x90)
-	Struct Margin                                                TabPadding;                                        // 0x6a0(0x10)
+	char                                                         pad0x8_DKRAA[0x8];                                 // 0x0(0x8)
+	struct ButtonStyle                                           CloseButtonStyle;                                  // 0x8(0x2a8)
+	struct SlateBrush                                            NormalBrush;                                       // 0x2b0(0x90)
+	struct SlateBrush                                            ActiveBrush;                                       // 0x340(0x90)
+	struct SlateBrush                                            ColorOverlayBrush;                                 // 0x3d0(0x90)
+	struct SlateBrush                                            ForegroundBrush;                                   // 0x460(0x90)
+	struct SlateBrush                                            HoveredBrush;                                      // 0x4f0(0x90)
+	struct SlateBrush                                            ContentAreaBrush;                                  // 0x580(0x90)
+	struct SlateBrush                                            TabWellBrush;                                      // 0x610(0x90)
+	struct Margin                                                TabPadding;                                        // 0x6a0(0x10)
 	float                                                        OverlapWidth;                                      // 0x6b0(0x4)
-	char                                                         pad0x4_KHRPF[0x4];                                 // 0x6b4(0x4)
-	Struct SlateColor                                            FlashColor;                                        // 0x6b8(0x30)
+	char                                                         pad0x4_A6EDX[0x4];                                 // 0x6b4(0x4)
+	struct SlateColor                                            FlashColor;                                        // 0x6b8(0x30)
 };
 
 
@@ -327,11 +348,12 @@ public:
 struct HeaderRowStyle
 {
 public:
-	Struct TableColumnHeaderStyle                                ColumnStyle;                                       // 0x8(0x518)
-	Struct TableColumnHeaderStyle                                LastColumnStyle;                                   // 0x520(0x518)
-	Struct SplitterStyle                                         ColumnSplitterStyle;                               // 0xa38(0x128)
-	Struct SlateBrush                                            BackgroundBrush;                                   // 0xb60(0x90)
-	Struct SlateColor                                            ForegroundColor;                                   // 0xbf0(0x30)
+	char                                                         pad0x8_LR1EJ[0x8];                                 // 0x0(0x8)
+	struct TableColumnHeaderStyle                                ColumnStyle;                                       // 0x8(0x518)
+	struct TableColumnHeaderStyle                                LastColumnStyle;                                   // 0x520(0x518)
+	struct SplitterStyle                                         ColumnSplitterStyle;                               // 0xa38(0x128)
+	struct SlateBrush                                            BackgroundBrush;                                   // 0xb60(0x90)
+	struct SlateColor                                            ForegroundColor;                                   // 0xbf0(0x30)
 };
 
 
@@ -339,8 +361,9 @@ public:
 struct SplitterStyle
 {
 public:
-	Struct SlateBrush                                            HandleNormalBrush;                                 // 0x8(0x90)
-	Struct SlateBrush                                            HandleHighlightBrush;                              // 0x98(0x90)
+	char                                                         pad0x8_8UMQB[0x8];                                 // 0x0(0x8)
+	struct SlateBrush                                            HandleNormalBrush;                                 // 0x8(0x90)
+	struct SlateBrush                                            HandleHighlightBrush;                              // 0x98(0x90)
 };
 
 
@@ -348,15 +371,16 @@ public:
 struct TableColumnHeaderStyle
 {
 public:
-	Struct SlateBrush                                            SortPrimaryAscendingImage;                         // 0x8(0x90)
-	Struct SlateBrush                                            SortPrimaryDescendingImage;                        // 0x98(0x90)
-	Struct SlateBrush                                            SortSecondaryAscendingImage;                       // 0x128(0x90)
-	Struct SlateBrush                                            SortSecondaryDescendingImage;                      // 0x1b8(0x90)
-	Struct SlateBrush                                            NormalBrush;                                       // 0x248(0x90)
-	Struct SlateBrush                                            HoveredBrush;                                      // 0x2d8(0x90)
-	Struct SlateBrush                                            MenuDropdownImage;                                 // 0x368(0x90)
-	Struct SlateBrush                                            MenuDropdownNormalBorderBrush;                     // 0x3f8(0x90)
-	Struct SlateBrush                                            MenuDropdownHoveredBorderBrush;                    // 0x488(0x90)
+	char                                                         pad0x8_OZJ0B[0x8];                                 // 0x0(0x8)
+	struct SlateBrush                                            SortPrimaryAscendingImage;                         // 0x8(0x90)
+	struct SlateBrush                                            SortPrimaryDescendingImage;                        // 0x98(0x90)
+	struct SlateBrush                                            SortSecondaryAscendingImage;                       // 0x128(0x90)
+	struct SlateBrush                                            SortSecondaryDescendingImage;                      // 0x1b8(0x90)
+	struct SlateBrush                                            NormalBrush;                                       // 0x248(0x90)
+	struct SlateBrush                                            HoveredBrush;                                      // 0x2d8(0x90)
+	struct SlateBrush                                            MenuDropdownImage;                                 // 0x368(0x90)
+	struct SlateBrush                                            MenuDropdownNormalBorderBrush;                     // 0x3f8(0x90)
+	struct SlateBrush                                            MenuDropdownHoveredBorderBrush;                    // 0x488(0x90)
 };
 
 
@@ -364,20 +388,21 @@ public:
 struct TableRowStyle
 {
 public:
-	Struct SlateBrush                                            SelectorFocusedBrush;                              // 0x8(0x90)
-	Struct SlateBrush                                            ActiveHoveredBrush;                                // 0x98(0x90)
-	Struct SlateBrush                                            ActiveBrush;                                       // 0x128(0x90)
-	Struct SlateBrush                                            InactiveHoveredBrush;                              // 0x1b8(0x90)
-	Struct SlateBrush                                            InactiveBrush;                                     // 0x248(0x90)
-	Struct SlateBrush                                            EvenRowBackgroundHoveredBrush;                     // 0x2d8(0x90)
-	Struct SlateBrush                                            EvenRowBackgroundBrush;                            // 0x368(0x90)
-	Struct SlateBrush                                            OddRowBackgroundHoveredBrush;                      // 0x3f8(0x90)
-	Struct SlateBrush                                            OddRowBackgroundBrush;                             // 0x488(0x90)
-	Struct SlateColor                                            TextColor;                                         // 0x518(0x30)
-	Struct SlateColor                                            SelectedTextColor;                                 // 0x548(0x30)
-	Struct SlateBrush                                            DropIndicator_Above;                               // 0x578(0x90)
-	Struct SlateBrush                                            DropIndicator_Onto;                                // 0x608(0x90)
-	Struct SlateBrush                                            DropIndicator_Below;                               // 0x698(0x90)
+	char                                                         pad0x8_O8IXK[0x8];                                 // 0x0(0x8)
+	struct SlateBrush                                            SelectorFocusedBrush;                              // 0x8(0x90)
+	struct SlateBrush                                            ActiveHoveredBrush;                                // 0x98(0x90)
+	struct SlateBrush                                            ActiveBrush;                                       // 0x128(0x90)
+	struct SlateBrush                                            InactiveHoveredBrush;                              // 0x1b8(0x90)
+	struct SlateBrush                                            InactiveBrush;                                     // 0x248(0x90)
+	struct SlateBrush                                            EvenRowBackgroundHoveredBrush;                     // 0x2d8(0x90)
+	struct SlateBrush                                            EvenRowBackgroundBrush;                            // 0x368(0x90)
+	struct SlateBrush                                            OddRowBackgroundHoveredBrush;                      // 0x3f8(0x90)
+	struct SlateBrush                                            OddRowBackgroundBrush;                             // 0x488(0x90)
+	struct SlateColor                                            TextColor;                                         // 0x518(0x30)
+	struct SlateColor                                            SelectedTextColor;                                 // 0x548(0x30)
+	struct SlateBrush                                            DropIndicator_Above;                               // 0x578(0x90)
+	struct SlateBrush                                            DropIndicator_Onto;                                // 0x608(0x90)
+	struct SlateBrush                                            DropIndicator_Below;                               // 0x698(0x90)
 };
 
 
@@ -385,7 +410,9 @@ public:
 struct InlineTextImageStyle
 {
 public:
-	Struct SlateBrush                                            Image;                                             // 0x8(0x90)
+	char                                                         pad0x8_BY1SX[0x8];                                 // 0x0(0x8)
+	struct SlateBrush                                            Image;                                             // 0x8(0x90)
+	char                                                         pad0x8_N2U8L[0x8];                                 // 0x98(0x8)
 };
 
 
@@ -393,12 +420,13 @@ public:
 struct VolumeControlStyle
 {
 public:
-	Struct SliderStyle                                           SliderStyle;                                       // 0x8(0x248)
-	Struct SlateBrush                                            HighVolumeImage;                                   // 0x250(0x90)
-	Struct SlateBrush                                            MidVolumeImage;                                    // 0x2e0(0x90)
-	Struct SlateBrush                                            LowVolumeImage;                                    // 0x370(0x90)
-	Struct SlateBrush                                            NoVolumeImage;                                     // 0x400(0x90)
-	Struct SlateBrush                                            MutedImage;                                        // 0x490(0x90)
+	char                                                         pad0x8_C2KQQ[0x8];                                 // 0x0(0x8)
+	struct SliderStyle                                           SliderStyle;                                       // 0x8(0x248)
+	struct SlateBrush                                            HighVolumeImage;                                   // 0x250(0x90)
+	struct SlateBrush                                            MidVolumeImage;                                    // 0x2e0(0x90)
+	struct SlateBrush                                            LowVolumeImage;                                    // 0x370(0x90)
+	struct SlateBrush                                            NoVolumeImage;                                     // 0x400(0x90)
+	struct SlateBrush                                            MutedImage;                                        // 0x490(0x90)
 };
 
 
@@ -406,10 +434,11 @@ public:
 struct SliderStyle
 {
 public:
-	Struct SlateBrush                                            NormalBarImage;                                    // 0x8(0x90)
-	Struct SlateBrush                                            DisabledBarImage;                                  // 0x98(0x90)
-	Struct SlateBrush                                            NormalThumbImage;                                  // 0x128(0x90)
-	Struct SlateBrush                                            DisabledThumbImage;                                // 0x1b8(0x90)
+	char                                                         pad0x8_A4H8E[0x8];                                 // 0x0(0x8)
+	struct SlateBrush                                            NormalBarImage;                                    // 0x8(0x90)
+	struct SlateBrush                                            DisabledBarImage;                                  // 0x98(0x90)
+	struct SlateBrush                                            NormalThumbImage;                                  // 0x128(0x90)
+	struct SlateBrush                                            DisabledThumbImage;                                // 0x1b8(0x90)
 };
 
 
@@ -417,14 +446,16 @@ public:
 struct SearchBoxStyle
 {
 public:
-	Struct EditableTextBoxStyle                                  TextBoxStyle;                                      // 0x8(0x860)
-	Struct SlateFontInfo                                         ActiveFontInfo;                                    // 0x868(0x40)
-	Struct SlateBrush                                            UpArrowImage;                                      // 0x8a8(0x90)
-	Struct SlateBrush                                            DownArrowImage;                                    // 0x938(0x90)
-	Struct SlateBrush                                            GlassImage;                                        // 0x9c8(0x90)
-	Struct SlateBrush                                            ClearImage;                                        // 0xa58(0x90)
-	Struct Margin                                                ImagePadding;                                      // 0xae8(0x10)
+	char                                                         pad0x8_9Q3DN[0x8];                                 // 0x0(0x8)
+	struct EditableTextBoxStyle                                  TextBoxStyle;                                      // 0x8(0x860)
+	struct SlateFontInfo                                         ActiveFontInfo;                                    // 0x868(0x40)
+	struct SlateBrush                                            UpArrowImage;                                      // 0x8a8(0x90)
+	struct SlateBrush                                            DownArrowImage;                                    // 0x938(0x90)
+	struct SlateBrush                                            GlassImage;                                        // 0x9c8(0x90)
+	struct SlateBrush                                            ClearImage;                                        // 0xa58(0x90)
+	struct Margin                                                ImagePadding;                                      // 0xae8(0x10)
 	bool                                                         bLeftAlignButtons;                                 // 0xaf8(0x1)
+	char                                                         pad0x7_8782J[0x7];                                 // 0xaf9(0x7)
 };
 
 
@@ -432,8 +463,9 @@ public:
 struct ExpandableAreaStyle
 {
 public:
-	Struct SlateBrush                                            CollapsedImage;                                    // 0x8(0x90)
-	Struct SlateBrush                                            ExpandedImage;                                     // 0x98(0x90)
+	char                                                         pad0x8_H1F2N[0x8];                                 // 0x0(0x8)
+	struct SlateBrush                                            CollapsedImage;                                    // 0x8(0x90)
+	struct SlateBrush                                            ExpandedImage;                                     // 0x98(0x90)
 };
 
 
@@ -441,9 +473,10 @@ public:
 struct ProgressBarStyle
 {
 public:
-	Struct SlateBrush                                            BackgroundImage;                                   // 0x8(0x90)
-	Struct SlateBrush                                            FillImage;                                         // 0x98(0x90)
-	Struct SlateBrush                                            MarqueeImage;                                      // 0x128(0x90)
+	char                                                         pad0x8_EHEG2[0x8];                                 // 0x0(0x8)
+	struct SlateBrush                                            BackgroundImage;                                   // 0x8(0x90)
+	struct SlateBrush                                            FillImage;                                         // 0x98(0x90)
+	struct SlateBrush                                            MarqueeImage;                                      // 0x128(0x90)
 };
 
 
@@ -451,8 +484,9 @@ public:
 struct InlineEditableTextBlockStyle
 {
 public:
-	Struct EditableTextBoxStyle                                  EditableTextBoxStyle;                              // 0x8(0x860)
-	Struct TextBlockStyle                                        TextStyle;                                         // 0x868(0x160)
+	char                                                         pad0x8_ST519[0x8];                                 // 0x0(0x8)
+	struct EditableTextBoxStyle                                  EditableTextBoxStyle;                              // 0x8(0x860)
+	struct TextBlockStyle                                        TextStyle;                                         // 0x868(0x160)
 };
 
 
@@ -460,9 +494,10 @@ public:
 struct HyperlinkStyle
 {
 public:
-	Struct ButtonStyle                                           UnderlineStyle;                                    // 0x8(0x2a8)
-	Struct TextBlockStyle                                        TextStyle;                                         // 0x2b0(0x160)
-	Struct Margin                                                Padding;                                           // 0x410(0x10)
+	char                                                         pad0x8_2W4KP[0x8];                                 // 0x0(0x8)
+	struct ButtonStyle                                           UnderlineStyle;                                    // 0x8(0x2a8)
+	struct TextBlockStyle                                        TextStyle;                                         // 0x2b0(0x160)
+	struct Margin                                                Padding;                                           // 0x410(0x10)
 };
 
 
@@ -470,23 +505,24 @@ public:
 struct CheckBoxStyle
 {
 public:
+	char                                                         pad0x8_TTS7P[0x8];                                 // 0x0(0x8)
 	byte                                                         CheckBoxType;                                      // 0x8(0x1)
-	char                                                         pad0x7_L29CU[0x7];                                 // 0x9(0x7)
-	Struct SlateBrush                                            UncheckedImage;                                    // 0x10(0x90)
-	Struct SlateBrush                                            UncheckedHoveredImage;                             // 0xa0(0x90)
-	Struct SlateBrush                                            UncheckedPressedImage;                             // 0x130(0x90)
-	Struct SlateBrush                                            CheckedImage;                                      // 0x1c0(0x90)
-	Struct SlateBrush                                            CheckedHoveredImage;                               // 0x250(0x90)
-	Struct SlateBrush                                            CheckedPressedImage;                               // 0x2e0(0x90)
-	Struct SlateBrush                                            UndeterminedImage;                                 // 0x370(0x90)
-	Struct SlateBrush                                            UndeterminedHoveredImage;                          // 0x400(0x90)
-	Struct SlateBrush                                            UndeterminedPressedImage;                          // 0x490(0x90)
-	Struct Margin                                                Padding;                                           // 0x520(0x10)
-	Struct SlateColor                                            ForegroundColor;                                   // 0x530(0x30)
-	Struct SlateColor                                            BorderBackgroundColor;                             // 0x560(0x30)
-	Struct SlateSound                                            CheckedSlateSound;                                 // 0x590(0x18)
-	Struct SlateSound                                            UncheckedSlateSound;                               // 0x5a8(0x18)
-	Struct SlateSound                                            HoveredSlateSound;                                 // 0x5c0(0x18)
+	char                                                         pad0x7_5WMNP[0x7];                                 // 0x9(0x7)
+	struct SlateBrush                                            UncheckedImage;                                    // 0x10(0x90)
+	struct SlateBrush                                            UncheckedHoveredImage;                             // 0xa0(0x90)
+	struct SlateBrush                                            UncheckedPressedImage;                             // 0x130(0x90)
+	struct SlateBrush                                            CheckedImage;                                      // 0x1c0(0x90)
+	struct SlateBrush                                            CheckedHoveredImage;                               // 0x250(0x90)
+	struct SlateBrush                                            CheckedPressedImage;                               // 0x2e0(0x90)
+	struct SlateBrush                                            UndeterminedImage;                                 // 0x370(0x90)
+	struct SlateBrush                                            UndeterminedHoveredImage;                          // 0x400(0x90)
+	struct SlateBrush                                            UndeterminedPressedImage;                          // 0x490(0x90)
+	struct Margin                                                Padding;                                           // 0x520(0x10)
+	struct SlateColor                                            ForegroundColor;                                   // 0x530(0x30)
+	struct SlateColor                                            BorderBackgroundColor;                             // 0x560(0x30)
+	struct SlateSound                                            CheckedSlateSound;                                 // 0x590(0x18)
+	struct SlateSound                                            UncheckedSlateSound;                               // 0x5a8(0x18)
+	struct SlateSound                                            HoveredSlateSound;                                 // 0x5c0(0x18)
 	struct FName                                                 CheckedSound;                                      // 0x5d8(0x8)
 	struct FName                                                 UncheckedSound;                                    // 0x5e0(0x8)
 	struct FName                                                 HoveredSound;                                      // 0x5e8(0x8)
@@ -497,6 +533,7 @@ public:
 struct NavigationEvent
 {
 public:
+	char                                                         pad0x30_USA0W[0x30];                               // 0x0(0x30)
 };
 
 
@@ -504,6 +541,7 @@ public:
 struct MotionEvent
 {
 public:
+	char                                                         pad0x58_P6LBO[0x58];                               // 0x0(0x58)
 };
 
 
@@ -511,6 +549,7 @@ public:
 struct ControllerEvent
 {
 public:
+	char                                                         pad0x50_BCABJ[0x50];                               // 0x0(0x50)
 };
 
 
@@ -518,6 +557,7 @@ public:
 struct CharacterEvent
 {
 public:
+	char                                                         pad0x30_NS1YY[0x30];                               // 0x0(0x30)
 };
 
 
@@ -525,6 +565,7 @@ public:
 struct AnalogInputEvent
 {
 public:
+	char                                                         pad0x58_VXCZS[0x58];                               // 0x0(0x58)
 };
 
 
@@ -532,6 +573,7 @@ public:
 struct KeyEvent
 {
 public:
+	char                                                         pad0x50_DAJ3A[0x50];                               // 0x0(0x50)
 };
 
 
@@ -539,6 +581,7 @@ public:
 struct FocusEvent
 {
 public:
+	char                                                         pad0x8_Q4RA0[0x8];                                 // 0x0(0x8)
 };
 
 

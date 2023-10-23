@@ -21,12 +21,12 @@
     "Attributes": [
       {
         "Name": "ServiceDesc",
-        "Type": "Class TaleQuestInvasionServiceDesc*",
+        "Type": "class TaleQuestInvasionServiceDesc*",
         "Size": "0x8",
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x1a0_8OFLZ[0x1a0]",
+        "Name": "pad0x1a0_21ZMR[0x1a0]",
         "Type": "char",
         "Size": "0x1a0",
         "Offset": "0x68"
@@ -41,25 +41,25 @@
     "Attributes": [
       {
         "Name": "OnCrewLeftServerMessage",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x28"
       },
       {
         "Name": "OnCrewLeftFightMessage",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x60"
       },
       {
         "Name": "FactionGBannerTag",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x98"
       },
       {
         "Name": "FactionBBannerTag",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0xd0"
       }
@@ -73,7 +73,7 @@
     "Attributes": [
       {
         "Name": "Message",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x80"
       },
@@ -84,20 +84,20 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x7_40PR5[0x7]",
+        "Name": "pad0x7_AM75G[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xb9"
       },
       {
         "Name": "DisplayShipsNameForCrewId",
-        "Type": "Struct QuestVariableGuid",
+        "Type": "struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0xc0"
       },
       {
         "Name": "DisplayBannersForFaction",
-        "Type": "Struct QuestVariableName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0xf0"
       }
@@ -125,13 +125,13 @@
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "Radius",
-        "Type": "Struct QuestVariableFloat",
+        "Type": "struct QuestVariableFloat",
         "Size": "0x30",
         "Offset": "0xb0"
       }
@@ -152,55 +152,55 @@
     "Attributes": [
       {
         "Name": "AggressiveShip",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "AggressiveShip",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xb0"
       },
       {
         "Name": "PassiveShip",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xe0"
       },
       {
         "Name": "AggressiveCrewId",
-        "Type": "Struct QuestVariableGuid",
+        "Type": "struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0x110"
       },
       {
         "Name": "AggressiveCrewId",
-        "Type": "Struct QuestVariableGuid",
+        "Type": "struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0x140"
       },
       {
         "Name": "PassiveCrewId",
-        "Type": "Struct QuestVariableGuid",
+        "Type": "struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0x170"
       },
       {
         "Name": "AggressiveFaction",
-        "Type": "Struct QuestVariableName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0x1a0"
       },
       {
         "Name": "AggressiveFaction",
-        "Type": "Struct QuestVariableName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0x1d0"
       },
       {
         "Name": "PassiveFaction",
-        "Type": "Struct QuestVariableName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0x200"
       }
@@ -208,25 +208,25 @@
   },
   "InvasionBattleBounds": {
     "Super": "Actor",
-    "FullSize": "0x408",
+    "FullSize": "0x460",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x40",
+    "ClassSize": "0x98",
     "Attributes": [
       {
         "Name": "Root",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "ShipToTrack1",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "ShipToTrack2",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
@@ -243,14 +243,14 @@
         "Offset": "0x3e4"
       },
       {
-        "Name": "pad0x8_W68DN[0x8]",
+        "Name": "pad0x8_G9WS8[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
         "Name": "ShipThatWasDestroyed",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
@@ -259,6 +259,18 @@
         "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x3f8"
+      },
+      {
+        "Name": "pad0x8_5ZSA7[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "pad0x50_I52HU[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x410"
       }
     ]
   },
@@ -284,7 +296,7 @@
     "Attributes": [
       {
         "Name": "AggressiveAggressiveLocations",
-        "Type": "TArray<struct AggressiveAggressiveLocations>",
+        "Type": "TArray<struct Vector2D>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -305,19 +317,19 @@
     "Attributes": [
       {
         "Name": "Matchmaking_VoyageDescDataAsset",
-        "Type": "Class VoyageDescDataAsset*",
+        "Type": "class VoyageDescDataAsset*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "Invasion_AggressivePassive_VoyageDescDataAsset",
-        "Type": "Class VoyageDescDataAsset*",
+        "Type": "class VoyageDescDataAsset*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "Invasion_AggressiveAggressive_VoyageDescDataAsset",
-        "Type": "Class VoyageDescDataAsset*",
+        "Type": "class VoyageDescDataAsset*",
         "Size": "0x8",
         "Offset": "0x38"
       },
@@ -328,38 +340,38 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x4_YQ8EU[0x4]",
+        "Name": "pad0x4_JBMSN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x44"
       },
       {
         "Name": "Invasion_LosingCrew_VoyageDescDataAsset",
-        "Type": "Class VoyageDescDataAsset*",
+        "Type": "class VoyageDescDataAsset*",
         "Size": "0x8",
         "Offset": "0x48"
       },
       {
         "Name": "AggressivePassive_EnvQueryTemplate",
-        "Type": "Class EnvQuery*",
+        "Type": "class EnvQuery*",
         "Size": "0x8",
         "Offset": "0x50"
       },
       {
         "Name": "AggressiveAggressive_InvasionLocation_EnvQueryTemplate",
-        "Type": "Class EnvQuery*",
+        "Type": "class EnvQuery*",
         "Size": "0x8",
         "Offset": "0x58"
       },
       {
         "Name": "AggressiveAggressive_PrimaryShipLocation_EnvQueryTemplate",
-        "Type": "Class EnvQuery*",
+        "Type": "class EnvQuery*",
         "Size": "0x8",
         "Offset": "0x60"
       },
       {
         "Name": "AggressiveAggressive_SecondaryShipLocation_EnvQueryTemplate",
-        "Type": "Class EnvQuery*",
+        "Type": "class EnvQuery*",
         "Size": "0x8",
         "Offset": "0x68"
       },
@@ -425,13 +437,13 @@
       },
       {
         "Name": "Invasion_Debug_AggressivePassive_VoyageDescDataAsset",
-        "Type": "Class VoyageDescDataAsset*",
+        "Type": "class VoyageDescDataAsset*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
         "Name": "Invasion_Debug_AggressiveAggressive_VoyageDescDataAsset",
-        "Type": "Class VoyageDescDataAsset*",
+        "Type": "class VoyageDescDataAsset*",
         "Size": "0x8",
         "Offset": "0xa0"
       },
@@ -456,62 +468,62 @@
     "ClassSize": "0x298",
     "Attributes": [
       {
-        "Name": "pad0x40_WDZZJ[0x40]",
+        "Name": "pad0x40_F8XKW[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x3c8"
       },
       {
         "Name": "InvasionSettings",
-        "Type": "Class InvasionSettings*",
+        "Type": "class InvasionSettings*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
         "Name": "InvasionServiceDataAsset",
-        "Type": "Class InvasionServiceDataAsset*",
+        "Type": "class InvasionServiceDataAsset*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
         "Name": "InvasionLocationsDataAsset",
-        "Type": "Class InvasionLocationsDataAsset*",
+        "Type": "class InvasionLocationsDataAsset*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "pad0x178_3C71N[0x178]",
+        "Name": "pad0x178_G2ZL5[0x178]",
         "Type": "char",
         "Size": "0x178",
         "Offset": "0x420"
       },
       {
         "Name": "MatchmakingCrews",
-        "Type": "TArray<struct MatchmakingCrews>",
+        "Type": "TArray<struct InvasionParticipatingCrewData>",
         "Size": "0x10",
         "Offset": "0x598"
       },
       {
         "Name": "InvadingCrews",
-        "Type": "TArray<struct InvadingCrews>",
+        "Type": "TArray<struct InvasionParticipatingCrewData>",
         "Size": "0x10",
         "Offset": "0x5a8"
       },
       {
         "Name": "ReplicatedInvasionCrewMusicStates",
-        "Type": "TArray<struct ReplicatedInvasionCrewMusicStates>",
+        "Type": "TArray<struct ReplicatedInvasionCrewMusicState>",
         "Size": "0x10",
         "Offset": "0x5b8"
       },
       {
         "Name": "MatchmakingCrewsReplicated",
-        "Type": "TArray<struct MatchmakingCrewsReplicated>",
+        "Type": "TArray<struct InvasionServiceMatchmakingCrewInfo>",
         "Size": "0x10",
         "Offset": "0x5c8"
       },
       {
         "Name": "InvadingCrewsReplicated",
-        "Type": "TArray<struct InvadingCrewsReplicated>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x5d8"
       },
@@ -522,7 +534,7 @@
         "Offset": "0x5e8"
       },
       {
-        "Name": "pad0x68_HVOAL[0x68]",
+        "Name": "pad0x68_2LGJR[0x68]",
         "Type": "char",
         "Size": "0x68",
         "Offset": "0x5f8"
@@ -537,7 +549,7 @@
     "Attributes": [
       {
         "Name": "InvasionServiceDataAsset",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -563,7 +575,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x7_LTQ1H[0x7]",
+        "Name": "pad0x7_SSMVO[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x81"
@@ -585,13 +597,13 @@
     "Attributes": [
       {
         "Name": "Ship1",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "Ship2",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xb0"
       }
@@ -605,12 +617,12 @@
     "Attributes": [
       {
         "Name": "ServiceDesc",
-        "Type": "Class TaleQuestInvasionMatchmakingServiceDesc*",
+        "Type": "class TaleQuestInvasionMatchmakingServiceDesc*",
         "Size": "0x8",
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x1c0_SGB03[0x1c0]",
+        "Name": "pad0x1c0_QD78K[0x1c0]",
         "Type": "char",
         "Size": "0x1c0",
         "Offset": "0x68"
@@ -625,13 +637,13 @@
     "Attributes": [
       {
         "Name": "OnCrewLeftServerMessage",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x28"
       },
       {
         "Name": "OnCrewLeftFightMessage",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x60"
       }
@@ -652,7 +664,7 @@
     "Attributes": [
       {
         "Name": "ShipInBattleBounds",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -663,7 +675,14 @@
     "FullSize": "0xb0",
     "InheritedSize": "0x98",
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_JIEZ1[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x98"
+      }
+    ]
   },
   "WaitForShipToBeDefeatedStepDesc": {
     "Super": "TaleQuestStepDesc",
@@ -673,37 +692,37 @@
     "Attributes": [
       {
         "Name": "WinningShip",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "DefeatedShip",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xb0"
       },
       {
         "Name": "WinningCrewId",
-        "Type": "Struct QuestVariableGuid",
+        "Type": "struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0xe0"
       },
       {
         "Name": "DefeatedCrewId",
-        "Type": "Struct QuestVariableGuid",
+        "Type": "struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0x110"
       },
       {
         "Name": "WinningFaction",
-        "Type": "Struct QuestVariableName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0x140"
       },
       {
         "Name": "DefeatedFaction",
-        "Type": "Struct QuestVariableName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0x170"
       },
@@ -714,14 +733,14 @@
         "Offset": "0x1a0"
       },
       {
-        "Name": "pad0x4_TR03M[0x4]",
+        "Name": "pad0x4_VSDUX[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1a4"
       },
       {
         "Name": "FailMessage",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x1a8"
       }

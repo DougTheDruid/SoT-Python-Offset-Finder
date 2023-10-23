@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class AthenaAudioConfig: public WwiseCoreAssets
 {
 public:
-	Class WwiseObjectPoolWrapper*                                ItemProxyPool;                                     // 0x58(0x8)
-	Class WwiseObjectPoolWrapper*                                AnimNotifyPool;                                    // 0x60(0x8)
-	Struct AthenaAudioGameStateSettings                          GameStateSettings;                                 // 0x68(0x20)
-	Struct AthenaAudioBootflowEvents                             BootflowEvents;                                    // 0x88(0x80)
+	class WwiseObjectPoolWrapper*                                ItemProxyPool;                                     // 0x58(0x8)
+	class WwiseObjectPoolWrapper*                                AnimNotifyPool;                                    // 0x60(0x8)
+	struct AthenaAudioGameStateSettings                          GameStateSettings;                                 // 0x68(0x20)
+	struct AthenaAudioBootflowEvents                             BootflowEvents;                                    // 0x88(0x80)
 };
 
 
@@ -21,7 +21,7 @@ public:
 class AthenaAudioModuleSettings: public DeveloperSettings
 {
 public:
-	Struct StringAssetReference                                  AudioConfigAsset;                                  // 0x38(0x10)
+	struct StringAssetReference                                  AudioConfigAsset;                                  // 0x38(0x10)
 };
 
 
@@ -33,13 +33,13 @@ public:
 	float                                                        InsideRtpcUpdateDistance;                          // 0x2e4(0x4)
 	float                                                        OutsideRtpcUpdateDistance;                         // 0x2e8(0x4)
 	bool                                                         TrackAttachmentToActor;                            // 0x2ec(0x1)
-	char                                                         pad0x3_I84OJ[0x3];                                 // 0x2ed(0x3)
-	Class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x2f0(0x8)
-	Class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x2f8(0x8)
-	Class AudioSpaceDataAsset*                                   ActiveAudioInsideSpace;                            // 0x300(0x8)
-	Class AudioSpaceDataAsset*                                   ActiveAudioOutsideSpace;                           // 0x308(0x8)
-	Class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x310(0x8)
-	char                                                         pad0x28_78BYQ[0x28];                               // 0x318(0x28)
+	char                                                         pad0x3_V9Z26[0x3];                                 // 0x2ed(0x3)
+	class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x2f0(0x8)
+	class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x2f8(0x8)
+	class AudioSpaceDataAsset*                                   ActiveAudioInsideSpace;                            // 0x300(0x8)
+	class AudioSpaceDataAsset*                                   ActiveAudioOutsideSpace;                           // 0x308(0x8)
+	class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x310(0x8)
+	char                                                         pad0x28_46WK1[0x28];                               // 0x318(0x28)
 };
 
 
@@ -54,6 +54,7 @@ public:
 class AudioPortalService: public Object
 {
 public:
+	char                                                         pad0xb0_IVZPE[0xb0];                               // 0x28(0xb0)
 };
 
 
@@ -61,10 +62,10 @@ public:
 class AudioSpaceComponent: public StaticMeshComponent
 {
 public:
-	Class AudioSpaceDataAsset*                                   AudioSpace;                                        // 0x620(0x8)
-	Class AudioSpaceDataAsset*                                   ActiveAudioSpace;                                  // 0x628(0x8)
-	Class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x630(0x8)
-	char                                                         pad0x18_OWSJL[0x18];                               // 0x638(0x18)
+	class AudioSpaceDataAsset*                                   AudioSpace;                                        // 0x620(0x8)
+	class AudioSpaceDataAsset*                                   ActiveAudioSpace;                                  // 0x628(0x8)
+	class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x630(0x8)
+	char                                                         pad0x18_EOVCN[0x18];                               // 0x638(0x18)
 };
 
 
@@ -80,8 +81,8 @@ public:
 class MultiEmitter: public Actor
 {
 public:
-	Class MultiEmitterRootComponent*                             MultiEmitterRootComponent;                         // 0x3c8(0x8)
-	char                                                         pad0x8_GVALE[0x8];                                 // 0x3d0(0x8)
+	class MultiEmitterRootComponent*                             MultiEmitterRootComponent;                         // 0x3c8(0x8)
+	char                                                         pad0x8_WREMV[0x8];                                 // 0x3d0(0x8)
 };
 
 
@@ -89,9 +90,9 @@ public:
 class StoryDrivenAudioPortalDataAsset: public DataAsset
 {
 public:
-	Struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
-	char                                                         pad0x4_5MOQO[0x4];                                 // 0x34(0x4)
-	TArray<struct StoryResponses>                                StoryResponses;                                    // 0x38(0x10)
+	struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	char                                                         pad0x4_OV6RI[0x4];                                 // 0x34(0x4)
+	TArray<struct StoryDrivenAudioPortalSetting>                 StoryResponses;                                    // 0x38(0x10)
 	TArray<class StoryDrivenAudioPortalDataAsset*>               AssetsList;                                        // 0x48(0x10)
 };
 
@@ -100,15 +101,15 @@ public:
 class WwiseEventsTriggerRegionComponent: public SceneComponent
 {
 public:
-	Class WwiseObjectPoolWrapper*                                TriggerRegionPool;                                 // 0x2e0(0x8)
+	class WwiseObjectPoolWrapper*                                TriggerRegionPool;                                 // 0x2e0(0x8)
 	TArray<class WwiseEvent*>                                    TriggerRegionPlayEvents;                           // 0x2e8(0x10)
 	TArray<class WwiseEvent*>                                    TriggerRegionStopEvents;                           // 0x2f8(0x10)
 	float                                                        TriggerEnterRadiusInCms;                           // 0x308(0x4)
 	float                                                        TriggerExitRadiusInCms;                            // 0x30c(0x4)
-	Struct Vector                                                EmitterOffset;                                     // 0x310(0xc)
-	char                                                         pad0x14_R9F8I[0x14];                               // 0x31c(0x14)
-	Class Character*                                             LocalPlayer;                                       // 0x330(0x8)
-	char                                                         pad0x38_WRLTA[0x38];                               // 0x338(0x38)
+	struct Vector                                                EmitterOffset;                                     // 0x310(0xc)
+	char                                                         pad0x14_YWENA[0x14];                               // 0x31c(0x14)
+	class Character*                                             LocalPlayer;                                       // 0x330(0x8)
+	char                                                         pad0x38_FPF0W[0x38];                               // 0x338(0x38)
 };
 
 

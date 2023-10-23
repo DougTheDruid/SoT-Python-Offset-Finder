@@ -5,24 +5,28 @@ AchievementProgressXblRequestModel:
   - Name: Id
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
+  - Name: pad0x8_9Q47Z[0x8]
+    Offset: '0x10'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x18'
 UpdateAchievementsXblRequestModel:
   Attributes:
   - Name: Achievements
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct Achievements>
+    Type: TArray<struct AchievementProgressXblRequestModel>
   - Name: Action
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ServiceConfigId
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: UserId
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x48'

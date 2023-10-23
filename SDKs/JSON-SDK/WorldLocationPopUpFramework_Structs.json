@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
@@ -21,19 +21,19 @@
     "Attributes": [
       {
         "Name": "AudioOverride",
-        "Type": "Class PopUpAudioDesc*",
+        "Type": "class PopUpAudioDesc*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "IconPath",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "DisplayText",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x18"
       }

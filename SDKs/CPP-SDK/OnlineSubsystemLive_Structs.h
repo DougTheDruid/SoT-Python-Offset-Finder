@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 struct UpdateAchievementsXblRequestModel
 {
 public:
-	TArray<struct Achievements>                                  Achievements;                                      // 0x0(0x10)
-	Struct FString                                               Action;                                            // 0x10(0x10)
-	Struct FString                                               ServiceConfigId;                                   // 0x20(0x10)
-	Struct FString                                               UserId;                                            // 0x38(0x10)
+	TArray<struct AchievementProgressXblRequestModel>            Achievements;                                      // 0x0(0x10)
+	struct FString                                               Action;                                            // 0x10(0x10)
+	struct FString                                               ServiceConfigId;                                   // 0x20(0x10)
+	struct FString                                               UserId;                                            // 0x38(0x10)
 };
 
 
@@ -21,7 +21,8 @@ public:
 struct AchievementProgressXblRequestModel
 {
 public:
-	Struct FString                                               Id;                                                // 0x0(0x10)
+	struct FString                                               Id;                                                // 0x0(0x10)
+	char                                                         pad0x8_9Q47Z[0x8];                                 // 0x10(0x8)
 };
 
 

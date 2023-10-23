@@ -5,23 +5,35 @@ EventAthenaLoadingScreenBlockUntilUIIntialised:
   - Name: Description
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x10'
 EventAthenaLoadingScreenBlockUntilUIIntialisedClear:
   Attributes:
   - Name: Description
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x10'
 EventAthenaLoadingScreenClose:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_C0AXL[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EventAthenaLoadingScreenOpen:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_T29Z8[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EventAthenaLoadingScreenStateRequest:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_55FR8[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EventAthenaLoadingScreenStateResponse:
   Attributes:
@@ -35,7 +47,7 @@ SlateLoadingScreenAdvancedTipDescription:
   - Name: Text
     Offset: '0x0'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: Centre
     Offset: '0x38'
     Size: '0x4'
@@ -55,29 +67,33 @@ SlateLoadingScreenAdvancedTipDescription:
   - Name: Font
     Offset: '0x48'
     Size: '0x40'
-    Type: Struct SlateFontInfo
+    Type: struct SlateFontInfo
   - Name: Colour
     Offset: '0x88'
     Size: '0x30'
-    Type: Struct SlateColor
+    Type: struct SlateColor
   - Name: LineHeightPercentage
     Offset: '0xb8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_5RYXX[0x4]
+    Offset: '0xbc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0xc0'
 SlateLoadingScreenAdvancedTipsParams:
   Attributes:
   - Name: TipDescriptions
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct TipDescriptions>
+    Type: TArray<struct SlateLoadingScreenAdvancedTipDescription>
   ClassSize: '0x10'
 SlateLoadingScreenImageParams:
   Attributes:
   - Name: ImageAsset
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: ImageTips
     Offset: '0x10'
     Size: '0x10'
@@ -85,5 +101,5 @@ SlateLoadingScreenImageParams:
   - Name: AdvancedTips
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct SlateLoadingScreenAdvancedTipsParams
+    Type: struct SlateLoadingScreenAdvancedTipsParams
   ClassSize: '0x30'

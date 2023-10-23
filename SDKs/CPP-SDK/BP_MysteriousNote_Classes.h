@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_MysteriousNote_C: public WieldableMysteriousNote
 {
 public:
-	Class ZoomInOnWieldableItemComponent*                        ZoomInOnWieldableItem;                             // 0x980(0x8)
+	class ZoomInOnWieldableItemComponent*                        ZoomInOnWieldableItem;                             // 0x980(0x8)
 };
 
 

@@ -38,9 +38,9 @@ public:
 class TrinketDesc: public EntitlementDesc
 {
 public:
-	Struct StringClassReference                                  TrinketClass;                                      // 0xc8(0x10)
-	Struct StringClassReference                                  PreviousItem;                                      // 0xd8(0x10)
-	Struct StringClassReference                                  NextItem;                                          // 0xe8(0x10)
+	struct StringClassReference                                  TrinketClass;                                      // 0xc8(0x10)
+	struct StringClassReference                                  PreviousItem;                                      // 0xd8(0x10)
+	struct StringClassReference                                  NextItem;                                          // 0xe8(0x10)
 };
 
 
@@ -55,6 +55,7 @@ public:
 class SameActorTrinketLoadoutFinderPolicy: public TrinketLoadoutFinderPolicyBase
 {
 public:
+	char                                                         pad0x10_FQP18[0x10];                               // 0x28(0x10)
 };
 
 
@@ -69,6 +70,7 @@ public:
 class TrinketReplacementActor: public Actor
 {
 public:
+	char                                                         pad0x10_HDN12[0x10];                               // 0x3c8(0x10)
 };
 
 
@@ -83,10 +85,10 @@ public:
 class TrinketSfxDataAsset: public DataAsset
 {
 public:
-	Class WwiseEvent*                                            MountSfx;                                          // 0x28(0x8)
-	Class WwiseEvent*                                            RemoveSfx;                                         // 0x30(0x8)
-	Class WwiseEvent*                                            NudgeSfx;                                          // 0x38(0x8)
-	Class WwiseEvent*                                            StraightenSfx;                                     // 0x40(0x8)
+	class WwiseEvent*                                            MountSfx;                                          // 0x28(0x8)
+	class WwiseEvent*                                            RemoveSfx;                                         // 0x30(0x8)
+	class WwiseEvent*                                            NudgeSfx;                                          // 0x38(0x8)
+	class WwiseEvent*                                            StraightenSfx;                                     // 0x40(0x8)
 };
 
 

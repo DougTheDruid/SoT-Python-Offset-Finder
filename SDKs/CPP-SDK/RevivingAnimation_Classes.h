@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class ReviveGhostAnimationData: public AnimationData
 {
 public:
-	Class ReviveGhostAnimationDataAsset*                         ReviveAnimationsDataAsset;                         // 0x28(0x8)
+	class ReviveGhostAnimationDataAsset*                         ReviveAnimationsDataAsset;                         // 0x28(0x8)
 };
 
 
@@ -18,7 +18,7 @@ public:
 class ReviveGhostAnimationDataAsset: public DataAsset
 {
 public:
-	Struct ReviveGhostAnimations                                 Animations;                                        // 0x28(0x28)
+	struct ReviveGhostAnimations                                 Animations;                                        // 0x28(0x28)
 };
 
 
@@ -26,12 +26,12 @@ public:
 class ReviveGhostAnimationInstance: public AnimInstance
 {
 public:
-	char                                                         pad0x8_90S52[0x8];                                 // 0x440(0x8)
-	Struct ReviveGhostAnimations                                 ReviveAnimations;                                  // 0x448(0x28)
+	char                                                         pad0x8_G3A19[0x8];                                 // 0x440(0x8)
+	struct ReviveGhostAnimations                                 ReviveAnimations;                                  // 0x448(0x28)
 	bool                                                         FullyInitialised;                                  // 0x470(0x1)
 	bool                                                         FullyRevived;                                      // 0x471(0x1)
 	bool                                                         FromSwimming;                                      // 0x472(0x1)
-	char                                                         pad0x1d_2CVUU[0x1d];                               // 0x473(0x1d)
+	char                                                         pad0x1d_AQV9R[0x1d];                               // 0x473(0x1d)
 };
 
 

@@ -7,25 +7,25 @@
     "Attributes": [
       {
         "Name": "ItemProxyPool",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x58"
       },
       {
         "Name": "AnimNotifyPool",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x60"
       },
       {
         "Name": "GameStateSettings",
-        "Type": "Struct AthenaAudioGameStateSettings",
+        "Type": "struct AthenaAudioGameStateSettings",
         "Size": "0x20",
         "Offset": "0x68"
       },
       {
         "Name": "BootflowEvents",
-        "Type": "Struct AthenaAudioBootflowEvents",
+        "Type": "struct AthenaAudioBootflowEvents",
         "Size": "0x80",
         "Offset": "0x88"
       }
@@ -39,7 +39,7 @@
     "Attributes": [
       {
         "Name": "AudioConfigAsset",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -76,43 +76,43 @@
         "Offset": "0x2ec"
       },
       {
-        "Name": "pad0x3_I84OJ[0x3]",
+        "Name": "pad0x3_V9Z26[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2ed"
       },
       {
         "Name": "AudioInsideSpace",
-        "Type": "Class AudioSpaceDataAsset*",
+        "Type": "class AudioSpaceDataAsset*",
         "Size": "0x8",
         "Offset": "0x2f0"
       },
       {
         "Name": "AudioOutsideSpace",
-        "Type": "Class AudioSpaceDataAsset*",
+        "Type": "class AudioSpaceDataAsset*",
         "Size": "0x8",
         "Offset": "0x2f8"
       },
       {
         "Name": "ActiveAudioInsideSpace",
-        "Type": "Class AudioSpaceDataAsset*",
+        "Type": "class AudioSpaceDataAsset*",
         "Size": "0x8",
         "Offset": "0x300"
       },
       {
         "Name": "ActiveAudioOutsideSpace",
-        "Type": "Class AudioSpaceDataAsset*",
+        "Type": "class AudioSpaceDataAsset*",
         "Size": "0x8",
         "Offset": "0x308"
       },
       {
         "Name": "CollectionAsset",
-        "Type": "Class StoryDrivenAudioPortalDataAsset*",
+        "Type": "class StoryDrivenAudioPortalDataAsset*",
         "Size": "0x8",
         "Offset": "0x310"
       },
       {
-        "Name": "pad0x28_78BYQ[0x28]",
+        "Name": "pad0x28_46WK1[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x318"
@@ -131,7 +131,14 @@
     "FullSize": "0xd8",
     "InheritedSize": "0x28",
     "ClassSize": "0xb0",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xb0_IVZPE[0xb0]",
+        "Type": "char",
+        "Size": "0xb0",
+        "Offset": "0x28"
+      }
+    ]
   },
   "AudioSpaceComponent": {
     "Super": "StaticMeshComponent",
@@ -141,24 +148,24 @@
     "Attributes": [
       {
         "Name": "AudioSpace",
-        "Type": "Class AudioSpaceDataAsset*",
+        "Type": "class AudioSpaceDataAsset*",
         "Size": "0x8",
         "Offset": "0x620"
       },
       {
         "Name": "ActiveAudioSpace",
-        "Type": "Class AudioSpaceDataAsset*",
+        "Type": "class AudioSpaceDataAsset*",
         "Size": "0x8",
         "Offset": "0x628"
       },
       {
         "Name": "CollectionAsset",
-        "Type": "Class StoryDrivenAudioPortalDataAsset*",
+        "Type": "class StoryDrivenAudioPortalDataAsset*",
         "Size": "0x8",
         "Offset": "0x630"
       },
       {
-        "Name": "pad0x18_OWSJL[0x18]",
+        "Name": "pad0x18_EOVCN[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x638"
@@ -187,12 +194,12 @@
     "Attributes": [
       {
         "Name": "MultiEmitterRootComponent",
-        "Type": "Class MultiEmitterRootComponent*",
+        "Type": "class MultiEmitterRootComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x8_GVALE[0x8]",
+        "Name": "pad0x8_WREMV[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3d0"
@@ -207,19 +214,19 @@
     "Attributes": [
       {
         "Name": "Feature",
-        "Type": "Struct FeatureFlag",
+        "Type": "struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_5MOQO[0x4]",
+        "Name": "pad0x4_OV6RI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
       },
       {
         "Name": "StoryResponses",
-        "Type": "TArray<struct StoryResponses>",
+        "Type": "TArray<struct StoryDrivenAudioPortalSetting>",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -239,7 +246,7 @@
     "Attributes": [
       {
         "Name": "TriggerRegionPool",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x2e0"
       },
@@ -269,24 +276,24 @@
       },
       {
         "Name": "EmitterOffset",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x310"
       },
       {
-        "Name": "pad0x14_R9F8I[0x14]",
+        "Name": "pad0x14_YWENA[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x31c"
       },
       {
         "Name": "LocalPlayer",
-        "Type": "Class Character*",
+        "Type": "class Character*",
         "Size": "0x8",
         "Offset": "0x330"
       },
       {
-        "Name": "pad0x38_WRLTA[0x38]",
+        "Name": "pad0x38_FPF0W[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x338"

@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 class RareGameEngine: public GameEngine
 {
 public:
+	char                                                         pad0x58_EUT7A[0x58];                               // 0xa30(0x58)
 };
 
 
@@ -25,6 +26,7 @@ public:
 class AudioHardwareDeviceService: public Object
 {
 public:
+	char                                                         pad0x18_2CWS7[0x18];                               // 0x28(0x18)
 };
 
 
@@ -39,7 +41,7 @@ public:
 class MemoryUsageVisualiserSettings: public Object
 {
 public:
-	TArray<struct VisualiserCategories>                          VisualiserCategories;                              // 0x28(0x10)
+	TArray<struct MemoryVisualiserCategory>                      VisualiserCategories;                              // 0x28(0x10)
 };
 
 
@@ -54,6 +56,7 @@ public:
 class StallDetector: public Object
 {
 public:
+	char                                                         pad0x28_H2OE1[0x28];                               // 0x28(0x28)
 };
 
 

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_PetPreview_Base_C: public PreviewPet
 {
 public:
-	Class CosmeticItemAnimationComponent*                        CosmeticItemAnimation;                             // 0x4b0(0x8)
+	class CosmeticItemAnimationComponent*                        CosmeticItemAnimation;                             // 0x4b0(0x8)
 };
 
 

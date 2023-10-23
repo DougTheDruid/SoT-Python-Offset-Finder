@@ -7,769 +7,769 @@
     "Attributes": [
       {
         "Name": "RowboatCollision",
-        "Type": "Class BoxComponent*",
+        "Type": "class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "WorldLocationPopUp",
-        "Type": "Class WorldLocationPopUpComponent*",
+        "Type": "class WorldLocationPopUpComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "wsp_cave_rock_small__a",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
         "Name": "wsp_cave_rock_large__c",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
         "Name": "Decal12",
-        "Type": "Class DecalComponent*",
+        "Type": "class DecalComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
         "Name": "NavMesh Blocker",
-        "Type": "Class BoxComponent*",
+        "Type": "class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
         "Name": "mainClothShadowOnly",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
         "Name": "SpotLight",
-        "Type": "Class SpotLightComponent*",
+        "Type": "class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x400"
       },
       {
         "Name": "StaticMesh8",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
         "Name": "chestCollision",
-        "Type": "Class BoxComponent*",
+        "Type": "class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
         "Name": "shp_chest_com_01_a",
-        "Type": "Class SkeletalMeshComponent*",
+        "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
         "Name": "bld_castawaycamp_clothdoor_01_a_skel",
-        "Type": "Class SkeletalMeshComponent*",
+        "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
         "Name": "StaticMesh7",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
         "Name": "gmp_tal_questbook_smp_static_01_a_PLACEHOLDER5",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
         "Name": "gmp_tal_questbook_smp_static_01_a_PLACEHOLDER4",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
         "Name": "gmp_tal_questbook_smp_static_01_a_PLACEHOLDER3",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x440"
       },
       {
         "Name": "gmp_tal_questbook_smp_static_01_a_PLACEHOLDER2",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x448"
       },
       {
         "Name": "gmp_tal_questbook_smp_static_01_a_PLACEHOLDER1",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x450"
       },
       {
         "Name": "StaticMesh6",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x458"
       },
       {
         "Name": "cmn_looted__box_01_b",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x460"
       },
       {
         "Name": "Audio",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x468"
       },
       {
         "Name": "PointLight4",
-        "Type": "Class PointLightComponent*",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x470"
       },
       {
         "Name": "PointLight3",
-        "Type": "Class PointLightComponent*",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x478"
       },
       {
         "Name": "PointLight2",
-        "Type": "Class PointLightComponent*",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x480"
       },
       {
         "Name": "PointLight1",
-        "Type": "Class PointLightComponent*",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x488"
       },
       {
         "Name": "PointLight",
-        "Type": "Class PointLightComponent*",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x490"
       },
       {
         "Name": "wpn_cutlass_gho_01_a",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x498"
       },
       {
         "Name": "skd_pincher_sword_01_a",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4a0"
       },
       {
         "Name": "gmp_effigy_sunken_pearl_01_a",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4a8"
       },
       {
         "Name": "gmp_effigy_dark_brethren_01_a",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4b0"
       },
       {
         "Name": "gmp_effigy_captain_damned_01_a",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4b8"
       },
       {
         "Name": "gmp_effigy_pirates_life_01_a",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x4c0"
       },
       {
         "Name": "Decal11",
-        "Type": "Class DecalComponent*",
+        "Type": "class DecalComponent*",
         "Size": "0x8",
         "Offset": "0x4c8"
       },
       {
         "Name": "Decal10",
-        "Type": "Class DecalComponent*",
+        "Type": "class DecalComponent*",
         "Size": "0x8",
         "Offset": "0x4d0"
       },
       {
         "Name": "Decal9",
-        "Type": "Class DecalComponent*",
+        "Type": "class DecalComponent*",
         "Size": "0x8",
         "Offset": "0x4d8"
       },
       {
         "Name": "Decal8",
-        "Type": "Class DecalComponent*",
+        "Type": "class DecalComponent*",
         "Size": "0x8",
         "Offset": "0x4e0"
       },
       {
         "Name": "Decal7",
-        "Type": "Class DecalComponent*",
+        "Type": "class DecalComponent*",
         "Size": "0x8",
         "Offset": "0x4e8"
       },
       {
         "Name": "Decal6",
-        "Type": "Class DecalComponent*",
+        "Type": "class DecalComponent*",
         "Size": "0x8",
         "Offset": "0x4f0"
       },
       {
         "Name": "Decal5",
-        "Type": "Class DecalComponent*",
+        "Type": "class DecalComponent*",
         "Size": "0x8",
         "Offset": "0x4f8"
       },
       {
         "Name": "Decal4",
-        "Type": "Class DecalComponent*",
+        "Type": "class DecalComponent*",
         "Size": "0x8",
         "Offset": "0x500"
       },
       {
         "Name": "Decal3",
-        "Type": "Class DecalComponent*",
+        "Type": "class DecalComponent*",
         "Size": "0x8",
         "Offset": "0x508"
       },
       {
         "Name": "Decal2",
-        "Type": "Class DecalComponent*",
+        "Type": "class DecalComponent*",
         "Size": "0x8",
         "Offset": "0x510"
       },
       {
         "Name": "Decal1",
-        "Type": "Class DecalComponent*",
+        "Type": "class DecalComponent*",
         "Size": "0x8",
         "Offset": "0x518"
       },
       {
         "Name": "Decal",
-        "Type": "Class DecalComponent*",
+        "Type": "class DecalComponent*",
         "Size": "0x8",
         "Offset": "0x520"
       },
       {
         "Name": "shp_wreck_beam_01_b",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x528"
       },
       {
         "Name": "shp_wreck_beam_01_a",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x530"
       },
       {
         "Name": "StaticMesh4",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x538"
       },
       {
         "Name": "StaticMesh5",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x540"
       },
       {
         "Name": "StaticMesh3",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x548"
       },
       {
         "Name": "StaticMesh2",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x550"
       },
       {
         "Name": "StaticMesh1",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x558"
       },
       {
         "Name": "StaticMesh",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x560"
       },
       {
         "Name": "castawaycamp_hut_01_a",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x568"
       },
       {
         "Name": "gmp_castawayCloth_01_a",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x570"
       },
       {
         "Name": "StaticMeshComponent0143",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x578"
       },
       {
         "Name": "ParticleSystemComponent02",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x580"
       },
       {
         "Name": "StaticMeshComponent0139",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x588"
       },
       {
         "Name": "StaticMeshComponent0138",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x590"
       },
       {
         "Name": "StaticMeshComponent0137",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x598"
       },
       {
         "Name": "StaticMeshComponent0136",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5a0"
       },
       {
         "Name": "StaticMeshComponent0135",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5a8"
       },
       {
         "Name": "StaticMeshComponent0134",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5b0"
       },
       {
         "Name": "StaticMeshComponent0132",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5b8"
       },
       {
         "Name": "StaticMeshComponent0131",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5c0"
       },
       {
         "Name": "StaticMeshComponent0130",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5c8"
       },
       {
         "Name": "StaticMeshComponent0129",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5d0"
       },
       {
         "Name": "StaticMeshComponent0128",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5d8"
       },
       {
         "Name": "StaticMeshComponent0127",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5e0"
       },
       {
         "Name": "StaticMeshComponent0124",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5e8"
       },
       {
         "Name": "StaticMeshComponent0123",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5f0"
       },
       {
         "Name": "StaticMeshComponent0121",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x5f8"
       },
       {
         "Name": "StaticMeshComponent0119",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x600"
       },
       {
         "Name": "StaticMeshComponent0117",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x608"
       },
       {
         "Name": "StaticMeshComponent0116",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x610"
       },
       {
         "Name": "StaticMeshComponent095",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x618"
       },
       {
         "Name": "StaticMeshComponent094",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x620"
       },
       {
         "Name": "StaticMeshComponent093",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x628"
       },
       {
         "Name": "StaticMeshComponent092",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x630"
       },
       {
         "Name": "StaticMeshComponent091",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x638"
       },
       {
         "Name": "StaticMeshComponent090",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x640"
       },
       {
         "Name": "StaticMeshComponent089",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x648"
       },
       {
         "Name": "StaticMeshComponent088",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x650"
       },
       {
         "Name": "StaticMeshComponent087",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x658"
       },
       {
         "Name": "StaticMeshComponent086",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x660"
       },
       {
         "Name": "StaticMeshComponent085",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x668"
       },
       {
         "Name": "StaticMeshComponent084",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x670"
       },
       {
         "Name": "StaticMeshComponent083",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x678"
       },
       {
         "Name": "StaticMeshComponent082",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x680"
       },
       {
         "Name": "LightComponent01",
-        "Type": "Class PointLightComponent*",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x688"
       },
       {
         "Name": "LightComponent0",
-        "Type": "Class PointLightComponent*",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x690"
       },
       {
         "Name": "StaticMeshComponent051",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x698"
       },
       {
         "Name": "StaticMeshComponent050",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6a0"
       },
       {
         "Name": "StaticMeshComponent049",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6a8"
       },
       {
         "Name": "StaticMeshComponent048",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6b0"
       },
       {
         "Name": "StaticMeshComponent047",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6b8"
       },
       {
         "Name": "StaticMeshComponent046",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6c0"
       },
       {
         "Name": "StaticMeshComponent045",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6c8"
       },
       {
         "Name": "StaticMeshComponent044",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6d0"
       },
       {
         "Name": "StaticMeshComponent043",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6d8"
       },
       {
         "Name": "StaticMeshComponent042",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6e0"
       },
       {
         "Name": "StaticMeshComponent041",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6e8"
       },
       {
         "Name": "StaticMeshComponent039",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6f0"
       },
       {
         "Name": "StaticMeshComponent038",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6f8"
       },
       {
         "Name": "StaticMeshComponent037",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x700"
       },
       {
         "Name": "StaticMeshComponent036",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x708"
       },
       {
         "Name": "StaticMeshComponent035",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x710"
       },
       {
         "Name": "StaticMeshComponent034",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x718"
       },
       {
         "Name": "StaticMeshComponent033",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x720"
       },
       {
         "Name": "StaticMeshComponent032",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x728"
       },
       {
         "Name": "StaticMeshComponent031",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x730"
       },
       {
         "Name": "StaticMeshComponent028",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x738"
       },
       {
         "Name": "StaticMeshComponent027",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x740"
       },
       {
         "Name": "StaticMeshComponent026",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x748"
       },
       {
         "Name": "StaticMeshComponent025",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x750"
       },
       {
         "Name": "StaticMeshComponent024",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x758"
       },
       {
         "Name": "StaticMeshComponent023",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x760"
       },
       {
         "Name": "StaticMeshComponent019",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x768"
       },
       {
         "Name": "StaticMeshComponent018",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x770"
       },
       {
         "Name": "StaticMeshComponent017",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x778"
       },
       {
         "Name": "StaticMeshComponent016",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x780"
       },
       {
         "Name": "StaticMeshComponent015",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x788"
       },
       {
         "Name": "StaticMeshComponent014",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x790"
       },
       {
         "Name": "StaticMeshComponent012",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x798"
       },
       {
         "Name": "StaticMeshComponent011",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x7a0"
       },
       {
         "Name": "StaticMeshComponent010",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x7a8"
       },
       {
         "Name": "StaticMeshComponent09",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x7b0"
       },
       {
         "Name": "StaticMeshComponent08",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x7b8"
       },
       {
         "Name": "SharedRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x7c0"
       }

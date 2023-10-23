@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 struct InventoryPersistencePlayerData
 {
 public:
-	Struct PirateIdentity                                        PirateIdentity;                                    // 0x0(0x78)
-	Struct Guid                                                  PirateCrewId;                                      // 0x78(0x10)
-	TArray<struct ItemCategorySnapshots>                         ItemCategorySnapshots;                             // 0x88(0x10)
+	struct PirateIdentity                                        PirateIdentity;                                    // 0x0(0x78)
+	struct Guid                                                  PirateCrewId;                                      // 0x78(0x10)
+	TArray<struct PlayerItemCategorySnapshots>                   ItemCategorySnapshots;                             // 0x88(0x10)
 };
 
 
@@ -20,8 +20,8 @@ public:
 struct PlayerItemCategorySnapshots
 {
 public:
-	class                                                        ItemCategory;                                      // 0x0(0x8)
-	TArray<struct ItemSnapshots>                                 ItemSnapshots;                                     // 0x8(0x10)
+	class UClass*                                                ItemCategory;                                      // 0x0(0x8)
+	TArray<struct ItemSnapshot>                                  ItemSnapshots;                                     // 0x8(0x10)
 };
 
 
@@ -29,7 +29,7 @@ public:
 struct EventPlayerLoggedInPersistence
 {
 public:
-	Class Controller*                                            PlayerController;                                  // 0x0(0x8)
+	class Controller*                                            PlayerController;                                  // 0x0(0x8)
 };
 
 
@@ -37,6 +37,7 @@ public:
 struct EventPlayerPawnLeavingGame
 {
 public:
+	char                                                         pad0x1_BKGIE[0x1];                                 // 0x0(0x1)
 };
 
 

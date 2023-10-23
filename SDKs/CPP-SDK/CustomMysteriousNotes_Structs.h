@@ -11,7 +11,7 @@ struct DestroyMysteriousNoteGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-	Struct Guid                                                  NoteGUID;                                          // 0x4(0x10)
+	struct Guid                                                  NoteGUID;                                          // 0x4(0x10)
 };
 
 
@@ -20,8 +20,8 @@ struct CreateMysteriousNoteGameServerResponseModel
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_VY2AI[0x3];                                 // 0x1(0x3)
-	Struct Guid                                                  NoteId;                                            // 0x4(0x10)
+	char                                                         pad0x3_E9HVX[0x3];                                 // 0x1(0x3)
+	struct Guid                                                  NoteId;                                            // 0x4(0x10)
 };
 
 
@@ -30,10 +30,10 @@ struct CreateMysteriousNoteGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-	char                                                         pad0x4_PH297[0x4];                                 // 0x4(0x4)
-	Struct FString                                               NoteType;                                          // 0x8(0x10)
-	Struct FString                                               NoteTitle;                                         // 0x18(0x10)
-	Struct FString                                               NoteBody;                                          // 0x28(0x10)
+	char                                                         pad0x4_MGYO4[0x4];                                 // 0x4(0x4)
+	struct FString                                               NoteType;                                          // 0x8(0x10)
+	struct FString                                               NoteTitle;                                         // 0x18(0x10)
+	struct FString                                               NoteBody;                                          // 0x28(0x10)
 };
 
 
@@ -41,7 +41,7 @@ public:
 struct CustomPlayerNoteList
 {
 public:
-	TArray<struct Notes>                                         Notes;                                             // 0x0(0x10)
+	TArray<struct NotesRemoteServiceNoteDetailModel>             Notes;                                             // 0x0(0x10)
 };
 
 

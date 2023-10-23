@@ -10,15 +10,15 @@ namespace DougsSDKDumper
 class wsp_mushroom_glow_01_c_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x408(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x418(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x420(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x428(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x430(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x438(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x440(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x448(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent07;                             // 0x408(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent06;                             // 0x410(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent05;                             // 0x418(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent04;                             // 0x420(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent03;                             // 0x428(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x430(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x438(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x440(0x8)
+	class SceneComponent*                                        SharedRoot;                                        // 0x448(0x8)
 };
 
 

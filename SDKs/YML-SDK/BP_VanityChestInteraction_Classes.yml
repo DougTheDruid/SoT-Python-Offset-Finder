@@ -5,7 +5,7 @@ BP_VanityChestInteraction_C:
   - Name: DefaultSceneRoot
     Offset: '0x6f8'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x8'
   FullSize: '0x700'
   InheritedSize: '0x6f8'

@@ -10,13 +10,13 @@ namespace DougsSDKDumper
 class BP_InteractableShipLantern_C: public ShipInteractableLight
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x708(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x710(0x8)
-	Class StaticMeshComponent*                                   LanternGlow;                                       // 0x718(0x8)
-	Class StaticMeshComponent*                                   Lantern;                                           // 0x720(0x8)
-	Class StaticMeshComponent*                                   Hook;                                              // 0x728(0x8)
-	Class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0x730(0x8)
-	Class MaterialInstanceDynamic*                               DynamicGlowMaterial;                               // 0x738(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x708(0x8)
+	class InteractableComponent*                                 Interactable;                                      // 0x710(0x8)
+	class StaticMeshComponent*                                   LanternGlow;                                       // 0x718(0x8)
+	class StaticMeshComponent*                                   Lantern;                                           // 0x720(0x8)
+	class StaticMeshComponent*                                   Hook;                                              // 0x728(0x8)
+	class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0x730(0x8)
+	class MaterialInstanceDynamic*                               DynamicGlowMaterial;                               // 0x738(0x8)
 	struct FName                                                 FlameParameterName;                                // 0x740(0x8)
 	struct FName                                                 GlowBrightnessParameterName;                       // 0x748(0x8)
 	struct FName                                                 GlowRandomSeedParameterName;                       // 0x750(0x8)
@@ -25,8 +25,8 @@ public:
 	float                                                        GlowIntensityOn;                                   // 0x760(0x4)
 	float                                                        GlowIntensityOff;                                  // 0x764(0x4)
 	bool                                                         Uses Glow;                                         // 0x768(0x1)
-	char                                                         pad0x3_8W2AF[0x3];                                 // 0x769(0x3)
-	Struct LinearColor                                           DefaultGlowColour;                                 // 0x76c(0x10)
+	char                                                         pad0x3_CGWX9[0x3];                                 // 0x769(0x3)
+	struct LinearColor                                           DefaultGlowColour;                                 // 0x76c(0x10)
 	byte                                                         CurrentFlameOFateType;                             // 0x77c(0x1)
 };
 

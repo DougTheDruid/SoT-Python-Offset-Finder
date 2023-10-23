@@ -5,29 +5,29 @@ NudgeInterpolationParamsDataAsset:
   - Name: NudgeInterpParams
     Offset: '0x28'
     Size: '0x20'
-    Type: Struct NudgeInterpolationParams
+    Type: struct NudgeInterpolationParams
   - Name: ControllerForceFeedbackEffect
     Offset: '0x48'
     Size: '0x8'
-    Type: Class ForceFeedbackEffect*
+    Type: class ForceFeedbackEffect*
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
   Super: DataAsset
 NudgePolicy:
   Attributes:
-  - Name: pad0x90_OWKIS[0x90]
+  - Name: pad0x90_AF8DC[0x90]
     Offset: '0x28'
     Size: '0x90'
     Type: char
   - Name: OwningActor
     Offset: '0xb8'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: OwnerComponent
     Offset: '0xc0'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0xa0'
   FullSize: '0xc8'
   InheritedSize: '0x28'

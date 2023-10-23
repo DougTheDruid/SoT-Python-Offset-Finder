@@ -10,12 +10,12 @@ namespace DougsSDKDumper
 class HeightTriggerableAudioComponentParams: public DataAsset
 {
 public:
-	Class WwiseObjectPoolWrapper*                                Pool;                                              // 0x28(0x8)
-	Class WwiseEvent*                                            RisingOneShot;                                     // 0x30(0x8)
-	Class WwiseEvent*                                            RisingStart;                                       // 0x38(0x8)
-	Class WwiseEvent*                                            RisingStop;                                        // 0x40(0x8)
-	Class WwiseEvent*                                            LoweringStart;                                     // 0x48(0x8)
-	Class WwiseEvent*                                            LoweringStop;                                      // 0x50(0x8)
+	class WwiseObjectPoolWrapper*                                Pool;                                              // 0x28(0x8)
+	class WwiseEvent*                                            RisingOneShot;                                     // 0x30(0x8)
+	class WwiseEvent*                                            RisingStart;                                       // 0x38(0x8)
+	class WwiseEvent*                                            RisingStop;                                        // 0x40(0x8)
+	class WwiseEvent*                                            LoweringStart;                                     // 0x48(0x8)
+	class WwiseEvent*                                            LoweringStop;                                      // 0x50(0x8)
 };
 
 
@@ -23,17 +23,17 @@ public:
 class HeightTriggerableEffectsComponent: public ActorComponent
 {
 public:
-	Class HeightTriggerableAudioComponentParams*                 AudioParams;                                       // 0xc8(0x8)
-	Struct ActorComponentSelector                                EmitterOwner;                                      // 0xd0(0x10)
-	Struct Vector                                                EmitterOffset;                                     // 0xe0(0xc)
+	class HeightTriggerableAudioComponentParams*                 AudioParams;                                       // 0xc8(0x8)
+	struct ActorComponentSelector                                EmitterOwner;                                      // 0xd0(0x10)
+	struct Vector                                                EmitterOffset;                                     // 0xe0(0xc)
 	bool                                                         UseParentEmitter;                                  // 0xec(0x1)
-	char                                                         pad0x3_545XL[0x3];                                 // 0xed(0x3)
+	char                                                         pad0x3_LBFWG[0x3];                                 // 0xed(0x3)
 	float                                                        RisingAudioTriggerValue;                           // 0xf0(0x4)
-	char                                                         pad0x4_HLGGZ[0x4];                                 // 0xf4(0x4)
-	class                                                        CameraShake;                                       // 0xf8(0x8)
+	char                                                         pad0x4_ZMLU7[0x4];                                 // 0xf4(0x4)
+	class UClass*                                                CameraShake;                                       // 0xf8(0x8)
 	float                                                        ShakeInnerRadius;                                  // 0x100(0x4)
 	float                                                        ShakeOuterRadius;                                  // 0x104(0x4)
-	char                                                         pad0x50_JLB0D[0x50];                               // 0x108(0x50)
+	char                                                         pad0x50_W8OAH[0x50];                               // 0x108(0x50)
 };
 
 
@@ -41,6 +41,7 @@ public:
 class SpireResource: public Actor
 {
 public:
+	char                                                         pad0x10_BXGO7[0x10];                               // 0x3c8(0x10)
 };
 
 
@@ -55,7 +56,7 @@ public:
 class SpireServiceParams: public DataAsset
 {
 public:
-	Class ActorSpawnData*                                        OnCancelFakeSpire;                                 // 0x28(0x8)
+	class ActorSpawnData*                                        OnCancelFakeSpire;                                 // 0x28(0x8)
 };
 
 
@@ -63,11 +64,11 @@ public:
 class SpireService: public Actor
 {
 public:
-	char                                                         pad0x8_9K58S[0x8];                                 // 0x3c8(0x8)
-	Class SpireServiceParams*                                    Params;                                            // 0x3d0(0x8)
-	TArray<struct ServerOnlySpireInfo>                           ServerOnlySpireInfo;                               // 0x3d8(0x10)
-	TArray<struct SpireLevels>                                   SpireLevels;                                       // 0x3e8(0x10)
-	char                                                         pad0x68_VL2PE[0x68];                               // 0x3f8(0x68)
+	char                                                         pad0x8_GFIZN[0x8];                                 // 0x3c8(0x8)
+	class SpireServiceParams*                                    Params;                                            // 0x3d0(0x8)
+	TArray<struct ServerSpireInfo>                               ServerOnlySpireInfo;                               // 0x3d8(0x10)
+	TArray<struct SpireInfo>                                     SpireLevels;                                       // 0x3e8(0x10)
+	char                                                         pad0x68_Q4FO9[0x68];                               // 0x3f8(0x68)
 };
 
 
@@ -75,8 +76,8 @@ public:
 class SpireStreamedLevelDataAsset: public DataAsset
 {
 public:
-	Class AthenaStreamedLevelDataAsset*                          StreamedLevel;                                     // 0x28(0x8)
-	TArray<struct Entries>                                       Entries;                                           // 0x30(0x10)
+	class AthenaStreamedLevelDataAsset*                          StreamedLevel;                                     // 0x28(0x8)
+	TArray<struct SpireEntry>                                    Entries;                                           // 0x30(0x10)
 	struct FName                                                 FeatureToggle;                                     // 0x40(0x8)
 };
 
@@ -107,6 +108,7 @@ public:
 class TaleSpireService: public TaleQuestService
 {
 public:
+	char                                                         pad0x48_J91JP[0x48];                               // 0x60(0x48)
 };
 
 
@@ -142,8 +144,8 @@ public:
 class TaleRegisterSpireStep: public TaleQuestStep
 {
 public:
-	Class TaleRegisterSpireStepDesc*                             StepDesc;                                          // 0x98(0x8)
-	char                                                         pad0x8_252GZ[0x8];                                 // 0xa0(0x8)
+	class TaleRegisterSpireStepDesc*                             StepDesc;                                          // 0x98(0x8)
+	char                                                         pad0x8_O8AD3[0x8];                                 // 0xa0(0x8)
 };
 
 
@@ -151,10 +153,10 @@ public:
 class TaleRegisterSpireStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableVector                                   SelectionOriginPoint;                              // 0x80(0x30)
-	Struct QuestVariableFloat                                    PlayerExclusionSelectionRadius;                    // 0xb0(0x30)
-	Struct QuestVariableTaleResourceHandle                       AllocatedSpireHandle;                              // 0xe0(0x30)
-	Struct QuestVariableVector                                   AllocatedSpireLocation;                            // 0x110(0x30)
+	struct QuestVariableVector                                   SelectionOriginPoint;                              // 0x80(0x30)
+	struct QuestVariableFloat                                    PlayerExclusionSelectionRadius;                    // 0xb0(0x30)
+	struct QuestVariableTaleResourceHandle                       AllocatedSpireHandle;                              // 0xe0(0x30)
+	struct QuestVariableVector                                   AllocatedSpireLocation;                            // 0x110(0x30)
 };
 
 
@@ -162,6 +164,7 @@ public:
 class TaleReleaseSpireStep: public TaleQuestStep
 {
 public:
+	char                                                         pad0x8_435EZ[0x8];                                 // 0x98(0x8)
 };
 
 
@@ -169,7 +172,7 @@ public:
 class TaleReleaseSpireStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableTaleResourceHandle                       SpireHandle;                                       // 0x80(0x30)
+	struct QuestVariableTaleResourceHandle                       SpireHandle;                                       // 0x80(0x30)
 };
 
 
@@ -191,6 +194,7 @@ public:
 class TaleWaitForSpireToLoadStep: public TaleQuestStep
 {
 public:
+	char                                                         pad0x50_A1H8J[0x50];                               // 0x98(0x50)
 };
 
 

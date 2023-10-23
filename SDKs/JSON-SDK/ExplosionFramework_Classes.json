@@ -7,12 +7,12 @@
     "Attributes": [
       {
         "Name": "ActorToInstance",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x68_3B319[0x68]",
+        "Name": "pad0x68_2LHBT[0x68]",
         "Type": "char",
         "Size": "0x68",
         "Offset": "0xd0"
@@ -66,14 +66,14 @@
         "Offset": "0x34"
       },
       {
-        "Name": "pad0x8_WEL9Q[0x8]",
+        "Name": "pad0x8_WXZPC[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "CachedWorld",
-        "Type": "Class World*",
+        "Type": "class World*",
         "Size": "0x8",
         "Offset": "0x40"
       }

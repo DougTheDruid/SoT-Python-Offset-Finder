@@ -11,7 +11,7 @@ struct ShipPartDamagePersistenceModel
 {
 public:
 	TArray<Byte ComponentRepairableStates>                       ComponentRepairableStates;                         // 0x0(0x10)
-	Struct FString                                               Identifier;                                        // 0x10(0x10)
+	struct FString                                               Identifier;                                        // 0x10(0x10)
 };
 
 
@@ -19,8 +19,9 @@ public:
 struct DamageZoneRepairableStateChangedEvent
 {
 public:
-	Class Actor*                                                 DamageZoneActor;                                   // 0x0(0x8)
+	class Actor*                                                 DamageZoneActor;                                   // 0x0(0x8)
 	byte                                                         RepairableState;                                   // 0x8(0x1)
+	char                                                         pad0x7_AOC90[0x7];                                 // 0x9(0x7)
 };
 
 
@@ -28,8 +29,9 @@ public:
 struct RepairableComponentRepairableStateChangedEvent
 {
 public:
-	Class ActorComponent*                                        RepairableComponent;                               // 0x0(0x8)
+	class ActorComponent*                                        RepairableComponent;                               // 0x0(0x8)
 	byte                                                         RepairableState;                                   // 0x8(0x1)
+	char                                                         pad0x7_DONB8[0x7];                                 // 0x9(0x7)
 };
 
 
@@ -37,12 +39,13 @@ public:
 struct EventRepairableObjectRepairEndedEvent
 {
 public:
-	Class Object*                                                Repairable;                                        // 0x0(0x8)
-	Struct Vector                                                Position;                                          // 0x8(0xc)
-	char                                                         pad0x4_NGUBN[0x4];                                 // 0x14(0x4)
-	Class Actor*                                                 RepairerActor;                                     // 0x18(0x8)
+	class Object*                                                Repairable;                                        // 0x0(0x8)
+	struct Vector                                                Position;                                          // 0x8(0xc)
+	char                                                         pad0x4_B7XXU[0x4];                                 // 0x14(0x4)
+	class Actor*                                                 RepairerActor;                                     // 0x18(0x8)
 	float                                                        RepairPercentage;                                  // 0x20(0x4)
 	bool                                                         RepairCompleted;                                   // 0x24(0x1)
+	char                                                         pad0x3_1ZMHL[0x3];                                 // 0x25(0x3)
 };
 
 
@@ -50,6 +53,7 @@ public:
 struct EventRepairableObjectDestroyed
 {
 public:
+	char                                                         pad0x1_R3OVS[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -57,6 +61,7 @@ public:
 struct EventPlayerUndoRepairEnd
 {
 public:
+	char                                                         pad0x8_1II52[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -64,6 +69,7 @@ public:
 struct EventPlayerUndoRepairCompleted
 {
 public:
+	char                                                         pad0x8_7GY7N[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -71,6 +77,7 @@ public:
 struct EventPlayerUndoRepairStart
 {
 public:
+	char                                                         pad0x8_ESNNW[0x8];                                 // 0x0(0x8)
 };
 
 

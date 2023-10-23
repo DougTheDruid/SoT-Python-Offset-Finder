@@ -14,18 +14,18 @@
     "Attributes": [
       {
         "Name": "AudioEventToSynchronise",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "ReplicationState",
-        "Type": "Struct FinaleReplicationState",
+        "Type": "struct FinaleReplicationState",
         "Size": "0x10",
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x90_2OH0J[0x90]",
+        "Name": "pad0x90_FL8Y6[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0xe0"
@@ -52,31 +52,31 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_NI3YB[0x4]",
+        "Name": "pad0x4_M43GN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
       },
       {
         "Name": "WwisePool",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x40"
       },
       {
         "Name": "WwiseEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x48"
       },
       {
         "Name": "Emitter",
-        "Type": "Struct WwiseEmitter",
+        "Type": "struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x10_OZBGD[0x10]",
+        "Name": "pad0x10_GD4WM[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x70"
@@ -91,7 +91,7 @@
     "Attributes": [
       {
         "Name": "DecalBlendComponent",
-        "Type": "Class EffectBlendControllerComponent*",
+        "Type": "class EffectBlendControllerComponent*",
         "Size": "0x8",
         "Offset": "0x540"
       }
@@ -102,7 +102,14 @@
     "FullSize": "0x110",
     "InheritedSize": "0xc8",
     "ClassSize": "0x48",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x48_G91CO[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0xc8"
+      }
+    ]
   },
   "GlitterBeardTrustedTreeInterface": {
     "Super": "Interface",
@@ -118,20 +125,20 @@
     "ClassSize": "0x328",
     "Attributes": [
       {
-        "Name": "pad0x28_J9WTY[0x28]",
+        "Name": "pad0x28_6ZBBA[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x3c8"
       },
       {
         "Name": "ActionRulesComponent",
-        "Type": "Class ActionRulesComponent*",
+        "Type": "class ActionRulesComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
         "Name": "InteractableComponent",
-        "Type": "Class ActionRulesInteractableComponent*",
+        "Type": "class ActionRulesInteractableComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
@@ -142,32 +149,32 @@
         "Offset": "0x400"
       },
       {
-        "Name": "pad0x4_CX704[0x4]",
+        "Name": "pad0x4_NXXUU[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x404"
       },
       {
         "Name": "UnlockVFXCoordinatorComponent",
-        "Type": "Class GlitterBeardUnlockVFXCoordinatorComponent*",
+        "Type": "class GlitterBeardUnlockVFXCoordinatorComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
         "Name": "TelemetryComponent",
-        "Type": "Class GlitterBeardTelemetryComponent*",
+        "Type": "class GlitterBeardTelemetryComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
         "Name": "VocalShanty",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
         "Name": "VocalsFadeEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
@@ -185,13 +192,13 @@
       },
       {
         "Name": "FinaleCoordinator",
-        "Type": "Class GlitterBeardFinaleCoordinatorComponent*",
+        "Type": "class GlitterBeardFinaleCoordinatorComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
         "Name": "LandmarkReactionTrigger",
-        "Type": "Class LandmarkReactionTriggerComponent*",
+        "Type": "class LandmarkReactionTriggerComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
@@ -202,25 +209,25 @@
         "Offset": "0x440"
       },
       {
-        "Name": "pad0x254_T6NYS[0x254]",
+        "Name": "pad0x254_4CMC3[0x254]",
         "Type": "char",
         "Size": "0x254",
         "Offset": "0x444"
       },
       {
         "Name": "HideoutDoor",
-        "Type": "Class SlidingDoor*",
+        "Type": "class SlidingDoor*",
         "Size": "0x8",
         "Offset": "0x698"
       },
       {
         "Name": "SoundEmitter",
-        "Type": "Struct WwiseEmitter",
+        "Type": "struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x6a0"
       },
       {
-        "Name": "pad0x30_W1TGE[0x30]",
+        "Name": "pad0x30_M25X1[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x6c0"
@@ -235,12 +242,12 @@
     "Attributes": [
       {
         "Name": "FeedbackActions",
-        "Type": "TArray<struct FeedbackActions>",
+        "Type": "TArray<struct VisualFeedbackList>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x10_WMTWV[0x10]",
+        "Name": "pad0x10_623SU[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xd8"
@@ -252,7 +259,7 @@
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x20_YC0AZ[0x20]",
+        "Name": "pad0x20_OZ5WF[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xf8"
@@ -267,13 +274,13 @@
     "Attributes": [
       {
         "Name": "TreeActor",
-        "Type": "Struct ActorComponentSelector",
+        "Type": "struct ActorComponentSelector",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "TreeMaterialInstanceDynamic",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
@@ -284,7 +291,7 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0xc_T2UAH[0xc]",
+        "Name": "pad0xc_LHJ0I[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0xe4"

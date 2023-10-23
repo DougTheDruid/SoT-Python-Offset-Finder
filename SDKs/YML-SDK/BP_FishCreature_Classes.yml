@@ -5,7 +5,7 @@ BP_FishCreature_C:
   - Name: DefaultSceneRoot
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   - Name: CreatureType
     Offset: '0x3d0'
     Size: '0x1'
@@ -14,7 +14,7 @@ BP_FishCreature_C:
     Offset: '0x3d1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_MIBSJ[0x2]
+  - Name: pad0x2_P1F0H[0x2]
     Offset: '0x3d2'
     Size: '0x2'
     Type: char
@@ -25,11 +25,11 @@ BP_FishCreature_C:
   - Name: StaticMeshComponent
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: currMaterial
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
   - Name: MaterialInstance
     Offset: '0x3e8'
     Size: '0x10'
@@ -50,7 +50,7 @@ BP_FishCreature_C:
     Offset: '0x404'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_11AOE[0x3]
+  - Name: pad0x3_NP01N[0x3]
     Offset: '0x405'
     Size: '0x3'
     Type: char
@@ -66,26 +66,26 @@ BP_FishCreature_C:
     Offset: '0x410'
     Size: '0x4'
     Type: float
-  - Name: shoalSpeed
+  - Name: ShoalSpeed
     Offset: '0x414'
     Size: '0x4'
     Type: float
   - Name: ShoalingSpread
     Offset: '0x418'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: ShoalingHeight
     Offset: '0x420'
     Size: '0x4'
     Type: float
-  - Name: fishSpeed
+  - Name: FishSpeed
     Offset: '0x424'
     Size: '0x4'
     Type: float
   - Name: FishSpread
     Offset: '0x428'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: FishHeight
     Offset: '0x430'
     Size: '0x4'
@@ -129,7 +129,7 @@ BP_FishCreature_C:
   - Name: BBox
     Offset: '0x47c'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: Fish_07
     Offset: '0x488'
     Size: '0x10'
@@ -138,7 +138,7 @@ BP_FishCreature_C:
     Offset: '0x498'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_R39VS[0x4]
+  - Name: pad0x4_LX99O[0x4]
     Offset: '0x49c'
     Size: '0x4'
     Type: char
@@ -150,7 +150,7 @@ BP_FishCreature_C:
     Offset: '0x4b0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_SVOSY[0x4]
+  - Name: pad0x4_Y3X31[0x4]
     Offset: '0x4b4'
     Size: '0x4'
     Type: char
@@ -165,7 +165,7 @@ BP_FishCreature_C:
   - Name: FishDistribution
     Offset: '0x4d8'
     Size: '0x10'
-    Type: Struct LinearColor
+    Type: struct LinearColor
   ClassSize: '0x120'
   FullSize: '0x4e8'
   InheritedSize: '0x3c8'

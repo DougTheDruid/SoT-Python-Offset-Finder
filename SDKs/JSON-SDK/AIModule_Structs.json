@@ -1,7 +1,14 @@
 {
   "AIRequestID": {
     "ClassSize": "0x4",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x4_E2CN3[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
   },
   "AIStimulus": {
     "ClassSize": "0x3c",
@@ -26,13 +33,13 @@
       },
       {
         "Name": "StimulusLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
       {
         "Name": "ReceiverLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x18"
       },
@@ -43,7 +50,7 @@
         "Offset": "0x24"
       },
       {
-        "Name": "pad0xc_3GQTV[0xc]",
+        "Name": "pad0xc_XP2AD[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x2c"
@@ -53,6 +60,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x3_4RQKL[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x39"
       }
     ]
   },
@@ -61,9 +74,15 @@
     "Attributes": [
       {
         "Name": "GoalActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x38_8SXUJ[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x8"
       }
     ]
   },
@@ -72,7 +91,7 @@
     "Attributes": [
       {
         "Name": "TopAction",
-        "Type": "Class PawnAction*",
+        "Type": "class PawnAction*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -83,9 +102,15 @@
     "Attributes": [
       {
         "Name": "Action",
-        "Type": "Class PawnAction*",
+        "Type": "class PawnAction*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_0DVX5[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -106,7 +131,7 @@
       },
       {
         "Name": "SelectedKeyType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x18"
       },
@@ -117,7 +142,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x3_S50KK[0x3]",
+        "Name": "pad0x3_BQZ81[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x21"
@@ -127,6 +152,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x24"
+      },
+      {
+        "Name": "pad0x3_7UZWA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x25"
       }
     ]
   },
@@ -145,10 +176,22 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
+        "Name": "pad0x28_71MVB[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
         "Name": "DefaultValue",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_2DCYC[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
       }
     ]
   },
@@ -156,8 +199,14 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
+        "Name": "pad0x20_0DNUP[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
         "Name": "PropertyType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x20"
       }
@@ -167,14 +216,20 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
+        "Name": "pad0x8_BUOUR[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
         "Name": "CachedProperty",
-        "Type": "Class Property*",
+        "Type": "class Property*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "DataBinding",
-        "Type": "Class AIDataProvider*",
+        "Type": "class AIDataProvider*",
         "Size": "0x8",
         "Offset": "0x10"
       },
@@ -190,10 +245,22 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
+        "Name": "pad0x28_TTD5P[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
         "Name": "DefaultValue",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_QTVL9[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
       }
     ]
   },
@@ -201,23 +268,42 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
+        "Name": "pad0x28_B7FTD[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
         "Name": "DefaultValue",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_CCPY3[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
       }
     ]
   },
   "AIDataProviderStructValue": {
     "ClassSize": "0x30",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x30_I7L6B[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
   },
   "CustomDataProviderObjectPropertySelector": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "ObjectClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -232,6 +318,12 @@
   "IgnoreActorInfo": {
     "ClassSize": "0xc",
     "Attributes": [
+      {
+        "Name": "pad0x8_83QAU[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
       {
         "Name": "TimeRemaining",
         "Type": "float",
@@ -260,6 +352,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_FAXDJ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       }
     ]
   },
@@ -268,13 +366,13 @@
     "Attributes": [
       {
         "Name": "Target",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "LastSensedStimuli",
-        "Type": "TArray<struct LastSensedStimuli>",
+        "Type": "TArray<struct AIStimulus>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -283,6 +381,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_GM98J[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
       }
     ]
   },
@@ -297,31 +401,31 @@
       },
       {
         "Name": "Location",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x4"
       },
       {
         "Name": "HitLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_0QEYI[0x4]",
+        "Name": "pad0x4_WMJF8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
       },
       {
         "Name": "DamagedActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x20"
       },
       {
         "Name": "Instigator",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x28"
       }
@@ -331,8 +435,14 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
+        "Name": "pad0x4_B1R9W[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
         "Name": "NoiseLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x4"
       },
@@ -350,7 +460,7 @@
       },
       {
         "Name": "Instigator",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x18"
       },
@@ -359,6 +469,12 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x8_0GVSP[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
       }
     ]
   },
@@ -367,15 +483,21 @@
     "Attributes": [
       {
         "Name": "Requestor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "PredictedActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x8_MLK4Y[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },
@@ -383,14 +505,20 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
+        "Name": "pad0x8_KSWQQ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
         "Name": "SeenActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "Observer",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -400,14 +528,20 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
+        "Name": "pad0x28_N5MX5[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Broadcaster",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "Enemy",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x30"
       }
@@ -417,14 +551,20 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
+        "Name": "pad0x10_NNXX2[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "TouchReceiver",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
         "Name": "OtherActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x18"
       }
@@ -435,13 +575,13 @@
     "Attributes": [
       {
         "Name": "ChildComposite",
-        "Type": "Class BTCompositeNode*",
+        "Type": "class BTCompositeNode*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "ChildTask",
-        "Type": "Class BTTaskNode*",
+        "Type": "class BTTaskNode*",
         "Size": "0x8",
         "Offset": "0x8"
       },
@@ -453,7 +593,7 @@
       },
       {
         "Name": "DecoratorOps",
-        "Type": "TArray<struct DecoratorOps>",
+        "Type": "TArray<struct BTDecoratorLogic>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -469,10 +609,16 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x1_88AXQ[0x1]",
+        "Name": "pad0x1_1BEW9[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x1"
+      },
+      {
+        "Name": "pad0x2_VG47B[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x2"
       }
     ]
   },
@@ -481,15 +627,21 @@
     "Attributes": [
       {
         "Name": "Asset",
-        "Type": "Class BehaviorTree*",
+        "Type": "class BehaviorTree*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Template",
-        "Type": "Class BTCompositeNode*",
+        "Type": "class BTCompositeNode*",
         "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x8_C3UUX[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },
@@ -504,7 +656,7 @@
       },
       {
         "Name": "KeyType",
-        "Type": "Class BlackboardKeyType*",
+        "Type": "class BlackboardKeyType*",
         "Size": "0x8",
         "Offset": "0x8"
       },
@@ -513,12 +665,25 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_KCWM3[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       }
     ]
   },
   "EnvBoolParam": {
     "ClassSize": "0xc",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xc_D27KY[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EnvBoolParam_DEPRECATED": {
     "ClassSize": "0xc",
@@ -530,7 +695,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_QTK4S[0x3]",
+        "Name": "pad0x3_HOUXA[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -545,7 +710,14 @@
   },
   "EnvIntParam": {
     "ClassSize": "0xc",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xc_A28CM[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EnvIntParam_DEPRECATED": {
     "ClassSize": "0xc",
@@ -566,7 +738,14 @@
   },
   "EnvFloatParam": {
     "ClassSize": "0xc",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xc_6W3B5[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EnvFloatParam_DEPRECATED": {
     "ClassSize": "0xc",
@@ -589,13 +768,19 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
+        "Name": "pad0x10_4N0BM[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "ItemType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x14_668O0[0x14]",
+        "Name": "pad0x14_EOB7Q[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x18"
@@ -611,6 +796,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0xc_ORXXW[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x34"
       }
     ]
   },
@@ -624,14 +815,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_YBU1W[0x4]",
+        "Name": "pad0x4_U9II5[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "NavigationFilter",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x8"
       },
@@ -738,7 +929,7 @@
         "Offset": "0x34"
       },
       {
-        "Name": "pad0x3_J3NUC[0x3]",
+        "Name": "pad0x3_KN7MT[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x35"
@@ -754,6 +945,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x39"
+      },
+      {
+        "Name": "pad0x6_UQJ5B[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x3a"
       }
     ]
   },
@@ -762,19 +959,19 @@
     "Attributes": [
       {
         "Name": "LineFrom",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "LineTo",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "Rotation",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x10"
       },
@@ -783,6 +980,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_THBG9[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
       }
     ]
   },
@@ -802,7 +1005,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_UVD3H[0x3]",
+        "Name": "pad0x3_YI25Q[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
@@ -902,9 +1105,15 @@
     "Attributes": [
       {
         "Name": "Template",
-        "Type": "Class EnvQuery*",
+        "Type": "class EnvQuery*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x288_0IKKO[0x288]",
+        "Type": "char",
+        "Size": "0x288",
+        "Offset": "0x8"
       }
     ]
   },
@@ -913,21 +1122,27 @@
     "Attributes": [
       {
         "Name": "QueryTemplate",
-        "Type": "Class EnvQuery*",
+        "Type": "class EnvQuery*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Owner",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "World",
-        "Type": "Class World*",
+        "Type": "class World*",
         "Size": "0x8",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x158_JM84S[0x158]",
+        "Type": "char",
+        "Size": "0x158",
+        "Offset": "0x18"
       }
     ]
   },

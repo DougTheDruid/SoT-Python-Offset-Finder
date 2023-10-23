@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class wsp_mushroom_glow_01_b_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x408(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x418(0x8)
-	Class SceneComponent*                                        SharedRoot;                                        // 0x420(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x408(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent01;                             // 0x410(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x418(0x8)
+	class SceneComponent*                                        SharedRoot;                                        // 0x420(0x8)
 };
 
 

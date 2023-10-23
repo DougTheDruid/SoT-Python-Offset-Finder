@@ -24,13 +24,13 @@ ShaderQualityOverridesListItem:
   - Name: RangeName
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: QualityProperty
     Offset: '0x10'
     Size: '0x8'
-    Type: Class BoolProperty*
+    Type: class BoolProperty*
   - Name: SettingContainer
     Offset: '0x18'
     Size: '0x8'
-    Type: Class ShaderPlatformQualitySettings*
+    Type: class ShaderPlatformQualitySettings*
   ClassSize: '0x20'

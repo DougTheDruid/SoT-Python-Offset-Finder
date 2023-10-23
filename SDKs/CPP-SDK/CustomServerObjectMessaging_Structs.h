@@ -10,8 +10,9 @@ namespace DougsSDKDumper
 struct CustomServerEvent
 {
 public:
+	char                                                         pad0x8_9INZY[0x8];                                 // 0x0(0x8)
 	struct FName                                                 EventID;                                           // 0x8(0x8)
-	Struct DateTime                                              ServerTimeUTC;                                     // 0x10(0x8)
+	struct DateTime                                              ServerTimeUTC;                                     // 0x10(0x8)
 };
 
 
@@ -19,6 +20,7 @@ public:
 struct OnRelaodAmmoCustomServerEvent
 {
 public:
+	char                                                         pad0x20_LQ2VP[0x20];                               // 0x0(0x20)
 	int                                                          AvailableAmmoToAdd;                                // 0x20(0x4)
 	int                                                          CurrentAmmoAfterReload;                            // 0x24(0x4)
 };
@@ -28,7 +30,9 @@ public:
 struct EntityCustomServerEvent
 {
 public:
+	char                                                         pad0x18_URKMK[0x18];                               // 0x0(0x18)
 	int                                                          EntityNetId;                                       // 0x18(0x4)
+	char                                                         pad0x4_W6N0S[0x4];                                 // 0x1c(0x4)
 };
 
 
@@ -36,6 +40,7 @@ public:
 struct OnItemPlacedInChestCustomServerEvent
 {
 public:
+	char                                                         pad0x20_7X2HB[0x20];                               // 0x0(0x20)
 	int                                                          ChestId;                                           // 0x20(0x4)
 	int                                                          ItemId;                                            // 0x24(0x4)
 };
@@ -45,8 +50,10 @@ public:
 struct OnCannonBallHitShipCustomServerEvent
 {
 public:
-	Struct FString                                               CannonBallType;                                    // 0x20(0x10)
+	char                                                         pad0x20_P2MX5[0x20];                               // 0x0(0x20)
+	struct FString                                               CannonBallType;                                    // 0x20(0x10)
 	int                                                          ShipId;                                            // 0x30(0x4)
+	char                                                         pad0x4_BWEML[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -54,6 +61,7 @@ public:
 struct PlayerCharacterEnteredShipCustomServerEvent
 {
 public:
+	char                                                         pad0x20_2RK7X[0x20];                               // 0x0(0x20)
 	int                                                          UserId;                                            // 0x20(0x4)
 	int                                                          ShipId;                                            // 0x24(0x4)
 };
@@ -63,6 +71,7 @@ public:
 struct FortKeyUsedCustomServerEvent
 {
 public:
+	char                                                         pad0x20_UIRVP[0x20];                               // 0x0(0x20)
 };
 
 
@@ -70,10 +79,11 @@ public:
 struct TreasureSoldCustomServerEvent
 {
 public:
-	Struct FString                                               CrewId;                                            // 0x20(0x10)
-	Struct FString                                               TreasureType;                                      // 0x30(0x10)
-	Struct FString                                               VendorId;                                          // 0x40(0x10)
-	Struct FString                                               CompanyId;                                         // 0x50(0x10)
+	char                                                         pad0x20_HS4VC[0x20];                               // 0x0(0x20)
+	struct FString                                               CrewId;                                            // 0x20(0x10)
+	struct FString                                               TreasureType;                                      // 0x30(0x10)
+	struct FString                                               VendorId;                                          // 0x40(0x10)
+	struct FString                                               CompanyId;                                         // 0x50(0x10)
 };
 
 
@@ -81,6 +91,7 @@ public:
 struct TreasurePickedUpCustomServerEvent
 {
 public:
+	char                                                         pad0x20_QBFGT[0x20];                               // 0x0(0x20)
 };
 
 
@@ -88,7 +99,8 @@ public:
 struct TreasureFoundCustomServerEvent
 {
 public:
-	Struct FString                                               TreasureType;                                      // 0x20(0x10)
+	char                                                         pad0x20_5DIH5[0x20];                               // 0x0(0x20)
+	struct FString                                               TreasureType;                                      // 0x20(0x10)
 };
 
 
@@ -96,8 +108,10 @@ public:
 struct TreasureDroppedCustomServerEvent
 {
 public:
-	Struct FString                                               TreasureType;                                      // 0x20(0x10)
-	Struct Vector                                                Position;                                          // 0x30(0xc)
+	char                                                         pad0x20_WSZAM[0x20];                               // 0x0(0x20)
+	struct FString                                               TreasureType;                                      // 0x20(0x10)
+	struct Vector                                                Position;                                          // 0x30(0xc)
+	char                                                         pad0x4_OKMFB[0x4];                                 // 0x3c(0x4)
 };
 
 
@@ -105,7 +119,9 @@ public:
 struct TinySharkDespawnCustomServerEvent
 {
 public:
+	char                                                         pad0x20_MCWXF[0x20];                               // 0x0(0x20)
 	byte                                                         Reason;                                            // 0x20(0x1)
+	char                                                         pad0x7_EWGI6[0x7];                                 // 0x21(0x7)
 };
 
 
@@ -113,7 +129,9 @@ public:
 struct KrakenDespawnCustomServerEvent
 {
 public:
+	char                                                         pad0x20_NB4II[0x20];                               // 0x0(0x20)
 	byte                                                         Reason;                                            // 0x20(0x1)
+	char                                                         pad0x7_N71EN[0x7];                                 // 0x21(0x7)
 };
 
 
@@ -121,6 +139,7 @@ public:
 struct KrakenTentacleDestroyedCustomServerEvent
 {
 public:
+	char                                                         pad0x20_ZHNPP[0x20];                               // 0x0(0x20)
 };
 
 
@@ -128,7 +147,8 @@ public:
 struct CookStartCustomServerEvent
 {
 public:
-	Struct FString                                               FoodType;                                          // 0x20(0x10)
+	char                                                         pad0x20_PYLI5[0x20];                               // 0x0(0x20)
+	struct FString                                               FoodType;                                          // 0x20(0x10)
 };
 
 
@@ -136,8 +156,9 @@ public:
 struct CookEndCustomServerEvent
 {
 public:
-	Struct FString                                               FoodType;                                          // 0x20(0x10)
-	Struct FString                                               CookedState;                                       // 0x30(0x10)
+	char                                                         pad0x20_T6LDI[0x20];                               // 0x0(0x20)
+	struct FString                                               FoodType;                                          // 0x20(0x10)
+	struct FString                                               CookedState;                                       // 0x30(0x10)
 };
 
 
@@ -145,7 +166,8 @@ public:
 struct ShipSpawnedCustomServerEvent
 {
 public:
-	Struct FString                                               ShipType;                                          // 0x20(0x10)
+	char                                                         pad0x20_XDIA3[0x20];                               // 0x0(0x20)
+	struct FString                                               ShipType;                                          // 0x20(0x10)
 };
 
 
@@ -153,6 +175,7 @@ public:
 struct ShipRepairCustomServerEvent
 {
 public:
+	char                                                         pad0x20_3X3K1[0x20];                               // 0x0(0x20)
 	int                                                          UserId;                                            // 0x20(0x4)
 	int                                                          ShipId;                                            // 0x24(0x4)
 };
@@ -162,6 +185,7 @@ public:
 struct ShipOnFireEndCustomServerEvent
 {
 public:
+	char                                                         pad0x20_30C0D[0x20];                               // 0x0(0x20)
 };
 
 
@@ -169,6 +193,7 @@ public:
 struct ShipMastCollapseStateCustomServerEvent
 {
 public:
+	char                                                         pad0x20_S05WR[0x20];                               // 0x0(0x20)
 	int                                                          ShipId;                                            // 0x20(0x4)
 	int                                                          MastId;                                            // 0x24(0x4)
 };
@@ -178,6 +203,7 @@ public:
 struct ShipDestroyedCustomServerEvent
 {
 public:
+	char                                                         pad0x20_D8939[0x20];                               // 0x0(0x20)
 };
 
 
@@ -185,7 +211,9 @@ public:
 struct ShipDamagedCustomServerEvent
 {
 public:
+	char                                                         pad0x20_J53ZN[0x20];                               // 0x0(0x20)
 	int                                                          Damage;                                            // 0x20(0x4)
+	char                                                         pad0x4_Q4CW5[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -193,6 +221,7 @@ public:
 struct ProjectileWeaponFiredCustomServerEvent
 {
 public:
+	char                                                         pad0x20_420QI[0x20];                               // 0x0(0x20)
 };
 
 
@@ -200,8 +229,10 @@ public:
 struct ProjectileHitCustomServerEvent
 {
 public:
-	Struct FString                                               ProjectileType;                                    // 0x20(0x10)
+	char                                                         pad0x20_6JEDX[0x20];                               // 0x0(0x20)
+	struct FString                                               ProjectileType;                                    // 0x20(0x10)
 	int                                                          RecipientId;                                       // 0x30(0x4)
+	char                                                         pad0x4_4SCJR[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -209,7 +240,8 @@ public:
 struct PlayerStatusEffectActivatedCustomServerEvent
 {
 public:
-	Struct FString                                               Effect;                                            // 0x20(0x10)
+	char                                                         pad0x20_1PTV7[0x20];                               // 0x0(0x20)
+	struct FString                                               Effect;                                            // 0x20(0x10)
 };
 
 
@@ -217,7 +249,8 @@ public:
 struct PlayerStatusEffectDeactivatedCustomServerEvent
 {
 public:
-	Struct FString                                               Effect;                                            // 0x20(0x10)
+	char                                                         pad0x20_ORBG2[0x20];                               // 0x0(0x20)
+	struct FString                                               Effect;                                            // 0x20(0x10)
 };
 
 
@@ -225,8 +258,10 @@ public:
 struct PlayerSpawnCustomServerEvent
 {
 public:
+	char                                                         pad0x20_6C1UQ[0x20];                               // 0x0(0x20)
 	int                                                          PlayerStateId;                                     // 0x20(0x4)
 	byte                                                         CharacterType;                                     // 0x24(0x1)
+	char                                                         pad0x3_TGH1W[0x3];                                 // 0x25(0x3)
 };
 
 
@@ -234,7 +269,8 @@ public:
 struct PlayerSetFootLocationCustomServerEvent
 {
 public:
-	Struct FString                                               IslandName;                                        // 0x20(0x10)
+	char                                                         pad0x20_HTKER[0x20];                               // 0x0(0x20)
+	struct FString                                               IslandName;                                        // 0x20(0x10)
 };
 
 
@@ -242,6 +278,7 @@ public:
 struct PlayerRevivalCustomServerEvent
 {
 public:
+	char                                                         pad0x28_M53KO[0x28];                               // 0x0(0x28)
 };
 
 
@@ -249,6 +286,7 @@ public:
 struct PlayerRadialChatCustomServerEvent
 {
 public:
+	char                                                         pad0x20_XOGOG[0x20];                               // 0x0(0x20)
 };
 
 
@@ -256,6 +294,7 @@ public:
 struct PlayerLeftGhostShipCustomServerEvent
 {
 public:
+	char                                                         pad0x20_V0R5R[0x20];                               // 0x0(0x20)
 };
 
 
@@ -263,6 +302,7 @@ public:
 struct PlayerKillAICustomServerEvent
 {
 public:
+	char                                                         pad0x20_0K2Y3[0x20];                               // 0x0(0x20)
 };
 
 
@@ -270,6 +310,7 @@ public:
 struct PlayerItemUsageStartCustomServerEvent
 {
 public:
+	char                                                         pad0x20_FO7Y2[0x20];                               // 0x0(0x20)
 };
 
 
@@ -277,6 +318,7 @@ public:
 struct PlayerItemUsageEndCustomServerEvent
 {
 public:
+	char                                                         pad0x20_U8X3C[0x20];                               // 0x0(0x20)
 };
 
 
@@ -284,7 +326,8 @@ public:
 struct PlayerItemRetrievalFromContainerCustomServerEvent
 {
 public:
-	Struct FString                                               RetrievedItemName;                                 // 0x20(0x10)
+	char                                                         pad0x20_SCEMW[0x20];                               // 0x0(0x20)
+	struct FString                                               RetrievedItemName;                                 // 0x20(0x10)
 };
 
 
@@ -292,6 +335,7 @@ public:
 struct PlayerItemEquipCustomServerEvent
 {
 public:
+	char                                                         pad0x20_5TTO5[0x20];                               // 0x0(0x20)
 };
 
 
@@ -299,6 +343,7 @@ public:
 struct PlayerItemAddToContainerCustomServerEvent
 {
 public:
+	char                                                         pad0x20_HUUP6[0x20];                               // 0x0(0x20)
 };
 
 
@@ -306,6 +351,7 @@ public:
 struct PlayerInReviveableStateCustomServerEvent
 {
 public:
+	char                                                         pad0x20_MS7PQ[0x20];                               // 0x0(0x20)
 };
 
 
@@ -313,6 +359,7 @@ public:
 struct PlayerHeartbeatCustomServerEvent
 {
 public:
+	char                                                         pad0x20_YT34Y[0x20];                               // 0x0(0x20)
 };
 
 
@@ -320,6 +367,7 @@ public:
 struct PlayerHealthChangeCustomServerEvent
 {
 public:
+	char                                                         pad0x20_GP40F[0x20];                               // 0x0(0x20)
 };
 
 
@@ -327,6 +375,7 @@ public:
 struct PlayerGameFishingStartedCustomServerEvent
 {
 public:
+	char                                                         pad0x20_K0O65[0x20];                               // 0x0(0x20)
 };
 
 
@@ -334,7 +383,9 @@ public:
 struct PlayerEncounterStartCustomServerEvent
 {
 public:
+	char                                                         pad0x20_0KEB8[0x20];                               // 0x0(0x20)
 	byte                                                         EncounterType;                                     // 0x20(0x1)
+	char                                                         pad0x7_JAUB3[0x7];                                 // 0x21(0x7)
 };
 
 
@@ -342,7 +393,9 @@ public:
 struct PlayerEncounterEndCustomServerEvent
 {
 public:
+	char                                                         pad0x20_LW6CH[0x20];                               // 0x0(0x20)
 	byte                                                         EncounterType;                                     // 0x20(0x1)
+	char                                                         pad0x7_5NXMC[0x7];                                 // 0x21(0x7)
 };
 
 
@@ -350,7 +403,8 @@ public:
 struct PlayerEmoteEndCustomServerEvent
 {
 public:
-	Struct FString                                               Emote;                                             // 0x20(0x10)
+	char                                                         pad0x20_BXJOR[0x20];                               // 0x0(0x20)
+	struct FString                                               Emote;                                             // 0x20(0x10)
 };
 
 
@@ -358,7 +412,8 @@ public:
 struct PlayerEmoteStartCustomServerEvent
 {
 public:
-	Struct FString                                               Emote;                                             // 0x20(0x10)
+	char                                                         pad0x20_NKVH7[0x20];                               // 0x0(0x20)
+	struct FString                                               Emote;                                             // 0x20(0x10)
 };
 
 
@@ -366,7 +421,9 @@ public:
 struct PlayerDeathCustomServerEvent
 {
 public:
+	char                                                         pad0x20_QWYRF[0x20];                               // 0x0(0x20)
 	int                                                          KillerID;                                          // 0x20(0x4)
+	char                                                         pad0x4_A0FX0[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -374,7 +431,9 @@ public:
 struct PlayerChangedShipLoadoutCustomServerEvent
 {
 public:
+	char                                                         pad0x20_B4GT2[0x20];                               // 0x0(0x20)
 	int                                                          ShipId;                                            // 0x20(0x4)
+	char                                                         pad0x4_2DJH7[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -382,6 +441,7 @@ public:
 struct PlayerChangedLoadoutCustomServerEvent
 {
 public:
+	char                                                         pad0x20_JR3H1[0x20];                               // 0x0(0x20)
 };
 
 
@@ -389,7 +449,9 @@ public:
 struct PlayerCapstanUsageStartCustomServerEvent
 {
 public:
+	char                                                         pad0x20_NPIY2[0x20];                               // 0x0(0x20)
 	int                                                          ShipId;                                            // 0x20(0x4)
+	char                                                         pad0x4_0QA8N[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -397,6 +459,7 @@ public:
 struct PlayerCapstanUsageEndCustomServerEvent
 {
 public:
+	char                                                         pad0x20_PAR1J[0x20];                               // 0x0(0x20)
 	int                                                          ShipId;                                            // 0x20(0x4)
 	int                                                          CapstanState;                                      // 0x24(0x4)
 };
@@ -406,6 +469,7 @@ public:
 struct PlayerBucketScoopCustomServerEvent
 {
 public:
+	char                                                         pad0x20_YAWD9[0x20];                               // 0x0(0x20)
 };
 
 
@@ -413,7 +477,9 @@ public:
 struct PlayerBucketEmptyCustomServerEvent
 {
 public:
+	char                                                         pad0x20_3K95J[0x20];                               // 0x0(0x20)
 	bool                                                         AtWielder;                                         // 0x20(0x1)
+	char                                                         pad0x7_XXVV1[0x7];                                 // 0x21(0x7)
 };
 
 
@@ -421,7 +487,9 @@ public:
 struct PlayerActionCannonCustomServerEvent
 {
 public:
+	char                                                         pad0x20_0VQOU[0x20];                               // 0x0(0x20)
 	int                                                          ShipId;                                            // 0x20(0x4)
+	char                                                         pad0x4_T3AY5[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -429,7 +497,8 @@ public:
 struct PlayerActionCustomServerEvent
 {
 public:
-	Struct FString                                               Action;                                            // 0x20(0x10)
+	char                                                         pad0x20_0D0O1[0x20];                               // 0x0(0x20)
+	struct FString                                               Action;                                            // 0x20(0x10)
 };
 
 
@@ -437,6 +506,7 @@ public:
 struct MermaidUsedCustomServerEvent
 {
 public:
+	char                                                         pad0x20_136MO[0x20];                               // 0x0(0x20)
 };
 
 
@@ -444,7 +514,9 @@ public:
 struct MeleeWeaponAttackCustomServerEvent
 {
 public:
+	char                                                         pad0x20_VTY2A[0x20];                               // 0x0(0x20)
 	int                                                          Type;                                              // 0x20(0x4)
+	char                                                         pad0x4_5YWAU[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -452,7 +524,9 @@ public:
 struct CustomTriggerOverlapEndCustomServerEvent
 {
 public:
+	char                                                         pad0x20_TBVAQ[0x20];                               // 0x0(0x20)
 	int                                                          OtherNetId;                                        // 0x20(0x4)
+	char                                                         pad0x4_I3ZLW[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -460,7 +534,9 @@ public:
 struct CustomTriggerOverlapBeginCustomServerEvent
 {
 public:
+	char                                                         pad0x20_XL4IH[0x20];                               // 0x0(0x20)
 	int                                                          OtherNetId;                                        // 0x20(0x4)
+	char                                                         pad0x4_IZFSO[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -468,7 +544,8 @@ public:
 struct AISpawnCustomServerEvent
 {
 public:
-	Struct FString                                               AIType;                                            // 0x20(0x10)
+	char                                                         pad0x20_CRU9L[0x20];                               // 0x0(0x20)
+	struct FString                                               AIType;                                            // 0x20(0x10)
 };
 
 
@@ -476,6 +553,7 @@ public:
 struct AIShipSpawnCustomServerEvent
 {
 public:
+	char                                                         pad0x20_ER2QO[0x20];                               // 0x0(0x20)
 };
 
 
@@ -483,6 +561,7 @@ public:
 struct AIShipDespawnCustomServerEvent
 {
 public:
+	char                                                         pad0x20_0PJFY[0x20];                               // 0x0(0x20)
 };
 
 
@@ -490,7 +569,9 @@ public:
 struct AIShipDamagedCustomServerEvent
 {
 public:
+	char                                                         pad0x20_QUOX2[0x20];                               // 0x0(0x20)
 	float                                                        AIShipWaterLevel;                                  // 0x20(0x4)
+	char                                                         pad0x4_S561T[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -498,6 +579,7 @@ public:
 struct OnCannonballLoadedOnCannonCustomServerEvent
 {
 public:
+	char                                                         pad0x20_KW8NC[0x20];                               // 0x0(0x20)
 };
 
 
@@ -505,6 +587,7 @@ public:
 struct OnPlayerFiredFromCannonCustomServerEvent
 {
 public:
+	char                                                         pad0x20_JX59E[0x20];                               // 0x0(0x20)
 };
 
 
@@ -512,7 +595,9 @@ public:
 struct OnEnemyDeathCustomServerEvent
 {
 public:
+	char                                                         pad0x20_5GNYT[0x20];                               // 0x0(0x20)
 	int                                                          KillerPlayerID;                                    // 0x20(0x4)
+	char                                                         pad0x4_3SHPN[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -520,7 +605,9 @@ public:
 struct OnPlayerDigCustomServerEvent
 {
 public:
-	Struct Vector                                                Location;                                          // 0x20(0xc)
+	char                                                         pad0x20_DRF68[0x20];                               // 0x0(0x20)
+	struct Vector                                                Location;                                          // 0x20(0xc)
+	char                                                         pad0x4_RZNJU[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -528,7 +615,8 @@ public:
 struct OnPlayerStartsNPCInteractionCustomServerEvent
 {
 public:
-	Struct FString                                               NPCName;                                           // 0x20(0x10)
+	char                                                         pad0x20_BPFC8[0x20];                               // 0x0(0x20)
+	struct FString                                               NPCName;                                           // 0x20(0x10)
 };
 
 
@@ -536,6 +624,7 @@ public:
 struct OnPlayerJoinsMapTableCustomServerEvent
 {
 public:
+	char                                                         pad0x20_PDD82[0x20];                               // 0x0(0x20)
 };
 
 
@@ -543,7 +632,9 @@ public:
 struct OnHarpoonShotHitCustomServerEvent
 {
 public:
+	char                                                         pad0x20_BKPEV[0x20];                               // 0x0(0x20)
 	int                                                          ActorTetheredTo;                                   // 0x20(0x4)
+	char                                                         pad0x4_KD66M[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -551,7 +642,9 @@ public:
 struct OnHarpoonShotShotCustomServerEvent
 {
 public:
+	char                                                         pad0x20_LV5OX[0x20];                               // 0x0(0x20)
 	int                                                          HarpoonId;                                         // 0x20(0x4)
+	char                                                         pad0x4_8GUU4[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -559,6 +652,7 @@ public:
 struct OnPlayerInsideCannonCustomServerEvent
 {
 public:
+	char                                                         pad0x20_GX8LL[0x20];                               // 0x0(0x20)
 };
 
 
@@ -566,6 +660,7 @@ public:
 struct OnPlayerAteCustomServerEvent
 {
 public:
+	char                                                         pad0x20_OWTHH[0x20];                               // 0x0(0x20)
 };
 
 
@@ -573,6 +668,7 @@ public:
 struct ShipSinkingCustomServerEvent
 {
 public:
+	char                                                         pad0x20_WFXAH[0x20];                               // 0x0(0x20)
 };
 
 
@@ -580,9 +676,11 @@ public:
 struct HoleFixedForShipCustomServerEvent
 {
 public:
+	char                                                         pad0x20_ONCJF[0x20];                               // 0x0(0x20)
 	float                                                        RepairPercentage;                                  // 0x20(0x4)
 	int                                                          RepairingActor;                                    // 0x24(0x4)
 	bool                                                         RepairCompleted;                                   // 0x28(0x1)
+	char                                                         pad0x7_B2ME7[0x7];                                 // 0x29(0x7)
 };
 
 
@@ -590,7 +688,8 @@ public:
 struct MermaidSpawnedCustomServerEvent
 {
 public:
-	Struct Vector                                                Position;                                          // 0x18(0xc)
+	char                                                         pad0x18_LAKT1[0x18];                               // 0x0(0x18)
+	struct Vector                                                Position;                                          // 0x18(0xc)
 	int                                                          PlayerId;                                          // 0x24(0x4)
 };
 
@@ -599,6 +698,7 @@ public:
 struct GlobalCustomServerEvent
 {
 public:
+	char                                                         pad0x18_WJP0B[0x18];                               // 0x0(0x18)
 };
 
 
@@ -606,6 +706,7 @@ public:
 struct PlayerLookingAtMapCustomServerEvent
 {
 public:
+	char                                                         pad0x18_JC8F2[0x18];                               // 0x0(0x18)
 };
 
 
@@ -613,9 +714,11 @@ public:
 struct OnQuestStartedCustomServerEvent
 {
 public:
+	char                                                         pad0x18_B92LP[0x18];                               // 0x0(0x18)
 	byte                                                         QuestType;                                         // 0x18(0x1)
-	char                                                         pad0x3_EYCK7[0x3];                                 // 0x19(0x3)
-	Struct Guid                                                  CrewId;                                            // 0x1c(0x10)
+	char                                                         pad0x3_PUU5S[0x3];                                 // 0x19(0x3)
+	struct Guid                                                  CrewId;                                            // 0x1c(0x10)
+	char                                                         pad0x4_8EWBO[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -623,11 +726,12 @@ public:
 struct OnVoyageStartedCustomServerEvent
 {
 public:
-	Struct FString                                               CompanyDisplayName;                                // 0x18(0x10)
+	char                                                         pad0x18_TWKBK[0x18];                               // 0x0(0x18)
+	struct FString                                               CompanyDisplayName;                                // 0x18(0x10)
 	int                                                          Rank;                                              // 0x28(0x4)
-	char                                                         pad0x4_9GFAW[0x4];                                 // 0x2c(0x4)
-	Struct FString                                               Title;                                             // 0x30(0x10)
-	Struct Guid                                                  CrewId;                                            // 0x40(0x10)
+	char                                                         pad0x4_NM301[0x4];                                 // 0x2c(0x4)
+	struct FString                                               Title;                                             // 0x30(0x10)
+	struct Guid                                                  CrewId;                                            // 0x40(0x10)
 };
 
 
@@ -635,7 +739,8 @@ public:
 struct OnVoyageCancelledCustomServerEvent
 {
 public:
-	Struct FString                                               AssociatedCrew;                                    // 0x18(0x10)
+	char                                                         pad0x18_TSSRG[0x18];                               // 0x0(0x18)
+	struct FString                                               AssociatedCrew;                                    // 0x18(0x10)
 };
 
 
@@ -643,10 +748,11 @@ public:
 struct OnVoyageAcceptedCustomServerEvent
 {
 public:
-	Struct FString                                               CompanyDisplayName;                                // 0x18(0x10)
+	char                                                         pad0x18_PW6NZ[0x18];                               // 0x0(0x18)
+	struct FString                                               CompanyDisplayName;                                // 0x18(0x10)
 	int                                                          Rank;                                              // 0x28(0x4)
-	char                                                         pad0x4_EPQ6Z[0x4];                                 // 0x2c(0x4)
-	Struct FString                                               Title;                                             // 0x30(0x10)
+	char                                                         pad0x4_ZQ6CR[0x4];                                 // 0x2c(0x4)
+	struct FString                                               Title;                                             // 0x30(0x10)
 };
 
 
@@ -654,6 +760,7 @@ public:
 struct OnQuestAcceptedCustomServerEvent
 {
 public:
+	char                                                         pad0x18_KAOL9[0x18];                               // 0x0(0x18)
 };
 
 
@@ -661,7 +768,9 @@ public:
 struct WatercraftDespawnCustomServerEvent
 {
 public:
+	char                                                         pad0x18_2WCGW[0x18];                               // 0x0(0x18)
 	int                                                          WatercraftId;                                      // 0x18(0x4)
+	char                                                         pad0x4_QXDOF[0x4];                                 // 0x1c(0x4)
 };
 
 
@@ -669,6 +778,7 @@ public:
 struct TreasureSpawnedCustomServerEvent
 {
 public:
+	char                                                         pad0x18_8EMTD[0x18];                               // 0x0(0x18)
 };
 
 
@@ -676,11 +786,13 @@ public:
 struct KrakenSpawnCustomServerEvent
 {
 public:
-	Struct Vector                                                SpawnLocation;                                     // 0x18(0xc)
+	char                                                         pad0x18_6WDOS[0x18];                               // 0x0(0x18)
+	struct Vector                                                SpawnLocation;                                     // 0x18(0xc)
 	int                                                          TrackedShipId;                                     // 0x24(0x4)
 	int                                                          KrakenId;                                          // 0x28(0x4)
 	int                                                          NumberOfTentacles;                                 // 0x2c(0x4)
 	int                                                          NumberOfKilledTentaclesToDismissKraken;            // 0x30(0x4)
+	char                                                         pad0x4_RLK1Z[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -688,7 +800,9 @@ public:
 struct WatercraftSpawnCustomServerEvent
 {
 public:
+	char                                                         pad0x18_ZQU7Y[0x18];                               // 0x0(0x18)
 	int                                                          EntityNetId;                                       // 0x18(0x4)
+	char                                                         pad0x4_CCKJF[0x4];                                 // 0x1c(0x4)
 };
 
 
@@ -696,7 +810,9 @@ public:
 struct ActorSpawnCustomServerEvent
 {
 public:
+	char                                                         pad0x18_C9W5U[0x18];                               // 0x0(0x18)
 	int                                                          EntityNetId;                                       // 0x18(0x4)
+	char                                                         pad0x4_8OMXW[0x4];                                 // 0x1c(0x4)
 };
 
 
@@ -704,9 +820,10 @@ public:
 struct ItemSpawnCustomServerEvent
 {
 public:
+	char                                                         pad0x18_SW11Q[0x18];                               // 0x0(0x18)
 	int                                                          EntityNetId;                                       // 0x18(0x4)
-	char                                                         pad0x4_ZIQN1[0x4];                                 // 0x1c(0x4)
-	Struct FString                                               ItemType;                                          // 0x20(0x10)
+	char                                                         pad0x4_6UU48[0x4];                                 // 0x1c(0x4)
+	struct FString                                               ItemType;                                          // 0x20(0x10)
 };
 
 
@@ -714,7 +831,8 @@ public:
 struct FortWaveCompletedCustomServerEvent
 {
 public:
-	Struct FString                                               InCrewId;                                          // 0x18(0x10)
+	char                                                         pad0x18_P0TK7[0x18];                               // 0x0(0x18)
+	struct FString                                               InCrewId;                                          // 0x18(0x10)
 };
 
 
@@ -722,7 +840,8 @@ public:
 struct CrewSessionLeaveCustomServerEvent
 {
 public:
-	Struct FString                                               CrewId;                                            // 0x18(0x10)
+	char                                                         pad0x18_BNXHO[0x18];                               // 0x0(0x18)
+	struct FString                                               CrewId;                                            // 0x18(0x10)
 };
 
 
@@ -730,8 +849,10 @@ public:
 struct CrewPlayerLeftCustomServerEvent
 {
 public:
-	Struct FString                                               CrewId;                                            // 0x18(0x10)
+	char                                                         pad0x18_8VXZ4[0x18];                               // 0x0(0x18)
+	struct FString                                               CrewId;                                            // 0x18(0x10)
 	int                                                          PlayerId;                                          // 0x28(0x4)
+	char                                                         pad0x4_X67YE[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -739,9 +860,11 @@ public:
 struct TinySharkSpawnCustomServerEvent
 {
 public:
+	char                                                         pad0x18_TS22J[0x18];                               // 0x0(0x18)
 	int                                                          TinySharkId;                                       // 0x18(0x4)
-	Struct Vector                                                SpawnLocation;                                     // 0x1c(0xc)
+	struct Vector                                                SpawnLocation;                                     // 0x1c(0xc)
 	int                                                          TrackedShipId;                                     // 0x28(0x4)
+	char                                                         pad0x4_A9IB6[0x4];                                 // 0x2c(0x4)
 };
 
 

@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "WaterType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -13,6 +13,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_5SJPY[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       }
     ]
   },
@@ -21,7 +27,7 @@
     "Attributes": [
       {
         "Name": "PrimitiveComponent",
-        "Type": "Class PrimitiveComponent*",
+        "Type": "class PrimitiveComponent*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -44,26 +50,26 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_SKX3N[0x4]",
+        "Name": "pad0x4_1XTDF[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
       },
       {
         "Name": "VolumeSamples",
-        "Type": "TArray<struct VolumeSamples>",
+        "Type": "TArray<struct BuoyancyVolumeSample>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "DragSamples",
-        "Type": "TArray<struct DragSamples>",
+        "Type": "TArray<struct BuoyancyDragSample>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "BuyoancySampleZSpeedVSDampeningScalar",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x38"
       },
@@ -72,6 +78,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0xec_EUYRM[0xec]",
+        "Type": "char",
+        "Size": "0xec",
+        "Offset": "0x44"
       }
     ]
   },
@@ -80,19 +92,19 @@
     "Attributes": [
       {
         "Name": "Offset",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
       {
         "Name": "Normal",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
       {
         "Name": "Tangent",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x18"
       },
@@ -113,6 +125,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x2c"
+      },
+      {
+        "Name": "pad0x63_GW7IX[0x63]",
+        "Type": "char",
+        "Size": "0x63",
+        "Offset": "0x2d"
       }
     ]
   },
@@ -121,7 +139,7 @@
     "Attributes": [
       {
         "Name": "Offset",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
@@ -144,7 +162,7 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x2_Q1BV3[0x2]",
+        "Name": "pad0x2_MV3HQ[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x12"
@@ -162,32 +180,32 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_1VMY1[0x4]",
+        "Name": "pad0x4_YZLC6[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
       },
       {
         "Name": "DistUnderwaterVSBuoyancyForce",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x20"
       },
       {
         "Name": "DistUnderwaterVSBuoyancyForceSecondary",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "DistUnderwaterVSBuoyancyForceTertiary",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "FakeZOffsetGeneratorCurve",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x38"
       },
@@ -202,6 +220,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x44"
+      },
+      {
+        "Name": "pad0x10_RLJ6C[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x48"
       }
     ]
   },
@@ -210,27 +234,33 @@
     "Attributes": [
       {
         "Name": "Configurations",
-        "Type": "TArray<struct Configurations>",
+        "Type": "TArray<struct BuoyancySampleMovementConfiguration>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x40_GEEYP[0x40]",
+        "Name": "pad0x40_39BFN[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x10"
       },
       {
         "Name": "BuoyancyScalarCurve",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x50"
       },
       {
         "Name": "ProbeMovementCurve",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x58"
+      },
+      {
+        "Name": "pad0x8_L85US[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x60"
       }
     ]
   },
@@ -239,13 +269,13 @@
     "Attributes": [
       {
         "Name": "CenterOfMassOffsetCurve",
-        "Type": "Class CurveVector*",
+        "Type": "class CurveVector*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "SampleMoveData",
-        "Type": "TArray<struct SampleMoveData>",
+        "Type": "TArray<struct BuoyancySampleMovementConfigurationEntry>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -256,20 +286,20 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_5LFT0[0x4]",
+        "Name": "pad0x4_1Y7KG[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
       },
       {
         "Name": "OverallBuoyancyScalarBlendCurve",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x20"
       },
       {
         "Name": "ProbeMovementBlendCurve",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x28"
       },
@@ -278,6 +308,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_KAGS7[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       }
     ]
   },
@@ -286,19 +322,19 @@
     "Attributes": [
       {
         "Name": "SampleOffset",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_5F3YS[0x4]",
+        "Name": "pad0x4_61N1D[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       },
       {
         "Name": "BuoyancyScaleCurve",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -309,13 +345,13 @@
     "Attributes": [
       {
         "Name": "FormerWaterPlane",
-        "Type": "Class BaseWaterComponent*",
+        "Type": "class BaseWaterComponent*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "NewWaterPlane",
-        "Type": "Class BaseWaterComponent*",
+        "Type": "class BaseWaterComponent*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -323,11 +359,25 @@
   },
   "EventLeftWaterExclusionZone": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_ZOZQ0[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventEnteredWaterExclusionZone": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_3Q8RU[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "FFTWaterQueryResult": {
     "ClassSize": "0x1c",
@@ -340,13 +390,13 @@
       },
       {
         "Name": "Choppiness",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x4"
       },
       {
         "Name": "Normal",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
@@ -355,6 +405,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x3_GL9GS[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x19"
       }
     ]
   },
@@ -363,7 +419,7 @@
     "Attributes": [
       {
         "Name": "Probes",
-        "Type": "TArray<struct Probes>",
+        "Type": "TArray<struct WaterSplashProbe>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -372,6 +428,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_M29V6[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -379,14 +441,20 @@
     "ClassSize": "0xd8",
     "Attributes": [
       {
+        "Name": "pad0x8_PNNKO[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
         "Name": "ProbeDebugName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "LocalOffset",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x18"
       },
@@ -422,7 +490,7 @@
       },
       {
         "Name": "LocalOffsetAdjustment",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x38"
       },
@@ -445,7 +513,7 @@
         "Offset": "0x49"
       },
       {
-        "Name": "pad0x2_L68OI[0x2]",
+        "Name": "pad0x2_Y90WJ[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x4a"
@@ -455,6 +523,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4c"
+      },
+      {
+        "Name": "pad0x88_1KM16[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x50"
       }
     ]
   },
@@ -462,8 +536,14 @@
     "ClassSize": "0x128",
     "Attributes": [
       {
+        "Name": "pad0x8_6I67B[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Probe",
-        "Type": "Struct WaterSplashProbe",
+        "Type": "struct WaterSplashProbe",
         "Size": "0xd8",
         "Offset": "0x8"
       },
@@ -481,7 +561,7 @@
       },
       {
         "Name": "ParticleSystem",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0xe8"
       },
@@ -511,7 +591,7 @@
       },
       {
         "Name": "VfxSpawnOffset",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xf4"
       },
@@ -522,16 +602,22 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x7_3DPWH[0x7]",
+        "Name": "pad0x7_6KXGR[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x101"
       },
       {
         "Name": "CurrentlyPlayingVFX",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x108"
+      },
+      {
+        "Name": "pad0x18_HBE1I[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x110"
       }
     ]
   },
@@ -540,21 +626,27 @@
     "Attributes": [
       {
         "Name": "SpoutLocatorTransform",
-        "Type": "Struct Transform",
+        "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0x0"
       },
       {
         "Name": "SpoutParticleSystem",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "SplashParticleSystem",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x30_E5OYZ[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x40"
       }
     ]
   },

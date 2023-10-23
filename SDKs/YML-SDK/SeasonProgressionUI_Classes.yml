@@ -9,71 +9,71 @@ SeasonPopupAsset:
   - Name: TierInfos
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<struct TierInfos>
+    Type: TArray<struct SeasonIconPopupAsset>
   - Name: TrialInfos
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<struct TrialInfos>
+    Type: TArray<struct SeasonGoalPopupAsset>
   - Name: DeedInfos
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<struct DeedInfos>
+    Type: TArray<struct SeasonGoalPopupAsset>
   - Name: RenownActionInfos
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<struct RenownActionInfos>
+    Type: TArray<struct SeasonGoalPopupAsset>
   - Name: SeasonInfo
     Offset: '0x70'
     Size: '0x68'
-    Type: Struct SeasonIconPopupAsset
+    Type: struct SeasonIconPopupAsset
   - Name: LevelIncreaseInfo
     Offset: '0xd8'
     Size: '0x68'
-    Type: Struct SeasonIconPopupAsset
+    Type: struct SeasonIconPopupAsset
   - Name: RewardInfo
     Offset: '0x140'
     Size: '0x68'
-    Type: Struct SeasonIconPopupAsset
+    Type: struct SeasonIconPopupAsset
   - Name: MultipleRewardsInfo
     Offset: '0x1a8'
     Size: '0x68'
-    Type: Struct SeasonIconPopupAsset
+    Type: struct SeasonIconPopupAsset
   - Name: BackgroundImage
     Offset: '0x210'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: DefaultToastSfxEventName
     Offset: '0x220'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: DefaultToastEventName
     Offset: '0x230'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: DefaultToastSwitchName
     Offset: '0x240'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: DefaultToastSwitchValue
     Offset: '0x250'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: DefaultChatSfxEventName
     Offset: '0x260'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: DefaultChatEventName
     Offset: '0x270'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: DefaultChatSwitchName
     Offset: '0x280'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: DefaultChatSwitchValue
     Offset: '0x290'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x278'
   FullSize: '0x2a0'
   InheritedSize: '0x28'
@@ -90,19 +90,19 @@ SeasonPopupListAsset:
   Super: DataAsset
 SeasonProgressionUIComponent:
   Attributes:
-  - Name: pad0x20_00FVP[0x20]
+  - Name: pad0x20_C5MZ3[0x20]
     Offset: '0xc8'
     Size: '0x20'
     Type: char
   - Name: DetailsNavigationDesc
     Offset: '0xe8'
     Size: '0x10'
-    Type: TArray<struct DetailsNavigationDesc>
+    Type: TArray<struct EnableMoreButtonEvent>
   - Name: NextReceivedEventsTelemetryData
     Offset: '0xf8'
     Size: '0x18'
-    Type: Struct SeasonProgressionUITelemetryFragment
-  - Name: pad0xb0_O9WCL[0xb0]
+    Type: struct SeasonProgressionUITelemetryFragment
+  - Name: pad0xb0_P2EME[0xb0]
     Offset: '0x110'
     Size: '0xb0'
     Type: char
@@ -118,15 +118,15 @@ SeasonProgressionUIInterface:
   Super: Interface
 SeasonProgressionUIService:
   Attributes:
-  - Name: pad0x30_P1J77[0x30]
+  - Name: pad0x30_XXLW1[0x30]
     Offset: '0x3c8'
     Size: '0x30'
     Type: char
   - Name: SeasonPopupListAsset
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class SeasonPopupListAsset*
-  - Name: pad0x1a8_QKZ23[0x1a8]
+    Type: class SeasonPopupListAsset*
+  - Name: pad0x1a8_L8IOM[0x1a8]
     Offset: '0x400'
     Size: '0x1a8'
     Type: char
@@ -145,7 +145,7 @@ SeasonProgressionUISettings:
   - Name: SeasonPopupListAsset
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

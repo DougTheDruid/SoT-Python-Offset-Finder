@@ -5,15 +5,15 @@ BP_CT_TutorialProgress_C:
   - Name: UberGraphFrame
     Offset: '0x28'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
-  - Name: pad0x226_UNG2X[0x226]
+    Type: struct PointerToUberGraphFrame
+  - Name: pad0x260_TLGQM[0x260]
     Offset: '0x30'
-    Size: '0x226'
+    Size: '0x260'
     Type: char
   - Name: AthenaPlayerController
     Offset: '0x30'
     Size: '0x8'
-    Type: Class AthenaPlayerController*
+    Type: class AthenaPlayerController*
   - Name: TutorialVoyageProgressTrackers
     Offset: '0x38'
     Size: '0x10'
@@ -21,23 +21,23 @@ BP_CT_TutorialProgress_C:
   - Name: XMarksTutorialProgress
     Offset: '0x48'
     Size: '0x8'
-    Type: BlueprintGeneratedClass BP_CT_VoyageProgress_C*
+    Type: blueprintgeneratedclass BP_CT_VoyageProgress_C*
   - Name: RiddleTutorialProgress
     Offset: '0x50'
     Size: '0x8'
-    Type: BlueprintGeneratedClass BP_CT_VoyageProgress_C*
+    Type: blueprintgeneratedclass BP_CT_VoyageProgress_C*
   - Name: FaunaTutorialProgress
     Offset: '0x58'
     Size: '0x8'
-    Type: BlueprintGeneratedClass BP_CT_VoyageProgress_C*
+    Type: blueprintgeneratedclass BP_CT_VoyageProgress_C*
   - Name: CargoTutorialProgress
     Offset: '0x60'
     Size: '0x8'
-    Type: BlueprintGeneratedClass BP_CT_VoyageProgress_C*
+    Type: blueprintgeneratedclass BP_CT_VoyageProgress_C*
   - Name: BootyTutorialProgress
     Offset: '0x68'
     Size: '0x8'
-    Type: BlueprintGeneratedClass BP_CT_VoyageProgress_C*
+    Type: blueprintgeneratedclass BP_CT_VoyageProgress_C*
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'

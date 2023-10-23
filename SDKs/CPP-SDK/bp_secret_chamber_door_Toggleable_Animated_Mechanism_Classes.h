@@ -10,13 +10,13 @@ namespace DougsSDKDumper
 class bp_secret_chamber_door_Toggleable_Animated_Mechanism_C: public ToggleAnimatedMechanismAction
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x570(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x578(0x8)
-	Class ArrowComponent*                                        None;                                              // 0x580(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x588(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x590(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x598(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x5a0(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x570(0x8)
+	class ParticleSystemComponent*                               DoorDust;                                          // 0x578(0x8)
+	class ArrowComponent*                                        Arrow;                                             // 0x580(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x588(0x8)
+	class StaticMeshComponent*                                   sod_bld_wall_broken_04_a;                          // 0x590(0x8)
+	class StaticMeshComponent*                                   sod_bld_wall_sml_03_b;                             // 0x598(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent02;                             // 0x5a0(0x8)
 };
 
 

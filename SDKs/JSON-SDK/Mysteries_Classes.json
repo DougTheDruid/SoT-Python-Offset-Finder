@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "Entries",
-        "Type": "TArray<struct Entries>",
+        "Type": "TArray<struct AbandonedNoteWeightedTextEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -20,25 +20,25 @@
     "ClassSize": "0xe0",
     "Attributes": [
       {
-        "Name": "pad0x40_PJG9B[0x40]",
+        "Name": "pad0x40_GHCRW[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0xc8"
       },
       {
         "Name": "ClueText",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x108"
       },
       {
         "Name": "TitleText",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x140"
       },
       {
-        "Name": "pad0x30_DANHK[0x30]",
+        "Name": "pad0x30_QG6SG[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x178"
@@ -53,25 +53,25 @@
     "Attributes": [
       {
         "Name": "InteractableComponent",
-        "Type": "Class InteractableComponent*",
+        "Type": "class InteractableComponent*",
         "Size": "0x8",
         "Offset": "0x468"
       },
       {
         "Name": "StaticMeshComponent",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x470"
       },
       {
         "Name": "Reward",
-        "Type": "Struct RewardId",
+        "Type": "struct RewardId",
         "Size": "0x8",
         "Offset": "0x478"
       },
       {
         "Name": "RewardEntitlement",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x480"
       },
@@ -89,12 +89,12 @@
       },
       {
         "Name": "DisplayName",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x490"
       },
       {
-        "Name": "pad0x20_V8BGA[0x20]",
+        "Name": "pad0x20_IGUT1[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x4c8"
@@ -109,12 +109,12 @@
     "Attributes": [
       {
         "Name": "PopUpDesc",
-        "Type": "Class PopUpMessageDesc*",
+        "Type": "class PopUpMessageDesc*",
         "Size": "0x8",
         "Offset": "0x148"
       },
       {
-        "Name": "pad0x18_HNO2D[0x18]",
+        "Name": "pad0x18_XNIOQ[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x150"
@@ -128,32 +128,32 @@
     "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "pad0x8_XB7N2[0x8]",
+        "Name": "pad0x8_8GWS0[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "Root",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "PuzzleLocks",
-        "Type": "TArray<struct PuzzleLocks>",
+        "Type": "TArray<struct SirenPuzzleLockState>",
         "Size": "0x10",
         "Offset": "0x3d8"
       },
       {
         "Name": "UnlockCompleteReactions",
-        "Type": "TArray<struct UnlockCompleteReactions>",
+        "Type": "TArray<struct LandmarkReactionKeyFrame>",
         "Size": "0x10",
         "Offset": "0x3e8"
       },
       {
         "Name": "ResetLocksReactions",
-        "Type": "TArray<struct ResetLocksReactions>",
+        "Type": "TArray<struct LandmarkReactionKeyFrame>",
         "Size": "0x10",
         "Offset": "0x3f8"
       },
@@ -164,7 +164,7 @@
         "Offset": "0x408"
       },
       {
-        "Name": "pad0xa0_XOMS6[0xa0]",
+        "Name": "pad0xa0_46H2G[0xa0]",
         "Type": "char",
         "Size": "0xa0",
         "Offset": "0x418"

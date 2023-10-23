@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class CatalogOfferLicence: public Object
 {
 public:
-	Struct Guid                                                  LicenceId;                                         // 0x28(0x10)
+	struct Guid                                                  LicenceId;                                         // 0x28(0x10)
 };
 
 

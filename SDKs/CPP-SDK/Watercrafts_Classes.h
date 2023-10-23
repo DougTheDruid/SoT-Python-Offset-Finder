@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 class CheckRowboatLiveriesStatCondition: public StatCondition
 {
 public:
+	char                                                         pad0x20_9JSSU[0x20];                               // 0x28(0x20)
 };
 
 
@@ -17,6 +18,7 @@ public:
 class CheckRowboatTypeStatCondition: public StatCondition
 {
 public:
+	char                                                         pad0x20_BA8HT[0x20];                               // 0x28(0x20)
 };
 
 
@@ -31,9 +33,9 @@ public:
 class FakeShip: public Actor
 {
 public:
-	char                                                         pad0x8_V3CQL[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_YR1JS[0x8];                                 // 0x3c8(0x8)
 	TArray<class ItemProxy*>                                     AttachedItems;                                     // 0x3d0(0x10)
-	char                                                         pad0xf8_L63SG[0xf8];                               // 0x3e0(0xf8)
+	char                                                         pad0xf8_MBZ3E[0xf8];                               // 0x3e0(0xf8)
 };
 
 
@@ -48,10 +50,10 @@ public:
 class ItemProxyWatercraftTrackerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_6RFT8[0x8];                                 // 0xc8(0x8)
-	Class ItemProxyWatercraftTrackerComponentDataAsset*          WatercraftTrackingData;                            // 0xd0(0x8)
-	Class Actor*                                                 CurrentWatercraft;                                 // 0xd8(0x8)
-	char                                                         pad0x80_QPEU1[0x80];                               // 0xe0(0x80)
+	char                                                         pad0x8_HUTTD[0x8];                                 // 0xc8(0x8)
+	class ItemProxyWatercraftTrackerComponentDataAsset*          WatercraftTrackingData;                            // 0xd0(0x8)
+	class Actor*                                                 CurrentWatercraft;                                 // 0xd8(0x8)
+	char                                                         pad0x80_LU3OL[0x80];                               // 0xe0(0x80)
 };
 
 
@@ -67,9 +69,9 @@ public:
 class RowboatAudioComponent: public SceneComponent
 {
 public:
-	Class RowboatAudioComponentParams*                           Params;                                            // 0x2e0(0x8)
-	Class Rowboat*                                               ParentRowboat;                                     // 0x2e8(0x8)
-	char                                                         pad0x1d0_TR5QM[0x1d0];                             // 0x2f0(0x1d0)
+	class RowboatAudioComponentParams*                           Params;                                            // 0x2e0(0x8)
+	class Rowboat*                                               ParentRowboat;                                     // 0x2e8(0x8)
+	char                                                         pad0x1d0_4HADD[0x1d0];                             // 0x2f0(0x1d0)
 };
 
 
@@ -77,33 +79,33 @@ public:
 class RowboatAudioComponentParams: public DataAsset
 {
 public:
-	Class WwiseObjectPoolWrapper*                                RowboatObjectPool;                                 // 0x28(0x8)
-	Class WwiseEvent*                                            RowboatWakeStart;                                  // 0x30(0x8)
-	Class WwiseEvent*                                            RowboatWakeStop;                                   // 0x38(0x8)
+	class WwiseObjectPoolWrapper*                                RowboatObjectPool;                                 // 0x28(0x8)
+	class WwiseEvent*                                            RowboatWakeStart;                                  // 0x30(0x8)
+	class WwiseEvent*                                            RowboatWakeStop;                                   // 0x38(0x8)
 	struct FName                                                 RowboatSpeedRtpcName;                              // 0x40(0x8)
 	float                                                        RowboatMaxSpeedRtpc;                               // 0x48(0x4)
-	char                                                         pad0x4_M0WCK[0x4];                                 // 0x4c(0x4)
-	Class WwiseEvent*                                            RowboatLaunch;                                     // 0x50(0x8)
-	Class WwiseEvent*                                            RowboatImpactAndScrapeStart;                       // 0x58(0x8)
-	Class WwiseEvent*                                            RowboatImpactAndScrapeStop;                        // 0x60(0x8)
-	Class WwiseEvent*                                            RowboatStrainStart;                                // 0x68(0x8)
-	Class WwiseEvent*                                            RowboatStrainStop;                                 // 0x70(0x8)
+	char                                                         pad0x4_D6SXD[0x4];                                 // 0x4c(0x4)
+	class WwiseEvent*                                            RowboatLaunch;                                     // 0x50(0x8)
+	class WwiseEvent*                                            RowboatImpactAndScrapeStart;                       // 0x58(0x8)
+	class WwiseEvent*                                            RowboatImpactAndScrapeStop;                        // 0x60(0x8)
+	class WwiseEvent*                                            RowboatStrainStart;                                // 0x68(0x8)
+	class WwiseEvent*                                            RowboatStrainStop;                                 // 0x70(0x8)
 	struct FName                                                 RowboatStrainRtpcName;                             // 0x78(0x8)
 	float                                                        RowboatMaxStrainRtpc;                              // 0x80(0x4)
-	char                                                         pad0x4_8EK5D[0x4];                                 // 0x84(0x4)
-	Class WwiseEvent*                                            RowboatTakenDamage;                                // 0x88(0x8)
+	char                                                         pad0x4_OCOEK[0x4];                                 // 0x84(0x4)
+	class WwiseEvent*                                            RowboatTakenDamage;                                // 0x88(0x8)
 	float                                                        DamageAmountRequiredForNoiseToPlay;                // 0x90(0x4)
-	char                                                         pad0x4_Y45M0[0x4];                                 // 0x94(0x4)
-	Class WwiseEvent*                                            RowboatAttach;                                     // 0x98(0x8)
-	Class WwiseEvent*                                            RowboatDetach;                                     // 0xa0(0x8)
-	Class WwiseObjectPoolWrapper*                                WwiseOarEmitterPool;                               // 0xa8(0x8)
-	Class WwiseEvent*                                            PlayOarInOarLayer;                                 // 0xb0(0x8)
-	Class WwiseEvent*                                            PlayOarInWaterLayer;                               // 0xb8(0x8)
-	Class WwiseEvent*                                            PlayOarOutOarLayer;                                // 0xc0(0x8)
-	Class WwiseEvent*                                            PlayOarOutWaterLayer;                              // 0xc8(0x8)
-	Class WwiseEvent*                                            PlayOarBrakingLoop;                                // 0xd0(0x8)
-	Class WwiseEvent*                                            StopOarBrakingLoop;                                // 0xd8(0x8)
-	Class WwiseEvent*                                            PlayOarPullFinished;                               // 0xe0(0x8)
+	char                                                         pad0x4_X6U86[0x4];                                 // 0x94(0x4)
+	class WwiseEvent*                                            RowboatAttach;                                     // 0x98(0x8)
+	class WwiseEvent*                                            RowboatDetach;                                     // 0xa0(0x8)
+	class WwiseObjectPoolWrapper*                                WwiseOarEmitterPool;                               // 0xa8(0x8)
+	class WwiseEvent*                                            PlayOarInOarLayer;                                 // 0xb0(0x8)
+	class WwiseEvent*                                            PlayOarInWaterLayer;                               // 0xb8(0x8)
+	class WwiseEvent*                                            PlayOarOutOarLayer;                                // 0xc0(0x8)
+	class WwiseEvent*                                            PlayOarOutWaterLayer;                              // 0xc8(0x8)
+	class WwiseEvent*                                            PlayOarBrakingLoop;                                // 0xd0(0x8)
+	class WwiseEvent*                                            StopOarBrakingLoop;                                // 0xd8(0x8)
+	class WwiseEvent*                                            PlayOarPullFinished;                               // 0xe0(0x8)
 };
 
 
@@ -118,9 +120,9 @@ public:
 class RowboatCustomizationLoadoutComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x28_81YX5[0x28];                               // 0xc8(0x28)
-	class                                                        EquippedCustomization;                             // 0xf0(0x8)
-	char                                                         pad0x18_VUGG8[0x18];                               // 0xf8(0x18)
+	char                                                         pad0x28_FO8X6[0x28];                               // 0xc8(0x28)
+	class UClass*                                                EquippedCustomization;                             // 0xf0(0x8)
+	char                                                         pad0x18_SHWLU[0x18];                               // 0xf8(0x18)
 };
 
 
@@ -128,7 +130,7 @@ public:
 class RowboatDescDataAsset: public DataAsset
 {
 public:
-	Struct PartDesc                                              PartDesc;                                          // 0x28(0x20)
+	struct PartDesc                                              PartDesc;                                          // 0x28(0x20)
 };
 
 
@@ -150,7 +152,7 @@ public:
 class RowboatEntitlementDesc: public EntitlementDesc
 {
 public:
-	Struct StringClassReference                                  Rowboat;                                           // 0xc8(0x10)
+	struct StringClassReference                                  Rowboat;                                           // 0xc8(0x10)
 };
 
 
@@ -172,7 +174,7 @@ public:
 class RowboatLiveryDesc: public EntitlementDesc
 {
 public:
-	Struct StringAssetReference                                  RowboatDescDataAsset;                              // 0xc8(0x10)
+	struct StringAssetReference                                  RowboatDescDataAsset;                              // 0xc8(0x10)
 };
 
 
@@ -187,8 +189,8 @@ public:
 class RowboatLiveryPickerDataAsset: public DataAsset
 {
 public:
-	TArray<struct LiveriesInThisGroup>                           LiveriesInThisGroup;                               // 0x28(0x10)
-	TArray<struct SubgroupsInPriorityOrder>                      SubgroupsInPriorityOrder;                          // 0x38(0x10)
+	TArray<struct RowboatLiveryByWeight>                         LiveriesInThisGroup;                               // 0x28(0x10)
+	TArray<struct RowboatLiveryPickerDataAssetConditions>        SubgroupsInPriorityOrder;                          // 0x38(0x10)
 };
 
 
@@ -196,7 +198,7 @@ public:
 class DataAssetRowboatLiveryPicker: public RowboatLiveryPicker
 {
 public:
-	Class RowboatLiveryPickerDataAsset*                          DataAsset;                                         // 0x28(0x8)
+	class RowboatLiveryPickerDataAsset*                          DataAsset;                                         // 0x28(0x8)
 };
 
 
@@ -204,6 +206,7 @@ public:
 class FixedRowboatLiveryPicker: public RowboatLiveryPicker
 {
 public:
+	char                                                         pad0x20_1UT6Z[0x20];                               // 0x28(0x20)
 };
 
 
@@ -267,7 +270,7 @@ public:
 class ScrapeableDamageDataAsset: public DataAsset
 {
 public:
-	TArray<struct DamageSpeedParams>                             DamageSpeedParams;                                 // 0x28(0x10)
+	TArray<struct ScrapeableDamageSpeedEntry>                    DamageSpeedParams;                                 // 0x28(0x10)
 };
 
 
@@ -282,13 +285,13 @@ public:
 class ScrapeableComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_X88Z8[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_WU9I9[0x8];                                 // 0xc8(0x8)
 	float                                                        MinIntervalBetweenScrapeDamage;                    // 0xd0(0x4)
-	char                                                         pad0x4_RK7NE[0x4];                                 // 0xd4(0x4)
-	Class ScrapeableDamageDataAsset*                             ScrapeDamageSettings;                              // 0xd8(0x8)
-	Struct Vector                                                SafeZoneCenterDirection;                           // 0xe0(0xc)
+	char                                                         pad0x4_5KYJJ[0x4];                                 // 0xd4(0x4)
+	class ScrapeableDamageDataAsset*                             ScrapeDamageSettings;                              // 0xd8(0x8)
+	struct Vector                                                SafeZoneCenterDirection;                           // 0xe0(0xc)
 	float                                                        SafeZoneMaximumAngle;                              // 0xec(0x4)
-	class                                                        ScrapeDamagerType;                                 // 0xf0(0x8)
+	class UClass*                                                ScrapeDamagerType;                                 // 0xf0(0x8)
 };
 
 
@@ -296,88 +299,90 @@ public:
 class Watercraft: public Actor
 {
 public:
-	char                                                         pad0x38_YWHAO[0x38];                               // 0x3c8(0x38)
-	Class BuoyancyComponent*                                     BuoyancyComponent;                                 // 0x400(0x8)
-	Struct WatercraftRolloverCorrector                           RolloverCorrector;                                 // 0x408(0xc)
-	char                                                         pad0x4_XUG4T[0x4];                                 // 0x414(0x4)
-	Class ShipNosediveBrake*                                     NosediveBrake;                                     // 0x418(0x8)
-	Class BowSplashContainer*                                    BowSplashContainer;                                // 0x420(0x8)
-	Class StaticMeshComponent*                                   CollisionMesh;                                     // 0x428(0x8)
-	Class StaticMeshComponent*                                   CraftMesh;                                         // 0x430(0x8)
-	Class BoxComponent*                                          OverlapHits;                                       // 0x438(0x8)
-	Class StaticMeshComponent*                                   WaterOcclusionVolume;                              // 0x440(0x8)
-	Class WaterInteractionComponent*                             WaterInteractionComponent;                         // 0x448(0x8)
+	char                                                         pad0x38_ZLUCM[0x38];                               // 0x3c8(0x38)
+	class BuoyancyComponent*                                     BuoyancyComponent;                                 // 0x400(0x8)
+	struct WatercraftRolloverCorrector                           RolloverCorrector;                                 // 0x408(0xc)
+	char                                                         pad0x4_D93DK[0x4];                                 // 0x414(0x4)
+	class ShipNosediveBrake*                                     NosediveBrake;                                     // 0x418(0x8)
+	class BowSplashContainer*                                    BowSplashContainer;                                // 0x420(0x8)
+	class StaticMeshComponent*                                   CollisionMesh;                                     // 0x428(0x8)
+	class StaticMeshComponent*                                   CraftMesh;                                         // 0x430(0x8)
+	class BoxComponent*                                          OverlapHits;                                       // 0x438(0x8)
+	class StaticMeshComponent*                                   WaterOcclusionVolume;                              // 0x440(0x8)
+	class WaterInteractionComponent*                             WaterInteractionComponent;                         // 0x448(0x8)
 	struct FName                                                 ClientConvexHullCollisionProfile;                  // 0x450(0x8)
-	Struct NetTimeStampCalculator                                MovementTimeStamp;                                 // 0x458(0x70)
-	Struct RigidBodyErrorCorrection                              PhysicsErrorCorrection;                            // 0x4c8(0x1c)
-	char                                                         pad0x3c_WDJ8D[0x3c];                               // 0x4e4(0x3c)
-	Struct BuoyancySampleMovement                                BuoyancySampleMovement;                            // 0x520(0x68)
-	Class CurveFloat*                                            SpeedToChoppinessScalarCurve;                      // 0x588(0x8)
+	struct NetTimeStampCalculator                                MovementTimeStamp;                                 // 0x458(0x70)
+	struct RigidBodyErrorCorrection                              PhysicsErrorCorrection;                            // 0x4c8(0x1c)
+	char                                                         pad0x3c_W2VVA[0x3c];                               // 0x4e4(0x3c)
+	struct BuoyancySampleMovement                                BuoyancySampleMovement;                            // 0x520(0x68)
+	class CurveFloat*                                            SpeedToChoppinessScalarCurve;                      // 0x588(0x8)
 	float                                                        DeepWaterSubmersionThreshold;                      // 0x590(0x4)
 	float                                                        BuoyancyChoppinessWhileSinking;                    // 0x594(0x4)
 	bool                                                         IsCritical;                                        // 0x598(0x1)
 	bool                                                         RigidBodyAwake;                                    // 0x599(0x1)
 	bool                                                         InContactWithLand;                                 // 0x59a(0x1)
 	bool                                                         InDeepWater;                                       // 0x59b(0x1)
-	char                                                         pad0x4_J7FOR[0x4];                                 // 0x59c(0x4)
-	char                                                         pad0x190_Z4U6G[0x190];                             // 0x5a0(0x190)
+	char                                                         pad0x4_QNF6O[0x4];                                 // 0x59c(0x4)
+	char                                                         pad0x190_GB337[0x190];                             // 0x5a0(0x190)
 };
 
 
-// Size 0x378 (Full Size[0xaa8] - InheritedSize[0x730]
+// Size 0x388 (Full Size[0xab8] - InheritedSize[0x730]
 class Rowboat: public Watercraft
 {
 public:
-	char                                                         pad0x48_OYAZV[0x48];                               // 0x730(0x48)
-	Class ChildActorComponent*                                   LeftSideClamberSpot;                               // 0x778(0x8)
-	Class ChildActorComponent*                                   RightSideClamberSpot;                              // 0x780(0x8)
-	Class ChildActorComponent*                                   ForceSpot;                                         // 0x788(0x8)
-	Class ChildActorComponent*                                   Lantern;                                           // 0x790(0x8)
-	Class ChildActorComponent*                                   RowingSeat;                                        // 0x798(0x8)
-	Class ChildActorComponent*                                   StorageSeat;                                       // 0x7a0(0x8)
-	Class RowboatCustomizationLoadoutComponent*                  CustomizationLoadoutComponent;                     // 0x7a8(0x8)
-	Class ShipLiveryComponent*                                   LiveryComponent;                                   // 0x7b0(0x8)
-	Class ReplicatedShipPartCustomizationComponent*              CustomizationComponent;                            // 0x7b8(0x8)
-	Class RepairableComponent*                                   RepairableComponent;                               // 0x7c0(0x8)
-	Struct Vector                                                WaterExclusionOffset;                              // 0x7c8(0xc)
-	char                                                         pad0x4_WDIOH[0x4];                                 // 0x7d4(0x4)
-	Class TetherCustomisationComponent*                          TetherCustomisationComponent;                      // 0x7d8(0x8)
-	Class HealthComponent*                                       HealthComponent;                                   // 0x7e0(0x8)
-	Class ActorDamageableComponent*                              ActorDamageableComponent;                          // 0x7e8(0x8)
-	Class RammableComponent*                                     RammableComponent;                                 // 0x7f0(0x8)
-	Class ScrapeableComponent*                                   ScrapeableComponent;                               // 0x7f8(0x8)
-	Class RowboatAudioComponent*                                 RowboatAudio;                                      // 0x800(0x8)
-	Class BaseHullDragDynamicsDesc*                              HullDragDynamicsDesc;                              // 0x808(0x8)
-	Class BowSplashContainer*                                    OarSplashContainer;                                // 0x810(0x8)
-	Class MountableComponent*                                    MountableComponent;                                // 0x818(0x8)
-	Class ActorActivationComponent*                              ActorActivationComponent;                          // 0x820(0x8)
-	Class CurveFloat*                                            LinearDampingOverTimeWhileBeachedScalarCurve;      // 0x828(0x8)
-	Class CurveFloat*                                            AngularDampingOverTimeWhileBeachedScalarCurve;     // 0x830(0x8)
-	Struct RowboatDamageEffectData                               DamageEffectData;                                  // 0x838(0x18)
-	Struct RowboatStrainDamageData                               StrainDamageData;                                  // 0x850(0x20)
-	TArray<class ChildActorComponent*>                           AlwaysEnabledInteractables;                        // 0x870(0x10)
-	Class ShroudBreakerTrackerComponent*                         ShroudBreakerTrackerComponent;                     // 0x880(0x8)
-	bool                                                         IsBeingLaunched;                                   // 0x888(0x1)
-	bool                                                         IsSinking;                                         // 0x889(0x1)
-	char                                                         pad0x2_Y596T[0x2];                                 // 0x88a(0x2)
-	float                                                        MaxPushingAngle;                                   // 0x88c(0x4)
-	float                                                        CurrentStrainAmount;                               // 0x890(0x4)
-	bool                                                         IsDocked;                                          // 0x894(0x1)
-	char                                                         pad0x1_61F06[0x1];                                 // 0x895(0x1)
-	byte                                                         CoverCollisionChannel;                             // 0x896(0x1)
-	char                                                         pad0x1_627QZ[0x1];                                 // 0x897(0x1)
-	float                                                        UnderCoverCheckInterval;                           // 0x898(0x4)
-	float                                                        UnderCoverHeight;                                  // 0x89c(0x4)
-	TArray<struct RelativeUnderCoverProbeRoots>                  RelativeUnderCoverProbeRoots;                      // 0x8a0(0x10)
-	byte                                                         TrackedActorType;                                  // 0x8b0(0x1)
-	char                                                         pad0x3_TUVWU[0x3];                                 // 0x8b1(0x3)
-	float                                                        LightDamagedRepairTime;                            // 0x8b4(0x4)
-	float                                                        ModerateDamagedRepairTime;                         // 0x8b8(0x4)
-	float                                                        HeavyDamagedRepairTime;                            // 0x8bc(0x4)
-	float                                                        LightDamagedHealthThreshold;                       // 0x8c0(0x4)
-	float                                                        ModerateDamagedHealthThreshold;                    // 0x8c4(0x4)
-	float                                                        HeavyDamagedHealthThreshold;                       // 0x8c8(0x4)
-	char                                                         pad0x1dc_ZCTJQ[0x1dc];                             // 0x8cc(0x1dc)
+	char                                                         pad0x48_OAUEP[0x48];                               // 0x730(0x48)
+	class ChildActorComponent*                                   LeftSideClamberSpot;                               // 0x778(0x8)
+	class ChildActorComponent*                                   RightSideClamberSpot;                              // 0x780(0x8)
+	class ChildActorComponent*                                   ForceSpot;                                         // 0x788(0x8)
+	class ChildActorComponent*                                   Lantern;                                           // 0x790(0x8)
+	class ChildActorComponent*                                   RowingSeat;                                        // 0x798(0x8)
+	class ChildActorComponent*                                   StorageSeat;                                       // 0x7a0(0x8)
+	class RowboatCustomizationLoadoutComponent*                  CustomizationLoadoutComponent;                     // 0x7a8(0x8)
+	class ShipLiveryComponent*                                   LiveryComponent;                                   // 0x7b0(0x8)
+	class ReplicatedShipPartCustomizationComponent*              CustomizationComponent;                            // 0x7b8(0x8)
+	class RepairableComponent*                                   RepairableComponent;                               // 0x7c0(0x8)
+	struct Vector                                                WaterExclusionOffset;                              // 0x7c8(0xc)
+	struct CollisionProfileName                                  OverrideMountedCollisionProfileName;               // 0x7d4(0x8)
+	char                                                         pad0x4_6JF7S[0x4];                                 // 0x7dc(0x4)
+	class TetherCustomisationComponent*                          TetherCustomisationComponent;                      // 0x7e0(0x8)
+	class HealthComponent*                                       HealthComponent;                                   // 0x7e8(0x8)
+	class ActorDamageableComponent*                              ActorDamageableComponent;                          // 0x7f0(0x8)
+	class RammableComponent*                                     RammableComponent;                                 // 0x7f8(0x8)
+	class ScrapeableComponent*                                   ScrapeableComponent;                               // 0x800(0x8)
+	class RowboatAudioComponent*                                 RowboatAudio;                                      // 0x808(0x8)
+	class BaseHullDragDynamicsDesc*                              HullDragDynamicsDesc;                              // 0x810(0x8)
+	class BowSplashContainer*                                    OarSplashContainer;                                // 0x818(0x8)
+	class MountableComponent*                                    MountableComponent;                                // 0x820(0x8)
+	class ActorActivationComponent*                              ActorActivationComponent;                          // 0x828(0x8)
+	class CurveFloat*                                            LinearDampingOverTimeWhileBeachedScalarCurve;      // 0x830(0x8)
+	class CurveFloat*                                            AngularDampingOverTimeWhileBeachedScalarCurve;     // 0x838(0x8)
+	struct RowboatDamageEffectData                               DamageEffectData;                                  // 0x840(0x18)
+	struct RowboatStrainDamageData                               StrainDamageData;                                  // 0x858(0x20)
+	TArray<class ChildActorComponent*>                           AlwaysEnabledInteractables;                        // 0x878(0x10)
+	class ShroudBreakerTrackerComponent*                         ShroudBreakerTrackerComponent;                     // 0x888(0x8)
+	bool                                                         IsBeingLaunched;                                   // 0x890(0x1)
+	bool                                                         IsSinking;                                         // 0x891(0x1)
+	char                                                         pad0x2_2UGZJ[0x2];                                 // 0x892(0x2)
+	float                                                        MaxPushingAngle;                                   // 0x894(0x4)
+	float                                                        CurrentStrainAmount;                               // 0x898(0x4)
+	bool                                                         IsDocked;                                          // 0x89c(0x1)
+	char                                                         pad0x1_E46WN[0x1];                                 // 0x89d(0x1)
+	byte                                                         CoverCollisionChannel;                             // 0x89e(0x1)
+	char                                                         pad0x1_QCSB1[0x1];                                 // 0x89f(0x1)
+	float                                                        UnderCoverCheckInterval;                           // 0x8a0(0x4)
+	float                                                        UnderCoverHeight;                                  // 0x8a4(0x4)
+	TArray<struct Vector>                                        RelativeUnderCoverProbeRoots;                      // 0x8a8(0x10)
+	byte                                                         TrackedActorType;                                  // 0x8b8(0x1)
+	char                                                         pad0x3_34UCC[0x3];                                 // 0x8b9(0x3)
+	float                                                        LightDamagedRepairTime;                            // 0x8bc(0x4)
+	float                                                        ModerateDamagedRepairTime;                         // 0x8c0(0x4)
+	float                                                        HeavyDamagedRepairTime;                            // 0x8c4(0x4)
+	float                                                        LightDamagedHealthThreshold;                       // 0x8c8(0x4)
+	float                                                        ModerateDamagedHealthThreshold;                    // 0x8cc(0x4)
+	float                                                        HeavyDamagedHealthThreshold;                       // 0x8d0(0x4)
+	struct FName                                                 PremountCollisionProfileName;                      // 0x8d4(0x8)
+	char                                                         pad0x1dc_D5F9H[0x1dc];                             // 0x8dc(0x1dc)
 };
 
 
@@ -407,7 +412,7 @@ public:
 class RowingInputComponent: public LookAtOffsetInputComponent
 {
 public:
-	Class RowingSeat*                                            TargetOars;                                        // 0x2a0(0x8)
+	class RowingSeat*                                            TargetOars;                                        // 0x2a0(0x8)
 };
 
 
@@ -415,9 +420,9 @@ public:
 class StorageSeat: public Seat
 {
 public:
-	class                                                        StorageInteractionInput;                           // 0x680(0x8)
-	Class StorageContainerComponent*                             StorageContainerComponent;                         // 0x688(0x8)
-	char                                                         pad0x20_IEI8Y[0x20];                               // 0x690(0x20)
+	class UClass*                                                StorageInteractionInput;                           // 0x680(0x8)
+	class StorageContainerComponent*                             StorageContainerComponent;                         // 0x688(0x8)
+	char                                                         pad0x20_UXPI1[0x20];                               // 0x690(0x20)
 };
 
 
@@ -432,6 +437,7 @@ public:
 class TaleQuestWatercraftService: public TaleQuestService
 {
 public:
+	char                                                         pad0x28_51G4M[0x28];                               // 0x60(0x28)
 };
 
 
@@ -446,7 +452,7 @@ public:
 class TaleQuestSinkWatercraftStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableWatercraft                               Watercraft;                                        // 0x80(0x30)
+	struct QuestVariableWatercraft                               Watercraft;                                        // 0x80(0x30)
 };
 
 
@@ -461,8 +467,8 @@ public:
 class TaleQuestSpawnWatercraftStepDesc: public TaleQuestStepDesc
 {
 public:
-	Struct QuestVariableTransform                                SpawnLocation;                                     // 0x80(0x38)
-	Struct QuestVariableWatercraft                               Watercraft;                                        // 0xf8(0x30)
+	struct QuestVariableTransform                                SpawnLocation;                                     // 0x80(0x38)
+	struct QuestVariableWatercraft                               Watercraft;                                        // 0xf8(0x30)
 };
 
 
@@ -491,6 +497,7 @@ public:
 class WatercraftService: public Actor
 {
 public:
+	char                                                         pad0x8_WP5ZG[0x8];                                 // 0x3c8(0x8)
 };
 
 
@@ -498,10 +505,10 @@ public:
 class WatercraftSpawnData: public ItemSpawnData
 {
 public:
-	char                                                         pad0x20_HPTAX[0x20];                               // 0x58(0x20)
-	Class RowboatLiveryPicker*                                   LiveryPicker;                                      // 0x78(0x8)
+	char                                                         pad0x20_4UPDL[0x20];                               // 0x58(0x20)
+	class RowboatLiveryPicker*                                   LiveryPicker;                                      // 0x78(0x8)
 	float                                                        MinDistanceToNearestWatercraftInMetres;            // 0x80(0x4)
-	char                                                         pad0x4_OCDLW[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_XH5V6[0x4];                                 // 0x84(0x4)
 };
 
 
@@ -509,8 +516,8 @@ public:
 class WatercraftsSettings: public DeveloperSettings
 {
 public:
-	Struct StringAssetReference                                  RowboatTypesEntitlementsMapDataAsset;              // 0x38(0x10)
-	Struct StringAssetReference                                  RowboatLiveryEntitlementsMapDataAsset;             // 0x48(0x10)
+	struct StringAssetReference                                  RowboatTypesEntitlementsMapDataAsset;              // 0x38(0x10)
+	struct StringAssetReference                                  RowboatLiveryEntitlementsMapDataAsset;             // 0x48(0x10)
 };
 
 
@@ -518,7 +525,7 @@ public:
 class WatercraftTrackerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_LEFIK[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_26PCS[0x8];                                 // 0xc8(0x8)
 	TArray<class Actor*>                                         CurrentWatercrafts;                                // 0xd0(0x10)
 };
 

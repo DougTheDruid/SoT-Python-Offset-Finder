@@ -6,20 +6,20 @@
     "ClassSize": "0x220",
     "Attributes": [
       {
-        "Name": "pad0x10_U24UK[0x10]",
+        "Name": "pad0x10_25Z6I[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x440"
       },
       {
         "Name": "IKLeftHandUpdateParams",
-        "Type": "Struct CharacterAnimationIKUpdateParams",
+        "Type": "struct CharacterAnimationIKUpdateParams",
         "Size": "0x40",
         "Offset": "0x450"
       },
       {
         "Name": "IKRightHandUpdateParams",
-        "Type": "Struct CharacterAnimationIKUpdateParams",
+        "Type": "struct CharacterAnimationIKUpdateParams",
         "Size": "0x40",
         "Offset": "0x490"
       },
@@ -37,25 +37,25 @@
       },
       {
         "Name": "RightHandIK",
-        "Type": "Struct LimbIK",
+        "Type": "struct LimbIK",
         "Size": "0x60",
         "Offset": "0x4e0"
       },
       {
         "Name": "LeftHandIK",
-        "Type": "Struct LimbIK",
+        "Type": "struct LimbIK",
         "Size": "0x60",
         "Offset": "0x540"
       },
       {
         "Name": "RightFootIK",
-        "Type": "Struct LimbIK",
+        "Type": "struct LimbIK",
         "Size": "0x60",
         "Offset": "0x5a0"
       },
       {
         "Name": "LeftFootIK",
-        "Type": "Struct LimbIK",
+        "Type": "struct LimbIK",
         "Size": "0x60",
         "Offset": "0x600"
       }
@@ -124,20 +124,20 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "pad0x18_WL3F2[0x18]",
+        "Name": "pad0x18_H3AXL[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x28"
       },
       {
         "Name": "Data",
-        "Type": "TArray<struct Data>",
+        "Type": "TArray<struct AnimationDataStoreEntry>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "LoadingData",
-        "Type": "TArray<struct LoadingData>",
+        "Type": "TArray<struct AnimationDataStoreLoadingEntry>",
         "Size": "0x10",
         "Offset": "0x50"
       }
@@ -151,7 +151,7 @@
     "Attributes": [
       {
         "Name": "AssetRefs",
-        "Type": "TArray<struct AssetRefs>",
+        "Type": "TArray<struct AnimationDataStoreAssetEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -165,7 +165,7 @@
     "Attributes": [
       {
         "Name": "AssetWeakRefs",
-        "Type": "TArray<struct AssetWeakRefs>",
+        "Type": "TArray<struct AnimationDataStoreAssetWeakReferenceEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -185,19 +185,19 @@
     "ClassSize": "0xc8",
     "Attributes": [
       {
-        "Name": "pad0x8_ZYPNS[0x8]",
+        "Name": "pad0x8_WZ8E1[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "AnimationDataStoreWeakReferences",
-        "Type": "Class AnimationDataStoreWeakReferenceAsset*",
+        "Type": "class AnimationDataStoreWeakReferenceAsset*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0xb8_Q0KH8[0xb8]",
+        "Name": "pad0xb8_U6YAU[0xb8]",
         "Type": "char",
         "Size": "0xb8",
         "Offset": "0xd8"
@@ -219,7 +219,7 @@
     "Attributes": [
       {
         "Name": "CustomAnimationMontageIdListings",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -259,7 +259,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_WY18V[0x7]",
+        "Name": "pad0x7_XPMW4[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
@@ -279,14 +279,14 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_Y560D[0x3]",
+        "Name": "pad0x3_290S2[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
       },
       {
         "Name": "PreviewLocationOffset",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x3c"
       },
@@ -297,7 +297,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_QOJXR[0x4]",
+        "Name": "pad0x4_LP09U[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -317,14 +317,14 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_MMZUW[0x7]",
+        "Name": "pad0x7_1ZI42[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
       },
       {
         "Name": "CosmeticItemAnimation",
-        "Type": "Class AnimSequenceBase*",
+        "Type": "class AnimSequenceBase*",
         "Size": "0x8",
         "Offset": "0x40"
       },
@@ -335,7 +335,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x7_69ERX[0x7]",
+        "Name": "pad0x7_PN7A4[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x49"
@@ -350,7 +350,7 @@
     "Attributes": [
       {
         "Name": "MontageToPlay",
-        "Type": "Class AnimMontage*",
+        "Type": "class AnimMontage*",
         "Size": "0x8",
         "Offset": "0x38"
       }
@@ -375,7 +375,7 @@
         "Offset": "0x39"
       },
       {
-        "Name": "pad0x6_4CGH5[0x6]",
+        "Name": "pad0x6_HAW6J[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x3a"
@@ -425,7 +425,7 @@
         "Offset": "0x3d"
       },
       {
-        "Name": "pad0x2_I1GE3[0x2]",
+        "Name": "pad0x2_CYCSF[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3e"
@@ -445,7 +445,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_VEAQP[0x7]",
+        "Name": "pad0x7_5LAWZ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
@@ -460,7 +460,7 @@
     "Attributes": [
       {
         "Name": "ItemSpawnClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x38"
       },
@@ -471,14 +471,14 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_1TN83[0x7]",
+        "Name": "pad0x7_LHZDQ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
       },
       {
         "Name": "CosmeticItemAnimationDataSet",
-        "Type": "Class CosmeticItemAnimationSetDataAsset*",
+        "Type": "class CosmeticItemAnimationSetDataAsset*",
         "Size": "0x8",
         "Offset": "0x48"
       },
@@ -501,7 +501,7 @@
         "Offset": "0x52"
       },
       {
-        "Name": "pad0x5_3KZQ7[0x5]",
+        "Name": "pad0x5_X189W[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x53"
@@ -516,7 +516,7 @@
     "Attributes": [
       {
         "Name": "CompletedStateId",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x38"
       }
@@ -541,7 +541,7 @@
         "Offset": "0x39"
       },
       {
-        "Name": "pad0x6_Q5BKJ[0x6]",
+        "Name": "pad0x6_3KIEQ[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x3a"
@@ -567,7 +567,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x7_INT62[0x7]",
+        "Name": "pad0x7_AN4L5[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x49"
@@ -593,7 +593,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_RO7SC[0x7]",
+        "Name": "pad0x7_7669U[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
@@ -622,7 +622,7 @@
     "Attributes": [
       {
         "Name": "CurveValues",
-        "Type": "TArray<struct CurveValues>",
+        "Type": "TArray<struct CurveUpdateValues>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -633,7 +633,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x17_2DRR1[0x17]",
+        "Name": "pad0x17_T68R0[0x17]",
         "Type": "char",
         "Size": "0x17",
         "Offset": "0x41"
@@ -669,7 +669,7 @@
     "Attributes": [
       {
         "Name": "CosmeticItemToSpawn",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x30"
       },
@@ -680,14 +680,14 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_Z5JUR[0x7]",
+        "Name": "pad0x7_7W336[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
       },
       {
         "Name": "CosmeticItemAnimationDataSet",
-        "Type": "Class CosmeticItemAnimationSetDataAsset*",
+        "Type": "class CosmeticItemAnimationSetDataAsset*",
         "Size": "0x8",
         "Offset": "0x40"
       },
@@ -716,7 +716,7 @@
         "Offset": "0x4b"
       },
       {
-        "Name": "pad0x4_FV6X8[0x4]",
+        "Name": "pad0x4_LOOYW[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -742,7 +742,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x57_F0JCG[0x57]",
+        "Name": "pad0x57_9J0DY[0x57]",
         "Type": "char",
         "Size": "0x57",
         "Offset": "0x41"
@@ -771,12 +771,12 @@
     "Attributes": [
       {
         "Name": "ActiveMontage",
-        "Type": "Class AnimMontage*",
+        "Type": "class AnimMontage*",
         "Size": "0x8",
         "Offset": "0x660"
       },
       {
-        "Name": "pad0x88_BA3H0[0x88]",
+        "Name": "pad0x88_5E97Q[0x88]",
         "Type": "char",
         "Size": "0x88",
         "Offset": "0x668"
@@ -797,19 +797,19 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x8_VP16X[0x8]",
+        "Name": "pad0x8_58VPF[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "MeshComponent",
-        "Type": "Class SkeletalMeshComponent*",
+        "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0xa0_0GYXV[0xa0]",
+        "Name": "pad0xa0_KRVVN[0xa0]",
         "Type": "char",
         "Size": "0xa0",
         "Offset": "0x3d8"
@@ -830,19 +830,19 @@
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "pad0x58_8SVG2[0x58]",
+        "Name": "pad0x58_UNRVQ[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0xc8"
       },
       {
         "Name": "DataAsset",
-        "Type": "Class CosmeticItemAnimationDataAsset*",
+        "Type": "class CosmeticItemAnimationDataAsset*",
         "Size": "0x8",
         "Offset": "0x120"
       },
       {
-        "Name": "pad0x8_0OWPK[0x8]",
+        "Name": "pad0x8_DU7K1[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x128"
@@ -862,7 +862,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x30_IN461[0x30]",
+        "Name": "pad0x30_SVCZM[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x30"
@@ -883,25 +883,25 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "pad0x8_2F1QG[0x8]",
+        "Name": "pad0x8_JYXS2[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x440"
       },
       {
         "Name": "AnimationDataSet",
-        "Type": "Class CosmeticItemAnimationSetDataAsset*",
+        "Type": "class CosmeticItemAnimationSetDataAsset*",
         "Size": "0x8",
         "Offset": "0x448"
       },
       {
         "Name": "ActiveMontage",
-        "Type": "Class AnimMontage*",
+        "Type": "class AnimMontage*",
         "Size": "0x8",
         "Offset": "0x450"
       },
       {
-        "Name": "pad0xa8_4VL5F[0xa8]",
+        "Name": "pad0xa8_NIQ5H[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0x458"
@@ -916,7 +916,7 @@
     "Attributes": [
       {
         "Name": "LoopData",
-        "Type": "Struct CosmeticItemAnimationSetLoopData",
+        "Type": "struct CosmeticItemAnimationSetLoopData",
         "Size": "0x20",
         "Offset": "0x28"
       },
@@ -963,19 +963,19 @@
     "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "pad0x8_MPL32[0x8]",
+        "Name": "pad0x8_G2MF3[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "ReplicatedData",
-        "Type": "Struct CustomAnimationMontageComponentReplicatedData",
+        "Type": "struct CustomAnimationMontageComponentReplicatedData",
         "Size": "0xc",
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x6c_8NSEA[0x6c]",
+        "Name": "pad0x6c_93XVO[0x6c]",
         "Type": "char",
         "Size": "0x6c",
         "Offset": "0xdc"
@@ -1001,20 +1001,20 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_YGCDJ[0x7]",
+        "Name": "pad0x7_LMS24[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
       },
       {
         "Name": "MontageData",
-        "Type": "Class AnimMontage*",
+        "Type": "class AnimMontage*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "LoopingData",
-        "Type": "Struct CustomAnimationMontageStagedLoopingData",
+        "Type": "struct CustomAnimationMontageStagedLoopingData",
         "Size": "0x28",
         "Offset": "0x40"
       },
@@ -1025,7 +1025,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x7_W6S98[0x7]",
+        "Name": "pad0x7_0WYSG[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x69"
@@ -1040,7 +1040,7 @@
     "Attributes": [
       {
         "Name": "Entries",
-        "Type": "TArray<struct Entries>",
+        "Type": "TArray<struct CustomAnimationMontageDefinitionEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -1152,19 +1152,19 @@
         "Offset": "0xdc"
       },
       {
-        "Name": "pad0x8_VBDKF[0x8]",
+        "Name": "pad0x8_YZKAT[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xe0"
       },
       {
         "Name": "AnimInstance",
-        "Type": "Class AnimInstance*",
+        "Type": "class AnimInstance*",
         "Size": "0x8",
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x20_2IC2A[0x20]",
+        "Name": "pad0x20_BD5ON[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xf0"
@@ -1206,14 +1206,14 @@
     "ClassSize": "0x508",
     "Attributes": [
       {
-        "Name": "pad0x8_0E4CR[0x8]",
+        "Name": "pad0x8_TQWJW[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "Curve",
-        "Type": "Struct TransformBlendCurve",
+        "Type": "struct TransformBlendCurve",
         "Size": "0x500",
         "Offset": "0xd0"
       }
@@ -1231,14 +1231,28 @@
     "FullSize": "0x50",
     "InheritedSize": "0x28",
     "ClassSize": "0x28",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x28_5VJGC[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x28"
+      }
+    ]
   },
   "WaitForAnimationStateExitProxy": {
     "Super": "Object",
     "FullSize": "0x48",
     "InheritedSize": "0x28",
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x20_SWAUO[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
   },
   "WeightedAnimationLoadOnDemandDataAsset": {
     "Super": "DataAsset",
@@ -1248,13 +1262,13 @@
     "Attributes": [
       {
         "Name": "WeightedAnimationList",
-        "Type": "TArray<struct WeightedAnimationList>",
+        "Type": "TArray<struct WeightedAnimationData>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "FallBackAnimation",
-        "Type": "Class AnimSequence*",
+        "Type": "class AnimSequence*",
         "Size": "0x8",
         "Offset": "0x38"
       }
@@ -1268,18 +1282,18 @@
     "Attributes": [
       {
         "Name": "FallBackAnimation",
-        "Type": "Class AnimSequence*",
+        "Type": "class AnimSequence*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "WeightedAnimationList",
-        "Type": "TArray<struct WeightedAnimationList>",
+        "Type": "TArray<struct WeightedAnimationData>",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
-        "Name": "pad0xe0_ER027[0xe0]",
+        "Name": "pad0xe0_1HMUZ[0xe0]",
         "Type": "char",
         "Size": "0xe0",
         "Offset": "0x40"

@@ -5,7 +5,7 @@ BP_SailHoist_C:
   - Name: Interactable
     Offset: '0x860'
     Size: '0x8'
-    Type: Class InteractableComponent*
+    Type: class InteractableComponent*
   ClassSize: '0x8'
   FullSize: '0x868'
   InheritedSize: '0x860'

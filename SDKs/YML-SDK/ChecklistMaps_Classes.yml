@@ -10,7 +10,7 @@ ChecklistActionData:
     Offset: '0x2c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_I4X3T[0x3]
+  - Name: pad0x3_5TB3Z[0x3]
     Offset: '0x2d'
     Size: '0x3'
     Type: char
@@ -23,7 +23,7 @@ ChecklistItemsDataAsset:
   - Name: ChecklistItems
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct ChecklistItems>
+    Type: TArray<struct ChecklistItem>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -41,7 +41,7 @@ ChecklistMap:
   - Name: Font
     Offset: '0x830'
     Size: '0x8'
-    Type: Class Font*
+    Type: class Font*
   - Name: FontScale
     Offset: '0x838'
     Size: '0x4'
@@ -50,19 +50,19 @@ ChecklistMap:
     Offset: '0x83c'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_0G3CY[0x8]
+  - Name: pad0x8_5ZA6F[0x8]
     Offset: '0x840'
     Size: '0x8'
     Type: char
   - Name: ChecklistMapLayout
     Offset: '0x848'
     Size: '0x8'
-    Type: Class ChecklistMapLayout*
+    Type: class ChecklistMapLayout*
   - Name: Contents
     Offset: '0x850'
     Size: '0xe8'
-    Type: Struct ChecklistMapContents
-  - Name: pad0x48_7PTBE[0x48]
+    Type: struct ChecklistMapContents
+  - Name: pad0x48_GO5YZ[0x48]
     Offset: '0x938'
     Size: '0x48'
     Type: char
@@ -81,8 +81,8 @@ ChecklistMapCompletionComponent:
   - Name: ActionData
     Offset: '0xc8'
     Size: '0x8'
-    Type: Class ChecklistActionData*
-  - Name: pad0x80_ZPDYH[0x80]
+    Type: class ChecklistActionData*
+  - Name: pad0x80_MHKOW[0x80]
     Offset: '0xd0'
     Size: '0x80'
     Type: char
@@ -95,7 +95,7 @@ ChecklistMapSettings:
   - Name: ChecklistMapItemDescClass
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: ChecklistEvents
     Offset: '0x48'
     Size: '0x10'
@@ -133,7 +133,7 @@ NPCInteractionChecklistActionData:
   - Name: TargetNPCIds
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<struct TargetNPCIds>
+    Type: TArray<struct Guid>
   ClassSize: '0x10'
   FullSize: '0x40'
   InheritedSize: '0x30'

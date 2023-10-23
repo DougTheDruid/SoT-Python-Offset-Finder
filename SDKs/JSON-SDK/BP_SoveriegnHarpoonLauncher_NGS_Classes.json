@@ -6,26 +6,26 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Class HarpoonItemLocationComponent*",
+        "Name": "HarpoonItemLocation",
+        "Type": "class HarpoonItemLocationComponent*",
         "Size": "0x8",
         "Offset": "0xcb0"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "CubeNotWalkable",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xcb8"
       },
       {
-        "Name": "None",
-        "Type": "Class CapsuleComponent*",
+        "Name": "MountCollision",
+        "Type": "class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0xcc0"
       },
       {
-        "Name": "None",
-        "Type": "Class CapsuleComponent*",
+        "Name": "BarrelCollision",
+        "Type": "class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0xcc8"
       }

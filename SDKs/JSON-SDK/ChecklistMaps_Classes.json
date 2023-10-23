@@ -18,7 +18,7 @@
         "Offset": "0x2c"
       },
       {
-        "Name": "pad0x3_I4X3T[0x3]",
+        "Name": "pad0x3_5TB3Z[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2d"
@@ -81,7 +81,7 @@
     "Attributes": [
       {
         "Name": "TargetNPCIds",
-        "Type": "TArray<struct TargetNPCIds>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -95,7 +95,7 @@
     "Attributes": [
       {
         "Name": "ChecklistItems",
-        "Type": "TArray<struct ChecklistItems>",
+        "Type": "TArray<struct ChecklistItem>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -121,7 +121,7 @@
       },
       {
         "Name": "Font",
-        "Type": "Class Font*",
+        "Type": "class Font*",
         "Size": "0x8",
         "Offset": "0x830"
       },
@@ -138,25 +138,25 @@
         "Offset": "0x83c"
       },
       {
-        "Name": "pad0x8_0G3CY[0x8]",
+        "Name": "pad0x8_5ZA6F[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x840"
       },
       {
         "Name": "ChecklistMapLayout",
-        "Type": "Class ChecklistMapLayout*",
+        "Type": "class ChecklistMapLayout*",
         "Size": "0x8",
         "Offset": "0x848"
       },
       {
         "Name": "Contents",
-        "Type": "Struct ChecklistMapContents",
+        "Type": "struct ChecklistMapContents",
         "Size": "0xe8",
         "Offset": "0x850"
       },
       {
-        "Name": "pad0x48_7PTBE[0x48]",
+        "Name": "pad0x48_GO5YZ[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x938"
@@ -178,12 +178,12 @@
     "Attributes": [
       {
         "Name": "ActionData",
-        "Type": "Class ChecklistActionData*",
+        "Type": "class ChecklistActionData*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x80_ZPDYH[0x80]",
+        "Name": "pad0x80_MHKOW[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0xd0"
@@ -198,7 +198,7 @@
     "Attributes": [
       {
         "Name": "ChecklistMapItemDescClass",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
       },

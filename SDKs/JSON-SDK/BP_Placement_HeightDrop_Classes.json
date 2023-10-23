@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
@@ -18,7 +18,7 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x3_53G5G[0x3]",
+        "Name": "pad0x3_I5Z7Y[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3d1"
@@ -36,7 +36,7 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x3_AELKV[0x3]",
+        "Name": "pad0x3_NH2SI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3d9"
@@ -66,7 +66,7 @@
         "Offset": "0x3f1"
       },
       {
-        "Name": "pad0x2_TOU3M[0x2]",
+        "Name": "pad0x2_NC1XU[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3f2"

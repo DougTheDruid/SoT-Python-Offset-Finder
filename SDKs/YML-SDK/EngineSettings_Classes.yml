@@ -6,14 +6,14 @@ ConsoleSettings:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_41YZN[0x4]
+  - Name: pad0x4_FKX95[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
   - Name: ManualAutoCompleteList
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<struct ManualAutoCompleteList>
+    Type: TArray<struct AutoCompleteCommand>
   - Name: AutoCompleteMapPaths
     Offset: '0x40'
     Size: '0x10'
@@ -27,15 +27,15 @@ GameMapsSettings:
   - Name: EditorStartupMap
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: LocalMapOptions
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: TransitionMap
     Offset: '0x48'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: bUseSplitscreen
     Offset: '0x58'
     Size: '0x1'
@@ -48,30 +48,30 @@ GameMapsSettings:
     Offset: '0x5a'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5_11RD5[0x5]
+  - Name: pad0x5_ODBHJ[0x5]
     Offset: '0x5b'
     Size: '0x5'
     Type: char
   - Name: GameInstanceClass
     Offset: '0x60'
     Size: '0x10'
-    Type: Struct StringClassReference
+    Type: struct StringClassReference
   - Name: GameDefaultMap
     Offset: '0x70'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ServerDefaultMap
     Offset: '0x80'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: GlobalDefaultGameMode
     Offset: '0x90'
     Size: '0x10'
-    Type: Struct StringClassReference
+    Type: struct StringClassReference
   - Name: GlobalDefaultServerGameMode
     Offset: '0xa0'
     Size: '0x10'
-    Type: Struct StringClassReference
+    Type: struct StringClassReference
   ClassSize: '0x88'
   FullSize: '0xb0'
   InheritedSize: '0x28'
@@ -98,7 +98,7 @@ GameNetworkManagerSettings:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_XNG67[0x3]
+  - Name: pad0x3_KEM8M[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -126,7 +126,7 @@ GameNetworkManagerSettings:
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_3PRQ8[0x4]
+  - Name: pad0x4_FZ8BN[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -148,7 +148,7 @@ GameSessionSettings:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_AXQ5J[0x7]
+  - Name: pad0x7_HYJ8Y[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -167,51 +167,51 @@ GeneralProjectSettings:
   - Name: CompanyName
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: CompanyDistinguishedName
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: CopyrightNotice
     Offset: '0x48'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: Description
     Offset: '0x58'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: Homepage
     Offset: '0x68'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: LicensingTerms
     Offset: '0x78'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: PrivacyPolicy
     Offset: '0x88'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ProjectID
     Offset: '0x98'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: ProjectName
     Offset: '0xa8'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ProjectVersion
     Offset: '0xb8'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: SupportContact
     Offset: '0xc8'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ProjectDisplayedTitle
     Offset: '0xd8'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   ClassSize: '0xe8'
   FullSize: '0x110'
   InheritedSize: '0x28'
@@ -222,7 +222,7 @@ HudSettings:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_A8IXL[0x7]
+  - Name: pad0x7_I9ORH[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char

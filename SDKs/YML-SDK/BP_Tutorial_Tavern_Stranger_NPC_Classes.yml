@@ -3,34 +3,34 @@
 BP_Tutorial_Tavern_Stranger_NPC_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x860'
-    Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
-  - Name: SolidHits
     Offset: '0x868'
     Size: '0x8'
-    Type: Class CapsuleComponent*
-  - Name: StaticMesh
+    Type: struct PointerToUberGraphFrame
+  - Name: SolidHits
     Offset: '0x870'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: NPCDialog
+    Type: class CapsuleComponent*
+  - Name: StaticMesh
     Offset: '0x878'
     Size: '0x8'
-    Type: Class NPCDialogComponent*
-  - Name: AnimNotifyWwiseEmitter
+    Type: class StaticMeshComponent*
+  - Name: NPCDialog
     Offset: '0x880'
     Size: '0x8'
-    Type: Class AnimNotifyWwiseEmitterComponent*
-  - Name: MysteriousStranger
+    Type: class NPCDialogComponent*
+  - Name: AnimNotifyWwiseEmitter
     Offset: '0x888'
-    Size: '0x38'
-    Type: Struct FText
-  - Name: CutSceneActor
-    Offset: '0x8c0'
     Size: '0x8'
-    Type: Class CutSceneActor*
+    Type: class AnimNotifyWwiseEmitterComponent*
+  - Name: MysteriousStranger
+    Offset: '0x890'
+    Size: '0x38'
+    Type: struct FText
+  - Name: CutSceneActor
+    Offset: '0x8c8'
+    Size: '0x8'
+    Type: class CutSceneActor*
   ClassSize: '0x68'
-  FullSize: '0x8c8'
-  InheritedSize: '0x860'
+  FullSize: '0x8d0'
+  InheritedSize: '0x868'
   Super: TutorialTavernStrangerNPC

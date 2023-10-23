@@ -19,7 +19,7 @@
       },
       {
         "Name": "FadeColour",
-        "Type": "Struct LinearColor",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -30,7 +30,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x3_3D3UJ[0x3]",
+        "Name": "pad0x3_VDJZ2[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x51"
@@ -61,7 +61,7 @@
       },
       {
         "Name": "ModeSpecificSettings",
-        "Type": "TArray<struct ModeSpecificSettings>",
+        "Type": "TArray<struct ModeSpecificReviveSettings>",
         "Size": "0x10",
         "Offset": "0x70"
       },
@@ -84,7 +84,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x4_RZ42F[0x4]",
+        "Name": "pad0x4_NMU2Q[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x8c"
@@ -93,27 +93,27 @@
   },
   "DeathSelfInteractionComponent": {
     "Super": "InteractableComponent",
-    "FullSize": "0x178",
-    "InheritedSize": "0x128",
+    "FullSize": "0x188",
+    "InheritedSize": "0x138",
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x8_PQLOS[0x8]",
+        "Name": "pad0x8_B0LHP[0x8]",
         "Type": "char",
         "Size": "0x8",
-        "Offset": "0x128"
+        "Offset": "0x138"
       },
       {
         "Name": "HasGivenUp",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x130"
+        "Offset": "0x140"
       },
       {
-        "Name": "pad0x47_84UHZ[0x47]",
+        "Name": "pad0x47_TFKKR[0x47]",
         "Type": "char",
         "Size": "0x47",
-        "Offset": "0x131"
+        "Offset": "0x141"
       }
     ]
   },
@@ -160,12 +160,12 @@
     "Attributes": [
       {
         "Name": "ReviveEffectsDataAsset",
-        "Type": "Class ReviveEffectsDataAsset*",
+        "Type": "class ReviveEffectsDataAsset*",
         "Size": "0x8",
         "Offset": "0x310"
       },
       {
-        "Name": "pad0x18_QM5R1[0x18]",
+        "Name": "pad0x18_TMTT5[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x318"
@@ -181,81 +181,81 @@
   },
   "ReviveComponent": {
     "Super": "InteractableComponent",
-    "FullSize": "0x268",
-    "InheritedSize": "0x128",
+    "FullSize": "0x278",
+    "InheritedSize": "0x138",
     "ClassSize": "0x140",
     "Attributes": [
       {
-        "Name": "pad0x10_IQQGW[0x10]",
+        "Name": "pad0x10_ZD9ZQ[0x10]",
         "Type": "char",
         "Size": "0x10",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "OwningCharacter",
-        "Type": "Class Character*",
-        "Size": "0x8",
         "Offset": "0x138"
       },
       {
-        "Name": "ReviveableRepresentationActor",
-        "Type": "Class Actor*",
+        "Name": "OwningCharacter",
+        "Type": "class Character*",
         "Size": "0x8",
-        "Offset": "0x140"
+        "Offset": "0x148"
+      },
+      {
+        "Name": "ReviveableRepresentationActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x150"
       },
       {
         "Name": "ReviveState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x148"
+        "Offset": "0x158"
       },
       {
         "Name": "InteractionState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x149"
+        "Offset": "0x159"
       },
       {
-        "Name": "pad0x6_XGIMX[0x6]",
+        "Name": "pad0x6_XC5L9[0x6]",
         "Type": "char",
         "Size": "0x6",
-        "Offset": "0x14a"
+        "Offset": "0x15a"
       },
       {
         "Name": "ReviveableRepresentationClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x150"
+        "Offset": "0x160"
       },
       {
-        "Name": "pad0xc_88MLS[0xc]",
+        "Name": "pad0xc_U238Z[0xc]",
         "Type": "char",
         "Size": "0xc",
-        "Offset": "0x158"
+        "Offset": "0x168"
       },
       {
         "Name": "ReviveWindowIsOpen",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x164"
+        "Offset": "0x174"
       },
       {
-        "Name": "pad0xd3_YJUEK[0xd3]",
+        "Name": "pad0xd3_EUNIG[0xd3]",
         "Type": "char",
         "Size": "0xd3",
-        "Offset": "0x165"
+        "Offset": "0x175"
       },
       {
         "Name": "RevivableStatus",
-        "Type": "Struct Status",
+        "Type": "struct Status",
         "Size": "0x18",
-        "Offset": "0x238"
+        "Offset": "0x248"
       },
       {
-        "Name": "pad0x18_U86KW[0x18]",
+        "Name": "pad0x18_3W2SU[0x18]",
         "Type": "char",
         "Size": "0x18",
-        "Offset": "0x250"
+        "Offset": "0x260"
       }
     ]
   },
@@ -278,7 +278,14 @@
     "FullSize": "0x160",
     "InheritedSize": "0xc8",
     "ClassSize": "0x98",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x98_FYRBZ[0x98]",
+        "Type": "char",
+        "Size": "0x98",
+        "Offset": "0xc8"
+      }
+    ]
   },
   "ReviveEffectsDataAsset": {
     "Super": "DataAsset",
@@ -288,7 +295,7 @@
     "Attributes": [
       {
         "Name": "ReviveMaterialParameterCollection",
-        "Type": "Class MaterialParameterCollection*",
+        "Type": "class MaterialParameterCollection*",
         "Size": "0x8",
         "Offset": "0x28"
       },
@@ -312,13 +319,13 @@
       },
       {
         "Name": "AstralCordBorderParamValueByAbsoluteTimeSinceDeath",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x48"
       },
       {
         "Name": "ReviveePostProcessMaterial",
-        "Type": "Class Material*",
+        "Type": "class Material*",
         "Size": "0x8",
         "Offset": "0x50"
       },
@@ -336,19 +343,19 @@
       },
       {
         "Name": "ReviveSuccessfulOneShotVFX",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x60"
       },
       {
         "Name": "ReviveSuccessfulOneShotVFX_Revivee",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x68"
       },
       {
         "Name": "ReviveInProgressLoopingVFX",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x70"
       },
@@ -366,7 +373,7 @@
       },
       {
         "Name": "ContinuousBodyLoopingVFX",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x80"
       },
@@ -396,43 +403,43 @@
       },
       {
         "Name": "DeadPlayerBodyEvaporatesOneShotVFX",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x98"
       },
       {
         "Name": "OtherPlayers_ReviveGhostAmbientStart",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xa0"
       },
       {
         "Name": "OtherPlayers_ReviveGhostAmbientStop",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xa8"
       },
       {
         "Name": "DeadPlayer_ReviveInProgressStart",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xb0"
       },
       {
         "Name": "DeadPlayer_ReviveInProgressStop",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xb8"
       },
       {
         "Name": "OtherPlayers_ReviveInProgressStart",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xc0"
       },
       {
         "Name": "OtherPlayers_ReviveInProgressStop",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xc8"
       }
@@ -445,7 +452,7 @@
     "ClassSize": "0x260",
     "Attributes": [
       {
-        "Name": "pad0x10_LFN6I[0x10]",
+        "Name": "pad0x10_LPX07[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -458,48 +465,48 @@
       },
       {
         "Name": "Root",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
         "Name": "MeshComponent",
-        "Type": "Class SkeletalMeshComponent*",
+        "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
         "Name": "AstralCordContainer",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
         "Name": "AnimationDataStoreComponent",
-        "Type": "Class AnimationDataStoreComponent*",
+        "Type": "class AnimationDataStoreComponent*",
         "Size": "0x8",
         "Offset": "0x400"
       },
       {
         "Name": "PostProcessComponent",
-        "Type": "Class PostProcessComponent*",
+        "Type": "class PostProcessComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
         "Name": "DitherComponent",
-        "Type": "Class DitherComponent*",
+        "Type": "class DitherComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
         "Name": "AudioComponent",
-        "Type": "Class ReviveAudioComponent*",
+        "Type": "class ReviveAudioComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
-        "Name": "pad0x10_VFLFY[0x10]",
+        "Name": "pad0x10_IXO0K[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x420"
@@ -511,37 +518,37 @@
         "Offset": "0x430"
       },
       {
-        "Name": "pad0x7_FWD15[0x7]",
+        "Name": "pad0x7_T6SPX[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x431"
       },
       {
         "Name": "ReviveGhostDataAsset",
-        "Type": "Class GhostDataAsset*",
+        "Type": "class GhostDataAsset*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
         "Name": "ReviveEffectsDataAsset",
-        "Type": "Class ReviveEffectsDataAsset*",
+        "Type": "class ReviveEffectsDataAsset*",
         "Size": "0x8",
         "Offset": "0x440"
       },
       {
         "Name": "ReviveEffectsValues",
-        "Type": "Struct ReviveEffectsValues",
+        "Type": "struct ReviveEffectsValues",
         "Size": "0x20",
         "Offset": "0x448"
       },
       {
         "Name": "ReviveSettings",
-        "Type": "Struct ModeSpecificReviveSettings",
+        "Type": "struct ModeSpecificReviveSettings",
         "Size": "0x38",
         "Offset": "0x468"
       },
       {
-        "Name": "pad0x13c_KGZT3[0x13c]",
+        "Name": "pad0x13c_SLYP3[0x13c]",
         "Type": "char",
         "Size": "0x13c",
         "Offset": "0x4a0"
@@ -554,12 +561,12 @@
       },
       {
         "Name": "GhostPlayModeSpecificParameters",
-        "Type": "Struct GhostPlayModeParameters",
+        "Type": "struct GhostPlayModeParameters",
         "Size": "0xc",
         "Offset": "0x618"
       },
       {
-        "Name": "pad0x4_1QZ5U[0x4]",
+        "Name": "pad0x4_7104W[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x624"

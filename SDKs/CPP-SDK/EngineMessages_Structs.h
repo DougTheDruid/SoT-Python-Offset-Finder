@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct EngineServiceNotification
 {
 public:
-	Struct FString                                               Text;                                              // 0x0(0x10)
+	struct FString                                               Text;                                              // 0x0(0x10)
 	double                                                       TimeSeconds;                                       // 0x10(0x8)
 };
 
@@ -19,7 +19,7 @@ public:
 struct EngineServiceTerminate
 {
 public:
-	Struct FString                                               UserName;                                          // 0x0(0x10)
+	struct FString                                               UserName;                                          // 0x0(0x10)
 };
 
 
@@ -27,8 +27,8 @@ public:
 struct EngineServiceExecuteCommand
 {
 public:
-	Struct FString                                               Command;                                           // 0x0(0x10)
-	Struct FString                                               UserName;                                          // 0x10(0x10)
+	struct FString                                               Command;                                           // 0x0(0x10)
+	struct FString                                               UserName;                                          // 0x10(0x10)
 };
 
 
@@ -36,8 +36,8 @@ public:
 struct EngineServiceAuthGrant
 {
 public:
-	Struct FString                                               UserName;                                          // 0x0(0x10)
-	Struct FString                                               UserToGrant;                                       // 0x10(0x10)
+	struct FString                                               UserName;                                          // 0x0(0x10)
+	struct FString                                               UserToGrant;                                       // 0x10(0x10)
 };
 
 
@@ -45,8 +45,8 @@ public:
 struct EngineServiceAuthDeny
 {
 public:
-	Struct FString                                               UserName;                                          // 0x0(0x10)
-	Struct FString                                               UserToDeny;                                        // 0x10(0x10)
+	struct FString                                               UserName;                                          // 0x0(0x10)
+	struct FString                                               UserToDeny;                                        // 0x10(0x10)
 };
 
 
@@ -54,14 +54,15 @@ public:
 struct EngineServicePong
 {
 public:
-	Struct FString                                               CurrentLevel;                                      // 0x0(0x10)
+	struct FString                                               CurrentLevel;                                      // 0x0(0x10)
 	int                                                          EngineVersion;                                     // 0x10(0x4)
 	bool                                                         HasBegunPlay;                                      // 0x14(0x1)
-	char                                                         pad0x3_H7R61[0x3];                                 // 0x15(0x3)
-	Struct Guid                                                  InstanceId;                                        // 0x18(0x10)
-	Struct FString                                               InstanceType;                                      // 0x28(0x10)
-	Struct Guid                                                  SessionId;                                         // 0x38(0x10)
+	char                                                         pad0x3_IG73U[0x3];                                 // 0x15(0x3)
+	struct Guid                                                  InstanceId;                                        // 0x18(0x10)
+	struct FString                                               InstanceType;                                      // 0x28(0x10)
+	struct Guid                                                  SessionId;                                         // 0x38(0x10)
 	float                                                        WorldTimeSeconds;                                  // 0x48(0x4)
+	char                                                         pad0x4_Q459U[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -69,6 +70,7 @@ public:
 struct EngineServicePing
 {
 public:
+	char                                                         pad0x1_KSL74[0x1];                                 // 0x0(0x1)
 };
 
 

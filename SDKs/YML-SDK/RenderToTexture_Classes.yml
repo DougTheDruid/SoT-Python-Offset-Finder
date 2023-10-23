@@ -11,20 +11,20 @@ RenderToTextureSceneDetails:
   - Name: ClassToSpawn
     Offset: '0x28'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Resolution
     Offset: '0x30'
     Size: '0x8'
-    Type: Struct IntPoint
+    Type: struct IntPoint
   - Name: World
     Offset: '0x38'
     Size: '0x8'
-    Type: Class World*
+    Type: class World*
   - Name: RenderTarget
     Offset: '0x50'
     Size: '0x8'
-    Type: Class TextureRenderTarget2D*
-  - Name: pad0x50_OC301[0x50]
+    Type: class TextureRenderTarget2D*
+  - Name: pad0x50_44MGQ[0x50]
     Offset: '0x58'
     Size: '0x50'
     Type: char

@@ -26,30 +26,30 @@ CookItemFromRawConditionalStatTrigger:
   Super: ConditionalStatsTriggerType
 CookableComponent:
   Attributes:
-  - Name: pad0x20_MQ5N7[0x20]
+  - Name: pad0x20_1KUCJ[0x20]
     Offset: '0xc8'
     Size: '0x20'
     Type: char
   - Name: NextCookState
     Offset: '0xe8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: TimeToNextCookState
     Offset: '0xf0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_CIDTS[0x4]
+  - Name: pad0x4_XWYJD[0x4]
     Offset: '0xf4'
     Size: '0x4'
     Type: char
   - Name: SmokeFeedbackLevels
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<struct SmokeFeedbackLevels>
+    Type: TArray<struct CookableComponentSmokeFeedbackTimingEntry>
   - Name: VisibleCookedExtentOverTime
     Offset: '0x108'
     Size: '0x8'
-    Type: Class CurveFloat*
+    Type: class CurveFloat*
   - Name: DefaultVisibleCookedExtent
     Offset: '0x110'
     Size: '0x4'
@@ -61,11 +61,11 @@ CookableComponent:
   - Name: CookedStat
     Offset: '0x11c'
     Size: '0x4'
-    Type: Struct PlayerStat
+    Type: struct PlayerStat
   - Name: ShipCookedStat
     Offset: '0x120'
     Size: '0x4'
-    Type: Struct PlayerStat
+    Type: struct PlayerStat
   - Name: CookingState
     Offset: '0x124'
     Size: '0x1'
@@ -94,26 +94,26 @@ CookableInterface:
   Super: Interface
 CookerComponent:
   Attributes:
-  - Name: pad0x8_1JUVN[0x8]
+  - Name: pad0x8_4M2QD[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
   - Name: StatusToApplyToContents
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<struct StatusToApplyToContents>
+    Type: TArray<struct Status>
   - Name: VFXFeedback
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<struct VFXFeedback>
+    Type: TArray<struct CookerSmokeFeedbackEntry>
   - Name: CookableStaticMeshComponent
     Offset: '0xf0'
     Size: '0x8'
-    Type: Class StaticMeshMemoryConstraintComponent*
+    Type: class StaticMeshMemoryConstraintComponent*
   - Name: CookableSkeletalMeshComponent
     Offset: '0xf8'
     Size: '0x8'
-    Type: Class SkeletalMeshMemoryConstraintComponent*
+    Type: class SkeletalMeshMemoryConstraintComponent*
   - Name: CookedMaterialParameterName
     Offset: '0x100'
     Size: '0x8'
@@ -130,38 +130,38 @@ CookerComponent:
     Offset: '0x114'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ZJYWA[0x3]
+  - Name: pad0x3_XO8E5[0x3]
     Offset: '0x115'
     Size: '0x3'
     Type: char
   - Name: AudioParams
     Offset: '0x118'
     Size: '0x8'
-    Type: Class CookingComponentAudioParams*
+    Type: class CookingComponentAudioParams*
   - Name: VfxLocation
     Offset: '0x120'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_WO5OC[0x7]
+  - Name: pad0x7_EYD96[0x7]
     Offset: '0x121'
     Size: '0x7'
     Type: char
   - Name: CurrentlyCookingItem
     Offset: '0x128'
     Size: '0x8'
-    Type: Class ItemInfo*
+    Type: class ItemInfo*
   - Name: CookingState
     Offset: '0x130'
     Size: '0x68'
-    Type: Struct CookingClientRepresentation
+    Type: struct CookingClientRepresentation
   - Name: SmokeParticleComponent
     Offset: '0x198'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Type: class ParticleSystemComponent*
   - Name: VisibleCookableMaterial
     Offset: '0x1a0'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
   - Name: TurnedOn
     Offset: '0x1a8'
     Size: '0x1'
@@ -170,7 +170,7 @@ CookerComponent:
     Offset: '0x1a9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9e_C6R89[0x9e]
+  - Name: pad0x9e_5FGZ9[0x9e]
     Offset: '0x1aa'
     Size: '0x9e'
     Type: char
@@ -189,27 +189,27 @@ CookingComponentAudioParams:
   - Name: CookingPool
     Offset: '0x28'
     Size: '0x8'
-    Type: Class WwiseObjectPoolWrapper*
+    Type: class WwiseObjectPoolWrapper*
   - Name: EmitterOffsetVector
     Offset: '0x30'
     Size: '0xc'
-    Type: Struct Vector
-  - Name: pad0x4_TQTDJ[0x4]
+    Type: struct Vector
+  - Name: pad0x4_IWWMF[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
   - Name: FoodPlaceInPot
     Offset: '0x40'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: CookingStart
     Offset: '0x48'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: CookingStop
     Offset: '0x50'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: CookingTypeSwitchGroup
     Offset: '0x58'
     Size: '0x8'
@@ -246,7 +246,7 @@ CookingComponentAudioParams:
     Offset: '0x98'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_TI8XK[0x4]
+  - Name: pad0x4_JWPRJ[0x4]
     Offset: '0x9c'
     Size: '0x4'
     Type: char
@@ -262,51 +262,51 @@ CookingDefaultsInterface:
   Super: Interface
 CookingPot:
   Attributes:
-  - Name: pad0x8_T8YVX[0x8]
+  - Name: pad0x8_8U50X[0x8]
     Offset: '0x400'
     Size: '0x8'
     Type: char
   - Name: MeshComponent
     Offset: '0x408'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: InteractableComponent
     Offset: '0x410'
     Size: '0x8'
-    Type: Class ActionRulesInteractableComponent*
+    Type: class ActionRulesInteractableComponent*
   - Name: CookerComponent
     Offset: '0x418'
     Size: '0x8'
-    Type: Class CookerComponent*
+    Type: class CookerComponent*
   - Name: HoldToInteractTime
     Offset: '0x420'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_KLYPB[0x4]
+  - Name: pad0x4_V662G[0x4]
     Offset: '0x424'
     Size: '0x4'
     Type: char
   - Name: NotWieldingCookableItemTooltip
     Offset: '0x428'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: WieldingCookableItemTooltip
     Offset: '0x460'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: TakeItemTooltip
     Offset: '0x498'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: CannotTakeItemTooltip
     Offset: '0x4d0'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: MixInItemTooltip
     Offset: '0x508'
     Size: '0x38'
-    Type: Struct FText
-  - Name: pad0xa0_ZEBA6[0xa0]
+    Type: struct FText
+  - Name: pad0xa0_CJD4Q[0xa0]
     Offset: '0x540'
     Size: '0xa0'
     Type: char
@@ -332,7 +332,7 @@ HasRequiredCookingStateStatCondition:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_2Q2C7[0x7]
+  - Name: pad0x7_3VBUT[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -348,7 +348,7 @@ MixableInterface:
   Super: Interface
 PottableComponent:
   Attributes:
-  - Name: pad0x8_872RL[0x8]
+  - Name: pad0x8_S1P8U[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -356,7 +356,7 @@ PottableComponent:
     Offset: '0xd0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_TKR1D[0x7]
+  - Name: pad0x7_BVC4U[0x7]
     Offset: '0xd1'
     Size: '0x7'
     Type: char

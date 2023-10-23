@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class BP_Firework_Wieldable_C: public StaticMeshWieldableItem
 {
 public:
-	Class UsableWieldableComponent*                              UsableWieldable;                                   // 0x7e0(0x8)
-	Class WieldableInteractableComponent*                        WieldableInteractable;                             // 0x7e8(0x8)
-	Class PickupableComponent*                                   Pickupable;                                        // 0x7f0(0x8)
-	Class ConsumableWieldableComponent*                          ConsumableWieldable;                               // 0x7f8(0x8)
-	Class InventoryItemComponent*                                InventoryItem;                                     // 0x800(0x8)
+	class UsableWieldableComponent*                              UsableWieldable;                                   // 0x7e0(0x8)
+	class WieldableInteractableComponent*                        WieldableInteractable;                             // 0x7e8(0x8)
+	class PickupableComponent*                                   Pickupable;                                        // 0x7f0(0x8)
+	class ConsumableWieldableComponent*                          ConsumableWieldable;                               // 0x7f8(0x8)
+	class InventoryItemComponent*                                InventoryItem;                                     // 0x800(0x8)
 };
 
 

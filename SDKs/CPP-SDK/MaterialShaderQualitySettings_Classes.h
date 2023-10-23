@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 class MaterialShaderQualitySettings: public Object
 {
 public:
+	char                                                         pad0x58_UO8KV[0x58];                               // 0x28(0x58)
 };
 
 
@@ -17,8 +18,8 @@ public:
 class ShaderPlatformQualitySettings: public Object
 {
 public:
-	Struct MaterialQualityOverrides                              QualityOverrides;                                  // 0x28(0x4)
-	char                                                         pad0xc_0XAZX[0xc];                                 // 0x2c(0xc)
+	struct MaterialQualityOverrides                              QualityOverrides;                                  // 0x28(0x4)
+	char                                                         pad0xc_FSBFT[0xc];                                 // 0x2c(0xc)
 };
 
 

@@ -5,7 +5,7 @@ ServiceMessagingSubscribedEvent:
   - Name: RoutingKey
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x10'
 ServiceMessagingTestMessage:
   Attributes:
@@ -19,12 +19,12 @@ ServiceMessagingUnsubscribedEvent:
   - Name: RoutingKey
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x10'
 TestStructWithNetId:
   Attributes:
   - Name: NetId
     Offset: '0x0'
     Size: '0x18'
-    Type: Struct UniqueNetIdRepl
+    Type: struct UniqueNetIdRepl
   ClassSize: '0x18'

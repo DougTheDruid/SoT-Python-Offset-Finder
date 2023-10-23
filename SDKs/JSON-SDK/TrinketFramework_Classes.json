@@ -35,19 +35,19 @@
     "Attributes": [
       {
         "Name": "TrinketClass",
-        "Type": "Struct StringClassReference",
+        "Type": "struct StringClassReference",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "PreviousItem",
-        "Type": "Struct StringClassReference",
+        "Type": "struct StringClassReference",
         "Size": "0x10",
         "Offset": "0xd8"
       },
       {
         "Name": "NextItem",
-        "Type": "Struct StringClassReference",
+        "Type": "struct StringClassReference",
         "Size": "0x10",
         "Offset": "0xe8"
       }
@@ -65,7 +65,14 @@
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_FQP18[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
   },
   "TrinketLoadoutViewInterface": {
     "Super": "Interface",
@@ -79,7 +86,14 @@
     "FullSize": "0x3d8",
     "InheritedSize": "0x3c8",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_HDN12[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3c8"
+      }
+    ]
   },
   "TrinketSetControlInterface": {
     "Super": "Interface",
@@ -96,25 +110,25 @@
     "Attributes": [
       {
         "Name": "MountSfx",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "RemoveSfx",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "NudgeSfx",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "StraightenSfx",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x40"
       }

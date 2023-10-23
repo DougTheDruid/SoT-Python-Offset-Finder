@@ -7,15 +7,15 @@ namespace DougsSDKDumper
 //-----
 
 // Size 0x30 (Full Size[0x438] - InheritedSize[0x408]
-class wld_beach_rocks_12_C: public None
+class wld_beach_rocks_12_C: public BP_Placement_HeightDrop_C
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x408(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x410(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x418(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x420(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x428(0x8)
-	Class SceneComponent*                                        None;                                              // 0x430(0x8)
+	class StaticMeshComponent*                                   wld_rock_medium_01__e;                             // 0x408(0x8)
+	class StaticMeshComponent*                                   wld_rock_large_01__c;                              // 0x410(0x8)
+	class StaticMeshComponent*                                   wld_rock_small_01__d;                              // 0x418(0x8)
+	class StaticMeshComponent*                                   wld_rock_small_01__b;                              // 0x420(0x8)
+	class StaticMeshComponent*                                   wld_rock_small_01__a;                              // 0x428(0x8)
+	class SceneComponent*                                        SharedRoot;                                        // 0x430(0x8)
 };
 
 

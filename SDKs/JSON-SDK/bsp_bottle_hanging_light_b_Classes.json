@@ -7,25 +7,25 @@
     "Attributes": [
       {
         "Name": "PointLight1",
-        "Type": "Class PointLightComponent*",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
         "Name": "PointLight",
-        "Type": "Class PointLightComponent*",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
         "Name": "StaticMesh1",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
         "Name": "StaticMesh",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       }

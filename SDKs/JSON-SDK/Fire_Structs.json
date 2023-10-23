@@ -13,31 +13,65 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_SFE76[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
   "PlayerNearBurningFireGridUpdatedEvent": {
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_IH6I1[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ShipOnFireEndEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_B5YUP[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ShipOnFireBeginEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_YEFES[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "OnShipIgnitedEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_I8JHB[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "FireExtinguishedEvent": {
     "ClassSize": "0xc",
     "Attributes": [
       {
         "Name": "ExtinguishLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       }
@@ -59,7 +93,7 @@
     "Attributes": [
       {
         "Name": "ActorClassFilter",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -71,7 +105,7 @@
       },
       {
         "Name": "FireGridCellSelectionParams",
-        "Type": "Struct FireGridCellSelection",
+        "Type": "struct FireGridCellSelection",
         "Size": "0x44",
         "Offset": "0xc"
       }
@@ -117,26 +151,26 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x2_FTXA9[0x2]",
+        "Name": "pad0x2_AP7U4[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x12"
       },
       {
         "Name": "SidewaysPropagationTimeOverride",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x14"
       },
       {
         "Name": "UpwardPropagationTimeOverride",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x24"
       },
       {
         "Name": "DownwardPropagationTimeOverride",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x34"
       }
@@ -144,26 +178,33 @@
   },
   "FireCellStateData": {
     "ClassSize": "0x30",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x30_FRPWQ[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
   },
   "CookerIgnitionParams": {
     "ClassSize": "0x78",
     "Attributes": [
       {
         "Name": "InitialIgnitionTime",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "SuccessIgnitionTime",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "FailureIgnitionTime",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -175,7 +216,7 @@
       },
       {
         "Name": "IgnitionSelection",
-        "Type": "Struct FireGridCellSelection",
+        "Type": "struct FireGridCellSelection",
         "Size": "0x44",
         "Offset": "0x34"
       }
@@ -186,19 +227,19 @@
     "Attributes": [
       {
         "Name": "KindleTime",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "BurningTime",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "RainExposureTime",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -210,37 +251,37 @@
       },
       {
         "Name": "SmoulderingTime",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x34"
       },
       {
         "Name": "SteamingTime",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x44"
       },
       {
         "Name": "WetTime",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x54"
       },
       {
         "Name": "SidewaysPropagationTime",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x64"
       },
       {
         "Name": "UpwardPropagationTime",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x74"
       },
       {
         "Name": "DownwardPropagationTime",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x84"
       }
@@ -251,31 +292,31 @@
     "Attributes": [
       {
         "Name": "EmitterPool",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "DousePool",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "FirePlay",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
         "Name": "FireStop",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x18"
       },
       {
         "Name": "FireDouse",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x20"
       },
@@ -304,7 +345,7 @@
     "Attributes": [
       {
         "Name": "Template",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -315,14 +356,14 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_FH5JV[0x4]",
+        "Name": "pad0x4_O89N4[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       },
       {
         "Name": "Mesh",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x10"
       },
@@ -340,7 +381,7 @@
       },
       {
         "Name": "MeshScale",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x20"
       },
@@ -357,7 +398,7 @@
         "Offset": "0x2d"
       },
       {
-        "Name": "pad0x2_MNBUN[0x2]",
+        "Name": "pad0x2_H23MX[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x2e"
@@ -379,6 +420,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35"
+      },
+      {
+        "Name": "pad0x2_XNFJQ[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x36"
       }
     ]
   },
@@ -387,19 +434,19 @@
     "Attributes": [
       {
         "Name": "Position",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
       {
         "Name": "BoundingBox",
-        "Type": "Struct Box",
+        "Type": "struct Box",
         "Size": "0x1c",
         "Offset": "0xc"
       },
       {
         "Name": "GridPosition",
-        "Type": "Struct IntVector",
+        "Type": "struct IntVector",
         "Size": "0xc",
         "Offset": "0x28"
       },
@@ -422,7 +469,7 @@
         "Offset": "0x36"
       },
       {
-        "Name": "pad0x1_4ZREC[0x1]",
+        "Name": "pad0x1_JT3L0[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x37"
@@ -446,32 +493,32 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0xf_81BC2[0xf]",
+        "Name": "pad0xf_94Q27[0xf]",
         "Type": "char",
         "Size": "0xf",
         "Offset": "0x41"
       },
       {
         "Name": "DefaultParticleEffectSpawnTransform",
-        "Type": "Struct Transform",
+        "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0x50"
       },
       {
         "Name": "DefaultParticleEffectPlane",
-        "Type": "Struct Plane",
+        "Type": "struct Plane",
         "Size": "0x10",
         "Offset": "0x80"
       },
       {
         "Name": "CustomParticleEffectTemplates",
-        "Type": "TArray<struct CustomParticleEffectTemplates>",
+        "Type": "TArray<struct FireCellStateParticleTemplate>",
         "Size": "0x10",
         "Offset": "0x90"
       },
       {
         "Name": "CustomParticleEffectSpawnTransform",
-        "Type": "Struct Transform",
+        "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0xa0"
       },
@@ -483,13 +530,13 @@
       },
       {
         "Name": "CustomAddedDiagonalNeighbourOffsets",
-        "Type": "TArray<struct CustomAddedDiagonalNeighbourOffsets>",
+        "Type": "TArray<struct IntVector>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
       {
         "Name": "CustomRemovedDefaultNeighbourOffsets",
-        "Type": "TArray<struct CustomRemovedDefaultNeighbourOffsets>",
+        "Type": "TArray<struct IntVector>",
         "Size": "0x10",
         "Offset": "0xf0"
       }
@@ -500,25 +547,25 @@
     "Attributes": [
       {
         "Name": "DefaultParticleTemplates",
-        "Type": "TArray<struct DefaultParticleTemplates>",
+        "Type": "TArray<struct FireCellStateParticleTemplate>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "ExteriorLowDetailParticleSystem",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
         "Name": "ExteriorSmokeParticleSystem",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x18"
       },
       {
         "Name": "InteriorSmokeParticleSystem",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x20"
       },
@@ -565,13 +612,13 @@
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
       {
         "Name": "GridLocation",
-        "Type": "Struct IntVector",
+        "Type": "struct IntVector",
         "Size": "0xc",
         "Offset": "0xc"
       },
@@ -599,6 +646,12 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
+        "Name": "pad0x30_BBK3S[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
         "Name": "EmitterName",
         "Type": "struct FName",
         "Size": "0x8",
@@ -620,6 +673,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x8_MRTDE[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -628,9 +687,15 @@
     "Attributes": [
       {
         "Name": "ParticleSpawnLODs",
-        "Type": "TArray<struct ParticleSpawnLODs>",
+        "Type": "TArray<struct FireParticleSpawnData>",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_R5QCD[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -639,19 +704,19 @@
     "Attributes": [
       {
         "Name": "Template",
-        "Type": "Struct FireCellStateParticleTemplate",
+        "Type": "struct FireCellStateParticleTemplate",
         "Size": "0x38",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_0X06D[0x8]",
+        "Name": "pad0x8_DFA2B[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "CellDesc",
-        "Type": "Struct FireCellDesc",
+        "Type": "struct FireCellDesc",
         "Size": "0x100",
         "Offset": "0x40"
       }
@@ -662,37 +727,37 @@
     "Attributes": [
       {
         "Name": "InteriorSmokeSpawnDescs",
-        "Type": "TArray<struct InteriorSmokeSpawnDescs>",
+        "Type": "TArray<struct FireGridRelativeSpawnDesc>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "LowDetailVFXSpawnDescs",
-        "Type": "TArray<struct LowDetailVFXSpawnDescs>",
+        "Type": "TArray<struct FireGridLowDetailRelativeSpawnDesc>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "ParticleSpawnLODSettings",
-        "Type": "TArray<struct ParticleSpawnLODSettings>",
+        "Type": "TArray<struct FireParticleSpawnData>",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "LowFrequencyParticleSpawnSettings",
-        "Type": "Struct FireParticleSpawnData",
+        "Type": "struct FireParticleSpawnData",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "ExteriorSmokeVFXSpawnDescs",
-        "Type": "TArray<struct ExteriorSmokeVFXSpawnDescs>",
+        "Type": "TArray<struct FireGridLowDetailRelativeSpawnDesc>",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "VFXParams",
-        "Type": "Class FireGridVFXParamsDataAsset*",
+        "Type": "class FireGridVFXParamsDataAsset*",
         "Size": "0x8",
         "Offset": "0x50"
       }
@@ -703,19 +768,19 @@
     "Attributes": [
       {
         "Name": "SpawnedParticleSystem",
-        "Type": "Class ParticleSystemComponent*",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_J1D9P[0x8]",
+        "Name": "pad0x8_EZV6M[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "ParticleTemplate",
-        "Type": "Struct FireCellStateParticleTemplate",
+        "Type": "struct FireCellStateParticleTemplate",
         "Size": "0x38",
         "Offset": "0x10"
       }
@@ -726,9 +791,15 @@
     "Attributes": [
       {
         "Name": "Mesh",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_EHZJS[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -737,13 +808,13 @@
     "Attributes": [
       {
         "Name": "DamagerType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "ShipFireDamageParams",
-        "Type": "TArray<struct ShipFireDamageParams>",
+        "Type": "TArray<struct ActorFireDamageParams>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -753,8 +824,14 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
+        "Name": "pad0x20_Q38E5[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
         "Name": "TimeInFireBeforeDamage",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -763,6 +840,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_X1E71[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       }
     ]
   },
@@ -805,7 +888,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_6L9CT[0x4]",
+        "Name": "pad0x4_OI736[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -840,21 +923,27 @@
       },
       {
         "Name": "AdditionalGridOffsetForCharring",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_F4ZRU[0x4]",
+        "Name": "pad0x4_RKCVE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
       },
       {
         "Name": "FireGridTexture",
-        "Type": "Class Texture2DDynamic*",
+        "Type": "class Texture2DDynamic*",
         "Size": "0x8",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0xb0_S8KWL[0xb0]",
+        "Type": "char",
+        "Size": "0xb0",
+        "Offset": "0x28"
       }
     ]
   },
@@ -862,13 +951,19 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
+        "Name": "pad0x30_3RKLY[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
         "Name": "LightPositionOffset",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_I1IV5[0x4]",
+        "Name": "pad0x4_DWDHF[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -898,27 +993,33 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Struct ShipFireLightRelativeSpawnDesc",
+        "Type": "struct ShipFireLightRelativeSpawnDesc",
         "Size": "0x58",
         "Offset": "0x0"
       },
       {
         "Name": "PointLight",
-        "Type": "Class PointLightComponent*",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x58"
       },
       {
         "Name": "AreaLight",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x60"
       },
       {
         "Name": "AreaLightMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x68"
+      },
+      {
+        "Name": "pad0x20_JRMO3[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x70"
       }
     ]
   },
@@ -927,31 +1028,31 @@
     "Attributes": [
       {
         "Name": "LightSpawnDescs",
-        "Type": "TArray<struct LightSpawnDescs>",
+        "Type": "TArray<struct ShipFireLightRelativeSpawnDesc>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "LightTemplate",
-        "Type": "Struct GenericLightTemplate",
+        "Type": "struct GenericLightTemplate",
         "Size": "0xd0",
         "Offset": "0x10"
       },
       {
         "Name": "Lights",
-        "Type": "TArray<struct Lights>",
+        "Type": "TArray<struct ShipFireLight>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
       {
         "Name": "Propagator",
-        "Type": "Class FirePropagator*",
+        "Type": "class FirePropagator*",
         "Size": "0x8",
         "Offset": "0xf0"
       },
       {
         "Name": "AreaLightMesh",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0xf8"
       },
@@ -986,22 +1087,28 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x4_VVQFX[0x4]",
+        "Name": "pad0x4_UQ3HJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x114"
       },
       {
         "Name": "LightParams",
-        "Type": "Class ShipFireLightParamsDataAsset*",
+        "Type": "class ShipFireLightParamsDataAsset*",
         "Size": "0x8",
         "Offset": "0x118"
       },
       {
         "Name": "ShipPostProcessComponent",
-        "Type": "Class PostProcessComponent*",
+        "Type": "class PostProcessComponent*",
         "Size": "0x8",
         "Offset": "0x120"
+      },
+      {
+        "Name": "pad0x28_E9DER[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x128"
       }
     ]
   },
@@ -1009,16 +1116,28 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
+        "Name": "pad0x28_IXTMT[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
         "Name": "FireGridActorPlayerIsInsideOf",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "PlayerShipSize",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x10_54QT6[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x38"
       }
     ]
   },

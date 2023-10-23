@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "Company",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -13,6 +13,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_5P663[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       }
     ]
   },
@@ -21,13 +27,13 @@
     "Attributes": [
       {
         "Name": "Company",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "QualityData",
-        "Type": "TArray<struct QualityData>",
+        "Type": "TArray<struct ComplexItemQualityEntry>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -73,7 +79,7 @@
         "Offset": "0x5"
       },
       {
-        "Name": "pad0x2_L4B37[0x2]",
+        "Name": "pad0x2_OATL9[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x6"

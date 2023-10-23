@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 class FontBulkData: public Object
 {
 public:
+	char                                                         pad0x98_UUN4D[0x98];                               // 0x28(0x98)
 };
 
 
@@ -38,6 +39,7 @@ public:
 class SlateWidgetStyleContainerBase: public Object
 {
 public:
+	char                                                         pad0x8_9M9SA[0x8];                                 // 0x28(0x8)
 };
 
 
@@ -45,7 +47,7 @@ public:
 class SlateWidgetStyleAsset: public Object
 {
 public:
-	Class SlateWidgetStyleContainerBase*                         CustomStyle;                                       // 0x28(0x8)
+	class SlateWidgetStyleContainerBase*                         CustomStyle;                                       // 0x28(0x8)
 };
 
 

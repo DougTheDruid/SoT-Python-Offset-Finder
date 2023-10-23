@@ -11,19 +11,19 @@ EditableGameplayTagQuery:
   - Name: UserDescription
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct FString
-  - Name: pad0x10_LKIF1[0x10]
+    Type: struct FString
+  - Name: pad0x10_MKMPM[0x10]
     Offset: '0x38'
     Size: '0x10'
     Type: char
   - Name: RootExpression
     Offset: '0x48'
     Size: '0x8'
-    Type: Class EditableGameplayTagQueryExpression*
+    Type: class EditableGameplayTagQueryExpression*
   - Name: TagQueryExportText_Helper
     Offset: '0x50'
     Size: '0x48'
-    Type: Struct GameplayTagQuery
+    Type: struct GameplayTagQuery
   ClassSize: '0x70'
   FullSize: '0x98'
   InheritedSize: '0x28'
@@ -49,7 +49,7 @@ EditableGameplayTagQueryExpression_AllTagsMatch:
   - Name: Tags
     Offset: '0x28'
     Size: '0x28'
-    Type: Struct GameplayTagContainer
+    Type: struct GameplayTagContainer
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -69,7 +69,7 @@ EditableGameplayTagQueryExpression_AnyTagsMatch:
   - Name: Tags
     Offset: '0x28'
     Size: '0x28'
-    Type: Struct GameplayTagContainer
+    Type: struct GameplayTagContainer
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -89,7 +89,7 @@ EditableGameplayTagQueryExpression_NoTagsMatch:
   - Name: Tags
     Offset: '0x28'
     Size: '0x28'
-    Type: Struct GameplayTagContainer
+    Type: struct GameplayTagContainer
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -102,7 +102,7 @@ GameplayTagAssetInterface:
   Super: Interface
 GameplayTagsManager:
   Attributes:
-  - Name: pad0x118_WFZFA[0x118]
+  - Name: pad0x118_6I8PA[0x118]
     Offset: '0x28'
     Size: '0x118'
     Type: char
@@ -110,7 +110,7 @@ GameplayTagsManager:
     Offset: '0x140'
     Size: '0x10'
     Type: TArray<class DataTable*>
-  - Name: pad0x20_0UQ8A[0x20]
+  - Name: pad0x20_UXUAO[0x20]
     Offset: '0x150'
     Size: '0x20'
     Type: char

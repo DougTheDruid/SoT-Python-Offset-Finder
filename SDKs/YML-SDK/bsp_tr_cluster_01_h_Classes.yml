@@ -2,35 +2,35 @@
 # https://github.com/DougTheDruid
 bsp_tr_cluster_01_h_C:
   Attributes:
-  - Name: None
+  - Name: wsp_bush_01_a25
     Offset: '0x408'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: NonVagueNonUniqueLandmark
     Offset: '0x410'
     Size: '0x8'
-    Type: Class NonVagueNonUniqueLandmarkComponent*
-  - Name: None
+    Type: class NonVagueNonUniqueLandmarkComponent*
+  - Name: wsp_tree_palm_01_b10
     Offset: '0x418'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: wsp_tree_palm_01_a
     Offset: '0x420'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: wsp_bush_01_a20
     Offset: '0x428'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: wsp_bush_06_b11
     Offset: '0x430'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: Scene
     Offset: '0x438'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x38'
   FullSize: '0x440'
   InheritedSize: '0x408'
-  Super: None
+  Super: BP_Placement_HeightDrop_C

@@ -4,13 +4,13 @@
     "Attributes": [
       {
         "Name": "BindingIds",
-        "Type": "TArray<struct BindingIds>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "References",
-        "Type": "TArray<struct References>",
+        "Type": "TArray<struct ActorSequenceObjectReferences>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -21,7 +21,7 @@
     "Attributes": [
       {
         "Name": "Array",
-        "Type": "TArray<struct Array>",
+        "Type": "TArray<struct ActorSequenceObjectReference>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -37,26 +37,26 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_P25L8[0x3]",
+        "Name": "pad0x3_GTVY6[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
       },
       {
         "Name": "ActorId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x4_ND6E7[0x4]",
+        "Name": "pad0x4_YI2DA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
       },
       {
         "Name": "PathToComponent",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x18"
       }

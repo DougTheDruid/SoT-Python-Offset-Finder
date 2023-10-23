@@ -5,30 +5,30 @@ ChecklistBootyDeliveredEvent:
   - Name: Seller
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: BuyingNPC
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x10'
 ChecklistCompletionEvent:
   Attributes:
   - Name: ActionData
     Offset: '0x0'
     Size: '0x8'
-    Type: Class ChecklistActionData*
+    Type: class ChecklistActionData*
   ClassSize: '0x8'
 ChecklistItem:
   Attributes:
   - Name: Description
     Offset: '0x0'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: NumRequiredActionCompletions
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_3DKL3[0x4]
+  - Name: pad0x4_8074L[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -42,50 +42,58 @@ ChecklistItemCompletedTelemetryEvent:
   - Name: ChecklistMapId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: ReceivedActionType
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_4D0B0[0x7]
+  - Name: pad0x7_35PFZ[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
   - Name: ActionDescryption
     Offset: '0x18'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x28'
 ChecklistMapContents:
   Attributes:
   - Name: Title
     Offset: '0x0'
     Size: '0x48'
-    Type: Struct TreasureMapTextDesc
+    Type: struct TreasureMapTextDesc
   - Name: Description
     Offset: '0x48'
     Size: '0x48'
-    Type: Struct TreasureMapTextDesc
+    Type: struct TreasureMapTextDesc
   - Name: ChecklistItems
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<struct ChecklistItems>
+    Type: TArray<struct ChecklistMapItemData>
   - Name: Afternote
     Offset: '0xa0'
     Size: '0x48'
-    Type: Struct TreasureMapTextDesc
+    Type: struct TreasureMapTextDesc
   ClassSize: '0xe8'
 ChecklistMapItemData:
   Attributes:
   - Name: Description
     Offset: '0x0'
     Size: '0x48'
-    Type: Struct TreasureMapTextDesc
+    Type: struct TreasureMapTextDesc
   - Name: IsComplete
     Offset: '0x48'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_W29LO[0x7]
+    Offset: '0x49'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x50'
 CompleteEntireChecklistEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_GQYL6[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'

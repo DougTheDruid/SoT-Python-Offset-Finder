@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_CaptainsLog_Interactable_Proxy_C: public CaptainsLogbookInteractableProxy
 {
 public:
-	Class SceneComponent*                                        PlayerPosition;                                    // 0x778(0x8)
+	class SceneComponent*                                        PlayerPosition;                                    // 0x778(0x8)
 };
 
 

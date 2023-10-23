@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 struct GameAssetCatalogModel
 {
 public:
+	char                                                         pad0xa0_SCNB3[0xa0];                               // 0x0(0xa0)
 };
 
 
@@ -17,9 +18,10 @@ public:
 struct GameAssetModel
 {
 public:
-	Struct FString                                               fullPath;                                          // 0x0(0x10)
-	Struct FString                                               FriendlyName;                                      // 0x10(0x10)
+	struct FString                                               fullPath;                                          // 0x0(0x10)
+	struct FString                                               FriendlyName;                                      // 0x10(0x10)
 	int                                                          performanceWeight;                                 // 0x20(0x4)
+	char                                                         pad0x4_TY2PS[0x4];                                 // 0x24(0x4)
 };
 
 

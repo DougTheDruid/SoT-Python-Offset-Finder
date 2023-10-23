@@ -3,8 +3,14 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
+        "Name": "pad0x30_VCHGM[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
         "Name": "SourceMeshComponent",
-        "Type": "Class SkeletalMeshComponent*",
+        "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x30"
       },
@@ -13,6 +19,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x87_BBJJQ[0x87]",
+        "Type": "char",
+        "Size": "0x87",
+        "Offset": "0x39"
       }
     ]
   },
@@ -20,8 +32,14 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
+        "Name": "pad0x30_KM1LL[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
         "Name": "ComponentPose",
-        "Type": "Struct ComponentSpacePoseLink",
+        "Type": "struct ComponentSpacePoseLink",
         "Size": "0x18",
         "Offset": "0x30"
       },
@@ -33,9 +51,15 @@
       },
       {
         "Name": "AlphaScaleBias",
-        "Type": "Struct InputScaleBias",
+        "Type": "struct InputScaleBias",
         "Size": "0x8",
         "Offset": "0x4c"
+      },
+      {
+        "Name": "pad0x4_CYG0A[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x54"
       }
     ]
   },
@@ -43,8 +67,14 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
+        "Name": "pad0x58_M53DO[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
         "Name": "SourceBone",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x58"
       },
@@ -55,14 +85,14 @@
         "Offset": "0x64"
       },
       {
-        "Name": "pad0x3_XO6RA[0x3]",
+        "Name": "pad0x3_I28YM[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x65"
       },
       {
         "Name": "DrivingCurve",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x68"
       },
@@ -79,7 +109,7 @@
         "Offset": "0x74"
       },
       {
-        "Name": "pad0x3_NH8ME[0x3]",
+        "Name": "pad0x3_QLXH8[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x75"
@@ -110,7 +140,7 @@
       },
       {
         "Name": "TargetBone",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x88"
       },
@@ -121,7 +151,7 @@
         "Offset": "0x94"
       },
       {
-        "Name": "pad0x3_X8DSX[0x3]",
+        "Name": "pad0x3_4YHH0[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x95"
@@ -181,7 +211,7 @@
         "Offset": "0x99"
       },
       {
-        "Name": "pad0x2_HAQJA[0x2]",
+        "Name": "pad0x2_HX8NU[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x9a"
@@ -191,6 +221,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x9c"
+      },
+      {
+        "Name": "pad0x3_0PRAL[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9d"
       }
     ]
   },
@@ -198,14 +234,20 @@
     "ClassSize": "0x78",
     "Attributes": [
       {
+        "Name": "pad0x58_YNQPL[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
         "Name": "SourceBone",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x58"
       },
       {
         "Name": "TargetBone",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x64"
       },
@@ -226,6 +268,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x72"
+      },
+      {
+        "Name": "pad0x5_ZKJHJ[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x73"
       }
     ]
   },
@@ -233,8 +281,14 @@
     "ClassSize": "0xd0",
     "Attributes": [
       {
+        "Name": "pad0x60_3P610[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x0"
+      },
+      {
         "Name": "EffectorTransform",
-        "Type": "Struct Transform",
+        "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0x60"
       },
@@ -245,14 +299,14 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x3_NJEXN[0x3]",
+        "Name": "pad0x3_OR8OV[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x91"
       },
       {
         "Name": "EffectorTransformBone",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x94"
       },
@@ -263,20 +317,20 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x3_68SS9[0x3]",
+        "Name": "pad0x3_E1LNI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xa1"
       },
       {
         "Name": "TipBone",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0xa4"
       },
       {
         "Name": "RootBone",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0xb0"
       },
@@ -297,6 +351,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xc4"
+      },
+      {
+        "Name": "pad0xb_M7543[0xb]",
+        "Type": "char",
+        "Size": "0xb",
+        "Offset": "0xc5"
       }
     ]
   },
@@ -304,32 +364,38 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
+        "Name": "pad0x58_2F0CV[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
         "Name": "RightHandFK",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x58"
       },
       {
         "Name": "LeftHandFK",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x64"
       },
       {
         "Name": "RightHandIK",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x70"
       },
       {
         "Name": "LeftHandIK",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x7c"
       },
       {
         "Name": "IKBonesToMove",
-        "Type": "TArray<struct IKBonesToMove>",
+        "Type": "TArray<struct BoneReference>",
         "Size": "0x10",
         "Offset": "0x88"
       },
@@ -338,6 +404,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x4_YWVH7[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x9c"
       }
     ]
   },
@@ -345,20 +417,26 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
+        "Name": "pad0x58_BEXT8[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
         "Name": "BoneToModify",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x58"
       },
       {
         "Name": "LookAtBone",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x64"
       },
       {
         "Name": "LookAtLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x70"
       },
@@ -381,7 +459,7 @@
         "Offset": "0x7e"
       },
       {
-        "Name": "pad0x1_R2BWW[0x1]",
+        "Name": "pad0x1_MPCGQ[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x7f"
@@ -399,7 +477,7 @@
         "Offset": "0x84"
       },
       {
-        "Name": "pad0x3_MMGSP[0x3]",
+        "Name": "pad0x3_1RBQF[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x85"
@@ -421,6 +499,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x2f_C6JPG[0x2f]",
+        "Type": "char",
+        "Size": "0x2f",
+        "Offset": "0x91"
       }
     ]
   },
@@ -428,26 +512,32 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
+        "Name": "pad0x58_5CG21[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
         "Name": "BoneToModify",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x58"
       },
       {
         "Name": "Translation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x64"
       },
       {
         "Name": "Rotation",
-        "Type": "Struct Rotator",
+        "Type": "struct Rotator",
         "Size": "0xc",
         "Offset": "0x70"
       },
       {
         "Name": "Scale",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x7c"
       },
@@ -486,6 +576,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8d"
+      },
+      {
+        "Name": "pad0x2_HEEIN[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x8e"
       }
     ]
   },
@@ -493,8 +589,14 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
+        "Name": "pad0x58_P18DX[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
         "Name": "BoneToObserve",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x58"
       },
@@ -511,28 +613,34 @@
         "Offset": "0x65"
       },
       {
-        "Name": "pad0x2_QX0R3[0x2]",
+        "Name": "pad0x2_3NMG0[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x66"
       },
       {
         "Name": "Translation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x68"
       },
       {
         "Name": "Rotation",
-        "Type": "Struct Rotator",
+        "Type": "struct Rotator",
         "Size": "0xc",
         "Offset": "0x74"
       },
       {
         "Name": "Scale",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x4_5BEHY[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x8c"
       }
     ]
   },
@@ -540,14 +648,20 @@
     "ClassSize": "0x78",
     "Attributes": [
       {
+        "Name": "pad0x58_18O29[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
         "Name": "TargetBone",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x58"
       },
       {
         "Name": "SourceBone",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x64"
       },
@@ -568,6 +682,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x75"
+      },
+      {
+        "Name": "pad0x2_IOLPD[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x76"
       }
     ]
   },
@@ -575,8 +695,14 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
+        "Name": "pad0x58_7NVUT[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
         "Name": "SpringBone",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x58"
       },
@@ -587,7 +713,7 @@
         "Offset": "0x64"
       },
       {
-        "Name": "pad0x3_K6GKJ[0x3]",
+        "Name": "pad0x3_ZAKJZ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x65"
@@ -657,6 +783,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x7e"
+      },
+      {
+        "Name": "pad0x29_BQ02Z[0x29]",
+        "Type": "char",
+        "Size": "0x29",
+        "Offset": "0x7f"
       }
     ]
   },
@@ -664,8 +796,14 @@
     "ClassSize": "0xe0",
     "Attributes": [
       {
+        "Name": "pad0x58_KYIKC[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
         "Name": "TrailBone",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x58"
       },
@@ -694,7 +832,7 @@
         "Offset": "0x6a"
       },
       {
-        "Name": "pad0x1_2C9L4[0x1]",
+        "Name": "pad0x1_95W8U[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x6b"
@@ -713,7 +851,7 @@
       },
       {
         "Name": "FakeVelocity",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x74"
       },
@@ -722,6 +860,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x5f_2OP6K[0x5f]",
+        "Type": "char",
+        "Size": "0x5f",
+        "Offset": "0x81"
       }
     ]
   },
@@ -729,26 +873,32 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
+        "Name": "pad0x58_4VRH9[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
         "Name": "IKBone",
-        "Type": "Struct BoneReference",
+        "Type": "struct BoneReference",
         "Size": "0xc",
         "Offset": "0x58"
       },
       {
         "Name": "EffectorLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x64"
       },
       {
         "Name": "JointTargetLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x70"
       },
       {
         "Name": "StretchLimits",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x7c"
       },
@@ -777,7 +927,7 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x3_SGMRW[0x3]",
+        "Name": "pad0x3_8W9JI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x8d"
@@ -795,7 +945,7 @@
         "Offset": "0x91"
       },
       {
-        "Name": "pad0x2_J6PSY[0x2]",
+        "Name": "pad0x2_6W29Y[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x92"
@@ -805,6 +955,12 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x94"
+      },
+      {
+        "Name": "pad0x4_M8BWY[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x9c"
       }
     ]
   },

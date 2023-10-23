@@ -7,14 +7,14 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x136_F6H3B[0x136]",
+        "Name": "pad0x170_IS33W[0x170]",
         "Type": "char",
-        "Size": "0x136",
+        "Size": "0x170",
         "Offset": "0x120"
       },
       {
@@ -24,13 +24,13 @@
         "Offset": "0x120"
       },
       {
-        "Name": "pad0x7_UDCDS[0x7]",
+        "Name": "pad0x7_GEI52[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x121"
       },
       {
-        "Name": "pad0x10_D6ZL0[0x10]",
+        "Name": "pad0x10_LAWEA[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x128"

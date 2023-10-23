@@ -4,19 +4,19 @@
     "Attributes": [
       {
         "Name": "EventID",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "ServerId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "ServerTimeUTC",
-        "Type": "Struct DateTime",
+        "Type": "struct DateTime",
         "Size": "0x8",
         "Offset": "0x20"
       }
@@ -27,13 +27,13 @@
     "Attributes": [
       {
         "Name": "EventID",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "ServerTimeUTC",
-        "Type": "Struct DateTime",
+        "Type": "struct DateTime",
         "Size": "0x8",
         "Offset": "0x10"
       },
@@ -42,6 +42,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_0F587[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       }
     ]
   },
@@ -50,7 +56,7 @@
     "Attributes": [
       {
         "Name": "EventsSwitched",
-        "Type": "TArray<struct EventsSwitched>",
+        "Type": "TArray<struct EventEntityIdsSwitch>",
         "Size": "0x10",
         "Offset": "0x0"
       },

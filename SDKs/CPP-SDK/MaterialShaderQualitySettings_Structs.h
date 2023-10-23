@@ -21,9 +21,9 @@ public:
 struct ShaderQualityOverridesListItem
 {
 public:
-	Struct FString                                               RangeName;                                         // 0x0(0x10)
-	Class BoolProperty*                                          QualityProperty;                                   // 0x10(0x8)
-	Class ShaderPlatformQualitySettings*                         SettingContainer;                                  // 0x18(0x8)
+	struct FString                                               RangeName;                                         // 0x0(0x10)
+	class BoolProperty*                                          QualityProperty;                                   // 0x10(0x8)
+	class ShaderPlatformQualitySettings*                         SettingContainer;                                  // 0x18(0x8)
 };
 
 

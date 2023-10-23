@@ -1,7 +1,14 @@
 {
   "BlueprintSessionResult": {
     "ClassSize": "0xe0",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xe0_ZEVY5[0xe0]",
+        "Type": "char",
+        "Size": "0xe0",
+        "Offset": "0x0"
+      }
+    ]
   },
   "PartyReservation": {
     "ClassSize": "0x30",
@@ -13,20 +20,20 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_Z82GV[0x4]",
+        "Name": "pad0x4_KKK44[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "PartyLeader",
-        "Type": "Struct UniqueNetIdRepl",
+        "Type": "struct UniqueNetIdRepl",
         "Size": "0x18",
         "Offset": "0x8"
       },
       {
         "Name": "PartyMembers",
-        "Type": "TArray<struct PartyMembers>",
+        "Type": "TArray<struct PlayerReservation>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -37,13 +44,13 @@
     "Attributes": [
       {
         "Name": "UniqueId",
-        "Type": "Struct UniqueNetIdRepl",
+        "Type": "struct UniqueNetIdRepl",
         "Size": "0x18",
         "Offset": "0x0"
       },
       {
         "Name": "ValidationStr",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -52,6 +59,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_M6VAC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
       }
     ]
   },

@@ -2,29 +2,37 @@
 # https://github.com/DougTheDruid
 ActorFireDamageParams:
   Attributes:
+  - Name: pad0x20_Q38E5[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: TimeInFireBeforeDamage
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: LevelsOfDamage
     Offset: '0x30'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_X1E71[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x38'
 CookerIgnitionParams:
   Attributes:
   - Name: InitialIgnitionTime
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: SuccessIgnitionTime
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: FailureIgnitionTime
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: ChanceToIgnite
     Offset: '0x30'
     Size: '0x4'
@@ -32,30 +40,30 @@ CookerIgnitionParams:
   - Name: IgnitionSelection
     Offset: '0x34'
     Size: '0x44'
-    Type: Struct FireGridCellSelection
+    Type: struct FireGridCellSelection
   ClassSize: '0x78'
 FireCellAudioParams:
   Attributes:
   - Name: EmitterPool
     Offset: '0x0'
     Size: '0x8'
-    Type: Class WwiseObjectPoolWrapper*
+    Type: class WwiseObjectPoolWrapper*
   - Name: DousePool
     Offset: '0x8'
     Size: '0x8'
-    Type: Class WwiseObjectPoolWrapper*
+    Type: class WwiseObjectPoolWrapper*
   - Name: FirePlay
     Offset: '0x10'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: FireStop
     Offset: '0x18'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: FireDouse
     Offset: '0x20'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: FireSwitchGroup
     Offset: '0x28'
     Size: '0x8'
@@ -74,15 +82,15 @@ FireCellDesc:
   - Name: Position
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: BoundingBox
     Offset: '0xc'
     Size: '0x1c'
-    Type: Struct Box
+    Type: struct Box
   - Name: GridPosition
     Offset: '0x28'
     Size: '0xc'
-    Type: Struct IntVector
+    Type: struct IntVector
   - Name: CanBurn
     Offset: '0x34'
     Size: '0x1'
@@ -95,7 +103,7 @@ FireCellDesc:
     Offset: '0x36'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_4ZREC[0x1]
+  - Name: pad0x1_JT3L0[0x1]
     Offset: '0x37'
     Size: '0x1'
     Type: char
@@ -111,26 +119,26 @@ FireCellDesc:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0xf_81BC2[0xf]
+  - Name: pad0xf_94Q27[0xf]
     Offset: '0x41'
     Size: '0xf'
     Type: char
   - Name: DefaultParticleEffectSpawnTransform
     Offset: '0x50'
     Size: '0x30'
-    Type: Struct Transform
+    Type: struct Transform
   - Name: DefaultParticleEffectPlane
     Offset: '0x80'
     Size: '0x10'
-    Type: Struct Plane
+    Type: struct Plane
   - Name: CustomParticleEffectTemplates
     Offset: '0x90'
     Size: '0x10'
-    Type: TArray<struct CustomParticleEffectTemplates>
+    Type: TArray<struct FireCellStateParticleTemplate>
   - Name: CustomParticleEffectSpawnTransform
     Offset: '0xa0'
     Size: '0x30'
-    Type: Struct Transform
+    Type: struct Transform
   - Name: NeighbourCellIndices
     Offset: '0xd0'
     Size: '0x10'
@@ -138,33 +146,37 @@ FireCellDesc:
   - Name: CustomAddedDiagonalNeighbourOffsets
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<struct CustomAddedDiagonalNeighbourOffsets>
+    Type: TArray<struct IntVector>
   - Name: CustomRemovedDefaultNeighbourOffsets
     Offset: '0xf0'
     Size: '0x10'
-    Type: TArray<struct CustomRemovedDefaultNeighbourOffsets>
+    Type: TArray<struct IntVector>
   ClassSize: '0x100'
 FireCellStateData:
-  Attributes: []
+  Attributes:
+  - Name: pad0x30_FRPWQ[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x30'
 FireCellStateParticleTemplate:
   Attributes:
   - Name: Template
     Offset: '0x0'
     Size: '0x8'
-    Type: Class ParticleSystem*
+    Type: class ParticleSystem*
   - Name: TranslucencySortPriority
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_FH5JV[0x4]
+  - Name: pad0x4_O89N4[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
   - Name: Mesh
     Offset: '0x10'
     Size: '0x8'
-    Type: Class StaticMesh*
+    Type: class StaticMesh*
   - Name: MeshSpawnTime
     Offset: '0x18'
     Size: '0x4'
@@ -176,7 +188,7 @@ FireCellStateParticleTemplate:
   - Name: MeshScale
     Offset: '0x20'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: State
     Offset: '0x2c'
     Size: '0x1'
@@ -185,7 +197,7 @@ FireCellStateParticleTemplate:
     Offset: '0x2d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_MNBUN[0x2]
+  - Name: pad0x2_H23MX[0x2]
     Offset: '0x2e'
     Size: '0x2'
     Type: char
@@ -201,21 +213,25 @@ FireCellStateParticleTemplate:
     Offset: '0x35'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_XNFJQ[0x2]
+    Offset: '0x36'
+    Size: '0x2'
+    Type: char
   ClassSize: '0x38'
 FireCellStateTimingParams:
   Attributes:
   - Name: KindleTime
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: BurningTime
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: RainExposureTime
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: CharringTime
     Offset: '0x30'
     Size: '0x4'
@@ -223,49 +239,49 @@ FireCellStateTimingParams:
   - Name: SmoulderingTime
     Offset: '0x34'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: SteamingTime
     Offset: '0x44'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: WetTime
     Offset: '0x54'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: SidewaysPropagationTime
     Offset: '0x64'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: UpwardPropagationTime
     Offset: '0x74'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: DownwardPropagationTime
     Offset: '0x84'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   ClassSize: '0x94'
 FireDefaultVFXSpawnData:
   Attributes:
   - Name: Template
     Offset: '0x0'
     Size: '0x38'
-    Type: Struct FireCellStateParticleTemplate
-  - Name: pad0x8_0X06D[0x8]
+    Type: struct FireCellStateParticleTemplate
+  - Name: pad0x8_DFA2B[0x8]
     Offset: '0x38'
     Size: '0x8'
     Type: char
   - Name: CellDesc
     Offset: '0x40'
     Size: '0x100'
-    Type: Struct FireCellDesc
+    Type: struct FireCellDesc
   ClassSize: '0x140'
 FireExtinguishedEvent:
   Attributes:
   - Name: ExtinguishLocation
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   ClassSize: '0xc'
 FireGridCellSelection:
   Attributes:
@@ -293,29 +309,29 @@ FireGridCellSelection:
     Offset: '0x11'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_FTXA9[0x2]
+  - Name: pad0x2_AP7U4[0x2]
     Offset: '0x12'
     Size: '0x2'
     Type: char
   - Name: SidewaysPropagationTimeOverride
     Offset: '0x14'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: UpwardPropagationTimeOverride
     Offset: '0x24'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: DownwardPropagationTimeOverride
     Offset: '0x34'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   ClassSize: '0x44'
 FireGridCellSelectionParams:
   Attributes:
   - Name: ActorClassFilter
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: ChanceToAffectTheActor
     Offset: '0x8'
     Size: '0x4'
@@ -323,7 +339,7 @@ FireGridCellSelectionParams:
   - Name: FireGridCellSelectionParams
     Offset: '0xc'
     Size: '0x44'
-    Type: Struct FireGridCellSelection
+    Type: struct FireGridCellSelection
   ClassSize: '0x50'
 FireGridCharringManager:
   Attributes:
@@ -334,18 +350,26 @@ FireGridCharringManager:
   - Name: AdditionalGridOffsetForCharring
     Offset: '0x10'
     Size: '0xc'
-    Type: Struct Vector
-  - Name: pad0x4_F4ZRU[0x4]
+    Type: struct Vector
+  - Name: pad0x4_RKCVE[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
   - Name: FireGridTexture
     Offset: '0x20'
     Size: '0x8'
-    Type: Class Texture2DDynamic*
+    Type: class Texture2DDynamic*
+  - Name: pad0xb0_S8KWL[0xb0]
+    Offset: '0x28'
+    Size: '0xb0'
+    Type: char
   ClassSize: '0xd8'
 FireGridLowDetailRelativeSpawnDesc:
   Attributes:
+  - Name: pad0x30_BBK3S[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
   - Name: EmitterName
     Offset: '0x30'
     Size: '0x8'
@@ -356,11 +380,11 @@ FireGridRelativeSpawnDesc:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: GridLocation
     Offset: '0xc'
     Size: '0xc'
-    Type: Struct IntVector
+    Type: struct IntVector
   - Name: NumCellRowsToSpawnFor
     Offset: '0x18'
     Size: '0x4'
@@ -379,19 +403,19 @@ FireGridVFXParams:
   - Name: DefaultParticleTemplates
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct DefaultParticleTemplates>
+    Type: TArray<struct FireCellStateParticleTemplate>
   - Name: ExteriorLowDetailParticleSystem
     Offset: '0x10'
     Size: '0x8'
-    Type: Class ParticleSystem*
+    Type: class ParticleSystem*
   - Name: ExteriorSmokeParticleSystem
     Offset: '0x18'
     Size: '0x8'
-    Type: Class ParticleSystem*
+    Type: class ParticleSystem*
   - Name: InteriorSmokeParticleSystem
     Offset: '0x20'
     Size: '0x8'
-    Type: Class ParticleSystem*
+    Type: class ParticleSystem*
   - Name: InteriorSmokeTranslucencySortPriority
     Offset: '0x28'
     Size: '0x4'
@@ -422,34 +446,38 @@ FireGridVfxSpawnSettings:
   - Name: InteriorSmokeSpawnDescs
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct InteriorSmokeSpawnDescs>
+    Type: TArray<struct FireGridRelativeSpawnDesc>
   - Name: LowDetailVFXSpawnDescs
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct LowDetailVFXSpawnDescs>
+    Type: TArray<struct FireGridLowDetailRelativeSpawnDesc>
   - Name: ParticleSpawnLODSettings
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<struct ParticleSpawnLODSettings>
+    Type: TArray<struct FireParticleSpawnData>
   - Name: LowFrequencyParticleSpawnSettings
     Offset: '0x30'
     Size: '0x10'
-    Type: Struct FireParticleSpawnData
+    Type: struct FireParticleSpawnData
   - Name: ExteriorSmokeVFXSpawnDescs
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<struct ExteriorSmokeVFXSpawnDescs>
+    Type: TArray<struct FireGridLowDetailRelativeSpawnDesc>
   - Name: VFXParams
     Offset: '0x50'
     Size: '0x8'
-    Type: Class FireGridVFXParamsDataAsset*
+    Type: class FireGridVFXParamsDataAsset*
   ClassSize: '0x58'
 FireMesh:
   Attributes:
   - Name: Mesh
     Offset: '0x0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
+  - Name: pad0x8_EHZJS[0x8]
+    Offset: '0x8'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x10'
 FireParticleSpawnData:
   Attributes:
@@ -461,28 +489,36 @@ FireParticleSpawnData:
     Offset: '0x4'
     Size: '0x4'
     Type: float
+  - Name: pad0x8_MRTDE[0x8]
+    Offset: '0x8'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x10'
 FireParticleSpawnList:
   Attributes:
   - Name: ParticleSpawnLODs
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct ParticleSpawnLODs>
+    Type: TArray<struct FireParticleSpawnData>
+  - Name: pad0x10_R5QCD[0x10]
+    Offset: '0x10'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x20'
 FireParticleSystem:
   Attributes:
   - Name: SpawnedParticleSystem
     Offset: '0x0'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: pad0x8_J1D9P[0x8]
+    Type: class ParticleSystemComponent*
+  - Name: pad0x8_EZV6M[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char
   - Name: ParticleTemplate
     Offset: '0x10'
     Size: '0x38'
-    Type: Struct FireCellStateParticleTemplate
+    Type: struct FireCellStateParticleTemplate
   ClassSize: '0x48'
 HullCharringPersistenceModel:
   Attributes:
@@ -494,6 +530,10 @@ HullCharringPersistenceModel:
     Offset: '0x10'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_SFE76[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
 OnFireChangedEvent:
   Attributes:
@@ -503,21 +543,37 @@ OnFireChangedEvent:
     Type: bool
   ClassSize: '0x1'
 OnShipIgnitedEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_I8JHB[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 PlayerFireGridTickParams:
   Attributes:
+  - Name: pad0x28_IXTMT[0x28]
+    Offset: '0x0'
+    Size: '0x28'
+    Type: char
   - Name: FireGridActorPlayerIsInsideOf
     Offset: '0x28'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: PlayerShipSize
     Offset: '0x30'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
+  - Name: pad0x10_54QT6[0x10]
+    Offset: '0x38'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x48'
 PlayerNearBurningFireGridUpdatedEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_IH6I1[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
 ReplicatedFireCellCharringData:
   Attributes:
@@ -525,7 +581,7 @@ ReplicatedFireCellCharringData:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_6L9CT[0x4]
+  - Name: pad0x4_OI736[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -546,53 +602,57 @@ ShipFireDamageParams:
   - Name: DamagerType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: ShipFireDamageParams
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct ShipFireDamageParams>
+    Type: TArray<struct ActorFireDamageParams>
   ClassSize: '0x18'
 ShipFireLight:
   Attributes:
   - Name: Desc
     Offset: '0x0'
     Size: '0x58'
-    Type: Struct ShipFireLightRelativeSpawnDesc
+    Type: struct ShipFireLightRelativeSpawnDesc
   - Name: PointLight
     Offset: '0x58'
     Size: '0x8'
-    Type: Class PointLightComponent*
+    Type: class PointLightComponent*
   - Name: AreaLight
     Offset: '0x60'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: AreaLightMaterial
     Offset: '0x68'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
+  - Name: pad0x20_JRMO3[0x20]
+    Offset: '0x70'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x90'
 ShipFireLightManager:
   Attributes:
   - Name: LightSpawnDescs
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct LightSpawnDescs>
+    Type: TArray<struct ShipFireLightRelativeSpawnDesc>
   - Name: LightTemplate
     Offset: '0x10'
     Size: '0xd0'
-    Type: Struct GenericLightTemplate
+    Type: struct GenericLightTemplate
   - Name: Lights
     Offset: '0xe0'
     Size: '0x10'
-    Type: TArray<struct Lights>
+    Type: TArray<struct ShipFireLight>
   - Name: Propagator
     Offset: '0xf0'
     Size: '0x8'
-    Type: Class FirePropagator*
+    Type: class FirePropagator*
   - Name: AreaLightMesh
     Offset: '0xf8'
     Size: '0x8'
-    Type: Class StaticMesh*
+    Type: class StaticMesh*
   - Name: AreaLightZScale
     Offset: '0x100'
     Size: '0x4'
@@ -613,18 +673,22 @@ ShipFireLightManager:
     Offset: '0x110'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_VVQFX[0x4]
+  - Name: pad0x4_UQ3HJ[0x4]
     Offset: '0x114'
     Size: '0x4'
     Type: char
   - Name: LightParams
     Offset: '0x118'
     Size: '0x8'
-    Type: Class ShipFireLightParamsDataAsset*
+    Type: class ShipFireLightParamsDataAsset*
   - Name: ShipPostProcessComponent
     Offset: '0x120'
     Size: '0x8'
-    Type: Class PostProcessComponent*
+    Type: class PostProcessComponent*
+  - Name: pad0x28_E9DER[0x28]
+    Offset: '0x128'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x150'
 ShipFireLightParams:
   Attributes:
@@ -647,11 +711,15 @@ ShipFireLightParams:
   ClassSize: '0x14'
 ShipFireLightRelativeSpawnDesc:
   Attributes:
+  - Name: pad0x30_3RKLY[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
   - Name: LightPositionOffset
     Offset: '0x30'
     Size: '0xc'
-    Type: Struct Vector
-  - Name: pad0x4_I1IV5[0x4]
+    Type: struct Vector
+  - Name: pad0x4_DWDHF[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -669,8 +737,16 @@ ShipFireLightRelativeSpawnDesc:
     Type: float
   ClassSize: '0x58'
 ShipOnFireBeginEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_YEFES[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 ShipOnFireEndEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_B5YUP[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'

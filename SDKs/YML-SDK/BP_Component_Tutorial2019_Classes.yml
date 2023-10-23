@@ -5,10 +5,10 @@ BP_Component_Tutorial2019_C:
   - Name: UberGraphFrame
     Offset: '0xd8'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
-  - Name: pad0x177_6H2JO[0x177]
+    Type: struct PointerToUberGraphFrame
+  - Name: pad0x1b0_7880N[0x1b0]
     Offset: '0xe0'
-    Size: '0x177'
+    Size: '0x1b0'
     Type: char
   - Name: GoldHoarders
     Offset: '0xe0'
@@ -17,11 +17,11 @@ BP_Component_Tutorial2019_C:
   - Name: GoldHoarderLocations
     Offset: '0xf0'
     Size: '0x10'
-    Type: TArray<struct GoldHoarderLocations>
+    Type: TArray<struct Vector>
   - Name: GoToVendorPromptObject
     Offset: '0x100'
     Size: '0x8'
-    Type: BlueprintGeneratedClass BP_Prompt_CTPurchaseVoyageSequence_C*
+    Type: blueprintgeneratedclass BP_Prompt_CTPurchaseVoyageSequence_C*
   - Name: NPCBlacklist
     Offset: '0x108'
     Size: '0x10'
@@ -34,14 +34,14 @@ BP_Component_Tutorial2019_C:
     Offset: '0x128'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_ANWRI[0x7]
+  - Name: pad0x7_QUEUM[0x7]
     Offset: '0x129'
     Size: '0x7'
     Type: char
   - Name: Handle_PlayerFinishedSpawning
     Offset: '0x130'
     Size: '0x58'
-    Type: Struct ObjectMessagingHandle
+    Type: struct ObjectMessagingHandle
   ClassSize: '0xb0'
   FullSize: '0x188'
   InheritedSize: '0xd8'

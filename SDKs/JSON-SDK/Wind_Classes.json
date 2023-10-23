@@ -25,7 +25,14 @@
     "FullSize": "0x40",
     "InheritedSize": "0x28",
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_J73RZ[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x28"
+      }
+    ]
   },
   "TestWindInterface": {
     "Super": "Object",
@@ -34,7 +41,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x30_L5A3D[0x30]",
+        "Name": "pad0x30_PHGFQ[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x28"
@@ -52,7 +59,14 @@
     "FullSize": "0x50",
     "InheritedSize": "0x28",
     "ClassSize": "0x28",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x28_RTRBZ[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x28"
+      }
+    ]
   },
   "WindFunctions": {
     "Super": "BlueprintFunctionLibrary",
@@ -68,19 +82,19 @@
     "ClassSize": "0x138",
     "Attributes": [
       {
-        "Name": "pad0x10_DY24T[0x10]",
+        "Name": "pad0x10_6PBIP[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
       },
       {
         "Name": "GlobalWindSource",
-        "Type": "Class WindDirectionalSource*",
+        "Type": "class WindDirectionalSource*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x10_814OK[0x10]",
+        "Name": "pad0x10_TE5OD[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3e0"
@@ -98,7 +112,7 @@
         "Offset": "0x3f4"
       },
       {
-        "Name": "pad0xe8_0H1QD[0xe8]",
+        "Name": "pad0xe8_M2GWI[0xe8]",
         "Type": "char",
         "Size": "0xe8",
         "Offset": "0x3f8"
@@ -122,7 +136,14 @@
     "FullSize": "0x510",
     "InheritedSize": "0x500",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_YDHNQ[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x500"
+      }
+    ]
   },
   "WindServiceParamsFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
@@ -138,25 +159,25 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x8_DNJ8A[0x8]",
+        "Name": "pad0x8_CNLUT[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2e0"
       },
       {
         "Name": "TurbulenceParams",
-        "Type": "Struct WindTurbulenceParameters",
+        "Type": "struct WindTurbulenceParameters",
         "Size": "0x70",
         "Offset": "0x2e8"
       },
       {
         "Name": "WindZoneParams",
-        "Type": "Struct WindZoneParams",
+        "Type": "struct WindZoneParams",
         "Size": "0x10",
         "Offset": "0x358"
       },
       {
-        "Name": "pad0x8_D97RT[0x8]",
+        "Name": "pad0x8_RPC8D[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x368"

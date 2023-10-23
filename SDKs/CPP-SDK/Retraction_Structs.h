@@ -20,7 +20,7 @@ public:
 struct EventItemProxyMovedFromSlot
 {
 public:
-	Struct Vector                                                ItemLocation;                                      // 0x0(0xc)
+	struct Vector                                                ItemLocation;                                      // 0x0(0xc)
 };
 
 
@@ -28,7 +28,7 @@ public:
 struct EventAttachedRetractableToItemProxy
 {
 public:
-	Class Actor*                                                 Item;                                              // 0x0(0x8)
+	class Actor*                                                 Item;                                              // 0x0(0x8)
 };
 
 

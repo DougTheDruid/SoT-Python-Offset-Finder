@@ -7,43 +7,43 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x9a0"
       },
       {
         "Name": "LanternTriggerGlow",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x9a8"
       },
       {
         "Name": "LanternGlow",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x9b0"
       },
       {
         "Name": "AmbientLightSource",
-        "Type": "Class AmbientLightSourceComponent*",
+        "Type": "class AmbientLightSourceComponent*",
         "Size": "0x8",
         "Offset": "0x9b8"
       },
       {
         "Name": "SpotLight",
-        "Type": "Class SpotLightComponent*",
+        "Type": "class SpotLightComponent*",
         "Size": "0x8",
         "Offset": "0x9c0"
       },
       {
         "Name": "UsableWieldable",
-        "Type": "Class UsableWieldableComponent*",
+        "Type": "class UsableWieldableComponent*",
         "Size": "0x8",
         "Offset": "0x9c8"
       },
       {
         "Name": "LanternGlowDynamicMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x9d0"
       },
@@ -54,14 +54,14 @@
         "Offset": "0x9d8"
       },
       {
-        "Name": "pad0x4_9HKPV[0x4]",
+        "Name": "pad0x4_X4H7Y[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x9dc"
       },
       {
         "Name": "LanternTriggerGlowDynamicMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x9e0"
       },
@@ -85,24 +85,24 @@
       },
       {
         "Name": "DefaultSpotlightColour",
-        "Type": "Struct LinearColor",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x9f4"
       },
       {
         "Name": "DefaultAmbientLightColour",
-        "Type": "Struct LinearColor",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0xa04"
       },
       {
         "Name": "DefaultGlowColour",
-        "Type": "Struct LinearColor",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0xa14"
       },
       {
-        "Name": "pad0x4_B2Y3N[0x4]",
+        "Name": "pad0x4_HURJR[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xa24"

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_FogBank_C: public FogBank
 {
 public:
-	Class AthenaPlayerZonePenetrationTrackerComponent*           AthenaPlayerZonePenetrationTracker;                // 0x590(0x8)
+	class AthenaPlayerZonePenetrationTrackerComponent*           AthenaPlayerZonePenetrationTracker;                // 0x590(0x8)
 };
 
 

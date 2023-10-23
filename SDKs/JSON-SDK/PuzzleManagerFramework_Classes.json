@@ -27,19 +27,19 @@
     "ClassSize": "0xb8",
     "Attributes": [
       {
-        "Name": "pad0x10_NJLH4[0x10]",
+        "Name": "pad0x10_HIXO3[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "PuzzleManager",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
-        "Name": "pad0xa0_IK7EH[0xa0]",
+        "Name": "pad0xa0_DXMQG[0xa0]",
         "Type": "char",
         "Size": "0xa0",
         "Offset": "0x40"

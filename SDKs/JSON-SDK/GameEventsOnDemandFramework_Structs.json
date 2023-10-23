@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "EventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -21,22 +21,33 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x6_Q7LDB[0x6]",
+        "Name": "pad0x6_BMP4X[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x12"
       },
       {
         "Name": "ShipSizeLimit",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x18"
       },
       {
         "Name": "ParticipatingCrewIds",
-        "Type": "TArray<struct ParticipatingCrewIds>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "GameEventOnDemandCompleted": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "OnDemandCrewIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -45,7 +56,7 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -56,7 +67,29 @@
     "Attributes": [
       {
         "Name": "OnDemandCrewIds",
-        "Type": "TArray<struct OnDemandCrewIds>",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CrewFailedToJoinGameEventOnDemand": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CrewJoinedGameEventOnDemand": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -67,19 +100,19 @@
     "Attributes": [
       {
         "Name": "ShipSizeLimit",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "ParticipatingOnDemandCrews",
-        "Type": "TArray<struct ParticipatingOnDemandCrews>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "ParticipatingCrews",
-        "Type": "TArray<struct ParticipatingCrews>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -98,22 +131,43 @@
   },
   "GameEventOnDemandCrewCancelledVoyageTelemetryEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_1817R[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "GameEventOnDemandCrewSinkingTelemetryEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_XTIIM[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "GameEventOnDemandCrewScuttledTelemetryEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_NJJOM[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "GameEventOnDemandCrewJoinedTelemetryEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "ShipType",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -124,13 +178,13 @@
     "Attributes": [
       {
         "Name": "GameEventType",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "GameEventOnDemandId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -141,49 +195,15 @@
     "Attributes": [
       {
         "Name": "GameEventType",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "GameEventOnDemandId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "SkellyFortGameEventOnDemandDeactivatedTelemetryEvent": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "FortName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "FortId",
-        "Type": "Struct Guid",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "SkellyFortGameEventOnDemandActivatedTelemetryEvent": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "FortName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "FortId",
-        "Type": "Struct Guid",
-        "Size": "0x10",
-        "Offset": "0xc"
       }
     ]
   },

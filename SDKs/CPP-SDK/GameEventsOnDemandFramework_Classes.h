@@ -6,47 +6,63 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
+// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
 class GameEventAvailabilityParamsDataAsset: public DataAsset
 {
 public:
-	Struct WeightedProbabilityRangeOfRanges                      MatchmakingCooldownRanges;                         // 0x28(0x30)
-	Struct WeightedProbabilityRange                              CrewsJoinedOnDemandLimitRange;                     // 0x58(0x20)
+	struct WeightedProbabilityRangeOfRanges                      MatchmakingCooldownRanges;                         // 0x28(0x30)
+	struct WeightedProbabilityRange                              CrewsJoinedOnDemandLimitRange;                     // 0x58(0x20)
 	float                                                        InitialCooldown;                                   // 0x78(0x4)
 	int                                                          ProgressStateLimit;                                // 0x7c(0x4)
 	bool                                                         ShouldApplyShipTypeLimit;                          // 0x80(0x1)
-	char                                                         pad0x3_LLQK4[0x3];                                 // 0x81(0x3)
-	Struct FeatureFlag                                           SendCrewToLoserTunnelFeature;                      // 0x84(0xc)
+	bool                                                         ShouldIgnoreIfCrewsEngagingEmergently;             // 0x81(0x1)
+	char                                                         pad0x2_E9TPX[0x2];                                 // 0x82(0x2)
+	float                                                        EmergentCrewLeftRegionCooldown;                    // 0x84(0x4)
+	struct FeatureFlag                                           SendCrewToLoserTunnelFeature;                      // 0x88(0xc)
+	char                                                         pad0x4_NZZ8P[0x4];                                 // 0x94(0x4)
 };
 
 
-// Size 0xb8 (Full Size[0x180] - InheritedSize[0xc8]
+// Size 0xd0 (Full Size[0x198] - InheritedSize[0xc8]
 class GameEventOnDemandAnnouncementComponent: public ActorComponent
 {
 public:
-	Struct FeatureFlag                                           FeatureFlag;                                       // 0xc8(0xc)
+	struct FeatureFlag                                           FeatureFlag;                                       // 0xc8(0xc)
 	bool                                                         ShouldFireBannerForAnyCrewEnteringIslandVicinity;  // 0xd4(0x1)
-	char                                                         pad0x3_1LK98[0x3];                                 // 0xd5(0x3)
+	bool                                                         ShouldFireGameEventCompletedBannerForEmergentCrews; // 0xd5(0x1)
+	byte                                                         ResetCachedCrewsTrigger;                           // 0xd6(0x1)
+	char                                                         pad0x1_KEGG9[0x1];                                 // 0xd7(0x1)
 	struct FName                                                 IslandName;                                        // 0xd8(0x8)
 	TArray<Weakclass CurrentTrackedPawns>                        CurrentTrackedPawns;                               // 0xe0(0x10)
-	TArray<struct OnDemandParticipatingCrewIds>                  OnDemandParticipatingCrewIds;                      // 0xf0(0x10)
-	TArray<struct TrackedShipCrewIds>                            TrackedShipCrewIds;                                // 0x100(0x10)
-	class                                                        GameEventType;                                     // 0x110(0x8)
-	char                                                         pad0x5c_MBEAT[0x5c];                               // 0x118(0x5c)
-	struct FName                                                 TemporaryBannerTag;                                // 0x174(0x8)
-	char                                                         pad0x4_32UQN[0x4];                                 // 0x17c(0x4)
+	TArray<struct Guid>                                          OnDemandParticipatingCrewIds;                      // 0xf0(0x10)
+	TArray<struct Guid>                                          TrackedShipCrewIds;                                // 0x100(0x10)
+	class UClass*                                                GameEventType;                                     // 0x110(0x8)
+	char                                                         pad0x74_NZT24[0x74];                               // 0x118(0x74)
+	struct FName                                                 TemporaryBannerTag;                                // 0x18c(0x8)
+	char                                                         pad0x4_ACCZU[0x4];                                 // 0x194(0x4)
 };
 
 
-// Size 0x128 (Full Size[0x150] - InheritedSize[0x28]
+// Size 0x78 (Full Size[0xa0] - InheritedSize[0x28]
+class GameEventOnDemandAvailabilityHandler: public Object
+{
+public:
+	class GameEventAvailabilityParamsDataAsset*                  AvailabilityParamsAsset;                           // 0x28(0x8)
+	class GameEventOnDemandAvailabilityStateTracker*             AvailabilityStateTracker;                          // 0x30(0x8)
+	class UClass*                                                GameEventType;                                     // 0x38(0x8)
+	char                                                         pad0x60_S6235[0x60];                               // 0x40(0x60)
+};
+
+
+// Size 0x108 (Full Size[0x130] - InheritedSize[0x28]
 class GameEventOnDemandAvailabilityStateTracker: public Object
 {
 public:
-	char                                                         pad0x88_VSWRQ[0x88];                               // 0x28(0x88)
-	class                                                        ShipTypeLimit;                                     // 0xb0(0x8)
-	TArray<struct ParticipatingCrewIds>                          ParticipatingCrewIds;                              // 0xb8(0x10)
-	TArray<struct PreparingToJoinCrewIds>                        PreparingToJoinCrewIds;                            // 0xc8(0x10)
-	char                                                         pad0x78_FQQ8H[0x78];                               // 0xd8(0x78)
+	char                                                         pad0x88_EF5FL[0x88];                               // 0x28(0x88)
+	class UClass*                                                ShipTypeLimit;                                     // 0xb0(0x8)
+	TArray<struct Guid>                                          OnDemandParticipatingCrewIds;                      // 0xb8(0x10)
+	TArray<struct Guid>                                          EmergentlyParticipatingCrewIds;                    // 0xc8(0x10)
+	char                                                         pad0x58_RCX02[0x58];                               // 0xd8(0x58)
 };
 
 
@@ -65,6 +81,13 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GameEventsOnDemandInstanceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class GameEventsOnDemandInterface: public Interface
 {
 public:
@@ -75,6 +98,23 @@ public:
 class GameEventsOnDemandLoserTunnelServiceInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x90 (Full Size[0x128] - InheritedSize[0x98]
+class WaitForGameEventOnDemandToCompleteStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x90_E1CEX[0x90];                               // 0x98(0x90)
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class WaitForGameEventOnDemandToCompleteStepDesc: public TaleQuestStepDesc
+{
+public:
+	bool                                                         DeactivationMeansCompletion;                       // 0x80(0x1)
+	char                                                         pad0x7_IN85S[0x7];                                 // 0x81(0x7)
 };
 
 

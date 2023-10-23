@@ -7,79 +7,131 @@ AchievementBlueprintLibrary:
   InheritedSize: '0x28'
   Super: BlueprintFunctionLibrary
 AchievementQueryCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x38_23QXS[0x38]
+    Offset: '0x28'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
   Super: OnlineBlueprintCallProxyBase
 AchievementWriteCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x58_KHXT9[0x58]
+    Offset: '0x28'
+    Size: '0x58'
+    Type: char
   ClassSize: '0x58'
   FullSize: '0x80'
   InheritedSize: '0x28'
   Super: OnlineBlueprintCallProxyBase
 ConnectionCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x40_4FIA9[0x40]
+    Offset: '0x28'
+    Size: '0x40'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'
   Super: OnlineBlueprintCallProxyBase
 CreateSessionCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x58_G7NTI[0x58]
+    Offset: '0x28'
+    Size: '0x58'
+    Type: char
   ClassSize: '0x58'
   FullSize: '0x80'
   InheritedSize: '0x28'
   Super: OnlineBlueprintCallProxyBase
 DestroySessionCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x40_2UDSU[0x40]
+    Offset: '0x28'
+    Size: '0x40'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'
   Super: OnlineBlueprintCallProxyBase
 EndMatchCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x50_YRJNA[0x50]
+    Offset: '0x28'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x50'
   FullSize: '0x78'
   InheritedSize: '0x28'
   Super: OnlineBlueprintCallProxyBase
 EndTurnCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x48_JN67N[0x48]
+    Offset: '0x28'
+    Size: '0x48'
+    Type: char
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
   Super: OnlineBlueprintCallProxyBase
 FindSessionsCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x60_OUAKF[0x60]
+    Offset: '0x28'
+    Size: '0x60'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
   Super: OnlineBlueprintCallProxyBase
 FindTurnBasedMatchCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x60_HX1GU[0x60]
+    Offset: '0x28'
+    Size: '0x60'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
   Super: OnlineBlueprintCallProxyBase
 InAppPurchaseCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x60_MKZ3M[0x60]
+    Offset: '0x28'
+    Size: '0x60'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
   Super: Object
 InAppPurchaseQueryCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x70_ZQV2S[0x70]
+    Offset: '0x28'
+    Size: '0x70'
+    Type: char
   ClassSize: '0x70'
   FullSize: '0x98'
   InheritedSize: '0x28'
   Super: Object
 InAppPurchaseRestoreCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x70_XDMWF[0x70]
+    Offset: '0x28'
+    Size: '0x70'
+    Type: char
   ClassSize: '0x70'
   FullSize: '0x98'
   InheritedSize: '0x28'
   Super: Object
 IpConnection:
-  Attributes: []
+  Attributes:
+  - Name: pad0x50_6T6WC[0x50]
+    Offset: '0x345a0'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x50'
   FullSize: '0x345f0'
   InheritedSize: '0x345a0'
@@ -94,11 +146,11 @@ IpNetDriver:
     Offset: '0x478'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_KPLR4[0x3]
+  - Name: pad0x3_E2THS[0x3]
     Offset: '0x479'
     Size: '0x3'
     Type: char
-  - Name: pad0x4c_977AZ[0x4c]
+  - Name: pad0x4c_P6YTP[0x4c]
     Offset: '0x47c'
     Size: '0x4c'
     Type: char
@@ -107,7 +159,11 @@ IpNetDriver:
   InheritedSize: '0x478'
   Super: NetDriver
 JoinSessionCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x120_H8ODE[0x120]
+    Offset: '0x28'
+    Size: '0x120'
+    Type: char
   ClassSize: '0x120'
   FullSize: '0x148'
   InheritedSize: '0x28'
@@ -119,26 +175,38 @@ LeaderboardBlueprintLibrary:
   InheritedSize: '0x28'
   Super: BlueprintFunctionLibrary
 LeaderboardFlushCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x38_VOZZW[0x38]
+    Offset: '0x28'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
   Super: Object
 LeaderboardQueryCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x68_2ATPA[0x68]
+    Offset: '0x28'
+    Size: '0x68'
+    Type: char
   ClassSize: '0x68'
   FullSize: '0x90'
   InheritedSize: '0x28'
   Super: Object
 LogoutCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x38_K4WU6[0x38]
+    Offset: '0x28'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
   Super: BlueprintAsyncActionBase
 OnlineBeacon:
   Attributes:
-  - Name: pad0x8_IRVSX[0x8]
+  - Name: pad0x8_4HV0L[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -153,8 +221,8 @@ OnlineBeacon:
   - Name: NetDriver
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class NetDriver*
-  - Name: pad0x10_KK28T[0x10]
+    Type: class NetDriver*
+  - Name: pad0x10_SHFBH[0x10]
     Offset: '0x3e0'
     Size: '0x10'
     Type: char
@@ -167,16 +235,16 @@ OnlineBeaconClient:
   - Name: BeaconOwner
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class OnlineBeaconHostObject*
+    Type: class OnlineBeaconHostObject*
   - Name: BeaconConnection
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class NetConnection*
+    Type: class NetConnection*
   - Name: ConnectionState
     Offset: '0x400'
     Size: '0x1'
     Type: byte
-  - Name: pad0x17_70N4S[0x17]
+  - Name: pad0x17_94NAO[0x17]
     Offset: '0x401'
     Size: '0x17'
     Type: char
@@ -190,7 +258,7 @@ OnlineBeaconHost:
     Offset: '0x3f0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_UCPAZ[0x4]
+  - Name: pad0x4_SX8KI[0x4]
     Offset: '0x3f4'
     Size: '0x4'
     Type: char
@@ -198,7 +266,7 @@ OnlineBeaconHost:
     Offset: '0x3f8'
     Size: '0x10'
     Type: TArray<class OnlineBeaconClient*>
-  - Name: pad0xa0_BTJQB[0xa0]
+  - Name: pad0xa0_AMDTP[0xa0]
     Offset: '0x408'
     Size: '0xa0'
     Type: char
@@ -211,11 +279,11 @@ OnlineBeaconHostObject:
   - Name: BeaconTypeName
     Offset: '0x3c8'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ClientBeaconActorClass
     Offset: '0x3d8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: ClientActors
     Offset: '0x3e0'
     Size: '0x10'
@@ -232,7 +300,7 @@ OnlineBlueprintCallProxyBase:
   Super: Object
 OnlineSessionClient:
   Attributes:
-  - Name: pad0x138_H0GPL[0x138]
+  - Name: pad0x138_5YDW8[0x138]
     Offset: '0x28'
     Size: '0x138'
     Type: char
@@ -244,7 +312,7 @@ OnlineSessionClient:
     Offset: '0x161'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_OK8GB[0x6]
+  - Name: pad0x6_JHON5[0x6]
     Offset: '0x162'
     Size: '0x6'
     Type: char
@@ -254,18 +322,18 @@ OnlineSessionClient:
   Super: OnlineSession
 PartyBeaconClient:
   Attributes:
-  - Name: pad0x10_JT33U[0x10]
+  - Name: pad0x10_RIW1O[0x10]
     Offset: '0x418'
     Size: '0x10'
     Type: char
   - Name: DestSessionId
     Offset: '0x428'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: PendingReservation
     Offset: '0x438'
     Size: '0x30'
-    Type: Struct PartyReservation
+    Type: struct PartyReservation
   - Name: RequestType
     Offset: '0x468'
     Size: '0x1'
@@ -278,7 +346,7 @@ PartyBeaconClient:
     Offset: '0x46a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_XZ2GE[0x5]
+  - Name: pad0x5_4490Z[0x5]
     Offset: '0x46b'
     Size: '0x5'
     Type: char
@@ -291,8 +359,8 @@ PartyBeaconHost:
   - Name: State
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class PartyBeaconState*
-  - Name: pad0x28_B4OWF[0x28]
+    Type: class PartyBeaconState*
+  - Name: pad0x28_VTPE9[0x28]
     Offset: '0x3f8'
     Size: '0x28'
     Type: char
@@ -341,8 +409,8 @@ PartyBeaconState:
   - Name: Reservations
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<struct Reservations>
-  - Name: pad0x10_6PV4G[0x10]
+    Type: TArray<struct PartyReservation>
+  - Name: pad0x10_BP2I4[0x10]
     Offset: '0x58'
     Size: '0x10'
     Type: char
@@ -351,13 +419,21 @@ PartyBeaconState:
   InheritedSize: '0x28'
   Super: Object
 QuitMatchCallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x48_HQO9W[0x48]
+    Offset: '0x28'
+    Size: '0x48'
+    Type: char
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
   Super: OnlineBlueprintCallProxyBase
 ShowLoginUICallbackProxy:
-  Attributes: []
+  Attributes:
+  - Name: pad0x30_1RXX4[0x30]
+    Offset: '0x28'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'

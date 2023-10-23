@@ -5,31 +5,31 @@ BP_InteractableShipLantern_C:
   - Name: UberGraphFrame
     Offset: '0x708'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: Interactable
     Offset: '0x710'
     Size: '0x8'
-    Type: Class InteractableComponent*
+    Type: class InteractableComponent*
   - Name: LanternGlow
     Offset: '0x718'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Lantern
     Offset: '0x720'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Hook
     Offset: '0x728'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: DynamicMaterial
     Offset: '0x730'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
   - Name: DynamicGlowMaterial
     Offset: '0x738'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
   - Name: FlameParameterName
     Offset: '0x740'
     Size: '0x8'
@@ -62,14 +62,14 @@ BP_InteractableShipLantern_C:
     Offset: '0x768'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_8W2AF[0x3]
+  - Name: pad0x3_CGWX9[0x3]
     Offset: '0x769'
     Size: '0x3'
     Type: char
   - Name: DefaultGlowColour
     Offset: '0x76c'
     Size: '0x10'
-    Type: Struct LinearColor
+    Type: struct LinearColor
   - Name: CurrentFlameOFateType
     Offset: '0x77c'
     Size: '0x1'

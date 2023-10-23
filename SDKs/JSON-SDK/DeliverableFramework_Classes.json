@@ -4,7 +4,14 @@
     "FullSize": "0x30",
     "InheritedSize": "0x28",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_MPVBX[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
   },
   "DeliverableInterface": {
     "Super": "Interface",
@@ -27,19 +34,19 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x10_VGD2T[0x10]",
+        "Name": "pad0x10_B877R[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "DeliveryRequirementsAsset",
-        "Type": "Class DeliverableRequirementsDataAsset*",
+        "Type": "class DeliverableRequirementsDataAsset*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x8_EX3O6[0x8]",
+        "Name": "pad0x8_NYWR3[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xe0"
@@ -53,14 +60,14 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_7BGJ5[0x8]",
+        "Name": "pad0x8_E0U13[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "Context",
-        "Type": "Class DeliverableRedirectionContextBase*",
+        "Type": "class DeliverableRedirectionContextBase*",
         "Size": "0x8",
         "Offset": "0xd0"
       }
@@ -93,7 +100,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x18_5W6LN[0x18]",
+        "Name": "pad0x18_FH384[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x38"
@@ -115,7 +122,7 @@
     "Attributes": [
       {
         "Name": "DestinationDescriptor",
-        "Type": "Class DeliverableRedirectionDestinationDescriptorBase*",
+        "Type": "class DeliverableRedirectionDestinationDescriptorBase*",
         "Size": "0x8",
         "Offset": "0x28"
       }
@@ -129,7 +136,7 @@
     "Attributes": [
       {
         "Name": "Destination",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x28"
       }
@@ -149,7 +156,7 @@
       },
       {
         "Name": "FeatureOverrideRequirements",
-        "Type": "Struct DeliverableRequirementFeatureOverride",
+        "Type": "struct DeliverableRequirementFeatureOverride",
         "Size": "0x18",
         "Offset": "0x38"
       }

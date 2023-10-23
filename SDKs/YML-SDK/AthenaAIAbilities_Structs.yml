@@ -5,31 +5,39 @@ AshenLordFireShroud:
   - Name: FireShroudOverlapZone
     Offset: '0x0'
     Size: '0x8'
-    Type: Class StatusEffectOverlapZone*
+    Type: class StatusEffectOverlapZone*
   - Name: Params
     Offset: '0x8'
     Size: '0x18'
-    Type: Struct AshenLordFireShroudParams
+    Type: struct AshenLordFireShroudParams
   ClassSize: '0x20'
 AshenLordFireShroudParams:
   Attributes:
   - Name: FireShroudZoneClass
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: FireShroudCollisionVolume
     Offset: '0x8'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
+  - Name: pad0x4_LW53F[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
 MeleeAttackIdWeights:
   Attributes:
   - Name: MeleeAttackType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Weight
     Offset: '0x8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_P9ZSQ[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'

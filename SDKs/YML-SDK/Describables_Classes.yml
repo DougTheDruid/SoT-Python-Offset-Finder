@@ -2,31 +2,31 @@
 # https://github.com/DougTheDruid
 DescribableComponent:
   Attributes:
-  - Name: pad0x8_ZZ0KL[0x8]
-    Offset: '0x128'
+  - Name: pad0x8_QDLNN[0x8]
+    Offset: '0x138'
     Size: '0x8'
     Type: char
   - Name: TooltipActiveOnBeginPlay
-    Offset: '0x130'
+    Offset: '0x140'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_QEYZD[0x7]
-    Offset: '0x131'
+  - Name: pad0x7_U74RS[0x7]
+    Offset: '0x141'
     Size: '0x7'
     Type: char
   - Name: DescribableTooltipText
-    Offset: '0x138'
+    Offset: '0x148'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: TooltipActive
-    Offset: '0x170'
+    Offset: '0x180'
     Size: '0x1'
     Type: bool
-  - Name: pad0x17_AYOYE[0x17]
-    Offset: '0x171'
+  - Name: pad0x17_QVLWV[0x17]
+    Offset: '0x181'
     Size: '0x17'
     Type: char
   ClassSize: '0x60'
-  FullSize: '0x188'
-  InheritedSize: '0x128'
+  FullSize: '0x198'
+  InheritedSize: '0x138'
   Super: InteractableComponent

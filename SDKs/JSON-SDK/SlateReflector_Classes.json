@@ -7,12 +7,12 @@
     "Attributes": [
       {
         "Name": "Geometry",
-        "Type": "Struct Geometry",
+        "Type": "struct Geometry",
         "Size": "0x34",
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_TIK2K[0x4]",
+        "Name": "pad0x4_VLV1L[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x5c"
@@ -25,7 +25,7 @@
       },
       {
         "Name": "Tint",
-        "Type": "Struct LinearColor",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x70"
       }
@@ -36,7 +36,14 @@
     "FullSize": "0x98",
     "InheritedSize": "0x80",
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_3I909[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x80"
+      }
+    ]
   },
   "SnapshotWidgetReflectorNode": {
     "Super": "WidgetReflectorNodeBase",
@@ -46,25 +53,25 @@
     "Attributes": [
       {
         "Name": "CachedWidgetType",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x80"
       },
       {
         "Name": "CachedWidgetVisibilityText",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0xb8"
       },
       {
         "Name": "CachedWidgetReadableLocation",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0xf0"
       },
       {
         "Name": "CachedWidgetFile",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x128"
       },
@@ -82,25 +89,25 @@
       },
       {
         "Name": "CachedWidgetDesiredSize",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x144"
       },
       {
-        "Name": "pad0x4_FIIBA[0x4]",
+        "Name": "pad0x4_PD8H0[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14c"
       },
       {
         "Name": "CachedWidgetForegroundColor",
-        "Type": "Struct SlateColor",
+        "Type": "struct SlateColor",
         "Size": "0x30",
         "Offset": "0x150"
       },
       {
         "Name": "CachedWidgetAddress",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x180"
       },
@@ -111,7 +118,7 @@
         "Offset": "0x190"
       },
       {
-        "Name": "pad0x7_O9EXN[0x7]",
+        "Name": "pad0x7_QXOTA[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x191"

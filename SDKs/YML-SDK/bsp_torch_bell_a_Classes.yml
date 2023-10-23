@@ -2,14 +2,14 @@
 # https://github.com/DougTheDruid
 bsp_torch_bell_a_C:
   Attributes:
-  - Name: None
+  - Name: PointLight
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class PointLightComponent*
-  - Name: None
+    Type: class PointLightComponent*
+  - Name: ParticleSystem
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Type: class ParticleSystemComponent*
   ClassSize: '0x10'
   FullSize: '0x3e8'
   InheritedSize: '0x3d8'

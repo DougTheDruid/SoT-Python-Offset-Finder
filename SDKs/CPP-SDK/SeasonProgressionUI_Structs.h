@@ -10,13 +10,14 @@ namespace DougsSDKDumper
 struct SeasonIconPopupAsset
 {
 public:
-	Struct StringAssetReference                                  GlowIcon;                                          // 0x0(0x10)
-	Struct StringAssetReference                                  Icon;                                              // 0x10(0x10)
-	Struct FString                                               ToastSfxEventName;                                 // 0x20(0x10)
-	Struct FString                                               ToastEventName;                                    // 0x30(0x10)
-	Struct FString                                               ToastSwitchName;                                   // 0x40(0x10)
-	Struct FString                                               ToastSwitchValue;                                  // 0x50(0x10)
+	struct StringAssetReference                                  GlowIcon;                                          // 0x0(0x10)
+	struct StringAssetReference                                  Icon;                                              // 0x10(0x10)
+	struct FString                                               ToastSfxEventName;                                 // 0x20(0x10)
+	struct FString                                               ToastEventName;                                    // 0x30(0x10)
+	struct FString                                               ToastSwitchName;                                   // 0x40(0x10)
+	struct FString                                               ToastSwitchValue;                                  // 0x50(0x10)
 	float                                                        ToastHoldDuration;                                 // 0x60(0x4)
+	char                                                         pad0x4_CJ32R[0x4];                                 // 0x64(0x4)
 };
 
 
@@ -24,14 +25,15 @@ public:
 struct SeasonTextPopupAsset
 {
 public:
-	Struct StringAssetReference                                  GlowIcon;                                          // 0x0(0x10)
-	Struct StringAssetReference                                  Icon;                                              // 0x10(0x10)
-	Struct FText                                                 Message;                                           // 0x20(0x38)
-	Struct FString                                               ToastSfxEventName;                                 // 0x58(0x10)
-	Struct FString                                               ToastEventName;                                    // 0x68(0x10)
-	Struct FString                                               ToastSwitchName;                                   // 0x78(0x10)
-	Struct FString                                               ToastSwitchValue;                                  // 0x88(0x10)
+	struct StringAssetReference                                  GlowIcon;                                          // 0x0(0x10)
+	struct StringAssetReference                                  Icon;                                              // 0x10(0x10)
+	struct FText                                                 Message;                                           // 0x20(0x38)
+	struct FString                                               ToastSfxEventName;                                 // 0x58(0x10)
+	struct FString                                               ToastEventName;                                    // 0x68(0x10)
+	struct FString                                               ToastSwitchName;                                   // 0x78(0x10)
+	struct FString                                               ToastSwitchValue;                                  // 0x88(0x10)
 	float                                                        ToastHoldDuration;                                 // 0x98(0x4)
+	char                                                         pad0x4_Y2MK7[0x4];                                 // 0x9c(0x4)
 };
 
 
@@ -40,14 +42,15 @@ struct SeasonGoalPopupAsset
 {
 public:
 	struct FName                                                 Category;                                          // 0x0(0x8)
-	Struct StringAssetReference                                  GlowIcon;                                          // 0x8(0x10)
-	Struct StringAssetReference                                  Icon;                                              // 0x18(0x10)
-	Struct StringAssetReference                                  ChatIcon;                                          // 0x28(0x10)
-	Struct FString                                               ToastSfxEventName;                                 // 0x38(0x10)
-	Struct FString                                               ToastEventName;                                    // 0x48(0x10)
-	Struct FString                                               ToastSwitchName;                                   // 0x58(0x10)
-	Struct FString                                               ToastSwitchValue;                                  // 0x68(0x10)
+	struct StringAssetReference                                  GlowIcon;                                          // 0x8(0x10)
+	struct StringAssetReference                                  Icon;                                              // 0x18(0x10)
+	struct StringAssetReference                                  ChatIcon;                                          // 0x28(0x10)
+	struct FString                                               ToastSfxEventName;                                 // 0x38(0x10)
+	struct FString                                               ToastEventName;                                    // 0x48(0x10)
+	struct FString                                               ToastSwitchName;                                   // 0x58(0x10)
+	struct FString                                               ToastSwitchValue;                                  // 0x68(0x10)
 	float                                                        ToastHoldDuration;                                 // 0x78(0x4)
+	char                                                         pad0x4_UJ19W[0x4];                                 // 0x7c(0x4)
 };
 
 
@@ -55,13 +58,14 @@ public:
 struct SeasonNotificationContent
 {
 public:
-	Struct StringAssetReference                                  GlowIcon;                                          // 0x0(0x10)
-	Struct StringAssetReference                                  Icon;                                              // 0x10(0x10)
-	Struct FString                                               SfxEventName;                                      // 0x20(0x10)
-	Struct FString                                               EventName;                                         // 0x30(0x10)
-	Struct FString                                               SwitchName;                                        // 0x40(0x10)
-	Struct FString                                               SwitchValue;                                       // 0x50(0x10)
+	struct StringAssetReference                                  GlowIcon;                                          // 0x0(0x10)
+	struct StringAssetReference                                  Icon;                                              // 0x10(0x10)
+	struct FString                                               SfxEventName;                                      // 0x20(0x10)
+	struct FString                                               EventName;                                         // 0x30(0x10)
+	struct FString                                               SwitchName;                                        // 0x40(0x10)
+	struct FString                                               SwitchValue;                                       // 0x50(0x10)
 	float                                                        ToastHoldDuration;                                 // 0x60(0x4)
+	char                                                         pad0x4_QSIS1[0x4];                                 // 0x64(0x4)
 };
 
 
@@ -69,13 +73,13 @@ public:
 struct DeedProgressDesc
 {
 public:
-	Struct FString                                               Description;                                       // 0x0(0x10)
-	Struct FString                                               Icon;                                              // 0x10(0x10)
-	Struct NavigationDesc                                        NavigationDesc;                                    // 0x20(0x14)
+	struct FString                                               Description;                                       // 0x0(0x10)
+	struct FString                                               Icon;                                              // 0x10(0x10)
+	struct NavigationDesc                                        NavigationDesc;                                    // 0x20(0x14)
 	int                                                          ProgressValue;                                     // 0x34(0x4)
 	int                                                          Threshold;                                         // 0x38(0x4)
-	char                                                         pad0x4_Z94TG[0x4];                                 // 0x3c(0x4)
-	Struct GenericPopupAudioDescriptor                           Audio;                                             // 0x40(0x40)
+	char                                                         pad0x4_16GCA[0x4];                                 // 0x3c(0x4)
+	struct GenericPopupAudioDescriptor                           Audio;                                             // 0x40(0x40)
 };
 
 
@@ -84,8 +88,8 @@ struct NavigationDesc
 {
 public:
 	byte                                                         Action;                                            // 0x0(0x1)
-	char                                                         pad0x3_AIPIK[0x3];                                 // 0x1(0x3)
-	Struct Guid                                                  Id;                                                // 0x4(0x10)
+	char                                                         pad0x3_JUW7L[0x3];                                 // 0x1(0x3)
+	struct Guid                                                  Id;                                                // 0x4(0x10)
 };
 
 
@@ -93,9 +97,9 @@ public:
 struct SeasonsTextNotification
 {
 public:
-	Struct StringAssetReference                                  IconUrl;                                           // 0x0(0x10)
-	Struct FText                                                 Message;                                           // 0x10(0x38)
-	Struct GenericPopupAudioDescriptor                           Audio;                                             // 0x48(0x40)
+	struct StringAssetReference                                  IconUrl;                                           // 0x0(0x10)
+	struct FText                                                 Message;                                           // 0x10(0x38)
+	struct GenericPopupAudioDescriptor                           Audio;                                             // 0x48(0x40)
 };
 
 
@@ -103,9 +107,9 @@ public:
 struct SeasonsChatNotification
 {
 public:
-	Struct FString                                               IconUrl;                                           // 0x0(0x10)
-	Struct FString                                               Message;                                           // 0x10(0x10)
-	Struct GenericPopupAudioDescriptor                           Audio;                                             // 0x20(0x40)
+	struct FString                                               IconUrl;                                           // 0x0(0x10)
+	struct FString                                               Message;                                           // 0x10(0x10)
+	struct GenericPopupAudioDescriptor                           Audio;                                             // 0x20(0x40)
 };
 
 
@@ -113,6 +117,7 @@ public:
 struct SeasonsDataRefreshEvent
 {
 public:
+	char                                                         pad0x1_LMUTW[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -121,8 +126,8 @@ struct OpenSeasonsMenuEvent
 {
 public:
 	byte                                                         NavigationAction;                                  // 0x0(0x1)
-	char                                                         pad0x3_9FLO5[0x3];                                 // 0x1(0x3)
-	Struct Guid                                                  Id;                                                // 0x4(0x10)
+	char                                                         pad0x3_F64VR[0x3];                                 // 0x1(0x3)
+	struct Guid                                                  Id;                                                // 0x4(0x10)
 };
 
 
@@ -139,8 +144,8 @@ struct EnableMoreButtonEvent
 {
 public:
 	byte                                                         MoreButtonSource;                                  // 0x0(0x1)
-	char                                                         pad0x3_GA77W[0x3];                                 // 0x1(0x3)
-	Struct NavigationDesc                                        Navigation;                                        // 0x4(0x14)
+	char                                                         pad0x3_2ULLJ[0x3];                                 // 0x1(0x3)
+	struct NavigationDesc                                        Navigation;                                        // 0x4(0x14)
 };
 
 
@@ -148,7 +153,7 @@ public:
 struct ShowDeedProgressEvent
 {
 public:
-	Struct DeedProgressDesc                                      DeedProgressDesc;                                  // 0x0(0x80)
+	struct DeedProgressDesc                                      DeedProgressDesc;                                  // 0x0(0x80)
 };
 
 
@@ -156,7 +161,8 @@ public:
 struct SeasonsTextNotificationNetworkEvent
 {
 public:
-	Struct SeasonsTextNotification                               SeasonsTextNotification;                           // 0x10(0x88)
+	char                                                         pad0x10_ANI87[0x10];                               // 0x0(0x10)
+	struct SeasonsTextNotification                               SeasonsTextNotification;                           // 0x10(0x88)
 };
 
 
@@ -164,7 +170,8 @@ public:
 struct SeasonsChatNotificationNetworkEvent
 {
 public:
-	Struct SeasonsChatNotificationEvent                          SeasonsChatNotificationEvent;                      // 0x10(0x60)
+	char                                                         pad0x10_CNPDI[0x10];                               // 0x0(0x10)
+	struct SeasonsChatNotificationEvent                          SeasonsChatNotificationEvent;                      // 0x10(0x60)
 };
 
 
@@ -172,7 +179,7 @@ public:
 struct SeasonsChatNotificationEvent
 {
 public:
-	Struct SeasonsChatNotification                               SeasonsChatNotification;                           // 0x0(0x60)
+	struct SeasonsChatNotification                               SeasonsChatNotification;                           // 0x0(0x60)
 };
 
 
@@ -180,6 +187,7 @@ public:
 struct SeasonProgressionUITelemetryFragmentInput
 {
 public:
+	char                                                         pad0x8_GZHRS[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -187,8 +195,9 @@ public:
 struct SeasonProgressionUITelemetryFragment
 {
 public:
-	TArray<struct ReceivedEventsData>                            ReceivedEventsData;                                // 0x0(0x10)
+	TArray<struct SeasonProgressionUIEventTypeTelemetryFragment> ReceivedEventsData;                                // 0x0(0x10)
 	int                                                          TotalNumReceivedEvents;                            // 0x10(0x4)
+	char                                                         pad0x4_5Q9WN[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -196,8 +205,9 @@ public:
 struct SeasonProgressionUIEventTypeTelemetryFragment
 {
 public:
-	Struct FString                                               EventName;                                         // 0x0(0x10)
+	struct FString                                               EventName;                                         // 0x0(0x10)
 	int                                                          NumReceivedEvents;                                 // 0x10(0x4)
+	char                                                         pad0x4_IUZ4Q[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -207,12 +217,13 @@ struct SeasonsPopupEvent
 public:
 	TArray<struct FText>                                         Text;                                              // 0x0(0x10)
 	TArray<Str Images>                                           Images;                                            // 0x10(0x10)
-	Struct FString                                               Background;                                        // 0x20(0x10)
-	Struct GenericPopupAudioDescriptor                           Audio;                                             // 0x30(0x40)
+	struct FString                                               Background;                                        // 0x20(0x10)
+	struct GenericPopupAudioDescriptor                           Audio;                                             // 0x30(0x40)
 	TArray<Byte StyleModifiers>                                  StyleModifiers;                                    // 0x70(0x10)
 	int                                                          Rank;                                              // 0x80(0x4)
-	Struct NavigationDesc                                        NavigationDesc;                                    // 0x84(0x14)
+	struct NavigationDesc                                        NavigationDesc;                                    // 0x84(0x14)
 	float                                                        HoldDuration;                                      // 0x98(0x4)
+	char                                                         pad0x4_GFMPZ[0x4];                                 // 0x9c(0x4)
 };
 
 

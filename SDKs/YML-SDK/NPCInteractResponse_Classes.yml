@@ -17,7 +17,7 @@ NPCInteractAnimResponseDataAsset:
   - Name: NPCInteractResponseAnimData
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct NPCInteractResponseAnimData>
+    Type: TArray<struct NPCInteractResponseStruct>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -29,7 +29,11 @@ NPCInteractResponseAnimationInstanceInterface:
   InheritedSize: '0x28'
   Super: Interface
 NPCInteractResponseComponent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_I1L4F[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0xd0'
   InheritedSize: '0xc8'

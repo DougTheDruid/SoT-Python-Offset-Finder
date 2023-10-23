@@ -5,7 +5,7 @@ BP_SkellyFort_SkullCloud_C:
   - Name: UberGraphFrame
     Offset: '0x538'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   ClassSize: '0x8'
   FullSize: '0x540'
   InheritedSize: '0x538'

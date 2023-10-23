@@ -5,5 +5,46 @@ CompassTargetSet:
   - Name: TargetLocation
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   ClassSize: '0xc'
+RotatingCompassAudioParams:
+  Attributes:
+  - Name: pad0x20_PRN1K[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  - Name: EmitterPool
+    Offset: '0x20'
+    Size: '0x8'
+    Type: class WwiseObjectPoolWrapper*
+  - Name: EmitterName
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
+  - Name: OneShotRotationSfx
+    Offset: '0x30'
+    Size: '0x8'
+    Type: class WwiseEvent*
+  - Name: StartRotationSequenceSfx
+    Offset: '0x38'
+    Size: '0x8'
+    Type: class WwiseEvent*
+  - Name: StopRotationSequenceSfx
+    Offset: '0x40'
+    Size: '0x8'
+    Type: class WwiseEvent*
+  ClassSize: '0x48'
+RotatingCompassRotationCurveCompletedEvent:
+  Attributes:
+  - Name: pad0x1_K7JFW[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
+RotatingCompassSplinePathCompletedEvent:
+  Attributes:
+  - Name: pad0x1_9IPQR[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'

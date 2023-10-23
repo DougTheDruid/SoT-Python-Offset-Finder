@@ -17,13 +17,13 @@ public:
 class LandscapeInfo: public Object
 {
 public:
-	char                                                         pad0x1c_7SIGU[0x1c];                               // 0x28(0x1c)
-	Struct Guid                                                  LandscapeGuid;                                     // 0x44(0x10)
+	char                                                         pad0x1c_6FON9[0x1c];                               // 0x28(0x1c)
+	struct Guid                                                  LandscapeGuid;                                     // 0x44(0x10)
 	int                                                          ComponentSizeQuads;                                // 0x54(0x4)
 	int                                                          SubsectionSizeQuads;                               // 0x58(0x4)
 	int                                                          ComponentNumSubsections;                           // 0x5c(0x4)
-	Struct Vector                                                DrawScale;                                         // 0x60(0xc)
-	char                                                         pad0x1a4_WS5JL[0x1a4];                             // 0x6c(0x1a4)
+	struct Vector                                                DrawScale;                                         // 0x60(0xc)
+	char                                                         pad0x1a4_SMDMC[0x1a4];                             // 0x6c(0x1a4)
 };
 
 
@@ -36,33 +36,33 @@ public:
 	int                                                          ComponentSizeQuads;                                // 0x5c0(0x4)
 	int                                                          SubsectionSizeQuads;                               // 0x5c4(0x4)
 	int                                                          NumSubsections;                                    // 0x5c8(0x4)
-	char                                                         pad0x4_5QKWD[0x4];                                 // 0x5cc(0x4)
-	Class MaterialInterface*                                     OverrideMaterial;                                  // 0x5d0(0x8)
-	Class MaterialInterface*                                     OverrideHoleMaterial;                              // 0x5d8(0x8)
-	Class MaterialInstanceConstant*                              MaterialInstance;                                  // 0x5e0(0x8)
-	TArray<struct WeightmapLayerAllocations>                     WeightmapLayerAllocations;                         // 0x5e8(0x10)
+	char                                                         pad0x4_AUR66[0x4];                                 // 0x5cc(0x4)
+	class MaterialInterface*                                     OverrideMaterial;                                  // 0x5d0(0x8)
+	class MaterialInterface*                                     OverrideHoleMaterial;                              // 0x5d8(0x8)
+	class MaterialInstanceConstant*                              MaterialInstance;                                  // 0x5e0(0x8)
+	TArray<struct WeightmapLayerAllocationInfo>                  WeightmapLayerAllocations;                         // 0x5e8(0x10)
 	TArray<class Texture2D*>                                     WeightmapTextures;                                 // 0x5f8(0x10)
-	Class Texture2D*                                             XYOffsetmapTexture;                                // 0x608(0x8)
-	Struct Vector4                                               WeightmapScaleBias;                                // 0x610(0x10)
+	class Texture2D*                                             XYOffsetmapTexture;                                // 0x608(0x8)
+	struct Vector4                                               WeightmapScaleBias;                                // 0x610(0x10)
 	float                                                        WeightmapSubsectionOffset;                         // 0x620(0x4)
-	char                                                         pad0xc_WFAHJ[0xc];                                 // 0x624(0xc)
-	Struct Vector4                                               HeightmapScaleBias;                                // 0x630(0x10)
-	Class Texture2D*                                             HeightmapTexture;                                  // 0x640(0x8)
-	Struct Box                                                   CachedLocalBox;                                    // 0x648(0x1c)
-	TArray<struct IrrelevantLights>                              IrrelevantLights;                                  // 0x680(0x10)
-	char                                                         pad0x10_6E78B[0x10];                               // 0x690(0x10)
+	char                                                         pad0xc_1A89V[0xc];                                 // 0x624(0xc)
+	struct Vector4                                               HeightmapScaleBias;                                // 0x630(0x10)
+	class Texture2D*                                             HeightmapTexture;                                  // 0x640(0x8)
+	struct Box                                                   CachedLocalBox;                                    // 0x648(0x1c)
+	TArray<struct Guid>                                          IrrelevantLights;                                  // 0x680(0x10)
+	char                                                         pad0x10_JFT8Q[0x10];                               // 0x690(0x10)
 	int                                                          CollisionMipLevel;                                 // 0x6a0(0x4)
 	float                                                        StaticLightingResolution;                          // 0x6a4(0x4)
 	int                                                          ForcedLOD;                                         // 0x6a8(0x4)
 	int                                                          LODBias;                                           // 0x6ac(0x4)
-	Struct Guid                                                  StateId;                                           // 0x6b0(0x10)
-	Struct Guid                                                  BakedTextureMaterialGuid;                          // 0x6c0(0x10)
-	Class Texture2D*                                             GIBakedBaseColorTexture;                           // 0x6d0(0x8)
+	struct Guid                                                  StateId;                                           // 0x6b0(0x10)
+	struct Guid                                                  BakedTextureMaterialGuid;                          // 0x6c0(0x10)
+	class Texture2D*                                             GIBakedBaseColorTexture;                           // 0x6d0(0x8)
 	byte                                                         MobileBlendableLayerMask;                          // 0x6d8(0x1)
-	char                                                         pad0x7_04KIH[0x7];                                 // 0x6d9(0x7)
-	Class MaterialInterface*                                     MobileMaterialInterface;                           // 0x6e0(0x8)
-	Class Texture2D*                                             MobileWeightNormalmapTexture;                      // 0x6e8(0x8)
-	char                                                         pad0x30_RE8WQ[0x30];                               // 0x6f0(0x30)
+	char                                                         pad0x7_LVDFQ[0x7];                                 // 0x6d9(0x7)
+	class MaterialInterface*                                     MobileMaterialInterface;                           // 0x6e0(0x8)
+	class Texture2D*                                             MobileWeightNormalmapTexture;                      // 0x6e8(0x8)
+	char                                                         pad0x30_RTECJ[0x30];                               // 0x6f0(0x30)
 };
 
 
@@ -77,6 +77,7 @@ public:
 class LandscapeGizmoActiveActor: public LandscapeGizmoActor
 {
 public:
+	char                                                         pad0x50_H4EHC[0x50];                               // 0x3c8(0x50)
 };
 
 
@@ -91,15 +92,15 @@ public:
 class LandscapeGrassType: public Object
 {
 public:
-	TArray<struct GrassVarieties>                                GrassVarieties;                                    // 0x28(0x10)
-	Class StaticMesh*                                            GrassMesh;                                         // 0x38(0x8)
+	TArray<struct GrassVariety>                                  GrassVarieties;                                    // 0x28(0x10)
+	class StaticMesh*                                            GrassMesh;                                         // 0x38(0x8)
 	float                                                        GrassDensity;                                      // 0x40(0x4)
 	float                                                        PlacementJitter;                                   // 0x44(0x4)
 	int                                                          StartCullDistance;                                 // 0x48(0x4)
 	int                                                          EndCullDistance;                                   // 0x4c(0x4)
 	bool                                                         RandomRotation;                                    // 0x50(0x1)
 	bool                                                         AlignToSurface;                                    // 0x51(0x1)
-	char                                                         pad0x6_2W46X[0x6];                                 // 0x52(0x6)
+	char                                                         pad0x6_WUJZV[0x6];                                 // 0x52(0x6)
 };
 
 
@@ -113,10 +114,10 @@ public:
 	int                                                          CollisionSizeQuads;                                // 0x5d0(0x4)
 	float                                                        CollisionScale;                                    // 0x5d4(0x4)
 	TArray<Byte CollisionQuadFlags>                              CollisionQuadFlags;                                // 0x5d8(0x10)
-	Struct Guid                                                  HeightfieldGuid;                                   // 0x5e8(0x10)
-	Struct Box                                                   CachedLocalBox;                                    // 0x5f8(0x1c)
+	struct Guid                                                  HeightfieldGuid;                                   // 0x5e8(0x10)
+	struct Box                                                   CachedLocalBox;                                    // 0x5f8(0x1c)
 	TArray<class PhysicalMaterial*>                              CookedPhysicalMaterials;                           // 0x640(0x10)
-	char                                                         pad0x40_N8SLO[0x40];                               // 0x650(0x40)
+	char                                                         pad0x40_LFI4O[0x40];                               // 0x650(0x40)
 };
 
 
@@ -124,8 +125,8 @@ public:
 class LandscapeMeshCollisionComponent: public LandscapeHeightfieldCollisionComponent
 {
 public:
-	Struct Guid                                                  MeshGuid;                                          // 0x690(0x10)
-	char                                                         pad0x10_S45DU[0x10];                               // 0x6a0(0x10)
+	struct Guid                                                  MeshGuid;                                          // 0x690(0x10)
+	char                                                         pad0x10_3J3TR[0x10];                               // 0x6a0(0x10)
 };
 
 
@@ -133,6 +134,7 @@ public:
 class LandscapeInfoMap: public Object
 {
 public:
+	char                                                         pad0x50_T68DO[0x50];                               // 0x28(0x50)
 };
 
 
@@ -141,9 +143,9 @@ class LandscapeLayerInfoObject: public Object
 {
 public:
 	struct FName                                                 LayerName;                                         // 0x28(0x8)
-	Class PhysicalMaterial*                                      PhysMaterial;                                      // 0x30(0x8)
+	class PhysicalMaterial*                                      PhysMaterial;                                      // 0x30(0x8)
 	float                                                        Hardness;                                          // 0x38(0x4)
-	char                                                         pad0x4_B1MRR[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_JRQL7[0x4];                                 // 0x3c(0x4)
 };
 
 
@@ -152,10 +154,10 @@ class LandscapeMaterialInstanceConstant: public MaterialInstanceConstant
 {
 public:
 	bool                                                         bIsLayerThumbnail;                                 // 0x1b8(0x1)
-	char                                                         pad0x3_DD7CX[0x3];                                 // 0x1b9(0x3)
+	char                                                         pad0x3_TY96U[0x3];                                 // 0x1b9(0x3)
 	int                                                          DataWeightmapIndex;                                // 0x1bc(0x4)
 	int                                                          DataWeightmapSize;                                 // 0x1c0(0x4)
-	char                                                         pad0x4_106XC[0x4];                                 // 0x1c4(0x4)
+	char                                                         pad0x4_R2KXX[0x4];                                 // 0x1c4(0x4)
 };
 
 
@@ -163,7 +165,7 @@ public:
 class LandscapeMeshProxyActor: public Actor
 {
 public:
-	Class LandscapeMeshProxyComponent*                           LandscapeMeshProxyComponent;                       // 0x3c8(0x8)
+	class LandscapeMeshProxyComponent*                           LandscapeMeshProxyComponent;                       // 0x3c8(0x8)
 };
 
 
@@ -171,23 +173,23 @@ public:
 class LandscapeProxy: public Actor
 {
 public:
-	char                                                         pad0x8_B8K6P[0x8];                                 // 0x3c8(0x8)
-	Class LandscapeSplinesComponent*                             SplineComponent;                                   // 0x3d0(0x8)
-	Struct Guid                                                  LandscapeGuid;                                     // 0x3d8(0x10)
-	Struct IntPoint                                              LandscapeSectionOffset;                            // 0x3e8(0x8)
+	char                                                         pad0x8_4R8TH[0x8];                                 // 0x3c8(0x8)
+	class LandscapeSplinesComponent*                             SplineComponent;                                   // 0x3d0(0x8)
+	struct Guid                                                  LandscapeGuid;                                     // 0x3d8(0x10)
+	struct IntPoint                                              LandscapeSectionOffset;                            // 0x3e8(0x8)
 	int                                                          MaxLODLevel;                                       // 0x3f0(0x4)
 	int                                                          StaticLightingLOD;                                 // 0x3f4(0x4)
-	Class PhysicalMaterial*                                      DefaultPhysMaterial;                               // 0x3f8(0x8)
+	class PhysicalMaterial*                                      DefaultPhysMaterial;                               // 0x3f8(0x8)
 	float                                                        StreamingDistanceMultiplier;                       // 0x400(0x4)
-	char                                                         pad0x4_IRD3R[0x4];                                 // 0x404(0x4)
-	Class MaterialInterface*                                     LandscapeMaterial;                                 // 0x408(0x8)
-	Class MaterialInterface*                                     LandscapeHoleMaterial;                             // 0x410(0x8)
+	char                                                         pad0x4_L5A05[0x4];                                 // 0x404(0x4)
+	class MaterialInterface*                                     LandscapeMaterial;                                 // 0x408(0x8)
+	class MaterialInterface*                                     LandscapeHoleMaterial;                             // 0x410(0x8)
 	float                                                        LODDistanceFactor;                                 // 0x418(0x4)
-	char                                                         pad0x4_D8ME4[0x4];                                 // 0x41c(0x4)
+	char                                                         pad0x4_YZ0QX[0x4];                                 // 0x41c(0x4)
 	TArray<class LandscapeComponent*>                            LandscapeComponents;                               // 0x420(0x10)
 	TArray<class LandscapeHeightfieldCollisionComponent*>        CollisionComponents;                               // 0x430(0x10)
 	TArray<class HierarchicalInstancedStaticMeshComponent*>      FoliageComponents;                                 // 0x440(0x10)
-	char                                                         pad0x70_2L4A9[0x70];                               // 0x450(0x70)
+	char                                                         pad0x70_K3YQK[0x70];                               // 0x450(0x70)
 	float                                                        StaticLightingResolution;                          // 0x4c0(0x4)
 	bool                                                         bCastStaticShadow;                                 // 0x4e0(0x1)
 	bool                                                         bCastShadowAsTwoSided;                             // 0x4e0(0x1)
@@ -195,23 +197,23 @@ public:
 	bool                                                         bCastFarShadow;                                    // 0x4e0(0x1)
 	bool                                                         bIsProxy;                                          // 0x4e0(0x1)
 	bool                                                         bUseFarCascadeLPVBiasMultiplier;                   // 0x4e0(0x1)
-	char                                                         pad0x3_H2SIY[0x3];                                 // 0x4e1(0x3)
+	char                                                         pad0x3_EOJ8L[0x3];                                 // 0x4e1(0x3)
 	float                                                        LpvIntensityMultiplier;                            // 0x4e4(0x4)
 	float                                                        LpvBiasMultiplier;                                 // 0x4e8(0x4)
 	float                                                        FarCascadeLPVBiasMultiplier;                       // 0x4ec(0x4)
-	Struct LightmassPrimitiveSettings                            LightmassSettings;                                 // 0x4f0(0x18)
+	struct LightmassPrimitiveSettings                            LightmassSettings;                                 // 0x4f0(0x18)
 	int                                                          CollisionMipLevel;                                 // 0x508(0x4)
 	float                                                        CollisionThickness;                                // 0x50c(0x4)
-	Struct BodyInstance                                          BodyInstance;                                      // 0x510(0x180)
+	struct BodyInstance                                          BodyInstance;                                      // 0x510(0x180)
 	int                                                          ComponentSizeQuads;                                // 0x690(0x4)
 	int                                                          SubsectionSizeQuads;                               // 0x694(0x4)
 	int                                                          NumSubsections;                                    // 0x698(0x4)
 	bool                                                         bUsedForNavigation;                                // 0x69c(0x1)
 	bool                                                         bReflected;                                        // 0x69c(0x1)
-	char                                                         pad0x3_1E8Q1[0x3];                                 // 0x69d(0x3)
+	char                                                         pad0x3_C66ON[0x3];                                 // 0x69d(0x3)
 	byte                                                         NavigationGeometryGatheringMode;                   // 0x6a0(0x1)
 	byte                                                         LODFalloff;                                        // 0x6a1(0x1)
-	char                                                         pad0xae_2RXAU[0xae];                               // 0x6a2(0xae)
+	char                                                         pad0xae_TBE4F[0xae];                               // 0x6a2(0xae)
 };
 
 
@@ -219,9 +221,9 @@ public:
 class LandscapeMeshProxyComponent: public StaticMeshComponent
 {
 public:
-	Struct Guid                                                  LandscapeGuid;                                     // 0x620(0x10)
-	TArray<struct ProxyComponentBases>                           ProxyComponentBases;                               // 0x630(0x10)
-	char                                                         pad0x10_BS18U[0x10];                               // 0x640(0x10)
+	struct Guid                                                  LandscapeGuid;                                     // 0x620(0x10)
+	TArray<struct IntPoint>                                      ProxyComponentBases;                               // 0x630(0x10)
+	char                                                         pad0x10_X5DEK[0x10];                               // 0x640(0x10)
 };
 
 
@@ -239,7 +241,7 @@ public:
 	TArray<class LandscapeSplineControlPoint*>                   ControlPoints;                                     // 0x5b8(0x10)
 	TArray<class LandscapeSplineSegment*>                        Segments;                                          // 0x5c8(0x10)
 	TArray<class MeshComponent*>                                 CookedForeignMeshComponents;                       // 0x5d8(0x10)
-	char                                                         pad0x8_UCEKE[0x8];                                 // 0x5e8(0x8)
+	char                                                         pad0x8_VIT5I[0x8];                                 // 0x5e8(0x8)
 };
 
 
@@ -247,12 +249,12 @@ public:
 class LandscapeSplineSegment: public Object
 {
 public:
-	Struct LandscapeSplineSegmentConnection                      Connections;                                       // 0x28(0x18)
-	char                                                         pad0x18_R3QYE[0x18];                               // 0x40(0x18)
-	Struct InterpCurveVector                                     SplineInfo;                                        // 0x58(0x18)
-	TArray<struct Points>                                        Points;                                            // 0x70(0x10)
-	Struct Box                                                   Bounds;                                            // 0x80(0x1c)
-	char                                                         pad0x4_NMIGA[0x4];                                 // 0x9c(0x4)
+	struct LandscapeSplineSegmentConnection                      Connections;                                       // 0x28(0x18)
+	char                                                         pad0x18_KIZ59[0x18];                               // 0x40(0x18)
+	struct InterpCurveVector                                     SplineInfo;                                        // 0x58(0x18)
+	TArray<struct LandscapeSplineInterpPoint>                    Points;                                            // 0x70(0x10)
+	struct Box                                                   Bounds;                                            // 0x80(0x1c)
+	char                                                         pad0x4_045XX[0x4];                                 // 0x9c(0x4)
 	TArray<class SplineMeshComponent*>                           LocalMeshComponents;                               // 0xa0(0x10)
 };
 
@@ -261,17 +263,17 @@ public:
 class LandscapeSplineControlPoint: public Object
 {
 public:
-	Struct Vector                                                Location;                                          // 0x28(0xc)
-	Struct Rotator                                               Rotation;                                          // 0x34(0xc)
+	struct Vector                                                Location;                                          // 0x28(0xc)
+	struct Rotator                                               Rotation;                                          // 0x34(0xc)
 	float                                                        Width;                                             // 0x40(0x4)
 	float                                                        SideFalloff;                                       // 0x44(0x4)
 	float                                                        EndFalloff;                                        // 0x48(0x4)
-	char                                                         pad0x4_RMFPI[0x4];                                 // 0x4c(0x4)
-	TArray<struct ConnectedSegments>                             ConnectedSegments;                                 // 0x50(0x10)
-	TArray<struct Points>                                        Points;                                            // 0x60(0x10)
-	Struct Box                                                   Bounds;                                            // 0x70(0x1c)
-	char                                                         pad0x4_O7PVZ[0x4];                                 // 0x8c(0x4)
-	Class ControlPointMeshComponent*                             LocalMeshComponent;                                // 0x90(0x8)
+	char                                                         pad0x4_E7KPX[0x4];                                 // 0x4c(0x4)
+	TArray<struct LandscapeSplineConnection>                     ConnectedSegments;                                 // 0x50(0x10)
+	TArray<struct LandscapeSplineInterpPoint>                    Points;                                            // 0x60(0x10)
+	struct Box                                                   Bounds;                                            // 0x70(0x1c)
+	char                                                         pad0x4_1V4KK[0x4];                                 // 0x8c(0x4)
+	class ControlPointMeshComponent*                             LocalMeshComponent;                                // 0x90(0x8)
 };
 
 
@@ -279,7 +281,7 @@ public:
 class MaterialExpressionLandscapeGrassOutput: public MaterialExpressionCustomOutput
 {
 public:
-	TArray<struct GrassTypes>                                    GrassTypes;                                        // 0x70(0x10)
+	TArray<struct GrassInput>                                    GrassTypes;                                        // 0x70(0x10)
 };
 
 
@@ -287,8 +289,8 @@ public:
 class MaterialExpressionLandscapeLayerBlend: public MaterialExpression
 {
 public:
-	TArray<struct Layers>                                        Layers;                                            // 0x70(0x10)
-	Struct Guid                                                  ExpressionGUID;                                    // 0x80(0x10)
+	TArray<struct LayerBlendInput>                               Layers;                                            // 0x70(0x10)
+	struct Guid                                                  ExpressionGUID;                                    // 0x80(0x10)
 };
 
 
@@ -298,12 +300,12 @@ class MaterialExpressionLandscapeLayerCoords: public MaterialExpression
 public:
 	byte                                                         MappingType;                                       // 0x70(0x1)
 	byte                                                         CustomUVType;                                      // 0x71(0x1)
-	char                                                         pad0x2_8Q4EQ[0x2];                                 // 0x72(0x2)
+	char                                                         pad0x2_FUY9O[0x2];                                 // 0x72(0x2)
 	float                                                        MappingScale;                                      // 0x74(0x4)
 	float                                                        MappingRotation;                                   // 0x78(0x4)
 	float                                                        MappingPanU;                                       // 0x7c(0x4)
 	float                                                        MappingPanV;                                       // 0x80(0x4)
-	char                                                         pad0x4_DMP14[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_UWIDM[0x4];                                 // 0x84(0x4)
 };
 
 
@@ -313,8 +315,8 @@ class MaterialExpressionLandscapeLayerSample: public MaterialExpression
 public:
 	struct FName                                                 ParameterName;                                     // 0x70(0x8)
 	float                                                        PreviewWeight;                                     // 0x78(0x4)
-	Struct Guid                                                  ExpressionGUID;                                    // 0x7c(0x10)
-	char                                                         pad0x4_O15DM[0x4];                                 // 0x8c(0x4)
+	struct Guid                                                  ExpressionGUID;                                    // 0x7c(0x10)
+	char                                                         pad0x4_OYFK7[0x4];                                 // 0x8c(0x4)
 };
 
 
@@ -322,13 +324,13 @@ public:
 class MaterialExpressionLandscapeLayerSwitch: public MaterialExpression
 {
 public:
-	Struct ExpressionInput                                       LayerUsed;                                         // 0x70(0x38)
-	Struct ExpressionInput                                       LayerNotUsed;                                      // 0xa8(0x38)
+	struct ExpressionInput                                       LayerUsed;                                         // 0x70(0x38)
+	struct ExpressionInput                                       LayerNotUsed;                                      // 0xa8(0x38)
 	struct FName                                                 ParameterName;                                     // 0xe0(0x8)
 	bool                                                         PreviewUsed;                                       // 0xe8(0x1)
-	char                                                         pad0x3_UVOUV[0x3];                                 // 0xe9(0x3)
-	Struct Guid                                                  ExpressionGUID;                                    // 0xec(0x10)
-	char                                                         pad0x4_WG4W5[0x4];                                 // 0xfc(0x4)
+	char                                                         pad0x3_TXMJU[0x3];                                 // 0xe9(0x3)
+	struct Guid                                                  ExpressionGUID;                                    // 0xec(0x10)
+	char                                                         pad0x4_U4687[0x4];                                 // 0xfc(0x4)
 };
 
 
@@ -336,12 +338,12 @@ public:
 class MaterialExpressionLandscapeLayerWeight: public MaterialExpression
 {
 public:
-	Struct ExpressionInput                                       Base;                                              // 0x70(0x38)
-	Struct ExpressionInput                                       Layer;                                             // 0xa8(0x38)
+	struct ExpressionInput                                       Base;                                              // 0x70(0x38)
+	struct ExpressionInput                                       Layer;                                             // 0xa8(0x38)
 	struct FName                                                 ParameterName;                                     // 0xe0(0x8)
 	float                                                        PreviewWeight;                                     // 0xe8(0x4)
-	Struct Vector                                                ConstBase;                                         // 0xec(0xc)
-	Struct Guid                                                  ExpressionGUID;                                    // 0xf8(0x10)
+	struct Vector                                                ConstBase;                                         // 0xec(0xc)
+	struct Guid                                                  ExpressionGUID;                                    // 0xf8(0x10)
 };
 
 
@@ -349,7 +351,7 @@ public:
 class MaterialExpressionLandscapeVisibilityMask: public MaterialExpression
 {
 public:
-	Struct Guid                                                  ExpressionGUID;                                    // 0x70(0x10)
+	struct Guid                                                  ExpressionGUID;                                    // 0x70(0x10)
 };
 
 

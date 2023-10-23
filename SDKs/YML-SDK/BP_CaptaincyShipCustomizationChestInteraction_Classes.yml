@@ -5,7 +5,7 @@ BP_CaptaincyShipCustomizationChestInteraction_C:
   - Name: DefaultSceneRoot
     Offset: '0x448'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x8'
   FullSize: '0x450'
   InheritedSize: '0x448'

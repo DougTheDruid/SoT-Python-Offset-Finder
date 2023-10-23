@@ -10,6 +10,10 @@ ChangeGlitterBeardVFXStateEvent:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_5VWXR[0x3]
+    Offset: '0x5'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x8'
 FinaleReplicationState:
   Attributes:
@@ -17,14 +21,14 @@ FinaleReplicationState:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_5EIY0[0x7]
+  - Name: pad0x7_RK4CN[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
   - Name: TargetEnsemble
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   ClassSize: '0x10'
 GlitterBeardVFXTransitionCompletedEvent:
   Attributes:
@@ -34,22 +38,46 @@ GlitterBeardVFXTransitionCompletedEvent:
     Type: int
   ClassSize: '0x4'
 GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x20_SL16M[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x20'
 GlitterbeardPlayerPuzzleUnlockSuccessTelemetryEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_NOSWD[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
 GlitterbeardPuzzleCancelTelemetryEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_FOOA3[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
 GlitterbeardPuzzleUnlockTelemetryEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_QPLKJ[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
 GlitterbeardSessionBeginTelemetryEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_SO223[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
 GlitterbeardSessionEndTelemetryEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_2ZHQU[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
 UnlockEventData:
   Attributes:

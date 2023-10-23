@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 struct TaleQuestVariableMapMarkType
 {
 public:
+	char                                                         pad0x30_0IH4L[0x30];                               // 0x0(0x30)
 };
 
 
@@ -17,7 +18,8 @@ public:
 struct TaleQuestChecklistItem
 {
 public:
-	TArray<struct ChecklistActions>                              ChecklistActions;                                  // 0x0(0x10)
+	TArray<struct ChecklistActionProgressTracker>                ChecklistActions;                                  // 0x0(0x10)
+	char                                                         pad0x40_C6P8W[0x40];                               // 0x10(0x40)
 };
 
 
@@ -25,7 +27,8 @@ public:
 struct ChecklistActionProgressTracker
 {
 public:
-	Class ChecklistActionData*                                   ActionData;                                        // 0x0(0x8)
+	class ChecklistActionData*                                   ActionData;                                        // 0x0(0x8)
+	char                                                         pad0x8_8BXYO[0x8];                                 // 0x8(0x8)
 };
 
 
@@ -33,6 +36,7 @@ public:
 struct TaleQuestVariableTreasureMapItemDescType
 {
 public:
+	char                                                         pad0x30_SAMJA[0x30];                               // 0x0(0x30)
 };
 
 

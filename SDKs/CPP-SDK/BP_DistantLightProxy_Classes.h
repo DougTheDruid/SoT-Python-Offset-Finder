@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class BP_DistantLightProxy_C: public Actor
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
-	Class InstancedStaticMeshComponent*                          InstancedStaticMesh;                               // 0x3d0(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d8(0x8)
-	TArray<struct LightList>                                     LightList;                                         // 0x3e0(0x10)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
+	class InstancedStaticMeshComponent*                          InstancedStaticMesh;                               // 0x3d0(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d8(0x8)
+	TArray<struct PointLightProxy>                               LightList;                                         // 0x3e0(0x10)
 };
 
 

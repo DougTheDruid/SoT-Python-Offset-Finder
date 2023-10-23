@@ -7,25 +7,25 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "glows",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "window_planes",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
         "Name": "SharedRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
@@ -42,26 +42,26 @@
         "Offset": "0x3ec"
       },
       {
-        "Name": "pad0x3_HGE5I[0x3]",
+        "Name": "pad0x3_5Q6W1[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3ed"
       },
       {
         "Name": "FadeCurve",
-        "Type": "Class TimelineComponent*",
+        "Type": "class TimelineComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
         "Name": "WindowDynamicMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
         "Name": "GlowDynamicMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x400"
       },

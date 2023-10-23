@@ -5,15 +5,15 @@ BP_LargeShip_CageLatch_03_b_C:
   - Name: UberGraphFrame
     Offset: '0x618'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: cap_cage_door_03_b
     Offset: '0x620'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Interactable
     Offset: '0x628'
     Size: '0x8'
-    Type: Class InteractableComponent*
+    Type: class InteractableComponent*
   ClassSize: '0x18'
   FullSize: '0x630'
   InheritedSize: '0x618'

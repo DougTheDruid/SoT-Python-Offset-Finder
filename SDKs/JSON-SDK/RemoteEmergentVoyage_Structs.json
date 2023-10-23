@@ -9,14 +9,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_HVBPA[0x4]",
+        "Name": "pad0x4_JQWXQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "VoyageAssetPath",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x8"
       }

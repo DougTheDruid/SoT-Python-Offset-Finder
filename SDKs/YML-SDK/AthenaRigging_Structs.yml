@@ -5,11 +5,11 @@ InstancedRopeParams:
   - Name: Start
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: End
     Offset: '0xc'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: Thickness
     Offset: '0x18'
     Size: '0x4'
@@ -33,22 +33,22 @@ InstancedRopeParams:
   - Name: Shape
     Offset: '0x2c'
     Size: '0x18'
-    Type: Struct RopeCatenaryShapeParams
+    Type: struct RopeCatenaryShapeParams
   - Name: Swing
     Offset: '0x44'
     Size: '0x8'
-    Type: Struct RopeCatenarySwingParams
+    Type: struct RopeCatenarySwingParams
   - Name: Dynamics
     Offset: '0x4c'
     Size: '0x8'
-    Type: Struct RopeCatenaryDynamicsParams
+    Type: struct RopeCatenaryDynamicsParams
   ClassSize: '0x54'
 PulleyVisualParams:
   Attributes:
   - Name: Mesh
     Offset: '0x0'
     Size: '0x8'
-    Type: Class StaticMesh*
+    Type: class StaticMesh*
   - Name: Scale
     Offset: '0x8'
     Size: '0x4'
@@ -59,7 +59,11 @@ PulleyVisualParams:
     Type: float
   ClassSize: '0x10'
 RiggingSystemLine:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_QT2SV[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
 RiggingSystemLineGroup:
   Attributes:
@@ -70,37 +74,41 @@ RiggingSystemLineGroup:
   - Name: Lines
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct Lines>
+    Type: TArray<struct RiggingSystemLineParams>
   ClassSize: '0x18'
 RiggingSystemLineParams:
   Attributes:
   - Name: Start
     Offset: '0x0'
     Size: '0x20'
-    Type: Struct SocketId
+    Type: struct SocketId
   - Name: Pulleys
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<struct Pulleys>
+    Type: TArray<struct RiggingSystemPulleyParams>
   - Name: End
     Offset: '0x30'
     Size: '0x20'
-    Type: Struct SocketId
+    Type: struct SocketId
   - Name: Visuals
     Offset: '0x50'
     Size: '0xc'
-    Type: Struct RopeVisualParams
+    Type: struct RopeVisualParams
   - Name: Shape
     Offset: '0x5c'
     Size: '0x18'
-    Type: Struct RopeCatenaryShapeParams
+    Type: struct RopeCatenaryShapeParams
+  - Name: pad0x4_66Z96[0x4]
+    Offset: '0x74'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x78'
 RiggingSystemPulleyAttachmentParams:
   Attributes:
   - Name: Visuals
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct RopeVisualParams
+    Type: struct RopeVisualParams
   - Name: Length
     Offset: '0xc'
     Size: '0x4'
@@ -142,23 +150,27 @@ RiggingSystemPulleyParams:
   - Name: Anchor
     Offset: '0x0'
     Size: '0x20'
-    Type: Struct SocketId
+    Type: struct SocketId
   - Name: OffsetFromAnchor
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_MXFEI[0x4]
+  - Name: pad0x4_83J9D[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
   - Name: Visuals
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct PulleyVisualParams
+    Type: struct PulleyVisualParams
   - Name: AttachmentRope
     Offset: '0x38'
     Size: '0x14'
-    Type: Struct RiggingSystemPulleyAttachmentParams
+    Type: struct RiggingSystemPulleyAttachmentParams
+  - Name: pad0x4_WTTIG[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x50'
 RopeCatenaryDynamicsParams:
   Attributes:
@@ -170,6 +182,10 @@ RopeCatenaryDynamicsParams:
     Offset: '0x4'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_J5MT6[0x3]
+    Offset: '0x5'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x8'
 RopeCatenaryLengthPair:
   Attributes:
@@ -206,11 +222,11 @@ RopeCatenaryShapeParams:
   - Name: Length
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct RopeCatenaryLengthParams
+    Type: struct RopeCatenaryLengthParams
   - Name: Slope
     Offset: '0x10'
     Size: '0x8'
-    Type: Struct RopeCatenarySlopeBlendParams
+    Type: struct RopeCatenarySlopeBlendParams
   ClassSize: '0x18'
 RopeCatenarySlopeBlendParams:
   Attributes:
@@ -239,19 +255,23 @@ RopeStyleParams:
   - Name: Mesh
     Offset: '0x0'
     Size: '0x8'
-    Type: Class StaticMesh*
+    Type: class StaticMesh*
   - Name: DiffuseTexture
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Texture2D*
+    Type: class Texture2D*
   - Name: NormalTexture
     Offset: '0x10'
     Size: '0x8'
-    Type: Class Texture2D*
+    Type: class Texture2D*
   - Name: ShadowLOD
     Offset: '0x18'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_1WC90[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x20'
 RopeVisualParams:
   Attributes:

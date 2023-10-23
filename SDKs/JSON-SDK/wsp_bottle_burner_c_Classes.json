@@ -6,26 +6,26 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Class PointLightComponent*",
+        "Name": "PointLight",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
-        "Name": "None",
-        "Type": "Class ParticleSystemComponent*",
+        "Name": "ParticleSystem",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "StaticMeshComponent0",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "None",
-        "Type": "Class SceneComponent*",
+        "Name": "SharedRoot",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       }

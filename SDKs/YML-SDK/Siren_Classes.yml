@@ -43,10 +43,14 @@ SirenCalmHealStrategyId:
   InheritedSize: '0x28'
   Super: AIStrategyId
 SirenController:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_P835V[0x8]
+    Offset: '0xa70'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
-  FullSize: '0xa68'
-  InheritedSize: '0xa60'
+  FullSize: '0xa78'
+  InheritedSize: '0xa70'
   Super: AthenaSwimmingAIController
 SirenEmeraldHealStatus:
   Attributes: []
@@ -59,7 +63,7 @@ SirenPartsDesc:
   - Name: AnimationID
     Offset: '0x80'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x8'
   FullSize: '0x88'
   InheritedSize: '0x80'

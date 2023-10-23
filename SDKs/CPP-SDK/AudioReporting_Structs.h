@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 struct EventReactionDesc
 {
 public:
-	class                                                        ReactionType;                                      // 0x0(0x8)
+	class UClass*                                                ReactionType;                                      // 0x0(0x8)
 	int                                                          Priority;                                          // 0x8(0x4)
 	float                                                        MinDuration;                                       // 0xc(0x4)
 	float                                                        MaxDuration;                                       // 0x10(0x4)
-	char                                                         pad0x4_5WQ65[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_E59LY[0x4];                                 // 0x14(0x4)
 	TArray<class WwiseEvent*>                                    TriggerEvents;                                     // 0x18(0x10)
 };
 
@@ -23,7 +23,8 @@ public:
 struct ActiveAudioReaction
 {
 public:
-	Class AudioReportReaction*                                   Reaction;                                          // 0x0(0x8)
+	class AudioReportReaction*                                   Reaction;                                          // 0x0(0x8)
+	char                                                         pad0x8_9GWYB[0x8];                                 // 0x8(0x8)
 };
 
 

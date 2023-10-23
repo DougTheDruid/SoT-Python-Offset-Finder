@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_FogBankManager_C: public FogBankManager
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e8(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e8(0x8)
 };
 
 

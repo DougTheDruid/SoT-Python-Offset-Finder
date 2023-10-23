@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_FishingFloat_C: public FishingFloat
 {
 public:
-	Class FishingFloatNameplateComponent*                        FishingFloatNameplate;                             // 0x7e0(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x7e8(0x8)
+	class FishingFloatNameplateComponent*                        FishingFloatNameplate;                             // 0x7e0(0x8)
+	class StaticMeshComponent*                                   StaticMesh;                                        // 0x7e8(0x8)
 };
 
 

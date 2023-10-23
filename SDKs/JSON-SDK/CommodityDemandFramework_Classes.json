@@ -13,7 +13,7 @@
       },
       {
         "Name": "ItemToRedeemFor",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xd0"
       }
@@ -27,7 +27,7 @@
     "Attributes": [
       {
         "Name": "CommodityDataFileLocation",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -64,26 +64,26 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_UQ1WI[0x4]",
+        "Name": "pad0x4_DERRO[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
       },
       {
         "Name": "CommodityRedemptionTimeOutPeriodInDays",
-        "Type": "Struct GameTime",
+        "Type": "struct GameTime",
         "Size": "0x8",
         "Offset": "0x50"
       },
       {
         "Name": "NPCListAsset",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "MerchantSovereignHandInNameFileLocation",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x68"
       }
@@ -104,7 +104,7 @@
     "Attributes": [
       {
         "Name": "MerchantSovereignHandInNameInformationArray",
-        "Type": "TArray<struct MerchantSovereignHandInNameInformationArray>",
+        "Type": "TArray<struct MerchantSovereignHandInNameInformation>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -117,25 +117,25 @@
     "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "pad0x20_KYXE3[0x20]",
+        "Name": "pad0x20_WAPJF[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3c8"
       },
       {
         "Name": "ActiveCommodityDemands",
-        "Type": "Struct ActiveNPCDemands",
+        "Type": "struct ActiveNPCDemands",
         "Size": "0x20",
         "Offset": "0x3e8"
       },
       {
         "Name": "MerchantSovereignHandInNameInformationDataAsset",
-        "Type": "Class MerchantSovereignHandInNameInformationDataAsset*",
+        "Type": "class MerchantSovereignHandInNameInformationDataAsset*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "pad0x30_5RJNU[0x30]",
+        "Name": "pad0x30_73K65[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x410"
@@ -164,7 +164,7 @@
     "Attributes": [
       {
         "Name": "CommoditiesForRedemption",
-        "Type": "TArray<struct CommoditiesForRedemption>",
+        "Type": "TArray<struct EntitlementToRedeemItems>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -178,7 +178,7 @@
     "Attributes": [
       {
         "Name": "CommodityType",
-        "Type": "Struct CommoditySelectionType",
+        "Type": "struct CommoditySelectionType",
         "Size": "0x8",
         "Offset": "0x120"
       },
@@ -189,7 +189,7 @@
         "Offset": "0x128"
       },
       {
-        "Name": "pad0x7_W1L5D[0x7]",
+        "Name": "pad0x7_OQGAH[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x129"
@@ -201,7 +201,14 @@
     "FullSize": "0x158",
     "InheritedSize": "0xc8",
     "ClassSize": "0x90",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x90_GDELC[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0xc8"
+      }
+    ]
   },
   "CommodityRedemptionInterface": {
     "Super": "Interface",
@@ -217,19 +224,19 @@
     "ClassSize": "0xc8",
     "Attributes": [
       {
-        "Name": "pad0x8_KHWLX[0x8]",
+        "Name": "pad0x8_G6UCV[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "RedeemTooltipText",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x78_VQM13[0x78]",
+        "Name": "pad0x78_FK37G[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0x108"
@@ -251,12 +258,12 @@
   },
   "CommoditySourceComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0xf0",
+    "FullSize": "0xe0",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x28",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_EYI3P[0x8]",
+        "Name": "pad0x8_D3HU5[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -272,12 +279,6 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0xd8"
-      },
-      {
-        "Name": "PurchasingCrewId",
-        "Type": "Struct Guid",
-        "Size": "0x10",
-        "Offset": "0xe0"
       }
     ]
   },
@@ -289,7 +290,7 @@
     "Attributes": [
       {
         "Name": "CommodityEntries",
-        "Type": "TArray<struct CommodityEntries>",
+        "Type": "TArray<struct CommodityTypeDataEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -307,7 +308,14 @@
     "FullSize": "0xd8",
     "InheritedSize": "0xc8",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_3X3NS[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      }
+    ]
   },
   "DeliverableCommodityRequirement": {
     "Super": "DeliverableRequirementBase",
@@ -329,7 +337,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x1f_F0SUS[0x1f]",
+        "Name": "pad0x1f_YF2IR[0x1f]",
         "Type": "char",
         "Size": "0x1f",
         "Offset": "0x31"
@@ -343,14 +351,14 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_YA53B[0x8]",
+        "Name": "pad0x8_6J0AO[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "ItemsToFillCrateWith",
-        "Type": "TArray<struct ItemsToFillCrateWith>",
+        "Type": "TArray<struct StorageContainerNode>",
         "Size": "0x10",
         "Offset": "0xd0"
       }
@@ -369,7 +377,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_XM0JZ[0x7]",
+        "Name": "pad0x7_HMMLW[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"

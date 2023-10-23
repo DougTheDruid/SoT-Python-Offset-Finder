@@ -5,32 +5,32 @@ AthenaCheatManager:
   - Name: CinematicCameraController
     Offset: '0x78'
     Size: '0x8'
-    Type: Class CinematicCameraController*
+    Type: class CinematicCameraController*
   - Name: CinematicCameraControllerClass
     Offset: '0x80'
     Size: '0x8'
-    Type: class
-  - Name: pad0x28_LMT2W[0x28]
+    Type: class UClass*
+  - Name: pad0x28_C3TKJ[0x28]
     Offset: '0x88'
     Size: '0x28'
     Type: char
   - Name: CreatedWorldMarkers
     Offset: '0xb0'
     Size: '0x10'
-    Type: TArray<struct CreatedWorldMarkers>
+    Type: TArray<struct WorldMarkerDesc>
   - Name: DebugSchedulerSettings
     Offset: '0xc0'
     Size: '0x8'
-    Type: Class GameEventSchedulerSettingsAsset*
+    Type: class GameEventSchedulerSettingsAsset*
   - Name: ServerPerformanceReplicator
     Offset: '0xc8'
     Size: '0x8'
-    Type: Class ServerPerformanceReplicator*
+    Type: class ServerPerformanceReplicator*
   - Name: TeleportToDigsiteHeightOffset
     Offset: '0xd0'
     Size: '0x4'
     Type: float
-  - Name: pad0x64_6KKWV[0x64]
+  - Name: pad0x64_FX1YI[0x64]
     Offset: '0xd4'
     Size: '0x64'
     Type: char

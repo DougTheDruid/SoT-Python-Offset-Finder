@@ -5,30 +5,38 @@ CustomServerClientData:
   - Name: Key
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
+  - Name: pad0x10_9E4PV[0x10]
+    Offset: '0x10'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x20'
 CustomServerLocalisationData:
   Attributes:
   - Name: Key
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: LocaleEntries
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct LocaleEntries>
+    Type: TArray<struct LocPairData>
   ClassSize: '0x20'
 CustomServerLocalisationModel:
-  Attributes: []
+  Attributes:
+  - Name: pad0x50_SFLXE[0x50]
+    Offset: '0x0'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x50'
 LocPairData:
   Attributes:
   - Name: Locale
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: Value
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x20'

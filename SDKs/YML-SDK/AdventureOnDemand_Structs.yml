@@ -2,12 +2,12 @@
 # https://github.com/DougTheDruid
 AdventureOnDemandServiceCrewEntry:
   Attributes:
-  - Name: Participants
-    Offset: '0x40'
-    Size: '0x10'
-    Type: TArray<class CrewVoyageParticipant*>
+  - Name: pad0x38_US45S[0x38]
+    Offset: '0x0'
+    Size: '0x38'
+    Type: char
   - Name: TunnelDesc
-    Offset: '0x50'
+    Offset: '0x38'
     Size: '0x8'
-    Type: Class TunnelDesc*
-  ClassSize: '0x88'
+    Type: class TunnelDesc*
+  ClassSize: '0x40'

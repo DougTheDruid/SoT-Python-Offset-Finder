@@ -4,19 +4,19 @@
     "Attributes": [
       {
         "Name": "CategoryName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "CategoryStats",
-        "Type": "TArray<struct CategoryStats>",
+        "Type": "TArray<struct MemoryVisualiserStat>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "CategoryClasses",
-        "Type": "TArray<struct CategoryClasses>",
+        "Type": "TArray<struct MemoryVisualiserClass>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -27,7 +27,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_SL2H6[0x3]",
+        "Name": "pad0x3_22961[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -79,6 +79,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x4_FEPK8[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x54"
       }
     ]
   },
@@ -87,7 +93,7 @@
     "Attributes": [
       {
         "Name": "ClassType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -98,14 +104,14 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_PWE02[0x7]",
+        "Name": "pad0x7_ESPBQ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
       },
       {
         "Name": "DisplayName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -114,6 +120,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_Q6R9C[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
@@ -128,7 +140,7 @@
       },
       {
         "Name": "DisplayName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -137,6 +149,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_J0S0G[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       }
     ]
   },

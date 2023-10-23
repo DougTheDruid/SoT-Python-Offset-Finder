@@ -5,15 +5,15 @@ wsp_sea_rock_cluster_d_C:
   - Name: StaticMeshComponent0
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: StaticMeshComponent01
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: SharedRoot
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x18'
   FullSize: '0x3e0'
   InheritedSize: '0x3c8'

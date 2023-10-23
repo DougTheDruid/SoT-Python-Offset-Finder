@@ -12,7 +12,7 @@ class ChecklistActionData: public Object
 public:
 	int                                                          NumRequiredActions;                                // 0x28(0x4)
 	byte                                                         ActionType;                                        // 0x2c(0x1)
-	char                                                         pad0x3_I4X3T[0x3];                                 // 0x2d(0x3)
+	char                                                         pad0x3_5TB3Z[0x3];                                 // 0x2d(0x3)
 };
 
 
@@ -45,7 +45,7 @@ public:
 class NPCInteractionChecklistActionData: public ChecklistActionData
 {
 public:
-	TArray<struct TargetNPCIds>                                  TargetNPCIds;                                      // 0x30(0x10)
+	TArray<struct Guid>                                          TargetNPCIds;                                      // 0x30(0x10)
 };
 
 
@@ -53,7 +53,7 @@ public:
 class ChecklistItemsDataAsset: public DataAsset
 {
 public:
-	TArray<struct ChecklistItems>                                ChecklistItems;                                    // 0x28(0x10)
+	TArray<struct ChecklistItem>                                 ChecklistItems;                                    // 0x28(0x10)
 };
 
 
@@ -63,13 +63,13 @@ class ChecklistMap: public TreasureMap
 public:
 	int                                                          CanvasWidth;                                       // 0x828(0x4)
 	int                                                          CanvasHeight;                                      // 0x82c(0x4)
-	Class Font*                                                  Font;                                              // 0x830(0x8)
+	class Font*                                                  Font;                                              // 0x830(0x8)
 	float                                                        FontScale;                                         // 0x838(0x4)
 	float                                                        FontLineSpacingScale;                              // 0x83c(0x4)
-	char                                                         pad0x8_0G3CY[0x8];                                 // 0x840(0x8)
-	Class ChecklistMapLayout*                                    ChecklistMapLayout;                                // 0x848(0x8)
-	Struct ChecklistMapContents                                  Contents;                                          // 0x850(0xe8)
-	char                                                         pad0x48_7PTBE[0x48];                               // 0x938(0x48)
+	char                                                         pad0x8_5ZA6F[0x8];                                 // 0x840(0x8)
+	class ChecklistMapLayout*                                    ChecklistMapLayout;                                // 0x848(0x8)
+	struct ChecklistMapContents                                  Contents;                                          // 0x850(0xe8)
+	char                                                         pad0x48_GO5YZ[0x48];                               // 0x938(0x48)
 };
 
 
@@ -84,8 +84,8 @@ public:
 class ChecklistMapCompletionComponent: public ActorComponent
 {
 public:
-	Class ChecklistActionData*                                   ActionData;                                        // 0xc8(0x8)
-	char                                                         pad0x80_ZPDYH[0x80];                               // 0xd0(0x80)
+	class ChecklistActionData*                                   ActionData;                                        // 0xc8(0x8)
+	char                                                         pad0x80_MHKOW[0x80];                               // 0xd0(0x80)
 };
 
 
@@ -93,7 +93,7 @@ public:
 class ChecklistMapSettings: public DeveloperSettings
 {
 public:
-	Struct StringAssetReference                                  ChecklistMapItemDescClass;                         // 0x38(0x10)
+	struct StringAssetReference                                  ChecklistMapItemDescClass;                         // 0x38(0x10)
 	TArray<struct FName>                                         ChecklistEvents;                                   // 0x48(0x10)
 };
 

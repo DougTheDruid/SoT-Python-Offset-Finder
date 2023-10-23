@@ -3,62 +3,62 @@
 BP_EmissaryTable_OrderOfSouls_01_C:
   Attributes:
   - Name: PointLight
-    Offset: '0x6e0'
-    Size: '0x8'
-    Type: Class PointLightComponent*
-  - Name: EmissaryShipAffiliationTracker
     Offset: '0x6e8'
     Size: '0x8'
-    Type: Class EmissaryShipAffiliationTrackerComponent*
-  - Name: vfx_enchanting_open_chest_ambient
+    Type: class PointLightComponent*
+  - Name: EmissaryShipAffiliationTracker
     Offset: '0x6f0'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: con_cover_page_oos_01_a
+    Type: class EmissaryShipAffiliationTrackerComponent*
+  - Name: vfx_enchanting_open_chest_ambient
     Offset: '0x6f8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: bld_shop_bone_oos_07_a
+    Type: class ParticleSystemComponent*
+  - Name: con_cover_page_oos_01_a
     Offset: '0x700'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: bld_shop_bone_oos_08_a
+    Type: class StaticMeshComponent*
+  - Name: bld_shop_bone_oos_07_a
     Offset: '0x708'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: bld_shop_bone_oos_05_a
+    Type: class StaticMeshComponent*
+  - Name: bld_shop_bone_oos_08_a
     Offset: '0x710'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: bld_shop_bone_oos_03_a
+    Type: class StaticMeshComponent*
+  - Name: bld_shop_bone_oos_05_a
     Offset: '0x718'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: bld_shop_bone_oos_02_a
+    Type: class StaticMeshComponent*
+  - Name: bld_shop_bone_oos_03_a
     Offset: '0x720'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_cabin_books_03_a1
+    Type: class StaticMeshComponent*
+  - Name: bld_shop_bone_oos_02_a
     Offset: '0x728'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_cabin_books_02_a
+    Type: class StaticMeshComponent*
+  - Name: cap_cabin_books_03_a1
     Offset: '0x730'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_cabin_books_03_a
+    Type: class StaticMeshComponent*
+  - Name: cap_cabin_books_02_a
     Offset: '0x738'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_cabin_books_aged_02_a
+    Type: class StaticMeshComponent*
+  - Name: cap_cabin_books_03_a
     Offset: '0x740'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: cap_desk_model_oos_01_a
+    Type: class StaticMeshComponent*
+  - Name: cap_cabin_books_aged_02_a
     Offset: '0x748'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
+  - Name: cap_desk_model_oos_01_a
+    Offset: '0x750'
+    Size: '0x8'
+    Type: class StaticMeshComponent*
   ClassSize: '0x70'
-  FullSize: '0x750'
-  InheritedSize: '0x6e0'
+  FullSize: '0x758'
+  InheritedSize: '0x6e8'
   Super: BP_EmissaryTable_01_C

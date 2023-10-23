@@ -5,51 +5,51 @@ MapTable_C:
   - Name: UberGraphFrame
     Offset: '0x7b0'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
     Offset: '0x7b8'
     Size: '0x8'
-    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
+    Type: class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
   - Name: NavBlocker
     Offset: '0x7c0'
     Size: '0x8'
-    Type: Class BoxComponent*
+    Type: class BoxComponent*
   - Name: ControlPoint
     Offset: '0x7c8'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: ControlPoint
     Offset: '0x7d0'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: ControlPoint
     Offset: '0x7d8'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: ControlPoint
     Offset: '0x7e0'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: ControlPoint
     Offset: '0x7e8'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: ControlPoint
     Offset: '0x7f0'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   - Name: TextureFeedback
     Offset: '0x7f8'
     Size: '0x8'
-    Type: Class TextureFeedbackComponent*
+    Type: class TextureFeedbackComponent*
   - Name: Cube
     Offset: '0x800'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Map
     Offset: '0x808'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: ActiveRange
     Offset: '0x810'
     Size: '0x4'

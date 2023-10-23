@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_Bed_Large_C: public BP_Bed_C
 {
 public:
-	Class StaticMeshComponent*                                   DrapesMeshComponent;                               // 0x3d8(0x8)
+	class StaticMeshComponent*                                   DrapesMeshComponent;                               // 0x3d8(0x8)
 };
 
 

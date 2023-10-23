@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "PlayerPosition",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x778"
       }

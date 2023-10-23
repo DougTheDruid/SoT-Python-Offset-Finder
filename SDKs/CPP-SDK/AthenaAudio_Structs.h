@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct AnimNotify_SoundSwitch
 {
 public:
-	Struct StringAssetReference                                  SkeletalMeshReference;                             // 0x0(0x10)
+	struct StringAssetReference                                  SkeletalMeshReference;                             // 0x0(0x10)
 	struct FName                                                 SkeletalMeshCategoryName;                          // 0x10(0x8)
 };
 
@@ -45,9 +45,9 @@ public:
 struct StoryDrivenAudioPortalSetting
 {
 public:
-	Struct StoryFlag                                             Story;                                             // 0x0(0x8)
-	Class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x8(0x8)
-	Class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x10(0x8)
+	struct StoryFlag                                             Story;                                             // 0x0(0x8)
+	class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x8(0x8)
+	class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x10(0x8)
 };
 
 

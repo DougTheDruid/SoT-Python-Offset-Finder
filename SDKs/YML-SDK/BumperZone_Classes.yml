@@ -6,23 +6,23 @@ ShipBumperZone:
     Offset: '0x3c8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2f_ZEUH2[0x2f]
+  - Name: pad0x2f_6DJCN[0x2f]
     Offset: '0x3c9'
     Size: '0x2f'
     Type: char
   - Name: BumperZoneComponent
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class BoxComponent*
+    Type: class BoxComponent*
   - Name: DistanceRadiusComponent
     Offset: '0x400'
     Size: '0x8'
-    Type: Class SphereComponent*
+    Type: class SphereComponent*
   - Name: ApplyAngularImpulse
     Offset: '0x408'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_Q8RP0[0x3]
+  - Name: pad0x3_C4K5B[0x3]
     Offset: '0x409'
     Size: '0x3'
     Type: char
@@ -38,7 +38,7 @@ ShipBumperZone:
     Offset: '0x411'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_0JHBE[0x2]
+  - Name: pad0x2_BF85B[0x2]
     Offset: '0x412'
     Size: '0x2'
     Type: char
@@ -50,7 +50,7 @@ ShipBumperZone:
     Offset: '0x418'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_QUBK1[0x4]
+  - Name: pad0x4_N8YZ5[0x4]
     Offset: '0x41c'
     Size: '0x4'
     Type: char

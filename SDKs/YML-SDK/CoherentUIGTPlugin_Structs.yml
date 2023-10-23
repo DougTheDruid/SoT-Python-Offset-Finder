@@ -14,14 +14,14 @@ CoherentUIGTLoadingScreenSettings:
     Offset: '0x5'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_87CRS[0x2]
+  - Name: pad0x2_53H2N[0x2]
     Offset: '0x6'
     Size: '0x2'
     Type: char
   - Name: URL
     Offset: '0x8'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x18'
 CoherentUIGTViewInfo:
   Attributes:
@@ -37,7 +37,7 @@ CoherentUIGTViewInfo:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_6BAZ8[0x3]
+  - Name: pad0x3_DJZOY[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char

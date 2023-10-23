@@ -1,20 +1,27 @@
 {
   "CustomServerLocalisationModel": {
     "ClassSize": "0x50",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x50_SFLXE[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
   },
   "CustomServerLocalisationData": {
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Key",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "LocaleEntries",
-        "Type": "TArray<struct LocaleEntries>",
+        "Type": "TArray<struct LocPairData>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -25,13 +32,13 @@
     "Attributes": [
       {
         "Name": "Locale",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Value",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -42,9 +49,15 @@
     "Attributes": [
       {
         "Name": "Key",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_9E4PV[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

@@ -21,12 +21,12 @@ public:
 	struct FName                                                 LiquidMaterialParameterName;                       // 0xd0(0x8)
 	TArray<struct LiquidTypeParams>                              LiquidTypeParams;                                  // 0xd8(0x10)
 	float                                                        StartingLiquidLevelNormalised;                     // 0xe8(0x4)
-	char                                                         pad0x4_REZLM[0x4];                                 // 0xec(0x4)
-	Class CurveFloat*                                            TransitionCurve;                                   // 0xf0(0x8)
+	char                                                         pad0x4_WM0NR[0x4];                                 // 0xec(0x4)
+	class CurveFloat*                                            TransitionCurve;                                   // 0xf0(0x8)
 	float                                                        TransitionSpeedDecrease;                           // 0xf8(0x4)
 	float                                                        TransitionSpeedIncrease;                           // 0xfc(0x4)
 	TArray<class MaterialInstanceDynamic*>                       LiquidMaterials;                                   // 0x100(0x10)
-	char                                                         pad0x18_9BHDN[0x18];                               // 0x110(0x18)
+	char                                                         pad0x18_H44J8[0x18];                               // 0x110(0x18)
 };
 
 
@@ -41,6 +41,7 @@ public:
 class LiquidContainerService: public InteractableService
 {
 public:
+	char                                                         pad0x8_BO9J8[0x8];                                 // 0x70(0x8)
 };
 
 
@@ -48,6 +49,7 @@ public:
 class LiquidLevelTransferComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x10_K4X9F[0x10];                               // 0xc8(0x10)
 };
 
 

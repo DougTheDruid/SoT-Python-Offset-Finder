@@ -10,15 +10,15 @@ namespace DougsSDKDumper
 class BP_CT_TutorialProgress_C: public Object
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x28(0x8)
-	char                                                         pad0x226_UNG2X[0x226];                             // 0x30(0x226)
-	Class AthenaPlayerController*                                AthenaPlayerController;                            // 0x30(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x28(0x8)
+	char                                                         pad0x260_TLGQM[0x260];                             // 0x30(0x260)
+	class AthenaPlayerController*                                AthenaPlayerController;                            // 0x30(0x8)
 	TArray<class BP_CT_VoyageProgress_C*>                        TutorialVoyageProgressTrackers;                    // 0x38(0x10)
-	BlueprintGeneratedClass BP_CT_VoyageProgress_C*              XMarksTutorialProgress;                            // 0x48(0x8)
-	BlueprintGeneratedClass BP_CT_VoyageProgress_C*              RiddleTutorialProgress;                            // 0x50(0x8)
-	BlueprintGeneratedClass BP_CT_VoyageProgress_C*              FaunaTutorialProgress;                             // 0x58(0x8)
-	BlueprintGeneratedClass BP_CT_VoyageProgress_C*              CargoTutorialProgress;                             // 0x60(0x8)
-	BlueprintGeneratedClass BP_CT_VoyageProgress_C*              BootyTutorialProgress;                             // 0x68(0x8)
+	blueprintgeneratedclass BP_CT_VoyageProgress_C*              XMarksTutorialProgress;                            // 0x48(0x8)
+	blueprintgeneratedclass BP_CT_VoyageProgress_C*              RiddleTutorialProgress;                            // 0x50(0x8)
+	blueprintgeneratedclass BP_CT_VoyageProgress_C*              FaunaTutorialProgress;                             // 0x58(0x8)
+	blueprintgeneratedclass BP_CT_VoyageProgress_C*              CargoTutorialProgress;                             // 0x60(0x8)
+	blueprintgeneratedclass BP_CT_VoyageProgress_C*              BootyTutorialProgress;                             // 0x68(0x8)
 };
 
 

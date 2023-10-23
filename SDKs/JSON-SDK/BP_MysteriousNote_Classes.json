@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "ZoomInOnWieldableItem",
-        "Type": "Class ZoomInOnWieldableItemComponent*",
+        "Type": "class ZoomInOnWieldableItemComponent*",
         "Size": "0x8",
         "Offset": "0x980"
       }

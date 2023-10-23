@@ -10,18 +10,18 @@ namespace DougsSDKDumper
 class BP_SmallMapTable_C: public MapTable
 {
 public:
-	Struct PointerToUberGraphFrame                               None;                                              // 0x7b0(0x8)
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* None;                                              // 0x7b8(0x8)
-	Class BoxComponent*                                          None;                                              // 0x7c0(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x7c8(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x7d0(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x7d8(0x8)
-	Class ChildActorComponent*                                   None;                                              // 0x7e0(0x8)
-	Class TextureFeedbackComponent*                              None;                                              // 0x7e8(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x7f0(0x8)
-	Class StaticMeshComponent*                                   None;                                              // 0x7f8(0x8)
-	float                                                        None;                                              // 0x800(0x4)
-	bool                                                         None;                                              // 0x804(0x1)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x7b0(0x8)
+	class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x7b8(0x8)
+	class BoxComponent*                                          NavBlocker;                                        // 0x7c0(0x8)
+	class ChildActorComponent*                                   ControlPoint;                                      // 0x7c8(0x8)
+	class ChildActorComponent*                                   ControlPoint;                                      // 0x7d0(0x8)
+	class ChildActorComponent*                                   ControlPoint;                                      // 0x7d8(0x8)
+	class ChildActorComponent*                                   ControlPoint;                                      // 0x7e0(0x8)
+	class TextureFeedbackComponent*                              TextureFeedback;                                   // 0x7e8(0x8)
+	class StaticMeshComponent*                                   Cube;                                              // 0x7f0(0x8)
+	class StaticMeshComponent*                                   Map;                                               // 0x7f8(0x8)
+	float                                                        ActiveRange;                                       // 0x800(0x4)
+	bool                                                         IsActive;                                          // 0x804(0x1)
 };
 
 

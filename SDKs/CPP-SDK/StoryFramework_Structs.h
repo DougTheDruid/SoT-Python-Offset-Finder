@@ -18,7 +18,7 @@ public:
 struct StoryClaimedResourcesChangedTelemetryEvent
 {
 public:
-	TArray<struct StoryResourceStateChanges>                     StoryResourceStateChanges;                         // 0x0(0x10)
+	TArray<struct StoryResourceStateChanged>                     StoryResourceStateChanges;                         // 0x0(0x10)
 };
 
 
@@ -37,9 +37,9 @@ public:
 struct StoryClaimableResourcesList
 {
 public:
-	Struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
+	struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
 	bool                                                         AreResourcesClaimed;                               // 0x8(0x1)
-	char                                                         pad0x7_I3LW6[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_H4DW6[0x7];                                 // 0x9(0x7)
 	TArray<Weakclass ClaimableResources>                         ClaimableResources;                                // 0x10(0x10)
 };
 
@@ -48,7 +48,7 @@ public:
 struct LightingZoneStoryRelatedSettings
 {
 public:
-	Struct StoryFlag                                             Story;                                             // 0x0(0x8)
+	struct StoryFlag                                             Story;                                             // 0x0(0x8)
 	float                                                        TargetPointOnCurve;                                // 0x8(0x4)
 	float                                                        FadeDuration;                                      // 0xc(0x4)
 };
@@ -59,6 +59,7 @@ struct NamedPointsGroupActorLocation
 {
 public:
 	struct FName                                                 NamedPointsGroup;                                  // 0x0(0x8)
+	char                                                         pad0x20_IJKWR[0x20];                               // 0x8(0x20)
 };
 
 
@@ -66,9 +67,9 @@ public:
 struct StorySpawnedActorsComponentList
 {
 public:
-	Struct StoryFlag                                             Story;                                             // 0x0(0x8)
-	TArray<struct GroupLocations>                                GroupLocations;                                    // 0x8(0x10)
-	Class LayerActorsDataAsset*                                  LayerToSpawn;                                      // 0x18(0x8)
+	struct StoryFlag                                             Story;                                             // 0x0(0x8)
+	TArray<struct NamedPointsGroupActorLocation>                 GroupLocations;                                    // 0x8(0x10)
+	class LayerActorsDataAsset*                                  LayerToSpawn;                                      // 0x18(0x8)
 };
 
 
@@ -76,10 +77,10 @@ public:
 struct StorySpawnedActorsList
 {
 public:
-	Struct StoryFlag                                             Story;                                             // 0x0(0x8)
-	TArray<struct ActorLocations>                                ActorLocations;                                    // 0x8(0x10)
-	TArray<struct NamedPointsActorLocations>                     NamedPointsActorLocations;                         // 0x18(0x10)
-	TArray<struct InstancedLayerLocations>                       InstancedLayerLocations;                           // 0x28(0x10)
+	struct StoryFlag                                             Story;                                             // 0x0(0x8)
+	TArray<struct ActorLocationPair>                             ActorLocations;                                    // 0x8(0x10)
+	TArray<struct NamedPointsActorLocation>                      NamedPointsActorLocations;                         // 0x18(0x10)
+	TArray<struct InstancedLayerLocation>                        InstancedLayerLocations;                           // 0x28(0x10)
 };
 
 
@@ -87,8 +88,8 @@ public:
 struct InstancedLayerLocation
 {
 public:
-	Struct StringAssetReference                                  ActorWithInstancedLayerComponent;                  // 0x0(0x10)
-	Class LayerActorsDataAsset*                                  LayerToSpawn;                                      // 0x10(0x8)
+	struct StringAssetReference                                  ActorWithInstancedLayerComponent;                  // 0x0(0x10)
+	class LayerActorsDataAsset*                                  LayerToSpawn;                                      // 0x10(0x8)
 };
 
 
@@ -96,8 +97,8 @@ public:
 struct NamedPointsActorLocation
 {
 public:
-	Struct StringAssetReference                                  ActorWithNamedPointsComponent;                     // 0x0(0x10)
-	TArray<struct GroupLocations>                                GroupLocations;                                    // 0x10(0x10)
+	struct StringAssetReference                                  ActorWithNamedPointsComponent;                     // 0x0(0x10)
+	TArray<struct NamedPointsGroupActorLocation>                 GroupLocations;                                    // 0x10(0x10)
 };
 
 
@@ -105,7 +106,8 @@ public:
 struct ActorLocationPair
 {
 public:
-	Struct StringAssetReference                                  SpawnLocation;                                     // 0x0(0x10)
+	struct StringAssetReference                                  SpawnLocation;                                     // 0x0(0x10)
+	char                                                         pad0x20_3DO0B[0x20];                               // 0x10(0x20)
 };
 
 
@@ -113,8 +115,8 @@ public:
 struct StorySpawnedActorsChangeTelemetryEvent
 {
 public:
-	TArray<struct StorySpawnedActors>                            StorySpawnedActors;                                // 0x0(0x10)
-	TArray<struct StoryDespawnedActors>                          StoryDespawnedActors;                              // 0x10(0x10)
+	TArray<struct StorySpawnedActorsIndividualStoryInfo>         StorySpawnedActors;                                // 0x0(0x10)
+	TArray<struct StorySpawnedActorsIndividualStoryInfo>         StoryDespawnedActors;                              // 0x10(0x10)
 };
 
 
@@ -122,7 +124,7 @@ public:
 struct StorySpawnedActorsIndividualStoryInfo
 {
 public:
-	Struct FString                                               StoryName;                                         // 0x0(0x10)
+	struct FString                                               StoryName;                                         // 0x0(0x10)
 	int                                                          NumActorsSpawned;                                  // 0x10(0x4)
 	int                                                          NumActorsDespawned;                                // 0x14(0x4)
 };
@@ -132,7 +134,9 @@ public:
 struct IsStoryActiveConditionBase
 {
 public:
-	TArray<struct StoryFlags>                                    StoryFlags;                                        // 0x28(0x10)
+	char                                                         pad0x28_7V1MB[0x28];                               // 0x0(0x28)
+	TArray<struct StoryFlag>                                     StoryFlags;                                        // 0x28(0x10)
+	char                                                         pad0x10_NCXGZ[0x10];                               // 0x38(0x10)
 };
 
 
@@ -140,6 +144,7 @@ public:
 struct IsAllStoryActiveCondition
 {
 public:
+	char                                                         pad0x48_MHBIQ[0x48];                               // 0x0(0x48)
 };
 
 
@@ -147,6 +152,7 @@ public:
 struct IsAnyStoryActiveCondition
 {
 public:
+	char                                                         pad0x48_LYV3K[0x48];                               // 0x0(0x48)
 };
 
 
@@ -155,6 +161,7 @@ struct StoryInfo
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
+	char                                                         pad0x10_W3CVU[0x10];                               // 0x8(0x10)
 };
 
 
@@ -163,7 +170,7 @@ struct StoryNameInfo
 {
 public:
 	struct FName                                                 StoryName;                                         // 0x0(0x8)
-	Struct FString                                               StoryDesc;                                         // 0x8(0x10)
+	struct FString                                               StoryDesc;                                         // 0x8(0x10)
 };
 
 
@@ -191,6 +198,7 @@ public:
 	TArray<Str ActiveStories>                                    ActiveStories;                                     // 0x10(0x10)
 	bool                                                         DidStoriesChange;                                  // 0x20(0x1)
 	bool                                                         WereStoriesRefreshed;                              // 0x21(0x1)
+	char                                                         pad0x6_QXXBJ[0x6];                                 // 0x22(0x6)
 };
 
 

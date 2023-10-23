@@ -9,18 +9,22 @@ ServerSpireInfo:
   - Name: Location
     Offset: '0x4'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: SpireActor
     Offset: '0x10'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
+  - Name: pad0x50_GKAXU[0x50]
+    Offset: '0x18'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x68'
 SpireEntry:
   Attributes:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: IslandName
     Offset: '0xc'
     Size: '0x8'
@@ -40,4 +44,8 @@ SpireInfo:
     Offset: '0x5'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_YVKVO[0x2]
+    Offset: '0x6'
+    Size: '0x2'
+    Type: char
   ClassSize: '0x8'

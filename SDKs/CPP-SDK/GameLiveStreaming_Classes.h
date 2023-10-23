@@ -17,6 +17,7 @@ public:
 class QueryLiveStreamsCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
+	char                                                         pad0x20_97S2O[0x20];                               // 0x28(0x20)
 };
 
 

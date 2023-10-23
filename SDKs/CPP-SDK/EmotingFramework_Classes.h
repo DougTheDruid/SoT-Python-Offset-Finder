@@ -17,12 +17,12 @@ public:
 class EmoteCard: public Actor
 {
 public:
-	char                                                         pad0x8_6AVZY[0x8];                                 // 0x3c8(0x8)
-	Class MaterialInstanceDynamic*                               DynamicCardSelectionMaterialInstance;              // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x3d8(0x8)
+	char                                                         pad0x8_3YK09[0x8];                                 // 0x3c8(0x8)
+	class MaterialInstanceDynamic*                               DynamicCardSelectionMaterialInstance;              // 0x3d0(0x8)
+	class StaticMeshComponent*                                   MeshComponent;                                     // 0x3d8(0x8)
 	struct FName                                                 RandomCardParameterName;                           // 0x3e0(0x8)
-	Struct Int32Range                                            RandomCardParameterRange;                          // 0x3e8(0x10)
-	char                                                         pad0x120_78V3G[0x120];                             // 0x3f8(0x120)
+	struct Int32Range                                            RandomCardParameterRange;                          // 0x3e8(0x10)
+	char                                                         pad0x120_T07Y2[0x120];                             // 0x3f8(0x120)
 };
 
 
@@ -30,6 +30,7 @@ public:
 class EmoteCoin: public Actor
 {
 public:
+	char                                                         pad0x128_WR8KU[0x128];                             // 0x3c8(0x128)
 };
 
 
@@ -44,7 +45,7 @@ public:
 class EmoteRandomFromListAsset: public DataAsset
 {
 public:
-	TArray<struct EmoteDataList>                                 EmoteDataList;                                     // 0x28(0x10)
+	TArray<struct EmoteData>                                     EmoteDataList;                                     // 0x28(0x10)
 };
 
 
@@ -53,7 +54,7 @@ class EmotePropDiceData: public EmotePropData
 {
 public:
 	byte                                                         DiceType;                                          // 0x28(0x1)
-	char                                                         pad0x7_RB7PB[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_I27IV[0x7];                                 // 0x29(0x7)
 };
 
 
@@ -61,6 +62,7 @@ public:
 class EmoteDice: public Actor
 {
 public:
+	char                                                         pad0x130_BRST9[0x130];                             // 0x3c8(0x130)
 };
 
 
@@ -83,7 +85,7 @@ public:
 class EmotePropRandomObjectData: public EmotePropData
 {
 public:
-	TArray<struct PossibleObjects>                               PossibleObjects;                                   // 0x28(0x10)
+	TArray<struct EmotePropRandomObjectInfo>                     PossibleObjects;                                   // 0x28(0x10)
 };
 
 
@@ -91,10 +93,10 @@ public:
 class EmoteRandomObject: public Actor
 {
 public:
-	char                                                         pad0x8_JNEO9[0x8];                                 // 0x3c8(0x8)
-	Class StaticMeshComponent*                                   MeshComponent;                                     // 0x3d0(0x8)
-	Class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x3d8(0x8)
-	char                                                         pad0x128_5FDEM[0x128];                             // 0x3e0(0x128)
+	char                                                         pad0x8_SVC1A[0x8];                                 // 0x3c8(0x8)
+	class StaticMeshComponent*                                   MeshComponent;                                     // 0x3d0(0x8)
+	class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x3d8(0x8)
+	char                                                         pad0x128_PQGML[0x128];                             // 0x3e0(0x128)
 };
 
 
@@ -103,7 +105,7 @@ class EmoteSettings: public DeveloperSettings
 {
 public:
 	int                                                          NumPages;                                          // 0x38(0x4)
-	char                                                         pad0x4_PB6ZY[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_RAN80[0x4];                                 // 0x3c(0x4)
 };
 
 

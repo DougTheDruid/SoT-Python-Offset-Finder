@@ -9,14 +9,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_MWEFA[0x4]",
+        "Name": "pad0x4_Z9N10[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "Despawn_Pawn",
-        "Type": "Class Pawn*",
+        "Type": "class Pawn*",
         "Size": "0x8",
         "Offset": "0x8"
       },
@@ -27,14 +27,14 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_VKNYO[0x7]",
+        "Name": "pad0x7_I3PFT[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
       },
       {
         "Name": "Body",
-        "Type": "Class TaleQuestStepDesc*",
+        "Type": "class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x18"
       }
@@ -50,20 +50,20 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_JHQ4C[0x4]",
+        "Name": "pad0x4_53ZSP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "Spawn_Pawn",
-        "Type": "Class Pawn*",
+        "Type": "class Pawn*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "Body",
-        "Type": "Class TaleQuestStepDesc*",
+        "Type": "class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -74,7 +74,7 @@
     "Attributes": [
       {
         "Name": "Body",
-        "Type": "Class TaleQuestStepDesc*",
+        "Type": "class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -90,14 +90,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_IEOWK[0x4]",
+        "Name": "pad0x4_Z4Z7F[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "Body",
-        "Type": "Class TaleQuestStepDesc*",
+        "Type": "class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -114,13 +114,13 @@
       },
       {
         "Name": "SpawnLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x4"
       },
       {
         "Name": "SpawnRotation",
-        "Type": "Struct Rotator",
+        "Type": "struct Rotator",
         "Size": "0xc",
         "Offset": "0x10"
       },
@@ -131,50 +131,50 @@
         "Offset": "0x1c"
       },
       {
-        "Name": "pad0x3_16T83[0x3]",
+        "Name": "pad0x3_QK34B[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1d"
       },
       {
         "Name": "Skillset",
-        "Type": "Class AthenaAIControllerParamsDataAsset*",
+        "Type": "class AthenaAIControllerParamsDataAsset*",
         "Size": "0x8",
         "Offset": "0x40"
       },
       {
         "Name": "Loadout",
-        "Type": "Class LoadoutAsset*",
+        "Type": "class LoadoutAsset*",
         "Size": "0x8",
         "Offset": "0x48"
       },
       {
         "Name": "Form",
-        "Type": "Class AthenaAIFormDataAsset*",
+        "Type": "class AthenaAIFormDataAsset*",
         "Size": "0x8",
         "Offset": "0x50"
       },
       {
         "Name": "Ammo",
-        "Type": "Class AthenaAIAmmoDataAsset*",
+        "Type": "class AthenaAIAmmoDataAsset*",
         "Size": "0x8",
         "Offset": "0x58"
       },
       {
         "Name": "AIClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x60"
       },
       {
         "Name": "PartsCategory",
-        "Type": "Class AIPartsCategory*",
+        "Type": "class AIPartsCategory*",
         "Size": "0x8",
         "Offset": "0x68"
       },
       {
         "Name": "Body",
-        "Type": "Class TaleQuestStepDesc*",
+        "Type": "class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x70"
       }
@@ -190,20 +190,20 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_D4TMZ[0x4]",
+        "Name": "pad0x4_9VZI0[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "Region",
-        "Type": "Class TaleAIRegionBase*",
+        "Type": "class TaleAIRegionBase*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "Body",
-        "Type": "Class TaleQuestStepDesc*",
+        "Type": "class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x10"
       }

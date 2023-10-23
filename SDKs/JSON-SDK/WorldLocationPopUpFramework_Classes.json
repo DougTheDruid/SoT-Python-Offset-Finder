@@ -14,12 +14,12 @@
     "Attributes": [
       {
         "Name": "SuppressedWorldLocationPopUpNearbyLocations",
-        "Type": "TArray<struct SuppressedWorldLocationPopUpNearbyLocations>",
+        "Type": "TArray<struct TaleWorldLocationPopUpServiceEntry>",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x20_3MJQQ[0x20]",
+        "Name": "pad0x20_I8U6Z[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x70"
@@ -46,14 +46,14 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_JSS3G[0x4]",
+        "Name": "pad0x4_OVU1M[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
       },
       {
         "Name": "NearbyActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x88"
       }
@@ -79,7 +79,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x3_QIZJR[0x3]",
+        "Name": "pad0x3_ZUI0L[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x81"
@@ -92,7 +92,7 @@
       },
       {
         "Name": "NearbyLocation",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0x88"
       }
@@ -106,13 +106,13 @@
     "Attributes": [
       {
         "Name": "PopUpData",
-        "Type": "Class WorldLocationPopUpDataAsset*",
+        "Type": "class WorldLocationPopUpDataAsset*",
         "Size": "0x8",
         "Offset": "0x2e0"
       },
       {
         "Name": "LocationOverlapVolume",
-        "Type": "Class ShapeComponent*",
+        "Type": "class ShapeComponent*",
         "Size": "0x8",
         "Offset": "0x2e8"
       },
@@ -129,19 +129,19 @@
         "Offset": "0x2f4"
       },
       {
-        "Name": "pad0x63_Z2L2S[0x63]",
+        "Name": "pad0x63_6RWQM[0x63]",
         "Type": "char",
         "Size": "0x63",
         "Offset": "0x2f5"
       },
       {
         "Name": "SuppressedCrews",
-        "Type": "TArray<struct SuppressedCrews>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x358"
       },
       {
-        "Name": "pad0x8_VMMCG[0x8]",
+        "Name": "pad0x8_2WAYC[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x368"
@@ -162,19 +162,19 @@
       },
       {
         "Name": "BannerIcon",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "DisplayText",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x40"
       },
       {
         "Name": "AudioOverride",
-        "Type": "Class PopUpAudioDesc*",
+        "Type": "class PopUpAudioDesc*",
         "Size": "0x8",
         "Offset": "0x78"
       }
@@ -194,7 +194,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x8_YFB1O[0x8]",
+        "Name": "pad0x8_0B3VW[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -206,7 +206,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x34_TF3K1[0x34]",
+        "Name": "pad0x34_TZM5K[0x34]",
         "Type": "char",
         "Size": "0x34",
         "Offset": "0xd4"

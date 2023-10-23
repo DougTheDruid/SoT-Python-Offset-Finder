@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "ChairMesh",
-        "Type": "Class StaticMeshMemoryConstraintComponent*",
+        "Type": "class StaticMeshMemoryConstraintComponent*",
         "Size": "0x8",
         "Offset": "0x470"
       }

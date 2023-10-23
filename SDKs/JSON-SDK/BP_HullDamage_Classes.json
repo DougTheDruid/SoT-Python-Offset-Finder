@@ -7,19 +7,19 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x5d0"
       },
       {
         "Name": "HitReaction",
-        "Type": "Class HitReactionComponent*",
+        "Type": "class HitReactionComponent*",
         "Size": "0x8",
         "Offset": "0x5d8"
       },
       {
         "Name": "ImpactDecalComponent",
-        "Type": "Class BakedDecalComponent*",
+        "Type": "class BakedDecalComponent*",
         "Size": "0x8",
         "Offset": "0x5e0"
       },
@@ -31,7 +31,7 @@
       },
       {
         "Name": "Damage VFX",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x5f8"
       },
@@ -67,7 +67,7 @@
       },
       {
         "Name": "RandomDecalStream",
-        "Type": "Struct RandomStream",
+        "Type": "struct RandomStream",
         "Size": "0x8",
         "Offset": "0x620"
       },
@@ -85,13 +85,13 @@
       },
       {
         "Name": "ParentShip",
-        "Type": "Class Ship*",
+        "Type": "class Ship*",
         "Size": "0x8",
         "Offset": "0x630"
       },
       {
         "Name": "CannonballHitEmitter",
-        "Type": "Struct WwiseEmitter",
+        "Type": "struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x638"
       }

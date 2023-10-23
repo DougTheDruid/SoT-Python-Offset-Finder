@@ -5,7 +5,7 @@ wsp_light_plate_a_a_C:
   - Name: ParticleSystem
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Type: class ParticleSystemComponent*
   ClassSize: '0x8'
   FullSize: '0x3e0'
   InheritedSize: '0x3d8'

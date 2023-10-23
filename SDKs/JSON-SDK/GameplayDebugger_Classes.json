@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "DebugComponentClassName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x5c0"
       },
@@ -18,7 +18,7 @@
         "Offset": "0x5d0"
       },
       {
-        "Name": "pad0x4_45TIG[0x4]",
+        "Name": "pad0x4_A12HW[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x5d4"
@@ -31,97 +31,97 @@
       },
       {
         "Name": "ControllerName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x5e8"
       },
       {
         "Name": "PawnName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x5f8"
       },
       {
         "Name": "PawnClass",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x608"
       },
       {
         "Name": "DebugIcon",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x618"
       },
       {
         "Name": "MovementBaseInfo",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x628"
       },
       {
         "Name": "MovementModeInfo",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x638"
       },
       {
         "Name": "PathFollowingInfo",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x648"
       },
       {
         "Name": "CurrentAITask",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x658"
       },
       {
         "Name": "CurrentAIState",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x668"
       },
       {
         "Name": "CurrentAIAssets",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x678"
       },
       {
         "Name": "GameplayTasksState",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x688"
       },
       {
         "Name": "NavDataInfo",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x698"
       },
       {
         "Name": "AbilityInfo",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x6a8"
       },
       {
         "Name": "MontageInfo",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x6b8"
       },
       {
         "Name": "BrainComponentName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x6c8"
       },
       {
         "Name": "BrainComponentString",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x6d8"
       },
@@ -132,14 +132,14 @@
         "Offset": "0x6e8"
       },
       {
-        "Name": "pad0x10_GO48C[0x10]",
+        "Name": "pad0x10_CAX84[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x6f8"
       },
       {
         "Name": "PathPoints",
-        "Type": "TArray<struct PathPoints>",
+        "Type": "TArray<struct Vector>",
         "Size": "0x10",
         "Offset": "0x708"
       },
@@ -150,7 +150,7 @@
         "Offset": "0x718"
       },
       {
-        "Name": "pad0x10_CYH0I[0x10]",
+        "Name": "pad0x10_LNHQ1[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x728"
@@ -169,7 +169,7 @@
       },
       {
         "Name": "SensingComponentLocation",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x758"
       },
@@ -204,19 +204,19 @@
         "Offset": "0x768"
       },
       {
-        "Name": "pad0x7_PNWGN[0x7]",
+        "Name": "pad0x7_IMMNJ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x769"
       },
       {
         "Name": "TargetActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x770"
       },
       {
-        "Name": "pad0x78_AY3NB[0x78]",
+        "Name": "pad0x78_4YVZ4[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0x778"
@@ -255,18 +255,18 @@
       },
       {
         "Name": "Canvas",
-        "Type": "Class Canvas*",
+        "Type": "class Canvas*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
         "Name": "PlayerOwner",
-        "Type": "Class PlayerController*",
+        "Type": "class PlayerController*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "pad0xd0_REK7O[0xd0]",
+        "Name": "pad0xd0_1DOT1[0xd0]",
         "Type": "char",
         "Size": "0xd0",
         "Offset": "0x3e8"
@@ -281,7 +281,7 @@
     "Attributes": [
       {
         "Name": "CustomViewNames",
-        "Type": "Struct GDTCustomViewNames",
+        "Type": "struct GDTCustomViewNames",
         "Size": "0x50",
         "Offset": "0x28"
       },
@@ -316,7 +316,7 @@
         "Offset": "0x7c"
       },
       {
-        "Name": "pad0x3_KIGML[0x3]",
+        "Name": "pad0x3_CDFOP[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x7d"
@@ -364,7 +364,7 @@
         "Offset": "0x89"
       },
       {
-        "Name": "pad0x1e_0OSOB[0x1e]",
+        "Name": "pad0x1e_OSPI9[0x1e]",
         "Type": "char",
         "Size": "0x1e",
         "Offset": "0x8a"
@@ -379,121 +379,121 @@
     "Attributes": [
       {
         "Name": "OnDebugAIHUD",
-        "Type": "Class GameplayDebuggingHUDComponent*",
+        "Type": "class GameplayDebuggingHUDComponent*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "DebugAITargetActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
       {
         "Name": "AIDebugViewInputComponent",
-        "Type": "Class InputComponent*",
+        "Type": "class InputComponent*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
       {
         "Name": "DebugCameraInputComponent",
-        "Type": "Class InputComponent*",
+        "Type": "class InputComponent*",
         "Size": "0x8",
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x28_NCW3J[0x28]",
+        "Name": "pad0x28_CW0CF[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xe8"
       },
       {
         "Name": "ActivationKey",
-        "Type": "Struct InputChord",
+        "Type": "struct InputChord",
         "Size": "0x28",
         "Offset": "0x110"
       },
       {
         "Name": "CategoryZeroBind",
-        "Type": "Struct InputChord",
+        "Type": "struct InputChord",
         "Size": "0x28",
         "Offset": "0x138"
       },
       {
         "Name": "CategoryOneBind",
-        "Type": "Struct InputChord",
+        "Type": "struct InputChord",
         "Size": "0x28",
         "Offset": "0x160"
       },
       {
         "Name": "CategoryTwoBind",
-        "Type": "Struct InputChord",
+        "Type": "struct InputChord",
         "Size": "0x28",
         "Offset": "0x188"
       },
       {
         "Name": "CategoryThreeBind",
-        "Type": "Struct InputChord",
+        "Type": "struct InputChord",
         "Size": "0x28",
         "Offset": "0x1b0"
       },
       {
         "Name": "CategoryFourBind",
-        "Type": "Struct InputChord",
+        "Type": "struct InputChord",
         "Size": "0x28",
         "Offset": "0x1d8"
       },
       {
         "Name": "CategoryFiveBind",
-        "Type": "Struct InputChord",
+        "Type": "struct InputChord",
         "Size": "0x28",
         "Offset": "0x200"
       },
       {
         "Name": "CategorySixBind",
-        "Type": "Struct InputChord",
+        "Type": "struct InputChord",
         "Size": "0x28",
         "Offset": "0x228"
       },
       {
         "Name": "CategorySevenBind",
-        "Type": "Struct InputChord",
+        "Type": "struct InputChord",
         "Size": "0x28",
         "Offset": "0x250"
       },
       {
         "Name": "CategoryEightBind",
-        "Type": "Struct InputChord",
+        "Type": "struct InputChord",
         "Size": "0x28",
         "Offset": "0x278"
       },
       {
         "Name": "CategoryNineBind",
-        "Type": "Struct InputChord",
+        "Type": "struct InputChord",
         "Size": "0x28",
         "Offset": "0x2a0"
       },
       {
         "Name": "CycleDetailsViewBind",
-        "Type": "Struct InputChord",
+        "Type": "struct InputChord",
         "Size": "0x28",
         "Offset": "0x2c8"
       },
       {
         "Name": "DebugCameraBind",
-        "Type": "Struct InputChord",
+        "Type": "struct InputChord",
         "Size": "0x28",
         "Offset": "0x2f0"
       },
       {
         "Name": "OnScreenDebugMessagesBind",
-        "Type": "Struct InputChord",
+        "Type": "struct InputChord",
         "Size": "0x28",
         "Offset": "0x318"
       },
       {
         "Name": "GameHUDBind",
-        "Type": "Struct InputChord",
+        "Type": "struct InputChord",
         "Size": "0x28",
         "Offset": "0x340"
       }
@@ -504,7 +504,14 @@
     "FullSize": "0x4f0",
     "InheritedSize": "0x4c0",
     "ClassSize": "0x30",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x30_K2E5O[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x4c0"
+      }
+    ]
   },
   "GameplayDebuggingReplicator": {
     "Super": "Actor",
@@ -514,19 +521,19 @@
     "Attributes": [
       {
         "Name": "DebugComponentClassName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x3c8"
       },
       {
         "Name": "DebugComponentHUDClassName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x3d8"
       },
       {
         "Name": "DebugComponentControllerClassName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x3e8"
       },
@@ -537,26 +544,26 @@
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x4_3OIYV[0x4]",
+        "Name": "pad0x4_SNX3V[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3fc"
       },
       {
         "Name": "DebugComponent",
-        "Type": "Class GameplayDebuggingComponent*",
+        "Type": "class GameplayDebuggingComponent*",
         "Size": "0x8",
         "Offset": "0x400"
       },
       {
         "Name": "LocalPlayerOwner",
-        "Type": "Class PlayerController*",
+        "Type": "class PlayerController*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
         "Name": "LastSelectedActorToDebug",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x410"
       },
@@ -603,7 +610,7 @@
         "Offset": "0x41e"
       },
       {
-        "Name": "pad0x1_0ML9E[0x1]",
+        "Name": "pad0x1_7U8SB[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x41f"
@@ -651,7 +658,7 @@
         "Offset": "0x429"
       },
       {
-        "Name": "pad0x4e_DSIDH[0x4e]",
+        "Name": "pad0x4e_P0WDM[0x4e]",
         "Type": "char",
         "Size": "0x4e",
         "Offset": "0x42a"

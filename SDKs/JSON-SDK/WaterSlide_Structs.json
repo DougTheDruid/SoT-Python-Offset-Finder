@@ -40,19 +40,19 @@
       },
       {
         "Name": "StatToFireForRouteChange",
-        "Type": "Struct PlayerStat",
+        "Type": "struct PlayerStat",
         "Size": "0x4",
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_YUVSU[0x4]",
+        "Name": "pad0x4_LNEG8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
       },
       {
         "Name": "PlayerSplashingVFXOverride",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x20"
       }
@@ -92,38 +92,38 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_1KDQ7[0x4]",
+        "Name": "pad0x4_RP3QQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
       },
       {
         "Name": "SwingAngleControlDegrees",
-        "Type": "Struct RuntimeVectorCurve",
+        "Type": "struct RuntimeVectorCurve",
         "Size": "0x170",
         "Offset": "0x18"
       },
       {
         "Name": "SwingSpeedControlRPM",
-        "Type": "Struct RuntimeVectorCurve",
+        "Type": "struct RuntimeVectorCurve",
         "Size": "0x170",
         "Offset": "0x188"
       },
       {
         "Name": "WindResistanceMinMaxAngleDegrees",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x2f8"
       },
       {
         "Name": "FOVMinMaxSpeed",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x300"
       },
       {
         "Name": "FOVMinMaxAngleDegrees",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x308"
       }
@@ -131,26 +131,33 @@
   },
   "OnUpdateZiplineActionStateEvent": {
     "ClassSize": "0x1c",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1c_UTAEX[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x0"
+      }
+    ]
   },
   "OnEndZiplineActionStateEvent": {
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "ZiplineEnd",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "ZiplineEndLoop",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "DetachFromZiplineAdditiveOneShot",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -161,31 +168,31 @@
     "Attributes": [
       {
         "Name": "ZiplineStart",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "AttachToZiplineAdditiveOneShot",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "ZiplineLoopStart",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
         "Name": "ZiplineWindVFX",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x18"
       },
       {
         "Name": "ZiplineTrailVFX",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x20"
       }
@@ -193,14 +200,27 @@
   },
   "OnExitedRideEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_W9AGX[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "RideTransitionActionStateConstructionInfo": {
     "ClassSize": "0x58",
     "Attributes": [
       {
+        "Name": "pad0x30_E7ZP1[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Ride",
-        "Type": "Class Ride*",
+        "Type": "class Ride*",
         "Size": "0x8",
         "Offset": "0x30"
       },
@@ -211,7 +231,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_WNPZM[0x3]",
+        "Name": "pad0x3_5HLVW[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -221,12 +241,24 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3c"
+      },
+      {
+        "Name": "pad0x18_CNU5S[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x40"
       }
     ]
   },
   "RideTransitionActionStateParams": {
     "ClassSize": "0x14",
     "Attributes": [
+      {
+        "Name": "pad0x10_2C0MN[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
       {
         "Name": "Duration",
         "Type": "float",
@@ -239,8 +271,14 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
+        "Name": "pad0x30_TSEF4[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
         "Name": "SceneComponent",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x30"
       }
@@ -262,14 +300,14 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_POGMF[0x3]",
+        "Name": "pad0x3_V9WE3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5"
       },
       {
         "Name": "LookAtOffsetParams",
-        "Type": "Struct LookAtOffsetParams",
+        "Type": "struct LookAtOffsetParams",
         "Size": "0x1c",
         "Offset": "0x8"
       }
@@ -277,14 +315,27 @@
   },
   "OnPlayerSpeedOnWaterSlideChangedActionStateEvent": {
     "ClassSize": "0xc",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xc_G9P23[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x0"
+      }
+    ]
   },
   "OnPlayerChangedWaterSlideRouteActionStateEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
+        "Name": "pad0x8_04N50[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
         "Name": "WaterSlideChangeForkOneShot",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -294,14 +345,20 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
+        "Name": "pad0x8_URJ9N[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
         "Name": "WaterSlideEnd",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "WaterSlideIsEndOneShot",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -312,13 +369,13 @@
     "Attributes": [
       {
         "Name": "WaterSlideStart",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "WaterSlideVfxOverride",
-        "Type": "Class ParticleSystem*",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -328,8 +385,14 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
+        "Name": "pad0x30_ORALA[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
         "Name": "SceneComponent",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x30"
       },
@@ -346,7 +409,7 @@
         "Offset": "0x39"
       },
       {
-        "Name": "pad0x6_CKNUV[0x6]",
+        "Name": "pad0x6_DQ6VJ[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x3a"
@@ -364,7 +427,7 @@
     "Attributes": [
       {
         "Name": "LookAtOffsetParams",
-        "Type": "Struct LookAtOffsetParams",
+        "Type": "struct LookAtOffsetParams",
         "Size": "0x1c",
         "Offset": "0x0"
       }

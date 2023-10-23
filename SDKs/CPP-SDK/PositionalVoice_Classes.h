@@ -24,14 +24,14 @@ public:
 class VoiceChatRenderer: public Object
 {
 public:
-	char                                                         pad0x10_921J2[0x10];                               // 0x28(0x10)
-	Class WwiseEvent*                                            AttenuatedVoiceEvent;                              // 0x38(0x8)
-	Class WwiseEvent*                                            AttenuatedAndSpatialisedVoiceEvent;                // 0x40(0x8)
-	Class WwiseEvent*                                            UnattenuatedVoiceEvent;                            // 0x48(0x8)
+	char                                                         pad0x10_XLYO0[0x10];                               // 0x28(0x10)
+	class WwiseEvent*                                            AttenuatedVoiceEvent;                              // 0x38(0x8)
+	class WwiseEvent*                                            AttenuatedAndSpatialisedVoiceEvent;                // 0x40(0x8)
+	class WwiseEvent*                                            UnattenuatedVoiceEvent;                            // 0x48(0x8)
 	int                                                          PreBufferInMilliseconds;                           // 0x50(0x4)
 	int                                                          ChatRoutingListenerIndex;                          // 0x54(0x4)
 	float                                                        EmitterHoldInSeconds;                              // 0x58(0x4)
-	char                                                         pad0x124_V5OL5[0x124];                             // 0x5c(0x124)
+	char                                                         pad0x124_UKMAO[0x124];                             // 0x5c(0x124)
 };
 
 

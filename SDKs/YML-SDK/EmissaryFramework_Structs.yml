@@ -10,17 +10,21 @@ EmissaryCompanyActionRewardBoostServiceEvent:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_X8XJO[0x3]
+  - Name: pad0x3_39SOM[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
   - Name: AssociatedCrew
     Offset: '0xc'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x1c'
 EmissaryCompanyChangedEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_K5MXK[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
 EmissaryFactionActionRewardBoostServiceEvent:
   Attributes:
@@ -28,39 +32,39 @@ EmissaryFactionActionRewardBoostServiceEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_39W08[0x3]
+  - Name: pad0x3_25U57[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
   - Name: AssociatedCrew
     Offset: '0x4'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x14'
 EmissaryGlobalActionRewardBoostEvent:
   Attributes:
   - Name: GameEventType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x8'
 EmissaryGlobalActionRewardBoostServiceEvent:
   Attributes:
   - Name: FinishedEventType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: AssociatedCrew
     Offset: '0x8'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x18'
 EmissaryLedgerVisited:
   Attributes:
   - Name: CompanyId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x10'
 EmissaryNonQuestCompanyActionRewardBoostEvent:
   Attributes:
@@ -75,12 +79,12 @@ EmissaryQuestCompanyActionRewardBoostEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_I6E0T[0x3]
+  - Name: pad0x3_MPGA3[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
   - Name: QuestId
     Offset: '0x4'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x14'

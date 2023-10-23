@@ -25,7 +25,11 @@ GameServiceTickInterface:
   InheritedSize: '0x28'
   Super: Interface
 ServiceProviderGameState:
-  Attributes: []
+  Attributes:
+  - Name: pad0x120_MCE7A[0x120]
+    Offset: '0x420'
+    Size: '0x120'
+    Type: char
   ClassSize: '0x120'
   FullSize: '0x540'
   InheritedSize: '0x420'

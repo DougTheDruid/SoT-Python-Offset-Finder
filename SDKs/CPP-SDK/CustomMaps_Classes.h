@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class CustomMapDisplayObjectBase: public Object
 {
 public:
-	Struct Guid                                                  Guid;                                              // 0x28(0x10)
+	struct Guid                                                  Guid;                                              // 0x28(0x10)
 };
 
 
@@ -18,10 +18,10 @@ public:
 class CustomMap: public RenderToTextureMapBase
 {
 public:
-	char                                                         pad0x8_4Z8DN[0x8];                                 // 0x890(0x8)
-	Class Font*                                                  Font;                                              // 0x898(0x8)
+	char                                                         pad0x8_26OPA[0x8];                                 // 0x890(0x8)
+	class Font*                                                  Font;                                              // 0x898(0x8)
 	TArray<class CustomMapDisplayObjectBase*>                    DisplayItems;                                      // 0x8a0(0x10)
-	char                                                         pad0x10_11PRX[0x10];                               // 0x8b0(0x10)
+	char                                                         pad0x10_6NVKK[0x10];                               // 0x8b0(0x10)
 };
 
 
@@ -36,7 +36,7 @@ public:
 class CustomMapDataTypeBase: public Object
 {
 public:
-	Struct Guid                                                  Guid;                                              // 0x28(0x10)
+	struct Guid                                                  Guid;                                              // 0x28(0x10)
 };
 
 
@@ -44,8 +44,8 @@ public:
 class CustomMapData: public DataAsset
 {
 public:
-	class                                                        CustomMapItemDescClass;                            // 0x28(0x8)
-	Class Font*                                                  Font;                                              // 0x30(0x8)
+	class UClass*                                                CustomMapItemDescClass;                            // 0x28(0x8)
+	class Font*                                                  Font;                                              // 0x30(0x8)
 	TArray<class CustomMapDataTypeBase*>                         MapDisplayItemList;                                // 0x38(0x10)
 };
 
@@ -54,9 +54,9 @@ public:
 class CustomMapDataTypePositional: public CustomMapDataTypeBase
 {
 public:
-	Struct Vector2D                                              Position;                                          // 0x38(0x8)
+	struct Vector2D                                              Position;                                          // 0x38(0x8)
 	float                                                        Orientation;                                       // 0x40(0x4)
-	char                                                         pad0x4_GHIT9[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_INL3U[0x4];                                 // 0x44(0x4)
 };
 
 
@@ -64,9 +64,9 @@ public:
 class CustomMapDisplayObjectPositional: public CustomMapDisplayObjectBase
 {
 public:
-	Struct Vector2D                                              Position;                                          // 0x38(0x8)
+	struct Vector2D                                              Position;                                          // 0x38(0x8)
 	float                                                        Orientation;                                       // 0x40(0x4)
-	char                                                         pad0x4_2JLFK[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_CQW1A[0x4];                                 // 0x44(0x4)
 };
 
 
@@ -74,12 +74,12 @@ public:
 class CustomMapDisplayObjectText: public CustomMapDisplayObjectPositional
 {
 public:
-	Struct FText                                                 Text;                                              // 0x48(0x38)
+	struct FText                                                 Text;                                              // 0x48(0x38)
 	float                                                        FontScale;                                         // 0x80(0x4)
 	bool                                                         StrikeThrough;                                     // 0x84(0x1)
-	char                                                         pad0x3_2L0HH[0x3];                                 // 0x85(0x3)
+	char                                                         pad0x3_0LVD2[0x3];                                 // 0x85(0x3)
 	float                                                        StrikethroughThickness;                            // 0x88(0x4)
-	char                                                         pad0x4c_RGMOW[0x4c];                               // 0x8c(0x4c)
+	char                                                         pad0x4c_87GIL[0x4c];                               // 0x8c(0x4c)
 };
 
 
@@ -87,12 +87,12 @@ public:
 class CustomMapDataTypeText: public CustomMapDataTypePositional
 {
 public:
-	Struct FText                                                 Text;                                              // 0x48(0x38)
+	struct FText                                                 Text;                                              // 0x48(0x38)
 	float                                                        FontScale;                                         // 0x80(0x4)
 	bool                                                         StrikeThrough;                                     // 0x84(0x1)
-	char                                                         pad0x3_MUK1U[0x3];                                 // 0x85(0x3)
+	char                                                         pad0x3_QTMH9[0x3];                                 // 0x85(0x3)
 	float                                                        StrikethroughThickness;                            // 0x88(0x4)
-	char                                                         pad0x4_3BD39[0x4];                                 // 0x8c(0x4)
+	char                                                         pad0x4_74ZL1[0x4];                                 // 0x8c(0x4)
 };
 
 
@@ -100,7 +100,7 @@ public:
 class CustomMapSettings: public DeveloperSettings
 {
 public:
-	class                                                        CustomMapItemDescClass;                            // 0x38(0x8)
+	class UClass*                                                CustomMapItemDescClass;                            // 0x38(0x8)
 };
 
 

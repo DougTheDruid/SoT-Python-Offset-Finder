@@ -7,109 +7,109 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x1f60"
       },
       {
         "Name": "WorldVelocityTracker",
-        "Type": "Class WorldVelocityTrackerComponent*",
+        "Type": "class WorldVelocityTrackerComponent*",
         "Size": "0x8",
         "Offset": "0x1f68"
       },
       {
         "Name": "ChainLightningReceiver",
-        "Type": "Class ChainLightningReceiverComponent*",
+        "Type": "class ChainLightningReceiverComponent*",
         "Size": "0x8",
         "Offset": "0x1f70"
       },
       {
         "Name": "StatusApplicationMonitor",
-        "Type": "Class StatusApplicationMonitorComponent*",
+        "Type": "class StatusApplicationMonitorComponent*",
         "Size": "0x8",
         "Offset": "0x1f78"
       },
       {
         "Name": "ReviveComponent",
-        "Type": "Class ReviveComponent*",
+        "Type": "class ReviveComponent*",
         "Size": "0x8",
         "Offset": "0x1f80"
       },
       {
         "Name": "AnimNotifyWwiseEmitter",
-        "Type": "Class AnimNotifyWwiseEmitterComponent*",
+        "Type": "class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x1f88"
       },
       {
         "Name": "Vomit",
-        "Type": "Class VomitComponent*",
+        "Type": "class VomitComponent*",
         "Size": "0x8",
         "Offset": "0x1f90"
       },
       {
         "Name": "NoiseMaker",
-        "Type": "Class NoiseMakerComponent*",
+        "Type": "class NoiseMakerComponent*",
         "Size": "0x8",
         "Offset": "0x1f98"
       },
       {
         "Name": "PlayerNameplate",
-        "Type": "Class PlayerNameplateComponent*",
+        "Type": "class PlayerNameplateComponent*",
         "Size": "0x8",
         "Offset": "0x1fa0"
       },
       {
         "Name": "BodyLightController",
-        "Type": "Class BodyLightControllerComponent*",
+        "Type": "class BodyLightControllerComponent*",
         "Size": "0x8",
         "Offset": "0x1fa8"
       },
       {
         "Name": "BodyLight",
-        "Type": "Class AmbientLightSourceComponent*",
+        "Type": "class AmbientLightSourceComponent*",
         "Size": "0x8",
         "Offset": "0x1fb0"
       },
       {
         "Name": "AudioSpaceTracker",
-        "Type": "Class AudioSpaceTrackerComponent*",
+        "Type": "class AudioSpaceTrackerComponent*",
         "Size": "0x8",
         "Offset": "0x1fb8"
       },
       {
         "Name": "PlayerAtmosphericsAudio",
-        "Type": "Class PlayerAtmosphericsAudioComponent*",
+        "Type": "class PlayerAtmosphericsAudioComponent*",
         "Size": "0x8",
         "Offset": "0x1fc0"
       },
       {
         "Name": "BP_CharacterVFXComponent",
-        "Type": "BlueprintGeneratedClass BP_CharacterVFXComponent_C*",
+        "Type": "blueprintgeneratedclass BP_CharacterVFXComponent_C*",
         "Size": "0x8",
         "Offset": "0x1fc8"
       },
       {
         "Name": "WaterInteraction",
-        "Type": "Class WaterInteractionComponent*",
+        "Type": "class WaterInteractionComponent*",
         "Size": "0x8",
         "Offset": "0x1fd0"
       },
       {
         "Name": "BP_PlayerAudioComponent",
-        "Type": "BlueprintGeneratedClass BP_CharacterAudioComponent_C*",
+        "Type": "blueprintgeneratedclass BP_CharacterAudioComponent_C*",
         "Size": "0x8",
         "Offset": "0x1fd8"
       },
       {
         "Name": "CharacterFootImpact",
-        "Type": "Class CharacterFootImpactComponent*",
+        "Type": "class CharacterFootImpactComponent*",
         "Size": "0x8",
         "Offset": "0x1fe0"
       },
       {
         "Name": "PlayerOceanAudio",
-        "Type": "Class PlayerOceanAudioComponent*",
+        "Type": "class PlayerOceanAudioComponent*",
         "Size": "0x8",
         "Offset": "0x1fe8"
       },
@@ -120,20 +120,20 @@
         "Offset": "0x1ff0"
       },
       {
-        "Name": "pad0x4_22KWI[0x4]",
+        "Name": "pad0x4_GXOIN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1ff4"
       },
       {
         "Name": "CurrentStaticMesh",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x1ff8"
       },
       {
         "Name": "CurrentSkeletalMesh",
-        "Type": "Class SkeletalMesh*",
+        "Type": "class SkeletalMesh*",
         "Size": "0x8",
         "Offset": "0x2000"
       },
@@ -156,7 +156,7 @@
         "Offset": "0x2028"
       },
       {
-        "Name": "pad0x3_H963T[0x3]",
+        "Name": "pad0x3_4D5D4[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2029"
@@ -169,7 +169,7 @@
       },
       {
         "Name": "ItemScale",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x2030"
       }

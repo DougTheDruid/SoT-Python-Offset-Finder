@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct WorldEdgeItemServiceBatchCompletedEvent
 {
 public:
-	Struct Guid                                                  BatchId;                                           // 0x0(0x10)
+	struct Guid                                                  BatchId;                                           // 0x0(0x10)
 };
 
 
@@ -18,8 +18,8 @@ public:
 struct WorldEdgeItemBatchTelemetryEvent
 {
 public:
-	Struct Vector                                                ShipLocation;                                      // 0x0(0xc)
-	Struct Vector                                                TeleportLocation;                                  // 0xc(0xc)
+	struct Vector                                                ShipLocation;                                      // 0x0(0xc)
+	struct Vector                                                TeleportLocation;                                  // 0xc(0xc)
 	int                                                          NumItems;                                          // 0x18(0x4)
 };
 
@@ -28,8 +28,8 @@ public:
 struct WorldEdgeItemDroppedInRedSeaTelemetryEvent
 {
 public:
-	Struct Vector                                                DropLocation;                                      // 0x0(0xc)
-	Struct Vector                                                TeleportLocation;                                  // 0xc(0xc)
+	struct Vector                                                DropLocation;                                      // 0x0(0xc)
+	struct Vector                                                TeleportLocation;                                  // 0xc(0xc)
 };
 
 

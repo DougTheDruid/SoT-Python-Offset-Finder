@@ -17,11 +17,11 @@ public:
 class RenderToTextureSceneDetails: public Object
 {
 public:
-	class                                                        ClassToSpawn;                                      // 0x28(0x8)
-	Struct IntPoint                                              Resolution;                                        // 0x30(0x8)
-	Class World*                                                 World;                                             // 0x38(0x8)
-	Class TextureRenderTarget2D*                                 RenderTarget;                                      // 0x50(0x8)
-	char                                                         pad0x50_OC301[0x50];                               // 0x58(0x50)
+	class UClass*                                                ClassToSpawn;                                      // 0x28(0x8)
+	struct IntPoint                                              Resolution;                                        // 0x30(0x8)
+	class World*                                                 World;                                             // 0x38(0x8)
+	class TextureRenderTarget2D*                                 RenderTarget;                                      // 0x50(0x8)
+	char                                                         pad0x50_44MGQ[0x50];                               // 0x58(0x50)
 };
 
 

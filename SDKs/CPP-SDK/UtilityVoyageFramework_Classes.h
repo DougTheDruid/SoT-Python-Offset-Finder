@@ -13,13 +13,13 @@ public:
 };
 
 
-// Size 0x98 (Full Size[0xc0] - InheritedSize[0x28]
+// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
 class UtilityVoyageService: public Object
 {
 public:
-	char                                                         pad0x78_9HGNT[0x78];                               // 0x28(0x78)
-	TArray<class CrewVoyageParticipant*>                         Participants;                                      // 0xa0(0x10)
-	TArray<struct Voyages>                                       Voyages;                                           // 0xb0(0x10)
+	char                                                         pad0x90_3USF2[0x90];                               // 0x28(0x90)
+	TArray<class CrewVoyageParticipant*>                         Participants;                                      // 0xb8(0x10)
+	TArray<struct UtilityVoyageData>                             Voyages;                                           // 0xc8(0x10)
 };
 
 

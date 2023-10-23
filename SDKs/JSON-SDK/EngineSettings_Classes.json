@@ -12,14 +12,14 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_41YZN[0x4]",
+        "Name": "pad0x4_FKX95[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
       },
       {
         "Name": "ManualAutoCompleteList",
-        "Type": "TArray<struct ManualAutoCompleteList>",
+        "Type": "TArray<struct AutoCompleteCommand>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -39,19 +39,19 @@
     "Attributes": [
       {
         "Name": "EditorStartupMap",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "LocalMapOptions",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "TransitionMap",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x48"
       },
@@ -74,38 +74,38 @@
         "Offset": "0x5a"
       },
       {
-        "Name": "pad0x5_11RD5[0x5]",
+        "Name": "pad0x5_ODBHJ[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x5b"
       },
       {
         "Name": "GameInstanceClass",
-        "Type": "Struct StringClassReference",
+        "Type": "struct StringClassReference",
         "Size": "0x10",
         "Offset": "0x60"
       },
       {
         "Name": "GameDefaultMap",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "ServerDefaultMap",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x80"
       },
       {
         "Name": "GlobalDefaultGameMode",
-        "Type": "Struct StringClassReference",
+        "Type": "struct StringClassReference",
         "Size": "0x10",
         "Offset": "0x90"
       },
       {
         "Name": "GlobalDefaultServerGameMode",
-        "Type": "Struct StringClassReference",
+        "Type": "struct StringClassReference",
         "Size": "0x10",
         "Offset": "0xa0"
       }
@@ -148,7 +148,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_XNG67[0x3]",
+        "Name": "pad0x3_KEM8M[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -190,7 +190,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_3PRQ8[0x4]",
+        "Name": "pad0x4_FZ8BN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
@@ -222,7 +222,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_AXQ5J[0x7]",
+        "Name": "pad0x7_HYJ8Y[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
@@ -244,73 +244,73 @@
     "Attributes": [
       {
         "Name": "CompanyName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "CompanyDistinguishedName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "CopyrightNotice",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
         "Name": "Description",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "Homepage",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x68"
       },
       {
         "Name": "LicensingTerms",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x78"
       },
       {
         "Name": "PrivacyPolicy",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x88"
       },
       {
         "Name": "ProjectID",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x98"
       },
       {
         "Name": "ProjectName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0xa8"
       },
       {
         "Name": "ProjectVersion",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0xb8"
       },
       {
         "Name": "SupportContact",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "ProjectDisplayedTitle",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0xd8"
       }
@@ -329,7 +329,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_A8IXL[0x7]",
+        "Name": "pad0x7_I9ORH[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"

@@ -6,13 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18 (Full Size[0x708] - InheritedSize[0x6f0]
-class BP_Mojo_CaptainScott_C: public None
+// Size 0x18 (Full Size[0x710] - InheritedSize[0x6f8]
+class BP_Mojo_CaptainScott_C: public BP_SoleTrader_C
 {
 public:
-	Class SceneComponent*                                        None;                                              // 0x6f0(0x8)
-	Class SceneComponent*                                        None;                                              // 0x6f8(0x8)
-	Class ActorOfInterestComponent*                              None;                                              // 0x700(0x8)
+	class SceneComponent*                                        InteractionPromptOverride;                         // 0x6f8(0x8)
+	class SceneComponent*                                        DialogueLookAtOverride;                            // 0x700(0x8)
+	class ActorOfInterestComponent*                              ActorOfInterest;                                   // 0x708(0x8)
 };
 
 

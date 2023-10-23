@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class BP_AudioCoast_C: public Actor
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
-	Class SplineComponent*                                       SplineInner;                                       // 0x3d0(0x8)
-	Class SplineComponent*                                       SplineCoast;                                       // 0x3d8(0x8)
-	Class SceneComponent*                                        Scene;                                             // 0x3e0(0x8)
-	Struct BlueprintableIntegerHandle                            Handle;                                            // 0x3e8(0x4)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
+	class SplineComponent*                                       SplineInner;                                       // 0x3d0(0x8)
+	class SplineComponent*                                       SplineCoast;                                       // 0x3d8(0x8)
+	class SceneComponent*                                        Scene;                                             // 0x3e0(0x8)
+	struct BlueprintableIntegerHandle                            Handle;                                            // 0x3e8(0x4)
 };
 
 

@@ -10,8 +10,9 @@ namespace DougsSDKDumper
 struct WaterInformation
 {
 public:
-	class                                                        WaterType;                                         // 0x0(0x8)
+	class UClass*                                                WaterType;                                         // 0x0(0x8)
 	bool                                                         CanSwim;                                           // 0x8(0x1)
+	char                                                         pad0x7_5SJPY[0x7];                                 // 0x9(0x7)
 };
 
 
@@ -19,15 +20,16 @@ public:
 struct WaterBuoyancy
 {
 public:
-	Class PrimitiveComponent*                                    PrimitiveComponent;                                // 0x0(0x8)
+	class PrimitiveComponent*                                    PrimitiveComponent;                                // 0x0(0x8)
 	float                                                        OverallBuyoancyScalar;                             // 0x8(0x4)
 	float                                                        DampingPerSample;                                  // 0xc(0x4)
 	float                                                        AdditionalAngularDampingWhenSubmerged;             // 0x10(0x4)
-	char                                                         pad0x4_SKX3N[0x4];                                 // 0x14(0x4)
-	TArray<struct VolumeSamples>                                 VolumeSamples;                                     // 0x18(0x10)
-	TArray<struct DragSamples>                                   DragSamples;                                       // 0x28(0x10)
-	Class CurveFloat*                                            BuyoancySampleZSpeedVSDampeningScalar;             // 0x38(0x8)
+	char                                                         pad0x4_1XTDF[0x4];                                 // 0x14(0x4)
+	TArray<struct BuoyancyVolumeSample>                          VolumeSamples;                                     // 0x18(0x10)
+	TArray<struct BuoyancyDragSample>                            DragSamples;                                       // 0x28(0x10)
+	class CurveFloat*                                            BuyoancySampleZSpeedVSDampeningScalar;             // 0x38(0x8)
 	float                                                        QuadSubmersionTestSampleResolution;                // 0x40(0x4)
+	char                                                         pad0xec_EUYRM[0xec];                               // 0x44(0xec)
 };
 
 
@@ -35,12 +37,13 @@ public:
 struct BuoyancyDragSample
 {
 public:
-	Struct Vector                                                Offset;                                            // 0x0(0xc)
-	Struct Vector                                                Normal;                                            // 0xc(0xc)
-	Struct Vector                                                Tangent;                                           // 0x18(0xc)
+	struct Vector                                                Offset;                                            // 0x0(0xc)
+	struct Vector                                                Normal;                                            // 0xc(0xc)
+	struct Vector                                                Tangent;                                           // 0x18(0xc)
 	float                                                        Radius;                                            // 0x24(0x4)
 	float                                                        DragCoefficient;                                   // 0x28(0x4)
 	byte                                                         Type;                                              // 0x2c(0x1)
+	char                                                         pad0x63_GW7IX[0x63];                               // 0x2d(0x63)
 };
 
 
@@ -48,20 +51,21 @@ public:
 struct BuoyancyVolumeSample
 {
 public:
-	Struct Vector                                                Offset;                                            // 0x0(0xc)
+	struct Vector                                                Offset;                                            // 0x0(0xc)
 	float                                                        Radius;                                            // 0xc(0x4)
 	byte                                                         Type;                                              // 0x10(0x1)
 	bool                                                         bRelevantForSubmersionVolumeCalculation;           // 0x11(0x1)
-	char                                                         pad0x2_Q1BV3[0x2];                                 // 0x12(0x2)
+	char                                                         pad0x2_MV3HQ[0x2];                                 // 0x12(0x2)
 	float                                                        Scalar;                                            // 0x14(0x4)
 	float                                                        DampingScalar;                                     // 0x18(0x4)
-	char                                                         pad0x4_1VMY1[0x4];                                 // 0x1c(0x4)
-	Class CurveFloat*                                            DistUnderwaterVSBuoyancyForce;                     // 0x20(0x8)
-	Class CurveFloat*                                            DistUnderwaterVSBuoyancyForceSecondary;            // 0x28(0x8)
-	Class CurveFloat*                                            DistUnderwaterVSBuoyancyForceTertiary;             // 0x30(0x8)
-	Class CurveFloat*                                            FakeZOffsetGeneratorCurve;                         // 0x38(0x8)
+	char                                                         pad0x4_YZLC6[0x4];                                 // 0x1c(0x4)
+	class CurveFloat*                                            DistUnderwaterVSBuoyancyForce;                     // 0x20(0x8)
+	class CurveFloat*                                            DistUnderwaterVSBuoyancyForceSecondary;            // 0x28(0x8)
+	class CurveFloat*                                            DistUnderwaterVSBuoyancyForceTertiary;             // 0x30(0x8)
+	class CurveFloat*                                            FakeZOffsetGeneratorCurve;                         // 0x38(0x8)
 	float                                                        FakeZOffsetAmp;                                    // 0x40(0x4)
 	float                                                        FakeZOffsetGeneratorTimeScale;                     // 0x44(0x4)
+	char                                                         pad0x10_RLJ6C[0x10];                               // 0x48(0x10)
 };
 
 
@@ -69,10 +73,11 @@ public:
 struct BuoyancySampleMovement
 {
 public:
-	TArray<struct Configurations>                                Configurations;                                    // 0x0(0x10)
-	char                                                         pad0x40_GEEYP[0x40];                               // 0x10(0x40)
-	Class CurveFloat*                                            BuoyancyScalarCurve;                               // 0x50(0x8)
-	Class CurveFloat*                                            ProbeMovementCurve;                                // 0x58(0x8)
+	TArray<struct BuoyancySampleMovementConfiguration>           Configurations;                                    // 0x0(0x10)
+	char                                                         pad0x40_39BFN[0x40];                               // 0x10(0x40)
+	class CurveFloat*                                            BuoyancyScalarCurve;                               // 0x50(0x8)
+	class CurveFloat*                                            ProbeMovementCurve;                                // 0x58(0x8)
+	char                                                         pad0x8_L85US[0x8];                                 // 0x60(0x8)
 };
 
 
@@ -80,13 +85,14 @@ public:
 struct BuoyancySampleMovementConfiguration
 {
 public:
-	Class CurveVector*                                           CenterOfMassOffsetCurve;                           // 0x0(0x8)
-	TArray<struct SampleMoveData>                                SampleMoveData;                                    // 0x8(0x10)
+	class CurveVector*                                           CenterOfMassOffsetCurve;                           // 0x0(0x8)
+	TArray<struct BuoyancySampleMovementConfigurationEntry>      SampleMoveData;                                    // 0x8(0x10)
 	float                                                        OverallBuoyancyScalar;                             // 0x18(0x4)
-	char                                                         pad0x4_5LFT0[0x4];                                 // 0x1c(0x4)
-	Class CurveFloat*                                            OverallBuoyancyScalarBlendCurve;                   // 0x20(0x8)
-	Class CurveFloat*                                            ProbeMovementBlendCurve;                           // 0x28(0x8)
+	char                                                         pad0x4_1Y7KG[0x4];                                 // 0x1c(0x4)
+	class CurveFloat*                                            OverallBuoyancyScalarBlendCurve;                   // 0x20(0x8)
+	class CurveFloat*                                            ProbeMovementBlendCurve;                           // 0x28(0x8)
 	float                                                        Duration;                                          // 0x30(0x4)
+	char                                                         pad0x4_KAGS7[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -94,9 +100,9 @@ public:
 struct BuoyancySampleMovementConfigurationEntry
 {
 public:
-	Struct Vector                                                SampleOffset;                                      // 0x0(0xc)
-	char                                                         pad0x4_5F3YS[0x4];                                 // 0xc(0x4)
-	Class CurveFloat*                                            BuoyancyScaleCurve;                                // 0x10(0x8)
+	struct Vector                                                SampleOffset;                                      // 0x0(0xc)
+	char                                                         pad0x4_61N1D[0x4];                                 // 0xc(0x4)
+	class CurveFloat*                                            BuoyancyScaleCurve;                                // 0x10(0x8)
 };
 
 
@@ -104,8 +110,8 @@ public:
 struct EventCurrentWaterPlaneChange
 {
 public:
-	Class BaseWaterComponent*                                    FormerWaterPlane;                                  // 0x0(0x8)
-	Class BaseWaterComponent*                                    NewWaterPlane;                                     // 0x8(0x8)
+	class BaseWaterComponent*                                    FormerWaterPlane;                                  // 0x0(0x8)
+	class BaseWaterComponent*                                    NewWaterPlane;                                     // 0x8(0x8)
 };
 
 
@@ -113,6 +119,7 @@ public:
 struct EventLeftWaterExclusionZone
 {
 public:
+	char                                                         pad0x1_ZOZQ0[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -120,6 +127,7 @@ public:
 struct EventEnteredWaterExclusionZone
 {
 public:
+	char                                                         pad0x1_3Q8RU[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -128,9 +136,10 @@ struct FFTWaterQueryResult
 {
 public:
 	float                                                        Height;                                            // 0x0(0x4)
-	Struct Vector2D                                              Choppiness;                                        // 0x4(0x8)
-	Struct Vector                                                Normal;                                            // 0xc(0xc)
+	struct Vector2D                                              Choppiness;                                        // 0x4(0x8)
+	struct Vector                                                Normal;                                            // 0xc(0xc)
 	byte                                                         WaterQueryResult;                                  // 0x18(0x1)
+	char                                                         pad0x3_GL9GS[0x3];                                 // 0x19(0x3)
 };
 
 
@@ -138,8 +147,9 @@ public:
 struct WaterSplashProbesContainer
 {
 public:
-	TArray<struct Probes>                                        Probes;                                            // 0x0(0x10)
+	TArray<struct WaterSplashProbe>                              Probes;                                            // 0x0(0x10)
 	float                                                        ProbeSamplingTime;                                 // 0x10(0x4)
+	char                                                         pad0x4_M29V6[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -147,19 +157,21 @@ public:
 struct WaterSplashProbe
 {
 public:
-	Struct FString                                               ProbeDebugName;                                    // 0x8(0x10)
-	Struct Vector                                                LocalOffset;                                       // 0x18(0xc)
+	char                                                         pad0x8_PNNKO[0x8];                                 // 0x0(0x8)
+	struct FString                                               ProbeDebugName;                                    // 0x8(0x10)
+	struct Vector                                                LocalOffset;                                       // 0x18(0xc)
 	float                                                        Height;                                            // 0x24(0x4)
 	float                                                        Pitch;                                             // 0x28(0x4)
 	float                                                        Yaw;                                               // 0x2c(0x4)
 	float                                                        Roll;                                              // 0x30(0x4)
 	float                                                        RateOfChangeThreshold;                             // 0x34(0x4)
-	Struct Vector                                                LocalOffsetAdjustment;                             // 0x38(0xc)
+	struct Vector                                                LocalOffsetAdjustment;                             // 0x38(0xc)
 	float                                                        LocalOffsetAdjustmentDuration;                     // 0x44(0x4)
 	byte                                                         Type;                                              // 0x48(0x1)
 	byte                                                         WaterHeightType;                                   // 0x49(0x1)
-	char                                                         pad0x2_L68OI[0x2];                                 // 0x4a(0x2)
+	char                                                         pad0x2_Y90WJ[0x2];                                 // 0x4a(0x2)
 	float                                                        StaticWaterHeightValue;                            // 0x4c(0x4)
+	char                                                         pad0x88_1KM16[0x88];                               // 0x50(0x88)
 };
 
 
@@ -167,18 +179,20 @@ public:
 struct SplashProbe
 {
 public:
-	Struct WaterSplashProbe                                      Probe;                                             // 0x8(0xd8)
+	char                                                         pad0x8_6I67B[0x8];                                 // 0x0(0x8)
+	struct WaterSplashProbe                                      Probe;                                             // 0x8(0xd8)
 	float                                                        ProbeSamplingTime;                                 // 0xe0(0x4)
 	float                                                        TimeBetweenProbeVfx;                               // 0xe4(0x4)
-	Class Object*                                                ParticleSystem;                                    // 0xe8(0x8)
+	class Object*                                                ParticleSystem;                                    // 0xe8(0x8)
 	byte                                                         UnderwaterUsage;                                   // 0xf0(0x1)
 	bool                                                         SpawnAttached;                                     // 0xf1(0x1)
 	bool                                                         AttachToWaterSurface;                              // 0xf2(0x1)
 	byte                                                         SplashAttachType;                                  // 0xf3(0x1)
-	Struct Vector                                                VfxSpawnOffset;                                    // 0xf4(0xc)
+	struct Vector                                                VfxSpawnOffset;                                    // 0xf4(0xc)
 	bool                                                         Enabled;                                           // 0x100(0x1)
-	char                                                         pad0x7_3DPWH[0x7];                                 // 0x101(0x7)
-	Class ParticleSystemComponent*                               CurrentlyPlayingVFX;                               // 0x108(0x8)
+	char                                                         pad0x7_6KXGR[0x7];                                 // 0x101(0x7)
+	class ParticleSystemComponent*                               CurrentlyPlayingVFX;                               // 0x108(0x8)
+	char                                                         pad0x18_HBE1I[0x18];                               // 0x110(0x18)
 };
 
 
@@ -186,9 +200,10 @@ public:
 struct WaterSpout
 {
 public:
-	Struct Transform                                             SpoutLocatorTransform;                             // 0x0(0x30)
-	Class ParticleSystemComponent*                               SpoutParticleSystem;                               // 0x30(0x8)
-	Class ParticleSystemComponent*                               SplashParticleSystem;                              // 0x38(0x8)
+	struct Transform                                             SpoutLocatorTransform;                             // 0x0(0x30)
+	class ParticleSystemComponent*                               SpoutParticleSystem;                               // 0x30(0x8)
+	class ParticleSystemComponent*                               SplashParticleSystem;                              // 0x38(0x8)
+	char                                                         pad0x30_E5OYZ[0x30];                               // 0x40(0x30)
 };
 
 

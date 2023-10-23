@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class cmn_cma_tree_02_b_C: public CoveredMeshActor
 {
 public:
-	Class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x3e0(0x8)
-	Class StaticMeshComponent*                                   wsp_trunk_01_b;                                    // 0x3e8(0x8)
+	class NonVagueNonUniqueLandmarkComponent*                    NonVagueNonUniqueLandmark;                         // 0x3e0(0x8)
+	class StaticMeshComponent*                                   wsp_trunk_01_b;                                    // 0x3e8(0x8)
 };
 
 

@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "Pools",
-        "Type": "TArray<struct Pools>",
+        "Type": "TArray<struct PoolableCollectionMapConfigurationEntry>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -13,6 +13,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_EN4KJ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       }
     ]
   },
@@ -20,10 +26,22 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
+        "Name": "pad0x20_5DV60[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Size",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_1ESM4[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },

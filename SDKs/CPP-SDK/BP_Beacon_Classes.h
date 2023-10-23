@@ -10,18 +10,18 @@ namespace DougsSDKDumper
 class BP_Beacon_C: public Beacon
 {
 public:
-	Class PointLightComponent*                                   PointLight3;                                       // 0x7f8(0x8)
-	Class PointLightComponent*                                   PointLight2;                                       // 0x800(0x8)
-	Class PointLightComponent*                                   PointLight1;                                       // 0x808(0x8)
-	Class ParticleSystemComponent*                               ParticleSystem6;                                   // 0x810(0x8)
-	Class ParticleSystemComponent*                               vfx_candle_01_smoke_tavern;                        // 0x818(0x8)
-	Class ParticleSystemComponent*                               ParticleSystem5;                                   // 0x820(0x8)
-	Class ParticleSystemComponent*                               ParticleSystem4;                                   // 0x828(0x8)
-	Class ParticleSystemComponent*                               ParticleSystem3;                                   // 0x830(0x8)
-	Class ParticleSystemComponent*                               ParticleSystem2;                                   // 0x838(0x8)
-	Class ParticleSystemComponent*                               ParticleSystem1;                                   // 0x840(0x8)
-	Class ParticleSystemComponent*                               ParticleSystem;                                    // 0x848(0x8)
-	Class ParticleSystemComponent*                               vfx_candle_01_tavern;                              // 0x850(0x8)
+	class PointLightComponent*                                   PointLight3;                                       // 0x7f8(0x8)
+	class PointLightComponent*                                   PointLight2;                                       // 0x800(0x8)
+	class PointLightComponent*                                   PointLight1;                                       // 0x808(0x8)
+	class ParticleSystemComponent*                               ParticleSystem6;                                   // 0x810(0x8)
+	class ParticleSystemComponent*                               vfx_candle_01_smoke_tavern;                        // 0x818(0x8)
+	class ParticleSystemComponent*                               ParticleSystem5;                                   // 0x820(0x8)
+	class ParticleSystemComponent*                               ParticleSystem4;                                   // 0x828(0x8)
+	class ParticleSystemComponent*                               ParticleSystem3;                                   // 0x830(0x8)
+	class ParticleSystemComponent*                               ParticleSystem2;                                   // 0x838(0x8)
+	class ParticleSystemComponent*                               ParticleSystem1;                                   // 0x840(0x8)
+	class ParticleSystemComponent*                               ParticleSystem;                                    // 0x848(0x8)
+	class ParticleSystemComponent*                               vfx_candle_01_tavern;                              // 0x850(0x8)
 };
 
 

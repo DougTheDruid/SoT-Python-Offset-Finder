@@ -5,12 +5,12 @@ LevelSequence:
   - Name: MovieScene
     Offset: '0x2a8'
     Size: '0x8'
-    Type: Class MovieScene*
+    Type: class MovieScene*
   - Name: ObjectReferences
     Offset: '0x2b0'
     Size: '0xa0'
-    Type: Struct LevelSequenceObjectReferenceMap
-  - Name: pad0x50_M8AIM[0x50]
+    Type: struct LevelSequenceObjectReferenceMap
+  - Name: pad0x50_T405C[0x50]
     Offset: '0x350'
     Size: '0x50'
     Type: char
@@ -20,7 +20,7 @@ LevelSequence:
   Super: MovieSceneSequence
 LevelSequenceActor:
   Attributes:
-  - Name: pad0x8_BYFT1[0x8]
+  - Name: pad0x8_UP4WC[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -28,38 +28,38 @@ LevelSequenceActor:
     Offset: '0x3d0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_T2KAP[0x7]
+  - Name: pad0x7_52SR1[0x7]
     Offset: '0x3d1'
     Size: '0x7'
     Type: char
   - Name: PlaybackSettings
     Offset: '0x3d8'
     Size: '0x28'
-    Type: Struct MovieSceneSequencePlaybackSettings
+    Type: struct MovieSceneSequencePlaybackSettings
   - Name: SequencePlayer
     Offset: '0x400'
     Size: '0x8'
-    Type: Class LevelSequencePlayer*
+    Type: class LevelSequencePlayer*
   - Name: LevelSequence
     Offset: '0x408'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: BurnInOptions
     Offset: '0x418'
     Size: '0x8'
-    Type: Class LevelSequenceBurnInOptions*
+    Type: class LevelSequenceBurnInOptions*
   - Name: BindingOverrides
     Offset: '0x420'
     Size: '0x8'
-    Type: Class MovieSceneBindingOverrides*
+    Type: class MovieSceneBindingOverrides*
   - Name: SpawnablesParent
     Offset: '0x428'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: BurnInInstance
     Offset: '0x430'
     Size: '0x8'
-    Type: Class LevelSequenceBurnIn*
+    Type: class LevelSequenceBurnIn*
   ClassSize: '0x70'
   FullSize: '0x438'
   InheritedSize: '0x3c8'
@@ -69,11 +69,11 @@ LevelSequenceBurnIn:
   - Name: FrameInformation
     Offset: '0x230'
     Size: '0x90'
-    Type: Struct LevelSequencePlayerSnapshot
+    Type: struct LevelSequencePlayerSnapshot
   - Name: LevelSequenceActor
     Offset: '0x2c0'
     Size: '0x8'
-    Type: Class LevelSequenceActor*
+    Type: class LevelSequenceActor*
   ClassSize: '0x98'
   FullSize: '0x2c8'
   InheritedSize: '0x230'
@@ -90,18 +90,18 @@ LevelSequenceBurnInOptions:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_HMMKX[0x7]
+  - Name: pad0x7_7HGFR[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
   - Name: BurnInClass
     Offset: '0x30'
     Size: '0x10'
-    Type: Struct StringClassReference
+    Type: struct StringClassReference
   - Name: Settings
     Offset: '0x40'
     Size: '0x8'
-    Type: Class LevelSequenceBurnInInitSettings*
+    Type: class LevelSequenceBurnInInitSettings*
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -111,8 +111,8 @@ LevelSequencePlayer:
   - Name: SpawnablesParent
     Offset: '0x608'
     Size: '0x8'
-    Type: Class Actor*
-  - Name: pad0x38_H4UJ7[0x38]
+    Type: class Actor*
+  - Name: pad0x38_XI138[0x38]
     Offset: '0x610'
     Size: '0x38'
     Type: char

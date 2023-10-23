@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class EditableGameplayTagQuery: public Object
 {
 public:
-	Struct FString                                               UserDescription;                                   // 0x28(0x10)
-	char                                                         pad0x10_LKIF1[0x10];                               // 0x38(0x10)
-	Class EditableGameplayTagQueryExpression*                    RootExpression;                                    // 0x48(0x8)
-	Struct GameplayTagQuery                                      TagQueryExportText_Helper;                         // 0x50(0x48)
+	struct FString                                               UserDescription;                                   // 0x28(0x10)
+	char                                                         pad0x10_MKMPM[0x10];                               // 0x38(0x10)
+	class EditableGameplayTagQueryExpression*                    RootExpression;                                    // 0x48(0x8)
+	struct GameplayTagQuery                                      TagQueryExportText_Helper;                         // 0x50(0x48)
 };
 
 
@@ -28,7 +28,7 @@ public:
 class EditableGameplayTagQueryExpression_AnyTagsMatch: public EditableGameplayTagQueryExpression
 {
 public:
-	Struct GameplayTagContainer                                  Tags;                                              // 0x28(0x28)
+	struct GameplayTagContainer                                  Tags;                                              // 0x28(0x28)
 };
 
 
@@ -36,7 +36,7 @@ public:
 class EditableGameplayTagQueryExpression_AllTagsMatch: public EditableGameplayTagQueryExpression
 {
 public:
-	Struct GameplayTagContainer                                  Tags;                                              // 0x28(0x28)
+	struct GameplayTagContainer                                  Tags;                                              // 0x28(0x28)
 };
 
 
@@ -44,7 +44,7 @@ public:
 class EditableGameplayTagQueryExpression_NoTagsMatch: public EditableGameplayTagQueryExpression
 {
 public:
-	Struct GameplayTagContainer                                  Tags;                                              // 0x28(0x28)
+	struct GameplayTagContainer                                  Tags;                                              // 0x28(0x28)
 };
 
 
@@ -90,9 +90,9 @@ public:
 class GameplayTagsManager: public Object
 {
 public:
-	char                                                         pad0x118_WFZFA[0x118];                             // 0x28(0x118)
+	char                                                         pad0x118_6I8PA[0x118];                             // 0x28(0x118)
 	TArray<class DataTable*>                                     GameplayTagTables;                                 // 0x140(0x10)
-	char                                                         pad0x20_0UQ8A[0x20];                               // 0x150(0x20)
+	char                                                         pad0x20_UXUAO[0x20];                               // 0x150(0x20)
 };
 
 

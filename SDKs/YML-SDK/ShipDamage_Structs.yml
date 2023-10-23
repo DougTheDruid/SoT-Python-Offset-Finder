@@ -5,22 +5,26 @@ AppliedDamageToShipEvent:
   - Name: ShipType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Ship
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x10'
 DamageZoneDamageLevelChanged:
   Attributes:
   - Name: DamageZone
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: DamageLevel
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_1XG75[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
 DistanceAndLevelOfDamage:
   Attributes:
@@ -32,7 +36,15 @@ DistanceAndLevelOfDamage:
     Offset: '0x4'
     Size: '0x4'
     Type: int
-  ClassSize: '0x8'
+  - Name: OnlyDamagesOnce
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x3_V8VQC[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
+  ClassSize: '0xc'
 EventRestoreShip:
   Attributes:
   - Name: OnlyRepaired
@@ -45,7 +57,7 @@ EventShipDamageApplied:
   - Name: Ship
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: DamagedShipPartIdentifier
     Offset: '0x8'
     Size: '0x8'
@@ -54,54 +66,58 @@ EventShipDamageApplied:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_31HIY[0x4]
+  - Name: pad0x4_C9LAT[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
   - Name: ImpactDamageEvent
     Offset: '0x18'
     Size: '0x58'
-    Type: Struct ImpactDamageEvent
+    Type: struct ImpactDamageEvent
   ClassSize: '0x70'
 EventShipDamaged:
   Attributes:
   - Name: Ship
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: ImpactDamageEvent
     Offset: '0x8'
     Size: '0x58'
-    Type: Struct ImpactDamageEvent
+    Type: struct ImpactDamageEvent
   ClassSize: '0x60'
 HullDamageHit:
   Attributes:
   - Name: HitPosition
     Offset: '0x0'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: HitNormal
     Offset: '0xc'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: HasDecal
     Offset: '0x18'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_A2MAQ[0x3]
+    Offset: '0x19'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x1c'
 HullDamagePersistenceModel:
   Attributes:
   - Name: DamageZones
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct DamageZones>
+    Type: TArray<struct HullDamageZoneInfo>
   ClassSize: '0x10'
 HullDamageZoneInfo:
   Attributes:
   - Name: DamageZoneId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: DamageLevel
     Offset: '0x10'
     Size: '0x4'
@@ -114,40 +130,56 @@ HullDamageZoneInfo:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_YXJMG[0x7]
+  - Name: pad0x7_FWRX7[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
   - Name: ExternalHitList
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<struct ExternalHitList>
+    Type: TArray<struct HullDamageHit>
   ClassSize: '0x30'
 SendShipRestoredRpc:
   Attributes:
+  - Name: pad0x10_RCFPY[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   - Name: CrewId
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x20'
 ShipDamageParams:
   Attributes:
   - Name: DamageParams
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct DamageParams>
+    Type: TArray<struct ShipPartLevelsOfDamage>
   ClassSize: '0x10'
 ShipPartLevelsOfDamage:
   Attributes:
+  - Name: pad0x20_OSYX3[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: DamagePerDistance
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<struct DamagePerDistance>
+    Type: TArray<struct DistanceAndLevelOfDamage>
   - Name: FeatureName
     Offset: '0x30'
     Size: '0xc'
-    Type: Struct FeatureFlag
+    Type: struct FeatureFlag
+  - Name: pad0x4_OEVF5[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x40'
 ShipRestoredNetworkEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_27ZKG[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'

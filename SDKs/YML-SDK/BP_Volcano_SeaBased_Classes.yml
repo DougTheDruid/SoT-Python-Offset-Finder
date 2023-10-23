@@ -5,7 +5,7 @@ BP_Volcano_SeaBased_C:
   - Name: NamedPoints
     Offset: '0x5f0'
     Size: '0x8'
-    Type: Class NamedPointsComponent*
+    Type: class NamedPointsComponent*
   ClassSize: '0x8'
   FullSize: '0x5f8'
   InheritedSize: '0x5f0'

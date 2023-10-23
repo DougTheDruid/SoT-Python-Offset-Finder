@@ -10,13 +10,13 @@ namespace DougsSDKDumper
 class BP_TaleBook_APiratesLife_C: public VoyageProposalContainer
 {
 public:
-	Class ArrowComponent*                                        Arrow;                                             // 0x7e8(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7f0(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7f8(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x800(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x808(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x810(0x8)
-	Class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x818(0x8)
+	class ArrowComponent*                                        Arrow;                                             // 0x7e8(0x8)
+	class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7f0(0x8)
+	class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x7f8(0x8)
+	class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x800(0x8)
+	class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x808(0x8)
+	class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x810(0x8)
+	class ChildActorComponent*                                   TaleSelectionSlot;                                 // 0x818(0x8)
 };
 
 

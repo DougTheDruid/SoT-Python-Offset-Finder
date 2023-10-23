@@ -25,64 +25,87 @@ FireworkAmbientLightData:
   ClassSize: '0x14'
 FireworkExplosionData:
   Attributes:
+  - Name: pad0x8_A6E8P[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: VFX
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   - Name: Sfx
     Offset: '0x10'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: SecondarySFX
     Offset: '0x18'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
+  - Name: pad0x20_IS42Q[0x20]
+    Offset: '0x20'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x40'
+FireworkSequentialSelectionType:
+  Attributes:
+  - Name: SelectionIndex
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: TimeUntilNextExplosion
+    Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
 GeneratedFireworkData:
   Attributes:
+  - Name: pad0xc_OBL9I[0xc]
+    Offset: '0x0'
+    Size: '0xc'
+    Type: char
   - Name: FireworkAmbientLightData
     Offset: '0xc'
     Size: '0x14'
-    Type: Struct FireworkAmbientLightData
-  - Name: pad0x8_0THLK[0x8]
+    Type: struct FireworkAmbientLightData
+  - Name: pad0x8_29YM1[0x8]
     Offset: '0x20'
     Size: '0x8'
     Type: char
   - Name: ExplosionData
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct ExplosionData>
+    Type: TArray<struct FireworkExplosionData>
   - Name: SfxPool
     Offset: '0x38'
     Size: '0x8'
-    Type: Class WwiseObjectPoolWrapper*
+    Type: class WwiseObjectPoolWrapper*
   - Name: LaunchSfx
     Offset: '0x40'
     Size: '0x8'
-    Type: Class WwiseEvent*
-  - Name: pad0x8_FLDG9[0x8]
+    Type: class WwiseEvent*
+  - Name: pad0x8_23TYS[0x8]
     Offset: '0x48'
     Size: '0x8'
     Type: char
   - Name: FireworkFeedbackData
     Offset: '0x50'
     Size: '0x8'
-    Type: Class FireworkFeedbackDataAsset*
+    Type: class FireworkFeedbackDataAsset*
   ClassSize: '0x58'
 WeightedFireworkVFXData:
   Attributes:
   - Name: VFX
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   - Name: Sfx
     Offset: '0x8'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: SecondarySFX
     Offset: '0x10'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: Weight
     Offset: '0x18'
     Size: '0x4'
@@ -90,16 +113,24 @@ WeightedFireworkVFXData:
   - Name: AmbientLightColour
     Offset: '0x1c'
     Size: '0x10'
-    Type: Struct LinearColor
+    Type: struct LinearColor
+  - Name: pad0x4_KBJTB[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x30'
 WeightedProjectileMeshAnimationData:
   Attributes:
   - Name: AnimationCurve
     Offset: '0x0'
     Size: '0x170'
-    Type: Struct RuntimeVectorCurve
+    Type: struct RuntimeVectorCurve
   - Name: Weight
     Offset: '0x170'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_E5F0Q[0x4]
+    Offset: '0x174'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x178'

@@ -5,54 +5,58 @@ EngineServiceAuthDeny:
   - Name: UserName
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: UserToDeny
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x20'
 EngineServiceAuthGrant:
   Attributes:
   - Name: UserName
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: UserToGrant
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x20'
 EngineServiceExecuteCommand:
   Attributes:
   - Name: Command
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: UserName
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x20'
 EngineServiceNotification:
   Attributes:
   - Name: Text
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: TimeSeconds
     Offset: '0x10'
     Size: '0x8'
     Type: double
   ClassSize: '0x18'
 EngineServicePing:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_KSL74[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EngineServicePong:
   Attributes:
   - Name: CurrentLevel
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: EngineVersion
     Offset: '0x10'
     Size: '0x4'
@@ -61,31 +65,35 @@ EngineServicePong:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_H7R61[0x3]
+  - Name: pad0x3_IG73U[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
   - Name: InstanceId
     Offset: '0x18'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: InstanceType
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: SessionId
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: WorldTimeSeconds
     Offset: '0x48'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_Q459U[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x50'
 EngineServiceTerminate:
   Attributes:
   - Name: UserName
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x10'

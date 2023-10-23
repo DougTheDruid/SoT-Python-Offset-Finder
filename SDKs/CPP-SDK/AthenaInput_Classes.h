@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 class NotificationInputId: public Object
 {
 public:
+	char                                                         pad0x10_MST1Y[0x10];                               // 0x28(0x10)
 };
 
 
@@ -17,6 +18,7 @@ public:
 class AnalogInputId: public Object
 {
 public:
+	char                                                         pad0x10_E4N27[0x10];                               // 0x28(0x10)
 };
 
 
@@ -38,6 +40,7 @@ public:
 class NPCReceivesInputIndicatorComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_OTTSZ[0x8];                                 // 0xc8(0x8)
 };
 
 

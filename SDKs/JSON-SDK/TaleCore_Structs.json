@@ -1,20 +1,40 @@
 {
   "ClientCommandBase": {
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_8Y569[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ClientCommandQueue": {
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_Q2W2F[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
   },
   "TaleStructInstance": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "MyType",
-        "Type": "Class TaleStruct*",
+        "Type": "class TaleStruct*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_7FYRC[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },

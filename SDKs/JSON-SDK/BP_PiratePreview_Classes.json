@@ -7,144 +7,144 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x810"
       },
       {
         "Name": "Camera_Behind",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x818"
       },
       {
         "Name": "Camera_SideViewLeft",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x820"
       },
       {
         "Name": "Camera_SideView",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x828"
       },
       {
         "Name": "Camera_ProfileImage",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x830"
       },
       {
         "Name": "Head_old",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x838"
       },
       {
         "Name": "Camera_Hat",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x840"
       },
       {
         "Name": "Camera_Gloves",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x848"
       },
       {
         "Name": "Camera_Boots",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x850"
       },
       {
         "Name": "Camera_PegLeg",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x858"
       },
       {
         "Name": "Camera_Hook",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x860"
       },
       {
         "Name": "Camera_Glove",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x868"
       },
       {
         "Name": "Camera_Torso",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x870"
       },
       {
         "Name": "Camera_Mid",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x878"
       },
       {
         "Name": "Camera_Legs",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x880"
       },
       {
         "Name": "Camera_Feet",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x888"
       },
       {
         "Name": "Camera_Head",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x890"
       },
       {
         "Name": "Camera_Default",
-        "Type": "Class ArrowComponent*",
+        "Type": "class ArrowComponent*",
         "Size": "0x8",
         "Offset": "0x898"
       },
       {
         "Name": "ChildActor",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x8a0"
       },
       {
         "Name": "HiddenDftMesh",
-        "Type": "Class SkeletalMeshComponent*",
+        "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x8a8"
       },
       {
         "Name": "PirateMesh",
-        "Type": "Class SkeletalMeshComponent*",
+        "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
         "Offset": "0x8b0"
       },
       {
         "Name": "Camera",
-        "Type": "Class CameraComponent*",
+        "Type": "class CameraComponent*",
         "Size": "0x8",
         "Offset": "0x8b8"
       },
       {
         "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x8c0"
       },
       {
-        "Name": "pad0x30_PEFI1[0x30]",
+        "Name": "pad0x30_UXSL2[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x8c8"

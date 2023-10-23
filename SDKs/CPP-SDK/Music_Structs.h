@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 struct MusicZoneRemoteValues
 {
 public:
-	TArray<struct Switches>                                      Switches;                                          // 0x0(0x10)
-	TArray<struct RTPCs>                                         RTPCs;                                             // 0x10(0x10)
+	TArray<struct MusicZoneEmitterSwitch>                        Switches;                                          // 0x0(0x10)
+	TArray<struct MusicZoneEmitterRTPC>                          RTPCs;                                             // 0x10(0x10)
 };
 
 
@@ -37,6 +37,7 @@ public:
 struct MusicZoneDestroyedEvent
 {
 public:
+	char                                                         pad0x10_I8EUT[0x10];                               // 0x0(0x10)
 };
 
 
@@ -44,6 +45,7 @@ public:
 struct MusicZoneSpawnedEvent
 {
 public:
+	char                                                         pad0x10_7A87P[0x10];                               // 0x0(0x10)
 };
 
 

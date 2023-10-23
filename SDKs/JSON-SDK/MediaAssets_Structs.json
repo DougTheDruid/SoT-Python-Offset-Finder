@@ -4,13 +4,13 @@
     "Attributes": [
       {
         "Name": "DisplayName",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x0"
       },
       {
         "Name": "URL",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -21,7 +21,7 @@
     "Attributes": [
       {
         "Name": "Key",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },

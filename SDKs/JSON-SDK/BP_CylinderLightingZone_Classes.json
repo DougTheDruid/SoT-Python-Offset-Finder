@@ -7,31 +7,31 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "InnerCapsule",
-        "Type": "Class CapsuleComponent*",
+        "Type": "class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
         "Name": "OuterCapsule",
-        "Type": "Class CapsuleComponent*",
+        "Type": "class CapsuleComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
         "Name": "LightingZone",
-        "Type": "Class LightingZoneComponent*",
+        "Type": "class LightingZoneComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
         "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },

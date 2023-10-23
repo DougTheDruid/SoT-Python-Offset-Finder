@@ -11,8 +11,8 @@ struct TaleQuestDeliveryRequest
 {
 public:
 	int                                                          Id;                                                // 0x0(0x4)
-	char                                                         pad0x4_MXQKA[0x4];                                 // 0x4(0x4)
-	Struct MerchantContractItemDesc                              Item;                                              // 0x8(0x28)
+	char                                                         pad0x4_49B1N[0x4];                                 // 0x4(0x4)
+	struct MerchantContractItemDesc                              Item;                                              // 0x8(0x28)
 	int                                                          NumToDeliver;                                      // 0x30(0x4)
 	int                                                          NumToAllocate;                                     // 0x34(0x4)
 };
@@ -44,6 +44,7 @@ public:
 struct QuestVariableAny
 {
 public:
+	char                                                         pad0x30_BQXJZ[0x30];                               // 0x0(0x30)
 };
 
 
@@ -51,6 +52,7 @@ public:
 struct SplineFootprintPathTool
 {
 public:
+	char                                                         pad0x1_JXB3Z[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -58,7 +60,8 @@ public:
 struct TaleQuestCargoRunContractItem
 {
 public:
-	class                                                        ItemToCollect;                                     // 0x0(0x8)
+	class UClass*                                                ItemToCollect;                                     // 0x0(0x8)
+	char                                                         pad0x10_ZMVBS[0x10];                               // 0x8(0x10)
 };
 
 
@@ -66,8 +69,8 @@ public:
 struct CompondNodePinDesc
 {
 public:
-	Struct FText                                                 DisplayName;                                       // 0x0(0x38)
-	Struct Guid                                                  PinId;                                             // 0x38(0x10)
+	struct FText                                                 DisplayName;                                       // 0x0(0x38)
+	struct Guid                                                  PinId;                                             // 0x38(0x10)
 };
 
 
@@ -75,12 +78,14 @@ public:
 struct TaleQuestDesc
 {
 public:
-	Class TaleQuestStepDesc*                                     Root;                                              // 0x28(0x8)
-	Class Object*                                                Definition;                                        // 0x30(0x8)
-	Struct FText                                                 TaleFailMessage;                                   // 0x38(0x38)
+	char                                                         pad0x28_4SC0N[0x28];                               // 0x0(0x28)
+	class TaleQuestStepDesc*                                     Root;                                              // 0x28(0x8)
+	class Object*                                                Definition;                                        // 0x30(0x8)
+	struct FText                                                 TaleFailMessage;                                   // 0x38(0x38)
 	struct FName                                                 TaleFailBannerTag;                                 // 0x70(0x8)
 	bool                                                         ShouldFireStartTallTaleTrackedObjective;           // 0x78(0x1)
 	bool                                                         Development;                                       // 0x79(0x1)
+	char                                                         pad0x6_GIMJT[0x6];                                 // 0x7a(0x6)
 };
 
 
@@ -89,7 +94,7 @@ struct TaleQuestToggledDefinition
 {
 public:
 	struct FName                                                 FeatureToggle;                                     // 0x0(0x8)
-	class                                                        Definition;                                        // 0x8(0x8)
+	class UClass*                                                Definition;                                        // 0x8(0x8)
 };
 
 
@@ -97,8 +102,8 @@ public:
 struct TaleQuestQueryableStateDataInfoId
 {
 public:
-	Struct Guid                                                  MyTaleId;                                          // 0x0(0x10)
-	Struct Guid                                                  MyScopeId;                                         // 0x10(0x10)
+	struct Guid                                                  MyTaleId;                                          // 0x0(0x10)
+	struct Guid                                                  MyScopeId;                                         // 0x10(0x10)
 };
 
 
@@ -106,10 +111,10 @@ public:
 struct TaleQuestQueryableStateDataInfo
 {
 public:
-	Struct TaleQuestQueryableStateDataInfoId                     InfoId;                                            // 0x0(0x20)
-	class                                                        DataID;                                            // 0x20(0x8)
+	struct TaleQuestQueryableStateDataInfoId                     InfoId;                                            // 0x0(0x20)
+	class UClass*                                                DataID;                                            // 0x20(0x8)
 	bool                                                         DataBool;                                          // 0x28(0x1)
-	char                                                         pad0x3_1PMGR[0x3];                                 // 0x29(0x3)
+	char                                                         pad0x3_7676O[0x3];                                 // 0x29(0x3)
 	int                                                          DataInt;                                           // 0x2c(0x4)
 };
 
@@ -118,7 +123,8 @@ public:
 struct TrackedActorData
 {
 public:
-	Class Actor*                                                 Actor;                                             // 0x0(0x8)
+	class Actor*                                                 Actor;                                             // 0x0(0x8)
+	char                                                         pad0x8_0JKCG[0x8];                                 // 0x8(0x8)
 };
 
 
@@ -126,11 +132,12 @@ public:
 struct SnapshottedActorData
 {
 public:
-	Struct Guid                                                  SnapshotID;                                        // 0x10(0x10)
+	char                                                         pad0x10_OKJEA[0x10];                               // 0x0(0x10)
+	struct Guid                                                  SnapshotID;                                        // 0x10(0x10)
 	bool                                                         ActorWasCritical;                                  // 0x20(0x1)
 	bool                                                         ActorWasTracked;                                   // 0x21(0x1)
-	char                                                         pad0x6_1NE9P[0x6];                                 // 0x22(0x6)
-	Struct FText                                                 FailureMessage;                                    // 0x28(0x38)
+	char                                                         pad0x6_JT95M[0x6];                                 // 0x22(0x6)
+	struct FText                                                 FailureMessage;                                    // 0x28(0x38)
 };
 
 
@@ -138,8 +145,9 @@ public:
 struct CriticalActorDelegateData
 {
 public:
-	Class Actor*                                                 CriticalActor;                                     // 0x0(0x8)
-	Struct FText                                                 FailureMessage;                                    // 0x8(0x38)
+	class Actor*                                                 CriticalActor;                                     // 0x0(0x8)
+	struct FText                                                 FailureMessage;                                    // 0x8(0x38)
+	char                                                         pad0x8_ML8XY[0x8];                                 // 0x40(0x8)
 };
 
 
@@ -147,7 +155,8 @@ public:
 struct CriticalActorWrapper
 {
 public:
-	Class Actor*                                                 CriticalActor;                                     // 0x0(0x8)
+	class Actor*                                                 CriticalActor;                                     // 0x0(0x8)
+	char                                                         pad0x38_LCTX4[0x38];                               // 0x8(0x38)
 };
 
 
@@ -155,9 +164,10 @@ public:
 struct PhasedItem
 {
 public:
-	Class ItemProxy*                                             ItemProxy;                                         // 0x0(0x8)
-	Class ItemInfo*                                              ItemInfo;                                          // 0x8(0x8)
+	class ItemProxy*                                             ItemProxy;                                         // 0x0(0x8)
+	class ItemInfo*                                              ItemInfo;                                          // 0x8(0x8)
 	bool                                                         Tracked;                                           // 0x10(0x1)
+	char                                                         pad0x17_KTCDQ[0x17];                               // 0x11(0x17)
 };
 
 
@@ -165,8 +175,9 @@ public:
 struct PhasedActor
 {
 public:
-	Class Actor*                                                 MapActor;                                          // 0x0(0x8)
-	Class Actor*                                                 Actor;                                             // 0x8(0x8)
+	class Actor*                                                 MapActor;                                          // 0x0(0x8)
+	class Actor*                                                 Actor;                                             // 0x8(0x8)
+	char                                                         pad0x10_O23W5[0x10];                               // 0x10(0x10)
 };
 
 
@@ -174,6 +185,7 @@ public:
 struct QuestVariableCollection
 {
 public:
+	char                                                         pad0x30_93VD0[0x30];                               // 0x0(0x30)
 };
 
 
@@ -181,6 +193,7 @@ public:
 struct QuestVariableArray
 {
 public:
+	char                                                         pad0x30_4DBRY[0x30];                               // 0x0(0x30)
 };
 
 
@@ -188,6 +201,7 @@ public:
 struct QuestVariableGuidArray
 {
 public:
+	char                                                         pad0x30_S0I3G[0x30];                               // 0x0(0x30)
 };
 
 
@@ -195,6 +209,7 @@ public:
 struct QuestVariableActorArray
 {
 public:
+	char                                                         pad0x30_ANYLA[0x30];                               // 0x0(0x30)
 };
 
 
@@ -202,6 +217,7 @@ public:
 struct QuestVariableObjectArray
 {
 public:
+	char                                                         pad0x30_3HT4H[0x30];                               // 0x0(0x30)
 };
 
 
@@ -209,6 +225,7 @@ public:
 struct QuestVariableClassArray
 {
 public:
+	char                                                         pad0x30_KCUIV[0x30];                               // 0x0(0x30)
 };
 
 
@@ -216,6 +233,7 @@ public:
 struct QuestVariableSetEQSTaleContextValue
 {
 public:
+	char                                                         pad0x30_U6X5R[0x30];                               // 0x0(0x30)
 };
 
 
@@ -223,6 +241,7 @@ public:
 struct QuestVariableLinkEQSContext
 {
 public:
+	char                                                         pad0x30_MOWZL[0x30];                               // 0x0(0x30)
 };
 
 
@@ -230,6 +249,7 @@ public:
 struct ParticpantToolGroup
 {
 public:
+	char                                                         pad0x20_21HIM[0x20];                               // 0x0(0x20)
 };
 
 
@@ -237,8 +257,8 @@ public:
 struct MigrationActionPair
 {
 public:
-	Struct TaleResourceHandle                                    AllocatedResourceHandle;                           // 0x0(0x8)
-	Class TaleMigrationAction*                                   MigrationAction;                                   // 0x8(0x8)
+	struct TaleResourceHandle                                    AllocatedResourceHandle;                           // 0x0(0x8)
+	class TaleMigrationAction*                                   MigrationAction;                                   // 0x8(0x8)
 };
 
 
@@ -246,6 +266,7 @@ public:
 struct QuestVariableRotator
 {
 public:
+	char                                                         pad0x30_82A8K[0x30];                               // 0x0(0x30)
 };
 
 
@@ -253,6 +274,7 @@ public:
 struct QuestVariableActorAssetType
 {
 public:
+	char                                                         pad0x30_SR4KV[0x30];                               // 0x0(0x30)
 };
 
 
@@ -260,7 +282,9 @@ public:
 struct BodyFramePair
 {
 public:
-	Class TaleQuestIndexedFrame*                                 Frame;                                             // 0x10(0x8)
+	char                                                         pad0x10_UF7ZO[0x10];                               // 0x0(0x10)
+	class TaleQuestIndexedFrame*                                 Frame;                                             // 0x10(0x8)
+	char                                                         pad0x10_A2RMC[0x10];                               // 0x18(0x10)
 };
 
 
@@ -268,6 +292,7 @@ public:
 struct TaleQuestForEachCrewTask
 {
 public:
+	char                                                         pad0x28_FQQSM[0x28];                               // 0x0(0x28)
 };
 
 
@@ -275,6 +300,7 @@ public:
 struct TaleQuestStopPermanentPromptEvent
 {
 public:
+	char                                                         pad0x1_YP29G[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -282,6 +308,7 @@ public:
 struct QuestVariableItemDescType
 {
 public:
+	char                                                         pad0x30_PE8I0[0x30];                               // 0x0(0x30)
 };
 
 
@@ -289,6 +316,7 @@ public:
 struct QuestVariableItemInfo
 {
 public:
+	char                                                         pad0x30_2GE30[0x30];                               // 0x0(0x30)
 };
 
 
@@ -296,6 +324,7 @@ public:
 struct QuestVariablePrioritisedPrompt
 {
 public:
+	char                                                         pad0x30_6Y0U9[0x30];                               // 0x0(0x30)
 };
 
 
@@ -303,6 +332,7 @@ public:
 struct QuestVariableGameEvent
 {
 public:
+	char                                                         pad0x30_LWFS3[0x30];                               // 0x0(0x30)
 };
 
 
@@ -310,6 +340,7 @@ public:
 struct QuestVariableAISpawner
 {
 public:
+	char                                                         pad0x30_YSG07[0x30];                               // 0x0(0x30)
 };
 
 
@@ -317,8 +348,10 @@ public:
 struct TaleQuestQueryableStateCanAllDataBeReadCondition
 {
 public:
+	char                                                         pad0x28_JULYU[0x28];                               // 0x0(0x28)
 	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
 	bool                                                         ExpectedValue;                                     // 0x38(0x1)
+	char                                                         pad0x7_PGQSZ[0x7];                                 // 0x39(0x7)
 };
 
 
@@ -326,8 +359,10 @@ public:
 struct TaleQuestQueryableStateCanAnyDataBeReadCondition
 {
 public:
+	char                                                         pad0x28_LBIT2[0x28];                               // 0x0(0x28)
 	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
 	bool                                                         ExpectedValue;                                     // 0x38(0x1)
+	char                                                         pad0x7_8JJCO[0x7];                                 // 0x39(0x7)
 };
 
 
@@ -335,8 +370,10 @@ public:
 struct TaleQuestQueryableStateReadAllValueBoolCondition
 {
 public:
+	char                                                         pad0x28_1IDPU[0x28];                               // 0x0(0x28)
 	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
 	bool                                                         ExpectedValue;                                     // 0x38(0x1)
+	char                                                         pad0x7_WUQG1[0x7];                                 // 0x39(0x7)
 };
 
 
@@ -344,8 +381,10 @@ public:
 struct TaleQuestQueryableStateReadAnyValueBoolCondition
 {
 public:
+	char                                                         pad0x28_IJAQ1[0x28];                               // 0x0(0x28)
 	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
 	bool                                                         ExpectedValue;                                     // 0x38(0x1)
+	char                                                         pad0x7_9S93Z[0x7];                                 // 0x39(0x7)
 };
 
 
@@ -353,9 +392,11 @@ public:
 struct TaleQuestQueryableStateReadValueIntCondition
 {
 public:
-	class                                                        DataID;                                            // 0x28(0x8)
+	char                                                         pad0x28_7TF1U[0x28];                               // 0x0(0x28)
+	class UClass*                                                DataID;                                            // 0x28(0x8)
 	int                                                          ExpectedValue;                                     // 0x30(0x4)
 	byte                                                         ComparisonToExpectedValue;                         // 0x34(0x1)
+	char                                                         pad0x3_MOZ8T[0x3];                                 // 0x35(0x3)
 };
 
 
@@ -363,9 +404,9 @@ public:
 struct InteractionOptionSelectedWithQueryableStateNonUI
 {
 public:
-	class                                                        DataID;                                            // 0x0(0x8)
-	Struct Guid                                                  InstigatorCrewID;                                  // 0x8(0x10)
-	Class Actor*                                                 InteractingPlayer;                                 // 0x18(0x8)
+	class UClass*                                                DataID;                                            // 0x0(0x8)
+	struct Guid                                                  InstigatorCrewID;                                  // 0x8(0x10)
+	class Actor*                                                 InteractingPlayer;                                 // 0x18(0x8)
 };
 
 
@@ -373,6 +414,15 @@ public:
 struct QuestVariableTaleResourceHandle
 {
 public:
+	char                                                         pad0x30_3H44T[0x30];                               // 0x0(0x30)
+};
+
+
+// Size 0x30
+struct TaleQuestPhaseClusterRootActor
+{
+public:
+	char                                                         pad0x30_A8NB2[0x30];                               // 0x0(0x30)
 };
 
 
@@ -380,7 +430,7 @@ public:
 struct QueryableStateChangedEvent
 {
 public:
-	Struct TaleQuestQueryableStateDataInfo                       DataValue;                                         // 0x0(0x30)
+	struct TaleQuestQueryableStateDataInfo                       DataValue;                                         // 0x0(0x30)
 };
 
 
@@ -388,6 +438,7 @@ public:
 struct ActorSpawnedAutomationEvent
 {
 public:
+	char                                                         pad0x8_3QQ6X[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -395,6 +446,7 @@ public:
 struct EventSpawnedTallTaleQuestItem
 {
 public:
+	char                                                         pad0x1_W5P3E[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -410,6 +462,7 @@ public:
 struct PlaySequencerAutomationEvent
 {
 public:
+	char                                                         pad0x18_46XTE[0x18];                               // 0x0(0x18)
 };
 
 
@@ -417,8 +470,9 @@ public:
 struct MontageAnimationCommandBase
 {
 public:
-	Class Actor*                                                 MyTarget;                                          // 0x8(0x8)
-	Class AnimMontage*                                           MyMontage;                                         // 0x10(0x8)
+	char                                                         pad0x8_APKIF[0x8];                                 // 0x0(0x8)
+	class Actor*                                                 MyTarget;                                          // 0x8(0x8)
+	class AnimMontage*                                           MyMontage;                                         // 0x10(0x8)
 };
 
 
@@ -426,6 +480,7 @@ public:
 struct JumpToMontageSectionCommand
 {
 public:
+	char                                                         pad0x18_3KLE0[0x18];                               // 0x0(0x18)
 	struct FName                                                 SectionName;                                       // 0x18(0x8)
 };
 
@@ -434,6 +489,7 @@ public:
 struct PlayMontageAnimationCommand
 {
 public:
+	char                                                         pad0x18_QSZWV[0x18];                               // 0x0(0x18)
 	float                                                        PlayRate;                                          // 0x18(0x4)
 	float                                                        Position;                                          // 0x1c(0x4)
 };
@@ -443,6 +499,7 @@ public:
 struct SetNextMontageSectionCommand
 {
 public:
+	char                                                         pad0x18_1DHU7[0x18];                               // 0x0(0x18)
 	struct FName                                                 FromSectionName;                                   // 0x18(0x8)
 	struct FName                                                 ToSectionName;                                     // 0x20(0x8)
 };
@@ -452,7 +509,9 @@ public:
 struct StopMontageAnimationCommand
 {
 public:
+	char                                                         pad0x18_A1GQV[0x18];                               // 0x0(0x18)
 	float                                                        BlendOutTime;                                      // 0x18(0x4)
+	char                                                         pad0x4_ION8K[0x4];                                 // 0x1c(0x4)
 };
 
 
@@ -460,8 +519,10 @@ public:
 struct SetDialogueInteractionEnabledClientCommand
 {
 public:
-	Class Object*                                                DialogueComponentObject;                           // 0x8(0x8)
+	char                                                         pad0x8_EDQ59[0x8];                                 // 0x0(0x8)
+	class Object*                                                DialogueComponentObject;                           // 0x8(0x8)
 	bool                                                         ShouldBeEnabled;                                   // 0x10(0x1)
+	char                                                         pad0x7_OXJJI[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -469,8 +530,9 @@ public:
 struct SetDialogueInteractionPromptClientCommand
 {
 public:
-	Class NPCDialogComponent*                                    DialogueComponent;                                 // 0x8(0x8)
-	Struct FText                                                 Prompt;                                            // 0x10(0x38)
+	char                                                         pad0x8_FMBCX[0x8];                                 // 0x0(0x8)
+	class NPCDialogComponent*                                    DialogueComponent;                                 // 0x8(0x8)
+	struct FText                                                 Prompt;                                            // 0x10(0x38)
 };
 
 
@@ -486,8 +548,10 @@ public:
 struct ToggleModalInteractionNetworkEvent
 {
 public:
-	Class Actor*                                                 TargetActor;                                       // 0x10(0x8)
+	char                                                         pad0x10_A0RLF[0x10];                               // 0x0(0x10)
+	class Actor*                                                 TargetActor;                                       // 0x10(0x8)
 	bool                                                         InteractionBlocked;                                // 0x18(0x1)
+	char                                                         pad0x7_1MHX6[0x7];                                 // 0x19(0x7)
 };
 
 
@@ -495,6 +559,7 @@ public:
 struct QuestVariableMerchantItemArray
 {
 public:
+	char                                                         pad0x30_5T74T[0x30];                               // 0x0(0x30)
 };
 
 
@@ -502,6 +567,7 @@ public:
 struct QuestVariableMerchantItem
 {
 public:
+	char                                                         pad0x30_T7OHN[0x30];                               // 0x0(0x30)
 };
 
 
@@ -509,8 +575,8 @@ public:
 struct StepMerchantItemDesc
 {
 public:
-	Struct FText                                                 Name;                                              // 0x0(0x38)
-	Class Texture*                                               Icon;                                              // 0x38(0x8)
+	struct FText                                                 Name;                                              // 0x0(0x38)
+	class Texture*                                               Icon;                                              // 0x38(0x8)
 };
 
 
@@ -518,6 +584,7 @@ public:
 struct QuestVariableActorAssetTypeArray
 {
 public:
+	char                                                         pad0x30_AEKBU[0x30];                               // 0x0(0x30)
 };
 
 
@@ -525,6 +592,7 @@ public:
 struct QuestVariableItemDescTypeArray
 {
 public:
+	char                                                         pad0x30_RZM2M[0x30];                               // 0x0(0x30)
 };
 
 
@@ -532,6 +600,7 @@ public:
 struct QuestVariablePageLayout
 {
 public:
+	char                                                         pad0x30_V7R8Y[0x30];                               // 0x0(0x30)
 };
 
 
@@ -539,7 +608,8 @@ public:
 struct EndOnScreenParticlesRpc
 {
 public:
-	Class ParticleSystem*                                        Particles;                                         // 0x10(0x8)
+	char                                                         pad0x10_YE4JD[0x10];                               // 0x0(0x10)
+	class ParticleSystem*                                        Particles;                                         // 0x10(0x8)
 };
 
 
@@ -547,7 +617,8 @@ public:
 struct TriggerOnScreenParticlesRpc
 {
 public:
-	Class ParticleSystem*                                        Particles;                                         // 0x10(0x8)
+	char                                                         pad0x10_OF3ZF[0x10];                               // 0x0(0x10)
+	class ParticleSystem*                                        Particles;                                         // 0x10(0x8)
 };
 
 
@@ -555,6 +626,7 @@ public:
 struct QuestVariableTexture
 {
 public:
+	char                                                         pad0x30_DBFBN[0x30];                               // 0x0(0x30)
 };
 
 
@@ -562,8 +634,8 @@ public:
 struct TaleQuestFailedEvent
 {
 public:
-	TArray<struct CrewIds>                                       CrewIds;                                           // 0x0(0x10)
-	Struct Guid                                                  QuestId;                                           // 0x10(0x10)
+	TArray<struct Guid>                                          CrewIds;                                           // 0x0(0x10)
+	struct Guid                                                  QuestId;                                           // 0x10(0x10)
 };
 
 
@@ -580,8 +652,8 @@ public:
 struct TaleQuestDeliverableItem
 {
 public:
-	Struct FText                                                 Name;                                              // 0x0(0x38)
-	Class Texture*                                               Icon;                                              // 0x38(0x8)
+	struct FText                                                 Name;                                              // 0x0(0x38)
+	class Texture*                                               Icon;                                              // 0x38(0x8)
 };
 
 
@@ -589,6 +661,7 @@ public:
 struct QuestVariableBountyTargetArray
 {
 public:
+	char                                                         pad0x30_6V4WZ[0x30];                               // 0x0(0x30)
 };
 
 
@@ -596,8 +669,8 @@ public:
 struct StepBountyTargetDesc
 {
 public:
-	Struct FText                                                 Name;                                              // 0x0(0x38)
-	Class Texture*                                               Portrait;                                          // 0x38(0x8)
+	struct FText                                                 Name;                                              // 0x0(0x38)
+	class Texture*                                               Portrait;                                          // 0x38(0x8)
 };
 
 

@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "DamageZones",
-        "Type": "TArray<struct DamageZones>",
+        "Type": "TArray<struct HullDamageZoneInfo>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -15,7 +15,7 @@
     "Attributes": [
       {
         "Name": "DamageZoneId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -38,14 +38,14 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x7_YXJMG[0x7]",
+        "Name": "pad0x7_FWRX7[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x19"
       },
       {
         "Name": "ExternalHitList",
-        "Type": "TArray<struct ExternalHitList>",
+        "Type": "TArray<struct HullDamageHit>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -56,13 +56,13 @@
     "Attributes": [
       {
         "Name": "HitPosition",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
       {
         "Name": "HitNormal",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
@@ -71,51 +71,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "ShipDamageParams": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "DamageParams",
-        "Type": "TArray<struct DamageParams>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ShipPartLevelsOfDamage": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "DamagePerDistance",
-        "Type": "TArray<struct DamagePerDistance>",
-        "Size": "0x10",
-        "Offset": "0x20"
       },
       {
-        "Name": "FeatureName",
-        "Type": "Struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "DistanceAndLevelOfDamage": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DistanceLimit",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LevelOfDamage",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
+        "Name": "pad0x3_A2MAQ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x19"
       }
     ]
   },
@@ -124,7 +85,7 @@
     "Attributes": [
       {
         "Name": "Ship",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -141,14 +102,14 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_31HIY[0x4]",
+        "Name": "pad0x4_C9LAT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
       },
       {
         "Name": "ImpactDamageEvent",
-        "Type": "Struct ImpactDamageEvent",
+        "Type": "struct ImpactDamageEvent",
         "Size": "0x58",
         "Offset": "0x18"
       }
@@ -159,13 +120,13 @@
     "Attributes": [
       {
         "Name": "Ship",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "ImpactDamageEvent",
-        "Type": "Struct ImpactDamageEvent",
+        "Type": "struct ImpactDamageEvent",
         "Size": "0x58",
         "Offset": "0x8"
       }
@@ -176,7 +137,7 @@
     "Attributes": [
       {
         "Name": "DamageZone",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -185,6 +146,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_1XG75[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       }
     ]
   },
@@ -193,13 +160,13 @@
     "Attributes": [
       {
         "Name": "ShipType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "Ship",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -207,14 +174,27 @@
   },
   "ShipRestoredNetworkEvent": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_27ZKG[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "SendShipRestoredRpc": {
     "ClassSize": "0x20",
     "Attributes": [
       {
+        "Name": "pad0x10_RCFPY[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -228,6 +208,75 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "ShipDamageParams": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DamageParams",
+        "Type": "TArray<struct ShipPartLevelsOfDamage>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ShipPartLevelsOfDamage": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x20_OSYX3[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DamagePerDistance",
+        "Type": "TArray<struct DistanceAndLevelOfDamage>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "FeatureName",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_OEVF5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      }
+    ]
+  },
+  "DistanceAndLevelOfDamage": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "DistanceLimit",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LevelOfDamage",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "OnlyDamagesOnce",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x3_V8VQC[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
       }
     ]
   },

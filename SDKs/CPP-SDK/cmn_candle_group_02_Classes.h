@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class cmn_candle_group_02_C: public Actor
 {
 public:
-	Class StaticMeshComponent*                                   None;                                              // 0x3c8(0x8)
-	Class ParticleSystemComponent*                               None;                                              // 0x3d0(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3d8(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent0;                              // 0x3c8(0x8)
+	class ParticleSystemComponent*                               ParticleSystemComponent0;                          // 0x3d0(0x8)
+	class SceneComponent*                                        SharedRoot;                                        // 0x3d8(0x8)
 };
 
 

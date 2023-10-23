@@ -21,7 +21,7 @@
     "Attributes": [
       {
         "Name": "HighPriorityTarget",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -32,13 +32,13 @@
     "Attributes": [
       {
         "Name": "PreviousTargetActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "NewTargetActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
       },
@@ -53,6 +53,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x11"
+      },
+      {
+        "Name": "pad0x6_O1CHS[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x12"
       }
     ]
   },

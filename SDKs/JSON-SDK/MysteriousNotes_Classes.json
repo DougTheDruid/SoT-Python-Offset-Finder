@@ -11,7 +11,14 @@
     "FullSize": "0x2d0",
     "InheritedSize": "0x2a0",
     "ClassSize": "0x30",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x30_OBKDT[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x2a0"
+      }
+    ]
   },
   "MysteriousNoteDesc": {
     "Super": "ItemDesc",
@@ -28,7 +35,7 @@
     "Attributes": [
       {
         "Name": "MysteriousNoteCompletionEvents",
-        "Type": "TArray<struct MysteriousNoteCompletionEvents>",
+        "Type": "TArray<struct MysteriousNotesCompletionEventsModel>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -54,25 +61,25 @@
       },
       {
         "Name": "MysteriousNotesCompletionStringsAsset",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "WieldableNoteDataAsset",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "Image",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "NotificationBackground",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x60"
       }
@@ -93,25 +100,25 @@
     "Attributes": [
       {
         "Name": "DefaultTitle",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x28"
       },
       {
         "Name": "DefaultBody",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x60"
       },
       {
         "Name": "DefaultNoteLayoutItem",
-        "Type": "Struct WieldableMysteriousNoteLayoutItem",
+        "Type": "struct WieldableMysteriousNoteLayoutItem",
         "Size": "0xe0",
         "Offset": "0x98"
       },
       {
         "Name": "NoteLayoutItems",
-        "Type": "TArray<struct NoteLayoutItems>",
+        "Type": "TArray<struct WieldableMysteriousNoteLayoutItem>",
         "Size": "0x10",
         "Offset": "0x178"
       }
@@ -125,13 +132,13 @@
     "Attributes": [
       {
         "Name": "WieldableNoteDesc",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "NoteLayout",
-        "Type": "Class WieldableMysteriousNoteLayout*",
+        "Type": "class WieldableMysteriousNoteLayout*",
         "Size": "0x8",
         "Offset": "0x30"
       }
@@ -144,31 +151,31 @@
     "ClassSize": "0xc8",
     "Attributes": [
       {
-        "Name": "pad0x28_GOJW3[0x28]",
+        "Name": "pad0x28_K35HT[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x3c8"
       },
       {
         "Name": "CachedNoteSettings",
-        "Type": "Class MysteriousNoteSettings*",
+        "Type": "class MysteriousNoteSettings*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
         "Name": "WieldableNoteDataAsset",
-        "Type": "Class WieldableMysteriousNoteDataAsset*",
+        "Type": "class WieldableMysteriousNoteDataAsset*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
         "Name": "CompletionEventsModelData",
-        "Type": "Class MysteriousNotesCompletionEventsModelDataAsset*",
+        "Type": "class MysteriousNotesCompletionEventsModelDataAsset*",
         "Size": "0x8",
         "Offset": "0x400"
       },
       {
-        "Name": "pad0x88_9ETJY[0x88]",
+        "Name": "pad0x88_BSJHI[0x88]",
         "Type": "char",
         "Size": "0x88",
         "Offset": "0x408"
@@ -189,7 +196,7 @@
     "ClassSize": "0x1a0",
     "Attributes": [
       {
-        "Name": "pad0x8_5NED8[0x8]",
+        "Name": "pad0x8_D8SH1[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -201,14 +208,14 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0xef_CNOXU[0xef]",
+        "Name": "pad0xef_RSOJL[0xef]",
         "Type": "char",
         "Size": "0xef",
         "Offset": "0xd1"
       },
       {
         "Name": "NoteData",
-        "Type": "Struct ClientNoteData",
+        "Type": "struct ClientNoteData",
         "Size": "0x18",
         "Offset": "0x1c0"
       },
@@ -219,7 +226,7 @@
         "Offset": "0x1d8"
       },
       {
-        "Name": "pad0x8f_PR51X[0x8f]",
+        "Name": "pad0x8f_PV8U4[0x8f]",
         "Type": "char",
         "Size": "0x8f",
         "Offset": "0x1d9"
@@ -233,14 +240,14 @@
     "ClassSize": "0x1a0",
     "Attributes": [
       {
-        "Name": "pad0x10_9D6LG[0x10]",
+        "Name": "pad0x10_KSXMR[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x7e0"
       },
       {
         "Name": "RenderTarget",
-        "Type": "Class MaybeCompressedCanvasRenderTarget2D*",
+        "Type": "class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
         "Offset": "0x7f0"
       },
@@ -263,31 +270,31 @@
         "Offset": "0x800"
       },
       {
-        "Name": "pad0x5c_94MXL[0x5c]",
+        "Name": "pad0x5c_H7CVZ[0x5c]",
         "Type": "char",
         "Size": "0x5c",
         "Offset": "0x804"
       },
       {
         "Name": "NoteLayout",
-        "Type": "Class WieldableMysteriousNoteLayout*",
+        "Type": "class WieldableMysteriousNoteLayout*",
         "Size": "0x8",
         "Offset": "0x860"
       },
       {
         "Name": "UsableWieldableComponent",
-        "Type": "Class UsableWieldableComponent*",
+        "Type": "class UsableWieldableComponent*",
         "Size": "0x8",
         "Offset": "0x868"
       },
       {
         "Name": "InventoryItemComponent",
-        "Type": "Class InventoryItemComponent*",
+        "Type": "class InventoryItemComponent*",
         "Size": "0x8",
         "Offset": "0x870"
       },
       {
-        "Name": "pad0x108_0PN7Z[0x108]",
+        "Name": "pad0x108_XID81[0x108]",
         "Type": "char",
         "Size": "0x108",
         "Offset": "0x878"

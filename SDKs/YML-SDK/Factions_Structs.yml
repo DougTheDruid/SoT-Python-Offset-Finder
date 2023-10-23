@@ -9,100 +9,132 @@ ActivateKillStreakEvent:
   ClassSize: '0x1'
 ActivateKillStreakNetworkEvent:
   Attributes:
+  - Name: pad0x10_ZW22T[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   - Name: FactionId
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_CLWP3[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x18'
 CinematicFactionEvent:
   Attributes:
   - Name: Company
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: CinematicData
     Offset: '0x8'
     Size: '0x80'
-    Type: Struct CinematicQuestEvent
+    Type: struct CinematicQuestEvent
   ClassSize: '0x88'
 DeactivateKillStreakEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_8DG0X[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 DeactivateKillStreakNetworkEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_PTNFX[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
 EventLocalPlayerApproachedHourglass:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_526ID[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 FactionBlockedTaleVoteAdded:
   Attributes:
   - Name: Voter
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x8'
 FactionBlockedTaleVoteConsensusReached:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x10'
 FactionDisplayInfo:
   Attributes:
   - Name: Faction
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Title
     Offset: '0x8'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: Description
     Offset: '0x40'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: CardOffset
     Offset: '0x78'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: KeyArt
     Offset: '0x80'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: Icon
     Offset: '0x90'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   ClassSize: '0xa0'
 FactionPopupEvent:
   Attributes:
+  - Name: pad0x10_YR28W[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   - Name: PopUpDesc
     Offset: '0x10'
     Size: '0x8'
-    Type: Class DataAsset*
+    Type: class DataAsset*
   ClassSize: '0x18'
 FactionRequest:
   Attributes:
   - Name: Faction
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
+  - Name: pad0x18_U67Q8[0x18]
+    Offset: '0x8'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x20'
 FactionShipSunkNetworkEvent:
   Attributes:
+  - Name: pad0x10_JK3AL[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   - Name: OpponentFaction
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_OX1L1[0x3]
+  - Name: pad0x3_NCU4M[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
   - Name: OpponentCrewId
     Offset: '0x14'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: MyKillStreak
     Offset: '0x24'
     Size: '0x4'
@@ -123,6 +155,10 @@ FactionShipSunkNetworkEvent:
     Offset: '0x34'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_SE8SH[0x3]
+    Offset: '0x35'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x38'
 FactionShipSunkUIEvent:
   Attributes:
@@ -130,14 +166,14 @@ FactionShipSunkUIEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_XPY69[0x7]
+  - Name: pad0x7_M3N5S[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
   - Name: ShipName
     Offset: '0x8'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: MyKillStreak
     Offset: '0x18'
     Size: '0x4'
@@ -152,29 +188,41 @@ FactionStreakData:
   - Name: Faction
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: StreakLevel
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_F0D5U[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
 FactionVoteAdded:
   Attributes:
   - Name: Voter
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: CrewId
     Offset: '0x8'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: VotePassed
     Offset: '0x18'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_U9V67[0x7]
+    Offset: '0x19'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x20'
 KillStreakHideEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_5JK32[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 KillStreakRibbonEvent:
   Attributes:
@@ -192,7 +240,11 @@ KillStreakRibbonEvent:
     Type: int
   ClassSize: '0xc'
 KillStreakShowEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_832CA[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 LootLevelReward:
   Attributes:
@@ -200,44 +252,48 @@ LootLevelReward:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_D1LD2[0x3]
+  - Name: pad0x3_ZHU4J[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
   - Name: RewardId
     Offset: '0x4'
     Size: '0x8'
-    Type: Struct RewardId
-  - Name: pad0x4_FYP76[0x4]
+    Type: struct RewardId
+  - Name: pad0x4_ZQB5I[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
   - Name: LootLevelPopUpMessageDesc
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct LootLevelPopUpMessageDesc>
+    Type: TArray<struct FactionServicePopUpData>
   - Name: PopUpIndex
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_C6ZVI[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
 StreakCompanyMaterials:
   Attributes:
   - Name: Company
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Materials
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct Materials>
+    Type: TArray<struct StreakMaterial>
   ClassSize: '0x18'
 StreakDynamicMaterials:
   Attributes:
   - Name: Company
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: DynamicMaterials
     Offset: '0x8'
     Size: '0x10'
@@ -248,11 +304,15 @@ StreakMaterial:
   - Name: Material
     Offset: '0x0'
     Size: '0x8'
-    Type: Class MaterialInstance*
+    Type: class MaterialInstance*
   - Name: PartType
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_LC4EW[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
 StreakMaterialValue:
   Attributes:
@@ -270,11 +330,15 @@ StreakMesh:
   - Name: Mesh
     Offset: '0x0'
     Size: '0x8'
-    Type: Class StaticMesh*
+    Type: class StaticMesh*
   - Name: PartType
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_V4SHQ[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
 UpdateKillStreakEvent:
   Attributes:

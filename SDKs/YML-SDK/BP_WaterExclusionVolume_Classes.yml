@@ -2,10 +2,10 @@
 # https://github.com/DougTheDruid
 BP_WaterExclusionVolume_C:
   Attributes:
-  - Name: None
+  - Name: WaterPlaneExclusion
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class WaterPlaneExclusionComponent*
+    Type: class WaterPlaneExclusionComponent*
   ClassSize: '0x8'
   FullSize: '0x3e0'
   InheritedSize: '0x3d8'

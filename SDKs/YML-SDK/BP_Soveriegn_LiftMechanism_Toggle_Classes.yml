@@ -5,27 +5,27 @@ BP_Soveriegn_LiftMechanism_Toggle_C:
   - Name: UberGraphFrame
     Offset: '0x570'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: Rope Anchor Point
     Offset: '0x578'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   - Name: StaticMesh4
     Offset: '0x580'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: BP_RopeRendererComponent
     Offset: '0x588'
     Size: '0x8'
-    Type: BlueprintGeneratedClass BP_RopeRendererComponent_C*
+    Type: blueprintgeneratedclass BP_RopeRendererComponent_C*
   - Name: Rope Source
     Offset: '0x590'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   - Name: IntentCombiner
     Offset: '0x598'
     Size: '0x8'
-    Type: Class IntentCombinerComponent*
+    Type: class IntentCombinerComponent*
   ClassSize: '0x30'
   FullSize: '0x5a0'
   InheritedSize: '0x570'

@@ -4,19 +4,19 @@
     "Attributes": [
       {
         "Name": "DisplayName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "ConsoleCommand",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Buttons",
-        "Type": "TArray<struct Buttons>",
+        "Type": "TArray<struct Key>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -31,6 +31,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x34"
+      },
+      {
+        "Name": "pad0xb_EBZX0[0xb]",
+        "Type": "char",
+        "Size": "0xb",
+        "Offset": "0x35"
       }
     ]
   },
@@ -39,19 +45,19 @@
     "Attributes": [
       {
         "Name": "MenuPath",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "DisplayName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "ConsoleCommand",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -72,6 +78,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x32"
+      },
+      {
+        "Name": "pad0x5_V2NCI[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x33"
       }
     ]
   },
@@ -80,13 +92,13 @@
     "Attributes": [
       {
         "Name": "path",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Command",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -94,20 +106,27 @@
   },
   "DebugErrorHappeningEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_Q0W6W[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "DebugMenuOptionExecutedEvent": {
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "DebugMenuItemName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "ConsoleCommand",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       }

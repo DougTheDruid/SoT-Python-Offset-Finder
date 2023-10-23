@@ -5,15 +5,15 @@ BP_IslandStorageBarrel_Outpost_C:
   - Name: Replenishable
     Offset: '0x4c8'
     Size: '0x8'
-    Type: Class ReplenishableComponent*
+    Type: class ReplenishableComponent*
   - Name: IslandTelemetrySubject
     Offset: '0x4d0'
     Size: '0x8'
-    Type: Class IslandTelemetrySubjectComponent*
+    Type: class IslandTelemetrySubjectComponent*
   - Name: StorageContainer
     Offset: '0x4d8'
     Size: '0x8'
-    Type: Class StorageContainerComponent*
+    Type: class StorageContainerComponent*
   ClassSize: '0x18'
   FullSize: '0x4e0'
   InheritedSize: '0x4c8'

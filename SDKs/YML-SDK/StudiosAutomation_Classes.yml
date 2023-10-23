@@ -37,7 +37,11 @@ AutomationBlueprintFunctionLibrary:
   InheritedSize: '0x28'
   Super: BlueprintFunctionLibrary
 AutomationLatentActionCallback:
-  Attributes: []
+  Attributes:
+  - Name: pad0x38_J1TEC[0x38]
+    Offset: '0x28'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
@@ -65,7 +69,7 @@ ObjectWithSettableWorld:
   - Name: World
     Offset: '0x28'
     Size: '0x8'
-    Type: Class World*
+    Type: class World*
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
@@ -90,7 +94,7 @@ TestAbstractActor:
   Super: Actor
 TestLevelScriptActor:
   Attributes:
-  - Name: pad0x8_1AN5P[0x8]
+  - Name: pad0x8_DZTZ8[0x8]
     Offset: '0x3d0'
     Size: '0x8'
     Type: char
@@ -122,14 +126,14 @@ TestLevelScriptActor:
     Offset: '0x3de'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_DXW2T[0x1]
+  - Name: pad0x1_9CT41[0x1]
     Offset: '0x3df'
     Size: '0x1'
     Type: char
   - Name: AdditionalMetadata
     Offset: '0x3e0'
     Size: '0x10'
-    Type: TArray<struct AdditionalMetadata>
+    Type: TArray<struct TestLevelMetadataEntry>
   - Name: CaptureType
     Offset: '0x3f0'
     Size: '0x1'
@@ -138,7 +142,7 @@ TestLevelScriptActor:
     Offset: '0x3f1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_75DEA[0x2]
+  - Name: pad0x2_IW9H9[0x2]
     Offset: '0x3f2'
     Size: '0x2'
     Type: char
@@ -150,7 +154,7 @@ TestLevelScriptActor:
     Offset: '0x3f8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_8N7YY[0x4]
+  - Name: pad0x4_KYOYC[0x4]
     Offset: '0x3fc'
     Size: '0x4'
     Type: char
@@ -169,7 +173,7 @@ TestLevelScriptActor:
   - Name: ClientPawns
     Offset: '0x430'
     Size: '0x10'
-    Type: TArray<struct ClientPawns>
+    Type: TArray<struct ClientPawnDetails>
   - Name: SpawnedActors
     Offset: '0x440'
     Size: '0x10'
@@ -178,7 +182,7 @@ TestLevelScriptActor:
     Offset: '0x450'
     Size: '0x4'
     Type: int
-  - Name: pad0x3c_0LI5O[0x3c]
+  - Name: pad0x3c_66FMX[0x3c]
     Offset: '0x454'
     Size: '0x3c'
     Type: char
@@ -205,7 +209,11 @@ TestablePlayerController:
   InheritedSize: '0x770'
   Super: PlayerController
 TestablePlayerControllerComponent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x20_GLQ9Z[0x20]
+    Offset: '0xc8'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0xe8'
   InheritedSize: '0xc8'
@@ -221,19 +229,19 @@ TextureAuditorSettings:
   - Name: SpecificTexturesToNotAudit
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<struct SpecificTexturesToNotAudit>
+    Type: TArray<struct StringAssetReference>
   - Name: TextureDirectoriesToNotAudit
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<struct TextureDirectoriesToNotAudit>
+    Type: TArray<struct DirectoryPath>
   - Name: DefaultTextureProperties
     Offset: '0x58'
     Size: '0x20'
-    Type: Struct TextureAuditorProperties
+    Type: struct TextureAuditorProperties
   - Name: PerTextureGroupPropertiesOverrides
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<struct PerTextureGroupPropertiesOverrides>
+    Type: TArray<struct TextureAuditorGroupProperties>
   ClassSize: '0x50'
   FullSize: '0x88'
   InheritedSize: '0x38'

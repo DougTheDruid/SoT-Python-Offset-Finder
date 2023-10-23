@@ -5,7 +5,7 @@ StaticMeshAudioAssociation:
   - Name: PlaybackDataArray
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct PlaybackDataArray>
+    Type: TArray<struct StaticMeshWwiseEmitterData>
   - Name: Meshes
     Offset: '0x10'
     Size: '0x10'
@@ -16,23 +16,27 @@ StaticMeshComponentAudioAssociation:
   - Name: PlaybackData
     Offset: '0x0'
     Size: '0x38'
-    Type: Struct StaticMeshWwiseEmitterData
+    Type: struct StaticMeshWwiseEmitterData
   - Name: EmitterPositionRelativeToComponentOrigin
     Offset: '0x38'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
+  - Name: pad0x24_4MDR9[0x24]
+    Offset: '0x44'
+    Size: '0x24'
+    Type: char
   ClassSize: '0x68'
 StaticMeshWwiseEmitterData:
   Attributes:
   - Name: Pool
     Offset: '0x0'
     Size: '0x8'
-    Type: Class WwiseObjectPoolWrapper*
+    Type: class WwiseObjectPoolWrapper*
   - Name: LocalOriginOffset
     Offset: '0x8'
     Size: '0xc'
-    Type: Struct Vector
-  - Name: pad0x4_S5ICT[0x4]
+    Type: struct Vector
+  - Name: pad0x4_H3NRX[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -68,20 +72,24 @@ WWiseEmitterCreationSwitchSetting:
     Type: struct FName
   ClassSize: '0x10'
 WwiseEmitter:
-  Attributes: []
+  Attributes:
+  - Name: pad0x20_4FKZC[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x20'
 WwiseEmitterCreationParams:
   Attributes:
   - Name: Event
     Offset: '0x0'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: RTPCs
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct RTPCs>
+    Type: TArray<struct WWiseEmitterCreationRTPCSetting>
   - Name: Switches
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<struct Switches>
+    Type: TArray<struct WWiseEmitterCreationSwitchSetting>
   ClassSize: '0x28'

@@ -5,14 +5,18 @@ ActiveAudioReaction:
   - Name: Reaction
     Offset: '0x0'
     Size: '0x8'
-    Type: Class AudioReportReaction*
+    Type: class AudioReportReaction*
+  - Name: pad0x8_9GWYB[0x8]
+    Offset: '0x8'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x10'
 EventReactionDesc:
   Attributes:
   - Name: ReactionType
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Priority
     Offset: '0x8'
     Size: '0x4'
@@ -25,7 +29,7 @@ EventReactionDesc:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5WQ65[0x4]
+  - Name: pad0x4_E59LY[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char

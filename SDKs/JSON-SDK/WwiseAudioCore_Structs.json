@@ -45,7 +45,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_3L1I8[0x3]",
+        "Name": "pad0x3_W2SPN[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -64,7 +64,7 @@
       },
       {
         "Name": "SamplingSettings",
-        "Type": "Struct ReverbPresetControllerSettings",
+        "Type": "struct ReverbPresetControllerSettings",
         "Size": "0x28",
         "Offset": "0x3c"
       }
@@ -73,6 +73,12 @@
   "ReverbPresetControllerSettings": {
     "ClassSize": "0x28",
     "Attributes": [
+      {
+        "Name": "pad0xc_VJ3LF[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
       {
         "Name": "HorizontalConeSegmentElevationAngle",
         "Type": "float",
@@ -108,12 +114,24 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_78GVI[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
   "WwiseEventParam": {
     "ClassSize": "0x18",
     "Attributes": [
+      {
+        "Name": "pad0x8_HRKEY[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
       {
         "Name": "SourcePath",
         "Type": "struct FName",
@@ -142,6 +160,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_B1CX0[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
       }
     ]
   },
@@ -173,13 +197,13 @@
     "Attributes": [
       {
         "Name": "DefaultWwisePlatform",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Mappings",
-        "Type": "TArray<struct Mappings>",
+        "Type": "TArray<struct WwisePlatformMapping>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -190,13 +214,13 @@
     "Attributes": [
       {
         "Name": "UnrealPlatform",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "WwisePlatform",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       }

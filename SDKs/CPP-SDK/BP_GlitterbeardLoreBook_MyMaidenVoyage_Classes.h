@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_GlitterbeardLoreBook_MyMaidenVoyage_C: public ModalInteractionProxy
 {
 public:
-	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x520(0x8)
-	Class StaticMeshComponent*                                   Books;                                             // 0x528(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x530(0x8)
+	class NPCDialogComponent*                                    NPCDialog;                                         // 0x520(0x8)
+	class StaticMeshComponent*                                   Books;                                             // 0x528(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x530(0x8)
 };
 
 

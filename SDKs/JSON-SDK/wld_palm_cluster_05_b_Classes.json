@@ -1,21 +1,51 @@
 {
   "wld_palm_cluster_05_b_C": {
-    "Super": "None",
-    "FullSize": "0x418",
+    "Super": "BP_Placement_HeightDrop_C",
+    "FullSize": "0x440",
     "InheritedSize": "0x408",
-    "ClassSize": "0x10",
+    "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Class NonVagueNonUniqueLandmarkComponent*",
+        "Name": "wld_tree_palm_02_b_01",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x408"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "wld_bush_banana_01_a_01",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x410"
+      },
+      {
+        "Name": "wld_bush_03_a_01",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "wld_tree_palm_02_a_01",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "NonVagueNonUniqueLandmark",
+        "Type": "class NonVagueNonUniqueLandmarkComponent*",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "wld_bush_01_b_01",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "SharedRoot",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x438"
       }
     ]
   },

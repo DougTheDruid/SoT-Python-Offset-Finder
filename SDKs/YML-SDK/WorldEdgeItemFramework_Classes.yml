@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 WorldEdgeItemService:
   Attributes:
-  - Name: pad0x8_T029C[0x8]
+  - Name: pad0x8_3BSWT[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
   - Name: WorldEdgeItemParameters
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class WorldEdgeItemServiceParams*
+    Type: class WorldEdgeItemServiceParams*
   - Name: SpawnItemEQSRequest
     Offset: '0x3d8'
     Size: '0x170'
-    Type: Struct EnvQueryRequest
-  - Name: pad0xd8_FUZVP[0xd8]
+    Type: struct EnvQueryRequest
+  - Name: pad0xd8_C2PK0[0xd8]
     Offset: '0x548'
     Size: '0xd8'
     Type: char
@@ -33,7 +33,7 @@ WorldEdgeItemServiceParams:
   - Name: TeleportItemsEQSQuery
     Offset: '0x28'
     Size: '0x8'
-    Type: Class EnvQuery*
+    Type: class EnvQuery*
   - Name: ThrottledItemSpawnRate
     Offset: '0x30'
     Size: '0x4'

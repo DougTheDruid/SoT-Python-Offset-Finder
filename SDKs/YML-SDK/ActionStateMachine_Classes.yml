@@ -19,7 +19,11 @@ ActionStateInitialStateCreatorDefinition:
   InheritedSize: '0x28'
   Super: Object
 ActionStateMachineComponent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x790_AS47J[0x790]
+    Offset: '0xc8'
+    Size: '0x790'
+    Type: char
   ClassSize: '0x790'
   FullSize: '0x858'
   InheritedSize: '0xc8'
@@ -41,11 +45,11 @@ ActionStatePriorityTableData:
   - Name: StateDefaultValue
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct StateDefaultValue>
+    Type: TArray<struct ActionStatePriorityRelationship>
   - Name: PriorityTableEntry
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<struct PriorityTableEntry>
+    Type: TArray<struct ActionStatePriorityList>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -61,19 +65,19 @@ CharacterWithActionStateMachine:
   - Name: ActionStateMachineComponent
     Offset: '0x5e0'
     Size: '0x8'
-    Type: Class ActionStateMachineComponent*
+    Type: class ActionStateMachineComponent*
   - Name: ActionStatePriorityTableData
     Offset: '0x5e8'
     Size: '0x8'
-    Type: Class ActionStatePriorityTableData*
+    Type: class ActionStatePriorityTableData*
   - Name: ActionStateCreatorDefinition
     Offset: '0x5f0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: ActionStateInitialStateCreatorDefinition
     Offset: '0x5f8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x20'
   FullSize: '0x600'
   InheritedSize: '0x5e0'
@@ -96,7 +100,7 @@ CustomClientValidityCheckCallback:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_6V1JA[0x7]
+  - Name: pad0x7_OLZNJ[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -112,23 +116,23 @@ NullActionStateId:
   Super: ActionStateId
 SelfInitialisingActionStateMachineComponent:
   Attributes:
-  - Name: pad0x8_PWKL0[0x8]
+  - Name: pad0x8_N336C[0x8]
     Offset: '0x858'
     Size: '0x8'
     Type: char
   - Name: ActionStatePriorityTableData
     Offset: '0x860'
     Size: '0x8'
-    Type: Class ActionStatePriorityTableData*
+    Type: class ActionStatePriorityTableData*
   - Name: ActionStateCreatorDefinition
     Offset: '0x868'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: ActionStateInitialStateCreatorDefinition
     Offset: '0x870'
     Size: '0x8'
-    Type: class
-  - Name: pad0x28_0KU56[0x28]
+    Type: class UClass*
+  - Name: pad0x28_HR4GJ[0x28]
     Offset: '0x878'
     Size: '0x28'
     Type: char
@@ -143,7 +147,11 @@ SerialisedActionStateConstructionInfoTestFunctions:
   InheritedSize: '0x28'
   Super: BlueprintFunctionLibrary
 TestActionStateCreatorDefinition:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_ID9EN[0x18]
+    Offset: '0x3c8'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0x3e0'
   InheritedSize: '0x3c8'

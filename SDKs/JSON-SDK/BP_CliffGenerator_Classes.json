@@ -7,13 +7,13 @@
     "Attributes": [
       {
         "Name": "Base_Spline",
-        "Type": "Class SplineComponent*",
+        "Type": "class SplineComponent*",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
@@ -24,14 +24,14 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x7_QE3W7[0x7]",
+        "Name": "pad0x7_09M30[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3d9"
       },
       {
         "Name": "Source Start Actor",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
@@ -42,14 +42,14 @@
         "Offset": "0x3e8"
       },
       {
-        "Name": "pad0x7_MTKUS[0x7]",
+        "Name": "pad0x7_KF6EK[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3e9"
       },
       {
         "Name": "Source End Actor",
-        "Type": "Class StaticMesh*",
+        "Type": "class StaticMesh*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
@@ -72,7 +72,7 @@
         "Offset": "0x40c"
       },
       {
-        "Name": "pad0x3_B3Z7A[0x3]",
+        "Name": "pad0x3_3MA4H[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x40d"
@@ -103,7 +103,7 @@
       },
       {
         "Name": "DataArray",
-        "Type": "TArray<struct DataArray>",
+        "Type": "TArray<struct BP_CliffGenerator_Struct>",
         "Size": "0x10",
         "Offset": "0x420"
       },
@@ -126,14 +126,14 @@
         "Offset": "0x432"
       },
       {
-        "Name": "pad0x1_WWD4C[0x1]",
+        "Name": "pad0x1_GWCM0[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x433"
       },
       {
         "Name": "ArrayStore",
-        "Type": "Struct RandomStream",
+        "Type": "struct RandomStream",
         "Size": "0x8",
         "Offset": "0x434"
       },
@@ -151,19 +151,19 @@
       },
       {
         "Name": "Default_Mesh",
-        "Type": "Struct BP_CliffGenerator_Struct",
+        "Type": "struct BP_CliffGenerator_Struct",
         "Size": "0x10",
         "Offset": "0x444"
       },
       {
         "Name": "BlueprintPosition",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x454"
       },
       {
         "Name": "InverseBlueprintRotation",
-        "Type": "Struct Rotator",
+        "Type": "struct Rotator",
         "Size": "0xc",
         "Offset": "0x460"
       },
@@ -210,14 +210,14 @@
         "Offset": "0x472"
       },
       {
-        "Name": "pad0x5_AE63Q[0x5]",
+        "Name": "pad0x5_UNHQG[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x473"
       },
       {
         "Name": "GeneratedTopSpline",
-        "Type": "Class SplineComponent*",
+        "Type": "class SplineComponent*",
         "Size": "0x8",
         "Offset": "0x478"
       },
@@ -246,7 +246,7 @@
         "Offset": "0x486"
       },
       {
-        "Name": "pad0x1_K5CSD[0x1]",
+        "Name": "pad0x1_P0TQL[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x487"
@@ -282,14 +282,14 @@
         "Offset": "0x498"
       },
       {
-        "Name": "pad0x7_NCHGY[0x7]",
+        "Name": "pad0x7_TCU3K[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x499"
       },
       {
         "Name": "terrain_component",
-        "Type": "Class Landscape*",
+        "Type": "class Landscape*",
         "Size": "0x8",
         "Offset": "0x4a0"
       },
@@ -300,7 +300,7 @@
         "Offset": "0x4a8"
       },
       {
-        "Name": "pad0x3_5EHFJ[0x3]",
+        "Name": "pad0x3_VCT7V[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x4a9"
@@ -318,14 +318,14 @@
         "Offset": "0x4b0"
       },
       {
-        "Name": "pad0x7_FH03J[0x7]",
+        "Name": "pad0x7_YQUS5[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x4b1"
       },
       {
         "Name": "TagToIgnore",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x4b8"
       },
@@ -342,26 +342,26 @@
         "Offset": "0x4d8"
       },
       {
-        "Name": "pad0x3_4MN17[0x3]",
+        "Name": "pad0x3_Y7GER[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x4d9"
       },
       {
         "Name": "HirResult",
-        "Type": "Struct HitResult",
+        "Type": "struct HitResult",
         "Size": "0x80",
         "Offset": "0x4dc"
       },
       {
-        "Name": "pad0x4_544Y1[0x4]",
+        "Name": "pad0x4_CLH30[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x55c"
       },
       {
         "Name": "TopSplineIntersectionPoints",
-        "Type": "TArray<struct TopSplineIntersectionPoints>",
+        "Type": "TArray<struct Vector>",
         "Size": "0x10",
         "Offset": "0x560"
       },
@@ -373,13 +373,13 @@
       },
       {
         "Name": "TopSplineColour",
-        "Type": "Struct LinearColor",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x580"
       },
       {
         "Name": "BottomSplineColour",
-        "Type": "Struct LinearColor",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x590"
       },

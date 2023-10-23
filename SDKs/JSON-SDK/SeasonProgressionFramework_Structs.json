@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "ObjectiveId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -15,22 +15,35 @@
     "Attributes": [
       {
         "Name": "Id",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_FHIUT[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
   "SeasonServiceDataUpdatedEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_L7P2U[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "SeasonRewardEarnedEvent": {
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "SeasonId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -41,14 +54,14 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_O2F6G[0x7]",
+        "Name": "pad0x7_AR07R[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
       },
       {
         "Name": "Rewards",
-        "Type": "TArray<struct Rewards>",
+        "Type": "TArray<struct SeasonReward>",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -59,7 +72,7 @@
     "Attributes": [
       {
         "Name": "SeasonId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -98,6 +111,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x21"
+      },
+      {
+        "Name": "pad0x2_NKCHW[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x22"
       }
     ]
   },
@@ -106,13 +125,13 @@
     "Attributes": [
       {
         "Name": "SeasonId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "SourceGoalId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -147,13 +166,13 @@
     "Attributes": [
       {
         "Name": "SeasonId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "GoalId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -164,14 +183,14 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x3_QT14X[0x3]",
+        "Name": "pad0x3_6MQ4Q[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x21"
       },
       {
         "Name": "GoalGroupId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x24"
       }
@@ -200,13 +219,13 @@
       },
       {
         "Name": "SeasonId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0xc"
       },
       {
         "Name": "GoalId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x1c"
       },
@@ -217,14 +236,14 @@
         "Offset": "0x2c"
       },
       {
-        "Name": "pad0x3_6HJ4P[0x3]",
+        "Name": "pad0x3_9N1EV[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2d"
       },
       {
         "Name": "GoalGroupId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -235,19 +254,19 @@
     "Attributes": [
       {
         "Name": "ObjectiveId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "PirateIdentity",
-        "Type": "Struct PirateIdentity",
+        "Type": "struct PirateIdentity",
         "Size": "0x78",
         "Offset": "0x10"
       },
       {
         "Name": "PlayerInfo",
-        "Type": "Struct PlayerBaseTelemetryFragment",
+        "Type": "struct PlayerBaseTelemetryFragment",
         "Size": "0x48",
         "Offset": "0x88"
       },
@@ -264,7 +283,7 @@
         "Offset": "0xd1"
       },
       {
-        "Name": "pad0x6_XA2YM[0x6]",
+        "Name": "pad0x6_TJODK[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0xd2"
@@ -278,23 +297,23 @@
     ]
   },
   "TrackedObjectiveProgressUpdateMessage": {
-    "ClassSize": "0xe8",
+    "ClassSize": "0xe0",
     "Attributes": [
       {
         "Name": "ObjectiveId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "PirateIdentity",
-        "Type": "Struct PirateIdentity",
+        "Type": "struct PirateIdentity",
         "Size": "0x78",
         "Offset": "0x10"
       },
       {
         "Name": "PlayerInfo",
-        "Type": "Struct PlayerBaseTelemetryFragment",
+        "Type": "struct PlayerBaseTelemetryFragment",
         "Size": "0x48",
         "Offset": "0x88"
       },
@@ -311,7 +330,7 @@
         "Offset": "0xd1"
       },
       {
-        "Name": "pad0x2_UZSEW[0x2]",
+        "Name": "pad0x2_M7KHJ[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xd2"
@@ -327,18 +346,19 @@
         "Type": "double",
         "Size": "0x8",
         "Offset": "0xd8"
-      },
-      {
-        "Name": "ShouldNotifyPlayer",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xe0"
       }
     ]
   },
   "TrackedObjectiveEvent": {
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_TWD31[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

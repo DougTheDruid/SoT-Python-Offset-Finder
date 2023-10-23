@@ -10,11 +10,12 @@ namespace DougsSDKDumper
 struct InputChord
 {
 public:
-	Struct Key                                                   Key;                                               // 0x0(0x20)
+	struct Key                                                   Key;                                               // 0x0(0x20)
 	bool                                                         bShift;                                            // 0x20(0x1)
 	bool                                                         bCtrl;                                             // 0x20(0x1)
 	bool                                                         bAlt;                                              // 0x20(0x1)
 	bool                                                         bCmd;                                              // 0x20(0x1)
+	char                                                         pad0x7_ZEZ4J[0x7];                                 // 0x21(0x7)
 };
 
 
@@ -22,8 +23,8 @@ public:
 struct Anchors
 {
 public:
-	Struct Vector2D                                              Minimum;                                           // 0x0(0x8)
-	Struct Vector2D                                              Maximum;                                           // 0x8(0x8)
+	struct Vector2D                                              Minimum;                                           // 0x0(0x8)
+	struct Vector2D                                              Maximum;                                           // 0x8(0x8)
 };
 
 

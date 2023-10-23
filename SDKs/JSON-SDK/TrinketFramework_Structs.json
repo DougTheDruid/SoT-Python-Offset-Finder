@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "ItemDesc",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -22,7 +22,7 @@
       },
       {
         "Name": "OwnerGamerTag",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x18"
       }
@@ -33,15 +33,21 @@
     "Attributes": [
       {
         "Name": "TrinketEntries",
-        "Type": "TArray<struct TrinketEntries>",
+        "Type": "TArray<struct TrinketLoadoutEntry>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "TrinketOwnerXUIDs",
-        "Type": "TArray<struct TrinketOwnerXUIDs>",
+        "Type": "TArray<struct UniqueNetIdRepl>",
         "Size": "0x10",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x28_BH4EC[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x20"
       }
     ]
   },
@@ -66,8 +72,14 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
+        "Name": "pad0x10_H80IC[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "TrinketMountpointManager",
-        "Type": "Struct NetSubObjectPtr",
+        "Type": "struct NetSubObjectPtr",
         "Size": "0x14",
         "Offset": "0x10"
       },
@@ -81,7 +93,14 @@
   },
   "TrinketLoadoutUpdatedEvent": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_UCVJ5[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "TrinketLoadoutModelEntry": {
     "ClassSize": "0x20",
@@ -99,14 +118,14 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_KCYZX[0x4]",
+        "Name": "pad0x4_5N2TH[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       },
       {
         "Name": "UserId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -117,7 +136,7 @@
     "Attributes": [
       {
         "Name": "Trinkets",
-        "Type": "TArray<struct Trinkets>",
+        "Type": "TArray<struct TrinketLoadoutModelEntry>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -125,11 +144,25 @@
   },
   "EventTrinketSetReady": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_0AFLT[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "RequestTrinketChestItemInfoEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_152CX[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "RequestTrinketLoadoutUIEvent": {
     "ClassSize": "0x10",
@@ -147,7 +180,7 @@
     "Attributes": [
       {
         "Name": "TrinketCategory",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -158,7 +191,7 @@
     "Attributes": [
       {
         "Name": "TrinketDesc",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }

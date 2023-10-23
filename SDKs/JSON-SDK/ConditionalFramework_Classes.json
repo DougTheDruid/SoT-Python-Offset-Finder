@@ -13,14 +13,14 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_IW3CV[0x8]",
+        "Name": "pad0x8_7HAGG[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "SpecifiedActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0xd0"
       }
@@ -34,7 +34,7 @@
     "Attributes": [
       {
         "Name": "ConditionRoot",
-        "Type": "Struct ConditionInstance",
+        "Type": "struct ConditionInstance",
         "Size": "0x20",
         "Offset": "0x28"
       }

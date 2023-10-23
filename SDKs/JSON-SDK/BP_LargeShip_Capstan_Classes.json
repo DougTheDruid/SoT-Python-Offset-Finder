@@ -7,25 +7,25 @@
     "Attributes": [
       {
         "Name": "Arm1",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x8c8"
       },
       {
         "Name": "Arm4",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x8d0"
       },
       {
         "Name": "Arm3",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x8d8"
       },
       {
         "Name": "Arm2",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x8e0"
       }

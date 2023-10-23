@@ -5,7 +5,7 @@ BP_ShipFlagCustomizationChest_C:
   - Name: HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent
     Offset: '0x620'
     Size: '0x8'
-    Type: Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
+    Type: class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*
   ClassSize: '0x8'
   FullSize: '0x628'
   InheritedSize: '0x620'

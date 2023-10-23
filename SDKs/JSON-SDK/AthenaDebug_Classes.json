@@ -13,50 +13,50 @@
     "ClassSize": "0xf8",
     "Attributes": [
       {
-        "Name": "pad0x8_EWJDQ[0x8]",
+        "Name": "pad0x8_N3ULG[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "MessagesReplicated",
-        "Type": "TArray<struct MessagesReplicated>",
+        "Type": "TArray<struct DrawDebugItemMessage>",
         "Size": "0x10",
         "Offset": "0x3d0"
       },
       {
         "Name": "SpheresReplicated",
-        "Type": "TArray<struct SpheresReplicated>",
+        "Type": "TArray<struct DrawDebugItemSphere>",
         "Size": "0x10",
         "Offset": "0x3e0"
       },
       {
         "Name": "BoxesReplicated",
-        "Type": "TArray<struct BoxesReplicated>",
+        "Type": "TArray<struct DrawDebugItemBox>",
         "Size": "0x10",
         "Offset": "0x3f0"
       },
       {
         "Name": "CapsulesReplicated",
-        "Type": "TArray<struct CapsulesReplicated>",
+        "Type": "TArray<struct DrawDebugItemCapsule>",
         "Size": "0x10",
         "Offset": "0x400"
       },
       {
         "Name": "LinesReplicated",
-        "Type": "TArray<struct LinesReplicated>",
+        "Type": "TArray<struct DrawDebugItemLine>",
         "Size": "0x10",
         "Offset": "0x410"
       },
       {
         "Name": "SectorsReplicated",
-        "Type": "TArray<struct SectorsReplicated>",
+        "Type": "TArray<struct DrawDebugItemSector>",
         "Size": "0x10",
         "Offset": "0x420"
       },
       {
         "Name": "StringsReplicated",
-        "Type": "TArray<struct StringsReplicated>",
+        "Type": "TArray<struct DrawDebugItemString>",
         "Size": "0x10",
         "Offset": "0x430"
       },
@@ -67,7 +67,7 @@
         "Offset": "0x440"
       },
       {
-        "Name": "pad0x7f_91N52[0x7f]",
+        "Name": "pad0x7f_2M3AG[0x7f]",
         "Type": "char",
         "Size": "0x7f",
         "Offset": "0x441"
@@ -82,7 +82,7 @@
     "Attributes": [
       {
         "Name": "SphereList",
-        "Type": "TArray<struct SphereList>",
+        "Type": "TArray<struct SphereData>",
         "Size": "0x10",
         "Offset": "0x3c8"
       }
@@ -120,7 +120,7 @@
         "Offset": "0x3dc"
       },
       {
-        "Name": "pad0xc_3HL2T[0xc]",
+        "Name": "pad0xc_A505O[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x3e4"
@@ -141,7 +141,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_1NIBL[0x8]",
+        "Name": "pad0x8_7U1RM[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"

@@ -6,12 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10 (Full Size[0xc48] - InheritedSize[0xc38]
+// Size 0x10 (Full Size[0xca0] - InheritedSize[0xc90]
 class BP_AthenaGameState_C: public AthenaGameState
 {
 public:
-	Class WorldMarkerRoutingComponent*                           WorldMarkerRouting;                                // 0xc38(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0xc40(0x8)
+	class WorldMarkerRoutingComponent*                           WorldMarkerRouting;                                // 0xc90(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0xc98(0x8)
 };
 
 

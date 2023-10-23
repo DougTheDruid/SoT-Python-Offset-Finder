@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_HowlingWolfDeepSeaRegion_C: public DeepSeaRegion
 {
 public:
-	Class CapsuleComponent*                                      PreviewCapsuleTwo;                                 // 0x438(0x8)
-	Class CapsuleComponent*                                      PreviewCapsuleOne;                                 // 0x440(0x8)
+	class CapsuleComponent*                                      PreviewCapsuleTwo;                                 // 0x438(0x8)
+	class CapsuleComponent*                                      PreviewCapsuleOne;                                 // 0x440(0x8)
 };
 
 

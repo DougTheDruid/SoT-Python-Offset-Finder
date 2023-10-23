@@ -3,6 +3,12 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
+        "Name": "pad0x30_92G2K[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
         "Name": "ZoomedInFov",
         "Type": "float",
         "Size": "0x4",
@@ -31,6 +37,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x4_KTYEP[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x44"
       }
     ]
   },

@@ -7,19 +7,19 @@
     "Attributes": [
       {
         "Name": "Interactable",
-        "Type": "Class InteractableComponent*",
+        "Type": "class InteractableComponent*",
         "Size": "0x8",
         "Offset": "0x5e0"
       },
       {
         "Name": "OffTopSplineComponentPositions",
-        "Type": "TArray<struct OffTopSplineComponentPositions>",
+        "Type": "TArray<struct Vector>",
         "Size": "0x10",
         "Offset": "0x5e8"
       },
       {
         "Name": "OnTopSplineComponentPositions",
-        "Type": "TArray<struct OnTopSplineComponentPositions>",
+        "Type": "TArray<struct Vector>",
         "Size": "0x10",
         "Offset": "0x5f8"
       }

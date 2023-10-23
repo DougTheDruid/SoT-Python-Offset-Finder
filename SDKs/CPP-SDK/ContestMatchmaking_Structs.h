@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct ServerQueueWaitTimesResponseModel
 {
 public:
-	TArray<struct QueueWaitTimes>                                QueueWaitTimes;                                    // 0x0(0x10)
+	TArray<struct ServerQueueWaitTimeModel>                      QueueWaitTimes;                                    // 0x0(0x10)
 };
 
 
@@ -18,9 +18,9 @@ public:
 struct ServerQueueWaitTimeModel
 {
 public:
-	Struct FString                                               QueueScopeId;                                      // 0x0(0x10)
-	Struct Timespan                                              AvgWaitTime;                                       // 0x10(0x8)
-	Struct Timespan                                              MaxWaitTime;                                       // 0x18(0x8)
+	struct FString                                               QueueScopeId;                                      // 0x0(0x10)
+	struct Timespan                                              AvgWaitTime;                                       // 0x10(0x8)
+	struct Timespan                                              MaxWaitTime;                                       // 0x18(0x8)
 };
 
 
@@ -28,11 +28,11 @@ public:
 struct ServerQueueWaitTimesRequestModel
 {
 public:
-	Struct Guid                                                  ServerId;                                          // 0x0(0x10)
-	Struct FString                                               ServerLocation;                                    // 0x10(0x10)
-	Struct FString                                               PrivateServerId;                                   // 0x28(0x10)
+	struct Guid                                                  ServerId;                                          // 0x0(0x10)
+	struct FString                                               ServerLocation;                                    // 0x10(0x10)
+	struct FString                                               PrivateServerId;                                   // 0x28(0x10)
 	TArray<Str PlayModeTags>                                     PlayModeTags;                                      // 0x38(0x10)
-	Struct FString                                               PlayModeState;                                     // 0x48(0x10)
+	struct FString                                               PlayModeState;                                     // 0x48(0x10)
 };
 
 
@@ -40,51 +40,54 @@ public:
 struct ClientMatchmakingResponseModel
 {
 public:
-	Struct Timespan                                              EstimatedWaitTime;                                 // 0x0(0x8)
-	Struct Timespan                                              RetryAfter;                                        // 0x8(0x8)
+	struct Timespan                                              EstimatedWaitTime;                                 // 0x0(0x8)
+	struct Timespan                                              RetryAfter;                                        // 0x8(0x8)
 };
 
 
-// Size 0xa0
+// Size 0xb0
 struct ContestMatchmakingServerRequestModel
 {
 public:
-	Struct Guid                                                  ServerId;                                          // 0x0(0x10)
-	Struct FString                                               ServerAddress;                                     // 0x10(0x10)
-	Struct FString                                               VmId;                                              // 0x20(0x10)
-	Struct FString                                               PrivateServerId;                                   // 0x30(0x10)
-	Struct FString                                               ServerLocation;                                    // 0x40(0x10)
+	struct Guid                                                  ServerId;                                          // 0x0(0x10)
+	struct FString                                               ServerAddress;                                     // 0x10(0x10)
+	struct FString                                               VmId;                                              // 0x20(0x10)
+	struct FString                                               PrivateServerId;                                   // 0x30(0x10)
+	struct FString                                               ServerLocation;                                    // 0x40(0x10)
 	TArray<Str PlayModeTags>                                     PlayModeTags;                                      // 0x58(0x10)
 	TArray<Str PlayModeStates>                                   PlayModeStates;                                    // 0x68(0x10)
-	TArray<struct Crews>                                         Crews;                                             // 0x78(0x10)
+	TArray<struct ServerCrewModel>                               Crews;                                             // 0x78(0x10)
 	byte                                                         MatchmakingRequestReason;                          // 0x88(0x1)
-	char                                                         pad0x3_09PRW[0x3];                                 // 0x89(0x3)
-	Struct Guid                                                  RequestCorrelationId;                              // 0x8c(0x10)
+	char                                                         pad0x3_R7F0P[0x3];                                 // 0x89(0x3)
+	struct Guid                                                  RequestCorrelationId;                              // 0x8c(0x10)
+	struct Guid                                                  SaferSeasServerIdOverride;                         // 0x9c(0x10)
+	char                                                         pad0x4_R4VGF[0x4];                                 // 0xac(0x4)
 };
 
 
-// Size 0xb8
+// Size 0xc8
 struct ServerCrewModel
 {
 public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	Struct UniqueNetIdRepl                                       UserId;                                            // 0x10(0x18)
-	Struct Guid                                                  ServerId;                                          // 0x28(0x10)
-	Struct FString                                               ServerAddress;                                     // 0x38(0x10)
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	struct UniqueNetIdRepl                                       UserId;                                            // 0x10(0x18)
+	struct Guid                                                  ServerId;                                          // 0x28(0x10)
+	struct FString                                               ServerAddress;                                     // 0x38(0x10)
 	int                                                          SessionType;                                       // 0x48(0x4)
-	char                                                         pad0x4_MRARZ[0x4];                                 // 0x4c(0x4)
-	TArray<struct Positions>                                     Positions;                                         // 0x50(0x10)
+	char                                                         pad0x4_3Y14Q[0x4];                                 // 0x4c(0x4)
+	TArray<struct Vector2D>                                      Positions;                                         // 0x50(0x10)
 	TArray<UInt32 Resources>                                     Resources;                                         // 0x60(0x10)
 	byte                                                         PvPFaction;                                        // 0x70(0x1)
-	char                                                         pad0x3_BBZ1B[0x3];                                 // 0x71(0x3)
+	char                                                         pad0x3_RQJSQ[0x3];                                 // 0x71(0x3)
 	int                                                          PvPSkillLevel;                                     // 0x74(0x4)
 	int                                                          PvPRivalSessionType;                               // 0x78(0x4)
-	Struct Guid                                                  RivalCrewId;                                       // 0x7c(0x10)
+	struct Guid                                                  RivalCrewId;                                       // 0x7c(0x10)
 	byte                                                         MatchmakingRequestReason;                          // 0x8c(0x1)
-	char                                                         pad0x3_485JP[0x3];                                 // 0x8d(0x3)
-	Struct FString                                               RequestedGameEvent;                                // 0x90(0x10)
-	Struct Timespan                                              TimeWaitingForMatch;                               // 0xa0(0x8)
-	Struct FString                                               ForcedStamp;                                       // 0xa8(0x10)
+	char                                                         pad0x3_2OZZH[0x3];                                 // 0x8d(0x3)
+	struct FString                                               RequestedGameEvent;                                // 0x90(0x10)
+	struct Timespan                                              TimeWaitingForMatch;                               // 0xa0(0x8)
+	struct FString                                               ForcedStamp;                                       // 0xa8(0x10)
+	struct Guid                                                  GuildId;                                           // 0xb8(0x10)
 };
 
 
@@ -93,11 +96,11 @@ struct ServerCrewResponseModel
 {
 public:
 	byte                                                         ResultCode;                                        // 0x0(0x1)
-	char                                                         pad0x7_6GU3D[0x7];                                 // 0x1(0x7)
-	TArray<struct Crews>                                         Crews;                                             // 0x8(0x10)
-	Struct Timespan                                              RetryAfter;                                        // 0x68(0x8)
-	Struct Timespan                                              MigrationThreshold;                                // 0x70(0x8)
-	Struct Timespan                                              ExpireAfter;                                       // 0x78(0x8)
+	char                                                         pad0x7_J84GZ[0x7];                                 // 0x1(0x7)
+	TArray<struct ServerCrewModel>                               Crews;                                             // 0x8(0x10)
+	struct Timespan                                              RetryAfter;                                        // 0x68(0x8)
+	struct Timespan                                              MigrationThreshold;                                // 0x70(0x8)
+	struct Timespan                                              ExpireAfter;                                       // 0x78(0x8)
 };
 
 
@@ -105,29 +108,31 @@ public:
 struct OptionalPlayModeModel
 {
 public:
+	char                                                         pad0x50_9KO83[0x50];                               // 0x0(0x50)
 };
 
 
-// Size 0x100
+// Size 0x110
 struct ServerCrewRequestModel
 {
 public:
-	Struct Guid                                                  ServerId;                                          // 0x0(0x10)
-	Struct FString                                               VmId;                                              // 0x10(0x10)
-	Struct FString                                               PrivateServerId;                                   // 0x20(0x10)
-	Struct FString                                               ServerLocation;                                    // 0x30(0x10)
-	Struct FString                                               StampId;                                           // 0x40(0x10)
-	TArray<Str PlayModeTags>                                     PlayModeTags;                                      // 0x58(0x10)
-	Struct FString                                               PlayModeState;                                     // 0x68(0x10)
-	int                                                          CrewCount;                                         // 0x78(0x4)
-	int                                                          CrewCountBucket;                                   // 0x7c(0x4)
-	int                                                          CrewMin;                                           // 0x80(0x4)
-	int                                                          CrewMax;                                           // 0x84(0x4)
-	TArray<Int CrewSessionTypes>                                 CrewSessionTypes;                                  // 0x88(0x10)
-	TArray<struct Crews>                                         Crews;                                             // 0x98(0x10)
-	Struct Timespan                                              Uptime;                                            // 0xa8(0x8)
-	Struct ServerContendedModel                                  Contended;                                         // 0xb0(0x30)
-	Struct GameEventAvailabilityModel                            GameEvents;                                        // 0xe0(0x20)
+	struct Guid                                                  ServerId;                                          // 0x0(0x10)
+	struct FString                                               VmId;                                              // 0x10(0x10)
+	struct FString                                               PrivateServerId;                                   // 0x20(0x10)
+	struct Guid                                                  SaferSeasServerId;                                 // 0x30(0x10)
+	struct FString                                               ServerLocation;                                    // 0x40(0x10)
+	struct FString                                               StampId;                                           // 0x50(0x10)
+	TArray<Str PlayModeTags>                                     PlayModeTags;                                      // 0x68(0x10)
+	struct FString                                               PlayModeState;                                     // 0x78(0x10)
+	int                                                          CrewCount;                                         // 0x88(0x4)
+	int                                                          CrewCountBucket;                                   // 0x8c(0x4)
+	int                                                          CrewMin;                                           // 0x90(0x4)
+	int                                                          CrewMax;                                           // 0x94(0x4)
+	TArray<Int CrewSessionTypes>                                 CrewSessionTypes;                                  // 0x98(0x10)
+	TArray<struct ExistingServerCrewModel>                       Crews;                                             // 0xa8(0x10)
+	struct Timespan                                              Uptime;                                            // 0xb8(0x8)
+	struct ServerContendedModel                                  Contended;                                         // 0xc0(0x30)
+	struct GameEventAvailabilityModel                            GameEvents;                                        // 0xf0(0x20)
 };
 
 
@@ -135,8 +140,8 @@ public:
 struct GameEventAvailabilityModel
 {
 public:
-	TArray<struct MainEvents>                                    MainEvents;                                        // 0x0(0x10)
-	TArray<struct SubEvents>                                     SubEvents;                                         // 0x10(0x10)
+	TArray<struct GameMainEventTypeModel>                        MainEvents;                                        // 0x0(0x10)
+	TArray<struct GameSubEventTypeModel>                         SubEvents;                                         // 0x10(0x10)
 };
 
 
@@ -144,8 +149,9 @@ public:
 struct GameSubEventTypeModel
 {
 public:
-	Struct FString                                               EventName;                                         // 0x0(0x10)
+	struct FString                                               EventName;                                         // 0x0(0x10)
 	int                                                          MaxCount;                                          // 0x10(0x4)
+	char                                                         pad0x4_OSVN7[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -153,11 +159,12 @@ public:
 struct GameMainEventTypeModel
 {
 public:
-	Struct FString                                               EventName;                                         // 0x0(0x10)
+	struct FString                                               EventName;                                         // 0x0(0x10)
 	TArray<Str ExcludedEvents>                                   ExcludedEvents;                                    // 0x10(0x10)
-	TArray<struct ExcludedCrewIds>                               ExcludedCrewIds;                                   // 0x20(0x10)
+	TArray<struct Guid>                                          ExcludedCrewIds;                                   // 0x20(0x10)
 	byte                                                         Status;                                            // 0x30(0x1)
 	byte                                                         ShipSizeLimit;                                     // 0x31(0x1)
+	char                                                         pad0x6_DVU3I[0x6];                                 // 0x32(0x6)
 };
 
 
@@ -165,8 +172,8 @@ public:
 struct ServerContendedModel
 {
 public:
-	TArray<struct Positions>                                     Positions;                                         // 0x0(0x10)
-	TArray<struct Regions>                                       Regions;                                           // 0x10(0x10)
+	TArray<struct Vector2D>                                      Positions;                                         // 0x0(0x10)
+	TArray<struct ServerRegionModel>                             Regions;                                           // 0x10(0x10)
 	TArray<UInt32 Resources>                                     Resources;                                         // 0x20(0x10)
 };
 
@@ -175,23 +182,24 @@ public:
 struct ServerRegionModel
 {
 public:
-	Struct Vector2D                                              Position;                                          // 0x0(0x8)
+	struct Vector2D                                              Position;                                          // 0x0(0x8)
 	float                                                        Radius;                                            // 0x8(0x4)
 };
 
 
-// Size 0x38
+// Size 0x48
 struct ExistingServerCrewModel
 {
 public:
-	Struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	int                                                          SessionType;                                       // 0x10(0x4)
 	byte                                                         AlignedFaction;                                    // 0x14(0x1)
-	char                                                         pad0x3_9LBQU[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_AN7IJ[0x3];                                 // 0x15(0x3)
 	int                                                          PvPSkillLevel;                                     // 0x18(0x4)
-	char                                                         pad0x4_XOORF[0x4];                                 // 0x1c(0x4)
-	Struct Timespan                                              TimeInMatchmaking;                                 // 0x20(0x8)
-	Struct FString                                               ForcedStamp;                                       // 0x28(0x10)
+	char                                                         pad0x4_RQBO8[0x4];                                 // 0x1c(0x4)
+	struct Timespan                                              TimeInMatchmaking;                                 // 0x20(0x8)
+	struct FString                                               ForcedStamp;                                       // 0x28(0x10)
+	struct Guid                                                  GuildId;                                           // 0x38(0x10)
 };
 
 
@@ -199,8 +207,9 @@ public:
 struct ContestMatchmakingFactionMapEntry
 {
 public:
-	class                                                        GameFaction;                                       // 0x0(0x8)
+	class UClass*                                                GameFaction;                                       // 0x0(0x8)
 	byte                                                         MatchmakingFaction;                                // 0x8(0x1)
+	char                                                         pad0x7_RYMPZ[0x7];                                 // 0x9(0x7)
 };
 
 

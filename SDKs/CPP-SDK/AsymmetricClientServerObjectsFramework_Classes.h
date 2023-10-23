@@ -10,13 +10,13 @@ namespace DougsSDKDumper
 class AsymmetricClientObject: public Actor
 {
 public:
-	char                                                         pad0x18_SX9NK[0x18];                               // 0x3c8(0x18)
-	Class BoxComponent*                                          BaseComponent;                                     // 0x3e0(0x8)
-	Class StaticMeshMemoryConstraintComponent*                   ThirdPersonMesh;                                   // 0x3e8(0x8)
-	Class WaterInteractionComponent*                             WaterInteractionComponent;                         // 0x3f0(0x8)
-	Class BuoyancyComponent*                                     BuoyancyComponent;                                 // 0x3f8(0x8)
-	Class SpawnDependentTrackedOwnerComponent*                   SpawnDependentTrackedOwnerComponent;               // 0x400(0x8)
-	Struct Rotator                                               RotationWhenPlacingWorldProxy;                     // 0x408(0xc)
+	char                                                         pad0x18_9W957[0x18];                               // 0x3c8(0x18)
+	class BoxComponent*                                          BaseComponent;                                     // 0x3e0(0x8)
+	class StaticMeshMemoryConstraintComponent*                   ThirdPersonMesh;                                   // 0x3e8(0x8)
+	class WaterInteractionComponent*                             WaterInteractionComponent;                         // 0x3f0(0x8)
+	class BuoyancyComponent*                                     BuoyancyComponent;                                 // 0x3f8(0x8)
+	class SpawnDependentTrackedOwnerComponent*                   SpawnDependentTrackedOwnerComponent;               // 0x400(0x8)
+	struct Rotator                                               RotationWhenPlacingWorldProxy;                     // 0x408(0xc)
 	float                                                        ZOffsetWhenPlacingWorldProxy;                      // 0x414(0x4)
 };
 
@@ -25,11 +25,11 @@ public:
 class AsymmetricObjectServerManager: public Actor
 {
 public:
-	char                                                         pad0x18_PPS2H[0x18];                               // 0x3c8(0x18)
-	Class AsymmetricClientObject*                                SpawnedObject;                                     // 0x3e0(0x8)
-	Class SceneComponent*                                        SceneComponent;                                    // 0x3e8(0x8)
-	Struct StringAssetReference                                  AsymmetricObjectAsset;                             // 0x3f0(0x10)
-	char                                                         pad0x20_1HI4S[0x20];                               // 0x400(0x20)
+	char                                                         pad0x18_UCD8P[0x18];                               // 0x3c8(0x18)
+	class AsymmetricClientObject*                                SpawnedObject;                                     // 0x3e0(0x8)
+	class SceneComponent*                                        SceneComponent;                                    // 0x3e8(0x8)
+	struct StringAssetReference                                  AsymmetricObjectAsset;                             // 0x3f0(0x10)
+	char                                                         pad0x20_L5296[0x20];                               // 0x400(0x20)
 };
 
 

@@ -5,51 +5,51 @@ BP_Seagull01_8POI_C:
   - Name: UberGraphFrame
     Offset: '0x430'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: WwiseEmitter1
     Offset: '0x438'
     Size: '0x8'
-    Type: Class WwiseEmitterComponent*
+    Type: class WwiseEmitterComponent*
   - Name: WwiseEmitter
     Offset: '0x440'
     Size: '0x8'
-    Type: Class WwiseEmitterComponent*
+    Type: class WwiseEmitterComponent*
   - Name: wil_seagull_01_ProcAnim8
     Offset: '0x448'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: DefaultSceneRoot
     Offset: '0x450'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   - Name: seagulls_MI
     Offset: '0x458'
     Size: '0x8'
-    Type: Class MaterialInterface*
+    Type: class MaterialInterface*
   - Name: seagulls_MT
     Offset: '0x460'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
   - Name: FadeTime
     Offset: '0x468'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_7HVH1[0x4]
+  - Name: pad0x4_IC05Z[0x4]
     Offset: '0x46c'
     Size: '0x4'
     Type: char
   - Name: seagulls_MI_LOD
     Offset: '0x470'
     Size: '0x8'
-    Type: Class MaterialInterface*
+    Type: class MaterialInterface*
   - Name: seagulls_MT_LOD
     Offset: '0x478'
     Size: '0x8'
-    Type: Class MaterialInstanceDynamic*
+    Type: class MaterialInstanceDynamic*
   - Name: WwiseEvent
     Offset: '0x480'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   ClassSize: '0x58'
   FullSize: '0x488'
   InheritedSize: '0x430'

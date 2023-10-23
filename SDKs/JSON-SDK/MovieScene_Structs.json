@@ -4,13 +4,13 @@
     "Attributes": [
       {
         "Name": "ObjectGuid",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "BindingName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -27,25 +27,25 @@
     "Attributes": [
       {
         "Name": "Guid",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Name",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "PossessedObjectClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x20"
       },
       {
         "Name": "ParentGuid",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -61,38 +61,38 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_KAME4[0x3]",
+        "Name": "pad0x3_Z6NZW[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
       },
       {
         "Name": "Guid",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x4_XVMZC[0x4]",
+        "Name": "pad0x4_XTLC7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
       },
       {
         "Name": "Name",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "ObjectTemplate",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "ChildPossessables",
-        "Type": "TArray<struct ChildPossessables>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -101,6 +101,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x7_92Z7N[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x41"
       }
     ]
   },
@@ -119,14 +125,20 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
+        "Name": "pad0x50_QDP3O[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      },
+      {
         "Name": "WorkingRange",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "ViewRange",
-        "Type": "Struct FloatRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x60"
       }
@@ -148,7 +160,7 @@
     "Attributes": [
       {
         "Name": "Guid",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -159,7 +171,7 @@
     "Attributes": [
       {
         "Name": "ObjectBindingId",
-        "Type": "Struct MovieSceneObjectBindingPtr",
+        "Type": "struct MovieSceneObjectBindingPtr",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -168,6 +180,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x3_IDU7V[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x19"
       }
     ]
   },
@@ -193,7 +211,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_D8DIH[0x3]",
+        "Name": "pad0x3_P9HT4[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
@@ -211,10 +229,16 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_GD8LL[0x7]",
+        "Name": "pad0x7_4QD2I[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
+      },
+      {
+        "Name": "pad0x10_JS3DA[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x18"
       }
     ]
   },
@@ -237,30 +261,44 @@
   },
   "MovieSceneTrackIdentifier": {
     "ClassSize": "0x4",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x4_8PA8P[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
   },
   "MovieSceneSequenceID": {
     "ClassSize": "0x4",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x4_TZ3XT[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
   },
   "MovieSceneEvaluationField": {
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "Ranges",
-        "Type": "TArray<struct Ranges>",
+        "Type": "TArray<struct FloatRange>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Groups",
-        "Type": "TArray<struct Groups>",
+        "Type": "TArray<struct MovieSceneEvaluationGroup>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "MetaData",
-        "Type": "TArray<struct MetaData>",
+        "Type": "TArray<struct MovieSceneEvaluationMetaData>",
         "Size": "0x10",
         "Offset": "0x20"
       }
@@ -271,7 +309,7 @@
     "Attributes": [
       {
         "Name": "ActiveSequences",
-        "Type": "TArray<struct ActiveSequences>",
+        "Type": "TArray<struct MovieSceneSequenceID>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -282,13 +320,13 @@
     "Attributes": [
       {
         "Name": "LUTIndices",
-        "Type": "TArray<struct LUTIndices>",
+        "Type": "TArray<struct MovieSceneEvaluationGroupLUTIndex>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "SegmentPtrLUT",
-        "Type": "TArray<struct SegmentPtrLUT>",
+        "Type": "TArray<struct MovieSceneEvaluationFieldSegmentPtr>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -297,6 +335,12 @@
   "MovieSceneEvaluationFieldSegmentPtr": {
     "ClassSize": "0xc",
     "Attributes": [
+      {
+        "Name": "pad0x8_LEVSI[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
       {
         "Name": "SegmentIndex",
         "Type": "int",
@@ -310,13 +354,13 @@
     "Attributes": [
       {
         "Name": "SequenceID",
-        "Type": "Struct MovieSceneSequenceID",
+        "Type": "struct MovieSceneSequenceID",
         "Size": "0x4",
         "Offset": "0x0"
       },
       {
         "Name": "TrackIdentifier",
-        "Type": "Struct MovieSceneTrackIdentifier",
+        "Type": "struct MovieSceneTrackIdentifier",
         "Size": "0x4",
         "Offset": "0x4"
       }
@@ -332,7 +376,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_MN9KR[0x3]",
+        "Name": "pad0x3_XDAIL[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -359,30 +403,70 @@
   },
   "MovieSceneEvalTemplateBase": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_KADJP[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "MovieSceneEmptyStruct": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_BZZBW[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "MovieSceneEvalTemplatePtr": {
     "ClassSize": "0x38",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x38_AUJLN[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x0"
+      }
+    ]
   },
   "MovieSceneEvalTemplate": {
     "ClassSize": "0x18",
     "Attributes": [
       {
+        "Name": "pad0x10_EQVO2[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "CompletionMode",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_ZHROZ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       }
     ]
   },
   "MovieSceneSegment": {
     "ClassSize": "0x40",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x40_ELP2N[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x0"
+      }
+    ]
   },
   "SectionEvaluationData": {
     "ClassSize": "0x8",
@@ -403,18 +487,32 @@
   },
   "MovieSceneTrackImplementationPtr": {
     "ClassSize": "0x38",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x38_54YN9[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x0"
+      }
+    ]
   },
   "MovieSceneTrackImplementation": {
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_3VKOI[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
   },
   "MovieSceneEvaluationTrack": {
     "ClassSize": "0x80",
     "Attributes": [
       {
         "Name": "ObjectBindingId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -425,26 +523,26 @@
         "Offset": "0x12"
       },
       {
-        "Name": "pad0x5_OXCGR[0x5]",
+        "Name": "pad0x5_PTXNR[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x13"
       },
       {
         "Name": "Segments",
-        "Type": "TArray<struct Segments>",
+        "Type": "TArray<struct MovieSceneSegment>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "ChildTemplates",
-        "Type": "TArray<struct ChildTemplates>",
+        "Type": "TArray<struct MovieSceneEvalTemplatePtr>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "TrackTemplate",
-        "Type": "Struct MovieSceneTrackImplementationPtr",
+        "Type": "struct MovieSceneTrackImplementationPtr",
         "Size": "0x38",
         "Offset": "0x38"
       },
@@ -465,6 +563,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x78"
+      },
+      {
+        "Name": "pad0x7_C9VNH[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x79"
       }
     ]
   },
@@ -516,26 +620,33 @@
   },
   "MovieSceneSequenceHierarchy": {
     "ClassSize": "0xa0",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xa0_QEWEF[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x0"
+      }
+    ]
   },
   "MovieSceneSequenceHierarchyNode": {
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "ParentID",
-        "Type": "Struct MovieSceneSequenceID",
+        "Type": "struct MovieSceneSequenceID",
         "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_WNMRK[0x4]",
+        "Name": "pad0x4_AJ70S[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "Children",
-        "Type": "TArray<struct Children>",
+        "Type": "TArray<struct MovieSceneSequenceID>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -546,27 +657,33 @@
     "Attributes": [
       {
         "Name": "Sequence",
-        "Type": "Class MovieSceneSequence*",
+        "Type": "class MovieSceneSequence*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "RootToSequenceTransform",
-        "Type": "Struct MovieSceneSequenceTransform",
+        "Type": "struct MovieSceneSequenceTransform",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "SourceSequenceSignature",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "DeterministicSequenceID",
-        "Type": "Struct MovieSceneSequenceID",
+        "Type": "struct MovieSceneSequenceID",
         "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_6DCQ4[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
@@ -596,6 +713,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_6MS7S[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       }
     ]
   },
@@ -612,26 +735,39 @@
   },
   "CachedMovieSceneEvaluationTemplate": {
     "ClassSize": "0x220",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x220_43ZI2[0x220]",
+        "Type": "char",
+        "Size": "0x220",
+        "Offset": "0x0"
+      }
+    ]
   },
   "MovieSceneEvaluationTemplate": {
     "ClassSize": "0x220",
     "Attributes": [
       {
+        "Name": "pad0xa0_YWGKB[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x0"
+      },
+      {
         "Name": "EvaluationField",
-        "Type": "Struct MovieSceneEvaluationField",
+        "Type": "struct MovieSceneEvaluationField",
         "Size": "0x30",
         "Offset": "0xa0"
       },
       {
         "Name": "Hierarchy",
-        "Type": "Struct MovieSceneSequenceHierarchy",
+        "Type": "struct MovieSceneSequenceHierarchy",
         "Size": "0xa0",
         "Offset": "0xd0"
       },
       {
         "Name": "Ledger",
-        "Type": "Struct MovieSceneGenerationLedger",
+        "Type": "struct MovieSceneGenerationLedger",
         "Size": "0xa8",
         "Offset": "0x170"
       },
@@ -646,19 +782,38 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x218"
+      },
+      {
+        "Name": "pad0x7_DP2I7[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x219"
       }
     ]
   },
   "MovieSceneGenerationLedger": {
     "ClassSize": "0xa8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xa8_KV1UA[0xa8]",
+        "Type": "char",
+        "Size": "0xa8",
+        "Offset": "0x0"
+      }
+    ]
   },
   "MovieSceneSequenceCachedSignature": {
     "ClassSize": "0x18",
     "Attributes": [
       {
+        "Name": "pad0x8_AB6RI[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
         "Name": "CachedSignature",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -668,8 +823,14 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
+        "Name": "pad0x18_1DTZ1[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Track",
-        "Type": "Class MovieSceneTrack*",
+        "Type": "class MovieSceneTrack*",
         "Size": "0x8",
         "Offset": "0x18"
       }
@@ -686,7 +847,7 @@
       },
       {
         "Name": "PropertyPath",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -700,7 +861,14 @@
   },
   "MovieSceneKeyStruct": {
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_X2ETR[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

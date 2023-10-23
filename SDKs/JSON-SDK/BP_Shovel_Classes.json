@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "UsableWieldable",
-        "Type": "Class UsableWieldableComponent*",
+        "Type": "class UsableWieldableComponent*",
         "Size": "0x8",
         "Offset": "0x8a0"
       }

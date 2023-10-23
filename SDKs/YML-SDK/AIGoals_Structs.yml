@@ -6,7 +6,7 @@ BestActionSpotSelectionCriteria:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_N8T7H[0x3]
+  - Name: pad0x3_FGWYT[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -30,7 +30,7 @@ BestActionSpotSelectionCriteria:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_WQNCB[0x3]
+  - Name: pad0x3_Y09E9[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -38,37 +38,53 @@ BestActionSpotSelectionCriteria:
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: ShouldAlwaysRefreshWhileOwnerMoving
+  - Name: PreferActionSpotsCloserToSelf
     Offset: '0x1c'
     Size: '0x1'
     Type: bool
-  - Name: ShouldRefreshAfterTargetMovesBeyondThreshold
+  - Name: pad0x3_2YXQ9[0x3]
     Offset: '0x1d'
-    Size: '0x1'
-    Type: bool
-  - Name: pad0x2_TSXW6[0x2]
-    Offset: '0x1e'
-    Size: '0x2'
+    Size: '0x3'
     Type: char
-  - Name: TargetMovementRefreshThresholdDistance
+  - Name: MaximumDistanceAllowedFromTarget
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: ShouldRefreshAfterStayingForTooLong
+  - Name: ShouldAlwaysRefreshWhileOwnerMoving
     Offset: '0x24'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_NADPN[0x3]
+  - Name: ShouldRefreshAfterTargetMovesBeyondThreshold
     Offset: '0x25'
-    Size: '0x3'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x2_844XU[0x2]
+    Offset: '0x26'
+    Size: '0x2'
     Type: char
-  - Name: RefreshTimeInSeconds
+  - Name: TargetMovementRefreshThresholdDistance
     Offset: '0x28'
     Size: '0x4'
     Type: float
-  ClassSize: '0x2c'
+  - Name: ShouldRefreshAfterStayingForTooLong
+    Offset: '0x2c'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x3_WP9AN[0x3]
+    Offset: '0x2d'
+    Size: '0x3'
+    Type: char
+  - Name: RefreshTimeInSeconds
+    Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x34'
 HasAllActionContextTagsCondition:
   Attributes:
+  - Name: pad0x28_0M073[0x28]
+    Offset: '0x0'
+    Size: '0x28'
+    Type: char
   - Name: RequiredContextTags
     Offset: '0x28'
     Size: '0x10'
@@ -77,4 +93,8 @@ HasAllActionContextTagsCondition:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_YHVHX[0x7]
+    Offset: '0x39'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x40'

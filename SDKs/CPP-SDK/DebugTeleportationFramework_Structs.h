@@ -10,10 +10,11 @@ namespace DougsSDKDumper
 struct DebugTeleportDestinationEntry
 {
 public:
-	Struct FString                                               DebugMenuSubPath;                                  // 0x0(0x10)
-	Struct Vector                                                Destination;                                       // 0x10(0xc)
-	Struct Guid                                                  AssociatedCrew;                                    // 0x1c(0x10)
-	Struct Guid                                                  Id;                                                // 0x2c(0x10)
+	struct FString                                               DebugMenuSubPath;                                  // 0x0(0x10)
+	struct Vector                                                Destination;                                       // 0x10(0xc)
+	struct Guid                                                  AssociatedCrew;                                    // 0x1c(0x10)
+	struct Guid                                                  Id;                                                // 0x2c(0x10)
+	char                                                         pad0x4_QUSJ0[0x4];                                 // 0x3c(0x4)
 };
 
 

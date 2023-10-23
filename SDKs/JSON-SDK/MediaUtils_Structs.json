@@ -4,19 +4,19 @@
     "Attributes": [
       {
         "Name": "Tracks",
-        "Type": "Struct MediaPlayerTrackOptions",
+        "Type": "struct MediaPlayerTrackOptions",
         "Size": "0x1c",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_6LELR[0x4]",
+        "Name": "pad0x4_YNRAQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
       },
       {
         "Name": "SeekTime",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x20"
       },
@@ -31,6 +31,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x29"
+      },
+      {
+        "Name": "pad0x6_379RN[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x2a"
       }
     ]
   },

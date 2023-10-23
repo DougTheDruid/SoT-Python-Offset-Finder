@@ -5,27 +5,27 @@ BP_CT_VoyageProgress_C:
   - Name: UberGraphFrame
     Offset: '0xe0'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
-  - Name: pad0x16f_YKKUV[0x16f]
+    Type: struct PointerToUberGraphFrame
+  - Name: pad0x1a8_ZYRU6[0x1a8]
     Offset: '0xe8'
-    Size: '0x16f'
+    Size: '0x1a8'
     Type: char
   - Name: AthenaPlayerController
     Offset: '0xe8'
     Size: '0x8'
-    Type: Class AthenaPlayerController*
+    Type: class AthenaPlayerController*
   - Name: VoyageState
     Offset: '0xf0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_R9ZB3[0x7]
+  - Name: pad0x7_1FPZZ[0x7]
     Offset: '0xf1'
     Size: '0x7'
     Type: char
   - Name: MaximumRank
     Offset: '0xf8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: NoLongerPurchaseable
     Offset: '0x100'
     Size: '0x1'

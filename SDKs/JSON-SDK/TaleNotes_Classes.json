@@ -6,7 +6,7 @@
     "ClassSize": "0x270",
     "Attributes": [
       {
-        "Name": "pad0x10_QO98O[0x10]",
+        "Name": "pad0x10_4A8CB[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x7e0"
@@ -30,38 +30,38 @@
         "Offset": "0x7f8"
       },
       {
-        "Name": "pad0x4_WZ034[0x4]",
+        "Name": "pad0x4_MC4BE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x7fc"
       },
       {
         "Name": "Font",
-        "Type": "Class Font*",
+        "Type": "class Font*",
         "Size": "0x8",
         "Offset": "0x800"
       },
       {
         "Name": "Image",
-        "Type": "Struct TreasureMapWidgetStreamedTexture",
+        "Type": "struct TreasureMapWidgetStreamedTexture",
         "Size": "0x38",
         "Offset": "0x808"
       },
       {
         "Name": "TitleWidgetText",
-        "Type": "Struct TreasureMapWidgetText",
+        "Type": "struct TreasureMapWidgetText",
         "Size": "0x3c",
         "Offset": "0x840"
       },
       {
         "Name": "BodyWidgetText",
-        "Type": "Struct TreasureMapWidgetText",
+        "Type": "struct TreasureMapWidgetText",
         "Size": "0x3c",
         "Offset": "0x87c"
       },
       {
         "Name": "AdditionalBodyWidgetText",
-        "Type": "TArray<struct AdditionalBodyWidgetText>",
+        "Type": "TArray<struct TreasureMapWidgetText>",
         "Size": "0x10",
         "Offset": "0x8b8"
       },
@@ -79,13 +79,13 @@
       },
       {
         "Name": "Title",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x8d0"
       },
       {
         "Name": "Body",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x908"
       },
@@ -97,30 +97,30 @@
       },
       {
         "Name": "RenderTarget",
-        "Type": "Class MaybeCompressedCanvasRenderTarget2D*",
+        "Type": "class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
         "Offset": "0x950"
       },
       {
         "Name": "UsableWieldableComponent",
-        "Type": "Class UsableWieldableComponent*",
+        "Type": "class UsableWieldableComponent*",
         "Size": "0x8",
         "Offset": "0x958"
       },
       {
         "Name": "InventoryItemComponent",
-        "Type": "Class InventoryItemComponent*",
+        "Type": "class InventoryItemComponent*",
         "Size": "0x8",
         "Offset": "0x960"
       },
       {
         "Name": "ZoomInOnWieldableComponent",
-        "Type": "Class ZoomInOnWieldableItemComponent*",
+        "Type": "class ZoomInOnWieldableItemComponent*",
         "Size": "0x8",
         "Offset": "0x968"
       },
       {
-        "Name": "pad0xe0_C3WB1[0xe0]",
+        "Name": "pad0xe0_1Q0MT[0xe0]",
         "Type": "char",
         "Size": "0xe0",
         "Offset": "0x970"

@@ -17,8 +17,8 @@ public:
 class ActorSpecifierComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_IW3CV[0x8];                                 // 0xc8(0x8)
-	Class Actor*                                                 SpecifiedActor;                                    // 0xd0(0x8)
+	char                                                         pad0x8_7HAGG[0x8];                                 // 0xc8(0x8)
+	class Actor*                                                 SpecifiedActor;                                    // 0xd0(0x8)
 };
 
 
@@ -26,7 +26,7 @@ public:
 class ConditionRootAsset: public DataAsset
 {
 public:
-	Struct ConditionInstance                                     ConditionRoot;                                     // 0x28(0x20)
+	struct ConditionInstance                                     ConditionRoot;                                     // 0x28(0x20)
 };
 
 

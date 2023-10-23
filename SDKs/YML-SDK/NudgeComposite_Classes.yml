@@ -5,7 +5,7 @@ NudgeFromExplosionsPolicy:
   - Name: AcceptedDamagerTypes
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<struct AcceptedDamagerTypes>
+    Type: TArray<struct NudgeChancePerDamagerType>
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'
@@ -30,15 +30,15 @@ NudgeFromStormPolicy:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_G69V7[0x4]
+  - Name: pad0x4_MHU7Z[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
   - Name: WeightedTimers
     Offset: '0xd0'
     Size: '0x30'
-    Type: Struct WeightedProbabilityRangeOfRanges
-  - Name: pad0x58_UCRVY[0x58]
+    Type: struct WeightedProbabilityRangeOfRanges
+  - Name: pad0x58_ZPW5F[0x58]
     Offset: '0x100'
     Size: '0x58'
     Type: char
@@ -52,7 +52,7 @@ NudgeFromWaterLevelPolicy:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x14_GV8AI[0x14]
+  - Name: pad0x14_E20GT[0x14]
     Offset: '0xcc'
     Size: '0x14'
     Type: char
@@ -64,7 +64,7 @@ NudgeFromWaterLevelPolicy:
     Offset: '0xe4'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_IQ3G1[0x8]
+  - Name: pad0x8_FDLUD[0x8]
     Offset: '0xe8'
     Size: '0x8'
     Type: char

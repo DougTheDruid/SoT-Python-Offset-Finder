@@ -7,7 +7,11 @@ IsExcludedFromSeasonProgressionStatCondition:
   InheritedSize: '0x30'
   Super: TargetedStatCondition
 PlayerSeasonProgressionComponent:
-  Attributes: []
+  Attributes:
+  - Name: pad0xd0_T56F7[0xd0]
+    Offset: '0xc8'
+    Size: '0xd0'
+    Type: char
   ClassSize: '0xd0'
   FullSize: '0x198'
   InheritedSize: '0xc8'

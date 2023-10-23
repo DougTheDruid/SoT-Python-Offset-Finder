@@ -24,40 +24,52 @@ EventSetDateTime:
     Type: int
   ClassSize: '0x14'
 EventTimeServiceMigrated:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_RH5JZ[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 GameTime:
   Attributes:
   - Name: DateTimeRepresentation
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct DateTime
+    Type: struct DateTime
   ClassSize: '0x8'
 GameTimeRange:
   Attributes:
   - Name: Start
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct GameTime
+    Type: struct GameTime
   - Name: End
     Offset: '0x8'
     Size: '0x8'
-    Type: Struct GameTime
+    Type: struct GameTime
   ClassSize: '0x10'
 ReplicatedAuthoritativeTime:
   Attributes:
   - Name: WorldTime
     Offset: '0x0'
     Size: '0x8'
-    Type: Struct ReplicatedDateTime
+    Type: struct ReplicatedDateTime
   - Name: SyncTime
     Offset: '0x8'
     Size: '0x8'
-    Type: Struct ReplicatedDateTime
+    Type: struct ReplicatedDateTime
   ClassSize: '0x10'
 ReplicatedDateTime:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_45720[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
 ReplicatedTimespan:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_PZ4WC[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'

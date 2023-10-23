@@ -13,19 +13,19 @@
     "ClassSize": "0x178",
     "Attributes": [
       {
-        "Name": "pad0x8_7D15X[0x8]",
+        "Name": "pad0x8_S55TG[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "Params",
-        "Type": "Class PlayerLootMarkerServiceParams*",
+        "Type": "class PlayerLootMarkerServiceParams*",
         "Size": "0x8",
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x20_7CFOC[0x20]",
+        "Name": "pad0x20_KKQ70[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3d8"
@@ -37,19 +37,19 @@
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x118_XGGFV[0x118]",
+        "Name": "pad0x118_NC7I4[0x118]",
         "Type": "char",
         "Size": "0x118",
         "Offset": "0x408"
       },
       {
         "Name": "BatchData",
-        "Type": "TArray<struct BatchData>",
+        "Type": "TArray<struct PlayerLootMarkerWorldEdgeBatchData>",
         "Size": "0x10",
         "Offset": "0x520"
       },
       {
-        "Name": "pad0x10_3D0RZ[0x10]",
+        "Name": "pad0x10_1BRRK[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x530"
@@ -64,7 +64,7 @@
     "Attributes": [
       {
         "Name": "MarkerDataAsset",
-        "Type": "Class ShortRangeMarkerDataAsset*",
+        "Type": "class ShortRangeMarkerDataAsset*",
         "Size": "0x8",
         "Offset": "0x28"
       },
@@ -75,7 +75,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_1G0NO[0x4]",
+        "Name": "pad0x4_8US6Z[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"

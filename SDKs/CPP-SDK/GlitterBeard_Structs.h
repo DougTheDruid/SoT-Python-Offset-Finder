@@ -11,8 +11,8 @@ struct FinaleReplicationState
 {
 public:
 	byte                                                         State;                                             // 0x0(0x1)
-	char                                                         pad0x7_5EIY0[0x7];                                 // 0x1(0x7)
-	Class Object*                                                TargetEnsemble;                                    // 0x8(0x8)
+	char                                                         pad0x7_RK4CN[0x7];                                 // 0x1(0x7)
+	class Object*                                                TargetEnsemble;                                    // 0x8(0x8)
 };
 
 
@@ -38,6 +38,7 @@ struct ChangeGlitterBeardVFXStateEvent
 public:
 	int                                                          Index;                                             // 0x0(0x4)
 	byte                                                         Target;                                            // 0x4(0x1)
+	char                                                         pad0x3_5VWXR[0x3];                                 // 0x5(0x3)
 };
 
 
@@ -45,6 +46,7 @@ public:
 struct GlitterbeardPuzzleCancelTelemetryEvent
 {
 public:
+	char                                                         pad0x10_FOOA3[0x10];                               // 0x0(0x10)
 };
 
 
@@ -52,6 +54,7 @@ public:
 struct GlitterbeardPuzzleUnlockTelemetryEvent
 {
 public:
+	char                                                         pad0x10_QPLKJ[0x10];                               // 0x0(0x10)
 };
 
 
@@ -59,6 +62,7 @@ public:
 struct GlitterbeardPlayerPuzzleUnlockSuccessTelemetryEvent
 {
 public:
+	char                                                         pad0x10_NOSWD[0x10];                               // 0x0(0x10)
 };
 
 
@@ -66,6 +70,7 @@ public:
 struct GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent
 {
 public:
+	char                                                         pad0x20_SL16M[0x20];                               // 0x0(0x20)
 };
 
 
@@ -73,6 +78,7 @@ public:
 struct GlitterbeardSessionEndTelemetryEvent
 {
 public:
+	char                                                         pad0x10_2ZHQU[0x10];                               // 0x0(0x10)
 };
 
 
@@ -80,6 +86,7 @@ public:
 struct GlitterbeardSessionBeginTelemetryEvent
 {
 public:
+	char                                                         pad0x10_SO223[0x10];                               // 0x0(0x10)
 };
 
 

@@ -6,4 +6,8 @@ Key:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x18_Q4GFT[0x18]
+    Offset: '0x8'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x20'

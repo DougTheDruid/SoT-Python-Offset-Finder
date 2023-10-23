@@ -4,13 +4,13 @@
     "Attributes": [
       {
         "Name": "PreviousFocusObject",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "NewFocusObject",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -37,14 +37,20 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
+        "Name": "pad0x8_3BE0G[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
         "Name": "PlayerPayloadSelector",
-        "Type": "Struct ConditionContextPayloadSelectorInstance",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
         "Size": "0x20",
         "Offset": "0x8"
       },
       {
         "Name": "InteractablePayloadSelector",
-        "Type": "Struct ConditionContextPayloadSelectorInstance",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
         "Size": "0x20",
         "Offset": "0x28"
       }

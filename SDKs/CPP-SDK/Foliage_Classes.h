@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 class FoliageInstancedStaticMeshComponent: public HierarchicalInstancedStaticMeshComponent
 {
 public:
+	char                                                         pad0x20_R6GFC[0x20];                               // 0x7a0(0x20)
 };
 
 
@@ -24,41 +25,41 @@ public:
 class FoliageType: public Object
 {
 public:
-	Struct Guid                                                  UpdateGuid;                                        // 0x28(0x10)
+	struct Guid                                                  UpdateGuid;                                        // 0x28(0x10)
 	float                                                        Density;                                           // 0x38(0x4)
 	float                                                        DensityAdjustmentFactor;                           // 0x3c(0x4)
 	float                                                        Radius;                                            // 0x40(0x4)
 	byte                                                         Scaling;                                           // 0x44(0x1)
-	char                                                         pad0x3_RGIH6[0x3];                                 // 0x45(0x3)
-	Struct FloatInterval                                         ScaleX;                                            // 0x48(0x8)
-	Struct FloatInterval                                         ScaleY;                                            // 0x50(0x8)
-	Struct FloatInterval                                         ScaleZ;                                            // 0x58(0x8)
+	char                                                         pad0x3_07MFM[0x3];                                 // 0x45(0x3)
+	struct FloatInterval                                         ScaleX;                                            // 0x48(0x8)
+	struct FloatInterval                                         ScaleY;                                            // 0x50(0x8)
+	struct FloatInterval                                         ScaleZ;                                            // 0x58(0x8)
 	byte                                                         VertexColorMask;                                   // 0x60(0x1)
-	char                                                         pad0x3_HNDV4[0x3];                                 // 0x61(0x3)
+	char                                                         pad0x3_XC1EB[0x3];                                 // 0x61(0x3)
 	float                                                        VertexColorMaskThreshold;                          // 0x64(0x4)
 	bool                                                         VertexColorMaskInvert;                             // 0x68(0x1)
-	char                                                         pad0x3_3LKUX[0x3];                                 // 0x69(0x3)
-	Struct FloatInterval                                         ZOffset;                                           // 0x6c(0x8)
+	char                                                         pad0x3_L93FE[0x3];                                 // 0x69(0x3)
+	struct FloatInterval                                         ZOffset;                                           // 0x6c(0x8)
 	bool                                                         AlignToNormal;                                     // 0x74(0x1)
-	char                                                         pad0x3_K793G[0x3];                                 // 0x75(0x3)
+	char                                                         pad0x3_JSPAM[0x3];                                 // 0x75(0x3)
 	float                                                        AlignMaxAngle;                                     // 0x78(0x4)
 	bool                                                         RandomYaw;                                         // 0x7c(0x1)
-	char                                                         pad0x3_EH4C2[0x3];                                 // 0x7d(0x3)
+	char                                                         pad0x3_BKQOT[0x3];                                 // 0x7d(0x3)
 	float                                                        RandomPitchAngle;                                  // 0x80(0x4)
-	Struct FloatInterval                                         GroundSlopeAngle;                                  // 0x84(0x8)
-	Struct FloatInterval                                         Height;                                            // 0x8c(0x8)
-	char                                                         pad0x4_P0CZM[0x4];                                 // 0x94(0x4)
+	struct FloatInterval                                         GroundSlopeAngle;                                  // 0x84(0x8)
+	struct FloatInterval                                         Height;                                            // 0x8c(0x8)
+	char                                                         pad0x4_M7SKR[0x4];                                 // 0x94(0x4)
 	TArray<struct FName>                                         LandscapeLayers;                                   // 0x98(0x10)
 	struct FName                                                 LandscapeLayer;                                    // 0xa8(0x8)
 	bool                                                         CollisionWithWorld;                                // 0xb0(0x1)
-	char                                                         pad0x3_C0VI3[0x3];                                 // 0xb1(0x3)
-	Struct Vector                                                CollisionScale;                                    // 0xb4(0xc)
+	char                                                         pad0x3_L2VB4[0x3];                                 // 0xb1(0x3)
+	struct Vector                                                CollisionScale;                                    // 0xb4(0xc)
 	float                                                        MinimumLayerWeight;                                // 0xc0(0x4)
-	Struct BoxSphereBounds                                       MeshBounds;                                        // 0xc4(0x1c)
-	Struct Vector                                                LowBoundOriginRadius;                              // 0xe0(0xc)
+	struct BoxSphereBounds                                       MeshBounds;                                        // 0xc4(0x1c)
+	struct Vector                                                LowBoundOriginRadius;                              // 0xe0(0xc)
 	byte                                                         Mobility;                                          // 0xec(0x1)
-	char                                                         pad0x3_4OWAY[0x3];                                 // 0xed(0x3)
-	Struct Int32Interval                                         CullDistance;                                      // 0xf0(0x8)
+	char                                                         pad0x3_QTX63[0x3];                                 // 0xed(0x3)
+	struct Int32Interval                                         CullDistance;                                      // 0xf0(0x8)
 	bool                                                         bEnableStaticLighting;                             // 0xf8(0x1)
 	bool                                                         CastShadow;                                        // 0xf8(0x1)
 	bool                                                         bAffectDynamicIndirectLighting;                    // 0xf8(0x1)
@@ -68,15 +69,15 @@ public:
 	bool                                                         bCastShadowAsTwoSided;                             // 0xf8(0x1)
 	bool                                                         bReceivesDecals;                                   // 0xf8(0x1)
 	bool                                                         bOverrideLightMapRes;                              // 0xf9(0x1)
-	char                                                         pad0x2_OLO0V[0x2];                                 // 0xfa(0x2)
+	char                                                         pad0x2_UQRHS[0x2];                                 // 0xfa(0x2)
 	int                                                          OverriddenLightMapRes;                             // 0xfc(0x4)
 	bool                                                         bUseAsOccluder;                                    // 0x100(0x1)
-	char                                                         pad0x7_FMPZ0[0x7];                                 // 0x101(0x7)
-	Struct BodyInstance                                          BodyInstance;                                      // 0x108(0x180)
+	char                                                         pad0x7_1L3A2[0x7];                                 // 0x101(0x7)
+	struct BodyInstance                                          BodyInstance;                                      // 0x108(0x180)
 	byte                                                         CustomNavigableGeometry;                           // 0x288(0x1)
-	char                                                         pad0x7_GYPR5[0x7];                                 // 0x289(0x7)
+	char                                                         pad0x7_NW40S[0x7];                                 // 0x289(0x7)
 	bool                                                         IsSelected;                                        // 0x298(0x1)
-	char                                                         pad0x3_H0GWD[0x3];                                 // 0x299(0x3)
+	char                                                         pad0x3_PEJVS[0x3];                                 // 0x299(0x3)
 	float                                                        CollisionRadius;                                   // 0x29c(0x4)
 	float                                                        ShadeRadius;                                       // 0x2a0(0x4)
 	int                                                          NumSteps;                                          // 0x2a4(0x4)
@@ -88,12 +89,12 @@ public:
 	float                                                        MaxInitialSeedOffset;                              // 0x2bc(0x4)
 	bool                                                         bCanGrowInShade;                                   // 0x2c0(0x1)
 	bool                                                         bSpawnsInShade;                                    // 0x2c1(0x1)
-	char                                                         pad0x2_DBW2Q[0x2];                                 // 0x2c2(0x2)
+	char                                                         pad0x2_ZG7VU[0x2];                                 // 0x2c2(0x2)
 	float                                                        MaxInitialAge;                                     // 0x2c4(0x4)
 	float                                                        MaxAge;                                            // 0x2c8(0x4)
 	float                                                        OverlapPriority;                                   // 0x2cc(0x4)
-	Struct FloatInterval                                         ProceduralScale;                                   // 0x2d0(0x8)
-	Struct RuntimeFloatCurve                                     ScaleCurve;                                        // 0x2d8(0x80)
+	struct FloatInterval                                         ProceduralScale;                                   // 0x2d0(0x8)
+	struct RuntimeFloatCurve                                     ScaleCurve;                                        // 0x2d8(0x80)
 	int                                                          ChangeCount;                                       // 0x358(0x4)
 	bool                                                         ReapplyDensity;                                    // 0x35c(0x1)
 	bool                                                         ReapplyRadius;                                     // 0x35c(0x1)
@@ -110,7 +111,7 @@ public:
 	bool                                                         ReapplyZOffset;                                    // 0x35d(0x1)
 	bool                                                         ReapplyCollisionWithWorld;                         // 0x35d(0x1)
 	bool                                                         ReapplyVertexColorMask;                            // 0x35d(0x1)
-	char                                                         pad0x2_2AZJB[0x2];                                 // 0x35e(0x2)
+	char                                                         pad0x2_PIQMY[0x2];                                 // 0x35e(0x2)
 };
 
 
@@ -118,9 +119,9 @@ public:
 class FoliageType_InstancedStaticMesh: public FoliageType
 {
 public:
-	Class StaticMesh*                                            Mesh;                                              // 0x360(0x8)
+	class StaticMesh*                                            Mesh;                                              // 0x360(0x8)
 	TArray<class MaterialInterface*>                             OverrideMaterials;                                 // 0x368(0x10)
-	class                                                        ComponentClass;                                    // 0x378(0x8)
+	class UClass*                                                ComponentClass;                                    // 0x378(0x8)
 };
 
 
@@ -128,6 +129,7 @@ public:
 class InstancedFoliageActor: public Actor
 {
 public:
+	char                                                         pad0x50_G83UT[0x50];                               // 0x3c8(0x50)
 };
 
 
@@ -135,11 +137,11 @@ public:
 class InteractiveFoliageActor: public StaticMeshActor
 {
 public:
-	Class CapsuleComponent*                                      CapsuleComponent;                                  // 0x3d8(0x8)
-	Struct Vector                                                TouchingActorEntryPosition;                        // 0x3e0(0xc)
-	Struct Vector                                                FoliageVelocity;                                   // 0x3ec(0xc)
-	Struct Vector                                                FoliageForce;                                      // 0x3f8(0xc)
-	Struct Vector                                                FoliagePosition;                                   // 0x404(0xc)
+	class CapsuleComponent*                                      CapsuleComponent;                                  // 0x3d8(0x8)
+	struct Vector                                                TouchingActorEntryPosition;                        // 0x3e0(0xc)
+	struct Vector                                                FoliageVelocity;                                   // 0x3ec(0xc)
+	struct Vector                                                FoliageForce;                                      // 0x3f8(0xc)
+	struct Vector                                                FoliagePosition;                                   // 0x404(0xc)
 	float                                                        FoliageDamageImpulseScale;                         // 0x410(0x4)
 	float                                                        FoliageTouchImpulseScale;                          // 0x414(0x4)
 	float                                                        FoliageStiffness;                                  // 0x418(0x4)
@@ -149,7 +151,7 @@ public:
 	float                                                        MaxTouchImpulse;                                   // 0x428(0x4)
 	float                                                        MaxForce;                                          // 0x42c(0x4)
 	float                                                        Mass;                                              // 0x430(0x4)
-	char                                                         pad0x4_E5IQ3[0x4];                                 // 0x434(0x4)
+	char                                                         pad0x4_X88S0[0x4];                                 // 0x434(0x4)
 };
 
 
@@ -157,6 +159,7 @@ public:
 class InteractiveFoliageComponent: public StaticMeshComponent
 {
 public:
+	char                                                         pad0x10_0JA3B[0x10];                               // 0x620(0x10)
 };
 
 
@@ -164,7 +167,7 @@ public:
 class ProceduralFoliageBlockingVolume: public Volume
 {
 public:
-	Class ProceduralFoliageVolume*                               ProceduralFoliageVolume;                           // 0x400(0x8)
+	class ProceduralFoliageVolume*                               ProceduralFoliageVolume;                           // 0x400(0x8)
 };
 
 
@@ -172,11 +175,11 @@ public:
 class ProceduralFoliageComponent: public ActorComponent
 {
 public:
-	Class ProceduralFoliageSpawner*                              FoliageSpawner;                                    // 0xc8(0x8)
+	class ProceduralFoliageSpawner*                              FoliageSpawner;                                    // 0xc8(0x8)
 	float                                                        TileOverlap;                                       // 0xd0(0x4)
-	char                                                         pad0x4_XXDVG[0x4];                                 // 0xd4(0x4)
-	Class Volume*                                                SpawningVolume;                                    // 0xd8(0x8)
-	Struct Guid                                                  ProceduralGuid;                                    // 0xe0(0x10)
+	char                                                         pad0x4_XDIRJ[0x4];                                 // 0xd4(0x4)
+	class Volume*                                                SpawningVolume;                                    // 0xd8(0x8)
+	struct Guid                                                  ProceduralGuid;                                    // 0xe0(0x10)
 };
 
 
@@ -187,10 +190,10 @@ public:
 	int                                                          RandomSeed;                                        // 0x28(0x4)
 	float                                                        TileSize;                                          // 0x2c(0x4)
 	int                                                          NumUniqueTiles;                                    // 0x30(0x4)
-	char                                                         pad0x4_72PUL[0x4];                                 // 0x34(0x4)
-	TArray<struct FoliageTypes>                                  FoliageTypes;                                      // 0x38(0x10)
+	char                                                         pad0x4_1JBFP[0x4];                                 // 0x34(0x4)
+	TArray<struct FoliageTypeObject>                             FoliageTypes;                                      // 0x38(0x10)
 	bool                                                         bNeedsSimulation;                                  // 0x48(0x1)
-	char                                                         pad0x1f_QF3DN[0x1f];                               // 0x49(0x1f)
+	char                                                         pad0x1f_VX5BK[0x1f];                               // 0x49(0x1f)
 };
 
 
@@ -198,10 +201,10 @@ public:
 class ProceduralFoliageTile: public Object
 {
 public:
-	Class ProceduralFoliageSpawner*                              FoliageSpawner;                                    // 0x28(0x8)
-	char                                                         pad0xa0_MWNKH[0xa0];                               // 0x30(0xa0)
-	TArray<struct InstancesArray>                                InstancesArray;                                    // 0xd0(0x10)
-	char                                                         pad0x70_R4DYF[0x70];                               // 0xe0(0x70)
+	class ProceduralFoliageSpawner*                              FoliageSpawner;                                    // 0x28(0x8)
+	char                                                         pad0xa0_WUSP8[0xa0];                               // 0x30(0xa0)
+	TArray<struct ProceduralFoliageInstance>                     InstancesArray;                                    // 0xd0(0x10)
+	char                                                         pad0x70_M6DOG[0x70];                               // 0xe0(0x70)
 };
 
 
@@ -209,7 +212,7 @@ public:
 class ProceduralFoliageVolume: public Volume
 {
 public:
-	Class ProceduralFoliageComponent*                            ProceduralComponent;                               // 0x400(0x8)
+	class ProceduralFoliageComponent*                            ProceduralComponent;                               // 0x400(0x8)
 };
 
 

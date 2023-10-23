@@ -7,7 +7,11 @@ RemoteEmergentVoyageInterface:
   InheritedSize: '0x28'
   Super: Interface
 RemoteEmergentVoyageService:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_ID1UL[0x8]
+    Offset: '0x28'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'

@@ -5,14 +5,14 @@ AdvertiseGameEventOnDemandAvailabilityTelemetryEvent:
   - Name: GameEventAvailability
     Offset: '0x0'
     Size: '0x20'
-    Type: Struct GameEventAvailabilityModel
+    Type: struct GameEventAvailabilityModel
   ClassSize: '0x20'
 GameEventAvailabilityTelemetryData:
   Attributes:
   - Name: EventName
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: EventCategory
     Offset: '0x10'
     Size: '0x1'
@@ -21,22 +21,30 @@ GameEventAvailabilityTelemetryData:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_VSI70[0x6]
+    Offset: '0x12'
+    Size: '0x6'
+    Type: char
   ClassSize: '0x18'
 GameEventsOnDemandLoserTunnelCrewData:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: GameEventType
     Offset: '0x10'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
+  - Name: pad0x8_N8D38[0x8]
+    Offset: '0x18'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x20'
 ProcessGameEventOnDemandAvailabilityTelemetryEvent:
   Attributes:
   - Name: GameEventAvailabilityData
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct GameEventAvailabilityData>
+    Type: TArray<struct GameEventAvailabilityTelemetryData>
   ClassSize: '0x10'

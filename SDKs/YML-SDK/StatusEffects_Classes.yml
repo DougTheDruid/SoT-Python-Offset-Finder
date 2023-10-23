@@ -16,7 +16,7 @@ AppliedStatusToSelfStatCondition:
     Offset: '0x40'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_V1FUF[0x7]
+  - Name: pad0x7_64513[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
@@ -26,7 +26,7 @@ AppliedStatusToSelfStatCondition:
   Super: TargetedStatCondition
 BuffReceiverComponent:
   Attributes:
-  - Name: pad0x8_JNUCC[0x8]
+  - Name: pad0x8_E8PBP[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -34,7 +34,7 @@ BuffReceiverComponent:
     Offset: '0xd0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_MMQQN[0x7]
+  - Name: pad0x7_FRVS5[0x7]
     Offset: '0xd1'
     Size: '0x7'
     Type: char
@@ -53,7 +53,7 @@ DebugMenuStatusDataAsset:
   - Name: StatusDefinitions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct StatusDefinitions>
+    Type: TArray<struct DebugMenuStatusDefinition>
   - Name: Durations
     Offset: '0x38'
     Size: '0x10'
@@ -67,40 +67,40 @@ DebugStatusTicketHolder:
   - Name: StatusRecipient
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x8'
   FullSize: '0x3d0'
   InheritedSize: '0x3c8'
   Super: Actor
 LightWeightStatusEffectManagerComponent:
   Attributes:
-  - Name: pad0x20_N4MIT[0x20]
+  - Name: pad0x20_F6VI1[0x20]
     Offset: '0xc8'
     Size: '0x20'
     Type: char
   - Name: RecipientResponseList
     Offset: '0xe8'
     Size: '0x8'
-    Type: Class StatusRecipientResponseList*
+    Type: class StatusRecipientResponseList*
   - Name: ActiveEffects
     Offset: '0xf0'
     Size: '0x10'
-    Type: TArray<struct ActiveEffects>
+    Type: TArray<struct ActiveStatusEffect>
   ClassSize: '0x38'
   FullSize: '0x100'
   InheritedSize: '0xc8'
   Super: ActorComponent
 MaterialStatusSusceptibilityComponent:
   Attributes:
-  - Name: pad0x8_ABEMD[0x8]
+  - Name: pad0x8_ZNL1Y[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
   - Name: CurrentSurfaceMaterial
     Offset: '0xd0'
     Size: '0x8'
-    Type: Class PhysicalMaterial*
-  - Name: pad0x20_9GMQM[0x20]
+    Type: class PhysicalMaterial*
+  - Name: pad0x20_ABFG6[0x20]
     Offset: '0xd8'
     Size: '0x20'
     Type: char
@@ -124,7 +124,7 @@ SetCanReceiveBuffStatusResponse:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_YERZ1[0x6]
+  - Name: pad0x6_1751L[0x6]
     Offset: '0x32'
     Size: '0x6'
     Type: char
@@ -134,23 +134,23 @@ SetCanReceiveBuffStatusResponse:
   Super: StatusResponse
 SphericalStatusEffectZone:
   Attributes:
-  - Name: pad0x8_IVMTV[0x8]
+  - Name: pad0x8_WDWE9[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
   - Name: ActorActivationComponent
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class ActorActivationComponent*
+    Type: class ActorActivationComponent*
   - Name: SphereComponent
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class SphereComponent*
+    Type: class SphereComponent*
   - Name: StatusEffectVolumeComponent
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class StatusEffectVolumeComponent*
-  - Name: pad0xa0_717QZ[0xa0]
+    Type: class StatusEffectVolumeComponent*
+  - Name: pad0xa0_UII2X[0xa0]
     Offset: '0x3e8'
     Size: '0xa0'
     Type: char
@@ -163,7 +163,7 @@ StatusApplicationDesc:
   - Name: ApplicationEvent
     Offset: '0x28'
     Size: '0x28'
-    Type: Struct EventAppliedStatusToTargets
+    Type: struct EventAppliedStatusToTargets
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -173,13 +173,17 @@ StatusApplicationMonitorComponent:
   - Name: StatusApplicationTrigger
     Offset: '0xc8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x8'
   FullSize: '0xd0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 StatusBase:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_LH2TV[0x8]
+    Offset: '0x28'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
@@ -198,18 +202,18 @@ StatusEffectHelperFunctionLibrary:
   Super: BlueprintFunctionLibrary
 StatusEffectManagerComponent:
   Attributes:
-  - Name: pad0x28_KMQNQ[0x28]
+  - Name: pad0x28_59AGI[0x28]
     Offset: '0xc8'
     Size: '0x28'
     Type: char
   - Name: RecipientResponseList
     Offset: '0xf0'
     Size: '0x8'
-    Type: Class StatusRecipientResponseList*
+    Type: class StatusRecipientResponseList*
   - Name: ActiveEffects
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<struct ActiveEffects>
+    Type: TArray<struct ActiveStatusEffect>
   ClassSize: '0x40'
   FullSize: '0x108'
   InheritedSize: '0xc8'
@@ -219,8 +223,8 @@ StatusEffectOverlapZone:
   - Name: StatusesToApplyOnOverlap
     Offset: '0x4a0'
     Size: '0x10'
-    Type: TArray<struct StatusesToApplyOnOverlap>
-  - Name: pad0x10_TF6DB[0x10]
+    Type: TArray<struct DelayedStatusEffect>
+  - Name: pad0x10_O34YM[0x10]
     Offset: '0x4b0'
     Size: '0x10'
     Type: char
@@ -229,7 +233,11 @@ StatusEffectOverlapZone:
   InheritedSize: '0x4a0'
   Super: SimpleOverlapZone
 StatusEffectPersistenceComponent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_KQPQL[0x8]
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0xd0'
   InheritedSize: '0xc8'
@@ -270,15 +278,15 @@ StatusEffectVolumeComponent:
     Offset: '0x2e0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_10H59[0x7]
+  - Name: pad0x7_5PWIF[0x7]
     Offset: '0x2e1'
     Size: '0x7'
     Type: char
   - Name: StatusEffectsToMaintain
     Offset: '0x2e8'
     Size: '0x10'
-    Type: TArray<struct StatusEffectsToMaintain>
-  - Name: pad0x8_F1YBG[0x8]
+    Type: TArray<struct Status>
+  - Name: pad0x8_CSLJT[0x8]
     Offset: '0x2f8'
     Size: '0x8'
     Type: char
@@ -291,7 +299,7 @@ StatusEffectsSettings:
   - Name: DebugMenuStatusDefinitionsDataAsset
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -305,7 +313,7 @@ StatusRecipientResponseList:
   - Name: FeatureToggledResponseLists
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<struct FeatureToggledResponseLists>
+    Type: TArray<struct FeatureToggledStatusResponseList>
   - Name: FinalResponseAssets
     Offset: '0x48'
     Size: '0x10'
@@ -315,7 +323,11 @@ StatusRecipientResponseList:
   InheritedSize: '0x28'
   Super: DataAsset
 StatusResponse:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_QT5TY[0x8]
+    Offset: '0x28'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
@@ -325,7 +337,7 @@ StatusResponseAsset:
   - Name: HighFrequencyTriggerStatusHelper
     Offset: '0x28'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: TriggerStatus
     Offset: '0x60'
     Size: '0x10'

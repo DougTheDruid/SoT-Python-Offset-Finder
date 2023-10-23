@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 TaleNote:
   Attributes:
-  - Name: pad0x10_QO98O[0x10]
+  - Name: pad0x10_4A8CB[0x10]
     Offset: '0x7e0'
     Size: '0x10'
     Type: char
@@ -18,30 +18,30 @@ TaleNote:
     Offset: '0x7f8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_WZ034[0x4]
+  - Name: pad0x4_MC4BE[0x4]
     Offset: '0x7fc'
     Size: '0x4'
     Type: char
   - Name: Font
     Offset: '0x800'
     Size: '0x8'
-    Type: Class Font*
+    Type: class Font*
   - Name: Image
     Offset: '0x808'
     Size: '0x38'
-    Type: Struct TreasureMapWidgetStreamedTexture
+    Type: struct TreasureMapWidgetStreamedTexture
   - Name: TitleWidgetText
     Offset: '0x840'
     Size: '0x3c'
-    Type: Struct TreasureMapWidgetText
+    Type: struct TreasureMapWidgetText
   - Name: BodyWidgetText
     Offset: '0x87c'
     Size: '0x3c'
-    Type: Struct TreasureMapWidgetText
+    Type: struct TreasureMapWidgetText
   - Name: AdditionalBodyWidgetText
     Offset: '0x8b8'
     Size: '0x10'
-    Type: TArray<struct AdditionalBodyWidgetText>
+    Type: TArray<struct TreasureMapWidgetText>
   - Name: NoteWidth
     Offset: '0x8c8'
     Size: '0x4'
@@ -53,11 +53,11 @@ TaleNote:
   - Name: Title
     Offset: '0x8d0'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: Body
     Offset: '0x908'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: AdditionalBody
     Offset: '0x940'
     Size: '0x10'
@@ -65,20 +65,20 @@ TaleNote:
   - Name: RenderTarget
     Offset: '0x950'
     Size: '0x8'
-    Type: Class MaybeCompressedCanvasRenderTarget2D*
+    Type: class MaybeCompressedCanvasRenderTarget2D*
   - Name: UsableWieldableComponent
     Offset: '0x958'
     Size: '0x8'
-    Type: Class UsableWieldableComponent*
+    Type: class UsableWieldableComponent*
   - Name: InventoryItemComponent
     Offset: '0x960'
     Size: '0x8'
-    Type: Class InventoryItemComponent*
+    Type: class InventoryItemComponent*
   - Name: ZoomInOnWieldableComponent
     Offset: '0x968'
     Size: '0x8'
-    Type: Class ZoomInOnWieldableItemComponent*
-  - Name: pad0xe0_C3WB1[0xe0]
+    Type: class ZoomInOnWieldableItemComponent*
+  - Name: pad0xe0_1Q0MT[0xe0]
     Offset: '0x970'
     Size: '0xe0'
     Type: char

@@ -4,14 +4,28 @@
     "FullSize": "0x88",
     "InheritedSize": "0x80",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_LT5RR[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x80"
+      }
+    ]
   },
   "RareFileOpenFileHandler": {
     "Super": "Class",
     "FullSize": "0x208",
     "InheritedSize": "0x1c0",
     "ClassSize": "0x48",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x48_7IL8A[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x1c0"
+      }
+    ]
   },
   "RareFileOpenOnDiskFileHandler": {
     "Super": "RareFileOpenFileHandler",
@@ -45,7 +59,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_44YVB[0x7]",
+        "Name": "pad0x7_K3HQC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -58,13 +72,13 @@
       },
       {
         "Name": "OpenOrderLogDirectory",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "OutputOrderLogDirectory",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x68"
       },
@@ -75,7 +89,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x14_DUQSJ[0x14]",
+        "Name": "pad0x14_HOTAE[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x7c"

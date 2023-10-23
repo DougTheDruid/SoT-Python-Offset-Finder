@@ -14,18 +14,18 @@
     "Attributes": [
       {
         "Name": "AssignedVoyageProposalDescClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "AssignedTaleRankDescClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
-        "Name": "pad0xa8_GRC26[0xa8]",
+        "Name": "pad0xa8_1NZ3Z[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0x38"
@@ -40,7 +40,7 @@
     "Attributes": [
       {
         "Name": "ContextualTutorialClasses",
-        "Type": "TArray<struct ContextualTutorialClasses>",
+        "Type": "TArray<struct ContextualTutorialPromptDesc>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
@@ -51,7 +51,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x58_93MVO[0x58]",
+        "Name": "pad0x58_MGCVL[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0xe8"
@@ -71,7 +71,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_689PK[0x7]",
+        "Name": "pad0x7_FSCBF[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
@@ -104,7 +104,7 @@
         "Offset": "0xc9"
       },
       {
-        "Name": "pad0x6_ZDQUB[0x6]",
+        "Name": "pad0x6_4HFGX[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0xca"
@@ -119,7 +119,7 @@
     "Attributes": [
       {
         "Name": "ContextualTutorialComponent",
-        "Type": "Class ContextualTutorialComponent*",
+        "Type": "class ContextualTutorialComponent*",
         "Size": "0x8",
         "Offset": "0xd0"
       }
@@ -148,117 +148,123 @@
   },
   "TutorialManager": {
     "Super": "ActorComponent",
-    "FullSize": "0x138",
+    "FullSize": "0x140",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x70",
+    "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "pad0x8_V1U8W[0x8]",
+        "Name": "pad0x8_NOR1E[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "CompanyOnboardingStarterClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
       {
         "Name": "MaidenVoyageStarterClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
       {
         "Name": "BeachNPCSpawnFlowStarterClass",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xe0"
       },
       {
-        "Name": "CaptaincyStarterClass",
-        "Type": "class",
+        "Name": "IntroductionToSOTFlowStarterClass",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xe8"
       },
       {
-        "Name": "CaptaincyNewShipStarterClass",
-        "Type": "class",
+        "Name": "CaptaincyStarterClass",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xf0"
       },
       {
-        "Name": "CaptaincyWithBeachNPCSpawnStarterClass",
-        "Type": "class",
+        "Name": "CaptaincyNewShipStarterClass",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xf8"
       },
       {
-        "Name": "SelectedTutorialClass",
-        "Type": "class",
+        "Name": "CaptaincyWithBeachNPCSpawnStarterClass",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x100"
       },
       {
-        "Name": "SelectedTutorial",
-        "Type": "Class TutorialStarter*",
+        "Name": "SelectedTutorialClass",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x108"
+      },
+      {
+        "Name": "SelectedTutorial",
+        "Type": "class TutorialStarter*",
+        "Size": "0x8",
+        "Offset": "0x110"
       },
       {
         "Name": "TutorialType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x110"
+        "Offset": "0x118"
       },
       {
         "Name": "HasEverPlayedFirstPersonAnimation",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x111"
+        "Offset": "0x119"
       },
       {
         "Name": "HasStartedTutorial",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x112"
+        "Offset": "0x11a"
       },
       {
         "Name": "HasReceivedEntitlements",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x113"
+        "Offset": "0x11b"
       },
       {
         "Name": "HasPosessedPawn",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x114"
+        "Offset": "0x11c"
       },
       {
         "Name": "HasPlayerFinshedSpawning",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x115"
+        "Offset": "0x11d"
       },
       {
         "Name": "IsPlayerWaitingForCaptaincySessionResponse",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x116"
+        "Offset": "0x11e"
       },
       {
         "Name": "HasPlayerPromptsServiceSetup",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x117"
+        "Offset": "0x11f"
       },
       {
-        "Name": "pad0x20_IV8VU[0x20]",
+        "Name": "pad0x20_SJDLN[0x20]",
         "Type": "char",
         "Size": "0x20",
-        "Offset": "0x118"
+        "Offset": "0x120"
       }
     ]
   },
@@ -270,7 +276,7 @@
     "Attributes": [
       {
         "Name": "AthenaPlayerController",
-        "Type": "Class AthenaPlayerController*",
+        "Type": "class AthenaPlayerController*",
         "Size": "0x8",
         "Offset": "0x28"
       },
@@ -287,14 +293,14 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x2_QUQAU[0x2]",
+        "Name": "pad0x2_33V5N[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x32"
       },
       {
         "Name": "IntroAnimationSettings",
-        "Type": "Struct FirstPersonAnimaticSettings",
+        "Type": "struct FirstPersonAnimaticSettings",
         "Size": "0x2c",
         "Offset": "0x34"
       }
@@ -315,7 +321,7 @@
     "Attributes": [
       {
         "Name": "TutorialTale",
-        "Type": "Class VoyageDescDataAsset*",
+        "Type": "class VoyageDescDataAsset*",
         "Size": "0x8",
         "Offset": "0x60"
       },
@@ -338,14 +344,14 @@
         "Offset": "0x6a"
       },
       {
-        "Name": "pad0x5_OGCKS[0x5]",
+        "Name": "pad0x5_ODTV0[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x6b"
       },
       {
         "Name": "CheckIfEntitlementIsOwned",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x70"
       },
@@ -356,7 +362,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x3_E3853[0x3]",
+        "Name": "pad0x3_33VXS[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x79"
@@ -374,14 +380,14 @@
         "Offset": "0x84"
       },
       {
-        "Name": "pad0x3_UPJJ4[0x3]",
+        "Name": "pad0x3_RG0PU[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x85"
       },
       {
         "Name": "PromptCounterKey",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x88"
       },
@@ -392,7 +398,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x64_YUTS7[0x64]",
+        "Name": "pad0x64_ZOHL5[0x64]",
         "Type": "char",
         "Size": "0x64",
         "Offset": "0x94"
@@ -405,6 +411,20 @@
     "InheritedSize": "0x60",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "IntroductionToSOTFlowStarter": {
+    "Super": "TutorialStarter",
+    "FullSize": "0x68",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TutorialTale",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      }
+    ]
   },
   "MaidenVoyageStarter": {
     "Super": "TutorialStarter",

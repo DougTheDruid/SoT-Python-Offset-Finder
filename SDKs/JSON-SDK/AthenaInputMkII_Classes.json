@@ -4,21 +4,42 @@
     "FullSize": "0x170",
     "InheritedSize": "0x150",
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x20_C8M1K[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x150"
+      }
+    ]
   },
   "AthenaCharacterBaseInputComponent": {
     "Super": "AutoMoveInputComponent",
     "FullSize": "0x298",
     "InheritedSize": "0x170",
     "ClassSize": "0x128",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x128_31UP7[0x128]",
+        "Type": "char",
+        "Size": "0x128",
+        "Offset": "0x170"
+      }
+    ]
   },
   "AthenaCharacterBaseInputComponentWithInterference": {
     "Super": "AthenaCharacterBaseInputComponent",
     "FullSize": "0x2a0",
     "InheritedSize": "0x298",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_DEWON[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x298"
+      }
+    ]
   },
   "LookingAtWieldableInputComponent": {
     "Super": "AthenaCharacterBaseInputComponent",
@@ -28,7 +49,7 @@
     "Attributes": [
       {
         "Name": "TargetWieldable",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x298"
       }
@@ -39,7 +60,14 @@
     "FullSize": "0x1e0",
     "InheritedSize": "0x170",
     "ClassSize": "0x70",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x70_3NXJX[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x170"
+      }
+    ]
   },
   "ClampedFreelookXAnalogInputId": {
     "Super": "AnalogInputId",

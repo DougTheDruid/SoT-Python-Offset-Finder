@@ -4,13 +4,13 @@
     "Attributes": [
       {
         "Name": "LayerActors",
-        "Type": "Class LayerActorsDataAsset*",
+        "Type": "class LayerActorsDataAsset*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "ActorTransforms",
-        "Type": "TArray<struct ActorTransforms>",
+        "Type": "TArray<struct Transform>",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -19,6 +19,12 @@
         "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x20_J4S0X[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
       }
     ]
   },

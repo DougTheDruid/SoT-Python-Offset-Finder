@@ -10,9 +10,10 @@ namespace DougsSDKDumper
 struct AbandonedNoteWeightedTextEntry
 {
 public:
-	Struct FText                                                 Title;                                             // 0x0(0x38)
-	Struct FText                                                 Body;                                              // 0x38(0x38)
+	struct FText                                                 Title;                                             // 0x0(0x38)
+	struct FText                                                 Body;                                              // 0x38(0x38)
 	float                                                        Weight;                                            // 0x70(0x4)
+	char                                                         pad0x4_QIJLS[0x4];                                 // 0x74(0x4)
 };
 
 
@@ -20,9 +21,9 @@ public:
 struct SirenPuzzleLockState
 {
 public:
-	Struct Guid                                                  LockId;                                            // 0x0(0x10)
-	TArray<struct UnlockReactions>                               UnlockReactions;                                   // 0x10(0x10)
-	TArray<struct UnlockingCrews>                                UnlockingCrews;                                    // 0x20(0x10)
+	struct Guid                                                  LockId;                                            // 0x0(0x10)
+	TArray<struct LandmarkReactionKeyFrame>                      UnlockReactions;                                   // 0x10(0x10)
+	TArray<struct Guid>                                          UnlockingCrews;                                    // 0x20(0x10)
 };
 
 
@@ -30,6 +31,7 @@ public:
 struct SirenPuzzleCompleteEvent
 {
 public:
+	char                                                         pad0x1_1Y3UL[0x1];                                 // 0x0(0x1)
 };
 
 

@@ -13,13 +13,13 @@ public:
 };
 
 
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+// Size 0xc0 (Full Size[0xe8] - InheritedSize[0x28]
 class GameEventsOnDemandAvailabilityService: public Object
 {
 public:
-	char                                                         pad0x40_JLXLD[0x40];                               // 0x28(0x40)
-	Class World*                                                 World;                                             // 0x68(0x8)
-	char                                                         pad0x18_O7WBT[0x18];                               // 0x70(0x18)
+	char                                                         pad0xa0_J1MB1[0xa0];                               // 0x28(0xa0)
+	class World*                                                 World;                                             // 0xc8(0x8)
+	char                                                         pad0x18_8CH6V[0x18];                               // 0xd0(0x18)
 };
 
 
@@ -27,14 +27,14 @@ public:
 class GameEventsOnDemandLoserTunnelService: public Actor
 {
 public:
-	char                                                         pad0x8_Z1UCV[0x8];                                 // 0x3c8(0x8)
-	Class World*                                                 World;                                             // 0x3d0(0x8)
-	char                                                         pad0x58_OAVIB[0x58];                               // 0x3d8(0x58)
-	Class VoyageDescDataAsset*                                   LoserTunnelVoyageDescDataAsset;                    // 0x430(0x8)
-	char                                                         pad0x50_GUUU2[0x50];                               // 0x438(0x50)
-	TArray<struct TrackedCrews>                                  TrackedCrews;                                      // 0x488(0x10)
+	char                                                         pad0x8_LOBYD[0x8];                                 // 0x3c8(0x8)
+	class World*                                                 World;                                             // 0x3d0(0x8)
+	char                                                         pad0x58_HOIBE[0x58];                               // 0x3d8(0x58)
+	class VoyageDescDataAsset*                                   LoserTunnelVoyageDescDataAsset;                    // 0x430(0x8)
+	char                                                         pad0x50_NXETH[0x50];                               // 0x438(0x50)
+	TArray<struct GameEventsOnDemandLoserTunnelCrewData>         TrackedCrews;                                      // 0x488(0x10)
 	struct FName                                                 TemporaryBannerTag;                                // 0x498(0x8)
-	char                                                         pad0x68_KWF9T[0x68];                               // 0x4a0(0x68)
+	char                                                         pad0x68_MFW3J[0x68];                               // 0x4a0(0x68)
 };
 
 

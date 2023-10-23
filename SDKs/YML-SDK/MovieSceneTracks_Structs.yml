@@ -10,26 +10,26 @@ ColorParameterNameAndCurves:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_R6JCB[0x4]
+  - Name: pad0x4_T46LC[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
   - Name: RedCurve
     Offset: '0x10'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   - Name: GreenCurve
     Offset: '0x88'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   - Name: BlueCurve
     Offset: '0x100'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   - Name: AlphaCurve
     Offset: '0x178'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   ClassSize: '0x1f0'
 EventPayload:
   Attributes:
@@ -41,7 +41,7 @@ EventPayload:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_Q5ODL[0x3]
+  - Name: pad0x3_SRDP7[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -53,21 +53,25 @@ EventPayload:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_57GPI[0x4]
+  - Name: pad0x4_JWKW5[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
   - Name: Parameters
     Offset: '0x18'
     Size: '0x18'
-    Type: Struct MovieSceneEventParameters
+    Type: struct MovieSceneEventParameters
   ClassSize: '0x30'
 MovieScene3DAttachSectionTemplate:
   Attributes:
+  - Name: pad0x18_1N0G3[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: AttachGuid
     Offset: '0x18'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: AttachSocketName
     Offset: '0x28'
     Size: '0x8'
@@ -79,21 +83,33 @@ MovieScene3DAttachSectionTemplate:
   ClassSize: '0x38'
 MovieScene3DLocationKeyStruct:
   Attributes:
+  - Name: pad0x8_GG0ZF[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Location
     Offset: '0x8'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
+  - Name: pad0x1c_Y1DNB[0x1c]
+    Offset: '0x14'
+    Size: '0x1c'
+    Type: char
   ClassSize: '0x30'
 MovieScene3DPathSectionTemplate:
   Attributes:
+  - Name: pad0x18_AE0IG[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: PathGuid
     Offset: '0x18'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: TimingCurve
     Offset: '0x28'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   - Name: FrontAxisEnum
     Offset: '0xa0'
     Size: '0x1'
@@ -102,7 +118,7 @@ MovieScene3DPathSectionTemplate:
     Offset: '0xa1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_4PHT7[0x2]
+  - Name: pad0x2_P6L6H[0x2]
     Offset: '0xa2'
     Size: '0x2'
     Type: char
@@ -118,93 +134,145 @@ MovieScene3DPathSectionTemplate:
     Offset: '0xa4'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_HCRL4[0x3]
+    Offset: '0xa5'
+    Size: '0x3'
+    Type: char
   ClassSize: '0xa8'
 MovieScene3DRotationKeyStruct:
   Attributes:
+  - Name: pad0x8_CCOTW[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Rotation
     Offset: '0x8'
     Size: '0xc'
-    Type: Struct Rotator
+    Type: struct Rotator
+  - Name: pad0x1c_4RJSO[0x1c]
+    Offset: '0x14'
+    Size: '0x1c'
+    Type: char
   ClassSize: '0x30'
 MovieScene3DScaleKeyStruct:
   Attributes:
+  - Name: pad0x8_SB95X[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Scale
     Offset: '0x8'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
+  - Name: pad0x1c_NNAAC[0x1c]
+    Offset: '0x14'
+    Size: '0x1c'
+    Type: char
   ClassSize: '0x30'
 MovieScene3DTransformKeyStruct:
   Attributes:
+  - Name: pad0x8_LAERX[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Location
     Offset: '0x8'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: Rotation
     Offset: '0x14'
     Size: '0xc'
-    Type: Struct Rotator
+    Type: struct Rotator
   - Name: Scale
     Offset: '0x20'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
+  - Name: pad0x4c_BKP07[0x4c]
+    Offset: '0x2c'
+    Size: '0x4c'
+    Type: char
   ClassSize: '0x78'
 MovieScene3DTransformSectionTemplate:
   Attributes:
+  - Name: pad0x18_I6QZQ[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: TranslationCurve
     Offset: '0x18'
     Size: '0x78'
-    Type: Struct RichCurve
-  - Name: pad0xf0_N29QA[0xf0]
+    Type: struct RichCurve
+  - Name: pad0xf0_2A59W[0xf0]
     Offset: '0x90'
     Size: '0xf0'
     Type: char
   - Name: RotationCurve
     Offset: '0x180'
     Size: '0x78'
-    Type: Struct RichCurve
-  - Name: pad0xf0_2AG08[0xf0]
+    Type: struct RichCurve
+  - Name: pad0xf0_DK71U[0xf0]
     Offset: '0x1f8'
     Size: '0xf0'
     Type: char
   - Name: ScaleCurve
     Offset: '0x2e8'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
+  - Name: pad0xf0_3KRN5[0xf0]
+    Offset: '0x360'
+    Size: '0xf0'
+    Type: char
   ClassSize: '0x450'
 MovieSceneActorReferenceSectionTemplate:
   Attributes:
+  - Name: pad0x18_4I56A[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: PropertyData
     Offset: '0x18'
     Size: '0x20'
-    Type: Struct MovieScenePropertySectionData
+    Type: struct MovieScenePropertySectionData
   - Name: ActorGuidIndexCurve
     Offset: '0x38'
     Size: '0x70'
-    Type: Struct IntegralCurve
+    Type: struct IntegralCurve
   - Name: ActorGuids
     Offset: '0xa8'
     Size: '0x10'
-    Type: TArray<struct ActorGuids>
+    Type: TArray<struct Guid>
   ClassSize: '0xb8'
 MovieSceneAdditiveCameraAnimationTemplate:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_XJJ2E[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
 MovieSceneAdditiveCameraAnimationTrackTemplate:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_9DYAG[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
 MovieSceneAudioSectionTemplate:
   Attributes:
+  - Name: pad0x18_TYJJO[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: AudioData
     Offset: '0x18'
     Size: '0x118'
-    Type: Struct MovieSceneAudioSectionTemplateData
+    Type: struct MovieSceneAudioSectionTemplateData
   ClassSize: '0x130'
 MovieSceneAudioSectionTemplateData:
   Attributes:
   - Name: Sound
     Offset: '0x0'
     Size: '0x8'
-    Type: Class SoundBase*
+    Type: class SoundBase*
   - Name: AudioStartOffset
     Offset: '0x8'
     Size: '0x4'
@@ -212,52 +280,64 @@ MovieSceneAudioSectionTemplateData:
   - Name: AudioRange
     Offset: '0xc'
     Size: '0x10'
-    Type: Struct FloatRange
-  - Name: pad0x4_B705X[0x4]
+    Type: struct FloatRange
+  - Name: pad0x4_B2BNU[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
   - Name: AudioPitchMultiplierCurve
     Offset: '0x20'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   - Name: AudioVolumeCurve
     Offset: '0x98'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   - Name: RowIndex
     Offset: '0x110'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_Z7W3J[0x4]
+    Offset: '0x114'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x118'
 MovieSceneBoolPropertySectionTemplate:
   Attributes:
+  - Name: pad0x18_3TACV[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: PropertyData
     Offset: '0x18'
     Size: '0x20'
-    Type: Struct MovieScenePropertySectionData
+    Type: struct MovieScenePropertySectionData
   - Name: BoolCurve
     Offset: '0x38'
     Size: '0x70'
-    Type: Struct IntegralCurve
+    Type: struct IntegralCurve
   ClassSize: '0xa8'
 MovieSceneBytePropertySectionTemplate:
   Attributes:
+  - Name: pad0x18_ZTJNV[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: PropertyData
     Offset: '0x18'
     Size: '0x20'
-    Type: Struct MovieScenePropertySectionData
+    Type: struct MovieScenePropertySectionData
   - Name: ByteCurve
     Offset: '0x38'
     Size: '0x70'
-    Type: Struct IntegralCurve
+    Type: struct IntegralCurve
   ClassSize: '0xa8'
 MovieSceneCameraAnimSectionData:
   Attributes:
   - Name: CameraAnim
     Offset: '0x0'
     Size: '0x8'
-    Type: Class CameraAnim*
+    Type: class CameraAnim*
   - Name: PlayRate
     Offset: '0x8'
     Size: '0x4'
@@ -278,31 +358,47 @@ MovieSceneCameraAnimSectionData:
     Offset: '0x18'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_INXH0[0x7]
+    Offset: '0x19'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x20'
 MovieSceneCameraAnimSectionTemplate:
   Attributes:
+  - Name: pad0x18_CGF46[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: SourceData
     Offset: '0x18'
     Size: '0x20'
-    Type: Struct MovieSceneCameraAnimSectionData
+    Type: struct MovieSceneCameraAnimSectionData
   - Name: SectionStartTime
     Offset: '0x38'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_AM6WE[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x40'
 MovieSceneCameraCutSectionTemplate:
   Attributes:
+  - Name: pad0x18_HME3L[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: CameraGuid
     Offset: '0x18'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x28'
 MovieSceneCameraShakeSectionData:
   Attributes:
   - Name: ShakeClass
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: PlayScale
     Offset: '0x8'
     Size: '0x4'
@@ -311,35 +407,59 @@ MovieSceneCameraShakeSectionData:
     Offset: '0xc'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_ZNUY0[0x3]
+  - Name: pad0x3_1BNXD[0x3]
     Offset: '0xd'
     Size: '0x3'
     Type: char
   - Name: UserDefinedPlaySpace
     Offset: '0x10'
     Size: '0xc'
-    Type: Struct Rotator
+    Type: struct Rotator
+  - Name: pad0x4_6NB1H[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x20'
 MovieSceneCameraShakeSectionTemplate:
   Attributes:
+  - Name: pad0x18_7CIWM[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: SourceData
     Offset: '0x18'
     Size: '0x20'
-    Type: Struct MovieSceneCameraShakeSectionData
+    Type: struct MovieSceneCameraShakeSectionData
   - Name: SectionStartTime
     Offset: '0x38'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_VOB3P[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x40'
 MovieSceneColorKeyStruct:
   Attributes:
+  - Name: pad0x8_GQVZI[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Color
     Offset: '0x8'
     Size: '0x10'
-    Type: Struct LinearColor
+    Type: struct LinearColor
+  - Name: pad0x40_EZK4Z[0x40]
+    Offset: '0x18'
+    Size: '0x40'
+    Type: char
   ClassSize: '0x58'
 MovieSceneColorSectionTemplate:
   Attributes:
+  - Name: pad0x18_2RAF7[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: PropertyName
     Offset: '0x18'
     Size: '0x8'
@@ -347,32 +467,52 @@ MovieSceneColorSectionTemplate:
   - Name: PropertyPath
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: Curves
     Offset: '0x30'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
+  - Name: pad0x168_G085I[0x168]
+    Offset: '0xa8'
+    Size: '0x168'
+    Type: char
   ClassSize: '0x210'
 MovieSceneComponentMaterialSectionTemplate:
   Attributes:
+  - Name: pad0x48_348LF[0x48]
+    Offset: '0x0'
+    Size: '0x48'
+    Type: char
   - Name: MaterialIndex
     Offset: '0x48'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_YGZLB[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x50'
 MovieSceneEnumPropertySectionTemplate:
   Attributes:
+  - Name: pad0x18_NK43V[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: PropertyData
     Offset: '0x18'
     Size: '0x20'
-    Type: Struct MovieScenePropertySectionData
+    Type: struct MovieScenePropertySectionData
   - Name: EnumCurve
     Offset: '0x38'
     Size: '0x70'
-    Type: Struct IntegralCurve
+    Type: struct IntegralCurve
   ClassSize: '0xa8'
 MovieSceneEventParameters:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_RI542[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
 MovieSceneEventSectionData:
   Attributes:
@@ -383,14 +523,18 @@ MovieSceneEventSectionData:
   - Name: KeyValues
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct KeyValues>
+    Type: TArray<struct EventPayload>
   ClassSize: '0x20'
 MovieSceneEventSectionTemplate:
   Attributes:
+  - Name: pad0x18_4WJSE[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: EventData
     Offset: '0x18'
     Size: '0x20'
-    Type: Struct MovieSceneEventSectionData
+    Type: struct MovieSceneEventSectionData
   - Name: bFireEventsWhenForwards
     Offset: '0x38'
     Size: '0x1'
@@ -399,51 +543,75 @@ MovieSceneEventSectionTemplate:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_EKTMJ[0x7]
+    Offset: '0x39'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x40'
 MovieSceneFadeSectionTemplate:
   Attributes:
+  - Name: pad0x18_LOC8Y[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: FadeCurve
     Offset: '0x18'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   - Name: FadeColor
     Offset: '0x90'
     Size: '0x10'
-    Type: Struct LinearColor
+    Type: struct LinearColor
   - Name: bFadeAudio
     Offset: '0xa0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_J9RC9[0x7]
+    Offset: '0xa1'
+    Size: '0x7'
+    Type: char
   ClassSize: '0xa8'
 MovieSceneFloatPropertySectionTemplate:
   Attributes:
+  - Name: pad0x18_K0R0D[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: PropertyData
     Offset: '0x18'
     Size: '0x20'
-    Type: Struct MovieScenePropertySectionData
+    Type: struct MovieScenePropertySectionData
   - Name: FloatCurve
     Offset: '0x38'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   ClassSize: '0xb0'
 MovieSceneIntegerPropertySectionTemplate:
   Attributes:
+  - Name: pad0x18_CNVK6[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: PropertyData
     Offset: '0x18'
     Size: '0x20'
-    Type: Struct MovieScenePropertySectionData
+    Type: struct MovieScenePropertySectionData
   - Name: IntegerCurve
     Offset: '0x38'
     Size: '0x70'
-    Type: Struct IntegralCurve
+    Type: struct IntegralCurve
   ClassSize: '0xa8'
 MovieSceneLevelVisibilitySectionTemplate:
   Attributes:
+  - Name: pad0x18_9HTX9[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: Visibility
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_FKGSB[0x7]
+  - Name: pad0x7_8T443[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
@@ -453,39 +621,55 @@ MovieSceneLevelVisibilitySectionTemplate:
     Type: TArray<struct FName>
   ClassSize: '0x30'
 MovieSceneLevelVisibilitySharedTrack:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_WIBR4[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
 MovieSceneParameterSectionTemplate:
   Attributes:
+  - Name: pad0x18_4FUD7[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: Scalars
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<struct Scalars>
+    Type: TArray<struct ScalarParameterNameAndCurve>
   - Name: Vectors
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct Vectors>
+    Type: TArray<struct VectorParameterNameAndCurves>
   - Name: Colors
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<struct Colors>
+    Type: TArray<struct ColorParameterNameAndCurves>
   ClassSize: '0x48'
 MovieSceneParticleParameterSectionTemplate:
-  Attributes: []
+  Attributes:
+  - Name: pad0x48_QHIV2[0x48]
+    Offset: '0x0'
+    Size: '0x48'
+    Type: char
   ClassSize: '0x48'
 MovieSceneParticleSectionTemplate:
   Attributes:
+  - Name: pad0x18_P7ULR[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: ParticleKeys
     Offset: '0x18'
     Size: '0x70'
-    Type: Struct IntegralCurve
+    Type: struct IntegralCurve
   ClassSize: '0x88'
 MovieSceneSkeletalAnimationParams:
   Attributes:
   - Name: Animation
     Offset: '0x0'
     Size: '0x8'
-    Type: Class AnimSequenceBase*
+    Type: class AnimSequenceBase*
   - Name: StartOffset
     Offset: '0x8'
     Size: '0x4'
@@ -502,7 +686,7 @@ MovieSceneSkeletalAnimationParams:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_H8D1L[0x3]
+  - Name: pad0x3_TBS3J[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -513,21 +697,33 @@ MovieSceneSkeletalAnimationParams:
   - Name: Weight
     Offset: '0x20'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   ClassSize: '0x98'
 MovieSceneSkeletalAnimationSectionTemplate:
   Attributes:
+  - Name: pad0x18_SW9VO[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: Params
     Offset: '0x18'
     Size: '0xa0'
-    Type: Struct MovieSceneSkeletalAnimationSectionTemplateParameters
+    Type: struct MovieSceneSkeletalAnimationSectionTemplateParameters
   - Name: AnimationSubtype
     Offset: '0xb8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_XW8PV[0x7]
+    Offset: '0xb9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0xc0'
 MovieSceneSkeletalAnimationSectionTemplateParameters:
   Attributes:
+  - Name: pad0x98_4ZDJ6[0x98]
+    Offset: '0x0'
+    Size: '0x98'
+    Type: char
   - Name: SectionStartTime
     Offset: '0x98'
     Size: '0x4'
@@ -538,68 +734,108 @@ MovieSceneSkeletalAnimationSectionTemplateParameters:
     Type: float
   ClassSize: '0xa0'
 MovieSceneSkeletalAnimationSharedTrack:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_FSXHU[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
 MovieSceneSlomoSectionTemplate:
   Attributes:
+  - Name: pad0x18_HNU9Q[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: SlomoCurve
     Offset: '0x18'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   ClassSize: '0x90'
 MovieSceneSpawnSectionTemplate:
   Attributes:
+  - Name: pad0x18_D8XWC[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: Curve
     Offset: '0x18'
     Size: '0x70'
-    Type: Struct IntegralCurve
+    Type: struct IntegralCurve
   ClassSize: '0x88'
 MovieSceneStringPropertySectionTemplate:
   Attributes:
+  - Name: pad0x18_5A2WL[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: PropertyData
     Offset: '0x18'
     Size: '0x20'
-    Type: Struct MovieScenePropertySectionData
+    Type: struct MovieScenePropertySectionData
   - Name: StringCurve
     Offset: '0x38'
     Size: '0x78'
-    Type: Struct StringCurve
+    Type: struct StringCurve
   ClassSize: '0xb0'
 MovieSceneVector2DKeyStruct:
   Attributes:
+  - Name: pad0x48_E0351[0x48]
+    Offset: '0x0'
+    Size: '0x48'
+    Type: char
   - Name: Vector
     Offset: '0x48'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   ClassSize: '0x50'
 MovieSceneVector4KeyStruct:
   Attributes:
+  - Name: pad0x50_QTMXB[0x50]
+    Offset: '0x0'
+    Size: '0x50'
+    Type: char
   - Name: Vector
     Offset: '0x50'
     Size: '0x10'
-    Type: Struct Vector4
+    Type: struct Vector4
   ClassSize: '0x60'
 MovieSceneVectorKeyStruct:
   Attributes:
+  - Name: pad0x48_M5I2U[0x48]
+    Offset: '0x0'
+    Size: '0x48'
+    Type: char
   - Name: Vector
     Offset: '0x48'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
+  - Name: pad0x4_JHY86[0x4]
+    Offset: '0x54'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x58'
 MovieSceneVectorKeyStructBase:
-  Attributes: []
+  Attributes:
+  - Name: pad0x48_U2KR0[0x48]
+    Offset: '0x0'
+    Size: '0x48'
+    Type: char
   ClassSize: '0x48'
 MovieSceneVectorPropertySectionTemplate:
   Attributes:
+  - Name: pad0x18_XIRC9[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: PropertyData
     Offset: '0x18'
     Size: '0x20'
-    Type: Struct MovieScenePropertySectionData
+    Type: struct MovieScenePropertySectionData
   - Name: ComponentCurves
     Offset: '0x38'
     Size: '0x78'
-    Type: Struct RichCurve
-  - Name: pad0x168_BUEUO[0x168]
+    Type: struct RichCurve
+  - Name: pad0x168_GDNIU[0x168]
     Offset: '0xb0'
     Size: '0x168'
     Type: char
@@ -607,13 +843,25 @@ MovieSceneVectorPropertySectionTemplate:
     Offset: '0x218'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_WVJRD[0x4]
+    Offset: '0x21c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x220'
 MovieSceneVisibilitySectionTemplate:
   Attributes:
+  - Name: pad0xa8_F4QFN[0xa8]
+    Offset: '0x0'
+    Size: '0xa8'
+    Type: char
   - Name: bTemporarilyHiddenInGame
     Offset: '0xa8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_BOKXD[0x7]
+    Offset: '0xa9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0xb0'
 ScalarParameterNameAndCurve:
   Attributes:
@@ -625,14 +873,14 @@ ScalarParameterNameAndCurve:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_NC01Z[0x4]
+  - Name: pad0x4_E4BU5[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
   - Name: ParameterCurve
     Offset: '0x10'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   ClassSize: '0x88'
 VectorParameterNameAndCurves:
   Attributes:
@@ -644,20 +892,20 @@ VectorParameterNameAndCurves:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_JY29D[0x4]
+  - Name: pad0x4_BJC52[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
   - Name: XCurve
     Offset: '0x10'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   - Name: YCurve
     Offset: '0x88'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   - Name: ZCurve
     Offset: '0x100'
     Size: '0x78'
-    Type: Struct RichCurve
+    Type: struct RichCurve
   ClassSize: '0x178'

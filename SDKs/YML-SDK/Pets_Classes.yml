@@ -23,7 +23,7 @@ BTDecorator_IsOccupyingHangoutSpotWithGivenId:
   - Name: SuccessIds
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<struct SuccessIds>
+    Type: TArray<struct HangoutSpotId>
   ClassSize: '0x10'
   FullSize: '0x78'
   InheritedSize: '0x68'
@@ -56,7 +56,7 @@ BTTask_AttachToHangout:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_265AU[0x4]
+  - Name: pad0x4_QKNBA[0x4]
     Offset: '0x8c'
     Size: '0x4'
     Type: char
@@ -76,7 +76,7 @@ BTTask_DetachFromHangout:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_JGE2I[0x4]
+  - Name: pad0x4_2Y7KB[0x4]
     Offset: '0x8c'
     Size: '0x4'
     Type: char
@@ -89,7 +89,7 @@ BTTask_EatFood:
   - Name: FeedingDataAsset
     Offset: '0x60'
     Size: '0x8'
-    Type: Class PetFeedingDataAsset*
+    Type: class PetFeedingDataAsset*
   ClassSize: '0x8'
   FullSize: '0x68'
   InheritedSize: '0x60'
@@ -121,7 +121,11 @@ BTTask_PetWaitForAnimationRoamingState:
   InheritedSize: '0x60'
   Super: BTTaskNode
 BTTask_ReactToOwner:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_BQVD5[0x8]
+    Offset: '0x60'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x68'
   InheritedSize: '0x60'
@@ -136,7 +140,7 @@ BTTask_ReactToThreat:
     Offset: '0x61'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_7ARG4[0x2]
+  - Name: pad0x2_V8EBE[0x2]
     Offset: '0x62'
     Size: '0x2'
     Type: char
@@ -148,7 +152,7 @@ BTTask_ReactToThreat:
     Offset: '0x68'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_D98DI[0x7]
+  - Name: pad0x7_JZ2PV[0x7]
     Offset: '0x69'
     Size: '0x7'
     Type: char
@@ -182,15 +186,15 @@ BTTask_SelectPetHangoutSpot:
     Offset: '0x88'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_TXZOU[0x3]
+  - Name: pad0x3_9JVHD[0x3]
     Offset: '0x89'
     Size: '0x3'
     Type: char
   - Name: ForcedId
     Offset: '0x8c'
     Size: '0x8'
-    Type: Struct HangoutSpotId
-  - Name: pad0x4_MTA10[0x4]
+    Type: struct HangoutSpotId
+  - Name: pad0x4_8O550[0x4]
     Offset: '0x94'
     Size: '0x4'
     Type: char
@@ -203,23 +207,23 @@ BTTask_SelectWanderFlyStrategy:
   - Name: WanderRange
     Offset: '0x88'
     Size: '0x30'
-    Type: Struct AIDataProviderFloatValue
+    Type: struct AIDataProviderFloatValue
   - Name: LowFlyRange
     Offset: '0xb8'
     Size: '0x30'
-    Type: Struct AIDataProviderFloatValue
+    Type: struct AIDataProviderFloatValue
   - Name: WanderStrategy
     Offset: '0xe8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: LowFlyStrategy
     Offset: '0xf0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: HighFlyStrategy
     Offset: '0xf8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x78'
   FullSize: '0x100'
   InheritedSize: '0x88'
@@ -230,7 +234,7 @@ BTTask_SetDebugPetStateDescriptor:
     Offset: '0x60'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_LKDCR[0x7]
+  - Name: pad0x7_IEAU6[0x7]
     Offset: '0x61'
     Size: '0x7'
     Type: char
@@ -245,7 +249,11 @@ BTTask_StopOccupyingHangoutSpot:
   InheritedSize: '0x88'
   Super: BTTask_BlackboardBase
 CannonSquashComponent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_D9DPP[0x18]
+    Offset: '0xc8'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0xe0'
   InheritedSize: '0xc8'
@@ -288,96 +296,96 @@ HangoutSpotSelectionInterface:
   Super: Interface
 PetAIController:
   Attributes:
-  - Name: pad0x20_SBNPD[0x20]
-    Offset: '0x960'
+  - Name: pad0x20_GUMXE[0x20]
+    Offset: '0x970'
     Size: '0x20'
     Type: char
   - Name: StrategyControllerMovementMods
-    Offset: '0x980'
-    Size: '0x10'
-    Type: TArray<struct StrategyControllerMovementMods>
-  - Name: DefaultControlRotationInterpSpeed
     Offset: '0x990'
+    Size: '0x10'
+    Type: TArray<struct AIStategyControllerMovementMod>
+  - Name: DefaultControlRotationInterpSpeed
+    Offset: '0x9a0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_NUX5N[0x4]
-    Offset: '0x994'
+  - Name: pad0x4_C7F1L[0x4]
+    Offset: '0x9a4'
     Size: '0x4'
     Type: char
   - Name: DefaultStrategy
-    Offset: '0x998'
-    Size: '0x8'
-    Type: class
-  - Name: ReactMappings
-    Offset: '0x9a0'
-    Size: '0x8'
-    Type: Class ReactStateMappingsDataAsset*
-  - Name: pad0x8_P7OSZ[0x8]
     Offset: '0x9a8'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: ReactMappings
+    Offset: '0x9b0'
+    Size: '0x8'
+    Type: class ReactStateMappingsDataAsset*
+  - Name: pad0x8_L061V[0x8]
+    Offset: '0x9b8'
     Size: '0x8'
     Type: char
   - Name: HangoutSpotSelectorComponent
-    Offset: '0x9b0'
-    Size: '0x8'
-    Type: Class PetHangoutSpotSelectorComponent*
-  - Name: ForcedHangoutSpotComponent
-    Offset: '0x9b8'
-    Size: '0x8'
-    Type: Class PetHangoutSpotComponent*
-  - Name: DefaultBlackboardAsset
     Offset: '0x9c0'
     Size: '0x8'
-    Type: Class BlackboardData*
-  - Name: DefaultTree
+    Type: class PetHangoutSpotSelectorComponent*
+  - Name: ForcedHangoutSpotComponent
     Offset: '0x9c8'
     Size: '0x8'
-    Type: Class BehaviorTree*
-  - Name: HangoutTree
+    Type: class PetHangoutSpotComponent*
+  - Name: DefaultBlackboardAsset
     Offset: '0x9d0'
     Size: '0x8'
-    Type: Class BehaviorTree*
-  - Name: IdleTree
+    Type: class BlackboardData*
+  - Name: DefaultTree
     Offset: '0x9d8'
     Size: '0x8'
-    Type: Class BehaviorTree*
-  - Name: MaximumReactRange
+    Type: class BehaviorTree*
+  - Name: HangoutTree
     Offset: '0x9e0'
-    Size: '0x4'
-    Type: float
-  - Name: pad0x4_5LZ9S[0x4]
-    Offset: '0x9e4'
-    Size: '0x4'
-    Type: char
-  - Name: DangerComponent
+    Size: '0x8'
+    Type: class BehaviorTree*
+  - Name: IdleTree
     Offset: '0x9e8'
     Size: '0x8'
-    Type: Class PetDangerComponent*
-  - Name: MinAgentHalfHeightPctOverride
+    Type: class BehaviorTree*
+  - Name: MaximumReactRange
     Offset: '0x9f0'
     Size: '0x4'
     Type: float
-  - Name: pad0x54_4PG4Z[0x54]
+  - Name: pad0x4_JL61X[0x4]
     Offset: '0x9f4'
+    Size: '0x4'
+    Type: char
+  - Name: DangerComponent
+    Offset: '0x9f8'
+    Size: '0x8'
+    Type: class PetDangerComponent*
+  - Name: MinAgentHalfHeightPctOverride
+    Offset: '0xa00'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x54_VO749[0x54]
+    Offset: '0xa04'
     Size: '0x54'
     Type: char
   ClassSize: '0xe8'
-  FullSize: '0xa48'
-  InheritedSize: '0x960'
+  FullSize: '0xa58'
+  InheritedSize: '0x970'
   Super: AthenaAIController
 PetCustomisationOverrideDataAsset:
   Attributes:
   - Name: AnimationOverrideId
     Offset: '0x28'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: FiredFromActorSFX
     Offset: '0x30'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: DebugMenuName
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -387,7 +395,7 @@ PetCustomisationOverrideMappingsDataAsset:
   - Name: MappingEntries
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct MappingEntries>
+    Type: TArray<struct PetCustomiationOverrideMappingEntry>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -397,8 +405,8 @@ PetDangerComponent:
   - Name: DangerDataAsset
     Offset: '0xc8'
     Size: '0x8'
-    Type: Class PetDangerDataAsset*
-  - Name: pad0xd0_EL3FU[0xd0]
+    Type: class PetDangerDataAsset*
+  - Name: pad0xd0_FU6ER[0xd0]
     Offset: '0xd0'
     Size: '0xd0'
     Type: char
@@ -411,7 +419,7 @@ PetDangerDataAsset:
   - Name: KnownHearingDangers
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct KnownHearingDangers>
+    Type: TArray<struct PetDangerHearingThreat>
   - Name: MinChangeAverageThreatLocationToUpdate
     Offset: '0x38'
     Size: '0x4'
@@ -433,11 +441,11 @@ PetDesc:
   - Name: PetSpawnParams
     Offset: '0x120'
     Size: '0x8'
-    Type: Class PetSpawnParamsDataAsset*
+    Type: class PetSpawnParamsDataAsset*
   - Name: PreviewPetClass
     Offset: '0x128'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x10'
   FullSize: '0x130'
   InheritedSize: '0x120'
@@ -447,7 +455,7 @@ PetFeedingDataAsset:
   - Name: PetFeedingParams
     Offset: '0x28'
     Size: '0x38'
-    Type: Struct PetFeedingParams
+    Type: struct PetFeedingParams
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
@@ -463,12 +471,12 @@ PetHangoutSpotComponent:
   - Name: HangoutSpots
     Offset: '0x2e0'
     Size: '0x10'
-    Type: TArray<struct HangoutSpots>
+    Type: TArray<struct HangoutSpotPosition>
   - Name: HasLowerDeckFloodThreshold
     Offset: '0x2f0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_EY14W[0x3]
+  - Name: pad0x3_QM9P1[0x3]
     Offset: '0x2f1'
     Size: '0x3'
     Type: char
@@ -480,7 +488,7 @@ PetHangoutSpotComponent:
     Offset: '0x2f8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_RRESL[0x3]
+  - Name: pad0x3_C6GH7[0x3]
     Offset: '0x2f9'
     Size: '0x3'
     Type: char
@@ -496,7 +504,7 @@ PetHangoutSpotComponent:
     Offset: '0x304'
     Size: '0x1'
     Type: bool
-  - Name: pad0x23_VGK57[0x23]
+  - Name: pad0x23_IZNOY[0x23]
     Offset: '0x305'
     Size: '0x23'
     Type: char
@@ -504,7 +512,7 @@ PetHangoutSpotComponent:
     Offset: '0x328'
     Size: '0x10'
     Type: TArray<class PetPerchComponent*>
-  - Name: pad0x10_XAAD7[0x10]
+  - Name: pad0x10_D9023[0x10]
     Offset: '0x338'
     Size: '0x10'
     Type: char
@@ -516,15 +524,15 @@ PetHangoutSpotComponent:
     Offset: '0x349'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1e_6JHJZ[0x1e]
+  - Name: pad0x1e_4EB52[0x1e]
     Offset: '0x34a'
     Size: '0x1e'
     Type: char
   - Name: PetHangoutSpotsDataAsset
     Offset: '0x368'
     Size: '0x8'
-    Type: Class PetHangoutSpotsDataAsset*
-  - Name: pad0x10_I10ZI[0x10]
+    Type: class PetHangoutSpotsDataAsset*
+  - Name: pad0x10_L7KDV[0x10]
     Offset: '0x370'
     Size: '0x10'
     Type: char
@@ -537,20 +545,20 @@ PetHangoutSpotSelectorComponent:
   - Name: HangoutSpotPositionComponent
     Offset: '0xc8'
     Size: '0x8'
-    Type: Class PetHangoutSpotComponent*
+    Type: class PetHangoutSpotComponent*
   - Name: HangoutParamsDataAsset
     Offset: '0xd0'
     Size: '0x8'
-    Type: Class PetHangoutSpotsDataAsset*
-  - Name: pad0x70_NJPD4[0x70]
+    Type: class PetHangoutSpotsDataAsset*
+  - Name: pad0x70_UCAQM[0x70]
     Offset: '0xd8'
     Size: '0x70'
     Type: char
   - Name: PetType_Cached
     Offset: '0x148'
     Size: '0x8'
-    Type: class
-  - Name: pad0x168_9QBAZ[0x168]
+    Type: class UClass*
+  - Name: pad0x168_EHLTU[0x168]
     Offset: '0x150'
     Size: '0x168'
     Type: char
@@ -576,14 +584,14 @@ PetIdleMovementInterface:
   Super: Interface
 PetItemInfo:
   Attributes:
-  - Name: pad0x20_2NFMG[0x20]
+  - Name: pad0x20_NWJ13[0x20]
     Offset: '0x528'
     Size: '0x20'
     Type: char
   - Name: SpawnedForShip
     Offset: '0x548'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: DropTraceDistance
     Offset: '0x550'
     Size: '0x4'
@@ -596,23 +604,23 @@ PetItemInfo:
     Offset: '0x558'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_GGG2E[0x7]
+  - Name: pad0x7_U152S[0x7]
     Offset: '0x559'
     Size: '0x7'
     Type: char
   - Name: PetOwner
     Offset: '0x560'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: PetCustomisation
     Offset: '0x568'
     Size: '0x28'
-    Type: Struct PetCustomisation
+    Type: struct PetCustomisation
   - Name: PetUGCNameComponent
     Offset: '0x590'
     Size: '0x8'
-    Type: Class PetUGCNameComponent*
-  - Name: pad0x10_YHAF0[0x10]
+    Type: class PetUGCNameComponent*
+  - Name: pad0x10_1YK79[0x10]
     Offset: '0x598'
     Size: '0x10'
     Type: char
@@ -631,7 +639,7 @@ PetListingDataAsset:
   - Name: Entries
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct Entries>
+    Type: TArray<struct PetListingTypeEntry>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -650,14 +658,14 @@ PetMovementModifierSettingsInterface:
   Super: Interface
 PetOwnerComponent:
   Attributes:
-  - Name: pad0x18_CL2FY[0x18]
+  - Name: pad0x18_8CQG3[0x18]
     Offset: '0xc8'
     Size: '0x18'
     Type: char
   - Name: PetInfo
     Offset: '0xe0'
     Size: '0x8'
-    Type: Class ItemInfo*
+    Type: class ItemInfo*
   ClassSize: '0x20'
   FullSize: '0xe8'
   InheritedSize: '0xc8'
@@ -682,45 +690,45 @@ PetPartCustomisationInterface:
   Super: Interface
 PetPerchComponent:
   Attributes:
-  - Name: pad0x18_4BB9B[0x18]
-    Offset: '0x128'
+  - Name: pad0x18_0PNMU[0x18]
+    Offset: '0x138'
     Size: '0x18'
     Type: char
   - Name: AllowedPetTypes
-    Offset: '0x140'
+    Offset: '0x150'
     Size: '0x10'
     Type: TArray<class Class*>
   - Name: HangoutSpotIndex
-    Offset: '0x150'
+    Offset: '0x160'
     Size: '0x4'
     Type: int
   - Name: HangoutSpotName
-    Offset: '0x154'
+    Offset: '0x164'
     Size: '0x8'
     Type: struct FName
   - Name: InteractionPointLocation
-    Offset: '0x15c'
+    Offset: '0x16c'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: Enabled
-    Offset: '0x168'
+    Offset: '0x178'
     Size: '0x1'
     Type: bool
   - Name: BlocksPetEmoteReactions
-    Offset: '0x169'
+    Offset: '0x179'
     Size: '0x1'
     Type: bool
   - Name: IgnorePickupFromHangoutTooltipDisplayOffset
-    Offset: '0x16a'
+    Offset: '0x17a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_PEY71[0x5]
-    Offset: '0x16b'
+  - Name: pad0x5_CY95E[0x5]
+    Offset: '0x17b'
     Size: '0x5'
     Type: char
   ClassSize: '0x48'
-  FullSize: '0x170'
-  InheritedSize: '0x128'
+  FullSize: '0x180'
+  InheritedSize: '0x138'
   Super: InteractableComponent
 PetReactInterface:
   Attributes: []
@@ -739,38 +747,38 @@ PetSpawnParamsDataAsset:
   - Name: PetClassID
     Offset: '0x28'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: TreeToRun
     Offset: '0x30'
     Size: '0x8'
-    Type: Class BehaviorTree*
+    Type: class BehaviorTree*
   - Name: SpawnQueryForLand
     Offset: '0x58'
     Size: '0x8'
-    Type: Class EnvQuery*
+    Type: class EnvQuery*
   - Name: SpawnQueryForShip
     Offset: '0x60'
     Size: '0x8'
-    Type: Class EnvQuery*
+    Type: class EnvQuery*
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'
   Super: DataAsset
 PetUGCNameComponent:
   Attributes:
-  - Name: pad0x18_RH5RO[0x18]
+  - Name: pad0x18_HMYBZ[0x18]
     Offset: '0xc8'
     Size: '0x18'
     Type: char
   - Name: DefaultPetName
     Offset: '0xe0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: CustomisedPetName
     Offset: '0xf0'
     Size: '0x10'
-    Type: Struct FString
-  - Name: pad0x18_KZILH[0x18]
+    Type: struct FString
+  - Name: pad0x18_MJ00T[0x18]
     Offset: '0x100'
     Size: '0x18'
     Type: char
@@ -786,22 +794,22 @@ PetUGCNameInterface:
   Super: Interface
 PetsService:
   Attributes:
-  - Name: pad0x60_JDKQO[0x60]
+  - Name: pad0x60_DD3GL[0x60]
     Offset: '0x28'
     Size: '0x60'
     Type: char
   - Name: Spawner
     Offset: '0x88'
     Size: '0x8'
-    Type: Class AIPetsOnDemandSpawner*
-  - Name: pad0x18_D0V2G[0x18]
+    Type: class AIPetsOnDemandSpawner*
+  - Name: pad0x18_ZH1C1[0x18]
     Offset: '0x90'
     Size: '0x18'
     Type: char
   - Name: PetsServiceParams
     Offset: '0xa8'
     Size: '0x38'
-    Type: Struct PetsServiceParams
+    Type: struct PetsServiceParams
   - Name: OwnersToRemove
     Offset: '0xe0'
     Size: '0x10'
@@ -822,15 +830,15 @@ PetsService:
     Offset: '0x120'
     Size: '0x10'
     Type: TArray<class Actor*>
-  - Name: pad0x1a8_42NFW[0x1a8]
+  - Name: pad0x1a8_4DTEA[0x1a8]
     Offset: '0x130'
     Size: '0x1a8'
     Type: char
   - Name: PetHangoutDataAsset
     Offset: '0x2d8'
     Size: '0x8'
-    Type: Class PetHangoutSpotsDataAsset*
-  - Name: pad0x50_NIKXM[0x50]
+    Type: class PetHangoutSpotsDataAsset*
+  - Name: pad0x50_HVYHN[0x50]
     Offset: '0x2e0'
     Size: '0x50'
     Type: char
@@ -849,7 +857,7 @@ PetsServiceParamsDataAsset:
   - Name: Params
     Offset: '0x28'
     Size: '0x38'
-    Type: Struct PetsServiceParams
+    Type: struct PetsServiceParams
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
@@ -859,19 +867,19 @@ PetsSettings:
   - Name: PetHangoutSpotsDataAsset
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: PetListingDataAsset
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: PetsServiceParamsDataAsset
     Offset: '0x48'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: PetSpawnDefinitionsDataAsset
     Offset: '0x58'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: ExcludedStatesForRoamingAssetGeneration
     Offset: '0x68'
     Size: '0x10'
@@ -891,14 +899,14 @@ ReactStateMappingsDataAsset:
   - Name: ReactMappings
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct ReactMappings>
+    Type: TArray<struct ReactStateMapping>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 WieldablePet:
   Attributes:
-  - Name: pad0x38_1WUU5[0x38]
+  - Name: pad0x38_NIMUB[0x38]
     Offset: '0x7e0'
     Size: '0x38'
     Type: char
@@ -906,87 +914,87 @@ WieldablePet:
     Offset: '0x818'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_995U0[0x4]
+  - Name: pad0x4_2W2XV[0x4]
     Offset: '0x81c'
     Size: '0x4'
     Type: char
   - Name: WieldablePetComponent
     Offset: '0x820'
     Size: '0x8'
-    Type: Class WieldablePetComponent*
+    Type: class WieldablePetComponent*
   - Name: AIPartsRetrievalComponent
     Offset: '0x828'
     Size: '0x8'
-    Type: Class AIPartsRetrievalComponent*
+    Type: class AIPartsRetrievalComponent*
   - Name: PetPartCustomisationComponent
     Offset: '0x830'
     Size: '0x8'
-    Type: Class PetPartCustomisationComponent*
+    Type: class PetPartCustomisationComponent*
   - Name: AnimNotifyWwiseEmitterComponent
     Offset: '0x838'
     Size: '0x8'
-    Type: Class AnimNotifyWwiseEmitterComponent*
+    Type: class AnimNotifyWwiseEmitterComponent*
   - Name: WaterExposureComponent
     Offset: '0x840'
     Size: '0x8'
-    Type: Class WaterExposureComponent*
+    Type: class WaterExposureComponent*
   - Name: UsableWieldableComponent
     Offset: '0x848'
     Size: '0x8'
-    Type: Class UsableWieldableComponent*
+    Type: class UsableWieldableComponent*
   - Name: PickupableComponent
     Offset: '0x850'
     Size: '0x8'
-    Type: Class PickupableComponent*
+    Type: class PickupableComponent*
   - Name: WieldableInteractableComponent
     Offset: '0x858'
     Size: '0x8'
-    Type: Class WieldableInteractableComponent*
+    Type: class WieldableInteractableComponent*
   - Name: CleanlinessComponent
     Offset: '0x860'
     Size: '0x8'
-    Type: Class CleanlinessComponent*
+    Type: class CleanlinessComponent*
   - Name: LightWeightStatusEffectManagerComponent
     Offset: '0x868'
     Size: '0x8'
-    Type: Class LightWeightStatusEffectManagerComponent*
+    Type: class LightWeightStatusEffectManagerComponent*
   - Name: PetDitherComponent
     Offset: '0x870'
     Size: '0x8'
-    Type: Class PetDitherComponent*
+    Type: class PetDitherComponent*
   - Name: PetOwner
     Offset: '0x878'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: FeedingComponent
     Offset: '0x880'
     Size: '0x8'
-    Type: Class FeedingComponent*
+    Type: class FeedingComponent*
   - Name: SicknessComponent
     Offset: '0x888'
     Size: '0x8'
-    Type: Class PetSicknessComponent*
+    Type: class PetSicknessComponent*
   - Name: HungerComponent
     Offset: '0x890'
     Size: '0x8'
-    Type: Class WieldablePetHungerComponent*
+    Type: class WieldablePetHungerComponent*
   - Name: StarvingComponent
     Offset: '0x898'
     Size: '0x8'
-    Type: Class StarvingComponent*
+    Type: class StarvingComponent*
   - Name: TelemetryComponent
     Offset: '0x8a0'
     Size: '0x8'
-    Type: Class PetTelemetryComponent*
+    Type: class PetTelemetryComponent*
   - Name: AnimationDataStoreComponent
     Offset: '0x8a8'
     Size: '0x8'
-    Type: Class AnimationDataStoreComponent*
+    Type: class AnimationDataStoreComponent*
   - Name: SubmergedStrokingEnabled
     Offset: '0x8b0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6f_BGCWD[0x6f]
+  - Name: pad0x6f_78LQQ[0x6f]
     Offset: '0x8b1'
     Size: '0x6f'
     Type: char
@@ -998,7 +1006,7 @@ WieldablePet:
     Offset: '0x921'
     Size: '0x1'
     Type: byte
-  - Name: pad0xe_CD3Z9[0xe]
+  - Name: pad0xe_MUSMO[0xe]
     Offset: '0x922'
     Size: '0xe'
     Type: char
@@ -1007,7 +1015,11 @@ WieldablePet:
   InheritedSize: '0x7e0'
   Super: SkeletalMeshWieldableItem
 WieldablePetAnimNotifyWwiseEmitterComponent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_1O70G[0x10]
+    Offset: '0x310'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x320'
   InheritedSize: '0x310'
@@ -1017,8 +1029,8 @@ WieldablePetComponent:
   - Name: WieldablePetComponentData
     Offset: '0xc8'
     Size: '0x8'
-    Type: Class WieldablePetComponentDataAsset*
-  - Name: pad0x80_GT9J4[0x80]
+    Type: class WieldablePetComponentDataAsset*
+  - Name: pad0x80_8MESV[0x80]
     Offset: '0xd0'
     Size: '0x80'
     Type: char
@@ -1031,27 +1043,27 @@ WieldablePetComponentDataAsset:
   - Name: FriendlyTimeUntilEscape
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: NormalTimeUntilEscape
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: SubmergedTimeUntilEscape
     Offset: '0x48'
     Size: '0x10'
-    Type: Struct FloatRange
+    Type: struct FloatRange
   - Name: DamageToOwnerDropThreshold
     Offset: '0x58'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_DW3PD[0x4]
+  - Name: pad0x4_G7KYI[0x4]
     Offset: '0x5c'
     Size: '0x4'
     Type: char
   - Name: DropTimeouts
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<struct DropTimeouts>
+    Type: TArray<struct WieldablePetDropTimeout>
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
@@ -1061,24 +1073,24 @@ WieldablePetHungerComponent:
   - Name: HungerData
     Offset: '0xc8'
     Size: '0x8'
-    Type: Class WieldablePetHungerDataAsset*
-  - Name: pad0x28_SKCPE[0x28]
+    Type: class WieldablePetHungerDataAsset*
+  - Name: pad0x28_ZEOU0[0x28]
     Offset: '0xd0'
     Size: '0x28'
     Type: char
   - Name: CachedOverlappingActors
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<struct CachedOverlappingActors>
+    Type: TArray<struct OverlapResult>
   - Name: ActiveFoodSources
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<struct ActiveFoodSources>
+    Type: TArray<struct WieldablePetFoodSourceEntry>
   - Name: FoodSourcesToRemove
     Offset: '0x118'
     Size: '0x10'
-    Type: TArray<struct FoodSourcesToRemove>
-  - Name: pad0x50_7PJG0[0x50]
+    Type: TArray<struct WieldablePetFoodSourceEntry>
+  - Name: pad0x50_0HVJ8[0x50]
     Offset: '0x128'
     Size: '0x50'
     Type: char
@@ -1099,24 +1111,24 @@ WieldablePetHungerDataAsset:
   - Name: EatingAnimData
     Offset: '0x30'
     Size: '0x8'
-    Type: Struct WieldablePetHungerAnimationData
+    Type: struct WieldablePetHungerAnimationData
   - Name: FedAnimData
     Offset: '0x38'
     Size: '0x8'
-    Type: Struct WieldablePetHungerAnimationData
+    Type: struct WieldablePetHungerAnimationData
   - Name: SickAnimData
     Offset: '0x40'
     Size: '0x8'
-    Type: Struct WieldablePetHungerAnimationData
+    Type: struct WieldablePetHungerAnimationData
   - Name: RefuseAnimData
     Offset: '0x48'
     Size: '0x8'
-    Type: Struct WieldablePetHungerAnimationData
+    Type: struct WieldablePetHungerAnimationData
   - Name: CollisionChannel
     Offset: '0x50'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_Z4D6I[0x7]
+  - Name: pad0x7_KZJ9G[0x7]
     Offset: '0x51'
     Size: '0x7'
     Type: char

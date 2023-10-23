@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 class BP_TaleBookProxy_Shroudbreaker_AdditionalPuzzles_C: public Actor
 {
 public:
-	Class PhasedActorComponent*                                  None;                                              // 0x3c8(0x8)
-	Class SceneComponent*                                        None;                                              // 0x3d0(0x8)
+	class PhasedActorComponent*                                  PhasedBook;                                        // 0x3c8(0x8)
+	class SceneComponent*                                        DefaultSceneRoot1;                                 // 0x3d0(0x8)
 };
 
 

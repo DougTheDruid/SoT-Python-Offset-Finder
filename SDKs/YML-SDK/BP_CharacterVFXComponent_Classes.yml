@@ -5,31 +5,31 @@ BP_CharacterVFXComponent_C:
   - Name: UberGraphFrame
     Offset: '0xe0'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
-  - Name: pad0x16e_4AAER[0x16e]
+    Type: struct PointerToUberGraphFrame
+  - Name: pad0x1a8_HCI58[0x1a8]
     Offset: '0xe8'
-    Size: '0x16e'
+    Size: '0x1a8'
     Type: char
   - Name: EnterWaterEvent
     Offset: '0xe8'
     Size: '0x58'
-    Type: Struct ObjectMessagingHandle
+    Type: struct ObjectMessagingHandle
   - Name: UnderwaterStateChanged
     Offset: '0x140'
     Size: '0x58'
-    Type: Struct ObjectMessagingHandle
+    Type: struct ObjectMessagingHandle
   - Name: Splash Emitter
     Offset: '0x198'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Type: class ParticleSystemComponent*
   - Name: Large Foot Splash
     Offset: '0x1a0'
     Size: '0x8'
-    Type: Class ParticleSystem*
+    Type: class ParticleSystem*
   - Name: Small Foot Splash
     Offset: '0x1a8'
     Size: '0x8'
-    Type: Class ParticleSystem*
+    Type: class ParticleSystem*
   - Name: Threshold for run
     Offset: '0x1b0'
     Size: '0x4'
@@ -41,32 +41,32 @@ BP_CharacterVFXComponent_C:
   - Name: FallingIntoWaterHandle
     Offset: '0x1b8'
     Size: '0x58'
-    Type: Struct ObjectMessagingHandle
+    Type: struct ObjectMessagingHandle
   - Name: Large Falling Splash
     Offset: '0x210'
     Size: '0x8'
-    Type: Class ParticleSystem*
+    Type: class ParticleSystem*
   - Name: PlayerViewUnderWaterHandle
     Offset: '0x218'
     Size: '0x58'
-    Type: Struct ObjectMessagingHandle
+    Type: struct ObjectMessagingHandle
   - Name: EnterShipEventHandle
     Offset: '0x270'
     Size: '0x58'
-    Type: Struct ObjectMessagingHandle
+    Type: struct ObjectMessagingHandle
   - Name: ExitShipEventHandle
     Offset: '0x2c8'
     Size: '0x58'
-    Type: Struct ObjectMessagingHandle
+    Type: struct ObjectMessagingHandle
   - Name: WindOffsetFromShip
     Offset: '0x320'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: DEBUG_WindActive
     Offset: '0x32c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_8ZEJB[0x3]
+  - Name: pad0x3_VBO7Y[0x3]
     Offset: '0x32d'
     Size: '0x3'
     Type: char
@@ -74,26 +74,26 @@ BP_CharacterVFXComponent_C:
     Offset: '0x330'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_FQRJB[0x4]
+  - Name: pad0x4_KBSJA[0x4]
     Offset: '0x334'
     Size: '0x4'
     Type: char
   - Name: WindDirectionChangedHandle
     Offset: '0x338'
     Size: '0x58'
-    Type: Struct ObjectMessagingHandle
+    Type: struct ObjectMessagingHandle
   - Name: vfx_particle_underwater_ambient
     Offset: '0x390'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Type: class ParticleSystemComponent*
   - Name: vfx_player_underwater_ambient
     Offset: '0x398'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Type: class ParticleSystemComponent*
   - Name: FeatureName
     Offset: '0x3a0'
     Size: '0xc'
-    Type: Struct FeatureFlag
+    Type: struct FeatureFlag
   ClassSize: '0x2cc'
   FullSize: '0x3ac'
   InheritedSize: '0xe0'

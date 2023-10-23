@@ -1,57 +1,57 @@
 {
   "BP_WarMapVoteSingle_C": {
     "Super": "WarMapVoteInteractionActor",
-    "FullSize": "0x680",
-    "InheritedSize": "0x640",
+    "FullSize": "0x688",
+    "InheritedSize": "0x648",
     "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "VoteIndicator4",
-        "Type": "Class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x640"
-      },
-      {
-        "Name": "VoteIndicator3",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x648"
       },
       {
-        "Name": "VoteIndicator2",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "VoteIndicator3",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x650"
       },
       {
-        "Name": "VoteIndicator1",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "VoteIndicator2",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x658"
       },
       {
-        "Name": "VoteAudio",
-        "Type": "Class VoteAudioComponent*",
+        "Name": "VoteIndicator1",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x660"
       },
       {
-        "Name": "WarMapInteractionVote",
-        "Type": "Class WarMapInteractionVoteComponent*",
+        "Name": "VoteAudio",
+        "Type": "class VoteAudioComponent*",
         "Size": "0x8",
         "Offset": "0x668"
       },
       {
-        "Name": "StaticMeshVoteVisualiser",
-        "Type": "Class StaticMeshVoteVisualiserComponent*",
+        "Name": "WarMapInteractionVote",
+        "Type": "class WarMapInteractionVoteComponent*",
         "Size": "0x8",
         "Offset": "0x670"
       },
       {
-        "Name": "ActionRules",
-        "Type": "Class ActionRulesComponent*",
+        "Name": "StaticMeshVoteVisualiser",
+        "Type": "class StaticMeshVoteVisualiserComponent*",
         "Size": "0x8",
         "Offset": "0x678"
+      },
+      {
+        "Name": "ActionRules",
+        "Type": "class ActionRulesComponent*",
+        "Size": "0x8",
+        "Offset": "0x680"
       }
     ]
   },

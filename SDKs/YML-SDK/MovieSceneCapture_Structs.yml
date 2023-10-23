@@ -8,7 +8,11 @@ CaptureProtocolID:
     Type: struct FName
   ClassSize: '0x8'
 CaptureResolution:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_LL2R9[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
 CompositionGraphCapturePasses:
   Attributes:
@@ -22,23 +26,23 @@ MovieSceneCaptureSettings:
   - Name: OutputDirectory
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct DirectoryPath
+    Type: struct DirectoryPath
   - Name: bCreateTemporaryCopiesOfLevels
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_U3D3U[0x7]
+  - Name: pad0x7_1YX06[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
   - Name: GameModeOverride
     Offset: '0x18'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: OutputFormat
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: bOverwriteExisting
     Offset: '0x30'
     Size: '0x1'
@@ -47,7 +51,7 @@ MovieSceneCaptureSettings:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_Q5BKW[0x2]
+  - Name: pad0x2_OVWUQ[0x2]
     Offset: '0x32'
     Size: '0x2'
     Type: char
@@ -59,7 +63,7 @@ MovieSceneCaptureSettings:
     Offset: '0x38'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_7ANUN[0x3]
+  - Name: pad0x3_9AYOP[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -70,7 +74,7 @@ MovieSceneCaptureSettings:
   - Name: Resolution
     Offset: '0x40'
     Size: '0x8'
-    Type: Struct CaptureResolution
+    Type: struct CaptureResolution
   - Name: bEnableTextureStreaming
     Offset: '0x48'
     Size: '0x1'
@@ -99,4 +103,8 @@ MovieSceneCaptureSettings:
     Offset: '0x4e'
     Size: '0x1'
     Type: bool
+  - Name: pad0x1_T7AU9[0x1]
+    Offset: '0x4f'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x50'

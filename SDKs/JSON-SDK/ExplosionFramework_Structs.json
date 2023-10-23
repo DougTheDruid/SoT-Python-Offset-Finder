@@ -4,9 +4,15 @@
     "Attributes": [
       {
         "Name": "DamagerType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_FW1WX[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -15,7 +21,7 @@
     "Attributes": [
       {
         "Name": "IgnitedActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -23,14 +29,21 @@
   },
   "EventOnExploded": {
     "ClassSize": "0xc",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0xc_ET8JN[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventExplosionOverlap": {
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DamagerType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       }

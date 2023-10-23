@@ -8,64 +8,71 @@
   },
   "WarMapInteractionComponent": {
     "Super": "InteractableComponent",
-    "FullSize": "0x1c8",
-    "InheritedSize": "0x128",
+    "FullSize": "0x1d8",
+    "InheritedSize": "0x138",
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0x8_J1MT3[0x8]",
+        "Name": "pad0x8_XY05Y[0x8]",
         "Type": "char",
         "Size": "0x8",
-        "Offset": "0x128"
+        "Offset": "0x138"
       },
       {
         "Name": "OpenMapInteractionText",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x130"
+        "Offset": "0x140"
       },
       {
         "Name": "CannotOpenMapInteractionText",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x168"
+        "Offset": "0x178"
       },
       {
         "Name": "OpenMapInputId",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x1a0"
+        "Offset": "0x1b0"
       },
       {
-        "Name": "pad0x20_LGJ8A[0x20]",
+        "Name": "pad0x20_YCV4N[0x20]",
         "Type": "char",
         "Size": "0x20",
-        "Offset": "0x1a8"
+        "Offset": "0x1b8"
       }
     ]
   },
   "WarMapInteractionVoteComponent": {
     "Super": "InlineVotingInteractionComponent",
-    "FullSize": "0x160",
-    "InheritedSize": "0x150",
+    "FullSize": "0x170",
+    "InheritedSize": "0x160",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_XG62U[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x160"
+      }
+    ]
   },
   "WarMapVoteConsumerBase": {
     "Super": "VoteConsumerInlineBase",
-    "FullSize": "0x118",
+    "FullSize": "0x110",
     "InheritedSize": "0x30",
-    "ClassSize": "0xe8",
+    "ClassSize": "0xe0",
     "Attributes": [
       {
         "Name": "Validator",
-        "Type": "Class WarMapVoteValidatorBase*",
+        "Type": "class WarMapVoteValidatorBase*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "OwningActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x38"
       },
@@ -76,7 +83,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x67_U49HW[0x67]",
+        "Name": "pad0x67_JIXEB[0x67]",
         "Type": "char",
         "Size": "0x67",
         "Offset": "0x41"
@@ -88,115 +95,109 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "RpcDispatcher",
-        "Type": "Class BoxedRpcDispatcherComponent*",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "pad0x58_BZGBC[0x58]",
+        "Name": "pad0x58_PCA2R[0x58]",
         "Type": "char",
         "Size": "0x58",
-        "Offset": "0xc0"
+        "Offset": "0xb8"
       }
     ]
   },
   "StartWarMapVoyageVoteConsumer": {
     "Super": "WarMapVoteConsumerBase",
-    "FullSize": "0x2d8",
-    "InheritedSize": "0x118",
+    "FullSize": "0x2d0",
+    "InheritedSize": "0x110",
     "ClassSize": "0x1c0",
     "Attributes": [
       {
         "Name": "WarMapVotingCastVote",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x118"
+        "Offset": "0x110"
       },
       {
         "Name": "WarMapVotingCantVote",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x150"
+        "Offset": "0x148"
       },
       {
         "Name": "WarMapVotingRemoveVote",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x188"
+        "Offset": "0x180"
       },
       {
         "Name": "WarMapVotingCantRemoveVote",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x1c0"
+        "Offset": "0x1b8"
       },
       {
         "Name": "WarMapVotingCantVoteReasonCrewOnInvasion",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x1f8"
+        "Offset": "0x1f0"
       },
       {
         "Name": "WarMapVotingCantVoteReasonNearbyRivalShip",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x230"
+        "Offset": "0x228"
       },
       {
         "Name": "WarMapVotingCantVoteReasonCrewIsInPVEEncounter",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x268"
+        "Offset": "0x260"
       },
       {
         "Name": "WarMapVotingCantVoteReasonInTunnelOfTheDamned",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x2a0"
+        "Offset": "0x298"
       }
     ]
   },
   "StopWarMapVoyageVoteConsumer": {
     "Super": "WarMapVoteConsumerBase",
-    "FullSize": "0x1f8",
-    "InheritedSize": "0x118",
+    "FullSize": "0x1f0",
+    "InheritedSize": "0x110",
     "ClassSize": "0xe0",
     "Attributes": [
       {
         "Name": "WarMapVotingCastVote",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x118"
+        "Offset": "0x110"
       },
       {
         "Name": "WarMapVotingCantVote",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x150"
+        "Offset": "0x148"
       },
       {
         "Name": "WarMapVotingRemoveVote",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x188"
+        "Offset": "0x180"
       },
       {
         "Name": "WarMapVotingCantRemoveVote",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x1c0"
+        "Offset": "0x1b8"
       }
     ]
   },
   "WarMapVoteInteractionActor": {
     "Super": "Actor",
-    "FullSize": "0x640",
+    "FullSize": "0x648",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x278",
+    "ClassSize": "0x280",
     "Attributes": [
       {
-        "Name": "pad0x10_2RSTQ[0x10]",
+        "Name": "pad0x10_IKR4N[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -209,39 +210,45 @@
       },
       {
         "Name": "TooltipUIScreenSpaceOffsetRatio",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x3dc"
       },
       {
-        "Name": "pad0x4_9P57A[0x4]",
+        "Name": "pad0x4_8OMU8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3e4"
       },
       {
         "Name": "InvasionActiveMesh",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
-        "Name": "FactionInfos",
-        "Type": "TArray<struct FactionInfos>",
-        "Size": "0x10",
+        "Name": "BoxedRpcDispatcherComponent",
+        "Type": "class BoxedRpcDispatcherComponent*",
+        "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
-        "Name": "FactionInfoPtrs",
-        "Type": "TArray<struct FactionInfoPtrs>",
+        "Name": "FactionInfos",
+        "Type": "TArray<struct FactionDisplayInfo>",
         "Size": "0x10",
-        "Offset": "0x400"
+        "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x230_JYGF7[0x230]",
+        "Name": "FactionInfoPtrs",
+        "Type": "TArray<struct FactionRequest>",
+        "Size": "0x10",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "pad0x230_84KT6[0x230]",
         "Type": "char",
         "Size": "0x230",
-        "Offset": "0x410"
+        "Offset": "0x418"
       }
     ]
   },
@@ -253,13 +260,13 @@
     "Attributes": [
       {
         "Name": "Consumer",
-        "Type": "Class WarMapVoteConsumerBase*",
+        "Type": "class WarMapVoteConsumerBase*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "OwningActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x38"
       },
@@ -270,7 +277,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0xd7_AT3CB[0xd7]",
+        "Name": "pad0xd7_I6VUF[0xd7]",
         "Type": "char",
         "Size": "0xd7",
         "Offset": "0x41"
@@ -297,7 +304,7 @@
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x7_KCNI4[0x7]",
+        "Name": "pad0x7_UJSJH[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x119"

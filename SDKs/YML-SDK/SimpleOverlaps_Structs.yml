@@ -5,23 +5,23 @@ SimpleOverlapBegin:
   - Name: OverlapInfo
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct SimpleOverlapInfo
+    Type: struct SimpleOverlapInfo
   ClassSize: '0x10'
 SimpleOverlapEnd:
   Attributes:
   - Name: OverlapInfo
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct SimpleOverlapInfo
+    Type: struct SimpleOverlapInfo
   ClassSize: '0x10'
 SimpleOverlapInfo:
   Attributes:
   - Name: OtherActor
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   - Name: OtherComponent
     Offset: '0x8'
     Size: '0x8'
-    Type: Class PrimitiveComponent*
+    Type: class PrimitiveComponent*
   ClassSize: '0x10'

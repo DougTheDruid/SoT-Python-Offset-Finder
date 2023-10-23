@@ -5,7 +5,7 @@ CommodityDemandFrameworkEditorSettings:
   - Name: CommodityDataFileLocation
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -28,41 +28,41 @@ CommodityDemandFrameworkSettings:
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_UQ1WI[0x4]
+  - Name: pad0x4_DERRO[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
   - Name: CommodityRedemptionTimeOutPeriodInDays
     Offset: '0x50'
     Size: '0x8'
-    Type: Struct GameTime
+    Type: struct GameTime
   - Name: NPCListAsset
     Offset: '0x58'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: MerchantSovereignHandInNameFileLocation
     Offset: '0x68'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   ClassSize: '0x40'
   FullSize: '0x78'
   InheritedSize: '0x38'
   Super: DeveloperSettings
 CommodityDemandService:
   Attributes:
-  - Name: pad0x20_KYXE3[0x20]
+  - Name: pad0x20_WAPJF[0x20]
     Offset: '0x3c8'
     Size: '0x20'
     Type: char
   - Name: ActiveCommodityDemands
     Offset: '0x3e8'
     Size: '0x20'
-    Type: Struct ActiveNPCDemands
+    Type: struct ActiveNPCDemands
   - Name: MerchantSovereignHandInNameInformationDataAsset
     Offset: '0x408'
     Size: '0x8'
-    Type: Class MerchantSovereignHandInNameInformationDataAsset*
-  - Name: pad0x30_5RJNU[0x30]
+    Type: class MerchantSovereignHandInNameInformationDataAsset*
+  - Name: pad0x30_73K65[0x30]
     Offset: '0x410'
     Size: '0x30'
     Type: char
@@ -93,7 +93,7 @@ CommodityEntitlementRedemptionAsset:
   - Name: CommoditiesForRedemption
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct CommoditiesForRedemption>
+    Type: TArray<struct EntitlementToRedeemItems>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -103,12 +103,12 @@ CommodityItemDesc:
   - Name: CommodityType
     Offset: '0x120'
     Size: '0x8'
-    Type: Struct CommoditySelectionType
+    Type: struct CommoditySelectionType
   - Name: CommodityDemand
     Offset: '0x128'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_W1L5D[0x7]
+  - Name: pad0x7_OQGAH[0x7]
     Offset: '0x129'
     Size: '0x7'
     Type: char
@@ -117,22 +117,26 @@ CommodityItemDesc:
   InheritedSize: '0x120'
   Super: BootyItemDesc
 CommodityPurchaseTrackingComponent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x90_GDELC[0x90]
+    Offset: '0xc8'
+    Size: '0x90'
+    Type: char
   ClassSize: '0x90'
   FullSize: '0x158'
   InheritedSize: '0xc8'
   Super: ActorComponent
 CommodityRedemptionComponent:
   Attributes:
-  - Name: pad0x8_KHWLX[0x8]
+  - Name: pad0x8_G6UCV[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
   - Name: RedeemTooltipText
     Offset: '0xd0'
     Size: '0x38'
-    Type: Struct FText
-  - Name: pad0x78_VQM13[0x78]
+    Type: struct FText
+  - Name: pad0x78_FK37G[0x78]
     Offset: '0x108'
     Size: '0x78'
     Type: char
@@ -152,7 +156,7 @@ CommodityRedemptionInterface:
   Super: Interface
 CommoditySourceComponent:
   Attributes:
-  - Name: pad0x8_EYI3P[0x8]
+  - Name: pad0x8_D3HU5[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -164,12 +168,8 @@ CommoditySourceComponent:
     Offset: '0xd8'
     Size: '0x8'
     Type: struct FName
-  - Name: PurchasingCrewId
-    Offset: '0xe0'
-    Size: '0x10'
-    Type: Struct Guid
-  ClassSize: '0x28'
-  FullSize: '0xf0'
+  ClassSize: '0x18'
+  FullSize: '0xe0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 CommoditySourceInterface:
@@ -187,7 +187,7 @@ CommodityTokenEntitlementDesc:
   - Name: ItemToRedeemFor
     Offset: '0xd0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'
@@ -197,13 +197,17 @@ CommodityTypeDataAsset:
   - Name: CommodityEntries
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct CommodityEntries>
+    Type: TArray<struct CommodityTypeDataEntry>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 CrateFillerComponent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_3X3NS[0x10]
+    Offset: '0xc8'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'
@@ -226,7 +230,7 @@ IsWieldedCommodityItemInDemandStatCondition:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1f_F0SUS[0x1f]
+  - Name: pad0x1f_YF2IR[0x1f]
     Offset: '0x31'
     Size: '0x1f'
     Type: char
@@ -239,21 +243,21 @@ MerchantSovereignHandInNameInformationDataAsset:
   - Name: MerchantSovereignHandInNameInformationArray
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct MerchantSovereignHandInNameInformationArray>
+    Type: TArray<struct MerchantSovereignHandInNameInformation>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 SpecificItemsCrateFillerComponent:
   Attributes:
-  - Name: pad0x8_YA53B[0x8]
+  - Name: pad0x8_6J0AO[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
   - Name: ItemsToFillCrateWith
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<struct ItemsToFillCrateWith>
+    Type: TArray<struct StorageContainerNode>
   ClassSize: '0x18'
   FullSize: '0xe0'
   InheritedSize: '0xc8'
@@ -264,7 +268,7 @@ WasWieldedCommodityItemBoughtAtDemandStatCondition:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_XM0JZ[0x7]
+  - Name: pad0x7_HMMLW[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char

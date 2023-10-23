@@ -17,7 +17,7 @@ ClueConnectionConfig:
   - Name: CluesThatCanDescribeSites
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct CluesThatCanDescribeSites>
+    Type: TArray<struct ClueSiteTypeSupportedDescribedByEntry>
   - Name: ClueGenerators
     Offset: '0x38'
     Size: '0x10'
@@ -38,19 +38,19 @@ ClueDescriptor:
   Super: Object
 ClueDescriptorContainerComponent:
   Attributes:
-  - Name: pad0x8_255CV[0x8]
+  - Name: pad0x8_CSS7E[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
   - Name: CurrentClue
     Offset: '0xd0'
     Size: '0x8'
-    Type: Class ClueDescriptor*
+    Type: class ClueDescriptor*
   - Name: HasClueBeenGiven
     Offset: '0xd8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_2O1ZC[0x7]
+  - Name: pad0x7_USB60[0x7]
     Offset: '0xd9'
     Size: '0x7'
     Type: char
@@ -69,7 +69,7 @@ ClueDescriptorGenerator:
   - Name: DescriptorType
     Offset: '0x28'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: SupportedDestinationTypes
     Offset: '0x30'
     Size: '0x10'
@@ -79,7 +79,11 @@ ClueDescriptorGenerator:
   InheritedSize: '0x28'
   Super: Object
 ClueDestinationDescriptor:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_9ANQ3[0x18]
+    Offset: '0x28'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -89,12 +93,12 @@ ClueDestinationGenerator:
   - Name: RequiredClueSiteDataType
     Offset: '0x28'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: WeightedSupportedDescriptorTypes
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<struct WeightedSupportedDescriptorTypes>
-  - Name: pad0x50_0WM2V[0x50]
+    Type: TArray<struct WeightedClueDestinationDescriptor>
+  - Name: pad0x50_1CUC7[0x50]
     Offset: '0x40'
     Size: '0x50'
     Type: char
@@ -107,7 +111,7 @@ ClueFactory:
   - Name: Config
     Offset: '0x28'
     Size: '0x8'
-    Type: Class ClueFactoryConfig*
+    Type: class ClueFactoryConfig*
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
@@ -125,11 +129,11 @@ ClueFactoryConfig:
   - Name: ChoiceStrategy
     Offset: '0x48'
     Size: '0x8'
-    Type: Class ClueChoiceSelectionStrategy*
+    Type: class ClueChoiceSelectionStrategy*
   - Name: RestrictedClueTypes
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<struct RestrictedClueTypes>
+    Type: TArray<struct RestrictedClueType>
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
@@ -146,7 +150,7 @@ ClueSiteData:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0xf_JL237[0xf]
+  - Name: pad0xf_SSN0L[0xf]
     Offset: '0x29'
     Size: '0xf'
     Type: char
@@ -159,7 +163,7 @@ ClueSiteLootRestrictionsDataAsset:
   - Name: ClueSiteLootRestrictions
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct ClueSiteLootRestrictions>
+    Type: TArray<struct ClueSiteLootRestriction>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -175,7 +179,7 @@ DebrisForVoyageRankDescAsset:
   - Name: RankBasedDebrisDistribution
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct RankBasedDebrisDistribution>
+    Type: TArray<struct DebrisToRangeDist>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -201,12 +205,12 @@ EnvQueryTest_SeaClueSpawnLocation:
   - Name: ContextSourcePoint
     Offset: '0x180'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: ContextProjectionPoint
     Offset: '0x188'
     Size: '0x8'
-    Type: class
-  - Name: pad0x8_DBKN5[0x8]
+    Type: class UClass*
+  - Name: pad0x8_9QMIM[0x8]
     Offset: '0x190'
     Size: '0x8'
     Type: char
@@ -220,7 +224,7 @@ FixedClueChoiceSelectionStrategy:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_UR5FX[0x4]
+  - Name: pad0x4_5346C[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -229,7 +233,11 @@ FixedClueChoiceSelectionStrategy:
   InheritedSize: '0x28'
   Super: ClueChoiceSelectionStrategy
 LandClueCreator:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_OK4WQ[0x8]
+    Offset: '0x28'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
@@ -239,21 +247,21 @@ LootForVoyageRankDescAsset:
   - Name: RankBasedLootDistribution
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct RankBasedLootDistribution>
+    Type: TArray<struct LootToRangeDist>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
 NPCLootSpawnComponent:
   Attributes:
-  - Name: pad0x8_0ONMW[0x8]
+  - Name: pad0x8_038ZC[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
   - Name: LootItemSpawnRelativeLocations
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<struct LootItemSpawnRelativeLocations>
+    Type: TArray<struct Vector>
   ClassSize: '0x18'
   FullSize: '0xe0'
   InheritedSize: '0xc8'
@@ -271,7 +279,11 @@ RandomClueChoiceSelectionStrategy:
   InheritedSize: '0x28'
   Super: ClueChoiceSelectionStrategy
 SeaClueCreator:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_K3C88[0x8]
+    Offset: '0x28'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
@@ -288,15 +300,15 @@ SeaClueSiteTypesDataAsset:
   Super: DataAsset
 TaleQuestChooseLandOrSeaStep:
   Attributes:
-  - Name: pad0x18_N5F2W[0x18]
+  - Name: pad0x18_Y9USY[0x18]
     Offset: '0x98'
     Size: '0x18'
     Type: char
   - Name: SeaClueSiteTypes
     Offset: '0xb0'
     Size: '0x8'
-    Type: Class SeaClueSiteTypesDataAsset*
-  - Name: pad0xe0_3LJBC[0xe0]
+    Type: class SeaClueSiteTypesDataAsset*
+  - Name: pad0xe0_UOGQE[0xe0]
     Offset: '0xb8'
     Size: '0xe0'
     Type: char
@@ -309,7 +321,7 @@ TaleQuestChooseLandOrSeaStepDesc:
   - Name: SeaClueSiteTypes
     Offset: '0x80'
     Size: '0x8'
-    Type: Class SeaClueSiteTypesDataAsset*
+    Type: class SeaClueSiteTypesDataAsset*
   - Name: ProjectionAngleInDegrees
     Offset: '0x88'
     Size: '0x4'
@@ -330,26 +342,26 @@ TaleQuestChooseLandOrSeaStepDesc:
     Offset: '0x98'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_OFN4A[0x4]
+  - Name: pad0x4_4UKZK[0x4]
     Offset: '0x9c'
     Size: '0x4'
     Type: char
   - Name: ProjectionPoint
     Offset: '0xa0'
     Size: '0x30'
-    Type: Struct QuestVariableVector
+    Type: struct QuestVariableVector
   - Name: TradeRouteData
     Offset: '0xd0'
     Size: '0x30'
-    Type: Struct QuestVariableTradeRouteData
+    Type: struct QuestVariableTradeRouteData
   - Name: IsSeaLocation
     Offset: '0x100'
     Size: '0x30'
-    Type: Struct QuestVariableBool
+    Type: struct QuestVariableBool
   - Name: ValidIslandNames
     Offset: '0x130'
     Size: '0x30'
-    Type: Struct QuestVariableNameArray
+    Type: struct QuestVariableNameArray
   ClassSize: '0xe0'
   FullSize: '0x160'
   InheritedSize: '0x80'
@@ -359,15 +371,15 @@ TaleQuestClueSiteService:
   - Name: Desc
     Offset: '0x60'
     Size: '0x8'
-    Type: Class TaleQuestClueSiteServiceDesc*
+    Type: class TaleQuestClueSiteServiceDesc*
   - Name: ClueSites
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<struct ClueSites>
+    Type: TArray<struct ClueSite>
   - Name: DebugClueSiteIds
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<struct DebugClueSiteIds>
+    Type: TArray<struct Guid>
   ClassSize: '0x78'
   FullSize: '0xd8'
   InheritedSize: '0x60'
@@ -379,7 +391,11 @@ TaleQuestClueSiteServiceDesc:
   InheritedSize: '0x28'
   Super: TaleQuestServiceDesc
 TaleQuestGenerateCluePointingToSiteStep:
-  Attributes: []
+  Attributes:
+  - Name: pad0xc0_28NH3[0xc0]
+    Offset: '0x98'
+    Size: '0xc0'
+    Type: char
   ClassSize: '0xc0'
   FullSize: '0x158'
   InheritedSize: '0x98'
@@ -389,19 +405,19 @@ TaleQuestGenerateCluePointingToSiteStepDesc:
   - Name: Difficulty
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableInt
+    Type: struct QuestVariableInt
   - Name: SourceLocation
     Offset: '0xb0'
     Size: '0x30'
-    Type: Struct QuestVariableVector
+    Type: struct QuestVariableVector
   - Name: TargetClueSite
     Offset: '0xe0'
     Size: '0x30'
-    Type: Struct QuestVariableClueSite
+    Type: struct QuestVariableClueSite
   - Name: GeneratedClue
     Offset: '0x110'
     Size: '0x30'
-    Type: Struct QuestVariableClueDescriptor
+    Type: struct QuestVariableClueDescriptor
   - Name: AllowedClueTypes
     Offset: '0x140'
     Size: '0x10'
@@ -409,13 +425,17 @@ TaleQuestGenerateCluePointingToSiteStepDesc:
   - Name: ConnectionConfiguration
     Offset: '0x150'
     Size: '0x8'
-    Type: Class ClueConnectionConfig*
+    Type: class ClueConnectionConfig*
   ClassSize: '0xd8'
   FullSize: '0x158'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestGenerateClueSiteAtSeaLocationStep:
-  Attributes: []
+  Attributes:
+  - Name: pad0x60_BC860[0x60]
+    Offset: '0x98'
+    Size: '0x60'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0xf8'
   InheritedSize: '0x98'
@@ -425,21 +445,25 @@ TaleQuestGenerateClueSiteAtSeaLocationStepDesc:
   - Name: ApproximateLocation
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableVector
+    Type: struct QuestVariableVector
   - Name: ClueSite
     Offset: '0xb0'
     Size: '0x30'
-    Type: Struct QuestVariableClueSite
+    Type: struct QuestVariableClueSite
   - Name: ClueFactoryConfiguration
     Offset: '0xe0'
     Size: '0x8'
-    Type: Class ClueFactoryConfig*
+    Type: class ClueFactoryConfig*
   ClassSize: '0x68'
   FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestGenerateClueSiteOnIslandStep:
-  Attributes: []
+  Attributes:
+  - Name: pad0x60_G1N6C[0x60]
+    Offset: '0x98'
+    Size: '0x60'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0xf8'
   InheritedSize: '0x98'
@@ -449,21 +473,25 @@ TaleQuestGenerateClueSiteOnIslandStepDesc:
   - Name: IslandName
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableName
+    Type: struct QuestVariableName
   - Name: ClueSite
     Offset: '0xb0'
     Size: '0x30'
-    Type: Struct QuestVariableClueSite
+    Type: struct QuestVariableClueSite
   - Name: ClueGenerationConfiguration
     Offset: '0xe0'
     Size: '0x8'
-    Type: Class ClueFactoryConfig*
+    Type: class ClueFactoryConfig*
   ClassSize: '0x68'
   FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestGenerateDebrisTypeForVoyageRankStep:
-  Attributes: []
+  Attributes:
+  - Name: pad0x60_35WBS[0x60]
+    Offset: '0x98'
+    Size: '0x60'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0xf8'
   InheritedSize: '0x98'
@@ -473,21 +501,25 @@ TaleQuestGenerateDebrisTypeForVoyageRankStepDesc:
   - Name: VoyageRank
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableInt
+    Type: struct QuestVariableInt
   - Name: DebrisTypeArray
     Offset: '0xb0'
     Size: '0x30'
-    Type: Struct QuestVariableActorAssetTypeArray
+    Type: struct QuestVariableActorAssetTypeArray
   - Name: DebrisForRankDescAsset
     Offset: '0xe0'
     Size: '0x8'
-    Type: Class DebrisForVoyageRankDescAsset*
+    Type: class DebrisForVoyageRankDescAsset*
   ClassSize: '0x68'
   FullSize: '0xe8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestGenerateLootDescForVoyageRankStep:
-  Attributes: []
+  Attributes:
+  - Name: pad0x60_26KYT[0x60]
+    Offset: '0x98'
+    Size: '0x60'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0xf8'
   InheritedSize: '0x98'
@@ -497,15 +529,15 @@ TaleQuestGenerateLootDescForVoyageRankStepDesc:
   - Name: VoyageRank
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableInt
+    Type: struct QuestVariableInt
   - Name: LootDescArray
     Offset: '0xb0'
     Size: '0x30'
-    Type: Struct QuestVariableItemDescTypeArray
+    Type: struct QuestVariableItemDescTypeArray
   - Name: LootForRankDescAsset
     Offset: '0xe0'
     Size: '0x8'
-    Type: Class LootForVoyageRankDescAsset*
+    Type: class LootForVoyageRankDescAsset*
   ClassSize: '0x68'
   FullSize: '0xe8'
   InheritedSize: '0x80'
@@ -521,15 +553,15 @@ TaleQuestIsClueOfTypeStepDesc:
   - Name: ClueSiteTypeToMatch
     Offset: '0x80'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: ClueSite
     Offset: '0x88'
     Size: '0x30'
-    Type: Struct QuestVariableClueSite
+    Type: struct QuestVariableClueSite
   - Name: IsMatchingType
     Offset: '0xb8'
     Size: '0x30'
-    Type: Struct QuestVariableBool
+    Type: struct QuestVariableBool
   ClassSize: '0x68'
   FullSize: '0xe8'
   InheritedSize: '0x80'
@@ -539,8 +571,8 @@ TaleQuestSelectClueSiteForLootStep:
   - Name: StepDesc
     Offset: '0x98'
     Size: '0x8'
-    Type: Class TaleQuestSelectClueSiteForLootStepDesc*
-  - Name: pad0x60_KC431[0x60]
+    Type: class TaleQuestSelectClueSiteForLootStepDesc*
+  - Name: pad0x60_UC3VD[0x60]
     Offset: '0xa0'
     Size: '0x60'
     Type: char
@@ -553,33 +585,37 @@ TaleQuestSelectClueSiteForLootStepDesc:
   - Name: SelectionStrategy
     Offset: '0x80'
     Size: '0x8'
-    Type: Class TaleQuestArrayEntrySelectionStrategy*
+    Type: class TaleQuestArrayEntrySelectionStrategy*
   - Name: ClueSiteLootRestrictions
     Offset: '0x88'
     Size: '0x8'
-    Type: Class ClueSiteLootRestrictionsDataAsset*
+    Type: class ClueSiteLootRestrictionsDataAsset*
   - Name: LootType
     Offset: '0x90'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_Q0AJD[0x7]
+  - Name: pad0x7_T58ZD[0x7]
     Offset: '0x91'
     Size: '0x7'
     Type: char
   - Name: OutputClueSite
     Offset: '0x98'
     Size: '0x30'
-    Type: Struct QuestVariableClueSite
+    Type: struct QuestVariableClueSite
   - Name: MaxedAllClueSites
     Offset: '0xc8'
     Size: '0x30'
-    Type: Struct QuestVariableBool
+    Type: struct QuestVariableBool
   ClassSize: '0x78'
   FullSize: '0xf8'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestSpawnDebrisAtClueSiteStep:
-  Attributes: []
+  Attributes:
+  - Name: pad0xa8_PSCKU[0xa8]
+    Offset: '0x98'
+    Size: '0xa8'
+    Type: char
   ClassSize: '0xa8'
   FullSize: '0x140'
   InheritedSize: '0x98'
@@ -589,15 +625,15 @@ TaleQuestSpawnDebrisAtClueSiteStepDesc:
   - Name: ClueSiteVar
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableClueSite
+    Type: struct QuestVariableClueSite
   - Name: DebrisTypeVar
     Offset: '0xb0'
     Size: '0x30'
-    Type: Struct QuestVariableActorAssetType
+    Type: struct QuestVariableActorAssetType
   - Name: OutDebrisActorVar
     Offset: '0xe0'
     Size: '0x30'
-    Type: Struct QuestVariableActor
+    Type: struct QuestVariableActor
   ClassSize: '0x90'
   FullSize: '0x110'
   InheritedSize: '0x80'
@@ -613,20 +649,20 @@ TaleQuestSpawnLootItemInClueSiteStepDesc:
   - Name: LootItem
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableClass
+    Type: struct QuestVariableClass
   - Name: ClueSite
     Offset: '0xb0'
     Size: '0x30'
-    Type: Struct QuestVariableClueSite
+    Type: struct QuestVariableClueSite
   - Name: SpawnedLootItem
     Offset: '0xe0'
     Size: '0x30'
-    Type: Struct QuestVariableItemInfo
+    Type: struct QuestVariableItemInfo
   - Name: Tracked
     Offset: '0x110'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_KOJMH[0x7]
+  - Name: pad0x7_WVVRN[0x7]
     Offset: '0x111'
     Size: '0x7'
     Type: char
@@ -645,21 +681,25 @@ TaleQuestStoreClueOnActorStepDesc:
   - Name: ClueDescriptor
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableClueDescriptor
+    Type: struct QuestVariableClueDescriptor
   - Name: Actor
     Offset: '0xb0'
     Size: '0x30'
-    Type: Struct QuestVariableActor
+    Type: struct QuestVariableActor
   - Name: ClueActor
     Offset: '0xe0'
     Size: '0x30'
-    Type: Struct QuestVariableActor
+    Type: struct QuestVariableActor
   ClassSize: '0x90'
   FullSize: '0x110'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleQuestUpdateBuoyancyAutoSinkSettingForItemStep:
-  Attributes: []
+  Attributes:
+  - Name: pad0x38_66S3K[0x38]
+    Offset: '0x98'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x38'
   FullSize: '0xd0'
   InheritedSize: '0x98'
@@ -669,12 +709,12 @@ TaleQuestUpdateBuoyancyAutoSinkSettingForItemStepDesc:
   - Name: Item
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableItemInfo
+    Type: struct QuestVariableItemInfo
   - Name: EnableAutoSink
     Offset: '0xb0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_NES5G[0x7]
+  - Name: pad0x7_HT63D[0x7]
     Offset: '0xb1'
     Size: '0x7'
     Type: char
@@ -687,7 +727,7 @@ WeightedDebrisDataAsset:
   - Name: Debris
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct Debris>
+    Type: TArray<struct WeightedDebris>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

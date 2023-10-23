@@ -2,12 +2,16 @@
 # https://github.com/DougTheDruid
 MaelstromEventBaseFragment:
   Attributes:
+  - Name: pad0x10_91I07[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   - Name: Name
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: TimestampUtc
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x30'

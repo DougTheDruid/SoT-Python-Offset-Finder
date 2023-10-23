@@ -11,13 +11,17 @@ AdventureOnDemandAreCrewNearQuestTargetStepDesc:
   - Name: AreCrewNearQuestTarget
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableBool
+    Type: struct QuestVariableBool
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 AdventureOnDemandArrivalTunnelDependencies:
-  Attributes: []
+  Attributes:
+  - Name: pad0x20_OXX6C[0x20]
+    Offset: '0xd8'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0xf8'
   InheritedSize: '0xd8'
@@ -27,24 +31,24 @@ AdventureOnDemandArrivalTunnelDesc:
   - Name: ResurfaceLocationOffset
     Offset: '0xb0'
     Size: '0xc'
-    Type: Struct Vector
-  - Name: pad0x4_GMK0P[0x4]
+    Type: struct Vector
+  - Name: pad0x4_X0TRR[0x4]
     Offset: '0xbc'
     Size: '0x4'
     Type: char
   - Name: DefaultArrivalLocationWorkerClass
     Offset: '0xc0'
     Size: '0x8'
-    Type: Class AdventureOnDemandArrivalTunnelWorkerBase*
+    Type: class AdventureOnDemandArrivalTunnelWorkerBase*
   - Name: ResurfaceLocationEQ
     Offset: '0xc8'
     Size: '0x8'
-    Type: Class EnvQuery*
+    Type: class EnvQuery*
   - Name: ShouldExcludeCrewFromBeingTargetedForGameEvents
     Offset: '0xd0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_MQ599[0x3]
+  - Name: pad0x3_OMDMQ[0x3]
     Offset: '0xd1'
     Size: '0x3'
     Type: char
@@ -58,19 +62,19 @@ AdventureOnDemandArrivalTunnelDesc:
   Super: ClientDestinationPreLoadingArrivalTunnelDesc
 AdventureOnDemandArrivalTunnelOfTheDamned:
   Attributes:
-  - Name: pad0x28_ZE9PD[0x28]
+  - Name: pad0x28_7WK6C[0x28]
     Offset: '0x6a0'
     Size: '0x28'
     Type: char
   - Name: AdventureOnDemandArrivalTunnelDesc
     Offset: '0x6c8'
     Size: '0x8'
-    Type: Class AdventureOnDemandArrivalTunnelDesc*
+    Type: class AdventureOnDemandArrivalTunnelDesc*
   - Name: ArrivalLocationWorker
     Offset: '0x6d0'
     Size: '0x8'
-    Type: Class AdventureOnDemandArrivalTunnelWorkerBase*
-  - Name: pad0x28_H21UC[0x28]
+    Type: class AdventureOnDemandArrivalTunnelWorkerBase*
+  - Name: pad0x28_XH6WW[0x28]
     Offset: '0x6d8'
     Size: '0x28'
     Type: char
@@ -83,13 +87,17 @@ AdventureOnDemandArrivalTunnelWorkerBase:
   - Name: WorldPtr
     Offset: '0x28'
     Size: '0x8'
-    Type: Class World*
+    Type: class World*
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
   Super: Object
 AdventureOnDemandDepartureTunnelDependencies:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_N7ARC[0x10]
+    Offset: '0x138'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x148'
   InheritedSize: '0x138'
@@ -107,7 +115,7 @@ AdventureOnDemandDepartureTunnelDesc:
   - Name: DefaultTunnelCancellationAvailableReminderPopup
     Offset: '0x120'
     Size: '0x8'
-    Type: Class PopUpMessageDesc*
+    Type: class PopUpMessageDesc*
   ClassSize: '0x10'
   FullSize: '0x128'
   InheritedSize: '0x118'
@@ -117,8 +125,8 @@ AdventureOnDemandDepartureTunnelOfTheDamned:
   - Name: AdventureOnDemandDepartureTunnelDesc
     Offset: '0x8b8'
     Size: '0x8'
-    Type: Class AdventureOnDemandDepartureTunnelDesc*
-  - Name: pad0x20_6NJI4[0x20]
+    Type: class AdventureOnDemandDepartureTunnelDesc*
+  - Name: pad0x20_LX8HG[0x20]
     Offset: '0x8c0'
     Size: '0x20'
     Type: char
@@ -126,6 +134,20 @@ AdventureOnDemandDepartureTunnelOfTheDamned:
   FullSize: '0x8e0'
   InheritedSize: '0x8c0'
   Super: DepartureTunnelOfTheDamned
+AdventureOnDemandDiscoveryPageMysteryDataAsset:
+  Attributes:
+  - Name: Prerequisites
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class InteractionPrerequisiteBase*>
+  - Name: MysteryProposals
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<struct AdventureOnDemandVoyageDiscoveryPageMysteryProposal>
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: DataAsset
 AdventureOnDemandDisplayHintPopUpStep:
   Attributes: []
   ClassSize: '0x0'
@@ -161,7 +183,7 @@ AdventureOnDemandGetIsDivingToTunnelStepDesc:
   - Name: IsCrewDivingToTunnel
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableBool
+    Type: struct QuestVariableBool
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
@@ -177,7 +199,7 @@ AdventureOnDemandGetTunnelDescStepDesc:
   - Name: TunnelDesc
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableDataAsset
+    Type: struct QuestVariableDataAsset
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
@@ -187,11 +209,11 @@ AdventureOnDemandLocationRequestDataAsset:
   - Name: SeaBasedGameEventLocations
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct SeaBasedGameEventLocations>
+    Type: TArray<struct Vector2D>
   - Name: SeaBasedGameEventQuery
     Offset: '0x38'
     Size: '0x8'
-    Type: Class EnvQuery*
+    Type: class EnvQuery*
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -207,15 +229,15 @@ AdventureOnDemandServiceParams:
   - Name: DiveToTunnelVoyageDesc
     Offset: '0x28'
     Size: '0x8'
-    Type: Class VoyageDescDataAsset*
+    Type: class VoyageDescDataAsset*
   - Name: VoyageTunnelDesc
     Offset: '0x30'
     Size: '0x8'
-    Type: Class TunnelDesc*
+    Type: class TunnelDesc*
   - Name: LeaveTunnelVoyageDesc
     Offset: '0x38'
     Size: '0x8'
-    Type: Class VoyageDescDataAsset*
+    Type: class VoyageDescDataAsset*
   - Name: ExtraSpawnDistanceFromIsland
     Offset: '0x40'
     Size: '0x10'
@@ -224,22 +246,22 @@ AdventureOnDemandServiceParams:
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_0GD4K[0x4]
+  - Name: pad0x4_2YJE5[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
   - Name: LocationRequestDataAsset
     Offset: '0x58'
     Size: '0x8'
-    Type: Class AdventureOnDemandLocationRequestDataAsset*
-  - Name: GameEventsOnDemandBannerTextDataAsset
+    Type: class AdventureOnDemandLocationRequestDataAsset*
+  - Name: GameEventsOnDemandBannerDataAsset
     Offset: '0x60'
     Size: '0x8'
-    Type: Class GameEventsOnDemandBannerTextDataAsset*
+    Type: class GameEventsOnDemandBannerDataAsset*
   - Name: HuntersCallCompany
     Offset: '0x68'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
@@ -255,15 +277,15 @@ AdventureOnDemandSetDirectionToApproachTargetFromStepDesc:
   - Name: DirectionToApproachTargetFrom
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableVector
+    Type: struct QuestVariableVector
   - Name: PointOfInterestToGetDirectionToTargetFrom
     Offset: '0xb0'
     Size: '0x30'
-    Type: Struct QuestVariableVector
+    Type: struct QuestVariableVector
   - Name: ActorToGetDirectionToTargetFrom
     Offset: '0xe0'
     Size: '0x30'
-    Type: Struct QuestVariableActor
+    Type: struct QuestVariableActor
   ClassSize: '0x90'
   FullSize: '0x110'
   InheritedSize: '0x80'
@@ -280,7 +302,7 @@ AdventureOnDemandSetHintPopUpStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_1HY14[0x7]
+  - Name: pad0x7_8VUMH[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -299,21 +321,25 @@ AdventureOnDemandSetTargetLocationStepDesc:
   - Name: IslandName
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct QuestVariableName
+    Type: struct QuestVariableName
   - Name: IslandData
     Offset: '0xb0'
     Size: '0x30'
-    Type: Struct QuestVariableActor
+    Type: struct QuestVariableActor
   - Name: TargetLocation
     Offset: '0xe0'
     Size: '0x30'
-    Type: Struct QuestVariableVector
+    Type: struct QuestVariableVector
   - Name: RadiusFromTarget
     Offset: '0x110'
     Size: '0x30'
-    Type: Struct QuestVariableFloat
-  ClassSize: '0xc0'
-  FullSize: '0x140'
+    Type: struct QuestVariableFloat
+  - Name: DefaultRadiusModifier
+    Offset: '0x140'
+    Size: '0x30'
+    Type: struct QuestVariableFloat
+  ClassSize: '0xf0'
+  FullSize: '0x170'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 AdventureOnDemandSetTunnelDescStep:
@@ -327,7 +353,7 @@ AdventureOnDemandSetTunnelDescStepDesc:
   - Name: TunnelDesc
     Offset: '0x80'
     Size: '0x8'
-    Type: Class TunnelDesc*
+    Type: class TunnelDesc*
   ClassSize: '0x8'
   FullSize: '0x88'
   InheritedSize: '0x80'
@@ -350,40 +376,98 @@ AdventureOnDemandTaleFunctionLibrary:
   FullSize: '0x180'
   InheritedSize: '0x180'
   Super: TaleQuestFunctionStepLibrary
+AdventureOnDemandTallTaleCategoryDataAsset:
+  Attributes:
+  - Name: TaleId
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
+  - Name: TaleCategory
+    Offset: '0x30'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x7_N6R7W[0x7]
+    Offset: '0x31'
+    Size: '0x7'
+    Type: char
+  - Name: DisplayName
+    Offset: '0x38'
+    Size: '0x38'
+    Type: struct FText
+  - Name: Description
+    Offset: '0x70'
+    Size: '0x38'
+    Type: struct FText
+  - Name: BackgroundImageUrl
+    Offset: '0xa8'
+    Size: '0x10'
+    Type: struct StringAssetReference
+  - Name: IconImageUrl
+    Offset: '0xb8'
+    Size: '0x10'
+    Type: struct StringAssetReference
+  - Name: LockedDescriptions
+    Offset: '0xc8'
+    Size: '0x10'
+    Type: TArray<struct FText>
+  - Name: Prerequisites
+    Offset: '0xd8'
+    Size: '0x10'
+    Type: TArray<class InteractionPrerequisiteBase*>
+  - Name: TallTales
+    Offset: '0xe8'
+    Size: '0x10'
+    Type: TArray<struct AdventureOnDemandTallTaleProposalGroup>
+  ClassSize: '0xd0'
+  FullSize: '0xf8'
+  InheritedSize: '0x28'
+  Super: DataAsset
 AdventureOnDemandVoyageSelectionCompanyDataAsset:
   Attributes:
   - Name: CompanyName
     Offset: '0x28'
     Size: '0x8'
     Type: struct FName
-  - Name: Prerequisites
+  - Name: Company
     Offset: '0x30'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: Prerequisites
+    Offset: '0x38'
     Size: '0x10'
     Type: TArray<class InteractionPrerequisiteBase*>
   - Name: VoyageGroups
-    Offset: '0x40'
+    Offset: '0x48'
     Size: '0x10'
-    Type: TArray<struct VoyageGroups>
+    Type: TArray<struct AdventureOnDemandVoyageSelectionVoyageProposalGroup>
   - Name: WorldEventGroups
-    Offset: '0x50'
+    Offset: '0x58'
     Size: '0x10'
-    Type: TArray<struct WorldEventGroups>
-  ClassSize: '0x38'
-  FullSize: '0x60'
+    Type: TArray<struct AdventureOnDemandVoyageSelectionVoyageProposalGroup>
+  ClassSize: '0x40'
+  FullSize: '0x68'
   InheritedSize: '0x28'
   Super: DataAsset
 AdventureOnDemandVoyageSelectionDataAsset:
   Attributes:
-  - Name: CompanyEntries
+  - Name: DiscoveryPageMysteryEntries
     Offset: '0x28'
+    Size: '0x8'
+    Type: class AdventureOnDemandDiscoveryPageMysteryDataAsset*
+  - Name: CompanyEntries
+    Offset: '0x30'
     Size: '0x10'
     Type: TArray<class AdventureOnDemandVoyageSelectionCompanyDataAsset*>
   - Name: TallTaleChapters
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x10'
     Type: TArray<class AdventureOnDemandVoyageSelectionCompanyDataAsset*>
-  ClassSize: '0x20'
-  FullSize: '0x48'
+  - Name: TallTales
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<class AdventureOnDemandTallTaleCategoryDataAsset*>
+  ClassSize: '0x38'
+  FullSize: '0x60'
   InheritedSize: '0x28'
   Super: DataAsset
 AdventureOnDemandYieldQuestResumeOnConditionsStepDesc:
@@ -391,13 +475,17 @@ AdventureOnDemandYieldQuestResumeOnConditionsStepDesc:
   - Name: OutConditionsMetReason
     Offset: '0x80'
     Size: '0x30'
-    Type: Struct OnDemandQuestResumeConditionMetReasonQuestVariable
+    Type: struct OnDemandQuestResumeConditionMetReasonQuestVariable
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 AdventureOnDemandYieldQuestResumeOnConditionsTaleStep:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_M5RR1[0x18]
+    Offset: '0x98'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0xb0'
   InheritedSize: '0x98'
@@ -409,7 +497,11 @@ GameEventOnDemandDepartureTunnelDependencies:
   InheritedSize: '0x148'
   Super: AdventureOnDemandDepartureTunnelDependencies
 GameEventOnDemandDepartureTunnelDesc:
-  Attributes: []
+  Attributes:
+  - Name: pad0x20_NJ32D[0x20]
+    Offset: '0x128'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x20'
   FullSize: '0x148'
   InheritedSize: '0x128'
@@ -419,39 +511,69 @@ GameEventOnDemandDepartureTunnelOfTheDamned:
   - Name: GameEventOnDemandDepartureTunnelDesc
     Offset: '0x8d8'
     Size: '0x8'
-    Type: Class GameEventOnDemandDepartureTunnelDesc*
+    Type: class GameEventOnDemandDepartureTunnelDesc*
   ClassSize: '0x0'
   FullSize: '0x8e0'
   InheritedSize: '0x8e0'
   Super: AdventureOnDemandDepartureTunnelOfTheDamned
-GameEventsOnDemandBannerTextDataAsset:
+GameEventsOnDemandBannerDataAsset:
   Attributes:
   - Name: GameEventSpecificBannerTextData
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<struct GameEventSpecificBannerTextData>
+    Type: TArray<struct GameEventOnDemandBannerTextData>
   - Name: OnShipSunkBannerText
     Offset: '0x38'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: OnVoyageCancelledBannerText
     Offset: '0x70'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: OnCrewJoinedGameEventBannerHeaderText
     Offset: '0xa8'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: OnCrewJoinedGameEventBannerMessageText
     Offset: '0xe0'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: OnGameEventCompletedBannerMessageText
     Offset: '0x118'
     Size: '0x38'
-    Type: Struct FText
-  ClassSize: '0x128'
-  FullSize: '0x150'
+    Type: struct FText
+  - Name: BannerTagsPerCompany
+    Offset: '0x150'
+    Size: '0x10'
+    Type: TArray<struct GameEventOnDemandCompanyBannerData>
+  ClassSize: '0x138'
+  FullSize: '0x160'
+  InheritedSize: '0x28'
+  Super: DataAsset
+QuestTableAdventureOnDemandParams:
+  Attributes:
+  - Name: SailToQuestText_Default
+    Offset: '0x28'
+    Size: '0x38'
+    Type: struct FText
+  - Name: SailToQuestText_BlockedDueToWorldEvent
+    Offset: '0x60'
+    Size: '0x38'
+    Type: struct FText
+  - Name: DiveToQuestText_Default
+    Offset: '0x98'
+    Size: '0x38'
+    Type: struct FText
+  - Name: DiveToQuestText_BlockedDueToTutorial
+    Offset: '0xd0'
+    Size: '0x38'
+    Type: struct FText
+  - Name: DiveToQuestText_BlockedDueToCooldown
+    Offset: '0x108'
+    Size: '0x38'
+    Type: struct FText
+  ClassSize: '0x118'
+  FullSize: '0x140'
   InheritedSize: '0x28'
   Super: DataAsset
 VoyageOnDemandArrivalTunnelWorker:
@@ -477,8 +599,14 @@ VoyageOnDemandDepartureTunnelOfTheDamned:
   - Name: VoyageOnDemandDepartureTunnelDesc
     Offset: '0x8d8'
     Size: '0x8'
-    Type: Class VoyageOnDemandDepartureTunnelDesc*
+    Type: class VoyageOnDemandDepartureTunnelDesc*
   ClassSize: '0x0'
   FullSize: '0x8e0'
   InheritedSize: '0x8e0'
   Super: AdventureOnDemandDepartureTunnelOfTheDamned
+WantsToDivePrerequisite:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: InteractionPrerequisiteBase

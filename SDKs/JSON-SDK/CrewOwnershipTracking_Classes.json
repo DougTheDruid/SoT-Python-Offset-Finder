@@ -27,31 +27,31 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "pad0x18_YP2EY[0x18]",
+        "Name": "pad0x18_F3E0N[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xc8"
       },
       {
         "Name": "SpawningCrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0xe0"
       },
       {
         "Name": "CurrentOwnedByCrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0xf0"
       },
       {
         "Name": "PreviousOwnedByCrewIdList",
-        "Type": "Struct OwnerListEntry",
+        "Type": "struct OwnerListEntry",
         "Size": "0x10",
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x60_UF8CK[0x60]",
+        "Name": "pad0x60_MECEQ[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x110"

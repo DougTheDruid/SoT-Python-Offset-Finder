@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 struct JsonObjectWrapper
 {
 public:
+	char                                                         pad0x18_YI15B[0x18];                               // 0x0(0x18)
 };
 
 
@@ -17,8 +18,8 @@ public:
 struct TestTextObject
 {
 public:
-	Struct FText                                                 TestText;                                          // 0x0(0x38)
-	Struct FText                                                 TestTextExport;                                    // 0x38(0x38)
+	struct FText                                                 TestText;                                          // 0x0(0x38)
+	struct FText                                                 TestTextExport;                                    // 0x38(0x38)
 };
 
 
@@ -43,7 +44,7 @@ public:
 struct TestMessageTimespan
 {
 public:
-	Struct Timespan                                              Timespan;                                          // 0x0(0x8)
+	struct Timespan                                              Timespan;                                          // 0x0(0x8)
 };
 
 
@@ -51,7 +52,7 @@ public:
 struct TestMessageDateTime
 {
 public:
-	Struct DateTime                                              DateTime;                                          // 0x0(0x8)
+	struct DateTime                                              DateTime;                                          // 0x0(0x8)
 };
 
 
@@ -59,7 +60,7 @@ public:
 struct TestSerializationNestedObject
 {
 public:
-	Struct TestSerializationObject                               NestedObject;                                      // 0x0(0x28)
+	struct TestSerializationObject                               NestedObject;                                      // 0x0(0x28)
 };
 
 
@@ -68,10 +69,10 @@ struct TestSerializationObject
 {
 public:
 	bool                                                         TestBool;                                          // 0x0(0x1)
-	char                                                         pad0x3_UOWI3[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_XRJHQ[0x3];                                 // 0x1(0x3)
 	int                                                          TestInt;                                           // 0x4(0x4)
-	Struct FString                                               TestString;                                        // 0x8(0x10)
-	Struct Guid                                                  TestGuid;                                          // 0x18(0x10)
+	struct FString                                               TestString;                                        // 0x8(0x10)
+	struct Guid                                                  TestGuid;                                          // 0x18(0x10)
 };
 
 
@@ -79,6 +80,7 @@ public:
 struct TestMessageUInt64
 {
 public:
+	char                                                         pad0x8_J1ITA[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -86,6 +88,7 @@ public:
 struct TestMessageInt64
 {
 public:
+	char                                                         pad0x8_7YDQT[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -93,6 +96,7 @@ public:
 struct TestUStructMapSerializationObject
 {
 public:
+	char                                                         pad0x50_84QD9[0x50];                               // 0x0(0x50)
 };
 
 
@@ -100,6 +104,7 @@ public:
 struct TestInt32MapSerializationObject
 {
 public:
+	char                                                         pad0x50_J8YFY[0x50];                               // 0x0(0x50)
 };
 
 
@@ -107,6 +112,7 @@ public:
 struct TestInvalidStringMapSerializationObject
 {
 public:
+	char                                                         pad0x50_7FDV1[0x50];                               // 0x0(0x50)
 };
 
 
@@ -114,6 +120,7 @@ public:
 struct TestStringMapSerializationObject
 {
 public:
+	char                                                         pad0x50_7Z0XR[0x50];                               // 0x0(0x50)
 };
 
 

@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "Value",
-        "Type": "Struct UserDefinedStructWithSerialisableValue",
+        "Type": "struct UserDefinedStructWithSerialisableValue",
         "Size": "0x20",
         "Offset": "0x0"
       }
@@ -15,9 +15,15 @@
     "Attributes": [
       {
         "Name": "InternalStruct",
-        "Type": "Class ScriptStruct*",
+        "Type": "class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x18_6IIT1[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x8"
       }
     ]
   },
@@ -25,8 +31,14 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
+        "Name": "pad0x8_SLAK9[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Type",
-        "Type": "Class ScriptStruct*",
+        "Type": "class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -65,8 +77,14 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
+        "Name": "pad0x18_K0MZN[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
         "Name": "ContentsType",
-        "Type": "Class ScriptStruct*",
+        "Type": "class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x18"
       }
@@ -77,7 +95,7 @@
     "Attributes": [
       {
         "Name": "StampId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -88,13 +106,13 @@
     "Attributes": [
       {
         "Name": "String",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "FeatureOverrides",
-        "Type": "TArray<struct FeatureOverrides>",
+        "Type": "TArray<struct StringAssetClassPairFeatureOverride>",
         "Size": "0x10",
         "Offset": "0x30"
       }
@@ -108,6 +126,12 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x20_VY0E1[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x8"
       }
     ]
   },
@@ -122,7 +146,7 @@
       },
       {
         "Name": "CachedComponent",
-        "Type": "Class ActorComponent*",
+        "Type": "class ActorComponent*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -132,8 +156,14 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
+        "Name": "pad0x10_OQCOP[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "WwiseEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x10"
       },
@@ -142,6 +172,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_FMKMP[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
       }
     ]
   },
@@ -150,7 +186,7 @@
     "Attributes": [
       {
         "Name": "ForceFeedbackEffect",
-        "Type": "Class ForceFeedbackEffect*",
+        "Type": "class ForceFeedbackEffect*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -167,7 +203,7 @@
     "Attributes": [
       {
         "Name": "ForceFeedbackEffect",
-        "Type": "Class ForceFeedbackEffect*",
+        "Type": "class ForceFeedbackEffect*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -178,7 +214,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_1ZAQ6[0x3]",
+        "Name": "pad0x3_IBQ4J[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
@@ -188,23 +224,43 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0xc"
+      },
+      {
+        "Name": "pad0x4_JQMOG[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
   "AthenaAsyncAssetLoaderWrapper": {
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_CRPCX[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
   },
   "EventMeshAssigned": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_AD9JQ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "InlineUserDefinedStructDetails": {
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "Struct",
-        "Type": "Class ScriptStruct*",
+        "Type": "class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -215,7 +271,7 @@
     "Attributes": [
       {
         "Name": "Struct",
-        "Type": "Class ScriptStruct*",
+        "Type": "class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x0"
       }

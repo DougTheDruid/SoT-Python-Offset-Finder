@@ -7,73 +7,73 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x6a8"
       },
       {
         "Name": "OrderOfSouls_ScrollStack",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6b0"
       },
       {
         "Name": "MerchantsAliance_ScrollStack",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6b8"
       },
       {
         "Name": "Mercenary_ScrollStack",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6c0"
       },
       {
         "Name": "Legendary_ScrollStack",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6c8"
       },
       {
         "Name": "GoldHoarder_ScrollStack",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6d0"
       },
       {
         "Name": "MergedBookcaseAndDressing",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x6d8"
       },
       {
         "Name": "Company_GH",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x6e0"
       },
       {
         "Name": "Company_MA",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x6e8"
       },
       {
         "Name": "Company_OoS",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x6f0"
       },
       {
         "Name": "Company_Leg",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x6f8"
       },
       {
         "Name": "Company_Merc",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x700"
       }

@@ -6,7 +6,7 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x10_91849[0x10]",
+        "Name": "pad0x10_J3EUJ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -59,7 +59,7 @@
     "Attributes": [
       {
         "Name": "RewardMarker",
-        "Type": "Class ActorSpawnData*",
+        "Type": "class ActorSpawnData*",
         "Size": "0x8",
         "Offset": "0x28"
       },
@@ -70,7 +70,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_4ZS7W[0x4]",
+        "Name": "pad0x4_MHBTD[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"

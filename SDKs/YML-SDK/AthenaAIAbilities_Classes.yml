@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 AreaOfEffectHealAIAbility:
   Attributes:
-  - Name: pad0x10_56DMN[0x10]
+  - Name: pad0x10_PY5IS[0x10]
     Offset: '0x78'
     Size: '0x10'
     Type: char
   - Name: HealAreaOfEffectActor
     Offset: '0x88'
     Size: '0x8'
-    Type: Class Actor*
-  - Name: pad0x10_PRFJ7[0x10]
+    Type: class Actor*
+  - Name: pad0x10_XTGCG[0x10]
     Offset: '0x90'
     Size: '0x10'
     Type: char
@@ -31,7 +31,7 @@ AreaOfEffectHealAIAbilityParams:
   - Name: StatusEffectZone
     Offset: '0xd0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: MinimumTimeSpentHealing
     Offset: '0xd8'
     Size: '0x4'
@@ -61,8 +61,8 @@ BullRushAIAbility:
   - Name: CachedWorld
     Offset: '0x98'
     Size: '0x8'
-    Type: Class World*
-  - Name: pad0x18_Q40R9[0x18]
+    Type: class World*
+  - Name: pad0x18_16KDG[0x18]
     Offset: '0xa0'
     Size: '0x18'
     Type: char
@@ -76,7 +76,7 @@ BullRushAIAbilityParams:
     Offset: '0xe0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_AYH6L[0x4]
+  - Name: pad0x4_SF74N[0x4]
     Offset: '0xe4'
     Size: '0x4'
     Type: char
@@ -88,7 +88,7 @@ BullRushAIAbilityParams:
     Offset: '0xf8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_865GO[0x4]
+  - Name: pad0x4_GXNWT[0x4]
     Offset: '0xfc'
     Size: '0x4'
     Type: char
@@ -113,7 +113,7 @@ BurrowHealVFXComponent:
   - Name: VFXAsset
     Offset: '0xc8'
     Size: '0x8'
-    Type: Class ParticleSystem*
+    Type: class ParticleSystem*
   - Name: VfxSocketName
     Offset: '0xd0'
     Size: '0x8'
@@ -122,19 +122,19 @@ BurrowHealVFXComponent:
     Offset: '0xd8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_P6HSO[0x4]
+  - Name: pad0x4_75CPV[0x4]
     Offset: '0xdc'
     Size: '0x4'
     Type: char
   - Name: SpawnedVFXSystem
     Offset: '0xe0'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Type: class ParticleSystemComponent*
   - Name: IsVFXActive
     Offset: '0xe8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2f_BWIXT[0x2f]
+  - Name: pad0x2f_XUKCB[0x2f]
     Offset: '0xe9'
     Size: '0x2f'
     Type: char
@@ -183,7 +183,7 @@ EelThrowAIAbility:
   - Name: CachedBlackboardComponent
     Offset: '0x78'
     Size: '0x8'
-    Type: Class BlackboardComponent*
+    Type: class BlackboardComponent*
   ClassSize: '0x8'
   FullSize: '0x80'
   InheritedSize: '0x78'
@@ -193,7 +193,7 @@ EelThrowAIAbilityParams:
   - Name: MinMaxNumberOfAttacksBeforeEnd
     Offset: '0xc8'
     Size: '0x20'
-    Type: Struct WeightedProbabilityRange
+    Type: struct WeightedProbabilityRange
   ClassSize: '0x20'
   FullSize: '0xe8'
   InheritedSize: '0xc8'
@@ -206,14 +206,14 @@ EelThrowAIAbilityType:
   Super: AthenaAIAbilityType
 ElectricShieldBuffComponent:
   Attributes:
-  - Name: pad0x8_BFZU4[0x8]
+  - Name: pad0x8_D966V[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
   - Name: ShieldVFXAsset
     Offset: '0xd0'
     Size: '0x8'
-    Type: Class ParticleSystem*
+    Type: class ParticleSystem*
   - Name: VfxSocketName
     Offset: '0xd8'
     Size: '0x8'
@@ -221,20 +221,20 @@ ElectricShieldBuffComponent:
   - Name: StartAudioLoopEvent
     Offset: '0xe0'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: StopAudioLoopEvent
     Offset: '0xe8'
     Size: '0x8'
-    Type: Class WwiseEvent*
+    Type: class WwiseEvent*
   - Name: ShieldEffectComponent
     Offset: '0xf0'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
+    Type: class ParticleSystemComponent*
   - Name: IsShieldActive
     Offset: '0xf8'
     Size: '0x1'
     Type: bool
-  - Name: pad0xd7_29MF8[0xd7]
+  - Name: pad0xd7_E5UZT[0xd7]
     Offset: '0xf9'
     Size: '0xd7'
     Type: char
@@ -273,7 +273,11 @@ LightMeleeAttackId:
   InheritedSize: '0x28'
   Super: MeleeAttackId
 MeleeAIAbility:
-  Attributes: []
+  Attributes:
+  - Name: pad0x8_MLZIA[0x8]
+    Offset: '0x78'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x80'
   InheritedSize: '0x78'
@@ -283,7 +287,7 @@ MeleeAIAbilityParams:
   - Name: MeleeAttacks
     Offset: '0xc8'
     Size: '0x10'
-    Type: TArray<struct MeleeAttacks>
+    Type: TArray<struct MeleeAttackIdWeights>
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'
@@ -313,7 +317,11 @@ SporeCloudStatus:
   InheritedSize: '0x30'
   Super: StatusBase
 SporeExposureComponent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x38_UKAQW[0x38]
+    Offset: '0xc8'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x38'
   FullSize: '0x100'
   InheritedSize: '0xc8'
@@ -336,7 +344,7 @@ StatusResponseActivateElectricShield:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5BYIN[0x4]
+  - Name: pad0x4_ZF3TY[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char

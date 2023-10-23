@@ -12,66 +12,106 @@ ActionStateConstructionInfo:
   - Name: Id
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Type
     Offset: '0x8'
     Size: '0x8'
-    Type: Class ScriptStruct*
+    Type: class ScriptStruct*
+  - Name: pad0x18_HKI7U[0x18]
+    Offset: '0x10'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x28'
 ActionStateMessage:
   Attributes:
+  - Name: pad0x8_K7896[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Type
     Offset: '0x8'
     Size: '0x8'
-    Type: Class ScriptStruct*
+    Type: class ScriptStruct*
   ClassSize: '0x10'
 ActionStatePriorityList:
   Attributes:
   - Name: State
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Entries
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct Entries>
+    Type: TArray<struct ActionStatePriorityRelationship>
   ClassSize: '0x18'
 ActionStatePriorityRelationship:
   Attributes:
   - Name: State
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Priority
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_LHHSH[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
 ActionStatePriorityTable:
-  Attributes: []
+  Attributes:
+  - Name: pad0xa0_018RO[0xa0]
+    Offset: '0x0'
+    Size: '0xa0'
+    Type: char
   ClassSize: '0xa0'
 ActionStateSerialisableData:
   Attributes:
+  - Name: pad0x8_7OKLY[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Id
     Offset: '0x8'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Type
     Offset: '0x10'
     Size: '0x8'
-    Type: Class ScriptStruct*
+    Type: class ScriptStruct*
+  - Name: pad0x18_XSPNK[0x18]
+    Offset: '0x18'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x30'
 ActorActionStateConstructionInfo:
-  Attributes: []
+  Attributes:
+  - Name: pad0x30_H2S9N[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x30'
 EventFirstPersonAnimaticActionStateEndedClient:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_LSSFE[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EventWaitingToSpawnActionStateEndedClient:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_4XMRS[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EventWaitingToSpawnActionStateStartedClient:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_R0T6K[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 InnerTestStruct:
   Attributes:
@@ -79,93 +119,125 @@ InnerTestStruct:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_O4SZX[0x7]
+  - Name: pad0x7_H4KEK[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
   - Name: StringProp
     Offset: '0x8'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x18'
 InnerWithObjTestStruct:
   Attributes:
   - Name: ObjPointer
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   ClassSize: '0x8'
 NullActionStateConstructionInfo:
-  Attributes: []
+  Attributes:
+  - Name: pad0x30_7FBQN[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x30'
 ResetStateMachineRpc:
   Attributes:
   - Name: LatestEpochIds
     Offset: '0x0'
     Size: '0x1'
-    Type: Struct ActionStateChangeRequestId
-  - Name: pad0x4_WATZ8[0x4]
+    Type: struct ActionStateChangeRequestId
+  - Name: pad0x4_OCCF1[0x4]
     Offset: '0x1'
     Size: '0x4'
     Type: char
   - Name: LatestRequestIds
     Offset: '0x5'
     Size: '0x1'
-    Type: Struct ActionStateChangeRequestId
-  - Name: pad0xa_A5M8B[0xa]
+    Type: struct ActionStateChangeRequestId
+  - Name: pad0xa_DGYRQ[0xa]
     Offset: '0x6'
     Size: '0xa'
     Type: char
   - Name: PerTrackConstructionInfoStore
     Offset: '0x10'
     Size: '0x140'
-    Type: Struct SerialisedConstructionInfoStore
+    Type: struct SerialisedConstructionInfoStore
   ClassSize: '0x150'
 SerialisedActionStateInfo:
-  Attributes: []
+  Attributes:
+  - Name: pad0x40_CU9FR[0x40]
+    Offset: '0x0'
+    Size: '0x40'
+    Type: char
   ClassSize: '0x40'
 SerialisedActionStateMessage:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_Q0NRA[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
 SerialisedConstructionInfoStore:
   Attributes:
   - Name: SerialisedConstructionInfo
     Offset: '0x0'
     Size: '0x40'
-    Type: Struct SerialisedActionStateInfo
+    Type: struct SerialisedActionStateInfo
+  - Name: pad0x100_B075Q[0x100]
+    Offset: '0x40'
+    Size: '0x100'
+    Type: char
   ClassSize: '0x140'
 TestActionStateConstructionInfo:
   Attributes:
+  - Name: pad0x28_336FK[0x28]
+    Offset: '0x0'
+    Size: '0x28'
+    Type: char
   - Name: IntProp
     Offset: '0x28'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_H2C4C[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x30'
 TestActionStateConstructionInfoWithInner:
   Attributes:
+  - Name: pad0x28_FZVQ0[0x28]
+    Offset: '0x0'
+    Size: '0x28'
+    Type: char
   - Name: FloatProp
     Offset: '0x28'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_30C9I[0x4]
+  - Name: pad0x4_OWK7J[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
   - Name: InnerStruct
     Offset: '0x30'
     Size: '0x18'
-    Type: Struct InnerTestStruct
+    Type: struct InnerTestStruct
   ClassSize: '0x48'
 TestActionStateConstructionInfoWithObjPointers:
   Attributes:
+  - Name: pad0x28_5SABB[0x28]
+    Offset: '0x0'
+    Size: '0x28'
+    Type: char
   - Name: ObjPointer
     Offset: '0x28'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   - Name: Inner
     Offset: '0x30'
     Size: '0x8'
-    Type: Struct InnerWithObjTestStruct
+    Type: struct InnerWithObjTestStruct
   - Name: Array
     Offset: '0x38'
     Size: '0x10'
@@ -173,25 +245,53 @@ TestActionStateConstructionInfoWithObjPointers:
   ClassSize: '0x48'
 TestActionStateMessage:
   Attributes:
+  - Name: pad0x10_LQUZ1[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   - Name: TestProperty
     Offset: '0x10'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_7SKEA[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
 TestActionStateMessage2:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_9ZN07[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
 TestActionStateSerialisableData:
   Attributes:
+  - Name: pad0x30_EGJ74[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
   - Name: IntProp
     Offset: '0x30'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_XJAVL[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x38'
 TestActorActionStateConstructionInfo:
   Attributes:
+  - Name: pad0x30_OQ5L2[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
   - Name: IntProp
     Offset: '0x30'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_DAQZV[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x38'

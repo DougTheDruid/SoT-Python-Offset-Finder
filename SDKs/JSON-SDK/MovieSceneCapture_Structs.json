@@ -15,7 +15,7 @@
     "Attributes": [
       {
         "Name": "OutputDirectory",
-        "Type": "Struct DirectoryPath",
+        "Type": "struct DirectoryPath",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -26,20 +26,20 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_U3D3U[0x7]",
+        "Name": "pad0x7_1YX06[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
       },
       {
         "Name": "GameModeOverride",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x18"
       },
       {
         "Name": "OutputFormat",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -56,7 +56,7 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x2_Q5BKW[0x2]",
+        "Name": "pad0x2_OVWUQ[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x32"
@@ -74,7 +74,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_7ANUN[0x3]",
+        "Name": "pad0x3_9AYOP[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -87,7 +87,7 @@
       },
       {
         "Name": "Resolution",
-        "Type": "Struct CaptureResolution",
+        "Type": "struct CaptureResolution",
         "Size": "0x8",
         "Offset": "0x40"
       },
@@ -132,12 +132,25 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x4e"
+      },
+      {
+        "Name": "pad0x1_T7AU9[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x4f"
       }
     ]
   },
   "CaptureResolution": {
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_LL2R9[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
   },
   "CompositionGraphCapturePasses": {
     "ClassSize": "0x10",

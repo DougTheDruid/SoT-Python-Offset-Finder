@@ -2,19 +2,19 @@
 # https://github.com/DougTheDruid
 CustomMap:
   Attributes:
-  - Name: pad0x8_4Z8DN[0x8]
+  - Name: pad0x8_26OPA[0x8]
     Offset: '0x890'
     Size: '0x8'
     Type: char
   - Name: Font
     Offset: '0x898'
     Size: '0x8'
-    Type: Class Font*
+    Type: class Font*
   - Name: DisplayItems
     Offset: '0x8a0'
     Size: '0x10'
     Type: TArray<class CustomMapDisplayObjectBase*>
-  - Name: pad0x10_11PRX[0x10]
+  - Name: pad0x10_6NVKK[0x10]
     Offset: '0x8b0'
     Size: '0x10'
     Type: char
@@ -33,11 +33,11 @@ CustomMapData:
   - Name: CustomMapItemDescClass
     Offset: '0x28'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: Font
     Offset: '0x30'
     Size: '0x8'
-    Type: Class Font*
+    Type: class Font*
   - Name: MapDisplayItemList
     Offset: '0x38'
     Size: '0x10'
@@ -51,7 +51,7 @@ CustomMapDataTypeBase:
   - Name: Guid
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -61,12 +61,12 @@ CustomMapDataTypePositional:
   - Name: Position
     Offset: '0x38'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: Orientation
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_GHIT9[0x4]
+  - Name: pad0x4_INL3U[0x4]
     Offset: '0x44'
     Size: '0x4'
     Type: char
@@ -79,7 +79,7 @@ CustomMapDataTypeText:
   - Name: Text
     Offset: '0x48'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: FontScale
     Offset: '0x80'
     Size: '0x4'
@@ -88,7 +88,7 @@ CustomMapDataTypeText:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_MUK1U[0x3]
+  - Name: pad0x3_QTMH9[0x3]
     Offset: '0x85'
     Size: '0x3'
     Type: char
@@ -96,7 +96,7 @@ CustomMapDataTypeText:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_3BD39[0x4]
+  - Name: pad0x4_74ZL1[0x4]
     Offset: '0x8c'
     Size: '0x4'
     Type: char
@@ -109,7 +109,7 @@ CustomMapDisplayObjectBase:
   - Name: Guid
     Offset: '0x28'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -119,12 +119,12 @@ CustomMapDisplayObjectPositional:
   - Name: Position
     Offset: '0x38'
     Size: '0x8'
-    Type: Struct Vector2D
+    Type: struct Vector2D
   - Name: Orientation
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_2JLFK[0x4]
+  - Name: pad0x4_CQW1A[0x4]
     Offset: '0x44'
     Size: '0x4'
     Type: char
@@ -137,7 +137,7 @@ CustomMapDisplayObjectText:
   - Name: Text
     Offset: '0x48'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: FontScale
     Offset: '0x80'
     Size: '0x4'
@@ -146,7 +146,7 @@ CustomMapDisplayObjectText:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_2L0HH[0x3]
+  - Name: pad0x3_0LVD2[0x3]
     Offset: '0x85'
     Size: '0x3'
     Type: char
@@ -154,7 +154,7 @@ CustomMapDisplayObjectText:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x4c_RGMOW[0x4c]
+  - Name: pad0x4c_87GIL[0x4c]
     Offset: '0x8c'
     Size: '0x4c'
     Type: char
@@ -167,7 +167,7 @@ CustomMapSettings:
   - Name: CustomMapItemDescClass
     Offset: '0x38'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   ClassSize: '0x8'
   FullSize: '0x40'
   InheritedSize: '0x38'

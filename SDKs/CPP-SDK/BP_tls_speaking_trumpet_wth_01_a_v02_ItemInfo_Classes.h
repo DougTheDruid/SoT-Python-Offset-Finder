@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_tls_speaking_trumpet_wth_01_a_v02_ItemInfo_C: public ItemInfo
 {
 public:
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x528(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x528(0x8)
 };
 
 

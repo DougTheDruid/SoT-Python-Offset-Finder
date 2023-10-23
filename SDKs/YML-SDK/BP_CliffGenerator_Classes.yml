@@ -5,35 +5,35 @@ BP_CliffGenerator_C:
   - Name: Base_Spline
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class SplineComponent*
+    Type: class SplineComponent*
   - Name: DefaultSceneRoot
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   - Name: Use Specific Start Actor
     Offset: '0x3d8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_QE3W7[0x7]
+  - Name: pad0x7_09M30[0x7]
     Offset: '0x3d9'
     Size: '0x7'
     Type: char
   - Name: Source Start Actor
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class StaticMesh*
+    Type: class StaticMesh*
   - Name: Use Specific End Actor
     Offset: '0x3e8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_MTKUS[0x7]
+  - Name: pad0x7_KF6EK[0x7]
     Offset: '0x3e9'
     Size: '0x7'
     Type: char
   - Name: Source End Actor
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class StaticMesh*
+    Type: class StaticMesh*
   - Name: Source Actors
     Offset: '0x3f8'
     Size: '0x10'
@@ -46,7 +46,7 @@ BP_CliffGenerator_C:
     Offset: '0x40c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_B3Z7A[0x3]
+  - Name: pad0x3_3MA4H[0x3]
     Offset: '0x40d'
     Size: '0x3'
     Type: char
@@ -69,7 +69,7 @@ BP_CliffGenerator_C:
   - Name: DataArray
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<struct DataArray>
+    Type: TArray<struct BP_CliffGenerator_Struct>
   - Name: Use_Deformable(SplineMesh)
     Offset: '0x430'
     Size: '0x1'
@@ -82,14 +82,14 @@ BP_CliffGenerator_C:
     Offset: '0x432'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_WWD4C[0x1]
+  - Name: pad0x1_GWCM0[0x1]
     Offset: '0x433'
     Size: '0x1'
     Type: char
   - Name: ArrayStore
     Offset: '0x434'
     Size: '0x8'
-    Type: Struct RandomStream
+    Type: struct RandomStream
   - Name: SplineRemaninderScale
     Offset: '0x43c'
     Size: '0x4'
@@ -101,15 +101,15 @@ BP_CliffGenerator_C:
   - Name: Default_Mesh
     Offset: '0x444'
     Size: '0x10'
-    Type: Struct BP_CliffGenerator_Struct
+    Type: struct BP_CliffGenerator_Struct
   - Name: BlueprintPosition
     Offset: '0x454'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   - Name: InverseBlueprintRotation
     Offset: '0x460'
     Size: '0xc'
-    Type: Struct Rotator
+    Type: struct Rotator
   - Name: UseSpecifiedMeshAtIndex
     Offset: '0x46c'
     Size: '0x1'
@@ -138,14 +138,14 @@ BP_CliffGenerator_C:
     Offset: '0x472'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_AE63Q[0x5]
+  - Name: pad0x5_UNHQG[0x5]
     Offset: '0x473'
     Size: '0x5'
     Type: char
   - Name: GeneratedTopSpline
     Offset: '0x478'
     Size: '0x8'
-    Type: Class SplineComponent*
+    Type: class SplineComponent*
   - Name: MinTopSplineHeight
     Offset: '0x480'
     Size: '0x4'
@@ -162,7 +162,7 @@ BP_CliffGenerator_C:
     Offset: '0x486'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_K5CSD[0x1]
+  - Name: pad0x1_P0TQL[0x1]
     Offset: '0x487'
     Size: '0x1'
     Type: char
@@ -186,19 +186,19 @@ BP_CliffGenerator_C:
     Offset: '0x498'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_NCHGY[0x7]
+  - Name: pad0x7_TCU3K[0x7]
     Offset: '0x499'
     Size: '0x7'
     Type: char
   - Name: terrain_component
     Offset: '0x4a0'
     Size: '0x8'
-    Type: Class Landscape*
+    Type: class Landscape*
   - Name: UseDetailedTopSpline
     Offset: '0x4a8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_5EHFJ[0x3]
+  - Name: pad0x3_VCT7V[0x3]
     Offset: '0x4a9'
     Size: '0x3'
     Type: char
@@ -210,14 +210,14 @@ BP_CliffGenerator_C:
     Offset: '0x4b0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_FH03J[0x7]
+  - Name: pad0x7_YQUS5[0x7]
     Offset: '0x4b1'
     Size: '0x7'
     Type: char
   - Name: TagToIgnore
     Offset: '0x4b8'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: ActorsToIgnore
     Offset: '0x4c8'
     Size: '0x10'
@@ -226,22 +226,22 @@ BP_CliffGenerator_C:
     Offset: '0x4d8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_4MN17[0x3]
+  - Name: pad0x3_Y7GER[0x3]
     Offset: '0x4d9'
     Size: '0x3'
     Type: char
   - Name: HirResult
     Offset: '0x4dc'
     Size: '0x80'
-    Type: Struct HitResult
-  - Name: pad0x4_544Y1[0x4]
+    Type: struct HitResult
+  - Name: pad0x4_CLH30[0x4]
     Offset: '0x55c'
     Size: '0x4'
     Type: char
   - Name: TopSplineIntersectionPoints
     Offset: '0x560'
     Size: '0x10'
-    Type: TArray<struct TopSplineIntersectionPoints>
+    Type: TArray<struct Vector>
   - Name: Local_InternalActorsToIgnore
     Offset: '0x570'
     Size: '0x10'
@@ -249,11 +249,11 @@ BP_CliffGenerator_C:
   - Name: TopSplineColour
     Offset: '0x580'
     Size: '0x10'
-    Type: Struct LinearColor
+    Type: struct LinearColor
   - Name: BottomSplineColour
     Offset: '0x590'
     Size: '0x10'
-    Type: Struct LinearColor
+    Type: struct LinearColor
   - Name: Is Reflected
     Offset: '0x5a0'
     Size: '0x1'

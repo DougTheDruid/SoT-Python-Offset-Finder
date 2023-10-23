@@ -4,7 +4,14 @@
     "FullSize": "0x80",
     "InheritedSize": "0x28",
     "ClassSize": "0x58",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x58_UO8KV[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x28"
+      }
+    ]
   },
   "ShaderPlatformQualitySettings": {
     "Super": "Object",
@@ -14,12 +21,12 @@
     "Attributes": [
       {
         "Name": "QualityOverrides",
-        "Type": "Struct MaterialQualityOverrides",
+        "Type": "struct MaterialQualityOverrides",
         "Size": "0x4",
         "Offset": "0x28"
       },
       {
-        "Name": "pad0xc_0XAZX[0xc]",
+        "Name": "pad0xc_FSBFT[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x2c"

@@ -7,25 +7,25 @@
     "Attributes": [
       {
         "Name": "SpawnerCrewSize1",
-        "Type": "Class AIFixedWavesSpawner*",
+        "Type": "class AIFixedWavesSpawner*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "SpawnerCrewSize2",
-        "Type": "Class AIFixedWavesSpawner*",
+        "Type": "class AIFixedWavesSpawner*",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "SpawnerCrewSize3",
-        "Type": "Class AIFixedWavesSpawner*",
+        "Type": "class AIFixedWavesSpawner*",
         "Size": "0x8",
         "Offset": "0x38"
       },
       {
         "Name": "SpawnerCrewSize4",
-        "Type": "Class AIFixedWavesSpawner*",
+        "Type": "class AIFixedWavesSpawner*",
         "Size": "0x8",
         "Offset": "0x40"
       },
@@ -36,7 +36,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_J62B8[0x4]",
+        "Name": "pad0x4_WK2FY[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -57,25 +57,25 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "pad0x20_WH1E0[0x20]",
+        "Name": "pad0x20_5BZ84[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3c8"
       },
       {
         "Name": "Params",
-        "Type": "Class EnemyAIOnShipServiceDataAsset*",
+        "Type": "class EnemyAIOnShipServiceDataAsset*",
         "Size": "0x8",
         "Offset": "0x3e8"
       },
       {
         "Name": "ReplicatedEncounters",
-        "Type": "TArray<struct ReplicatedEncounters>",
+        "Type": "TArray<struct EnemyAIOnShipActiveEncounters>",
         "Size": "0x10",
         "Offset": "0x3f0"
       },
       {
-        "Name": "pad0x70_TDNN7[0x70]",
+        "Name": "pad0x70_RTSGO[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x400"
@@ -90,7 +90,7 @@
     "Attributes": [
       {
         "Name": "OceanCrawlersOnShipEncounterParams",
-        "Type": "Class EnemyAIOnShipEncounterDesc*",
+        "Type": "class EnemyAIOnShipEncounterDesc*",
         "Size": "0x8",
         "Offset": "0x28"
       }

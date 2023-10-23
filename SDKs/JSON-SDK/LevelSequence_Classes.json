@@ -7,18 +7,18 @@
     "Attributes": [
       {
         "Name": "MovieScene",
-        "Type": "Class MovieScene*",
+        "Type": "class MovieScene*",
         "Size": "0x8",
         "Offset": "0x2a8"
       },
       {
         "Name": "ObjectReferences",
-        "Type": "Struct LevelSequenceObjectReferenceMap",
+        "Type": "struct LevelSequenceObjectReferenceMap",
         "Size": "0xa0",
         "Offset": "0x2b0"
       },
       {
-        "Name": "pad0x50_M8AIM[0x50]",
+        "Name": "pad0x50_T405C[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x350"
@@ -40,12 +40,12 @@
     "Attributes": [
       {
         "Name": "SpawnablesParent",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x608"
       },
       {
-        "Name": "pad0x38_H4UJ7[0x38]",
+        "Name": "pad0x38_XI138[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x610"
@@ -72,20 +72,20 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_HMMKX[0x7]",
+        "Name": "pad0x7_7HGFR[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
       },
       {
         "Name": "BurnInClass",
-        "Type": "Struct StringClassReference",
+        "Type": "struct StringClassReference",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "Settings",
-        "Type": "Class LevelSequenceBurnInInitSettings*",
+        "Type": "class LevelSequenceBurnInInitSettings*",
         "Size": "0x8",
         "Offset": "0x40"
       }
@@ -98,7 +98,7 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "pad0x8_BYFT1[0x8]",
+        "Name": "pad0x8_UP4WC[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -110,50 +110,50 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x7_T2KAP[0x7]",
+        "Name": "pad0x7_52SR1[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3d1"
       },
       {
         "Name": "PlaybackSettings",
-        "Type": "Struct MovieSceneSequencePlaybackSettings",
+        "Type": "struct MovieSceneSequencePlaybackSettings",
         "Size": "0x28",
         "Offset": "0x3d8"
       },
       {
         "Name": "SequencePlayer",
-        "Type": "Class LevelSequencePlayer*",
+        "Type": "class LevelSequencePlayer*",
         "Size": "0x8",
         "Offset": "0x400"
       },
       {
         "Name": "LevelSequence",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x408"
       },
       {
         "Name": "BurnInOptions",
-        "Type": "Class LevelSequenceBurnInOptions*",
+        "Type": "class LevelSequenceBurnInOptions*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
         "Name": "BindingOverrides",
-        "Type": "Class MovieSceneBindingOverrides*",
+        "Type": "class MovieSceneBindingOverrides*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
         "Name": "SpawnablesParent",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
         "Name": "BurnInInstance",
-        "Type": "Class LevelSequenceBurnIn*",
+        "Type": "class LevelSequenceBurnIn*",
         "Size": "0x8",
         "Offset": "0x430"
       }
@@ -167,13 +167,13 @@
     "Attributes": [
       {
         "Name": "FrameInformation",
-        "Type": "Struct LevelSequencePlayerSnapshot",
+        "Type": "struct LevelSequencePlayerSnapshot",
         "Size": "0x90",
         "Offset": "0x230"
       },
       {
         "Name": "LevelSequenceActor",
-        "Type": "Class LevelSequenceActor*",
+        "Type": "class LevelSequenceActor*",
         "Size": "0x8",
         "Offset": "0x2c0"
       }

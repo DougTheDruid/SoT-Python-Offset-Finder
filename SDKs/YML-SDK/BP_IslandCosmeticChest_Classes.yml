@@ -5,7 +5,7 @@ BP_IslandCosmeticChest_C:
   - Name: Harbour
     Offset: '0x608'
     Size: '0x8'
-    Type: Class HarbourComponent*
+    Type: class HarbourComponent*
   ClassSize: '0x8'
   FullSize: '0x610'
   InheritedSize: '0x608'

@@ -7,43 +7,43 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x708"
       },
       {
         "Name": "Interactable",
-        "Type": "Class InteractableComponent*",
+        "Type": "class InteractableComponent*",
         "Size": "0x8",
         "Offset": "0x710"
       },
       {
         "Name": "LanternGlow",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x718"
       },
       {
         "Name": "Lantern",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x720"
       },
       {
         "Name": "Hook",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x728"
       },
       {
         "Name": "DynamicMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x730"
       },
       {
         "Name": "DynamicGlowMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x738"
       },
@@ -96,14 +96,14 @@
         "Offset": "0x768"
       },
       {
-        "Name": "pad0x3_8W2AF[0x3]",
+        "Name": "pad0x3_CGWX9[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x769"
       },
       {
         "Name": "DefaultGlowColour",
-        "Type": "Struct LinearColor",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x76c"
       },

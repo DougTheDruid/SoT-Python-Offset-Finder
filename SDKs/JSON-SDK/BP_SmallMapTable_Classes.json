@@ -6,73 +6,73 @@
     "ClassSize": "0x55",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x7b0"
       },
       {
-        "Name": "None",
-        "Type": "Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
+        "Name": "HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent",
+        "Type": "class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent*",
         "Size": "0x8",
         "Offset": "0x7b8"
       },
       {
-        "Name": "None",
-        "Type": "Class BoxComponent*",
+        "Name": "NavBlocker",
+        "Type": "class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x7c0"
       },
       {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
+        "Name": "ControlPoint",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x7c8"
       },
       {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
+        "Name": "ControlPoint",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x7d0"
       },
       {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
+        "Name": "ControlPoint",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x7d8"
       },
       {
-        "Name": "None",
-        "Type": "Class ChildActorComponent*",
+        "Name": "ControlPoint",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x7e0"
       },
       {
-        "Name": "None",
-        "Type": "Class TextureFeedbackComponent*",
+        "Name": "TextureFeedback",
+        "Type": "class TextureFeedbackComponent*",
         "Size": "0x8",
         "Offset": "0x7e8"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "Cube",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x7f0"
       },
       {
-        "Name": "None",
-        "Type": "Class StaticMeshComponent*",
+        "Name": "Map",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x7f8"
       },
       {
-        "Name": "None",
+        "Name": "ActiveRange",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x800"
       },
       {
-        "Name": "None",
+        "Name": "IsActive",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x804"

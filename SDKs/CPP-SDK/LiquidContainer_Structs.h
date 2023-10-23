@@ -11,10 +11,10 @@ struct LiquidTypeParams
 {
 public:
 	byte                                                         LiquidType;                                        // 0x0(0x1)
-	char                                                         pad0x3_0VWNH[0x3];                                 // 0x1(0x3)
-	Struct Vector                                                FogColour;                                         // 0x4(0xc)
-	Struct Vector                                                LiquidColour;                                      // 0x10(0xc)
-	Struct Vector                                                ScumColour;                                        // 0x1c(0xc)
+	char                                                         pad0x3_8T9CS[0x3];                                 // 0x1(0x3)
+	struct Vector                                                FogColour;                                         // 0x4(0xc)
+	struct Vector                                                LiquidColour;                                      // 0x10(0xc)
+	struct Vector                                                ScumColour;                                        // 0x1c(0xc)
 	float                                                        EdgeScumStart;                                     // 0x28(0x4)
 	float                                                        EdgeScumEnd;                                       // 0x2c(0x4)
 	float                                                        FogFadeDistance;                                   // 0x30(0x4)

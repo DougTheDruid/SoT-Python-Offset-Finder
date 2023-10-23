@@ -17,6 +17,7 @@ public:
 class LookingAtMysteriousNoteInputComponent: public LookingAtWieldableInputComponent
 {
 public:
+	char                                                         pad0x30_OBKDT[0x30];                               // 0x2a0(0x30)
 };
 
 
@@ -31,7 +32,7 @@ public:
 class MysteriousNotesCompletionEventsModelDataAsset: public DataAsset
 {
 public:
-	TArray<struct MysteriousNoteCompletionEvents>                MysteriousNoteCompletionEvents;                    // 0x28(0x10)
+	TArray<struct MysteriousNotesCompletionEventsModel>          MysteriousNoteCompletionEvents;                    // 0x28(0x10)
 };
 
 
@@ -41,10 +42,10 @@ class MysteriousNoteSettings: public Object
 public:
 	int                                                          LookAheadInMinutes;                                // 0x28(0x4)
 	float                                                        RequestTimeout;                                    // 0x2c(0x4)
-	Struct StringAssetReference                                  MysteriousNotesCompletionStringsAsset;             // 0x30(0x10)
-	Struct StringAssetReference                                  WieldableNoteDataAsset;                            // 0x40(0x10)
-	Struct StringAssetReference                                  Image;                                             // 0x50(0x10)
-	Struct StringAssetReference                                  NotificationBackground;                            // 0x60(0x10)
+	struct StringAssetReference                                  MysteriousNotesCompletionStringsAsset;             // 0x30(0x10)
+	struct StringAssetReference                                  WieldableNoteDataAsset;                            // 0x40(0x10)
+	struct StringAssetReference                                  Image;                                             // 0x50(0x10)
+	struct StringAssetReference                                  NotificationBackground;                            // 0x60(0x10)
 };
 
 
@@ -59,10 +60,10 @@ public:
 class WieldableMysteriousNoteLayout: public DataAsset
 {
 public:
-	Struct FText                                                 DefaultTitle;                                      // 0x28(0x38)
-	Struct FText                                                 DefaultBody;                                       // 0x60(0x38)
-	Struct WieldableMysteriousNoteLayoutItem                     DefaultNoteLayoutItem;                             // 0x98(0xe0)
-	TArray<struct NoteLayoutItems>                               NoteLayoutItems;                                   // 0x178(0x10)
+	struct FText                                                 DefaultTitle;                                      // 0x28(0x38)
+	struct FText                                                 DefaultBody;                                       // 0x60(0x38)
+	struct WieldableMysteriousNoteLayoutItem                     DefaultNoteLayoutItem;                             // 0x98(0xe0)
+	TArray<struct WieldableMysteriousNoteLayoutItem>             NoteLayoutItems;                                   // 0x178(0x10)
 };
 
 
@@ -70,8 +71,8 @@ public:
 class WieldableMysteriousNoteDataAsset: public DataAsset
 {
 public:
-	class                                                        WieldableNoteDesc;                                 // 0x28(0x8)
-	Class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x30(0x8)
+	class UClass*                                                WieldableNoteDesc;                                 // 0x28(0x8)
+	class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x30(0x8)
 };
 
 
@@ -79,11 +80,11 @@ public:
 class MysteriousNotesService: public Actor
 {
 public:
-	char                                                         pad0x28_GOJW3[0x28];                               // 0x3c8(0x28)
-	Class MysteriousNoteSettings*                                CachedNoteSettings;                                // 0x3f0(0x8)
-	Class WieldableMysteriousNoteDataAsset*                      WieldableNoteDataAsset;                            // 0x3f8(0x8)
-	Class MysteriousNotesCompletionEventsModelDataAsset*         CompletionEventsModelData;                         // 0x400(0x8)
-	char                                                         pad0x88_9ETJY[0x88];                               // 0x408(0x88)
+	char                                                         pad0x28_K35HT[0x28];                               // 0x3c8(0x28)
+	class MysteriousNoteSettings*                                CachedNoteSettings;                                // 0x3f0(0x8)
+	class WieldableMysteriousNoteDataAsset*                      WieldableNoteDataAsset;                            // 0x3f8(0x8)
+	class MysteriousNotesCompletionEventsModelDataAsset*         CompletionEventsModelData;                         // 0x400(0x8)
+	char                                                         pad0x88_BSJHI[0x88];                               // 0x408(0x88)
 };
 
 
@@ -98,12 +99,12 @@ public:
 class PlayerMysteriousNoteComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_5NED8[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_D8SH1[0x8];                                 // 0xc8(0x8)
 	bool                                                         CinematicPlayed;                                   // 0xd0(0x1)
-	char                                                         pad0xef_CNOXU[0xef];                               // 0xd1(0xef)
-	Struct ClientNoteData                                        NoteData;                                          // 0x1c0(0x18)
+	char                                                         pad0xef_RSOJL[0xef];                               // 0xd1(0xef)
+	struct ClientNoteData                                        NoteData;                                          // 0x1c0(0x18)
 	bool                                                         BeenPossessed;                                     // 0x1d8(0x1)
-	char                                                         pad0x8f_PR51X[0x8f];                               // 0x1d9(0x8f)
+	char                                                         pad0x8f_PV8U4[0x8f];                               // 0x1d9(0x8f)
 };
 
 
@@ -111,16 +112,16 @@ public:
 class WieldableMysteriousNote: public SkeletalMeshWieldableItem
 {
 public:
-	char                                                         pad0x10_9D6LG[0x10];                               // 0x7e0(0x10)
-	Class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x7f0(0x8)
+	char                                                         pad0x10_KSXMR[0x10];                               // 0x7e0(0x10)
+	class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x7f0(0x8)
 	int                                                          CanvasWidth;                                       // 0x7f8(0x4)
 	int                                                          CanvasHeight;                                      // 0x7fc(0x4)
 	float                                                        FontScale;                                         // 0x800(0x4)
-	char                                                         pad0x5c_94MXL[0x5c];                               // 0x804(0x5c)
-	Class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x860(0x8)
-	Class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x868(0x8)
-	Class InventoryItemComponent*                                InventoryItemComponent;                            // 0x870(0x8)
-	char                                                         pad0x108_0PN7Z[0x108];                             // 0x878(0x108)
+	char                                                         pad0x5c_H7CVZ[0x5c];                               // 0x804(0x5c)
+	class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x860(0x8)
+	class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x868(0x8)
+	class InventoryItemComponent*                                InventoryItemComponent;                            // 0x870(0x8)
+	char                                                         pad0x108_XID81[0x108];                             // 0x878(0x108)
 };
 
 

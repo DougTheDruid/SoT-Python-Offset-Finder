@@ -5,34 +5,38 @@ EventPlayerLoggedInPersistence:
   - Name: PlayerController
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Controller*
+    Type: class Controller*
   ClassSize: '0x8'
 EventPlayerPawnLeavingGame:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_BKGIE[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 InventoryPersistencePlayerData:
   Attributes:
   - Name: PirateIdentity
     Offset: '0x0'
     Size: '0x78'
-    Type: Struct PirateIdentity
+    Type: struct PirateIdentity
   - Name: PirateCrewId
     Offset: '0x78'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: ItemCategorySnapshots
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<struct ItemCategorySnapshots>
+    Type: TArray<struct PlayerItemCategorySnapshots>
   ClassSize: '0x98'
 PlayerItemCategorySnapshots:
   Attributes:
   - Name: ItemCategory
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: ItemSnapshots
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct ItemSnapshots>
+    Type: TArray<struct ItemSnapshot>
   ClassSize: '0x18'

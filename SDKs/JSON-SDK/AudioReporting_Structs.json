@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "ReactionType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -27,7 +27,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_5WQ65[0x4]",
+        "Name": "pad0x4_E59LY[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -45,9 +45,15 @@
     "Attributes": [
       {
         "Name": "Reaction",
-        "Type": "Class AudioReportReaction*",
+        "Type": "class AudioReportReaction*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_9GWYB[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },

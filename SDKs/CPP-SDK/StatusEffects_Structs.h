@@ -11,7 +11,8 @@ struct Status
 {
 public:
 	TArray<class Class*>                                         Type;                                              // 0x0(0x10)
-	Struct StatusDescriptor                                      Descriptor;                                        // 0x10(0x4)
+	struct StatusDescriptor                                      Descriptor;                                        // 0x10(0x4)
+	char                                                         pad0x4_GCPWA[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -28,7 +29,7 @@ struct DebugMenuStatusDefinition
 {
 public:
 	struct FName                                                 Identifier;                                        // 0x0(0x8)
-	Struct Status                                                Status;                                            // 0x8(0x18)
+	struct Status                                                Status;                                            // 0x8(0x18)
 };
 
 
@@ -37,11 +38,12 @@ struct ActiveStatusEffect
 {
 public:
 	TArray<class Class*>                                         SourceStatus;                                      // 0x0(0x10)
-	Struct StatusDescriptor                                      Descriptor;                                        // 0x10(0x4)
-	char                                                         pad0x4_EXG3K[0x4];                                 // 0x14(0x4)
+	struct StatusDescriptor                                      Descriptor;                                        // 0x10(0x4)
+	char                                                         pad0x4_Q74X8[0x4];                                 // 0x14(0x4)
 	TArray<class StatusResponse*>                                ResponseTemplates;                                 // 0x18(0x10)
 	TArray<class StatusResponse*>                                InstancedResponses;                                // 0x28(0x10)
 	bool                                                         ResponsesAreActive;                                // 0x38(0x1)
+	char                                                         pad0x17_F4RGW[0x17];                               // 0x39(0x17)
 };
 
 
@@ -60,7 +62,7 @@ struct EventAppliedStatusToTargets
 public:
 	TArray<class Class*>                                         StatusApplied;                                     // 0x0(0x10)
 	TArray<class Actor*>                                         Targets;                                           // 0x10(0x10)
-	Class Actor*                                                 StatusSource;                                      // 0x20(0x8)
+	class Actor*                                                 StatusSource;                                      // 0x20(0x8)
 };
 
 
@@ -68,8 +70,9 @@ public:
 struct DelayedStatusEffect
 {
 public:
-	Struct Status                                                StatusEffect;                                      // 0x0(0x18)
+	struct Status                                                StatusEffect;                                      // 0x0(0x18)
 	float                                                        InEffectTime;                                      // 0x18(0x4)
+	char                                                         pad0x4_CW12R[0x4];                                 // 0x1c(0x4)
 };
 
 
@@ -77,7 +80,7 @@ public:
 struct StatusEffectPersistenceKey
 {
 public:
-	Struct Status                                                AppliedStatuses;                                   // 0x0(0x18)
+	struct Status                                                AppliedStatuses;                                   // 0x0(0x18)
 };
 
 
@@ -85,7 +88,7 @@ public:
 struct ApplyStatusEvent
 {
 public:
-	Struct Status                                                StatusToApply;                                     // 0x0(0x18)
+	struct Status                                                StatusToApply;                                     // 0x0(0x18)
 };
 
 
@@ -93,6 +96,7 @@ public:
 struct BuffedTargetData
 {
 public:
+	char                                                         pad0x18_K19KM[0x18];                               // 0x0(0x18)
 };
 
 
@@ -100,6 +104,7 @@ public:
 struct EventStatusSuperSoakerEnded
 {
 public:
+	char                                                         pad0x1_6QAOC[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -107,6 +112,7 @@ public:
 struct EventStatusSuperSoakerStarted
 {
 public:
+	char                                                         pad0x1_F404K[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -114,7 +120,7 @@ public:
 struct StatusDeactivatedEvent
 {
 public:
-	Struct Guid                                                  Id;                                                // 0x0(0x10)
+	struct Guid                                                  Id;                                                // 0x0(0x10)
 	struct FName                                                 StatusName;                                        // 0x10(0x8)
 };
 
@@ -123,7 +129,7 @@ public:
 struct StatusActivatedEvent
 {
 public:
-	Struct Guid                                                  Id;                                                // 0x0(0x10)
+	struct Guid                                                  Id;                                                // 0x0(0x10)
 	struct FName                                                 StatusName;                                        // 0x10(0x8)
 };
 
@@ -145,7 +151,7 @@ public:
 	struct FName                                                 MaterialParamName;                                 // 0x0(0x8)
 	struct FName                                                 CanShowMaterialParam;                              // 0x8(0x8)
 	struct FName                                                 TintParamName;                                     // 0x10(0x8)
-	Struct LinearColor                                           TintColor;                                         // 0x18(0x10)
+	struct LinearColor                                           TintColor;                                         // 0x18(0x10)
 	float                                                        TargetEffectStrength;                              // 0x28(0x4)
 	float                                                        FadeInAcceleration;                                // 0x2c(0x4)
 };
@@ -164,7 +170,7 @@ public:
 struct EventStatusScreenSpaceParticleEffectEnded
 {
 public:
-	Class Object*                                                ParticleSystem;                                    // 0x0(0x8)
+	class Object*                                                ParticleSystem;                                    // 0x0(0x8)
 };
 
 
@@ -172,7 +178,7 @@ public:
 struct EventStatusScreenSpaceParticleEffectStarted
 {
 public:
-	Class Object*                                                ParticleSystem;                                    // 0x0(0x8)
+	class Object*                                                ParticleSystem;                                    // 0x0(0x8)
 };
 
 
@@ -182,7 +188,7 @@ struct EventStatusScreenEffectStarted
 public:
 	struct FName                                                 MaterialParamName;                                 // 0x0(0x8)
 	struct FName                                                 TintParamName;                                     // 0x8(0x8)
-	Struct LinearColor                                           TintColor;                                         // 0x10(0x10)
+	struct LinearColor                                           TintColor;                                         // 0x10(0x10)
 	float                                                        TargetEffectStrength;                              // 0x20(0x4)
 	float                                                        FadeInAcceleration;                                // 0x24(0x4)
 };
@@ -192,6 +198,7 @@ public:
 struct EventExitedSurfaceMaterialStatusZone
 {
 public:
+	char                                                         pad0x1_8D1GS[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -199,6 +206,7 @@ public:
 struct EventEnteredSurfaceMaterialStatusZone
 {
 public:
+	char                                                         pad0x10_VELV2[0x10];                               // 0x0(0x10)
 };
 
 

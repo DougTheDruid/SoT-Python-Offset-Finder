@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class BP_ShipStorageBarrel_Grog_C: public InteractableBase
 {
 public:
-	Class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x400(0x8)
-	Class TankardRefillerComponent*                              TankardRefiller;                                   // 0x408(0x8)
-	Class InteractableComponent*                                 Interactable;                                      // 0x410(0x8)
-	Class StaticMeshComponent*                                   StaticMesh;                                        // 0x418(0x8)
+	class HitRegSnapshotRedirectImpactToReplicatedMovementAttachParentComponent* HitRegSnapshotRedirectImpactToReplicatedMovementAttachParent; // 0x400(0x8)
+	class TankardRefillerComponent*                              TankardRefiller;                                   // 0x408(0x8)
+	class InteractableComponent*                                 Interactable;                                      // 0x410(0x8)
+	class StaticMeshComponent*                                   StaticMesh;                                        // 0x418(0x8)
 };
 
 

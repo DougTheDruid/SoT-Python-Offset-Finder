@@ -4,15 +4,21 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "GameEventType",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x8_N8D38[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x18"
       }
     ]
   },
@@ -21,7 +27,7 @@
     "Attributes": [
       {
         "Name": "EventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -36,6 +42,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x11"
+      },
+      {
+        "Name": "pad0x6_VSI70[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x12"
       }
     ]
   },
@@ -44,7 +56,7 @@
     "Attributes": [
       {
         "Name": "GameEventAvailabilityData",
-        "Type": "TArray<struct GameEventAvailabilityData>",
+        "Type": "TArray<struct GameEventAvailabilityTelemetryData>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -55,7 +67,7 @@
     "Attributes": [
       {
         "Name": "GameEventAvailability",
-        "Type": "Struct GameEventAvailabilityModel",
+        "Type": "struct GameEventAvailabilityModel",
         "Size": "0x20",
         "Offset": "0x0"
       }

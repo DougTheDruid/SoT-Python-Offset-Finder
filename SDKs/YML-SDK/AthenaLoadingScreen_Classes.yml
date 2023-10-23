@@ -11,15 +11,15 @@ AthenaLoadingScreenParams:
   - Name: BootLoadingScreen
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: TeleportLoadingScreen
     Offset: '0x48'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: AdventureLoadingScreens
     Offset: '0x58'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   ClassSize: '0x30'
   FullSize: '0x68'
   InheritedSize: '0x38'
@@ -64,111 +64,119 @@ SlateLoadingScreenParams:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_6MSBJ[0x7]
+  - Name: pad0x7_L0640[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
   - Name: PlaceholderSpinnerTexture
     Offset: '0x40'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: BackgroundColour
     Offset: '0x50'
     Size: '0x10'
-    Type: Struct LinearColor
-  - Name: PrimaryImage
+    Type: struct LinearColor
+  - Name: StartWithCyclingImage
     Offset: '0x60'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x7_JEA6A[0x7]
+    Offset: '0x61'
+    Size: '0x7'
+    Type: char
+  - Name: PrimaryImage
+    Offset: '0x68'
     Size: '0x30'
-    Type: Struct SlateLoadingScreenImageParams
+    Type: struct SlateLoadingScreenImageParams
   - Name: CyclingImages
-    Offset: '0x90'
+    Offset: '0x98'
     Size: '0x10'
-    Type: TArray<struct CyclingImages>
+    Type: TArray<struct SlateLoadingScreenImageParams>
   - Name: MaxNumImagesPerLoad
-    Offset: '0xa0'
+    Offset: '0xa8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_2NEA4[0x4]
-    Offset: '0xa4'
+  - Name: pad0x4_72KPD[0x4]
+    Offset: '0xac'
     Size: '0x4'
     Type: char
   - Name: SpinnerText
-    Offset: '0xa8'
+    Offset: '0xb0'
     Size: '0x38'
-    Type: Struct FText
+    Type: struct FText
   - Name: SpinnerTextColour
-    Offset: '0xe0'
+    Offset: '0xe8'
     Size: '0x30'
-    Type: Struct SlateColor
+    Type: struct SlateColor
   - Name: SpinnerTextFont
-    Offset: '0x110'
+    Offset: '0x118'
     Size: '0x40'
-    Type: Struct SlateFontInfo
+    Type: struct SlateFontInfo
   - Name: SpinnerSize
-    Offset: '0x150'
+    Offset: '0x158'
     Size: '0x4'
     Type: float
   - Name: SpinnerMargin
-    Offset: '0x154'
+    Offset: '0x15c'
     Size: '0x10'
-    Type: Struct Margin
+    Type: struct Margin
   - Name: SpinnerPadding
-    Offset: '0x164'
+    Offset: '0x16c'
     Size: '0x4'
     Type: float
   - Name: SpinnerIcon
-    Offset: '0x168'
+    Offset: '0x170'
     Size: '0x10'
-    Type: Struct StringAssetReference
+    Type: struct StringAssetReference
   - Name: TipsMargin
-    Offset: '0x178'
+    Offset: '0x180'
     Size: '0x10'
-    Type: Struct Margin
+    Type: struct Margin
   - Name: TipWrapLength
-    Offset: '0x188'
-    Size: '0x4'
-    Type: float
-  - Name: TipDisplayDuration
-    Offset: '0x18c'
-    Size: '0x4'
-    Type: float
-  - Name: TipDurationBetweenTips
     Offset: '0x190'
     Size: '0x4'
     Type: float
-  - Name: NumTipsPerImage
+  - Name: TipDisplayDuration
     Offset: '0x194'
+    Size: '0x4'
+    Type: float
+  - Name: TipDurationBetweenTips
+    Offset: '0x198'
+    Size: '0x4'
+    Type: float
+  - Name: NumTipsPerImage
+    Offset: '0x19c'
     Size: '0x4'
     Type: int
   - Name: LoadingTipFont
-    Offset: '0x198'
+    Offset: '0x1a0'
     Size: '0x40'
-    Type: Struct SlateFontInfo
+    Type: struct SlateFontInfo
   - Name: LoadingTipFontLineHeightPercentage
-    Offset: '0x1d8'
+    Offset: '0x1e0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_AIV3V[0x4]
-    Offset: '0x1dc'
+  - Name: pad0x4_Z7R4N[0x4]
+    Offset: '0x1e4'
     Size: '0x4'
     Type: char
   - Name: LoadingScreenTips
-    Offset: '0x1e0'
+    Offset: '0x1e8'
     Size: '0x10'
     Type: TArray<struct FText>
   - Name: LoadingScreenTipColour
-    Offset: '0x1f0'
+    Offset: '0x1f8'
     Size: '0x30'
-    Type: Struct SlateColor
+    Type: struct SlateColor
   - Name: AllowSyncronousAssetLoad
-    Offset: '0x220'
+    Offset: '0x228'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_AUZPR[0x7]
-    Offset: '0x221'
+  - Name: pad0x7_H8MHN[0x7]
+    Offset: '0x229'
     Size: '0x7'
     Type: char
-  ClassSize: '0x200'
-  FullSize: '0x228'
+  ClassSize: '0x208'
+  FullSize: '0x230'
   InheritedSize: '0x28'
   Super: DataAsset

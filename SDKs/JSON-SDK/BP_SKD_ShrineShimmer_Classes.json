@@ -7,43 +7,43 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x470"
       },
       {
         "Name": "surface_bio_lum",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x478"
       },
       {
         "Name": "volume_glow",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x480"
       },
       {
         "Name": "shimmer_water_00",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x488"
       },
       {
         "Name": "shimmer_air_01",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x490"
       },
       {
         "Name": "shimmer_air_00",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x498"
       },
       {
         "Name": "SharedRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x4a0"
       },
@@ -60,14 +60,14 @@
         "Offset": "0x4ac"
       },
       {
-        "Name": "pad0x3_TXANS[0x3]",
+        "Name": "pad0x3_MRJEX[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x4ad"
       },
       {
         "Name": "FadeCurve",
-        "Type": "Class TimelineComponent*",
+        "Type": "class TimelineComponent*",
         "Size": "0x8",
         "Offset": "0x4b0"
       },

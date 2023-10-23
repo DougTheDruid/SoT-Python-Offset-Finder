@@ -9,11 +9,11 @@ SessionServiceLog:
   - Name: Data
     Offset: '0x8'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: InstanceId
     Offset: '0x18'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: TimeSeconds
     Offset: '0x28'
     Size: '0x8'
@@ -22,60 +22,80 @@ SessionServiceLog:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_94EUG[0x7]
+    Offset: '0x31'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x38'
 SessionServiceLogSubscribe:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_S84EF[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 SessionServiceLogUnsubscribe:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_3GH5R[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 SessionServicePing:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_HZPOR[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 SessionServicePong:
   Attributes:
   - Name: BuildDate
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: DeviceName
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: InstanceId
     Offset: '0x20'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: InstanceName
     Offset: '0x30'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: IsConsoleBuild
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_K13W3[0x7]
+  - Name: pad0x7_991XE[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
   - Name: PlatformName
     Offset: '0x48'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: SessionId
     Offset: '0x58'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: SessionName
     Offset: '0x68'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: SessionOwner
     Offset: '0x78'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: Standalone
     Offset: '0x88'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_28M4A[0x7]
+    Offset: '0x89'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x90'

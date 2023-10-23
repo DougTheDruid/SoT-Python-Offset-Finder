@@ -5,15 +5,15 @@ BP_HullDamage_C:
   - Name: UberGraphFrame
     Offset: '0x5d0'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: HitReaction
     Offset: '0x5d8'
     Size: '0x8'
-    Type: Class HitReactionComponent*
+    Type: class HitReactionComponent*
   - Name: ImpactDecalComponent
     Offset: '0x5e0'
     Size: '0x8'
-    Type: Class BakedDecalComponent*
+    Type: class BakedDecalComponent*
   - Name: Persistent Damage Decals
     Offset: '0x5e8'
     Size: '0x10'
@@ -21,7 +21,7 @@ BP_HullDamage_C:
   - Name: Damage VFX
     Offset: '0x5f8'
     Size: '0x8'
-    Type: Class ParticleSystem*
+    Type: class ParticleSystem*
   - Name: Deferred Damage Decals
     Offset: '0x600'
     Size: '0x10'
@@ -45,7 +45,7 @@ BP_HullDamage_C:
   - Name: RandomDecalStream
     Offset: '0x620'
     Size: '0x8'
-    Type: Struct RandomStream
+    Type: struct RandomStream
   - Name: TEST_HitStrength
     Offset: '0x628'
     Size: '0x4'
@@ -57,11 +57,11 @@ BP_HullDamage_C:
   - Name: ParentShip
     Offset: '0x630'
     Size: '0x8'
-    Type: Class Ship*
+    Type: class Ship*
   - Name: CannonballHitEmitter
     Offset: '0x638'
     Size: '0x20'
-    Type: Struct WwiseEmitter
+    Type: struct WwiseEmitter
   ClassSize: '0x88'
   FullSize: '0x658'
   InheritedSize: '0x5d0'

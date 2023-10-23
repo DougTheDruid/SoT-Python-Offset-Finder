@@ -6,12 +6,12 @@ GiveEmergentVoyageGameServerRequestModel:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_HVBPA[0x4]
+  - Name: pad0x4_JQWXQ[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
   - Name: VoyageAssetPath
     Offset: '0x8'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x18'

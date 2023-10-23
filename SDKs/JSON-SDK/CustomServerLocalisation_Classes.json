@@ -13,19 +13,19 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x8_MUFV8[0x8]",
+        "Name": "pad0x8_CWHSB[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
       },
       {
         "Name": "LocalisationData",
-        "Type": "TArray<struct LocalisationData>",
+        "Type": "TArray<struct CustomServerLocalisationData>",
         "Size": "0x10",
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x80_MH5S3[0x80]",
+        "Name": "pad0x80_DOQRE[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0x3e0"

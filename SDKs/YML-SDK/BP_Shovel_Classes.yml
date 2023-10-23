@@ -5,7 +5,7 @@ BP_Shovel_C:
   - Name: UsableWieldable
     Offset: '0x8a0'
     Size: '0x8'
-    Type: Class UsableWieldableComponent*
+    Type: class UsableWieldableComponent*
   ClassSize: '0x8'
   FullSize: '0x8a8'
   InheritedSize: '0x8a0'

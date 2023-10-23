@@ -8,9 +8,9 @@
   },
   "SlateLoadingScreenParams": {
     "Super": "DataAsset",
-    "FullSize": "0x228",
+    "FullSize": "0x230",
     "InheritedSize": "0x28",
-    "ClassSize": "0x200",
+    "ClassSize": "0x208",
     "Attributes": [
       {
         "Name": "DrawBackground",
@@ -61,160 +61,172 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_6MSBJ[0x7]",
+        "Name": "pad0x7_L0640[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
       },
       {
         "Name": "PlaceholderSpinnerTexture",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "BackgroundColour",
-        "Type": "Struct LinearColor",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
-        "Name": "PrimaryImage",
-        "Type": "Struct SlateLoadingScreenImageParams",
-        "Size": "0x30",
+        "Name": "StartWithCyclingImage",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x60"
       },
       {
+        "Name": "pad0x7_JEA6A[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x61"
+      },
+      {
+        "Name": "PrimaryImage",
+        "Type": "struct SlateLoadingScreenImageParams",
+        "Size": "0x30",
+        "Offset": "0x68"
+      },
+      {
         "Name": "CyclingImages",
-        "Type": "TArray<struct CyclingImages>",
+        "Type": "TArray<struct SlateLoadingScreenImageParams>",
         "Size": "0x10",
-        "Offset": "0x90"
+        "Offset": "0x98"
       },
       {
         "Name": "MaxNumImagesPerLoad",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "pad0x4_2NEA4[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xa4"
-      },
-      {
-        "Name": "SpinnerText",
-        "Type": "Struct FText",
-        "Size": "0x38",
         "Offset": "0xa8"
       },
       {
+        "Name": "pad0x4_72KPD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xac"
+      },
+      {
+        "Name": "SpinnerText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0xb0"
+      },
+      {
         "Name": "SpinnerTextColour",
-        "Type": "Struct SlateColor",
+        "Type": "struct SlateColor",
         "Size": "0x30",
-        "Offset": "0xe0"
+        "Offset": "0xe8"
       },
       {
         "Name": "SpinnerTextFont",
-        "Type": "Struct SlateFontInfo",
+        "Type": "struct SlateFontInfo",
         "Size": "0x40",
-        "Offset": "0x110"
+        "Offset": "0x118"
       },
       {
         "Name": "SpinnerSize",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x150"
+        "Offset": "0x158"
       },
       {
         "Name": "SpinnerMargin",
-        "Type": "Struct Margin",
+        "Type": "struct Margin",
         "Size": "0x10",
-        "Offset": "0x154"
+        "Offset": "0x15c"
       },
       {
         "Name": "SpinnerPadding",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x164"
+        "Offset": "0x16c"
       },
       {
         "Name": "SpinnerIcon",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x168"
+        "Offset": "0x170"
       },
       {
         "Name": "TipsMargin",
-        "Type": "Struct Margin",
+        "Type": "struct Margin",
         "Size": "0x10",
-        "Offset": "0x178"
+        "Offset": "0x180"
       },
       {
         "Name": "TipWrapLength",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x188"
+        "Offset": "0x190"
       },
       {
         "Name": "TipDisplayDuration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x18c"
+        "Offset": "0x194"
       },
       {
         "Name": "TipDurationBetweenTips",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x190"
+        "Offset": "0x198"
       },
       {
         "Name": "NumTipsPerImage",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x194"
+        "Offset": "0x19c"
       },
       {
         "Name": "LoadingTipFont",
-        "Type": "Struct SlateFontInfo",
+        "Type": "struct SlateFontInfo",
         "Size": "0x40",
-        "Offset": "0x198"
+        "Offset": "0x1a0"
       },
       {
         "Name": "LoadingTipFontLineHeightPercentage",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1d8"
+        "Offset": "0x1e0"
       },
       {
-        "Name": "pad0x4_AIV3V[0x4]",
+        "Name": "pad0x4_Z7R4N[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x1dc"
+        "Offset": "0x1e4"
       },
       {
         "Name": "LoadingScreenTips",
         "Type": "TArray<struct FText>",
         "Size": "0x10",
-        "Offset": "0x1e0"
+        "Offset": "0x1e8"
       },
       {
         "Name": "LoadingScreenTipColour",
-        "Type": "Struct SlateColor",
+        "Type": "struct SlateColor",
         "Size": "0x30",
-        "Offset": "0x1f0"
+        "Offset": "0x1f8"
       },
       {
         "Name": "AllowSyncronousAssetLoad",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x220"
+        "Offset": "0x228"
       },
       {
-        "Name": "pad0x7_AUZPR[0x7]",
+        "Name": "pad0x7_H8MHN[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x221"
+        "Offset": "0x229"
       }
     ]
   },
@@ -226,19 +238,19 @@
     "Attributes": [
       {
         "Name": "BootLoadingScreen",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "TeleportLoadingScreen",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
         "Name": "AdventureLoadingScreens",
-        "Type": "Struct StringAssetReference",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x58"
       }

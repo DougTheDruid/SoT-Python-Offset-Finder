@@ -13,14 +13,14 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_P30H4[0x8]",
+        "Name": "pad0x8_2U6F5[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "World",
-        "Type": "Class World*",
+        "Type": "class World*",
         "Size": "0x8",
         "Offset": "0x30"
       }

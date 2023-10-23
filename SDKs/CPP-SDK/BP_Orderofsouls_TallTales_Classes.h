@@ -6,13 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18 (Full Size[0x6f0] - InheritedSize[0x6d8]
+// Size 0x18 (Full Size[0x6f8] - InheritedSize[0x6e0]
 class BP_Orderofsouls_TallTales_C: public CompanyShopkeeper
 {
 public:
-	Class CapsuleComponent*                                      SolidHits;                                         // 0x6d8(0x8)
-	Class NPCDialogComponent*                                    NPCDialog;                                         // 0x6e0(0x8)
-	Class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x6e8(0x8)
+	class CapsuleComponent*                                      SolidHits;                                         // 0x6e0(0x8)
+	class NPCDialogComponent*                                    NPCDialog;                                         // 0x6e8(0x8)
+	class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x6f0(0x8)
 };
 
 

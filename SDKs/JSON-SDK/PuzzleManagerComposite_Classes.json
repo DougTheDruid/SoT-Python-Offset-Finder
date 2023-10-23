@@ -18,14 +18,14 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x7_TIZ3G[0x7]",
+        "Name": "pad0x7_SS76T[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xf1"
       },
       {
         "Name": "Presets",
-        "Type": "TArray<struct Presets>",
+        "Type": "TArray<struct SwitchesActivatedInCorrectOrderPresetParams>",
         "Size": "0x10",
         "Offset": "0xf8"
       }

@@ -28,25 +28,25 @@
     "Attributes": [
       {
         "Name": "ActionStateMachineComponent",
-        "Type": "Class ActionStateMachineComponent*",
+        "Type": "class ActionStateMachineComponent*",
         "Size": "0x8",
         "Offset": "0x5e0"
       },
       {
         "Name": "ActionStatePriorityTableData",
-        "Type": "Class ActionStatePriorityTableData*",
+        "Type": "class ActionStatePriorityTableData*",
         "Size": "0x8",
         "Offset": "0x5e8"
       },
       {
         "Name": "ActionStateCreatorDefinition",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x5f0"
       },
       {
         "Name": "ActionStateInitialStateCreatorDefinition",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x5f8"
       }
@@ -57,7 +57,14 @@
     "FullSize": "0x3e0",
     "InheritedSize": "0x3c8",
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_ID9EN[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3c8"
+      }
+    ]
   },
   "CustomClientValidityActionState2Id": {
     "Super": "ActionStateId",
@@ -99,7 +106,14 @@
     "FullSize": "0x858",
     "InheritedSize": "0xc8",
     "ClassSize": "0x790",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x790_AS47J[0x790]",
+        "Type": "char",
+        "Size": "0x790",
+        "Offset": "0xc8"
+      }
+    ]
   },
   "ActionStateMachineInterface": {
     "Super": "Interface",
@@ -115,31 +129,31 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_PWKL0[0x8]",
+        "Name": "pad0x8_N336C[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x858"
       },
       {
         "Name": "ActionStatePriorityTableData",
-        "Type": "Class ActionStatePriorityTableData*",
+        "Type": "class ActionStatePriorityTableData*",
         "Size": "0x8",
         "Offset": "0x860"
       },
       {
         "Name": "ActionStateCreatorDefinition",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x868"
       },
       {
         "Name": "ActionStateInitialStateCreatorDefinition",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x870"
       },
       {
-        "Name": "pad0x28_0KU56[0x28]",
+        "Name": "pad0x28_HR4GJ[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x878"
@@ -159,7 +173,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_6V1JA[0x7]",
+        "Name": "pad0x7_OLZNJ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
@@ -181,13 +195,13 @@
     "Attributes": [
       {
         "Name": "StateDefaultValue",
-        "Type": "TArray<struct StateDefaultValue>",
+        "Type": "TArray<struct ActionStatePriorityRelationship>",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "PriorityTableEntry",
-        "Type": "TArray<struct PriorityTableEntry>",
+        "Type": "TArray<struct ActionStatePriorityList>",
         "Size": "0x10",
         "Offset": "0x38"
       }

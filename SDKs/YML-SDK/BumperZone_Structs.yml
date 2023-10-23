@@ -5,8 +5,16 @@ BumperZoneData:
   - Name: BumperZone
     Offset: '0x0'
     Size: '0x8'
-    Type: Class ShipBumperZone*
+    Type: class ShipBumperZone*
+  - Name: pad0x20_51ZCA[0x20]
+    Offset: '0x8'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x28'
 CachedShip:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_JM525[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'

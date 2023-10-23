@@ -7,7 +7,11 @@ RemoteActorDestructionInterface:
   InheritedSize: '0x28'
   Super: Interface
 RemoteActorDestructionService:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_MM265[0x18]
+    Offset: '0x3c8'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0x3e0'
   InheritedSize: '0x3c8'

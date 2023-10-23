@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "QueueWaitTimes",
-        "Type": "TArray<struct QueueWaitTimes>",
+        "Type": "TArray<struct ServerQueueWaitTimeModel>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -15,19 +15,19 @@
     "Attributes": [
       {
         "Name": "QueueScopeId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "AvgWaitTime",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
         "Name": "MaxWaitTime",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x18"
       }
@@ -38,19 +38,19 @@
     "Attributes": [
       {
         "Name": "ServerId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "ServerLocation",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "PrivateServerId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -62,7 +62,7 @@
       },
       {
         "Name": "PlayModeState",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x48"
       }
@@ -73,48 +73,48 @@
     "Attributes": [
       {
         "Name": "EstimatedWaitTime",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "RetryAfter",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x8"
       }
     ]
   },
   "ContestMatchmakingServerRequestModel": {
-    "ClassSize": "0xa0",
+    "ClassSize": "0xb0",
     "Attributes": [
       {
         "Name": "ServerId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "ServerAddress",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "VmId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "PrivateServerId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
         "Name": "ServerLocation",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x40"
       },
@@ -132,7 +132,7 @@
       },
       {
         "Name": "Crews",
-        "Type": "TArray<struct Crews>",
+        "Type": "TArray<struct ServerCrewModel>",
         "Size": "0x10",
         "Offset": "0x78"
       },
@@ -143,43 +143,55 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x3_09PRW[0x3]",
+        "Name": "pad0x3_R7F0P[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x89"
       },
       {
         "Name": "RequestCorrelationId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x8c"
+      },
+      {
+        "Name": "SaferSeasServerIdOverride",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x9c"
+      },
+      {
+        "Name": "pad0x4_R4VGF[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xac"
       }
     ]
   },
   "ServerCrewModel": {
-    "ClassSize": "0xb8",
+    "ClassSize": "0xc8",
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "UserId",
-        "Type": "Struct UniqueNetIdRepl",
+        "Type": "struct UniqueNetIdRepl",
         "Size": "0x18",
         "Offset": "0x10"
       },
       {
         "Name": "ServerId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "ServerAddress",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -190,14 +202,14 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_MRARZ[0x4]",
+        "Name": "pad0x4_3Y14Q[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
       },
       {
         "Name": "Positions",
-        "Type": "TArray<struct Positions>",
+        "Type": "TArray<struct Vector2D>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -214,7 +226,7 @@
         "Offset": "0x70"
       },
       {
-        "Name": "pad0x3_BBZ1B[0x3]",
+        "Name": "pad0x3_RQJSQ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x71"
@@ -233,7 +245,7 @@
       },
       {
         "Name": "RivalCrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x7c"
       },
@@ -244,28 +256,34 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x3_485JP[0x3]",
+        "Name": "pad0x3_2OZZH[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x8d"
       },
       {
         "Name": "RequestedGameEvent",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x90"
       },
       {
         "Name": "TimeWaitingForMatch",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0xa0"
       },
       {
         "Name": "ForcedStamp",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0xa8"
+      },
+      {
+        "Name": "GuildId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0xb8"
       }
     ]
   },
@@ -279,32 +297,32 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_6GU3D[0x7]",
+        "Name": "pad0x7_J84GZ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "Crews",
-        "Type": "TArray<struct Crews>",
+        "Type": "TArray<struct ServerCrewModel>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "RetryAfter",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x68"
       },
       {
         "Name": "MigrationThreshold",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x70"
       },
       {
         "Name": "ExpireAfter",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x78"
       }
@@ -312,106 +330,119 @@
   },
   "OptionalPlayModeModel": {
     "ClassSize": "0x50",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x50_9KO83[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
   },
   "ServerCrewRequestModel": {
-    "ClassSize": "0x100",
+    "ClassSize": "0x110",
     "Attributes": [
       {
         "Name": "ServerId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "VmId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "PrivateServerId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
-        "Name": "ServerLocation",
-        "Type": "Struct FString",
+        "Name": "SaferSeasServerId",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
-        "Name": "StampId",
-        "Type": "Struct FString",
+        "Name": "ServerLocation",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x40"
+      },
+      {
+        "Name": "StampId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x50"
       },
       {
         "Name": "PlayModeTags",
         "Type": "TArray<Str PlayModeTags>",
         "Size": "0x10",
-        "Offset": "0x58"
+        "Offset": "0x68"
       },
       {
         "Name": "PlayModeState",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x68"
+        "Offset": "0x78"
       },
       {
         "Name": "CrewCount",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x78"
+        "Offset": "0x88"
       },
       {
         "Name": "CrewCountBucket",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x7c"
+        "Offset": "0x8c"
       },
       {
         "Name": "CrewMin",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x80"
+        "Offset": "0x90"
       },
       {
         "Name": "CrewMax",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x84"
+        "Offset": "0x94"
       },
       {
         "Name": "CrewSessionTypes",
         "Type": "TArray<Int CrewSessionTypes>",
         "Size": "0x10",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "Crews",
-        "Type": "TArray<struct Crews>",
-        "Size": "0x10",
         "Offset": "0x98"
       },
       {
-        "Name": "Uptime",
-        "Type": "Struct Timespan",
-        "Size": "0x8",
+        "Name": "Crews",
+        "Type": "TArray<struct ExistingServerCrewModel>",
+        "Size": "0x10",
         "Offset": "0xa8"
       },
       {
+        "Name": "Uptime",
+        "Type": "struct Timespan",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
         "Name": "Contended",
-        "Type": "Struct ServerContendedModel",
+        "Type": "struct ServerContendedModel",
         "Size": "0x30",
-        "Offset": "0xb0"
+        "Offset": "0xc0"
       },
       {
         "Name": "GameEvents",
-        "Type": "Struct GameEventAvailabilityModel",
+        "Type": "struct GameEventAvailabilityModel",
         "Size": "0x20",
-        "Offset": "0xe0"
+        "Offset": "0xf0"
       }
     ]
   },
@@ -420,13 +451,13 @@
     "Attributes": [
       {
         "Name": "MainEvents",
-        "Type": "TArray<struct MainEvents>",
+        "Type": "TArray<struct GameMainEventTypeModel>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "SubEvents",
-        "Type": "TArray<struct SubEvents>",
+        "Type": "TArray<struct GameSubEventTypeModel>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -437,7 +468,7 @@
     "Attributes": [
       {
         "Name": "EventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -446,6 +477,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_OSVN7[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -454,7 +491,7 @@
     "Attributes": [
       {
         "Name": "EventName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -466,7 +503,7 @@
       },
       {
         "Name": "ExcludedCrewIds",
-        "Type": "TArray<struct ExcludedCrewIds>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -481,6 +518,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x31"
+      },
+      {
+        "Name": "pad0x6_DVU3I[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x32"
       }
     ]
   },
@@ -489,13 +532,13 @@
     "Attributes": [
       {
         "Name": "Positions",
-        "Type": "TArray<struct Positions>",
+        "Type": "TArray<struct Vector2D>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Regions",
-        "Type": "TArray<struct Regions>",
+        "Type": "TArray<struct ServerRegionModel>",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -512,7 +555,7 @@
     "Attributes": [
       {
         "Name": "Position",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -525,11 +568,11 @@
     ]
   },
   "ExistingServerCrewModel": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -546,7 +589,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_9LBQU[0x3]",
+        "Name": "pad0x3_AN7IJ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
@@ -558,22 +601,28 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_XOORF[0x4]",
+        "Name": "pad0x4_RQBO8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
       },
       {
         "Name": "TimeInMatchmaking",
-        "Type": "Struct Timespan",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x20"
       },
       {
         "Name": "ForcedStamp",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
+      },
+      {
+        "Name": "GuildId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x38"
       }
     ]
   },
@@ -582,7 +631,7 @@
     "Attributes": [
       {
         "Name": "GameFaction",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -591,6 +640,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_RYMPZ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       }
     ]
   },

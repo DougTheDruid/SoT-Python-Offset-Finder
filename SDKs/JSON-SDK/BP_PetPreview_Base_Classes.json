@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "CosmeticItemAnimation",
-        "Type": "Class CosmeticItemAnimationComponent*",
+        "Type": "class CosmeticItemAnimationComponent*",
         "Size": "0x8",
         "Offset": "0x4b0"
       }

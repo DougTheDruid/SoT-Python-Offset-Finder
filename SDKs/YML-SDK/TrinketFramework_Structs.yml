@@ -5,7 +5,7 @@ ChestEntitlementTrinketItem:
   - Name: ItemDesc
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: PlacedValue
     Offset: '0x10'
     Size: '0x4'
@@ -17,31 +17,43 @@ ChestEntitlementTrinketItem:
   - Name: OwnerGamerTag
     Offset: '0x18'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x28'
 EventTrinketSetReady:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_0AFLT[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
 RemoveInteractingPlayerFromTrinketMountpointRpc:
   Attributes:
+  - Name: pad0x10_H80IC[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   - Name: TrinketMountpointManager
     Offset: '0x10'
     Size: '0x14'
-    Type: Struct NetSubObjectPtr
+    Type: struct NetSubObjectPtr
   - Name: MountpointIndex
     Offset: '0x24'
     Size: '0x4'
     Type: int
   ClassSize: '0x28'
 RequestTrinketChestItemInfoEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_152CX[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 RequestTrinketEntitlementsUIEvent:
   Attributes:
   - Name: TrinketCategory
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x10'
 RequestTrinketLoadoutUIEvent:
   Attributes:
@@ -55,18 +67,22 @@ RequestUnequipTrinketsOfClassUIEvent:
   - Name: TrinketDesc
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x10'
 TrinketLoadout:
   Attributes:
   - Name: TrinketEntries
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct TrinketEntries>
+    Type: TArray<struct TrinketLoadoutEntry>
   - Name: TrinketOwnerXUIDs
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct TrinketOwnerXUIDs>
+    Type: TArray<struct UniqueNetIdRepl>
+  - Name: pad0x28_BH4EC[0x28]
+    Offset: '0x20'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x48'
 TrinketLoadoutEntry:
   Attributes:
@@ -84,7 +100,7 @@ TrinketLoadoutModel:
   - Name: Trinkets
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct Trinkets>
+    Type: TArray<struct TrinketLoadoutModelEntry>
   ClassSize: '0x10'
 TrinketLoadoutModelEntry:
   Attributes:
@@ -96,15 +112,19 @@ TrinketLoadoutModelEntry:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_KCYZX[0x4]
+  - Name: pad0x4_5N2TH[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
   - Name: UserId
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   ClassSize: '0x20'
 TrinketLoadoutUpdatedEvent:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_UCVJ5[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'

@@ -14,7 +14,7 @@ StructSerializerArrayTestStruct:
     Offset: '0x14'
     Size: '0x4'
     Type: int
-  - Name: pad0x8_7SS8B[0x8]
+  - Name: pad0x8_QT1ES[0x8]
     Offset: '0x18'
     Size: '0x8'
     Type: char
@@ -22,14 +22,14 @@ StructSerializerArrayTestStruct:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_MEH8W[0xc]
+  - Name: pad0xc_NO47D[0xc]
     Offset: '0x24'
     Size: '0xc'
     Type: char
   - Name: VectorArray
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<struct VectorArray>
+    Type: TArray<struct Vector>
   ClassSize: '0x40'
 StructSerializerBooleanTestStruct:
   Attributes:
@@ -41,9 +41,13 @@ StructSerializerBooleanTestStruct:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_8BM17[0x2]
+  - Name: pad0x2_PI5BG[0x2]
     Offset: '0x2'
     Size: '0x2'
+    Type: char
+  - Name: pad0x4_XSKSP[0x4]
+    Offset: '0x4'
+    Size: '0x4'
     Type: char
   ClassSize: '0x8'
 StructSerializerBuiltinTestStruct:
@@ -51,7 +55,7 @@ StructSerializerBuiltinTestStruct:
   - Name: Guid
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: Name
     Offset: '0x10'
     Size: '0x8'
@@ -59,18 +63,22 @@ StructSerializerBuiltinTestStruct:
   - Name: String
     Offset: '0x18'
     Size: '0x10'
-    Type: Struct FString
+    Type: struct FString
   - Name: Rotator
     Offset: '0x28'
     Size: '0xc'
-    Type: Struct Rotator
+    Type: struct Rotator
   - Name: Vector
     Offset: '0x34'
     Size: '0xc'
-    Type: Struct Vector
+    Type: struct Vector
   ClassSize: '0x40'
 StructSerializerNumericTestStruct:
   Attributes:
+  - Name: pad0x4_43Y52[0x4]
+    Offset: '0x0'
+    Size: '0x4'
+    Type: char
   - Name: Int32
     Offset: '0x4'
     Size: '0x4'
@@ -79,7 +87,7 @@ StructSerializerNumericTestStruct:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_T0FD4[0x1]
+  - Name: pad0x1_FL4S8[0x1]
     Offset: '0x11'
     Size: '0x1'
     Type: char
@@ -87,7 +95,7 @@ StructSerializerNumericTestStruct:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_C9HRC[0x4]
+  - Name: pad0x4_BMAWH[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -101,32 +109,32 @@ StructSerializerObjectTestStruct:
   - Name: Class
     Offset: '0x0'
     Size: '0x8'
-    Type: class
+    Type: class UClass*
   - Name: ObjectPtr
     Offset: '0x8'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   ClassSize: '0x10'
 StructSerializerTestStruct:
   Attributes:
   - Name: Numerics
     Offset: '0x0'
     Size: '0x30'
-    Type: Struct StructSerializerNumericTestStruct
+    Type: struct StructSerializerNumericTestStruct
   - Name: Booleans
     Offset: '0x30'
     Size: '0x8'
-    Type: Struct StructSerializerBooleanTestStruct
+    Type: struct StructSerializerBooleanTestStruct
   - Name: Objects
     Offset: '0x38'
     Size: '0x10'
-    Type: Struct StructSerializerObjectTestStruct
+    Type: struct StructSerializerObjectTestStruct
   - Name: Builtins
     Offset: '0x48'
     Size: '0x40'
-    Type: Struct StructSerializerBuiltinTestStruct
+    Type: struct StructSerializerBuiltinTestStruct
   - Name: Arrays
     Offset: '0x88'
     Size: '0x40'
-    Type: Struct StructSerializerArrayTestStruct
+    Type: struct StructSerializerArrayTestStruct
   ClassSize: '0xc8'

@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 struct BlueprintLiveStreamInfo
 {
 public:
-	Struct FString                                               GameName;                                          // 0x0(0x10)
-	Struct FString                                               StreamName;                                        // 0x10(0x10)
-	Struct FString                                               URL;                                               // 0x20(0x10)
+	struct FString                                               GameName;                                          // 0x0(0x10)
+	struct FString                                               StreamName;                                        // 0x10(0x10)
+	struct FString                                               URL;                                               // 0x20(0x10)
 };
 
 

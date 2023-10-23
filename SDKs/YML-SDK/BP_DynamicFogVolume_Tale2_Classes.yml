@@ -2,14 +2,14 @@
 # https://github.com/DougTheDruid
 BP_DynamicFogVolume_Tale2_C:
   Attributes:
-  - Name: pad0x7_T5VVG[0x7]
+  - Name: pad0x7_319QA[0x7]
     Offset: '0x439'
     Size: '0x7'
     Type: char
   - Name: UberGraphFrame
     Offset: '0x440'
     Size: '0x8'
-    Type: Struct PointerToUberGraphFrame
+    Type: struct PointerToUberGraphFrame
   - Name: WorldFadeDistanceStart
     Offset: '0x448'
     Size: '0x4'

@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class BP_ShipStorageBarrel_Cannonball_C: public StorageContainer
 {
 public:
-	Class ReplenishableComponent*                                Replenishable;                                     // 0x4c8(0x8)
-	Class ShipTelemetrySubjectComponent*                         ShipTelemetrySubject;                              // 0x4d0(0x8)
-	Class StorageContainerComponent*                             StorageContainer;                                  // 0x4d8(0x8)
+	class ReplenishableComponent*                                Replenishable;                                     // 0x4c8(0x8)
+	class ShipTelemetrySubjectComponent*                         ShipTelemetrySubject;                              // 0x4d0(0x8)
+	class StorageContainerComponent*                             StorageContainer;                                  // 0x4d8(0x8)
 };
 
 

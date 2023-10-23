@@ -7,61 +7,61 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x9c8"
       },
       {
         "Name": "MastTopComponent",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x9d0"
       },
       {
         "Name": "TopgallantActor",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x9d8"
       },
       {
         "Name": "MainsailActor",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x9e0"
       },
       {
         "Name": "TopsailActor",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x9e8"
       },
       {
         "Name": "Main Yard",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x9f0"
       },
       {
         "Name": "Topgallant Yard",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x9f8"
       },
       {
         "Name": "Top Yard",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa00"
       },
       {
         "Name": "MastBaseComponent",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0xa08"
       },
       {
         "Name": "Sail Parameters",
-        "Type": "TArray<struct Sail Parameters>",
+        "Type": "TArray<struct BP_SailStructure>",
         "Size": "0x10",
         "Offset": "0xa10"
       },
@@ -79,7 +79,7 @@
       },
       {
         "Name": "Sail Material",
-        "Type": "Class MaterialInstance*",
+        "Type": "class MaterialInstance*",
         "Size": "0x8",
         "Offset": "0xa40"
       },
@@ -91,13 +91,13 @@
       },
       {
         "Name": "DamageDecalRight",
-        "Type": "Class DecalComponent*",
+        "Type": "class DecalComponent*",
         "Size": "0x8",
         "Offset": "0xa58"
       },
       {
         "Name": "DamageDecalLeft",
-        "Type": "Class DecalComponent*",
+        "Type": "class DecalComponent*",
         "Size": "0x8",
         "Offset": "0xa60"
       }

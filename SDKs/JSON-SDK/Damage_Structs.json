@@ -3,10 +3,22 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
+        "Name": "pad0x10_MBBN9[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "IsKillingHit",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_05OMW[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       }
     ]
   },

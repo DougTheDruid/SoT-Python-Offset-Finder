@@ -7,19 +7,19 @@
     "Attributes": [
       {
         "Name": "UberGraphFrame",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x16f_YKKUV[0x16f]",
+        "Name": "pad0x1a8_ZYRU6[0x1a8]",
         "Type": "char",
-        "Size": "0x16f",
+        "Size": "0x1a8",
         "Offset": "0xe8"
       },
       {
         "Name": "AthenaPlayerController",
-        "Type": "Class AthenaPlayerController*",
+        "Type": "class AthenaPlayerController*",
         "Size": "0x8",
         "Offset": "0xe8"
       },
@@ -30,14 +30,14 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x7_R9ZB3[0x7]",
+        "Name": "pad0x7_1FPZZ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xf1"
       },
       {
         "Name": "MaximumRank",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xf8"
       },

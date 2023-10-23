@@ -12,43 +12,43 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x7_EI4Z0[0x7]",
+        "Name": "pad0x7_LZI1Q[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xc9"
       },
       {
         "Name": "AudioPool",
-        "Type": "Class WwiseObjectPoolWrapper*",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
       {
         "Name": "PlayMusicEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
       {
         "Name": "StopMusicEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xe0"
       },
       {
         "Name": "PlayDamagedEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xe8"
       },
       {
         "Name": "PlayDestroyedEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0xd0_DDGJZ[0xd0]",
+        "Name": "pad0xd0_TA6AX[0xd0]",
         "Type": "char",
         "Size": "0xd0",
         "Offset": "0xf8"
@@ -62,7 +62,7 @@
     "ClassSize": "0x190",
     "Attributes": [
       {
-        "Name": "pad0x20_P4OVY[0x20]",
+        "Name": "pad0x20_6494M[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3c8"
@@ -74,49 +74,49 @@
         "Offset": "0x3e8"
       },
       {
-        "Name": "pad0x4_75JB8[0x4]",
+        "Name": "pad0x4_OTUSD[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3ec"
       },
       {
         "Name": "ThirdPersonMesh",
-        "Type": "Class PrimitiveComponent*",
+        "Type": "class PrimitiveComponent*",
         "Size": "0x8",
         "Offset": "0x410"
       },
       {
         "Name": "HealthComponent",
-        "Type": "Class HealthComponent*",
+        "Type": "class HealthComponent*",
         "Size": "0x8",
         "Offset": "0x418"
       },
       {
         "Name": "AudioComponent",
-        "Type": "Class BreakableActorAudioComponent*",
+        "Type": "class BreakableActorAudioComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
       {
         "Name": "VFXComponent",
-        "Type": "Class BreakableActorVfxComponent*",
+        "Type": "class BreakableActorVfxComponent*",
         "Size": "0x8",
         "Offset": "0x428"
       },
       {
         "Name": "DamageMaterialComponent",
-        "Type": "Class BreakableActorDynamicMaterialComponent*",
+        "Type": "class BreakableActorDynamicMaterialComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
         "Name": "DamageableComponent",
-        "Type": "Class ActorDamageableComponent*",
+        "Type": "class ActorDamageableComponent*",
         "Size": "0x8",
         "Offset": "0x438"
       },
       {
-        "Name": "pad0x118_B2S6U[0x118]",
+        "Name": "pad0x118_AA4CY[0x118]",
         "Type": "char",
         "Size": "0x118",
         "Offset": "0x440"
@@ -137,7 +137,7 @@
     "ClassSize": "0x158",
     "Attributes": [
       {
-        "Name": "pad0x4_MHP89[0x4]",
+        "Name": "pad0x4_WTMF0[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc8"
@@ -173,14 +173,14 @@
         "Offset": "0xec"
       },
       {
-        "Name": "pad0x4_HL5OM[0x4]",
+        "Name": "pad0x4_MDH6L[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xf4"
       },
       {
         "Name": "TargetMesh",
-        "Type": "Class PrimitiveComponent*",
+        "Type": "class PrimitiveComponent*",
         "Size": "0x8",
         "Offset": "0xf8"
       },
@@ -192,12 +192,12 @@
       },
       {
         "Name": "BreakableActor",
-        "Type": "Class BreakableActorBase*",
+        "Type": "class BreakableActorBase*",
         "Size": "0x8",
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x108_T0YTF[0x108]",
+        "Name": "pad0x108_2ZOQD[0x108]",
         "Type": "char",
         "Size": "0x108",
         "Offset": "0x118"
@@ -209,7 +209,14 @@
     "FullSize": "0x4f0",
     "InheritedSize": "0x470",
     "ClassSize": "0x80",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x80_9TEOX[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x470"
+      }
+    ]
   },
   "BreakableActorVfxComponent": {
     "Super": "ActorComponent",
@@ -219,25 +226,25 @@
     "Attributes": [
       {
         "Name": "VFXTintColour",
-        "Type": "Struct Color",
+        "Type": "struct Color",
         "Size": "0x4",
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x4_9UW51[0x4]",
+        "Name": "pad0x4_74H6S[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xcc"
       },
       {
         "Name": "DamagedParticleSystem",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
       {
         "Name": "DestroyedParticleSystem",
-        "Type": "Class Object*",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0xd8"
       },
@@ -273,18 +280,18 @@
       },
       {
         "Name": "BreakableActor",
-        "Type": "Class BreakableActorBase*",
+        "Type": "class BreakableActorBase*",
         "Size": "0x8",
         "Offset": "0xf8"
       },
       {
         "Name": "GlowMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x100"
       },
       {
-        "Name": "pad0xb8_ESQD0[0xb8]",
+        "Name": "pad0xb8_CXX4J[0xb8]",
         "Type": "char",
         "Size": "0xb8",
         "Offset": "0x108"

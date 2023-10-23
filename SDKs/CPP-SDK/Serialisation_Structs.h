@@ -12,10 +12,10 @@ struct SerialisedTestStruct
 public:
 	int                                                          Int;                                               // 0x0(0x4)
 	float                                                        Float;                                             // 0x4(0x4)
-	Struct FString                                               String;                                            // 0x8(0x10)
+	struct FString                                               String;                                            // 0x8(0x10)
 	TArray<Int IntArray>                                         IntArray;                                          // 0x18(0x10)
-	TArray<struct StructArray>                                   StructArray;                                       // 0x28(0x10)
-	Struct SerialisedNestedStruct                                NestedStruct;                                      // 0x38(0x28)
+	TArray<struct SerialisedNestedStruct>                        StructArray;                                       // 0x28(0x10)
+	struct SerialisedNestedStruct                                NestedStruct;                                      // 0x38(0x28)
 };
 
 
@@ -23,7 +23,7 @@ public:
 struct SerialisedNestedStruct
 {
 public:
-	Struct FString                                               String;                                            // 0x0(0x10)
+	struct FString                                               String;                                            // 0x0(0x10)
 	TArray<Int IntArray>                                         IntArray;                                          // 0x10(0x10)
 	int                                                          Int;                                               // 0x20(0x4)
 	float                                                        Float;                                             // 0x24(0x4)

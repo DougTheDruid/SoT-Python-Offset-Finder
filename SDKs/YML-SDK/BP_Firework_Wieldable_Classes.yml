@@ -5,23 +5,23 @@ BP_Firework_Wieldable_C:
   - Name: UsableWieldable
     Offset: '0x7e0'
     Size: '0x8'
-    Type: Class UsableWieldableComponent*
+    Type: class UsableWieldableComponent*
   - Name: WieldableInteractable
     Offset: '0x7e8'
     Size: '0x8'
-    Type: Class WieldableInteractableComponent*
+    Type: class WieldableInteractableComponent*
   - Name: Pickupable
     Offset: '0x7f0'
     Size: '0x8'
-    Type: Class PickupableComponent*
+    Type: class PickupableComponent*
   - Name: ConsumableWieldable
     Offset: '0x7f8'
     Size: '0x8'
-    Type: Class ConsumableWieldableComponent*
+    Type: class ConsumableWieldableComponent*
   - Name: InventoryItem
     Offset: '0x800'
     Size: '0x8'
-    Type: Class InventoryItemComponent*
+    Type: class InventoryItemComponent*
   ClassSize: '0x28'
   FullSize: '0x808'
   InheritedSize: '0x7e0'

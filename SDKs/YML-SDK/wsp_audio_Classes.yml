@@ -6,18 +6,18 @@ wsp_audio_C:
     Offset: '0x3d0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_T0QD9[0x4]
+  - Name: pad0x4_1PVGG[0x4]
     Offset: '0x3d4'
     Size: '0x4'
     Type: char
   - Name: WSP_Audio_2D_Emitter
     Offset: '0x3d8'
     Size: '0x20'
-    Type: Struct WwiseEmitter
+    Type: struct WwiseEmitter
   - Name: TimeInterface
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   ClassSize: '0x30'
   FullSize: '0x400'
   InheritedSize: '0x3d0'

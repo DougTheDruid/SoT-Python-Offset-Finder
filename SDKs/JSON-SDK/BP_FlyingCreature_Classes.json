@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x420"
       },
@@ -24,7 +24,7 @@
         "Offset": "0x429"
       },
       {
-        "Name": "pad0x2_IW0O1[0x2]",
+        "Name": "pad0x2_LR4BA[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x42a"
@@ -37,13 +37,13 @@
       },
       {
         "Name": "StaticMeshComponent",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x430"
       },
       {
         "Name": "currMaterial",
-        "Type": "Class MaterialInstanceDynamic*",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x438"
       },
@@ -78,7 +78,7 @@
         "Offset": "0x45c"
       },
       {
-        "Name": "pad0x3_23NX6[0x3]",
+        "Name": "pad0x3_G95MD[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x45d"
@@ -109,7 +109,7 @@
       },
       {
         "Name": "FlockingSpread",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x470"
       },
@@ -127,7 +127,7 @@
       },
       {
         "Name": "BirdSpread",
-        "Type": "Struct Vector2D",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x480"
       },
@@ -162,7 +162,7 @@
         "Offset": "0x498"
       },
       {
-        "Name": "pad0x4_RDSYO[0x4]",
+        "Name": "pad0x4_ZCDZA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x49c"
@@ -199,7 +199,7 @@
       },
       {
         "Name": "BBox",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x4cc"
       },
@@ -228,7 +228,7 @@
         "Offset": "0x508"
       },
       {
-        "Name": "pad0x3_91SUZ[0x3]",
+        "Name": "pad0x3_E3GBD[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x509"
@@ -252,7 +252,7 @@
         "Offset": "0x514"
       },
       {
-        "Name": "ForceHibernation",
+        "Name": "forceHibernation",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x518"
@@ -264,31 +264,31 @@
         "Offset": "0x51c"
       },
       {
-        "Name": "pad0x3_X34AE[0x3]",
+        "Name": "pad0x3_CJ8WI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x51d"
       },
       {
         "Name": "HibernateBoundsExtension",
-        "Type": "Struct Vector",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x520"
       },
       {
-        "Name": "hibernationStartTime",
+        "Name": "HibernationStartTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x52c"
       },
       {
-        "Name": "hibernationEndTime",
+        "Name": "HibernationEndTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x530"
       },
       {
-        "Name": "HibernationTransitionTime",
+        "Name": "hibernationTransitionTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x534"

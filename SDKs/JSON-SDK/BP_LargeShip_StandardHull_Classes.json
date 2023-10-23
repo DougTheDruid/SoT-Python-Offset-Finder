@@ -7,19 +7,19 @@
     "Attributes": [
       {
         "Name": "Occluder",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x3f0"
       },
       {
         "Name": "Damage",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x3f8"
       },
       {
         "Name": "Art",
-        "Type": "Class ChildActorComponent*",
+        "Type": "class ChildActorComponent*",
         "Size": "0x8",
         "Offset": "0x400"
       }

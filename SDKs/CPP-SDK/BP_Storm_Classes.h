@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 class BP_Storm_C: public Storm
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x628(0x8)
-	Class StaticMeshComponent*                                   Lightning4;                                        // 0x630(0x8)
-	Class StaticMeshComponent*                                   Lightning3;                                        // 0x638(0x8)
-	Class StaticMeshComponent*                                   Lightning2;                                        // 0x640(0x8)
-	Class StaticMeshComponent*                                   Lightning1;                                        // 0x648(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x628(0x8)
+	class StaticMeshComponent*                                   Lightning4;                                        // 0x630(0x8)
+	class StaticMeshComponent*                                   Lightning3;                                        // 0x638(0x8)
+	class StaticMeshComponent*                                   Lightning2;                                        // 0x640(0x8)
+	class StaticMeshComponent*                                   Lightning1;                                        // 0x648(0x8)
 };
 
 

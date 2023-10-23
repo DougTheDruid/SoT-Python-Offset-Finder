@@ -18,7 +18,7 @@ public:
 struct ServiceMessagingUnsubscribedEvent
 {
 public:
-	Struct FString                                               RoutingKey;                                        // 0x0(0x10)
+	struct FString                                               RoutingKey;                                        // 0x0(0x10)
 };
 
 
@@ -26,7 +26,7 @@ public:
 struct ServiceMessagingSubscribedEvent
 {
 public:
-	Struct FString                                               RoutingKey;                                        // 0x0(0x10)
+	struct FString                                               RoutingKey;                                        // 0x0(0x10)
 };
 
 
@@ -34,7 +34,7 @@ public:
 struct TestStructWithNetId
 {
 public:
-	Struct UniqueNetIdRepl                                       NetId;                                             // 0x0(0x18)
+	struct UniqueNetIdRepl                                       NetId;                                             // 0x0(0x18)
 };
 
 

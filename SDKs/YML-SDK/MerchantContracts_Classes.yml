@@ -8,15 +8,15 @@ MerchantContractsBlueprintLibrary:
   Super: BlueprintFunctionLibrary
 MerchantContractsService:
   Attributes:
-  - Name: pad0x8_EP5B7[0x8]
+  - Name: pad0x8_743BD[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
   - Name: Contracts
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<struct Contracts>
-  - Name: pad0x98_BO9EU[0x98]
+    Type: TArray<struct MerchantContract>
+  - Name: pad0x98_DB5BJ[0x98]
     Offset: '0x40'
     Size: '0x98'
     Type: char
@@ -32,14 +32,14 @@ MerchantContractsServiceInterface:
   Super: Interface
 PlayerMerchantContractsComponent:
   Attributes:
-  - Name: pad0x8_SRZSS[0x8]
+  - Name: pad0x8_02HRL[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
   - Name: Contracts
     Offset: '0xd0'
     Size: '0x10'
-    Type: TArray<struct Contracts>
+    Type: TArray<struct PlayerMerchantContract>
   ClassSize: '0x18'
   FullSize: '0xe0'
   InheritedSize: '0xc8'

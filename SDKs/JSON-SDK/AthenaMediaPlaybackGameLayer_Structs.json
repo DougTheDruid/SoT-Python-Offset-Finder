@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "MediaTextureName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -13,6 +13,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_J3CJU[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       }
     ]
   },
@@ -21,13 +27,13 @@
     "Attributes": [
       {
         "Name": "MediaTextureName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "SubtitleString",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -44,7 +50,7 @@
     "Attributes": [
       {
         "Name": "MediaTextureName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -55,7 +61,7 @@
     "Attributes": [
       {
         "Name": "MediaTextureName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -66,7 +72,7 @@
     "Attributes": [
       {
         "Name": "MediaTextureName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -77,13 +83,13 @@
     "Attributes": [
       {
         "Name": "MediaTextureName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "VideoUri",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -94,27 +100,33 @@
     "Attributes": [
       {
         "Name": "MediaName",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "LowestResolution",
-        "Type": "Struct IntPoint",
+        "Type": "struct IntPoint",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
         "Name": "MedianResolution",
-        "Type": "Struct IntPoint",
+        "Type": "struct IntPoint",
         "Size": "0x8",
         "Offset": "0x18"
       },
       {
         "Name": "HighestResolution",
-        "Type": "Struct IntPoint",
+        "Type": "struct IntPoint",
         "Size": "0x8",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x18_OGMZJ[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x28"
       }
     ]
   },

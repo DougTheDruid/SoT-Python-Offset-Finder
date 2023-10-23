@@ -8,15 +8,15 @@ ActorLayerInterface:
   Super: Interface
 InstancedLayerComponent:
   Attributes:
-  - Name: pad0x8_630JC[0x8]
+  - Name: pad0x8_MYMBW[0x8]
     Offset: '0x2e0'
     Size: '0x8'
     Type: char
   - Name: InstancedLayers
     Offset: '0x2e8'
     Size: '0x10'
-    Type: TArray<struct InstancedLayers>
-  - Name: pad0x18_XLHO5[0x18]
+    Type: TArray<struct InstancedLayer>
+  - Name: pad0x18_B9RN8[0x18]
     Offset: '0x2f8'
     Size: '0x18'
     Type: char

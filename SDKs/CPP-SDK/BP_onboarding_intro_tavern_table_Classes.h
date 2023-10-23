@@ -10,17 +10,17 @@ namespace DougsSDKDumper
 class BP_onboarding_intro_tavern_table_C: public Actor
 {
 public:
-	Class ParticleSystemComponent*                               Candle VFX;                                        // 0x3c8(0x8)
-	Class OnboardingIntroLocationComponent*                      OnboardingIntroLocation;                           // 0x3d0(0x8)
-	Class StaticMeshComponent*                                   Table;                                             // 0x3d8(0x8)
-	Class StaticMeshComponent*                                   Tankard 2;                                         // 0x3e0(0x8)
-	Class StaticMeshComponent*                                   Plate 2;                                           // 0x3e8(0x8)
-	Class StaticMeshComponent*                                   Candle 3;                                          // 0x3f0(0x8)
-	Class StaticMeshComponent*                                   Candle 2;                                          // 0x3f8(0x8)
-	Class StaticMeshComponent*                                   Tankard 1;                                         // 0x400(0x8)
-	Class StaticMeshComponent*                                   Plate 1;                                           // 0x408(0x8)
-	Class StaticMeshComponent*                                   Candle 1;                                          // 0x410(0x8)
-	Class SceneComponent*                                        DefaultSceneRoot;                                  // 0x418(0x8)
+	class ParticleSystemComponent*                               Candle VFX;                                        // 0x3c8(0x8)
+	class OnboardingIntroLocationComponent*                      OnboardingIntroLocation;                           // 0x3d0(0x8)
+	class StaticMeshComponent*                                   Table;                                             // 0x3d8(0x8)
+	class StaticMeshComponent*                                   Tankard 2;                                         // 0x3e0(0x8)
+	class StaticMeshComponent*                                   Plate 2;                                           // 0x3e8(0x8)
+	class StaticMeshComponent*                                   Candle 3;                                          // 0x3f0(0x8)
+	class StaticMeshComponent*                                   Candle 2;                                          // 0x3f8(0x8)
+	class StaticMeshComponent*                                   Tankard 1;                                         // 0x400(0x8)
+	class StaticMeshComponent*                                   Plate 1;                                           // 0x408(0x8)
+	class StaticMeshComponent*                                   Candle 1;                                          // 0x410(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x418(0x8)
 };
 
 

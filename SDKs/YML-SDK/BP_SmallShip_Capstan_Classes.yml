@@ -2,15 +2,15 @@
 # https://github.com/DougTheDruid
 BP_SmallShip_Capstan_C:
   Attributes:
-  - Name: None
+  - Name: Arm1
     Offset: '0x8c8'
     Size: '0x8'
-    Type: Class ChildActorComponent*
-  - Name: None
+    Type: class ChildActorComponent*
+  - Name: Arm2
     Offset: '0x8d0'
     Size: '0x8'
-    Type: Class ChildActorComponent*
+    Type: class ChildActorComponent*
   ClassSize: '0x10'
   FullSize: '0x8d8'
   InheritedSize: '0x8c8'
-  Super: None
+  Super: BP_Base_Capstan_C

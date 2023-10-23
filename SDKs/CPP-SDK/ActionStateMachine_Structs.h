@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 struct ActorActionStateConstructionInfo
 {
 public:
+	char                                                         pad0x30_H2S9N[0x30];                               // 0x0(0x30)
 };
 
 
@@ -17,8 +18,9 @@ public:
 struct ActionStateConstructionInfo
 {
 public:
-	class                                                        Id;                                                // 0x0(0x8)
-	Class ScriptStruct*                                          Type;                                              // 0x8(0x8)
+	class UClass*                                                Id;                                                // 0x0(0x8)
+	class ScriptStruct*                                          Type;                                              // 0x8(0x8)
+	char                                                         pad0x18_HKI7U[0x18];                               // 0x10(0x18)
 };
 
 
@@ -26,8 +28,10 @@ public:
 struct ActionStateSerialisableData
 {
 public:
-	class                                                        Id;                                                // 0x8(0x8)
-	Class ScriptStruct*                                          Type;                                              // 0x10(0x8)
+	char                                                         pad0x8_7OKLY[0x8];                                 // 0x0(0x8)
+	class UClass*                                                Id;                                                // 0x8(0x8)
+	class ScriptStruct*                                          Type;                                              // 0x10(0x8)
+	char                                                         pad0x18_XSPNK[0x18];                               // 0x18(0x18)
 };
 
 
@@ -35,7 +39,8 @@ public:
 struct ActionStateMessage
 {
 public:
-	Class ScriptStruct*                                          Type;                                              // 0x8(0x8)
+	char                                                         pad0x8_K7896[0x8];                                 // 0x0(0x8)
+	class ScriptStruct*                                          Type;                                              // 0x8(0x8)
 };
 
 
@@ -51,6 +56,7 @@ public:
 struct SerialisedActionStateInfo
 {
 public:
+	char                                                         pad0x40_CU9FR[0x40];                               // 0x0(0x40)
 };
 
 
@@ -58,6 +64,7 @@ public:
 struct SerialisedActionStateMessage
 {
 public:
+	char                                                         pad0x18_Q0NRA[0x18];                               // 0x0(0x18)
 };
 
 
@@ -65,7 +72,8 @@ public:
 struct SerialisedConstructionInfoStore
 {
 public:
-	Struct SerialisedActionStateInfo                             SerialisedConstructionInfo;                        // 0x0(0x40)
+	struct SerialisedActionStateInfo                             SerialisedConstructionInfo;                        // 0x0(0x40)
+	char                                                         pad0x100_B075Q[0x100];                             // 0x40(0x100)
 };
 
 
@@ -73,11 +81,11 @@ public:
 struct ResetStateMachineRpc
 {
 public:
-	Struct ActionStateChangeRequestId                            LatestEpochIds;                                    // 0x0(0x1)
-	char                                                         pad0x4_WATZ8[0x4];                                 // 0x1(0x4)
-	Struct ActionStateChangeRequestId                            LatestRequestIds;                                  // 0x5(0x1)
-	char                                                         pad0xa_A5M8B[0xa];                                 // 0x6(0xa)
-	Struct SerialisedConstructionInfoStore                       PerTrackConstructionInfoStore;                     // 0x10(0x140)
+	struct ActionStateChangeRequestId                            LatestEpochIds;                                    // 0x0(0x1)
+	char                                                         pad0x4_OCCF1[0x4];                                 // 0x1(0x4)
+	struct ActionStateChangeRequestId                            LatestRequestIds;                                  // 0x5(0x1)
+	char                                                         pad0xa_DGYRQ[0xa];                                 // 0x6(0xa)
+	struct SerialisedConstructionInfoStore                       PerTrackConstructionInfoStore;                     // 0x10(0x140)
 };
 
 
@@ -85,7 +93,9 @@ public:
 struct TestActionStateSerialisableData
 {
 public:
+	char                                                         pad0x30_EGJ74[0x30];                               // 0x0(0x30)
 	int                                                          IntProp;                                           // 0x30(0x4)
+	char                                                         pad0x4_XJAVL[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -93,8 +103,8 @@ public:
 struct ActionStatePriorityList
 {
 public:
-	class                                                        State;                                             // 0x0(0x8)
-	TArray<struct Entries>                                       Entries;                                           // 0x8(0x10)
+	class UClass*                                                State;                                             // 0x0(0x8)
+	TArray<struct ActionStatePriorityRelationship>               Entries;                                           // 0x8(0x10)
 };
 
 
@@ -102,8 +112,9 @@ public:
 struct ActionStatePriorityRelationship
 {
 public:
-	class                                                        State;                                             // 0x0(0x8)
+	class UClass*                                                State;                                             // 0x0(0x8)
 	byte                                                         Priority;                                          // 0x8(0x1)
+	char                                                         pad0x7_LHHSH[0x7];                                 // 0x9(0x7)
 };
 
 
@@ -111,6 +122,7 @@ public:
 struct ActionStatePriorityTable
 {
 public:
+	char                                                         pad0xa0_018RO[0xa0];                               // 0x0(0xa0)
 };
 
 
@@ -118,8 +130,9 @@ public:
 struct TestActionStateConstructionInfoWithObjPointers
 {
 public:
-	Class Object*                                                ObjPointer;                                        // 0x28(0x8)
-	Struct InnerWithObjTestStruct                                Inner;                                             // 0x30(0x8)
+	char                                                         pad0x28_5SABB[0x28];                               // 0x0(0x28)
+	class Object*                                                ObjPointer;                                        // 0x28(0x8)
+	struct InnerWithObjTestStruct                                Inner;                                             // 0x30(0x8)
 	TArray<class Object*>                                        Array;                                             // 0x38(0x10)
 };
 
@@ -128,7 +141,7 @@ public:
 struct InnerWithObjTestStruct
 {
 public:
-	Class Object*                                                ObjPointer;                                        // 0x0(0x8)
+	class Object*                                                ObjPointer;                                        // 0x0(0x8)
 };
 
 
@@ -136,9 +149,10 @@ public:
 struct TestActionStateConstructionInfoWithInner
 {
 public:
+	char                                                         pad0x28_FZVQ0[0x28];                               // 0x0(0x28)
 	float                                                        FloatProp;                                         // 0x28(0x4)
-	char                                                         pad0x4_30C9I[0x4];                                 // 0x2c(0x4)
-	Struct InnerTestStruct                                       InnerStruct;                                       // 0x30(0x18)
+	char                                                         pad0x4_OWK7J[0x4];                                 // 0x2c(0x4)
+	struct InnerTestStruct                                       InnerStruct;                                       // 0x30(0x18)
 };
 
 
@@ -147,8 +161,8 @@ struct InnerTestStruct
 {
 public:
 	bool                                                         BoolProp;                                          // 0x0(0x1)
-	char                                                         pad0x7_O4SZX[0x7];                                 // 0x1(0x7)
-	Struct FString                                               StringProp;                                        // 0x8(0x10)
+	char                                                         pad0x7_H4KEK[0x7];                                 // 0x1(0x7)
+	struct FString                                               StringProp;                                        // 0x8(0x10)
 };
 
 
@@ -156,7 +170,9 @@ public:
 struct TestActionStateConstructionInfo
 {
 public:
+	char                                                         pad0x28_336FK[0x28];                               // 0x0(0x28)
 	int                                                          IntProp;                                           // 0x28(0x4)
+	char                                                         pad0x4_H2C4C[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -164,6 +180,7 @@ public:
 struct EventWaitingToSpawnActionStateEndedClient
 {
 public:
+	char                                                         pad0x1_4XMRS[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -171,6 +188,7 @@ public:
 struct EventWaitingToSpawnActionStateStartedClient
 {
 public:
+	char                                                         pad0x1_R0T6K[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -178,6 +196,7 @@ public:
 struct EventFirstPersonAnimaticActionStateEndedClient
 {
 public:
+	char                                                         pad0x1_LSSFE[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -185,6 +204,7 @@ public:
 struct NullActionStateConstructionInfo
 {
 public:
+	char                                                         pad0x30_7FBQN[0x30];                               // 0x0(0x30)
 };
 
 
@@ -192,6 +212,7 @@ public:
 struct TestActionStateMessage2
 {
 public:
+	char                                                         pad0x10_9ZN07[0x10];                               // 0x0(0x10)
 };
 
 
@@ -199,7 +220,9 @@ public:
 struct TestActionStateMessage
 {
 public:
+	char                                                         pad0x10_LQUZ1[0x10];                               // 0x0(0x10)
 	int                                                          TestProperty;                                      // 0x10(0x4)
+	char                                                         pad0x4_7SKEA[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -207,7 +230,9 @@ public:
 struct TestActorActionStateConstructionInfo
 {
 public:
+	char                                                         pad0x30_OQ5L2[0x30];                               // 0x0(0x30)
 	int                                                          IntProp;                                           // 0x30(0x4)
+	char                                                         pad0x4_DAQZV[0x4];                                 // 0x34(0x4)
 };
 
 

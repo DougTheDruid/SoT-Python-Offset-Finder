@@ -9,8 +9,8 @@ ActiveStatusEffect:
   - Name: Descriptor
     Offset: '0x10'
     Size: '0x4'
-    Type: Struct StatusDescriptor
-  - Name: pad0x4_EXG3K[0x4]
+    Type: struct StatusDescriptor
+  - Name: pad0x4_Q74X8[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -26,16 +26,24 @@ ActiveStatusEffect:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
+  - Name: pad0x17_F4RGW[0x17]
+    Offset: '0x39'
+    Size: '0x17'
+    Type: char
   ClassSize: '0x50'
 ApplyStatusEvent:
   Attributes:
   - Name: StatusToApply
     Offset: '0x0'
     Size: '0x18'
-    Type: Struct Status
+    Type: struct Status
   ClassSize: '0x18'
 BuffedTargetData:
-  Attributes: []
+  Attributes:
+  - Name: pad0x18_K19KM[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
 DebugMenuStatusDefinition:
   Attributes:
@@ -46,18 +54,22 @@ DebugMenuStatusDefinition:
   - Name: Status
     Offset: '0x8'
     Size: '0x18'
-    Type: Struct Status
+    Type: struct Status
   ClassSize: '0x20'
 DelayedStatusEffect:
   Attributes:
   - Name: StatusEffect
     Offset: '0x0'
     Size: '0x18'
-    Type: Struct Status
+    Type: struct Status
   - Name: InEffectTime
     Offset: '0x18'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_CW12R[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x20'
 EventAppliedStatusToTargets:
   Attributes:
@@ -72,13 +84,21 @@ EventAppliedStatusToTargets:
   - Name: StatusSource
     Offset: '0x20'
     Size: '0x8'
-    Type: Class Actor*
+    Type: class Actor*
   ClassSize: '0x28'
 EventEnteredSurfaceMaterialStatusZone:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_VELV2[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
 EventExitedSurfaceMaterialStatusZone:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_8D1GS[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EventStatusMaterialEffectEnded:
   Attributes:
@@ -112,7 +132,7 @@ EventStatusMaterialEffectStarted:
   - Name: TintColor
     Offset: '0x18'
     Size: '0x10'
-    Type: Struct LinearColor
+    Type: struct LinearColor
   - Name: TargetEffectStrength
     Offset: '0x28'
     Size: '0x4'
@@ -146,7 +166,7 @@ EventStatusScreenEffectStarted:
   - Name: TintColor
     Offset: '0x10'
     Size: '0x10'
-    Type: Struct LinearColor
+    Type: struct LinearColor
   - Name: TargetEffectStrength
     Offset: '0x20'
     Size: '0x4'
@@ -161,20 +181,28 @@ EventStatusScreenSpaceParticleEffectEnded:
   - Name: ParticleSystem
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   ClassSize: '0x8'
 EventStatusScreenSpaceParticleEffectStarted:
   Attributes:
   - Name: ParticleSystem
     Offset: '0x0'
     Size: '0x8'
-    Type: Class Object*
+    Type: class Object*
   ClassSize: '0x8'
 EventStatusSuperSoakerEnded:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_6QAOC[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 EventStatusSuperSoakerStarted:
-  Attributes: []
+  Attributes:
+  - Name: pad0x1_F404K[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
   ClassSize: '0x1'
 FeatureToggledStatusResponseList:
   Attributes:
@@ -196,14 +224,18 @@ Status:
   - Name: Descriptor
     Offset: '0x10'
     Size: '0x4'
-    Type: Struct StatusDescriptor
+    Type: struct StatusDescriptor
+  - Name: pad0x4_GCPWA[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
 StatusActivatedEvent:
   Attributes:
   - Name: Id
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: StatusName
     Offset: '0x10'
     Size: '0x8'
@@ -214,7 +246,7 @@ StatusDeactivatedEvent:
   - Name: Id
     Offset: '0x0'
     Size: '0x10'
-    Type: Struct Guid
+    Type: struct Guid
   - Name: StatusName
     Offset: '0x10'
     Size: '0x8'
@@ -232,5 +264,5 @@ StatusEffectPersistenceKey:
   - Name: AppliedStatuses
     Offset: '0x0'
     Size: '0x18'
-    Type: Struct Status
+    Type: struct Status
   ClassSize: '0x18'

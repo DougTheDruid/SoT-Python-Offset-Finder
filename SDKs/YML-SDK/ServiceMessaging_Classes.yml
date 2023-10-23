@@ -13,7 +13,11 @@ ServiceMessagingFunctions:
   InheritedSize: '0x28'
   Super: BlueprintFunctionLibrary
 ServiceMessagingListenerTestObject:
-  Attributes: []
+  Attributes:
+  - Name: pad0x10_TS9ZF[0x10]
+    Offset: '0x28'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

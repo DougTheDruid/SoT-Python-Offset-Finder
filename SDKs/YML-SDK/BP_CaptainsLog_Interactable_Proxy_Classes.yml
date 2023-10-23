@@ -5,7 +5,7 @@ BP_CaptainsLog_Interactable_Proxy_C:
   - Name: PlayerPosition
     Offset: '0x778'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x8'
   FullSize: '0x780'
   InheritedSize: '0x778'

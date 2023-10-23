@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 struct StructSerializerTestStruct
 {
 public:
-	Struct StructSerializerNumericTestStruct                     Numerics;                                          // 0x0(0x30)
-	Struct StructSerializerBooleanTestStruct                     Booleans;                                          // 0x30(0x8)
-	Struct StructSerializerObjectTestStruct                      Objects;                                           // 0x38(0x10)
-	Struct StructSerializerBuiltinTestStruct                     Builtins;                                          // 0x48(0x40)
-	Struct StructSerializerArrayTestStruct                       Arrays;                                            // 0x88(0x40)
+	struct StructSerializerNumericTestStruct                     Numerics;                                          // 0x0(0x30)
+	struct StructSerializerBooleanTestStruct                     Booleans;                                          // 0x30(0x8)
+	struct StructSerializerObjectTestStruct                      Objects;                                           // 0x38(0x10)
+	struct StructSerializerBuiltinTestStruct                     Builtins;                                          // 0x48(0x40)
+	struct StructSerializerArrayTestStruct                       Arrays;                                            // 0x88(0x40)
 };
 
 
@@ -25,10 +25,10 @@ public:
 	TArray<Int Int32Array>                                       Int32Array;                                        // 0x0(0x10)
 	int                                                          StaticSingleElement;                               // 0x10(0x4)
 	int                                                          StaticInt32Array;                                  // 0x14(0x4)
-	char                                                         pad0x8_7SS8B[0x8];                                 // 0x18(0x8)
+	char                                                         pad0x8_QT1ES[0x8];                                 // 0x18(0x8)
 	float                                                        StaticFloatArray;                                  // 0x20(0x4)
-	char                                                         pad0xc_MEH8W[0xc];                                 // 0x24(0xc)
-	TArray<struct VectorArray>                                   VectorArray;                                       // 0x30(0x10)
+	char                                                         pad0xc_NO47D[0xc];                                 // 0x24(0xc)
+	TArray<struct Vector>                                        VectorArray;                                       // 0x30(0x10)
 };
 
 
@@ -36,11 +36,11 @@ public:
 struct StructSerializerBuiltinTestStruct
 {
 public:
-	Struct Guid                                                  Guid;                                              // 0x0(0x10)
+	struct Guid                                                  Guid;                                              // 0x0(0x10)
 	struct FName                                                 Name;                                              // 0x10(0x8)
-	Struct FString                                               String;                                            // 0x18(0x10)
-	Struct Rotator                                               Rotator;                                           // 0x28(0xc)
-	Struct Vector                                                Vector;                                            // 0x34(0xc)
+	struct FString                                               String;                                            // 0x18(0x10)
+	struct Rotator                                               Rotator;                                           // 0x28(0xc)
+	struct Vector                                                Vector;                                            // 0x34(0xc)
 };
 
 
@@ -48,8 +48,8 @@ public:
 struct StructSerializerObjectTestStruct
 {
 public:
-	class                                                        Class;                                             // 0x0(0x8)
-	Class Object*                                                ObjectPtr;                                         // 0x8(0x8)
+	class UClass*                                                Class;                                             // 0x0(0x8)
+	class Object*                                                ObjectPtr;                                         // 0x8(0x8)
 };
 
 
@@ -59,7 +59,8 @@ struct StructSerializerBooleanTestStruct
 public:
 	bool                                                         BoolFalse;                                         // 0x0(0x1)
 	bool                                                         BoolTrue;                                          // 0x1(0x1)
-	char                                                         pad0x2_8BM17[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x2_PI5BG[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x4_XSKSP[0x4];                                 // 0x4(0x4)
 };
 
 
@@ -67,11 +68,12 @@ public:
 struct StructSerializerNumericTestStruct
 {
 public:
+	char                                                         pad0x4_43Y52[0x4];                                 // 0x0(0x4)
 	int                                                          Int32;                                             // 0x4(0x4)
 	byte                                                         UInt8;                                             // 0x10(0x1)
-	char                                                         pad0x1_T0FD4[0x1];                                 // 0x11(0x1)
+	char                                                         pad0x1_FL4S8[0x1];                                 // 0x11(0x1)
 	float                                                        Float;                                             // 0x20(0x4)
-	char                                                         pad0x4_C9HRC[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_BMAWH[0x4];                                 // 0x24(0x4)
 	double                                                       Double;                                            // 0x28(0x8)
 };
 

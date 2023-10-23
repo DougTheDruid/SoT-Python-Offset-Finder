@@ -4,13 +4,13 @@
     "Attributes": [
       {
         "Name": "PromptHandle",
-        "Type": "Struct PrioritisedPromptHandle",
+        "Type": "struct PrioritisedPromptHandle",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Prompt",
-        "Type": "Struct PrioritisedPrompt",
+        "Type": "struct PrioritisedPrompt",
         "Size": "0x60",
         "Offset": "0x10"
       }
@@ -26,26 +26,26 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_N81NT[0x7]",
+        "Name": "pad0x7_NIUG0[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "Message",
-        "Type": "Struct FText",
+        "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x8"
       },
       {
         "Name": "Key",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "PopUpMessageDesc",
-        "Type": "Class PopUpMessageDesc*",
+        "Type": "class PopUpMessageDesc*",
         "Size": "0x8",
         "Offset": "0x50"
       },
@@ -60,6 +60,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x59"
+      },
+      {
+        "Name": "pad0x6_KL7TV[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x5a"
       }
     ]
   },
@@ -68,7 +74,7 @@
     "Attributes": [
       {
         "Name": "Id",
-        "Type": "Struct Guid",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -84,14 +90,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_XPQCH[0x7]",
+        "Name": "pad0x7_XC5VD[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
       },
       {
         "Name": "Prompt",
-        "Type": "Struct PrioritisedPromptWithHandle",
+        "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x8"
       }
@@ -101,8 +107,14 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
+        "Name": "pad0x10_0REOW[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Prompt",
-        "Type": "Struct PrioritisedPromptWithHandle",
+        "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x10"
       },
@@ -111,6 +123,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x7_QYUYZ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x81"
       }
     ]
   },
@@ -119,7 +137,7 @@
     "Attributes": [
       {
         "Name": "AccessKey",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -127,20 +145,27 @@
   },
   "PromptsServiceSetupEvent": {
     "ClassSize": "0x1",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x1_KVGVB[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
   },
   "PlayerPromptTelemetryEvent": {
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Message",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Key",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       }

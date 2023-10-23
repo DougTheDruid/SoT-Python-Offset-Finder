@@ -5,11 +5,11 @@ ActorSequence:
   - Name: MovieScene
     Offset: '0x2a8'
     Size: '0x8'
-    Type: Class MovieScene*
+    Type: class MovieScene*
   - Name: ObjectReferences
     Offset: '0x2b0'
     Size: '0x20'
-    Type: Struct ActorSequenceObjectReferenceMap
+    Type: struct ActorSequenceObjectReferenceMap
   ClassSize: '0x28'
   FullSize: '0x2d0'
   InheritedSize: '0x2a8'
@@ -19,20 +19,20 @@ ActorSequenceComponent:
   - Name: PlaybackSettings
     Offset: '0xc8'
     Size: '0x28'
-    Type: Struct MovieSceneSequencePlaybackSettings
+    Type: struct MovieSceneSequencePlaybackSettings
   - Name: Sequence
     Offset: '0xf0'
     Size: '0x8'
-    Type: Class ActorSequence*
+    Type: class ActorSequence*
   - Name: SequencePlayer
     Offset: '0xf8'
     Size: '0x8'
-    Type: Class ActorSequencePlayer*
+    Type: class ActorSequencePlayer*
   - Name: bAutoPlay
     Offset: '0x100'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_D5F60[0x7]
+  - Name: pad0x7_W1IY4[0x7]
     Offset: '0x101'
     Size: '0x7'
     Type: char

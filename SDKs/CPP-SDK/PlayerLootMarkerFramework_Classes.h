@@ -17,13 +17,13 @@ public:
 class PlayerLootMarkerService: public Actor
 {
 public:
-	char                                                         pad0x8_7D15X[0x8];                                 // 0x3c8(0x8)
-	Class PlayerLootMarkerServiceParams*                         Params;                                            // 0x3d0(0x8)
-	char                                                         pad0x20_7CFOC[0x20];                               // 0x3d8(0x20)
+	char                                                         pad0x8_S55TG[0x8];                                 // 0x3c8(0x8)
+	class PlayerLootMarkerServiceParams*                         Params;                                            // 0x3d0(0x8)
+	char                                                         pad0x20_KKQ70[0x20];                               // 0x3d8(0x20)
 	TArray<Weakclass ShortRangeMarkers>                          ShortRangeMarkers;                                 // 0x3f8(0x10)
-	char                                                         pad0x118_XGGFV[0x118];                             // 0x408(0x118)
-	TArray<struct BatchData>                                     BatchData;                                         // 0x520(0x10)
-	char                                                         pad0x10_3D0RZ[0x10];                               // 0x530(0x10)
+	char                                                         pad0x118_NC7I4[0x118];                             // 0x408(0x118)
+	TArray<struct PlayerLootMarkerWorldEdgeBatchData>            BatchData;                                         // 0x520(0x10)
+	char                                                         pad0x10_1BRRK[0x10];                               // 0x530(0x10)
 };
 
 
@@ -31,9 +31,9 @@ public:
 class PlayerLootMarkerServiceParams: public DataAsset
 {
 public:
-	Class ShortRangeMarkerDataAsset*                             MarkerDataAsset;                                   // 0x28(0x8)
+	class ShortRangeMarkerDataAsset*                             MarkerDataAsset;                                   // 0x28(0x8)
 	float                                                        JettisonMaxMarkerDistance;                         // 0x30(0x4)
-	char                                                         pad0x4_1G0NO[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_8US6Z[0x4];                                 // 0x34(0x4)
 };
 
 

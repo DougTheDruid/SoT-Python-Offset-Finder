@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 struct EventOptimalInteractionObjectChanged
 {
 public:
-	Class Object*                                                PreviousFocusObject;                               // 0x0(0x8)
-	Class Object*                                                NewFocusObject;                                    // 0x8(0x8)
+	class Object*                                                PreviousFocusObject;                               // 0x0(0x8)
+	class Object*                                                NewFocusObject;                                    // 0x8(0x8)
 };
 
 
@@ -28,8 +28,9 @@ public:
 struct IsNewInteractingPlayerCondition
 {
 public:
-	Struct ConditionContextPayloadSelectorInstance               PlayerPayloadSelector;                             // 0x8(0x20)
-	Struct ConditionContextPayloadSelectorInstance               InteractablePayloadSelector;                       // 0x28(0x20)
+	char                                                         pad0x8_3BE0G[0x8];                                 // 0x0(0x8)
+	struct ConditionContextPayloadSelectorInstance               PlayerPayloadSelector;                             // 0x8(0x20)
+	struct ConditionContextPayloadSelectorInstance               InteractablePayloadSelector;                       // 0x28(0x20)
 };
 
 

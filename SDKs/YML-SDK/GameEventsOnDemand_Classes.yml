@@ -8,53 +8,53 @@ EnvQueryGenerator_SeaBasedGameEventOnDemandLocations:
   Super: EnvQueryGenerator
 GameEventsOnDemandAvailabilityService:
   Attributes:
-  - Name: pad0x40_JLXLD[0x40]
+  - Name: pad0xa0_J1MB1[0xa0]
     Offset: '0x28'
-    Size: '0x40'
+    Size: '0xa0'
     Type: char
   - Name: World
-    Offset: '0x68'
+    Offset: '0xc8'
     Size: '0x8'
-    Type: Class World*
-  - Name: pad0x18_O7WBT[0x18]
-    Offset: '0x70'
+    Type: class World*
+  - Name: pad0x18_8CH6V[0x18]
+    Offset: '0xd0'
     Size: '0x18'
     Type: char
-  ClassSize: '0x60'
-  FullSize: '0x88'
+  ClassSize: '0xc0'
+  FullSize: '0xe8'
   InheritedSize: '0x28'
   Super: Object
 GameEventsOnDemandLoserTunnelService:
   Attributes:
-  - Name: pad0x8_Z1UCV[0x8]
+  - Name: pad0x8_LOBYD[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
   - Name: World
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class World*
-  - Name: pad0x58_OAVIB[0x58]
+    Type: class World*
+  - Name: pad0x58_HOIBE[0x58]
     Offset: '0x3d8'
     Size: '0x58'
     Type: char
   - Name: LoserTunnelVoyageDescDataAsset
     Offset: '0x430'
     Size: '0x8'
-    Type: Class VoyageDescDataAsset*
-  - Name: pad0x50_GUUU2[0x50]
+    Type: class VoyageDescDataAsset*
+  - Name: pad0x50_NXETH[0x50]
     Offset: '0x438'
     Size: '0x50'
     Type: char
   - Name: TrackedCrews
     Offset: '0x488'
     Size: '0x10'
-    Type: TArray<struct TrackedCrews>
+    Type: TArray<struct GameEventsOnDemandLoserTunnelCrewData>
   - Name: TemporaryBannerTag
     Offset: '0x498'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x68_KWF9T[0x68]
+  - Name: pad0x68_MFW3J[0x68]
     Offset: '0x4a0'
     Size: '0x68'
     Type: char

@@ -6,12 +6,12 @@ RegionAssetsList:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_X1XDY[0x7]
+  - Name: pad0x7_P88YR[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
   - Name: CachedAssetsForRegion
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<struct CachedAssetsForRegion>
+    Type: TArray<struct StringAssetReference>
   ClassSize: '0x18'

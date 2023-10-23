@@ -6,20 +6,20 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "None",
-        "Type": "Struct PointerToUberGraphFrame",
+        "Name": "UberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x3d8"
       },
       {
-        "Name": "None",
-        "Type": "Class ParticleSystemComponent*",
+        "Name": "vfx_fire_bin",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "None",
-        "Type": "Class PointLightComponent*",
+        "Name": "PointLight",
+        "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x3e8"
       }

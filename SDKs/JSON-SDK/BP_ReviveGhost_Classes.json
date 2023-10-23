@@ -7,31 +7,31 @@
     "Attributes": [
       {
         "Name": "AnimNotifyWwiseEmitter",
-        "Type": "Class AnimNotifyWwiseEmitterComponent*",
+        "Type": "class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
         "Offset": "0x628"
       },
       {
         "Name": "Cord_Ribbons",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x630"
       },
       {
         "Name": "Cord_Outer_02",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x638"
       },
       {
         "Name": "Cord_Outer_01",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x640"
       },
       {
         "Name": "Cord_Inner",
-        "Type": "Class StaticMeshComponent*",
+        "Type": "class StaticMeshComponent*",
         "Size": "0x8",
         "Offset": "0x648"
       }

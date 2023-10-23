@@ -2,62 +2,62 @@
 # https://github.com/DougTheDruid
 BP_ghostship_candle_01_a_movable_C:
   Attributes:
-  - Name: None
+  - Name: StaticMesh1
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: ParticleSystem
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: None
+    Type: class ParticleSystemComponent*
+  - Name: StaticMesh
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: vfx_tavern_candle_looping_014
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: None
+    Type: class ParticleSystemComponent*
+  - Name: vfx_tavern_candle_looping_013
     Offset: '0x3e8'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: None
+    Type: class ParticleSystemComponent*
+  - Name: vfx_tavern_candle_looping_012
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: None
+    Type: class ParticleSystemComponent*
+  - Name: vfx_tavern_candle_looping_011
     Offset: '0x3f8'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: None
+    Type: class ParticleSystemComponent*
+  - Name: vfx_tavern_candle_looping_01
     Offset: '0x400'
     Size: '0x8'
-    Type: Class ParticleSystemComponent*
-  - Name: None
+    Type: class ParticleSystemComponent*
+  - Name: StaticMeshComponent04
     Offset: '0x408'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent03
     Offset: '0x410'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent02
     Offset: '0x418'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent01
     Offset: '0x420'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: StaticMeshComponent0
     Offset: '0x428'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
-  - Name: None
+    Type: class StaticMeshComponent*
+  - Name: SharedRoot
     Offset: '0x430'
     Size: '0x8'
-    Type: Class SceneComponent*
+    Type: class SceneComponent*
   ClassSize: '0x70'
   FullSize: '0x438'
   InheritedSize: '0x3c8'

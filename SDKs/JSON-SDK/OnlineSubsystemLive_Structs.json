@@ -4,25 +4,25 @@
     "Attributes": [
       {
         "Name": "Achievements",
-        "Type": "TArray<struct Achievements>",
+        "Type": "TArray<struct AchievementProgressXblRequestModel>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Action",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "ServiceConfigId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
         "Name": "UserId",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -33,9 +33,15 @@
     "Attributes": [
       {
         "Name": "Id",
-        "Type": "Struct FString",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_9Q47Z[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },

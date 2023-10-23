@@ -6,7 +6,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x38_WV2JH[0x38]",
+        "Name": "pad0x38_G635E[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0xc8"
@@ -19,7 +19,7 @@
       },
       {
         "Name": "OrientationAdjustmentOnRetractFlags",
-        "Type": "Struct RetractorOrientationAdjustmentFlags",
+        "Type": "struct RetractorOrientationAdjustmentFlags",
         "Size": "0x3",
         "Offset": "0x108"
       },
@@ -48,7 +48,7 @@
         "Offset": "0x10e"
       },
       {
-        "Name": "pad0x1_879GO[0x1]",
+        "Name": "pad0x1_E4C8Y[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x10f"
@@ -81,7 +81,14 @@
     "FullSize": "0x120",
     "InheritedSize": "0x110",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_6MI9Q[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x110"
+      }
+    ]
   },
   "RetractorComponent": {
     "Super": "ActorComponent",
@@ -90,25 +97,25 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x48_QZSK3[0x48]",
+        "Name": "pad0x48_J9G0Q[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0xc8"
       },
       {
         "Name": "RetractDestinationComponent",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x110"
       },
       {
         "Name": "RetractingComponent",
-        "Type": "Class SceneComponent*",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x118"
       },
       {
-        "Name": "pad0x8_Y8JRV[0x8]",
+        "Name": "pad0x8_NNV6H[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x120"

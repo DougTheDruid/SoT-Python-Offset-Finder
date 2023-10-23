@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 class DeliverableRequirementBase: public Object
 {
 public:
+	char                                                         pad0x8_MPVBX[0x8];                                 // 0x28(0x8)
 };
 
 
@@ -31,9 +32,9 @@ public:
 class DeliverableComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x10_VGD2T[0x10];                               // 0xc8(0x10)
-	Class DeliverableRequirementsDataAsset*                      DeliveryRequirementsAsset;                         // 0xd8(0x8)
-	char                                                         pad0x8_EX3O6[0x8];                                 // 0xe0(0x8)
+	char                                                         pad0x10_B877R[0x10];                               // 0xc8(0x10)
+	class DeliverableRequirementsDataAsset*                      DeliveryRequirementsAsset;                         // 0xd8(0x8)
+	char                                                         pad0x8_NYWR3[0x8];                                 // 0xe0(0x8)
 };
 
 
@@ -41,8 +42,8 @@ public:
 class DeliverableRedirectionComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_7BGJ5[0x8];                                 // 0xc8(0x8)
-	Class DeliverableRedirectionContextBase*                     Context;                                           // 0xd0(0x8)
+	char                                                         pad0x8_E0U13[0x8];                                 // 0xc8(0x8)
+	class DeliverableRedirectionContextBase*                     Context;                                           // 0xd0(0x8)
 };
 
 
@@ -65,7 +66,7 @@ class DeliverableRedirectionCompositeContext: public DeliverableRedirectionConte
 {
 public:
 	TArray<class DeliverableRedirectionContextBase*>             Contexts;                                          // 0x28(0x10)
-	char                                                         pad0x18_5W6LN[0x18];                               // 0x38(0x18)
+	char                                                         pad0x18_FH384[0x18];                               // 0x38(0x18)
 };
 
 
@@ -80,7 +81,7 @@ public:
 class DeliverableRedirectionContextHandlerBase: public Object
 {
 public:
-	Class DeliverableRedirectionDestinationDescriptorBase*       DestinationDescriptor;                             // 0x28(0x8)
+	class DeliverableRedirectionDestinationDescriptorBase*       DestinationDescriptor;                             // 0x28(0x8)
 };
 
 
@@ -88,7 +89,7 @@ public:
 class DeliverableRedirectionLiteralDestinationDescriptor: public DeliverableRedirectionDestinationDescriptorBase
 {
 public:
-	Struct FText                                                 Destination;                                       // 0x28(0x38)
+	struct FText                                                 Destination;                                       // 0x28(0x38)
 };
 
 
@@ -97,7 +98,7 @@ class DeliverableRequirementsDataAsset: public DataAsset
 {
 public:
 	TArray<class DeliverableRequirementBase*>                    Requirements;                                      // 0x28(0x10)
-	Struct DeliverableRequirementFeatureOverride                 FeatureOverrideRequirements;                       // 0x38(0x18)
+	struct DeliverableRequirementFeatureOverride                 FeatureOverrideRequirements;                       // 0x38(0x18)
 };
 
 

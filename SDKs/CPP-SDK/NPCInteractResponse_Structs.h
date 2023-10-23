@@ -10,8 +10,8 @@ namespace DougsSDKDumper
 struct NPCInteractResponseStruct
 {
 public:
-	class                                                        InteractResponseType;                              // 0x0(0x8)
-	Class AnimSequence*                                          StateAnim;                                         // 0x8(0x8)
+	class UClass*                                                InteractResponseType;                              // 0x0(0x8)
+	class AnimSequence*                                          StateAnim;                                         // 0x8(0x8)
 };
 
 

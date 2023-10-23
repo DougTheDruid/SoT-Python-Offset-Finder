@@ -19,7 +19,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x28_EI0KC[0x28]",
+        "Name": "pad0x28_6ZA92[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x30"
@@ -33,14 +33,14 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x38_E6TSJ[0x38]",
+        "Name": "pad0x38_TUWBX[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x58"
       },
       {
         "Name": "ClassToSpawn",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x90"
       }
@@ -51,7 +51,14 @@
     "FullSize": "0x70",
     "InheritedSize": "0x58",
     "ClassSize": "0x18",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x18_3BAJS[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x58"
+      }
+    ]
   },
   "GameplayTaskResource": {
     "Super": "Object",
@@ -66,7 +73,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_SQYNF[0x4]",
+        "Name": "pad0x4_NLOAP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -78,7 +85,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_4RUMG[0x7]",
+        "Name": "pad0x7_DH5EF[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
@@ -92,7 +99,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_XDV6O[0x8]",
+        "Name": "pad0x8_VQUG4[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -110,13 +117,13 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x28_AJTQP[0x28]",
+        "Name": "pad0x28_H05LQ[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x10_41AFP[0x10]",
+        "Name": "pad0x10_14DC5[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x118"

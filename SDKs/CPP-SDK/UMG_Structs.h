@@ -10,6 +10,7 @@ namespace DougsSDKDumper
 struct EventReply
 {
 public:
+	char                                                         pad0xe8_36P7K[0xe8];                               // 0x0(0xe8)
 };
 
 
@@ -17,9 +18,9 @@ public:
 struct WidgetTransform
 {
 public:
-	Struct Vector2D                                              Translation;                                       // 0x0(0x8)
-	Struct Vector2D                                              Scale;                                             // 0x8(0x8)
-	Struct Vector2D                                              Shear;                                             // 0x10(0x8)
+	struct Vector2D                                              Translation;                                       // 0x0(0x8)
+	struct Vector2D                                              Scale;                                             // 0x8(0x8)
+	struct Vector2D                                              Shear;                                             // 0x10(0x8)
 	float                                                        Angle;                                             // 0x18(0x4)
 };
 
@@ -28,7 +29,7 @@ public:
 struct DynamicPropertyPath
 {
 public:
-	TArray<struct Segments>                                      Segments;                                          // 0x0(0x10)
+	TArray<struct PropertyPathSegment>                           Segments;                                          // 0x0(0x10)
 };
 
 
@@ -38,9 +39,9 @@ struct PropertyPathSegment
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
 	int                                                          ArrayIndex;                                        // 0x8(0x4)
-	char                                                         pad0x4_E3WBA[0x4];                                 // 0xc(0x4)
-	Class Struct*                                                Struct;                                            // 0x10(0x8)
-	Class Field*                                                 Field;                                             // 0x18(0x8)
+	char                                                         pad0x4_6YHNX[0x4];                                 // 0xc(0x4)
+	class Struct*                                                Struct;                                            // 0x10(0x8)
+	class Field*                                                 Field;                                             // 0x18(0x8)
 };
 
 
@@ -50,6 +51,7 @@ struct SlateChildSize
 public:
 	float                                                        Value;                                             // 0x0(0x4)
 	byte                                                         SizeRule;                                          // 0x4(0x1)
+	char                                                         pad0x3_1QF35[0x3];                                 // 0x5(0x3)
 };
 
 
@@ -58,7 +60,7 @@ struct NamedSlotBinding
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
-	Class Widget*                                                Content;                                           // 0x8(0x8)
+	class Widget*                                                Content;                                           // 0x8(0x8)
 };
 
 
@@ -66,6 +68,7 @@ public:
 struct PaintContext
 {
 public:
+	char                                                         pad0x30_J05FC[0x30];                               // 0x0(0x30)
 };
 
 
@@ -73,9 +76,9 @@ public:
 struct AnchorData
 {
 public:
-	Struct Margin                                                Offsets;                                           // 0x0(0x10)
-	Struct Anchors                                               Anchors;                                           // 0x10(0x10)
-	Struct Vector2D                                              Alignment;                                         // 0x20(0x8)
+	struct Margin                                                Offsets;                                           // 0x0(0x10)
+	struct Anchors                                               Anchors;                                           // 0x10(0x10)
+	struct Vector2D                                              Alignment;                                         // 0x20(0x8)
 };
 
 
@@ -85,8 +88,9 @@ struct WidgetAnimationBinding
 public:
 	struct FName                                                 WidgetName;                                        // 0x0(0x8)
 	struct FName                                                 SlotWidgetName;                                    // 0x8(0x8)
-	Struct Guid                                                  AnimationGuid;                                     // 0x10(0x10)
+	struct Guid                                                  AnimationGuid;                                     // 0x10(0x10)
 	bool                                                         bIsRootWidget;                                     // 0x20(0x1)
+	char                                                         pad0x3_PX40C[0x3];                                 // 0x21(0x3)
 };
 
 
@@ -94,11 +98,12 @@ public:
 struct DelegateRuntimeBinding
 {
 public:
-	Struct FString                                               ObjectName;                                        // 0x0(0x10)
+	struct FString                                               ObjectName;                                        // 0x0(0x10)
 	struct FName                                                 PropertyName;                                      // 0x10(0x8)
 	struct FName                                                 FunctionName;                                      // 0x18(0x8)
-	Struct DynamicPropertyPath                                   SourcePath;                                        // 0x20(0x10)
+	struct DynamicPropertyPath                                   SourcePath;                                        // 0x20(0x10)
 	byte                                                         Kind;                                              // 0x30(0x1)
+	char                                                         pad0x7_SWZA2[0x7];                                 // 0x31(0x7)
 };
 
 
@@ -107,8 +112,9 @@ struct WidgetNavigationData
 {
 public:
 	byte                                                         Rule;                                              // 0x0(0x1)
-	char                                                         pad0x3_VG8ZN[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_8LI2J[0x3];                                 // 0x1(0x3)
 	struct FName                                                 WidgetToFocus;                                     // 0x4(0x8)
+	char                                                         pad0x8_X0HY3[0x8];                                 // 0xc(0x8)
 };
 
 
@@ -116,13 +122,15 @@ public:
 struct MovieScene2DTransformSectionTemplate
 {
 public:
-	Struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
-	Struct RichCurve                                             Translation;                                       // 0x38(0x78)
-	char                                                         pad0x78_9DION[0x78];                               // 0xb0(0x78)
-	Struct RichCurve                                             Rotation;                                          // 0x128(0x78)
-	Struct RichCurve                                             Scale;                                             // 0x1a0(0x78)
-	char                                                         pad0x78_I7LRQ[0x78];                               // 0x218(0x78)
-	Struct RichCurve                                             Shear;                                             // 0x290(0x78)
+	char                                                         pad0x18_G4Y5X[0x18];                               // 0x0(0x18)
+	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
+	struct RichCurve                                             Translation;                                       // 0x38(0x78)
+	char                                                         pad0x78_VNURN[0x78];                               // 0xb0(0x78)
+	struct RichCurve                                             Rotation;                                          // 0x128(0x78)
+	struct RichCurve                                             Scale;                                             // 0x1a0(0x78)
+	char                                                         pad0x78_D16IW[0x78];                               // 0x218(0x78)
+	struct RichCurve                                             Shear;                                             // 0x290(0x78)
+	char                                                         pad0x78_GVHY6[0x78];                               // 0x308(0x78)
 };
 
 
@@ -130,11 +138,12 @@ public:
 struct MovieSceneMarginSectionTemplate
 {
 public:
-	Struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
-	Struct RichCurve                                             TopCurve;                                          // 0x38(0x78)
-	Struct RichCurve                                             LeftCurve;                                         // 0xb0(0x78)
-	Struct RichCurve                                             RightCurve;                                        // 0x128(0x78)
-	Struct RichCurve                                             BottomCurve;                                       // 0x1a0(0x78)
+	char                                                         pad0x18_5V6XU[0x18];                               // 0x0(0x18)
+	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
+	struct RichCurve                                             TopCurve;                                          // 0x38(0x78)
+	struct RichCurve                                             LeftCurve;                                         // 0xb0(0x78)
+	struct RichCurve                                             RightCurve;                                        // 0x128(0x78)
+	struct RichCurve                                             BottomCurve;                                       // 0x1a0(0x78)
 };
 
 
@@ -142,6 +151,7 @@ public:
 struct MovieSceneWidgetMaterialSectionTemplate
 {
 public:
+	char                                                         pad0x48_99VC5[0x48];                               // 0x0(0x48)
 	TArray<struct FName>                                         BrushPropertyNamePath;                             // 0x48(0x10)
 };
 

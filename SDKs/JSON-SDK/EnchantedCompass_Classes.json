@@ -1,75 +1,87 @@
 {
   "RotatingCompass": {
     "Super": "EnchantedCompass",
-    "FullSize": "0xa10",
+    "FullSize": "0xa60",
     "InheritedSize": "0x9d0",
-    "ClassSize": "0x40",
+    "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "PickupableComponent",
-        "Type": "Class PickupableComponent*",
+        "Type": "class PickupableComponent*",
         "Size": "0x8",
         "Offset": "0x9c8"
       },
       {
         "Name": "PoseableStashedMeshComponent",
-        "Type": "Class PoseableMeshMemoryConstraintComponent*",
+        "Type": "class PoseableMeshMemoryConstraintComponent*",
         "Size": "0x8",
         "Offset": "0x9d0"
       },
       {
         "Name": "WieldableInteractableComponent",
-        "Type": "Class WieldableInteractableComponent*",
+        "Type": "class WieldableInteractableComponent*",
         "Size": "0x8",
         "Offset": "0x9d8"
       },
       {
         "Name": "SplinePathActor",
-        "Type": "Class Actor*",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x9e0"
       },
       {
         "Name": "RotationSequenceCurve",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x9e8"
       },
       {
-        "Name": "RotatingCompassSpinComponent",
-        "Type": "Class RotatingCompassSpinComponent*",
-        "Size": "0x8",
+        "Name": "StartRotationSequenceCurve",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x9f0"
       },
       {
-        "Name": "RotationState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x9f8"
-      },
-      {
-        "Name": "pad0x3_GKI3F[0x3]",
+        "Name": "pad0x3_IZQAM[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0x9f9"
+        "Offset": "0x9f1"
       },
       {
         "Name": "SplineDistanceOffset",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x9fc"
+        "Offset": "0x9f4"
       },
       {
         "Name": "TargetYawAngleBeforeRotationSequence",
         "Type": "float",
         "Size": "0x4",
+        "Offset": "0x9f8"
+      },
+      {
+        "Name": "pad0x4_VZIPL[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x9fc"
+      },
+      {
+        "Name": "AudioParams",
+        "Type": "struct RotatingCompassAudioParams",
+        "Size": "0x48",
         "Offset": "0xa00"
       },
       {
-        "Name": "pad0xc_JTIG3[0xc]",
+        "Name": "MaxSpeedToTriggerOneShotSfx",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xa48"
+      },
+      {
+        "Name": "pad0x14_UT8BQ[0x14]",
         "Type": "char",
-        "Size": "0xc",
-        "Offset": "0xa04"
+        "Size": "0x14",
+        "Offset": "0xa4c"
       }
     ]
   },
@@ -81,13 +93,13 @@
     "Attributes": [
       {
         "Name": "StartAnnouncingEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "StopAnnouncingEvent",
-        "Type": "Class WwiseEvent*",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
@@ -98,7 +110,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x4_UEZCT[0x4]",
+        "Name": "pad0x4_D1JH9[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xdc"
@@ -110,7 +122,7 @@
         "Offset": "0x120"
       },
       {
-        "Name": "pad0xef_USU48[0xef]",
+        "Name": "pad0xef_UZ6ZD[0xef]",
         "Type": "char",
         "Size": "0xef",
         "Offset": "0x121"
@@ -125,30 +137,30 @@
     "Attributes": [
       {
         "Name": "Locations",
-        "Type": "TArray<struct Locations>",
+        "Type": "TArray<struct Vector>",
         "Size": "0x10",
         "Offset": "0x8d8"
       },
       {
         "Name": "LocationIds",
-        "Type": "TArray<struct LocationIds>",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x8e8"
       },
       {
         "Name": "InventoryItem",
-        "Type": "Class InventoryItemComponent*",
+        "Type": "class InventoryItemComponent*",
         "Size": "0x8",
         "Offset": "0x8f8"
       },
       {
         "Name": "ProximityAnnouncementComponent",
-        "Type": "Class EnchantedCompassProximityAnnouncementComponent*",
+        "Type": "class EnchantedCompassProximityAnnouncementComponent*",
         "Size": "0x8",
         "Offset": "0x900"
       },
       {
-        "Name": "pad0x8_NCKXK[0x8]",
+        "Name": "pad0x8_T7C59[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x908"
@@ -167,7 +179,14 @@
     "FullSize": "0x1f0",
     "InheritedSize": "0x1e8",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_XX4R5[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x1e8"
+      }
+    ]
   },
   "TaleQuestMultiTargetCompassAddTrackedLocationStep": {
     "Super": "TaleQuestStep",
@@ -177,7 +196,7 @@
     "Attributes": [
       {
         "Name": "Desc",
-        "Type": "Class TaleQuestMultiTargetCompassAddTrackedLocationStepDesc*",
+        "Type": "class TaleQuestMultiTargetCompassAddTrackedLocationStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
       }
@@ -191,13 +210,13 @@
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "Struct QuestVariableVector",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "TargetID",
-        "Type": "Struct QuestVariableGuid",
+        "Type": "struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0xb0"
       }
@@ -208,7 +227,14 @@
     "FullSize": "0xa8",
     "InheritedSize": "0x98",
     "ClassSize": "0x10",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x10_W5KBL[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x98"
+      }
+    ]
   },
   "TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc": {
     "Super": "TaleQuestStepDesc",
@@ -218,7 +244,7 @@
     "Attributes": [
       {
         "Name": "TargetID",
-        "Type": "Struct QuestVariableGuid",
+        "Type": "struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -229,7 +255,14 @@
     "FullSize": "0x190",
     "InheritedSize": "0x170",
     "ClassSize": "0x20",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x20_HE1J5[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x170"
+      }
+    ]
   },
   "TaleQuestMultiTargetCompassServiceDesc": {
     "Super": "TaleQuestToolServiceDesc",
@@ -239,7 +272,7 @@
     "Attributes": [
       {
         "Name": "CompassDesc",
-        "Type": "class",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x30"
       }
@@ -247,27 +280,33 @@
   },
   "TaleQuestRotatingCompassService": {
     "Super": "TaleQuestService",
-    "FullSize": "0x108",
+    "FullSize": "0x120",
     "InheritedSize": "0x60",
-    "ClassSize": "0xa8",
+    "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "SplinePathActor",
-        "Type": "Class Actor*",
-        "Size": "0x8",
+        "Name": "pad0x18_4BUB7[0x18]",
+        "Type": "char",
+        "Size": "0x18",
         "Offset": "0x60"
       },
       {
-        "Name": "RotatingCompass",
-        "Type": "Class RotatingCompass*",
+        "Name": "SplinePathActor",
+        "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0x68"
+        "Offset": "0x78"
       },
       {
-        "Name": "pad0x98_GTW2R[0x98]",
+        "Name": "RotatingCompass",
+        "Type": "class RotatingCompass*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x98_F2WI7[0x98]",
         "Type": "char",
         "Size": "0x98",
-        "Offset": "0x70"
+        "Offset": "0x88"
       }
     ]
   },
@@ -290,7 +329,14 @@
     "FullSize": "0xa0",
     "InheritedSize": "0x98",
     "ClassSize": "0x8",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x8_DKYPF[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x98"
+      }
+    ]
   },
   "TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStepDesc": {
     "Super": "TaleQuestStepDesc",
@@ -300,7 +346,7 @@
     "Attributes": [
       {
         "Name": "SplinePathActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x80"
       }
@@ -311,7 +357,14 @@
     "FullSize": "0xf8",
     "InheritedSize": "0x98",
     "ClassSize": "0x60",
-    "Attributes": []
+    "Attributes": [
+      {
+        "Name": "pad0x60_7N6RR[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x98"
+      }
+    ]
   },
   "TaleQuestSetCompassTargetBaseStepDesc": {
     "Super": "TaleQuestStepDesc",
@@ -326,7 +379,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x7_NMYY8[0x7]",
+        "Name": "pad0x7_2MWLW[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x81"
@@ -341,7 +394,7 @@
     "Attributes": [
       {
         "Name": "TargetActor",
-        "Type": "Struct QuestVariableActor",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0x88"
       }
@@ -355,7 +408,7 @@
     "Attributes": [
       {
         "Name": "TargetPoint",
-        "Type": "Struct QuestVariableOrientedPoint",
+        "Type": "struct QuestVariableOrientedPoint",
         "Size": "0x30",
         "Offset": "0x88"
       }
@@ -376,7 +429,7 @@
     "Attributes": [
       {
         "Name": "RotationSequenceCurve",
-        "Type": "Class CurveFloat*",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x80"
       }

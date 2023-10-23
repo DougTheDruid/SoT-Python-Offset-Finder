@@ -10,14 +10,14 @@ namespace DougsSDKDumper
 class BP_PromptCoordinator_DiceEmote_C: public BP_PromptCoordinator_Base_C
 {
 public:
-	Struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
-	char                                                         pad0x117_BJJRU[0x117];                             // 0x140(0x117)
-	class                                                        DiceEmotePromptAccessKey;                          // 0x140(0x8)
-	Struct ObjectMessagingHandle                                 EmoteStartedEvent;                                 // 0x148(0x58)
-	Struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x1a0(0x70)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
+	char                                                         pad0x151_UWKW5[0x151];                             // 0x140(0x151)
+	class UClass*                                                DiceEmotePromptAccessKey;                          // 0x140(0x8)
+	struct ObjectMessagingHandle                                 EmoteStartedEvent;                                 // 0x148(0x58)
+	struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x1a0(0x70)
 	bool                                                         StartedDiceEmote;                                  // 0x210(0x1)
-	char                                                         pad0x7_MH93Z[0x7];                                 // 0x211(0x7)
-	Struct ObjectMessagingDispatcherHandle                       CharacterDispatcher;                               // 0x218(0x8)
+	char                                                         pad0x7_B9PDP[0x7];                                 // 0x211(0x7)
+	struct ObjectMessagingDispatcherHandle                       CharacterDispatcher;                               // 0x218(0x8)
 	bool                                                         HasShown;                                          // 0x220(0x1)
 };
 

@@ -5,31 +5,31 @@ BP_PlayerBuriedItemsMapBundleInteractionPoint_C:
   - Name: PlayerBuriedItemsMapBundleInteraction
     Offset: '0x3c8'
     Size: '0x8'
-    Type: Class PlayerBuriedItemsMapBundleInteractionComponent*
+    Type: class PlayerBuriedItemsMapBundleInteractionComponent*
   - Name: ActionRules
     Offset: '0x3d0'
     Size: '0x8'
-    Type: Class ActionRulesComponent*
+    Type: class ActionRulesComponent*
   - Name: Mesh
     Offset: '0x3d8'
     Size: '0x8'
-    Type: Class StaticMeshComponent*
+    Type: class StaticMeshComponent*
   - Name: Token Asset
     Offset: '0x3e0'
     Size: '0x8'
-    Type: Class StaticMesh*
+    Type: class StaticMesh*
   - Name: Show Token Animation Time
     Offset: '0x3e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5N9VI[0x4]
+  - Name: pad0x4_GLYJH[0x4]
     Offset: '0x3ec'
     Size: '0x4'
     Type: char
   - Name: Token Material
     Offset: '0x3f0'
     Size: '0x8'
-    Type: Class MaterialInterface*
+    Type: class MaterialInterface*
   ClassSize: '0x30'
   FullSize: '0x3f8'
   InheritedSize: '0x3c8'
