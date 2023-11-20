@@ -34,15 +34,19 @@ StartWarMapVoyageVoteConsumer:
     Offset: '0x298'
     Size: '0x38'
     Type: struct FText
-  ClassSize: '0x1c0'
-  FullSize: '0x2d0'
+  - Name: WarMapVotingCantVoteReasonCrewIsActiveInCompetitiveVoyage
+    Offset: '0x2d0'
+    Size: '0x38'
+    Type: struct FText
+  ClassSize: '0x1f8'
+  FullSize: '0x308'
   InheritedSize: '0x110'
   Super: WarMapVoteConsumerBase
 StartWarMapVoyageVoteValidator:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x118'
-  InheritedSize: '0x118'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: WarMapVoteValidatorBase
 StopWarMapVoyageVoteConsumer:
   Attributes:
@@ -69,20 +73,20 @@ StopWarMapVoyageVoteConsumer:
 StopWarMapVoyageVoteValidator:
   Attributes:
   - Name: ShowWhenInHardModeMatchmaking
-    Offset: '0x118'
+    Offset: '0x130'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_UJSJH[0x7]
-    Offset: '0x119'
+  - Name: pad0x7_WGMCC[0x7]
+    Offset: '0x131'
     Size: '0x7'
     Type: char
   ClassSize: '0x8'
-  FullSize: '0x120'
-  InheritedSize: '0x118'
+  FullSize: '0x138'
+  InheritedSize: '0x130'
   Super: WarMapVoteValidatorBase
 WarMapInteractionComponent:
   Attributes:
-  - Name: pad0x8_XY05Y[0x8]
+  - Name: pad0x8_IURXK[0x8]
     Offset: '0x138'
     Size: '0x8'
     Type: char
@@ -98,7 +102,7 @@ WarMapInteractionComponent:
     Offset: '0x1b0'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x20_YCV4N[0x20]
+  - Name: pad0x20_4MR49[0x20]
     Offset: '0x1b8'
     Size: '0x20'
     Type: char
@@ -108,7 +112,7 @@ WarMapInteractionComponent:
   Super: InteractableComponent
 WarMapInteractionVoteComponent:
   Attributes:
-  - Name: pad0x10_XG62U[0x10]
+  - Name: pad0x10_UK661[0x10]
     Offset: '0x160'
     Size: '0x10'
     Type: char
@@ -136,7 +140,7 @@ WarMapVoteConsumerBase:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x67_JIXEB[0x67]
+  - Name: pad0x67_OFW76[0x67]
     Offset: '0x41'
     Size: '0x67'
     Type: char
@@ -144,7 +148,7 @@ WarMapVoteConsumerBase:
     Offset: '0xa8'
     Size: '0x10'
     Type: TArray<class PlayerState*>
-  - Name: pad0x58_PCA2R[0x58]
+  - Name: pad0x58_EKOSZ[0x58]
     Offset: '0xb8'
     Size: '0x58'
     Type: char
@@ -154,7 +158,7 @@ WarMapVoteConsumerBase:
   Super: VoteConsumerInlineBase
 WarMapVoteInteractionActor:
   Attributes:
-  - Name: pad0x10_IKR4N[0x10]
+  - Name: pad0x10_IHZ7W[0x10]
     Offset: '0x3c8'
     Size: '0x10'
     Type: char
@@ -166,7 +170,7 @@ WarMapVoteInteractionActor:
     Offset: '0x3dc'
     Size: '0x8'
     Type: struct Vector2D
-  - Name: pad0x4_8OMU8[0x4]
+  - Name: pad0x4_GNR1B[0x4]
     Offset: '0x3e4'
     Size: '0x4'
     Type: char
@@ -186,7 +190,7 @@ WarMapVoteInteractionActor:
     Offset: '0x408'
     Size: '0x10'
     Type: TArray<struct FactionRequest>
-  - Name: pad0x230_84KT6[0x230]
+  - Name: pad0x230_RQR77[0x230]
     Offset: '0x418'
     Size: '0x230'
     Type: char
@@ -208,11 +212,11 @@ WarMapVoteValidatorBase:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0xd7_I6VUF[0xd7]
+  - Name: pad0xef_ERDIH[0xef]
     Offset: '0x41'
-    Size: '0xd7'
+    Size: '0xef'
     Type: char
-  ClassSize: '0xe8'
-  FullSize: '0x118'
+  ClassSize: '0x100'
+  FullSize: '0x130'
   InheritedSize: '0x30'
   Super: VoteValidatorInlineBase

@@ -15,15 +15,15 @@ public:
 	float                                                        InitialCooldown;                                   // 0x78(0x4)
 	int                                                          ProgressStateLimit;                                // 0x7c(0x4)
 	bool                                                         ShouldApplyShipTypeLimit;                          // 0x80(0x1)
-	bool                                                         ShouldIgnoreIfCrewsEngagingEmergently;             // 0x81(0x1)
-	char                                                         pad0x2_E9TPX[0x2];                                 // 0x82(0x2)
+	bool                                                         ShouldTrackCrewsEngagingEmergently;                // 0x81(0x1)
+	char                                                         pad0x2_RTUEF[0x2];                                 // 0x82(0x2)
 	float                                                        EmergentCrewLeftRegionCooldown;                    // 0x84(0x4)
 	struct FeatureFlag                                           SendCrewToLoserTunnelFeature;                      // 0x88(0xc)
-	char                                                         pad0x4_NZZ8P[0x4];                                 // 0x94(0x4)
+	char                                                         pad0x4_Z3ULE[0x4];                                 // 0x94(0x4)
 };
 
 
-// Size 0xd0 (Full Size[0x198] - InheritedSize[0xc8]
+// Size 0xe8 (Full Size[0x1b0] - InheritedSize[0xc8]
 class GameEventOnDemandAnnouncementComponent: public ActorComponent
 {
 public:
@@ -31,26 +31,27 @@ public:
 	bool                                                         ShouldFireBannerForAnyCrewEnteringIslandVicinity;  // 0xd4(0x1)
 	bool                                                         ShouldFireGameEventCompletedBannerForEmergentCrews; // 0xd5(0x1)
 	byte                                                         ResetCachedCrewsTrigger;                           // 0xd6(0x1)
-	char                                                         pad0x1_KEGG9[0x1];                                 // 0xd7(0x1)
+	char                                                         pad0x1_XDGJB[0x1];                                 // 0xd7(0x1)
 	struct FName                                                 IslandName;                                        // 0xd8(0x8)
 	TArray<Weakclass CurrentTrackedPawns>                        CurrentTrackedPawns;                               // 0xe0(0x10)
 	TArray<struct Guid>                                          OnDemandParticipatingCrewIds;                      // 0xf0(0x10)
 	TArray<struct Guid>                                          TrackedShipCrewIds;                                // 0x100(0x10)
 	class UClass*                                                GameEventType;                                     // 0x110(0x8)
-	char                                                         pad0x74_NZT24[0x74];                               // 0x118(0x74)
+	char                                                         pad0x74_OS34G[0x74];                               // 0x118(0x74)
 	struct FName                                                 TemporaryBannerTag;                                // 0x18c(0x8)
-	char                                                         pad0x4_ACCZU[0x4];                                 // 0x194(0x4)
+	char                                                         pad0x1c_7XECO[0x1c];                               // 0x194(0x1c)
 };
 
 
-// Size 0x78 (Full Size[0xa0] - InheritedSize[0x28]
+// Size 0xe0 (Full Size[0x108] - InheritedSize[0x28]
 class GameEventOnDemandAvailabilityHandler: public Object
 {
 public:
 	class GameEventAvailabilityParamsDataAsset*                  AvailabilityParamsAsset;                           // 0x28(0x8)
 	class GameEventOnDemandAvailabilityStateTracker*             AvailabilityStateTracker;                          // 0x30(0x8)
 	class UClass*                                                GameEventType;                                     // 0x38(0x8)
-	char                                                         pad0x60_S6235[0x60];                               // 0x40(0x60)
+	class UClass*                                                Company;                                           // 0x40(0x8)
+	char                                                         pad0xc0_UBOQ2[0xc0];                               // 0x48(0xc0)
 };
 
 
@@ -58,11 +59,11 @@ public:
 class GameEventOnDemandAvailabilityStateTracker: public Object
 {
 public:
-	char                                                         pad0x88_EF5FL[0x88];                               // 0x28(0x88)
+	char                                                         pad0x88_5VFUD[0x88];                               // 0x28(0x88)
 	class UClass*                                                ShipTypeLimit;                                     // 0xb0(0x8)
 	TArray<struct Guid>                                          OnDemandParticipatingCrewIds;                      // 0xb8(0x10)
 	TArray<struct Guid>                                          EmergentlyParticipatingCrewIds;                    // 0xc8(0x10)
-	char                                                         pad0x58_RCX02[0x58];                               // 0xd8(0x58)
+	char                                                         pad0x58_G6YO8[0x58];                               // 0xd8(0x58)
 };
 
 
@@ -105,7 +106,7 @@ public:
 class WaitForGameEventOnDemandToCompleteStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x90_E1CEX[0x90];                               // 0x98(0x90)
+	char                                                         pad0x90_GRSCL[0x90];                               // 0x98(0x90)
 };
 
 
@@ -114,7 +115,7 @@ class WaitForGameEventOnDemandToCompleteStepDesc: public TaleQuestStepDesc
 {
 public:
 	bool                                                         DeactivationMeansCompletion;                       // 0x80(0x1)
-	char                                                         pad0x7_IN85S[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_4JXOC[0x7];                                 // 0x81(0x7)
 };
 
 

@@ -6,7 +6,7 @@ AnimationSwitchDataAsset:
     Offset: '0x28'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_F4KS3[0x4]
+  - Name: pad0x4_VJZFO[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -30,7 +30,7 @@ CharacterMeshBakeSpecification:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_REYOH[0x7]
+  - Name: pad0x7_BHWXY[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -208,7 +208,7 @@ PirateGeneratorSettings:
     Offset: '0x130'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_LXT1Z[0x4]
+  - Name: pad0x4_MN3EC[0x4]
     Offset: '0x134'
     Size: '0x4'
     Type: char
@@ -224,7 +224,7 @@ PreparePirateMeshBakeTestFunctionLibrary:
   Super: BlueprintFunctionLibrary
 SkeletonsDataAsset:
   Attributes:
-  - Name: pad0x50_5HEUD[0x50]
+  - Name: pad0x50_ZIES9[0x50]
     Offset: '0x28'
     Size: '0x50'
     Type: char
@@ -234,7 +234,7 @@ SkeletonsDataAsset:
   Super: DataAsset
 TextureSwitch:
   Attributes:
-  - Name: pad0x80_R8LJI[0x80]
+  - Name: pad0x80_A8POX[0x80]
     Offset: '0x140'
     Size: '0x80'
     Type: char
@@ -242,7 +242,7 @@ TextureSwitch:
     Offset: '0x1c0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_4Z0IB[0x7]
+  - Name: pad0x7_MGZ1G[0x7]
     Offset: '0x1c1'
     Size: '0x7'
     Type: char
@@ -312,7 +312,7 @@ TextureSwitchBySeed:
     Offset: '0x22c'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_TVSYL[0x4]
+  - Name: pad0x4_3QK7Y[0x4]
     Offset: '0x234'
     Size: '0x4'
     Type: char
@@ -330,7 +330,7 @@ TextureSwitchBySeed:
   Super: TextureSwitch
 WardrobeDataAsset:
   Attributes:
-  - Name: pad0xa0_WAJSV[0xa0]
+  - Name: pad0xa0_SDTPA[0xa0]
     Offset: '0x28'
     Size: '0xa0'
     Type: char

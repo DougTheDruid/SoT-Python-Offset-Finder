@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 struct LevelSequenceObject
 {
 public:
-	char                                                         pad0x20_9NQHF[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_M52YE[0x20];                               // 0x0(0x20)
 	struct FString                                               ComponentName;                                     // 0x20(0x10)
-	char                                                         pad0x8_C8MHZ[0x8];                                 // 0x30(0x8)
+	char                                                         pad0x8_ZVTQY[0x8];                                 // 0x30(0x8)
 };
 
 
@@ -20,7 +20,7 @@ public:
 struct LevelSequenceObjectReferenceMap
 {
 public:
-	char                                                         pad0xa0_G3OTW[0xa0];                               // 0x0(0xa0)
+	char                                                         pad0xa0_82TLF[0xa0];                               // 0x0(0xa0)
 };
 
 
@@ -28,7 +28,7 @@ public:
 struct LevelSequenceObjectReference
 {
 public:
-	char                                                         pad0x20_PEUQQ[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_J7OB5[0x20];                               // 0x0(0x20)
 };
 
 
@@ -38,10 +38,10 @@ struct LevelSequencePlayerSnapshot
 public:
 	struct FText                                                 MasterName;                                        // 0x0(0x38)
 	float                                                        MasterTime;                                        // 0x38(0x4)
-	char                                                         pad0x4_5WG3J[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_SNDCW[0x4];                                 // 0x3c(0x4)
 	struct FText                                                 CurrentShotName;                                   // 0x40(0x38)
 	float                                                        CurrentShotLocalTime;                              // 0x78(0x4)
-	char                                                         pad0x4_333R1[0x4];                                 // 0x7c(0x4)
+	char                                                         pad0x4_5KF7Y[0x4];                                 // 0x7c(0x4)
 	class CameraComponent*                                       CameraComponent;                                   // 0x80(0x8)
 	struct LevelSequenceSnapshotSettings                         Settings;                                          // 0x88(0x8)
 };
@@ -52,7 +52,7 @@ struct LevelSequenceSnapshotSettings
 {
 public:
 	byte                                                         ZeroPadAmount;                                     // 0x0(0x1)
-	char                                                         pad0x3_GQMYQ[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_I3M0S[0x3];                                 // 0x1(0x3)
 	float                                                        FrameRate;                                         // 0x4(0x4)
 };
 
@@ -61,7 +61,7 @@ public:
 struct LevelSequencePlaybackSettings
 {
 public:
-	char                                                         pad0x28_6L6D4[0x28];                               // 0x0(0x28)
+	char                                                         pad0x28_RKGBO[0x28];                               // 0x0(0x28)
 };
 
 
@@ -69,7 +69,7 @@ public:
 struct BoundActorProxy
 {
 public:
-	char                                                         pad0x1_BDHDI[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_C396U[0x1];                                 // 0x0(0x1)
 };
 
 

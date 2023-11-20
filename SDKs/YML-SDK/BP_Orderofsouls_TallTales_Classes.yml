@@ -3,18 +3,18 @@
 BP_Orderofsouls_TallTales_C:
   Attributes:
   - Name: SolidHits
-    Offset: '0x6e0'
+    Offset: '0x6e8'
     Size: '0x8'
     Type: class CapsuleComponent*
   - Name: NPCDialog
-    Offset: '0x6e8'
+    Offset: '0x6f0'
     Size: '0x8'
     Type: class NPCDialogComponent*
   - Name: AnimNotifyWwiseEmitter
-    Offset: '0x6f0'
+    Offset: '0x6f8'
     Size: '0x8'
     Type: class AnimNotifyWwiseEmitterComponent*
   ClassSize: '0x18'
-  FullSize: '0x6f8'
-  InheritedSize: '0x6e0'
+  FullSize: '0x700'
+  InheritedSize: '0x6e8'
   Super: CompanyShopkeeper

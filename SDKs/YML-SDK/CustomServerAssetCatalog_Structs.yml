@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 GameAssetCatalogModel:
   Attributes:
-  - Name: pad0xa0_SCNB3[0xa0]
+  - Name: pad0xa0_WWVES[0xa0]
     Offset: '0x0'
     Size: '0xa0'
     Type: char
@@ -21,7 +21,7 @@ GameAssetModel:
     Offset: '0x20'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_TY2PS[0x4]
+  - Name: pad0x4_JJ8QY[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char

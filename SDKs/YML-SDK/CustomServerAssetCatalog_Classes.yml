@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CustomServerAssetCatalogService:
   Attributes:
-  - Name: pad0xc8_WTESL[0xc8]
+  - Name: pad0xc8_3YPM2[0xc8]
     Offset: '0x28'
     Size: '0xc8'
     Type: char

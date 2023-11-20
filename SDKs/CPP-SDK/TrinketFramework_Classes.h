@@ -20,14 +20,14 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x78] - InheritedSize[0x78]
+// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
 class TrinketCategory: public CategoryBase
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x78] - InheritedSize[0x78]
+// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
 class InvalidTrinketCategory: public TrinketCategory
 {
 public:
@@ -55,7 +55,7 @@ public:
 class SameActorTrinketLoadoutFinderPolicy: public TrinketLoadoutFinderPolicyBase
 {
 public:
-	char                                                         pad0x10_FQP18[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_GR2QC[0x10];                               // 0x28(0x10)
 };
 
 
@@ -70,7 +70,7 @@ public:
 class TrinketReplacementActor: public Actor
 {
 public:
-	char                                                         pad0x10_HDN12[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_GLMKF[0x10];                               // 0x3c8(0x10)
 };
 
 

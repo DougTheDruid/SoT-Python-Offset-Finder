@@ -19,7 +19,7 @@ struct SeasonReward
 {
 public:
 	struct Guid                                                  Id;                                                // 0x0(0x10)
-	char                                                         pad0x10_FHIUT[0x10];                               // 0x10(0x10)
+	char                                                         pad0x10_YFXVX[0x10];                               // 0x10(0x10)
 };
 
 
@@ -27,7 +27,7 @@ public:
 struct SeasonServiceDataUpdatedEvent
 {
 public:
-	char                                                         pad0x1_L7P2U[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_E9YGH[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -37,7 +37,7 @@ struct SeasonRewardEarnedEvent
 public:
 	struct Guid                                                  SeasonId;                                          // 0x0(0x10)
 	bool                                                         MultipleRewards;                                   // 0x10(0x1)
-	char                                                         pad0x7_AR07R[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_HQ02B[0x7];                                 // 0x11(0x7)
 	TArray<struct SeasonReward>                                  Rewards;                                           // 0x18(0x10)
 };
 
@@ -53,7 +53,7 @@ public:
 	int                                                          TimeSpentInTier;                                   // 0x1c(0x4)
 	bool                                                         TierCompleted;                                     // 0x20(0x1)
 	bool                                                         SeasonCompleted;                                   // 0x21(0x1)
-	char                                                         pad0x2_NKCHW[0x2];                                 // 0x22(0x2)
+	char                                                         pad0x2_38VQ1[0x2];                                 // 0x22(0x2)
 };
 
 
@@ -77,7 +77,7 @@ public:
 	struct Guid                                                  SeasonId;                                          // 0x0(0x10)
 	struct Guid                                                  GoalId;                                            // 0x10(0x10)
 	byte                                                         GoalType;                                          // 0x20(0x1)
-	char                                                         pad0x3_6MQ4Q[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_NV0ZV[0x3];                                 // 0x21(0x3)
 	struct Guid                                                  GoalGroupId;                                       // 0x24(0x10)
 };
 
@@ -92,7 +92,7 @@ public:
 	struct Guid                                                  SeasonId;                                          // 0xc(0x10)
 	struct Guid                                                  GoalId;                                            // 0x1c(0x10)
 	byte                                                         GoalType;                                          // 0x2c(0x1)
-	char                                                         pad0x3_9N1EV[0x3];                                 // 0x2d(0x3)
+	char                                                         pad0x3_24H9W[0x3];                                 // 0x2d(0x3)
 	struct Guid                                                  GoalGroupId;                                       // 0x30(0x10)
 };
 
@@ -106,7 +106,7 @@ public:
 	struct PlayerBaseTelemetryFragment                           PlayerInfo;                                        // 0x88(0x48)
 	byte                                                         PlayMode;                                          // 0xd0(0x1)
 	byte                                                         PlayModeVariant;                                   // 0xd1(0x1)
-	char                                                         pad0x6_TJODK[0x6];                                 // 0xd2(0x6)
+	char                                                         pad0x6_0ZCOT[0x6];                                 // 0xd2(0x6)
 	double                                                       CreatedAt;                                         // 0xd8(0x8)
 };
 
@@ -120,7 +120,7 @@ public:
 	struct PlayerBaseTelemetryFragment                           PlayerInfo;                                        // 0x88(0x48)
 	byte                                                         PlayMode;                                          // 0xd0(0x1)
 	byte                                                         PlayModeVariant;                                   // 0xd1(0x1)
-	char                                                         pad0x2_M7KHJ[0x2];                                 // 0xd2(0x2)
+	char                                                         pad0x2_YJDQ8[0x2];                                 // 0xd2(0x2)
 	int                                                          Value;                                             // 0xd4(0x4)
 	double                                                       CreatedAt;                                         // 0xd8(0x8)
 };
@@ -130,7 +130,7 @@ public:
 struct TrackedObjectiveEvent
 {
 public:
-	char                                                         pad0x18_TWD31[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_YKEUV[0x18];                               // 0x0(0x18)
 };
 
 

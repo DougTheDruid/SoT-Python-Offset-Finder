@@ -31,7 +31,7 @@ public:
 class DebugTeleportationDestinationService: public Actor
 {
 public:
-	char                                                         pad0x18_Y7HSG[0x18];                               // 0x3c8(0x18)
+	char                                                         pad0x18_9U9XX[0x18];                               // 0x3c8(0x18)
 	TArray<struct DebugTeleportDestinationEntry>                 DebugTeleportationRegistry;                        // 0x3e0(0x10)
 };
 

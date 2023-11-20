@@ -40,7 +40,7 @@ ServiceHttpSettings:
     Offset: '0x39'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_I6WDF[0x6]
+  - Name: pad0x6_8SQOF[0x6]
     Offset: '0x3a'
     Size: '0x6'
     Type: char

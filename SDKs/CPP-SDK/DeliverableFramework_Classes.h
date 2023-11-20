@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class DeliverableRequirementBase: public Object
 {
 public:
-	char                                                         pad0x8_MPVBX[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_WX994[0x8];                                 // 0x28(0x8)
 };
 
 
@@ -32,9 +32,9 @@ public:
 class DeliverableComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x10_B877R[0x10];                               // 0xc8(0x10)
+	char                                                         pad0x10_4VG17[0x10];                               // 0xc8(0x10)
 	class DeliverableRequirementsDataAsset*                      DeliveryRequirementsAsset;                         // 0xd8(0x8)
-	char                                                         pad0x8_NYWR3[0x8];                                 // 0xe0(0x8)
+	char                                                         pad0x8_ESRPJ[0x8];                                 // 0xe0(0x8)
 };
 
 
@@ -42,7 +42,7 @@ public:
 class DeliverableRedirectionComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_E0U13[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_AM2X2[0x8];                                 // 0xc8(0x8)
 	class DeliverableRedirectionContextBase*                     Context;                                           // 0xd0(0x8)
 };
 
@@ -66,7 +66,7 @@ class DeliverableRedirectionCompositeContext: public DeliverableRedirectionConte
 {
 public:
 	TArray<class DeliverableRedirectionContextBase*>             Contexts;                                          // 0x28(0x10)
-	char                                                         pad0x18_FH384[0x18];                               // 0x38(0x18)
+	char                                                         pad0x18_JXWKP[0x18];                               // 0x38(0x18)
 };
 
 

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ShimmerActor:
   Attributes:
-  - Name: pad0xa8_RQX4Y[0xa8]
+  - Name: pad0xa8_U12X8[0xa8]
     Offset: '0x3c8'
     Size: '0xa8'
     Type: char
@@ -12,7 +12,7 @@ ShimmerActor:
   Super: Actor
 SunkenKingdomShrineDeepSeaRegion:
   Attributes:
-  - Name: pad0x8_B5BT5[0x8]
+  - Name: pad0x8_CQF63[0x8]
     Offset: '0x438'
     Size: '0x8'
     Type: char
@@ -28,12 +28,12 @@ SunkenKingdomShrineDeepSeaRegion:
     Offset: '0x458'
     Size: '0x8'
     Type: class GameEventOnDemandAnnouncementComponent*
-  - Name: pad0x38_R8496[0x38]
+  - Name: pad0x48_RFISX[0x48]
     Offset: '0x460'
-    Size: '0x38'
+    Size: '0x48'
     Type: char
-  ClassSize: '0x60'
-  FullSize: '0x498'
+  ClassSize: '0x70'
+  FullSize: '0x4a8'
   InheritedSize: '0x438'
   Super: DeepSeaRegion
 SunkenKingdomShrineGameEventType:
@@ -44,7 +44,7 @@ SunkenKingdomShrineGameEventType:
   Super: GameEventType
 SunkenKingdomTreasuryDeepSeaRegion:
   Attributes:
-  - Name: pad0x8_ILDY1[0x8]
+  - Name: pad0x8_2BA0Y[0x8]
     Offset: '0x438'
     Size: '0x8'
     Type: char
@@ -60,7 +60,7 @@ SunkenKingdomTreasuryGameEventType:
   Super: GameEventType
 TreasuryRoom:
   Attributes:
-  - Name: pad0x10_ACAS9[0x10]
+  - Name: pad0x10_0KUEL[0x10]
     Offset: '0x3c8'
     Size: '0x10'
     Type: char
@@ -112,88 +112,96 @@ TreasuryRoom:
     Offset: '0x408'
     Size: '0x10'
     Type: TArray<struct TreasuryWaveEncounter>
-  - Name: SunkenTreasuryAvailabilityParamsAssetFileLocation
+  - Name: OnTreasuryRoomCompleteEmergentBannerText
     Offset: '0x418'
+    Size: '0x38'
+    Type: struct FText
+  - Name: SunkenTreasuryAvailabilityParamsAssetFileLocation
+    Offset: '0x450'
     Size: '0x10'
     Type: struct StringAssetReference
   - Name: FloodMechanismActor
-    Offset: '0x428'
-    Size: '0x8'
-    Type: class Actor*
-  - Name: FloodTriggerActor
-    Offset: '0x430'
-    Size: '0x8'
-    Type: class Actor*
-  - Name: DrainMechanismActor
-    Offset: '0x438'
-    Size: '0x8'
-    Type: class Actor*
-  - Name: DrainTriggerActor
-    Offset: '0x440'
-    Size: '0x8'
-    Type: class Actor*
-  - Name: VaultMechanismActor
-    Offset: '0x448'
-    Size: '0x8'
-    Type: class Actor*
-  - Name: VaultTriggerActor
-    Offset: '0x450'
-    Size: '0x8'
-    Type: class Actor*
-  - Name: VaultLootSpawner
-    Offset: '0x458'
-    Size: '0x8'
-    Type: class UClass*
-  - Name: VaultLootSpawnLocationActor
     Offset: '0x460'
     Size: '0x8'
     Type: class Actor*
-  - Name: GameEventOnDemandAvailabilityHandler
+  - Name: FloodTriggerActor
+    Offset: '0x468'
+    Size: '0x8'
+    Type: class Actor*
+  - Name: DrainMechanismActor
+    Offset: '0x470'
+    Size: '0x8'
+    Type: class Actor*
+  - Name: DrainTriggerActor
+    Offset: '0x478'
+    Size: '0x8'
+    Type: class Actor*
+  - Name: VaultMechanismActor
+    Offset: '0x480'
+    Size: '0x8'
+    Type: class Actor*
+  - Name: VaultTriggerActor
     Offset: '0x488'
+    Size: '0x8'
+    Type: class Actor*
+  - Name: VaultLootSpawner
+    Offset: '0x490'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: VaultLootSpawnLocationActor
+    Offset: '0x498'
+    Size: '0x8'
+    Type: class Actor*
+  - Name: EntranceSirenWindowActor
+    Offset: '0x4a0'
+    Size: '0x8'
+    Type: class Actor*
+  - Name: GameEventOnDemandAvailabilityHandler
+    Offset: '0x4c8'
     Size: '0x8'
     Type: class GameEventOnDemandAvailabilityHandler*
   - Name: OverlappingActors
-    Offset: '0x490'
+    Offset: '0x4d0'
     Size: '0x10'
     Type: TArray<class Actor*>
   - Name: CachedParticipantControllers
-    Offset: '0x4a0'
+    Offset: '0x4e0'
     Size: '0x10'
     Type: TArray<Weakclass CachedParticipantControllers>
   - Name: VaultLootSpawnerActor
-    Offset: '0x4b0'
+    Offset: '0x4f0'
     Size: '0x8'
     Type: class Actor*
   - Name: VaultOpenStat
-    Offset: '0x4b8'
+    Offset: '0x4f8'
     Size: '0x4'
     Type: struct PlayerStat
-  - Name: pad0x4_01BDE[0x4]
-    Offset: '0x4bc'
+  - Name: pad0x4_1T43S[0x4]
+    Offset: '0x4fc'
     Size: '0x4'
     Type: char
   - Name: FloodMechanismComponent
-    Offset: '0x4c0'
+    Offset: '0x500'
     Size: '0x8'
     Type: class MechanismActionComponent*
   - Name: DrainMechanismComponent
-    Offset: '0x4c8'
+    Offset: '0x508'
     Size: '0x8'
     Type: class MechanismActionComponent*
   - Name: VaultMechanismComponent
-    Offset: '0x4d0'
+    Offset: '0x510'
     Size: '0x8'
     Type: class MechanismActionComponent*
   - Name: GameEventOnDemandAnnouncementComponent
-    Offset: '0x508'
+    Offset: '0x548'
     Size: '0x8'
     Type: class GameEventOnDemandAnnouncementComponent*
-  - Name: pad0x10_TFLGS[0x10]
-    Offset: '0x510'
-    Size: '0x10'
+  - Name: pad0x18_KBP27[0x18]
+    Offset: '0x550'
+    Size: '0x18'
     Type: char
-  ClassSize: '0x158'
-  FullSize: '0x520'
+  ClassSize: '0x1a0'
+  FullSize: '0x568'
   InheritedSize: '0x3c8'
   Super: Actor
 TreasuryWaveDataAsset:

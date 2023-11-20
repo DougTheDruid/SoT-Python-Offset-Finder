@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct ShantyPuzzleUnlockCanceledEvent
 {
 public:
-	char                                                         pad0x1_Y00PV[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_6033K[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -20,7 +20,7 @@ struct ShantyPuzzleSingleInteractionZoneStopInteractingEvent
 public:
 	class Actor*                                                 Player;                                            // 0x0(0x8)
 	int                                                          InteractionZoneIdx;                                // 0x8(0x4)
-	char                                                         pad0x4_I05JZ[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_GBS0F[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -30,7 +30,7 @@ struct ShantyPuzzleSingleInteractionZoneUnlockEvent
 public:
 	class Actor*                                                 Player;                                            // 0x0(0x8)
 	int                                                          InteractionZoneIdx;                                // 0x8(0x4)
-	char                                                         pad0x4_NGEEX[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_OW2RJ[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -54,7 +54,7 @@ public:
 struct ShantyPuzzleUnlockedCompleteEvent
 {
 public:
-	char                                                         pad0x1_296KD[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_15C5F[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -65,7 +65,7 @@ public:
 	struct Vector                                                Location;                                          // 0x0(0xc)
 	float                                                        Radius;                                            // 0xc(0x4)
 	byte                                                         RequiredMusicalInstrumentType;                     // 0x10(0x1)
-	char                                                         pad0x3_Q939T[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_1VZWL[0x3];                                 // 0x11(0x3)
 	int                                                          RequiredNumInteractors;                            // 0x14(0x4)
 };
 

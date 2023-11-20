@@ -6,7 +6,7 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "pad0xa8_RQX4Y[0xa8]",
+        "Name": "pad0xa8_U12X8[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0x3c8"
@@ -15,12 +15,12 @@
   },
   "SunkenKingdomShrineDeepSeaRegion": {
     "Super": "DeepSeaRegion",
-    "FullSize": "0x498",
+    "FullSize": "0x4a8",
     "InheritedSize": "0x438",
-    "ClassSize": "0x60",
+    "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "pad0x8_B5BT5[0x8]",
+        "Name": "pad0x8_CQF63[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x438"
@@ -44,9 +44,9 @@
         "Offset": "0x458"
       },
       {
-        "Name": "pad0x38_R8496[0x38]",
+        "Name": "pad0x48_RFISX[0x48]",
         "Type": "char",
-        "Size": "0x38",
+        "Size": "0x48",
         "Offset": "0x460"
       }
     ]
@@ -72,7 +72,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_ILDY1[0x8]",
+        "Name": "pad0x8_2BA0Y[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x438"
@@ -113,12 +113,12 @@
   },
   "TreasuryRoom": {
     "Super": "Actor",
-    "FullSize": "0x520",
+    "FullSize": "0x568",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x158",
+    "ClassSize": "0x1a0",
     "Attributes": [
       {
-        "Name": "pad0x10_ACAS9[0x10]",
+        "Name": "pad0x10_0KUEL[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -196,124 +196,136 @@
         "Offset": "0x408"
       },
       {
+        "Name": "OnTreasuryRoomCompleteEmergentBannerText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x418"
+      },
+      {
         "Name": "SunkenTreasuryAvailabilityParamsAssetFileLocation",
         "Type": "struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x418"
+        "Offset": "0x450"
       },
       {
         "Name": "FloodMechanismActor",
         "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x460"
       },
       {
         "Name": "FloodTriggerActor",
         "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0x430"
+        "Offset": "0x468"
       },
       {
         "Name": "DrainMechanismActor",
         "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0x438"
+        "Offset": "0x470"
       },
       {
         "Name": "DrainTriggerActor",
         "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0x440"
+        "Offset": "0x478"
       },
       {
         "Name": "VaultMechanismActor",
         "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0x448"
+        "Offset": "0x480"
       },
       {
         "Name": "VaultTriggerActor",
         "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0x450"
+        "Offset": "0x488"
       },
       {
         "Name": "VaultLootSpawner",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x458"
+        "Offset": "0x490"
       },
       {
         "Name": "VaultLootSpawnLocationActor",
         "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0x460"
+        "Offset": "0x498"
+      },
+      {
+        "Name": "EntranceSirenWindowActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x4a0"
       },
       {
         "Name": "GameEventOnDemandAvailabilityHandler",
         "Type": "class GameEventOnDemandAvailabilityHandler*",
         "Size": "0x8",
-        "Offset": "0x488"
+        "Offset": "0x4c8"
       },
       {
         "Name": "OverlappingActors",
         "Type": "TArray<class Actor*>",
         "Size": "0x10",
-        "Offset": "0x490"
+        "Offset": "0x4d0"
       },
       {
         "Name": "CachedParticipantControllers",
         "Type": "TArray<Weakclass CachedParticipantControllers>",
         "Size": "0x10",
-        "Offset": "0x4a0"
+        "Offset": "0x4e0"
       },
       {
         "Name": "VaultLootSpawnerActor",
         "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0x4b0"
+        "Offset": "0x4f0"
       },
       {
         "Name": "VaultOpenStat",
         "Type": "struct PlayerStat",
         "Size": "0x4",
-        "Offset": "0x4b8"
+        "Offset": "0x4f8"
       },
       {
-        "Name": "pad0x4_01BDE[0x4]",
+        "Name": "pad0x4_1T43S[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x4bc"
+        "Offset": "0x4fc"
       },
       {
         "Name": "FloodMechanismComponent",
         "Type": "class MechanismActionComponent*",
         "Size": "0x8",
-        "Offset": "0x4c0"
+        "Offset": "0x500"
       },
       {
         "Name": "DrainMechanismComponent",
         "Type": "class MechanismActionComponent*",
         "Size": "0x8",
-        "Offset": "0x4c8"
+        "Offset": "0x508"
       },
       {
         "Name": "VaultMechanismComponent",
         "Type": "class MechanismActionComponent*",
         "Size": "0x8",
-        "Offset": "0x4d0"
+        "Offset": "0x510"
       },
       {
         "Name": "GameEventOnDemandAnnouncementComponent",
         "Type": "class GameEventOnDemandAnnouncementComponent*",
         "Size": "0x8",
-        "Offset": "0x508"
+        "Offset": "0x548"
       },
       {
-        "Name": "pad0x10_TFLGS[0x10]",
+        "Name": "pad0x18_KBP27[0x18]",
         "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x510"
+        "Size": "0x18",
+        "Offset": "0x550"
       }
     ]
   },

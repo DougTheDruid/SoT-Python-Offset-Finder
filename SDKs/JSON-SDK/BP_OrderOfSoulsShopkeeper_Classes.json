@@ -1,15 +1,15 @@
 {
   "BP_OrderOfSoulsShopkeeper_C": {
     "Super": "ShopkeeperInteractionProxy",
-    "FullSize": "0x490",
-    "InheritedSize": "0x488",
+    "FullSize": "0x4e8",
+    "InheritedSize": "0x4e0",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x488"
+        "Offset": "0x4e0"
       }
     ]
   },

@@ -1,21 +1,21 @@
 {
   "BP_Larinna_Permanent_C": {
     "Super": "BP_SoleTrader_C",
-    "FullSize": "0x708",
-    "InheritedSize": "0x6f8",
+    "FullSize": "0x710",
+    "InheritedSize": "0x700",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "StaticMesh1",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x6f8"
+        "Offset": "0x700"
       },
       {
         "Name": "StaticMesh",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x700"
+        "Offset": "0x708"
       }
     ]
   },

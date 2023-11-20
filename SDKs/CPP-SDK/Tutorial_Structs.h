@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct ContextualTutorialPromptDesc
 {
 public:
-	char                                                         pad0x20_1X6IC[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_NR1Y3[0x20];                               // 0x0(0x20)
 	class UClass*                                                AccessKey;                                         // 0x20(0x8)
 	struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
 	int                                                          MustBeUnderCount;                                  // 0x34(0x4)
@@ -25,13 +25,23 @@ public:
 };
 
 
+// Size 0x38
+struct IntroductionToSOTIntroAnimatic
+{
+public:
+	class UClass*                                                ShipSize;                                          // 0x0(0x8)
+	struct FirstPersonAnimaticSettings                           IntroAnimationSettings;                            // 0x8(0x2c)
+	char                                                         pad0x4_FYL0N[0x4];                                 // 0x34(0x4)
+};
+
+
 // Size 0x18
 struct BeachNPCSpawnFlowNetworkEvent
 {
 public:
-	char                                                         pad0x10_XSGT6[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_Q3F9I[0x10];                               // 0x0(0x10)
 	bool                                                         HasTaleCheckpointVoyage;                           // 0x10(0x1)
-	char                                                         pad0x7_U71JL[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_TOEMY[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -39,9 +49,9 @@ public:
 struct HasTutorialStarterBegunCondition
 {
 public:
-	char                                                         pad0x28_CS7F2[0x28];                               // 0x0(0x28)
+	char                                                         pad0x28_S2CF0[0x28];                               // 0x0(0x28)
 	byte                                                         TutorialStarterType;                               // 0x28(0x1)
-	char                                                         pad0x7_NQQAG[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_OC9S0[0x7];                                 // 0x29(0x7)
 };
 
 
@@ -53,7 +63,7 @@ public:
 	struct FString                                               StepName;                                          // 0x10(0x10)
 	bool                                                         StepCompleted;                                     // 0x20(0x1)
 	bool                                                         IsFinalStep;                                       // 0x21(0x1)
-	char                                                         pad0x6_EWPU3[0x6];                                 // 0x22(0x6)
+	char                                                         pad0x6_DPC8C[0x6];                                 // 0x22(0x6)
 };
 
 
@@ -61,7 +71,7 @@ public:
 struct TutorialShowTutorialLegendaryTavernStrangerEvent
 {
 public:
-	char                                                         pad0x1_EOBLE[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_VXTJC[0x1];                                 // 0x0(0x1)
 };
 
 

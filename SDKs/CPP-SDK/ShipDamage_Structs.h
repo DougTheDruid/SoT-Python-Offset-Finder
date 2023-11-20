@@ -22,7 +22,7 @@ public:
 	int                                                          DamageLevel;                                       // 0x10(0x4)
 	int                                                          RepairedDamageLevel;                               // 0x14(0x4)
 	byte                                                         RepairableState;                                   // 0x18(0x1)
-	char                                                         pad0x7_FWRX7[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_R0KJH[0x7];                                 // 0x19(0x7)
 	TArray<struct HullDamageHit>                                 ExternalHitList;                                   // 0x20(0x10)
 };
 
@@ -34,7 +34,7 @@ public:
 	struct Vector                                                HitPosition;                                       // 0x0(0xc)
 	struct Vector                                                HitNormal;                                         // 0xc(0xc)
 	bool                                                         HasDecal;                                          // 0x18(0x1)
-	char                                                         pad0x3_A2MAQ[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_G4GUQ[0x3];                                 // 0x19(0x3)
 };
 
 
@@ -45,7 +45,7 @@ public:
 	class Actor*                                                 Ship;                                              // 0x0(0x8)
 	struct FName                                                 DamagedShipPartIdentifier;                         // 0x8(0x8)
 	int                                                          NewDamageLevel;                                    // 0x10(0x4)
-	char                                                         pad0x4_C9LAT[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_GV9I6[0x4];                                 // 0x14(0x4)
 	struct ImpactDamageEvent                                     ImpactDamageEvent;                                 // 0x18(0x58)
 };
 
@@ -65,7 +65,7 @@ struct DamageZoneDamageLevelChanged
 public:
 	class Actor*                                                 DamageZone;                                        // 0x0(0x8)
 	int                                                          DamageLevel;                                       // 0x8(0x4)
-	char                                                         pad0x4_1XG75[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_H70JV[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -82,7 +82,7 @@ public:
 struct ShipRestoredNetworkEvent
 {
 public:
-	char                                                         pad0x10_27ZKG[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_ND8QK[0x10];                               // 0x0(0x10)
 };
 
 
@@ -90,7 +90,7 @@ public:
 struct SendShipRestoredRpc
 {
 public:
-	char                                                         pad0x10_RCFPY[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_85L3B[0x10];                               // 0x0(0x10)
 	struct Guid                                                  CrewId;                                            // 0x10(0x10)
 };
 
@@ -115,10 +115,10 @@ public:
 struct ShipPartLevelsOfDamage
 {
 public:
-	char                                                         pad0x20_OSYX3[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_K4EAU[0x20];                               // 0x0(0x20)
 	TArray<struct DistanceAndLevelOfDamage>                      DamagePerDistance;                                 // 0x20(0x10)
 	struct FeatureFlag                                           FeatureName;                                       // 0x30(0xc)
-	char                                                         pad0x4_OEVF5[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_5S372[0x4];                                 // 0x3c(0x4)
 };
 
 
@@ -128,8 +128,9 @@ struct DistanceAndLevelOfDamage
 public:
 	float                                                        DistanceLimit;                                     // 0x0(0x4)
 	int                                                          LevelOfDamage;                                     // 0x4(0x4)
-	bool                                                         OnlyDamagesOnce;                                   // 0x8(0x1)
-	char                                                         pad0x3_V8VQC[0x3];                                 // 0x9(0x3)
+	bool                                                         CannotDamageAnAlreadyDamagedPoint;                 // 0x8(0x1)
+	bool                                                         ShouldOnlyDamageOneHullDeckLevel;                  // 0x9(0x1)
+	char                                                         pad0x2_4N3XZ[0x2];                                 // 0xa(0x2)
 };
 
 

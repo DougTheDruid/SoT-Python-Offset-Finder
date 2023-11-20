@@ -36,13 +36,13 @@
         "Offset": "0x80"
       },
       {
-        "Name": "ShouldIgnoreIfCrewsEngagingEmergently",
+        "Name": "ShouldTrackCrewsEngagingEmergently",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x81"
       },
       {
-        "Name": "pad0x2_E9TPX[0x2]",
+        "Name": "pad0x2_RTUEF[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x82"
@@ -60,7 +60,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x4_NZZ8P[0x4]",
+        "Name": "pad0x4_Z3ULE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x94"
@@ -69,9 +69,9 @@
   },
   "GameEventOnDemandAnnouncementComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x198",
+    "FullSize": "0x1b0",
     "InheritedSize": "0xc8",
-    "ClassSize": "0xd0",
+    "ClassSize": "0xe8",
     "Attributes": [
       {
         "Name": "FeatureFlag",
@@ -98,7 +98,7 @@
         "Offset": "0xd6"
       },
       {
-        "Name": "pad0x1_KEGG9[0x1]",
+        "Name": "pad0x1_XDGJB[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0xd7"
@@ -134,7 +134,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x74_NZT24[0x74]",
+        "Name": "pad0x74_OS34G[0x74]",
         "Type": "char",
         "Size": "0x74",
         "Offset": "0x118"
@@ -146,18 +146,18 @@
         "Offset": "0x18c"
       },
       {
-        "Name": "pad0x4_ACCZU[0x4]",
+        "Name": "pad0x1c_7XECO[0x1c]",
         "Type": "char",
-        "Size": "0x4",
+        "Size": "0x1c",
         "Offset": "0x194"
       }
     ]
   },
   "GameEventOnDemandAvailabilityHandler": {
     "Super": "Object",
-    "FullSize": "0xa0",
+    "FullSize": "0x108",
     "InheritedSize": "0x28",
-    "ClassSize": "0x78",
+    "ClassSize": "0xe0",
     "Attributes": [
       {
         "Name": "AvailabilityParamsAsset",
@@ -178,10 +178,16 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x60_S6235[0x60]",
-        "Type": "char",
-        "Size": "0x60",
+        "Name": "Company",
+        "Type": "class UClass*",
+        "Size": "0x8",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0xc0_UBOQ2[0xc0]",
+        "Type": "char",
+        "Size": "0xc0",
+        "Offset": "0x48"
       }
     ]
   },
@@ -192,7 +198,7 @@
     "ClassSize": "0x108",
     "Attributes": [
       {
-        "Name": "pad0x88_EF5FL[0x88]",
+        "Name": "pad0x88_5VFUD[0x88]",
         "Type": "char",
         "Size": "0x88",
         "Offset": "0x28"
@@ -216,7 +222,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x58_RCX02[0x58]",
+        "Name": "pad0x58_G6YO8[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0xd8"
@@ -265,7 +271,7 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x90_E1CEX[0x90]",
+        "Name": "pad0x90_GRSCL[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x98"
@@ -285,7 +291,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x7_IN85S[0x7]",
+        "Name": "pad0x7_4JXOC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x81"

@@ -6,7 +6,7 @@ CreateMysteriousNoteGameServerRequestModel:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_MGYO4[0x4]
+  - Name: pad0x4_AUSWP[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -22,14 +22,22 @@ CreateMysteriousNoteGameServerRequestModel:
     Offset: '0x28'
     Size: '0x10'
     Type: struct FString
-  ClassSize: '0x38'
+  - Name: AvailableInSaferSeas
+    Offset: '0x38'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x7_OW89E[0x7]
+    Offset: '0x39'
+    Size: '0x7'
+    Type: char
+  ClassSize: '0x40'
 CreateMysteriousNoteGameServerResponseModel:
   Attributes:
   - Name: Success
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_E9HVX[0x3]
+  - Name: pad0x3_FQIML[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char

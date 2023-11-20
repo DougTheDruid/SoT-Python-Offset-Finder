@@ -57,12 +57,12 @@ public:
 	struct FString                                               CurrentLevel;                                      // 0x0(0x10)
 	int                                                          EngineVersion;                                     // 0x10(0x4)
 	bool                                                         HasBegunPlay;                                      // 0x14(0x1)
-	char                                                         pad0x3_IG73U[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_1XPCZ[0x3];                                 // 0x15(0x3)
 	struct Guid                                                  InstanceId;                                        // 0x18(0x10)
 	struct FString                                               InstanceType;                                      // 0x28(0x10)
 	struct Guid                                                  SessionId;                                         // 0x38(0x10)
 	float                                                        WorldTimeSeconds;                                  // 0x48(0x4)
-	char                                                         pad0x4_Q459U[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_C9WX7[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -70,7 +70,7 @@ public:
 struct EngineServicePing
 {
 public:
-	char                                                         pad0x1_KSL74[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_A2AFZ[0x1];                                 // 0x0(0x1)
 };
 
 

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct RotatingCompassAudioParams
 {
 public:
-	char                                                         pad0x20_PRN1K[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_AAS4H[0x20];                               // 0x0(0x20)
 	class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x20(0x8)
 	struct FName                                                 EmitterName;                                       // 0x28(0x8)
 	class WwiseEvent*                                            OneShotRotationSfx;                                // 0x30(0x8)
@@ -31,7 +31,7 @@ public:
 struct RotatingCompassRotationCurveCompletedEvent
 {
 public:
-	char                                                         pad0x1_K7JFW[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_8F4LY[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -39,7 +39,7 @@ public:
 struct RotatingCompassSplinePathCompletedEvent
 {
 public:
-	char                                                         pad0x1_9IPQR[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_PSZJJ[0x1];                                 // 0x0(0x1)
 };
 
 

@@ -90,7 +90,7 @@ SeasonPopupListAsset:
   Super: DataAsset
 SeasonProgressionUIComponent:
   Attributes:
-  - Name: pad0x20_C5MZ3[0x20]
+  - Name: pad0x20_5FBQ8[0x20]
     Offset: '0xc8'
     Size: '0x20'
     Type: char
@@ -102,7 +102,7 @@ SeasonProgressionUIComponent:
     Offset: '0xf8'
     Size: '0x18'
     Type: struct SeasonProgressionUITelemetryFragment
-  - Name: pad0xb0_P2EME[0xb0]
+  - Name: pad0xb0_SYV3U[0xb0]
     Offset: '0x110'
     Size: '0xb0'
     Type: char
@@ -118,7 +118,7 @@ SeasonProgressionUIInterface:
   Super: Interface
 SeasonProgressionUIService:
   Attributes:
-  - Name: pad0x30_XXLW1[0x30]
+  - Name: pad0x30_LUJ53[0x30]
     Offset: '0x3c8'
     Size: '0x30'
     Type: char
@@ -126,7 +126,7 @@ SeasonProgressionUIService:
     Offset: '0x3f8'
     Size: '0x8'
     Type: class SeasonPopupListAsset*
-  - Name: pad0x1a8_L8IOM[0x1a8]
+  - Name: pad0x1a8_719GO[0x1a8]
     Offset: '0x400'
     Size: '0x1a8'
     Type: char

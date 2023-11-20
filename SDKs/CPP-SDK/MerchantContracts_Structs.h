@@ -31,12 +31,12 @@ struct MerchantContractDeliveryRequest
 {
 public:
 	int                                                          Id;                                                // 0x0(0x4)
-	char                                                         pad0x4_79OTA[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_DM5U9[0x4];                                 // 0x4(0x4)
 	struct MerchantContractItemDesc                              ItemDesc;                                          // 0x8(0x28)
 	int                                                          NumToAllocate;                                     // 0x30(0x4)
 	int                                                          NumToCollect;                                      // 0x34(0x4)
 	int                                                          NumToDeliver;                                      // 0x38(0x4)
-	char                                                         pad0x4_QG0YD[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_EJOG8[0x4];                                 // 0x3c(0x4)
 };
 
 
@@ -44,9 +44,9 @@ public:
 struct MerchantContract
 {
 public:
-	char                                                         pad0x18_7TV6R[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_WHP0P[0x18];                               // 0x0(0x18)
 	TArray<struct MerchantContractDeliveryRequest>               DeliveryRequests;                                  // 0x18(0x10)
-	char                                                         pad0x98_N7MV1[0x98];                               // 0x28(0x98)
+	char                                                         pad0x98_TKQ3R[0x98];                               // 0x28(0x98)
 };
 
 

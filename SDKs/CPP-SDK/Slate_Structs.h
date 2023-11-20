@@ -15,7 +15,7 @@ public:
 	bool                                                         bCtrl;                                             // 0x20(0x1)
 	bool                                                         bAlt;                                              // 0x20(0x1)
 	bool                                                         bCmd;                                              // 0x20(0x1)
-	char                                                         pad0x7_ZEZ4J[0x7];                                 // 0x21(0x7)
+	char                                                         pad0x7_FOS6B[0x7];                                 // 0x21(0x7)
 };
 
 

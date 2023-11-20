@@ -17,7 +17,7 @@ public:
 	float                                                        LeftVeeringDistance;                               // 0x10(0x4)
 	float                                                        RightVeeringDistance;                              // 0x14(0x4)
 	struct PlayerStat                                            StatToFireForRouteChange;                          // 0x18(0x4)
-	char                                                         pad0x4_LNEG8[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_U9AOR[0x4];                                 // 0x1c(0x4)
 	class ParticleSystem*                                        PlayerSplashingVFXOverride;                        // 0x20(0x8)
 };
 
@@ -31,7 +31,7 @@ public:
 	float                                                        MinSpeed;                                          // 0x8(0x4)
 	float                                                        AccelerationMultiplier;                            // 0xc(0x4)
 	float                                                        DecelerationMultiplier;                            // 0x10(0x4)
-	char                                                         pad0x4_RP3QQ[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_WRDI0[0x4];                                 // 0x14(0x4)
 	struct RuntimeVectorCurve                                    SwingAngleControlDegrees;                          // 0x18(0x170)
 	struct RuntimeVectorCurve                                    SwingSpeedControlRPM;                              // 0x188(0x170)
 	struct Vector2D                                              WindResistanceMinMaxAngleDegrees;                  // 0x2f8(0x8)
@@ -44,7 +44,7 @@ public:
 struct OnUpdateZiplineActionStateEvent
 {
 public:
-	char                                                         pad0x1c_UTAEX[0x1c];                               // 0x0(0x1c)
+	char                                                         pad0x1c_UZPW3[0x1c];                               // 0x0(0x1c)
 };
 
 
@@ -74,7 +74,7 @@ public:
 struct OnExitedRideEvent
 {
 public:
-	char                                                         pad0x1_W9AGX[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_YCUF3[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -82,12 +82,12 @@ public:
 struct RideTransitionActionStateConstructionInfo
 {
 public:
-	char                                                         pad0x30_E7ZP1[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_RPDCU[0x30];                               // 0x0(0x30)
 	class Ride*                                                  Ride;                                              // 0x30(0x8)
 	byte                                                         Direction;                                         // 0x38(0x1)
-	char                                                         pad0x3_5HLVW[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_F3Y78[0x3];                                 // 0x39(0x3)
 	float                                                        Offset;                                            // 0x3c(0x4)
-	char                                                         pad0x18_CNU5S[0x18];                               // 0x40(0x18)
+	char                                                         pad0x18_JJVSI[0x18];                               // 0x40(0x18)
 };
 
 
@@ -95,7 +95,7 @@ public:
 struct RideTransitionActionStateParams
 {
 public:
-	char                                                         pad0x10_2C0MN[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_THJFZ[0x10];                               // 0x0(0x10)
 	float                                                        Duration;                                          // 0x10(0x4)
 };
 
@@ -104,7 +104,7 @@ public:
 struct WaterSlideActionStateConstructionInfo
 {
 public:
-	char                                                         pad0x30_TSEF4[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_MPHDZ[0x30];                               // 0x0(0x30)
 	class SceneComponent*                                        SceneComponent;                                    // 0x30(0x8)
 };
 
@@ -115,7 +115,7 @@ struct WaterSlideActionStateParams
 public:
 	float                                                        ForcedFieldOfView;                                 // 0x0(0x4)
 	bool                                                         ForceStash;                                        // 0x4(0x1)
-	char                                                         pad0x3_V9WE3[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_5GGHX[0x3];                                 // 0x5(0x3)
 	struct LookAtOffsetParams                                    LookAtOffsetParams;                                // 0x8(0x1c)
 };
 
@@ -124,7 +124,7 @@ public:
 struct OnPlayerSpeedOnWaterSlideChangedActionStateEvent
 {
 public:
-	char                                                         pad0xc_G9P23[0xc];                                 // 0x0(0xc)
+	char                                                         pad0xc_AP2YV[0xc];                                 // 0x0(0xc)
 };
 
 
@@ -132,7 +132,7 @@ public:
 struct OnPlayerChangedWaterSlideRouteActionStateEvent
 {
 public:
-	char                                                         pad0x8_04N50[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_UJ9O2[0x8];                                 // 0x0(0x8)
 	class WwiseEvent*                                            WaterSlideChangeForkOneShot;                       // 0x8(0x8)
 };
 
@@ -141,7 +141,7 @@ public:
 struct OnEndWaterSlideActionStateEvent
 {
 public:
-	char                                                         pad0x8_URJ9N[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_F6DTA[0x8];                                 // 0x0(0x8)
 	class WwiseEvent*                                            WaterSlideEnd;                                     // 0x8(0x8)
 	class WwiseEvent*                                            WaterSlideIsEndOneShot;                            // 0x10(0x8)
 };
@@ -160,11 +160,11 @@ public:
 struct ZiplineActionStateConstructionInfo
 {
 public:
-	char                                                         pad0x30_ORALA[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_DRN0W[0x30];                               // 0x0(0x30)
 	class SceneComponent*                                        SceneComponent;                                    // 0x30(0x8)
 	byte                                                         MovementDirection;                                 // 0x38(0x1)
 	byte                                                         InitialSwingDirection;                             // 0x39(0x1)
-	char                                                         pad0x6_DQ6VJ[0x6];                                 // 0x3a(0x6)
+	char                                                         pad0x6_TT15D[0x6];                                 // 0x3a(0x6)
 	double                                                       ZiplineStartSmoothedTime;                          // 0x40(0x8)
 };
 

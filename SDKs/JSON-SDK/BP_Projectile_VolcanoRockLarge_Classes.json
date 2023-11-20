@@ -1,27 +1,27 @@
 {
   "BP_Projectile_VolcanoRockLarge_C": {
     "Super": "VolcanicRock",
-    "FullSize": "0x6b0",
-    "InheritedSize": "0x698",
+    "FullSize": "0x6b8",
+    "InheritedSize": "0x6a0",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "RotatingAudioSource",
         "Type": "class RotatingAudioSourceComponent*",
         "Size": "0x8",
-        "Offset": "0x698"
+        "Offset": "0x6a0"
       },
       {
         "Name": "RockMesh",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x6a0"
+        "Offset": "0x6a8"
       },
       {
         "Name": "Collision",
         "Type": "class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x6a8"
+        "Offset": "0x6b0"
       }
     ]
   },

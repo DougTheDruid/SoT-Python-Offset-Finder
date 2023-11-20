@@ -11,10 +11,10 @@ class BP_Prompt_GuildEmissary_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
-	char                                                         pad0x150_7G9Y2[0x150];                             // 0x140(0x150)
+	char                                                         pad0x16c_UQ0TY[0x16c];                             // 0x140(0x16c)
 	struct ObjectMessagingHandle                                 HandleGuildEmissary;                               // 0x140(0x58)
 	bool                                                         PromptEvaluated;                                   // 0x198(0x1)
-	char                                                         pad0x3_LG45D[0x3];                                 // 0x199(0x3)
+	char                                                         pad0x3_7JF9O[0x3];                                 // 0x199(0x3)
 	float                                                        PromptDelay;                                       // 0x19c(0x4)
 	struct PrioritisedPromptWithHandle                           PromptGuildEmissary;                               // 0x1a0(0x70)
 	float                                                        PromptDisplayDuration;                             // 0x210(0x4)

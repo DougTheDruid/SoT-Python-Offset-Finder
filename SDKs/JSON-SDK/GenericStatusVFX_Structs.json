@@ -1,4 +1,27 @@
 {
+  "StatusAudioChangedEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StatusApplied",
+        "Type": "struct Status",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IsActive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_AR5J2[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
+      }
+    ]
+  },
   "StatusVFXChangedEvent": {
     "ClassSize": "0x1",
     "Attributes": [

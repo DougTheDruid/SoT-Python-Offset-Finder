@@ -37,7 +37,7 @@ public:
 struct EventPlayerPawnLeavingGame
 {
 public:
-	char                                                         pad0x1_BKGIE[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_L9DTR[0x1];                                 // 0x0(0x1)
 };
 
 

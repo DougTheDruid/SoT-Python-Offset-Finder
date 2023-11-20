@@ -6,7 +6,7 @@
     "ClassSize": "0xd0",
     "Attributes": [
       {
-        "Name": "pad0xd0_FBQ8J[0xd0]",
+        "Name": "pad0xd0_PAJTO[0xd0]",
         "Type": "char",
         "Size": "0xd0",
         "Offset": "0x4b8"
@@ -20,7 +20,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_QI7G8[0x10]",
+        "Name": "pad0x10_0ZH4D[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x600"
@@ -34,7 +34,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_10VQR[0x30]",
+        "Name": "pad0x30_83AXM[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0xc8"
@@ -57,12 +57,12 @@
   },
   "GoalDrivenCharacterMovementComponent": {
     "Super": "CharacterMovementComponent",
-    "FullSize": "0x610",
+    "FullSize": "0x600",
     "InheritedSize": "0x590",
-    "ClassSize": "0x80",
+    "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "pad0x10_9V9EP[0x10]",
+        "Name": "pad0x10_J46E6[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x590"
@@ -74,7 +74,7 @@
         "Offset": "0x5a0"
       },
       {
-        "Name": "pad0x3_D4MMA[0x3]",
+        "Name": "pad0x3_O5VNL[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5a1"
@@ -98,7 +98,7 @@
         "Offset": "0x5ac"
       },
       {
-        "Name": "pad0x3_IBQE2[0x3]",
+        "Name": "pad0x3_00WHS[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5ad"
@@ -140,9 +140,9 @@
         "Offset": "0x5c4"
       },
       {
-        "Name": "pad0x48_F5VFQ[0x48]",
+        "Name": "pad0x38_WOK8P[0x38]",
         "Type": "char",
-        "Size": "0x48",
+        "Size": "0x38",
         "Offset": "0x5c8"
       }
     ]
@@ -173,7 +173,7 @@
         "Offset": "0x2bc"
       },
       {
-        "Name": "pad0x8_SMM7H[0x8]",
+        "Name": "pad0x8_FLA0Y[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2c0"

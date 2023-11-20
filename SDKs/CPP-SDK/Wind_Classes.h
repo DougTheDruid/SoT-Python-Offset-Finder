@@ -31,7 +31,7 @@ public:
 class MockWindService: public Object
 {
 public:
-	char                                                         pad0x18_J73RZ[0x18];                               // 0x28(0x18)
+	char                                                         pad0x18_HQ4JE[0x18];                               // 0x28(0x18)
 };
 
 
@@ -39,7 +39,7 @@ public:
 class TestWindInterface: public Object
 {
 public:
-	char                                                         pad0x30_PHGFQ[0x30];                               // 0x28(0x30)
+	char                                                         pad0x30_CCH78[0x30];                               // 0x28(0x30)
 	TArray<Interface WindZones>                                  WindZones;                                         // 0x58(0x10)
 };
 
@@ -48,7 +48,7 @@ public:
 class TestWindZone: public Object
 {
 public:
-	char                                                         pad0x28_RTRBZ[0x28];                               // 0x28(0x28)
+	char                                                         pad0x28_CIR0H[0x28];                               // 0x28(0x28)
 };
 
 
@@ -63,12 +63,12 @@ public:
 class WindService: public Actor
 {
 public:
-	char                                                         pad0x10_6PBIP[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_AW1XR[0x10];                               // 0x3c8(0x10)
 	class WindDirectionalSource*                                 GlobalWindSource;                                  // 0x3d8(0x8)
-	char                                                         pad0x10_TE5OD[0x10];                               // 0x3e0(0x10)
+	char                                                         pad0x10_EWJVO[0x10];                               // 0x3e0(0x10)
 	float                                                        CurrentWindAngle;                                  // 0x3f0(0x4)
 	float                                                        CurrentWindMagnitude;                              // 0x3f4(0x4)
-	char                                                         pad0xe8_M2GWI[0xe8];                               // 0x3f8(0xe8)
+	char                                                         pad0xe8_BT5DC[0xe8];                               // 0x3f8(0xe8)
 	TArray<Interface WindZones>                                  WindZones;                                         // 0x4e0(0x10)
 	TArray<struct ExtraWind>                                     ExtraWind;                                         // 0x4f0(0x10)
 };
@@ -78,7 +78,7 @@ public:
 class DebugWindService: public WindService
 {
 public:
-	char                                                         pad0x10_YDHNQ[0x10];                               // 0x500(0x10)
+	char                                                         pad0x10_4VFAD[0x10];                               // 0x500(0x10)
 };
 
 
@@ -93,10 +93,10 @@ public:
 class WindZoneComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x8_CNLUT[0x8];                                 // 0x2e0(0x8)
+	char                                                         pad0x8_395NM[0x8];                                 // 0x2e0(0x8)
 	struct WindTurbulenceParameters                              TurbulenceParams;                                  // 0x2e8(0x70)
 	struct WindZoneParams                                        WindZoneParams;                                    // 0x358(0x10)
-	char                                                         pad0x8_RPC8D[0x8];                                 // 0x368(0x8)
+	char                                                         pad0x8_7FMME[0x8];                                 // 0x368(0x8)
 };
 
 

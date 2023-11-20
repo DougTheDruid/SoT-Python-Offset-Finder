@@ -21,7 +21,7 @@ ContestMatchmakingFactionMapEntry:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_RYMPZ[0x7]
+  - Name: pad0x7_7C9XO[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -64,7 +64,7 @@ ContestMatchmakingServerRequestModel:
     Offset: '0x88'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_R7F0P[0x3]
+  - Name: pad0x3_X3X2X[0x3]
     Offset: '0x89'
     Size: '0x3'
     Type: char
@@ -76,7 +76,7 @@ ContestMatchmakingServerRequestModel:
     Offset: '0x9c'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x4_R4VGF[0x4]
+  - Name: pad0x4_9ZB8S[0x4]
     Offset: '0xac'
     Size: '0x4'
     Type: char
@@ -95,7 +95,7 @@ ExistingServerCrewModel:
     Offset: '0x14'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_AN7IJ[0x3]
+  - Name: pad0x3_Z8DC7[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -103,7 +103,7 @@ ExistingServerCrewModel:
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_RQBO8[0x4]
+  - Name: pad0x4_JRF21[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -153,7 +153,7 @@ GameMainEventTypeModel:
     Offset: '0x31'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_DVU3I[0x6]
+  - Name: pad0x6_AO6GZ[0x6]
     Offset: '0x32'
     Size: '0x6'
     Type: char
@@ -168,14 +168,14 @@ GameSubEventTypeModel:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_OSVN7[0x4]
+  - Name: pad0x4_G6WPN[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
   ClassSize: '0x18'
 OptionalPlayModeModel:
   Attributes:
-  - Name: pad0x50_9KO83[0x50]
+  - Name: pad0x50_EKBS9[0x50]
     Offset: '0x0'
     Size: '0x50'
     Type: char
@@ -217,7 +217,7 @@ ServerCrewModel:
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_3Y14Q[0x4]
+  - Name: pad0x4_8LMXO[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -233,7 +233,7 @@ ServerCrewModel:
     Offset: '0x70'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_RQJSQ[0x3]
+  - Name: pad0x3_A8U7X[0x3]
     Offset: '0x71'
     Size: '0x3'
     Type: char
@@ -253,7 +253,7 @@ ServerCrewModel:
     Offset: '0x8c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_2OZZH[0x3]
+  - Name: pad0x3_M9TE9[0x3]
     Offset: '0x8d'
     Size: '0x3'
     Type: char
@@ -351,7 +351,7 @@ ServerCrewResponseModel:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_J84GZ[0x7]
+  - Name: pad0x7_RCMNG[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char

@@ -41,7 +41,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x20_OXX6C[0x20]",
+        "Name": "pad0x20_OXI4W[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xd8"
@@ -61,7 +61,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x4_X0TRR[0x4]",
+        "Name": "pad0x4_H9D3H[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xbc"
@@ -85,7 +85,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x3_OMDMQ[0x3]",
+        "Name": "pad0x3_WUGYT[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xd1"
@@ -105,7 +105,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x28_7WK6C[0x28]",
+        "Name": "pad0x28_2QOGK[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x6a0"
@@ -123,7 +123,7 @@
         "Offset": "0x6d0"
       },
       {
-        "Name": "pad0x28_XH6WW[0x28]",
+        "Name": "pad0x28_OJJ1Y[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x6d8"
@@ -144,7 +144,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_N7ARC[0x10]",
+        "Name": "pad0x10_W5OVD[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x138"
@@ -198,7 +198,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x20_NJ32D[0x20]",
+        "Name": "pad0x20_9P629[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x128"
@@ -225,7 +225,7 @@
         "Offset": "0x8b8"
       },
       {
-        "Name": "pad0x20_LX8HG[0x20]",
+        "Name": "pad0x20_PENM9[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x8c0"
@@ -262,9 +262,9 @@
   },
   "AdventureOnDemandVoyageSelectionCompanyDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x68",
+    "FullSize": "0x70",
     "InheritedSize": "0x28",
-    "ClassSize": "0x40",
+    "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "CompanyName",
@@ -279,30 +279,42 @@
         "Offset": "0x30"
       },
       {
+        "Name": "DiscoverTileCategory",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x4_PD232[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
         "Name": "Prerequisites",
         "Type": "TArray<class InteractionPrerequisiteBase*>",
         "Size": "0x10",
-        "Offset": "0x38"
+        "Offset": "0x50"
       },
       {
         "Name": "VoyageGroups",
         "Type": "TArray<struct AdventureOnDemandVoyageSelectionVoyageProposalGroup>",
         "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "WorldEventGroups",
-        "Type": "TArray<struct AdventureOnDemandVoyageSelectionVoyageProposalGroup>",
-        "Size": "0x10",
-        "Offset": "0x58"
+        "Offset": "0x60"
       }
     ]
   },
   "AdventureOnDemandTallTaleCategoryDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0xf8",
+    "FullSize": "0x100",
     "InheritedSize": "0x28",
-    "ClassSize": "0xd0",
+    "ClassSize": "0xd8",
     "Attributes": [
       {
         "Name": "TaleId",
@@ -317,52 +329,58 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_N6R7W[0x7]",
+        "Name": "pad0x7_PQ9H4[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
       },
       {
+        "Name": "DiscoverTileCategory",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
         "Name": "DisplayName",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x38"
+        "Offset": "0x40"
       },
       {
         "Name": "Description",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x70"
+        "Offset": "0x78"
       },
       {
         "Name": "BackgroundImageUrl",
         "Type": "struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0xa8"
+        "Offset": "0xb0"
       },
       {
         "Name": "IconImageUrl",
         "Type": "struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0xb8"
+        "Offset": "0xc0"
       },
       {
         "Name": "LockedDescriptions",
         "Type": "TArray<struct FText>",
         "Size": "0x10",
-        "Offset": "0xc8"
+        "Offset": "0xd0"
       },
       {
         "Name": "Prerequisites",
         "Type": "TArray<class InteractionPrerequisiteBase*>",
         "Size": "0x10",
-        "Offset": "0xd8"
+        "Offset": "0xe0"
       },
       {
         "Name": "TallTales",
         "Type": "TArray<struct AdventureOnDemandTallTaleProposalGroup>",
         "Size": "0x10",
-        "Offset": "0xe8"
+        "Offset": "0xf0"
       }
     ]
   },
@@ -388,9 +406,9 @@
   },
   "AdventureOnDemandVoyageSelectionDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x60",
+    "FullSize": "0x50",
     "InheritedSize": "0x28",
-    "ClassSize": "0x38",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "DiscoveryPageMysteryEntries",
@@ -405,16 +423,10 @@
         "Offset": "0x30"
       },
       {
-        "Name": "TallTaleChapters",
-        "Type": "TArray<class AdventureOnDemandVoyageSelectionCompanyDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
         "Name": "TallTales",
         "Type": "TArray<class AdventureOnDemandTallTaleCategoryDataAsset*>",
         "Size": "0x10",
-        "Offset": "0x50"
+        "Offset": "0x40"
       }
     ]
   },
@@ -515,49 +527,11 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "QuestTableAdventureOnDemandParams": {
-    "Super": "DataAsset",
-    "FullSize": "0x140",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x118",
-    "Attributes": [
-      {
-        "Name": "SailToQuestText_Default",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "SailToQuestText_BlockedDueToWorldEvent",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "DiveToQuestText_Default",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "DiveToQuestText_BlockedDueToTutorial",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "DiveToQuestText_BlockedDueToCooldown",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x108"
-      }
-    ]
-  },
   "AdventureOnDemandServiceParams": {
     "Super": "DataAsset",
-    "FullSize": "0x70",
+    "FullSize": "0x78",
     "InheritedSize": "0x28",
-    "ClassSize": "0x48",
+    "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "DiveToTunnelVoyageDesc",
@@ -590,7 +564,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_2YJE5[0x4]",
+        "Name": "pad0x4_6QIWL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
@@ -608,10 +582,16 @@
         "Offset": "0x60"
       },
       {
+        "Name": "GameEventsOnDemandStatDataAsset",
+        "Type": "class GameEventsOnDemandStatDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      },
+      {
         "Name": "HuntersCallCompany",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x68"
+        "Offset": "0x70"
       }
     ]
   },
@@ -668,7 +648,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x7_8VUMH[0x7]",
+        "Name": "pad0x7_KJ5BR[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x81"
@@ -762,7 +742,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_M5RR1[0x18]",
+        "Name": "pad0x18_TGOC3[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x98"
@@ -792,9 +772,9 @@
   },
   "GameEventsOnDemandBannerDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x160",
+    "FullSize": "0x198",
     "InheritedSize": "0x28",
-    "ClassSize": "0x138",
+    "ClassSize": "0x170",
     "Attributes": [
       {
         "Name": "GameEventSpecificBannerTextData",
@@ -833,17 +813,87 @@
         "Offset": "0x118"
       },
       {
+        "Name": "OnGameEventFailedBannerMessageText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x150"
+      },
+      {
         "Name": "BannerTagsPerCompany",
         "Type": "TArray<struct GameEventOnDemandCompanyBannerData>",
         "Size": "0x10",
-        "Offset": "0x150"
+        "Offset": "0x188"
+      }
+    ]
+  },
+  "GameEventsOnDemandStatDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CompletedEventStatsPerCompany",
+        "Type": "TArray<struct GameEventOnDemandCompanyStatData>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "QuestTableAdventureOnDemandParams": {
+    "Super": "DataAsset",
+    "FullSize": "0x158",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x130",
+    "Attributes": [
+      {
+        "Name": "SailToQuestText_Default",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "SailToQuestText_BlockedDueToWorldEvent",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "DiveToQuestText_Default",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "DiveToQuestText_BlockedDueToTutorial",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "DiveToQuestText_BlockedDueToCooldown",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "InfoDiscoverTileCategory",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "BakedQuestDiscoverTiles",
+        "Type": "TArray<struct QuestTableBakedQuestDiscoverTile>",
+        "Size": "0x10",
+        "Offset": "0x148"
       }
     ]
   },
   "WantsToDivePrerequisite": {
     "Super": "InteractionPrerequisiteBase",
-    "FullSize": "0x80",
-    "InheritedSize": "0x80",
+    "FullSize": "0x90",
+    "InheritedSize": "0x90",
     "ClassSize": "0x0",
     "Attributes": []
   },

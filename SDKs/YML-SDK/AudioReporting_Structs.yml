@@ -6,7 +6,7 @@ ActiveAudioReaction:
     Offset: '0x0'
     Size: '0x8'
     Type: class AudioReportReaction*
-  - Name: pad0x8_9GWYB[0x8]
+  - Name: pad0x8_4X76Q[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char
@@ -29,7 +29,7 @@ EventReactionDesc:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_E59LY[0x4]
+  - Name: pad0x4_5VE40[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char

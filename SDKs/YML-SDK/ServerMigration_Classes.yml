@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 MigrationControlChannel:
   Attributes:
-  - Name: pad0x48_3EFWD[0x48]
+  - Name: pad0x48_84H92[0x48]
     Offset: '0x68'
     Size: '0x48'
     Type: char
@@ -82,7 +82,7 @@ ServerMigrationSerialisationDetailsTestsActorWithNetActorPtr:
     Offset: '0x3c8'
     Size: '0x14'
     Type: struct NetActorPtr
-  - Name: pad0x4_AMA7O[0x4]
+  - Name: pad0x4_58QLG[0x4]
     Offset: '0x3dc'
     Size: '0x4'
     Type: char
@@ -146,7 +146,7 @@ ServerMigrationSerialisationDetailsTestsMigratableDefaultComponentActor:
   Super: Actor
 ServerMigrationSerialisationDetailsTestsMigrationActorCallsOrderingTestActor:
   Attributes:
-  - Name: pad0x8_08L63[0x8]
+  - Name: pad0x8_GDHWZ[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -176,7 +176,7 @@ ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseActor:
     Offset: '0x3c8'
     Size: '0x4'
     Type: struct ServerMigrationCustomMigrationSerialisationStruct
-  - Name: pad0x4_R09PE[0x4]
+  - Name: pad0x4_961KT[0x4]
     Offset: '0x3cc'
     Size: '0x4'
     Type: char
@@ -206,7 +206,7 @@ ServerMigrationSerialisationDetailsTestsMigrationReferenceActor:
     Offset: '0x3c8'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x8_UTVLO[0x8]
+  - Name: pad0x8_9TA9N[0x8]
     Offset: '0x3d0'
     Size: '0x8'
     Type: char
@@ -224,7 +224,7 @@ ServerMigrationSerialisationDetailsTestsPropertyMarkup:
     Offset: '0x2c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_94WRC[0x3]
+  - Name: pad0x3_M2UBZ[0x3]
     Offset: '0x2d'
     Size: '0x3'
     Type: char
@@ -236,7 +236,7 @@ ServerMigrationSerialisationDetailsTestsPropertyMarkup:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_QVN1N[0x4]
+  - Name: pad0x4_6VVH2[0x4]
     Offset: '0x44'
     Size: '0x4'
     Type: char
@@ -260,7 +260,7 @@ ServerMigrationSerialisationDetailsTestsUStructProperty:
     Offset: '0x28'
     Size: '0xc'
     Type: struct ServerMigrationSerialisationDetailsTestsUStruct
-  - Name: pad0x4_DLJCL[0x4]
+  - Name: pad0x4_HJ9Q0[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -274,7 +274,7 @@ ServerMigrationSettings:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_RDHBJ[0x4]
+  - Name: pad0x4_8S3AI[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -294,7 +294,7 @@ ServerMigrationSettings:
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_FMUNH[0x4]
+  - Name: pad0x4_XZM8I[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char

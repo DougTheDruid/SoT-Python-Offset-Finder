@@ -6,19 +6,19 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x44 (Full Size[0x2104] - InheritedSize[0x20c0]
+// Size 0x44 (Full Size[0x2164] - InheritedSize[0x2120]
 class BP_PlayerPirate_Ghost_C: public AthenaGhostPlayerCharacter
 {
 public:
-	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x20c0(0x8)
-	blueprintgeneratedclass BP_GhostCharacterAudioComponent_C*   BP_GhostCharacterAudioComponent;                   // 0x20c8(0x8)
-	class WaterInteractionComponent*                             WaterInteraction;                                  // 0x20d0(0x8)
-	class PlayerNameplateComponent*                              PlayerNameplate;                                   // 0x20d8(0x8)
-	class BodyLightControllerComponent*                          BodyLightController;                               // 0x20e0(0x8)
-	class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x20e8(0x8)
-	class AmbientLightSourceComponent*                           BodyLight;                                         // 0x20f0(0x8)
-	class CharacterFootImpactComponent*                          CharacterFootImpact;                               // 0x20f8(0x8)
-	float                                                        Default Ghost Parameter;                           // 0x2100(0x4)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x2120(0x8)
+	blueprintgeneratedclass BP_GhostCharacterAudioComponent_C*   BP_GhostCharacterAudioComponent;                   // 0x2128(0x8)
+	class WaterInteractionComponent*                             WaterInteraction;                                  // 0x2130(0x8)
+	class PlayerNameplateComponent*                              PlayerNameplate;                                   // 0x2138(0x8)
+	class BodyLightControllerComponent*                          BodyLightController;                               // 0x2140(0x8)
+	class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x2148(0x8)
+	class AmbientLightSourceComponent*                           BodyLight;                                         // 0x2150(0x8)
+	class CharacterFootImpactComponent*                          CharacterFootImpact;                               // 0x2158(0x8)
+	float                                                        Default Ghost Parameter;                           // 0x2160(0x4)
 };
 
 

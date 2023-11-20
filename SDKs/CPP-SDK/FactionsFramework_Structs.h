@@ -50,7 +50,7 @@ public:
 	struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	class UClass*                                                Faction;                                           // 0x10(0x8)
 	byte                                                         EnemyFactionShipRangeState;                        // 0x18(0x1)
-	char                                                         pad0x3_U9H6R[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_I1YYB[0x3];                                 // 0x19(0x3)
 	int                                                          CurrentLootValue;                                  // 0x1c(0x4)
 	int                                                          SandsOfFate;                                       // 0x20(0x4)
 	int                                                          Streak;                                            // 0x24(0x4)
@@ -66,15 +66,15 @@ public:
 	struct Guid                                                  SessionId;                                         // 0x10(0x10)
 	class UClass*                                                Faction;                                           // 0x20(0x8)
 	int                                                          Streak;                                            // 0x28(0x4)
-	char                                                         pad0x4_H6HC1[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_VP2FQ[0x4];                                 // 0x2c(0x4)
 	double                                                       CooldownTimeStamp;                                 // 0x30(0x8)
 	bool                                                         IsInInvasion;                                      // 0x38(0x1)
-	char                                                         pad0x7_FMEPE[0x7];                                 // 0x39(0x7)
+	char                                                         pad0x7_5RGX3[0x7];                                 // 0x39(0x7)
 	TArray<struct Guid>                                          EligibleLootBootyIds;                              // 0x40(0x10)
 	int                                                          CurrentLootValue;                                  // 0x50(0x4)
-	char                                                         pad0x4_PU59G[0x4];                                 // 0x54(0x4)
+	char                                                         pad0x4_QPX5O[0x4];                                 // 0x54(0x4)
 	TArray<Bool HasDisplayedPromptForLootLevel>                  HasDisplayedPromptForLootLevel;                    // 0x58(0x10)
-	char                                                         pad0x10_A4R09[0x10];                               // 0x68(0x10)
+	char                                                         pad0x10_U87YP[0x10];                               // 0x68(0x10)
 };
 
 
@@ -141,7 +141,7 @@ public:
 	struct Guid                                                  LeavingCrewId;                                     // 0x0(0x10)
 	class UClass*                                                FactionLeft;                                       // 0x10(0x8)
 	byte                                                         FactionLeftReason;                                 // 0x18(0x1)
-	char                                                         pad0x7_7GA1A[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_C7872[0x7];                                 // 0x19(0x7)
 };
 
 
@@ -152,7 +152,7 @@ public:
 	struct Guid                                                  LeavingCrewId;                                     // 0x0(0x10)
 	class UClass*                                                FactionToLeave;                                    // 0x10(0x8)
 	byte                                                         FactionLeftReason;                                 // 0x18(0x1)
-	char                                                         pad0x7_KE1GA[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_5ARXZ[0x7];                                 // 0x19(0x7)
 };
 
 
@@ -200,7 +200,7 @@ public:
 	struct Guid                                                  FactionSessionId;                                  // 0x0(0x10)
 	struct FName                                                 AlignedFactionName;                                // 0x10(0x8)
 	byte                                                         LeftReason;                                        // 0x18(0x1)
-	char                                                         pad0x3_9OPFF[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_FVWLU[0x3];                                 // 0x19(0x3)
 };
 
 
@@ -219,8 +219,8 @@ struct FactionWaitTimesData
 public:
 	byte                                                         Faction;                                           // 0x0(0x1)
 	byte                                                         SessionType;                                       // 0x1(0x1)
-	char                                                         pad0x6_2M04R[0x6];                                 // 0x2(0x6)
-	char                                                         pad0x8_9GY0K[0x8];                                 // 0x8(0x8)
+	char                                                         pad0x6_QFTTJ[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x8_9BLL1[0x8];                                 // 0x8(0x8)
 };
 
 

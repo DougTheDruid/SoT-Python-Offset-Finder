@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class TaleQuestStep: public Object
 {
 public:
-	char                                                         pad0x60_JGD03[0x60];                               // 0x28(0x60)
+	char                                                         pad0x60_JOHY7[0x60];                               // 0x28(0x60)
 	class TaleQuestStepDesc*                                     TaleStepDesc;                                      // 0x88(0x8)
-	char                                                         pad0x8_OS0QK[0x8];                                 // 0x90(0x8)
+	char                                                         pad0x8_70A8B[0x8];                                 // 0x90(0x8)
 };
 
 
@@ -20,7 +20,7 @@ public:
 class TaleQuestService: public Object
 {
 public:
-	char                                                         pad0x38_YVCP9[0x38];                               // 0x28(0x38)
+	char                                                         pad0x38_VJ5F0[0x38];                               // 0x28(0x38)
 };
 
 
@@ -36,8 +36,8 @@ class TaleQuestStepDesc: public Object
 {
 public:
 	bool                                                         Fork;                                              // 0x28(0x1)
-	char                                                         pad0x7_A6IW5[0x7];                                 // 0x29(0x7)
-	char                                                         pad0x50_WG88C[0x50];                               // 0x30(0x50)
+	char                                                         pad0x7_SB4M2[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x50_NEJ93[0x50];                               // 0x30(0x50)
 };
 
 
@@ -45,7 +45,7 @@ public:
 class TaleQuestRunnableStepDesc: public TaleQuestStepDesc
 {
 public:
-	char                                                         pad0x68_V5CP3[0x68];                               // 0x80(0x68)
+	char                                                         pad0x68_5J368[0x68];                               // 0x80(0x68)
 };
 
 
@@ -53,10 +53,10 @@ public:
 class TaleQuestFunctionStepLibrary: public TaleQuestRunnableStepDesc
 {
 public:
-	char                                                         pad0x8_C5DNH[0x8];                                 // 0xe8(0x8)
+	char                                                         pad0x8_7I3VY[0x8];                                 // 0xe8(0x8)
 	class Function*                                              Function;                                          // 0xf0(0x8)
 	byte                                                         FunctionStepFlags;                                 // 0x178(0x1)
-	char                                                         pad0x7_5FDLZ[0x7];                                 // 0x179(0x7)
+	char                                                         pad0x7_2ISE4[0x7];                                 // 0x179(0x7)
 };
 
 
@@ -71,7 +71,7 @@ public:
 class TaleQuestFramedStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x8_SVPYT[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_A3NNM[0x8];                                 // 0x98(0x8)
 	TArray<class TaleQuestService*>                              Services;                                          // 0xa0(0x10)
 	class TaleQuestFramedStepDesc*                               FrameDesc;                                         // 0xb0(0x8)
 	struct UserDefinedStructWithSerialisableValue                Variables;                                         // 0xb8(0x20)
@@ -93,7 +93,7 @@ public:
 class ContendedResourceComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x40_ZR3IY[0x40];                               // 0xc8(0x40)
+	char                                                         pad0x40_Z4U0W[0x40];                               // 0xc8(0x40)
 };
 
 
@@ -131,13 +131,13 @@ class SplineFootprintPathComponent: public SplineComponent
 {
 public:
 	float                                                        DistanceBetweenDecals;                             // 0x638(0x4)
-	char                                                         pad0x4_RF824[0x4];                                 // 0x63c(0x4)
+	char                                                         pad0x4_OV07T[0x4];                                 // 0x63c(0x4)
 	class MaterialInterface*                                     DecalMaterial;                                     // 0x640(0x8)
 	struct SplineFootprintPathTool                               PathTool;                                          // 0x648(0x1)
-	char                                                         pad0x3_TOE8I[0x3];                                 // 0x649(0x3)
+	char                                                         pad0x3_2RVRB[0x3];                                 // 0x649(0x3)
 	float                                                        DecalYaw;                                          // 0x64c(0x4)
 	struct Vector                                                DecalUniformScale;                                 // 0x650(0xc)
-	char                                                         pad0x4_9L1EU[0x4];                                 // 0x65c(0x4)
+	char                                                         pad0x4_C85FM[0x4];                                 // 0x65c(0x4)
 };
 
 
@@ -160,7 +160,7 @@ class FixedArrayEntrySelectionStrategy: public TaleQuestArrayEntrySelectionStrat
 {
 public:
 	int                                                          IndexToSelect;                                     // 0x28(0x4)
-	char                                                         pad0x4_NDU1Z[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_TJCOE[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -175,7 +175,7 @@ public:
 class SequentialArrayEntrySelectionStrategy: public TaleQuestArrayEntrySelectionStrategy
 {
 public:
-	char                                                         pad0x8_FS6MU[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_J2QWE[0x8];                                 // 0x28(0x8)
 };
 
 
@@ -183,12 +183,12 @@ public:
 class TaleQuestCargoRunContract: public Object
 {
 public:
-	char                                                         pad0x40_2588N[0x40];                               // 0x28(0x40)
+	char                                                         pad0x40_3PME8[0x40];                               // 0x28(0x40)
 	TArray<struct TaleQuestCargoRunContractItem>                 ItemsToCollect;                                    // 0x68(0x10)
-	char                                                         pad0x10_B1XHN[0x10];                               // 0x78(0x10)
+	char                                                         pad0x10_RXPJR[0x10];                               // 0x78(0x10)
 	class Actor*                                                 DeliverToNPC;                                      // 0x88(0x8)
 	class Actor*                                                 CollectFromNPC;                                    // 0x90(0x8)
-	char                                                         pad0x50_1Q59L[0x50];                               // 0x98(0x50)
+	char                                                         pad0x50_CMII0[0x50];                               // 0x98(0x50)
 };
 
 
@@ -197,7 +197,7 @@ class TaleQuestCargoRunContractsService: public TaleQuestService
 {
 public:
 	TArray<class TaleQuestCargoRunContract*>                     Contracts;                                         // 0x60(0x10)
-	char                                                         pad0x38_Q1RAG[0x38];                               // 0x70(0x38)
+	char                                                         pad0x38_DZFZT[0x38];                               // 0x70(0x38)
 };
 
 
@@ -212,10 +212,10 @@ public:
 class TaleQuestIndexedFrame: public Object
 {
 public:
-	char                                                         pad0x8_0S6OI[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_S0GP0[0x8];                                 // 0x28(0x8)
 	class TaleQuestForEachStepDescBase*                          Desc;                                              // 0x30(0x8)
 	int                                                          Index;                                             // 0x38(0x4)
-	char                                                         pad0x4c_D2Q4I[0x4c];                               // 0x3c(0x4c)
+	char                                                         pad0x4c_KTELQ[0x4c];                               // 0x3c(0x4c)
 };
 
 
@@ -223,7 +223,7 @@ public:
 class TaleQuestMerchantContract: public Object
 {
 public:
-	char                                                         pad0x60_OHLS7[0x60];                               // 0x28(0x60)
+	char                                                         pad0x60_FNUE0[0x60];                               // 0x28(0x60)
 };
 
 
@@ -247,7 +247,7 @@ class NumPlayerStatsFromListPhaseBranchSelector: public TaleQuestPhaseBranchSele
 {
 public:
 	TArray<struct PlayerStat>                                    UniqueStats;                                       // 0x28(0x10)
-	char                                                         pad0x18_QSJYB[0x18];                               // 0x38(0x18)
+	char                                                         pad0x18_2UWFK[0x18];                               // 0x38(0x18)
 };
 
 
@@ -264,7 +264,7 @@ class TaleQuestQueryableStateCanAllDataBeReadNPCDialogConditional: public NPCDia
 public:
 	TArray<class Class*>                                         AllDataToCheck;                                    // 0x30(0x10)
 	bool                                                         ExpectedValue;                                     // 0x40(0x1)
-	char                                                         pad0x7_2SMSO[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_5HK1I[0x7];                                 // 0x41(0x7)
 };
 
 
@@ -274,7 +274,7 @@ class TaleQuestQueryableStateCanAnyDataBeReadNPCDialogConditional: public NPCDia
 public:
 	TArray<class Class*>                                         AllDataToCheck;                                    // 0x30(0x10)
 	bool                                                         ExpectedValue;                                     // 0x40(0x1)
-	char                                                         pad0x7_KJ9PA[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_112AO[0x7];                                 // 0x41(0x7)
 };
 
 
@@ -284,7 +284,7 @@ class TaleQuestQueryableStateReadAllValueBoolNPCDialogConditional: public NPCDia
 public:
 	TArray<class Class*>                                         AllDataToCheck;                                    // 0x30(0x10)
 	bool                                                         ExpectedValue;                                     // 0x40(0x1)
-	char                                                         pad0x7_J20FZ[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_3UN6V[0x7];                                 // 0x41(0x7)
 };
 
 
@@ -294,7 +294,7 @@ class TaleQuestQueryableStateReadAnyValueBoolNPCDialogConditional: public NPCDia
 public:
 	TArray<class Class*>                                         AllDataToCheck;                                    // 0x30(0x10)
 	bool                                                         ExpectedValue;                                     // 0x40(0x1)
-	char                                                         pad0x7_ZFAXG[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_DJUP9[0x7];                                 // 0x41(0x7)
 };
 
 
@@ -305,7 +305,7 @@ public:
 	class UClass*                                                DataID;                                            // 0x30(0x8)
 	int                                                          ExpectedValue;                                     // 0x38(0x4)
 	byte                                                         ComparisonToExpectedValue;                         // 0x3c(0x1)
-	char                                                         pad0x3_M9SZ1[0x3];                                 // 0x3d(0x3)
+	char                                                         pad0x3_82Z21[0x3];                                 // 0x3d(0x3)
 };
 
 
@@ -327,7 +327,7 @@ public:
 class TaleQuestQueryableStatesAccessComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x10_AT7TC[0x10];                               // 0xc8(0x10)
+	char                                                         pad0x10_GGGEI[0x10];                               // 0xc8(0x10)
 	TArray<struct TaleQuestQueryableStateDataInfo>               TalesData;                                         // 0xd8(0x10)
 };
 
@@ -343,11 +343,11 @@ public:
 class TaleQuestQueryableStatesQuantityContainerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_YWY6I[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_TP2P5[0x8];                                 // 0xc8(0x8)
 	class UClass*                                                QuantityDataID;                                    // 0xd0(0x8)
 	class UClass*                                                OptionalCapacityOverrideDataID;                    // 0xd8(0x8)
 	int                                                          Capacity;                                          // 0xe0(0x4)
-	char                                                         pad0x4_6WC8R[0x4];                                 // 0xe4(0x4)
+	char                                                         pad0x4_J0YQN[0x4];                                 // 0xe4(0x4)
 };
 
 
@@ -355,7 +355,7 @@ public:
 class TaleQuestImportFrame: public TaleQuestRootFrame
 {
 public:
-	char                                                         pad0x88_OK63D[0x88];                               // 0x38(0x88)
+	char                                                         pad0x88_34LEI[0x88];                               // 0x38(0x88)
 };
 
 
@@ -388,7 +388,7 @@ public:
 class GameEventBlockingTaleService: public TaleQuestService
 {
 public:
-	char                                                         pad0x38_F4VOE[0x38];                               // 0x60(0x38)
+	char                                                         pad0x38_H8ASD[0x38];                               // 0x60(0x38)
 };
 
 
@@ -396,7 +396,7 @@ public:
 class GameEventExclusionZoneTaleService: public TaleQuestService
 {
 public:
-	char                                                         pad0x28_X61PW[0x28];                               // 0x60(0x28)
+	char                                                         pad0x28_NMCPH[0x28];                               // 0x60(0x28)
 };
 
 
@@ -407,7 +407,7 @@ public:
 	class TaleQuestWeightedItemDescSpawnDataAsset*               GlobalSpawnData;                                   // 0x60(0x8)
 	TArray<Int ValidSpawnData>                                   ValidSpawnData;                                    // 0x68(0x10)
 	TArray<class ItemSpawnData*>                                 ItemsToSpawn;                                      // 0x78(0x10)
-	char                                                         pad0x8_PXJSC[0x8];                                 // 0x88(0x8)
+	char                                                         pad0x8_DVCDL[0x8];                                 // 0x88(0x8)
 };
 
 
@@ -416,7 +416,7 @@ class TaleQuestActorOfInterestService: public TaleQuestService
 {
 public:
 	class TaleQuestActorOfInterestServiceDesc*                   Desc;                                              // 0x60(0x8)
-	char                                                         pad0x30_LWWK3[0x30];                               // 0x68(0x30)
+	char                                                         pad0x30_HYKH8[0x30];                               // 0x68(0x30)
 };
 
 
@@ -432,7 +432,7 @@ public:
 	TArray<struct PhasedActor>                                   PhasedActors;                                      // 0xa0(0x10)
 	TArray<struct PhasedItem>                                    PhasedItems;                                       // 0xb0(0x10)
 	struct FText                                                 CriticalActorHandedInByAnotherCrewFailureMessage;  // 0xc0(0x38)
-	char                                                         pad0x2d8_OEAXS[0x2d8];                             // 0xf8(0x2d8)
+	char                                                         pad0x2d8_O6GK1[0x2d8];                             // 0xf8(0x2d8)
 };
 
 
@@ -440,7 +440,7 @@ public:
 class TaleQuestCrewGameEventBlockingTaleService: public TaleQuestService
 {
 public:
-	char                                                         pad0x38_8HNWI[0x38];                               // 0x60(0x38)
+	char                                                         pad0x38_3PGQM[0x38];                               // 0x60(0x38)
 };
 
 
@@ -448,7 +448,7 @@ public:
 class TaleQuestEQSService: public TaleQuestService
 {
 public:
-	char                                                         pad0xd8_FR583[0xd8];                               // 0x60(0xd8)
+	char                                                         pad0xd8_6A234[0xd8];                               // 0x60(0xd8)
 };
 
 
@@ -473,7 +473,7 @@ public:
 class TaleQuestParticipantDeathService: public TaleQuestService
 {
 public:
-	char                                                         pad0x20_K738F[0x20];                               // 0x60(0x20)
+	char                                                         pad0x20_LDBO1[0x20];                               // 0x60(0x20)
 };
 
 
@@ -482,17 +482,17 @@ class TaleQuestPlayerItemsCleaupService: public TaleQuestService
 {
 public:
 	class TaleQuestPlayerItemsCleaupServiceDesc*                 ServiceDesc;                                       // 0x60(0x8)
-	char                                                         pad0x8_QH62L[0x8];                                 // 0x68(0x8)
+	char                                                         pad0x8_2XUXT[0x8];                                 // 0x68(0x8)
 };
 
 
-// Size 0x28 (Full Size[0x88] - InheritedSize[0x60]
+// Size 0x80 (Full Size[0xe0] - InheritedSize[0x60]
 class TaleQuestPredicatedBranchPhasingService: public TaleQuestService
 {
 public:
 	TArray<class PhasedClusterRoot*>                             SpawnedPhaseClustersRoots;                         // 0x60(0x10)
 	class TaleQuestPredicatedBranchPhasingServiceDesc*           ServiceDesc;                                       // 0x70(0x8)
-	char                                                         pad0x10_IEB5F[0x10];                               // 0x78(0x10)
+	char                                                         pad0x68_TZAR7[0x68];                               // 0x78(0x68)
 };
 
 
@@ -501,7 +501,7 @@ class TaleQuestQueryableStatesService: public TaleQuestService
 {
 public:
 	TArray<struct TaleQuestQueryableStateDataInfo>               AllData;                                           // 0x60(0x10)
-	char                                                         pad0x40_29PEJ[0x40];                               // 0x70(0x40)
+	char                                                         pad0x40_H1KPT[0x40];                               // 0x70(0x40)
 };
 
 
@@ -509,7 +509,7 @@ public:
 class TaleQuestScopeService: public TaleQuestService
 {
 public:
-	char                                                         pad0x50_IB3Z7[0x50];                               // 0x60(0x50)
+	char                                                         pad0x50_8FM9B[0x50];                               // 0x60(0x50)
 };
 
 
@@ -518,7 +518,7 @@ class TaleQuestSelectorService: public TaleQuestService
 {
 public:
 	class TaleQuestSelectorServiceDesc*                          Desc;                                              // 0x60(0x8)
-	char                                                         pad0x20_5B5Q4[0x20];                               // 0x68(0x20)
+	char                                                         pad0x20_8V6W0[0x20];                               // 0x68(0x20)
 };
 
 
@@ -527,7 +527,7 @@ class TaleQuestShipSetSinkingParamsService: public TaleQuestService
 {
 public:
 	class TaleQuestShipSetSinkingParamsServiceDesc*              Desc;                                              // 0x60(0x8)
-	char                                                         pad0x48_LL0HV[0x48];                               // 0x68(0x48)
+	char                                                         pad0x48_0SPNX[0x48];                               // 0x68(0x48)
 };
 
 
@@ -536,7 +536,7 @@ class TaleQuestSuppressIslandBannersService: public TaleQuestService
 {
 public:
 	class TaleQuestSuppressIslandBannersServiceDesc*             Desc;                                              // 0x60(0x8)
-	char                                                         pad0x18_7QS4Z[0x18];                               // 0x68(0x18)
+	char                                                         pad0x18_2Z6RB[0x18];                               // 0x68(0x18)
 };
 
 
@@ -544,7 +544,7 @@ public:
 class TaleQuestToggleInteractionDescriptionService: public TaleQuestService
 {
 public:
-	char                                                         pad0x50_ARTRH[0x50];                               // 0x60(0x50)
+	char                                                         pad0x50_K9PH6[0x50];                               // 0x60(0x50)
 	class TaleQuestToggleInteractionDescriptionServiceDesc*      Desc;                                              // 0xb0(0x8)
 };
 
@@ -553,9 +553,9 @@ public:
 class TaleResourceBrokerService: public TaleQuestService
 {
 public:
-	char                                                         pad0x20_JCUKB[0x20];                               // 0x60(0x20)
+	char                                                         pad0x20_PTSXW[0x20];                               // 0x60(0x20)
 	TArray<struct MigrationActionPair>                           MigrationActions;                                  // 0x80(0x10)
-	char                                                         pad0x18_QEM9C[0x18];                               // 0x90(0x18)
+	char                                                         pad0x18_EAIU0[0x18];                               // 0x90(0x18)
 };
 
 
@@ -666,8 +666,9 @@ public:
 class TaleQuestPredicatedBranchPhasingServiceDesc: public TaleQuestServiceDesc
 {
 public:
-	int                                                          NumberOfClusters;                                  // 0x28(0x4)
-	char                                                         pad0x4_ERG7B[0x4];                                 // 0x2c(0x4)
+	bool                                                         ClampAssignments;                                  // 0x28(0x1)
+	char                                                         pad0x3_U8D69[0x3];                                 // 0x29(0x3)
+	int                                                          NumberOfClusters;                                  // 0x2c(0x4)
 	class TaleQuestPhaseBranchSelectorPredicateBase*             PlayerAssignmentFunction;                          // 0x30(0x8)
 };
 
@@ -709,7 +710,7 @@ class TaleQuestSuppressIslandBannersServiceDesc: public TaleQuestServiceDesc
 {
 public:
 	bool                                                         DoNotSuppressDiveTargetIsland;                     // 0x28(0x1)
-	char                                                         pad0x7_N18AM[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_DES1D[0x7];                                 // 0x29(0x7)
 };
 
 
@@ -719,7 +720,7 @@ class TaleQuestToggleInteractionDescriptionServiceDesc: public TaleQuestServiceD
 public:
 	bool                                                         ResetDisabledInteractsOnEnd;                       // 0x28(0x1)
 	bool                                                         ResetEnabledInteractsOnEnd;                        // 0x29(0x1)
-	char                                                         pad0x6_3LSUK[0x6];                                 // 0x2a(0x6)
+	char                                                         pad0x6_4Q19B[0x6];                                 // 0x2a(0x6)
 };
 
 
@@ -729,7 +730,7 @@ class ActorRadiusTrackerStep: public TaleQuestStep
 public:
 	class ActorRadiusTrackerStepDesc*                            Desc;                                              // 0x98(0x8)
 	class Actor*                                                 TargetActor;                                       // 0xa0(0x8)
-	char                                                         pad0x28_R28JT[0x28];                               // 0xa8(0x28)
+	char                                                         pad0x28_ZW113[0x28];                               // 0xa8(0x28)
 };
 
 
@@ -751,10 +752,10 @@ public:
 class DebugTaleAddInstancedLevelStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x8_KYSAD[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_GHJ79[0x8];                                 // 0x98(0x8)
 	class DebugTaleAddInstancedLevelStepDesc*                    StepDesc;                                          // 0xa0(0x8)
 	struct FString                                               InstancedLevelPath;                                // 0xa8(0x10)
-	char                                                         pad0x20_03YD2[0x20];                               // 0xb8(0x20)
+	char                                                         pad0x20_O7GWX[0x20];                               // 0xb8(0x20)
 };
 
 
@@ -763,7 +764,7 @@ class DebugTaleAddInstancedLevelStepDesc: public TaleQuestStepDesc
 {
 public:
 	struct FText                                                 InstancedLevelKeyword;                             // 0x80(0x38)
-	char                                                         pad0x8_NMMXQ[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_56I27[0x8];                                 // 0xb8(0x8)
 };
 
 
@@ -822,7 +823,7 @@ public:
 class ForceCannonLoadStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x60_1V5T0[0x60];                               // 0x98(0x60)
+	char                                                         pad0x60_Z88J7[0x60];                               // 0x98(0x60)
 };
 
 
@@ -830,7 +831,7 @@ public:
 class GenerateDigLocationInRadiusStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0xb0_6XSLN[0xb0];                               // 0x98(0xb0)
+	char                                                         pad0xb0_NU6Q4[0xb0];                               // 0x98(0xb0)
 };
 
 
@@ -845,7 +846,7 @@ public:
 class GetVoyageDifficultyFromRankStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x38_F37Y0[0x38];                               // 0x98(0x38)
+	char                                                         pad0x38_GEKGX[0x38];                               // 0x98(0x38)
 };
 
 
@@ -886,7 +887,7 @@ class ParticipantRadiusArrayTrackerStep: public TaleQuestStep
 {
 public:
 	class ParticipantRadiusArrayTrackerStepDesc*                 Desc;                                              // 0x98(0x8)
-	char                                                         pad0x18_DD2IM[0x18];                               // 0xa0(0x18)
+	char                                                         pad0x18_UQNET[0x18];                               // 0xa0(0x18)
 };
 
 
@@ -895,7 +896,7 @@ class ParticipantRadiusTrackerStep: public TaleQuestStep
 {
 public:
 	class ParticipantRadiusTrackerStepDesc*                      Desc;                                              // 0x98(0x8)
-	char                                                         pad0x18_EQPE3[0x18];                               // 0xa0(0x18)
+	char                                                         pad0x18_1N0WK[0x18];                               // 0xa0(0x18)
 };
 
 
@@ -906,7 +907,7 @@ public:
 	class PlaySequencerAnimationOnCutsceneActorStepDesc*         StepDesc;                                          // 0x98(0x8)
 	class SequencerCutSceneActor*                                SequencerCutSceneActor;                            // 0xa0(0x8)
 	TArray<struct PossessableSequence>                           PossessableSequences;                              // 0xa8(0x10)
-	char                                                         pad0x10_VTBVS[0x10];                               // 0xb8(0x10)
+	char                                                         pad0x10_E7G7N[0x10];                               // 0xb8(0x10)
 };
 
 
@@ -916,7 +917,7 @@ class PlaySequencerAnimationStep: public TaleQuestStep
 public:
 	class PlaySequencerAnimationStepDesc*                        StepDesc;                                          // 0x98(0x8)
 	class SequencerCutSceneActor*                                SequencerCutSceneActor;                            // 0xa0(0x8)
-	char                                                         pad0x28_ENKXV[0x28];                               // 0xa8(0x28)
+	char                                                         pad0x28_KE59B[0x28];                               // 0xa8(0x28)
 };
 
 
@@ -981,7 +982,7 @@ public:
 class SpawnLayerStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x18_KDM26[0x18];                               // 0x98(0x18)
+	char                                                         pad0x18_VMTGD[0x18];                               // 0x98(0x18)
 };
 
 
@@ -989,7 +990,7 @@ public:
 class SpawnPhasedActorWithTransformStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x68_DA4CD[0x68];                               // 0x98(0x68)
+	char                                                         pad0x68_H4Y13[0x68];                               // 0x98(0x68)
 };
 
 
@@ -1032,7 +1033,7 @@ public:
 class TaleMigrationVolatileTaskStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x10_VUMZ9[0x10];                               // 0x98(0x10)
+	char                                                         pad0x10_ODXUS[0x10];                               // 0x98(0x10)
 };
 
 
@@ -1082,7 +1083,7 @@ public:
 class TaleQuestAwaitCrewShipSinkStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0xc0_H5KKT[0xc0];                               // 0x98(0xc0)
+	char                                                         pad0xc0_QLFQB[0xc0];                               // 0x98(0xc0)
 };
 
 
@@ -1090,7 +1091,7 @@ public:
 class TaleQuestAwaitEventStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x58_3GRQ2[0x58];                               // 0x98(0x58)
+	char                                                         pad0x58_DEF51[0x58];                               // 0x98(0x58)
 };
 
 
@@ -1098,7 +1099,7 @@ public:
 class TaleQuestChooseIslandFromWeightsStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x90_92M6L[0x90];                               // 0x98(0x90)
+	char                                                         pad0x90_8VR8T[0x90];                               // 0x98(0x90)
 	class IslandTypeWeightsDataAsset*                            IslandTypeWeights;                                 // 0x128(0x8)
 };
 
@@ -1107,7 +1108,7 @@ public:
 class TaleQuestCrewTaskStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x38_9CAYN[0x38];                               // 0x98(0x38)
+	char                                                         pad0x38_ZSIMG[0x38];                               // 0x98(0x38)
 };
 
 
@@ -1137,7 +1138,7 @@ public:
 class TaleQuestEnumSwitchStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x18_WGJ67[0x18];                               // 0x98(0x18)
+	char                                                         pad0x18_0Q1LH[0x18];                               // 0x98(0x18)
 };
 
 
@@ -1168,7 +1169,7 @@ class TaleQuestForEachSequential: public TaleQuestForEachStepBase
 {
 public:
 	class TaleQuestIndexedFrame*                                 Frame;                                             // 0xa8(0x8)
-	char                                                         pad0x38_8Q581[0x38];                               // 0xb0(0x38)
+	char                                                         pad0x38_OS2PZ[0x38];                               // 0xb0(0x38)
 };
 
 
@@ -1218,7 +1219,14 @@ public:
 class TaleQuestGrantRewardStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x40_E4QML[0x40];                               // 0x98(0x40)
+	char                                                         pad0x40_867XP[0x40];                               // 0x98(0x40)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestNotificationQuestsBegunStep: public TaleQuestStep
+{
+public:
 };
 
 
@@ -1226,7 +1234,7 @@ public:
 class TaleQuestObstacleCourseSetupAndWaitForCompletionStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x8_WHDRA[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_6BPDV[0x8];                                 // 0x98(0x8)
 };
 
 
@@ -1242,7 +1250,7 @@ class TaleQuestPersistentForEachCrewTaskStep: public TaleQuestStep
 {
 public:
 	class TaleQuestPersistentForEachCrewTaskStepDesc*            StepDesc;                                          // 0x98(0x8)
-	char                                                         pad0x50_VI064[0x50];                               // 0xa0(0x50)
+	char                                                         pad0x50_U54U1[0x50];                               // 0xa0(0x50)
 };
 
 
@@ -1302,7 +1310,7 @@ public:
 class TaleQuestStarFieldPuzzleEndStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x10_GL2YR[0x10];                               // 0x98(0x10)
+	char                                                         pad0x10_C955V[0x10];                               // 0x98(0x10)
 };
 
 
@@ -1310,7 +1318,7 @@ public:
 class TaleQuestStarFieldPuzzleSetupAndWaitForCompletionStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x18_MTSXC[0x18];                               // 0x98(0x18)
+	char                                                         pad0x18_17LP6[0x18];                               // 0x98(0x18)
 };
 
 
@@ -1325,7 +1333,7 @@ public:
 class TaleQuestStartPermanentPromptAndWaitForEndEventStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x28_V02UN[0x28];                               // 0x98(0x28)
+	char                                                         pad0x28_7RRAI[0x28];                               // 0x98(0x28)
 };
 
 
@@ -1362,7 +1370,7 @@ class TaleQuestWaitForHandInStep: public TaleQuestStep
 {
 public:
 	class TaleQuestWaitForHandInStepDesc*                        Desc;                                              // 0x98(0x8)
-	char                                                         pad0x8_KM4T5[0x8];                                 // 0xa0(0x8)
+	char                                                         pad0x8_6F5WM[0x8];                                 // 0xa0(0x8)
 };
 
 
@@ -1386,7 +1394,7 @@ class WaitForActorOfInterestToUnregisterStep: public TaleQuestStep
 {
 public:
 	class WaitForActorOfInterestToUnregisterStepDesc*            Desc;                                              // 0x98(0x8)
-	char                                                         pad0x80_N233K[0x80];                               // 0xa0(0x80)
+	char                                                         pad0x80_A9NL1[0x80];                               // 0xa0(0x80)
 };
 
 
@@ -1394,7 +1402,7 @@ public:
 class WaitForActorToFullyDockStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x58_GGGJQ[0x58];                               // 0x98(0x58)
+	char                                                         pad0x58_P387W[0x58];                               // 0x98(0x58)
 };
 
 
@@ -1403,7 +1411,7 @@ class WaitForGameEventToCompleteStep: public TaleQuestStep
 {
 public:
 	class GameEvent*                                             GameEvent;                                         // 0x98(0x8)
-	char                                                         pad0x8_605RT[0x8];                                 // 0xa0(0x8)
+	char                                                         pad0x8_GBPHB[0x8];                                 // 0xa0(0x8)
 };
 
 
@@ -1411,7 +1419,7 @@ public:
 class WaitForHealthToReachFractionStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x80_09T9D[0x80];                               // 0x98(0x80)
+	char                                                         pad0x80_LV1SI[0x80];                               // 0x98(0x80)
 };
 
 
@@ -1419,7 +1427,7 @@ public:
 class WaitForItemPickupStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0xe0_D57GN[0xe0];                               // 0x98(0xe0)
+	char                                                         pad0xe0_4ER7J[0xe0];                               // 0x98(0xe0)
 };
 
 
@@ -1427,7 +1435,7 @@ public:
 class WaitForQueryableStateValueStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x90_OYCB8[0x90];                               // 0x98(0x90)
+	char                                                         pad0x90_D1V9O[0x90];                               // 0x98(0x90)
 };
 
 
@@ -1436,7 +1444,7 @@ class WaitForSpawnedPawnBaseStep: public TaleQuestStep
 {
 public:
 	class AISpawner*                                             AISpawner;                                         // 0x98(0x8)
-	char                                                         pad0x10_2C8YV[0x10];                               // 0xa0(0x10)
+	char                                                         pad0x10_4GBNN[0x10];                               // 0xa0(0x10)
 };
 
 
@@ -1446,10 +1454,10 @@ class ActorRadiusTrackerStepDesc: public TaleQuestStepDesc
 public:
 	struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x30)
 	float                                                        DurationBetweenChecks;                             // 0xb0(0x4)
-	char                                                         pad0x4_11WXE[0x4];                                 // 0xb4(0x4)
+	char                                                         pad0x4_Z3KUA[0x4];                                 // 0xb4(0x4)
 	struct QuestVariableVector                                   Location;                                          // 0xb8(0x30)
 	float                                                        Radius;                                            // 0xe8(0x4)
-	char                                                         pad0x4_7GXEU[0x4];                                 // 0xec(0x4)
+	char                                                         pad0x4_1UOKP[0x4];                                 // 0xec(0x4)
 	struct QuestVariableBool                                     ActorInsideRadius;                                 // 0xf0(0x30)
 };
 
@@ -1460,7 +1468,7 @@ class AddGameEventExclusionZoneStepDesc: public TaleQuestStepDesc
 public:
 	float                                                        Radius;                                            // 0x80(0x4)
 	bool                                                         ShouldGetRadiusFromRemoteConfig;                   // 0x84(0x1)
-	char                                                         pad0x3_AXHS6[0x3];                                 // 0x85(0x3)
+	char                                                         pad0x3_E1D46[0x3];                                 // 0x85(0x3)
 	struct FName                                                 RemoteConfigKeyRadius;                             // 0x88(0x8)
 	struct QuestVariableVector                                   Location;                                          // 0x90(0x30)
 };
@@ -1472,7 +1480,7 @@ class CallObjectFunctionStepDesc: public TaleQuestStepDesc
 public:
 	class Object*                                                Target;                                            // 0x80(0x8)
 	struct ClassFunctionSelectionType                            Function;                                          // 0x88(0x10)
-	char                                                         pad0x50_RSUET[0x50];                               // 0x98(0x50)
+	char                                                         pad0x50_AUTRN[0x50];                               // 0x98(0x50)
 };
 
 
@@ -1509,7 +1517,7 @@ public:
 	struct QuestVariableActor                                    ItemInChest;                                       // 0xb0(0x30)
 	class UClass*                                                ItemToFind;                                        // 0xe0(0x8)
 	bool                                                         AllowChildClasses;                                 // 0xe8(0x1)
-	char                                                         pad0x7_PF99X[0x7];                                 // 0xe9(0x7)
+	char                                                         pad0x7_S280D[0x7];                                 // 0xe9(0x7)
 };
 
 
@@ -1517,13 +1525,13 @@ public:
 class FindNamedPointStepDescBase: public TaleQuestStepDesc
 {
 public:
-	char                                                         pad0x20_TZX3L[0x20];                               // 0x80(0x20)
+	char                                                         pad0x20_LSJHU[0x20];                               // 0x80(0x20)
 	struct QuestVariableActor                                    ActorToSearch;                                     // 0xa0(0x30)
 	struct QuestVariableName                                     GroupNamePin;                                      // 0xd0(0x30)
 	struct FName                                                 PointGroupName;                                    // 0x100(0x8)
 	byte                                                         SearchMethod;                                      // 0x108(0x1)
 	byte                                                         ReturnInSpace;                                     // 0x109(0x1)
-	char                                                         pad0x6_FE5UL[0x6];                                 // 0x10a(0x6)
+	char                                                         pad0x6_7O0QT[0x6];                                 // 0x10a(0x6)
 };
 
 
@@ -1567,7 +1575,7 @@ public:
 	struct QuestVariableName                                     IslandName;                                        // 0x80(0x30)
 	struct QuestVariableVector                                   Center;                                            // 0xb0(0x30)
 	float                                                        RadiusInCm;                                        // 0xe0(0x4)
-	char                                                         pad0x4_PFS5U[0x4];                                 // 0xe4(0x4)
+	char                                                         pad0x4_MPA4Q[0x4];                                 // 0xe4(0x4)
 	struct QuestVariableVector                                   DigLocation;                                       // 0xe8(0x30)
 };
 
@@ -1589,7 +1597,7 @@ public:
 	class UClass*                                                DamageType;                                        // 0xb0(0x8)
 	float                                                        DamageAmount;                                      // 0xb8(0x4)
 	byte                                                         DamageReason;                                      // 0xbc(0x1)
-	char                                                         pad0x3_AOKCP[0x3];                                 // 0xbd(0x3)
+	char                                                         pad0x3_DFW6W[0x3];                                 // 0xbd(0x3)
 };
 
 
@@ -1602,7 +1610,7 @@ public:
 };
 
 
-// Size 0xb0 (Full Size[0x130] - InheritedSize[0x80]
+// Size 0xe0 (Full Size[0x160] - InheritedSize[0x80]
 class LoadSequencerAnimationStepDesc: public TaleQuestStepDesc
 {
 public:
@@ -1610,11 +1618,12 @@ public:
 	struct QuestVariableActor                                    TargetActorToSpawn;                                // 0x90(0x30)
 	struct QuestVariableActor                                    LevelSequenceActorSpawnLocation;                   // 0xc0(0x30)
 	struct QuestVariableActor                                    SequencerCutSceneActor;                            // 0xf0(0x30)
-	bool                                                         AttachToTargetActor;                               // 0x120(0x1)
-	char                                                         pad0x3_PWHK6[0x3];                                 // 0x121(0x3)
-	struct FName                                                 AttachSocketName;                                  // 0x124(0x8)
-	bool                                                         PlayGlobally;                                      // 0x12c(0x1)
-	char                                                         pad0x3_2SRCO[0x3];                                 // 0x12d(0x3)
+	struct TaleQuestPhaseClusterRootActor                        OptionalPhaseCluster;                              // 0x120(0x30)
+	bool                                                         AttachToTargetActor;                               // 0x150(0x1)
+	char                                                         pad0x3_OU9LU[0x3];                                 // 0x151(0x3)
+	struct FName                                                 AttachSocketName;                                  // 0x154(0x8)
+	bool                                                         PlayGlobally;                                      // 0x15c(0x1)
+	char                                                         pad0x3_SG3X3[0x3];                                 // 0x15d(0x3)
 };
 
 
@@ -1625,7 +1634,7 @@ public:
 	struct QuestVariableActor                                    ActorVar;                                          // 0x80(0x30)
 	bool                                                         TrackActor;                                        // 0xb0(0x1)
 	bool                                                         MarkAsCritical;                                    // 0xb1(0x1)
-	char                                                         pad0x6_R6A96[0x6];                                 // 0xb2(0x6)
+	char                                                         pad0x6_IVWV5[0x6];                                 // 0xb2(0x6)
 	struct FText                                                 CriticalActorLostMessage;                          // 0xb8(0x38)
 };
 
@@ -1635,7 +1644,7 @@ class ParticipantRadiusArrayTrackerStepDesc: public TaleQuestStepDesc
 {
 public:
 	float                                                        DurationBetweenChecks;                             // 0x80(0x4)
-	char                                                         pad0x4_HNJET[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_ZEX6S[0x4];                                 // 0x84(0x4)
 	struct QuestVariableActorArray                               Actors;                                            // 0x88(0x30)
 	struct QuestVariableVectorArray                              Locations;                                         // 0xb8(0x30)
 	struct QuestVariableFloat                                    Radius;                                            // 0xe8(0x30)
@@ -1655,7 +1664,7 @@ class ParticipantRadiusTrackerStepDesc: public TaleQuestStepDesc
 {
 public:
 	float                                                        DurationBetweenChecks;                             // 0x80(0x4)
-	char                                                         pad0x4_I8NKS[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_9I3PZ[0x4];                                 // 0x84(0x4)
 	struct QuestVariableVector                                   Location;                                          // 0x88(0x30)
 	struct QuestVariableFloat                                    Radius;                                            // 0xb8(0x30)
 	struct QuestVariableActorArray                               PlayersOutsideRadius;                              // 0xe8(0x30)
@@ -1690,7 +1699,7 @@ class PlaySequencerAnimationOnCutsceneActorStepDesc: public TaleQuestStepDesc
 public:
 	class LevelSequence*                                         LevelSequence;                                     // 0x80(0x8)
 	float                                                        Delay;                                             // 0x88(0x4)
-	char                                                         pad0x4_0YKNX[0x4];                                 // 0x8c(0x4)
+	char                                                         pad0x4_U20MG[0x4];                                 // 0x8c(0x4)
 	struct QuestVariableActor                                    DockableBaseActor;                                 // 0x90(0x30)
 	struct QuestVariableActor                                    SequencerCutSceneActor;                            // 0xc0(0x30)
 	struct QuestVariableActor                                    ActorToPossess;                                    // 0xf0(0x30)
@@ -1702,7 +1711,7 @@ public:
 	TArray<struct FText>                                         LocalisableNames;                                  // 0x1c8(0x10)
 	bool                                                         IsLevelSequenceActorAlwaysRelevant;                // 0x1d8(0x1)
 	bool                                                         IsLooping;                                         // 0x1d9(0x1)
-	char                                                         pad0x2_PNQ5A[0x2];                                 // 0x1da(0x2)
+	char                                                         pad0x2_5H7SW[0x2];                                 // 0x1da(0x2)
 	float                                                        SubtitleSphereRadiusInCm;                          // 0x1dc(0x4)
 	class LevelSequence*                                         FemaleLevelSequence;                               // 0x1e0(0x8)
 };
@@ -1719,11 +1728,11 @@ public:
 	struct QuestVariableActor                                    InteractingActor;                                  // 0x118(0x30)
 	bool                                                         PlayGlobally;                                      // 0x148(0x1)
 	bool                                                         IsLevelSequenceActorAlawaysRelevant;               // 0x149(0x1)
-	char                                                         pad0x6_1I6GY[0x6];                                 // 0x14a(0x6)
+	char                                                         pad0x6_QVZ9F[0x6];                                 // 0x14a(0x6)
 	class SceneDialogueData*                                     DialogueData;                                      // 0x150(0x8)
 	TArray<struct FText>                                         LocalisableNames;                                  // 0x158(0x10)
 	bool                                                         IsLooping;                                         // 0x168(0x1)
-	char                                                         pad0x3_WRPF8[0x3];                                 // 0x169(0x3)
+	char                                                         pad0x3_ODATL[0x3];                                 // 0x169(0x3)
 	float                                                        SubtitleSphereRadiusInCm;                          // 0x16c(0x4)
 	class LevelSequence*                                         FemaleLevelSequenceToPlay;                         // 0x170(0x8)
 };
@@ -1745,7 +1754,7 @@ public:
 	class UClass*                                                DamageType;                                        // 0xb0(0x8)
 	float                                                        DamageAmount;                                      // 0xb8(0x4)
 	byte                                                         DamageReason;                                      // 0xbc(0x1)
-	char                                                         pad0x3_VQBFV[0x3];                                 // 0xbd(0x3)
+	char                                                         pad0x3_E8KCV[0x3];                                 // 0xbd(0x3)
 };
 
 
@@ -1762,7 +1771,7 @@ class RemoveGameEventExclusionZoneStepDesc: public TaleQuestStepDesc
 public:
 	float                                                        Radius;                                            // 0x80(0x4)
 	bool                                                         ShouldGetRadiusFromRemoteConfig;                   // 0x84(0x1)
-	char                                                         pad0x3_QXST3[0x3];                                 // 0x85(0x3)
+	char                                                         pad0x3_S0XZ2[0x3];                                 // 0x85(0x3)
 	struct FName                                                 RemoteConfigKeyRadius;                             // 0x88(0x8)
 	struct QuestVariableVector                                   Location;                                          // 0x90(0x30)
 };
@@ -1779,11 +1788,11 @@ public:
 class SelectNamedPointStepDesc: public TaleQuestStepDesc
 {
 public:
-	char                                                         pad0x20_1OV9G[0x20];                               // 0x80(0x20)
+	char                                                         pad0x20_1U66J[0x20];                               // 0x80(0x20)
 	struct FName                                                 GroupName;                                         // 0xa0(0x8)
 	int                                                          PointIndex;                                        // 0xa8(0x4)
 	byte                                                         ReturnInSpace;                                     // 0xac(0x1)
-	char                                                         pad0x3_BSTL7[0x3];                                 // 0xad(0x3)
+	char                                                         pad0x3_Q9UYB[0x3];                                 // 0xad(0x3)
 	struct QuestVariableOrientedPoint                            Point;                                             // 0xb0(0x30)
 };
 
@@ -1812,7 +1821,7 @@ class SpawnLayerStepDesc: public TaleQuestStepDesc
 public:
 	class LayerActorsDataAsset*                                  LayerAsset;                                        // 0x80(0x8)
 	bool                                                         SpawnPhased;                                       // 0x88(0x1)
-	char                                                         pad0x7_R11P7[0x7];                                 // 0x89(0x7)
+	char                                                         pad0x7_1MLMY[0x7];                                 // 0x89(0x7)
 	struct QuestVariableActor                                    ActorWithLayers;                                   // 0x90(0x30)
 	TArray<struct QuestVariableActor>                            SpawnedActors;                                     // 0xc0(0x10)
 };
@@ -1822,9 +1831,9 @@ public:
 class SpawnPhasedActorWithTransformStepBaseDesc: public TaleQuestStepDesc
 {
 public:
-	char                                                         pad0x20_TF9AU[0x20];                               // 0x80(0x20)
+	char                                                         pad0x20_J0O3J[0x20];                               // 0x80(0x20)
 	bool                                                         MarkAsCritical;                                    // 0xa0(0x1)
-	char                                                         pad0x7_Z7NSR[0x7];                                 // 0xa1(0x7)
+	char                                                         pad0x7_O9UFR[0x7];                                 // 0xa1(0x7)
 	struct FText                                                 CriticalActorLostMessage;                          // 0xa8(0x38)
 	struct QuestVariableActor                                    ActorVar;                                          // 0xe0(0x30)
 };
@@ -1844,7 +1853,7 @@ class SpawnPhasedItemStepDesc: public TaleQuestStepDesc
 public:
 	bool                                                         TrackItem;                                         // 0x80(0x1)
 	bool                                                         MarkItemAsCritical;                                // 0x81(0x1)
-	char                                                         pad0x6_Z2W5H[0x6];                                 // 0x82(0x6)
+	char                                                         pad0x6_9PL3E[0x6];                                 // 0x82(0x6)
 	struct FText                                                 CriticalActorLostMessage;                          // 0x88(0x38)
 	struct FName                                                 SocketName;                                        // 0xc0(0x8)
 	struct QuestVariableItemDescType                             Item;                                              // 0xc8(0x30)
@@ -1904,27 +1913,27 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x90] - InheritedSize[0x80]
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
 class TaleQuestArrayItemStepBaseDesc: public TaleQuestStepDesc
 {
 public:
-	struct FName                                                 ArrayVar;                                          // 0x80(0x8)
-	struct FName                                                 ItemVar;                                           // 0x88(0x8)
+	struct QuestVariable                                         ArrayQuestVar;                                     // 0x80(0x30)
+	struct QuestVariable                                         ItemQuestVar;                                      // 0xb0(0x30)
 };
 
 
-// Size 0x0 (Full Size[0x90] - InheritedSize[0x90]
+// Size 0x0 (Full Size[0xe0] - InheritedSize[0xe0]
 class TaleQuestAddToArrayStepDesc: public TaleQuestArrayItemStepBaseDesc
 {
 public:
 };
 
 
-// Size 0x30 (Full Size[0xc0] - InheritedSize[0x90]
+// Size 0x30 (Full Size[0x110] - InheritedSize[0xe0]
 class TaleQuestArrayContainsStepDesc: public TaleQuestArrayItemStepBaseDesc
 {
 public:
-	struct QuestVariableBool                                     Result;                                            // 0x90(0x30)
+	struct QuestVariableBool                                     Result;                                            // 0xe0(0x30)
 };
 
 
@@ -1984,7 +1993,7 @@ class TaleQuestEmissaryCompanyActionRewardBoostStepDesc: public TaleQuestStepDes
 {
 public:
 	byte                                                         CompanyActionType;                                 // 0x80(0x1)
-	char                                                         pad0x7_J3BIJ[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_1CQJH[0x7];                                 // 0x81(0x7)
 };
 
 
@@ -2003,7 +2012,7 @@ public:
 	struct QuestVariable                                         EnumVar;                                           // 0x80(0x30)
 	class Enum*                                                  Enum;                                              // 0xb0(0x8)
 	class TaleQuestStepDesc*                                     DefaultBranch;                                     // 0xb8(0x8)
-	char                                                         pad0x50_9K9XQ[0x50];                               // 0xc0(0x50)
+	char                                                         pad0x50_0GW11[0x50];                               // 0xc0(0x50)
 };
 
 
@@ -2013,7 +2022,7 @@ class TaleQuestEventStepDescBase: public TaleQuestStepDesc
 public:
 	class Object*                                                Dispatcher;                                        // 0x80(0x8)
 	struct NativeAndUserDefinedStructSelector                    EventType;                                         // 0x88(0x8)
-	char                                                         pad0x50_K67ZO[0x50];                               // 0x90(0x50)
+	char                                                         pad0x50_KLQ89[0x50];                               // 0x90(0x50)
 };
 
 
@@ -2042,7 +2051,7 @@ public:
 class TaleQuestForEachStepDescBase: public TaleQuestStepDesc
 {
 public:
-	char                                                         pad0x8_M4VF5[0x8];                                 // 0x80(0x8)
+	char                                                         pad0x8_WOSXY[0x8];                                 // 0x80(0x8)
 	struct FName                                                 Collection;                                        // 0x88(0x8)
 	class TaleQuestStepDesc*                                     Body;                                              // 0x90(0x8)
 	struct FName                                                 KeyPinName;                                        // 0x98(0x8)
@@ -2077,7 +2086,7 @@ class TaleQuestGetArrayElementStepDesc: public TaleQuestStepDesc
 public:
 	struct QuestVariableArray                                    InputArray;                                        // 0x80(0x30)
 	int                                                          Index;                                             // 0xb0(0x4)
-	char                                                         pad0x4_959LT[0x4];                                 // 0xb4(0x4)
+	char                                                         pad0x4_3T7FA[0x4];                                 // 0xb4(0x4)
 	struct QuestVariableAny                                      OutputEntry;                                       // 0xb8(0x30)
 };
 
@@ -2096,7 +2105,7 @@ class TaleQuestGetGlobalDigSpotDataStepDesc: public TaleQuestStepDesc
 {
 public:
 	int                                                          DigSpotIndex;                                      // 0x80(0x4)
-	char                                                         pad0x4_779KG[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_ZQAR6[0x4];                                 // 0x84(0x4)
 	struct QuestVariableItemSpawnDataType                        OutputItemSpawnData;                               // 0x88(0x30)
 	struct QuestVariableOrientedPoint                            OutputOrientedPoint;                               // 0xb8(0x30)
 };
@@ -2109,7 +2118,7 @@ public:
 	struct QuestVariableGuidArray                                CrewIds;                                           // 0x80(0x30)
 	struct QuestVariableVector                                   Location;                                          // 0xb0(0x30)
 	float                                                        Radius;                                            // 0xe0(0x4)
-	char                                                         pad0x4_SSGZO[0x4];                                 // 0xe4(0x4)
+	char                                                         pad0x4_5KVHF[0x4];                                 // 0xe4(0x4)
 };
 
 
@@ -2129,9 +2138,20 @@ public:
 	class UClass*                                                Company;                                           // 0x88(0x8)
 	struct Guid                                                  Id;                                                // 0x90(0x10)
 	bool                                                         ShouldGrantToAlliedCrews;                          // 0xa0(0x1)
-	char                                                         pad0x7_72U3O[0x7];                                 // 0xa1(0x7)
+	char                                                         pad0x7_NDB22[0x7];                                 // 0xa1(0x7)
 	struct QuestVariablePlayerActor                              SpecificPlayerToAward;                             // 0xa8(0x30)
 	struct FName                                                 Feature;                                           // 0xd8(0x8)
+};
+
+
+// Size 0x28 (Full Size[0xa8] - InheritedSize[0x80]
+class TaleQuestNotificationQuestsBegunStepDesc: public TaleQuestStepDesc
+{
+public:
+	int                                                          NumQuests;                                         // 0x80(0x4)
+	char                                                         pad0x4_M2SHE[0x4];                                 // 0x84(0x4)
+	TArray<struct StringAssetReference>                          Icons;                                             // 0x88(0x10)
+	struct StringAssetReference                                  Background;                                        // 0x98(0x10)
 };
 
 
@@ -2149,7 +2169,7 @@ class TaleQuestPermanentPromptStepDesc: public TaleQuestStepDesc
 public:
 	struct QuestVariablePrioritisedPrompt                        Prompt;                                            // 0x80(0x30)
 	byte                                                         StartOrStop;                                       // 0xb0(0x1)
-	char                                                         pad0x7_9C3AM[0x7];                                 // 0xb1(0x7)
+	char                                                         pad0x7_V4QQ2[0x7];                                 // 0xb1(0x7)
 };
 
 
@@ -2462,7 +2482,7 @@ class TaleQuestStatFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 	struct PlayerStat                                            Stat;                                              // 0x180(0x4)
-	char                                                         pad0x4_EJK0A[0x4];                                 // 0x184(0x4)
+	char                                                         pad0x4_Q42F8[0x4];                                 // 0x184(0x4)
 };
 
 
@@ -2484,10 +2504,10 @@ public:
 class TaleQuestStoryBranchFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
-	char                                                         pad0x8_07PNN[0x8];                                 // 0x180(0x8)
+	char                                                         pad0x8_CC34W[0x8];                                 // 0x180(0x8)
 	class TaleQuestStepDesc*                                     Active;                                            // 0x188(0x8)
 	class TaleQuestStepDesc*                                     Inactive;                                          // 0x190(0x8)
-	char                                                         pad0x30_H75GD[0x30];                               // 0x198(0x30)
+	char                                                         pad0x30_OUVQ8[0x30];                               // 0x198(0x30)
 };
 
 
@@ -2556,7 +2576,7 @@ class TaleQuestSetDigSpotVoyageStatusStepDesc: public TaleQuestStepDesc
 {
 public:
 	byte                                                         VoyageStatus;                                      // 0x80(0x1)
-	char                                                         pad0x7_YXW6A[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_E901Q[0x7];                                 // 0x81(0x7)
 };
 
 
@@ -2572,7 +2592,7 @@ class TaleQuestShipSurfaceStepDesc: public TaleQuestStepDesc
 {
 public:
 	float                                                        TimeToSurface;                                     // 0x80(0x4)
-	char                                                         pad0x4_KAADS[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_KK5WR[0x4];                                 // 0x84(0x4)
 };
 
 
@@ -2610,7 +2630,7 @@ public:
 	struct LinearColor                                           FadeColour;                                        // 0x8c(0x10)
 	bool                                                         ShouldFadeAudio;                                   // 0x9c(0x1)
 	bool                                                         HoldFadeWhenFinished;                              // 0x9d(0x1)
-	char                                                         pad0x2_54SCY[0x2];                                 // 0x9e(0x2)
+	char                                                         pad0x2_6V3VP[0x2];                                 // 0x9e(0x2)
 };
 
 
@@ -2627,7 +2647,7 @@ class TaleQuestStructStepDescBase: public TaleQuestStepDesc
 {
 public:
 	class ScriptStruct*                                          Struct;                                            // 0x80(0x8)
-	char                                                         pad0x50_9KP2J[0x50];                               // 0x88(0x50)
+	char                                                         pad0x50_NQ433[0x50];                               // 0x88(0x50)
 };
 
 
@@ -2680,7 +2700,7 @@ class TaleQuestToggleAmbientMigrationForServerStepDesc: public TaleQuestStepDesc
 {
 public:
 	bool                                                         AmbientMigrationAvailable;                         // 0x80(0x1)
-	char                                                         pad0x7_EKHBK[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_R0FBM[0x7];                                 // 0x81(0x7)
 };
 
 
@@ -2743,7 +2763,7 @@ class WaitForHealthToReachFractionStepDesc: public TaleQuestStepDesc
 public:
 	class Actor*                                                 HealthOwner;                                       // 0x80(0x8)
 	float                                                        HealthFraction;                                    // 0x88(0x4)
-	char                                                         pad0x4_3P0OM[0x4];                                 // 0x8c(0x4)
+	char                                                         pad0x4_TWIGF[0x4];                                 // 0x8c(0x4)
 };
 
 
@@ -2769,7 +2789,7 @@ class WaitForQueryableStateValueBoolStepDesc: public WaitForQueryableStateValueS
 {
 public:
 	bool                                                         ExpectedValue;                                     // 0x88(0x1)
-	char                                                         pad0x7_22CZF[0x7];                                 // 0x89(0x7)
+	char                                                         pad0x7_8MPG0[0x7];                                 // 0x89(0x7)
 };
 
 
@@ -2779,7 +2799,7 @@ class WaitForQueryableStateValueIntStepDesc: public WaitForQueryableStateValueSt
 public:
 	int                                                          ExpectedValue;                                     // 0x88(0x4)
 	byte                                                         ComparisonType;                                    // 0x8c(0x1)
-	char                                                         pad0x3_KZUTJ[0x3];                                 // 0x8d(0x3)
+	char                                                         pad0x3_H9685[0x3];                                 // 0x8d(0x3)
 };
 
 
@@ -2795,9 +2815,9 @@ public:
 class TaleQuestSelectShipwreckLocationFromValidCandidatesStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x78_C2V76[0x78];                               // 0x98(0x78)
+	char                                                         pad0x78_TTE28[0x78];                               // 0x98(0x78)
 	class TaleQuestSelectorService*                              CachedSelectorService;                             // 0x110(0x8)
-	char                                                         pad0x118_U8E13[0x118];                             // 0x118(0x118)
+	char                                                         pad0x118_YZ5K3[0x118];                             // 0x118(0x118)
 };
 
 
@@ -2835,7 +2855,7 @@ class RemoveFlameOfFateTypeStepDesc: public TaleQuestStepDesc
 {
 public:
 	byte                                                         FlameOfFateTypeToRemove;                           // 0x80(0x1)
-	char                                                         pad0x7_X5UNJ[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_UOOXS[0x7];                                 // 0x81(0x7)
 	class UClass*                                                LanternItemCategory;                               // 0x88(0x8)
 };
 
@@ -2845,7 +2865,7 @@ class TaleQuestFlameOfFateService: public TaleQuestService
 {
 public:
 	class TaleQuestFlameOfFateServiceDesc*                       ServiceDesc;                                       // 0x60(0x8)
-	char                                                         pad0x58_9A8R3[0x58];                               // 0x68(0x58)
+	char                                                         pad0x58_I01YC[0x58];                               // 0x68(0x58)
 };
 
 
@@ -2856,7 +2876,7 @@ public:
 	class UClass*                                                LanternItemCategory;                               // 0x28(0x8)
 	byte                                                         FlameOfFateTypeToSet;                              // 0x30(0x1)
 	bool                                                         SetFlameOnStart;                                   // 0x31(0x1)
-	char                                                         pad0x6_FPBMO[0x6];                                 // 0x32(0x6)
+	char                                                         pad0x6_3V5FJ[0x6];                                 // 0x32(0x6)
 };
 
 
@@ -2935,7 +2955,7 @@ public:
 class TaleQuestMapService: public TaleQuestService
 {
 public:
-	char                                                         pad0xb0_SMDOM[0xb0];                               // 0x60(0xb0)
+	char                                                         pad0xb0_HKW91[0xb0];                               // 0x60(0xb0)
 };
 
 
@@ -2969,7 +2989,7 @@ public:
 	struct QuestVariableText                                     Afternote;                                         // 0x138(0x30)
 	struct QuestVariableDataAsset                                Layout;                                            // 0x168(0x30)
 	byte                                                         RadialMiniIcon;                                    // 0x198(0x1)
-	char                                                         pad0x7_0NJ05[0x7];                                 // 0x199(0x7)
+	char                                                         pad0x7_3JEVL[0x7];                                 // 0x199(0x7)
 };
 
 
@@ -2982,7 +3002,7 @@ public:
 	struct QuestVariableVector                                   Location;                                          // 0xb8(0x30)
 	float                                                        CircleScale;                                       // 0xe8(0x4)
 	byte                                                         RadialMiniIcon;                                    // 0xec(0x1)
-	char                                                         pad0x3_ZIELL[0x3];                                 // 0xed(0x3)
+	char                                                         pad0x3_TX9K0[0x3];                                 // 0xed(0x3)
 };
 
 
@@ -3024,15 +3044,17 @@ public:
 };
 
 
-// Size 0xc8 (Full Size[0x148] - InheritedSize[0x80]
+// Size 0xd0 (Full Size[0x150] - InheritedSize[0x80]
 class TaleQuestAddXMarksMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
 	struct FName                                                 MapID;                                             // 0x80(0x8)
-	struct QuestVariableName                                     IslandName;                                        // 0x88(0x30)
-	struct QuestVariableVector                                   Location;                                          // 0xb8(0x30)
-	struct QuestVariableBool                                     IsUnderground;                                     // 0xe8(0x30)
-	struct TaleQuestVariableTreasureMapItemDescType              TreasureMapOverride;                               // 0x118(0x30)
+	byte                                                         QuestIconOverride;                                 // 0x88(0x1)
+	char                                                         pad0x7_56775[0x7];                                 // 0x89(0x7)
+	struct QuestVariableName                                     IslandName;                                        // 0x90(0x30)
+	struct QuestVariableVector                                   Location;                                          // 0xc0(0x30)
+	struct QuestVariableBool                                     IsUnderground;                                     // 0xf0(0x30)
+	struct TaleQuestVariableTreasureMapItemDescType              TreasureMapOverride;                               // 0x120(0x30)
 };
 
 

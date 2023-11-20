@@ -13,7 +13,7 @@ public:
 	struct FString                                               DiscoveryServiceUrl;                               // 0x28(0x10)
 	byte                                                         ServerMetricsLevel;                                // 0x38(0x1)
 	byte                                                         ClientMetricsLevel;                                // 0x39(0x1)
-	char                                                         pad0x6_I6WDF[0x6];                                 // 0x3a(0x6)
+	char                                                         pad0x6_8SQOF[0x6];                                 // 0x3a(0x6)
 	struct FString                                               SubStringToFindInUrlForXBLiveTokenRequest;         // 0x40(0x10)
 	struct FString                                               UrlReplacementStringForXBLiveTokenRequest;         // 0x50(0x10)
 	struct FString                                               CustomBuildVersionTag;                             // 0x60(0x10)

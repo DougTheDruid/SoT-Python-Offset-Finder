@@ -16,6 +16,46 @@
       }
     ]
   },
+  "RepairableComponentMaxDamageLevelOverride": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "FeatureName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxDamageLevel",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "RepairableAuthoritiveRepairState": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "RepairableState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_D1FI7[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "RepairingList",
+        "Type": "TArray<Weakclass RepairingList>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "DamageZoneRepairableStateChangedEvent": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -32,7 +72,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_AOC90[0x7]",
+        "Name": "pad0x7_FZWM3[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -55,7 +95,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_DONB8[0x7]",
+        "Name": "pad0x7_7ONO1[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -78,7 +118,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_B7XXU[0x4]",
+        "Name": "pad0x4_H6S94[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -102,7 +142,7 @@
         "Offset": "0x24"
       },
       {
-        "Name": "pad0x3_1ZMHL[0x3]",
+        "Name": "pad0x3_YE55L[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x25"
@@ -113,43 +153,39 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_R3OVS[0x1]",
+        "Name": "pad0x1_1TG1J[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "EventPlayerUndoRepairEnd": {
-    "ClassSize": "0x8",
+  "RepairObjectActionStateConstructionInfo": {
+    "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_1II52[0x8]",
+        "Name": "pad0x30_SSRW7[0x30]",
         "Type": "char",
-        "Size": "0x8",
+        "Size": "0x30",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "EventPlayerUndoRepairCompleted": {
-    "ClassSize": "0x8",
-    "Attributes": [
+      },
       {
-        "Name": "pad0x8_7GY7N[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventPlayerUndoRepairStart": {
-    "ClassSize": "0x8",
-    "Attributes": [
+        "Name": "RepairableObject",
+        "Type": "struct NetSubObjectPtr",
+        "Size": "0x14",
+        "Offset": "0x30"
+      },
       {
-        "Name": "pad0x8_ESNNW[0x8]",
-        "Type": "char",
+        "Name": "WieldedItem",
+        "Type": "struct NetActorPtr",
+        "Size": "0x14",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "InputID",
+        "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x0"
+        "Offset": "0x58"
       }
     ]
   },

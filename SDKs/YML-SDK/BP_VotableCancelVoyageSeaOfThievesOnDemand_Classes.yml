@@ -18,7 +18,7 @@ BP_VotableCancelVoyageSeaOfThievesOnDemand_C:
     Offset: '0x510'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_93AX4[0x4]
+  - Name: pad0x4_YLC8H[0x4]
     Offset: '0x514'
     Size: '0x4'
     Type: char

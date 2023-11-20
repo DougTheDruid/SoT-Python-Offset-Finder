@@ -17,7 +17,7 @@ public:
 	struct FString                                               ToastSwitchName;                                   // 0x40(0x10)
 	struct FString                                               ToastSwitchValue;                                  // 0x50(0x10)
 	float                                                        ToastHoldDuration;                                 // 0x60(0x4)
-	char                                                         pad0x4_CJ32R[0x4];                                 // 0x64(0x4)
+	char                                                         pad0x4_ELOGG[0x4];                                 // 0x64(0x4)
 };
 
 
@@ -33,7 +33,7 @@ public:
 	struct FString                                               ToastSwitchName;                                   // 0x78(0x10)
 	struct FString                                               ToastSwitchValue;                                  // 0x88(0x10)
 	float                                                        ToastHoldDuration;                                 // 0x98(0x4)
-	char                                                         pad0x4_Y2MK7[0x4];                                 // 0x9c(0x4)
+	char                                                         pad0x4_EPTPH[0x4];                                 // 0x9c(0x4)
 };
 
 
@@ -50,7 +50,7 @@ public:
 	struct FString                                               ToastSwitchName;                                   // 0x58(0x10)
 	struct FString                                               ToastSwitchValue;                                  // 0x68(0x10)
 	float                                                        ToastHoldDuration;                                 // 0x78(0x4)
-	char                                                         pad0x4_UJ19W[0x4];                                 // 0x7c(0x4)
+	char                                                         pad0x4_UQE2O[0x4];                                 // 0x7c(0x4)
 };
 
 
@@ -65,7 +65,7 @@ public:
 	struct FString                                               SwitchName;                                        // 0x40(0x10)
 	struct FString                                               SwitchValue;                                       // 0x50(0x10)
 	float                                                        ToastHoldDuration;                                 // 0x60(0x4)
-	char                                                         pad0x4_QSIS1[0x4];                                 // 0x64(0x4)
+	char                                                         pad0x4_RW4XU[0x4];                                 // 0x64(0x4)
 };
 
 
@@ -78,7 +78,7 @@ public:
 	struct NavigationDesc                                        NavigationDesc;                                    // 0x20(0x14)
 	int                                                          ProgressValue;                                     // 0x34(0x4)
 	int                                                          Threshold;                                         // 0x38(0x4)
-	char                                                         pad0x4_16GCA[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_51D0T[0x4];                                 // 0x3c(0x4)
 	struct GenericPopupAudioDescriptor                           Audio;                                             // 0x40(0x40)
 };
 
@@ -88,7 +88,7 @@ struct NavigationDesc
 {
 public:
 	byte                                                         Action;                                            // 0x0(0x1)
-	char                                                         pad0x3_JUW7L[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_33HBX[0x3];                                 // 0x1(0x3)
 	struct Guid                                                  Id;                                                // 0x4(0x10)
 };
 
@@ -117,7 +117,7 @@ public:
 struct SeasonsDataRefreshEvent
 {
 public:
-	char                                                         pad0x1_LMUTW[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_0IWUW[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -126,7 +126,7 @@ struct OpenSeasonsMenuEvent
 {
 public:
 	byte                                                         NavigationAction;                                  // 0x0(0x1)
-	char                                                         pad0x3_F64VR[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_SZ35C[0x3];                                 // 0x1(0x3)
 	struct Guid                                                  Id;                                                // 0x4(0x10)
 };
 
@@ -144,7 +144,7 @@ struct EnableMoreButtonEvent
 {
 public:
 	byte                                                         MoreButtonSource;                                  // 0x0(0x1)
-	char                                                         pad0x3_2ULLJ[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_BS2NT[0x3];                                 // 0x1(0x3)
 	struct NavigationDesc                                        Navigation;                                        // 0x4(0x14)
 };
 
@@ -161,7 +161,7 @@ public:
 struct SeasonsTextNotificationNetworkEvent
 {
 public:
-	char                                                         pad0x10_ANI87[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_U9810[0x10];                               // 0x0(0x10)
 	struct SeasonsTextNotification                               SeasonsTextNotification;                           // 0x10(0x88)
 };
 
@@ -170,7 +170,7 @@ public:
 struct SeasonsChatNotificationNetworkEvent
 {
 public:
-	char                                                         pad0x10_CNPDI[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_BG8KK[0x10];                               // 0x0(0x10)
 	struct SeasonsChatNotificationEvent                          SeasonsChatNotificationEvent;                      // 0x10(0x60)
 };
 
@@ -187,7 +187,7 @@ public:
 struct SeasonProgressionUITelemetryFragmentInput
 {
 public:
-	char                                                         pad0x8_GZHRS[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_YF0I6[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -197,7 +197,7 @@ struct SeasonProgressionUITelemetryFragment
 public:
 	TArray<struct SeasonProgressionUIEventTypeTelemetryFragment> ReceivedEventsData;                                // 0x0(0x10)
 	int                                                          TotalNumReceivedEvents;                            // 0x10(0x4)
-	char                                                         pad0x4_5Q9WN[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_W34NQ[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -207,7 +207,7 @@ struct SeasonProgressionUIEventTypeTelemetryFragment
 public:
 	struct FString                                               EventName;                                         // 0x0(0x10)
 	int                                                          NumReceivedEvents;                                 // 0x10(0x4)
-	char                                                         pad0x4_IUZ4Q[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_MVSU1[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -223,7 +223,7 @@ public:
 	int                                                          Rank;                                              // 0x80(0x4)
 	struct NavigationDesc                                        NavigationDesc;                                    // 0x84(0x14)
 	float                                                        HoldDuration;                                      // 0x98(0x4)
-	char                                                         pad0x4_GFMPZ[0x4];                                 // 0x9c(0x4)
+	char                                                         pad0x4_SSZPZ[0x4];                                 // 0x9c(0x4)
 };
 
 

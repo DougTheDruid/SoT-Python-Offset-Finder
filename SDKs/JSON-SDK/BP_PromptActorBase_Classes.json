@@ -24,7 +24,7 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x7_LKBIP[0x7]",
+        "Name": "pad0x7_24AUN[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3d9"
@@ -36,7 +36,7 @@
         "Offset": "0x3e0"
       },
       {
-        "Name": "pad0x10_95OVK[0x10]",
+        "Name": "pad0x10_CI5M8[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3f0"

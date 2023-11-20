@@ -28,9 +28,9 @@ struct ActorSequenceObjectReference
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_GTVY6[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_EXPH6[0x3];                                 // 0x1(0x3)
 	struct Guid                                                  ActorId;                                           // 0x4(0x10)
-	char                                                         pad0x4_YI2DA[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_83KSJ[0x4];                                 // 0x14(0x4)
 	struct FString                                               PathToComponent;                                   // 0x18(0x10)
 };
 

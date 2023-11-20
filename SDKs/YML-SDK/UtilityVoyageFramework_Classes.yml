@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 UtilityVoyageService:
   Attributes:
-  - Name: pad0x90_3USF2[0x90]
+  - Name: pad0x90_47YEQ[0x90]
     Offset: '0x28'
     Size: '0x90'
     Type: char

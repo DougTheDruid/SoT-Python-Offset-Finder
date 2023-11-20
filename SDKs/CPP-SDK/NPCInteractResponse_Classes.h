@@ -60,7 +60,7 @@ public:
 class NPCInteractResponseComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_I1L4F[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_6FHUP[0x8];                                 // 0xc8(0x8)
 };
 
 

@@ -6,7 +6,7 @@ EnemyAIOnShipActiveEncounters:
     Offset: '0x0'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x10_6DDSW[0x10]
+  - Name: pad0x10_OXT70[0x10]
     Offset: '0x8'
     Size: '0x10'
     Type: char

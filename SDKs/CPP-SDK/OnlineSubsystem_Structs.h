@@ -38,7 +38,7 @@ struct AchievementUpdatedEvent
 public:
 	struct FString                                               AchievementId;                                     // 0x0(0x10)
 	bool                                                         Successful;                                        // 0x14(0x1)
-	char                                                         pad0x3_ET578[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_ZDYKD[0x3];                                 // 0x15(0x3)
 	struct FString                                               Reason;                                            // 0x18(0x10)
 	struct FString                                               Platform;                                          // 0x28(0x10)
 };
@@ -72,7 +72,7 @@ public:
 	struct FString                                               FormattedPrice;                                    // 0x30(0x10)
 	struct FString                                               FormattedBasePrice;                                // 0x40(0x10)
 	bool                                                         IsOnSale;                                          // 0x50(0x1)
-	char                                                         pad0x7_VRUSJ[0x7];                                 // 0x51(0x7)
+	char                                                         pad0x7_Z88X6[0x7];                                 // 0x51(0x7)
 	struct DateTime                                              SaleEndDate;                                       // 0x58(0x8)
 	struct FString                                               ImageUri;                                          // 0x60(0x10)
 	struct FString                                               CurrencyCode;                                      // 0x70(0x10)
@@ -86,7 +86,7 @@ struct InAppPurchaseProductRequest
 public:
 	struct FString                                               ProductIdentifier;                                 // 0x0(0x10)
 	bool                                                         bIsConsumable;                                     // 0x10(0x1)
-	char                                                         pad0x7_XM28D[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_HT52K[0x7];                                 // 0x11(0x7)
 };
 
 

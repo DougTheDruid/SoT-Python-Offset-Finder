@@ -15,15 +15,15 @@
   },
   "TrinketCategory": {
     "Super": "CategoryBase",
-    "FullSize": "0x78",
-    "InheritedSize": "0x78",
+    "FullSize": "0x88",
+    "InheritedSize": "0x88",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "InvalidTrinketCategory": {
     "Super": "TrinketCategory",
-    "FullSize": "0x78",
-    "InheritedSize": "0x78",
+    "FullSize": "0x88",
+    "InheritedSize": "0x88",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -67,7 +67,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_FQP18[0x10]",
+        "Name": "pad0x10_GR2QC[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -88,7 +88,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_HDN12[0x10]",
+        "Name": "pad0x10_GLMKF[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"

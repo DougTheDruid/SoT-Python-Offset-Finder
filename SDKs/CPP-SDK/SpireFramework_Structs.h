@@ -13,7 +13,7 @@ public:
 	int                                                          LevelId;                                           // 0x0(0x4)
 	struct Vector                                                Location;                                          // 0x4(0xc)
 	class Actor*                                                 SpireActor;                                        // 0x10(0x8)
-	char                                                         pad0x50_GKAXU[0x50];                               // 0x18(0x50)
+	char                                                         pad0x50_7WXBK[0x50];                               // 0x18(0x50)
 };
 
 
@@ -24,7 +24,7 @@ public:
 	int                                                          LevelId;                                           // 0x0(0x4)
 	bool                                                         ShouldBeLoaded;                                    // 0x4(0x1)
 	bool                                                         ShouldBeVisible;                                   // 0x5(0x1)
-	char                                                         pad0x2_YVKVO[0x2];                                 // 0x6(0x2)
+	char                                                         pad0x2_UIUKL[0x2];                                 // 0x6(0x2)
 };
 
 

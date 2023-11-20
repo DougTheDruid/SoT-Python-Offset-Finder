@@ -18,107 +18,103 @@ BP_GuildMastPlaque_C:
     Offset: '0x548'
     Size: '0x8'
     Type: class Material*
-  - Name: bevelMat_MID
-    Offset: '0x550'
-    Size: '0x8'
-    Type: class MaterialInstanceDynamic*
   - Name: TextCanvasWidth
-    Offset: '0x558'
+    Offset: '0x550'
     Size: '0x4'
     Type: int
   - Name: TextCanvasHeight
-    Offset: '0x55c'
+    Offset: '0x554'
     Size: '0x4'
     Type: int
   - Name: Canvas
-    Offset: '0x560'
+    Offset: '0x558'
     Size: '0x8'
     Type: class CanvasWorldMapComponent*
   - Name: guildRank
-    Offset: '0x568'
+    Offset: '0x560'
     Size: '0x10'
     Type: TArray<Str guildRank>
   - Name: bevelIntensity
-    Offset: '0x578'
+    Offset: '0x570'
     Size: '0x4'
     Type: float
   - Name: FeatureToggle
-    Offset: '0x57c'
+    Offset: '0x574'
     Size: '0xc'
     Type: struct FeatureFlag
   - Name: TextBevel_MID
-    Offset: '0x648'
+    Offset: '0x640'
     Size: '0x8'
     Type: class MaterialInstanceDynamic*
   - Name: IconBevel_MID
-    Offset: '0x650'
+    Offset: '0x648'
     Size: '0x8'
     Type: class MaterialInstanceDynamic*
   - Name: RankBevel_MID
-    Offset: '0x658'
+    Offset: '0x650'
     Size: '0x8'
     Type: class MaterialInstanceDynamic*
   - Name: RankRenderTarget
-    Offset: '0x660'
+    Offset: '0x658'
     Size: '0x8'
     Type: class MaybeCompressedCanvasRenderTarget2D*
   - Name: TextRenderTarget
-    Offset: '0x668'
+    Offset: '0x660'
     Size: '0x8'
     Type: class MaybeCompressedCanvasRenderTarget2D*
   - Name: RankTextWidth
-    Offset: '0x670'
+    Offset: '0x668'
     Size: '0x4'
     Type: int
   - Name: RankTextHeight
-    Offset: '0x674'
+    Offset: '0x66c'
     Size: '0x4'
     Type: int
   - Name: BevelTextRenderTarget
-    Offset: '0x678'
+    Offset: '0x670'
     Size: '0x8'
     Type: class MaybeCompressedCanvasRenderTarget2D*
   - Name: IconRenderTarget
-    Offset: '0x680'
+    Offset: '0x678'
     Size: '0x8'
     Type: class MaybeCompressedCanvasRenderTarget2D*
   - Name: BevelRankRenderTarget
-    Offset: '0x688'
+    Offset: '0x680'
     Size: '0x8'
     Type: class MaybeCompressedCanvasRenderTarget2D*
   - Name: BevelIconRenderTarget
-    Offset: '0x690'
+    Offset: '0x688'
     Size: '0x8'
     Type: class MaybeCompressedCanvasRenderTarget2D*
   - Name: Gold Colour
-    Offset: '0x698'
+    Offset: '0x690'
     Size: '0x10'
     Type: struct LinearColor
   - Name: Silver Colour
-    Offset: '0x6a8'
+    Offset: '0x6a0'
     Size: '0x10'
     Type: struct LinearColor
   - Name: Bronze Colour
-    Offset: '0x6b8'
+    Offset: '0x6b0'
     Size: '0x10'
     Type: struct LinearColor
   - Name: TextColour
-    Offset: '0x6c8'
+    Offset: '0x6c0'
     Size: '0x10'
     Type: struct LinearColor
   - Name: IconColourFollowsMedallion
-    Offset: '0x6d8'
+    Offset: '0x6d0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_A7D07[0x7]
-    Offset: '0x6d9'
+  - Name: pad0x7_4XOOO[0x7]
+    Offset: '0x6d1'
     Size: '0x7'
     Type: char
-  - Name: pad0x60_C1V4X[0x60]
-    Offset: '0x6e0'
+  - Name: pad0x60_9A8GE[0x60]
+    Offset: '0x6d8'
     Size: '0x60'
     Type: char
-  ClassSize: '0x248'
-  FullSize: '0x740'
+  ClassSize: '0x240'
+  FullSize: '0x738'
   InheritedSize: '0x4f8'
   Super: GuildPlaque

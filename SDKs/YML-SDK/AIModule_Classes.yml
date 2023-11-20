@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AIAsyncTaskBlueprintProxy:
   Attributes:
-  - Name: pad0x38_36D1K[0x38]
+  - Name: pad0x38_DVQV3[0x38]
     Offset: '0x28'
     Size: '0x38'
     Type: char
@@ -18,7 +18,7 @@ AIBlueprintHelperLibrary:
   Super: BlueprintFunctionLibrary
 AIController:
   Attributes:
-  - Name: pad0x28_C4T78[0x28]
+  - Name: pad0x28_Q3WLH[0x28]
     Offset: '0x428'
     Size: '0x28'
     Type: char
@@ -42,7 +42,7 @@ AIController:
     Offset: '0x450'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_W4U65[0x7]
+  - Name: pad0x7_UVJ4J[0x7]
     Offset: '0x451'
     Size: '0x7'
     Type: char
@@ -70,11 +70,11 @@ AIController:
     Offset: '0x480'
     Size: '0x8'
     Type: class GameplayTasksComponent*
-  - Name: pad0x10_H2Q09[0x10]
+  - Name: pad0x10_43D2P[0x10]
     Offset: '0x488'
     Size: '0x10'
     Type: char
-  - Name: pad0x20_YABB6[0x20]
+  - Name: pad0x20_59UYM[0x20]
     Offset: '0x498'
     Size: '0x20'
     Type: char
@@ -106,7 +106,7 @@ AIDataProvider_QueryParamFromCustomObjectProperty:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_WVOU6[0x7]
+  - Name: pad0x7_62XSQ[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
@@ -132,7 +132,7 @@ AIDataProvider_QueryParams:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_OM270[0x7]
+  - Name: pad0x7_T5SWU[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -168,7 +168,7 @@ AIPerceptionComponent:
     Offset: '0xd8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_AARGQ[0x4]
+  - Name: pad0x4_CLDGJ[0x4]
     Offset: '0xdc'
     Size: '0x4'
     Type: char
@@ -180,7 +180,7 @@ AIPerceptionComponent:
     Offset: '0xf0'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x10_QNKCU[0x10]
+  - Name: pad0x10_RE3R0[0x10]
     Offset: '0xf8'
     Size: '0x10'
     Type: char
@@ -188,11 +188,11 @@ AIPerceptionComponent:
     Offset: '0x108'
     Size: '0x8'
     Type: class AIController*
-  - Name: pad0x80_N4CSI[0x80]
+  - Name: pad0x80_FNC01[0x80]
     Offset: '0x110'
     Size: '0x80'
     Type: char
-  - Name: pad0x38_JFOVR[0x38]
+  - Name: pad0x38_TV7V4[0x38]
     Offset: '0x190'
     Size: '0x38'
     Type: char
@@ -212,7 +212,7 @@ AIPerceptionStimuliSourceComponent:
     Offset: '0xc8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_GYQW6[0x7]
+  - Name: pad0x7_9P9VG[0x7]
     Offset: '0xc9'
     Size: '0x7'
     Type: char
@@ -226,7 +226,7 @@ AIPerceptionStimuliSourceComponent:
   Super: ActorComponent
 AIPerceptionSystem:
   Attributes:
-  - Name: pad0x58_YME6Q[0x58]
+  - Name: pad0x58_B743Z[0x58]
     Offset: '0x28'
     Size: '0x58'
     Type: char
@@ -238,7 +238,7 @@ AIPerceptionSystem:
     Offset: '0x90'
     Size: '0x4'
     Type: float
-  - Name: pad0x94_0VFUP[0x94]
+  - Name: pad0x94_94Q7U[0x94]
     Offset: '0x94'
     Size: '0x94'
     Type: char
@@ -270,7 +270,7 @@ AISense:
     Offset: '0x28'
     Size: '0x4'
     Type: struct Color
-  - Name: pad0x4_E3IQ2[0x4]
+  - Name: pad0x4_6XDXD[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -286,7 +286,7 @@ AISense:
     Offset: '0x44'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_MJT04[0x3]
+  - Name: pad0x3_8A9RF[0x3]
     Offset: '0x45'
     Size: '0x3'
     Type: char
@@ -298,7 +298,7 @@ AISense:
     Offset: '0x48'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_8E844[0x7]
+  - Name: pad0x7_PFRH3[0x7]
     Offset: '0x49'
     Size: '0x7'
     Type: char
@@ -306,7 +306,7 @@ AISense:
     Offset: '0x50'
     Size: '0x8'
     Type: class AIPerceptionSystem*
-  - Name: pad0x30_CNV1V[0x30]
+  - Name: pad0x30_SB829[0x30]
     Offset: '0x58'
     Size: '0x30'
     Type: char
@@ -330,7 +330,7 @@ AISenseConfig:
     Offset: '0x2c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_LWNXE[0x3]
+  - Name: pad0x3_05IF2[0x3]
     Offset: '0x2d'
     Size: '0x3'
     Type: char
@@ -376,7 +376,7 @@ AISenseConfig_Hearing:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_28DJV[0x3]
+  - Name: pad0x3_IJP5I[0x3]
     Offset: '0x41'
     Size: '0x3'
     Type: char
@@ -420,7 +420,7 @@ AISenseConfig_Sight:
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_UB7JQ[0x4]
+  - Name: pad0x4_OSUYI[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -504,7 +504,7 @@ AISense_Hearing:
     Offset: '0x8c'
     Size: '0x4'
     Type: int
-  - Name: pad0x8_6NSKI[0x8]
+  - Name: pad0x8_06VQN[0x8]
     Offset: '0x90'
     Size: '0x8'
     Type: char
@@ -516,7 +516,7 @@ AISense_Hearing:
     Offset: '0xa8'
     Size: '0x10'
     Type: TArray<struct AINoiseEvent>
-  - Name: pad0x10_FGYRY[0x10]
+  - Name: pad0x10_FVT4O[0x10]
     Offset: '0xb8'
     Size: '0x10'
     Type: char
@@ -524,7 +524,7 @@ AISense_Hearing:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x54_FGNAE[0x54]
+  - Name: pad0x54_1Q9ED[0x54]
     Offset: '0xcc'
     Size: '0x54'
     Type: char
@@ -544,7 +544,7 @@ AISense_Prediction:
   Super: AISense
 AISense_Sight:
   Attributes:
-  - Name: pad0xb0_3RIFE[0xb0]
+  - Name: pad0xb0_9BIU3[0xb0]
     Offset: '0x88'
     Size: '0xb0'
     Type: char
@@ -556,7 +556,7 @@ AISense_Sight:
     Offset: '0x13c'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_T1NUZ[0x4]
+  - Name: pad0x4_3Y6K9[0x4]
     Offset: '0x140'
     Size: '0x4'
     Type: char
@@ -568,7 +568,7 @@ AISense_Sight:
     Offset: '0x148'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_F8QXN[0x4]
+  - Name: pad0x4_6BJA7[0x4]
     Offset: '0x14c'
     Size: '0x4'
     Type: char
@@ -652,7 +652,7 @@ AISystem:
     Offset: '0x90'
     Size: '0x8'
     Type: class AIHotSpotManager*
-  - Name: pad0x58_Z0QAC[0x58]
+  - Name: pad0x58_21KQB[0x58]
     Offset: '0x98'
     Size: '0x58'
     Type: char
@@ -672,7 +672,7 @@ AITask:
   Super: GameplayTask
 AITask_MoveTo:
   Attributes:
-  - Name: pad0x20_TWXZF[0x20]
+  - Name: pad0x20_SZH8L[0x20]
     Offset: '0x60'
     Size: '0x20'
     Type: char
@@ -680,7 +680,7 @@ AITask_MoveTo:
     Offset: '0x80'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0xc_OF42E[0xc]
+  - Name: pad0xc_66GNS[0xc]
     Offset: '0x8c'
     Size: '0xc'
     Type: char
@@ -704,7 +704,7 @@ AITask_MoveTo:
     Offset: '0xa6'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9_ML6M3[0x9]
+  - Name: pad0x9_03MSW[0x9]
     Offset: '0xa7'
     Size: '0x9'
     Type: char
@@ -714,7 +714,7 @@ AITask_MoveTo:
   Super: AITask
 BTAuxiliaryNode:
   Attributes:
-  - Name: pad0x8_XFC7V[0x8]
+  - Name: pad0x8_AB4KA[0x8]
     Offset: '0x58'
     Size: '0x8'
     Type: char
@@ -732,7 +732,7 @@ BTCompositeNode:
     Offset: '0x68'
     Size: '0x10'
     Type: TArray<class BTService*>
-  - Name: pad0x10_SCO0B[0x10]
+  - Name: pad0x10_N11I9[0x10]
     Offset: '0x78'
     Size: '0x10'
     Type: char
@@ -758,7 +758,7 @@ BTComposite_SimpleParallel:
     Offset: '0x88'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_0ZQSI[0x7]
+  - Name: pad0x7_70294[0x7]
     Offset: '0x89'
     Size: '0x7'
     Type: char
@@ -772,7 +772,7 @@ BTDecorator:
     Offset: '0x60'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_UP8Y7[0x3]
+  - Name: pad0x3_LVGRL[0x3]
     Offset: '0x61'
     Size: '0x3'
     Type: char
@@ -780,7 +780,7 @@ BTDecorator:
     Offset: '0x64'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_XJLED[0x3]
+  - Name: pad0x3_BTPX1[0x3]
     Offset: '0x65'
     Size: '0x3'
     Type: char
@@ -814,7 +814,7 @@ BTDecorator_Blackboard:
     Offset: '0xb9'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_U6KIN[0x6]
+  - Name: pad0x6_MGYB0[0x6]
     Offset: '0xba'
     Size: '0x6'
     Type: char
@@ -846,7 +846,7 @@ BTDecorator_BlueprintBase:
     Offset: '0x78'
     Size: '0x10'
     Type: TArray<struct FName>
-  - Name: pad0x10_48ESW[0x10]
+  - Name: pad0x10_FVRPU[0x10]
     Offset: '0x88'
     Size: '0x10'
     Type: char
@@ -862,7 +862,7 @@ BTDecorator_BlueprintBase:
     Offset: '0x98'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_6AVGV[0x7]
+  - Name: pad0x7_YHXQY[0x7]
     Offset: '0x99'
     Size: '0x7'
     Type: char
@@ -880,7 +880,7 @@ BTDecorator_CheckGameplayTagsOnActor:
     Offset: '0x90'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_E9HOS[0x7]
+  - Name: pad0x7_GPVOI[0x7]
     Offset: '0x91'
     Size: '0x7'
     Type: char
@@ -902,7 +902,7 @@ BTDecorator_CompareBBEntries:
     Offset: '0x68'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_UDBZJ[0x7]
+  - Name: pad0x7_ULT2R[0x7]
     Offset: '0x69'
     Size: '0x7'
     Type: char
@@ -930,7 +930,7 @@ BTDecorator_ConeCheck:
     Offset: '0x68'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_R4ITP[0x4]
+  - Name: pad0x4_1E8Z5[0x4]
     Offset: '0x6c'
     Size: '0x4'
     Type: char
@@ -946,7 +946,7 @@ BTDecorator_ConeCheck:
     Offset: '0xc0'
     Size: '0x28'
     Type: struct BlackboardKeySelector
-  - Name: pad0x8_31MA9[0x8]
+  - Name: pad0x8_V0DJT[0x8]
     Offset: '0xe8'
     Size: '0x8'
     Type: char
@@ -960,7 +960,7 @@ BTDecorator_Cooldown:
     Offset: '0x68'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_47VRZ[0x4]
+  - Name: pad0x4_BF1OC[0x4]
     Offset: '0x6c'
     Size: '0x4'
     Type: char
@@ -982,7 +982,7 @@ BTDecorator_DoesPathExist:
     Offset: '0xb8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_2GMPU[0x3]
+  - Name: pad0x3_EKP6T[0x3]
     Offset: '0xb9'
     Size: '0x3'
     Type: char
@@ -990,7 +990,7 @@ BTDecorator_DoesPathExist:
     Offset: '0xbc'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_1Y88A[0x3]
+  - Name: pad0x3_6XE3V[0x3]
     Offset: '0xbd'
     Size: '0x3'
     Type: char
@@ -1018,7 +1018,7 @@ BTDecorator_IsAtLocation:
     Offset: '0x94'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_JN2HI[0x3]
+  - Name: pad0x3_DSZJT[0x3]
     Offset: '0x95'
     Size: '0x3'
     Type: char
@@ -1042,7 +1042,7 @@ BTDecorator_KeepInCone:
     Offset: '0x68'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_T4RVT[0x4]
+  - Name: pad0x4_BI4PK[0x4]
     Offset: '0x6c'
     Size: '0x4'
     Type: char
@@ -1062,7 +1062,7 @@ BTDecorator_KeepInCone:
     Offset: '0xc0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_UM77F[0x7]
+  - Name: pad0x7_MBOGS[0x7]
     Offset: '0xc1'
     Size: '0x7'
     Type: char
@@ -1080,7 +1080,7 @@ BTDecorator_Loop:
     Offset: '0x6c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_4VONM[0x3]
+  - Name: pad0x3_97M8W[0x3]
     Offset: '0x6d'
     Size: '0x3'
     Type: char
@@ -1108,7 +1108,7 @@ BTDecorator_SetTagCooldown:
     Offset: '0x74'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_MUPNU[0x3]
+  - Name: pad0x3_72KWA[0x3]
     Offset: '0x75'
     Size: '0x3'
     Type: char
@@ -1134,7 +1134,7 @@ BTDecorator_TagCooldown:
     Offset: '0x75'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_PHZNL[0x2]
+  - Name: pad0x2_XIHYG[0x2]
     Offset: '0x76'
     Size: '0x2'
     Type: char
@@ -1148,7 +1148,7 @@ BTDecorator_TimeLimit:
     Offset: '0x68'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_VK1EX[0x4]
+  - Name: pad0x4_JO883[0x4]
     Offset: '0x6c'
     Size: '0x4'
     Type: char
@@ -1164,7 +1164,7 @@ BTFunctionLibrary:
   Super: BlueprintFunctionLibrary
 BTNode:
   Attributes:
-  - Name: pad0x8_U0RHG[0x8]
+  - Name: pad0x8_1BATP[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -1180,7 +1180,7 @@ BTNode:
     Offset: '0x48'
     Size: '0x8'
     Type: class BTCompositeNode*
-  - Name: pad0x8_JQVLT[0x8]
+  - Name: pad0x8_Y7ZSH[0x8]
     Offset: '0x50'
     Size: '0x8'
     Type: char
@@ -1206,7 +1206,7 @@ BTService:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_4LESL[0x7]
+  - Name: pad0x7_KCF9A[0x7]
     Offset: '0x69'
     Size: '0x7'
     Type: char
@@ -1234,7 +1234,7 @@ BTService_BlueprintBase:
     Offset: '0x78'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x10_BTWGY[0x10]
+  - Name: pad0x10_6NGN7[0x10]
     Offset: '0x80'
     Size: '0x10'
     Type: char
@@ -1246,7 +1246,7 @@ BTService_BlueprintBase:
     Offset: '0x90'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_GJOKZ[0x7]
+  - Name: pad0x7_XRW10[0x7]
     Offset: '0x91'
     Size: '0x7'
     Type: char
@@ -1260,7 +1260,7 @@ BTService_DefaultFocus:
     Offset: '0x98'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_YT1LD[0x7]
+  - Name: pad0x7_LA7Z1[0x7]
     Offset: '0x99'
     Size: '0x7'
     Type: char
@@ -1270,7 +1270,7 @@ BTService_DefaultFocus:
   Super: BTService_BlackboardBase
 BTTaskNode:
   Attributes:
-  - Name: pad0x8_5PI66[0x8]
+  - Name: pad0x8_1T5CR[0x8]
     Offset: '0x58'
     Size: '0x8'
     Type: char
@@ -1298,7 +1298,7 @@ BTTask_BlueprintBase:
     Offset: '0x68'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x18_2PG05[0x18]
+  - Name: pad0x18_BLH4B[0x18]
     Offset: '0x70'
     Size: '0x18'
     Type: char
@@ -1306,7 +1306,7 @@ BTTask_BlueprintBase:
     Offset: '0x88'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_UHCY5[0x7]
+  - Name: pad0x7_4E27V[0x7]
     Offset: '0x89'
     Size: '0x7'
     Type: char
@@ -1320,7 +1320,7 @@ BTTask_MakeNoise:
     Offset: '0x60'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_RIXWO[0x4]
+  - Name: pad0x4_ONCR7[0x4]
     Offset: '0x64'
     Size: '0x4'
     Type: char
@@ -1350,7 +1350,7 @@ BTTask_MoveDirectlyToward:
     Offset: '0x8c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_XUIIE[0x3]
+  - Name: pad0x3_DB0L0[0x3]
     Offset: '0x8d'
     Size: '0x3'
     Type: char
@@ -1364,7 +1364,7 @@ BTTask_MoveTo:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_VKM8M[0x4]
+  - Name: pad0x4_A7UMG[0x4]
     Offset: '0x8c'
     Size: '0x4'
     Type: char
@@ -1384,7 +1384,7 @@ BTTask_MoveTo:
     Offset: '0x98'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_8FKC7[0x7]
+  - Name: pad0x7_EL121[0x7]
     Offset: '0x99'
     Size: '0x7'
     Type: char
@@ -1412,7 +1412,7 @@ BTTask_PlayAnimation:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_3MX2A[0x7]
+  - Name: pad0x7_ZZGCX[0x7]
     Offset: '0x69'
     Size: '0x7'
     Type: char
@@ -1424,7 +1424,7 @@ BTTask_PlayAnimation:
     Offset: '0x78'
     Size: '0x8'
     Type: class SkeletalMeshComponent*
-  - Name: pad0x18_4VY7O[0x18]
+  - Name: pad0x18_D2NC2[0x18]
     Offset: '0x80'
     Size: '0x18'
     Type: char
@@ -1458,7 +1458,7 @@ BTTask_RotateToFaceBBEntry:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_GK259[0x4]
+  - Name: pad0x4_HLRX8[0x4]
     Offset: '0x8c'
     Size: '0x4'
     Type: char
@@ -1508,7 +1508,7 @@ BTTask_RunEQSQuery:
     Offset: '0xa0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_65PAC[0x7]
+  - Name: pad0x7_LHQ31[0x7]
     Offset: '0xa1'
     Size: '0x7'
     Type: char
@@ -1526,7 +1526,7 @@ BTTask_SetTagCooldown:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_4YJ0M[0x3]
+  - Name: pad0x3_KR6E6[0x3]
     Offset: '0x69'
     Size: '0x3'
     Type: char
@@ -1580,7 +1580,7 @@ BehaviorTree:
     Offset: '0x48'
     Size: '0x10'
     Type: TArray<struct BTDecoratorLogic>
-  - Name: pad0x8_SBD9P[0x8]
+  - Name: pad0x8_GR2GE[0x8]
     Offset: '0x58'
     Size: '0x8'
     Type: char
@@ -1590,7 +1590,7 @@ BehaviorTree:
   Super: Object
 BehaviorTreeComponent:
   Attributes:
-  - Name: pad0x20_YO9F1[0x20]
+  - Name: pad0x20_RK2T5[0x20]
     Offset: '0x128'
     Size: '0x20'
     Type: char
@@ -1598,7 +1598,7 @@ BehaviorTreeComponent:
     Offset: '0x148'
     Size: '0x10'
     Type: TArray<class BTNode*>
-  - Name: pad0x130_KEKOL[0x130]
+  - Name: pad0x130_Y841Z[0x130]
     Offset: '0x158'
     Size: '0x130'
     Type: char
@@ -1612,7 +1612,7 @@ BehaviorTreeManager:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_IXU8W[0x4]
+  - Name: pad0x4_HJ9FR[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -1644,7 +1644,7 @@ BlackboardComponent:
     Offset: '0xd0'
     Size: '0x8'
     Type: class BlackboardData*
-  - Name: pad0x20_M1Q1E[0x20]
+  - Name: pad0x20_A3Y9D[0x20]
     Offset: '0xd8'
     Size: '0x20'
     Type: char
@@ -1652,7 +1652,7 @@ BlackboardComponent:
     Offset: '0xf8'
     Size: '0x10'
     Type: TArray<class BlackboardKeyType*>
-  - Name: pad0x108_F71YJ[0x108]
+  - Name: pad0x108_PKZ1C[0x108]
     Offset: '0x108'
     Size: '0x108'
     Type: char
@@ -1674,7 +1674,7 @@ BlackboardData:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_VH1O9[0x7]
+  - Name: pad0x7_9X0ZZ[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
@@ -1684,7 +1684,7 @@ BlackboardData:
   Super: DataAsset
 BlackboardKeyType:
   Attributes:
-  - Name: pad0x8_V12SQ[0x8]
+  - Name: pad0x8_3A54X[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -1722,7 +1722,7 @@ BlackboardKeyType_Enum:
     Offset: '0x48'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_U7X38[0x7]
+  - Name: pad0x7_PS8EY[0x7]
     Offset: '0x49'
     Size: '0x7'
     Type: char
@@ -1796,7 +1796,7 @@ BlackboardKeyType_Vector:
   Super: BlackboardKeyType
 BrainComponent:
   Attributes:
-  - Name: pad0x8_X9DOT[0x8]
+  - Name: pad0x8_USNY2[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -1808,7 +1808,7 @@ BrainComponent:
     Offset: '0xd8'
     Size: '0x8'
     Type: class AIController*
-  - Name: pad0x48_1O9TC[0x48]
+  - Name: pad0x48_J1ITQ[0x48]
     Offset: '0xe0'
     Size: '0x48'
     Type: char
@@ -1824,7 +1824,7 @@ CrowdAgentInterface:
   Super: Interface
 CrowdFollowingComponent:
   Attributes:
-  - Name: pad0x8_YXD6Z[0x8]
+  - Name: pad0x8_R0FSD[0x8]
     Offset: '0x2b8'
     Size: '0x8'
     Type: char
@@ -1832,7 +1832,7 @@ CrowdFollowingComponent:
     Offset: '0x2c0'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_TD79D[0x4]
+  - Name: pad0x4_U4KHW[0x4]
     Offset: '0x2cc'
     Size: '0x4'
     Type: char
@@ -1852,7 +1852,7 @@ CrowdFollowingComponent:
     Offset: '0x2e0'
     Size: '0x4'
     Type: struct NavAvoidanceMask
-  - Name: pad0x24_SRI87[0x24]
+  - Name: pad0x24_424NI[0x24]
     Offset: '0x2e4'
     Size: '0x24'
     Type: char
@@ -1902,7 +1902,7 @@ CrowdManager:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
-  - Name: pad0x77_07H9D[0x77]
+  - Name: pad0x77_HFU60[0x77]
     Offset: '0x69'
     Size: '0x77'
     Type: char
@@ -1930,7 +1930,7 @@ EQSQueryResultSourceInterface:
   Super: Interface
 EQSRenderingComponent:
   Attributes:
-  - Name: pad0x10_Q6FPQ[0x10]
+  - Name: pad0x10_NWLKL[0x10]
     Offset: '0x5c0'
     Size: '0x10'
     Type: char
@@ -1964,7 +1964,7 @@ EQSTestingPawn:
     Offset: '0x608'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_W8NSO[0x3]
+  - Name: pad0x3_ZCDWS[0x3]
     Offset: '0x609'
     Size: '0x3'
     Type: char
@@ -1984,7 +1984,7 @@ EQSTestingPawn:
     Offset: '0x60c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_FDKC8[0x3]
+  - Name: pad0x3_K8DN1[0x3]
     Offset: '0x60d'
     Size: '0x3'
     Type: char
@@ -1992,7 +1992,7 @@ EQSTestingPawn:
     Offset: '0x610'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2f_3QP6O[0x2f]
+  - Name: pad0x2f_MYVCP[0x2f]
     Offset: '0x611'
     Size: '0x2f'
     Type: char
@@ -2018,7 +2018,7 @@ EnvQueryContext:
   Super: Object
 EnvQueryContext_BlueprintBase:
   Attributes:
-  - Name: pad0x8_WYXSM[0x8]
+  - Name: pad0x8_KIVVW[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -2054,7 +2054,7 @@ EnvQueryGenerator:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_1CITG[0x3]
+  - Name: pad0x3_D9XOI[0x3]
     Offset: '0x41'
     Size: '0x3'
     Type: char
@@ -2102,7 +2102,7 @@ EnvQueryGenerator_BlueprintBase:
     Offset: '0x98'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x8_J06WY[0x8]
+  - Name: pad0x8_OBV34[0x8]
     Offset: '0xa0'
     Size: '0x8'
     Type: char
@@ -2120,7 +2120,7 @@ EnvQueryGenerator_Composite:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_Q6OZE[0x7]
+  - Name: pad0x7_EMIRC[0x7]
     Offset: '0x69'
     Size: '0x7'
     Type: char
@@ -2158,7 +2158,7 @@ EnvQueryGenerator_Donut:
     Offset: '0x1a8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_LLHRQ[0x7]
+  - Name: pad0x7_EU0OU[0x7]
     Offset: '0x1a9'
     Size: '0x7'
     Type: char
@@ -2170,7 +2170,7 @@ EnvQueryGenerator_Donut:
     Offset: '0x1b8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_A9CEQ[0x7]
+  - Name: pad0x7_FDT6A[0x7]
     Offset: '0x1b9'
     Size: '0x7'
     Type: char
@@ -2200,7 +2200,7 @@ EnvQueryGenerator_OnCircle:
     Offset: '0x148'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5HYAC[0x4]
+  - Name: pad0x4_UCDSF[0x4]
     Offset: '0x14c'
     Size: '0x4'
     Type: char
@@ -2216,7 +2216,7 @@ EnvQueryGenerator_OnCircle:
     Offset: '0x198'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_BEYF6[0x7]
+  - Name: pad0x7_RHS0K[0x7]
     Offset: '0x199'
     Size: '0x7'
     Type: char
@@ -2272,7 +2272,7 @@ EnvQueryGenerator_SimpleGrid:
   Super: EnvQueryGenerator_ProjectedPoints
 EnvQueryInstanceBlueprintWrapper:
   Attributes:
-  - Name: pad0x8_4SDQ5[0x8]
+  - Name: pad0x8_IFIMK[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -2280,7 +2280,7 @@ EnvQueryInstanceBlueprintWrapper:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0x1c_BC9CO[0x1c]
+  - Name: pad0x1c_3JLXI[0x1c]
     Offset: '0x34'
     Size: '0x1c'
     Type: char
@@ -2292,11 +2292,11 @@ EnvQueryInstanceBlueprintWrapper:
     Offset: '0x58'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_PVNXR[0x4]
+  - Name: pad0x4_8LHDC[0x4]
     Offset: '0x5c'
     Size: '0x4'
     Type: char
-  - Name: pad0x10_EJCBF[0x10]
+  - Name: pad0x10_46Y0J[0x10]
     Offset: '0x60'
     Size: '0x10'
     Type: char
@@ -2306,7 +2306,7 @@ EnvQueryInstanceBlueprintWrapper:
   Super: Object
 EnvQueryItemType:
   Attributes:
-  - Name: pad0x8_VOPZB[0x8]
+  - Name: pad0x8_WDY2L[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -2346,7 +2346,7 @@ EnvQueryItemType_VectorBase:
   Super: EnvQueryItemType
 EnvQueryManager:
   Attributes:
-  - Name: pad0x70_CBA95[0x70]
+  - Name: pad0x70_OV5TG[0x70]
     Offset: '0x28'
     Size: '0x70'
     Type: char
@@ -2358,7 +2358,7 @@ EnvQueryManager:
     Offset: '0xa8'
     Size: '0x10'
     Type: TArray<class EnvQueryContext*>
-  - Name: pad0x58_W3A25[0x58]
+  - Name: pad0x58_9CWWO[0x58]
     Offset: '0xb8'
     Size: '0x58'
     Type: char
@@ -2372,7 +2372,7 @@ EnvQueryNode:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_RY78L[0x4]
+  - Name: pad0x4_JBF0T[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -2428,7 +2428,7 @@ EnvQueryTest:
     Offset: '0x98'
     Size: '0x30'
     Type: struct AIDataProviderFloatValue
-  - Name: pad0x1_7NM9O[0x1]
+  - Name: pad0x1_9D9Q8[0x1]
     Offset: '0xc8'
     Size: '0x1'
     Type: char
@@ -2444,7 +2444,7 @@ EnvQueryTest:
     Offset: '0xcb'
     Size: '0x1'
     Type: byte
-  - Name: pad0x4_EN9LQ[0x4]
+  - Name: pad0x4_H177Y[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
@@ -2460,7 +2460,7 @@ EnvQueryTest:
     Offset: '0x130'
     Size: '0x30'
     Type: struct AIDataProviderFloatValue
-  - Name: pad0x8_VJLTF[0x8]
+  - Name: pad0x8_ZUL7Z[0x8]
     Offset: '0x160'
     Size: '0x8'
     Type: char
@@ -2468,7 +2468,7 @@ EnvQueryTest:
     Offset: '0x168'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_5IPGS[0x7]
+  - Name: pad0x7_AOVXX[0x7]
     Offset: '0x169'
     Size: '0x7'
     Type: char
@@ -2482,7 +2482,7 @@ EnvQueryTest_Distance:
     Offset: '0x170'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_T2RAT[0x7]
+  - Name: pad0x7_Y1JOM[0x7]
     Offset: '0x171'
     Size: '0x7'
     Type: char
@@ -2512,7 +2512,7 @@ EnvQueryTest_Dot:
     Offset: '0x1b1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_VKJ02[0x6]
+  - Name: pad0x6_7JLXE[0x6]
     Offset: '0x1b2'
     Size: '0x6'
     Type: char
@@ -2526,7 +2526,7 @@ EnvQueryTest_GameplayTags:
     Offset: '0x170'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_YTIIL[0x7]
+  - Name: pad0x7_0I9YO[0x7]
     Offset: '0x171'
     Size: '0x7'
     Type: char
@@ -2544,7 +2544,7 @@ EnvQueryTest_Pathfinding:
     Offset: '0x170'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_KWCW1[0x7]
+  - Name: pad0x7_3MZH0[0x7]
     Offset: '0x171'
     Size: '0x7'
     Type: char
@@ -2632,7 +2632,7 @@ GenericTeamAgentInterface:
   Super: Interface
 PathFollowingComponent:
   Attributes:
-  - Name: pad0x58_2VDVS[0x58]
+  - Name: pad0x58_2Q1UA[0x58]
     Offset: '0xc8'
     Size: '0x58'
     Type: char
@@ -2640,7 +2640,7 @@ PathFollowingComponent:
     Offset: '0x120'
     Size: '0x8'
     Type: class NavMovementComponent*
-  - Name: pad0x8_OII5B[0x8]
+  - Name: pad0x8_Y9NAA[0x8]
     Offset: '0x128'
     Size: '0x8'
     Type: char
@@ -2648,7 +2648,7 @@ PathFollowingComponent:
     Offset: '0x130'
     Size: '0x8'
     Type: class NavigationData*
-  - Name: pad0xbc_N3G6E[0xbc]
+  - Name: pad0xbc_4957E[0xbc]
     Offset: '0x138'
     Size: '0xbc'
     Type: char
@@ -2656,7 +2656,7 @@ PathFollowingComponent:
     Offset: '0x1f4'
     Size: '0x1'
     Type: bool
-  - Name: pad0xc3_7JK21[0xc3]
+  - Name: pad0xc3_ARUH5[0xc3]
     Offset: '0x1f5'
     Size: '0xc3'
     Type: char
@@ -2686,7 +2686,7 @@ PawnAction:
     Offset: '0x48'
     Size: '0x8'
     Type: class BrainComponent*
-  - Name: pad0x28_QPHF5[0x28]
+  - Name: pad0x28_1E4M8[0x28]
     Offset: '0x50'
     Size: '0x28'
     Type: char
@@ -2702,7 +2702,7 @@ PawnAction:
     Offset: '0x78'
     Size: '0x1'
     Type: bool
-  - Name: pad0x17_VUFIM[0x17]
+  - Name: pad0x17_J34Y8[0x17]
     Offset: '0x79'
     Size: '0x17'
     Type: char
@@ -2762,7 +2762,7 @@ PawnAction_Move:
     Offset: '0xb0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2f_P7B2P[0x2f]
+  - Name: pad0x2f_8XEXK[0x2f]
     Offset: '0xb1'
     Size: '0x2f'
     Type: char
@@ -2784,7 +2784,7 @@ PawnAction_Repeat:
     Offset: '0xa0'
     Size: '0x1'
     Type: byte
-  - Name: pad0xf_38R8B[0xf]
+  - Name: pad0xf_JHUV9[0xf]
     Offset: '0xa1'
     Size: '0xf'
     Type: char
@@ -2802,7 +2802,7 @@ PawnAction_Sequence:
     Offset: '0xa0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_QSDN7[0x7]
+  - Name: pad0x7_3S33N[0x7]
     Offset: '0xa1'
     Size: '0x7'
     Type: char
@@ -2810,7 +2810,7 @@ PawnAction_Sequence:
     Offset: '0xa8'
     Size: '0x8'
     Type: class PawnAction*
-  - Name: pad0x8_TX49W[0x8]
+  - Name: pad0x8_KU6R0[0x8]
     Offset: '0xb0'
     Size: '0x8'
     Type: char
@@ -2824,7 +2824,7 @@ PawnAction_Wait:
     Offset: '0x90'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_P5SE4[0xc]
+  - Name: pad0xc_FE0DP[0xc]
     Offset: '0x94'
     Size: '0xc'
     Type: char
@@ -2850,7 +2850,7 @@ PawnActionsComponent:
     Offset: '0xf0'
     Size: '0x8'
     Type: class PawnAction*
-  - Name: pad0x8_S6BDA[0x8]
+  - Name: pad0x8_79FR1[0x8]
     Offset: '0xf8'
     Size: '0x8'
     Type: char
@@ -2896,7 +2896,7 @@ PawnSensingComponent:
     Offset: '0xdc'
     Size: '0x1'
     Type: bool
-  - Name: pad0xb_F4Y63[0xb]
+  - Name: pad0xb_J75WR[0xb]
     Offset: '0xdd'
     Size: '0xb'
     Type: char

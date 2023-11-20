@@ -8,7 +8,7 @@ ObjectCollectorInterface:
   Super: Interface
 TestCollector:
   Attributes:
-  - Name: pad0x60_JXTQA[0x60]
+  - Name: pad0x60_GHWMJ[0x60]
     Offset: '0x28'
     Size: '0x60'
     Type: char
@@ -18,7 +18,7 @@ TestCollector:
   Super: Object
 TestObjectForCollection:
   Attributes:
-  - Name: pad0x48_073VX[0x48]
+  - Name: pad0x48_AXTHE[0x48]
     Offset: '0x28'
     Size: '0x48'
     Type: char

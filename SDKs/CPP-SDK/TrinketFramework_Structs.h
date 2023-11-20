@@ -23,7 +23,7 @@ struct TrinketLoadout
 public:
 	TArray<struct TrinketLoadoutEntry>                           TrinketEntries;                                    // 0x0(0x10)
 	TArray<struct UniqueNetIdRepl>                               TrinketOwnerXUIDs;                                 // 0x10(0x10)
-	char                                                         pad0x28_BH4EC[0x28];                               // 0x20(0x28)
+	char                                                         pad0x28_IGV66[0x28];                               // 0x20(0x28)
 };
 
 
@@ -40,7 +40,7 @@ public:
 struct RemoveInteractingPlayerFromTrinketMountpointRpc
 {
 public:
-	char                                                         pad0x10_H80IC[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_CP00R[0x10];                               // 0x0(0x10)
 	struct NetSubObjectPtr                                       TrinketMountpointManager;                          // 0x10(0x14)
 	int                                                          MountpointIndex;                                   // 0x24(0x4)
 };
@@ -50,7 +50,7 @@ public:
 struct TrinketLoadoutUpdatedEvent
 {
 public:
-	char                                                         pad0x10_UCVJ5[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_ZQFF0[0x10];                               // 0x0(0x10)
 };
 
 
@@ -60,7 +60,7 @@ struct TrinketLoadoutModelEntry
 public:
 	struct FName                                                 EntitlementId;                                     // 0x0(0x8)
 	int                                                          LocationIndex;                                     // 0x8(0x4)
-	char                                                         pad0x4_5N2TH[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_DQEA9[0x4];                                 // 0xc(0x4)
 	struct FString                                               UserId;                                            // 0x10(0x10)
 };
 
@@ -77,7 +77,7 @@ public:
 struct EventTrinketSetReady
 {
 public:
-	char                                                         pad0x10_0AFLT[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_ANQTI[0x10];                               // 0x0(0x10)
 };
 
 
@@ -85,7 +85,7 @@ public:
 struct RequestTrinketChestItemInfoEvent
 {
 public:
-	char                                                         pad0x1_152CX[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_1J5IA[0x1];                                 // 0x0(0x1)
 };
 
 

@@ -13,7 +13,7 @@
     "ClassSize": "0x1e8",
     "Attributes": [
       {
-        "Name": "pad0x1c_6FON9[0x1c]",
+        "Name": "pad0x1c_WNUOY[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0x28"
@@ -49,7 +49,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x1a4_SMDMC[0x1a4]",
+        "Name": "pad0x1a4_T809V[0x1a4]",
         "Type": "char",
         "Size": "0x1a4",
         "Offset": "0x6c"
@@ -93,7 +93,7 @@
         "Offset": "0x5c8"
       },
       {
-        "Name": "pad0x4_AUR66[0x4]",
+        "Name": "pad0x4_4NRYM[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x5cc"
@@ -147,7 +147,7 @@
         "Offset": "0x620"
       },
       {
-        "Name": "pad0xc_1A89V[0xc]",
+        "Name": "pad0xc_DRXY3[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x624"
@@ -177,7 +177,7 @@
         "Offset": "0x680"
       },
       {
-        "Name": "pad0x10_JFT8Q[0x10]",
+        "Name": "pad0x10_N1PYB[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x690"
@@ -231,7 +231,7 @@
         "Offset": "0x6d8"
       },
       {
-        "Name": "pad0x7_LVDFQ[0x7]",
+        "Name": "pad0x7_JEEMA[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x6d9"
@@ -249,7 +249,7 @@
         "Offset": "0x6e8"
       },
       {
-        "Name": "pad0x30_RTECJ[0x30]",
+        "Name": "pad0x30_I5OFT[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x6f0"
@@ -270,7 +270,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_H4EHC[0x50]",
+        "Name": "pad0x50_0P0NF[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x3c8"
@@ -339,7 +339,7 @@
         "Offset": "0x51"
       },
       {
-        "Name": "pad0x6_WUJZV[0x6]",
+        "Name": "pad0x6_OUZMY[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x52"
@@ -407,7 +407,7 @@
         "Offset": "0x640"
       },
       {
-        "Name": "pad0x40_LFI4O[0x40]",
+        "Name": "pad0x40_5EFMR[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x650"
@@ -427,7 +427,7 @@
         "Offset": "0x690"
       },
       {
-        "Name": "pad0x10_3J3TR[0x10]",
+        "Name": "pad0x10_H9OIQ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x6a0"
@@ -441,7 +441,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_T68DO[0x50]",
+        "Name": "pad0x50_KP2U2[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x28"
@@ -473,7 +473,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_JRQL7[0x4]",
+        "Name": "pad0x4_HTP0J[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -493,7 +493,7 @@
         "Offset": "0x1b8"
       },
       {
-        "Name": "pad0x3_TY96U[0x3]",
+        "Name": "pad0x3_T7LGW[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1b9"
@@ -511,7 +511,7 @@
         "Offset": "0x1c0"
       },
       {
-        "Name": "pad0x4_R2KXX[0x4]",
+        "Name": "pad0x4_SPY20[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c4"
@@ -539,7 +539,7 @@
     "ClassSize": "0x388",
     "Attributes": [
       {
-        "Name": "pad0x8_4R8TH[0x8]",
+        "Name": "pad0x8_TZU4A[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -587,7 +587,7 @@
         "Offset": "0x400"
       },
       {
-        "Name": "pad0x4_L5A05[0x4]",
+        "Name": "pad0x4_8L8LR[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x404"
@@ -611,7 +611,7 @@
         "Offset": "0x418"
       },
       {
-        "Name": "pad0x4_YZ0QX[0x4]",
+        "Name": "pad0x4_SUEFI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x41c"
@@ -635,7 +635,7 @@
         "Offset": "0x440"
       },
       {
-        "Name": "pad0x70_K3YQK[0x70]",
+        "Name": "pad0x70_W7Y8P[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x450"
@@ -683,7 +683,7 @@
         "Offset": "0x4e0"
       },
       {
-        "Name": "pad0x3_EOJ8L[0x3]",
+        "Name": "pad0x3_WTAOU[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x4e1"
@@ -761,7 +761,7 @@
         "Offset": "0x69c"
       },
       {
-        "Name": "pad0x3_C66ON[0x3]",
+        "Name": "pad0x3_MB7JA[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x69d"
@@ -779,7 +779,7 @@
         "Offset": "0x6a1"
       },
       {
-        "Name": "pad0xae_TBE4F[0xae]",
+        "Name": "pad0xae_YLRBZ[0xae]",
         "Type": "char",
         "Size": "0xae",
         "Offset": "0x6a2"
@@ -805,7 +805,7 @@
         "Offset": "0x630"
       },
       {
-        "Name": "pad0x10_X5DEK[0x10]",
+        "Name": "pad0x10_ZWQ41[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x640"
@@ -844,7 +844,7 @@
         "Offset": "0x5d8"
       },
       {
-        "Name": "pad0x8_VIT5I[0x8]",
+        "Name": "pad0x8_9N7VO[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x5e8"
@@ -864,7 +864,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x18_KIZ59[0x18]",
+        "Name": "pad0x18_C5V0T[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x40"
@@ -888,7 +888,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_045XX[0x4]",
+        "Name": "pad0x4_THZUT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x9c"
@@ -938,7 +938,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_E7KPX[0x4]",
+        "Name": "pad0x4_0INJ1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -962,7 +962,7 @@
         "Offset": "0x70"
       },
       {
-        "Name": "pad0x4_1V4KK[0x4]",
+        "Name": "pad0x4_QHYQK[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x8c"
@@ -1028,7 +1028,7 @@
         "Offset": "0x71"
       },
       {
-        "Name": "pad0x2_FUY9O[0x2]",
+        "Name": "pad0x2_MQKRJ[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x72"
@@ -1058,7 +1058,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_UWIDM[0x4]",
+        "Name": "pad0x4_9UXJP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
@@ -1090,7 +1090,7 @@
         "Offset": "0x7c"
       },
       {
-        "Name": "pad0x4_OYFK7[0x4]",
+        "Name": "pad0x4_HZ5FW[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x8c"
@@ -1128,7 +1128,7 @@
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x3_TXMJU[0x3]",
+        "Name": "pad0x3_5292Q[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xe9"
@@ -1140,7 +1140,7 @@
         "Offset": "0xec"
       },
       {
-        "Name": "pad0x4_U4687[0x4]",
+        "Name": "pad0x4_4S7QJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xfc"

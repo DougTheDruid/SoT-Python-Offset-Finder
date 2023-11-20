@@ -28,9 +28,9 @@ class NudgeFromStormPolicy: public NudgePolicy
 {
 public:
 	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
-	char                                                         pad0x4_MHU7Z[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_3WHHM[0x4];                                 // 0xcc(0x4)
 	struct WeightedProbabilityRangeOfRanges                      WeightedTimers;                                    // 0xd0(0x30)
-	char                                                         pad0x58_ZPW5F[0x58];                               // 0x100(0x58)
+	char                                                         pad0x58_9CFSJ[0x58];                               // 0x100(0x58)
 };
 
 
@@ -39,10 +39,10 @@ class NudgeFromWaterLevelPolicy: public NudgePolicy
 {
 public:
 	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
-	char                                                         pad0x14_E20GT[0x14];                               // 0xcc(0x14)
+	char                                                         pad0x14_88JFB[0x14];                               // 0xcc(0x14)
 	float                                                        WaterLevelDifferenceBetweenUpdates;                // 0xe0(0x4)
 	float                                                        ZOffsetFromWaterToMountpoint;                      // 0xe4(0x4)
-	char                                                         pad0x8_FDLUD[0x8];                                 // 0xe8(0x8)
+	char                                                         pad0x8_F8OLF[0x8];                                 // 0xe8(0x8)
 };
 
 

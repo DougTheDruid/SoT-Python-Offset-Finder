@@ -11,7 +11,7 @@ class BP_Prompt_CosmeticPurchased_C: public BP_PromptCoordinator_Base_C
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x138(0x8)
-	char                                                         pad0x151_BN7XU[0x151];                             // 0x140(0x151)
+	char                                                         pad0x16c_4KL3S[0x16c];                             // 0x140(0x16c)
 	struct ObjectMessagingHandle                                 Handle_OfferPurchasedEvent;                        // 0x140(0x58)
 	struct ObjectMessagingHandle                                 Handle_ShopClosedEvent;                            // 0x198(0x58)
 	struct ObjectMessagingHandle                                 Handle_PlayerEntitlementUpdatedEvent;              // 0x1f0(0x58)

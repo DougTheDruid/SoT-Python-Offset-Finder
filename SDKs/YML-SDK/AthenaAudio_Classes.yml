@@ -50,7 +50,7 @@ AudioPortalComponent:
     Offset: '0x2ec'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_V9Z26[0x3]
+  - Name: pad0x3_XM8H8[0x3]
     Offset: '0x2ed'
     Size: '0x3'
     Type: char
@@ -74,7 +74,7 @@ AudioPortalComponent:
     Offset: '0x310'
     Size: '0x8'
     Type: class StoryDrivenAudioPortalDataAsset*
-  - Name: pad0x28_46WK1[0x28]
+  - Name: pad0x28_BR8MN[0x28]
     Offset: '0x318'
     Size: '0x28'
     Type: char
@@ -90,7 +90,7 @@ AudioPortalInterface:
   Super: Interface
 AudioPortalService:
   Attributes:
-  - Name: pad0xb0_IVZPE[0xb0]
+  - Name: pad0xb0_EH7CV[0xb0]
     Offset: '0x28'
     Size: '0xb0'
     Type: char
@@ -112,7 +112,7 @@ AudioSpaceComponent:
     Offset: '0x630'
     Size: '0x8'
     Type: class StoryDrivenAudioPortalDataAsset*
-  - Name: pad0x18_EOVCN[0x18]
+  - Name: pad0x18_SBD0T[0x18]
     Offset: '0x638'
     Size: '0x18'
     Type: char
@@ -136,7 +136,7 @@ MultiEmitter:
     Offset: '0x3c8'
     Size: '0x8'
     Type: class MultiEmitterRootComponent*
-  - Name: pad0x8_WREMV[0x8]
+  - Name: pad0x8_CO63T[0x8]
     Offset: '0x3d0'
     Size: '0x8'
     Type: char
@@ -150,7 +150,7 @@ StoryDrivenAudioPortalDataAsset:
     Offset: '0x28'
     Size: '0xc'
     Type: struct FeatureFlag
-  - Name: pad0x4_OV6RI[0x4]
+  - Name: pad0x4_XM5GS[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -192,7 +192,7 @@ WwiseEventsTriggerRegionComponent:
     Offset: '0x310'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x14_YWENA[0x14]
+  - Name: pad0x14_PJ8PX[0x14]
     Offset: '0x31c'
     Size: '0x14'
     Type: char
@@ -200,7 +200,7 @@ WwiseEventsTriggerRegionComponent:
     Offset: '0x330'
     Size: '0x8'
     Type: class Character*
-  - Name: pad0x38_FPF0W[0x38]
+  - Name: pad0x38_EH5FR[0x38]
     Offset: '0x338'
     Size: '0x38'
     Type: char

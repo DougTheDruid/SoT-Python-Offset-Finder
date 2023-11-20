@@ -11,7 +11,7 @@ struct EventAffectedByExplosion
 {
 public:
 	class UClass*                                                DamagerType;                                       // 0x0(0x8)
-	char                                                         pad0x10_FW1WX[0x10];                               // 0x8(0x10)
+	char                                                         pad0x10_A0QVX[0x10];                               // 0x8(0x10)
 };
 
 
@@ -27,7 +27,7 @@ public:
 struct EventOnExploded
 {
 public:
-	char                                                         pad0xc_ET8JN[0xc];                                 // 0x0(0xc)
+	char                                                         pad0xc_HQJ41[0xc];                                 // 0x0(0xc)
 };
 
 

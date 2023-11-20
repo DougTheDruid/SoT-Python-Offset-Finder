@@ -11,14 +11,14 @@ struct WeightedVolcanoProjectile
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
-	char                                                         pad0x4_5CX7E[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_VUEK4[0x4];                                 // 0x4(0x4)
 	class UClass*                                                ProjectileClass;                                   // 0x8(0x8)
 	float                                                        ProjectileSpeedMinAtInnerRadius;                   // 0x10(0x4)
 	float                                                        ProjectileSpeedMaxAtInnerRadius;                   // 0x14(0x4)
 	float                                                        ProjectileSpeedMinAtOuterRadius;                   // 0x18(0x4)
 	float                                                        ProjectileSpeedMaxAtOuterRadius;                   // 0x1c(0x4)
 	float                                                        ProjectileGravityScale;                            // 0x20(0x4)
-	char                                                         pad0x4_6TRMJ[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_4MOUV[0x4];                                 // 0x24(0x4)
 	struct WeightedProbabilityRangeOfRanges                      RotationRatePitch;                                 // 0x28(0x30)
 	struct WeightedProbabilityRangeOfRanges                      RotationRateRoll;                                  // 0x58(0x30)
 	struct WeightedProbabilityRangeOfRanges                      RotationRateYaw;                                   // 0x88(0x30)
@@ -32,10 +32,10 @@ struct VolcanoTarget
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
 	byte                                                         HitType;                                           // 0x1(0x1)
-	char                                                         pad0x6_O9PBQ[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x6_AV2II[0x6];                                 // 0x2(0x6)
 	class Actor*                                                 Target;                                            // 0x8(0x8)
 	int                                                          NumExtraShots;                                     // 0x10(0x4)
-	char                                                         pad0x4_4QO38[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_4DUZR[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -46,11 +46,11 @@ public:
 	float                                                        OnTarget;                                          // 0x0(0x4)
 	float                                                        NearMiss;                                          // 0x4(0x4)
 	float                                                        Random;                                            // 0x8(0x4)
-	char                                                         pad0x4_D6GKC[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_L295V[0x4];                                 // 0xc(0x4)
 	struct WeightedProbabilityRange                              OnTargetNumExtraShots;                             // 0x10(0x20)
 	struct WeightedProbabilityRange                              NearMissNumExtraShots;                             // 0x30(0x20)
 	float                                                        CoolDownDuration;                                  // 0x50(0x4)
-	char                                                         pad0x4_Y1OCV[0x4];                                 // 0x54(0x4)
+	char                                                         pad0x4_OQ20R[0x4];                                 // 0x54(0x4)
 };
 
 
@@ -59,7 +59,7 @@ struct VolcanoSetupDataEmbersEntry
 {
 public:
 	float                                                        MaxDistanceInMetres;                               // 0x0(0x4)
-	char                                                         pad0x4_FXCUA[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_4DGK9[0x4];                                 // 0x4(0x4)
 	class Object*                                                Effect;                                            // 0x8(0x8)
 };
 
@@ -156,7 +156,7 @@ struct VolcanoTargetCoolDown
 {
 public:
 	class Actor*                                                 Target;                                            // 0x0(0x8)
-	char                                                         pad0x8_REL44[0x8];                                 // 0x8(0x8)
+	char                                                         pad0x8_EQQ45[0x8];                                 // 0x8(0x8)
 };
 
 
@@ -175,7 +175,7 @@ struct VolcanoStateData
 {
 public:
 	byte                                                         State;                                             // 0x0(0x1)
-	char                                                         pad0x3_IXHAA[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_D025I[0x3];                                 // 0x1(0x3)
 	float                                                        StateDuration;                                     // 0x4(0x4)
 	float                                                        PercentageOfMaxTargetingRange;                     // 0x8(0x4)
 };

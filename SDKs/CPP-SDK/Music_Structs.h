@@ -37,7 +37,7 @@ public:
 struct MusicZoneDestroyedEvent
 {
 public:
-	char                                                         pad0x10_I8EUT[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_C4X4V[0x10];                               // 0x0(0x10)
 };
 
 
@@ -45,7 +45,7 @@ public:
 struct MusicZoneSpawnedEvent
 {
 public:
-	char                                                         pad0x10_7A87P[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_ANVHG[0x10];                               // 0x0(0x10)
 };
 
 

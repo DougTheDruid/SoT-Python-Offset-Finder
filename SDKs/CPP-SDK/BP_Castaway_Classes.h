@@ -6,15 +6,15 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x30 (Full Size[0x728] - InheritedSize[0x6f8]
+// Size 0x30 (Full Size[0x730] - InheritedSize[0x700]
 class BP_Castaway_C: public BP_Orderofsouls_TallTales_C
 {
 public:
-	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x6f8(0x8)
-	class CameraComponent*                                       NPCDialogCamera;                                   // 0x700(0x8)
-	class ActorPhasingComponent*                                 ActorPhasing;                                      // 0x708(0x8)
-	class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x710(0x8)
-	TArray<class WwiseEvent*>                                    AudioEvents;                                       // 0x718(0x10)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x700(0x8)
+	class CameraComponent*                                       NPCDialogCamera;                                   // 0x708(0x8)
+	class ActorPhasingComponent*                                 ActorPhasing;                                      // 0x710(0x8)
+	class AnimNotifyWwiseEmitterComponent*                       AnimNotifyWwiseEmitter;                            // 0x718(0x8)
+	TArray<class WwiseEvent*>                                    AudioEvents;                                       // 0x720(0x10)
 };
 
 

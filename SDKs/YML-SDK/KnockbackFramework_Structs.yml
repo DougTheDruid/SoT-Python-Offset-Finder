@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 KnockbackableInfo:
   Attributes:
-  - Name: pad0x20_5HHIN[0x20]
+  - Name: pad0x20_DOA4F[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char

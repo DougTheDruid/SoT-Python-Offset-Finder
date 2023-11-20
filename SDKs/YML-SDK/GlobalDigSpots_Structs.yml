@@ -21,7 +21,7 @@ GlobalDigSpotDefinition:
   ClassSize: '0x28'
 GlobalDigSpotPopupEvent:
   Attributes:
-  - Name: pad0x10_L5VAN[0x10]
+  - Name: pad0x10_ARVSL[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char

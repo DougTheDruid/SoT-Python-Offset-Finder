@@ -27,6 +27,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "RepairObjectActionStateId": {
+    "Super": "ActionStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "WoodRepairTypeId": {
     "Super": "RepairTypeId",
     "FullSize": "0x60",

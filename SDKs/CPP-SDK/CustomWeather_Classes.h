@@ -17,7 +17,7 @@ public:
 class CustomWeatherService: public Object
 {
 public:
-	char                                                         pad0x8_K3K1F[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_M1TCF[0x8];                                 // 0x28(0x8)
 	class World*                                                 World;                                             // 0x30(0x8)
 };
 

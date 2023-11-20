@@ -13,9 +13,9 @@ public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3c8(0x8)
 	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3d0(0x8)
 	bool                                                         IsCompleted;                                       // 0x3d8(0x1)
-	char                                                         pad0x7_LKBIP[0x7];                                 // 0x3d9(0x7)
+	char                                                         pad0x7_24AUN[0x7];                                 // 0x3d9(0x7)
 	TArray<class BP_PromptCoordinator_Base_C*>                   PromptCoordinators;                                // 0x3e0(0x10)
-	char                                                         pad0x10_95OVK[0x10];                               // 0x3f0(0x10)
+	char                                                         pad0x10_CI5M8[0x10];                               // 0x3f0(0x10)
 };
 
 

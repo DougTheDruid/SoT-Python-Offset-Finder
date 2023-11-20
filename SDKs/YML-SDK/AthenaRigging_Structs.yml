@@ -60,7 +60,7 @@ PulleyVisualParams:
   ClassSize: '0x10'
 RiggingSystemLine:
   Attributes:
-  - Name: pad0x10_QT2SV[0x10]
+  - Name: pad0x10_YI1OL[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -98,7 +98,7 @@ RiggingSystemLineParams:
     Offset: '0x5c'
     Size: '0x18'
     Type: struct RopeCatenaryShapeParams
-  - Name: pad0x4_66Z96[0x4]
+  - Name: pad0x4_SN6JN[0x4]
     Offset: '0x74'
     Size: '0x4'
     Type: char
@@ -155,7 +155,7 @@ RiggingSystemPulleyParams:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_83J9D[0x4]
+  - Name: pad0x4_MMQ7I[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -167,7 +167,7 @@ RiggingSystemPulleyParams:
     Offset: '0x38'
     Size: '0x14'
     Type: struct RiggingSystemPulleyAttachmentParams
-  - Name: pad0x4_WTTIG[0x4]
+  - Name: pad0x4_W8YUV[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -182,7 +182,7 @@ RopeCatenaryDynamicsParams:
     Offset: '0x4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_J5MT6[0x3]
+  - Name: pad0x3_U6M3M[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char
@@ -268,7 +268,7 @@ RopeStyleParams:
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_1WC90[0x4]
+  - Name: pad0x4_Y93DH[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char

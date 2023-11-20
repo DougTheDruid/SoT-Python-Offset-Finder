@@ -11,7 +11,7 @@ class CommunityEmissaryFlagComponent: public StaticMeshComponent
 {
 public:
 	class CommunityEmissaryFlagData*                             CommunityEmissaryDataAsset;                        // 0x620(0x8)
-	char                                                         pad0x28_2SZX6[0x28];                               // 0x628(0x28)
+	char                                                         pad0x28_FQ5FP[0x28];                               // 0x628(0x28)
 };
 
 

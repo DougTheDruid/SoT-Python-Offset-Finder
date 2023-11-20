@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 MovieSceneAkAudioEventTemplate:
   Attributes:
-  - Name: pad0x18_W4KZU[0x18]
+  - Name: pad0x18_52S4E[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -24,7 +24,7 @@ MovieSceneAkAudioRTPCSectionData:
   ClassSize: '0x88'
 MovieSceneAkAudioRTPCTemplate:
   Attributes:
-  - Name: pad0x18_KJGIG[0x18]
+  - Name: pad0x18_9NCZZ[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -51,7 +51,7 @@ MultiEmitterData:
     Offset: '0x18'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_6XLYM[0x4]
+  - Name: pad0x4_F88MC[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -114,7 +114,7 @@ WwiseNativeEmitterPoolDensityParams:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_BGX15[0x7]
+  - Name: pad0x7_5BKR1[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char

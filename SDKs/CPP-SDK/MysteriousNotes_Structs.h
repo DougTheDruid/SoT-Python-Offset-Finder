@@ -26,7 +26,7 @@ public:
 struct EventListenForCinematicEndEvent
 {
 public:
-	char                                                         pad0x1_MDOIR[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_S3HAT[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -36,7 +36,7 @@ struct EventTriggerMysteriousNotesPopup
 public:
 	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
 	bool                                                         CinematicSkipped;                                  // 0x8(0x1)
-	char                                                         pad0x7_C4DP7[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_G55BF[0x7];                                 // 0x9(0x7)
 };
 
 
@@ -71,7 +71,7 @@ public:
 struct EventNotesUpdated
 {
 public:
-	char                                                         pad0x1_CH7LM[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_C47FF[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -96,7 +96,7 @@ public:
 struct EventMysteriousNoteContentUpdated
 {
 public:
-	char                                                         pad0x10_OHQKJ[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_DUA70[0x10];                               // 0x0(0x10)
 };
 
 
@@ -104,7 +104,7 @@ public:
 struct EventMysteriousNoteSettingsLoaded
 {
 public:
-	char                                                         pad0x1_448VA[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_TK95E[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -112,7 +112,7 @@ public:
 struct EventMysteriousNoteCustomContentUpdate
 {
 public:
-	char                                                         pad0x1_K7514[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_IQ6ES[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -120,7 +120,7 @@ public:
 struct EventMysteriousNoteRemoved
 {
 public:
-	char                                                         pad0x10_X5LS1[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_L14VC[0x10];                               // 0x0(0x10)
 };
 
 
@@ -131,7 +131,7 @@ public:
 	struct Guid                                                  NoteId;                                            // 0x0(0x10)
 	bool                                                         NoteRead;                                          // 0x10(0x1)
 	bool                                                         ShowNoteAnimation;                                 // 0x11(0x1)
-	char                                                         pad0x2_OFS7W[0x2];                                 // 0x12(0x2)
+	char                                                         pad0x2_QGI60[0x2];                                 // 0x12(0x2)
 };
 
 
@@ -194,7 +194,7 @@ public:
 	struct FString                                               LocalisedTitle;                                    // 0x10(0x10)
 	struct FString                                               LocalisedBody;                                     // 0x20(0x10)
 	struct FString                                               NoteType;                                          // 0x30(0x10)
-	char                                                         pad0x8_9UO17[0x8];                                 // 0x40(0x8)
+	char                                                         pad0x8_P8ZLT[0x8];                                 // 0x40(0x8)
 };
 
 
@@ -203,7 +203,7 @@ struct ClientNoteData
 {
 public:
 	bool                                                         NotifyArrival;                                     // 0x0(0x1)
-	char                                                         pad0x7_EBDD4[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_1CRO8[0x7];                                 // 0x1(0x7)
 	TArray<struct MysteriousNoteInfo>                            PendingNotes;                                      // 0x8(0x10)
 };
 

@@ -24,9 +24,9 @@ public:
 class AreaOfEffectHealAIAbility: public AthenaAIAbility
 {
 public:
-	char                                                         pad0x10_PY5IS[0x10];                               // 0x78(0x10)
+	char                                                         pad0x10_RX2Q3[0x10];                               // 0x78(0x10)
 	class Actor*                                                 HealAreaOfEffectActor;                             // 0x88(0x8)
-	char                                                         pad0x10_XTGCG[0x10];                               // 0x90(0x10)
+	char                                                         pad0x10_7E1VJ[0x10];                               // 0x90(0x10)
 };
 
 
@@ -70,10 +70,10 @@ public:
 	class ParticleSystem*                                        VFXAsset;                                          // 0xc8(0x8)
 	struct FName                                                 VfxSocketName;                                     // 0xd0(0x8)
 	float                                                        VFXDuration;                                       // 0xd8(0x4)
-	char                                                         pad0x4_75CPV[0x4];                                 // 0xdc(0x4)
+	char                                                         pad0x4_2SDL1[0x4];                                 // 0xdc(0x4)
 	class ParticleSystemComponent*                               SpawnedVFXSystem;                                  // 0xe0(0x8)
 	bool                                                         IsVFXActive;                                       // 0xe8(0x1)
-	char                                                         pad0x2f_XUKCB[0x2f];                               // 0xe9(0x2f)
+	char                                                         pad0x2f_K3L01[0x2f];                               // 0xe9(0x2f)
 };
 
 
@@ -132,14 +132,14 @@ public:
 class ElectricShieldBuffComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_D966V[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_GK1F3[0x8];                                 // 0xc8(0x8)
 	class ParticleSystem*                                        ShieldVFXAsset;                                    // 0xd0(0x8)
 	struct FName                                                 VfxSocketName;                                     // 0xd8(0x8)
 	class WwiseEvent*                                            StartAudioLoopEvent;                               // 0xe0(0x8)
 	class WwiseEvent*                                            StopAudioLoopEvent;                                // 0xe8(0x8)
 	class ParticleSystemComponent*                               ShieldEffectComponent;                             // 0xf0(0x8)
 	bool                                                         IsShieldActive;                                    // 0xf8(0x1)
-	char                                                         pad0xd7_E5UZT[0xd7];                               // 0xf9(0xd7)
+	char                                                         pad0xd7_XF5DU[0xd7];                               // 0xf9(0xd7)
 };
 
 
@@ -161,7 +161,7 @@ public:
 class MeleeAIAbility: public AthenaAIAbility
 {
 public:
-	char                                                         pad0x8_MLZIA[0x8];                                 // 0x78(0x8)
+	char                                                         pad0x8_F1M6R[0x8];                                 // 0x78(0x8)
 };
 
 
@@ -220,10 +220,10 @@ class BullRushAIAbilityParams: public MeleeChargeAIAbilityParams
 {
 public:
 	float                                                        StaticCollisionWarmup;                             // 0xe0(0x4)
-	char                                                         pad0x4_SF74N[0x4];                                 // 0xe4(0x4)
+	char                                                         pad0x4_ZEFDT[0x4];                                 // 0xe4(0x4)
 	TArray<class EnvQuery*>                                      ValidatorEQSystems;                                // 0xe8(0x10)
 	float                                                        TimeBetweenCanExecuteChecks;                       // 0xf8(0x4)
-	char                                                         pad0x4_GXNWT[0x4];                                 // 0xfc(0x4)
+	char                                                         pad0x4_M6LDF[0x4];                                 // 0xfc(0x4)
 };
 
 
@@ -232,7 +232,7 @@ class BullRushAIAbility: public MeleeChargeAIAbility
 {
 public:
 	class World*                                                 CachedWorld;                                       // 0x98(0x8)
-	char                                                         pad0x18_16KDG[0x18];                               // 0xa0(0x18)
+	char                                                         pad0x18_V9T4Z[0x18];                               // 0xa0(0x18)
 };
 
 
@@ -261,7 +261,7 @@ public:
 class SporeExposureComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x38_UKAQW[0x38];                               // 0xc8(0x38)
+	char                                                         pad0x38_62CNK[0x38];                               // 0xc8(0x38)
 };
 
 
@@ -277,7 +277,7 @@ class StatusResponseActivateElectricShield: public StatusResponse
 {
 public:
 	float                                                        Duration;                                          // 0x30(0x4)
-	char                                                         pad0x4_ZF3TY[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_CODEI[0x4];                                 // 0x34(0x4)
 };
 
 

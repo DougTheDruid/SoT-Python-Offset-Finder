@@ -14,7 +14,7 @@ public:
 	TArray<struct MemoryVisualiserStat>                          CategoryStats;                                     // 0x10(0x10)
 	TArray<struct MemoryVisualiserClass>                         CategoryClasses;                                   // 0x20(0x10)
 	bool                                                         CollectOnServer;                                   // 0x30(0x1)
-	char                                                         pad0x3_22961[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_7M8II[0x3];                                 // 0x31(0x3)
 	float                                                        XboxOneBudgetMB;                                   // 0x34(0x4)
 	float                                                        XboxOneSBudgetMB;                                  // 0x38(0x4)
 	float                                                        XboxOneXBudgetMB;                                  // 0x3c(0x4)
@@ -23,7 +23,7 @@ public:
 	float                                                        PCHighSpecBudgetMB;                                // 0x48(0x4)
 	float                                                        PCUltraSpecBudgetMB;                               // 0x4c(0x4)
 	float                                                        MemoryUsageMB;                                     // 0x50(0x4)
-	char                                                         pad0x4_FEPK8[0x4];                                 // 0x54(0x4)
+	char                                                         pad0x4_CAZFW[0x4];                                 // 0x54(0x4)
 };
 
 
@@ -33,10 +33,10 @@ struct MemoryVisualiserClass
 public:
 	class UClass*                                                ClassType;                                         // 0x0(0x8)
 	byte                                                         MemoryGatheringMode;                               // 0x8(0x1)
-	char                                                         pad0x7_ESPBQ[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_UUBTC[0x7];                                 // 0x9(0x7)
 	struct FString                                               DisplayName;                                       // 0x10(0x10)
 	float                                                        MemoryUsageMB;                                     // 0x20(0x4)
-	char                                                         pad0x4_Q6R9C[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_PA3OE[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -47,7 +47,7 @@ public:
 	struct FName                                                 StatName;                                          // 0x0(0x8)
 	struct FString                                               DisplayName;                                       // 0x8(0x10)
 	float                                                        MemoryUsageMB;                                     // 0x18(0x4)
-	char                                                         pad0x4_J0S0G[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_X8HB5[0x4];                                 // 0x1c(0x4)
 };
 
 

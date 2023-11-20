@@ -1,15 +1,15 @@
 {
   "BP_AthenaHUD_C": {
     "Super": "AthenaHUD",
-    "FullSize": "0x818",
-    "InheritedSize": "0x810",
+    "FullSize": "0x830",
+    "InheritedSize": "0x828",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x810"
+        "Offset": "0x828"
       }
     ]
   },

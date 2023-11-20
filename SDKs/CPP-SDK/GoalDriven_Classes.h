@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class GoalDrivenAIController: public AIController
 {
 public:
-	char                                                         pad0xd0_FBQ8J[0xd0];                               // 0x4b8(0xd0)
+	char                                                         pad0xd0_PAJTO[0xd0];                               // 0x4b8(0xd0)
 };
 
 
@@ -18,7 +18,7 @@ public:
 class GoalDrivenCharacter: public CharacterWithActionStateMachine
 {
 public:
-	char                                                         pad0x10_QI7G8[0x10];                               // 0x600(0x10)
+	char                                                         pad0x10_0ZH4D[0x10];                               // 0x600(0x10)
 };
 
 
@@ -26,7 +26,7 @@ public:
 class GoalDrivenCharacterAggregationComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x30_10VQR[0x30];                               // 0xc8(0x30)
+	char                                                         pad0x30_83AXM[0x30];                               // 0xc8(0x30)
 };
 
 
@@ -44,24 +44,24 @@ public:
 };
 
 
-// Size 0x80 (Full Size[0x610] - InheritedSize[0x590]
+// Size 0x70 (Full Size[0x600] - InheritedSize[0x590]
 class GoalDrivenCharacterMovementComponent: public CharacterMovementComponent
 {
 public:
-	char                                                         pad0x10_9V9EP[0x10];                               // 0x590(0x10)
+	char                                                         pad0x10_J46E6[0x10];                               // 0x590(0x10)
 	bool                                                         CreateDisturbance;                                 // 0x5a0(0x1)
-	char                                                         pad0x3_D4MMA[0x3];                                 // 0x5a1(0x3)
+	char                                                         pad0x3_O5VNL[0x3];                                 // 0x5a1(0x3)
 	float                                                        DisturbanceSize;                                   // 0x5a4(0x4)
 	float                                                        DisturbanceVelocityScale;                          // 0x5a8(0x4)
 	bool                                                         AdjustMeshPositionOnClient;                        // 0x5ac(0x1)
-	char                                                         pad0x3_IBQE2[0x3];                                 // 0x5ad(0x3)
+	char                                                         pad0x3_00WHS[0x3];                                 // 0x5ad(0x3)
 	float                                                        MeshAdjustmentMaximumDistance;                     // 0x5b0(0x4)
 	float                                                        MeshAdjustmentInterpolationRate;                   // 0x5b4(0x4)
 	float                                                        DesiredWalkSpeed;                                  // 0x5b8(0x4)
 	float                                                        DesiredRunSpeed;                                   // 0x5bc(0x4)
 	float                                                        MinimumMovementSpeedForRunAnimation;               // 0x5c0(0x4)
 	float                                                        MinimumDistanceFromTargetToRun;                    // 0x5c4(0x4)
-	char                                                         pad0x48_F5VFQ[0x48];                               // 0x5c8(0x48)
+	char                                                         pad0x38_WOK8P[0x38];                               // 0x5c8(0x38)
 };
 
 
@@ -78,7 +78,7 @@ class GoalDrivenPathFollowingComponent: public PathFollowingComponent
 public:
 	float                                                        ReachedGoalMaxSpeedToSlowDistanceFactor;           // 0x2b8(0x4)
 	float                                                        MinSlowDownSpeed;                                  // 0x2bc(0x4)
-	char                                                         pad0x8_SMM7H[0x8];                                 // 0x2c0(0x8)
+	char                                                         pad0x8_FLA0Y[0x8];                                 // 0x2c0(0x8)
 };
 
 

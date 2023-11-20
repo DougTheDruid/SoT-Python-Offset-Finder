@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 DrawDebugService:
   Attributes:
-  - Name: pad0x8_N3ULG[0x8]
+  - Name: pad0x8_WW9G7[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -38,7 +38,7 @@ DrawDebugService:
     Offset: '0x440'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7f_2M3AG[0x7f]
+  - Name: pad0x7f_SZGD1[0x7f]
     Offset: '0x441'
     Size: '0x7f'
     Type: char
@@ -82,7 +82,7 @@ Videprinter:
     Offset: '0x3dc'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0xc_A505O[0xc]
+  - Name: pad0xc_WQJVP[0xc]
     Offset: '0x3e4'
     Size: '0xc'
     Type: char
@@ -92,7 +92,7 @@ Videprinter:
   Super: Actor
 VideprinterService:
   Attributes:
-  - Name: pad0x8_7U1RM[0x8]
+  - Name: pad0x8_TTGCE[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char

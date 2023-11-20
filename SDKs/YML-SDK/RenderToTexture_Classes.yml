@@ -24,7 +24,7 @@ RenderToTextureSceneDetails:
     Offset: '0x50'
     Size: '0x8'
     Type: class TextureRenderTarget2D*
-  - Name: pad0x50_44MGQ[0x50]
+  - Name: pad0x50_O0VY9[0x50]
     Offset: '0x58'
     Size: '0x50'
     Type: char

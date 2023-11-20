@@ -1,9 +1,9 @@
 {
   "BP_GuildMastPlaque_C": {
     "Super": "GuildPlaque",
-    "FullSize": "0x740",
+    "FullSize": "0x738",
     "InheritedSize": "0x4f8",
-    "ClassSize": "0x248",
+    "ClassSize": "0x240",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
@@ -30,154 +30,148 @@
         "Offset": "0x548"
       },
       {
-        "Name": "bevelMat_MID",
-        "Type": "class MaterialInstanceDynamic*",
-        "Size": "0x8",
-        "Offset": "0x550"
-      },
-      {
         "Name": "TextCanvasWidth",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x558"
+        "Offset": "0x550"
       },
       {
         "Name": "TextCanvasHeight",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x55c"
+        "Offset": "0x554"
       },
       {
         "Name": "Canvas",
         "Type": "class CanvasWorldMapComponent*",
         "Size": "0x8",
-        "Offset": "0x560"
+        "Offset": "0x558"
       },
       {
         "Name": "guildRank",
         "Type": "TArray<Str guildRank>",
         "Size": "0x10",
-        "Offset": "0x568"
+        "Offset": "0x560"
       },
       {
         "Name": "bevelIntensity",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x578"
+        "Offset": "0x570"
       },
       {
         "Name": "FeatureToggle",
         "Type": "struct FeatureFlag",
         "Size": "0xc",
-        "Offset": "0x57c"
+        "Offset": "0x574"
       },
       {
         "Name": "TextBevel_MID",
         "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0x648"
+        "Offset": "0x640"
       },
       {
         "Name": "IconBevel_MID",
         "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0x650"
+        "Offset": "0x648"
       },
       {
         "Name": "RankBevel_MID",
         "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0x658"
+        "Offset": "0x650"
       },
       {
         "Name": "RankRenderTarget",
         "Type": "class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
-        "Offset": "0x660"
+        "Offset": "0x658"
       },
       {
         "Name": "TextRenderTarget",
         "Type": "class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
-        "Offset": "0x668"
+        "Offset": "0x660"
       },
       {
         "Name": "RankTextWidth",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x670"
+        "Offset": "0x668"
       },
       {
         "Name": "RankTextHeight",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x674"
+        "Offset": "0x66c"
       },
       {
         "Name": "BevelTextRenderTarget",
         "Type": "class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
-        "Offset": "0x678"
+        "Offset": "0x670"
       },
       {
         "Name": "IconRenderTarget",
         "Type": "class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
-        "Offset": "0x680"
+        "Offset": "0x678"
       },
       {
         "Name": "BevelRankRenderTarget",
         "Type": "class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
-        "Offset": "0x688"
+        "Offset": "0x680"
       },
       {
         "Name": "BevelIconRenderTarget",
         "Type": "class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
-        "Offset": "0x690"
+        "Offset": "0x688"
       },
       {
         "Name": "Gold Colour",
         "Type": "struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x698"
+        "Offset": "0x690"
       },
       {
         "Name": "Silver Colour",
         "Type": "struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x6a8"
+        "Offset": "0x6a0"
       },
       {
         "Name": "Bronze Colour",
         "Type": "struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x6b8"
+        "Offset": "0x6b0"
       },
       {
         "Name": "TextColour",
         "Type": "struct LinearColor",
         "Size": "0x10",
-        "Offset": "0x6c8"
+        "Offset": "0x6c0"
       },
       {
         "Name": "IconColourFollowsMedallion",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x6d8"
+        "Offset": "0x6d0"
       },
       {
-        "Name": "pad0x7_A7D07[0x7]",
+        "Name": "pad0x7_4XOOO[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x6d9"
+        "Offset": "0x6d1"
       },
       {
-        "Name": "pad0x60_C1V4X[0x60]",
+        "Name": "pad0x60_9A8GE[0x60]",
         "Type": "char",
         "Size": "0x60",
-        "Offset": "0x6e0"
+        "Offset": "0x6d8"
       }
     ]
   },

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class CustomMeshComponent: public MeshComponent
 {
 public:
-	char                                                         pad0x10_QAM0S[0x10];                               // 0x5d0(0x10)
+	char                                                         pad0x10_08ER7[0x10];                               // 0x5d0(0x10)
 };
 
 

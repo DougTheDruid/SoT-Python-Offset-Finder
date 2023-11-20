@@ -8,7 +8,7 @@ DamageablePartsInterface:
   Super: Interface
 GenericShipDamageablePart:
   Attributes:
-  - Name: pad0x8_JR1QT[0x8]
+  - Name: pad0x8_6OWST[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -16,7 +16,7 @@ GenericShipDamageablePart:
     Offset: '0x3d0'
     Size: '0x8'
     Type: class ShipDamageableComponent*
-  - Name: pad0x10_7LMKB[0x10]
+  - Name: pad0x10_FQJEU[0x10]
     Offset: '0x3d8'
     Size: '0x10'
     Type: char
@@ -54,7 +54,7 @@ ShipPartsDamageTrackerComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_4CIJM[0x4]
+  - Name: pad0x4_EZQ83[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
@@ -68,11 +68,11 @@ ShipRestorationSettings:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_MZ60S[0x4]
+  - Name: pad0x4_0GP6Z[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
-  - Name: pad0x8_J64CV[0x8]
+  - Name: pad0x8_5V6ZT[0x8]
     Offset: '0x40'
     Size: '0x8'
     Type: char

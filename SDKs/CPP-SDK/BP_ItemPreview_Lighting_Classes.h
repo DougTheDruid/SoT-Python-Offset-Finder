@@ -17,7 +17,7 @@ public:
 	class SpotLightComponent*                                    SpotLight;                                         // 0x3e8(0x8)
 	class PostProcessComponent*                                  PostProcess;                                       // 0x3f0(0x8)
 	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3f8(0x8)
-	char                                                         pad0x20_37LKX[0x20];                               // 0x400(0x20)
+	char                                                         pad0x20_I17L1[0x20];                               // 0x400(0x20)
 };
 
 

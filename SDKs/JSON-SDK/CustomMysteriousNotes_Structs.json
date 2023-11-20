@@ -26,7 +26,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_E9HVX[0x3]",
+        "Name": "pad0x3_FQIML[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -40,7 +40,7 @@
     ]
   },
   "CreateMysteriousNoteGameServerRequestModel": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "PlayerNetGUID",
@@ -49,7 +49,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_MGYO4[0x4]",
+        "Name": "pad0x4_AUSWP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -71,6 +71,18 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
+      },
+      {
+        "Name": "AvailableInSaferSeas",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x7_OW89E[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x39"
       }
     ]
   },

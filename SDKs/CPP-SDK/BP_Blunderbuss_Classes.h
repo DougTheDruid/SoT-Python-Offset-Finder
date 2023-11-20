@@ -13,7 +13,7 @@ public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xb60(0x8)
 	class PostProcessComponent*                                  PostProcess;                                       // 0xb68(0x8)
 	byte                                                         sfx relationship;                                  // 0xb70(0x1)
-	char                                                         pad0x7_O66XM[0x7];                                 // 0xb71(0x7)
+	char                                                         pad0x7_PO6IJ[0x7];                                 // 0xb71(0x7)
 	class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0xb78(0x8)
 	class Object*                                                FiringVFX3rdPerson;                                // 0xb80(0x8)
 	class WwiseEvent*                                            Blunderbuss Firing sfx 3rd person;                 // 0xb88(0x8)

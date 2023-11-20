@@ -11,14 +11,14 @@ class BP_Component_Tutorial2019_C: public Tutorial2019ContextualDelegatingCompon
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xd8(0x8)
-	char                                                         pad0x1b0_7880N[0x1b0];                             // 0xe0(0x1b0)
+	char                                                         pad0x1cb_NE5X6[0x1cb];                             // 0xe0(0x1cb)
 	TArray<Assetclass GoldHoarders>                              GoldHoarders;                                      // 0xe0(0x10)
 	TArray<struct Vector>                                        GoldHoarderLocations;                              // 0xf0(0x10)
 	blueprintgeneratedclass BP_Prompt_CTPurchaseVoyageSequence_C* GoToVendorPromptObject;                            // 0x100(0x8)
 	TArray<Assetclass NPCBlacklist>                              NPCBlacklist;                                      // 0x108(0x10)
 	TArray<struct FName>                                         OutpostNames;                                      // 0x118(0x10)
 	bool                                                         GoldHoarderOnRepPrerequiste;                       // 0x128(0x1)
-	char                                                         pad0x7_QUEUM[0x7];                                 // 0x129(0x7)
+	char                                                         pad0x7_WVJNQ[0x7];                                 // 0x129(0x7)
 	struct ObjectMessagingHandle                                 Handle_PlayerFinishedSpawning;                     // 0x130(0x58)
 };
 

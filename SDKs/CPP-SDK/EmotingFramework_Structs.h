@@ -16,11 +16,11 @@ public:
 	float                                                        DelayBeforeAllowingExit;                           // 0x78(0x4)
 	float                                                        VerticalOffsetFactorWhenZoomed;                    // 0x7c(0x4)
 	bool                                                         HideNameplate;                                     // 0x80(0x1)
-	char                                                         pad0x7_4ZVQ2[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_5LOYO[0x7];                                 // 0x81(0x7)
 	class EmotePropData*                                         EmotePropDataAsset;                                // 0x88(0x8)
 	bool                                                         CanPlayInSuccession;                               // 0x90(0x1)
 	bool                                                         ShowDescriptionInTextChat;                         // 0x91(0x1)
-	char                                                         pad0x6_28BJA[0x6];                                 // 0x92(0x6)
+	char                                                         pad0x6_IQLXW[0x6];                                 // 0x92(0x6)
 	class AthenaSpringArmComponentParams*                        CustomSpringArmParamsAsset;                        // 0x98(0x8)
 };
 
@@ -39,11 +39,11 @@ struct EmotePropRandomObjectResult
 public:
 	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
 	bool                                                         HasTransformValue;                                 // 0x8(0x1)
-	char                                                         pad0x7_RK3S1[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_PYG02[0x7];                                 // 0x9(0x7)
 	struct Transform                                             Transform;                                         // 0x10(0x30)
 	struct FName                                                 TextureParameterName;                              // 0x40(0x8)
 	int                                                          TextureParameterValue;                             // 0x48(0x4)
-	char                                                         pad0x4_IKFH4[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_STOK8[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -64,7 +64,7 @@ struct EventEmoteEndRequested
 public:
 	struct FName                                                 EmoteIdentifier;                                   // 0x0(0x8)
 	bool                                                         EndForcedEmote;                                    // 0x8(0x1)
-	char                                                         pad0x3_DWJ74[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_KVRGV[0x3];                                 // 0x9(0x3)
 };
 
 
@@ -72,7 +72,7 @@ public:
 struct EventEndEmoteAnimation
 {
 public:
-	char                                                         pad0x1_SDHHA[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_8GDGI[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -89,7 +89,7 @@ struct EventEmoteCompleted
 {
 public:
 	struct FName                                                 EmoteName;                                         // 0x0(0x8)
-	char                                                         pad0x4_SWVHI[0x4];                                 // 0x8(0x4)
+	char                                                         pad0x4_S1F3I[0x4];                                 // 0x8(0x4)
 };
 
 
@@ -108,7 +108,7 @@ public:
 	struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
 	struct FName                                                 ForcedEmoteIdentifier;                             // 0xa0(0x8)
 	bool                                                         ForcedEmote;                                       // 0xa8(0x1)
-	char                                                         pad0x7_Z8QRW[0x7];                                 // 0xa9(0x7)
+	char                                                         pad0x7_S2WFA[0x7];                                 // 0xa9(0x7)
 };
 
 
@@ -116,7 +116,7 @@ public:
 struct EventDisableLookAtEmoteCamera
 {
 public:
-	char                                                         pad0x1_7G61Y[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_9TFS6[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -124,7 +124,7 @@ public:
 struct EventEnableLookAtEmoteCamera
 {
 public:
-	char                                                         pad0x8_ATERI[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_7H8DO[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -146,7 +146,7 @@ public:
 	struct Transform                                             Transform;                                         // 0x10(0x30)
 	struct FString                                               TextureParameterName;                              // 0x40(0x10)
 	int                                                          TextureParameterValue;                             // 0x50(0x4)
-	char                                                         pad0xc_OBD83[0xc];                                 // 0x54(0xc)
+	char                                                         pad0xc_9XRDD[0xc];                                 // 0x54(0xc)
 };
 
 

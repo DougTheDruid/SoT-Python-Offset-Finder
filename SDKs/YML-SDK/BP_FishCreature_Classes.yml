@@ -14,7 +14,7 @@ BP_FishCreature_C:
     Offset: '0x3d1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_P1F0H[0x2]
+  - Name: pad0x2_VG99A[0x2]
     Offset: '0x3d2'
     Size: '0x2'
     Type: char
@@ -50,7 +50,7 @@ BP_FishCreature_C:
     Offset: '0x404'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_NP01N[0x3]
+  - Name: pad0x3_DLB8N[0x3]
     Offset: '0x405'
     Size: '0x3'
     Type: char
@@ -62,11 +62,11 @@ BP_FishCreature_C:
     Offset: '0x40c'
     Size: '0x4'
     Type: float
-  - Name: mud
+  - Name: Mud
     Offset: '0x410'
     Size: '0x4'
     Type: float
-  - Name: ShoalSpeed
+  - Name: shoalSpeed
     Offset: '0x414'
     Size: '0x4'
     Type: float
@@ -78,7 +78,7 @@ BP_FishCreature_C:
     Offset: '0x420'
     Size: '0x4'
     Type: float
-  - Name: FishSpeed
+  - Name: fishSpeed
     Offset: '0x424'
     Size: '0x4'
     Type: float
@@ -138,7 +138,7 @@ BP_FishCreature_C:
     Offset: '0x498'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_LX99O[0x4]
+  - Name: pad0x4_J6XT1[0x4]
     Offset: '0x49c'
     Size: '0x4'
     Type: char
@@ -150,7 +150,7 @@ BP_FishCreature_C:
     Offset: '0x4b0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_Y3X31[0x4]
+  - Name: pad0x4_I1L7C[0x4]
     Offset: '0x4b4'
     Size: '0x4'
     Type: char

@@ -62,7 +62,7 @@ class BTTask_AttachToHangout: public BTTask_BlackboardBase
 {
 public:
 	float                                                        TaskDuration;                                      // 0x88(0x4)
-	char                                                         pad0x4_QKNBA[0x4];                                 // 0x8c(0x4)
+	char                                                         pad0x4_KWPC9[0x4];                                 // 0x8c(0x4)
 };
 
 
@@ -78,7 +78,7 @@ class BTTask_DetachFromHangout: public BTTask_BlackboardBase
 {
 public:
 	float                                                        TaskDuration;                                      // 0x88(0x4)
-	char                                                         pad0x4_2Y7KB[0x4];                                 // 0x8c(0x4)
+	char                                                         pad0x4_96PZM[0x4];                                 // 0x8c(0x4)
 };
 
 
@@ -117,7 +117,7 @@ public:
 class BTTask_ReactToOwner: public BTTaskNode
 {
 public:
-	char                                                         pad0x8_BQVD5[0x8];                                 // 0x60(0x8)
+	char                                                         pad0x8_OPN9R[0x8];                                 // 0x60(0x8)
 };
 
 
@@ -127,10 +127,10 @@ class BTTask_ReactToThreat: public BTTaskNode
 public:
 	byte                                                         ReactAnimState;                                    // 0x60(0x1)
 	bool                                                         ChangeAnimationAfterWaitTime;                      // 0x61(0x1)
-	char                                                         pad0x2_V8EBE[0x2];                                 // 0x62(0x2)
+	char                                                         pad0x2_OSW35[0x2];                                 // 0x62(0x2)
 	float                                                        ReactAnimTime;                                     // 0x64(0x4)
 	byte                                                         AfterReactAnimState;                               // 0x68(0x1)
-	char                                                         pad0x7_JZ2PV[0x7];                                 // 0x69(0x7)
+	char                                                         pad0x7_TPTF9[0x7];                                 // 0x69(0x7)
 };
 
 
@@ -155,9 +155,9 @@ class BTTask_SelectPetHangoutSpot: public BTTask_BlackboardBase
 {
 public:
 	bool                                                         NeedForceId;                                       // 0x88(0x1)
-	char                                                         pad0x3_9JVHD[0x3];                                 // 0x89(0x3)
+	char                                                         pad0x3_QQB8P[0x3];                                 // 0x89(0x3)
 	struct HangoutSpotId                                         ForcedId;                                          // 0x8c(0x8)
-	char                                                         pad0x4_8O550[0x4];                                 // 0x94(0x4)
+	char                                                         pad0x4_SHBIR[0x4];                                 // 0x94(0x4)
 };
 
 
@@ -227,7 +227,7 @@ class BTTask_SetDebugPetStateDescriptor: public BTTaskNode
 {
 public:
 	byte                                                         NewDescriptor;                                     // 0x60(0x1)
-	char                                                         pad0x7_IEAU6[0x7];                                 // 0x61(0x7)
+	char                                                         pad0x7_57Q87[0x7];                                 // 0x61(0x7)
 };
 
 
@@ -242,7 +242,7 @@ public:
 class CannonSquashComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x18_D9DPP[0x18];                               // 0xc8(0x18)
+	char                                                         pad0x18_66AXD[0x18];                               // 0xc8(0x18)
 };
 
 
@@ -251,7 +251,7 @@ class PetDangerComponent: public ActorComponent
 {
 public:
 	class PetDangerDataAsset*                                    DangerDataAsset;                                   // 0xc8(0x8)
-	char                                                         pad0xd0_FU6ER[0xd0];                               // 0xd0(0xd0)
+	char                                                         pad0xd0_NLXBH[0xd0];                               // 0xd0(0xd0)
 };
 
 
@@ -313,9 +313,9 @@ class PetHangoutSpotSelectorComponent: public ActorComponent
 public:
 	class PetHangoutSpotComponent*                               HangoutSpotPositionComponent;                      // 0xc8(0x8)
 	class PetHangoutSpotsDataAsset*                              HangoutParamsDataAsset;                            // 0xd0(0x8)
-	char                                                         pad0x70_UCAQM[0x70];                               // 0xd8(0x70)
+	char                                                         pad0x70_YIIDT[0x70];                               // 0xd8(0x70)
 	class UClass*                                                PetType_Cached;                                    // 0x148(0x8)
-	char                                                         pad0x168_EHLTU[0x168];                             // 0x150(0x168)
+	char                                                         pad0x168_MIWCL[0x168];                             // 0x150(0x168)
 };
 
 
@@ -337,13 +337,13 @@ public:
 class PetAIController: public AthenaAIController
 {
 public:
-	char                                                         pad0x20_GUMXE[0x20];                               // 0x970(0x20)
+	char                                                         pad0x20_9L1DN[0x20];                               // 0x970(0x20)
 	TArray<struct AIStategyControllerMovementMod>                StrategyControllerMovementMods;                    // 0x990(0x10)
 	float                                                        DefaultControlRotationInterpSpeed;                 // 0x9a0(0x4)
-	char                                                         pad0x4_C7F1L[0x4];                                 // 0x9a4(0x4)
+	char                                                         pad0x4_ZQBSF[0x4];                                 // 0x9a4(0x4)
 	class UClass*                                                DefaultStrategy;                                   // 0x9a8(0x8)
 	class ReactStateMappingsDataAsset*                           ReactMappings;                                     // 0x9b0(0x8)
-	char                                                         pad0x8_L061V[0x8];                                 // 0x9b8(0x8)
+	char                                                         pad0x8_QMW76[0x8];                                 // 0x9b8(0x8)
 	class PetHangoutSpotSelectorComponent*                       HangoutSpotSelectorComponent;                      // 0x9c0(0x8)
 	class PetHangoutSpotComponent*                               ForcedHangoutSpotComponent;                        // 0x9c8(0x8)
 	class BlackboardData*                                        DefaultBlackboardAsset;                            // 0x9d0(0x8)
@@ -351,10 +351,10 @@ public:
 	class BehaviorTree*                                          HangoutTree;                                       // 0x9e0(0x8)
 	class BehaviorTree*                                          IdleTree;                                          // 0x9e8(0x8)
 	float                                                        MaximumReactRange;                                 // 0x9f0(0x4)
-	char                                                         pad0x4_JL61X[0x4];                                 // 0x9f4(0x4)
+	char                                                         pad0x4_GCTLQ[0x4];                                 // 0x9f4(0x4)
 	class PetDangerComponent*                                    DangerComponent;                                   // 0x9f8(0x8)
 	float                                                        MinAgentHalfHeightPctOverride;                     // 0xa00(0x4)
-	char                                                         pad0x54_VO749[0x54];                               // 0xa04(0x54)
+	char                                                         pad0x54_U561Z[0x54];                               // 0xa04(0x54)
 };
 
 
@@ -401,21 +401,21 @@ class PetHangoutSpotComponent: public SceneComponent
 public:
 	TArray<struct HangoutSpotPosition>                           HangoutSpots;                                      // 0x2e0(0x10)
 	bool                                                         HasLowerDeckFloodThreshold;                        // 0x2f0(0x1)
-	char                                                         pad0x3_QM9P1[0x3];                                 // 0x2f1(0x3)
+	char                                                         pad0x3_3R9RY[0x3];                                 // 0x2f1(0x3)
 	float                                                        LowerDeckFloodThreshold;                           // 0x2f4(0x4)
 	bool                                                         HasMiddleDeckFloodThreshold;                       // 0x2f8(0x1)
-	char                                                         pad0x3_C6GH7[0x3];                                 // 0x2f9(0x3)
+	char                                                         pad0x3_KQ8J5[0x3];                                 // 0x2f9(0x3)
 	float                                                        MiddleDeckFloodThreshold;                          // 0x2fc(0x4)
 	float                                                        PerchInteractableHeightOffset;                     // 0x300(0x4)
 	bool                                                         IsWorldHangout;                                    // 0x304(0x1)
-	char                                                         pad0x23_IZNOY[0x23];                               // 0x305(0x23)
+	char                                                         pad0x23_814Z6[0x23];                               // 0x305(0x23)
 	TArray<class PetPerchComponent*>                             PetPerchComponents;                                // 0x328(0x10)
-	char                                                         pad0x10_D9023[0x10];                               // 0x338(0x10)
+	char                                                         pad0x10_C8YBX[0x10];                               // 0x338(0x10)
 	bool                                                         IsTopDeckBlocked;                                  // 0x348(0x1)
 	bool                                                         IsOwnerSinking;                                    // 0x349(0x1)
-	char                                                         pad0x1e_4EB52[0x1e];                               // 0x34a(0x1e)
+	char                                                         pad0x1e_87AEF[0x1e];                               // 0x34a(0x1e)
 	class PetHangoutSpotsDataAsset*                              PetHangoutSpotsDataAsset;                          // 0x368(0x8)
-	char                                                         pad0x10_L7KDV[0x10];                               // 0x370(0x10)
+	char                                                         pad0x10_Q5ALT[0x10];                               // 0x370(0x10)
 };
 
 
@@ -423,16 +423,16 @@ public:
 class PetItemInfo: public NonStorableItemInfo
 {
 public:
-	char                                                         pad0x20_NWJ13[0x20];                               // 0x528(0x20)
+	char                                                         pad0x20_ASRPZ[0x20];                               // 0x528(0x20)
 	class Actor*                                                 SpawnedForShip;                                    // 0x548(0x8)
 	float                                                        DropTraceDistance;                                 // 0x550(0x4)
 	float                                                        PointSearchRadius;                                 // 0x554(0x4)
 	byte                                                         DropChannel;                                       // 0x558(0x1)
-	char                                                         pad0x7_U152S[0x7];                                 // 0x559(0x7)
+	char                                                         pad0x7_MHLZI[0x7];                                 // 0x559(0x7)
 	class Actor*                                                 PetOwner;                                          // 0x560(0x8)
 	struct PetCustomisation                                      PetCustomisation;                                  // 0x568(0x28)
 	class PetUGCNameComponent*                                   PetUGCNameComponent;                               // 0x590(0x8)
-	char                                                         pad0x10_1YK79[0x10];                               // 0x598(0x10)
+	char                                                         pad0x10_XW8GU[0x10];                               // 0x598(0x10)
 };
 
 
@@ -462,7 +462,7 @@ public:
 class PetOwnerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x18_8CQG3[0x18];                               // 0xc8(0x18)
+	char                                                         pad0x18_P6907[0x18];                               // 0xc8(0x18)
 	class ItemInfo*                                              PetInfo;                                           // 0xe0(0x8)
 };
 
@@ -478,7 +478,7 @@ public:
 class PetPerchComponent: public InteractableComponent
 {
 public:
-	char                                                         pad0x18_0PNMU[0x18];                               // 0x138(0x18)
+	char                                                         pad0x18_QQJ61[0x18];                               // 0x138(0x18)
 	TArray<class Class*>                                         AllowedPetTypes;                                   // 0x150(0x10)
 	int                                                          HangoutSpotIndex;                                  // 0x160(0x4)
 	struct FName                                                 HangoutSpotName;                                   // 0x164(0x8)
@@ -486,7 +486,7 @@ public:
 	bool                                                         Enabled;                                           // 0x178(0x1)
 	bool                                                         BlocksPetEmoteReactions;                           // 0x179(0x1)
 	bool                                                         IgnorePickupFromHangoutTooltipDisplayOffset;       // 0x17a(0x1)
-	char                                                         pad0x5_CY95E[0x5];                                 // 0x17b(0x5)
+	char                                                         pad0x5_2LR90[0x5];                                 // 0x17b(0x5)
 };
 
 
@@ -520,18 +520,18 @@ public:
 class PetsService: public Object
 {
 public:
-	char                                                         pad0x60_DD3GL[0x60];                               // 0x28(0x60)
+	char                                                         pad0x60_23BQQ[0x60];                               // 0x28(0x60)
 	class AIPetsOnDemandSpawner*                                 Spawner;                                           // 0x88(0x8)
-	char                                                         pad0x18_ZH1C1[0x18];                               // 0x90(0x18)
+	char                                                         pad0x18_HFZK8[0x18];                               // 0x90(0x18)
 	struct PetsServiceParams                                     PetsServiceParams;                                 // 0xa8(0x38)
 	TArray<class Actor*>                                         OwnersToRemove;                                    // 0xe0(0x10)
 	TArray<class Actor*>                                         OwnersToRequestDespawn;                            // 0xf0(0x10)
 	TArray<class Pawn*>                                          MovingPetsOnIslands;                               // 0x100(0x10)
 	TArray<class Pawn*>                                          MovingPetsOnShips;                                 // 0x110(0x10)
 	TArray<class Actor*>                                         ScratchArray;                                      // 0x120(0x10)
-	char                                                         pad0x1a8_4DTEA[0x1a8];                             // 0x130(0x1a8)
+	char                                                         pad0x1a8_KGBNQ[0x1a8];                             // 0x130(0x1a8)
 	class PetHangoutSpotsDataAsset*                              PetHangoutDataAsset;                               // 0x2d8(0x8)
-	char                                                         pad0x50_HVYHN[0x50];                               // 0x2e0(0x50)
+	char                                                         pad0x50_SUJT8[0x50];                               // 0x2e0(0x50)
 };
 
 
@@ -551,10 +551,10 @@ public:
 class PetUGCNameComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x18_HMYBZ[0x18];                               // 0xc8(0x18)
+	char                                                         pad0x18_H5VTU[0x18];                               // 0xc8(0x18)
 	struct FString                                               DefaultPetName;                                    // 0xe0(0x10)
 	struct FString                                               CustomisedPetName;                                 // 0xf0(0x10)
-	char                                                         pad0x18_MJ00T[0x18];                               // 0x100(0x18)
+	char                                                         pad0x18_1X3YK[0x18];                               // 0x100(0x18)
 };
 
 
@@ -577,9 +577,9 @@ public:
 class WieldablePet: public SkeletalMeshWieldableItem
 {
 public:
-	char                                                         pad0x38_NIMUB[0x38];                               // 0x7e0(0x38)
+	char                                                         pad0x38_X7JU0[0x38];                               // 0x7e0(0x38)
 	float                                                        ThirdPersonScalingModifier;                        // 0x818(0x4)
-	char                                                         pad0x4_2W2XV[0x4];                                 // 0x81c(0x4)
+	char                                                         pad0x4_STPRV[0x4];                                 // 0x81c(0x4)
 	class WieldablePetComponent*                                 WieldablePetComponent;                             // 0x820(0x8)
 	class AIPartsRetrievalComponent*                             AIPartsRetrievalComponent;                         // 0x828(0x8)
 	class PetPartCustomisationComponent*                         PetPartCustomisationComponent;                     // 0x830(0x8)
@@ -599,10 +599,10 @@ public:
 	class PetTelemetryComponent*                                 TelemetryComponent;                                // 0x8a0(0x8)
 	class AnimationDataStoreComponent*                           AnimationDataStoreComponent;                       // 0x8a8(0x8)
 	bool                                                         SubmergedStrokingEnabled;                          // 0x8b0(0x1)
-	char                                                         pad0x6f_78LQQ[0x6f];                               // 0x8b1(0x6f)
+	char                                                         pad0x6f_7F5JP[0x6f];                               // 0x8b1(0x6f)
 	byte                                                         HungerReactAnimationState;                         // 0x920(0x1)
 	byte                                                         DropRequest;                                       // 0x921(0x1)
-	char                                                         pad0xe_MUSMO[0xe];                                 // 0x922(0xe)
+	char                                                         pad0xe_AE2JD[0xe];                                 // 0x922(0xe)
 };
 
 
@@ -610,7 +610,7 @@ public:
 class WieldablePetAnimNotifyWwiseEmitterComponent: public AnimNotifyWwiseEmitterComponent
 {
 public:
-	char                                                         pad0x10_1O70G[0x10];                               // 0x310(0x10)
+	char                                                         pad0x10_GA196[0x10];                               // 0x310(0x10)
 };
 
 
@@ -619,7 +619,7 @@ class WieldablePetComponent: public ActorComponent
 {
 public:
 	class WieldablePetComponentDataAsset*                        WieldablePetComponentData;                         // 0xc8(0x8)
-	char                                                         pad0x80_8MESV[0x80];                               // 0xd0(0x80)
+	char                                                         pad0x80_F2O7D[0x80];                               // 0xd0(0x80)
 };
 
 
@@ -631,7 +631,7 @@ public:
 	struct FloatRange                                            NormalTimeUntilEscape;                             // 0x38(0x10)
 	struct FloatRange                                            SubmergedTimeUntilEscape;                          // 0x48(0x10)
 	float                                                        DamageToOwnerDropThreshold;                        // 0x58(0x4)
-	char                                                         pad0x4_G7KYI[0x4];                                 // 0x5c(0x4)
+	char                                                         pad0x4_XVNYK[0x4];                                 // 0x5c(0x4)
 	TArray<struct WieldablePetDropTimeout>                       DropTimeouts;                                      // 0x60(0x10)
 };
 
@@ -641,11 +641,11 @@ class WieldablePetHungerComponent: public ActorComponent
 {
 public:
 	class WieldablePetHungerDataAsset*                           HungerData;                                        // 0xc8(0x8)
-	char                                                         pad0x28_ZEOU0[0x28];                               // 0xd0(0x28)
+	char                                                         pad0x28_UGJR1[0x28];                               // 0xd0(0x28)
 	TArray<struct OverlapResult>                                 CachedOverlappingActors;                           // 0xf8(0x10)
 	TArray<struct WieldablePetFoodSourceEntry>                   ActiveFoodSources;                                 // 0x108(0x10)
 	TArray<struct WieldablePetFoodSourceEntry>                   FoodSourcesToRemove;                               // 0x118(0x10)
-	char                                                         pad0x50_0HVJ8[0x50];                               // 0x128(0x50)
+	char                                                         pad0x50_YF9US[0x50];                               // 0x128(0x50)
 };
 
 
@@ -660,7 +660,7 @@ public:
 	struct WieldablePetHungerAnimationData                       SickAnimData;                                      // 0x40(0x8)
 	struct WieldablePetHungerAnimationData                       RefuseAnimData;                                    // 0x48(0x8)
 	byte                                                         CollisionChannel;                                  // 0x50(0x1)
-	char                                                         pad0x7_KZJ9G[0x7];                                 // 0x51(0x7)
+	char                                                         pad0x7_2KJQ4[0x7];                                 // 0x51(0x7)
 };
 
 

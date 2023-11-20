@@ -1,0 +1,212 @@
+{
+  "BP_FactionEmissaryTable_Reapers_C": {
+    "Super": "BP_EmissaryTable_01_C",
+    "FullSize": "0x7f0",
+    "InheritedSize": "0x6e8",
+    "ClassSize": "0x108",
+    "Attributes": [
+      {
+        "Name": "UberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x6e8"
+      },
+      {
+        "Name": "cap_desk_model_fac_shield_reaper_01_a",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x6f0"
+      },
+      {
+        "Name": "PointLight2",
+        "Type": "class PointLightComponent*",
+        "Size": "0x8",
+        "Offset": "0x6f8"
+      },
+      {
+        "Name": "PointLight1",
+        "Type": "class PointLightComponent*",
+        "Size": "0x8",
+        "Offset": "0x700"
+      },
+      {
+        "Name": "PointLight",
+        "Type": "class PointLightComponent*",
+        "Size": "0x8",
+        "Offset": "0x708"
+      },
+      {
+        "Name": "ParticleSystem6",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x710"
+      },
+      {
+        "Name": "ParticleSystem5",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x718"
+      },
+      {
+        "Name": "ParticleSystem4",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x720"
+      },
+      {
+        "Name": "ParticleSystem3",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x728"
+      },
+      {
+        "Name": "ParticleSystem2",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x730"
+      },
+      {
+        "Name": "ParticleSystem1",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x738"
+      },
+      {
+        "Name": "ParticleSystem",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x740"
+      },
+      {
+        "Name": "StaticMesh12",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x748"
+      },
+      {
+        "Name": "StaticMesh11",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x750"
+      },
+      {
+        "Name": "StaticMesh10",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x758"
+      },
+      {
+        "Name": "StaticMesh9",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x760"
+      },
+      {
+        "Name": "StaticMesh8",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x768"
+      },
+      {
+        "Name": "StaticMesh7",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x770"
+      },
+      {
+        "Name": "StaticMesh6",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x778"
+      },
+      {
+        "Name": "StaticMesh5",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x780"
+      },
+      {
+        "Name": "StaticMesh3",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x788"
+      },
+      {
+        "Name": "StaticMesh2",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Name": "Hourglass",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x798"
+      },
+      {
+        "Name": "HourglassStand",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7a0"
+      },
+      {
+        "Name": "FactionVote",
+        "Type": "class ChildActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x7a8"
+      },
+      {
+        "Name": "StaticMesh1",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7b0"
+      },
+      {
+        "Name": "StaticMesh",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7b8"
+      },
+      {
+        "Name": "StaticMesh4",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7c0"
+      },
+      {
+        "Name": "cmp_papers_reaper_02_a",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7c8"
+      },
+      {
+        "Name": "cmp_papers_reaper_01_a",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x7d0"
+      },
+      {
+        "Name": "EmissaryShipAffiliationTracker",
+        "Type": "class EmissaryShipAffiliationTrackerComponent*",
+        "Size": "0x8",
+        "Offset": "0x7d8"
+      },
+      {
+        "Name": "NewTableMesh",
+        "Type": "class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x7e0"
+      },
+      {
+        "Name": "HourglassGlassMaterial",
+        "Type": "class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x7e8"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

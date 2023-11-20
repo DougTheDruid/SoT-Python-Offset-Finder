@@ -6,7 +6,7 @@ ActorLocationPair:
     Offset: '0x0'
     Size: '0x10'
     Type: struct StringAssetReference
-  - Name: pad0x20_3DO0B[0x20]
+  - Name: pad0x20_V7QZ5[0x20]
     Offset: '0x10'
     Size: '0x20'
     Type: char
@@ -31,21 +31,21 @@ InstancedLayerLocation:
   ClassSize: '0x18'
 IsAllStoryActiveCondition:
   Attributes:
-  - Name: pad0x48_MHBIQ[0x48]
+  - Name: pad0x48_5HQW1[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
   ClassSize: '0x48'
 IsAnyStoryActiveCondition:
   Attributes:
-  - Name: pad0x48_LYV3K[0x48]
+  - Name: pad0x48_0HO99[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
   ClassSize: '0x48'
 IsStoryActiveConditionBase:
   Attributes:
-  - Name: pad0x28_7V1MB[0x28]
+  - Name: pad0x28_LCUKM[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
@@ -53,7 +53,7 @@ IsStoryActiveConditionBase:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<struct StoryFlag>
-  - Name: pad0x10_NCXGZ[0x10]
+  - Name: pad0x10_3ETBC[0x10]
     Offset: '0x38'
     Size: '0x10'
     Type: char
@@ -90,7 +90,7 @@ NamedPointsGroupActorLocation:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x20_IJKWR[0x20]
+  - Name: pad0x20_3XD9I[0x20]
     Offset: '0x8'
     Size: '0x20'
     Type: char
@@ -113,7 +113,7 @@ StoriesChangedTelemetryEvent:
     Offset: '0x21'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_QXXBJ[0x6]
+  - Name: pad0x6_H0UYN[0x6]
     Offset: '0x22'
     Size: '0x6'
     Type: char
@@ -135,7 +135,7 @@ StoryClaimableResourcesList:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_H4DW6[0x7]
+  - Name: pad0x7_KEC0A[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -164,7 +164,7 @@ StoryInfo:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x10_W3CVU[0x10]
+  - Name: pad0x10_COVVF[0x10]
     Offset: '0x8'
     Size: '0x10'
     Type: char

@@ -17,7 +17,7 @@ public:
 class GCObjectReferencer: public Object
 {
 public:
-	char                                                         pad0x38_H6J53[0x38];                               // 0x28(0x38)
+	char                                                         pad0x38_VFDES[0x38];                               // 0x28(0x38)
 };
 
 
@@ -25,7 +25,7 @@ public:
 class TextBuffer: public Object
 {
 public:
-	char                                                         pad0x28_JM5M7[0x28];                               // 0x28(0x28)
+	char                                                         pad0x28_K0KQ8[0x28];                               // 0x28(0x28)
 };
 
 
@@ -33,7 +33,7 @@ public:
 class Field: public Object
 {
 public:
-	char                                                         pad0x8_OD7S4[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_QEC3X[0x8];                                 // 0x28(0x8)
 };
 
 
@@ -41,7 +41,7 @@ public:
 class Struct: public Field
 {
 public:
-	char                                                         pad0x58_7DIWU[0x58];                               // 0x30(0x58)
+	char                                                         pad0x58_ONDLN[0x58];                               // 0x30(0x58)
 };
 
 
@@ -49,7 +49,7 @@ public:
 class ScriptStruct: public Struct
 {
 public:
-	char                                                         pad0x10_XJ3VC[0x10];                               // 0x88(0x10)
+	char                                                         pad0x10_THWN7[0x10];                               // 0x88(0x10)
 };
 
 
@@ -57,7 +57,7 @@ public:
 class Package: public Object
 {
 public:
-	char                                                         pad0x58_94XJE[0x58];                               // 0x28(0x58)
+	char                                                         pad0x58_YHXTR[0x58];                               // 0x28(0x58)
 };
 
 
@@ -65,7 +65,7 @@ public:
 class Class: public Struct
 {
 public:
-	char                                                         pad0x138_JY3Y3[0x138];                             // 0x88(0x138)
+	char                                                         pad0x138_F1D29[0x138];                             // 0x88(0x138)
 };
 
 
@@ -73,7 +73,7 @@ public:
 class Function: public Struct
 {
 public:
-	char                                                         pad0x30_FUOAS[0x30];                               // 0x88(0x30)
+	char                                                         pad0x30_GENS2[0x30];                               // 0x88(0x30)
 };
 
 
@@ -88,7 +88,7 @@ public:
 class SparseDelegateFunction: public DelegateFunction
 {
 public:
-	char                                                         pad0x10_JG2K7[0x10];                               // 0xb8(0x10)
+	char                                                         pad0x10_FHLW8[0x10];                               // 0xb8(0x10)
 };
 
 
@@ -96,7 +96,7 @@ public:
 class PackageMap: public Object
 {
 public:
-	char                                                         pad0x28_G5T9Z[0x28];                               // 0x28(0x28)
+	char                                                         pad0x28_8SQJG[0x28];                               // 0x28(0x28)
 };
 
 
@@ -104,7 +104,7 @@ public:
 class Enum: public Field
 {
 public:
-	char                                                         pad0x28_XWMU0[0x28];                               // 0x30(0x28)
+	char                                                         pad0x28_0WTLD[0x28];                               // 0x30(0x28)
 };
 
 
@@ -112,7 +112,7 @@ public:
 class LinkerPlaceholderClass: public Class
 {
 public:
-	char                                                         pad0x150_ETAMG[0x150];                             // 0x1c0(0x150)
+	char                                                         pad0x150_O7TLH[0x150];                             // 0x1c0(0x150)
 };
 
 
@@ -120,7 +120,7 @@ public:
 class LinkerPlaceholderExportObject: public Object
 {
 public:
-	char                                                         pad0x60_NVWEJ[0x60];                               // 0x28(0x60)
+	char                                                         pad0x60_WZRTK[0x60];                               // 0x28(0x60)
 };
 
 
@@ -128,7 +128,7 @@ public:
 class LinkerPlaceholderFunction: public Function
 {
 public:
-	char                                                         pad0x150_9F4YR[0x150];                             // 0xb8(0x150)
+	char                                                         pad0x150_0UAL5[0x150];                             // 0xb8(0x150)
 };
 
 
@@ -136,7 +136,7 @@ public:
 class MetaData: public Object
 {
 public:
-	char                                                         pad0x50_TP8XB[0x50];                               // 0x28(0x50)
+	char                                                         pad0x50_4WYXE[0x50];                               // 0x28(0x50)
 };
 
 
@@ -144,7 +144,7 @@ public:
 class ObjectRedirector: public Object
 {
 public:
-	char                                                         pad0x8_DMGY6[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_RL9LK[0x8];                                 // 0x28(0x8)
 };
 
 
@@ -152,7 +152,7 @@ public:
 class Property: public Field
 {
 public:
-	char                                                         pad0x40_JR9DE[0x40];                               // 0x30(0x40)
+	char                                                         pad0x40_CPT6H[0x40];                               // 0x30(0x40)
 };
 
 
@@ -167,7 +167,7 @@ public:
 class ArrayProperty: public Property
 {
 public:
-	char                                                         pad0x8_SC322[0x8];                                 // 0x70(0x8)
+	char                                                         pad0x8_LIHOK[0x8];                                 // 0x70(0x8)
 };
 
 
@@ -175,7 +175,7 @@ public:
 class ObjectPropertyBase: public Property
 {
 public:
-	char                                                         pad0x8_6M7AI[0x8];                                 // 0x70(0x8)
+	char                                                         pad0x8_0VQXX[0x8];                                 // 0x70(0x8)
 };
 
 
@@ -190,7 +190,7 @@ public:
 class AssetClassProperty: public AssetObjectProperty
 {
 public:
-	char                                                         pad0x8_1NLBX[0x8];                                 // 0x78(0x8)
+	char                                                         pad0x8_DB5Q5[0x8];                                 // 0x78(0x8)
 };
 
 
@@ -198,7 +198,7 @@ public:
 class BoolProperty: public Property
 {
 public:
-	char                                                         pad0x8_42EG1[0x8];                                 // 0x70(0x8)
+	char                                                         pad0x8_VPME4[0x8];                                 // 0x70(0x8)
 };
 
 
@@ -206,7 +206,7 @@ public:
 class ByteProperty: public NumericProperty
 {
 public:
-	char                                                         pad0x8_AYJ0L[0x8];                                 // 0x70(0x8)
+	char                                                         pad0x8_OF8UJ[0x8];                                 // 0x70(0x8)
 };
 
 
@@ -221,7 +221,7 @@ public:
 class ClassProperty: public ObjectProperty
 {
 public:
-	char                                                         pad0x8_ITFAY[0x8];                                 // 0x78(0x8)
+	char                                                         pad0x8_NKXHO[0x8];                                 // 0x78(0x8)
 };
 
 
@@ -229,7 +229,7 @@ public:
 class DelegateProperty: public Property
 {
 public:
-	char                                                         pad0x8_CM8FC[0x8];                                 // 0x70(0x8)
+	char                                                         pad0x8_TT3FN[0x8];                                 // 0x70(0x8)
 };
 
 
@@ -279,7 +279,7 @@ public:
 class InterfaceProperty: public Property
 {
 public:
-	char                                                         pad0x8_1Z0HL[0x8];                                 // 0x70(0x8)
+	char                                                         pad0x8_ACDDA[0x8];                                 // 0x70(0x8)
 };
 
 
@@ -294,7 +294,7 @@ public:
 class MapProperty: public Property
 {
 public:
-	char                                                         pad0x38_2YNMA[0x38];                               // 0x70(0x38)
+	char                                                         pad0x38_5TSLE[0x38];                               // 0x70(0x38)
 };
 
 
@@ -302,7 +302,7 @@ public:
 class MulticastDelegateProperty: public Property
 {
 public:
-	char                                                         pad0x8_PGH0B[0x8];                                 // 0x70(0x8)
+	char                                                         pad0x8_G3KOB[0x8];                                 // 0x70(0x8)
 };
 
 
@@ -331,7 +331,7 @@ public:
 class StructProperty: public Property
 {
 public:
-	char                                                         pad0x8_HX5OJ[0x8];                                 // 0x70(0x8)
+	char                                                         pad0x8_529TT[0x8];                                 // 0x70(0x8)
 };
 
 

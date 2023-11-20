@@ -6,9 +6,9 @@ BP_Prompt_CosmeticPurchased_C:
     Offset: '0x138'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
-  - Name: pad0x151_BN7XU[0x151]
+  - Name: pad0x16c_4KL3S[0x16c]
     Offset: '0x140'
-    Size: '0x151'
+    Size: '0x16c'
     Type: char
   - Name: Handle_OfferPurchasedEvent
     Offset: '0x140'

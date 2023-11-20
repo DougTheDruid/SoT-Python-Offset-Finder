@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class TestLevelScriptActor: public LevelScriptActor
 {
 public:
-	char                                                         pad0x8_DZTZ8[0x8];                                 // 0x3d0(0x8)
+	char                                                         pad0x8_W5Z6D[0x8];                                 // 0x3d0(0x8)
 	byte                                                         Category;                                          // 0x3d8(0x1)
 	byte                                                         Area;                                              // 0x3d9(0x1)
 	bool                                                         VisualTest;                                        // 0x3da(0x1)
@@ -18,21 +18,21 @@ public:
 	bool                                                         RunOnServer;                                       // 0x3dc(0x1)
 	bool                                                         RequiresServices;                                  // 0x3dd(0x1)
 	bool                                                         OptOutOfFixedFrameTime;                            // 0x3de(0x1)
-	char                                                         pad0x1_9CT41[0x1];                                 // 0x3df(0x1)
+	char                                                         pad0x1_5IKIK[0x1];                                 // 0x3df(0x1)
 	TArray<struct TestLevelMetadataEntry>                        AdditionalMetadata;                                // 0x3e0(0x10)
 	byte                                                         CaptureType;                                       // 0x3f0(0x1)
 	byte                                                         PlayModeOverride;                                  // 0x3f1(0x1)
-	char                                                         pad0x2_IW9H9[0x2];                                 // 0x3f2(0x2)
+	char                                                         pad0x2_PN8NX[0x2];                                 // 0x3f2(0x2)
 	float                                                        TestTimeout;                                       // 0x3f4(0x4)
 	float                                                        TestPausedTimeout;                                 // 0x3f8(0x4)
-	char                                                         pad0x4_KYOYC[0x4];                                 // 0x3fc(0x4)
+	char                                                         pad0x4_HKUDA[0x4];                                 // 0x3fc(0x4)
 	TArray<Str VerboseLogCategories>                             VerboseLogCategories;                              // 0x400(0x10)
 	TArray<Int ClientsRunning>                                   ClientsRunning;                                    // 0x410(0x10)
 	TArray<Int ClientIds>                                        ClientIds;                                         // 0x420(0x10)
 	TArray<struct ClientPawnDetails>                             ClientPawns;                                       // 0x430(0x10)
 	TArray<class Actor*>                                         SpawnedActors;                                     // 0x440(0x10)
 	int                                                          NextSpawnedActorIndex;                             // 0x450(0x4)
-	char                                                         pad0x3c_66FMX[0x3c];                               // 0x454(0x3c)
+	char                                                         pad0x3c_KLSVX[0x3c];                               // 0x454(0x3c)
 };
 
 
@@ -50,13 +50,14 @@ public:
 };
 
 
-// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
+// Size 0x40 (Full Size[0x78] - InheritedSize[0x38]
 class AssetAuditSettings: public DeveloperSettings
 {
 public:
 	TArray<Str PathsToAuditOnSave>                               PathsToAuditOnSave;                                // 0x38(0x10)
 	TArray<Assetclass TypesToIgnoreInFeatureToggleAudits>        TypesToIgnoreInFeatureToggleAudits;                // 0x48(0x10)
 	TArray<Str AssetAuditorsLoadExceptionList>                   AssetAuditorsLoadExceptionList;                    // 0x58(0x10)
+	TArray<Assetclass IgnoreReferencersForClasses>               IgnoreReferencersForClasses;                       // 0x68(0x10)
 };
 
 
@@ -71,7 +72,7 @@ public:
 class AutomationLatentActionCallback: public Object
 {
 public:
-	char                                                         pad0x38_J1TEC[0x38];                               // 0x28(0x38)
+	char                                                         pad0x38_ODMBA[0x38];                               // 0x28(0x38)
 };
 
 
@@ -143,7 +144,7 @@ public:
 class TestablePlayerControllerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x20_GLQ9Z[0x20];                               // 0xc8(0x20)
+	char                                                         pad0x20_6FRVQ[0x20];                               // 0xc8(0x20)
 };
 
 

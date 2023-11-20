@@ -15,7 +15,7 @@ public:
 	TArray<struct Key>                                           Buttons;                                           // 0x20(0x10)
 	float                                                        RequiredHoldTime;                                  // 0x30(0x4)
 	bool                                                         AvailableInShippingBuilds;                         // 0x34(0x1)
-	char                                                         pad0xb_EBZX0[0xb];                                 // 0x35(0xb)
+	char                                                         pad0xb_VTU7G[0xb];                                 // 0x35(0xb)
 };
 
 
@@ -29,7 +29,7 @@ public:
 	bool                                                         CloseMenuWhenExecuted;                             // 0x30(0x1)
 	bool                                                         AvailableInShippingBuilds;                         // 0x31(0x1)
 	bool                                                         AddToCommonlyUsedMenu;                             // 0x32(0x1)
-	char                                                         pad0x5_V2NCI[0x5];                                 // 0x33(0x5)
+	char                                                         pad0x5_UJZ5L[0x5];                                 // 0x33(0x5)
 };
 
 
@@ -46,7 +46,7 @@ public:
 struct DebugErrorHappeningEvent
 {
 public:
-	char                                                         pad0x1_Q0W6W[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_RGWNT[0x1];                                 // 0x0(0x1)
 };
 
 

@@ -14,7 +14,7 @@ public:
 	float                                                        MaximumReviveDistance;                             // 0x3c(0x4)
 	struct LinearColor                                           FadeColour;                                        // 0x40(0x10)
 	bool                                                         ShouldFadeAudio;                                   // 0x50(0x1)
-	char                                                         pad0x3_VDJZ2[0x3];                                 // 0x51(0x3)
+	char                                                         pad0x3_GOPC0[0x3];                                 // 0x51(0x3)
 	float                                                        ServerWaitTimeBeforeFullyReviving;                 // 0x54(0x4)
 	float                                                        ReviveTime;                                        // 0x58(0x4)
 	float                                                        MaxRevertEvaporateDuration;                        // 0x5c(0x4)
@@ -23,7 +23,7 @@ public:
 	float                                                        GiveUpHoldTime;                                    // 0x80(0x4)
 	float                                                        GiveUpFadeDuration;                                // 0x84(0x4)
 	float                                                        GiveUpEvaporateDuration;                           // 0x88(0x4)
-	char                                                         pad0x4_NMU2Q[0x4];                                 // 0x8c(0x4)
+	char                                                         pad0x4_DEZ57[0x4];                                 // 0x8c(0x4)
 };
 
 
@@ -31,9 +31,9 @@ public:
 class DeathSelfInteractionComponent: public InteractableComponent
 {
 public:
-	char                                                         pad0x8_B0LHP[0x8];                                 // 0x138(0x8)
+	char                                                         pad0x8_P9N5Y[0x8];                                 // 0x138(0x8)
 	bool                                                         HasGivenUp;                                        // 0x140(0x1)
-	char                                                         pad0x47_TFKKR[0x47];                               // 0x141(0x47)
+	char                                                         pad0x47_ZGY93[0x47];                               // 0x141(0x47)
 };
 
 
@@ -77,7 +77,7 @@ class ReviveAudioComponent: public WwiseEmitterComponent
 {
 public:
 	class ReviveEffectsDataAsset*                                ReviveEffectsDataAsset;                            // 0x310(0x8)
-	char                                                         pad0x18_TMTT5[0x18];                               // 0x318(0x18)
+	char                                                         pad0x18_3WZGZ[0x18];                               // 0x318(0x18)
 };
 
 
@@ -92,18 +92,18 @@ public:
 class ReviveComponent: public InteractableComponent
 {
 public:
-	char                                                         pad0x10_ZD9ZQ[0x10];                               // 0x138(0x10)
+	char                                                         pad0x10_95Y9S[0x10];                               // 0x138(0x10)
 	class Character*                                             OwningCharacter;                                   // 0x148(0x8)
 	class Actor*                                                 ReviveableRepresentationActor;                     // 0x150(0x8)
 	byte                                                         ReviveState;                                       // 0x158(0x1)
 	byte                                                         InteractionState;                                  // 0x159(0x1)
-	char                                                         pad0x6_XC5L9[0x6];                                 // 0x15a(0x6)
+	char                                                         pad0x6_0B2RX[0x6];                                 // 0x15a(0x6)
 	class UClass*                                                ReviveableRepresentationClass;                     // 0x160(0x8)
-	char                                                         pad0xc_U238Z[0xc];                                 // 0x168(0xc)
+	char                                                         pad0xc_0GRFI[0xc];                                 // 0x168(0xc)
 	bool                                                         ReviveWindowIsOpen;                                // 0x174(0x1)
-	char                                                         pad0xd3_EUNIG[0xd3];                               // 0x175(0xd3)
+	char                                                         pad0xd3_Z5ZQC[0xd3];                               // 0x175(0xd3)
 	struct Status                                                RevivableStatus;                                   // 0x248(0x18)
-	char                                                         pad0x18_3W2SU[0x18];                               // 0x260(0x18)
+	char                                                         pad0x18_FUT42[0x18];                               // 0x260(0x18)
 };
 
 
@@ -125,7 +125,7 @@ public:
 class ReviveDebugComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x98_FYRBZ[0x98];                               // 0xc8(0x98)
+	char                                                         pad0x98_6QB5V[0x98];                               // 0xc8(0x98)
 };
 
 
@@ -165,7 +165,7 @@ public:
 class ReviveGhost: public Actor
 {
 public:
-	char                                                         pad0x10_LPX07[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_EZGCD[0x10];                               // 0x3c8(0x10)
 	TArray<class MaterialInstanceDynamic*>                       CorpseMaterials;                                   // 0x3d8(0x10)
 	class SceneComponent*                                        Root;                                              // 0x3e8(0x8)
 	class SkeletalMeshComponent*                                 MeshComponent;                                     // 0x3f0(0x8)
@@ -174,17 +174,17 @@ public:
 	class PostProcessComponent*                                  PostProcessComponent;                              // 0x408(0x8)
 	class DitherComponent*                                       DitherComponent;                                   // 0x410(0x8)
 	class ReviveAudioComponent*                                  AudioComponent;                                    // 0x418(0x8)
-	char                                                         pad0x10_IXO0K[0x10];                               // 0x420(0x10)
+	char                                                         pad0x10_PAZ5G[0x10];                               // 0x420(0x10)
 	byte                                                         RevivableOwnerNetRole;                             // 0x430(0x1)
-	char                                                         pad0x7_T6SPX[0x7];                                 // 0x431(0x7)
+	char                                                         pad0x7_0JZGJ[0x7];                                 // 0x431(0x7)
 	class GhostDataAsset*                                        ReviveGhostDataAsset;                              // 0x438(0x8)
 	class ReviveEffectsDataAsset*                                ReviveEffectsDataAsset;                            // 0x440(0x8)
 	struct ReviveEffectsValues                                   ReviveEffectsValues;                               // 0x448(0x20)
 	struct ModeSpecificReviveSettings                            ReviveSettings;                                    // 0x468(0x38)
-	char                                                         pad0x13c_SLYP3[0x13c];                             // 0x4a0(0x13c)
+	char                                                         pad0x13c_OTG9I[0x13c];                             // 0x4a0(0x13c)
 	TArray<class MaterialInstanceDynamic*>                       AstralCordDynamicMaterials;                        // 0x608(0x10)
 	struct GhostPlayModeParameters                               GhostPlayModeSpecificParameters;                   // 0x618(0xc)
-	char                                                         pad0x4_7104W[0x4];                                 // 0x624(0x4)
+	char                                                         pad0x4_SI8CT[0x4];                                 // 0x624(0x4)
 };
 
 

@@ -13,7 +13,7 @@ public:
 	struct FText                                                 Title;                                             // 0x0(0x38)
 	struct FText                                                 Body;                                              // 0x38(0x38)
 	float                                                        Weight;                                            // 0x70(0x4)
-	char                                                         pad0x4_QIJLS[0x4];                                 // 0x74(0x4)
+	char                                                         pad0x4_LSMT3[0x4];                                 // 0x74(0x4)
 };
 
 
@@ -31,7 +31,7 @@ public:
 struct SirenPuzzleCompleteEvent
 {
 public:
-	char                                                         pad0x1_1Y3UL[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_G2CX0[0x1];                                 // 0x0(0x1)
 };
 
 

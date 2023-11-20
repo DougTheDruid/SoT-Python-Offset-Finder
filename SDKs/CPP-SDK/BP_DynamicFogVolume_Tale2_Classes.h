@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class BP_DynamicFogVolume_Tale2_C: public BP_DynamicDensityFogVolume_C
 {
 public:
-	char                                                         pad0x7_319QA[0x7];                                 // 0x439(0x7)
+	char                                                         pad0x7_P258I[0x7];                                 // 0x439(0x7)
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x440(0x8)
 	float                                                        WorldFadeDistanceStart;                            // 0x448(0x4)
 	float                                                        WorldFadeDistanceRange;                            // 0x44c(0x4)

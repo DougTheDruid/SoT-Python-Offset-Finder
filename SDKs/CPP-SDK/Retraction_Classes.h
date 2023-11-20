@@ -10,14 +10,14 @@ namespace DougsSDKDumper
 class RetractableComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x38_G635E[0x38];                               // 0xc8(0x38)
+	char                                                         pad0x38_RR164[0x38];                               // 0xc8(0x38)
 	struct FName                                                 FeatureToggle;                                     // 0x100(0x8)
 	struct RetractorOrientationAdjustmentFlags                   OrientationAdjustmentOnRetractFlags;               // 0x108(0x3)
 	byte                                                         RetractorBoxAxis;                                  // 0x10b(0x1)
 	bool                                                         ShouldAutoReleaseOnSuccessfulRetract;              // 0x10c(0x1)
 	bool                                                         MigrateAttachedWithRetractor;                      // 0x10d(0x1)
 	bool                                                         WasSimulatingPhysicsBeforeRetract;                 // 0x10e(0x1)
-	char                                                         pad0x1_E4C8Y[0x1];                                 // 0x10f(0x1)
+	char                                                         pad0x1_31CFF[0x1];                                 // 0x10f(0x1)
 };
 
 
@@ -46,7 +46,7 @@ public:
 class RetractableFloatingBarrelComponent: public RetractableComponent
 {
 public:
-	char                                                         pad0x10_6MI9Q[0x10];                               // 0x110(0x10)
+	char                                                         pad0x10_UMHPK[0x10];                               // 0x110(0x10)
 };
 
 
@@ -54,10 +54,10 @@ public:
 class RetractorComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x48_J9G0Q[0x48];                               // 0xc8(0x48)
+	char                                                         pad0x48_0OUE1[0x48];                               // 0xc8(0x48)
 	class SceneComponent*                                        RetractDestinationComponent;                       // 0x110(0x8)
 	class SceneComponent*                                        RetractingComponent;                               // 0x118(0x8)
-	char                                                         pad0x8_NNV6H[0x8];                                 // 0x120(0x8)
+	char                                                         pad0x8_HC9EI[0x8];                                 // 0x120(0x8)
 };
 
 

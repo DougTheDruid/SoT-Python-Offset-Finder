@@ -13,7 +13,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_K3K1F[0x8]",
+        "Name": "pad0x8_M1TCF[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"

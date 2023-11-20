@@ -26,7 +26,7 @@ InteractableZipline:
     Offset: '0x790'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_QLAPB[0x4]
+  - Name: pad0x4_12R8S[0x4]
     Offset: '0x794'
     Size: '0x4'
     Type: char
@@ -36,7 +36,7 @@ InteractableZipline:
   Super: Zipline
 Ride:
   Attributes:
-  - Name: pad0x8_EEYON[0x8]
+  - Name: pad0x8_UVA0K[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -54,7 +54,7 @@ Ride:
   Super: Actor
 RidePlayerComponent:
   Attributes:
-  - Name: pad0x8_0CP83[0x8]
+  - Name: pad0x8_ONXU5[0x8]
     Offset: '0xe0'
     Size: '0x8'
     Type: char
@@ -70,7 +70,7 @@ RidePlayerComponent:
     Offset: '0xf8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_NR5JX[0x4]
+  - Name: pad0x4_Z0P2D[0x4]
     Offset: '0xfc'
     Size: '0x4'
     Type: char
@@ -94,7 +94,7 @@ RidePlayerComponent:
     Offset: '0x120'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x14_4WJPR[0x14]
+  - Name: pad0x14_MOI8P[0x14]
     Offset: '0x12c'
     Size: '0x14'
     Type: char
@@ -144,7 +144,7 @@ WaterSlide:
     Offset: '0x408'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_DOMHK[0x3]
+  - Name: pad0x3_T0E61[0x3]
     Offset: '0x409'
     Size: '0x3'
     Type: char
@@ -156,7 +156,7 @@ WaterSlide:
     Offset: '0x418'
     Size: '0x8'
     Type: class WaterSlideAudioParams*
-  - Name: pad0x8_VVDL0[0x8]
+  - Name: pad0x8_CZC96[0x8]
     Offset: '0x420'
     Size: '0x8'
     Type: char
@@ -206,7 +206,7 @@ WaterSlideAudioParams:
   Super: DataAsset
 WaterSlideInputComponent:
   Attributes:
-  - Name: pad0x10_3T209[0x10]
+  - Name: pad0x10_68YD3[0x10]
     Offset: '0x2a0'
     Size: '0x10'
     Type: char
@@ -240,7 +240,7 @@ Zipline:
     Offset: '0x3e1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_JULXI[0x2]
+  - Name: pad0x2_7S3OA[0x2]
     Offset: '0x3e2'
     Size: '0x2'
     Type: char
@@ -268,7 +268,7 @@ Zipline:
     Offset: '0x70c'
     Size: '0x8'
     Type: struct Vector2D
-  - Name: pad0x2c_098XH[0x2c]
+  - Name: pad0x2c_RU64S[0x2c]
     Offset: '0x714'
     Size: '0x2c'
     Type: char
@@ -288,7 +288,7 @@ Zipline:
     Offset: '0x758'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x8_PW2F0[0x8]
+  - Name: pad0x8_WP73Z[0x8]
     Offset: '0x760'
     Size: '0x8'
     Type: char
@@ -356,7 +356,7 @@ ZiplineFXParams:
   Super: DataAsset
 ZiplineInputComponent:
   Attributes:
-  - Name: pad0x8_74H3N[0x8]
+  - Name: pad0x8_PN5B1[0x8]
     Offset: '0x2a0'
     Size: '0x8'
     Type: char

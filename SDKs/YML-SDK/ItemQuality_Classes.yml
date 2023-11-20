@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ItemQualityComponent:
   Attributes:
-  - Name: pad0x8_FPVI0[0x8]
+  - Name: pad0x8_NS1SO[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -10,7 +10,7 @@ ItemQualityComponent:
     Offset: '0xd0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_GCMVB[0x7]
+  - Name: pad0x7_NE2IB[0x7]
     Offset: '0xd1'
     Size: '0x7'
     Type: char

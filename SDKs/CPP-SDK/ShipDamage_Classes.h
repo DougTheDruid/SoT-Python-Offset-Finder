@@ -17,9 +17,9 @@ public:
 class GenericShipDamageablePart: public Actor
 {
 public:
-	char                                                         pad0x8_JR1QT[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_6OWST[0x8];                                 // 0x3c8(0x8)
 	class ShipDamageableComponent*                               ShipDamageableComponent;                           // 0x3d0(0x8)
-	char                                                         pad0x10_7LMKB[0x10];                               // 0x3d8(0x10)
+	char                                                         pad0x10_FQJEU[0x10];                               // 0x3d8(0x10)
 };
 
 
@@ -56,7 +56,7 @@ class ShipPartsDamageTrackerComponent: public ActorComponent
 {
 public:
 	int                                                          IsAnyShipPartDamaged;                              // 0xc8(0x4)
-	char                                                         pad0x4_4CIJM[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_EZQ83[0x4];                                 // 0xcc(0x4)
 };
 
 
@@ -65,8 +65,8 @@ class ShipRestorationSettings: public DeveloperSettings
 {
 public:
 	float                                                        MaxDistanceSquared;                                // 0x38(0x4)
-	char                                                         pad0x4_MZ60S[0x4];                                 // 0x3c(0x4)
-	char                                                         pad0x8_J64CV[0x8];                                 // 0x40(0x8)
+	char                                                         pad0x4_0GP6Z[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x8_5V6ZT[0x8];                                 // 0x40(0x8)
 };
 
 

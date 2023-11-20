@@ -1,21 +1,21 @@
 {
   "BP_AthenaGameState_C": {
     "Super": "AthenaGameState",
-    "FullSize": "0xca0",
-    "InheritedSize": "0xc90",
+    "FullSize": "0xcb0",
+    "InheritedSize": "0xca0",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "WorldMarkerRouting",
         "Type": "class WorldMarkerRoutingComponent*",
         "Size": "0x8",
-        "Offset": "0xc90"
+        "Offset": "0xca0"
       },
       {
         "Name": "DefaultSceneRoot",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0xc98"
+        "Offset": "0xca8"
       }
     ]
   },

@@ -3,10 +3,10 @@
 BP_OrderOfSoulsShopkeeper_C:
   Attributes:
   - Name: DefaultSceneRoot
-    Offset: '0x488'
+    Offset: '0x4e0'
     Size: '0x8'
     Type: class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x490'
-  InheritedSize: '0x488'
+  FullSize: '0x4e8'
+  InheritedSize: '0x4e0'
   Super: ShopkeeperInteractionProxy

@@ -20,9 +20,9 @@ public:
 struct RowboatLiveryByWeight
 {
 public:
-	char                                                         pad0x20_Z0C15[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_PE9QA[0x20];                               // 0x0(0x20)
 	float                                                        Weight;                                            // 0x20(0x4)
-	char                                                         pad0x4_MJ6XG[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_ZKZ67[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -32,7 +32,7 @@ struct RowboatDamageEffectData
 public:
 	class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x0(0x8)
 	float                                                        FadeInDuration;                                    // 0x8(0x4)
-	char                                                         pad0xc_WAT8V[0xc];                                 // 0xc(0xc)
+	char                                                         pad0xc_2S27S[0xc];                                 // 0xc(0xc)
 };
 
 
@@ -58,7 +58,7 @@ public:
 	class UClass*                                                SpeedBand;                                         // 0x0(0x8)
 	class ForceFeedbackEffect*                                   ForceFeedbackEffect;                               // 0x8(0x8)
 	int                                                          DamageAmount;                                      // 0x10(0x4)
-	char                                                         pad0x4_TDZHT[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_15ZUH[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -68,7 +68,7 @@ struct WatercraftRolloverCorrector
 public:
 	float                                                        RollThresholdToConsiderRolledOver;                 // 0x0(0x4)
 	float                                                        TorqueScalar;                                      // 0x4(0x4)
-	char                                                         pad0x4_KXB1I[0x4];                                 // 0x8(0x4)
+	char                                                         pad0x4_SU3SN[0x4];                                 // 0x8(0x4)
 };
 
 
@@ -93,7 +93,7 @@ struct Oar
 {
 public:
 	struct OarParams                                             OarParams;                                         // 0x0(0x38)
-	char                                                         pad0x28_MDGY0[0x28];                               // 0x38(0x28)
+	char                                                         pad0x28_3ECQK[0x28];                               // 0x38(0x28)
 };
 
 
@@ -101,7 +101,7 @@ public:
 struct QuestVariableWatercraft
 {
 public:
-	char                                                         pad0x30_E74G9[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_7L1YP[0x30];                               // 0x0(0x30)
 };
 
 
@@ -109,7 +109,7 @@ public:
 struct EventRowboatLoaded
 {
 public:
-	char                                                         pad0x1_OXX9V[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_SIPEJ[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -117,7 +117,7 @@ public:
 struct EventOarStrokeEnded
 {
 public:
-	char                                                         pad0x1_9HCFA[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_7GU4I[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -125,7 +125,7 @@ public:
 struct EventRowboatExitedWater
 {
 public:
-	char                                                         pad0x1_SK60M[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_2W4E1[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -133,7 +133,7 @@ public:
 struct EventRowboatEnteredWater
 {
 public:
-	char                                                         pad0x1_OCF9U[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_TLAFR[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -143,7 +143,7 @@ struct RowboatMountStateTelemetryEvent
 public:
 	struct Guid                                                  WatercraftId;                                      // 0x0(0x10)
 	byte                                                         ActionName;                                        // 0x10(0x1)
-	char                                                         pad0x3_MG2YR[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_BICIF[0x3];                                 // 0x11(0x3)
 };
 
 
@@ -154,7 +154,7 @@ public:
 	struct Guid                                                  WatercraftId;                                      // 0x0(0x10)
 	struct Vector                                                Location;                                          // 0x10(0xc)
 	byte                                                         DespawnReason;                                     // 0x1c(0x1)
-	char                                                         pad0x3_0PQLA[0x3];                                 // 0x1d(0x3)
+	char                                                         pad0x3_JIJR4[0x3];                                 // 0x1d(0x3)
 };
 
 

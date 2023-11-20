@@ -17,7 +17,7 @@ public:
 class CustomServerAssetCatalogService: public Object
 {
 public:
-	char                                                         pad0xc8_WTESL[0xc8];                               // 0x28(0xc8)
+	char                                                         pad0xc8_3YPM2[0xc8];                               // 0x28(0xc8)
 };
 
 

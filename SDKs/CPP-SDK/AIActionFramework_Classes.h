@@ -52,7 +52,7 @@ public:
 class AIActionInstigatorComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_96G9T[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_JDYD0[0x8];                                 // 0xc8(0x8)
 	TArray<class Class*>                                         CurrentRoles;                                      // 0xd0(0x10)
 	class UClass*                                                InitialActivity;                                   // 0xe0(0x8)
 	class UClass*                                                CurrentActivity;                                   // 0xe8(0x8)
@@ -77,12 +77,12 @@ public:
 class AIActionSpotComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_JW6IE[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_N2I5S[0x8];                                 // 0xc8(0x8)
 	TArray<class Class*>                                         SupportedRoles;                                    // 0xd0(0x10)
 	TArray<class Class*>                                         SupportedActivities;                               // 0xe0(0x10)
 	TArray<class Class*>                                         ContextTags;                                       // 0xf0(0x10)
 	class UClass*                                                CustomAnimInstance;                                // 0x100(0x8)
-	char                                                         pad0x18_WTXGJ[0x18];                               // 0x108(0x18)
+	char                                                         pad0x18_KVL78[0x18];                               // 0x108(0x18)
 };
 
 
@@ -97,7 +97,7 @@ public:
 class AIActionSpotService: public Object
 {
 public:
-	char                                                         pad0x68_U635R[0x68];                               // 0x28(0x68)
+	char                                                         pad0x68_DF2CZ[0x68];                               // 0x28(0x68)
 };
 
 
@@ -112,9 +112,9 @@ public:
 class DockableRotationOverrideComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_NV7J6[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_UQOLH[0x8];                                 // 0xc8(0x8)
 	bool                                                         KeepOwnerRotationWhileDocked;                      // 0xd0(0x1)
-	char                                                         pad0x7_RWPCH[0x7];                                 // 0xd1(0x7)
+	char                                                         pad0x7_RM6HI[0x7];                                 // 0xd1(0x7)
 };
 
 

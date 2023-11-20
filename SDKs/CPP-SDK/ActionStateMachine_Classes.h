@@ -42,7 +42,7 @@ public:
 class TestActionStateCreatorDefinition: public ActionStateCreatorDefinition
 {
 public:
-	char                                                         pad0x18_ID9EN[0x18];                               // 0x3c8(0x18)
+	char                                                         pad0x18_X53MW[0x18];                               // 0x3c8(0x18)
 };
 
 
@@ -85,7 +85,7 @@ public:
 class ActionStateMachineComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x790_AS47J[0x790];                             // 0xc8(0x790)
+	char                                                         pad0x790_PFFG4[0x790];                             // 0xc8(0x790)
 };
 
 
@@ -100,11 +100,11 @@ public:
 class SelfInitialisingActionStateMachineComponent: public ActionStateMachineComponent
 {
 public:
-	char                                                         pad0x8_N336C[0x8];                                 // 0x858(0x8)
+	char                                                         pad0x8_NWF3X[0x8];                                 // 0x858(0x8)
 	class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x860(0x8)
 	class UClass*                                                ActionStateCreatorDefinition;                      // 0x868(0x8)
 	class UClass*                                                ActionStateInitialStateCreatorDefinition;          // 0x870(0x8)
-	char                                                         pad0x28_HR4GJ[0x28];                               // 0x878(0x28)
+	char                                                         pad0x28_1NVIM[0x28];                               // 0x878(0x28)
 };
 
 
@@ -113,7 +113,7 @@ class CustomClientValidityCheckCallback: public Object
 {
 public:
 	bool                                                         ShouldPassClientValidation;                        // 0x28(0x1)
-	char                                                         pad0x7_OLZNJ[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_GBMGC[0x7];                                 // 0x29(0x7)
 };
 
 

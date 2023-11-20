@@ -31,7 +31,7 @@ public:
 	struct FName                                                 DemandCollectionId;                                // 0x3c(0x8)
 	int                                                          CommodityPurchaseLockoutInGameDays;                // 0x44(0x4)
 	int                                                          InGameHourWhenCommoditiesRestock;                  // 0x48(0x4)
-	char                                                         pad0x4_DERRO[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_PDI1L[0x4];                                 // 0x4c(0x4)
 	struct GameTime                                              CommodityRedemptionTimeOutPeriodInDays;            // 0x50(0x8)
 	struct StringAssetReference                                  NPCListAsset;                                      // 0x58(0x10)
 	struct StringAssetReference                                  MerchantSovereignHandInNameFileLocation;           // 0x68(0x10)
@@ -57,10 +57,10 @@ public:
 class CommodityDemandService: public Actor
 {
 public:
-	char                                                         pad0x20_WAPJF[0x20];                               // 0x3c8(0x20)
+	char                                                         pad0x20_6H8UV[0x20];                               // 0x3c8(0x20)
 	struct ActiveNPCDemands                                      ActiveCommodityDemands;                            // 0x3e8(0x20)
 	class MerchantSovereignHandInNameInformationDataAsset*       MerchantSovereignHandInNameInformationDataAsset;   // 0x408(0x8)
-	char                                                         pad0x30_73K65[0x30];                               // 0x410(0x30)
+	char                                                         pad0x30_DFTP2[0x30];                               // 0x410(0x30)
 };
 
 
@@ -92,7 +92,7 @@ class CommodityItemDesc: public BootyItemDesc
 public:
 	struct CommoditySelectionType                                CommodityType;                                     // 0x120(0x8)
 	byte                                                         CommodityDemand;                                   // 0x128(0x1)
-	char                                                         pad0x7_OQGAH[0x7];                                 // 0x129(0x7)
+	char                                                         pad0x7_SXBKB[0x7];                                 // 0x129(0x7)
 };
 
 
@@ -100,7 +100,7 @@ public:
 class CommodityPurchaseTrackingComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x90_GDELC[0x90];                               // 0xc8(0x90)
+	char                                                         pad0x90_7SL5G[0x90];                               // 0xc8(0x90)
 };
 
 
@@ -115,9 +115,9 @@ public:
 class CommodityRedemptionComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_G6UCV[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_NFIVB[0x8];                                 // 0xc8(0x8)
 	struct FText                                                 RedeemTooltipText;                                 // 0xd0(0x38)
-	char                                                         pad0x78_FK37G[0x78];                               // 0x108(0x78)
+	char                                                         pad0x78_XPRF3[0x78];                               // 0x108(0x78)
 	TArray<class Actor*>                                         PendingRedemptions;                                // 0x180(0x10)
 };
 
@@ -133,7 +133,7 @@ public:
 class CommoditySourceComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_D3HU5[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_F8WTG[0x8];                                 // 0xc8(0x8)
 	struct FName                                                 NPCIdentifier;                                     // 0xd0(0x8)
 	struct FName                                                 IslandIdentifier;                                  // 0xd8(0x8)
 };
@@ -158,7 +158,7 @@ public:
 class CrateFillerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x10_3X3NS[0x10];                               // 0xc8(0x10)
+	char                                                         pad0x10_0MG41[0x10];                               // 0xc8(0x10)
 };
 
 
@@ -174,7 +174,7 @@ class IsWieldedCommodityItemInDemandStatCondition: public TargetedStatCondition
 {
 public:
 	byte                                                         CommodityDemand;                                   // 0x30(0x1)
-	char                                                         pad0x1f_YF2IR[0x1f];                               // 0x31(0x1f)
+	char                                                         pad0x1f_47DWL[0x1f];                               // 0x31(0x1f)
 };
 
 
@@ -182,7 +182,7 @@ public:
 class SpecificItemsCrateFillerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_6J0AO[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_AZW4C[0x8];                                 // 0xc8(0x8)
 	TArray<struct StorageContainerNode>                          ItemsToFillCrateWith;                              // 0xd0(0x10)
 };
 
@@ -192,7 +192,7 @@ class WasWieldedCommodityItemBoughtAtDemandStatCondition: public TargetedStatCon
 {
 public:
 	byte                                                         CommodityDemand;                                   // 0x30(0x1)
-	char                                                         pad0x7_HMMLW[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_TJN26[0x7];                                 // 0x31(0x7)
 };
 
 

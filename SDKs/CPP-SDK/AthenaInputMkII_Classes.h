@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class AutoMoveInputComponent: public InputComponent
 {
 public:
-	char                                                         pad0x20_C8M1K[0x20];                               // 0x150(0x20)
+	char                                                         pad0x20_2LOEV[0x20];                               // 0x150(0x20)
 };
 
 
@@ -18,7 +18,7 @@ public:
 class AthenaCharacterBaseInputComponent: public AutoMoveInputComponent
 {
 public:
-	char                                                         pad0x128_31UP7[0x128];                             // 0x170(0x128)
+	char                                                         pad0x128_N9OIL[0x128];                             // 0x170(0x128)
 };
 
 
@@ -26,7 +26,7 @@ public:
 class AthenaCharacterBaseInputComponentWithInterference: public AthenaCharacterBaseInputComponent
 {
 public:
-	char                                                         pad0x8_DEWON[0x8];                                 // 0x298(0x8)
+	char                                                         pad0x8_JGQTO[0x8];                                 // 0x298(0x8)
 };
 
 
@@ -42,7 +42,7 @@ public:
 class MovementInterferenceComponent: public AutoMoveInputComponent
 {
 public:
-	char                                                         pad0x70_3NXJX[0x70];                               // 0x170(0x70)
+	char                                                         pad0x70_OIDA2[0x70];                               // 0x170(0x70)
 };
 
 

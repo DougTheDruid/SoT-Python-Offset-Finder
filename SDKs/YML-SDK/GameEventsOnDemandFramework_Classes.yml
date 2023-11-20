@@ -22,11 +22,11 @@ GameEventAvailabilityParamsDataAsset:
     Offset: '0x80'
     Size: '0x1'
     Type: bool
-  - Name: ShouldIgnoreIfCrewsEngagingEmergently
+  - Name: ShouldTrackCrewsEngagingEmergently
     Offset: '0x81'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_E9TPX[0x2]
+  - Name: pad0x2_RTUEF[0x2]
     Offset: '0x82'
     Size: '0x2'
     Type: char
@@ -38,7 +38,7 @@ GameEventAvailabilityParamsDataAsset:
     Offset: '0x88'
     Size: '0xc'
     Type: struct FeatureFlag
-  - Name: pad0x4_NZZ8P[0x4]
+  - Name: pad0x4_Z3ULE[0x4]
     Offset: '0x94'
     Size: '0x4'
     Type: char
@@ -64,7 +64,7 @@ GameEventOnDemandAnnouncementComponent:
     Offset: '0xd6'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_KEGG9[0x1]
+  - Name: pad0x1_XDGJB[0x1]
     Offset: '0xd7'
     Size: '0x1'
     Type: char
@@ -88,7 +88,7 @@ GameEventOnDemandAnnouncementComponent:
     Offset: '0x110'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x74_NZT24[0x74]
+  - Name: pad0x74_OS34G[0x74]
     Offset: '0x118'
     Size: '0x74'
     Type: char
@@ -96,12 +96,12 @@ GameEventOnDemandAnnouncementComponent:
     Offset: '0x18c'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_ACCZU[0x4]
+  - Name: pad0x1c_7XECO[0x1c]
     Offset: '0x194'
-    Size: '0x4'
+    Size: '0x1c'
     Type: char
-  ClassSize: '0xd0'
-  FullSize: '0x198'
+  ClassSize: '0xe8'
+  FullSize: '0x1b0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 GameEventOnDemandAvailabilityHandler:
@@ -118,17 +118,21 @@ GameEventOnDemandAvailabilityHandler:
     Offset: '0x38'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x60_S6235[0x60]
+  - Name: Company
     Offset: '0x40'
-    Size: '0x60'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: pad0xc0_UBOQ2[0xc0]
+    Offset: '0x48'
+    Size: '0xc0'
     Type: char
-  ClassSize: '0x78'
-  FullSize: '0xa0'
+  ClassSize: '0xe0'
+  FullSize: '0x108'
   InheritedSize: '0x28'
   Super: Object
 GameEventOnDemandAvailabilityStateTracker:
   Attributes:
-  - Name: pad0x88_EF5FL[0x88]
+  - Name: pad0x88_5VFUD[0x88]
     Offset: '0x28'
     Size: '0x88'
     Type: char
@@ -144,7 +148,7 @@ GameEventOnDemandAvailabilityStateTracker:
     Offset: '0xc8'
     Size: '0x10'
     Type: TArray<struct Guid>
-  - Name: pad0x58_RCX02[0x58]
+  - Name: pad0x58_G6YO8[0x58]
     Offset: '0xd8'
     Size: '0x58'
     Type: char
@@ -184,7 +188,7 @@ GameEventsOnDemandLoserTunnelServiceInterface:
   Super: Interface
 WaitForGameEventOnDemandToCompleteStep:
   Attributes:
-  - Name: pad0x90_E1CEX[0x90]
+  - Name: pad0x90_GRSCL[0x90]
     Offset: '0x98'
     Size: '0x90'
     Type: char
@@ -198,7 +202,7 @@ WaitForGameEventOnDemandToCompleteStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_IN85S[0x7]
+  - Name: pad0x7_4JXOC[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char

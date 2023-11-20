@@ -20,20 +20,22 @@ struct CreateMysteriousNoteGameServerResponseModel
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_E9HVX[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_FQIML[0x3];                                 // 0x1(0x3)
 	struct Guid                                                  NoteId;                                            // 0x4(0x10)
 };
 
 
-// Size 0x38
+// Size 0x40
 struct CreateMysteriousNoteGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-	char                                                         pad0x4_MGYO4[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_AUSWP[0x4];                                 // 0x4(0x4)
 	struct FString                                               NoteType;                                          // 0x8(0x10)
 	struct FString                                               NoteTitle;                                         // 0x18(0x10)
 	struct FString                                               NoteBody;                                          // 0x28(0x10)
+	bool                                                         AvailableInSaferSeas;                              // 0x38(0x1)
+	char                                                         pad0x7_OW89E[0x7];                                 // 0x39(0x7)
 };
 
 

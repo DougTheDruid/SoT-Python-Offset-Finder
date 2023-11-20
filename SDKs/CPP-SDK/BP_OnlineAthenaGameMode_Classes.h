@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0xd58] - InheritedSize[0xd50]
+// Size 0x8 (Full Size[0xd60] - InheritedSize[0xd58]
 class BP_OnlineAthenaGameMode_C: public OnlineAthenaGameMode
 {
 public:
-	class SceneComponent*                                        DefaultSceneRoot;                                  // 0xd50(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0xd58(0x8)
 };
 
 

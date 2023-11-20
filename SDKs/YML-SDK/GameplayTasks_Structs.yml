@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 GameplayResourceSet:
   Attributes:
-  - Name: pad0x2_A20C7[0x2]
+  - Name: pad0x2_LU2N2[0x2]
     Offset: '0x0'
     Size: '0x2'
     Type: char

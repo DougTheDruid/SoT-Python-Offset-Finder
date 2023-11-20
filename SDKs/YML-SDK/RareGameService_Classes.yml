@@ -8,7 +8,7 @@ RareGameServiceInterface:
   Super: Interface
 RareGameServiceManagerComponent:
   Attributes:
-  - Name: pad0x8_MI49P[0x8]
+  - Name: pad0x8_MHA3N[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -16,7 +16,7 @@ RareGameServiceManagerComponent:
     Offset: '0xd0'
     Size: '0x10'
     Type: TArray<class Object*>
-  - Name: pad0x40_KHQXS[0x40]
+  - Name: pad0x40_WU9HE[0x40]
     Offset: '0xe0'
     Size: '0x40'
     Type: char

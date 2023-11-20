@@ -12,9 +12,9 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x260_TLGQM[0x260]",
+        "Name": "pad0x27b_PC1JT[0x27b]",
         "Type": "char",
-        "Size": "0x260",
+        "Size": "0x27b",
         "Offset": "0x30"
       },
       {

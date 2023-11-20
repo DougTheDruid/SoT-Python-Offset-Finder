@@ -8,7 +8,7 @@ EnvQueryGenerator_SeaBasedGameEventOnDemandLocations:
   Super: EnvQueryGenerator
 GameEventsOnDemandAvailabilityService:
   Attributes:
-  - Name: pad0xa0_J1MB1[0xa0]
+  - Name: pad0xa0_A9UBT[0xa0]
     Offset: '0x28'
     Size: '0xa0'
     Type: char
@@ -16,7 +16,7 @@ GameEventsOnDemandAvailabilityService:
     Offset: '0xc8'
     Size: '0x8'
     Type: class World*
-  - Name: pad0x18_8CH6V[0x18]
+  - Name: pad0x18_1OEQA[0x18]
     Offset: '0xd0'
     Size: '0x18'
     Type: char
@@ -26,7 +26,7 @@ GameEventsOnDemandAvailabilityService:
   Super: Object
 GameEventsOnDemandLoserTunnelService:
   Attributes:
-  - Name: pad0x8_LOBYD[0x8]
+  - Name: pad0x8_QNL7C[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -34,7 +34,7 @@ GameEventsOnDemandLoserTunnelService:
     Offset: '0x3d0'
     Size: '0x8'
     Type: class World*
-  - Name: pad0x58_HOIBE[0x58]
+  - Name: pad0x58_TXWAS[0x58]
     Offset: '0x3d8'
     Size: '0x58'
     Type: char
@@ -42,7 +42,7 @@ GameEventsOnDemandLoserTunnelService:
     Offset: '0x430'
     Size: '0x8'
     Type: class VoyageDescDataAsset*
-  - Name: pad0x50_NXETH[0x50]
+  - Name: pad0x50_OYAQN[0x50]
     Offset: '0x438'
     Size: '0x50'
     Type: char
@@ -54,7 +54,7 @@ GameEventsOnDemandLoserTunnelService:
     Offset: '0x498'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x68_MFW3J[0x68]
+  - Name: pad0x68_X6OOS[0x68]
     Offset: '0x4a0'
     Size: '0x68'
     Type: char

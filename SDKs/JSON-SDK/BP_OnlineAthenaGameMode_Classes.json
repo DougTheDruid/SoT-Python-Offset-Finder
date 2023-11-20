@@ -1,15 +1,15 @@
 {
   "BP_OnlineAthenaGameMode_C": {
     "Super": "OnlineAthenaGameMode",
-    "FullSize": "0xd58",
-    "InheritedSize": "0xd50",
+    "FullSize": "0xd60",
+    "InheritedSize": "0xd58",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0xd50"
+        "Offset": "0xd58"
       }
     ]
   },

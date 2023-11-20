@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ActorFireDamageParams:
   Attributes:
-  - Name: pad0x20_Q38E5[0x20]
+  - Name: pad0x20_OUDXB[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
@@ -14,7 +14,7 @@ ActorFireDamageParams:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_X1E71[0x4]
+  - Name: pad0x4_R1FYF[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -103,7 +103,7 @@ FireCellDesc:
     Offset: '0x36'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_JT3L0[0x1]
+  - Name: pad0x1_CZQ7F[0x1]
     Offset: '0x37'
     Size: '0x1'
     Type: char
@@ -119,7 +119,7 @@ FireCellDesc:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0xf_94Q27[0xf]
+  - Name: pad0xf_I840W[0xf]
     Offset: '0x41'
     Size: '0xf'
     Type: char
@@ -154,7 +154,7 @@ FireCellDesc:
   ClassSize: '0x100'
 FireCellStateData:
   Attributes:
-  - Name: pad0x30_FRPWQ[0x30]
+  - Name: pad0x30_I25W8[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -169,7 +169,7 @@ FireCellStateParticleTemplate:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_O89N4[0x4]
+  - Name: pad0x4_Y08YO[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -197,7 +197,7 @@ FireCellStateParticleTemplate:
     Offset: '0x2d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_H23MX[0x2]
+  - Name: pad0x2_82HXO[0x2]
     Offset: '0x2e'
     Size: '0x2'
     Type: char
@@ -213,7 +213,7 @@ FireCellStateParticleTemplate:
     Offset: '0x35'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_XNFJQ[0x2]
+  - Name: pad0x2_YDHZO[0x2]
     Offset: '0x36'
     Size: '0x2'
     Type: char
@@ -267,7 +267,7 @@ FireDefaultVFXSpawnData:
     Offset: '0x0'
     Size: '0x38'
     Type: struct FireCellStateParticleTemplate
-  - Name: pad0x8_DFA2B[0x8]
+  - Name: pad0x8_B96BT[0x8]
     Offset: '0x38'
     Size: '0x8'
     Type: char
@@ -309,7 +309,7 @@ FireGridCellSelection:
     Offset: '0x11'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_AP7U4[0x2]
+  - Name: pad0x2_Z7MU0[0x2]
     Offset: '0x12'
     Size: '0x2'
     Type: char
@@ -351,7 +351,7 @@ FireGridCharringManager:
     Offset: '0x10'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_RKCVE[0x4]
+  - Name: pad0x4_LU7UT[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -359,14 +359,14 @@ FireGridCharringManager:
     Offset: '0x20'
     Size: '0x8'
     Type: class Texture2DDynamic*
-  - Name: pad0xb0_S8KWL[0xb0]
+  - Name: pad0xb0_MD2ZF[0xb0]
     Offset: '0x28'
     Size: '0xb0'
     Type: char
   ClassSize: '0xd8'
 FireGridLowDetailRelativeSpawnDesc:
   Attributes:
-  - Name: pad0x30_BBK3S[0x30]
+  - Name: pad0x30_2XPD0[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -474,7 +474,7 @@ FireMesh:
     Offset: '0x0'
     Size: '0x8'
     Type: class StaticMeshComponent*
-  - Name: pad0x8_EHZJS[0x8]
+  - Name: pad0x8_TVWWM[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char
@@ -489,7 +489,7 @@ FireParticleSpawnData:
     Offset: '0x4'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_MRTDE[0x8]
+  - Name: pad0x8_RNFYN[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char
@@ -500,7 +500,7 @@ FireParticleSpawnList:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<struct FireParticleSpawnData>
-  - Name: pad0x10_R5QCD[0x10]
+  - Name: pad0x10_1V7W1[0x10]
     Offset: '0x10'
     Size: '0x10'
     Type: char
@@ -511,7 +511,7 @@ FireParticleSystem:
     Offset: '0x0'
     Size: '0x8'
     Type: class ParticleSystemComponent*
-  - Name: pad0x8_EZV6M[0x8]
+  - Name: pad0x8_CQ6A3[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char
@@ -530,7 +530,7 @@ HullCharringPersistenceModel:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_SFE76[0x4]
+  - Name: pad0x4_BGR4X[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -544,14 +544,14 @@ OnFireChangedEvent:
   ClassSize: '0x1'
 OnShipIgnitedEvent:
   Attributes:
-  - Name: pad0x1_I8JHB[0x1]
+  - Name: pad0x1_0M2I3[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 PlayerFireGridTickParams:
   Attributes:
-  - Name: pad0x28_IXTMT[0x28]
+  - Name: pad0x28_W1CNM[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
@@ -563,14 +563,14 @@ PlayerFireGridTickParams:
     Offset: '0x30'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x10_54QT6[0x10]
+  - Name: pad0x10_0KQD9[0x10]
     Offset: '0x38'
     Size: '0x10'
     Type: char
   ClassSize: '0x48'
 PlayerNearBurningFireGridUpdatedEvent:
   Attributes:
-  - Name: pad0x8_IH6I1[0x8]
+  - Name: pad0x8_UHZTF[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -581,7 +581,7 @@ ReplicatedFireCellCharringData:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_OI736[0x4]
+  - Name: pad0x4_8TLBE[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -626,7 +626,7 @@ ShipFireLight:
     Offset: '0x68'
     Size: '0x8'
     Type: class MaterialInstanceDynamic*
-  - Name: pad0x20_JRMO3[0x20]
+  - Name: pad0x20_WSVIH[0x20]
     Offset: '0x70'
     Size: '0x20'
     Type: char
@@ -673,7 +673,7 @@ ShipFireLightManager:
     Offset: '0x110'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_UQ3HJ[0x4]
+  - Name: pad0x4_7VUVU[0x4]
     Offset: '0x114'
     Size: '0x4'
     Type: char
@@ -685,7 +685,7 @@ ShipFireLightManager:
     Offset: '0x120'
     Size: '0x8'
     Type: class PostProcessComponent*
-  - Name: pad0x28_E9DER[0x28]
+  - Name: pad0x28_J1QP0[0x28]
     Offset: '0x128'
     Size: '0x28'
     Type: char
@@ -711,7 +711,7 @@ ShipFireLightParams:
   ClassSize: '0x14'
 ShipFireLightRelativeSpawnDesc:
   Attributes:
-  - Name: pad0x30_3RKLY[0x30]
+  - Name: pad0x30_PSU2S[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -719,7 +719,7 @@ ShipFireLightRelativeSpawnDesc:
     Offset: '0x30'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_DWDHF[0x4]
+  - Name: pad0x4_D2F7H[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -738,14 +738,14 @@ ShipFireLightRelativeSpawnDesc:
   ClassSize: '0x58'
 ShipOnFireBeginEvent:
   Attributes:
-  - Name: pad0x1_YEFES[0x1]
+  - Name: pad0x1_WW528[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 ShipOnFireEndEvent:
   Attributes:
-  - Name: pad0x1_B5YUP[0x1]
+  - Name: pad0x1_OZGWK[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

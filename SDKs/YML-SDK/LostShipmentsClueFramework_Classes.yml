@@ -38,7 +38,7 @@ ClueDescriptor:
   Super: Object
 ClueDescriptorContainerComponent:
   Attributes:
-  - Name: pad0x8_CSS7E[0x8]
+  - Name: pad0x8_G389J[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -50,7 +50,7 @@ ClueDescriptorContainerComponent:
     Offset: '0xd8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_USB60[0x7]
+  - Name: pad0x7_XZT3Q[0x7]
     Offset: '0xd9'
     Size: '0x7'
     Type: char
@@ -80,7 +80,7 @@ ClueDescriptorGenerator:
   Super: Object
 ClueDestinationDescriptor:
   Attributes:
-  - Name: pad0x18_9ANQ3[0x18]
+  - Name: pad0x18_QOYQS[0x18]
     Offset: '0x28'
     Size: '0x18'
     Type: char
@@ -98,7 +98,7 @@ ClueDestinationGenerator:
     Offset: '0x30'
     Size: '0x10'
     Type: TArray<struct WeightedClueDestinationDescriptor>
-  - Name: pad0x50_1CUC7[0x50]
+  - Name: pad0x50_LYJMM[0x50]
     Offset: '0x40'
     Size: '0x50'
     Type: char
@@ -150,7 +150,7 @@ ClueSiteData:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0xf_SSN0L[0xf]
+  - Name: pad0xf_2KQQ0[0xf]
     Offset: '0x29'
     Size: '0xf'
     Type: char
@@ -210,7 +210,7 @@ EnvQueryTest_SeaClueSpawnLocation:
     Offset: '0x188'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x8_9QMIM[0x8]
+  - Name: pad0x8_EIWE0[0x8]
     Offset: '0x190'
     Size: '0x8'
     Type: char
@@ -224,7 +224,7 @@ FixedClueChoiceSelectionStrategy:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_5346C[0x4]
+  - Name: pad0x4_SQ33J[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -234,7 +234,7 @@ FixedClueChoiceSelectionStrategy:
   Super: ClueChoiceSelectionStrategy
 LandClueCreator:
   Attributes:
-  - Name: pad0x8_OK4WQ[0x8]
+  - Name: pad0x8_VXUP1[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -254,7 +254,7 @@ LootForVoyageRankDescAsset:
   Super: DataAsset
 NPCLootSpawnComponent:
   Attributes:
-  - Name: pad0x8_038ZC[0x8]
+  - Name: pad0x8_CZ3KS[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -280,7 +280,7 @@ RandomClueChoiceSelectionStrategy:
   Super: ClueChoiceSelectionStrategy
 SeaClueCreator:
   Attributes:
-  - Name: pad0x8_K3C88[0x8]
+  - Name: pad0x8_XXWDS[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -300,7 +300,7 @@ SeaClueSiteTypesDataAsset:
   Super: DataAsset
 TaleQuestChooseLandOrSeaStep:
   Attributes:
-  - Name: pad0x18_Y9USY[0x18]
+  - Name: pad0x18_IYD5Y[0x18]
     Offset: '0x98'
     Size: '0x18'
     Type: char
@@ -308,7 +308,7 @@ TaleQuestChooseLandOrSeaStep:
     Offset: '0xb0'
     Size: '0x8'
     Type: class SeaClueSiteTypesDataAsset*
-  - Name: pad0xe0_UOGQE[0xe0]
+  - Name: pad0xe0_97L3Y[0xe0]
     Offset: '0xb8'
     Size: '0xe0'
     Type: char
@@ -342,7 +342,7 @@ TaleQuestChooseLandOrSeaStepDesc:
     Offset: '0x98'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_4UKZK[0x4]
+  - Name: pad0x4_D87Q8[0x4]
     Offset: '0x9c'
     Size: '0x4'
     Type: char
@@ -392,7 +392,7 @@ TaleQuestClueSiteServiceDesc:
   Super: TaleQuestServiceDesc
 TaleQuestGenerateCluePointingToSiteStep:
   Attributes:
-  - Name: pad0xc0_28NH3[0xc0]
+  - Name: pad0xc0_T000Y[0xc0]
     Offset: '0x98'
     Size: '0xc0'
     Type: char
@@ -432,7 +432,7 @@ TaleQuestGenerateCluePointingToSiteStepDesc:
   Super: TaleQuestStepDesc
 TaleQuestGenerateClueSiteAtSeaLocationStep:
   Attributes:
-  - Name: pad0x60_BC860[0x60]
+  - Name: pad0x60_XDSAV[0x60]
     Offset: '0x98'
     Size: '0x60'
     Type: char
@@ -460,7 +460,7 @@ TaleQuestGenerateClueSiteAtSeaLocationStepDesc:
   Super: TaleQuestStepDesc
 TaleQuestGenerateClueSiteOnIslandStep:
   Attributes:
-  - Name: pad0x60_G1N6C[0x60]
+  - Name: pad0x60_S1351[0x60]
     Offset: '0x98'
     Size: '0x60'
     Type: char
@@ -488,7 +488,7 @@ TaleQuestGenerateClueSiteOnIslandStepDesc:
   Super: TaleQuestStepDesc
 TaleQuestGenerateDebrisTypeForVoyageRankStep:
   Attributes:
-  - Name: pad0x60_35WBS[0x60]
+  - Name: pad0x60_G8E8R[0x60]
     Offset: '0x98'
     Size: '0x60'
     Type: char
@@ -516,7 +516,7 @@ TaleQuestGenerateDebrisTypeForVoyageRankStepDesc:
   Super: TaleQuestStepDesc
 TaleQuestGenerateLootDescForVoyageRankStep:
   Attributes:
-  - Name: pad0x60_26KYT[0x60]
+  - Name: pad0x60_M36M2[0x60]
     Offset: '0x98'
     Size: '0x60'
     Type: char
@@ -572,7 +572,7 @@ TaleQuestSelectClueSiteForLootStep:
     Offset: '0x98'
     Size: '0x8'
     Type: class TaleQuestSelectClueSiteForLootStepDesc*
-  - Name: pad0x60_UC3VD[0x60]
+  - Name: pad0x60_W8JXL[0x60]
     Offset: '0xa0'
     Size: '0x60'
     Type: char
@@ -594,7 +594,7 @@ TaleQuestSelectClueSiteForLootStepDesc:
     Offset: '0x90'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_T58ZD[0x7]
+  - Name: pad0x7_XBXN7[0x7]
     Offset: '0x91'
     Size: '0x7'
     Type: char
@@ -612,7 +612,7 @@ TaleQuestSelectClueSiteForLootStepDesc:
   Super: TaleQuestStepDesc
 TaleQuestSpawnDebrisAtClueSiteStep:
   Attributes:
-  - Name: pad0xa8_PSCKU[0xa8]
+  - Name: pad0xa8_RH1PY[0xa8]
     Offset: '0x98'
     Size: '0xa8'
     Type: char
@@ -662,7 +662,7 @@ TaleQuestSpawnLootItemInClueSiteStepDesc:
     Offset: '0x110'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_WVVRN[0x7]
+  - Name: pad0x7_IBDBA[0x7]
     Offset: '0x111'
     Size: '0x7'
     Type: char
@@ -696,7 +696,7 @@ TaleQuestStoreClueOnActorStepDesc:
   Super: TaleQuestStepDesc
 TaleQuestUpdateBuoyancyAutoSinkSettingForItemStep:
   Attributes:
-  - Name: pad0x38_66S3K[0x38]
+  - Name: pad0x38_1TA93[0x38]
     Offset: '0x98'
     Size: '0x38'
     Type: char
@@ -714,7 +714,7 @@ TaleQuestUpdateBuoyancyAutoSinkSettingForItemStepDesc:
     Offset: '0xb0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_HT63D[0x7]
+  - Name: pad0x7_IOS7I[0x7]
     Offset: '0xb1'
     Size: '0x7'
     Type: char

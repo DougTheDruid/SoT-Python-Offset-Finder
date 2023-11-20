@@ -17,7 +17,7 @@ public:
 class UtilityVoyageService: public Object
 {
 public:
-	char                                                         pad0x90_3USF2[0x90];                               // 0x28(0x90)
+	char                                                         pad0x90_47YEQ[0x90];                               // 0x28(0x90)
 	TArray<class CrewVoyageParticipant*>                         Participants;                                      // 0xb8(0x10)
 	TArray<struct UtilityVoyageData>                             Voyages;                                           // 0xc8(0x10)
 };

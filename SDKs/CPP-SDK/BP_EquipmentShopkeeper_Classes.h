@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x490] - InheritedSize[0x488]
+// Size 0x8 (Full Size[0x4e8] - InheritedSize[0x4e0]
 class BP_EquipmentShopkeeper_C: public ShopkeeperInteractionProxy
 {
 public:
-	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x488(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x4e0(0x8)
 };
 
 

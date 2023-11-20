@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct EventReply
 {
 public:
-	char                                                         pad0xe8_36P7K[0xe8];                               // 0x0(0xe8)
+	char                                                         pad0xe8_4UZGK[0xe8];                               // 0x0(0xe8)
 };
 
 
@@ -39,7 +39,7 @@ struct PropertyPathSegment
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
 	int                                                          ArrayIndex;                                        // 0x8(0x4)
-	char                                                         pad0x4_6YHNX[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_FJR14[0x4];                                 // 0xc(0x4)
 	class Struct*                                                Struct;                                            // 0x10(0x8)
 	class Field*                                                 Field;                                             // 0x18(0x8)
 };
@@ -51,7 +51,7 @@ struct SlateChildSize
 public:
 	float                                                        Value;                                             // 0x0(0x4)
 	byte                                                         SizeRule;                                          // 0x4(0x1)
-	char                                                         pad0x3_1QF35[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_86L8E[0x3];                                 // 0x5(0x3)
 };
 
 
@@ -68,7 +68,7 @@ public:
 struct PaintContext
 {
 public:
-	char                                                         pad0x30_J05FC[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_ZGJU7[0x30];                               // 0x0(0x30)
 };
 
 
@@ -90,7 +90,7 @@ public:
 	struct FName                                                 SlotWidgetName;                                    // 0x8(0x8)
 	struct Guid                                                  AnimationGuid;                                     // 0x10(0x10)
 	bool                                                         bIsRootWidget;                                     // 0x20(0x1)
-	char                                                         pad0x3_PX40C[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_IQSY1[0x3];                                 // 0x21(0x3)
 };
 
 
@@ -103,7 +103,7 @@ public:
 	struct FName                                                 FunctionName;                                      // 0x18(0x8)
 	struct DynamicPropertyPath                                   SourcePath;                                        // 0x20(0x10)
 	byte                                                         Kind;                                              // 0x30(0x1)
-	char                                                         pad0x7_SWZA2[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_9IFXX[0x7];                                 // 0x31(0x7)
 };
 
 
@@ -112,9 +112,9 @@ struct WidgetNavigationData
 {
 public:
 	byte                                                         Rule;                                              // 0x0(0x1)
-	char                                                         pad0x3_8LI2J[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_NOON8[0x3];                                 // 0x1(0x3)
 	struct FName                                                 WidgetToFocus;                                     // 0x4(0x8)
-	char                                                         pad0x8_X0HY3[0x8];                                 // 0xc(0x8)
+	char                                                         pad0x8_XTL5E[0x8];                                 // 0xc(0x8)
 };
 
 
@@ -122,15 +122,15 @@ public:
 struct MovieScene2DTransformSectionTemplate
 {
 public:
-	char                                                         pad0x18_G4Y5X[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_RIIF4[0x18];                               // 0x0(0x18)
 	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
 	struct RichCurve                                             Translation;                                       // 0x38(0x78)
-	char                                                         pad0x78_VNURN[0x78];                               // 0xb0(0x78)
+	char                                                         pad0x78_RGYTS[0x78];                               // 0xb0(0x78)
 	struct RichCurve                                             Rotation;                                          // 0x128(0x78)
 	struct RichCurve                                             Scale;                                             // 0x1a0(0x78)
-	char                                                         pad0x78_D16IW[0x78];                               // 0x218(0x78)
+	char                                                         pad0x78_EZGN6[0x78];                               // 0x218(0x78)
 	struct RichCurve                                             Shear;                                             // 0x290(0x78)
-	char                                                         pad0x78_GVHY6[0x78];                               // 0x308(0x78)
+	char                                                         pad0x78_S8LTH[0x78];                               // 0x308(0x78)
 };
 
 
@@ -138,7 +138,7 @@ public:
 struct MovieSceneMarginSectionTemplate
 {
 public:
-	char                                                         pad0x18_5V6XU[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_DY5RX[0x18];                               // 0x0(0x18)
 	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
 	struct RichCurve                                             TopCurve;                                          // 0x38(0x78)
 	struct RichCurve                                             LeftCurve;                                         // 0xb0(0x78)
@@ -151,7 +151,7 @@ public:
 struct MovieSceneWidgetMaterialSectionTemplate
 {
 public:
-	char                                                         pad0x48_99VC5[0x48];                               // 0x0(0x48)
+	char                                                         pad0x48_M61VK[0x48];                               // 0x0(0x48)
 	TArray<struct FName>                                         BrushPropertyNamePath;                             // 0x48(0x10)
 };
 

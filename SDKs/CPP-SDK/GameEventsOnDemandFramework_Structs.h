@@ -13,7 +13,7 @@ public:
 	struct FString                                               EventName;                                         // 0x0(0x10)
 	byte                                                         EventCategory;                                     // 0x10(0x1)
 	byte                                                         AvailabilityState;                                 // 0x11(0x1)
-	char                                                         pad0x6_BMP4X[0x6];                                 // 0x12(0x6)
+	char                                                         pad0x6_GMPDY[0x6];                                 // 0x12(0x6)
 	class UClass*                                                ShipSizeLimit;                                     // 0x18(0x8)
 	TArray<struct Guid>                                          ParticipatingCrewIds;                              // 0x20(0x10)
 };
@@ -81,7 +81,7 @@ public:
 struct GameEventOnDemandCrewCancelledVoyageTelemetryEvent
 {
 public:
-	char                                                         pad0x1_1817R[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_8JKAP[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -89,7 +89,7 @@ public:
 struct GameEventOnDemandCrewSinkingTelemetryEvent
 {
 public:
-	char                                                         pad0x1_XTIIM[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_9UGM6[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -97,7 +97,7 @@ public:
 struct GameEventOnDemandCrewScuttledTelemetryEvent
 {
 public:
-	char                                                         pad0x1_NJJOM[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_YPJ1O[0x1];                                 // 0x0(0x1)
 };
 
 

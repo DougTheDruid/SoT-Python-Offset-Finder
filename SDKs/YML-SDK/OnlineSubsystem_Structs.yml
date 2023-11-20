@@ -10,7 +10,7 @@ AchievementUpdatedEvent:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ET578[0x3]
+  - Name: pad0x3_ZDYKD[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -76,7 +76,7 @@ InAppPurchaseProductRequest:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_XM28D[0x7]
+  - Name: pad0x7_HT52K[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -140,7 +140,7 @@ OnlineStoreCatalogItem:
     Offset: '0x50'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_VRUSJ[0x7]
+  - Name: pad0x7_Z88X6[0x7]
     Offset: '0x51'
     Size: '0x7'
     Type: char

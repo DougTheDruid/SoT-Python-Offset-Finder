@@ -97,7 +97,7 @@ MemoryVisualiserCategory:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_22961[0x3]
+  - Name: pad0x3_7M8II[0x3]
     Offset: '0x31'
     Size: '0x3'
     Type: char
@@ -133,7 +133,7 @@ MemoryVisualiserCategory:
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_FEPK8[0x4]
+  - Name: pad0x4_CAZFW[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -148,7 +148,7 @@ MemoryVisualiserClass:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_ESPBQ[0x7]
+  - Name: pad0x7_UUBTC[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -160,7 +160,7 @@ MemoryVisualiserClass:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_Q6R9C[0x4]
+  - Name: pad0x4_PA3OE[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -179,7 +179,7 @@ MemoryVisualiserStat:
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_J0S0G[0x4]
+  - Name: pad0x4_X8HB5[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char

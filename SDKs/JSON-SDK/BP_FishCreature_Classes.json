@@ -24,7 +24,7 @@
         "Offset": "0x3d1"
       },
       {
-        "Name": "pad0x2_P1F0H[0x2]",
+        "Name": "pad0x2_VG99A[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3d2"
@@ -78,7 +78,7 @@
         "Offset": "0x404"
       },
       {
-        "Name": "pad0x3_NP01N[0x3]",
+        "Name": "pad0x3_DLB8N[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x405"
@@ -96,13 +96,13 @@
         "Offset": "0x40c"
       },
       {
-        "Name": "mud",
+        "Name": "Mud",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x410"
       },
       {
-        "Name": "ShoalSpeed",
+        "Name": "shoalSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x414"
@@ -120,7 +120,7 @@
         "Offset": "0x420"
       },
       {
-        "Name": "FishSpeed",
+        "Name": "fishSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x424"
@@ -210,7 +210,7 @@
         "Offset": "0x498"
       },
       {
-        "Name": "pad0x4_LX99O[0x4]",
+        "Name": "pad0x4_J6XT1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x49c"
@@ -228,7 +228,7 @@
         "Offset": "0x4b0"
       },
       {
-        "Name": "pad0x4_Y3X31[0x4]",
+        "Name": "pad0x4_I1L7C[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4b4"

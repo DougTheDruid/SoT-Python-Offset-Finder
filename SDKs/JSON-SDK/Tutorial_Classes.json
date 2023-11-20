@@ -25,7 +25,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0xa8_1NZ3Z[0xa8]",
+        "Name": "pad0xa8_ATZJ9[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0x38"
@@ -51,7 +51,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x58_MGCVL[0x58]",
+        "Name": "pad0x58_W5RA4[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0xe8"
@@ -71,7 +71,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_FSCBF[0x7]",
+        "Name": "pad0x7_G1663[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
@@ -104,7 +104,7 @@
         "Offset": "0xc9"
       },
       {
-        "Name": "pad0x6_4HFGX[0x6]",
+        "Name": "pad0x6_ZX4RF[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0xca"
@@ -153,7 +153,7 @@
     "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "pad0x8_NOR1E[0x8]",
+        "Name": "pad0x8_FD66T[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -261,7 +261,7 @@
         "Offset": "0x11f"
       },
       {
-        "Name": "pad0x20_SJDLN[0x20]",
+        "Name": "pad0x20_TTUGK[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x120"
@@ -293,7 +293,7 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x2_33V5N[0x2]",
+        "Name": "pad0x2_FUYZK[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x32"
@@ -344,7 +344,7 @@
         "Offset": "0x6a"
       },
       {
-        "Name": "pad0x5_ODTV0[0x5]",
+        "Name": "pad0x5_CJ7M7[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x6b"
@@ -362,7 +362,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x3_33VXS[0x3]",
+        "Name": "pad0x3_U0L2I[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x79"
@@ -380,7 +380,7 @@
         "Offset": "0x84"
       },
       {
-        "Name": "pad0x3_RG0PU[0x3]",
+        "Name": "pad0x3_IP2LR[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x85"
@@ -398,7 +398,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x64_ZOHL5[0x64]",
+        "Name": "pad0x64_KAK1U[0x64]",
         "Type": "char",
         "Size": "0x64",
         "Offset": "0x94"
@@ -414,15 +414,27 @@
   },
   "IntroductionToSOTFlowStarter": {
     "Super": "TutorialStarter",
-    "FullSize": "0x68",
+    "FullSize": "0x90",
     "InheritedSize": "0x60",
-    "ClassSize": "0x8",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "TutorialTale",
         "Type": "class VoyageDescDataAsset*",
         "Size": "0x8",
         "Offset": "0x60"
+      },
+      {
+        "Name": "ShipSizeBasedIntroAnimatics",
+        "Type": "TArray<struct IntroductionToSOTIntroAnimatic>",
+        "Size": "0x10",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "pad0x18_M00EU[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x78"
       }
     ]
   },

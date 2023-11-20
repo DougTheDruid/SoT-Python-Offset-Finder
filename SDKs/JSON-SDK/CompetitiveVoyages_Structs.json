@@ -1,9 +1,43 @@
 {
+  "OnCompetitiveVoyageItemRemoved": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "RemovedItem",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CompetitiveVoyageEventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "OnCompetitiveVoyageItemAdded": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "AddedItem",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CompetitiveVoyageEventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "OnCompetitiveVoyageMainVoyageStopped": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_3344L[0x1]",
+        "Name": "pad0x1_GYKOP[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -14,7 +48,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_5CUOR[0x1]",
+        "Name": "pad0x1_KYKBY[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -32,11 +66,22 @@
       }
     ]
   },
+  "OnCompetitiveVoyageCrewOptInEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "CompetitiveVoyageItemData": {
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_BFNOO[0x8]",
+        "Name": "pad0x8_S7P19[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
@@ -66,10 +111,27 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0xc_5BULV[0xc]",
+        "Name": "pad0xc_XGOSL[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x3c"
+      }
+    ]
+  },
+  "CompetitiveVoyageEventItem": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x8_SISXZ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "EventID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -166,7 +228,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x3_0M5KW[0x3]",
+        "Name": "pad0x3_50DHD[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x19"
@@ -207,7 +269,7 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "pad0x38_6QLF2[0x38]",
+        "Name": "pad0x38_88DTL[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x0"
@@ -218,7 +280,7 @@
     "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "pad0x14_SWWMV[0x14]",
+        "Name": "pad0x14_LGVMR[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x0"
@@ -252,9 +314,118 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_QB2LQ[0x18]",
+        "Name": "pad0x18_RECR3[0x18]",
         "Type": "char",
         "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CompetitiveVoyagesItemUsageTelemetryEvent": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "EventID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ClassName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "NumTimesSwappedHands",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "CompetitiveVoyagesMigrationTelemetryEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MigrationEvents",
+        "Type": "TArray<struct MigratingEventTelemetryData>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumOptInCrews",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_9G4GR[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "MigratingEventTelemetryData": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "EventID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumMigratingCrews",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CompetitiveVoyagesEventCompletedTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EventID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumParticipatingCrews",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "NumMainVoyageCrews",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "NumScuttledCrews",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "NumOptedOutCrews",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "CompetitiveVoyagesEventCreatedTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "EventID",
+        "Type": "struct Guid",
+        "Size": "0x10",
         "Offset": "0x0"
       }
     ]

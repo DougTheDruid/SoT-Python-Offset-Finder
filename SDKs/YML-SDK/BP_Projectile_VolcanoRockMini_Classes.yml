@@ -3,14 +3,14 @@
 BP_Projectile_VolcanoRockMini_C:
   Attributes:
   - Name: StaticMesh
-    Offset: '0x698'
+    Offset: '0x6a0'
     Size: '0x8'
     Type: class StaticMeshComponent*
   - Name: Collision
-    Offset: '0x6a0'
+    Offset: '0x6a8'
     Size: '0x8'
     Type: class SphereComponent*
   ClassSize: '0x10'
-  FullSize: '0x6a8'
-  InheritedSize: '0x698'
+  FullSize: '0x6b0'
+  InheritedSize: '0x6a0'
   Super: VolcanicRock

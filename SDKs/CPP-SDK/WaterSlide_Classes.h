@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class Ride: public Actor
 {
 public:
-	char                                                         pad0x8_EEYON[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_UVA0K[0x8];                                 // 0x3c8(0x8)
 	class SplineComponent*                                       SplineComponent;                                   // 0x3d0(0x8)
 	class SceneComponent*                                        Root;                                              // 0x3d8(0x8)
 };
@@ -34,10 +34,10 @@ public:
 	class WaterSlide*                                            LeftWaterSlideRoute;                               // 0x3f8(0x8)
 	class WaterSlide*                                            RightWaterSlideRoute;                              // 0x400(0x8)
 	bool                                                         IsEndOfSlide;                                      // 0x408(0x1)
-	char                                                         pad0x3_DOMHK[0x3];                                 // 0x409(0x3)
+	char                                                         pad0x3_T0E61[0x3];                                 // 0x409(0x3)
 	struct Vector                                                EndOfSlideLaunchForce;                             // 0x40c(0xc)
 	class WaterSlideAudioParams*                                 WaterSlideAudioParams;                             // 0x418(0x8)
-	char                                                         pad0x8_VVDL0[0x8];                                 // 0x420(0x8)
+	char                                                         pad0x8_CZC96[0x8];                                 // 0x420(0x8)
 };
 
 
@@ -47,19 +47,19 @@ class Zipline: public Ride
 public:
 	byte                                                         ZiplineStartPointConfig;                           // 0x3e0(0x1)
 	bool                                                         ShouldLaunchPlayer;                                // 0x3e1(0x1)
-	char                                                         pad0x2_JULXI[0x2];                                 // 0x3e2(0x2)
+	char                                                         pad0x2_7S3OA[0x2];                                 // 0x3e2(0x2)
 	float                                                        LaunchForceMultiplier;                             // 0x3e4(0x4)
 	struct ZiplineFeelParameters                                 ZiplineFeelParameters;                             // 0x3e8(0x310)
 	class ZiplineFXParams*                                       ZiplineFXParams;                                   // 0x6f8(0x8)
 	float                                                        AttachPointSize;                                   // 0x700(0x4)
 	struct Vector2D                                              ForwardsAttachDetachOffsets;                       // 0x704(0x8)
 	struct Vector2D                                              BackwardsAttachDetachOffsets;                      // 0x70c(0x8)
-	char                                                         pad0x2c_098XH[0x2c];                               // 0x714(0x2c)
+	char                                                         pad0x2c_RU64S[0x2c];                               // 0x714(0x2c)
 	class StaticMesh*                                            ZiplineGeometry;                                   // 0x740(0x8)
 	class StaticMesh*                                            ZiplineTrolleyGeometry;                            // 0x748(0x8)
 	class MaterialInterface*                                     ZiplineGeometryMaterialOverride;                   // 0x750(0x8)
 	struct FName                                                 ZiplineGeometryMaterialScalerParameterName;        // 0x758(0x8)
-	char                                                         pad0x8_PW2F0[0x8];                                 // 0x760(0x8)
+	char                                                         pad0x8_WP73Z[0x8];                                 // 0x760(0x8)
 };
 
 
@@ -73,7 +73,7 @@ public:
 	class UClass*                                                ReleasedNotificationInputId;                       // 0x780(0x8)
 	struct Vector2D                                              AttachPointLocationOffset;                         // 0x788(0x8)
 	float                                                        HoldTime;                                          // 0x790(0x4)
-	char                                                         pad0x4_QLAPB[0x4];                                 // 0x794(0x4)
+	char                                                         pad0x4_12R8S[0x4];                                 // 0x794(0x4)
 };
 
 
@@ -88,17 +88,17 @@ public:
 class RidePlayerComponent: public DoubleIntentComponent
 {
 public:
-	char                                                         pad0x8_0CP83[0x8];                                 // 0xe0(0x8)
+	char                                                         pad0x8_ONXU5[0x8];                                 // 0xe0(0x8)
 	class ParticleSystemComponent*                               PlayerWaterSlideVFXComponent;                      // 0xe8(0x8)
 	class ParticleSystem*                                        PlayerWaterSlideVFX;                               // 0xf0(0x8)
 	float                                                        PlayerWaterSlideVFXSpawnLocationZOffset;           // 0xf8(0x4)
-	char                                                         pad0x4_NR5JX[0x4];                                 // 0xfc(0x4)
+	char                                                         pad0x4_Z0P2D[0x4];                                 // 0xfc(0x4)
 	class ParticleSystemComponent*                               PlayerZiplineWindVFXComponent;                     // 0x100(0x8)
 	class ParticleSystemComponent*                               PlayerZiplineTrailVFXComponent;                    // 0x108(0x8)
 	class ParticleSystem*                                        PlayerZiplineTrailVFX;                             // 0x110(0x8)
 	class ParticleSystem*                                        PlayerZiplineWindVFX;                              // 0x118(0x8)
 	struct Vector                                                PlayerZiplineTrailVFXSpawnLocation;                // 0x120(0xc)
-	char                                                         pad0x14_4WJPR[0x14];                               // 0x12c(0x14)
+	char                                                         pad0x14_MOI8P[0x14];                               // 0x12c(0x14)
 	class Ride*                                                  CurrentRide;                                       // 0x140(0x8)
 };
 
@@ -135,7 +135,7 @@ public:
 class WaterSlideInputComponent: public LookAtOffsetInputComponent
 {
 public:
-	char                                                         pad0x10_3T209[0x10];                               // 0x2a0(0x10)
+	char                                                         pad0x10_68YD3[0x10];                               // 0x2a0(0x10)
 };
 
 
@@ -181,7 +181,7 @@ public:
 class ZiplineInputComponent: public LookAtOffsetInputComponent
 {
 public:
-	char                                                         pad0x8_74H3N[0x8];                                 // 0x2a0(0x8)
+	char                                                         pad0x8_PN5B1[0x8];                                 // 0x2a0(0x8)
 };
 
 

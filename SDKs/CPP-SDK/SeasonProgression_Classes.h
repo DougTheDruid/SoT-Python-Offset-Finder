@@ -17,7 +17,7 @@ public:
 class PlayerSeasonProgressionComponent: public ActorComponent
 {
 public:
-	char                                                         pad0xd0_T56F7[0xd0];                               // 0xc8(0xd0)
+	char                                                         pad0xd0_IZ3GM[0xd0];                               // 0xc8(0xd0)
 };
 
 

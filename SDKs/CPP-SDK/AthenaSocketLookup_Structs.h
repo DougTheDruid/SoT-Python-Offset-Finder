@@ -19,7 +19,7 @@ struct SocketPath
 {
 public:
 	TArray<struct SocketPathNode>                                Nodes;                                             // 0x0(0x10)
-	char                                                         pad0x8_318T1[0x8];                                 // 0x10(0x8)
+	char                                                         pad0x8_3HRKM[0x8];                                 // 0x10(0x8)
 };
 
 
@@ -36,7 +36,7 @@ public:
 struct SocketLookupCache
 {
 public:
-	char                                                         pad0x50_257GV[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_9Z6E6[0x50];                               // 0x0(0x50)
 };
 
 

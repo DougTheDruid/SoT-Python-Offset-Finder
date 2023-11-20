@@ -14,7 +14,7 @@ public:
 	struct Vector                                                Destination;                                       // 0x10(0xc)
 	struct Guid                                                  AssociatedCrew;                                    // 0x1c(0x10)
 	struct Guid                                                  Id;                                                // 0x2c(0x10)
-	char                                                         pad0x4_QUSJ0[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_8ELHL[0x4];                                 // 0x3c(0x4)
 };
 
 

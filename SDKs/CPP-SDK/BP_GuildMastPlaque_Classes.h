@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x248 (Full Size[0x740] - InheritedSize[0x4f8]
+// Size 0x240 (Full Size[0x738] - InheritedSize[0x4f8]
 class BP_GuildMastPlaque_C: public GuildPlaque
 {
 public:
@@ -14,31 +14,30 @@ public:
 	struct SlateFontInfo                                         Font;                                              // 0x500(0x40)
 	class MaterialInstanceDynamic*                               GuildPlaque_MID;                                   // 0x540(0x8)
 	class Material*                                              Bevel_Material;                                    // 0x548(0x8)
-	class MaterialInstanceDynamic*                               bevelMat_MID;                                      // 0x550(0x8)
-	int                                                          TextCanvasWidth;                                   // 0x558(0x4)
-	int                                                          TextCanvasHeight;                                  // 0x55c(0x4)
-	class CanvasWorldMapComponent*                               Canvas;                                            // 0x560(0x8)
-	TArray<Str guildRank>                                        guildRank;                                         // 0x568(0x10)
-	float                                                        bevelIntensity;                                    // 0x578(0x4)
-	struct FeatureFlag                                           FeatureToggle;                                     // 0x57c(0xc)
-	class MaterialInstanceDynamic*                               TextBevel_MID;                                     // 0x648(0x8)
-	class MaterialInstanceDynamic*                               IconBevel_MID;                                     // 0x650(0x8)
-	class MaterialInstanceDynamic*                               RankBevel_MID;                                     // 0x658(0x8)
-	class MaybeCompressedCanvasRenderTarget2D*                   RankRenderTarget;                                  // 0x660(0x8)
-	class MaybeCompressedCanvasRenderTarget2D*                   TextRenderTarget;                                  // 0x668(0x8)
-	int                                                          RankTextWidth;                                     // 0x670(0x4)
-	int                                                          RankTextHeight;                                    // 0x674(0x4)
-	class MaybeCompressedCanvasRenderTarget2D*                   BevelTextRenderTarget;                             // 0x678(0x8)
-	class MaybeCompressedCanvasRenderTarget2D*                   IconRenderTarget;                                  // 0x680(0x8)
-	class MaybeCompressedCanvasRenderTarget2D*                   BevelRankRenderTarget;                             // 0x688(0x8)
-	class MaybeCompressedCanvasRenderTarget2D*                   BevelIconRenderTarget;                             // 0x690(0x8)
-	struct LinearColor                                           Gold Colour;                                       // 0x698(0x10)
-	struct LinearColor                                           Silver Colour;                                     // 0x6a8(0x10)
-	struct LinearColor                                           Bronze Colour;                                     // 0x6b8(0x10)
-	struct LinearColor                                           TextColour;                                        // 0x6c8(0x10)
-	bool                                                         IconColourFollowsMedallion;                        // 0x6d8(0x1)
-	char                                                         pad0x7_A7D07[0x7];                                 // 0x6d9(0x7)
-	char                                                         pad0x60_C1V4X[0x60];                               // 0x6e0(0x60)
+	int                                                          TextCanvasWidth;                                   // 0x550(0x4)
+	int                                                          TextCanvasHeight;                                  // 0x554(0x4)
+	class CanvasWorldMapComponent*                               Canvas;                                            // 0x558(0x8)
+	TArray<Str guildRank>                                        guildRank;                                         // 0x560(0x10)
+	float                                                        bevelIntensity;                                    // 0x570(0x4)
+	struct FeatureFlag                                           FeatureToggle;                                     // 0x574(0xc)
+	class MaterialInstanceDynamic*                               TextBevel_MID;                                     // 0x640(0x8)
+	class MaterialInstanceDynamic*                               IconBevel_MID;                                     // 0x648(0x8)
+	class MaterialInstanceDynamic*                               RankBevel_MID;                                     // 0x650(0x8)
+	class MaybeCompressedCanvasRenderTarget2D*                   RankRenderTarget;                                  // 0x658(0x8)
+	class MaybeCompressedCanvasRenderTarget2D*                   TextRenderTarget;                                  // 0x660(0x8)
+	int                                                          RankTextWidth;                                     // 0x668(0x4)
+	int                                                          RankTextHeight;                                    // 0x66c(0x4)
+	class MaybeCompressedCanvasRenderTarget2D*                   BevelTextRenderTarget;                             // 0x670(0x8)
+	class MaybeCompressedCanvasRenderTarget2D*                   IconRenderTarget;                                  // 0x678(0x8)
+	class MaybeCompressedCanvasRenderTarget2D*                   BevelRankRenderTarget;                             // 0x680(0x8)
+	class MaybeCompressedCanvasRenderTarget2D*                   BevelIconRenderTarget;                             // 0x688(0x8)
+	struct LinearColor                                           Gold Colour;                                       // 0x690(0x10)
+	struct LinearColor                                           Silver Colour;                                     // 0x6a0(0x10)
+	struct LinearColor                                           Bronze Colour;                                     // 0x6b0(0x10)
+	struct LinearColor                                           TextColour;                                        // 0x6c0(0x10)
+	bool                                                         IconColourFollowsMedallion;                        // 0x6d0(0x1)
+	char                                                         pad0x7_4XOOO[0x7];                                 // 0x6d1(0x7)
+	char                                                         pad0x60_9A8GE[0x60];                               // 0x6d8(0x60)
 };
 
 
