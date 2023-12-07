@@ -6,17 +6,17 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x30 (Full Size[0xb90] - InheritedSize[0xb60]
+// Size 0x30 (Full Size[0xba0] - InheritedSize[0xb70]
 class BP_Blunderbuss_C: public ProjectileWeapon
 {
 public:
-	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xb60(0x8)
-	class PostProcessComponent*                                  PostProcess;                                       // 0xb68(0x8)
-	byte                                                         sfx relationship;                                  // 0xb70(0x1)
-	char                                                         pad0x7_PO6IJ[0x7];                                 // 0xb71(0x7)
-	class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0xb78(0x8)
-	class Object*                                                FiringVFX3rdPerson;                                // 0xb80(0x8)
-	class WwiseEvent*                                            Blunderbuss Firing sfx 3rd person;                 // 0xb88(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xb70(0x8)
+	class PostProcessComponent*                                  PostProcess;                                       // 0xb78(0x8)
+	byte                                                         sfx relationship;                                  // 0xb80(0x1)
+	char                                                         pad0x7_814O0[0x7];                                 // 0xb81(0x7)
+	class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0xb88(0x8)
+	class Object*                                                FiringVFX3rdPerson;                                // 0xb90(0x8)
+	class WwiseEvent*                                            Blunderbuss Firing sfx 3rd person;                 // 0xb98(0x8)
 };
 
 

@@ -28,7 +28,7 @@ public:
 struct IsNewInteractingPlayerCondition
 {
 public:
-	char                                                         pad0x8_QHJJH[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_6WPSG[0x8];                                 // 0x0(0x8)
 	struct ConditionContextPayloadSelectorInstance               PlayerPayloadSelector;                             // 0x8(0x20)
 	struct ConditionContextPayloadSelectorInstance               InteractablePayloadSelector;                       // 0x28(0x20)
 };

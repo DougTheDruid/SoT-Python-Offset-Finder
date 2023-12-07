@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class StatusBase: public Object
 {
 public:
-	char                                                         pad0x8_HPC3G[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_9B5XW[0x8];                                 // 0x28(0x8)
 };
 
 
@@ -18,7 +18,7 @@ public:
 class StatusResponse: public Object
 {
 public:
-	char                                                         pad0x8_Y5HUB[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_YBFYV[0x8];                                 // 0x28(0x8)
 };
 
 
@@ -35,7 +35,7 @@ class AppliedStatusToSelfStatCondition: public TargetedStatCondition
 public:
 	TArray<class Class*>                                         Status;                                            // 0x30(0x10)
 	byte                                                         ComparisonMode;                                    // 0x40(0x1)
-	char                                                         pad0x7_H8CZI[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_FUEYG[0x7];                                 // 0x41(0x7)
 };
 
 
@@ -50,9 +50,9 @@ public:
 class BuffReceiverComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_HXX9I[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_TFKXR[0x8];                                 // 0xc8(0x8)
 	bool                                                         CanReceiveBuff;                                    // 0xd0(0x1)
-	char                                                         pad0x7_L6T2G[0x7];                                 // 0xd1(0x7)
+	char                                                         pad0x7_C3HZV[0x7];                                 // 0xd1(0x7)
 };
 
 
@@ -125,7 +125,7 @@ public:
 class LightWeightStatusEffectManagerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x20_4QAHR[0x20];                               // 0xc8(0x20)
+	char                                                         pad0x20_K5SP8[0x20];                               // 0xc8(0x20)
 	class StatusRecipientResponseList*                           RecipientResponseList;                             // 0xe8(0x8)
 	TArray<struct ActiveStatusEffect>                            ActiveEffects;                                     // 0xf0(0x10)
 };
@@ -149,9 +149,9 @@ public:
 class MaterialStatusSusceptibilityComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_EKVSY[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_F5TRF[0x8];                                 // 0xc8(0x8)
 	class PhysicalMaterial*                                      CurrentSurfaceMaterial;                            // 0xd0(0x8)
-	char                                                         pad0x20_2YLRW[0x20];                               // 0xd8(0x20)
+	char                                                         pad0x20_BLC8Q[0x20];                               // 0xd8(0x20)
 };
 
 
@@ -159,11 +159,11 @@ public:
 class SphericalStatusEffectZone: public Actor
 {
 public:
-	char                                                         pad0x8_2NATA[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_75AFF[0x8];                                 // 0x3c8(0x8)
 	class ActorActivationComponent*                              ActorActivationComponent;                          // 0x3d0(0x8)
 	class SphereComponent*                                       SphereComponent;                                   // 0x3d8(0x8)
 	class StatusEffectVolumeComponent*                           StatusEffectVolumeComponent;                       // 0x3e0(0x8)
-	char                                                         pad0xa0_O868V[0xa0];                               // 0x3e8(0xa0)
+	char                                                         pad0xa0_294F2[0xa0];                               // 0x3e8(0xa0)
 };
 
 
@@ -201,7 +201,7 @@ public:
 class StatusEffectManagerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x28_TJZ24[0x28];                               // 0xc8(0x28)
+	char                                                         pad0x28_S1KEB[0x28];                               // 0xc8(0x28)
 	class StatusRecipientResponseList*                           RecipientResponseList;                             // 0xf0(0x8)
 	TArray<struct ActiveStatusEffect>                            ActiveEffects;                                     // 0xf8(0x10)
 };
@@ -212,7 +212,7 @@ class StatusEffectOverlapZone: public SimpleOverlapZone
 {
 public:
 	TArray<struct DelayedStatusEffect>                           StatusesToApplyOnOverlap;                          // 0x4a0(0x10)
-	char                                                         pad0x10_BSSQI[0x10];                               // 0x4b0(0x10)
+	char                                                         pad0x10_BS4FJ[0x10];                               // 0x4b0(0x10)
 };
 
 
@@ -227,7 +227,7 @@ public:
 class StatusEffectPersistenceComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_1P1Q2[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_IGW41[0x8];                                 // 0xc8(0x8)
 };
 
 
@@ -244,9 +244,9 @@ class StatusEffectVolumeComponent: public SceneComponent
 {
 public:
 	bool                                                         UseOverlapEventsFromParentComponent;               // 0x2e0(0x1)
-	char                                                         pad0x7_1Y824[0x7];                                 // 0x2e1(0x7)
+	char                                                         pad0x7_Z42ZL[0x7];                                 // 0x2e1(0x7)
 	TArray<struct Status>                                        StatusEffectsToMaintain;                           // 0x2e8(0x10)
-	char                                                         pad0x8_NN7JA[0x8];                                 // 0x2f8(0x8)
+	char                                                         pad0x8_S2OP7[0x8];                                 // 0x2f8(0x8)
 };
 
 
@@ -256,7 +256,7 @@ class SetCanReceiveBuffStatusResponse: public StatusResponse
 public:
 	bool                                                         LockBuffReceiver;                                  // 0x30(0x1)
 	bool                                                         RevertOnDeactivate;                                // 0x31(0x1)
-	char                                                         pad0x6_TX8BJ[0x6];                                 // 0x32(0x6)
+	char                                                         pad0x6_AEY9F[0x6];                                 // 0x32(0x6)
 };
 
 

@@ -15,7 +15,7 @@ public:
 	class StaticMeshComponent*                                   Mesh;                                              // 0x3d8(0x8)
 	class StaticMesh*                                            Token Asset;                                       // 0x3e0(0x8)
 	float                                                        Show Token Animation Time;                         // 0x3e8(0x4)
-	char                                                         pad0x4_9Q61N[0x4];                                 // 0x3ec(0x4)
+	char                                                         pad0x4_H981F[0x4];                                 // 0x3ec(0x4)
 	class MaterialInterface*                                     Token Material;                                    // 0x3f0(0x8)
 };
 

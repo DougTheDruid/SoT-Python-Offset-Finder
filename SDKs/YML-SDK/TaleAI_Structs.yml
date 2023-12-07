@@ -6,7 +6,7 @@ SpawnAICustomOnDespawnTaskData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_8AUXF[0x4]
+  - Name: pad0x4_4HZ5D[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -18,7 +18,7 @@ SpawnAICustomOnDespawnTaskData:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_1FW4N[0x7]
+  - Name: pad0x7_5LB6A[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -33,7 +33,7 @@ SpawnAICustomOnSpawnTaskData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_0U99C[0x4]
+  - Name: pad0x4_EWVLL[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -64,7 +64,7 @@ SpawnAICustomPreSpawnTaskData:
     Offset: '0x1c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_0ZJGS[0x3]
+  - Name: pad0x3_T18GX[0x3]
     Offset: '0x1d'
     Size: '0x3'
     Type: char
@@ -103,7 +103,7 @@ SpawnAICustomSetupTaskData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_H1BR6[0x4]
+  - Name: pad0x4_BSVDU[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -129,7 +129,7 @@ SpawnActorCustomOnTriggerWaveTaskData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_FHLMX[0x4]
+  - Name: pad0x4_HNVMZ[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char

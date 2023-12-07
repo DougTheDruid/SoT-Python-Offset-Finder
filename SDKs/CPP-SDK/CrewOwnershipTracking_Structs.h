@@ -23,7 +23,7 @@ public:
 	struct Guid                                                  CrewId;                                            // 0x8(0x10)
 	struct Guid                                                  PreviousCrewId;                                    // 0x18(0x10)
 	bool                                                         IsFirstTimeOwnedByThisCrew;                        // 0x28(0x1)
-	char                                                         pad0x7_DBCY1[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_OKNV7[0x7];                                 // 0x29(0x7)
 };
 
 
@@ -40,7 +40,7 @@ struct TrackItemOwnershipEvent
 {
 public:
 	class Actor*                                                 TrackedItem;                                       // 0x0(0x8)
-	char                                                         pad0x10_KB7YC[0x10];                               // 0x8(0x10)
+	char                                                         pad0x10_4BVLO[0x10];                               // 0x8(0x10)
 };
 
 

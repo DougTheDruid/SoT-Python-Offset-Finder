@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class AddMarkToTornMapStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x20_WCOKF[0x20];                               // 0x98(0x20)
+	char                                                         pad0x20_VIAJ3[0x20];                               // 0x98(0x20)
 	class UClass*                                                MapMark;                                           // 0xb8(0x8)
 };
 
@@ -44,7 +44,7 @@ public:
 class GetNumberOfCollectedTornMapPiecesStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x40_3UQW7[0x40];                               // 0x98(0x40)
+	char                                                         pad0x40_TKP7I[0x40];                               // 0x98(0x40)
 };
 
 
@@ -70,7 +70,7 @@ class RegionIslandFilteredSelectionStrategy: public RegionIslandSelectionStrateg
 public:
 	TArray<Byte IslandTypes>                                     IslandTypes;                                       // 0x28(0x10)
 	bool                                                         UseMaxDistance;                                    // 0x38(0x1)
-	char                                                         pad0x3_ONQRH[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_Q36I5[0x3];                                 // 0x39(0x3)
 	float                                                        MaxDistanceFromStartingIsland;                     // 0x3c(0x4)
 };
 
@@ -88,7 +88,7 @@ class RegionIslandWayfinderSelectionStrategy: public RegionIslandSelectionStrate
 public:
 	TArray<Byte IslandTypes>                                     IslandTypes;                                       // 0x28(0x10)
 	float                                                        StartingIslandMinDistanceFromKeyIsland;            // 0x38(0x4)
-	char                                                         pad0x4_V9Y03[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_TABFX[0x4];                                 // 0x3c(0x4)
 	class Actor*                                                 VaultActor;                                        // 0x40(0x8)
 };
 
@@ -99,7 +99,7 @@ class SelectIslandsFromRegionStep: public TaleQuestStep
 public:
 	class RegionMapDataAsset*                                    RegionData;                                        // 0x98(0x8)
 	class RegionIslandSelectionStrategyBase*                     SelectionStrategy;                                 // 0xa0(0x8)
-	char                                                         pad0x50_SVHEL[0x50];                               // 0xa8(0x50)
+	char                                                         pad0x50_TFT7R[0x50];                               // 0xa8(0x50)
 };
 
 
@@ -124,7 +124,7 @@ public:
 	class RegionMapDataAsset*                                    RegionData;                                        // 0x98(0x8)
 	class RegionIslandWayfinderSelectionStrategy*                SelectionStrategy;                                 // 0xa0(0x8)
 	class Actor*                                                 VaultActor;                                        // 0xa8(0x8)
-	char                                                         pad0x80_CLSBG[0x80];                               // 0xb0(0x80)
+	char                                                         pad0x80_2Q4R1[0x80];                               // 0xb0(0x80)
 };
 
 
@@ -148,7 +148,7 @@ public:
 class TaleQuestAddLocationMapStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0xc0_8E5Y6[0xc0];                               // 0x98(0xc0)
+	char                                                         pad0xc0_AVRJ2[0xc0];                               // 0x98(0xc0)
 };
 
 
@@ -156,7 +156,7 @@ public:
 class TaleQuestAddTornMapStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0xd8_8XYL0[0xd8];                               // 0x98(0xd8)
+	char                                                         pad0xd8_GV8AU[0xd8];                               // 0x98(0xd8)
 };
 
 
@@ -164,7 +164,7 @@ public:
 class TaleQuestAddTradeRouteMapStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x90_UCTBS[0x90];                               // 0x98(0x90)
+	char                                                         pad0x90_EDGTZ[0x90];                               // 0x98(0x90)
 };
 
 
@@ -172,7 +172,7 @@ public:
 class TaleQuestCustomMapFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
-	char                                                         pad0x18_S49IT[0x18];                               // 0x180(0x18)
+	char                                                         pad0x18_IVCTX[0x18];                               // 0x180(0x18)
 };
 
 
@@ -180,7 +180,7 @@ public:
 class TaleQuestLocationMapChestFoundStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x8_3V0SB[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_1KJ7G[0x8];                                 // 0x98(0x8)
 };
 
 
@@ -237,7 +237,7 @@ public:
 class TaleQuestWaitForChecklistMapCompletionStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x8_SKKYS[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_79V8I[0x8];                                 // 0x98(0x8)
 };
 
 

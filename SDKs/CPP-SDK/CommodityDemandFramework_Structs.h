@@ -63,7 +63,7 @@ public:
 struct CommoditySourceMetaWrapper
 {
 public:
-	char                                                         pad0x18_I81G9[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_381CI[0x18];                               // 0x0(0x18)
 	struct FName                                                 NPCIdentifier;                                     // 0x18(0x8)
 	struct FName                                                 IslandIdentifier;                                  // 0x20(0x8)
 };
@@ -82,7 +82,7 @@ public:
 struct EventCommodityCrateRedeemed
 {
 public:
-	char                                                         pad0x18_OZHXH[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_ZUQ18[0x18];                               // 0x0(0x18)
 };
 
 
@@ -90,10 +90,10 @@ public:
 struct CommodityRedemptionTrackingModel
 {
 public:
-	char                                                         pad0x2_ESF3U[0x2];                                 // 0x0(0x2)
+	char                                                         pad0x2_OOYYM[0x2];                                 // 0x0(0x2)
 	byte                                                         NPCName;                                           // 0x2(0x1)
-	char                                                         pad0x5_54RM7[0x5];                                 // 0x3(0x5)
-	char                                                         pad0x8_V0ZP3[0x8];                                 // 0x8(0x8)
+	char                                                         pad0x5_X37UV[0x5];                                 // 0x3(0x5)
+	char                                                         pad0x8_20VHH[0x8];                                 // 0x8(0x8)
 };
 
 
@@ -103,8 +103,8 @@ struct CommodityTrackingModel
 public:
 	struct Guid                                                  ItemOfferId;                                       // 0x0(0x10)
 	byte                                                         NPCName;                                           // 0x10(0x1)
-	char                                                         pad0x7_ZZGFT[0x7];                                 // 0x11(0x7)
-	char                                                         pad0x8_MKLTV[0x8];                                 // 0x18(0x8)
+	char                                                         pad0x7_DFXPJ[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x8_DR2VO[0x8];                                 // 0x18(0x8)
 };
 
 
@@ -112,7 +112,7 @@ public:
 struct TrackCommodityPurchaseOnServerRpc
 {
 public:
-	char                                                         pad0x10_1Y8UE[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_ZLAIS[0x10];                               // 0x0(0x10)
 	class Object*                                                CommodityDemandStorageObject;                      // 0x10(0x8)
 	struct FName                                                 NPCName;                                           // 0x18(0x8)
 	struct Guid                                                  ItemOfferId;                                       // 0x20(0x10)

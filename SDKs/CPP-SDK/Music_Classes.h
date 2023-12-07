@@ -24,22 +24,22 @@ public:
 class MusicZoneComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x8_1TPQT[0x8];                                 // 0x2e0(0x8)
+	char                                                         pad0x8_N7B72[0x8];                                 // 0x2e0(0x8)
 	float                                                        InnerRadius;                                       // 0x2e8(0x4)
 	float                                                        OuterRadius;                                       // 0x2ec(0x4)
 	struct FName                                                 LocationRTPC;                                      // 0x2f0(0x8)
 	struct FName                                                 PlaybackPositionRTPC;                              // 0x2f8(0x8)
 	bool                                                         LocalRTPC;                                         // 0x300(0x1)
-	char                                                         pad0x7_AR0C8[0x7];                                 // 0x301(0x7)
+	char                                                         pad0x7_4HTLO[0x7];                                 // 0x301(0x7)
 	class WwiseEvent*                                            PlayEvent;                                         // 0x308(0x8)
 	class WwiseEvent*                                            StopEvent;                                         // 0x310(0x8)
 	TArray<class WwiseEvent*>                                    OneShotEvents;                                     // 0x318(0x10)
 	class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x328(0x8)
 	bool                                                         DisableAfterPlayThrough;                           // 0x330(0x1)
 	bool                                                         ActivateOnBeginPlay;                               // 0x331(0x1)
-	char                                                         pad0x6_B8ZL0[0x6];                                 // 0x332(0x6)
+	char                                                         pad0x6_ACOFV[0x6];                                 // 0x332(0x6)
 	struct MusicZoneRemoteValues                                 EmitterRemoteValues;                               // 0x370(0x20)
-	char                                                         pad0x40_IDIK4[0x40];                               // 0x390(0x40)
+	char                                                         pad0x40_EGXC8[0x40];                               // 0x390(0x40)
 };
 
 
@@ -51,7 +51,7 @@ public:
 	class AISpawner*                                             AISpawner;                                         // 0x3d0(0x8)
 	TArray<class Pawn*>                                          SpawnerPawns;                                      // 0x3d8(0x10)
 	byte                                                         SpawnerState;                                      // 0x3e8(0x1)
-	char                                                         pad0x7_AO6M5[0x7];                                 // 0x3e9(0x7)
+	char                                                         pad0x7_OBN66[0x7];                                 // 0x3e9(0x7)
 };
 
 
@@ -61,7 +61,7 @@ class SynchedMusicZoneComponent: public MusicZoneComponent
 public:
 	float                                                        StartDelayTime;                                    // 0x3c8(0x4)
 	int                                                          PlayFromStartTimeMS;                               // 0x3cc(0x4)
-	char                                                         pad0x30_YLRJI[0x30];                               // 0x3d0(0x30)
+	char                                                         pad0x30_KGVUB[0x30];                               // 0x3d0(0x30)
 };
 
 
@@ -76,7 +76,7 @@ public:
 class MusicZoneService: public Actor
 {
 public:
-	char                                                         pad0xc8_QPXLS[0xc8];                               // 0x3c8(0xc8)
+	char                                                         pad0xc8_1HPXL[0xc8];                               // 0x3c8(0xc8)
 };
 
 

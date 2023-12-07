@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class MigrationControlChannel: public Channel
 {
 public:
-	char                                                         pad0x48_84H92[0x48];                               // 0x68(0x48)
+	char                                                         pad0x48_G9W86[0x48];                               // 0x68(0x48)
 };
 
 
@@ -82,7 +82,7 @@ class ServerMigrationSerialisationDetailsTestsActorWithNetActorPtr: public Actor
 {
 public:
 	struct NetActorPtr                                           ActorPtr;                                          // 0x3c8(0x14)
-	char                                                         pad0x4_58QLG[0x4];                                 // 0x3dc(0x4)
+	char                                                         pad0x4_T9QEZ[0x4];                                 // 0x3dc(0x4)
 };
 
 
@@ -123,7 +123,7 @@ public:
 class ServerMigrationSerialisationDetailsTestsMigrationActorCallsOrderingTestActor: public Actor
 {
 public:
-	char                                                         pad0x8_GDHWZ[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_HZ3RR[0x8];                                 // 0x3c8(0x8)
 };
 
 
@@ -147,7 +147,7 @@ class ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseActor: pub
 {
 public:
 	struct ServerMigrationCustomMigrationSerialisationStruct     TestStruct;                                        // 0x3c8(0x4)
-	char                                                         pad0x4_961KT[0x4];                                 // 0x3cc(0x4)
+	char                                                         pad0x4_VO2KJ[0x4];                                 // 0x3cc(0x4)
 };
 
 
@@ -171,7 +171,7 @@ class ServerMigrationSerialisationDetailsTestsMigrationReferenceActor: public Ac
 {
 public:
 	class Actor*                                                 ActorReferenceWithMigrationMarkup;                 // 0x3c8(0x8)
-	char                                                         pad0x8_9TA9N[0x8];                                 // 0x3d0(0x8)
+	char                                                         pad0x8_CX9L2[0x8];                                 // 0x3d0(0x8)
 };
 
 
@@ -181,10 +181,10 @@ class ServerMigrationSerialisationDetailsTestsPropertyMarkup: public Object
 public:
 	int                                                          Int32NoMarkup;                                     // 0x28(0x4)
 	bool                                                         BoolWithMigrationMarkup;                           // 0x2c(0x1)
-	char                                                         pad0x3_M2UBZ[0x3];                                 // 0x2d(0x3)
+	char                                                         pad0x3_3NAJF[0x3];                                 // 0x2d(0x3)
 	struct FString                                               StringWithSaveGameMarkup;                          // 0x30(0x10)
 	float                                                        FloatWithMigrationAndReplicationMarkup;            // 0x40(0x4)
-	char                                                         pad0x4_6VVH2[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_W63FO[0x4];                                 // 0x44(0x4)
 };
 
 
@@ -201,7 +201,7 @@ class ServerMigrationSerialisationDetailsTestsUStructProperty: public Object
 {
 public:
 	struct ServerMigrationSerialisationDetailsTestsUStruct       SubStructWithMigrationMarkup;                      // 0x28(0xc)
-	char                                                         pad0x4_HJ9Q0[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_3MAP0[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -210,12 +210,12 @@ class ServerMigrationSettings: public Object
 {
 public:
 	int                                                          MaxSimultaneousMigrations;                         // 0x28(0x4)
-	char                                                         pad0x4_8S3AI[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_918E5[0x4];                                 // 0x2c(0x4)
 	struct FString                                               TransportImplementation;                           // 0x30(0x10)
 	int                                                          ServerDefaultListenPort;                           // 0x40(0x4)
 	int                                                          ServerListenPortRangeSize;                         // 0x44(0x4)
 	int                                                          AutomationServerDefaultListenPort;                 // 0x48(0x4)
-	char                                                         pad0x4_XZM8I[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_LOK6N[0x4];                                 // 0x4c(0x4)
 	struct FString                                               InstanceImplementation;                            // 0x50(0x10)
 	float                                                        MigrationConnectionTimeoutSeconds;                 // 0x60(0x4)
 	float                                                        WaitForClientActorRemappingTimeoutLength;          // 0x64(0x4)

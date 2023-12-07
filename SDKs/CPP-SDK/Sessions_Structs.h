@@ -12,7 +12,7 @@ struct SessionTemplate
 public:
 	struct FString                                               TemplateName;                                      // 0x0(0x10)
 	byte                                                         SessionType;                                       // 0x10(0x1)
-	char                                                         pad0x3_H9KHK[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_UT1N1[0x3];                                 // 0x11(0x3)
 	int                                                          MaxPlayers;                                        // 0x14(0x4)
 };
 
@@ -21,11 +21,11 @@ public:
 struct CrewSessionTemplate
 {
 public:
-	char                                                         pad0x18_Y29P5[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_MVKOK[0x18];                               // 0x0(0x18)
 	struct FString                                               MatchmakingHopper;                                 // 0x18(0x10)
 	class UClass*                                                ShipSize;                                          // 0x28(0x8)
 	int                                                          MaxMatchmakingPlayers;                             // 0x30(0x4)
-	char                                                         pad0x4_8T32G[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_R9K72[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -33,7 +33,7 @@ public:
 struct OnlineSessionMemberLostEvent
 {
 public:
-	char                                                         pad0x28_9NHV6[0x28];                               // 0x0(0x28)
+	char                                                         pad0x28_G2KD6[0x28];                               // 0x0(0x28)
 };
 
 
@@ -41,7 +41,7 @@ public:
 struct SessionLostEvent
 {
 public:
-	char                                                         pad0x1_IMXSB[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_YDKI9[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -49,7 +49,7 @@ public:
 struct SessionDetailsChangedEvent
 {
 public:
-	char                                                         pad0x20_K0C57[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_TO9Z9[0x20];                               // 0x0(0x20)
 };
 
 
@@ -79,7 +79,7 @@ public:
 	struct FString                                               ErrorMessage;                                      // 0x0(0x10)
 	int                                                          OperationTypeCode;                                 // 0x10(0x4)
 	bool                                                         WasCancelled;                                      // 0x14(0x1)
-	char                                                         pad0x3_3BBHJ[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_7CIAY[0x3];                                 // 0x15(0x3)
 };
 
 
@@ -87,10 +87,10 @@ public:
 struct CrewSessionMatchmakingFollowedTelemetryEvent
 {
 public:
-	char                                                         pad0x50_IVW7F[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_MO6BN[0x50];                               // 0x0(0x50)
 	struct Guid                                                  NewCrewId;                                         // 0x50(0x10)
 	int                                                          ResultCode;                                        // 0x60(0x4)
-	char                                                         pad0x4_64RIP[0x4];                                 // 0x64(0x4)
+	char                                                         pad0x4_A6LDC[0x4];                                 // 0x64(0x4)
 	struct FString                                               Message;                                           // 0x68(0x10)
 };
 
@@ -99,7 +99,7 @@ public:
 struct CrewSessionBaseSessionTelemetryEvent
 {
 public:
-	char                                                         pad0x10_B1PNL[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_SDY36[0x10];                               // 0x0(0x10)
 	struct CrewSessionTelemetry                                  Session;                                           // 0x10(0x40)
 };
 
@@ -130,7 +130,7 @@ public:
 	struct FString                                               UserId;                                            // 0x0(0x10)
 	struct FString                                               StatusString;                                      // 0x10(0x10)
 	bool                                                         IsSessionHost;                                     // 0x20(0x1)
-	char                                                         pad0x7_LTC59[0x7];                                 // 0x21(0x7)
+	char                                                         pad0x7_S11G5[0x7];                                 // 0x21(0x7)
 };
 
 
@@ -138,7 +138,7 @@ public:
 struct CrewSessionMatchmakingEndedTelemetryEvent
 {
 public:
-	char                                                         pad0x10_9AXQN[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_X6S1L[0x10];                               // 0x0(0x10)
 	struct Guid                                                  NewCrewId;                                         // 0x10(0x10)
 	struct Guid                                                  CrewMatchmakingAttemptId;                          // 0x20(0x10)
 	struct FString                                               SessionType;                                       // 0x30(0x10)
@@ -156,7 +156,7 @@ public:
 struct CrewSessionMatchmakingStartedTelemetryEvent
 {
 public:
-	char                                                         pad0x10_PD8HL[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_Q6SHK[0x10];                               // 0x0(0x10)
 	struct Guid                                                  CrewMatchmakingAttemptId;                          // 0x10(0x10)
 	struct FString                                               SessionType;                                       // 0x20(0x10)
 	struct FString                                               MatchmakingHopper;                                 // 0x30(0x10)
@@ -165,7 +165,7 @@ public:
 	int                                                          CurrentCrewCount;                                  // 0x60(0x4)
 	int                                                          EstimatedWaitTime;                                 // 0x64(0x4)
 	int                                                          MaxWaitTime;                                       // 0x68(0x4)
-	char                                                         pad0x4_ER100[0x4];                                 // 0x6c(0x4)
+	char                                                         pad0x4_Y1NUB[0x4];                                 // 0x6c(0x4)
 };
 
 
@@ -173,7 +173,7 @@ public:
 struct CrewSessionLeaveTelemetryEvent
 {
 public:
-	char                                                         pad0x10_XG2C1[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_HJI2A[0x10];                               // 0x0(0x10)
 };
 
 
@@ -181,7 +181,7 @@ public:
 struct CrewSessionJoinedTelemetryEvent
 {
 public:
-	char                                                         pad0x50_L1T67[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_7GYGC[0x50];                               // 0x0(0x50)
 	struct FString                                               JoinMethod;                                        // 0x50(0x10)
 	TArray<struct CrewSessionQoSMeasurementTelemetry>            QoSTelemetry;                                      // 0x60(0x10)
 };
@@ -196,7 +196,7 @@ public:
 	int                                                          NumFailedPings;                                    // 0x18(0x4)
 	byte                                                         ResolveResult;                                     // 0x1c(0x1)
 	bool                                                         LocationWasConsidered;                             // 0x1d(0x1)
-	char                                                         pad0x2_6U11Y[0x2];                                 // 0x1e(0x2)
+	char                                                         pad0x2_DG06Q[0x2];                                 // 0x1e(0x2)
 };
 
 
@@ -204,7 +204,7 @@ public:
 struct CrewSessionCreatedTelemetryEvent
 {
 public:
-	char                                                         pad0x50_U7MQJ[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_WLEAJ[0x50];                               // 0x0(0x50)
 	TArray<struct CrewSessionQoSMeasurementTelemetry>            QoSTelemetry;                                      // 0x50(0x10)
 };
 

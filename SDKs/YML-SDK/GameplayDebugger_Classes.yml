@@ -26,7 +26,7 @@ GameplayDebuggerSettings:
     Offset: '0x7c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_5FLER[0x3]
+  - Name: pad0x3_5PQAQ[0x3]
     Offset: '0x7d'
     Size: '0x3'
     Type: char
@@ -58,7 +58,7 @@ GameplayDebuggerSettings:
     Offset: '0x89'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1e_3WEJC[0x1e]
+  - Name: pad0x1e_1A161[0x1e]
     Offset: '0x8a'
     Size: '0x1e'
     Type: char
@@ -76,7 +76,7 @@ GameplayDebuggingComponent:
     Offset: '0x5d0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_87V91[0x4]
+  - Name: pad0x4_LJVFT[0x4]
     Offset: '0x5d4'
     Size: '0x4'
     Type: char
@@ -152,7 +152,7 @@ GameplayDebuggingComponent:
     Offset: '0x6e8'
     Size: '0x10'
     Type: TArray<Byte BlackboardRepData>
-  - Name: pad0x10_YQU98[0x10]
+  - Name: pad0x10_Q12ZJ[0x10]
     Offset: '0x6f8'
     Size: '0x10'
     Type: char
@@ -164,7 +164,7 @@ GameplayDebuggingComponent:
     Offset: '0x718'
     Size: '0x10'
     Type: TArray<Byte PathCorridorData>
-  - Name: pad0x10_LCRS5[0x10]
+  - Name: pad0x10_JSCBM[0x10]
     Offset: '0x728'
     Size: '0x10'
     Type: char
@@ -200,7 +200,7 @@ GameplayDebuggingComponent:
     Offset: '0x768'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_5CS04[0x7]
+  - Name: pad0x7_54K5G[0x7]
     Offset: '0x769'
     Size: '0x7'
     Type: char
@@ -208,7 +208,7 @@ GameplayDebuggingComponent:
     Offset: '0x770'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x78_7YZRY[0x78]
+  - Name: pad0x78_2PNOS[0x78]
     Offset: '0x778'
     Size: '0x78'
     Type: char
@@ -234,7 +234,7 @@ GameplayDebuggingControllerComponent:
     Offset: '0xe0'
     Size: '0x8'
     Type: class InputComponent*
-  - Name: pad0x28_BII69[0x28]
+  - Name: pad0x28_23EX7[0x28]
     Offset: '0xe8'
     Size: '0x28'
     Type: char
@@ -328,7 +328,7 @@ GameplayDebuggingHUDComponent:
     Offset: '0x3e0'
     Size: '0x8'
     Type: class PlayerController*
-  - Name: pad0xd0_C9H60[0xd0]
+  - Name: pad0xd0_OONJV[0xd0]
     Offset: '0x3e8'
     Size: '0xd0'
     Type: char
@@ -354,7 +354,7 @@ GameplayDebuggingReplicator:
     Offset: '0x3f8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_H6BRS[0x4]
+  - Name: pad0x4_IRK0L[0x4]
     Offset: '0x3fc'
     Size: '0x4'
     Type: char
@@ -398,7 +398,7 @@ GameplayDebuggingReplicator:
     Offset: '0x41e'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_1F9GH[0x1]
+  - Name: pad0x1_YELUD[0x1]
     Offset: '0x41f'
     Size: '0x1'
     Type: char
@@ -430,7 +430,7 @@ GameplayDebuggingReplicator:
     Offset: '0x429'
     Size: '0x1'
     Type: bool
-  - Name: pad0x4e_CJD0W[0x4e]
+  - Name: pad0x4e_KMIOR[0x4e]
     Offset: '0x42a'
     Size: '0x4e'
     Type: char
@@ -440,7 +440,7 @@ GameplayDebuggingReplicator:
   Super: Actor
 GaneplayDebuggerProxyHUD:
   Attributes:
-  - Name: pad0x30_80CPP[0x30]
+  - Name: pad0x30_FHZBR[0x30]
     Offset: '0x4c0'
     Size: '0x30'
     Type: char

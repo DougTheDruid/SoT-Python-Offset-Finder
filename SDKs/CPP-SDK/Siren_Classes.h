@@ -66,7 +66,7 @@ public:
 class SirenController: public AthenaSwimmingAIController
 {
 public:
-	char                                                         pad0x8_32EVI[0x8];                                 // 0xa70(0x8)
+	char                                                         pad0x8_G5ROU[0x8];                                 // 0xa70(0x8)
 };
 
 

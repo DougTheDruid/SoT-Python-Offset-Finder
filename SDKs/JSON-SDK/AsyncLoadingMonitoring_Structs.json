@@ -1,6 +1,6 @@
 {
   "AsyncExcessiveLoadTelemetryEvent": {
-    "ClassSize": "0x38",
+    "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "FrameCounter",
@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_MPT4F[0x4]",
+        "Name": "pad0x4_ETRXG[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -37,6 +37,29 @@
         "Type": "TArray<Str LoadedAssetList>",
         "Size": "0x10",
         "Offset": "0x28"
+      },
+      {
+        "Name": "PostLoadExcess",
+        "Type": "TArray<struct CapturedPostLoadExcess>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "CapturedPostLoadExcess": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ObjectName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PostLoadDuration",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },

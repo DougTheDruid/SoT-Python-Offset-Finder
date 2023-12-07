@@ -6,6 +6,14 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x10
+struct OnCompetitiveVoyageCrewRespawned
+{
+public:
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
+};
+
+
 // Size 0x18
 struct OnCompetitiveVoyageItemRemoved
 {
@@ -28,7 +36,7 @@ public:
 struct OnCompetitiveVoyageMainVoyageStopped
 {
 public:
-	char                                                         pad0x1_GYKOP[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_29JD8[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -36,7 +44,7 @@ public:
 struct OnCompetitiveVoyageMainVoyageStarted
 {
 public:
-	char                                                         pad0x1_KYKBY[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_LOIAB[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -60,12 +68,12 @@ public:
 struct CompetitiveVoyageItemData
 {
 public:
-	char                                                         pad0x8_S7P19[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_NE5SA[0x8];                                 // 0x0(0x8)
 	struct Guid                                                  FirstHoldingCrewId;                                // 0x8(0x10)
 	struct Guid                                                  PreviousHoldingCrewId;                             // 0x18(0x10)
 	struct Guid                                                  CurrentHoldingCrewId;                              // 0x28(0x10)
 	int                                                          NumTimesSwappedHands;                              // 0x38(0x4)
-	char                                                         pad0xc_XGOSL[0xc];                                 // 0x3c(0xc)
+	char                                                         pad0xc_CYAEK[0xc];                                 // 0x3c(0xc)
 };
 
 
@@ -73,8 +81,23 @@ public:
 struct CompetitiveVoyageEventItem
 {
 public:
-	char                                                         pad0x8_SISXZ[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_BBB9A[0x8];                                 // 0x0(0x8)
 	struct Guid                                                  EventID;                                           // 0x8(0x10)
+};
+
+
+// Size 0x50
+struct CompetitiveVoyagesRespawnParams
+{
+public:
+	float                                                        ScorePenaltyForEachMeterAwayFromShipwreck;         // 0x0(0x4)
+	float                                                        MinRespawnLocDistanceFromSunkShip;                 // 0x4(0x4)
+	float                                                        MinScorePenaltyForEnemyShipProximity;              // 0x8(0x4)
+	float                                                        MaxScorePenaltyForEnemyShipProximity;              // 0xc(0x4)
+	float                                                        MinDistanceFromEnemyShipToApplyPenalty;            // 0x10(0x4)
+	float                                                        MaxDistanceFromEnemyShipToApplyPenalty;            // 0x14(0x4)
+	struct CompetitiveVoyagesRespawnPOIData                      TreasureHuntPOIData;                               // 0x18(0x1c)
+	struct CompetitiveVoyagesRespawnPOIData                      HandInPOIData;                                     // 0x34(0x1c)
 };
 
 
@@ -92,31 +115,26 @@ public:
 };
 
 
-// Size 0x68
+// Size 0x108
 struct CompetitiveVoyagesRespawnConfig
 {
 public:
-	float                                                        ScorePenaltyForEachMeterAwayFromShipwreck;         // 0x0(0x4)
-	float                                                        MinRespawnLocDistanceFromSunkShip;                 // 0x4(0x4)
-	float                                                        MinScorePenaltyForEnemyShipProximity;              // 0x8(0x4)
-	float                                                        MaxScorePenaltyForEnemyShipProximity;              // 0xc(0x4)
-	float                                                        MinDistanceFromEnemyShipToApplyPenalty;            // 0x10(0x4)
-	float                                                        MaxDistanceFromEnemyShipToApplyPenalty;            // 0x14(0x4)
-	bool                                                         GenerateRespawnVisualizationImages;                // 0x18(0x1)
-	char                                                         pad0x3_50DHD[0x3];                                 // 0x19(0x3)
-	int                                                          NumDebugGenerations;                               // 0x1c(0x4)
-	struct CompetitiveVoyagesRespawnPOIData                      TreasureHuntPOIData;                               // 0x20(0x1c)
-	struct CompetitiveVoyagesRespawnPOIData                      HandInPOIData;                                     // 0x3c(0x1c)
-	struct Vector2D                                              MapMin;                                            // 0x58(0x8)
-	struct Vector2D                                              MapMax;                                            // 0x60(0x8)
+	struct CompetitiveVoyagesRespawnParams                       ScuttleRespawnParams;                              // 0x0(0x50)
+	struct CompetitiveVoyagesRespawnParams                       NormalRespawnParams;                               // 0x50(0x50)
+	bool                                                         GenerateRespawnVisualizationImages;                // 0xa0(0x1)
+	char                                                         pad0x3_8E3HP[0x3];                                 // 0xa1(0x3)
+	int                                                          NumDebugGenerations;                               // 0xa4(0x4)
+	struct Vector2D                                              MapMin;                                            // 0xa8(0x8)
+	struct Vector2D                                              MapMax;                                            // 0xb0(0x8)
+	struct CompetitiveVoyagesRespawnParams                       RespawnParamsToUse;                                // 0xb8(0x50)
 };
 
 
-// Size 0x38
+// Size 0x88
 struct CompetitiveVoyagesRespawnDebugMapData
 {
 public:
-	char                                                         pad0x38_88DTL[0x38];                               // 0x0(0x38)
+	char                                                         pad0x88_4730N[0x88];                               // 0x0(0x88)
 };
 
 
@@ -124,7 +142,7 @@ public:
 struct CompetitiveVoyagesRespawnSpawnScoreData
 {
 public:
-	char                                                         pad0x14_LGVMR[0x14];                               // 0x0(0x14)
+	char                                                         pad0x14_DEWSZ[0x14];                               // 0x0(0x14)
 };
 
 
@@ -142,7 +160,7 @@ public:
 struct PhasedMarkerItem
 {
 public:
-	char                                                         pad0x18_RECR3[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_9BJKF[0x18];                               // 0x0(0x18)
 };
 
 
@@ -162,7 +180,7 @@ struct CompetitiveVoyagesMigrationTelemetryEvent
 public:
 	TArray<struct MigratingEventTelemetryData>                   MigrationEvents;                                   // 0x0(0x10)
 	int                                                          NumOptInCrews;                                     // 0x10(0x4)
-	char                                                         pad0x4_9G4GR[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_ME3TG[0x4];                                 // 0x14(0x4)
 };
 
 

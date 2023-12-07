@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ObjectMessagingDispatcherComponent:
   Attributes:
-  - Name: pad0xa8_Y2DZR[0xa8]
+  - Name: pad0xa8_ZD1S6[0xa8]
     Offset: '0xc8'
     Size: '0xa8'
     Type: char

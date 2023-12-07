@@ -14,7 +14,7 @@ BP_FishCreature_C:
     Offset: '0x3d1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_VG99A[0x2]
+  - Name: pad0x2_20BGQ[0x2]
     Offset: '0x3d2'
     Size: '0x2'
     Type: char
@@ -50,7 +50,7 @@ BP_FishCreature_C:
     Offset: '0x404'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_DLB8N[0x3]
+  - Name: pad0x3_VFON6[0x3]
     Offset: '0x405'
     Size: '0x3'
     Type: char
@@ -138,7 +138,7 @@ BP_FishCreature_C:
     Offset: '0x498'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_J6XT1[0x4]
+  - Name: pad0x4_LXGZG[0x4]
     Offset: '0x49c'
     Size: '0x4'
     Type: char
@@ -150,7 +150,7 @@ BP_FishCreature_C:
     Offset: '0x4b0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_I1L7C[0x4]
+  - Name: pad0x4_XAG4N[0x4]
     Offset: '0x4b4'
     Size: '0x4'
     Type: char

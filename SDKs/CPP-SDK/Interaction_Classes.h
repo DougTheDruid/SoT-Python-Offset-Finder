@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class ModalInteraction: public Actor
 {
 public:
-	char                                                         pad0x10_EMEQX[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_XCIZ7[0x10];                               // 0x3c8(0x10)
 };
 
 
@@ -18,7 +18,7 @@ public:
 class InteractableComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_L74HC[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_5YEU7[0x8];                                 // 0xc8(0x8)
 	struct FName                                                 FeatureFlag;                                       // 0xd0(0x8)
 	struct Vector                                                BoxExtent;                                         // 0xd8(0xc)
 	struct Vector                                                BoxOrigin;                                         // 0xe4(0xc)
@@ -28,13 +28,13 @@ public:
 	bool                                                         RequiresFacingFront;                               // 0xfc(0x1)
 	bool                                                         RequiresNotAirborne;                               // 0xfc(0x1)
 	bool                                                         RequiresNotSwimming;                               // 0xfc(0x1)
-	char                                                         pad0x3_CEZAX[0x3];                                 // 0xfd(0x3)
+	char                                                         pad0x3_G4WWS[0x3];                                 // 0xfd(0x3)
 	float                                                        InteractionRadius;                                 // 0x100(0x4)
-	char                                                         pad0x4_JHZJ4[0x4];                                 // 0x104(0x4)
+	char                                                         pad0x4_WJDBS[0x4];                                 // 0x104(0x4)
 	TArray<class InteractionPrerequisiteBase*>                   InteractionPrerequisites;                          // 0x108(0x10)
 	class InteractableArea*                                      InteractableArea;                                  // 0x118(0x8)
 	byte                                                         CurrentInteractionState;                           // 0x120(0x1)
-	char                                                         pad0x17_K5UKP[0x17];                               // 0x121(0x17)
+	char                                                         pad0x17_EEK77[0x17];                               // 0x121(0x17)
 };
 
 
@@ -50,7 +50,7 @@ class CharacterInteractionComponent: public BoxComponent
 {
 public:
 	class InteractableArea*                                      CurrentOptimalInteractable;                        // 0x5f0(0x8)
-	char                                                         pad0xc8_LB908[0xc8];                               // 0x5f8(0xc8)
+	char                                                         pad0xc8_IPNSD[0xc8];                               // 0x5f8(0xc8)
 };
 
 
@@ -67,10 +67,10 @@ class InteractableArea: public Object
 public:
 	struct BoxSphereBounds                                       Bounds;                                            // 0x28(0x1c)
 	struct FName                                                 Name;                                              // 0x44(0x8)
-	char                                                         pad0x4_6WCZG[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_LMJVS[0x4];                                 // 0x4c(0x4)
 	class Object*                                                Interactable;                                      // 0x50(0x8)
 	class Actor*                                                 Parent;                                            // 0x58(0x8)
-	char                                                         pad0x10_GOUQ3[0x10];                               // 0x60(0x10)
+	char                                                         pad0x10_GUHCK[0x10];                               // 0x60(0x10)
 };
 
 
@@ -106,9 +106,9 @@ public:
 class InteractableService: public Object
 {
 public:
-	char                                                         pad0x10_SDMZT[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_2H76U[0x10];                               // 0x28(0x10)
 	TArray<class InteractableArea*>                              InteractableAreas;                                 // 0x38(0x10)
-	char                                                         pad0x28_F89MX[0x28];                               // 0x48(0x28)
+	char                                                         pad0x28_Q8JE6[0x28];                               // 0x48(0x28)
 };
 
 
@@ -123,7 +123,7 @@ public:
 class InteractionPreventionComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_N98VE[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_6DIU0[0x8];                                 // 0xc8(0x8)
 	TArray<class Actor*>                                         ActorsToPreventInteractingWith;                    // 0xd0(0x10)
 };
 
@@ -146,7 +146,7 @@ public:
 class InteractorComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_TEHJP[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_E2ME4[0x8];                                 // 0xc8(0x8)
 };
 
 
@@ -154,9 +154,9 @@ public:
 class MockActorWithCharacterInteractionComponent: public Character
 {
 public:
-	char                                                         pad0x8_NDZDI[0x8];                                 // 0x5e0(0x8)
+	char                                                         pad0x8_GM291[0x8];                                 // 0x5e0(0x8)
 	class CharacterInteractionComponent*                         CharacterInteractionComponent;                     // 0x5e8(0x8)
-	char                                                         pad0xa0_QSML3[0xa0];                               // 0x5f0(0xa0)
+	char                                                         pad0xa0_PGOER[0xa0];                               // 0x5f0(0xa0)
 };
 
 
@@ -164,7 +164,7 @@ public:
 class MockInteractableService: public Object
 {
 public:
-	char                                                         pad0x18_597TR[0x18];                               // 0x28(0x18)
+	char                                                         pad0x18_K48TK[0x18];                               // 0x28(0x18)
 };
 
 
@@ -172,7 +172,7 @@ public:
 class MockInteractorActor: public Actor
 {
 public:
-	char                                                         pad0x8_TOZIO[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_52ZQ7[0x8];                                 // 0x3c8(0x8)
 	class Object*                                                FocusedInteractable;                               // 0x3d0(0x8)
 	class Object*                                                InteractedObject;                                  // 0x3d8(0x8)
 	class UClass*                                                InteractNotificationType;                          // 0x3e0(0x8)
@@ -191,9 +191,9 @@ public:
 class PlayerInteractionTrackerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_RDUDU[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_QRRSO[0x8];                                 // 0xc8(0x8)
 	TArray<struct UniqueNetIdRepl>                               InteractedPlayers;                                 // 0xd0(0x10)
-	char                                                         pad0x10_XY3ZB[0x10];                               // 0xe0(0x10)
+	char                                                         pad0x10_YEG8R[0x10];                               // 0xe0(0x10)
 };
 
 

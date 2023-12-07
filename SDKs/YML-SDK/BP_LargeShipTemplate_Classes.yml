@@ -686,7 +686,7 @@ BP_LargeShipTemplate_C:
     Offset: '0x1dd0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_WEKL8[0x7]
+  - Name: pad0x7_F0G4V[0x7]
     Offset: '0x1dd1'
     Size: '0x7'
     Type: char
@@ -698,7 +698,7 @@ BP_LargeShipTemplate_C:
     Offset: '0x1de0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_3RDXV[0x7]
+  - Name: pad0x7_RLGM4[0x7]
     Offset: '0x1de1'
     Size: '0x7'
     Type: char

@@ -3,10 +3,10 @@
 BP_AthenaHUD_C:
   Attributes:
   - Name: DefaultSceneRoot
-    Offset: '0x828'
+    Offset: '0x860'
     Size: '0x8'
     Type: class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x830'
-  InheritedSize: '0x828'
+  FullSize: '0x868'
+  InheritedSize: '0x860'
   Super: AthenaHUD

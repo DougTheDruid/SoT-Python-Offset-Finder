@@ -67,7 +67,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_GR2QC[0x10]",
+        "Name": "pad0x10_1UED6[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -88,7 +88,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_GLMKF[0x10]",
+        "Name": "pad0x10_DXU2B[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"

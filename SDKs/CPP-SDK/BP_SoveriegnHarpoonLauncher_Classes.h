@@ -6,25 +6,25 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x20 (Full Size[0xcd0] - InheritedSize[0xcb0]
+// Size 0x20 (Full Size[0xce0] - InheritedSize[0xcc0]
 class BP_SoveriegnHarpoonLauncher_C: public HarpoonLauncher
 {
 public:
-	class HarpoonItemLocationComponent*                          HarpoonItemLocation;                               // 0xcb0(0x8)
-	class StaticMeshComponent*                                   CubeNotWalkable;                                   // 0xcb8(0x8)
-	class CapsuleComponent*                                      MountCollision;                                    // 0xcc0(0x8)
-	class CapsuleComponent*                                      BarrelCollision;                                   // 0xcc8(0x8)
+	class HarpoonItemLocationComponent*                          HarpoonItemLocation;                               // 0xcc0(0x8)
+	class StaticMeshComponent*                                   CubeNotWalkable;                                   // 0xcc8(0x8)
+	class CapsuleComponent*                                      MountCollision;                                    // 0xcd0(0x8)
+	class CapsuleComponent*                                      BarrelCollision;                                   // 0xcd8(0x8)
 };
 
 
-// Size 0x20 (Full Size[0xcd0] - InheritedSize[0xcb0]
+// Size 0x20 (Full Size[0xce0] - InheritedSize[0xcc0]
 class BP_SoveriegnHarpoonLauncher_2_C: public HarpoonLauncher
 {
 public:
-	class HarpoonItemLocationComponent*                          HarpoonItemLocation;                               // 0xcb0(0x8)
-	class StaticMeshComponent*                                   CubeNotWalkable;                                   // 0xcb8(0x8)
-	class CapsuleComponent*                                      MountCollision;                                    // 0xcc0(0x8)
-	class CapsuleComponent*                                      BarrelCollision;                                   // 0xcc8(0x8)
+	class HarpoonItemLocationComponent*                          HarpoonItemLocation;                               // 0xcc0(0x8)
+	class StaticMeshComponent*                                   CubeNotWalkable;                                   // 0xcc8(0x8)
+	class CapsuleComponent*                                      MountCollision;                                    // 0xcd0(0x8)
+	class CapsuleComponent*                                      BarrelCollision;                                   // 0xcd8(0x8)
 };
 
 

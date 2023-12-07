@@ -6,15 +6,15 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x40 (Full Size[0x4b0] - InheritedSize[0x470]
+// Size 0x40 (Full Size[0x4c8] - InheritedSize[0x488]
 class BP_AmmoChest_C: public AmmoChest
 {
 public:
-	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x470(0x8)
-	class BoxComponent*                                          Hits;                                              // 0x478(0x8)
-	class InteractableComponent*                                 Interactable;                                      // 0x480(0x8)
-	struct WwiseEmitter                                          Emitter;                                           // 0x488(0x20)
-	class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0x4a8(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x488(0x8)
+	class BoxComponent*                                          Hits;                                              // 0x490(0x8)
+	class InteractableComponent*                                 Interactable;                                      // 0x498(0x8)
+	struct WwiseEmitter                                          Emitter;                                           // 0x4a0(0x20)
+	class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0x4c0(0x8)
 };
 
 

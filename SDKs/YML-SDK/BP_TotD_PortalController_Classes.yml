@@ -38,7 +38,7 @@ BP_TotD_PortalController_C:
     Offset: '0x3f4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_K6YGN[0x3]
+  - Name: pad0x3_Z8ACZ[0x3]
     Offset: '0x3f5'
     Size: '0x3'
     Type: char

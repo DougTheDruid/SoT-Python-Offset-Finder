@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class RareGameEngine: public GameEngine
 {
 public:
-	char                                                         pad0x58_79JZH[0x58];                               // 0xa30(0x58)
+	char                                                         pad0x58_LAABZ[0x58];                               // 0xa30(0x58)
 };
 
 
@@ -26,7 +26,7 @@ public:
 class AudioHardwareDeviceService: public Object
 {
 public:
-	char                                                         pad0x18_GNHVQ[0x18];                               // 0x28(0x18)
+	char                                                         pad0x18_OXY1P[0x18];                               // 0x28(0x18)
 };
 
 
@@ -56,7 +56,7 @@ public:
 class StallDetector: public Object
 {
 public:
-	char                                                         pad0x28_TSPB4[0x28];                               // 0x28(0x28)
+	char                                                         pad0x28_EB0LL[0x28];                               // 0x28(0x28)
 };
 
 

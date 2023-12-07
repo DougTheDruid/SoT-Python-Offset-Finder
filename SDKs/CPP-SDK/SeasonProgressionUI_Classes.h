@@ -57,10 +57,10 @@ public:
 class SeasonProgressionUIComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x20_5FBQ8[0x20];                               // 0xc8(0x20)
+	char                                                         pad0x20_KSBVN[0x20];                               // 0xc8(0x20)
 	TArray<struct EnableMoreButtonEvent>                         DetailsNavigationDesc;                             // 0xe8(0x10)
 	struct SeasonProgressionUITelemetryFragment                  NextReceivedEventsTelemetryData;                   // 0xf8(0x18)
-	char                                                         pad0xb0_SYV3U[0xb0];                               // 0x110(0xb0)
+	char                                                         pad0xb0_1OTIP[0xb0];                               // 0x110(0xb0)
 };
 
 
@@ -75,9 +75,9 @@ public:
 class SeasonProgressionUIService: public Actor
 {
 public:
-	char                                                         pad0x30_LUJ53[0x30];                               // 0x3c8(0x30)
+	char                                                         pad0x30_6LVV8[0x30];                               // 0x3c8(0x30)
 	class SeasonPopupListAsset*                                  SeasonPopupListAsset;                              // 0x3f8(0x8)
-	char                                                         pad0x1a8_719GO[0x1a8];                             // 0x400(0x1a8)
+	char                                                         pad0x1a8_9RFXN[0x1a8];                             // 0x400(0x1a8)
 };
 
 

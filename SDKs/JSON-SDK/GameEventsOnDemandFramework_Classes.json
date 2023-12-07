@@ -42,7 +42,7 @@
         "Offset": "0x81"
       },
       {
-        "Name": "pad0x2_RTUEF[0x2]",
+        "Name": "pad0x2_9OWQG[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x82"
@@ -60,7 +60,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x4_Z3ULE[0x4]",
+        "Name": "pad0x4_TOD0N[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x94"
@@ -98,7 +98,7 @@
         "Offset": "0xd6"
       },
       {
-        "Name": "pad0x1_XDGJB[0x1]",
+        "Name": "pad0x1_KWEB6[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0xd7"
@@ -134,7 +134,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x74_OS34G[0x74]",
+        "Name": "pad0x74_FJUS4[0x74]",
         "Type": "char",
         "Size": "0x74",
         "Offset": "0x118"
@@ -146,7 +146,7 @@
         "Offset": "0x18c"
       },
       {
-        "Name": "pad0x1c_7XECO[0x1c]",
+        "Name": "pad0x1c_F9OOI[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0x194"
@@ -184,7 +184,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0xc0_UBOQ2[0xc0]",
+        "Name": "pad0xc0_FOM2Z[0xc0]",
         "Type": "char",
         "Size": "0xc0",
         "Offset": "0x48"
@@ -193,12 +193,12 @@
   },
   "GameEventOnDemandAvailabilityStateTracker": {
     "Super": "Object",
-    "FullSize": "0x130",
+    "FullSize": "0x138",
     "InheritedSize": "0x28",
-    "ClassSize": "0x108",
+    "ClassSize": "0x110",
     "Attributes": [
       {
-        "Name": "pad0x88_5VFUD[0x88]",
+        "Name": "pad0x88_W6BH5[0x88]",
         "Type": "char",
         "Size": "0x88",
         "Offset": "0x28"
@@ -222,9 +222,9 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x58_G6YO8[0x58]",
+        "Name": "pad0x60_0HCK6[0x60]",
         "Type": "char",
-        "Size": "0x58",
+        "Size": "0x60",
         "Offset": "0xd8"
       }
     ]
@@ -271,7 +271,7 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x90_GRSCL[0x90]",
+        "Name": "pad0x90_9YLEL[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x98"
@@ -291,7 +291,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x7_4JXOC[0x7]",
+        "Name": "pad0x7_AF8H6[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x81"

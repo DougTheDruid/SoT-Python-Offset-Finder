@@ -67,7 +67,7 @@ public:
 struct Plane
 {
 public:
-	char                                                         pad0xc_EQ5UT[0xc];                                 // 0x0(0xc)
+	char                                                         pad0xc_8EP27[0xc];                                 // 0x0(0xc)
 	float                                                        W;                                                 // 0xc(0x4)
 };
 
@@ -152,7 +152,7 @@ public:
 	struct Vector                                                Min;                                               // 0x0(0xc)
 	struct Vector                                                Max;                                               // 0xc(0xc)
 	byte                                                         IsValid;                                           // 0x18(0x1)
-	char                                                         pad0x3_NLE2D[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_RFBFV[0x3];                                 // 0x19(0x3)
 };
 
 
@@ -163,7 +163,7 @@ public:
 	struct Vector2D                                              Min;                                               // 0x0(0x8)
 	struct Vector2D                                              Max;                                               // 0x8(0x8)
 	byte                                                         IsValid;                                           // 0x10(0x1)
-	char                                                         pad0x3_TKMD0[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_UV7ED[0x3];                                 // 0x11(0x3)
 };
 
 
@@ -211,7 +211,7 @@ public:
 	float                                                        ArriveTangent;                                     // 0x8(0x4)
 	float                                                        LeaveTangent;                                      // 0xc(0x4)
 	byte                                                         InterpMode;                                        // 0x10(0x1)
-	char                                                         pad0x3_B3C49[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_IQ3CG[0x3];                                 // 0x11(0x3)
 };
 
 
@@ -221,7 +221,7 @@ struct InterpCurveFloat
 public:
 	TArray<struct InterpCurvePointFloat>                         Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_O4IQJ[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_IR6IY[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -235,7 +235,7 @@ public:
 	struct Vector2D                                              ArriveTangent;                                     // 0xc(0x8)
 	struct Vector2D                                              LeaveTangent;                                      // 0x14(0x8)
 	byte                                                         InterpMode;                                        // 0x1c(0x1)
-	char                                                         pad0x3_BLFZL[0x3];                                 // 0x1d(0x3)
+	char                                                         pad0x3_0ZIA0[0x3];                                 // 0x1d(0x3)
 };
 
 
@@ -245,7 +245,7 @@ struct InterpCurveVector2D
 public:
 	TArray<struct InterpCurvePointVector2D>                      Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_VJX0I[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_9XSMY[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -259,7 +259,7 @@ public:
 	struct Vector                                                ArriveTangent;                                     // 0x10(0xc)
 	struct Vector                                                LeaveTangent;                                      // 0x1c(0xc)
 	byte                                                         InterpMode;                                        // 0x28(0x1)
-	char                                                         pad0x3_9QU7X[0x3];                                 // 0x29(0x3)
+	char                                                         pad0x3_HRPPI[0x3];                                 // 0x29(0x3)
 };
 
 
@@ -269,7 +269,7 @@ struct InterpCurveVector
 public:
 	TArray<struct InterpCurvePointVector>                        Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_D9PRV[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_MDUWX[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -279,12 +279,12 @@ struct InterpCurvePointQuat
 {
 public:
 	float                                                        InVal;                                             // 0x0(0x4)
-	char                                                         pad0xc_SC481[0xc];                                 // 0x4(0xc)
+	char                                                         pad0xc_YGMWN[0xc];                                 // 0x4(0xc)
 	struct Quat                                                  OutVal;                                            // 0x10(0x10)
 	struct Quat                                                  ArriveTangent;                                     // 0x20(0x10)
 	struct Quat                                                  LeaveTangent;                                      // 0x30(0x10)
 	byte                                                         InterpMode;                                        // 0x40(0x1)
-	char                                                         pad0xf_RTWK5[0xf];                                 // 0x41(0xf)
+	char                                                         pad0xf_XNL6T[0xf];                                 // 0x41(0xf)
 };
 
 
@@ -294,7 +294,7 @@ struct InterpCurveQuat
 public:
 	TArray<struct InterpCurvePointQuat>                          Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_XS1W2[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_4HZJ0[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -308,7 +308,7 @@ public:
 	struct TwoVectors                                            ArriveTangent;                                     // 0x1c(0x18)
 	struct TwoVectors                                            LeaveTangent;                                      // 0x34(0x18)
 	byte                                                         InterpMode;                                        // 0x4c(0x1)
-	char                                                         pad0x3_IVG51[0x3];                                 // 0x4d(0x3)
+	char                                                         pad0x3_L7HA7[0x3];                                 // 0x4d(0x3)
 };
 
 
@@ -318,7 +318,7 @@ struct InterpCurveTwoVectors
 public:
 	TArray<struct InterpCurvePointTwoVectors>                    Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_5IP66[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_0GL0Y[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -332,7 +332,7 @@ public:
 	struct LinearColor                                           ArriveTangent;                                     // 0x14(0x10)
 	struct LinearColor                                           LeaveTangent;                                      // 0x24(0x10)
 	byte                                                         InterpMode;                                        // 0x34(0x1)
-	char                                                         pad0x3_XVTPF[0x3];                                 // 0x35(0x3)
+	char                                                         pad0x3_Q3LKL[0x3];                                 // 0x35(0x3)
 };
 
 
@@ -342,7 +342,7 @@ struct InterpCurveLinearColor
 public:
 	TArray<struct InterpCurvePointLinearColor>                   Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_VVWVV[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_SH0DA[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -353,9 +353,9 @@ struct Transform
 public:
 	struct Quat                                                  Rotation;                                          // 0x0(0x10)
 	struct Vector                                                Translation;                                       // 0x10(0xc)
-	char                                                         pad0x4_6OAQT[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_3K7H1[0x4];                                 // 0x1c(0x4)
 	struct Vector                                                Scale3D;                                           // 0x20(0xc)
-	char                                                         pad0x4_YOAF6[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_DT560[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -372,7 +372,7 @@ public:
 struct DateTime
 {
 public:
-	char                                                         pad0x8_R11ZL[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_OSSNM[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -380,7 +380,7 @@ public:
 struct Timespan
 {
 public:
-	char                                                         pad0x8_JC6UC[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_QD8OM[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -396,7 +396,7 @@ public:
 struct StringClassReference
 {
 public:
-	char                                                         pad0x10_Q1NGX[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_88RBN[0x10];                               // 0x0(0x10)
 };
 
 
@@ -404,7 +404,7 @@ public:
 struct FallbackStruct
 {
 public:
-	char                                                         pad0x1_UGT5K[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_3J9GK[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -413,7 +413,7 @@ struct FloatRangeBound
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_7POKC[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_BITRL[0x3];                                 // 0x1(0x3)
 	float                                                        Value;                                             // 0x4(0x4)
 };
 
@@ -432,7 +432,7 @@ struct Int32RangeBound
 {
 public:
 	byte                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_AYMRU[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_I1UG2[0x3];                                 // 0x1(0x3)
 	int                                                          Value;                                             // 0x4(0x4)
 };
 

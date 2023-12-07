@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CustomMeshComponent:
   Attributes:
-  - Name: pad0x10_08ER7[0x10]
+  - Name: pad0x10_D7SST[0x10]
     Offset: '0x5d0'
     Size: '0x10'
     Type: char

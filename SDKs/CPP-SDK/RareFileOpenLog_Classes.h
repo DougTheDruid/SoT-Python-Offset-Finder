@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class AggregateOpenOrderLogsCommandlet: public Commandlet
 {
 public:
-	char                                                         pad0x8_GZF5R[0x8];                                 // 0x80(0x8)
+	char                                                         pad0x8_1JPCA[0x8];                                 // 0x80(0x8)
 };
 
 
@@ -18,7 +18,7 @@ public:
 class RareFileOpenFileHandler: public Class
 {
 public:
-	char                                                         pad0x48_IRPVX[0x48];                               // 0x1c0(0x48)
+	char                                                         pad0x48_6WNBU[0x48];                               // 0x1c0(0x48)
 };
 
 
@@ -36,12 +36,12 @@ public:
 	int                                                          DataSizeSaveIncrement;                             // 0x38(0x4)
 	float                                                        TimeSaveIncrement;                                 // 0x3c(0x4)
 	byte                                                         DataSource;                                        // 0x40(0x1)
-	char                                                         pad0x7_RACFZ[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_PEBC7[0x7];                                 // 0x41(0x7)
 	TArray<Str SandboxesToEnableByDefault>                       SandboxesToEnableByDefault;                        // 0x48(0x10)
 	struct FString                                               OpenOrderLogDirectory;                             // 0x58(0x10)
 	struct FString                                               OutputOrderLogDirectory;                           // 0x68(0x10)
 	int                                                          NumberOfLogsToAggregate;                           // 0x78(0x4)
-	char                                                         pad0x14_AZ99Z[0x14];                               // 0x7c(0x14)
+	char                                                         pad0x14_ZN3V7[0x14];                               // 0x7c(0x14)
 };
 
 

@@ -120,7 +120,7 @@ VolcanoSetupDataEmbersEntry:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_4DGK9[0x4]
+  - Name: pad0x4_ICMOP[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -135,7 +135,7 @@ VolcanoStateData:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_D025I[0x3]
+  - Name: pad0x3_QZL5R[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -169,7 +169,7 @@ VolcanoTarget:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_AV2II[0x6]
+  - Name: pad0x6_KAJ24[0x6]
     Offset: '0x2'
     Size: '0x6'
     Type: char
@@ -181,7 +181,7 @@ VolcanoTarget:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_4DUZR[0x4]
+  - Name: pad0x4_687IB[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -200,7 +200,7 @@ VolcanoTargetChances:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_L295V[0x4]
+  - Name: pad0x4_C1LPK[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -216,7 +216,7 @@ VolcanoTargetChances:
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_OQ20R[0x4]
+  - Name: pad0x4_9JYKY[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -227,7 +227,7 @@ VolcanoTargetCoolDown:
     Offset: '0x0'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x8_EQQ45[0x8]
+  - Name: pad0x8_VN4GM[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char
@@ -269,7 +269,7 @@ WeightedVolcanoProjectile:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_VUEK4[0x4]
+  - Name: pad0x4_4L7JI[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -297,7 +297,7 @@ WeightedVolcanoProjectile:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_4MOUV[0x4]
+  - Name: pad0x4_052TO[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char

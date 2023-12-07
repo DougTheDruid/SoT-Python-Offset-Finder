@@ -18,10 +18,10 @@ public:
 class AbandonedNoteWeightedTextSourceComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x40_M42R6[0x40];                               // 0xc8(0x40)
+	char                                                         pad0x40_UVUSB[0x40];                               // 0xc8(0x40)
 	struct FText                                                 ClueText;                                          // 0x108(0x38)
 	struct FText                                                 TitleText;                                         // 0x140(0x38)
-	char                                                         pad0x30_F8HCL[0x30];                               // 0x178(0x30)
+	char                                                         pad0x30_G3TXG[0x30];                               // 0x178(0x30)
 };
 
 
@@ -36,7 +36,7 @@ public:
 	float                                                        InteractionHoldTime;                               // 0x488(0x4)
 	float                                                        InteractionRadius;                                 // 0x48c(0x4)
 	struct FText                                                 DisplayName;                                       // 0x490(0x38)
-	char                                                         pad0x20_O17QM[0x20];                               // 0x4c8(0x20)
+	char                                                         pad0x20_RPVX4[0x20];                               // 0x4c8(0x20)
 };
 
 
@@ -45,7 +45,7 @@ class PopUpNotificationOnItemWieldedComponent: public OnItemWieldedComponent
 {
 public:
 	class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x148(0x8)
-	char                                                         pad0x18_ABY63[0x18];                               // 0x150(0x18)
+	char                                                         pad0x18_MQ3MP[0x18];                               // 0x150(0x18)
 };
 
 
@@ -53,13 +53,13 @@ public:
 class SirenPuzzleContext: public Actor
 {
 public:
-	char                                                         pad0x8_TTXA1[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_XU8YB[0x8];                                 // 0x3c8(0x8)
 	class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
 	TArray<struct SirenPuzzleLockState>                          PuzzleLocks;                                       // 0x3d8(0x10)
 	TArray<struct LandmarkReactionKeyFrame>                      UnlockCompleteReactions;                           // 0x3e8(0x10)
 	TArray<struct LandmarkReactionKeyFrame>                      ResetLocksReactions;                               // 0x3f8(0x10)
 	TArray<Byte LockStates>                                      LockStates;                                        // 0x408(0x10)
-	char                                                         pad0xa0_FRHES[0xa0];                               // 0x418(0xa0)
+	char                                                         pad0xa0_NDB0Y[0xa0];                               // 0x418(0xa0)
 };
 
 

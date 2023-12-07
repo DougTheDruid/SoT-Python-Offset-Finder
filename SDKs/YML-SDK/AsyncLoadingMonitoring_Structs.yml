@@ -6,7 +6,7 @@ AsyncExcessiveLoadTelemetryEvent:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_MPT4F[0x4]
+  - Name: pad0x4_ETRXG[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -26,4 +26,19 @@ AsyncExcessiveLoadTelemetryEvent:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<Str LoadedAssetList>
-  ClassSize: '0x38'
+  - Name: PostLoadExcess
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<struct CapturedPostLoadExcess>
+  ClassSize: '0x48'
+CapturedPostLoadExcess:
+  Attributes:
+  - Name: ObjectName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: PostLoadDuration
+    Offset: '0x10'
+    Size: '0x8'
+    Type: double
+  ClassSize: '0x18'

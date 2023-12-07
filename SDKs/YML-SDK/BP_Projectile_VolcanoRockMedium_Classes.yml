@@ -3,18 +3,18 @@
 BP_Projectile_VolcanoRockMedium_C:
   Attributes:
   - Name: RotatingAudioSource
-    Offset: '0x6a0'
+    Offset: '0x6c0'
     Size: '0x8'
     Type: class RotatingAudioSourceComponent*
   - Name: RockMesh
-    Offset: '0x6a8'
+    Offset: '0x6c8'
     Size: '0x8'
     Type: class StaticMeshComponent*
   - Name: Collision
-    Offset: '0x6b0'
+    Offset: '0x6d0'
     Size: '0x8'
     Type: class SphereComponent*
   ClassSize: '0x18'
-  FullSize: '0x6b8'
-  InheritedSize: '0x6a0'
+  FullSize: '0x6d8'
+  InheritedSize: '0x6c0'
   Super: VolcanicRock

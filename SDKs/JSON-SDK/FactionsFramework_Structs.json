@@ -95,7 +95,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x3_I1YYB[0x3]",
+        "Name": "pad0x3_MF85H[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x19"
@@ -154,7 +154,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_VP2FQ[0x4]",
+        "Name": "pad0x4_5ODQO[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -172,7 +172,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_5RGX3[0x7]",
+        "Name": "pad0x7_B6U2X[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
@@ -190,7 +190,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_QPX5O[0x4]",
+        "Name": "pad0x4_KSQ8F[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
@@ -202,7 +202,7 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x10_U87YP[0x10]",
+        "Name": "pad0x10_KAU5T[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x68"
@@ -345,7 +345,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x7_C7872[0x7]",
+        "Name": "pad0x7_BNSTS[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x19"
@@ -374,7 +374,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x7_5ARXZ[0x7]",
+        "Name": "pad0x7_GSII4[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x19"
@@ -477,7 +477,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x3_FVWLU[0x3]",
+        "Name": "pad0x3_KSJRZ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x19"
@@ -517,13 +517,13 @@
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x6_QFTTJ[0x6]",
+        "Name": "pad0x6_J1UIS[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2"
       },
       {
-        "Name": "pad0x8_9BLL1[0x8]",
+        "Name": "pad0x8_SIK1J[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x8"

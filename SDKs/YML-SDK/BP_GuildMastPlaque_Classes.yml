@@ -106,11 +106,11 @@ BP_GuildMastPlaque_C:
     Offset: '0x6d0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_4XOOO[0x7]
+  - Name: pad0x7_GK65D[0x7]
     Offset: '0x6d1'
     Size: '0x7'
     Type: char
-  - Name: pad0x60_9A8GE[0x60]
+  - Name: pad0x60_A69IQ[0x60]
     Offset: '0x6d8'
     Size: '0x60'
     Type: char

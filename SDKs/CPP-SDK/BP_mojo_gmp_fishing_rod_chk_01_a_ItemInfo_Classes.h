@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x530] - InheritedSize[0x528]
+// Size 0x8 (Full Size[0x538] - InheritedSize[0x530]
 class BP_mojo_gmp_fishing_rod_chk_01_a_ItemInfo_C: public ItemInfo
 {
 public:
-	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x528(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x530(0x8)
 };
 
 

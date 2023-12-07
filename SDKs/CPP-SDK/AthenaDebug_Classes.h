@@ -17,7 +17,7 @@ public:
 class DrawDebugService: public Actor
 {
 public:
-	char                                                         pad0x8_WW9G7[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_5M0ZH[0x8];                                 // 0x3c8(0x8)
 	TArray<struct DrawDebugItemMessage>                          MessagesReplicated;                                // 0x3d0(0x10)
 	TArray<struct DrawDebugItemSphere>                           SpheresReplicated;                                 // 0x3e0(0x10)
 	TArray<struct DrawDebugItemBox>                              BoxesReplicated;                                   // 0x3f0(0x10)
@@ -26,7 +26,7 @@ public:
 	TArray<struct DrawDebugItemSector>                           SectorsReplicated;                                 // 0x420(0x10)
 	TArray<struct DrawDebugItemString>                           StringsReplicated;                                 // 0x430(0x10)
 	bool                                                         IsDrawDebugActive;                                 // 0x440(0x1)
-	char                                                         pad0x7f_SZGD1[0x7f];                               // 0x441(0x7f)
+	char                                                         pad0x7f_NAJZR[0x7f];                               // 0x441(0x7f)
 };
 
 
@@ -52,7 +52,7 @@ public:
 	TArray<Str OutputRingBuffer>                                 OutputRingBuffer;                                  // 0x3c8(0x10)
 	int                                                          AddAt;                                             // 0x3d8(0x4)
 	struct FName                                                 Id;                                                // 0x3dc(0x8)
-	char                                                         pad0xc_WQJVP[0xc];                                 // 0x3e4(0xc)
+	char                                                         pad0xc_I7P2H[0xc];                                 // 0x3e4(0xc)
 };
 
 
@@ -67,7 +67,7 @@ public:
 class VideprinterService: public Object
 {
 public:
-	char                                                         pad0x8_TTGCE[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_K99EM[0x8];                                 // 0x28(0x8)
 	TArray<class Videprinter*>                                   Videprinters;                                      // 0x30(0x10)
 };
 

@@ -17,12 +17,12 @@ public:
 class EmoteCard: public Actor
 {
 public:
-	char                                                         pad0x8_81ZPR[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_37BEF[0x8];                                 // 0x3c8(0x8)
 	class MaterialInstanceDynamic*                               DynamicCardSelectionMaterialInstance;              // 0x3d0(0x8)
 	class StaticMeshComponent*                                   MeshComponent;                                     // 0x3d8(0x8)
 	struct FName                                                 RandomCardParameterName;                           // 0x3e0(0x8)
 	struct Int32Range                                            RandomCardParameterRange;                          // 0x3e8(0x10)
-	char                                                         pad0x120_ZRDC4[0x120];                             // 0x3f8(0x120)
+	char                                                         pad0x120_71XE2[0x120];                             // 0x3f8(0x120)
 };
 
 
@@ -30,7 +30,7 @@ public:
 class EmoteCoin: public Actor
 {
 public:
-	char                                                         pad0x128_ZS3M1[0x128];                             // 0x3c8(0x128)
+	char                                                         pad0x128_286FF[0x128];                             // 0x3c8(0x128)
 };
 
 
@@ -54,7 +54,7 @@ class EmotePropDiceData: public EmotePropData
 {
 public:
 	byte                                                         DiceType;                                          // 0x28(0x1)
-	char                                                         pad0x7_J0PNF[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_WR5PE[0x7];                                 // 0x29(0x7)
 };
 
 
@@ -62,7 +62,7 @@ public:
 class EmoteDice: public Actor
 {
 public:
-	char                                                         pad0x130_WW8GQ[0x130];                             // 0x3c8(0x130)
+	char                                                         pad0x130_7G3KJ[0x130];                             // 0x3c8(0x130)
 };
 
 
@@ -93,10 +93,10 @@ public:
 class EmoteRandomObject: public Actor
 {
 public:
-	char                                                         pad0x8_7YV4J[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_NNEQE[0x8];                                 // 0x3c8(0x8)
 	class StaticMeshComponent*                                   MeshComponent;                                     // 0x3d0(0x8)
 	class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x3d8(0x8)
-	char                                                         pad0x128_PH8BS[0x128];                             // 0x3e0(0x128)
+	char                                                         pad0x128_TQ8TZ[0x128];                             // 0x3e0(0x128)
 };
 
 
@@ -105,7 +105,7 @@ class EmoteSettings: public DeveloperSettings
 {
 public:
 	int                                                          NumPages;                                          // 0x38(0x4)
-	char                                                         pad0x4_U9LKA[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_X7PRB[0x4];                                 // 0x3c(0x4)
 };
 
 

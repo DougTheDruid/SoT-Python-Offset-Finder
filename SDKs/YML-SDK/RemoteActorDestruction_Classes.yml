@@ -8,7 +8,7 @@ RemoteActorDestructionInterface:
   Super: Interface
 RemoteActorDestructionService:
   Attributes:
-  - Name: pad0x18_1ELKY[0x18]
+  - Name: pad0x18_U4WOX[0x18]
     Offset: '0x3c8'
     Size: '0x18'
     Type: char

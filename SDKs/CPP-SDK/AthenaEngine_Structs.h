@@ -19,7 +19,7 @@ struct UserDefinedStructWithSerialisableValue
 {
 public:
 	class ScriptStruct*                                          InternalStruct;                                    // 0x0(0x8)
-	char                                                         pad0x18_FFM6I[0x18];                               // 0x8(0x18)
+	char                                                         pad0x18_B9G75[0x18];                               // 0x8(0x18)
 };
 
 
@@ -27,7 +27,7 @@ public:
 struct BoxedRpc
 {
 public:
-	char                                                         pad0x8_US9K5[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_ZWQ59[0x8];                                 // 0x0(0x8)
 	class ScriptStruct*                                          Type;                                              // 0x8(0x8)
 };
 
@@ -47,7 +47,7 @@ public:
 struct SerialisedRpc
 {
 public:
-	char                                                         pad0x18_UKWH1[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_ULACM[0x18];                               // 0x0(0x18)
 	class ScriptStruct*                                          ContentsType;                                      // 0x18(0x8)
 };
 
@@ -74,7 +74,7 @@ struct StringAssetClassPairFeatureOverride
 {
 public:
 	struct FName                                                 FeatureName;                                       // 0x0(0x8)
-	char                                                         pad0x20_Y4TS9[0x20];                               // 0x8(0x20)
+	char                                                         pad0x20_WMV0O[0x20];                               // 0x8(0x20)
 };
 
 
@@ -91,10 +91,10 @@ public:
 struct PlaySoundRpc
 {
 public:
-	char                                                         pad0x10_WPR7Y[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_UFYBH[0x10];                               // 0x0(0x10)
 	class WwiseEvent*                                            WwiseEvent;                                        // 0x10(0x8)
 	bool                                                         PlayOnTarget;                                      // 0x18(0x1)
-	char                                                         pad0x7_JP0IY[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_GGOEG[0x7];                                 // 0x19(0x7)
 };
 
 
@@ -113,9 +113,9 @@ struct EventTriggerForceFeedback
 public:
 	class ForceFeedbackEffect*                                   ForceFeedbackEffect;                               // 0x0(0x8)
 	bool                                                         Looping;                                           // 0x8(0x1)
-	char                                                         pad0x3_C9BP4[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_KXYLF[0x3];                                 // 0x9(0x3)
 	struct FName                                                 Tag;                                               // 0xc(0x8)
-	char                                                         pad0x4_2FAEV[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_VF3J8[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -123,7 +123,7 @@ public:
 struct AthenaAsyncAssetLoaderWrapper
 {
 public:
-	char                                                         pad0x18_EZIRP[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_E1ZU7[0x18];                               // 0x0(0x18)
 };
 
 
@@ -131,7 +131,7 @@ public:
 struct EventMeshAssigned
 {
 public:
-	char                                                         pad0x1_I7X6F[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_BF74Y[0x1];                                 // 0x0(0x1)
 };
 
 

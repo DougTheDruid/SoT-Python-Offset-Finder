@@ -14,14 +14,14 @@ AbandonedNoteWeightedTextEntry:
     Offset: '0x70'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_LSMT3[0x4]
+  - Name: pad0x4_CR13I[0x4]
     Offset: '0x74'
     Size: '0x4'
     Type: char
   ClassSize: '0x78'
 SirenPuzzleCompleteEvent:
   Attributes:
-  - Name: pad0x1_G2CX0[0x1]
+  - Name: pad0x1_4FX38[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

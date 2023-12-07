@@ -60,7 +60,7 @@
         "Offset": "0x308"
       },
       {
-        "Name": "pad0x6_BVMX2[0x6]",
+        "Name": "pad0x6_RWQO1[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x30a"

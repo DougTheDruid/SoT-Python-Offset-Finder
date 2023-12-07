@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ReverbPresetControllerSettings:
   Attributes:
-  - Name: pad0xc_4W311[0xc]
+  - Name: pad0xc_MVRJ2[0xc]
     Offset: '0x0'
     Size: '0xc'
     Type: char
@@ -30,7 +30,7 @@ ReverbPresetControllerSettings:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_JO7TB[0x4]
+  - Name: pad0x4_AR057[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -65,7 +65,7 @@ WwiseAudioReverbPresets:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_JQHOL[0x3]
+  - Name: pad0x3_D3DEI[0x3]
     Offset: '0x31'
     Size: '0x3'
     Type: char
@@ -84,7 +84,7 @@ WwiseAudioReverbPresets:
   ClassSize: '0x64'
 WwiseEventParam:
   Attributes:
-  - Name: pad0x8_2B4FN[0x8]
+  - Name: pad0x8_OUIOY[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -107,7 +107,7 @@ WwiseIOPriorityMappingConfig:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_IER2J[0x3]
+  - Name: pad0x3_PO10C[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char

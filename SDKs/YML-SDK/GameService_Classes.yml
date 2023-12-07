@@ -26,7 +26,7 @@ GameServiceTickInterface:
   Super: Interface
 ServiceProviderGameState:
   Attributes:
-  - Name: pad0x120_YCT9H[0x120]
+  - Name: pad0x120_BUIAN[0x120]
     Offset: '0x420'
     Size: '0x120'
     Type: char

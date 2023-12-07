@@ -129,10 +129,10 @@ public:
 	class ChildActorComponent*                                   Wheel;                                             // 0x1c20(0x8)
 	class ChildActorComponent*                                   AudioBoat;                                         // 0x1c28(0x8)
 	byte                                                         Timeline_Disable_Secondary__Direction_3A9DF63A47F1548F84D99BAAF45F186E; // 0x1c30(0x1)
-	char                                                         pad0x7_JOM41[0x7];                                 // 0x1c31(0x7)
+	char                                                         pad0x7_RIHYJ[0x7];                                 // 0x1c31(0x7)
 	class TimelineComponent*                                     Timeline_Disable_Secondary;                        // 0x1c38(0x8)
 	byte                                                         Timeline_DisableSplash__Direction_F5D6E1F54BED8D1B7D088AB524334C7B; // 0x1c40(0x1)
-	char                                                         pad0x7_O673H[0x7];                                 // 0x1c41(0x7)
+	char                                                         pad0x7_KQTV0[0x7];                                 // 0x1c41(0x7)
 	class TimelineComponent*                                     Timeline_DisableSplash;                            // 0x1c48(0x8)
 };
 

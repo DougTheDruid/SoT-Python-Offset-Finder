@@ -6,13 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18 (Full Size[0x6b0] - InheritedSize[0x698]
+// Size 0x18 (Full Size[0x6d0] - InheritedSize[0x6b8]
 class BP_Projectile_CannonBall_C: public CannonProjectile
 {
 public:
-	class SphereCollisionExtentAdjustOverTimeComponent*          SphereCollisionExtentAdjustOverTime;               // 0x698(0x8)
-	class StaticMeshComponent*                                   CannonBall;                                        // 0x6a0(0x8)
-	class SphereComponent*                                       Collision;                                         // 0x6a8(0x8)
+	class SphereCollisionExtentAdjustOverTimeComponent*          SphereCollisionExtentAdjustOverTime;               // 0x6b8(0x8)
+	class StaticMeshComponent*                                   CannonBall;                                        // 0x6c0(0x8)
+	class SphereComponent*                                       Collision;                                         // 0x6c8(0x8)
 };
 
 

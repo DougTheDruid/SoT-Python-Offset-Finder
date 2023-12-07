@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 DeathSelfInteractionComponent:
   Attributes:
-  - Name: pad0x8_P9N5Y[0x8]
+  - Name: pad0x8_E20WH[0x8]
     Offset: '0x138'
     Size: '0x8'
     Type: char
@@ -10,7 +10,7 @@ DeathSelfInteractionComponent:
     Offset: '0x140'
     Size: '0x1'
     Type: bool
-  - Name: pad0x47_ZGY93[0x47]
+  - Name: pad0x47_RVSQO[0x47]
     Offset: '0x141'
     Size: '0x47'
     Type: char
@@ -36,7 +36,7 @@ ReviveAudioComponent:
     Offset: '0x310'
     Size: '0x8'
     Type: class ReviveEffectsDataAsset*
-  - Name: pad0x18_3WZGZ[0x18]
+  - Name: pad0x18_GQECY[0x18]
     Offset: '0x318'
     Size: '0x18'
     Type: char
@@ -46,7 +46,7 @@ ReviveAudioComponent:
   Super: WwiseEmitterComponent
 ReviveComponent:
   Attributes:
-  - Name: pad0x10_95Y9S[0x10]
+  - Name: pad0x10_A73E6[0x10]
     Offset: '0x138'
     Size: '0x10'
     Type: char
@@ -66,7 +66,7 @@ ReviveComponent:
     Offset: '0x159'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_0B2RX[0x6]
+  - Name: pad0x6_VQOWZ[0x6]
     Offset: '0x15a'
     Size: '0x6'
     Type: char
@@ -74,7 +74,7 @@ ReviveComponent:
     Offset: '0x160'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0xc_0GRFI[0xc]
+  - Name: pad0xc_7MFC7[0xc]
     Offset: '0x168'
     Size: '0xc'
     Type: char
@@ -82,7 +82,7 @@ ReviveComponent:
     Offset: '0x174'
     Size: '0x1'
     Type: bool
-  - Name: pad0xd3_Z5ZQC[0xd3]
+  - Name: pad0xd3_FZ1FG[0xd3]
     Offset: '0x175'
     Size: '0xd3'
     Type: char
@@ -90,7 +90,7 @@ ReviveComponent:
     Offset: '0x248'
     Size: '0x18'
     Type: struct Status
-  - Name: pad0x18_FUT42[0x18]
+  - Name: pad0x18_IQ2PW[0x18]
     Offset: '0x260'
     Size: '0x18'
     Type: char
@@ -106,7 +106,7 @@ ReviveConditionalStatTrigger:
   Super: ConditionalStatsTriggerType
 ReviveDebugComponent:
   Attributes:
-  - Name: pad0x98_6QB5V[0x98]
+  - Name: pad0x98_D0DVS[0x98]
     Offset: '0xc8'
     Size: '0x98'
     Type: char
@@ -222,7 +222,7 @@ ReviveEffectsDataAsset:
   Super: DataAsset
 ReviveGhost:
   Attributes:
-  - Name: pad0x10_EZGCD[0x10]
+  - Name: pad0x10_EKGLX[0x10]
     Offset: '0x3c8'
     Size: '0x10'
     Type: char
@@ -258,7 +258,7 @@ ReviveGhost:
     Offset: '0x418'
     Size: '0x8'
     Type: class ReviveAudioComponent*
-  - Name: pad0x10_PAZ5G[0x10]
+  - Name: pad0x10_QYFF2[0x10]
     Offset: '0x420'
     Size: '0x10'
     Type: char
@@ -266,7 +266,7 @@ ReviveGhost:
     Offset: '0x430'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_0JZGJ[0x7]
+  - Name: pad0x7_3D78H[0x7]
     Offset: '0x431'
     Size: '0x7'
     Type: char
@@ -286,7 +286,7 @@ ReviveGhost:
     Offset: '0x468'
     Size: '0x38'
     Type: struct ModeSpecificReviveSettings
-  - Name: pad0x13c_OTG9I[0x13c]
+  - Name: pad0x13c_FHI70[0x13c]
     Offset: '0x4a0'
     Size: '0x13c'
     Type: char
@@ -298,7 +298,7 @@ ReviveGhost:
     Offset: '0x618'
     Size: '0xc'
     Type: struct GhostPlayModeParameters
-  - Name: pad0x4_SI8CT[0x4]
+  - Name: pad0x4_QQGRL[0x4]
     Offset: '0x624'
     Size: '0x4'
     Type: char
@@ -336,7 +336,7 @@ ReviveSettings:
     Offset: '0x50'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_GOPC0[0x3]
+  - Name: pad0x3_6K9WI[0x3]
     Offset: '0x51'
     Size: '0x3'
     Type: char
@@ -372,7 +372,7 @@ ReviveSettings:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_DEZ57[0x4]
+  - Name: pad0x4_V6IA9[0x4]
     Offset: '0x8c'
     Size: '0x4'
     Type: char

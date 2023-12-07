@@ -3,18 +3,18 @@
 BP_large_mast_fore_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0xa68'
+    Offset: '0xa70'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
   - Name: shp_flag_pennant_pole_01_a
-    Offset: '0xa70'
-    Size: '0x8'
-    Type: class StaticMeshComponent*
-  - Name: shp_flag_pennant_01_a
     Offset: '0xa78'
     Size: '0x8'
     Type: class StaticMeshComponent*
+  - Name: shp_flag_pennant_01_a
+    Offset: '0xa80'
+    Size: '0x8'
+    Type: class StaticMeshComponent*
   ClassSize: '0x18'
-  FullSize: '0xa80'
-  InheritedSize: '0xa68'
+  FullSize: '0xa88'
+  InheritedSize: '0xa70'
   Super: BP_Mast_C

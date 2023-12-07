@@ -8,7 +8,7 @@ SimpleOverlapCollectionKey:
   Super: Object
 SimpleOverlapComponent:
   Attributes:
-  - Name: pad0x8_53HMW[0x8]
+  - Name: pad0x8_JVXU2[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -18,7 +18,7 @@ SimpleOverlapComponent:
   Super: ActorComponent
 SimpleOverlapZone:
   Attributes:
-  - Name: pad0xc8_J6U5B[0xc8]
+  - Name: pad0xc8_904E8[0xc8]
     Offset: '0x3c8'
     Size: '0xc8'
     Type: char
@@ -30,7 +30,7 @@ SimpleOverlapZone:
     Offset: '0x498'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_MOBJ1[0x7]
+  - Name: pad0x7_GB9JY[0x7]
     Offset: '0x499'
     Size: '0x7'
     Type: char

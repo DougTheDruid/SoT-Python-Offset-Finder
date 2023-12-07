@@ -19,7 +19,7 @@ public:
 struct CustomDeathConfiguration
 {
 public:
-	char                                                         pad0x18_179SG[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_AK68E[0x18];                               // 0x0(0x18)
 };
 
 
@@ -28,7 +28,7 @@ struct DestroyCustomPlayerStartGameServerRequestModel
 {
 public:
 	int                                                          PlayerStartActorNetID;                             // 0x0(0x4)
-	char                                                         pad0x4_NGOMY[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_TUA8O[0x4];                                 // 0x4(0x4)
 	struct FString                                               Tag;                                               // 0x8(0x10)
 };
 
@@ -38,7 +38,7 @@ struct CustomPlayerStartConfigResponseGameServerRequestModel
 {
 public:
 	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_M72SI[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_5PACZ[0x3];                                 // 0x1(0x3)
 	int                                                          PlayerStartId;                                     // 0x4(0x4)
 };
 
@@ -48,7 +48,7 @@ struct CustomPlayerStartConfigGameServerRequestModel
 {
 public:
 	struct Vector                                                Location;                                          // 0x0(0xc)
-	char                                                         pad0x4_O0ZPG[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_5TA3S[0x4];                                 // 0xc(0x4)
 	struct Quat                                                  Rotation;                                          // 0x10(0x10)
 	TArray<Str Tags>                                             Tags;                                              // 0x20(0x10)
 };
@@ -68,7 +68,7 @@ struct SetShouldSkipFerryOfTheDamnedGameServerRequestModel
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
 	bool                                                         bShouldSkipFerryOfTheDamned;                       // 0x4(0x1)
-	char                                                         pad0x3_GQ28Y[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_BYCKK[0x3];                                 // 0x5(0x3)
 };
 
 
@@ -78,7 +78,7 @@ struct SetShouldUseRevivalFlowGameServerRequestModel
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
 	bool                                                         bShouldUseRevivalFlow;                             // 0x4(0x1)
-	char                                                         pad0x3_WZ49X[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_NY37B[0x3];                                 // 0x5(0x3)
 };
 
 
@@ -96,7 +96,7 @@ struct ForcePlayerRespawnGameServerRequestModel
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
 	bool                                                         bRespawnAsGhost;                                   // 0x4(0x1)
-	char                                                         pad0x3_DZ9Y4[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_E99RI[0x3];                                 // 0x5(0x3)
 };
 
 

@@ -6,7 +6,7 @@ ChecklistActionProgressTracker:
     Offset: '0x0'
     Size: '0x8'
     Type: class ChecklistActionData*
-  - Name: pad0x8_CXC1T[0x8]
+  - Name: pad0x8_APFBX[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char
@@ -17,21 +17,21 @@ TaleQuestChecklistItem:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<struct ChecklistActionProgressTracker>
-  - Name: pad0x40_NSJ0B[0x40]
+  - Name: pad0x40_JXDKP[0x40]
     Offset: '0x10'
     Size: '0x40'
     Type: char
   ClassSize: '0x50'
 TaleQuestVariableMapMarkType:
   Attributes:
-  - Name: pad0x30_SF4LF[0x30]
+  - Name: pad0x30_IGW1I[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 TaleQuestVariableTreasureMapItemDescType:
   Attributes:
-  - Name: pad0x30_7XYYH[0x30]
+  - Name: pad0x30_JHGBK[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char

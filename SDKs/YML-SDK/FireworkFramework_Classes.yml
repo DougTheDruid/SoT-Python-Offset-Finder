@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 FireworkAmbientLightComponent:
   Attributes:
-  - Name: pad0x50_94DFG[0x50]
+  - Name: pad0x50_TTYXX[0x50]
     Offset: '0x4a0'
     Size: '0x50'
     Type: char
@@ -34,7 +34,7 @@ FireworkDataAsset:
     Offset: '0x89'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_X1PMM[0x2]
+  - Name: pad0x2_NFY3D[0x2]
     Offset: '0x8a'
     Size: '0x2'
     Type: char
@@ -62,7 +62,7 @@ FireworkDataAsset:
     Offset: '0x130'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_L6HY0[0x4]
+  - Name: pad0x4_O6ID5[0x4]
     Offset: '0x134'
     Size: '0x4'
     Type: char
@@ -84,7 +84,7 @@ FireworkDataAsset:
   Super: DataAsset
 FireworkExplosion:
   Attributes:
-  - Name: pad0x8_NS2O5[0x8]
+  - Name: pad0x8_4TX4K[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -108,7 +108,7 @@ FireworkExplosion:
     Offset: '0x440'
     Size: '0x20'
     Type: struct WwiseEmitter
-  - Name: pad0x40_0AL5H[0x40]
+  - Name: pad0x40_YQDNQ[0x40]
     Offset: '0x460'
     Size: '0x40'
     Type: char
@@ -122,7 +122,7 @@ FireworkFeedbackDataAsset:
     Offset: '0x28'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_6H018[0x4]
+  - Name: pad0x4_0MDYI[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -134,7 +134,7 @@ FireworkFeedbackDataAsset:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_SAHR3[0x4]
+  - Name: pad0x4_8DB2O[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -149,28 +149,28 @@ FireworkFeedbackDataAsset:
 FireworkItemInfo:
   Attributes:
   - Name: LoadableProjectileComponent
-    Offset: '0x528'
+    Offset: '0x530'
     Size: '0x8'
     Type: class LoadableFireworkComponent*
   - Name: FireworkDataAsset
-    Offset: '0x530'
+    Offset: '0x538'
     Size: '0x10'
     Type: struct StringAssetReference
   - Name: GeneratedDataRNGSeed
-    Offset: '0x540'
+    Offset: '0x548'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_7Z4DG[0x4]
-    Offset: '0x544'
+  - Name: pad0x4_OI979[0x4]
+    Offset: '0x54c'
     Size: '0x4'
     Type: char
   ClassSize: '0x20'
-  FullSize: '0x548'
-  InheritedSize: '0x528'
+  FullSize: '0x550'
+  InheritedSize: '0x530'
   Super: ItemInfo
 FireworkProjectile:
   Attributes:
-  - Name: pad0x10_X4MI9[0x10]
+  - Name: pad0x10_0OXTQ[0x10]
     Offset: '0x600'
     Size: '0x10'
     Type: char
@@ -202,7 +202,7 @@ FireworkProjectile:
     Offset: '0x640'
     Size: '0x58'
     Type: struct GeneratedFireworkData
-  - Name: pad0x70_IO1YA[0x70]
+  - Name: pad0x70_HWY03[0x70]
     Offset: '0x698'
     Size: '0x70'
     Type: char
@@ -222,7 +222,7 @@ FireworkSequentialDataAsset:
   Super: FireworkDataAsset
 FireworkService:
   Attributes:
-  - Name: pad0x78_D0NXU[0x78]
+  - Name: pad0x78_GMBVL[0x78]
     Offset: '0x3c8'
     Size: '0x78'
     Type: char
@@ -230,7 +230,7 @@ FireworkService:
     Offset: '0x440'
     Size: '0x4'
     Type: int
-  - Name: pad0x1c_34OO4[0x1c]
+  - Name: pad0x1c_G3PT0[0x1c]
     Offset: '0x444'
     Size: '0x1c'
     Type: char
@@ -250,7 +250,7 @@ FireworkStatsComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_O62I7[0x4]
+  - Name: pad0x4_4609S[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
@@ -266,7 +266,7 @@ FireworkStatsComponent:
     Offset: '0xd8'
     Size: '0x4'
     Type: float
-  - Name: pad0xbc_0WNRN[0xbc]
+  - Name: pad0xbc_OK7BE[0xbc]
     Offset: '0xdc'
     Size: '0xbc'
     Type: char
@@ -296,7 +296,7 @@ FireworksSettings:
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_6D9QU[0x4]
+  - Name: pad0x4_ISPI1[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -310,7 +310,7 @@ FireworksSettingsDataAsset:
     Offset: '0x28'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_9NAMG[0x4]
+  - Name: pad0x4_OIAOY[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -370,7 +370,7 @@ LoadableFireworkComponent:
     Offset: '0x134'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_AKA5A[0x3]
+  - Name: pad0x3_Z8AX1[0x3]
     Offset: '0x135'
     Size: '0x3'
     Type: char
@@ -396,7 +396,7 @@ ProjectileAnimationComponent:
     Offset: '0xe0'
     Size: '0x170'
     Type: struct RuntimeVectorCurve
-  - Name: pad0x40_IRJRS[0x40]
+  - Name: pad0x40_WL92A[0x40]
     Offset: '0x250'
     Size: '0x40'
     Type: char

@@ -21,7 +21,7 @@ public:
 struct GlobalDigSpotPopupEvent
 {
 public:
-	char                                                         pad0x10_ARVSL[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_U5DMH[0x10];                               // 0x0(0x10)
 	class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x10(0x8)
 };
 
@@ -31,7 +31,7 @@ struct GlobalDigSpotStatusUpdateTelemetryEvent
 {
 public:
 	struct FString                                               DigSpotEventId;                                    // 0x0(0x10)
-	struct Guid                                                  VoyageId;                                          // 0x10(0x10)
+	struct Guid                                                  VoyageID;                                          // 0x10(0x10)
 	struct FString                                               DigSpotStatus;                                     // 0x20(0x10)
 };
 

@@ -13,7 +13,7 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0x8_IURXK[0x8]",
+        "Name": "pad0x8_YZRGB[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x138"
@@ -37,7 +37,7 @@
         "Offset": "0x1b0"
       },
       {
-        "Name": "pad0x20_4MR49[0x20]",
+        "Name": "pad0x20_GGA8A[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x1b8"
@@ -51,7 +51,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_UK661[0x10]",
+        "Name": "pad0x10_O8FNL[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x160"
@@ -83,7 +83,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x67_OFW76[0x67]",
+        "Name": "pad0x67_IKTEG[0x67]",
         "Type": "char",
         "Size": "0x67",
         "Offset": "0x41"
@@ -95,7 +95,7 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x58_EKOSZ[0x58]",
+        "Name": "pad0x58_YESGL[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0xb8"
@@ -203,7 +203,7 @@
     "ClassSize": "0x280",
     "Attributes": [
       {
-        "Name": "pad0x10_IHZ7W[0x10]",
+        "Name": "pad0x10_VLUEJ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -221,7 +221,7 @@
         "Offset": "0x3dc"
       },
       {
-        "Name": "pad0x4_GNR1B[0x4]",
+        "Name": "pad0x4_YXLZK[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3e4"
@@ -251,7 +251,7 @@
         "Offset": "0x408"
       },
       {
-        "Name": "pad0x230_RQR77[0x230]",
+        "Name": "pad0x230_GQDRY[0x230]",
         "Type": "char",
         "Size": "0x230",
         "Offset": "0x418"
@@ -283,7 +283,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0xef_ERDIH[0xef]",
+        "Name": "pad0xef_4SBJ2[0xef]",
         "Type": "char",
         "Size": "0xef",
         "Offset": "0x41"
@@ -310,7 +310,7 @@
         "Offset": "0x130"
       },
       {
-        "Name": "pad0x7_WGMCC[0x7]",
+        "Name": "pad0x7_BXTP6[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x131"

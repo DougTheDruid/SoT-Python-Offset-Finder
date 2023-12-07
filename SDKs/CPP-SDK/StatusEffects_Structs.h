@@ -12,7 +12,7 @@ struct Status
 public:
 	TArray<class Class*>                                         Type;                                              // 0x0(0x10)
 	struct StatusDescriptor                                      Descriptor;                                        // 0x10(0x4)
-	char                                                         pad0x4_TBSBS[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_36VMU[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -39,11 +39,11 @@ struct ActiveStatusEffect
 public:
 	TArray<class Class*>                                         SourceStatus;                                      // 0x0(0x10)
 	struct StatusDescriptor                                      Descriptor;                                        // 0x10(0x4)
-	char                                                         pad0x4_PYY8O[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_1O36W[0x4];                                 // 0x14(0x4)
 	TArray<class StatusResponse*>                                ResponseTemplates;                                 // 0x18(0x10)
 	TArray<class StatusResponse*>                                InstancedResponses;                                // 0x28(0x10)
 	bool                                                         ResponsesAreActive;                                // 0x38(0x1)
-	char                                                         pad0x17_1M3SP[0x17];                               // 0x39(0x17)
+	char                                                         pad0x17_OSH8C[0x17];                               // 0x39(0x17)
 };
 
 
@@ -72,7 +72,7 @@ struct DelayedStatusEffect
 public:
 	struct Status                                                StatusEffect;                                      // 0x0(0x18)
 	float                                                        InEffectTime;                                      // 0x18(0x4)
-	char                                                         pad0x4_JRZS6[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_RM3TX[0x4];                                 // 0x1c(0x4)
 };
 
 
@@ -96,7 +96,7 @@ public:
 struct BuffedTargetData
 {
 public:
-	char                                                         pad0x18_SGUQU[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_FCZYT[0x18];                               // 0x0(0x18)
 };
 
 
@@ -104,7 +104,7 @@ public:
 struct EventStatusSuperSoakerEnded
 {
 public:
-	char                                                         pad0x1_6EPPL[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_B4SQ9[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -112,7 +112,7 @@ public:
 struct EventStatusSuperSoakerStarted
 {
 public:
-	char                                                         pad0x1_WL1LX[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_AOZNT[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -198,7 +198,7 @@ public:
 struct EventExitedSurfaceMaterialStatusZone
 {
 public:
-	char                                                         pad0x1_HJQ4J[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_BQPXC[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -206,7 +206,7 @@ public:
 struct EventEnteredSurfaceMaterialStatusZone
 {
 public:
-	char                                                         pad0x10_32KNG[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_JLZMU[0x10];                               // 0x0(0x10)
 };
 
 

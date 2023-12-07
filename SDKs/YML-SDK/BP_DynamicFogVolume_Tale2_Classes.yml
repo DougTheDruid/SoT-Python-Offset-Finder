@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_DynamicFogVolume_Tale2_C:
   Attributes:
-  - Name: pad0x7_P258I[0x7]
+  - Name: pad0x7_BMNJH[0x7]
     Offset: '0x439'
     Size: '0x7'
     Type: char

@@ -1,33 +1,4 @@
 {
-  "TimeStampedInvasionMusicState": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Faction",
-        "Type": "class Company*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "InvasionMusicState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_3FJP5[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
-      },
-      {
-        "Name": "EnteredStateServerTimeStamp",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "InvasionCrewData": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -44,7 +15,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_HN25Z[0x3]",
+        "Name": "pad0x3_KXLSU[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -62,7 +33,7 @@
         "Offset": "0x1c"
       },
       {
-        "Name": "pad0x3_L28WA[0x3]",
+        "Name": "pad0x3_SP05A[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1d"
@@ -80,7 +51,7 @@
       },
       {
         "Name": "CurrentTimeStampedMusicState",
-        "Type": "struct TimeStampedInvasionMusicState",
+        "Type": "struct TimeStampedShipDiveMusicState",
         "Size": "0x18",
         "Offset": "0x10"
       }
@@ -90,7 +61,7 @@
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "pad0x10_9BEN1[0x10]",
+        "Name": "pad0x10_GAG9J[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"
@@ -114,7 +85,7 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x3_NDH2S[0x3]",
+        "Name": "pad0x3_L11Y5[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x59"
@@ -132,7 +103,7 @@
         "Offset": "0x64"
       },
       {
-        "Name": "pad0x3_SBY06[0x3]",
+        "Name": "pad0x3_9A3J0[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x65"
@@ -183,17 +154,6 @@
       }
     ]
   },
-  "InvasionCrewMusicStateChangedClientEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "InvasionCrewMusicState",
-        "Type": "struct TimeStampedInvasionMusicState",
-        "Size": "0x18",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "InvasionParticipatingCrewData": {
     "ClassSize": "0x78",
     "Attributes": [
@@ -210,7 +170,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x58_K8LH5[0x58]",
+        "Name": "pad0x58_CNMFL[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x20"
@@ -239,7 +199,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_CC96B[0x4]",
+        "Name": "pad0x4_L37L4[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
@@ -257,7 +217,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x7_I3WBU[0x7]",
+        "Name": "pad0x7_HDGOU[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x49"
@@ -291,7 +251,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_1F9X5[0x3]",
+        "Name": "pad0x3_FLDAG[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"

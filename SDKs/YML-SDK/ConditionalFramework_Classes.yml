@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ActorSpecifierComponent:
   Attributes:
-  - Name: pad0x8_62M1O[0x8]
+  - Name: pad0x8_QJ0L1[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char

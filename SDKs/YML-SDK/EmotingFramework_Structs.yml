@@ -26,7 +26,7 @@ EmoteData:
     Offset: '0x80'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_5LOYO[0x7]
+  - Name: pad0x7_7FCBS[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -42,7 +42,7 @@ EmoteData:
     Offset: '0x91'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_IQLXW[0x6]
+  - Name: pad0x6_6MLU1[0x6]
     Offset: '0x92'
     Size: '0x6'
     Type: char
@@ -102,7 +102,7 @@ EmotePropRandomObjectResult:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_PYG02[0x7]
+  - Name: pad0x7_QGQ86[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -118,7 +118,7 @@ EmotePropRandomObjectResult:
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_STOK8[0x4]
+  - Name: pad0x4_GWHJI[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -141,14 +141,14 @@ EmoteRandomObjectOutcomeTelemetryEvent:
     Offset: '0x50'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_9XRDD[0xc]
+  - Name: pad0xc_LUBYW[0xc]
     Offset: '0x54'
     Size: '0xc'
     Type: char
   ClassSize: '0x60'
 EventDisableLookAtEmoteCamera:
   Attributes:
-  - Name: pad0x1_9TFS6[0x1]
+  - Name: pad0x1_ZTHLC[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -159,7 +159,7 @@ EventEmoteCompleted:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_S1F3I[0x4]
+  - Name: pad0x4_KXDBJ[0x4]
     Offset: '0x8'
     Size: '0x4'
     Type: char
@@ -174,7 +174,7 @@ EventEmoteEndRequested:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_KVRGV[0x3]
+  - Name: pad0x3_7P9HT[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -193,7 +193,7 @@ EventEmoteRequested:
     Offset: '0xa8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_S2WFA[0x7]
+  - Name: pad0x7_CIHVD[0x7]
     Offset: '0xa9'
     Size: '0x7'
     Type: char
@@ -214,14 +214,14 @@ EventEmoteSwapped:
   ClassSize: '0xa0'
 EventEnableLookAtEmoteCamera:
   Attributes:
-  - Name: pad0x8_7H8DO[0x8]
+  - Name: pad0x8_9UB12[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
   ClassSize: '0x8'
 EventEndEmoteAnimation:
   Attributes:
-  - Name: pad0x1_8GDGI[0x1]
+  - Name: pad0x1_JEZAB[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

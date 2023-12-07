@@ -17,9 +17,9 @@ public:
 class AIAreaOfOperationComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_FZOOV[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_YKSAL[0x8];                                 // 0xc8(0x8)
 	bool                                                         UseAreaOfOperationOnSpawn;                         // 0xd0(0x1)
-	char                                                         pad0x3_5588V[0x3];                                 // 0xd1(0x3)
+	char                                                         pad0x3_JRVNL[0x3];                                 // 0xd1(0x3)
 	float                                                        InitialRadius;                                     // 0xd4(0x4)
 };
 
@@ -30,7 +30,7 @@ class AIGoal: public Object
 public:
 	class BehaviorTree*                                          BehaviorTree;                                      // 0x28(0x8)
 	class UClass*                                                WhileActiveActivityType;                           // 0x30(0x8)
-	char                                                         pad0x8_3XAKV[0x8];                                 // 0x38(0x8)
+	char                                                         pad0x8_SKQNM[0x8];                                 // 0x38(0x8)
 };
 
 
@@ -53,12 +53,12 @@ public:
 class AIGoalProcessorComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_7S9XF[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_IRLC0[0x8];                                 // 0xc8(0x8)
 	TArray<class AIGoal*>                                        Goals;                                             // 0xd0(0x10)
 	class AIGoalAssetList*                                       AIGoalAssetList;                                   // 0xe0(0x8)
 	class AIGoal*                                                ActiveGoal;                                        // 0xe8(0x8)
 	TArray<class AIGoalAssetList*>                               AdditionalGoalLists;                               // 0xf0(0x10)
-	char                                                         pad0x28_56TI2[0x28];                               // 0x100(0x28)
+	char                                                         pad0x28_1MQZ9[0x28];                               // 0x100(0x28)
 };
 
 

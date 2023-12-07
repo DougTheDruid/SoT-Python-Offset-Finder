@@ -6,18 +6,18 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x141 (Full Size[0xbe1] - InheritedSize[0xaa0]
+// Size 0x141 (Full Size[0xbe9] - InheritedSize[0xaa8]
 class BP_Wheel_C: public Wheel
 {
 public:
-	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xaa0(0x8)
-	class SphereComponent*                                       ProjectileCollision;                               // 0xaa8(0x8)
-	class InteractableComponent*                                 Interactable;                                      // 0xab0(0x8)
-	struct ObjectMessagingHandle                                 Wheel Centered;                                    // 0xab8(0x58)
-	struct ObjectMessagingHandle                                 Wheel Movement Started;                            // 0xb10(0x58)
-	struct ObjectMessagingHandle                                 Wheel Movement Stopped;                            // 0xb68(0x58)
-	struct WwiseEmitter                                          AudioEmitter;                                      // 0xbc0(0x20)
-	bool                                                         ShipWheelTurning;                                  // 0xbe0(0x1)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xaa8(0x8)
+	class SphereComponent*                                       ProjectileCollision;                               // 0xab0(0x8)
+	class InteractableComponent*                                 Interactable;                                      // 0xab8(0x8)
+	struct ObjectMessagingHandle                                 Wheel Centered;                                    // 0xac0(0x58)
+	struct ObjectMessagingHandle                                 Wheel Movement Started;                            // 0xb18(0x58)
+	struct ObjectMessagingHandle                                 Wheel Movement Stopped;                            // 0xb70(0x58)
+	struct WwiseEmitter                                          AudioEmitter;                                      // 0xbc8(0x20)
+	bool                                                         ShipWheelTurning;                                  // 0xbe8(0x1)
 };
 
 

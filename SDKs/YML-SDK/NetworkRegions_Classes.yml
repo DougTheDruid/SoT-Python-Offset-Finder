@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 NetworkRegionService:
   Attributes:
-  - Name: pad0x90_3ZGER[0x90]
+  - Name: pad0x90_IBTY3[0x90]
     Offset: '0x28'
     Size: '0x90'
     Type: char
@@ -30,7 +30,7 @@ RegionAssetCacheActor:
     Offset: '0x3d8'
     Size: '0x10'
     Type: TArray<class Object*>
-  - Name: pad0x20_3X4DW[0x20]
+  - Name: pad0x20_OIMX0[0x20]
     Offset: '0x3e8'
     Size: '0x20'
     Type: char

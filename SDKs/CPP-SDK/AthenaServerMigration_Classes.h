@@ -39,7 +39,7 @@ class RegisterServerMigrationPointOfInterestComponent: public ActorComponent
 {
 public:
 	float                                                        MigrationRadius;                                   // 0xc8(0x4)
-	char                                                         pad0x1c_4Q03N[0x1c];                               // 0xcc(0x1c)
+	char                                                         pad0x1c_6SYRA[0x1c];                               // 0xcc(0x1c)
 };
 
 

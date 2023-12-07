@@ -33,7 +33,7 @@ InputChord:
     Offset: '0x20'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_FOS6B[0x7]
+  - Name: pad0x7_0V0GE[0x7]
     Offset: '0x21'
     Size: '0x7'
     Type: char

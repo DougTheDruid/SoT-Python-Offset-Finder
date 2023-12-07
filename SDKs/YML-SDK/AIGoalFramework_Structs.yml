@@ -36,7 +36,7 @@ EventAIGoalTargetActorChanged:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_EQ9XA[0x6]
+  - Name: pad0x6_82YWO[0x6]
     Offset: '0x12'
     Size: '0x6'
     Type: char

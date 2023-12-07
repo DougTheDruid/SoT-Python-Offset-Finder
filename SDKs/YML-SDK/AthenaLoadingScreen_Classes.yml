@@ -64,7 +64,7 @@ SlateLoadingScreenParams:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_FVU9H[0x7]
+  - Name: pad0x7_YOAOA[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -76,107 +76,103 @@ SlateLoadingScreenParams:
     Offset: '0x50'
     Size: '0x10'
     Type: struct LinearColor
-  - Name: StartWithCyclingImage
-    Offset: '0x60'
-    Size: '0x1'
-    Type: bool
-  - Name: pad0x7_O60TG[0x7]
-    Offset: '0x61'
-    Size: '0x7'
-    Type: char
   - Name: PrimaryImage
-    Offset: '0x68'
+    Offset: '0x60'
     Size: '0x30'
     Type: struct SlateLoadingScreenImageParams
+  - Name: RandomisedPrimaryImages
+    Offset: '0x90'
+    Size: '0x10'
+    Type: TArray<struct SlateLoadingScreenImageParams>
   - Name: CyclingImages
-    Offset: '0x98'
+    Offset: '0xa0'
     Size: '0x10'
     Type: TArray<struct SlateLoadingScreenImageParams>
   - Name: MaxNumImagesPerLoad
-    Offset: '0xa8'
+    Offset: '0xb0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_E61GV[0x4]
-    Offset: '0xac'
+  - Name: pad0x4_HHN79[0x4]
+    Offset: '0xb4'
     Size: '0x4'
     Type: char
   - Name: SpinnerText
-    Offset: '0xb0'
+    Offset: '0xb8'
     Size: '0x38'
     Type: struct FText
   - Name: SpinnerTextColour
-    Offset: '0xe8'
+    Offset: '0xf0'
     Size: '0x30'
     Type: struct SlateColor
   - Name: SpinnerTextFont
-    Offset: '0x118'
+    Offset: '0x120'
     Size: '0x40'
     Type: struct SlateFontInfo
   - Name: SpinnerSize
-    Offset: '0x158'
+    Offset: '0x160'
     Size: '0x4'
     Type: float
   - Name: SpinnerMargin
-    Offset: '0x15c'
+    Offset: '0x164'
     Size: '0x10'
     Type: struct Margin
   - Name: SpinnerPadding
-    Offset: '0x16c'
+    Offset: '0x174'
     Size: '0x4'
     Type: float
   - Name: SpinnerIcon
-    Offset: '0x170'
+    Offset: '0x178'
     Size: '0x10'
     Type: struct StringAssetReference
   - Name: TipsMargin
-    Offset: '0x180'
+    Offset: '0x188'
     Size: '0x10'
     Type: struct Margin
   - Name: TipWrapLength
-    Offset: '0x190'
-    Size: '0x4'
-    Type: float
-  - Name: TipDisplayDuration
-    Offset: '0x194'
-    Size: '0x4'
-    Type: float
-  - Name: TipDurationBetweenTips
     Offset: '0x198'
     Size: '0x4'
     Type: float
-  - Name: NumTipsPerImage
+  - Name: TipDisplayDuration
     Offset: '0x19c'
+    Size: '0x4'
+    Type: float
+  - Name: TipDurationBetweenTips
+    Offset: '0x1a0'
+    Size: '0x4'
+    Type: float
+  - Name: NumTipsPerImage
+    Offset: '0x1a4'
     Size: '0x4'
     Type: int
   - Name: LoadingTipFont
-    Offset: '0x1a0'
+    Offset: '0x1a8'
     Size: '0x40'
     Type: struct SlateFontInfo
   - Name: LoadingTipFontLineHeightPercentage
-    Offset: '0x1e0'
+    Offset: '0x1e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_J3X0B[0x4]
-    Offset: '0x1e4'
+  - Name: pad0x4_SND92[0x4]
+    Offset: '0x1ec'
     Size: '0x4'
     Type: char
   - Name: LoadingScreenTips
-    Offset: '0x1e8'
+    Offset: '0x1f0'
     Size: '0x10'
     Type: TArray<struct FText>
   - Name: LoadingScreenTipColour
-    Offset: '0x1f8'
+    Offset: '0x200'
     Size: '0x30'
     Type: struct SlateColor
   - Name: AllowSyncronousAssetLoad
-    Offset: '0x228'
+    Offset: '0x230'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_0YOSG[0x7]
-    Offset: '0x229'
+  - Name: pad0x7_HZNPW[0x7]
+    Offset: '0x231'
     Size: '0x7'
     Type: char
-  ClassSize: '0x208'
-  FullSize: '0x230'
+  ClassSize: '0x210'
+  FullSize: '0x238'
   InheritedSize: '0x28'
   Super: DataAsset

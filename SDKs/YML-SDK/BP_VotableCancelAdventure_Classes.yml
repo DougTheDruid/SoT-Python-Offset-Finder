@@ -18,7 +18,7 @@ BP_VotableCancelAdventure_C:
     Offset: '0x510'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_WG0RI[0x4]
+  - Name: pad0x4_IR2TD[0x4]
     Offset: '0x514'
     Size: '0x4'
     Type: char

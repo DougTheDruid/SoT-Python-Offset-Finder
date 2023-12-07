@@ -50,7 +50,7 @@ BP_ItemPreview_C:
     Offset: '0x600'
     Size: '0x8'
     Type: class SceneComponent*
-  - Name: pad0x30_ILYDD[0x30]
+  - Name: pad0x30_QQV5B[0x30]
     Offset: '0x608'
     Size: '0x30'
     Type: char

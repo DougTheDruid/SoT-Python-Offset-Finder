@@ -8,7 +8,7 @@ KrakenLocationType:
   Super: LocationType
 LocationProviderService:
   Attributes:
-  - Name: pad0x80_BP5DF[0x80]
+  - Name: pad0x80_C8U5W[0x80]
     Offset: '0x28'
     Size: '0x80'
     Type: char

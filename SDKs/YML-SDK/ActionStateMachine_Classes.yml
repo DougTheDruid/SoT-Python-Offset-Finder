@@ -20,7 +20,7 @@ ActionStateInitialStateCreatorDefinition:
   Super: Object
 ActionStateMachineComponent:
   Attributes:
-  - Name: pad0x790_PFFG4[0x790]
+  - Name: pad0x790_3T46B[0x790]
     Offset: '0xc8'
     Size: '0x790'
     Type: char
@@ -100,7 +100,7 @@ CustomClientValidityCheckCallback:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_GBMGC[0x7]
+  - Name: pad0x7_3474O[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -116,7 +116,7 @@ NullActionStateId:
   Super: ActionStateId
 SelfInitialisingActionStateMachineComponent:
   Attributes:
-  - Name: pad0x8_NWF3X[0x8]
+  - Name: pad0x8_RZGN3[0x8]
     Offset: '0x858'
     Size: '0x8'
     Type: char
@@ -132,7 +132,7 @@ SelfInitialisingActionStateMachineComponent:
     Offset: '0x870'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x28_1NVIM[0x28]
+  - Name: pad0x28_TSCCW[0x28]
     Offset: '0x878'
     Size: '0x28'
     Type: char
@@ -148,7 +148,7 @@ SerialisedActionStateConstructionInfoTestFunctions:
   Super: BlueprintFunctionLibrary
 TestActionStateCreatorDefinition:
   Attributes:
-  - Name: pad0x18_X53MW[0x18]
+  - Name: pad0x18_6AH6E[0x18]
     Offset: '0x3c8'
     Size: '0x18'
     Type: char

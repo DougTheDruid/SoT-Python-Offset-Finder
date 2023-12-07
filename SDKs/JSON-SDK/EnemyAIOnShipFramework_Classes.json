@@ -36,7 +36,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_WAW75[0x4]",
+        "Name": "pad0x4_RSCVX[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -57,7 +57,7 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "pad0x20_RXKDB[0x20]",
+        "Name": "pad0x20_G0OX2[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3c8"
@@ -75,7 +75,7 @@
         "Offset": "0x3f0"
       },
       {
-        "Name": "pad0x70_3SSL2[0x70]",
+        "Name": "pad0x70_P5GEJ[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x400"

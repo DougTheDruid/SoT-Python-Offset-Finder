@@ -30,7 +30,7 @@ BP_CustomisableLadder_C:
     Offset: '0x638'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_B437Q[0x4]
+  - Name: pad0x4_8RNZ2[0x4]
     Offset: '0x63c'
     Size: '0x4'
     Type: char

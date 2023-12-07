@@ -13,11 +13,11 @@ public:
 };
 
 
-// Size 0xa8 (Full Size[0xd0] - InheritedSize[0x28]
+// Size 0xb8 (Full Size[0xe0] - InheritedSize[0x28]
 class AsyncLoadingMonitoringService: public Object
 {
 public:
-	char                                                         pad0xa8_3RE8A[0xa8];                               // 0x28(0xa8)
+	char                                                         pad0xb8_JV39L[0xb8];                               // 0x28(0xb8)
 };
 
 

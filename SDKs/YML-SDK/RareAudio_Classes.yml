@@ -10,7 +10,7 @@ AnimNotifyState_WwiseSound:
     Offset: '0x38'
     Size: '0x8'
     Type: class WwiseEvent*
-  - Name: pad0x50_U7BSV[0x50]
+  - Name: pad0x50_QRKOY[0x50]
     Offset: '0x40'
     Size: '0x50'
     Type: char
@@ -34,7 +34,7 @@ AnimNotify_WwiseSound:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_UOKH2[0x3]
+  - Name: pad0x3_R3QB7[0x3]
     Offset: '0x41'
     Size: '0x3'
     Type: char
@@ -46,7 +46,7 @@ AnimNotify_WwiseSound:
     Offset: '0x50'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_YU8PN[0x7]
+  - Name: pad0x7_AKSNL[0x7]
     Offset: '0x51'
     Size: '0x7'
     Type: char
@@ -54,7 +54,7 @@ AnimNotify_WwiseSound:
     Offset: '0x58'
     Size: '0x8'
     Type: class WwiseObjectPoolWrapper*
-  - Name: pad0x20_RE1A5[0x20]
+  - Name: pad0x20_5FNU1[0x20]
     Offset: '0x60'
     Size: '0x20'
     Type: char
@@ -102,7 +102,7 @@ AudioSpaceDataAsset:
   Super: DataAsset
 RareAudioHardwareDeviceService:
   Attributes:
-  - Name: pad0x10_RNBY5[0x10]
+  - Name: pad0x10_VET7N[0x10]
     Offset: '0x40'
     Size: '0x10'
     Type: char
@@ -140,7 +140,7 @@ TritonAcousticMap:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x2c_0MLF2[0x2c]
+  - Name: pad0x2c_A4NUG[0x2c]
     Offset: '0x3c'
     Size: '0x2c'
     Type: char
@@ -158,7 +158,7 @@ TritonComponent:
     Offset: '0x2e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ABIXQ[0x4]
+  - Name: pad0x4_XWKBB[0x4]
     Offset: '0x2ec'
     Size: '0x4'
     Type: char
@@ -168,7 +168,7 @@ TritonComponent:
   Super: SceneComponent
 TritonService:
   Attributes:
-  - Name: pad0x10_9X8YU[0x10]
+  - Name: pad0x10_MBMXP[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -176,7 +176,7 @@ TritonService:
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<class TritonComponent*>
-  - Name: pad0xa8_7FMQK[0xa8]
+  - Name: pad0xa8_ROJBT[0xa8]
     Offset: '0x48'
     Size: '0xa8'
     Type: char
@@ -184,7 +184,7 @@ TritonService:
     Offset: '0xf0'
     Size: '0x8'
     Type: class TritonComponent*
-  - Name: pad0x58_CS82K[0x58]
+  - Name: pad0x58_7ZFAM[0x58]
     Offset: '0xf8'
     Size: '0x58'
     Type: char
@@ -200,7 +200,7 @@ WwiseEmitterBlueprintLibrary:
   Super: BlueprintFunctionLibrary
 WwiseEmitterComponent:
   Attributes:
-  - Name: pad0x8_GH9FN[0x8]
+  - Name: pad0x8_D17R6[0x8]
     Offset: '0x2e0'
     Size: '0x8'
     Type: char
@@ -240,7 +240,7 @@ WwiseObjectPoolWrapper:
     Offset: '0x35'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_FZVSN[0x2]
+  - Name: pad0x2_WFH0V[0x2]
     Offset: '0x36'
     Size: '0x2'
     Type: char
@@ -248,7 +248,7 @@ WwiseObjectPoolWrapper:
     Offset: '0x38'
     Size: '0x28'
     Type: struct WwiseNativeEmitterPoolDensityParams
-  - Name: pad0x18_AJ6CC[0x18]
+  - Name: pad0x18_AUWT5[0x18]
     Offset: '0x60'
     Size: '0x18'
     Type: char

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AnimNode_BoneDrivenController:
   Attributes:
-  - Name: pad0x58_IZFOT[0x58]
+  - Name: pad0x58_M6C1Z[0x58]
     Offset: '0x0'
     Size: '0x58'
     Type: char
@@ -14,7 +14,7 @@ AnimNode_BoneDrivenController:
     Offset: '0x64'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_RE8JC[0x3]
+  - Name: pad0x3_9ZXYD[0x3]
     Offset: '0x65'
     Size: '0x3'
     Type: char
@@ -30,7 +30,7 @@ AnimNode_BoneDrivenController:
     Offset: '0x74'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_HR8HE[0x3]
+  - Name: pad0x3_IFRJ1[0x3]
     Offset: '0x75'
     Size: '0x3'
     Type: char
@@ -58,7 +58,7 @@ AnimNode_BoneDrivenController:
     Offset: '0x94'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_RW5M7[0x3]
+  - Name: pad0x3_OWRZV[0x3]
     Offset: '0x95'
     Size: '0x3'
     Type: char
@@ -98,7 +98,7 @@ AnimNode_BoneDrivenController:
     Offset: '0x99'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_PGTJ3[0x2]
+  - Name: pad0x2_PBJOA[0x2]
     Offset: '0x9a'
     Size: '0x2'
     Type: char
@@ -106,14 +106,14 @@ AnimNode_BoneDrivenController:
     Offset: '0x9c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_NB5L9[0x3]
+  - Name: pad0x3_JH7JY[0x3]
     Offset: '0x9d'
     Size: '0x3'
     Type: char
   ClassSize: '0xa0'
 AnimNode_CopyBone:
   Attributes:
-  - Name: pad0x58_5JGHU[0x58]
+  - Name: pad0x58_4QOQU[0x58]
     Offset: '0x0'
     Size: '0x58'
     Type: char
@@ -137,14 +137,14 @@ AnimNode_CopyBone:
     Offset: '0x72'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_K1D0A[0x5]
+  - Name: pad0x5_4YQOW[0x5]
     Offset: '0x73'
     Size: '0x5'
     Type: char
   ClassSize: '0x78'
 AnimNode_CopyPoseFromMesh:
   Attributes:
-  - Name: pad0x30_SALD8[0x30]
+  - Name: pad0x30_ZIRM1[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -156,14 +156,14 @@ AnimNode_CopyPoseFromMesh:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x87_VCFEV[0x87]
+  - Name: pad0x87_P0OQX[0x87]
     Offset: '0x39'
     Size: '0x87'
     Type: char
   ClassSize: '0xc0'
 AnimNode_Fabrik:
   Attributes:
-  - Name: pad0x60_AX9ZA[0x60]
+  - Name: pad0x60_5NURP[0x60]
     Offset: '0x0'
     Size: '0x60'
     Type: char
@@ -175,7 +175,7 @@ AnimNode_Fabrik:
     Offset: '0x90'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_L7H0X[0x3]
+  - Name: pad0x3_KXEQE[0x3]
     Offset: '0x91'
     Size: '0x3'
     Type: char
@@ -187,7 +187,7 @@ AnimNode_Fabrik:
     Offset: '0xa0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_AHC2O[0x3]
+  - Name: pad0x3_LXP06[0x3]
     Offset: '0xa1'
     Size: '0x3'
     Type: char
@@ -211,14 +211,14 @@ AnimNode_Fabrik:
     Offset: '0xc4'
     Size: '0x1'
     Type: bool
-  - Name: pad0xb_4FRSA[0xb]
+  - Name: pad0xb_TTV8B[0xb]
     Offset: '0xc5'
     Size: '0xb'
     Type: char
   ClassSize: '0xd0'
 AnimNode_HandIKRetargeting:
   Attributes:
-  - Name: pad0x58_3CSSS[0x58]
+  - Name: pad0x58_DBQHY[0x58]
     Offset: '0x0'
     Size: '0x58'
     Type: char
@@ -246,14 +246,14 @@ AnimNode_HandIKRetargeting:
     Offset: '0x98'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_Y5ZAK[0x4]
+  - Name: pad0x4_XOUK9[0x4]
     Offset: '0x9c'
     Size: '0x4'
     Type: char
   ClassSize: '0xa0'
 AnimNode_LookAt:
   Attributes:
-  - Name: pad0x58_KLIUQ[0x58]
+  - Name: pad0x58_1D4GT[0x58]
     Offset: '0x0'
     Size: '0x58'
     Type: char
@@ -281,7 +281,7 @@ AnimNode_LookAt:
     Offset: '0x7e'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_O080C[0x1]
+  - Name: pad0x1_U49WM[0x1]
     Offset: '0x7f'
     Size: '0x1'
     Type: char
@@ -293,7 +293,7 @@ AnimNode_LookAt:
     Offset: '0x84'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_FGU5B[0x3]
+  - Name: pad0x3_7SGRU[0x3]
     Offset: '0x85'
     Size: '0x3'
     Type: char
@@ -309,14 +309,14 @@ AnimNode_LookAt:
     Offset: '0x90'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2f_WG3JE[0x2f]
+  - Name: pad0x2f_OYK69[0x2f]
     Offset: '0x91'
     Size: '0x2f'
     Type: char
   ClassSize: '0xc0'
 AnimNode_ModifyBone:
   Attributes:
-  - Name: pad0x58_CZXEM[0x58]
+  - Name: pad0x58_MJ1RK[0x58]
     Offset: '0x0'
     Size: '0x58'
     Type: char
@@ -360,14 +360,14 @@ AnimNode_ModifyBone:
     Offset: '0x8d'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_JS3H9[0x2]
+  - Name: pad0x2_AY6R9[0x2]
     Offset: '0x8e'
     Size: '0x2'
     Type: char
   ClassSize: '0x90'
 AnimNode_ObserveBone:
   Attributes:
-  - Name: pad0x58_UBRXG[0x58]
+  - Name: pad0x58_K05QP[0x58]
     Offset: '0x0'
     Size: '0x58'
     Type: char
@@ -383,7 +383,7 @@ AnimNode_ObserveBone:
     Offset: '0x65'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_CDTYM[0x2]
+  - Name: pad0x2_0Z2I0[0x2]
     Offset: '0x66'
     Size: '0x2'
     Type: char
@@ -399,14 +399,14 @@ AnimNode_ObserveBone:
     Offset: '0x80'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_AUCMV[0x4]
+  - Name: pad0x4_9VD77[0x4]
     Offset: '0x8c'
     Size: '0x4'
     Type: char
   ClassSize: '0x90'
 AnimNode_RotationMultiplier:
   Attributes:
-  - Name: pad0x58_JPDBA[0x58]
+  - Name: pad0x58_V1K5R[0x58]
     Offset: '0x0'
     Size: '0x58'
     Type: char
@@ -430,14 +430,14 @@ AnimNode_RotationMultiplier:
     Offset: '0x75'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_BM4RV[0x2]
+  - Name: pad0x2_0TVNC[0x2]
     Offset: '0x76'
     Size: '0x2'
     Type: char
   ClassSize: '0x78'
 AnimNode_SkeletalControlBase:
   Attributes:
-  - Name: pad0x30_DB25N[0x30]
+  - Name: pad0x30_N3E5X[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -453,14 +453,14 @@ AnimNode_SkeletalControlBase:
     Offset: '0x4c'
     Size: '0x8'
     Type: struct InputScaleBias
-  - Name: pad0x4_Q64ZH[0x4]
+  - Name: pad0x4_J3MK3[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
   ClassSize: '0x58'
 AnimNode_SpringBone:
   Attributes:
-  - Name: pad0x58_N4SKW[0x58]
+  - Name: pad0x58_ADR67[0x58]
     Offset: '0x0'
     Size: '0x58'
     Type: char
@@ -472,7 +472,7 @@ AnimNode_SpringBone:
     Offset: '0x64'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_27IAC[0x3]
+  - Name: pad0x3_7SGP0[0x3]
     Offset: '0x65'
     Size: '0x3'
     Type: char
@@ -520,14 +520,14 @@ AnimNode_SpringBone:
     Offset: '0x7e'
     Size: '0x1'
     Type: bool
-  - Name: pad0x29_CTEPG[0x29]
+  - Name: pad0x29_SJ3LH[0x29]
     Offset: '0x7f'
     Size: '0x29'
     Type: char
   ClassSize: '0xa8'
 AnimNode_Trail:
   Attributes:
-  - Name: pad0x58_9FIMH[0x58]
+  - Name: pad0x58_2B61Z[0x58]
     Offset: '0x0'
     Size: '0x58'
     Type: char
@@ -551,7 +551,7 @@ AnimNode_Trail:
     Offset: '0x6a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_03KT3[0x1]
+  - Name: pad0x1_ETPU7[0x1]
     Offset: '0x6b'
     Size: '0x1'
     Type: char
@@ -571,14 +571,14 @@ AnimNode_Trail:
     Offset: '0x80'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5f_TBD5W[0x5f]
+  - Name: pad0x5f_DBRGU[0x5f]
     Offset: '0x81'
     Size: '0x5f'
     Type: char
   ClassSize: '0xe0'
 AnimNode_TwoBoneIK:
   Attributes:
-  - Name: pad0x58_UGXMG[0x58]
+  - Name: pad0x58_UM6VT[0x58]
     Offset: '0x0'
     Size: '0x58'
     Type: char
@@ -614,7 +614,7 @@ AnimNode_TwoBoneIK:
     Offset: '0x8c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_R8K8Q[0x3]
+  - Name: pad0x3_KH8ZG[0x3]
     Offset: '0x8d'
     Size: '0x3'
     Type: char
@@ -626,7 +626,7 @@ AnimNode_TwoBoneIK:
     Offset: '0x91'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_TWEB7[0x2]
+  - Name: pad0x2_82NQN[0x2]
     Offset: '0x92'
     Size: '0x2'
     Type: char
@@ -634,7 +634,7 @@ AnimNode_TwoBoneIK:
     Offset: '0x94'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_TY15A[0x4]
+  - Name: pad0x4_RB2S1[0x4]
     Offset: '0x9c'
     Size: '0x4'
     Type: char

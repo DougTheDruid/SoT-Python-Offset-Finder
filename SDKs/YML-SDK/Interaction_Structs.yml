@@ -24,7 +24,7 @@ EventOptimalInteractionObjectChanged:
   ClassSize: '0x10'
 IsNewInteractingPlayerCondition:
   Attributes:
-  - Name: pad0x8_QHJJH[0x8]
+  - Name: pad0x8_6WPSG[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char

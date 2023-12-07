@@ -14,7 +14,7 @@ public:
 	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x8(0x10)
 	class UClass*                                                MysteryProposalTemplate;                           // 0x18(0x8)
 	bool                                                         SelectTallTales;                                   // 0x20(0x1)
-	char                                                         pad0x7_ZB0WM[0x7];                                 // 0x21(0x7)
+	char                                                         pad0x7_QQL9H[0x7];                                 // 0x21(0x7)
 };
 
 
@@ -23,14 +23,14 @@ struct AdventureOnDemandTallTaleProposalGroup
 {
 public:
 	struct StringAssetReference                                  BackgroundImageUrl;                                // 0x0(0x10)
-	struct StringAssetReference                                  RewardImageUrl;                                    // 0x10(0x10)
-	TArray<struct FText>                                         RewardDescriptions;                                // 0x20(0x10)
+	struct StringAssetReference                                  SmallBackgroundImageUrl;                           // 0x10(0x10)
+	TArray<struct QuestTableTallTaleReward>                      Rewards;                                           // 0x20(0x10)
 	TArray<struct FText>                                         LockedDescriptions;                                // 0x30(0x10)
 	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x40(0x10)
 	struct PlayerStat                                            StatForNewTag;                                     // 0x50(0x4)
 	byte                                                         SailToQuestAvailability;                           // 0x54(0x1)
 	byte                                                         DiveToQuestAvailability;                           // 0x55(0x1)
-	char                                                         pad0x2_3P7JV[0x2];                                 // 0x56(0x2)
+	char                                                         pad0x2_4MZO5[0x2];                                 // 0x56(0x2)
 	class UClass*                                                InitialProposal;                                   // 0x58(0x8)
 	TArray<struct AdventureOnDemandTallTaleCheckpoint>           Checkpoints;                                       // 0x60(0x10)
 };
@@ -61,7 +61,8 @@ public:
 	class UClass*                                                CategoryId;                                        // 0x8(0x8)
 	class UClass*                                                Company;                                           // 0x10(0x8)
 	struct FeatureFlag                                           Feature;                                           // 0x18(0xc)
-	char                                                         pad0x4_118DI[0x4];                                 // 0x24(0x4)
+	byte                                                         CategoryType;                                      // 0x24(0x1)
+	char                                                         pad0x3_US4XF[0x3];                                 // 0x25(0x3)
 	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x28(0x10)
 	TArray<struct AdventureOnDemandVoyageSelectionVoyageProposal> Proposals;                                         // 0x38(0x10)
 };
@@ -72,13 +73,13 @@ struct AdventureOnDemandVoyageSelectionVoyageProposal
 {
 public:
 	struct FeatureFlag                                           Feature;                                           // 0x0(0xc)
-	char                                                         pad0x4_4X2LK[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_3WPRJ[0x4];                                 // 0xc(0x4)
 	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x10(0x10)
 	struct PlayerStat                                            StatForNewTag;                                     // 0x20(0x4)
 	byte                                                         SailToQuestAvailability;                           // 0x24(0x1)
 	byte                                                         DiveToQuestAvailability;                           // 0x25(0x1)
 	byte                                                         VoyageType;                                        // 0x26(0x1)
-	char                                                         pad0x1_5F2ZG[0x1];                                 // 0x27(0x1)
+	char                                                         pad0x1_DVHLU[0x1];                                 // 0x27(0x1)
 	class UClass*                                                Proposal;                                          // 0x28(0x8)
 };
 
@@ -88,7 +89,7 @@ struct VoyageHintPopupDescEntry
 {
 public:
 	byte                                                         QuestType;                                         // 0x0(0x1)
-	char                                                         pad0x7_AE278[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_YS3MY[0x7];                                 // 0x1(0x7)
 	class PopUpMessageDesc*                                      HintPopUpMessageDesc;                              // 0x8(0x8)
 };
 
@@ -107,7 +108,7 @@ struct ExtraSpawnDistanceByIslandType
 {
 public:
 	byte                                                         IslandType;                                        // 0x0(0x1)
-	char                                                         pad0x3_OP58B[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_55KMO[0x3];                                 // 0x1(0x3)
 	float                                                        ExtraSpawnDistance;                                // 0x4(0x4)
 };
 
@@ -116,7 +117,7 @@ public:
 struct OnDemandQuestResumeConditionMetReasonQuestVariable
 {
 public:
-	char                                                         pad0x30_SXTYR[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_EWL5Y[0x30];                               // 0x0(0x30)
 };
 
 
@@ -146,28 +147,41 @@ struct GameEventOnDemandCompanyStatData
 public:
 	class UClass*                                                Company;                                           // 0x0(0x8)
 	struct PlayerStat                                            Stat;                                              // 0x8(0x4)
-	char                                                         pad0x4_VDRNE[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_9BVFO[0x4];                                 // 0xc(0x4)
 };
 
 
-// Size 0x148
+// Size 0x18
+struct QuestTableCompanyTutorialPrerequisites
+{
+public:
+	class UClass*                                                Company;                                           // 0x0(0x8)
+	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x8(0x10)
+};
+
+
+// Size 0x138
 struct QuestTableBakedQuestDiscoverTile
 {
 public:
 	struct Guid                                                  TileId;                                            // 0x0(0x10)
 	class UClass*                                                Proposal;                                          // 0x10(0x8)
-	byte                                                         QuestType;                                         // 0x18(0x1)
-	char                                                         pad0x7_HP2KI[0x7];                                 // 0x19(0x7)
-	struct FText                                                 CondensedTitle;                                    // 0x20(0x38)
-	struct FText                                                 Title;                                             // 0x58(0x38)
-	struct FText                                                 Subtitle;                                          // 0x90(0x38)
-	struct FText                                                 Description;                                       // 0xc8(0x38)
-	struct StringAssetReference                                  BackgroundImageUrl;                                // 0x100(0x10)
-	byte                                                         TileType;                                          // 0x110(0x1)
-	char                                                         pad0x7_7QDKQ[0x7];                                 // 0x111(0x7)
-	struct StringAssetReference                                  PreviewTileIconImageUrl;                           // 0x118(0x10)
-	struct StringAssetReference                                  BladeFrameImageURL;                                // 0x128(0x10)
-	struct StringAssetReference                                  WatermarkImageUrl;                                 // 0x138(0x10)
+	struct FText                                                 CondensedTitle;                                    // 0x18(0x38)
+	struct FText                                                 Title;                                             // 0x50(0x38)
+	struct FText                                                 Subtitle;                                          // 0x88(0x38)
+	struct FText                                                 Description;                                       // 0xc0(0x38)
+	struct StringAssetReference                                  BackgroundImageUrl;                                // 0xf8(0x10)
+	struct StringAssetReference                                  PreviewTileIconImageUrl;                           // 0x108(0x10)
+	struct StringAssetReference                                  BladeFrameImageURL;                                // 0x118(0x10)
+	struct StringAssetReference                                  WatermarkImageUrl;                                 // 0x128(0x10)
+};
+
+
+// Size 0x10
+struct AdventureOnDemandCrewReachedSurfaceEvent
+{
+public:
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
 };
 
 
@@ -191,7 +205,7 @@ public:
 struct AdventureOnDemandVoyageSurfaceTaleFinished
 {
 public:
-	char                                                         pad0x1_ZVSP9[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_I5KJR[0x1];                                 // 0x0(0x1)
 };
 
 

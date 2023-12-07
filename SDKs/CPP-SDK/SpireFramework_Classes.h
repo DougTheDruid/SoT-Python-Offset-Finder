@@ -27,13 +27,13 @@ public:
 	struct ActorComponentSelector                                EmitterOwner;                                      // 0xd0(0x10)
 	struct Vector                                                EmitterOffset;                                     // 0xe0(0xc)
 	bool                                                         UseParentEmitter;                                  // 0xec(0x1)
-	char                                                         pad0x3_LVU8P[0x3];                                 // 0xed(0x3)
+	char                                                         pad0x3_5B0C1[0x3];                                 // 0xed(0x3)
 	float                                                        RisingAudioTriggerValue;                           // 0xf0(0x4)
-	char                                                         pad0x4_FX4A1[0x4];                                 // 0xf4(0x4)
+	char                                                         pad0x4_PU5BV[0x4];                                 // 0xf4(0x4)
 	class UClass*                                                CameraShake;                                       // 0xf8(0x8)
 	float                                                        ShakeInnerRadius;                                  // 0x100(0x4)
 	float                                                        ShakeOuterRadius;                                  // 0x104(0x4)
-	char                                                         pad0x50_CV86W[0x50];                               // 0x108(0x50)
+	char                                                         pad0x50_S4700[0x50];                               // 0x108(0x50)
 };
 
 
@@ -41,7 +41,7 @@ public:
 class SpireResource: public Actor
 {
 public:
-	char                                                         pad0x10_E9VLI[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_7V11R[0x10];                               // 0x3c8(0x10)
 };
 
 
@@ -64,11 +64,11 @@ public:
 class SpireService: public Actor
 {
 public:
-	char                                                         pad0x8_NL4XE[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_0WB51[0x8];                                 // 0x3c8(0x8)
 	class SpireServiceParams*                                    Params;                                            // 0x3d0(0x8)
 	TArray<struct ServerSpireInfo>                               ServerOnlySpireInfo;                               // 0x3d8(0x10)
 	TArray<struct SpireInfo>                                     SpireLevels;                                       // 0x3e8(0x10)
-	char                                                         pad0x68_YNCX6[0x68];                               // 0x3f8(0x68)
+	char                                                         pad0x68_Z95RK[0x68];                               // 0x3f8(0x68)
 };
 
 
@@ -108,7 +108,7 @@ public:
 class TaleSpireService: public TaleQuestService
 {
 public:
-	char                                                         pad0x48_AJHJO[0x48];                               // 0x60(0x48)
+	char                                                         pad0x48_RPG8F[0x48];                               // 0x60(0x48)
 };
 
 
@@ -145,7 +145,7 @@ class TaleRegisterSpireStep: public TaleQuestStep
 {
 public:
 	class TaleRegisterSpireStepDesc*                             StepDesc;                                          // 0x98(0x8)
-	char                                                         pad0x8_MJPAB[0x8];                                 // 0xa0(0x8)
+	char                                                         pad0x8_GFUN8[0x8];                                 // 0xa0(0x8)
 };
 
 
@@ -164,7 +164,7 @@ public:
 class TaleReleaseSpireStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x8_R1DNH[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_1NTW9[0x8];                                 // 0x98(0x8)
 };
 
 
@@ -194,7 +194,7 @@ public:
 class TaleWaitForSpireToLoadStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x50_4RNRU[0x50];                               // 0x98(0x50)
+	char                                                         pad0x50_D4NGY[0x50];                               // 0x98(0x50)
 };
 
 

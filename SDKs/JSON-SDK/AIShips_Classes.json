@@ -39,7 +39,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x20_CJMJT[0x20]",
+        "Name": "pad0x20_Q6BJ6[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x88"
@@ -51,7 +51,7 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x18_XIT2P[0x18]",
+        "Name": "pad0x18_UDBVN[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xc0"
@@ -149,7 +149,7 @@
         "Offset": "0x238"
       },
       {
-        "Name": "pad0x4_KSWCE[0x4]",
+        "Name": "pad0x4_3DDZP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x23c"
@@ -281,7 +281,7 @@
         "Offset": "0x438"
       },
       {
-        "Name": "pad0x4_A8PSX[0x4]",
+        "Name": "pad0x4_XFZNX[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x43c"
@@ -311,7 +311,7 @@
         "Offset": "0x478"
       },
       {
-        "Name": "pad0x4_7SRRH[0x4]",
+        "Name": "pad0x4_BSN2Z[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x47c"
@@ -343,7 +343,7 @@
         "Offset": "0x29"
       },
       {
-        "Name": "pad0x6_GYVUS[0x6]",
+        "Name": "pad0x6_VS8SJ[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2a"
@@ -435,7 +435,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_YX5IL[0x3]",
+        "Name": "pad0x3_HKA74[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -573,7 +573,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_M7JSN[0x7]",
+        "Name": "pad0x7_TBRCL[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
@@ -663,7 +663,7 @@
         "Offset": "0x448"
       },
       {
-        "Name": "pad0x28_H38QP[0x28]",
+        "Name": "pad0x28_2KI7O[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x450"
@@ -672,9 +672,9 @@
   },
   "AIShipEncounterParamsDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0xb8",
+    "FullSize": "0x78",
     "InheritedSize": "0x28",
-    "ClassSize": "0x90",
+    "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "SpawnParams",
@@ -719,204 +719,186 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x4_AMLSW[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x5c"
-      },
-      {
-        "Name": "EncounterCompleteText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x60"
-      },
-      {
         "Name": "OuterRadiusMultiplier",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x98"
+        "Offset": "0x5c"
       },
       {
         "Name": "MigrationRadiusMultiplier",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x9c"
+        "Offset": "0x60"
       },
       {
         "Name": "InitialEncounterEntryDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xa0"
+        "Offset": "0x64"
       },
       {
         "Name": "MinEngagedDistanceFromPlayers",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xa4"
+        "Offset": "0x68"
       },
       {
         "Name": "EnableMusicWhenShipsHaveNoTarget",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xa8"
+        "Offset": "0x6c"
       },
       {
-        "Name": "pad0x3_B4U0B[0x3]",
+        "Name": "pad0x3_FB6RF[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0xa9"
+        "Offset": "0x6d"
       },
       {
         "Name": "SecondsUntilEncounterEndsAfterLastCrewLeft",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0xac"
+        "Offset": "0x70"
       },
       {
         "Name": "MaximumEncounterDuration",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "pad0x4_XU9ZG[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xb4"
+        "Offset": "0x74"
       }
     ]
   },
   "AIShipServiceDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x250",
+    "FullSize": "0x258",
     "InheritedSize": "0x28",
-    "ClassSize": "0x228",
+    "ClassSize": "0x230",
     "Attributes": [
       {
         "Name": "BattleEncounterParams",
-        "Type": "class AIShipEncounterParamsDataAsset*",
-        "Size": "0x8",
+        "Type": "TArray<struct EventTypeAIShipEncounterParams>",
+        "Size": "0x10",
         "Offset": "0x28"
       },
       {
         "Name": "AggressiveEncounterParams",
         "Type": "struct AIShipEncounterParams",
         "Size": "0x18",
-        "Offset": "0x30"
+        "Offset": "0x38"
       },
       {
         "Name": "PassiveEncounterParams",
         "Type": "struct AIShipEncounterParams",
         "Size": "0x18",
-        "Offset": "0x48"
+        "Offset": "0x50"
       },
       {
         "Name": "ObstacleBucketDimensions",
         "Type": "struct IntPoint",
         "Size": "0x8",
-        "Offset": "0x60"
+        "Offset": "0x68"
       },
       {
         "Name": "ShipwreckObstacleRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x68"
+        "Offset": "0x70"
       },
       {
-        "Name": "pad0x4_FWXXO[0x4]",
+        "Name": "pad0x4_QACE4[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x6c"
+        "Offset": "0x74"
       },
       {
         "Name": "ContextDescGenerationParams",
         "Type": "struct AIShipContextDescGenerationParams",
         "Size": "0x80",
-        "Offset": "0x70"
+        "Offset": "0x78"
       },
       {
         "Name": "EncounterGenerationParams",
         "Type": "struct AIShipBattleEncounterDescGenerationParams",
         "Size": "0x80",
-        "Offset": "0xf0"
+        "Offset": "0xf8"
       },
       {
         "Name": "AggressiveEncounterGenerationParams",
         "Type": "struct AIShipSingleWaveEncounterDescGenerationParams",
         "Size": "0x10",
-        "Offset": "0x170"
+        "Offset": "0x178"
       },
       {
         "Name": "PassiveEncounterGenerationParams",
         "Type": "struct AIShipSingleWaveEncounterDescGenerationParams",
         "Size": "0x10",
-        "Offset": "0x180"
+        "Offset": "0x188"
       },
       {
         "Name": "TimerBattleFirstRegenInterval",
         "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x190"
+        "Offset": "0x198"
       },
       {
         "Name": "TimerBattleRegenInterval",
         "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x1c0"
+        "Offset": "0x1c8"
       },
       {
         "Name": "TimerBattleFinderThrottle",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1f0"
+        "Offset": "0x1f8"
       },
       {
-        "Name": "pad0x4_WTSC9[0x4]",
+        "Name": "pad0x4_H9YSE[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x1f4"
+        "Offset": "0x1fc"
       },
       {
         "Name": "TimerBattleRetryRegenInterval",
         "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x1f8"
+        "Offset": "0x200"
       },
       {
         "Name": "TimerBattleMinActivationDistanceFromPlayers",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x228"
+        "Offset": "0x230"
       },
       {
-        "Name": "pad0x4_L1TBB[0x4]",
+        "Name": "pad0x4_M9ZHP[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x22c"
+        "Offset": "0x234"
       },
       {
         "Name": "RewardMarkerParams",
         "Type": "class ShortRangeMarkerDataAsset*",
         "Size": "0x8",
-        "Offset": "0x230"
+        "Offset": "0x238"
       },
       {
         "Name": "IslandsToAvoid",
         "Type": "TArray<struct FName>",
         "Size": "0x10",
-        "Offset": "0x238"
+        "Offset": "0x240"
       },
       {
         "Name": "AvoidanceRange",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x248"
+        "Offset": "0x250"
       },
       {
-        "Name": "pad0x4_4J9UW[0x4]",
+        "Name": "pad0x4_GIPHI[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x24c"
+        "Offset": "0x254"
       }
     ]
   },
@@ -982,7 +964,7 @@
         "Offset": "0x39"
       },
       {
-        "Name": "pad0x2_25QAJ[0x2]",
+        "Name": "pad0x2_56922[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3a"
@@ -1000,7 +982,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x3_65FQB[0x3]",
+        "Name": "pad0x3_5HJT2[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x41"
@@ -1018,7 +1000,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x7_HDLIN[0x7]",
+        "Name": "pad0x7_YF2I9[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x49"
@@ -1044,7 +1026,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x3_89DVO[0x3]",
+        "Name": "pad0x3_UH5FO[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xc9"
@@ -1056,7 +1038,7 @@
         "Offset": "0xcc"
       },
       {
-        "Name": "pad0x20_F0SWB[0x20]",
+        "Name": "pad0x20_1ZIVM[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xd0"
@@ -1070,7 +1052,7 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "pad0x88_CUBY1[0x88]",
+        "Name": "pad0x88_O9KXA[0x88]",
         "Type": "char",
         "Size": "0x88",
         "Offset": "0x3c8"
@@ -1098,7 +1080,7 @@
     "ClassSize": "0x390",
     "Attributes": [
       {
-        "Name": "pad0x10_EO9R9[0x10]",
+        "Name": "pad0x10_OH467[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -1116,7 +1098,7 @@
         "Offset": "0x3e0"
       },
       {
-        "Name": "pad0x18_646K5[0x18]",
+        "Name": "pad0x18_EM0H5[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3e8"
@@ -1128,7 +1110,7 @@
         "Offset": "0x400"
       },
       {
-        "Name": "pad0x350_78KJ5[0x350]",
+        "Name": "pad0x350_OZYTO[0x350]",
         "Type": "char",
         "Size": "0x350",
         "Offset": "0x408"
@@ -1142,7 +1124,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x40_867VX[0x40]",
+        "Name": "pad0x40_YUJOP[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0xc8"
@@ -1162,7 +1144,7 @@
         "Offset": "0x610"
       },
       {
-        "Name": "pad0x18_BOFLN[0x18]",
+        "Name": "pad0x18_J17F7[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x618"
@@ -1186,7 +1168,7 @@
         "Offset": "0x640"
       },
       {
-        "Name": "pad0x118_T8E68[0x118]",
+        "Name": "pad0x118_KF5G5[0x118]",
         "Type": "char",
         "Size": "0x118",
         "Offset": "0x668"
@@ -1230,7 +1212,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x18_Q2ZXM[0x18]",
+        "Name": "pad0x18_MRTAU[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x138"
@@ -1282,7 +1264,7 @@
         "Offset": "0x9c"
       },
       {
-        "Name": "pad0x30_1XHWX[0x30]",
+        "Name": "pad0x30_TX9SH[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0xa0"
@@ -1308,7 +1290,7 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x8_T7DX9[0x8]",
+        "Name": "pad0x8_WDZXT[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x90"
@@ -1322,7 +1304,7 @@
     "ClassSize": "0xe0",
     "Attributes": [
       {
-        "Name": "pad0xe0_WJ8GK[0xe0]",
+        "Name": "pad0xe0_ZD1CR[0xe0]",
         "Type": "char",
         "Size": "0xe0",
         "Offset": "0x88"
@@ -1336,7 +1318,7 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "pad0x38_FACZH[0x38]",
+        "Name": "pad0x38_ZCSQL[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x88"
@@ -1368,7 +1350,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x30_AME4U[0x30]",
+        "Name": "pad0x30_ZSF5I[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x100"
@@ -1394,7 +1376,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x1c_G6E1Y[0x1c]",
+        "Name": "pad0x1c_5XHTV[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0xb4"
@@ -1442,7 +1424,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_CW035[0x7]",
+        "Name": "pad0x7_7980C[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"

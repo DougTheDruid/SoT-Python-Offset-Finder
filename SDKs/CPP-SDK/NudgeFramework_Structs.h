@@ -15,7 +15,7 @@ public:
 	class CurveFloat*                                            AngleCurveOut;                                     // 0x8(0x8)
 	class CurveFloat*                                            AngleCurveIn;                                      // 0x10(0x8)
 	byte                                                         Axis;                                              // 0x18(0x1)
-	char                                                         pad0x7_9MQGL[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_I4WGB[0x7];                                 // 0x19(0x7)
 };
 
 
@@ -23,11 +23,11 @@ public:
 struct TrinketNudgeProgress
 {
 public:
-	char                                                         pad0x8_S58HP[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_F2EFI[0x8];                                 // 0x0(0x8)
 	class SceneComponent*                                        TrinketRoot;                                       // 0x8(0x8)
-	char                                                         pad0x10_V3B0Y[0x10];                               // 0x10(0x10)
+	char                                                         pad0x10_QXUFT[0x10];                               // 0x10(0x10)
 	class CurveFloat*                                            Curve;                                             // 0x20(0x8)
-	char                                                         pad0x8_T72DE[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_URI2F[0x8];                                 // 0x28(0x8)
 };
 
 

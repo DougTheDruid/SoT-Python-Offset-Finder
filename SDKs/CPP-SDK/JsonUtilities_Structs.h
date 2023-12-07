@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct JsonObjectWrapper
 {
 public:
-	char                                                         pad0x18_TW2YW[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_EGOI4[0x18];                               // 0x0(0x18)
 };
 
 
@@ -69,7 +69,7 @@ struct TestSerializationObject
 {
 public:
 	bool                                                         TestBool;                                          // 0x0(0x1)
-	char                                                         pad0x3_NC1J4[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_OR0TC[0x3];                                 // 0x1(0x3)
 	int                                                          TestInt;                                           // 0x4(0x4)
 	struct FString                                               TestString;                                        // 0x8(0x10)
 	struct Guid                                                  TestGuid;                                          // 0x18(0x10)
@@ -80,7 +80,7 @@ public:
 struct TestMessageUInt64
 {
 public:
-	char                                                         pad0x8_YXIEH[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_FJ4R5[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -88,7 +88,7 @@ public:
 struct TestMessageInt64
 {
 public:
-	char                                                         pad0x8_IIUU2[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_HI45L[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -96,7 +96,7 @@ public:
 struct TestUStructMapSerializationObject
 {
 public:
-	char                                                         pad0x50_OP8KR[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_FADJ5[0x50];                               // 0x0(0x50)
 };
 
 
@@ -104,7 +104,7 @@ public:
 struct TestInt32MapSerializationObject
 {
 public:
-	char                                                         pad0x50_796TD[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_UXPU4[0x50];                               // 0x0(0x50)
 };
 
 
@@ -112,7 +112,7 @@ public:
 struct TestInvalidStringMapSerializationObject
 {
 public:
-	char                                                         pad0x50_MJ28T[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_N661Z[0x50];                               // 0x0(0x50)
 };
 
 
@@ -120,7 +120,7 @@ public:
 struct TestStringMapSerializationObject
 {
 public:
-	char                                                         pad0x50_TLM3Q[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_AVP0S[0x50];                               // 0x0(0x50)
 };
 
 

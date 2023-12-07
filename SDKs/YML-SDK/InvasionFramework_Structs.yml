@@ -30,7 +30,7 @@ CrewStoppedInvasion:
   ClassSize: '0x10'
 InvasionBannerNetworkEvent:
   Attributes:
-  - Name: pad0x10_9BEN1[0x10]
+  - Name: pad0x10_GAG9J[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -46,7 +46,7 @@ InvasionBannerNetworkEvent:
     Offset: '0x58'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_NDH2S[0x3]
+  - Name: pad0x3_L11Y5[0x3]
     Offset: '0x59'
     Size: '0x3'
     Type: char
@@ -58,7 +58,7 @@ InvasionBannerNetworkEvent:
     Offset: '0x64'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_SBY06[0x3]
+  - Name: pad0x3_9A3J0[0x3]
     Offset: '0x65'
     Size: '0x3'
     Type: char
@@ -73,7 +73,7 @@ InvasionCrewData:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_HN25Z[0x3]
+  - Name: pad0x3_KXLSU[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -85,18 +85,11 @@ InvasionCrewData:
     Offset: '0x1c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_L28WA[0x3]
+  - Name: pad0x3_SP05A[0x3]
     Offset: '0x1d'
     Size: '0x3'
     Type: char
   ClassSize: '0x20'
-InvasionCrewMusicStateChangedClientEvent:
-  Attributes:
-  - Name: InvasionCrewMusicState
-    Offset: '0x0'
-    Size: '0x18'
-    Type: struct TimeStampedInvasionMusicState
-  ClassSize: '0x18'
 InvasionEndedTelemetryEvent:
   Attributes:
   - Name: Participants
@@ -111,7 +104,7 @@ InvasionEndedTelemetryEvent:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_CC96B[0x4]
+  - Name: pad0x4_L37L4[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -123,7 +116,7 @@ InvasionEndedTelemetryEvent:
     Offset: '0x48'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_I3WBU[0x7]
+  - Name: pad0x7_HDGOU[0x7]
     Offset: '0x49'
     Size: '0x7'
     Type: char
@@ -138,7 +131,7 @@ InvasionParticipatingCrewData:
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<class CrewVoyageParticipant*>
-  - Name: pad0x58_K8LH5[0x58]
+  - Name: pad0x58_CNMFL[0x58]
     Offset: '0x20'
     Size: '0x58'
     Type: char
@@ -153,7 +146,7 @@ InvasionServiceMatchmakingCrewInfo:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_1F9X5[0x3]
+  - Name: pad0x3_FLDAG[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -167,7 +160,7 @@ ReplicatedInvasionCrewMusicState:
   - Name: CurrentTimeStampedMusicState
     Offset: '0x10'
     Size: '0x18'
-    Type: struct TimeStampedInvasionMusicState
+    Type: struct TimeStampedShipDiveMusicState
   ClassSize: '0x28'
 TaleDisplayedInvasionBanner:
   Attributes:
@@ -176,22 +169,3 @@ TaleDisplayedInvasionBanner:
     Size: '0x8'
     Type: class Actor*
   ClassSize: '0x8'
-TimeStampedInvasionMusicState:
-  Attributes:
-  - Name: Faction
-    Offset: '0x0'
-    Size: '0x8'
-    Type: class Company*
-  - Name: InvasionMusicState
-    Offset: '0x8'
-    Size: '0x1'
-    Type: byte
-  - Name: pad0x7_3FJP5[0x7]
-    Offset: '0x9'
-    Size: '0x7'
-    Type: char
-  - Name: EnteredStateServerTimeStamp
-    Offset: '0x10'
-    Size: '0x8'
-    Type: double
-  ClassSize: '0x18'

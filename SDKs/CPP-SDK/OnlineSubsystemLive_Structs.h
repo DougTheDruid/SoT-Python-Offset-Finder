@@ -22,7 +22,7 @@ struct AchievementProgressXblRequestModel
 {
 public:
 	struct FString                                               Id;                                                // 0x0(0x10)
-	char                                                         pad0x8_O32NN[0x8];                                 // 0x10(0x8)
+	char                                                         pad0x8_DHZ00[0x8];                                 // 0x10(0x8)
 };
 
 

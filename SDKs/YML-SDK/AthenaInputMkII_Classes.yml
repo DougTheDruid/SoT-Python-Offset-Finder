@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AthenaCharacterBaseInputComponent:
   Attributes:
-  - Name: pad0x128_N9OIL[0x128]
+  - Name: pad0x128_QQ92M[0x128]
     Offset: '0x170'
     Size: '0x128'
     Type: char
@@ -12,7 +12,7 @@ AthenaCharacterBaseInputComponent:
   Super: AutoMoveInputComponent
 AthenaCharacterBaseInputComponentWithInterference:
   Attributes:
-  - Name: pad0x8_JGQTO[0x8]
+  - Name: pad0x8_ZS4JV[0x8]
     Offset: '0x298'
     Size: '0x8'
     Type: char
@@ -22,7 +22,7 @@ AthenaCharacterBaseInputComponentWithInterference:
   Super: AthenaCharacterBaseInputComponent
 AutoMoveInputComponent:
   Attributes:
-  - Name: pad0x20_2LOEV[0x20]
+  - Name: pad0x20_8QLUL[0x20]
     Offset: '0x150'
     Size: '0x20'
     Type: char
@@ -66,7 +66,7 @@ LookingAtWieldableInputComponent:
   Super: AthenaCharacterBaseInputComponent
 MovementInterferenceComponent:
   Attributes:
-  - Name: pad0x70_OIDA2[0x70]
+  - Name: pad0x70_OZ1R0[0x70]
     Offset: '0x170'
     Size: '0x70'
     Type: char

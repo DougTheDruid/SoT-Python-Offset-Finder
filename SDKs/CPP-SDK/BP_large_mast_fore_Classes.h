@@ -6,13 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18 (Full Size[0xa80] - InheritedSize[0xa68]
+// Size 0x18 (Full Size[0xa88] - InheritedSize[0xa70]
 class BP_large_mast_fore_C: public BP_Mast_C
 {
 public:
-	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xa68(0x8)
-	class StaticMeshComponent*                                   shp_flag_pennant_pole_01_a;                        // 0xa70(0x8)
-	class StaticMeshComponent*                                   shp_flag_pennant_01_a;                             // 0xa78(0x8)
+	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xa70(0x8)
+	class StaticMeshComponent*                                   shp_flag_pennant_pole_01_a;                        // 0xa78(0x8)
+	class StaticMeshComponent*                                   shp_flag_pennant_01_a;                             // 0xa80(0x8)
 };
 
 

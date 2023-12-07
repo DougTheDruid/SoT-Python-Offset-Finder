@@ -21,7 +21,7 @@ ShantyPuzzleInteractionZoneDefinition:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_1VZWL[0x3]
+  - Name: pad0x3_2UQ0M[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -54,7 +54,7 @@ ShantyPuzzleSingleInteractionZoneStopInteractingEvent:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_GBS0F[0x4]
+  - Name: pad0x4_I4Q8S[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -69,21 +69,21 @@ ShantyPuzzleSingleInteractionZoneUnlockEvent:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_OW2RJ[0x4]
+  - Name: pad0x4_251WO[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
   ClassSize: '0x10'
 ShantyPuzzleUnlockCanceledEvent:
   Attributes:
-  - Name: pad0x1_6033K[0x1]
+  - Name: pad0x1_JRLLB[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 ShantyPuzzleUnlockedCompleteEvent:
   Attributes:
-  - Name: pad0x1_15C5F[0x1]
+  - Name: pad0x1_1Z4ZA[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

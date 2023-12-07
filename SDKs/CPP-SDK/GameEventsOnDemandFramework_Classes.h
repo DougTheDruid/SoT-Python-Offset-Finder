@@ -16,10 +16,10 @@ public:
 	int                                                          ProgressStateLimit;                                // 0x7c(0x4)
 	bool                                                         ShouldApplyShipTypeLimit;                          // 0x80(0x1)
 	bool                                                         ShouldTrackCrewsEngagingEmergently;                // 0x81(0x1)
-	char                                                         pad0x2_RTUEF[0x2];                                 // 0x82(0x2)
+	char                                                         pad0x2_9OWQG[0x2];                                 // 0x82(0x2)
 	float                                                        EmergentCrewLeftRegionCooldown;                    // 0x84(0x4)
 	struct FeatureFlag                                           SendCrewToLoserTunnelFeature;                      // 0x88(0xc)
-	char                                                         pad0x4_Z3ULE[0x4];                                 // 0x94(0x4)
+	char                                                         pad0x4_TOD0N[0x4];                                 // 0x94(0x4)
 };
 
 
@@ -31,15 +31,15 @@ public:
 	bool                                                         ShouldFireBannerForAnyCrewEnteringIslandVicinity;  // 0xd4(0x1)
 	bool                                                         ShouldFireGameEventCompletedBannerForEmergentCrews; // 0xd5(0x1)
 	byte                                                         ResetCachedCrewsTrigger;                           // 0xd6(0x1)
-	char                                                         pad0x1_XDGJB[0x1];                                 // 0xd7(0x1)
+	char                                                         pad0x1_KWEB6[0x1];                                 // 0xd7(0x1)
 	struct FName                                                 IslandName;                                        // 0xd8(0x8)
 	TArray<Weakclass CurrentTrackedPawns>                        CurrentTrackedPawns;                               // 0xe0(0x10)
 	TArray<struct Guid>                                          OnDemandParticipatingCrewIds;                      // 0xf0(0x10)
 	TArray<struct Guid>                                          TrackedShipCrewIds;                                // 0x100(0x10)
 	class UClass*                                                GameEventType;                                     // 0x110(0x8)
-	char                                                         pad0x74_OS34G[0x74];                               // 0x118(0x74)
+	char                                                         pad0x74_FJUS4[0x74];                               // 0x118(0x74)
 	struct FName                                                 TemporaryBannerTag;                                // 0x18c(0x8)
-	char                                                         pad0x1c_7XECO[0x1c];                               // 0x194(0x1c)
+	char                                                         pad0x1c_F9OOI[0x1c];                               // 0x194(0x1c)
 };
 
 
@@ -51,19 +51,19 @@ public:
 	class GameEventOnDemandAvailabilityStateTracker*             AvailabilityStateTracker;                          // 0x30(0x8)
 	class UClass*                                                GameEventType;                                     // 0x38(0x8)
 	class UClass*                                                Company;                                           // 0x40(0x8)
-	char                                                         pad0xc0_UBOQ2[0xc0];                               // 0x48(0xc0)
+	char                                                         pad0xc0_FOM2Z[0xc0];                               // 0x48(0xc0)
 };
 
 
-// Size 0x108 (Full Size[0x130] - InheritedSize[0x28]
+// Size 0x110 (Full Size[0x138] - InheritedSize[0x28]
 class GameEventOnDemandAvailabilityStateTracker: public Object
 {
 public:
-	char                                                         pad0x88_5VFUD[0x88];                               // 0x28(0x88)
+	char                                                         pad0x88_W6BH5[0x88];                               // 0x28(0x88)
 	class UClass*                                                ShipTypeLimit;                                     // 0xb0(0x8)
 	TArray<struct Guid>                                          OnDemandParticipatingCrewIds;                      // 0xb8(0x10)
 	TArray<struct Guid>                                          EmergentlyParticipatingCrewIds;                    // 0xc8(0x10)
-	char                                                         pad0x58_G6YO8[0x58];                               // 0xd8(0x58)
+	char                                                         pad0x60_0HCK6[0x60];                               // 0xd8(0x60)
 };
 
 
@@ -106,7 +106,7 @@ public:
 class WaitForGameEventOnDemandToCompleteStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x90_GRSCL[0x90];                               // 0x98(0x90)
+	char                                                         pad0x90_9YLEL[0x90];                               // 0x98(0x90)
 };
 
 
@@ -115,7 +115,7 @@ class WaitForGameEventOnDemandToCompleteStepDesc: public TaleQuestStepDesc
 {
 public:
 	bool                                                         DeactivationMeansCompletion;                       // 0x80(0x1)
-	char                                                         pad0x7_4JXOC[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_AF8H6[0x7];                                 // 0x81(0x7)
 };
 
 

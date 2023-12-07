@@ -11,7 +11,7 @@ struct ModeSpecificReviveSettings
 {
 public:
 	byte                                                         AssociatedPlaymode;                                // 0x0(0x1)
-	char                                                         pad0x3_33QP9[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_S89VU[0x3];                                 // 0x1(0x3)
 	float                                                        DeathCameraBlackFadeDelay;                         // 0x4(0x4)
 	float                                                        DeathCameraBlackFadeDuration;                      // 0x8(0x4)
 	float                                                        DeathCameraBlackFadeEventClientTimeout;            // 0xc(0x4)
@@ -22,7 +22,7 @@ public:
 	float                                                        ReviveWindowDuration;                              // 0x20(0x4)
 	float                                                        GhostFadeDuration;                                 // 0x24(0x4)
 	float                                                        AutoGiveUpDuration;                                // 0x28(0x4)
-	char                                                         pad0x4_BWUY3[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_A0AFT[0x4];                                 // 0x2c(0x4)
 	class ReviveSettings*                                        CachedReviveSettings;                              // 0x30(0x8)
 };
 
@@ -32,7 +32,7 @@ struct ReviveEffectsValues
 {
 public:
 	class MaterialInstanceDynamic*                               AstralCordPostProcessMID;                          // 0x0(0x8)
-	char                                                         pad0x18_E2N79[0x18];                               // 0x8(0x18)
+	char                                                         pad0x18_AJVLR[0x18];                               // 0x8(0x18)
 };
 
 
@@ -40,7 +40,7 @@ public:
 struct PlayerInReviveableStateTelemetryEvent
 {
 public:
-	char                                                         pad0x1_0DQZS[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_S0PI7[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -56,7 +56,7 @@ public:
 struct PostReviveLocomotionActionStateConstructionInfo
 {
 public:
-	char                                                         pad0x30_ZFYHX[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_4HMV8[0x30];                               // 0x0(0x30)
 };
 
 
@@ -72,7 +72,7 @@ public:
 struct EventRevivableRepresentationSpawnStarted
 {
 public:
-	char                                                         pad0x1_LM4B6[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_7UEGW[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -80,12 +80,12 @@ public:
 struct ReviveableActionStateConstructionInfo
 {
 public:
-	char                                                         pad0x30_BPJ5N[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_PPS02[0x30];                               // 0x0(0x30)
 	class UClass*                                                ActionStateId;                                     // 0x30(0x8)
 	struct DamageInstance                                        DamageInstance;                                    // 0x38(0x30)
 	byte                                                         CharacterDeathType;                                // 0x68(0x1)
 	byte                                                         CharacterType;                                     // 0x69(0x1)
-	char                                                         pad0x6_A7LLO[0x6];                                 // 0x6a(0x6)
+	char                                                         pad0x6_GC219[0x6];                                 // 0x6a(0x6)
 };
 
 
@@ -93,7 +93,7 @@ public:
 struct RevivedActionStateConstructionInfo
 {
 public:
-	char                                                         pad0x30_M3G6O[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_NQDMD[0x30];                               // 0x0(0x30)
 };
 
 
@@ -111,7 +111,7 @@ public:
 struct ReviveableActionStateStarted
 {
 public:
-	char                                                         pad0x1_V466J[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_31N09[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -127,7 +127,7 @@ public:
 struct EventRevivePlayerActionStateLeft
 {
 public:
-	char                                                         pad0x1_L0SDT[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_CCY22[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -135,7 +135,7 @@ public:
 struct EventRevivePlayerActionStateEntered
 {
 public:
-	char                                                         pad0x1_66G6V[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_E1EE4[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -143,7 +143,7 @@ public:
 struct EventCharacterFullyRevived
 {
 public:
-	char                                                         pad0x1_O3NQZ[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_F6R5J[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -151,7 +151,7 @@ public:
 struct ReviveEndedEarlyEvent
 {
 public:
-	char                                                         pad0x1_VK3YY[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_QDE7Z[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -159,7 +159,7 @@ public:
 struct EventRevivableRepresentationReturnedToBody
 {
 public:
-	char                                                         pad0x1_OWC5B[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_ZB1HZ[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -167,7 +167,7 @@ public:
 struct SuccessfulReviveEvent
 {
 public:
-	char                                                         pad0x1_BXCBV[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_NL0NE[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -175,7 +175,7 @@ public:
 struct BeingRevivedStoppedEvent
 {
 public:
-	char                                                         pad0x1_6NBKW[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_YI6IA[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -183,7 +183,7 @@ public:
 struct BeingRevivedStartedEvent
 {
 public:
-	char                                                         pad0x1_5G7SN[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_BYOLK[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -191,7 +191,7 @@ public:
 struct RevivableCharacterGhostlyBodyEvaporateStarted
 {
 public:
-	char                                                         pad0x1_E7RSY[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_FU5VH[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -199,7 +199,7 @@ public:
 struct RevivingWindowEnd
 {
 public:
-	char                                                         pad0x1_ZII3I[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_DUQKP[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -209,7 +209,7 @@ struct RevivingWindowStart
 public:
 	struct DamageInstance                                        DamageInstance;                                    // 0x0(0x30)
 	byte                                                         CharacterDeathType;                                // 0x30(0x1)
-	char                                                         pad0x7_LB9UO[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_0PV41[0x7];                                 // 0x31(0x7)
 	class Character*                                             RevivableCharacter;                                // 0x38(0x8)
 };
 
@@ -218,7 +218,7 @@ public:
 struct RevivePlayerActionStateConstructionInfo
 {
 public:
-	char                                                         pad0x30_UFYJL[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_5FV2W[0x30];                               // 0x0(0x30)
 	struct NetActorPtr                                           CharacterReviving;                                 // 0x30(0x14)
 	struct NetSubObjectPtr                                       CharacterBeingRevived;                             // 0x44(0x14)
 	class UClass*                                                InputID;                                           // 0x58(0x8)

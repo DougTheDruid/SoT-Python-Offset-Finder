@@ -1,213 +1,213 @@
 {
   "BP_TLA_NPC_OptIn_Note_C": {
     "Super": "NPCOnSurface",
-    "FullSize": "0x620",
-    "InheritedSize": "0x538",
+    "FullSize": "0x630",
+    "InheritedSize": "0x548",
     "ClassSize": "0xe8",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x538"
+        "Offset": "0x548"
       },
       {
         "Name": "Appear",
         "Type": "class AppearComponent*",
         "Size": "0x8",
-        "Offset": "0x540"
+        "Offset": "0x550"
       },
       {
         "Name": "shroud_mask",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x548"
+        "Offset": "0x558"
       },
       {
         "Name": "shroud",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x550"
+        "Offset": "0x560"
       },
       {
         "Name": "VoteAudio",
         "Type": "class VoteAudioComponent*",
         "Size": "0x8",
-        "Offset": "0x558"
+        "Offset": "0x568"
       },
       {
         "Name": "InlineVotingInteraction",
         "Type": "class InlineVotingInteractionComponent*",
         "Size": "0x8",
-        "Offset": "0x560"
+        "Offset": "0x570"
       },
       {
         "Name": "StaticMeshVoteVisualiser",
         "Type": "class StaticMeshVoteVisualiserComponent*",
         "Size": "0x8",
-        "Offset": "0x568"
+        "Offset": "0x578"
       },
       {
         "Name": "StaticMesh4",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x570"
+        "Offset": "0x580"
       },
       {
         "Name": "StaticMesh3",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x578"
+        "Offset": "0x588"
       },
       {
         "Name": "StaticMesh2",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x580"
+        "Offset": "0x590"
       },
       {
         "Name": "StaticMesh1",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x588"
+        "Offset": "0x598"
       },
       {
         "Name": "StaticMesh",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x590"
+        "Offset": "0x5a0"
       },
       {
         "Name": "ParticleSystem",
         "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x598"
+        "Offset": "0x5a8"
       },
       {
         "Name": "ActionRulesInteractable",
         "Type": "class ActionRulesInteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x5a0"
+        "Offset": "0x5b0"
       },
       {
         "Name": "ActionRules",
         "Type": "class ActionRulesComponent*",
         "Size": "0x8",
-        "Offset": "0x5a8"
+        "Offset": "0x5b8"
       },
       {
         "Name": "InteractableGrammaticalGender",
         "Type": "class InteractableGrammaticalGenderComponent*",
         "Size": "0x8",
-        "Offset": "0x5b0"
+        "Offset": "0x5c0"
       },
       {
         "Name": "NPCDialog",
         "Type": "class NPCDialogComponent*",
         "Size": "0x8",
-        "Offset": "0x5b8"
+        "Offset": "0x5c8"
       },
       {
         "Name": "AnimNotifyWwiseEmitter",
         "Type": "class AnimNotifyWwiseEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x5c0"
+        "Offset": "0x5d0"
       },
       {
         "Name": "Timeline_1_GhostBloom_073EA3DB4C21DAE58AD21095DF12C67A",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x5c8"
+        "Offset": "0x5d8"
       },
       {
         "Name": "Timeline_1_GhostOpacity_073EA3DB4C21DAE58AD21095DF12C67A",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x5cc"
+        "Offset": "0x5dc"
       },
       {
         "Name": "Timeline_1_EffectScale_073EA3DB4C21DAE58AD21095DF12C67A",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x5d0"
+        "Offset": "0x5e0"
       },
       {
         "Name": "Timeline_1__Direction_073EA3DB4C21DAE58AD21095DF12C67A",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x5d4"
+        "Offset": "0x5e4"
       },
       {
-        "Name": "pad0x3_PNE37[0x3]",
+        "Name": "pad0x3_2922P[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0x5d5"
+        "Offset": "0x5e5"
       },
       {
         "Name": "Timeline",
         "Type": "class TimelineComponent*",
         "Size": "0x8",
-        "Offset": "0x5d8"
+        "Offset": "0x5e8"
       },
       {
         "Name": "Timeline_0_GhostBloom_F50D254C4C6E160F3FF345A1BD22E356",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x5e0"
+        "Offset": "0x5f0"
       },
       {
         "Name": "Timeline_0_GhostOpacity_F50D254C4C6E160F3FF345A1BD22E356",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x5e4"
+        "Offset": "0x5f4"
       },
       {
         "Name": "Timeline_0_EffectScale_F50D254C4C6E160F3FF345A1BD22E356",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x5e8"
+        "Offset": "0x5f8"
       },
       {
         "Name": "Timeline_0__Direction_F50D254C4C6E160F3FF345A1BD22E356",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x5ec"
+        "Offset": "0x5fc"
       },
       {
-        "Name": "pad0x3_Q67AG[0x3]",
+        "Name": "pad0x3_V8Z87[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0x5ed"
+        "Offset": "0x5fd"
       },
       {
         "Name": "Timeline",
         "Type": "class TimelineComponent*",
         "Size": "0x8",
-        "Offset": "0x5f0"
+        "Offset": "0x600"
       },
       {
         "Name": "IsPendragonVisible",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x5f8"
+        "Offset": "0x608"
       },
       {
-        "Name": "pad0x7_VB5TR[0x7]",
+        "Name": "pad0x7_QXJBF[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x5f9"
+        "Offset": "0x609"
       },
       {
         "Name": "DynamicMaterials",
         "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
-        "Offset": "0x600"
+        "Offset": "0x610"
       },
       {
         "Name": "MeshComponentArray",
         "Type": "TArray<class MeshComponent*>",
         "Size": "0x10",
-        "Offset": "0x610"
+        "Offset": "0x620"
       }
     ]
   },

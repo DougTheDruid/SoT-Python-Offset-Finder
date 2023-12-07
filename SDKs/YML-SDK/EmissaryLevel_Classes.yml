@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 EmissaryActionRewardBoostComponent:
   Attributes:
-  - Name: pad0x10_L7RVU[0x10]
+  - Name: pad0x10_16ICQ[0x10]
     Offset: '0xc8'
     Size: '0x10'
     Type: char
@@ -20,7 +20,7 @@ EmissaryActiveTableVisualiserComponent:
     Offset: '0xd0'
     Size: '0x10'
     Type: TArray<struct MaterialVisualisation>
-  - Name: pad0x10_XP2N2[0x10]
+  - Name: pad0x10_XYKKI[0x10]
     Offset: '0xe0'
     Size: '0x10'
     Type: char
@@ -28,7 +28,7 @@ EmissaryActiveTableVisualiserComponent:
     Offset: '0xf0'
     Size: '0x10'
     Type: TArray<struct LightVisualisation>
-  - Name: pad0x10_JG1Y6[0x10]
+  - Name: pad0x10_SVOJQ[0x10]
     Offset: '0x100'
     Size: '0x10'
     Type: char
@@ -36,7 +36,7 @@ EmissaryActiveTableVisualiserComponent:
     Offset: '0x110'
     Size: '0x10'
     Type: TArray<struct ParticleVisualisation>
-  - Name: pad0x38_LXQ4W[0x38]
+  - Name: pad0x38_EXJFR[0x38]
     Offset: '0x120'
     Size: '0x38'
     Type: char
@@ -74,37 +74,37 @@ EmissaryFlotsamDuplicationInterface:
   Super: Interface
 EmissaryFlotsamItemInfo:
   Attributes:
-  - Name: pad0x8_FQSNB[0x8]
-    Offset: '0x740'
+  - Name: pad0x8_8TEDI[0x8]
+    Offset: '0x748'
     Size: '0x8'
     Type: char
   - Name: HandInOwnFlotsamReward
-    Offset: '0x748'
+    Offset: '0x750'
     Size: '0x18'
     Type: struct CompanySpecificBootyReward
   - Name: AlternateHandInOwnFlotsamReward
-    Offset: '0x760'
+    Offset: '0x768'
     Size: '0x18'
     Type: struct CompanySpecificBootyReward
   - Name: PermittedFlotsamPurchaseCompany
-    Offset: '0x778'
+    Offset: '0x780'
     Size: '0x8'
     Type: class UClass*
   - Name: FlotsamCanBeDuplicated
-    Offset: '0x780'
+    Offset: '0x788'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_VXOO6[0x7]
-    Offset: '0x781'
+  - Name: pad0x7_W4W26[0x7]
+    Offset: '0x789'
     Size: '0x7'
     Type: char
   ClassSize: '0x48'
-  FullSize: '0x788'
-  InheritedSize: '0x740'
+  FullSize: '0x790'
+  InheritedSize: '0x748'
   Super: BootyItemInfo
 EmissaryFlotsamItemSpawnComponent:
   Attributes:
-  - Name: pad0xa8_2QAOX[0xa8]
+  - Name: pad0xa8_UDAXN[0xa8]
     Offset: '0x470'
     Size: '0xa8'
     Type: char
@@ -112,7 +112,7 @@ EmissaryFlotsamItemSpawnComponent:
     Offset: '0x518'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x3c_D30TD[0x3c]
+  - Name: pad0x3c_QVKFB[0x3c]
     Offset: '0x524'
     Size: '0x3c'
     Type: char
@@ -122,7 +122,7 @@ EmissaryFlotsamItemSpawnComponent:
   Super: ItemSpawnComponent
 EmissaryFlotsamTooltipCustomizerComponent:
   Attributes:
-  - Name: pad0x10_CNPUL[0x10]
+  - Name: pad0x10_73PC4[0x10]
     Offset: '0xc8'
     Size: '0x10'
     Type: char
@@ -138,7 +138,7 @@ EmissaryFlotsamTooltipCustomizerComponent:
     Offset: '0xda'
     Size: '0x1'
     Type: bool
-  - Name: pad0x15_TIZ6E[0x15]
+  - Name: pad0x15_DRM8Z[0x15]
     Offset: '0xdb'
     Size: '0x15'
     Type: char
@@ -148,7 +148,7 @@ EmissaryFlotsamTooltipCustomizerComponent:
   Super: ActorComponent
 EmissaryLevelService:
   Attributes:
-  - Name: pad0xb8_UMNL5[0xb8]
+  - Name: pad0xb8_4UCYM[0xb8]
     Offset: '0x3c8'
     Size: '0xb8'
     Type: char
@@ -164,7 +164,7 @@ EmissaryLevelService:
     Offset: '0x490'
     Size: '0x8'
     Type: class GuildSettings*
-  - Name: pad0x288_26NTO[0x288]
+  - Name: pad0x288_YWHZY[0x288]
     Offset: '0x498'
     Size: '0x288'
     Type: char
@@ -186,7 +186,7 @@ EmissaryLevelSettingsAsset:
     Offset: '0x40'
     Size: '0x20'
     Type: struct EmissaryFlagMeshReferences
-  - Name: pad0x8_E7A8G[0x8]
+  - Name: pad0x8_62D1O[0x8]
     Offset: '0x60'
     Size: '0x8'
     Type: char
@@ -204,7 +204,7 @@ EmissaryMaxRankQuestProvider:
     Offset: '0xd0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_WZLOW[0x7]
+  - Name: pad0x7_VRSA6[0x7]
     Offset: '0xd1'
     Size: '0x7'
     Type: char
@@ -234,23 +234,15 @@ EmissaryMaxRankQuestProvider:
   Super: ActorComponent
 EmissaryParticipantComponent:
   Attributes:
-  - Name: pad0x8_4YE9L[0x8]
+  - Name: pad0x10_XHXBX[0x10]
     Offset: '0xc8'
-    Size: '0x8'
-    Type: char
-  - Name: IsAtMaxRank
-    Offset: '0xd0'
-    Size: '0x1'
-    Type: bool
-  - Name: pad0x7_0I0R9[0x7]
-    Offset: '0xd1'
-    Size: '0x7'
+    Size: '0x10'
     Type: char
   - Name: NoteCompletionIdents
     Offset: '0xd8'
     Size: '0x10'
     Type: TArray<struct MysteriousNotesCompletionEventsModelEntry>
-  - Name: pad0x10_LU28F[0x10]
+  - Name: pad0x10_CT2ZE[0x10]
     Offset: '0xe8'
     Size: '0x10'
     Type: char
@@ -270,7 +262,7 @@ EmissaryParticipantComponent:
     Offset: '0x108'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ZW5NS[0x3]
+  - Name: pad0x3_JCKY2[0x3]
     Offset: '0x109'
     Size: '0x3'
     Type: char
@@ -278,7 +270,7 @@ EmissaryParticipantComponent:
     Offset: '0x10c'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_JIND7[0x4]
+  - Name: pad0x4_92F5A[0x4]
     Offset: '0x114'
     Size: '0x4'
     Type: char
@@ -312,7 +304,7 @@ EmissaryRewardSettingsAsset:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_THAEU[0x4]
+  - Name: pad0x4_5KBD0[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -346,7 +338,7 @@ EmissaryShipAffiliationTrackerComponent:
     Offset: '0x330'
     Size: '0x4'
     Type: int
-  - Name: pad0x1c_WNWCT[0x1c]
+  - Name: pad0x1c_404C0[0x1c]
     Offset: '0x334'
     Size: '0x1c'
     Type: char
@@ -360,7 +352,7 @@ EmissaryVoyageInlineVoteConsumerBase:
     Offset: '0x30'
     Size: '0x8'
     Type: class EmissaryVoyageVoteValidatorBase*
-  - Name: pad0x48_1S9B3[0x48]
+  - Name: pad0x48_N1KQK[0x48]
     Offset: '0x38'
     Size: '0x48'
     Type: char
@@ -372,7 +364,7 @@ EmissaryVoyageInlineVoteConsumerBase:
     Offset: '0xb8'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x20_518HW[0x20]
+  - Name: pad0x20_27AH5[0x20]
     Offset: '0xc0'
     Size: '0x20'
     Type: char
@@ -380,7 +372,7 @@ EmissaryVoyageInlineVoteConsumerBase:
     Offset: '0xe0'
     Size: '0x10'
     Type: TArray<struct CrewMemberVotes>
-  - Name: pad0x20_ACP5A[0x20]
+  - Name: pad0x20_KGRLW[0x20]
     Offset: '0xf0'
     Size: '0x20'
     Type: char
@@ -388,7 +380,7 @@ EmissaryVoyageInlineVoteConsumerBase:
     Offset: '0x110'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x8_LEBKU[0x8]
+  - Name: pad0x8_FX0OW[0x8]
     Offset: '0x118'
     Size: '0x8'
     Type: char
@@ -402,7 +394,7 @@ EmissaryVoyageVoteValidatorBase:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_Z5G6G[0x7]
+  - Name: pad0x7_N8USK[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -414,7 +406,7 @@ EmissaryVoyageVoteValidatorBase:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_LCIWU[0x3]
+  - Name: pad0x3_F1BWN[0x3]
     Offset: '0x41'
     Size: '0x3'
     Type: char
@@ -422,7 +414,7 @@ EmissaryVoyageVoteValidatorBase:
     Offset: '0x44'
     Size: '0x1'
     Type: bool
-  - Name: pad0x93_EZXJB[0x93]
+  - Name: pad0x93_1MU0N[0x93]
     Offset: '0x45'
     Size: '0x93'
     Type: char
@@ -464,7 +456,7 @@ IsEmissaryStatCondition:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_YJDHF[0x7]
+  - Name: pad0x7_QEF2M[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -510,7 +502,7 @@ StartEmissaryVoyageInlineVoteConsumer:
     Offset: '0x2e0'
     Size: '0x38'
     Type: struct FText
-  - Name: pad0x18_VKHX0[0x18]
+  - Name: pad0x18_F80EF[0x18]
     Offset: '0x318'
     Size: '0x18'
     Type: char
@@ -534,7 +526,7 @@ StartGuildEmissaryVoyageInlineVoteConsumer:
     Offset: '0x368'
     Size: '0x38'
     Type: struct FText
-  - Name: pad0x30_UVSMG[0x30]
+  - Name: pad0x30_CHJHI[0x30]
     Offset: '0x3a0'
     Size: '0x30'
     Type: char
@@ -576,7 +568,7 @@ StopEmissaryVoyageInlineVoteConsumer:
     Offset: '0x2a8'
     Size: '0x38'
     Type: struct FText
-  - Name: pad0x18_JMBYZ[0x18]
+  - Name: pad0x18_88JM7[0x18]
     Offset: '0x2e0'
     Size: '0x18'
     Type: char
@@ -592,7 +584,7 @@ StopEmissaryVoyageInlineVoteValidator:
   Super: EmissaryVoyageVoteValidatorBase
 StopGuildEmissaryVoyageInlineVoteConsumer:
   Attributes:
-  - Name: pad0x30_HPF6F[0x30]
+  - Name: pad0x30_E1WJ8[0x30]
     Offset: '0x2f8'
     Size: '0x30'
     Type: char

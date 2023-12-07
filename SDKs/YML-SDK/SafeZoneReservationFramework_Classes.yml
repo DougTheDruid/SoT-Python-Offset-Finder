@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 SafeZoneComponent:
   Attributes:
-  - Name: pad0x10_21IM5[0x10]
+  - Name: pad0x10_WS7M4[0x10]
     Offset: '0x5e0'
     Size: '0x10'
     Type: char
@@ -10,7 +10,7 @@ SafeZoneComponent:
     Offset: '0x5f0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5D1E8[0x4]
+  - Name: pad0x4_5CQ5D[0x4]
     Offset: '0x5f4'
     Size: '0x4'
     Type: char
@@ -34,7 +34,7 @@ SafeZoneComponent:
     Offset: '0x606'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_3S4QL[0x1]
+  - Name: pad0x1_HEMKO[0x1]
     Offset: '0x607'
     Size: '0x1'
     Type: char
@@ -42,7 +42,7 @@ SafeZoneComponent:
     Offset: '0x608'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_4PS0D[0x4]
+  - Name: pad0x4_RO045[0x4]
     Offset: '0x60c'
     Size: '0x4'
     Type: char
@@ -50,7 +50,7 @@ SafeZoneComponent:
     Offset: '0x610'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_FZQL2[0x3]
+  - Name: pad0x3_41F2S[0x3]
     Offset: '0x611'
     Size: '0x3'
     Type: char
@@ -58,7 +58,7 @@ SafeZoneComponent:
     Offset: '0x614'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_OAKYB[0x4]
+  - Name: pad0x4_PX85X[0x4]
     Offset: '0x618'
     Size: '0x4'
     Type: char
@@ -78,7 +78,7 @@ SafeZoneComponent:
     Offset: '0x628'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_PI349[0x7]
+  - Name: pad0x7_PDYWX[0x7]
     Offset: '0x629'
     Size: '0x7'
     Type: char
@@ -90,7 +90,7 @@ SafeZoneComponent:
     Offset: '0x6b0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_1WNBE[0x3]
+  - Name: pad0x3_DFQH3[0x3]
     Offset: '0x6b1'
     Size: '0x3'
     Type: char
@@ -98,7 +98,7 @@ SafeZoneComponent:
     Offset: '0x6b4'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_MJKJP[0x4]
+  - Name: pad0x4_CDOHR[0x4]
     Offset: '0x6b8'
     Size: '0x4'
     Type: char
@@ -118,7 +118,7 @@ SafeZoneComponent:
     Offset: '0x6c5'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_SJ8JV[0x2]
+  - Name: pad0x2_SIMNL[0x2]
     Offset: '0x6c6'
     Size: '0x2'
     Type: char
@@ -130,7 +130,7 @@ SafeZoneComponent:
     Offset: '0x6d0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5f_1FV86[0x5f]
+  - Name: pad0x5f_BX6KU[0x5f]
     Offset: '0x6d1'
     Size: '0x5f'
     Type: char

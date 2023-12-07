@@ -2,12 +2,12 @@
 # https://github.com/DougTheDruid
 AsyncLoadingMonitoringService:
   Attributes:
-  - Name: pad0xa8_3RE8A[0xa8]
+  - Name: pad0xb8_JV39L[0xb8]
     Offset: '0x28'
-    Size: '0xa8'
+    Size: '0xb8'
     Type: char
-  ClassSize: '0xa8'
-  FullSize: '0xd0'
+  ClassSize: '0xb8'
+  FullSize: '0xe0'
   InheritedSize: '0x28'
   Super: Object
 AsyncLoadingMonitoringServiceInterface:

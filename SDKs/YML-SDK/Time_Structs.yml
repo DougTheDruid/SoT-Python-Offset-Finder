@@ -25,7 +25,7 @@ EventSetDateTime:
   ClassSize: '0x14'
 EventTimeServiceMigrated:
   Attributes:
-  - Name: pad0x1_D64J8[0x1]
+  - Name: pad0x1_7OJF6[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -61,14 +61,14 @@ ReplicatedAuthoritativeTime:
   ClassSize: '0x10'
 ReplicatedDateTime:
   Attributes:
-  - Name: pad0x8_T0TEE[0x8]
+  - Name: pad0x8_WWA4S[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
   ClassSize: '0x8'
 ReplicatedTimespan:
   Attributes:
-  - Name: pad0x8_GP3D5[0x8]
+  - Name: pad0x8_SG4ZC[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char

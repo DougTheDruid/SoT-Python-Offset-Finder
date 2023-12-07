@@ -30,7 +30,7 @@ public:
 class AudioReporterSubSystem: public Object
 {
 public:
-	char                                                         pad0x50_G941P[0x50];                               // 0x28(0x50)
+	char                                                         pad0x50_HO1KQ[0x50];                               // 0x28(0x50)
 };
 
 
@@ -47,7 +47,7 @@ public:
 class WwiseDebugManager: public Object
 {
 public:
-	char                                                         pad0x60_ERXDT[0x60];                               // 0x28(0x60)
+	char                                                         pad0x60_SRKB6[0x60];                               // 0x28(0x60)
 };
 
 
@@ -71,7 +71,7 @@ public:
 class WwiseEmitterManager: public Object
 {
 public:
-	char                                                         pad0x20_ZTPYU[0x20];                               // 0x28(0x20)
+	char                                                         pad0x20_VD83Y[0x20];                               // 0x28(0x20)
 };
 
 
@@ -86,7 +86,7 @@ public:
 class WwiseInputManager: public Object
 {
 public:
-	char                                                         pad0x28_Y8WT0[0x28];                               // 0x28(0x28)
+	char                                                         pad0x28_403CC[0x28];                               // 0x28(0x28)
 };
 
 
@@ -94,7 +94,7 @@ public:
 class WwiseMediaManager: public Object
 {
 public:
-	char                                                         pad0x50_RS5IE[0x50];                               // 0x28(0x50)
+	char                                                         pad0x50_NLCZ1[0x50];                               // 0x28(0x50)
 };
 
 
@@ -102,7 +102,7 @@ public:
 class WwisePoolManager: public Object
 {
 public:
-	char                                                         pad0xd8_UH96R[0xd8];                               // 0x28(0xd8)
+	char                                                         pad0xd8_8J9VC[0xd8];                               // 0x28(0xd8)
 };
 
 
@@ -110,7 +110,7 @@ public:
 class WwiseSoundFrameManager: public Object
 {
 public:
-	char                                                         pad0x20_UX4V3[0x20];                               // 0x28(0x20)
+	char                                                         pad0x20_6E61O[0x20];                               // 0x28(0x20)
 };
 
 
@@ -120,13 +120,13 @@ class WwiseEvent: public Object
 public:
 	class WwiseBank*                                             RequiredBank;                                      // 0x28(0x8)
 	bool                                                         WaitForBankToLoad;                                 // 0x30(0x1)
-	char                                                         pad0x3_I29IM[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_L8WIA[0x3];                                 // 0x31(0x3)
 	float                                                        DurationMin;                                       // 0x38(0x4)
 	float                                                        DurationMax;                                       // 0x3c(0x4)
 	float                                                        MaxAttenuation;                                    // 0x40(0x4)
 	byte                                                         DurationType;                                      // 0x44(0x1)
 	bool                                                         CookedIsStopEvent;                                 // 0x45(0x1)
-	char                                                         pad0xa_AGQL5[0xa];                                 // 0x46(0xa)
+	char                                                         pad0xa_L82C6[0xa];                                 // 0x46(0xa)
 };
 
 
@@ -160,7 +160,7 @@ class WwiseNonShippingAudioRootAsset: public DataAsset
 {
 public:
 	TArray<class WwiseNonShippingAudioAsset*>                    NonShippingAudioAssets;                            // 0x28(0x10)
-	char                                                         pad0x10_6DL1C[0x10];                               // 0x38(0x10)
+	char                                                         pad0x10_GDNJ3[0x10];                               // 0x38(0x10)
 };
 
 
@@ -170,7 +170,7 @@ class WwiseBank: public Object
 public:
 	struct FString                                               path;                                              // 0x28(0x10)
 	class WwiseBank*                                             InitBank;                                          // 0x40(0x8)
-	char                                                         pad0x28_SAD46[0x28];                               // 0x48(0x28)
+	char                                                         pad0x28_WIE4N[0x28];                               // 0x48(0x28)
 };
 
 
@@ -194,7 +194,7 @@ public:
 class MovieSceneAkAudioRTPCSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_MLMFV[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_PC0UX[0x8];                                 // 0x98(0x8)
 	struct FString                                               Name;                                              // 0xa0(0x10)
 	struct RichCurve                                             FloatCurve;                                        // 0xb0(0x78)
 };
@@ -206,7 +206,7 @@ class MovieSceneAkTrack: public MovieSceneTrack
 public:
 	TArray<class MovieSceneSection*>                             Sections;                                          // 0x88(0x10)
 	bool                                                         bIsAMasterTrack;                                   // 0x98(0x1)
-	char                                                         pad0x7_1F93F[0x7];                                 // 0x99(0x7)
+	char                                                         pad0x7_MV4SM[0x7];                                 // 0x99(0x7)
 };
 
 

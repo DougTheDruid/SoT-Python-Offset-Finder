@@ -6,13 +6,13 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x18 (Full Size[0x6b8] - InheritedSize[0x6a0]
+// Size 0x18 (Full Size[0x6d8] - InheritedSize[0x6c0]
 class BP_Projectile_VolcanoRockMedium_C: public VolcanicRock
 {
 public:
-	class RotatingAudioSourceComponent*                          RotatingAudioSource;                               // 0x6a0(0x8)
-	class StaticMeshComponent*                                   RockMesh;                                          // 0x6a8(0x8)
-	class SphereComponent*                                       Collision;                                         // 0x6b0(0x8)
+	class RotatingAudioSourceComponent*                          RotatingAudioSource;                               // 0x6c0(0x8)
+	class StaticMeshComponent*                                   RockMesh;                                          // 0x6c8(0x8)
+	class SphereComponent*                                       Collision;                                         // 0x6d0(0x8)
 };
 
 

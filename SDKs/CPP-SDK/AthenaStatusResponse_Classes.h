@@ -20,7 +20,7 @@ class StatusResponseApplyPersistentStatus: public StatusResponse
 public:
 	struct Status                                                StatusToApply;                                     // 0x30(0x18)
 	float                                                        DurationMultiplier;                                // 0x48(0x4)
-	char                                                         pad0x4_3EEFE[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_FMRSO[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -44,7 +44,7 @@ class StatusResponseHealthRegenerationPoolChange: public StatusResponse
 {
 public:
 	float                                                        HealthPoolChangeIntensityMultiplier;               // 0x30(0x4)
-	char                                                         pad0x4_H4CND[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_UT3BY[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -57,9 +57,9 @@ public:
 	float                                                        NoiseRange;                                        // 0x40(0x4)
 	float                                                        NoiseLoudness;                                     // 0x44(0x4)
 	bool                                                         NoiseMultipleTicks;                                // 0x48(0x1)
-	char                                                         pad0x3_PC1R8[0x3];                                 // 0x49(0x3)
+	char                                                         pad0x3_P0HH3[0x3];                                 // 0x49(0x3)
 	float                                                        NoiseTimerTick;                                    // 0x4c(0x4)
-	char                                                         pad0x20_LJHC3[0x20];                               // 0x50(0x20)
+	char                                                         pad0x20_I88CU[0x20];                               // 0x50(0x20)
 };
 
 

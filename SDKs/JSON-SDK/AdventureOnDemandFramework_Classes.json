@@ -41,7 +41,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x20_OXI4W[0x20]",
+        "Name": "pad0x20_6BU2B[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xd8"
@@ -61,7 +61,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x4_H9D3H[0x4]",
+        "Name": "pad0x4_59014[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xbc"
@@ -85,7 +85,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x3_WUGYT[0x3]",
+        "Name": "pad0x3_T87BT[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xd1"
@@ -105,7 +105,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x28_2QOGK[0x28]",
+        "Name": "pad0x28_9LW0W[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x6a0"
@@ -123,7 +123,7 @@
         "Offset": "0x6d0"
       },
       {
-        "Name": "pad0x28_OJJ1Y[0x28]",
+        "Name": "pad0x28_HF310[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x6d8"
@@ -144,7 +144,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_W5OVD[0x10]",
+        "Name": "pad0x10_HOKWJ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x138"
@@ -198,7 +198,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x20_9P629[0x20]",
+        "Name": "pad0x20_1ZAK9[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x128"
@@ -225,7 +225,7 @@
         "Offset": "0x8b8"
       },
       {
-        "Name": "pad0x20_PENM9[0x20]",
+        "Name": "pad0x20_Q9ZV0[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x8c0"
@@ -291,7 +291,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x4_PD232[0x4]",
+        "Name": "pad0x4_5PMY9[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -329,7 +329,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_PQ9H4[0x7]",
+        "Name": "pad0x7_FV8BY[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
@@ -564,7 +564,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_6QIWL[0x4]",
+        "Name": "pad0x4_CWVJT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
@@ -648,7 +648,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x7_KJ5BR[0x7]",
+        "Name": "pad0x7_V8EFL[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x81"
@@ -742,7 +742,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_TGOC3[0x18]",
+        "Name": "pad0x18_TNBM5[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x98"
@@ -842,51 +842,63 @@
   },
   "QuestTableAdventureOnDemandParams": {
     "Super": "DataAsset",
-    "FullSize": "0x158",
+    "FullSize": "0x178",
     "InheritedSize": "0x28",
-    "ClassSize": "0x130",
+    "ClassSize": "0x150",
     "Attributes": [
+      {
+        "Name": "NewPlayerTutorialPrerequisites",
+        "Type": "TArray<class InteractionPrerequisiteBase*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "NewPlayerCompanyTutorialPrerequisites",
+        "Type": "TArray<struct QuestTableCompanyTutorialPrerequisites>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
       {
         "Name": "SailToQuestText_Default",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x28"
+        "Offset": "0x48"
       },
       {
         "Name": "SailToQuestText_BlockedDueToWorldEvent",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x60"
+        "Offset": "0x80"
       },
       {
         "Name": "DiveToQuestText_Default",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x98"
+        "Offset": "0xb8"
       },
       {
         "Name": "DiveToQuestText_BlockedDueToTutorial",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0xd0"
+        "Offset": "0xf0"
       },
       {
         "Name": "DiveToQuestText_BlockedDueToCooldown",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x108"
+        "Offset": "0x128"
       },
       {
         "Name": "InfoDiscoverTileCategory",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x140"
+        "Offset": "0x160"
       },
       {
         "Name": "BakedQuestDiscoverTiles",
         "Type": "TArray<struct QuestTableBakedQuestDiscoverTile>",
         "Size": "0x10",
-        "Offset": "0x148"
+        "Offset": "0x168"
       }
     ]
   },

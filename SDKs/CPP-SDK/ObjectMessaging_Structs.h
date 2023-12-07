@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct ObjectMessagingDispatcher
 {
 public:
-	char                                                         pad0xa0_NCJRT[0xa0];                               // 0x0(0xa0)
+	char                                                         pad0xa0_ZZ5P1[0xa0];                               // 0x0(0xa0)
 };
 
 
@@ -18,7 +18,7 @@ public:
 struct ObjectMessagingDispatcherHandle
 {
 public:
-	char                                                         pad0x8_IU3HL[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_I1K8J[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -26,9 +26,9 @@ public:
 struct ObjectMessagingHandle
 {
 public:
-	char                                                         pad0x8_NHJW7[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_UQTEN[0x8];                                 // 0x0(0x8)
 	class Struct*                                                EventType;                                         // 0x8(0x8)
-	char                                                         pad0x48_ELHO7[0x48];                               // 0x10(0x48)
+	char                                                         pad0x48_NNCIH[0x48];                               // 0x10(0x48)
 };
 
 
@@ -36,7 +36,7 @@ public:
 struct ObjectMessagingObjectScoper
 {
 public:
-	char                                                         pad0x50_HFU5K[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_D98QK[0x50];                               // 0x0(0x50)
 };
 
 
@@ -44,7 +44,7 @@ public:
 struct EventObjectMessagingDispatcherBeingDestroyed
 {
 public:
-	char                                                         pad0x8_3IUD6[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_WSKSY[0x8];                                 // 0x0(0x8)
 };
 
 

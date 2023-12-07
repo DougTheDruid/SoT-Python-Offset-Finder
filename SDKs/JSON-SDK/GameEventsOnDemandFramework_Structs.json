@@ -21,7 +21,7 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x6_GMPDY[0x6]",
+        "Name": "pad0x6_45WQX[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x12"
@@ -37,6 +37,29 @@
         "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "GameEventOnDemandCompleteBannerNetworkEvent": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x10_HMHAB[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Title",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Company",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x48"
       }
     ]
   },
@@ -95,6 +118,29 @@
       }
     ]
   },
+  "GameEventOnDemandCompletedTelemetryEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Company",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ParticipatingOnDemandCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ParticipatingCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
   "GameEventOnDemandDeactivatedTelemetryEvent": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -133,7 +179,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_8JKAP[0x1]",
+        "Name": "pad0x1_73FQY[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -144,7 +190,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_9UGM6[0x1]",
+        "Name": "pad0x1_DWCIY[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -155,7 +201,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_YPJ1O[0x1]",
+        "Name": "pad0x1_SZVKI[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -163,13 +209,19 @@
     ]
   },
   "GameEventOnDemandCrewJoinedTelemetryEvent": {
-    "ClassSize": "0x10",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "ShipType",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Company",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BP_BaseInternalDamageZone_C:
   Attributes:
-  - Name: pad0x7_50SZS[0x7]
+  - Name: pad0x7_QCYZ2[0x7]
     Offset: '0x861'
     Size: '0x7'
     Type: char

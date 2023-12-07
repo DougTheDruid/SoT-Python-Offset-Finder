@@ -50,7 +50,7 @@ struct RopeCatenaryDynamicsParams
 public:
 	float                                                        CatenaryToTautLengthRatioToConsiderCatenary;       // 0x0(0x4)
 	bool                                                         ReactsToWind;                                      // 0x4(0x1)
-	char                                                         pad0x3_U6M3M[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_VPMDE[0x3];                                 // 0x5(0x3)
 };
 
 
@@ -75,7 +75,7 @@ public:
 struct RiggingSystemLine
 {
 public:
-	char                                                         pad0x10_YI1OL[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_NTSOE[0x10];                               // 0x0(0x10)
 };
 
 
@@ -110,7 +110,7 @@ public:
 	class Texture2D*                                             DiffuseTexture;                                    // 0x8(0x8)
 	class Texture2D*                                             NormalTexture;                                     // 0x10(0x8)
 	int                                                          ShadowLOD;                                         // 0x18(0x4)
-	char                                                         pad0x4_Y93DH[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_H5BD7[0x4];                                 // 0x1c(0x4)
 };
 
 
@@ -130,10 +130,10 @@ struct RiggingSystemPulleyParams
 public:
 	struct SocketId                                              Anchor;                                            // 0x0(0x20)
 	float                                                        OffsetFromAnchor;                                  // 0x20(0x4)
-	char                                                         pad0x4_MMQ7I[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_VRM56[0x4];                                 // 0x24(0x4)
 	struct PulleyVisualParams                                    Visuals;                                           // 0x28(0x10)
 	struct RiggingSystemPulleyAttachmentParams                   AttachmentRope;                                    // 0x38(0x14)
-	char                                                         pad0x4_W8YUV[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_OR6VS[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -156,7 +156,7 @@ public:
 	struct SocketId                                              End;                                               // 0x30(0x20)
 	struct RopeVisualParams                                      Visuals;                                           // 0x50(0xc)
 	struct RopeCatenaryShapeParams                               Shape;                                             // 0x5c(0x18)
-	char                                                         pad0x4_SN6JN[0x4];                                 // 0x74(0x4)
+	char                                                         pad0x4_SI9SW[0x4];                                 // 0x74(0x4)
 };
 
 

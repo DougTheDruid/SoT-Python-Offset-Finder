@@ -23,7 +23,7 @@ public:
 	struct FString                                               EventID;                                           // 0x0(0x10)
 	struct DateTime                                              ServerTimeUTC;                                     // 0x10(0x8)
 	int                                                          MemoryUsedPercentage;                              // 0x18(0x4)
-	char                                                         pad0x4_67DUX[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_D1WPB[0x4];                                 // 0x1c(0x4)
 };
 
 

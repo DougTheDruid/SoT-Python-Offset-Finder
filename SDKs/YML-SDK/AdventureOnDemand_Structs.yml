@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AdventureOnDemandServiceCrewEntry:
   Attributes:
-  - Name: pad0x38_1ZBHV[0x38]
+  - Name: pad0x38_T5IWF[0x38]
     Offset: '0x0'
     Size: '0x38'
     Type: char

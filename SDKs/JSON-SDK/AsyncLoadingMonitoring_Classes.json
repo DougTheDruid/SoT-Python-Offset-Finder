@@ -8,14 +8,14 @@
   },
   "AsyncLoadingMonitoringService": {
     "Super": "Object",
-    "FullSize": "0xd0",
+    "FullSize": "0xe0",
     "InheritedSize": "0x28",
-    "ClassSize": "0xa8",
+    "ClassSize": "0xb8",
     "Attributes": [
       {
-        "Name": "pad0xa8_3RE8A[0xa8]",
+        "Name": "pad0xb8_JV39L[0xb8]",
         "Type": "char",
-        "Size": "0xa8",
+        "Size": "0xb8",
         "Offset": "0x28"
       }
     ]

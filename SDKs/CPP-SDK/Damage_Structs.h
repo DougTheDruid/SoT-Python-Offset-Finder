@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 struct TriggerPlayerControllerHitNotificationNetworkEvent
 {
 public:
-	char                                                         pad0x10_EV11H[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_92BB8[0x10];                               // 0x0(0x10)
 	bool                                                         IsKillingHit;                                      // 0x10(0x1)
-	char                                                         pad0x7_2JY9P[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_5JBIA[0x7];                                 // 0x11(0x7)
 };
 
 

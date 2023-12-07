@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class AsymmetricClientObject: public Actor
 {
 public:
-	char                                                         pad0x18_F7BBV[0x18];                               // 0x3c8(0x18)
+	char                                                         pad0x18_ZGK33[0x18];                               // 0x3c8(0x18)
 	class BoxComponent*                                          BaseComponent;                                     // 0x3e0(0x8)
 	class StaticMeshMemoryConstraintComponent*                   ThirdPersonMesh;                                   // 0x3e8(0x8)
 	class WaterInteractionComponent*                             WaterInteractionComponent;                         // 0x3f0(0x8)
@@ -25,11 +25,11 @@ public:
 class AsymmetricObjectServerManager: public Actor
 {
 public:
-	char                                                         pad0x18_BWCBV[0x18];                               // 0x3c8(0x18)
+	char                                                         pad0x18_2M2JV[0x18];                               // 0x3c8(0x18)
 	class AsymmetricClientObject*                                SpawnedObject;                                     // 0x3e0(0x8)
 	class SceneComponent*                                        SceneComponent;                                    // 0x3e8(0x8)
 	struct StringAssetReference                                  AsymmetricObjectAsset;                             // 0x3f0(0x10)
-	char                                                         pad0x20_LMIZL[0x20];                               // 0x400(0x20)
+	char                                                         pad0x20_8CYQC[0x20];                               // 0x400(0x20)
 };
 
 

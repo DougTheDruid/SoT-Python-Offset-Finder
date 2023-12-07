@@ -6,12 +6,12 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x10 (Full Size[0x6b0] - InheritedSize[0x6a0]
+// Size 0x10 (Full Size[0x6d0] - InheritedSize[0x6c0]
 class BP_Projectile_VolcanoRockMini_C: public VolcanicRock
 {
 public:
-	class StaticMeshComponent*                                   StaticMesh;                                        // 0x6a0(0x8)
-	class SphereComponent*                                       Collision;                                         // 0x6a8(0x8)
+	class StaticMeshComponent*                                   StaticMesh;                                        // 0x6c0(0x8)
+	class SphereComponent*                                       Collision;                                         // 0x6c8(0x8)
 };
 
 

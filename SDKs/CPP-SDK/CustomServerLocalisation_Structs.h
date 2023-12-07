@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct CustomServerLocalisationModel
 {
 public:
-	char                                                         pad0x50_ZPY5A[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_U5MHW[0x50];                               // 0x0(0x50)
 };
 
 
@@ -37,7 +37,7 @@ struct CustomServerClientData
 {
 public:
 	struct FString                                               Key;                                               // 0x0(0x10)
-	char                                                         pad0x10_W80GX[0x10];                               // 0x10(0x10)
+	char                                                         pad0x10_24GS2[0x10];                               // 0x10(0x10)
 };
 
 

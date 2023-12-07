@@ -8,7 +8,7 @@ AnimNotifyWwiseEmitterComponentRetrievalInterface:
   Super: Interface
 AudioReporterSubSystem:
   Attributes:
-  - Name: pad0x50_G941P[0x50]
+  - Name: pad0x50_HO1KQ[0x50]
     Offset: '0x28'
     Size: '0x50'
     Type: char
@@ -48,7 +48,7 @@ MovieSceneAkAudioEventTrack:
   Super: MovieSceneAkTrack
 MovieSceneAkAudioRTPCSection:
   Attributes:
-  - Name: pad0x8_MLMFV[0x8]
+  - Name: pad0x8_PC0UX[0x8]
     Offset: '0x98'
     Size: '0x8'
     Type: char
@@ -80,7 +80,7 @@ MovieSceneAkTrack:
     Offset: '0x98'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_1F93F[0x7]
+  - Name: pad0x7_MV4SM[0x7]
     Offset: '0x99'
     Size: '0x7'
     Type: char
@@ -112,7 +112,7 @@ WwiseBank:
     Offset: '0x40'
     Size: '0x8'
     Type: class WwiseBank*
-  - Name: pad0x28_SAD46[0x28]
+  - Name: pad0x28_WIE4N[0x28]
     Offset: '0x48'
     Size: '0x28'
     Type: char
@@ -162,7 +162,7 @@ WwiseDDSEvent:
   Super: WwiseEvent
 WwiseDebugManager:
   Attributes:
-  - Name: pad0x60_ERXDT[0x60]
+  - Name: pad0x60_SRKB6[0x60]
     Offset: '0x28'
     Size: '0x60'
     Type: char
@@ -178,7 +178,7 @@ WwiseEmitterInterface:
   Super: Interface
 WwiseEmitterManager:
   Attributes:
-  - Name: pad0x20_ZTPYU[0x20]
+  - Name: pad0x20_VD83Y[0x20]
     Offset: '0x28'
     Size: '0x20'
     Type: char
@@ -196,7 +196,7 @@ WwiseEvent:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_I29IM[0x3]
+  - Name: pad0x3_L8WIA[0x3]
     Offset: '0x31'
     Size: '0x3'
     Type: char
@@ -220,7 +220,7 @@ WwiseEvent:
     Offset: '0x45'
     Size: '0x1'
     Type: bool
-  - Name: pad0xa_AGQL5[0xa]
+  - Name: pad0xa_L82C6[0xa]
     Offset: '0x46'
     Size: '0xa'
     Type: char
@@ -268,7 +268,7 @@ WwiseIDsDatabase:
   Super: DataAsset
 WwiseInputManager:
   Attributes:
-  - Name: pad0x28_Y8WT0[0x28]
+  - Name: pad0x28_403CC[0x28]
     Offset: '0x28'
     Size: '0x28'
     Type: char
@@ -284,7 +284,7 @@ WwiseInputManagerInterface:
   Super: Interface
 WwiseMediaManager:
   Attributes:
-  - Name: pad0x50_RS5IE[0x50]
+  - Name: pad0x50_NLCZ1[0x50]
     Offset: '0x28'
     Size: '0x50'
     Type: char
@@ -316,7 +316,7 @@ WwiseNonShippingAudioRootAsset:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<class WwiseNonShippingAudioAsset*>
-  - Name: pad0x10_6DL1C[0x10]
+  - Name: pad0x10_GDNJ3[0x10]
     Offset: '0x38'
     Size: '0x10'
     Type: char
@@ -326,7 +326,7 @@ WwiseNonShippingAudioRootAsset:
   Super: DataAsset
 WwisePoolManager:
   Attributes:
-  - Name: pad0xd8_UH96R[0xd8]
+  - Name: pad0xd8_8J9VC[0xd8]
     Offset: '0x28'
     Size: '0xd8'
     Type: char
@@ -336,7 +336,7 @@ WwisePoolManager:
   Super: Object
 WwiseSoundFrameManager:
   Attributes:
-  - Name: pad0x20_UX4V3[0x20]
+  - Name: pad0x20_6E61O[0x20]
     Offset: '0x28'
     Size: '0x20'
     Type: char

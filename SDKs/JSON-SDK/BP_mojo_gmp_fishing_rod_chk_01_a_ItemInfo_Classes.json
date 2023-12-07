@@ -1,15 +1,15 @@
 {
   "BP_mojo_gmp_fishing_rod_chk_01_a_ItemInfo_C": {
     "Super": "ItemInfo",
-    "FullSize": "0x530",
-    "InheritedSize": "0x528",
+    "FullSize": "0x538",
+    "InheritedSize": "0x530",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DefaultSceneRoot",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x528"
+        "Offset": "0x530"
       }
     ]
   },

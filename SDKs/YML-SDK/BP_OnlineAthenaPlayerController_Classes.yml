@@ -3,10 +3,10 @@
 BP_OnlineAthenaPlayerController_C:
   Attributes:
   - Name: VisitShopkeepersTutorialComponent
-    Offset: '0x1810'
+    Offset: '0x1820'
     Size: '0x8'
     Type: blueprintgeneratedclass BP_Component_Tutorial2019_C*
   ClassSize: '0x8'
-  FullSize: '0x1818'
-  InheritedSize: '0x1810'
+  FullSize: '0x1828'
+  InheritedSize: '0x1820'
   Super: OnlineAthenaPlayerController

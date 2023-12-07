@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 GenericStatusVFXComponent:
   Attributes:
-  - Name: pad0x8_SL6R2[0x8]
+  - Name: pad0x8_QL6H1[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -14,7 +14,7 @@ GenericStatusVFXComponent:
     Offset: '0xd8'
     Size: '0x8'
     Type: class World*
-  - Name: pad0x20_89HIL[0x20]
+  - Name: pad0x20_CY56Q[0x20]
     Offset: '0xe0'
     Size: '0x20'
     Type: char
@@ -22,7 +22,7 @@ GenericStatusVFXComponent:
     Offset: '0x100'
     Size: '0x8'
     Type: class GenericStatusVFXDataAsset*
-  - Name: pad0x18_6XBNQ[0x18]
+  - Name: pad0x18_T0LMY[0x18]
     Offset: '0x108'
     Size: '0x18'
     Type: char
@@ -30,7 +30,7 @@ GenericStatusVFXComponent:
     Offset: '0x120'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_UMGI1[0x7]
+  - Name: pad0x7_FK72U[0x7]
     Offset: '0x121'
     Size: '0x7'
     Type: char
@@ -60,7 +60,7 @@ GenericStatusVFXDataAsset:
     Offset: '0x50'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x8_50MC6[0x8]
+  - Name: pad0x8_JI6QD[0x8]
     Offset: '0x58'
     Size: '0x8'
     Type: char

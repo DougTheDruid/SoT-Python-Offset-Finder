@@ -12,7 +12,7 @@ struct VideoPlaybackStateEvent
 public:
 	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
 	byte                                                         State;                                             // 0x10(0x1)
-	char                                                         pad0x7_GHKUC[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_F4PM0[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -67,7 +67,7 @@ public:
 	struct IntPoint                                              LowestResolution;                                  // 0x10(0x8)
 	struct IntPoint                                              MedianResolution;                                  // 0x18(0x8)
 	struct IntPoint                                              HighestResolution;                                 // 0x20(0x8)
-	char                                                         pad0x18_36AEA[0x18];                               // 0x28(0x18)
+	char                                                         pad0x18_J0BPF[0x18];                               // 0x28(0x18)
 };
 
 

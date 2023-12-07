@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct GameplayResourceSet
 {
 public:
-	char                                                         pad0x2_LU2N2[0x2];                                 // 0x0(0x2)
+	char                                                         pad0x2_N4GC4[0x2];                                 // 0x0(0x2)
 };
 
 

@@ -8,7 +8,7 @@ OcclusionInterface:
   Super: Interface
 OcclusionService:
   Attributes:
-  - Name: pad0x68_YYXQ2[0x68]
+  - Name: pad0x68_4ZIVH[0x68]
     Offset: '0x28'
     Size: '0x68'
     Type: char

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AthenaFFTWater:
   Attributes:
-  - Name: pad0x48_CJZCV[0x48]
+  - Name: pad0x48_J0PJ4[0x48]
     Offset: '0x410'
     Size: '0x48'
     Type: char
@@ -12,7 +12,7 @@ AthenaFFTWater:
   Super: FFTWater
 AthenaWaterEmissionVolume:
   Attributes:
-  - Name: pad0x8_Z3ZFU[0x8]
+  - Name: pad0x8_H7FX1[0x8]
     Offset: '0x3d0'
     Size: '0x8'
     Type: char
@@ -28,7 +28,7 @@ FFTWaterInterface:
   Super: Interface
 FFTWaterService:
   Attributes:
-  - Name: pad0x78_6BTKZ[0x78]
+  - Name: pad0x78_LFD1E[0x78]
     Offset: '0x3c8'
     Size: '0x78'
     Type: char
@@ -42,7 +42,7 @@ FFTWaterService:
   Super: Actor
 FlatWaterPlaneComponent:
   Attributes:
-  - Name: pad0x10_FIMQC[0x10]
+  - Name: pad0x10_6HXDC[0x10]
     Offset: '0x5d0'
     Size: '0x10'
     Type: char
@@ -52,7 +52,7 @@ FlatWaterPlaneComponent:
   Super: BaseWaterComponent
 MockWaterInterface:
   Attributes:
-  - Name: pad0x10_8LV0F[0x10]
+  - Name: pad0x10_CIBBM[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -100,7 +100,7 @@ SplashProbeDataAsset:
   Super: DataAsset
 SplashProbeVFXComponent:
   Attributes:
-  - Name: pad0x28_XMA56[0x28]
+  - Name: pad0x28_1CERC[0x28]
     Offset: '0xc8'
     Size: '0x28'
     Type: char
@@ -124,7 +124,7 @@ SplashProbeVFXComponent:
     Offset: '0x118'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_LIH72[0x7]
+  - Name: pad0x7_3J50B[0x7]
     Offset: '0x119'
     Size: '0x7'
     Type: char
@@ -158,7 +158,7 @@ WaterEmissionVolumeInterface:
   Super: Interface
 WaterEmissionVolumeService:
   Attributes:
-  - Name: pad0x20_GCBYT[0x20]
+  - Name: pad0x20_JK5TA[0x20]
     Offset: '0x28'
     Size: '0x20'
     Type: char
@@ -174,7 +174,7 @@ WaterExclusionSurfaceInterface:
   Super: Interface
 WaterInteractionComponent:
   Attributes:
-  - Name: pad0x14_D5IET[0x14]
+  - Name: pad0x14_ABAYE[0x14]
     Offset: '0x5f0'
     Size: '0x14'
     Type: char
@@ -182,7 +182,7 @@ WaterInteractionComponent:
     Offset: '0x604'
     Size: '0x4'
     Type: int
-  - Name: pad0x8_42DJ0[0x8]
+  - Name: pad0x8_CEYEU[0x8]
     Offset: '0x608'
     Size: '0x8'
     Type: char
@@ -244,7 +244,7 @@ WaterSpoutVFXComponent:
     Offset: '0xd8'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_WIRLM[0x4]
+  - Name: pad0x4_ODTI1[0x4]
     Offset: '0xe4'
     Size: '0x4'
     Type: char
@@ -276,7 +276,7 @@ WaterSpoutVFXComponent:
     Offset: '0x108'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_WYW9Z[0x7]
+  - Name: pad0x7_0KMH5[0x7]
     Offset: '0x109'
     Size: '0x7'
     Type: char
@@ -288,7 +288,7 @@ WaterSpoutVFXComponent:
     Offset: '0x118'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_UGOO8[0x4]
+  - Name: pad0x4_KV6HL[0x4]
     Offset: '0x124'
     Size: '0x4'
     Type: char
@@ -300,7 +300,7 @@ WaterSpoutVFXComponent:
     Offset: '0x130'
     Size: '0x10'
     Type: TArray<struct WaterSpout>
-  - Name: pad0x18_HVCKZ[0x18]
+  - Name: pad0x18_OE0EF[0x18]
     Offset: '0x140'
     Size: '0x18'
     Type: char

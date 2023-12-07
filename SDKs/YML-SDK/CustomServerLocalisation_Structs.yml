@@ -6,7 +6,7 @@ CustomServerClientData:
     Offset: '0x0'
     Size: '0x10'
     Type: struct FString
-  - Name: pad0x10_W80GX[0x10]
+  - Name: pad0x10_24GS2[0x10]
     Offset: '0x10'
     Size: '0x10'
     Type: char
@@ -24,7 +24,7 @@ CustomServerLocalisationData:
   ClassSize: '0x20'
 CustomServerLocalisationModel:
   Attributes:
-  - Name: pad0x50_ZPY5A[0x50]
+  - Name: pad0x50_U5MHW[0x50]
     Offset: '0x0'
     Size: '0x50'
     Type: char

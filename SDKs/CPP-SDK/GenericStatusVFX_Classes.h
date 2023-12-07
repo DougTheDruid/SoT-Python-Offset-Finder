@@ -17,14 +17,14 @@ public:
 class GenericStatusVFXComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_SL6R2[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_QL6H1[0x8];                                 // 0xc8(0x8)
 	class ParticleSystemComponent*                               VFXComponent;                                      // 0xd0(0x8)
 	class World*                                                 CachedWorld;                                       // 0xd8(0x8)
-	char                                                         pad0x20_89HIL[0x20];                               // 0xe0(0x20)
+	char                                                         pad0x20_CY56Q[0x20];                               // 0xe0(0x20)
 	class GenericStatusVFXDataAsset*                             VFXDataAsset;                                      // 0x100(0x8)
-	char                                                         pad0x18_6XBNQ[0x18];                               // 0x108(0x18)
+	char                                                         pad0x18_T0LMY[0x18];                               // 0x108(0x18)
 	bool                                                         ContainsVFXSource;                                 // 0x120(0x1)
-	char                                                         pad0x7_UMGI1[0x7];                                 // 0x121(0x7)
+	char                                                         pad0x7_FK72U[0x7];                                 // 0x121(0x7)
 };
 
 
@@ -37,7 +37,7 @@ public:
 	float                                                        VFXFalloffDuration;                                // 0x48(0x4)
 	float                                                        VFXFalloffMultiplier;                              // 0x4c(0x4)
 	struct FName                                                 VfxSocketName;                                     // 0x50(0x8)
-	char                                                         pad0x8_50MC6[0x8];                                 // 0x58(0x8)
+	char                                                         pad0x8_JI6QD[0x8];                                 // 0x58(0x8)
 	struct Transform                                             SocketRelativeOffset;                              // 0x60(0x30)
 };
 

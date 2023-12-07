@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class AIHomeComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_R0SUB[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_FJ6XD[0x8];                                 // 0xc8(0x8)
 	class Actor*                                                 HomeActor;                                         // 0xd0(0x8)
 };
 
@@ -29,7 +29,7 @@ public:
 	struct BlackboardKeySelector                                 TargetKey;                                         // 0x70(0x28)
 	struct BlackboardKeySelector                                 BestActionSpotKey;                                 // 0x98(0x28)
 	struct BestActionSpotSelectionCriteria                       BestActionSpotSelectionCriteria;                   // 0xc0(0x34)
-	char                                                         pad0x1c_6UMNU[0x1c];                               // 0xf4(0x1c)
+	char                                                         pad0x1c_ZMDXL[0x1c];                               // 0xf4(0x1c)
 };
 
 
@@ -39,7 +39,7 @@ class WhileActionSpotAvailableForPatrolAIGoal: public AIGoal
 public:
 	float                                                        MinTimeToChangePatrolSpot;                         // 0x40(0x4)
 	float                                                        MaxTimeToChangePatrolSpot;                         // 0x44(0x4)
-	char                                                         pad0x30_X59V2[0x30];                               // 0x48(0x30)
+	char                                                         pad0x30_RPSCJ[0x30];                               // 0x48(0x30)
 };
 
 
@@ -59,7 +59,7 @@ public:
 	float                                                        OuterRadius;                                       // 0x44(0x4)
 	struct AIGoalMovementModeFilter                              MovementModeFilter;                                // 0x48(0x20)
 	bool                                                         ShouldOnlyActivateWhileDocked;                     // 0x68(0x1)
-	char                                                         pad0x7_LLAQJ[0x7];                                 // 0x69(0x7)
+	char                                                         pad0x7_6YTTY[0x7];                                 // 0x69(0x7)
 	class Pawn*                                                  TargetPlayerPawn;                                  // 0x70(0x8)
 };
 
@@ -79,7 +79,7 @@ public:
 	float                                                        ExitAreaTriggerDistance;                           // 0x44(0x4)
 	struct AIGoalMovementModeFilter                              MovementModeFilter;                                // 0x48(0x20)
 	class Pawn*                                                  TargetPlayerPawn;                                  // 0x68(0x8)
-	char                                                         pad0x80_1K8Q3[0x80];                               // 0x70(0x80)
+	char                                                         pad0x80_M8EY0[0x80];                               // 0x70(0x80)
 };
 
 

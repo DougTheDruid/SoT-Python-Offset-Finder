@@ -181,10 +181,10 @@ public:
 	class ChildActorComponent*                                   AudioBoat;                                         // 0x1dc0(0x8)
 	class ChildActorComponent*                                   MastMainSailAngleLeft;                             // 0x1dc8(0x8)
 	byte                                                         Timeline_Disable_Secondary__Direction_FB2965C04D191887E0A8AE9EBF5C5978; // 0x1dd0(0x1)
-	char                                                         pad0x7_WEKL8[0x7];                                 // 0x1dd1(0x7)
+	char                                                         pad0x7_F0G4V[0x7];                                 // 0x1dd1(0x7)
 	class TimelineComponent*                                     Timeline_Disable_Secondary;                        // 0x1dd8(0x8)
 	byte                                                         Timeline_DisableSplash1__Direction_6B41A1B3430D6C615C4EFEB03700C527; // 0x1de0(0x1)
-	char                                                         pad0x7_3RDXV[0x7];                                 // 0x1de1(0x7)
+	char                                                         pad0x7_RLGM4[0x7];                                 // 0x1de1(0x7)
 	class TimelineComponent*                                     Timeline_DisableSplash1;                           // 0x1de8(0x8)
 };
 

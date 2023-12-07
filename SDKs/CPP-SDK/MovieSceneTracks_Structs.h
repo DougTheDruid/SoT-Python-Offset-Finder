@@ -10,11 +10,11 @@ namespace DougsSDKDumper
 struct MovieScene3DTransformKeyStruct
 {
 public:
-	char                                                         pad0x8_VGTI9[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_EQZTO[0x8];                                 // 0x0(0x8)
 	struct Vector                                                Location;                                          // 0x8(0xc)
 	struct Rotator                                               Rotation;                                          // 0x14(0xc)
 	struct Vector                                                Scale;                                             // 0x20(0xc)
-	char                                                         pad0x4c_T1VBT[0x4c];                               // 0x2c(0x4c)
+	char                                                         pad0x4c_R3WU5[0x4c];                               // 0x2c(0x4c)
 };
 
 
@@ -22,9 +22,9 @@ public:
 struct MovieScene3DScaleKeyStruct
 {
 public:
-	char                                                         pad0x8_BYC3E[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_7SYOL[0x8];                                 // 0x0(0x8)
 	struct Vector                                                Scale;                                             // 0x8(0xc)
-	char                                                         pad0x1c_EDIPM[0x1c];                               // 0x14(0x1c)
+	char                                                         pad0x1c_CHUX8[0x1c];                               // 0x14(0x1c)
 };
 
 
@@ -32,9 +32,9 @@ public:
 struct MovieScene3DRotationKeyStruct
 {
 public:
-	char                                                         pad0x8_25PKC[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_DPHYX[0x8];                                 // 0x0(0x8)
 	struct Rotator                                               Rotation;                                          // 0x8(0xc)
-	char                                                         pad0x1c_Q0E0K[0x1c];                               // 0x14(0x1c)
+	char                                                         pad0x1c_FL2DU[0x1c];                               // 0x14(0x1c)
 };
 
 
@@ -42,9 +42,9 @@ public:
 struct MovieScene3DLocationKeyStruct
 {
 public:
-	char                                                         pad0x8_EH22Q[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_XECZS[0x8];                                 // 0x0(0x8)
 	struct Vector                                                Location;                                          // 0x8(0xc)
-	char                                                         pad0x1c_KFFI7[0x1c];                               // 0x14(0x1c)
+	char                                                         pad0x1c_TC75K[0x1c];                               // 0x14(0x1c)
 };
 
 
@@ -58,7 +58,7 @@ public:
 	float                                                        BlendInTime;                                       // 0x10(0x4)
 	float                                                        BlendOutTime;                                      // 0x14(0x4)
 	bool                                                         bLooping;                                          // 0x18(0x1)
-	char                                                         pad0x7_FKAUM[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_JS54V[0x7];                                 // 0x19(0x7)
 };
 
 
@@ -69,9 +69,9 @@ public:
 	class UClass*                                                ShakeClass;                                        // 0x0(0x8)
 	float                                                        PlayScale;                                         // 0x8(0x4)
 	byte                                                         PlaySpace;                                         // 0xc(0x1)
-	char                                                         pad0x3_DGEY9[0x3];                                 // 0xd(0x3)
+	char                                                         pad0x3_J2GHG[0x3];                                 // 0xd(0x3)
 	struct Rotator                                               UserDefinedPlaySpace;                              // 0x10(0xc)
-	char                                                         pad0x4_DK7S5[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_8Q2DP[0x4];                                 // 0x1c(0x4)
 };
 
 
@@ -79,9 +79,9 @@ public:
 struct MovieSceneColorKeyStruct
 {
 public:
-	char                                                         pad0x8_N340C[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_FOA3V[0x8];                                 // 0x0(0x8)
 	struct LinearColor                                           Color;                                             // 0x8(0x10)
-	char                                                         pad0x40_D5I7W[0x40];                               // 0x18(0x40)
+	char                                                         pad0x40_0GFQ6[0x40];                               // 0x18(0x40)
 };
 
 
@@ -100,10 +100,10 @@ struct EventPayload
 public:
 	struct FName                                                 EventName;                                         // 0x0(0x8)
 	bool                                                         IsSubtitleEvent;                                   // 0x8(0x1)
-	char                                                         pad0x3_8NFS2[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_TT2LA[0x3];                                 // 0x9(0x3)
 	int                                                          ActorNumber;                                       // 0xc(0x4)
 	int                                                          SubtitleIndex;                                     // 0x10(0x4)
-	char                                                         pad0x4_58Z42[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_YQCE4[0x4];                                 // 0x14(0x4)
 	struct MovieSceneEventParameters                             Parameters;                                        // 0x18(0x18)
 };
 
@@ -112,7 +112,7 @@ public:
 struct MovieSceneEventParameters
 {
 public:
-	char                                                         pad0x18_M8PBT[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_KSRUR[0x18];                               // 0x0(0x18)
 };
 
 
@@ -122,7 +122,7 @@ struct ColorParameterNameAndCurves
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
 	int                                                          Index;                                             // 0x8(0x4)
-	char                                                         pad0x4_786JG[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_MZK1P[0x4];                                 // 0xc(0x4)
 	struct RichCurve                                             RedCurve;                                          // 0x10(0x78)
 	struct RichCurve                                             GreenCurve;                                        // 0x88(0x78)
 	struct RichCurve                                             BlueCurve;                                         // 0x100(0x78)
@@ -136,7 +136,7 @@ struct VectorParameterNameAndCurves
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
 	int                                                          Index;                                             // 0x8(0x4)
-	char                                                         pad0x4_W702E[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_10S8H[0x4];                                 // 0xc(0x4)
 	struct RichCurve                                             XCurve;                                            // 0x10(0x78)
 	struct RichCurve                                             YCurve;                                            // 0x88(0x78)
 	struct RichCurve                                             ZCurve;                                            // 0x100(0x78)
@@ -149,7 +149,7 @@ struct ScalarParameterNameAndCurve
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
 	int                                                          Index;                                             // 0x8(0x4)
-	char                                                         pad0x4_U5UGR[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_YRB8Q[0x4];                                 // 0xc(0x4)
 	struct RichCurve                                             ParameterCurve;                                    // 0x10(0x78)
 };
 
@@ -163,7 +163,7 @@ public:
 	float                                                        EndOffset;                                         // 0xc(0x4)
 	float                                                        PlayRate;                                          // 0x10(0x4)
 	bool                                                         bReverse;                                          // 0x14(0x1)
-	char                                                         pad0x3_8X8JI[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_1RERS[0x3];                                 // 0x15(0x3)
 	struct FName                                                 SlotName;                                          // 0x18(0x8)
 	struct RichCurve                                             Weight;                                            // 0x20(0x78)
 };
@@ -173,7 +173,7 @@ public:
 struct MovieSceneVector4KeyStruct
 {
 public:
-	char                                                         pad0x50_N7LZ8[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_DQHP3[0x50];                               // 0x0(0x50)
 	struct Vector4                                               Vector;                                            // 0x50(0x10)
 };
 
@@ -182,7 +182,7 @@ public:
 struct MovieSceneVectorKeyStructBase
 {
 public:
-	char                                                         pad0x48_L6GER[0x48];                               // 0x0(0x48)
+	char                                                         pad0x48_L2EIA[0x48];                               // 0x0(0x48)
 };
 
 
@@ -190,9 +190,9 @@ public:
 struct MovieSceneVectorKeyStruct
 {
 public:
-	char                                                         pad0x48_G9PJR[0x48];                               // 0x0(0x48)
+	char                                                         pad0x48_FZYXM[0x48];                               // 0x0(0x48)
 	struct Vector                                                Vector;                                            // 0x48(0xc)
-	char                                                         pad0x4_9VSNB[0x4];                                 // 0x54(0x4)
+	char                                                         pad0x4_AV6FN[0x4];                                 // 0x54(0x4)
 };
 
 
@@ -200,7 +200,7 @@ public:
 struct MovieSceneVector2DKeyStruct
 {
 public:
-	char                                                         pad0x48_GZZRJ[0x48];                               // 0x0(0x48)
+	char                                                         pad0x48_QZAJZ[0x48];                               // 0x0(0x48)
 	struct Vector2D                                              Vector;                                            // 0x48(0x8)
 };
 
@@ -209,9 +209,9 @@ public:
 struct MovieSceneComponentMaterialSectionTemplate
 {
 public:
-	char                                                         pad0x48_WCXA7[0x48];                               // 0x0(0x48)
+	char                                                         pad0x48_FV9QZ[0x48];                               // 0x0(0x48)
 	int                                                          MaterialIndex;                                     // 0x48(0x4)
-	char                                                         pad0x4_NQY1G[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_74O6F[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -219,7 +219,7 @@ public:
 struct MovieSceneParameterSectionTemplate
 {
 public:
-	char                                                         pad0x18_AB0S7[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_34HR8[0x18];                               // 0x0(0x18)
 	TArray<struct ScalarParameterNameAndCurve>                   Scalars;                                           // 0x18(0x10)
 	TArray<struct VectorParameterNameAndCurves>                  Vectors;                                           // 0x28(0x10)
 	TArray<struct ColorParameterNameAndCurves>                   Colors;                                            // 0x38(0x10)
@@ -230,7 +230,7 @@ public:
 struct MovieSceneSpawnSectionTemplate
 {
 public:
-	char                                                         pad0x18_VD8S5[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_IQRVO[0x18];                               // 0x0(0x18)
 	struct IntegralCurve                                         Curve;                                             // 0x18(0x70)
 };
 
@@ -239,7 +239,7 @@ public:
 struct MovieScene3DAttachSectionTemplate
 {
 public:
-	char                                                         pad0x18_3REZG[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_Z264F[0x18];                               // 0x0(0x18)
 	struct Guid                                                  AttachGuid;                                        // 0x18(0x10)
 	struct FName                                                 AttachSocketName;                                  // 0x28(0x8)
 	struct FName                                                 AttachComponentName;                               // 0x30(0x8)
@@ -250,16 +250,16 @@ public:
 struct MovieScene3DPathSectionTemplate
 {
 public:
-	char                                                         pad0x18_MJZF9[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_FGCXF[0x18];                               // 0x0(0x18)
 	struct Guid                                                  PathGuid;                                          // 0x18(0x10)
 	struct RichCurve                                             TimingCurve;                                       // 0x28(0x78)
 	byte                                                         FrontAxisEnum;                                     // 0xa0(0x1)
 	byte                                                         UpAxisEnum;                                        // 0xa1(0x1)
-	char                                                         pad0x2_ERVJN[0x2];                                 // 0xa2(0x2)
+	char                                                         pad0x2_ZI7FU[0x2];                                 // 0xa2(0x2)
 	bool                                                         bFollow;                                           // 0xa4(0x1)
 	bool                                                         bReverse;                                          // 0xa4(0x1)
 	bool                                                         bForceUpright;                                     // 0xa4(0x1)
-	char                                                         pad0x3_1CY5K[0x3];                                 // 0xa5(0x3)
+	char                                                         pad0x3_OO40U[0x3];                                 // 0xa5(0x3)
 };
 
 
@@ -267,13 +267,13 @@ public:
 struct MovieScene3DTransformSectionTemplate
 {
 public:
-	char                                                         pad0x18_GUDQH[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_D2CA7[0x18];                               // 0x0(0x18)
 	struct RichCurve                                             TranslationCurve;                                  // 0x18(0x78)
-	char                                                         pad0xf0_QU71H[0xf0];                               // 0x90(0xf0)
+	char                                                         pad0xf0_D03N9[0xf0];                               // 0x90(0xf0)
 	struct RichCurve                                             RotationCurve;                                     // 0x180(0x78)
-	char                                                         pad0xf0_81H45[0xf0];                               // 0x1f8(0xf0)
+	char                                                         pad0xf0_RNHYM[0xf0];                               // 0x1f8(0xf0)
 	struct RichCurve                                             ScaleCurve;                                        // 0x2e8(0x78)
-	char                                                         pad0xf0_TR0R8[0xf0];                               // 0x360(0xf0)
+	char                                                         pad0xf0_CKXNE[0xf0];                               // 0x360(0xf0)
 };
 
 
@@ -281,7 +281,7 @@ public:
 struct MovieSceneActorReferenceSectionTemplate
 {
 public:
-	char                                                         pad0x18_5Q3QN[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_UMHLJ[0x18];                               // 0x0(0x18)
 	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
 	struct IntegralCurve                                         ActorGuidIndexCurve;                               // 0x38(0x70)
 	TArray<struct Guid>                                          ActorGuids;                                        // 0xa8(0x10)
@@ -292,7 +292,7 @@ public:
 struct MovieSceneAudioSectionTemplate
 {
 public:
-	char                                                         pad0x18_6MX7Y[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_6B9YP[0x18];                               // 0x0(0x18)
 	struct MovieSceneAudioSectionTemplateData                    AudioData;                                         // 0x18(0x118)
 };
 
@@ -304,11 +304,11 @@ public:
 	class SoundBase*                                             Sound;                                             // 0x0(0x8)
 	float                                                        AudioStartOffset;                                  // 0x8(0x4)
 	struct FloatRange                                            AudioRange;                                        // 0xc(0x10)
-	char                                                         pad0x4_OEYWL[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_4W506[0x4];                                 // 0x1c(0x4)
 	struct RichCurve                                             AudioPitchMultiplierCurve;                         // 0x20(0x78)
 	struct RichCurve                                             AudioVolumeCurve;                                  // 0x98(0x78)
 	int                                                          RowIndex;                                          // 0x110(0x4)
-	char                                                         pad0x4_4JF3B[0x4];                                 // 0x114(0x4)
+	char                                                         pad0x4_8HQHE[0x4];                                 // 0x114(0x4)
 };
 
 
@@ -316,7 +316,7 @@ public:
 struct MovieSceneAdditiveCameraAnimationTrackTemplate
 {
 public:
-	char                                                         pad0x18_7NEXH[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_2GKR8[0x18];                               // 0x0(0x18)
 };
 
 
@@ -324,10 +324,10 @@ public:
 struct MovieSceneCameraShakeSectionTemplate
 {
 public:
-	char                                                         pad0x18_XBUYE[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_CLJD7[0x18];                               // 0x0(0x18)
 	struct MovieSceneCameraShakeSectionData                      SourceData;                                        // 0x18(0x20)
 	float                                                        SectionStartTime;                                  // 0x38(0x4)
-	char                                                         pad0x4_ZBKR6[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_BJTBK[0x4];                                 // 0x3c(0x4)
 };
 
 
@@ -335,7 +335,7 @@ public:
 struct MovieSceneAdditiveCameraAnimationTemplate
 {
 public:
-	char                                                         pad0x18_SCJPJ[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_9UT9O[0x18];                               // 0x0(0x18)
 };
 
 
@@ -343,10 +343,10 @@ public:
 struct MovieSceneCameraAnimSectionTemplate
 {
 public:
-	char                                                         pad0x18_FK9JY[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_REJA3[0x18];                               // 0x0(0x18)
 	struct MovieSceneCameraAnimSectionData                       SourceData;                                        // 0x18(0x20)
 	float                                                        SectionStartTime;                                  // 0x38(0x4)
-	char                                                         pad0x4_JAZUI[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_8WIVU[0x4];                                 // 0x3c(0x4)
 };
 
 
@@ -354,7 +354,7 @@ public:
 struct MovieSceneCameraCutSectionTemplate
 {
 public:
-	char                                                         pad0x18_2QS3I[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_2EX5D[0x18];                               // 0x0(0x18)
 	struct Guid                                                  CameraGuid;                                        // 0x18(0x10)
 };
 
@@ -363,11 +363,11 @@ public:
 struct MovieSceneColorSectionTemplate
 {
 public:
-	char                                                         pad0x18_09M66[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_FM607[0x18];                               // 0x0(0x18)
 	struct FName                                                 PropertyName;                                      // 0x18(0x8)
 	struct FString                                               PropertyPath;                                      // 0x20(0x10)
 	struct RichCurve                                             Curves;                                            // 0x30(0x78)
-	char                                                         pad0x168_IHSSV[0x168];                             // 0xa8(0x168)
+	char                                                         pad0x168_2MHCG[0x168];                             // 0xa8(0x168)
 };
 
 
@@ -375,11 +375,11 @@ public:
 struct MovieSceneEventSectionTemplate
 {
 public:
-	char                                                         pad0x18_Q6L9P[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_RPTD2[0x18];                               // 0x0(0x18)
 	struct MovieSceneEventSectionData                            EventData;                                         // 0x18(0x20)
 	bool                                                         bFireEventsWhenForwards;                           // 0x38(0x1)
 	bool                                                         bFireEventsWhenBackwards;                          // 0x38(0x1)
-	char                                                         pad0x7_36SVI[0x7];                                 // 0x39(0x7)
+	char                                                         pad0x7_UNLN2[0x7];                                 // 0x39(0x7)
 };
 
 
@@ -387,11 +387,11 @@ public:
 struct MovieSceneFadeSectionTemplate
 {
 public:
-	char                                                         pad0x18_9NZMO[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_2GKDQ[0x18];                               // 0x0(0x18)
 	struct RichCurve                                             FadeCurve;                                         // 0x18(0x78)
 	struct LinearColor                                           FadeColor;                                         // 0x90(0x10)
 	bool                                                         bFadeAudio;                                        // 0xa0(0x1)
-	char                                                         pad0x7_NXYT4[0x7];                                 // 0xa1(0x7)
+	char                                                         pad0x7_YUP5I[0x7];                                 // 0xa1(0x7)
 };
 
 
@@ -399,7 +399,7 @@ public:
 struct MovieSceneLevelVisibilitySharedTrack
 {
 public:
-	char                                                         pad0x18_8IL6H[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_VY2F6[0x18];                               // 0x0(0x18)
 };
 
 
@@ -407,9 +407,9 @@ public:
 struct MovieSceneLevelVisibilitySectionTemplate
 {
 public:
-	char                                                         pad0x18_HMS5T[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_YEGEN[0x18];                               // 0x0(0x18)
 	byte                                                         Visibility;                                        // 0x18(0x1)
-	char                                                         pad0x7_VE2B3[0x7];                                 // 0x19(0x7)
+	char                                                         pad0x7_TLEJI[0x7];                                 // 0x19(0x7)
 	TArray<struct FName>                                         LevelNames;                                        // 0x20(0x10)
 };
 
@@ -418,7 +418,7 @@ public:
 struct MovieSceneParticleParameterSectionTemplate
 {
 public:
-	char                                                         pad0x48_A43JD[0x48];                               // 0x0(0x48)
+	char                                                         pad0x48_Z0LI1[0x48];                               // 0x0(0x48)
 };
 
 
@@ -426,7 +426,7 @@ public:
 struct MovieSceneParticleSectionTemplate
 {
 public:
-	char                                                         pad0x18_ELVVI[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_ESBJT[0x18];                               // 0x0(0x18)
 	struct IntegralCurve                                         ParticleKeys;                                      // 0x18(0x70)
 };
 
@@ -435,12 +435,12 @@ public:
 struct MovieSceneVectorPropertySectionTemplate
 {
 public:
-	char                                                         pad0x18_8SL7F[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_G7CF4[0x18];                               // 0x0(0x18)
 	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
 	struct RichCurve                                             ComponentCurves;                                   // 0x38(0x78)
-	char                                                         pad0x168_9YAD3[0x168];                             // 0xb0(0x168)
+	char                                                         pad0x168_CNWHP[0x168];                             // 0xb0(0x168)
 	int                                                          NumChannelsUsed;                                   // 0x218(0x4)
-	char                                                         pad0x4_Q2DM8[0x4];                                 // 0x21c(0x4)
+	char                                                         pad0x4_CHKGM[0x4];                                 // 0x21c(0x4)
 };
 
 
@@ -448,7 +448,7 @@ public:
 struct MovieSceneStringPropertySectionTemplate
 {
 public:
-	char                                                         pad0x18_DALF5[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_BHXPP[0x18];                               // 0x0(0x18)
 	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
 	struct StringCurve                                           StringCurve;                                       // 0x38(0x78)
 };
@@ -458,7 +458,7 @@ public:
 struct MovieSceneIntegerPropertySectionTemplate
 {
 public:
-	char                                                         pad0x18_V6AMH[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_U3W4X[0x18];                               // 0x0(0x18)
 	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
 	struct IntegralCurve                                         IntegerCurve;                                      // 0x38(0x70)
 };
@@ -468,7 +468,7 @@ public:
 struct MovieSceneEnumPropertySectionTemplate
 {
 public:
-	char                                                         pad0x18_4G7DE[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_E2P9H[0x18];                               // 0x0(0x18)
 	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
 	struct IntegralCurve                                         EnumCurve;                                         // 0x38(0x70)
 };
@@ -478,7 +478,7 @@ public:
 struct MovieSceneBytePropertySectionTemplate
 {
 public:
-	char                                                         pad0x18_K9LKS[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_0FDVI[0x18];                               // 0x0(0x18)
 	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
 	struct IntegralCurve                                         ByteCurve;                                         // 0x38(0x70)
 };
@@ -488,7 +488,7 @@ public:
 struct MovieSceneFloatPropertySectionTemplate
 {
 public:
-	char                                                         pad0x18_FVVE8[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_93PUJ[0x18];                               // 0x0(0x18)
 	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
 	struct RichCurve                                             FloatCurve;                                        // 0x38(0x78)
 };
@@ -498,7 +498,7 @@ public:
 struct MovieSceneBoolPropertySectionTemplate
 {
 public:
-	char                                                         pad0x18_14SGV[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_RH8F6[0x18];                               // 0x0(0x18)
 	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
 	struct IntegralCurve                                         BoolCurve;                                         // 0x38(0x70)
 };
@@ -508,7 +508,7 @@ public:
 struct MovieSceneSkeletalAnimationSharedTrack
 {
 public:
-	char                                                         pad0x18_JKS15[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_F9Q8C[0x18];                               // 0x0(0x18)
 };
 
 
@@ -516,10 +516,10 @@ public:
 struct MovieSceneSkeletalAnimationSectionTemplate
 {
 public:
-	char                                                         pad0x18_AQSI9[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_2GPWY[0x18];                               // 0x0(0x18)
 	struct MovieSceneSkeletalAnimationSectionTemplateParameters  Params;                                            // 0x18(0xa0)
 	byte                                                         AnimationSubtype;                                  // 0xb8(0x1)
-	char                                                         pad0x7_CBBWC[0x7];                                 // 0xb9(0x7)
+	char                                                         pad0x7_RU8L9[0x7];                                 // 0xb9(0x7)
 };
 
 
@@ -527,7 +527,7 @@ public:
 struct MovieSceneSkeletalAnimationSectionTemplateParameters
 {
 public:
-	char                                                         pad0x98_GB51V[0x98];                               // 0x0(0x98)
+	char                                                         pad0x98_I4ASO[0x98];                               // 0x0(0x98)
 	float                                                        SectionStartTime;                                  // 0x98(0x4)
 	float                                                        SectionEndTime;                                    // 0x9c(0x4)
 };
@@ -537,7 +537,7 @@ public:
 struct MovieSceneSlomoSectionTemplate
 {
 public:
-	char                                                         pad0x18_YKBP0[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_DFW1L[0x18];                               // 0x0(0x18)
 	struct RichCurve                                             SlomoCurve;                                        // 0x18(0x78)
 };
 
@@ -546,9 +546,9 @@ public:
 struct MovieSceneVisibilitySectionTemplate
 {
 public:
-	char                                                         pad0xa8_CJ6OM[0xa8];                               // 0x0(0xa8)
+	char                                                         pad0xa8_EQPMZ[0xa8];                               // 0x0(0xa8)
 	bool                                                         bTemporarilyHiddenInGame;                          // 0xa8(0x1)
-	char                                                         pad0x7_NOYI8[0x7];                                 // 0xa9(0x7)
+	char                                                         pad0x7_BLQ6K[0x7];                                 // 0xa9(0x7)
 };
 
 

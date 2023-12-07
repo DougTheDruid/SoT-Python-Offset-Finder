@@ -19,7 +19,7 @@ class TaleStruct: public Struct
 {
 public:
 	struct Guid                                                  StructId;                                          // 0x88(0x10)
-	char                                                         pad0x20_JXDLT[0x20];                               // 0x98(0x20)
+	char                                                         pad0x20_LSUCU[0x20];                               // 0x98(0x20)
 };
 
 

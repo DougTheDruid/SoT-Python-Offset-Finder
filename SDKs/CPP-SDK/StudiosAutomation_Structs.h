@@ -28,7 +28,7 @@ struct TextureAuditorGroupProperties
 {
 public:
 	byte                                                         TextureGroup;                                      // 0x0(0x1)
-	char                                                         pad0x7_X8TBB[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_E71XJ[0x7];                                 // 0x1(0x7)
 	struct TextureAuditorProperties                              Properties;                                        // 0x8(0x20)
 };
 
@@ -38,9 +38,9 @@ struct TextureAuditorProperties
 {
 public:
 	byte                                                         RequiredMipsSetting;                               // 0x0(0x1)
-	char                                                         pad0x7_OTIP3[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_L91TD[0x7];                                 // 0x1(0x7)
 	TArray<Byte AllowedTextureFormats>                           AllowedTextureFormats;                             // 0x8(0x10)
-	char                                                         pad0x8_3Q3E4[0x8];                                 // 0x18(0x8)
+	char                                                         pad0x8_MG8UQ[0x8];                                 // 0x18(0x8)
 };
 
 
@@ -58,7 +58,7 @@ struct FolderTotals
 {
 public:
 	bool                                                         EnforceCollectionMembership;                       // 0x0(0x1)
-	char                                                         pad0x7_PZUZF[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_9STM2[0x7];                                 // 0x1(0x7)
 	TArray<struct FName>                                         CollectionsAllowedForFolder;                       // 0x8(0x10)
 	TArray<struct FName>                                         AssetTypesToTest;                                  // 0x18(0x10)
 };
@@ -88,7 +88,7 @@ struct AssetAuditConstantEntry
 public:
 	struct FString                                               Name;                                              // 0x0(0x10)
 	int                                                          Value;                                             // 0x10(0x4)
-	char                                                         pad0x4_C4V0S[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_LVFW5[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -99,14 +99,14 @@ public:
 	struct FName                                                 CollectionName;                                    // 0x0(0x8)
 	byte                                                         AuditType;                                         // 0x8(0x1)
 	bool                                                         IsOnlyParentCollection;                            // 0x9(0x1)
-	char                                                         pad0x2_27A1X[0x2];                                 // 0xa(0x2)
+	char                                                         pad0x2_RBG1G[0x2];                                 // 0xa(0x2)
 	struct CollectionTotalsLimits                                CollectionTotals;                                  // 0xc(0x10)
 	struct CollectionStaticMeshLimits                            StaticMeshLimits;                                  // 0x1c(0x8)
 	struct CollectionSkeleMeshLimits                             SkeleMeshLimits;                                   // 0x24(0x8)
 	struct CollectionAnimSequenceLimits                          AnimLimits;                                        // 0x2c(0x4)
 	bool                                                         CanUseComplexCollisionAsSimple;                    // 0x30(0x1)
 	bool                                                         CanUseLOD0Collision;                               // 0x31(0x1)
-	char                                                         pad0x2_680XX[0x2];                                 // 0x32(0x2)
+	char                                                         pad0x2_PNJ8C[0x2];                                 // 0x32(0x2)
 };
 
 
@@ -122,7 +122,7 @@ public:
 struct CollectionSkeleMeshLimits
 {
 public:
-	char                                                         pad0x8_QBG9I[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_KFXR5[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -139,7 +139,7 @@ public:
 struct CollectionStaticMeshLimits
 {
 public:
-	char                                                         pad0x8_EZELD[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_WW1KK[0x8];                                 // 0x0(0x8)
 };
 
 

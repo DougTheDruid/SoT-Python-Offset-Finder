@@ -11,10 +11,10 @@ class BasePromptCoordinator: public Object
 {
 public:
 	class AthenaPlayerController*                                PlayerController;                                  // 0x28(0x8)
-	char                                                         pad0x10_IP5U0[0x10];                               // 0x30(0x10)
+	char                                                         pad0x10_MLI9Y[0x10];                               // 0x30(0x10)
 	class PrioritisedPromptsManager*                             PrioritisedPromptsManager;                         // 0x40(0x8)
 	class Character*                                             CharacterWithRegisteredEvents;                     // 0x48(0x8)
-	char                                                         pad0xc8_NUDFS[0xc8];                               // 0x50(0xc8)
+	char                                                         pad0xc8_GQ1FY[0xc8];                               // 0x50(0xc8)
 };
 
 
@@ -22,7 +22,7 @@ public:
 class GetPromptsLocalService: public BlueprintAsyncActionBase
 {
 public:
-	char                                                         pad0x10_6OGRX[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_TCG6M[0x10];                               // 0x28(0x10)
 	class Object*                                                WorldContextObject;                                // 0x38(0x8)
 };
 
@@ -38,10 +38,10 @@ public:
 class PrioritisedPromptsManager: public Object
 {
 public:
-	char                                                         pad0x8_6CV0J[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_5QF9U[0x8];                                 // 0x28(0x8)
 	TArray<struct PrioritisedPromptWithHandle>                   AllPrompts;                                        // 0x30(0x10)
 	class PlayerController*                                      PlayerController;                                  // 0x40(0x8)
-	char                                                         pad0x30_KI4M5[0x30];                               // 0x48(0x30)
+	char                                                         pad0x30_2MK8V[0x30];                               // 0x48(0x30)
 };
 
 
@@ -71,7 +71,7 @@ public:
 class PromptsLocalService: public Object
 {
 public:
-	char                                                         pad0x70_324EC[0x70];                               // 0x28(0x70)
+	char                                                         pad0x70_BGQKM[0x70];                               // 0x28(0x70)
 };
 
 

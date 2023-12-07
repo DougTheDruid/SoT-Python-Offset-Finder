@@ -30,7 +30,7 @@
         "Offset": "0x3f0"
       },
       {
-        "Name": "pad0x4_106S9[0x4]",
+        "Name": "pad0x4_REUFL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3f4"

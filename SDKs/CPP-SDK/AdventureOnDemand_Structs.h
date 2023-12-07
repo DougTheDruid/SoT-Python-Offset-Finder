@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct AdventureOnDemandServiceCrewEntry
 {
 public:
-	char                                                         pad0x38_1ZBHV[0x38];                               // 0x0(0x38)
+	char                                                         pad0x38_T5IWF[0x38];                               // 0x0(0x38)
 	class TunnelDesc*                                            TunnelDesc;                                        // 0x38(0x8)
 };
 

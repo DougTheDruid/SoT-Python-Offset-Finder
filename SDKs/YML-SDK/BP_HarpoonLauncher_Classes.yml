@@ -3,18 +3,18 @@
 BP_HarpoonLauncher_C:
   Attributes:
   - Name: CubeNotWalkable
-    Offset: '0xcb0'
+    Offset: '0xcc0'
     Size: '0x8'
     Type: class StaticMeshComponent*
   - Name: MountCollision
-    Offset: '0xcb8'
+    Offset: '0xcc8'
     Size: '0x8'
     Type: class CapsuleComponent*
   - Name: BarrelCollision
-    Offset: '0xcc0'
+    Offset: '0xcd0'
     Size: '0x8'
     Type: class CapsuleComponent*
   ClassSize: '0x18'
-  FullSize: '0xcc8'
-  InheritedSize: '0xcb0'
+  FullSize: '0xcd8'
+  InheritedSize: '0xcc0'
   Super: HarpoonLauncher

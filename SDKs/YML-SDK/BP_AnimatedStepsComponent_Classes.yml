@@ -6,9 +6,9 @@ BP_AnimatedStepsComponent_C:
     Offset: '0xf0'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
-  - Name: pad0x1b3_EYMDW[0x1b3]
+  - Name: pad0x126_XOFQL[0x126]
     Offset: '0xf8'
-    Size: '0x1b3'
+    Size: '0x126'
     Type: char
   - Name: BoxDelays
     Offset: '0xf8'

@@ -27,7 +27,7 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "pad0x18_IGIDX[0x18]",
+        "Name": "pad0x18_A9KB6[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xc8"
@@ -51,7 +51,7 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x60_54NN4[0x60]",
+        "Name": "pad0x60_DNZNQ[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x110"

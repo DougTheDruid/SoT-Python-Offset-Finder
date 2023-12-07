@@ -11,18 +11,18 @@ struct TransformBlendCurve
 {
 public:
 	bool                                                         UseLocationCurve;                                  // 0x0(0x1)
-	char                                                         pad0x7_11UJP[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_1KVQ0[0x7];                                 // 0x1(0x7)
 	struct RuntimeVectorCurve                                    LocationCurve;                                     // 0x8(0x170)
 	bool                                                         UseRotationCurve;                                  // 0x178(0x1)
-	char                                                         pad0x7_UHGV5[0x7];                                 // 0x179(0x7)
+	char                                                         pad0x7_3JSZU[0x7];                                 // 0x179(0x7)
 	struct RuntimeVectorCurve                                    RotationCurve;                                     // 0x180(0x170)
 	bool                                                         UseScaleCurve;                                     // 0x2f0(0x1)
-	char                                                         pad0x7_9NLNV[0x7];                                 // 0x2f1(0x7)
+	char                                                         pad0x7_XQZ5S[0x7];                                 // 0x2f1(0x7)
 	struct RuntimeVectorCurve                                    ScaleCurve;                                        // 0x2f8(0x170)
-	char                                                         pad0x8_9DFQ5[0x8];                                 // 0x468(0x8)
+	char                                                         pad0x8_3QCA6[0x8];                                 // 0x468(0x8)
 	struct Transform                                             SourceTransform;                                   // 0x470(0x30)
 	struct Transform                                             TargetTransform;                                   // 0x4a0(0x30)
-	char                                                         pad0x30_CSMSN[0x30];                               // 0x4d0(0x30)
+	char                                                         pad0x30_12TSD[0x30];                               // 0x4d0(0x30)
 };
 
 
@@ -46,7 +46,7 @@ public:
 struct AnimDataEntryStructWrapper
 {
 public:
-	char                                                         pad0x18_BAK6K[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_SGAMF[0x18];                               // 0x0(0x18)
 };
 
 
@@ -64,7 +64,7 @@ public:
 struct AnimationDataStoreLoadingEntry
 {
 public:
-	char                                                         pad0x38_T6FMC[0x38];                               // 0x0(0x38)
+	char                                                         pad0x38_V6OWF[0x38];                               // 0x0(0x38)
 	class UClass*                                                AnimDataId;                                        // 0x38(0x8)
 };
 
@@ -74,7 +74,7 @@ struct AnimationDataStoreAssetWeakReferenceEntry
 {
 public:
 	class UClass*                                                AnimDataId;                                        // 0x0(0x8)
-	char                                                         pad0x20_NZHZ0[0x20];                               // 0x8(0x20)
+	char                                                         pad0x20_ZX0AY[0x20];                               // 0x8(0x20)
 };
 
 
@@ -105,12 +105,12 @@ public:
 	float                                                        TranslationStrength;                               // 0x4(0x4)
 	float                                                        RotationStrength;                                  // 0x8(0x4)
 	struct Vector                                                Location;                                          // 0xc(0xc)
-	char                                                         pad0x8_JS2JV[0x8];                                 // 0x18(0x8)
+	char                                                         pad0x8_2P181[0x8];                                 // 0x18(0x8)
 	struct Quat                                                  Orientation;                                       // 0x20(0x10)
 	byte                                                         EffectorSpace;                                     // 0x30(0x1)
-	char                                                         pad0x3_KLQPN[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_08AFG[0x3];                                 // 0x31(0x3)
 	struct FName                                                 ParentBone;                                        // 0x34(0x8)
-	char                                                         pad0x4_FUTGF[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_2J2QS[0x4];                                 // 0x3c(0x4)
 };
 
 
@@ -118,7 +118,7 @@ public:
 struct LimbIK
 {
 public:
-	char                                                         pad0x60_PV4Q8[0x60];                               // 0x0(0x60)
+	char                                                         pad0x60_OUIVY[0x60];                               // 0x0(0x60)
 };
 
 
@@ -176,7 +176,7 @@ public:
 	struct Vector                                                ActorsVelocityVector;                              // 0x0(0xc)
 	float                                                        ActorSpeed;                                        // 0xc(0x4)
 	bool                                                         IsCharacterMoving;                                 // 0x10(0x1)
-	char                                                         pad0x3_NUI04[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_JNPOI[0x3];                                 // 0x11(0x3)
 	float                                                        WantedMovementSpeed;                               // 0x14(0x4)
 };
 
@@ -187,7 +187,7 @@ struct WeightedAnimationData
 public:
 	struct StringAssetReference                                  Animation;                                         // 0x0(0x10)
 	float                                                        Weighting;                                         // 0x10(0x4)
-	char                                                         pad0x4_BYPH6[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_X42GK[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -220,7 +220,7 @@ public:
 struct EventAnimationResetHappyReact
 {
 public:
-	char                                                         pad0x1_1WINR[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_JFXLN[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -228,7 +228,7 @@ public:
 struct EventAnimationHappyReact
 {
 public:
-	char                                                         pad0x1_U9T5L[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_OM3US[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -236,7 +236,7 @@ public:
 struct EventHitReactAnimationFinished
 {
 public:
-	char                                                         pad0x1_T64XN[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_ZL34P[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -247,7 +247,7 @@ public:
 	struct Vector                                                HitNormal;                                         // 0x0(0xc)
 	struct Vector                                                HitVelocity;                                       // 0xc(0xc)
 	byte                                                         ReactionAnimType;                                  // 0x18(0x1)
-	char                                                         pad0x3_807IS[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_N3IDB[0x3];                                 // 0x19(0x3)
 };
 
 
@@ -259,7 +259,7 @@ public:
 	float                                                        AdditiveBlend;                                     // 0x4(0x4)
 	byte                                                         ReactType;                                         // 0x8(0x1)
 	bool                                                         ActivateNewHitReact;                               // 0x9(0x1)
-	char                                                         pad0x1e_UBOM1[0x1e];                               // 0xa(0x1e)
+	char                                                         pad0x1e_FF9UD[0x1e];                               // 0xa(0x1e)
 };
 
 
@@ -277,11 +277,11 @@ public:
 struct AnimationLookAt
 {
 public:
-	char                                                         pad0x8_704L6[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_DH5U8[0x8];                                 // 0x0(0x8)
 	struct AnimationLookAtParams                                 Params;                                            // 0x8(0xc)
 	struct Vector                                                LookAtTarget;                                      // 0x14(0xc)
 	bool                                                         IKLookAtActive;                                    // 0x20(0x1)
-	char                                                         pad0x87_I6I2R[0x87];                               // 0x21(0x87)
+	char                                                         pad0x87_N4BRY[0x87];                               // 0x21(0x87)
 };
 
 
@@ -289,7 +289,7 @@ public:
 struct EventAnimationLookAtUpdated
 {
 public:
-	char                                                         pad0x1_7E9H5[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_ORVNF[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -307,16 +307,16 @@ public:
 struct AnimNode_WeightedLoadOnDemandSquencePlayer
 {
 public:
-	char                                                         pad0x40_IT69Z[0x40];                               // 0x0(0x40)
+	char                                                         pad0x40_6RS2E[0x40];                               // 0x0(0x40)
 	float                                                        PlayRate;                                          // 0x40(0x4)
-	char                                                         pad0x4_NLA4X[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_U0TY4[0x4];                                 // 0x44(0x4)
 	class WeightedAnimSequenceLoadOnDemand*                      WeightedAnimSequenceLoadOnDemand;                  // 0x48(0x8)
 	int                                                          GroupIndex;                                        // 0x50(0x4)
 	byte                                                         GroupRole;                                         // 0x54(0x1)
-	char                                                         pad0x3_P5685[0x3];                                 // 0x55(0x3)
+	char                                                         pad0x3_BVKRO[0x3];                                 // 0x55(0x3)
 	class AnimSequence*                                          CurrentSequence;                                   // 0x58(0x8)
 	class AnimSequence*                                          NextSequence;                                      // 0x60(0x8)
-	char                                                         pad0x8_BHG8C[0x8];                                 // 0x68(0x8)
+	char                                                         pad0x8_28S6B[0x8];                                 // 0x68(0x8)
 };
 
 
@@ -328,7 +328,7 @@ public:
 	struct FString                                               AssetName;                                         // 0x10(0x10)
 	struct FString                                               FallbackSkeletonName;                              // 0x20(0x10)
 	bool                                                         FallbackValidAdditive;                             // 0x30(0x1)
-	char                                                         pad0x7_NDEIH[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_NR3B4[0x7];                                 // 0x31(0x7)
 };
 
 
@@ -336,7 +336,7 @@ public:
 struct EventCustomAnimationMontageExitRequested
 {
 public:
-	char                                                         pad0xc_15A4R[0xc];                                 // 0x0(0xc)
+	char                                                         pad0xc_0GB9C[0xc];                                 // 0x0(0xc)
 };
 
 
@@ -344,7 +344,7 @@ public:
 struct EventCustomAnimationMontageRequested
 {
 public:
-	char                                                         pad0x8_FSWYX[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_OF94P[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -355,7 +355,7 @@ public:
 	class CustomAnimationMontageDefinitionDataAsset*             ActiveState;                                       // 0x0(0x8)
 	class CustomAnimationMontageDefinitionDataAsset*             PendingState;                                      // 0x8(0x8)
 	class AnimMontage*                                           ActiveMontage;                                     // 0x10(0x8)
-	char                                                         pad0xc0_ZENTT[0xc0];                               // 0x18(0xc0)
+	char                                                         pad0xc0_KCFNO[0xc0];                               // 0x18(0xc0)
 };
 
 
@@ -399,7 +399,7 @@ public:
 	struct FName                                                 SocketName;                                        // 0x0(0x8)
 	class SceneComponent*                                        SceneComponent;                                    // 0x8(0x8)
 	byte                                                         ShouldOverlapsUpdateOnParentUpdate;                // 0x10(0x1)
-	char                                                         pad0x7_29OLK[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_FBOC9[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -407,7 +407,7 @@ public:
 struct Docker
 {
 public:
-	char                                                         pad0x90_DTACO[0x90];                               // 0x0(0x90)
+	char                                                         pad0x90_IIOBO[0x90];                               // 0x0(0x90)
 };
 
 

@@ -11,7 +11,7 @@ struct ClueDestinationToTextIndex
 {
 public:
 	class UClass*                                                DestinationType;                                   // 0x0(0x8)
-	char                                                         pad0x20_MY7XP[0x20];                               // 0x8(0x20)
+	char                                                         pad0x20_E6AA1[0x20];                               // 0x8(0x20)
 };
 
 
@@ -20,7 +20,7 @@ struct ClueDestinationChoice
 {
 public:
 	class ClueDestinationDescriptor*                             Destination;                                       // 0x0(0x8)
-	char                                                         pad0x8_XKMF3[0x8];                                 // 0x8(0x8)
+	char                                                         pad0x8_NI3GM[0x8];                                 // 0x8(0x8)
 };
 
 
@@ -39,7 +39,7 @@ struct TextEntryWithLayout
 public:
 	struct FText                                                 TextEntry;                                         // 0x0(0x38)
 	struct TreasureMapWidgetText                                 TextLayout;                                        // 0x38(0x3c)
-	char                                                         pad0x4_M0OMR[0x4];                                 // 0x74(0x4)
+	char                                                         pad0x4_3JX6T[0x4];                                 // 0x74(0x4)
 };
 
 
@@ -49,7 +49,7 @@ struct MapRadialIconData
 public:
 	struct StringAssetReference                                  AssetReference;                                    // 0x0(0x10)
 	float                                                        Rotation;                                          // 0x10(0x4)
-	char                                                         pad0x4_0649A[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_I29RQ[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -57,7 +57,7 @@ public:
 struct ExistingNPCToPhasedNPC
 {
 public:
-	char                                                         pad0x40_2UK1R[0x40];                               // 0x0(0x40)
+	char                                                         pad0x40_5XEFZ[0x40];                               // 0x0(0x40)
 };
 
 

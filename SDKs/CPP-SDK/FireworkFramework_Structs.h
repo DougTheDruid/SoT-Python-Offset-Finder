@@ -15,7 +15,7 @@ public:
 	class WwiseEvent*                                            SecondarySFX;                                      // 0x10(0x8)
 	float                                                        Weight;                                            // 0x18(0x4)
 	struct LinearColor                                           AmbientLightColour;                                // 0x1c(0x10)
-	char                                                         pad0x4_Y0IIN[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_KHIOA[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -23,13 +23,13 @@ public:
 struct GeneratedFireworkData
 {
 public:
-	char                                                         pad0xc_4U2N8[0xc];                                 // 0x0(0xc)
+	char                                                         pad0xc_6217F[0xc];                                 // 0x0(0xc)
 	struct FireworkAmbientLightData                              FireworkAmbientLightData;                          // 0xc(0x14)
-	char                                                         pad0x8_C7P67[0x8];                                 // 0x20(0x8)
+	char                                                         pad0x8_6025Y[0x8];                                 // 0x20(0x8)
 	TArray<struct FireworkExplosionData>                         ExplosionData;                                     // 0x28(0x10)
 	class WwiseObjectPoolWrapper*                                SfxPool;                                           // 0x38(0x8)
 	class WwiseEvent*                                            LaunchSfx;                                         // 0x40(0x8)
-	char                                                         pad0x8_6BJ8F[0x8];                                 // 0x48(0x8)
+	char                                                         pad0x8_3D0KX[0x8];                                 // 0x48(0x8)
 	class FireworkFeedbackDataAsset*                             FireworkFeedbackData;                              // 0x50(0x8)
 };
 
@@ -38,11 +38,11 @@ public:
 struct FireworkExplosionData
 {
 public:
-	char                                                         pad0x8_HIGB7[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_PPIFE[0x8];                                 // 0x0(0x8)
 	class Object*                                                VFX;                                               // 0x8(0x8)
 	class WwiseEvent*                                            Sfx;                                               // 0x10(0x8)
 	class WwiseEvent*                                            SecondarySFX;                                      // 0x18(0x8)
-	char                                                         pad0x20_U3JN6[0x20];                               // 0x20(0x20)
+	char                                                         pad0x20_PX3A7[0x20];                               // 0x20(0x20)
 };
 
 
@@ -73,7 +73,7 @@ struct WeightedProjectileMeshAnimationData
 public:
 	struct RuntimeVectorCurve                                    AnimationCurve;                                    // 0x0(0x170)
 	float                                                        Weight;                                            // 0x170(0x4)
-	char                                                         pad0x4_XZQ0V[0x4];                                 // 0x174(0x4)
+	char                                                         pad0x4_ILBVL[0x4];                                 // 0x174(0x4)
 };
 
 

@@ -18,7 +18,7 @@ public:
 	class MaterialInterface*                                     seagulls_MI;                                       // 0x458(0x8)
 	class MaterialInstanceDynamic*                               seagulls_MT;                                       // 0x460(0x8)
 	float                                                        FadeTime;                                          // 0x468(0x4)
-	char                                                         pad0x4_GE0PZ[0x4];                                 // 0x46c(0x4)
+	char                                                         pad0x4_XD5HD[0x4];                                 // 0x46c(0x4)
 	class MaterialInterface*                                     seagulls_MI_LOD;                                   // 0x470(0x8)
 	class MaterialInstanceDynamic*                               seagulls_MT_LOD;                                   // 0x478(0x8)
 	class WwiseEvent*                                            WwiseEvent;                                        // 0x480(0x8)
