@@ -17,7 +17,7 @@ public:
 	struct FName                                                 MaterialThicknessRTPCName;                         // 0x20(0x8)
 	struct FName                                                 MaterialReflectivityRTPCName;                      // 0x28(0x8)
 	byte                                                         EnvironmentTraceChannel;                           // 0x30(0x1)
-	char                                                         pad0x3_D3DEI[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_Q7T0Y[0x3];                                 // 0x31(0x3)
 	float                                                        MinSpaceSizeWindowForEarlyReflections;             // 0x34(0x4)
 	float                                                        MaxSpaceSizeWindowforEarlyReflections;             // 0x38(0x4)
 	struct ReverbPresetControllerSettings                        SamplingSettings;                                  // 0x3c(0x28)
@@ -28,14 +28,14 @@ public:
 struct ReverbPresetControllerSettings
 {
 public:
-	char                                                         pad0xc_MVRJ2[0xc];                                 // 0x0(0xc)
+	char                                                         pad0xc_I3I74[0xc];                                 // 0x0(0xc)
 	float                                                        HorizontalConeSegmentElevationAngle;               // 0xc(0x4)
 	float                                                        UpwardsConeAngle;                                  // 0x10(0x4)
 	float                                                        TraceVectorLength;                                 // 0x14(0x4)
 	float                                                        TimeToDiscardSample;                               // 0x18(0x4)
 	float                                                        DistanceToDiscardSample;                           // 0x1c(0x4)
 	float                                                        BiasTowardsVerticalSegment;                        // 0x20(0x4)
-	char                                                         pad0x4_AR057[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_0EELU[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -43,7 +43,7 @@ public:
 struct WwiseEventParam
 {
 public:
-	char                                                         pad0x8_OUIOY[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_O6YWZ[0x8];                                 // 0x0(0x8)
 	struct FName                                                 SourcePath;                                        // 0x8(0x8)
 	struct FName                                                 SourceObj;                                         // 0x10(0x8)
 };
@@ -55,7 +55,7 @@ struct WwiseIOPriorityMappingConfig
 public:
 	int                                                          WwisePriority;                                     // 0x0(0x4)
 	byte                                                         AsyncIOPriority;                                   // 0x4(0x1)
-	char                                                         pad0x3_PO10C[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_93UYC[0x3];                                 // 0x5(0x3)
 };
 
 

@@ -11,7 +11,7 @@ struct EmissaryFactionActionRewardBoostServiceEvent
 {
 public:
 	byte                                                         FactionActionType;                                 // 0x0(0x1)
-	char                                                         pad0x3_7X1RN[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_1DD3U[0x3];                                 // 0x1(0x3)
 	struct Guid                                                  AssociatedCrew;                                    // 0x4(0x10)
 };
 
@@ -31,7 +31,7 @@ struct EmissaryCompanyActionRewardBoostServiceEvent
 public:
 	struct FName                                                 AssociatedCompany;                                 // 0x0(0x8)
 	byte                                                         CompanyActionType;                                 // 0x8(0x1)
-	char                                                         pad0x3_M4TGU[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_QXS3O[0x3];                                 // 0x9(0x3)
 	struct Guid                                                  AssociatedCrew;                                    // 0xc(0x10)
 };
 
@@ -57,7 +57,7 @@ struct EmissaryQuestCompanyActionRewardBoostEvent
 {
 public:
 	byte                                                         CompanyActionType;                                 // 0x0(0x1)
-	char                                                         pad0x3_XEBZT[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_1L1WL[0x3];                                 // 0x1(0x3)
 	struct Guid                                                  QuestId;                                           // 0x4(0x10)
 };
 
@@ -66,7 +66,7 @@ public:
 struct EmissaryCompanyChangedEvent
 {
 public:
-	char                                                         pad0x10_AQBQN[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_CDW0U[0x10];                               // 0x0(0x10)
 };
 
 

@@ -17,7 +17,7 @@ public:
 class GlobalDigSpotDebugCheat: public Actor
 {
 public:
-	char                                                         pad0x8_818H3[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_TCALC[0x8];                                 // 0x3c8(0x8)
 };
 
 
@@ -36,13 +36,13 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x3e0] - InheritedSize[0x3c8]
+// Size 0x20 (Full Size[0x3e8] - InheritedSize[0x3c8]
 class GlobalDigSpotService: public Actor
 {
 public:
-	char                                                         pad0x8_XGS0J[0x8];                                 // 0x3c8(0x8)
-	class PopUpMessageDesc*                                      Notification;                                      // 0x3d0(0x8)
-	class GlobalDigSpotDefinitionList*                           DigSpotDefinitions;                                // 0x3d8(0x8)
+	char                                                         pad0x10_69F3U[0x10];                               // 0x3c8(0x10)
+	class PopUpMessageDesc*                                      Notification;                                      // 0x3d8(0x8)
+	class GlobalDigSpotDefinitionList*                           DigSpotDefinitions;                                // 0x3e0(0x8)
 };
 
 
@@ -58,7 +58,7 @@ public:
 class GlobalDigSpotVoyageTriggerActor: public GlobalVoyageTriggerActor
 {
 public:
-	char                                                         pad0x18_IV98T[0x18];                               // 0x418(0x18)
+	char                                                         pad0x18_CRTGC[0x18];                               // 0x418(0x18)
 };
 
 

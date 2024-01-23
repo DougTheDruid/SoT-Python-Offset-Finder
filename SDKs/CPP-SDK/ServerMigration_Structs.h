@@ -22,7 +22,7 @@ public:
 	bool                                                         FailToConnectToServer;                             // 0x0(0x1)
 	bool                                                         RefuseMigrationStart;                              // 0x1(0x1)
 	bool                                                         DisconnectServerConnectionDuringMigration;         // 0x2(0x1)
-	char                                                         pad0x1_JYSD9[0x1];                                 // 0x3(0x1)
+	char                                                         pad0x1_P50I5[0x1];                                 // 0x3(0x1)
 	int                                                          RefuseIncomingClientConnections;                   // 0x4(0x4)
 };
 
@@ -31,7 +31,7 @@ public:
 struct ServerMigrationCustomMigrationSerialisationStruct
 {
 public:
-	char                                                         pad0x4_Z0KRO[0x4];                                 // 0x0(0x4)
+	char                                                         pad0x4_YBWNX[0x4];                                 // 0x0(0x4)
 };
 
 
@@ -40,7 +40,7 @@ struct ServerMigrationSerialisationDetailsTestsUStruct
 {
 public:
 	float                                                        FloatWithNoMarkup;                                 // 0x0(0x4)
-	char                                                         pad0x8_NRQB9[0x8];                                 // 0x4(0x8)
+	char                                                         pad0x8_AVI8M[0x8];                                 // 0x4(0x8)
 };
 
 

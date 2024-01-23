@@ -17,7 +17,7 @@ public:
 class RemoteActorDestructionService: public Actor
 {
 public:
-	char                                                         pad0x18_U4WOX[0x18];                               // 0x3c8(0x18)
+	char                                                         pad0x18_9UEZS[0x18];                               // 0x3c8(0x18)
 };
 
 

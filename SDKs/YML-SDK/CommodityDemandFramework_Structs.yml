@@ -35,7 +35,7 @@ CommodityDescWithRedeemId:
   ClassSize: '0x10'
 CommodityRedemptionTrackingModel:
   Attributes:
-  - Name: pad0x2_OOYYM[0x2]
+  - Name: pad0x2_50NX7[0x2]
     Offset: '0x0'
     Size: '0x2'
     Type: char
@@ -43,11 +43,11 @@ CommodityRedemptionTrackingModel:
     Offset: '0x2'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5_X37UV[0x5]
+  - Name: pad0x5_YISZO[0x5]
     Offset: '0x3'
     Size: '0x5'
     Type: char
-  - Name: pad0x8_20VHH[0x8]
+  - Name: pad0x8_9AH4T[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char
@@ -61,7 +61,7 @@ CommoditySelectionType:
   ClassSize: '0x8'
 CommoditySourceMetaWrapper:
   Attributes:
-  - Name: pad0x18_381CI[0x18]
+  - Name: pad0x18_R7XY0[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -84,11 +84,11 @@ CommodityTrackingModel:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_DFXPJ[0x7]
+  - Name: pad0x7_QK5HJ[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
-  - Name: pad0x8_DR2VO[0x8]
+  - Name: pad0x8_EPWMG[0x8]
     Offset: '0x18'
     Size: '0x8'
     Type: char
@@ -117,7 +117,7 @@ EntitlementToRedeemItems:
   ClassSize: '0x18'
 EventCommodityCrateRedeemed:
   Attributes:
-  - Name: pad0x18_ZUQ18[0x18]
+  - Name: pad0x18_5OAVV[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -133,9 +133,24 @@ MerchantSovereignHandInNameInformation:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x10'
+RedeemCommodityTelemetryEvent:
+  Attributes:
+  - Name: Commodity
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: RedemptionSucceeded
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x7_5IM52[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
+  ClassSize: '0x18'
 TrackCommodityPurchaseOnServerRpc:
   Attributes:
-  - Name: pad0x10_ZLAIS[0x10]
+  - Name: pad0x10_U5JXO[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char

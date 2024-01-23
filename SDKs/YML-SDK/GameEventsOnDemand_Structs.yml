@@ -21,7 +21,7 @@ GameEventAvailabilityTelemetryData:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_JR5AH[0x6]
+  - Name: pad0x6_4P6EY[0x6]
     Offset: '0x12'
     Size: '0x6'
     Type: char
@@ -36,7 +36,7 @@ GameEventsOnDemandLoserTunnelCrewData:
     Offset: '0x10'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x8_SXB5A[0x8]
+  - Name: pad0x8_BJAGC[0x8]
     Offset: '0x18'
     Size: '0x8'
     Type: char

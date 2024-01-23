@@ -12,7 +12,7 @@ struct ChecklistItem
 public:
 	struct FText                                                 Description;                                       // 0x0(0x38)
 	int                                                          NumRequiredActionCompletions;                      // 0x38(0x4)
-	char                                                         pad0x4_BG8OI[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_V6BQG[0x4];                                 // 0x3c(0x4)
 	TArray<class ChecklistActionData*>                           ActionData;                                        // 0x40(0x10)
 };
 
@@ -23,7 +23,7 @@ struct ChecklistMapItemData
 public:
 	struct TreasureMapTextDesc                                   Description;                                       // 0x0(0x48)
 	bool                                                         IsComplete;                                        // 0x48(0x1)
-	char                                                         pad0x7_O3W61[0x7];                                 // 0x49(0x7)
+	char                                                         pad0x7_OV7VG[0x7];                                 // 0x49(0x7)
 };
 
 
@@ -42,7 +42,7 @@ public:
 struct CompleteEntireChecklistEvent
 {
 public:
-	char                                                         pad0x1_FAZ3P[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_CSS23[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -69,7 +69,7 @@ struct ChecklistItemCompletedTelemetryEvent
 public:
 	struct Guid                                                  ChecklistMapId;                                    // 0x0(0x10)
 	byte                                                         ReceivedActionType;                                // 0x10(0x1)
-	char                                                         pad0x7_62I10[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_NPIR2[0x7];                                 // 0x11(0x7)
 	struct FString                                               ActionDescryption;                                 // 0x18(0x10)
 };
 

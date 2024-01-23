@@ -11,7 +11,7 @@ class MovieSceneSignedObject: public Object
 {
 public:
 	struct Guid                                                  Signature;                                         // 0x28(0x10)
-	char                                                         pad0x48_BSITG[0x48];                               // 0x38(0x48)
+	char                                                         pad0x48_CFBDP[0x48];                               // 0x38(0x48)
 };
 
 
@@ -27,7 +27,7 @@ public:
 	struct FloatRange                                            SelectionRange;                                    // 0xc8(0x10)
 	struct FloatRange                                            PlaybackRange;                                     // 0xd8(0x10)
 	bool                                                         bForceFixedFrameIntervalPlayback;                  // 0xe8(0x1)
-	char                                                         pad0x3_JREH7[0x3];                                 // 0xe9(0x3)
+	char                                                         pad0x3_XTUOF[0x3];                                 // 0xe9(0x3)
 	float                                                        FixedFrameInterval;                                // 0xec(0x4)
 	float                                                        InTime;                                            // 0xf0(0x4)
 	float                                                        OutTime;                                           // 0xf4(0x4)
@@ -47,9 +47,9 @@ public:
 class MovieSceneBindingOverrides: public Object
 {
 public:
-	char                                                         pad0x8_8TNEU[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_IJ03M[0x8];                                 // 0x28(0x8)
 	TArray<struct MovieSceneBindingOverrideData>                 BindingData;                                       // 0x30(0x10)
-	char                                                         pad0x58_V36QH[0x58];                               // 0x40(0x58)
+	char                                                         pad0x58_702UF[0x58];                               // 0x40(0x58)
 };
 
 
@@ -75,7 +75,7 @@ public:
 	TArray<class MovieSceneFolder*>                              ChildFolders;                                      // 0x30(0x10)
 	TArray<class MovieSceneTrack*>                               ChildMasterTracks;                                 // 0x40(0x10)
 	TArray<Str ChildObjectBindingStrings>                        ChildObjectBindingStrings;                         // 0x50(0x10)
-	char                                                         pad0x10_VPFZS[0x10];                               // 0x60(0x10)
+	char                                                         pad0x10_SL9XS[0x10];                               // 0x60(0x10)
 };
 
 
@@ -83,21 +83,21 @@ public:
 class MovieSceneSequencePlayer: public Object
 {
 public:
-	char                                                         pad0x398_EYXYH[0x398];                             // 0x28(0x398)
+	char                                                         pad0x398_ATS42[0x398];                             // 0x28(0x398)
 	bool                                                         bIsPlaying;                                        // 0x3c0(0x1)
 	bool                                                         bReversePlayback;                                  // 0x3c0(0x1)
 	bool                                                         bPendingFirstUpdate;                               // 0x3c0(0x1)
-	char                                                         pad0x7_EVUXS[0x7];                                 // 0x3c1(0x7)
+	char                                                         pad0x7_68QCN[0x7];                                 // 0x3c1(0x7)
 	class MovieSceneSequence*                                    Sequence;                                          // 0x3c8(0x8)
 	float                                                        TimeCursorPosition;                                // 0x3d0(0x4)
 	float                                                        StartTime;                                         // 0x3d4(0x4)
 	float                                                        EndTime;                                           // 0x3d8(0x4)
 	int                                                          CurrentNumLoops;                                   // 0x3dc(0x4)
-	char                                                         pad0x10_8PTGS[0x10];                               // 0x3e0(0x10)
+	char                                                         pad0x10_2NQ1F[0x10];                               // 0x3e0(0x10)
 	struct MovieSceneSequencePlaybackSettings                    PlaybackSettings;                                  // 0x3f0(0x28)
-	char                                                         pad0x1d0_S0699[0x1d0];                             // 0x418(0x1d0)
+	char                                                         pad0x1d0_HSLRP[0x1d0];                             // 0x418(0x1d0)
 	class Character*                                             InteractingCharacter;                              // 0x5e8(0x8)
-	char                                                         pad0x18_ORCA1[0x18];                               // 0x5f0(0x18)
+	char                                                         pad0x18_SNSXG[0x18];                               // 0x5f0(0x18)
 };
 
 
@@ -106,7 +106,7 @@ class MovieSceneSection: public MovieSceneSignedObject
 {
 public:
 	struct MovieSceneSectionEvalOptions                          EvalOptions;                                       // 0x80(0x2)
-	char                                                         pad0x2_OSQ73[0x2];                                 // 0x82(0x2)
+	char                                                         pad0x2_39FOX[0x2];                                 // 0x82(0x2)
 	float                                                        StartTime;                                         // 0x84(0x4)
 	float                                                        EndTime;                                           // 0x88(0x4)
 	int                                                          RowIndex;                                          // 0x8c(0x4)
@@ -114,7 +114,7 @@ public:
 	bool                                                         bIsActive;                                         // 0x94(0x1)
 	bool                                                         bIsLocked;                                         // 0x94(0x1)
 	bool                                                         bIsInfinite;                                       // 0x94(0x1)
-	char                                                         pad0x3_0DZEQ[0x3];                                 // 0x95(0x3)
+	char                                                         pad0x3_9T3ST[0x3];                                 // 0x95(0x3)
 };
 
 
@@ -123,7 +123,7 @@ class MovieSceneTrack: public MovieSceneSignedObject
 {
 public:
 	struct MovieSceneTrackEvalOptions                            EvalOptions;                                       // 0x80(0x4)
-	char                                                         pad0x4_NGPJH[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_8T191[0x4];                                 // 0x84(0x4)
 };
 
 
@@ -134,7 +134,7 @@ public:
 	struct CachedMovieSceneEvaluationTemplate                    EvaluationTemplate;                                // 0x80(0x220)
 	struct MovieSceneTrackCompilationParams                      TemplateParameters;                                // 0x2a0(0x1)
 	bool                                                         bParentContextsAreSignificant;                     // 0x2a1(0x1)
-	char                                                         pad0x6_5ENDD[0x6];                                 // 0x2a2(0x6)
+	char                                                         pad0x6_1OAUY[0x6];                                 // 0x2a2(0x6)
 };
 
 

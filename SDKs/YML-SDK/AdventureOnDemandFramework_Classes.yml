@@ -18,7 +18,7 @@ AdventureOnDemandAreCrewNearQuestTargetStepDesc:
   Super: TaleQuestStepDesc
 AdventureOnDemandArrivalTunnelDependencies:
   Attributes:
-  - Name: pad0x20_6BU2B[0x20]
+  - Name: pad0x20_KY6KA[0x20]
     Offset: '0xd8'
     Size: '0x20'
     Type: char
@@ -32,7 +32,7 @@ AdventureOnDemandArrivalTunnelDesc:
     Offset: '0xb0'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_59014[0x4]
+  - Name: pad0x4_FEN56[0x4]
     Offset: '0xbc'
     Size: '0x4'
     Type: char
@@ -48,7 +48,7 @@ AdventureOnDemandArrivalTunnelDesc:
     Offset: '0xd0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_T87BT[0x3]
+  - Name: pad0x3_ZLH98[0x3]
     Offset: '0xd1'
     Size: '0x3'
     Type: char
@@ -62,7 +62,7 @@ AdventureOnDemandArrivalTunnelDesc:
   Super: ClientDestinationPreLoadingArrivalTunnelDesc
 AdventureOnDemandArrivalTunnelOfTheDamned:
   Attributes:
-  - Name: pad0x28_9LW0W[0x28]
+  - Name: pad0x28_8I8K4[0x28]
     Offset: '0x6a0'
     Size: '0x28'
     Type: char
@@ -74,7 +74,7 @@ AdventureOnDemandArrivalTunnelOfTheDamned:
     Offset: '0x6d0'
     Size: '0x8'
     Type: class AdventureOnDemandArrivalTunnelWorkerBase*
-  - Name: pad0x28_HF310[0x28]
+  - Name: pad0x28_L0QU5[0x28]
     Offset: '0x6d8'
     Size: '0x28'
     Type: char
@@ -94,7 +94,7 @@ AdventureOnDemandArrivalTunnelWorkerBase:
   Super: Object
 AdventureOnDemandDepartureTunnelDependencies:
   Attributes:
-  - Name: pad0x10_HOKWJ[0x10]
+  - Name: pad0x10_1OUZS[0x10]
     Offset: '0x138'
     Size: '0x10'
     Type: char
@@ -126,7 +126,7 @@ AdventureOnDemandDepartureTunnelOfTheDamned:
     Offset: '0x8b8'
     Size: '0x8'
     Type: class AdventureOnDemandDepartureTunnelDesc*
-  - Name: pad0x20_Q9ZV0[0x20]
+  - Name: pad0x20_CTYMB[0x20]
     Offset: '0x8c0'
     Size: '0x20'
     Type: char
@@ -161,15 +161,27 @@ AdventureOnDemandDisplayHintPopUpStepDesc:
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 AdventureOnDemandForceIslandBannerStep:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x98'
+  Attributes:
+  - Name: StepDesc
+    Offset: '0x98'
+    Size: '0x8'
+    Type: class AdventureOnDemandForceIslandBannerStepDesc*
+  ClassSize: '0x8'
+  FullSize: '0xa0'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 AdventureOnDemandForceIslandBannerStepDesc:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x80'
+  Attributes:
+  - Name: MuteBannerAudio
+    Offset: '0x80'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x7_FTCX3[0x7]
+    Offset: '0x81'
+    Size: '0x7'
+    Type: char
+  ClassSize: '0x8'
+  FullSize: '0x88'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 AdventureOnDemandGetIsDivingToTunnelStep:
@@ -246,7 +258,7 @@ AdventureOnDemandServiceParams:
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_CWVJT[0x4]
+  - Name: pad0x4_O3ZRN[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -306,7 +318,7 @@ AdventureOnDemandSetHintPopUpStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_V8EFL[0x7]
+  - Name: pad0x7_WIJ3Y[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -363,15 +375,27 @@ AdventureOnDemandSetTunnelDescStepDesc:
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 AdventureOnDemandSuppressIslandBannerStep:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x98'
+  Attributes:
+  - Name: StepDesc
+    Offset: '0x98'
+    Size: '0x8'
+    Type: class AdventureOnDemandSuppressIslandBannerStepDesc*
+  ClassSize: '0x8'
+  FullSize: '0xa0'
   InheritedSize: '0x98'
   Super: TaleQuestStep
 AdventureOnDemandSuppressIslandBannerStepDesc:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x80'
+  Attributes:
+  - Name: BannerSuppressionFlags
+    Offset: '0x80'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x7_Y46UV[0x7]
+    Offset: '0x81'
+    Size: '0x7'
+    Type: char
+  ClassSize: '0x8'
+  FullSize: '0x88'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 AdventureOnDemandTaleFunctionLibrary:
@@ -390,7 +414,7 @@ AdventureOnDemandTallTaleCategoryDataAsset:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_FV8BY[0x7]
+  - Name: pad0x7_EJC2P[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -448,7 +472,7 @@ AdventureOnDemandVoyageSelectionCompanyDataAsset:
     Offset: '0x40'
     Size: '0xc'
     Type: struct FeatureFlag
-  - Name: pad0x4_5PMY9[0x4]
+  - Name: pad0x4_R0CDJ[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -494,7 +518,7 @@ AdventureOnDemandYieldQuestResumeOnConditionsStepDesc:
   Super: TaleQuestStepDesc
 AdventureOnDemandYieldQuestResumeOnConditionsTaleStep:
   Attributes:
-  - Name: pad0x18_TNBM5[0x18]
+  - Name: pad0x18_304WW[0x18]
     Offset: '0x98'
     Size: '0x18'
     Type: char
@@ -510,7 +534,7 @@ GameEventOnDemandDepartureTunnelDependencies:
   Super: AdventureOnDemandDepartureTunnelDependencies
 GameEventOnDemandDepartureTunnelDesc:
   Attributes:
-  - Name: pad0x20_1ZAK9[0x20]
+  - Name: pad0x20_YXYSX[0x20]
     Offset: '0x128'
     Size: '0x20'
     Type: char
@@ -550,20 +574,8 @@ GameEventsOnDemandBannerDataAsset:
     Offset: '0xe0'
     Size: '0x38'
     Type: struct FText
-  - Name: OnGameEventCompletedBannerMessageText
-    Offset: '0x118'
-    Size: '0x38'
-    Type: struct FText
-  - Name: OnGameEventFailedBannerMessageText
-    Offset: '0x150'
-    Size: '0x38'
-    Type: struct FText
-  - Name: BannerTagsPerCompany
-    Offset: '0x188'
-    Size: '0x10'
-    Type: TArray<struct GameEventOnDemandCompanyBannerData>
-  ClassSize: '0x170'
-  FullSize: '0x198'
+  ClassSize: '0xf0'
+  FullSize: '0x118'
   InheritedSize: '0x28'
   Super: DataAsset
 GameEventsOnDemandStatDataAsset:
@@ -578,44 +590,64 @@ GameEventsOnDemandStatDataAsset:
   Super: DataAsset
 QuestTableAdventureOnDemandParams:
   Attributes:
-  - Name: NewPlayerTutorialPrerequisites
+  - Name: LootFilter
     Offset: '0x28'
+    Size: '0x8'
+    Type: class LootTeleportFilterDataAsset*
+  - Name: NewPlayerTutorialPrerequisites
+    Offset: '0x30'
     Size: '0x10'
     Type: TArray<class InteractionPrerequisiteBase*>
   - Name: NewPlayerCompanyTutorialPrerequisites
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x10'
     Type: TArray<struct QuestTableCompanyTutorialPrerequisites>
+  - Name: NewPlayerTutorialDiscoverTabTile
+    Offset: '0x50'
+    Size: '0x148'
+    Type: struct QuestTableBakedInfoDiscoverTile
+  - Name: EmptyCompanyRequirementImageUrl
+    Offset: '0x198'
+    Size: '0x10'
+    Type: struct StringAssetReference
   - Name: SailToQuestText_Default
-    Offset: '0x48'
+    Offset: '0x1a8'
     Size: '0x38'
     Type: struct FText
   - Name: SailToQuestText_BlockedDueToWorldEvent
-    Offset: '0x80'
+    Offset: '0x1e0'
     Size: '0x38'
     Type: struct FText
   - Name: DiveToQuestText_Default
-    Offset: '0xb8'
+    Offset: '0x218'
     Size: '0x38'
     Type: struct FText
   - Name: DiveToQuestText_BlockedDueToTutorial
-    Offset: '0xf0'
+    Offset: '0x250'
     Size: '0x38'
     Type: struct FText
   - Name: DiveToQuestText_BlockedDueToCooldown
-    Offset: '0x128'
+    Offset: '0x288'
     Size: '0x38'
     Type: struct FText
+  - Name: DiscoverTabData
+    Offset: '0x2c0'
+    Size: '0x8'
+    Type: class QuestTableDiscoverTabData*
   - Name: InfoDiscoverTileCategory
-    Offset: '0x160'
+    Offset: '0x2c8'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: LimitedInfoDiscoverTileCategory
+    Offset: '0x2d0'
     Size: '0x8'
     Type: class UClass*
   - Name: BakedQuestDiscoverTiles
-    Offset: '0x168'
+    Offset: '0x2d8'
     Size: '0x10'
     Type: TArray<struct QuestTableBakedQuestDiscoverTile>
-  ClassSize: '0x150'
-  FullSize: '0x178'
+  ClassSize: '0x2c0'
+  FullSize: '0x2e8'
   InheritedSize: '0x28'
   Super: DataAsset
 VoyageOnDemandArrivalTunnelWorker:

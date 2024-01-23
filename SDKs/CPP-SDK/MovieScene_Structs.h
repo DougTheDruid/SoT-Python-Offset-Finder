@@ -32,14 +32,14 @@ struct MovieSceneSpawnable
 {
 public:
 	bool                                                         IsCameraDockable;                                  // 0x0(0x1)
-	char                                                         pad0x3_8YM0Q[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_T7BFP[0x3];                                 // 0x1(0x3)
 	struct Guid                                                  Guid;                                              // 0x4(0x10)
-	char                                                         pad0x4_M4MNV[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_36KGU[0x4];                                 // 0x14(0x4)
 	struct FString                                               Name;                                              // 0x18(0x10)
 	class Object*                                                ObjectTemplate;                                    // 0x28(0x8)
 	TArray<struct Guid>                                          ChildPossessables;                                 // 0x30(0x10)
 	byte                                                         Ownership;                                         // 0x40(0x1)
-	char                                                         pad0x7_ZHBBX[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_OC8MB[0x7];                                 // 0x41(0x7)
 };
 
 
@@ -55,7 +55,7 @@ public:
 struct MovieSceneEditorData
 {
 public:
-	char                                                         pad0x50_PKE7K[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_9Y4S6[0x50];                               // 0x0(0x50)
 	struct FloatRange                                            WorkingRange;                                      // 0x50(0x10)
 	struct FloatRange                                            ViewRange;                                         // 0x60(0x10)
 };
@@ -83,7 +83,7 @@ struct MovieSceneBindingOverrideData
 public:
 	struct MovieSceneObjectBindingPtr                            ObjectBindingId;                                   // 0x0(0x10)
 	bool                                                         bOverridesDefault;                                 // 0x18(0x1)
-	char                                                         pad0x3_KB3GF[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_WZR9M[0x3];                                 // 0x19(0x3)
 };
 
 
@@ -94,11 +94,11 @@ public:
 	int                                                          LoopCount;                                         // 0x0(0x4)
 	float                                                        PlayRate;                                          // 0x4(0x4)
 	bool                                                         bRandomStartTime;                                  // 0x8(0x1)
-	char                                                         pad0x3_ENMY3[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_NUC7H[0x3];                                 // 0x9(0x3)
 	float                                                        StartTime;                                         // 0xc(0x4)
 	bool                                                         bRestoreState;                                     // 0x10(0x1)
-	char                                                         pad0x7_OT0WL[0x7];                                 // 0x11(0x7)
-	char                                                         pad0x10_5TN5Y[0x10];                               // 0x18(0x10)
+	char                                                         pad0x7_SV4B9[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x10_1NT24[0x10];                               // 0x18(0x10)
 };
 
 
@@ -115,7 +115,7 @@ public:
 struct MovieSceneTrackIdentifier
 {
 public:
-	char                                                         pad0x4_IO3TM[0x4];                                 // 0x0(0x4)
+	char                                                         pad0x4_VLQLT[0x4];                                 // 0x0(0x4)
 };
 
 
@@ -123,7 +123,7 @@ public:
 struct MovieSceneSequenceID
 {
 public:
-	char                                                         pad0x4_6WJLD[0x4];                                 // 0x0(0x4)
+	char                                                         pad0x4_VYY3X[0x4];                                 // 0x0(0x4)
 };
 
 
@@ -158,7 +158,7 @@ public:
 struct MovieSceneEvaluationFieldSegmentPtr
 {
 public:
-	char                                                         pad0x8_0MB0L[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_7XJ80[0x8];                                 // 0x0(0x8)
 	int                                                          SegmentIndex;                                      // 0x8(0x4)
 };
 
@@ -177,7 +177,7 @@ struct MovieSceneEvaluationGroupLUTIndex
 {
 public:
 	bool                                                         bRequiresImmediateFlush;                           // 0x0(0x1)
-	char                                                         pad0x3_6XN3B[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_812AD[0x3];                                 // 0x1(0x3)
 	int                                                          LUTOffset;                                         // 0x4(0x4)
 	int                                                          NumInitPtrs;                                       // 0x8(0x4)
 	int                                                          NumEvalPtrs;                                       // 0xc(0x4)
@@ -188,7 +188,7 @@ public:
 struct MovieSceneEvalTemplateBase
 {
 public:
-	char                                                         pad0x10_DX8GQ[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_6BWJ2[0x10];                               // 0x0(0x10)
 };
 
 
@@ -196,7 +196,7 @@ public:
 struct MovieSceneEmptyStruct
 {
 public:
-	char                                                         pad0x1_P5Y5S[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_R8H2P[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -204,7 +204,7 @@ public:
 struct MovieSceneEvalTemplatePtr
 {
 public:
-	char                                                         pad0x38_9O6Q2[0x38];                               // 0x0(0x38)
+	char                                                         pad0x38_NAI58[0x38];                               // 0x0(0x38)
 };
 
 
@@ -212,9 +212,9 @@ public:
 struct MovieSceneEvalTemplate
 {
 public:
-	char                                                         pad0x10_GLQT1[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_91S31[0x10];                               // 0x0(0x10)
 	byte                                                         CompletionMode;                                    // 0x10(0x1)
-	char                                                         pad0x7_YGTQB[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_LTKKR[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -222,7 +222,7 @@ public:
 struct MovieSceneSegment
 {
 public:
-	char                                                         pad0x40_MDPZ8[0x40];                               // 0x0(0x40)
+	char                                                         pad0x40_WZZ37[0x40];                               // 0x0(0x40)
 };
 
 
@@ -239,7 +239,7 @@ public:
 struct MovieSceneTrackImplementationPtr
 {
 public:
-	char                                                         pad0x38_TJZPD[0x38];                               // 0x0(0x38)
+	char                                                         pad0x38_YWEM0[0x38];                               // 0x0(0x38)
 };
 
 
@@ -247,7 +247,7 @@ public:
 struct MovieSceneTrackImplementation
 {
 public:
-	char                                                         pad0x10_8B95N[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_2QQK0[0x10];                               // 0x0(0x10)
 };
 
 
@@ -257,14 +257,14 @@ struct MovieSceneEvaluationTrack
 public:
 	struct Guid                                                  ObjectBindingId;                                   // 0x0(0x10)
 	byte                                                         EvaluationMethod;                                  // 0x12(0x1)
-	char                                                         pad0x5_K1VB8[0x5];                                 // 0x13(0x5)
+	char                                                         pad0x5_COU0E[0x5];                                 // 0x13(0x5)
 	TArray<struct MovieSceneSegment>                             Segments;                                          // 0x18(0x10)
 	TArray<struct MovieSceneEvalTemplatePtr>                     ChildTemplates;                                    // 0x28(0x10)
 	struct MovieSceneTrackImplementationPtr                      TrackTemplate;                                     // 0x38(0x38)
 	struct FName                                                 EvaluationGroup;                                   // 0x70(0x8)
 	bool                                                         bEvaluateInPreroll;                                // 0x78(0x1)
 	bool                                                         bEvaluateInPostroll;                               // 0x78(0x1)
-	char                                                         pad0x7_9QFND[0x7];                                 // 0x79(0x7)
+	char                                                         pad0x7_QJ02E[0x7];                                 // 0x79(0x7)
 };
 
 
@@ -292,7 +292,7 @@ public:
 struct MovieSceneSequenceHierarchy
 {
 public:
-	char                                                         pad0xa0_G1WEN[0xa0];                               // 0x0(0xa0)
+	char                                                         pad0xa0_SWYJ5[0xa0];                               // 0x0(0xa0)
 };
 
 
@@ -301,7 +301,7 @@ struct MovieSceneSequenceHierarchyNode
 {
 public:
 	struct MovieSceneSequenceID                                  ParentID;                                          // 0x0(0x4)
-	char                                                         pad0x4_LTG6Z[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_7I5GN[0x4];                                 // 0x4(0x4)
 	TArray<struct MovieSceneSequenceID>                          Children;                                          // 0x8(0x10)
 };
 
@@ -314,7 +314,7 @@ public:
 	struct MovieSceneSequenceTransform                           RootToSequenceTransform;                           // 0x8(0x8)
 	struct Guid                                                  SourceSequenceSignature;                           // 0x10(0x10)
 	struct MovieSceneSequenceID                                  DeterministicSequenceID;                           // 0x20(0x4)
-	char                                                         pad0x4_QER3D[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_CS5Z3[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -326,7 +326,7 @@ public:
 	bool                                                         bEvaluateNearestSection;                           // 0x0(0x1)
 	bool                                                         bEvaluateInPreroll;                                // 0x0(0x1)
 	bool                                                         bEvaluateInPostroll;                               // 0x0(0x1)
-	char                                                         pad0x3_XCJO6[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_ELHMJ[0x3];                                 // 0x1(0x3)
 };
 
 
@@ -342,7 +342,7 @@ public:
 struct CachedMovieSceneEvaluationTemplate
 {
 public:
-	char                                                         pad0x220_3MDL5[0x220];                             // 0x0(0x220)
+	char                                                         pad0x220_P57UJ[0x220];                             // 0x0(0x220)
 };
 
 
@@ -350,13 +350,13 @@ public:
 struct MovieSceneEvaluationTemplate
 {
 public:
-	char                                                         pad0xa0_8PNYA[0xa0];                               // 0x0(0xa0)
+	char                                                         pad0xa0_XIQOQ[0xa0];                               // 0x0(0xa0)
 	struct MovieSceneEvaluationField                             EvaluationField;                                   // 0xa0(0x30)
 	struct MovieSceneSequenceHierarchy                           Hierarchy;                                         // 0xd0(0xa0)
 	struct MovieSceneGenerationLedger                            Ledger;                                            // 0x170(0xa8)
 	bool                                                         bHasLegacyTrackInstances;                          // 0x218(0x1)
 	bool                                                         bKeepStaleTracks;                                  // 0x218(0x1)
-	char                                                         pad0x7_OZ0UF[0x7];                                 // 0x219(0x7)
+	char                                                         pad0x7_D8W05[0x7];                                 // 0x219(0x7)
 };
 
 
@@ -364,7 +364,7 @@ public:
 struct MovieSceneGenerationLedger
 {
 public:
-	char                                                         pad0xa8_BOC2K[0xa8];                               // 0x0(0xa8)
+	char                                                         pad0xa8_W2E4F[0xa8];                               // 0x0(0xa8)
 };
 
 
@@ -372,7 +372,7 @@ public:
 struct MovieSceneSequenceCachedSignature
 {
 public:
-	char                                                         pad0x8_E4TPA[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_8G6WF[0x8];                                 // 0x0(0x8)
 	struct Guid                                                  CachedSignature;                                   // 0x8(0x10)
 };
 
@@ -381,7 +381,7 @@ public:
 struct MovieSceneLegacyTrackInstanceTemplate
 {
 public:
-	char                                                         pad0x18_N8YSI[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_AQ1RA[0x18];                               // 0x0(0x18)
 	class MovieSceneTrack*                                       Track;                                             // 0x18(0x8)
 };
 
@@ -400,7 +400,7 @@ public:
 struct MovieSceneKeyStruct
 {
 public:
-	char                                                         pad0x8_D80ZJ[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_7NXGU[0x8];                                 // 0x0(0x8)
 };
 
 

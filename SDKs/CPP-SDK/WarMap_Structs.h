@@ -26,7 +26,7 @@ public:
 struct EventWarMapHardModeStateChanged
 {
 public:
-	char                                                         pad0x1_Y9NWU[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_2X6TB[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -34,7 +34,7 @@ public:
 struct EventWarMapStateChanged
 {
 public:
-	char                                                         pad0x8_GP2U0[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_4QY8Q[0x8];                                 // 0x0(0x8)
 	class Actor*                                                 WarMapProposalContainer;                           // 0x8(0x8)
 };
 

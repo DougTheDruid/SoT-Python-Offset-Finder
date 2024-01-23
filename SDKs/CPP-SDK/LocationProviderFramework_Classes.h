@@ -17,7 +17,7 @@ public:
 class LocationProviderService: public Object
 {
 public:
-	char                                                         pad0x80_C8U5W[0x80];                               // 0x28(0x80)
+	char                                                         pad0x80_W55EL[0x80];                               // 0x28(0x80)
 };
 
 

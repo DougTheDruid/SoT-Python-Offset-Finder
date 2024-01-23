@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 MediaSubtitleComponent:
   Attributes:
-  - Name: pad0x68_UTNCO[0x68]
+  - Name: pad0x68_PK4AI[0x68]
     Offset: '0xc8'
     Size: '0x68'
     Type: char
@@ -12,7 +12,7 @@ MediaSubtitleComponent:
   Super: ActorComponent
 WwiseMediaSoundComponent:
   Attributes:
-  - Name: pad0x60_B5Z3P[0x60]
+  - Name: pad0x60_7QMYG[0x60]
     Offset: '0x2e0'
     Size: '0x60'
     Type: char
@@ -20,7 +20,7 @@ WwiseMediaSoundComponent:
     Offset: '0x340'
     Size: '0x8'
     Type: class WwiseEvent*
-  - Name: pad0x48_TY26D[0x48]
+  - Name: pad0x48_2V4JV[0x48]
     Offset: '0x348'
     Size: '0x48'
     Type: char

@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size -0x1 (Full Size[-0x1] - InheritedSize[0x0]
+// Size 0x4400a4c0 (Full Size[0x4400a4c0] - InheritedSize[0x0]
 class BP_skd_ResourceIslandSunkenChestsSpawner_C: public None
 {
 public:
-	char                                                         pad-0x1_RP1J3[-0x1];                               // 0x0(-0x1)
+	char                                                         pad0x4400a4c0_PRDCT[0x4400a4c0];                   // 0x0(0x4400a4c0)
 };
 
 

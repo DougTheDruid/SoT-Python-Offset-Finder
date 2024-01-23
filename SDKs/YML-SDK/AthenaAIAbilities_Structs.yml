@@ -21,7 +21,7 @@ AshenLordFireShroudParams:
     Offset: '0x8'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_SI5NU[0x4]
+  - Name: pad0x4_UJTFY[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -36,7 +36,7 @@ MeleeAttackIdWeights:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_CC4HV[0x4]
+  - Name: pad0x4_3ZUFB[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char

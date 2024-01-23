@@ -6,7 +6,7 @@ ShantyPuzzleCompletionComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_0OYU6[0x4]
+  - Name: pad0x4_CHDJL[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
@@ -32,7 +32,7 @@ ShantyPuzzleCompletionComponent:
   Super: ActorComponent
 ShantyPuzzleComponent:
   Attributes:
-  - Name: pad0x8_SAO6S[0x8]
+  - Name: pad0x8_GTDGQ[0x8]
     Offset: '0x2e0'
     Size: '0x8'
     Type: char
@@ -52,7 +52,7 @@ ShantyPuzzleComponent:
     Offset: '0x301'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_DJZWQ[0x6]
+  - Name: pad0x6_UFIVD[0x6]
     Offset: '0x302'
     Size: '0x6'
     Type: char
@@ -68,7 +68,7 @@ ShantyPuzzleComponent:
     Offset: '0x328'
     Size: '0x8'
     Type: class Ensemble*
-  - Name: pad0xc0_YP3AG[0xc0]
+  - Name: pad0xc0_EGPTQ[0xc0]
     Offset: '0x330'
     Size: '0xc0'
     Type: char
@@ -78,7 +78,7 @@ ShantyPuzzleComponent:
   Super: SceneComponent
 ShantyPuzzleInteractionZoneComponent:
   Attributes:
-  - Name: pad0x20_N2VM0[0x20]
+  - Name: pad0x20_VV1SW[0x20]
     Offset: '0x5e0'
     Size: '0x20'
     Type: char

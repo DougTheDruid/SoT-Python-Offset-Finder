@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BeachNPCSpawnFlowNetworkEvent:
   Attributes:
-  - Name: pad0x10_N735S[0x10]
+  - Name: pad0x10_DKYJL[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -10,14 +10,14 @@ BeachNPCSpawnFlowNetworkEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_LT87B[0x7]
+  - Name: pad0x7_NFE00[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
   ClassSize: '0x18'
 ContextualTutorialPromptDesc:
   Attributes:
-  - Name: pad0x20_GP9ON[0x20]
+  - Name: pad0x20_ETBSO[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
@@ -43,7 +43,7 @@ EventTutorialTypeDecided:
   ClassSize: '0x1'
 HasTutorialStarterBegunCondition:
   Attributes:
-  - Name: pad0x28_RACQR[0x28]
+  - Name: pad0x28_0IRHG[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
@@ -51,7 +51,7 @@ HasTutorialStarterBegunCondition:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_0B54T[0x7]
+  - Name: pad0x7_S6EPA[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -66,14 +66,14 @@ IntroductionToSOTIntroAnimatic:
     Offset: '0x8'
     Size: '0x2c'
     Type: struct FirstPersonAnimaticSettings
-  - Name: pad0x4_3SZRP[0x4]
+  - Name: pad0x4_S5HGP[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
   ClassSize: '0x38'
 TutorialShowTutorialLegendaryTavernStrangerEvent:
   Attributes:
-  - Name: pad0x1_H6MB9[0x1]
+  - Name: pad0x1_TITZL[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -96,7 +96,7 @@ TutorialStepEndedTelemetryEvent:
     Offset: '0x21'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_LY3KS[0x6]
+  - Name: pad0x6_CV0HL[0x6]
     Offset: '0x22'
     Size: '0x6'
     Type: char

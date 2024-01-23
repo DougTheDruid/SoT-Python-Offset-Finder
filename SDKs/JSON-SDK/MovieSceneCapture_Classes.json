@@ -20,7 +20,7 @@
     "ClassSize": "0x1b8",
     "Attributes": [
       {
-        "Name": "pad0x10_BZA30[0x10]",
+        "Name": "pad0x10_K1TXE[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -56,7 +56,7 @@
         "Offset": "0x99"
       },
       {
-        "Name": "pad0x6_N46KH[0x6]",
+        "Name": "pad0x6_CWGJB[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x9a"
@@ -74,7 +74,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x120_CYDCK[0x120]",
+        "Name": "pad0x120_W46AA[0x120]",
         "Type": "char",
         "Size": "0x120",
         "Offset": "0xc0"
@@ -101,7 +101,7 @@
         "Offset": "0x1e0"
       },
       {
-        "Name": "pad0xb_MHRQJ[0xb]",
+        "Name": "pad0xb_RQB4M[0xb]",
         "Type": "char",
         "Size": "0xb",
         "Offset": "0x1e1"
@@ -113,7 +113,7 @@
         "Offset": "0x1ec"
       },
       {
-        "Name": "pad0x4_XDGGS[0x4]",
+        "Name": "pad0x4_B1YLJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1fc"
@@ -134,7 +134,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_EI8RQ[0x8]",
+        "Name": "pad0x8_Q9UCG[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -161,7 +161,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_VMJ4X[0x4]",
+        "Name": "pad0x4_17VHC[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
@@ -187,7 +187,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_8CFRV[0x3]",
+        "Name": "pad0x3_7JWFG[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -205,7 +205,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_35JL3[0x7]",
+        "Name": "pad0x7_EUK3N[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -231,7 +231,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_56YXE[0x3]",
+        "Name": "pad0x3_MHGW3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"

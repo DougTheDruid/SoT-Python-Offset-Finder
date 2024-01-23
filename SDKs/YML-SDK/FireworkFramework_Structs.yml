@@ -25,7 +25,7 @@ FireworkAmbientLightData:
   ClassSize: '0x14'
 FireworkExplosionData:
   Attributes:
-  - Name: pad0x8_PPIFE[0x8]
+  - Name: pad0x8_O3VSM[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -41,7 +41,7 @@ FireworkExplosionData:
     Offset: '0x18'
     Size: '0x8'
     Type: class WwiseEvent*
-  - Name: pad0x20_PX3A7[0x20]
+  - Name: pad0x20_WJT2Q[0x20]
     Offset: '0x20'
     Size: '0x20'
     Type: char
@@ -59,7 +59,7 @@ FireworkSequentialSelectionType:
   ClassSize: '0x8'
 GeneratedFireworkData:
   Attributes:
-  - Name: pad0xc_6217F[0xc]
+  - Name: pad0xc_NC2EW[0xc]
     Offset: '0x0'
     Size: '0xc'
     Type: char
@@ -67,7 +67,7 @@ GeneratedFireworkData:
     Offset: '0xc'
     Size: '0x14'
     Type: struct FireworkAmbientLightData
-  - Name: pad0x8_6025Y[0x8]
+  - Name: pad0x8_LQZSP[0x8]
     Offset: '0x20'
     Size: '0x8'
     Type: char
@@ -83,7 +83,7 @@ GeneratedFireworkData:
     Offset: '0x40'
     Size: '0x8'
     Type: class WwiseEvent*
-  - Name: pad0x8_3D0KX[0x8]
+  - Name: pad0x8_QCIKS[0x8]
     Offset: '0x48'
     Size: '0x8'
     Type: char
@@ -114,7 +114,7 @@ WeightedFireworkVFXData:
     Offset: '0x1c'
     Size: '0x10'
     Type: struct LinearColor
-  - Name: pad0x4_KHIOA[0x4]
+  - Name: pad0x4_NCE96[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -129,7 +129,7 @@ WeightedProjectileMeshAnimationData:
     Offset: '0x170'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ILBVL[0x4]
+  - Name: pad0x4_ADKL4[0x4]
     Offset: '0x174'
     Size: '0x4'
     Type: char

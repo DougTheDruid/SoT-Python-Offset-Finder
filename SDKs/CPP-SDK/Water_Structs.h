@@ -12,7 +12,7 @@ struct WaterInformation
 public:
 	class UClass*                                                WaterType;                                         // 0x0(0x8)
 	bool                                                         CanSwim;                                           // 0x8(0x1)
-	char                                                         pad0x7_DE5C6[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_2VSOY[0x7];                                 // 0x9(0x7)
 };
 
 
@@ -24,12 +24,12 @@ public:
 	float                                                        OverallBuyoancyScalar;                             // 0x8(0x4)
 	float                                                        DampingPerSample;                                  // 0xc(0x4)
 	float                                                        AdditionalAngularDampingWhenSubmerged;             // 0x10(0x4)
-	char                                                         pad0x4_7I1MX[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_W7HYW[0x4];                                 // 0x14(0x4)
 	TArray<struct BuoyancyVolumeSample>                          VolumeSamples;                                     // 0x18(0x10)
 	TArray<struct BuoyancyDragSample>                            DragSamples;                                       // 0x28(0x10)
 	class CurveFloat*                                            BuyoancySampleZSpeedVSDampeningScalar;             // 0x38(0x8)
 	float                                                        QuadSubmersionTestSampleResolution;                // 0x40(0x4)
-	char                                                         pad0xec_80A37[0xec];                               // 0x44(0xec)
+	char                                                         pad0xec_1ILVC[0xec];                               // 0x44(0xec)
 };
 
 
@@ -43,7 +43,7 @@ public:
 	float                                                        Radius;                                            // 0x24(0x4)
 	float                                                        DragCoefficient;                                   // 0x28(0x4)
 	byte                                                         Type;                                              // 0x2c(0x1)
-	char                                                         pad0x63_80W3A[0x63];                               // 0x2d(0x63)
+	char                                                         pad0x63_ZQCP0[0x63];                               // 0x2d(0x63)
 };
 
 
@@ -55,17 +55,17 @@ public:
 	float                                                        Radius;                                            // 0xc(0x4)
 	byte                                                         Type;                                              // 0x10(0x1)
 	bool                                                         bRelevantForSubmersionVolumeCalculation;           // 0x11(0x1)
-	char                                                         pad0x2_I87PH[0x2];                                 // 0x12(0x2)
+	char                                                         pad0x2_LQ3UR[0x2];                                 // 0x12(0x2)
 	float                                                        Scalar;                                            // 0x14(0x4)
 	float                                                        DampingScalar;                                     // 0x18(0x4)
-	char                                                         pad0x4_71G42[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_OHOUY[0x4];                                 // 0x1c(0x4)
 	class CurveFloat*                                            DistUnderwaterVSBuoyancyForce;                     // 0x20(0x8)
 	class CurveFloat*                                            DistUnderwaterVSBuoyancyForceSecondary;            // 0x28(0x8)
 	class CurveFloat*                                            DistUnderwaterVSBuoyancyForceTertiary;             // 0x30(0x8)
 	class CurveFloat*                                            FakeZOffsetGeneratorCurve;                         // 0x38(0x8)
 	float                                                        FakeZOffsetAmp;                                    // 0x40(0x4)
 	float                                                        FakeZOffsetGeneratorTimeScale;                     // 0x44(0x4)
-	char                                                         pad0x10_6B1C3[0x10];                               // 0x48(0x10)
+	char                                                         pad0x10_UPKTY[0x10];                               // 0x48(0x10)
 };
 
 
@@ -74,10 +74,10 @@ struct BuoyancySampleMovement
 {
 public:
 	TArray<struct BuoyancySampleMovementConfiguration>           Configurations;                                    // 0x0(0x10)
-	char                                                         pad0x40_6C622[0x40];                               // 0x10(0x40)
+	char                                                         pad0x40_A6NWN[0x40];                               // 0x10(0x40)
 	class CurveFloat*                                            BuoyancyScalarCurve;                               // 0x50(0x8)
 	class CurveFloat*                                            ProbeMovementCurve;                                // 0x58(0x8)
-	char                                                         pad0x8_WG30A[0x8];                                 // 0x60(0x8)
+	char                                                         pad0x8_THP33[0x8];                                 // 0x60(0x8)
 };
 
 
@@ -88,11 +88,11 @@ public:
 	class CurveVector*                                           CenterOfMassOffsetCurve;                           // 0x0(0x8)
 	TArray<struct BuoyancySampleMovementConfigurationEntry>      SampleMoveData;                                    // 0x8(0x10)
 	float                                                        OverallBuoyancyScalar;                             // 0x18(0x4)
-	char                                                         pad0x4_1FDR9[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_DT1JS[0x4];                                 // 0x1c(0x4)
 	class CurveFloat*                                            OverallBuoyancyScalarBlendCurve;                   // 0x20(0x8)
 	class CurveFloat*                                            ProbeMovementBlendCurve;                           // 0x28(0x8)
 	float                                                        Duration;                                          // 0x30(0x4)
-	char                                                         pad0x4_4QPD5[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_DENHN[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -101,7 +101,7 @@ struct BuoyancySampleMovementConfigurationEntry
 {
 public:
 	struct Vector                                                SampleOffset;                                      // 0x0(0xc)
-	char                                                         pad0x4_22PH9[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_O12JT[0x4];                                 // 0xc(0x4)
 	class CurveFloat*                                            BuoyancyScaleCurve;                                // 0x10(0x8)
 };
 
@@ -119,7 +119,7 @@ public:
 struct EventLeftWaterExclusionZone
 {
 public:
-	char                                                         pad0x1_WDK7U[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_6O8UL[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -127,7 +127,7 @@ public:
 struct EventEnteredWaterExclusionZone
 {
 public:
-	char                                                         pad0x1_5FACR[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_B9DKM[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -139,7 +139,7 @@ public:
 	struct Vector2D                                              Choppiness;                                        // 0x4(0x8)
 	struct Vector                                                Normal;                                            // 0xc(0xc)
 	byte                                                         WaterQueryResult;                                  // 0x18(0x1)
-	char                                                         pad0x3_ROXML[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_BHH21[0x3];                                 // 0x19(0x3)
 };
 
 
@@ -149,7 +149,7 @@ struct WaterSplashProbesContainer
 public:
 	TArray<struct WaterSplashProbe>                              Probes;                                            // 0x0(0x10)
 	float                                                        ProbeSamplingTime;                                 // 0x10(0x4)
-	char                                                         pad0x4_HI89W[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_6LUN0[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -157,7 +157,7 @@ public:
 struct WaterSplashProbe
 {
 public:
-	char                                                         pad0x8_PJYZF[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_LZQJG[0x8];                                 // 0x0(0x8)
 	struct FString                                               ProbeDebugName;                                    // 0x8(0x10)
 	struct Vector                                                LocalOffset;                                       // 0x18(0xc)
 	float                                                        Height;                                            // 0x24(0x4)
@@ -169,9 +169,9 @@ public:
 	float                                                        LocalOffsetAdjustmentDuration;                     // 0x44(0x4)
 	byte                                                         Type;                                              // 0x48(0x1)
 	byte                                                         WaterHeightType;                                   // 0x49(0x1)
-	char                                                         pad0x2_G7VQ3[0x2];                                 // 0x4a(0x2)
+	char                                                         pad0x2_PYBDD[0x2];                                 // 0x4a(0x2)
 	float                                                        StaticWaterHeightValue;                            // 0x4c(0x4)
-	char                                                         pad0x88_A5YGC[0x88];                               // 0x50(0x88)
+	char                                                         pad0x88_Y2H5I[0x88];                               // 0x50(0x88)
 };
 
 
@@ -179,7 +179,7 @@ public:
 struct SplashProbe
 {
 public:
-	char                                                         pad0x8_SIJX6[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_BZ5WL[0x8];                                 // 0x0(0x8)
 	struct WaterSplashProbe                                      Probe;                                             // 0x8(0xd8)
 	float                                                        ProbeSamplingTime;                                 // 0xe0(0x4)
 	float                                                        TimeBetweenProbeVfx;                               // 0xe4(0x4)
@@ -190,9 +190,9 @@ public:
 	byte                                                         SplashAttachType;                                  // 0xf3(0x1)
 	struct Vector                                                VfxSpawnOffset;                                    // 0xf4(0xc)
 	bool                                                         Enabled;                                           // 0x100(0x1)
-	char                                                         pad0x7_9N556[0x7];                                 // 0x101(0x7)
+	char                                                         pad0x7_Y6G9W[0x7];                                 // 0x101(0x7)
 	class ParticleSystemComponent*                               CurrentlyPlayingVFX;                               // 0x108(0x8)
-	char                                                         pad0x18_QU2OS[0x18];                               // 0x110(0x18)
+	char                                                         pad0x18_UDLYT[0x18];                               // 0x110(0x18)
 };
 
 
@@ -203,7 +203,7 @@ public:
 	struct Transform                                             SpoutLocatorTransform;                             // 0x0(0x30)
 	class ParticleSystemComponent*                               SpoutParticleSystem;                               // 0x30(0x8)
 	class ParticleSystemComponent*                               SplashParticleSystem;                              // 0x38(0x8)
-	char                                                         pad0x30_3IS1G[0x30];                               // 0x40(0x30)
+	char                                                         pad0x30_CVJCV[0x30];                               // 0x40(0x30)
 };
 
 

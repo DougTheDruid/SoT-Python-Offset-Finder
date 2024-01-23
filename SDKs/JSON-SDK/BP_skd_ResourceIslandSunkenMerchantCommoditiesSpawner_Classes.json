@@ -1,14 +1,14 @@
 {
   "BP_skd_ResourceIslandSunkenMerchantCommoditiesSpawner_C": {
     "Super": "None",
-    "FullSize": "-0x40aea9d0",
+    "FullSize": "0x45287142",
     "InheritedSize": "0x0",
-    "ClassSize": "-0x40aea9d0",
+    "ClassSize": "0x45287142",
     "Attributes": [
       {
-        "Name": "pad-0x40aea9d0_MND6T[-0x40aea9d0]",
+        "Name": "pad0x45287142_RHTFV[0x45287142]",
         "Type": "char",
-        "Size": "-0x40aea9d0",
+        "Size": "0x45287142",
         "Offset": "0x0"
       }
     ]

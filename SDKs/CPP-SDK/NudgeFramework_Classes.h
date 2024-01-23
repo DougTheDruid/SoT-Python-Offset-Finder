@@ -33,7 +33,7 @@ public:
 class NudgePolicy: public Object
 {
 public:
-	char                                                         pad0x90_5QCHM[0x90];                               // 0x28(0x90)
+	char                                                         pad0x90_LWVCF[0x90];                               // 0x28(0x90)
 	class Actor*                                                 OwningActor;                                       // 0xb8(0x8)
 	class SceneComponent*                                        OwnerComponent;                                    // 0xc0(0x8)
 };

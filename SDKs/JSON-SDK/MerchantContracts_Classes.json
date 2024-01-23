@@ -1,4 +1,11 @@
 {
+  "DoesWieldedItemSatisfyMerchantContractStatCondition": {
+    "Super": "StatCondition",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "MerchantContractsBlueprintLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
@@ -20,7 +27,7 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x8_SLWT0[0x8]",
+        "Name": "pad0x8_AEDLA[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -32,7 +39,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x98_577SI[0x98]",
+        "Name": "pad0x98_9W2FS[0x98]",
         "Type": "char",
         "Size": "0x98",
         "Offset": "0x40"
@@ -53,7 +60,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_BRSLI[0x8]",
+        "Name": "pad0x8_JTOEH[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"

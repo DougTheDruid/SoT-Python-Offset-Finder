@@ -21,7 +21,7 @@ public:
 struct GlobalDigSpotPopupEvent
 {
 public:
-	char                                                         pad0x10_U5DMH[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_F6VR0[0x10];                               // 0x0(0x10)
 	class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x10(0x8)
 };
 

@@ -6,7 +6,7 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
+// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
 class GameEventAvailabilityParamsDataAsset: public DataAsset
 {
 public:
@@ -16,34 +16,16 @@ public:
 	int                                                          ProgressStateLimit;                                // 0x7c(0x4)
 	bool                                                         ShouldApplyShipTypeLimit;                          // 0x80(0x1)
 	bool                                                         ShouldTrackCrewsEngagingEmergently;                // 0x81(0x1)
-	char                                                         pad0x2_9OWQG[0x2];                                 // 0x82(0x2)
+	char                                                         pad0x2_OJRL4[0x2];                                 // 0x82(0x2)
 	float                                                        EmergentCrewLeftRegionCooldown;                    // 0x84(0x4)
-	struct FeatureFlag                                           SendCrewToLoserTunnelFeature;                      // 0x88(0xc)
-	char                                                         pad0x4_TOD0N[0x4];                                 // 0x94(0x4)
+	bool                                                         SendCrewToLoserTunnelOnShipSinking;                // 0x88(0x1)
+	bool                                                         ShouldCompletedBannersPlayAudio;                   // 0x89(0x1)
+	char                                                         pad0x2_0QZOZ[0x2];                                 // 0x8a(0x2)
+	float                                                        ActiveEventExclusionRadiusFromIslandDistanceRadiusModifier; // 0x8c(0x4)
 };
 
 
-// Size 0xe8 (Full Size[0x1b0] - InheritedSize[0xc8]
-class GameEventOnDemandAnnouncementComponent: public ActorComponent
-{
-public:
-	struct FeatureFlag                                           FeatureFlag;                                       // 0xc8(0xc)
-	bool                                                         ShouldFireBannerForAnyCrewEnteringIslandVicinity;  // 0xd4(0x1)
-	bool                                                         ShouldFireGameEventCompletedBannerForEmergentCrews; // 0xd5(0x1)
-	byte                                                         ResetCachedCrewsTrigger;                           // 0xd6(0x1)
-	char                                                         pad0x1_KWEB6[0x1];                                 // 0xd7(0x1)
-	struct FName                                                 IslandName;                                        // 0xd8(0x8)
-	TArray<Weakclass CurrentTrackedPawns>                        CurrentTrackedPawns;                               // 0xe0(0x10)
-	TArray<struct Guid>                                          OnDemandParticipatingCrewIds;                      // 0xf0(0x10)
-	TArray<struct Guid>                                          TrackedShipCrewIds;                                // 0x100(0x10)
-	class UClass*                                                GameEventType;                                     // 0x110(0x8)
-	char                                                         pad0x74_FJUS4[0x74];                               // 0x118(0x74)
-	struct FName                                                 TemporaryBannerTag;                                // 0x18c(0x8)
-	char                                                         pad0x1c_F9OOI[0x1c];                               // 0x194(0x1c)
-};
-
-
-// Size 0xe0 (Full Size[0x108] - InheritedSize[0x28]
+// Size 0x100 (Full Size[0x128] - InheritedSize[0x28]
 class GameEventOnDemandAvailabilityHandler: public Object
 {
 public:
@@ -51,23 +33,25 @@ public:
 	class GameEventOnDemandAvailabilityStateTracker*             AvailabilityStateTracker;                          // 0x30(0x8)
 	class UClass*                                                GameEventType;                                     // 0x38(0x8)
 	class UClass*                                                Company;                                           // 0x40(0x8)
-	char                                                         pad0xc0_FOM2Z[0xc0];                               // 0x48(0xc0)
+	char                                                         pad0x10_FI68B[0x10];                               // 0x48(0x10)
+	byte                                                         CompletedState;                                    // 0x58(0x1)
+	char                                                         pad0xcf_TNATZ[0xcf];                               // 0x59(0xcf)
 };
 
 
-// Size 0x110 (Full Size[0x138] - InheritedSize[0x28]
+// Size 0x138 (Full Size[0x160] - InheritedSize[0x28]
 class GameEventOnDemandAvailabilityStateTracker: public Object
 {
 public:
-	char                                                         pad0x88_W6BH5[0x88];                               // 0x28(0x88)
+	char                                                         pad0x88_SIFU7[0x88];                               // 0x28(0x88)
 	class UClass*                                                ShipTypeLimit;                                     // 0xb0(0x8)
 	TArray<struct Guid>                                          OnDemandParticipatingCrewIds;                      // 0xb8(0x10)
 	TArray<struct Guid>                                          EmergentlyParticipatingCrewIds;                    // 0xc8(0x10)
-	char                                                         pad0x60_0HCK6[0x60];                               // 0xd8(0x60)
+	char                                                         pad0x88_63GGU[0x88];                               // 0xd8(0x88)
 };
 
 
-// Size 0x0 (Full Size[0x128] - InheritedSize[0x128]
+// Size 0x0 (Full Size[0x130] - InheritedSize[0x130]
 class GameEventOnDemandVoyageProposalDesc: public VoyageProposalDesc
 {
 public:
@@ -106,16 +90,14 @@ public:
 class WaitForGameEventOnDemandToCompleteStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x90_9YLEL[0x90];                               // 0x98(0x90)
+	char                                                         pad0x90_OD6PM[0x90];                               // 0x98(0x90)
 };
 
 
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
 class WaitForGameEventOnDemandToCompleteStepDesc: public TaleQuestStepDesc
 {
 public:
-	bool                                                         DeactivationMeansCompletion;                       // 0x80(0x1)
-	char                                                         pad0x7_AF8H6[0x7];                                 // 0x81(0x7)
 };
 
 

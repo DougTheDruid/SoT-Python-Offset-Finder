@@ -11,7 +11,7 @@ class BP_AnimatedStepsComponent_C: public AnimatedStepsComponent
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0xf0(0x8)
-	char                                                         pad0x126_XOFQL[0x126];                             // 0xf8(0x126)
+	char                                                         pad0xb7_XC0XR[0xb7];                               // 0xf8(0xb7)
 	TArray<Float BoxDelays>                                      BoxDelays;                                         // 0xf8(0x10)
 	TArray<Float BoxTargetZs>                                    BoxTargetZs;                                       // 0x108(0x10)
 	class CurveFloat*                                            AnimCurve;                                         // 0x118(0x8)

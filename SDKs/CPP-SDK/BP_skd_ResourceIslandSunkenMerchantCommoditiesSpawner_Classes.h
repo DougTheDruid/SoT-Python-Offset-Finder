@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size -0x40aea9d0 (Full Size[-0x40aea9d0] - InheritedSize[0x0]
+// Size 0x45287142 (Full Size[0x45287142] - InheritedSize[0x0]
 class BP_skd_ResourceIslandSunkenMerchantCommoditiesSpawner_C: public None
 {
 public:
-	char                                                         pad-0x40aea9d0_MND6T[-0x40aea9d0];                 // 0x0(-0x40aea9d0)
+	char                                                         pad0x45287142_RHTFV[0x45287142];                   // 0x0(0x45287142)
 };
 
 

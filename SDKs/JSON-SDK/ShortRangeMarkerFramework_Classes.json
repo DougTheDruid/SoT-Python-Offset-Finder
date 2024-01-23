@@ -6,7 +6,7 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x10_CQ3C4[0x10]",
+        "Name": "pad0x10_IMCAP[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -70,7 +70,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_NN3KL[0x4]",
+        "Name": "pad0x4_7RDQ4[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"

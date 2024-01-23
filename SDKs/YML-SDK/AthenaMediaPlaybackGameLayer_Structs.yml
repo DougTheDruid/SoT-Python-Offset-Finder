@@ -18,7 +18,7 @@ MediaPlayedTelemetryEvent:
     Offset: '0x20'
     Size: '0x8'
     Type: struct IntPoint
-  - Name: pad0x18_J0BPF[0x18]
+  - Name: pad0x18_1Z1ID[0x18]
     Offset: '0x28'
     Size: '0x18'
     Type: char
@@ -58,7 +58,7 @@ VideoPlaybackStateEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_F4PM0[0x7]
+  - Name: pad0x7_Q0GHN[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char

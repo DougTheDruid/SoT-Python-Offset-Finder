@@ -28,7 +28,7 @@ GameEventAvailabilityData:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_45WQX[0x6]
+  - Name: pad0x6_0FGNB[0x6]
     Offset: '0x12'
     Size: '0x6'
     Type: char
@@ -70,28 +70,6 @@ GameEventOnDemandBaseTelemetryFragmentInput:
     Size: '0x10'
     Type: struct Guid
   ClassSize: '0x20'
-GameEventOnDemandCompleteBannerNetworkEvent:
-  Attributes:
-  - Name: pad0x10_HMHAB[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
-  - Name: Title
-    Offset: '0x10'
-    Size: '0x38'
-    Type: struct FText
-  - Name: Company
-    Offset: '0x48'
-    Size: '0x8'
-    Type: struct FName
-  ClassSize: '0x50'
-GameEventOnDemandCompleted:
-  Attributes:
-  - Name: OnDemandCrewIds
-    Offset: '0x0'
-    Size: '0x10'
-    Type: TArray<struct Guid>
-  ClassSize: '0x10'
 GameEventOnDemandCompletedTelemetryEvent:
   Attributes:
   - Name: Company
@@ -109,7 +87,7 @@ GameEventOnDemandCompletedTelemetryEvent:
   ClassSize: '0x30'
 GameEventOnDemandCrewCancelledVoyageTelemetryEvent:
   Attributes:
-  - Name: pad0x1_73FQY[0x1]
+  - Name: pad0x1_O9TRR[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -127,7 +105,7 @@ GameEventOnDemandCrewJoinedTelemetryEvent:
   ClassSize: '0x20'
 GameEventOnDemandCrewScuttledTelemetryEvent:
   Attributes:
-  - Name: pad0x1_SZVKI[0x1]
+  - Name: pad0x1_5YF5H[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -141,7 +119,7 @@ GameEventOnDemandCrewSentToSinkingTunnel:
   ClassSize: '0x10'
 GameEventOnDemandCrewSinkingTelemetryEvent:
   Attributes:
-  - Name: pad0x1_DWCIY[0x1]
+  - Name: pad0x1_8W0B8[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -168,3 +146,10 @@ GameEventOnDemandDeactivatedTelemetryEvent:
     Size: '0x10'
     Type: TArray<struct Guid>
   ClassSize: '0x30'
+GameEventOnDemandFailedTelemetryEvent:
+  Attributes:
+  - Name: ParticipatingOnDemandCrews
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<struct Guid>
+  ClassSize: '0x10'

@@ -27,7 +27,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x7_QQL9H[0x7]",
+        "Name": "pad0x7_LC9MP[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x21"
@@ -86,7 +86,7 @@
         "Offset": "0x55"
       },
       {
-        "Name": "pad0x2_4MZO5[0x2]",
+        "Name": "pad0x2_OVFEL[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x56"
@@ -167,7 +167,7 @@
         "Offset": "0x24"
       },
       {
-        "Name": "pad0x3_US4XF[0x3]",
+        "Name": "pad0x3_YHBP4[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x25"
@@ -196,7 +196,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_3WPRJ[0x4]",
+        "Name": "pad0x4_AL2G9[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -232,7 +232,7 @@
         "Offset": "0x26"
       },
       {
-        "Name": "pad0x1_DVHLU[0x1]",
+        "Name": "pad0x1_5ZXH8[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x27"
@@ -255,7 +255,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_YS3MY[0x7]",
+        "Name": "pad0x7_PL3SX[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -295,7 +295,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_55KMO[0x3]",
+        "Name": "pad0x3_TR96B[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -312,32 +312,15 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_EWL5Y[0x30]",
+        "Name": "pad0x30_GJTO0[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x0"
       }
     ]
   },
-  "GameEventOnDemandCompanyBannerData": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Company",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BannerTag",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "GameEventOnDemandBannerTextData": {
-    "ClassSize": "0xb8",
+    "ClassSize": "0xf0",
     "Attributes": [
       {
         "Name": "GameEventTypes",
@@ -362,6 +345,12 @@
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x80"
+      },
+      {
+        "Name": "OnGameEventCompletedBannerMessageText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0xb8"
       }
     ]
   },
@@ -381,7 +370,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_9BVFO[0x4]",
+        "Name": "pad0x4_U1OY6[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -405,7 +394,24 @@
       }
     ]
   },
-  "QuestTableBakedQuestDiscoverTile": {
+  "QuestTableBakedInfoDiscoverTile": {
+    "ClassSize": "0x148",
+    "Attributes": [
+      {
+        "Name": "pad0x138_J45FZ[0x138]",
+        "Type": "char",
+        "Size": "0x138",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InfoTipIdClientConfigName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x138"
+      }
+    ]
+  },
+  "QuestTableBakedDiscoverTile": {
     "ClassSize": "0x138",
     "Attributes": [
       {
@@ -415,34 +421,40 @@
         "Offset": "0x0"
       },
       {
-        "Name": "Proposal",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
         "Name": "CondensedTitle",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x18"
+        "Offset": "0x10"
       },
       {
         "Name": "Title",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x50"
+        "Offset": "0x48"
       },
       {
         "Name": "Subtitle",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x88"
+        "Offset": "0x80"
       },
       {
         "Name": "Description",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0xc0"
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "HighSeasOnly",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "pad0x7_0CUJF[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xf1"
       },
       {
         "Name": "BackgroundImageUrl",
@@ -467,6 +479,23 @@
         "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x128"
+      }
+    ]
+  },
+  "QuestTableBakedQuestDiscoverTile": {
+    "ClassSize": "0x140",
+    "Attributes": [
+      {
+        "Name": "pad0x138_X3CKH[0x138]",
+        "Type": "char",
+        "Size": "0x138",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Proposal",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x138"
       }
     ]
   },
@@ -507,10 +536,62 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_I5KJR[0x1]",
+        "Name": "pad0x1_NTZ7O[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "ContendedResourceGameEventOnDemandArrivalTunnelWorkerFailedTelemetryEvent": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "TunnelInstanceId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GameEventType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "InvalidReasons",
+        "Type": "TArray<Str InvalidReasons>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "NumLockedEvents",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "NumAvailableEvents",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "GameEventOnDemandArrivalTunnelWorkerCompletedTelemetryEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "TunnelInstanceId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ArrivalTunnelWorkerLifetimeSeconds",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },

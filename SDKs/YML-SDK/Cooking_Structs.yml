@@ -10,7 +10,7 @@ CookEndTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_JV9HH[0x3]
+  - Name: pad0x3_AW95S[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -33,7 +33,7 @@ CookStartTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_BA4OF[0x3]
+  - Name: pad0x3_P7DIT[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -56,7 +56,7 @@ CookableComponentSmokeFeedbackTimingEntry:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_NDSZ7[0x3]
+  - Name: pad0x3_6VEWW[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char
@@ -67,7 +67,7 @@ CookerSmokeFeedbackEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_DREUL[0x7]
+  - Name: pad0x7_N3H1Y[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -86,7 +86,7 @@ CookingClientRepresentation:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_9Q5MF[0x6]
+  - Name: pad0x6_PM725[0x6]
     Offset: '0x2'
     Size: '0x6'
     Type: char
@@ -106,7 +106,7 @@ CookingClientRepresentation:
     Offset: '0x50'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_8SPKF[0x3]
+  - Name: pad0x3_UUJ8U[0x3]
     Offset: '0x51'
     Size: '0x3'
     Type: char
@@ -122,28 +122,28 @@ CookingClientRepresentation:
     Offset: '0x5c'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_W5OB1[0x4]
+  - Name: pad0x4_SBH5G[0x4]
     Offset: '0x64'
     Size: '0x4'
     Type: char
   ClassSize: '0x68'
 CookingInfo:
   Attributes:
-  - Name: pad0xc_K52OB[0xc]
+  - Name: pad0xc_JMNVT[0xc]
     Offset: '0x0'
     Size: '0xc'
     Type: char
   ClassSize: '0xc'
 OnItemStartedCooking:
   Attributes:
-  - Name: pad0x10_P23S4[0x10]
+  - Name: pad0x10_40Z6W[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
 OnItemStoppedCooking:
   Attributes:
-  - Name: pad0x1_25LCQ[0x1]
+  - Name: pad0x1_FLHGD[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

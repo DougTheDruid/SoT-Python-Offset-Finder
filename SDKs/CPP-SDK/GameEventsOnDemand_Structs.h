@@ -12,7 +12,7 @@ struct GameEventsOnDemandLoserTunnelCrewData
 public:
 	struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	class UClass*                                                GameEventType;                                     // 0x10(0x8)
-	char                                                         pad0x8_SXB5A[0x8];                                 // 0x18(0x8)
+	char                                                         pad0x8_BJAGC[0x8];                                 // 0x18(0x8)
 };
 
 
@@ -23,7 +23,7 @@ public:
 	struct FString                                               EventName;                                         // 0x0(0x10)
 	byte                                                         EventCategory;                                     // 0x10(0x1)
 	byte                                                         AvailabilityState;                                 // 0x11(0x1)
-	char                                                         pad0x6_JR5AH[0x6];                                 // 0x12(0x6)
+	char                                                         pad0x6_4P6EY[0x6];                                 // 0x12(0x6)
 };
 
 

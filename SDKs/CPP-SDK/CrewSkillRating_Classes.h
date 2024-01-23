@@ -17,7 +17,7 @@ public:
 class CrewSkillRatingService: public Object
 {
 public:
-	char                                                         pad0xf8_4U7VP[0xf8];                               // 0x28(0xf8)
+	char                                                         pad0xf8_LZ1W5[0xf8];                               // 0x28(0xf8)
 };
 
 

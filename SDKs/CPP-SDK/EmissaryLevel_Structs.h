@@ -35,7 +35,7 @@ public:
 	float                                                        TransitionTime;                                    // 0x10(0x4)
 	float                                                        ActiveValue;                                       // 0x14(0x4)
 	float                                                        InactiveValue;                                     // 0x18(0x4)
-	char                                                         pad0x4_RN7Z5[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_NECG9[0x4];                                 // 0x1c(0x4)
 	class LightComponent*                                        Light;                                             // 0x20(0x8)
 };
 
@@ -65,7 +65,7 @@ public:
 	class DataAsset*                                             EmissarySunkPopUpToastData;                        // 0x28(0x8)
 	struct EmissaryCompanyCosmetics                              CompanyCosmetics;                                  // 0x30(0x20)
 	struct PlayerStat                                            TimeSpentAtMaxRankStat;                            // 0x50(0x4)
-	char                                                         pad0x4_7TXOH[0x4];                                 // 0x54(0x4)
+	char                                                         pad0x4_5893N[0x4];                                 // 0x54(0x4)
 	TArray<struct PlayerStat>                                    StatsToFireOnFullEmissaryClothing;                 // 0x58(0x10)
 	TArray<struct PlayerStat>                                    StatsToFireOnFullEmissaryShipCustomizations;       // 0x68(0x10)
 	TArray<struct PlayerStat>                                    StatsToFireOnFullShipCustomizationsAndClothing;    // 0x78(0x10)
@@ -86,7 +86,7 @@ struct EmissaryLevelData
 {
 public:
 	int                                                          LevelTarget;                                       // 0x0(0x4)
-	char                                                         pad0x4_6PA8P[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_1KPWZ[0x4];                                 // 0x4(0x4)
 	struct EmissaryFlagMeshReferences                            EmissaryFlagMeshAssetReferences;                   // 0x8(0x20)
 	class EmissaryColourSwatchSettingsAsset*                     CustomisedFlagSettings;                            // 0x68(0x8)
 	struct RewardId                                              EmissaryDeactivationReward;                        // 0x70(0x8)
@@ -130,7 +130,7 @@ public:
 struct EmissaryPointsBoostCriteria
 {
 public:
-	char                                                         pad0x8_0YZWV[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_5485K[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -149,7 +149,7 @@ struct EmissaryMaxRankQuestProviderQuestOverrides
 {
 public:
 	struct FeatureFlag                                           FeatureFlag;                                       // 0x0(0xc)
-	char                                                         pad0x4_UJPVM[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_SXEQ0[0x4];                                 // 0xc(0x4)
 	struct StringAssetReference                                  QuestDesc;                                         // 0x10(0x10)
 };
 
@@ -219,7 +219,7 @@ struct EmissaryFactionActionReward
 {
 public:
 	byte                                                         FactionActionType;                                 // 0x0(0x1)
-	char                                                         pad0x3_H6PXA[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_3CSWA[0x3];                                 // 0x1(0x3)
 	float                                                        Amount;                                            // 0x4(0x4)
 };
 
@@ -229,7 +229,7 @@ struct EmissaryCompanyActionReward
 {
 public:
 	byte                                                         CompanyActionType;                                 // 0x0(0x1)
-	char                                                         pad0x3_VOSYS[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_OIDYR[0x3];                                 // 0x1(0x3)
 	float                                                        Amount;                                            // 0x4(0x4)
 };
 
@@ -241,7 +241,7 @@ public:
 	bool                                                         FirstTimeOnly;                                     // 0x0(0x1)
 	bool                                                         NotOriginalOwner;                                  // 0x1(0x1)
 	byte                                                         ItemQualityRequirement;                            // 0x2(0x1)
-	char                                                         pad0x1_E18YZ[0x1];                                 // 0x3(0x1)
+	char                                                         pad0x1_I6Y6H[0x1];                                 // 0x3(0x1)
 	int                                                          EmissaryLevelIncrease;                             // 0x4(0x4)
 };
 
@@ -252,7 +252,7 @@ struct EmissaryGameEventsReward
 public:
 	class UClass*                                                FinishedEventType;                                 // 0x0(0x8)
 	float                                                        Amount;                                            // 0x8(0x4)
-	char                                                         pad0x4_8S0HN[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_6VIN9[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -261,7 +261,7 @@ struct EmissaryKillPlayerReward
 {
 public:
 	int                                                          EmissaryLevelIncrease;                             // 0x0(0x4)
-	char                                                         pad0x4_RVU7S[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_9HGT4[0x4];                                 // 0x4(0x4)
 	TArray<struct EmissaryKillScaleFactor>                       EmissaryLevelKillCountScaleFactors;                // 0x8(0x10)
 	TArray<class Class*>                                         ValidEmissariesToKill;                             // 0x18(0x10)
 };
@@ -322,7 +322,7 @@ public:
 struct EmissaryEncounteredSkellyFortNetworkEvent
 {
 public:
-	char                                                         pad0x10_170EN[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_9CZZU[0x10];                               // 0x0(0x10)
 	struct FName                                                 CompanyName;                                       // 0x10(0x8)
 };
 
@@ -380,7 +380,7 @@ public:
 struct EmissaryKilledAnotherEmissaryNetworkEvent
 {
 public:
-	char                                                         pad0x10_OVZLM[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_LE23E[0x10];                               // 0x0(0x10)
 	struct FName                                                 CompanyName;                                       // 0x10(0x8)
 	struct FName                                                 VictimCompanyName;                                 // 0x18(0x8)
 };
@@ -390,7 +390,7 @@ public:
 struct EmissarySoldLootNetworkEvent
 {
 public:
-	char                                                         pad0x10_48CR1[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_G3C18[0x10];                               // 0x0(0x10)
 	struct FName                                                 CompanyName;                                       // 0x10(0x8)
 };
 
@@ -399,7 +399,7 @@ public:
 struct EmissaryStoleLootNetworkEvent
 {
 public:
-	char                                                         pad0x10_26YWA[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_YA3M4[0x10];                               // 0x0(0x10)
 	struct FName                                                 CompanyName;                                       // 0x10(0x8)
 };
 
@@ -408,7 +408,7 @@ public:
 struct EmissaryDiscoveredCargoRunCrateNetworkEvent
 {
 public:
-	char                                                         pad0x10_I1MO7[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_0UM3I[0x10];                               // 0x0(0x10)
 	struct FName                                                 CompanyName;                                       // 0x10(0x8)
 };
 
@@ -417,7 +417,7 @@ public:
 struct EmissaryDiscoveredLootNetworkEvent
 {
 public:
-	char                                                         pad0x10_VQRXR[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_J241N[0x10];                               // 0x0(0x10)
 	struct FName                                                 CompanyName;                                       // 0x10(0x8)
 };
 
@@ -426,7 +426,7 @@ public:
 struct EmissarySecuredLootOnShipNetworkEvent
 {
 public:
-	char                                                         pad0x10_BPQ0H[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_FW35L[0x10];                               // 0x0(0x10)
 	struct FName                                                 CompanyName;                                       // 0x10(0x8)
 };
 
@@ -435,7 +435,7 @@ public:
 struct EmissaryJoinedNetworkEvent
 {
 public:
-	char                                                         pad0x10_K9QFV[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_3JFGB[0x10];                               // 0x0(0x10)
 	class DataAsset*                                             PopUpDesc;                                         // 0x10(0x8)
 	struct Guid                                                  GuildId;                                           // 0x18(0x10)
 };
@@ -445,7 +445,7 @@ public:
 struct EmissarySunkNetworkEvent
 {
 public:
-	char                                                         pad0x10_R9C7B[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_2TOKT[0x10];                               // 0x0(0x10)
 	class DataAsset*                                             PopUpDesc;                                         // 0x10(0x8)
 	struct FName                                                 CompanyName;                                       // 0x18(0x8)
 	struct Guid                                                  GuildId;                                           // 0x20(0x10)
@@ -456,7 +456,7 @@ public:
 struct EmissaryMaxLevelReachedNetworkEvent
 {
 public:
-	char                                                         pad0x10_9WBH2[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_ORK5N[0x10];                               // 0x0(0x10)
 	class DataAsset*                                             PopUpDesc;                                         // 0x10(0x8)
 	struct Guid                                                  GuildId;                                           // 0x18(0x10)
 };
@@ -466,7 +466,7 @@ public:
 struct EmissaryDeactivatedNetworkEvent
 {
 public:
-	char                                                         pad0x10_Q10HI[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_06DCG[0x10];                               // 0x0(0x10)
 };
 
 
@@ -483,7 +483,7 @@ public:
 struct EmissaryProgressUpdatedNetworkEvent
 {
 public:
-	char                                                         pad0x10_JPX8G[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_KQIG9[0x10];                               // 0x0(0x10)
 	float                                                        OldRepTotal;                                       // 0x10(0x4)
 	float                                                        NewRepTotal;                                       // 0x14(0x4)
 	struct FName                                                 CompanyId;                                         // 0x18(0x8)
@@ -503,7 +503,7 @@ public:
 struct ActivateEmissaryMaxRankQuestForSession
 {
 public:
-	char                                                         pad0x1_PEHKN[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_4LLIX[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -528,7 +528,7 @@ public:
 	struct FName                                                 Company;                                           // 0x10(0x8)
 	struct Guid                                                  AssociatedCrew;                                    // 0x18(0x10)
 	byte                                                         RewardType;                                        // 0x28(0x1)
-	char                                                         pad0x3_47YKD[0x3];                                 // 0x29(0x3)
+	char                                                         pad0x3_3Y6E9[0x3];                                 // 0x29(0x3)
 	int                                                          UpdateAmount;                                      // 0x2c(0x4)
 };
 
@@ -552,7 +552,7 @@ public:
 	struct FName                                                 Company;                                           // 0x20(0x8)
 	struct Guid                                                  AssociatedCrew;                                    // 0x28(0x10)
 	byte                                                         EmissaryDeactivateReason;                          // 0x38(0x1)
-	char                                                         pad0x3_I1JRI[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_6DR50[0x3];                                 // 0x39(0x3)
 	int                                                          EmissaryTotal;                                     // 0x3c(0x4)
 };
 
@@ -581,7 +581,7 @@ public:
 struct EmissaryLevelResetProgress
 {
 public:
-	char                                                         pad0x1_30ECN[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_WQG79[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -589,7 +589,7 @@ public:
 struct PlayerRemovedFromEmissaryCrew
 {
 public:
-	char                                                         pad0x1_I3260[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_XIN2K[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -611,7 +611,7 @@ public:
 	struct FName                                                 EmissaryCompany;                                   // 0x10(0x8)
 	int                                                          EmissaryRank;                                      // 0x18(0x4)
 	byte                                                         ActionName;                                        // 0x1c(0x1)
-	char                                                         pad0x3_2O294[0x3];                                 // 0x1d(0x3)
+	char                                                         pad0x3_FQXQE[0x3];                                 // 0x1d(0x3)
 	int                                                          PointsRewarded;                                    // 0x20(0x4)
 	int                                                          PointsAccumulated;                                 // 0x24(0x4)
 	int                                                          PointsRequiredToNextRank;                          // 0x28(0x4)
@@ -625,7 +625,7 @@ public:
 	struct Guid                                                  EmissarySessionId;                                 // 0x0(0x10)
 	struct FName                                                 EmissaryCompany;                                   // 0x10(0x8)
 	byte                                                         DisbandedReason;                                   // 0x18(0x1)
-	char                                                         pad0x3_X5VEU[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_S3VO5[0x3];                                 // 0x19(0x3)
 };
 
 
@@ -644,7 +644,7 @@ public:
 struct VoteAddedNetworkEvent
 {
 public:
-	char                                                         pad0x10_1AE0K[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_Y1WSU[0x10];                               // 0x0(0x10)
 	struct FName                                                 CompanyId;                                         // 0x10(0x8)
 	struct Guid                                                  CrewId;                                            // 0x18(0x10)
 };
@@ -654,7 +654,7 @@ public:
 struct VoteRemovedNetworkEvent
 {
 public:
-	char                                                         pad0x10_08ZQT[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_GQGET[0x10];                               // 0x0(0x10)
 	struct FName                                                 CompanyId;                                         // 0x10(0x8)
 	struct Guid                                                  CrewId;                                            // 0x18(0x10)
 };

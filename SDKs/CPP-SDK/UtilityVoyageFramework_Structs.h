@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct UtilityVoyageData
 {
 public:
-	char                                                         pad0x58_ZBT5Q[0x58];                               // 0x0(0x58)
+	char                                                         pad0x58_R0LQ6[0x58];                               // 0x0(0x58)
 };
 
 

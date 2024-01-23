@@ -39,7 +39,7 @@ struct StoryClaimableResourcesList
 public:
 	struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
 	bool                                                         AreResourcesClaimed;                               // 0x8(0x1)
-	char                                                         pad0x7_G7C15[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_EE5Y4[0x7];                                 // 0x9(0x7)
 	TArray<Weakclass ClaimableResources>                         ClaimableResources;                                // 0x10(0x10)
 };
 
@@ -59,7 +59,7 @@ struct NamedPointsGroupActorLocation
 {
 public:
 	struct FName                                                 NamedPointsGroup;                                  // 0x0(0x8)
-	char                                                         pad0x20_JDLP4[0x20];                               // 0x8(0x20)
+	char                                                         pad0x20_OOEAO[0x20];                               // 0x8(0x20)
 };
 
 
@@ -107,7 +107,7 @@ struct ActorLocationPair
 {
 public:
 	struct StringAssetReference                                  SpawnLocation;                                     // 0x0(0x10)
-	char                                                         pad0x20_EY18J[0x20];                               // 0x10(0x20)
+	char                                                         pad0x20_2C2ZC[0x20];                               // 0x10(0x20)
 };
 
 
@@ -134,9 +134,9 @@ public:
 struct IsStoryActiveConditionBase
 {
 public:
-	char                                                         pad0x28_UC92O[0x28];                               // 0x0(0x28)
+	char                                                         pad0x28_KXPJH[0x28];                               // 0x0(0x28)
 	TArray<struct StoryFlag>                                     StoryFlags;                                        // 0x28(0x10)
-	char                                                         pad0x10_QZLZ8[0x10];                               // 0x38(0x10)
+	char                                                         pad0x10_AYLDO[0x10];                               // 0x38(0x10)
 };
 
 
@@ -144,7 +144,7 @@ public:
 struct IsAllStoryActiveCondition
 {
 public:
-	char                                                         pad0x48_1UT2Z[0x48];                               // 0x0(0x48)
+	char                                                         pad0x48_D44KC[0x48];                               // 0x0(0x48)
 };
 
 
@@ -152,7 +152,7 @@ public:
 struct IsAnyStoryActiveCondition
 {
 public:
-	char                                                         pad0x48_3OSAB[0x48];                               // 0x0(0x48)
+	char                                                         pad0x48_JVZWZ[0x48];                               // 0x0(0x48)
 };
 
 
@@ -161,7 +161,7 @@ struct StoryInfo
 {
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
-	char                                                         pad0x10_8Q0PO[0x10];                               // 0x8(0x10)
+	char                                                         pad0x10_593J5[0x10];                               // 0x8(0x10)
 };
 
 
@@ -198,7 +198,7 @@ public:
 	TArray<Str ActiveStories>                                    ActiveStories;                                     // 0x10(0x10)
 	bool                                                         DidStoriesChange;                                  // 0x20(0x1)
 	bool                                                         WereStoriesRefreshed;                              // 0x21(0x1)
-	char                                                         pad0x6_XODNO[0x6];                                 // 0x22(0x6)
+	char                                                         pad0x6_EZCEA[0x6];                                 // 0x22(0x6)
 };
 
 

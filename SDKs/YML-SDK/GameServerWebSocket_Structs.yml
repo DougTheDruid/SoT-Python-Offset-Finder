@@ -44,7 +44,7 @@ EventOverMemoryThreshold:
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_D1WPB[0x4]
+  - Name: pad0x4_AGGCV[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char

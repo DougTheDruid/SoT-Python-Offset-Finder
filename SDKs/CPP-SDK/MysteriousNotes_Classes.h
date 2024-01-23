@@ -17,7 +17,7 @@ public:
 class LookingAtMysteriousNoteInputComponent: public LookingAtWieldableInputComponent
 {
 public:
-	char                                                         pad0x30_WZQW0[0x30];                               // 0x2a0(0x30)
+	char                                                         pad0x30_Z8E2M[0x30];                               // 0x2a0(0x30)
 };
 
 
@@ -80,11 +80,11 @@ public:
 class MysteriousNotesService: public Actor
 {
 public:
-	char                                                         pad0x28_S8WY3[0x28];                               // 0x3c8(0x28)
+	char                                                         pad0x28_CITBJ[0x28];                               // 0x3c8(0x28)
 	class MysteriousNoteSettings*                                CachedNoteSettings;                                // 0x3f0(0x8)
 	class WieldableMysteriousNoteDataAsset*                      WieldableNoteDataAsset;                            // 0x3f8(0x8)
 	class MysteriousNotesCompletionEventsModelDataAsset*         CompletionEventsModelData;                         // 0x400(0x8)
-	char                                                         pad0x88_20MVY[0x88];                               // 0x408(0x88)
+	char                                                         pad0x88_JPH53[0x88];                               // 0x408(0x88)
 };
 
 
@@ -99,12 +99,12 @@ public:
 class PlayerMysteriousNoteComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_Z5VSI[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_OF8WT[0x8];                                 // 0xc8(0x8)
 	bool                                                         CinematicPlayed;                                   // 0xd0(0x1)
-	char                                                         pad0xef_QRM8E[0xef];                               // 0xd1(0xef)
+	char                                                         pad0xef_PW5M2[0xef];                               // 0xd1(0xef)
 	struct ClientNoteData                                        NoteData;                                          // 0x1c0(0x18)
 	bool                                                         BeenPossessed;                                     // 0x1d8(0x1)
-	char                                                         pad0x8f_1I83O[0x8f];                               // 0x1d9(0x8f)
+	char                                                         pad0x8f_ZITDZ[0x8f];                               // 0x1d9(0x8f)
 };
 
 
@@ -112,16 +112,16 @@ public:
 class WieldableMysteriousNote: public SkeletalMeshWieldableItem
 {
 public:
-	char                                                         pad0x10_G2XR8[0x10];                               // 0x7e0(0x10)
+	char                                                         pad0x10_VZVQD[0x10];                               // 0x7e0(0x10)
 	class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x7f0(0x8)
 	int                                                          CanvasWidth;                                       // 0x7f8(0x4)
 	int                                                          CanvasHeight;                                      // 0x7fc(0x4)
 	float                                                        FontScale;                                         // 0x800(0x4)
-	char                                                         pad0x5c_2U5IR[0x5c];                               // 0x804(0x5c)
+	char                                                         pad0x5c_CYY9P[0x5c];                               // 0x804(0x5c)
 	class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x860(0x8)
 	class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x868(0x8)
 	class InventoryItemComponent*                                InventoryItemComponent;                            // 0x870(0x8)
-	char                                                         pad0x108_KE0JW[0x108];                             // 0x878(0x108)
+	char                                                         pad0x108_9YFO6[0x108];                             // 0x878(0x108)
 };
 
 

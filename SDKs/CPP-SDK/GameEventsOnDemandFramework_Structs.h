@@ -13,27 +13,9 @@ public:
 	struct FString                                               EventName;                                         // 0x0(0x10)
 	byte                                                         EventCategory;                                     // 0x10(0x1)
 	byte                                                         AvailabilityState;                                 // 0x11(0x1)
-	char                                                         pad0x6_45WQX[0x6];                                 // 0x12(0x6)
+	char                                                         pad0x6_0FGNB[0x6];                                 // 0x12(0x6)
 	class UClass*                                                ShipSizeLimit;                                     // 0x18(0x8)
 	TArray<struct Guid>                                          ParticipatingCrewIds;                              // 0x20(0x10)
-};
-
-
-// Size 0x50
-struct GameEventOnDemandCompleteBannerNetworkEvent
-{
-public:
-	char                                                         pad0x10_HMHAB[0x10];                               // 0x0(0x10)
-	struct FText                                                 Title;                                             // 0x10(0x38)
-	struct FName                                                 Company;                                           // 0x48(0x8)
-};
-
-
-// Size 0x10
-struct GameEventOnDemandCompleted
-{
-public:
-	TArray<struct Guid>                                          OnDemandCrewIds;                                   // 0x0(0x10)
 };
 
 
@@ -69,6 +51,14 @@ public:
 };
 
 
+// Size 0x10
+struct GameEventOnDemandFailedTelemetryEvent
+{
+public:
+	TArray<struct Guid>                                          ParticipatingOnDemandCrews;                        // 0x0(0x10)
+};
+
+
 // Size 0x30
 struct GameEventOnDemandCompletedTelemetryEvent
 {
@@ -101,7 +91,7 @@ public:
 struct GameEventOnDemandCrewCancelledVoyageTelemetryEvent
 {
 public:
-	char                                                         pad0x1_73FQY[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_O9TRR[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -109,7 +99,7 @@ public:
 struct GameEventOnDemandCrewSinkingTelemetryEvent
 {
 public:
-	char                                                         pad0x1_DWCIY[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_8W0B8[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -117,7 +107,7 @@ public:
 struct GameEventOnDemandCrewScuttledTelemetryEvent
 {
 public:
-	char                                                         pad0x1_SZVKI[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_5YF5H[0x1];                                 // 0x0(0x1)
 };
 
 

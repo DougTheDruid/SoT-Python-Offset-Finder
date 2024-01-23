@@ -10,12 +10,12 @@ namespace DougsSDKDumper
 class CompetitiveVoyageItemRelocationVolume: public Actor
 {
 public:
-	char                                                         pad0x8_KYTGC[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_T5VDC[0x8];                                 // 0x3c8(0x8)
 	class SceneComponent*                                        SceneComponentRoot;                                // 0x3d0(0x8)
 	class BoxComponent*                                          TriggerVolume;                                     // 0x3d8(0x8)
 	TArray<struct Vector>                                        RelocationPositions;                               // 0x3e0(0x10)
 	bool                                                         RelocatesIntoWater;                                // 0x3f0(0x1)
-	char                                                         pad0x25f_K3SNC[0x25f];                             // 0x3f1(0x25f)
+	char                                                         pad0x25f_TLS1U[0x25f];                             // 0x3f1(0x25f)
 };
 
 
@@ -37,12 +37,12 @@ public:
 class CompetitiveVoyagesService: public Actor
 {
 public:
-	char                                                         pad0x108_LLAC7[0x108];                             // 0x3c8(0x108)
+	char                                                         pad0x108_559CV[0x108];                             // 0x3c8(0x108)
 	TArray<struct Guid>                                          MainVoyageCrews;                                   // 0x4d0(0x10)
 	class CompetitiveVoyagesServiceParams*                       ServiceParams;                                     // 0x4e0(0x8)
-	char                                                         pad0x2a0_VMOTY[0x2a0];                             // 0x4e8(0x2a0)
+	char                                                         pad0x2a0_P9C0G[0x2a0];                             // 0x4e8(0x2a0)
 	TArray<struct CompetitiveVoyageEventItem>                    VoyageEventItems;                                  // 0x788(0x10)
-	char                                                         pad0x118_RVRZ3[0x118];                             // 0x798(0x118)
+	char                                                         pad0x118_9IJY6[0x118];                             // 0x798(0x118)
 };
 
 
@@ -57,7 +57,7 @@ public:
 	struct ShipSpeedCurseModifyingValues                         ShipSpeedCurseModifyingValues;                     // 0x148(0xc)
 	float                                                        OptOutDelay;                                       // 0x154(0x4)
 	struct PlayerStat                                            SinkShipWithVoyageItemAchievementStat;             // 0x158(0x4)
-	char                                                         pad0x4_V30NB[0x4];                                 // 0x15c(0x4)
+	char                                                         pad0x4_RPSYX[0x4];                                 // 0x15c(0x4)
 };
 
 
@@ -65,13 +65,13 @@ public:
 class CompetitiveVoyageVoteConsumerBase: public VoteConsumerInlineBase
 {
 public:
-	char                                                         pad0x10_ZX2NC[0x10];                               // 0x30(0x10)
+	char                                                         pad0x10_KP9U6[0x10];                               // 0x30(0x10)
 	class CompetitiveVoyageVoteValidatorBase*                    Validator;                                         // 0x40(0x8)
-	char                                                         pad0x48_7XIYY[0x48];                               // 0x48(0x48)
+	char                                                         pad0x48_2DDGP[0x48];                               // 0x48(0x48)
 	class Actor*                                                 OwningActor;                                       // 0x90(0x8)
 	class ActorComponent*                                        OwningComponent;                                   // 0x98(0x8)
 	TArray<struct CrewMemberVotes>                               Votes;                                             // 0xa0(0x10)
-	char                                                         pad0x18_H08WC[0x18];                               // 0xb0(0x18)
+	char                                                         pad0x18_GN00O[0x18];                               // 0xb0(0x18)
 };
 
 
@@ -92,10 +92,10 @@ class CompetitiveVoyageVoteValidatorBase: public VoteValidatorInlineBase
 public:
 	TArray<class Class*>                                         TargetCompanies;                                   // 0x30(0x10)
 	float                                                        EdgeOfWorldWarningWeightForFactionLock;            // 0x40(0x4)
-	char                                                         pad0x5c_ZTC4J[0x5c];                               // 0x44(0x5c)
+	char                                                         pad0x5c_V7FCZ[0x5c];                               // 0x44(0x5c)
 	class CompetitiveVoyageVoteConsumerBase*                     Consumer;                                          // 0xa0(0x8)
 	int                                                          CurrentCompany;                                    // 0xa8(0x4)
-	char                                                         pad0x4_LL1EJ[0x4];                                 // 0xac(0x4)
+	char                                                         pad0x4_TJGFJ[0x4];                                 // 0xac(0x4)
 	class Actor*                                                 OwningActor;                                       // 0xb0(0x8)
 };
 
@@ -105,7 +105,7 @@ class StopCompetitiveVoyageVoteValidator: public CompetitiveVoyageVoteValidatorB
 {
 public:
 	bool                                                         IsOptInNote;                                       // 0xb8(0x1)
-	char                                                         pad0x7_3F966[0x7];                                 // 0xb9(0x7)
+	char                                                         pad0x7_SJO0A[0x7];                                 // 0xb9(0x7)
 };
 
 
@@ -134,9 +134,9 @@ public:
 class TaleQuestCompetitiveVoyagesService: public TaleQuestService
 {
 public:
-	char                                                         pad0x88_4QBW7[0x88];                               // 0x60(0x88)
+	char                                                         pad0x88_V1R10[0x88];                               // 0x60(0x88)
 	TArray<struct PhasedMarkerItem>                              PhasedMarkerItems;                                 // 0xe8(0x10)
-	char                                                         pad0x160_FWNR7[0x160];                             // 0xf8(0x160)
+	char                                                         pad0x160_C5ZAG[0x160];                             // 0xf8(0x160)
 };
 
 
@@ -180,7 +180,7 @@ public:
 class WaitForCompVoyageOptInStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x58_IXTG7[0x58];                               // 0x98(0x58)
+	char                                                         pad0x58_3PHHV[0x58];                               // 0x98(0x58)
 };
 
 

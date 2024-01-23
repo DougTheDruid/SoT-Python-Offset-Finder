@@ -31,7 +31,7 @@ public:
 	class Actor*                                                 NewTargetActor;                                    // 0x8(0x8)
 	byte                                                         TargetChangedReason;                               // 0x10(0x1)
 	byte                                                         InvalidMovementMode;                               // 0x11(0x1)
-	char                                                         pad0x6_82YWO[0x6];                                 // 0x12(0x6)
+	char                                                         pad0x6_TM6Y7[0x6];                                 // 0x12(0x6)
 };
 
 

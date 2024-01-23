@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct WeightedProbabilityRange
 {
 public:
-	char                                                         pad0x10_UQ6QR[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_Y17T9[0x10];                               // 0x0(0x10)
 	TArray<Float Weights>                                        Weights;                                           // 0x10(0x10)
 };
 
@@ -19,7 +19,7 @@ public:
 struct WeightedProbabilityRangeOfRanges
 {
 public:
-	char                                                         pad0x20_KH5A2[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_W1YF4[0x20];                               // 0x0(0x20)
 	TArray<struct WeightedProbabilityRangeOfRangesFloatPair>     SubRanges;                                         // 0x20(0x10)
 };
 
@@ -49,14 +49,14 @@ public:
 	float                                                        Increment;                                         // 0x0(0x4)
 	float                                                        IncrementDirectionMultiplier;                      // 0x4(0x4)
 	bool                                                         IsSwinging;                                        // 0x8(0x1)
-	char                                                         pad0x3_1KK4Z[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_R1FV2[0x3];                                 // 0x9(0x3)
 	float                                                        RPM;                                               // 0xc(0x4)
 	float                                                        MinAngleDegrees;                                   // 0x10(0x4)
 	float                                                        MaxAngleDegrees;                                   // 0x14(0x4)
 	float                                                        Length;                                            // 0x18(0x4)
 	float                                                        CurrentSwingProgress;                              // 0x1c(0x4)
 	float                                                        CurrentRotationAngleDegrees;                       // 0x20(0x4)
-	char                                                         pad0xc_XES7D[0xc];                                 // 0x24(0xc)
+	char                                                         pad0xc_6SJRJ[0xc];                                 // 0x24(0xc)
 	struct Transform                                             InterpolationAsTransform;                          // 0x30(0x30)
 };
 
@@ -76,7 +76,7 @@ public:
 struct TimedBuffer
 {
 public:
-	char                                                         pad0x18_G4K4I[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_R1J9W[0x18];                               // 0x0(0x18)
 };
 
 
@@ -87,7 +87,7 @@ public:
 	TArray<struct FixedStepInterpCurvePointVector2D>             Points;                                            // 0x0(0x10)
 	float                                                        StepTime;                                          // 0x10(0x4)
 	bool                                                         IsLooped;                                          // 0x14(0x1)
-	char                                                         pad0x3_365AG[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_SX9V4[0x3];                                 // 0x15(0x3)
 };
 
 
@@ -104,7 +104,7 @@ public:
 struct GrabBag
 {
 public:
-	char                                                         pad0x20_ZOQW4[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_XLQEF[0x20];                               // 0x0(0x20)
 };
 
 
@@ -125,7 +125,7 @@ struct SpatialOffset
 public:
 	float                                                        OffsetValue;                                       // 0x0(0x4)
 	byte                                                         OffsetMethod;                                      // 0x4(0x1)
-	char                                                         pad0x3_SFI0P[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_6R4TS[0x3];                                 // 0x5(0x3)
 };
 
 

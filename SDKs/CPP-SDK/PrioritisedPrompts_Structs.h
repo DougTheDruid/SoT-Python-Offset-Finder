@@ -20,13 +20,13 @@ struct PrioritisedPrompt
 {
 public:
 	bool                                                         UsePopupMessageDescForText;                        // 0x0(0x1)
-	char                                                         pad0x7_L1IQN[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_DQB1X[0x7];                                 // 0x1(0x7)
 	struct FText                                                 Message;                                           // 0x8(0x38)
 	struct FString                                               Key;                                               // 0x40(0x10)
 	class PopUpMessageDesc*                                      PopUpMessageDesc;                                  // 0x50(0x8)
 	byte                                                         BasePriority;                                      // 0x58(0x1)
 	byte                                                         MenuNavigation;                                    // 0x59(0x1)
-	char                                                         pad0x6_XQYJ0[0x6];                                 // 0x5a(0x6)
+	char                                                         pad0x6_R3U3L[0x6];                                 // 0x5a(0x6)
 };
 
 
@@ -43,7 +43,7 @@ struct PromptEvaluation
 {
 public:
 	byte                                                         PromptType;                                        // 0x0(0x1)
-	char                                                         pad0x7_SVC2R[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_ODCES[0x7];                                 // 0x1(0x7)
 	struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x8(0x70)
 };
 
@@ -52,10 +52,10 @@ public:
 struct PermanentPromptNetworkEvent
 {
 public:
-	char                                                         pad0x10_1AZHS[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_RUFMB[0x10];                               // 0x0(0x10)
 	struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x10(0x70)
 	byte                                                         StartOrStop;                                       // 0x80(0x1)
-	char                                                         pad0x7_7949K[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_RCV2O[0x7];                                 // 0x81(0x7)
 };
 
 
@@ -71,7 +71,7 @@ public:
 struct PromptsServiceSetupEvent
 {
 public:
-	char                                                         pad0x1_Z2SID[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_FNQ36[0x1];                                 // 0x0(0x1)
 };
 
 

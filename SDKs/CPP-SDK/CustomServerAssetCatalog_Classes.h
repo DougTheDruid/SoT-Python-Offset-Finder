@@ -17,7 +17,7 @@ public:
 class CustomServerAssetCatalogService: public Object
 {
 public:
-	char                                                         pad0xc8_0K6LY[0xc8];                               // 0x28(0xc8)
+	char                                                         pad0xc8_9C8K0[0xc8];                               // 0x28(0xc8)
 };
 
 

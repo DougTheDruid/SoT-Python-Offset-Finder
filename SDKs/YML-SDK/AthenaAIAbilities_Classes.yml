@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AreaOfEffectHealAIAbility:
   Attributes:
-  - Name: pad0x10_ID740[0x10]
+  - Name: pad0x10_7I3F3[0x10]
     Offset: '0x78'
     Size: '0x10'
     Type: char
@@ -10,7 +10,7 @@ AreaOfEffectHealAIAbility:
     Offset: '0x88'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x10_YUS9P[0x10]
+  - Name: pad0x10_AL04Q[0x10]
     Offset: '0x90'
     Size: '0x10'
     Type: char
@@ -62,7 +62,7 @@ BullRushAIAbility:
     Offset: '0x98'
     Size: '0x8'
     Type: class World*
-  - Name: pad0x18_F1MAW[0x18]
+  - Name: pad0x18_SW5TG[0x18]
     Offset: '0xa0'
     Size: '0x18'
     Type: char
@@ -76,7 +76,7 @@ BullRushAIAbilityParams:
     Offset: '0xe0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_46K55[0x4]
+  - Name: pad0x4_RAK8L[0x4]
     Offset: '0xe4'
     Size: '0x4'
     Type: char
@@ -88,7 +88,7 @@ BullRushAIAbilityParams:
     Offset: '0xf8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_YIHM3[0x4]
+  - Name: pad0x4_8L0L9[0x4]
     Offset: '0xfc'
     Size: '0x4'
     Type: char
@@ -122,7 +122,7 @@ BurrowHealVFXComponent:
     Offset: '0xd8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_GKFE8[0x4]
+  - Name: pad0x4_V1Z8T[0x4]
     Offset: '0xdc'
     Size: '0x4'
     Type: char
@@ -134,7 +134,7 @@ BurrowHealVFXComponent:
     Offset: '0xe8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2f_KZLVZ[0x2f]
+  - Name: pad0x2f_W4SHR[0x2f]
     Offset: '0xe9'
     Size: '0x2f'
     Type: char
@@ -206,7 +206,7 @@ EelThrowAIAbilityType:
   Super: AthenaAIAbilityType
 ElectricShieldBuffComponent:
   Attributes:
-  - Name: pad0x8_04QX5[0x8]
+  - Name: pad0x8_TGBHY[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -234,7 +234,7 @@ ElectricShieldBuffComponent:
     Offset: '0xf8'
     Size: '0x1'
     Type: bool
-  - Name: pad0xd7_XVVA1[0xd7]
+  - Name: pad0xd7_R6T7P[0xd7]
     Offset: '0xf9'
     Size: '0xd7'
     Type: char
@@ -274,7 +274,7 @@ LightMeleeAttackId:
   Super: MeleeAttackId
 MeleeAIAbility:
   Attributes:
-  - Name: pad0x8_4F9PV[0x8]
+  - Name: pad0x8_8X9QN[0x8]
     Offset: '0x78'
     Size: '0x8'
     Type: char
@@ -318,7 +318,7 @@ SporeCloudStatus:
   Super: StatusBase
 SporeExposureComponent:
   Attributes:
-  - Name: pad0x38_4RHKJ[0x38]
+  - Name: pad0x38_CYC9F[0x38]
     Offset: '0xc8'
     Size: '0x38'
     Type: char
@@ -344,7 +344,7 @@ StatusResponseActivateElectricShield:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_0IMYN[0x4]
+  - Name: pad0x4_UKYS3[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char

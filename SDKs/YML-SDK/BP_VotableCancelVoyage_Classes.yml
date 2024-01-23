@@ -18,7 +18,7 @@ BP_VotableCancelVoyage_C:
     Offset: '0x510'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_AC8O2[0x4]
+  - Name: pad0x4_QFYSS[0x4]
     Offset: '0x514'
     Size: '0x4'
     Type: char

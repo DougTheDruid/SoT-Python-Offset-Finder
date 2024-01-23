@@ -52,9 +52,9 @@ public:
 class TimeService: public Actor
 {
 public:
-	char                                                         pad0x38_YZYNF[0x38];                               // 0x3c8(0x38)
+	char                                                         pad0x38_KG6G0[0x38];                               // 0x3c8(0x38)
 	struct Timespan                                              GameWorldTimeOffset;                               // 0x400(0x8)
-	char                                                         pad0x4_UA20D[0x4];                                 // 0x408(0x4)
+	char                                                         pad0x4_0HDQD[0x4];                                 // 0x408(0x4)
 	double                                                       ServiceTimeQueryRapidFrequencyOffsetMax;           // 0x418(0x8)
 	float                                                        ServiceTimeQueryRapidFrequencyInSeconds;           // 0x420(0x4)
 	float                                                        ServiceTimeQueryFrequencyInSeconds;                // 0x424(0x4)
@@ -67,7 +67,7 @@ public:
 	float                                                        MinLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x440(0x4)
 	float                                                        MaxLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x444(0x4)
 	struct ReplicatedAuthoritativeTime                           ReplicatedServerTime;                              // 0x498(0x10)
-	char                                                         pad0x50_9LE6C[0x50];                               // 0x4a8(0x50)
+	char                                                         pad0x50_Y5Q8P[0x50];                               // 0x4a8(0x50)
 };
 
 
@@ -75,7 +75,7 @@ public:
 class DebugTimeService: public TimeService
 {
 public:
-	char                                                         pad0x8_22FO5[0x8];                                 // 0x4f8(0x8)
+	char                                                         pad0x8_VPVOS[0x8];                                 // 0x4f8(0x8)
 };
 
 
@@ -83,7 +83,7 @@ public:
 class CustomizableTimeService: public DebugTimeService
 {
 public:
-	char                                                         pad0x8_LIQ11[0x8];                                 // 0x500(0x8)
+	char                                                         pad0x8_G4P9D[0x8];                                 // 0x500(0x8)
 };
 
 

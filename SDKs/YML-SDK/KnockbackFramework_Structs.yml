@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 KnockbackableInfo:
   Attributes:
-  - Name: pad0x20_PJE64[0x20]
+  - Name: pad0x20_0PX2T[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char

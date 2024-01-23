@@ -38,7 +38,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_DHZ00[0x8]",
+        "Name": "pad0x8_SCJOG[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x10"

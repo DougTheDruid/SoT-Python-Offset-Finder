@@ -17,7 +17,7 @@ public:
 class ActorSpecifierComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_QJ0L1[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_27HV2[0x8];                                 // 0xc8(0x8)
 	class Actor*                                                 SpecifiedActor;                                    // 0xd0(0x8)
 };
 

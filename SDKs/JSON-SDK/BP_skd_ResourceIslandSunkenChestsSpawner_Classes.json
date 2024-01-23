@@ -1,14 +1,14 @@
 {
   "BP_skd_ResourceIslandSunkenChestsSpawner_C": {
     "Super": "None",
-    "FullSize": "-0x1",
+    "FullSize": "0x4400a4c0",
     "InheritedSize": "0x0",
-    "ClassSize": "-0x1",
+    "ClassSize": "0x4400a4c0",
     "Attributes": [
       {
-        "Name": "pad-0x1_RP1J3[-0x1]",
+        "Name": "pad0x4400a4c0_PRDCT[0x4400a4c0]",
         "Type": "char",
-        "Size": "-0x1",
+        "Size": "0x4400a4c0",
         "Offset": "0x0"
       }
     ]

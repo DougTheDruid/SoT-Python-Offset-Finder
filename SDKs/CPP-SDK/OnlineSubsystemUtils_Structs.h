@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct BlueprintSessionResult
 {
 public:
-	char                                                         pad0xe0_UQ9R4[0xe0];                               // 0x0(0xe0)
+	char                                                         pad0xe0_TGGB5[0xe0];                               // 0x0(0xe0)
 };
 
 
@@ -19,7 +19,7 @@ struct PartyReservation
 {
 public:
 	int                                                          TeamNum;                                           // 0x0(0x4)
-	char                                                         pad0x4_46AIB[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_6RZCF[0x4];                                 // 0x4(0x4)
 	struct UniqueNetIdRepl                                       PartyLeader;                                       // 0x8(0x18)
 	TArray<struct PlayerReservation>                             PartyMembers;                                      // 0x20(0x10)
 };
@@ -32,7 +32,7 @@ public:
 	struct UniqueNetIdRepl                                       UniqueId;                                          // 0x0(0x18)
 	struct FString                                               ValidationStr;                                     // 0x18(0x10)
 	float                                                        ElapsedTime;                                       // 0x28(0x4)
-	char                                                         pad0x4_C3BL9[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_L3U3X[0x4];                                 // 0x2c(0x4)
 };
 
 

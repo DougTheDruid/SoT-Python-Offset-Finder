@@ -13,7 +13,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x20_DO2NY[0x20]",
+        "Name": "pad0x20_2EEXC[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x28"

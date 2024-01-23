@@ -24,7 +24,7 @@ public:
 class ServiceMessagingListenerTestObject: public Object
 {
 public:
-	char                                                         pad0x10_JO5AQ[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_NJ1HB[0x10];                               // 0x28(0x10)
 };
 
 

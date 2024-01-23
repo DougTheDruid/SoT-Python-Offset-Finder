@@ -3,18 +3,18 @@
 BP_Sail_C:
   Attributes:
   - Name: Sail Positions Top
-    Offset: '0x570'
-    Size: '0x10'
-    Type: TArray<struct Vector>
-  - Name: Sail Positions Bottom
     Offset: '0x580'
     Size: '0x10'
     Type: TArray<struct Vector>
-  - Name: AlternateSailForceFeatureToggle
+  - Name: Sail Positions Bottom
     Offset: '0x590'
+    Size: '0x10'
+    Type: TArray<struct Vector>
+  - Name: AlternateSailForceFeatureToggle
+    Offset: '0x5a0'
     Size: '0xc'
     Type: struct FeatureFlag
   ClassSize: '0x2c'
-  FullSize: '0x59c'
-  InheritedSize: '0x570'
+  FullSize: '0x5ac'
+  InheritedSize: '0x580'
   Super: Sail

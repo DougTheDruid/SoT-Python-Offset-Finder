@@ -12,7 +12,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x7_BPWI4[0x7]",
+        "Name": "pad0x7_BTAPY[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x61"
@@ -82,7 +82,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0xe8_RNBJD[0xe8]",
+        "Name": "pad0xe8_Q1VMT[0xe8]",
         "Type": "char",
         "Size": "0xe8",
         "Offset": "0xd8"

@@ -14,7 +14,7 @@ Box:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_RFBFV[0x3]
+  - Name: pad0x3_5RRKP[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -33,7 +33,7 @@ Box2D:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_UV7ED[0x3]
+  - Name: pad0x3_BSTG8[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -74,7 +74,7 @@ Color:
   ClassSize: '0x4'
 DateTime:
   Attributes:
-  - Name: pad0x8_OSSNM[0x8]
+  - Name: pad0x8_OHDHY[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -84,7 +84,7 @@ Default__ScriptStruct:
   ClassSize: '0x0'
 FallbackStruct:
   Attributes:
-  - Name: pad0x1_3J9GK[0x1]
+  - Name: pad0x1_B1FAC[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -117,7 +117,7 @@ FloatRangeBound:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_BITRL[0x3]
+  - Name: pad0x3_4WPT6[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -173,7 +173,7 @@ Int32RangeBound:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_I1UG2[0x3]
+  - Name: pad0x3_MIQST[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -218,7 +218,7 @@ InterpCurveFloat:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_IR6IY[0x3]
+  - Name: pad0x3_P5AWR[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -237,7 +237,7 @@ InterpCurveLinearColor:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_SH0DA[0x3]
+  - Name: pad0x3_RCJJA[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -268,7 +268,7 @@ InterpCurvePointFloat:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_IQ3CG[0x3]
+  - Name: pad0x3_WBQF5[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -295,7 +295,7 @@ InterpCurvePointLinearColor:
     Offset: '0x34'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_Q3LKL[0x3]
+  - Name: pad0x3_6CN1I[0x3]
     Offset: '0x35'
     Size: '0x3'
     Type: char
@@ -306,7 +306,7 @@ InterpCurvePointQuat:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_YGMWN[0xc]
+  - Name: pad0xc_F9OER[0xc]
     Offset: '0x4'
     Size: '0xc'
     Type: char
@@ -326,7 +326,7 @@ InterpCurvePointQuat:
     Offset: '0x40'
     Size: '0x1'
     Type: byte
-  - Name: pad0xf_XNL6T[0xf]
+  - Name: pad0xf_DNTUW[0xf]
     Offset: '0x41'
     Size: '0xf'
     Type: char
@@ -353,7 +353,7 @@ InterpCurvePointTwoVectors:
     Offset: '0x4c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_L7HA7[0x3]
+  - Name: pad0x3_QJ617[0x3]
     Offset: '0x4d'
     Size: '0x3'
     Type: char
@@ -380,7 +380,7 @@ InterpCurvePointVector:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_HRPPI[0x3]
+  - Name: pad0x3_1DD48[0x3]
     Offset: '0x29'
     Size: '0x3'
     Type: char
@@ -407,7 +407,7 @@ InterpCurvePointVector2D:
     Offset: '0x1c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_0ZIA0[0x3]
+  - Name: pad0x3_L7TDN[0x3]
     Offset: '0x1d'
     Size: '0x3'
     Type: char
@@ -422,7 +422,7 @@ InterpCurveQuat:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_4HZJ0[0x3]
+  - Name: pad0x3_PWLEY[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -441,7 +441,7 @@ InterpCurveTwoVectors:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_0GL0Y[0x3]
+  - Name: pad0x3_77S3N[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -460,7 +460,7 @@ InterpCurveVector:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_MDUWX[0x3]
+  - Name: pad0x3_VUZDB[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -479,7 +479,7 @@ InterpCurveVector2D:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_9XSMY[0x3]
+  - Name: pad0x3_BSM0N[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -578,7 +578,7 @@ PackedNormal:
   ClassSize: '0x4'
 Plane:
   Attributes:
-  - Name: pad0xc_8EP27[0xc]
+  - Name: pad0xc_CGV59[0xc]
     Offset: '0x0'
     Size: '0xc'
     Type: char
@@ -641,14 +641,14 @@ StringAssetReference:
   ClassSize: '0x10'
 StringClassReference:
   Attributes:
-  - Name: pad0x10_88RBN[0x10]
+  - Name: pad0x10_02C48[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
 Timespan:
   Attributes:
-  - Name: pad0x8_QD8OM[0x8]
+  - Name: pad0x8_CS6ZF[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -663,7 +663,7 @@ Transform:
     Offset: '0x10'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_3K7H1[0x4]
+  - Name: pad0x4_CK01K[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -671,7 +671,7 @@ Transform:
     Offset: '0x20'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_DT560[0x4]
+  - Name: pad0x4_NTMHW[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char

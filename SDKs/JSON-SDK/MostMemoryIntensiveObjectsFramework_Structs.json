@@ -26,7 +26,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_9X22N[0x4]",
+        "Name": "pad0x4_BOXK6[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -36,6 +36,29 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "MMIDebugCommandInfo": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "CommandMenuPath",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DisplayName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Command",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },

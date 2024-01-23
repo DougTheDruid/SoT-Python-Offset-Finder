@@ -34,7 +34,7 @@ MovieScene:
     Offset: '0xe8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_JREH7[0x3]
+  - Name: pad0x3_XTUOF[0x3]
     Offset: '0xe9'
     Size: '0x3'
     Type: char
@@ -64,7 +64,7 @@ MovieScene:
   Super: MovieSceneSignedObject
 MovieSceneBindingOverrides:
   Attributes:
-  - Name: pad0x8_8TNEU[0x8]
+  - Name: pad0x8_IJ03M[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -72,7 +72,7 @@ MovieSceneBindingOverrides:
     Offset: '0x30'
     Size: '0x10'
     Type: TArray<struct MovieSceneBindingOverrideData>
-  - Name: pad0x58_V36QH[0x58]
+  - Name: pad0x58_702UF[0x58]
     Offset: '0x40'
     Size: '0x58'
     Type: char
@@ -116,7 +116,7 @@ MovieSceneFolder:
     Offset: '0x50'
     Size: '0x10'
     Type: TArray<Str ChildObjectBindingStrings>
-  - Name: pad0x10_VPFZS[0x10]
+  - Name: pad0x10_SL9XS[0x10]
     Offset: '0x60'
     Size: '0x10'
     Type: char
@@ -136,7 +136,7 @@ MovieSceneSection:
     Offset: '0x80'
     Size: '0x2'
     Type: struct MovieSceneSectionEvalOptions
-  - Name: pad0x2_OSQ73[0x2]
+  - Name: pad0x2_39FOX[0x2]
     Offset: '0x82'
     Size: '0x2'
     Type: char
@@ -168,7 +168,7 @@ MovieSceneSection:
     Offset: '0x94'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_0DZEQ[0x3]
+  - Name: pad0x3_9T3ST[0x3]
     Offset: '0x95'
     Size: '0x3'
     Type: char
@@ -190,7 +190,7 @@ MovieSceneSequence:
     Offset: '0x2a1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_5ENDD[0x6]
+  - Name: pad0x6_1OAUY[0x6]
     Offset: '0x2a2'
     Size: '0x6'
     Type: char
@@ -200,7 +200,7 @@ MovieSceneSequence:
   Super: MovieSceneSignedObject
 MovieSceneSequencePlayer:
   Attributes:
-  - Name: pad0x398_EYXYH[0x398]
+  - Name: pad0x398_ATS42[0x398]
     Offset: '0x28'
     Size: '0x398'
     Type: char
@@ -216,7 +216,7 @@ MovieSceneSequencePlayer:
     Offset: '0x3c0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_EVUXS[0x7]
+  - Name: pad0x7_68QCN[0x7]
     Offset: '0x3c1'
     Size: '0x7'
     Type: char
@@ -240,7 +240,7 @@ MovieSceneSequencePlayer:
     Offset: '0x3dc'
     Size: '0x4'
     Type: int
-  - Name: pad0x10_8PTGS[0x10]
+  - Name: pad0x10_2NQ1F[0x10]
     Offset: '0x3e0'
     Size: '0x10'
     Type: char
@@ -248,7 +248,7 @@ MovieSceneSequencePlayer:
     Offset: '0x3f0'
     Size: '0x28'
     Type: struct MovieSceneSequencePlaybackSettings
-  - Name: pad0x1d0_S0699[0x1d0]
+  - Name: pad0x1d0_HSLRP[0x1d0]
     Offset: '0x418'
     Size: '0x1d0'
     Type: char
@@ -256,7 +256,7 @@ MovieSceneSequencePlayer:
     Offset: '0x5e8'
     Size: '0x8'
     Type: class Character*
-  - Name: pad0x18_ORCA1[0x18]
+  - Name: pad0x18_SNSXG[0x18]
     Offset: '0x5f0'
     Size: '0x18'
     Type: char
@@ -270,7 +270,7 @@ MovieSceneSignedObject:
     Offset: '0x28'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x48_BSITG[0x48]
+  - Name: pad0x48_CFBDP[0x48]
     Offset: '0x38'
     Size: '0x48'
     Type: char
@@ -284,7 +284,7 @@ MovieSceneTrack:
     Offset: '0x80'
     Size: '0x4'
     Type: struct MovieSceneTrackEvalOptions
-  - Name: pad0x4_NGPJH[0x4]
+  - Name: pad0x4_8T191[0x4]
     Offset: '0x84'
     Size: '0x4'
     Type: char

@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size 0x8 (Full Size[0x3e8] - InheritedSize[0x3e0]
+// Size 0x8 (Full Size[0x3f0] - InheritedSize[0x3e8]
 class BP_Carrot_GlobalDigSpotService_C: public GlobalDigSpotService
 {
 public:
-	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e0(0x8)
+	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3e8(0x8)
 };
 
 

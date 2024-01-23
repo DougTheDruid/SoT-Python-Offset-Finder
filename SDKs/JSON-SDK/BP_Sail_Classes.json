@@ -1,27 +1,27 @@
 {
   "BP_Sail_C": {
     "Super": "Sail",
-    "FullSize": "0x59c",
-    "InheritedSize": "0x570",
+    "FullSize": "0x5ac",
+    "InheritedSize": "0x580",
     "ClassSize": "0x2c",
     "Attributes": [
       {
         "Name": "Sail Positions Top",
         "Type": "TArray<struct Vector>",
         "Size": "0x10",
-        "Offset": "0x570"
+        "Offset": "0x580"
       },
       {
         "Name": "Sail Positions Bottom",
         "Type": "TArray<struct Vector>",
         "Size": "0x10",
-        "Offset": "0x580"
+        "Offset": "0x590"
       },
       {
         "Name": "AlternateSailForceFeatureToggle",
         "Type": "struct FeatureFlag",
         "Size": "0xc",
-        "Offset": "0x590"
+        "Offset": "0x5a0"
       }
     ]
   },

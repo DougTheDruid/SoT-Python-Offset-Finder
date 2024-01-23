@@ -55,7 +55,7 @@ public:
 class SameActorTrinketLoadoutFinderPolicy: public TrinketLoadoutFinderPolicyBase
 {
 public:
-	char                                                         pad0x10_1UED6[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_8XXGO[0x10];                               // 0x28(0x10)
 };
 
 
@@ -70,7 +70,7 @@ public:
 class TrinketReplacementActor: public Actor
 {
 public:
-	char                                                         pad0x10_DXU2B[0x10];                               // 0x3c8(0x10)
+	char                                                         pad0x10_2WQVD[0x10];                               // 0x3c8(0x10)
 };
 
 

@@ -30,7 +30,7 @@ BP_ItemPreview_Lighting_C:
     Offset: '0x3f8'
     Size: '0x8'
     Type: class SceneComponent*
-  - Name: pad0x20_LBFZ7[0x20]
+  - Name: pad0x20_IZ3ON[0x20]
     Offset: '0x400'
     Size: '0x20'
     Type: char

@@ -26,7 +26,7 @@ GameEventAvailabilityParamsDataAsset:
     Offset: '0x81'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_9OWQG[0x2]
+  - Name: pad0x2_OJRL4[0x2]
     Offset: '0x82'
     Size: '0x2'
     Type: char
@@ -34,76 +34,26 @@ GameEventAvailabilityParamsDataAsset:
     Offset: '0x84'
     Size: '0x4'
     Type: float
-  - Name: SendCrewToLoserTunnelFeature
+  - Name: SendCrewToLoserTunnelOnShipSinking
     Offset: '0x88'
-    Size: '0xc'
-    Type: struct FeatureFlag
-  - Name: pad0x4_TOD0N[0x4]
-    Offset: '0x94'
-    Size: '0x4'
+    Size: '0x1'
+    Type: bool
+  - Name: ShouldCompletedBannersPlayAudio
+    Offset: '0x89'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x2_0QZOZ[0x2]
+    Offset: '0x8a'
+    Size: '0x2'
     Type: char
-  ClassSize: '0x70'
-  FullSize: '0x98'
+  - Name: ActiveEventExclusionRadiusFromIslandDistanceRadiusModifier
+    Offset: '0x8c'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x68'
+  FullSize: '0x90'
   InheritedSize: '0x28'
   Super: DataAsset
-GameEventOnDemandAnnouncementComponent:
-  Attributes:
-  - Name: FeatureFlag
-    Offset: '0xc8'
-    Size: '0xc'
-    Type: struct FeatureFlag
-  - Name: ShouldFireBannerForAnyCrewEnteringIslandVicinity
-    Offset: '0xd4'
-    Size: '0x1'
-    Type: bool
-  - Name: ShouldFireGameEventCompletedBannerForEmergentCrews
-    Offset: '0xd5'
-    Size: '0x1'
-    Type: bool
-  - Name: ResetCachedCrewsTrigger
-    Offset: '0xd6'
-    Size: '0x1'
-    Type: byte
-  - Name: pad0x1_KWEB6[0x1]
-    Offset: '0xd7'
-    Size: '0x1'
-    Type: char
-  - Name: IslandName
-    Offset: '0xd8'
-    Size: '0x8'
-    Type: struct FName
-  - Name: CurrentTrackedPawns
-    Offset: '0xe0'
-    Size: '0x10'
-    Type: TArray<Weakclass CurrentTrackedPawns>
-  - Name: OnDemandParticipatingCrewIds
-    Offset: '0xf0'
-    Size: '0x10'
-    Type: TArray<struct Guid>
-  - Name: TrackedShipCrewIds
-    Offset: '0x100'
-    Size: '0x10'
-    Type: TArray<struct Guid>
-  - Name: GameEventType
-    Offset: '0x110'
-    Size: '0x8'
-    Type: class UClass*
-  - Name: pad0x74_FJUS4[0x74]
-    Offset: '0x118'
-    Size: '0x74'
-    Type: char
-  - Name: TemporaryBannerTag
-    Offset: '0x18c'
-    Size: '0x8'
-    Type: struct FName
-  - Name: pad0x1c_F9OOI[0x1c]
-    Offset: '0x194'
-    Size: '0x1c'
-    Type: char
-  ClassSize: '0xe8'
-  FullSize: '0x1b0'
-  InheritedSize: '0xc8'
-  Super: ActorComponent
 GameEventOnDemandAvailabilityHandler:
   Attributes:
   - Name: AvailabilityParamsAsset
@@ -122,17 +72,25 @@ GameEventOnDemandAvailabilityHandler:
     Offset: '0x40'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0xc0_FOM2Z[0xc0]
+  - Name: pad0x10_FI68B[0x10]
     Offset: '0x48'
-    Size: '0xc0'
+    Size: '0x10'
     Type: char
-  ClassSize: '0xe0'
-  FullSize: '0x108'
+  - Name: CompletedState
+    Offset: '0x58'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0xcf_TNATZ[0xcf]
+    Offset: '0x59'
+    Size: '0xcf'
+    Type: char
+  ClassSize: '0x100'
+  FullSize: '0x128'
   InheritedSize: '0x28'
   Super: Object
 GameEventOnDemandAvailabilityStateTracker:
   Attributes:
-  - Name: pad0x88_W6BH5[0x88]
+  - Name: pad0x88_SIFU7[0x88]
     Offset: '0x28'
     Size: '0x88'
     Type: char
@@ -148,19 +106,19 @@ GameEventOnDemandAvailabilityStateTracker:
     Offset: '0xc8'
     Size: '0x10'
     Type: TArray<struct Guid>
-  - Name: pad0x60_0HCK6[0x60]
+  - Name: pad0x88_63GGU[0x88]
     Offset: '0xd8'
-    Size: '0x60'
+    Size: '0x88'
     Type: char
-  ClassSize: '0x110'
-  FullSize: '0x138'
+  ClassSize: '0x138'
+  FullSize: '0x160'
   InheritedSize: '0x28'
   Super: Object
 GameEventOnDemandVoyageProposalDesc:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x128'
-  InheritedSize: '0x128'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
   Super: VoyageProposalDesc
 GameEventsOnDemandAvailabilityServiceInterface:
   Attributes: []
@@ -188,7 +146,7 @@ GameEventsOnDemandLoserTunnelServiceInterface:
   Super: Interface
 WaitForGameEventOnDemandToCompleteStep:
   Attributes:
-  - Name: pad0x90_9YLEL[0x90]
+  - Name: pad0x90_OD6PM[0x90]
     Offset: '0x98'
     Size: '0x90'
     Type: char
@@ -197,16 +155,8 @@ WaitForGameEventOnDemandToCompleteStep:
   InheritedSize: '0x98'
   Super: TaleQuestStep
 WaitForGameEventOnDemandToCompleteStepDesc:
-  Attributes:
-  - Name: DeactivationMeansCompletion
-    Offset: '0x80'
-    Size: '0x1'
-    Type: bool
-  - Name: pad0x7_AF8H6[0x7]
-    Offset: '0x81'
-    Size: '0x7'
-    Type: char
-  ClassSize: '0x8'
-  FullSize: '0x88'
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc

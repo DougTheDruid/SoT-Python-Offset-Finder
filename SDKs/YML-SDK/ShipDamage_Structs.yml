@@ -21,7 +21,7 @@ DamageZoneDamageLevelChanged:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_HQNSB[0x4]
+  - Name: pad0x4_TOCB3[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -44,7 +44,7 @@ DistanceAndLevelOfDamage:
     Offset: '0x9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_D1QTQ[0x2]
+  - Name: pad0x2_T2WWZ[0x2]
     Offset: '0xa'
     Size: '0x2'
     Type: char
@@ -70,7 +70,7 @@ EventShipDamageApplied:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_C2AZZ[0x4]
+  - Name: pad0x4_5S7UI[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -104,7 +104,7 @@ HullDamageHit:
     Offset: '0x18'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_3AW0W[0x3]
+  - Name: pad0x3_GSQD9[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -134,7 +134,7 @@ HullDamageZoneInfo:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_1Z75K[0x7]
+  - Name: pad0x7_ORGOW[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
@@ -145,7 +145,7 @@ HullDamageZoneInfo:
   ClassSize: '0x30'
 SendShipRestoredRpc:
   Attributes:
-  - Name: pad0x10_1H1YI[0x10]
+  - Name: pad0x10_27FAW[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -163,7 +163,7 @@ ShipDamageParams:
   ClassSize: '0x10'
 ShipPartLevelsOfDamage:
   Attributes:
-  - Name: pad0x20_FTFIV[0x20]
+  - Name: pad0x20_K7RBN[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
@@ -175,14 +175,14 @@ ShipPartLevelsOfDamage:
     Offset: '0x30'
     Size: '0xc'
     Type: struct FeatureFlag
-  - Name: pad0x4_7TO1N[0x4]
+  - Name: pad0x4_HKPTB[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
   ClassSize: '0x40'
 ShipRestoredNetworkEvent:
   Attributes:
-  - Name: pad0x10_U8KYF[0x10]
+  - Name: pad0x10_JR02F[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char

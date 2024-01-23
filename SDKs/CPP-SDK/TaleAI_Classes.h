@@ -10,9 +10,9 @@ namespace DougsSDKDumper
 class TaleAIRegionBase: public Object
 {
 public:
-	char                                                         pad0x8_1F75S[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_YH1CF[0x8];                                 // 0x28(0x8)
 	class AIProximityPlayerTracker*                              ProximityPlayerTracker;                            // 0x30(0x8)
-	char                                                         pad0x38_WD3B3[0x38];                               // 0x38(0x38)
+	char                                                         pad0x38_NLO6O[0x38];                               // 0x38(0x38)
 };
 
 
@@ -20,7 +20,7 @@ public:
 class TaleAICustomRegion: public TaleAIRegionBase
 {
 public:
-	char                                                         pad0x18_YSRV0[0x18];                               // 0x70(0x18)
+	char                                                         pad0x18_T1IKX[0x18];                               // 0x70(0x18)
 };
 
 
@@ -86,7 +86,7 @@ public:
 class TaleQuestSpawnAICustomOnDespawnFrame: public Object
 {
 public:
-	char                                                         pad0x8_85RVY[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_QA9NP[0x8];                                 // 0x28(0x8)
 	struct SpawnAICustomOnDespawnTaskData                        Data;                                              // 0x30(0x20)
 };
 
@@ -95,7 +95,7 @@ public:
 class TaleQuestSpawnAICustomOnSpawnFrame: public Object
 {
 public:
-	char                                                         pad0x8_8U9PH[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_12Y3F[0x8];                                 // 0x28(0x8)
 	struct SpawnAICustomOnSpawnTaskData                          Data;                                              // 0x30(0x18)
 };
 
@@ -104,12 +104,12 @@ public:
 class TaleQuestSpawnAICustomRootStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x10_8SC7E[0x10];                               // 0x98(0x10)
+	char                                                         pad0x10_61O89[0x10];                               // 0x98(0x10)
 	struct TaleStructInstance                                    Params;                                            // 0xa8(0x10)
 	TArray<class TaleQuestSpawnAICustomTaskBase*>                ActiveTasks;                                       // 0xb8(0x10)
-	char                                                         pad0x10_8SN0X[0x10];                               // 0xc8(0x10)
+	char                                                         pad0x10_8QP6L[0x10];                               // 0xc8(0x10)
 	class TaleAIRegionBase*                                      Region;                                            // 0xd8(0x8)
-	char                                                         pad0xa8_DWH76[0xa8];                               // 0xe0(0xa8)
+	char                                                         pad0xa8_L125F[0xa8];                               // 0xe0(0xa8)
 };
 
 
@@ -117,7 +117,7 @@ public:
 class TaleQuestSpawnAICustomRootStepDesc: public TaleQuestStepDesc
 {
 public:
-	char                                                         pad0x8_YWRQQ[0x8];                                 // 0x80(0x8)
+	char                                                         pad0x8_QUU1G[0x8];                                 // 0x80(0x8)
 	struct SpawnAICustomSetupTaskData                            SetupTaskData;                                     // 0x88(0x18)
 	struct SpawnActorCustomOnTriggerWaveTaskData                 OnTriggerWaveTaskData;                             // 0xa0(0x10)
 	struct SpawnActorCustomOnCompleteWaveTaskData                OnCompleteWaveTaskData;                            // 0xb0(0x8)
@@ -131,7 +131,7 @@ public:
 class TaleQuestSpawnAICustomStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0xb0_2MHPL[0xb0];                               // 0x98(0xb0)
+	char                                                         pad0xb0_73I2C[0xb0];                               // 0x98(0xb0)
 };
 
 
@@ -139,7 +139,7 @@ public:
 class TaleQuestSpawnAICustomStepDesc: public TaleQuestStepDesc
 {
 public:
-	char                                                         pad0x8_UQNU2[0x8];                                 // 0x80(0x8)
+	char                                                         pad0x8_URJVX[0x8];                                 // 0x80(0x8)
 	class TaleQuestAIAsset*                                      AISpawner;                                         // 0x88(0x8)
 	class TaleQuestStepDesc*                                     OnSpawn;                                           // 0x90(0x8)
 	class TaleQuestStepDesc*                                     OnDespawn;                                         // 0x98(0x8)
@@ -151,9 +151,9 @@ public:
 class TaleQuestSpawnAICustomTaskBase: public Object
 {
 public:
-	char                                                         pad0x8_JF30O[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_1LSSE[0x8];                                 // 0x28(0x8)
 	class TaleQuestSpawnAICustomRootStep*                        MyRootStep;                                        // 0x30(0x8)
-	char                                                         pad0x40_DT1F7[0x40];                               // 0x38(0x40)
+	char                                                         pad0x40_9MGKG[0x40];                               // 0x38(0x40)
 };
 
 
@@ -161,7 +161,7 @@ public:
 class TaleQuestSpawnAICustomOnDespawnTask: public TaleQuestSpawnAICustomTaskBase
 {
 public:
-	char                                                         pad0x10_UOLZY[0x10];                               // 0x78(0x10)
+	char                                                         pad0x10_U5PRJ[0x10];                               // 0x78(0x10)
 	struct SpawnAICustomOnDespawnTaskData                        TaskData;                                          // 0x88(0x20)
 };
 
@@ -170,9 +170,9 @@ public:
 class TaleQuestSpawnAICustomOnSpawnTask: public TaleQuestSpawnAICustomTaskBase
 {
 public:
-	char                                                         pad0x10_E5USC[0x10];                               // 0x78(0x10)
+	char                                                         pad0x10_N6860[0x10];                               // 0x78(0x10)
 	struct SpawnAICustomOnSpawnTaskData                          TaskData;                                          // 0x88(0x18)
-	char                                                         pad0x80_SWN04[0x80];                               // 0xa0(0x80)
+	char                                                         pad0x80_9HZ5U[0x80];                               // 0xa0(0x80)
 };
 
 
@@ -180,9 +180,9 @@ public:
 class TaleQuestSpawnAICustomPreSpawnTask: public TaleQuestSpawnAICustomTaskBase
 {
 public:
-	char                                                         pad0x18_81K1S[0x18];                               // 0x78(0x18)
+	char                                                         pad0x18_2BG6I[0x18];                               // 0x78(0x18)
 	struct SpawnAICustomPreSpawnTaskData                         TaskData;                                          // 0x90(0x78)
-	char                                                         pad0x8_44DTJ[0x8];                                 // 0x108(0x8)
+	char                                                         pad0x8_5ZMNS[0x8];                                 // 0x108(0x8)
 };
 
 
@@ -191,7 +191,7 @@ class TaleQuestSpawnAICustomSetupTask: public TaleQuestSpawnAICustomTaskBase
 {
 public:
 	struct SpawnAICustomSetupTaskData                            TaskData;                                          // 0x78(0x18)
-	char                                                         pad0x10_W4KEP[0x10];                               // 0x90(0x10)
+	char                                                         pad0x10_JGMVN[0x10];                               // 0x90(0x10)
 };
 
 
@@ -200,7 +200,7 @@ class TaleQuestSpawnAICustomSpawnerOnCompleteWaveTask: public TaleQuestSpawnAICu
 {
 public:
 	struct SpawnActorCustomOnCompleteWaveTaskData                TaskData;                                          // 0x78(0x8)
-	char                                                         pad0x10_5P2XV[0x10];                               // 0x80(0x10)
+	char                                                         pad0x10_TR505[0x10];                               // 0x80(0x10)
 };
 
 
@@ -209,7 +209,7 @@ class TaleQuestSpawnAICustomSpawnerOnTriggerWaveTask: public TaleQuestSpawnAICus
 {
 public:
 	struct SpawnActorCustomOnTriggerWaveTaskData                 TaskData;                                          // 0x78(0x10)
-	char                                                         pad0x10_ZBOX6[0x10];                               // 0x88(0x10)
+	char                                                         pad0x10_LZ846[0x10];                               // 0x88(0x10)
 };
 
 

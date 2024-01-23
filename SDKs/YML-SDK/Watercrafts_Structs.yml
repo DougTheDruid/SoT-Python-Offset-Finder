@@ -24,28 +24,28 @@ EventExitedWatercraft:
   ClassSize: '0x10'
 EventOarStrokeEnded:
   Attributes:
-  - Name: pad0x1_J577U[0x1]
+  - Name: pad0x1_39L89[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventRowboatEnteredWater:
   Attributes:
-  - Name: pad0x1_6V3QT[0x1]
+  - Name: pad0x1_BKQRL[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventRowboatExitedWater:
   Attributes:
-  - Name: pad0x1_4YOKZ[0x1]
+  - Name: pad0x1_R9TP8[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventRowboatLoaded:
   Attributes:
-  - Name: pad0x1_L14OH[0x1]
+  - Name: pad0x1_73QKB[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -56,7 +56,7 @@ Oar:
     Offset: '0x0'
     Size: '0x38'
     Type: struct OarParams
-  - Name: pad0x28_AYH9T[0x28]
+  - Name: pad0x28_Z5Z9V[0x28]
     Offset: '0x38'
     Size: '0x28'
     Type: char
@@ -102,7 +102,7 @@ OarParams:
   ClassSize: '0x38'
 QuestVariableWatercraft:
   Attributes:
-  - Name: pad0x30_VLAIX[0x30]
+  - Name: pad0x30_SBX51[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -117,14 +117,14 @@ RowboatDamageEffectData:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_0DG9F[0xc]
+  - Name: pad0xc_X28LJ[0xc]
     Offset: '0xc'
     Size: '0xc'
     Type: char
   ClassSize: '0x18'
 RowboatLiveryByWeight:
   Attributes:
-  - Name: pad0x20_G4BUQ[0x20]
+  - Name: pad0x20_PGFFI[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
@@ -132,7 +132,7 @@ RowboatLiveryByWeight:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_T5LCC[0x4]
+  - Name: pad0x4_XJ2DS[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -162,7 +162,7 @@ RowboatMountStateTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_GVWZU[0x3]
+  - Name: pad0x3_GVDJH[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -216,7 +216,7 @@ ScrapeableDamageSpeedEntry:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_S0Y27[0x4]
+  - Name: pad0x4_4Q8ET[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -235,7 +235,7 @@ WatercraftDespawnTelemetryEvent:
     Offset: '0x1c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_CH3I9[0x3]
+  - Name: pad0x3_QLRKO[0x3]
     Offset: '0x1d'
     Size: '0x3'
     Type: char
@@ -250,7 +250,7 @@ WatercraftRolloverCorrector:
     Offset: '0x4'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_GCOQL[0x4]
+  - Name: pad0x4_LM0UU[0x4]
     Offset: '0x8'
     Size: '0x4'
     Type: char

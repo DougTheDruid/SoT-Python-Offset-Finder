@@ -6,7 +6,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x20_8QLUL[0x20]",
+        "Name": "pad0x20_VI99R[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x150"
@@ -20,7 +20,7 @@
     "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "pad0x128_QQ92M[0x128]",
+        "Name": "pad0x128_ITUY9[0x128]",
         "Type": "char",
         "Size": "0x128",
         "Offset": "0x170"
@@ -34,7 +34,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_ZS4JV[0x8]",
+        "Name": "pad0x8_S8SRF[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x298"
@@ -62,7 +62,7 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "pad0x70_OZ1R0[0x70]",
+        "Name": "pad0x70_S7U3J[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x170"

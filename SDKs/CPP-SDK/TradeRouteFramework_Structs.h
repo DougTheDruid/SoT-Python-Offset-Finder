@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct QuestVariableTradeRouteData
 {
 public:
-	char                                                         pad0x30_NM78H[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_01HZL[0x30];                               // 0x0(0x30)
 };
 
 
@@ -19,9 +19,9 @@ struct TradeRouteMapping
 {
 public:
 	byte                                                         Filter;                                            // 0x0(0x1)
-	char                                                         pad0x3_OY53F[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_TPO8S[0x3];                                 // 0x1(0x3)
 	struct IslandSelectionType                                   StartIsland;                                       // 0x4(0x8)
-	char                                                         pad0x4_DZT3R[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_KH2RJ[0x4];                                 // 0xc(0x4)
 	class UClass*                                                DifficultyBand;                                    // 0x10(0x8)
 	struct StringAssetReference                                  TradeRouteReference;                               // 0x18(0x10)
 };
@@ -31,7 +31,7 @@ public:
 struct TradeRouteMappingFilterQuestVariable
 {
 public:
-	char                                                         pad0x30_5W507[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_GGTKQ[0x30];                               // 0x0(0x30)
 };
 
 

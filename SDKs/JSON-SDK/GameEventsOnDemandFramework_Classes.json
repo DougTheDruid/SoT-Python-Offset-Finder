@@ -1,9 +1,9 @@
 {
   "GameEventAvailabilityParamsDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x98",
+    "FullSize": "0x90",
     "InheritedSize": "0x28",
-    "ClassSize": "0x70",
+    "ClassSize": "0x68",
     "Attributes": [
       {
         "Name": "MatchmakingCooldownRanges",
@@ -42,7 +42,7 @@
         "Offset": "0x81"
       },
       {
-        "Name": "pad0x2_9OWQG[0x2]",
+        "Name": "pad0x2_OJRL4[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x82"
@@ -54,110 +54,36 @@
         "Offset": "0x84"
       },
       {
-        "Name": "SendCrewToLoserTunnelFeature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
+        "Name": "SendCrewToLoserTunnelOnShipSinking",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x4_TOD0N[0x4]",
+        "Name": "ShouldCompletedBannersPlayAudio",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x89"
+      },
+      {
+        "Name": "pad0x2_0QZOZ[0x2]",
         "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x8a"
+      },
+      {
+        "Name": "ActiveEventExclusionRadiusFromIslandDistanceRadiusModifier",
+        "Type": "float",
         "Size": "0x4",
-        "Offset": "0x94"
-      }
-    ]
-  },
-  "GameEventOnDemandAnnouncementComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x1b0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0xe8",
-    "Attributes": [
-      {
-        "Name": "FeatureFlag",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "ShouldFireBannerForAnyCrewEnteringIslandVicinity",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xd4"
-      },
-      {
-        "Name": "ShouldFireGameEventCompletedBannerForEmergentCrews",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xd5"
-      },
-      {
-        "Name": "ResetCachedCrewsTrigger",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xd6"
-      },
-      {
-        "Name": "pad0x1_KWEB6[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0xd7"
-      },
-      {
-        "Name": "IslandName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "CurrentTrackedPawns",
-        "Type": "TArray<Weakclass CurrentTrackedPawns>",
-        "Size": "0x10",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "OnDemandParticipatingCrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "TrackedShipCrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "GameEventType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "pad0x74_FJUS4[0x74]",
-        "Type": "char",
-        "Size": "0x74",
-        "Offset": "0x118"
-      },
-      {
-        "Name": "TemporaryBannerTag",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x18c"
-      },
-      {
-        "Name": "pad0x1c_F9OOI[0x1c]",
-        "Type": "char",
-        "Size": "0x1c",
-        "Offset": "0x194"
+        "Offset": "0x8c"
       }
     ]
   },
   "GameEventOnDemandAvailabilityHandler": {
     "Super": "Object",
-    "FullSize": "0x108",
+    "FullSize": "0x128",
     "InheritedSize": "0x28",
-    "ClassSize": "0xe0",
+    "ClassSize": "0x100",
     "Attributes": [
       {
         "Name": "AvailabilityParamsAsset",
@@ -184,21 +110,33 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0xc0_FOM2Z[0xc0]",
+        "Name": "pad0x10_FI68B[0x10]",
         "Type": "char",
-        "Size": "0xc0",
+        "Size": "0x10",
         "Offset": "0x48"
+      },
+      {
+        "Name": "CompletedState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "pad0xcf_TNATZ[0xcf]",
+        "Type": "char",
+        "Size": "0xcf",
+        "Offset": "0x59"
       }
     ]
   },
   "GameEventOnDemandAvailabilityStateTracker": {
     "Super": "Object",
-    "FullSize": "0x138",
+    "FullSize": "0x160",
     "InheritedSize": "0x28",
-    "ClassSize": "0x110",
+    "ClassSize": "0x138",
     "Attributes": [
       {
-        "Name": "pad0x88_W6BH5[0x88]",
+        "Name": "pad0x88_SIFU7[0x88]",
         "Type": "char",
         "Size": "0x88",
         "Offset": "0x28"
@@ -222,17 +160,17 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x60_0HCK6[0x60]",
+        "Name": "pad0x88_63GGU[0x88]",
         "Type": "char",
-        "Size": "0x60",
+        "Size": "0x88",
         "Offset": "0xd8"
       }
     ]
   },
   "GameEventOnDemandVoyageProposalDesc": {
     "Super": "VoyageProposalDesc",
-    "FullSize": "0x128",
-    "InheritedSize": "0x128",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -271,7 +209,7 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x90_9YLEL[0x90]",
+        "Name": "pad0x90_OD6PM[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x98"
@@ -280,23 +218,10 @@
   },
   "WaitForGameEventOnDemandToCompleteStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x88",
+    "FullSize": "0x80",
     "InheritedSize": "0x80",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DeactivationMeansCompletion",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "pad0x7_AF8H6[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x81"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

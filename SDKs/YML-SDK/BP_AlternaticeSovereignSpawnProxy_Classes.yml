@@ -2,10 +2,14 @@
 # https://github.com/DougTheDruid
 BP_AlternaticeSovereignSpawnProxy_C:
   Attributes:
-  - Name: pad0x10_TY5UR[0x10]
+  - Name: None
     Offset: '0x3c8'
-    Size: '0x10'
-    Type: char
+    Size: '0x8'
+    Type: class PhasedActorComponent*
+  - Name: None
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: class SceneComponent*
   ClassSize: '0x10'
   FullSize: '0x3d8'
   InheritedSize: '0x3c8'

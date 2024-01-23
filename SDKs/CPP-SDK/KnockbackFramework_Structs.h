@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct KnockbackableInfo
 {
 public:
-	char                                                         pad0x20_PJE64[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_0PX2T[0x20];                               // 0x0(0x20)
 };
 
 

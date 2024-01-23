@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class ServiceProviderGameState: public GameState
 {
 public:
-	char                                                         pad0x120_BUIAN[0x120];                             // 0x420(0x120)
+	char                                                         pad0x120_8G5XD[0x120];                             // 0x420(0x120)
 };
 
 

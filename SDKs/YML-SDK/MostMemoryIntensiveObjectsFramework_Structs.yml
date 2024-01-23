@@ -11,13 +11,28 @@ MMICategoryData:
     Size: '0x10'
     Type: TArray<struct MMIItemData>
   ClassSize: '0x18'
+MMIDebugCommandInfo:
+  Attributes:
+  - Name: CommandMenuPath
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: DisplayName
+    Offset: '0x10'
+    Size: '0x10'
+    Type: struct FString
+  - Name: Command
+    Offset: '0x20'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x30'
 MMIItemData:
   Attributes:
   - Name: ExclusiveMemorySize
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_9X22N[0x4]
+  - Name: pad0x4_BOXK6[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char

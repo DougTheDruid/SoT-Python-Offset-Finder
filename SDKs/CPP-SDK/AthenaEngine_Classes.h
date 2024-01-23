@@ -38,7 +38,7 @@ public:
 class BoxedRpcDispatcherComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_M09Y7[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_XURKK[0x8];                                 // 0xc8(0x8)
 };
 
 
@@ -48,7 +48,7 @@ class DynamicColourPointLightComponent: public PointLightComponent
 public:
 	struct RuntimeFloatCurve                                     ActivationCurve;                                   // 0x4a8(0x80)
 	struct RuntimeFloatCurve                                     DeactivationCurve;                                 // 0x528(0x80)
-	char                                                         pad0x38_AEFX1[0x38];                               // 0x5a8(0x38)
+	char                                                         pad0x38_CY87D[0x38];                               // 0x5a8(0x38)
 };
 
 
@@ -70,7 +70,7 @@ public:
 class NestedWorldRootDataAsset: public DataAsset
 {
 public:
-	char                                                         pad0x10_DTFKS[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_47DR7[0x10];                               // 0x28(0x10)
 };
 
 
@@ -109,9 +109,9 @@ class PrimitiveCollisionExtentAdjustOverTimeComponent: public ActorComponent
 {
 public:
 	float                                                        DelayBeforeExtentAdjustment;                       // 0xc8(0x4)
-	char                                                         pad0x2c_P5VOF[0x2c];                               // 0xcc(0x2c)
+	char                                                         pad0x2c_PB9ID[0x2c];                               // 0xcc(0x2c)
 	class World*                                                 CachedWorld;                                       // 0xf8(0x8)
-	char                                                         pad0x8_719OQ[0x8];                                 // 0x100(0x8)
+	char                                                         pad0x8_RQ9BK[0x8];                                 // 0x100(0x8)
 };
 
 
@@ -120,16 +120,16 @@ class BoxCollisionExtentAdjustOverTimeComponent: public PrimitiveCollisionExtent
 {
 public:
 	bool                                                         ShouldAdjustBoxExtentX;                            // 0x108(0x1)
-	char                                                         pad0x3_CRW5Y[0x3];                                 // 0x109(0x3)
+	char                                                         pad0x3_UCVTZ[0x3];                                 // 0x109(0x3)
 	float                                                        PostAdjustmentBoxExtentX;                          // 0x10c(0x4)
 	bool                                                         ShouldAdjustBoxExtentY;                            // 0x110(0x1)
-	char                                                         pad0x3_MV410[0x3];                                 // 0x111(0x3)
+	char                                                         pad0x3_42ID5[0x3];                                 // 0x111(0x3)
 	float                                                        PostAdjustmentBoxExtentY;                          // 0x114(0x4)
 	bool                                                         ShouldAdjustBoxExtentZ;                            // 0x118(0x1)
-	char                                                         pad0x3_JADSX[0x3];                                 // 0x119(0x3)
+	char                                                         pad0x3_IAA3Y[0x3];                                 // 0x119(0x3)
 	float                                                        PostAdjustmentBoxExtentZ;                          // 0x11c(0x4)
 	struct Vector                                                ServerSizeScale;                                   // 0x120(0xc)
-	char                                                         pad0x4_QFV82[0x4];                                 // 0x12c(0x4)
+	char                                                         pad0x4_LE9GX[0x4];                                 // 0x12c(0x4)
 	class BoxComponent*                                          BoxCollisionToAdjust;                              // 0x130(0x8)
 };
 
@@ -139,10 +139,10 @@ class SphereCollisionExtentAdjustOverTimeComponent: public PrimitiveCollisionExt
 {
 public:
 	bool                                                         ShouldAdjustSphereRadius;                          // 0x108(0x1)
-	char                                                         pad0x3_DVUOX[0x3];                                 // 0x109(0x3)
+	char                                                         pad0x3_GGTC4[0x3];                                 // 0x109(0x3)
 	float                                                        PostAdjustmentSphereRadius;                        // 0x10c(0x4)
 	float                                                        ServerSizeScale;                                   // 0x110(0x4)
-	char                                                         pad0x4_VPIX8[0x4];                                 // 0x114(0x4)
+	char                                                         pad0x4_UWLX5[0x4];                                 // 0x114(0x4)
 	class SphereComponent*                                       SphereCollisionToAdjust;                           // 0x118(0x8)
 };
 
@@ -163,13 +163,13 @@ public:
 	float                                                        CloseProximityRadius;                              // 0xd8(0x4)
 	bool                                                         Use2DDistanceForCloseProximityRadius;              // 0xdc(0x1)
 	bool                                                         WhenInCloseProximityKeepLastYaw;                   // 0xdd(0x1)
-	char                                                         pad0x2_5OLRJ[0x2];                                 // 0xde(0x2)
+	char                                                         pad0x2_1BXPI[0x2];                                 // 0xde(0x2)
 	float                                                        RotationSpeed;                                     // 0xe0(0x4)
 	bool                                                         PreventPitchModification;                          // 0xe4(0x1)
-	char                                                         pad0x3_I81NN[0x3];                                 // 0xe5(0x3)
+	char                                                         pad0x3_WKF5M[0x3];                                 // 0xe5(0x3)
 	float                                                        MaxPitch;                                          // 0xe8(0x4)
 	float                                                        CloseProximityYawRotation;                         // 0xec(0x4)
-	char                                                         pad0x8_ETGRN[0x8];                                 // 0xf0(0x8)
+	char                                                         pad0x8_AHC56[0x8];                                 // 0xf0(0x8)
 };
 
 
@@ -192,7 +192,7 @@ class SkeletalMeshAggregateTickComponent: public ActorComponent
 {
 public:
 	class SkeletalMeshComponent*                                 Mesh;                                              // 0xc8(0x8)
-	char                                                         pad0x28_CFVQH[0x28];                               // 0xd0(0x28)
+	char                                                         pad0x28_WUKS9[0x28];                               // 0xd0(0x28)
 };
 
 
@@ -201,7 +201,7 @@ class StringToAssetClassMap: public DataAsset
 {
 public:
 	TArray<struct StringAssetClassPair>                          StringAssetClassPairs;                             // 0x28(0x10)
-	char                                                         pad0x18_EWVFT[0x18];                               // 0x38(0x18)
+	char                                                         pad0x18_5CBX5[0x18];                               // 0x38(0x18)
 };
 
 

@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class AnimSequencerInstance: public AnimInstance
 {
 public:
-	char                                                         pad0x1a0_FOROV[0x1a0];                             // 0x440(0x1a0)
+	char                                                         pad0x1a0_JWL7Y[0x1a0];                             // 0x440(0x1a0)
 };
 
 

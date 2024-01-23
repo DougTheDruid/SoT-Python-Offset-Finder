@@ -10,10 +10,10 @@ namespace DougsSDKDumper
 class WwiseAudioSettings: public Object
 {
 public:
-	char                                                         pad0xc0_GKHAJ[0xc0];                               // 0x28(0xc0)
+	char                                                         pad0xc0_CR149[0xc0];                               // 0x28(0xc0)
 	struct WwisePlatformMappings                                 PlatformMappings;                                  // 0xe8(0x20)
 	struct WwiseAudioReverbPresets                               ReverbPresetSettings;                              // 0x108(0x64)
-	char                                                         pad0x4_5SLWN[0x4];                                 // 0x16c(0x4)
+	char                                                         pad0x4_9P8W1[0x4];                                 // 0x16c(0x4)
 	struct StringAssetReference                                  WwiseCoreAssetsPath;                               // 0x170(0x10)
 	struct DirectoryPath                                         WwiseSoundbanksRoot;                               // 0x180(0x10)
 	struct DirectoryPath                                         WwiseStreamedFilesRoot;                            // 0x190(0x10)
@@ -23,7 +23,7 @@ public:
 	struct FString                                               SinkSharesetName;                                  // 0x1d0(0x10)
 	struct WwiseNetworkRelationship                              NetworkRelationship;                               // 0x1e0(0x18)
 	class WwiseCoreAssets*                                       WwiseCoreAssets;                                   // 0x200(0x8)
-	char                                                         pad0x58_0XJTQ[0x58];                               // 0x208(0x58)
+	char                                                         pad0x58_9IOM8[0x58];                               // 0x208(0x58)
 };
 
 

@@ -17,7 +17,7 @@ public:
 class RemoteEmergentVoyageService: public Object
 {
 public:
-	char                                                         pad0x8_AKQSO[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_E49C5[0x8];                                 // 0x28(0x8)
 };
 
 

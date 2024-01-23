@@ -10,7 +10,8 @@ namespace DougsSDKDumper
 class BP_AlternaticeSovereignSpawnProxy_C: public Actor
 {
 public:
-	char                                                         pad0x10_TY5UR[0x10];                               // 0x3c8(0x10)
+	class PhasedActorComponent*                                  None;                                              // 0x3c8(0x8)
+	class SceneComponent*                                        None;                                              // 0x3d0(0x8)
 };
 
 

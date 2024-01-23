@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 MaterialShaderQualitySettings:
   Attributes:
-  - Name: pad0x58_OGGHL[0x58]
+  - Name: pad0x58_SP87K[0x58]
     Offset: '0x28'
     Size: '0x58'
     Type: char
@@ -16,7 +16,7 @@ ShaderPlatformQualitySettings:
     Offset: '0x28'
     Size: '0x4'
     Type: struct MaterialQualityOverrides
-  - Name: pad0xc_GQM3Q[0xc]
+  - Name: pad0xc_78ZY3[0xc]
     Offset: '0x2c'
     Size: '0xc'
     Type: char

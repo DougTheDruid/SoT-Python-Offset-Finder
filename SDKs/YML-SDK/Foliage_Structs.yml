@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ConsoleCommands:
   Attributes:
-  - Name: pad0x1_T61HC[0x1]
+  - Name: pad0x1_FSBK1[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -21,7 +21,7 @@ FoliageTypeObject:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_4LW4M[0x7]
+  - Name: pad0x7_4O1S8[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -36,7 +36,7 @@ ProceduralFoliageInstance:
     Offset: '0x0'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_AUQYD[0x4]
+  - Name: pad0x4_O3K6B[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -56,7 +56,7 @@ ProceduralFoliageInstance:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_0LFON[0x4]
+  - Name: pad0x4_HICPW[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -64,7 +64,7 @@ ProceduralFoliageInstance:
     Offset: '0x38'
     Size: '0x8'
     Type: class FoliageType_InstancedStaticMesh*
-  - Name: pad0x20_07HT4[0x20]
+  - Name: pad0x20_Q7HID[0x20]
     Offset: '0x40'
     Size: '0x20'
     Type: char

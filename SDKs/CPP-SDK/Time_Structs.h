@@ -27,7 +27,7 @@ public:
 struct ReplicatedDateTime
 {
 public:
-	char                                                         pad0x8_WWA4S[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_54KS9[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -44,7 +44,7 @@ public:
 struct ReplicatedTimespan
 {
 public:
-	char                                                         pad0x8_SG4ZC[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_6ZAMA[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -52,7 +52,7 @@ public:
 struct EventTimeServiceMigrated
 {
 public:
-	char                                                         pad0x1_7OJF6[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_2E92A[0x1];                                 // 0x0(0x1)
 };
 
 

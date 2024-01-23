@@ -1,343 +1,295 @@
 {
   "BP_LargeShipTemplate_C": {
     "Super": "Ship",
-    "FullSize": "0x1df0",
-    "InheritedSize": "0x1880",
+    "FullSize": "0x1e30",
+    "InheritedSize": "0x18c0",
     "ClassSize": "0x570",
     "Attributes": [
       {
         "Name": "UberGraphFrame",
         "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
-        "Offset": "0x1880"
+        "Offset": "0x18c0"
       },
       {
         "Name": "TeleportLocation_WakeUp",
         "Type": "class TeleportLocationComponent*",
         "Size": "0x8",
-        "Offset": "0x1888"
+        "Offset": "0x18c8"
       },
       {
         "Name": "ShipRowboatPersistence",
         "Type": "class ShipRowboatPersistenceComponent*",
         "Size": "0x8",
-        "Offset": "0x1890"
+        "Offset": "0x18d0"
       },
       {
         "Name": "HarpoonItemLocation1",
         "Type": "class HarpoonItemLocationComponent*",
         "Size": "0x8",
-        "Offset": "0x1898"
+        "Offset": "0x18d8"
       },
       {
         "Name": "HarpoonItemLocation",
         "Type": "class HarpoonItemLocationComponent*",
         "Size": "0x8",
-        "Offset": "0x18a0"
+        "Offset": "0x18e0"
       },
       {
         "Name": "FactionGBowParticles",
         "Type": "class FactionParticleComponent*",
         "Size": "0x8",
-        "Offset": "0x18a8"
+        "Offset": "0x18e8"
       },
       {
         "Name": "FactionBBowParticles",
         "Type": "class FactionParticleComponent*",
         "Size": "0x8",
-        "Offset": "0x18b0"
+        "Offset": "0x18f0"
       },
       {
         "Name": "VFX_SplashProbe_Both_Splashes_Details",
         "Type": "class SplashProbeVFXComponent*",
         "Size": "0x8",
-        "Offset": "0x18b8"
+        "Offset": "0x18f8"
       },
       {
         "Name": "vfx_playerships_bubbles_rectangle_surface_Huge_Bottom",
         "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x18c0"
+        "Offset": "0x1900"
       },
       {
         "Name": "vfx_playerships_bubbles_rectangle_surface_Huge_Top",
         "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x18c8"
+        "Offset": "0x1908"
       },
       {
         "Name": "VFX_SplashProbe_Both_Splashes_Second",
         "Type": "class SplashProbeVFXComponent*",
         "Size": "0x8",
-        "Offset": "0x18d0"
+        "Offset": "0x1910"
       },
       {
         "Name": "VFX_SplashProbe_OnShip_Splashes",
         "Type": "class SplashProbeVFXComponent*",
         "Size": "0x8",
-        "Offset": "0x18d8"
+        "Offset": "0x1918"
       },
       {
         "Name": "VFX_SplashProbe_Offship_Splashes",
         "Type": "class SplashProbeVFXComponent*",
         "Size": "0x8",
-        "Offset": "0x18e0"
+        "Offset": "0x1920"
       },
       {
         "Name": "VFX_SplashProbe_Underwater",
         "Type": "class SplashProbeVFXComponent*",
         "Size": "0x8",
-        "Offset": "0x18e8"
+        "Offset": "0x1928"
       },
       {
         "Name": "vfx_playerships_bubbles_rectangle_S_Local",
         "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x18f0"
+        "Offset": "0x1930"
       },
       {
         "Name": "vfx_playerships_bubbles_rectangle_S_Local3",
         "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x18f8"
+        "Offset": "0x1938"
       },
       {
         "Name": "vfx_playerships_bubbles_rectangle_S_Local2",
         "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x1900"
+        "Offset": "0x1940"
       },
       {
         "Name": "vfx_playerships_bubbles_cannon_Local8",
         "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x1908"
+        "Offset": "0x1948"
       },
       {
         "Name": "vfx_playerships_bubbles_cannon_Local6",
         "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x1910"
+        "Offset": "0x1950"
       },
       {
         "Name": "vfx_playerships_bubbles_cannon_Local7",
         "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x1918"
+        "Offset": "0x1958"
       },
       {
         "Name": "vfx_playerships_bubbles_cannon_Local5",
         "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x1920"
+        "Offset": "0x1960"
       },
       {
         "Name": "vfx_playerships_bubbles_cannon_Local2",
         "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x1928"
+        "Offset": "0x1968"
       },
       {
         "Name": "vfx_playerships_bubbles_cannon_Local4",
         "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x1930"
+        "Offset": "0x1970"
       },
       {
         "Name": "vfx_playerships_bubbles_cannon_Local3",
         "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x1938"
+        "Offset": "0x1978"
       },
       {
         "Name": "vfx_playerships_bubbles_captain_Local",
         "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x1940"
+        "Offset": "0x1980"
       },
       {
         "Name": "vfx_playerships_bubbles_cannon_Local1",
         "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x1948"
+        "Offset": "0x1988"
       },
       {
         "Name": "VFX_Scene",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x1950"
+        "Offset": "0x1990"
       },
       {
         "Name": "ShipFactionCustomisation",
         "Type": "class ShipFactionCustomisation*",
         "Size": "0x8",
-        "Offset": "0x1958"
+        "Offset": "0x1998"
       },
       {
         "Name": "ShipTrinketMountpointManagerComponent_Large",
         "Type": "blueprintgeneratedclass BP_ShipTrinketMountpointManagerComponent_Large_C*",
         "Size": "0x8",
-        "Offset": "0x1960"
+        "Offset": "0x19a0"
       },
       {
         "Name": "CaptainsLog",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1968"
+        "Offset": "0x19a8"
       },
       {
         "Name": "ShipsCrest",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1970"
+        "Offset": "0x19b0"
       },
       {
         "Name": "Rugs",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1978"
+        "Offset": "0x19b8"
       },
       {
         "Name": "Drapes",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1980"
+        "Offset": "0x19c0"
       },
       {
         "Name": "Bed",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1988"
+        "Offset": "0x19c8"
       },
       {
         "Name": "Chandelier",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1990"
+        "Offset": "0x19d0"
       },
       {
         "Name": "Curtains",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1998"
+        "Offset": "0x19d8"
       },
       {
         "Name": "Chair",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x19a0"
+        "Offset": "0x19e0"
       },
       {
         "Name": "VoyageTable",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x19a8"
+        "Offset": "0x19e8"
       },
       {
         "Name": "ShipStorageJettison",
         "Type": "class ShipStorageJettisonComponent*",
         "Size": "0x8",
-        "Offset": "0x19b0"
+        "Offset": "0x19f0"
       },
       {
         "Name": "Seagull3",
         "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x19b8"
+        "Offset": "0x19f8"
       },
       {
         "Name": "Seagull2",
         "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x19c0"
+        "Offset": "0x1a00"
       },
       {
         "Name": "SeagullManager",
         "Type": "class SeagullManagerComponent*",
         "Size": "0x8",
-        "Offset": "0x19c8"
+        "Offset": "0x1a08"
       },
       {
         "Name": "Seagull1",
         "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x19d0"
+        "Offset": "0x1a10"
       },
       {
         "Name": "Rat3",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x19d8"
+        "Offset": "0x1a18"
       },
       {
         "Name": "Rat2",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x19e0"
+        "Offset": "0x1a20"
       },
       {
         "Name": "Rat1",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x19e8"
+        "Offset": "0x1a28"
       },
       {
         "Name": "BP_BedComponent",
         "Type": "blueprintgeneratedclass BP_BedComponent_C*",
         "Size": "0x8",
-        "Offset": "0x19f0"
+        "Offset": "0x1a30"
       },
       {
         "Name": "RatManager",
         "Type": "class RatManagerComponent*",
-        "Size": "0x8",
-        "Offset": "0x19f8"
-      },
-      {
-        "Name": "Seat_BottomDeckBarrel",
-        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
-        "Size": "0x8",
-        "Offset": "0x1a00"
-      },
-      {
-        "Name": "Seat_BottomDeckBarrel",
-        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
-        "Size": "0x8",
-        "Offset": "0x1a08"
-      },
-      {
-        "Name": "Seat_BottomDeckBarrel",
-        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
-        "Size": "0x8",
-        "Offset": "0x1a10"
-      },
-      {
-        "Name": "Seat_Cabin_Chest",
-        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
-        "Size": "0x8",
-        "Offset": "0x1a18"
-      },
-      {
-        "Name": "Seat_Platform_Starboard",
-        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
-        "Size": "0x8",
-        "Offset": "0x1a20"
-      },
-      {
-        "Name": "Seat_Platform_Port",
-        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
-        "Size": "0x8",
-        "Offset": "0x1a28"
-      },
-      {
-        "Name": "Seat_Bannister_Bow",
-        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
-        "Size": "0x8",
-        "Offset": "0x1a30"
-      },
-      {
-        "Name": "Seat_Bannister_Bow",
-        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
         "Size": "0x8",
         "Offset": "0x1a38"
       },
@@ -348,718 +300,766 @@
         "Offset": "0x1a40"
       },
       {
-        "Name": "Seat_MapTable_Cooking",
+        "Name": "Seat_BottomDeckBarrel",
         "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
         "Size": "0x8",
         "Offset": "0x1a48"
       },
       {
-        "Name": "Seat_MapTable",
+        "Name": "Seat_BottomDeckBarrel",
         "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
         "Size": "0x8",
         "Offset": "0x1a50"
       },
       {
-        "Name": "Seat_Balcony_Rear_Starboard",
+        "Name": "Seat_Cabin_Chest",
         "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
         "Size": "0x8",
         "Offset": "0x1a58"
       },
       {
-        "Name": "Seat_Balcony_Rear_Port",
+        "Name": "Seat_Platform_Starboard",
         "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
         "Size": "0x8",
         "Offset": "0x1a60"
       },
       {
-        "Name": "Seat_Plank_Port",
+        "Name": "Seat_Platform_Port",
         "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
         "Size": "0x8",
         "Offset": "0x1a68"
       },
       {
-        "Name": "Seat_Hatch",
+        "Name": "Seat_Bannister_Bow",
         "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
         "Size": "0x8",
         "Offset": "0x1a70"
       },
       {
-        "Name": "Seat_Plank_Starboard",
+        "Name": "Seat_Bannister_Bow",
         "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
         "Size": "0x8",
         "Offset": "0x1a78"
       },
       {
-        "Name": "Seat_CaptainsChair",
+        "Name": "Seat_BottomDeckBarrel",
         "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
         "Size": "0x8",
         "Offset": "0x1a80"
       },
       {
+        "Name": "Seat_MapTable_Cooking",
+        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
+        "Size": "0x8",
+        "Offset": "0x1a88"
+      },
+      {
+        "Name": "Seat_MapTable",
+        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
+        "Size": "0x8",
+        "Offset": "0x1a90"
+      },
+      {
+        "Name": "Seat_Balcony_Rear_Starboard",
+        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
+        "Size": "0x8",
+        "Offset": "0x1a98"
+      },
+      {
+        "Name": "Seat_Balcony_Rear_Port",
+        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
+        "Size": "0x8",
+        "Offset": "0x1aa0"
+      },
+      {
+        "Name": "Seat_Plank_Port",
+        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
+        "Size": "0x8",
+        "Offset": "0x1aa8"
+      },
+      {
+        "Name": "Seat_Hatch",
+        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
+        "Size": "0x8",
+        "Offset": "0x1ab0"
+      },
+      {
+        "Name": "Seat_Plank_Starboard",
+        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
+        "Size": "0x8",
+        "Offset": "0x1ab8"
+      },
+      {
+        "Name": "Seat_CaptainsChair",
+        "Type": "blueprintgeneratedclass BP_SeatComponent_C*",
+        "Size": "0x8",
+        "Offset": "0x1ac0"
+      },
+      {
         "Name": "AIRegion",
         "Type": "class AIRegionComponent*",
         "Size": "0x8",
-        "Offset": "0x1a88"
+        "Offset": "0x1ac8"
       },
       {
         "Name": "NamedPoints",
         "Type": "class NamedPointsComponent*",
         "Size": "0x8",
-        "Offset": "0x1a90"
+        "Offset": "0x1ad0"
       },
       {
         "Name": "BP_ShipStorageBarrelTwo6",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1a98"
+        "Offset": "0x1ad8"
       },
       {
         "Name": "BP_ShipStorageBarrelThree4",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1aa0"
+        "Offset": "0x1ae0"
       },
       {
         "Name": "BP_ShipStorageBarrelThree3",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1aa8"
+        "Offset": "0x1ae8"
       },
       {
         "Name": "BP_ShipStorageBarrelTwo5",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1ab0"
+        "Offset": "0x1af0"
       },
       {
         "Name": "BP_ShipStorageBarrelTwo4",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1ab8"
+        "Offset": "0x1af8"
       },
       {
         "Name": "BP_ShipStorageBarrelTwo3",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1ac0"
+        "Offset": "0x1b00"
       },
       {
         "Name": "BP_ShipStorageBarrelTwo2",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1ac8"
+        "Offset": "0x1b08"
       },
       {
         "Name": "BP_ShipStorageBarrelTwo1",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1ad0"
+        "Offset": "0x1b10"
       },
       {
         "Name": "BP_ShipStorageBarrelTwo",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1ad8"
+        "Offset": "0x1b18"
       },
       {
         "Name": "BP_ShipStorageBarrelThree2",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1ae0"
+        "Offset": "0x1b20"
       },
       {
         "Name": "BP_ShipStorageBarrelThree1",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1ae8"
+        "Offset": "0x1b28"
       },
       {
         "Name": "BP_ShipStorageBarrelThree",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1af0"
+        "Offset": "0x1b30"
       },
       {
         "Name": "shp_galleon_ladder_gap_hits_01_a",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x1af8"
+        "Offset": "0x1b38"
       },
       {
         "Name": "shp_flag_hole_01_a",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x1b00"
+        "Offset": "0x1b40"
       },
       {
         "Name": "BP_EmissaryFlag",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b08"
+        "Offset": "0x1b48"
       },
       {
         "Name": "EmissaryFlotsamItemSpawner",
         "Type": "class EmissaryFlotsamItemSpawnComponent*",
         "Size": "0x8",
-        "Offset": "0x1b10"
+        "Offset": "0x1b50"
       },
       {
         "Name": "BP_LargeShip_CageLatch_03_a",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b18"
+        "Offset": "0x1b58"
       },
       {
         "Name": "BP_LargeShip_CageLatch_03_b",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b20"
+        "Offset": "0x1b60"
       },
       {
         "Name": "BP_WaterBarrel",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b28"
+        "Offset": "0x1b68"
       },
       {
         "Name": "BP_Shroudbreaker",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b30"
+        "Offset": "0x1b70"
       },
       {
         "Name": "BP_ShipPetChest",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b38"
+        "Offset": "0x1b78"
       },
       {
         "Name": "PetHangoutSpot",
         "Type": "class PetHangoutSpotComponent*",
         "Size": "0x8",
-        "Offset": "0x1b40"
+        "Offset": "0x1b80"
       },
       {
         "Name": "ShipStorageBarrelFood2",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b48"
+        "Offset": "0x1b88"
       },
       {
         "Name": "BP_HarpoonLauncher1",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b50"
+        "Offset": "0x1b90"
       },
       {
         "Name": "BP_HarpoonLauncher",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b58"
+        "Offset": "0x1b98"
       },
       {
         "Name": "RowboatMountpoint",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b60"
+        "Offset": "0x1ba0"
       },
       {
         "Name": "ShipTelemetry",
         "Type": "class ShipTelemetryComponent*",
         "Size": "0x8",
-        "Offset": "0x1b68"
+        "Offset": "0x1ba8"
       },
       {
         "Name": "BP_ShipVanityChest",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b70"
+        "Offset": "0x1bb0"
       },
       {
         "Name": "BP_Bell",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b78"
+        "Offset": "0x1bb8"
       },
       {
         "Name": "ShipStorageBarrel_LowestDeck17",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b80"
+        "Offset": "0x1bc0"
       },
       {
         "Name": "ShipStorageBarrel_LowestDeck16",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b88"
+        "Offset": "0x1bc8"
       },
       {
         "Name": "ShipStorageBarrel_LowestDeck15",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b90"
+        "Offset": "0x1bd0"
       },
       {
         "Name": "BP_WeaponsChest",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1b98"
+        "Offset": "0x1bd8"
       },
       {
         "Name": "BP_EquipmentChest",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1ba0"
+        "Offset": "0x1be0"
       },
       {
         "Name": "BP_ClothingChest",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1ba8"
+        "Offset": "0x1be8"
       },
       {
         "Name": "VFX_Drips",
         "Type": "class ShipPointParticleComponent*",
         "Size": "0x8",
-        "Offset": "0x1bb0"
+        "Offset": "0x1bf0"
       },
       {
         "Name": "RammingSpurZone",
         "Type": "class BoxComponent*",
         "Size": "0x8",
-        "Offset": "0x1bb8"
+        "Offset": "0x1bf8"
       },
       {
         "Name": "shp_shark_hits_01_a",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x1bc0"
+        "Offset": "0x1c00"
       },
       {
         "Name": "ShipStorageBarrel_Cannonball3",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1bc8"
+        "Offset": "0x1c08"
       },
       {
         "Name": "BP_AmmoChest",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1bd0"
+        "Offset": "0x1c10"
       },
       {
         "Name": "ShipStorageBarrel_Grog",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1bd8"
+        "Offset": "0x1c18"
       },
       {
         "Name": "ShipStorageBarrel_Food",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1be0"
+        "Offset": "0x1c20"
       },
       {
         "Name": "Lanterns",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1be8"
+        "Offset": "0x1c28"
       },
       {
         "Name": "TeleportLocation11_TopDeck_NearWheel",
         "Type": "class TeleportLocationComponent*",
         "Size": "0x8",
-        "Offset": "0x1bf0"
+        "Offset": "0x1c30"
       },
       {
         "Name": "TeleportLocation_09_BottomDeck_OutsideBrig",
         "Type": "class TeleportLocationComponent*",
         "Size": "0x8",
-        "Offset": "0x1bf8"
+        "Offset": "0x1c38"
       },
       {
         "Name": "TeleportLocation_08_BottomDeck_FacingStairs",
         "Type": "class TeleportLocationComponent*",
         "Size": "0x8",
-        "Offset": "0x1c00"
+        "Offset": "0x1c40"
       },
       {
         "Name": "TeleportLocation_07_MiddleDeck_BackOfShip",
         "Type": "class TeleportLocationComponent*",
         "Size": "0x8",
-        "Offset": "0x1c08"
+        "Offset": "0x1c48"
       },
       {
         "Name": "TeleportLocation_06_MiddleDeck_FrontOfShip",
         "Type": "class TeleportLocationComponent*",
         "Size": "0x8",
-        "Offset": "0x1c10"
+        "Offset": "0x1c50"
       },
       {
         "Name": "TeleportLocation_05_TopDeck_NearCannons",
         "Type": "class TeleportLocationComponent*",
         "Size": "0x8",
-        "Offset": "0x1c18"
+        "Offset": "0x1c58"
       },
       {
         "Name": "TeleportLocation_04_TopDeck_FrontOfShip",
         "Type": "class TeleportLocationComponent*",
         "Size": "0x8",
-        "Offset": "0x1c20"
+        "Offset": "0x1c60"
       },
       {
         "Name": "TeleportLocation_03_TopDeck_BackOfShip",
         "Type": "class TeleportLocationComponent*",
         "Size": "0x8",
-        "Offset": "0x1c28"
+        "Offset": "0x1c68"
       },
       {
         "Name": "TeleportLocation_02_TopDeck_NearLadder",
         "Type": "class TeleportLocationComponent*",
         "Size": "0x8",
-        "Offset": "0x1c30"
+        "Offset": "0x1c70"
       },
       {
         "Name": "TeleportLocation_01_CaptainsCabin",
         "Type": "class TeleportLocationComponent*",
         "Size": "0x8",
-        "Offset": "0x1c38"
+        "Offset": "0x1c78"
       },
       {
         "Name": "MainRigging",
         "Type": "class RiggingSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x1c40"
+        "Offset": "0x1c80"
       },
       {
         "Name": "ControlsRigging",
         "Type": "class RiggingSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x1c48"
+        "Offset": "0x1c88"
       },
       {
         "Name": "MapTable",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1c50"
+        "Offset": "0x1c90"
       },
       {
         "Name": "ShipsCompass",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1c58"
+        "Offset": "0x1c98"
       },
       {
         "Name": "Figurehead",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1c60"
+        "Offset": "0x1ca0"
       },
       {
         "Name": "ShipStorageBarrel_LowestDeck13",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1c68"
+        "Offset": "0x1ca8"
       },
       {
         "Name": "ShipStorageBarrel_BottomOfLowestStairs2",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1c70"
+        "Offset": "0x1cb0"
       },
       {
         "Name": "ShipStorageBarrel_BottomOfLowestStairs1",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1c78"
+        "Offset": "0x1cb8"
       },
       {
         "Name": "LowerDeckBarrels",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x1c80"
+        "Offset": "0x1cc0"
       },
       {
         "Name": "ShipStorageBarrel_NearLowerStairs5",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1c88"
+        "Offset": "0x1cc8"
       },
       {
         "Name": "ShipStorageBarrel_Cannonball2",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1c90"
+        "Offset": "0x1cd0"
       },
       {
         "Name": "ShipStorageBarrel_Cannonball1",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1c98"
+        "Offset": "0x1cd8"
       },
       {
         "Name": "ShipStorageBarrel_NearLowerStairs6",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1ca0"
+        "Offset": "0x1ce0"
       },
       {
         "Name": "ShipStorageBarrel_NearLowerStairs4",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1ca8"
+        "Offset": "0x1ce8"
       },
       {
         "Name": "ShipStorageBarrel_NearLowerStairs3",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1cb0"
+        "Offset": "0x1cf0"
       },
       {
         "Name": "ShipStorageBarrel_NearLowerStairs2",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1cb8"
+        "Offset": "0x1cf8"
       },
       {
         "Name": "ShipStorageBarrel_NearLowerStairs1",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1cc0"
+        "Offset": "0x1d00"
       },
       {
         "Name": "ShipStorageBarrel_BehindStairs5",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1cc8"
+        "Offset": "0x1d08"
       },
       {
         "Name": "CannonRight4",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1cd0"
+        "Offset": "0x1d10"
       },
       {
         "Name": "CannonRight3",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1cd8"
+        "Offset": "0x1d18"
       },
       {
         "Name": "CannonRight2",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1ce0"
+        "Offset": "0x1d20"
       },
       {
         "Name": "CannonRight1",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1ce8"
+        "Offset": "0x1d28"
       },
       {
         "Name": "CannonLeft4",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1cf0"
+        "Offset": "0x1d30"
       },
       {
         "Name": "CannonLeft3",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1cf8"
+        "Offset": "0x1d38"
       },
       {
         "Name": "CannonLeft2",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d00"
+        "Offset": "0x1d40"
       },
       {
         "Name": "CannonLeft1",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d08"
+        "Offset": "0x1d48"
       },
       {
         "Name": "LadderStbd",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d10"
+        "Offset": "0x1d50"
       },
       {
         "Name": "LadderPort",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d18"
+        "Offset": "0x1d58"
       },
       {
         "Name": "Hull",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d20"
+        "Offset": "0x1d60"
       },
       {
         "Name": "MastForeSailAngleRight",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d28"
+        "Offset": "0x1d68"
       },
       {
         "Name": "MastForeSailAngleLeft",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d30"
+        "Offset": "0x1d70"
       },
       {
         "Name": "MiddleDeckBarrels",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x1d38"
+        "Offset": "0x1d78"
       },
       {
         "Name": "MastMainSailAngleRight",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d40"
+        "Offset": "0x1d80"
       },
       {
         "Name": "MastMizzenSailAngleRight",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d48"
+        "Offset": "0x1d88"
       },
       {
         "Name": "MastMizzenSailAngleLeft",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d50"
+        "Offset": "0x1d90"
       },
       {
         "Name": "MastForeSailHoistRight",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d58"
+        "Offset": "0x1d98"
       },
       {
         "Name": "MastForeSailHoistLeft",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d60"
+        "Offset": "0x1da0"
       },
       {
         "Name": "MastMizzenSailHoistRight",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d68"
+        "Offset": "0x1da8"
       },
       {
         "Name": "MastMizzenSailHoistLeft",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d70"
+        "Offset": "0x1db0"
       },
       {
         "Name": "MastMainSailHoistRight",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d78"
+        "Offset": "0x1db8"
       },
       {
         "Name": "MastMainSailHoistLeft",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d80"
+        "Offset": "0x1dc0"
       },
       {
         "Name": "Capstan",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d88"
+        "Offset": "0x1dc8"
       },
       {
         "Name": "MastFore",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d90"
+        "Offset": "0x1dd0"
       },
       {
         "Name": "MastMain",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1d98"
+        "Offset": "0x1dd8"
       },
       {
         "Name": "MastMizzen",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1da0"
+        "Offset": "0x1de0"
       },
       {
         "Name": "Anchor",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1da8"
+        "Offset": "0x1de8"
       },
       {
         "Name": "Rudder",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1db0"
+        "Offset": "0x1df0"
       },
       {
         "Name": "Wheel",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1db8"
+        "Offset": "0x1df8"
       },
       {
         "Name": "AudioBoat",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1dc0"
+        "Offset": "0x1e00"
       },
       {
         "Name": "MastMainSailAngleLeft",
         "Type": "class ChildActorComponent*",
         "Size": "0x8",
-        "Offset": "0x1dc8"
+        "Offset": "0x1e08"
       },
       {
         "Name": "Timeline_Disable_Secondary__Direction_FB2965C04D191887E0A8AE9EBF5C5978",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x1dd0"
+        "Offset": "0x1e10"
       },
       {
-        "Name": "pad0x7_F0G4V[0x7]",
+        "Name": "pad0x7_1Q78A[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x1dd1"
+        "Offset": "0x1e11"
       },
       {
         "Name": "Timeline_Disable_Secondary",
         "Type": "class TimelineComponent*",
         "Size": "0x8",
-        "Offset": "0x1dd8"
+        "Offset": "0x1e18"
       },
       {
         "Name": "Timeline_DisableSplash1__Direction_6B41A1B3430D6C615C4EFEB03700C527",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x1de0"
+        "Offset": "0x1e20"
       },
       {
-        "Name": "pad0x7_RLGM4[0x7]",
+        "Name": "pad0x7_4FVQB[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x1de1"
+        "Offset": "0x1e21"
       },
       {
         "Name": "Timeline_DisableSplash1",
         "Type": "class TimelineComponent*",
         "Size": "0x8",
-        "Offset": "0x1de8"
+        "Offset": "0x1e28"
       }
     ]
   },

@@ -36,8 +36,8 @@ public:
 	struct LinearColor                                           Bronze Colour;                                     // 0x6b0(0x10)
 	struct LinearColor                                           TextColour;                                        // 0x6c0(0x10)
 	bool                                                         IconColourFollowsMedallion;                        // 0x6d0(0x1)
-	char                                                         pad0x7_GK65D[0x7];                                 // 0x6d1(0x7)
-	char                                                         pad0x60_A69IQ[0x60];                               // 0x6d8(0x60)
+	char                                                         pad0x7_72EPJ[0x7];                                 // 0x6d1(0x7)
+	char                                                         pad0x60_O44J4[0x60];                               // 0x6d8(0x60)
 };
 
 

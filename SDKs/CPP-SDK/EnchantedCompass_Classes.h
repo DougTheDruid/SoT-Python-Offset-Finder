@@ -16,13 +16,13 @@ public:
 	class Actor*                                                 SplinePathActor;                                   // 0x9e0(0x8)
 	class CurveFloat*                                            RotationSequenceCurve;                             // 0x9e8(0x8)
 	bool                                                         StartRotationSequenceCurve;                        // 0x9f0(0x1)
-	char                                                         pad0x3_WA3V2[0x3];                                 // 0x9f1(0x3)
+	char                                                         pad0x3_TWN9Q[0x3];                                 // 0x9f1(0x3)
 	float                                                        SplineDistanceOffset;                              // 0x9f4(0x4)
 	float                                                        TargetYawAngleBeforeRotationSequence;              // 0x9f8(0x4)
-	char                                                         pad0x4_E5OGS[0x4];                                 // 0x9fc(0x4)
+	char                                                         pad0x4_EEOSO[0x4];                                 // 0x9fc(0x4)
 	struct RotatingCompassAudioParams                            AudioParams;                                       // 0xa00(0x48)
 	float                                                        MaxSpeedToTriggerOneShotSfx;                       // 0xa48(0x4)
-	char                                                         pad0x14_VLWIK[0x14];                               // 0xa4c(0x14)
+	char                                                         pad0x14_QGA6O[0x14];                               // 0xa4c(0x14)
 };
 
 
@@ -33,9 +33,9 @@ public:
 	class WwiseEvent*                                            StartAnnouncingEvent;                              // 0xc8(0x8)
 	class WwiseEvent*                                            StopAnnouncingEvent;                               // 0xd0(0x8)
 	float                                                        MaxFrequencyDistanceSquared;                       // 0xd8(0x4)
-	char                                                         pad0x4_O6H3T[0x4];                                 // 0xdc(0x4)
+	char                                                         pad0x4_SIU4U[0x4];                                 // 0xdc(0x4)
 	bool                                                         IsSettingEnabled;                                  // 0x120(0x1)
-	char                                                         pad0xef_HR7HC[0xef];                               // 0x121(0xef)
+	char                                                         pad0xef_40OYE[0xef];                               // 0x121(0xef)
 };
 
 
@@ -47,7 +47,7 @@ public:
 	TArray<struct Guid>                                          LocationIds;                                       // 0x8e8(0x10)
 	class InventoryItemComponent*                                InventoryItem;                                     // 0x8f8(0x8)
 	class EnchantedCompassProximityAnnouncementComponent*        ProximityAnnouncementComponent;                    // 0x900(0x8)
-	char                                                         pad0x8_V2AVE[0x8];                                 // 0x908(0x8)
+	char                                                         pad0x8_EJ9R8[0x8];                                 // 0x908(0x8)
 };
 
 
@@ -62,7 +62,7 @@ public:
 class RotatingCompassSpinComponent: public CompassSpinComponent
 {
 public:
-	char                                                         pad0x8_KC3UI[0x8];                                 // 0x1e8(0x8)
+	char                                                         pad0x8_LSCPT[0x8];                                 // 0x1e8(0x8)
 };
 
 
@@ -87,7 +87,7 @@ public:
 class TaleQuestMultiTargetCompassRemoveTrackedLocationStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x10_LCGSU[0x10];                               // 0x98(0x10)
+	char                                                         pad0x10_H62MS[0x10];                               // 0x98(0x10)
 };
 
 
@@ -103,7 +103,7 @@ public:
 class TaleQuestMultiTargetCompassService: public TaleQuestToolService
 {
 public:
-	char                                                         pad0x20_CQYBA[0x20];                               // 0x170(0x20)
+	char                                                         pad0x20_J1PDC[0x20];                               // 0x170(0x20)
 };
 
 
@@ -119,10 +119,10 @@ public:
 class TaleQuestRotatingCompassService: public TaleQuestService
 {
 public:
-	char                                                         pad0x18_T8SES[0x18];                               // 0x60(0x18)
+	char                                                         pad0x18_1QKVF[0x18];                               // 0x60(0x18)
 	class Actor*                                                 SplinePathActor;                                   // 0x78(0x8)
 	class RotatingCompass*                                       RotatingCompass;                                   // 0x80(0x8)
-	char                                                         pad0x98_7PDTP[0x98];                               // 0x88(0x98)
+	char                                                         pad0x98_Q9FI1[0x98];                               // 0x88(0x98)
 };
 
 
@@ -144,7 +144,7 @@ public:
 class TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x8_7ZG6J[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_W9Y9O[0x8];                                 // 0x98(0x8)
 };
 
 
@@ -160,7 +160,7 @@ public:
 class TaleQuestSetCompassTargetToTargetStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x60_4NFLE[0x60];                               // 0x98(0x60)
+	char                                                         pad0x60_SNAVL[0x60];                               // 0x98(0x60)
 };
 
 
@@ -169,7 +169,7 @@ class TaleQuestSetCompassTargetBaseStepDesc: public TaleQuestStepDesc
 {
 public:
 	byte                                                         TargetUpdateReason;                                // 0x80(0x1)
-	char                                                         pad0x7_TNYUI[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x7_KI9HP[0x7];                                 // 0x81(0x7)
 };
 
 

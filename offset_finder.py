@@ -70,6 +70,7 @@ if __name__ == '__main__':
 
         "Actor.rootComponent": get_offset(ENGINE, "Actor", "RootComponent"),
         "CameraCacheEntry.MinimalViewInfo": get_offset(ENGINE_STRUCT, "CameraCacheEntry", "POV"),
+        "CrewService.Crews": get_offset(ATHENA, "CrewService", "Crews"),
         "Crew.Size": get_size(ATHENA_STRUCT, "Crew"),
         "Crew.Players": get_offset(ATHENA_STRUCT, "Crew", "Players"),
         "GameInstance.LocalPlayers": get_offset(ENGINE, "GameInstance", "LocalPlayers"),

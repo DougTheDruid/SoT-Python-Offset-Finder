@@ -11,7 +11,7 @@ class EditableGameplayTagQuery: public Object
 {
 public:
 	struct FString                                               UserDescription;                                   // 0x28(0x10)
-	char                                                         pad0x10_D4976[0x10];                               // 0x38(0x10)
+	char                                                         pad0x10_2T5CB[0x10];                               // 0x38(0x10)
 	class EditableGameplayTagQueryExpression*                    RootExpression;                                    // 0x48(0x8)
 	struct GameplayTagQuery                                      TagQueryExportText_Helper;                         // 0x50(0x48)
 };
@@ -90,9 +90,9 @@ public:
 class GameplayTagsManager: public Object
 {
 public:
-	char                                                         pad0x118_9HNR0[0x118];                             // 0x28(0x118)
+	char                                                         pad0x118_P6O9W[0x118];                             // 0x28(0x118)
 	TArray<class DataTable*>                                     GameplayTagTables;                                 // 0x140(0x10)
-	char                                                         pad0x20_FGERZ[0x20];                               // 0x150(0x20)
+	char                                                         pad0x20_G4Q60[0x20];                               // 0x150(0x20)
 };
 
 

@@ -18,7 +18,7 @@ class TaleWorldLocationPopUpService: public TaleQuestService
 {
 public:
 	TArray<struct TaleWorldLocationPopUpServiceEntry>            SuppressedWorldLocationPopUpNearbyLocations;       // 0x60(0x10)
-	char                                                         pad0x20_LFV4A[0x20];                               // 0x70(0x20)
+	char                                                         pad0x20_A7RAX[0x20];                               // 0x70(0x20)
 };
 
 
@@ -34,7 +34,7 @@ class TaleAllowWorldLocationPopUpStepDesc: public TaleQuestStepDesc
 {
 public:
 	float                                                        MaxDistanceFromWorldLocationPopUp;                 // 0x80(0x4)
-	char                                                         pad0x4_4FI21[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_WWUZO[0x4];                                 // 0x84(0x4)
 	struct QuestVariableActor                                    NearbyActor;                                       // 0x88(0x30)
 };
 
@@ -51,7 +51,7 @@ class TalePreventWorldLocationPopUpStepDesc: public TaleQuestStepDesc
 {
 public:
 	bool                                                         DisableEntireIsland;                               // 0x80(0x1)
-	char                                                         pad0x3_QMKLJ[0x3];                                 // 0x81(0x3)
+	char                                                         pad0x3_ZVHLW[0x3];                                 // 0x81(0x3)
 	float                                                        MaxDistanceFromWorldLocationPopUp;                 // 0x84(0x4)
 	struct QuestVariableVector                                   NearbyLocation;                                    // 0x88(0x30)
 };
@@ -65,9 +65,9 @@ public:
 	class ShapeComponent*                                        LocationOverlapVolume;                             // 0x2e8(0x8)
 	float                                                        LocationCooldown;                                  // 0x2f0(0x4)
 	bool                                                         AlwaysShowPopUp;                                   // 0x2f4(0x1)
-	char                                                         pad0x63_G1XER[0x63];                               // 0x2f5(0x63)
+	char                                                         pad0x63_PEN0W[0x63];                               // 0x2f5(0x63)
 	TArray<struct Guid>                                          SuppressedCrews;                                   // 0x358(0x10)
-	char                                                         pad0x8_ZT65R[0x8];                                 // 0x368(0x8)
+	char                                                         pad0x8_BNM8Q[0x8];                                 // 0x368(0x8)
 };
 
 
@@ -93,9 +93,9 @@ public:
 class WorldLocationVisitorComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_QT4ML[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_T6K4R[0x8];                                 // 0xc8(0x8)
 	float                                                        RevisitCooldown;                                   // 0xd0(0x4)
-	char                                                         pad0x34_HHAVS[0x34];                               // 0xd4(0x34)
+	char                                                         pad0x34_CUP0K[0x34];                               // 0xd4(0x34)
 };
 
 

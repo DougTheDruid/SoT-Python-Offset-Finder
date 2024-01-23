@@ -13,7 +13,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_818H3[0x8]",
+        "Name": "pad0x8_TCALC[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -43,27 +43,27 @@
   },
   "GlobalDigSpotService": {
     "Super": "Actor",
-    "FullSize": "0x3e0",
+    "FullSize": "0x3e8",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x18",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x8_XGS0J[0x8]",
+        "Name": "pad0x10_69F3U[0x10]",
         "Type": "char",
-        "Size": "0x8",
+        "Size": "0x10",
         "Offset": "0x3c8"
       },
       {
         "Name": "Notification",
         "Type": "class PopUpMessageDesc*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3d8"
       },
       {
         "Name": "DigSpotDefinitions",
         "Type": "class GlobalDigSpotDefinitionList*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3e0"
       }
     ]
   },
@@ -88,7 +88,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_IV98T[0x18]",
+        "Name": "pad0x18_CRTGC[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x418"

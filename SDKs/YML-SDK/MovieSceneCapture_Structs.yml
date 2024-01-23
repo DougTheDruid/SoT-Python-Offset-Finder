@@ -9,7 +9,7 @@ CaptureProtocolID:
   ClassSize: '0x8'
 CaptureResolution:
   Attributes:
-  - Name: pad0x8_YXIWM[0x8]
+  - Name: pad0x8_T3PZ5[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -31,7 +31,7 @@ MovieSceneCaptureSettings:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_DM84O[0x7]
+  - Name: pad0x7_QQ3IA[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -51,7 +51,7 @@ MovieSceneCaptureSettings:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_67NY2[0x2]
+  - Name: pad0x2_4G6LJ[0x2]
     Offset: '0x32'
     Size: '0x2'
     Type: char
@@ -63,7 +63,7 @@ MovieSceneCaptureSettings:
     Offset: '0x38'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_6ISPU[0x3]
+  - Name: pad0x3_JR43A[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -103,7 +103,7 @@ MovieSceneCaptureSettings:
     Offset: '0x4e'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_QJLKS[0x1]
+  - Name: pad0x1_3QFN7[0x1]
     Offset: '0x4f'
     Size: '0x1'
     Type: char

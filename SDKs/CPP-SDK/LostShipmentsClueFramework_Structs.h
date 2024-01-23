@@ -13,7 +13,7 @@ public:
 	class UClass*                                                SiteType;                                          // 0x0(0x8)
 	class ClueSiteData*                                          SiteData;                                          // 0x8(0x8)
 	struct Vector                                                Location;                                          // 0x10(0xc)
-	char                                                         pad0x4_JDOR9[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_X38CJ[0x4];                                 // 0x1c(0x4)
 };
 
 
@@ -33,7 +33,7 @@ struct SeaClueCreationChoice
 public:
 	class UClass*                                                SiteType;                                          // 0x0(0x8)
 	class SeaClueCreator*                                        ClueCreator;                                       // 0x8(0x8)
-	char                                                         pad0x10_VDZLQ[0x10];                               // 0x10(0x10)
+	char                                                         pad0x10_TYDET[0x10];                               // 0x10(0x10)
 };
 
 
@@ -70,7 +70,7 @@ struct RestrictedClueType
 public:
 	class UClass*                                                Type;                                              // 0x0(0x8)
 	int                                                          Max;                                               // 0x8(0x4)
-	char                                                         pad0x4_GX4LN[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_ONI9E[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -80,7 +80,7 @@ struct ClueSiteLootRestriction
 public:
 	class UClass*                                                SiteType;                                          // 0x0(0x8)
 	int                                                          LootMax;                                           // 0x8(0x4)
-	char                                                         pad0x4_RG0T9[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_USEI6[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -106,7 +106,7 @@ public:
 struct QuestVariableClueSiteArray
 {
 public:
-	char                                                         pad0x30_PJGWB[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_O9VWF[0x30];                               // 0x0(0x30)
 };
 
 
@@ -114,7 +114,7 @@ public:
 struct QuestVariableClueSite
 {
 public:
-	char                                                         pad0x30_KL9RO[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_FSBIP[0x30];                               // 0x0(0x30)
 };
 
 
@@ -140,7 +140,7 @@ public:
 struct QuestVariableClueDescriptor
 {
 public:
-	char                                                         pad0x30_705IK[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_XOX5W[0x30];                               // 0x0(0x30)
 };
 
 
@@ -148,9 +148,9 @@ public:
 struct WeightedDebris
 {
 public:
-	char                                                         pad0x20_WJYQX[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_Z6OOR[0x20];                               // 0x0(0x20)
 	float                                                        Weight;                                            // 0x20(0x4)
-	char                                                         pad0x4_UD18A[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_5RREZ[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -160,7 +160,7 @@ struct EventClueObtained
 public:
 	class ClueDescriptor*                                        ObtainedClue;                                      // 0x0(0x8)
 	class UClass*                                                ObtainedSiteType;                                  // 0x8(0x8)
-	char                                                         pad0x10_QY801[0x10];                               // 0x10(0x10)
+	char                                                         pad0x10_NXG4J[0x10];                               // 0x10(0x10)
 };
 
 

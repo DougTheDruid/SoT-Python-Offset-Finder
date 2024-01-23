@@ -6,6 +6,22 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class DispatchUtilityVoyageTaleStep: public TaleQuestStep
+{
+public:
+	class DispatchUtilityVoyageTaleStepDesc*                     StepDesc;                                          // 0x98(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class DispatchUtilityVoyageTaleStepDesc: public TaleQuestStepDesc
+{
+public:
+	class VoyageDescDataAsset*                                   UtilityVoyageDesc;                                 // 0x80(0x8)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class UtilityVoyageServiceInterface: public Interface
 {
@@ -17,7 +33,7 @@ public:
 class UtilityVoyageService: public Object
 {
 public:
-	char                                                         pad0x90_5BEP4[0x90];                               // 0x28(0x90)
+	char                                                         pad0x90_2Y4F5[0x90];                               // 0x28(0x90)
 	TArray<class CrewVoyageParticipant*>                         Participants;                                      // 0xb8(0x10)
 	TArray<struct UtilityVoyageData>                             Voyages;                                           // 0xc8(0x10)
 };

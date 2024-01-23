@@ -78,7 +78,7 @@ BP_Shroudbreaker_OnShip_C:
     Offset: '0x678'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_N36PQ[0x3]
+  - Name: pad0x3_V0VJC[0x3]
     Offset: '0x679'
     Size: '0x3'
     Type: char
@@ -102,7 +102,7 @@ BP_Shroudbreaker_OnShip_C:
     Offset: '0x68d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_4KLIT[0x2]
+  - Name: pad0x2_RRXGN[0x2]
     Offset: '0x68e'
     Size: '0x2'
     Type: char

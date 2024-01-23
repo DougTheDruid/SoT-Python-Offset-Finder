@@ -6,11 +6,11 @@ namespace DougsSDKDumper
 // Classes
 //-----
 
-// Size -0x40d82a4a (Full Size[-0x40d82a4a] - InheritedSize[0x0]
+// Size 0x11 (Full Size[0x11] - InheritedSize[0x0]
 class BP_skd_ResourceIslandSunkenBountySkullsSpawner_C: public None
 {
 public:
-	char                                                         pad-0x40d82a4a_BEMJB[-0x40d82a4a];                 // 0x0(-0x40d82a4a)
+	char                                                         pad0x11_PMM99[0x11];                               // 0x0(0x11)
 };
 
 

@@ -11,10 +11,10 @@ struct SpawnAICustomOnDespawnTaskData
 {
 public:
 	int                                                          Despawn_Index;                                     // 0x0(0x4)
-	char                                                         pad0x4_4HZ5D[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_HW1CS[0x4];                                 // 0x4(0x4)
 	class Pawn*                                                  Despawn_Pawn;                                      // 0x8(0x8)
 	byte                                                         Despawn_Reason;                                    // 0x10(0x1)
-	char                                                         pad0x7_5LB6A[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_D0ZNC[0x7];                                 // 0x11(0x7)
 	class TaleQuestStepDesc*                                     Body;                                              // 0x18(0x8)
 };
 
@@ -24,7 +24,7 @@ struct SpawnAICustomOnSpawnTaskData
 {
 public:
 	int                                                          Spawn_Index;                                       // 0x0(0x4)
-	char                                                         pad0x4_EWVLL[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_4M74T[0x4];                                 // 0x4(0x4)
 	class Pawn*                                                  Spawn_Pawn;                                        // 0x8(0x8)
 	class TaleQuestStepDesc*                                     Body;                                              // 0x10(0x8)
 };
@@ -43,7 +43,7 @@ struct SpawnActorCustomOnTriggerWaveTaskData
 {
 public:
 	int                                                          NumAIToSpawn;                                      // 0x0(0x4)
-	char                                                         pad0x4_HNVMZ[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_87VMR[0x4];                                 // 0x4(0x4)
 	class TaleQuestStepDesc*                                     Body;                                              // 0x8(0x8)
 };
 
@@ -56,7 +56,7 @@ public:
 	struct Vector                                                SpawnLocation;                                     // 0x4(0xc)
 	struct Rotator                                               SpawnRotation;                                     // 0x10(0xc)
 	bool                                                         PerceiveActor;                                     // 0x1c(0x1)
-	char                                                         pad0x3_T18GX[0x3];                                 // 0x1d(0x3)
+	char                                                         pad0x3_2J3O7[0x3];                                 // 0x1d(0x3)
 	class AthenaAIControllerParamsDataAsset*                     Skillset;                                          // 0x40(0x8)
 	class LoadoutAsset*                                          Loadout;                                           // 0x48(0x8)
 	class AthenaAIFormDataAsset*                                 Form;                                              // 0x50(0x8)
@@ -72,7 +72,7 @@ struct SpawnAICustomSetupTaskData
 {
 public:
 	int                                                          MaxAI;                                             // 0x0(0x4)
-	char                                                         pad0x4_BSVDU[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_I92SB[0x4];                                 // 0x4(0x4)
 	class TaleAIRegionBase*                                      Region;                                            // 0x8(0x8)
 	class TaleQuestStepDesc*                                     Body;                                              // 0x10(0x8)
 };

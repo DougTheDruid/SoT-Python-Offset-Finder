@@ -62,7 +62,7 @@ BP_InteractableShipLantern_C:
     Offset: '0x768'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_Y0T1T[0x3]
+  - Name: pad0x3_JPPUM[0x3]
     Offset: '0x769'
     Size: '0x3'
     Type: char

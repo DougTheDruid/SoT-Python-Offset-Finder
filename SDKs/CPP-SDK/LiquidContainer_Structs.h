@@ -11,7 +11,7 @@ struct LiquidTypeParams
 {
 public:
 	byte                                                         LiquidType;                                        // 0x0(0x1)
-	char                                                         pad0x3_5J16L[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_QMCCE[0x3];                                 // 0x1(0x3)
 	struct Vector                                                FogColour;                                         // 0x4(0xc)
 	struct Vector                                                LiquidColour;                                      // 0x10(0xc)
 	struct Vector                                                ScumColour;                                        // 0x1c(0xc)

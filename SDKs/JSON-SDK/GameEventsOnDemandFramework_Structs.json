@@ -21,7 +21,7 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x6_45WQX[0x6]",
+        "Name": "pad0x6_0FGNB[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x12"
@@ -37,40 +37,6 @@
         "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x20"
-      }
-    ]
-  },
-  "GameEventOnDemandCompleteBannerNetworkEvent": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x10_HMHAB[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Title",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Company",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "GameEventOnDemandCompleted": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "OnDemandCrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },
@@ -113,6 +79,17 @@
       {
         "Name": "CrewId",
         "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GameEventOnDemandFailedTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ParticipatingOnDemandCrews",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -179,7 +156,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_73FQY[0x1]",
+        "Name": "pad0x1_O9TRR[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -190,7 +167,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_DWCIY[0x1]",
+        "Name": "pad0x1_8W0B8[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -201,7 +178,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_SZVKI[0x1]",
+        "Name": "pad0x1_5YF5H[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"

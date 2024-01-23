@@ -1,12 +1,24 @@
 {
   "OnCompetitiveVoyageCrewRespawned": {
-    "ClassSize": "0x10",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "CrewId",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "SinkLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SpawnLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x1c"
       }
     ]
   },
@@ -48,7 +60,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_29JD8[0x1]",
+        "Name": "pad0x1_AJ06G[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -59,7 +71,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_LOIAB[0x1]",
+        "Name": "pad0x1_UNZUN[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -92,7 +104,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_NE5SA[0x8]",
+        "Name": "pad0x8_FZK12[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
@@ -122,7 +134,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0xc_CYAEK[0xc]",
+        "Name": "pad0xc_8CAB4[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x3c"
@@ -133,7 +145,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_BBB9A[0x8]",
+        "Name": "pad0x8_G697V[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
@@ -268,7 +280,7 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x3_8E3HP[0x3]",
+        "Name": "pad0x3_RVLOQ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xa1"
@@ -303,7 +315,7 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "pad0x88_4730N[0x88]",
+        "Name": "pad0x88_B8G74[0x88]",
         "Type": "char",
         "Size": "0x88",
         "Offset": "0x0"
@@ -314,7 +326,7 @@
     "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "pad0x14_DEWSZ[0x14]",
+        "Name": "pad0x14_A67PM[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x0"
@@ -348,10 +360,39 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_9BJKF[0x18]",
+        "Name": "pad0x18_XIBV6[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "CompetitiveVoyagesCrewShipRespawnTelemetryEvent": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "EventID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SinkLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "SpawnLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x2c"
       }
     ]
   },
@@ -394,7 +435,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_ME3TG[0x4]",
+        "Name": "pad0x4_J4U0O[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"

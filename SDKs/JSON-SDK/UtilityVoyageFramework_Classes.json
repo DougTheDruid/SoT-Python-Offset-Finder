@@ -1,4 +1,32 @@
 {
+  "DispatchUtilityVoyageTaleStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "StepDesc",
+        "Type": "class DispatchUtilityVoyageTaleStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "DispatchUtilityVoyageTaleStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "UtilityVoyageDesc",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      }
+    ]
+  },
   "UtilityVoyageServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -13,7 +41,7 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x90_5BEP4[0x90]",
+        "Name": "pad0x90_2Y4F5[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x28"

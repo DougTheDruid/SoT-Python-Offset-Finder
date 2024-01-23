@@ -12,9 +12,9 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x137_DJLUG[0x137]",
+        "Name": "pad0xc7_LY68W[0xc7]",
         "Type": "char",
-        "Size": "0x137",
+        "Size": "0xc7",
         "Offset": "0xe8"
       },
       {
@@ -30,7 +30,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x7_FGPR0[0x7]",
+        "Name": "pad0x7_KE8T9[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xf1"

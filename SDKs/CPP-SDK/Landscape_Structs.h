@@ -23,7 +23,7 @@ public:
 	byte                                                         WeightmapTextureIndex;                             // 0x8(0x1)
 	byte                                                         WeightmapTextureChannel;                           // 0x9(0x1)
 	byte                                                         GrassMapChannelIndex;                              // 0xa(0x1)
-	char                                                         pad0x5_NTE4H[0x5];                                 // 0xb(0x5)
+	char                                                         pad0x5_CSSL2[0x5];                                 // 0xb(0x5)
 };
 
 
@@ -31,7 +31,7 @@ public:
 struct GizmoSelectData
 {
 public:
-	char                                                         pad0x50_OXU9B[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_H7NBE[0x50];                               // 0x0(0x50)
 };
 
 
@@ -42,13 +42,13 @@ public:
 	class StaticMesh*                                            GrassMesh;                                         // 0x0(0x8)
 	float                                                        GrassDensity;                                      // 0x8(0x4)
 	bool                                                         bUseGrid;                                          // 0xc(0x1)
-	char                                                         pad0x3_1UXHX[0x3];                                 // 0xd(0x3)
+	char                                                         pad0x3_5CSN7[0x3];                                 // 0xd(0x3)
 	float                                                        PlacementJitter;                                   // 0x10(0x4)
 	int                                                          StartCullDistance;                                 // 0x14(0x4)
 	int                                                          EndCullDistance;                                   // 0x18(0x4)
 	int                                                          MinLOD;                                            // 0x1c(0x4)
 	bool                                                         RandomRotation;                                    // 0x20(0x1)
-	char                                                         pad0x3_B4L3I[0x3];                                 // 0x21(0x3)
+	char                                                         pad0x3_P73VK[0x3];                                 // 0x21(0x3)
 	float                                                        AlignToSurface;                                    // 0x24(0x4)
 	float                                                        ScaleVariationMin;                                 // 0x28(0x4)
 	float                                                        ScaleVariationMax;                                 // 0x2c(0x4)
@@ -59,7 +59,7 @@ public:
 struct LandscapeImportLayerInfo
 {
 public:
-	char                                                         pad0x1_XC4A9[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_Q7W1H[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -75,7 +75,7 @@ public:
 struct LandscapeEditorLayerSettings
 {
 public:
-	char                                                         pad0x1_G8RAF[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_6UX1T[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -84,7 +84,7 @@ struct LandscapeWeightmapUsage
 {
 public:
 	class LandscapeComponent*                                    ChannelUsage;                                      // 0x0(0x8)
-	char                                                         pad0x18_7NC0A[0x18];                               // 0x8(0x18)
+	char                                                         pad0x18_N95AI[0x18];                               // 0x8(0x18)
 };
 
 
@@ -95,15 +95,15 @@ public:
 	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
 	TArray<class MaterialInterface*>                             MaterialOverrides;                                 // 0x8(0x10)
 	bool                                                         bCenterH;                                          // 0x18(0x1)
-	char                                                         pad0x3_14SCP[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_AI6XW[0x3];                                 // 0x19(0x3)
 	struct Vector2D                                              CenterAdjust;                                      // 0x1c(0x8)
 	bool                                                         bScaleToWidth;                                     // 0x24(0x1)
-	char                                                         pad0x3_DYJBY[0x3];                                 // 0x25(0x3)
+	char                                                         pad0x3_OWZM8[0x3];                                 // 0x25(0x3)
 	struct Vector                                                Scale;                                             // 0x28(0xc)
 	byte                                                         Orientation;                                       // 0x34(0x1)
 	byte                                                         ForwardAxis;                                       // 0x35(0x1)
 	byte                                                         UpAxis;                                            // 0x36(0x1)
-	char                                                         pad0x1_0HM98[0x1];                                 // 0x37(0x1)
+	char                                                         pad0x1_8G6HF[0x1];                                 // 0x37(0x1)
 };
 
 
@@ -114,7 +114,7 @@ public:
 	class LandscapeSplineControlPoint*                           ControlPoint;                                      // 0x0(0x8)
 	float                                                        TangentLen;                                        // 0x8(0x4)
 	struct FName                                                 SocketName;                                        // 0xc(0x8)
-	char                                                         pad0x4_O462J[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_0HV17[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -137,7 +137,7 @@ struct LandscapeSplineConnection
 public:
 	class LandscapeSplineSegment*                                Segment;                                           // 0x0(0x8)
 	bool                                                         End;                                               // 0x8(0x1)
-	char                                                         pad0x7_T5HY2[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_PZ87W[0x7];                                 // 0x9(0x7)
 };
 
 
@@ -145,7 +145,7 @@ public:
 struct ForeignWorldSplineData
 {
 public:
-	char                                                         pad0x1_4R3AK[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_3Z9LL[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -153,7 +153,7 @@ public:
 struct ForeignSplineSegmentData
 {
 public:
-	char                                                         pad0x1_AF94Y[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_ZMGCH[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -161,7 +161,7 @@ public:
 struct ForeignControlPointData
 {
 public:
-	char                                                         pad0x1_TEU31[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_JCM8U[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -181,13 +181,13 @@ struct LayerBlendInput
 public:
 	struct FName                                                 LayerName;                                         // 0x0(0x8)
 	byte                                                         BlendType;                                         // 0x8(0x1)
-	char                                                         pad0x7_QKM18[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_GQ471[0x7];                                 // 0x9(0x7)
 	struct ExpressionInput                                       LayerInput;                                        // 0x10(0x38)
 	struct ExpressionInput                                       HeightInput;                                       // 0x48(0x38)
 	float                                                        PreviewWeight;                                     // 0x80(0x4)
 	struct Vector                                                ConstLayerInput;                                   // 0x84(0xc)
 	float                                                        ConstHeightInput;                                  // 0x90(0x4)
-	char                                                         pad0x4_R9J0L[0x4];                                 // 0x94(0x4)
+	char                                                         pad0x4_Q8053[0x4];                                 // 0x94(0x4)
 };
 
 

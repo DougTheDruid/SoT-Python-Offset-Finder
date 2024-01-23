@@ -11,7 +11,7 @@ struct BumperZoneData
 {
 public:
 	class ShipBumperZone*                                        BumperZone;                                        // 0x0(0x8)
-	char                                                         pad0x20_RE74A[0x20];                               // 0x8(0x20)
+	char                                                         pad0x20_BA1X6[0x20];                               // 0x8(0x20)
 };
 
 
@@ -19,7 +19,7 @@ public:
 struct CachedShip
 {
 public:
-	char                                                         pad0x18_GHIYS[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_R03B7[0x18];                               // 0x0(0x18)
 };
 
 

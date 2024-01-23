@@ -2,15 +2,9 @@
   "BP_TunnelOfTheDamnedPortalLocator_WLD_C": {
     "Super": "PortalLocatorActor",
     "FullSize": "0x420",
-    "InheritedSize": "0x400",
-    "ClassSize": "0x20",
+    "InheritedSize": "0x408",
+    "ClassSize": "0x18",
     "Attributes": [
-      {
-        "Name": "SeaRockBounds",
-        "Type": "class SphereComponent*",
-        "Size": "0x8",
-        "Offset": "0x400"
-      },
       {
         "Name": "SignalAnchor",
         "Type": "class ChildActorComponent*",

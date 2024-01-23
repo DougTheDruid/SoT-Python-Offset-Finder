@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class MediaSubtitleComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x68_UTNCO[0x68];                               // 0xc8(0x68)
+	char                                                         pad0x68_PK4AI[0x68];                               // 0xc8(0x68)
 };
 
 
@@ -18,9 +18,9 @@ public:
 class WwiseMediaSoundComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x60_B5Z3P[0x60];                               // 0x2e0(0x60)
+	char                                                         pad0x60_7QMYG[0x60];                               // 0x2e0(0x60)
 	class WwiseEvent*                                            MediaSoundEvent;                                   // 0x340(0x8)
-	char                                                         pad0x48_TY26D[0x48];                               // 0x348(0x48)
+	char                                                         pad0x48_2V4JV[0x48];                               // 0x348(0x48)
 };
 
 

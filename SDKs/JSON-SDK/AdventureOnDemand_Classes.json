@@ -6,7 +6,7 @@
     "ClassSize": "0x330",
     "Attributes": [
       {
-        "Name": "pad0x10_0DDCD[0x10]",
+        "Name": "pad0x10_GB8LJ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c8"
@@ -30,7 +30,7 @@
         "Offset": "0x3e8"
       },
       {
-        "Name": "pad0xb0_51SC9[0xb0]",
+        "Name": "pad0xb0_EZ23U[0xb0]",
         "Type": "char",
         "Size": "0xb0",
         "Offset": "0x3f0"
@@ -66,7 +66,7 @@
         "Offset": "0x4e0"
       },
       {
-        "Name": "pad0x208_08N4R[0x208]",
+        "Name": "pad0x208_KZQVO[0x208]",
         "Type": "char",
         "Size": "0x208",
         "Offset": "0x4f0"
@@ -75,9 +75,9 @@
   },
   "GameEventOnDemandArrivalTunnelWorkerBase": {
     "Super": "AdventureOnDemandArrivalTunnelWorkerBase",
-    "FullSize": "0x128",
+    "FullSize": "0x158",
     "InheritedSize": "0x30",
-    "ClassSize": "0xf8",
+    "ClassSize": "0x128",
     "Attributes": [
       {
         "Name": "TriggerTunnelFailureTimeout",
@@ -110,177 +110,177 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0xa8_Q22KN[0xa8]",
+        "Name": "pad0xe0_YUEC7[0xe0]",
         "Type": "char",
-        "Size": "0xa8",
+        "Size": "0xe0",
         "Offset": "0x48"
       },
       {
         "Name": "LeaveTunnelVoyageDesc",
         "Type": "class VoyageDescDataAsset*",
         "Size": "0x8",
-        "Offset": "0xf0"
+        "Offset": "0x128"
       },
       {
-        "Name": "pad0x24_IW4JN[0x24]",
+        "Name": "pad0x14_MJFTS[0x14]",
         "Type": "char",
-        "Size": "0x24",
-        "Offset": "0xf8"
+        "Size": "0x14",
+        "Offset": "0x130"
       },
       {
         "Name": "RetryRequestEventFrequency",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x11c"
+        "Offset": "0x144"
       },
       {
-        "Name": "pad0x8_3E82C[0x8]",
+        "Name": "pad0x10_1ONNV[0x10]",
         "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x120"
+        "Size": "0x10",
+        "Offset": "0x148"
       }
     ]
   },
   "AIShipBattleGameEventOnDemandArrivalTunnelWorker": {
     "Super": "GameEventOnDemandArrivalTunnelWorkerBase",
-    "FullSize": "0x138",
-    "InheritedSize": "0x128",
+    "FullSize": "0x168",
+    "InheritedSize": "0x158",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_SJ92Z[0x10]",
+        "Name": "pad0x10_M0QR2[0x10]",
         "Type": "char",
         "Size": "0x10",
-        "Offset": "0x128"
+        "Offset": "0x158"
       }
     ]
   },
   "IslandBasedGameEventOnDemandArrivalTunnelWorker": {
     "Super": "GameEventOnDemandArrivalTunnelWorkerBase",
-    "FullSize": "0x150",
-    "InheritedSize": "0x128",
-    "ClassSize": "0x28",
+    "FullSize": "0x188",
+    "InheritedSize": "0x158",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "UseSpawnDistanceFromIslandForResurfaceRadius",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x128"
+        "Offset": "0x158"
       },
       {
-        "Name": "pad0x3_1CZXV[0x3]",
+        "Name": "pad0x17_S1PNO[0x17]",
         "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x129"
+        "Size": "0x17",
+        "Offset": "0x159"
       },
       {
         "Name": "ResurfaceMaxRadiusModifier",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x12c"
+        "Offset": "0x170"
       },
       {
-        "Name": "pad0x20_LJ4BF[0x20]",
+        "Name": "pad0x14_ECMB2[0x14]",
         "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x130"
+        "Size": "0x14",
+        "Offset": "0x174"
       }
     ]
   },
   "AggressiveGhostShipsEncounterOnDemandArrivalTunnelWorker": {
     "Super": "IslandBasedGameEventOnDemandArrivalTunnelWorker",
-    "FullSize": "0x160",
-    "InheritedSize": "0x150",
+    "FullSize": "0x198",
+    "InheritedSize": "0x188",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_XLK36[0x10]",
+        "Name": "pad0x10_D1M08[0x10]",
         "Type": "char",
         "Size": "0x10",
-        "Offset": "0x150"
+        "Offset": "0x188"
       }
     ]
   },
   "AshenLordEventOnDemandArrivalTunnelWorker": {
     "Super": "IslandBasedGameEventOnDemandArrivalTunnelWorker",
-    "FullSize": "0x160",
-    "InheritedSize": "0x150",
+    "FullSize": "0x198",
+    "InheritedSize": "0x188",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_7EC0X[0x10]",
+        "Name": "pad0x10_UT6I4[0x10]",
         "Type": "char",
         "Size": "0x10",
-        "Offset": "0x150"
+        "Offset": "0x188"
       }
     ]
   },
   "ContendedResourceGameEventOnDemandArrivalTunnelWorker": {
     "Super": "IslandBasedGameEventOnDemandArrivalTunnelWorker",
-    "FullSize": "0x168",
-    "InheritedSize": "0x150",
+    "FullSize": "0x1a0",
+    "InheritedSize": "0x188",
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_LKBBM[0x18]",
+        "Name": "pad0x18_UA38H[0x18]",
         "Type": "char",
         "Size": "0x18",
-        "Offset": "0x150"
+        "Offset": "0x188"
       }
     ]
   },
   "SeaFortGameEventOnDemandArrivalTunnelWorker": {
     "Super": "ContendedResourceGameEventOnDemandArrivalTunnelWorker",
-    "FullSize": "0x168",
-    "InheritedSize": "0x168",
+    "FullSize": "0x1a0",
+    "InheritedSize": "0x1a0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "SunkenKingdomShrineGameEventOnDemandArrivalTunnelWorker": {
     "Super": "ContendedResourceGameEventOnDemandArrivalTunnelWorker",
-    "FullSize": "0x168",
-    "InheritedSize": "0x168",
+    "FullSize": "0x1a0",
+    "InheritedSize": "0x1a0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "SunkenKingdomTreasuryGameEventOnDemandArrivalTunnelWorker": {
     "Super": "ContendedResourceGameEventOnDemandArrivalTunnelWorker",
-    "FullSize": "0x168",
-    "InheritedSize": "0x168",
+    "FullSize": "0x1a0",
+    "InheritedSize": "0x1a0",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "SkellyFortEventOnDemandArrivalTunnelWorker": {
     "Super": "IslandBasedGameEventOnDemandArrivalTunnelWorker",
-    "FullSize": "0x160",
-    "InheritedSize": "0x150",
+    "FullSize": "0x198",
+    "InheritedSize": "0x188",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_OHEZ2[0x10]",
+        "Name": "pad0x10_GUCT5[0x10]",
         "Type": "char",
         "Size": "0x10",
-        "Offset": "0x150"
+        "Offset": "0x188"
       }
     ]
   },
   "SeaBasedGameEventOnDemandArrivalTunnelWorker": {
     "Super": "GameEventOnDemandArrivalTunnelWorkerBase",
-    "FullSize": "0x170",
-    "InheritedSize": "0x128",
-    "ClassSize": "0x48",
+    "FullSize": "0x188",
+    "InheritedSize": "0x158",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "VacateOccupiedLocationTimer",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x128"
+        "Offset": "0x158"
       },
       {
-        "Name": "pad0x44_INZM6[0x44]",
+        "Name": "pad0x2c_KXMHZ[0x2c]",
         "Type": "char",
-        "Size": "0x44",
-        "Offset": "0x12c"
+        "Size": "0x2c",
+        "Offset": "0x15c"
       }
     ]
   },

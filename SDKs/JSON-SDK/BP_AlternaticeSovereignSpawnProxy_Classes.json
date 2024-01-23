@@ -6,10 +6,16 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_TY5UR[0x10]",
-        "Type": "char",
-        "Size": "0x10",
+        "Name": "None",
+        "Type": "class PhasedActorComponent*",
+        "Size": "0x8",
         "Offset": "0x3c8"
+      },
+      {
+        "Name": "None",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
       }
     ]
   },

@@ -17,7 +17,7 @@ public:
 class InAppPurchaseCallbackProxy: public Object
 {
 public:
-	char                                                         pad0x60_4KWE0[0x60];                               // 0x28(0x60)
+	char                                                         pad0x60_FKAPE[0x60];                               // 0x28(0x60)
 };
 
 
@@ -25,7 +25,7 @@ public:
 class InAppPurchaseQueryCallbackProxy: public Object
 {
 public:
-	char                                                         pad0x70_AVUX0[0x70];                               // 0x28(0x70)
+	char                                                         pad0x70_E8J2V[0x70];                               // 0x28(0x70)
 };
 
 
@@ -33,7 +33,7 @@ public:
 class InAppPurchaseRestoreCallbackProxy: public Object
 {
 public:
-	char                                                         pad0x70_KMF2X[0x70];                               // 0x28(0x70)
+	char                                                         pad0x70_NPI0G[0x70];                               // 0x28(0x70)
 };
 
 
@@ -41,7 +41,7 @@ public:
 class IpConnection: public NetConnection
 {
 public:
-	char                                                         pad0x50_38PXZ[0x50];                               // 0x345a0(0x50)
+	char                                                         pad0x50_ZC2XL[0x50];                               // 0x345a0(0x50)
 };
 
 
@@ -51,8 +51,8 @@ class IpNetDriver: public NetDriver
 public:
 	bool                                                         LogPortUnreach;                                    // 0x478(0x1)
 	bool                                                         AllowPlayerPortUnreach;                            // 0x478(0x1)
-	char                                                         pad0x3_32TF8[0x3];                                 // 0x479(0x3)
-	char                                                         pad0x4c_Z6F52[0x4c];                               // 0x47c(0x4c)
+	char                                                         pad0x3_WZHO4[0x3];                                 // 0x479(0x3)
+	char                                                         pad0x4c_TY0IE[0x4c];                               // 0x47c(0x4c)
 };
 
 
@@ -67,7 +67,7 @@ public:
 class LeaderboardFlushCallbackProxy: public Object
 {
 public:
-	char                                                         pad0x38_YMBE1[0x38];                               // 0x28(0x38)
+	char                                                         pad0x38_9CGLS[0x38];                               // 0x28(0x38)
 };
 
 
@@ -75,7 +75,7 @@ public:
 class LeaderboardQueryCallbackProxy: public Object
 {
 public:
-	char                                                         pad0x68_K7BFI[0x68];                               // 0x28(0x68)
+	char                                                         pad0x68_NY9UQ[0x68];                               // 0x28(0x68)
 };
 
 
@@ -83,7 +83,7 @@ public:
 class LogoutCallbackProxy: public BlueprintAsyncActionBase
 {
 public:
-	char                                                         pad0x38_72HUO[0x38];                               // 0x28(0x38)
+	char                                                         pad0x38_EDXYW[0x38];                               // 0x28(0x38)
 };
 
 
@@ -91,11 +91,11 @@ public:
 class OnlineBeacon: public Actor
 {
 public:
-	char                                                         pad0x8_WLV06[0x8];                                 // 0x3c8(0x8)
+	char                                                         pad0x8_KNG8E[0x8];                                 // 0x3c8(0x8)
 	float                                                        BeaconConnectionInitialTimeout;                    // 0x3d0(0x4)
 	float                                                        BeaconConnectionTimeout;                           // 0x3d4(0x4)
 	class NetDriver*                                             NetDriver;                                         // 0x3d8(0x8)
-	char                                                         pad0x10_FKHSJ[0x10];                               // 0x3e0(0x10)
+	char                                                         pad0x10_UPN2Y[0x10];                               // 0x3e0(0x10)
 };
 
 
@@ -106,7 +106,7 @@ public:
 	class OnlineBeaconHostObject*                                BeaconOwner;                                       // 0x3f0(0x8)
 	class NetConnection*                                         BeaconConnection;                                  // 0x3f8(0x8)
 	byte                                                         ConnectionState;                                   // 0x400(0x1)
-	char                                                         pad0x17_8R8BY[0x17];                               // 0x401(0x17)
+	char                                                         pad0x17_PDL4R[0x17];                               // 0x401(0x17)
 };
 
 
@@ -122,7 +122,7 @@ public:
 	int                                                          ReservedHostTeamNum;                               // 0x40(0x4)
 	int                                                          ForceTeamNum;                                      // 0x44(0x4)
 	TArray<struct PartyReservation>                              Reservations;                                      // 0x48(0x10)
-	char                                                         pad0x10_VV7E5[0x10];                               // 0x58(0x10)
+	char                                                         pad0x10_XA5KP[0x10];                               // 0x58(0x10)
 };
 
 
@@ -130,13 +130,13 @@ public:
 class PartyBeaconClient: public OnlineBeaconClient
 {
 public:
-	char                                                         pad0x10_XTICI[0x10];                               // 0x418(0x10)
+	char                                                         pad0x10_ZLMS8[0x10];                               // 0x418(0x10)
 	struct FString                                               DestSessionId;                                     // 0x428(0x10)
 	struct PartyReservation                                      PendingReservation;                                // 0x438(0x30)
 	byte                                                         RequestType;                                       // 0x468(0x1)
 	bool                                                         bPendingReservationSent;                           // 0x469(0x1)
 	bool                                                         bCancelReservation;                                // 0x46a(0x1)
-	char                                                         pad0x5_UDVTK[0x5];                                 // 0x46b(0x5)
+	char                                                         pad0x5_0BWD1[0x5];                                 // 0x46b(0x5)
 };
 
 
@@ -152,9 +152,9 @@ class OnlineBeaconHost: public OnlineBeacon
 {
 public:
 	int                                                          ListenPort;                                        // 0x3f0(0x4)
-	char                                                         pad0x4_119KM[0x4];                                 // 0x3f4(0x4)
+	char                                                         pad0x4_GRSG8[0x4];                                 // 0x3f4(0x4)
 	TArray<class OnlineBeaconClient*>                            ClientActors;                                      // 0x3f8(0x10)
-	char                                                         pad0xa0_UHQ1Q[0xa0];                               // 0x408(0xa0)
+	char                                                         pad0xa0_UCF2B[0xa0];                               // 0x408(0xa0)
 };
 
 
@@ -173,7 +173,7 @@ class PartyBeaconHost: public OnlineBeaconHostObject
 {
 public:
 	class PartyBeaconState*                                      State;                                             // 0x3f0(0x8)
-	char                                                         pad0x28_FS5RC[0x28];                               // 0x3f8(0x28)
+	char                                                         pad0x28_C1JEH[0x28];                               // 0x3f8(0x28)
 	float                                                        SessionTimeoutSecs;                                // 0x420(0x4)
 	float                                                        TravelSessionTimeoutSecs;                          // 0x424(0x4)
 };
@@ -197,7 +197,7 @@ public:
 class AchievementQueryCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
-	char                                                         pad0x38_5W1CU[0x38];                               // 0x28(0x38)
+	char                                                         pad0x38_RP53R[0x38];                               // 0x28(0x38)
 };
 
 
@@ -205,7 +205,7 @@ public:
 class AchievementWriteCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
-	char                                                         pad0x58_FGEQS[0x58];                               // 0x28(0x58)
+	char                                                         pad0x58_392UV[0x58];                               // 0x28(0x58)
 };
 
 
@@ -213,7 +213,7 @@ public:
 class ConnectionCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
-	char                                                         pad0x40_XY6KP[0x40];                               // 0x28(0x40)
+	char                                                         pad0x40_ER0KH[0x40];                               // 0x28(0x40)
 };
 
 
@@ -221,7 +221,7 @@ public:
 class CreateSessionCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
-	char                                                         pad0x58_H6RZF[0x58];                               // 0x28(0x58)
+	char                                                         pad0x58_H9LRU[0x58];                               // 0x28(0x58)
 };
 
 
@@ -229,7 +229,7 @@ public:
 class DestroySessionCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
-	char                                                         pad0x40_MLTRS[0x40];                               // 0x28(0x40)
+	char                                                         pad0x40_IOIWV[0x40];                               // 0x28(0x40)
 };
 
 
@@ -237,7 +237,7 @@ public:
 class EndMatchCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
-	char                                                         pad0x50_7H0WN[0x50];                               // 0x28(0x50)
+	char                                                         pad0x50_BJ6AC[0x50];                               // 0x28(0x50)
 };
 
 
@@ -245,7 +245,7 @@ public:
 class EndTurnCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
-	char                                                         pad0x48_BS5KW[0x48];                               // 0x28(0x48)
+	char                                                         pad0x48_9O0JF[0x48];                               // 0x28(0x48)
 };
 
 
@@ -253,7 +253,7 @@ public:
 class FindSessionsCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
-	char                                                         pad0x60_1NTHT[0x60];                               // 0x28(0x60)
+	char                                                         pad0x60_U89N6[0x60];                               // 0x28(0x60)
 };
 
 
@@ -261,7 +261,7 @@ public:
 class FindTurnBasedMatchCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
-	char                                                         pad0x60_KAXG4[0x60];                               // 0x28(0x60)
+	char                                                         pad0x60_CX2XW[0x60];                               // 0x28(0x60)
 };
 
 
@@ -269,7 +269,7 @@ public:
 class JoinSessionCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
-	char                                                         pad0x120_68JQ9[0x120];                             // 0x28(0x120)
+	char                                                         pad0x120_OYYYU[0x120];                             // 0x28(0x120)
 };
 
 
@@ -277,7 +277,7 @@ public:
 class QuitMatchCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
-	char                                                         pad0x48_VJEPJ[0x48];                               // 0x28(0x48)
+	char                                                         pad0x48_K6WFR[0x48];                               // 0x28(0x48)
 };
 
 
@@ -285,10 +285,10 @@ public:
 class OnlineSessionClient: public OnlineSession
 {
 public:
-	char                                                         pad0x138_LSJWK[0x138];                             // 0x28(0x138)
+	char                                                         pad0x138_7QQPY[0x138];                             // 0x28(0x138)
 	bool                                                         bIsFromInvite;                                     // 0x160(0x1)
 	bool                                                         bHandlingDisconnect;                               // 0x161(0x1)
-	char                                                         pad0x6_I73NC[0x6];                                 // 0x162(0x6)
+	char                                                         pad0x6_UPOO9[0x6];                                 // 0x162(0x6)
 };
 
 
@@ -296,7 +296,7 @@ public:
 class ShowLoginUICallbackProxy: public BlueprintAsyncActionBase
 {
 public:
-	char                                                         pad0x30_2WQOS[0x30];                               // 0x28(0x30)
+	char                                                         pad0x30_L5HHV[0x30];                               // 0x28(0x30)
 };
 
 

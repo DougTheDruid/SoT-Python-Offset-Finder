@@ -18,7 +18,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x28_G1D0O[0x28]",
+        "Name": "pad0x28_CL8LW[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x88"
@@ -48,7 +48,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x4c_MVPMU[0x4c]",
+        "Name": "pad0x4c_FBAAD[0x4c]",
         "Type": "char",
         "Size": "0x4c",
         "Offset": "0xd4"

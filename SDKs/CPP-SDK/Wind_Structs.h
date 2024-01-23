@@ -12,7 +12,7 @@ struct ExtraWind
 public:
 	class Object*                                                Source;                                            // 0x0(0x8)
 	class Actor*                                                 Basis;                                             // 0x8(0x8)
-	char                                                         pad0x28_IQPZF[0x28];                               // 0x10(0x28)
+	char                                                         pad0x28_VLVV8[0x28];                               // 0x10(0x28)
 };
 
 
@@ -49,7 +49,7 @@ public:
 	float                                                        InnerRadius;                                       // 0x4(0x4)
 	float                                                        TurbulenceScalar;                                  // 0x8(0x4)
 	bool                                                         WindOnlyAffectsTrees;                              // 0xc(0x1)
-	char                                                         pad0x3_VWVZI[0x3];                                 // 0xd(0x3)
+	char                                                         pad0x3_IP3OK[0x3];                                 // 0xd(0x3)
 };
 
 
@@ -67,7 +67,7 @@ public:
 struct WindMagnitudeChanged
 {
 public:
-	char                                                         pad0x1_5MQ3A[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_MQAKM[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -75,7 +75,7 @@ public:
 struct WindDirectionChanged
 {
 public:
-	char                                                         pad0x1_8J84G[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_PZFYS[0x1];                                 // 0x0(0x1)
 };
 
 

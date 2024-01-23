@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 struct CookingInfo
 {
 public:
-	char                                                         pad0xc_K52OB[0xc];                                 // 0x0(0xc)
+	char                                                         pad0xc_JMNVT[0xc];                                 // 0x0(0xc)
 };
 
 
@@ -20,7 +20,7 @@ struct CookableComponentSmokeFeedbackTimingEntry
 public:
 	float                                                        StateDuration;                                     // 0x0(0x4)
 	byte                                                         StateFeedbackLevel;                                // 0x4(0x1)
-	char                                                         pad0x3_NDSZ7[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_6VEWW[0x3];                                 // 0x5(0x3)
 };
 
 
@@ -30,16 +30,16 @@ struct CookingClientRepresentation
 public:
 	bool                                                         Cooking;                                           // 0x0(0x1)
 	bool                                                         HasItem;                                           // 0x1(0x1)
-	char                                                         pad0x6_9Q5MF[0x6];                                 // 0x2(0x6)
+	char                                                         pad0x6_PM725[0x6];                                 // 0x2(0x6)
 	class ItemInfo*                                              CurrentlyCookingItem;                              // 0x8(0x8)
 	struct FText                                                 CurrentCookingItemDisplayName;                     // 0x10(0x38)
 	class UClass*                                                CurrentCookingItemCategory;                        // 0x48(0x8)
 	byte                                                         SmokeFeedbackLevel;                                // 0x50(0x1)
-	char                                                         pad0x3_8SPKF[0x3];                                 // 0x51(0x3)
+	char                                                         pad0x3_UUJ8U[0x3];                                 // 0x51(0x3)
 	float                                                        VisibleCookedExtent;                               // 0x54(0x4)
 	float                                                        CurrentItemPlacementAngle;                         // 0x58(0x4)
 	struct FName                                                 CurrentCookableTypeName;                           // 0x5c(0x8)
-	char                                                         pad0x4_W5OB1[0x4];                                 // 0x64(0x4)
+	char                                                         pad0x4_SBH5G[0x4];                                 // 0x64(0x4)
 };
 
 
@@ -48,7 +48,7 @@ struct CookerSmokeFeedbackEntry
 {
 public:
 	byte                                                         FeedbackLevel;                                     // 0x0(0x1)
-	char                                                         pad0x7_DREUL[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_N3H1Y[0x7];                                 // 0x1(0x7)
 	class ParticleSystem*                                        SmokeVFX;                                          // 0x8(0x8)
 };
 
@@ -74,7 +74,7 @@ public:
 struct OnItemStartedCooking
 {
 public:
-	char                                                         pad0x10_P23S4[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_40Z6W[0x10];                               // 0x0(0x10)
 };
 
 
@@ -82,7 +82,7 @@ public:
 struct OnItemStoppedCooking
 {
 public:
-	char                                                         pad0x1_25LCQ[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_FLHGD[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -92,7 +92,7 @@ struct CookEndTelemetryEvent
 public:
 	struct FString                                               ItemName;                                          // 0x0(0x10)
 	byte                                                         CookState;                                         // 0x10(0x1)
-	char                                                         pad0x3_JV9HH[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_AW95S[0x3];                                 // 0x11(0x3)
 	struct Vector                                                Location;                                          // 0x14(0xc)
 	struct Guid                                                  CookId;                                            // 0x20(0x10)
 };
@@ -104,7 +104,7 @@ struct CookStartTelemetryEvent
 public:
 	struct FString                                               ItemName;                                          // 0x0(0x10)
 	byte                                                         CookState;                                         // 0x10(0x1)
-	char                                                         pad0x3_BA4OF[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_P7DIT[0x3];                                 // 0x11(0x3)
 	struct Vector                                                Location;                                          // 0x14(0xc)
 	struct Guid                                                  CookId;                                            // 0x20(0x10)
 };

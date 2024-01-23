@@ -10,7 +10,7 @@ DrawDebugItemBox:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_33RSD[0x3]
+  - Name: pad0x3_XVWGX[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -22,7 +22,7 @@ DrawDebugItemBox:
     Offset: '0x18'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0xc_SB5SF[0xc]
+  - Name: pad0xc_ILEB8[0xc]
     Offset: '0x24'
     Size: '0xc'
     Type: char
@@ -34,7 +34,7 @@ DrawDebugItemBox:
     Offset: '0x40'
     Size: '0x4'
     Type: struct Color
-  - Name: pad0xc_P2XLD[0xc]
+  - Name: pad0xc_4T49B[0xc]
     Offset: '0x44'
     Size: '0xc'
     Type: char
@@ -49,7 +49,7 @@ DrawDebugItemCapsule:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_YDMKV[0x3]
+  - Name: pad0x3_D1YS9[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -73,7 +73,7 @@ DrawDebugItemCapsule:
     Offset: '0x30'
     Size: '0x4'
     Type: struct Color
-  - Name: pad0xc_M9QJC[0xc]
+  - Name: pad0xc_EOJEE[0xc]
     Offset: '0x34'
     Size: '0xc'
     Type: char
@@ -88,7 +88,7 @@ DrawDebugItemLine:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_CTIFK[0x3]
+  - Name: pad0x3_P7J3J[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -119,7 +119,7 @@ DrawDebugItemMessage:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_1DFS0[0x7]
+  - Name: pad0x7_WU1MM[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -131,7 +131,7 @@ DrawDebugItemMessage:
     Offset: '0x20'
     Size: '0x4'
     Type: struct Color
-  - Name: pad0x4_9N9IB[0x4]
+  - Name: pad0x4_U1CFL[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -146,7 +146,7 @@ DrawDebugItemSector:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_43UAI[0x3]
+  - Name: pad0x3_14V8B[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -197,7 +197,7 @@ DrawDebugItemSphere:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_442QA[0x3]
+  - Name: pad0x3_LLB5U[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -224,7 +224,7 @@ DrawDebugItemString:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_4DYC4[0x7]
+  - Name: pad0x7_075FJ[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char

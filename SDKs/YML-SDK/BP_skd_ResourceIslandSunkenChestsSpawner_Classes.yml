@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_skd_ResourceIslandSunkenChestsSpawner_C:
   Attributes:
-  - Name: pad-0x1_RP1J3[-0x1]
+  - Name: pad0x4400a4c0_PRDCT[0x4400a4c0]
     Offset: '0x0'
-    Size: '-0x1'
+    Size: '0x4400a4c0'
     Type: char
-  ClassSize: '-0x1'
-  FullSize: '-0x1'
+  ClassSize: '0x4400a4c0'
+  FullSize: '0x4400a4c0'
   InheritedSize: '0x0'
   Super: None

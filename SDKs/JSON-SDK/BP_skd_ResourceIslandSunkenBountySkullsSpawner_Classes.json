@@ -1,14 +1,14 @@
 {
   "BP_skd_ResourceIslandSunkenBountySkullsSpawner_C": {
     "Super": "None",
-    "FullSize": "-0x40d82a4a",
+    "FullSize": "0x11",
     "InheritedSize": "0x0",
-    "ClassSize": "-0x40d82a4a",
+    "ClassSize": "0x11",
     "Attributes": [
       {
-        "Name": "pad-0x40d82a4a_BEMJB[-0x40d82a4a]",
+        "Name": "pad0x11_PMM99[0x11]",
         "Type": "char",
-        "Size": "-0x40d82a4a",
+        "Size": "0x11",
         "Offset": "0x0"
       }
     ]

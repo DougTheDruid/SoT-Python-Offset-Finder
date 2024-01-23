@@ -19,7 +19,7 @@ public:
 struct ServerMigrationSetupCompleteEvent
 {
 public:
-	char                                                         pad0x1_N7UC9[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_YYQ8N[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -27,7 +27,7 @@ public:
 struct ServerMigrationSetupRequestEvent
 {
 public:
-	char                                                         pad0x1_0QA9R[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_HE3ZG[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -35,7 +35,7 @@ public:
 struct ServerMigrationReadyToTransferActors
 {
 public:
-	char                                                         pad0x90_AIOQG[0x90];                               // 0x0(0x90)
+	char                                                         pad0x90_J2VUS[0x90];                               // 0x0(0x90)
 };
 
 
@@ -43,7 +43,7 @@ public:
 struct AddedPendingIncomingGameEventOnDemandCrewEvent
 {
 public:
-	char                                                         pad0x48_DWTCI[0x48];                               // 0x0(0x48)
+	char                                                         pad0x48_7VNXK[0x48];                               // 0x0(0x48)
 };
 
 
@@ -51,7 +51,7 @@ public:
 struct AddedPendingIncomingInvaderCrewEvent
 {
 public:
-	char                                                         pad0x48_CBIMX[0x48];                               // 0x0(0x48)
+	char                                                         pad0x48_7865C[0x48];                               // 0x0(0x48)
 };
 
 
@@ -59,7 +59,7 @@ public:
 struct ServerMigrationAboutToStartEvent
 {
 public:
-	char                                                         pad0x20_SPDO1[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_53H3W[0x20];                               // 0x0(0x20)
 };
 
 
@@ -67,7 +67,7 @@ public:
 struct ServerMigrationAbortEvent
 {
 public:
-	char                                                         pad0x10_M2MZL[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_DT2R3[0x10];                               // 0x0(0x10)
 };
 
 
@@ -75,7 +75,7 @@ public:
 struct ServerMigrationCompleteEvent
 {
 public:
-	char                                                         pad0x1_X1X18[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_40EEY[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -92,7 +92,7 @@ public:
 struct OutgoingServerMigrationAbortedEvent
 {
 public:
-	char                                                         pad0x20_VE7OE[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_QBQQQ[0x20];                               // 0x0(0x20)
 };
 
 
@@ -109,7 +109,7 @@ public:
 struct OutgoingServerMigrationCompletedEvent
 {
 public:
-	char                                                         pad0x20_EVA7A[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_76OV3[0x20];                               // 0x0(0x20)
 };
 
 
@@ -117,7 +117,7 @@ public:
 struct OutgoingServerMigrationStartedEvent
 {
 public:
-	char                                                         pad0x20_O6KGF[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_X9B70[0x20];                               // 0x0(0x20)
 };
 
 
@@ -146,7 +146,7 @@ public:
 struct PrepareForWorldSwitchRpc
 {
 public:
-	char                                                         pad0x10_A9GG0[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_0SW77[0x10];                               // 0x0(0x10)
 };
 
 

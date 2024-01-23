@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class EndPlayHandler: public Object
 {
 public:
-	char                                                         pad0x18_3JS0Y[0x18];                               // 0x28(0x18)
+	char                                                         pad0x18_6GAUJ[0x18];                               // 0x28(0x18)
 };
 
 
@@ -32,7 +32,7 @@ public:
 class LinkerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0xc8_G2ERG[0xc8];                               // 0xc8(0xc8)
+	char                                                         pad0xc8_0D82A[0xc8];                               // 0xc8(0xc8)
 	TArray<class EndPlayHandler*>                                EndPlayHandlers;                                   // 0x190(0x10)
 };
 

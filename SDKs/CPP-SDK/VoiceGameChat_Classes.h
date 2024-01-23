@@ -10,7 +10,7 @@ namespace DougsSDKDumper
 class PlayfabPartyVoiceChannel: public VoiceChannel
 {
 public:
-	char                                                         pad0x18_34DT9[0x18];                               // 0x90(0x18)
+	char                                                         pad0x18_UQXZK[0x18];                               // 0x90(0x18)
 };
 
 

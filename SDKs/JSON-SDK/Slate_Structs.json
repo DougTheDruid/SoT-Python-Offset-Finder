@@ -33,7 +33,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x7_0V0GE[0x7]",
+        "Name": "pad0x7_FFASB[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x21"

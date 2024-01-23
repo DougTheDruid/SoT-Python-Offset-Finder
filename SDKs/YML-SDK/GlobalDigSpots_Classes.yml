@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 GlobalDigSpotDebugCheat:
   Attributes:
-  - Name: pad0x8_818H3[0x8]
+  - Name: pad0x8_TCALC[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -28,20 +28,20 @@ GlobalDigSpotDefinitionList:
   Super: DataAsset
 GlobalDigSpotService:
   Attributes:
-  - Name: pad0x8_XGS0J[0x8]
+  - Name: pad0x10_69F3U[0x10]
     Offset: '0x3c8'
-    Size: '0x8'
+    Size: '0x10'
     Type: char
   - Name: Notification
-    Offset: '0x3d0'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: class PopUpMessageDesc*
   - Name: DigSpotDefinitions
-    Offset: '0x3d8'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: class GlobalDigSpotDefinitionList*
-  ClassSize: '0x18'
-  FullSize: '0x3e0'
+  ClassSize: '0x20'
+  FullSize: '0x3e8'
   InheritedSize: '0x3c8'
   Super: Actor
 GlobalDigSpotServiceInterface:
@@ -62,7 +62,7 @@ GlobalDigSpotSettings:
   Super: DeveloperSettings
 GlobalDigSpotVoyageTriggerActor:
   Attributes:
-  - Name: pad0x18_IV98T[0x18]
+  - Name: pad0x18_CRTGC[0x18]
     Offset: '0x418'
     Size: '0x18'
     Type: char

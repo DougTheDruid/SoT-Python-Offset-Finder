@@ -36,7 +36,7 @@ public:
 	struct SlateFontInfo                                         Font;                                              // 0x48(0x40)
 	struct SlateColor                                            Colour;                                            // 0x88(0x30)
 	float                                                        LineHeightPercentage;                              // 0xb8(0x4)
-	char                                                         pad0x4_F6X8J[0x4];                                 // 0xbc(0x4)
+	char                                                         pad0x4_ILJSA[0x4];                                 // 0xbc(0x4)
 };
 
 
@@ -52,7 +52,7 @@ public:
 struct EventAthenaLoadingScreenStateRequest
 {
 public:
-	char                                                         pad0x1_UDRW2[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_6ECAM[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -76,7 +76,7 @@ public:
 struct EventAthenaLoadingScreenClose
 {
 public:
-	char                                                         pad0x1_W0NW8[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_SL38V[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -84,7 +84,7 @@ public:
 struct EventAthenaLoadingScreenOpen
 {
 public:
-	char                                                         pad0x1_CWYJM[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_2ZL5B[0x1];                                 // 0x0(0x1)
 };
 
 

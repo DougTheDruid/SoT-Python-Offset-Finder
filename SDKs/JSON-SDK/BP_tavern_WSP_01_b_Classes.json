@@ -900,7 +900,7 @@
         "Offset": "0x868"
       },
       {
-        "Name": "light_candle",
+        "Name": "Light_candle",
         "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x870"
@@ -918,19 +918,19 @@
         "Offset": "0x880"
       },
       {
-        "Name": "light_candle",
+        "Name": "Light_candle",
         "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x888"
       },
       {
-        "Name": "light_candle",
+        "Name": "Light_candle",
         "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x890"
       },
       {
-        "Name": "light_candle",
+        "Name": "Light_candle",
         "Type": "class PointLightComponent*",
         "Size": "0x8",
         "Offset": "0x898"

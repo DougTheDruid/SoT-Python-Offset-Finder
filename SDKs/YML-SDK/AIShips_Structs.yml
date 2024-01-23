@@ -6,7 +6,7 @@ AIShipBattleEncounterDescGenerationParams:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_RL74C[0x7]
+  - Name: pad0x7_H4Z84[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -41,7 +41,7 @@ AIShipBattleParams:
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_9Q56E[0x4]
+  - Name: pad0x4_18SHK[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -78,7 +78,7 @@ AIShipContextDescDamageParams:
     Offset: '0x4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ULI30[0x3]
+  - Name: pad0x3_RYBBM[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char
@@ -90,7 +90,7 @@ AIShipContextDescDamageParams:
     Offset: '0xc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_DMHGU[0x3]
+  - Name: pad0x3_09NDT[0x3]
     Offset: '0xd'
     Size: '0x3'
     Type: char
@@ -177,7 +177,7 @@ AIShipCrewFormType:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_FIK39[0x3]
+  - Name: pad0x3_NLZR5[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -200,7 +200,7 @@ AIShipDamagedTelemetryEvent:
     Offset: '0x10'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_7BL1E[0x4]
+  - Name: pad0x4_PDIIT[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -216,7 +216,7 @@ AIShipDamagedTelemetryEvent:
     Offset: '0x34'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x4_OSFSW[0x4]
+  - Name: pad0x4_20Q0X[0x4]
     Offset: '0x44'
     Size: '0x4'
     Type: char
@@ -231,7 +231,7 @@ AIShipDespawnTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_7ADDN[0x7]
+  - Name: pad0x7_FGBM0[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -246,7 +246,7 @@ AIShipDespawnedEvent:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_8X2YE[0x7]
+  - Name: pad0x7_JUREJ[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -276,7 +276,7 @@ AIShipEncounterBattleGenerationParams:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_8YU7I[0x4]
+  - Name: pad0x4_KFLD2[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -291,7 +291,7 @@ AIShipEncounterBattleGenerationParams:
   ClassSize: '0x60'
 AIShipEncounterCompleteNetEvent:
   Attributes:
-  - Name: pad0x10_A3NQ1[0x10]
+  - Name: pad0x10_MK7VV[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -307,7 +307,7 @@ AIShipEncounterCompleteNetEvent:
     Offset: '0x15'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_TJ624[0x2]
+  - Name: pad0x2_GE6XU[0x2]
     Offset: '0x16'
     Size: '0x2'
     Type: char
@@ -337,7 +337,7 @@ AIShipEncounterDynamicBalancingDesc:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_JUOA0[0x3]
+  - Name: pad0x3_D7ACL[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -357,7 +357,7 @@ AIShipEncounterDynamicBalancingDesc:
     Offset: '0x20'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_XNMJD[0x4]
+  - Name: pad0x4_SJOCE[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -384,7 +384,7 @@ AIShipEncounterDynamicBalancingPlayerShipValueDesc:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_BG3AW[0x4]
+  - Name: pad0x4_YR431[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -399,7 +399,7 @@ AIShipEncounterDynamicBalancingPoolSizeDesc:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_STRWJ[0x4]
+  - Name: pad0x4_BV3S8[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -414,14 +414,14 @@ AIShipEncounterDynamicBalancingWaveConfigCostDesc:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_1MUFH[0x4]
+  - Name: pad0x4_T7JAY[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
   ClassSize: '0x18'
 AIShipEncounterDynamicWaveNetworkEvent:
   Attributes:
-  - Name: pad0x20_5ULH4[0x20]
+  - Name: pad0x20_ID8EV[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
@@ -482,7 +482,7 @@ AIShipEncounterNotification:
     Offset: '0x79'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_TG0C2[0x6]
+  - Name: pad0x6_DCKAQ[0x6]
     Offset: '0x7a'
     Size: '0x6'
     Type: char
@@ -497,11 +497,15 @@ AIShipEncounterParams:
     Offset: '0x4'
     Size: '0x4'
     Type: float
-  - Name: ShipTypeParams
+  - Name: MinEngagedDistanceFromPlayersRemoteConfigKey
     Offset: '0x8'
     Size: '0x10'
+    Type: struct FString
+  - Name: ShipTypeParams
+    Offset: '0x18'
+    Size: '0x10'
     Type: TArray<struct ShipTypeAIShipEncounterParams>
-  ClassSize: '0x18'
+  ClassSize: '0x28'
 AIShipEncounterParamsSpawnerData:
   Attributes:
   - Name: Spawner
@@ -516,7 +520,7 @@ AIShipEncounterParamsSpawnerData:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_PW6Z2[0x3]
+  - Name: pad0x3_UTZ1I[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -543,7 +547,7 @@ AIShipEncounterParamsSpawnerData:
   ClassSize: '0x20'
 AIShipEncounterRevealNetEvent:
   Attributes:
-  - Name: pad0x10_J8YYP[0x10]
+  - Name: pad0x10_TYMVP[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -563,7 +567,7 @@ AIShipEncounterRevealNetEvent:
     Offset: '0x19'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_Y3XBC[0x6]
+  - Name: pad0x6_X8DHD[0x6]
     Offset: '0x1a'
     Size: '0x6'
     Type: char
@@ -584,7 +588,7 @@ AIShipEncounterWaveDesc:
   ClassSize: '0x10'
 AIShipEncounterZoneEnteredNetworkEvent:
   Attributes:
-  - Name: pad0x10_KXOVE[0x10]
+  - Name: pad0x10_NOH1K[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -607,7 +611,7 @@ AIShipEncounterZoneEnteredNetworkEvent:
   ClassSize: '0x20'
 AIShipEncounterZoneExitedNetworkEvent:
   Attributes:
-  - Name: pad0x10_I135G[0x10]
+  - Name: pad0x10_Y80Z0[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -622,7 +626,7 @@ AIShipGenerationParams:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_MMQ03[0x6]
+  - Name: pad0x6_3OD2C[0x6]
     Offset: '0x2'
     Size: '0x6'
     Type: char
@@ -642,7 +646,7 @@ AIShipGenerationParams:
     Offset: '0x30'
     Size: '0x14'
     Type: struct AIShipContextDescDamageParams
-  - Name: pad0x4_UHGSU[0x4]
+  - Name: pad0x4_E9VOG[0x4]
     Offset: '0x44'
     Size: '0x4'
     Type: char
@@ -675,7 +679,7 @@ AIShipSingleWaveEncounterDescGenerationParams:
   ClassSize: '0x10'
 AIShipSinkNetworkEvent:
   Attributes:
-  - Name: pad0x10_E9H31[0x10]
+  - Name: pad0x10_H63AC[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -701,7 +705,7 @@ AIShipSizeLimit:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_70CL5[0x4]
+  - Name: pad0x4_DARWB[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -774,14 +778,14 @@ AIShipSpawnedEvent:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_04HKH[0x4]
+  - Name: pad0x4_QJ56Z[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
   ClassSize: '0x40'
 AIShipSpawnedNetworkEvent:
   Attributes:
-  - Name: pad0x10_R70TE[0x10]
+  - Name: pad0x10_FN1XY[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -796,7 +800,7 @@ AIShipWeightedSize:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_N6WX7[0x4]
+  - Name: pad0x4_XFC5L[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -834,7 +838,7 @@ CursedSailsBattleParams:
     Offset: '0x71'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_M8XUF[0x6]
+  - Name: pad0x6_ULZ1T[0x6]
     Offset: '0x72'
     Size: '0x6'
     Type: char
@@ -860,7 +864,7 @@ FeatureLockedAIShipBattles:
     Offset: '0x0'
     Size: '0xc'
     Type: struct FeatureFlag
-  - Name: pad0x4_RQZG2[0x4]
+  - Name: pad0x4_7Q3RU[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -879,7 +883,7 @@ FeatureLockedAIShipEncounterBattleGenerationParams:
     Offset: '0x8'
     Size: '0x60'
     Type: struct AIShipEncounterBattleGenerationParams
-  - Name: pad0x10_MR26V[0x10]
+  - Name: pad0x10_FWKUX[0x10]
     Offset: '0x68'
     Size: '0x10'
     Type: char
@@ -890,7 +894,7 @@ RelativeSpawnLocationGeneratorParams:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<struct WeightedSpawnDirection>
-  - Name: pad0x90_3AGCD[0x90]
+  - Name: pad0x90_ORQ6Z[0x90]
     Offset: '0x10'
     Size: '0x90'
     Type: char
@@ -975,7 +979,7 @@ TrackingNoiseGenerator:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_YYXQZ[0xc]
+  - Name: pad0xc_WGAYI[0xc]
     Offset: '0xc'
     Size: '0xc'
     Type: char
@@ -986,7 +990,7 @@ WeightedAIShipCrewAmmoType:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_UCWTJ[0x4]
+  - Name: pad0x4_OPVDR[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -1001,7 +1005,7 @@ WeightedAIShipCrewFormType:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_63C2Y[0x4]
+  - Name: pad0x4_XIAEK[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -1024,7 +1028,7 @@ WeightedSpawnDirection:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_YUHNU[0x4]
+  - Name: pad0x4_J9B0C[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -1032,7 +1036,7 @@ WeightedSpawnDirection:
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<struct WeightedSpawnOffset>
-  - Name: pad0x90_NUBM5[0x90]
+  - Name: pad0x90_VOGKU[0x90]
     Offset: '0x20'
     Size: '0x90'
     Type: char
@@ -1051,7 +1055,7 @@ WeightedSpawnOffset:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_T9K86[0x4]
+  - Name: pad0x4_EIAKQ[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
