@@ -28,7 +28,7 @@ CommodityDemandFrameworkSettings:
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_3R2JK[0x4]
+  - Name: pad0x4_N1OID[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -50,7 +50,7 @@ CommodityDemandFrameworkSettings:
   Super: DeveloperSettings
 CommodityDemandService:
   Attributes:
-  - Name: pad0x20_D3W2D[0x20]
+  - Name: pad0x20_NXI8H[0x20]
     Offset: '0x3c8'
     Size: '0x20'
     Type: char
@@ -62,7 +62,7 @@ CommodityDemandService:
     Offset: '0x408'
     Size: '0x8'
     Type: class MerchantSovereignHandInNameInformationDataAsset*
-  - Name: pad0x30_8LHX2[0x30]
+  - Name: pad0x30_3AX7M[0x30]
     Offset: '0x410'
     Size: '0x30'
     Type: char
@@ -108,7 +108,7 @@ CommodityItemDesc:
     Offset: '0x128'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_BFG49[0x7]
+  - Name: pad0x7_4DJY0[0x7]
     Offset: '0x129'
     Size: '0x7'
     Type: char
@@ -118,7 +118,7 @@ CommodityItemDesc:
   Super: BootyItemDesc
 CommodityPurchaseTrackingComponent:
   Attributes:
-  - Name: pad0x90_8X4R4[0x90]
+  - Name: pad0x90_WO869[0x90]
     Offset: '0xc8'
     Size: '0x90'
     Type: char
@@ -128,7 +128,7 @@ CommodityPurchaseTrackingComponent:
   Super: ActorComponent
 CommodityRedemptionComponent:
   Attributes:
-  - Name: pad0x8_RDHA5[0x8]
+  - Name: pad0x8_T0GPQ[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -136,16 +136,16 @@ CommodityRedemptionComponent:
     Offset: '0xd0'
     Size: '0x38'
     Type: struct FText
-  - Name: pad0x78_FTR2C[0x78]
+  - Name: pad0x80_NDTDY[0x80]
     Offset: '0x108'
-    Size: '0x78'
+    Size: '0x80'
     Type: char
   - Name: PendingRedemptions
-    Offset: '0x180'
+    Offset: '0x188'
     Size: '0x10'
     Type: TArray<class Actor*>
-  ClassSize: '0xc8'
-  FullSize: '0x190'
+  ClassSize: '0xd0'
+  FullSize: '0x198'
   InheritedSize: '0xc8'
   Super: ActorComponent
 CommodityRedemptionInterface:
@@ -156,7 +156,7 @@ CommodityRedemptionInterface:
   Super: Interface
 CommoditySourceComponent:
   Attributes:
-  - Name: pad0x8_7LF9V[0x8]
+  - Name: pad0x8_ULKE5[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -204,7 +204,7 @@ CommodityTypeDataAsset:
   Super: DataAsset
 CrateFillerComponent:
   Attributes:
-  - Name: pad0x10_KC6G5[0x10]
+  - Name: pad0x10_Y0AWR[0x10]
     Offset: '0xc8'
     Size: '0x10'
     Type: char
@@ -230,7 +230,7 @@ IsWieldedCommodityItemInDemandStatCondition:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1f_3UEYB[0x1f]
+  - Name: pad0x1f_SJT2T[0x1f]
     Offset: '0x31'
     Size: '0x1f'
     Type: char
@@ -250,7 +250,7 @@ MerchantSovereignHandInNameInformationDataAsset:
   Super: DataAsset
 SpecificItemsCrateFillerComponent:
   Attributes:
-  - Name: pad0x8_4SCUW[0x8]
+  - Name: pad0x8_E2O03[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -268,7 +268,7 @@ WasWieldedCommodityItemBoughtAtDemandStatCondition:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_9ENVG[0x7]
+  - Name: pad0x7_1TVM0[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char

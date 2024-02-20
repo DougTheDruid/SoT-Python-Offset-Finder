@@ -32,7 +32,7 @@ AIActionContextTag:
   Super: Object
 AIActionInstigatorComponent:
   Attributes:
-  - Name: pad0x8_SAXYM[0x8]
+  - Name: pad0x8_PCD5U[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -66,7 +66,7 @@ AIActionRole:
   Super: Object
 AIActionSpotComponent:
   Attributes:
-  - Name: pad0x8_ORB3Z[0x8]
+  - Name: pad0x8_D03XY[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -86,7 +86,7 @@ AIActionSpotComponent:
     Offset: '0x100'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x18_JR1PY[0x18]
+  - Name: pad0x18_OUZG7[0x18]
     Offset: '0x108'
     Size: '0x18'
     Type: char
@@ -102,7 +102,7 @@ AIActionSpotInterface:
   Super: Interface
 AIActionSpotService:
   Attributes:
-  - Name: pad0x68_QL3T3[0x68]
+  - Name: pad0x68_OCQC4[0x68]
     Offset: '0x28'
     Size: '0x68'
     Type: char
@@ -118,7 +118,7 @@ AIActionSpotServiceInterface:
   Super: Interface
 DockableRotationOverrideComponent:
   Attributes:
-  - Name: pad0x8_7EIHZ[0x8]
+  - Name: pad0x8_CUL3L[0x8]
     Offset: '0xc8'
     Size: '0x8'
     Type: char
@@ -126,7 +126,7 @@ DockableRotationOverrideComponent:
     Offset: '0xd0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_TCA9D[0x7]
+  - Name: pad0x7_8HFWZ[0x7]
     Offset: '0xd1'
     Size: '0x7'
     Type: char

@@ -1,45 +1,10 @@
 {
-  "GoalDrivenAIController": {
-    "Super": "AIController",
-    "FullSize": "0x588",
-    "InheritedSize": "0x4b8",
-    "ClassSize": "0xd0",
-    "Attributes": [
-      {
-        "Name": "pad0xd0_GXWTT[0xd0]",
-        "Type": "char",
-        "Size": "0xd0",
-        "Offset": "0x4b8"
-      }
-    ]
-  },
-  "GoalDrivenCharacter": {
-    "Super": "CharacterWithActionStateMachine",
-    "FullSize": "0x610",
-    "InheritedSize": "0x600",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_7KI8T[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x600"
-      }
-    ]
-  },
-  "GoalDrivenCharacterAggregationComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_XJCFL[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0xc8"
-      }
-    ]
+  "GoalDrivenCharacterWithRotationOverrideDockingPolicyDefinition": {
+    "Super": "DockingPolicyDefinition",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "GoalDrivenCharacterAnimInstance": {
     "Super": "AnimInstance",
@@ -48,12 +13,66 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "GoalDrivenPathFollowingComponent": {
+    "Super": "PathFollowingComponent",
+    "FullSize": "0x2c8",
+    "InheritedSize": "0x2b8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ReachedGoalMaxSpeedToSlowDistanceFactor",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2b8"
+      },
+      {
+        "Name": "MinSlowDownSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2bc"
+      },
+      {
+        "Name": "pad0x8_468JI[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x2c0"
+      }
+    ]
+  },
   "GoalDrivenCharacterDockingPolicyDefinition": {
     "Super": "DockingPolicyDefinition",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "GoalDrivenCharacterAggregationComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_Z9TO5[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "GoalDrivenAIController": {
+    "Super": "AIController",
+    "FullSize": "0x588",
+    "InheritedSize": "0x4b8",
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "pad0xd0_GVYOH[0xd0]",
+        "Type": "char",
+        "Size": "0xd0",
+        "Offset": "0x4b8"
+      }
+    ]
   },
   "GoalDrivenCharacterMovementComponent": {
     "Super": "CharacterMovementComponent",
@@ -62,7 +81,7 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "pad0x10_ELUJ0[0x10]",
+        "Name": "pad0x10_STL95[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x590"
@@ -74,7 +93,7 @@
         "Offset": "0x5a0"
       },
       {
-        "Name": "pad0x3_RXRC3[0x3]",
+        "Name": "pad0x3_Y846E[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5a1"
@@ -98,7 +117,7 @@
         "Offset": "0x5ac"
       },
       {
-        "Name": "pad0x3_RYRLF[0x3]",
+        "Name": "pad0x3_C4RTX[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5ad"
@@ -140,43 +159,24 @@
         "Offset": "0x5c4"
       },
       {
-        "Name": "pad0x38_1CCIG[0x38]",
+        "Name": "pad0x38_POCPU[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x5c8"
       }
     ]
   },
-  "GoalDrivenCharacterWithRotationOverrideDockingPolicyDefinition": {
-    "Super": "DockingPolicyDefinition",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "GoalDrivenPathFollowingComponent": {
-    "Super": "PathFollowingComponent",
-    "FullSize": "0x2c8",
-    "InheritedSize": "0x2b8",
+  "GoalDrivenCharacter": {
+    "Super": "CharacterWithActionStateMachine",
+    "FullSize": "0x610",
+    "InheritedSize": "0x600",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ReachedGoalMaxSpeedToSlowDistanceFactor",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2b8"
-      },
-      {
-        "Name": "MinSlowDownSpeed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2bc"
-      },
-      {
-        "Name": "pad0x8_ZL39Y[0x8]",
+        "Name": "pad0x10_ACYU0[0x10]",
         "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x2c0"
+        "Size": "0x10",
+        "Offset": "0x600"
       }
     ]
   },

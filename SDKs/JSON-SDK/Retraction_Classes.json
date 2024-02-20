@@ -1,4 +1,57 @@
 {
+  "RetractableProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RetractableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RetractorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x128",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x48_N7BXF[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "RetractDestinationComponent",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "RetractingComponent",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "pad0x8_R63DO[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x120"
+      }
+    ]
+  },
+  "RetractorInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "RetractableComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x110",
@@ -6,7 +59,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x38_ONKJH[0x38]",
+        "Name": "pad0x38_M4KEU[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0xc8"
@@ -48,33 +101,12 @@
         "Offset": "0x10e"
       },
       {
-        "Name": "pad0x1_UXPOE[0x1]",
+        "Name": "pad0x1_17DWQ[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x10f"
       }
     ]
-  },
-  "RetractorInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RetractableInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RetractableProviderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "RetractableFloatingBarrelComponent": {
     "Super": "RetractableComponent",
@@ -83,42 +115,10 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_EVGQ5[0x10]",
+        "Name": "pad0x10_4X6ME[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x110"
-      }
-    ]
-  },
-  "RetractorComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x128",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "pad0x48_XTMH4[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "RetractDestinationComponent",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "RetractingComponent",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x118"
-      },
-      {
-        "Name": "pad0x8_6OM6P[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x120"
       }
     ]
   },

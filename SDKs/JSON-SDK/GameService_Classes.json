@@ -1,19 +1,12 @@
 {
-  "ServiceProviderGameState": {
-    "Super": "GameState",
-    "FullSize": "0x540",
-    "InheritedSize": "0x420",
-    "ClassSize": "0x120",
-    "Attributes": [
-      {
-        "Name": "pad0x120_8G5XD[0x120]",
-        "Type": "char",
-        "Size": "0x120",
-        "Offset": "0x420"
-      }
-    ]
+  "GameServiceProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
-  "GameServiceLifecycleInterface": {
+  "GameServiceTickInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -27,14 +20,21 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "GameServiceProviderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "ServiceProviderGameState": {
+    "Super": "GameState",
+    "FullSize": "0x530",
+    "InheritedSize": "0x410",
+    "ClassSize": "0x120",
+    "Attributes": [
+      {
+        "Name": "pad0x120_F5716[0x120]",
+        "Type": "char",
+        "Size": "0x120",
+        "Offset": "0x410"
+      }
+    ]
   },
-  "GameServiceTickInterface": {
+  "GameServiceLifecycleInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

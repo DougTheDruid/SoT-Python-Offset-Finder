@@ -10,6 +10,17 @@
       }
     ]
   },
+  "SocketLookupCache": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_IN72W[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "SocketPath": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -20,7 +31,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_7LO23[0x8]",
+        "Name": "pad0x8_DU8SA[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x10"
@@ -41,17 +52,6 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "SocketLookupCache": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_0GK1Z[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x0"
       }
     ]
   },

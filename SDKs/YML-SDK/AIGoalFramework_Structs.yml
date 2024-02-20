@@ -5,11 +5,11 @@ AIGoalMovementModeFilter:
   - Name: DisallowedMovementModes
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Byte DisallowedMovementModes>
+    Type: TArray<char>
   - Name: DisallowedCustomMovementModes
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Byte DisallowedCustomMovementModes>
+    Type: TArray<char>
   ClassSize: '0x20'
 EventAIGoalHighPriorityTargetSuggestion:
   Attributes:
@@ -36,7 +36,7 @@ EventAIGoalTargetActorChanged:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_TM6Y7[0x6]
+  - Name: pad0x6_256OA[0x6]
     Offset: '0x12'
     Size: '0x6'
     Type: char

@@ -1,133 +1,4 @@
 {
-  "WeightedFireworkVFXData": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "VFX",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Sfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SecondarySFX",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "AmbientLightColour",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "pad0x4_NCE96[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      }
-    ]
-  },
-  "GeneratedFireworkData": {
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "pad0xc_NC2EW[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FireworkAmbientLightData",
-        "Type": "struct FireworkAmbientLightData",
-        "Size": "0x14",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "pad0x8_LQZSP[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "ExplosionData",
-        "Type": "TArray<struct FireworkExplosionData>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "SfxPool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "LaunchSfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x8_QCIKS[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "FireworkFeedbackData",
-        "Type": "class FireworkFeedbackDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x50"
-      }
-    ]
-  },
-  "FireworkExplosionData": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x8_O3VSM[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "VFX",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Sfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SecondarySFX",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x20_WJT2Q[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x20"
-      }
-    ]
-  },
   "FireworkAmbientLightData": {
     "ClassSize": "0x14",
     "Attributes": [
@@ -163,6 +34,105 @@
       }
     ]
   },
+  "WeightedProjectileMeshAnimationData": {
+    "ClassSize": "0x178",
+    "Attributes": [
+      {
+        "Name": "AnimationCurve",
+        "Type": "struct RuntimeVectorCurve",
+        "Size": "0x170",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "pad0x4_1159Q[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x174"
+      }
+    ]
+  },
+  "FireworkExplosionData": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x8_0QTAO[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "VFX",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Sfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SecondarySFX",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x20_7Y4EL[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "WeightedFireworkVFXData": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "VFX",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Sfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SecondarySFX",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "AmbientLightColour",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "pad0x4_S3ZCP[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
   "FireworkSequentialSelectionType": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -180,26 +150,56 @@
       }
     ]
   },
-  "WeightedProjectileMeshAnimationData": {
-    "ClassSize": "0x178",
+  "GeneratedFireworkData": {
+    "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "AnimationCurve",
-        "Type": "struct RuntimeVectorCurve",
-        "Size": "0x170",
+        "Name": "pad0xc_CW72H[0xc]",
+        "Type": "char",
+        "Size": "0xc",
         "Offset": "0x0"
       },
       {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x170"
+        "Name": "FireworkAmbientLightData",
+        "Type": "struct FireworkAmbientLightData",
+        "Size": "0x14",
+        "Offset": "0xc"
       },
       {
-        "Name": "pad0x4_ADKL4[0x4]",
+        "Name": "pad0x8_A1HVZ[0x8]",
         "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x174"
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "ExplosionData",
+        "Type": "TArray<struct FireworkExplosionData>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "SfxPool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "LaunchSfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x8_S3I7Q[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "FireworkFeedbackData",
+        "Type": "class FireworkFeedbackDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x50"
       }
     ]
   },

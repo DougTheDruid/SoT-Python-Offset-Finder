@@ -26,11 +26,11 @@ GameServiceTickInterface:
   Super: Interface
 ServiceProviderGameState:
   Attributes:
-  - Name: pad0x120_8G5XD[0x120]
-    Offset: '0x420'
+  - Name: pad0x120_F5716[0x120]
+    Offset: '0x410'
     Size: '0x120'
     Type: char
   ClassSize: '0x120'
-  FullSize: '0x540'
-  InheritedSize: '0x420'
+  FullSize: '0x530'
+  InheritedSize: '0x410'
   Super: GameState

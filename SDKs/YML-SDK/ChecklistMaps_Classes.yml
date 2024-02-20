@@ -10,7 +10,7 @@ ChecklistActionData:
     Offset: '0x2c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_SN6BQ[0x3]
+  - Name: pad0x3_WDXEX[0x3]
     Offset: '0x2d'
     Size: '0x3'
     Type: char
@@ -50,7 +50,7 @@ ChecklistMap:
     Offset: '0x83c'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_O8I9L[0x8]
+  - Name: pad0x8_HQC9B[0x8]
     Offset: '0x840'
     Size: '0x8'
     Type: char
@@ -62,7 +62,7 @@ ChecklistMap:
     Offset: '0x850'
     Size: '0xe8'
     Type: struct ChecklistMapContents
-  - Name: pad0x48_U25U7[0x48]
+  - Name: pad0x48_50K9B[0x48]
     Offset: '0x938'
     Size: '0x48'
     Type: char
@@ -82,7 +82,7 @@ ChecklistMapCompletionComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: class ChecklistActionData*
-  - Name: pad0x80_7XASS[0x80]
+  - Name: pad0x80_XKXPL[0x80]
     Offset: '0xd0'
     Size: '0x80'
     Type: char
@@ -99,7 +99,7 @@ ChecklistMapSettings:
   - Name: ChecklistEvents
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<struct FName>
+    Type: TArray<struct Name>
   ClassSize: '0x20'
   FullSize: '0x58'
   InheritedSize: '0x38'
@@ -109,7 +109,7 @@ DeliverBootyChecklistActionData:
   - Name: TargetBootyTypes
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Assetclass TargetBootyTypes>
+    Type: TArray<Class>
   - Name: TargetCompanies
     Offset: '0x40'
     Size: '0x10'

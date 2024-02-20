@@ -1,4 +1,15 @@
 {
+  "ExistingNPCToPhasedNPC": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x40_HZSX2[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "ClueDestinationToTextIndex": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -9,67 +20,10 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x20_J8294[0x20]",
+        "Name": "pad0x20_LW3ZM[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "ClueDestinationChoice": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Destination",
-        "Type": "class ClueDestinationDescriptor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x8_FEHPL[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "GenderSpecificTextPairings": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "MasculineClueDestinationDescription",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FeminineClueDestinationDescription",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "TextEntryWithLayout": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "TextEntry",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TextLayout",
-        "Type": "struct TreasureMapWidgetText",
-        "Size": "0x3c",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x4_VAG0K[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x74"
       }
     ]
   },
@@ -89,21 +43,67 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_T7RWF[0x4]",
+        "Name": "pad0x4_8WSQD[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
       }
     ]
   },
-  "ExistingNPCToPhasedNPC": {
-    "ClassSize": "0x40",
+  "ClueDestinationChoice": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x40_HO2SW[0x40]",
-        "Type": "char",
-        "Size": "0x40",
+        "Name": "Destination",
+        "Type": "class ClueDestinationDescriptor*",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_3X10S[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "TextEntryWithLayout": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "TextEntry",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TextLayout",
+        "Type": "struct TreasureMapWidgetText",
+        "Size": "0x3c",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_JU3QZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x74"
+      }
+    ]
+  },
+  "GenderSpecificTextPairings": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "MasculineClueDestinationDescription",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FeminineClueDestinationDescription",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x38"
       }
     ]
   },

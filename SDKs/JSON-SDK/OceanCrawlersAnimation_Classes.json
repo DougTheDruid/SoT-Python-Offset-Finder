@@ -13,104 +13,6 @@
       }
     ]
   },
-  "OceanCrawlerAnimationInstance": {
-    "Super": "AnimInstance",
-    "FullSize": "0x720",
-    "InheritedSize": "0x440",
-    "ClassSize": "0x2e0",
-    "Attributes": [
-      {
-        "Name": "pad0x18_TDRZC[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "LoadedAnimations",
-        "Type": "struct OceanCrawlerAnimationDataStructure",
-        "Size": "0x90",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "MovementData",
-        "Type": "struct ActorVelocityData",
-        "Size": "0x18",
-        "Offset": "0x4e8"
-      },
-      {
-        "Name": "CurrentDirection",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x500"
-      },
-      {
-        "Name": "pad0x4_UD0GV[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x504"
-      },
-      {
-        "Name": "AttackAnims",
-        "Type": "struct AthenaAnimationWeapon",
-        "Size": "0xb8",
-        "Offset": "0x508"
-      },
-      {
-        "Name": "UseDefaultAnimations",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x5c0"
-      },
-      {
-        "Name": "AnimationsLoaded",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x5c1"
-      },
-      {
-        "Name": "SporeBreathActive",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x5c2"
-      },
-      {
-        "Name": "pad0x1_AS8GK[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x5c3"
-      },
-      {
-        "Name": "PropAttachmentSocket",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x5c4"
-      },
-      {
-        "Name": "pad0x4_ITPTR[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x5cc"
-      },
-      {
-        "Name": "MontagePlayer",
-        "Type": "struct CustomAnimationMontageStateMachine",
-        "Size": "0xd8",
-        "Offset": "0x5d0"
-      },
-      {
-        "Name": "HitReacts",
-        "Type": "struct HitReactionAnimationState",
-        "Size": "0x28",
-        "Offset": "0x6a8"
-      },
-      {
-        "Name": "pad0x50_WDI32[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x6d0"
-      }
-    ]
-  },
   "OceanCrawlerAnimationServerData": {
     "Super": "AnimationServerData",
     "FullSize": "0x48",
@@ -118,7 +20,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x8_C073S[0x8]",
+        "Name": "pad0x8_7FC3D[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -148,10 +50,108 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x4_9OJIJ[0x4]",
+        "Name": "pad0x4_VBTLI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x44"
+      }
+    ]
+  },
+  "OceanCrawlerAnimationInstance": {
+    "Super": "AnimInstance",
+    "FullSize": "0x720",
+    "InheritedSize": "0x440",
+    "ClassSize": "0x2e0",
+    "Attributes": [
+      {
+        "Name": "pad0x18_YLS9C[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "LoadedAnimations",
+        "Type": "struct OceanCrawlerAnimationDataStructure",
+        "Size": "0x90",
+        "Offset": "0x458"
+      },
+      {
+        "Name": "MovementData",
+        "Type": "struct ActorVelocityData",
+        "Size": "0x18",
+        "Offset": "0x4e8"
+      },
+      {
+        "Name": "CurrentDirection",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x500"
+      },
+      {
+        "Name": "pad0x4_U3BRG[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x504"
+      },
+      {
+        "Name": "AttackAnims",
+        "Type": "struct AthenaAnimationWeapon",
+        "Size": "0xb8",
+        "Offset": "0x508"
+      },
+      {
+        "Name": "UseDefaultAnimations",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5c0"
+      },
+      {
+        "Name": "AnimationsLoaded",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5c1"
+      },
+      {
+        "Name": "SporeBreathActive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5c2"
+      },
+      {
+        "Name": "pad0x1_X3WHS[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x5c3"
+      },
+      {
+        "Name": "PropAttachmentSocket",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x5c4"
+      },
+      {
+        "Name": "pad0x4_3N8GY[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5cc"
+      },
+      {
+        "Name": "MontagePlayer",
+        "Type": "struct CustomAnimationMontageStateMachine",
+        "Size": "0xd8",
+        "Offset": "0x5d0"
+      },
+      {
+        "Name": "HitReacts",
+        "Type": "struct HitReactionAnimationState",
+        "Size": "0x28",
+        "Offset": "0x6a8"
+      },
+      {
+        "Name": "pad0x50_UT8O0[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x6d0"
       }
     ]
   },

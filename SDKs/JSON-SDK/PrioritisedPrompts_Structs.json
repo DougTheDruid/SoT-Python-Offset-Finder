@@ -1,21 +1,4 @@
 {
-  "PrioritisedPromptWithHandle": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "PromptHandle",
-        "Type": "struct PrioritisedPromptHandle",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Prompt",
-        "Type": "struct PrioritisedPrompt",
-        "Size": "0x60",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "PrioritisedPrompt": {
     "ClassSize": "0x60",
     "Attributes": [
@@ -26,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_DQB1X[0x7]",
+        "Name": "pad0x7_8805O[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -62,7 +45,7 @@
         "Offset": "0x59"
       },
       {
-        "Name": "pad0x6_R3U3L[0x6]",
+        "Name": "pad0x6_IR5CQ[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x5a"
@@ -80,58 +63,6 @@
       }
     ]
   },
-  "PromptEvaluation": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "PromptType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_ODCES[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "Prompt",
-        "Type": "struct PrioritisedPromptWithHandle",
-        "Size": "0x70",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "PermanentPromptNetworkEvent": {
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "pad0x10_RUFMB[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Prompt",
-        "Type": "struct PrioritisedPromptWithHandle",
-        "Size": "0x70",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "StartOrStop",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "pad0x7_RCV2O[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x81"
-      }
-    ]
-  },
   "PromptsCounterIncrementEvent": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -139,17 +70,6 @@
         "Name": "AccessKey",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "PromptsServiceSetupEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_FNQ36[0x1]",
-        "Type": "char",
-        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
@@ -168,6 +88,86 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "PromptsServiceSetupEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_6BGQF[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PrioritisedPromptWithHandle": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "PromptHandle",
+        "Type": "struct PrioritisedPromptHandle",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Prompt",
+        "Type": "struct PrioritisedPrompt",
+        "Size": "0x60",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "PromptEvaluation": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "PromptType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_2YAOV[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "Prompt",
+        "Type": "struct PrioritisedPromptWithHandle",
+        "Size": "0x70",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PermanentPromptNetworkEvent": {
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "pad0x10_C5FF4[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Prompt",
+        "Type": "struct PrioritisedPromptWithHandle",
+        "Size": "0x70",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "StartOrStop",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x7_SJQQ3[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x81"
       }
     ]
   },

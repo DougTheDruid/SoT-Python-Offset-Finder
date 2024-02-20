@@ -1,4 +1,60 @@
 {
+  "CrewJoinedInvasionBattleTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ItemsBroughtToBattle",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TaleDisplayedInvasionBanner": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "InvasionServiceMatchmakingCrewInfo": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewSessionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_VI5BA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "CrewStoppedInvasion": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "InvasionCrewData": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -15,7 +71,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_BXPP5[0x3]",
+        "Name": "pad0x3_WMGJ3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -33,10 +89,21 @@
         "Offset": "0x1c"
       },
       {
-        "Name": "pad0x3_K5DQA[0x3]",
+        "Name": "pad0x3_M9Z9T[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1d"
+      }
+    ]
+  },
+  "CrewMatchmakingCancelledDueToInvasion": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -61,7 +128,7 @@
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "pad0x10_OUTJN[0x10]",
+        "Name": "pad0x10_8C4G3[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"
@@ -85,7 +152,7 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x3_XGBV3[0x3]",
+        "Name": "pad0x3_UAYCD[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x59"
@@ -103,43 +170,10 @@
         "Offset": "0x64"
       },
       {
-        "Name": "pad0x3_ERNQR[0x3]",
+        "Name": "pad0x3_2U8Q0[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x65"
-      }
-    ]
-  },
-  "TaleDisplayedInvasionBanner": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Player",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CrewMatchmakingCancelledDueToInvasion": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CrewStoppedInvasion": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },
@@ -170,7 +204,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x58_YTDST[0x58]",
+        "Name": "pad0x58_29I22[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x20"
@@ -199,7 +233,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_G0PJ4[0x4]",
+        "Name": "pad0x4_BCKF1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
@@ -217,44 +251,10 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x7_6NFZQ[0x7]",
+        "Name": "pad0x7_6T36R[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x49"
-      }
-    ]
-  },
-  "CrewJoinedInvasionBattleTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ItemsBroughtToBattle",
-        "Type": "TArray<Str ItemsBroughtToBattle>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "InvasionServiceMatchmakingCrewInfo": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CrewSessionType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x3_RVYEX[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x11"
       }
     ]
   },

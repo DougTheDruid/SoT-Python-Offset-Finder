@@ -22,7 +22,7 @@ DeedProgressDesc:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_IAW4G[0x4]
+  - Name: pad0x4_3PXY6[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -44,7 +44,7 @@ EnableMoreButtonEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_YSOAR[0x3]
+  - Name: pad0x3_BSUOA[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -59,7 +59,7 @@ NavigationDesc:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_QZHTT[0x3]
+  - Name: pad0x3_DU9PA[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -74,7 +74,7 @@ OpenSeasonsMenuEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_FF16L[0x3]
+  - Name: pad0x3_3OC8W[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -121,7 +121,7 @@ SeasonGoalPopupAsset:
     Offset: '0x78'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_LGGXI[0x4]
+  - Name: pad0x4_DJ9ZR[0x4]
     Offset: '0x7c'
     Size: '0x4'
     Type: char
@@ -156,7 +156,7 @@ SeasonIconPopupAsset:
     Offset: '0x60'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_9VNP4[0x4]
+  - Name: pad0x4_SHL5H[0x4]
     Offset: '0x64'
     Size: '0x4'
     Type: char
@@ -191,7 +191,7 @@ SeasonNotificationContent:
     Offset: '0x60'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_Y7NWG[0x4]
+  - Name: pad0x4_522J0[0x4]
     Offset: '0x64'
     Size: '0x4'
     Type: char
@@ -206,7 +206,7 @@ SeasonProgressionUIEventTypeTelemetryFragment:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_8TFLF[0x4]
+  - Name: pad0x4_UDI72[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -221,14 +221,14 @@ SeasonProgressionUITelemetryFragment:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_JNAH6[0x4]
+  - Name: pad0x4_EZVBN[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
   ClassSize: '0x18'
 SeasonProgressionUITelemetryFragmentInput:
   Attributes:
-  - Name: pad0x8_E137K[0x8]
+  - Name: pad0x8_WK80F[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -267,7 +267,7 @@ SeasonTextPopupAsset:
     Offset: '0x98'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5N088[0x4]
+  - Name: pad0x4_3CK0C[0x4]
     Offset: '0x9c'
     Size: '0x4'
     Type: char
@@ -296,7 +296,7 @@ SeasonsChatNotificationEvent:
   ClassSize: '0x60'
 SeasonsChatNotificationNetworkEvent:
   Attributes:
-  - Name: pad0x10_VM238[0x10]
+  - Name: pad0x10_2RF8D[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -307,7 +307,7 @@ SeasonsChatNotificationNetworkEvent:
   ClassSize: '0x70'
 SeasonsDataRefreshEvent:
   Attributes:
-  - Name: pad0x1_17GAY[0x1]
+  - Name: pad0x1_G6MEU[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -317,11 +317,11 @@ SeasonsPopupEvent:
   - Name: Text
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct FText>
+    Type: TArray<struct Text>
   - Name: Images
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Str Images>
+    Type: TArray<String>
   - Name: Background
     Offset: '0x20'
     Size: '0x10'
@@ -333,7 +333,7 @@ SeasonsPopupEvent:
   - Name: StyleModifiers
     Offset: '0x70'
     Size: '0x10'
-    Type: TArray<Byte StyleModifiers>
+    Type: TArray<char>
   - Name: Rank
     Offset: '0x80'
     Size: '0x4'
@@ -346,7 +346,7 @@ SeasonsPopupEvent:
     Offset: '0x98'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_9MTYP[0x4]
+  - Name: pad0x4_T7K2J[0x4]
     Offset: '0x9c'
     Size: '0x4'
     Type: char
@@ -368,7 +368,7 @@ SeasonsTextNotification:
   ClassSize: '0x88'
 SeasonsTextNotificationNetworkEvent:
   Attributes:
-  - Name: pad0x10_9GJSM[0x10]
+  - Name: pad0x10_STBZC[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char

@@ -6,18 +6,18 @@ BP_AnimatedStepsComponent_C:
     Offset: '0xf0'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
-  - Name: pad0xb7_XC0XR[0xb7]
+  - Name: pad0x102_WFWTK[0x102]
     Offset: '0xf8'
-    Size: '0xb7'
+    Size: '0x102'
     Type: char
   - Name: BoxDelays
     Offset: '0xf8'
     Size: '0x10'
-    Type: TArray<Float BoxDelays>
+    Type: TArray<float>
   - Name: BoxTargetZs
     Offset: '0x108'
     Size: '0x10'
-    Type: TArray<Float BoxTargetZs>
+    Type: TArray<float>
   - Name: AnimCurve
     Offset: '0x118'
     Size: '0x8'

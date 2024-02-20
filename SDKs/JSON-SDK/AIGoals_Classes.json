@@ -1,63 +1,4 @@
 {
-  "AIHomeComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x8_CWJPG[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "HomeActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "AlwaysEvaluatesTrueAIGoal": {
-    "Super": "AIGoal",
-    "FullSize": "0x40",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BTService_SetBestActionSpotNearTarget": {
-    "Super": "BTService",
-    "FullSize": "0x110",
-    "InheritedSize": "0x70",
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "TargetKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "BestActionSpotKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "BestActionSpotSelectionCriteria",
-        "Type": "struct BestActionSpotSelectionCriteria",
-        "Size": "0x34",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x1c_MZYNV[0x1c]",
-        "Type": "char",
-        "Size": "0x1c",
-        "Offset": "0xf4"
-      }
-    ]
-  },
   "WhileActionSpotAvailableForPatrolAIGoal": {
     "Super": "AIGoal",
     "FullSize": "0x78",
@@ -77,72 +18,21 @@
         "Offset": "0x44"
       },
       {
-        "Name": "pad0x30_PJ81P[0x30]",
+        "Name": "pad0x30_VBBQD[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x48"
       }
     ]
   },
-  "WhileBlackboardKeySetAIGoal": {
-    "Super": "AIGoal",
-    "FullSize": "0x48",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "BlackboardKey",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal": {
-    "Super": "AIGoal",
-    "FullSize": "0x78",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "InnerRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "OuterRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "MovementModeFilter",
-        "Type": "struct AIGoalMovementModeFilter",
-        "Size": "0x20",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "ShouldOnlyActivateWhileDocked",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "pad0x7_93W13[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x69"
-      },
-      {
-        "Name": "TargetPlayerPawn",
-        "Type": "class Pawn*",
-        "Size": "0x8",
-        "Offset": "0x70"
-      }
-    ]
-  },
   "WhileHomeSetAIGoal": {
+    "Super": "AIGoal",
+    "FullSize": "0x40",
+    "InheritedSize": "0x40",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AlwaysEvaluatesTrueAIGoal": {
     "Super": "AIGoal",
     "FullSize": "0x40",
     "InheritedSize": "0x40",
@@ -180,10 +70,120 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x80_8XCD2[0x80]",
+        "Name": "pad0x80_YWLWO[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0x70"
+      }
+    ]
+  },
+  "WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal": {
+    "Super": "AIGoal",
+    "FullSize": "0x78",
+    "InheritedSize": "0x40",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "InnerRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "OuterRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "MovementModeFilter",
+        "Type": "struct AIGoalMovementModeFilter",
+        "Size": "0x20",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "ShouldOnlyActivateWhileDocked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "pad0x7_CA8MM[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x69"
+      },
+      {
+        "Name": "TargetPlayerPawn",
+        "Type": "class Pawn*",
+        "Size": "0x8",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "WhileBlackboardKeySetAIGoal": {
+    "Super": "AIGoal",
+    "FullSize": "0x48",
+    "InheritedSize": "0x40",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "BlackboardKey",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "AIHomeComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x8_K4SWM[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "HomeActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "BTService_SetBestActionSpotNearTarget": {
+    "Super": "BTService",
+    "FullSize": "0x110",
+    "InheritedSize": "0x70",
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "TargetKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "BestActionSpotKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "BestActionSpotSelectionCriteria",
+        "Type": "struct BestActionSpotSelectionCriteria",
+        "Size": "0x34",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x1c_JAZUW[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0xf4"
       }
     ]
   },

@@ -10,14 +10,14 @@ DamageZoneRepairableStateChangedEvent:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_K2O5S[0x7]
+  - Name: pad0x7_3TKN2[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
   ClassSize: '0x10'
 EventRepairableObjectDestroyed:
   Attributes:
-  - Name: pad0x1_K7XDM[0x1]
+  - Name: pad0x1_FITSX[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -32,7 +32,7 @@ EventRepairableObjectRepairEndedEvent:
     Offset: '0x8'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_JKK8R[0x4]
+  - Name: pad0x4_259Y8[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -48,14 +48,14 @@ EventRepairableObjectRepairEndedEvent:
     Offset: '0x24'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_E4WJG[0x3]
+  - Name: pad0x3_PKQM2[0x3]
     Offset: '0x25'
     Size: '0x3'
     Type: char
   ClassSize: '0x28'
 RepairObjectActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x30_V5FE5[0x30]
+  - Name: pad0x30_DI6QH[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -78,14 +78,14 @@ RepairableAuthoritiveRepairState:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_OHIUO[0x7]
+  - Name: pad0x7_0MBY4[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
   - Name: RepairingList
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Weakclass RepairingList>
+    Type: TArray<uintptr_t>
   ClassSize: '0x18'
 RepairableComponentMaxDamageLevelOverride:
   Attributes:
@@ -108,7 +108,7 @@ RepairableComponentRepairableStateChangedEvent:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_JTFBA[0x7]
+  - Name: pad0x7_1VUPN[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -118,7 +118,7 @@ ShipPartDamagePersistenceModel:
   - Name: ComponentRepairableStates
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Byte ComponentRepairableStates>
+    Type: TArray<char>
   - Name: Identifier
     Offset: '0x10'
     Size: '0x10'

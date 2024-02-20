@@ -1,9 +1,37 @@
 {
+  "ChecklistActionProgressTracker": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ActionData",
+        "Type": "class ChecklistActionData*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_5QQT3[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "TaleQuestVariableMapMarkType": {
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_TLVTK[0x30]",
+        "Name": "pad0x30_Y9Y7B[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TaleQuestVariableTreasureMapItemDescType": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_2SASF[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x0"
@@ -20,38 +48,10 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x40_XPJ7V[0x40]",
+        "Name": "pad0x40_8NSHM[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "ChecklistActionProgressTracker": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ActionData",
-        "Type": "class ChecklistActionData*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x8_Z8GGW[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "TaleQuestVariableTreasureMapItemDescType": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_4ALYZ[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
       }
     ]
   },

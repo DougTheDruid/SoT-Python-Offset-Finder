@@ -15,10 +15,21 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x8_BJAGC[0x8]",
+        "Name": "pad0x8_0SRUI[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "AdvertiseGameEventOnDemandAvailabilityTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "GameEventAvailability",
+        "Type": "struct GameEventAvailabilityModel",
+        "Size": "0x20",
+        "Offset": "0x0"
       }
     ]
   },
@@ -44,7 +55,7 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x6_4P6EY[0x6]",
+        "Name": "pad0x6_RQ0EY[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x12"
@@ -58,17 +69,6 @@
         "Name": "GameEventAvailabilityData",
         "Type": "TArray<struct GameEventAvailabilityTelemetryData>",
         "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AdvertiseGameEventOnDemandAvailabilityTelemetryEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "GameEventAvailability",
-        "Type": "struct GameEventAvailabilityModel",
-        "Size": "0x20",
         "Offset": "0x0"
       }
     ]

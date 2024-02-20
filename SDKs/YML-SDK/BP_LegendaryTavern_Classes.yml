@@ -2,31 +2,11 @@
 # https://github.com/DougTheDruid
 BP_LegendaryTavern_C:
   Attributes:
-  - Name: NPCDialogCamera
-    Offset: '0x7b8'
-    Size: '0x8'
-    Type: class CameraComponent*
-  - Name: EmissaryMaxRankQuestProvider
-    Offset: '0x7c0'
-    Size: '0x8'
-    Type: class EmissaryMaxRankQuestProvider*
-  - Name: SolidHits
-    Offset: '0x7c8'
-    Size: '0x8'
-    Type: class CapsuleComponent*
-  - Name: StaticMesh
-    Offset: '0x7d0'
-    Size: '0x8'
-    Type: class StaticMeshComponent*
-  - Name: NPCDialog
-    Offset: '0x7d8'
-    Size: '0x8'
-    Type: class NPCDialogComponent*
-  - Name: AnimNotifyWwiseEmitter
-    Offset: '0x7e0'
-    Size: '0x8'
-    Type: class AnimNotifyWwiseEmitterComponent*
-  ClassSize: '0x30'
-  FullSize: '0x7e8'
-  InheritedSize: '0x7b8'
-  Super: TavernStrangerNPC
+  - Name: pad0x4400a4c0_UX3U2[0x4400a4c0]
+    Offset: '0x0'
+    Size: '0x4400a4c0'
+    Type: char
+  ClassSize: '0x4400a4c0'
+  FullSize: '0x4400a4c0'
+  InheritedSize: '0x0'
+  Super: None

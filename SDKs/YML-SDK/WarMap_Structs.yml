@@ -9,14 +9,14 @@ EventLocalPlayerOpenedWarMap:
   ClassSize: '0x8'
 EventWarMapHardModeStateChanged:
   Attributes:
-  - Name: pad0x1_2X6TB[0x1]
+  - Name: pad0x1_0CSFM[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventWarMapStateChanged:
   Attributes:
-  - Name: pad0x8_4QY8Q[0x8]
+  - Name: pad0x8_4DP47[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char

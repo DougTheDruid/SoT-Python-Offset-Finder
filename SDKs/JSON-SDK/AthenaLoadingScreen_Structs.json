@@ -1,34 +1,33 @@
 {
-  "SlateLoadingScreenImageParams": {
-    "ClassSize": "0x30",
+  "EventAthenaLoadingScreenOpen": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "ImageAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
+        "Name": "pad0x1_8F7TL[0x1]",
+        "Type": "char",
+        "Size": "0x1",
         "Offset": "0x0"
-      },
-      {
-        "Name": "ImageTips",
-        "Type": "TArray<struct FText>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "AdvancedTips",
-        "Type": "struct SlateLoadingScreenAdvancedTipsParams",
-        "Size": "0x10",
-        "Offset": "0x20"
       }
     ]
   },
-  "SlateLoadingScreenAdvancedTipsParams": {
-    "ClassSize": "0x10",
+  "EventAthenaLoadingScreenStateRequest": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "TipDescriptions",
-        "Type": "TArray<struct SlateLoadingScreenAdvancedTipDescription>",
-        "Size": "0x10",
+        "Name": "pad0x1_UN6WR[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventAthenaLoadingScreenClose": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_WH98M[0x1]",
+        "Type": "char",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
@@ -85,32 +84,10 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x4_ILJSA[0x4]",
+        "Name": "pad0x4_0EWP7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xbc"
-      }
-    ]
-  },
-  "EventAthenaLoadingScreenStateResponse": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "IsVisible",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventAthenaLoadingScreenStateRequest": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_6ECAM[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -136,25 +113,48 @@
       }
     ]
   },
-  "EventAthenaLoadingScreenClose": {
+  "EventAthenaLoadingScreenStateResponse": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_SL38V[0x1]",
-        "Type": "char",
+        "Name": "IsVisible",
+        "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "EventAthenaLoadingScreenOpen": {
-    "ClassSize": "0x1",
+  "SlateLoadingScreenAdvancedTipsParams": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x1_2ZL5B[0x1]",
-        "Type": "char",
-        "Size": "0x1",
+        "Name": "TipDescriptions",
+        "Type": "TArray<struct SlateLoadingScreenAdvancedTipDescription>",
+        "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "SlateLoadingScreenImageParams": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "ImageAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ImageTips",
+        "Type": "TArray<struct Text>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "AdvancedTips",
+        "Type": "struct SlateLoadingScreenAdvancedTipsParams",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },

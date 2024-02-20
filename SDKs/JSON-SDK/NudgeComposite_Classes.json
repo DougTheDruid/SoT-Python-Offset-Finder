@@ -1,4 +1,74 @@
 {
+  "NudgeFromStormPolicy": {
+    "Super": "NudgePolicy",
+    "FullSize": "0x158",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "ChanceOfNudge",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x4_R0WP3[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "WeightedTimers",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x58_4JF2F[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x100"
+      }
+    ]
+  },
+  "NudgeFromWaterLevelPolicy": {
+    "Super": "NudgePolicy",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ChanceOfNudge",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x14_SF3RC[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "WaterLevelDifferenceBetweenUpdates",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "ZOffsetFromWaterToMountpoint",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe4"
+      },
+      {
+        "Name": "pad0x8_85QL2[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      }
+    ]
+  },
   "NudgeFromExplosionsPolicy": {
     "Super": "NudgePolicy",
     "FullSize": "0xd8",
@@ -30,76 +100,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xcc"
-      }
-    ]
-  },
-  "NudgeFromStormPolicy": {
-    "Super": "NudgePolicy",
-    "FullSize": "0x158",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "ChanceOfNudge",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x4_Z9JC4[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "WeightedTimers",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "pad0x58_SNIQH[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x100"
-      }
-    ]
-  },
-  "NudgeFromWaterLevelPolicy": {
-    "Super": "NudgePolicy",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "ChanceOfNudge",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x14_0J44X[0x14]",
-        "Type": "char",
-        "Size": "0x14",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "WaterLevelDifferenceBetweenUpdates",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "ZOffsetFromWaterToMountpoint",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xe4"
-      },
-      {
-        "Name": "pad0x8_XKTBL[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xe8"
       }
     ]
   },

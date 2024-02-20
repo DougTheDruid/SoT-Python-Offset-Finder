@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ZoomedInOnWieldableItemActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x30_L2HE0[0x30]
+  - Name: pad0x30_DWK3C[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -26,7 +26,7 @@ ZoomedInOnWieldableItemActionStateConstructionInfo:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_SLU0Z[0x4]
+  - Name: pad0x4_V7EHB[0x4]
     Offset: '0x44'
     Size: '0x4'
     Type: char

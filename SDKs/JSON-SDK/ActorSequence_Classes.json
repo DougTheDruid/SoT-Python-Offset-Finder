@@ -1,24 +1,4 @@
 {
-  "ActorSequence": {
-    "Super": "MovieSceneSequence",
-    "FullSize": "0x2d0",
-    "InheritedSize": "0x2a8",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "MovieScene",
-        "Type": "class MovieScene*",
-        "Size": "0x8",
-        "Offset": "0x2a8"
-      },
-      {
-        "Name": "ObjectReferences",
-        "Type": "struct ActorSequenceObjectReferenceMap",
-        "Size": "0x20",
-        "Offset": "0x2b0"
-      }
-    ]
-  },
   "ActorSequenceComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x108",
@@ -50,10 +30,30 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x7_S1OJK[0x7]",
+        "Name": "pad0x7_2V456[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x101"
+      }
+    ]
+  },
+  "ActorSequence": {
+    "Super": "MovieSceneSequence",
+    "FullSize": "0x2d0",
+    "InheritedSize": "0x2a8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "MovieScene",
+        "Type": "class MovieScene*",
+        "Size": "0x8",
+        "Offset": "0x2a8"
+      },
+      {
+        "Name": "ObjectReferences",
+        "Type": "struct ActorSequenceObjectReferenceMap",
+        "Size": "0x20",
+        "Offset": "0x2b0"
       }
     ]
   },

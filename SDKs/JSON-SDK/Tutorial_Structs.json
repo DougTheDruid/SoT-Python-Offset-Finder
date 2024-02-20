@@ -1,44 +1,4 @@
 {
-  "ContextualTutorialPromptDesc": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "pad0x20_ETBSO[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AccessKey",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MustBeUnderCount",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "EventTutorialTypeDecided": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "TutorialType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "IntroductionToSOTIntroAnimatic": {
     "ClassSize": "0x38",
     "Attributes": [
@@ -55,56 +15,10 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_S5HGP[0x4]",
+        "Name": "pad0x4_V2S34[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
-      }
-    ]
-  },
-  "BeachNPCSpawnFlowNetworkEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x10_DKYJL[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "HasTaleCheckpointVoyage",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_NFE00[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      }
-    ]
-  },
-  "HasTutorialStarterBegunCondition": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x28_0IRHG[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TutorialStarterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x7_S6EPA[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x29"
       }
     ]
   },
@@ -136,10 +50,73 @@
         "Offset": "0x21"
       },
       {
-        "Name": "pad0x6_CV0HL[0x6]",
+        "Name": "pad0x6_1740N[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x22"
+      }
+    ]
+  },
+  "EventTutorialTypeDecided": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "TutorialType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "HasTutorialStarterBegunCondition": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x28_TVE91[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TutorialStarterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_7QQK0[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
+      }
+    ]
+  },
+  "ContextualTutorialPromptDesc": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x20_1WKJ8[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AccessKey",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MustBeUnderCount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x34"
       }
     ]
   },
@@ -147,10 +124,33 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_TITZL[0x1]",
+        "Name": "pad0x1_26KG9[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "BeachNPCSpawnFlowNetworkEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x10_GVWJL[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HasTaleCheckpointVoyage",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_N2DK8[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       }
     ]
   },

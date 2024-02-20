@@ -1,4 +1,33 @@
 {
+  "SerialisedNestedStruct": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "String",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IntArray",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Int",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Float",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x24"
+      }
+    ]
+  },
   "SerialisedTestStruct": {
     "ClassSize": "0x60",
     "Attributes": [
@@ -22,7 +51,7 @@
       },
       {
         "Name": "IntArray",
-        "Type": "TArray<Int IntArray>",
+        "Type": "TArray<int>",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -37,35 +66,6 @@
         "Type": "struct SerialisedNestedStruct",
         "Size": "0x28",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "SerialisedNestedStruct": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "String",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IntArray",
-        "Type": "TArray<Int IntArray>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Int",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "Float",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x24"
       }
     ]
   },

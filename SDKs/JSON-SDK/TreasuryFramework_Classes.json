@@ -6,56 +6,10 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "pad0xa8_23LXW[0xa8]",
+        "Name": "pad0xa8_YKCVM[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0x3c8"
-      }
-    ]
-  },
-  "SunkenKingdomTreasuryDeepSeaRegion": {
-    "Super": "DeepSeaRegion",
-    "FullSize": "0x440",
-    "InheritedSize": "0x438",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_WCMJD[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x438"
-      }
-    ]
-  },
-  "TreasuryWaveDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "Waves1Player",
-        "Type": "TArray<class AIProgressiveWavesSpawner*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Waves2Player",
-        "Type": "TArray<class AIProgressiveWavesSpawner*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "Waves3Player",
-        "Type": "TArray<class AIProgressiveWavesSpawner*>",
-        "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "Waves4Player",
-        "Type": "TArray<class AIProgressiveWavesSpawner*>",
-        "Size": "0x10",
-        "Offset": "0x58"
       }
     ]
   },
@@ -66,7 +20,7 @@
     "ClassSize": "0x1a0",
     "Attributes": [
       {
-        "Name": "pad0x18_MUYR0[0x18]",
+        "Name": "pad0x18_7TXTQ[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3c8"
@@ -223,7 +177,7 @@
       },
       {
         "Name": "CachedParticipantControllers",
-        "Type": "TArray<Weakclass CachedParticipantControllers>",
+        "Type": "TArray<uintptr_t>",
         "Size": "0x10",
         "Offset": "0x4e8"
       },
@@ -240,7 +194,7 @@
         "Offset": "0x500"
       },
       {
-        "Name": "pad0x4_18D2R[0x4]",
+        "Name": "pad0x4_AUYEY[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x504"
@@ -264,10 +218,42 @@
         "Offset": "0x518"
       },
       {
-        "Name": "pad0x48_M5GOL[0x48]",
+        "Name": "pad0x48_D2FVS[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x520"
+      }
+    ]
+  },
+  "TreasuryWaveDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "Waves1Player",
+        "Type": "TArray<class AIProgressiveWavesSpawner*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Waves2Player",
+        "Type": "TArray<class AIProgressiveWavesSpawner*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Waves3Player",
+        "Type": "TArray<class AIProgressiveWavesSpawner*>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "Waves4Player",
+        "Type": "TArray<class AIProgressiveWavesSpawner*>",
+        "Size": "0x10",
+        "Offset": "0x58"
       }
     ]
   },
@@ -278,7 +264,35 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_DZX36[0x8]",
+        "Name": "pad0x8_U2EXT[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x438"
+      }
+    ]
+  },
+  "SunkenKingdomShrineFinalRewardSpawnComponent": {
+    "Super": "ItemSpawnComponent",
+    "FullSize": "0x4a0",
+    "InheritedSize": "0x470",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_PER67[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x470"
+      }
+    ]
+  },
+  "SunkenKingdomTreasuryDeepSeaRegion": {
+    "Super": "DeepSeaRegion",
+    "FullSize": "0x440",
+    "InheritedSize": "0x438",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_1J43Q[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x438"
@@ -292,7 +306,7 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x10_WHHSZ[0x10]",
+        "Name": "pad0x10_GZP2H[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x500"
@@ -328,24 +342,10 @@
         "Offset": "0x538"
       },
       {
-        "Name": "pad0x70_GH2F4[0x70]",
+        "Name": "pad0x70_4GACM[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x540"
-      }
-    ]
-  },
-  "SunkenKingdomShrineFinalRewardSpawnComponent": {
-    "Super": "ItemSpawnComponent",
-    "FullSize": "0x4a0",
-    "InheritedSize": "0x470",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_34POC[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x470"
       }
     ]
   },

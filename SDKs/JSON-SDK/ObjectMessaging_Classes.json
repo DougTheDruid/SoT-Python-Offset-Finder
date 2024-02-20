@@ -1,4 +1,11 @@
 {
+  "ObjectMessagingInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "ObjectMessagingDispatcherInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -13,19 +20,12 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "pad0xa8_OZ36M[0xa8]",
+        "Name": "pad0xa8_VCA3Y[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0xc8"
       }
     ]
-  },
-  "ObjectMessagingInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "ObjectMessagingFunctions": {
     "Super": "BlueprintFunctionLibrary",

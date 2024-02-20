@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 TaleNote:
   Attributes:
-  - Name: pad0x10_WT0BA[0x10]
+  - Name: pad0x10_1U7J2[0x10]
     Offset: '0x7e0'
     Size: '0x10'
     Type: char
@@ -18,7 +18,7 @@ TaleNote:
     Offset: '0x7f8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_PIWJO[0x4]
+  - Name: pad0x4_HA4CP[0x4]
     Offset: '0x7fc'
     Size: '0x4'
     Type: char
@@ -61,7 +61,7 @@ TaleNote:
   - Name: AdditionalBody
     Offset: '0x940'
     Size: '0x10'
-    Type: TArray<struct FText>
+    Type: TArray<struct Text>
   - Name: RenderTarget
     Offset: '0x950'
     Size: '0x8'
@@ -78,7 +78,7 @@ TaleNote:
     Offset: '0x968'
     Size: '0x8'
     Type: class ZoomInOnWieldableItemComponent*
-  - Name: pad0xe0_SMQLL[0xe0]
+  - Name: pad0xe0_01BXW[0xe0]
     Offset: '0x970'
     Size: '0xe0'
     Type: char

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 DrawDebugService:
   Attributes:
-  - Name: pad0x8_QZ6S5[0x8]
+  - Name: pad0x8_ONVN9[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -38,7 +38,7 @@ DrawDebugService:
     Offset: '0x440'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7f_AWED9[0x7f]
+  - Name: pad0x7f_2SJRU[0x7f]
     Offset: '0x441'
     Size: '0x7f'
     Type: char
@@ -73,7 +73,7 @@ Videprinter:
   - Name: OutputRingBuffer
     Offset: '0x3c8'
     Size: '0x10'
-    Type: TArray<Str OutputRingBuffer>
+    Type: TArray<String>
   - Name: AddAt
     Offset: '0x3d8'
     Size: '0x4'
@@ -82,7 +82,7 @@ Videprinter:
     Offset: '0x3dc'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0xc_0RIIC[0xc]
+  - Name: pad0xc_OKHW2[0xc]
     Offset: '0x3e4'
     Size: '0xc'
     Type: char
@@ -92,7 +92,7 @@ Videprinter:
   Super: Actor
 VideprinterService:
   Attributes:
-  - Name: pad0x8_3YXG3[0x8]
+  - Name: pad0x8_QTO5Q[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char

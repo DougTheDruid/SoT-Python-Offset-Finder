@@ -1,21 +1,21 @@
 {
   "BP_OnlineAthenaPlayerController_C": {
     "Super": "OnlineAthenaPlayerController",
-    "FullSize": "0x1830",
-    "InheritedSize": "0x1820",
+    "FullSize": "0x1838",
+    "InheritedSize": "0x1828",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "BP_LegendOfTheSunkenKingdomVoyageOwnershipComponent",
         "Type": "blueprintgeneratedclass BP_LegendOfTheSunkenKingdomVoyageOwnershipComponent_C*",
         "Size": "0x8",
-        "Offset": "0x1820"
+        "Offset": "0x1828"
       },
       {
         "Name": "VisitShopkeepersTutorialComponent",
         "Type": "blueprintgeneratedclass BP_Component_Tutorial2019_C*",
         "Size": "0x8",
-        "Offset": "0x1828"
+        "Offset": "0x1830"
       }
     ]
   },

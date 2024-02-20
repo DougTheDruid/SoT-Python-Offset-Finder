@@ -108,7 +108,7 @@
         "Offset": "0x570"
       },
       {
-        "Name": "pad0x4_M19UV[0x4]",
+        "Name": "pad0x4_KBRHP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x574"

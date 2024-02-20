@@ -1,33 +1,4 @@
 {
-  "SirenAnimationDataStructure": {
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "LocomotionAnims",
-        "Type": "struct SirenAnimationLocomotion",
-        "Size": "0x48",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FullBodyMontageListings",
-        "Type": "class CustomAnimationMontageDefinitionListingDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "AttackAnimationAsset",
-        "Type": "class AthenaAnimationWeaponDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "HitReactAnimationData",
-        "Type": "struct HitReactionAnimationData",
-        "Size": "0x8",
-        "Offset": "0x58"
-      }
-    ]
-  },
   "SirenAnimationLocomotion": {
     "ClassSize": "0x48",
     "Attributes": [
@@ -84,6 +55,35 @@
         "Type": "class AnimSequence*",
         "Size": "0x8",
         "Offset": "0x40"
+      }
+    ]
+  },
+  "SirenAnimationDataStructure": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "LocomotionAnims",
+        "Type": "struct SirenAnimationLocomotion",
+        "Size": "0x48",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FullBodyMontageListings",
+        "Type": "class CustomAnimationMontageDefinitionListingDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "AttackAnimationAsset",
+        "Type": "class AthenaAnimationWeaponDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "HitReactAnimationData",
+        "Type": "struct HitReactionAnimationData",
+        "Size": "0x8",
+        "Offset": "0x58"
       }
     ]
   },

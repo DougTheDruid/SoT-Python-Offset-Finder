@@ -1,11 +1,4 @@
 {
-  "VoiceChatEmitterInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "VoiceChatRendererInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -20,7 +13,7 @@
     "ClassSize": "0x158",
     "Attributes": [
       {
-        "Name": "pad0x10_4I180[0x10]",
+        "Name": "pad0x10_5LDYY[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -62,12 +55,19 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x124_AL3Y2[0x124]",
+        "Name": "pad0x124_ZE0VB[0x124]",
         "Type": "char",
         "Size": "0x124",
         "Offset": "0x5c"
       }
     ]
+  },
+  "VoiceChatEmitterInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "VoiceChatRendererRetreivalInterface": {
     "Super": "Interface",

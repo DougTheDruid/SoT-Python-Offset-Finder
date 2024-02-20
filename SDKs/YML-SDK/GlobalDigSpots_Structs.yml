@@ -6,22 +6,26 @@ GlobalDigSpotDefinition:
     Offset: '0x0'
     Size: '0x8'
     Type: struct StoryFlag
-  - Name: ActorWithNamedPointComponent
+  - Name: VoyageDesc
     Offset: '0x8'
+    Size: '0x8'
+    Type: class VoyageDescDataAsset*
+  - Name: ActorWithNamedPointComponent
+    Offset: '0x10'
     Size: '0x10'
     Type: struct StringAssetReference
   - Name: NamedPoint
-    Offset: '0x18'
+    Offset: '0x20'
     Size: '0x8'
     Type: struct FName
   - Name: Rewards
-    Offset: '0x20'
+    Offset: '0x28'
     Size: '0x8'
     Type: class WeightedItemDescSpawnDataAsset*
-  ClassSize: '0x28'
+  ClassSize: '0x30'
 GlobalDigSpotPopupEvent:
   Attributes:
-  - Name: pad0x10_F6VR0[0x10]
+  - Name: pad0x10_S7TVE[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char

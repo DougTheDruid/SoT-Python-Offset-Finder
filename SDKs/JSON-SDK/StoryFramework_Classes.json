@@ -1,303 +1,10 @@
 {
-  "ActiveStorySpawnRequirement": {
-    "Super": "SpawnRequirement",
-    "FullSize": "0x80",
-    "InheritedSize": "0x50",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "StoryNames",
-        "Type": "TArray<struct FName>",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "AllStoriesRequired",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "pad0x1f_A4PIR[0x1f]",
-        "Type": "char",
-        "Size": "0x1f",
-        "Offset": "0x61"
-      }
-    ]
-  },
-  "IsStoryActiveNPCDialogConditional": {
-    "Super": "NPCDialogConditional",
-    "FullSize": "0x48",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "StoryFlag",
-        "Type": "struct StoryFlag",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x10_I95H8[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "StoryClaimableResourceComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "ClaimedStoryFlag",
-        "Type": "struct StoryFlag",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x20_RNATA[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "StoryClaimedResourcesServiceInterface": {
+  "DebugStoryServiceCheatInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "StoryClaimedResourcesService": {
-    "Super": "Actor",
-    "FullSize": "0x488",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "pad0x60_IRT15[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "PendingClaims",
-        "Type": "TArray<Weakclass PendingClaims>",
-        "Size": "0x10",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "pad0x50_MJNVL[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x438"
-      }
-    ]
-  },
-  "StoryDrivenBlendedLightingZoneComponent": {
-    "Super": "BlendedLightingZoneComponent",
-    "FullSize": "0x360",
-    "InheritedSize": "0x330",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "StoryDrivenLightingAssetsCollection",
-        "Type": "class StoryDrivenBlendedLightingZoneComponentDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x328"
-      },
-      {
-        "Name": "CurrentStoryResponse",
-        "Type": "struct LightingZoneStoryRelatedSettings",
-        "Size": "0x10",
-        "Offset": "0x330"
-      },
-      {
-        "Name": "pad0x20_7NCOR[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x340"
-      }
-    ]
-  },
-  "StoryDrivenBlendedLightingZoneComponentDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_ZO0KD[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "StoryResponses",
-        "Type": "TArray<struct LightingZoneStoryRelatedSettings>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "AssetsList",
-        "Type": "TArray<class StoryDrivenBlendedLightingZoneComponentDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "StoryDrivenSalvageItemSpawnComponent": {
-    "Super": "SalvageItemSpawnComponent",
-    "FullSize": "0x5f0",
-    "InheritedSize": "0x5d0",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Story",
-        "Type": "struct StoryFlag",
-        "Size": "0x8",
-        "Offset": "0x5c8"
-      },
-      {
-        "Name": "pad0x20_I53VM[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x5d0"
-      }
-    ]
-  },
-  "StorySpawnedActorsComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x108",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "AssetsCollection",
-        "Type": "class StorySpawnedActorsComponentDataAsset*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x38_A330T[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "StorySpawnedActorsComponentDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_K7NVZ[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "StoryResponses",
-        "Type": "TArray<struct StorySpawnedActorsComponentList>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "AssetsList",
-        "Type": "TArray<class StorySpawnedActorsComponentDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "StorySpawnedActorsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_LKOJT[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "StoryResponses",
-        "Type": "TArray<struct StorySpawnedActorsList>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "AssetsList",
-        "Type": "TArray<class StorySpawnedActorsDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "StorySpawnedActorsServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "StorySpawnedActorsService": {
-    "Super": "Actor",
-    "FullSize": "0x500",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x138",
-    "Attributes": [
-      {
-        "Name": "pad0x18_YZ6GX[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "EarlyRegisteredComponents",
-        "Type": "TArray<class StorySpawnedActorsComponent*>",
-        "Size": "0x10",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "Asset",
-        "Type": "class StorySpawnedActorsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "pad0x108_EXCN8[0x108]",
-        "Type": "char",
-        "Size": "0x108",
-        "Offset": "0x3f8"
-      }
-    ]
   },
   "StorySpawnedActorsSettings": {
     "Super": "DeveloperSettings",
@@ -307,65 +14,6 @@
     "Attributes": [
       {
         "Name": "StorySpawnActorsDataAssetLocation",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "DebugStoryServiceCheatInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DebugStoryServiceCheat": {
-    "Super": "Actor",
-    "FullSize": "0x420",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "pad0x8_CNL46[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "AllStories",
-        "Type": "TArray<struct StoryInfo>",
-        "Size": "0x10",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "AllIncludeFilters",
-        "Type": "TArray<Str AllIncludeFilters>",
-        "Size": "0x10",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "AllExcludeFilters",
-        "Type": "TArray<Str AllExcludeFilters>",
-        "Size": "0x10",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "pad0x20_A8F7X[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x400"
-      }
-    ]
-  },
-  "StorySettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "StoryNamesCollectionDataAssetLocation",
         "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
@@ -399,6 +47,222 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "StoryDrivenSalvageItemSpawnComponent": {
+    "Super": "SalvageItemSpawnComponent",
+    "FullSize": "0x5f0",
+    "InheritedSize": "0x5d0",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Story",
+        "Type": "struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "pad0x20_35SW4[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x5d0"
+      }
+    ]
+  },
+  "StoryDrivenBlendedLightingZoneComponent": {
+    "Super": "BlendedLightingZoneComponent",
+    "FullSize": "0x360",
+    "InheritedSize": "0x330",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "StoryDrivenLightingAssetsCollection",
+        "Type": "class StoryDrivenBlendedLightingZoneComponentDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x328"
+      },
+      {
+        "Name": "CurrentStoryResponse",
+        "Type": "struct LightingZoneStoryRelatedSettings",
+        "Size": "0x10",
+        "Offset": "0x330"
+      },
+      {
+        "Name": "pad0x20_V7JMR[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x340"
+      }
+    ]
+  },
+  "StorySpawnedActorsService": {
+    "Super": "Actor",
+    "FullSize": "0x500",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x138",
+    "Attributes": [
+      {
+        "Name": "pad0x18_LF9J0[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "EarlyRegisteredComponents",
+        "Type": "TArray<class StorySpawnedActorsComponent*>",
+        "Size": "0x10",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "Asset",
+        "Type": "class StorySpawnedActorsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "pad0x108_GWPSG[0x108]",
+        "Type": "char",
+        "Size": "0x108",
+        "Offset": "0x3f8"
+      }
+    ]
+  },
+  "StoryClaimedResourcesService": {
+    "Super": "Actor",
+    "FullSize": "0x488",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "pad0x60_16JZH[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "PendingClaims",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "pad0x50_W7P8O[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x438"
+      }
+    ]
+  },
+  "ActiveStorySpawnRequirement": {
+    "Super": "SpawnRequirement",
+    "FullSize": "0x80",
+    "InheritedSize": "0x50",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "StoryNames",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "AllStoriesRequired",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x1f_CPGPZ[0x1f]",
+        "Type": "char",
+        "Size": "0x1f",
+        "Offset": "0x61"
+      }
+    ]
+  },
+  "IsStoryActiveNPCDialogConditional": {
+    "Super": "NPCDialogConditional",
+    "FullSize": "0x48",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "StoryFlag",
+        "Type": "struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x10_DH4VK[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "StoryDrivenBlendedLightingZoneComponentDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_KW89G[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "StoryResponses",
+        "Type": "TArray<struct LightingZoneStoryRelatedSettings>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "AssetsList",
+        "Type": "TArray<class StoryDrivenBlendedLightingZoneComponentDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "StoryClaimedResourcesServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StorySpawnedActorsServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StoryClaimableResourceComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ClaimedStoryFlag",
+        "Type": "struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x20_KBC6H[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xd0"
+      }
+    ]
+  },
   "StoryService": {
     "Super": "Actor",
     "FullSize": "0x4a0",
@@ -406,7 +270,7 @@
     "ClassSize": "0xd8",
     "Attributes": [
       {
-        "Name": "pad0x28_PB955[0x28]",
+        "Name": "pad0x28_UWFYD[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x3c8"
@@ -424,10 +288,146 @@
         "Offset": "0x400"
       },
       {
-        "Name": "pad0x90_F46ZP[0x90]",
+        "Name": "pad0x90_02J81[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x410"
+      }
+    ]
+  },
+  "StorySpawnedActorsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_UOKQ9[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "StoryResponses",
+        "Type": "TArray<struct StorySpawnedActorsList>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "AssetsList",
+        "Type": "TArray<class StorySpawnedActorsDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "StorySpawnedActorsComponentDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_85G6O[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "StoryResponses",
+        "Type": "TArray<struct StorySpawnedActorsComponentList>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "AssetsList",
+        "Type": "TArray<class StorySpawnedActorsComponentDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "StorySpawnedActorsComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x108",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "AssetsCollection",
+        "Type": "class StorySpawnedActorsComponentDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x38_3J17W[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "StorySettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StoryNamesCollectionDataAssetLocation",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "DebugStoryServiceCheat": {
+    "Super": "Actor",
+    "FullSize": "0x420",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "pad0x8_G591Z[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "AllStories",
+        "Type": "TArray<struct StoryInfo>",
+        "Size": "0x10",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "AllIncludeFilters",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "AllExcludeFilters",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "pad0x20_7IG5L[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x400"
       }
     ]
   },

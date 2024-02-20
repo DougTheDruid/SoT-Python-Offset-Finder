@@ -60,7 +60,7 @@ PulleyVisualParams:
   ClassSize: '0x10'
 RiggingSystemLine:
   Attributes:
-  - Name: pad0x10_BMWYO[0x10]
+  - Name: pad0x10_6IV2C[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -98,7 +98,7 @@ RiggingSystemLineParams:
     Offset: '0x5c'
     Size: '0x18'
     Type: struct RopeCatenaryShapeParams
-  - Name: pad0x4_S9TE9[0x4]
+  - Name: pad0x4_5ST21[0x4]
     Offset: '0x74'
     Size: '0x4'
     Type: char
@@ -123,27 +123,27 @@ RiggingSystemPulleyData:
   - Name: AttachmentSag
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Float AttachmentSag>
+    Type: TArray<float>
   - Name: AttachmentLength
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Float AttachmentLength>
+    Type: TArray<float>
   - Name: Scale
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<Float Scale>
+    Type: TArray<float>
   - Name: ScaledOffset
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Float ScaledOffset>
+    Type: TArray<float>
   - Name: ScaledRadius
     Offset: '0x40'
     Size: '0x10'
-    Type: TArray<Float ScaledRadius>
+    Type: TArray<float>
   - Name: MeshIDs
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<Int MeshIDs>
+    Type: TArray<int>
   ClassSize: '0x60'
 RiggingSystemPulleyParams:
   Attributes:
@@ -155,7 +155,7 @@ RiggingSystemPulleyParams:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_SM2EM[0x4]
+  - Name: pad0x4_6SCJU[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -167,7 +167,7 @@ RiggingSystemPulleyParams:
     Offset: '0x38'
     Size: '0x14'
     Type: struct RiggingSystemPulleyAttachmentParams
-  - Name: pad0x4_7BLF9[0x4]
+  - Name: pad0x4_I92DY[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -182,7 +182,7 @@ RopeCatenaryDynamicsParams:
     Offset: '0x4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_I5IY2[0x3]
+  - Name: pad0x3_L5Z67[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char
@@ -268,7 +268,7 @@ RopeStyleParams:
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_GDE9C[0x4]
+  - Name: pad0x4_08BIC[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char

@@ -120,7 +120,7 @@
         "Offset": "0x678"
       },
       {
-        "Name": "pad0x3_V0VJC[0x3]",
+        "Name": "pad0x3_S0NCM[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x679"
@@ -156,7 +156,7 @@
         "Offset": "0x68d"
       },
       {
-        "Name": "pad0x2_RRXGN[0x2]",
+        "Name": "pad0x2_FXECY[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x68e"
@@ -175,7 +175,7 @@
       },
       {
         "Name": "ShipProgressSpawnLoactionsAssetID",
-        "Type": "TArray<Assetclass ShipProgressSpawnLoactionsAssetID>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x740"
       },

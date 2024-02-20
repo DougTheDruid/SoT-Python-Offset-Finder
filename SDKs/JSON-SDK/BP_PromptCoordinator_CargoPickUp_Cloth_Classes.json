@@ -12,9 +12,9 @@
         "Offset": "0x138"
       },
       {
-        "Name": "pad0x6f_5X161[0x6f]",
+        "Name": "pad0xb0_HDP2W[0xb0]",
         "Type": "char",
-        "Size": "0x6f",
+        "Size": "0xb0",
         "Offset": "0x140"
       },
       {
@@ -30,7 +30,7 @@
         "Offset": "0x198"
       },
       {
-        "Name": "pad0x7_VCD39[0x7]",
+        "Name": "pad0x7_JP1LV[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x199"
@@ -48,14 +48,14 @@
         "Offset": "0x210"
       },
       {
-        "Name": "pad0x7_9UFEU[0x7]",
+        "Name": "pad0x7_GLL3Z[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x211"
       },
       {
         "Name": "ClothType",
-        "Type": "TArray<struct FName>",
+        "Type": "TArray<struct Name>",
         "Size": "0x10",
         "Offset": "0x218"
       },

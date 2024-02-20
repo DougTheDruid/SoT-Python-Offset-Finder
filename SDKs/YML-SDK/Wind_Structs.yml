@@ -10,21 +10,21 @@ ExtraWind:
     Offset: '0x8'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x28_VLVV8[0x28]
+  - Name: pad0x28_GZC3O[0x28]
     Offset: '0x10'
     Size: '0x28'
     Type: char
   ClassSize: '0x38'
 WindDirectionChanged:
   Attributes:
-  - Name: pad0x1_PZFYS[0x1]
+  - Name: pad0x1_SBJ4Z[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 WindMagnitudeChanged:
   Attributes:
-  - Name: pad0x1_MQAKM[0x1]
+  - Name: pad0x1_KCKDS[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -101,7 +101,7 @@ WindZoneParams:
     Offset: '0xc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_IP3OK[0x3]
+  - Name: pad0x3_3WC57[0x3]
     Offset: '0xd'
     Size: '0x3'
     Type: char

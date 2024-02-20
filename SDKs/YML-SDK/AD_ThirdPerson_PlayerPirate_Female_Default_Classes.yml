@@ -50,7 +50,7 @@ AD_ThirdPerson_PlayerPirate_Female_Default_C:
     Offset: '0x4d8'
     Size: '0x2'
     Type: struct ADS_Sockets
-  - Name: pad0x6_EQOB7[0x6]
+  - Name: pad0x6_G79T8[0x6]
     Offset: '0x4da'
     Size: '0x6'
     Type: char
@@ -62,7 +62,7 @@ AD_ThirdPerson_PlayerPirate_Female_Default_C:
     Offset: '0x570'
     Size: '0x1c'
     Type: struct ADS_IKFootPlantingNative
-  - Name: pad0x4_C1CZ4[0x4]
+  - Name: pad0x4_3HJJ2[0x4]
     Offset: '0x58c'
     Size: '0x4'
     Type: char

@@ -6,7 +6,7 @@ AsyncExcessiveLoadTelemetryEvent:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_7QDG0[0x4]
+  - Name: pad0x4_8OOVQ[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -21,11 +21,11 @@ AsyncExcessiveLoadTelemetryEvent:
   - Name: AssetRequestList
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Str AssetRequestList>
+    Type: TArray<String>
   - Name: LoadedAssetList
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Str LoadedAssetList>
+    Type: TArray<String>
   - Name: PostLoadExcess
     Offset: '0x38'
     Size: '0x10'

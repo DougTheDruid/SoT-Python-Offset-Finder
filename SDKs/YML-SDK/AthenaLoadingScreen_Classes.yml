@@ -64,7 +64,7 @@ SlateLoadingScreenParams:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_UCXQO[0x7]
+  - Name: pad0x7_0Y325[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -92,7 +92,7 @@ SlateLoadingScreenParams:
     Offset: '0xb0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_1YIMC[0x4]
+  - Name: pad0x4_QGBMX[0x4]
     Offset: '0xb4'
     Size: '0x4'
     Type: char
@@ -152,14 +152,14 @@ SlateLoadingScreenParams:
     Offset: '0x1e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_D3GFV[0x4]
+  - Name: pad0x4_JA4YO[0x4]
     Offset: '0x1ec'
     Size: '0x4'
     Type: char
   - Name: LoadingScreenTips
     Offset: '0x1f0'
     Size: '0x10'
-    Type: TArray<struct FText>
+    Type: TArray<struct Text>
   - Name: LoadingScreenTipColour
     Offset: '0x200'
     Size: '0x30'
@@ -168,7 +168,7 @@ SlateLoadingScreenParams:
     Offset: '0x230'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_FZGMH[0x7]
+  - Name: pad0x7_WTUQ9[0x7]
     Offset: '0x231'
     Size: '0x7'
     Type: char

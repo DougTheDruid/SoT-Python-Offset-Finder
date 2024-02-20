@@ -1,4 +1,15 @@
 {
+  "GetPvPSkillForCrewRequestModel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewMemberIds",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "ReportMatchConclusionResponse": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -21,13 +32,13 @@
     "Attributes": [
       {
         "Name": "WinningUserIds",
-        "Type": "TArray<Str WinningUserIds>",
+        "Type": "TArray<String>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "LosingUserIds",
-        "Type": "TArray<Str LosingUserIds>",
+        "Type": "TArray<String>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -40,17 +51,6 @@
         "Name": "CrewSkillRating",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GetPvPSkillForCrewRequestModel": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CrewMemberIds",
-        "Type": "TArray<Str CrewMemberIds>",
-        "Size": "0x10",
         "Offset": "0x0"
       }
     ]

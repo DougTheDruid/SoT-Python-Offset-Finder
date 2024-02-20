@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 TaleQuestGetProjectionPointOnTradeRouteStep:
   Attributes:
-  - Name: pad0x98_3Q35Y[0x98]
+  - Name: pad0x98_B0IFT[0x98]
     Offset: '0x98'
     Size: '0x98'
     Type: char
@@ -16,7 +16,7 @@ TaleQuestGetProjectionPointOnTradeRouteStepDesc:
     Offset: '0x80'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_OXE83[0x4]
+  - Name: pad0x4_0PKD8[0x4]
     Offset: '0x84'
     Size: '0x4'
     Type: char
@@ -42,7 +42,7 @@ TaleQuestSelectTradeRouteStep:
     Offset: '0x98'
     Size: '0x8'
     Type: class TaleQuestSelectTradeRouteStepDesc*
-  - Name: pad0x18_HLWR8[0x18]
+  - Name: pad0x18_X1415[0x18]
     Offset: '0xa0'
     Size: '0x18'
     Type: char
@@ -60,7 +60,7 @@ TaleQuestSelectTradeRouteStepDesc:
     Offset: '0xb0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_T05O3[0x4]
+  - Name: pad0x4_BMRH0[0x4]
     Offset: '0xb4'
     Size: '0x4'
     Type: char
@@ -102,7 +102,7 @@ TradeRouteData:
     Offset: '0x3c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_JO4WO[0x3]
+  - Name: pad0x3_5RWRV[0x3]
     Offset: '0x3d'
     Size: '0x3'
     Type: char
@@ -120,7 +120,7 @@ TradeRouteDifficultyBand:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_BG8KL[0x4]
+  - Name: pad0x4_PANY1[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char

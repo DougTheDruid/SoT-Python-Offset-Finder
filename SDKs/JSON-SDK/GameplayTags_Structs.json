@@ -1,24 +1,29 @@
 {
-  "GameplayTagContainer": {
-    "ClassSize": "0x28",
+  "GameplayTagTableRow": {
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_YIHS2[0x8]",
-        "Type": "char",
-        "Size": "0x8",
+        "Name": "Tag",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "GameplayTags",
-        "Type": "TArray<struct GameplayTag>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
+        "Name": "CategoryText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "GameplayTagNode": {
+    "ClassSize": "0x78",
+    "Attributes": [
       {
-        "Name": "Tags",
-        "Type": "TArray<struct FName>",
-        "Size": "0x10",
-        "Offset": "0x18"
+        "Name": "pad0x78_8C9HV[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x0"
       }
     ]
   },
@@ -43,7 +48,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_UFALL[0x4]",
+        "Name": "pad0x4_R0T2O[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -56,7 +61,7 @@
       },
       {
         "Name": "QueryTokenStream",
-        "Type": "TArray<Byte QueryTokenStream>",
+        "Type": "TArray<char>",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -74,31 +79,26 @@
       }
     ]
   },
-  "GameplayTagNode": {
-    "ClassSize": "0x78",
+  "GameplayTagContainer": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x78_RUP04[0x78]",
+        "Name": "pad0x8_YZLW3[0x8]",
         "Type": "char",
-        "Size": "0x78",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GameplayTagTableRow": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "Tag",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "CategoryText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x10"
+        "Name": "GameplayTags",
+        "Type": "TArray<struct GameplayTag>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Tags",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x18"
       }
     ]
   },

@@ -14,7 +14,7 @@ ClueSite:
     Offset: '0x10'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_X38CJ[0x4]
+  - Name: pad0x4_2KK6Y[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -36,7 +36,7 @@ ClueSiteLootRestriction:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_USEI6[0x4]
+  - Name: pad0x4_F4DAP[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -73,7 +73,7 @@ EventClueObtained:
     Offset: '0x8'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x10_NXG4J[0x10]
+  - Name: pad0x10_QOMS8[0x10]
     Offset: '0x10'
     Size: '0x10'
     Type: char
@@ -121,21 +121,21 @@ LootToRangeDist:
   ClassSize: '0x28'
 QuestVariableClueDescriptor:
   Attributes:
-  - Name: pad0x30_XOX5W[0x30]
+  - Name: pad0x30_HPID7[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableClueSite:
   Attributes:
-  - Name: pad0x30_FSBIP[0x30]
+  - Name: pad0x30_2SORV[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableClueSiteArray:
   Attributes:
-  - Name: pad0x30_O9VWF[0x30]
+  - Name: pad0x30_AP9Y1[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -150,7 +150,7 @@ RestrictedClueType:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_ONI9E[0x4]
+  - Name: pad0x4_GKZ77[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -165,7 +165,7 @@ SeaClueCreationChoice:
     Offset: '0x8'
     Size: '0x8'
     Type: class SeaClueCreator*
-  - Name: pad0x10_TYDET[0x10]
+  - Name: pad0x10_X4I0W[0x10]
     Offset: '0x10'
     Size: '0x10'
     Type: char
@@ -179,7 +179,7 @@ WeightedClueDescriptor:
   - Name: DifficultyWeightings
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Float DifficultyWeightings>
+    Type: TArray<float>
   ClassSize: '0x18'
 WeightedClueDestinationDescriptor:
   Attributes:
@@ -190,11 +190,11 @@ WeightedClueDestinationDescriptor:
   - Name: DifficultyWeightings
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Float DifficultyWeightings>
+    Type: TArray<float>
   ClassSize: '0x18'
 WeightedDebris:
   Attributes:
-  - Name: pad0x20_Z6OOR[0x20]
+  - Name: pad0x20_PJ3GO[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
@@ -202,7 +202,7 @@ WeightedDebris:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5RREZ[0x4]
+  - Name: pad0x4_LXJII[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char

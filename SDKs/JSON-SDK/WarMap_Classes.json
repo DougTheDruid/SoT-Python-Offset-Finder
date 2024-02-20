@@ -1,11 +1,4 @@
 {
-  "WarMapStateInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "WarMapInteractionComponent": {
     "Super": "InteractableComponent",
     "FullSize": "0x1d8",
@@ -13,7 +6,7 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0x8_03EME[0x8]",
+        "Name": "pad0x8_TDKXH[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x138"
@@ -37,24 +30,72 @@
         "Offset": "0x1b0"
       },
       {
-        "Name": "pad0x20_78E8V[0x20]",
+        "Name": "pad0x20_VWUCL[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x1b8"
       }
     ]
   },
-  "WarMapInteractionVoteComponent": {
-    "Super": "InlineVotingInteractionComponent",
-    "FullSize": "0x170",
-    "InheritedSize": "0x160",
-    "ClassSize": "0x10",
+  "WarMapVoteInteractionActor": {
+    "Super": "Actor",
+    "FullSize": "0x648",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x280",
     "Attributes": [
       {
-        "Name": "pad0x10_NIE35[0x10]",
+        "Name": "pad0x10_ORMLW[0x10]",
         "Type": "char",
         "Size": "0x10",
-        "Offset": "0x160"
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "TooltipUIFadeDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "TooltipUIScreenSpaceOffsetRatio",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x3dc"
+      },
+      {
+        "Name": "pad0x4_802FK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3e4"
+      },
+      {
+        "Name": "InvasionActiveMesh",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "BoxedRpcDispatcherComponent",
+        "Type": "class BoxedRpcDispatcherComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "FactionInfos",
+        "Type": "TArray<struct FactionDisplayInfo>",
+        "Size": "0x10",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "FactionInfoPtrs",
+        "Type": "TArray<struct FactionRequest>",
+        "Size": "0x10",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "pad0x230_NNN7V[0x230]",
+        "Type": "char",
+        "Size": "0x230",
+        "Offset": "0x418"
       }
     ]
   },
@@ -83,7 +124,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x67_1NULU[0x67]",
+        "Name": "pad0x67_ITL7D[0x67]",
         "Type": "char",
         "Size": "0x67",
         "Offset": "0x41"
@@ -95,12 +136,124 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x58_NINIW[0x58]",
+        "Name": "pad0x58_Y43TE[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0xb8"
       }
     ]
+  },
+  "WarMapStateInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WarMapVoteValidatorBase": {
+    "Super": "VoteValidatorInlineBase",
+    "FullSize": "0x130",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x100",
+    "Attributes": [
+      {
+        "Name": "Consumer",
+        "Type": "class WarMapVoteConsumerBase*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "OwningActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "ShowWithHardMode",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0xef_2BAU1[0xef]",
+        "Type": "char",
+        "Size": "0xef",
+        "Offset": "0x41"
+      }
+    ]
+  },
+  "WarMapInteractionVoteComponent": {
+    "Super": "InlineVotingInteractionComponent",
+    "FullSize": "0x170",
+    "InheritedSize": "0x160",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_MHSIJ[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x160"
+      }
+    ]
+  },
+  "StopWarMapVoyageVoteConsumer": {
+    "Super": "WarMapVoteConsumerBase",
+    "FullSize": "0x1f0",
+    "InheritedSize": "0x110",
+    "ClassSize": "0xe0",
+    "Attributes": [
+      {
+        "Name": "WarMapVotingCastVote",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "WarMapVotingCantVote",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "WarMapVotingRemoveVote",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x180"
+      },
+      {
+        "Name": "WarMapVotingCantRemoveVote",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x1b8"
+      }
+    ]
+  },
+  "StopWarMapVoyageVoteValidator": {
+    "Super": "WarMapVoteValidatorBase",
+    "FullSize": "0x138",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ShowWhenInHardModeMatchmaking",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "pad0x7_ONKYG[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x131"
+      }
+    ]
+  },
+  "StartWarMapVoyageVoteValidator": {
+    "Super": "WarMapVoteValidatorBase",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "StartWarMapVoyageVoteConsumer": {
     "Super": "WarMapVoteConsumerBase",
@@ -161,159 +314,6 @@
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x2d0"
-      }
-    ]
-  },
-  "StopWarMapVoyageVoteConsumer": {
-    "Super": "WarMapVoteConsumerBase",
-    "FullSize": "0x1f0",
-    "InheritedSize": "0x110",
-    "ClassSize": "0xe0",
-    "Attributes": [
-      {
-        "Name": "WarMapVotingCastVote",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "WarMapVotingCantVote",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "WarMapVotingRemoveVote",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x180"
-      },
-      {
-        "Name": "WarMapVotingCantRemoveVote",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x1b8"
-      }
-    ]
-  },
-  "WarMapVoteInteractionActor": {
-    "Super": "Actor",
-    "FullSize": "0x648",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x280",
-    "Attributes": [
-      {
-        "Name": "pad0x10_16F2H[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "TooltipUIFadeDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "TooltipUIScreenSpaceOffsetRatio",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x3dc"
-      },
-      {
-        "Name": "pad0x4_EOYVX[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3e4"
-      },
-      {
-        "Name": "InvasionActiveMesh",
-        "Type": "class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e8"
-      },
-      {
-        "Name": "BoxedRpcDispatcherComponent",
-        "Type": "class BoxedRpcDispatcherComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "FactionInfos",
-        "Type": "TArray<struct FactionDisplayInfo>",
-        "Size": "0x10",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "FactionInfoPtrs",
-        "Type": "TArray<struct FactionRequest>",
-        "Size": "0x10",
-        "Offset": "0x408"
-      },
-      {
-        "Name": "pad0x230_P4MXO[0x230]",
-        "Type": "char",
-        "Size": "0x230",
-        "Offset": "0x418"
-      }
-    ]
-  },
-  "WarMapVoteValidatorBase": {
-    "Super": "VoteValidatorInlineBase",
-    "FullSize": "0x130",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x100",
-    "Attributes": [
-      {
-        "Name": "Consumer",
-        "Type": "class WarMapVoteConsumerBase*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "OwningActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "ShowWithHardMode",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0xef_J6NYT[0xef]",
-        "Type": "char",
-        "Size": "0xef",
-        "Offset": "0x41"
-      }
-    ]
-  },
-  "StartWarMapVoyageVoteValidator": {
-    "Super": "WarMapVoteValidatorBase",
-    "FullSize": "0x130",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "StopWarMapVoyageVoteValidator": {
-    "Super": "WarMapVoteValidatorBase",
-    "FullSize": "0x138",
-    "InheritedSize": "0x130",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ShowWhenInHardModeMatchmaking",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x130"
-      },
-      {
-        "Name": "pad0x7_WDA32[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x131"
       }
     ]
   },

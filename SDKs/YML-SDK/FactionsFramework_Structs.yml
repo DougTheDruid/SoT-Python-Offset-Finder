@@ -25,7 +25,7 @@ CrewFactionEntry:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_QNZYP[0x3]
+  - Name: pad0x3_LJC11[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -64,7 +64,7 @@ CrewFactionEntryData:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_9JL6W[0x4]
+  - Name: pad0x4_8EA9Q[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -76,7 +76,7 @@ CrewFactionEntryData:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_DQVRI[0x7]
+  - Name: pad0x7_82OF3[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -88,14 +88,14 @@ CrewFactionEntryData:
     Offset: '0x50'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_2OUMJ[0x4]
+  - Name: pad0x4_4I76P[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
   - Name: HasDisplayedPromptForLootLevel
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Bool HasDisplayedPromptForLootLevel>
+    Type: TArray<bool>
   ClassSize: '0x68'
 CrewFactionTelemetryData:
   Attributes:
@@ -156,7 +156,7 @@ CrewLeavingFaction:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_59PP4[0x7]
+  - Name: pad0x7_BZUFB[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
@@ -175,7 +175,7 @@ CrewLeftFaction:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_HIEAM[0x7]
+  - Name: pad0x7_0LNCJ[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
@@ -246,7 +246,7 @@ FactionLeftTelemetryEvent:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_BNEMP[0x3]
+  - Name: pad0x3_DM2D1[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -312,11 +312,11 @@ FactionWaitTimesData:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_LIKWM[0x6]
+  - Name: pad0x6_KMT8P[0x6]
     Offset: '0x2'
     Size: '0x6'
     Type: char
-  - Name: pad0x8_SI0OQ[0x8]
+  - Name: pad0x8_L6017[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char

@@ -44,7 +44,7 @@ SirenCalmHealStrategyId:
   Super: AIStrategyId
 SirenController:
   Attributes:
-  - Name: pad0x8_LPI1O[0x8]
+  - Name: pad0x8_PYRVU[0x8]
     Offset: '0xa70'
     Size: '0x8'
     Type: char

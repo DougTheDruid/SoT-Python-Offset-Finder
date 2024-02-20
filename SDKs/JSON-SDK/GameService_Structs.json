@@ -3,27 +3,10 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "pad0x70_8F4IF[0x70]",
+        "Name": "pad0x70_C7OKA[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "GameServiceCoordinator": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Services",
-        "Type": "TArray<struct GameServiceCoordinatorUnit>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x10_PLPED[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },
@@ -37,10 +20,27 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x10_HZRZ8[0x10]",
+        "Name": "pad0x10_MRQ0C[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "GameServiceCoordinator": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Services",
+        "Type": "TArray<struct GameServiceCoordinatorUnit>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_E06B2[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

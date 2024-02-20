@@ -1,12 +1,81 @@
 {
+  "WWiseEmitterCreationRTPCSetting": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "RTPCName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RTPCValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "StaticMeshWwiseEmitterData": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Pool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LocalOriginOffset",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_VRDCQ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "StartEvents",
+        "Type": "TArray<class WwiseEvent*>",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "StopEvents",
+        "Type": "TArray<class WwiseEvent*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "WwiseEmitter": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x20_BCLQG[0x20]",
+        "Name": "pad0x20_YQ84E[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "WWiseEmitterCreationSwitchSetting": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SwitchGroup",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SwitchValue",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -33,37 +102,26 @@
       }
     ]
   },
-  "WWiseEmitterCreationSwitchSetting": {
-    "ClassSize": "0x10",
+  "StaticMeshComponentAudioAssociation": {
+    "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "SwitchGroup",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "PlaybackData",
+        "Type": "struct StaticMeshWwiseEmitterData",
+        "Size": "0x38",
         "Offset": "0x0"
       },
       {
-        "Name": "SwitchValue",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "WWiseEmitterCreationRTPCSetting": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "RTPCName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
+        "Name": "EmitterPositionRelativeToComponentOrigin",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x38"
       },
       {
-        "Name": "RTPCValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
+        "Name": "pad0x24_GZJL7[0x24]",
+        "Type": "char",
+        "Size": "0x24",
+        "Offset": "0x44"
       }
     ]
   },
@@ -81,64 +139,6 @@
         "Type": "TArray<class StaticMesh*>",
         "Size": "0x10",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "StaticMeshWwiseEmitterData": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Pool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LocalOriginOffset",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_G9XM4[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "StartEvents",
-        "Type": "TArray<class WwiseEvent*>",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "StopEvents",
-        "Type": "TArray<class WwiseEvent*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "StaticMeshComponentAudioAssociation": {
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "PlaybackData",
-        "Type": "struct StaticMeshWwiseEmitterData",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "EmitterPositionRelativeToComponentOrigin",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x24_RB0XR[0x24]",
-        "Type": "char",
-        "Size": "0x24",
-        "Offset": "0x44"
       }
     ]
   },

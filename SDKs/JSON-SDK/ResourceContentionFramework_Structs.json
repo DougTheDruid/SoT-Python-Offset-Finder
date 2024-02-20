@@ -1,4 +1,27 @@
 {
+  "PoolableCollectionMapConfigurationEntry": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x20_JRDTY[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Size",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_KRBPU[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
+      }
+    ]
+  },
   "PoolableCollectionMapConfiguration": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -15,33 +38,10 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_0GTBC[0x7]",
+        "Name": "pad0x7_E0NIW[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
-      }
-    ]
-  },
-  "PoolableCollectionMapConfigurationEntry": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x20_MQ8NQ[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Size",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x4_5YAU2[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x24"
       }
     ]
   },

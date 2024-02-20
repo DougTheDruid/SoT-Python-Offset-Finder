@@ -14,7 +14,7 @@ ServiceMessagingFunctions:
   Super: BlueprintFunctionLibrary
 ServiceMessagingListenerTestObject:
   Attributes:
-  - Name: pad0x10_NJ1HB[0x10]
+  - Name: pad0x10_72CIW[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char

@@ -5,8 +5,8 @@ CycleFlameOfFateSequence:
   - Name: FlameTypeSequence
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Byte FlameTypeSequence>
-  - Name: pad0x8_H7BM5[0x8]
+    Type: TArray<char>
+  - Name: pad0x8_12U8Q[0x8]
     Offset: '0x10'
     Size: '0x8'
     Type: char
@@ -36,7 +36,7 @@ PlayerSetFlameOfFateEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_PRMC0[0x7]
+  - Name: pad0x7_MX435[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -55,7 +55,7 @@ PlayerTookFlameOfFateEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_463F6[0x7]
+  - Name: pad0x7_QICRZ[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -66,7 +66,7 @@ SetFlameOfFateEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_WDFH5[0x7]
+  - Name: pad0x7_ISXKF[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -81,7 +81,7 @@ SetShipFlameOfFateEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_OOKWL[0x7]
+  - Name: pad0x7_BW0IF[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char

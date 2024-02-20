@@ -13,7 +13,7 @@ SocketId:
   ClassSize: '0x20'
 SocketLookupCache:
   Attributes:
-  - Name: pad0x50_0GK1Z[0x50]
+  - Name: pad0x50_IN72W[0x50]
     Offset: '0x0'
     Size: '0x50'
     Type: char
@@ -24,7 +24,7 @@ SocketPath:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<struct SocketPathNode>
-  - Name: pad0x8_7LO23[0x8]
+  - Name: pad0x8_DU8SA[0x8]
     Offset: '0x10'
     Size: '0x8'
     Type: char

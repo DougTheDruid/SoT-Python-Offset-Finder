@@ -6,26 +6,26 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x58_IM0EJ[0x58]",
+        "Name": "pad0x58_G3700[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0xa30"
       }
     ]
   },
-  "AssetReferencer": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
+  "RareHUD": {
+    "Super": "HUD",
+    "FullSize": "0x4c0",
+    "InheritedSize": "0x4c0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StaticMeshActorBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AssetsToReference",
-        "Type": "TArray<Assetclass AssetsToReference>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "AudioHardwareDeviceService": {
     "Super": "Object",
@@ -34,19 +34,12 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_RW0NX[0x18]",
+        "Name": "pad0x18_5X3EI[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x28"
       }
     ]
-  },
-  "HitchDiagnosisBlueprintFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "MemoryUsageVisualiserSettings": {
     "Super": "Object",
@@ -62,12 +55,19 @@
       }
     ]
   },
-  "RareHUD": {
-    "Super": "HUD",
-    "FullSize": "0x4c0",
-    "InheritedSize": "0x4c0",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "AssetReferencer": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AssetsToReference",
+        "Type": "TArray<Class>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
   },
   "StallDetector": {
     "Super": "Object",
@@ -76,14 +76,14 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x28_27SB4[0x28]",
+        "Name": "pad0x28_GS7G4[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x28"
       }
     ]
   },
-  "StaticMeshActorBlueprintLibrary": {
+  "HitchDiagnosisBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

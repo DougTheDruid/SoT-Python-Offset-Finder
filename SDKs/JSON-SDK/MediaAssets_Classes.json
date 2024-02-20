@@ -1,4 +1,72 @@
 {
+  "MediaTimeStampInfo": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Time",
+        "Type": "struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x8_8LBOU[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "MediaSource": {
+    "Super": "Object",
+    "FullSize": "0x80",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "pad0x58_MQ94T[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "MovieAssetContainer": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MediaTextures",
+        "Type": "TArray<class MediaTexture*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MediaPlayers",
+        "Type": "TArray<class MediaPlayer*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "MediaPlaylist": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Items",
+        "Type": "TArray<class MediaSource*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "MediaBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
@@ -26,26 +94,6 @@
       }
     ]
   },
-  "MediaTimeStampInfo": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Time",
-        "Type": "struct Timespan",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x8_65ZIF[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "MediaPlayer": {
     "Super": "Object",
     "FullSize": "0x170",
@@ -53,7 +101,7 @@
     "ClassSize": "0x148",
     "Attributes": [
       {
-        "Name": "pad0x80_V1QI7[0x80]",
+        "Name": "pad0x80_2YLQ6[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0x28"
@@ -89,7 +137,7 @@
         "Offset": "0xc1"
       },
       {
-        "Name": "pad0x2_A6MB1[0x2]",
+        "Name": "pad0x2_LF2HS[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xc2"
@@ -107,7 +155,7 @@
         "Offset": "0xc4"
       },
       {
-        "Name": "pad0x3_FTWUI[0x3]",
+        "Name": "pad0x3_201KH[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xc5"
@@ -125,7 +173,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x4_IT1ZC[0x4]",
+        "Name": "pad0x4_XJUYL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xd4"
@@ -155,7 +203,7 @@
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x64_MA0VU[0x64]",
+        "Name": "pad0x64_8R7L6[0x64]",
         "Type": "char",
         "Size": "0x64",
         "Offset": "0xf4"
@@ -167,38 +215,102 @@
         "Offset": "0x158"
       },
       {
-        "Name": "pad0x8_CEMT1[0x8]",
+        "Name": "pad0x8_V88TI[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x168"
       }
     ]
   },
-  "MediaPlaylist": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+  "MediaTexture": {
+    "Super": "Texture",
+    "FullSize": "0x230",
+    "InheritedSize": "0x140",
+    "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "Items",
-        "Type": "TArray<class MediaSource*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "MediaSource": {
-    "Super": "Object",
-    "FullSize": "0x80",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x58",
-    "Attributes": [
+        "Name": "AddressX",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x140"
+      },
       {
-        "Name": "pad0x58_4A1YA[0x58]",
+        "Name": "AddressY",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x141"
+      },
+      {
+        "Name": "AutoClear",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x142"
+      },
+      {
+        "Name": "pad0x1_NPKK5[0x1]",
         "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x28"
+        "Size": "0x1",
+        "Offset": "0x143"
+      },
+      {
+        "Name": "ClearColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x144"
+      },
+      {
+        "Name": "EnableGenMips",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x154"
+      },
+      {
+        "Name": "NumMips",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x155"
+      },
+      {
+        "Name": "NewStyleOutput",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x156"
+      },
+      {
+        "Name": "OutputFormat",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x157"
+      },
+      {
+        "Name": "CurrentAspectRatio",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x158"
+      },
+      {
+        "Name": "CurrentOrientation",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x15c"
+      },
+      {
+        "Name": "pad0x3_C931H[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x15d"
+      },
+      {
+        "Name": "MediaPlayer",
+        "Type": "class MediaPlayer*",
+        "Size": "0x8",
+        "Offset": "0x160"
+      },
+      {
+        "Name": "pad0xc8_KBTOK[0xc8]",
+        "Type": "char",
+        "Size": "0xc8",
+        "Offset": "0x168"
       }
     ]
   },
@@ -213,6 +325,34 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x80"
+      }
+    ]
+  },
+  "PlatformMediaSource": {
+    "Super": "MediaSource",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MediaSource",
+        "Type": "class MediaSource*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "StreamMediaSource": {
+    "Super": "BaseMediaSource",
+    "FullSize": "0x98",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StreamUrl",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x88"
       }
     ]
   },
@@ -235,24 +375,10 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x17_CHTHP[0x17]",
+        "Name": "pad0x17_IURRA[0x17]",
         "Type": "char",
         "Size": "0x17",
         "Offset": "0x99"
-      }
-    ]
-  },
-  "StreamMediaSource": {
-    "Super": "BaseMediaSource",
-    "FullSize": "0x98",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "StreamUrl",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x88"
       }
     ]
   },
@@ -269,7 +395,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x3_SD2FC[0x3]",
+        "Name": "pad0x3_QSN94[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x89"
@@ -285,132 +411,6 @@
         "Type": "double",
         "Size": "0x8",
         "Offset": "0x90"
-      }
-    ]
-  },
-  "PlatformMediaSource": {
-    "Super": "MediaSource",
-    "FullSize": "0x88",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "MediaSource",
-        "Type": "class MediaSource*",
-        "Size": "0x8",
-        "Offset": "0x80"
-      }
-    ]
-  },
-  "MediaTexture": {
-    "Super": "Texture",
-    "FullSize": "0x228",
-    "InheritedSize": "0x138",
-    "ClassSize": "0xf0",
-    "Attributes": [
-      {
-        "Name": "AddressX",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "AddressY",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x139"
-      },
-      {
-        "Name": "AutoClear",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x13a"
-      },
-      {
-        "Name": "pad0x1_AQ0PV[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x13b"
-      },
-      {
-        "Name": "ClearColor",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x13c"
-      },
-      {
-        "Name": "EnableGenMips",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x14c"
-      },
-      {
-        "Name": "NumMips",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x14d"
-      },
-      {
-        "Name": "NewStyleOutput",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x14e"
-      },
-      {
-        "Name": "OutputFormat",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x14f"
-      },
-      {
-        "Name": "CurrentAspectRatio",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "CurrentOrientation",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x154"
-      },
-      {
-        "Name": "pad0x3_8LBZ0[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x155"
-      },
-      {
-        "Name": "MediaPlayer",
-        "Type": "class MediaPlayer*",
-        "Size": "0x8",
-        "Offset": "0x158"
-      },
-      {
-        "Name": "pad0xc8_TMVJR[0xc8]",
-        "Type": "char",
-        "Size": "0xc8",
-        "Offset": "0x160"
-      }
-    ]
-  },
-  "MovieAssetContainer": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "MediaTextures",
-        "Type": "TArray<class MediaTexture*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MediaPlayers",
-        "Type": "TArray<class MediaPlayer*>",
-        "Size": "0x10",
-        "Offset": "0x38"
       }
     ]
   },

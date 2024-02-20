@@ -1,16 +1,16 @@
 {
-  "CrewTrackedItemOwnershipSet": {
+  "TrackItemOwnershipEvent": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Item",
+        "Name": "TrackedItem",
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "CrewId",
-        "Type": "struct Guid",
+        "Name": "pad0x10_NKCUR[0x10]",
+        "Type": "char",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -44,10 +44,27 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_M9URQ[0x7]",
+        "Name": "pad0x7_3CCKX[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
+      }
+    ]
+  },
+  "CrewTrackedItemOwnershipSet": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Item",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -59,23 +76,6 @@
         "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "TrackItemOwnershipEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "TrackedItem",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x10_WG6RG[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x8"
       }
     ]
   },

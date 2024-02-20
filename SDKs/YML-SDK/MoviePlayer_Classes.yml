@@ -10,14 +10,14 @@ MoviePlayerSettings:
     Offset: '0x29'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_AQ98I[0x6]
+  - Name: pad0x6_17UIV[0x6]
     Offset: '0x2a'
     Size: '0x6'
     Type: char
   - Name: StartupMovies
     Offset: '0x30'
     Size: '0x10'
-    Type: TArray<Str StartupMovies>
+    Type: TArray<String>
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'

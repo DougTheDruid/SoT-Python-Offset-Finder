@@ -2,30 +2,10 @@
 # https://github.com/DougTheDruid
 BP_TaleBook_Shroudbreaker_PlunderOutpost_AdditionalPuzzles_C:
   Attributes:
-  - Name: TaleSelectionSlot
+  - Name: pad0x30_3FSSK[0x30]
     Offset: '0x7e8'
-    Size: '0x8'
-    Type: class ChildActorComponent*
-  - Name: TaleSelectionSlot
-    Offset: '0x7f0'
-    Size: '0x8'
-    Type: class ChildActorComponent*
-  - Name: TaleSelectionSlot
-    Offset: '0x7f8'
-    Size: '0x8'
-    Type: class ChildActorComponent*
-  - Name: TaleSelectionSlot
-    Offset: '0x800'
-    Size: '0x8'
-    Type: class ChildActorComponent*
-  - Name: TaleSelectionSlot
-    Offset: '0x808'
-    Size: '0x8'
-    Type: class ChildActorComponent*
-  - Name: TaleSelectionSlot
-    Offset: '0x810'
-    Size: '0x8'
-    Type: class ChildActorComponent*
+    Size: '0x30'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0x818'
   InheritedSize: '0x7e8'

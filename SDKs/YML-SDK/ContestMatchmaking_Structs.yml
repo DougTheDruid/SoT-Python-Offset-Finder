@@ -21,7 +21,7 @@ ContestMatchmakingFactionMapEntry:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_JXPK1[0x7]
+  - Name: pad0x7_P77O5[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -51,11 +51,11 @@ ContestMatchmakingServerRequestModel:
   - Name: PlayModeTags
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Str PlayModeTags>
+    Type: TArray<String>
   - Name: PlayModeStates
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Str PlayModeStates>
+    Type: TArray<String>
   - Name: Crews
     Offset: '0x78'
     Size: '0x10'
@@ -64,7 +64,7 @@ ContestMatchmakingServerRequestModel:
     Offset: '0x88'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_FMY0J[0x3]
+  - Name: pad0x3_3W7OB[0x3]
     Offset: '0x89'
     Size: '0x3'
     Type: char
@@ -76,7 +76,7 @@ ContestMatchmakingServerRequestModel:
     Offset: '0x9c'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x4_BRF2T[0x4]
+  - Name: pad0x4_N8RJH[0x4]
     Offset: '0xac'
     Size: '0x4'
     Type: char
@@ -95,7 +95,7 @@ ExistingServerCrewModel:
     Offset: '0x14'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_A437L[0x3]
+  - Name: pad0x3_CG3IT[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -103,7 +103,7 @@ ExistingServerCrewModel:
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_OXNPN[0x4]
+  - Name: pad0x4_B1H6N[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -119,7 +119,11 @@ ExistingServerCrewModel:
     Offset: '0x38'
     Size: '0x10'
     Type: struct Guid
-  ClassSize: '0x48'
+  - Name: CrewMemberUserIds
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<struct UniqueNetIdRepl>
+  ClassSize: '0x58'
 GameEventAvailabilityModel:
   Attributes:
   - Name: MainEvents
@@ -140,7 +144,7 @@ GameMainEventTypeModel:
   - Name: ExcludedEvents
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Str ExcludedEvents>
+    Type: TArray<String>
   - Name: ExcludedCrewIds
     Offset: '0x20'
     Size: '0x10'
@@ -153,7 +157,7 @@ GameMainEventTypeModel:
     Offset: '0x31'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_V18K4[0x6]
+  - Name: pad0x6_HSEMI[0x6]
     Offset: '0x32'
     Size: '0x6'
     Type: char
@@ -168,14 +172,14 @@ GameSubEventTypeModel:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_A382G[0x4]
+  - Name: pad0x4_6IFUG[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
   ClassSize: '0x18'
 OptionalPlayModeModel:
   Attributes:
-  - Name: pad0x50_30GB8[0x50]
+  - Name: pad0x50_5SNXJ[0x50]
     Offset: '0x0'
     Size: '0x50'
     Type: char
@@ -193,7 +197,7 @@ ServerContendedModel:
   - Name: Resources
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<UInt32 Resources>
+    Type: TArray<int>
   ClassSize: '0x30'
 ServerCrewModel:
   Attributes:
@@ -217,7 +221,7 @@ ServerCrewModel:
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_QQWAH[0x4]
+  - Name: pad0x4_FBYZ0[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -228,12 +232,12 @@ ServerCrewModel:
   - Name: Resources
     Offset: '0x60'
     Size: '0x10'
-    Type: TArray<UInt32 Resources>
+    Type: TArray<int>
   - Name: PvPFaction
     Offset: '0x70'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_9DDY0[0x3]
+  - Name: pad0x3_3CZRK[0x3]
     Offset: '0x71'
     Size: '0x3'
     Type: char
@@ -253,7 +257,7 @@ ServerCrewModel:
     Offset: '0x8c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_7TXDL[0x3]
+  - Name: pad0x3_UQYK0[0x3]
     Offset: '0x8d'
     Size: '0x3'
     Type: char
@@ -273,7 +277,11 @@ ServerCrewModel:
     Offset: '0xb8'
     Size: '0x10'
     Type: struct Guid
-  ClassSize: '0xc8'
+  - Name: CrewMemberUserIds
+    Offset: '0xc8'
+    Size: '0x10'
+    Type: TArray<struct UniqueNetIdRepl>
+  ClassSize: '0xd8'
 ServerCrewRequestModel:
   Attributes:
   - Name: ServerId
@@ -303,7 +311,7 @@ ServerCrewRequestModel:
   - Name: PlayModeTags
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Str PlayModeTags>
+    Type: TArray<String>
   - Name: PlayModeState
     Offset: '0x78'
     Size: '0x10'
@@ -327,7 +335,7 @@ ServerCrewRequestModel:
   - Name: CrewSessionTypes
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<Int CrewSessionTypes>
+    Type: TArray<int>
   - Name: Crews
     Offset: '0xa8'
     Size: '0x10'
@@ -351,7 +359,7 @@ ServerCrewResponseModel:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_6UEFH[0x7]
+  - Name: pad0x7_UZKSA[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -404,7 +412,7 @@ ServerQueueWaitTimesRequestModel:
   - Name: PlayModeTags
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Str PlayModeTags>
+    Type: TArray<String>
   - Name: PlayModeState
     Offset: '0x48'
     Size: '0x10'

@@ -1,4 +1,21 @@
 {
+  "ItemAndReward": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ItemDesc",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HandInOnTimeRewardId",
+        "Type": "struct RewardId",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "MerchantContractItemDesc": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -28,23 +45,6 @@
       }
     ]
   },
-  "ItemAndReward": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ItemDesc",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "HandInOnTimeRewardId",
-        "Type": "struct RewardId",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "MerchantContractDeliveryRequest": {
     "ClassSize": "0x40",
     "Attributes": [
@@ -55,7 +55,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_429D2[0x4]",
+        "Name": "pad0x4_21I4E[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -85,7 +85,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_I92IS[0x4]",
+        "Name": "pad0x4_GZKIM[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -96,7 +96,7 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "pad0x18_UFQQE[0x18]",
+        "Name": "pad0x18_I8Y2B[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -108,7 +108,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x98_USI4K[0x98]",
+        "Name": "pad0x98_823HQ[0x98]",
         "Type": "char",
         "Size": "0x98",
         "Offset": "0x28"

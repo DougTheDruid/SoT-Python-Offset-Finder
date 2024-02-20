@@ -1,44 +1,4 @@
 {
-  "PerComanyItemQualityEntry": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Company",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Quality",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_V8VVX[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
-      }
-    ]
-  },
-  "PerComanyComplexItemQualityEntry": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Company",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "QualityData",
-        "Type": "TArray<struct ComplexItemQualityEntry>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "ComplexItemQualityEntry": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -79,7 +39,7 @@
         "Offset": "0x5"
       },
       {
-        "Name": "pad0x2_86ERA[0x2]",
+        "Name": "pad0x2_P5M0E[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x6"
@@ -88,6 +48,46 @@
         "Name": "Rarity",
         "Type": "struct FName",
         "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PerComanyItemQualityEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Company",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Quality",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_0X12Z[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
+      }
+    ]
+  },
+  "PerComanyComplexItemQualityEntry": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Company",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "QualityData",
+        "Type": "TArray<struct ComplexItemQualityEntry>",
+        "Size": "0x10",
         "Offset": "0x8"
       }
     ]

@@ -6,7 +6,7 @@ ActorLocationPair:
     Offset: '0x0'
     Size: '0x10'
     Type: struct StringAssetReference
-  - Name: pad0x20_2C2ZC[0x20]
+  - Name: pad0x20_KRPJ0[0x20]
     Offset: '0x10'
     Size: '0x20'
     Type: char
@@ -16,7 +16,7 @@ DuplicateStoriesReceivedTelemetryEvent:
   - Name: DuplicateStoriesReceived
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str DuplicateStoriesReceived>
+    Type: TArray<String>
   ClassSize: '0x10'
 InstancedLayerLocation:
   Attributes:
@@ -31,21 +31,21 @@ InstancedLayerLocation:
   ClassSize: '0x18'
 IsAllStoryActiveCondition:
   Attributes:
-  - Name: pad0x48_D44KC[0x48]
+  - Name: pad0x48_4843K[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
   ClassSize: '0x48'
 IsAnyStoryActiveCondition:
   Attributes:
-  - Name: pad0x48_JVZWZ[0x48]
+  - Name: pad0x48_LBQQ0[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
   ClassSize: '0x48'
 IsStoryActiveConditionBase:
   Attributes:
-  - Name: pad0x28_KXPJH[0x28]
+  - Name: pad0x28_70KHN[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
@@ -53,7 +53,7 @@ IsStoryActiveConditionBase:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<struct StoryFlag>
-  - Name: pad0x10_AYLDO[0x10]
+  - Name: pad0x10_EE4UD[0x10]
     Offset: '0x38'
     Size: '0x10'
     Type: char
@@ -90,7 +90,7 @@ NamedPointsGroupActorLocation:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x20_OOEAO[0x20]
+  - Name: pad0x20_2B51F[0x20]
     Offset: '0x8'
     Size: '0x20'
     Type: char
@@ -100,11 +100,11 @@ StoriesChangedTelemetryEvent:
   - Name: AllStories
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str AllStories>
+    Type: TArray<String>
   - Name: ActiveStories
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Str ActiveStories>
+    Type: TArray<String>
   - Name: DidStoriesChange
     Offset: '0x20'
     Size: '0x1'
@@ -113,7 +113,7 @@ StoriesChangedTelemetryEvent:
     Offset: '0x21'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_EZCEA[0x6]
+  - Name: pad0x6_ZS3QS[0x6]
     Offset: '0x22'
     Size: '0x6'
     Type: char
@@ -135,14 +135,14 @@ StoryClaimableResourcesList:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_EE5Y4[0x7]
+  - Name: pad0x7_HSNFL[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
   - Name: ClaimableResources
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Weakclass ClaimableResources>
+    Type: TArray<uintptr_t>
   ClassSize: '0x20'
 StoryClaimedResourcesChangedTelemetryEvent:
   Attributes:
@@ -164,7 +164,7 @@ StoryInfo:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x10_593J5[0x10]
+  - Name: pad0x10_PY210[0x10]
     Offset: '0x8'
     Size: '0x10'
     Type: char

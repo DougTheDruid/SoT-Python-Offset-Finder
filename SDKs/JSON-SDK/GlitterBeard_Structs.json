@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_Z6RUZ[0x7]",
+        "Name": "pad0x7_IEA2F[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -33,6 +33,17 @@
       }
     ]
   },
+  "GlitterbeardSessionBeginTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_NML6J[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "GlitterBeardVFXTransitionCompletedEvent": {
     "ClassSize": "0x4",
     "Attributes": [
@@ -40,6 +51,61 @@
         "Name": "Index",
         "Type": "int",
         "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterbeardPuzzleCancelTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_LB11A[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterbeardPuzzleUnlockTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_83B7B[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_35UT1[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterbeardSessionEndTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_DI5RJ[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterbeardPlayerPuzzleUnlockSuccessTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_FXTFC[0x10]",
+        "Type": "char",
+        "Size": "0x10",
         "Offset": "0x0"
       }
     ]
@@ -60,76 +126,10 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_UXI8R[0x3]",
+        "Name": "pad0x3_A6CP7[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5"
-      }
-    ]
-  },
-  "GlitterbeardPuzzleCancelTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_86UYD[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GlitterbeardPuzzleUnlockTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_9LFHX[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GlitterbeardPlayerPuzzleUnlockSuccessTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_PYG7V[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_W1TRM[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GlitterbeardSessionEndTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_57EM1[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GlitterbeardSessionBeginTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_NNBLL[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },

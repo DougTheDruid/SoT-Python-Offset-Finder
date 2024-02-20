@@ -16,21 +16,21 @@ EventAthenaLoadingScreenBlockUntilUIIntialisedClear:
   ClassSize: '0x10'
 EventAthenaLoadingScreenClose:
   Attributes:
-  - Name: pad0x1_SL38V[0x1]
+  - Name: pad0x1_WH98M[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventAthenaLoadingScreenOpen:
   Attributes:
-  - Name: pad0x1_2ZL5B[0x1]
+  - Name: pad0x1_8F7TL[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventAthenaLoadingScreenStateRequest:
   Attributes:
-  - Name: pad0x1_6ECAM[0x1]
+  - Name: pad0x1_UN6WR[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -76,7 +76,7 @@ SlateLoadingScreenAdvancedTipDescription:
     Offset: '0xb8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ILJSA[0x4]
+  - Name: pad0x4_0EWP7[0x4]
     Offset: '0xbc'
     Size: '0x4'
     Type: char
@@ -97,7 +97,7 @@ SlateLoadingScreenImageParams:
   - Name: ImageTips
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct FText>
+    Type: TArray<struct Text>
   - Name: AdvancedTips
     Offset: '0x20'
     Size: '0x10'

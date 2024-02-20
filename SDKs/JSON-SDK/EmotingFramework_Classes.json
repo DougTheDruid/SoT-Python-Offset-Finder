@@ -1,10 +1,37 @@
 {
+  "EmoteZoomMouseAnalogInputId": {
+    "Super": "AnalogInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "EmoteCameraInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "EmoteSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "NumPages",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_3VUAD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      }
+    ]
   },
   "EmoteCard": {
     "Super": "Actor",
@@ -13,7 +40,7 @@
     "ClassSize": "0x150",
     "Attributes": [
       {
-        "Name": "pad0x8_U5GOH[0x8]",
+        "Name": "pad0x8_FEFP9[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3c8"
@@ -43,12 +70,26 @@
         "Offset": "0x3e8"
       },
       {
-        "Name": "pad0x120_J89Q7[0x120]",
+        "Name": "pad0x120_XC1TU[0x120]",
         "Type": "char",
         "Size": "0x120",
         "Offset": "0x3f8"
       }
     ]
+  },
+  "EmoteInteractionObjectsProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmoteZoomOutAnalogInputId": {
+    "Super": "AnalogInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "EmoteCoin": {
     "Super": "Actor",
@@ -57,12 +98,19 @@
     "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "pad0x128_6UQLN[0x128]",
+        "Name": "pad0x128_MWRPK[0x128]",
         "Type": "char",
         "Size": "0x128",
         "Offset": "0x3c8"
       }
     ]
+  },
+  "EmoteZoomInAnalogInputId": {
+    "Super": "AnalogInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "EmotePropData": {
     "Super": "DataAsset",
@@ -70,6 +118,34 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "EmoteDice": {
+    "Super": "Actor",
+    "FullSize": "0x4f8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x130",
+    "Attributes": [
+      {
+        "Name": "pad0x130_1JFG7[0x130]",
+        "Type": "char",
+        "Size": "0x130",
+        "Offset": "0x3c8"
+      }
+    ]
+  },
+  "EmoteIdListingAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "EmoteIds",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
   },
   "EmoteRandomFromListAsset": {
     "Super": "DataAsset",
@@ -80,6 +156,52 @@
       {
         "Name": "EmoteDataList",
         "Type": "TArray<struct EmoteData>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "EmoteRandomObject": {
+    "Super": "Actor",
+    "FullSize": "0x508",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x140",
+    "Attributes": [
+      {
+        "Name": "pad0x8_GJ2XR[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "MeshComponent",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "DynamicMaterialInstance",
+        "Type": "class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "pad0x128_KXPU0[0x128]",
+        "Type": "char",
+        "Size": "0x128",
+        "Offset": "0x3e0"
+      }
+    ]
+  },
+  "EmotePropRandomObjectData": {
+    "Super": "EmotePropData",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "PossibleObjects",
+        "Type": "TArray<struct EmotePropRandomObjectInfo>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -98,134 +220,12 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_RY361[0x7]",
+        "Name": "pad0x7_1XBLA[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
       }
     ]
-  },
-  "EmoteDice": {
-    "Super": "Actor",
-    "FullSize": "0x4f8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x130",
-    "Attributes": [
-      {
-        "Name": "pad0x130_298EK[0x130]",
-        "Type": "char",
-        "Size": "0x130",
-        "Offset": "0x3c8"
-      }
-    ]
-  },
-  "EmoteIdListingAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "EmoteIds",
-        "Type": "TArray<struct FName>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "EmoteInteractionObjectsProviderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EmotePropRandomObjectData": {
-    "Super": "EmotePropData",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "PossibleObjects",
-        "Type": "TArray<struct EmotePropRandomObjectInfo>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "EmoteRandomObject": {
-    "Super": "Actor",
-    "FullSize": "0x508",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x140",
-    "Attributes": [
-      {
-        "Name": "pad0x8_TSIK0[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "MeshComponent",
-        "Type": "class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "DynamicMaterialInstance",
-        "Type": "class MaterialInstanceDynamic*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "pad0x128_SQJQ0[0x128]",
-        "Type": "char",
-        "Size": "0x128",
-        "Offset": "0x3e0"
-      }
-    ]
-  },
-  "EmoteSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x40",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "NumPages",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x4_I24EQ[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      }
-    ]
-  },
-  "EmoteZoomInAnalogInputId": {
-    "Super": "AnalogInputId",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EmoteZoomMouseAnalogInputId": {
-    "Super": "AnalogInputId",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EmoteZoomOutAnalogInputId": {
-    "Super": "AnalogInputId",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

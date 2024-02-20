@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CrewSkillRatingService:
   Attributes:
-  - Name: pad0xf8_LZ1W5[0xf8]
+  - Name: pad0xf8_PWPYR[0xf8]
     Offset: '0x28'
     Size: '0xf8'
     Type: char

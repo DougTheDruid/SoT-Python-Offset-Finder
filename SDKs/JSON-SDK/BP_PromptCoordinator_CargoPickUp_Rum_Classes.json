@@ -12,9 +12,9 @@
         "Offset": "0x138"
       },
       {
-        "Name": "pad0x6f_X539T[0x6f]",
+        "Name": "pad0xb0_9PSO5[0xb0]",
         "Type": "char",
-        "Size": "0x6f",
+        "Size": "0xb0",
         "Offset": "0x140"
       },
       {
@@ -30,7 +30,7 @@
         "Offset": "0x198"
       },
       {
-        "Name": "pad0x7_PN2QW[0x7]",
+        "Name": "pad0x7_C0P79[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x199"
@@ -48,14 +48,14 @@
         "Offset": "0x210"
       },
       {
-        "Name": "pad0x7_B6048[0x7]",
+        "Name": "pad0x7_5MNRJ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x211"
       },
       {
         "Name": "RumType",
-        "Type": "TArray<struct FName>",
+        "Type": "TArray<struct Name>",
         "Size": "0x10",
         "Offset": "0x218"
       },

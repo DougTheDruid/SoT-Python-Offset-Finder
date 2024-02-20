@@ -17,19 +17,19 @@ AssetAuditSettings:
   - Name: PathsToAuditOnSave
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Str PathsToAuditOnSave>
+    Type: TArray<String>
   - Name: TypesToIgnoreInFeatureToggleAudits
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<Assetclass TypesToIgnoreInFeatureToggleAudits>
+    Type: TArray<Class>
   - Name: AssetAuditorsLoadExceptionList
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Str AssetAuditorsLoadExceptionList>
+    Type: TArray<String>
   - Name: IgnoreReferencersForClasses
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<Assetclass IgnoreReferencersForClasses>
+    Type: TArray<Class>
   ClassSize: '0x40'
   FullSize: '0x78'
   InheritedSize: '0x38'
@@ -42,7 +42,7 @@ AutomationBlueprintFunctionLibrary:
   Super: BlueprintFunctionLibrary
 AutomationLatentActionCallback:
   Attributes:
-  - Name: pad0x38_EIF1V[0x38]
+  - Name: pad0x38_9LXRZ[0x38]
     Offset: '0x28'
     Size: '0x38'
     Type: char
@@ -98,7 +98,7 @@ TestAbstractActor:
   Super: Actor
 TestLevelScriptActor:
   Attributes:
-  - Name: pad0x8_FYILT[0x8]
+  - Name: pad0x8_OJQ7I[0x8]
     Offset: '0x3d0'
     Size: '0x8'
     Type: char
@@ -130,7 +130,7 @@ TestLevelScriptActor:
     Offset: '0x3de'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_ZN7ML[0x1]
+  - Name: pad0x1_KYRC2[0x1]
     Offset: '0x3df'
     Size: '0x1'
     Type: char
@@ -146,7 +146,7 @@ TestLevelScriptActor:
     Offset: '0x3f1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_RTUD8[0x2]
+  - Name: pad0x2_BL0LR[0x2]
     Offset: '0x3f2'
     Size: '0x2'
     Type: char
@@ -158,22 +158,22 @@ TestLevelScriptActor:
     Offset: '0x3f8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_L2MHM[0x4]
+  - Name: pad0x4_QJA2E[0x4]
     Offset: '0x3fc'
     Size: '0x4'
     Type: char
   - Name: VerboseLogCategories
     Offset: '0x400'
     Size: '0x10'
-    Type: TArray<Str VerboseLogCategories>
+    Type: TArray<String>
   - Name: ClientsRunning
     Offset: '0x410'
     Size: '0x10'
-    Type: TArray<Int ClientsRunning>
+    Type: TArray<int>
   - Name: ClientIds
     Offset: '0x420'
     Size: '0x10'
-    Type: TArray<Int ClientIds>
+    Type: TArray<int>
   - Name: ClientPawns
     Offset: '0x430'
     Size: '0x10'
@@ -186,7 +186,7 @@ TestLevelScriptActor:
     Offset: '0x450'
     Size: '0x4'
     Type: int
-  - Name: pad0x3c_TIRI6[0x3c]
+  - Name: pad0x3c_FDNE2[0x3c]
     Offset: '0x454'
     Size: '0x3c'
     Type: char
@@ -214,7 +214,7 @@ TestablePlayerController:
   Super: PlayerController
 TestablePlayerControllerComponent:
   Attributes:
-  - Name: pad0x20_XRHK2[0x20]
+  - Name: pad0x20_N4MU7[0x20]
     Offset: '0xc8'
     Size: '0x20'
     Type: char

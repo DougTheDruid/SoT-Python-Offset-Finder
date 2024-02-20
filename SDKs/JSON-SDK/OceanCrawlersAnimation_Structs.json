@@ -1,4 +1,74 @@
 {
+  "OceanCrawlerLocomotionAnimationDataStructure": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "LocomotionIntoAsBlendspace",
+        "Type": "class BlendSpace1D*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Idle",
+        "Type": "class AnimSequence*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "LocomotionOutOf",
+        "Type": "class AnimSequence*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "LocomotionOutOfAsBlendspace",
+        "Type": "class BlendSpace1D*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Locomotion",
+        "Type": "class BlendSpace*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "IntoDeadZone",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OutOfDeadZone",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "OceanCrawlerSporeBreathAnimationData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Into",
+        "Type": "class BlendSpace1D*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Locomotion",
+        "Type": "class BlendSpace1D*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Outof",
+        "Type": "class BlendSpace1D*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "OceanCrawlerAnimationDataStructure": {
     "ClassSize": "0x90",
     "Attributes": [
@@ -61,76 +131,6 @@
         "Type": "struct CustomAnimationMontageId",
         "Size": "0x8",
         "Offset": "0x88"
-      }
-    ]
-  },
-  "OceanCrawlerSporeBreathAnimationData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Into",
-        "Type": "class BlendSpace1D*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Locomotion",
-        "Type": "class BlendSpace1D*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Outof",
-        "Type": "class BlendSpace1D*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "OceanCrawlerLocomotionAnimationDataStructure": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "LocomotionIntoAsBlendspace",
-        "Type": "class BlendSpace1D*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Idle",
-        "Type": "class AnimSequence*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "LocomotionOutOf",
-        "Type": "class AnimSequence*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "LocomotionOutOfAsBlendspace",
-        "Type": "class BlendSpace1D*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Locomotion",
-        "Type": "class BlendSpace*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "IntoDeadZone",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "OutOfDeadZone",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2c"
       }
     ]
   },

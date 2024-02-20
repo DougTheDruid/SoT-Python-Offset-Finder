@@ -3,10 +3,10 @@
 BP_Carrot_GlobalDigSpotService_C:
   Attributes:
   - Name: DefaultSceneRoot
-    Offset: '0x3e8'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x3f0'
-  InheritedSize: '0x3e8'
+  FullSize: '0x400'
+  InheritedSize: '0x3f8'
   Super: GlobalDigSpotService

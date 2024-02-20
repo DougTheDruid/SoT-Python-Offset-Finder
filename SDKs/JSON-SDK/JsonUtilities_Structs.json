@@ -1,32 +1,4 @@
 {
-  "JsonObjectWrapper": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_2JJSE[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestTextObject": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "TestText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TestTextExport",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "TestFloatObject": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -44,28 +16,6 @@
       }
     ]
   },
-  "TestEnumObject": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "TestEnum",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestMessageTimespan": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Timespan",
-        "Type": "struct Timespan",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "TestMessageDateTime": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -77,13 +27,13 @@
       }
     ]
   },
-  "TestSerializationNestedObject": {
-    "ClassSize": "0x28",
+  "TestMessageUInt64": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "NestedObject",
-        "Type": "struct TestSerializationObject",
-        "Size": "0x28",
+        "Name": "pad0x8_V1LTV[0x8]",
+        "Type": "char",
+        "Size": "0x8",
         "Offset": "0x0"
       }
     ]
@@ -98,7 +48,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_INF24[0x3]",
+        "Name": "pad0x3_FD99T[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -123,13 +73,24 @@
       }
     ]
   },
-  "TestMessageUInt64": {
-    "ClassSize": "0x8",
+  "TestUStructMapSerializationObject": {
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x8_QTT0W[0x8]",
+        "Name": "pad0x50_ELO6T[0x50]",
         "Type": "char",
-        "Size": "0x8",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestEnumObject": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "TestEnum",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
@@ -138,20 +99,9 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_NBN6F[0x8]",
+        "Name": "pad0x8_3PDTV[0x8]",
         "Type": "char",
         "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestUStructMapSerializationObject": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_9BUMR[0x50]",
-        "Type": "char",
-        "Size": "0x50",
         "Offset": "0x0"
       }
     ]
@@ -160,7 +110,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_LVOLE[0x50]",
+        "Name": "pad0x50_5RDVH[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x0"
@@ -171,7 +121,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_9WVKR[0x50]",
+        "Name": "pad0x50_IM1OL[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x0"
@@ -182,9 +132,59 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_E1WWK[0x50]",
+        "Name": "pad0x50_NVTDA[0x50]",
         "Type": "char",
         "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestTextObject": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "TestText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TestTextExport",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "TestMessageTimespan": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Timespan",
+        "Type": "struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "JsonObjectWrapper": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_CZHVD[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestSerializationNestedObject": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "NestedObject",
+        "Type": "struct TestSerializationObject",
+        "Size": "0x28",
         "Offset": "0x0"
       }
     ]

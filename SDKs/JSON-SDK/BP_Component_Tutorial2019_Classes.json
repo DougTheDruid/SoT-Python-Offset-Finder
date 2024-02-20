@@ -12,14 +12,14 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0xcf_7N003[0xcf]",
+        "Name": "pad0x115_KE9O8[0x115]",
         "Type": "char",
-        "Size": "0xcf",
+        "Size": "0x115",
         "Offset": "0xe0"
       },
       {
         "Name": "GoldHoarders",
-        "Type": "TArray<Assetclass GoldHoarders>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0xe0"
       },
@@ -37,13 +37,13 @@
       },
       {
         "Name": "NPCBlacklist",
-        "Type": "TArray<Assetclass NPCBlacklist>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x108"
       },
       {
         "Name": "OutpostNames",
-        "Type": "TArray<struct FName>",
+        "Type": "TArray<struct Name>",
         "Size": "0x10",
         "Offset": "0x118"
       },
@@ -54,7 +54,7 @@
         "Offset": "0x128"
       },
       {
-        "Name": "pad0x7_HXUR2[0x7]",
+        "Name": "pad0x7_S8L8D[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x129"

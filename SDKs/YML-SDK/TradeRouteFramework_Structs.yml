@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 QuestVariableTradeRouteData:
   Attributes:
-  - Name: pad0x30_01HZL[0x30]
+  - Name: pad0x30_ECGA4[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -13,7 +13,7 @@ TradeRouteMapping:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_TPO8S[0x3]
+  - Name: pad0x3_HCYBN[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -21,7 +21,7 @@ TradeRouteMapping:
     Offset: '0x4'
     Size: '0x8'
     Type: struct IslandSelectionType
-  - Name: pad0x4_KH2RJ[0x4]
+  - Name: pad0x4_91C54[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -36,7 +36,7 @@ TradeRouteMapping:
   ClassSize: '0x28'
 TradeRouteMappingFilterQuestVariable:
   Attributes:
-  - Name: pad0x30_GGTKQ[0x30]
+  - Name: pad0x30_TPD4U[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char

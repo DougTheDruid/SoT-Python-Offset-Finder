@@ -8,7 +8,7 @@ DamageablePartsInterface:
   Super: Interface
 GenericShipDamageablePart:
   Attributes:
-  - Name: pad0x8_JYXV3[0x8]
+  - Name: pad0x8_03YFQ[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -16,7 +16,7 @@ GenericShipDamageablePart:
     Offset: '0x3d0'
     Size: '0x8'
     Type: class ShipDamageableComponent*
-  - Name: pad0x10_SBXHL[0x10]
+  - Name: pad0x10_WB0FH[0x10]
     Offset: '0x3d8'
     Size: '0x10'
     Type: char
@@ -42,6 +42,16 @@ LandscapeDamagerType:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: DamagerType
+LevelOfDamagePropertiesDataAsset:
+  Attributes:
+  - Name: LevelOfDamageProperties
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<struct LevelOfDamageProperties>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
 ShipDamagePartInterface:
   Attributes: []
   ClassSize: '0x0'
@@ -60,7 +70,7 @@ ShipPartsDamageTrackerComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_TR69K[0x4]
+  - Name: pad0x4_XE4MP[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
@@ -74,11 +84,11 @@ ShipRestorationSettings:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_3CD5M[0x4]
+  - Name: pad0x4_WJVZT[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
-  - Name: pad0x8_2RUB3[0x8]
+  - Name: pad0x8_O5J61[0x8]
     Offset: '0x40'
     Size: '0x8'
     Type: char
@@ -86,6 +96,12 @@ ShipRestorationSettings:
   FullSize: '0x48'
   InheritedSize: '0x38'
   Super: DeveloperSettings
+StormDamageParamsHandlerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 StrainDamagerType:
   Attributes: []
   ClassSize: '0x0'

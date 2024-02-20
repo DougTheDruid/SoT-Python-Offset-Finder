@@ -30,7 +30,7 @@ BP_Placement_Garden_C:
     Offset: '0x3fc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_7DXFH[0x3]
+  - Name: pad0x3_JI91G[0x3]
     Offset: '0x3fd'
     Size: '0x3'
     Type: char
@@ -46,7 +46,7 @@ BP_Placement_Garden_C:
     Offset: '0x408'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_UR5FA[0x4]
+  - Name: pad0x4_5XWZR[0x4]
     Offset: '0x40c'
     Size: '0x4'
     Type: char
@@ -58,14 +58,14 @@ BP_Placement_Garden_C:
     Offset: '0x420'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_5CAUB[0x7]
+  - Name: pad0x7_N3COS[0x7]
     Offset: '0x421'
     Size: '0x7'
     Type: char
   - Name: Mesh Probabilities
     Offset: '0x428'
     Size: '0x10'
-    Type: TArray<Float Mesh Probabilities>
+    Type: TArray<float>
   - Name: Instanced Meshes
     Offset: '0x438'
     Size: '0x10'
@@ -78,7 +78,7 @@ BP_Placement_Garden_C:
     Offset: '0x450'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_I4QDR[0x4]
+  - Name: pad0x4_3P6WS[0x4]
     Offset: '0x454'
     Size: '0x4'
     Type: char

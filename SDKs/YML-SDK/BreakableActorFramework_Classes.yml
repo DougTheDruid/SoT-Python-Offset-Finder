@@ -6,7 +6,7 @@ BreakableActorAudioComponent:
     Offset: '0xc8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_TL54G[0x7]
+  - Name: pad0x7_WWXLY[0x7]
     Offset: '0xc9'
     Size: '0x7'
     Type: char
@@ -30,7 +30,7 @@ BreakableActorAudioComponent:
     Offset: '0xf0'
     Size: '0x8'
     Type: class WwiseEvent*
-  - Name: pad0xd0_W6GVV[0xd0]
+  - Name: pad0xd0_V5QKM[0xd0]
     Offset: '0xf8'
     Size: '0xd0'
     Type: char
@@ -40,7 +40,7 @@ BreakableActorAudioComponent:
   Super: ActorComponent
 BreakableActorBase:
   Attributes:
-  - Name: pad0x20_DDO3R[0x20]
+  - Name: pad0x20_31PMW[0x20]
     Offset: '0x3c8'
     Size: '0x20'
     Type: char
@@ -48,7 +48,7 @@ BreakableActorBase:
     Offset: '0x3e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5UYII[0x4]
+  - Name: pad0x4_S0DHJ[0x4]
     Offset: '0x3ec'
     Size: '0x4'
     Type: char
@@ -76,7 +76,7 @@ BreakableActorBase:
     Offset: '0x438'
     Size: '0x8'
     Type: class ActorDamageableComponent*
-  - Name: pad0x118_MY8ZJ[0x118]
+  - Name: pad0x118_KOUA9[0x118]
     Offset: '0x440'
     Size: '0x118'
     Type: char
@@ -86,7 +86,7 @@ BreakableActorBase:
   Super: Actor
 BreakableActorDynamicMaterialComponent:
   Attributes:
-  - Name: pad0x4_WBWNI[0x4]
+  - Name: pad0x4_ENA24[0x4]
     Offset: '0xc8'
     Size: '0x4'
     Type: char
@@ -110,7 +110,7 @@ BreakableActorDynamicMaterialComponent:
     Offset: '0xec'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_9POYY[0x4]
+  - Name: pad0x4_P1VCK[0x4]
     Offset: '0xf4'
     Size: '0x4'
     Type: char
@@ -126,7 +126,7 @@ BreakableActorDynamicMaterialComponent:
     Offset: '0x110'
     Size: '0x8'
     Type: class BreakableActorBase*
-  - Name: pad0x108_ZVQ4F[0x108]
+  - Name: pad0x108_2RVI5[0x108]
     Offset: '0x118'
     Size: '0x108'
     Type: char
@@ -136,7 +136,7 @@ BreakableActorDynamicMaterialComponent:
   Super: ActorComponent
 BreakableActorItemSpawnComponent:
   Attributes:
-  - Name: pad0x80_X6HJP[0x80]
+  - Name: pad0x80_EIJ7G[0x80]
     Offset: '0x470'
     Size: '0x80'
     Type: char
@@ -150,7 +150,7 @@ BreakableActorVfxComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: struct Color
-  - Name: pad0x4_PIZ1T[0x4]
+  - Name: pad0x4_JGBCE[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
@@ -190,7 +190,7 @@ BreakableActorVfxComponent:
     Offset: '0x100'
     Size: '0x8'
     Type: class MaterialInstanceDynamic*
-  - Name: pad0xb8_TC11O[0xb8]
+  - Name: pad0xb8_148VA[0xb8]
     Offset: '0x108'
     Size: '0xb8'
     Type: char

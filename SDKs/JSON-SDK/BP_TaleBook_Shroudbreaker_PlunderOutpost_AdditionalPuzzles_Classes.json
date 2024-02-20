@@ -6,40 +6,10 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "TaleSelectionSlot",
-        "Type": "class ChildActorComponent*",
-        "Size": "0x8",
+        "Name": "pad0x30_3FSSK[0x30]",
+        "Type": "char",
+        "Size": "0x30",
         "Offset": "0x7e8"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x7f0"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x7f8"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x800"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x808"
-      },
-      {
-        "Name": "TaleSelectionSlot",
-        "Type": "class ChildActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x810"
       }
     ]
   },

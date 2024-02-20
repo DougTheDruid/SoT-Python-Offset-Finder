@@ -8,7 +8,7 @@ AnimNotifyWwiseEmitterComponentRetrievalInterface:
   Super: Interface
 AudioReporterSubSystem:
   Attributes:
-  - Name: pad0x50_BJ4JA[0x50]
+  - Name: pad0x50_PLUCT[0x50]
     Offset: '0x28'
     Size: '0x50'
     Type: char
@@ -48,7 +48,7 @@ MovieSceneAkAudioEventTrack:
   Super: MovieSceneAkTrack
 MovieSceneAkAudioRTPCSection:
   Attributes:
-  - Name: pad0x8_EXCTJ[0x8]
+  - Name: pad0x8_DWAPD[0x8]
     Offset: '0x98'
     Size: '0x8'
     Type: char
@@ -80,7 +80,7 @@ MovieSceneAkTrack:
     Offset: '0x98'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_OT6FD[0x7]
+  - Name: pad0x7_1RT3X[0x7]
     Offset: '0x99'
     Size: '0x7'
     Type: char
@@ -112,7 +112,7 @@ WwiseBank:
     Offset: '0x40'
     Size: '0x8'
     Type: class WwiseBank*
-  - Name: pad0x28_IO9PH[0x28]
+  - Name: pad0x28_YH7T7[0x28]
     Offset: '0x48'
     Size: '0x28'
     Type: char
@@ -155,14 +155,14 @@ WwiseDDSEvent:
   - Name: DDSArgumentsGroupsIDs
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<UInt32 DDSArgumentsGroupsIDs>
+    Type: TArray<int>
   ClassSize: '0x10'
   FullSize: '0x60'
   InheritedSize: '0x50'
   Super: WwiseEvent
 WwiseDebugManager:
   Attributes:
-  - Name: pad0x60_0LGNE[0x60]
+  - Name: pad0x60_M3M1V[0x60]
     Offset: '0x28'
     Size: '0x60'
     Type: char
@@ -178,7 +178,7 @@ WwiseEmitterInterface:
   Super: Interface
 WwiseEmitterManager:
   Attributes:
-  - Name: pad0x20_1406S[0x20]
+  - Name: pad0x20_YLGUA[0x20]
     Offset: '0x28'
     Size: '0x20'
     Type: char
@@ -196,7 +196,7 @@ WwiseEvent:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_1SNF2[0x3]
+  - Name: pad0x3_UL4V8[0x3]
     Offset: '0x31'
     Size: '0x3'
     Type: char
@@ -220,7 +220,7 @@ WwiseEvent:
     Offset: '0x45'
     Size: '0x1'
     Type: bool
-  - Name: pad0xa_NC85R[0xa]
+  - Name: pad0xa_M1X3U[0xa]
     Offset: '0x46'
     Size: '0xa'
     Type: char
@@ -233,42 +233,42 @@ WwiseIDsDatabase:
   - Name: StateGroupIDs
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<UInt32 StateGroupIDs>
+    Type: TArray<int>
   - Name: StateGroupNames
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<struct FName>
+    Type: TArray<struct Name>
   - Name: StateValueIDs
     Offset: '0x48'
     Size: '0x10'
-    Type: TArray<UInt32 StateValueIDs>
+    Type: TArray<int>
   - Name: StateValueNames
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<struct FName>
+    Type: TArray<struct Name>
   - Name: SwitchGroupIDs
     Offset: '0x68'
     Size: '0x10'
-    Type: TArray<UInt32 SwitchGroupIDs>
+    Type: TArray<int>
   - Name: SwitchGroupNames
     Offset: '0x78'
     Size: '0x10'
-    Type: TArray<struct FName>
+    Type: TArray<struct Name>
   - Name: SwitchStateIDs
     Offset: '0x88'
     Size: '0x10'
-    Type: TArray<UInt32 SwitchStateIDs>
+    Type: TArray<int>
   - Name: SwitchStateNames
     Offset: '0x98'
     Size: '0x10'
-    Type: TArray<struct FName>
+    Type: TArray<struct Name>
   ClassSize: '0x80'
   FullSize: '0xa8'
   InheritedSize: '0x28'
   Super: DataAsset
 WwiseInputManager:
   Attributes:
-  - Name: pad0x28_IC3KS[0x28]
+  - Name: pad0x28_OB3KX[0x28]
     Offset: '0x28'
     Size: '0x28'
     Type: char
@@ -284,7 +284,7 @@ WwiseInputManagerInterface:
   Super: Interface
 WwiseMediaManager:
   Attributes:
-  - Name: pad0x50_65GGH[0x50]
+  - Name: pad0x50_0EQP9[0x50]
     Offset: '0x28'
     Size: '0x50'
     Type: char
@@ -316,7 +316,7 @@ WwiseNonShippingAudioRootAsset:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<class WwiseNonShippingAudioAsset*>
-  - Name: pad0x10_I413D[0x10]
+  - Name: pad0x10_H7A4U[0x10]
     Offset: '0x38'
     Size: '0x10'
     Type: char
@@ -326,7 +326,7 @@ WwiseNonShippingAudioRootAsset:
   Super: DataAsset
 WwisePoolManager:
   Attributes:
-  - Name: pad0xd8_N9DK7[0xd8]
+  - Name: pad0xd8_ZZ5RZ[0xd8]
     Offset: '0x28'
     Size: '0xd8'
     Type: char
@@ -336,7 +336,7 @@ WwisePoolManager:
   Super: Object
 WwiseSoundFrameManager:
   Attributes:
-  - Name: pad0x20_9ITHJ[0x20]
+  - Name: pad0x20_77QRS[0x20]
     Offset: '0x28'
     Size: '0x20'
     Type: char

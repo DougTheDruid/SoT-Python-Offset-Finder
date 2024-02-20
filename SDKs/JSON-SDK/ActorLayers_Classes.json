@@ -6,6 +6,26 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "LayerActorsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Actors",
+        "Type": "TArray<Class>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Items",
+        "Type": "TArray<Class>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "InstancedLayerComponent": {
     "Super": "SceneComponent",
     "FullSize": "0x310",
@@ -13,7 +33,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_U5ZDC[0x8]",
+        "Name": "pad0x8_W4323[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2e0"
@@ -25,30 +45,10 @@
         "Offset": "0x2e8"
       },
       {
-        "Name": "pad0x18_VFO9K[0x18]",
+        "Name": "pad0x18_5JM4M[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x2f8"
-      }
-    ]
-  },
-  "LayerActorsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Actors",
-        "Type": "TArray<Assetclass Actors>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Items",
-        "Type": "TArray<Assetclass Items>",
-        "Size": "0x10",
-        "Offset": "0x38"
       }
     ]
   },

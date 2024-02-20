@@ -1,4 +1,21 @@
 {
+  "WorldEdgeItemDroppedInRedSeaTelemetryEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "DropLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TeleportLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      }
+    ]
+  },
   "WorldEdgeItemServiceBatchCompletedEvent": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -30,23 +47,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "WorldEdgeItemDroppedInRedSeaTelemetryEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "DropLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TeleportLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xc"
       }
     ]
   },

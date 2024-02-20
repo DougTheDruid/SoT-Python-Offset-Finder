@@ -16,103 +16,6 @@
       }
     ]
   },
-  "CustomDeathConfiguration": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_5THJI[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "DestroyCustomPlayerStartGameServerRequestModel": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "PlayerStartActorNetID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_XP502[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Tag",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "CustomPlayerStartConfigResponseGameServerRequestModel": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Success",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_00Z0W[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "PlayerStartId",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "CustomPlayerStartConfigGameServerRequestModel": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_WMP5C[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "struct Quat",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Tags",
-        "Type": "TArray<Str Tags>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "ResetCustomConfigForPlayerGameServerRequestModel": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "PlayerNetGUID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "SetShouldSkipFerryOfTheDamnedGameServerRequestModel": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -129,7 +32,127 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_Q7DHV[0x3]",
+        "Name": "pad0x3_I9EO8[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
+      }
+    ]
+  },
+  "CustomPlayerStartConfigGameServerRequestModel": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_WXMD8[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct Quat",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Tags",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "CustomPlayerStartConfigResponseGameServerRequestModel": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Success",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_9OYTL[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "PlayerStartId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "DestroyCustomPlayerStartGameServerRequestModel": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PlayerStartActorNetID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_WO3TQ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Tag",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "KillPlayerGameServerRequestModel": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "PlayerNetGUID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ResetCustomConfigForPlayerGameServerRequestModel": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "PlayerNetGUID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ForcePlayerRespawnGameServerRequestModel": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "PlayerNetGUID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "bRespawnAsGhost",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_PGSTM[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5"
@@ -152,10 +175,21 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_J7KB8[0x3]",
+        "Name": "pad0x3_LTYE2[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5"
+      }
+    ]
+  },
+  "CustomDeathConfiguration": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_A04YI[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
       }
     ]
   },
@@ -170,29 +204,6 @@
       }
     ]
   },
-  "ForcePlayerRespawnGameServerRequestModel": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "PlayerNetGUID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "bRespawnAsGhost",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x3_JTIJ7[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5"
-      }
-    ]
-  },
   "KillCrewGameServerRequestModel": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -200,17 +211,6 @@
         "Name": "CrewNetGUID",
         "Type": "struct Guid",
         "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "KillPlayerGameServerRequestModel": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "PlayerNetGUID",
-        "Type": "int",
-        "Size": "0x4",
         "Offset": "0x0"
       }
     ]

@@ -14,7 +14,7 @@ BP_FishCreature_C:
     Offset: '0x3d1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_DXNJ3[0x2]
+  - Name: pad0x2_JROPW[0x2]
     Offset: '0x3d2'
     Size: '0x2'
     Type: char
@@ -50,7 +50,7 @@ BP_FishCreature_C:
     Offset: '0x404'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_IQCNQ[0x3]
+  - Name: pad0x3_TFMHF[0x3]
     Offset: '0x405'
     Size: '0x3'
     Type: char
@@ -105,15 +105,15 @@ BP_FishCreature_C:
   - Name: SelectedCreatureType
     Offset: '0x440'
     Size: '0x10'
-    Type: TArray<Assetclass SelectedCreatureType>
+    Type: TArray<Class>
   - Name: Fish_04
     Offset: '0x450'
     Size: '0x10'
-    Type: TArray<Assetclass Fish_04>
+    Type: TArray<Class>
   - Name: Fish_05
     Offset: '0x460'
     Size: '0x10'
-    Type: TArray<Assetclass Fish_05>
+    Type: TArray<Class>
   - Name: Size
     Offset: '0x470'
     Size: '0x4'
@@ -133,35 +133,35 @@ BP_FishCreature_C:
   - Name: Fish_07
     Offset: '0x488'
     Size: '0x10'
-    Type: TArray<Assetclass Fish_07>
+    Type: TArray<Class>
   - Name: DrawDistance
     Offset: '0x498'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_V7YCA[0x4]
+  - Name: pad0x4_WMN8D[0x4]
     Offset: '0x49c'
     Size: '0x4'
     Type: char
   - Name: Clown_01
     Offset: '0x4a0'
     Size: '0x10'
-    Type: TArray<Assetclass Clown_01>
+    Type: TArray<Class>
   - Name: SizeCompensation
     Offset: '0x4b0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_BJG5H[0x4]
+  - Name: pad0x4_2T3OB[0x4]
     Offset: '0x4b4'
     Size: '0x4'
     Type: char
   - Name: Splashtail
     Offset: '0x4b8'
     Size: '0x10'
-    Type: TArray<Assetclass Splashtail>
+    Type: TArray<Class>
   - Name: Pondie
     Offset: '0x4c8'
     Size: '0x10'
-    Type: TArray<Assetclass Pondie>
+    Type: TArray<Class>
   - Name: FishDistribution
     Offset: '0x4d8'
     Size: '0x10'

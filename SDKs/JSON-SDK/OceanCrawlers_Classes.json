@@ -1,21 +1,27 @@
 {
-  "BTTask_BroadcastOceanCrawlerAbilityAudioEvent": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x68",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x8",
+  "OceanCrawlerAudioBroadcaster": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1c0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0xf8",
     "Attributes": [
       {
-        "Name": "OceanCrawlerAudioKeyToBroadcast",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x60"
+        "Name": "AudioDataAsset",
+        "Type": "class OceanCrawlerAudioParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xc8"
       },
       {
-        "Name": "pad0x7_BTAPY[0x7]",
+        "Name": "CachedOwner",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0xe8_S9DHA[0xe8]",
         "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x61"
+        "Size": "0xe8",
+        "Offset": "0xd8"
       }
     ]
   },
@@ -63,29 +69,23 @@
       }
     ]
   },
-  "OceanCrawlerAudioBroadcaster": {
-    "Super": "ActorComponent",
-    "FullSize": "0x1c0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0xf8",
+  "BTTask_BroadcastOceanCrawlerAbilityAudioEvent": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x68",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "AudioDataAsset",
-        "Type": "class OceanCrawlerAudioParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0xc8"
+        "Name": "OceanCrawlerAudioKeyToBroadcast",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x60"
       },
       {
-        "Name": "CachedOwner",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "pad0xe8_Q1VMT[0xe8]",
+        "Name": "pad0x7_PYUJE[0x7]",
         "Type": "char",
-        "Size": "0xe8",
-        "Offset": "0xd8"
+        "Size": "0x7",
+        "Offset": "0x61"
       }
     ]
   },

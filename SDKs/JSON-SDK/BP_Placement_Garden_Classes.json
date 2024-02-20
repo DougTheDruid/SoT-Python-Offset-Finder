@@ -48,7 +48,7 @@
         "Offset": "0x3fc"
       },
       {
-        "Name": "pad0x3_7DXFH[0x3]",
+        "Name": "pad0x3_JI91G[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3fd"
@@ -72,7 +72,7 @@
         "Offset": "0x408"
       },
       {
-        "Name": "pad0x4_UR5FA[0x4]",
+        "Name": "pad0x4_5XWZR[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x40c"
@@ -90,14 +90,14 @@
         "Offset": "0x420"
       },
       {
-        "Name": "pad0x7_5CAUB[0x7]",
+        "Name": "pad0x7_N3COS[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x421"
       },
       {
         "Name": "Mesh Probabilities",
-        "Type": "TArray<Float Mesh Probabilities>",
+        "Type": "TArray<float>",
         "Size": "0x10",
         "Offset": "0x428"
       },
@@ -120,7 +120,7 @@
         "Offset": "0x450"
       },
       {
-        "Name": "pad0x4_I4QDR[0x4]",
+        "Name": "pad0x4_3P6WS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x454"

@@ -1,4 +1,32 @@
 {
+  "DebugMenuOptionExecutedEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DebugMenuItemName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ConsoleCommand",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "DebugErrorHappeningEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_BWTPI[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "DebugMenuButtonShortcut": {
     "ClassSize": "0x40",
     "Attributes": [
@@ -33,7 +61,7 @@
         "Offset": "0x34"
       },
       {
-        "Name": "pad0xb_LYKLU[0xb]",
+        "Name": "pad0xb_BEDHC[0xb]",
         "Type": "char",
         "Size": "0xb",
         "Offset": "0x35"
@@ -80,7 +108,7 @@
         "Offset": "0x32"
       },
       {
-        "Name": "pad0x5_XPYWJ[0x5]",
+        "Name": "pad0x5_7MA1U[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x33"
@@ -98,34 +126,6 @@
       },
       {
         "Name": "Command",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "DebugErrorHappeningEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_Y01ZY[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "DebugMenuOptionExecutedEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "DebugMenuItemName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ConsoleCommand",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"

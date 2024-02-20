@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 LiveWidgetReflectorNode:
   Attributes:
-  - Name: pad0x18_JYSOH[0x18]
+  - Name: pad0x18_XJXWX[0x18]
     Offset: '0x80'
     Size: '0x18'
     Type: char
@@ -40,7 +40,7 @@ SnapshotWidgetReflectorNode:
     Offset: '0x144'
     Size: '0x8'
     Type: struct Vector2D
-  - Name: pad0x4_V0YP4[0x4]
+  - Name: pad0x4_59CJ2[0x4]
     Offset: '0x14c'
     Size: '0x4'
     Type: char
@@ -56,7 +56,7 @@ SnapshotWidgetReflectorNode:
     Offset: '0x190'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_GUAGA[0x7]
+  - Name: pad0x7_0K34D[0x7]
     Offset: '0x191'
     Size: '0x7'
     Type: char
@@ -70,7 +70,7 @@ WidgetReflectorNodeBase:
     Offset: '0x28'
     Size: '0x34'
     Type: struct Geometry
-  - Name: pad0x4_5RWCB[0x4]
+  - Name: pad0x4_OSEI7[0x4]
     Offset: '0x5c'
     Size: '0x4'
     Type: char

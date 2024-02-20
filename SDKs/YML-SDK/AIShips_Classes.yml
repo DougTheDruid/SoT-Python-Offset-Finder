@@ -9,7 +9,7 @@ AIShipBattlesDataAsset:
   - Name: SkellyCrewNames
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<struct FText>
+    Type: TArray<struct Text>
   - Name: EncounterCompleteText
     Offset: '0x48'
     Size: '0x38'
@@ -28,7 +28,7 @@ AIShipContextDescDataAsset:
     Offset: '0x29'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_ZACAP[0x6]
+  - Name: pad0x6_DDCD3[0x6]
     Offset: '0x2a'
     Size: '0x6'
     Type: char
@@ -90,7 +90,7 @@ AIShipContextParamsDataAsset:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_2OMIN[0x3]
+  - Name: pad0x3_N3PSS[0x3]
     Offset: '0x31'
     Size: '0x3'
     Type: char
@@ -182,7 +182,7 @@ AIShipContextParamsDataAsset:
     Offset: '0x88'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_PCG27[0x7]
+  - Name: pad0x7_BHIZ3[0x7]
     Offset: '0x89'
     Size: '0x7'
     Type: char
@@ -230,7 +230,7 @@ AIShipEncounterDesc:
     Offset: '0x39'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_2T9JY[0x2]
+  - Name: pad0x2_2A0S6[0x2]
     Offset: '0x3a'
     Size: '0x2'
     Type: char
@@ -242,7 +242,7 @@ AIShipEncounterDesc:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_45U66[0x3]
+  - Name: pad0x3_EIHG3[0x3]
     Offset: '0x41'
     Size: '0x3'
     Type: char
@@ -254,7 +254,7 @@ AIShipEncounterDesc:
     Offset: '0x48'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_AV2Z6[0x7]
+  - Name: pad0x7_A6FEP[0x7]
     Offset: '0x49'
     Size: '0x7'
     Type: char
@@ -330,7 +330,7 @@ AIShipEncounterParamsDataAsset:
     Offset: '0x68'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5K2IA[0x4]
+  - Name: pad0x4_N8K6Z[0x4]
     Offset: '0x6c'
     Size: '0x4'
     Type: char
@@ -342,7 +342,7 @@ AIShipEncounterParamsDataAsset:
     Offset: '0x80'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_O7FP9[0x3]
+  - Name: pad0x3_0X8YL[0x3]
     Offset: '0x81'
     Size: '0x3'
     Type: char
@@ -354,7 +354,7 @@ AIShipEncounterParamsDataAsset:
     Offset: '0x88'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_T2178[0x4]
+  - Name: pad0x4_NNTEQ[0x4]
     Offset: '0x8c'
     Size: '0x4'
     Type: char
@@ -394,7 +394,7 @@ AIShipObstacleComponent:
     Offset: '0xc8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_7XTGC[0x3]
+  - Name: pad0x3_655MN[0x3]
     Offset: '0xc9'
     Size: '0x3'
     Type: char
@@ -402,7 +402,7 @@ AIShipObstacleComponent:
     Offset: '0xcc'
     Size: '0x4'
     Type: float
-  - Name: pad0x20_3TEUI[0x20]
+  - Name: pad0x20_ZQID7[0x20]
     Offset: '0xd0'
     Size: '0x20'
     Type: char
@@ -412,7 +412,7 @@ AIShipObstacleComponent:
   Super: ActorComponent
 AIShipObstacleService:
   Attributes:
-  - Name: pad0x88_EBNHQ[0x88]
+  - Name: pad0x88_42B3B[0x88]
     Offset: '0x3c8'
     Size: '0x88'
     Type: char
@@ -428,7 +428,7 @@ AIShipObstacleServiceInterface:
   Super: Interface
 AIShipService:
   Attributes:
-  - Name: pad0x10_60VVO[0x10]
+  - Name: pad0x10_Q68KY[0x10]
     Offset: '0x3c8'
     Size: '0x10'
     Type: char
@@ -436,7 +436,7 @@ AIShipService:
     Offset: '0x3d8'
     Size: '0x8'
     Type: class GameEventOnDemandAvailabilityHandler*
-  - Name: pad0x18_6LQAF[0x18]
+  - Name: pad0x18_ZPEEG[0x18]
     Offset: '0x3e0'
     Size: '0x18'
     Type: char
@@ -444,12 +444,12 @@ AIShipService:
     Offset: '0x3f8'
     Size: '0x8'
     Type: class AIShipServiceDataAsset*
-  - Name: pad0x3a8_P2LWD[0x3a8]
+  - Name: pad0x3e0_H2RX0[0x3e0]
     Offset: '0x400'
-    Size: '0x3a8'
+    Size: '0x3e0'
     Type: char
-  ClassSize: '0x3e0'
-  FullSize: '0x7a8'
+  ClassSize: '0x418'
+  FullSize: '0x7e0'
   InheritedSize: '0x3c8'
   Super: Actor
 AIShipServiceDataAsset:
@@ -474,7 +474,7 @@ AIShipServiceDataAsset:
     Offset: '0x90'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_12DQJ[0x4]
+  - Name: pad0x4_2GXVW[0x4]
     Offset: '0x94'
     Size: '0x4'
     Type: char
@@ -506,7 +506,7 @@ AIShipServiceDataAsset:
     Offset: '0x218'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_C12ZB[0x4]
+  - Name: pad0x4_GSN0I[0x4]
     Offset: '0x21c'
     Size: '0x4'
     Type: char
@@ -518,7 +518,7 @@ AIShipServiceDataAsset:
     Offset: '0x250'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_1KLKW[0x4]
+  - Name: pad0x4_NO7GQ[0x4]
     Offset: '0x254'
     Size: '0x4'
     Type: char
@@ -529,12 +529,12 @@ AIShipServiceDataAsset:
   - Name: IslandsToAvoid
     Offset: '0x260'
     Size: '0x10'
-    Type: TArray<struct FName>
+    Type: TArray<struct Name>
   - Name: AvoidanceRange
     Offset: '0x270'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_F641W[0x4]
+  - Name: pad0x4_5DI7P[0x4]
     Offset: '0x274'
     Size: '0x4'
     Type: char
@@ -542,15 +542,9 @@ AIShipServiceDataAsset:
   FullSize: '0x278'
   InheritedSize: '0x28'
   Super: DataAsset
-AIShipServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 AIShipTelemetryComponent:
   Attributes:
-  - Name: pad0x40_6ULHZ[0x40]
+  - Name: pad0x40_TTFPC[0x40]
     Offset: '0xc8'
     Size: '0x40'
     Type: char
@@ -570,7 +564,7 @@ AthenaAIShipController:
     Offset: '0x610'
     Size: '0x8'
     Type: class BehaviorTree*
-  - Name: pad0x18_OXYI1[0x18]
+  - Name: pad0x18_WK8FS[0x18]
     Offset: '0x618'
     Size: '0x18'
     Type: char
@@ -586,7 +580,7 @@ AthenaAIShipController:
     Offset: '0x640'
     Size: '0x28'
     Type: struct StandardAnchorDynamicsParameters
-  - Name: pad0x118_YYYVK[0x118]
+  - Name: pad0x118_4ARHQ[0x118]
     Offset: '0x668'
     Size: '0x118'
     Type: char
@@ -652,7 +646,7 @@ AthenaAIShipControllerParamsDataAsset:
     Offset: '0x238'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_13HK2[0x4]
+  - Name: pad0x4_D4YZX[0x4]
     Offset: '0x23c'
     Size: '0x4'
     Type: char
@@ -740,7 +734,7 @@ AthenaAIShipControllerParamsDataAsset:
     Offset: '0x438'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_8J67F[0x4]
+  - Name: pad0x4_W3LB8[0x4]
     Offset: '0x43c'
     Size: '0x4'
     Type: char
@@ -760,7 +754,7 @@ AthenaAIShipControllerParamsDataAsset:
     Offset: '0x478'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_273DL[0x4]
+  - Name: pad0x4_QIXR9[0x4]
     Offset: '0x47c'
     Size: '0x4'
     Type: char
@@ -794,7 +788,7 @@ BTService_UpdateIfShipShouldBreakTracking:
     Offset: '0x110'
     Size: '0x28'
     Type: struct BlackboardKeySelector
-  - Name: pad0x18_TRVTZ[0x18]
+  - Name: pad0x18_GA389[0x18]
     Offset: '0x138'
     Size: '0x18'
     Type: char
@@ -830,7 +824,7 @@ BTService_UpdateTargetLocationForPassiveShip:
     Offset: '0x9c'
     Size: '0x4'
     Type: float
-  - Name: pad0x30_GCB7I[0x30]
+  - Name: pad0x30_ET5R5[0x30]
     Offset: '0xa0'
     Size: '0x30'
     Type: char
@@ -848,7 +842,7 @@ BTTask_AIShipSurface:
     Offset: '0x8c'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_T74DA[0x8]
+  - Name: pad0x8_SY3X9[0x8]
     Offset: '0x90'
     Size: '0x8'
     Type: char
@@ -858,7 +852,7 @@ BTTask_AIShipSurface:
   Super: BTTask_BlackboardBase
 BTTask_RamTargetShip:
   Attributes:
-  - Name: pad0xe0_CKZ9A[0xe0]
+  - Name: pad0xe0_H2005[0xe0]
     Offset: '0x88'
     Size: '0xe0'
     Type: char
@@ -868,7 +862,7 @@ BTTask_RamTargetShip:
   Super: BTTask_BlackboardBase
 BTTask_SailShipBesideTarget:
   Attributes:
-  - Name: pad0x20_ZYQYW[0x20]
+  - Name: pad0x20_8WT6F[0x20]
     Offset: '0x88'
     Size: '0x20'
     Type: char
@@ -876,7 +870,7 @@ BTTask_SailShipBesideTarget:
     Offset: '0xa8'
     Size: '0x18'
     Type: struct TrackingNoiseGenerator
-  - Name: pad0x18_QB0FV[0x18]
+  - Name: pad0x18_8V71F[0x18]
     Offset: '0xc0'
     Size: '0x18'
     Type: char
@@ -886,7 +880,7 @@ BTTask_SailShipBesideTarget:
   Super: BTTask_BlackboardBase
 BTTask_SailShipCircleTarget:
   Attributes:
-  - Name: pad0x38_28QSO[0x38]
+  - Name: pad0x38_49N1B[0x38]
     Offset: '0x88'
     Size: '0x38'
     Type: char
@@ -908,7 +902,7 @@ BTTask_SailShipForward:
     Offset: '0xd8'
     Size: '0x28'
     Type: struct BlackboardKeySelector
-  - Name: pad0x30_X3W09[0x30]
+  - Name: pad0x30_7YPDR[0x30]
     Offset: '0x100'
     Size: '0x30'
     Type: char
@@ -926,7 +920,7 @@ BTTask_SailShipToLocation:
     Offset: '0xb0'
     Size: '0x4'
     Type: float
-  - Name: pad0x1c_QHCYB[0x1c]
+  - Name: pad0x1c_QKWDD[0x1c]
     Offset: '0xb4'
     Size: '0x1c'
     Type: char
@@ -962,7 +956,7 @@ IsAIShipEncounterTypeStatCondition:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_REPQI[0x7]
+  - Name: pad0x7_XQ42M[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -980,7 +974,7 @@ ShipProxyPawn:
     Offset: '0x448'
     Size: '0x8'
     Type: class Ship*
-  - Name: pad0x28_BF8OZ[0x28]
+  - Name: pad0x28_3SG81[0x28]
     Offset: '0x450'
     Size: '0x28'
     Type: char

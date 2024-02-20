@@ -6,9 +6,9 @@ BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C:
     Offset: '0x138'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
-  - Name: pad0x6f_FRZ3W[0x6f]
+  - Name: pad0xba_UPKGC[0xba]
     Offset: '0x140'
-    Size: '0x6f'
+    Size: '0xba'
     Type: char
   - Name: Handle_CrewEnteredTunnelOfTheDamnedPortalProximity
     Offset: '0x140'
@@ -30,7 +30,7 @@ BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C:
     Offset: '0x20d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_VMWCB[0x2]
+  - Name: pad0x2_060DH[0x2]
     Offset: '0x20e'
     Size: '0x2'
     Type: char
@@ -38,7 +38,7 @@ BP_Prompt_TunnelOfTheDamned_BootyWillBeLost_C:
     Offset: '0x210'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_CL6VM[0x4]
+  - Name: pad0x4_7FCV1[0x4]
     Offset: '0x214'
     Size: '0x4'
     Type: char

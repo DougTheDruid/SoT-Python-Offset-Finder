@@ -20,7 +20,7 @@ StatusResponseApplyPersistentStatus:
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_9K3SZ[0x4]
+  - Name: pad0x4_34CI9[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -50,7 +50,7 @@ StatusResponseHealthRegenerationPoolChange:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_49URC[0x4]
+  - Name: pad0x4_YOL5E[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -80,7 +80,7 @@ StatusResponseReportNoiseEvent:
     Offset: '0x48'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_2H81T[0x3]
+  - Name: pad0x3_B4JGI[0x3]
     Offset: '0x49'
     Size: '0x3'
     Type: char
@@ -88,7 +88,7 @@ StatusResponseReportNoiseEvent:
     Offset: '0x4c'
     Size: '0x4'
     Type: float
-  - Name: pad0x20_V4TYV[0x20]
+  - Name: pad0x20_22LPJ[0x20]
     Offset: '0x50'
     Size: '0x20'
     Type: char

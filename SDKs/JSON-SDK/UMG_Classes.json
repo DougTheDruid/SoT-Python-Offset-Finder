@@ -1,15 +1,162 @@
 {
-  "AsyncTaskDownloadImage": {
-    "Super": "BlueprintAsyncActionBase",
+  "MovieScene2DTransformSection": {
+    "Super": "MovieSceneSection",
+    "FullSize": "0x3e8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x350",
+    "Attributes": [
+      {
+        "Name": "pad0x8_EPZXU[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "Translation",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "pad0x78_VYS45[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x190"
+      },
+      {
+        "Name": "Scale",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x208"
+      },
+      {
+        "Name": "pad0x78_60R7Q[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x280"
+      },
+      {
+        "Name": "Shear",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x2f8"
+      },
+      {
+        "Name": "pad0x78_3HTBV[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x370"
+      }
+    ]
+  },
+  "NamedSlotInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WidgetBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PropertyBinding": {
+    "Super": "Object",
     "FullSize": "0x48",
     "InheritedSize": "0x28",
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x20_46DVS[0x20]",
+        "Name": "pad0x8_RU37N[0x8]",
         "Type": "char",
-        "Size": "0x20",
+        "Size": "0x8",
         "Offset": "0x28"
+      },
+      {
+        "Name": "SourcePath",
+        "Type": "struct DynamicPropertyPath",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "DestinationProperty",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "Visual": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MovieSceneMarginTrack": {
+    "Super": "MovieScenePropertyTrack",
+    "FullSize": "0xb0",
+    "InheritedSize": "0xb0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MovieScene2DTransformTrack": {
+    "Super": "MovieScenePropertyTrack",
+    "FullSize": "0xb0",
+    "InheritedSize": "0xb0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WidgetNavigation": {
+    "Super": "Object",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "Up",
+        "Type": "struct WidgetNavigationData",
+        "Size": "0x14",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Down",
+        "Type": "struct WidgetNavigationData",
+        "Size": "0x14",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "Left",
+        "Type": "struct WidgetNavigationData",
+        "Size": "0x14",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "Right",
+        "Type": "struct WidgetNavigationData",
+        "Size": "0x14",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "Next",
+        "Type": "struct WidgetNavigationData",
+        "Size": "0x14",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "Previous",
+        "Type": "struct WidgetNavigationData",
+        "Size": "0x14",
+        "Offset": "0x8c"
       }
     ]
   },
@@ -44,7 +191,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x3_WTG93[0x3]",
+        "Name": "pad0x3_9U0MI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x49"
@@ -56,81 +203,45 @@
         "Offset": "0x4c"
       },
       {
-        "Name": "pad0x4_PKO8I[0x4]",
+        "Name": "pad0x4_4YJEX[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
       },
       {
-        "Name": "pad0x30_BS70I[0x30]",
+        "Name": "pad0x30_WJBGN[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x58"
       }
     ]
   },
-  "MovieScene2DTransformSection": {
-    "Super": "MovieSceneSection",
-    "FullSize": "0x3e8",
+  "SlateBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MovieSceneWidgetMaterialTrack": {
+    "Super": "MovieSceneMaterialTrack",
+    "FullSize": "0xb0",
     "InheritedSize": "0x98",
-    "ClassSize": "0x350",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_U7C5N[0x8]",
-        "Type": "char",
-        "Size": "0x8",
+        "Name": "BrushPropertyNamePath",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
         "Offset": "0x98"
       },
       {
-        "Name": "Translation",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "pad0x78_JWB89[0x78]",
-        "Type": "char",
-        "Size": "0x78",
-        "Offset": "0x118"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x190"
-      },
-      {
-        "Name": "Scale",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x208"
-      },
-      {
-        "Name": "pad0x78_IMVLM[0x78]",
-        "Type": "char",
-        "Size": "0x78",
-        "Offset": "0x280"
-      },
-      {
-        "Name": "Shear",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x2f8"
-      },
-      {
-        "Name": "pad0x78_6LR5K[0x78]",
-        "Type": "char",
-        "Size": "0x78",
-        "Offset": "0x370"
+        "Name": "TrackName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xa8"
       }
     ]
-  },
-  "MovieScene2DTransformTrack": {
-    "Super": "MovieScenePropertyTrack",
-    "FullSize": "0xb0",
-    "InheritedSize": "0xb0",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "MovieSceneMarginSection": {
     "Super": "MovieSceneSection",
@@ -139,7 +250,7 @@
     "ClassSize": "0x1e8",
     "Attributes": [
       {
-        "Name": "pad0x8_38FD9[0x8]",
+        "Name": "pad0x8_36CLT[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x98"
@@ -170,3086 +281,19 @@
       }
     ]
   },
-  "MovieSceneMarginTrack": {
-    "Super": "MovieScenePropertyTrack",
-    "FullSize": "0xb0",
-    "InheritedSize": "0xb0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MovieSceneWidgetMaterialTrack": {
-    "Super": "MovieSceneMaterialTrack",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "BrushPropertyNamePath",
-        "Type": "TArray<struct FName>",
-        "Size": "0x10",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "TrackName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xa8"
-      }
-    ]
-  },
-  "NamedSlotInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PropertyBinding": {
-    "Super": "Object",
+  "AsyncTaskDownloadImage": {
+    "Super": "BlueprintAsyncActionBase",
     "FullSize": "0x48",
     "InheritedSize": "0x28",
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x8_PQ9JT[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "SourcePath",
-        "Type": "struct DynamicPropertyPath",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "DestinationProperty",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "BoolBinding": {
-    "Super": "PropertyBinding",
-    "FullSize": "0x48",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BrushBinding": {
-    "Super": "PropertyBinding",
-    "FullSize": "0x50",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_SHPYI[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "CheckedStateBinding": {
-    "Super": "PropertyBinding",
-    "FullSize": "0x50",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_SUIUP[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "ColorBinding": {
-    "Super": "PropertyBinding",
-    "FullSize": "0x50",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_STVP7[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "FloatBinding": {
-    "Super": "PropertyBinding",
-    "FullSize": "0x48",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Int32Binding": {
-    "Super": "PropertyBinding",
-    "FullSize": "0x48",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MouseCursorBinding": {
-    "Super": "PropertyBinding",
-    "FullSize": "0x48",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TextBinding": {
-    "Super": "PropertyBinding",
-    "FullSize": "0x50",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_G1QO1[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "VisibilityBinding": {
-    "Super": "PropertyBinding",
-    "FullSize": "0x48",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WidgetBinding": {
-    "Super": "PropertyBinding",
-    "FullSize": "0x48",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RichTextBlockDecorator": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "bReveal",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x3_JCAGR[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x29"
-      },
-      {
-        "Name": "RevealedIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      }
-    ]
-  },
-  "SlateBlueprintLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Visual": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Widget": {
-    "Super": "Visual",
-    "FullSize": "0x138",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x110",
-    "Attributes": [
-      {
-        "Name": "bIsVariable",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "bCreatedByConstructionScript",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x29"
-      },
-      {
-        "Name": "pad0x6_407LG[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x2a"
-      },
-      {
-        "Name": "Slot",
-        "Type": "class PanelSlot*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "bIsEnabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x3_UPTQM[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x39"
-      },
-      {
-        "Name": "ToolTipText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "ToolTipWidget",
-        "Type": "class Widget*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "Visiblity",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "Visibility",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xb1"
-      },
-      {
-        "Name": "pad0x2_N4RGC[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0xb2"
-      },
-      {
-        "Name": "bOverride_Cursor",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc4"
-      },
-      {
-        "Name": "pad0x3_P40D6[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0xc5"
-      },
-      {
-        "Name": "Cursor",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "bIsVolatile",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc9"
-      },
-      {
-        "Name": "pad0x2_PAANG[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0xca"
-      },
-      {
-        "Name": "RenderTransform",
-        "Type": "struct WidgetTransform",
-        "Size": "0x1c",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "RenderTransformPivot",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "Navigation",
-        "Type": "class WidgetNavigation*",
-        "Size": "0x8",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "pad0x30_188G5[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "NativeBindings",
-        "Type": "TArray<class PropertyBinding*>",
-        "Size": "0x10",
-        "Offset": "0x128"
-      }
-    ]
-  },
-  "UserWidget": {
-    "Super": "Widget",
-    "FullSize": "0x230",
-    "InheritedSize": "0x138",
-    "ClassSize": "0xf8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_E8I0R[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "ColorAndOpacity",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "ForegroundColor",
-        "Type": "struct SlateColor",
-        "Size": "0x30",
-        "Offset": "0x160"
-      },
-      {
-        "Name": "bSupportsKeyboardFocus",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1a0"
-      },
-      {
-        "Name": "pad0x7_WLVSS[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1a1"
-      },
-      {
-        "Name": "WidgetTree",
-        "Type": "class WidgetTree*",
-        "Size": "0x8",
-        "Offset": "0x1a8"
-      },
-      {
-        "Name": "ActiveSequencePlayers",
-        "Type": "TArray<class UMGSequencePlayer*>",
-        "Size": "0x10",
-        "Offset": "0x1b0"
-      },
-      {
-        "Name": "StoppedSequencePlayers",
-        "Type": "TArray<class UMGSequencePlayer*>",
-        "Size": "0x10",
-        "Offset": "0x1c0"
-      },
-      {
-        "Name": "NamedSlotBindings",
-        "Type": "TArray<struct NamedSlotBinding>",
-        "Size": "0x10",
-        "Offset": "0x1d0"
-      },
-      {
-        "Name": "pad0x50_4DPN1[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x1e0"
-      }
-    ]
-  },
-  "UMGSequencePlayer": {
-    "Super": "Object",
-    "FullSize": "0x5c8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x5a0",
-    "Attributes": [
-      {
-        "Name": "pad0x368_RYZ1I[0x368]",
-        "Type": "char",
-        "Size": "0x368",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Animation",
-        "Type": "class WidgetAnimation*",
-        "Size": "0x8",
-        "Offset": "0x390"
-      },
-      {
-        "Name": "pad0x230_90471[0x230]",
-        "Type": "char",
-        "Size": "0x230",
-        "Offset": "0x398"
-      }
-    ]
-  },
-  "PanelSlot": {
-    "Super": "Visual",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Parent",
-        "Type": "class PanelWidget*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Content",
-        "Type": "class Widget*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "BorderSlot": {
-    "Super": "PanelSlot",
-    "FullSize": "0x68",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Padding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "HorizontalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "VerticalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x49"
-      },
-      {
-        "Name": "pad0x1e_31YA1[0x1e]",
-        "Type": "char",
-        "Size": "0x1e",
-        "Offset": "0x4a"
-      }
-    ]
-  },
-  "ButtonSlot": {
-    "Super": "PanelSlot",
-    "FullSize": "0x68",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Padding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "HorizontalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "VerticalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x49"
-      },
-      {
-        "Name": "pad0x1e_F9Z7B[0x1e]",
-        "Type": "char",
-        "Size": "0x1e",
-        "Offset": "0x4a"
-      }
-    ]
-  },
-  "CanvasPanelSlot": {
-    "Super": "PanelSlot",
-    "FullSize": "0x70",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "LayoutData",
-        "Type": "struct AnchorData",
-        "Size": "0x28",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "bAutoSize",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "pad0x3_KQAZB[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x61"
-      },
-      {
-        "Name": "ZOrder",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x64"
-      },
-      {
-        "Name": "pad0x8_KJHE5[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x68"
-      }
-    ]
-  },
-  "GridSlot": {
-    "Super": "PanelSlot",
-    "FullSize": "0x60",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "HorizontalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "VerticalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x39"
-      },
-      {
-        "Name": "pad0x2_T0MVE[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x3a"
-      },
-      {
-        "Name": "Row",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "RowSpan",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "Column",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "ColumnSpan",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "Layer",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4c"
-      },
-      {
-        "Name": "Nudge",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "pad0x8_XYK81[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x58"
-      }
-    ]
-  },
-  "HorizontalBoxSlot": {
-    "Super": "PanelSlot",
-    "FullSize": "0x60",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Padding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "Size",
-        "Type": "struct SlateChildSize",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "HorizontalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "VerticalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x51"
-      },
-      {
-        "Name": "pad0xe_AB154[0xe]",
-        "Type": "char",
-        "Size": "0xe",
-        "Offset": "0x52"
-      }
-    ]
-  },
-  "OverlaySlot": {
-    "Super": "PanelSlot",
-    "FullSize": "0x58",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Padding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "HorizontalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "VerticalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x49"
-      },
-      {
-        "Name": "pad0xe_CZTPZ[0xe]",
-        "Type": "char",
-        "Size": "0xe",
-        "Offset": "0x4a"
-      }
-    ]
-  },
-  "SafeZoneSlot": {
-    "Super": "PanelSlot",
-    "FullSize": "0x50",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "bIsTitleSafe",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "HAlign",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x39"
-      },
-      {
-        "Name": "VAlign",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x3a"
-      },
-      {
-        "Name": "pad0x1_6D1X1[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x3b"
-      },
-      {
-        "Name": "Padding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "pad0x4_U1BLZ[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4c"
-      }
-    ]
-  },
-  "ScaleBoxSlot": {
-    "Super": "PanelSlot",
-    "FullSize": "0x68",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Padding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "HorizontalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "VerticalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x49"
-      },
-      {
-        "Name": "pad0x1e_YKIRO[0x1e]",
-        "Type": "char",
-        "Size": "0x1e",
-        "Offset": "0x4a"
-      }
-    ]
-  },
-  "ScrollBoxSlot": {
-    "Super": "PanelSlot",
-    "FullSize": "0x58",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Padding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "HorizontalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0xf_U3WGQ[0xf]",
-        "Type": "char",
-        "Size": "0xf",
-        "Offset": "0x49"
-      }
-    ]
-  },
-  "SizeBoxSlot": {
-    "Super": "PanelSlot",
-    "FullSize": "0x68",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Padding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "HorizontalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "VerticalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x49"
-      },
-      {
-        "Name": "pad0x1e_TLQT5[0x1e]",
-        "Type": "char",
-        "Size": "0x1e",
-        "Offset": "0x4a"
-      }
-    ]
-  },
-  "UniformGridSlot": {
-    "Super": "PanelSlot",
-    "FullSize": "0x50",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "HorizontalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "VerticalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x39"
-      },
-      {
-        "Name": "pad0x2_Z2VV7[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x3a"
-      },
-      {
-        "Name": "Row",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "Column",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0xc_I462Q[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x44"
-      }
-    ]
-  },
-  "VerticalBoxSlot": {
-    "Super": "PanelSlot",
-    "FullSize": "0x60",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Padding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "Size",
-        "Type": "struct SlateChildSize",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "HorizontalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "VerticalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x51"
-      },
-      {
-        "Name": "pad0xe_XC38Y[0xe]",
-        "Type": "char",
-        "Size": "0xe",
-        "Offset": "0x52"
-      }
-    ]
-  },
-  "WidgetSwitcherSlot": {
-    "Super": "PanelSlot",
-    "FullSize": "0x58",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Padding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "HorizontalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "VerticalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x49"
-      },
-      {
-        "Name": "pad0xe_PKWP8[0xe]",
-        "Type": "char",
-        "Size": "0xe",
-        "Offset": "0x4a"
-      }
-    ]
-  },
-  "WrapBoxSlot": {
-    "Super": "PanelSlot",
-    "FullSize": "0x60",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Padding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "bFillEmptySpace",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0x3_ZH1LO[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x49"
-      },
-      {
-        "Name": "FillSpanWhenLessThan",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4c"
-      },
-      {
-        "Name": "HorizontalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "VerticalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x51"
-      },
-      {
-        "Name": "pad0xe_WSS29[0xe]",
-        "Type": "char",
-        "Size": "0xe",
-        "Offset": "0x52"
-      }
-    ]
-  },
-  "CircularThrobber": {
-    "Super": "Widget",
-    "FullSize": "0x1f8",
-    "InheritedSize": "0x138",
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "NumberOfPieces",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "Period",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x13c"
-      },
-      {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "pad0x4_91RED[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x144"
-      },
-      {
-        "Name": "PieceImage",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "Image",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "pad0x18_84TD0[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x1e0"
-      }
-    ]
-  },
-  "ComboBox": {
-    "Super": "Widget",
-    "FullSize": "0x170",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Items",
-        "Type": "TArray<class Object*>",
-        "Size": "0x10",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "pad0x28_P8J25[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x148"
-      }
-    ]
-  },
-  "ComboBoxString": {
-    "Super": "Widget",
-    "FullSize": "0x620",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x4e8",
-    "Attributes": [
-      {
-        "Name": "DefaultOptions",
-        "Type": "TArray<Str DefaultOptions>",
-        "Size": "0x10",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "SelectedOption",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "WidgetStyle",
-        "Type": "struct ComboBoxStyle",
-        "Size": "0x428",
-        "Offset": "0x158"
-      },
-      {
-        "Name": "ContentPadding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x580"
-      },
-      {
-        "Name": "MaxListHeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x590"
-      },
-      {
-        "Name": "HasDownArrow",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x594"
-      },
-      {
-        "Name": "pad0x3_3EB9B[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x595"
-      },
-      {
-        "Name": "pad0x88_5EVJF[0x88]",
-        "Type": "char",
-        "Size": "0x88",
-        "Offset": "0x598"
-      }
-    ]
-  },
-  "EditableText": {
-    "Super": "Widget",
-    "FullSize": "0x4c8",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x390",
-    "Attributes": [
-      {
-        "Name": "Text",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "HintText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x180"
-      },
-      {
-        "Name": "WidgetStyle",
-        "Type": "struct EditableTextStyle",
-        "Size": "0x228",
-        "Offset": "0x1c8"
-      },
-      {
-        "Name": "Style",
-        "Type": "class SlateWidgetStyleAsset*",
-        "Size": "0x8",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "BackgroundImageSelected",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "BackgroundImageComposing",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x400"
-      },
-      {
-        "Name": "CaretImage",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x408"
-      },
-      {
-        "Name": "Font",
-        "Type": "struct SlateFontInfo",
-        "Size": "0x40",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "ColorAndOpacity",
-        "Type": "struct SlateColor",
-        "Size": "0x30",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "IsReadOnly",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x480"
-      },
-      {
-        "Name": "IsPassword",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x481"
-      },
-      {
-        "Name": "pad0x2_JP3JO[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x482"
-      },
-      {
-        "Name": "MinimumDesiredWidth",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x484"
-      },
-      {
-        "Name": "IsCaretMovedWhenGainFocus",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x488"
-      },
-      {
-        "Name": "SelectAllTextWhenFocused",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x489"
-      },
-      {
-        "Name": "RevertTextOnEscape",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x48a"
-      },
-      {
-        "Name": "ClearKeyboardFocusOnCommit",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x48b"
-      },
-      {
-        "Name": "SelectAllTextOnCommit",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x48c"
-      },
-      {
-        "Name": "pad0x3_YCM1G[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x48d"
-      },
-      {
-        "Name": "pad0x38_R8VPS[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x490"
-      }
-    ]
-  },
-  "EditableTextBox": {
-    "Super": "Widget",
-    "FullSize": "0xaf8",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x9c0",
-    "Attributes": [
-      {
-        "Name": "Text",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "WidgetStyle",
-        "Type": "struct EditableTextBoxStyle",
-        "Size": "0x860",
-        "Offset": "0x180"
-      },
-      {
-        "Name": "Style",
-        "Type": "class SlateWidgetStyleAsset*",
-        "Size": "0x8",
-        "Offset": "0x9e0"
-      },
-      {
-        "Name": "HintText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x9e8"
-      },
-      {
-        "Name": "Font",
-        "Type": "struct SlateFontInfo",
-        "Size": "0x40",
-        "Offset": "0xa30"
-      },
-      {
-        "Name": "ForegroundColor",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0xa70"
-      },
-      {
-        "Name": "BackgroundColor",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0xa80"
-      },
-      {
-        "Name": "ReadOnlyForegroundColor",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0xa90"
-      },
-      {
-        "Name": "IsReadOnly",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xaa0"
-      },
-      {
-        "Name": "IsPassword",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xaa1"
-      },
-      {
-        "Name": "pad0x2_TATHQ[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0xaa2"
-      },
-      {
-        "Name": "MinimumDesiredWidth",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xaa4"
-      },
-      {
-        "Name": "Padding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0xaa8"
-      },
-      {
-        "Name": "IsCaretMovedWhenGainFocus",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xab8"
-      },
-      {
-        "Name": "SelectAllTextWhenFocused",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xab9"
-      },
-      {
-        "Name": "RevertTextOnEscape",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xaba"
-      },
-      {
-        "Name": "ClearKeyboardFocusOnCommit",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xabb"
-      },
-      {
-        "Name": "SelectAllTextOnCommit",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xabc"
-      },
-      {
-        "Name": "pad0x3_6YN8S[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0xabd"
-      },
-      {
-        "Name": "pad0x38_WDBCZ[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0xac0"
-      }
-    ]
-  },
-  "ExpandableArea": {
-    "Super": "Widget",
-    "FullSize": "0x190",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "pad0x8_A3KRT[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "bIsExpanded",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "pad0x3_HRBJG[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x141"
-      },
-      {
-        "Name": "MaxHeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x144"
-      },
-      {
-        "Name": "AreaPadding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "HeaderContent",
-        "Type": "class Widget*",
-        "Size": "0x8",
-        "Offset": "0x168"
-      },
-      {
-        "Name": "BodyContent",
-        "Type": "class Widget*",
-        "Size": "0x8",
-        "Offset": "0x170"
-      },
-      {
-        "Name": "pad0x18_ZZEQP[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x178"
-      }
-    ]
-  },
-  "Image": {
-    "Super": "Widget",
-    "FullSize": "0x228",
-    "InheritedSize": "0x138",
-    "ClassSize": "0xf0",
-    "Attributes": [
-      {
-        "Name": "Image",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "Brush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "ColorAndOpacity",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x1e0"
-      },
-      {
-        "Name": "pad0x38_YYTG7[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x1f0"
-      }
-    ]
-  },
-  "MultiLineEditableText": {
-    "Super": "Widget",
-    "FullSize": "0x350",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x218",
-    "Attributes": [
-      {
-        "Name": "Text",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "WidgetStyle",
-        "Type": "struct TextBlockStyle",
-        "Size": "0x160",
-        "Offset": "0x170"
-      },
-      {
-        "Name": "Justification",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x2d0"
-      },
-      {
-        "Name": "bAutoWrapText",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2d1"
-      },
-      {
-        "Name": "pad0x2_OPEX0[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x2d2"
-      },
-      {
-        "Name": "WrapTextAt",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2d4"
-      },
-      {
-        "Name": "Font",
-        "Type": "struct SlateFontInfo",
-        "Size": "0x40",
-        "Offset": "0x2d8"
-      },
-      {
-        "Name": "pad0x38_PCYBL[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x318"
-      }
-    ]
-  },
-  "MultiLineEditableTextBox": {
-    "Super": "Widget",
-    "FullSize": "0xbe8",
-    "InheritedSize": "0x138",
-    "ClassSize": "0xab0",
-    "Attributes": [
-      {
-        "Name": "Text",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "WidgetStyle",
-        "Type": "struct EditableTextBoxStyle",
-        "Size": "0x860",
-        "Offset": "0x170"
-      },
-      {
-        "Name": "TextStyle",
-        "Type": "struct TextBlockStyle",
-        "Size": "0x160",
-        "Offset": "0x9d0"
-      },
-      {
-        "Name": "Style",
-        "Type": "class SlateWidgetStyleAsset*",
-        "Size": "0x8",
-        "Offset": "0xb30"
-      },
-      {
-        "Name": "Justification",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xb38"
-      },
-      {
-        "Name": "bAutoWrapText",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xb39"
-      },
-      {
-        "Name": "pad0x2_WY9X0[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0xb3a"
-      },
-      {
-        "Name": "WrapTextAt",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xb3c"
-      },
-      {
-        "Name": "Font",
-        "Type": "struct SlateFontInfo",
-        "Size": "0x40",
-        "Offset": "0xb40"
-      },
-      {
-        "Name": "ForegroundColor",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0xb80"
-      },
-      {
-        "Name": "BackgroundColor",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0xb90"
-      },
-      {
-        "Name": "ReadOnlyForegroundColor",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0xba0"
-      },
-      {
-        "Name": "pad0x38_UL275[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0xbb0"
-      }
-    ]
-  },
-  "NativeWidgetHost": {
-    "Super": "Widget",
-    "FullSize": "0x150",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_GK51M[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x138"
-      }
-    ]
-  },
-  "PanelWidget": {
-    "Super": "Widget",
-    "FullSize": "0x150",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Slots",
-        "Type": "TArray<class PanelSlot*>",
-        "Size": "0x10",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "pad0x8_YPPVP[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x148"
-      }
-    ]
-  },
-  "CanvasPanel": {
-    "Super": "PanelWidget",
-    "FullSize": "0x168",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_QO7LU[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x150"
-      }
-    ]
-  },
-  "ContentWidget": {
-    "Super": "PanelWidget",
-    "FullSize": "0x150",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Border": {
-    "Super": "ContentWidget",
-    "FullSize": "0x2b0",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x160",
-    "Attributes": [
-      {
-        "Name": "ContentColorAndOpacity",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "Padding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x170"
-      },
-      {
-        "Name": "HorizontalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x180"
-      },
-      {
-        "Name": "VerticalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x181"
-      },
-      {
-        "Name": "pad0x6_7O9PT[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x182"
-      },
-      {
-        "Name": "Background",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x188"
-      },
-      {
-        "Name": "BrushColor",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x228"
-      },
-      {
-        "Name": "bShowEffectWhenDisabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x248"
-      },
-      {
-        "Name": "pad0x3_U8MTO[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x249"
-      },
-      {
-        "Name": "Brush",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x2a8"
-      }
-    ]
-  },
-  "Button": {
-    "Super": "ContentWidget",
-    "FullSize": "0x470",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x320",
-    "Attributes": [
-      {
-        "Name": "Style",
-        "Type": "class SlateWidgetStyleAsset*",
-        "Size": "0x8",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "WidgetStyle",
-        "Type": "struct ButtonStyle",
-        "Size": "0x2a8",
-        "Offset": "0x158"
-      },
-      {
-        "Name": "ColorAndOpacity",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x400"
-      },
-      {
-        "Name": "BackgroundColor",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "ClickMethod",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "TouchMethod",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x421"
-      },
-      {
-        "Name": "IsFocusable",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x422"
-      },
-      {
-        "Name": "pad0x5_1RR5X[0x5]",
-        "Type": "char",
-        "Size": "0x5",
-        "Offset": "0x423"
-      },
-      {
-        "Name": "pad0x48_H0V4G[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x428"
-      }
-    ]
-  },
-  "CheckBox": {
-    "Super": "ContentWidget",
-    "FullSize": "0x818",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x6c8",
-    "Attributes": [
-      {
-        "Name": "CheckedState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "pad0x3_GU63Y[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x151"
-      },
-      {
-        "Name": "WidgetStyle",
-        "Type": "struct CheckBoxStyle",
-        "Size": "0x5f0",
-        "Offset": "0x168"
-      },
-      {
-        "Name": "Style",
-        "Type": "class SlateWidgetStyleAsset*",
-        "Size": "0x8",
-        "Offset": "0x758"
-      },
-      {
-        "Name": "UncheckedImage",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x760"
-      },
-      {
-        "Name": "UncheckedHoveredImage",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x768"
-      },
-      {
-        "Name": "UncheckedPressedImage",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x770"
-      },
-      {
-        "Name": "CheckedImage",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x778"
-      },
-      {
-        "Name": "CheckedHoveredImage",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x780"
-      },
-      {
-        "Name": "CheckedPressedImage",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x788"
-      },
-      {
-        "Name": "UndeterminedImage",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x790"
-      },
-      {
-        "Name": "UndeterminedHoveredImage",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x798"
-      },
-      {
-        "Name": "UndeterminedPressedImage",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x7a0"
-      },
-      {
-        "Name": "HorizontalAlignment",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x7a8"
-      },
-      {
-        "Name": "pad0x3_HR9SY[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x7a9"
-      },
-      {
-        "Name": "Padding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x7ac"
-      },
-      {
-        "Name": "pad0x4_17KOB[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x7bc"
-      },
-      {
-        "Name": "BorderBackgroundColor",
-        "Type": "struct SlateColor",
-        "Size": "0x30",
-        "Offset": "0x7c0"
-      },
-      {
-        "Name": "pad0x28_27HVX[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x7f0"
-      }
-    ]
-  },
-  "InvalidationBox": {
-    "Super": "ContentWidget",
-    "FullSize": "0x170",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "CacheRelativeTransforms",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "pad0x1f_CKXTI[0x1f]",
-        "Type": "char",
-        "Size": "0x1f",
-        "Offset": "0x151"
-      }
-    ]
-  },
-  "MenuAnchor": {
-    "Super": "ContentWidget",
-    "FullSize": "0x198",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "MenuClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "Placement",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x168"
-      },
-      {
-        "Name": "pad0x7_CIDQ2[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x169"
-      },
-      {
-        "Name": "pad0x28_JVO8D[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x170"
-      }
-    ]
-  },
-  "NamedSlot": {
-    "Super": "ContentWidget",
-    "FullSize": "0x168",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_9W7HM[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x150"
-      }
-    ]
-  },
-  "SafeZone": {
-    "Super": "ContentWidget",
-    "FullSize": "0x168",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_IJRZJ[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x150"
-      }
-    ]
-  },
-  "ScaleBox": {
-    "Super": "ContentWidget",
-    "FullSize": "0x170",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "StretchDirection",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "Stretch",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x151"
-      },
-      {
-        "Name": "pad0x2_UP9XT[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x152"
-      },
-      {
-        "Name": "UserSpecifiedScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x154"
-      },
-      {
-        "Name": "pad0x18_35LZK[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x158"
-      }
-    ]
-  },
-  "SizeBox": {
-    "Super": "ContentWidget",
-    "FullSize": "0x188",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "bOverride_WidthOverride",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "bOverride_HeightOverride",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "bOverride_MinDesiredWidth",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "bOverride_MinDesiredHeight",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "bOverride_MaxDesiredWidth",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "bOverride_MaxDesiredHeight",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "pad0x3_L2UNY[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x151"
-      },
-      {
-        "Name": "WidthOverride",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x154"
-      },
-      {
-        "Name": "HeightOverride",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x158"
-      },
-      {
-        "Name": "MinDesiredWidth",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x15c"
-      },
-      {
-        "Name": "MinDesiredHeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x160"
-      },
-      {
-        "Name": "MaxDesiredWidth",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x164"
-      },
-      {
-        "Name": "MaxDesiredHeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x168"
-      },
-      {
-        "Name": "pad0x1c_IV4MN[0x1c]",
-        "Type": "char",
-        "Size": "0x1c",
-        "Offset": "0x16c"
-      }
-    ]
-  },
-  "Viewport": {
-    "Super": "ContentWidget",
-    "FullSize": "0x190",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "BackgroundColor",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "pad0x30_BLA1R[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x160"
-      }
-    ]
-  },
-  "GridPanel": {
-    "Super": "PanelWidget",
-    "FullSize": "0x188",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "ColumnFill",
-        "Type": "TArray<Float ColumnFill>",
-        "Size": "0x10",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "RowFill",
-        "Type": "TArray<Float RowFill>",
-        "Size": "0x10",
-        "Offset": "0x160"
-      },
-      {
-        "Name": "pad0x18_65XJJ[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x170"
-      }
-    ]
-  },
-  "HorizontalBox": {
-    "Super": "PanelWidget",
-    "FullSize": "0x168",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_TY2H2[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x150"
-      }
-    ]
-  },
-  "Overlay": {
-    "Super": "PanelWidget",
-    "FullSize": "0x168",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_MPIPS[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x150"
-      }
-    ]
-  },
-  "ScrollBox": {
-    "Super": "PanelWidget",
-    "FullSize": "0x8f0",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x7a0",
-    "Attributes": [
-      {
-        "Name": "WidgetStyle",
-        "Type": "struct ScrollBoxStyle",
-        "Size": "0x248",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "WidgetBarStyle",
-        "Type": "struct ScrollBarStyle",
-        "Size": "0x518",
-        "Offset": "0x398"
-      },
-      {
-        "Name": "Style",
-        "Type": "class SlateWidgetStyleAsset*",
-        "Size": "0x8",
-        "Offset": "0x8b0"
-      },
-      {
-        "Name": "BarStyle",
-        "Type": "class SlateWidgetStyleAsset*",
-        "Size": "0x8",
-        "Offset": "0x8b8"
-      },
-      {
-        "Name": "Orientation",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8c0"
-      },
-      {
-        "Name": "ScrollBarVisibility",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8c1"
-      },
-      {
-        "Name": "ConsumeMouseWheel",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8c2"
-      },
-      {
-        "Name": "pad0x1_TY05N[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x8c3"
-      },
-      {
-        "Name": "ScrollbarThickness",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x8c4"
-      },
-      {
-        "Name": "AlwaysShowScrollbar",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8cc"
-      },
-      {
-        "Name": "pad0x23_8AG2B[0x23]",
-        "Type": "char",
-        "Size": "0x23",
-        "Offset": "0x8cd"
-      }
-    ]
-  },
-  "UniformGridPanel": {
-    "Super": "PanelWidget",
-    "FullSize": "0x180",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "SlotPadding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "MinDesiredSlotWidth",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x160"
-      },
-      {
-        "Name": "MinDesiredSlotHeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x164"
-      },
-      {
-        "Name": "pad0x18_1XS5O[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x168"
-      }
-    ]
-  },
-  "VerticalBox": {
-    "Super": "PanelWidget",
-    "FullSize": "0x168",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_GOWS0[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x150"
-      }
-    ]
-  },
-  "WidgetSwitcher": {
-    "Super": "PanelWidget",
-    "FullSize": "0x170",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ActiveWidgetIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "pad0x1c_MGQ9B[0x1c]",
-        "Type": "char",
-        "Size": "0x1c",
-        "Offset": "0x154"
-      }
-    ]
-  },
-  "WrapBox": {
-    "Super": "PanelWidget",
-    "FullSize": "0x170",
-    "InheritedSize": "0x150",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "InnerSlotPadding",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "pad0x18_E63G4[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x158"
-      }
-    ]
-  },
-  "ProgressBar": {
-    "Super": "Widget",
-    "FullSize": "0x360",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x228",
-    "Attributes": [
-      {
-        "Name": "WidgetStyle",
-        "Type": "struct ProgressBarStyle",
-        "Size": "0x1b8",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "Style",
-        "Type": "class SlateWidgetStyleAsset*",
-        "Size": "0x8",
-        "Offset": "0x2f0"
-      },
-      {
-        "Name": "BackgroundImage",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x2f8"
-      },
-      {
-        "Name": "FillImage",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x300"
-      },
-      {
-        "Name": "MarqueeImage",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x308"
-      },
-      {
-        "Name": "Percent",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x310"
-      },
-      {
-        "Name": "BarFillType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x314"
-      },
-      {
-        "Name": "bIsMarquee",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x315"
-      },
-      {
-        "Name": "pad0x2_QGWH8[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x316"
-      },
-      {
-        "Name": "FillColorAndOpacity",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x328"
-      },
-      {
-        "Name": "pad0x28_5TRHC[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x338"
-      }
-    ]
-  },
-  "RichTextBlock": {
-    "Super": "Widget",
-    "FullSize": "0x378",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x240",
-    "Attributes": [
-      {
-        "Name": "Text",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "Font",
-        "Type": "struct SlateFontInfo",
-        "Size": "0x40",
-        "Offset": "0x180"
-      },
-      {
-        "Name": "Color",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x1c0"
-      },
-      {
-        "Name": "Justification",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1d0"
-      },
-      {
-        "Name": "AutoWrapText",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1d1"
-      },
-      {
-        "Name": "pad0x2_BM5WC[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x1d2"
-      },
-      {
-        "Name": "WrapTextAt",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1d4"
-      },
-      {
-        "Name": "Margin",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x1d8"
-      },
-      {
-        "Name": "LineHeightPercentage",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1e8"
-      },
-      {
-        "Name": "pad0x4_23EPA[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1ec"
-      },
-      {
-        "Name": "Decorators",
-        "Type": "TArray<class RichTextBlockDecorator*>",
-        "Size": "0x10",
-        "Offset": "0x1f0"
-      },
-      {
-        "Name": "pad0x178_V192W[0x178]",
-        "Type": "char",
-        "Size": "0x178",
-        "Offset": "0x200"
-      }
-    ]
-  },
-  "ScrollBar": {
-    "Super": "Widget",
-    "FullSize": "0x680",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x548",
-    "Attributes": [
-      {
-        "Name": "WidgetStyle",
-        "Type": "struct ScrollBarStyle",
-        "Size": "0x518",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "Style",
-        "Type": "class SlateWidgetStyleAsset*",
-        "Size": "0x8",
-        "Offset": "0x650"
-      },
-      {
-        "Name": "bAlwaysShowScrollbar",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x658"
-      },
-      {
-        "Name": "Orientation",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x659"
-      },
-      {
-        "Name": "pad0x2_ZEU45[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x65a"
-      },
-      {
-        "Name": "Thickness",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x65c"
-      },
-      {
-        "Name": "pad0x1c_SY817[0x1c]",
-        "Type": "char",
-        "Size": "0x1c",
-        "Offset": "0x664"
-      }
-    ]
-  },
-  "Slider": {
-    "Super": "Widget",
-    "FullSize": "0x408",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x2d0",
-    "Attributes": [
-      {
-        "Name": "Value",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "WidgetStyle",
-        "Type": "struct SliderStyle",
-        "Size": "0x248",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "Orientation",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x398"
-      },
-      {
-        "Name": "pad0x3_1UA33[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x399"
-      },
-      {
-        "Name": "SliderBarColor",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x39c"
-      },
-      {
-        "Name": "SliderHandleColor",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x3ac"
-      },
-      {
-        "Name": "IndentHandle",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3bc"
-      },
-      {
-        "Name": "Locked",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3bd"
-      },
-      {
-        "Name": "pad0x2_Z3KFR[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x3be"
-      },
-      {
-        "Name": "pad0x48_9SSBW[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x3c0"
-      }
-    ]
-  },
-  "Spacer": {
-    "Super": "Widget",
-    "FullSize": "0x158",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Size",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "pad0x18_9L8G9[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x140"
-      }
-    ]
-  },
-  "SpinBox": {
-    "Super": "Widget",
-    "FullSize": "0x560",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x428",
-    "Attributes": [
-      {
-        "Name": "Value",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "WidgetStyle",
-        "Type": "struct SpinBoxStyle",
-        "Size": "0x318",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "Style",
-        "Type": "class SlateWidgetStyleAsset*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "Delta",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "SliderExponent",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x474"
-      },
-      {
-        "Name": "Font",
-        "Type": "struct SlateFontInfo",
-        "Size": "0x40",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "MinDesiredWidth",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4b8"
-      },
-      {
-        "Name": "ClearKeyboardFocusOnCommit",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4bc"
-      },
-      {
-        "Name": "SelectAllTextOnCommit",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4bd"
-      },
-      {
-        "Name": "pad0x2_02ZT0[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x4be"
-      },
-      {
-        "Name": "ForegroundColor",
-        "Type": "struct SlateColor",
-        "Size": "0x30",
-        "Offset": "0x4c0"
-      },
-      {
-        "Name": "bOverride_MinValue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x530"
-      },
-      {
-        "Name": "bOverride_MaxValue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x530"
-      },
-      {
-        "Name": "bOverride_MinSliderValue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x530"
-      },
-      {
-        "Name": "bOverride_MaxSliderValue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x530"
-      },
-      {
-        "Name": "pad0x3_DBIQ2[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x531"
-      },
-      {
-        "Name": "MinValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x534"
-      },
-      {
-        "Name": "MaxValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x538"
-      },
-      {
-        "Name": "MinSliderValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x53c"
-      },
-      {
-        "Name": "MaxSliderValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x540"
-      },
-      {
-        "Name": "pad0x1c_P0H6E[0x1c]",
-        "Type": "char",
-        "Size": "0x1c",
-        "Offset": "0x544"
-      }
-    ]
-  },
-  "TableViewBase": {
-    "Super": "Widget",
-    "FullSize": "0x138",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ListView": {
-    "Super": "TableViewBase",
-    "FullSize": "0x180",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "ItemHeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "pad0x4_T1PT5[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x13c"
-      },
-      {
-        "Name": "Items",
-        "Type": "TArray<class Object*>",
-        "Size": "0x10",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "SelectionMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "pad0x3_GDKD4[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x151"
-      },
-      {
-        "Name": "pad0x2c_QCKUI[0x2c]",
-        "Type": "char",
-        "Size": "0x2c",
-        "Offset": "0x154"
-      }
-    ]
-  },
-  "TileView": {
-    "Super": "TableViewBase",
-    "FullSize": "0x180",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "ItemWidth",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "ItemHeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x13c"
-      },
-      {
-        "Name": "Items",
-        "Type": "TArray<class Object*>",
-        "Size": "0x10",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "SelectionMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "pad0x3_AG6XX[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x151"
-      },
-      {
-        "Name": "pad0x2c_40DH7[0x2c]",
-        "Type": "char",
-        "Size": "0x2c",
-        "Offset": "0x154"
-      }
-    ]
-  },
-  "TextBlock": {
-    "Super": "Widget",
-    "FullSize": "0x268",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x130",
-    "Attributes": [
-      {
-        "Name": "Style",
-        "Type": "class SlateWidgetStyleAsset*",
-        "Size": "0x8",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "Text",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "ColorAndOpacity",
-        "Type": "struct SlateColor",
-        "Size": "0x30",
-        "Offset": "0x188"
-      },
-      {
-        "Name": "Font",
-        "Type": "struct SlateFontInfo",
-        "Size": "0x40",
-        "Offset": "0x1c8"
-      },
-      {
-        "Name": "ShadowOffset",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x208"
-      },
-      {
-        "Name": "ShadowColorAndOpacity",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x210"
-      },
-      {
-        "Name": "Justification",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x230"
-      },
-      {
-        "Name": "AutoWrapText",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x231"
-      },
-      {
-        "Name": "pad0x2_FQQ4B[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x232"
-      },
-      {
-        "Name": "WrapTextAt",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x234"
-      },
-      {
-        "Name": "MinDesiredWidth",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x238"
-      },
-      {
-        "Name": "Margin",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x23c"
-      },
-      {
-        "Name": "LineHeightPercentage",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x24c"
-      },
-      {
-        "Name": "pad0x18_1G69Z[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x250"
-      }
-    ]
-  },
-  "Throbber": {
-    "Super": "Widget",
-    "FullSize": "0x1f0",
-    "InheritedSize": "0x138",
-    "ClassSize": "0xb8",
-    "Attributes": [
-      {
-        "Name": "NumberOfPieces",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "bAnimateHorizontally",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x13c"
-      },
-      {
-        "Name": "bAnimateVertically",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x13d"
-      },
-      {
-        "Name": "bAnimateOpacity",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x13e"
-      },
-      {
-        "Name": "pad0x1_KIGQ0[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x13f"
-      },
-      {
-        "Name": "PieceImage",
-        "Type": "class SlateBrushAsset*",
-        "Size": "0x8",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "Image",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "pad0x18_MLT5L[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x1d8"
-      }
-    ]
-  },
-  "WidgetAnimation": {
-    "Super": "MovieSceneSequence",
-    "FullSize": "0x2e0",
-    "InheritedSize": "0x2a8",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "pad0x20_BTFCO[0x20]",
+        "Name": "pad0x20_Y6O0L[0x20]",
         "Type": "char",
         "Size": "0x20",
-        "Offset": "0x2a8"
-      },
-      {
-        "Name": "MovieScene",
-        "Type": "class MovieScene*",
-        "Size": "0x8",
-        "Offset": "0x2c8"
-      },
-      {
-        "Name": "AnimationBindings",
-        "Type": "TArray<struct WidgetAnimationBinding>",
-        "Size": "0x10",
-        "Offset": "0x2d0"
+        "Offset": "0x28"
       }
     ]
-  },
-  "WidgetBlueprintGeneratedClass": {
-    "Super": "BlueprintGeneratedClass",
-    "FullSize": "0x260",
-    "InheritedSize": "0x228",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "WidgetTree",
-        "Type": "class WidgetTree*",
-        "Size": "0x8",
-        "Offset": "0x228"
-      },
-      {
-        "Name": "Bindings",
-        "Type": "TArray<struct DelegateRuntimeBinding>",
-        "Size": "0x10",
-        "Offset": "0x230"
-      },
-      {
-        "Name": "Animations",
-        "Type": "TArray<class WidgetAnimation*>",
-        "Size": "0x10",
-        "Offset": "0x240"
-      },
-      {
-        "Name": "NamedSlots",
-        "Type": "TArray<struct FName>",
-        "Size": "0x10",
-        "Offset": "0x250"
-      }
-    ]
-  },
-  "WidgetBlueprintLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "WidgetComponent": {
     "Super": "PrimitiveComponent",
@@ -3264,7 +308,7 @@
         "Offset": "0x5b8"
       },
       {
-        "Name": "pad0x7_QJQ1I[0x7]",
+        "Name": "pad0x7_7PRRI[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x5b9"
@@ -3294,7 +338,7 @@
         "Offset": "0x5d8"
       },
       {
-        "Name": "pad0x4_CS6YX[0x4]",
+        "Name": "pad0x4_GFZ0G[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x5dc"
@@ -3330,7 +374,7 @@
         "Offset": "0x5fa"
       },
       {
-        "Name": "pad0x1_RGBUA[0x1]",
+        "Name": "pad0x1_FJVPG[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x5fb"
@@ -3348,7 +392,7 @@
         "Offset": "0x600"
       },
       {
-        "Name": "pad0x7_D79KE[0x7]",
+        "Name": "pad0x7_AW59D[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x601"
@@ -3426,10 +470,68 @@
         "Offset": "0x659"
       },
       {
-        "Name": "pad0x56_MLUHV[0x56]",
+        "Name": "pad0x56_VF5QE[0x56]",
         "Type": "char",
         "Size": "0x56",
         "Offset": "0x65a"
+      }
+    ]
+  },
+  "WidgetBlueprintGeneratedClass": {
+    "Super": "BlueprintGeneratedClass",
+    "FullSize": "0x260",
+    "InheritedSize": "0x228",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "WidgetTree",
+        "Type": "class WidgetTree*",
+        "Size": "0x8",
+        "Offset": "0x228"
+      },
+      {
+        "Name": "Bindings",
+        "Type": "TArray<struct DelegateRuntimeBinding>",
+        "Size": "0x10",
+        "Offset": "0x230"
+      },
+      {
+        "Name": "Animations",
+        "Type": "TArray<class WidgetAnimation*>",
+        "Size": "0x10",
+        "Offset": "0x240"
+      },
+      {
+        "Name": "NamedSlots",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x250"
+      }
+    ]
+  },
+  "RichTextBlockDecorator": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "bReveal",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x3_Z88OY[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x29"
+      },
+      {
+        "Name": "RevealedIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
       }
     ]
   },
@@ -3439,50 +541,6 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "WidgetNavigation": {
-    "Super": "Object",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "Up",
-        "Type": "struct WidgetNavigationData",
-        "Size": "0x14",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Down",
-        "Type": "struct WidgetNavigationData",
-        "Size": "0x14",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "Left",
-        "Type": "struct WidgetNavigationData",
-        "Size": "0x14",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "Right",
-        "Type": "struct WidgetNavigationData",
-        "Size": "0x14",
-        "Offset": "0x64"
-      },
-      {
-        "Name": "Next",
-        "Type": "struct WidgetNavigationData",
-        "Size": "0x14",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "Previous",
-        "Type": "struct WidgetNavigationData",
-        "Size": "0x14",
-        "Offset": "0x8c"
-      }
-    ]
   },
   "WidgetTree": {
     "Super": "Object",
@@ -3501,6 +559,2948 @@
         "Type": "TArray<class Widget*>",
         "Size": "0x10",
         "Offset": "0x30"
+      }
+    ]
+  },
+  "UMGSequencePlayer": {
+    "Super": "Object",
+    "FullSize": "0x5c8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x5a0",
+    "Attributes": [
+      {
+        "Name": "pad0x368_BD13L[0x368]",
+        "Type": "char",
+        "Size": "0x368",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Animation",
+        "Type": "class WidgetAnimation*",
+        "Size": "0x8",
+        "Offset": "0x390"
+      },
+      {
+        "Name": "pad0x230_C3GS4[0x230]",
+        "Type": "char",
+        "Size": "0x230",
+        "Offset": "0x398"
+      }
+    ]
+  },
+  "WidgetAnimation": {
+    "Super": "MovieSceneSequence",
+    "FullSize": "0x2e0",
+    "InheritedSize": "0x2a8",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x20_YR6XK[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x2a8"
+      },
+      {
+        "Name": "MovieScene",
+        "Type": "class MovieScene*",
+        "Size": "0x8",
+        "Offset": "0x2c8"
+      },
+      {
+        "Name": "AnimationBindings",
+        "Type": "TArray<struct WidgetAnimationBinding>",
+        "Size": "0x10",
+        "Offset": "0x2d0"
+      }
+    ]
+  },
+  "BrushBinding": {
+    "Super": "PropertyBinding",
+    "FullSize": "0x50",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_S4F8B[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "PanelSlot": {
+    "Super": "Visual",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Parent",
+        "Type": "class PanelWidget*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Content",
+        "Type": "class Widget*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "Widget": {
+    "Super": "Visual",
+    "FullSize": "0x138",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x110",
+    "Attributes": [
+      {
+        "Name": "bIsVariable",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "bCreatedByConstructionScript",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x29"
+      },
+      {
+        "Name": "pad0x6_4AIEE[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x2a"
+      },
+      {
+        "Name": "Slot",
+        "Type": "class PanelSlot*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "bIsEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x3_7B2R2[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x39"
+      },
+      {
+        "Name": "ToolTipText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "ToolTipWidget",
+        "Type": "class Widget*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "Visiblity",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "Visibility",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xb1"
+      },
+      {
+        "Name": "pad0x2_JGDDO[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0xb2"
+      },
+      {
+        "Name": "bOverride_Cursor",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "pad0x3_2GH23[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xc5"
+      },
+      {
+        "Name": "Cursor",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "bIsVolatile",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc9"
+      },
+      {
+        "Name": "pad0x2_9ACM4[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0xca"
+      },
+      {
+        "Name": "RenderTransform",
+        "Type": "struct WidgetTransform",
+        "Size": "0x1c",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "RenderTransformPivot",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "Navigation",
+        "Type": "class WidgetNavigation*",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "pad0x30_0ENE8[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "NativeBindings",
+        "Type": "TArray<class PropertyBinding*>",
+        "Size": "0x10",
+        "Offset": "0x128"
+      }
+    ]
+  },
+  "ColorBinding": {
+    "Super": "PropertyBinding",
+    "FullSize": "0x50",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_8BI1B[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "TextBinding": {
+    "Super": "PropertyBinding",
+    "FullSize": "0x50",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_ZCW7F[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "VisibilityBinding": {
+    "Super": "PropertyBinding",
+    "FullSize": "0x48",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CheckedStateBinding": {
+    "Super": "PropertyBinding",
+    "FullSize": "0x50",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_AGELN[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "MouseCursorBinding": {
+    "Super": "PropertyBinding",
+    "FullSize": "0x48",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WidgetBinding": {
+    "Super": "PropertyBinding",
+    "FullSize": "0x48",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "FloatBinding": {
+    "Super": "PropertyBinding",
+    "FullSize": "0x48",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Int32Binding": {
+    "Super": "PropertyBinding",
+    "FullSize": "0x48",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BoolBinding": {
+    "Super": "PropertyBinding",
+    "FullSize": "0x48",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CanvasPanelSlot": {
+    "Super": "PanelSlot",
+    "FullSize": "0x70",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "LayoutData",
+        "Type": "struct AnchorData",
+        "Size": "0x28",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "bAutoSize",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x3_50IWN[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x61"
+      },
+      {
+        "Name": "ZOrder",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "pad0x8_B231I[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "CircularThrobber": {
+    "Super": "Widget",
+    "FullSize": "0x1f8",
+    "InheritedSize": "0x138",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "NumberOfPieces",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "Period",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x13c"
+      },
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "pad0x4_WIJNA[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x144"
+      },
+      {
+        "Name": "PieceImage",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "Image",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "pad0x18_UKIH4[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x1e0"
+      }
+    ]
+  },
+  "PanelWidget": {
+    "Super": "Widget",
+    "FullSize": "0x150",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Slots",
+        "Type": "TArray<class PanelSlot*>",
+        "Size": "0x10",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "pad0x8_56S75[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x148"
+      }
+    ]
+  },
+  "ButtonSlot": {
+    "Super": "PanelSlot",
+    "FullSize": "0x68",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "HorizontalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "VerticalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x49"
+      },
+      {
+        "Name": "pad0x1e_9HUJK[0x1e]",
+        "Type": "char",
+        "Size": "0x1e",
+        "Offset": "0x4a"
+      }
+    ]
+  },
+  "ProgressBar": {
+    "Super": "Widget",
+    "FullSize": "0x360",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x228",
+    "Attributes": [
+      {
+        "Name": "WidgetStyle",
+        "Type": "struct ProgressBarStyle",
+        "Size": "0x1b8",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "Style",
+        "Type": "class SlateWidgetStyleAsset*",
+        "Size": "0x8",
+        "Offset": "0x2f0"
+      },
+      {
+        "Name": "BackgroundImage",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x2f8"
+      },
+      {
+        "Name": "FillImage",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x300"
+      },
+      {
+        "Name": "MarqueeImage",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x308"
+      },
+      {
+        "Name": "Percent",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x310"
+      },
+      {
+        "Name": "BarFillType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x314"
+      },
+      {
+        "Name": "bIsMarquee",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x315"
+      },
+      {
+        "Name": "pad0x2_XPNUH[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x316"
+      },
+      {
+        "Name": "FillColorAndOpacity",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x328"
+      },
+      {
+        "Name": "pad0x28_IJ9KX[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x338"
+      }
+    ]
+  },
+  "UniformGridSlot": {
+    "Super": "PanelSlot",
+    "FullSize": "0x50",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "HorizontalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "VerticalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x39"
+      },
+      {
+        "Name": "pad0x2_GG87G[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x3a"
+      },
+      {
+        "Name": "Row",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "Column",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0xc_VGQ8S[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x44"
+      }
+    ]
+  },
+  "HorizontalBoxSlot": {
+    "Super": "PanelSlot",
+    "FullSize": "0x60",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Size",
+        "Type": "struct SlateChildSize",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "HorizontalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "VerticalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x51"
+      },
+      {
+        "Name": "pad0xe_MCNP3[0xe]",
+        "Type": "char",
+        "Size": "0xe",
+        "Offset": "0x52"
+      }
+    ]
+  },
+  "UserWidget": {
+    "Super": "Widget",
+    "FullSize": "0x230",
+    "InheritedSize": "0x138",
+    "ClassSize": "0xf8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_MW3Q3[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "ColorAndOpacity",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "ForegroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x160"
+      },
+      {
+        "Name": "bSupportsKeyboardFocus",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1a0"
+      },
+      {
+        "Name": "pad0x7_U80UJ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1a1"
+      },
+      {
+        "Name": "WidgetTree",
+        "Type": "class WidgetTree*",
+        "Size": "0x8",
+        "Offset": "0x1a8"
+      },
+      {
+        "Name": "ActiveSequencePlayers",
+        "Type": "TArray<class UMGSequencePlayer*>",
+        "Size": "0x10",
+        "Offset": "0x1b0"
+      },
+      {
+        "Name": "StoppedSequencePlayers",
+        "Type": "TArray<class UMGSequencePlayer*>",
+        "Size": "0x10",
+        "Offset": "0x1c0"
+      },
+      {
+        "Name": "NamedSlotBindings",
+        "Type": "TArray<struct NamedSlotBinding>",
+        "Size": "0x10",
+        "Offset": "0x1d0"
+      },
+      {
+        "Name": "pad0x50_X8X7U[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x1e0"
+      }
+    ]
+  },
+  "NativeWidgetHost": {
+    "Super": "Widget",
+    "FullSize": "0x150",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_5JWH3[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x138"
+      }
+    ]
+  },
+  "EditableTextBox": {
+    "Super": "Widget",
+    "FullSize": "0xaf8",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x9c0",
+    "Attributes": [
+      {
+        "Name": "Text",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "WidgetStyle",
+        "Type": "struct EditableTextBoxStyle",
+        "Size": "0x860",
+        "Offset": "0x180"
+      },
+      {
+        "Name": "Style",
+        "Type": "class SlateWidgetStyleAsset*",
+        "Size": "0x8",
+        "Offset": "0x9e0"
+      },
+      {
+        "Name": "HintText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x9e8"
+      },
+      {
+        "Name": "Font",
+        "Type": "struct SlateFontInfo",
+        "Size": "0x40",
+        "Offset": "0xa30"
+      },
+      {
+        "Name": "ForegroundColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0xa70"
+      },
+      {
+        "Name": "BackgroundColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0xa80"
+      },
+      {
+        "Name": "ReadOnlyForegroundColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0xa90"
+      },
+      {
+        "Name": "IsReadOnly",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xaa0"
+      },
+      {
+        "Name": "IsPassword",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xaa1"
+      },
+      {
+        "Name": "pad0x2_NGN9F[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0xaa2"
+      },
+      {
+        "Name": "MinimumDesiredWidth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xaa4"
+      },
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0xaa8"
+      },
+      {
+        "Name": "IsCaretMovedWhenGainFocus",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xab8"
+      },
+      {
+        "Name": "SelectAllTextWhenFocused",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xab9"
+      },
+      {
+        "Name": "RevertTextOnEscape",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xaba"
+      },
+      {
+        "Name": "ClearKeyboardFocusOnCommit",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xabb"
+      },
+      {
+        "Name": "SelectAllTextOnCommit",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xabc"
+      },
+      {
+        "Name": "pad0x3_EMHAT[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xabd"
+      },
+      {
+        "Name": "pad0x38_8YBGJ[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0xac0"
+      }
+    ]
+  },
+  "WrapBoxSlot": {
+    "Super": "PanelSlot",
+    "FullSize": "0x60",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "bFillEmptySpace",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x3_Z0XYX[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x49"
+      },
+      {
+        "Name": "FillSpanWhenLessThan",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
+        "Name": "HorizontalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "VerticalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x51"
+      },
+      {
+        "Name": "pad0xe_IKD5U[0xe]",
+        "Type": "char",
+        "Size": "0xe",
+        "Offset": "0x52"
+      }
+    ]
+  },
+  "ComboBox": {
+    "Super": "Widget",
+    "FullSize": "0x170",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Items",
+        "Type": "TArray<class Object*>",
+        "Size": "0x10",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "pad0x28_X8XWS[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x148"
+      }
+    ]
+  },
+  "ComboBoxString": {
+    "Super": "Widget",
+    "FullSize": "0x620",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x4e8",
+    "Attributes": [
+      {
+        "Name": "DefaultOptions",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "SelectedOption",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "WidgetStyle",
+        "Type": "struct ComboBoxStyle",
+        "Size": "0x428",
+        "Offset": "0x158"
+      },
+      {
+        "Name": "ContentPadding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x580"
+      },
+      {
+        "Name": "MaxListHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x590"
+      },
+      {
+        "Name": "HasDownArrow",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x594"
+      },
+      {
+        "Name": "pad0x3_RM5OE[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x595"
+      },
+      {
+        "Name": "pad0x88_2IY9H[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x598"
+      }
+    ]
+  },
+  "GridSlot": {
+    "Super": "PanelSlot",
+    "FullSize": "0x60",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "HorizontalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "VerticalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x39"
+      },
+      {
+        "Name": "pad0x2_PIRE8[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x3a"
+      },
+      {
+        "Name": "Row",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "RowSpan",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "Column",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "ColumnSpan",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "Layer",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
+        "Name": "Nudge",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x8_F7MCN[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "TableViewBase": {
+    "Super": "Widget",
+    "FullSize": "0x138",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ScaleBoxSlot": {
+    "Super": "PanelSlot",
+    "FullSize": "0x68",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "HorizontalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "VerticalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x49"
+      },
+      {
+        "Name": "pad0x1e_89WS6[0x1e]",
+        "Type": "char",
+        "Size": "0x1e",
+        "Offset": "0x4a"
+      }
+    ]
+  },
+  "MultiLineEditableTextBox": {
+    "Super": "Widget",
+    "FullSize": "0xbe8",
+    "InheritedSize": "0x138",
+    "ClassSize": "0xab0",
+    "Attributes": [
+      {
+        "Name": "Text",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "WidgetStyle",
+        "Type": "struct EditableTextBoxStyle",
+        "Size": "0x860",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "TextStyle",
+        "Type": "struct TextBlockStyle",
+        "Size": "0x160",
+        "Offset": "0x9d0"
+      },
+      {
+        "Name": "Style",
+        "Type": "class SlateWidgetStyleAsset*",
+        "Size": "0x8",
+        "Offset": "0xb30"
+      },
+      {
+        "Name": "Justification",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xb38"
+      },
+      {
+        "Name": "bAutoWrapText",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xb39"
+      },
+      {
+        "Name": "pad0x2_P329K[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0xb3a"
+      },
+      {
+        "Name": "WrapTextAt",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xb3c"
+      },
+      {
+        "Name": "Font",
+        "Type": "struct SlateFontInfo",
+        "Size": "0x40",
+        "Offset": "0xb40"
+      },
+      {
+        "Name": "ForegroundColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0xb80"
+      },
+      {
+        "Name": "BackgroundColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0xb90"
+      },
+      {
+        "Name": "ReadOnlyForegroundColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0xba0"
+      },
+      {
+        "Name": "pad0x38_8LIX2[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0xbb0"
+      }
+    ]
+  },
+  "WidgetSwitcherSlot": {
+    "Super": "PanelSlot",
+    "FullSize": "0x58",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "HorizontalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "VerticalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x49"
+      },
+      {
+        "Name": "pad0xe_461FB[0xe]",
+        "Type": "char",
+        "Size": "0xe",
+        "Offset": "0x4a"
+      }
+    ]
+  },
+  "SizeBoxSlot": {
+    "Super": "PanelSlot",
+    "FullSize": "0x68",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "HorizontalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "VerticalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x49"
+      },
+      {
+        "Name": "pad0x1e_3ZLLG[0x1e]",
+        "Type": "char",
+        "Size": "0x1e",
+        "Offset": "0x4a"
+      }
+    ]
+  },
+  "OverlaySlot": {
+    "Super": "PanelSlot",
+    "FullSize": "0x58",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "HorizontalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "VerticalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x49"
+      },
+      {
+        "Name": "pad0xe_SUVX1[0xe]",
+        "Type": "char",
+        "Size": "0xe",
+        "Offset": "0x4a"
+      }
+    ]
+  },
+  "Slider": {
+    "Super": "Widget",
+    "FullSize": "0x408",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x2d0",
+    "Attributes": [
+      {
+        "Name": "Value",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "WidgetStyle",
+        "Type": "struct SliderStyle",
+        "Size": "0x248",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "Orientation",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x398"
+      },
+      {
+        "Name": "pad0x3_2EB0X[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x399"
+      },
+      {
+        "Name": "SliderBarColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x39c"
+      },
+      {
+        "Name": "SliderHandleColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x3ac"
+      },
+      {
+        "Name": "IndentHandle",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3bc"
+      },
+      {
+        "Name": "Locked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3bd"
+      },
+      {
+        "Name": "pad0x2_BB60X[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x3be"
+      },
+      {
+        "Name": "pad0x48_FBHCY[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x3c0"
+      }
+    ]
+  },
+  "SpinBox": {
+    "Super": "Widget",
+    "FullSize": "0x560",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x428",
+    "Attributes": [
+      {
+        "Name": "Value",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "WidgetStyle",
+        "Type": "struct SpinBoxStyle",
+        "Size": "0x318",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "Style",
+        "Type": "class SlateWidgetStyleAsset*",
+        "Size": "0x8",
+        "Offset": "0x468"
+      },
+      {
+        "Name": "Delta",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x470"
+      },
+      {
+        "Name": "SliderExponent",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x474"
+      },
+      {
+        "Name": "Font",
+        "Type": "struct SlateFontInfo",
+        "Size": "0x40",
+        "Offset": "0x478"
+      },
+      {
+        "Name": "MinDesiredWidth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4b8"
+      },
+      {
+        "Name": "ClearKeyboardFocusOnCommit",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4bc"
+      },
+      {
+        "Name": "SelectAllTextOnCommit",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4bd"
+      },
+      {
+        "Name": "pad0x2_F0NUL[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x4be"
+      },
+      {
+        "Name": "ForegroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x4c0"
+      },
+      {
+        "Name": "bOverride_MinValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x530"
+      },
+      {
+        "Name": "bOverride_MaxValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x530"
+      },
+      {
+        "Name": "bOverride_MinSliderValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x530"
+      },
+      {
+        "Name": "bOverride_MaxSliderValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x530"
+      },
+      {
+        "Name": "pad0x3_GV57D[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x531"
+      },
+      {
+        "Name": "MinValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x534"
+      },
+      {
+        "Name": "MaxValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x538"
+      },
+      {
+        "Name": "MinSliderValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x53c"
+      },
+      {
+        "Name": "MaxSliderValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x540"
+      },
+      {
+        "Name": "pad0x1c_TRFUT[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x544"
+      }
+    ]
+  },
+  "ExpandableArea": {
+    "Super": "Widget",
+    "FullSize": "0x190",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "pad0x8_MQIAV[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "bIsExpanded",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "pad0x3_XIYAM[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x141"
+      },
+      {
+        "Name": "MaxHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x144"
+      },
+      {
+        "Name": "AreaPadding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "HeaderContent",
+        "Type": "class Widget*",
+        "Size": "0x8",
+        "Offset": "0x168"
+      },
+      {
+        "Name": "BodyContent",
+        "Type": "class Widget*",
+        "Size": "0x8",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "pad0x18_R0C4W[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x178"
+      }
+    ]
+  },
+  "Image": {
+    "Super": "Widget",
+    "FullSize": "0x228",
+    "InheritedSize": "0x138",
+    "ClassSize": "0xf0",
+    "Attributes": [
+      {
+        "Name": "Image",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "Brush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "ColorAndOpacity",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x1e0"
+      },
+      {
+        "Name": "pad0x38_08EQK[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x1f0"
+      }
+    ]
+  },
+  "ScrollBar": {
+    "Super": "Widget",
+    "FullSize": "0x680",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x548",
+    "Attributes": [
+      {
+        "Name": "WidgetStyle",
+        "Type": "struct ScrollBarStyle",
+        "Size": "0x518",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "Style",
+        "Type": "class SlateWidgetStyleAsset*",
+        "Size": "0x8",
+        "Offset": "0x650"
+      },
+      {
+        "Name": "bAlwaysShowScrollbar",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x658"
+      },
+      {
+        "Name": "Orientation",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x659"
+      },
+      {
+        "Name": "pad0x2_IWON9[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x65a"
+      },
+      {
+        "Name": "Thickness",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x65c"
+      },
+      {
+        "Name": "pad0x1c_51SEC[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x664"
+      }
+    ]
+  },
+  "MultiLineEditableText": {
+    "Super": "Widget",
+    "FullSize": "0x350",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x218",
+    "Attributes": [
+      {
+        "Name": "Text",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "WidgetStyle",
+        "Type": "struct TextBlockStyle",
+        "Size": "0x160",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "Justification",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x2d0"
+      },
+      {
+        "Name": "bAutoWrapText",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2d1"
+      },
+      {
+        "Name": "pad0x2_GVO2F[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x2d2"
+      },
+      {
+        "Name": "WrapTextAt",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2d4"
+      },
+      {
+        "Name": "Font",
+        "Type": "struct SlateFontInfo",
+        "Size": "0x40",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "pad0x38_MIPX4[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x318"
+      }
+    ]
+  },
+  "BorderSlot": {
+    "Super": "PanelSlot",
+    "FullSize": "0x68",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "HorizontalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "VerticalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x49"
+      },
+      {
+        "Name": "pad0x1e_VSCHH[0x1e]",
+        "Type": "char",
+        "Size": "0x1e",
+        "Offset": "0x4a"
+      }
+    ]
+  },
+  "ScrollBoxSlot": {
+    "Super": "PanelSlot",
+    "FullSize": "0x58",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "HorizontalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0xf_W9A9A[0xf]",
+        "Type": "char",
+        "Size": "0xf",
+        "Offset": "0x49"
+      }
+    ]
+  },
+  "Throbber": {
+    "Super": "Widget",
+    "FullSize": "0x1f0",
+    "InheritedSize": "0x138",
+    "ClassSize": "0xb8",
+    "Attributes": [
+      {
+        "Name": "NumberOfPieces",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "bAnimateHorizontally",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x13c"
+      },
+      {
+        "Name": "bAnimateVertically",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x13d"
+      },
+      {
+        "Name": "bAnimateOpacity",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x13e"
+      },
+      {
+        "Name": "pad0x1_GVLJO[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x13f"
+      },
+      {
+        "Name": "PieceImage",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "Image",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "pad0x18_9962I[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x1d8"
+      }
+    ]
+  },
+  "RichTextBlock": {
+    "Super": "Widget",
+    "FullSize": "0x378",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x240",
+    "Attributes": [
+      {
+        "Name": "Text",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "Font",
+        "Type": "struct SlateFontInfo",
+        "Size": "0x40",
+        "Offset": "0x180"
+      },
+      {
+        "Name": "Color",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x1c0"
+      },
+      {
+        "Name": "Justification",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1d0"
+      },
+      {
+        "Name": "AutoWrapText",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1d1"
+      },
+      {
+        "Name": "pad0x2_I6COW[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x1d2"
+      },
+      {
+        "Name": "WrapTextAt",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1d4"
+      },
+      {
+        "Name": "Margin",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x1d8"
+      },
+      {
+        "Name": "LineHeightPercentage",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1e8"
+      },
+      {
+        "Name": "pad0x4_QH75X[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1ec"
+      },
+      {
+        "Name": "Decorators",
+        "Type": "TArray<class RichTextBlockDecorator*>",
+        "Size": "0x10",
+        "Offset": "0x1f0"
+      },
+      {
+        "Name": "pad0x178_I49GZ[0x178]",
+        "Type": "char",
+        "Size": "0x178",
+        "Offset": "0x200"
+      }
+    ]
+  },
+  "TextBlock": {
+    "Super": "Widget",
+    "FullSize": "0x268",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x130",
+    "Attributes": [
+      {
+        "Name": "Style",
+        "Type": "class SlateWidgetStyleAsset*",
+        "Size": "0x8",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "Text",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "ColorAndOpacity",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x188"
+      },
+      {
+        "Name": "Font",
+        "Type": "struct SlateFontInfo",
+        "Size": "0x40",
+        "Offset": "0x1c8"
+      },
+      {
+        "Name": "ShadowOffset",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x208"
+      },
+      {
+        "Name": "ShadowColorAndOpacity",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x210"
+      },
+      {
+        "Name": "Justification",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x230"
+      },
+      {
+        "Name": "AutoWrapText",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x231"
+      },
+      {
+        "Name": "pad0x2_G7ISA[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x232"
+      },
+      {
+        "Name": "WrapTextAt",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x234"
+      },
+      {
+        "Name": "MinDesiredWidth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x238"
+      },
+      {
+        "Name": "Margin",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x23c"
+      },
+      {
+        "Name": "LineHeightPercentage",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x24c"
+      },
+      {
+        "Name": "pad0x18_4QOD2[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x250"
+      }
+    ]
+  },
+  "VerticalBoxSlot": {
+    "Super": "PanelSlot",
+    "FullSize": "0x60",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Size",
+        "Type": "struct SlateChildSize",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "HorizontalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "VerticalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x51"
+      },
+      {
+        "Name": "pad0xe_USKHZ[0xe]",
+        "Type": "char",
+        "Size": "0xe",
+        "Offset": "0x52"
+      }
+    ]
+  },
+  "EditableText": {
+    "Super": "Widget",
+    "FullSize": "0x4c8",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x390",
+    "Attributes": [
+      {
+        "Name": "Text",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "HintText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x180"
+      },
+      {
+        "Name": "WidgetStyle",
+        "Type": "struct EditableTextStyle",
+        "Size": "0x228",
+        "Offset": "0x1c8"
+      },
+      {
+        "Name": "Style",
+        "Type": "class SlateWidgetStyleAsset*",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "BackgroundImageSelected",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "BackgroundImageComposing",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "CaretImage",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "Font",
+        "Type": "struct SlateFontInfo",
+        "Size": "0x40",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "ColorAndOpacity",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x450"
+      },
+      {
+        "Name": "IsReadOnly",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x480"
+      },
+      {
+        "Name": "IsPassword",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x481"
+      },
+      {
+        "Name": "pad0x2_EF4LN[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x482"
+      },
+      {
+        "Name": "MinimumDesiredWidth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x484"
+      },
+      {
+        "Name": "IsCaretMovedWhenGainFocus",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x488"
+      },
+      {
+        "Name": "SelectAllTextWhenFocused",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x489"
+      },
+      {
+        "Name": "RevertTextOnEscape",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48a"
+      },
+      {
+        "Name": "ClearKeyboardFocusOnCommit",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48b"
+      },
+      {
+        "Name": "SelectAllTextOnCommit",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48c"
+      },
+      {
+        "Name": "pad0x3_MGTBP[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x48d"
+      },
+      {
+        "Name": "pad0x38_F9XMU[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x490"
+      }
+    ]
+  },
+  "Spacer": {
+    "Super": "Widget",
+    "FullSize": "0x158",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Size",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "pad0x18_9RROL[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x140"
+      }
+    ]
+  },
+  "SafeZoneSlot": {
+    "Super": "PanelSlot",
+    "FullSize": "0x50",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "bIsTitleSafe",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "HAlign",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x39"
+      },
+      {
+        "Name": "VAlign",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3a"
+      },
+      {
+        "Name": "pad0x1_BTJLA[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x3b"
+      },
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "pad0x4_MVAUW[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      }
+    ]
+  },
+  "TileView": {
+    "Super": "TableViewBase",
+    "FullSize": "0x180",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "ItemWidth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "ItemHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x13c"
+      },
+      {
+        "Name": "Items",
+        "Type": "TArray<class Object*>",
+        "Size": "0x10",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "SelectionMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "pad0x3_IEYC4[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x151"
+      },
+      {
+        "Name": "pad0x2c_DN1F1[0x2c]",
+        "Type": "char",
+        "Size": "0x2c",
+        "Offset": "0x154"
+      }
+    ]
+  },
+  "GridPanel": {
+    "Super": "PanelWidget",
+    "FullSize": "0x188",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "ColumnFill",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "RowFill",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x160"
+      },
+      {
+        "Name": "pad0x18_VK786[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x170"
+      }
+    ]
+  },
+  "HorizontalBox": {
+    "Super": "PanelWidget",
+    "FullSize": "0x168",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_IPGOC[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x150"
+      }
+    ]
+  },
+  "VerticalBox": {
+    "Super": "PanelWidget",
+    "FullSize": "0x168",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_S6NSU[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x150"
+      }
+    ]
+  },
+  "Overlay": {
+    "Super": "PanelWidget",
+    "FullSize": "0x168",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_CO7EJ[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x150"
+      }
+    ]
+  },
+  "CanvasPanel": {
+    "Super": "PanelWidget",
+    "FullSize": "0x168",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_WKRPP[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x150"
+      }
+    ]
+  },
+  "WidgetSwitcher": {
+    "Super": "PanelWidget",
+    "FullSize": "0x170",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ActiveWidgetIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "pad0x1c_M788L[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x154"
+      }
+    ]
+  },
+  "ContentWidget": {
+    "Super": "PanelWidget",
+    "FullSize": "0x150",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WrapBox": {
+    "Super": "PanelWidget",
+    "FullSize": "0x170",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "InnerSlotPadding",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "pad0x18_24031[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x158"
+      }
+    ]
+  },
+  "ListView": {
+    "Super": "TableViewBase",
+    "FullSize": "0x180",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "ItemHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "pad0x4_64ZNZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x13c"
+      },
+      {
+        "Name": "Items",
+        "Type": "TArray<class Object*>",
+        "Size": "0x10",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "SelectionMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "pad0x3_NIPG9[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x151"
+      },
+      {
+        "Name": "pad0x2c_VNX1H[0x2c]",
+        "Type": "char",
+        "Size": "0x2c",
+        "Offset": "0x154"
+      }
+    ]
+  },
+  "UniformGridPanel": {
+    "Super": "PanelWidget",
+    "FullSize": "0x180",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "SlotPadding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "MinDesiredSlotWidth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x160"
+      },
+      {
+        "Name": "MinDesiredSlotHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x164"
+      },
+      {
+        "Name": "pad0x18_KBLRY[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x168"
+      }
+    ]
+  },
+  "ScrollBox": {
+    "Super": "PanelWidget",
+    "FullSize": "0x8f0",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x7a0",
+    "Attributes": [
+      {
+        "Name": "WidgetStyle",
+        "Type": "struct ScrollBoxStyle",
+        "Size": "0x248",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "WidgetBarStyle",
+        "Type": "struct ScrollBarStyle",
+        "Size": "0x518",
+        "Offset": "0x398"
+      },
+      {
+        "Name": "Style",
+        "Type": "class SlateWidgetStyleAsset*",
+        "Size": "0x8",
+        "Offset": "0x8b0"
+      },
+      {
+        "Name": "BarStyle",
+        "Type": "class SlateWidgetStyleAsset*",
+        "Size": "0x8",
+        "Offset": "0x8b8"
+      },
+      {
+        "Name": "Orientation",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8c0"
+      },
+      {
+        "Name": "ScrollBarVisibility",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8c1"
+      },
+      {
+        "Name": "ConsumeMouseWheel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8c2"
+      },
+      {
+        "Name": "pad0x1_7DQ12[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x8c3"
+      },
+      {
+        "Name": "ScrollbarThickness",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x8c4"
+      },
+      {
+        "Name": "AlwaysShowScrollbar",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8cc"
+      },
+      {
+        "Name": "pad0x23_OARL5[0x23]",
+        "Type": "char",
+        "Size": "0x23",
+        "Offset": "0x8cd"
+      }
+    ]
+  },
+  "SafeZone": {
+    "Super": "ContentWidget",
+    "FullSize": "0x168",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_3OHVJ[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x150"
+      }
+    ]
+  },
+  "MenuAnchor": {
+    "Super": "ContentWidget",
+    "FullSize": "0x198",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "MenuClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "Placement",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x168"
+      },
+      {
+        "Name": "pad0x7_B4JXQ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x169"
+      },
+      {
+        "Name": "pad0x28_LD5VZ[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x170"
+      }
+    ]
+  },
+  "SizeBox": {
+    "Super": "ContentWidget",
+    "FullSize": "0x188",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "bOverride_WidthOverride",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "bOverride_HeightOverride",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "bOverride_MinDesiredWidth",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "bOverride_MinDesiredHeight",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "bOverride_MaxDesiredWidth",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "bOverride_MaxDesiredHeight",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "pad0x3_2NZBF[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x151"
+      },
+      {
+        "Name": "WidthOverride",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x154"
+      },
+      {
+        "Name": "HeightOverride",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x158"
+      },
+      {
+        "Name": "MinDesiredWidth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x15c"
+      },
+      {
+        "Name": "MinDesiredHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x160"
+      },
+      {
+        "Name": "MaxDesiredWidth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x164"
+      },
+      {
+        "Name": "MaxDesiredHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x168"
+      },
+      {
+        "Name": "pad0x1c_M5428[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x16c"
+      }
+    ]
+  },
+  "Viewport": {
+    "Super": "ContentWidget",
+    "FullSize": "0x190",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "BackgroundColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "pad0x30_ZPNOM[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x160"
+      }
+    ]
+  },
+  "Button": {
+    "Super": "ContentWidget",
+    "FullSize": "0x470",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x320",
+    "Attributes": [
+      {
+        "Name": "Style",
+        "Type": "class SlateWidgetStyleAsset*",
+        "Size": "0x8",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "WidgetStyle",
+        "Type": "struct ButtonStyle",
+        "Size": "0x2a8",
+        "Offset": "0x158"
+      },
+      {
+        "Name": "ColorAndOpacity",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "BackgroundColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "ClickMethod",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "TouchMethod",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x421"
+      },
+      {
+        "Name": "IsFocusable",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x422"
+      },
+      {
+        "Name": "pad0x5_9LHXD[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x423"
+      },
+      {
+        "Name": "pad0x48_GIPC8[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x428"
+      }
+    ]
+  },
+  "Border": {
+    "Super": "ContentWidget",
+    "FullSize": "0x2b0",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x160",
+    "Attributes": [
+      {
+        "Name": "ContentColorAndOpacity",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "HorizontalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x180"
+      },
+      {
+        "Name": "VerticalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x181"
+      },
+      {
+        "Name": "pad0x6_IBQUB[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x182"
+      },
+      {
+        "Name": "Background",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x188"
+      },
+      {
+        "Name": "BrushColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x228"
+      },
+      {
+        "Name": "bShowEffectWhenDisabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x248"
+      },
+      {
+        "Name": "pad0x3_N1FVU[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x249"
+      },
+      {
+        "Name": "Brush",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x2a8"
+      }
+    ]
+  },
+  "CheckBox": {
+    "Super": "ContentWidget",
+    "FullSize": "0x818",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x6c8",
+    "Attributes": [
+      {
+        "Name": "CheckedState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "pad0x3_NGF1B[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x151"
+      },
+      {
+        "Name": "WidgetStyle",
+        "Type": "struct CheckBoxStyle",
+        "Size": "0x5f0",
+        "Offset": "0x168"
+      },
+      {
+        "Name": "Style",
+        "Type": "class SlateWidgetStyleAsset*",
+        "Size": "0x8",
+        "Offset": "0x758"
+      },
+      {
+        "Name": "UncheckedImage",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x760"
+      },
+      {
+        "Name": "UncheckedHoveredImage",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x768"
+      },
+      {
+        "Name": "UncheckedPressedImage",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x770"
+      },
+      {
+        "Name": "CheckedImage",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x778"
+      },
+      {
+        "Name": "CheckedHoveredImage",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x780"
+      },
+      {
+        "Name": "CheckedPressedImage",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x788"
+      },
+      {
+        "Name": "UndeterminedImage",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x790"
+      },
+      {
+        "Name": "UndeterminedHoveredImage",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x798"
+      },
+      {
+        "Name": "UndeterminedPressedImage",
+        "Type": "class SlateBrushAsset*",
+        "Size": "0x8",
+        "Offset": "0x7a0"
+      },
+      {
+        "Name": "HorizontalAlignment",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x7a8"
+      },
+      {
+        "Name": "pad0x3_JF4V0[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x7a9"
+      },
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x7ac"
+      },
+      {
+        "Name": "pad0x4_GKEDP[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x7bc"
+      },
+      {
+        "Name": "BorderBackgroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x7c0"
+      },
+      {
+        "Name": "pad0x28_7DXZJ[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x7f0"
+      }
+    ]
+  },
+  "NamedSlot": {
+    "Super": "ContentWidget",
+    "FullSize": "0x168",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_CGFF0[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x150"
+      }
+    ]
+  },
+  "ScaleBox": {
+    "Super": "ContentWidget",
+    "FullSize": "0x170",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StretchDirection",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "Stretch",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x151"
+      },
+      {
+        "Name": "pad0x2_C9ZE4[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x152"
+      },
+      {
+        "Name": "UserSpecifiedScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x154"
+      },
+      {
+        "Name": "pad0x18_D06DT[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x158"
+      }
+    ]
+  },
+  "InvalidationBox": {
+    "Super": "ContentWidget",
+    "FullSize": "0x170",
+    "InheritedSize": "0x150",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "CacheRelativeTransforms",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "pad0x1f_HS8Z9[0x1f]",
+        "Type": "char",
+        "Size": "0x1f",
+        "Offset": "0x151"
       }
     ]
   },

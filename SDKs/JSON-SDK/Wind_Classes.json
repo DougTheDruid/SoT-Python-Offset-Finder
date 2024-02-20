@@ -1,10 +1,23 @@
 {
-  "WindZoneInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
+  "TestWindInterface": {
+    "Super": "Object",
+    "FullSize": "0x68",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x30_D11BF[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "WindZones",
+        "Type": "TArray<class Interface*>",
+        "Size": "0x10",
+        "Offset": "0x58"
+      }
+    ]
   },
   "WindInterface": {
     "Super": "Interface",
@@ -13,47 +26,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "DebugWindInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MockWindService": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_1PBRO[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "TestWindInterface": {
-    "Super": "Object",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x30_2BICP[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "WindZones",
-        "Type": "TArray<Interface WindZones>",
-        "Size": "0x10",
-        "Offset": "0x58"
-      }
-    ]
-  },
   "TestWindZone": {
     "Super": "Object",
     "FullSize": "0x50",
@@ -61,7 +33,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x28_PHG6V[0x28]",
+        "Name": "pad0x28_1PKIU[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x28"
@@ -75,83 +47,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "WindService": {
-    "Super": "Actor",
-    "FullSize": "0x500",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x138",
-    "Attributes": [
-      {
-        "Name": "pad0x10_KTM62[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "GlobalWindSource",
-        "Type": "class WindDirectionalSource*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "pad0x10_TOD4U[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "CurrentWindAngle",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "CurrentWindMagnitude",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3f4"
-      },
-      {
-        "Name": "pad0xe8_0H0ZX[0xe8]",
-        "Type": "char",
-        "Size": "0xe8",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "WindZones",
-        "Type": "TArray<Interface WindZones>",
-        "Size": "0x10",
-        "Offset": "0x4e0"
-      },
-      {
-        "Name": "ExtraWind",
-        "Type": "TArray<struct ExtraWind>",
-        "Size": "0x10",
-        "Offset": "0x4f0"
-      }
-    ]
-  },
-  "DebugWindService": {
-    "Super": "WindService",
-    "FullSize": "0x510",
-    "InheritedSize": "0x500",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_T0KOE[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x500"
-      }
-    ]
-  },
-  "WindServiceParamsFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "WindZoneComponent": {
     "Super": "SceneComponent",
     "FullSize": "0x370",
@@ -159,7 +54,7 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x8_0HA2N[0x8]",
+        "Name": "pad0x8_BNNNF[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2e0"
@@ -177,10 +72,115 @@
         "Offset": "0x358"
       },
       {
-        "Name": "pad0x8_DSDG2[0x8]",
+        "Name": "pad0x8_9295W[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x368"
+      }
+    ]
+  },
+  "WindService": {
+    "Super": "Actor",
+    "FullSize": "0x500",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x138",
+    "Attributes": [
+      {
+        "Name": "pad0x10_HURES[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "GlobalWindSource",
+        "Type": "class WindDirectionalSource*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "pad0x10_IR24M[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "CurrentWindAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "CurrentWindMagnitude",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3f4"
+      },
+      {
+        "Name": "pad0xe8_ZRW5J[0xe8]",
+        "Type": "char",
+        "Size": "0xe8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "WindZones",
+        "Type": "TArray<class Interface*>",
+        "Size": "0x10",
+        "Offset": "0x4e0"
+      },
+      {
+        "Name": "ExtraWind",
+        "Type": "TArray<struct ExtraWind>",
+        "Size": "0x10",
+        "Offset": "0x4f0"
+      }
+    ]
+  },
+  "MockWindService": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_Z3EY5[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WindServiceParamsFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DebugWindInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WindZoneInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DebugWindService": {
+    "Super": "WindService",
+    "FullSize": "0x510",
+    "InheritedSize": "0x500",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_O6EVJ[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x500"
       }
     ]
   },

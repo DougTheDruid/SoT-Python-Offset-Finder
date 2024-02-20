@@ -1,38 +1,9 @@
 {
-  "GlobalDigSpotDefinition": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Story",
-        "Type": "struct StoryFlag",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ActorWithNamedPointComponent",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "NamedPoint",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Rewards",
-        "Type": "class WeightedItemDescSpawnDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
   "GlobalDigSpotPopupEvent": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x10_F6VR0[0x10]",
+        "Name": "pad0x10_S7TVE[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"
@@ -65,6 +36,41 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "GlobalDigSpotDefinition": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Story",
+        "Type": "struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "VoyageDesc",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ActorWithNamedPointComponent",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "NamedPoint",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Rewards",
+        "Type": "class WeightedItemDescSpawnDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x28"
       }
     ]
   },

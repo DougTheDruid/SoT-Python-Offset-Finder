@@ -6,7 +6,7 @@ EventAffectedByExplosion:
     Offset: '0x0'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x10_DOSX6[0x10]
+  - Name: pad0x10_5ILU0[0x10]
     Offset: '0x8'
     Size: '0x10'
     Type: char
@@ -27,7 +27,7 @@ EventExplosionOverlap:
   ClassSize: '0x8'
 EventOnExploded:
   Attributes:
-  - Name: pad0xc_O3YKE[0xc]
+  - Name: pad0xc_1DKBP[0xc]
     Offset: '0x0'
     Size: '0xc'
     Type: char

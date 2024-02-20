@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 EndPlayHandler:
   Attributes:
-  - Name: pad0x18_6GAUJ[0x18]
+  - Name: pad0x18_L7EGU[0x18]
     Offset: '0x28'
     Size: '0x18'
     Type: char
@@ -24,7 +24,7 @@ LinkEndpointInterface:
   Super: Interface
 LinkerComponent:
   Attributes:
-  - Name: pad0xc8_0D82A[0xc8]
+  - Name: pad0xc8_T0P3P[0xc8]
     Offset: '0xc8'
     Size: '0xc8'
     Type: char

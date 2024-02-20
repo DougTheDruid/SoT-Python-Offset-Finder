@@ -1,339 +1,339 @@
 {
   "BP_AudioBoatLargeHullAmbi_C": {
     "Super": "ShipHullAudio",
-    "FullSize": "0x7f0",
-    "InheritedSize": "0x638",
+    "FullSize": "0x848",
+    "InheritedSize": "0x690",
     "ClassSize": "0x1b8",
     "Attributes": [
       {
         "Name": "Triton",
         "Type": "class TritonComponent*",
         "Size": "0x8",
-        "Offset": "0x638"
+        "Offset": "0x690"
       },
       {
         "Name": "ShipAudio_Wake_Bow",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x640"
+        "Offset": "0x698"
       },
       {
         "Name": "ShipAudio_Water_Wash_Front_Right",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x648"
+        "Offset": "0x6a0"
       },
       {
         "Name": "ShipAudio_Water_Wash_Front_Left",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x650"
+        "Offset": "0x6a8"
       },
       {
         "Name": "ShipAudio_Water_Wash_Bow",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x658"
+        "Offset": "0x6b0"
       },
       {
         "Name": "ShipAudio_Water_Wash_Back_Right",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x660"
+        "Offset": "0x6b8"
       },
       {
         "Name": "ShipAudio_Water_Wash_Back_Left",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x668"
+        "Offset": "0x6c0"
       },
       {
         "Name": "ShipAudio_Wake_Stern",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x670"
+        "Offset": "0x6c8"
       },
       {
         "Name": "ShipAudio_Creak_TopDeck_Side_Right",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x678"
+        "Offset": "0x6d0"
       },
       {
         "Name": "ShipAudio_Creak_TopDeck_Side_Left",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x680"
+        "Offset": "0x6d8"
       },
       {
         "Name": "ShipAudio_Creak_TopDeck_PitchRoll",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x688"
+        "Offset": "0x6e0"
       },
       {
         "Name": "ShipAudio_Creak_TopDeck_Front_Top",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x690"
+        "Offset": "0x6e8"
       },
       {
         "Name": "ShipAudio_Creak_TopDeck_Front_Right",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x698"
+        "Offset": "0x6f0"
       },
       {
         "Name": "ShipAudio_Creak_TopDeck_Back_Left",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x6a0"
+        "Offset": "0x6f8"
       },
       {
         "Name": "ShipAudio_Creak_TopDeck_Bow_Rope",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x6a8"
+        "Offset": "0x700"
       },
       {
         "Name": "ShipAudio_Creak_TopDeck_Bow_Bottom",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x6b0"
+        "Offset": "0x708"
       },
       {
         "Name": "ShipAudio_Creak_TopDeck_Back_Rope",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x6b8"
+        "Offset": "0x710"
       },
       {
         "Name": "ShipAudio_Creak_TopDeck_Back_Right",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x6c0"
+        "Offset": "0x718"
       },
       {
         "Name": "ShipAudio_Creak_TopDeck_Front_Left",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x6c8"
+        "Offset": "0x720"
       },
       {
         "Name": "ShipAudio_Creak_Mast_Mizzen_Base",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x6d0"
+        "Offset": "0x728"
       },
       {
         "Name": "ShipAudio_Creak_Mast_Mizzen_Sail2",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x6d8"
+        "Offset": "0x730"
       },
       {
         "Name": "ShipAudio_Creak_Mast_Mizzen_Sail1",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x6e0"
+        "Offset": "0x738"
       },
       {
         "Name": "ShipAudio_Creak_Mast_Main_Sail1",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x6e8"
+        "Offset": "0x740"
       },
       {
         "Name": "ShipAudio_Creak_Mast_Main_Sail3",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x6f0"
+        "Offset": "0x748"
       },
       {
         "Name": "ShipAudio_Creak_Mast_Main_Sail2",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x6f8"
+        "Offset": "0x750"
       },
       {
         "Name": "ShipAudio_Creak_Mast_Main_Base",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x700"
+        "Offset": "0x758"
       },
       {
         "Name": "ShipAudio_Creak_Mast_Fore_Base",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x708"
+        "Offset": "0x760"
       },
       {
         "Name": "ShipAudio_Creak_Mast_Fore_Sail2",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x710"
+        "Offset": "0x768"
       },
       {
         "Name": "ShipAudio_Creak_Mast_Fore_Sail1",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x718"
+        "Offset": "0x770"
       },
       {
         "Name": "ShipAudio_Creak_MapDeck_Pillar_Mid_Right",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x720"
+        "Offset": "0x778"
       },
       {
         "Name": "ShipAudio_Creak_MapDeck_Pillar_Front_Right",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x728"
+        "Offset": "0x780"
       },
       {
         "Name": "ShipAudio_Creak_MapDeck_Pillar_Front_Left",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x730"
+        "Offset": "0x788"
       },
       {
         "Name": "ShipAudio_Creak_MapDeck_Pillar_Back_Right",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x738"
+        "Offset": "0x790"
       },
       {
         "Name": "ShipAudio_Creak_MapDeck_Pillar_Mid_Left",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x740"
+        "Offset": "0x798"
       },
       {
         "Name": "ShipAudio_Creak_MapDeck_Mast_Mizzen",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x748"
+        "Offset": "0x7a0"
       },
       {
         "Name": "ShipAudio_Creak_MapDeck_Mast_Main",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x750"
+        "Offset": "0x7a8"
       },
       {
         "Name": "ShipAudio_Creak_MapDeck_Mast_Fore",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x758"
+        "Offset": "0x7b0"
       },
       {
         "Name": "ShipAudio_Creak_MapDeck_Pillar_Back_Left",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x760"
+        "Offset": "0x7b8"
       },
       {
         "Name": "ShipAudio_Creak_Captain_Back_Left",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x768"
+        "Offset": "0x7c0"
       },
       {
         "Name": "ShipAudio_Creak_Captain_Lamp",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x770"
+        "Offset": "0x7c8"
       },
       {
         "Name": "ShipAudio_Creak_Captain_Front_Right",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x778"
+        "Offset": "0x7d0"
       },
       {
         "Name": "ShipAudio_Creak_Captain_Front_Left",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x780"
+        "Offset": "0x7d8"
       },
       {
         "Name": "ShipAudio_Creak_Captain_Cage",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x788"
+        "Offset": "0x7e0"
       },
       {
         "Name": "ShipAudio_Creak_Captain_Back_Right",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x790"
+        "Offset": "0x7e8"
       },
       {
         "Name": "ShipAudio_Creak_BrigDeck_Centre",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x798"
+        "Offset": "0x7f0"
       },
       {
         "Name": "ShipAudio_Creak_BrigDeck_Pillar_Front_Right",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x7a0"
+        "Offset": "0x7f8"
       },
       {
         "Name": "ShipAudio_Creak_BrigDeck_Pillar_Front_Left",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x7a8"
+        "Offset": "0x800"
       },
       {
         "Name": "ShipAudio_Creak_BrigDeck_Pillar_Back_Right",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x7b0"
+        "Offset": "0x808"
       },
       {
         "Name": "ShipAudio_Creak_BrigDeck_Pillar_Back_Left",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x7b8"
+        "Offset": "0x810"
       },
       {
         "Name": "ShipAudio_Ambience_BelowDeck",
         "Type": "class ShipAudioEmitterComponent*",
         "Size": "0x8",
-        "Offset": "0x7c0"
+        "Offset": "0x818"
       },
       {
         "Name": "LargeBoat_AudioPortal_BrigDeckDoor",
         "Type": "class AudioPortalComponent*",
         "Size": "0x8",
-        "Offset": "0x7c8"
+        "Offset": "0x820"
       },
       {
         "Name": "LargeBoat_AudioPortal_MapDeckStairs",
         "Type": "class AudioPortalComponent*",
         "Size": "0x8",
-        "Offset": "0x7d0"
+        "Offset": "0x828"
       },
       {
         "Name": "LargeBoat_AudioPortal_MapDeckGrille",
         "Type": "class AudioPortalComponent*",
         "Size": "0x8",
-        "Offset": "0x7d8"
+        "Offset": "0x830"
       },
       {
         "Name": "LargeBoat_AudioPortal_CaptCab_DeckDoor",
         "Type": "class AudioPortalComponent*",
         "Size": "0x8",
-        "Offset": "0x7e0"
+        "Offset": "0x838"
       },
       {
         "Name": "LargeBoat_AudioPortal_CaptCab_SideDoor",
         "Type": "class AudioPortalComponent*",
         "Size": "0x8",
-        "Offset": "0x7e8"
+        "Offset": "0x840"
       }
     ]
   },

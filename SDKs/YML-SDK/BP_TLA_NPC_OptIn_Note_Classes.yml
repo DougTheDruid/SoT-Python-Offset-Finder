@@ -90,7 +90,7 @@ BP_TLA_NPC_OptIn_Note_C:
     Offset: '0x5e4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_U18KJ[0x3]
+  - Name: pad0x3_7FU8Y[0x3]
     Offset: '0x5e5'
     Size: '0x3'
     Type: char
@@ -114,7 +114,7 @@ BP_TLA_NPC_OptIn_Note_C:
     Offset: '0x5fc'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_XSW9V[0x3]
+  - Name: pad0x3_PH3HQ[0x3]
     Offset: '0x5fd'
     Size: '0x3'
     Type: char
@@ -126,7 +126,7 @@ BP_TLA_NPC_OptIn_Note_C:
     Offset: '0x608'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_KHIBO[0x7]
+  - Name: pad0x7_35L4S[0x7]
     Offset: '0x609'
     Size: '0x7'
     Type: char

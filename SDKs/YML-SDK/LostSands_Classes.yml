@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 LostSandsRowboatGunpowderBarrel:
   Attributes:
-  - Name: pad0xb8_NLCRL[0xb8]
+  - Name: pad0xb8_K7DMN[0xb8]
     Offset: '0x3c8'
     Size: '0xb8'
     Type: char
@@ -57,7 +57,7 @@ LostSandsRowboatGunpowderBarrel:
   - Name: DistanceFromNamedPoints
     Offset: '0x560'
     Size: '0x10'
-    Type: TArray<Float DistanceFromNamedPoints>
+    Type: TArray<float>
   - Name: RowboatDestroyedAtGoldenSandsStat
     Offset: '0x570'
     Size: '0x4'
@@ -66,7 +66,7 @@ LostSandsRowboatGunpowderBarrel:
     Offset: '0x574'
     Size: '0x4'
     Type: struct PlayerStat
-  - Name: pad0x90_RL65L[0x90]
+  - Name: pad0x90_ZEPGT[0x90]
     Offset: '0x578'
     Size: '0x90'
     Type: char

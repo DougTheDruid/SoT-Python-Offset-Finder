@@ -9,7 +9,7 @@ GameplayTag:
   ClassSize: '0x8'
 GameplayTagContainer:
   Attributes:
-  - Name: pad0x8_YIHS2[0x8]
+  - Name: pad0x8_YZLW3[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -20,11 +20,11 @@ GameplayTagContainer:
   - Name: Tags
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<struct FName>
+    Type: TArray<struct Name>
   ClassSize: '0x28'
 GameplayTagNode:
   Attributes:
-  - Name: pad0x78_RUP04[0x78]
+  - Name: pad0x78_8C9HV[0x78]
     Offset: '0x0'
     Size: '0x78'
     Type: char
@@ -35,7 +35,7 @@ GameplayTagQuery:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_UFALL[0x4]
+  - Name: pad0x4_R0T2O[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -46,7 +46,7 @@ GameplayTagQuery:
   - Name: QueryTokenStream
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Byte QueryTokenStream>
+    Type: TArray<char>
   - Name: UserDescription
     Offset: '0x28'
     Size: '0x10'

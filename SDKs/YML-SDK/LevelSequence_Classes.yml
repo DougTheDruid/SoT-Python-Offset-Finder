@@ -10,7 +10,7 @@ LevelSequence:
     Offset: '0x2b0'
     Size: '0xa0'
     Type: struct LevelSequenceObjectReferenceMap
-  - Name: pad0x50_ZA5B1[0x50]
+  - Name: pad0x50_KC5FW[0x50]
     Offset: '0x350'
     Size: '0x50'
     Type: char
@@ -20,7 +20,7 @@ LevelSequence:
   Super: MovieSceneSequence
 LevelSequenceActor:
   Attributes:
-  - Name: pad0x8_7Y9DS[0x8]
+  - Name: pad0x8_VK564[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -28,7 +28,7 @@ LevelSequenceActor:
     Offset: '0x3d0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_GE0OQ[0x7]
+  - Name: pad0x7_PAWL0[0x7]
     Offset: '0x3d1'
     Size: '0x7'
     Type: char
@@ -90,7 +90,7 @@ LevelSequenceBurnInOptions:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_Q4JQL[0x7]
+  - Name: pad0x7_A0NZ6[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -112,7 +112,7 @@ LevelSequencePlayer:
     Offset: '0x608'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x38_Z45BH[0x38]
+  - Name: pad0x38_IYWIK[0x38]
     Offset: '0x610'
     Size: '0x38'
     Type: char

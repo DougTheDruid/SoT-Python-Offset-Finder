@@ -1,12 +1,12 @@
 {
-  "KrakenAnimatedTentacleLocationInterface": {
+  "KrakenServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "KrakenServiceInterface": {
+  "KrakenAnimatedTentacleLocationInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

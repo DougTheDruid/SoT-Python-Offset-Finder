@@ -14,7 +14,7 @@ BP_FlyingCreature_C:
     Offset: '0x429'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_YGQ6V[0x2]
+  - Name: pad0x2_K4OUY[0x2]
     Offset: '0x42a'
     Size: '0x2'
     Type: char
@@ -50,7 +50,7 @@ BP_FlyingCreature_C:
     Offset: '0x45c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_ZKHI3[0x3]
+  - Name: pad0x3_S5O1O[0x3]
     Offset: '0x45d'
     Size: '0x3'
     Type: char
@@ -106,18 +106,18 @@ BP_FlyingCreature_C:
     Offset: '0x498'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_FJ5WI[0x4]
+  - Name: pad0x4_SNEEZ[0x4]
     Offset: '0x49c'
     Size: '0x4'
     Type: char
   - Name: SelectedCreatureType
     Offset: '0x4a0'
     Size: '0x10'
-    Type: TArray<Assetclass SelectedCreatureType>
+    Type: TArray<Class>
   - Name: Seagull
     Offset: '0x4b0'
     Size: '0x10'
-    Type: TArray<Assetclass Seagull>
+    Type: TArray<Class>
   - Name: Size
     Offset: '0x4c0'
     Size: '0x4'
@@ -137,20 +137,20 @@ BP_FlyingCreature_C:
   - Name: Skellygull_01
     Offset: '0x4d8'
     Size: '0x10'
-    Type: TArray<Assetclass Skellygull_01>
+    Type: TArray<Class>
   - Name: Bats_01
     Offset: '0x4e8'
     Size: '0x10'
-    Type: TArray<Assetclass Bats_01>
+    Type: TArray<Class>
   - Name: Parrot_01
     Offset: '0x4f8'
     Size: '0x10'
-    Type: TArray<Assetclass Parrot_01>
+    Type: TArray<Class>
   - Name: ScaleInDistance
     Offset: '0x508'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_SL3OB[0x3]
+  - Name: pad0x3_PKX9Y[0x3]
     Offset: '0x509'
     Size: '0x3'
     Type: char
@@ -174,7 +174,7 @@ BP_FlyingCreature_C:
     Offset: '0x51c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_PJEQJ[0x3]
+  - Name: pad0x3_1DJAT[0x3]
     Offset: '0x51d'
     Size: '0x3'
     Type: char

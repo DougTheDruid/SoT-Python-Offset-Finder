@@ -1,93 +1,4 @@
 {
-  "MemoryVisualiserCategory": {
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "CategoryName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CategoryStats",
-        "Type": "TArray<struct MemoryVisualiserStat>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "CategoryClasses",
-        "Type": "TArray<struct MemoryVisualiserClass>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "CollectOnServer",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x3_L3LB7[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x31"
-      },
-      {
-        "Name": "XboxOneBudgetMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "XboxOneSBudgetMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "XboxOneXBudgetMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "PCLowSpecBudgetMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "PCMidSpecBudgetMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "PCHighSpecBudgetMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "PCUltraSpecBudgetMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4c"
-      },
-      {
-        "Name": "MemoryUsageMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "pad0x4_GO4VE[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x54"
-      }
-    ]
-  },
   "MemoryVisualiserClass": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -104,7 +15,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_O1M09[0x7]",
+        "Name": "pad0x7_YK6ZN[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -122,10 +33,32 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_BLZFO[0x4]",
+        "Name": "pad0x4_OCPFF[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
+      }
+    ]
+  },
+  "StaticMeshComponentList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Components",
+        "Type": "TArray<class StaticMeshComponent*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StaticMeshActorList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Actors",
+        "Type": "TArray<class StaticMeshActor*>",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -151,7 +84,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_EDBNJ[0x4]",
+        "Name": "pad0x4_F5VVM[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -277,25 +210,92 @@
       }
     ]
   },
-  "StaticMeshComponentList": {
-    "ClassSize": "0x10",
+  "MemoryVisualiserCategory": {
+    "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "Components",
-        "Type": "TArray<class StaticMeshComponent*>",
+        "Name": "CategoryName",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "StaticMeshActorList": {
-    "ClassSize": "0x10",
-    "Attributes": [
+      },
       {
-        "Name": "Actors",
-        "Type": "TArray<class StaticMeshActor*>",
+        "Name": "CategoryStats",
+        "Type": "TArray<struct MemoryVisualiserStat>",
         "Size": "0x10",
-        "Offset": "0x0"
+        "Offset": "0x10"
+      },
+      {
+        "Name": "CategoryClasses",
+        "Type": "TArray<struct MemoryVisualiserClass>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "CollectOnServer",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x3_2I4H3[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x31"
+      },
+      {
+        "Name": "XboxOneBudgetMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "XboxOneSBudgetMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "XboxOneXBudgetMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "PCLowSpecBudgetMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "PCMidSpecBudgetMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "PCHighSpecBudgetMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "PCUltraSpecBudgetMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
+        "Name": "MemoryUsageMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x4_RO4HD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x54"
       }
     ]
   },

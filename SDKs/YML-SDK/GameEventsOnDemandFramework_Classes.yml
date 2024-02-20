@@ -22,11 +22,11 @@ GameEventAvailabilityParamsDataAsset:
     Offset: '0x80'
     Size: '0x1'
     Type: bool
-  - Name: ShouldTrackCrewsEngagingEmergently
+  - Name: ShouldManageEmergentCrewsOnDeactivate
     Offset: '0x81'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_OJRL4[0x2]
+  - Name: pad0x2_U173N[0x2]
     Offset: '0x82'
     Size: '0x2'
     Type: char
@@ -42,7 +42,7 @@ GameEventAvailabilityParamsDataAsset:
     Offset: '0x89'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_0QZOZ[0x2]
+  - Name: pad0x2_9D627[0x2]
     Offset: '0x8a'
     Size: '0x2'
     Type: char
@@ -68,29 +68,25 @@ GameEventOnDemandAvailabilityHandler:
     Offset: '0x38'
     Size: '0x8'
     Type: class UClass*
-  - Name: Company
+  - Name: pad0x60_8KRKO[0x60]
     Offset: '0x40'
-    Size: '0x8'
-    Type: class UClass*
-  - Name: pad0x10_FI68B[0x10]
-    Offset: '0x48'
-    Size: '0x10'
+    Size: '0x60'
     Type: char
   - Name: CompletedState
-    Offset: '0x58'
+    Offset: '0xa0'
     Size: '0x1'
     Type: byte
-  - Name: pad0xcf_TNATZ[0xcf]
-    Offset: '0x59'
-    Size: '0xcf'
+  - Name: pad0xd7_KM3XH[0xd7]
+    Offset: '0xa1'
+    Size: '0xd7'
     Type: char
-  ClassSize: '0x100'
-  FullSize: '0x128'
+  ClassSize: '0x150'
+  FullSize: '0x178'
   InheritedSize: '0x28'
   Super: Object
 GameEventOnDemandAvailabilityStateTracker:
   Attributes:
-  - Name: pad0x88_SIFU7[0x88]
+  - Name: pad0x88_94RY7[0x88]
     Offset: '0x28'
     Size: '0x88'
     Type: char
@@ -106,7 +102,7 @@ GameEventOnDemandAvailabilityStateTracker:
     Offset: '0xc8'
     Size: '0x10'
     Type: TArray<struct Guid>
-  - Name: pad0x88_63GGU[0x88]
+  - Name: pad0x88_QUPLZ[0x88]
     Offset: '0xd8'
     Size: '0x88'
     Type: char
@@ -146,7 +142,7 @@ GameEventsOnDemandLoserTunnelServiceInterface:
   Super: Interface
 WaitForGameEventOnDemandToCompleteStep:
   Attributes:
-  - Name: pad0x90_OD6PM[0x90]
+  - Name: pad0x90_A319T[0x90]
     Offset: '0x98'
     Size: '0x90'
     Type: char

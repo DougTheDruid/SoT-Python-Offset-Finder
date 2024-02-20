@@ -1,35 +1,117 @@
 {
-  "RopeCatenaryShapeParams": {
-    "ClassSize": "0x18",
+  "RiggingSystemPulleyData": {
+    "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "Length",
-        "Type": "struct RopeCatenaryLengthParams",
+        "Name": "AttachmentSag",
+        "Type": "TArray<float>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "Slope",
-        "Type": "struct RopeCatenarySlopeBlendParams",
-        "Size": "0x8",
+        "Name": "AttachmentLength",
+        "Type": "TArray<float>",
+        "Size": "0x10",
         "Offset": "0x10"
+      },
+      {
+        "Name": "Scale",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "ScaledOffset",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ScaledRadius",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "MeshIDs",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x50"
       }
     ]
   },
-  "RopeCatenarySlopeBlendParams": {
+  "RopeCatenaryLengthPair": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "MinSlopeForTautBlend",
+        "Name": "Taut",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "MaxSlopeForTautBlend",
+        "Name": "Catenary",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
+      }
+    ]
+  },
+  "PulleyVisualParams": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Mesh",
+        "Type": "class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Scale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "RopeStyleParams": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Mesh",
+        "Type": "class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DiffuseTexture",
+        "Type": "class Texture2D*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "NormalTexture",
+        "Type": "class Texture2D*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ShadowLOD",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_08BIC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       }
     ]
   },
@@ -59,6 +141,40 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc"
+      }
+    ]
+  },
+  "RopeVisualParams": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "Thickness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UVScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Roughness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "RiggingSystemLine": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_6IV2C[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -95,10 +211,67 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_I5IY2[0x3]",
+        "Name": "pad0x3_L5Z67[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5"
+      }
+    ]
+  },
+  "RopeCatenarySlopeBlendParams": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MinSlopeForTautBlend",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxSlopeForTautBlend",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "RopeCatenaryShapeParams": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Length",
+        "Type": "struct RopeCatenaryLengthParams",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Slope",
+        "Type": "struct RopeCatenarySlopeBlendParams",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "RiggingSystemPulleyAttachmentParams": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "Visuals",
+        "Type": "struct RopeVisualParams",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Length",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "Sag",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
       }
     ]
   },
@@ -167,139 +340,6 @@
       }
     ]
   },
-  "RiggingSystemLine": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_BMWYO[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "RiggingSystemPulleyData": {
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "AttachmentSag",
-        "Type": "TArray<Float AttachmentSag>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AttachmentLength",
-        "Type": "TArray<Float AttachmentLength>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Scale",
-        "Type": "TArray<Float Scale>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "ScaledOffset",
-        "Type": "TArray<Float ScaledOffset>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "ScaledRadius",
-        "Type": "TArray<Float ScaledRadius>",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "MeshIDs",
-        "Type": "TArray<Int MeshIDs>",
-        "Size": "0x10",
-        "Offset": "0x50"
-      }
-    ]
-  },
-  "RopeVisualParams": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "Thickness",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UVScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Roughness",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "RopeStyleParams": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Mesh",
-        "Type": "class StaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DiffuseTexture",
-        "Type": "class Texture2D*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "NormalTexture",
-        "Type": "class Texture2D*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ShadowLOD",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x4_GDE9C[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      }
-    ]
-  },
-  "PulleyVisualParams": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Mesh",
-        "Type": "class StaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Scale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
   "RiggingSystemPulleyParams": {
     "ClassSize": "0x50",
     "Attributes": [
@@ -316,7 +356,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_SM2EM[0x4]",
+        "Name": "pad0x4_6SCJU[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
@@ -334,33 +374,10 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_7BLF9[0x4]",
+        "Name": "pad0x4_I92DY[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
-      }
-    ]
-  },
-  "RiggingSystemPulleyAttachmentParams": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "Visuals",
-        "Type": "struct RopeVisualParams",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Length",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "Sag",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
       }
     ]
   },
@@ -398,7 +415,7 @@
         "Offset": "0x5c"
       },
       {
-        "Name": "pad0x4_S9TE9[0x4]",
+        "Name": "pad0x4_5ST21[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x74"
@@ -419,23 +436,6 @@
         "Type": "TArray<struct RiggingSystemLineParams>",
         "Size": "0x10",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "RopeCatenaryLengthPair": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Taut",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Catenary",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
       }
     ]
   },

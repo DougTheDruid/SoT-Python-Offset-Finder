@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 TriggerPlayerControllerHitNotificationNetworkEvent:
   Attributes:
-  - Name: pad0x10_3BP36[0x10]
+  - Name: pad0x10_RHRJU[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -14,7 +14,7 @@ TriggerPlayerControllerHitNotificationNetworkEvent:
     Offset: '0x11'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_YCQRQ[0x6]
+  - Name: pad0x6_4BUBJ[0x6]
     Offset: '0x12'
     Size: '0x6'
     Type: char

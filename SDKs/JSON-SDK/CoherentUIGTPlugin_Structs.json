@@ -1,39 +1,4 @@
 {
-  "CoherentUIGTLoadingScreenSettings": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "MinimumLoadingScreenDisplayTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "bAutoCompleteWhenLoadingCompletes",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "bWaitForManualStop",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x5"
-      },
-      {
-        "Name": "pad0x2_T9S5I[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x6"
-      },
-      {
-        "Name": "URL",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "CoherentUIGTViewInfo": {
     "ClassSize": "0x14",
     "Attributes": [
@@ -56,7 +21,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_GDU86[0x3]",
+        "Name": "pad0x3_WIGSF[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
@@ -72,6 +37,41 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "CoherentUIGTLoadingScreenSettings": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MinimumLoadingScreenDisplayTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "bAutoCompleteWhenLoadingCompletes",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "bWaitForManualStop",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5"
+      },
+      {
+        "Name": "pad0x2_ESOHX[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x6"
+      },
+      {
+        "Name": "URL",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },

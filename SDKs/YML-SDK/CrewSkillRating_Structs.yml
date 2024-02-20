@@ -5,7 +5,7 @@ GetPvPSkillForCrewRequestModel:
   - Name: CrewMemberIds
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str CrewMemberIds>
+    Type: TArray<String>
   ClassSize: '0x10'
 GetPvPSkillForCrewResponseModel:
   Attributes:
@@ -19,11 +19,11 @@ ReportMatchConclusionRequest:
   - Name: WinningUserIds
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<Str WinningUserIds>
+    Type: TArray<String>
   - Name: LosingUserIds
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<Str LosingUserIds>
+    Type: TArray<String>
   ClassSize: '0x20'
 ReportMatchConclusionResponse:
   Attributes:

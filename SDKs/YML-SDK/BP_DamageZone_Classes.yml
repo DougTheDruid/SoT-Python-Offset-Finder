@@ -3,42 +3,42 @@
 BP_DamageZone_C:
   Attributes:
   - Name: UberGraphFrame
-    Offset: '0x820'
+    Offset: '0x878'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
   - Name: Repair Tag
-    Offset: '0x828'
+    Offset: '0x880'
     Size: '0x8'
     Type: struct FName
   - Name: RepairGroup
-    Offset: '0x830'
+    Offset: '0x888'
     Size: '0x10'
     Type: struct BP_InternalDamageGroup
   - Name: ExternalHitBufferIndex
-    Offset: '0x840'
+    Offset: '0x898'
     Size: '0x4'
     Type: int
   - Name: MaxStoredHits
-    Offset: '0x844'
+    Offset: '0x89c'
     Size: '0x4'
     Type: int
   - Name: Deferred Decals
-    Offset: '0x848'
+    Offset: '0x8a0'
     Size: '0x10'
     Type: TArray<class DecalComponent*>
   - Name: ClientUpdateEventCount
-    Offset: '0x858'
+    Offset: '0x8b0'
     Size: '0x4'
     Type: int
   - Name: ExternalDecalBufferIndex
-    Offset: '0x85c'
+    Offset: '0x8b4'
     Size: '0x4'
     Type: int
   - Name: HasBeenInitialized
-    Offset: '0x860'
+    Offset: '0x8b8'
     Size: '0x1'
     Type: bool
   ClassSize: '0x41'
-  FullSize: '0x861'
-  InheritedSize: '0x820'
+  FullSize: '0x8b9'
+  InheritedSize: '0x878'
   Super: DamageZone

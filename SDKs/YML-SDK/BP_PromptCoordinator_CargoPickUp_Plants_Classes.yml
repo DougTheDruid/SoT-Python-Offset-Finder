@@ -6,9 +6,9 @@ BP_PromptCoordinator_CargoPickUp_Plants_C:
     Offset: '0x138'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
-  - Name: pad0x6f_4X8QL[0x6f]
+  - Name: pad0xb0_SHAHW[0xb0]
     Offset: '0x140'
-    Size: '0x6f'
+    Size: '0xb0'
     Type: char
   - Name: HandleForCargoPickUp
     Offset: '0x140'
@@ -18,7 +18,7 @@ BP_PromptCoordinator_CargoPickUp_Plants_C:
     Offset: '0x198'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_RIHUW[0x7]
+  - Name: pad0x7_0ILSI[0x7]
     Offset: '0x199'
     Size: '0x7'
     Type: char
@@ -30,14 +30,14 @@ BP_PromptCoordinator_CargoPickUp_Plants_C:
     Offset: '0x210'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_F4K7F[0x7]
+  - Name: pad0x7_JXSDU[0x7]
     Offset: '0x211'
     Size: '0x7'
     Type: char
   - Name: PlantType
     Offset: '0x218'
     Size: '0x10'
-    Type: TArray<struct FName>
+    Type: TArray<struct Name>
   - Name: Result
     Offset: '0x228'
     Size: '0x1'

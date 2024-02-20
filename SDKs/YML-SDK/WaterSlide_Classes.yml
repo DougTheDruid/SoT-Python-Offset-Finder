@@ -3,28 +3,28 @@
 InteractableZipline:
   Attributes:
   - Name: ZiplineStartInteractionPoint
-    Offset: '0x768'
-    Size: '0x8'
-    Type: class InteractableComponentWithActionRules*
-  - Name: ZiplineEndInteractionPoint
     Offset: '0x770'
     Size: '0x8'
     Type: class InteractableComponentWithActionRules*
-  - Name: PressedNotificationInputId
+  - Name: ZiplineEndInteractionPoint
     Offset: '0x778'
+    Size: '0x8'
+    Type: class InteractableComponentWithActionRules*
+  - Name: PressedNotificationInputId
+    Offset: '0x780'
     Size: '0x8'
     Type: class UClass*
   - Name: AttachPointLocationOffset
-    Offset: '0x780'
+    Offset: '0x788'
     Size: '0x8'
     Type: struct Vector2D
   ClassSize: '0x20'
-  FullSize: '0x788'
-  InheritedSize: '0x768'
+  FullSize: '0x790'
+  InheritedSize: '0x770'
   Super: Zipline
 Ride:
   Attributes:
-  - Name: pad0x8_0D0CG[0x8]
+  - Name: pad0x8_FFO9Q[0x8]
     Offset: '0x3c8'
     Size: '0x8'
     Type: char
@@ -42,7 +42,7 @@ Ride:
   Super: Actor
 RidePlayerComponent:
   Attributes:
-  - Name: pad0x8_0Y8OJ[0x8]
+  - Name: pad0x8_2DPDG[0x8]
     Offset: '0xe0'
     Size: '0x8'
     Type: char
@@ -58,7 +58,7 @@ RidePlayerComponent:
     Offset: '0xf8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_E1M7H[0x4]
+  - Name: pad0x4_CCPMA[0x4]
     Offset: '0xfc'
     Size: '0x4'
     Type: char
@@ -82,7 +82,7 @@ RidePlayerComponent:
     Offset: '0x120'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x14_QU1KQ[0x14]
+  - Name: pad0x14_MOIQZ[0x14]
     Offset: '0x12c'
     Size: '0x14'
     Type: char
@@ -132,7 +132,7 @@ WaterSlide:
     Offset: '0x408'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_9FRNZ[0x3]
+  - Name: pad0x3_AO9WI[0x3]
     Offset: '0x409'
     Size: '0x3'
     Type: char
@@ -144,7 +144,7 @@ WaterSlide:
     Offset: '0x418'
     Size: '0x8'
     Type: class WaterSlideAudioParams*
-  - Name: pad0x8_MA376[0x8]
+  - Name: pad0x8_FRFPF[0x8]
     Offset: '0x420'
     Size: '0x8'
     Type: char
@@ -194,7 +194,7 @@ WaterSlideAudioParams:
   Super: DataAsset
 WaterSlideInputComponent:
   Attributes:
-  - Name: pad0x10_HIVSO[0x10]
+  - Name: pad0x10_9CD04[0x10]
     Offset: '0x2a0'
     Size: '0x10'
     Type: char
@@ -228,7 +228,7 @@ Zipline:
     Offset: '0x3e1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_8KO45[0x2]
+  - Name: pad0x2_UPVPC[0x2]
     Offset: '0x3e2'
     Size: '0x2'
     Type: char
@@ -256,7 +256,7 @@ Zipline:
     Offset: '0x70c'
     Size: '0x8'
     Type: struct Vector2D
-  - Name: pad0x2c_JDMGE[0x2c]
+  - Name: pad0x2c_APKIE[0x2c]
     Offset: '0x714'
     Size: '0x2c'
     Type: char
@@ -276,12 +276,16 @@ Zipline:
     Offset: '0x758'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x8_QOVTF[0x8]
+  - Name: PlayerAttachStat
     Offset: '0x760'
-    Size: '0x8'
+    Size: '0x4'
+    Type: struct PlayerStat
+  - Name: pad0xc_29HE9[0xc]
+    Offset: '0x764'
+    Size: '0xc'
     Type: char
-  ClassSize: '0x388'
-  FullSize: '0x768'
+  ClassSize: '0x390'
+  FullSize: '0x770'
   InheritedSize: '0x3e0'
   Super: Ride
 ZiplineActionStateId:
@@ -344,7 +348,7 @@ ZiplineFXParams:
   Super: DataAsset
 ZiplineInputComponent:
   Attributes:
-  - Name: pad0x8_HPN6A[0x8]
+  - Name: pad0x8_DXTDI[0x8]
     Offset: '0x2a0'
     Size: '0x8'
     Type: char

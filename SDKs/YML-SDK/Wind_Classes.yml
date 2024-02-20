@@ -8,7 +8,7 @@ DebugWindInterface:
   Super: Interface
 DebugWindService:
   Attributes:
-  - Name: pad0x10_T0KOE[0x10]
+  - Name: pad0x10_O6EVJ[0x10]
     Offset: '0x500'
     Size: '0x10'
     Type: char
@@ -18,7 +18,7 @@ DebugWindService:
   Super: WindService
 MockWindService:
   Attributes:
-  - Name: pad0x18_1PBRO[0x18]
+  - Name: pad0x18_Z3EY5[0x18]
     Offset: '0x28'
     Size: '0x18'
     Type: char
@@ -28,21 +28,21 @@ MockWindService:
   Super: Object
 TestWindInterface:
   Attributes:
-  - Name: pad0x30_2BICP[0x30]
+  - Name: pad0x30_D11BF[0x30]
     Offset: '0x28'
     Size: '0x30'
     Type: char
   - Name: WindZones
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Interface WindZones>
+    Type: TArray<class Interface*>
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'
   Super: Object
 TestWindZone:
   Attributes:
-  - Name: pad0x28_PHG6V[0x28]
+  - Name: pad0x28_1PKIU[0x28]
     Offset: '0x28'
     Size: '0x28'
     Type: char
@@ -70,7 +70,7 @@ WindInterface:
   Super: Interface
 WindService:
   Attributes:
-  - Name: pad0x10_KTM62[0x10]
+  - Name: pad0x10_HURES[0x10]
     Offset: '0x3c8'
     Size: '0x10'
     Type: char
@@ -78,7 +78,7 @@ WindService:
     Offset: '0x3d8'
     Size: '0x8'
     Type: class WindDirectionalSource*
-  - Name: pad0x10_TOD4U[0x10]
+  - Name: pad0x10_IR24M[0x10]
     Offset: '0x3e0'
     Size: '0x10'
     Type: char
@@ -90,14 +90,14 @@ WindService:
     Offset: '0x3f4'
     Size: '0x4'
     Type: float
-  - Name: pad0xe8_0H0ZX[0xe8]
+  - Name: pad0xe8_ZRW5J[0xe8]
     Offset: '0x3f8'
     Size: '0xe8'
     Type: char
   - Name: WindZones
     Offset: '0x4e0'
     Size: '0x10'
-    Type: TArray<Interface WindZones>
+    Type: TArray<class Interface*>
   - Name: ExtraWind
     Offset: '0x4f0'
     Size: '0x10'
@@ -114,7 +114,7 @@ WindServiceParamsFunctionLibrary:
   Super: BlueprintFunctionLibrary
 WindZoneComponent:
   Attributes:
-  - Name: pad0x8_0HA2N[0x8]
+  - Name: pad0x8_BNNNF[0x8]
     Offset: '0x2e0'
     Size: '0x8'
     Type: char
@@ -126,7 +126,7 @@ WindZoneComponent:
     Offset: '0x358'
     Size: '0x10'
     Type: struct WindZoneParams
-  - Name: pad0x8_DSDG2[0x8]
+  - Name: pad0x8_9295W[0x8]
     Offset: '0x368'
     Size: '0x8'
     Type: char

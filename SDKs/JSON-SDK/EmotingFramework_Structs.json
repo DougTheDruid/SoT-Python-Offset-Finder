@@ -1,89 +1,63 @@
 {
-  "EmoteData": {
-    "ClassSize": "0xa0",
+  "EventEndEmoteAnimation": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "EmoteId",
-        "Type": "struct EmoteId",
-        "Size": "0x8",
+        "Name": "pad0x1_W0UEA[0x1]",
+        "Type": "char",
+        "Size": "0x1",
         "Offset": "0x0"
-      },
-      {
-        "Name": "EmoteDisplayName",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "AudioDescription",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "DelayBeforeAllowingExit",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "VerticalOffsetFactorWhenZoomed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x7c"
-      },
-      {
-        "Name": "HideNameplate",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "pad0x7_THHAC[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x81"
-      },
-      {
-        "Name": "EmotePropDataAsset",
-        "Type": "class EmotePropData*",
-        "Size": "0x8",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "CanPlayInSuccession",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "ShowDescriptionInTextChat",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x91"
-      },
-      {
-        "Name": "pad0x6_V0SV2[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x92"
-      },
-      {
-        "Name": "CustomSpringArmParamsAsset",
-        "Type": "class AthenaSpringArmComponentParams*",
-        "Size": "0x8",
-        "Offset": "0x98"
       }
     ]
   },
-  "EmoteId": {
-    "ClassSize": "0x8",
+  "EventEmoteCompleted": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "EmoteId",
+        "Name": "EmoteName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_MRA35[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventDisableLookAtEmoteCamera": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_S4OUH[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EmoteDiceOutcomeTelemetryEvent": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "MaxLimit",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RollNumber",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "OrientationUsed",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x8"
       }
     ]
   },
@@ -103,7 +77,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_NXT8I[0x7]",
+        "Name": "pad0x7_31H65[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -127,10 +101,67 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_714P8[0x4]",
+        "Name": "pad0x4_BUQKI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
+      }
+    ]
+  },
+  "EmoteRandomObjectOutcomeTelemetryEvent": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "MeshName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Transform",
+        "Type": "struct Transform",
+        "Size": "0x30",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "TextureParameterName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "TextureParameterValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0xc_7VUCY[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x54"
+      }
+    ]
+  },
+  "EventEnableLookAtEmoteCamera": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_3OQ4W[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EmoteId": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "EmoteId",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },
@@ -179,49 +210,87 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_SVA5P[0x3]",
+        "Name": "pad0x3_NFVN5[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
       }
     ]
   },
-  "EventEndEmoteAnimation": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_ENTYR[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventEmoteSwapped": {
+  "EmoteData": {
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "EmoteData",
-        "Type": "struct EmoteData",
-        "Size": "0xa0",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventEmoteCompleted": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "EmoteName",
-        "Type": "struct FName",
+        "Name": "EmoteId",
+        "Type": "struct EmoteId",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_9JBSK[0x4]",
-        "Type": "char",
-        "Size": "0x4",
+        "Name": "EmoteDisplayName",
+        "Type": "struct FText",
+        "Size": "0x38",
         "Offset": "0x8"
+      },
+      {
+        "Name": "AudioDescription",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "DelayBeforeAllowingExit",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "VerticalOffsetFactorWhenZoomed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x7c"
+      },
+      {
+        "Name": "HideNameplate",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x7_LO9ZB[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x81"
+      },
+      {
+        "Name": "EmotePropDataAsset",
+        "Type": "class EmotePropData*",
+        "Size": "0x8",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "CanPlayInSuccession",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "ShowDescriptionInTextChat",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x91"
+      },
+      {
+        "Name": "pad0x6_0JRPK[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x92"
+      },
+      {
+        "Name": "CustomSpringArmParamsAsset",
+        "Type": "class AthenaSpringArmComponentParams*",
+        "Size": "0x8",
+        "Offset": "0x98"
       }
     ]
   },
@@ -258,90 +327,21 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x7_2DUDK[0x7]",
+        "Name": "pad0x7_0AYR6[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xa9"
       }
     ]
   },
-  "EventDisableLookAtEmoteCamera": {
-    "ClassSize": "0x1",
+  "EventEmoteSwapped": {
+    "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0x1_JQZ9I[0x1]",
-        "Type": "char",
-        "Size": "0x1",
+        "Name": "EmoteData",
+        "Type": "struct EmoteData",
+        "Size": "0xa0",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "EventEnableLookAtEmoteCamera": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_7EVFF[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EmoteDiceOutcomeTelemetryEvent": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "MaxLimit",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RollNumber",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "OrientationUsed",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EmoteRandomObjectOutcomeTelemetryEvent": {
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "MeshName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Transform",
-        "Type": "struct Transform",
-        "Size": "0x30",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "TextureParameterName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "TextureParameterValue",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "pad0xc_7YEHZ[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x54"
       }
     ]
   },

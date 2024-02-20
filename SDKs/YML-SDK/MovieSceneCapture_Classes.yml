@@ -22,7 +22,7 @@ CompositionGraphCaptureSettings:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_7JWFG[0x3]
+  - Name: pad0x3_RCNYU[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -34,7 +34,7 @@ CompositionGraphCaptureSettings:
     Offset: '0x40'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_EUK3N[0x7]
+  - Name: pad0x7_UGTHC[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
@@ -48,7 +48,7 @@ CompositionGraphCaptureSettings:
   Super: MovieSceneCaptureProtocolSettings
 FrameGrabberProtocolSettings:
   Attributes:
-  - Name: pad0x8_Q9UCG[0x8]
+  - Name: pad0x8_TQ02E[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -62,7 +62,7 @@ ImageCaptureSettings:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_17VHC[0x4]
+  - Name: pad0x4_5HKAO[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -76,7 +76,7 @@ LevelCapture:
     Offset: '0x1e0'
     Size: '0x1'
     Type: bool
-  - Name: pad0xb_RQB4M[0xb]
+  - Name: pad0xb_LB5BN[0xb]
     Offset: '0x1e1'
     Size: '0xb'
     Type: char
@@ -84,7 +84,7 @@ LevelCapture:
     Offset: '0x1ec'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x4_B1YLJ[0x4]
+  - Name: pad0x4_02JBY[0x4]
     Offset: '0x1fc'
     Size: '0x4'
     Type: char
@@ -94,7 +94,7 @@ LevelCapture:
   Super: MovieSceneCapture
 MovieSceneCapture:
   Attributes:
-  - Name: pad0x10_K1TXE[0x10]
+  - Name: pad0x10_KGUEL[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -118,7 +118,7 @@ MovieSceneCapture:
     Offset: '0x99'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_CWGJB[0x6]
+  - Name: pad0x6_CK50J[0x6]
     Offset: '0x9a'
     Size: '0x6'
     Type: char
@@ -130,7 +130,7 @@ MovieSceneCapture:
     Offset: '0xb0'
     Size: '0x10'
     Type: struct FString
-  - Name: pad0x120_W46AA[0x120]
+  - Name: pad0x120_VJBSR[0x120]
     Offset: '0xc0'
     Size: '0x120'
     Type: char
@@ -162,7 +162,7 @@ VideoCaptureSettings:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_MHGW3[0x3]
+  - Name: pad0x3_IODXD[0x3]
     Offset: '0x31'
     Size: '0x3'
     Type: char

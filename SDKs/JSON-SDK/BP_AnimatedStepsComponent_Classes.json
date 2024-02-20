@@ -12,20 +12,20 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0xb7_XC0XR[0xb7]",
+        "Name": "pad0x102_WFWTK[0x102]",
         "Type": "char",
-        "Size": "0xb7",
+        "Size": "0x102",
         "Offset": "0xf8"
       },
       {
         "Name": "BoxDelays",
-        "Type": "TArray<Float BoxDelays>",
+        "Type": "TArray<float>",
         "Size": "0x10",
         "Offset": "0xf8"
       },
       {
         "Name": "BoxTargetZs",
-        "Type": "TArray<Float BoxTargetZs>",
+        "Type": "TArray<float>",
         "Size": "0x10",
         "Offset": "0x108"
       },

@@ -1,16 +1,5 @@
 {
-  "CustomServerLocalisationModel": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_GQZR6[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CustomServerLocalisationData": {
+  "CustomServerClientData": {
     "ClassSize": "0x20",
     "Attributes": [
       {
@@ -20,10 +9,21 @@
         "Offset": "0x0"
       },
       {
-        "Name": "LocaleEntries",
-        "Type": "TArray<struct LocPairData>",
+        "Name": "pad0x10_RDR2F[0x10]",
+        "Type": "char",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "CustomServerLocalisationModel": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_7LPLQ[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
       }
     ]
   },
@@ -44,7 +44,7 @@
       }
     ]
   },
-  "CustomServerClientData": {
+  "CustomServerLocalisationData": {
     "ClassSize": "0x20",
     "Attributes": [
       {
@@ -54,8 +54,8 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x10_T4349[0x10]",
-        "Type": "char",
+        "Name": "LocaleEntries",
+        "Type": "TArray<struct LocPairData>",
         "Size": "0x10",
         "Offset": "0x10"
       }

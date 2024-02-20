@@ -1,4 +1,26 @@
 {
+  "RareGameServiceManagerServiceRegisteredEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ServiceObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "RareGameServiceManagerStateChangedEvent": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Name": "pad0x2_6DVFS[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "RareGameServiceSpecification": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -27,32 +49,10 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x6_IPPFC[0x6]",
+        "Name": "pad0x6_VJLI3[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x12"
-      }
-    ]
-  },
-  "RareGameServiceManagerServiceRegisteredEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ServiceObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "RareGameServiceManagerStateChangedEvent": {
-    "ClassSize": "0x2",
-    "Attributes": [
-      {
-        "Name": "pad0x2_H7S30[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x0"
       }
     ]
   },

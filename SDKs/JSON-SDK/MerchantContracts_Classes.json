@@ -6,6 +6,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "MerchantContractsServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "MerchantContractsBlueprintLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
@@ -13,7 +20,27 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MerchantContractsServiceInterface": {
+  "PlayerMerchantContractsComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x8_5MMA3[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "Contracts",
+        "Type": "TArray<struct PlayerMerchantContract>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "PlayerMerchantContractsInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -27,7 +54,7 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x8_AEDLA[0x8]",
+        "Name": "pad0x8_702HH[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -39,37 +66,10 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x98_9W2FS[0x98]",
+        "Name": "pad0x98_ABJW4[0x98]",
         "Type": "char",
         "Size": "0x98",
         "Offset": "0x40"
-      }
-    ]
-  },
-  "PlayerMerchantContractsInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PlayerMerchantContractsComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_JTOEH[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "Contracts",
-        "Type": "TArray<struct PlayerMerchantContract>",
-        "Size": "0x10",
-        "Offset": "0xd0"
       }
     ]
   },

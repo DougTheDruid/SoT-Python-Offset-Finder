@@ -1,83 +1,77 @@
 {
-  "StructSerializerTestStruct": {
-    "ClassSize": "0xc8",
+  "StructSerializerNumericTestStruct": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "Numerics",
-        "Type": "struct StructSerializerNumericTestStruct",
-        "Size": "0x30",
+        "Name": "pad0x4_5SF6L[0x4]",
+        "Type": "char",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "Booleans",
-        "Type": "struct StructSerializerBooleanTestStruct",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "Objects",
-        "Type": "struct StructSerializerObjectTestStruct",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "Builtins",
-        "Type": "struct StructSerializerBuiltinTestStruct",
-        "Size": "0x40",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "Arrays",
-        "Type": "struct StructSerializerArrayTestStruct",
-        "Size": "0x40",
-        "Offset": "0x88"
-      }
-    ]
-  },
-  "StructSerializerArrayTestStruct": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "Int32Array",
-        "Type": "TArray<Int Int32Array>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "StaticSingleElement",
+        "Name": "Int32",
         "Type": "int",
         "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "UInt8",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x10"
       },
       {
-        "Name": "StaticInt32Array",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "pad0x8_XU0YS[0x8]",
+        "Name": "pad0x1_0XLKU[0x1]",
         "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x18"
+        "Size": "0x1",
+        "Offset": "0x11"
       },
       {
-        "Name": "StaticFloatArray",
+        "Name": "Float",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20"
       },
       {
-        "Name": "pad0xc_7OFIN[0xc]",
+        "Name": "pad0x4_GSYSU[0x4]",
         "Type": "char",
-        "Size": "0xc",
+        "Size": "0x4",
         "Offset": "0x24"
       },
       {
-        "Name": "VectorArray",
-        "Type": "TArray<struct Vector>",
-        "Size": "0x10",
-        "Offset": "0x30"
+        "Name": "Double",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "StructSerializerBooleanTestStruct": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "BoolFalse",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BoolTrue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "pad0x2_39GJ6[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x2"
+      },
+      {
+        "Name": "pad0x4_TMYPA[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },
@@ -116,6 +110,53 @@
       }
     ]
   },
+  "StructSerializerArrayTestStruct": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "Int32Array",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "StaticSingleElement",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "StaticInt32Array",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "pad0x8_5O2LA[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "StaticFloatArray",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0xc_S7WUU[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "VectorArray",
+        "Type": "TArray<struct Vector>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "StructSerializerObjectTestStruct": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -133,79 +174,38 @@
       }
     ]
   },
-  "StructSerializerBooleanTestStruct": {
-    "ClassSize": "0x8",
+  "StructSerializerTestStruct": {
+    "ClassSize": "0xc8",
     "Attributes": [
       {
-        "Name": "BoolFalse",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "Numerics",
+        "Type": "struct StructSerializerNumericTestStruct",
+        "Size": "0x30",
         "Offset": "0x0"
       },
       {
-        "Name": "BoolTrue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "pad0x2_HEGUR[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x2"
-      },
-      {
-        "Name": "pad0x4_RBG4A[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "StructSerializerNumericTestStruct": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x4_BTX8L[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Int32",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "UInt8",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x1_WMEXT[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "Float",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x4_1M70G[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "Double",
-        "Type": "double",
+        "Name": "Booleans",
+        "Type": "struct StructSerializerBooleanTestStruct",
         "Size": "0x8",
-        "Offset": "0x28"
+        "Offset": "0x30"
+      },
+      {
+        "Name": "Objects",
+        "Type": "struct StructSerializerObjectTestStruct",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Builtins",
+        "Type": "struct StructSerializerBuiltinTestStruct",
+        "Size": "0x40",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "Arrays",
+        "Type": "struct StructSerializerArrayTestStruct",
+        "Size": "0x40",
+        "Offset": "0x88"
       }
     ]
   },

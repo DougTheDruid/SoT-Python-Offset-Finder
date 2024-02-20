@@ -8,7 +8,7 @@ CustomMysteriousNotesInterface:
   Super: Interface
 CustomMysteriousNotesService:
   Attributes:
-  - Name: pad0x58_XED8C[0x58]
+  - Name: pad0x58_E3X2P[0x58]
     Offset: '0x3c8'
     Size: '0x58'
     Type: char

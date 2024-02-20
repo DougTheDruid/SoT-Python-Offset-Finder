@@ -1,24 +1,24 @@
 {
-  "GameServerWebSocketEntityEvent": {
+  "EventEntityIdsSwitch": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "EventID",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "Event",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "ServerId",
-        "Type": "struct FString",
+        "Name": "EnableEntityIds",
+        "Type": "TArray<int>",
         "Size": "0x10",
-        "Offset": "0x10"
+        "Offset": "0x8"
       },
       {
-        "Name": "ServerTimeUTC",
-        "Type": "struct DateTime",
-        "Size": "0x8",
-        "Offset": "0x20"
+        "Name": "DisableEntityIds",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x18"
       }
     ]
   },
@@ -44,10 +44,50 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_AGGCV[0x4]",
+        "Name": "pad0x4_90DUU[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
+      }
+    ]
+  },
+  "GlobalEventSubscriptionGameServerRequestModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EnableEvents",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DisableEvents",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "GameServerWebSocketEntityEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "EventID",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ServerId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ServerTimeUTC",
+        "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },
@@ -62,55 +102,15 @@
       },
       {
         "Name": "EventsWithAllIdsEnabled",
-        "Type": "TArray<struct FName>",
+        "Type": "TArray<struct Name>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "EventsWithAllIdsDisabled",
-        "Type": "TArray<struct FName>",
+        "Type": "TArray<struct Name>",
         "Size": "0x10",
         "Offset": "0x20"
-      }
-    ]
-  },
-  "EventEntityIdsSwitch": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Event",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "EnableEntityIds",
-        "Type": "TArray<Int EnableEntityIds>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "DisableEntityIds",
-        "Type": "TArray<Int DisableEntityIds>",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "GlobalEventSubscriptionGameServerRequestModel": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "EnableEvents",
-        "Type": "TArray<struct FName>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DisableEvents",
-        "Type": "TArray<struct FName>",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },

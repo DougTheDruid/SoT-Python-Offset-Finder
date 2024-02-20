@@ -1,18 +1,40 @@
 {
-  "MusicZoneRemoteValues": {
-    "ClassSize": "0x20",
+  "MusicZoneEmitterSwitch": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Switches",
-        "Type": "TArray<struct MusicZoneEmitterSwitch>",
-        "Size": "0x10",
+        "Name": "SwitchGroup",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "RTPCs",
-        "Type": "TArray<struct MusicZoneEmitterRTPC>",
+        "Name": "Value",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "MusicZoneSpawnedEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_E7OGH[0x10]",
+        "Type": "char",
         "Size": "0x10",
-        "Offset": "0x10"
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MusicZoneDestroyedEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_QKWNI[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -33,42 +55,20 @@
       }
     ]
   },
-  "MusicZoneEmitterSwitch": {
-    "ClassSize": "0x10",
+  "MusicZoneRemoteValues": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "SwitchGroup",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "Switches",
+        "Type": "TArray<struct MusicZoneEmitterSwitch>",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "Value",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "MusicZoneDestroyedEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_79IYE[0x10]",
-        "Type": "char",
+        "Name": "RTPCs",
+        "Type": "TArray<struct MusicZoneEmitterRTPC>",
         "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "MusicZoneSpawnedEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_PL6FD[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
+        "Offset": "0x10"
       }
     ]
   },

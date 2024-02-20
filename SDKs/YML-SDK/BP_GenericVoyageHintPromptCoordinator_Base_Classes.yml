@@ -6,15 +6,15 @@ BP_GenericVoyageHintPromptCoordinator_Base_C:
     Offset: '0x138'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
-  - Name: pad0x6f_6QCWS[0x6f]
+  - Name: pad0xba_4KASG[0xba]
     Offset: '0x140'
-    Size: '0x6f'
+    Size: '0xba'
     Type: char
   - Name: PromptEvaluated
     Offset: '0x140'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_AHY06[0x7]
+  - Name: pad0x7_JI9X7[0x7]
     Offset: '0x141'
     Size: '0x7'
     Type: char
@@ -30,7 +30,7 @@ BP_GenericVoyageHintPromptCoordinator_Base_C:
     Offset: '0x1a8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_S778H[0x7]
+  - Name: pad0x7_3ZSDS[0x7]
     Offset: '0x1a9'
     Size: '0x7'
     Type: char
@@ -42,7 +42,7 @@ BP_GenericVoyageHintPromptCoordinator_Base_C:
     Offset: '0x1c8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_68LGQ[0x7]
+  - Name: pad0x7_TT25G[0x7]
     Offset: '0x1c9'
     Size: '0x7'
     Type: char
@@ -50,7 +50,7 @@ BP_GenericVoyageHintPromptCoordinator_Base_C:
     Offset: '0x1d0'
     Size: '0x8'
     Type: class VoyageTypeTutorialPrioritisedPromptsDataAsset*
-  - Name: pad0x20_QGJNM[0x20]
+  - Name: pad0x20_W7R4L[0x20]
     Offset: '0x1d8'
     Size: '0x20'
     Type: char

@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "SwitchOrder",
-        "Type": "TArray<Int SwitchOrder>",
+        "Type": "TArray<int>",
         "Size": "0x10",
         "Offset": "0x0"
       }

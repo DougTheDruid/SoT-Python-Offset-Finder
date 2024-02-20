@@ -1,12 +1,5 @@
 {
-  "ContendedResourceInfoInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ContendedResourceServiceInterface": {
+  "WorldResourceRegistryInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -20,14 +13,21 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ReservableContendedResourceStateInterface": {
+  "ContendedResourceServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "WorldResourceRegistryInterface": {
+  "ContendedResourceInfoInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ReservableContendedResourceStateInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

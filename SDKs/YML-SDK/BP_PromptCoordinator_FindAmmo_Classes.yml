@@ -6,9 +6,9 @@ BP_PromptCoordinator_FindAmmo_C:
     Offset: '0x138'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
-  - Name: pad0x6f_7OXZT[0x6f]
+  - Name: pad0xba_6VW28[0xba]
     Offset: '0x140'
-    Size: '0x6f'
+    Size: '0xba'
     Type: char
   - Name: AmmoChangedEventHandle
     Offset: '0x140'
@@ -22,7 +22,7 @@ BP_PromptCoordinator_FindAmmo_C:
     Offset: '0x199'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_5FD6V[0x6]
+  - Name: pad0x6_AK7I4[0x6]
     Offset: '0x19a'
     Size: '0x6'
     Type: char

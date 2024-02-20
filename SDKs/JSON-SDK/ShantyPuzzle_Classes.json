@@ -12,7 +12,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x4_CHDJL[0x4]",
+        "Name": "pad0x4_ZKE8E[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xcc"
@@ -50,6 +50,20 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "ShantyPuzzleInteractionZoneComponent": {
+    "Super": "SphereComponent",
+    "FullSize": "0x600",
+    "InheritedSize": "0x5e0",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_671TX[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x5e0"
+      }
+    ]
+  },
   "ShantyPuzzleComponent": {
     "Super": "SceneComponent",
     "FullSize": "0x3f0",
@@ -57,7 +71,7 @@
     "ClassSize": "0x110",
     "Attributes": [
       {
-        "Name": "pad0x8_GTDGQ[0x8]",
+        "Name": "pad0x8_ONIS8[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2e0"
@@ -87,7 +101,7 @@
         "Offset": "0x301"
       },
       {
-        "Name": "pad0x6_UFIVD[0x6]",
+        "Name": "pad0x6_BK5VW[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x302"
@@ -111,24 +125,10 @@
         "Offset": "0x328"
       },
       {
-        "Name": "pad0xc0_EGPTQ[0xc0]",
+        "Name": "pad0xc0_FOQE5[0xc0]",
         "Type": "char",
         "Size": "0xc0",
         "Offset": "0x330"
-      }
-    ]
-  },
-  "ShantyPuzzleInteractionZoneComponent": {
-    "Super": "SphereComponent",
-    "FullSize": "0x600",
-    "InheritedSize": "0x5e0",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_VV1SW[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x5e0"
       }
     ]
   },

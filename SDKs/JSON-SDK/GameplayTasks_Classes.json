@@ -6,6 +6,76 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "GameplayTaskResource": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ManualResourceID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_252ZE[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "bManuallySetID",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_4106K[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x31"
+      }
+    ]
+  },
+  "GameplayTasksComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x128",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x8_ZZFSH[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "SimulatedTasks",
+        "Type": "TArray<class GameplayTask*>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "TaskPriorityQueue",
+        "Type": "TArray<class GameplayTask*>",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "pad0x28_STXSK[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "pad0x10_BF63M[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x118"
+      }
+    ]
+  },
   "GameplayTask": {
     "Super": "Object",
     "FullSize": "0x58",
@@ -19,7 +89,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x28_635IX[0x28]",
+        "Name": "pad0x28_N2YDN[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x30"
@@ -33,7 +103,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x38_FUJ8D[0x38]",
+        "Name": "pad0x38_HMG34[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x58"
@@ -53,80 +123,10 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_8ZHGC[0x18]",
+        "Name": "pad0x18_I1BSO[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x58"
-      }
-    ]
-  },
-  "GameplayTaskResource": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ManualResourceID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_151WK[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "bManuallySetID",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x7_KF0I9[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x31"
-      }
-    ]
-  },
-  "GameplayTasksComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x128",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "pad0x8_307QI[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "SimulatedTasks",
-        "Type": "TArray<class GameplayTask*>",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "TaskPriorityQueue",
-        "Type": "TArray<class GameplayTask*>",
-        "Size": "0x10",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "pad0x28_Y9NF5[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "pad0x10_UPQPQ[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x118"
       }
     ]
   },

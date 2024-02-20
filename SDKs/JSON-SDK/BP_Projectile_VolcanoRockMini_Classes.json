@@ -1,21 +1,21 @@
 {
   "BP_Projectile_VolcanoRockMini_C": {
     "Super": "VolcanicRock",
-    "FullSize": "0x6d0",
-    "InheritedSize": "0x6c0",
+    "FullSize": "0x6e0",
+    "InheritedSize": "0x6d0",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "StaticMesh",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x6c0"
+        "Offset": "0x6d0"
       },
       {
         "Name": "Collision",
         "Type": "class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x6c8"
+        "Offset": "0x6d8"
       }
     ]
   },

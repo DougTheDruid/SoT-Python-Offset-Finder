@@ -1,21 +1,4 @@
 {
-  "MMICategoryData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "CategoryName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CategoryItemDataArray",
-        "Type": "TArray<struct MMIItemData>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "MMIItemData": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -26,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_BOXK6[0x4]",
+        "Name": "pad0x4_NVQ40[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -59,6 +42,23 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "MMICategoryData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "CategoryName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CategoryItemDataArray",
+        "Type": "TArray<struct MMIItemData>",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },

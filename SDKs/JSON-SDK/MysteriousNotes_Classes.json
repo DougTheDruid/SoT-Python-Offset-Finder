@@ -1,32 +1,4 @@
 {
-  "HasPlayerMysteriousNotesRadialContext": {
-    "Super": "RadialContextBase",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "LookingAtMysteriousNoteInputComponent": {
-    "Super": "LookingAtWieldableInputComponent",
-    "FullSize": "0x2d0",
-    "InheritedSize": "0x2a0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_Z8E2M[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x2a0"
-      }
-    ]
-  },
-  "MysteriousNoteDesc": {
-    "Super": "ItemDesc",
-    "FullSize": "0x120",
-    "InheritedSize": "0x120",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "MysteriousNotesCompletionEventsModelDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -40,6 +12,236 @@
         "Offset": "0x28"
       }
     ]
+  },
+  "MysteriousNotesService": {
+    "Super": "Actor",
+    "FullSize": "0x460",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "pad0x28_TGK9A[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "CachedNoteSettings",
+        "Type": "class MysteriousNoteSettings*",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "WieldableNoteDataAsset",
+        "Type": "class WieldableMysteriousNoteDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "CompletionEventsModelData",
+        "Type": "class MysteriousNotesCompletionEventsModelDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "pad0x58_S002M[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x408"
+      }
+    ]
+  },
+  "PlayerMysteriousNoteInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "HasPlayerMysteriousNotesRadialContext": {
+    "Super": "RadialContextBase",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PlayerMysteriousNoteComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x268",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x1a0",
+    "Attributes": [
+      {
+        "Name": "pad0x8_ZGDZK[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "CinematicPlayed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0xef_G7A8S[0xef]",
+        "Type": "char",
+        "Size": "0xef",
+        "Offset": "0xd1"
+      },
+      {
+        "Name": "NoteData",
+        "Type": "struct ClientNoteData",
+        "Size": "0x18",
+        "Offset": "0x1c0"
+      },
+      {
+        "Name": "BeenPossessed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1d8"
+      },
+      {
+        "Name": "pad0x8f_ATZ0B[0x8f]",
+        "Type": "char",
+        "Size": "0x8f",
+        "Offset": "0x1d9"
+      }
+    ]
+  },
+  "WieldableMysteriousNoteDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "WieldableNoteDesc",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "NoteLayout",
+        "Type": "class WieldableMysteriousNoteLayout*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "MysteriousNotesServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WieldableMysteriousNoteLayout": {
+    "Super": "DataAsset",
+    "FullSize": "0x188",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x160",
+    "Attributes": [
+      {
+        "Name": "DefaultTitle",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "DefaultBody",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "DefaultNoteLayoutItem",
+        "Type": "struct WieldableMysteriousNoteLayoutItem",
+        "Size": "0xe0",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "NoteLayoutItems",
+        "Type": "TArray<struct WieldableMysteriousNoteLayoutItem>",
+        "Size": "0x10",
+        "Offset": "0x178"
+      }
+    ]
+  },
+  "WieldableMysteriousNote": {
+    "Super": "SkeletalMeshWieldableItem",
+    "FullSize": "0x980",
+    "InheritedSize": "0x7e0",
+    "ClassSize": "0x1a0",
+    "Attributes": [
+      {
+        "Name": "pad0x10_FDVPE[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x7e0"
+      },
+      {
+        "Name": "RenderTarget",
+        "Type": "class MaybeCompressedCanvasRenderTarget2D*",
+        "Size": "0x8",
+        "Offset": "0x7f0"
+      },
+      {
+        "Name": "CanvasWidth",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x7f8"
+      },
+      {
+        "Name": "CanvasHeight",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x7fc"
+      },
+      {
+        "Name": "FontScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x800"
+      },
+      {
+        "Name": "pad0x5c_3HEQW[0x5c]",
+        "Type": "char",
+        "Size": "0x5c",
+        "Offset": "0x804"
+      },
+      {
+        "Name": "NoteLayout",
+        "Type": "class WieldableMysteriousNoteLayout*",
+        "Size": "0x8",
+        "Offset": "0x860"
+      },
+      {
+        "Name": "UsableWieldableComponent",
+        "Type": "class UsableWieldableComponent*",
+        "Size": "0x8",
+        "Offset": "0x868"
+      },
+      {
+        "Name": "InventoryItemComponent",
+        "Type": "class InventoryItemComponent*",
+        "Size": "0x8",
+        "Offset": "0x870"
+      },
+      {
+        "Name": "pad0x108_M28DU[0x108]",
+        "Type": "char",
+        "Size": "0x108",
+        "Offset": "0x878"
+      }
+    ]
+  },
+  "MysteriousNoteDesc": {
+    "Super": "ItemDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "MysteriousNoteSettings": {
     "Super": "Object",
@@ -85,219 +287,17 @@
       }
     ]
   },
-  "MysteriousNotesServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WieldableMysteriousNoteLayout": {
-    "Super": "DataAsset",
-    "FullSize": "0x188",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x160",
+  "LookingAtMysteriousNoteInputComponent": {
+    "Super": "LookingAtWieldableInputComponent",
+    "FullSize": "0x2d0",
+    "InheritedSize": "0x2a0",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "DefaultTitle",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "DefaultBody",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "DefaultNoteLayoutItem",
-        "Type": "struct WieldableMysteriousNoteLayoutItem",
-        "Size": "0xe0",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "NoteLayoutItems",
-        "Type": "TArray<struct WieldableMysteriousNoteLayoutItem>",
-        "Size": "0x10",
-        "Offset": "0x178"
-      }
-    ]
-  },
-  "WieldableMysteriousNoteDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "WieldableNoteDesc",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "NoteLayout",
-        "Type": "class WieldableMysteriousNoteLayout*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "MysteriousNotesService": {
-    "Super": "Actor",
-    "FullSize": "0x490",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0xc8",
-    "Attributes": [
-      {
-        "Name": "pad0x28_CITBJ[0x28]",
+        "Name": "pad0x30_IXIG7[0x30]",
         "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "CachedNoteSettings",
-        "Type": "class MysteriousNoteSettings*",
-        "Size": "0x8",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "WieldableNoteDataAsset",
-        "Type": "class WieldableMysteriousNoteDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "CompletionEventsModelData",
-        "Type": "class MysteriousNotesCompletionEventsModelDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x400"
-      },
-      {
-        "Name": "pad0x88_JPH53[0x88]",
-        "Type": "char",
-        "Size": "0x88",
-        "Offset": "0x408"
-      }
-    ]
-  },
-  "PlayerMysteriousNoteInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PlayerMysteriousNoteComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x268",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x1a0",
-    "Attributes": [
-      {
-        "Name": "pad0x8_OF8WT[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "CinematicPlayed",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "pad0xef_PW5M2[0xef]",
-        "Type": "char",
-        "Size": "0xef",
-        "Offset": "0xd1"
-      },
-      {
-        "Name": "NoteData",
-        "Type": "struct ClientNoteData",
-        "Size": "0x18",
-        "Offset": "0x1c0"
-      },
-      {
-        "Name": "BeenPossessed",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1d8"
-      },
-      {
-        "Name": "pad0x8f_ZITDZ[0x8f]",
-        "Type": "char",
-        "Size": "0x8f",
-        "Offset": "0x1d9"
-      }
-    ]
-  },
-  "WieldableMysteriousNote": {
-    "Super": "SkeletalMeshWieldableItem",
-    "FullSize": "0x980",
-    "InheritedSize": "0x7e0",
-    "ClassSize": "0x1a0",
-    "Attributes": [
-      {
-        "Name": "pad0x10_VZVQD[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x7e0"
-      },
-      {
-        "Name": "RenderTarget",
-        "Type": "class MaybeCompressedCanvasRenderTarget2D*",
-        "Size": "0x8",
-        "Offset": "0x7f0"
-      },
-      {
-        "Name": "CanvasWidth",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x7f8"
-      },
-      {
-        "Name": "CanvasHeight",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x7fc"
-      },
-      {
-        "Name": "FontScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x800"
-      },
-      {
-        "Name": "pad0x5c_CYY9P[0x5c]",
-        "Type": "char",
-        "Size": "0x5c",
-        "Offset": "0x804"
-      },
-      {
-        "Name": "NoteLayout",
-        "Type": "class WieldableMysteriousNoteLayout*",
-        "Size": "0x8",
-        "Offset": "0x860"
-      },
-      {
-        "Name": "UsableWieldableComponent",
-        "Type": "class UsableWieldableComponent*",
-        "Size": "0x8",
-        "Offset": "0x868"
-      },
-      {
-        "Name": "InventoryItemComponent",
-        "Type": "class InventoryItemComponent*",
-        "Size": "0x8",
-        "Offset": "0x870"
-      },
-      {
-        "Name": "pad0x108_9YFO6[0x108]",
-        "Type": "char",
-        "Size": "0x108",
-        "Offset": "0x878"
+        "Size": "0x30",
+        "Offset": "0x2a0"
       }
     ]
   },

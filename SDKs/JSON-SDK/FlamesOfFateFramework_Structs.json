@@ -1,23 +1,6 @@
 {
-  "CycleFlameOfFateSequence": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "FlameTypeSequence",
-        "Type": "TArray<Byte FlameTypeSequence>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x8_H7BM5[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "FlameData": {
-    "ClassSize": "0x2",
+  "SetFlameOfFateEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "FlameOfFateType",
@@ -26,39 +9,16 @@
         "Offset": "0x0"
       },
       {
-        "Name": "SkipChangeAnimation",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "pad0x7_ISXKF[0x7]",
+        "Type": "char",
+        "Size": "0x7",
         "Offset": "0x1"
-      }
-    ]
-  },
-  "PlayerTookFlameOfFateEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "PlayerCharacter",
-        "Type": "class Character*",
-        "Size": "0x8",
-        "Offset": "0x0"
       },
       {
         "Name": "Source",
         "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x8"
-      },
-      {
-        "Name": "FlameOfFateType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_463F6[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
       }
     ]
   },
@@ -84,7 +44,70 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_PRMC0[0x7]",
+        "Name": "pad0x7_MX435[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "FlameData": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Name": "FlameOfFateType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SkipChangeAnimation",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      }
+    ]
+  },
+  "CycleFlameOfFateSequence": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "FlameTypeSequence",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_12U8Q[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "PlayerTookFlameOfFateEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PlayerCharacter",
+        "Type": "class Character*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Source",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "FlameOfFateType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_QICRZ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -101,7 +124,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_OOKWL[0x7]",
+        "Name": "pad0x7_BW0IF[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -117,29 +140,6 @@
         "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "SetFlameOfFateEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "FlameOfFateType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_WDFH5[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "Source",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },

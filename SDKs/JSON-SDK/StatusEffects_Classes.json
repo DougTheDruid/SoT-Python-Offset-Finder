@@ -1,159 +1,36 @@
 {
-  "StatusBase": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_BJ8OP[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "StatusResponse": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_YLVEA[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "ActivateableSurfaceMaterialStatusZoneInterface": {
-    "Super": "Interface",
+  "StatusEffectHelperFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AppliedStatusToSelfStatCondition": {
-    "Super": "TargetedStatCondition",
-    "FullSize": "0x48",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Status",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "ComparisonMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x7_MN20E[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x41"
-      }
-    ]
-  },
-  "BuffReceiverInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BuffReceiverComponent": {
+  "StatusEffectManagerComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0xd8",
+    "FullSize": "0x108",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x8_ZS004[0x8]",
+        "Name": "pad0x28_SZFS1[0x28]",
         "Type": "char",
-        "Size": "0x8",
+        "Size": "0x28",
         "Offset": "0xc8"
       },
       {
-        "Name": "CanReceiveBuff",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "pad0x7_UDPPX[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xd1"
-      }
-    ]
-  },
-  "DebugMenuStatusDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "StatusDefinitions",
-        "Type": "TArray<struct DebugMenuStatusDefinition>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Durations",
-        "Type": "TArray<Float Durations>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "DebugStatusTicketHolder": {
-    "Super": "Actor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "StatusRecipient",
-        "Type": "class Actor*",
+        "Name": "RecipientResponseList",
+        "Type": "class StatusRecipientResponseList*",
         "Size": "0x8",
-        "Offset": "0x3c8"
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "ActiveEffects",
+        "Type": "TArray<struct ActiveStatusEffect>",
+        "Size": "0x10",
+        "Offset": "0xf8"
       }
     ]
-  },
-  "StatusEffectCancellationInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "StatusEffectRecipientInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "StatusEffectResponseConfigurationInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "StatusEffectSuspensionInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "StatusResponseAsset": {
     "Super": "DataAsset",
@@ -178,6 +55,332 @@
         "Type": "TArray<class StatusResponse*>",
         "Size": "0x10",
         "Offset": "0x70"
+      }
+    ]
+  },
+  "ActivateableSurfaceMaterialStatusZoneInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StatusEffectPersistenceComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_XKQSR[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "StatusResponse": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_MFZ96[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "LightWeightStatusEffectManagerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x100",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x20_4IAQH[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "RecipientResponseList",
+        "Type": "class StatusRecipientResponseList*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "ActiveEffects",
+        "Type": "TArray<struct ActiveStatusEffect>",
+        "Size": "0x10",
+        "Offset": "0xf0"
+      }
+    ]
+  },
+  "DebugStatusTicketHolder": {
+    "Super": "Actor",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "StatusRecipient",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      }
+    ]
+  },
+  "SurfaceMaterialStatusZoneInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DebugMenuStatusDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StatusDefinitions",
+        "Type": "TArray<struct DebugMenuStatusDefinition>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Durations",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "StatusEffectSuspensionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StatusApplicationDesc": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ApplicationEvent",
+        "Type": "struct EventAppliedStatusToTargets",
+        "Size": "0x28",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "StatusEffectVolumeComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x300",
+    "InheritedSize": "0x2e0",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "UseOverlapEventsFromParentComponent",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2e0"
+      },
+      {
+        "Name": "pad0x7_UG7LJ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x2e1"
+      },
+      {
+        "Name": "StatusEffectsToMaintain",
+        "Type": "TArray<struct Status>",
+        "Size": "0x10",
+        "Offset": "0x2e8"
+      },
+      {
+        "Name": "pad0x8_WJ8VJ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x2f8"
+      }
+    ]
+  },
+  "SphericalStatusEffectZone": {
+    "Super": "Actor",
+    "FullSize": "0x488",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "pad0x8_09LC8[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "ActorActivationComponent",
+        "Type": "class ActorActivationComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "SphereComponent",
+        "Type": "class SphereComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "StatusEffectVolumeComponent",
+        "Type": "class StatusEffectVolumeComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "pad0xa0_77MDQ[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x3e8"
+      }
+    ]
+  },
+  "BuffReceiverComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x8_7UAVQ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "CanReceiveBuff",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x7_JKMDG[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xd1"
+      }
+    ]
+  },
+  "StatusEffectsSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DebugMenuStatusDefinitionsDataAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "StatusEffectPersistenceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StatusEffectResponseConfigurationInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StatusEffectOverlapZone": {
+    "Super": "SimpleOverlapZone",
+    "FullSize": "0x4c0",
+    "InheritedSize": "0x4a0",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StatusesToApplyOnOverlap",
+        "Type": "TArray<struct DelayedStatusEffect>",
+        "Size": "0x10",
+        "Offset": "0x4a0"
+      },
+      {
+        "Name": "pad0x10_47NB7[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x4b0"
+      }
+    ]
+  },
+  "StatusEffectTicketDispenserInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MaterialStatusSusceptibilityComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x8_CBI4Z[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "CurrentSurfaceMaterial",
+        "Type": "class PhysicalMaterial*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x20_4MNVK[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xd8"
+      }
+    ]
+  },
+  "AppliedStatusToSelfStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x48",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Status",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ComparisonMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x7_ALY81[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x41"
       }
     ]
   },
@@ -207,124 +410,6 @@
       }
     ]
   },
-  "LightWeightStatusEffectManagerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x100",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "pad0x20_R8XY8[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "RecipientResponseList",
-        "Type": "class StatusRecipientResponseList*",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "ActiveEffects",
-        "Type": "TArray<struct ActiveStatusEffect>",
-        "Size": "0x10",
-        "Offset": "0xf0"
-      }
-    ]
-  },
-  "MaterialStatusSusceptibilityInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SurfaceMaterialStatusZoneInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MaterialStatusSusceptibilityComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x8_4UVK6[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "CurrentSurfaceMaterial",
-        "Type": "class PhysicalMaterial*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "pad0x20_21ZBQ[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0xd8"
-      }
-    ]
-  },
-  "SphericalStatusEffectZone": {
-    "Super": "Actor",
-    "FullSize": "0x488",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "pad0x8_PIP36[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "ActorActivationComponent",
-        "Type": "class ActorActivationComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "SphereComponent",
-        "Type": "class SphereComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "StatusEffectVolumeComponent",
-        "Type": "class StatusEffectVolumeComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "pad0xa0_84DY4[0xa0]",
-        "Type": "char",
-        "Size": "0xa0",
-        "Offset": "0x3e8"
-      }
-    ]
-  },
-  "StatusApplicationDesc": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "ApplicationEvent",
-        "Type": "struct EventAppliedStatusToTargets",
-        "Size": "0x28",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "StatusApplicationMonitorComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xd0",
@@ -339,132 +424,47 @@
       }
     ]
   },
-  "StatusEffectHelperFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "StatusEffectTicketDispenserInterface": {
+  "MaterialStatusSusceptibilityInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "StatusEffectManagerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x108",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x28_APICS[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "RecipientResponseList",
-        "Type": "class StatusRecipientResponseList*",
-        "Size": "0x8",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "ActiveEffects",
-        "Type": "TArray<struct ActiveStatusEffect>",
-        "Size": "0x10",
-        "Offset": "0xf8"
-      }
-    ]
-  },
-  "StatusEffectOverlapZone": {
-    "Super": "SimpleOverlapZone",
-    "FullSize": "0x4c0",
-    "InheritedSize": "0x4a0",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "StatusesToApplyOnOverlap",
-        "Type": "TArray<struct DelayedStatusEffect>",
-        "Size": "0x10",
-        "Offset": "0x4a0"
-      },
-      {
-        "Name": "pad0x10_QASXF[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x4b0"
-      }
-    ]
-  },
-  "StatusEffectPersistenceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
+  "StatusBase": {
+    "Super": "Object",
+    "FullSize": "0x30",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "StatusEffectPersistenceComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xc8",
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_LZYG6[0x8]",
+        "Name": "pad0x8_AQQIN[0x8]",
         "Type": "char",
         "Size": "0x8",
-        "Offset": "0xc8"
+        "Offset": "0x28"
       }
     ]
   },
-  "StatusEffectsSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "DebugMenuStatusDefinitionsDataAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
+  "BuffReceiverInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
-  "StatusEffectVolumeComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x300",
-    "InheritedSize": "0x2e0",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "UseOverlapEventsFromParentComponent",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2e0"
-      },
-      {
-        "Name": "pad0x7_U9J9K[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x2e1"
-      },
-      {
-        "Name": "StatusEffectsToMaintain",
-        "Type": "TArray<struct Status>",
-        "Size": "0x10",
-        "Offset": "0x2e8"
-      },
-      {
-        "Name": "pad0x8_QQQMT[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x2f8"
-      }
-    ]
+  "StatusEffectRecipientInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StatusEffectCancellationInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "SetCanReceiveBuffStatusResponse": {
     "Super": "StatusResponse",
@@ -485,7 +485,7 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x6_B7JRW[0x6]",
+        "Name": "pad0x6_9LFX2[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x32"

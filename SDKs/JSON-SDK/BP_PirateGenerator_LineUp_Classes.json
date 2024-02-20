@@ -1,0 +1,224 @@
+{
+  "BP_PirateGenerator_LineUp_C": {
+    "Super": "PosablePirate",
+    "FullSize": "0x619",
+    "InheritedSize": "0x488",
+    "ClassSize": "0x191",
+    "Attributes": [
+      {
+        "Name": "UberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x488"
+      },
+      {
+        "Name": "Capsule",
+        "Type": "class CapsuleComponent*",
+        "Size": "0x8",
+        "Offset": "0x490"
+      },
+      {
+        "Name": "GhostParticlesOut",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Name": "GhostParticlesIn",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x4a0"
+      },
+      {
+        "Name": "AnimNotifyWwiseEmitter",
+        "Type": "class AnimNotifyWwiseEmitterComponent*",
+        "Size": "0x8",
+        "Offset": "0x4a8"
+      },
+      {
+        "Name": "SkeletalProp",
+        "Type": "class SkeletalMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4b0"
+      },
+      {
+        "Name": "StaticPropSecondary",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4b8"
+      },
+      {
+        "Name": "SkeletalPropSecondary",
+        "Type": "class SkeletalMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c0"
+      },
+      {
+        "Name": "StaticProp",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4c8"
+      },
+      {
+        "Name": "ForceShape",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x4d0"
+      },
+      {
+        "Name": "Animation",
+        "Type": "struct BP_LineUp_Animation",
+        "Size": "0xc8",
+        "Offset": "0x4e0"
+      },
+      {
+        "Name": "CharacterSelectAnimgraph",
+        "Type": "animblueprintgeneratedclass BP_Anim_CharacterSelect_C*",
+        "Size": "0x8",
+        "Offset": "0x5a8"
+      },
+      {
+        "Name": "ZoomTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5b0"
+      },
+      {
+        "Name": "GhostTransitionOutTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5b4"
+      },
+      {
+        "Name": "GhostTransitionInTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5b8"
+      },
+      {
+        "Name": "GhostTransitioning",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5bc"
+      },
+      {
+        "Name": "pad0x3_HM36B[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5bd"
+      },
+      {
+        "Name": "PoseIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5c0"
+      },
+      {
+        "Name": "pad0x4_NDD0Y[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5c4"
+      },
+      {
+        "Name": "AnimationSwitch",
+        "Type": "class AnimationSwitchDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "AnimationAsset",
+        "Type": "class AnimationDataStoreAsset*",
+        "Size": "0x8",
+        "Offset": "0x5d0"
+      },
+      {
+        "Name": "Initialized",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5d8"
+      },
+      {
+        "Name": "pad0x7_89VQB[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x5d9"
+      },
+      {
+        "Name": "IsHighlighted",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5f0"
+      },
+      {
+        "Name": "IsInShipSelect",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5f1"
+      },
+      {
+        "Name": "pad0x2_KQCZR[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x5f2"
+      },
+      {
+        "Name": "ShipSelectVariantTimer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5f4"
+      },
+      {
+        "Name": "ShipSelectVariantTimerMax",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5f8"
+      },
+      {
+        "Name": "ShipSelectAnimCountMax",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5fc"
+      },
+      {
+        "Name": "ShipSelectVariantAnimIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x600"
+      },
+      {
+        "Name": "IsPlayingShipSelectVariant",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x604"
+      },
+      {
+        "Name": "pad0x3_HU0BG[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x605"
+      },
+      {
+        "Name": "ShipSelectAnimToPlay",
+        "Type": "class AnimSequence*",
+        "Size": "0x8",
+        "Offset": "0x608"
+      },
+      {
+        "Name": "ShipSelectPropAnimToPlay",
+        "Type": "class AnimSequence*",
+        "Size": "0x8",
+        "Offset": "0x610"
+      },
+      {
+        "Name": "ShipSelectAnimStarted",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x618"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

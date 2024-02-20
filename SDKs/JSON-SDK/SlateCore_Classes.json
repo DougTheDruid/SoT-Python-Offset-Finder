@@ -1,4 +1,18 @@
 {
+  "SlateWidgetStyleAsset": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CustomStyle",
+        "Type": "class SlateWidgetStyleContainerBase*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "FontBulkData": {
     "Super": "Object",
     "FullSize": "0xc0",
@@ -6,22 +20,22 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x98_HZBKA[0x98]",
+        "Name": "pad0x98_3NWT2[0x98]",
         "Type": "char",
         "Size": "0x98",
         "Offset": "0x28"
       }
     ]
   },
-  "FontProviderInterface": {
-    "Super": "Interface",
+  "SlateTypes": {
+    "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "SlateTypes": {
-    "Super": "Object",
+  "FontProviderInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -41,22 +55,8 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_MN77G[0x8]",
+        "Name": "pad0x8_1445J[0x8]",
         "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "SlateWidgetStyleAsset": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CustomStyle",
-        "Type": "class SlateWidgetStyleContainerBase*",
         "Size": "0x8",
         "Offset": "0x28"
       }

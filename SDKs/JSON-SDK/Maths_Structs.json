@@ -1,55 +1,4 @@
 {
-  "WeightedProbabilityRange": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x10_Y17T9[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weights",
-        "Type": "TArray<Float Weights>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "WeightedProbabilityRangeOfRanges": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x20_W1YF4[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SubRanges",
-        "Type": "TArray<struct WeightedProbabilityRangeOfRangesFloatPair>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "WeightedProbabilityRangeOfRangesFloatPair": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Min",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Max",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "OrientedPoint": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -64,6 +13,97 @@
         "Type": "struct Rotator",
         "Size": "0xc",
         "Offset": "0xc"
+      }
+    ]
+  },
+  "InertialSmoothedFloat": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AccelerationMagnitude",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "CurrentVelocity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "CurrentValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "GrabBag": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_17ZKO[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TimedBuffer": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_0AKPI[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SpatialOffset": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "OffsetValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "OffsetMethod",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_0J2D2[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
+      }
+    ]
+  },
+  "FixedStepInterpCurvePointVector2D": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "OutVal",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Tangent",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -89,7 +129,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_R1FV2[0x3]",
+        "Name": "pad0x3_1LAZI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
@@ -131,7 +171,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0xc_6SJRJ[0xc]",
+        "Name": "pad0xc_UYE8Z[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x24"
@@ -173,14 +213,37 @@
       }
     ]
   },
-  "TimedBuffer": {
-    "ClassSize": "0x18",
+  "WeightedProbabilityRangeOfRangesFloatPair": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x18_R1J9W[0x18]",
-        "Type": "char",
-        "Size": "0x18",
+        "Name": "Min",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Max",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "WeightedProbabilityRange": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x10_EZMAS[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weights",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -206,90 +269,27 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_SX9V4[0x3]",
+        "Name": "pad0x3_Q109G[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
       }
     ]
   },
-  "FixedStepInterpCurvePointVector2D": {
-    "ClassSize": "0x10",
+  "WeightedProbabilityRangeOfRanges": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "OutVal",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Tangent",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "GrabBag": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_XLQEF[0x20]",
+        "Name": "pad0x20_2ERWO[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "InertialSmoothedFloat": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AccelerationMagnitude",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
       },
       {
-        "Name": "MaxSpeed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "CurrentVelocity",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "CurrentValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "SpatialOffset": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "OffsetValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "OffsetMethod",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x3_6R4TS[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5"
+        "Name": "SubRanges",
+        "Type": "TArray<struct WeightedProbabilityRangeOfRangesFloatPair>",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },

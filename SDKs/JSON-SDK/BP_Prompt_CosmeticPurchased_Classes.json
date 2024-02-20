@@ -12,9 +12,9 @@
         "Offset": "0x138"
       },
       {
-        "Name": "pad0x6f_PWPG7[0x6f]",
+        "Name": "pad0xba_B67O2[0xba]",
         "Type": "char",
-        "Size": "0x6f",
+        "Size": "0xba",
         "Offset": "0x140"
       },
       {
@@ -61,7 +61,7 @@
       },
       {
         "Name": "PurchasedEntitlementIds",
-        "Type": "TArray<Str PurchasedEntitlementIds>",
+        "Type": "TArray<String>",
         "Size": "0x10",
         "Offset": "0x340"
       },

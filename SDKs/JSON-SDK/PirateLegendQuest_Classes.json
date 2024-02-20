@@ -1,4 +1,32 @@
 {
+  "GetVeilOfTheAncientsStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "QuestVeil",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "GetVeilOfTheAncientsStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "VeilOfTheAncientsServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "VeilOfTheAncients": {
     "Super": "InteractableBase",
     "FullSize": "0x418",
@@ -12,7 +40,7 @@
         "Offset": "0x400"
       },
       {
-        "Name": "pad0x4_Z3R4S[0x4]",
+        "Name": "pad0x4_7574S[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x404"
@@ -38,7 +66,7 @@
     "ClassSize": "0x120",
     "Attributes": [
       {
-        "Name": "pad0x20_ZQTXD[0x20]",
+        "Name": "pad0x20_MX0Y9[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x60"
@@ -56,7 +84,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x8_Q57R5[0x8]",
+        "Name": "pad0x8_TXPIE[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x90"
@@ -74,38 +102,10 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0xd8_S7E0K[0xd8]",
+        "Name": "pad0xd8_PLL1C[0xd8]",
         "Type": "char",
         "Size": "0xd8",
         "Offset": "0xa8"
-      }
-    ]
-  },
-  "GetVeilOfTheAncientsStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "VeilOfTheAncientsServiceDesc": {
-    "Super": "TaleQuestServiceDesc",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "GetVeilOfTheAncientsStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "QuestVeil",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0x80"
       }
     ]
   },

@@ -6,7 +6,7 @@
     "ClassSize": "0x240",
     "Attributes": [
       {
-        "Name": "pad0xb8_NLCRL[0xb8]",
+        "Name": "pad0xb8_K7DMN[0xb8]",
         "Type": "char",
         "Size": "0xb8",
         "Offset": "0x3c8"
@@ -85,7 +85,7 @@
       },
       {
         "Name": "DistanceFromNamedPoints",
-        "Type": "TArray<Float DistanceFromNamedPoints>",
+        "Type": "TArray<float>",
         "Size": "0x10",
         "Offset": "0x560"
       },
@@ -102,7 +102,7 @@
         "Offset": "0x574"
       },
       {
-        "Name": "pad0x90_RL65L[0x90]",
+        "Name": "pad0x90_ZEPGT[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x578"

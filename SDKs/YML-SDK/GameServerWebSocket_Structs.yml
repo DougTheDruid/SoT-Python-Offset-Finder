@@ -9,11 +9,11 @@ EntityEventSubscriptionGameServerRequestModel:
   - Name: EventsWithAllIdsEnabled
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct FName>
+    Type: TArray<struct Name>
   - Name: EventsWithAllIdsDisabled
     Offset: '0x20'
     Size: '0x10'
-    Type: TArray<struct FName>
+    Type: TArray<struct Name>
   ClassSize: '0x30'
 EventEntityIdsSwitch:
   Attributes:
@@ -24,11 +24,11 @@ EventEntityIdsSwitch:
   - Name: EnableEntityIds
     Offset: '0x8'
     Size: '0x10'
-    Type: TArray<Int EnableEntityIds>
+    Type: TArray<int>
   - Name: DisableEntityIds
     Offset: '0x18'
     Size: '0x10'
-    Type: TArray<Int DisableEntityIds>
+    Type: TArray<int>
   ClassSize: '0x28'
 EventOverMemoryThreshold:
   Attributes:
@@ -44,7 +44,7 @@ EventOverMemoryThreshold:
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_AGGCV[0x4]
+  - Name: pad0x4_90DUU[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -69,9 +69,9 @@ GlobalEventSubscriptionGameServerRequestModel:
   - Name: EnableEvents
     Offset: '0x0'
     Size: '0x10'
-    Type: TArray<struct FName>
+    Type: TArray<struct Name>
   - Name: DisableEvents
     Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct FName>
+    Type: TArray<struct Name>
   ClassSize: '0x20'

@@ -8,7 +8,7 @@ ActorLayerInterface:
   Super: Interface
 InstancedLayerComponent:
   Attributes:
-  - Name: pad0x8_U5ZDC[0x8]
+  - Name: pad0x8_W4323[0x8]
     Offset: '0x2e0'
     Size: '0x8'
     Type: char
@@ -16,7 +16,7 @@ InstancedLayerComponent:
     Offset: '0x2e8'
     Size: '0x10'
     Type: TArray<struct InstancedLayer>
-  - Name: pad0x18_VFO9K[0x18]
+  - Name: pad0x18_5JM4M[0x18]
     Offset: '0x2f8'
     Size: '0x18'
     Type: char
@@ -29,11 +29,11 @@ LayerActorsDataAsset:
   - Name: Actors
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Assetclass Actors>
+    Type: TArray<Class>
   - Name: Items
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Assetclass Items>
+    Type: TArray<Class>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'

@@ -22,7 +22,7 @@
       },
       {
         "Name": "RegionNames",
-        "Type": "TArray<struct FName>",
+        "Type": "TArray<struct Name>",
         "Size": "0x10",
         "Offset": "0x18"
       }

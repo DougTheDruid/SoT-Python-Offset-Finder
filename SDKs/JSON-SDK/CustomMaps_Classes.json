@@ -1,57 +1,4 @@
 {
-  "CustomMapDisplayObjectBase": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Guid",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "CustomMap": {
-    "Super": "RenderToTextureMapBase",
-    "FullSize": "0x8c0",
-    "InheritedSize": "0x890",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x8_0UP1C[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x890"
-      },
-      {
-        "Name": "Font",
-        "Type": "class Font*",
-        "Size": "0x8",
-        "Offset": "0x898"
-      },
-      {
-        "Name": "DisplayItems",
-        "Type": "TArray<class CustomMapDisplayObjectBase*>",
-        "Size": "0x10",
-        "Offset": "0x8a0"
-      },
-      {
-        "Name": "pad0x10_O02EC[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x8b0"
-      }
-    ]
-  },
-  "CustomMapCollectionInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "CustomMapDataTypeBase": {
     "Super": "Object",
     "FullSize": "0x38",
@@ -65,6 +12,13 @@
         "Offset": "0x28"
       }
     ]
+  },
+  "CustomMapCollectionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "CustomMapData": {
     "Super": "DataAsset",
@@ -92,6 +46,66 @@
       }
     ]
   },
+  "CustomMap": {
+    "Super": "RenderToTextureMapBase",
+    "FullSize": "0x8c0",
+    "InheritedSize": "0x890",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x8_64MTB[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x890"
+      },
+      {
+        "Name": "Font",
+        "Type": "class Font*",
+        "Size": "0x8",
+        "Offset": "0x898"
+      },
+      {
+        "Name": "DisplayItems",
+        "Type": "TArray<class CustomMapDisplayObjectBase*>",
+        "Size": "0x10",
+        "Offset": "0x8a0"
+      },
+      {
+        "Name": "pad0x10_S8S7K[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x8b0"
+      }
+    ]
+  },
+  "CustomMapSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CustomMapItemDescClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "CustomMapDisplayObjectBase": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Guid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "CustomMapDataTypePositional": {
     "Super": "CustomMapDataTypeBase",
     "FullSize": "0x48",
@@ -111,7 +125,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x4_RCORD[0x4]",
+        "Name": "pad0x4_VMF17[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x44"
@@ -137,54 +151,10 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x4_KX834[0x4]",
+        "Name": "pad0x4_4Q43U[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x44"
-      }
-    ]
-  },
-  "CustomMapDisplayObjectText": {
-    "Super": "CustomMapDisplayObjectPositional",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "Text",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "FontScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "StrikeThrough",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x84"
-      },
-      {
-        "Name": "pad0x3_1YPYI[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x85"
-      },
-      {
-        "Name": "StrikethroughThickness",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "pad0x4c_QOJLP[0x4c]",
-        "Type": "char",
-        "Size": "0x4c",
-        "Offset": "0x8c"
       }
     ]
   },
@@ -213,7 +183,7 @@
         "Offset": "0x84"
       },
       {
-        "Name": "pad0x3_T6BSQ[0x3]",
+        "Name": "pad0x3_IUG7Z[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x85"
@@ -225,24 +195,54 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x4_UI5J8[0x4]",
+        "Name": "pad0x4_DWS2X[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x8c"
       }
     ]
   },
-  "CustomMapSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x40",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x8",
+  "CustomMapDisplayObjectText": {
+    "Super": "CustomMapDisplayObjectPositional",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "CustomMapItemDescClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
+        "Name": "Text",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "FontScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "StrikeThrough",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "pad0x3_8IGXS[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x85"
+      },
+      {
+        "Name": "StrikethroughThickness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x4c_D9WAC[0x4c]",
+        "Type": "char",
+        "Size": "0x4c",
+        "Offset": "0x8c"
       }
     ]
   },

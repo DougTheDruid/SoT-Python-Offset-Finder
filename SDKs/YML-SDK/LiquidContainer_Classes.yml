@@ -18,7 +18,7 @@ LiquidContainerComponent:
     Offset: '0xe8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_76VSC[0x4]
+  - Name: pad0x4_HHE1S[0x4]
     Offset: '0xec'
     Size: '0x4'
     Type: char
@@ -38,7 +38,7 @@ LiquidContainerComponent:
     Offset: '0x100'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
-  - Name: pad0x18_PJ5BN[0x18]
+  - Name: pad0x18_9DFKD[0x18]
     Offset: '0x110'
     Size: '0x18'
     Type: char
@@ -54,7 +54,7 @@ LiquidContainerInterface:
   Super: Interface
 LiquidContainerService:
   Attributes:
-  - Name: pad0x8_PCRTK[0x8]
+  - Name: pad0x8_WXB4G[0x8]
     Offset: '0x70'
     Size: '0x8'
     Type: char
@@ -70,7 +70,7 @@ LiquidContainerServiceInterface:
   Super: Interface
 LiquidLevelTransferComponent:
   Attributes:
-  - Name: pad0x10_PNQKP[0x10]
+  - Name: pad0x10_VKGKO[0x10]
     Offset: '0xc8'
     Size: '0x10'
     Type: char

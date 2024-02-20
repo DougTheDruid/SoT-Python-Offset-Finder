@@ -1,4 +1,18 @@
 {
+  "ShipRepairInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RepairableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "RepairTypeId": {
     "Super": "Object",
     "FullSize": "0x60",
@@ -12,13 +26,6 @@
         "Offset": "0x28"
       }
     ]
-  },
-  "RepairableInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "RepairingInterface": {
     "Super": "Interface",
@@ -38,13 +45,6 @@
     "Super": "RepairTypeId",
     "FullSize": "0x60",
     "InheritedSize": "0x60",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ShipRepairInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },

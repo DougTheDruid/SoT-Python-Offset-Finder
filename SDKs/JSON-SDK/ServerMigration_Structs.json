@@ -16,6 +16,23 @@
       }
     ]
   },
+  "ServerMigrationSerialisationDetailsTestsUStruct": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "FloatWithNoMarkup",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_PHG9E[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "ServerSettings": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -38,7 +55,7 @@
         "Offset": "0x2"
       },
       {
-        "Name": "pad0x1_P50I5[0x1]",
+        "Name": "pad0x1_2OQSO[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x3"
@@ -55,27 +72,10 @@
     "ClassSize": "0x4",
     "Attributes": [
       {
-        "Name": "pad0x4_YBWNX[0x4]",
+        "Name": "pad0x4_WQ86W[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "ServerMigrationSerialisationDetailsTestsUStruct": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "FloatWithNoMarkup",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x8_AVI8M[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x4"
       }
     ]
   },

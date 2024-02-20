@@ -33,7 +33,7 @@ BP_GuildMastPlaque_C:
   - Name: guildRank
     Offset: '0x560'
     Size: '0x10'
-    Type: TArray<Str guildRank>
+    Type: TArray<String>
   - Name: bevelIntensity
     Offset: '0x570'
     Size: '0x4'
@@ -106,11 +106,11 @@ BP_GuildMastPlaque_C:
     Offset: '0x6d0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_72EPJ[0x7]
+  - Name: pad0x7_Y7D7R[0x7]
     Offset: '0x6d1'
     Size: '0x7'
     Type: char
-  - Name: pad0x60_O44J4[0x60]
+  - Name: pad0x60_O6W7Z[0x60]
     Offset: '0x6d8'
     Size: '0x60'
     Type: char

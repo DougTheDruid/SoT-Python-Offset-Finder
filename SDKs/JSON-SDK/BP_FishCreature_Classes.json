@@ -24,7 +24,7 @@
         "Offset": "0x3d1"
       },
       {
-        "Name": "pad0x2_DXNJ3[0x2]",
+        "Name": "pad0x2_JROPW[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3d2"
@@ -78,7 +78,7 @@
         "Offset": "0x404"
       },
       {
-        "Name": "pad0x3_IQCNQ[0x3]",
+        "Name": "pad0x3_TFMHF[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x405"
@@ -157,19 +157,19 @@
       },
       {
         "Name": "SelectedCreatureType",
-        "Type": "TArray<Assetclass SelectedCreatureType>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x440"
       },
       {
         "Name": "Fish_04",
-        "Type": "TArray<Assetclass Fish_04>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x450"
       },
       {
         "Name": "Fish_05",
-        "Type": "TArray<Assetclass Fish_05>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x460"
       },
@@ -199,7 +199,7 @@
       },
       {
         "Name": "Fish_07",
-        "Type": "TArray<Assetclass Fish_07>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x488"
       },
@@ -210,14 +210,14 @@
         "Offset": "0x498"
       },
       {
-        "Name": "pad0x4_V7YCA[0x4]",
+        "Name": "pad0x4_WMN8D[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x49c"
       },
       {
         "Name": "Clown_01",
-        "Type": "TArray<Assetclass Clown_01>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x4a0"
       },
@@ -228,20 +228,20 @@
         "Offset": "0x4b0"
       },
       {
-        "Name": "pad0x4_BJG5H[0x4]",
+        "Name": "pad0x4_2T3OB[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4b4"
       },
       {
         "Name": "Splashtail",
-        "Type": "TArray<Assetclass Splashtail>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x4b8"
       },
       {
         "Name": "Pondie",
-        "Type": "TArray<Assetclass Pondie>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x4c8"
       },

@@ -24,7 +24,7 @@
         "Offset": "0x429"
       },
       {
-        "Name": "pad0x2_YGQ6V[0x2]",
+        "Name": "pad0x2_K4OUY[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x42a"
@@ -78,7 +78,7 @@
         "Offset": "0x45c"
       },
       {
-        "Name": "pad0x3_ZKHI3[0x3]",
+        "Name": "pad0x3_S5O1O[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x45d"
@@ -162,20 +162,20 @@
         "Offset": "0x498"
       },
       {
-        "Name": "pad0x4_FJ5WI[0x4]",
+        "Name": "pad0x4_SNEEZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x49c"
       },
       {
         "Name": "SelectedCreatureType",
-        "Type": "TArray<Assetclass SelectedCreatureType>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x4a0"
       },
       {
         "Name": "Seagull",
-        "Type": "TArray<Assetclass Seagull>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x4b0"
       },
@@ -205,19 +205,19 @@
       },
       {
         "Name": "Skellygull_01",
-        "Type": "TArray<Assetclass Skellygull_01>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x4d8"
       },
       {
         "Name": "Bats_01",
-        "Type": "TArray<Assetclass Bats_01>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x4e8"
       },
       {
         "Name": "Parrot_01",
-        "Type": "TArray<Assetclass Parrot_01>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x4f8"
       },
@@ -228,7 +228,7 @@
         "Offset": "0x508"
       },
       {
-        "Name": "pad0x3_SL3OB[0x3]",
+        "Name": "pad0x3_PKX9Y[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x509"
@@ -264,7 +264,7 @@
         "Offset": "0x51c"
       },
       {
-        "Name": "pad0x3_PJEQJ[0x3]",
+        "Name": "pad0x3_1DJAT[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x51d"

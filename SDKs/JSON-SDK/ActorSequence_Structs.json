@@ -1,18 +1,36 @@
 {
-  "ActorSequenceObjectReferenceMap": {
-    "ClassSize": "0x20",
+  "ActorSequenceObjectReference": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "BindingIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
+        "Name": "Type",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "References",
-        "Type": "TArray<struct ActorSequenceObjectReferences>",
+        "Name": "pad0x3_HSL0J[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "ActorId",
+        "Type": "struct Guid",
         "Size": "0x10",
-        "Offset": "0x10"
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x4_LWT7U[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "PathToComponent",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
       }
     ]
   },
@@ -27,38 +45,20 @@
       }
     ]
   },
-  "ActorSequenceObjectReference": {
-    "ClassSize": "0x28",
+  "ActorSequenceObjectReferenceMap": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Type",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "BindingIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_H1EBU[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "ActorId",
-        "Type": "struct Guid",
+        "Name": "References",
+        "Type": "TArray<struct ActorSequenceObjectReferences>",
         "Size": "0x10",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x4_I9J0P[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "PathToComponent",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
+        "Offset": "0x10"
       }
     ]
   },

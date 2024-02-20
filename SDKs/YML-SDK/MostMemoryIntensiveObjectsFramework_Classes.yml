@@ -29,7 +29,7 @@ MostMemoryIntensiveObjectsRuntimeSettings:
   - Name: MostMemoryIntensiveDebugCommandSources
     Offset: '0x58'
     Size: '0x10'
-    Type: TArray<Assetclass MostMemoryIntensiveDebugCommandSources>
+    Type: TArray<Class>
   ClassSize: '0x30'
   FullSize: '0x68'
   InheritedSize: '0x38'

@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "BlacklistedEntitlements",
-        "Type": "TArray<Assetclass BlacklistedEntitlements>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x28"
       }

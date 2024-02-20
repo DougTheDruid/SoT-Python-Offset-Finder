@@ -1,4 +1,21 @@
 {
+  "CapturedPostLoadExcess": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ObjectName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PostLoadDuration",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "AsyncExcessiveLoadTelemetryEvent": {
     "ClassSize": "0x48",
     "Attributes": [
@@ -9,7 +26,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_7QDG0[0x4]",
+        "Name": "pad0x4_8OOVQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -28,13 +45,13 @@
       },
       {
         "Name": "AssetRequestList",
-        "Type": "TArray<Str AssetRequestList>",
+        "Type": "TArray<String>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "LoadedAssetList",
-        "Type": "TArray<Str LoadedAssetList>",
+        "Type": "TArray<String>",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -43,23 +60,6 @@
         "Type": "TArray<struct CapturedPostLoadExcess>",
         "Size": "0x10",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "CapturedPostLoadExcess": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ObjectName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PostLoadDuration",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x10"
       }
     ]
   },

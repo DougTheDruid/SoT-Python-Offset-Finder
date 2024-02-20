@@ -1,4 +1,116 @@
 {
+  "TestUObject": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestablePlayerControllerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_N4MU7[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "OtherTestUObject": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AutomationLatentActionCallback": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x38_9LXRZ[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AutomationBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RunUnitTestsCommandlet": {
+    "Super": "Commandlet",
+    "FullSize": "0x80",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestablePlayerControllerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ObjectWithSettableWorld": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "World",
+        "Type": "class World*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AggregateAssetAudit": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ActorThatLogsErrorWhenTicked": {
+    "Super": "Actor",
+    "FullSize": "0x3c8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BPNamedObjectMock": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestablePlayerController": {
+    "Super": "PlayerController",
+    "FullSize": "0x770",
+    "InheritedSize": "0x770",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TestLevelScriptActor": {
     "Super": "LevelScriptActor",
     "FullSize": "0x490",
@@ -6,7 +118,7 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "pad0x8_FYILT[0x8]",
+        "Name": "pad0x8_OJQ7I[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3d0"
@@ -54,7 +166,7 @@
         "Offset": "0x3de"
       },
       {
-        "Name": "pad0x1_ZN7ML[0x1]",
+        "Name": "pad0x1_KYRC2[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x3df"
@@ -78,7 +190,7 @@
         "Offset": "0x3f1"
       },
       {
-        "Name": "pad0x2_RTUD8[0x2]",
+        "Name": "pad0x2_BL0LR[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3f2"
@@ -96,26 +208,26 @@
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x4_L2MHM[0x4]",
+        "Name": "pad0x4_QJA2E[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3fc"
       },
       {
         "Name": "VerboseLogCategories",
-        "Type": "TArray<Str VerboseLogCategories>",
+        "Type": "TArray<String>",
         "Size": "0x10",
         "Offset": "0x400"
       },
       {
         "Name": "ClientsRunning",
-        "Type": "TArray<Int ClientsRunning>",
+        "Type": "TArray<int>",
         "Size": "0x10",
         "Offset": "0x410"
       },
       {
         "Name": "ClientIds",
-        "Type": "TArray<Int ClientIds>",
+        "Type": "TArray<int>",
         "Size": "0x10",
         "Offset": "0x420"
       },
@@ -138,26 +250,12 @@
         "Offset": "0x450"
       },
       {
-        "Name": "pad0x3c_TIRI6[0x3c]",
+        "Name": "pad0x3c_FDNE2[0x3c]",
         "Type": "char",
         "Size": "0x3c",
         "Offset": "0x454"
       }
     ]
-  },
-  "ActorThatLogsErrorWhenTicked": {
-    "Super": "Actor",
-    "FullSize": "0x3c8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AggregateAssetAudit": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "AssetAuditSettings": {
     "Super": "DeveloperSettings",
@@ -167,55 +265,34 @@
     "Attributes": [
       {
         "Name": "PathsToAuditOnSave",
-        "Type": "TArray<Str PathsToAuditOnSave>",
+        "Type": "TArray<String>",
         "Size": "0x10",
         "Offset": "0x38"
       },
       {
         "Name": "TypesToIgnoreInFeatureToggleAudits",
-        "Type": "TArray<Assetclass TypesToIgnoreInFeatureToggleAudits>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x48"
       },
       {
         "Name": "AssetAuditorsLoadExceptionList",
-        "Type": "TArray<Str AssetAuditorsLoadExceptionList>",
+        "Type": "TArray<String>",
         "Size": "0x10",
         "Offset": "0x58"
       },
       {
         "Name": "IgnoreReferencersForClasses",
-        "Type": "TArray<Assetclass IgnoreReferencersForClasses>",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x68"
       }
     ]
   },
-  "AutomationBlueprintFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AutomationLatentActionCallback": {
-    "Super": "Object",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "pad0x38_EIF1V[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "BPNamedObjectMock": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
+  "TestAbstractActor": {
+    "Super": "Actor",
+    "FullSize": "0x3c8",
+    "InheritedSize": "0x3c8",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -230,83 +307,6 @@
     "Super": "GameMode",
     "FullSize": "0x4c0",
     "InheritedSize": "0x4c0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ObjectWithSettableWorld": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "World",
-        "Type": "class World*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "TestUObject": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "OtherTestUObject": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RunUnitTestsCommandlet": {
-    "Super": "Commandlet",
-    "FullSize": "0x80",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TestablePlayerController": {
-    "Super": "PlayerController",
-    "FullSize": "0x770",
-    "InheritedSize": "0x770",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TestablePlayerControllerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TestablePlayerControllerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_XRHK2[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0xc8"
-      }
-    ]
-  },
-  "TestAbstractActor": {
-    "Super": "Actor",
-    "FullSize": "0x3c8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TestSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
     "ClassSize": "0x0",
     "Attributes": []
   },
