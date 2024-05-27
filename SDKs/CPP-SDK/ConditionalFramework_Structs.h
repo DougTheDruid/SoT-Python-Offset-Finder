@@ -6,6 +6,30 @@
 
 
 // Size 0x10
+struct ConditionFromAsset
+{
+public:
+	class ConditionRootAsset*                                    ConditionAsset;                                    // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct ConditionContextPayloadSelectorBase
+{
+public:
+	struct                                                       PayloadTarget;                                     // 0x8(0x10)
+};
+
+
+// Size 0x10
+struct WorldObjectConditionContextPayload
+{
+public:
+	class World*                                                 WorldObject;                                       // 0x8(0x8)
+};
+
+
+// Size 0x10
 struct ConditionContextPayloadTarget
 {
 public:
@@ -14,54 +38,11 @@ public:
 };
 
 
-// Size 0x20
-struct ConditionInstance
+// Size 0x10
+struct TargetConditionContextPayload
 {
 public:
-	char                                                         pad0x20_SI0Q5[0x20];                               // 0x0(0x20)
-};
-
-
-// Size 0x18
-struct ConditionContextPayloadObjectSelector
-{
-public:
-	char                                                         pad0x18_K49P0[0x18];                               // 0x0(0x18)
-};
-
-
-// Size 0x38
-struct IsObjectOfTypeCondition
-{
-public:
-	char                                                         pad0x28_2PGBB[0x28];                               // 0x0(0x28)
-	TArray<Class>                                                TargetObjectClasses;                               // 0x28(0x10)
-};
-
-
-// Size 0x30
-struct IsGameOnSpecificPlayModeVariantCondition
-{
-public:
-	char                                                         pad0x28_597XR[0x28];                               // 0x0(0x28)
-	char                                                         TargetMode;                                        // 0x28(0x1)
-	char                                                         pad0x7_O5VH9[0x7];                                 // 0x29(0x7)
-};
-
-
-// Size 0x18
-struct ConditionContextPayloadComponentOwnerSelector
-{
-public:
-	char                                                         pad0x18_EP9XZ[0x18];                               // 0x0(0x18)
-};
-
-
-// Size 0x20
-struct ConditionContextPayloadSelectorInstance
-{
-public:
-	char                                                         pad0x20_GOUYO[0x20];                               // 0x0(0x20)
+	class Actor*                                                 Target;                                            // 0x8(0x8)
 };
 
 
@@ -69,80 +50,16 @@ public:
 struct IsGameOnSpecificPlayModeCondition
 {
 public:
-	char                                                         pad0x28_9WJ0Z[0x28];                               // 0x0(0x28)
 	char                                                         TargetMode;                                        // 0x28(0x1)
-	char                                                         pad0x7_E4AC0[0x7];                                 // 0x29(0x7)
 };
 
 
-// Size 0x10
-struct TargetConditionContextPayload
+// Size 0x48
+struct IsSpecifiedActorCondition
 {
 public:
-	char                                                         pad0x8_W1144[0x8];                                 // 0x0(0x8)
-	class Actor*                                                 Target;                                            // 0x8(0x8)
-};
-
-
-// Size 0x8
-struct ConditionContextPayloadBase
-{
-public:
-	char                                                         pad0x8_9RHGW[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x10
-struct InstigatorConditionContextPayload
-{
-public:
-	char                                                         pad0x8_W8U78[0x8];                                 // 0x0(0x8)
-	class Actor*                                                 Instigator;                                        // 0x8(0x8)
-};
-
-
-// Size 0x10
-struct WorldObjectConditionContextPayload
-{
-public:
-	char                                                         pad0x8_2I9AU[0x8];                                 // 0x0(0x8)
-	class World*                                                 WorldObject;                                       // 0x8(0x8)
-};
-
-
-// Size 0x8
-struct ConditionBase
-{
-public:
-	char                                                         pad0x8_N497M[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x18
-struct IsFeatureEnabledCondition
-{
-public:
-	char                                                         pad0x8_WB66Z[0x8];                                 // 0x0(0x8)
-	struct FeatureFlag                                           Feature;                                           // 0x8(0xc)
-	char                                                         pad0x4_4THU3[0x4];                                 // 0x14(0x4)
-};
-
-
-// Size 0x10
-struct ConditionFromAsset
-{
-public:
-	char                                                         pad0x8_9O5VR[0x8];                                 // 0x0(0x8)
-	class ConditionRootAsset*                                    ConditionAsset;                                    // 0x8(0x8)
-};
-
-
-// Size 0x18
-struct OrCondition
-{
-public:
-	char                                                         pad0x8_TOFOY[0x8];                                 // 0x0(0x8)
-	TArray<struct ConditionInstance>                             Conditions;                                        // 0x8(0x10)
+	struct                                                       SpecifyingActorPayloadSelector;                    // 0x8(0x20)
+	struct                                                       TargetActorPayloadSelector;                        // 0x28(0x20)
 };
 
 
@@ -150,7 +67,6 @@ public:
 struct AndCondition
 {
 public:
-	char                                                         pad0x8_XL6NK[0x8];                                 // 0x0(0x8)
 	TArray<struct ConditionInstance>                             Conditions;                                        // 0x8(0x10)
 };
 
@@ -159,8 +75,15 @@ public:
 struct TargetedPayloadConditionBase
 {
 public:
-	char                                                         pad0x8_MJ1OE[0x8];                                 // 0x0(0x8)
-	struct ConditionContextPayloadSelectorInstance               PayloadSelector;                                   // 0x8(0x20)
+	struct                                                       PayloadSelector;                                   // 0x8(0x20)
+};
+
+
+// Size 0x30
+struct IsGameOnSpecificPlayModeVariantCondition
+{
+public:
+	char                                                         TargetMode;                                        // 0x28(0x1)
 };
 
 
@@ -168,27 +91,39 @@ public:
 struct NotCondition
 {
 public:
-	char                                                         pad0x8_P6O77[0x8];                                 // 0x0(0x8)
-	struct ConditionInstance                                     Condition;                                         // 0x8(0x20)
+	struct                                                       Condition;                                         // 0x8(0x20)
 };
 
 
 // Size 0x18
-struct ConditionContextPayloadSelectorBase
+struct IsFeatureEnabledCondition
 {
 public:
-	char                                                         pad0x8_78ZFZ[0x8];                                 // 0x0(0x8)
-	struct ConditionContextPayloadTarget                         PayloadTarget;                                     // 0x8(0x10)
+	struct                                                       Feature;                                           // 0x8(0xc)
 };
 
 
-// Size 0x48
-struct IsSpecifiedActorCondition
+// Size 0x18
+struct OrCondition
 {
 public:
-	char                                                         pad0x8_TNDU6[0x8];                                 // 0x0(0x8)
-	struct ConditionContextPayloadSelectorInstance               SpecifyingActorPayloadSelector;                    // 0x8(0x20)
-	struct ConditionContextPayloadSelectorInstance               TargetActorPayloadSelector;                        // 0x28(0x20)
+	TArray<struct ConditionInstance>                             Conditions;                                        // 0x8(0x10)
+};
+
+
+// Size 0x10
+struct InstigatorConditionContextPayload
+{
+public:
+	class Actor*                                                 Instigator;                                        // 0x8(0x8)
+};
+
+
+// Size 0x38
+struct IsObjectOfTypeCondition
+{
+public:
+	TArray<Class>                                                TargetObjectClasses;                               // 0x28(0x10)
 };
 
 

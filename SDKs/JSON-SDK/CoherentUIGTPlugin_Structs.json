@@ -21,12 +21,6 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_WIGSF[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x9"
-      },
-      {
         "Name": "ClickThroughAlphaThreshold",
         "Type": "float",
         "Size": "0x4",
@@ -60,12 +54,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x5"
-      },
-      {
-        "Name": "pad0x2_ESOHX[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x6"
       },
       {
         "Name": "URL",

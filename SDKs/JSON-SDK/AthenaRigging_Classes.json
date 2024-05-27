@@ -1,114 +1,10 @@
 {
-  "InstancedRopeComponent": {
-    "Super": "PrimitiveComponent",
-    "FullSize": "0x680",
-    "InheritedSize": "0x5c0",
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "StaticMesh",
-        "Type": "class StaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x5b8"
-      },
-      {
-        "Name": "Ropes",
-        "Type": "TArray<struct InstancedRopeParams>",
-        "Size": "0x10",
-        "Offset": "0x5c0"
-      },
-      {
-        "Name": "ShadowLOD",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5d0"
-      },
-      {
-        "Name": "pad0xac_P0D5Y[0xac]",
-        "Type": "char",
-        "Size": "0xac",
-        "Offset": "0x5d4"
-      }
-    ]
-  },
-  "RopeInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RopeCatenaryRenderComponent": {
-    "Super": "CordRenderComponent",
-    "FullSize": "0x660",
-    "InheritedSize": "0x660",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RiggingSystemComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x320",
-    "InheritedSize": "0x2e0",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "RopeStyle",
-        "Type": "struct RopeStyleParams",
-        "Size": "0x20",
-        "Offset": "0x2e0"
-      },
-      {
-        "Name": "LineGroups",
-        "Type": "TArray<struct RiggingSystemLineGroup>",
-        "Size": "0x10",
-        "Offset": "0x300"
-      },
-      {
-        "Name": "Impl",
-        "Type": "class RiggingSystem*",
-        "Size": "0x8",
-        "Offset": "0x310"
-      },
-      {
-        "Name": "pad0x8_SKABK[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x318"
-      }
-    ]
-  },
-  "MaterialExpressionRopeParameter": {
-    "Super": "MaterialExpression",
-    "FullSize": "0x78",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "RopeParameterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "pad0x7_GY8NB[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x71"
-      }
-    ]
-  },
   "RiggingSystem": {
     "Super": "Actor",
     "FullSize": "0x518",
     "InheritedSize": "0x3c8",
     "ClassSize": "0x150",
     "Attributes": [
-      {
-        "Name": "pad0x8_VFNE0[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      },
       {
         "Name": "Root",
         "Type": "class SceneComponent*",
@@ -141,7 +37,7 @@
       },
       {
         "Name": "Pulleys",
-        "Type": "struct RiggingSystemPulleyData",
+        "Type": "struct",
         "Size": "0x60",
         "Offset": "0x410"
       },
@@ -156,12 +52,72 @@
         "Type": "TArray<float>",
         "Size": "0x10",
         "Offset": "0x480"
+      }
+    ]
+  },
+  "InstancedRopeComponent": {
+    "Super": "PrimitiveComponent",
+    "FullSize": "0x690",
+    "InheritedSize": "0x5d0",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "StaticMesh",
+        "Type": "class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x5c8"
       },
       {
-        "Name": "pad0x88_IGSH2[0x88]",
-        "Type": "char",
-        "Size": "0x88",
-        "Offset": "0x490"
+        "Name": "Ropes",
+        "Type": "TArray<struct InstancedRopeParams>",
+        "Size": "0x10",
+        "Offset": "0x5d0"
+      },
+      {
+        "Name": "ShadowLOD",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5e0"
+      }
+    ]
+  },
+  "MaterialExpressionRopeParameter": {
+    "Super": "MaterialExpression",
+    "FullSize": "0x78",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "RopeParameterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "RiggingSystemComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x320",
+    "InheritedSize": "0x2e0",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "RopeStyle",
+        "Type": "struct",
+        "Size": "0x20",
+        "Offset": "0x2e0"
+      },
+      {
+        "Name": "LineGroups",
+        "Type": "TArray<struct RiggingSystemLineGroup>",
+        "Size": "0x10",
+        "Offset": "0x300"
+      },
+      {
+        "Name": "Impl",
+        "Type": "class RiggingSystem*",
+        "Size": "0x8",
+        "Offset": "0x310"
       }
     ]
   },

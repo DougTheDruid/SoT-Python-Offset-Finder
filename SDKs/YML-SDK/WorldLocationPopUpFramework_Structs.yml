@@ -20,7 +20,7 @@ TaleWorldLocationPopUpServiceEntry:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: MaxDistance
     Offset: '0xc'
     Size: '0x4'

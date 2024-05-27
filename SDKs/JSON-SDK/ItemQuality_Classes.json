@@ -1,11 +1,4 @@
 {
-  "ItemQualityInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ItemQualityComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x110",
@@ -13,22 +6,10 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_EM8HB[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
         "Name": "ItemQualityLevel",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xd0"
-      },
-      {
-        "Name": "pad0x7_KKNPX[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xd1"
       },
       {
         "Name": "CompanySpecificItemQualityLevels",

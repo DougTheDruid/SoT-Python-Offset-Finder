@@ -10,10 +10,6 @@ ScalarParamInfo:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_N3FBO[0x3]
-    Offset: '0x9'
-    Size: '0x3'
-    Type: char
   - Name: NewScalarValue
     Offset: '0xc'
     Size: '0x4'

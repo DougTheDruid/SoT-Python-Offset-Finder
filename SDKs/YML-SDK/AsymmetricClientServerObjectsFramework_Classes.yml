@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 AsymmetricClientObject:
   Attributes:
-  - Name: pad0x18_SMR9W[0x18]
-    Offset: '0x3c8'
-    Size: '0x18'
-    Type: char
   - Name: BaseComponent
     Offset: '0x3e0'
     Size: '0x8'
@@ -29,7 +25,7 @@ AsymmetricClientObject:
   - Name: RotationWhenPlacingWorldProxy
     Offset: '0x408'
     Size: '0xc'
-    Type: struct Rotator
+    Type: struct
   - Name: ZOffsetWhenPlacingWorldProxy
     Offset: '0x414'
     Size: '0x4'
@@ -40,10 +36,6 @@ AsymmetricClientObject:
   Super: Actor
 AsymmetricObjectServerManager:
   Attributes:
-  - Name: pad0x18_HD2AD[0x18]
-    Offset: '0x3c8'
-    Size: '0x18'
-    Type: char
   - Name: SpawnedObject
     Offset: '0x3e0'
     Size: '0x8'
@@ -55,11 +47,11 @@ AsymmetricObjectServerManager:
   - Name: AsymmetricObjectAsset
     Offset: '0x3f0'
     Size: '0x10'
-    Type: struct StringAssetReference
-  - Name: pad0x20_JTZ4I[0x20]
+    Type: struct
+  - Name: ForcedAsymmetricObjectAsset
     Offset: '0x400'
     Size: '0x20'
-    Type: char
+    Type: assetclass
   ClassSize: '0x58'
   FullSize: '0x420'
   InheritedSize: '0x3c8'

@@ -12,7 +12,7 @@ EventItemProxyMovedFromSlot:
   - Name: ItemLocation
     Offset: '0x0'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   ClassSize: '0xc'
 RetractorOrientationAdjustmentFlags:
   Attributes:

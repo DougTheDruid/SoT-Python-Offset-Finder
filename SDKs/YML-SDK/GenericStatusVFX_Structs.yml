@@ -5,15 +5,11 @@ StatusAudioChangedEvent:
   - Name: StatusApplied
     Offset: '0x0'
     Size: '0x18'
-    Type: struct Status
+    Type: struct
   - Name: IsActive
     Offset: '0x18'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_WQRII[0x7]
-    Offset: '0x19'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x20'
 StatusVFXChangedEvent:
   Attributes:

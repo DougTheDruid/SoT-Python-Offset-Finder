@@ -1,15 +1,4 @@
 {
-  "GameServiceMap": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "pad0x70_C7OKA[0x70]",
-        "Type": "char",
-        "Size": "0x70",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "GameServiceCoordinatorUnit": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -18,12 +7,6 @@
         "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x10_MRQ0C[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x8"
       }
     ]
   },
@@ -35,12 +18,6 @@
         "Type": "TArray<struct GameServiceCoordinatorUnit>",
         "Size": "0x10",
         "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x10_E06B2[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },

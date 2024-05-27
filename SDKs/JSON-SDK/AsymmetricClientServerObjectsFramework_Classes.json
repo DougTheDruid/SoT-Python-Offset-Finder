@@ -6,12 +6,6 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x18_HD2AD[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x3c8"
-      },
-      {
         "Name": "SpawnedObject",
         "Type": "class AsymmetricClientObject*",
         "Size": "0x8",
@@ -25,13 +19,13 @@
       },
       {
         "Name": "AsymmetricObjectAsset",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x3f0"
       },
       {
-        "Name": "pad0x20_JTZ4I[0x20]",
-        "Type": "char",
+        "Name": "ForcedAsymmetricObjectAsset",
+        "Type": "assetclass",
         "Size": "0x20",
         "Offset": "0x400"
       }
@@ -43,12 +37,6 @@
     "InheritedSize": "0x3c8",
     "ClassSize": "0x50",
     "Attributes": [
-      {
-        "Name": "pad0x18_SMR9W[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x3c8"
-      },
       {
         "Name": "BaseComponent",
         "Type": "class BoxComponent*",
@@ -81,7 +69,7 @@
       },
       {
         "Name": "RotationWhenPlacingWorldProxy",
-        "Type": "struct Rotator",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0x408"
       },

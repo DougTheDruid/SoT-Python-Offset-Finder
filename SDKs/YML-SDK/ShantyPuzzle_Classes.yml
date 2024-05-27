@@ -6,10 +6,6 @@ ShantyPuzzleCompletionComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ZKE8E[0x4]
-    Offset: '0xcc'
-    Size: '0x4'
-    Type: char
   - Name: StartCompletionReaction
     Offset: '0xd0'
     Size: '0x10'
@@ -32,10 +28,6 @@ ShantyPuzzleCompletionComponent:
   Super: ActorComponent
 ShantyPuzzleComponent:
   Attributes:
-  - Name: pad0x8_ONIS8[0x8]
-    Offset: '0x2e0'
-    Size: '0x8'
-    Type: char
   - Name: RequiredShantyItemDesc
     Offset: '0x2e8'
     Size: '0x8'
@@ -52,14 +44,10 @@ ShantyPuzzleComponent:
     Offset: '0x301'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_BK5VW[0x6]
-    Offset: '0x302'
-    Size: '0x6'
-    Type: char
   - Name: ActiveTimeRange
     Offset: '0x308'
     Size: '0x10'
-    Type: struct GameTimeRange
+    Type: struct
   - Name: ShantyPuzzleInteractionZones
     Offset: '0x318'
     Size: '0x10'
@@ -68,27 +56,7 @@ ShantyPuzzleComponent:
     Offset: '0x328'
     Size: '0x8'
     Type: class Ensemble*
-  - Name: pad0xc0_FOQE5[0xc0]
-    Offset: '0x330'
-    Size: '0xc0'
-    Type: char
   ClassSize: '0x110'
   FullSize: '0x3f0'
   InheritedSize: '0x2e0'
   Super: SceneComponent
-ShantyPuzzleInteractionZoneComponent:
-  Attributes:
-  - Name: pad0x20_671TX[0x20]
-    Offset: '0x5e0'
-    Size: '0x20'
-    Type: char
-  ClassSize: '0x20'
-  FullSize: '0x600'
-  InheritedSize: '0x5e0'
-  Super: SphereComponent
-ShantyPuzzleInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

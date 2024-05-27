@@ -7,11 +7,10 @@
 class AsymmetricObjectServerManager: public Actor
 {
 public:
-	char                                                         pad0x18_HD2AD[0x18];                               // 0x3c8(0x18)
 	class AsymmetricClientObject*                                SpawnedObject;                                     // 0x3e0(0x8)
 	class SceneComponent*                                        SceneComponent;                                    // 0x3e8(0x8)
-	struct StringAssetReference                                  AsymmetricObjectAsset;                             // 0x3f0(0x10)
-	char                                                         pad0x20_JTZ4I[0x20];                               // 0x400(0x20)
+	struct                                                       AsymmetricObjectAsset;                             // 0x3f0(0x10)
+	assetclass                                                   ForcedAsymmetricObjectAsset;                       // 0x400(0x20)
 };
 
 
@@ -19,13 +18,12 @@ public:
 class AsymmetricClientObject: public Actor
 {
 public:
-	char                                                         pad0x18_SMR9W[0x18];                               // 0x3c8(0x18)
 	class BoxComponent*                                          BaseComponent;                                     // 0x3e0(0x8)
 	class StaticMeshMemoryConstraintComponent*                   ThirdPersonMesh;                                   // 0x3e8(0x8)
 	class WaterInteractionComponent*                             WaterInteractionComponent;                         // 0x3f0(0x8)
 	class BuoyancyComponent*                                     BuoyancyComponent;                                 // 0x3f8(0x8)
 	class SpawnDependentTrackedOwnerComponent*                   SpawnDependentTrackedOwnerComponent;               // 0x400(0x8)
-	struct Rotator                                               RotationWhenPlacingWorldProxy;                     // 0x408(0xc)
+	struct                                                       RotationWhenPlacingWorldProxy;                     // 0x408(0xc)
 	float                                                        ZOffsetWhenPlacingWorldProxy;                      // 0x414(0x4)
 };
 

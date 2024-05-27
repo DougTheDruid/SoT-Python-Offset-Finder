@@ -6,14 +6,8 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "pad0x8_TSCGR[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
         "Name": "Settings",
-        "Type": "struct LightPropagationVolumeSettings",
+        "Type": "struct",
         "Size": "0x70",
         "Offset": "0x30"
       },
@@ -22,12 +16,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xa0"
-      },
-      {
-        "Name": "pad0xc_KC9CX[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0xa4"
       }
     ]
   },

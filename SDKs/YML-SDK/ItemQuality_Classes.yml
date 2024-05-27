@@ -2,18 +2,10 @@
 # https://github.com/DougTheDruid
 ItemQualityComponent:
   Attributes:
-  - Name: pad0x8_EM8HB[0x8]
-    Offset: '0xc8'
-    Size: '0x8'
-    Type: char
   - Name: ItemQualityLevel
     Offset: '0xd0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_KKNPX[0x7]
-    Offset: '0xd1'
-    Size: '0x7'
-    Type: char
   - Name: CompanySpecificItemQualityLevels
     Offset: '0xd8'
     Size: '0x10'
@@ -34,9 +26,3 @@ ItemQualityComponent:
   FullSize: '0x110'
   InheritedSize: '0xc8'
   Super: ActorComponent
-ItemQualityInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

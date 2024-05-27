@@ -14,30 +14,13 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x430] - InheritedSize[0x418]
-class GlobalDigSpotVoyageTriggerActor: public GlobalVoyageTriggerActor
-{
-public:
-	char                                                         pad0x18_5MJAB[0x18];                               // 0x418(0x18)
-};
-
-
 // Size 0x30 (Full Size[0x3f8] - InheritedSize[0x3c8]
 class GlobalDigSpotService: public Actor
 {
 public:
-	char                                                         pad0x8_K5G0J[0x8];                                 // 0x3c8(0x8)
 	class VoyageDescDataAsset*                                   DefaultVoyageDesc;                                 // 0x3d0(0x8)
 	class PopUpMessageDesc*                                      Notification;                                      // 0x3d8(0x8)
 	class GlobalDigSpotDefinitionList*                           DigSpotDefinitions;                                // 0x3e0(0x8)
-	char                                                         pad0x10_90TCK[0x10];                               // 0x3e8(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GlobalDigSpotDebugCheatInterface: public Interface
-{
-public:
 };
 
 
@@ -46,21 +29,6 @@ class GlobalDigSpotSettings: public DeveloperSettings
 {
 public:
 	class UClass*                                                GlobalDigSpotServiceClass;                         // 0x38(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class GlobalDigSpotDebugCheat: public Actor
-{
-public:
-	char                                                         pad0x8_AKZO7[0x8];                                 // 0x3c8(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GlobalDigSpotServiceInterface: public Interface
-{
-public:
 };
 
 

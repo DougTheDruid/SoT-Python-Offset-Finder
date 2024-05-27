@@ -10,10 +10,6 @@ ChecklistActionData:
     Offset: '0x2c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_WDXEX[0x3]
-    Offset: '0x2d'
-    Size: '0x3'
-    Type: char
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
@@ -31,61 +27,43 @@ ChecklistItemsDataAsset:
 ChecklistMap:
   Attributes:
   - Name: CanvasWidth
-    Offset: '0x828'
+    Offset: '0x830'
     Size: '0x4'
     Type: int
   - Name: CanvasHeight
-    Offset: '0x82c'
+    Offset: '0x834'
     Size: '0x4'
     Type: int
   - Name: Font
-    Offset: '0x830'
+    Offset: '0x838'
     Size: '0x8'
     Type: class Font*
   - Name: FontScale
-    Offset: '0x838'
+    Offset: '0x840'
     Size: '0x4'
     Type: float
   - Name: FontLineSpacingScale
-    Offset: '0x83c'
+    Offset: '0x844'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_HQC9B[0x8]
-    Offset: '0x840'
-    Size: '0x8'
-    Type: char
   - Name: ChecklistMapLayout
-    Offset: '0x848'
+    Offset: '0x850'
     Size: '0x8'
     Type: class ChecklistMapLayout*
   - Name: Contents
-    Offset: '0x850'
+    Offset: '0x858'
     Size: '0xe8'
-    Type: struct ChecklistMapContents
-  - Name: pad0x48_50K9B[0x48]
-    Offset: '0x938'
-    Size: '0x48'
-    Type: char
-  ClassSize: '0x150'
-  FullSize: '0x980'
+    Type: struct
+  ClassSize: '0x160'
+  FullSize: '0x990'
   InheritedSize: '0x830'
   Super: TreasureMap
-ChecklistMapCollectionInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 ChecklistMapCompletionComponent:
   Attributes:
   - Name: ActionData
     Offset: '0xc8'
     Size: '0x8'
     Type: class ChecklistActionData*
-  - Name: pad0x80_XKXPL[0x80]
-    Offset: '0xd0'
-    Size: '0x80'
-    Type: char
   ClassSize: '0x88'
   FullSize: '0x150'
   InheritedSize: '0xc8'
@@ -95,7 +73,7 @@ ChecklistMapSettings:
   - Name: ChecklistMapItemDescClass
     Offset: '0x38'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: ChecklistEvents
     Offset: '0x48'
     Size: '0x10'

@@ -1,25 +1,4 @@
 {
-  "SimpleOverlapCollectionKey": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SimpleOverlapComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_1S3JI[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      }
-    ]
-  },
   "SimpleOverlapZone": {
     "Super": "Actor",
     "FullSize": "0x4a0",
@@ -27,10 +6,16 @@
     "ClassSize": "0xd8",
     "Attributes": [
       {
-        "Name": "pad0xc8_LE0MB[0xc8]",
-        "Type": "char",
-        "Size": "0xc8",
-        "Offset": "0x3c8"
+        "Name": "Blueprint_OnStartOverlap",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x470"
+      },
+      {
+        "Name": "Blueprint_OnStopOverlap",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x480"
       },
       {
         "Name": "CollisionMesh",
@@ -43,12 +28,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x498"
-      },
-      {
-        "Name": "pad0x7_0G30R[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x499"
       }
     ]
   },

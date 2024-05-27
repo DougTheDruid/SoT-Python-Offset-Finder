@@ -1,42 +1,24 @@
 {
-  "MemoryVisualiserClass": {
-    "ClassSize": "0x28",
+  "MemoryVisualiserStat": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "ClassType",
-        "Type": "class UClass*",
+        "Name": "StatName",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "MemoryGatheringMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_YK6ZN[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
       },
       {
         "Name": "DisplayName",
         "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x10"
+        "Offset": "0x8"
       },
       {
         "Name": "MemoryUsageMB",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x4_OCPFF[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x24"
+        "Offset": "0x18"
       }
     ]
   },
@@ -62,32 +44,32 @@
       }
     ]
   },
-  "MemoryVisualiserStat": {
-    "ClassSize": "0x20",
+  "MemoryVisualiserClass": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "StatName",
-        "Type": "struct FName",
+        "Name": "ClassType",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "MemoryGatheringMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
       },
       {
         "Name": "DisplayName",
         "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x8"
+        "Offset": "0x10"
       },
       {
         "Name": "MemoryUsageMB",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x4_F5VVM[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c"
+        "Offset": "0x20"
       }
     ]
   },
@@ -191,6 +173,12 @@
         "Offset": "0x3c"
       },
       {
+        "Name": "mClusterMemoryUsedBytes",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
         "Name": "mNumClusters",
         "Type": "int",
         "Size": "0x4",
@@ -236,12 +224,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x3_2I4H3[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x31"
       },
       {
         "Name": "XboxOneBudgetMB",
@@ -290,12 +272,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x50"
-      },
-      {
-        "Name": "pad0x4_RO4HD[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x54"
       }
     ]
   },

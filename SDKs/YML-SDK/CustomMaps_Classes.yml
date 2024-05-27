@@ -2,32 +2,18 @@
 # https://github.com/DougTheDruid
 CustomMap:
   Attributes:
-  - Name: pad0x8_64MTB[0x8]
-    Offset: '0x890'
-    Size: '0x8'
-    Type: char
   - Name: Font
-    Offset: '0x898'
+    Offset: '0x8a0'
     Size: '0x8'
     Type: class Font*
   - Name: DisplayItems
-    Offset: '0x8a0'
+    Offset: '0x8a8'
     Size: '0x10'
     Type: TArray<class CustomMapDisplayObjectBase*>
-  - Name: pad0x10_S8S7K[0x10]
-    Offset: '0x8b0'
-    Size: '0x10'
-    Type: char
   ClassSize: '0x30'
-  FullSize: '0x8c0'
-  InheritedSize: '0x890'
+  FullSize: '0x8d0'
+  InheritedSize: '0x8a0'
   Super: RenderToTextureMapBase
-CustomMapCollectionInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 CustomMapData:
   Attributes:
   - Name: CustomMapItemDescClass
@@ -51,7 +37,7 @@ CustomMapDataTypeBase:
   - Name: Guid
     Offset: '0x28'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -61,15 +47,11 @@ CustomMapDataTypePositional:
   - Name: Position
     Offset: '0x38'
     Size: '0x8'
-    Type: struct Vector2D
+    Type: struct
   - Name: Orientation
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_VMF17[0x4]
-    Offset: '0x44'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -88,18 +70,10 @@ CustomMapDataTypeText:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_IUG7Z[0x3]
-    Offset: '0x85'
-    Size: '0x3'
-    Type: char
   - Name: StrikethroughThickness
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_DWS2X[0x4]
-    Offset: '0x8c'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x48'
   FullSize: '0x90'
   InheritedSize: '0x48'
@@ -109,7 +83,7 @@ CustomMapDisplayObjectBase:
   - Name: Guid
     Offset: '0x28'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -119,15 +93,11 @@ CustomMapDisplayObjectPositional:
   - Name: Position
     Offset: '0x38'
     Size: '0x8'
-    Type: struct Vector2D
+    Type: struct
   - Name: Orientation
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_4Q43U[0x4]
-    Offset: '0x44'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -146,18 +116,10 @@ CustomMapDisplayObjectText:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_8IGXS[0x3]
-    Offset: '0x85'
-    Size: '0x3'
-    Type: char
   - Name: StrikethroughThickness
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x4c_D9WAC[0x4c]
-    Offset: '0x8c'
-    Size: '0x4c'
-    Type: char
   ClassSize: '0x90'
   FullSize: '0xd8'
   InheritedSize: '0x48'

@@ -10,20 +10,12 @@ ActiveStorySpawnRequirement:
     Offset: '0x60'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1f_CPGPZ[0x1f]
-    Offset: '0x61'
-    Size: '0x1f'
-    Type: char
   ClassSize: '0x30'
   FullSize: '0x80'
   InheritedSize: '0x50'
   Super: SpawnRequirement
 DebugStoryServiceCheat:
   Attributes:
-  - Name: pad0x8_G591Z[0x8]
-    Offset: '0x3c8'
-    Size: '0x8'
-    Type: char
   - Name: AllStories
     Offset: '0x3d0'
     Size: '0x10'
@@ -36,72 +28,64 @@ DebugStoryServiceCheat:
     Offset: '0x3f0'
     Size: '0x10'
     Type: TArray<String>
-  - Name: pad0x20_7IG5L[0x20]
-    Offset: '0x400'
-    Size: '0x20'
-    Type: char
   ClassSize: '0x58'
   FullSize: '0x420'
   InheritedSize: '0x3c8'
   Super: Actor
-DebugStoryServiceCheatInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 IsStoryActiveNPCDialogConditional:
   Attributes:
   - Name: StoryFlag
     Offset: '0x30'
     Size: '0x8'
-    Type: struct StoryFlag
-  - Name: pad0x10_DH4VK[0x10]
-    Offset: '0x38'
-    Size: '0x10'
-    Type: char
+    Type: struct
   ClassSize: '0x18'
   FullSize: '0x48'
   InheritedSize: '0x30'
   Super: NPCDialogConditional
+IslandSpawnRequirement:
+  Attributes:
+  - Name: IslandNames
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<struct Name>
+  ClassSize: '0x10'
+  FullSize: '0x60'
+  InheritedSize: '0x50'
+  Super: SpawnRequirement
+SeasSpawnRequirement:
+  Attributes:
+  - Name: Seas
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<class Class*>
+  ClassSize: '0x28'
+  FullSize: '0x78'
+  InheritedSize: '0x50'
+  Super: SpawnRequirement
 StoryClaimableResourceComponent:
   Attributes:
   - Name: ClaimedStoryFlag
     Offset: '0xc8'
     Size: '0x8'
-    Type: struct StoryFlag
-  - Name: pad0x20_KBC6H[0x20]
-    Offset: '0xd0'
-    Size: '0x20'
-    Type: char
+    Type: struct
   ClassSize: '0x28'
   FullSize: '0xf0'
   InheritedSize: '0xc8'
   Super: ActorComponent
 StoryClaimedResourcesService:
   Attributes:
-  - Name: pad0x60_16JZH[0x60]
-    Offset: '0x3c8'
-    Size: '0x60'
-    Type: char
   - Name: PendingClaims
     Offset: '0x428'
     Size: '0x10'
     Type: TArray<uintptr_t>
-  - Name: pad0x50_W7P8O[0x50]
+  - Name: StoriesToClaimableResourcesMap
     Offset: '0x438'
     Size: '0x50'
-    Type: char
+    Type: map
   ClassSize: '0xc0'
   FullSize: '0x488'
   InheritedSize: '0x3c8'
   Super: Actor
-StoryClaimedResourcesServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 StoryDrivenBlendedLightingZoneComponent:
   Attributes:
   - Name: StoryDrivenLightingAssetsCollection
@@ -111,11 +95,7 @@ StoryDrivenBlendedLightingZoneComponent:
   - Name: CurrentStoryResponse
     Offset: '0x330'
     Size: '0x10'
-    Type: struct LightingZoneStoryRelatedSettings
-  - Name: pad0x20_V7JMR[0x20]
-    Offset: '0x340'
-    Size: '0x20'
-    Type: char
+    Type: struct
   ClassSize: '0x30'
   FullSize: '0x360'
   InheritedSize: '0x330'
@@ -125,11 +105,7 @@ StoryDrivenBlendedLightingZoneComponentDataAsset:
   - Name: Feature
     Offset: '0x28'
     Size: '0xc'
-    Type: struct FeatureFlag
-  - Name: pad0x4_KW89G[0x4]
-    Offset: '0x34'
-    Size: '0x4'
-    Type: char
+    Type: struct
   - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
@@ -145,16 +121,12 @@ StoryDrivenBlendedLightingZoneComponentDataAsset:
 StoryDrivenSalvageItemSpawnComponent:
   Attributes:
   - Name: Story
-    Offset: '0x5c8'
+    Offset: '0x5d8'
     Size: '0x8'
-    Type: struct StoryFlag
-  - Name: pad0x20_35SW4[0x20]
-    Offset: '0x5d0'
-    Size: '0x20'
-    Type: char
+    Type: struct
   ClassSize: '0x20'
-  FullSize: '0x5f0'
-  InheritedSize: '0x5d0'
+  FullSize: '0x600'
+  InheritedSize: '0x5e0'
   Super: SalvageItemSpawnComponent
 StoryNamesCollectionDataAsset:
   Attributes:
@@ -172,10 +144,6 @@ StoryNamesCollectionDataAsset:
   Super: DataAsset
 StoryService:
   Attributes:
-  - Name: pad0x28_UWFYD[0x28]
-    Offset: '0x3c8'
-    Size: '0x28'
-    Type: char
   - Name: Stories
     Offset: '0x3f0'
     Size: '0x10'
@@ -184,26 +152,16 @@ StoryService:
     Offset: '0x400'
     Size: '0x10'
     Type: TArray<struct StoryInfo>
-  - Name: pad0x90_02J81[0x90]
-    Offset: '0x410'
-    Size: '0x90'
-    Type: char
-  ClassSize: '0xd8'
-  FullSize: '0x4a0'
+  ClassSize: '0x130'
+  FullSize: '0x4f8'
   InheritedSize: '0x3c8'
   Super: Actor
-StoryServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 StorySettings:
   Attributes:
   - Name: StoryNamesCollectionDataAssetLocation
     Offset: '0x38'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -214,10 +172,6 @@ StorySpawnedActorsComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: class StorySpawnedActorsComponentDataAsset*
-  - Name: pad0x38_3J17W[0x38]
-    Offset: '0xd0'
-    Size: '0x38'
-    Type: char
   ClassSize: '0x40'
   FullSize: '0x108'
   InheritedSize: '0xc8'
@@ -227,11 +181,7 @@ StorySpawnedActorsComponentDataAsset:
   - Name: Feature
     Offset: '0x28'
     Size: '0xc'
-    Type: struct FeatureFlag
-  - Name: pad0x4_85G6O[0x4]
-    Offset: '0x34'
-    Size: '0x4'
-    Type: char
+    Type: struct
   - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
@@ -249,11 +199,7 @@ StorySpawnedActorsDataAsset:
   - Name: Feature
     Offset: '0x28'
     Size: '0xc'
-    Type: struct FeatureFlag
-  - Name: pad0x4_UOKQ9[0x4]
-    Offset: '0x34'
-    Size: '0x4'
-    Type: char
+    Type: struct
   - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
@@ -268,10 +214,6 @@ StorySpawnedActorsDataAsset:
   Super: DataAsset
 StorySpawnedActorsService:
   Attributes:
-  - Name: pad0x18_LF9J0[0x18]
-    Offset: '0x3c8'
-    Size: '0x18'
-    Type: char
   - Name: EarlyRegisteredComponents
     Offset: '0x3e0'
     Size: '0x10'
@@ -280,26 +222,16 @@ StorySpawnedActorsService:
     Offset: '0x3f0'
     Size: '0x8'
     Type: class StorySpawnedActorsDataAsset*
-  - Name: pad0x108_GWPSG[0x108]
-    Offset: '0x3f8'
-    Size: '0x108'
-    Type: char
   ClassSize: '0x138'
   FullSize: '0x500'
   InheritedSize: '0x3c8'
   Super: Actor
-StorySpawnedActorsServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 StorySpawnedActorsSettings:
   Attributes:
   - Name: StorySpawnActorsDataAssetLocation
     Offset: '0x38'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'

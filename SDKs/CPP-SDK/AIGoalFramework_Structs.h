@@ -5,14 +5,6 @@
 
 
 
-// Size 0x8
-struct EventAIGoalHighPriorityTargetSuggestion
-{
-public:
-	class Actor*                                                 HighPriorityTarget;                                // 0x0(0x8)
-};
-
-
 // Size 0x18
 struct EventAIGoalTargetActorChanged
 {
@@ -21,7 +13,14 @@ public:
 	class Actor*                                                 NewTargetActor;                                    // 0x8(0x8)
 	char                                                         TargetChangedReason;                               // 0x10(0x1)
 	char                                                         InvalidMovementMode;                               // 0x11(0x1)
-	char                                                         pad0x6_256OA[0x6];                                 // 0x12(0x6)
+};
+
+
+// Size 0x8
+struct EventAIGoalHighPriorityTargetSuggestion
+{
+public:
+	class Actor*                                                 HighPriorityTarget;                                // 0x0(0x8)
 };
 
 

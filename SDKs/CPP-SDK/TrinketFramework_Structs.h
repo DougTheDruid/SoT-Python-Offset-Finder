@@ -6,18 +6,10 @@
 
 
 // Size 0x10
-struct EventTrinketSetReady
+struct RequestTrinketLoadoutUIEvent
 {
 public:
-	char                                                         pad0x10_QTX1D[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct TrinketLoadoutUpdatedEvent
-{
-public:
-	char                                                         pad0x10_D2VR2[0x10];                               // 0x0(0x10)
+	TArray<String>                                               Categories;                                        // 0x0(0x10)
 };
 
 
@@ -29,24 +21,12 @@ public:
 };
 
 
-// Size 0x28
+// Size 0x30
 struct RemoveInteractingPlayerFromTrinketMountpointRpc
 {
 public:
-	char                                                         pad0x10_N69GH[0x10];                               // 0x0(0x10)
-	struct NetSubObjectPtr                                       TrinketMountpointManager;                          // 0x10(0x14)
-	int                                                          MountpointIndex;                                   // 0x24(0x4)
-};
-
-
-// Size 0x20
-struct TrinketLoadoutModelEntry
-{
-public:
-	struct FName                                                 EntitlementId;                                     // 0x0(0x8)
-	int                                                          LocationIndex;                                     // 0x8(0x4)
-	char                                                         pad0x4_EF5UW[0x4];                                 // 0xc(0x4)
-	struct FString                                               UserId;                                            // 0x10(0x10)
+	struct                                                       TrinketMountpointManager;                          // 0x18(0x14)
+	int                                                          MountpointIndex;                                   // 0x2c(0x4)
 };
 
 
@@ -59,22 +39,13 @@ public:
 };
 
 
-// Size 0x28
-struct ChestEntitlementTrinketItem
+// Size 0x20
+struct TrinketLoadoutModelEntry
 {
 public:
-	struct FString                                               ItemDesc;                                          // 0x0(0x10)
-	int                                                          PlacedValue;                                       // 0x10(0x4)
-	int                                                          PlacedThreshold;                                   // 0x14(0x4)
-	struct FString                                               OwnerGamerTag;                                     // 0x18(0x10)
-};
-
-
-// Size 0x1
-struct RequestTrinketChestItemInfoEvent
-{
-public:
-	char                                                         pad0x1_RPQS4[0x1];                                 // 0x0(0x1)
+	struct FName                                                 EntitlementId;                                     // 0x0(0x8)
+	int                                                          LocationIndex;                                     // 0x8(0x4)
+	struct FString                                               UserId;                                            // 0x10(0x10)
 };
 
 
@@ -86,11 +57,14 @@ public:
 };
 
 
-// Size 0x10
-struct RequestTrinketLoadoutUIEvent
+// Size 0x28
+struct ChestEntitlementTrinketItem
 {
 public:
-	TArray<String>                                               Categories;                                        // 0x0(0x10)
+	struct FString                                               ItemDesc;                                          // 0x0(0x10)
+	int                                                          PlacedValue;                                       // 0x10(0x4)
+	int                                                          PlacedThreshold;                                   // 0x14(0x4)
+	struct FString                                               OwnerGamerTag;                                     // 0x18(0x10)
 };
 
 
@@ -108,7 +82,6 @@ struct TrinketLoadout
 public:
 	TArray<struct TrinketLoadoutEntry>                           TrinketEntries;                                    // 0x0(0x10)
 	TArray<struct UniqueNetIdRepl>                               TrinketOwnerXUIDs;                                 // 0x10(0x10)
-	char                                                         pad0x28_7U240[0x28];                               // 0x20(0x28)
 };
 
 

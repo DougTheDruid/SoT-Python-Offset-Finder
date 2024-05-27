@@ -6,6 +6,14 @@
 
 
 // Size 0x10
+struct SimpleOverlapBegin
+{
+public:
+	struct                                                       OverlapInfo;                                       // 0x0(0x10)
+};
+
+
+// Size 0x10
 struct SimpleOverlapInfo
 {
 public:
@@ -18,15 +26,7 @@ public:
 struct SimpleOverlapEnd
 {
 public:
-	struct SimpleOverlapInfo                                     OverlapInfo;                                       // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct SimpleOverlapBegin
-{
-public:
-	struct SimpleOverlapInfo                                     OverlapInfo;                                       // 0x0(0x10)
+	struct                                                       OverlapInfo;                                       // 0x0(0x10)
 };
 
 

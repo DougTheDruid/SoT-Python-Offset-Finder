@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 DrawDebugService:
   Attributes:
-  - Name: pad0x8_ONVN9[0x8]
-    Offset: '0x3c8'
-    Size: '0x8'
-    Type: char
   - Name: MessagesReplicated
     Offset: '0x3d0'
     Size: '0x10'
@@ -38,20 +34,10 @@ DrawDebugService:
     Offset: '0x440'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7f_2SJRU[0x7f]
-    Offset: '0x441'
-    Size: '0x7f'
-    Type: char
   ClassSize: '0xf8'
   FullSize: '0x4c0'
   InheritedSize: '0x3c8'
   Super: Actor
-DrawDebugServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 ShippingDebugActorSphereCollection:
   Attributes:
   - Name: SphereList
@@ -62,12 +48,6 @@ ShippingDebugActorSphereCollection:
   FullSize: '0x3d8'
   InheritedSize: '0x3c8'
   Super: Actor
-TickableDebugDrawingServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 Videprinter:
   Attributes:
   - Name: OutputRingBuffer
@@ -82,20 +62,12 @@ Videprinter:
     Offset: '0x3dc'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0xc_OKHW2[0xc]
-    Offset: '0x3e4'
-    Size: '0xc'
-    Type: char
   ClassSize: '0x28'
   FullSize: '0x3f0'
   InheritedSize: '0x3c8'
   Super: Actor
 VideprinterService:
   Attributes:
-  - Name: pad0x8_QTO5Q[0x8]
-    Offset: '0x28'
-    Size: '0x8'
-    Type: char
   - Name: Videprinters
     Offset: '0x30'
     Size: '0x10'
@@ -104,9 +76,3 @@ VideprinterService:
   FullSize: '0x40'
   InheritedSize: '0x28'
   Super: Object
-VideprinterServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

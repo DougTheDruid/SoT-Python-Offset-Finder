@@ -6,38 +6,6 @@
 #include "AthenaStatusResponse_Structs.h"
 
 
-// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
-class StatusResponseCancelStatus: public StatusResponse
-{
-public:
-	TArray<class Class*>                                         Status;                                            // 0x30(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class StatusResponseHealthRegenerationPoolChange: public StatusResponse
-{
-public:
-	float                                                        HealthPoolChangeIntensityMultiplier;               // 0x30(0x4)
-	char                                                         pad0x4_YOL5E[0x4];                                 // 0x34(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
-class StatusResponseSetScalarParamOnCharacter: public StatusResponse
-{
-public:
-	TArray<struct ScalarParamInfo>                               ParamsToChange;                                    // 0x30(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class StatusResponseCook: public StatusResponse
-{
-public:
-};
-
-
 // Size 0x40 (Full Size[0x70] - InheritedSize[0x30]
 class StatusResponseReportNoiseEvent: public StatusResponse
 {
@@ -47,9 +15,16 @@ public:
 	float                                                        NoiseRange;                                        // 0x40(0x4)
 	float                                                        NoiseLoudness;                                     // 0x44(0x4)
 	bool                                                         NoiseMultipleTicks;                                // 0x48(0x1)
-	char                                                         pad0x3_B4JGI[0x3];                                 // 0x49(0x3)
 	float                                                        NoiseTimerTick;                                    // 0x4c(0x4)
-	char                                                         pad0x20_22LPJ[0x20];                               // 0x50(0x20)
+};
+
+
+// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
+class StatusResponseApplyPersistentStatus: public StatusResponse
+{
+public:
+	struct                                                       StatusToApply;                                     // 0x30(0x18)
+	float                                                        DurationMultiplier;                                // 0x48(0x4)
 };
 
 
@@ -65,17 +40,31 @@ public:
 class StatusResponseApplyOneShotStatus: public StatusResponse
 {
 public:
-	struct Status                                                StatusToApply;                                     // 0x30(0x18)
+	struct                                                       StatusToApply;                                     // 0x30(0x18)
 };
 
 
-// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
-class StatusResponseApplyPersistentStatus: public StatusResponse
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
+class StatusResponseSetScalarParamOnCharacter: public StatusResponse
 {
 public:
-	struct Status                                                StatusToApply;                                     // 0x30(0x18)
-	float                                                        DurationMultiplier;                                // 0x48(0x4)
-	char                                                         pad0x4_34CI9[0x4];                                 // 0x4c(0x4)
+	TArray<struct ScalarParamInfo>                               ParamsToChange;                                    // 0x30(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
+class StatusResponseCancelStatus: public StatusResponse
+{
+public:
+	TArray<class Class*>                                         Status;                                            // 0x30(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class StatusResponseHealthRegenerationPoolChange: public StatusResponse
+{
+public:
+	float                                                        HealthPoolChangeIntensityMultiplier;               // 0x30(0x4)
 };
 
 

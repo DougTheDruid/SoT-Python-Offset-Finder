@@ -1,4 +1,33 @@
 {
+  "MediaPlayerOptions": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Tracks",
+        "Type": "struct",
+        "Size": "0x1c",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SeekTime",
+        "Type": "struct",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "PlayOnOpen",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Loop",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x29"
+      }
+    ]
+  },
   "MediaPlayerTrackOptions": {
     "ClassSize": "0x1c",
     "Attributes": [
@@ -43,47 +72,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "MediaPlayerOptions": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Tracks",
-        "Type": "struct MediaPlayerTrackOptions",
-        "Size": "0x1c",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_D2CVZ[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "SeekTime",
-        "Type": "struct Timespan",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "PlayOnOpen",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Loop",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x29"
-      },
-      {
-        "Name": "pad0x6_FQO9W[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x2a"
       }
     ]
   },

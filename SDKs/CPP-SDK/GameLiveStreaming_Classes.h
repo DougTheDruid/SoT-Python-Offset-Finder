@@ -10,14 +10,7 @@
 class QueryLiveStreamsCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
-	char                                                         pad0x20_RY085[0x20];                               // 0x28(0x20)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameLiveStreamingFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
+	multicastinlinedelegate                                      OnQueriedLiveStreams;                              // 0x28(0x10)
 };
 
 

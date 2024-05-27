@@ -6,22 +6,10 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_HZBUA[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x138"
-      },
-      {
         "Name": "TooltipActiveOnBeginPlay",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x140"
-      },
-      {
-        "Name": "pad0x7_T07QC[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x141"
       },
       {
         "Name": "DescribableTooltipText",
@@ -34,12 +22,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x180"
-      },
-      {
-        "Name": "pad0x17_BHWUK[0x17]",
-        "Type": "char",
-        "Size": "0x17",
-        "Offset": "0x181"
       }
     ]
   },

@@ -22,44 +22,12 @@ EventExitedWatercraft:
     Size: '0x8'
     Type: class Actor*
   ClassSize: '0x10'
-EventOarStrokeEnded:
-  Attributes:
-  - Name: pad0x1_7AUYE[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
-EventRowboatEnteredWater:
-  Attributes:
-  - Name: pad0x1_RXCQA[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
-EventRowboatExitedWater:
-  Attributes:
-  - Name: pad0x1_9JR8U[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
-EventRowboatLoaded:
-  Attributes:
-  - Name: pad0x1_EO3LK[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
 Oar:
   Attributes:
   - Name: OarParams
     Offset: '0x0'
     Size: '0x38'
-    Type: struct OarParams
-  - Name: pad0x28_FD2PR[0x28]
-    Offset: '0x38'
-    Size: '0x28'
-    Type: char
+    Type: struct
   ClassSize: '0x60'
 OarParams:
   Attributes:
@@ -74,11 +42,11 @@ OarParams:
   - Name: OarOffsetDirection
     Offset: '0x8'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: OarForwardForceDirection
     Offset: '0x14'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: TimeForCompleteStroke
     Offset: '0x20'
     Size: '0x4'
@@ -100,13 +68,6 @@ OarParams:
     Size: '0x4'
     Type: float
   ClassSize: '0x38'
-QuestVariableWatercraft:
-  Attributes:
-  - Name: pad0x30_FYBWS[0x30]
-    Offset: '0x0'
-    Size: '0x30'
-    Type: char
-  ClassSize: '0x30'
 RowboatDamageEffectData:
   Attributes:
   - Name: DynamicMaterialInstance
@@ -117,25 +78,17 @@ RowboatDamageEffectData:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_TLOXL[0xc]
-    Offset: '0xc'
-    Size: '0xc'
-    Type: char
   ClassSize: '0x18'
 RowboatLiveryByWeight:
   Attributes:
-  - Name: pad0x20_H7WD3[0x20]
+  - Name: LiveryEntitlement
     Offset: '0x0'
     Size: '0x20'
-    Type: char
+    Type: assetclass
   - Name: Weight
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_CWS6W[0x4]
-    Offset: '0x24'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x28'
 RowboatLiveryPickerDataAssetConditions:
   Attributes:
@@ -150,22 +103,18 @@ RowboatLiveryPickerDataAssetConditions:
   - Name: Feature
     Offset: '0xc'
     Size: '0xc'
-    Type: struct FeatureFlag
+    Type: struct
   ClassSize: '0x18'
 RowboatMountStateTelemetryEvent:
   Attributes:
   - Name: WatercraftId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: ActionName
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_Y4I7E[0x3]
-    Offset: '0x11'
-    Size: '0x3'
-    Type: char
   ClassSize: '0x14'
 RowboatStrainDamageData:
   Attributes:
@@ -216,29 +165,21 @@ ScrapeableDamageSpeedEntry:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_1J1JE[0x4]
-    Offset: '0x14'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x18'
 WatercraftDespawnTelemetryEvent:
   Attributes:
   - Name: WatercraftId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: Location
     Offset: '0x10'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: DespawnReason
     Offset: '0x1c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_LM2F0[0x3]
-    Offset: '0x1d'
-    Size: '0x3'
-    Type: char
   ClassSize: '0x20'
 WatercraftRolloverCorrector:
   Attributes:
@@ -250,17 +191,13 @@ WatercraftRolloverCorrector:
     Offset: '0x4'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_FKPAX[0x4]
-    Offset: '0x8'
-    Size: '0x4'
-    Type: char
   ClassSize: '0xc'
 WatercraftSpawnTelemetryEvent:
   Attributes:
   - Name: WatercraftId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: WatercraftType
     Offset: '0x10'
     Size: '0x10'
@@ -272,9 +209,9 @@ WatercraftSpawnTelemetryEvent:
   - Name: Location
     Offset: '0x30'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: Forward
     Offset: '0x3c'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   ClassSize: '0x48'

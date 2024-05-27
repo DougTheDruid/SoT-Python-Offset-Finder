@@ -10,8 +10,7 @@
 class ShaderPlatformQualitySettings: public Object
 {
 public:
-	struct MaterialQualityOverrides                              QualityOverrides;                                  // 0x28(0x4)
-	char                                                         pad0xc_APTUH[0xc];                                 // 0x2c(0xc)
+	struct                                                       QualityOverrides;                                  // 0x28(0x4)
 };
 
 
@@ -19,7 +18,7 @@ public:
 class MaterialShaderQualitySettings: public Object
 {
 public:
-	char                                                         pad0x58_662IZ[0x58];                               // 0x28(0x58)
+	map                                                          ForwardSettingMap;                                 // 0x28(0x50)
 };
 
 

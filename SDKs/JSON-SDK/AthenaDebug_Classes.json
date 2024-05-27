@@ -1,75 +1,10 @@
 {
-  "Videprinter": {
-    "Super": "Actor",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "OutputRingBuffer",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "AddAt",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "Id",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x3dc"
-      },
-      {
-        "Name": "pad0xc_OKHW2[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x3e4"
-      }
-    ]
-  },
-  "VideprinterService": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_QTO5Q[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Videprinters",
-        "Type": "TArray<class Videprinter*>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "VideprinterServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "DrawDebugService": {
     "Super": "Actor",
     "FullSize": "0x4c0",
     "InheritedSize": "0x3c8",
     "ClassSize": "0xf8",
     "Attributes": [
-      {
-        "Name": "pad0x8_ONVN9[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      },
       {
         "Name": "MessagesReplicated",
         "Type": "TArray<struct DrawDebugItemMessage>",
@@ -117,28 +52,48 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x440"
-      },
-      {
-        "Name": "pad0x7f_2SJRU[0x7f]",
-        "Type": "char",
-        "Size": "0x7f",
-        "Offset": "0x441"
       }
     ]
   },
-  "DrawDebugServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
+  "VideprinterService": {
+    "Super": "Object",
+    "FullSize": "0x40",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Videprinters",
+        "Type": "TArray<class Videprinter*>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
   },
-  "TickableDebugDrawingServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "Videprinter": {
+    "Super": "Actor",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "OutputRingBuffer",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "AddAt",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "Id",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x3dc"
+      }
+    ]
   },
   "ShippingDebugActorSphereCollection": {
     "Super": "Actor",

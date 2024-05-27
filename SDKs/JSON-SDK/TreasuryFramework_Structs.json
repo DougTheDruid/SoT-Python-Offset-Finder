@@ -1,34 +1,12 @@
 {
-  "EventTreasuryRoomInactive": {
-    "ClassSize": "0x1",
+  "EventTreasuryRoomFlooded": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x1_3549M[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TreasuryWaveTracker": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "pad0x1c_CFBE5[0x1c]",
-        "Type": "char",
-        "Size": "0x1c",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventTreasuryRoomActive": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_QUQFC[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
+        "Name": "Treasury",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -40,12 +18,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_WGJJ2[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
       },
       {
         "Name": "SpawnerMechanism",
@@ -94,12 +66,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x7_Q3JYU[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x41"
       }
     ]
   },

@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 RetractableComponent:
   Attributes:
-  - Name: pad0x38_M4KEU[0x38]
-    Offset: '0xc8'
-    Size: '0x38'
-    Type: char
   - Name: FeatureToggle
     Offset: '0x100'
     Size: '0x8'
@@ -13,7 +9,7 @@ RetractableComponent:
   - Name: OrientationAdjustmentOnRetractFlags
     Offset: '0x108'
     Size: '0x3'
-    Type: struct RetractorOrientationAdjustmentFlags
+    Type: struct
   - Name: RetractorBoxAxis
     Offset: '0x10b'
     Size: '0x1'
@@ -30,42 +26,26 @@ RetractableComponent:
     Offset: '0x10e'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_17DWQ[0x1]
-    Offset: '0x10f'
-    Size: '0x1'
-    Type: char
   ClassSize: '0x48'
   FullSize: '0x110'
   InheritedSize: '0xc8'
   Super: ActorComponent
 RetractableFloatingBarrelComponent:
   Attributes:
-  - Name: pad0x10_4X6ME[0x10]
+  - Name: OwnerBuoyancyInterface
     Offset: '0x110'
     Size: '0x10'
-    Type: char
+    Type: interface
   ClassSize: '0x10'
   FullSize: '0x120'
   InheritedSize: '0x110'
   Super: RetractableComponent
-RetractableInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-RetractableProviderInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 RetractorComponent:
   Attributes:
-  - Name: pad0x48_N7BXF[0x48]
-    Offset: '0xc8'
-    Size: '0x48'
-    Type: char
+  - Name: AttachedRetractable
+    Offset: '0xd0'
+    Size: '0x10'
+    Type: interface
   - Name: RetractDestinationComponent
     Offset: '0x110'
     Size: '0x8'
@@ -74,17 +54,7 @@ RetractorComponent:
     Offset: '0x118'
     Size: '0x8'
     Type: class SceneComponent*
-  - Name: pad0x8_R63DO[0x8]
-    Offset: '0x120'
-    Size: '0x8'
-    Type: char
   ClassSize: '0x60'
   FullSize: '0x128'
   InheritedSize: '0xc8'
   Super: ActorComponent
-RetractorInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

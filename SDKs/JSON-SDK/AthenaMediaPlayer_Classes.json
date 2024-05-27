@@ -6,12 +6,6 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x8_L9LOX[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x170"
-      },
-      {
         "Name": "SoundComponent",
         "Type": "class WwiseMediaSoundComponent*",
         "Size": "0x8",
@@ -22,12 +16,6 @@
         "Type": "class MediaSubtitleComponent*",
         "Size": "0x8",
         "Offset": "0x180"
-      },
-      {
-        "Name": "pad0x8_P720C[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x188"
       }
     ]
   },

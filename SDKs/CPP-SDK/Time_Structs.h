@@ -5,19 +5,37 @@
 
 
 
+// Size 0x10
+struct GameTimeRange
+{
+public:
+	struct                                                       Start;                                             // 0x0(0x8)
+	struct                                                       End;                                               // 0x8(0x8)
+};
+
+
+// Size 0x8
+struct ReplicatedTimespan
+{
+public:
+	int64                                                        Ticks;                                             // 0x0(0x8)
+};
+
+
 // Size 0x8
 struct GameTime
 {
 public:
-	struct DateTime                                              DateTimeRepresentation;                            // 0x0(0x8)
+	struct                                                       DateTimeRepresentation;                            // 0x0(0x8)
 };
 
 
-// Size 0x1
-struct EventTimeServiceMigrated
+// Size 0x10
+struct ReplicatedAuthoritativeTime
 {
 public:
-	char                                                         pad0x1_5M096[0x1];                                 // 0x0(0x1)
+	struct                                                       WorldTime;                                         // 0x0(0x8)
+	struct                                                       SyncTime;                                          // 0x8(0x8)
 };
 
 
@@ -37,33 +55,7 @@ public:
 struct ReplicatedDateTime
 {
 public:
-	char                                                         pad0x8_XFTSQ[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct ReplicatedTimespan
-{
-public:
-	char                                                         pad0x8_UGQ3Y[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x10
-struct ReplicatedAuthoritativeTime
-{
-public:
-	struct ReplicatedDateTime                                    WorldTime;                                         // 0x0(0x8)
-	struct ReplicatedDateTime                                    SyncTime;                                          // 0x8(0x8)
-};
-
-
-// Size 0x10
-struct GameTimeRange
-{
-public:
-	struct GameTime                                              Start;                                             // 0x0(0x8)
-	struct GameTime                                              End;                                               // 0x8(0x8)
+	int64                                                        Ticks;                                             // 0x0(0x8)
 };
 
 

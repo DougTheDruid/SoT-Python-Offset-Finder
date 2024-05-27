@@ -6,52 +6,20 @@
 
 
 // Size 0x8
-struct SetCustomPlayerStartGameServerRequestModel
+struct ForcePlayerRespawnGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-	int                                                          PlayerStartActorNetID;                             // 0x4(0x4)
+	bool                                                         bRespawnAsGhost;                                   // 0x4(0x1)
 };
 
 
 // Size 0x8
-struct SetShouldSkipFerryOfTheDamnedGameServerRequestModel
+struct SetShouldUseRevivalFlowGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-	bool                                                         bShouldSkipFerryOfTheDamned;                       // 0x4(0x1)
-	char                                                         pad0x3_I9EO8[0x3];                                 // 0x5(0x3)
-};
-
-
-// Size 0x30
-struct CustomPlayerStartConfigGameServerRequestModel
-{
-public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
-	char                                                         pad0x4_WXMD8[0x4];                                 // 0xc(0x4)
-	struct Quat                                                  Rotation;                                          // 0x10(0x10)
-	TArray<String>                                               Tags;                                              // 0x20(0x10)
-};
-
-
-// Size 0x8
-struct CustomPlayerStartConfigResponseGameServerRequestModel
-{
-public:
-	bool                                                         Success;                                           // 0x0(0x1)
-	char                                                         pad0x3_9OYTL[0x3];                                 // 0x1(0x3)
-	int                                                          PlayerStartId;                                     // 0x4(0x4)
-};
-
-
-// Size 0x18
-struct DestroyCustomPlayerStartGameServerRequestModel
-{
-public:
-	int                                                          PlayerStartActorNetID;                             // 0x0(0x4)
-	char                                                         pad0x4_WO3TQ[0x4];                                 // 0x4(0x4)
-	struct FString                                               Tag;                                               // 0x8(0x10)
+	bool                                                         bShouldUseRevivalFlow;                             // 0x4(0x1)
 };
 
 
@@ -60,6 +28,24 @@ struct KillPlayerGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
+};
+
+
+// Size 0x18
+struct DestroyCustomPlayerStartGameServerRequestModel
+{
+public:
+	int                                                          PlayerStartActorNetID;                             // 0x0(0x4)
+	struct FString                                               Tag;                                               // 0x8(0x10)
+};
+
+
+// Size 0x8
+struct SetCustomPlayerStartGameServerRequestModel
+{
+public:
+	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
+	int                                                          PlayerStartActorNetID;                             // 0x4(0x4)
 };
 
 
@@ -72,30 +58,11 @@ public:
 
 
 // Size 0x8
-struct ForcePlayerRespawnGameServerRequestModel
+struct CustomPlayerStartConfigResponseGameServerRequestModel
 {
 public:
-	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-	bool                                                         bRespawnAsGhost;                                   // 0x4(0x1)
-	char                                                         pad0x3_PGSTM[0x3];                                 // 0x5(0x3)
-};
-
-
-// Size 0x8
-struct SetShouldUseRevivalFlowGameServerRequestModel
-{
-public:
-	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-	bool                                                         bShouldUseRevivalFlow;                             // 0x4(0x1)
-	char                                                         pad0x3_LTYE2[0x3];                                 // 0x5(0x3)
-};
-
-
-// Size 0x18
-struct CustomDeathConfiguration
-{
-public:
-	char                                                         pad0x18_A04YI[0x18];                               // 0x0(0x18)
+	bool                                                         Success;                                           // 0x0(0x1)
+	int                                                          PlayerStartId;                                     // 0x4(0x4)
 };
 
 
@@ -111,7 +78,26 @@ public:
 struct KillCrewGameServerRequestModel
 {
 public:
-	struct Guid                                                  CrewNetGUID;                                       // 0x0(0x10)
+	struct                                                       CrewNetGUID;                                       // 0x0(0x10)
+};
+
+
+// Size 0x30
+struct CustomPlayerStartConfigGameServerRequestModel
+{
+public:
+	struct                                                       Location;                                          // 0x0(0xc)
+	struct                                                       Rotation;                                          // 0x10(0x10)
+	TArray<String>                                               Tags;                                              // 0x20(0x10)
+};
+
+
+// Size 0x8
+struct SetShouldSkipFerryOfTheDamnedGameServerRequestModel
+{
+public:
+	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
+	bool                                                         bShouldSkipFerryOfTheDamned;                       // 0x4(0x1)
 };
 
 

@@ -13,12 +13,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x4_2Y3RL[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
       }
     ]
   },

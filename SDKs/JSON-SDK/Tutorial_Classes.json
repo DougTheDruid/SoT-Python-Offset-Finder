@@ -1,27 +1,53 @@
 {
-  "Tutorial2019Component": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x8",
+  "CompanyTutorialVoyageProgress": {
+    "Super": "Object",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xb8",
     "Attributes": [
       {
-        "Name": "IsEnabledByServer",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc8"
+        "Name": "AssignedVoyageProposalDescClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x28"
       },
       {
-        "Name": "IsInTutorialTale",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc9"
+        "Name": "AssignedTaleRankDescClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "TutorialStarter": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "AthenaPlayerController",
+        "Type": "class AthenaPlayerController*",
+        "Size": "0x8",
+        "Offset": "0x28"
       },
       {
-        "Name": "pad0x6_EB7C7[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0xca"
+        "Name": "ShouldPlayIntroAnimatic",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ShouldDisableAllIntroBehaviour",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x31"
+      },
+      {
+        "Name": "IntroAnimationSettings",
+        "Type": "struct",
+        "Size": "0x2c",
+        "Offset": "0x34"
       }
     ]
   },
@@ -31,12 +57,6 @@
     "InheritedSize": "0xc8",
     "ClassSize": "0x78",
     "Attributes": [
-      {
-        "Name": "pad0x8_5Z3R1[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
       {
         "Name": "CompanyOnboardingStarterClass",
         "Type": "class UClass*",
@@ -138,12 +158,26 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x11f"
+      }
+    ]
+  },
+  "Tutorial2019Component": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "IsEnabledByServer",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc8"
       },
       {
-        "Name": "pad0x20_EMUO8[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x120"
+        "Name": "IsInTutorialTale",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc9"
       }
     ]
   },
@@ -158,90 +192,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x7_WSSYK[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x31"
-      }
-    ]
-  },
-  "TutorialHelpersBlueprintLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "OnboardingStatusInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CompanyTutorialVoyageProgress": {
-    "Super": "Object",
-    "FullSize": "0xe0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xb8",
-    "Attributes": [
-      {
-        "Name": "AssignedVoyageProposalDescClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "AssignedTaleRankDescClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0xa8_XJ334[0xa8]",
-        "Type": "char",
-        "Size": "0xa8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "TutorialStarter": {
-    "Super": "Object",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "AthenaPlayerController",
-        "Type": "class AthenaPlayerController*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ShouldPlayIntroAnimatic",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "ShouldDisableAllIntroBehaviour",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x31"
-      },
-      {
-        "Name": "pad0x2_W4IJW[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x32"
-      },
-      {
-        "Name": "IntroAnimationSettings",
-        "Type": "struct FirstPersonAnimaticSettings",
-        "Size": "0x2c",
-        "Offset": "0x34"
       }
     ]
   },
@@ -262,75 +212,8 @@
         "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0xd8"
-      },
-      {
-        "Name": "pad0x58_HKUIA[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0xe8"
       }
     ]
-  },
-  "TutorialManagerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CaptaincyTutorialDesc": {
-    "Super": "EntitlementDesc",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Tutorial2019FunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "IntroductionToSOTFlowStarter": {
-    "Super": "TutorialStarter",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "TutorialTale",
-        "Type": "class VoyageDescDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "ShipSizeBasedIntroAnimatics",
-        "Type": "TArray<struct IntroductionToSOTIntroAnimatic>",
-        "Size": "0x10",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "pad0x60_U6RAR[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x78"
-      }
-    ]
-  },
-  "MaidenVoyageStarter": {
-    "Super": "TutorialStarter",
-    "FullSize": "0x60",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BeachNPCSpawnFlowStarter": {
-    "Super": "TutorialStarter",
-    "FullSize": "0x60",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "CaptaincyStarter": {
     "Super": "TutorialStarter",
@@ -363,12 +246,6 @@
         "Offset": "0x6a"
       },
       {
-        "Name": "pad0x5_XF6XE[0x5]",
-        "Type": "char",
-        "Size": "0x5",
-        "Offset": "0x6b"
-      },
-      {
         "Name": "CheckIfEntitlementIsOwned",
         "Type": "class UClass*",
         "Size": "0x8",
@@ -379,12 +256,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x78"
-      },
-      {
-        "Name": "pad0x3_RWMKC[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x79"
       },
       {
         "Name": "FeatureToggle",
@@ -399,12 +270,6 @@
         "Offset": "0x84"
       },
       {
-        "Name": "pad0x3_I96GT[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x85"
-      },
-      {
         "Name": "PromptCounterKey",
         "Type": "class UClass*",
         "Size": "0x8",
@@ -415,12 +280,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x90"
-      },
-      {
-        "Name": "pad0x64_Y1560[0x64]",
-        "Type": "char",
-        "Size": "0x64",
-        "Offset": "0x94"
       }
     ]
   },
@@ -438,12 +297,25 @@
       }
     ]
   },
-  "CompanyOnboardingStarter": {
+  "IntroductionToSOTFlowStarter": {
     "Super": "TutorialStarter",
-    "FullSize": "0x60",
+    "FullSize": "0xd8",
     "InheritedSize": "0x60",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "TutorialTale",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "ShipSizeBasedIntroAnimatics",
+        "Type": "TArray<struct IntroductionToSOTIntroAnimatic>",
+        "Size": "0x10",
+        "Offset": "0x68"
+      }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

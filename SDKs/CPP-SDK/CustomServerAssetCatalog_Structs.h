@@ -9,7 +9,8 @@
 struct GameAssetCatalogModel
 {
 public:
-	char                                                         pad0xa0_BMFND[0xa0];                               // 0x0(0xa0)
+	map                                                          gameAssetItems;                                    // 0x0(0x50)
+	map                                                          gameAssetSkeletons;                                // 0x50(0x50)
 };
 
 
@@ -20,7 +21,6 @@ public:
 	struct FString                                               fullPath;                                          // 0x0(0x10)
 	struct FString                                               FriendlyName;                                      // 0x10(0x10)
 	int                                                          performanceWeight;                                 // 0x20(0x4)
-	char                                                         pad0x4_8QOW5[0x4];                                 // 0x24(0x4)
 };
 
 

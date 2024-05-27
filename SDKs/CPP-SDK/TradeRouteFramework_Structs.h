@@ -5,32 +5,14 @@
 
 
 
-// Size 0x30
-struct TradeRouteMappingFilterQuestVariable
-{
-public:
-	char                                                         pad0x30_TPD4U[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x30
-struct QuestVariableTradeRouteData
-{
-public:
-	char                                                         pad0x30_ECGA4[0x30];                               // 0x0(0x30)
-};
-
-
 // Size 0x28
 struct TradeRouteMapping
 {
 public:
 	char                                                         Filter;                                            // 0x0(0x1)
-	char                                                         pad0x3_HCYBN[0x3];                                 // 0x1(0x3)
-	struct IslandSelectionType                                   StartIsland;                                       // 0x4(0x8)
-	char                                                         pad0x4_91C54[0x4];                                 // 0xc(0x4)
+	struct                                                       StartIsland;                                       // 0x4(0x8)
 	class UClass*                                                DifficultyBand;                                    // 0x10(0x8)
-	struct StringAssetReference                                  TradeRouteReference;                               // 0x18(0x10)
+	struct                                                       TradeRouteReference;                               // 0x18(0x10)
 };
 
 

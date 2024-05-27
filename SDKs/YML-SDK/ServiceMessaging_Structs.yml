@@ -26,5 +26,5 @@ TestStructWithNetId:
   - Name: NetId
     Offset: '0x0'
     Size: '0x18'
-    Type: struct UniqueNetIdRepl
+    Type: struct
   ClassSize: '0x18'

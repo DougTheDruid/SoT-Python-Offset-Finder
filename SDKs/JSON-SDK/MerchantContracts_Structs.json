@@ -1,4 +1,39 @@
 {
+  "MerchantContractDeliveryRequest": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ItemDesc",
+        "Type": "struct",
+        "Size": "0x28",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "NumToAllocate",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "NumToCollect",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "NumToDeliver",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "ItemAndReward": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -10,9 +45,43 @@
       },
       {
         "Name": "HandInOnTimeRewardId",
-        "Type": "struct RewardId",
+        "Type": "struct",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "PlayerMerchantContract": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IslandName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Requests",
+        "Type": "TArray<struct MerchantContractDeliveryRequest>",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "MerchantContract": {
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "DeliveryRequests",
+        "Type": "TArray<struct MerchantContractDeliveryRequest>",
+        "Size": "0x10",
+        "Offset": "0x18"
       }
     ]
   },
@@ -42,99 +111,6 @@
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x20"
-      }
-    ]
-  },
-  "MerchantContractDeliveryRequest": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "Id",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_21I4E[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "ItemDesc",
-        "Type": "struct MerchantContractItemDesc",
-        "Size": "0x28",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "NumToAllocate",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "NumToCollect",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "NumToDeliver",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x4_GZKIM[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      }
-    ]
-  },
-  "MerchantContract": {
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "pad0x18_I8Y2B[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DeliveryRequests",
-        "Type": "TArray<struct MerchantContractDeliveryRequest>",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x98_823HQ[0x98]",
-        "Type": "char",
-        "Size": "0x98",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "PlayerMerchantContract": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Id",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IslandName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Requests",
-        "Type": "TArray<struct MerchantContractDeliveryRequest>",
-        "Size": "0x10",
-        "Offset": "0x18"
       }
     ]
   },

@@ -5,16 +5,13 @@
 
 
 
-// Size 0x28
-struct MemoryVisualiserClass
+// Size 0x20
+struct MemoryVisualiserStat
 {
 public:
-	class UClass*                                                ClassType;                                         // 0x0(0x8)
-	char                                                         MemoryGatheringMode;                               // 0x8(0x1)
-	char                                                         pad0x7_YK6ZN[0x7];                                 // 0x9(0x7)
-	struct FString                                               DisplayName;                                       // 0x10(0x10)
-	float                                                        MemoryUsageMB;                                     // 0x20(0x4)
-	char                                                         pad0x4_OCPFF[0x4];                                 // 0x24(0x4)
+	struct FName                                                 StatName;                                          // 0x0(0x8)
+	struct FString                                               DisplayName;                                       // 0x8(0x10)
+	float                                                        MemoryUsageMB;                                     // 0x18(0x4)
 };
 
 
@@ -34,14 +31,14 @@ public:
 };
 
 
-// Size 0x20
-struct MemoryVisualiserStat
+// Size 0x28
+struct MemoryVisualiserClass
 {
 public:
-	struct FName                                                 StatName;                                          // 0x0(0x8)
-	struct FString                                               DisplayName;                                       // 0x8(0x10)
-	float                                                        MemoryUsageMB;                                     // 0x18(0x4)
-	char                                                         pad0x4_F5VVM[0x4];                                 // 0x1c(0x4)
+	class UClass*                                                ClassType;                                         // 0x0(0x8)
+	char                                                         MemoryGatheringMode;                               // 0x8(0x1)
+	struct FString                                               DisplayName;                                       // 0x10(0x10)
+	float                                                        MemoryUsageMB;                                     // 0x20(0x4)
 };
 
 
@@ -65,6 +62,7 @@ public:
 	int                                                          mNumPermanentObjects;                              // 0x34(0x4)
 	int                                                          mNumTransientObjects;                              // 0x38(0x4)
 	int                                                          mUnsetSlotCound;                                   // 0x3c(0x4)
+	uint32                                                       mClusterMemoryUsedBytes;                           // 0x40(0x4)
 	int                                                          mNumClusters;                                      // 0x44(0x4)
 	int                                                          mNumClusteredObjects;                              // 0x48(0x4)
 	int                                                          mMaxClusterSize;                                   // 0x4c(0x4)
@@ -79,7 +77,6 @@ public:
 	TArray<struct MemoryVisualiserStat>                          CategoryStats;                                     // 0x10(0x10)
 	TArray<struct MemoryVisualiserClass>                         CategoryClasses;                                   // 0x20(0x10)
 	bool                                                         CollectOnServer;                                   // 0x30(0x1)
-	char                                                         pad0x3_2I4H3[0x3];                                 // 0x31(0x3)
 	float                                                        XboxOneBudgetMB;                                   // 0x34(0x4)
 	float                                                        XboxOneSBudgetMB;                                  // 0x38(0x4)
 	float                                                        XboxOneXBudgetMB;                                  // 0x3c(0x4)
@@ -88,7 +85,6 @@ public:
 	float                                                        PCHighSpecBudgetMB;                                // 0x48(0x4)
 	float                                                        PCUltraSpecBudgetMB;                               // 0x4c(0x4)
 	float                                                        MemoryUsageMB;                                     // 0x50(0x4)
-	char                                                         pad0x4_RO4HD[0x4];                                 // 0x54(0x4)
 };
 
 

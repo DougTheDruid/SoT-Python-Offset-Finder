@@ -5,17 +5,17 @@ SirenAnimationData:
   - Name: SirenAnimationData
     Offset: '0x28'
     Size: '0x60'
-    Type: struct SirenAnimationDataStructure
+    Type: struct
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
   Super: AnimationData
 SirenAnimationInstance:
   Attributes:
-  - Name: pad0x18_HWUV7[0x18]
-    Offset: '0x440'
-    Size: '0x18'
-    Type: char
+  - Name: PawnOwner
+    Offset: '0x450'
+    Size: '0x8'
+    Type: class Pawn*
   - Name: PropAttachmentSocket
     Offset: '0x458'
     Size: '0x8'
@@ -23,19 +23,15 @@ SirenAnimationInstance:
   - Name: SirenAnimationData
     Offset: '0x460'
     Size: '0x60'
-    Type: struct SirenAnimationDataStructure
+    Type: struct
   - Name: AttackAnimations
     Offset: '0x4c0'
     Size: '0xb8'
-    Type: struct AthenaAnimationWeapon
+    Type: struct
   - Name: ForwardSpeed
     Offset: '0x578'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_TLV8E[0xc]
-    Offset: '0x57c'
-    Size: '0xc'
-    Type: char
   - Name: TiltDirectionAngleDegrees
     Offset: '0x588'
     Size: '0x4'
@@ -68,10 +64,6 @@ SirenAnimationInstance:
     Offset: '0x59b'
     Size: '0x1'
     Type: bool
-  - Name: pad0x4_8F9GS[0x4]
-    Offset: '0x59c'
-    Size: '0x4'
-    Type: char
   - Name: StrategiesForAggressiveAnimations
     Offset: '0x5a0'
     Size: '0x10'
@@ -79,19 +71,11 @@ SirenAnimationInstance:
   - Name: TimeBeforeAlternativeAggressiveAnimationToggleFlips
     Offset: '0x5b0'
     Size: '0x10'
-    Type: struct FloatRange
-  - Name: pad0x8_9WD84[0x8]
-    Offset: '0x5c0'
-    Size: '0x8'
-    Type: char
+    Type: struct
   - Name: AnimationsLoaded
     Offset: '0x5c8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_DX4DY[0x3]
-    Offset: '0x5c9'
-    Size: '0x3'
-    Type: char
   - Name: AimUpAlpha
     Offset: '0x5cc'
     Size: '0x4'
@@ -100,22 +84,14 @@ SirenAnimationInstance:
     Offset: '0x5d0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ZEJM1[0x4]
-    Offset: '0x5d4'
-    Size: '0x4'
-    Type: char
   - Name: FullBodyStateMachine
     Offset: '0x5d8'
     Size: '0xd8'
-    Type: struct CustomAnimationMontageStateMachine
+    Type: struct
   - Name: HitReacts
     Offset: '0x6b0'
     Size: '0x28'
-    Type: struct HitReactionAnimationState
-  - Name: pad0x38_9G1II[0x38]
-    Offset: '0x6d8'
-    Size: '0x38'
-    Type: char
+    Type: struct
   ClassSize: '0x2d0'
   FullSize: '0x710'
   InheritedSize: '0x440'

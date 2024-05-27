@@ -9,7 +9,7 @@
 struct CommunityFlagGradeData
 {
 public:
-	struct StoryFlag                                             Story;                                             // 0x0(0x8)
+	struct                                                       Story;                                             // 0x0(0x8)
 	class StaticMesh*                                            StaticMesh;                                        // 0x8(0x8)
 	class MaterialInterface*                                     Material;                                          // 0x10(0x8)
 };

@@ -10,23 +10,6 @@
       }
     ]
   },
-  "ReportMatchConclusionResponse": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "WinningCrewNewSkillValue",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LosingCrewNewSkillValue",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "ReportMatchConclusionRequest": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -41,6 +24,23 @@
         "Type": "TArray<String>",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "ReportMatchConclusionResponse": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "WinningCrewNewSkillValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LosingCrewNewSkillValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },

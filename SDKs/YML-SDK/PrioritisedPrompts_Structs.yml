@@ -2,23 +2,15 @@
 # https://github.com/DougTheDruid
 PermanentPromptNetworkEvent:
   Attributes:
-  - Name: pad0x10_C5FF4[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
   - Name: Prompt
-    Offset: '0x10'
+    Offset: '0x18'
     Size: '0x70'
-    Type: struct PrioritisedPromptWithHandle
+    Type: struct
   - Name: StartOrStop
-    Offset: '0x80'
+    Offset: '0x88'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_SJQQ3[0x7]
-    Offset: '0x81'
-    Size: '0x7'
-    Type: char
-  ClassSize: '0x88'
+  ClassSize: '0x90'
 PlayerPromptTelemetryEvent:
   Attributes:
   - Name: Message
@@ -36,10 +28,6 @@ PrioritisedPrompt:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_8805O[0x7]
-    Offset: '0x1'
-    Size: '0x7'
-    Type: char
   - Name: Message
     Offset: '0x8'
     Size: '0x38'
@@ -60,28 +48,24 @@ PrioritisedPrompt:
     Offset: '0x59'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_IR5CQ[0x6]
-    Offset: '0x5a'
-    Size: '0x6'
-    Type: char
   ClassSize: '0x60'
 PrioritisedPromptHandle:
   Attributes:
   - Name: Id
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x10'
 PrioritisedPromptWithHandle:
   Attributes:
   - Name: PromptHandle
     Offset: '0x0'
     Size: '0x10'
-    Type: struct PrioritisedPromptHandle
+    Type: struct
   - Name: Prompt
     Offset: '0x10'
     Size: '0x60'
-    Type: struct PrioritisedPrompt
+    Type: struct
   ClassSize: '0x70'
 PromptEvaluation:
   Attributes:
@@ -89,14 +73,10 @@ PromptEvaluation:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_2YAOV[0x7]
-    Offset: '0x1'
-    Size: '0x7'
-    Type: char
   - Name: Prompt
     Offset: '0x8'
     Size: '0x70'
-    Type: struct PrioritisedPromptWithHandle
+    Type: struct
   ClassSize: '0x78'
 PromptsCounterIncrementEvent:
   Attributes:
@@ -105,10 +85,3 @@ PromptsCounterIncrementEvent:
     Size: '0x8'
     Type: class UClass*
   ClassSize: '0x8'
-PromptsServiceSetupEvent:
-  Attributes:
-  - Name: pad0x1_6BGQF[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'

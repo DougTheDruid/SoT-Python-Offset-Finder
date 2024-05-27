@@ -1,26 +1,4 @@
 {
-  "TradeRouteMappingFilterQuestVariable": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_TPD4U[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "QuestVariableTradeRouteData": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_ECGA4[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "TradeRouteMapping": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -31,22 +9,10 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_HCYBN[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
         "Name": "StartIsland",
-        "Type": "struct IslandSelectionType",
+        "Type": "struct",
         "Size": "0x8",
         "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x4_91C54[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
       },
       {
         "Name": "DifficultyBand",
@@ -56,7 +22,7 @@
       },
       {
         "Name": "TradeRouteReference",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x18"
       }

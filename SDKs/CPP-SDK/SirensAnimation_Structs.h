@@ -25,10 +25,10 @@ public:
 struct SirenAnimationDataStructure
 {
 public:
-	struct SirenAnimationLocomotion                              LocomotionAnims;                                   // 0x0(0x48)
+	struct                                                       LocomotionAnims;                                   // 0x0(0x48)
 	class CustomAnimationMontageDefinitionListingDataAsset*      FullBodyMontageListings;                           // 0x48(0x8)
 	class AthenaAnimationWeaponDataAsset*                        AttackAnimationAsset;                              // 0x50(0x8)
-	struct HitReactionAnimationData                              HitReactAnimationData;                             // 0x58(0x8)
+	struct                                                       HitReactAnimationData;                             // 0x58(0x8)
 };
 
 

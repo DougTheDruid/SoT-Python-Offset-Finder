@@ -12,10 +12,10 @@ AbandonedNoteWeightedTextDataAsset:
   Super: DataAsset
 AbandonedNoteWeightedTextSourceComponent:
   Attributes:
-  - Name: pad0x40_BQWJR[0x40]
-    Offset: '0xc8'
-    Size: '0x40'
-    Type: char
+  - Name: WeightedText
+    Offset: '0xe8'
+    Size: '0x20'
+    Type: assetobject
   - Name: ClueText
     Offset: '0x108'
     Size: '0x38'
@@ -24,10 +24,6 @@ AbandonedNoteWeightedTextSourceComponent:
     Offset: '0x140'
     Size: '0x38'
     Type: struct FText
-  - Name: pad0x30_JEL9P[0x30]
-    Offset: '0x178'
-    Size: '0x30'
-    Type: char
   ClassSize: '0xe0'
   FullSize: '0x1a8'
   InheritedSize: '0xc8'
@@ -45,7 +41,7 @@ OneShotRewardableObjectBase:
   - Name: Reward
     Offset: '0x478'
     Size: '0x8'
-    Type: struct RewardId
+    Type: struct
   - Name: RewardEntitlement
     Offset: '0x480'
     Size: '0x8'
@@ -62,10 +58,6 @@ OneShotRewardableObjectBase:
     Offset: '0x490'
     Size: '0x38'
     Type: struct FText
-  - Name: pad0x20_QQ2AM[0x20]
-    Offset: '0x4c8'
-    Size: '0x20'
-    Type: char
   ClassSize: '0x80'
   FullSize: '0x4e8'
   InheritedSize: '0x468'
@@ -76,20 +68,12 @@ PopUpNotificationOnItemWieldedComponent:
     Offset: '0x148'
     Size: '0x8'
     Type: class PopUpMessageDesc*
-  - Name: pad0x18_4U41W[0x18]
-    Offset: '0x150'
-    Size: '0x18'
-    Type: char
   ClassSize: '0x20'
   FullSize: '0x168'
   InheritedSize: '0x148'
   Super: OnItemWieldedComponent
 SirenPuzzleContext:
   Attributes:
-  - Name: pad0x8_GE0YL[0x8]
-    Offset: '0x3c8'
-    Size: '0x8'
-    Type: char
   - Name: Root
     Offset: '0x3d0'
     Size: '0x8'
@@ -110,10 +94,6 @@ SirenPuzzleContext:
     Offset: '0x408'
     Size: '0x10'
     Type: TArray<char>
-  - Name: pad0xa0_2HSHE[0xa0]
-    Offset: '0x418'
-    Size: '0xa0'
-    Type: char
   ClassSize: '0xf0'
   FullSize: '0x4b8'
   InheritedSize: '0x3c8'

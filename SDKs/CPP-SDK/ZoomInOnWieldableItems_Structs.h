@@ -9,13 +9,11 @@
 struct ZoomedInOnWieldableItemActionStateConstructionInfo
 {
 public:
-	char                                                         pad0x30_DWK3C[0x30];                               // 0x0(0x30)
 	float                                                        ZoomedInFov;                                       // 0x30(0x4)
 	float                                                        FreelookPitch;                                     // 0x34(0x4)
 	float                                                        FreelookYaw;                                       // 0x38(0x4)
 	float                                                        FreelookOutInterpolationRate;                      // 0x3c(0x4)
 	float                                                        LookSensitivityScaler;                             // 0x40(0x4)
-	char                                                         pad0x4_V7EHB[0x4];                                 // 0x44(0x4)
 };
 
 

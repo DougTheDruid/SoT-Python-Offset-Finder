@@ -1,4 +1,15 @@
 {
+  "OwnerListEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "OwnerList",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TrackItemOwnershipEvent": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -9,8 +20,25 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x10_NKCUR[0x10]",
-        "Type": "char",
+        "Name": "CrewMembershipInterface",
+        "Type": "interface",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CrewTrackedItemOwnershipSet": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Item",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -27,13 +55,13 @@
       },
       {
         "Name": "CrewId",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "PreviousCrewId",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -42,40 +70,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x7_3CCKX[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x29"
-      }
-    ]
-  },
-  "CrewTrackedItemOwnershipSet": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Item",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "OwnerListEntry": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "OwnerList",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },

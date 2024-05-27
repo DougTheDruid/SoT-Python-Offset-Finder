@@ -5,11 +5,11 @@ WorldEdgeItemBatchTelemetryEvent:
   - Name: ShipLocation
     Offset: '0x0'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: TeleportLocation
     Offset: '0xc'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: NumItems
     Offset: '0x18'
     Size: '0x4'
@@ -20,16 +20,16 @@ WorldEdgeItemDroppedInRedSeaTelemetryEvent:
   - Name: DropLocation
     Offset: '0x0'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: TeleportLocation
     Offset: '0xc'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   ClassSize: '0x18'
 WorldEdgeItemServiceBatchCompletedEvent:
   Attributes:
   - Name: BatchId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x10'

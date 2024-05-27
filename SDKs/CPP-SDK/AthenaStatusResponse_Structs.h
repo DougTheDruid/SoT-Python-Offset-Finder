@@ -11,7 +11,6 @@ struct ScalarParamInfo
 public:
 	struct FName                                                 ParamName;                                         // 0x0(0x8)
 	bool                                                         UseWorldTime;                                      // 0x8(0x1)
-	char                                                         pad0x3_N3FBO[0x3];                                 // 0x9(0x3)
 	float                                                        NewScalarValue;                                    // 0xc(0x4)
 };
 

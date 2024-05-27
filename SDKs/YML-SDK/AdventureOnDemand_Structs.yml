@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 AdventureOnDemandServiceCrewEntry:
   Attributes:
-  - Name: pad0x38_SQQR0[0x38]
-    Offset: '0x0'
-    Size: '0x38'
-    Type: char
   - Name: TunnelDesc
     Offset: '0x38'
     Size: '0x8'

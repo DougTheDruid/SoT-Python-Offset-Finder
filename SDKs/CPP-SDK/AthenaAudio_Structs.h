@@ -24,18 +24,8 @@ public:
 struct AnimNotify_SoundSwitch
 {
 public:
-	struct StringAssetReference                                  SkeletalMeshReference;                             // 0x0(0x10)
+	struct                                                       SkeletalMeshReference;                             // 0x0(0x10)
 	struct FName                                                 SkeletalMeshCategoryName;                          // 0x10(0x8)
-};
-
-
-// Size 0x18
-struct StoryDrivenAudioPortalSetting
-{
-public:
-	struct StoryFlag                                             Story;                                             // 0x0(0x8)
-	class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x8(0x8)
-	class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x10(0x8)
 };
 
 
@@ -47,6 +37,16 @@ public:
 	struct FName                                                 AudioGameStateFrontend;                            // 0x8(0x8)
 	struct FName                                                 AudioGameStateLoading;                             // 0x10(0x8)
 	struct FName                                                 AudioGameStateIngame;                              // 0x18(0x8)
+};
+
+
+// Size 0x18
+struct StoryDrivenAudioPortalSetting
+{
+public:
+	struct                                                       Story;                                             // 0x0(0x8)
+	class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x8(0x8)
+	class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x10(0x8)
 };
 
 

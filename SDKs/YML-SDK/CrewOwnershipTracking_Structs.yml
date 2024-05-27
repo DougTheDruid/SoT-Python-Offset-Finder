@@ -9,19 +9,15 @@ CrewTrackedItemOwnershipChanged:
   - Name: CrewId
     Offset: '0x8'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: PreviousCrewId
     Offset: '0x18'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: IsFirstTimeOwnedByThisCrew
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_3CCKX[0x7]
-    Offset: '0x29'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x30'
 CrewTrackedItemOwnershipSet:
   Attributes:
@@ -32,7 +28,7 @@ CrewTrackedItemOwnershipSet:
   - Name: CrewId
     Offset: '0x8'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x18'
 OwnerListEntry:
   Attributes:
@@ -47,8 +43,8 @@ TrackItemOwnershipEvent:
     Offset: '0x0'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x10_NKCUR[0x10]
+  - Name: CrewMembershipInterface
     Offset: '0x8'
     Size: '0x10'
-    Type: char
+    Type: interface
   ClassSize: '0x18'

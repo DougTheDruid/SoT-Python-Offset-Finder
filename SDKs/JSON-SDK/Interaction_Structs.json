@@ -1,21 +1,4 @@
 {
-  "EventInteractionBlockingStateChanged": {
-    "ClassSize": "0x2",
-    "Attributes": [
-      {
-        "Name": "IsInteractionBlocked",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "InteractionBlockReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1"
-      }
-    ]
-  },
   "EventOptimalInteractionObjectChanged": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -37,22 +20,33 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_YDT88[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
         "Name": "PlayerPayloadSelector",
-        "Type": "struct ConditionContextPayloadSelectorInstance",
+        "Type": "struct",
         "Size": "0x20",
         "Offset": "0x8"
       },
       {
         "Name": "InteractablePayloadSelector",
-        "Type": "struct ConditionContextPayloadSelectorInstance",
+        "Type": "struct",
         "Size": "0x20",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "EventInteractionBlockingStateChanged": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Name": "IsInteractionBlocked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InteractionBlockReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
       }
     ]
   },

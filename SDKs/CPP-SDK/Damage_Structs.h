@@ -5,14 +5,13 @@
 
 
 
-// Size 0x18
+// Size 0x30
 struct TriggerPlayerControllerHitNotificationNetworkEvent
 {
 public:
-	char                                                         pad0x10_RHRJU[0x10];                               // 0x0(0x10)
-	bool                                                         IsKillingHit;                                      // 0x10(0x1)
-	bool                                                         IsHitClientPredictable;                            // 0x11(0x1)
-	char                                                         pad0x6_4BUBJ[0x6];                                 // 0x12(0x6)
+	bool                                                         IsKillingHit;                                      // 0x18(0x1)
+	bool                                                         IsHitClientPredictable;                            // 0x19(0x1)
+	struct                                                       OptionalClientAttackId;                            // 0x1c(0x10)
 };
 
 

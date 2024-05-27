@@ -6,10 +6,6 @@ AIShipBattleEncounterDescGenerationParams:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_C5ODZ[0x7]
-    Offset: '0x1'
-    Size: '0x7'
-    Type: char
   - Name: BattleGenerationParams
     Offset: '0x8'
     Size: '0x10'
@@ -21,7 +17,7 @@ AIShipBattleEncounterDescGenerationParams:
   - Name: DynamicBalancingDesc
     Offset: '0x28'
     Size: '0x58'
-    Type: struct AIShipEncounterDynamicBalancingDesc
+    Type: struct
   ClassSize: '0x80'
 AIShipBattleParams:
   Attributes:
@@ -36,16 +32,27 @@ AIShipBattleParams:
   - Name: Location
     Offset: '0x40'
     Size: '0x8'
-    Type: struct Vector2D
+    Type: struct
   - Name: Radius
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_RX7F8[0x4]
-    Offset: '0x4c'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x50'
+AIShipBootyItem:
+  Attributes:
+  - Name: DescType
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: BootyType
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
+  - Name: Rarity
+    Offset: '0xc'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x18'
 AIShipCaptainParams:
   Attributes:
   - Name: AIClassId
@@ -78,10 +85,6 @@ AIShipContextDescDamageParams:
     Offset: '0x4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_036AP[0x3]
-    Offset: '0x5'
-    Size: '0x3'
-    Type: char
   - Name: RepairTimeMultiplier
     Offset: '0x8'
     Size: '0x4'
@@ -90,10 +93,6 @@ AIShipContextDescDamageParams:
     Offset: '0xc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_MABKX[0x3]
-    Offset: '0xd'
-    Size: '0x3'
-    Type: char
   - Name: LeakAmountMultiplier
     Offset: '0x10'
     Size: '0x4'
@@ -104,7 +103,7 @@ AIShipContextDescGenerationParams:
   - Name: SharedParams
     Offset: '0x0'
     Size: '0x60'
-    Type: struct AIShipContextDescGenerationSharedParams
+    Type: struct
   - Name: EncounterSpecificParams
     Offset: '0x60'
     Size: '0x10'
@@ -151,25 +150,29 @@ AIShipContextDescGenerationShipSpecificParams:
     Offset: '0x8'
     Size: '0x8'
     Type: class ShipDescAsset*
-  - Name: ShipGenerationParams
+  - Name: SpawnerTemplateDataAsset
     Offset: '0x10'
+    Size: '0x8'
+    Type: class AIShipEncounterSpawnerTemplateDataAsset*
+  - Name: ShipGenerationParams
+    Offset: '0x18'
     Size: '0x10'
     Type: TArray<struct AIShipGenerationParams>
-  - Name: SpawnerTemplates
-    Offset: '0x20'
-    Size: '0x10'
-    Type: TArray<struct AIShipEncounterParamsSpawnerData>
-  ClassSize: '0x30'
+  ClassSize: '0x28'
 AIShipCrewAmmoType:
   Attributes:
   - Name: IconType
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: IconIndex
+    Offset: '0x1'
+    Size: '0x1'
+    Type: int8
   - Name: AmmoType
     Offset: '0x8'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   ClassSize: '0x18'
 AIShipCrewFormType:
   Attributes:
@@ -177,19 +180,34 @@ AIShipCrewFormType:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_PR307[0x3]
-    Offset: '0x1'
-    Size: '0x3'
-    Type: char
   - Name: IconColour
     Offset: '0x4'
     Size: '0x4'
-    Type: struct Color
+    Type: struct
+  - Name: IconIndex
+    Offset: '0x8'
+    Size: '0x1'
+    Type: int8
+  - Name: CaptainIconIndex
+    Offset: '0x9'
+    Size: '0x1'
+    Type: int8
   - Name: Form
     Offset: '0x10'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   ClassSize: '0x20'
+AIShipCrewSizeSpecificSpawnerEntry:
+  Attributes:
+  - Name: CrewSize
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: SpawnerTemplates
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<struct AIShipEncounterParamsSpawnerData>
+  ClassSize: '0x18'
 AIShipDamagedTelemetryEvent:
   Attributes:
   - Name: DamageType
@@ -199,11 +217,7 @@ AIShipDamagedTelemetryEvent:
   - Name: DamageLocation
     Offset: '0x10'
     Size: '0xc'
-    Type: struct Vector
-  - Name: pad0x4_Y0P7K[0x4]
-    Offset: '0x1c'
-    Size: '0x4'
-    Type: char
+    Type: struct
   - Name: DamagedShipPart
     Offset: '0x20'
     Size: '0x10'
@@ -215,11 +229,7 @@ AIShipDamagedTelemetryEvent:
   - Name: AttackId
     Offset: '0x34'
     Size: '0x10'
-    Type: struct Guid
-  - Name: pad0x4_F4OXZ[0x4]
-    Offset: '0x44'
-    Size: '0x4'
-    Type: char
+    Type: struct
   ClassSize: '0x48'
 AIShipDespawnTelemetryEvent:
   Attributes:
@@ -231,26 +241,7 @@ AIShipDespawnTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_YJVNP[0x7]
-    Offset: '0x11'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x18'
-AIShipDespawnedEvent:
-  Attributes:
-  - Name: Ship
-    Offset: '0x0'
-    Size: '0x8'
-    Type: class Actor*
-  - Name: ShipDestructionReason
-    Offset: '0x8'
-    Size: '0x1'
-    Type: byte
-  - Name: pad0x7_MJUAC[0x7]
-    Offset: '0x9'
-    Size: '0x7'
-    Type: char
-  ClassSize: '0x10'
 AIShipEncounterBattleDesc:
   Attributes:
   - Name: WaveDescs
@@ -267,19 +258,15 @@ AIShipEncounterBattleGenerationParams:
   - Name: NumberOfWaves
     Offset: '0x8'
     Size: '0x20'
-    Type: struct WeightedProbabilityRange
+    Type: struct
   - Name: MinMaxNumberOfShips
     Offset: '0x28'
     Size: '0x10'
-    Type: struct Int32Range
+    Type: struct
   - Name: MinNumberOfShipsInFinalWave
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_HM9F7[0x4]
-    Offset: '0x3c'
-    Size: '0x4'
-    Type: char
   - Name: ShipSizeLimits
     Offset: '0x40'
     Size: '0x10'
@@ -289,29 +276,6 @@ AIShipEncounterBattleGenerationParams:
     Size: '0x10'
     Type: TArray<struct AIShipEncounterWaveDesc>
   ClassSize: '0x60'
-AIShipEncounterCompleteNetEvent:
-  Attributes:
-  - Name: pad0x10_VRKR3[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
-  - Name: BattleIdx
-    Offset: '0x10'
-    Size: '0x4'
-    Type: int
-  - Name: CannonballIconType
-    Offset: '0x14'
-    Size: '0x1'
-    Type: byte
-  - Name: SkellyFormIconType
-    Offset: '0x15'
-    Size: '0x1'
-    Type: byte
-  - Name: pad0x2_5YB02[0x2]
-    Offset: '0x16'
-    Size: '0x2'
-    Type: char
-  ClassSize: '0x18'
 AIShipEncounterDynamicBalancingCrewStrengthToTargetWaveDesc:
   Attributes:
   - Name: MinCrewStrength
@@ -337,10 +301,6 @@ AIShipEncounterDynamicBalancingDesc:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_JV0V7[0x3]
-    Offset: '0x1'
-    Size: '0x3'
-    Type: char
   - Name: InitialWaveGenEncounterRadiusMultiplier
     Offset: '0x4'
     Size: '0x4'
@@ -357,10 +317,6 @@ AIShipEncounterDynamicBalancingDesc:
     Offset: '0x20'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_7F0J0[0x4]
-    Offset: '0x24'
-    Size: '0x4'
-    Type: char
   - Name: DynamicWaveCostConfigurations
     Offset: '0x28'
     Size: '0x10'
@@ -384,10 +340,6 @@ AIShipEncounterDynamicBalancingPlayerShipValueDesc:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_9ZAJE[0x4]
-    Offset: '0xc'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x10'
 AIShipEncounterDynamicBalancingPoolSizeDesc:
   Attributes:
@@ -399,10 +351,6 @@ AIShipEncounterDynamicBalancingPoolSizeDesc:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_SYPKE[0x4]
-    Offset: '0xc'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x10'
 AIShipEncounterDynamicBalancingWaveConfigCostDesc:
   Attributes:
@@ -414,24 +362,13 @@ AIShipEncounterDynamicBalancingWaveConfigCostDesc:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_XQMOB[0x4]
-    Offset: '0x14'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x18'
-AIShipEncounterDynamicWaveNetworkEvent:
-  Attributes:
-  - Name: pad0x20_6ST5W[0x20]
-    Offset: '0x0'
-    Size: '0x20'
-    Type: char
-  ClassSize: '0x20'
 AIShipEncounterDynamicWaveShipSpawnedTelemetryEvent:
   Attributes:
   - Name: EncounterId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: WaveIndex
     Offset: '0x10'
     Size: '0x4'
@@ -446,7 +383,7 @@ AIShipEncounterDynamicWaveTelemetryEvent:
   - Name: EncounterId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: WaveIndex
     Offset: '0x10'
     Size: '0x4'
@@ -460,33 +397,6 @@ AIShipEncounterDynamicWaveTelemetryEvent:
     Size: '0x4'
     Type: int
   ClassSize: '0x1c'
-AIShipEncounterNotification:
-  Attributes:
-  - Name: BattleName
-    Offset: '0x0'
-    Size: '0x38'
-    Type: struct FText
-  - Name: SeaName
-    Offset: '0x38'
-    Size: '0x8'
-    Type: struct FName
-  - Name: SkellyCrewName
-    Offset: '0x40'
-    Size: '0x38'
-    Type: struct FText
-  - Name: CannonBallType
-    Offset: '0x78'
-    Size: '0x1'
-    Type: byte
-  - Name: SkellyType
-    Offset: '0x79'
-    Size: '0x1'
-    Type: byte
-  - Name: pad0x6_G1M3D[0x6]
-    Offset: '0x7a'
-    Size: '0x6'
-    Type: char
-  ClassSize: '0x80'
 AIShipEncounterParams:
   Attributes:
   - Name: SaferSeasRollChance
@@ -520,10 +430,6 @@ AIShipEncounterParamsSpawnerData:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_MMJ4M[0x3]
-    Offset: '0x11'
-    Size: '0x3'
-    Type: char
   - Name: CaptainName
     Offset: '0x14'
     Size: '0x8'
@@ -545,33 +451,6 @@ AIShipEncounterParamsSpawnerData:
     Size: '0x1'
     Type: bool
   ClassSize: '0x20'
-AIShipEncounterRevealNetEvent:
-  Attributes:
-  - Name: pad0x10_96Q99[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
-  - Name: BattleIdx
-    Offset: '0x10'
-    Size: '0x4'
-    Type: int
-  - Name: SkellyCrewIdx
-    Offset: '0x14'
-    Size: '0x4'
-    Type: int
-  - Name: CannonballIconType
-    Offset: '0x18'
-    Size: '0x1'
-    Type: byte
-  - Name: SkellyFormIconType
-    Offset: '0x19'
-    Size: '0x1'
-    Type: byte
-  - Name: pad0x6_YNQEB[0x6]
-    Offset: '0x1a'
-    Size: '0x6'
-    Type: char
-  ClassSize: '0x20'
 AIShipEncounterWave:
   Attributes:
   - Name: AIShipsInWave
@@ -586,36 +465,6 @@ AIShipEncounterWaveDesc:
     Size: '0x10'
     Type: TArray<class Class*>
   ClassSize: '0x10'
-AIShipEncounterZoneEnteredNetworkEvent:
-  Attributes:
-  - Name: pad0x10_35IOU[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
-  - Name: RemainingAIShips
-    Offset: '0x10'
-    Size: '0x4'
-    Type: int
-  - Name: TotalAIShips
-    Offset: '0x14'
-    Size: '0x4'
-    Type: int
-  - Name: TotalAIShipsInFinalWave
-    Offset: '0x18'
-    Size: '0x4'
-    Type: int
-  - Name: CurrentSpawnedAIShips
-    Offset: '0x1c'
-    Size: '0x4'
-    Type: int
-  ClassSize: '0x20'
-AIShipEncounterZoneExitedNetworkEvent:
-  Attributes:
-  - Name: pad0x10_LASRI[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
-  ClassSize: '0x10'
 AIShipGenerationParams:
   Attributes:
   - Name: EncounterType
@@ -626,10 +475,6 @@ AIShipGenerationParams:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_R2E4V[0x6]
-    Offset: '0x2'
-    Size: '0x6'
-    Type: char
   - Name: ShipControllerParams
     Offset: '0x8'
     Size: '0x8'
@@ -645,22 +490,18 @@ AIShipGenerationParams:
   - Name: DamageParams
     Offset: '0x30'
     Size: '0x14'
-    Type: struct AIShipContextDescDamageParams
-  - Name: pad0x4_POD6C[0x4]
-    Offset: '0x44'
-    Size: '0x4'
-    Type: char
+    Type: struct
   ClassSize: '0x48'
 AIShipSailData:
   Attributes:
   - Name: SailRGB
     Offset: '0x0'
     Size: '0x4'
-    Type: struct Color
+    Type: struct
   - Name: IconRGB
     Offset: '0x4'
     Size: '0x4'
-    Type: struct Color
+    Type: struct
   - Name: CrewIndex
     Offset: '0x8'
     Size: '0x4'
@@ -676,13 +517,6 @@ AIShipSingleWaveEncounterDescGenerationParams:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<struct AIShipClassWeightedSizes>
-  ClassSize: '0x10'
-AIShipSinkNetworkEvent:
-  Attributes:
-  - Name: pad0x10_84AWZ[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
   ClassSize: '0x10'
 AIShipSizeDynamicContexts:
   Attributes:
@@ -705,10 +539,6 @@ AIShipSizeLimit:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_50X25[0x4]
-    Offset: '0xc'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x10'
 AIShipSkeletonSkillsetOverride:
   Attributes:
@@ -719,7 +549,7 @@ AIShipSkeletonSkillsetOverride:
   - Name: Skillset
     Offset: '0x8'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   ClassSize: '0x18'
 AIShipSpawnTelemetryEvent:
   Attributes:
@@ -742,7 +572,7 @@ AIShipSpawnTelemetryEvent:
   - Name: SpawnConfigId
     Offset: '0x40'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: AIShipSize
     Offset: '0x50'
     Size: '0x10'
@@ -750,46 +580,12 @@ AIShipSpawnTelemetryEvent:
   - Name: SpawnLocation
     Offset: '0x60'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: AIShipWaveIndex
     Offset: '0x6c'
     Size: '0x4'
     Type: int
   ClassSize: '0x70'
-AIShipSpawnedEvent:
-  Attributes:
-  - Name: Ship
-    Offset: '0x0'
-    Size: '0x8'
-    Type: class Ship*
-  - Name: SpawningCrew
-    Offset: '0x8'
-    Size: '0x10'
-    Type: struct Guid
-  - Name: SpawningEventId
-    Offset: '0x18'
-    Size: '0x10'
-    Type: struct Guid
-  - Name: SpawnConfigId
-    Offset: '0x28'
-    Size: '0x10'
-    Type: struct Guid
-  - Name: Wave
-    Offset: '0x38'
-    Size: '0x4'
-    Type: int
-  - Name: pad0x4_4TVG1[0x4]
-    Offset: '0x3c'
-    Size: '0x4'
-    Type: char
-  ClassSize: '0x40'
-AIShipSpawnedNetworkEvent:
-  Attributes:
-  - Name: pad0x10_TNBN3[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
-  ClassSize: '0x10'
 AIShipWeightedSize:
   Attributes:
   - Name: Feature
@@ -800,25 +596,10 @@ AIShipWeightedSize:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_QPL8F[0x4]
-    Offset: '0xc'
-    Size: '0x4'
-    Type: char
   - Name: ShipSize
     Offset: '0x10'
     Size: '0x8'
     Type: class UClass*
-  ClassSize: '0x18'
-AIShipWorldSettings:
-  Attributes:
-  - Name: FeatureToggledBattlesData
-    Offset: '0x0'
-    Size: '0x10'
-    Type: TArray<struct FeatureLockedAIShipBattles>
-  - Name: DefaultBattlesData
-    Offset: '0x10'
-    Size: '0x8'
-    Type: class AIShipBattlesDataAsset*
   ClassSize: '0x18'
 CursedSailsBattleParams:
   Attributes:
@@ -838,10 +619,6 @@ CursedSailsBattleParams:
     Offset: '0x71'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_NY714[0x6]
-    Offset: '0x72'
-    Size: '0x6'
-    Type: char
   - Name: EncounterDescription
     Offset: '0x78'
     Size: '0x8'
@@ -858,21 +635,6 @@ EventTypeAIShipEncounterParams:
     Size: '0x8'
     Type: class AIShipEncounterParamsDataAsset*
   ClassSize: '0x10'
-FeatureLockedAIShipBattles:
-  Attributes:
-  - Name: Feature
-    Offset: '0x0'
-    Size: '0xc'
-    Type: struct FeatureFlag
-  - Name: pad0x4_KPJT8[0x4]
-    Offset: '0xc'
-    Size: '0x4'
-    Type: char
-  - Name: BattlesData
-    Offset: '0x10'
-    Size: '0x8'
-    Type: class AIShipBattlesDataAsset*
-  ClassSize: '0x18'
 FeatureLockedAIShipEncounterBattleGenerationParams:
   Attributes:
   - Name: Feature
@@ -882,11 +644,7 @@ FeatureLockedAIShipEncounterBattleGenerationParams:
   - Name: Params
     Offset: '0x8'
     Size: '0x60'
-    Type: struct AIShipEncounterBattleGenerationParams
-  - Name: pad0x10_U8JGV[0x10]
-    Offset: '0x68'
-    Size: '0x10'
-    Type: char
+    Type: struct
   ClassSize: '0x78'
 RelativeSpawnLocationGeneratorParams:
   Attributes:
@@ -894,10 +652,6 @@ RelativeSpawnLocationGeneratorParams:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<struct WeightedSpawnDirection>
-  - Name: pad0x90_1T1GJ[0x90]
-    Offset: '0x10'
-    Size: '0x90'
-    Type: char
   ClassSize: '0xa0'
 ShipMovementParams:
   Attributes:
@@ -969,6 +723,17 @@ ShipTypeAIShipEncounterParams:
     Size: '0x8'
     Type: class AIShipEncounterParamsDataAsset*
   ClassSize: '0x10'
+ToggleableAIShipsServiceDataAssetFileLocation:
+  Attributes:
+  - Name: ToggleName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Location
+    Offset: '0x8'
+    Size: '0x10'
+    Type: struct
+  ClassSize: '0x18'
 TrackingNoiseGenerator:
   Attributes:
   - Name: ParallelOffsetCurve
@@ -979,10 +744,6 @@ TrackingNoiseGenerator:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_01BJD[0xc]
-    Offset: '0xc'
-    Size: '0xc'
-    Type: char
   ClassSize: '0x18'
 WeightedAIShipCrewAmmoType:
   Attributes:
@@ -990,29 +751,25 @@ WeightedAIShipCrewAmmoType:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_PYPKY[0x4]
-    Offset: '0x4'
-    Size: '0x4'
-    Type: char
   - Name: Params
     Offset: '0x8'
     Size: '0x18'
-    Type: struct AIShipCrewAmmoType
-  ClassSize: '0x20'
+    Type: struct
+  - Name: FeatureFlag
+    Offset: '0x20'
+    Size: '0xc'
+    Type: struct
+  ClassSize: '0x30'
 WeightedAIShipCrewFormType:
   Attributes:
   - Name: Weight
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_8LOAN[0x4]
-    Offset: '0x4'
-    Size: '0x4'
-    Type: char
   - Name: Params
     Offset: '0x8'
     Size: '0x20'
-    Type: struct AIShipCrewFormType
+    Type: struct
   ClassSize: '0x28'
 WeightedSpawnDirection:
   Attributes:
@@ -1028,18 +785,10 @@ WeightedSpawnDirection:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_IN89O[0x4]
-    Offset: '0xc'
-    Size: '0x4'
-    Type: char
   - Name: SpawnOffsets
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<struct WeightedSpawnOffset>
-  - Name: pad0x90_YI4ER[0x90]
-    Offset: '0x20'
-    Size: '0x90'
-    Type: char
   ClassSize: '0xb0'
 WeightedSpawnOffset:
   Attributes:
@@ -1055,12 +804,8 @@ WeightedSpawnOffset:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_EVS01[0x4]
-    Offset: '0xc'
-    Size: '0x4'
-    Type: char
   - Name: SpawnRotations
     Offset: '0x10'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   ClassSize: '0x40'

@@ -1,4 +1,21 @@
 {
+  "SpireEntry": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IslandName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xc"
+      }
+    ]
+  },
   "ServerSpireInfo": {
     "ClassSize": "0x68",
     "Attributes": [
@@ -10,7 +27,7 @@
       },
       {
         "Name": "Location",
-        "Type": "struct Vector",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0x4"
       },
@@ -21,8 +38,8 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x50_UX8CK[0x50]",
-        "Type": "char",
+        "Name": "InstancedLevelPaths",
+        "Type": "map",
         "Size": "0x50",
         "Offset": "0x18"
       }
@@ -48,29 +65,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x5"
-      },
-      {
-        "Name": "pad0x2_B3PR6[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x6"
-      }
-    ]
-  },
-  "SpireEntry": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IslandName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xc"
       }
     ]
   },

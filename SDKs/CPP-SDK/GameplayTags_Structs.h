@@ -14,14 +14,6 @@ public:
 };
 
 
-// Size 0x78
-struct GameplayTagNode
-{
-public:
-	char                                                         pad0x78_8C9HV[0x78];                               // 0x0(0x78)
-};
-
-
 // Size 0x8
 struct GameplayTag
 {
@@ -35,7 +27,6 @@ struct GameplayTagQuery
 {
 public:
 	int                                                          TokenStreamVersion;                                // 0x0(0x4)
-	char                                                         pad0x4_R0T2O[0x4];                                 // 0x4(0x4)
 	TArray<struct GameplayTag>                                   TagDictionary;                                     // 0x8(0x10)
 	TArray<char>                                                 QueryTokenStream;                                  // 0x18(0x10)
 	struct FString                                               UserDescription;                                   // 0x28(0x10)
@@ -47,7 +38,6 @@ public:
 struct GameplayTagContainer
 {
 public:
-	char                                                         pad0x8_YZLW3[0x8];                                 // 0x0(0x8)
 	TArray<struct GameplayTag>                                   GameplayTags;                                      // 0x8(0x10)
 	TArray<struct Name>                                          Tags;                                              // 0x18(0x10)
 };

@@ -1,58 +1,24 @@
 {
-  "WwiseEventParam": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_VQ1T4[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SourcePath",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SourceObj",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "WwiseIOPriorityMappingConfig": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "WwisePriority",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AsyncIOPriority",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x3_0R327[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5"
-      }
-    ]
-  },
   "ReverbPresetControllerSettings": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0xc_X82QX[0xc]",
-        "Type": "char",
-        "Size": "0xc",
+        "Name": "VectorsPerSegment",
+        "Type": "uint32",
+        "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "TracesPerSegmentPerFrame",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "HorizontalSegments",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x8"
       },
       {
         "Name": "HorizontalConeSegmentElevationAngle",
@@ -91,8 +57,8 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_M5NVO[0x4]",
-        "Type": "char",
+        "Name": "MaxNumSampleFramesInHistory",
+        "Type": "uint32",
         "Size": "0x4",
         "Offset": "0x24"
       }
@@ -135,6 +101,46 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "WwiseEventParam": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "WwiseEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SourcePath",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SourceObj",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WwiseIOPriorityMappingConfig": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "WwisePriority",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AsyncIOPriority",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4"
       }
     ]
   },
@@ -184,12 +190,6 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_WRVJ6[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x31"
-      },
-      {
         "Name": "MinSpaceSizeWindowForEarlyReflections",
         "Type": "float",
         "Size": "0x4",
@@ -203,7 +203,7 @@
       },
       {
         "Name": "SamplingSettings",
-        "Type": "struct ReverbPresetControllerSettings",
+        "Type": "struct",
         "Size": "0x28",
         "Offset": "0x3c"
       }

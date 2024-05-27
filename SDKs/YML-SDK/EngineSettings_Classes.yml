@@ -6,10 +6,6 @@ ConsoleSettings:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_J9SOK[0x4]
-    Offset: '0x2c'
-    Size: '0x4'
-    Type: char
   - Name: ManualAutoCompleteList
     Offset: '0x30'
     Size: '0x10'
@@ -48,14 +44,10 @@ GameMapsSettings:
     Offset: '0x5a'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5_WAJ4H[0x5]
-    Offset: '0x5b'
-    Size: '0x5'
-    Type: char
   - Name: GameInstanceClass
     Offset: '0x60'
     Size: '0x10'
-    Type: struct StringClassReference
+    Type: struct
   - Name: GameDefaultMap
     Offset: '0x70'
     Size: '0x10'
@@ -67,11 +59,11 @@ GameMapsSettings:
   - Name: GlobalDefaultGameMode
     Offset: '0x90'
     Size: '0x10'
-    Type: struct StringClassReference
+    Type: struct
   - Name: GlobalDefaultServerGameMode
     Offset: '0xa0'
     Size: '0x10'
-    Type: struct StringClassReference
+    Type: struct
   ClassSize: '0x88'
   FullSize: '0xb0'
   InheritedSize: '0x28'
@@ -98,10 +90,6 @@ GameNetworkManagerSettings:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_NZA9M[0x3]
-    Offset: '0x39'
-    Size: '0x3'
-    Type: char
   - Name: StandbyRxCheatTime
     Offset: '0x3c'
     Size: '0x4'
@@ -126,10 +114,6 @@ GameNetworkManagerSettings:
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_2SUGA[0x4]
-    Offset: '0x54'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -148,18 +132,8 @@ GameSessionSettings:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_Q13CV[0x7]
-    Offset: '0x31'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x10'
   FullSize: '0x38'
-  InheritedSize: '0x28'
-  Super: Object
-GeneralEngineSettings:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Object
 GeneralProjectSettings:
@@ -195,7 +169,7 @@ GeneralProjectSettings:
   - Name: ProjectID
     Offset: '0x98'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: ProjectName
     Offset: '0xa8'
     Size: '0x10'
@@ -222,10 +196,6 @@ HudSettings:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_CSFER[0x7]
-    Offset: '0x29'
-    Size: '0x7'
-    Type: char
   - Name: DebugDisplay
     Offset: '0x30'
     Size: '0x10'

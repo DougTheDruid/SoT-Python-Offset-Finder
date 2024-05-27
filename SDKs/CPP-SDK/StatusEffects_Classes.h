@@ -6,23 +6,6 @@
 #include "StatusEffects_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class StatusEffectHelperFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
-class StatusEffectManagerComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x28_SZFS1[0x28];                               // 0xc8(0x28)
-	class StatusRecipientResponseList*                           RecipientResponseList;                             // 0xf0(0x8)
-	TArray<struct ActiveStatusEffect>                            ActiveEffects;                                     // 0xf8(0x10)
-};
-
-
 // Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
 class StatusResponseAsset: public DataAsset
 {
@@ -33,51 +16,12 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ActivateableSurfaceMaterialStatusZoneInterface: public Interface
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class SetCanReceiveBuffStatusResponse: public StatusResponse
 {
 public:
-};
-
-
-// Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
-class StatusEffectPersistenceComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_XKQSR[0x8];                                 // 0xc8(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class StatusResponse: public Object
-{
-public:
-	char                                                         pad0x8_MFZ96[0x8];                                 // 0x28(0x8)
-};
-
-
-// Size 0x38 (Full Size[0x100] - InheritedSize[0xc8]
-class LightWeightStatusEffectManagerComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x20_4IAQH[0x20];                               // 0xc8(0x20)
-	class StatusRecipientResponseList*                           RecipientResponseList;                             // 0xe8(0x8)
-	TArray<struct ActiveStatusEffect>                            ActiveEffects;                                     // 0xf0(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class DebugStatusTicketHolder: public Actor
-{
-public:
-	class Actor*                                                 StatusRecipient;                                   // 0x3c8(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SurfaceMaterialStatusZoneInterface: public Interface
-{
-public:
+	bool                                                         LockBuffReceiver;                                  // 0x30(0x1)
+	bool                                                         RevertOnDeactivate;                                // 0x31(0x1)
 };
 
 
@@ -90,18 +34,21 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class StatusEffectSuspensionInterface: public Interface
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class StatusEffectsSettings: public DeveloperSettings
 {
 public:
+	struct                                                       DebugMenuStatusDefinitionsDataAsset;               // 0x38(0x10)
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class StatusApplicationDesc: public Object
+// Size 0xc0 (Full Size[0x488] - InheritedSize[0x3c8]
+class SphericalStatusEffectZone: public Actor
 {
 public:
-	struct EventAppliedStatusToTargets                           ApplicationEvent;                                  // 0x28(0x28)
+	class ActorActivationComponent*                              ActorActivationComponent;                          // 0x3d0(0x8)
+	class SphereComponent*                                       SphereComponent;                                   // 0x3d8(0x8)
+	class StatusEffectVolumeComponent*                           StatusEffectVolumeComponent;                       // 0x3e0(0x8)
 };
 
 
@@ -110,89 +57,31 @@ class StatusEffectVolumeComponent: public SceneComponent
 {
 public:
 	bool                                                         UseOverlapEventsFromParentComponent;               // 0x2e0(0x1)
-	char                                                         pad0x7_UG7LJ[0x7];                                 // 0x2e1(0x7)
 	TArray<struct Status>                                        StatusEffectsToMaintain;                           // 0x2e8(0x10)
-	char                                                         pad0x8_WJ8VJ[0x8];                                 // 0x2f8(0x8)
 };
 
 
-// Size 0xc0 (Full Size[0x488] - InheritedSize[0x3c8]
-class SphericalStatusEffectZone: public Actor
+// Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
+class StatusApplicationMonitorComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_09LC8[0x8];                                 // 0x3c8(0x8)
-	class ActorActivationComponent*                              ActorActivationComponent;                          // 0x3d0(0x8)
-	class SphereComponent*                                       SphereComponent;                                   // 0x3d8(0x8)
-	class StatusEffectVolumeComponent*                           StatusEffectVolumeComponent;                       // 0x3e0(0x8)
-	char                                                         pad0xa0_77MDQ[0xa0];                               // 0x3e8(0xa0)
+	class UClass*                                                StatusApplicationTrigger;                          // 0xc8(0x8)
 };
 
 
-// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
-class BuffReceiverComponent: public ActorComponent
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class StatusApplicationDesc: public Object
 {
 public:
-	char                                                         pad0x8_7UAVQ[0x8];                                 // 0xc8(0x8)
-	bool                                                         CanReceiveBuff;                                    // 0xd0(0x1)
-	char                                                         pad0x7_JKMDG[0x7];                                 // 0xd1(0x7)
+	struct                                                       ApplicationEvent;                                  // 0x28(0x28)
 };
 
 
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class StatusEffectsSettings: public DeveloperSettings
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class DebugStatusTicketHolder: public Actor
 {
 public:
-	struct StringAssetReference                                  DebugMenuStatusDefinitionsDataAsset;               // 0x38(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class StatusEffectPersistenceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class StatusEffectResponseConfigurationInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x20 (Full Size[0x4c0] - InheritedSize[0x4a0]
-class StatusEffectOverlapZone: public SimpleOverlapZone
-{
-public:
-	TArray<struct DelayedStatusEffect>                           StatusesToApplyOnOverlap;                          // 0x4a0(0x10)
-	char                                                         pad0x10_47NB7[0x10];                               // 0x4b0(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class StatusEffectTicketDispenserInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x30 (Full Size[0xf8] - InheritedSize[0xc8]
-class MaterialStatusSusceptibilityComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_CBI4Z[0x8];                                 // 0xc8(0x8)
-	class PhysicalMaterial*                                      CurrentSurfaceMaterial;                            // 0xd0(0x8)
-	char                                                         pad0x20_4MNVK[0x20];                               // 0xd8(0x20)
-};
-
-
-// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
-class AppliedStatusToSelfStatCondition: public TargetedStatCondition
-{
-public:
-	TArray<class Class*>                                         Status;                                            // 0x30(0x10)
-	char                                                         ComparisonMode;                                    // 0x40(0x1)
-	char                                                         pad0x7_ALY81[0x7];                                 // 0x41(0x7)
+	class Actor*                                                 StatusRecipient;                                   // 0x3c8(0x8)
 };
 
 
@@ -206,64 +95,55 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
-class StatusApplicationMonitorComponent: public ActorComponent
+// Size 0x30 (Full Size[0xf8] - InheritedSize[0xc8]
+class MaterialStatusSusceptibilityComponent: public ActorComponent
 {
 public:
-	class UClass*                                                StatusApplicationTrigger;                          // 0xc8(0x8)
+	class PhysicalMaterial*                                      CurrentSurfaceMaterial;                            // 0xd0(0x8)
+	interface                                                    CurrentMaterialStatusZone;                         // 0xd8(0x10)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class MaterialStatusSusceptibilityInterface: public Interface
+// Size 0x38 (Full Size[0x100] - InheritedSize[0xc8]
+class LightWeightStatusEffectManagerComponent: public ActorComponent
 {
 public:
+	class StatusRecipientResponseList*                           RecipientResponseList;                             // 0xe8(0x8)
+	TArray<struct ActiveStatusEffect>                            ActiveEffects;                                     // 0xf0(0x10)
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class StatusBase: public Object
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+class BuffReceiverComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_AQQIN[0x8];                                 // 0x28(0x8)
+	bool                                                         CanReceiveBuff;                                    // 0xd0(0x1)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class BuffReceiverInterface: public Interface
+// Size 0x20 (Full Size[0x4c0] - InheritedSize[0x4a0]
+class StatusEffectOverlapZone: public SimpleOverlapZone
 {
 public:
+	TArray<struct DelayedStatusEffect>                           StatusesToApplyOnOverlap;                          // 0x4a0(0x10)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class StatusEffectRecipientInterface: public Interface
+// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
+class AppliedStatusToSelfStatCondition: public TargetedStatCondition
 {
 public:
+	TArray<class Class*>                                         Status;                                            // 0x30(0x10)
+	char                                                         ComparisonMode;                                    // 0x40(0x1)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class StatusEffectCancellationInterface: public Interface
+// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
+class StatusEffectManagerComponent: public ActorComponent
 {
 public:
-};
-
-
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class SetCanReceiveBuffStatusResponse: public StatusResponse
-{
-public:
-	bool                                                         LockBuffReceiver;                                  // 0x30(0x1)
-	bool                                                         RevertOnDeactivate;                                // 0x31(0x1)
-	char                                                         pad0x6_9LFX2[0x6];                                 // 0x32(0x6)
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class StatusResponseNull: public StatusResponse
-{
-public:
+	class StatusRecipientResponseList*                           RecipientResponseList;                             // 0xf0(0x8)
+	TArray<struct ActiveStatusEffect>                            ActiveEffects;                                     // 0xf8(0x10)
 };
 
 

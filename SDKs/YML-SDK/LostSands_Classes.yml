@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 LostSandsRowboatGunpowderBarrel:
   Attributes:
-  - Name: pad0xb8_K7DMN[0xb8]
-    Offset: '0x3c8'
-    Size: '0xb8'
-    Type: char
   - Name: ActionRulesComponent
     Offset: '0x480'
     Size: '0x8'
@@ -54,6 +50,10 @@ LostSandsRowboatGunpowderBarrel:
     Offset: '0x538'
     Size: '0x8'
     Type: struct FName
+  - Name: RangeReferenceNamedPointActor
+    Offset: '0x540'
+    Size: '0x20'
+    Type: assetobject
   - Name: DistanceFromNamedPoints
     Offset: '0x560'
     Size: '0x10'
@@ -61,15 +61,11 @@ LostSandsRowboatGunpowderBarrel:
   - Name: RowboatDestroyedAtGoldenSandsStat
     Offset: '0x570'
     Size: '0x4'
-    Type: struct PlayerStat
+    Type: struct
   - Name: RowboatDestroyedAwayFromGoldenSandsStat
     Offset: '0x574'
     Size: '0x4'
-    Type: struct PlayerStat
-  - Name: pad0x90_ZEPGT[0x90]
-    Offset: '0x578'
-    Size: '0x90'
-    Type: char
+    Type: struct
   ClassSize: '0x240'
   FullSize: '0x608'
   InheritedSize: '0x3c8'

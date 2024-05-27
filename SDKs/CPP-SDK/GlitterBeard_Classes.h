@@ -6,6 +6,25 @@
 #include "GlitterBeard_Structs.h"
 
 
+// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
+class GlitterBeardUnlockVFXCoordinatorComponent: public ActorComponent
+{
+public:
+	struct                                                       TreeActor;                                         // 0xc8(0x10)
+	class MaterialInstanceDynamic*                               TreeMaterialInstanceDynamic;                       // 0xd8(0x8)
+	float                                                        TreeBlendTime;                                     // 0xe0(0x4)
+};
+
+
+// Size 0x50 (Full Size[0x118] - InheritedSize[0xc8]
+class GlitterBeardTreeVisualFeedbackComponent: public ActorComponent
+{
+public:
+	TArray<struct VisualFeedbackList>                            FeedbackActions;                                   // 0xc8(0x10)
+	TArray<char>                                                 CurrentStates;                                     // 0xe8(0x10)
+};
+
+
 // Size 0x8 (Full Size[0x548] - InheritedSize[0x540]
 class GlitterbeardSlidingDoor: public SlidingDoor
 {
@@ -14,10 +33,23 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GlitterBeardTrustedTreeInterface: public Interface
+// Size 0x48 (Full Size[0x80] - InheritedSize[0x38]
+class GlitterBeardLanternSoundEffect: public EffectBlendObjectBase
 {
 public:
+	float                                                        TriggerThreshold;                                  // 0x38(0x4)
+	class WwiseObjectPoolWrapper*                                WwisePool;                                         // 0x40(0x8)
+	class WwiseEvent*                                            WwiseEvent;                                        // 0x48(0x8)
+	struct                                                       Emitter;                                           // 0x50(0x20)
+};
+
+
+// Size 0xa8 (Full Size[0x170] - InheritedSize[0xc8]
+class GlitterBeardFinaleCoordinatorComponent: public ActorComponent
+{
+public:
+	class WwiseEvent*                                            AudioEventToSynchronise;                           // 0xc8(0x8)
+	struct                                                       ReplicationState;                                  // 0xd0(0x10)
 };
 
 
@@ -25,11 +57,9 @@ public:
 class GlitterBeardTree: public Actor
 {
 public:
-	char                                                         pad0x28_JV3HE[0x28];                               // 0x3c8(0x28)
 	class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x3f0(0x8)
 	class ActionRulesInteractableComponent*                      InteractableComponent;                             // 0x3f8(0x8)
 	float                                                        LanternLightDelay;                                 // 0x400(0x4)
-	char                                                         pad0x4_DF5PE[0x4];                                 // 0x404(0x4)
 	class GlitterBeardUnlockVFXCoordinatorComponent*             UnlockVFXCoordinatorComponent;                     // 0x408(0x8)
 	class GlitterBeardTelemetryComponent*                        TelemetryComponent;                                // 0x410(0x8)
 	class UClass*                                                VocalShanty;                                       // 0x418(0x8)
@@ -39,77 +69,8 @@ public:
 	class GlitterBeardFinaleCoordinatorComponent*                FinaleCoordinator;                                 // 0x430(0x8)
 	class LandmarkReactionTriggerComponent*                      LandmarkReactionTrigger;                           // 0x438(0x8)
 	float                                                        DistanceFromTreeToPauseAISpawn;                    // 0x440(0x4)
-	char                                                         pad0x254_5MG22[0x254];                             // 0x444(0x254)
 	class SlidingDoor*                                           HideoutDoor;                                       // 0x698(0x8)
-	struct WwiseEmitter                                          SoundEmitter;                                      // 0x6a0(0x20)
-	char                                                         pad0x30_ZE7UB[0x30];                               // 0x6c0(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class GlitterBeardIsHideoutOpenConditional: public NPCDialogConditional
-{
-public:
-};
-
-
-// Size 0xa8 (Full Size[0x170] - InheritedSize[0xc8]
-class GlitterBeardFinaleCoordinatorComponent: public ActorComponent
-{
-public:
-	class WwiseEvent*                                            AudioEventToSynchronise;                           // 0xc8(0x8)
-	struct FinaleReplicationState                                ReplicationState;                                  // 0xd0(0x10)
-	char                                                         pad0x90_PJ3IE[0x90];                               // 0xe0(0x90)
-};
-
-
-// Size 0x0 (Full Size[0xc8] - InheritedSize[0xc8]
-class GlitterBeardEntitlementDesc: public EntitlementDesc
-{
-public:
-};
-
-
-// Size 0x48 (Full Size[0x110] - InheritedSize[0xc8]
-class GlitterBeardTelemetryComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x48_ZYN05[0x48];                               // 0xc8(0x48)
-};
-
-
-// Size 0x50 (Full Size[0x118] - InheritedSize[0xc8]
-class GlitterBeardTreeVisualFeedbackComponent: public ActorComponent
-{
-public:
-	TArray<struct VisualFeedbackList>                            FeedbackActions;                                   // 0xc8(0x10)
-	char                                                         pad0x10_G943D[0x10];                               // 0xd8(0x10)
-	TArray<char>                                                 CurrentStates;                                     // 0xe8(0x10)
-	char                                                         pad0x20_CJ142[0x20];                               // 0xf8(0x20)
-};
-
-
-// Size 0x48 (Full Size[0x80] - InheritedSize[0x38]
-class GlitterBeardLanternSoundEffect: public EffectBlendObjectBase
-{
-public:
-	float                                                        TriggerThreshold;                                  // 0x38(0x4)
-	char                                                         pad0x4_QVMAS[0x4];                                 // 0x3c(0x4)
-	class WwiseObjectPoolWrapper*                                WwisePool;                                         // 0x40(0x8)
-	class WwiseEvent*                                            WwiseEvent;                                        // 0x48(0x8)
-	struct WwiseEmitter                                          Emitter;                                           // 0x50(0x20)
-	char                                                         pad0x10_2P180[0x10];                               // 0x70(0x10)
-};
-
-
-// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
-class GlitterBeardUnlockVFXCoordinatorComponent: public ActorComponent
-{
-public:
-	struct ActorComponentSelector                                TreeActor;                                         // 0xc8(0x10)
-	class MaterialInstanceDynamic*                               TreeMaterialInstanceDynamic;                       // 0xd8(0x8)
-	float                                                        TreeBlendTime;                                     // 0xe0(0x4)
-	char                                                         pad0xc_ZLXO2[0xc];                                 // 0xe4(0xc)
+	struct                                                       SoundEmitter;                                      // 0x6a0(0x20)
 };
 
 

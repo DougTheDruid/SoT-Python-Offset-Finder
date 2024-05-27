@@ -10,10 +10,6 @@ AthenaCheatManager:
     Offset: '0x80'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x28_EH98I[0x28]
-    Offset: '0x88'
-    Size: '0x28'
-    Type: char
   - Name: CreatedWorldMarkers
     Offset: '0xb0'
     Size: '0x10'
@@ -30,10 +26,6 @@ AthenaCheatManager:
     Offset: '0xd0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4c_AZ1O8[0x4c]
-    Offset: '0xd4'
-    Size: '0x4c'
-    Type: char
   ClassSize: '0xa8'
   FullSize: '0x120'
   InheritedSize: '0x78'

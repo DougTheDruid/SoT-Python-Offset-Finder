@@ -5,19 +5,11 @@
 
 
 
-// Size 0x10
-struct ActivityActionSpotContainer
-{
-public:
-	char                                                         pad0x10_84QI7[0x10];                               // 0x0(0x10)
-};
-
-
 // Size 0x50
 struct RegionActionSpotContainer
 {
 public:
-	char                                                         pad0x50_NW1WZ[0x50];                               // 0x0(0x50)
+	map                                                          RegisteredActionSpotsByActivity;                   // 0x0(0x50)
 };
 
 

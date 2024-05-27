@@ -39,27 +39,19 @@ HeightTriggerableEffectsComponent:
   - Name: EmitterOwner
     Offset: '0xd0'
     Size: '0x10'
-    Type: struct ActorComponentSelector
+    Type: struct
   - Name: EmitterOffset
     Offset: '0xe0'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: UseParentEmitter
     Offset: '0xec'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_KLGH1[0x3]
-    Offset: '0xed'
-    Size: '0x3'
-    Type: char
   - Name: RisingAudioTriggerValue
     Offset: '0xf0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_MLK5Z[0x4]
-    Offset: '0xf4'
-    Size: '0x4'
-    Type: char
   - Name: CameraShake
     Offset: '0xf8'
     Size: '0x8'
@@ -72,30 +64,12 @@ HeightTriggerableEffectsComponent:
     Offset: '0x104'
     Size: '0x4'
     Type: float
-  - Name: pad0x50_T7X34[0x50]
-    Offset: '0x108'
-    Size: '0x50'
-    Type: char
   ClassSize: '0x90'
   FullSize: '0x158'
   InheritedSize: '0xc8'
   Super: ActorComponent
-SpireResource:
-  Attributes:
-  - Name: pad0x10_9W8SI[0x10]
-    Offset: '0x3c8'
-    Size: '0x10'
-    Type: char
-  ClassSize: '0x10'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3c8'
-  Super: Actor
 SpireService:
   Attributes:
-  - Name: pad0x8_UUFMD[0x8]
-    Offset: '0x3c8'
-    Size: '0x8'
-    Type: char
   - Name: Params
     Offset: '0x3d0'
     Size: '0x8'
@@ -108,20 +82,10 @@ SpireService:
     Offset: '0x3e8'
     Size: '0x10'
     Type: TArray<struct SpireInfo>
-  - Name: pad0x68_0DLTY[0x68]
-    Offset: '0x3f8'
-    Size: '0x68'
-    Type: char
   ClassSize: '0x98'
   FullSize: '0x460'
   InheritedSize: '0x3c8'
   Super: Actor
-SpireServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 SpireServiceParams:
   Attributes:
   - Name: OnCancelFakeSpire
@@ -132,12 +96,6 @@ SpireServiceParams:
   FullSize: '0x30'
   InheritedSize: '0x28'
   Super: DataAsset
-SpireSettingsInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 SpireShippingDrawDebugActorSphereCollection:
   Attributes:
   - Name: SpireList
@@ -166,40 +124,12 @@ SpireStreamedLevelDataAsset:
   FullSize: '0x48'
   InheritedSize: '0x28'
   Super: DataAsset
-TaleLoadSpireStep:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x98'
-  InheritedSize: '0x98'
-  Super: TaleQuestStep
-TaleLoadSpireStepDesc:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x80'
-  InheritedSize: '0x80'
-  Super: TaleQuestStepDesc
-TaleMakeSpireVisibleStep:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x98'
-  InheritedSize: '0x98'
-  Super: TaleQuestStep
-TaleMakeSpireVisibleStepDesc:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x80'
-  InheritedSize: '0x80'
-  Super: TaleQuestStepDesc
 TaleRegisterSpireStep:
   Attributes:
   - Name: StepDesc
     Offset: '0x98'
     Size: '0x8'
     Type: class TaleRegisterSpireStepDesc*
-  - Name: pad0x8_24NNI[0x8]
-    Offset: '0xa0'
-    Size: '0x8'
-    Type: char
   ClassSize: '0x10'
   FullSize: '0xa8'
   InheritedSize: '0x98'
@@ -209,84 +139,40 @@ TaleRegisterSpireStepDesc:
   - Name: SelectionOriginPoint
     Offset: '0x80'
     Size: '0x30'
-    Type: struct QuestVariableVector
+    Type: struct
   - Name: PlayerExclusionSelectionRadius
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct QuestVariableFloat
+    Type: struct
   - Name: AllocatedSpireHandle
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct QuestVariableTaleResourceHandle
+    Type: struct
   - Name: AllocatedSpireLocation
     Offset: '0x110'
     Size: '0x30'
-    Type: struct QuestVariableVector
+    Type: struct
   ClassSize: '0xc0'
   FullSize: '0x140'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
-TaleReleaseSpireStep:
-  Attributes:
-  - Name: pad0x8_43QJE[0x8]
-    Offset: '0x98'
-    Size: '0x8'
-    Type: char
-  ClassSize: '0x8'
-  FullSize: '0xa0'
-  InheritedSize: '0x98'
-  Super: TaleQuestStep
 TaleReleaseSpireStepDesc:
   Attributes:
   - Name: SpireHandle
     Offset: '0x80'
     Size: '0x30'
-    Type: struct QuestVariableTaleResourceHandle
+    Type: struct
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 TaleSpireService:
   Attributes:
-  - Name: pad0x48_JEADX[0x48]
-    Offset: '0x60'
-    Size: '0x48'
-    Type: char
+  - Name: SpireMadeVisible
+    Offset: '0x68'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   ClassSize: '0x48'
   FullSize: '0xa8'
   InheritedSize: '0x60'
   Super: TaleQuestService
-TaleSpireServiceDesc:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: TaleQuestServiceDesc
-TaleUnloadSpireStep:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x98'
-  InheritedSize: '0x98'
-  Super: TaleQuestStep
-TaleUnloadSpireStepDesc:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x80'
-  InheritedSize: '0x80'
-  Super: TaleQuestStepDesc
-TaleWaitForSpireToLoadStep:
-  Attributes:
-  - Name: pad0x50_R1TAV[0x50]
-    Offset: '0x98'
-    Size: '0x50'
-    Type: char
-  ClassSize: '0x50'
-  FullSize: '0xe8'
-  InheritedSize: '0x98'
-  Super: TaleQuestStep
-TaleWaitForSpireToLoadStepDesc:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x80'
-  InheritedSize: '0x80'
-  Super: TaleQuestStepDesc

@@ -13,35 +13,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_M53HE[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "AshenLordFireShroudParams": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "FireShroudZoneClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FireShroudCollisionVolume",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_KFJB7[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
       }
     ]
   },
@@ -56,8 +27,25 @@
       },
       {
         "Name": "Params",
-        "Type": "struct AshenLordFireShroudParams",
+        "Type": "struct",
         "Size": "0x18",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AshenLordFireShroudParams": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "FireShroudZoneClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FireShroudCollisionVolume",
+        "Type": "struct",
+        "Size": "0xc",
         "Offset": "0x8"
       }
     ]

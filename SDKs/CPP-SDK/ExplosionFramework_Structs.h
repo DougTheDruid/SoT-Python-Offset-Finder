@@ -5,19 +5,19 @@
 
 
 
+// Size 0x18
+struct EventAffectedByExplosion
+{
+public:
+	class UClass*                                                DamagerType;                                       // 0x0(0x8)
+};
+
+
 // Size 0x8
 struct EventExplosionIgnitedActor
 {
 public:
 	class Actor*                                                 IgnitedActor;                                      // 0x0(0x8)
-};
-
-
-// Size 0xc
-struct EventOnExploded
-{
-public:
-	char                                                         pad0xc_1DKBP[0xc];                                 // 0x0(0xc)
 };
 
 
@@ -29,12 +29,12 @@ public:
 };
 
 
-// Size 0x18
-struct EventAffectedByExplosion
+// Size 0x20
+struct EventOnExploded
 {
 public:
-	class UClass*                                                DamagerType;                                       // 0x0(0x8)
-	char                                                         pad0x10_5ILU0[0x10];                               // 0x8(0x10)
+	class Actor*                                                 RootInstigator;                                    // 0x0(0x8)
+	class Object*                                                ImpactProjectileId;                                // 0x18(0x8)
 };
 
 

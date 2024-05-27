@@ -5,22 +5,6 @@
 
 
 
-// Size 0x8
-struct RareGameServiceManagerServiceRegisteredEvent
-{
-public:
-	class Object*                                                ServiceObject;                                     // 0x0(0x8)
-};
-
-
-// Size 0x2
-struct RareGameServiceManagerStateChangedEvent
-{
-public:
-	char                                                         pad0x2_6DVFS[0x2];                                 // 0x0(0x2)
-};
-
-
 // Size 0x18
 struct RareGameServiceSpecification
 {
@@ -29,7 +13,14 @@ public:
 	class UClass*                                                ServiceClassToInstantiate;                         // 0x8(0x8)
 	char                                                         ServiceRole;                                       // 0x10(0x1)
 	bool                                                         Replicates;                                        // 0x11(0x1)
-	char                                                         pad0x6_VJLI3[0x6];                                 // 0x12(0x6)
+};
+
+
+// Size 0x8
+struct RareGameServiceManagerServiceRegisteredEvent
+{
+public:
+	class Object*                                                ServiceObject;                                     // 0x0(0x8)
 };
 
 

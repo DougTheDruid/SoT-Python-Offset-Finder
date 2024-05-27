@@ -6,14 +6,14 @@ AchievementUpdatedEvent:
     Offset: '0x0'
     Size: '0x10'
     Type: struct FString
+  - Name: Progress
+    Offset: '0x10'
+    Size: '0x4'
+    Type: uint32
   - Name: Successful
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_WNI43[0x3]
-    Offset: '0x15'
-    Size: '0x3'
-    Type: char
   - Name: Reason
     Offset: '0x18'
     Size: '0x10'
@@ -76,10 +76,6 @@ InAppPurchaseProductRequest:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_5N28D[0x7]
-    Offset: '0x11'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x18'
 InAppPurchaseRestoreInfo:
   Attributes:
@@ -140,14 +136,10 @@ OnlineStoreCatalogItem:
     Offset: '0x50'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_TIMHN[0x7]
-    Offset: '0x51'
-    Size: '0x7'
-    Type: char
   - Name: SaleEndDate
     Offset: '0x58'
     Size: '0x8'
-    Type: struct DateTime
+    Type: struct
   - Name: ImageUri
     Offset: '0x60'
     Size: '0x10'

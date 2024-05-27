@@ -1,111 +1,17 @@
 {
-  "RegionalAssetListWorldSetupDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x78",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_8ZMT3[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "RegionLookupInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RegionalAssetListSetupDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x78",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_FG3A3[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "RegionalAssetCache": {
+  "RegionLookupGeneratedGrid": {
     "Super": "Object",
-    "FullSize": "0xd8",
+    "FullSize": "0xb0",
     "InheritedSize": "0x28",
-    "ClassSize": "0xb0",
+    "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "pad0x10_MR40M[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "CurrentListAsset",
-        "Type": "class RegionalAssetListDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x98_HIJJY[0x98]",
-        "Type": "char",
-        "Size": "0x98",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "LevelAssetCachingService": {
-    "Super": "Object",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x18_U2JLB[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "CurrentRegion",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x28_ESMXL[0x28]",
-        "Type": "char",
+        "Name": "WorldSetup",
+        "Type": "struct",
         "Size": "0x28",
-        "Offset": "0x48"
+        "Offset": "0x30"
       }
     ]
-  },
-  "RegionLookupSeaId": {
-    "Super": "Object",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_E6QV6[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "RegionalAssetCacheInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "RegionalAssetListDataAsset": {
     "Super": "DataAsset",
@@ -121,29 +27,77 @@
       }
     ]
   },
-  "RegionLookupGeneratedGrid": {
+  "RegionalAssetCache": {
     "Super": "Object",
-    "FullSize": "0xb0",
+    "FullSize": "0xd8",
     "InheritedSize": "0x28",
-    "ClassSize": "0x88",
+    "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x8_2BR4H[0x8]",
-        "Type": "char",
+        "Name": "CurrentListAsset",
+        "Type": "class RegionalAssetListDataAsset*",
         "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "RegionalAssetListSetupDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "ListMapping",
+        "Type": "map",
+        "Size": "0x50",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "RegionalAssetListWorldSetupDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "WorldSetups",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "LevelAssetCachingService": {
+    "Super": "Object",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "CurrentRegion",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x40"
       },
       {
-        "Name": "WorldSetup",
-        "Type": "struct WorldRegionSetup",
-        "Size": "0x28",
-        "Offset": "0x30"
+        "Name": "AssetCache",
+        "Type": "interface",
+        "Size": "0x10",
+        "Offset": "0x48"
       },
       {
-        "Name": "pad0x58_8R0DB[0x58]",
-        "Type": "char",
-        "Size": "0x58",
+        "Name": "RegionLookup",
+        "Type": "interface",
+        "Size": "0x10",
         "Offset": "0x58"
+      },
+      {
+        "Name": "CachedPawn",
+        "Type": "class Pawn*",
+        "Size": "0x8",
+        "Offset": "0x68"
       }
     ]
   },

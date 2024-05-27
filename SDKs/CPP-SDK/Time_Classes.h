@@ -6,27 +6,13 @@
 #include "Time_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class LocationProviderInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TimeBlueprintLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
 // Size 0x130 (Full Size[0x4f8] - InheritedSize[0x3c8]
 class TimeService: public Actor
 {
 public:
-	char                                                         pad0x38_08QII[0x38];                               // 0x3c8(0x38)
-	struct Timespan                                              GameWorldTimeOffset;                               // 0x400(0x8)
-	char                                                         pad0x4_6TDZQ[0x4];                                 // 0x408(0x4)
+	struct                                                       GameWorldTimeOffset;                               // 0x400(0x8)
+	uint32                                                       TimeScalar;                                        // 0x40c(0x4)
+	uint32                                                       NumberOfDaysInEachGameMonth;                       // 0x410(0x4)
 	double                                                       ServiceTimeQueryRapidFrequencyOffsetMax;           // 0x418(0x8)
 	float                                                        ServiceTimeQueryRapidFrequencyInSeconds;           // 0x420(0x4)
 	float                                                        ServiceTimeQueryFrequencyInSeconds;                // 0x424(0x4)
@@ -38,52 +24,8 @@ public:
 	float                                                        MaxLocalTimeUpdateAdjustPercentageToSlowDown;      // 0x43c(0x4)
 	float                                                        MinLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x440(0x4)
 	float                                                        MaxLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x444(0x4)
-	struct ReplicatedAuthoritativeTime                           ReplicatedServerTime;                              // 0x498(0x10)
-	char                                                         pad0x50_Z12AF[0x50];                               // 0x4a8(0x50)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TimeInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TimeFormatterInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CustomizableTimeInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DebugTimeInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x500] - InheritedSize[0x4f8]
-class DebugTimeService: public TimeService
-{
-public:
-	char                                                         pad0x8_GYSM2[0x8];                                 // 0x4f8(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x508] - InheritedSize[0x500]
-class CustomizableTimeService: public DebugTimeService
-{
-public:
-	char                                                         pad0x8_4A8K2[0x8];                                 // 0x500(0x8)
+	uint32                                                       MaxNumReplicatedTimeEntriesToAverage;              // 0x448(0x4)
+	struct                                                       ReplicatedServerTime;                              // 0x498(0x10)
 };
 
 

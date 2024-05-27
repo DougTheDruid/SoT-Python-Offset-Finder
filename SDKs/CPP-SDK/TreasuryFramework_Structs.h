@@ -5,27 +5,11 @@
 
 
 
-// Size 0x1
-struct EventTreasuryRoomInactive
+// Size 0x10
+struct EventTreasuryRoomFlooded
 {
 public:
-	char                                                         pad0x1_3549M[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x1c
-struct TreasuryWaveTracker
-{
-public:
-	char                                                         pad0x1c_CFBE5[0x1c];                               // 0x0(0x1c)
-};
-
-
-// Size 0x1
-struct EventTreasuryRoomActive
-{
-public:
-	char                                                         pad0x1_QUQFC[0x1];                                 // 0x0(0x1)
+	class Actor*                                                 Treasury;                                          // 0x8(0x8)
 };
 
 
@@ -34,7 +18,6 @@ struct TreasuryWaveEncounter
 {
 public:
 	char                                                         EncounterType;                                     // 0x0(0x1)
-	char                                                         pad0x7_WGJJ2[0x7];                                 // 0x1(0x7)
 	class SpawnAIWaveMechanismAction*                            SpawnerMechanism;                                  // 0x8(0x8)
 	class Actor*                                                 MechanismTrigger;                                  // 0x10(0x8)
 	class SpawnAIWaveMechanismAction*                            SpawnerMechanismVaultMaster;                       // 0x18(0x8)
@@ -43,7 +26,6 @@ public:
 	class TreasuryWaveDataAsset*                                 FinalWaves;                                        // 0x30(0x8)
 	class TreasuryWaveDataAsset*                                 FinalWavesVaultMaster;                             // 0x38(0x8)
 	bool                                                         NeedsRoomFlooded;                                  // 0x40(0x1)
-	char                                                         pad0x7_Q3JYU[0x7];                                 // 0x41(0x7)
 };
 
 

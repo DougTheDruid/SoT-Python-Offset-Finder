@@ -10,12 +10,11 @@
 class SirenAnimationInstance: public AnimInstance
 {
 public:
-	char                                                         pad0x18_HWUV7[0x18];                               // 0x440(0x18)
+	class Pawn*                                                  PawnOwner;                                         // 0x450(0x8)
 	struct FName                                                 PropAttachmentSocket;                              // 0x458(0x8)
-	struct SirenAnimationDataStructure                           SirenAnimationData;                                // 0x460(0x60)
-	struct AthenaAnimationWeapon                                 AttackAnimations;                                  // 0x4c0(0xb8)
+	struct                                                       SirenAnimationData;                                // 0x460(0x60)
+	struct                                                       AttackAnimations;                                  // 0x4c0(0xb8)
 	float                                                        ForwardSpeed;                                      // 0x578(0x4)
-	char                                                         pad0xc_TLV8E[0xc];                                 // 0x57c(0xc)
 	float                                                        TiltDirectionAngleDegrees;                         // 0x588(0x4)
 	float                                                        TiltAngleAlpha;                                    // 0x58c(0x4)
 	float                                                        SpinAngleDegrees;                                  // 0x590(0x4)
@@ -24,18 +23,13 @@ public:
 	bool                                                         SwimmingLongways;                                  // 0x599(0x1)
 	bool                                                         UseAggressiveAnimations;                           // 0x59a(0x1)
 	bool                                                         UseAlternativeAggressiveAnimation;                 // 0x59b(0x1)
-	char                                                         pad0x4_8F9GS[0x4];                                 // 0x59c(0x4)
 	TArray<class Class*>                                         StrategiesForAggressiveAnimations;                 // 0x5a0(0x10)
-	struct FloatRange                                            TimeBeforeAlternativeAggressiveAnimationToggleFlips; // 0x5b0(0x10)
-	char                                                         pad0x8_9WD84[0x8];                                 // 0x5c0(0x8)
+	struct                                                       TimeBeforeAlternativeAggressiveAnimationToggleFlips; // 0x5b0(0x10)
 	bool                                                         AnimationsLoaded;                                  // 0x5c8(0x1)
-	char                                                         pad0x3_DX4DY[0x3];                                 // 0x5c9(0x3)
 	float                                                        AimUpAlpha;                                        // 0x5cc(0x4)
 	float                                                        AimDownAlpha;                                      // 0x5d0(0x4)
-	char                                                         pad0x4_ZEJM1[0x4];                                 // 0x5d4(0x4)
-	struct CustomAnimationMontageStateMachine                    FullBodyStateMachine;                              // 0x5d8(0xd8)
-	struct HitReactionAnimationState                             HitReacts;                                         // 0x6b0(0x28)
-	char                                                         pad0x38_9G1II[0x38];                               // 0x6d8(0x38)
+	struct                                                       FullBodyStateMachine;                              // 0x5d8(0xd8)
+	struct                                                       HitReacts;                                         // 0x6b0(0x28)
 };
 
 
@@ -43,7 +37,7 @@ public:
 class SirenAnimationData: public AnimationData
 {
 public:
-	struct SirenAnimationDataStructure                           SirenAnimationData;                                // 0x28(0x60)
+	struct                                                       SirenAnimationData;                                // 0x28(0x60)
 };
 
 

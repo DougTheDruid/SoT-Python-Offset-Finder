@@ -6,10 +6,6 @@ GlobalProjectileSettings:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_50YKK[0x3]
-    Offset: '0x1'
-    Size: '0x3'
-    Type: char
   - Name: ProjectileDestroyDepth
     Offset: '0x4'
     Size: '0x4'
@@ -29,10 +25,6 @@ ThrottledProjectileTickPool:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_14V92[0x4]
-    Offset: '0x4'
-    Size: '0x4'
-    Type: char
   - Name: Projectiles
     Offset: '0x8'
     Size: '0x10'

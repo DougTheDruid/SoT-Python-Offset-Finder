@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 ActorSpecifierComponent:
   Attributes:
-  - Name: pad0x8_DEC8X[0x8]
-    Offset: '0xc8'
-    Size: '0x8'
-    Type: char
   - Name: SpecifiedActor
     Offset: '0xd0'
     Size: '0x8'
@@ -14,18 +10,12 @@ ActorSpecifierComponent:
   FullSize: '0xd8'
   InheritedSize: '0xc8'
   Super: ActorComponent
-ActorSpecifierInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 ConditionRootAsset:
   Attributes:
   - Name: ConditionRoot
     Offset: '0x28'
     Size: '0x20'
-    Type: struct ConditionInstance
+    Type: struct
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'

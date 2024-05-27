@@ -4,25 +4,19 @@
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "struct Vector",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_ZCVRE[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
         "Name": "Rotation",
-        "Type": "struct Quat",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Normal",
-        "Type": "struct Vector",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0x20"
       },
@@ -39,33 +33,10 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_AKX41[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
         "Name": "Type",
         "Type": "class FoliageType_InstancedStaticMesh*",
         "Size": "0x8",
         "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x20_YIVC4[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "ConsoleCommands": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_ZO972[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -89,12 +60,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_UI7GA[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
       },
       {
         "Name": "Type",

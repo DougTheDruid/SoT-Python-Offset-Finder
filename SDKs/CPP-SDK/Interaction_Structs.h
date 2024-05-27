@@ -5,15 +5,6 @@
 
 
 
-// Size 0x2
-struct EventInteractionBlockingStateChanged
-{
-public:
-	bool                                                         IsInteractionBlocked;                              // 0x0(0x1)
-	char                                                         InteractionBlockReason;                            // 0x1(0x1)
-};
-
-
 // Size 0x10
 struct EventOptimalInteractionObjectChanged
 {
@@ -27,9 +18,17 @@ public:
 struct IsNewInteractingPlayerCondition
 {
 public:
-	char                                                         pad0x8_YDT88[0x8];                                 // 0x0(0x8)
-	struct ConditionContextPayloadSelectorInstance               PlayerPayloadSelector;                             // 0x8(0x20)
-	struct ConditionContextPayloadSelectorInstance               InteractablePayloadSelector;                       // 0x28(0x20)
+	struct                                                       PlayerPayloadSelector;                             // 0x8(0x20)
+	struct                                                       InteractablePayloadSelector;                       // 0x28(0x20)
+};
+
+
+// Size 0x2
+struct EventInteractionBlockingStateChanged
+{
+public:
+	bool                                                         IsInteractionBlocked;                              // 0x0(0x1)
+	char                                                         InteractionBlockReason;                            // 0x1(0x1)
 };
 
 

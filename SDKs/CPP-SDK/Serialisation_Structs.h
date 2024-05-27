@@ -25,7 +25,7 @@ public:
 	struct FString                                               String;                                            // 0x8(0x10)
 	TArray<int>                                                  IntArray;                                          // 0x18(0x10)
 	TArray<struct SerialisedNestedStruct>                        StructArray;                                       // 0x28(0x10)
-	struct SerialisedNestedStruct                                NestedStruct;                                      // 0x38(0x28)
+	struct                                                       NestedStruct;                                      // 0x38(0x28)
 };
 
 

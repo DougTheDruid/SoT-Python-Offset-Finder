@@ -5,11 +5,11 @@
 
 
 
-// Size 0x8
-struct WarMapVoteAddedEvent
+// Size 0x10
+struct EventWarMapStateChanged
 {
 public:
-	class Actor*                                                 Voter;                                             // 0x0(0x8)
+	class Actor*                                                 WarMapProposalContainer;                           // 0x8(0x8)
 };
 
 
@@ -21,20 +21,11 @@ public:
 };
 
 
-// Size 0x1
-struct EventWarMapHardModeStateChanged
+// Size 0x8
+struct WarMapVoteAddedEvent
 {
 public:
-	char                                                         pad0x1_0CSFM[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x10
-struct EventWarMapStateChanged
-{
-public:
-	char                                                         pad0x8_4DP47[0x8];                                 // 0x0(0x8)
-	class Actor*                                                 WarMapProposalContainer;                           // 0x8(0x8)
+	class Actor*                                                 Voter;                                             // 0x0(0x8)
 };
 
 

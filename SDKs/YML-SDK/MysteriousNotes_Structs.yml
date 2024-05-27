@@ -21,22 +21,11 @@ ClientNoteData:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_JIHT4[0x7]
-    Offset: '0x1'
-    Size: '0x7'
-    Type: char
   - Name: PendingNotes
     Offset: '0x8'
     Size: '0x10'
     Type: TArray<struct MysteriousNoteInfo>
   ClassSize: '0x18'
-EventListenForCinematicEndEvent:
-  Attributes:
-  - Name: pad0x1_SJFE3[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
 EventMarkNoteDeleted:
   Attributes:
   - Name: PlayerController
@@ -46,7 +35,7 @@ EventMarkNoteDeleted:
   - Name: NoteId
     Offset: '0x8'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x18'
 EventMarkNoteRead:
   Attributes:
@@ -57,36 +46,8 @@ EventMarkNoteRead:
   - Name: NoteId
     Offset: '0x8'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x18'
-EventMysteriousNoteContentUpdated:
-  Attributes:
-  - Name: pad0x10_I8GK9[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
-  ClassSize: '0x10'
-EventMysteriousNoteCustomContentUpdate:
-  Attributes:
-  - Name: pad0x1_W3KVO[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
-EventMysteriousNoteRemoved:
-  Attributes:
-  - Name: pad0x10_Q0WRW[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
-  ClassSize: '0x10'
-EventMysteriousNoteSettingsLoaded:
-  Attributes:
-  - Name: pad0x1_XK8Q5[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
 EventNoteClientCompletionStep:
   Attributes:
   - Name: PlayerController
@@ -109,13 +70,6 @@ EventNoteCompletionStep:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x10'
-EventNotesUpdated:
-  Attributes:
-  - Name: pad0x1_WZ21H[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
 EventOnlineAthenaPlayerControllerUnpossessed:
   Attributes:
   - Name: PlayerController
@@ -133,17 +87,13 @@ EventTriggerMysteriousNotesPopup:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_24KDV[0x7]
-    Offset: '0x9'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x10'
 MysteriousNoteInfo:
   Attributes:
   - Name: NoteId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: NoteRead
     Offset: '0x10'
     Size: '0x1'
@@ -152,10 +102,6 @@ MysteriousNoteInfo:
     Offset: '0x11'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_JWW8R[0x2]
-    Offset: '0x12'
-    Size: '0x2'
-    Type: char
   ClassSize: '0x14'
 MysteriousNoteRequest:
   Attributes:
@@ -166,7 +112,7 @@ MysteriousNoteRequest:
   - Name: PirateIdentity
     Offset: '0x8'
     Size: '0x78'
-    Type: struct PirateIdentity
+    Type: struct
   ClassSize: '0x80'
 MysteriousNoteTheme:
   Attributes:
@@ -194,7 +140,7 @@ NoteCompletionEntry:
   - Name: NoteId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: CompletionEventIds
     Offset: '0x10'
     Size: '0x10'
@@ -205,7 +151,7 @@ PlayerMysteriousNoteItem:
   - Name: OriginalNoteID
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: LocalisedTitle
     Offset: '0x10'
     Size: '0x10'
@@ -218,17 +164,13 @@ PlayerMysteriousNoteItem:
     Offset: '0x30'
     Size: '0x10'
     Type: struct FString
-  - Name: pad0x8_UE1TZ[0x8]
-    Offset: '0x40'
-    Size: '0x8'
-    Type: char
   ClassSize: '0x48'
 PlayerNoteStateChangeTelemetryEvent:
   Attributes:
   - Name: NoteId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: NoteState
     Offset: '0x10'
     Size: '0x10'
@@ -254,19 +196,19 @@ WieldableMysteriousNoteLayoutItem:
   - Name: Image
     Offset: '0x18'
     Size: '0x38'
-    Type: struct TreasureMapWidgetStreamedTexture
+    Type: struct
   - Name: RadialIcon
     Offset: '0x50'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: NoteTitleWidgetText
     Offset: '0x60'
     Size: '0x3c'
-    Type: struct TreasureMapWidgetText
+    Type: struct
   - Name: NoteBodyWidgetText
     Offset: '0x9c'
     Size: '0x3c'
-    Type: struct TreasureMapWidgetText
+    Type: struct
   - Name: NoteWidth
     Offset: '0xd8'
     Size: '0x4'

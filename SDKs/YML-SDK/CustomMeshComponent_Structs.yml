@@ -5,13 +5,13 @@ CustomMeshTriangle:
   - Name: Vertex0
     Offset: '0x0'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: Vertex1
     Offset: '0xc'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: Vertex2
     Offset: '0x18'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   ClassSize: '0x24'

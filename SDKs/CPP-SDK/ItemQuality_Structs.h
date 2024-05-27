@@ -5,7 +5,16 @@
 
 
 
-// Size 0x10
+// Size 0x8
+struct EmissaryLevelIncreaseOverrideData
+{
+public:
+	bool                                                         EnableEmissaryLevelIncreaseOverride;               // 0x0(0x1)
+	int                                                          CustomEmissaryLevelIncrease;                       // 0x4(0x4)
+};
+
+
+// Size 0x18
 struct ComplexItemQualityEntry
 {
 public:
@@ -15,8 +24,8 @@ public:
 	char                                                         IsStolen;                                          // 0x3(0x1)
 	char                                                         QueryReason;                                       // 0x4(0x1)
 	char                                                         QualityLevel;                                      // 0x5(0x1)
-	char                                                         pad0x2_P5M0E[0x2];                                 // 0x6(0x2)
-	struct FName                                                 Rarity;                                            // 0x8(0x8)
+	struct                                                       EmissaryLevelIncreaseOverride;                     // 0x8(0x8)
+	struct FName                                                 Rarity;                                            // 0x10(0x8)
 };
 
 
@@ -26,7 +35,6 @@ struct PerComanyItemQualityEntry
 public:
 	class UClass*                                                Company;                                           // 0x0(0x8)
 	char                                                         Quality;                                           // 0x8(0x1)
-	char                                                         pad0x7_0X12Z[0x7];                                 // 0x9(0x7)
 };
 
 

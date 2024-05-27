@@ -5,7 +5,7 @@ ActorVelocityData:
   - Name: ActorsVelocityVector
     Offset: '0x0'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: ActorSpeed
     Offset: '0xc'
     Size: '0x4'
@@ -14,36 +14,17 @@ ActorVelocityData:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_L392X[0x3]
-    Offset: '0x11'
-    Size: '0x3'
-    Type: char
   - Name: WantedMovementSpeed
     Offset: '0x14'
     Size: '0x4'
     Type: float
   ClassSize: '0x18'
-AnimDataEntryStructWrapper:
-  Attributes:
-  - Name: pad0x18_0QTRW[0x18]
-    Offset: '0x0'
-    Size: '0x18'
-    Type: char
-  ClassSize: '0x18'
 AnimNode_WeightedLoadOnDemandSquencePlayer:
   Attributes:
-  - Name: pad0x40_C06V2[0x40]
-    Offset: '0x0'
-    Size: '0x40'
-    Type: char
   - Name: PlayRate
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_0S7MO[0x4]
-    Offset: '0x44'
-    Size: '0x4'
-    Type: char
   - Name: WeightedAnimSequenceLoadOnDemand
     Offset: '0x48'
     Size: '0x8'
@@ -56,10 +37,6 @@ AnimNode_WeightedLoadOnDemandSquencePlayer:
     Offset: '0x54'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_A7KJG[0x3]
-    Offset: '0x55'
-    Size: '0x3'
-    Type: char
   - Name: CurrentSequence
     Offset: '0x58'
     Size: '0x8'
@@ -68,10 +45,6 @@ AnimNode_WeightedLoadOnDemandSquencePlayer:
     Offset: '0x60'
     Size: '0x8'
     Type: class AnimSequence*
-  - Name: pad0x8_0YCJH[0x8]
-    Offset: '0x68'
-    Size: '0x8'
-    Type: char
   ClassSize: '0x70'
 AnimationDataStoreAssetEntry:
   Attributes:
@@ -94,10 +67,10 @@ AnimationDataStoreAssetWeakReferenceEntry:
     Offset: '0x0'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x20_CZX2K[0x20]
+  - Name: AnimData
     Offset: '0x8'
     Size: '0x20'
-    Type: char
+    Type: assetclass
   ClassSize: '0x28'
 AnimationDataStoreEntry:
   Attributes:
@@ -116,10 +89,6 @@ AnimationDataStoreEntry:
   ClassSize: '0x18'
 AnimationDataStoreLoadingEntry:
   Attributes:
-  - Name: pad0x38_9OBEN[0x38]
-    Offset: '0x0'
-    Size: '0x38'
-    Type: char
   - Name: AnimDataId
     Offset: '0x38'
     Size: '0x8'
@@ -127,26 +96,18 @@ AnimationDataStoreLoadingEntry:
   ClassSize: '0x40'
 AnimationLookAt:
   Attributes:
-  - Name: pad0x8_PT802[0x8]
-    Offset: '0x0'
-    Size: '0x8'
-    Type: char
   - Name: Params
     Offset: '0x8'
     Size: '0xc'
-    Type: struct AnimationLookAtParams
+    Type: struct
   - Name: LookAtTarget
     Offset: '0x14'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: IKLookAtActive
     Offset: '0x20'
     Size: '0x1'
     Type: bool
-  - Name: pad0x87_SJRD4[0x87]
-    Offset: '0x21'
-    Size: '0x87'
-    Type: char
   ClassSize: '0xa8'
 AnimationLookAtParams:
   Attributes:
@@ -187,31 +148,19 @@ CharacterAnimationIKUpdateParams:
   - Name: Location
     Offset: '0xc'
     Size: '0xc'
-    Type: struct Vector
-  - Name: pad0x8_MST6E[0x8]
-    Offset: '0x18'
-    Size: '0x8'
-    Type: char
+    Type: struct
   - Name: Orientation
     Offset: '0x20'
     Size: '0x10'
-    Type: struct Quat
+    Type: struct
   - Name: EffectorSpace
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_8A3F7[0x3]
-    Offset: '0x31'
-    Size: '0x3'
-    Type: char
   - Name: ParentBone
     Offset: '0x34'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_AL7ZL[0x4]
-    Offset: '0x3c'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x40'
 CosmeticItemAnimationSetLoopData:
   Attributes:
@@ -255,7 +204,7 @@ CustomAnimationMontageComponentReplicatedData:
   - Name: CustomMontageId
     Offset: '0x0'
     Size: '0x8'
-    Type: struct CustomAnimationMontageId
+    Type: struct
   - Name: AnimationCallId
     Offset: '0x8'
     Size: '0x4'
@@ -270,7 +219,7 @@ CustomAnimationMontageDefinitionEntry:
   - Name: Definition
     Offset: '0x8'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   ClassSize: '0x18'
 CustomAnimationMontageId:
   Attributes:
@@ -308,10 +257,6 @@ CustomAnimationMontageStateMachine:
     Offset: '0x10'
     Size: '0x8'
     Type: class AnimMontage*
-  - Name: pad0xc0_LMYUA[0xc0]
-    Offset: '0x18'
-    Size: '0xc0'
-    Type: char
   ClassSize: '0xd8'
 DockableInfo:
   Attributes:
@@ -327,39 +272,7 @@ DockableInfo:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_SQ9CB[0x7]
-    Offset: '0x11'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x18'
-Docker:
-  Attributes:
-  - Name: pad0x90_2D7JE[0x90]
-    Offset: '0x0'
-    Size: '0x90'
-    Type: char
-  ClassSize: '0x90'
-EventAnimationHappyReact:
-  Attributes:
-  - Name: pad0x1_KT7SV[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
-EventAnimationLookAtUpdated:
-  Attributes:
-  - Name: pad0x1_YHABG[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
-EventAnimationResetHappyReact:
-  Attributes:
-  - Name: pad0x1_2ISZ1[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
 EventCosmeticItemAttachmentSwitched:
   Attributes:
   - Name: Owner
@@ -385,45 +298,20 @@ EventCosmeticItemSpawnedOwnerNotification:
     Size: '0x8'
     Type: class Actor*
   ClassSize: '0x8'
-EventCustomAnimationMontageExitRequested:
-  Attributes:
-  - Name: pad0xc_89KIX[0xc]
-    Offset: '0x0'
-    Size: '0xc'
-    Type: char
-  ClassSize: '0xc'
-EventCustomAnimationMontageRequested:
-  Attributes:
-  - Name: pad0x8_U04TM[0x8]
-    Offset: '0x0'
-    Size: '0x8'
-    Type: char
-  ClassSize: '0x8'
-EventHitReactAnimationFinished:
-  Attributes:
-  - Name: pad0x1_8Q5YH[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
 EventHitReactAnimationRequested:
   Attributes:
   - Name: HitNormal
     Offset: '0x0'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: HitVelocity
     Offset: '0xc'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: ReactionAnimType
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_PJWA5[0x3]
-    Offset: '0x19'
-    Size: '0x3'
-    Type: char
   ClassSize: '0x1c'
 EventPreviewCharacterAnimationRequest:
   Attributes:
@@ -457,10 +345,6 @@ HitReactionAnimationState:
     Offset: '0x9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1e_QMC0U[0x1e]
-    Offset: '0xa'
-    Size: '0x1e'
-    Type: char
   ClassSize: '0x28'
 IKLookAtParams:
   Attributes:
@@ -477,82 +361,51 @@ IKLookAtParams:
     Size: '0x4'
     Type: float
   ClassSize: '0xc'
-LimbIK:
-  Attributes:
-  - Name: pad0x60_VM8P5[0x60]
-    Offset: '0x0'
-    Size: '0x60'
-    Type: char
-  ClassSize: '0x60'
 TransformBlendCurve:
   Attributes:
   - Name: UseLocationCurve
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_XYNZR[0x7]
-    Offset: '0x1'
-    Size: '0x7'
-    Type: char
   - Name: LocationCurve
     Offset: '0x8'
     Size: '0x170'
-    Type: struct RuntimeVectorCurve
+    Type: struct
   - Name: UseRotationCurve
     Offset: '0x178'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_N1YHV[0x7]
-    Offset: '0x179'
-    Size: '0x7'
-    Type: char
   - Name: RotationCurve
     Offset: '0x180'
     Size: '0x170'
-    Type: struct RuntimeVectorCurve
+    Type: struct
   - Name: UseScaleCurve
     Offset: '0x2f0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_74EFX[0x7]
-    Offset: '0x2f1'
-    Size: '0x7'
-    Type: char
   - Name: ScaleCurve
     Offset: '0x2f8'
     Size: '0x170'
-    Type: struct RuntimeVectorCurve
-  - Name: pad0x8_2R5MR[0x8]
-    Offset: '0x468'
-    Size: '0x8'
-    Type: char
+    Type: struct
   - Name: SourceTransform
     Offset: '0x470'
     Size: '0x30'
-    Type: struct Transform
+    Type: struct
   - Name: TargetTransform
     Offset: '0x4a0'
     Size: '0x30'
-    Type: struct Transform
-  - Name: pad0x30_BE1PK[0x30]
-    Offset: '0x4d0'
-    Size: '0x30'
-    Type: char
+    Type: struct
   ClassSize: '0x500'
 WeightedAnimationData:
   Attributes:
   - Name: Animation
     Offset: '0x0'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: Weighting
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_N59E0[0x4]
-    Offset: '0x14'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x18'
 WeightedAnimationLoadOnDemandDataMetaData:
   Attributes:
@@ -572,17 +425,13 @@ WeightedAnimationLoadOnDemandDataMetaData:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_T0FYN[0x7]
-    Offset: '0x31'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x38'
 WeightedAnimationTimeout:
   Attributes:
   - Name: TimeoutRange
     Offset: '0x0'
     Size: '0x10'
-    Type: struct FloatRange
+    Type: struct
   - Name: Weighting
     Offset: '0x10'
     Size: '0x4'

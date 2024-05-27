@@ -5,37 +5,29 @@ OceanCrawlerAnimationData:
   - Name: OceanCrawlerAnimationDataStructure
     Offset: '0x28'
     Size: '0x90'
-    Type: struct OceanCrawlerAnimationDataStructure
+    Type: struct
   ClassSize: '0x90'
   FullSize: '0xb8'
   InheritedSize: '0x28'
   Super: AnimationData
 OceanCrawlerAnimationInstance:
   Attributes:
-  - Name: pad0x18_YLS9C[0x18]
-    Offset: '0x440'
-    Size: '0x18'
-    Type: char
   - Name: LoadedAnimations
     Offset: '0x458'
     Size: '0x90'
-    Type: struct OceanCrawlerAnimationDataStructure
+    Type: struct
   - Name: MovementData
     Offset: '0x4e8'
     Size: '0x18'
-    Type: struct ActorVelocityData
+    Type: struct
   - Name: CurrentDirection
     Offset: '0x500'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_U3BRG[0x4]
-    Offset: '0x504'
-    Size: '0x4'
-    Type: char
   - Name: AttackAnims
     Offset: '0x508'
     Size: '0xb8'
-    Type: struct AthenaAnimationWeapon
+    Type: struct
   - Name: UseDefaultAnimations
     Offset: '0x5c0'
     Size: '0x1'
@@ -48,40 +40,24 @@ OceanCrawlerAnimationInstance:
     Offset: '0x5c2'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_X3WHS[0x1]
-    Offset: '0x5c3'
-    Size: '0x1'
-    Type: char
   - Name: PropAttachmentSocket
     Offset: '0x5c4'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_3N8GY[0x4]
-    Offset: '0x5cc'
-    Size: '0x4'
-    Type: char
   - Name: MontagePlayer
     Offset: '0x5d0'
     Size: '0xd8'
-    Type: struct CustomAnimationMontageStateMachine
+    Type: struct
   - Name: HitReacts
     Offset: '0x6a8'
     Size: '0x28'
-    Type: struct HitReactionAnimationState
-  - Name: pad0x50_UT8O0[0x50]
-    Offset: '0x6d0'
-    Size: '0x50'
-    Type: char
+    Type: struct
   ClassSize: '0x2e0'
   FullSize: '0x720'
   InheritedSize: '0x440'
   Super: AnimInstance
 OceanCrawlerAnimationServerData:
   Attributes:
-  - Name: pad0x8_7FC3D[0x8]
-    Offset: '0x28'
-    Size: '0x8'
-    Type: char
   - Name: AnimInstanceType
     Offset: '0x30'
     Size: '0x8'
@@ -98,10 +74,6 @@ OceanCrawlerAnimationServerData:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_VBTLI[0x4]
-    Offset: '0x44'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'

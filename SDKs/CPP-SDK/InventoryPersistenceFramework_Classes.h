@@ -10,16 +10,7 @@
 class InventoryPersistenceService: public Actor
 {
 public:
-	char                                                         pad0x158_W5WPB[0x158];                             // 0x3c8(0x158)
 	TArray<struct InventoryPersistencePlayerData>                PlayerItemData;                                    // 0x520(0x10)
-	char                                                         pad0x18_RACD1[0x18];                               // 0x530(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class InventoryPersistenceServiceInterface: public Interface
-{
-public:
 };
 
 

@@ -1,15 +1,4 @@
 {
-  "ExistingNPCToPhasedNPC": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x40_HZSX2[0x40]",
-        "Type": "char",
-        "Size": "0x40",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "ClueDestinationToTextIndex": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -20,8 +9,8 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x20_LW3ZM[0x20]",
-        "Type": "char",
+        "Name": "RequiredIndexAsset",
+        "Type": "assetobject",
         "Size": "0x20",
         "Offset": "0x8"
       }
@@ -32,7 +21,7 @@
     "Attributes": [
       {
         "Name": "AssetReference",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -41,52 +30,23 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x4_8WSQD[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
       }
     ]
   },
-  "ClueDestinationChoice": {
-    "ClassSize": "0x10",
+  "ExistingNPCToPhasedNPC": {
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "Destination",
-        "Type": "class ClueDestinationDescriptor*",
-        "Size": "0x8",
+        "Name": "ExistingNPC",
+        "Type": "assetclass",
+        "Size": "0x20",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_3X10S[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "TextEntryWithLayout": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "TextEntry",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TextLayout",
-        "Type": "struct TreasureMapWidgetText",
-        "Size": "0x3c",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x4_JU3QZ[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x74"
+        "Name": "PhasedNPC",
+        "Type": "assetclass",
+        "Size": "0x20",
+        "Offset": "0x20"
       }
     ]
   },
@@ -103,6 +63,40 @@
         "Name": "FeminineClueDestinationDescription",
         "Type": "struct FText",
         "Size": "0x38",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "ClueDestinationChoice": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Destination",
+        "Type": "class ClueDestinationDescriptor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ClueChoice",
+        "Type": "int16",
+        "Size": "0x2",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "TextEntryWithLayout": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "TextEntry",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TextLayout",
+        "Type": "struct",
+        "Size": "0x3c",
         "Offset": "0x38"
       }
     ]

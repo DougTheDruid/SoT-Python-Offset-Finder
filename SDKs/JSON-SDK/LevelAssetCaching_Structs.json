@@ -4,19 +4,19 @@
     "Attributes": [
       {
         "Name": "WorldBoundsOrigin",
-        "Type": "struct Vector2D",
+        "Type": "struct",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "RegionSize",
-        "Type": "struct Vector2D",
+        "Type": "struct",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "GridSize",
-        "Type": "struct IntPoint",
+        "Type": "struct",
         "Size": "0x8",
         "Offset": "0x10"
       },

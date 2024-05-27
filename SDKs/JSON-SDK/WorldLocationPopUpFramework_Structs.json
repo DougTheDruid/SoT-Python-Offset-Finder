@@ -27,7 +27,7 @@
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "struct Vector",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0x0"
       },

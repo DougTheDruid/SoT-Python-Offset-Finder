@@ -63,7 +63,7 @@
       },
       {
         "Name": "NestedStruct",
-        "Type": "struct SerialisedNestedStruct",
+        "Type": "struct",
         "Size": "0x28",
         "Offset": "0x38"
       }

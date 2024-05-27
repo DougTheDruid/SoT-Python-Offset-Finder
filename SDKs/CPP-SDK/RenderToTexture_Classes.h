@@ -8,17 +8,11 @@ class RenderToTextureSceneDetails: public Object
 {
 public:
 	class UClass*                                                ClassToSpawn;                                      // 0x28(0x8)
-	struct IntPoint                                              Resolution;                                        // 0x30(0x8)
+	struct                                                       Resolution;                                        // 0x30(0x8)
 	class World*                                                 World;                                             // 0x38(0x8)
+	class World*                                                 ParentWorld;                                       // 0x40(0x8)
+	class Actor*                                                 SpawnedActor;                                      // 0x48(0x8)
 	class TextureRenderTarget2D*                                 RenderTarget;                                      // 0x50(0x8)
-	char                                                         pad0x50_QBXEQ[0x50];                               // 0x58(0x50)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RenderToTextureFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
 };
 
 

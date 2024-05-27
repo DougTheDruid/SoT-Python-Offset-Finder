@@ -1,556 +1,55 @@
 {
-  "AbandonedNoteClueDescriptorGenerator": {
-    "Super": "ClueDescriptorGenerator",
-    "FullSize": "0x40",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleQuestRetrieveSpawnedMerchantCaptainFromShipwreckStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BarrelsOfPlentyClueSiteType": {
-    "Super": "ClueSiteType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WaitForClueCollectedStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x140",
-    "InheritedSize": "0x98",
-    "ClassSize": "0xa8",
+  "TaleQuestClueInventoryService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x288",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x228",
     "Attributes": [
       {
-        "Name": "ClueDesc",
-        "Type": "class ClueDescriptor*",
-        "Size": "0x8",
-        "Offset": "0x98"
+        "Name": "ObtainedClues",
+        "Type": "TArray<class ClueDescriptor*>",
+        "Size": "0x10",
+        "Offset": "0x78"
       },
       {
-        "Name": "ClueActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0xa0"
+        "Name": "DiscovererMap",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0xd8"
       },
       {
-        "Name": "pad0x98_H055G[0x98]",
-        "Type": "char",
-        "Size": "0x98",
-        "Offset": "0xa8"
+        "Name": "TitleText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x248"
+      },
+      {
+        "Name": "ClueTextChoiceSource",
+        "Type": "class AbandonedNoteClueTextChoiceSource*",
+        "Size": "0x8",
+        "Offset": "0x280"
       }
     ]
   },
-  "ClueTitleInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
+  "TaleQuestClueInventoryServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x68",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AbandonedNoteWieldable": {
-    "Super": "SkeletalMeshWieldableItem",
-    "FullSize": "0x820",
-    "InheritedSize": "0x7e0",
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x10_PXRQP[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x7e0"
-      },
-      {
-        "Name": "WieldableItemCanvasRenderingComponent",
-        "Type": "class WieldableItemCanvasRenderingComponent*",
-        "Size": "0x8",
-        "Offset": "0x7f0"
-      },
-      {
-        "Name": "AbandonedNoteRenderingComponent",
-        "Type": "class AbandonedNoteWieldableRenderingComponent*",
-        "Size": "0x8",
-        "Offset": "0x7f8"
-      },
-      {
-        "Name": "InventoryItemComponent",
-        "Type": "class InventoryItemComponent*",
-        "Size": "0x8",
-        "Offset": "0x800"
-      },
-      {
-        "Name": "UsableWieldableComponent",
-        "Type": "class UsableWieldableComponent*",
-        "Size": "0x8",
-        "Offset": "0x808"
-      },
-      {
-        "Name": "QuestMapIcon",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x810"
-      },
-      {
-        "Name": "pad0xf_Q8K9R[0xf]",
-        "Type": "char",
-        "Size": "0xf",
-        "Offset": "0x811"
-      }
-    ]
-  },
-  "WashedUpSkeletonLandClueCreator": {
-    "Super": "LandClueCreator",
-    "FullSize": "0x70",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "SkeletonPoses",
-        "Type": "TArray<Class>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "LootItemSpawnXYDistanceFromClueIncrementMin",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "LootItemSpawnXYDistanceFromClueIncrementMax",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x64"
-      },
-      {
-        "Name": "LootItemSpawnZOffset",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "pad0x4_WV489[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x6c"
-      }
-    ]
-  },
-  "ExistingToPhasedNPCIndexAssetMap": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "NPCIndexMappings",
-        "Type": "TArray<struct ExistingNPCToPhasedNPC>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "FloatingMessageInABottleClueDestinationGenerator": {
-    "Super": "ClueDestinationGenerator",
-    "FullSize": "0x90",
-    "InheritedSize": "0x90",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "GooseChaseClueBlueprintFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleQuestRetrieveSpawnedMerchantCaptainFromShipwreckStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "ShipwreckSpawnedOn",
-        "Type": "struct QuestVariableShipwreck",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "SpawnedMerchantCaptain",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      }
-    ]
-  },
-  "TaleQuestGetNPCActorFromClueSiteStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "ClueSite",
-        "Type": "struct QuestVariableClueSite",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "NPCFromClueSite",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      }
-    ]
-  },
-  "LostShipwreckClueDestinationDescriptor": {
-    "Super": "ClueDestinationDescriptor",
-    "FullSize": "0x40",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "IslandNameForNPCContextDestinationDescriptor": {
-    "Super": "ClueDestinationDescriptor",
-    "FullSize": "0x48",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "IslandIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "NPCHintDialogueClueSiteData": {
-    "Super": "ClueSiteData",
-    "FullSize": "0x120",
-    "InheritedSize": "0x38",
-    "ClassSize": "0xe8",
-    "Attributes": [
-      {
-        "Name": "NPCData",
-        "Type": "struct NPCData",
-        "Size": "0xb8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x30_NDS37[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0xf0"
-      }
-    ]
-  },
-  "NPCHintDialogueClueSiteType": {
-    "Super": "ClueSiteType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AbandonedNoteClueTextAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Descriptions",
-        "Type": "TArray<struct Text>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "DestinationType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "TaleQuestSpawnWashedUpSkeletonClueStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "IslandByCompassBearingClueDestinationDescriptor": {
-    "Super": "ClueDestinationDescriptor",
-    "FullSize": "0x48",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CompassDirection",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x7_H9QUM[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x41"
-      }
-    ]
-  },
-  "FloatingMessageInABottleClueSiteType": {
-    "Super": "ClueSiteType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleQuestSpawnWashedUpMessageInABottleClueStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x110",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "ClueSite",
-        "Type": "struct QuestVariableClueSite",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "ClueDescriptor",
-        "Type": "struct QuestVariableClueDescriptor",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "MessageInABottle",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0xe0"
-      }
-    ]
-  },
-  "MerchantCaptainSpawnInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ClueSiteCircleMapWieldable": {
-    "Super": "RenderToTextureMapBase",
-    "FullSize": "0x8d0",
-    "InheritedSize": "0x890",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x20_9OCLZ[0x20]",
-        "Type": "char",
+        "Name": "AbandonedNoteItem",
+        "Type": "assetclass",
         "Size": "0x20",
-        "Offset": "0x890"
+        "Offset": "0x28"
       },
       {
-        "Name": "MapRadialIconData",
-        "Type": "struct MapRadialIconData",
-        "Size": "0x18",
-        "Offset": "0x8b0"
-      },
-      {
-        "Name": "pad0x8_JW6B9[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x8c8"
-      }
-    ]
-  },
-  "WashedUpMessageInABottleClueSiteData": {
-    "Super": "ClueSiteData",
-    "FullSize": "0xe0",
-    "InheritedSize": "0x38",
-    "ClassSize": "0xa8",
-    "Attributes": [
-      {
-        "Name": "BottleItemType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "IslandNameToSpawnOn",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "IslandSpawnLocationReservationId",
-        "Type": "struct Guid",
-        "Size": "0x10",
+        "Name": "CircleMapItem",
+        "Type": "assetclass",
+        "Size": "0x20",
         "Offset": "0x48"
-      },
-      {
-        "Name": "pad0x8_C5F9T[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "SpawnTransform",
-        "Type": "struct Transform",
-        "Size": "0x30",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "SinkIntoSandItems",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "pad0x40_JA8LH[0x40]",
-        "Type": "char",
-        "Size": "0x40",
-        "Offset": "0xa0"
       }
     ]
-  },
-  "TaleQuestSpawnWashedUpSkeletonClueStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x148",
-    "InheritedSize": "0x80",
-    "ClassSize": "0xc8",
-    "Attributes": [
-      {
-        "Name": "ClueSite",
-        "Type": "struct QuestVariableClueSite",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "ClueDescriptor",
-        "Type": "struct QuestVariableClueDescriptor",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "SkeletonActor",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "ClueItem",
-        "Type": "struct QuestVariableItemInfo",
-        "Size": "0x30",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "SkeletonClueSocketName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x140"
-      }
-    ]
-  },
-  "LocationOnIslandClueDestinationDescriptor": {
-    "Super": "ClueDestinationDescriptor",
-    "FullSize": "0x58",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "IslandIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "WorldPosition",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0x4_R7ZO0[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x54"
-      }
-    ]
-  },
-  "BarrelsOfPlentyClueSiteData": {
-    "Super": "ClueSiteData",
-    "FullSize": "0x70",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "SpawnLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x2c_424U5[0x2c]",
-        "Type": "char",
-        "Size": "0x2c",
-        "Offset": "0x44"
-      }
-    ]
-  },
-  "NPCHintDialogueClueDestinationGenerator": {
-    "Super": "ClueDestinationGenerator",
-    "FullSize": "0x90",
-    "InheritedSize": "0x90",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SeaLocationByGridSquareClueDestinationDescriptor": {
-    "Super": "ClueDestinationDescriptor",
-    "FullSize": "0x50",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SeaLocationIdentifier",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x4_RELYK[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4c"
-      }
-    ]
-  },
-  "TaleQuestGetPhasedVersionOfActorFromAssetMapStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "NPCIndexAssetMap",
-        "Type": "class ExistingToPhasedNPCIndexAssetMap*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "WashedUpSkeletonClueDestinationGenerator": {
-    "Super": "ClueDestinationGenerator",
-    "FullSize": "0x90",
-    "InheritedSize": "0x90",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "WashedUpMessageInABottleClueCreator": {
     "Super": "LandClueCreator",
@@ -559,8 +58,8 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x20_11ZVZ[0x20]",
-        "Type": "char",
+        "Name": "MessageInABottleItem",
+        "Type": "assetclass",
         "Size": "0x20",
         "Offset": "0x30"
       },
@@ -607,12 +106,6 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x4_JSW2R[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x6c"
-      },
-      {
         "Name": "SinkIntoSandItems",
         "Type": "TArray<Class>",
         "Size": "0x10",
@@ -620,63 +113,23 @@
       }
     ]
   },
-  "ClueDestinationContainerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ShipwreckClueBlueprintFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "FloatingMessageInABottleSeaClueCreator": {
-    "Super": "SeaClueCreator",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
+  "CompositeClueDestinationDescriptor": {
+    "Super": "ClueDestinationDescriptor",
+    "FullSize": "0x50",
+    "InheritedSize": "0x40",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "LootItemSpawnXYDistanceFromClueIncrementMin",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
+        "Name": "PrimaryClueDestDescriptor",
+        "Type": "class ClueDestinationDescriptor*",
+        "Size": "0x8",
+        "Offset": "0x40"
       },
       {
-        "Name": "LootItemSpawnXYDistanceFromClueIncrementMax",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "ObtainClueOnWieldComponent": {
-    "Super": "OnItemWieldedComponent",
-    "FullSize": "0x160",
-    "InheritedSize": "0x148",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_RZGB4[0x8]",
-        "Type": "char",
+        "Name": "SecondaryClueDestDescriptor",
+        "Type": "class ClueDestinationDescriptor*",
         "Size": "0x8",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "ClueToObtain",
-        "Type": "class ClueDescriptor*",
-        "Size": "0x8",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "ClueSiteType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x158"
+        "Offset": "0x48"
       }
     ]
   },
@@ -700,33 +153,237 @@
       }
     ]
   },
-  "BarrelsOfPlentyClueDestinationGenerator": {
-    "Super": "ClueDestinationGenerator",
-    "FullSize": "0x90",
-    "InheritedSize": "0x90",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AbandonedNoteClueTextChoiceSource": {
-    "Super": "Object",
-    "FullSize": "0xe0",
+  "AbandonedNoteClueTextAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x40",
     "InheritedSize": "0x28",
-    "ClassSize": "0xb8",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0xb8_R7ASU[0xb8]",
-        "Type": "char",
-        "Size": "0xb8",
+        "Name": "Descriptions",
+        "Type": "TArray<struct Text>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "DestinationType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "WashedUpSkeletonClueSiteData": {
+    "Super": "ClueSiteData",
+    "FullSize": "0xc0",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "SkeletonPoseType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "ClueItemType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "IslandNameToSpawnOn",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "IslandSpawnLocationReservationId",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "SpawnTransform",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "WashedUpSkeletonLandClueCreator": {
+    "Super": "LandClueCreator",
+    "FullSize": "0x70",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "SkeletonPoses",
+        "Type": "TArray<Class>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ClueItemDesc",
+        "Type": "assetclass",
+        "Size": "0x20",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "LootItemSpawnXYDistanceFromClueIncrementMin",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "LootItemSpawnXYDistanceFromClueIncrementMax",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "LootItemSpawnZOffset",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "ExistingToPhasedNPCIndexAssetMap": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NPCIndexMappings",
+        "Type": "TArray<struct ExistingNPCToPhasedNPC>",
+        "Size": "0x10",
         "Offset": "0x28"
       }
     ]
   },
-  "ShipwreckClueSiteType": {
-    "Super": "ClueSiteType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "AbandonedNoteClueDestinationContainerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1d0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x108",
+    "Attributes": [
+      {
+        "Name": "ClueTextIndexAssetMap",
+        "Type": "class AbandonedNoteClueTextIndexAssetMap*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "CompositeFormatString",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "CurrentClueDestination",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "CurrentTitleText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "ClueTextChoiceSource",
+        "Type": "class AbandonedNoteClueTextChoiceSource*",
+        "Size": "0x8",
+        "Offset": "0x148"
+      }
+    ]
+  },
+  "TaleQuestGetPhasedVersionOfActorFromAssetMapStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x118",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "ExistingNPCActor",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "ObtainedPhasedNPCActorType",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "PhasingSourceActor",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "IndexAssetMap",
+        "Type": "class ExistingToPhasedNPCIndexAssetMap*",
+        "Size": "0x8",
+        "Offset": "0x110"
+      }
+    ]
+  },
+  "TaleQuestSpawnWashedUpSkeletonClueStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x148",
+    "InheritedSize": "0x80",
+    "ClassSize": "0xc8",
+    "Attributes": [
+      {
+        "Name": "ClueSite",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "ClueDescriptor",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "SkeletonActor",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "ClueItem",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "SkeletonClueSocketName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x140"
+      }
+    ]
+  },
+  "NPCByNameClueDestinationDescriptor": {
+    "Super": "ClueDestinationDescriptor",
+    "FullSize": "0x50",
+    "InheritedSize": "0x40",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NPCIdentifier",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x40"
+      }
+    ]
   },
   "CircleMapClueDestinationContainerComponent": {
     "Super": "ActorComponent",
@@ -734,12 +391,6 @@
     "InheritedSize": "0xc8",
     "ClassSize": "0x98",
     "Attributes": [
-      {
-        "Name": "pad0x10_PQWUZ[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      },
       {
         "Name": "MapMarkId",
         "Type": "class UClass*",
@@ -777,12 +428,6 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x7_5K6NQ[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xf1"
-      },
-      {
         "Name": "DebugCrossId",
         "Type": "class UClass*",
         "Size": "0x8",
@@ -795,277 +440,128 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x7_OCFBH[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x101"
-      },
-      {
         "Name": "ClueRenderData",
         "Type": "TArray<struct MapTextureRenderData>",
         "Size": "0x10",
         "Offset": "0x108"
-      },
-      {
-        "Name": "pad0x48_GJ9LW[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x118"
       }
     ]
   },
-  "TaleQuestGetNPCActorFromClueSiteStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AbandonedNoteClueGenderSpecificTextAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
+  "LocationOnIslandClueDestinationDescriptor": {
+    "Super": "ClueDestinationDescriptor",
+    "FullSize": "0x58",
+    "InheritedSize": "0x40",
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Descriptions",
-        "Type": "TArray<struct GenderSpecificTextPairings>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "DestinationType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "WashedUpSkeletonClueSiteType": {
-    "Super": "ClueSiteType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleQuestClueInventoryService": {
-    "Super": "TaleQuestService",
-    "FullSize": "0x288",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x228",
-    "Attributes": [
-      {
-        "Name": "pad0x18_3HXIV[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "ObtainedClues",
-        "Type": "TArray<class ClueDescriptor*>",
-        "Size": "0x10",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "pad0x50_XRY4G[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "TitleText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x248"
-      },
-      {
-        "Name": "ClueTextChoiceSource",
-        "Type": "class AbandonedNoteClueTextChoiceSource*",
-        "Size": "0x8",
-        "Offset": "0x280"
-      }
-    ]
-  },
-  "ShipwreckClueDestinationGenerator": {
-    "Super": "ClueDestinationGenerator",
-    "FullSize": "0x90",
-    "InheritedSize": "0x90",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CircleMapClueDescriptorGenerator": {
-    "Super": "ClueDescriptorGenerator",
-    "FullSize": "0x40",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AbandonedNoteClueDestinationContainerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x1d0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x108",
-    "Attributes": [
-      {
-        "Name": "pad0x20_ZPSAZ[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "ClueTextIndexAssetMap",
-        "Type": "class AbandonedNoteClueTextIndexAssetMap*",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "CompositeFormatString",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "CurrentClueDestination",
-        "Type": "struct ClueDestinationChoice",
-        "Size": "0x10",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "CurrentTitleText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "ClueTextChoiceSource",
-        "Type": "class AbandonedNoteClueTextChoiceSource*",
-        "Size": "0x8",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "pad0x80_KCMUH[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0x150"
-      }
-    ]
-  },
-  "MerchantCaptainSpawnComponent": {
-    "Super": "ItemSpawnComponent",
-    "FullSize": "0x480",
-    "InheritedSize": "0x470",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_DPYPX[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x470"
-      }
-    ]
-  },
-  "ShipwreckClueDestinationDescriptor": {
-    "Super": "ClueDestinationDescriptor",
-    "FullSize": "0x40",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "InteractableGrammaticalGenderComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x8_DH74T[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "GrammaticalGender",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "pad0x7_BK77M[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xd1"
-      }
-    ]
-  },
-  "CompositeClueDestinationDescriptor": {
-    "Super": "ClueDestinationDescriptor",
-    "FullSize": "0x50",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "PrimaryClueDestDescriptor",
-        "Type": "class ClueDestinationDescriptor*",
+        "Name": "IslandIdentifier",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x40"
       },
       {
-        "Name": "SecondaryClueDestDescriptor",
-        "Type": "class ClueDestinationDescriptor*",
-        "Size": "0x8",
+        "Name": "WorldPosition",
+        "Type": "struct",
+        "Size": "0xc",
         "Offset": "0x48"
       }
     ]
   },
-  "NPCHintDialogueClueCreator": {
-    "Super": "LandClueCreator",
-    "FullSize": "0x48",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x18",
+  "WaitForClueCollectedStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x110",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "NPCMappingAsset",
-        "Type": "class ExistingToPhasedNPCIndexAssetMap*",
-        "Size": "0x8",
-        "Offset": "0x30"
+        "Name": "Clue",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0x80"
       },
       {
-        "Name": "LootItemSpawnXYDistanceFromClueIncrementMin",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x38"
+        "Name": "ClueActor",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0xb0"
       },
       {
-        "Name": "LootItemSpawnXYDistanceFromClueIncrementMax",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "LootItemSpawnZOffset",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x4_L3QY8[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x44"
+        "Name": "Discoverer",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0xe0"
       }
     ]
   },
-  "TaleQuestClueInventoryServiceDesc": {
-    "Super": "TaleQuestServiceDesc",
-    "FullSize": "0x68",
+  "AbandonedNoteClueTextIndexAsset": {
+    "Super": "AbandonedNoteClueTextIndexAssetBase",
+    "FullSize": "0x38",
     "InheritedSize": "0x28",
-    "ClassSize": "0x40",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x40_GY2MO[0x40]",
-        "Type": "char",
-        "Size": "0x40",
+        "Name": "ClueDestinationDescriptions",
+        "Type": "TArray<class AbandonedNoteClueTextAsset*>",
+        "Size": "0x10",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "AbandonedNoteWieldable": {
+    "Super": "SkeletalMeshWieldableItem",
+    "FullSize": "0x820",
+    "InheritedSize": "0x7f0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "WieldableItemCanvasRenderingComponent",
+        "Type": "class WieldableItemCanvasRenderingComponent*",
+        "Size": "0x8",
+        "Offset": "0x7f8"
+      },
+      {
+        "Name": "AbandonedNoteRenderingComponent",
+        "Type": "class AbandonedNoteWieldableRenderingComponent*",
+        "Size": "0x8",
+        "Offset": "0x800"
+      },
+      {
+        "Name": "InventoryItemComponent",
+        "Type": "class InventoryItemComponent*",
+        "Size": "0x8",
+        "Offset": "0x808"
+      },
+      {
+        "Name": "UsableWieldableComponent",
+        "Type": "class UsableWieldableComponent*",
+        "Size": "0x8",
+        "Offset": "0x810"
+      },
+      {
+        "Name": "QuestMapIcon",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x818"
+      }
+    ]
+  },
+  "TaleQuestGetNPCActorFromClueSiteStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "ClueSite",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "NPCFromClueSite",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0xb0"
       }
     ]
   },
@@ -1077,164 +573,9 @@
     "Attributes": [
       {
         "Name": "SpawnLocation",
-        "Type": "struct Vector",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x2c_B6DIM[0x2c]",
-        "Type": "char",
-        "Size": "0x2c",
-        "Offset": "0x44"
-      }
-    ]
-  },
-  "AbandonedNoteClueTextIndexAssetMap": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "TextIndexMappings",
-        "Type": "TArray<struct ClueDestinationToTextIndex>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "CircleMapClueRenderDataSourceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleQuestGetPhasedVersionOfActorFromAssetMapStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x118",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "ExistingNPCActor",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "ObtainedPhasedNPCActorType",
-        "Type": "struct QuestVariableActorAssetType",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "PhasingSourceActor",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "IndexAssetMap",
-        "Type": "class ExistingToPhasedNPCIndexAssetMap*",
-        "Size": "0x8",
-        "Offset": "0x110"
-      }
-    ]
-  },
-  "EndOfGooseChaseClueDestinationDescriptor": {
-    "Super": "ClueDestinationDescriptor",
-    "FullSize": "0x40",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WashedUpMessageInABottleClueDestinationGenerator": {
-    "Super": "ClueDestinationGenerator",
-    "FullSize": "0x90",
-    "InheritedSize": "0x90",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WaitForClueCollectedStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x110",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "Clue",
-        "Type": "struct QuestVariableClueDescriptor",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "ClueActor",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "Discoverer",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0xe0"
-      }
-    ]
-  },
-  "AbandonedNoteClueTextChoiceSourceConsumerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WashedUpMessageInABottleClueSiteType": {
-    "Super": "ClueSiteType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CircleMapClueDescriptor": {
-    "Super": "ClueDescriptor",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DestinationDescriptor",
-        "Type": "class ClueDestinationDescriptor*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "IslandByNameClueDestinationDescriptor": {
-    "Super": "ClueDestinationDescriptor",
-    "FullSize": "0x48",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "IslandIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "AbandonedNoteClueDescriptor": {
-    "Super": "ClueDescriptor",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DestinationDescriptor",
-        "Type": "class ClueDestinationDescriptor*",
-        "Size": "0x8",
-        "Offset": "0x28"
       }
     ]
   },
@@ -1282,13 +623,13 @@
       },
       {
         "Name": "BodyTextLayout",
-        "Type": "struct TreasureMapWidgetText",
+        "Type": "struct",
         "Size": "0x3c",
         "Offset": "0xe8"
       },
       {
         "Name": "TitleTextLayout",
-        "Type": "struct TreasureMapWidgetText",
+        "Type": "struct",
         "Size": "0x3c",
         "Offset": "0x124"
       },
@@ -1299,124 +640,178 @@
         "Offset": "0x160"
       },
       {
-        "Name": "pad0x50_LJ2Q1[0x50]",
-        "Type": "char",
-        "Size": "0x50",
+        "Name": "WieldableRenderingInterface",
+        "Type": "interface",
+        "Size": "0x10",
         "Offset": "0x170"
       }
     ]
   },
-  "WashedUpSkeletonClueSiteData": {
-    "Super": "ClueSiteData",
-    "FullSize": "0xc0",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x88",
+  "IslandNameForNPCContextDestinationDescriptor": {
+    "Super": "ClueDestinationDescriptor",
+    "FullSize": "0x48",
+    "InheritedSize": "0x40",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "SkeletonPoseType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "ClueItemType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "IslandNameToSpawnOn",
+        "Name": "IslandIdentifier",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "IslandSpawnLocationReservationId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "SpawnTransform",
-        "Type": "struct Transform",
-        "Size": "0x30",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "pad0x30_3P89Y[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x90"
+        "Offset": "0x40"
       }
     ]
   },
-  "TaleQuestSpawnWashedUpMessageInABottleClueStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ClueVariantsBlueprintFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
+  "AbandonedNoteClueDescriptor": {
+    "Super": "ClueDescriptor",
+    "FullSize": "0x30",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DestinationDescriptor",
+        "Type": "class ClueDestinationDescriptor*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
   },
-  "NPCByNameClueDestinationDescriptor": {
+  "SeaLocationByGridSquareClueDestinationDescriptor": {
     "Super": "ClueDestinationDescriptor",
     "FullSize": "0x50",
     "InheritedSize": "0x40",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "NPCIdentifier",
-        "Type": "struct Guid",
-        "Size": "0x10",
+        "Name": "SeaLocationIdentifier",
+        "Type": "struct",
+        "Size": "0xc",
         "Offset": "0x40"
       }
     ]
   },
-  "AbandonedNoteClueTextIndexAssetBase": {
-    "Super": "DataAsset",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AbandonedNoteClueTextSourceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ObtainClueFromContainerOnWieldComponent": {
-    "Super": "ObtainClueOnWieldComponent",
-    "FullSize": "0x1e0",
-    "InheritedSize": "0x160",
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "pad0x80_476H7[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0x160"
-      }
-    ]
-  },
-  "AbandonedNoteClueTextIndexAsset": {
-    "Super": "AbandonedNoteClueTextIndexAssetBase",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
+  "InteractableGrammaticalGenderComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ClueDestinationDescriptions",
-        "Type": "TArray<class AbandonedNoteClueTextAsset*>",
+        "Name": "GrammaticalGender",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "AbandonedNoteClueGenderSpecificTextAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Descriptions",
+        "Type": "TArray<struct GenderSpecificTextPairings>",
         "Size": "0x10",
         "Offset": "0x28"
+      },
+      {
+        "Name": "DestinationType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "ObtainClueOnWieldComponent": {
+    "Super": "OnItemWieldedComponent",
+    "FullSize": "0x160",
+    "InheritedSize": "0x148",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ClueToObtain",
+        "Type": "class ClueDescriptor*",
+        "Size": "0x8",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "ClueSiteType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x158"
+      }
+    ]
+  },
+  "FloatingMessageInABottleSeaClueCreator": {
+    "Super": "SeaClueCreator",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "LootItemSpawnXYDistanceFromClueIncrementMin",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "LootItemSpawnXYDistanceFromClueIncrementMax",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "WashedUpMessageInABottleClueSiteData": {
+    "Super": "ClueSiteData",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x38",
+    "ClassSize": "0xa8",
+    "Attributes": [
+      {
+        "Name": "BottleItemType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "IslandNameToSpawnOn",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "IslandSpawnLocationReservationId",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "SpawnTransform",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "SinkIntoSandItems",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x90"
+      }
+    ]
+  },
+  "IslandByNameClueDestinationDescriptor": {
+    "Super": "ClueDestinationDescriptor",
+    "FullSize": "0x48",
+    "InheritedSize": "0x40",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "IslandIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x40"
       }
     ]
   },
@@ -1429,6 +824,222 @@
       {
         "Name": "ClueDestinationDescriptions",
         "Type": "TArray<class AbandonedNoteClueGenderSpecificTextAsset*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AbandonedNoteClueTextChoiceSource": {
+    "Super": "Object",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xb8",
+    "Attributes": [
+      {
+        "Name": "ExistingDestinations",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "TaleQuestRetrieveSpawnedMerchantCaptainFromShipwreckStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "ShipwreckSpawnedOn",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "SpawnedMerchantCaptain",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      }
+    ]
+  },
+  "TaleQuestGetPhasedVersionOfActorFromAssetMapStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "NPCIndexAssetMap",
+        "Type": "class ExistingToPhasedNPCIndexAssetMap*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "NPCHintDialogueClueCreator": {
+    "Super": "LandClueCreator",
+    "FullSize": "0x48",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "NPCMappingAsset",
+        "Type": "class ExistingToPhasedNPCIndexAssetMap*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "LootItemSpawnXYDistanceFromClueIncrementMin",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "LootItemSpawnXYDistanceFromClueIncrementMax",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "LootItemSpawnZOffset",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "ClueSiteCircleMapWieldable": {
+    "Super": "RenderToTextureMapBase",
+    "FullSize": "0x8d0",
+    "InheritedSize": "0x8a0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "InventoryRadialBackgroundTexture",
+        "Type": "assetobject",
+        "Size": "0x20",
+        "Offset": "0x898"
+      },
+      {
+        "Name": "MapRadialIconData",
+        "Type": "struct",
+        "Size": "0x18",
+        "Offset": "0x8b8"
+      }
+    ]
+  },
+  "NPCHintDialogueClueSiteData": {
+    "Super": "ClueSiteData",
+    "FullSize": "0x120",
+    "InheritedSize": "0x38",
+    "ClassSize": "0xe8",
+    "Attributes": [
+      {
+        "Name": "NPCData",
+        "Type": "struct",
+        "Size": "0xb8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "WaitForClueCollectedStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x140",
+    "InheritedSize": "0x98",
+    "ClassSize": "0xa8",
+    "Attributes": [
+      {
+        "Name": "ClueDesc",
+        "Type": "class ClueDescriptor*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "ClueActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0xa0"
+      }
+    ]
+  },
+  "TaleQuestSpawnWashedUpMessageInABottleClueStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x110",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "ClueSite",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "ClueDescriptor",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "MessageInABottle",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0xe0"
+      }
+    ]
+  },
+  "IslandByCompassBearingClueDestinationDescriptor": {
+    "Super": "ClueDestinationDescriptor",
+    "FullSize": "0x48",
+    "InheritedSize": "0x40",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CompassDirection",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "CircleMapClueDescriptor": {
+    "Super": "ClueDescriptor",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DestinationDescriptor",
+        "Type": "class ClueDestinationDescriptor*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "BarrelsOfPlentyClueSiteData": {
+    "Super": "ClueSiteData",
+    "FullSize": "0x70",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "SpawnLocation",
+        "Type": "struct",
+        "Size": "0xc",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "AbandonedNoteClueTextIndexAssetMap": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "TextIndexMappings",
+        "Type": "TArray<struct ClueDestinationToTextIndex>",
         "Size": "0x10",
         "Offset": "0x28"
       }

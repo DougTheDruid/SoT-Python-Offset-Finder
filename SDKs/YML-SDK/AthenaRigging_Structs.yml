@@ -5,11 +5,11 @@ InstancedRopeParams:
   - Name: Start
     Offset: '0x0'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: End
     Offset: '0xc'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: Thickness
     Offset: '0x18'
     Size: '0x4'
@@ -33,15 +33,15 @@ InstancedRopeParams:
   - Name: Shape
     Offset: '0x2c'
     Size: '0x18'
-    Type: struct RopeCatenaryShapeParams
+    Type: struct
   - Name: Swing
     Offset: '0x44'
     Size: '0x8'
-    Type: struct RopeCatenarySwingParams
+    Type: struct
   - Name: Dynamics
     Offset: '0x4c'
     Size: '0x8'
-    Type: struct RopeCatenaryDynamicsParams
+    Type: struct
   ClassSize: '0x54'
 PulleyVisualParams:
   Attributes:
@@ -60,10 +60,22 @@ PulleyVisualParams:
   ClassSize: '0x10'
 RiggingSystemLine:
   Attributes:
-  - Name: pad0x10_6IV2C[0x10]
+  - Name: RopeStart
     Offset: '0x0'
-    Size: '0x10'
-    Type: char
+    Size: '0x4'
+    Type: uint32
+  - Name: SocketStart
+    Offset: '0x4'
+    Size: '0x4'
+    Type: uint32
+  - Name: PulleyStart
+    Offset: '0x8'
+    Size: '0x4'
+    Type: uint32
+  - Name: NumRopes
+    Offset: '0xc'
+    Size: '0x4'
+    Type: uint32
   ClassSize: '0x10'
 RiggingSystemLineGroup:
   Attributes:
@@ -81,7 +93,7 @@ RiggingSystemLineParams:
   - Name: Start
     Offset: '0x0'
     Size: '0x20'
-    Type: struct SocketId
+    Type: struct
   - Name: Pulleys
     Offset: '0x20'
     Size: '0x10'
@@ -89,26 +101,22 @@ RiggingSystemLineParams:
   - Name: End
     Offset: '0x30'
     Size: '0x20'
-    Type: struct SocketId
+    Type: struct
   - Name: Visuals
     Offset: '0x50'
     Size: '0xc'
-    Type: struct RopeVisualParams
+    Type: struct
   - Name: Shape
     Offset: '0x5c'
     Size: '0x18'
-    Type: struct RopeCatenaryShapeParams
-  - Name: pad0x4_5ST21[0x4]
-    Offset: '0x74'
-    Size: '0x4'
-    Type: char
+    Type: struct
   ClassSize: '0x78'
 RiggingSystemPulleyAttachmentParams:
   Attributes:
   - Name: Visuals
     Offset: '0x0'
     Size: '0xc'
-    Type: struct RopeVisualParams
+    Type: struct
   - Name: Length
     Offset: '0xc'
     Size: '0x4'
@@ -150,27 +158,19 @@ RiggingSystemPulleyParams:
   - Name: Anchor
     Offset: '0x0'
     Size: '0x20'
-    Type: struct SocketId
+    Type: struct
   - Name: OffsetFromAnchor
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_6SCJU[0x4]
-    Offset: '0x24'
-    Size: '0x4'
-    Type: char
   - Name: Visuals
     Offset: '0x28'
     Size: '0x10'
-    Type: struct PulleyVisualParams
+    Type: struct
   - Name: AttachmentRope
     Offset: '0x38'
     Size: '0x14'
-    Type: struct RiggingSystemPulleyAttachmentParams
-  - Name: pad0x4_I92DY[0x4]
-    Offset: '0x4c'
-    Size: '0x4'
-    Type: char
+    Type: struct
   ClassSize: '0x50'
 RopeCatenaryDynamicsParams:
   Attributes:
@@ -182,10 +182,6 @@ RopeCatenaryDynamicsParams:
     Offset: '0x4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_L5Z67[0x3]
-    Offset: '0x5'
-    Size: '0x3'
-    Type: char
   ClassSize: '0x8'
 RopeCatenaryLengthPair:
   Attributes:
@@ -222,11 +218,11 @@ RopeCatenaryShapeParams:
   - Name: Length
     Offset: '0x0'
     Size: '0x10'
-    Type: struct RopeCatenaryLengthParams
+    Type: struct
   - Name: Slope
     Offset: '0x10'
     Size: '0x8'
-    Type: struct RopeCatenarySlopeBlendParams
+    Type: struct
   ClassSize: '0x18'
 RopeCatenarySlopeBlendParams:
   Attributes:
@@ -268,10 +264,6 @@ RopeStyleParams:
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_08BIC[0x4]
-    Offset: '0x1c'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x20'
 RopeVisualParams:
   Attributes:

@@ -1,15 +1,4 @@
 {
-  "CachedShip": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_LTTY5[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "BumperZoneData": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -18,12 +7,6 @@
         "Type": "class ShipBumperZone*",
         "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x20_WWOKO[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x8"
       }
     ]
   },

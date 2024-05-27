@@ -5,7 +5,7 @@ SirenAnimationDataStructure:
   - Name: LocomotionAnims
     Offset: '0x0'
     Size: '0x48'
-    Type: struct SirenAnimationLocomotion
+    Type: struct
   - Name: FullBodyMontageListings
     Offset: '0x48'
     Size: '0x8'
@@ -17,7 +17,7 @@ SirenAnimationDataStructure:
   - Name: HitReactAnimationData
     Offset: '0x58'
     Size: '0x8'
-    Type: struct HitReactionAnimationData
+    Type: struct
   ClassSize: '0x60'
 SirenAnimationLocomotion:
   Attributes:

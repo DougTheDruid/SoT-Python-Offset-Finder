@@ -5,32 +5,21 @@
 
 
 
+// Size 0x68
+struct StaticMeshComponentAudioAssociation
+{
+public:
+	struct                                                       PlaybackData;                                      // 0x0(0x38)
+	struct                                                       EmitterPositionRelativeToComponentOrigin;          // 0x38(0xc)
+};
+
+
 // Size 0xc
 struct WWiseEmitterCreationRTPCSetting
 {
 public:
 	struct FName                                                 RTPCName;                                          // 0x0(0x8)
 	float                                                        RTPCValue;                                         // 0x8(0x4)
-};
-
-
-// Size 0x38
-struct StaticMeshWwiseEmitterData
-{
-public:
-	class WwiseObjectPoolWrapper*                                Pool;                                              // 0x0(0x8)
-	struct Vector                                                LocalOriginOffset;                                 // 0x8(0xc)
-	char                                                         pad0x4_VRDCQ[0x4];                                 // 0x14(0x4)
-	TArray<class WwiseEvent*>                                    StartEvents;                                       // 0x18(0x10)
-	TArray<class WwiseEvent*>                                    StopEvents;                                        // 0x28(0x10)
-};
-
-
-// Size 0x20
-struct WwiseEmitter
-{
-public:
-	char                                                         pad0x20_YQ84E[0x20];                               // 0x0(0x20)
 };
 
 
@@ -43,6 +32,17 @@ public:
 };
 
 
+// Size 0x38
+struct StaticMeshWwiseEmitterData
+{
+public:
+	class WwiseObjectPoolWrapper*                                Pool;                                              // 0x0(0x8)
+	struct                                                       LocalOriginOffset;                                 // 0x8(0xc)
+	TArray<class WwiseEvent*>                                    StartEvents;                                       // 0x18(0x10)
+	TArray<class WwiseEvent*>                                    StopEvents;                                        // 0x28(0x10)
+};
+
+
 // Size 0x28
 struct WwiseEmitterCreationParams
 {
@@ -50,16 +50,6 @@ public:
 	class WwiseEvent*                                            Event;                                             // 0x0(0x8)
 	TArray<struct WWiseEmitterCreationRTPCSetting>               RTPCs;                                             // 0x8(0x10)
 	TArray<struct WWiseEmitterCreationSwitchSetting>             Switches;                                          // 0x18(0x10)
-};
-
-
-// Size 0x68
-struct StaticMeshComponentAudioAssociation
-{
-public:
-	struct StaticMeshWwiseEmitterData                            PlaybackData;                                      // 0x0(0x38)
-	struct Vector                                                EmitterPositionRelativeToComponentOrigin;          // 0x38(0xc)
-	char                                                         pad0x24_GZJL7[0x24];                               // 0x44(0x24)
 };
 
 

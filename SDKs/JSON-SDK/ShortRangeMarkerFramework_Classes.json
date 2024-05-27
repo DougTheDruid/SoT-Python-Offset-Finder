@@ -1,56 +1,10 @@
 {
-  "ShortRangeMarkerDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RewardMarker",
-        "Type": "class ActorSpawnData*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "RewardMarkerHeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x4_DV82T[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "ShortRangeMarkerBlueprintFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ShortRangeMarkerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ShortRangeMarker": {
     "Super": "Actor",
     "FullSize": "0x420",
     "InheritedSize": "0x3c8",
     "ClassSize": "0x58",
     "Attributes": [
-      {
-        "Name": "pad0x10_64GFL[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x3c8"
-      },
       {
         "Name": "DynamicMaterials",
         "Type": "TArray<class MaterialInstanceDynamic*>",
@@ -70,10 +24,42 @@
         "Offset": "0x3ec"
       },
       {
+        "Name": "TriggerFadeIn",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "TriggerFadeOut",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x400"
+      },
+      {
         "Name": "CachedActors",
         "Type": "TArray<uintptr_t>",
         "Size": "0x10",
         "Offset": "0x410"
+      }
+    ]
+  },
+  "ShortRangeMarkerDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "RewardMarker",
+        "Type": "class ActorSpawnData*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "RewardMarkerHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
       }
     ]
   },

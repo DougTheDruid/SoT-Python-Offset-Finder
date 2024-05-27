@@ -1,84 +1,45 @@
 {
-  "TaleSpireServiceDesc": {
-    "Super": "TaleQuestServiceDesc",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleUnloadSpireStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x80",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleRegisterSpireStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x140",
-    "InheritedSize": "0x80",
-    "ClassSize": "0xc0",
+  "TaleSpireService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0xa8",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "SelectionOriginPoint",
-        "Type": "struct QuestVariableVector",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "PlayerExclusionSelectionRadius",
-        "Type": "struct QuestVariableFloat",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "AllocatedSpireHandle",
-        "Type": "struct QuestVariableTaleResourceHandle",
-        "Size": "0x30",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "AllocatedSpireLocation",
-        "Type": "struct QuestVariableVector",
-        "Size": "0x30",
-        "Offset": "0x110"
+        "Name": "SpireMadeVisible",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x68"
       }
     ]
   },
-  "TaleMakeSpireVisibleStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SpireSettingsInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleReleaseSpireStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x30",
+  "SpireShippingDrawDebugActorSphereCollection": {
+    "Super": "ShippingDebugActorSphereCollection",
+    "FullSize": "0x3e8",
+    "InheritedSize": "0x3d8",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "SpireHandle",
-        "Type": "struct QuestVariableTaleResourceHandle",
-        "Size": "0x30",
-        "Offset": "0x80"
+        "Name": "SpireList",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x3d8"
       }
     ]
   },
-  "SpireServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
+  "SpireServiceParams": {
+    "Super": "DataAsset",
+    "FullSize": "0x30",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "OnCancelFakeSpire",
+        "Type": "class ActorSpawnData*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
   },
   "HeightTriggerableEffectsComponent": {
     "Super": "ActorComponent",
@@ -94,13 +55,13 @@
       },
       {
         "Name": "EmitterOwner",
-        "Type": "struct ActorComponentSelector",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0xd0"
       },
       {
         "Name": "EmitterOffset",
-        "Type": "struct Vector",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0xe0"
       },
@@ -111,22 +72,10 @@
         "Offset": "0xec"
       },
       {
-        "Name": "pad0x3_KLGH1[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0xed"
-      },
-      {
         "Name": "RisingAudioTriggerValue",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xf0"
-      },
-      {
-        "Name": "pad0x4_MLK5Z[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xf4"
       },
       {
         "Name": "CameraShake",
@@ -145,12 +94,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x104"
-      },
-      {
-        "Name": "pad0x50_T7X34[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x108"
       }
     ]
   },
@@ -198,87 +141,35 @@
       }
     ]
   },
-  "TaleLoadSpireStepDesc": {
+  "TaleRegisterSpireStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x80",
+    "FullSize": "0x140",
     "InheritedSize": "0x80",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleLoadSpireStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleReleaseSpireStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x8",
+    "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "pad0x8_43QJE[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "TaleWaitForSpireToLoadStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x80",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleMakeSpireVisibleStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x80",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleWaitForSpireToLoadStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xe8",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x50",
-    "Attributes": [
+        "Name": "SelectionOriginPoint",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
       {
-        "Name": "pad0x50_R1TAV[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "SpireServiceParams": {
-    "Super": "DataAsset",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
+        "Name": "PlayerExclusionSelectionRadius",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
       {
-        "Name": "OnCancelFakeSpire",
-        "Type": "class ActorSpawnData*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "SpireShippingDrawDebugActorSphereCollection": {
-    "Super": "ShippingDebugActorSphereCollection",
-    "FullSize": "0x3e8",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x10",
-    "Attributes": [
+        "Name": "AllocatedSpireHandle",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0xe0"
+      },
       {
-        "Name": "SpireList",
-        "Type": "TArray<uintptr_t>",
-        "Size": "0x10",
-        "Offset": "0x3d8"
+        "Name": "AllocatedSpireLocation",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0x110"
       }
     ]
   },
@@ -288,12 +179,6 @@
     "InheritedSize": "0x3c8",
     "ClassSize": "0x98",
     "Attributes": [
-      {
-        "Name": "pad0x8_UUFMD[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      },
       {
         "Name": "Params",
         "Type": "class SpireServiceParams*",
@@ -311,12 +196,6 @@
         "Type": "TArray<struct SpireInfo>",
         "Size": "0x10",
         "Offset": "0x3e8"
-      },
-      {
-        "Name": "pad0x68_0DLTY[0x68]",
-        "Type": "char",
-        "Size": "0x68",
-        "Offset": "0x3f8"
       }
     ]
   },
@@ -346,20 +225,6 @@
       }
     ]
   },
-  "TaleSpireService": {
-    "Super": "TaleQuestService",
-    "FullSize": "0xa8",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x48_JEADX[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x60"
-      }
-    ]
-  },
   "TaleRegisterSpireStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xa8",
@@ -371,33 +236,20 @@
         "Type": "class TaleRegisterSpireStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
-      },
-      {
-        "Name": "pad0x8_24NNI[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xa0"
       }
     ]
   },
-  "TaleUnloadSpireStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SpireResource": {
-    "Super": "Actor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x10",
+  "TaleReleaseSpireStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x10_9W8SI[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x3c8"
+        "Name": "SpireHandle",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0x80"
       }
     ]
   },

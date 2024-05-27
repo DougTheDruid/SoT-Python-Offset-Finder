@@ -10,31 +10,7 @@
 class DebugMenuComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x28_TSMF8[0x28];                               // 0xc8(0x28)
 	class DebugMenu*                                             DebugMenuInstance;                                 // 0xf0(0x8)
-	char                                                         pad0x20_IPKAJ[0x20];                               // 0xf8(0x20)
-};
-
-
-// Size 0xb0 (Full Size[0x478] - InheritedSize[0x3c8]
-class DebugMenu: public Actor
-{
-public:
-	char                                                         pad0xb0_81187[0xb0];                               // 0x3c8(0xb0)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DebugMenuEntryGenerator: public Object
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DebugMenuTestFunctions: public BlueprintFunctionLibrary
-{
-public:
 };
 
 
@@ -46,14 +22,6 @@ public:
 	TArray<struct DebugMenuDataAssetEntry>                       MenuEntires;                                       // 0x38(0x10)
 	TArray<struct DebugMenuButtonShortcut>                       ButtonShortcuts;                                   // 0x48(0x10)
 	TArray<class DebugMenuEntryGenerator*>                       MenuEntryGenerators;                               // 0x58(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x120] - InheritedSize[0x118]
-class DebugMenuComponentMock: public DebugMenuComponent
-{
-public:
-	char                                                         pad0x8_H80OX[0x8];                                 // 0x118(0x8)
 };
 
 

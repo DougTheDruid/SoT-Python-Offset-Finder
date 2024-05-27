@@ -1,229 +1,18 @@
 {
-  "EventCosmeticItemAttachmentSwitched": {
-    "ClassSize": "0x8",
+  "EventCosmeticItemSpawned": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "Owner",
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "AnimationStateCompleteEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CompletedStateId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TransformBlendCurve": {
-    "ClassSize": "0x500",
-    "Attributes": [
-      {
-        "Name": "UseLocationCurve",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_XYNZR[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "LocationCurve",
-        "Type": "struct RuntimeVectorCurve",
-        "Size": "0x170",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "UseRotationCurve",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x178"
-      },
-      {
-        "Name": "pad0x7_N1YHV[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x179"
-      },
-      {
-        "Name": "RotationCurve",
-        "Type": "struct RuntimeVectorCurve",
-        "Size": "0x170",
-        "Offset": "0x180"
-      },
-      {
-        "Name": "UseScaleCurve",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2f0"
-      },
-      {
-        "Name": "pad0x7_74EFX[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x2f1"
-      },
-      {
-        "Name": "ScaleCurve",
-        "Type": "struct RuntimeVectorCurve",
-        "Size": "0x170",
-        "Offset": "0x2f8"
-      },
-      {
-        "Name": "pad0x8_2R5MR[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "SourceTransform",
-        "Type": "struct Transform",
-        "Size": "0x30",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "TargetTransform",
-        "Type": "struct Transform",
-        "Size": "0x30",
-        "Offset": "0x4a0"
-      },
-      {
-        "Name": "pad0x30_BE1PK[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x4d0"
-      }
-    ]
-  },
-  "EventCustomAnimationMontageRequested": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_U04TM[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AnimationDataStoreEntry": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "AnimDataId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AnimData",
-        "Type": "class AnimationData*",
+        "Name": "CosmeticData",
+        "Type": "class CosmeticItemAnimationSetDataAsset*",
         "Size": "0x8",
         "Offset": "0x8"
-      },
-      {
-        "Name": "AnimServerData",
-        "Type": "class AnimationServerData*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "HitReactionAnimationData": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "HitReactBlendSpace",
-        "Type": "class BlendSpace1D*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CosmeticItems": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CosmeticItemArray",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "Docker": {
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "pad0x90_2D7JE[0x90]",
-        "Type": "char",
-        "Size": "0x90",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventAnimationLookAtUpdated": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_YHABG[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AnimationDataStoreAssetWeakReferenceEntry": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "AnimDataId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x20_CZX2K[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "WeightedAnimationTimeout": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "TimeoutRange",
-        "Type": "struct FloatRange",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weighting",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "CustomAnimationMontageId": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CustomAnimationMontageId",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
       }
     ]
   },
@@ -231,22 +20,10 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "pad0x40_C06V2[0x40]",
-        "Type": "char",
-        "Size": "0x40",
-        "Offset": "0x0"
-      },
-      {
         "Name": "PlayRate",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x4_0S7MO[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x44"
       },
       {
         "Name": "WeightedAnimSequenceLoadOnDemand",
@@ -267,12 +44,6 @@
         "Offset": "0x54"
       },
       {
-        "Name": "pad0x3_A7KJG[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x55"
-      },
-      {
         "Name": "CurrentSequence",
         "Type": "class AnimSequence*",
         "Size": "0x8",
@@ -283,12 +54,6 @@
         "Type": "class AnimSequence*",
         "Size": "0x8",
         "Offset": "0x60"
-      },
-      {
-        "Name": "pad0x8_0YCJH[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x68"
       }
     ]
   },
@@ -321,150 +86,77 @@
       }
     ]
   },
-  "LimbIK": {
-    "ClassSize": "0x60",
+  "WeightedAnimationData": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x60_VM8P5[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventPreviewCharacterAnimationRequest": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "AnimationToPlay",
-        "Type": "class AnimationAsset*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CustomAnimationMontageStagedLoopingData": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Into",
-        "Type": "class AnimMontage*",
-        "Size": "0x8",
+        "Name": "Animation",
+        "Type": "struct",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "LoopAnims",
-        "Type": "TArray<class AnimMontage*>",
-        "Size": "0x10",
+        "Name": "Weighting",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AnimationLookAt": {
+    "ClassSize": "0xa8",
+    "Attributes": [
+      {
+        "Name": "Params",
+        "Type": "struct",
+        "Size": "0xc",
         "Offset": "0x8"
       },
       {
-        "Name": "OutOfAnims",
-        "Type": "TArray<class AnimMontage*>",
-        "Size": "0x10",
-        "Offset": "0x18"
+        "Name": "LookAtTarget",
+        "Type": "struct",
+        "Size": "0xc",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "IKLookAtActive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x20"
       }
     ]
   },
-  "AnimationDataStoreLoadingEntry": {
-    "ClassSize": "0x40",
+  "CustomAnimationMontageId": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x38_9OBEN[0x38]",
-        "Type": "char",
-        "Size": "0x38",
+        "Name": "CustomAnimationMontageId",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x0"
-      },
+      }
+    ]
+  },
+  "AnimationDataStoreEntry": {
+    "ClassSize": "0x18",
+    "Attributes": [
       {
         "Name": "AnimDataId",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "EventCosmeticItemSpawned": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Owner",
-        "Type": "class Actor*",
-        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "CosmeticData",
-        "Type": "class CosmeticItemAnimationSetDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EventAnimationHappyReact": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_KT7SV[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "DockableInfo": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "SocketName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SceneComponent",
-        "Type": "class SceneComponent*",
+        "Name": "AnimData",
+        "Type": "class AnimationData*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
-        "Name": "ShouldOverlapsUpdateOnParentUpdate",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "AnimServerData",
+        "Type": "class AnimationServerData*",
+        "Size": "0x8",
         "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_SQ9CB[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      }
-    ]
-  },
-  "EventCosmeticItemSpawnedOwnerNotification": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CosmeticItemActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CustomAnimationMontageDefinitionEntry": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "MontageId",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Definition",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x8"
       }
     ]
   },
@@ -494,254 +186,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x9"
-      },
-      {
-        "Name": "pad0x1e_QMC0U[0x1e]",
-        "Type": "char",
-        "Size": "0x1e",
-        "Offset": "0xa"
-      }
-    ]
-  },
-  "EventAnimationResetHappyReact": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_2ISZ1[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CharacterAnimationIKUpdateParams": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "CurrentAlpha",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TranslationStrength",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "RotationStrength",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "pad0x8_MST6E[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Orientation",
-        "Type": "struct Quat",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "EffectorSpace",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x3_8A3F7[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x31"
-      },
-      {
-        "Name": "ParentBone",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "pad0x4_AL7ZL[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      }
-    ]
-  },
-  "EventCustomAnimationMontageExitRequested": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "pad0xc_89KIX[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CustomAnimationMontageStateMachine": {
-    "ClassSize": "0xd8",
-    "Attributes": [
-      {
-        "Name": "ActiveState",
-        "Type": "class CustomAnimationMontageDefinitionDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PendingState",
-        "Type": "class CustomAnimationMontageDefinitionDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ActiveMontage",
-        "Type": "class AnimMontage*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0xc0_LMYUA[0xc0]",
-        "Type": "char",
-        "Size": "0xc0",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "CurveUpdateValues": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "CurveName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FinalValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AnimDataEntryStructWrapper": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_0QTRW[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventHitReactAnimationRequested": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "HitNormal",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "HitVelocity",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "ReactionAnimType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x3_PJWA5[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x19"
-      }
-    ]
-  },
-  "IKLookAtParams": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "ActivationSpeed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "HorizontalLimit",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "VerticalLimit",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AnimationDataStoreAssetEntry": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "AnimDataId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AnimDataTypeCooked",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "AnimServerData",
-        "Type": "class AnimationServerData*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "WeightedAnimationData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Animation",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weighting",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x4_N59E0[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
       }
     ]
   },
@@ -750,7 +194,7 @@
     "Attributes": [
       {
         "Name": "ActorsVelocityVector",
-        "Type": "struct Vector",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0x0"
       },
@@ -767,27 +211,10 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_L392X[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x11"
-      },
-      {
         "Name": "WantedMovementSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x14"
-      }
-    ]
-  },
-  "EventHitReactAnimationFinished": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_8Q5YH[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -814,6 +241,406 @@
       }
     ]
   },
+  "IKLookAtParams": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "ActivationSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HorizontalLimit",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "VerticalLimit",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AnimationDataStoreLoadingEntry": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "AnimDataId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "AnimationDataStoreAssetWeakReferenceEntry": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "AnimDataId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AnimData",
+        "Type": "assetclass",
+        "Size": "0x20",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CosmeticItems": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CosmeticItemArray",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AnimationDataStoreAssetEntry": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "AnimDataId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AnimDataTypeCooked",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "AnimServerData",
+        "Type": "class AnimationServerData*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CustomAnimationMontageDefinitionEntry": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MontageId",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Definition",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CustomAnimationMontageComponentReplicatedData": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "CustomMontageId",
+        "Type": "struct",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AnimationCallId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CustomAnimationMontageStateMachine": {
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Name": "ActiveState",
+        "Type": "class CustomAnimationMontageDefinitionDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PendingState",
+        "Type": "class CustomAnimationMontageDefinitionDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ActiveMontage",
+        "Type": "class AnimMontage*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CurveUpdateValues": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "CurveName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FinalValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventPreviewCharacterAnimationRequest": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "AnimationToPlay",
+        "Type": "class AnimationAsset*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventHitReactAnimationRequested": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "HitNormal",
+        "Type": "struct",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HitVelocity",
+        "Type": "struct",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "ReactionAnimType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "EventCosmeticItemAttachmentSwitched": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Owner",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "WeightedAnimationTimeout": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "TimeoutRange",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weighting",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "DockableInfo": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "SocketName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SceneComponent",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ShouldOverlapsUpdateOnParentUpdate",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "TransformBlendCurve": {
+    "ClassSize": "0x500",
+    "Attributes": [
+      {
+        "Name": "UseLocationCurve",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LocationCurve",
+        "Type": "struct",
+        "Size": "0x170",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "UseRotationCurve",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x178"
+      },
+      {
+        "Name": "RotationCurve",
+        "Type": "struct",
+        "Size": "0x170",
+        "Offset": "0x180"
+      },
+      {
+        "Name": "UseScaleCurve",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2f0"
+      },
+      {
+        "Name": "ScaleCurve",
+        "Type": "struct",
+        "Size": "0x170",
+        "Offset": "0x2f8"
+      },
+      {
+        "Name": "SourceTransform",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0x470"
+      },
+      {
+        "Name": "TargetTransform",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0x4a0"
+      }
+    ]
+  },
+  "CharacterAnimationIKUpdateParams": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "CurrentAlpha",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TranslationStrength",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "RotationStrength",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "Orientation",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "EffectorSpace",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ParentBone",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "CustomAnimationMontageStagedLoopingData": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Into",
+        "Type": "class AnimMontage*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LoopAnims",
+        "Type": "TArray<class AnimMontage*>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "OutOfAnims",
+        "Type": "TArray<class AnimMontage*>",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "AnimationStateCompleteEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CompletedStateId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "HitReactionAnimationData": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "HitReactBlendSpace",
+        "Type": "class BlendSpace1D*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventCosmeticItemSpawnedOwnerNotification": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CosmeticItemActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "WeightedAnimationTimeoutSelector": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -822,41 +649,6 @@
         "Type": "TArray<struct WeightedAnimationTimeout>",
         "Size": "0x10",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "AnimationLookAt": {
-    "ClassSize": "0xa8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_PT802[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Params",
-        "Type": "struct AnimationLookAtParams",
-        "Size": "0xc",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "LookAtTarget",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "IKLookAtActive",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x87_SJRD4[0x87]",
-        "Type": "char",
-        "Size": "0x87",
-        "Offset": "0x21"
       }
     ]
   },
@@ -886,29 +678,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x7_T0FYN[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x31"
-      }
-    ]
-  },
-  "CustomAnimationMontageComponentReplicatedData": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "CustomMontageId",
-        "Type": "struct CustomAnimationMontageId",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AnimationCallId",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
       }
     ]
   },

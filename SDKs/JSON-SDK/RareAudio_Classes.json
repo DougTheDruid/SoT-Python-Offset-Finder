@@ -1,51 +1,4 @@
 {
-  "WwiseEmitterComponentBlueprintLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RareAudioHardwareDeviceService": {
-    "Super": "AudioHardwareDeviceService",
-    "FullSize": "0x50",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_MD10N[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "WwiseEmitterComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x310",
-    "InheritedSize": "0x2e0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x8_XVNMW[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x2e0"
-      },
-      {
-        "Name": "Emitter",
-        "Type": "struct WwiseEmitter",
-        "Size": "0x20",
-        "Offset": "0x2e8"
-      },
-      {
-        "Name": "WwiseObjectPoolWrapper",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x308"
-      }
-    ]
-  },
   "StaticMeshAudioEmittersComponent": {
     "Super": "SceneComponent",
     "FullSize": "0x2f0",
@@ -57,6 +10,184 @@
         "Type": "TArray<struct StaticMeshComponentAudioAssociation>",
         "Size": "0x10",
         "Offset": "0x2e0"
+      }
+    ]
+  },
+  "TritonAcousticMap": {
+    "Super": "Object",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "TritonMapFilename",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "CustomCacheRatio",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "AnimNotifyState_WwiseSound": {
+    "Super": "AnimNotifyState",
+    "FullSize": "0x90",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "WwiseEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "WwiseEventEnd",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "AudioSpaceDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "RtpcToUpdate",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "AmbienceToStart",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "AmbienceToStop",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "WwiseEmitterComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x310",
+    "InheritedSize": "0x2e0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Emitter",
+        "Type": "struct",
+        "Size": "0x20",
+        "Offset": "0x2e8"
+      },
+      {
+        "Name": "WwiseObjectPoolWrapper",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x308"
+      }
+    ]
+  },
+  "StaticMeshAudioDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MeshToAudioAssociations",
+        "Type": "TArray<struct StaticMeshAudioAssociation>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TritonService": {
+    "Super": "Object",
+    "FullSize": "0x150",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Name": "RegisteredTritonComponents",
+        "Type": "TArray<class TritonComponent*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "CachedListenerInfo",
+        "Type": "class TritonComponent*",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      }
+    ]
+  },
+  "TritonComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x2f0",
+    "InheritedSize": "0x2e0",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "TritonMapAsset",
+        "Type": "class TritonAcousticMap*",
+        "Size": "0x8",
+        "Offset": "0x2e0"
+      },
+      {
+        "Name": "TritonEffectRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2e8"
+      }
+    ]
+  },
+  "AnimNotify_WwiseSound": {
+    "Super": "AnimNotify",
+    "FullSize": "0x80",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "WwiseEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "OwnedByWorld",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "OwnedByWorldEmitterOffset",
+        "Type": "struct",
+        "Size": "0xc",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "PerspectiveRestriction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "OwnedByWorldWisePoolToUse",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x58"
       }
     ]
   },
@@ -91,248 +222,10 @@
         "Offset": "0x35"
       },
       {
-        "Name": "pad0x2_WSDMX[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x36"
-      },
-      {
         "Name": "PoolDensityParams",
-        "Type": "struct WwiseNativeEmitterPoolDensityParams",
+        "Type": "struct",
         "Size": "0x28",
         "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x18_QH01Z[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "AnimNotify_WwiseSound": {
-    "Super": "AnimNotify",
-    "FullSize": "0x80",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "WwiseEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "OwnedByWorld",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x3_WNEMT[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x41"
-      },
-      {
-        "Name": "OwnedByWorldEmitterOffset",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "PerspectiveRestriction",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "pad0x7_F9IXB[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x51"
-      },
-      {
-        "Name": "OwnedByWorldWisePoolToUse",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "pad0x20_HX5D4[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "AudioIslandStaticMeshAssociatorBase": {
-    "Super": "Actor",
-    "FullSize": "0x3c8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AnimNotifyState_WwiseSound": {
-    "Super": "AnimNotifyState",
-    "FullSize": "0x90",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "WwiseEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "WwiseEventEnd",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x50_J76J6[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "AudioSpaceDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "RtpcToUpdate",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "AmbienceToStart",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "AmbienceToStop",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "StaticMeshAudioDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MeshToAudioAssociations",
-        "Type": "TArray<struct StaticMeshAudioAssociation>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "WwiseEmitterBlueprintLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TritonAcousticMap": {
-    "Super": "Object",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "TritonMapFilename",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "CustomCacheRatio",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x2c_QQZR4[0x2c]",
-        "Type": "char",
-        "Size": "0x2c",
-        "Offset": "0x3c"
-      }
-    ]
-  },
-  "TritonService": {
-    "Super": "Object",
-    "FullSize": "0x150",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x128",
-    "Attributes": [
-      {
-        "Name": "pad0x10_L9QC3[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "RegisteredTritonComponents",
-        "Type": "TArray<class TritonComponent*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0xa8_LC3GS[0xa8]",
-        "Type": "char",
-        "Size": "0xa8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "CachedListenerInfo",
-        "Type": "class TritonComponent*",
-        "Size": "0x8",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "pad0x58_YIJBE[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0xf8"
-      }
-    ]
-  },
-  "TritonComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x2f0",
-    "InheritedSize": "0x2e0",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "TritonMapAsset",
-        "Type": "class TritonAcousticMap*",
-        "Size": "0x8",
-        "Offset": "0x2e0"
-      },
-      {
-        "Name": "TritonEffectRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2e8"
-      },
-      {
-        "Name": "pad0x4_WVX6H[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2ec"
       }
     ]
   },
@@ -355,13 +248,6 @@
         "Offset": "0x88"
       }
     ]
-  },
-  "AnimNotifyWwiseEmitterComponent": {
-    "Super": "WwiseEmitterComponent",
-    "FullSize": "0x310",
-    "InheritedSize": "0x310",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

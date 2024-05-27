@@ -5,121 +5,21 @@
 
 
 
-// Size 0x78
-struct CrewSessionMatchmakingFollowedTelemetryEvent
+// Size 0x40
+struct SessionHostChangedEvent
 {
 public:
-	char                                                         pad0x50_27TGR[0x50];                               // 0x0(0x50)
-	struct Guid                                                  NewCrewId;                                         // 0x50(0x10)
-	int                                                          ResultCode;                                        // 0x60(0x4)
-	char                                                         pad0x4_D6WJ5[0x4];                                 // 0x64(0x4)
-	struct FString                                               Message;                                           // 0x68(0x10)
+	struct                                                       CrewId;                                            // 0x0(0x10)
 };
 
 
-// Size 0x1
-struct SessionLostEvent
+// Size 0x38
+struct CrewSessionTemplate
 {
 public:
-	char                                                         pad0x1_30TB2[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x70
-struct CrewSessionMatchmakingStartedTelemetryEvent
-{
-public:
-	char                                                         pad0x10_7CRC6[0x10];                               // 0x0(0x10)
-	struct Guid                                                  CrewMatchmakingAttemptId;                          // 0x10(0x10)
-	struct FString                                               SessionType;                                       // 0x20(0x10)
-	struct FString                                               MatchmakingHopper;                                 // 0x30(0x10)
-	struct FString                                               MatchmakingType;                                   // 0x40(0x10)
-	TArray<int>                                                  CrewSegmentValues;                                 // 0x50(0x10)
-	int                                                          CurrentCrewCount;                                  // 0x60(0x4)
-	int                                                          EstimatedWaitTime;                                 // 0x64(0x4)
-	int                                                          MaxWaitTime;                                       // 0x68(0x4)
-	char                                                         pad0x4_YW7JH[0x4];                                 // 0x6c(0x4)
-};
-
-
-// Size 0x10
-struct CrewSessionLeaveTelemetryEvent
-{
-public:
-	char                                                         pad0x10_XCL5S[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x20
-struct CrewSessionQoSMeasurementTelemetry
-{
-public:
-	struct FString                                               Location;                                          // 0x0(0x10)
-	int                                                          NumReceivedPings;                                  // 0x14(0x4)
-	int                                                          NumFailedPings;                                    // 0x18(0x4)
-	char                                                         ResolveResult;                                     // 0x1c(0x1)
-	bool                                                         LocationWasConsidered;                             // 0x1d(0x1)
-	char                                                         pad0x2_873FR[0x2];                                 // 0x1e(0x2)
-};
-
-
-// Size 0x18
-struct CrewSessionOperationFailedTelemetryEvent
-{
-public:
-	struct FString                                               ErrorMessage;                                      // 0x0(0x10)
-	int                                                          OperationTypeCode;                                 // 0x10(0x4)
-	bool                                                         WasCancelled;                                      // 0x14(0x1)
-	char                                                         pad0x3_CPBKU[0x3];                                 // 0x15(0x3)
-};
-
-
-// Size 0x18
-struct SessionTemplate
-{
-public:
-	struct FString                                               TemplateName;                                      // 0x0(0x10)
-	char                                                         SessionType;                                       // 0x10(0x1)
-	char                                                         pad0x3_8ST41[0x3];                                 // 0x11(0x3)
-	int                                                          MaxPlayers;                                        // 0x14(0x4)
-};
-
-
-// Size 0x10
-struct CrewSessionBaseTelemetryEvent
-{
-public:
-	struct Guid                                                  CrewId;                                            // 0x0(0x10)
-};
-
-
-// Size 0x28
-struct CrewSessionKeepAliveFailedTelemetryEvent
-{
-public:
-	struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	struct FString                                               UserStatus;                                        // 0x10(0x10)
-	int                                                          ErrorCode;                                         // 0x20(0x4)
-	int                                                          KeepAliveCounter;                                  // 0x24(0x4)
-};
-
-
-// Size 0x28
-struct CrewSessionMemberTelemetry
-{
-public:
-	struct FString                                               UserId;                                            // 0x0(0x10)
-	struct FString                                               StatusString;                                      // 0x10(0x10)
-	bool                                                         IsSessionHost;                                     // 0x20(0x1)
-	char                                                         pad0x7_FNZV3[0x7];                                 // 0x21(0x7)
-};
-
-
-// Size 0x10
-struct SessionInfoUpdateAvailableEvent
-{
-public:
-	struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	struct FString                                               MatchmakingHopper;                                 // 0x18(0x10)
+	class UClass*                                                ShipSize;                                          // 0x28(0x8)
+	int                                                          MaxMatchmakingPlayers;                             // 0x30(0x4)
 };
 
 
@@ -127,9 +27,8 @@ public:
 struct CrewSessionMatchmakingEndedTelemetryEvent
 {
 public:
-	char                                                         pad0x10_69W3H[0x10];                               // 0x0(0x10)
-	struct Guid                                                  NewCrewId;                                         // 0x10(0x10)
-	struct Guid                                                  CrewMatchmakingAttemptId;                          // 0x20(0x10)
+	struct                                                       NewCrewId;                                         // 0x10(0x10)
+	struct                                                       CrewMatchmakingAttemptId;                          // 0x20(0x10)
 	struct FString                                               SessionType;                                       // 0x30(0x10)
 	struct FString                                               MatchmakingHopper;                                 // 0x40(0x10)
 	struct FString                                               MatchmakingType;                                   // 0x50(0x10)
@@ -142,39 +41,123 @@ public:
 
 
 // Size 0x28
-struct OnlineSessionMemberLostEvent
+struct CrewSessionKeepAliveFailedTelemetryEvent
 {
 public:
-	char                                                         pad0x28_JZHLB[0x28];                               // 0x0(0x28)
+	struct                                                       CrewId;                                            // 0x0(0x10)
+	struct FString                                               UserStatus;                                        // 0x10(0x10)
+	int                                                          ErrorCode;                                         // 0x20(0x4)
+	int                                                          KeepAliveCounter;                                  // 0x24(0x4)
+};
+
+
+// Size 0x10
+struct SessionInfoUpdateAvailableEvent
+{
+public:
+	struct                                                       CrewId;                                            // 0x0(0x10)
 };
 
 
 // Size 0x20
-struct SessionDetailsChangedEvent
+struct JupiterSessionJoinThroughServiceRequestModel
 {
 public:
-	char                                                         pad0x20_CXIW3[0x20];                               // 0x0(0x20)
+	struct FString                                               OwningUserId;                                      // 0x0(0x10)
+	struct FString                                               SessionTemplateName;                               // 0x10(0x10)
 };
 
 
-// Size 0x38
-struct CrewSessionTemplate
+// Size 0x20
+struct SessionHostDeviceChangedEvent
 {
 public:
-	char                                                         pad0x18_M2VB7[0x18];                               // 0x0(0x18)
-	struct FString                                               MatchmakingHopper;                                 // 0x18(0x10)
-	class UClass*                                                ShipSize;                                          // 0x28(0x8)
-	int                                                          MaxMatchmakingPlayers;                             // 0x30(0x4)
-	char                                                         pad0x4_QH7OM[0x4];                                 // 0x34(0x4)
+	struct                                                       CrewId;                                            // 0x0(0x10)
+	struct FString                                               NewHostDevice;                                     // 0x10(0x10)
 };
 
 
-// Size 0x60
-struct CrewSessionCreatedTelemetryEvent
+// Size 0x20
+struct CrewSessionQoSMeasurementTelemetry
 {
 public:
-	char                                                         pad0x50_R8Y4T[0x50];                               // 0x0(0x50)
-	TArray<struct CrewSessionQoSMeasurementTelemetry>            QoSTelemetry;                                      // 0x50(0x10)
+	struct FString                                               Location;                                          // 0x0(0x10)
+	uint32                                                       AvgLatency;                                        // 0x10(0x4)
+	int                                                          NumReceivedPings;                                  // 0x14(0x4)
+	int                                                          NumFailedPings;                                    // 0x18(0x4)
+	char                                                         ResolveResult;                                     // 0x1c(0x1)
+	bool                                                         LocationWasConsidered;                             // 0x1d(0x1)
+};
+
+
+// Size 0x18
+struct CrewSessionOperationFailedTelemetryEvent
+{
+public:
+	struct FString                                               ErrorMessage;                                      // 0x0(0x10)
+	int                                                          OperationTypeCode;                                 // 0x10(0x4)
+	bool                                                         WasCancelled;                                      // 0x14(0x1)
+};
+
+
+// Size 0x78
+struct CrewSessionMatchmakingFollowedTelemetryEvent
+{
+public:
+	struct                                                       NewCrewId;                                         // 0x50(0x10)
+	int                                                          ResultCode;                                        // 0x60(0x4)
+	struct FString                                               Message;                                           // 0x68(0x10)
+};
+
+
+// Size 0x50
+struct CrewSessionBaseSessionTelemetryEvent
+{
+public:
+	struct                                                       Session;                                           // 0x10(0x40)
+};
+
+
+// Size 0x70
+struct CrewSessionMatchmakingStartedTelemetryEvent
+{
+public:
+	struct                                                       CrewMatchmakingAttemptId;                          // 0x10(0x10)
+	struct FString                                               SessionType;                                       // 0x20(0x10)
+	struct FString                                               MatchmakingHopper;                                 // 0x30(0x10)
+	struct FString                                               MatchmakingType;                                   // 0x40(0x10)
+	TArray<int>                                                  CrewSegmentValues;                                 // 0x50(0x10)
+	int                                                          CurrentCrewCount;                                  // 0x60(0x4)
+	int                                                          EstimatedWaitTime;                                 // 0x64(0x4)
+	int                                                          MaxWaitTime;                                       // 0x68(0x4)
+};
+
+
+// Size 0x10
+struct CrewSessionBaseTelemetryEvent
+{
+public:
+	struct                                                       CrewId;                                            // 0x0(0x10)
+};
+
+
+// Size 0x18
+struct SessionTemplate
+{
+public:
+	struct FString                                               TemplateName;                                      // 0x0(0x10)
+	char                                                         SessionType;                                       // 0x10(0x1)
+	int                                                          MaxPlayers;                                        // 0x14(0x4)
+};
+
+
+// Size 0x28
+struct CrewSessionMemberTelemetry
+{
+public:
+	struct FString                                               UserId;                                            // 0x0(0x10)
+	struct FString                                               StatusString;                                      // 0x10(0x10)
+	bool                                                         IsSessionHost;                                     // 0x20(0x1)
 };
 
 
@@ -189,22 +172,20 @@ public:
 };
 
 
+// Size 0x60
+struct CrewSessionCreatedTelemetryEvent
+{
+public:
+	TArray<struct CrewSessionQoSMeasurementTelemetry>            QoSTelemetry;                                      // 0x50(0x10)
+};
+
+
 // Size 0x70
 struct CrewSessionJoinedTelemetryEvent
 {
 public:
-	char                                                         pad0x50_6K4OT[0x50];                               // 0x0(0x50)
 	struct FString                                               JoinMethod;                                        // 0x50(0x10)
 	TArray<struct CrewSessionQoSMeasurementTelemetry>            QoSTelemetry;                                      // 0x60(0x10)
-};
-
-
-// Size 0x50
-struct CrewSessionBaseSessionTelemetryEvent
-{
-public:
-	char                                                         pad0x10_26YB8[0x10];                               // 0x0(0x10)
-	struct CrewSessionTelemetry                                  Session;                                           // 0x10(0x40)
 };
 
 

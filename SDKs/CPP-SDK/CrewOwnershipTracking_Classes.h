@@ -6,43 +6,14 @@
 #include "CrewOwnershipTracking_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CrewOwnershipTrackingInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CustomCrewTrackingInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CrewSpawnOwnershipTrackingInterface: public Interface
-{
-public:
-};
-
-
 // Size 0xa8 (Full Size[0x170] - InheritedSize[0xc8]
 class CrewOwnershipTrackingComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x18_29H2L[0x18];                               // 0xc8(0x18)
-	struct Guid                                                  SpawningCrewId;                                    // 0xe0(0x10)
-	struct Guid                                                  CurrentOwnedByCrewId;                              // 0xf0(0x10)
-	struct OwnerListEntry                                        PreviousOwnedByCrewIdList;                         // 0x100(0x10)
-	char                                                         pad0x60_CN5L4[0x60];                               // 0x110(0x60)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CrewOwnershipTrackingControlInterface: public Interface
-{
-public:
+	struct                                                       SpawningCrewId;                                    // 0xe0(0x10)
+	struct                                                       CurrentOwnedByCrewId;                              // 0xf0(0x10)
+	struct                                                       PreviousOwnedByCrewIdList;                         // 0x100(0x10)
+	map                                                          CustomTrackingMap;                                 // 0x110(0x50)
 };
 
 

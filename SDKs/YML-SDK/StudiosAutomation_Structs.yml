@@ -10,10 +10,6 @@ AssetAuditConstantEntry:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_HY96G[0x4]
-    Offset: '0x14'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x18'
 AssetAuditConstants:
   Attributes:
@@ -46,30 +42,30 @@ CollectionLimits:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: IsOnlyParentCollection
+  - Name: AuditTypeFlag
     Offset: '0x9'
     Size: '0x1'
-    Type: bool
-  - Name: pad0x2_8XA7U[0x2]
+    Type: byte
+  - Name: IsOnlyParentCollection
     Offset: '0xa'
-    Size: '0x2'
-    Type: char
+    Size: '0x1'
+    Type: bool
   - Name: CollectionTotals
     Offset: '0xc'
     Size: '0x10'
-    Type: struct CollectionTotalsLimits
+    Type: struct
   - Name: StaticMeshLimits
     Offset: '0x1c'
     Size: '0x8'
-    Type: struct CollectionStaticMeshLimits
+    Type: struct
   - Name: SkeleMeshLimits
     Offset: '0x24'
     Size: '0x8'
-    Type: struct CollectionSkeleMeshLimits
+    Type: struct
   - Name: AnimLimits
     Offset: '0x2c'
     Size: '0x4'
-    Type: struct CollectionAnimSequenceLimits
+    Type: struct
   - Name: CanUseComplexCollisionAsSimple
     Offset: '0x30'
     Size: '0x1'
@@ -78,10 +74,6 @@ CollectionLimits:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_S3J6S[0x2]
-    Offset: '0x32'
-    Size: '0x2'
-    Type: char
   ClassSize: '0x34'
 CollectionLimitsArray:
   Attributes:
@@ -100,20 +92,6 @@ CollectionMeshLimitsBase:
     Offset: '0x4'
     Size: '0x4'
     Type: int
-  ClassSize: '0x8'
-CollectionSkeleMeshLimits:
-  Attributes:
-  - Name: pad0x8_SPQ7S[0x8]
-    Offset: '0x0'
-    Size: '0x8'
-    Type: char
-  ClassSize: '0x8'
-CollectionStaticMeshLimits:
-  Attributes:
-  - Name: pad0x8_FW1A1[0x8]
-    Offset: '0x0'
-    Size: '0x8'
-    Type: char
   ClassSize: '0x8'
 CollectionTotalsLimits:
   Attributes:
@@ -140,10 +118,6 @@ FolderTotals:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_85JDZ[0x7]
-    Offset: '0x1'
-    Size: '0x7'
-    Type: char
   - Name: CollectionsAllowedForFolder
     Offset: '0x8'
     Size: '0x10'
@@ -162,7 +136,7 @@ MeshAuditLimits:
   - Name: FolderMeshLimits
     Offset: '0x10'
     Size: '0x28'
-    Type: struct FolderTotals
+    Type: struct
   ClassSize: '0x38'
 SubstringAuditQueryData:
   Attributes:
@@ -196,14 +170,10 @@ TextureAuditorGroupProperties:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_W6DAO[0x7]
-    Offset: '0x1'
-    Size: '0x7'
-    Type: char
   - Name: Properties
     Offset: '0x8'
     Size: '0x20'
-    Type: struct TextureAuditorProperties
+    Type: struct
   ClassSize: '0x28'
 TextureAuditorProperties:
   Attributes:
@@ -211,16 +181,16 @@ TextureAuditorProperties:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_W8BZQ[0x7]
-    Offset: '0x1'
-    Size: '0x7'
-    Type: char
   - Name: AllowedTextureFormats
     Offset: '0x8'
     Size: '0x10'
     Type: TArray<char>
-  - Name: pad0x8_D97IS[0x8]
+  - Name: MinSizeToValidateFormatX
     Offset: '0x18'
-    Size: '0x8'
-    Type: char
+    Size: '0x4'
+    Type: uint32
+  - Name: MinSizeToValidateFormatY
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: uint32
   ClassSize: '0x20'

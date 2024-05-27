@@ -26,10 +26,6 @@ AshenLordAshCloud:
     Offset: '0x3e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_OFJKO[0x4]
-    Offset: '0x3ec'
-    Size: '0x4'
-    Type: char
   - Name: LifeTime
     Offset: '0x3f0'
     Size: '0x4'
@@ -46,18 +42,10 @@ AshenLordAshCloud:
     Offset: '0x3fc'
     Size: '0x1'
     Type: byte
-  - Name: pad0x37_J2FFM[0x37]
-    Offset: '0x3fd'
-    Size: '0x37'
-    Type: char
   - Name: MaxRadiusMultiplier
     Offset: '0x434'
     Size: '0x4'
     Type: float
-  - Name: pad0x18_ZFYVH[0x18]
-    Offset: '0x438'
-    Size: '0x18'
-    Type: char
   ClassSize: '0x88'
   FullSize: '0x450'
   InheritedSize: '0x3c8'
@@ -67,19 +55,15 @@ AshenLordAshCloudSetupDataAsset:
   - Name: AshCloudRadiusInMetres
     Offset: '0x28'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: AshCloudHeightCoefficient
     Offset: '0x58'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_UO3KM[0x4]
-    Offset: '0x5c'
-    Size: '0x4'
-    Type: char
   - Name: AshCloudLifetime
     Offset: '0x60'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: ScaleUpSpeedCurve
     Offset: '0x90'
     Size: '0x8'
@@ -98,10 +82,6 @@ AshenLordVolcano:
     Offset: '0x3c8'
     Size: '0x8'
     Type: class AshenLordVolcanoSetupDataAsset*
-  - Name: pad0x68_OE3QM[0x68]
-    Offset: '0x3d0'
-    Size: '0x68'
-    Type: char
   ClassSize: '0x70'
   FullSize: '0x438'
   InheritedSize: '0x3c8'
@@ -111,27 +91,27 @@ AshenLordVolcanoSetupDataAsset:
   - Name: ProjectileTriggerFrequency
     Offset: '0x28'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: NumProjectilesToTrigger
     Offset: '0x58'
     Size: '0x20'
-    Type: struct WeightedProbabilityRange
+    Type: struct
   - Name: SpawnHeightInMetres
     Offset: '0x78'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: TargetDistanceFromCenterInMetres
     Offset: '0xa8'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: TimeBetweenSpawns
     Offset: '0xd8'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: StartPositionOffsetInMetres
     Offset: '0x108'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: Projectiles
     Offset: '0x138'
     Size: '0x10'
@@ -139,11 +119,11 @@ AshenLordVolcanoSetupDataAsset:
   - Name: PoolableProjectilesConfig
     Offset: '0x148'
     Size: '0x18'
-    Type: struct PoolableCollectionMapConfiguration
+    Type: struct
   - Name: Embers
     Offset: '0x160'
     Size: '0x10'
-    Type: struct VolcanoSetupDataEmbersEntry
+    Type: struct
   - Name: EmberSpawnHeightInMeters
     Offset: '0x170'
     Size: '0x4'
@@ -166,18 +146,10 @@ AshenLordWorldEndCloud:
     Offset: '0x3cc'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_6GN86[0x3]
-    Offset: '0x3cd'
-    Size: '0x3'
-    Type: char
   - Name: CurrentCloudAnimation
     Offset: '0x3d0'
     Size: '0x8'
-    Type: struct AshenLordWorldEndCloudAnimation
-  - Name: pad0x8_6JB6D[0x8]
-    Offset: '0x3d8'
-    Size: '0x8'
-    Type: char
+    Type: struct
   ClassSize: '0x18'
   FullSize: '0x3e0'
   InheritedSize: '0x3c8'
@@ -198,10 +170,6 @@ DisableGeyserMechanismAction:
   Super: Actor
 Earthquake:
   Attributes:
-  - Name: pad0x10_DR144[0x10]
-    Offset: '0x3c8'
-    Size: '0x10'
-    Type: char
   - Name: EarthquakeSetupData
     Offset: '0x3d8'
     Size: '0x8'
@@ -230,10 +198,6 @@ Earthquake:
     Offset: '0x410'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_2EIGU[0x4]
-    Offset: '0x414'
-    Size: '0x4'
-    Type: char
   - Name: AudioPool
     Offset: '0x418'
     Size: '0x8'
@@ -270,10 +234,6 @@ Earthquake:
     Offset: '0x450'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_A37ST[0x4]
-    Offset: '0x454'
-    Size: '0x4'
-    Type: char
   - Name: HitDetectionVolume
     Offset: '0x458'
     Size: '0x8'
@@ -286,10 +246,6 @@ Earthquake:
     Offset: '0x468'
     Size: '0x1'
     Type: byte
-  - Name: pad0x14f_41B4P[0x14f]
-    Offset: '0x469'
-    Size: '0x14f'
-    Type: char
   ClassSize: '0x1f0'
   FullSize: '0x5b8'
   InheritedSize: '0x3c8'
@@ -300,26 +256,22 @@ EarthquakeSetupDataAsset:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_Z5Q1E[0x7]
-    Offset: '0x29'
-    Size: '0x7'
-    Type: char
   - Name: WarmUpDuration
     Offset: '0x30'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: EarthquakeDuration
     Offset: '0x60'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: CoolDownDuration
     Offset: '0x90'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: DormantDuration
     Offset: '0xc0'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: ChanceOfTriggeringAVolcano
     Offset: '0xf0'
     Size: '0x4'
@@ -327,23 +279,19 @@ EarthquakeSetupDataAsset:
   - Name: PercentageThroughEarthquakeToStartVolcano
     Offset: '0xf4'
     Size: '0x10'
-    Type: struct FloatRange
-  - Name: pad0x4_I509O[0x4]
-    Offset: '0x104'
-    Size: '0x4'
-    Type: char
+    Type: struct
   - Name: WarmupPlayerFeedback
     Offset: '0x108'
     Size: '0x80'
-    Type: struct PlayerFeedback
+    Type: struct
   - Name: ActivePlayerFeedback
     Offset: '0x188'
     Size: '0x80'
-    Type: struct PlayerFeedback
+    Type: struct
   - Name: StaggerStrengthDuration
     Offset: '0x208'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: StaggerStrengthModifierWhenOnAShip
     Offset: '0x238'
     Size: '0x4'
@@ -351,19 +299,15 @@ EarthquakeSetupDataAsset:
   - Name: PercentageThroughCameraShakeToStartNextOne
     Offset: '0x23c'
     Size: '0x10'
-    Type: struct FloatRange
+    Type: struct
   - Name: TimeToShipPush
     Offset: '0x24c'
     Size: '0x10'
-    Type: struct FloatRange
-  - Name: pad0x4_OMPNP[0x4]
-    Offset: '0x25c'
-    Size: '0x4'
-    Type: char
+    Type: struct
   - Name: ForceToApplyToShip
     Offset: '0x260'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: MaximumShipSpeedToBePushed
     Offset: '0x290'
     Size: '0x4'
@@ -375,11 +319,11 @@ EarthquakeSetupDataAsset:
   - Name: TimeBetweenLocalEffects
     Offset: '0x298'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: NumberOfLocalEffectsToTrigger
     Offset: '0x2c8'
     Size: '0x20'
-    Type: struct WeightedProbabilityRange
+    Type: struct
   - Name: EffectConeAngle
     Offset: '0x2e8'
     Size: '0x4'
@@ -391,7 +335,7 @@ EarthquakeSetupDataAsset:
   - Name: EarthquakeEffects
     Offset: '0x2f0'
     Size: '0x10'
-    Type: struct DistanceThrottledRandomParticleSystemPicker
+    Type: struct
   - Name: WarmupWindTurbulence
     Offset: '0x300'
     Size: '0x4'
@@ -399,7 +343,7 @@ EarthquakeSetupDataAsset:
   - Name: WarmupGustPower
     Offset: '0x304'
     Size: '0x10'
-    Type: struct FloatRange
+    Type: struct
   - Name: ActiveWindTurbulence
     Offset: '0x314'
     Size: '0x4'
@@ -407,17 +351,13 @@ EarthquakeSetupDataAsset:
   - Name: ActiveGustPower
     Offset: '0x318'
     Size: '0x10'
-    Type: struct FloatRange
+    Type: struct
   ClassSize: '0x300'
   FullSize: '0x328'
   InheritedSize: '0x28'
   Super: DataAsset
 Geyser:
   Attributes:
-  - Name: pad0x10_HUWMP[0x10]
-    Offset: '0x3c8'
-    Size: '0x10'
-    Type: char
   - Name: SetupData
     Offset: '0x3d8'
     Size: '0x8'
@@ -434,18 +374,10 @@ Geyser:
     Offset: '0x3f0'
     Size: '0x10'
     Type: TArray<struct GeyserStoryCustomisationData>
-  - Name: pad0x18_U6AL6[0x18]
-    Offset: '0x400'
-    Size: '0x18'
-    Type: char
   - Name: GeyserState
     Offset: '0x418'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_MB9PP[0x7]
-    Offset: '0x419'
-    Size: '0x7'
-    Type: char
   - Name: GeyserBuildUpPool
     Offset: '0x420'
     Size: '0x8'
@@ -482,10 +414,6 @@ Geyser:
     Offset: '0x460'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_T1QPX[0x7]
-    Offset: '0x461'
-    Size: '0x7'
-    Type: char
   - Name: GeyserHoleClass
     Offset: '0x468'
     Size: '0x8'
@@ -494,24 +422,10 @@ Geyser:
     Offset: '0x470'
     Size: '0x8'
     Type: class Hole*
-  - Name: pad0x40_F8KXJ[0x40]
-    Offset: '0x478'
-    Size: '0x40'
-    Type: char
   ClassSize: '0xf0'
   FullSize: '0x4b8'
   InheritedSize: '0x3c8'
   Super: Actor
-GeyserItemSpawnComponent:
-  Attributes:
-  - Name: pad0x20_2EKPG[0x20]
-    Offset: '0x470'
-    Size: '0x20'
-    Type: char
-  ClassSize: '0x20'
-  FullSize: '0x490'
-  InheritedSize: '0x470'
-  Super: ItemSpawnComponent
 GeyserManager:
   Attributes:
   - Name: GeyserManagerSetupData
@@ -538,10 +452,6 @@ GeyserManager:
     Offset: '0x3f8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x4f_P3MW6[0x4f]
-    Offset: '0x3f9'
-    Size: '0x4f'
-    Type: char
   ClassSize: '0x80'
   FullSize: '0x448'
   InheritedSize: '0x3c8'
@@ -552,22 +462,18 @@ GeyserManagerSetupDataAsset:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_DQT6T[0x7]
-    Offset: '0x29'
-    Size: '0x7'
-    Type: char
   - Name: DormantDuration
     Offset: '0x30'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: ActiveDuration
     Offset: '0x60'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: DelayBetweenGeyserGroupsDuringGeyserEvent
     Offset: '0x90'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: StartInactive
     Offset: '0xc0'
     Size: '0x1'
@@ -580,10 +486,6 @@ GeyserManagerSetupDataAsset:
     Offset: '0xc2'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_1T9OJ[0x1]
-    Offset: '0xc3'
-    Size: '0x1'
-    Type: char
   - Name: MinDistanceFromPlayerInMetres
     Offset: '0xc4'
     Size: '0x4'
@@ -592,10 +494,6 @@ GeyserManagerSetupDataAsset:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_YUZQJ[0x4]
-    Offset: '0xcc'
-    Size: '0x4'
-    Type: char
   - Name: GeyserToSpawn
     Offset: '0xd0'
     Size: '0x8'
@@ -603,19 +501,19 @@ GeyserManagerSetupDataAsset:
   - Name: NumGeyserGroupsToSpawn
     Offset: '0xd8'
     Size: '0x20'
-    Type: struct WeightedProbabilityRange
+    Type: struct
   - Name: NumGeysersToSpawnPerGroup
     Offset: '0xf8'
     Size: '0x20'
-    Type: struct WeightedProbabilityRange
+    Type: struct
   - Name: SpawnDistanceFromPlayerInMetres
     Offset: '0x118'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: SpawnRadiusInMetres
     Offset: '0x148'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: SpawnAngleRelativeToPlayerDirection
     Offset: '0x178'
     Size: '0x10'
@@ -623,7 +521,7 @@ GeyserManagerSetupDataAsset:
   - Name: DelayBetweenEachGeyserSpawningInAGroup
     Offset: '0x188'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: MaximumDensityRadiusInMetres
     Offset: '0x1b8'
     Size: '0x4'
@@ -642,34 +540,26 @@ GeyserSetupDataAsset:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_1BS56[0x7]
-    Offset: '0x29'
-    Size: '0x7'
-    Type: char
   - Name: DormantDuration
     Offset: '0x30'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: InitialWarningDuration
     Offset: '0x60'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: NumSpurtsPerActivation
     Offset: '0x90'
     Size: '0x20'
-    Type: struct WeightedProbabilityRange
+    Type: struct
   - Name: TimeBetweenSpurts
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: ShouldDestroyOnDeactivation
     Offset: '0xe0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_V582U[0x3]
-    Offset: '0xe1'
-    Size: '0x3'
-    Type: char
   - Name: DestroyAfterDeactivationDelay
     Offset: '0xe4'
     Size: '0x4'
@@ -678,26 +568,20 @@ GeyserSetupDataAsset:
   FullSize: '0xe8'
   InheritedSize: '0x28'
   Super: DataAsset
-LavaStatus:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x30'
-  InheritedSize: '0x30'
-  Super: StatusBase
 LavaZone:
   Attributes:
   - Name: TimeBetweenActivations
     Offset: '0x3c8'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: ActiveDuration
     Offset: '0x3f8'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: StoryFlag
     Offset: '0x428'
     Size: '0x8'
-    Type: struct StoryFlag
+    Type: struct
   - Name: LavaMaterial
     Offset: '0x430'
     Size: '0x8'
@@ -718,14 +602,14 @@ LavaZone:
     Offset: '0x44a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_8OW5Q[0x5]
-    Offset: '0x44b'
-    Size: '0x5'
-    Type: char
-  - Name: pad0x20_OFABC[0x20]
+  - Name: MaterialZone
     Offset: '0x450'
-    Size: '0x20'
-    Type: char
+    Size: '0x10'
+    Type: interface
+  - Name: LocalPlayerDispatcher
+    Offset: '0x460'
+    Size: '0x10'
+    Type: interface
   ClassSize: '0xa8'
   FullSize: '0x470'
   InheritedSize: '0x3c8'
@@ -736,10 +620,6 @@ MechanismGeyser:
     Offset: '0x4b8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_B54IH[0x7]
-    Offset: '0x4b9'
-    Size: '0x7'
-    Type: char
   - Name: MechanismActionComponent
     Offset: '0x4c0'
     Size: '0x8'
@@ -748,32 +628,18 @@ MechanismGeyser:
   FullSize: '0x4c8'
   InheritedSize: '0x4b8'
   Super: Geyser
-NaturalDisasterRegistryInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 SeatStat_IslandVolcanoActive:
   Attributes:
   - Name: VolcanoIslandName
     Offset: '0x48'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x70_FNS76[0x70]
-    Offset: '0x50'
-    Size: '0x70'
-    Type: char
   ClassSize: '0x78'
   FullSize: '0xc0'
   InheritedSize: '0x48'
   Super: SeatStat
 SuperheatedWater:
   Attributes:
-  - Name: pad0x10_SL51O[0x10]
-    Offset: '0x468'
-    Size: '0x10'
-    Type: char
   - Name: SetupData
     Offset: '0x478'
     Size: '0x8'
@@ -794,10 +660,6 @@ SuperheatedWater:
     Offset: '0x490'
     Size: '0x10'
     Type: TArray<uintptr_t>
-  - Name: pad0xd0_FNB60[0xd0]
-    Offset: '0x4a0'
-    Size: '0xd0'
-    Type: char
   ClassSize: '0x108'
   FullSize: '0x570'
   InheritedSize: '0x468'
@@ -815,19 +677,15 @@ SuperheatedWaterSetupDataAsset:
   - Name: TimeBetweenLargeSurfaceEffects
     Offset: '0x30'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: LargeSurfaceEffectMinimumDistanceInMetres
     Offset: '0x60'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_SLKS0[0x4]
-    Offset: '0x64'
-    Size: '0x4'
-    Type: char
   - Name: LargeSurfaceEffects
     Offset: '0x68'
     Size: '0x10'
-    Type: struct RandomParticleSystemPicker
+    Type: struct
   - Name: EffectSpawnHeight
     Offset: '0x78'
     Size: '0x4'
@@ -839,15 +697,15 @@ SuperheatedWaterSetupDataAsset:
   - Name: TimeBetweenSmallSurfaceEffects
     Offset: '0x80'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: NumSmallSurfaceEffects
     Offset: '0xb0'
     Size: '0x20'
-    Type: struct WeightedProbabilityRange
+    Type: struct
   - Name: SmallSurfaceEffects
     Offset: '0xd0'
     Size: '0x10'
-    Type: struct DistanceThrottledRandomParticleSystemPicker
+    Type: struct
   - Name: SmallSurfaceEffectNearbyPlayerRadiusInMetres
     Offset: '0xe0'
     Size: '0x4'
@@ -862,10 +720,6 @@ SuperheatedWaterSetupDataAsset:
   Super: DataAsset
 Volcano:
   Attributes:
-  - Name: pad0x18_YD3QY[0x18]
-    Offset: '0x3c8'
-    Size: '0x18'
-    Type: char
   - Name: VolcanoSetupDataOverride
     Offset: '0x3e0'
     Size: '0x8'
@@ -886,10 +740,6 @@ Volcano:
     Offset: '0x408'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_6S3HQ[0x7]
-    Offset: '0x409'
-    Size: '0x7'
-    Type: char
   - Name: VolcanoSetupData
     Offset: '0x410'
     Size: '0x8'
@@ -941,11 +791,7 @@ Volcano:
   - Name: ProjectileLaunchOffset
     Offset: '0x460'
     Size: '0xc'
-    Type: struct Vector
-  - Name: pad0x4_CDTV9[0x4]
-    Offset: '0x46c'
-    Size: '0x4'
-    Type: char
+    Type: struct
   - Name: AudioPool
     Offset: '0x470'
     Size: '0x8'
@@ -977,83 +823,49 @@ Volcano:
   - Name: StateData
     Offset: '0x4a4'
     Size: '0xc'
-    Type: struct VolcanoStateData
+    Type: struct
   - Name: AssociatedIslandName
     Offset: '0x4b0'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x138_E5TZA[0x138]
-    Offset: '0x4b8'
-    Size: '0x138'
-    Type: char
   ClassSize: '0x228'
   FullSize: '0x5f0'
   InheritedSize: '0x3c8'
   Super: Actor
-VolcanoInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-VolcanoService:
-  Attributes:
-  - Name: pad0x58_QTEZ3[0x58]
-    Offset: '0x28'
-    Size: '0x58'
-    Type: char
-  ClassSize: '0x58'
-  FullSize: '0x80'
-  InheritedSize: '0x28'
-  Super: Object
-VolcanoServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 VolcanoSetupDataAsset:
   Attributes:
   - Name: IsEnabled
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_WKYNO[0x7]
-    Offset: '0x29'
-    Size: '0x7'
-    Type: char
   - Name: WarmUpDuration
     Offset: '0x30'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: EruptionDuration
     Offset: '0x60'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: DormantDuration
     Offset: '0x90'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: MinimumDurationForTheEffects
     Offset: '0xc0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_KGEV4[0x4]
-    Offset: '0xc4'
-    Size: '0x4'
-    Type: char
   - Name: GroundAndWaterStayHotDurationAfterVolcanoFinishesDuration
     Offset: '0xc8'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: ProjectileTriggerFrequency
     Offset: '0xf8'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: PercentageOfMaxTargetingRange
     Offset: '0x128'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: MinNumProjectilesToTrigger
     Offset: '0x158'
     Size: '0x4'
@@ -1066,26 +878,22 @@ VolcanoSetupDataAsset:
     Offset: '0x160'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_S90DJ[0x4]
-    Offset: '0x164'
-    Size: '0x4'
-    Type: char
   - Name: ChanceToTargetPlayers
     Offset: '0x168'
     Size: '0x58'
-    Type: struct VolcanoTargetChances
+    Type: struct
   - Name: ChanceToTargetShips
     Offset: '0x1c0'
     Size: '0x58'
-    Type: struct VolcanoTargetChances
+    Type: struct
   - Name: ChanceToTargetWatercraft
     Offset: '0x218'
     Size: '0x58'
-    Type: struct VolcanoTargetChances
+    Type: struct
   - Name: PlayerNearMissDistanceInMetres
     Offset: '0x270'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: InnerShipNearMissRadiusInMetres
     Offset: '0x2a0'
     Size: '0x4'
@@ -1117,39 +925,35 @@ VolcanoSetupDataAsset:
   - Name: LocalMiniProjectilesSpawnHeightAbovePlayerInMetres
     Offset: '0x2d8'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: LocalMiniProjectilesSpawnDistanceFromPlayerInMetres
     Offset: '0x308'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: LocalMiniProjectilesTimeBetweenSpawns
     Offset: '0x338'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: NumLocalMiniProjectilesToTrigger
     Offset: '0x368'
     Size: '0x20'
-    Type: struct WeightedProbabilityRange
+    Type: struct
   - Name: LocalMiniProjectilesSpeed
     Offset: '0x388'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: LocalMiniProjectilesGravityScale
     Offset: '0x3b8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_UQPW8[0x4]
-    Offset: '0x3bc'
-    Size: '0x4'
-    Type: char
   - Name: LocalMiniProjectilesSpawnAngleRange
     Offset: '0x3c0'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: LocalMiniProjectilesSpawnStartPositionOffsetInMetres
     Offset: '0x3f0'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: LocalMiniProjectilesSpawnDistanceSpeedScalar
     Offset: '0x420'
     Size: '0x4'
@@ -1162,10 +966,6 @@ VolcanoSetupDataAsset:
     Offset: '0x428'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_0S8WD[0x4]
-    Offset: '0x42c'
-    Size: '0x4'
-    Type: char
   - Name: LocalEmbers
     Offset: '0x430'
     Size: '0x10'

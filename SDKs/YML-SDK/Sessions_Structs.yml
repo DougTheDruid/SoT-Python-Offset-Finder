@@ -2,28 +2,20 @@
 # https://github.com/DougTheDruid
 CrewSessionBaseSessionTelemetryEvent:
   Attributes:
-  - Name: pad0x10_26YB8[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
   - Name: Session
     Offset: '0x10'
     Size: '0x40'
-    Type: struct CrewSessionTelemetry
+    Type: struct
   ClassSize: '0x50'
 CrewSessionBaseTelemetryEvent:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x10'
 CrewSessionCreatedTelemetryEvent:
   Attributes:
-  - Name: pad0x50_R8Y4T[0x50]
-    Offset: '0x0'
-    Size: '0x50'
-    Type: char
   - Name: QoSTelemetry
     Offset: '0x50'
     Size: '0x10'
@@ -31,10 +23,6 @@ CrewSessionCreatedTelemetryEvent:
   ClassSize: '0x60'
 CrewSessionJoinedTelemetryEvent:
   Attributes:
-  - Name: pad0x50_6K4OT[0x50]
-    Offset: '0x0'
-    Size: '0x50'
-    Type: char
   - Name: JoinMethod
     Offset: '0x50'
     Size: '0x10'
@@ -49,7 +37,7 @@ CrewSessionKeepAliveFailedTelemetryEvent:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: UserStatus
     Offset: '0x10'
     Size: '0x10'
@@ -63,27 +51,16 @@ CrewSessionKeepAliveFailedTelemetryEvent:
     Size: '0x4'
     Type: int
   ClassSize: '0x28'
-CrewSessionLeaveTelemetryEvent:
-  Attributes:
-  - Name: pad0x10_XCL5S[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
-  ClassSize: '0x10'
 CrewSessionMatchmakingEndedTelemetryEvent:
   Attributes:
-  - Name: pad0x10_69W3H[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
   - Name: NewCrewId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: CrewMatchmakingAttemptId
     Offset: '0x20'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: SessionType
     Offset: '0x30'
     Size: '0x10'
@@ -119,22 +96,14 @@ CrewSessionMatchmakingEndedTelemetryEvent:
   ClassSize: '0x98'
 CrewSessionMatchmakingFollowedTelemetryEvent:
   Attributes:
-  - Name: pad0x50_27TGR[0x50]
-    Offset: '0x0'
-    Size: '0x50'
-    Type: char
   - Name: NewCrewId
     Offset: '0x50'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: ResultCode
     Offset: '0x60'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_D6WJ5[0x4]
-    Offset: '0x64'
-    Size: '0x4'
-    Type: char
   - Name: Message
     Offset: '0x68'
     Size: '0x10'
@@ -142,14 +111,10 @@ CrewSessionMatchmakingFollowedTelemetryEvent:
   ClassSize: '0x78'
 CrewSessionMatchmakingStartedTelemetryEvent:
   Attributes:
-  - Name: pad0x10_7CRC6[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
   - Name: CrewMatchmakingAttemptId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: SessionType
     Offset: '0x20'
     Size: '0x10'
@@ -178,10 +143,6 @@ CrewSessionMatchmakingStartedTelemetryEvent:
     Offset: '0x68'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_YW7JH[0x4]
-    Offset: '0x6c'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x70'
 CrewSessionMemberTelemetry:
   Attributes:
@@ -197,10 +158,6 @@ CrewSessionMemberTelemetry:
     Offset: '0x20'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_FNZV3[0x7]
-    Offset: '0x21'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x28'
 CrewSessionOperationFailedTelemetryEvent:
   Attributes:
@@ -216,10 +173,6 @@ CrewSessionOperationFailedTelemetryEvent:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_CPBKU[0x3]
-    Offset: '0x15'
-    Size: '0x3'
-    Type: char
   ClassSize: '0x18'
 CrewSessionQoSMeasurementTelemetry:
   Attributes:
@@ -227,6 +180,10 @@ CrewSessionQoSMeasurementTelemetry:
     Offset: '0x0'
     Size: '0x10'
     Type: struct FString
+  - Name: AvgLatency
+    Offset: '0x10'
+    Size: '0x4'
+    Type: uint32
   - Name: NumReceivedPings
     Offset: '0x14'
     Size: '0x4'
@@ -243,10 +200,6 @@ CrewSessionQoSMeasurementTelemetry:
     Offset: '0x1d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_873FR[0x2]
-    Offset: '0x1e'
-    Size: '0x2'
-    Type: char
   ClassSize: '0x20'
 CrewSessionTelemetry:
   Attributes:
@@ -269,10 +222,6 @@ CrewSessionTelemetry:
   ClassSize: '0x40'
 CrewSessionTemplate:
   Attributes:
-  - Name: pad0x18_M2VB7[0x18]
-    Offset: '0x0'
-    Size: '0x18'
-    Type: char
   - Name: MatchmakingHopper
     Offset: '0x18'
     Size: '0x10'
@@ -285,39 +234,43 @@ CrewSessionTemplate:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_QH7OM[0x4]
-    Offset: '0x34'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x38'
-OnlineSessionMemberLostEvent:
+JupiterSessionJoinThroughServiceRequestModel:
   Attributes:
-  - Name: pad0x28_JZHLB[0x28]
+  - Name: OwningUserId
     Offset: '0x0'
-    Size: '0x28'
-    Type: char
-  ClassSize: '0x28'
-SessionDetailsChangedEvent:
+    Size: '0x10'
+    Type: struct FString
+  - Name: SessionTemplateName
+    Offset: '0x10'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x20'
+SessionHostChangedEvent:
   Attributes:
-  - Name: pad0x20_CXIW3[0x20]
+  - Name: CrewId
     Offset: '0x0'
-    Size: '0x20'
-    Type: char
+    Size: '0x10'
+    Type: struct
+  ClassSize: '0x40'
+SessionHostDeviceChangedEvent:
+  Attributes:
+  - Name: CrewId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct
+  - Name: NewHostDevice
+    Offset: '0x10'
+    Size: '0x10'
+    Type: struct FString
   ClassSize: '0x20'
 SessionInfoUpdateAvailableEvent:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x10'
-SessionLostEvent:
-  Attributes:
-  - Name: pad0x1_30TB2[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
 SessionTemplate:
   Attributes:
   - Name: TemplateName
@@ -328,10 +281,6 @@ SessionTemplate:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_8ST41[0x3]
-    Offset: '0x11'
-    Size: '0x3'
-    Type: char
   - Name: MaxPlayers
     Offset: '0x14'
     Size: '0x4'

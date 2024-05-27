@@ -13,19 +13,3 @@ public:
 };
 
 
-// Size 0x1
-struct FixedSplinePathingActorMovementStartedEvent
-{
-public:
-	char                                                         pad0x1_EM4II[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct FixedSplinePathingActorMovementEndedEvent
-{
-public:
-	char                                                         pad0x1_8LXTO[0x1];                                 // 0x0(0x1)
-};
-
-

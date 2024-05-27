@@ -5,14 +5,23 @@
 
 
 
+// Size 0x14
+struct SpireEntry
+{
+public:
+	struct                                                       Location;                                          // 0x0(0xc)
+	struct FName                                                 IslandName;                                        // 0xc(0x8)
+};
+
+
 // Size 0x68
 struct ServerSpireInfo
 {
 public:
 	int                                                          LevelId;                                           // 0x0(0x4)
-	struct Vector                                                Location;                                          // 0x4(0xc)
+	struct                                                       Location;                                          // 0x4(0xc)
 	class Actor*                                                 SpireActor;                                        // 0x10(0x8)
-	char                                                         pad0x50_UX8CK[0x50];                               // 0x18(0x50)
+	map                                                          InstancedLevelPaths;                               // 0x18(0x50)
 };
 
 
@@ -23,16 +32,6 @@ public:
 	int                                                          LevelId;                                           // 0x0(0x4)
 	bool                                                         ShouldBeLoaded;                                    // 0x4(0x1)
 	bool                                                         ShouldBeVisible;                                   // 0x5(0x1)
-	char                                                         pad0x2_B3PR6[0x2];                                 // 0x6(0x2)
-};
-
-
-// Size 0x14
-struct SpireEntry
-{
-public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
-	struct FName                                                 IslandName;                                        // 0xc(0x8)
 };
 
 

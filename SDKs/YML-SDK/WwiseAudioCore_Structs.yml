@@ -2,10 +2,18 @@
 # https://github.com/DougTheDruid
 ReverbPresetControllerSettings:
   Attributes:
-  - Name: pad0xc_X82QX[0xc]
+  - Name: VectorsPerSegment
     Offset: '0x0'
-    Size: '0xc'
-    Type: char
+    Size: '0x4'
+    Type: uint32
+  - Name: TracesPerSegmentPerFrame
+    Offset: '0x4'
+    Size: '0x4'
+    Type: uint32
+  - Name: HorizontalSegments
+    Offset: '0x8'
+    Size: '0x4'
+    Type: uint32
   - Name: HorizontalConeSegmentElevationAngle
     Offset: '0xc'
     Size: '0x4'
@@ -30,10 +38,10 @@ ReverbPresetControllerSettings:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_M5NVO[0x4]
+  - Name: MaxNumSampleFramesInHistory
     Offset: '0x24'
     Size: '0x4'
-    Type: char
+    Type: uint32
   ClassSize: '0x28'
 WwiseAudioReverbPresets:
   Attributes:
@@ -65,10 +73,6 @@ WwiseAudioReverbPresets:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_WRVJ6[0x3]
-    Offset: '0x31'
-    Size: '0x3'
-    Type: char
   - Name: MinSpaceSizeWindowForEarlyReflections
     Offset: '0x34'
     Size: '0x4'
@@ -80,14 +84,14 @@ WwiseAudioReverbPresets:
   - Name: SamplingSettings
     Offset: '0x3c'
     Size: '0x28'
-    Type: struct ReverbPresetControllerSettings
+    Type: struct
   ClassSize: '0x64'
 WwiseEventParam:
   Attributes:
-  - Name: pad0x8_VQ1T4[0x8]
+  - Name: WwiseEvent
     Offset: '0x0'
     Size: '0x8'
-    Type: char
+    Type: class WwiseEvent*
   - Name: SourcePath
     Offset: '0x8'
     Size: '0x8'
@@ -107,10 +111,6 @@ WwiseIOPriorityMappingConfig:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_0R327[0x3]
-    Offset: '0x5'
-    Size: '0x3'
-    Type: char
   ClassSize: '0x8'
 WwiseNetworkRelationship:
   Attributes:

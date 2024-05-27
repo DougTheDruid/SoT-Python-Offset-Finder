@@ -5,48 +5,15 @@
 
 
 
-// Size 0xc0
-struct AnimNode_CopyPoseFromMesh
+// Size 0x78
+struct AnimNode_CopyBone
 {
 public:
-	char                                                         pad0x30_I3DRE[0x30];                               // 0x0(0x30)
-	class SkeletalMeshComponent*                                 SourceMeshComponent;                               // 0x30(0x8)
-	bool                                                         bUseAttachedParent;                                // 0x38(0x1)
-	char                                                         pad0x87_GTCAB[0x87];                               // 0x39(0x87)
-};
-
-
-// Size 0xa0
-struct AnimNode_HandIKRetargeting
-{
-public:
-	char                                                         pad0x58_OLN8V[0x58];                               // 0x0(0x58)
-	struct BoneReference                                         RightHandFK;                                       // 0x58(0xc)
-	struct BoneReference                                         LeftHandFK;                                        // 0x64(0xc)
-	struct BoneReference                                         RightHandIK;                                       // 0x70(0xc)
-	struct BoneReference                                         LeftHandIK;                                        // 0x7c(0xc)
-	TArray<struct BoneReference>                                 IKBonesToMove;                                     // 0x88(0x10)
-	float                                                        HandFKWeight;                                      // 0x98(0x4)
-	char                                                         pad0x4_3VFA2[0x4];                                 // 0x9c(0x4)
-};
-
-
-// Size 0x90
-struct AnimNode_ModifyBone
-{
-public:
-	char                                                         pad0x58_12UCI[0x58];                               // 0x0(0x58)
-	struct BoneReference                                         BoneToModify;                                      // 0x58(0xc)
-	struct Vector                                                Translation;                                       // 0x64(0xc)
-	struct Rotator                                               Rotation;                                          // 0x70(0xc)
-	struct Vector                                                Scale;                                             // 0x7c(0xc)
-	char                                                         TranslationMode;                                   // 0x88(0x1)
-	char                                                         RotationMode;                                      // 0x89(0x1)
-	char                                                         ScaleMode;                                         // 0x8a(0x1)
-	char                                                         TranslationSpace;                                  // 0x8b(0x1)
-	char                                                         RotationSpace;                                     // 0x8c(0x1)
-	char                                                         ScaleSpace;                                        // 0x8d(0x1)
-	char                                                         pad0x2_WOWAI[0x2];                                 // 0x8e(0x2)
+	struct                                                       SourceBone;                                        // 0x58(0xc)
+	struct                                                       TargetBone;                                        // 0x64(0xc)
+	bool                                                         bCopyTranslation;                                  // 0x70(0x1)
+	bool                                                         bCopyRotation;                                     // 0x71(0x1)
+	bool                                                         bCopyScale;                                        // 0x72(0x1)
 };
 
 
@@ -54,120 +21,15 @@ public:
 struct AnimNode_Fabrik
 {
 public:
-	char                                                         pad0x60_6AYWF[0x60];                               // 0x0(0x60)
-	struct Transform                                             EffectorTransform;                                 // 0x60(0x30)
+	struct                                                       EffectorTransform;                                 // 0x60(0x30)
 	char                                                         EffectorTransformSpace;                            // 0x90(0x1)
-	char                                                         pad0x3_SJK3H[0x3];                                 // 0x91(0x3)
-	struct BoneReference                                         EffectorTransformBone;                             // 0x94(0xc)
+	struct                                                       EffectorTransformBone;                             // 0x94(0xc)
 	char                                                         EffectorRotationSource;                            // 0xa0(0x1)
-	char                                                         pad0x3_L8BY5[0x3];                                 // 0xa1(0x3)
-	struct BoneReference                                         TipBone;                                           // 0xa4(0xc)
-	struct BoneReference                                         RootBone;                                          // 0xb0(0xc)
+	struct                                                       TipBone;                                           // 0xa4(0xc)
+	struct                                                       RootBone;                                          // 0xb0(0xc)
 	float                                                        Precision;                                         // 0xbc(0x4)
 	int                                                          MaxIterations;                                     // 0xc0(0x4)
 	bool                                                         bEnableDebugDraw;                                  // 0xc4(0x1)
-	char                                                         pad0xb_2BTXE[0xb];                                 // 0xc5(0xb)
-};
-
-
-// Size 0xa0
-struct AnimNode_BoneDrivenController
-{
-public:
-	char                                                         pad0x58_QOC77[0x58];                               // 0x0(0x58)
-	struct BoneReference                                         SourceBone;                                        // 0x58(0xc)
-	char                                                         SourceComponent;                                   // 0x64(0x1)
-	char                                                         pad0x3_TTT8Z[0x3];                                 // 0x65(0x3)
-	class CurveFloat*                                            DrivingCurve;                                      // 0x68(0x8)
-	float                                                        Multiplier;                                        // 0x70(0x4)
-	bool                                                         bUseRange;                                         // 0x74(0x1)
-	char                                                         pad0x3_1BZLC[0x3];                                 // 0x75(0x3)
-	float                                                        RangeMin;                                          // 0x78(0x4)
-	float                                                        RangeMax;                                          // 0x7c(0x4)
-	float                                                        RemappedMin;                                       // 0x80(0x4)
-	float                                                        RemappedMax;                                       // 0x84(0x4)
-	struct BoneReference                                         TargetBone;                                        // 0x88(0xc)
-	char                                                         TargetComponent;                                   // 0x94(0x1)
-	char                                                         pad0x3_CN3N0[0x3];                                 // 0x95(0x3)
-	bool                                                         bAffectTargetTranslationX;                         // 0x98(0x1)
-	bool                                                         bAffectTargetTranslationY;                         // 0x98(0x1)
-	bool                                                         bAffectTargetTranslationZ;                         // 0x98(0x1)
-	bool                                                         bAffectTargetRotationX;                            // 0x98(0x1)
-	bool                                                         bAffectTargetRotationY;                            // 0x98(0x1)
-	bool                                                         bAffectTargetRotationZ;                            // 0x98(0x1)
-	bool                                                         bAffectTargetScaleX;                               // 0x98(0x1)
-	bool                                                         bAffectTargetScaleY;                               // 0x98(0x1)
-	bool                                                         bAffectTargetScaleZ;                               // 0x99(0x1)
-	char                                                         pad0x2_CAH53[0x2];                                 // 0x9a(0x2)
-	char                                                         ModificationMode;                                  // 0x9c(0x1)
-	char                                                         pad0x3_T9F5G[0x3];                                 // 0x9d(0x3)
-};
-
-
-// Size 0xe0
-struct AnimNode_Trail
-{
-public:
-	char                                                         pad0x58_YAP6W[0x58];                               // 0x0(0x58)
-	struct BoneReference                                         TrailBone;                                         // 0x58(0xc)
-	int                                                          ChainLength;                                       // 0x64(0x4)
-	char                                                         ChainBoneAxis;                                     // 0x68(0x1)
-	bool                                                         bInvertChainBoneAxis;                              // 0x69(0x1)
-	bool                                                         bLimitStretch;                                     // 0x6a(0x1)
-	char                                                         pad0x1_SIZFI[0x1];                                 // 0x6b(0x1)
-	float                                                        TrailRelaxation;                                   // 0x6c(0x4)
-	float                                                        StretchLimit;                                      // 0x70(0x4)
-	struct Vector                                                FakeVelocity;                                      // 0x74(0xc)
-	bool                                                         bActorSpaceFakeVel;                                // 0x80(0x1)
-	char                                                         pad0x5f_KQ9H7[0x5f];                               // 0x81(0x5f)
-};
-
-
-// Size 0x78
-struct AnimNode_CopyBone
-{
-public:
-	char                                                         pad0x58_4EUD0[0x58];                               // 0x0(0x58)
-	struct BoneReference                                         SourceBone;                                        // 0x58(0xc)
-	struct BoneReference                                         TargetBone;                                        // 0x64(0xc)
-	bool                                                         bCopyTranslation;                                  // 0x70(0x1)
-	bool                                                         bCopyRotation;                                     // 0x71(0x1)
-	bool                                                         bCopyScale;                                        // 0x72(0x1)
-	char                                                         pad0x5_JYPQA[0x5];                                 // 0x73(0x5)
-};
-
-
-// Size 0xc0
-struct AnimNode_LookAt
-{
-public:
-	char                                                         pad0x58_G5L28[0x58];                               // 0x0(0x58)
-	struct BoneReference                                         BoneToModify;                                      // 0x58(0xc)
-	struct BoneReference                                         LookAtBone;                                        // 0x64(0xc)
-	struct Vector                                                LookAtLocation;                                    // 0x70(0xc)
-	char                                                         LookAtAxis;                                        // 0x7c(0x1)
-	bool                                                         bUseLookUpAxis;                                    // 0x7d(0x1)
-	char                                                         LookUpAxis;                                        // 0x7e(0x1)
-	char                                                         pad0x1_2HSGC[0x1];                                 // 0x7f(0x1)
-	float                                                        LookAtClamp;                                       // 0x80(0x4)
-	char                                                         InterpolationType;                                 // 0x84(0x1)
-	char                                                         pad0x3_70F3K[0x3];                                 // 0x85(0x3)
-	float                                                        InterpolationTime;                                 // 0x88(0x4)
-	float                                                        InterpolationTriggerThreashold;                    // 0x8c(0x4)
-	bool                                                         bEnableDebug;                                      // 0x90(0x1)
-	char                                                         pad0x2f_02ZTL[0x2f];                               // 0x91(0x2f)
-};
-
-
-// Size 0x58
-struct AnimNode_SkeletalControlBase
-{
-public:
-	char                                                         pad0x30_C8MYK[0x30];                               // 0x0(0x30)
-	struct ComponentSpacePoseLink                                ComponentPose;                                     // 0x30(0x18)
-	float                                                        Alpha;                                             // 0x48(0x4)
-	struct InputScaleBias                                        AlphaScaleBias;                                    // 0x4c(0x8)
-	char                                                         pad0x4_73W8O[0x4];                                 // 0x54(0x4)
 };
 
 
@@ -175,29 +37,12 @@ public:
 struct AnimNode_ObserveBone
 {
 public:
-	char                                                         pad0x58_LJKC1[0x58];                               // 0x0(0x58)
-	struct BoneReference                                         BoneToObserve;                                     // 0x58(0xc)
+	struct                                                       BoneToObserve;                                     // 0x58(0xc)
 	char                                                         DisplaySpace;                                      // 0x64(0x1)
 	bool                                                         bRelativeToRefPose;                                // 0x65(0x1)
-	char                                                         pad0x2_ZPY1L[0x2];                                 // 0x66(0x2)
-	struct Vector                                                Translation;                                       // 0x68(0xc)
-	struct Rotator                                               Rotation;                                          // 0x74(0xc)
-	struct Vector                                                Scale;                                             // 0x80(0xc)
-	char                                                         pad0x4_YU0XF[0x4];                                 // 0x8c(0x4)
-};
-
-
-// Size 0x78
-struct AnimNode_RotationMultiplier
-{
-public:
-	char                                                         pad0x58_RDG03[0x58];                               // 0x0(0x58)
-	struct BoneReference                                         TargetBone;                                        // 0x58(0xc)
-	struct BoneReference                                         SourceBone;                                        // 0x64(0xc)
-	float                                                        Multiplier;                                        // 0x70(0x4)
-	char                                                         RotationAxisToRefer;                               // 0x74(0x1)
-	bool                                                         bIsAdditive;                                       // 0x75(0x1)
-	char                                                         pad0x2_TWM9J[0x2];                                 // 0x76(0x2)
+	struct                                                       Translation;                                       // 0x68(0xc)
+	struct                                                       Rotation;                                          // 0x74(0xc)
+	struct                                                       Scale;                                             // 0x80(0xc)
 };
 
 
@@ -205,10 +50,8 @@ public:
 struct AnimNode_SpringBone
 {
 public:
-	char                                                         pad0x58_78A2V[0x58];                               // 0x0(0x58)
-	struct BoneReference                                         SpringBone;                                        // 0x58(0xc)
+	struct                                                       SpringBone;                                        // 0x58(0xc)
 	bool                                                         bLimitDisplacement;                                // 0x64(0x1)
-	char                                                         pad0x3_34JCS[0x3];                                 // 0x65(0x3)
 	float                                                        MaxDisplacement;                                   // 0x68(0x4)
 	float                                                        SpringStiffness;                                   // 0x6c(0x4)
 	float                                                        SpringDamping;                                     // 0x70(0x4)
@@ -220,7 +63,79 @@ public:
 	bool                                                         bRotateX;                                          // 0x7c(0x1)
 	bool                                                         bRotateY;                                          // 0x7d(0x1)
 	bool                                                         bRotateZ;                                          // 0x7e(0x1)
-	char                                                         pad0x29_16ZA0[0x29];                               // 0x7f(0x29)
+};
+
+
+// Size 0xa0
+struct AnimNode_BoneDrivenController
+{
+public:
+	struct                                                       SourceBone;                                        // 0x58(0xc)
+	char                                                         SourceComponent;                                   // 0x64(0x1)
+	class CurveFloat*                                            DrivingCurve;                                      // 0x68(0x8)
+	float                                                        Multiplier;                                        // 0x70(0x4)
+	bool                                                         bUseRange;                                         // 0x74(0x1)
+	float                                                        RangeMin;                                          // 0x78(0x4)
+	float                                                        RangeMax;                                          // 0x7c(0x4)
+	float                                                        RemappedMin;                                       // 0x80(0x4)
+	float                                                        RemappedMax;                                       // 0x84(0x4)
+	struct                                                       TargetBone;                                        // 0x88(0xc)
+	char                                                         TargetComponent;                                   // 0x94(0x1)
+	bool                                                         bAffectTargetTranslationX;                         // 0x98(0x1)
+	bool                                                         bAffectTargetTranslationY;                         // 0x98(0x1)
+	bool                                                         bAffectTargetTranslationZ;                         // 0x98(0x1)
+	bool                                                         bAffectTargetRotationX;                            // 0x98(0x1)
+	bool                                                         bAffectTargetRotationY;                            // 0x98(0x1)
+	bool                                                         bAffectTargetRotationZ;                            // 0x98(0x1)
+	bool                                                         bAffectTargetScaleX;                               // 0x98(0x1)
+	bool                                                         bAffectTargetScaleY;                               // 0x98(0x1)
+	bool                                                         bAffectTargetScaleZ;                               // 0x99(0x1)
+	char                                                         ModificationMode;                                  // 0x9c(0x1)
+};
+
+
+// Size 0xc0
+struct AnimNode_LookAt
+{
+public:
+	struct                                                       BoneToModify;                                      // 0x58(0xc)
+	struct                                                       LookAtBone;                                        // 0x64(0xc)
+	struct                                                       LookAtLocation;                                    // 0x70(0xc)
+	char                                                         LookAtAxis;                                        // 0x7c(0x1)
+	bool                                                         bUseLookUpAxis;                                    // 0x7d(0x1)
+	char                                                         LookUpAxis;                                        // 0x7e(0x1)
+	float                                                        LookAtClamp;                                       // 0x80(0x4)
+	char                                                         InterpolationType;                                 // 0x84(0x1)
+	float                                                        InterpolationTime;                                 // 0x88(0x4)
+	float                                                        InterpolationTriggerThreashold;                    // 0x8c(0x4)
+	bool                                                         bEnableDebug;                                      // 0x90(0x1)
+};
+
+
+// Size 0x58
+struct AnimNode_SkeletalControlBase
+{
+public:
+	struct                                                       ComponentPose;                                     // 0x30(0x18)
+	float                                                        Alpha;                                             // 0x48(0x4)
+	struct                                                       AlphaScaleBias;                                    // 0x4c(0x8)
+};
+
+
+// Size 0x90
+struct AnimNode_ModifyBone
+{
+public:
+	struct                                                       BoneToModify;                                      // 0x58(0xc)
+	struct                                                       Translation;                                       // 0x64(0xc)
+	struct                                                       Rotation;                                          // 0x70(0xc)
+	struct                                                       Scale;                                             // 0x7c(0xc)
+	char                                                         TranslationMode;                                   // 0x88(0x1)
+	char                                                         RotationMode;                                      // 0x89(0x1)
+	char                                                         ScaleMode;                                         // 0x8a(0x1)
+	char                                                         TranslationSpace;                                  // 0x8b(0x1)
+	char                                                         RotationSpace;                                     // 0x8c(0x1)
+	char                                                         ScaleSpace;                                        // 0x8d(0x1)
 };
 
 
@@ -228,21 +143,67 @@ public:
 struct AnimNode_TwoBoneIK
 {
 public:
-	char                                                         pad0x58_ATNFI[0x58];                               // 0x0(0x58)
-	struct BoneReference                                         IKBone;                                            // 0x58(0xc)
-	struct Vector                                                EffectorLocation;                                  // 0x64(0xc)
-	struct Vector                                                JointTargetLocation;                               // 0x70(0xc)
-	struct Vector2D                                              StretchLimits;                                     // 0x7c(0x8)
+	struct                                                       IKBone;                                            // 0x58(0xc)
+	struct                                                       EffectorLocation;                                  // 0x64(0xc)
+	struct                                                       JointTargetLocation;                               // 0x70(0xc)
+	struct                                                       StretchLimits;                                     // 0x7c(0x8)
 	struct FName                                                 EffectorSpaceBoneName;                             // 0x84(0x8)
 	bool                                                         bTakeRotationFromEffectorSpace;                    // 0x8c(0x1)
 	bool                                                         bMaintainEffectorRelRot;                           // 0x8c(0x1)
 	bool                                                         bAllowStretching;                                  // 0x8c(0x1)
-	char                                                         pad0x3_NPWPX[0x3];                                 // 0x8d(0x3)
 	char                                                         EffectorLocationSpace;                             // 0x90(0x1)
 	char                                                         JointTargetLocationSpace;                          // 0x91(0x1)
-	char                                                         pad0x2_TS7DC[0x2];                                 // 0x92(0x2)
 	struct FName                                                 JointTargetSpaceBoneName;                          // 0x94(0x8)
-	char                                                         pad0x4_QJ7N4[0x4];                                 // 0x9c(0x4)
+};
+
+
+// Size 0xe0
+struct AnimNode_Trail
+{
+public:
+	struct                                                       TrailBone;                                         // 0x58(0xc)
+	int                                                          ChainLength;                                       // 0x64(0x4)
+	char                                                         ChainBoneAxis;                                     // 0x68(0x1)
+	bool                                                         bInvertChainBoneAxis;                              // 0x69(0x1)
+	bool                                                         bLimitStretch;                                     // 0x6a(0x1)
+	float                                                        TrailRelaxation;                                   // 0x6c(0x4)
+	float                                                        StretchLimit;                                      // 0x70(0x4)
+	struct                                                       FakeVelocity;                                      // 0x74(0xc)
+	bool                                                         bActorSpaceFakeVel;                                // 0x80(0x1)
+};
+
+
+// Size 0xa0
+struct AnimNode_HandIKRetargeting
+{
+public:
+	struct                                                       RightHandFK;                                       // 0x58(0xc)
+	struct                                                       LeftHandFK;                                        // 0x64(0xc)
+	struct                                                       RightHandIK;                                       // 0x70(0xc)
+	struct                                                       LeftHandIK;                                        // 0x7c(0xc)
+	TArray<struct BoneReference>                                 IKBonesToMove;                                     // 0x88(0x10)
+	float                                                        HandFKWeight;                                      // 0x98(0x4)
+};
+
+
+// Size 0x78
+struct AnimNode_RotationMultiplier
+{
+public:
+	struct                                                       TargetBone;                                        // 0x58(0xc)
+	struct                                                       SourceBone;                                        // 0x64(0xc)
+	float                                                        Multiplier;                                        // 0x70(0x4)
+	char                                                         RotationAxisToRefer;                               // 0x74(0x1)
+	bool                                                         bIsAdditive;                                       // 0x75(0x1)
+};
+
+
+// Size 0xc0
+struct AnimNode_CopyPoseFromMesh
+{
+public:
+	class SkeletalMeshComponent*                                 SourceMeshComponent;                               // 0x30(0x8)
+	bool                                                         bUseAttachedParent;                                // 0x38(0x1)
 };
 
 

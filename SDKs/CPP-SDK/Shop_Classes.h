@@ -7,7 +7,7 @@
 class CatalogOfferLicence: public Object
 {
 public:
-	struct Guid                                                  LicenceId;                                         // 0x28(0x10)
+	struct                                                       LicenceId;                                         // 0x28(0x10)
 };
 
 

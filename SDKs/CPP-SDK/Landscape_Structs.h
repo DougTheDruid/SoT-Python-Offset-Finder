@@ -5,6 +5,48 @@
 
 
 
+// Size 0x20
+struct LandscapeWeightmapUsage
+{
+public:
+	class LandscapeComponent*                                    ChannelUsage;                                      // 0x0(0x8)
+};
+
+
+// Size 0x38
+struct LandscapeSplineMeshEntry
+{
+public:
+	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
+	TArray<class MaterialInterface*>                             MaterialOverrides;                                 // 0x8(0x10)
+	bool                                                         bCenterH;                                          // 0x18(0x1)
+	struct                                                       CenterAdjust;                                      // 0x1c(0x8)
+	bool                                                         bScaleToWidth;                                     // 0x24(0x1)
+	struct                                                       Scale;                                             // 0x28(0xc)
+	char                                                         Orientation;                                       // 0x34(0x1)
+	char                                                         ForwardAxis;                                       // 0x35(0x1)
+	char                                                         UpAxis;                                            // 0x36(0x1)
+};
+
+
+// Size 0x8
+struct LandscapeLayerStruct
+{
+public:
+	class LandscapeLayerInfoObject*                              LayerInfoObj;                                      // 0x0(0x8)
+};
+
+
+// Size 0x48
+struct GrassInput
+{
+public:
+	struct FName                                                 Name;                                              // 0x0(0x8)
+	class LandscapeGrassType*                                    GrassType;                                         // 0x8(0x8)
+	struct                                                       Input;                                             // 0x10(0x38)
+};
+
+
 // Size 0x10
 struct WeightmapLayerAllocationInfo
 {
@@ -13,7 +55,6 @@ public:
 	char                                                         WeightmapTextureIndex;                             // 0x8(0x1)
 	char                                                         WeightmapTextureChannel;                           // 0x9(0x1)
 	char                                                         GrassMapChannelIndex;                              // 0xa(0x1)
-	char                                                         pad0x5_ZRZ6O[0x5];                                 // 0xb(0x5)
 };
 
 
@@ -26,139 +67,12 @@ public:
 };
 
 
-// Size 0x8
-struct LandscapeLayerStruct
-{
-public:
-	class LandscapeLayerInfoObject*                              LayerInfoObj;                                      // 0x0(0x8)
-};
-
-
-// Size 0x38
-struct LandscapeSplineMeshEntry
-{
-public:
-	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
-	TArray<class MaterialInterface*>                             MaterialOverrides;                                 // 0x8(0x10)
-	bool                                                         bCenterH;                                          // 0x18(0x1)
-	char                                                         pad0x3_HBTI6[0x3];                                 // 0x19(0x3)
-	struct Vector2D                                              CenterAdjust;                                      // 0x1c(0x8)
-	bool                                                         bScaleToWidth;                                     // 0x24(0x1)
-	char                                                         pad0x3_IAZTQ[0x3];                                 // 0x25(0x3)
-	struct Vector                                                Scale;                                             // 0x28(0xc)
-	char                                                         Orientation;                                       // 0x34(0x1)
-	char                                                         ForwardAxis;                                       // 0x35(0x1)
-	char                                                         UpAxis;                                            // 0x36(0x1)
-	char                                                         pad0x1_QGHYS[0x1];                                 // 0x37(0x1)
-};
-
-
-// Size 0x18
-struct LandscapeSplineSegmentConnection
-{
-public:
-	class LandscapeSplineControlPoint*                           ControlPoint;                                      // 0x0(0x8)
-	float                                                        TangentLen;                                        // 0x8(0x4)
-	struct FName                                                 SocketName;                                        // 0xc(0x8)
-	char                                                         pad0x4_ZQOJF[0x4];                                 // 0x14(0x4)
-};
-
-
-// Size 0x1
-struct ForeignWorldSplineData
-{
-public:
-	char                                                         pad0x1_IF9OI[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct ForeignControlPointData
-{
-public:
-	char                                                         pad0x1_RXIVS[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct LandscapeEditorLayerSettings
-{
-public:
-	char                                                         pad0x1_TKAEA[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x48
-struct GrassInput
-{
-public:
-	struct FName                                                 Name;                                              // 0x0(0x8)
-	class LandscapeGrassType*                                    GrassType;                                         // 0x8(0x8)
-	struct ExpressionInput                                       Input;                                             // 0x10(0x38)
-};
-
-
-// Size 0x20
-struct LandscapeWeightmapUsage
-{
-public:
-	class LandscapeComponent*                                    ChannelUsage;                                      // 0x0(0x8)
-	char                                                         pad0x18_SLKOZ[0x18];                               // 0x8(0x18)
-};
-
-
-// Size 0x40
-struct LandscapeSplineInterpPoint
-{
-public:
-	struct Vector                                                Center;                                            // 0x0(0xc)
-	struct Vector                                                Left;                                              // 0xc(0xc)
-	struct Vector                                                Right;                                             // 0x18(0xc)
-	struct Vector                                                FalloffLeft;                                       // 0x24(0xc)
-	struct Vector                                                FalloffRight;                                      // 0x30(0xc)
-	float                                                        StartEndFalloff;                                   // 0x3c(0x4)
-};
-
-
-// Size 0x1
-struct ForeignSplineSegmentData
-{
-public:
-	char                                                         pad0x1_D2OAD[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x98
-struct LayerBlendInput
-{
-public:
-	struct FName                                                 LayerName;                                         // 0x0(0x8)
-	char                                                         BlendType;                                         // 0x8(0x1)
-	char                                                         pad0x7_CS5ZL[0x7];                                 // 0x9(0x7)
-	struct ExpressionInput                                       LayerInput;                                        // 0x10(0x38)
-	struct ExpressionInput                                       HeightInput;                                       // 0x48(0x38)
-	float                                                        PreviewWeight;                                     // 0x80(0x4)
-	struct Vector                                                ConstLayerInput;                                   // 0x84(0xc)
-	float                                                        ConstHeightInput;                                  // 0x90(0x4)
-	char                                                         pad0x4_QC5T5[0x4];                                 // 0x94(0x4)
-};
-
-
 // Size 0x10
 struct LandscapeSplineConnection
 {
 public:
 	class LandscapeSplineSegment*                                Segment;                                           // 0x0(0x8)
 	bool                                                         End;                                               // 0x8(0x1)
-	char                                                         pad0x7_CXV8F[0x7];                                 // 0x9(0x7)
-};
-
-
-// Size 0x50
-struct GizmoSelectData
-{
-public:
-	char                                                         pad0x50_7ZYU7[0x50];                               // 0x0(0x50)
 };
 
 
@@ -169,24 +83,51 @@ public:
 	class StaticMesh*                                            GrassMesh;                                         // 0x0(0x8)
 	float                                                        GrassDensity;                                      // 0x8(0x4)
 	bool                                                         bUseGrid;                                          // 0xc(0x1)
-	char                                                         pad0x3_7XI5Q[0x3];                                 // 0xd(0x3)
 	float                                                        PlacementJitter;                                   // 0x10(0x4)
 	int                                                          StartCullDistance;                                 // 0x14(0x4)
 	int                                                          EndCullDistance;                                   // 0x18(0x4)
 	int                                                          MinLOD;                                            // 0x1c(0x4)
 	bool                                                         RandomRotation;                                    // 0x20(0x1)
-	char                                                         pad0x3_IC062[0x3];                                 // 0x21(0x3)
 	float                                                        AlignToSurface;                                    // 0x24(0x4)
 	float                                                        ScaleVariationMin;                                 // 0x28(0x4)
 	float                                                        ScaleVariationMax;                                 // 0x2c(0x4)
 };
 
 
-// Size 0x1
-struct LandscapeImportLayerInfo
+// Size 0x98
+struct LayerBlendInput
 {
 public:
-	char                                                         pad0x1_KT3CP[0x1];                                 // 0x0(0x1)
+	struct FName                                                 LayerName;                                         // 0x0(0x8)
+	char                                                         BlendType;                                         // 0x8(0x1)
+	struct                                                       LayerInput;                                        // 0x10(0x38)
+	struct                                                       HeightInput;                                       // 0x48(0x38)
+	float                                                        PreviewWeight;                                     // 0x80(0x4)
+	struct                                                       ConstLayerInput;                                   // 0x84(0xc)
+	float                                                        ConstHeightInput;                                  // 0x90(0x4)
+};
+
+
+// Size 0x40
+struct LandscapeSplineInterpPoint
+{
+public:
+	struct                                                       Center;                                            // 0x0(0xc)
+	struct                                                       Left;                                              // 0xc(0xc)
+	struct                                                       Right;                                             // 0x18(0xc)
+	struct                                                       FalloffLeft;                                       // 0x24(0xc)
+	struct                                                       FalloffRight;                                      // 0x30(0xc)
+	float                                                        StartEndFalloff;                                   // 0x3c(0x4)
+};
+
+
+// Size 0x18
+struct LandscapeSplineSegmentConnection
+{
+public:
+	class LandscapeSplineControlPoint*                           ControlPoint;                                      // 0x0(0x8)
+	float                                                        TangentLen;                                        // 0x8(0x4)
+	struct FName                                                 SocketName;                                        // 0xc(0x8)
 };
 
 

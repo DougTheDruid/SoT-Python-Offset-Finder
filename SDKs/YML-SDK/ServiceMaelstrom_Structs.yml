@@ -2,10 +2,14 @@
 # https://github.com/DougTheDruid
 MaelstromEventBaseFragment:
   Attributes:
-  - Name: pad0x10_P9SGW[0x10]
+  - Name: SequenceID
     Offset: '0x0'
-    Size: '0x10'
-    Type: char
+    Size: '0x8'
+    Type: uint64
+  - Name: TypeID
+    Offset: '0x8'
+    Size: '0x8'
+    Type: uint64
   - Name: Name
     Offset: '0x10'
     Size: '0x10'

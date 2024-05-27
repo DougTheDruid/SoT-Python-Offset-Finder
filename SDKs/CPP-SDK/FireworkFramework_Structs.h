@@ -5,50 +5,12 @@
 
 
 
-// Size 0x14
-struct FireworkAmbientLightData
-{
-public:
-	float                                                        FadeInTimer;                                       // 0x0(0x4)
-	float                                                        FadeOutTimer;                                      // 0x4(0x4)
-	float                                                        LifetimeTimer;                                     // 0x8(0x4)
-	float                                                        Radius;                                            // 0xc(0x4)
-	float                                                        AmbientIntensity;                                  // 0x10(0x4)
-};
-
-
 // Size 0x178
 struct WeightedProjectileMeshAnimationData
 {
 public:
-	struct RuntimeVectorCurve                                    AnimationCurve;                                    // 0x0(0x170)
+	struct                                                       AnimationCurve;                                    // 0x0(0x170)
 	float                                                        Weight;                                            // 0x170(0x4)
-	char                                                         pad0x4_1159Q[0x4];                                 // 0x174(0x4)
-};
-
-
-// Size 0x40
-struct FireworkExplosionData
-{
-public:
-	char                                                         pad0x8_0QTAO[0x8];                                 // 0x0(0x8)
-	class Object*                                                VFX;                                               // 0x8(0x8)
-	class WwiseEvent*                                            Sfx;                                               // 0x10(0x8)
-	class WwiseEvent*                                            SecondarySFX;                                      // 0x18(0x8)
-	char                                                         pad0x20_7Y4EL[0x20];                               // 0x20(0x20)
-};
-
-
-// Size 0x30
-struct WeightedFireworkVFXData
-{
-public:
-	class Object*                                                VFX;                                               // 0x0(0x8)
-	class WwiseEvent*                                            Sfx;                                               // 0x8(0x8)
-	class WwiseEvent*                                            SecondarySFX;                                      // 0x10(0x8)
-	float                                                        Weight;                                            // 0x18(0x4)
-	struct LinearColor                                           AmbientLightColour;                                // 0x1c(0x10)
-	char                                                         pad0x4_S3ZCP[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -61,17 +23,48 @@ public:
 };
 
 
+// Size 0x14
+struct FireworkAmbientLightData
+{
+public:
+	float                                                        FadeInTimer;                                       // 0x0(0x4)
+	float                                                        FadeOutTimer;                                      // 0x4(0x4)
+	float                                                        LifetimeTimer;                                     // 0x8(0x4)
+	float                                                        Radius;                                            // 0xc(0x4)
+	float                                                        AmbientIntensity;                                  // 0x10(0x4)
+};
+
+
+// Size 0x40
+struct FireworkExplosionData
+{
+public:
+	class Object*                                                VFX;                                               // 0x8(0x8)
+	class WwiseEvent*                                            Sfx;                                               // 0x10(0x8)
+	class WwiseEvent*                                            SecondarySFX;                                      // 0x18(0x8)
+};
+
+
+// Size 0x30
+struct WeightedFireworkVFXData
+{
+public:
+	class Object*                                                VFX;                                               // 0x0(0x8)
+	class WwiseEvent*                                            Sfx;                                               // 0x8(0x8)
+	class WwiseEvent*                                            SecondarySFX;                                      // 0x10(0x8)
+	float                                                        Weight;                                            // 0x18(0x4)
+	struct                                                       AmbientLightColour;                                // 0x1c(0x10)
+};
+
+
 // Size 0x58
 struct GeneratedFireworkData
 {
 public:
-	char                                                         pad0xc_CW72H[0xc];                                 // 0x0(0xc)
-	struct FireworkAmbientLightData                              FireworkAmbientLightData;                          // 0xc(0x14)
-	char                                                         pad0x8_A1HVZ[0x8];                                 // 0x20(0x8)
+	struct                                                       FireworkAmbientLightData;                          // 0xc(0x14)
 	TArray<struct FireworkExplosionData>                         ExplosionData;                                     // 0x28(0x10)
 	class WwiseObjectPoolWrapper*                                SfxPool;                                           // 0x38(0x8)
 	class WwiseEvent*                                            LaunchSfx;                                         // 0x40(0x8)
-	char                                                         pad0x8_S3I7Q[0x8];                                 // 0x48(0x8)
 	class FireworkFeedbackDataAsset*                             FireworkFeedbackData;                              // 0x50(0x8)
 };
 

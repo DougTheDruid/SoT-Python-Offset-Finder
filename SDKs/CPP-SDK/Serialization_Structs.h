@@ -5,43 +5,6 @@
 
 
 
-// Size 0x30
-struct StructSerializerNumericTestStruct
-{
-public:
-	char                                                         pad0x4_5SF6L[0x4];                                 // 0x0(0x4)
-	int                                                          Int32;                                             // 0x4(0x4)
-	char                                                         UInt8;                                             // 0x10(0x1)
-	char                                                         pad0x1_0XLKU[0x1];                                 // 0x11(0x1)
-	float                                                        Float;                                             // 0x20(0x4)
-	char                                                         pad0x4_GSYSU[0x4];                                 // 0x24(0x4)
-	double                                                       Double;                                            // 0x28(0x8)
-};
-
-
-// Size 0x8
-struct StructSerializerBooleanTestStruct
-{
-public:
-	bool                                                         BoolFalse;                                         // 0x0(0x1)
-	bool                                                         BoolTrue;                                          // 0x1(0x1)
-	char                                                         pad0x2_39GJ6[0x2];                                 // 0x2(0x2)
-	char                                                         pad0x4_TMYPA[0x4];                                 // 0x4(0x4)
-};
-
-
-// Size 0x40
-struct StructSerializerBuiltinTestStruct
-{
-public:
-	struct Guid                                                  Guid;                                              // 0x0(0x10)
-	struct FName                                                 Name;                                              // 0x10(0x8)
-	struct FString                                               String;                                            // 0x18(0x10)
-	struct Rotator                                               Rotator;                                           // 0x28(0xc)
-	struct Vector                                                Vector;                                            // 0x34(0xc)
-};
-
-
 // Size 0x40
 struct StructSerializerArrayTestStruct
 {
@@ -49,9 +12,7 @@ public:
 	TArray<int>                                                  Int32Array;                                        // 0x0(0x10)
 	int                                                          StaticSingleElement;                               // 0x10(0x4)
 	int                                                          StaticInt32Array;                                  // 0x14(0x4)
-	char                                                         pad0x8_5O2LA[0x8];                                 // 0x18(0x8)
 	float                                                        StaticFloatArray;                                  // 0x20(0x4)
-	char                                                         pad0xc_S7WUU[0xc];                                 // 0x24(0xc)
 	TArray<struct Vector>                                        VectorArray;                                       // 0x30(0x10)
 };
 
@@ -65,15 +26,54 @@ public:
 };
 
 
+// Size 0x40
+struct StructSerializerBuiltinTestStruct
+{
+public:
+	struct                                                       Guid;                                              // 0x0(0x10)
+	struct FName                                                 Name;                                              // 0x10(0x8)
+	struct FString                                               String;                                            // 0x18(0x10)
+	struct                                                       Rotator;                                           // 0x28(0xc)
+	struct                                                       Vector;                                            // 0x34(0xc)
+};
+
+
 // Size 0xc8
 struct StructSerializerTestStruct
 {
 public:
-	struct StructSerializerNumericTestStruct                     Numerics;                                          // 0x0(0x30)
-	struct StructSerializerBooleanTestStruct                     Booleans;                                          // 0x30(0x8)
-	struct StructSerializerObjectTestStruct                      Objects;                                           // 0x38(0x10)
-	struct StructSerializerBuiltinTestStruct                     Builtins;                                          // 0x48(0x40)
-	struct StructSerializerArrayTestStruct                       Arrays;                                            // 0x88(0x40)
+	struct                                                       Numerics;                                          // 0x0(0x30)
+	struct                                                       Booleans;                                          // 0x30(0x8)
+	struct                                                       Objects;                                           // 0x38(0x10)
+	struct                                                       Builtins;                                          // 0x48(0x40)
+	struct                                                       Arrays;                                            // 0x88(0x40)
+};
+
+
+// Size 0x8
+struct StructSerializerBooleanTestStruct
+{
+public:
+	bool                                                         BoolFalse;                                         // 0x0(0x1)
+	bool                                                         BoolTrue;                                          // 0x1(0x1)
+	uint32                                                       Bitfield;                                          // 0x4(0x4)
+};
+
+
+// Size 0x30
+struct StructSerializerNumericTestStruct
+{
+public:
+	int8                                                         Int8;                                              // 0x0(0x1)
+	int16                                                        Int16;                                             // 0x2(0x2)
+	int                                                          Int32;                                             // 0x4(0x4)
+	int64                                                        Int64;                                             // 0x8(0x8)
+	char                                                         UInt8;                                             // 0x10(0x1)
+	uint16                                                       UInt16;                                            // 0x12(0x2)
+	uint32                                                       UInt32;                                            // 0x14(0x4)
+	uint64                                                       UInt64;                                            // 0x18(0x8)
+	float                                                        Float;                                             // 0x20(0x4)
+	double                                                       Double;                                            // 0x28(0x8)
 };
 
 

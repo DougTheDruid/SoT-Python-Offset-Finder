@@ -6,68 +6,6 @@
 #include "WaterSlide_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ZiplineActionStateId: public ActionStateId
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x2a8] - InheritedSize[0x2a0]
-class ZiplineInputComponent: public LookAtOffsetInputComponent
-{
-public:
-	char                                                         pad0x8_DXTDI[0x8];                                 // 0x2a0(0x8)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class WaterSlideParamsDataAsset: public DataAsset
-{
-public:
-	struct WaterSlideParams                                      WaterSlideParams;                                  // 0x28(0x28)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RideTransitionActionStateId: public ActionStateId
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x2b0] - InheritedSize[0x2a0]
-class WaterSlideInputComponent: public LookAtOffsetInputComponent
-{
-public:
-	char                                                         pad0x10_9CD04[0x10];                               // 0x2a0(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x850] - InheritedSize[0x850]
-class ZiplineEditorComponent: public CameraComponent
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class WaterSlideVeeringAnalogInputId: public AnalogInputId
-{
-public:
-};
-
-
-// Size 0x18 (Full Size[0x3e0] - InheritedSize[0x3c8]
-class Ride: public Actor
-{
-public:
-	char                                                         pad0x8_FFO9Q[0x8];                                 // 0x3c8(0x8)
-	class SplineComponent*                                       SplineComponent;                                   // 0x3d0(0x8)
-	class SceneComponent*                                        Root;                                              // 0x3d8(0x8)
-};
-
-
 // Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
 class WaterSlideAudioParams: public DataAsset
 {
@@ -82,17 +20,28 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RidePlayerInterface: public Interface
+// Size 0x68 (Full Size[0x148] - InheritedSize[0xe0]
+class RidePlayerComponent: public DoubleIntentComponent
 {
 public:
+	class ParticleSystemComponent*                               PlayerWaterSlideVFXComponent;                      // 0xe8(0x8)
+	class ParticleSystem*                                        PlayerWaterSlideVFX;                               // 0xf0(0x8)
+	float                                                        PlayerWaterSlideVFXSpawnLocationZOffset;           // 0xf8(0x4)
+	class ParticleSystemComponent*                               PlayerZiplineWindVFXComponent;                     // 0x100(0x8)
+	class ParticleSystemComponent*                               PlayerZiplineTrailVFXComponent;                    // 0x108(0x8)
+	class ParticleSystem*                                        PlayerZiplineTrailVFX;                             // 0x110(0x8)
+	class ParticleSystem*                                        PlayerZiplineWindVFX;                              // 0x118(0x8)
+	struct                                                       PlayerZiplineTrailVFXSpawnLocation;                // 0x120(0xc)
+	class Ride*                                                  CurrentRide;                                       // 0x140(0x8)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WaterSlideActionStateId: public ActionStateId
+// Size 0x18 (Full Size[0x3e0] - InheritedSize[0x3c8]
+class Ride: public Actor
 {
 public:
+	class SplineComponent*                                       SplineComponent;                                   // 0x3d0(0x8)
+	class SceneComponent*                                        Root;                                              // 0x3d8(0x8)
 };
 
 
@@ -109,26 +58,35 @@ public:
 	struct FName                                                 PlayerSpeedOnZiplineRTPC;                          // 0x58(0x8)
 	class ParticleSystem*                                        PlayerZiplineWindVFX;                              // 0x60(0x8)
 	class ParticleSystem*                                        PlayerZiplineTrailVFX;                             // 0x68(0x8)
-	struct Vector2D                                              SpawnParticleSpeedThreshold;                       // 0x70(0x8)
+	struct                                                       SpawnParticleSpeedThreshold;                       // 0x70(0x8)
 };
 
 
-// Size 0x68 (Full Size[0x148] - InheritedSize[0xe0]
-class RidePlayerComponent: public DoubleIntentComponent
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class WaterSlideParamsDataAsset: public DataAsset
 {
 public:
-	char                                                         pad0x8_2DPDG[0x8];                                 // 0xe0(0x8)
-	class ParticleSystemComponent*                               PlayerWaterSlideVFXComponent;                      // 0xe8(0x8)
-	class ParticleSystem*                                        PlayerWaterSlideVFX;                               // 0xf0(0x8)
-	float                                                        PlayerWaterSlideVFXSpawnLocationZOffset;           // 0xf8(0x4)
-	char                                                         pad0x4_CCPMA[0x4];                                 // 0xfc(0x4)
-	class ParticleSystemComponent*                               PlayerZiplineWindVFXComponent;                     // 0x100(0x8)
-	class ParticleSystemComponent*                               PlayerZiplineTrailVFXComponent;                    // 0x108(0x8)
-	class ParticleSystem*                                        PlayerZiplineTrailVFX;                             // 0x110(0x8)
-	class ParticleSystem*                                        PlayerZiplineWindVFX;                              // 0x118(0x8)
-	struct Vector                                                PlayerZiplineTrailVFXSpawnLocation;                // 0x120(0xc)
-	char                                                         pad0x14_MOIQZ[0x14];                               // 0x12c(0x14)
-	class Ride*                                                  CurrentRide;                                       // 0x140(0x8)
+	struct                                                       WaterSlideParams;                                  // 0x28(0x28)
+};
+
+
+// Size 0x390 (Full Size[0x770] - InheritedSize[0x3e0]
+class Zipline: public Ride
+{
+public:
+	char                                                         ZiplineStartPointConfig;                           // 0x3e0(0x1)
+	bool                                                         ShouldLaunchPlayer;                                // 0x3e1(0x1)
+	float                                                        LaunchForceMultiplier;                             // 0x3e4(0x4)
+	struct                                                       ZiplineFeelParameters;                             // 0x3e8(0x310)
+	class ZiplineFXParams*                                       ZiplineFXParams;                                   // 0x6f8(0x8)
+	float                                                        AttachPointSize;                                   // 0x700(0x4)
+	struct                                                       ForwardsAttachDetachOffsets;                       // 0x704(0x8)
+	struct                                                       BackwardsAttachDetachOffsets;                      // 0x70c(0x8)
+	class StaticMesh*                                            ZiplineGeometry;                                   // 0x740(0x8)
+	class StaticMesh*                                            ZiplineTrolleyGeometry;                            // 0x748(0x8)
+	class MaterialInterface*                                     ZiplineGeometryMaterialOverride;                   // 0x750(0x8)
+	struct FName                                                 ZiplineGeometryMaterialScalerParameterName;        // 0x758(0x8)
+	struct                                                       PlayerAttachStat;                                  // 0x760(0x4)
 };
 
 
@@ -142,33 +100,8 @@ public:
 	class WaterSlide*                                            LeftWaterSlideRoute;                               // 0x3f8(0x8)
 	class WaterSlide*                                            RightWaterSlideRoute;                              // 0x400(0x8)
 	bool                                                         IsEndOfSlide;                                      // 0x408(0x1)
-	char                                                         pad0x3_AO9WI[0x3];                                 // 0x409(0x3)
-	struct Vector                                                EndOfSlideLaunchForce;                             // 0x40c(0xc)
+	struct                                                       EndOfSlideLaunchForce;                             // 0x40c(0xc)
 	class WaterSlideAudioParams*                                 WaterSlideAudioParams;                             // 0x418(0x8)
-	char                                                         pad0x8_FRFPF[0x8];                                 // 0x420(0x8)
-};
-
-
-// Size 0x390 (Full Size[0x770] - InheritedSize[0x3e0]
-class Zipline: public Ride
-{
-public:
-	char                                                         ZiplineStartPointConfig;                           // 0x3e0(0x1)
-	bool                                                         ShouldLaunchPlayer;                                // 0x3e1(0x1)
-	char                                                         pad0x2_UPVPC[0x2];                                 // 0x3e2(0x2)
-	float                                                        LaunchForceMultiplier;                             // 0x3e4(0x4)
-	struct ZiplineFeelParameters                                 ZiplineFeelParameters;                             // 0x3e8(0x310)
-	class ZiplineFXParams*                                       ZiplineFXParams;                                   // 0x6f8(0x8)
-	float                                                        AttachPointSize;                                   // 0x700(0x4)
-	struct Vector2D                                              ForwardsAttachDetachOffsets;                       // 0x704(0x8)
-	struct Vector2D                                              BackwardsAttachDetachOffsets;                      // 0x70c(0x8)
-	char                                                         pad0x2c_APKIE[0x2c];                               // 0x714(0x2c)
-	class StaticMesh*                                            ZiplineGeometry;                                   // 0x740(0x8)
-	class StaticMesh*                                            ZiplineTrolleyGeometry;                            // 0x748(0x8)
-	class MaterialInterface*                                     ZiplineGeometryMaterialOverride;                   // 0x750(0x8)
-	struct FName                                                 ZiplineGeometryMaterialScalerParameterName;        // 0x758(0x8)
-	struct PlayerStat                                            PlayerAttachStat;                                  // 0x760(0x4)
-	char                                                         pad0xc_29HE9[0xc];                                 // 0x764(0xc)
 };
 
 
@@ -179,7 +112,7 @@ public:
 	class InteractableComponentWithActionRules*                  ZiplineStartInteractionPoint;                      // 0x770(0x8)
 	class InteractableComponentWithActionRules*                  ZiplineEndInteractionPoint;                        // 0x778(0x8)
 	class UClass*                                                PressedNotificationInputId;                        // 0x780(0x8)
-	struct Vector2D                                              AttachPointLocationOffset;                         // 0x788(0x8)
+	struct                                                       AttachPointLocationOffset;                         // 0x788(0x8)
 };
 
 

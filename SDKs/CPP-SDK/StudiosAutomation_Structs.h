@@ -5,50 +5,22 @@
 
 
 
-// Size 0x10
-struct ClientPawnDetails
+// Size 0x4
+struct CollectionAnimSequenceLimits
 {
 public:
-	TArray<class Pawn*>                                          Pawns;                                             // 0x0(0x10)
+	int                                                          MaxMemory;                                         // 0x0(0x4)
 };
 
 
-// Size 0x8
-struct CollectionSkeleMeshLimits
+// Size 0x20
+struct TextureAuditorProperties
 {
 public:
-	char                                                         pad0x8_SPQ7S[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x18
-struct AssetAuditConstantEntry
-{
-public:
-	struct FString                                               Name;                                              // 0x0(0x10)
-	int                                                          Value;                                             // 0x10(0x4)
-	char                                                         pad0x4_HY96G[0x4];                                 // 0x14(0x4)
-};
-
-
-// Size 0x28
-struct FolderTotals
-{
-public:
-	bool                                                         EnforceCollectionMembership;                       // 0x0(0x1)
-	char                                                         pad0x7_85JDZ[0x7];                                 // 0x1(0x7)
-	TArray<struct Name>                                          CollectionsAllowedForFolder;                       // 0x8(0x10)
-	TArray<struct Name>                                          AssetTypesToTest;                                  // 0x18(0x10)
-};
-
-
-// Size 0x18
-struct SubstringAuditQueryData
-{
-public:
-	TArray<String>                                               QueryStringArray;                                  // 0x0(0x10)
-	int                                                          SearchSetSize;                                     // 0x10(0x4)
-	int                                                          MemoryLimitForSet;                                 // 0x14(0x4)
+	char                                                         RequiredMipsSetting;                               // 0x0(0x1)
+	TArray<char>                                                 AllowedTextureFormats;                             // 0x8(0x10)
+	uint32                                                       MinSizeToValidateFormatX;                          // 0x18(0x4)
+	uint32                                                       MinSizeToValidateFormatY;                          // 0x1c(0x4)
 };
 
 
@@ -61,20 +33,47 @@ public:
 };
 
 
-// Size 0x8
-struct CollectionMeshLimitsBase
+// Size 0x10
+struct ClientPawnDetails
 {
 public:
-	int                                                          MaxVerts;                                          // 0x0(0x4)
-	int                                                          MaxMemory;                                         // 0x4(0x4)
+	TArray<class Pawn*>                                          Pawns;                                             // 0x0(0x10)
 };
 
 
-// Size 0x4
-struct CollectionAnimSequenceLimits
+// Size 0x28
+struct FolderTotals
 {
 public:
-	int                                                          MaxMemory;                                         // 0x0(0x4)
+	bool                                                         EnforceCollectionMembership;                       // 0x0(0x1)
+	TArray<struct Name>                                          CollectionsAllowedForFolder;                       // 0x8(0x10)
+	TArray<struct Name>                                          AssetTypesToTest;                                  // 0x18(0x10)
+};
+
+
+// Size 0x34
+struct CollectionLimits
+{
+public:
+	struct FName                                                 CollectionName;                                    // 0x0(0x8)
+	char                                                         AuditType;                                         // 0x8(0x1)
+	char                                                         AuditTypeFlag;                                     // 0x9(0x1)
+	bool                                                         IsOnlyParentCollection;                            // 0xa(0x1)
+	struct                                                       CollectionTotals;                                  // 0xc(0x10)
+	struct                                                       StaticMeshLimits;                                  // 0x1c(0x8)
+	struct                                                       SkeleMeshLimits;                                   // 0x24(0x8)
+	struct                                                       AnimLimits;                                        // 0x2c(0x4)
+	bool                                                         CanUseComplexCollisionAsSimple;                    // 0x30(0x1)
+	bool                                                         CanUseLOD0Collision;                               // 0x31(0x1)
+};
+
+
+// Size 0x18
+struct AssetAuditConstantEntry
+{
+public:
+	struct FString                                               Name;                                              // 0x0(0x10)
+	int                                                          Value;                                             // 0x10(0x4)
 };
 
 
@@ -89,57 +88,22 @@ public:
 };
 
 
+// Size 0x18
+struct SubstringAuditQueryData
+{
+public:
+	TArray<String>                                               QueryStringArray;                                  // 0x0(0x10)
+	int                                                          SearchSetSize;                                     // 0x10(0x4)
+	int                                                          MemoryLimitForSet;                                 // 0x14(0x4)
+};
+
+
 // Size 0x8
-struct CollectionStaticMeshLimits
+struct CollectionMeshLimitsBase
 {
 public:
-	char                                                         pad0x8_FW1A1[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x20
-struct TextureAuditorProperties
-{
-public:
-	char                                                         RequiredMipsSetting;                               // 0x0(0x1)
-	char                                                         pad0x7_W8BZQ[0x7];                                 // 0x1(0x7)
-	TArray<char>                                                 AllowedTextureFormats;                             // 0x8(0x10)
-	char                                                         pad0x8_D97IS[0x8];                                 // 0x18(0x8)
-};
-
-
-// Size 0x38
-struct MeshAuditLimits
-{
-public:
-	TArray<struct SubstringAuditQueryData>                       SubstringQueries;                                  // 0x0(0x10)
-	struct FolderTotals                                          FolderMeshLimits;                                  // 0x10(0x28)
-};
-
-
-// Size 0x34
-struct CollectionLimits
-{
-public:
-	struct FName                                                 CollectionName;                                    // 0x0(0x8)
-	char                                                         AuditType;                                         // 0x8(0x1)
-	bool                                                         IsOnlyParentCollection;                            // 0x9(0x1)
-	char                                                         pad0x2_8XA7U[0x2];                                 // 0xa(0x2)
-	struct CollectionTotalsLimits                                CollectionTotals;                                  // 0xc(0x10)
-	struct CollectionStaticMeshLimits                            StaticMeshLimits;                                  // 0x1c(0x8)
-	struct CollectionSkeleMeshLimits                             SkeleMeshLimits;                                   // 0x24(0x8)
-	struct CollectionAnimSequenceLimits                          AnimLimits;                                        // 0x2c(0x4)
-	bool                                                         CanUseComplexCollisionAsSimple;                    // 0x30(0x1)
-	bool                                                         CanUseLOD0Collision;                               // 0x31(0x1)
-	char                                                         pad0x2_S3J6S[0x2];                                 // 0x32(0x2)
-};
-
-
-// Size 0x10
-struct AssetAuditConstants
-{
-public:
-	TArray<struct AssetAuditConstantEntry>                       AssetAuditConstants;                               // 0x0(0x10)
+	int                                                          MaxVerts;                                          // 0x0(0x4)
+	int                                                          MaxMemory;                                         // 0x4(0x4)
 };
 
 
@@ -148,8 +112,24 @@ struct TextureAuditorGroupProperties
 {
 public:
 	char                                                         TextureGroup;                                      // 0x0(0x1)
-	char                                                         pad0x7_W6DAO[0x7];                                 // 0x1(0x7)
-	struct TextureAuditorProperties                              Properties;                                        // 0x8(0x20)
+	struct                                                       Properties;                                        // 0x8(0x20)
+};
+
+
+// Size 0x38
+struct MeshAuditLimits
+{
+public:
+	TArray<struct SubstringAuditQueryData>                       SubstringQueries;                                  // 0x0(0x10)
+	struct                                                       FolderMeshLimits;                                  // 0x10(0x28)
+};
+
+
+// Size 0x10
+struct AssetAuditConstants
+{
+public:
+	TArray<struct AssetAuditConstantEntry>                       AssetAuditConstants;                               // 0x0(0x10)
 };
 
 

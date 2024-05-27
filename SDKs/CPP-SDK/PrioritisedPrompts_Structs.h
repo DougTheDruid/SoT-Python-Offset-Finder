@@ -5,34 +5,42 @@
 
 
 
-// Size 0x60
-struct PrioritisedPrompt
-{
-public:
-	bool                                                         UsePopupMessageDescForText;                        // 0x0(0x1)
-	char                                                         pad0x7_8805O[0x7];                                 // 0x1(0x7)
-	struct FText                                                 Message;                                           // 0x8(0x38)
-	struct FString                                               Key;                                               // 0x40(0x10)
-	class PopUpMessageDesc*                                      PopUpMessageDesc;                                  // 0x50(0x8)
-	char                                                         BasePriority;                                      // 0x58(0x1)
-	char                                                         MenuNavigation;                                    // 0x59(0x1)
-	char                                                         pad0x6_IR5CQ[0x6];                                 // 0x5a(0x6)
-};
-
-
-// Size 0x10
-struct PrioritisedPromptHandle
-{
-public:
-	struct Guid                                                  Id;                                                // 0x0(0x10)
-};
-
-
 // Size 0x8
 struct PromptsCounterIncrementEvent
 {
 public:
 	class UClass*                                                AccessKey;                                         // 0x0(0x8)
+};
+
+
+// Size 0x70
+struct PrioritisedPromptWithHandle
+{
+public:
+	struct                                                       PromptHandle;                                      // 0x0(0x10)
+	struct                                                       Prompt;                                            // 0x10(0x60)
+};
+
+
+// Size 0x60
+struct PrioritisedPrompt
+{
+public:
+	bool                                                         UsePopupMessageDescForText;                        // 0x0(0x1)
+	struct FText                                                 Message;                                           // 0x8(0x38)
+	struct FString                                               Key;                                               // 0x40(0x10)
+	class PopUpMessageDesc*                                      PopUpMessageDesc;                                  // 0x50(0x8)
+	char                                                         BasePriority;                                      // 0x58(0x1)
+	char                                                         MenuNavigation;                                    // 0x59(0x1)
+};
+
+
+// Size 0x78
+struct PromptEvaluation
+{
+public:
+	char                                                         PromptType;                                        // 0x0(0x1)
+	struct                                                       Prompt;                                            // 0x8(0x70)
 };
 
 
@@ -45,41 +53,20 @@ public:
 };
 
 
-// Size 0x1
-struct PromptsServiceSetupEvent
+// Size 0x10
+struct PrioritisedPromptHandle
 {
 public:
-	char                                                         pad0x1_6BGQF[0x1];                                 // 0x0(0x1)
+	struct                                                       Id;                                                // 0x0(0x10)
 };
 
 
-// Size 0x70
-struct PrioritisedPromptWithHandle
-{
-public:
-	struct PrioritisedPromptHandle                               PromptHandle;                                      // 0x0(0x10)
-	struct PrioritisedPrompt                                     Prompt;                                            // 0x10(0x60)
-};
-
-
-// Size 0x78
-struct PromptEvaluation
-{
-public:
-	char                                                         PromptType;                                        // 0x0(0x1)
-	char                                                         pad0x7_2YAOV[0x7];                                 // 0x1(0x7)
-	struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x8(0x70)
-};
-
-
-// Size 0x88
+// Size 0x90
 struct PermanentPromptNetworkEvent
 {
 public:
-	char                                                         pad0x10_C5FF4[0x10];                               // 0x0(0x10)
-	struct PrioritisedPromptWithHandle                           Prompt;                                            // 0x10(0x70)
-	char                                                         StartOrStop;                                       // 0x80(0x1)
-	char                                                         pad0x7_SJQQ3[0x7];                                 // 0x81(0x7)
+	struct                                                       Prompt;                                            // 0x18(0x70)
+	char                                                         StartOrStop;                                       // 0x88(0x1)
 };
 
 

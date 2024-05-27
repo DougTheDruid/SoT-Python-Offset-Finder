@@ -5,6 +5,38 @@
 
 
 
+// Size 0x50
+struct MovieSceneCaptureSettings
+{
+public:
+	struct                                                       OutputDirectory;                                   // 0x0(0x10)
+	bool                                                         bCreateTemporaryCopiesOfLevels;                    // 0x10(0x1)
+	class UClass*                                                GameModeOverride;                                  // 0x18(0x8)
+	struct FString                                               OutputFormat;                                      // 0x20(0x10)
+	bool                                                         bOverwriteExisting;                                // 0x30(0x1)
+	bool                                                         bUseRelativeFrameNumbers;                          // 0x31(0x1)
+	int                                                          HandleFrames;                                      // 0x34(0x4)
+	char                                                         ZeroPadFrameNumbers;                               // 0x38(0x1)
+	int                                                          FrameRate;                                         // 0x3c(0x4)
+	struct                                                       Resolution;                                        // 0x40(0x8)
+	bool                                                         bEnableTextureStreaming;                           // 0x48(0x1)
+	bool                                                         bCinematicEngineScalability;                       // 0x49(0x1)
+	bool                                                         bCinematicMode;                                    // 0x4a(0x1)
+	bool                                                         bAllowMovement;                                    // 0x4b(0x1)
+	bool                                                         bAllowTurning;                                     // 0x4c(0x1)
+	bool                                                         bShowPlayer;                                       // 0x4d(0x1)
+	bool                                                         bShowHUD;                                          // 0x4e(0x1)
+};
+
+
+// Size 0x10
+struct CompositionGraphCapturePasses
+{
+public:
+	TArray<String>                                               Value;                                             // 0x0(0x10)
+};
+
+
 // Size 0x8
 struct CaptureProtocolID
 {
@@ -17,43 +49,8 @@ public:
 struct CaptureResolution
 {
 public:
-	char                                                         pad0x8_MENDK[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x10
-struct CompositionGraphCapturePasses
-{
-public:
-	TArray<String>                                               Value;                                             // 0x0(0x10)
-};
-
-
-// Size 0x50
-struct MovieSceneCaptureSettings
-{
-public:
-	struct DirectoryPath                                         OutputDirectory;                                   // 0x0(0x10)
-	bool                                                         bCreateTemporaryCopiesOfLevels;                    // 0x10(0x1)
-	char                                                         pad0x7_O8OQ6[0x7];                                 // 0x11(0x7)
-	class UClass*                                                GameModeOverride;                                  // 0x18(0x8)
-	struct FString                                               OutputFormat;                                      // 0x20(0x10)
-	bool                                                         bOverwriteExisting;                                // 0x30(0x1)
-	bool                                                         bUseRelativeFrameNumbers;                          // 0x31(0x1)
-	char                                                         pad0x2_QG1XS[0x2];                                 // 0x32(0x2)
-	int                                                          HandleFrames;                                      // 0x34(0x4)
-	char                                                         ZeroPadFrameNumbers;                               // 0x38(0x1)
-	char                                                         pad0x3_IV5XN[0x3];                                 // 0x39(0x3)
-	int                                                          FrameRate;                                         // 0x3c(0x4)
-	struct CaptureResolution                                     Resolution;                                        // 0x40(0x8)
-	bool                                                         bEnableTextureStreaming;                           // 0x48(0x1)
-	bool                                                         bCinematicEngineScalability;                       // 0x49(0x1)
-	bool                                                         bCinematicMode;                                    // 0x4a(0x1)
-	bool                                                         bAllowMovement;                                    // 0x4b(0x1)
-	bool                                                         bAllowTurning;                                     // 0x4c(0x1)
-	bool                                                         bShowPlayer;                                       // 0x4d(0x1)
-	bool                                                         bShowHUD;                                          // 0x4e(0x1)
-	char                                                         pad0x1_MBUNM[0x1];                                 // 0x4f(0x1)
+	uint32                                                       ResX;                                              // 0x0(0x4)
+	uint32                                                       ResY;                                              // 0x4(0x4)
 };
 
 

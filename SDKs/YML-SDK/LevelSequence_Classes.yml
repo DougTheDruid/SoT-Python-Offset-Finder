@@ -9,33 +9,25 @@ LevelSequence:
   - Name: ObjectReferences
     Offset: '0x2b0'
     Size: '0xa0'
-    Type: struct LevelSequenceObjectReferenceMap
-  - Name: pad0x50_KC5FW[0x50]
+    Type: struct
+  - Name: PossessedObjects
     Offset: '0x350'
     Size: '0x50'
-    Type: char
+    Type: map
   ClassSize: '0xf8'
   FullSize: '0x3a0'
   InheritedSize: '0x2a8'
   Super: MovieSceneSequence
 LevelSequenceActor:
   Attributes:
-  - Name: pad0x8_VK564[0x8]
-    Offset: '0x3c8'
-    Size: '0x8'
-    Type: char
   - Name: bAutoPlay
     Offset: '0x3d0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_PAWL0[0x7]
-    Offset: '0x3d1'
-    Size: '0x7'
-    Type: char
   - Name: PlaybackSettings
     Offset: '0x3d8'
     Size: '0x28'
-    Type: struct MovieSceneSequencePlaybackSettings
+    Type: struct
   - Name: SequencePlayer
     Offset: '0x400'
     Size: '0x8'
@@ -43,7 +35,7 @@ LevelSequenceActor:
   - Name: LevelSequence
     Offset: '0x408'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: BurnInOptions
     Offset: '0x418'
     Size: '0x8'
@@ -69,7 +61,7 @@ LevelSequenceBurnIn:
   - Name: FrameInformation
     Offset: '0x230'
     Size: '0x90'
-    Type: struct LevelSequencePlayerSnapshot
+    Type: struct
   - Name: LevelSequenceActor
     Offset: '0x2c0'
     Size: '0x8'
@@ -78,26 +70,16 @@ LevelSequenceBurnIn:
   FullSize: '0x2c8'
   InheritedSize: '0x230'
   Super: UserWidget
-LevelSequenceBurnInInitSettings:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Object
 LevelSequenceBurnInOptions:
   Attributes:
   - Name: bUseBurnIn
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_A0NZ6[0x7]
-    Offset: '0x29'
-    Size: '0x7'
-    Type: char
   - Name: BurnInClass
     Offset: '0x30'
     Size: '0x10'
-    Type: struct StringClassReference
+    Type: struct
   - Name: Settings
     Offset: '0x40'
     Size: '0x8'
@@ -112,17 +94,7 @@ LevelSequencePlayer:
     Offset: '0x608'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x38_IYWIK[0x38]
-    Offset: '0x610'
-    Size: '0x38'
-    Type: char
   ClassSize: '0x40'
   FullSize: '0x648'
   InheritedSize: '0x608'
   Super: MovieSceneSequencePlayer
-LevelSequenceSubtitlesInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

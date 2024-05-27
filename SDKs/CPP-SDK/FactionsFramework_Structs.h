@@ -5,66 +5,22 @@
 
 
 
+// Size 0x10
+struct FactionServicePopUpData
+{
+public:
+	class UClass*                                                Faction;                                           // 0x0(0x8)
+	class DataAsset*                                             PopUpMessageDesc;                                  // 0x8(0x8)
+};
+
+
 // Size 0x20
 struct CrewLeavingFaction
 {
 public:
-	struct Guid                                                  LeavingCrewId;                                     // 0x0(0x10)
+	struct                                                       LeavingCrewId;                                     // 0x0(0x10)
 	class UClass*                                                FactionToLeave;                                    // 0x10(0x8)
 	char                                                         FactionLeftReason;                                 // 0x18(0x1)
-	char                                                         pad0x7_BZUFB[0x7];                                 // 0x19(0x7)
-};
-
-
-// Size 0x30
-struct CrewFactionEntry
-{
-public:
-	struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	class UClass*                                                Faction;                                           // 0x10(0x8)
-	char                                                         EnemyFactionShipRangeState;                        // 0x18(0x1)
-	char                                                         pad0x3_LJC11[0x3];                                 // 0x19(0x3)
-	int                                                          CurrentLootValue;                                  // 0x1c(0x4)
-	int                                                          SandsOfFate;                                       // 0x20(0x4)
-	int                                                          Streak;                                            // 0x24(0x4)
-	double                                                       LeaveFactionCooldownTimeStamp;                     // 0x28(0x8)
-};
-
-
-// Size 0x68
-struct CrewFactionEntryData
-{
-public:
-	struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	struct Guid                                                  SessionId;                                         // 0x10(0x10)
-	class UClass*                                                Faction;                                           // 0x20(0x8)
-	int                                                          Streak;                                            // 0x28(0x4)
-	char                                                         pad0x4_8EA9Q[0x4];                                 // 0x2c(0x4)
-	double                                                       CooldownTimeStamp;                                 // 0x30(0x8)
-	bool                                                         IsInInvasion;                                      // 0x38(0x1)
-	char                                                         pad0x7_82OF3[0x7];                                 // 0x39(0x7)
-	TArray<struct Guid>                                          EligibleLootBootyIds;                              // 0x40(0x10)
-	int                                                          CurrentLootValue;                                  // 0x50(0x4)
-	char                                                         pad0x4_4I76P[0x4];                                 // 0x54(0x4)
-	TArray<bool>                                                 HasDisplayedPromptForLootLevel;                    // 0x58(0x10)
-};
-
-
-// Size 0x8
-struct FactionStreakLevelData
-{
-public:
-	int                                                          StreakLevel;                                       // 0x0(0x4)
-	int                                                          StreakCountThreshold;                              // 0x4(0x4)
-};
-
-
-// Size 0x18
-struct CrewJoinedFaction
-{
-public:
-	struct Guid                                                  JoiningCrewId;                                     // 0x0(0x10)
-	class UClass*                                                FactionJoined;                                     // 0x10(0x8)
 };
 
 
@@ -78,51 +34,12 @@ public:
 };
 
 
-// Size 0x10
-struct CompanyFactionAlignment
-{
-public:
-	class UClass*                                                Company;                                           // 0x0(0x8)
-	class UClass*                                                Faction;                                           // 0x8(0x8)
-};
-
-
-// Size 0x14
-struct CrewStreakLevelIncreased
-{
-public:
-	struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	int                                                          StreakLevel;                                       // 0x10(0x4)
-};
-
-
 // Size 0x18
-struct FactionJoinedTelemetryEvent
+struct FactionServicePostMigrationEvent
 {
 public:
-	struct Guid                                                  FactionSessionId;                                  // 0x0(0x10)
-	struct FName                                                 AlignedFactionName;                                // 0x10(0x8)
-};
-
-
-// Size 0x20
-struct FactionShipDefeatedEvent
-{
-public:
-	TArray<struct Guid>                                          VictoriousCrewIds;                                 // 0x0(0x10)
-	struct Guid                                                  DefeatedCrewId;                                    // 0x10(0x10)
-};
-
-
-// Size 0x30
-struct CrewFactionTelemetryData
-{
-public:
-	struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	struct Guid                                                  SessionId;                                         // 0x10(0x10)
-	struct FName                                                 Faction;                                           // 0x20(0x8)
-	int                                                          Streak;                                            // 0x28(0x4)
-	int                                                          SandsOfFate;                                       // 0x2c(0x4)
+	struct                                                       CrewId;                                            // 0x0(0x10)
+	class UClass*                                                Faction;                                           // 0x10(0x8)
 };
 
 
@@ -130,25 +47,29 @@ public:
 struct ShipDestroyedByBattleBoundsEvent
 {
 public:
-	struct Guid                                                  SunkShipCrewId;                                    // 0x0(0x10)
+	struct                                                       SunkShipCrewId;                                    // 0x0(0x10)
 };
 
 
-// Size 0x18
-struct FactionServicePostMigrationEvent
+// Size 0x30
+struct CrewFactionTelemetryData
 {
 public:
-	struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	class UClass*                                                Faction;                                           // 0x10(0x8)
+	struct                                                       CrewId;                                            // 0x0(0x10)
+	struct                                                       SessionId;                                         // 0x10(0x10)
+	struct FName                                                 Faction;                                           // 0x20(0x8)
+	int                                                          Streak;                                            // 0x28(0x4)
+	int                                                          SandsOfFate;                                       // 0x2c(0x4)
 };
 
 
-// Size 0x20
-struct CrewsSunkShipEvent
+// Size 0x1c
+struct FactionLeftTelemetryEvent
 {
 public:
-	TArray<struct Guid>                                          AttackingCrewIds;                                  // 0x0(0x10)
-	struct Guid                                                  SunkShipCrewId;                                    // 0x10(0x10)
+	struct                                                       FactionSessionId;                                  // 0x0(0x10)
+	struct FName                                                 AlignedFactionName;                                // 0x10(0x8)
+	char                                                         LeftReason;                                        // 0x18(0x1)
 };
 
 
@@ -156,10 +77,56 @@ public:
 struct CrewLeftFaction
 {
 public:
-	struct Guid                                                  LeavingCrewId;                                     // 0x0(0x10)
+	struct                                                       LeavingCrewId;                                     // 0x0(0x10)
 	class UClass*                                                FactionLeft;                                       // 0x10(0x8)
 	char                                                         FactionLeftReason;                                 // 0x18(0x1)
-	char                                                         pad0x7_0LNCJ[0x7];                                 // 0x19(0x7)
+};
+
+
+// Size 0x18
+struct CrewJoinedFaction
+{
+public:
+	struct                                                       JoiningCrewId;                                     // 0x0(0x10)
+	class UClass*                                                FactionJoined;                                     // 0x10(0x8)
+};
+
+
+// Size 0x8
+struct FactionStreakLevelData
+{
+public:
+	int                                                          StreakLevel;                                       // 0x0(0x4)
+	int                                                          StreakCountThreshold;                              // 0x4(0x4)
+};
+
+
+// Size 0x18
+struct CrewJoinedFactionSuccess
+{
+public:
+	struct                                                       JoiningCrewId;                                     // 0x0(0x10)
+	class UClass*                                                FactionJoined;                                     // 0x10(0x8)
+};
+
+
+// Size 0x14
+struct CrewStreakLevelIncreased
+{
+public:
+	struct                                                       CrewId;                                            // 0x0(0x10)
+	int                                                          StreakLevel;                                       // 0x10(0x4)
+};
+
+
+// Size 0x38
+struct FactionCrewAttackedPreviouslySunkCrewTelemetryEvent
+{
+public:
+	struct                                                       FactionSessionId;                                  // 0x0(0x10)
+	struct FName                                                 AlignedFactionName;                                // 0x10(0x8)
+	struct                                                       AttackingCrewId;                                   // 0x18(0x10)
+	struct                                                       SunkCrewId;                                        // 0x28(0x10)
 };
 
 
@@ -169,48 +136,73 @@ struct FactionWaitTimesData
 public:
 	char                                                         Faction;                                           // 0x0(0x1)
 	char                                                         SessionType;                                       // 0x1(0x1)
-	char                                                         pad0x6_KMT8P[0x6];                                 // 0x2(0x6)
-	char                                                         pad0x8_L6017[0x8];                                 // 0x8(0x8)
+	int64                                                        WaitTimeTicks;                                     // 0x8(0x8)
 };
 
 
-// Size 0x38
-struct FactionCrewAttackedPreviouslySunkCrewTelemetryEvent
+// Size 0x20
+struct FactionShipDefeatedEvent
 {
 public:
-	struct Guid                                                  FactionSessionId;                                  // 0x0(0x10)
-	struct FName                                                 AlignedFactionName;                                // 0x10(0x8)
-	struct Guid                                                  AttackingCrewId;                                   // 0x18(0x10)
-	struct Guid                                                  SunkCrewId;                                        // 0x28(0x10)
-};
-
-
-// Size 0x18
-struct CrewJoinedFactionSuccess
-{
-public:
-	struct Guid                                                  JoiningCrewId;                                     // 0x0(0x10)
-	class UClass*                                                FactionJoined;                                     // 0x10(0x8)
+	TArray<struct Guid>                                          VictoriousCrewIds;                                 // 0x0(0x10)
+	struct                                                       DefeatedCrewId;                                    // 0x10(0x10)
 };
 
 
 // Size 0x10
-struct FactionServicePopUpData
+struct CompanyFactionAlignment
 {
 public:
-	class UClass*                                                Faction;                                           // 0x0(0x8)
-	class DataAsset*                                             PopUpMessageDesc;                                  // 0x8(0x8)
+	class UClass*                                                Company;                                           // 0x0(0x8)
+	class UClass*                                                Faction;                                           // 0x8(0x8)
 };
 
 
-// Size 0x1c
-struct FactionLeftTelemetryEvent
+// Size 0x18
+struct FactionJoinedTelemetryEvent
 {
 public:
-	struct Guid                                                  FactionSessionId;                                  // 0x0(0x10)
+	struct                                                       FactionSessionId;                                  // 0x0(0x10)
 	struct FName                                                 AlignedFactionName;                                // 0x10(0x8)
-	char                                                         LeftReason;                                        // 0x18(0x1)
-	char                                                         pad0x3_DM2D1[0x3];                                 // 0x19(0x3)
+};
+
+
+// Size 0x68
+struct CrewFactionEntryData
+{
+public:
+	struct                                                       CrewId;                                            // 0x0(0x10)
+	struct                                                       SessionId;                                         // 0x10(0x10)
+	class UClass*                                                Faction;                                           // 0x20(0x8)
+	int                                                          Streak;                                            // 0x28(0x4)
+	double                                                       CooldownTimeStamp;                                 // 0x30(0x8)
+	bool                                                         IsInInvasion;                                      // 0x38(0x1)
+	TArray<struct Guid>                                          EligibleLootBootyIds;                              // 0x40(0x10)
+	int                                                          CurrentLootValue;                                  // 0x50(0x4)
+	TArray<bool>                                                 HasDisplayedPromptForLootLevel;                    // 0x58(0x10)
+};
+
+
+// Size 0x20
+struct CrewsSunkShipEvent
+{
+public:
+	TArray<struct Guid>                                          AttackingCrewIds;                                  // 0x0(0x10)
+	struct                                                       SunkShipCrewId;                                    // 0x10(0x10)
+};
+
+
+// Size 0x30
+struct CrewFactionEntry
+{
+public:
+	struct                                                       CrewId;                                            // 0x0(0x10)
+	class UClass*                                                Faction;                                           // 0x10(0x8)
+	char                                                         EnemyFactionShipRangeState;                        // 0x18(0x1)
+	int                                                          CurrentLootValue;                                  // 0x1c(0x4)
+	int                                                          SandsOfFate;                                       // 0x20(0x4)
+	int                                                          Streak;                                            // 0x24(0x4)
+	double                                                       LeaveFactionCooldownTimeStamp;                     // 0x28(0x8)
 };
 
 
@@ -218,7 +210,7 @@ public:
 struct FactionStreakIncreasedTelemetryEvent
 {
 public:
-	struct CrewFactionTelemetryData                              CrewFactionData;                                   // 0x0(0x30)
+	struct                                                       CrewFactionData;                                   // 0x0(0x30)
 };
 
 

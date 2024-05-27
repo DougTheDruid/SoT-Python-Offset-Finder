@@ -1,4 +1,224 @@
 {
+  "ConsoleSettings": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "MaxScrollbackSize",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ManualAutoCompleteList",
+        "Type": "TArray<struct AutoCompleteCommand>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "AutoCompleteMapPaths",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "GameNetworkManagerSettings": {
+    "Super": "Object",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "MinDynamicBandwidth",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MaxDynamicBandwidth",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "TotalNetBandwidth",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "BadPingThreshold",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "bIsStandbyCheckingEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "StandbyRxCheatTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "StandbyTxCheatTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "PercentMissingForRxStandby",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "PercentMissingForTxStandby",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "PercentForBadPing",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
+        "Name": "JoinInProgressStandbyWaitTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "GameMapsSettings": {
+    "Super": "Object",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "EditorStartupMap",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "LocalMapOptions",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "TransitionMap",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "bUseSplitscreen",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "TwoPlayerSplitscreenLayout",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x59"
+      },
+      {
+        "Name": "ThreePlayerSplitscreenLayout",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x5a"
+      },
+      {
+        "Name": "GameInstanceClass",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "GameDefaultMap",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "ServerDefaultMap",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "GlobalDefaultGameMode",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "GlobalDefaultServerGameMode",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0xa0"
+      }
+    ]
+  },
+  "HudSettings": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "bShowHUD",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "DebugDisplay",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "GameSessionSettings": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MaxSpectators",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MaxPlayers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "bRequiresPushToTalk",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "GeneralProjectSettings": {
     "Super": "Object",
     "FullSize": "0x110",
@@ -49,7 +269,7 @@
       },
       {
         "Name": "ProjectID",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x98"
       },
@@ -76,269 +296,6 @@
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0xd8"
-      }
-    ]
-  },
-  "GameNetworkManagerSettings": {
-    "Super": "Object",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "MinDynamicBandwidth",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MaxDynamicBandwidth",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "TotalNetBandwidth",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "BadPingThreshold",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "bIsStandbyCheckingEnabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x3_NZA9M[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x39"
-      },
-      {
-        "Name": "StandbyRxCheatTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "StandbyTxCheatTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "PercentMissingForRxStandby",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "PercentMissingForTxStandby",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "PercentForBadPing",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4c"
-      },
-      {
-        "Name": "JoinInProgressStandbyWaitTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "pad0x4_2SUGA[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x54"
-      }
-    ]
-  },
-  "GameSessionSettings": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MaxSpectators",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MaxPlayers",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "bRequiresPushToTalk",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x7_Q13CV[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x31"
-      }
-    ]
-  },
-  "GeneralEngineSettings": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "GameMapsSettings": {
-    "Super": "Object",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "EditorStartupMap",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "LocalMapOptions",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "TransitionMap",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "bUseSplitscreen",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "TwoPlayerSplitscreenLayout",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x59"
-      },
-      {
-        "Name": "ThreePlayerSplitscreenLayout",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x5a"
-      },
-      {
-        "Name": "pad0x5_WAJ4H[0x5]",
-        "Type": "char",
-        "Size": "0x5",
-        "Offset": "0x5b"
-      },
-      {
-        "Name": "GameInstanceClass",
-        "Type": "struct StringClassReference",
-        "Size": "0x10",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "GameDefaultMap",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "ServerDefaultMap",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "GlobalDefaultGameMode",
-        "Type": "struct StringClassReference",
-        "Size": "0x10",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "GlobalDefaultServerGameMode",
-        "Type": "struct StringClassReference",
-        "Size": "0x10",
-        "Offset": "0xa0"
-      }
-    ]
-  },
-  "HudSettings": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "bShowHUD",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x7_CSFER[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x29"
-      },
-      {
-        "Name": "DebugDisplay",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "ConsoleSettings": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "MaxScrollbackSize",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_J9SOK[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "ManualAutoCompleteList",
-        "Type": "TArray<struct AutoCompleteCommand>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "AutoCompleteMapPaths",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x40"
       }
     ]
   },

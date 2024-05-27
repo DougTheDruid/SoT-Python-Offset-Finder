@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 CleanlinessComponent:
   Attributes:
-  - Name: pad0x10_7IAGR[0x10]
-    Offset: '0xc8'
-    Size: '0x10'
-    Type: char
   - Name: DirtinessStrengthToMaterialStrength
     Offset: '0xd8'
     Size: '0x8'
@@ -13,7 +9,7 @@ CleanlinessComponent:
   - Name: CleanlinessInfo
     Offset: '0xe0'
     Size: '0xc'
-    Type: struct CleanlinessInfo
+    Type: struct
   - Name: DirtinessDecayRatePerSecond
     Offset: '0xec'
     Size: '0x4'
@@ -22,23 +18,7 @@ CleanlinessComponent:
     Offset: '0xf0'
     Size: '0x4'
     Type: float
-  - Name: pad0x54_JD49Y[0x54]
-    Offset: '0xf4'
-    Size: '0x54'
-    Type: char
   ClassSize: '0x80'
   FullSize: '0x148'
   InheritedSize: '0xc8'
   Super: ActorComponent
-CleanlinessInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-CleanlinessTransferInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

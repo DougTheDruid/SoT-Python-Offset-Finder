@@ -14,43 +14,12 @@ public:
 };
 
 
-// Size 0x38
-struct AchievementUpdatedEvent
-{
-public:
-	struct FString                                               AchievementId;                                     // 0x0(0x10)
-	bool                                                         Successful;                                        // 0x14(0x1)
-	char                                                         pad0x3_WNI43[0x3];                                 // 0x15(0x3)
-	struct FString                                               Reason;                                            // 0x18(0x10)
-	struct FString                                               Platform;                                          // 0x28(0x10)
-};
-
-
 // Size 0x18
 struct InAppPurchaseProductRequest
 {
 public:
 	struct FString                                               ProductIdentifier;                                 // 0x0(0x10)
 	bool                                                         bIsConsumable;                                     // 0x10(0x1)
-	char                                                         pad0x7_5N28D[0x7];                                 // 0x11(0x7)
-};
-
-
-// Size 0x18
-struct NamedInterfaceDef
-{
-public:
-	struct FName                                                 InterfaceName;                                     // 0x0(0x8)
-	struct FString                                               InterfaceClassName;                                // 0x8(0x10)
-};
-
-
-// Size 0x20
-struct InAppPurchaseRestoreInfo
-{
-public:
-	struct FString                                               Identifier;                                        // 0x0(0x10)
-	struct FString                                               ReceiptData;                                       // 0x10(0x10)
 };
 
 
@@ -64,11 +33,40 @@ public:
 	struct FString                                               FormattedPrice;                                    // 0x30(0x10)
 	struct FString                                               FormattedBasePrice;                                // 0x40(0x10)
 	bool                                                         IsOnSale;                                          // 0x50(0x1)
-	char                                                         pad0x7_TIMHN[0x7];                                 // 0x51(0x7)
-	struct DateTime                                              SaleEndDate;                                       // 0x58(0x8)
+	struct                                                       SaleEndDate;                                       // 0x58(0x8)
 	struct FString                                               ImageUri;                                          // 0x60(0x10)
 	struct FString                                               CurrencyCode;                                      // 0x70(0x10)
 	TArray<String>                                               MetaTags;                                          // 0x80(0x10)
+};
+
+
+// Size 0x18
+struct NamedInterfaceDef
+{
+public:
+	struct FName                                                 InterfaceName;                                     // 0x0(0x8)
+	struct FString                                               InterfaceClassName;                                // 0x8(0x10)
+};
+
+
+// Size 0x38
+struct AchievementUpdatedEvent
+{
+public:
+	struct FString                                               AchievementId;                                     // 0x0(0x10)
+	uint32                                                       Progress;                                          // 0x10(0x4)
+	bool                                                         Successful;                                        // 0x14(0x1)
+	struct FString                                               Reason;                                            // 0x18(0x10)
+	struct FString                                               Platform;                                          // 0x28(0x10)
+};
+
+
+// Size 0x20
+struct InAppPurchaseRestoreInfo
+{
+public:
+	struct FString                                               Identifier;                                        // 0x0(0x10)
+	struct FString                                               ReceiptData;                                       // 0x10(0x10)
 };
 
 

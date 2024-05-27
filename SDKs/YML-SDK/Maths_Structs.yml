@@ -5,11 +5,11 @@ FixedStepInterpCurvePointVector2D:
   - Name: OutVal
     Offset: '0x0'
     Size: '0x8'
-    Type: struct Vector2D
+    Type: struct
   - Name: Tangent
     Offset: '0x8'
     Size: '0x8'
-    Type: struct Vector2D
+    Type: struct
   ClassSize: '0x10'
 FixedStepInterpCurveVector2D:
   Attributes:
@@ -25,18 +25,7 @@ FixedStepInterpCurveVector2D:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_Q109G[0x3]
-    Offset: '0x15'
-    Size: '0x3'
-    Type: char
   ClassSize: '0x18'
-GrabBag:
-  Attributes:
-  - Name: pad0x20_17ZKO[0x20]
-    Offset: '0x0'
-    Size: '0x20'
-    Type: char
-  ClassSize: '0x20'
 InertialSmoothedFloat:
   Attributes:
   - Name: AccelerationMagnitude
@@ -61,11 +50,11 @@ OrientedPoint:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: Rotation
     Offset: '0xc'
     Size: '0xc'
-    Type: struct Rotator
+    Type: struct
   ClassSize: '0x18'
 Pendulum:
   Attributes:
@@ -81,10 +70,6 @@ Pendulum:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_1LAZI[0x3]
-    Offset: '0x9'
-    Size: '0x3'
-    Type: char
   - Name: RPM
     Offset: '0xc'
     Size: '0x4'
@@ -109,21 +94,17 @@ Pendulum:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_UYE8Z[0xc]
-    Offset: '0x24'
-    Size: '0xc'
-    Type: char
   - Name: InterpolationAsTransform
     Offset: '0x30'
     Size: '0x30'
-    Type: struct Transform
+    Type: struct
   ClassSize: '0x60'
 RotationUpdateResult:
   Attributes:
   - Name: UpdatedRotation
     Offset: '0x0'
     Size: '0xc'
-    Type: struct Rotator
+    Type: struct
   - Name: SpinAngle
     Offset: '0xc'
     Size: '0x4'
@@ -147,24 +128,17 @@ SpatialOffset:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_0J2D2[0x3]
-    Offset: '0x5'
-    Size: '0x3'
-    Type: char
   ClassSize: '0x8'
-TimedBuffer:
-  Attributes:
-  - Name: pad0x18_0AKPI[0x18]
-    Offset: '0x0'
-    Size: '0x18'
-    Type: char
-  ClassSize: '0x18'
 WeightedProbabilityRange:
   Attributes:
-  - Name: pad0x10_EZMAS[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
+  - Name: Min
+    Offset: '0x8'
+    Size: '0x4'
+    Type: uint32
+  - Name: Max
+    Offset: '0xc'
+    Size: '0x4'
+    Type: uint32
   - Name: Weights
     Offset: '0x10'
     Size: '0x10'
@@ -172,10 +146,6 @@ WeightedProbabilityRange:
   ClassSize: '0x20'
 WeightedProbabilityRangeOfRanges:
   Attributes:
-  - Name: pad0x20_2ERWO[0x20]
-    Offset: '0x0'
-    Size: '0x20'
-    Type: char
   - Name: SubRanges
     Offset: '0x20'
     Size: '0x10'

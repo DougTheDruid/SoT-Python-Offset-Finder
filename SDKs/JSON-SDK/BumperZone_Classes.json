@@ -12,12 +12,6 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x2f_ILD0M[0x2f]",
-        "Type": "char",
-        "Size": "0x2f",
-        "Offset": "0x3c9"
-      },
-      {
         "Name": "BumperZoneComponent",
         "Type": "class BoxComponent*",
         "Size": "0x8",
@@ -34,12 +28,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x408"
-      },
-      {
-        "Name": "pad0x3_G6I38[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x409"
       },
       {
         "Name": "AngularImpulse",
@@ -60,12 +48,6 @@
         "Offset": "0x411"
       },
       {
-        "Name": "pad0x2_TZVR0[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x412"
-      },
-      {
         "Name": "MinWheelTurbulence",
         "Type": "float",
         "Size": "0x4",
@@ -76,12 +58,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x418"
-      },
-      {
-        "Name": "pad0x4_ELWIE[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x41c"
       }
     ]
   },

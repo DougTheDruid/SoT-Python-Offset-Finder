@@ -16,17 +16,6 @@
       }
     ]
   },
-  "DebugErrorHappeningEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_BWTPI[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "DebugMenuButtonShortcut": {
     "ClassSize": "0x40",
     "Attributes": [
@@ -59,12 +48,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x34"
-      },
-      {
-        "Name": "pad0xb_BEDHC[0xb]",
-        "Type": "char",
-        "Size": "0xb",
-        "Offset": "0x35"
       }
     ]
   },
@@ -106,12 +89,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x32"
-      },
-      {
-        "Name": "pad0x5_7MA1U[0x5]",
-        "Type": "char",
-        "Size": "0x5",
-        "Offset": "0x33"
       }
     ]
   },

@@ -6,24 +6,19 @@
 #include "ActionStateMachine_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ActionStateMachineComponentTestFunctions: public BlueprintFunctionLibrary
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class CustomClientValidityCheckCallback: public Object
 {
 public:
+	bool                                                         ShouldPassClientValidation;                        // 0x28(0x1)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ActionStateMachineInterface: public Interface
+// Size 0x790 (Full Size[0x858] - InheritedSize[0xc8]
+class ActionStateMachineComponent: public ActorComponent
 {
 public:
-};
-
-
-// Size 0x0 (Full Size[0x3c8] - InheritedSize[0x3c8]
-class ActionStateCreatorDefinition: public Actor
-{
-public:
+	multicastinlinedelegate                                      OnActionChangedOnTrack;                            // 0xe0(0x10)
 };
 
 
@@ -33,51 +28,6 @@ class ActionStatePriorityTableData: public DataAsset
 public:
 	TArray<struct ActionStatePriorityRelationship>               StateDefaultValue;                                 // 0x28(0x10)
 	TArray<struct ActionStatePriorityList>                       PriorityTableEntry;                                // 0x38(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ActionStatePriorityTableUtility: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ActionStateInitialStateCreatorDefinition: public Object
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class CustomClientValidityCheckCallback: public Object
-{
-public:
-	bool                                                         ShouldPassClientValidation;                        // 0x28(0x1)
-	char                                                         pad0x7_R58GV[0x7];                                 // 0x29(0x7)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SerialisedActionStateConstructionInfoTestFunctions: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ActionStateId: public Object
-{
-public:
-};
-
-
-// Size 0x790 (Full Size[0x858] - InheritedSize[0xc8]
-class ActionStateMachineComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x790_AFIRB[0x790];                             // 0xc8(0x790)
 };
 
 
@@ -92,58 +42,13 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NullActionStateId: public ActionStateId
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CustomClientValidityActionStateId: public ActionStateId
-{
-public:
-};
-
-
-// Size 0x18 (Full Size[0x3e0] - InheritedSize[0x3c8]
-class TestActionStateCreatorDefinition: public ActionStateCreatorDefinition
-{
-public:
-	char                                                         pad0x18_QRO9R[0x18];                               // 0x3c8(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TestActionStateId2: public ActionStateId
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CustomClientValidityActionState2Id: public ActionStateId
-{
-public:
-};
-
-
 // Size 0x48 (Full Size[0x8a0] - InheritedSize[0x858]
 class SelfInitialisingActionStateMachineComponent: public ActionStateMachineComponent
 {
 public:
-	char                                                         pad0x8_VWBFB[0x8];                                 // 0x858(0x8)
 	class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x860(0x8)
 	class UClass*                                                ActionStateCreatorDefinition;                      // 0x868(0x8)
 	class UClass*                                                ActionStateInitialStateCreatorDefinition;          // 0x870(0x8)
-	char                                                         pad0x28_UMBDT[0x28];                               // 0x878(0x28)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TestActionStateId: public ActionStateId
-{
-public:
 };
 
 

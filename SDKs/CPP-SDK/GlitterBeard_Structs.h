@@ -5,13 +5,11 @@
 
 
 
-// Size 0x10
-struct FinaleReplicationState
+// Size 0x4
+struct GlitterBeardVFXTransitionCompletedEvent
 {
 public:
-	char                                                         State;                                             // 0x0(0x1)
-	char                                                         pad0x7_IEA2F[0x7];                                 // 0x1(0x7)
-	class Object*                                                TargetEnsemble;                                    // 0x8(0x8)
+	int                                                          Index;                                             // 0x0(0x4)
 };
 
 
@@ -24,58 +22,11 @@ public:
 
 
 // Size 0x10
-struct GlitterbeardSessionBeginTelemetryEvent
+struct FinaleReplicationState
 {
 public:
-	char                                                         pad0x10_NML6J[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x4
-struct GlitterBeardVFXTransitionCompletedEvent
-{
-public:
-	int                                                          Index;                                             // 0x0(0x4)
-};
-
-
-// Size 0x10
-struct GlitterbeardPuzzleCancelTelemetryEvent
-{
-public:
-	char                                                         pad0x10_LB11A[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct GlitterbeardPuzzleUnlockTelemetryEvent
-{
-public:
-	char                                                         pad0x10_83B7B[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x20
-struct GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent
-{
-public:
-	char                                                         pad0x20_35UT1[0x20];                               // 0x0(0x20)
-};
-
-
-// Size 0x10
-struct GlitterbeardSessionEndTelemetryEvent
-{
-public:
-	char                                                         pad0x10_DI5RJ[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct GlitterbeardPlayerPuzzleUnlockSuccessTelemetryEvent
-{
-public:
-	char                                                         pad0x10_FXTFC[0x10];                               // 0x0(0x10)
+	char                                                         State;                                             // 0x0(0x1)
+	class Object*                                                TargetEnsemble;                                    // 0x8(0x8)
 };
 
 
@@ -85,7 +36,6 @@ struct ChangeGlitterBeardVFXStateEvent
 public:
 	int                                                          Index;                                             // 0x0(0x4)
 	char                                                         Target;                                            // 0x4(0x1)
-	char                                                         pad0x3_A6CP7[0x3];                                 // 0x5(0x3)
 };
 
 

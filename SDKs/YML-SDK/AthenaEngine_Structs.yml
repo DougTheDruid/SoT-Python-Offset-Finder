@@ -11,30 +11,72 @@ ActorComponentSelector:
     Size: '0x8'
     Type: class ActorComponent*
   ClassSize: '0x10'
-AthenaAsyncAssetLoaderWrapper:
+AdaptiveTriggerEffectMode_Feedback:
   Attributes:
-  - Name: pad0x18_CQHDI[0x18]
+  - Name: Position
     Offset: '0x0'
-    Size: '0x18'
-    Type: char
-  ClassSize: '0x18'
+    Size: '0x1'
+    Type: byte
+  - Name: Strength
+    Offset: '0x1'
+    Size: '0x1'
+    Type: byte
+  - Name: UseTriggerEffectForThreshold
+    Offset: '0x2'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x3'
+AdaptiveTriggerEffectMode_Vibration:
+  Attributes:
+  - Name: Position
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: Frequency
+    Offset: '0x1'
+    Size: '0x1'
+    Type: byte
+  - Name: Amplitude
+    Offset: '0x2'
+    Size: '0x1'
+    Type: byte
+  - Name: UseTriggerEffectForThreshold
+    Offset: '0x3'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x4'
+AdaptiveTriggerEffectMode_Weapon:
+  Attributes:
+  - Name: StartPosition
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: EndPosition
+    Offset: '0x1'
+    Size: '0x1'
+    Type: byte
+  - Name: Strength
+    Offset: '0x2'
+    Size: '0x1'
+    Type: byte
+  - Name: UseTriggerEffectForThreshold
+    Offset: '0x3'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x4'
 BoxedRpc:
   Attributes:
-  - Name: pad0x8_6X9XD[0x8]
-    Offset: '0x0'
-    Size: '0x8'
-    Type: char
   - Name: Type
     Offset: '0x8'
     Size: '0x8'
     Type: class ScriptStruct*
-  ClassSize: '0x10'
+  ClassSize: '0x18'
 ConfigurableStructureInstanceWrapper:
   Attributes:
   - Name: Value
     Offset: '0x0'
     Size: '0x20'
-    Type: struct UserDefinedStructWithSerialisableValue
+    Type: struct
   ClassSize: '0x20'
 EventCancelForceFeedback:
   Attributes:
@@ -47,13 +89,6 @@ EventCancelForceFeedback:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x10'
-EventMeshAssigned:
-  Attributes:
-  - Name: pad0x1_KWLKF[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
 EventTriggerForceFeedback:
   Attributes:
   - Name: ForceFeedbackEffect
@@ -64,18 +99,10 @@ EventTriggerForceFeedback:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_JUXHA[0x3]
-    Offset: '0x9'
-    Size: '0x3'
-    Type: char
   - Name: Tag
     Offset: '0xc'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_GMWFJ[0x4]
-    Offset: '0x14'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x18'
 InlineUserDefinedStructDetails:
   Attributes:
@@ -112,29 +139,17 @@ PlayModeDefiniton:
   ClassSize: '0x28'
 PlaySoundRpc:
   Attributes:
-  - Name: pad0x10_0Y932[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
   - Name: WwiseEvent
-    Offset: '0x10'
+    Offset: '0x18'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: PlayOnTarget
-    Offset: '0x18'
+    Offset: '0x20'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_IZZUV[0x7]
-    Offset: '0x19'
-    Size: '0x7'
-    Type: char
-  ClassSize: '0x20'
+  ClassSize: '0x28'
 SerialisedRpc:
   Attributes:
-  - Name: pad0x18_DWXH8[0x18]
-    Offset: '0x0'
-    Size: '0x18'
-    Type: char
   - Name: ContentsType
     Offset: '0x18'
     Size: '0x8'
@@ -153,6 +168,10 @@ StringAssetClassPair:
     Offset: '0x0'
     Size: '0x10'
     Type: struct FString
+  - Name: AssetClass
+    Offset: '0x10'
+    Size: '0x20'
+    Type: assetclass
   - Name: FeatureOverrides
     Offset: '0x30'
     Size: '0x10'
@@ -164,10 +183,10 @@ StringAssetClassPairFeatureOverride:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x20_MSHH3[0x20]
+  - Name: AssetClass
     Offset: '0x8'
     Size: '0x20'
-    Type: char
+    Type: assetclass
   ClassSize: '0x28'
 UserDefinedStructWithSerialisableValue:
   Attributes:
@@ -175,8 +194,4 @@ UserDefinedStructWithSerialisableValue:
     Offset: '0x0'
     Size: '0x8'
     Type: class ScriptStruct*
-  - Name: pad0x18_ML6J9[0x18]
-    Offset: '0x8'
-    Size: '0x18'
-    Type: char
   ClassSize: '0x20'

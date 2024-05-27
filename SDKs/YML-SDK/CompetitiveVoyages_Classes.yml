@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 CompetitiveVoyageItemRelocationVolume:
   Attributes:
-  - Name: pad0x8_ZWTDA[0x8]
-    Offset: '0x3c8'
-    Size: '0x8'
-    Type: char
   - Name: SceneComponentRoot
     Offset: '0x3d0'
     Size: '0x8'
@@ -22,34 +18,16 @@ CompetitiveVoyageItemRelocationVolume:
     Offset: '0x3f0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x25f_TQF5G[0x25f]
-    Offset: '0x3f1'
-    Size: '0x25f'
-    Type: char
   ClassSize: '0x288'
   FullSize: '0x650'
   InheritedSize: '0x3c8'
   Super: Actor
-CompetitiveVoyageLockComponent:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x368'
-  InheritedSize: '0x368'
-  Super: LockComponent
 CompetitiveVoyageVoteConsumerBase:
   Attributes:
-  - Name: pad0x10_RZSXA[0x10]
-    Offset: '0x30'
-    Size: '0x10'
-    Type: char
   - Name: Validator
     Offset: '0x40'
     Size: '0x8'
     Type: class CompetitiveVoyageVoteValidatorBase*
-  - Name: pad0x48_QB81H[0x48]
-    Offset: '0x48'
-    Size: '0x48'
-    Type: char
   - Name: OwningActor
     Offset: '0x90'
     Size: '0x8'
@@ -62,10 +40,6 @@ CompetitiveVoyageVoteConsumerBase:
     Offset: '0xa0'
     Size: '0x10'
     Type: TArray<struct CrewMemberVotes>
-  - Name: pad0x18_BWRMB[0x18]
-    Offset: '0xb0'
-    Size: '0x18'
-    Type: char
   ClassSize: '0x98'
   FullSize: '0xc8'
   InheritedSize: '0x30'
@@ -80,10 +54,6 @@ CompetitiveVoyageVoteValidatorBase:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x5c_MQO6G[0x5c]
-    Offset: '0x44'
-    Size: '0x5c'
-    Type: char
   - Name: Consumer
     Offset: '0xa0'
     Size: '0x8'
@@ -92,10 +62,6 @@ CompetitiveVoyageVoteValidatorBase:
     Offset: '0xa8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_0B9YE[0x4]
-    Offset: '0xac'
-    Size: '0x4'
-    Type: char
   - Name: OwningActor
     Offset: '0xb0'
     Size: '0x8'
@@ -106,10 +72,6 @@ CompetitiveVoyageVoteValidatorBase:
   Super: VoteValidatorInlineBase
 CompetitiveVoyagesService:
   Attributes:
-  - Name: pad0x108_VM960[0x108]
-    Offset: '0x3c8'
-    Size: '0x108'
-    Type: char
   - Name: MainVoyageCrews
     Offset: '0x4d0'
     Size: '0x10'
@@ -118,28 +80,14 @@ CompetitiveVoyagesService:
     Offset: '0x4e0'
     Size: '0x8'
     Type: class CompetitiveVoyagesServiceParams*
-  - Name: pad0x2a0_9RPFD[0x2a0]
-    Offset: '0x4e8'
-    Size: '0x2a0'
-    Type: char
   - Name: VoyageEventItems
     Offset: '0x788'
     Size: '0x10'
     Type: TArray<struct CompetitiveVoyageEventItem>
-  - Name: pad0x118_LMBLO[0x118]
-    Offset: '0x798'
-    Size: '0x118'
-    Type: char
   ClassSize: '0x4e8'
   FullSize: '0x8b0'
   InheritedSize: '0x3c8'
   Super: Actor
-CompetitiveVoyagesServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 CompetitiveVoyagesServiceParams:
   Attributes:
   - Name: OptInVoyageDesc
@@ -157,11 +105,11 @@ CompetitiveVoyagesServiceParams:
   - Name: RespawnConfig
     Offset: '0x40'
     Size: '0x108'
-    Type: struct CompetitiveVoyagesRespawnConfig
+    Type: struct
   - Name: ShipSpeedCurseModifyingValues
     Offset: '0x148'
     Size: '0xc'
-    Type: struct ShipSpeedCurseModifyingValues
+    Type: struct
   - Name: OptOutDelay
     Offset: '0x154'
     Size: '0x4'
@@ -169,55 +117,21 @@ CompetitiveVoyagesServiceParams:
   - Name: SinkShipWithVoyageItemAchievementStat
     Offset: '0x158'
     Size: '0x4'
-    Type: struct PlayerStat
-  - Name: pad0x4_W69N7[0x4]
-    Offset: '0x15c'
-    Size: '0x4'
-    Type: char
+    Type: struct
   ClassSize: '0x138'
   FullSize: '0x160'
   InheritedSize: '0x28'
   Super: DataAsset
-DiscombobulatedStatus:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x30'
-  InheritedSize: '0x30'
-  Super: StatusBase
-MigrationDuplicatedActor:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x3c8'
-  InheritedSize: '0x3c8'
-  Super: Actor
-SetCrewOptInNPCDataStep:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x98'
-  InheritedSize: '0x98'
-  Super: TaleQuestStep
 SetCrewOptInNPCDataStepDesc:
   Attributes:
   - Name: Actor
     Offset: '0x80'
     Size: '0x30'
-    Type: struct QuestVariableActor
+    Type: struct
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
-SkullOfSirenSongDamagerType:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: DamagerType
-SonicStatus:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x30'
-  InheritedSize: '0x30'
-  Super: StatusBase
 StopCompetitiveVoyageVoteConsumer:
   Attributes:
   - Name: CompetitiveVoyageCastOptOutVoteText
@@ -246,64 +160,30 @@ StopCompetitiveVoyageVoteValidator:
     Offset: '0xb8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_4A1M5[0x7]
-    Offset: '0xb9'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x8'
   FullSize: '0xc0'
   InheritedSize: '0xb8'
   Super: CompetitiveVoyageVoteValidatorBase
-TaleQuestCompetitiveVoyagesFunctionStepLibrary:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x180'
-  InheritedSize: '0x180'
-  Super: TaleQuestFunctionStepLibrary
 TaleQuestCompetitiveVoyagesService:
   Attributes:
-  - Name: pad0x88_WWG6O[0x88]
-    Offset: '0x60'
-    Size: '0x88'
-    Type: char
   - Name: PhasedMarkerItems
     Offset: '0xe8'
     Size: '0x10'
     Type: TArray<struct PhasedMarkerItem>
-  - Name: pad0x160_312OW[0x160]
-    Offset: '0xf8'
-    Size: '0x160'
-    Type: char
   ClassSize: '0x1f8'
   FullSize: '0x258'
   InheritedSize: '0x60'
   Super: TaleQuestService
-TaleQuestCompetitiveVoyagesServiceDesc:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: TaleQuestServiceDesc
-WaitForCompVoyageOptInStep:
-  Attributes:
-  - Name: pad0x58_MD5BY[0x58]
-    Offset: '0x98'
-    Size: '0x58'
-    Type: char
-  ClassSize: '0x58'
-  FullSize: '0xf0'
-  InheritedSize: '0x98'
-  Super: TaleQuestStep
 WaitForCompVoyageOptInStepDesc:
   Attributes:
   - Name: NPCOnShipManager
     Offset: '0x80'
     Size: '0x30'
-    Type: struct QuestVariableGuid
+    Type: struct
   - Name: NPCActor
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct QuestVariableActor
+    Type: struct
   ClassSize: '0x60'
   FullSize: '0xe0'
   InheritedSize: '0x80'

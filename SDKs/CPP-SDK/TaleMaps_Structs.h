@@ -10,23 +10,6 @@ struct ChecklistActionProgressTracker
 {
 public:
 	class ChecklistActionData*                                   ActionData;                                        // 0x0(0x8)
-	char                                                         pad0x8_5QQT3[0x8];                                 // 0x8(0x8)
-};
-
-
-// Size 0x30
-struct TaleQuestVariableMapMarkType
-{
-public:
-	char                                                         pad0x30_Y9Y7B[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x30
-struct TaleQuestVariableTreasureMapItemDescType
-{
-public:
-	char                                                         pad0x30_2SASF[0x30];                               // 0x0(0x30)
 };
 
 
@@ -35,7 +18,6 @@ struct TaleQuestChecklistItem
 {
 public:
 	TArray<struct ChecklistActionProgressTracker>                ChecklistActions;                                  // 0x0(0x10)
-	char                                                         pad0x40_8NSHM[0x40];                               // 0x10(0x40)
 };
 
 

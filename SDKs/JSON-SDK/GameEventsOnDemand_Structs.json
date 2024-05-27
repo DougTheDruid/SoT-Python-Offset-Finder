@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -13,23 +13,6 @@
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x8_0SRUI[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "AdvertiseGameEventOnDemandAvailabilityTelemetryEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "GameEventAvailability",
-        "Type": "struct GameEventAvailabilityModel",
-        "Size": "0x20",
-        "Offset": "0x0"
       }
     ]
   },
@@ -53,12 +36,17 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x11"
-      },
+      }
+    ]
+  },
+  "AdvertiseGameEventOnDemandAvailabilityTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
       {
-        "Name": "pad0x6_RQ0EY[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x12"
+        "Name": "GameEventAvailability",
+        "Type": "struct",
+        "Size": "0x20",
+        "Offset": "0x0"
       }
     ]
   },

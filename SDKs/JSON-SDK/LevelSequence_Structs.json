@@ -1,94 +1,4 @@
 {
-  "LevelSequencePlaybackSettings": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x28_8T3M4[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "BoundActorProxy": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_BIUVA[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "LevelSequenceObjectReference": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_U1N06[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "LevelSequenceObjectReferenceMap": {
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "pad0xa0_NZ4QA[0xa0]",
-        "Type": "char",
-        "Size": "0xa0",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "LevelSequenceSnapshotSettings": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ZeroPadAmount",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_191ID[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "FrameRate",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "LevelSequenceObject": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "pad0x20_QF6X4[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ComponentName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x8_JTLN3[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "LevelSequencePlayerSnapshot": {
     "ClassSize": "0x90",
     "Attributes": [
@@ -105,12 +15,6 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_E6TS6[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
         "Name": "CurrentShotName",
         "Type": "struct FText",
         "Size": "0x38",
@@ -123,12 +27,6 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x4_L7WMA[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x7c"
-      },
-      {
         "Name": "CameraComponent",
         "Type": "class CameraComponent*",
         "Size": "0x8",
@@ -136,9 +34,49 @@
       },
       {
         "Name": "Settings",
-        "Type": "struct LevelSequenceSnapshotSettings",
+        "Type": "struct",
         "Size": "0x8",
         "Offset": "0x88"
+      }
+    ]
+  },
+  "LevelSequenceObject": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "ObjectOrOwner",
+        "Type": "lazyobject",
+        "Size": "0x1c",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ComponentName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "CachedComponent",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "LevelSequenceSnapshotSettings": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ZeroPadAmount",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FrameRate",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },

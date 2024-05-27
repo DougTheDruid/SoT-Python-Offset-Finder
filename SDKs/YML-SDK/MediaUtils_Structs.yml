@@ -5,15 +5,11 @@ MediaPlayerOptions:
   - Name: Tracks
     Offset: '0x0'
     Size: '0x1c'
-    Type: struct MediaPlayerTrackOptions
-  - Name: pad0x4_D2CVZ[0x4]
-    Offset: '0x1c'
-    Size: '0x4'
-    Type: char
+    Type: struct
   - Name: SeekTime
     Offset: '0x20'
     Size: '0x8'
-    Type: struct Timespan
+    Type: struct
   - Name: PlayOnOpen
     Offset: '0x28'
     Size: '0x1'
@@ -22,10 +18,6 @@ MediaPlayerOptions:
     Offset: '0x29'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_FQO9W[0x6]
-    Offset: '0x2a'
-    Size: '0x6'
-    Type: char
   ClassSize: '0x30'
 MediaPlayerTrackOptions:
   Attributes:

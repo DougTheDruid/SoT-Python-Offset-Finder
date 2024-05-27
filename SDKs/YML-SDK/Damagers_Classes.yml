@@ -18,10 +18,6 @@ RadialDamagerComponent:
     Offset: '0xd4'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_QGE7V[0x8]
-    Offset: '0xd8'
-    Size: '0x8'
-    Type: char
   - Name: DamagerType
     Offset: '0xe0'
     Size: '0x8'
@@ -30,28 +26,16 @@ RadialDamagerComponent:
     Offset: '0xe8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_00R4Z[0x3]
-    Offset: '0xe9'
-    Size: '0x3'
-    Type: char
   - Name: LocalOffset
     Offset: '0xec'
     Size: '0xc'
-    Type: struct Vector
-  - Name: pad0x28_75MTW[0x28]
-    Offset: '0xf8'
-    Size: '0x28'
-    Type: char
+    Type: struct
   ClassSize: '0x58'
   FullSize: '0x120'
   InheritedSize: '0xc8'
   Super: ActorComponent
 ShipDamagerComponent:
   Attributes:
-  - Name: pad0x8_0XGTB[0x8]
-    Offset: '0xc8'
-    Size: '0x8'
-    Type: char
   - Name: Shape
     Offset: '0xd0'
     Size: '0x8'
@@ -67,11 +51,11 @@ ShipDamagerComponent:
   - Name: ShipStrainDamage
     Offset: '0xf8'
     Size: '0x28'
-    Type: struct StrainDamage
+    Type: struct
   - Name: TimeBetweenWatercraftDamage
     Offset: '0x120'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: WatercraftDamage
     Offset: '0x150'
     Size: '0x4'
@@ -80,20 +64,12 @@ ShipDamagerComponent:
     Offset: '0x154'
     Size: '0x1'
     Type: bool
-  - Name: pad0xcb_UJKYN[0xcb]
-    Offset: '0x155'
-    Size: '0xcb'
-    Type: char
   ClassSize: '0x158'
   FullSize: '0x220'
   InheritedSize: '0xc8'
   Super: ActorComponent
 ShockwaveDamagerComponent:
   Attributes:
-  - Name: pad0x8_RH8CA[0x8]
-    Offset: '0xc8'
-    Size: '0x8'
-    Type: char
   - Name: ExpansionDuration
     Offset: '0xd0'
     Size: '0x4'
@@ -106,22 +82,14 @@ ShockwaveDamagerComponent:
     Offset: '0xd8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_6A8QH[0x7]
-    Offset: '0xd9'
-    Size: '0x7'
-    Type: char
   - Name: ForceToApplyToShip
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: ApplyDamageToShips
     Offset: '0x110'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_JKXX8[0x7]
-    Offset: '0x111'
-    Size: '0x7'
-    Type: char
   - Name: ShipDamageLevels
     Offset: '0x118'
     Size: '0x10'
@@ -134,10 +102,6 @@ ShockwaveDamagerComponent:
     Offset: '0x130'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_OET4W[0x3]
-    Offset: '0x131'
-    Size: '0x3'
-    Type: char
   - Name: GhostShipImpulseDuration
     Offset: '0x134'
     Size: '0x4'
@@ -150,18 +114,18 @@ ShockwaveDamagerComponent:
     Offset: '0x13c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_H0HGG[0x3]
-    Offset: '0x13d'
-    Size: '0x3'
-    Type: char
   - Name: NearbyEncounterDistanceInMetres
     Offset: '0x140'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_T53V1[0x4]
-    Offset: '0x144'
-    Size: '0x4'
-    Type: char
+  - Name: OnShockwaveStarted
+    Offset: '0x148'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnShockwaveEnded
+    Offset: '0x158'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   - Name: ProcessedShips
     Offset: '0x168'
     Size: '0x10'
@@ -170,17 +134,7 @@ ShockwaveDamagerComponent:
     Offset: '0x178'
     Size: '0x10'
     Type: TArray<uintptr_t>
-  - Name: pad0x48_C08Q1[0x48]
-    Offset: '0x188'
-    Size: '0x48'
-    Type: char
   ClassSize: '0x108'
   FullSize: '0x1d0'
   InheritedSize: '0xc8'
   Super: ActorComponent
-ShockwaveDamagerInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

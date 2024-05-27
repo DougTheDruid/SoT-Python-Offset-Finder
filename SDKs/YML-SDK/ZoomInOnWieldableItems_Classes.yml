@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 ZoomInOnWieldableItemComponent:
   Attributes:
-  - Name: pad0x8_2SG5N[0x8]
-    Offset: '0xc8'
-    Size: '0x8'
-    Type: char
   - Name: FeatureName
     Offset: '0xd0'
     Size: '0x8'
@@ -30,17 +26,7 @@ ZoomInOnWieldableItemComponent:
     Offset: '0xe8'
     Size: '0x4'
     Type: float
-  - Name: pad0x3c_L5R9G[0x3c]
-    Offset: '0xec'
-    Size: '0x3c'
-    Type: char
   ClassSize: '0x60'
   FullSize: '0x128'
   InheritedSize: '0xc8'
   Super: ActorComponent
-ZoomedInOnWieldableItemActionStateId:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: ActionStateId

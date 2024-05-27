@@ -1,59 +1,4 @@
 {
-  "StatusResponseCancelStatus": {
-    "Super": "StatusResponse",
-    "FullSize": "0x40",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Status",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "StatusResponseHealthRegenerationPoolChange": {
-    "Super": "StatusResponse",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "HealthPoolChangeIntensityMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x4_YOL5E[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "StatusResponseSetScalarParamOnCharacter": {
-    "Super": "StatusResponse",
-    "FullSize": "0x40",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ParamsToChange",
-        "Type": "TArray<struct ScalarParamInfo>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "StatusResponseCook": {
-    "Super": "StatusResponse",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "StatusResponseReportNoiseEvent": {
     "Super": "StatusResponse",
     "FullSize": "0x70",
@@ -91,22 +36,30 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x3_B4JGI[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x49"
-      },
-      {
         "Name": "NoiseTimerTick",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4c"
+      }
+    ]
+  },
+  "StatusResponseApplyPersistentStatus": {
+    "Super": "StatusResponse",
+    "FullSize": "0x50",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StatusToApply",
+        "Type": "struct",
+        "Size": "0x18",
+        "Offset": "0x30"
       },
       {
-        "Name": "pad0x20_22LPJ[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x50"
+        "Name": "DurationMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48"
       }
     ]
   },
@@ -132,35 +85,51 @@
     "Attributes": [
       {
         "Name": "StatusToApply",
-        "Type": "struct Status",
+        "Type": "struct",
         "Size": "0x18",
         "Offset": "0x30"
       }
     ]
   },
-  "StatusResponseApplyPersistentStatus": {
+  "StatusResponseSetScalarParamOnCharacter": {
     "Super": "StatusResponse",
-    "FullSize": "0x50",
+    "FullSize": "0x40",
     "InheritedSize": "0x30",
-    "ClassSize": "0x20",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "StatusToApply",
-        "Type": "struct Status",
-        "Size": "0x18",
+        "Name": "ParamsToChange",
+        "Type": "TArray<struct ScalarParamInfo>",
+        "Size": "0x10",
         "Offset": "0x30"
-      },
+      }
+    ]
+  },
+  "StatusResponseCancelStatus": {
+    "Super": "StatusResponse",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
       {
-        "Name": "DurationMultiplier",
+        "Name": "Status",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "StatusResponseHealthRegenerationPoolChange": {
+    "Super": "StatusResponse",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "HealthPoolChangeIntensityMultiplier",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0x4_34CI9[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4c"
+        "Offset": "0x30"
       }
     ]
   },

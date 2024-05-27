@@ -21,10 +21,6 @@ BlendedSubMeshSpecification:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5DSO1[0x4]
-    Offset: '0xc'
-    Size: '0x4'
-    Type: char
   - Name: MeshPatchAssets
     Offset: '0x10'
     Size: '0x10'
@@ -125,10 +121,6 @@ ClothingPart:
     Offset: '0x19'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_G72YA[0x6]
-    Offset: '0x1a'
-    Size: '0x6'
-    Type: char
   ClassSize: '0x20'
 ClothingSlot:
   Attributes:
@@ -144,10 +136,6 @@ ClothingSlot:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_43P6Z[0x7]
-    Offset: '0x19'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x20'
 ClothingVFX:
   Attributes:
@@ -173,14 +161,14 @@ ColorTextureSwitchSeedEntry:
   - Name: Color
     Offset: '0x8'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
   ClassSize: '0x18'
 Config:
   Attributes:
   - Name: IPG
     Offset: '0x0'
     Size: '0x48'
-    Type: struct IPGData
+    Type: struct
   - Name: MaleBaseShape
     Offset: '0x48'
     Size: '0x8'
@@ -192,7 +180,7 @@ Config:
   - Name: BodyShapes
     Offset: '0x58'
     Size: '0x20'
-    Type: struct IPGBodyShapes
+    Type: struct
   ClassSize: '0x78'
 IPGBlendNode:
   Attributes:
@@ -223,10 +211,6 @@ IPGBlendRange:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_64F46[0x4]
-    Offset: '0x14'
-    Size: '0x4'
-    Type: char
   - Name: Compatibility
     Offset: '0x18'
     Size: '0x10'
@@ -261,10 +245,6 @@ IPGBlendingMethod:
     Offset: '0xc'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_09IUW[0x3]
-    Offset: '0xd'
-    Size: '0x3'
-    Type: char
   ClassSize: '0x10'
 IPGBodyShape:
   Attributes:
@@ -313,10 +293,6 @@ IPGData:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_KO5GK[0x4]
-    Offset: '0x34'
-    Size: '0x4'
-    Type: char
   - Name: Versions
     Offset: '0x38'
     Size: '0x10'
@@ -369,10 +345,6 @@ IPGSetData:
     Offset: '0x9'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_MRB3I[0x2]
-    Offset: '0xa'
-    Size: '0x2'
-    Type: char
   - Name: Priority
     Offset: '0xc'
     Size: '0x4'
@@ -392,10 +364,6 @@ IPGSetGroup:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_6QLTH[0x3]
-    Offset: '0x5'
-    Size: '0x3'
-    Type: char
   ClassSize: '0x8'
 IPGSetsData:
   Attributes:
@@ -403,10 +371,6 @@ IPGSetsData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_WSTCL[0x4]
-    Offset: '0x4'
-    Size: '0x4'
-    Type: char
   - Name: Sets
     Offset: '0x8'
     Size: '0x10'
@@ -430,22 +394,14 @@ IPGTestClass:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_BQLYZ[0x3]
-    Offset: '0x11'
-    Size: '0x3'
-    Type: char
   - Name: ObjectTest
     Offset: '0x14'
     Size: '0xc'
-    Type: struct IPGTestSimpleType
+    Type: struct
   - Name: ObjectNoneTest
     Offset: '0x20'
     Size: '0xc'
-    Type: struct IPGTestSimpleType
-  - Name: pad0x4_XEIM6[0x4]
-    Offset: '0x2c'
-    Size: '0x4'
-    Type: char
+    Type: struct
   - Name: VectorTest
     Offset: '0x30'
     Size: '0x10'
@@ -480,10 +436,6 @@ MaterialReferenceEntry:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_YCXQ5[0x6]
-    Offset: '0x2'
-    Size: '0x6'
-    Type: char
   - Name: FromMaterial
     Offset: '0x8'
     Size: '0x8'
@@ -513,7 +465,7 @@ MeshPatchEntry:
   - Name: Reference
     Offset: '0x8'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   ClassSize: '0x18'
 Outfit:
   Attributes:
@@ -544,10 +496,6 @@ PirateDescription:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_U4VJ1[0x3]
-    Offset: '0x1'
-    Size: '0x3'
-    Type: char
   - Name: Version
     Offset: '0x4'
     Size: '0x4'
@@ -560,18 +508,10 @@ PirateDescription:
     Offset: '0x9'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_E7X9W[0x2]
-    Offset: '0xa'
-    Size: '0x2'
-    Type: char
   - Name: BodyShapeCoordinate
     Offset: '0xc'
     Size: '0x8'
-    Type: struct RadialCoordinate
-  - Name: pad0x4_1KED2[0x4]
-    Offset: '0x14'
-    Size: '0x4'
-    Type: char
+    Type: struct
   - Name: BlendShapes
     Offset: '0x18'
     Size: '0x10'
@@ -584,10 +524,6 @@ PirateDescription:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_0KT2U[0x4]
-    Offset: '0x3c'
-    Size: '0x4'
-    Type: char
   - Name: Items
     Offset: '0x40'
     Size: '0x10'
@@ -647,7 +583,7 @@ TextureSwitchBodyShapeEntry:
   - Name: Texture
     Offset: '0x8'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   ClassSize: '0x18'
 TextureSwitchEthnicityEntry:
   Attributes:
@@ -655,14 +591,10 @@ TextureSwitchEthnicityEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_MGK4P[0x7]
-    Offset: '0x1'
-    Size: '0x7'
-    Type: char
   - Name: Texture
     Offset: '0x8'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   ClassSize: '0x18'
 TextureSwitchGenderEntry:
   Attributes:
@@ -670,14 +602,10 @@ TextureSwitchGenderEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_64VR1[0x7]
-    Offset: '0x1'
-    Size: '0x7'
-    Type: char
   - Name: Texture
     Offset: '0x8'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   ClassSize: '0x18'
 TextureSwitchItemEntry:
   Attributes:
@@ -688,14 +616,10 @@ TextureSwitchItemEntry:
   - Name: Texture
     Offset: '0x8'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   ClassSize: '0x18'
 TextureSwitchParameters:
   Attributes:
-  - Name: pad0x8_5MDEC[0x8]
-    Offset: '0x0'
-    Size: '0x8'
-    Type: char
   - Name: bAsync
     Offset: '0x8'
     Size: '0x1'
@@ -704,10 +628,6 @@ TextureSwitchParameters:
     Offset: '0x9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_S31EF[0x2]
-    Offset: '0xa'
-    Size: '0x2'
-    Type: char
   - Name: Seed
     Offset: '0xc'
     Size: '0x4'
@@ -720,18 +640,10 @@ TextureSwitchParameters:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_AAGYS[0x2]
-    Offset: '0x12'
-    Size: '0x2'
-    Type: char
   - Name: SelectedBodyShape
     Offset: '0x14'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_TFOE9[0x4]
-    Offset: '0x1c'
-    Size: '0x4'
-    Type: char
   - Name: SelectedItems
     Offset: '0x20'
     Size: '0x10'
@@ -740,10 +652,6 @@ TextureSwitchParameters:
     Offset: '0x30'
     Size: '0x10'
     Type: TArray<struct Name>
-  - Name: pad0x18_0MML1[0x18]
-    Offset: '0x40'
-    Size: '0x18'
-    Type: char
   ClassSize: '0x58'
 TextureSwitchSeedEntry:
   Attributes:
@@ -754,7 +662,7 @@ TextureSwitchSeedEntry:
   - Name: Texture
     Offset: '0x8'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   ClassSize: '0x18'
 WardrobeConfig:
   Attributes:

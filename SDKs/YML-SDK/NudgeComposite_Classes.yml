@@ -30,18 +30,10 @@ NudgeFromStormPolicy:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_R0WP3[0x4]
-    Offset: '0xcc'
-    Size: '0x4'
-    Type: char
   - Name: WeightedTimers
     Offset: '0xd0'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
-  - Name: pad0x58_4JF2F[0x58]
-    Offset: '0x100'
-    Size: '0x58'
-    Type: char
+    Type: struct
   ClassSize: '0x90'
   FullSize: '0x158'
   InheritedSize: '0xc8'
@@ -52,10 +44,6 @@ NudgeFromWaterLevelPolicy:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x14_SF3RC[0x14]
-    Offset: '0xcc'
-    Size: '0x14'
-    Type: char
   - Name: WaterLevelDifferenceBetweenUpdates
     Offset: '0xe0'
     Size: '0x4'
@@ -64,10 +52,6 @@ NudgeFromWaterLevelPolicy:
     Offset: '0xe4'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_85QL2[0x8]
-    Offset: '0xe8'
-    Size: '0x8'
-    Type: char
   ClassSize: '0x28'
   FullSize: '0xf0'
   InheritedSize: '0xc8'

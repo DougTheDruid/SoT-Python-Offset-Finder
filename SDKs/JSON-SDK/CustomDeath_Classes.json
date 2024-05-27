@@ -1,11 +1,4 @@
 {
-  "CustomDeathInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "CustomDeathService": {
     "Super": "Actor",
     "FullSize": "0x460",
@@ -13,22 +6,10 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x38_TJV2K[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x3c8"
-      },
-      {
         "Name": "CustomPlayerStarts",
         "Type": "TArray<class PlayerStart*>",
         "Size": "0x10",
         "Offset": "0x400"
-      },
-      {
-        "Name": "pad0x50_BXQCR[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x410"
       }
     ]
   },

@@ -5,28 +5,98 @@
 
 
 
-// Size 0x1
-struct GenericTeamId
+// Size 0x18
+struct AIPredictionEvent
 {
 public:
-	char                                                         TeamID;                                            // 0x0(0x1)
+	class Actor*                                                 Requestor;                                         // 0x0(0x8)
+	class Actor*                                                 PredictedActor;                                    // 0x8(0x8)
+};
+
+
+// Size 0x8
+struct PawnActionStack
+{
+public:
+	class PawnAction*                                            TopAction;                                         // 0x0(0x8)
+};
+
+
+// Size 0x18
+struct AISightEvent
+{
+public:
+	class Actor*                                                 SeenActor;                                         // 0x8(0x8)
+	class Actor*                                                 Observer;                                          // 0x10(0x8)
+};
+
+
+// Size 0x40
+struct EnvQueryResult
+{
+public:
+	class UClass*                                                ItemType;                                          // 0x10(0x8)
+	int                                                          OptionIndex;                                       // 0x2c(0x4)
+	int                                                          QueryID;                                           // 0x30(0x4)
+};
+
+
+// Size 0x4
+struct BTDecoratorLogic
+{
+public:
+	char                                                         Operation;                                         // 0x0(0x1)
+	uint16                                                       Number;                                            // 0x2(0x2)
+};
+
+
+// Size 0x40
+struct AIMoveRequest
+{
+public:
+	class Actor*                                                 GoalActor;                                         // 0x0(0x8)
+};
+
+
+// Size 0xc
+struct EnvBoolParam_DEPRECATED
+{
+public:
+	bool                                                         Value;                                             // 0x0(0x1)
+	struct FName                                                 ParamName;                                         // 0x4(0x8)
+};
+
+
+// Size 0x38
+struct AITeamStimulusEvent
+{
+public:
+	class Actor*                                                 Broadcaster;                                       // 0x28(0x8)
+	class Actor*                                                 Enemy;                                             // 0x30(0x8)
 };
 
 
 // Size 0x30
-struct AIDataProviderStructValue
+struct AINoiseEvent
 {
 public:
-	char                                                         pad0x30_EHEYE[0x30];                               // 0x0(0x30)
+	struct                                                       NoiseLocation;                                     // 0x4(0xc)
+	float                                                        Loudness;                                          // 0x10(0x4)
+	float                                                        MaxRange;                                          // 0x14(0x4)
+	class Actor*                                                 Instigator;                                        // 0x18(0x8)
+	struct FName                                                 Tag;                                               // 0x20(0x8)
 };
 
 
-// Size 0x10
-struct CustomDataProviderObjectPropertySelector
+// Size 0x28
+struct BlackboardKeySelector
 {
 public:
-	class UClass*                                                ObjectClass;                                       // 0x0(0x8)
-	struct FName                                                 PropertyName;                                      // 0x8(0x8)
+	TArray<class BlackboardKeyType*>                             AllowedTypes;                                      // 0x0(0x10)
+	struct FName                                                 SelectedKeyName;                                   // 0x10(0x8)
+	class UClass*                                                SelectedKeyType;                                   // 0x18(0x8)
+	char                                                         SelectedKeyID;                                     // 0x20(0x1)
+	bool                                                         bNoneIsAllowedValue;                               // 0x24(0x1)
 };
 
 
@@ -37,7 +107,49 @@ public:
 	struct FName                                                 EntryName;                                         // 0x0(0x8)
 	class BlackboardKeyType*                                     KeyType;                                           // 0x8(0x8)
 	bool                                                         bInstanceSynced;                                   // 0x10(0x1)
-	char                                                         pad0x7_DRB74[0x7];                                 // 0x11(0x7)
+};
+
+
+// Size 0xc
+struct IgnoreActorInfo
+{
+public:
+	class Actor*                                                 Actor;                                             // 0x0(0x8)
+	float                                                        TimeRemaining;                                     // 0x8(0x4)
+};
+
+
+// Size 0x30
+struct AIDataProviderIntValue
+{
+public:
+	int                                                          DefaultValue;                                      // 0x28(0x4)
+};
+
+
+// Size 0x4
+struct AIRequestID
+{
+public:
+	uint32                                                       RequestID;                                         // 0x0(0x4)
+};
+
+
+// Size 0x30
+struct AIDataProviderBoolValue
+{
+public:
+	bool                                                         DefaultValue;                                      // 0x28(0x1)
+};
+
+
+// Size 0x170
+struct EnvQueryRequest
+{
+public:
+	class EnvQuery*                                              QueryTemplate;                                     // 0x0(0x8)
+	class Object*                                                Owner;                                             // 0x8(0x8)
+	class World*                                                 World;                                             // 0x10(0x8)
 };
 
 
@@ -58,47 +170,6 @@ public:
 };
 
 
-// Size 0x38
-struct AITeamStimulusEvent
-{
-public:
-	char                                                         pad0x28_OGZXE[0x28];                               // 0x0(0x28)
-	class Actor*                                                 Broadcaster;                                       // 0x28(0x8)
-	class Actor*                                                 Enemy;                                             // 0x30(0x8)
-};
-
-
-// Size 0x18
-struct AISightEvent
-{
-public:
-	char                                                         pad0x8_DVURP[0x8];                                 // 0x0(0x8)
-	class Actor*                                                 SeenActor;                                         // 0x8(0x8)
-	class Actor*                                                 Observer;                                          // 0x10(0x8)
-};
-
-
-// Size 0x30
-struct AIDamageEvent
-{
-public:
-	float                                                        Amount;                                            // 0x0(0x4)
-	struct Vector                                                Location;                                          // 0x4(0xc)
-	struct Vector                                                HitLocation;                                       // 0x10(0xc)
-	char                                                         pad0x4_8JUEX[0x4];                                 // 0x1c(0x4)
-	class Actor*                                                 DamagedActor;                                      // 0x20(0x8)
-	class Actor*                                                 Instigator;                                        // 0x28(0x8)
-};
-
-
-// Size 0xc
-struct EnvIntParam
-{
-public:
-	char                                                         pad0xc_KN9K3[0xc];                                 // 0x0(0xc)
-};
-
-
 // Size 0xc
 struct EnvFloatParam_DEPRECATED
 {
@@ -109,46 +180,12 @@ public:
 
 
 // Size 0x4
-struct BTDecoratorLogic
+struct AISenseAffiliationFilter
 {
 public:
-	char                                                         Operation;                                         // 0x0(0x1)
-	char                                                         pad0x1_XX0DP[0x1];                                 // 0x1(0x1)
-	char                                                         pad0x2_O4ICX[0x2];                                 // 0x2(0x2)
-};
-
-
-// Size 0x30
-struct AIDataProviderFloatValue
-{
-public:
-	char                                                         pad0x28_XLUBY[0x28];                               // 0x0(0x28)
-	float                                                        DefaultValue;                                      // 0x28(0x4)
-	char                                                         pad0x4_28472[0x4];                                 // 0x2c(0x4)
-};
-
-
-// Size 0x18
-struct AIPredictionEvent
-{
-public:
-	class Actor*                                                 Requestor;                                         // 0x0(0x8)
-	class Actor*                                                 PredictedActor;                                    // 0x8(0x8)
-	char                                                         pad0x8_X8GTQ[0x8];                                 // 0x10(0x8)
-};
-
-
-// Size 0x28
-struct BlackboardKeySelector
-{
-public:
-	TArray<class BlackboardKeyType*>                             AllowedTypes;                                      // 0x0(0x10)
-	struct FName                                                 SelectedKeyName;                                   // 0x10(0x8)
-	class UClass*                                                SelectedKeyType;                                   // 0x18(0x8)
-	char                                                         SelectedKeyID;                                     // 0x20(0x1)
-	char                                                         pad0x3_U7IK8[0x3];                                 // 0x21(0x3)
-	bool                                                         bNoneIsAllowedValue;                               // 0x24(0x1)
-	char                                                         pad0x3_2KCD2[0x3];                                 // 0x25(0x3)
+	bool                                                         bDetectEnemies;                                    // 0x0(0x1)
+	bool                                                         bDetectNeutrals;                                   // 0x0(0x1)
+	bool                                                         bDetectFriendlies;                                 // 0x0(0x1)
 };
 
 
@@ -160,69 +197,6 @@ public:
 	class UClass*                                                LineTo;                                            // 0x8(0x8)
 	class UClass*                                                Rotation;                                          // 0x10(0x8)
 	char                                                         DirMode;                                           // 0x18(0x1)
-	char                                                         pad0x7_3PFIE[0x7];                                 // 0x19(0x7)
-};
-
-
-// Size 0x4
-struct AIRequestID
-{
-public:
-	char                                                         pad0x4_ENP97[0x4];                                 // 0x0(0x4)
-};
-
-
-// Size 0x40
-struct EnvQueryResult
-{
-public:
-	char                                                         pad0x10_IXHZN[0x10];                               // 0x0(0x10)
-	class UClass*                                                ItemType;                                          // 0x10(0x8)
-	char                                                         pad0x14_LDHL6[0x14];                               // 0x18(0x14)
-	int                                                          OptionIndex;                                       // 0x2c(0x4)
-	int                                                          QueryID;                                           // 0x30(0x4)
-	char                                                         pad0xc_HL0LW[0xc];                                 // 0x34(0xc)
-};
-
-
-// Size 0x30
-struct AIDataProviderIntValue
-{
-public:
-	char                                                         pad0x28_8XC06[0x28];                               // 0x0(0x28)
-	int                                                          DefaultValue;                                      // 0x28(0x4)
-	char                                                         pad0x4_K8DZL[0x4];                                 // 0x2c(0x4)
-};
-
-
-// Size 0x20
-struct AITouchEvent
-{
-public:
-	char                                                         pad0x10_P7B0A[0x10];                               // 0x0(0x10)
-	class Actor*                                                 TouchReceiver;                                     // 0x10(0x8)
-	class Actor*                                                 OtherActor;                                        // 0x18(0x8)
-};
-
-
-// Size 0xc
-struct EnvBoolParam_DEPRECATED
-{
-public:
-	bool                                                         Value;                                             // 0x0(0x1)
-	char                                                         pad0x3_WMY2W[0x3];                                 // 0x1(0x3)
-	struct FName                                                 ParamName;                                         // 0x4(0x8)
-};
-
-
-// Size 0x20
-struct AIDataProviderValue
-{
-public:
-	char                                                         pad0x8_R71G8[0x8];                                 // 0x0(0x8)
-	class Property*                                              CachedProperty;                                    // 0x8(0x8)
-	class AIDataProvider*                                        DataBinding;                                       // 0x10(0x8)
-	struct FName                                                 DataField;                                         // 0x18(0x8)
 };
 
 
@@ -231,24 +205,20 @@ struct PawnActionEvent
 {
 public:
 	class PawnAction*                                            Action;                                            // 0x0(0x8)
-	char                                                         pad0x10_7Y7BO[0x10];                               // 0x8(0x10)
 };
 
 
-// Size 0xc
-struct IgnoreActorInfo
+// Size 0x3c
+struct AIStimulus
 {
 public:
-	char                                                         pad0x8_FCM3N[0x8];                                 // 0x0(0x8)
-	float                                                        TimeRemaining;                                     // 0x8(0x4)
-};
-
-
-// Size 0xc
-struct EnvFloatParam
-{
-public:
-	char                                                         pad0xc_UEB64[0xc];                                 // 0x0(0xc)
+	float                                                        Age;                                               // 0x0(0x4)
+	float                                                        ExpirationAge;                                     // 0x4(0x4)
+	float                                                        Strength;                                          // 0x8(0x4)
+	struct                                                       StimulusLocation;                                  // 0xc(0xc)
+	struct                                                       ReceiverLocation;                                  // 0x18(0xc)
+	struct FName                                                 Tag;                                               // 0x24(0x8)
+	bool                                                         bSuccessfullySensed;                               // 0x38(0x1)
 };
 
 
@@ -261,52 +231,12 @@ public:
 };
 
 
-// Size 0xc
-struct EnvIntParam_DEPRECATED
-{
-public:
-	int                                                          Value;                                             // 0x0(0x4)
-	struct FName                                                 ParamName;                                         // 0x4(0x8)
-};
-
-
-// Size 0x4
-struct AISenseAffiliationFilter
-{
-public:
-	bool                                                         bDetectEnemies;                                    // 0x0(0x1)
-	bool                                                         bDetectNeutrals;                                   // 0x0(0x1)
-	bool                                                         bDetectFriendlies;                                 // 0x0(0x1)
-	char                                                         pad0x3_GKDFO[0x3];                                 // 0x1(0x3)
-};
-
-
-// Size 0x40
-struct AIMoveRequest
-{
-public:
-	class Actor*                                                 GoalActor;                                         // 0x0(0x8)
-	char                                                         pad0x38_4XYMH[0x38];                               // 0x8(0x38)
-};
-
-
-// Size 0x30
-struct AIDataProviderBoolValue
-{
-public:
-	char                                                         pad0x28_POSW6[0x28];                               // 0x0(0x28)
-	bool                                                         DefaultValue;                                      // 0x28(0x1)
-	char                                                         pad0x7_DT4FR[0x7];                                 // 0x29(0x7)
-};
-
-
 // Size 0x10
 struct EnvNamedValue
 {
 public:
 	struct FName                                                 ParamName;                                         // 0x0(0x8)
 	char                                                         ParamType;                                         // 0x8(0x1)
-	char                                                         pad0x3_2CSSI[0x3];                                 // 0x9(0x3)
 	float                                                        Value;                                             // 0xc(0x4)
 };
 
@@ -316,7 +246,6 @@ struct EnvTraceData
 {
 public:
 	int                                                          VersionNum;                                        // 0x0(0x4)
-	char                                                         pad0x4_LBS5Z[0x4];                                 // 0x4(0x4)
 	class UClass*                                                NavigationFilter;                                  // 0x8(0x8)
 	struct FName                                                 OverrideNavMesh;                                   // 0x10(0x8)
 	float                                                        ProjectDown;                                       // 0x18(0x4)
@@ -335,38 +264,44 @@ public:
 	bool                                                         bCanTraceOnGeometry;                               // 0x34(0x1)
 	bool                                                         bCanDisableTrace;                                  // 0x34(0x1)
 	bool                                                         bCanProjectDown;                                   // 0x34(0x1)
-	char                                                         pad0x3_KNBWK[0x3];                                 // 0x35(0x3)
 	bool                                                         bUseUpDownAsAbsoluteZStartAndEnd;                  // 0x38(0x1)
 	bool                                                         bUseSourceZAsEnd;                                  // 0x39(0x1)
-	char                                                         pad0x6_UIC67[0x6];                                 // 0x3a(0x6)
 };
 
 
-// Size 0xc
-struct EnvBoolParam
+// Size 0x28
+struct AIDataProviderTypedValue
 {
 public:
-	char                                                         pad0xc_N86YM[0xc];                                 // 0x0(0xc)
+	class UClass*                                                PropertyType;                                      // 0x20(0x8)
 };
 
 
-// Size 0x170
-struct EnvQueryRequest
+// Size 0x20
+struct AIDataProviderValue
 {
 public:
-	class EnvQuery*                                              QueryTemplate;                                     // 0x0(0x8)
-	class Object*                                                Owner;                                             // 0x8(0x8)
-	class World*                                                 World;                                             // 0x10(0x8)
-	char                                                         pad0x158_4A6TR[0x158];                             // 0x18(0x158)
+	class Property*                                              CachedProperty;                                    // 0x8(0x8)
+	class AIDataProvider*                                        DataBinding;                                       // 0x10(0x8)
+	struct FName                                                 DataField;                                         // 0x18(0x8)
 };
 
 
-// Size 0x2e0
-struct EnvQueryInstanceCache
+// Size 0x10
+struct CustomDataProviderObjectPropertySelector
 {
 public:
-	class EnvQuery*                                              Template;                                          // 0x0(0x8)
-	char                                                         pad0x2d8_2QM2W[0x2d8];                             // 0x8(0x2d8)
+	class UClass*                                                ObjectClass;                                       // 0x0(0x8)
+	struct FName                                                 PropertyName;                                      // 0x8(0x8)
+};
+
+
+// Size 0x20
+struct AITouchEvent
+{
+public:
+	class Actor*                                                 TouchReceiver;                                     // 0x10(0x8)
+	class Actor*                                                 OtherActor;                                        // 0x18(0x8)
 };
 
 
@@ -376,54 +311,51 @@ struct BehaviorTreeTemplateInfo
 public:
 	class BehaviorTree*                                          Asset;                                             // 0x0(0x8)
 	class BTCompositeNode*                                       Template;                                          // 0x8(0x8)
-	char                                                         pad0x8_IZVK3[0x8];                                 // 0x10(0x8)
 };
 
 
-// Size 0x28
-struct AIDataProviderTypedValue
+// Size 0x1
+struct GenericTeamId
 {
 public:
-	char                                                         pad0x20_9MDZN[0x20];                               // 0x0(0x20)
-	class UClass*                                                PropertyType;                                      // 0x20(0x8)
-};
-
-
-// Size 0x3c
-struct AIStimulus
-{
-public:
-	float                                                        Age;                                               // 0x0(0x4)
-	float                                                        ExpirationAge;                                     // 0x4(0x4)
-	float                                                        Strength;                                          // 0x8(0x4)
-	struct Vector                                                StimulusLocation;                                  // 0xc(0xc)
-	struct Vector                                                ReceiverLocation;                                  // 0x18(0xc)
-	struct FName                                                 Tag;                                               // 0x24(0x8)
-	char                                                         pad0xc_M5Q0O[0xc];                                 // 0x2c(0xc)
-	bool                                                         bSuccessfullySensed;                               // 0x38(0x1)
-	char                                                         pad0x3_MWCES[0x3];                                 // 0x39(0x3)
-};
-
-
-// Size 0x8
-struct PawnActionStack
-{
-public:
-	class PawnAction*                                            TopAction;                                         // 0x0(0x8)
+	char                                                         TeamID;                                            // 0x0(0x1)
 };
 
 
 // Size 0x30
-struct AINoiseEvent
+struct AIDamageEvent
 {
 public:
-	char                                                         pad0x4_UC0Z7[0x4];                                 // 0x0(0x4)
-	struct Vector                                                NoiseLocation;                                     // 0x4(0xc)
-	float                                                        Loudness;                                          // 0x10(0x4)
-	float                                                        MaxRange;                                          // 0x14(0x4)
-	class Actor*                                                 Instigator;                                        // 0x18(0x8)
-	struct FName                                                 Tag;                                               // 0x20(0x8)
-	char                                                         pad0x8_9CA4X[0x8];                                 // 0x28(0x8)
+	float                                                        Amount;                                            // 0x0(0x4)
+	struct                                                       Location;                                          // 0x4(0xc)
+	struct                                                       HitLocation;                                       // 0x10(0xc)
+	class Actor*                                                 DamagedActor;                                      // 0x20(0x8)
+	class Actor*                                                 Instigator;                                        // 0x28(0x8)
+};
+
+
+// Size 0x2e0
+struct EnvQueryInstanceCache
+{
+public:
+	class EnvQuery*                                              Template;                                          // 0x0(0x8)
+};
+
+
+// Size 0x30
+struct AIDataProviderFloatValue
+{
+public:
+	float                                                        DefaultValue;                                      // 0x28(0x4)
+};
+
+
+// Size 0xc
+struct EnvIntParam_DEPRECATED
+{
+public:
+	int                                                          Value;                                             // 0x0(0x4)
+	struct FName                                                 ParamName;                                         // 0x4(0x8)
 };
 
 
@@ -434,7 +366,6 @@ public:
 	class Actor*                                                 Target;                                            // 0x0(0x8)
 	TArray<struct AIStimulus>                                    LastSensedStimuli;                                 // 0x8(0x10)
 	bool                                                         bIsHostile;                                        // 0x18(0x1)
-	char                                                         pad0x7_EHLH0[0x7];                                 // 0x19(0x7)
 };
 
 

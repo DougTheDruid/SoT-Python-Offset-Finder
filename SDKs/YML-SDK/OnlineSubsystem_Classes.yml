@@ -6,6 +6,10 @@ DefaultOnlineEnvironmentSettings:
     Offset: '0x28'
     Size: '0x10'
     Type: struct FString
+  - Name: TitleId
+    Offset: '0x38'
+    Size: '0x4'
+    Type: uint32
   - Name: ServiceConfigId
     Offset: '0x40'
     Size: '0x10'
@@ -28,17 +32,7 @@ NamedInterfaces:
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<struct NamedInterfaceDef>
-  - Name: pad0x18_J177B[0x18]
-    Offset: '0x48'
-    Size: '0x18'
-    Type: char
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
   Super: Object
-TurnBasedMatchInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

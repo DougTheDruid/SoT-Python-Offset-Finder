@@ -6,22 +6,13 @@
 #include "EngineSettings_Structs.h"
 
 
-// Size 0xe8 (Full Size[0x110] - InheritedSize[0x28]
-class GeneralProjectSettings: public Object
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class ConsoleSettings: public Object
 {
 public:
-	struct FString                                               CompanyName;                                       // 0x28(0x10)
-	struct FString                                               CompanyDistinguishedName;                          // 0x38(0x10)
-	struct FString                                               CopyrightNotice;                                   // 0x48(0x10)
-	struct FString                                               Description;                                       // 0x58(0x10)
-	struct FString                                               Homepage;                                          // 0x68(0x10)
-	struct FString                                               LicensingTerms;                                    // 0x78(0x10)
-	struct FString                                               PrivacyPolicy;                                     // 0x88(0x10)
-	struct Guid                                                  ProjectID;                                         // 0x98(0x10)
-	struct FString                                               ProjectName;                                       // 0xa8(0x10)
-	struct FString                                               ProjectVersion;                                    // 0xb8(0x10)
-	struct FString                                               SupportContact;                                    // 0xc8(0x10)
-	struct FText                                                 ProjectDisplayedTitle;                             // 0xd8(0x38)
+	int                                                          MaxScrollbackSize;                                 // 0x28(0x4)
+	TArray<struct AutoCompleteCommand>                           ManualAutoCompleteList;                            // 0x30(0x10)
+	TArray<String>                                               AutoCompleteMapPaths;                              // 0x40(0x10)
 };
 
 
@@ -34,32 +25,12 @@ public:
 	int                                                          TotalNetBandwidth;                                 // 0x30(0x4)
 	int                                                          BadPingThreshold;                                  // 0x34(0x4)
 	bool                                                         bIsStandbyCheckingEnabled;                         // 0x38(0x1)
-	char                                                         pad0x3_NZA9M[0x3];                                 // 0x39(0x3)
 	float                                                        StandbyRxCheatTime;                                // 0x3c(0x4)
 	float                                                        StandbyTxCheatTime;                                // 0x40(0x4)
 	float                                                        PercentMissingForRxStandby;                        // 0x44(0x4)
 	float                                                        PercentMissingForTxStandby;                        // 0x48(0x4)
 	float                                                        PercentForBadPing;                                 // 0x4c(0x4)
 	float                                                        JoinInProgressStandbyWaitTime;                     // 0x50(0x4)
-	char                                                         pad0x4_2SUGA[0x4];                                 // 0x54(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class GameSessionSettings: public Object
-{
-public:
-	int                                                          MaxSpectators;                                     // 0x28(0x4)
-	int                                                          MaxPlayers;                                        // 0x2c(0x4)
-	bool                                                         bRequiresPushToTalk;                               // 0x30(0x1)
-	char                                                         pad0x7_Q13CV[0x7];                                 // 0x31(0x7)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GeneralEngineSettings: public Object
-{
-public:
 };
 
 
@@ -73,12 +44,11 @@ public:
 	bool                                                         bUseSplitscreen;                                   // 0x58(0x1)
 	char                                                         TwoPlayerSplitscreenLayout;                        // 0x59(0x1)
 	char                                                         ThreePlayerSplitscreenLayout;                      // 0x5a(0x1)
-	char                                                         pad0x5_WAJ4H[0x5];                                 // 0x5b(0x5)
-	struct StringClassReference                                  GameInstanceClass;                                 // 0x60(0x10)
+	struct                                                       GameInstanceClass;                                 // 0x60(0x10)
 	struct FString                                               GameDefaultMap;                                    // 0x70(0x10)
 	struct FString                                               ServerDefaultMap;                                  // 0x80(0x10)
-	struct StringClassReference                                  GlobalDefaultGameMode;                             // 0x90(0x10)
-	struct StringClassReference                                  GlobalDefaultServerGameMode;                       // 0xa0(0x10)
+	struct                                                       GlobalDefaultGameMode;                             // 0x90(0x10)
+	struct                                                       GlobalDefaultServerGameMode;                       // 0xa0(0x10)
 };
 
 
@@ -87,19 +57,36 @@ class HudSettings: public Object
 {
 public:
 	bool                                                         bShowHUD;                                          // 0x28(0x1)
-	char                                                         pad0x7_CSFER[0x7];                                 // 0x29(0x7)
 	TArray<struct Name>                                          DebugDisplay;                                      // 0x30(0x10)
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class ConsoleSettings: public Object
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class GameSessionSettings: public Object
 {
 public:
-	int                                                          MaxScrollbackSize;                                 // 0x28(0x4)
-	char                                                         pad0x4_J9SOK[0x4];                                 // 0x2c(0x4)
-	TArray<struct AutoCompleteCommand>                           ManualAutoCompleteList;                            // 0x30(0x10)
-	TArray<String>                                               AutoCompleteMapPaths;                              // 0x40(0x10)
+	int                                                          MaxSpectators;                                     // 0x28(0x4)
+	int                                                          MaxPlayers;                                        // 0x2c(0x4)
+	bool                                                         bRequiresPushToTalk;                               // 0x30(0x1)
+};
+
+
+// Size 0xe8 (Full Size[0x110] - InheritedSize[0x28]
+class GeneralProjectSettings: public Object
+{
+public:
+	struct FString                                               CompanyName;                                       // 0x28(0x10)
+	struct FString                                               CompanyDistinguishedName;                          // 0x38(0x10)
+	struct FString                                               CopyrightNotice;                                   // 0x48(0x10)
+	struct FString                                               Description;                                       // 0x58(0x10)
+	struct FString                                               Homepage;                                          // 0x68(0x10)
+	struct FString                                               LicensingTerms;                                    // 0x78(0x10)
+	struct FString                                               PrivacyPolicy;                                     // 0x88(0x10)
+	struct                                                       ProjectID;                                         // 0x98(0x10)
+	struct FString                                               ProjectName;                                       // 0xa8(0x10)
+	struct FString                                               ProjectVersion;                                    // 0xb8(0x10)
+	struct FString                                               SupportContact;                                    // 0xc8(0x10)
+	struct FText                                                 ProjectDisplayedTitle;                             // 0xd8(0x38)
 };
 
 

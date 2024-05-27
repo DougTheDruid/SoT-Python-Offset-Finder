@@ -6,35 +6,6 @@
 #include "GenericStatusVFX_Structs.h"
 
 
-// Size 0x60 (Full Size[0x128] - InheritedSize[0xc8]
-class GenericStatusVFXComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_EDVR3[0x8];                                 // 0xc8(0x8)
-	class ParticleSystemComponent*                               VFXComponent;                                      // 0xd0(0x8)
-	class World*                                                 CachedWorld;                                       // 0xd8(0x8)
-	char                                                         pad0x20_MOPDZ[0x20];                               // 0xe0(0x20)
-	class GenericStatusVFXDataAsset*                             VFXDataAsset;                                      // 0x100(0x8)
-	char                                                         pad0x18_KOVVT[0x18];                               // 0x108(0x18)
-	bool                                                         ContainsVFXSource;                                 // 0x120(0x1)
-	char                                                         pad0x7_6QK0C[0x7];                                 // 0x121(0x7)
-};
-
-
-// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
-class GenericStatusVFXDataAsset: public DataAsset
-{
-public:
-	struct Status                                                VFXStatus;                                         // 0x28(0x18)
-	class ParticleSystem*                                        VFXSystem;                                         // 0x40(0x8)
-	float                                                        VFXFalloffDuration;                                // 0x48(0x4)
-	float                                                        VFXFalloffMultiplier;                              // 0x4c(0x4)
-	struct FName                                                 VfxSocketName;                                     // 0x50(0x8)
-	char                                                         pad0x8_A2D5Q[0x8];                                 // 0x58(0x8)
-	struct Transform                                             SocketRelativeOffset;                              // 0x60(0x30)
-};
-
-
 // Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
 class GenericStatusVFXResponse: public StatusResponse
 {
@@ -43,10 +14,27 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GenericStatusVFXInterface: public Interface
+// Size 0x60 (Full Size[0x128] - InheritedSize[0xc8]
+class GenericStatusVFXComponent: public ActorComponent
 {
 public:
+	class ParticleSystemComponent*                               VFXComponent;                                      // 0xd0(0x8)
+	class World*                                                 CachedWorld;                                       // 0xd8(0x8)
+	class GenericStatusVFXDataAsset*                             VFXDataAsset;                                      // 0x100(0x8)
+	bool                                                         ContainsVFXSource;                                 // 0x120(0x1)
+};
+
+
+// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
+class GenericStatusVFXDataAsset: public DataAsset
+{
+public:
+	struct                                                       VFXStatus;                                         // 0x28(0x18)
+	class ParticleSystem*                                        VFXSystem;                                         // 0x40(0x8)
+	float                                                        VFXFalloffDuration;                                // 0x48(0x4)
+	float                                                        VFXFalloffMultiplier;                              // 0x4c(0x4)
+	struct FName                                                 VfxSocketName;                                     // 0x50(0x8)
+	struct                                                       SocketRelativeOffset;                              // 0x60(0x30)
 };
 
 

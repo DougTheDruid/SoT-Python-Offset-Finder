@@ -6,10 +6,6 @@ SpawnAICustomOnDespawnTaskData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_9J7YD[0x4]
-    Offset: '0x4'
-    Size: '0x4'
-    Type: char
   - Name: Despawn_Pawn
     Offset: '0x8'
     Size: '0x8'
@@ -18,10 +14,6 @@ SpawnAICustomOnDespawnTaskData:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_FTFLE[0x7]
-    Offset: '0x11'
-    Size: '0x7'
-    Type: char
   - Name: Body
     Offset: '0x18'
     Size: '0x8'
@@ -33,10 +25,6 @@ SpawnAICustomOnSpawnTaskData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_H7YYW[0x4]
-    Offset: '0x4'
-    Size: '0x4'
-    Type: char
   - Name: Spawn_Pawn
     Offset: '0x8'
     Size: '0x8'
@@ -55,19 +43,19 @@ SpawnAICustomPreSpawnTaskData:
   - Name: SpawnLocation
     Offset: '0x4'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: SpawnRotation
     Offset: '0x10'
     Size: '0xc'
-    Type: struct Rotator
+    Type: struct
   - Name: PerceiveActor
     Offset: '0x1c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_JPNGM[0x3]
-    Offset: '0x1d'
-    Size: '0x3'
-    Type: char
+  - Name: PawnClass
+    Offset: '0x20'
+    Size: '0x20'
+    Type: assetclass
   - Name: Skillset
     Offset: '0x40'
     Size: '0x8'
@@ -103,10 +91,6 @@ SpawnAICustomSetupTaskData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_S5V27[0x4]
-    Offset: '0x4'
-    Size: '0x4'
-    Type: char
   - Name: Region
     Offset: '0x8'
     Size: '0x8'
@@ -129,10 +113,6 @@ SpawnActorCustomOnTriggerWaveTaskData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_QTIAF[0x4]
-    Offset: '0x4'
-    Size: '0x4'
-    Type: char
   - Name: Body
     Offset: '0x8'
     Size: '0x8'

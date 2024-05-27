@@ -5,29 +5,12 @@
 
 
 
-// Size 0xe8
-struct EventReply
-{
-public:
-	char                                                         pad0xe8_ZINSN[0xe8];                               // 0x0(0xe8)
-};
-
-
-// Size 0x30
-struct PaintContext
-{
-public:
-	char                                                         pad0x30_KQPH5[0x30];                               // 0x0(0x30)
-};
-
-
 // Size 0x8
 struct SlateChildSize
 {
 public:
 	float                                                        Value;                                             // 0x0(0x4)
 	char                                                         SizeRule;                                          // 0x4(0x1)
-	char                                                         pad0x3_8E9OH[0x3];                                 // 0x5(0x3)
 };
 
 
@@ -40,85 +23,15 @@ public:
 };
 
 
-// Size 0x24
-struct WidgetAnimationBinding
+// Size 0x38
+struct DelegateRuntimeBinding
 {
 public:
-	struct FName                                                 WidgetName;                                        // 0x0(0x8)
-	struct FName                                                 SlotWidgetName;                                    // 0x8(0x8)
-	struct Guid                                                  AnimationGuid;                                     // 0x10(0x10)
-	bool                                                         bIsRootWidget;                                     // 0x20(0x1)
-	char                                                         pad0x3_1GO2D[0x3];                                 // 0x21(0x3)
-};
-
-
-// Size 0x380
-struct MovieScene2DTransformSectionTemplate
-{
-public:
-	char                                                         pad0x18_U9VMF[0x18];                               // 0x0(0x18)
-	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
-	struct RichCurve                                             Translation;                                       // 0x38(0x78)
-	char                                                         pad0x78_A3J1N[0x78];                               // 0xb0(0x78)
-	struct RichCurve                                             Rotation;                                          // 0x128(0x78)
-	struct RichCurve                                             Scale;                                             // 0x1a0(0x78)
-	char                                                         pad0x78_8V56E[0x78];                               // 0x218(0x78)
-	struct RichCurve                                             Shear;                                             // 0x290(0x78)
-	char                                                         pad0x78_CXZ20[0x78];                               // 0x308(0x78)
-};
-
-
-// Size 0x58
-struct MovieSceneWidgetMaterialSectionTemplate
-{
-public:
-	char                                                         pad0x48_W4HP9[0x48];                               // 0x0(0x48)
-	TArray<struct Name>                                          BrushPropertyNamePath;                             // 0x48(0x10)
-};
-
-
-// Size 0x1c
-struct WidgetTransform
-{
-public:
-	struct Vector2D                                              Translation;                                       // 0x0(0x8)
-	struct Vector2D                                              Scale;                                             // 0x8(0x8)
-	struct Vector2D                                              Shear;                                             // 0x10(0x8)
-	float                                                        Angle;                                             // 0x18(0x4)
-};
-
-
-// Size 0x28
-struct AnchorData
-{
-public:
-	struct Margin                                                Offsets;                                           // 0x0(0x10)
-	struct Anchors                                               Anchors;                                           // 0x10(0x10)
-	struct Vector2D                                              Alignment;                                         // 0x20(0x8)
-};
-
-
-// Size 0x14
-struct WidgetNavigationData
-{
-public:
-	char                                                         Rule;                                              // 0x0(0x1)
-	char                                                         pad0x3_WAT8F[0x3];                                 // 0x1(0x3)
-	struct FName                                                 WidgetToFocus;                                     // 0x4(0x8)
-	char                                                         pad0x8_4SBTK[0x8];                                 // 0xc(0x8)
-};
-
-
-// Size 0x218
-struct MovieSceneMarginSectionTemplate
-{
-public:
-	char                                                         pad0x18_TXHC3[0x18];                               // 0x0(0x18)
-	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
-	struct RichCurve                                             TopCurve;                                          // 0x38(0x78)
-	struct RichCurve                                             LeftCurve;                                         // 0xb0(0x78)
-	struct RichCurve                                             RightCurve;                                        // 0x128(0x78)
-	struct RichCurve                                             BottomCurve;                                       // 0x1a0(0x78)
+	struct FString                                               ObjectName;                                        // 0x0(0x10)
+	struct FName                                                 PropertyName;                                      // 0x10(0x8)
+	struct FName                                                 FunctionName;                                      // 0x18(0x8)
+	struct                                                       SourcePath;                                        // 0x20(0x10)
+	char                                                         Kind;                                              // 0x30(0x1)
 };
 
 
@@ -128,9 +41,81 @@ struct PropertyPathSegment
 public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
 	int                                                          ArrayIndex;                                        // 0x8(0x4)
-	char                                                         pad0x4_VK07X[0x4];                                 // 0xc(0x4)
 	class Struct*                                                Struct;                                            // 0x10(0x8)
 	class Field*                                                 Field;                                             // 0x18(0x8)
+};
+
+
+// Size 0x24
+struct WidgetAnimationBinding
+{
+public:
+	struct FName                                                 WidgetName;                                        // 0x0(0x8)
+	struct FName                                                 SlotWidgetName;                                    // 0x8(0x8)
+	struct                                                       AnimationGuid;                                     // 0x10(0x10)
+	bool                                                         bIsRootWidget;                                     // 0x20(0x1)
+};
+
+
+// Size 0x1c
+struct WidgetTransform
+{
+public:
+	struct                                                       Translation;                                       // 0x0(0x8)
+	struct                                                       Scale;                                             // 0x8(0x8)
+	struct                                                       Shear;                                             // 0x10(0x8)
+	float                                                        Angle;                                             // 0x18(0x4)
+};
+
+
+// Size 0x58
+struct MovieSceneWidgetMaterialSectionTemplate
+{
+public:
+	TArray<struct Name>                                          BrushPropertyNamePath;                             // 0x48(0x10)
+};
+
+
+// Size 0x28
+struct AnchorData
+{
+public:
+	struct                                                       Offsets;                                           // 0x0(0x10)
+	struct                                                       Anchors;                                           // 0x10(0x10)
+	struct                                                       Alignment;                                         // 0x20(0x8)
+};
+
+
+// Size 0x14
+struct WidgetNavigationData
+{
+public:
+	char                                                         Rule;                                              // 0x0(0x1)
+	struct FName                                                 WidgetToFocus;                                     // 0x4(0x8)
+};
+
+
+// Size 0x218
+struct MovieSceneMarginSectionTemplate
+{
+public:
+	struct                                                       PropertyData;                                      // 0x18(0x20)
+	struct                                                       TopCurve;                                          // 0x38(0x78)
+	struct                                                       LeftCurve;                                         // 0xb0(0x78)
+	struct                                                       RightCurve;                                        // 0x128(0x78)
+	struct                                                       BottomCurve;                                       // 0x1a0(0x78)
+};
+
+
+// Size 0x380
+struct MovieScene2DTransformSectionTemplate
+{
+public:
+	struct                                                       PropertyData;                                      // 0x18(0x20)
+	struct                                                       Translation;                                       // 0x38(0x78)
+	struct                                                       Rotation;                                          // 0x128(0x78)
+	struct                                                       Scale;                                             // 0x1a0(0x78)
+	struct                                                       Shear;                                             // 0x290(0x78)
 };
 
 
@@ -139,19 +124,6 @@ struct DynamicPropertyPath
 {
 public:
 	TArray<struct PropertyPathSegment>                           Segments;                                          // 0x0(0x10)
-};
-
-
-// Size 0x38
-struct DelegateRuntimeBinding
-{
-public:
-	struct FString                                               ObjectName;                                        // 0x0(0x10)
-	struct FName                                                 PropertyName;                                      // 0x10(0x8)
-	struct FName                                                 FunctionName;                                      // 0x18(0x8)
-	struct DynamicPropertyPath                                   SourcePath;                                        // 0x20(0x10)
-	char                                                         Kind;                                              // 0x30(0x1)
-	char                                                         pad0x7_QNS56[0x7];                                 // 0x31(0x7)
 };
 
 

@@ -10,17 +10,8 @@
 class WorldEdgeItemService: public Actor
 {
 public:
-	char                                                         pad0x8_ETXGY[0x8];                                 // 0x3c8(0x8)
 	class WorldEdgeItemServiceParams*                            WorldEdgeItemParameters;                           // 0x3d0(0x8)
-	struct EnvQueryRequest                                       SpawnItemEQSRequest;                               // 0x3d8(0x170)
-	char                                                         pad0xd8_6R1VG[0xd8];                               // 0x548(0xd8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WorldEdgeItemServiceInterface: public Interface
-{
-public:
+	struct                                                       SpawnItemEQSRequest;                               // 0x3d8(0x170)
 };
 
 

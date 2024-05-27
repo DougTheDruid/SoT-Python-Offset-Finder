@@ -5,29 +5,18 @@ SocketId:
   - Name: path
     Offset: '0x0'
     Size: '0x18'
-    Type: struct SocketPath
+    Type: struct
   - Name: Name
     Offset: '0x18'
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x20'
-SocketLookupCache:
-  Attributes:
-  - Name: pad0x50_IN72W[0x50]
-    Offset: '0x0'
-    Size: '0x50'
-    Type: char
-  ClassSize: '0x50'
 SocketPath:
   Attributes:
   - Name: Nodes
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<struct SocketPathNode>
-  - Name: pad0x8_DU8SA[0x8]
-    Offset: '0x10'
-    Size: '0x8'
-    Type: char
   ClassSize: '0x18'
 SocketPathNode:
   Attributes:

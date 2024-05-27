@@ -1,30 +1,4 @@
 {
-  "OceanCrawlerAudioBroadcaster": {
-    "Super": "ActorComponent",
-    "FullSize": "0x1c0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0xf8",
-    "Attributes": [
-      {
-        "Name": "AudioDataAsset",
-        "Type": "class OceanCrawlerAudioParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "CachedOwner",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "pad0xe8_S9DHA[0xe8]",
-        "Type": "char",
-        "Size": "0xe8",
-        "Offset": "0xd8"
-      }
-    ]
-  },
   "OceanCrawlerAudioParamsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0xa0",
@@ -45,25 +19,25 @@
       },
       {
         "Name": "BuffThankDelay",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Type": "struct",
         "Size": "0x30",
         "Offset": "0x40"
       },
       {
         "Name": "CrabBuffAudioSettings",
-        "Type": "struct OceanCrawlerBuffAudioSettings",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x70"
       },
       {
         "Name": "EelBuffAudioSettings",
-        "Type": "struct OceanCrawlerBuffAudioSettings",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x80"
       },
       {
         "Name": "HermitBuffAudioSettings",
-        "Type": "struct OceanCrawlerBuffAudioSettings",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x90"
       }
@@ -80,12 +54,32 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x60"
+      }
+    ]
+  },
+  "OceanCrawlerAudioBroadcaster": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1f8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x130",
+    "Attributes": [
+      {
+        "Name": "AudioDataAsset",
+        "Type": "assetclass",
+        "Size": "0x20",
+        "Offset": "0xc8"
       },
       {
-        "Name": "pad0x7_PYUJE[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x61"
+        "Name": "CachedOwner",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "LoadedAudioDataAsset",
+        "Type": "class OceanCrawlerAudioParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x1f0"
       }
     ]
   },

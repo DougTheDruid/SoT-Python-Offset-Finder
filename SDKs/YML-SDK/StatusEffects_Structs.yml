@@ -9,11 +9,7 @@ ActiveStatusEffect:
   - Name: Descriptor
     Offset: '0x10'
     Size: '0x4'
-    Type: struct StatusDescriptor
-  - Name: pad0x4_T30KA[0x4]
-    Offset: '0x14'
-    Size: '0x4'
-    Type: char
+    Type: struct
   - Name: ResponseTemplates
     Offset: '0x18'
     Size: '0x10'
@@ -26,24 +22,24 @@ ActiveStatusEffect:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x17_8F09H[0x17]
-    Offset: '0x39'
-    Size: '0x17'
-    Type: char
   ClassSize: '0x50'
 ApplyStatusEvent:
   Attributes:
   - Name: StatusToApply
     Offset: '0x0'
     Size: '0x18'
-    Type: struct Status
+    Type: struct
   ClassSize: '0x18'
 BuffedTargetData:
   Attributes:
-  - Name: pad0x18_T5T7G[0x18]
+  - Name: ActorBuffed
     Offset: '0x0'
-    Size: '0x18'
-    Type: char
+    Size: '0x8'
+    Type: class Actor*
+  - Name: StatusEffectRecipient
+    Offset: '0x8'
+    Size: '0x10'
+    Type: interface
   ClassSize: '0x18'
 DebugMenuStatusDefinition:
   Attributes:
@@ -54,22 +50,18 @@ DebugMenuStatusDefinition:
   - Name: Status
     Offset: '0x8'
     Size: '0x18'
-    Type: struct Status
+    Type: struct
   ClassSize: '0x20'
 DelayedStatusEffect:
   Attributes:
   - Name: StatusEffect
     Offset: '0x0'
     Size: '0x18'
-    Type: struct Status
+    Type: struct
   - Name: InEffectTime
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_UHNHI[0x4]
-    Offset: '0x1c'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x20'
 EventAppliedStatusToTargets:
   Attributes:
@@ -88,18 +80,11 @@ EventAppliedStatusToTargets:
   ClassSize: '0x28'
 EventEnteredSurfaceMaterialStatusZone:
   Attributes:
-  - Name: pad0x10_C2FAE[0x10]
+  - Name: EnteredZone
     Offset: '0x0'
     Size: '0x10'
-    Type: char
+    Type: interface
   ClassSize: '0x10'
-EventExitedSurfaceMaterialStatusZone:
-  Attributes:
-  - Name: pad0x1_9FX7I[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
 EventStatusMaterialEffectEnded:
   Attributes:
   - Name: MaterialParamName
@@ -132,7 +117,7 @@ EventStatusMaterialEffectStarted:
   - Name: TintColor
     Offset: '0x18'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
   - Name: TargetEffectStrength
     Offset: '0x28'
     Size: '0x4'
@@ -166,7 +151,7 @@ EventStatusScreenEffectStarted:
   - Name: TintColor
     Offset: '0x10'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
   - Name: TargetEffectStrength
     Offset: '0x20'
     Size: '0x4'
@@ -190,20 +175,6 @@ EventStatusScreenSpaceParticleEffectStarted:
     Size: '0x8'
     Type: class Object*
   ClassSize: '0x8'
-EventStatusSuperSoakerEnded:
-  Attributes:
-  - Name: pad0x1_IU7DA[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
-EventStatusSuperSoakerStarted:
-  Attributes:
-  - Name: pad0x1_03QM8[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
 FeatureToggledStatusResponseList:
   Attributes:
   - Name: Feature
@@ -224,18 +195,14 @@ Status:
   - Name: Descriptor
     Offset: '0x10'
     Size: '0x4'
-    Type: struct StatusDescriptor
-  - Name: pad0x4_X40EV[0x4]
-    Offset: '0x14'
-    Size: '0x4'
-    Type: char
+    Type: struct
   ClassSize: '0x18'
 StatusActivatedEvent:
   Attributes:
   - Name: Id
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: StatusName
     Offset: '0x10'
     Size: '0x8'
@@ -246,7 +213,7 @@ StatusDeactivatedEvent:
   - Name: Id
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: StatusName
     Offset: '0x10'
     Size: '0x8'
@@ -264,5 +231,5 @@ StatusEffectPersistenceKey:
   - Name: AppliedStatuses
     Offset: '0x0'
     Size: '0x18'
-    Type: struct Status
+    Type: struct
   ClassSize: '0x18'

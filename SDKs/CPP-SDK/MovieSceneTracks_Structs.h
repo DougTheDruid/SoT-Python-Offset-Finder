@@ -5,127 +5,34 @@
 
 
 
-// Size 0x28
-struct MovieSceneCameraCutSectionTemplate
-{
-public:
-	char                                                         pad0x18_CIVR3[0x18];                               // 0x0(0x18)
-	struct Guid                                                  CameraGuid;                                        // 0x18(0x10)
-};
-
-
-// Size 0x78
-struct MovieScene3DTransformKeyStruct
-{
-public:
-	char                                                         pad0x8_TK6AE[0x8];                                 // 0x0(0x8)
-	struct Vector                                                Location;                                          // 0x8(0xc)
-	struct Rotator                                               Rotation;                                          // 0x14(0xc)
-	struct Vector                                                Scale;                                             // 0x20(0xc)
-	char                                                         pad0x4c_43K4X[0x4c];                               // 0x2c(0x4c)
-};
-
-
-// Size 0x88
-struct MovieSceneSpawnSectionTemplate
-{
-public:
-	char                                                         pad0x18_DT8VA[0x18];                               // 0x0(0x18)
-	struct IntegralCurve                                         Curve;                                             // 0x18(0x70)
-};
-
-
 // Size 0x178
 struct VectorParameterNameAndCurves
 {
 public:
 	struct FName                                                 ParameterName;                                     // 0x0(0x8)
 	int                                                          Index;                                             // 0x8(0x4)
-	char                                                         pad0x4_VJKYD[0x4];                                 // 0xc(0x4)
-	struct RichCurve                                             XCurve;                                            // 0x10(0x78)
-	struct RichCurve                                             YCurve;                                            // 0x88(0x78)
-	struct RichCurve                                             ZCurve;                                            // 0x100(0x78)
+	struct                                                       XCurve;                                            // 0x10(0x78)
+	struct                                                       YCurve;                                            // 0x88(0x78)
+	struct                                                       ZCurve;                                            // 0x100(0x78)
 };
 
 
-// Size 0x18
-struct MovieSceneLevelVisibilitySharedTrack
+// Size 0xa0
+struct MovieSceneSkeletalAnimationSectionTemplateParameters
 {
 public:
-	char                                                         pad0x18_UXO9B[0x18];                               // 0x0(0x18)
+	float                                                        SectionStartTime;                                  // 0x98(0x4)
+	float                                                        SectionEndTime;                                    // 0x9c(0x4)
 };
 
 
-// Size 0xb0
-struct MovieSceneFloatPropertySectionTemplate
+// Size 0x88
+struct ScalarParameterNameAndCurve
 {
 public:
-	char                                                         pad0x18_MHRE0[0x18];                               // 0x0(0x18)
-	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
-	struct RichCurve                                             FloatCurve;                                        // 0x38(0x78)
-};
-
-
-// Size 0xa8
-struct MovieSceneBytePropertySectionTemplate
-{
-public:
-	char                                                         pad0x18_6PAHM[0x18];                               // 0x0(0x18)
-	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
-	struct IntegralCurve                                         ByteCurve;                                         // 0x38(0x70)
-};
-
-
-// Size 0xb8
-struct MovieSceneActorReferenceSectionTemplate
-{
-public:
-	char                                                         pad0x18_W3P21[0x18];                               // 0x0(0x18)
-	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
-	struct IntegralCurve                                         ActorGuidIndexCurve;                               // 0x38(0x70)
-	TArray<struct Guid>                                          ActorGuids;                                        // 0xa8(0x10)
-};
-
-
-// Size 0x90
-struct MovieSceneSlomoSectionTemplate
-{
-public:
-	char                                                         pad0x18_5FUAY[0x18];                               // 0x0(0x18)
-	struct RichCurve                                             SlomoCurve;                                        // 0x18(0x78)
-};
-
-
-// Size 0x48
-struct MovieSceneParticleParameterSectionTemplate
-{
-public:
-	char                                                         pad0x48_JDZTS[0x48];                               // 0x0(0x48)
-};
-
-
-// Size 0xa8
-struct MovieScene3DPathSectionTemplate
-{
-public:
-	char                                                         pad0x18_TVUO8[0x18];                               // 0x0(0x18)
-	struct Guid                                                  PathGuid;                                          // 0x18(0x10)
-	struct RichCurve                                             TimingCurve;                                       // 0x28(0x78)
-	char                                                         FrontAxisEnum;                                     // 0xa0(0x1)
-	char                                                         UpAxisEnum;                                        // 0xa1(0x1)
-	char                                                         pad0x2_HQU20[0x2];                                 // 0xa2(0x2)
-	bool                                                         bFollow;                                           // 0xa4(0x1)
-	bool                                                         bReverse;                                          // 0xa4(0x1)
-	bool                                                         bForceUpright;                                     // 0xa4(0x1)
-	char                                                         pad0x3_939RG[0x3];                                 // 0xa5(0x3)
-};
-
-
-// Size 0x18
-struct MovieSceneAdditiveCameraAnimationTrackTemplate
-{
-public:
-	char                                                         pad0x18_YEALF[0x18];                               // 0x0(0x18)
+	struct FName                                                 ParameterName;                                     // 0x0(0x8)
+	int                                                          Index;                                             // 0x8(0x4)
+	struct                                                       ParameterCurve;                                    // 0x10(0x78)
 };
 
 
@@ -133,9 +40,246 @@ public:
 struct MovieSceneColorKeyStruct
 {
 public:
-	char                                                         pad0x8_ZA2ZN[0x8];                                 // 0x0(0x8)
-	struct LinearColor                                           Color;                                             // 0x8(0x10)
-	char                                                         pad0x40_PYGHT[0x40];                               // 0x18(0x40)
+	struct                                                       Color;                                             // 0x8(0x10)
+};
+
+
+// Size 0xa8
+struct MovieSceneEnumPropertySectionTemplate
+{
+public:
+	struct                                                       PropertyData;                                      // 0x18(0x20)
+	struct                                                       EnumCurve;                                         // 0x38(0x70)
+};
+
+
+// Size 0x38
+struct MovieScene3DAttachSectionTemplate
+{
+public:
+	struct                                                       AttachGuid;                                        // 0x18(0x10)
+	struct FName                                                 AttachSocketName;                                  // 0x28(0x8)
+	struct FName                                                 AttachComponentName;                               // 0x30(0x8)
+};
+
+
+// Size 0x118
+struct MovieSceneAudioSectionTemplateData
+{
+public:
+	class SoundBase*                                             Sound;                                             // 0x0(0x8)
+	float                                                        AudioStartOffset;                                  // 0x8(0x4)
+	struct                                                       AudioRange;                                        // 0xc(0x10)
+	struct                                                       AudioPitchMultiplierCurve;                         // 0x20(0x78)
+	struct                                                       AudioVolumeCurve;                                  // 0x98(0x78)
+	int                                                          RowIndex;                                          // 0x110(0x4)
+};
+
+
+// Size 0xb0
+struct MovieSceneVisibilitySectionTemplate
+{
+public:
+	bool                                                         bTemporarilyHiddenInGame;                          // 0xa8(0x1)
+};
+
+
+// Size 0x78
+struct MovieScene3DTransformKeyStruct
+{
+public:
+	struct                                                       Location;                                          // 0x8(0xc)
+	struct                                                       Rotation;                                          // 0x14(0xc)
+	struct                                                       Scale;                                             // 0x20(0xc)
+};
+
+
+// Size 0x30
+struct MovieScene3DScaleKeyStruct
+{
+public:
+	struct                                                       Scale;                                             // 0x8(0xc)
+};
+
+
+// Size 0x30
+struct EventPayload
+{
+public:
+	struct FName                                                 EventName;                                         // 0x0(0x8)
+	bool                                                         IsSubtitleEvent;                                   // 0x8(0x1)
+	int                                                          ActorNumber;                                       // 0xc(0x4)
+	int                                                          SubtitleIndex;                                     // 0x10(0x4)
+	struct                                                       Parameters;                                        // 0x18(0x18)
+};
+
+
+// Size 0xa8
+struct MovieSceneIntegerPropertySectionTemplate
+{
+public:
+	struct                                                       PropertyData;                                      // 0x18(0x20)
+	struct                                                       IntegerCurve;                                      // 0x38(0x70)
+};
+
+
+// Size 0xa8
+struct MovieSceneBytePropertySectionTemplate
+{
+public:
+	struct                                                       PropertyData;                                      // 0x18(0x20)
+	struct                                                       ByteCurve;                                         // 0x38(0x70)
+};
+
+
+// Size 0x220
+struct MovieSceneVectorPropertySectionTemplate
+{
+public:
+	struct                                                       PropertyData;                                      // 0x18(0x20)
+	struct                                                       ComponentCurves;                                   // 0x38(0x78)
+	int                                                          NumChannelsUsed;                                   // 0x218(0x4)
+};
+
+
+// Size 0xb0
+struct MovieSceneStringPropertySectionTemplate
+{
+public:
+	struct                                                       PropertyData;                                      // 0x18(0x20)
+	struct                                                       StringCurve;                                       // 0x38(0x78)
+};
+
+
+// Size 0x40
+struct MovieSceneCameraShakeSectionTemplate
+{
+public:
+	struct                                                       SourceData;                                        // 0x18(0x20)
+	float                                                        SectionStartTime;                                  // 0x38(0x4)
+};
+
+
+// Size 0xb8
+struct MovieSceneActorReferenceSectionTemplate
+{
+public:
+	struct                                                       PropertyData;                                      // 0x18(0x20)
+	struct                                                       ActorGuidIndexCurve;                               // 0x38(0x70)
+	TArray<struct Guid>                                          ActorGuids;                                        // 0xa8(0x10)
+};
+
+
+// Size 0x88
+struct MovieSceneSpawnSectionTemplate
+{
+public:
+	struct                                                       Curve;                                             // 0x18(0x70)
+};
+
+
+// Size 0x130
+struct MovieSceneAudioSectionTemplate
+{
+public:
+	struct                                                       AudioData;                                         // 0x18(0x118)
+};
+
+
+// Size 0x1f0
+struct ColorParameterNameAndCurves
+{
+public:
+	struct FName                                                 ParameterName;                                     // 0x0(0x8)
+	int                                                          Index;                                             // 0x8(0x4)
+	struct                                                       RedCurve;                                          // 0x10(0x78)
+	struct                                                       GreenCurve;                                        // 0x88(0x78)
+	struct                                                       BlueCurve;                                         // 0x100(0x78)
+	struct                                                       AlphaCurve;                                        // 0x178(0x78)
+};
+
+
+// Size 0x210
+struct MovieSceneColorSectionTemplate
+{
+public:
+	struct FName                                                 PropertyName;                                      // 0x18(0x8)
+	struct FString                                               PropertyPath;                                      // 0x20(0x10)
+	struct                                                       Curves;                                            // 0x30(0x78)
+};
+
+
+// Size 0x40
+struct MovieSceneCameraAnimSectionTemplate
+{
+public:
+	struct                                                       SourceData;                                        // 0x18(0x20)
+	float                                                        SectionStartTime;                                  // 0x38(0x4)
+};
+
+
+// Size 0x50
+struct MovieSceneComponentMaterialSectionTemplate
+{
+public:
+	int                                                          MaterialIndex;                                     // 0x48(0x4)
+};
+
+
+// Size 0x60
+struct MovieSceneVector4KeyStruct
+{
+public:
+	struct                                                       Vector;                                            // 0x50(0x10)
+};
+
+
+// Size 0xc0
+struct MovieSceneSkeletalAnimationSectionTemplate
+{
+public:
+	struct                                                       Params;                                            // 0x18(0xa0)
+	char                                                         AnimationSubtype;                                  // 0xb8(0x1)
+};
+
+
+// Size 0x28
+struct MovieSceneCameraCutSectionTemplate
+{
+public:
+	struct                                                       CameraGuid;                                        // 0x18(0x10)
+};
+
+
+// Size 0x98
+struct MovieSceneSkeletalAnimationParams
+{
+public:
+	class AnimSequenceBase*                                      Animation;                                         // 0x0(0x8)
+	float                                                        StartOffset;                                       // 0x8(0x4)
+	float                                                        EndOffset;                                         // 0xc(0x4)
+	float                                                        PlayRate;                                          // 0x10(0x4)
+	bool                                                         bReverse;                                          // 0x14(0x1)
+	struct FName                                                 SlotName;                                          // 0x18(0x8)
+	struct                                                       Weight;                                            // 0x20(0x78)
+};
+
+
+// Size 0x40
+struct MovieSceneEventSectionTemplate
+{
+public:
+	struct                                                       EventData;                                         // 0x18(0x20)
+	bool                                                         bFireEventsWhenForwards;                           // 0x38(0x1)
+	bool                                                         bFireEventsWhenBackwards;                          // 0x38(0x1)
+};
+
+
+// Size 0x30
+struct MovieScene3DLocationKeyStruct
+{
+public:
+	struct                                                       Location;                                          // 0x8(0xc)
 };
 
 
@@ -143,8 +287,48 @@ public:
 struct MovieSceneParticleSectionTemplate
 {
 public:
-	char                                                         pad0x18_RIM5N[0x18];                               // 0x0(0x18)
-	struct IntegralCurve                                         ParticleKeys;                                      // 0x18(0x70)
+	struct                                                       ParticleKeys;                                      // 0x18(0x70)
+};
+
+
+// Size 0x58
+struct MovieSceneVectorKeyStruct
+{
+public:
+	struct                                                       Vector;                                            // 0x48(0xc)
+};
+
+
+// Size 0xa8
+struct MovieScene3DPathSectionTemplate
+{
+public:
+	struct                                                       PathGuid;                                          // 0x18(0x10)
+	struct                                                       TimingCurve;                                       // 0x28(0x78)
+	char                                                         FrontAxisEnum;                                     // 0xa0(0x1)
+	char                                                         UpAxisEnum;                                        // 0xa1(0x1)
+	bool                                                         bFollow;                                           // 0xa4(0x1)
+	bool                                                         bReverse;                                          // 0xa4(0x1)
+	bool                                                         bForceUpright;                                     // 0xa4(0x1)
+};
+
+
+// Size 0x450
+struct MovieScene3DTransformSectionTemplate
+{
+public:
+	struct                                                       TranslationCurve;                                  // 0x18(0x78)
+	struct                                                       RotationCurve;                                     // 0x180(0x78)
+	struct                                                       ScaleCurve;                                        // 0x2e8(0x78)
+};
+
+
+// Size 0xb0
+struct MovieSceneFloatPropertySectionTemplate
+{
+public:
+	struct                                                       PropertyData;                                      // 0x18(0x20)
+	struct                                                       FloatCurve;                                        // 0x38(0x78)
 };
 
 
@@ -155,9 +339,15 @@ public:
 	class UClass*                                                ShakeClass;                                        // 0x0(0x8)
 	float                                                        PlayScale;                                         // 0x8(0x4)
 	char                                                         PlaySpace;                                         // 0xc(0x1)
-	char                                                         pad0x3_AN9SR[0x3];                                 // 0xd(0x3)
-	struct Rotator                                               UserDefinedPlaySpace;                              // 0x10(0xc)
-	char                                                         pad0x4_YK25Z[0x4];                                 // 0x1c(0x4)
+	struct                                                       UserDefinedPlaySpace;                              // 0x10(0xc)
+};
+
+
+// Size 0x90
+struct MovieSceneSlomoSectionTemplate
+{
+public:
+	struct                                                       SlomoCurve;                                        // 0x18(0x78)
 };
 
 
@@ -165,20 +355,35 @@ public:
 struct MovieSceneLevelVisibilitySectionTemplate
 {
 public:
-	char                                                         pad0x18_D2J4B[0x18];                               // 0x0(0x18)
 	char                                                         Visibility;                                        // 0x18(0x1)
-	char                                                         pad0x7_18D1A[0x7];                                 // 0x19(0x7)
 	TArray<struct Name>                                          LevelNames;                                        // 0x20(0x10)
 };
 
 
 // Size 0xa8
-struct MovieSceneEnumPropertySectionTemplate
+struct MovieSceneFadeSectionTemplate
 {
 public:
-	char                                                         pad0x18_FRISU[0x18];                               // 0x0(0x18)
-	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
-	struct IntegralCurve                                         EnumCurve;                                         // 0x38(0x70)
+	struct                                                       FadeCurve;                                         // 0x18(0x78)
+	struct                                                       FadeColor;                                         // 0x90(0x10)
+	bool                                                         bFadeAudio;                                        // 0xa0(0x1)
+};
+
+
+// Size 0xa8
+struct MovieSceneBoolPropertySectionTemplate
+{
+public:
+	struct                                                       PropertyData;                                      // 0x18(0x20)
+	struct                                                       BoolCurve;                                         // 0x38(0x70)
+};
+
+
+// Size 0x50
+struct MovieSceneVector2DKeyStruct
+{
+public:
+	struct                                                       Vector;                                            // 0x48(0x8)
 };
 
 
@@ -192,245 +397,6 @@ public:
 	float                                                        BlendInTime;                                       // 0x10(0x4)
 	float                                                        BlendOutTime;                                      // 0x14(0x4)
 	bool                                                         bLooping;                                          // 0x18(0x1)
-	char                                                         pad0x7_4WRNI[0x7];                                 // 0x19(0x7)
-};
-
-
-// Size 0x38
-struct MovieScene3DAttachSectionTemplate
-{
-public:
-	char                                                         pad0x18_2FS5K[0x18];                               // 0x0(0x18)
-	struct Guid                                                  AttachGuid;                                        // 0x18(0x10)
-	struct FName                                                 AttachSocketName;                                  // 0x28(0x8)
-	struct FName                                                 AttachComponentName;                               // 0x30(0x8)
-};
-
-
-// Size 0x220
-struct MovieSceneVectorPropertySectionTemplate
-{
-public:
-	char                                                         pad0x18_ONHOW[0x18];                               // 0x0(0x18)
-	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
-	struct RichCurve                                             ComponentCurves;                                   // 0x38(0x78)
-	char                                                         pad0x168_KDBTK[0x168];                             // 0xb0(0x168)
-	int                                                          NumChannelsUsed;                                   // 0x218(0x4)
-	char                                                         pad0x4_YK4JH[0x4];                                 // 0x21c(0x4)
-};
-
-
-// Size 0xa0
-struct MovieSceneSkeletalAnimationSectionTemplateParameters
-{
-public:
-	char                                                         pad0x98_KZPZT[0x98];                               // 0x0(0x98)
-	float                                                        SectionStartTime;                                  // 0x98(0x4)
-	float                                                        SectionEndTime;                                    // 0x9c(0x4)
-};
-
-
-// Size 0x30
-struct MovieScene3DScaleKeyStruct
-{
-public:
-	char                                                         pad0x8_KYX50[0x8];                                 // 0x0(0x8)
-	struct Vector                                                Scale;                                             // 0x8(0xc)
-	char                                                         pad0x1c_00L4Z[0x1c];                               // 0x14(0x1c)
-};
-
-
-// Size 0xa8
-struct MovieSceneIntegerPropertySectionTemplate
-{
-public:
-	char                                                         pad0x18_1PJ1M[0x18];                               // 0x0(0x18)
-	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
-	struct IntegralCurve                                         IntegerCurve;                                      // 0x38(0x70)
-};
-
-
-// Size 0x60
-struct MovieSceneVector4KeyStruct
-{
-public:
-	char                                                         pad0x50_OKFGZ[0x50];                               // 0x0(0x50)
-	struct Vector4                                               Vector;                                            // 0x50(0x10)
-};
-
-
-// Size 0x58
-struct MovieSceneVectorKeyStruct
-{
-public:
-	char                                                         pad0x48_XRDST[0x48];                               // 0x0(0x48)
-	struct Vector                                                Vector;                                            // 0x48(0xc)
-	char                                                         pad0x4_PACUC[0x4];                                 // 0x54(0x4)
-};
-
-
-// Size 0x210
-struct MovieSceneColorSectionTemplate
-{
-public:
-	char                                                         pad0x18_9GRG5[0x18];                               // 0x0(0x18)
-	struct FName                                                 PropertyName;                                      // 0x18(0x8)
-	struct FString                                               PropertyPath;                                      // 0x20(0x10)
-	struct RichCurve                                             Curves;                                            // 0x30(0x78)
-	char                                                         pad0x168_M475B[0x168];                             // 0xa8(0x168)
-};
-
-
-// Size 0x50
-struct MovieSceneComponentMaterialSectionTemplate
-{
-public:
-	char                                                         pad0x48_EVXZU[0x48];                               // 0x0(0x48)
-	int                                                          MaterialIndex;                                     // 0x48(0x4)
-	char                                                         pad0x4_OJTPY[0x4];                                 // 0x4c(0x4)
-};
-
-
-// Size 0xa8
-struct MovieSceneBoolPropertySectionTemplate
-{
-public:
-	char                                                         pad0x18_W79RI[0x18];                               // 0x0(0x18)
-	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
-	struct IntegralCurve                                         BoolCurve;                                         // 0x38(0x70)
-};
-
-
-// Size 0x50
-struct MovieSceneVector2DKeyStruct
-{
-public:
-	char                                                         pad0x48_I602Y[0x48];                               // 0x0(0x48)
-	struct Vector2D                                              Vector;                                            // 0x48(0x8)
-};
-
-
-// Size 0x18
-struct MovieSceneEventParameters
-{
-public:
-	char                                                         pad0x18_GRVVU[0x18];                               // 0x0(0x18)
-};
-
-
-// Size 0x118
-struct MovieSceneAudioSectionTemplateData
-{
-public:
-	class SoundBase*                                             Sound;                                             // 0x0(0x8)
-	float                                                        AudioStartOffset;                                  // 0x8(0x4)
-	struct FloatRange                                            AudioRange;                                        // 0xc(0x10)
-	char                                                         pad0x4_P0KI9[0x4];                                 // 0x1c(0x4)
-	struct RichCurve                                             AudioPitchMultiplierCurve;                         // 0x20(0x78)
-	struct RichCurve                                             AudioVolumeCurve;                                  // 0x98(0x78)
-	int                                                          RowIndex;                                          // 0x110(0x4)
-	char                                                         pad0x4_NNBHL[0x4];                                 // 0x114(0x4)
-};
-
-
-// Size 0x450
-struct MovieScene3DTransformSectionTemplate
-{
-public:
-	char                                                         pad0x18_JOK59[0x18];                               // 0x0(0x18)
-	struct RichCurve                                             TranslationCurve;                                  // 0x18(0x78)
-	char                                                         pad0xf0_76D0S[0xf0];                               // 0x90(0xf0)
-	struct RichCurve                                             RotationCurve;                                     // 0x180(0x78)
-	char                                                         pad0xf0_UZN94[0xf0];                               // 0x1f8(0xf0)
-	struct RichCurve                                             ScaleCurve;                                        // 0x2e8(0x78)
-	char                                                         pad0xf0_O4P0Z[0xf0];                               // 0x360(0xf0)
-};
-
-
-// Size 0x98
-struct MovieSceneSkeletalAnimationParams
-{
-public:
-	class AnimSequenceBase*                                      Animation;                                         // 0x0(0x8)
-	float                                                        StartOffset;                                       // 0x8(0x4)
-	float                                                        EndOffset;                                         // 0xc(0x4)
-	float                                                        PlayRate;                                          // 0x10(0x4)
-	bool                                                         bReverse;                                          // 0x14(0x1)
-	char                                                         pad0x3_OO97A[0x3];                                 // 0x15(0x3)
-	struct FName                                                 SlotName;                                          // 0x18(0x8)
-	struct RichCurve                                             Weight;                                            // 0x20(0x78)
-};
-
-
-// Size 0xa8
-struct MovieSceneFadeSectionTemplate
-{
-public:
-	char                                                         pad0x18_IHWE5[0x18];                               // 0x0(0x18)
-	struct RichCurve                                             FadeCurve;                                         // 0x18(0x78)
-	struct LinearColor                                           FadeColor;                                         // 0x90(0x10)
-	bool                                                         bFadeAudio;                                        // 0xa0(0x1)
-	char                                                         pad0x7_5GXMR[0x7];                                 // 0xa1(0x7)
-};
-
-
-// Size 0x48
-struct MovieSceneVectorKeyStructBase
-{
-public:
-	char                                                         pad0x48_90DNW[0x48];                               // 0x0(0x48)
-};
-
-
-// Size 0x1f0
-struct ColorParameterNameAndCurves
-{
-public:
-	struct FName                                                 ParameterName;                                     // 0x0(0x8)
-	int                                                          Index;                                             // 0x8(0x4)
-	char                                                         pad0x4_L4N3Z[0x4];                                 // 0xc(0x4)
-	struct RichCurve                                             RedCurve;                                          // 0x10(0x78)
-	struct RichCurve                                             GreenCurve;                                        // 0x88(0x78)
-	struct RichCurve                                             BlueCurve;                                         // 0x100(0x78)
-	struct RichCurve                                             AlphaCurve;                                        // 0x178(0x78)
-};
-
-
-// Size 0xb0
-struct MovieSceneVisibilitySectionTemplate
-{
-public:
-	char                                                         pad0xa8_79GLC[0xa8];                               // 0x0(0xa8)
-	bool                                                         bTemporarilyHiddenInGame;                          // 0xa8(0x1)
-	char                                                         pad0x7_5DC41[0x7];                                 // 0xa9(0x7)
-};
-
-
-// Size 0xb0
-struct MovieSceneStringPropertySectionTemplate
-{
-public:
-	char                                                         pad0x18_APQYG[0x18];                               // 0x0(0x18)
-	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
-	struct StringCurve                                           StringCurve;                                       // 0x38(0x78)
-};
-
-
-// Size 0x18
-struct MovieSceneAdditiveCameraAnimationTemplate
-{
-public:
-	char                                                         pad0x18_M34UH[0x18];                               // 0x0(0x18)
-};
-
-
-// Size 0x30
-struct MovieScene3DLocationKeyStruct
-{
-public:
-	char                                                         pad0x8_X4V7E[0x8];                                 // 0x0(0x8)
-	struct Vector                                                Location;                                          // 0x8(0xc)
-	char                                                         pad0x1c_IU5V0[0x1c];                               // 0x14(0x1c)
 };
 
 
@@ -438,95 +404,7 @@ public:
 struct MovieScene3DRotationKeyStruct
 {
 public:
-	char                                                         pad0x8_Z1ZVY[0x8];                                 // 0x0(0x8)
-	struct Rotator                                               Rotation;                                          // 0x8(0xc)
-	char                                                         pad0x1c_VKBWU[0x1c];                               // 0x14(0x1c)
-};
-
-
-// Size 0x88
-struct ScalarParameterNameAndCurve
-{
-public:
-	struct FName                                                 ParameterName;                                     // 0x0(0x8)
-	int                                                          Index;                                             // 0x8(0x4)
-	char                                                         pad0x4_KWYE9[0x4];                                 // 0xc(0x4)
-	struct RichCurve                                             ParameterCurve;                                    // 0x10(0x78)
-};
-
-
-// Size 0x18
-struct MovieSceneSkeletalAnimationSharedTrack
-{
-public:
-	char                                                         pad0x18_F5JBQ[0x18];                               // 0x0(0x18)
-};
-
-
-// Size 0x30
-struct EventPayload
-{
-public:
-	struct FName                                                 EventName;                                         // 0x0(0x8)
-	bool                                                         IsSubtitleEvent;                                   // 0x8(0x1)
-	char                                                         pad0x3_TRGDV[0x3];                                 // 0x9(0x3)
-	int                                                          ActorNumber;                                       // 0xc(0x4)
-	int                                                          SubtitleIndex;                                     // 0x10(0x4)
-	char                                                         pad0x4_RBMLP[0x4];                                 // 0x14(0x4)
-	struct MovieSceneEventParameters                             Parameters;                                        // 0x18(0x18)
-};
-
-
-// Size 0x130
-struct MovieSceneAudioSectionTemplate
-{
-public:
-	char                                                         pad0x18_PTMES[0x18];                               // 0x0(0x18)
-	struct MovieSceneAudioSectionTemplateData                    AudioData;                                         // 0x18(0x118)
-};
-
-
-// Size 0x40
-struct MovieSceneCameraAnimSectionTemplate
-{
-public:
-	char                                                         pad0x18_PMOWX[0x18];                               // 0x0(0x18)
-	struct MovieSceneCameraAnimSectionData                       SourceData;                                        // 0x18(0x20)
-	float                                                        SectionStartTime;                                  // 0x38(0x4)
-	char                                                         pad0x4_NFX57[0x4];                                 // 0x3c(0x4)
-};
-
-
-// Size 0x40
-struct MovieSceneCameraShakeSectionTemplate
-{
-public:
-	char                                                         pad0x18_KXMFU[0x18];                               // 0x0(0x18)
-	struct MovieSceneCameraShakeSectionData                      SourceData;                                        // 0x18(0x20)
-	float                                                        SectionStartTime;                                  // 0x38(0x4)
-	char                                                         pad0x4_RS91W[0x4];                                 // 0x3c(0x4)
-};
-
-
-// Size 0x48
-struct MovieSceneParameterSectionTemplate
-{
-public:
-	char                                                         pad0x18_XFO14[0x18];                               // 0x0(0x18)
-	TArray<struct ScalarParameterNameAndCurve>                   Scalars;                                           // 0x18(0x10)
-	TArray<struct VectorParameterNameAndCurves>                  Vectors;                                           // 0x28(0x10)
-	TArray<struct ColorParameterNameAndCurves>                   Colors;                                            // 0x38(0x10)
-};
-
-
-// Size 0xc0
-struct MovieSceneSkeletalAnimationSectionTemplate
-{
-public:
-	char                                                         pad0x18_HA3DU[0x18];                               // 0x0(0x18)
-	struct MovieSceneSkeletalAnimationSectionTemplateParameters  Params;                                            // 0x18(0xa0)
-	char                                                         AnimationSubtype;                                  // 0xb8(0x1)
-	char                                                         pad0x7_C6TV9[0x7];                                 // 0xb9(0x7)
+	struct                                                       Rotation;                                          // 0x8(0xc)
 };
 
 
@@ -539,15 +417,13 @@ public:
 };
 
 
-// Size 0x40
-struct MovieSceneEventSectionTemplate
+// Size 0x48
+struct MovieSceneParameterSectionTemplate
 {
 public:
-	char                                                         pad0x18_XUZVA[0x18];                               // 0x0(0x18)
-	struct MovieSceneEventSectionData                            EventData;                                         // 0x18(0x20)
-	bool                                                         bFireEventsWhenForwards;                           // 0x38(0x1)
-	bool                                                         bFireEventsWhenBackwards;                          // 0x38(0x1)
-	char                                                         pad0x7_C0WRG[0x7];                                 // 0x39(0x7)
+	TArray<struct ScalarParameterNameAndCurve>                   Scalars;                                           // 0x18(0x10)
+	TArray<struct VectorParameterNameAndCurves>                  Vectors;                                           // 0x28(0x10)
+	TArray<struct ColorParameterNameAndCurves>                   Colors;                                            // 0x38(0x10)
 };
 
 

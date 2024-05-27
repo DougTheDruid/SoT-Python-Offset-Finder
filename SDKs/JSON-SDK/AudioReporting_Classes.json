@@ -1,4 +1,18 @@
 {
+  "AudioReportingComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x240",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x178",
+    "Attributes": [
+      {
+        "Name": "CachedOwningController",
+        "Type": "class PlayerController*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      }
+    ]
+  },
   "AudioReportingConfig": {
     "Super": "DeveloperSettings",
     "FullSize": "0x48",
@@ -7,44 +21,9 @@
     "Attributes": [
       {
         "Name": "AudioReportingSettings",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "AudioReportingDebugMenuGenerator": {
-    "Super": "DebugMenuEntryGenerator",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EventReactionsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Reactions",
-        "Type": "TArray<struct EventReactionDesc>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AudioReportReaction": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_MJZQ7[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
       }
     ]
   },
@@ -73,12 +52,6 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_932OM[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
         "Name": "EventReactionDataAssets",
         "Type": "TArray<class EventReactionsDataAsset*>",
         "Size": "0x10",
@@ -86,23 +59,17 @@
       }
     ]
   },
-  "AudioReportingComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x240",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x178",
+  "EventReactionsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "CachedOwningController",
-        "Type": "class PlayerController*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x170_Z1PVN[0x170]",
-        "Type": "char",
-        "Size": "0x170",
-        "Offset": "0xd0"
+        "Name": "Reactions",
+        "Type": "TArray<struct EventReactionDesc>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },

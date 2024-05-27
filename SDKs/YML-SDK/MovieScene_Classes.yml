@@ -25,19 +25,15 @@ MovieScene:
   - Name: SelectionRange
     Offset: '0xc8'
     Size: '0x10'
-    Type: struct FloatRange
+    Type: struct
   - Name: PlaybackRange
     Offset: '0xd8'
     Size: '0x10'
-    Type: struct FloatRange
+    Type: struct
   - Name: bForceFixedFrameIntervalPlayback
     Offset: '0xe8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_3M708[0x3]
-    Offset: '0xe9'
-    Size: '0x3'
-    Type: char
   - Name: FixedFrameInterval
     Offset: '0xec'
     Size: '0x4'
@@ -64,40 +60,14 @@ MovieScene:
   Super: MovieSceneSignedObject
 MovieSceneBindingOverrides:
   Attributes:
-  - Name: pad0x8_ACCQP[0x8]
-    Offset: '0x28'
-    Size: '0x8'
-    Type: char
   - Name: BindingData
     Offset: '0x30'
     Size: '0x10'
     Type: TArray<struct MovieSceneBindingOverrideData>
-  - Name: pad0x58_SHRL7[0x58]
-    Offset: '0x40'
-    Size: '0x58'
-    Type: char
   ClassSize: '0x70'
   FullSize: '0x98'
   InheritedSize: '0x28'
   Super: Object
-MovieSceneBindingOverridesInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-MovieSceneBindingOwnerInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-MovieSceneCameraDockingInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 MovieSceneFolder:
   Attributes:
   - Name: FolderName
@@ -116,30 +86,16 @@ MovieSceneFolder:
     Offset: '0x50'
     Size: '0x10'
     Type: TArray<String>
-  - Name: pad0x10_9S0G0[0x10]
-    Offset: '0x60'
-    Size: '0x10'
-    Type: char
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
   Super: Object
-MovieSceneNameableTrack:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x88'
-  InheritedSize: '0x88'
-  Super: MovieSceneTrack
 MovieSceneSection:
   Attributes:
   - Name: EvalOptions
     Offset: '0x80'
     Size: '0x2'
-    Type: struct MovieSceneSectionEvalOptions
-  - Name: pad0x2_7345L[0x2]
-    Offset: '0x82'
-    Size: '0x2'
-    Type: char
+    Type: struct
   - Name: StartTime
     Offset: '0x84'
     Size: '0x4'
@@ -168,10 +124,6 @@ MovieSceneSection:
     Offset: '0x94'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_56JFE[0x3]
-    Offset: '0x95'
-    Size: '0x3'
-    Type: char
   ClassSize: '0x18'
   FullSize: '0x98'
   InheritedSize: '0x80'
@@ -181,29 +133,33 @@ MovieSceneSequence:
   - Name: EvaluationTemplate
     Offset: '0x80'
     Size: '0x220'
-    Type: struct CachedMovieSceneEvaluationTemplate
+    Type: struct
   - Name: TemplateParameters
     Offset: '0x2a0'
     Size: '0x1'
-    Type: struct MovieSceneTrackCompilationParams
+    Type: struct
   - Name: bParentContextsAreSignificant
     Offset: '0x2a1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_HI054[0x6]
-    Offset: '0x2a2'
-    Size: '0x6'
-    Type: char
   ClassSize: '0x228'
   FullSize: '0x2a8'
   InheritedSize: '0x80'
   Super: MovieSceneSignedObject
 MovieSceneSequencePlayer:
   Attributes:
-  - Name: pad0x398_S0EX9[0x398]
-    Offset: '0x28'
-    Size: '0x398'
-    Type: char
+  - Name: OnPlay
+    Offset: '0x390'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnStop
+    Offset: '0x3a0'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnPause
+    Offset: '0x3b0'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   - Name: bIsPlaying
     Offset: '0x3c0'
     Size: '0x1'
@@ -216,10 +172,6 @@ MovieSceneSequencePlayer:
     Offset: '0x3c0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_8QVC7[0x7]
-    Offset: '0x3c1'
-    Size: '0x7'
-    Type: char
   - Name: Sequence
     Offset: '0x3c8'
     Size: '0x8'
@@ -240,26 +192,14 @@ MovieSceneSequencePlayer:
     Offset: '0x3dc'
     Size: '0x4'
     Type: int
-  - Name: pad0x10_4TCSP[0x10]
-    Offset: '0x3e0'
-    Size: '0x10'
-    Type: char
   - Name: PlaybackSettings
     Offset: '0x3f0'
     Size: '0x28'
-    Type: struct MovieSceneSequencePlaybackSettings
-  - Name: pad0x1d0_11CGY[0x1d0]
-    Offset: '0x418'
-    Size: '0x1d0'
-    Type: char
+    Type: struct
   - Name: InteractingCharacter
     Offset: '0x5e8'
     Size: '0x8'
     Type: class Character*
-  - Name: pad0x18_YTTUV[0x18]
-    Offset: '0x5f0'
-    Size: '0x18'
-    Type: char
   ClassSize: '0x5e0'
   FullSize: '0x608'
   InheritedSize: '0x28'
@@ -269,11 +209,7 @@ MovieSceneSignedObject:
   - Name: Signature
     Offset: '0x28'
     Size: '0x10'
-    Type: struct Guid
-  - Name: pad0x48_SZ5O8[0x48]
-    Offset: '0x38'
-    Size: '0x48'
-    Type: char
+    Type: struct
   ClassSize: '0x58'
   FullSize: '0x80'
   InheritedSize: '0x28'
@@ -283,11 +219,7 @@ MovieSceneTrack:
   - Name: EvalOptions
     Offset: '0x80'
     Size: '0x4'
-    Type: struct MovieSceneTrackEvalOptions
-  - Name: pad0x4_KTJV1[0x4]
-    Offset: '0x84'
-    Size: '0x4'
-    Type: char
+    Type: struct
   ClassSize: '0x8'
   FullSize: '0x88'
   InheritedSize: '0x80'

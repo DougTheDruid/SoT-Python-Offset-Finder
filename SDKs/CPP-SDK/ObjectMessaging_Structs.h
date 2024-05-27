@@ -9,41 +9,7 @@
 struct ObjectMessagingHandle
 {
 public:
-	char                                                         pad0x8_68WOF[0x8];                                 // 0x0(0x8)
 	class Struct*                                                EventType;                                         // 0x8(0x8)
-	char                                                         pad0x48_6DS23[0x48];                               // 0x10(0x48)
-};
-
-
-// Size 0x50
-struct ObjectMessagingObjectScoper
-{
-public:
-	char                                                         pad0x50_8HOCS[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0x8
-struct EventObjectMessagingDispatcherBeingDestroyed
-{
-public:
-	char                                                         pad0x8_XXPZH[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0xa0
-struct ObjectMessagingDispatcher
-{
-public:
-	char                                                         pad0xa0_V4DMO[0xa0];                               // 0x0(0xa0)
-};
-
-
-// Size 0x8
-struct ObjectMessagingDispatcherHandle
-{
-public:
-	char                                                         pad0x8_5R7D3[0x8];                                 // 0x0(0x8)
 };
 
 

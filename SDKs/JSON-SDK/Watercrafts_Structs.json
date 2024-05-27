@@ -1,4 +1,38 @@
 {
+  "Oar": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "OarParams",
+        "Type": "struct",
+        "Size": "0x38",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "RowboatLiveryPickerDataAssetConditions": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "RowboatLiveryPickerDataAsset",
+        "Type": "class RowboatLiveryPickerDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Feature",
+        "Type": "struct",
+        "Size": "0xc",
+        "Offset": "0xc"
+      }
+    ]
+  },
   "RowboatStrainDamageData": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -52,37 +86,43 @@
       }
     ]
   },
-  "RowboatLiveryByWeight": {
-    "ClassSize": "0x28",
+  "WatercraftDespawnTelemetryEvent": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x20_H7WD3[0x20]",
-        "Type": "char",
-        "Size": "0x20",
+        "Name": "WatercraftId",
+        "Type": "struct",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
+        "Name": "Location",
+        "Type": "struct",
+        "Size": "0xc",
+        "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_CWS6W[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x24"
+        "Name": "DespawnReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1c"
       }
     ]
   },
-  "EventRowboatEnteredWater": {
-    "ClassSize": "0x1",
+  "EventExitedWatercraft": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x1_RXCQA[0x1]",
-        "Type": "char",
-        "Size": "0x1",
+        "Name": "Watercraft",
+        "Type": "class Actor*",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Actor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -100,34 +140,40 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "RowboatLiveryByWeight": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "LiveryEntitlement",
+        "Type": "assetclass",
+        "Size": "0x20",
+        "Offset": "0x0"
       },
       {
-        "Name": "pad0xc_TLOXL[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0xc"
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
       }
     ]
   },
-  "EventRowboatLoaded": {
-    "ClassSize": "0x1",
+  "WatercraftRolloverCorrector": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "pad0x1_EO3LK[0x1]",
-        "Type": "char",
-        "Size": "0x1",
+        "Name": "RollThresholdToConsiderRolledOver",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "EventRowboatExitedWater": {
-    "ClassSize": "0x1",
-    "Attributes": [
+      },
       {
-        "Name": "pad0x1_9JR8U[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
+        "Name": "TorqueScalar",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },
@@ -136,7 +182,7 @@
     "Attributes": [
       {
         "Name": "WatercraftId",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -145,12 +191,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x3_Y4I7E[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x11"
       }
     ]
   },
@@ -176,7 +216,7 @@
     "Attributes": [
       {
         "Name": "WatercraftId",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -194,49 +234,15 @@
       },
       {
         "Name": "Location",
-        "Type": "struct Vector",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0x30"
       },
       {
         "Name": "Forward",
-        "Type": "struct Vector",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0x3c"
-      }
-    ]
-  },
-  "RowboatLiveryPickerDataAssetConditions": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "RowboatLiveryPickerDataAsset",
-        "Type": "class RowboatLiveryPickerDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "EventOarStrokeEnded": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_7AUYE[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -260,69 +266,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x4_1J1JE[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "QuestVariableWatercraft": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_FYBWS[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventExitedWatercraft": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Watercraft",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Actor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "WatercraftDespawnTelemetryEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "WatercraftId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "DespawnReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "pad0x3_LM2F0[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1d"
       }
     ]
   },
@@ -343,13 +286,13 @@
       },
       {
         "Name": "OarOffsetDirection",
-        "Type": "struct Vector",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0x8"
       },
       {
         "Name": "OarForwardForceDirection",
-        "Type": "struct Vector",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0x14"
       },
@@ -382,46 +325,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x34"
-      }
-    ]
-  },
-  "WatercraftRolloverCorrector": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "RollThresholdToConsiderRolledOver",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TorqueScalar",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x4_FKPAX[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "Oar": {
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "OarParams",
-        "Type": "struct OarParams",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x28_FD2PR[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x38"
       }
     ]
   },

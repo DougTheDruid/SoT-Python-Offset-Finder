@@ -6,29 +6,14 @@
 #include "SimpleOverlaps_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SimpleOverlapCollectionKey: public Object
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
-class SimpleOverlapComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_1S3JI[0x8];                                 // 0xc8(0x8)
-};
-
-
 // Size 0xd8 (Full Size[0x4a0] - InheritedSize[0x3c8]
 class SimpleOverlapZone: public Actor
 {
 public:
-	char                                                         pad0xc8_LE0MB[0xc8];                               // 0x3c8(0xc8)
+	multicastinlinedelegate                                      Blueprint_OnStartOverlap;                          // 0x470(0x10)
+	multicastinlinedelegate                                      Blueprint_OnStopOverlap;                           // 0x480(0x10)
 	class BoxComponent*                                          CollisionMesh;                                     // 0x490(0x8)
 	bool                                                         StartActive;                                       // 0x498(0x1)
-	char                                                         pad0x7_0G30R[0x7];                                 // 0x499(0x7)
 };
 
 

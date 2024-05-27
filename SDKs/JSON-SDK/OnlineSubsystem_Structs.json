@@ -16,41 +16,6 @@
       }
     ]
   },
-  "AchievementUpdatedEvent": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "AchievementId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Successful",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "pad0x3_WNI43[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x15"
-      },
-      {
-        "Name": "Reason",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Platform",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "InAppPurchaseProductRequest": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -64,46 +29,6 @@
         "Name": "bIsConsumable",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_5N28D[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      }
-    ]
-  },
-  "NamedInterfaceDef": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "InterfaceName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "InterfaceClassName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "InAppPurchaseRestoreInfo": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Identifier",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ReceiptData",
-        "Type": "struct FString",
-        "Size": "0x10",
         "Offset": "0x10"
       }
     ]
@@ -148,14 +73,8 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x7_TIMHN[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x51"
-      },
-      {
         "Name": "SaleEndDate",
-        "Type": "struct DateTime",
+        "Type": "struct",
         "Size": "0x8",
         "Offset": "0x58"
       },
@@ -176,6 +95,75 @@
         "Type": "TArray<String>",
         "Size": "0x10",
         "Offset": "0x80"
+      }
+    ]
+  },
+  "NamedInterfaceDef": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "InterfaceName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InterfaceClassName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AchievementUpdatedEvent": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "AchievementId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Progress",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Successful",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "Reason",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Platform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "InAppPurchaseRestoreInfo": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Identifier",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ReceiptData",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

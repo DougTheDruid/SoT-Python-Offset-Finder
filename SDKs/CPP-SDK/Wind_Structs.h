@@ -5,48 +5,12 @@
 
 
 
-// Size 0x70
-struct WindTurbulenceParameters
-{
-public:
-	struct FloatRange                                            GustPower;                                         // 0x0(0x10)
-	struct WeightedProbabilityRangeOfRanges                      GustTime;                                          // 0x10(0x30)
-	struct WeightedProbabilityRangeOfRanges                      CalmTime;                                          // 0x40(0x30)
-};
-
-
 // Size 0x8
 struct WindZoneTurbulence
 {
 public:
 	float                                                        Base;                                              // 0x0(0x4)
 	float                                                        Current;                                           // 0x4(0x4)
-};
-
-
-// Size 0x1
-struct WindMagnitudeChanged
-{
-public:
-	char                                                         pad0x1_KCKDS[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x38
-struct ExtraWind
-{
-public:
-	class Object*                                                Source;                                            // 0x0(0x8)
-	class Actor*                                                 Basis;                                             // 0x8(0x8)
-	char                                                         pad0x28_GZC3O[0x28];                               // 0x10(0x28)
-};
-
-
-// Size 0x1
-struct WindDirectionChanged
-{
-public:
-	char                                                         pad0x1_SBJ4Z[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -74,7 +38,25 @@ public:
 	float                                                        InnerRadius;                                       // 0x4(0x4)
 	float                                                        TurbulenceScalar;                                  // 0x8(0x4)
 	bool                                                         WindOnlyAffectsTrees;                              // 0xc(0x1)
-	char                                                         pad0x3_3WC57[0x3];                                 // 0xd(0x3)
+};
+
+
+// Size 0x70
+struct WindTurbulenceParameters
+{
+public:
+	struct                                                       GustPower;                                         // 0x0(0x10)
+	struct                                                       GustTime;                                          // 0x10(0x30)
+	struct                                                       CalmTime;                                          // 0x40(0x30)
+};
+
+
+// Size 0x38
+struct ExtraWind
+{
+public:
+	class Object*                                                Source;                                            // 0x0(0x8)
+	class Actor*                                                 Basis;                                             // 0x8(0x8)
 };
 
 

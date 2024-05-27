@@ -1,21 +1,10 @@
 {
-  "BlueprintSessionResult": {
-    "ClassSize": "0xe0",
-    "Attributes": [
-      {
-        "Name": "pad0xe0_0HO8I[0xe0]",
-        "Type": "char",
-        "Size": "0xe0",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "PlayerReservation": {
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "UniqueId",
-        "Type": "struct UniqueNetIdRepl",
+        "Type": "struct",
         "Size": "0x18",
         "Offset": "0x0"
       },
@@ -30,12 +19,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_9M5MU[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
       }
     ]
   },
@@ -49,14 +32,8 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_K9TJ9[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
         "Name": "PartyLeader",
-        "Type": "struct UniqueNetIdRepl",
+        "Type": "struct",
         "Size": "0x18",
         "Offset": "0x8"
       },

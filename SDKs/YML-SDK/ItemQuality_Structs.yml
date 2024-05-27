@@ -26,15 +26,26 @@ ComplexItemQualityEntry:
     Offset: '0x5'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_P5M0E[0x2]
-    Offset: '0x6'
-    Size: '0x2'
-    Type: char
-  - Name: Rarity
+  - Name: EmissaryLevelIncreaseOverride
     Offset: '0x8'
     Size: '0x8'
+    Type: struct
+  - Name: Rarity
+    Offset: '0x10'
+    Size: '0x8'
     Type: struct FName
-  ClassSize: '0x10'
+  ClassSize: '0x18'
+EmissaryLevelIncreaseOverrideData:
+  Attributes:
+  - Name: EnableEmissaryLevelIncreaseOverride
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: CustomEmissaryLevelIncrease
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
 PerComanyComplexItemQualityEntry:
   Attributes:
   - Name: Company
@@ -56,8 +67,4 @@ PerComanyItemQualityEntry:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_0X12Z[0x7]
-    Offset: '0x9'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x10'

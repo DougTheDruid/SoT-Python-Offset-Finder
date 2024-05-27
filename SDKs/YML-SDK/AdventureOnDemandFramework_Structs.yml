@@ -5,21 +5,21 @@ AdventureOnDemandCrewReachedSurfaceEvent:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x10'
 AdventureOnDemandCrewReadyToResurfaceEvent:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x10'
 AdventureOnDemandDiveCrewAlreadyAtDestinationEvent:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x10'
 AdventureOnDemandTallTaleCheckpoint:
   Attributes:
@@ -44,11 +44,11 @@ AdventureOnDemandTallTaleProposalGroup:
   - Name: BackgroundImageUrl
     Offset: '0x0'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: SmallBackgroundImageUrl
     Offset: '0x10'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: Rewards
     Offset: '0x20'
     Size: '0x10'
@@ -64,7 +64,7 @@ AdventureOnDemandTallTaleProposalGroup:
   - Name: StatForNewTag
     Offset: '0x50'
     Size: '0x4'
-    Type: struct PlayerStat
+    Type: struct
   - Name: SailToQuestAvailability
     Offset: '0x54'
     Size: '0x1'
@@ -73,10 +73,6 @@ AdventureOnDemandTallTaleProposalGroup:
     Offset: '0x55'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_E4MF7[0x2]
-    Offset: '0x56'
-    Size: '0x2'
-    Type: char
   - Name: InitialProposal
     Offset: '0x58'
     Size: '0x8'
@@ -104,21 +100,13 @@ AdventureOnDemandVoyageDiscoveryPageMysteryProposal:
     Offset: '0x20'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_D1FZU[0x7]
-    Offset: '0x21'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x28'
 AdventureOnDemandVoyageSelectionVoyageProposal:
   Attributes:
   - Name: Feature
     Offset: '0x0'
     Size: '0xc'
-    Type: struct FeatureFlag
-  - Name: pad0x4_6JDHF[0x4]
-    Offset: '0xc'
-    Size: '0x4'
-    Type: char
+    Type: struct
   - Name: Prerequisites
     Offset: '0x10'
     Size: '0x10'
@@ -126,7 +114,7 @@ AdventureOnDemandVoyageSelectionVoyageProposal:
   - Name: StatForNewTag
     Offset: '0x20'
     Size: '0x4'
-    Type: struct PlayerStat
+    Type: struct
   - Name: SailToQuestAvailability
     Offset: '0x24'
     Size: '0x1'
@@ -139,10 +127,6 @@ AdventureOnDemandVoyageSelectionVoyageProposal:
     Offset: '0x26'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_L1BJS[0x1]
-    Offset: '0x27'
-    Size: '0x1'
-    Type: char
   - Name: Proposal
     Offset: '0x28'
     Size: '0x8'
@@ -165,15 +149,11 @@ AdventureOnDemandVoyageSelectionVoyageProposalGroup:
   - Name: Feature
     Offset: '0x18'
     Size: '0xc'
-    Type: struct FeatureFlag
+    Type: struct
   - Name: CategoryType
     Offset: '0x24'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_ALHRD[0x3]
-    Offset: '0x25'
-    Size: '0x3'
-    Type: char
   - Name: Prerequisites
     Offset: '0x28'
     Size: '0x10'
@@ -183,19 +163,12 @@ AdventureOnDemandVoyageSelectionVoyageProposalGroup:
     Size: '0x10'
     Type: TArray<struct AdventureOnDemandVoyageSelectionVoyageProposal>
   ClassSize: '0x48'
-AdventureOnDemandVoyageSurfaceTaleFinished:
-  Attributes:
-  - Name: pad0x1_N1KGT[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
 ContendedResourceGameEventOnDemandArrivalTunnelWorkerFailedTelemetryEvent:
   Attributes:
   - Name: TunnelInstanceId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: GameEventType
     Offset: '0x10'
     Size: '0x10'
@@ -219,10 +192,6 @@ ExtraSpawnDistanceByIslandType:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_D5AOT[0x3]
-    Offset: '0x1'
-    Size: '0x3'
-    Type: char
   - Name: ExtraSpawnDistance
     Offset: '0x4'
     Size: '0x4'
@@ -244,7 +213,7 @@ GameEventOnDemandArrivalTunnelWorkerCompletedTelemetryEvent:
   - Name: TunnelInstanceId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: ArrivalTunnelWorkerLifetimeSeconds
     Offset: '0x10'
     Size: '0x8'
@@ -282,25 +251,14 @@ GameEventOnDemandCompanyStatData:
   - Name: Stat
     Offset: '0x8'
     Size: '0x4'
-    Type: struct PlayerStat
-  - Name: pad0x4_YU4EO[0x4]
-    Offset: '0xc'
-    Size: '0x4'
-    Type: char
+    Type: struct
   ClassSize: '0x10'
-OnDemandQuestResumeConditionMetReasonQuestVariable:
-  Attributes:
-  - Name: pad0x30_KLT36[0x30]
-    Offset: '0x0'
-    Size: '0x30'
-    Type: char
-  ClassSize: '0x30'
 QuestTableBakedDiscoverTile:
   Attributes:
   - Name: TileId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: CondensedTitle
     Offset: '0x10'
     Size: '0x38'
@@ -321,33 +279,25 @@ QuestTableBakedDiscoverTile:
     Offset: '0xf0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_X3DIS[0x7]
-    Offset: '0xf1'
-    Size: '0x7'
-    Type: char
   - Name: BackgroundImageUrl
     Offset: '0xf8'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: PreviewTileIconImageUrl
     Offset: '0x108'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: BladeFrameImageURL
     Offset: '0x118'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: WatermarkImageUrl
     Offset: '0x128'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   ClassSize: '0x138'
 QuestTableBakedInfoDiscoverTile:
   Attributes:
-  - Name: pad0x138_TGL43[0x138]
-    Offset: '0x0'
-    Size: '0x138'
-    Type: char
   - Name: InfoTipIdClientConfigName
     Offset: '0x138'
     Size: '0x10'
@@ -355,10 +305,6 @@ QuestTableBakedInfoDiscoverTile:
   ClassSize: '0x148'
 QuestTableBakedQuestDiscoverTile:
   Attributes:
-  - Name: pad0x138_JGMYC[0x138]
-    Offset: '0x0'
-    Size: '0x138'
-    Type: char
   - Name: Proposal
     Offset: '0x138'
     Size: '0x8'
@@ -375,24 +321,6 @@ QuestTableCompanyTutorialPrerequisites:
     Size: '0x10'
     Type: TArray<class InteractionPrerequisiteBase*>
   ClassSize: '0x18'
-SeaBasedGameEventOnDemandLocationRequestCompletedTelemetryEvent:
-  Attributes:
-  - Name: GameEventType
-    Offset: '0x0'
-    Size: '0x10'
-    Type: struct FString
-  - Name: Result
-    Offset: '0x10'
-    Size: '0x8'
-    Type: struct Vector2D
-  ClassSize: '0x18'
-SeaBasedGameEventOnDemandLocationRequestFailedTelemetryEvent:
-  Attributes:
-  - Name: GameEventType
-    Offset: '0x0'
-    Size: '0x10'
-    Type: struct FString
-  ClassSize: '0x10'
 TradingCompanyPopUpBackgroundEntry:
   Attributes:
   - Name: TradingCompany
@@ -410,10 +338,6 @@ VoyageHintPopupDescEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_5BL74[0x7]
-    Offset: '0x1'
-    Size: '0x7'
-    Type: char
   - Name: HintPopUpMessageDesc
     Offset: '0x8'
     Size: '0x8'

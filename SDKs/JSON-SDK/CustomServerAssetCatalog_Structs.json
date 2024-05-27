@@ -3,10 +3,16 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0xa0_BMFND[0xa0]",
-        "Type": "char",
-        "Size": "0xa0",
+        "Name": "gameAssetItems",
+        "Type": "map",
+        "Size": "0x50",
         "Offset": "0x0"
+      },
+      {
+        "Name": "gameAssetSkeletons",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x50"
       }
     ]
   },
@@ -30,12 +36,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x4_8QOW5[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x24"
       }
     ]
   },

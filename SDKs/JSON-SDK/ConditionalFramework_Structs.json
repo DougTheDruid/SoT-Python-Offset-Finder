@@ -1,4 +1,37 @@
 {
+  "ConditionFromAsset": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ConditionAsset",
+        "Type": "class ConditionRootAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ConditionContextPayloadSelectorBase": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PayloadTarget",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "WorldObjectConditionContextPayload": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "WorldObject",
+        "Type": "class World*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "ConditionContextPayloadTarget": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -16,122 +49,9 @@
       }
     ]
   },
-  "ConditionInstance": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_SI0Q5[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ConditionContextPayloadObjectSelector": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_K49P0[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "IsObjectOfTypeCondition": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "pad0x28_2PGBB[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TargetObjectClasses",
-        "Type": "TArray<Class>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "IsGameOnSpecificPlayModeVariantCondition": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x28_597XR[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TargetMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x7_O5VH9[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x29"
-      }
-    ]
-  },
-  "ConditionContextPayloadComponentOwnerSelector": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_EP9XZ[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ConditionContextPayloadSelectorInstance": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_GOUYO[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "IsGameOnSpecificPlayModeCondition": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x28_9WJ0Z[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TargetMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x7_E4AC0[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x29"
-      }
-    ]
-  },
   "TargetConditionContextPayload": {
     "ClassSize": "0x10",
     "Attributes": [
-      {
-        "Name": "pad0x8_W1144[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
       {
         "Name": "Target",
         "Type": "class Actor*",
@@ -140,128 +60,37 @@
       }
     ]
   },
-  "ConditionContextPayloadBase": {
-    "ClassSize": "0x8",
+  "IsGameOnSpecificPlayModeCondition": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_9RHGW[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
+        "Name": "TargetMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
       }
     ]
   },
-  "InstigatorConditionContextPayload": {
-    "ClassSize": "0x10",
+  "IsSpecifiedActorCondition": {
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_W8U78[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Instigator",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "WorldObjectConditionContextPayload": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x8_2I9AU[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WorldObject",
-        "Type": "class World*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "ConditionBase": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_N497M[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "IsFeatureEnabledCondition": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_WB66Z[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
+        "Name": "SpecifyingActorPayloadSelector",
+        "Type": "struct",
+        "Size": "0x20",
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_4THU3[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "ConditionFromAsset": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x8_9O5VR[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ConditionAsset",
-        "Type": "class ConditionRootAsset*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "OrCondition": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_TOFOY[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Conditions",
-        "Type": "TArray<struct ConditionInstance>",
-        "Size": "0x10",
-        "Offset": "0x8"
+        "Name": "TargetActorPayloadSelector",
+        "Type": "struct",
+        "Size": "0x20",
+        "Offset": "0x28"
       }
     ]
   },
   "AndCondition": {
     "ClassSize": "0x18",
     "Attributes": [
-      {
-        "Name": "pad0x8_XL6NK[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
       {
         "Name": "Conditions",
         "Type": "TArray<struct ConditionInstance>",
@@ -274,16 +103,21 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x8_MJ1OE[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
         "Name": "PayloadSelector",
-        "Type": "struct ConditionContextPayloadSelectorInstance",
+        "Type": "struct",
         "Size": "0x20",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "IsGameOnSpecificPlayModeVariantCondition": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TargetMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
       }
     ]
   },
@@ -291,55 +125,53 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x8_P6O77[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
         "Name": "Condition",
-        "Type": "struct ConditionInstance",
+        "Type": "struct",
         "Size": "0x20",
         "Offset": "0x8"
       }
     ]
   },
-  "ConditionContextPayloadSelectorBase": {
+  "IsFeatureEnabledCondition": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_78ZFZ[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
+        "Name": "Feature",
+        "Type": "struct",
+        "Size": "0xc",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "OrCondition": {
+    "ClassSize": "0x18",
+    "Attributes": [
       {
-        "Name": "PayloadTarget",
-        "Type": "struct ConditionContextPayloadTarget",
+        "Name": "Conditions",
+        "Type": "TArray<struct ConditionInstance>",
         "Size": "0x10",
         "Offset": "0x8"
       }
     ]
   },
-  "IsSpecifiedActorCondition": {
-    "ClassSize": "0x48",
+  "InstigatorConditionContextPayload": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_TNDU6[0x8]",
-        "Type": "char",
+        "Name": "Instigator",
+        "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SpecifyingActorPayloadSelector",
-        "Type": "struct ConditionContextPayloadSelectorInstance",
-        "Size": "0x20",
         "Offset": "0x8"
-      },
+      }
+    ]
+  },
+  "IsObjectOfTypeCondition": {
+    "ClassSize": "0x38",
+    "Attributes": [
       {
-        "Name": "TargetActorPayloadSelector",
-        "Type": "struct ConditionContextPayloadSelectorInstance",
-        "Size": "0x20",
+        "Name": "TargetObjectClasses",
+        "Type": "TArray<Class>",
+        "Size": "0x10",
         "Offset": "0x28"
       }
     ]

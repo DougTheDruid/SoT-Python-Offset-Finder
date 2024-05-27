@@ -9,12 +9,6 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_LWA3U[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
         "Name": "AudioEvent",
         "Type": "class WwiseEvent*",
         "Size": "0x8",

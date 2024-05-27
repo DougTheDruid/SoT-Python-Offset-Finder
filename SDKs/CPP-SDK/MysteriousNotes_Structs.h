@@ -5,11 +5,12 @@
 
 
 
-// Size 0x1
-struct EventMysteriousNoteSettingsLoaded
+// Size 0x18
+struct EventMarkNoteRead
 {
 public:
-	char                                                         pad0x1_XK8Q5[0x1];                                 // 0x0(0x1)
+	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
+	struct                                                       NoteId;                                            // 0x8(0x10)
 };
 
 
@@ -17,8 +18,16 @@ public:
 struct PlayerNoteStateChangeTelemetryEvent
 {
 public:
-	struct Guid                                                  NoteId;                                            // 0x0(0x10)
+	struct                                                       NoteId;                                            // 0x0(0x10)
 	struct FString                                               NoteState;                                         // 0x10(0x10)
+};
+
+
+// Size 0x8
+struct EventOnlineAthenaPlayerControllerUnpossessed
+{
+public:
+	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
 };
 
 
@@ -31,96 +40,12 @@ public:
 };
 
 
-// Size 0x48
-struct PlayerMysteriousNoteItem
-{
-public:
-	struct Guid                                                  OriginalNoteID;                                    // 0x0(0x10)
-	struct FString                                               LocalisedTitle;                                    // 0x10(0x10)
-	struct FString                                               LocalisedBody;                                     // 0x20(0x10)
-	struct FString                                               NoteType;                                          // 0x30(0x10)
-	char                                                         pad0x8_UE1TZ[0x8];                                 // 0x40(0x8)
-};
-
-
-// Size 0x20
-struct NoteCompletionEntry
-{
-public:
-	struct Guid                                                  NoteId;                                            // 0x0(0x10)
-	TArray<String>                                               CompletionEventIds;                                // 0x10(0x10)
-};
-
-
-// Size 0x10
-struct EventMysteriousNoteRemoved
-{
-public:
-	char                                                         pad0x10_Q0WRW[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x8
-struct EventOnlineAthenaPlayerControllerUnpossessed
-{
-public:
-	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
-};
-
-
-// Size 0xe0
-struct WieldableMysteriousNoteLayoutItem
-{
-public:
-	struct FString                                               Theme;                                             // 0x0(0x10)
-	class Font*                                                  Font;                                              // 0x10(0x8)
-	struct TreasureMapWidgetStreamedTexture                      Image;                                             // 0x18(0x38)
-	struct StringAssetReference                                  RadialIcon;                                        // 0x50(0x10)
-	struct TreasureMapWidgetText                                 NoteTitleWidgetText;                               // 0x60(0x3c)
-	struct TreasureMapWidgetText                                 NoteBodyWidgetText;                                // 0x9c(0x3c)
-	float                                                        NoteWidth;                                         // 0xd8(0x4)
-	float                                                        NoteLineSpacingMultiplier;                         // 0xdc(0x4)
-};
-
-
-// Size 0x8
-struct MysteriousNotesCompletionEventsModelEntry
-{
-public:
-	struct FName                                                 CompletionIdent;                                   // 0x0(0x8)
-};
-
-
-// Size 0x4
-struct PlayerSentNotesTelemetryEvent
-{
-public:
-	int                                                          NoteCount;                                         // 0x0(0x4)
-};
-
-
 // Size 0x18
 struct EventMarkNoteDeleted
 {
 public:
 	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
-	struct Guid                                                  NoteId;                                            // 0x8(0x10)
-};
-
-
-// Size 0x1
-struct EventNotesUpdated
-{
-public:
-	char                                                         pad0x1_WZ21H[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventMysteriousNoteCustomContentUpdate
-{
-public:
-	char                                                         pad0x1_W3KVO[0x1];                                 // 0x0(0x1)
+	struct                                                       NoteId;                                            // 0x8(0x10)
 };
 
 
@@ -129,25 +54,7 @@ struct MysteriousNoteRequest
 {
 public:
 	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
-	struct PirateIdentity                                        PirateIdentity;                                    // 0x8(0x78)
-};
-
-
-// Size 0x10
-struct MysteriousNoteTheme
-{
-public:
-	struct FString                                               NoteType;                                          // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct EventTriggerMysteriousNotesPopup
-{
-public:
-	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
-	bool                                                         CinematicSkipped;                                  // 0x8(0x1)
-	char                                                         pad0x7_24KDV[0x7];                                 // 0x9(0x7)
+	struct                                                       PirateIdentity;                                    // 0x8(0x78)
 };
 
 
@@ -159,11 +66,12 @@ public:
 };
 
 
-// Size 0x10
-struct EventMysteriousNoteContentUpdated
+// Size 0x20
+struct NoteCompletionEntry
 {
 public:
-	char                                                         pad0x10_I8GK9[0x10];                               // 0x0(0x10)
+	struct                                                       NoteId;                                            // 0x0(0x10)
+	TArray<String>                                               CompletionEventIds;                                // 0x10(0x10)
 };
 
 
@@ -176,31 +84,72 @@ public:
 };
 
 
+// Size 0x8
+struct MysteriousNotesCompletionEventsModelEntry
+{
+public:
+	struct FName                                                 CompletionIdent;                                   // 0x0(0x8)
+};
+
+
+// Size 0x10
+struct MysteriousNoteTheme
+{
+public:
+	struct FString                                               NoteType;                                          // 0x0(0x10)
+};
+
+
+// Size 0x48
+struct PlayerMysteriousNoteItem
+{
+public:
+	struct                                                       OriginalNoteID;                                    // 0x0(0x10)
+	struct FString                                               LocalisedTitle;                                    // 0x10(0x10)
+	struct FString                                               LocalisedBody;                                     // 0x20(0x10)
+	struct FString                                               NoteType;                                          // 0x30(0x10)
+};
+
+
+// Size 0x4
+struct PlayerSentNotesTelemetryEvent
+{
+public:
+	int                                                          NoteCount;                                         // 0x0(0x4)
+};
+
+
 // Size 0x14
 struct MysteriousNoteInfo
 {
 public:
-	struct Guid                                                  NoteId;                                            // 0x0(0x10)
+	struct                                                       NoteId;                                            // 0x0(0x10)
 	bool                                                         NoteRead;                                          // 0x10(0x1)
 	bool                                                         ShowNoteAnimation;                                 // 0x11(0x1)
-	char                                                         pad0x2_JWW8R[0x2];                                 // 0x12(0x2)
 };
 
 
-// Size 0x1
-struct EventListenForCinematicEndEvent
-{
-public:
-	char                                                         pad0x1_SJFE3[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x18
-struct EventMarkNoteRead
+// Size 0x10
+struct EventTriggerMysteriousNotesPopup
 {
 public:
 	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
-	struct Guid                                                  NoteId;                                            // 0x8(0x10)
+	bool                                                         CinematicSkipped;                                  // 0x8(0x1)
+};
+
+
+// Size 0xe0
+struct WieldableMysteriousNoteLayoutItem
+{
+public:
+	struct FString                                               Theme;                                             // 0x0(0x10)
+	class Font*                                                  Font;                                              // 0x10(0x8)
+	struct                                                       Image;                                             // 0x18(0x38)
+	struct                                                       RadialIcon;                                        // 0x50(0x10)
+	struct                                                       NoteTitleWidgetText;                               // 0x60(0x3c)
+	struct                                                       NoteBodyWidgetText;                                // 0x9c(0x3c)
+	float                                                        NoteWidth;                                         // 0xd8(0x4)
+	float                                                        NoteLineSpacingMultiplier;                         // 0xdc(0x4)
 };
 
 
@@ -209,7 +158,6 @@ struct ClientNoteData
 {
 public:
 	bool                                                         NotifyArrival;                                     // 0x0(0x1)
-	char                                                         pad0x7_JIHT4[0x7];                                 // 0x1(0x7)
 	TArray<struct MysteriousNoteInfo>                            PendingNotes;                                      // 0x8(0x10)
 };
 

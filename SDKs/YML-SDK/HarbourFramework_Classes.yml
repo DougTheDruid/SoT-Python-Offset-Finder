@@ -2,41 +2,11 @@
 # https://github.com/DougTheDruid
 HarbourComponent:
   Attributes:
-  - Name: pad0x8_Q6799[0x8]
-    Offset: '0x2e0'
-    Size: '0x8'
-    Type: char
   - Name: HarbourRadiusInCentimetres
     Offset: '0x2e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x24_0VL04[0x24]
-    Offset: '0x2ec'
-    Size: '0x24'
-    Type: char
   ClassSize: '0x30'
   FullSize: '0x310'
   InheritedSize: '0x2e0'
   Super: SceneComponent
-HarbourInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-HarbourService:
-  Attributes:
-  - Name: pad0x28_YIW4C[0x28]
-    Offset: '0x28'
-    Size: '0x28'
-    Type: char
-  ClassSize: '0x28'
-  FullSize: '0x50'
-  InheritedSize: '0x28'
-  Super: Object
-HarbourServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

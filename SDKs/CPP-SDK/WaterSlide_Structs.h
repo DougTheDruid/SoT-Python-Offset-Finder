@@ -5,29 +5,49 @@
 
 
 
-// Size 0x1
-struct OnExitedRideEvent
+// Size 0x14
+struct RideTransitionActionStateParams
 {
 public:
-	char                                                         pad0x1_MWAS6[0x1];                                 // 0x0(0x1)
+	float                                                        Duration;                                          // 0x10(0x4)
 };
 
 
-// Size 0x310
-struct ZiplineFeelParameters
+// Size 0x10
+struct OnPlayerChangedWaterSlideRouteActionStateEvent
 {
 public:
-	float                                                        MaxSpeed;                                          // 0x0(0x4)
-	float                                                        StartingSpeed;                                     // 0x4(0x4)
-	float                                                        MinSpeed;                                          // 0x8(0x4)
-	float                                                        AccelerationMultiplier;                            // 0xc(0x4)
-	float                                                        DecelerationMultiplier;                            // 0x10(0x4)
-	char                                                         pad0x4_2FCX0[0x4];                                 // 0x14(0x4)
-	struct RuntimeVectorCurve                                    SwingAngleControlDegrees;                          // 0x18(0x170)
-	struct RuntimeVectorCurve                                    SwingSpeedControlRPM;                              // 0x188(0x170)
-	struct Vector2D                                              WindResistanceMinMaxAngleDegrees;                  // 0x2f8(0x8)
-	struct Vector2D                                              FOVMinMaxSpeed;                                    // 0x300(0x8)
-	struct Vector2D                                              FOVMinMaxAngleDegrees;                             // 0x308(0x8)
+	class WwiseEvent*                                            WaterSlideChangeForkOneShot;                       // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct OnEndWaterSlideActionStateEvent
+{
+public:
+	class WwiseEvent*                                            WaterSlideEnd;                                     // 0x8(0x8)
+	class WwiseEvent*                                            WaterSlideIsEndOneShot;                            // 0x10(0x8)
+};
+
+
+// Size 0x48
+struct ZiplineActionStateConstructionInfo
+{
+public:
+	class SceneComponent*                                        SceneComponent;                                    // 0x30(0x8)
+	char                                                         MovementDirection;                                 // 0x38(0x1)
+	char                                                         InitialSwingDirection;                             // 0x39(0x1)
+	double                                                       ZiplineStartSmoothedTime;                          // 0x40(0x8)
+};
+
+
+// Size 0x24
+struct WaterSlideActionStateParams
+{
+public:
+	float                                                        ForcedFieldOfView;                                 // 0x0(0x4)
+	bool                                                         ForceStash;                                        // 0x4(0x1)
+	struct                                                       LookAtOffsetParams;                                // 0x8(0x1c)
 };
 
 
@@ -43,37 +63,13 @@ public:
 };
 
 
-// Size 0xc
-struct OnPlayerSpeedOnWaterSlideChangedActionStateEvent
-{
-public:
-	char                                                         pad0xc_TBKOC[0xc];                                 // 0x0(0xc)
-};
-
-
 // Size 0x58
 struct RideTransitionActionStateConstructionInfo
 {
 public:
-	char                                                         pad0x30_PXMOE[0x30];                               // 0x0(0x30)
 	class Ride*                                                  Ride;                                              // 0x30(0x8)
 	char                                                         Direction;                                         // 0x38(0x1)
-	char                                                         pad0x3_OSHKG[0x3];                                 // 0x39(0x3)
 	float                                                        Offset;                                            // 0x3c(0x4)
-	char                                                         pad0x18_62BJ9[0x18];                               // 0x40(0x18)
-};
-
-
-// Size 0x48
-struct ZiplineActionStateConstructionInfo
-{
-public:
-	char                                                         pad0x30_VGM9G[0x30];                               // 0x0(0x30)
-	class SceneComponent*                                        SceneComponent;                                    // 0x30(0x8)
-	char                                                         MovementDirection;                                 // 0x38(0x1)
-	char                                                         InitialSwingDirection;                             // 0x39(0x1)
-	char                                                         pad0x6_672YL[0x6];                                 // 0x3a(0x6)
-	double                                                       ZiplineStartSmoothedTime;                          // 0x40(0x8)
 };
 
 
@@ -81,41 +77,7 @@ public:
 struct WaterSlideActionStateConstructionInfo
 {
 public:
-	char                                                         pad0x30_9W24P[0x30];                               // 0x0(0x30)
 	class SceneComponent*                                        SceneComponent;                                    // 0x30(0x8)
-};
-
-
-// Size 0x10
-struct OnPlayerChangedWaterSlideRouteActionStateEvent
-{
-public:
-	char                                                         pad0x8_S7M8P[0x8];                                 // 0x0(0x8)
-	class WwiseEvent*                                            WaterSlideChangeForkOneShot;                       // 0x8(0x8)
-};
-
-
-// Size 0x28
-struct WaterSlideParams
-{
-public:
-	float                                                        ForwardSpeed;                                      // 0x0(0x4)
-	float                                                        IncreaseForwardSpeedMultiplier;                    // 0x4(0x4)
-	float                                                        DecreaseForwardSpeedMultiplier;                    // 0x8(0x4)
-	float                                                        VeeringSpeed;                                      // 0xc(0x4)
-	float                                                        LeftVeeringDistance;                               // 0x10(0x4)
-	float                                                        RightVeeringDistance;                              // 0x14(0x4)
-	struct PlayerStat                                            StatToFireForRouteChange;                          // 0x18(0x4)
-	char                                                         pad0x4_SH9DQ[0x4];                                 // 0x1c(0x4)
-	class ParticleSystem*                                        PlayerSplashingVFXOverride;                        // 0x20(0x8)
-};
-
-
-// Size 0x1c
-struct OnUpdateZiplineActionStateEvent
-{
-public:
-	char                                                         pad0x1c_L4TL5[0x1c];                               // 0x0(0x1c)
 };
 
 
@@ -123,16 +85,7 @@ public:
 struct ZipLineActionStateParams
 {
 public:
-	struct LookAtOffsetParams                                    LookAtOffsetParams;                                // 0x0(0x1c)
-};
-
-
-// Size 0x14
-struct RideTransitionActionStateParams
-{
-public:
-	char                                                         pad0x10_YV8GQ[0x10];                               // 0x0(0x10)
-	float                                                        Duration;                                          // 0x10(0x4)
+	struct                                                       LookAtOffsetParams;                                // 0x0(0x1c)
 };
 
 
@@ -146,6 +99,21 @@ public:
 };
 
 
+// Size 0x28
+struct WaterSlideParams
+{
+public:
+	float                                                        ForwardSpeed;                                      // 0x0(0x4)
+	float                                                        IncreaseForwardSpeedMultiplier;                    // 0x4(0x4)
+	float                                                        DecreaseForwardSpeedMultiplier;                    // 0x8(0x4)
+	float                                                        VeeringSpeed;                                      // 0xc(0x4)
+	float                                                        LeftVeeringDistance;                               // 0x10(0x4)
+	float                                                        RightVeeringDistance;                              // 0x14(0x4)
+	struct                                                       StatToFireForRouteChange;                          // 0x18(0x4)
+	class ParticleSystem*                                        PlayerSplashingVFXOverride;                        // 0x20(0x8)
+};
+
+
 // Size 0x10
 struct OnStartWaterSlideActionStateEvent
 {
@@ -155,24 +123,20 @@ public:
 };
 
 
-// Size 0x18
-struct OnEndWaterSlideActionStateEvent
+// Size 0x310
+struct ZiplineFeelParameters
 {
 public:
-	char                                                         pad0x8_BE72T[0x8];                                 // 0x0(0x8)
-	class WwiseEvent*                                            WaterSlideEnd;                                     // 0x8(0x8)
-	class WwiseEvent*                                            WaterSlideIsEndOneShot;                            // 0x10(0x8)
-};
-
-
-// Size 0x24
-struct WaterSlideActionStateParams
-{
-public:
-	float                                                        ForcedFieldOfView;                                 // 0x0(0x4)
-	bool                                                         ForceStash;                                        // 0x4(0x1)
-	char                                                         pad0x3_TFNBC[0x3];                                 // 0x5(0x3)
-	struct LookAtOffsetParams                                    LookAtOffsetParams;                                // 0x8(0x1c)
+	float                                                        MaxSpeed;                                          // 0x0(0x4)
+	float                                                        StartingSpeed;                                     // 0x4(0x4)
+	float                                                        MinSpeed;                                          // 0x8(0x4)
+	float                                                        AccelerationMultiplier;                            // 0xc(0x4)
+	float                                                        DecelerationMultiplier;                            // 0x10(0x4)
+	struct                                                       SwingAngleControlDegrees;                          // 0x18(0x170)
+	struct                                                       SwingSpeedControlRPM;                              // 0x188(0x170)
+	struct                                                       WindResistanceMinMaxAngleDegrees;                  // 0x2f8(0x8)
+	struct                                                       FOVMinMaxSpeed;                                    // 0x300(0x8)
+	struct                                                       FOVMinMaxAngleDegrees;                             // 0x308(0x8)
 };
 
 

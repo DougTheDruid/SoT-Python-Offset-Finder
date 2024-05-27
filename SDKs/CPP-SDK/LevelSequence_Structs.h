@@ -5,35 +5,26 @@
 
 
 
-// Size 0x28
-struct LevelSequencePlaybackSettings
+// Size 0x90
+struct LevelSequencePlayerSnapshot
 {
 public:
-	char                                                         pad0x28_8T3M4[0x28];                               // 0x0(0x28)
+	struct FText                                                 MasterName;                                        // 0x0(0x38)
+	float                                                        MasterTime;                                        // 0x38(0x4)
+	struct FText                                                 CurrentShotName;                                   // 0x40(0x38)
+	float                                                        CurrentShotLocalTime;                              // 0x78(0x4)
+	class CameraComponent*                                       CameraComponent;                                   // 0x80(0x8)
+	struct                                                       Settings;                                          // 0x88(0x8)
 };
 
 
-// Size 0x1
-struct BoundActorProxy
+// Size 0x38
+struct LevelSequenceObject
 {
 public:
-	char                                                         pad0x1_BIUVA[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x20
-struct LevelSequenceObjectReference
-{
-public:
-	char                                                         pad0x20_U1N06[0x20];                               // 0x0(0x20)
-};
-
-
-// Size 0xa0
-struct LevelSequenceObjectReferenceMap
-{
-public:
-	char                                                         pad0xa0_NZ4QA[0xa0];                               // 0x0(0xa0)
+	lazyobject                                                   ObjectOrOwner;                                     // 0x0(0x1c)
+	struct FString                                               ComponentName;                                     // 0x20(0x10)
+	class Object*                                                CachedComponent;                                   // 0x30(0x8)
 };
 
 
@@ -42,33 +33,7 @@ struct LevelSequenceSnapshotSettings
 {
 public:
 	char                                                         ZeroPadAmount;                                     // 0x0(0x1)
-	char                                                         pad0x3_191ID[0x3];                                 // 0x1(0x3)
 	float                                                        FrameRate;                                         // 0x4(0x4)
-};
-
-
-// Size 0x38
-struct LevelSequenceObject
-{
-public:
-	char                                                         pad0x20_QF6X4[0x20];                               // 0x0(0x20)
-	struct FString                                               ComponentName;                                     // 0x20(0x10)
-	char                                                         pad0x8_JTLN3[0x8];                                 // 0x30(0x8)
-};
-
-
-// Size 0x90
-struct LevelSequencePlayerSnapshot
-{
-public:
-	struct FText                                                 MasterName;                                        // 0x0(0x38)
-	float                                                        MasterTime;                                        // 0x38(0x4)
-	char                                                         pad0x4_E6TS6[0x4];                                 // 0x3c(0x4)
-	struct FText                                                 CurrentShotName;                                   // 0x40(0x38)
-	float                                                        CurrentShotLocalTime;                              // 0x78(0x4)
-	char                                                         pad0x4_L7WMA[0x4];                                 // 0x7c(0x4)
-	class CameraComponent*                                       CameraComponent;                                   // 0x80(0x8)
-	struct LevelSequenceSnapshotSettings                         Settings;                                          // 0x88(0x8)
 };
 
 

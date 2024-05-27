@@ -1,145 +1,70 @@
 {
-  "SeasonNotificationContent": {
-    "ClassSize": "0x68",
+  "DeedProgressDesc": {
+    "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "GlowIcon",
-        "Type": "struct StringAssetReference",
+        "Name": "Description",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Icon",
-        "Type": "struct StringAssetReference",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
-        "Name": "SfxEventName",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "NavigationDesc",
+        "Type": "struct",
+        "Size": "0x14",
         "Offset": "0x20"
       },
       {
-        "Name": "EventName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x30"
+        "Name": "ProgressValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x34"
       },
       {
-        "Name": "SwitchName",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "Threshold",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Audio",
+        "Type": "struct",
+        "Size": "0x40",
         "Offset": "0x40"
-      },
-      {
-        "Name": "SwitchValue",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "ToastHoldDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "pad0x4_522J0[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x64"
       }
     ]
   },
-  "SeasonProgressionUITelemetryFragmentInput": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_WK80F[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SeasonsChatNotification": {
+  "SeasonsChatNotificationEvent": {
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "IconUrl",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "SeasonsChatNotification",
+        "Type": "struct",
+        "Size": "0x60",
         "Offset": "0x0"
-      },
-      {
-        "Name": "Message",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Audio",
-        "Type": "struct GenericPopupAudioDescriptor",
-        "Size": "0x40",
-        "Offset": "0x20"
       }
     ]
   },
-  "SeasonProgressionUIEventTypeTelemetryFragment": {
-    "ClassSize": "0x18",
+  "NavigationDesc": {
+    "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "EventName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NumReceivedEvents",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x4_UDI72[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "SeasonsTextNotification": {
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "IconUrl",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Message",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Audio",
-        "Type": "struct GenericPopupAudioDescriptor",
-        "Size": "0x40",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "SeasonsDataRefreshEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_G6MEU[0x1]",
-        "Type": "char",
+        "Name": "Action",
+        "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Id",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x4"
       }
     ]
   },
@@ -148,13 +73,13 @@
     "Attributes": [
       {
         "Name": "GlowIcon",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Icon",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -187,12 +112,40 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x60"
+      }
+    ]
+  },
+  "ShowDeedProgressEvent": {
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "DeedProgressDesc",
+        "Type": "struct",
+        "Size": "0x80",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SeasonsChatNotification": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "IconUrl",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_SHL5H[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x64"
+        "Name": "Message",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Audio",
+        "Type": "struct",
+        "Size": "0x40",
+        "Offset": "0x20"
       }
     ]
   },
@@ -201,13 +154,13 @@
     "Attributes": [
       {
         "Name": "GlowIcon",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Icon",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -246,12 +199,23 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x98"
+      }
+    ]
+  },
+  "EnableMoreButtonEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MoreButtonSource",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_3CK0C[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x9c"
+        "Name": "Navigation",
+        "Type": "struct",
+        "Size": "0x14",
+        "Offset": "0x4"
       }
     ]
   },
@@ -266,49 +230,36 @@
       }
     ]
   },
-  "OpenSeasonsMenuEvent": {
-    "ClassSize": "0x14",
+  "SeasonProgressionUITelemetryFragmentInput": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "NavigationAction",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "PlayerController",
+        "Type": "class PlayerController*",
+        "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_3OC8W[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "Id",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x4"
       }
     ]
   },
-  "NavigationDesc": {
-    "ClassSize": "0x14",
+  "SeasonsTextNotificationNetworkEvent": {
+    "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "Action",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
+        "Name": "SeasonsTextNotification",
+        "Type": "struct",
+        "Size": "0x88",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "SeasonsChatNotificationNetworkEvent": {
+    "ClassSize": "0x78",
+    "Attributes": [
       {
-        "Name": "pad0x3_DU9PA[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "Id",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x4"
+        "Name": "SeasonsChatNotificationEvent",
+        "Type": "struct",
+        "Size": "0x60",
+        "Offset": "0x18"
       }
     ]
   },
@@ -323,19 +274,19 @@
       },
       {
         "Name": "GlowIcon",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "Icon",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
         "Name": "ChatIcon",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -368,63 +319,110 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x78"
-      },
-      {
-        "Name": "pad0x4_DJ9ZR[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x7c"
       }
     ]
   },
-  "SeasonsTextNotificationNetworkEvent": {
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "pad0x10_STBZC[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SeasonsTextNotification",
-        "Type": "struct SeasonsTextNotification",
-        "Size": "0x88",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "SeasonProgressionUITelemetryFragment": {
+  "SeasonProgressionUIEventTypeTelemetryFragment": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "ReceivedEventsData",
-        "Type": "TArray<struct SeasonProgressionUIEventTypeTelemetryFragment>",
+        "Name": "EventName",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "TotalNumReceivedEvents",
+        "Name": "NumReceivedEvents",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x4_EZVBN[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
       }
     ]
   },
-  "SeasonsChatNotificationEvent": {
-    "ClassSize": "0x60",
+  "SeasonsTextNotification": {
+    "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "SeasonsChatNotification",
-        "Type": "struct SeasonsChatNotification",
-        "Size": "0x60",
+        "Name": "IconUrl",
+        "Type": "struct",
+        "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Message",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Audio",
+        "Type": "struct",
+        "Size": "0x40",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "OpenSeasonsMenuEvent": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "NavigationAction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Id",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "SeasonNotificationContent": {
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "GlowIcon",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Icon",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SfxEventName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "EventName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "SwitchName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "SwitchValue",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "ToastHoldDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x60"
       }
     ]
   },
@@ -451,7 +449,7 @@
       },
       {
         "Name": "Audio",
-        "Type": "struct GenericPopupAudioDescriptor",
+        "Type": "struct",
         "Size": "0x40",
         "Offset": "0x30"
       },
@@ -469,7 +467,7 @@
       },
       {
         "Name": "NavigationDesc",
-        "Type": "struct NavigationDesc",
+        "Type": "struct",
         "Size": "0x14",
         "Offset": "0x84"
       },
@@ -478,110 +476,23 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x98"
-      },
-      {
-        "Name": "pad0x4_T7K2J[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x9c"
       }
     ]
   },
-  "DeedProgressDesc": {
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "Description",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Icon",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "NavigationDesc",
-        "Type": "struct NavigationDesc",
-        "Size": "0x14",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "ProgressValue",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "Threshold",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x4_3PXY6[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "Audio",
-        "Type": "struct GenericPopupAudioDescriptor",
-        "Size": "0x40",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "EnableMoreButtonEvent": {
+  "SeasonProgressionUITelemetryFragment": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "MoreButtonSource",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_BSUOA[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "Navigation",
-        "Type": "struct NavigationDesc",
-        "Size": "0x14",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "SeasonsChatNotificationNetworkEvent": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "pad0x10_2RF8D[0x10]",
-        "Type": "char",
+        "Name": "ReceivedEventsData",
+        "Type": "TArray<struct SeasonProgressionUIEventTypeTelemetryFragment>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "SeasonsChatNotificationEvent",
-        "Type": "struct SeasonsChatNotificationEvent",
-        "Size": "0x60",
+        "Name": "TotalNumReceivedEvents",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "ShowDeedProgressEvent": {
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "DeedProgressDesc",
-        "Type": "struct DeedProgressDesc",
-        "Size": "0x80",
-        "Offset": "0x0"
       }
     ]
   },

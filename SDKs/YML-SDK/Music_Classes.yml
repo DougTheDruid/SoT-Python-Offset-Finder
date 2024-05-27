@@ -18,26 +18,12 @@ AISpawnerMusicZoneComponent:
     Offset: '0x3e8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_CIW31[0x7]
-    Offset: '0x3e9'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x20'
   FullSize: '0x3f0'
   InheritedSize: '0x3d0'
   Super: MusicZoneComponent
-EmitterManipulatorInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 MusicZoneComponent:
   Attributes:
-  - Name: pad0x8_GQQQ4[0x8]
-    Offset: '0x2e0'
-    Size: '0x8'
-    Type: char
   - Name: InnerRadius
     Offset: '0x2e8'
     Size: '0x4'
@@ -58,10 +44,6 @@ MusicZoneComponent:
     Offset: '0x300'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_BBOMQ[0x7]
-    Offset: '0x301'
-    Size: '0x7'
-    Type: char
   - Name: PlayEvent
     Offset: '0x308'
     Size: '0x8'
@@ -86,44 +68,18 @@ MusicZoneComponent:
     Offset: '0x331'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_0JPZH[0x6]
-    Offset: '0x332'
-    Size: '0x6'
-    Type: char
+  - Name: OnMusicZoneStarted
+    Offset: '0x338'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   - Name: EmitterRemoteValues
     Offset: '0x370'
     Size: '0x20'
-    Type: struct MusicZoneRemoteValues
-  - Name: pad0x40_EZ98L[0x40]
-    Offset: '0x390'
-    Size: '0x40'
-    Type: char
+    Type: struct
   ClassSize: '0xf0'
   FullSize: '0x3d0'
   InheritedSize: '0x2e0'
   Super: SceneComponent
-MusicZoneInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: EmitterManipulatorInterface
-MusicZoneService:
-  Attributes:
-  - Name: pad0xc8_PJ2SQ[0xc8]
-    Offset: '0x3c8'
-    Size: '0xc8'
-    Type: char
-  ClassSize: '0xc8'
-  FullSize: '0x490'
-  InheritedSize: '0x3c8'
-  Super: Actor
-MusicZoneServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 NetMusicZoneActor:
   Attributes:
   - Name: MusicZone
@@ -144,10 +100,6 @@ SynchedMusicZoneComponent:
     Offset: '0x3cc'
     Size: '0x4'
     Type: int
-  - Name: pad0x30_XT6JA[0x30]
-    Offset: '0x3d0'
-    Size: '0x30'
-    Type: char
   ClassSize: '0x30'
   FullSize: '0x400'
   InheritedSize: '0x3d0'

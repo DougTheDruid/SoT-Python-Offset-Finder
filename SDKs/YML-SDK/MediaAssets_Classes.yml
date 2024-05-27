@@ -20,20 +20,10 @@ FileMediaSource:
     Offset: '0x98'
     Size: '0x1'
     Type: bool
-  - Name: pad0x17_IURRA[0x17]
-    Offset: '0x99'
-    Size: '0x17'
-    Type: char
   ClassSize: '0x28'
   FullSize: '0xb0'
   InheritedSize: '0x88'
   Super: BaseMediaSource
-MediaBlueprintFunctionLibrary:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: BlueprintFunctionLibrary
 MediaComponent:
   Attributes:
   - Name: MediaTexture
@@ -50,22 +40,50 @@ MediaComponent:
   Super: ActorComponent
 MediaPlayer:
   Attributes:
-  - Name: pad0x80_2YLQ6[0x80]
+  - Name: OnEndReached
     Offset: '0x28'
-    Size: '0x80'
-    Type: char
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnMediaClosed
+    Offset: '0x38'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnMediaOpened
+    Offset: '0x48'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnMediaOpenFailed
+    Offset: '0x58'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnPlaybackResumed
+    Offset: '0x68'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnPlaybackSuspended
+    Offset: '0x78'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnSeekCompleted
+    Offset: '0x88'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnTracksChanged
+    Offset: '0x98'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   - Name: CacheAhead
     Offset: '0xa8'
     Size: '0x8'
-    Type: struct Timespan
+    Type: struct
   - Name: CacheBehind
     Offset: '0xb0'
     Size: '0x8'
-    Type: struct Timespan
+    Type: struct
   - Name: CacheBehindGame
     Offset: '0xb8'
     Size: '0x8'
-    Type: struct Timespan
+    Type: struct
   - Name: NativeAudioOut
     Offset: '0xc0'
     Size: '0x1'
@@ -74,10 +92,6 @@ MediaPlayer:
     Offset: '0xc1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_LF2HS[0x2]
-    Offset: '0xc2'
-    Size: '0x2'
-    Type: char
   - Name: Shuffle
     Offset: '0xc4'
     Size: '0x1'
@@ -86,10 +100,6 @@ MediaPlayer:
     Offset: '0xc4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_201KH[0x3]
-    Offset: '0xc5'
-    Size: '0x3'
-    Type: char
   - Name: Playlist
     Offset: '0xc8'
     Size: '0x8'
@@ -98,14 +108,10 @@ MediaPlayer:
     Offset: '0xd0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_XJUYL[0x4]
-    Offset: '0xd4'
-    Size: '0x4'
-    Type: char
   - Name: TimeDelay
     Offset: '0xd8'
     Size: '0x8'
-    Type: struct Timespan
+    Type: struct
   - Name: HorizontalFieldOfView
     Offset: '0xe0'
     Size: '0x4'
@@ -117,19 +123,11 @@ MediaPlayer:
   - Name: ViewRotation
     Offset: '0xe8'
     Size: '0xc'
-    Type: struct Rotator
-  - Name: pad0x64_8R7L6[0x64]
-    Offset: '0xf4'
-    Size: '0x64'
-    Type: char
+    Type: struct
   - Name: PlayerGuid
     Offset: '0x158'
     Size: '0x10'
-    Type: struct Guid
-  - Name: pad0x8_V88TI[0x8]
-    Offset: '0x168'
-    Size: '0x8'
-    Type: char
+    Type: struct
   ClassSize: '0x148'
   FullSize: '0x170'
   InheritedSize: '0x28'
@@ -142,16 +140,6 @@ MediaPlaylist:
     Type: TArray<class MediaSource*>
   ClassSize: '0x10'
   FullSize: '0x38'
-  InheritedSize: '0x28'
-  Super: Object
-MediaSource:
-  Attributes:
-  - Name: pad0x58_MQ94T[0x58]
-    Offset: '0x28'
-    Size: '0x58'
-    Type: char
-  ClassSize: '0x58'
-  FullSize: '0x80'
   InheritedSize: '0x28'
   Super: Object
 MediaTexture:
@@ -168,14 +156,10 @@ MediaTexture:
     Offset: '0x142'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_NPKK5[0x1]
-    Offset: '0x143'
-    Size: '0x1'
-    Type: char
   - Name: ClearColor
     Offset: '0x144'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
   - Name: EnableGenMips
     Offset: '0x154'
     Size: '0x1'
@@ -200,18 +184,10 @@ MediaTexture:
     Offset: '0x15c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_C931H[0x3]
-    Offset: '0x15d'
-    Size: '0x3'
-    Type: char
   - Name: MediaPlayer
     Offset: '0x160'
     Size: '0x8'
     Type: class MediaPlayer*
-  - Name: pad0xc8_KBTOK[0xc8]
-    Offset: '0x168'
-    Size: '0xc8'
-    Type: char
   ClassSize: '0xf0'
   FullSize: '0x230'
   InheritedSize: '0x140'
@@ -221,11 +197,7 @@ MediaTimeStampInfo:
   - Name: Time
     Offset: '0x28'
     Size: '0x8'
-    Type: struct Timespan
-  - Name: pad0x8_8LBOU[0x8]
-    Offset: '0x30'
-    Size: '0x8'
-    Type: char
+    Type: struct
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -270,10 +242,6 @@ TimeSynchronizableMediaSource:
     Offset: '0x88'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_QSN94[0x3]
-    Offset: '0x89'
-    Size: '0x3'
-    Type: char
   - Name: FrameDelay
     Offset: '0x8c'
     Size: '0x4'

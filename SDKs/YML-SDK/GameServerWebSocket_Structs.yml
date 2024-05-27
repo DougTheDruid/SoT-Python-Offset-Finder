@@ -39,15 +39,11 @@ EventOverMemoryThreshold:
   - Name: ServerTimeUTC
     Offset: '0x10'
     Size: '0x8'
-    Type: struct DateTime
+    Type: struct
   - Name: MemoryUsedPercentage
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_90DUU[0x4]
-    Offset: '0x1c'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x20'
 GameServerWebSocketEntityEvent:
   Attributes:
@@ -62,7 +58,7 @@ GameServerWebSocketEntityEvent:
   - Name: ServerTimeUTC
     Offset: '0x20'
     Size: '0x8'
-    Type: struct DateTime
+    Type: struct
   ClassSize: '0x28'
 GlobalEventSubscriptionGameServerRequestModel:
   Attributes:

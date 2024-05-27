@@ -27,12 +27,6 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_AX4OH[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
         "Name": "TriggerEvents",
         "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
@@ -48,12 +42,6 @@
         "Type": "class AudioReportReaction*",
         "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x8_Z561L[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },

@@ -6,22 +6,18 @@ LiquidTypeParams:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_JMFEY[0x3]
-    Offset: '0x1'
-    Size: '0x3'
-    Type: char
   - Name: FogColour
     Offset: '0x4'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: LiquidColour
     Offset: '0x10'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: ScumColour
     Offset: '0x1c'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: EdgeScumStart
     Offset: '0x28'
     Size: '0x4'

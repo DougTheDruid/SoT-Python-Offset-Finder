@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "StatusApplied",
-        "Type": "struct Status",
+        "Type": "struct",
         "Size": "0x18",
         "Offset": "0x0"
       },
@@ -13,12 +13,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x7_WQRII[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x19"
       }
     ]
   },

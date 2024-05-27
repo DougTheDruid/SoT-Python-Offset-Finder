@@ -5,14 +5,14 @@ CrewFailedToJoinGameEventOnDemand:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x10'
 CrewJoinedGameEventOnDemand:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x10'
 GameEventAvailabilityData:
   Attributes:
@@ -28,10 +28,6 @@ GameEventAvailabilityData:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_OHOJ7[0x6]
-    Offset: '0x12'
-    Size: '0x6'
-    Type: char
   - Name: ShipSizeLimit
     Offset: '0x18'
     Size: '0x8'
@@ -57,7 +53,7 @@ GameEventOnDemandBaseTelemetryFragment:
   - Name: GameEventOnDemandId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x20'
 GameEventOnDemandBaseTelemetryFragmentInput:
   Attributes:
@@ -68,7 +64,7 @@ GameEventOnDemandBaseTelemetryFragmentInput:
   - Name: GameEventOnDemandId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x20'
 GameEventOnDemandCompletedTelemetryEvent:
   Attributes:
@@ -85,13 +81,6 @@ GameEventOnDemandCompletedTelemetryEvent:
     Size: '0x10'
     Type: TArray<struct Guid>
   ClassSize: '0x30'
-GameEventOnDemandCrewCancelledVoyageTelemetryEvent:
-  Attributes:
-  - Name: pad0x1_Y6AKE[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
 GameEventOnDemandCrewJoinedTelemetryEvent:
   Attributes:
   - Name: ShipType
@@ -103,27 +92,13 @@ GameEventOnDemandCrewJoinedTelemetryEvent:
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x20'
-GameEventOnDemandCrewScuttledTelemetryEvent:
-  Attributes:
-  - Name: pad0x1_6FJGC[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
 GameEventOnDemandCrewSentToSinkingTunnel:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x10'
-GameEventOnDemandCrewSinkingTelemetryEvent:
-  Attributes:
-  - Name: pad0x1_LN2FQ[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
 GameEventOnDemandDeactivated:
   Attributes:
   - Name: OnDemandCrewIds

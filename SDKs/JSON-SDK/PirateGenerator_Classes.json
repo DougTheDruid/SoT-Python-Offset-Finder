@@ -1,86 +1,4 @@
 {
-  "WardrobeOutfitDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "FemaleWardrobeItems",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MaleWardrobeItems",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "BiasPerCategory",
-        "Type": "TArray<struct WardrobeOutfitCategoryBias>",
-        "Size": "0x10",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "MaterialReferencesDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MaterialReferences",
-        "Type": "TArray<struct MaterialReferencesEntry>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "ColorTexture": {
-    "Super": "Texture",
-    "FullSize": "0x150",
-    "InheritedSize": "0x140",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Color",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x140"
-      }
-    ]
-  },
-  "PirateGeneratorFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WardrobeFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SkeletonsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x78",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_KMPF0[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "PirateGeneratorSettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x138",
@@ -89,7 +7,7 @@
     "Attributes": [
       {
         "Name": "WardrobeDataAsset",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -125,13 +43,13 @@
       },
       {
         "Name": "MaterialReferencesDataAsset",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x90"
       },
       {
         "Name": "SkeletonsDataAsset",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0xa0"
       },
@@ -155,13 +73,13 @@
       },
       {
         "Name": "FirstPersonAnimations",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0xe0"
       },
       {
         "Name": "ThirdPersonAnimations",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0xf0"
       },
@@ -188,21 +106,8 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x130"
-      },
-      {
-        "Name": "pad0x4_ZIRO1[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x134"
       }
     ]
-  },
-  "FileAccessFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "CharacterMeshBakeSpecification": {
     "Super": "Object",
@@ -215,12 +120,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x7_1PYRK[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x29"
       },
       {
         "Name": "CharacterMesh",
@@ -272,27 +171,6 @@
       }
     ]
   },
-  "PirateBodyShapeFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WardrobeExcludeDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PreparePirateMeshBakeTestFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "TextureSwitch": {
     "Super": "TextureProxy",
     "FullSize": "0x228",
@@ -300,76 +178,16 @@
     "ClassSize": "0xe0",
     "Attributes": [
       {
-        "Name": "pad0x80_1ULNG[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0x148"
-      },
-      {
         "Name": "bDuplicated",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1c8"
       },
       {
-        "Name": "pad0x7_K1501[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1c9"
-      },
-      {
         "Name": "DefaultParameters",
-        "Type": "struct TextureSwitchParameters",
+        "Type": "struct",
         "Size": "0x58",
         "Offset": "0x1d0"
-      }
-    ]
-  },
-  "CharacterMeshBakeFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WardrobeDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "pad0xa0_L39IB[0xa0]",
-        "Type": "char",
-        "Size": "0xa0",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "AssetMap",
-        "Type": "TArray<struct MeshPatchEntry>",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      }
-    ]
-  },
-  "CharacterMeshBakeTestFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PirateGeneratorMaterials": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Materials",
-        "Type": "TArray<class MaterialInterface*>",
-        "Size": "0x10",
-        "Offset": "0x28"
       }
     ]
   },
@@ -386,16 +204,126 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_HR1TF[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
         "Name": "Entries",
         "Type": "TArray<struct AnimationSwitchEntry>",
         "Size": "0x10",
         "Offset": "0x30"
+      }
+    ]
+  },
+  "WardrobeDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "AssetMap",
+        "Type": "TArray<struct MeshPatchEntry>",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "WardrobeOutfitDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "FemaleWardrobeItems",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MaleWardrobeItems",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "BiasPerCategory",
+        "Type": "TArray<struct WardrobeOutfitCategoryBias>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "MaterialReferencesDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MaterialReferences",
+        "Type": "TArray<struct MaterialReferencesEntry>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "PirateGeneratorMaterials": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Materials",
+        "Type": "TArray<class MaterialInterface*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ColorTexture": {
+    "Super": "Texture",
+    "FullSize": "0x150",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Color",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x140"
+      }
+    ]
+  },
+  "TextureSwitchByGender": {
+    "Super": "TextureSwitch",
+    "FullSize": "0x238",
+    "InheritedSize": "0x228",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Entries",
+        "Type": "TArray<struct TextureSwitchGenderEntry>",
+        "Size": "0x10",
+        "Offset": "0x228"
+      }
+    ]
+  },
+  "TextureSwitchByItem": {
+    "Super": "TextureSwitch",
+    "FullSize": "0x248",
+    "InheritedSize": "0x228",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "FallbackTexture",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x228"
+      },
+      {
+        "Name": "Entries",
+        "Type": "TArray<struct TextureSwitchItemEntry>",
+        "Size": "0x10",
+        "Offset": "0x238"
       }
     ]
   },
@@ -424,14 +352,8 @@
         "Offset": "0x234"
       },
       {
-        "Name": "pad0x4_W8OGG[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x23c"
-      },
-      {
         "Name": "FallbackTexture",
-        "Type": "struct StringAssetReference",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x240"
       },
@@ -474,40 +396,6 @@
         "Type": "TArray<struct TextureSwitchBodyShapeEntry>",
         "Size": "0x10",
         "Offset": "0x228"
-      }
-    ]
-  },
-  "TextureSwitchByGender": {
-    "Super": "TextureSwitch",
-    "FullSize": "0x238",
-    "InheritedSize": "0x228",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Entries",
-        "Type": "TArray<struct TextureSwitchGenderEntry>",
-        "Size": "0x10",
-        "Offset": "0x228"
-      }
-    ]
-  },
-  "TextureSwitchByItem": {
-    "Super": "TextureSwitch",
-    "FullSize": "0x248",
-    "InheritedSize": "0x228",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "FallbackTexture",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x228"
-      },
-      {
-        "Name": "Entries",
-        "Type": "TArray<struct TextureSwitchItemEntry>",
-        "Size": "0x10",
-        "Offset": "0x238"
       }
     ]
   },

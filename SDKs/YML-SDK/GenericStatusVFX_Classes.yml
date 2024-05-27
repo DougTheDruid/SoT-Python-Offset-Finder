@@ -2,10 +2,6 @@
 # https://github.com/DougTheDruid
 GenericStatusVFXComponent:
   Attributes:
-  - Name: pad0x8_EDVR3[0x8]
-    Offset: '0xc8'
-    Size: '0x8'
-    Type: char
   - Name: VFXComponent
     Offset: '0xd0'
     Size: '0x8'
@@ -14,26 +10,14 @@ GenericStatusVFXComponent:
     Offset: '0xd8'
     Size: '0x8'
     Type: class World*
-  - Name: pad0x20_MOPDZ[0x20]
-    Offset: '0xe0'
-    Size: '0x20'
-    Type: char
   - Name: VFXDataAsset
     Offset: '0x100'
     Size: '0x8'
     Type: class GenericStatusVFXDataAsset*
-  - Name: pad0x18_KOVVT[0x18]
-    Offset: '0x108'
-    Size: '0x18'
-    Type: char
   - Name: ContainsVFXSource
     Offset: '0x120'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_6QK0C[0x7]
-    Offset: '0x121'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x60'
   FullSize: '0x128'
   InheritedSize: '0xc8'
@@ -43,7 +27,7 @@ GenericStatusVFXDataAsset:
   - Name: VFXStatus
     Offset: '0x28'
     Size: '0x18'
-    Type: struct Status
+    Type: struct
   - Name: VFXSystem
     Offset: '0x40'
     Size: '0x8'
@@ -60,24 +44,14 @@ GenericStatusVFXDataAsset:
     Offset: '0x50'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x8_A2D5Q[0x8]
-    Offset: '0x58'
-    Size: '0x8'
-    Type: char
   - Name: SocketRelativeOffset
     Offset: '0x60'
     Size: '0x30'
-    Type: struct Transform
+    Type: struct
   ClassSize: '0x68'
   FullSize: '0x90'
   InheritedSize: '0x28'
   Super: DataAsset
-GenericStatusVFXInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 GenericStatusVFXResponse:
   Attributes:
   - Name: VFXDataAsset

@@ -5,58 +5,12 @@
 
 
 
-// Size 0x90
-struct LevelOfDamageProperties
-{
-public:
-	float                                                        LeakAmount;                                        // 0x0(0x4)
-	float                                                        RepairTime;                                        // 0x4(0x4)
-	float                                                        UndoRepairTime;                                    // 0x8(0x4)
-	float                                                        NonOwningCrewUndoRepairTime;                       // 0xc(0x4)
-	class MaterialInterface*                                     HoleDecalMaterial;                                 // 0x10(0x8)
-	char                                                         pad0x8_YIZ8B[0x8];                                 // 0x18(0x8)
-	struct Transform                                             HoleDecalComponentTransform;                       // 0x20(0x30)
-	struct Vector                                                ParticleSystemComponentLocation;                   // 0x50(0xc)
-	float                                                        InternalWaterSamplePositionTopOffset;              // 0x5c(0x4)
-	float                                                        InternalWaterSamplePositionBottomOffset;           // 0x60(0x4)
-	char                                                         pad0x4_AK57C[0x4];                                 // 0x64(0x4)
-	class ParticleSystem*                                        ParticleSystem_WaterLeakAboveWater;                // 0x68(0x8)
-	class ParticleSystem*                                        ParticleSystem_WaterLeakBelowWater;                // 0x70(0x8)
-	class ParticleSystem*                                        ParticleSystem_RepairLeakAboveWater;               // 0x78(0x8)
-	class ParticleSystem*                                        ParticleSystem_RepairLeakBelowWater;               // 0x80(0x8)
-	class ParticleSystem*                                        ParticleSystem_SplashOnInternalWaterSurface;       // 0x88(0x8)
-};
-
-
 // Size 0x60
 struct EventShipDamaged
 {
 public:
 	class Actor*                                                 Ship;                                              // 0x0(0x8)
-	struct ImpactDamageEvent                                     ImpactDamageEvent;                                 // 0x8(0x58)
-};
-
-
-// Size 0x1c
-struct HullDamageHit
-{
-public:
-	struct Vector                                                HitPosition;                                       // 0x0(0xc)
-	struct Vector                                                HitNormal;                                         // 0xc(0xc)
-	bool                                                         HasDecal;                                          // 0x18(0x1)
-	char                                                         pad0x3_U0M1K[0x3];                                 // 0x19(0x3)
-};
-
-
-// Size 0x70
-struct EventShipDamageApplied
-{
-public:
-	class Actor*                                                 Ship;                                              // 0x0(0x8)
-	struct FName                                                 DamagedShipPartIdentifier;                         // 0x8(0x8)
-	int                                                          NewDamageLevel;                                    // 0x10(0x4)
-	char                                                         pad0x4_2WT7C[0x4];                                 // 0x14(0x4)
-	struct ImpactDamageEvent                                     ImpactDamageEvent;                                 // 0x18(0x58)
+	struct                                                       ImpactDamageEvent;                                 // 0x8(0x58)
 };
 
 
@@ -68,25 +22,6 @@ public:
 };
 
 
-// Size 0x10
-struct DamageZoneDamageLevelChanged
-{
-public:
-	class Actor*                                                 DamageZone;                                        // 0x0(0x8)
-	int                                                          DamageLevel;                                       // 0x8(0x4)
-	char                                                         pad0x4_T9CIK[0x4];                                 // 0xc(0x4)
-};
-
-
-// Size 0x20
-struct SendShipRestoredRpc
-{
-public:
-	char                                                         pad0x10_JPXEF[0x10];                               // 0x0(0x10)
-	struct Guid                                                  CrewId;                                            // 0x10(0x10)
-};
-
-
 // Size 0x14
 struct DistanceAndLevelOfDamage
 {
@@ -94,10 +29,37 @@ public:
 	float                                                        DistanceLimit;                                     // 0x0(0x4)
 	int                                                          LevelOfDamage;                                     // 0x4(0x4)
 	bool                                                         CannotDamageAboveLimit;                            // 0x8(0x1)
-	char                                                         pad0x3_OWDXG[0x3];                                 // 0x9(0x3)
 	int                                                          DamageLimit;                                       // 0xc(0x4)
 	bool                                                         ShouldOnlyDamageOneHullDeckLevel;                  // 0x10(0x1)
-	char                                                         pad0x3_BMP6G[0x3];                                 // 0x11(0x3)
+};
+
+
+// Size 0x1c
+struct HullDamageHit
+{
+public:
+	struct                                                       HitPosition;                                       // 0x0(0xc)
+	struct                                                       HitNormal;                                         // 0xc(0xc)
+	bool                                                         HasDecal;                                          // 0x18(0x1)
+};
+
+
+// Size 0x70
+struct EventShipDamageApplied
+{
+public:
+	class Actor*                                                 Ship;                                              // 0x0(0x8)
+	struct FName                                                 DamagedShipPartIdentifier;                         // 0x8(0x8)
+	int                                                          NewDamageLevel;                                    // 0x10(0x4)
+	struct                                                       ImpactDamageEvent;                                 // 0x18(0x58)
+};
+
+
+// Size 0x28
+struct SendShipRestoredRpc
+{
+public:
+	struct                                                       CrewId;                                            // 0x18(0x10)
 };
 
 
@@ -110,11 +72,33 @@ public:
 };
 
 
-// Size 0x10
-struct ShipRestoredNetworkEvent
+// Size 0x90
+struct LevelOfDamageProperties
 {
 public:
-	char                                                         pad0x10_J4TM5[0x10];                               // 0x0(0x10)
+	float                                                        LeakAmount;                                        // 0x0(0x4)
+	float                                                        RepairTime;                                        // 0x4(0x4)
+	float                                                        UndoRepairTime;                                    // 0x8(0x4)
+	float                                                        NonOwningCrewUndoRepairTime;                       // 0xc(0x4)
+	class MaterialInterface*                                     HoleDecalMaterial;                                 // 0x10(0x8)
+	struct                                                       HoleDecalComponentTransform;                       // 0x20(0x30)
+	struct                                                       ParticleSystemComponentLocation;                   // 0x50(0xc)
+	float                                                        InternalWaterSamplePositionTopOffset;              // 0x5c(0x4)
+	float                                                        InternalWaterSamplePositionBottomOffset;           // 0x60(0x4)
+	class ParticleSystem*                                        ParticleSystem_WaterLeakAboveWater;                // 0x68(0x8)
+	class ParticleSystem*                                        ParticleSystem_WaterLeakBelowWater;                // 0x70(0x8)
+	class ParticleSystem*                                        ParticleSystem_RepairLeakAboveWater;               // 0x78(0x8)
+	class ParticleSystem*                                        ParticleSystem_RepairLeakBelowWater;               // 0x80(0x8)
+	class ParticleSystem*                                        ParticleSystem_SplashOnInternalWaterSurface;       // 0x88(0x8)
+};
+
+
+// Size 0x10
+struct DamageZoneDamageLevelChanged
+{
+public:
+	class Actor*                                                 DamageZone;                                        // 0x0(0x8)
+	int                                                          DamageLevel;                                       // 0x8(0x4)
 };
 
 
@@ -126,7 +110,6 @@ public:
 	int                                                          DamageLevel;                                       // 0x10(0x4)
 	int                                                          RepairedDamageLevel;                               // 0x14(0x4)
 	char                                                         RepairableState;                                   // 0x18(0x1)
-	char                                                         pad0x7_ASSDG[0x7];                                 // 0x19(0x7)
 	TArray<struct HullDamageHit>                                 ExternalHitList;                                   // 0x20(0x10)
 };
 
@@ -135,10 +118,9 @@ public:
 struct ShipPartLevelsOfDamage
 {
 public:
-	char                                                         pad0x20_TJ0ZZ[0x20];                               // 0x0(0x20)
+	assetclass                                                   ActorClass;                                        // 0x0(0x20)
 	TArray<struct DistanceAndLevelOfDamage>                      DamagePerDistance;                                 // 0x20(0x10)
-	struct FeatureFlag                                           FeatureName;                                       // 0x30(0xc)
-	char                                                         pad0x4_0TLH8[0x4];                                 // 0x3c(0x4)
+	struct                                                       FeatureName;                                       // 0x30(0xc)
 };
 
 

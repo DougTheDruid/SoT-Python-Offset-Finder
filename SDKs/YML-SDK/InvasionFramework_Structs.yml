@@ -12,71 +12,55 @@ CrewMatchmakingCancelledDueToInvasion:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x10'
 CrewStartedInvasion:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x10'
 CrewStoppedInvasion:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x10'
 InvasionBannerNetworkEvent:
   Attributes:
-  - Name: pad0x10_8C4G3[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
   - Name: Message
-    Offset: '0x10'
+    Offset: '0x18'
     Size: '0x38'
     Type: struct FText
   - Name: CrewId
-    Offset: '0x48'
+    Offset: '0x50'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: Faction
-    Offset: '0x58'
+    Offset: '0x60'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_UAYCD[0x3]
-    Offset: '0x59'
-    Size: '0x3'
-    Type: char
   - Name: Tag
-    Offset: '0x5c'
+    Offset: '0x64'
     Size: '0x8'
     Type: struct FName
   - Name: DisableMusic
-    Offset: '0x64'
+    Offset: '0x6c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_2U8Q0[0x3]
-    Offset: '0x65'
-    Size: '0x3'
-    Type: char
-  ClassSize: '0x68'
+  ClassSize: '0x70'
 InvasionCrewData:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: InvasionStatus
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_WMGJ3[0x3]
-    Offset: '0x11'
-    Size: '0x3'
-    Type: char
   - Name: FactionIdentifier
     Offset: '0x14'
     Size: '0x8'
@@ -85,10 +69,6 @@ InvasionCrewData:
     Offset: '0x1c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_M9Z9T[0x3]
-    Offset: '0x1d'
-    Size: '0x3'
-    Type: char
   ClassSize: '0x20'
 InvasionEndedTelemetryEvent:
   Attributes:
@@ -99,15 +79,11 @@ InvasionEndedTelemetryEvent:
   - Name: Winner
     Offset: '0x10'
     Size: '0x20'
-    Type: struct InvasionCrewData
+    Type: struct
   - Name: InvasionDurationInSeconds
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_BCKF1[0x4]
-    Offset: '0x34'
-    Size: '0x4'
-    Type: char
   - Name: ParticipantFactionData
     Offset: '0x38'
     Size: '0x10'
@@ -116,10 +92,6 @@ InvasionEndedTelemetryEvent:
     Offset: '0x48'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_6T36R[0x7]
-    Offset: '0x49'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x50'
 InvasionParticipatingCrewData:
   Attributes:
@@ -131,36 +103,28 @@ InvasionParticipatingCrewData:
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<class CrewVoyageParticipant*>
-  - Name: pad0x58_29I22[0x58]
-    Offset: '0x20'
-    Size: '0x58'
-    Type: char
   ClassSize: '0x78'
 InvasionServiceMatchmakingCrewInfo:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: CrewSessionType
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_VI5BA[0x3]
-    Offset: '0x11'
-    Size: '0x3'
-    Type: char
   ClassSize: '0x14'
 ReplicatedInvasionCrewMusicState:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: CurrentTimeStampedMusicState
     Offset: '0x10'
     Size: '0x18'
-    Type: struct TimeStampedShipDiveMusicState
+    Type: struct
   ClassSize: '0x28'
 TaleDisplayedInvasionBanner:
   Attributes:

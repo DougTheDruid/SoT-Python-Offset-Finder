@@ -5,22 +5,13 @@
 
 
 
-// Size 0xe0
-struct BlueprintSessionResult
-{
-public:
-	char                                                         pad0xe0_0HO8I[0xe0];                               // 0x0(0xe0)
-};
-
-
 // Size 0x30
 struct PlayerReservation
 {
 public:
-	struct UniqueNetIdRepl                                       UniqueId;                                          // 0x0(0x18)
+	struct                                                       UniqueId;                                          // 0x0(0x18)
 	struct FString                                               ValidationStr;                                     // 0x18(0x10)
 	float                                                        ElapsedTime;                                       // 0x28(0x4)
-	char                                                         pad0x4_9M5MU[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -29,8 +20,7 @@ struct PartyReservation
 {
 public:
 	int                                                          TeamNum;                                           // 0x0(0x4)
-	char                                                         pad0x4_K9TJ9[0x4];                                 // 0x4(0x4)
-	struct UniqueNetIdRepl                                       PartyLeader;                                       // 0x8(0x18)
+	struct                                                       PartyLeader;                                       // 0x8(0x18)
 	TArray<struct PlayerReservation>                             PartyMembers;                                      // 0x20(0x10)
 };
 

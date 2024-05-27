@@ -5,154 +5,11 @@
 
 
 
-// Size 0x30
-struct QuestVariableItemInfo
-{
-public:
-	char                                                         pad0x30_E4D11[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x10
-struct TaleQuestPredicateBranchedTaskDesc
-{
-public:
-	int                                                          BranchIndex;                                       // 0x0(0x4)
-	char                                                         pad0x4_D36GO[0x4];                                 // 0x4(0x4)
-	class TaleQuestStepDesc*                                     BranchedTask;                                      // 0x8(0x8)
-};
-
-
-// Size 0x30
-struct QuestVariableMerchantItemArray
-{
-public:
-	char                                                         pad0x30_J4MCV[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0xc
-struct PhaseBranchIndexPlayerAssignment
-{
-public:
-	char                                                         pad0x8_9WAEN[0x8];                                 // 0x0(0x8)
-	int                                                          AssignedPhaseBranchIndex;                          // 0x8(0x4)
-};
-
-
-// Size 0x30
-struct QuestVariableAny
-{
-public:
-	char                                                         pad0x30_2ILTG[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x28
-struct PhasedItem
-{
-public:
-	class ItemProxy*                                             ItemProxy;                                         // 0x0(0x8)
-	class ItemInfo*                                              ItemInfo;                                          // 0x8(0x8)
-	bool                                                         Tracked;                                           // 0x10(0x1)
-	char                                                         pad0x17_KGJGZ[0x17];                               // 0x11(0x17)
-};
-
-
-// Size 0x38
-struct TaleQuestDeliveryRequest
-{
-public:
-	int                                                          Id;                                                // 0x0(0x4)
-	char                                                         pad0x4_5YHSR[0x4];                                 // 0x4(0x4)
-	struct MerchantContractItemDesc                              Item;                                              // 0x8(0x28)
-	int                                                          NumToDeliver;                                      // 0x30(0x4)
-	int                                                          NumToAllocate;                                     // 0x34(0x4)
-};
-
-
-// Size 0x60
-struct SnapshottedActorData
-{
-public:
-	char                                                         pad0x10_IIEXP[0x10];                               // 0x0(0x10)
-	struct Guid                                                  SnapshotID;                                        // 0x10(0x10)
-	bool                                                         ActorWasCritical;                                  // 0x20(0x1)
-	bool                                                         ActorWasTracked;                                   // 0x21(0x1)
-	char                                                         pad0x6_68RK8[0x6];                                 // 0x22(0x6)
-	struct FText                                                 FailureMessage;                                    // 0x28(0x38)
-};
-
-
-// Size 0x30
-struct QuestVariableRotator
-{
-public:
-	char                                                         pad0x30_GAJ7B[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x18
-struct DebugTalePhaseBranchAssignedForPlayerEvent
-{
-public:
-	struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	char                                                         pad0x8_V0IFV[0x8];                                 // 0x10(0x8)
-};
-
-
 // Size 0x20
-struct StopMontageAnimationCommand
+struct JumpToMontageSectionCommand
 {
 public:
-	char                                                         pad0x18_648D4[0x18];                               // 0x0(0x18)
-	float                                                        BlendOutTime;                                      // 0x18(0x4)
-	char                                                         pad0x4_BRACU[0x4];                                 // 0x1c(0x4)
-};
-
-
-// Size 0x18
-struct SetDialogueInteractionEnabledClientCommand
-{
-public:
-	char                                                         pad0x8_5WF80[0x8];                                 // 0x0(0x8)
-	class Object*                                                DialogueComponentObject;                           // 0x8(0x8)
-	bool                                                         ShouldBeEnabled;                                   // 0x10(0x1)
-	char                                                         pad0x7_58M3W[0x7];                                 // 0x11(0x7)
-};
-
-
-// Size 0x40
-struct StepMerchantItemDesc
-{
-public:
-	struct FText                                                 Name;                                              // 0x0(0x38)
-	class Texture*                                               Icon;                                              // 0x38(0x8)
-};
-
-
-// Size 0x30
-struct QuestVariableActorAssetTypeArray
-{
-public:
-	char                                                         pad0x30_D4YUA[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x30
-struct QuestVariableClassArray
-{
-public:
-	char                                                         pad0x30_EKACJ[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x40
-struct StepBountyTargetDesc
-{
-public:
-	struct FText                                                 Name;                                              // 0x0(0x38)
-	class Texture*                                               Portrait;                                          // 0x38(0x8)
+	struct FName                                                 SectionName;                                       // 0x18(0x8)
 };
 
 
@@ -162,420 +19,6 @@ struct CriticalActorDelegateData
 public:
 	class Actor*                                                 CriticalActor;                                     // 0x0(0x8)
 	struct FText                                                 FailureMessage;                                    // 0x8(0x38)
-	char                                                         pad0x8_BQXP0[0x8];                                 // 0x40(0x8)
-};
-
-
-// Size 0x30
-struct QuestVariableLinkEQSContext
-{
-public:
-	char                                                         pad0x30_NMGGU[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x30
-struct QuestVariableActorArray
-{
-public:
-	char                                                         pad0x30_5GHIJ[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x20
-struct InteractionOptionSelectedWithQueryableStateNonUI
-{
-public:
-	class UClass*                                                DataID;                                            // 0x0(0x8)
-	struct Guid                                                  InstigatorCrewID;                                  // 0x8(0x10)
-	class Actor*                                                 InteractingPlayer;                                 // 0x18(0x8)
-};
-
-
-// Size 0x18
-struct PlaySequencerAutomationEvent
-{
-public:
-	char                                                         pad0x18_7D3UV[0x18];                               // 0x0(0x18)
-};
-
-
-// Size 0x30
-struct QuestVariableItemDescTypeArray
-{
-public:
-	char                                                         pad0x30_WLZM3[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x20
-struct TaleQuestFailedEvent
-{
-public:
-	TArray<struct Guid>                                          CrewIds;                                           // 0x0(0x10)
-	struct Guid                                                  QuestId;                                           // 0x10(0x10)
-};
-
-
-// Size 0x40
-struct TaleQuestQueryableStateCanAnyDataBeReadCondition
-{
-public:
-	char                                                         pad0x28_EWC9N[0x28];                               // 0x0(0x28)
-	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
-	bool                                                         ExpectedValue;                                     // 0x38(0x1)
-	char                                                         pad0x7_3HL9Z[0x7];                                 // 0x39(0x7)
-};
-
-
-// Size 0x20
-struct PlayMontageAnimationCommand
-{
-public:
-	char                                                         pad0x18_1KSQ6[0x18];                               // 0x0(0x18)
-	float                                                        PlayRate;                                          // 0x18(0x4)
-	float                                                        Position;                                          // 0x1c(0x4)
-};
-
-
-// Size 0x30
-struct QuestVariableGuidArray
-{
-public:
-	char                                                         pad0x30_XMR4P[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x30
-struct QuestVariableTexture
-{
-public:
-	char                                                         pad0x30_5UNMJ[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x30
-struct QuestVariableAISpawner
-{
-public:
-	char                                                         pad0x30_J4QIE[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x40
-struct CriticalActorWrapper
-{
-public:
-	class Actor*                                                 CriticalActor;                                     // 0x0(0x8)
-	char                                                         pad0x38_IDMK7[0x38];                               // 0x8(0x38)
-};
-
-
-// Size 0x48
-struct CompondNodePinDesc
-{
-public:
-	struct FText                                                 DisplayName;                                       // 0x0(0x38)
-	struct Guid                                                  PinId;                                             // 0x38(0x10)
-};
-
-
-// Size 0x10
-struct MigrationActionPair
-{
-public:
-	struct TaleResourceHandle                                    AllocatedResourceHandle;                           // 0x0(0x8)
-	class TaleMigrationAction*                                   MigrationAction;                                   // 0x8(0x8)
-};
-
-
-// Size 0x48
-struct PredicatedBranchedTask
-{
-public:
-	char                                                         pad0x48_OX65G[0x48];                               // 0x0(0x48)
-};
-
-
-// Size 0x48
-struct SetDialogueInteractionPromptClientCommand
-{
-public:
-	char                                                         pad0x8_WT40W[0x8];                                 // 0x0(0x8)
-	class NPCDialogComponent*                                    DialogueComponent;                                 // 0x8(0x8)
-	struct FText                                                 Prompt;                                            // 0x10(0x38)
-};
-
-
-// Size 0x20
-struct ToggleModalInteractionNetworkEvent
-{
-public:
-	char                                                         pad0x10_7BUTE[0x10];                               // 0x0(0x10)
-	class Actor*                                                 TargetActor;                                       // 0x10(0x8)
-	bool                                                         InteractionBlocked;                                // 0x18(0x1)
-	char                                                         pad0x7_EU4PY[0x7];                                 // 0x19(0x7)
-};
-
-
-// Size 0x30
-struct QuestVariableItemDescType
-{
-public:
-	char                                                         pad0x30_5G8EU[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x18
-struct TriggerOnScreenParticlesRpc
-{
-public:
-	char                                                         pad0x10_H965F[0x10];                               // 0x0(0x10)
-	class ParticleSystem*                                        Particles;                                         // 0x10(0x8)
-};
-
-
-// Size 0x20
-struct TaleQuestQueryableStateDataInfoId
-{
-public:
-	struct Guid                                                  MyTaleId;                                          // 0x0(0x10)
-	struct Guid                                                  MyScopeId;                                         // 0x10(0x10)
-};
-
-
-// Size 0x1
-struct SplineFootprintPathTool
-{
-public:
-	char                                                         pad0x1_OG9NK[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x20
-struct JumpToMontageSectionCommand
-{
-public:
-	char                                                         pad0x18_H1PWJ[0x18];                               // 0x0(0x18)
-	struct FName                                                 SectionName;                                       // 0x18(0x8)
-};
-
-
-// Size 0x40
-struct TaleQuestQueryableStateReadAnyValueBoolCondition
-{
-public:
-	char                                                         pad0x28_V2Q9U[0x28];                               // 0x0(0x28)
-	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
-	bool                                                         ExpectedValue;                                     // 0x38(0x1)
-	char                                                         pad0x7_QK98Y[0x7];                                 // 0x39(0x7)
-};
-
-
-// Size 0x10
-struct TrackedActorData
-{
-public:
-	class Actor*                                                 Actor;                                             // 0x0(0x8)
-	char                                                         pad0x8_QYWK8[0x8];                                 // 0x8(0x8)
-};
-
-
-// Size 0x3
-struct TaleActorSpawnParameters
-{
-public:
-	bool                                                         Tracked;                                           // 0x0(0x1)
-	bool                                                         GatherForMigration;                                // 0x1(0x1)
-	bool                                                         DeferredSpawning;                                  // 0x2(0x1)
-};
-
-
-// Size 0x30
-struct QuestVariableActorAssetType
-{
-public:
-	char                                                         pad0x30_LJA30[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x30
-struct QuestVariableTaleResourceHandle
-{
-public:
-	char                                                         pad0x30_Q11ZF[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x8
-struct ActorSpawnedAutomationEvent
-{
-public:
-	char                                                         pad0x8_HRWEY[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x1
-struct EventSpawnedTallTaleQuestItem
-{
-public:
-	char                                                         pad0x1_L4K6M[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x28
-struct SetNextMontageSectionCommand
-{
-public:
-	char                                                         pad0x18_XYZOE[0x18];                               // 0x0(0x18)
-	struct FName                                                 FromSectionName;                                   // 0x18(0x8)
-	struct FName                                                 ToSectionName;                                     // 0x20(0x8)
-};
-
-
-// Size 0x40
-struct TaleQuestQueryableStateCanAllDataBeReadCondition
-{
-public:
-	char                                                         pad0x28_5LYDD[0x28];                               // 0x0(0x28)
-	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
-	bool                                                         ExpectedValue;                                     // 0x38(0x1)
-	char                                                         pad0x7_DBIOE[0x7];                                 // 0x39(0x7)
-};
-
-
-// Size 0x40
-struct TaleQuestDeliverableItem
-{
-public:
-	struct FText                                                 Name;                                              // 0x0(0x38)
-	class Texture*                                               Icon;                                              // 0x38(0x8)
-};
-
-
-// Size 0x80
-struct TaleQuestDesc
-{
-public:
-	char                                                         pad0x28_POQAK[0x28];                               // 0x0(0x28)
-	class TaleQuestStepDesc*                                     Root;                                              // 0x28(0x8)
-	class Object*                                                Definition;                                        // 0x30(0x8)
-	struct FText                                                 TaleFailMessage;                                   // 0x38(0x38)
-	struct FName                                                 TaleFailBannerTag;                                 // 0x70(0x8)
-	bool                                                         ShouldFireStartTallTaleTrackedObjective;           // 0x78(0x1)
-	bool                                                         Development;                                       // 0x79(0x1)
-	char                                                         pad0x6_WETUD[0x6];                                 // 0x7a(0x6)
-};
-
-
-// Size 0x40
-struct TaleQuestQueryableStateReadAllValueBoolCondition
-{
-public:
-	char                                                         pad0x28_ENEY6[0x28];                               // 0x0(0x28)
-	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
-	bool                                                         ExpectedValue;                                     // 0x38(0x1)
-	char                                                         pad0x7_62F61[0x7];                                 // 0x39(0x7)
-};
-
-
-// Size 0x30
-struct QuestVariableSetEQSTaleContextValue
-{
-public:
-	char                                                         pad0x30_9CBB0[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x18
-struct MontageAnimationCommandBase
-{
-public:
-	char                                                         pad0x8_6H0CP[0x8];                                 // 0x0(0x8)
-	class Actor*                                                 MyTarget;                                          // 0x8(0x8)
-	class AnimMontage*                                           MyMontage;                                         // 0x10(0x8)
-};
-
-
-// Size 0x1
-struct TaleQuestStopPermanentPromptEvent
-{
-public:
-	char                                                         pad0x1_YF97F[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x30
-struct QuestVariablePrioritisedPrompt
-{
-public:
-	char                                                         pad0x30_NLK9I[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x30
-struct QuestVariablePageLayout
-{
-public:
-	char                                                         pad0x30_WVUTK[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x30
-struct TaleQuestPhaseClusterRootActor
-{
-public:
-	char                                                         pad0x30_G783I[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x1
-struct EventModalInteractionStateChanged
-{
-public:
-	bool                                                         IsInteractionBlocked;                              // 0x0(0x1)
-};
-
-
-// Size 0x30
-struct QuestVariableGameEvent
-{
-public:
-	char                                                         pad0x30_2T43D[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x30
-struct QuestVariableCollection
-{
-public:
-	char                                                         pad0x30_ATP9I[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x10
-struct TaleQuestToggledDefinition
-{
-public:
-	struct FName                                                 FeatureToggle;                                     // 0x0(0x8)
-	class UClass*                                                Definition;                                        // 0x8(0x8)
-};
-
-
-// Size 0x18
-struct EndOnScreenParticlesRpc
-{
-public:
-	char                                                         pad0x10_A7UQT[0x10];                               // 0x0(0x10)
-	class ParticleSystem*                                        Particles;                                         // 0x10(0x8)
-};
-
-
-// Size 0x4
-struct TaleQuestSelectorServiceSeedSetTelemetryEvent
-{
-public:
-	int                                                          Seed;                                              // 0x0(0x4)
 };
 
 
@@ -591,11 +34,29 @@ public:
 };
 
 
-// Size 0x28
-struct TaleQuestForEachCrewTask
+// Size 0x40
+struct TaleQuestQueryableStateReadAnyValueBoolCondition
 {
 public:
-	char                                                         pad0x28_Q066F[0x28];                               // 0x0(0x28)
+	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
+	bool                                                         ExpectedValue;                                     // 0x38(0x1)
+};
+
+
+// Size 0x40
+struct TaleQuestQueryableStateCanAnyDataBeReadCondition
+{
+public:
+	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
+	bool                                                         ExpectedValue;                                     // 0x38(0x1)
+};
+
+
+// Size 0x20
+struct StopMontageAnimationCommand
+{
+public:
+	float                                                        BlendOutTime;                                      // 0x18(0x4)
 };
 
 
@@ -603,44 +64,148 @@ public:
 struct TaleQuestQueryableStateReadValueIntCondition
 {
 public:
-	char                                                         pad0x28_CCYAI[0x28];                               // 0x0(0x28)
 	class UClass*                                                DataID;                                            // 0x28(0x8)
 	int                                                          ExpectedValue;                                     // 0x30(0x4)
 	char                                                         ComparisonToExpectedValue;                         // 0x34(0x1)
-	char                                                         pad0x3_1XRRT[0x3];                                 // 0x35(0x3)
 };
 
 
-// Size 0x30
-struct QuestVariableMerchantItem
+// Size 0x10
+struct MigrationActionPair
 {
 public:
-	char                                                         pad0x30_7804B[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x30
-struct QuestVariableArray
-{
-public:
-	char                                                         pad0x30_WJZX3[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x30
-struct QuestVariableBountyTargetArray
-{
-public:
-	char                                                         pad0x30_DLNL7[0x30];                               // 0x0(0x30)
+	struct                                                       AllocatedResourceHandle;                           // 0x0(0x8)
+	class TaleMigrationAction*                                   MigrationAction;                                   // 0x8(0x8)
 };
 
 
 // Size 0x18
-struct TaleQuestCargoRunContractItem
+struct MontageAnimationCommandBase
 {
 public:
-	class UClass*                                                ItemToCollect;                                     // 0x0(0x8)
-	char                                                         pad0x10_G9N47[0x10];                               // 0x8(0x10)
+	class Actor*                                                 MyTarget;                                          // 0x8(0x8)
+	class AnimMontage*                                           MyMontage;                                         // 0x10(0x8)
+};
+
+
+// Size 0x8
+struct ActorSpawnedAutomationEvent
+{
+public:
+	class Actor*                                                 Actor;                                             // 0x0(0x8)
+};
+
+
+// Size 0x10
+struct TaleQuestToggledDefinition
+{
+public:
+	struct FName                                                 FeatureToggle;                                     // 0x0(0x8)
+	class UClass*                                                Definition;                                        // 0x8(0x8)
+};
+
+
+// Size 0x10
+struct TrackedActorData
+{
+public:
+	class Actor*                                                 Actor;                                             // 0x0(0x8)
+};
+
+
+// Size 0x20
+struct TriggerOnScreenParticlesRpc
+{
+public:
+	class ParticleSystem*                                        Particles;                                         // 0x18(0x8)
+};
+
+
+// Size 0x20
+struct TaleQuestFailedEvent
+{
+public:
+	TArray<struct Guid>                                          CrewIds;                                           // 0x0(0x10)
+	struct                                                       QuestId;                                           // 0x10(0x10)
+};
+
+
+// Size 0x38
+struct TaleQuestDeliveryRequest
+{
+public:
+	int                                                          Id;                                                // 0x0(0x4)
+	struct                                                       Item;                                              // 0x8(0x28)
+	int                                                          NumToDeliver;                                      // 0x30(0x4)
+	int                                                          NumToAllocate;                                     // 0x34(0x4)
+};
+
+
+// Size 0x48
+struct CompondNodePinDesc
+{
+public:
+	struct FText                                                 DisplayName;                                       // 0x0(0x38)
+	struct                                                       PinId;                                             // 0x38(0x10)
+};
+
+
+// Size 0x60
+struct SnapshottedActorData
+{
+public:
+	interface                                                    Instagator;                                        // 0x0(0x10)
+	struct                                                       SnapshotID;                                        // 0x10(0x10)
+	bool                                                         ActorWasCritical;                                  // 0x20(0x1)
+	bool                                                         ActorWasTracked;                                   // 0x21(0x1)
+	struct FText                                                 FailureMessage;                                    // 0x28(0x38)
+};
+
+
+// Size 0x28
+struct TaleQuestForEachCrewTask
+{
+public:
+	interface                                                    Task;                                              // 0x0(0x10)
+};
+
+
+// Size 0x80
+struct TaleQuestDesc
+{
+public:
+	class TaleQuestStepDesc*                                     Root;                                              // 0x28(0x8)
+	class Object*                                                Definition;                                        // 0x30(0x8)
+	struct FText                                                 TaleFailMessage;                                   // 0x38(0x38)
+	struct FName                                                 TaleFailBannerTag;                                 // 0x70(0x8)
+	bool                                                         ShouldFireStartTallTaleTrackedObjective;           // 0x78(0x1)
+	bool                                                         Development;                                       // 0x79(0x1)
+};
+
+
+// Size 0x1
+struct EventModalInteractionStateChanged
+{
+public:
+	bool                                                         IsInteractionBlocked;                              // 0x0(0x1)
+};
+
+
+// Size 0xc
+struct PhaseBranchIndexPlayerAssignment
+{
+public:
+	class Controller*                                            Player;                                            // 0x0(0x8)
+	int                                                          AssignedPhaseBranchIndex;                          // 0x8(0x4)
+};
+
+
+// Size 0x40
+struct TaleQuestQueryableStateCanAllDataBeReadCondition
+{
+public:
+	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
+	bool                                                         ExpectedValue;                                     // 0x38(0x1)
 };
 
 
@@ -650,33 +215,97 @@ struct PhasedActor
 public:
 	class Actor*                                                 MapActor;                                          // 0x0(0x8)
 	class Actor*                                                 Actor;                                             // 0x8(0x8)
-	char                                                         pad0x10_R5TEC[0x10];                               // 0x10(0x10)
-};
-
-
-// Size 0x30
-struct QuestVariableObjectArray
-{
-public:
-	char                                                         pad0x30_SQL2U[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x20
-struct ParticpantToolGroup
-{
-public:
-	char                                                         pad0x20_M8SEC[0x20];                               // 0x0(0x20)
 };
 
 
 // Size 0x28
-struct BodyFramePair
+struct PhasedItem
 {
 public:
-	char                                                         pad0x10_GT8Q3[0x10];                               // 0x0(0x10)
-	class TaleQuestIndexedFrame*                                 Frame;                                             // 0x10(0x8)
-	char                                                         pad0x10_LNN02[0x10];                               // 0x18(0x10)
+	class ItemProxy*                                             ItemProxy;                                         // 0x0(0x8)
+	class ItemInfo*                                              ItemInfo;                                          // 0x8(0x8)
+	bool                                                         Tracked;                                           // 0x10(0x1)
+};
+
+
+// Size 0x10
+struct TaleQuestPredicateBranchedTaskDesc
+{
+public:
+	int                                                          BranchIndex;                                       // 0x0(0x4)
+	class TaleQuestStepDesc*                                     BranchedTask;                                      // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct TaleQuestCargoRunContractItem
+{
+public:
+	class UClass*                                                ItemToCollect;                                     // 0x0(0x8)
+};
+
+
+// Size 0x3
+struct TaleActorSpawnParameters
+{
+public:
+	bool                                                         Tracked;                                           // 0x0(0x1)
+	bool                                                         GatherForMigration;                                // 0x1(0x1)
+	bool                                                         DeferredSpawning;                                  // 0x2(0x1)
+};
+
+
+// Size 0x40
+struct TaleQuestQueryableStateReadAllValueBoolCondition
+{
+public:
+	TArray<class Class*>                                         AllDataToCheck;                                    // 0x28(0x10)
+	bool                                                         ExpectedValue;                                     // 0x38(0x1)
+};
+
+
+// Size 0x30
+struct QueryableStateChangedEvent
+{
+public:
+	struct                                                       DataValue;                                         // 0x0(0x30)
+};
+
+
+// Size 0x20
+struct InteractionOptionSelectedWithQueryableStateNonUI
+{
+public:
+	class UClass*                                                DataID;                                            // 0x0(0x8)
+	struct                                                       InstigatorCrewID;                                  // 0x8(0x10)
+	class Actor*                                                 InteractingPlayer;                                 // 0x18(0x8)
+};
+
+
+// Size 0x40
+struct CriticalActorWrapper
+{
+public:
+	class Actor*                                                 CriticalActor;                                     // 0x0(0x8)
+};
+
+
+// Size 0x30
+struct TaleQuestQueryableStateDataInfo
+{
+public:
+	struct                                                       InfoId;                                            // 0x0(0x20)
+	class UClass*                                                DataID;                                            // 0x20(0x8)
+	bool                                                         DataBool;                                          // 0x28(0x1)
+	int                                                          DataInt;                                           // 0x2c(0x4)
+};
+
+
+// Size 0x4
+struct TaleQuestSelectorServiceSeedSetTelemetryEvent
+{
+public:
+	int                                                          Seed;                                              // 0x0(0x4)
 };
 
 
@@ -689,33 +318,126 @@ public:
 };
 
 
+// Size 0x48
+struct PredicatedBranchedTask
+{
+public:
+	interface                                                    Task;                                              // 0x0(0x10)
+};
+
+
 // Size 0x20
+struct PlayMontageAnimationCommand
+{
+public:
+	float                                                        PlayRate;                                          // 0x18(0x4)
+	float                                                        Position;                                          // 0x1c(0x4)
+};
+
+
+// Size 0x28
 struct DebugOnTalePhaseBranchAssignedForPlayerNetworkEvent
 {
 public:
-	char                                                         pad0x10_TRDBK[0x10];                               // 0x0(0x10)
-	struct PhaseBranchIndexPlayerAssignment                      Assignment;                                        // 0x10(0xc)
-	char                                                         pad0x4_004PM[0x4];                                 // 0x1c(0x4)
+	struct                                                       Assignment;                                        // 0x18(0xc)
 };
 
 
-// Size 0x30
-struct TaleQuestQueryableStateDataInfo
+// Size 0x40
+struct TaleQuestDeliverableItem
 {
 public:
-	struct TaleQuestQueryableStateDataInfoId                     InfoId;                                            // 0x0(0x20)
-	class UClass*                                                DataID;                                            // 0x20(0x8)
-	bool                                                         DataBool;                                          // 0x28(0x1)
-	char                                                         pad0x3_BQ6X2[0x3];                                 // 0x29(0x3)
-	int                                                          DataInt;                                           // 0x2c(0x4)
+	struct FText                                                 Name;                                              // 0x0(0x38)
+	class Texture*                                               Icon;                                              // 0x38(0x8)
 };
 
 
-// Size 0x30
-struct QueryableStateChangedEvent
+// Size 0x40
+struct StepBountyTargetDesc
 {
 public:
-	struct TaleQuestQueryableStateDataInfo                       DataValue;                                         // 0x0(0x30)
+	struct FText                                                 Name;                                              // 0x0(0x38)
+	class Texture*                                               Portrait;                                          // 0x38(0x8)
+};
+
+
+// Size 0x18
+struct DebugTalePhaseBranchAssignedForPlayerEvent
+{
+public:
+	struct                                                       CrewId;                                            // 0x0(0x10)
+	class Controller*                                            Player;                                            // 0x10(0x8)
+};
+
+
+// Size 0x28
+struct ToggleModalInteractionNetworkEvent
+{
+public:
+	class Actor*                                                 TargetActor;                                       // 0x18(0x8)
+	bool                                                         InteractionBlocked;                                // 0x20(0x1)
+};
+
+
+// Size 0x28
+struct SetNextMontageSectionCommand
+{
+public:
+	struct FName                                                 FromSectionName;                                   // 0x18(0x8)
+	struct FName                                                 ToSectionName;                                     // 0x20(0x8)
+};
+
+
+// Size 0x48
+struct SetDialogueInteractionPromptClientCommand
+{
+public:
+	class NPCDialogComponent*                                    DialogueComponent;                                 // 0x8(0x8)
+	struct FText                                                 Prompt;                                            // 0x10(0x38)
+};
+
+
+// Size 0x18
+struct SetDialogueInteractionEnabledClientCommand
+{
+public:
+	class Object*                                                DialogueComponentObject;                           // 0x8(0x8)
+	bool                                                         ShouldBeEnabled;                                   // 0x10(0x1)
+};
+
+
+// Size 0x40
+struct StepMerchantItemDesc
+{
+public:
+	struct FText                                                 Name;                                              // 0x0(0x38)
+	class Texture*                                               Icon;                                              // 0x38(0x8)
+};
+
+
+// Size 0x28
+struct BodyFramePair
+{
+public:
+	class TaleQuestIndexedFrame*                                 Frame;                                             // 0x10(0x8)
+	interface                                                    Body;                                              // 0x18(0x10)
+};
+
+
+// Size 0x20
+struct EndOnScreenParticlesRpc
+{
+public:
+	class ParticleSystem*                                        Particles;                                         // 0x18(0x8)
+};
+
+
+// Size 0x20
+struct TaleQuestQueryableStateDataInfoId
+{
+public:
+	struct                                                       MyTaleId;                                          // 0x0(0x10)
+	struct                                                       MyScopeId;                                         // 0x10(0x10)
 };
 
 

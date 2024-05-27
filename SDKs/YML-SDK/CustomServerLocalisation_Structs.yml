@@ -6,10 +6,6 @@ CustomServerClientData:
     Offset: '0x0'
     Size: '0x10'
     Type: struct FString
-  - Name: pad0x10_RDR2F[0x10]
-    Offset: '0x10'
-    Size: '0x10'
-    Type: char
   ClassSize: '0x20'
 CustomServerLocalisationData:
   Attributes:
@@ -24,10 +20,10 @@ CustomServerLocalisationData:
   ClassSize: '0x20'
 CustomServerLocalisationModel:
   Attributes:
-  - Name: pad0x50_7LPLQ[0x50]
+  - Name: LocalisationModelData
     Offset: '0x0'
     Size: '0x50'
-    Type: char
+    Type: map
   ClassSize: '0x50'
 LocPairData:
   Attributes:

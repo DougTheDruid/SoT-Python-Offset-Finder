@@ -5,28 +5,20 @@
 
 
 
-// Size 0x1
-struct EventEndEmoteAnimation
+// Size 0x8
+struct EventEnableLookAtEmoteCamera
 {
 public:
-	char                                                         pad0x1_W0UEA[0x1];                                 // 0x0(0x1)
+	class Actor*                                                 LookAtTarget;                                      // 0x0(0x8)
 };
 
 
 // Size 0xc
-struct EventEmoteCompleted
+struct EventEmoteEndRequested
 {
 public:
-	struct FName                                                 EmoteName;                                         // 0x0(0x8)
-	char                                                         pad0x4_MRA35[0x4];                                 // 0x8(0x4)
-};
-
-
-// Size 0x1
-struct EventDisableLookAtEmoteCamera
-{
-public:
-	char                                                         pad0x1_S4OUH[0x1];                                 // 0x0(0x1)
+	struct FName                                                 EmoteIdentifier;                                   // 0x0(0x8)
+	bool                                                         EndForcedEmote;                                    // 0x8(0x1)
 };
 
 
@@ -36,7 +28,35 @@ struct EmoteDiceOutcomeTelemetryEvent
 public:
 	int                                                          MaxLimit;                                          // 0x0(0x4)
 	int                                                          RollNumber;                                        // 0x4(0x4)
-	struct Vector                                                OrientationUsed;                                   // 0x8(0xc)
+	struct                                                       OrientationUsed;                                   // 0x8(0xc)
+};
+
+
+// Size 0xa0
+struct EmoteData
+{
+public:
+	struct                                                       EmoteId;                                           // 0x0(0x8)
+	struct FText                                                 EmoteDisplayName;                                  // 0x8(0x38)
+	struct FText                                                 AudioDescription;                                  // 0x40(0x38)
+	float                                                        DelayBeforeAllowingExit;                           // 0x78(0x4)
+	float                                                        VerticalOffsetFactorWhenZoomed;                    // 0x7c(0x4)
+	bool                                                         HideNameplate;                                     // 0x80(0x1)
+	class EmotePropData*                                         EmotePropDataAsset;                                // 0x88(0x8)
+	bool                                                         CanPlayInSuccession;                               // 0x90(0x1)
+	bool                                                         ShowDescriptionInTextChat;                         // 0x91(0x1)
+	class AthenaSpringArmComponentParams*                        CustomSpringArmParamsAsset;                        // 0x98(0x8)
+};
+
+
+// Size 0x60
+struct EmoteRandomObjectOutcomeTelemetryEvent
+{
+public:
+	struct FString                                               MeshName;                                          // 0x0(0x10)
+	struct                                                       Transform;                                         // 0x10(0x30)
+	struct FString                                               TextureParameterName;                              // 0x40(0x10)
+	int                                                          TextureParameterValue;                             // 0x50(0x4)
 };
 
 
@@ -46,31 +66,36 @@ struct EmotePropRandomObjectResult
 public:
 	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
 	bool                                                         HasTransformValue;                                 // 0x8(0x1)
-	char                                                         pad0x7_31H65[0x7];                                 // 0x9(0x7)
-	struct Transform                                             Transform;                                         // 0x10(0x30)
+	struct                                                       Transform;                                         // 0x10(0x30)
 	struct FName                                                 TextureParameterName;                              // 0x40(0x8)
 	int                                                          TextureParameterValue;                             // 0x48(0x4)
-	char                                                         pad0x4_BUQKI[0x4];                                 // 0x4c(0x4)
 };
 
 
-// Size 0x60
-struct EmoteRandomObjectOutcomeTelemetryEvent
+// Size 0x30
+struct EmotePropRandomObjectInfo
 {
 public:
-	struct FString                                               MeshName;                                          // 0x0(0x10)
-	struct Transform                                             Transform;                                         // 0x10(0x30)
-	struct FString                                               TextureParameterName;                              // 0x40(0x10)
-	int                                                          TextureParameterValue;                             // 0x50(0x4)
-	char                                                         pad0xc_7VUCY[0xc];                                 // 0x54(0xc)
+	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
+	TArray<struct Transform>                                     PossibleTransforms;                                // 0x8(0x10)
+	struct FName                                                 RandomParameterName;                               // 0x18(0x8)
+	struct                                                       RandomParameterRange;                              // 0x20(0x10)
 };
 
 
-// Size 0x8
-struct EventEnableLookAtEmoteCamera
+// Size 0xa0
+struct EventEmoteSwapped
 {
 public:
-	char                                                         pad0x8_3OQ4W[0x8];                                 // 0x0(0x8)
+	struct                                                       EmoteData;                                         // 0x0(0xa0)
+};
+
+
+// Size 0xa0
+struct EventEmoteStarted
+{
+public:
+	struct                                                       EmoteData;                                         // 0x0(0xa0)
 };
 
 
@@ -82,51 +107,12 @@ public:
 };
 
 
-// Size 0x30
-struct EmotePropRandomObjectInfo
-{
-public:
-	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
-	TArray<struct Transform>                                     PossibleTransforms;                                // 0x8(0x10)
-	struct FName                                                 RandomParameterName;                               // 0x18(0x8)
-	struct Int32Range                                            RandomParameterRange;                              // 0x20(0x10)
-};
-
-
 // Size 0xc
-struct EventEmoteEndRequested
+struct EventEmoteCompleted
 {
 public:
-	struct FName                                                 EmoteIdentifier;                                   // 0x0(0x8)
-	bool                                                         EndForcedEmote;                                    // 0x8(0x1)
-	char                                                         pad0x3_NFVN5[0x3];                                 // 0x9(0x3)
-};
-
-
-// Size 0xa0
-struct EmoteData
-{
-public:
-	struct EmoteId                                               EmoteId;                                           // 0x0(0x8)
-	struct FText                                                 EmoteDisplayName;                                  // 0x8(0x38)
-	struct FText                                                 AudioDescription;                                  // 0x40(0x38)
-	float                                                        DelayBeforeAllowingExit;                           // 0x78(0x4)
-	float                                                        VerticalOffsetFactorWhenZoomed;                    // 0x7c(0x4)
-	bool                                                         HideNameplate;                                     // 0x80(0x1)
-	char                                                         pad0x7_LO9ZB[0x7];                                 // 0x81(0x7)
-	class EmotePropData*                                         EmotePropDataAsset;                                // 0x88(0x8)
-	bool                                                         CanPlayInSuccession;                               // 0x90(0x1)
-	bool                                                         ShowDescriptionInTextChat;                         // 0x91(0x1)
-	char                                                         pad0x6_0JRPK[0x6];                                 // 0x92(0x6)
-	class AthenaSpringArmComponentParams*                        CustomSpringArmParamsAsset;                        // 0x98(0x8)
-};
-
-
-// Size 0xa0
-struct EventEmoteStarted
-{
-public:
-	struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
+	struct FName                                                 EmoteName;                                         // 0x0(0x8)
+	uint32                                                       EmoteDuration;                                     // 0x8(0x4)
 };
 
 
@@ -134,18 +120,9 @@ public:
 struct EventEmoteRequested
 {
 public:
-	struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
+	struct                                                       EmoteData;                                         // 0x0(0xa0)
 	struct FName                                                 ForcedEmoteIdentifier;                             // 0xa0(0x8)
 	bool                                                         ForcedEmote;                                       // 0xa8(0x1)
-	char                                                         pad0x7_0AYR6[0x7];                                 // 0xa9(0x7)
-};
-
-
-// Size 0xa0
-struct EventEmoteSwapped
-{
-public:
-	struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
 };
 
 

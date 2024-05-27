@@ -1,4 +1,92 @@
 {
+  "OceanCrawlerAnimationDataStructure": {
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "LocomotionData",
+        "Type": "struct",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MontageData",
+        "Type": "class CustomAnimationMontageDefinitionListingDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "AttackAnimations",
+        "Type": "class AthenaAnimationWeaponDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "HitReactionData",
+        "Type": "struct",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "SporeBreathData",
+        "Type": "struct",
+        "Size": "0x18",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "AttackInterruptMontages",
+        "Type": "TArray<struct CustomAnimationMontageId>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "DeathMontageId",
+        "Type": "struct",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "SpawnMontageId",
+        "Type": "struct",
+        "Size": "0x8",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "SpawnOnShipMontageId",
+        "Type": "struct",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "SpawnBoardedMontageId",
+        "Type": "struct",
+        "Size": "0x8",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "OceanCrawlerSporeBreathAnimationData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Into",
+        "Type": "class BlendSpace1D*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Locomotion",
+        "Type": "class BlendSpace1D*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Outof",
+        "Type": "class BlendSpace1D*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "OceanCrawlerLocomotionAnimationDataStructure": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -43,94 +131,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2c"
-      }
-    ]
-  },
-  "OceanCrawlerSporeBreathAnimationData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Into",
-        "Type": "class BlendSpace1D*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Locomotion",
-        "Type": "class BlendSpace1D*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Outof",
-        "Type": "class BlendSpace1D*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "OceanCrawlerAnimationDataStructure": {
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "LocomotionData",
-        "Type": "struct OceanCrawlerLocomotionAnimationDataStructure",
-        "Size": "0x30",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MontageData",
-        "Type": "class CustomAnimationMontageDefinitionListingDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "AttackAnimations",
-        "Type": "class AthenaAnimationWeaponDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "HitReactionData",
-        "Type": "struct HitReactionAnimationData",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "SporeBreathData",
-        "Type": "struct OceanCrawlerSporeBreathAnimationData",
-        "Size": "0x18",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "AttackInterruptMontages",
-        "Type": "TArray<struct CustomAnimationMontageId>",
-        "Size": "0x10",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "DeathMontageId",
-        "Type": "struct CustomAnimationMontageId",
-        "Size": "0x8",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "SpawnMontageId",
-        "Type": "struct CustomAnimationMontageId",
-        "Size": "0x8",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "SpawnOnShipMontageId",
-        "Type": "struct CustomAnimationMontageId",
-        "Size": "0x8",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "SpawnBoardedMontageId",
-        "Type": "struct CustomAnimationMontageId",
-        "Size": "0x8",
-        "Offset": "0x88"
       }
     ]
   },

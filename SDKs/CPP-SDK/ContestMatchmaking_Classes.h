@@ -14,10 +14,3 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ContestMatchmakingProviderInterface: public Interface
-{
-public:
-};
-
-

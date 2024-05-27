@@ -3,24 +3,20 @@
 InstancedRopeComponent:
   Attributes:
   - Name: StaticMesh
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0x8'
     Type: class StaticMesh*
   - Name: Ropes
-    Offset: '0x5c0'
+    Offset: '0x5d0'
     Size: '0x10'
     Type: TArray<struct InstancedRopeParams>
   - Name: ShadowLOD
-    Offset: '0x5d0'
+    Offset: '0x5e0'
     Size: '0x4'
     Type: int
-  - Name: pad0xac_P0D5Y[0xac]
-    Offset: '0x5d4'
-    Size: '0xac'
-    Type: char
   ClassSize: '0xc0'
-  FullSize: '0x680'
-  InheritedSize: '0x5c0'
+  FullSize: '0x690'
+  InheritedSize: '0x5d0'
   Super: PrimitiveComponent
 MaterialExpressionRopeParameter:
   Attributes:
@@ -28,20 +24,12 @@ MaterialExpressionRopeParameter:
     Offset: '0x70'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_GY8NB[0x7]
-    Offset: '0x71'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x8'
   FullSize: '0x78'
   InheritedSize: '0x70'
   Super: MaterialExpression
 RiggingSystem:
   Attributes:
-  - Name: pad0x8_VFNE0[0x8]
-    Offset: '0x3c8'
-    Size: '0x8'
-    Type: char
   - Name: Root
     Offset: '0x3d0'
     Size: '0x8'
@@ -65,7 +53,7 @@ RiggingSystem:
   - Name: Pulleys
     Offset: '0x410'
     Size: '0x60'
-    Type: struct RiggingSystemPulleyData
+    Type: struct
   - Name: Sockets
     Offset: '0x470'
     Size: '0x10'
@@ -74,10 +62,6 @@ RiggingSystem:
     Offset: '0x480'
     Size: '0x10'
     Type: TArray<float>
-  - Name: pad0x88_IGSH2[0x88]
-    Offset: '0x490'
-    Size: '0x88'
-    Type: char
   ClassSize: '0x150'
   FullSize: '0x518'
   InheritedSize: '0x3c8'
@@ -87,7 +71,7 @@ RiggingSystemComponent:
   - Name: RopeStyle
     Offset: '0x2e0'
     Size: '0x20'
-    Type: struct RopeStyleParams
+    Type: struct
   - Name: LineGroups
     Offset: '0x300'
     Size: '0x10'
@@ -96,23 +80,7 @@ RiggingSystemComponent:
     Offset: '0x310'
     Size: '0x8'
     Type: class RiggingSystem*
-  - Name: pad0x8_SKABK[0x8]
-    Offset: '0x318'
-    Size: '0x8'
-    Type: char
   ClassSize: '0x40'
   FullSize: '0x320'
   InheritedSize: '0x2e0'
   Super: SceneComponent
-RopeCatenaryRenderComponent:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x660'
-  InheritedSize: '0x660'
-  Super: CordRenderComponent
-RopeInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

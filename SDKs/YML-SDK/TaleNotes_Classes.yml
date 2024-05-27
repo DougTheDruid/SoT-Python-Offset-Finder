@@ -2,87 +2,75 @@
 # https://github.com/DougTheDruid
 TaleNote:
   Attributes:
-  - Name: pad0x10_1U7J2[0x10]
-    Offset: '0x7e0'
-    Size: '0x10'
-    Type: char
   - Name: CanvasWidth
-    Offset: '0x7f0'
+    Offset: '0x7f8'
     Size: '0x4'
     Type: int
   - Name: CanvasHeight
-    Offset: '0x7f4'
+    Offset: '0x7fc'
     Size: '0x4'
     Type: int
   - Name: FontScale
-    Offset: '0x7f8'
+    Offset: '0x800'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_HA4CP[0x4]
-    Offset: '0x7fc'
-    Size: '0x4'
-    Type: char
   - Name: Font
-    Offset: '0x800'
+    Offset: '0x808'
     Size: '0x8'
     Type: class Font*
   - Name: Image
-    Offset: '0x808'
+    Offset: '0x810'
     Size: '0x38'
-    Type: struct TreasureMapWidgetStreamedTexture
+    Type: struct
   - Name: TitleWidgetText
-    Offset: '0x840'
+    Offset: '0x848'
     Size: '0x3c'
-    Type: struct TreasureMapWidgetText
+    Type: struct
   - Name: BodyWidgetText
-    Offset: '0x87c'
+    Offset: '0x884'
     Size: '0x3c'
-    Type: struct TreasureMapWidgetText
+    Type: struct
   - Name: AdditionalBodyWidgetText
-    Offset: '0x8b8'
+    Offset: '0x8c0'
     Size: '0x10'
     Type: TArray<struct TreasureMapWidgetText>
   - Name: NoteWidth
-    Offset: '0x8c8'
+    Offset: '0x8d0'
     Size: '0x4'
     Type: float
   - Name: NoteLineSpacingMultiplier
-    Offset: '0x8cc'
+    Offset: '0x8d4'
     Size: '0x4'
     Type: float
   - Name: Title
-    Offset: '0x8d0'
+    Offset: '0x8d8'
     Size: '0x38'
     Type: struct FText
   - Name: Body
-    Offset: '0x908'
+    Offset: '0x910'
     Size: '0x38'
     Type: struct FText
   - Name: AdditionalBody
-    Offset: '0x940'
+    Offset: '0x948'
     Size: '0x10'
     Type: TArray<struct Text>
   - Name: RenderTarget
-    Offset: '0x950'
+    Offset: '0x958'
     Size: '0x8'
     Type: class MaybeCompressedCanvasRenderTarget2D*
   - Name: UsableWieldableComponent
-    Offset: '0x958'
+    Offset: '0x960'
     Size: '0x8'
     Type: class UsableWieldableComponent*
   - Name: InventoryItemComponent
-    Offset: '0x960'
+    Offset: '0x968'
     Size: '0x8'
     Type: class InventoryItemComponent*
   - Name: ZoomInOnWieldableComponent
-    Offset: '0x968'
+    Offset: '0x970'
     Size: '0x8'
     Type: class ZoomInOnWieldableItemComponent*
-  - Name: pad0xe0_01BXW[0xe0]
-    Offset: '0x970'
-    Size: '0xe0'
-    Type: char
-  ClassSize: '0x270'
+  ClassSize: '0x260'
   FullSize: '0xa50'
-  InheritedSize: '0x7e0'
+  InheritedSize: '0x7f0'
   Super: SkeletalMeshWieldableItem

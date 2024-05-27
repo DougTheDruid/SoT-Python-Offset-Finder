@@ -5,12 +5,37 @@
 
 
 
-// Size 0x18
-struct FeatureToggledStatusResponseList
+// Size 0x10
+struct EventEnteredSurfaceMaterialStatusZone
 {
 public:
-	struct FName                                                 Feature;                                           // 0x0(0x8)
-	TArray<class StatusResponseAsset*>                           ResponseAssets;                                    // 0x8(0x10)
+	interface                                                    EnteredZone;                                       // 0x0(0x10)
+};
+
+
+// Size 0x18
+struct ApplyStatusEvent
+{
+public:
+	struct                                                       StatusToApply;                                     // 0x0(0x18)
+};
+
+
+// Size 0x18
+struct StatusActivatedEvent
+{
+public:
+	struct                                                       Id;                                                // 0x0(0x10)
+	struct FName                                                 StatusName;                                        // 0x10(0x8)
+};
+
+
+// Size 0x20
+struct DelayedStatusEffect
+{
+public:
+	struct                                                       StatusEffect;                                      // 0x0(0x18)
+	float                                                        InEffectTime;                                      // 0x18(0x4)
 };
 
 
@@ -21,59 +46,18 @@ public:
 	struct FName                                                 MaterialParamName;                                 // 0x0(0x8)
 	struct FName                                                 CanShowMaterialParam;                              // 0x8(0x8)
 	struct FName                                                 TintParamName;                                     // 0x10(0x8)
-	struct LinearColor                                           TintColor;                                         // 0x18(0x10)
+	struct                                                       TintColor;                                         // 0x18(0x10)
 	float                                                        TargetEffectStrength;                              // 0x28(0x4)
 	float                                                        FadeInAcceleration;                                // 0x2c(0x4)
 };
 
 
 // Size 0x18
-struct BuffedTargetData
+struct FeatureToggledStatusResponseList
 {
 public:
-	char                                                         pad0x18_T5T7G[0x18];                               // 0x0(0x18)
-};
-
-
-// Size 0x1
-struct EventStatusSuperSoakerEnded
-{
-public:
-	char                                                         pad0x1_IU7DA[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x18
-struct StatusDeactivatedEvent
-{
-public:
-	struct Guid                                                  Id;                                                // 0x0(0x10)
-	struct FName                                                 StatusName;                                        // 0x10(0x8)
-};
-
-
-// Size 0xc
-struct EventStatusScreenEffectEnded
-{
-public:
-	struct FName                                                 MaterialParamName;                                 // 0x0(0x8)
-	float                                                        FadeOutAcceleration;                               // 0x8(0x4)
-};
-
-
-// Size 0x8
-struct EventStatusScreenSpaceParticleEffectStarted
-{
-public:
-	class Object*                                                ParticleSystem;                                    // 0x0(0x8)
-};
-
-
-// Size 0x10
-struct EventEnteredSurfaceMaterialStatusZone
-{
-public:
-	char                                                         pad0x10_C2FAE[0x10];                               // 0x0(0x10)
+	struct FName                                                 Feature;                                           // 0x0(0x8)
+	TArray<class StatusResponseAsset*>                           ResponseAssets;                                    // 0x8(0x10)
 };
 
 
@@ -87,40 +71,42 @@ public:
 };
 
 
-// Size 0x1
-struct EventStatusSuperSoakerStarted
-{
-public:
-	char                                                         pad0x1_03QM8[0x1];                                 // 0x0(0x1)
-};
-
-
 // Size 0x18
-struct StatusActivatedEvent
+struct BuffedTargetData
 {
 public:
-	struct Guid                                                  Id;                                                // 0x0(0x10)
-	struct FName                                                 StatusName;                                        // 0x10(0x8)
+	class Actor*                                                 ActorBuffed;                                       // 0x0(0x8)
+	interface                                                    StatusEffectRecipient;                             // 0x8(0x10)
 };
 
 
-// Size 0x28
-struct EventStatusScreenEffectStarted
+// Size 0x50
+struct ActiveStatusEffect
+{
+public:
+	TArray<class Class*>                                         SourceStatus;                                      // 0x0(0x10)
+	struct                                                       Descriptor;                                        // 0x10(0x4)
+	TArray<class StatusResponse*>                                ResponseTemplates;                                 // 0x18(0x10)
+	TArray<class StatusResponse*>                                InstancedResponses;                                // 0x28(0x10)
+	bool                                                         ResponsesAreActive;                                // 0x38(0x1)
+};
+
+
+// Size 0x20
+struct DebugMenuStatusDefinition
+{
+public:
+	struct FName                                                 Identifier;                                        // 0x0(0x8)
+	struct                                                       Status;                                            // 0x8(0x18)
+};
+
+
+// Size 0xc
+struct EventStatusScreenEffectEnded
 {
 public:
 	struct FName                                                 MaterialParamName;                                 // 0x0(0x8)
-	struct FName                                                 TintParamName;                                     // 0x8(0x8)
-	struct LinearColor                                           TintColor;                                         // 0x10(0x10)
-	float                                                        TargetEffectStrength;                              // 0x20(0x4)
-	float                                                        FadeInAcceleration;                                // 0x24(0x4)
-};
-
-
-// Size 0x8
-struct EventStatusScreenSpaceParticleEffectEnded
-{
-public:
-	class Object*                                                ParticleSystem;                                    // 0x0(0x8)
+	float                                                        FadeOutAcceleration;                               // 0x8(0x4)
 };
 
 
@@ -132,11 +118,45 @@ public:
 };
 
 
-// Size 0x1
-struct EventExitedSurfaceMaterialStatusZone
+// Size 0x18
+struct StatusDeactivatedEvent
 {
 public:
-	char                                                         pad0x1_9FX7I[0x1];                                 // 0x0(0x1)
+	struct                                                       Id;                                                // 0x0(0x10)
+	struct FName                                                 StatusName;                                        // 0x10(0x8)
+};
+
+
+// Size 0x18
+struct Status
+{
+public:
+	TArray<class Class*>                                         Type;                                              // 0x0(0x10)
+	struct                                                       Descriptor;                                        // 0x10(0x4)
+};
+
+
+// Size 0x8
+struct EventStatusScreenSpaceParticleEffectEnded
+{
+public:
+	class Object*                                                ParticleSystem;                                    // 0x0(0x8)
+};
+
+
+// Size 0x18
+struct StatusEffectPersistenceKey
+{
+public:
+	struct                                                       AppliedStatuses;                                   // 0x0(0x18)
+};
+
+
+// Size 0x8
+struct EventStatusScreenSpaceParticleEffectStarted
+{
+public:
+	class Object*                                                ParticleSystem;                                    // 0x0(0x8)
 };
 
 
@@ -150,62 +170,15 @@ public:
 };
 
 
-// Size 0x50
-struct ActiveStatusEffect
+// Size 0x28
+struct EventStatusScreenEffectStarted
 {
 public:
-	TArray<class Class*>                                         SourceStatus;                                      // 0x0(0x10)
-	struct StatusDescriptor                                      Descriptor;                                        // 0x10(0x4)
-	char                                                         pad0x4_T30KA[0x4];                                 // 0x14(0x4)
-	TArray<class StatusResponse*>                                ResponseTemplates;                                 // 0x18(0x10)
-	TArray<class StatusResponse*>                                InstancedResponses;                                // 0x28(0x10)
-	bool                                                         ResponsesAreActive;                                // 0x38(0x1)
-	char                                                         pad0x17_8F09H[0x17];                               // 0x39(0x17)
-};
-
-
-// Size 0x18
-struct Status
-{
-public:
-	TArray<class Class*>                                         Type;                                              // 0x0(0x10)
-	struct StatusDescriptor                                      Descriptor;                                        // 0x10(0x4)
-	char                                                         pad0x4_X40EV[0x4];                                 // 0x14(0x4)
-};
-
-
-// Size 0x18
-struct StatusEffectPersistenceKey
-{
-public:
-	struct Status                                                AppliedStatuses;                                   // 0x0(0x18)
-};
-
-
-// Size 0x20
-struct DelayedStatusEffect
-{
-public:
-	struct Status                                                StatusEffect;                                      // 0x0(0x18)
-	float                                                        InEffectTime;                                      // 0x18(0x4)
-	char                                                         pad0x4_UHNHI[0x4];                                 // 0x1c(0x4)
-};
-
-
-// Size 0x20
-struct DebugMenuStatusDefinition
-{
-public:
-	struct FName                                                 Identifier;                                        // 0x0(0x8)
-	struct Status                                                Status;                                            // 0x8(0x18)
-};
-
-
-// Size 0x18
-struct ApplyStatusEvent
-{
-public:
-	struct Status                                                StatusToApply;                                     // 0x0(0x18)
+	struct FName                                                 MaterialParamName;                                 // 0x0(0x8)
+	struct FName                                                 TintParamName;                                     // 0x8(0x8)
+	struct                                                       TintColor;                                         // 0x10(0x10)
+	float                                                        TargetEffectStrength;                              // 0x20(0x4)
+	float                                                        FadeInAcceleration;                                // 0x24(0x4)
 };
 
 

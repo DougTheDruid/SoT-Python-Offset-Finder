@@ -4,15 +4,9 @@
     "Attributes": [
       {
         "Name": "InactivityThreshold",
-        "Type": "struct Timespan",
+        "Type": "struct",
         "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x30_JZYQN[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x8"
       }
     ]
   },

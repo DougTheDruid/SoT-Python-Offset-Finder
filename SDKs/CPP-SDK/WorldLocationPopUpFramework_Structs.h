@@ -19,7 +19,7 @@ public:
 struct TaleWorldLocationPopUpServiceEntry
 {
 public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
+	struct                                                       Location;                                          // 0x0(0xc)
 	float                                                        MaxDistance;                                       // 0xc(0x4)
 };
 

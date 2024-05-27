@@ -1,60 +1,4 @@
 {
-  "EngineServicePing": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_5GLA9[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EngineServiceTerminate": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "UserName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EngineServiceAuthGrant": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "UserName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UserToGrant",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EngineServiceNotification": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Text",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TimeSeconds",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "EngineServiceExecuteCommand": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -66,6 +10,23 @@
       },
       {
         "Name": "UserName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EngineServiceAuthDeny": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "UserName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UserToDeny",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
@@ -94,14 +55,8 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_YAXXS[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x15"
-      },
-      {
         "Name": "InstanceId",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -113,7 +68,7 @@
       },
       {
         "Name": "SessionId",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -122,16 +77,27 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x48"
-      },
-      {
-        "Name": "pad0x4_HEFA0[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4c"
       }
     ]
   },
-  "EngineServiceAuthDeny": {
+  "EngineServiceNotification": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Text",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TimeSeconds",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EngineServiceAuthGrant": {
     "ClassSize": "0x20",
     "Attributes": [
       {
@@ -141,10 +107,21 @@
         "Offset": "0x0"
       },
       {
-        "Name": "UserToDeny",
+        "Name": "UserToGrant",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "EngineServiceTerminate": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "UserName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },

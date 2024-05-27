@@ -6,47 +6,26 @@
 
 
 // Size 0x8
-struct TestFloatObject
-{
-public:
-	float                                                        TestFloat1;                                        // 0x0(0x4)
-	float                                                        TestFloat2;                                        // 0x4(0x4)
-};
-
-
-// Size 0x8
-struct TestMessageDateTime
-{
-public:
-	struct DateTime                                              DateTime;                                          // 0x0(0x8)
-};
-
-
-// Size 0x8
 struct TestMessageUInt64
 {
 public:
-	char                                                         pad0x8_V1LTV[0x8];                                 // 0x0(0x8)
+	uint64                                                       TestInt;                                           // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct TestMessageInt64
+{
+public:
+	int64                                                        TestInt;                                           // 0x0(0x8)
 };
 
 
 // Size 0x28
-struct TestSerializationObject
+struct TestSerializationNestedObject
 {
 public:
-	bool                                                         TestBool;                                          // 0x0(0x1)
-	char                                                         pad0x3_FD99T[0x3];                                 // 0x1(0x3)
-	int                                                          TestInt;                                           // 0x4(0x4)
-	struct FString                                               TestString;                                        // 0x8(0x10)
-	struct Guid                                                  TestGuid;                                          // 0x18(0x10)
-};
-
-
-// Size 0x50
-struct TestUStructMapSerializationObject
-{
-public:
-	char                                                         pad0x50_ELO6T[0x50];                               // 0x0(0x50)
+	struct                                                       NestedObject;                                      // 0x0(0x28)
 };
 
 
@@ -58,19 +37,30 @@ public:
 };
 
 
-// Size 0x8
-struct TestMessageInt64
+// Size 0x50
+struct TestStringMapSerializationObject
 {
 public:
-	char                                                         pad0x8_3PDTV[0x8];                                 // 0x0(0x8)
+	map                                                          StringMap;                                         // 0x0(0x50)
 };
 
 
-// Size 0x50
-struct TestInt32MapSerializationObject
+// Size 0x8
+struct TestMessageDateTime
 {
 public:
-	char                                                         pad0x50_5RDVH[0x50];                               // 0x0(0x50)
+	struct                                                       DateTime;                                          // 0x0(0x8)
+};
+
+
+// Size 0x28
+struct TestSerializationObject
+{
+public:
+	bool                                                         TestBool;                                          // 0x0(0x1)
+	int                                                          TestInt;                                           // 0x4(0x4)
+	struct FString                                               TestString;                                        // 0x8(0x10)
+	struct                                                       TestGuid;                                          // 0x18(0x10)
 };
 
 
@@ -78,15 +68,15 @@ public:
 struct TestInvalidStringMapSerializationObject
 {
 public:
-	char                                                         pad0x50_IM1OL[0x50];                               // 0x0(0x50)
+	map                                                          StringMap;                                         // 0x0(0x50)
 };
 
 
-// Size 0x50
-struct TestStringMapSerializationObject
+// Size 0x8
+struct TestMessageTimespan
 {
 public:
-	char                                                         pad0x50_NVTDA[0x50];                               // 0x0(0x50)
+	struct                                                       Timespan;                                          // 0x0(0x8)
 };
 
 
@@ -100,26 +90,27 @@ public:
 
 
 // Size 0x8
-struct TestMessageTimespan
+struct TestFloatObject
 {
 public:
-	struct Timespan                                              Timespan;                                          // 0x0(0x8)
+	float                                                        TestFloat1;                                        // 0x0(0x4)
+	float                                                        TestFloat2;                                        // 0x4(0x4)
 };
 
 
-// Size 0x18
-struct JsonObjectWrapper
+// Size 0x50
+struct TestInt32MapSerializationObject
 {
 public:
-	char                                                         pad0x18_CZHVD[0x18];                               // 0x0(0x18)
+	map                                                          Int32Map;                                          // 0x0(0x50)
 };
 
 
-// Size 0x28
-struct TestSerializationNestedObject
+// Size 0x50
+struct TestUStructMapSerializationObject
 {
 public:
-	struct TestSerializationObject                               NestedObject;                                      // 0x0(0x28)
+	map                                                          StructMap;                                         // 0x0(0x50)
 };
 
 

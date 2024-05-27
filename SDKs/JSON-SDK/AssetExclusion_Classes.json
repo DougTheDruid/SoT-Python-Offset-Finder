@@ -1,4 +1,18 @@
 {
+  "AssetExclusionCanaryContainerList": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CanaryAssets",
+        "Type": "TArray<class AssetExclusionCanaryAsset*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "AssetExclusionCanaryAsset": {
     "Super": "DataAsset",
     "FullSize": "0x68",
@@ -16,26 +30,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x60"
-      },
-      {
-        "Name": "pad0x4_BZ4XF[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x64"
-      }
-    ]
-  },
-  "AssetExclusionCanaryContainerList": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CanaryAssets",
-        "Type": "TArray<class AssetExclusionCanaryAsset*>",
-        "Size": "0x10",
-        "Offset": "0x28"
       }
     ]
   },

@@ -1,4 +1,15 @@
 {
+  "SimpleOverlapBegin": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "OverlapInfo",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "SimpleOverlapInfo": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -21,18 +32,7 @@
     "Attributes": [
       {
         "Name": "OverlapInfo",
-        "Type": "struct SimpleOverlapInfo",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SimpleOverlapBegin": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "OverlapInfo",
-        "Type": "struct SimpleOverlapInfo",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x0"
       }

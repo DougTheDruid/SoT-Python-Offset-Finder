@@ -6,10 +6,6 @@ BestActionSpotSelectionCriteria:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_XIL2A[0x3]
-    Offset: '0x1'
-    Size: '0x3'
-    Type: char
   - Name: ForwardFacingPreferenceMinAngleInDegrees
     Offset: '0x4'
     Size: '0x4'
@@ -30,10 +26,6 @@ BestActionSpotSelectionCriteria:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_HTFOK[0x3]
-    Offset: '0x15'
-    Size: '0x3'
-    Type: char
   - Name: StayingPreferenceDistance
     Offset: '0x18'
     Size: '0x4'
@@ -42,10 +34,6 @@ BestActionSpotSelectionCriteria:
     Offset: '0x1c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_SDG7B[0x3]
-    Offset: '0x1d'
-    Size: '0x3'
-    Type: char
   - Name: MaximumDistanceAllowedFromTarget
     Offset: '0x20'
     Size: '0x4'
@@ -58,10 +46,6 @@ BestActionSpotSelectionCriteria:
     Offset: '0x25'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_8XQ1C[0x2]
-    Offset: '0x26'
-    Size: '0x2'
-    Type: char
   - Name: TargetMovementRefreshThresholdDistance
     Offset: '0x28'
     Size: '0x4'
@@ -70,10 +54,6 @@ BestActionSpotSelectionCriteria:
     Offset: '0x2c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_IQC1I[0x3]
-    Offset: '0x2d'
-    Size: '0x3'
-    Type: char
   - Name: RefreshTimeInSeconds
     Offset: '0x30'
     Size: '0x4'
@@ -81,10 +61,6 @@ BestActionSpotSelectionCriteria:
   ClassSize: '0x34'
 HasAllActionContextTagsCondition:
   Attributes:
-  - Name: pad0x28_6QHXP[0x28]
-    Offset: '0x0'
-    Size: '0x28'
-    Type: char
   - Name: RequiredContextTags
     Offset: '0x28'
     Size: '0x10'
@@ -93,8 +69,4 @@ HasAllActionContextTagsCondition:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_I1STA[0x7]
-    Offset: '0x39'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x40'

@@ -9,9 +9,9 @@
 struct WorldRegionSetup
 {
 public:
-	struct Vector2D                                              WorldBoundsOrigin;                                 // 0x0(0x8)
-	struct Vector2D                                              RegionSize;                                        // 0x8(0x8)
-	struct IntPoint                                              GridSize;                                          // 0x10(0x8)
+	struct                                                       WorldBoundsOrigin;                                 // 0x0(0x8)
+	struct                                                       RegionSize;                                        // 0x8(0x8)
+	struct                                                       GridSize;                                          // 0x10(0x8)
 	TArray<struct Name>                                          RegionNames;                                       // 0x18(0x10)
 };
 

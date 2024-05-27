@@ -6,10 +6,10 @@
     "ClassSize": "0x2d0",
     "Attributes": [
       {
-        "Name": "pad0x18_HWUV7[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x440"
+        "Name": "PawnOwner",
+        "Type": "class Pawn*",
+        "Size": "0x8",
+        "Offset": "0x450"
       },
       {
         "Name": "PropAttachmentSocket",
@@ -19,13 +19,13 @@
       },
       {
         "Name": "SirenAnimationData",
-        "Type": "struct SirenAnimationDataStructure",
+        "Type": "struct",
         "Size": "0x60",
         "Offset": "0x460"
       },
       {
         "Name": "AttackAnimations",
-        "Type": "struct AthenaAnimationWeapon",
+        "Type": "struct",
         "Size": "0xb8",
         "Offset": "0x4c0"
       },
@@ -34,12 +34,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x578"
-      },
-      {
-        "Name": "pad0xc_TLV8E[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x57c"
       },
       {
         "Name": "TiltDirectionAngleDegrees",
@@ -90,12 +84,6 @@
         "Offset": "0x59b"
       },
       {
-        "Name": "pad0x4_8F9GS[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x59c"
-      },
-      {
         "Name": "StrategiesForAggressiveAnimations",
         "Type": "TArray<class Class*>",
         "Size": "0x10",
@@ -103,27 +91,15 @@
       },
       {
         "Name": "TimeBeforeAlternativeAggressiveAnimationToggleFlips",
-        "Type": "struct FloatRange",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x5b0"
-      },
-      {
-        "Name": "pad0x8_9WD84[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x5c0"
       },
       {
         "Name": "AnimationsLoaded",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x5c8"
-      },
-      {
-        "Name": "pad0x3_DX4DY[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5c9"
       },
       {
         "Name": "AimUpAlpha",
@@ -138,28 +114,16 @@
         "Offset": "0x5d0"
       },
       {
-        "Name": "pad0x4_ZEJM1[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x5d4"
-      },
-      {
         "Name": "FullBodyStateMachine",
-        "Type": "struct CustomAnimationMontageStateMachine",
+        "Type": "struct",
         "Size": "0xd8",
         "Offset": "0x5d8"
       },
       {
         "Name": "HitReacts",
-        "Type": "struct HitReactionAnimationState",
+        "Type": "struct",
         "Size": "0x28",
         "Offset": "0x6b0"
-      },
-      {
-        "Name": "pad0x38_9G1II[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x6d8"
       }
     ]
   },
@@ -171,7 +135,7 @@
     "Attributes": [
       {
         "Name": "SirenAnimationData",
-        "Type": "struct SirenAnimationDataStructure",
+        "Type": "struct",
         "Size": "0x60",
         "Offset": "0x28"
       }

@@ -15,7 +15,15 @@ public:
 class SaferSeasSettings: public DeveloperSettings
 {
 public:
-	struct StringAssetReference                                  SaferSeasBlacklistAsset;                           // 0x38(0x10)
+	struct                                                       SaferSeasBlacklistAsset;                           // 0x38(0x10)
+};
+
+
+// Size 0x28 (Full Size[0x3f0] - InheritedSize[0x3c8]
+class SaferSeasDataAssetProviderService: public Actor
+{
+public:
+	class SaferSeasEntitlementBlacklistDataAsset*                SaferSeasEntitlementBlacklistDataAsset;            // 0x3d0(0x8)
 };
 
 

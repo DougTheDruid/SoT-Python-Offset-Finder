@@ -2,18 +2,10 @@
 # https://github.com/DougTheDruid
 AreaOfEffectHealAIAbility:
   Attributes:
-  - Name: pad0x10_7S2DP[0x10]
-    Offset: '0x78'
-    Size: '0x10'
-    Type: char
   - Name: HealAreaOfEffectActor
     Offset: '0x88'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x10_GZLZI[0x10]
-    Offset: '0x90'
-    Size: '0x10'
-    Type: char
   ClassSize: '0x28'
   FullSize: '0xa0'
   InheritedSize: '0x78'
@@ -44,28 +36,12 @@ AreaOfEffectHealAIAbilityParams:
   FullSize: '0xe0'
   InheritedSize: '0xc8'
   Super: AthenaAIAbilityParams
-AreaOfEffectHealAIAbilityType:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: AthenaAIAbilityType
-AshenFireStatus:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x30'
-  InheritedSize: '0x30'
-  Super: StatusBase
 BullRushAIAbility:
   Attributes:
   - Name: CachedWorld
     Offset: '0x98'
     Size: '0x8'
     Type: class World*
-  - Name: pad0x18_GC42T[0x18]
-    Offset: '0xa0'
-    Size: '0x18'
-    Type: char
   ClassSize: '0x20'
   FullSize: '0xb8'
   InheritedSize: '0x98'
@@ -76,10 +52,6 @@ BullRushAIAbilityParams:
     Offset: '0xe0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_UT77K[0x4]
-    Offset: '0xe4'
-    Size: '0x4'
-    Type: char
   - Name: ValidatorEQSystems
     Offset: '0xe8'
     Size: '0x10'
@@ -88,26 +60,10 @@ BullRushAIAbilityParams:
     Offset: '0xf8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_9GBH8[0x4]
-    Offset: '0xfc'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x20'
   FullSize: '0x100'
   InheritedSize: '0xe0'
   Super: MeleeChargeAIAbilityParams
-BullRushAIAbilityType:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: AthenaAIAbilityType
-BurrowEruptDamagerType:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: DamagerType
 BurrowHealVFXComponent:
   Attributes:
   - Name: VFXAsset
@@ -122,10 +78,6 @@ BurrowHealVFXComponent:
     Offset: '0xd8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_NO0WQ[0x4]
-    Offset: '0xdc'
-    Size: '0x4'
-    Type: char
   - Name: SpawnedVFXSystem
     Offset: '0xe0'
     Size: '0x8'
@@ -134,50 +86,10 @@ BurrowHealVFXComponent:
     Offset: '0xe8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2f_KBBCI[0x2f]
-    Offset: '0xe9'
-    Size: '0x2f'
-    Type: char
   ClassSize: '0x50'
   FullSize: '0x118'
   InheritedSize: '0xc8'
   Super: ActorComponent
-ComboMeleeAttackId:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: MeleeAttackId
-CoralShieldStatus:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x30'
-  InheritedSize: '0x30'
-  Super: StatusBase
-EelSlapAIAbility:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x80'
-  InheritedSize: '0x80'
-  Super: MeleeAIAbility
-EelSlapAIAbilityParams:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0xd8'
-  InheritedSize: '0xd8'
-  Super: MeleeAIAbilityParams
-EelSlapAIAbilityType:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: AthenaAIAbilityType
-EelSlapStatus:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x30'
-  InheritedSize: '0x30'
-  Super: StatusBase
 EelThrowAIAbility:
   Attributes:
   - Name: CachedBlackboardComponent
@@ -193,23 +105,13 @@ EelThrowAIAbilityParams:
   - Name: MinMaxNumberOfAttacksBeforeEnd
     Offset: '0xc8'
     Size: '0x20'
-    Type: struct WeightedProbabilityRange
+    Type: struct
   ClassSize: '0x20'
   FullSize: '0xe8'
   InheritedSize: '0xc8'
   Super: AthenaAIAbilityParams
-EelThrowAIAbilityType:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: AthenaAIAbilityType
 ElectricShieldBuffComponent:
   Attributes:
-  - Name: pad0x8_SWPJV[0x8]
-    Offset: '0xc8'
-    Size: '0x8'
-    Type: char
   - Name: ShieldVFXAsset
     Offset: '0xd0'
     Size: '0x8'
@@ -234,54 +136,10 @@ ElectricShieldBuffComponent:
     Offset: '0xf8'
     Size: '0x1'
     Type: bool
-  - Name: pad0xd7_V7EIV[0xd7]
-    Offset: '0xf9'
-    Size: '0xd7'
-    Type: char
   ClassSize: '0x108'
   FullSize: '0x1d0'
   InheritedSize: '0xc8'
   Super: ActorComponent
-ElectricShieldBuffInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-ElectricShieldStatus:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x30'
-  InheritedSize: '0x30'
-  Super: StatusBase
-HeavyMeleeAttackId:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: MeleeAttackId
-ImpactMeleeAttackEelSlapId:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: ImpactProjectileId
-LightMeleeAttackId:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: MeleeAttackId
-MeleeAIAbility:
-  Attributes:
-  - Name: pad0x8_DT7LC[0x8]
-    Offset: '0x78'
-    Size: '0x8'
-    Type: char
-  ClassSize: '0x8'
-  FullSize: '0x80'
-  InheritedSize: '0x78'
-  Super: AthenaAIAbility
 MeleeAIAbilityParams:
   Attributes:
   - Name: MeleeAttacks
@@ -292,81 +150,13 @@ MeleeAIAbilityParams:
   FullSize: '0xd8'
   InheritedSize: '0xc8'
   Super: AthenaAIAbilityParams
-MeleeAIAbilityType:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: AthenaAIAbilityType
-MeleeAttackId:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Object
-MeleeCollisionAwarenessInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-SporeCloudStatus:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x30'
-  InheritedSize: '0x30'
-  Super: StatusBase
-SporeExposureComponent:
-  Attributes:
-  - Name: pad0x38_CK3C2[0x38]
-    Offset: '0xc8'
-    Size: '0x38'
-    Type: char
-  ClassSize: '0x38'
-  FullSize: '0x100'
-  InheritedSize: '0xc8'
-  Super: ActorComponent
-SporeExposureInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-SporeExposureStatus:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x30'
-  InheritedSize: '0x30'
-  Super: StatusBase
 StatusResponseActivateElectricShield:
   Attributes:
   - Name: Duration
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_1XNIJ[0x4]
-    Offset: '0x34'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x8'
   FullSize: '0x38'
-  InheritedSize: '0x30'
-  Super: StatusResponse
-StatusResponseShowBurrowHealVFX:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x30'
-  InheritedSize: '0x30'
-  Super: StatusResponse
-StatusResponseShowCoralShieldVFX:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x30'
-  InheritedSize: '0x30'
-  Super: StatusResponse
-StatusResponseSporeCloud:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x30'
   InheritedSize: '0x30'
   Super: StatusResponse

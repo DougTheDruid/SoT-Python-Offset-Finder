@@ -9,7 +9,7 @@ BarrelsOfPlentyDebugSpawnLocation:
   - Name: SpawnCentre
     Offset: '0x3d8'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: Radius
     Offset: '0x3e4'
     Size: '0x4'
@@ -23,11 +23,7 @@ BarrelsOfPlentySpawnProxy:
   - Name: Ship
     Offset: '0x3c8'
     Size: '0x8'
-    Type: class Ship*
-  - Name: pad0x18_H25I9[0x18]
-    Offset: '0x3d0'
-    Size: '0x18'
-    Type: char
+    Type: class Actor*
   - Name: SceneComponent
     Offset: '0x3e8'
     Size: '0x8'
@@ -36,18 +32,12 @@ BarrelsOfPlentySpawnProxy:
   FullSize: '0x3f0'
   InheritedSize: '0x3c8'
   Super: Actor
-SpawnBarrelsOfPlentyStep:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x98'
-  InheritedSize: '0x98'
-  Super: TaleQuestStep
 SpawnBarrelsOfPlentyStepDesc:
   Attributes:
   - Name: LocatorVar
     Offset: '0x80'
     Size: '0x30'
-    Type: struct QuestVariableVector
+    Type: struct
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'

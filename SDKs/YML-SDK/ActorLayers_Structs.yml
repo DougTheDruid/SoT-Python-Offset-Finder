@@ -14,8 +14,4 @@ InstancedLayer:
     Offset: '0x18'
     Size: '0x10'
     Type: TArray<class Actor*>
-  - Name: pad0x20_5CHA2[0x20]
-    Offset: '0x28'
-    Size: '0x20'
-    Type: char
   ClassSize: '0x48'

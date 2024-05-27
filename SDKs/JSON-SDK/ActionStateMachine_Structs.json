@@ -1,108 +1,23 @@
 {
-  "ActionStateConstructionInfo": {
-    "ClassSize": "0x28",
+  "SerialisedConstructionInfoStore": {
+    "ClassSize": "0x140",
     "Attributes": [
       {
-        "Name": "Id",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Type",
-        "Type": "class ScriptStruct*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x18_SQFC7[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EventWaitingToSpawnActionStateEndedClient": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_AFB93[0x1]",
-        "Type": "char",
-        "Size": "0x1",
+        "Name": "SerialisedConstructionInfo",
+        "Type": "struct",
+        "Size": "0x40",
         "Offset": "0x0"
       }
     ]
   },
-  "ActionStateMessage": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x8_SS963[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Type",
-        "Type": "class ScriptStruct*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "TestActionStateConstructionInfo": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x28_EM22P[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IntProp",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_LLWWZ[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      }
-    ]
-  },
-  "NullActionStateConstructionInfo": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_0RMX8[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SerialisedActionStateMessage": {
+  "TestActionStateMessage": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_BTHLK[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventWaitingToSpawnActionStateStartedClient": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_PWUHP[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
+        "Name": "TestProperty",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
       }
     ]
   },
@@ -117,25 +32,31 @@
       }
     ]
   },
-  "EventFirstPersonAnimaticActionStateEndedClient": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_H0AB6[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ActorActionStateConstructionInfo": {
+  "TestActionStateConstructionInfo": {
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_3ICR3[0x30]",
-        "Type": "char",
-        "Size": "0x30",
+        "Name": "IntProp",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ActionStateConstructionInfo": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "class UClass*",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Type",
+        "Type": "class ScriptStruct*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -143,91 +64,84 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "pad0x30_KE4D2[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      },
-      {
         "Name": "IntProp",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x4_4X9GH[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
       }
     ]
   },
-  "SerialisedActionStateInfo": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x40_CVD2A[0x40]",
-        "Type": "char",
-        "Size": "0x40",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestActionStateMessage": {
+  "InnerTestStruct": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x10_F7UNY[0x10]",
-        "Type": "char",
-        "Size": "0x10",
+        "Name": "BoolProp",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "TestProperty",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x4_LBH8L[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
+        "Name": "StringProp",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
-  "TestActorActionStateConstructionInfo": {
-    "ClassSize": "0x38",
+  "TestActionStateConstructionInfoWithInner": {
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x30_A1J6P[0x30]",
-        "Type": "char",
-        "Size": "0x30",
+        "Name": "FloatProp",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "InnerStruct",
+        "Type": "struct",
+        "Size": "0x18",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ResetStateMachineRpc": {
+    "ClassSize": "0x150",
+    "Attributes": [
+      {
+        "Name": "LatestEpochIds",
+        "Type": "struct",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "IntProp",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
+        "Name": "LatestRequestIds",
+        "Type": "struct",
+        "Size": "0x1",
+        "Offset": "0x5"
       },
       {
-        "Name": "pad0x4_11N2E[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
+        "Name": "PerTrackConstructionInfoStore",
+        "Type": "struct",
+        "Size": "0x140",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "ActionStateMessage": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Type",
+        "Type": "class ScriptStruct*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
   "ActionStateSerialisableData": {
     "ClassSize": "0x30",
     "Attributes": [
-      {
-        "Name": "pad0x8_CYFM9[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
       {
         "Name": "Id",
         "Type": "class UClass*",
@@ -239,12 +153,62 @@
         "Type": "class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "TestActionStateConstructionInfoWithObjPointers": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "ObjPointer",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x28"
       },
       {
-        "Name": "pad0x18_D46A0[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x18"
+        "Name": "Inner",
+        "Type": "struct",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "Array",
+        "Type": "TArray<class Object*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "ActorActionStateConstructionInfo": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "ActorOwner",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ActionStateChangeRequestId": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "Raw",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestActorActionStateConstructionInfo": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "IntProp",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
       }
     ]
   },
@@ -262,143 +226,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_Z9I0M[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
-      }
-    ]
-  },
-  "ActionStatePriorityTable": {
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "pad0xa0_028D7[0xa0]",
-        "Type": "char",
-        "Size": "0xa0",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "InnerTestStruct": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "BoolProp",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_WBJ6C[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "StringProp",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "TestActionStateMessage2": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_LVOH5[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ActionStateChangeRequestId": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "Raw",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestActionStateConstructionInfoWithObjPointers": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x28_JJ644[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ObjPointer",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Inner",
-        "Type": "struct InnerWithObjTestStruct",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "Array",
-        "Type": "TArray<class Object*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "TestActionStateConstructionInfoWithInner": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x28_76IW1[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FloatProp",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_CS5Y9[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "InnerStruct",
-        "Type": "struct InnerTestStruct",
-        "Size": "0x18",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "SerialisedConstructionInfoStore": {
-    "ClassSize": "0x140",
-    "Attributes": [
-      {
-        "Name": "SerialisedConstructionInfo",
-        "Type": "struct SerialisedActionStateInfo",
-        "Size": "0x40",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x100_ZZPSZ[0x100]",
-        "Type": "char",
-        "Size": "0x100",
-        "Offset": "0x40"
       }
     ]
   },
@@ -416,41 +243,6 @@
         "Type": "TArray<struct ActionStatePriorityRelationship>",
         "Size": "0x10",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "ResetStateMachineRpc": {
-    "ClassSize": "0x150",
-    "Attributes": [
-      {
-        "Name": "LatestEpochIds",
-        "Type": "struct ActionStateChangeRequestId",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_2VO08[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "LatestRequestIds",
-        "Type": "struct ActionStateChangeRequestId",
-        "Size": "0x1",
-        "Offset": "0x5"
-      },
-      {
-        "Name": "pad0xa_I8ZM8[0xa]",
-        "Type": "char",
-        "Size": "0xa",
-        "Offset": "0x6"
-      },
-      {
-        "Name": "PerTrackConstructionInfoStore",
-        "Type": "struct SerialisedConstructionInfoStore",
-        "Size": "0x140",
-        "Offset": "0x10"
       }
     ]
   },

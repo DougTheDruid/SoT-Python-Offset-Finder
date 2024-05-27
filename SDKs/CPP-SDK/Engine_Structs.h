@@ -5,2486 +5,12 @@
 
 
 
-// Size 0x8
-struct ToggleTrackKey
-{
-public:
-	float                                                        Time;                                              // 0x0(0x4)
-	char                                                         ToggleAction;                                      // 0x4(0x1)
-	char                                                         pad0x3_ATM1X[0x3];                                 // 0x5(0x3)
-};
-
-
-// Size 0x14
-struct LightmassMaterialInterfaceSettings
-{
-public:
-	bool                                                         bCastShadowAsMasked;                               // 0x0(0x1)
-	char                                                         pad0x3_XIPJ5[0x3];                                 // 0x1(0x3)
-	float                                                        EmissiveBoost;                                     // 0x4(0x4)
-	float                                                        DiffuseBoost;                                      // 0x8(0x4)
-	float                                                        ExportResolutionScale;                             // 0xc(0x4)
-	bool                                                         bOverrideCastShadowAsMasked;                       // 0x10(0x1)
-	bool                                                         bOverrideEmissiveBoost;                            // 0x10(0x1)
-	bool                                                         bOverrideDiffuseBoost;                             // 0x10(0x1)
-	bool                                                         bOverrideExportResolutionScale;                    // 0x10(0x1)
-	char                                                         pad0x3_UIQCF[0x3];                                 // 0x11(0x3)
-};
-
-
 // Size 0x20
-struct MurkyRegion
+struct SkeletonToMeshLinkup
 {
 public:
-	bool                                                         Enabled;                                           // 0x0(0x1)
-	char                                                         pad0x3_DCCS8[0x3];                                 // 0x1(0x3)
-	struct Vector                                                Position;                                          // 0x4(0xc)
-	float                                                        InnerRadius;                                       // 0x10(0x4)
-	float                                                        OuterRadius;                                       // 0x14(0x4)
-	float                                                        Density;                                           // 0x18(0x4)
-	bool                                                         IsSuperHeatedWater;                                // 0x1c(0x1)
-	char                                                         pad0x3_8R5YL[0x3];                                 // 0x1d(0x3)
-};
-
-
-// Size 0x18
-struct BPVariableMetaDataEntry
-{
-public:
-	struct FName                                                 DataKey;                                           // 0x0(0x8)
-	struct FString                                               DataValue;                                         // 0x8(0x10)
-};
-
-
-// Size 0x14
-struct BlueprintInputAxisDelegateBinding
-{
-public:
-	char                                                         pad0x4_5ZR9M[0x4];                                 // 0x0(0x4)
-	struct FName                                                 InputAxisName;                                     // 0x4(0x8)
-	struct FName                                                 FunctionNameToBind;                                // 0xc(0x8)
-};
-
-
-// Size 0x20
-struct StreamedAudioPlatformData
-{
-public:
-	char                                                         pad0x20_R5FYS[0x20];                               // 0x0(0x20)
-};
-
-
-// Size 0x28
-struct DropNoteInfo
-{
-public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
-	struct Rotator                                               Rotation;                                          // 0xc(0xc)
-	struct FString                                               Comment;                                           // 0x18(0x10)
-};
-
-
-// Size 0x58
-struct AnimNode_HIKPin
-{
-public:
-	char                                                         pad0x48_5CNAY[0x48];                               // 0x0(0x48)
-	float                                                        Alpha;                                             // 0x48(0x4)
-	float                                                        PinTStrength;                                      // 0x4c(0x4)
-	float                                                        PinRStrength;                                      // 0x50(0x4)
-	char                                                         Effector;                                          // 0x54(0x1)
-	char                                                         pad0x3_XL9K8[0x3];                                 // 0x55(0x3)
-};
-
-
-// Size 0x1
-struct CollisionMergingSettings
-{
-public:
-	char                                                         pad0x1_0W8FK[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0xc
-struct AnimSlotDesc
-{
-public:
-	struct FName                                                 SlotName;                                          // 0x0(0x8)
-	int                                                          NumChannels;                                       // 0x8(0x4)
-};
-
-
-// Size 0x60
-struct NavigationSegmentLink
-{
-public:
-	char                                                         pad0x30_RCKKN[0x30];                               // 0x0(0x30)
-	struct Vector                                                LeftStart;                                         // 0x30(0xc)
-	struct Vector                                                LeftEnd;                                           // 0x3c(0xc)
-	struct Vector                                                RightStart;                                        // 0x48(0xc)
-	struct Vector                                                RightEnd;                                          // 0x54(0xc)
-};
-
-
-// Size 0xc
-struct GeomSelection
-{
-public:
-	int                                                          Type;                                              // 0x0(0x4)
-	int                                                          Index;                                             // 0x4(0x4)
-	int                                                          SelectionIndex;                                    // 0x8(0x4)
-};
-
-
-// Size 0x4
-struct Float_NetQuantized
-{
-public:
-	char                                                         pad0x4_G76JX[0x4];                                 // 0x0(0x4)
-};
-
-
-// Size 0x3c
-struct TextureLODGroup
-{
-public:
-	char                                                         Group;                                             // 0x0(0x1)
-	char                                                         pad0xb_K64KA[0xb];                                 // 0x1(0xb)
-	int                                                          LODBias;                                           // 0xc(0x4)
-	char                                                         pad0x4_466T5[0x4];                                 // 0x10(0x4)
-	int                                                          NumStreamedMips;                                   // 0x14(0x4)
-	char                                                         MipGenSettings;                                    // 0x18(0x1)
-	char                                                         pad0x3_WVNL3[0x3];                                 // 0x19(0x3)
-	int                                                          MinLODSize;                                        // 0x1c(0x4)
-	int                                                          MaxLODSize;                                        // 0x20(0x4)
-	struct FName                                                 MinMagFilter;                                      // 0x24(0x8)
-	struct FName                                                 MipFilter;                                         // 0x2c(0x8)
-	int                                                          TextureQualityReduction;                           // 0x34(0x4)
-	int                                                          bDisableMaxTextureResolutionOverride;              // 0x38(0x4)
-};
-
-
-// Size 0x20
-struct TextureParameterValue
-{
-public:
-	struct FName                                                 ParameterName;                                     // 0x0(0x8)
-	class Texture*                                               ParameterValue;                                    // 0x8(0x8)
-	struct Guid                                                  ExpressionGUID;                                    // 0x10(0x10)
-};
-
-
-// Size 0x44
-struct LightmassWorldInfoSettings
-{
-public:
-	float                                                        StaticLightingLevelScale;                          // 0x0(0x4)
-	int                                                          NumIndirectLightingBounces;                        // 0x4(0x4)
-	float                                                        IndirectLightingQuality;                           // 0x8(0x4)
-	float                                                        IndirectLightingSmoothness;                        // 0xc(0x4)
-	struct Color                                                 EnvironmentColor;                                  // 0x10(0x4)
-	float                                                        EnvironmentIntensity;                              // 0x14(0x4)
-	float                                                        EmissiveBoost;                                     // 0x18(0x4)
-	float                                                        DiffuseBoost;                                      // 0x1c(0x4)
-	bool                                                         bUseAmbientOcclusion;                              // 0x20(0x1)
-	bool                                                         bGenerateAmbientOcclusionMaterialMask;             // 0x20(0x1)
-	char                                                         pad0x3_U2P58[0x3];                                 // 0x21(0x3)
-	float                                                        DirectIlluminationOcclusionFraction;               // 0x24(0x4)
-	float                                                        IndirectIlluminationOcclusionFraction;             // 0x28(0x4)
-	float                                                        OcclusionExponent;                                 // 0x2c(0x4)
-	float                                                        FullyOccludedSamplesFraction;                      // 0x30(0x4)
-	float                                                        MaxOcclusionDistance;                              // 0x34(0x4)
-	bool                                                         bVisualizeMaterialDiffuse;                         // 0x38(0x1)
-	bool                                                         bVisualizeAmbientOcclusion;                        // 0x38(0x1)
-	char                                                         pad0x3_LMPM6[0x3];                                 // 0x39(0x3)
-	float                                                        VolumeLightSamplePlacementScale;                   // 0x3c(0x4)
-	bool                                                         bCompressLightmaps;                                // 0x40(0x1)
-	char                                                         pad0x3_PZRWK[0x3];                                 // 0x41(0x3)
-};
-
-
-// Size 0x50
-struct MeshSectionInfoMap
-{
-public:
-	char                                                         pad0x50_UGUWV[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0x30
-struct TimelineLinearColorTrack
-{
-public:
-	class CurveLinearColor*                                      LinearColorCurve;                                  // 0x0(0x8)
-	struct FName                                                 LinearColorPropertyName;                           // 0x18(0x8)
-	class StructProperty*                                        LinearColorProperty;                               // 0x20(0x8)
-	char                                                         pad0x8_S7C6E[0x8];                                 // 0x28(0x8)
-};
-
-
-// Size 0x60
-struct Node
-{
-public:
-	struct FName                                                 Name;                                              // 0x0(0x8)
-	struct FName                                                 ParentName;                                        // 0x8(0x8)
-	struct Transform                                             Transform;                                         // 0x10(0x30)
-	struct FString                                               DisplayName;                                       // 0x40(0x10)
-	bool                                                         bAdvanced;                                         // 0x50(0x1)
-	char                                                         pad0xf_OQBGL[0xf];                                 // 0x51(0xf)
-};
-
-
-// Size 0x38
-struct RawDistributionFloat
-{
-public:
-	char                                                         pad0x28_086FH[0x28];                               // 0x0(0x28)
-	float                                                        MinValue;                                          // 0x28(0x4)
-	float                                                        MaxValue;                                          // 0x2c(0x4)
-	class DistributionFloat*                                     Distribution;                                      // 0x30(0x8)
-};
-
-
-// Size 0x50
-struct EndClothSimulationFunction
-{
-public:
-	char                                                         pad0x50_G91DQ[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0x18
-struct LevelStreamingStatusUpdateInfo
-{
-public:
-	struct FString                                               PackageName;                                       // 0x0(0x10)
-	int                                                          LODIndex;                                          // 0x10(0x4)
-	bool                                                         bNewShouldBeLoaded;                                // 0x14(0x1)
-	bool                                                         bNewShouldBeVisible;                               // 0x14(0x1)
-	bool                                                         bNewShouldBlockOnLoad;                             // 0x14(0x1)
-	char                                                         pad0x3_FVYBL[0x3];                                 // 0x15(0x3)
-};
-
-
-// Size 0x28
-struct MaterialSpriteElement
-{
-public:
-	class MaterialInterface*                                     Material;                                          // 0x0(0x8)
-	class CurveFloat*                                            DistanceToOpacityCurve;                            // 0x8(0x8)
-	bool                                                         bSizeIsInScreenSpace;                              // 0x10(0x1)
-	char                                                         pad0x3_7MX4P[0x3];                                 // 0x11(0x3)
-	float                                                        BaseSizeX;                                         // 0x14(0x4)
-	float                                                        BaseSizeY;                                         // 0x18(0x4)
-	char                                                         pad0x4_LYNAI[0x4];                                 // 0x1c(0x4)
-	class CurveFloat*                                            DistanceToSizeCurve;                               // 0x20(0x8)
-};
-
-
-// Size 0x18
-struct TTFloatTrack
-{
-public:
-	char                                                         pad0x10_Z61J5[0x10];                               // 0x0(0x10)
-	class CurveFloat*                                            CurveFloat;                                        // 0x10(0x8)
-};
-
-
-// Size 0x20
-struct PluginRedirect
-{
-public:
-	struct FString                                               OldPluginName;                                     // 0x0(0x10)
-	struct FString                                               NewPluginName;                                     // 0x10(0x10)
-};
-
-
-// Size 0xb0
-struct AnimNode_BlendListByInt
-{
-public:
-	char                                                         pad0xa8_9B88T[0xa8];                               // 0x0(0xa8)
-	int                                                          ActiveChildIndex;                                  // 0xa8(0x4)
-	char                                                         pad0x4_1QZBU[0x4];                                 // 0xac(0x4)
-};
-
-
-// Size 0x8
-struct AnimExtractContext
-{
-public:
-	bool                                                         bExtractRootMotion;                                // 0x0(0x1)
-	char                                                         pad0x3_X5F9E[0x3];                                 // 0x1(0x3)
-	float                                                        CurrentTime;                                       // 0x4(0x4)
-};
-
-
-// Size 0x8
-struct StatColorMapEntry
-{
-public:
-	float                                                        In;                                                // 0x0(0x4)
-	struct Color                                                 Out;                                               // 0x4(0x4)
-};
-
-
-// Size 0x18
-struct BlueprintComponentDelegateBinding
-{
-public:
-	struct FName                                                 ComponentPropertyName;                             // 0x0(0x8)
-	struct FName                                                 DelegatePropertyName;                              // 0x8(0x8)
-	struct FName                                                 FunctionNameToBind;                                // 0x10(0x8)
-};
-
-
-// Size 0x38
-struct AnimUpdateRateParameters
-{
-public:
-	char                                                         pad0x4_F5A0O[0x4];                                 // 0x0(0x4)
-	int                                                          UpdateRate;                                        // 0x4(0x4)
-	int                                                          EvaluationRate;                                    // 0x8(0x4)
-	bool                                                         bInterpolateSkippedFrames;                         // 0xc(0x1)
-	bool                                                         bSkipUpdate;                                       // 0xd(0x1)
-	bool                                                         bSkipEvaluation;                                   // 0xe(0x1)
-	char                                                         pad0x1_B80QQ[0x1];                                 // 0xf(0x1)
-	float                                                        TickedPoseOffestTime;                              // 0x10(0x4)
-	float                                                        AdditionalTime;                                    // 0x14(0x4)
-	char                                                         pad0x4_WWH0H[0x4];                                 // 0x18(0x4)
-	int                                                          BaseNonRenderedUpdateRate;                         // 0x1c(0x4)
-	char                                                         pad0x8_4RRLU[0x8];                                 // 0x20(0x8)
-	TArray<float>                                                BaseVisibleDistanceFactorThesholds;                // 0x28(0x10)
-};
-
-
-// Size 0x4
-struct GenericStruct
-{
-public:
-	int                                                          Data;                                              // 0x0(0x4)
-};
-
-
-// Size 0x50
-struct MeshMergingSettings
-{
-public:
-	bool                                                         bGenerateLightMapUV;                               // 0x0(0x1)
-	char                                                         pad0x3_VO03I[0x3];                                 // 0x1(0x3)
-	int                                                          TargetLightMapUVChannel;                           // 0x4(0x4)
-	int                                                          TargetLightMapResolution;                          // 0x8(0x4)
-	bool                                                         bImportVertexColors;                               // 0xc(0x1)
-	bool                                                         bPivotPointAtZero;                                 // 0xd(0x1)
-	bool                                                         bMergePhysicsData;                                 // 0xe(0x1)
-	bool                                                         bMergeMaterials;                                   // 0xf(0x1)
-	bool                                                         bExportNormalMap;                                  // 0x10(0x1)
-	bool                                                         bExportMetallicMap;                                // 0x11(0x1)
-	bool                                                         bExportRoughnessMap;                               // 0x12(0x1)
-	bool                                                         bExportSpecularMap;                                // 0x13(0x1)
-	int                                                          MergedMaterialAtlasResolution;                     // 0x14(0x4)
-	bool                                                         bEnableCollisionMerging;                           // 0x18(0x1)
-	bool                                                         bUseRelativeTransform;                             // 0x19(0x1)
-	bool                                                         bMergeRelativeToFirstComponent;                    // 0x1a(0x1)
-	bool                                                         bDuplicateLODs;                                    // 0x1b(0x1)
-	char                                                         pad0x4_Z3ZZU[0x4];                                 // 0x1c(0x4)
-	TArray<float>                                                LODScreenSizes;                                    // 0x20(0x10)
-	int                                                          LODForCollision;                                   // 0x30(0x4)
-	char                                                         pad0x4_GWGN3[0x4];                                 // 0x34(0x4)
-	TArray<float>                                                LODReductionPercentTriangles;                      // 0x38(0x10)
-	int                                                          MaxNumberOfLODs;                                   // 0x48(0x4)
-	char                                                         pad0x4_KLXJ5[0x4];                                 // 0x4c(0x4)
-};
-
-
-// Size 0x30
-struct TimelineFloatTrack
-{
-public:
-	class CurveFloat*                                            FloatCurve;                                        // 0x0(0x8)
-	struct FName                                                 FloatPropertyName;                                 // 0x18(0x8)
-	class FloatProperty*                                         FloatProperty;                                     // 0x20(0x8)
-	char                                                         pad0x8_47X3A[0x8];                                 // 0x28(0x8)
-};
-
-
-// Size 0x10
-struct PassiveSoundMixModifier
-{
-public:
-	class SoundMix*                                              SoundMix;                                          // 0x0(0x8)
-	float                                                        MinVolumeThreshold;                                // 0x8(0x4)
-	float                                                        MaxVolumeThreshold;                                // 0xc(0x4)
-};
-
-
-// Size 0x2c
-struct DestructibleDebrisParameters
-{
-public:
-	float                                                        DebrisLifetimeMin;                                 // 0x0(0x4)
-	float                                                        DebrisLifetimeMax;                                 // 0x4(0x4)
-	float                                                        DebrisMaxSeparationMin;                            // 0x8(0x4)
-	float                                                        DebrisMaxSeparationMax;                            // 0xc(0x4)
-	struct Box                                                   ValidBounds;                                       // 0x10(0x1c)
-};
-
-
-// Size 0xc
-struct BranchingPointMarker
-{
-public:
-	int                                                          NotifyIndex;                                       // 0x0(0x4)
-	float                                                        TriggerTime;                                       // 0x4(0x4)
-	char                                                         NotifyEventType;                                   // 0x8(0x1)
-	char                                                         pad0x3_7XA3E[0x3];                                 // 0x9(0x3)
-};
-
-
-// Size 0x18
-struct PoseLink
-{
-public:
-	char                                                         pad0x18_X3PF4[0x18];                               // 0x0(0x18)
-};
-
-
-// Size 0x18
-struct AnimGroupInfo
-{
-public:
-	struct FName                                                 Name;                                              // 0x0(0x8)
-	struct LinearColor                                           Color;                                             // 0x8(0x10)
-};
-
-
-// Size 0x24
-struct MassPropertiesOverride
-{
-public:
-	struct Vector                                                InertiaTensorOverride;                             // 0x0(0xc)
-	struct Vector                                                COMTranslationOverride;                            // 0xc(0xc)
-	struct Rotator                                               COMRotatorOverride;                                // 0x18(0xc)
-};
-
-
-// Size 0xc
-struct Vector_NetQuantize100
-{
-public:
-	char                                                         pad0xc_97WQB[0xc];                                 // 0x0(0xc)
-};
-
-
-// Size 0x18
-struct OverlapResult
-{
-public:
-	char                                                         pad0x14_LK5BR[0x14];                               // 0x0(0x14)
-	bool                                                         bBlockingHit;                                      // 0x14(0x1)
-	char                                                         pad0x3_EN8E6[0x3];                                 // 0x15(0x3)
-};
-
-
-// Size 0x10
-struct ConvexElement2D
-{
-public:
-	TArray<struct Vector2D>                                      VertexData;                                        // 0x0(0x10)
-};
-
-
-// Size 0x38
-struct AnimNode_RefPose
-{
-public:
-	char                                                         pad0x30_ON6D4[0x30];                               // 0x0(0x30)
-	char                                                         RefPoseType;                                       // 0x30(0x1)
-	char                                                         pad0x7_HKOWQ[0x7];                                 // 0x31(0x7)
-};
-
-
-// Size 0x18
-struct EditedDocumentInfo
-{
-public:
-	class Object*                                                EditedObject;                                      // 0x0(0x8)
-	struct Vector2D                                              SavedViewOffset;                                   // 0x8(0x8)
-	float                                                        SavedZoomAmount;                                   // 0x10(0x4)
-	char                                                         pad0x4_F2IEO[0x4];                                 // 0x14(0x4)
-};
-
-
-// Size 0x18
-struct LatentActionInfo
-{
-public:
-	int                                                          Linkage;                                           // 0x0(0x4)
-	int                                                          UUID;                                              // 0x4(0x4)
-	struct FName                                                 ExecutionFunction;                                 // 0x8(0x8)
-	class Object*                                                CallbackTarget;                                    // 0x10(0x8)
-};
-
-
-// Size 0x18
-struct WrappedStringElement
-{
-public:
-	struct FString                                               Value;                                             // 0x0(0x10)
-	struct Vector2D                                              LineExtent;                                        // 0x10(0x8)
-};
-
-
-// Size 0x20
-struct DebugDisplayProperty
-{
-public:
-	class Object*                                                Obj;                                               // 0x0(0x8)
-	class UClass*                                                WithinClass;                                       // 0x8(0x8)
-	char                                                         pad0x10_1DJC5[0x10];                               // 0x10(0x10)
-};
-
-
-// Size 0x10
-struct AutomaticInstancingMeshComponentArray
-{
-public:
-	TArray<class InstancedStaticMeshComponent*>                  Array;                                             // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct DirectoryPath
-{
-public:
-	struct FString                                               path;                                              // 0x0(0x10)
-};
-
-
-// Size 0x4
-struct DestructibleChunkParameters
-{
-public:
-	bool                                                         bIsSupportChunk;                                   // 0x0(0x1)
-	bool                                                         bDoNotFracture;                                    // 0x1(0x1)
-	bool                                                         bDoNotDamage;                                      // 0x2(0x1)
-	bool                                                         bDoNotCrumble;                                     // 0x3(0x1)
-};
-
-
-// Size 0x8
-struct AnimationStateBase
-{
-public:
-	struct FName                                                 StateName;                                         // 0x0(0x8)
-};
-
-
-// Size 0xc
-struct SkelMeshMergeMorphTarget
-{
-public:
-	char                                                         pad0xc_0LRWF[0xc];                                 // 0x0(0xc)
-};
-
-
-// Size 0x58
-struct ClassRedirect
-{
-public:
-	struct FString                                               ObjectName;                                        // 0x0(0x10)
-	struct FString                                               OldClassName;                                      // 0x10(0x10)
-	struct FString                                               NewClassName;                                      // 0x20(0x10)
-	struct FString                                               OldSubobjName;                                     // 0x30(0x10)
-	struct FString                                               NewSubobjName;                                     // 0x40(0x10)
-	bool                                                         InstanceOnly;                                      // 0x50(0x1)
-	char                                                         pad0x7_RBILC[0x7];                                 // 0x51(0x7)
-};
-
-
-// Size 0x8
-struct FastArraySerializerItem
-{
-public:
-	int                                                          ReplicationID;                                     // 0x0(0x4)
-	int                                                          ReplicationKey;                                    // 0x4(0x4)
-};
-
-
-// Size 0x90
-struct KConvexElem
-{
-public:
-	char                                                         pad0x20_BTYP5[0x20];                               // 0x0(0x20)
-	TArray<struct Vector>                                        VertexData;                                        // 0x20(0x10)
-	struct Box                                                   ElemBox;                                           // 0x30(0x1c)
-	char                                                         pad0x4_NG4I2[0x4];                                 // 0x4c(0x4)
-	struct Transform                                             Transform;                                         // 0x50(0x30)
-	char                                                         pad0x10_5WI6S[0x10];                               // 0x80(0x10)
-};
-
-
-// Size 0x18
-struct ComponentSpacePoseLink
-{
-public:
-	char                                                         pad0x18_EGS0R[0x18];                               // 0x0(0x18)
-};
-
-
-// Size 0x10
-struct EventGraphFastCallPair
-{
-public:
-	class Function*                                              FunctionToPatch;                                   // 0x0(0x8)
-	int                                                          EventGraphCallOffset;                              // 0x8(0x4)
-	char                                                         pad0x4_VK3NP[0x4];                                 // 0xc(0x4)
-};
-
-
-// Size 0x28
-struct AutoCompleteNode
-{
-public:
-	int                                                          IndexChar;                                         // 0x0(0x4)
-	char                                                         pad0x4_ZEIG4[0x4];                                 // 0x4(0x4)
-	TArray<int>                                                  AutoCompleteListIndices;                           // 0x8(0x10)
-	char                                                         pad0x10_7RQ4V[0x10];                               // 0x18(0x10)
-};
-
-
-// Size 0x28
-struct ServerMigrationTelemetryActorData
-{
-public:
-	char                                                         pad0x20_KNLLW[0x20];                               // 0x0(0x20)
-	int                                                          Count;                                             // 0x20(0x4)
-	char                                                         pad0x4_MUCJA[0x4];                                 // 0x24(0x4)
-};
-
-
-// Size 0x20
-struct TranslationTrack
-{
-public:
-	TArray<struct Vector>                                        PosKeys;                                           // 0x0(0x10)
-	TArray<float>                                                Times;                                             // 0x10(0x10)
-};
-
-
-// Size 0x18
-struct NavGraphNode
-{
-public:
-	class Object*                                                Owner;                                             // 0x0(0x8)
-	char                                                         pad0x10_WE7O0[0x10];                               // 0x8(0x10)
-};
-
-
-// Size 0x18
-struct FlatWaterMeshTextureOverride
-{
-public:
-	char                                                         pad0x10_AWJDY[0x10];                               // 0x0(0x10)
-	class Texture*                                               Texture;                                           // 0x10(0x8)
-};
-
-
-// Size 0x30
-struct NavAgentProperties
-{
-public:
-	char                                                         pad0x4_S3XF2[0x4];                                 // 0x0(0x4)
-	struct FName                                                 Name;                                              // 0x4(0x8)
-	float                                                        AgentRadius;                                       // 0xc(0x4)
-	float                                                        AgentHeight;                                       // 0x10(0x4)
-	float                                                        AgentStepHeight;                                   // 0x14(0x4)
-	float                                                        NavWalkingSearchHeightScale;                       // 0x18(0x4)
-	float                                                        NavWalkingSearchRadiusScale;                       // 0x1c(0x4)
-	float                                                        NavWalkingSearchRadiusScaleOffMesh;                // 0x20(0x4)
-	float                                                        AgentMaxSlope;                                     // 0x24(0x4)
-	float                                                        MinRegionArea;                                     // 0x28(0x4)
-	char                                                         pad0x4_X6SXF[0x4];                                 // 0x2c(0x4)
-};
-
-
-// Size 0x1c
-struct DestructibleDamageParameters
-{
-public:
-	float                                                        DamageThreshold;                                   // 0x0(0x4)
-	float                                                        DamageSpread;                                      // 0x4(0x4)
-	bool                                                         bEnableImpactDamage;                               // 0x8(0x1)
-	char                                                         pad0x3_43Y3B[0x3];                                 // 0x9(0x3)
-	float                                                        ImpactDamage;                                      // 0xc(0x4)
-	int                                                          DefaultImpactDamageDepth;                          // 0x10(0x4)
-	bool                                                         bCustomImpactResistance;                           // 0x14(0x1)
-	char                                                         pad0x3_BSQ6T[0x3];                                 // 0x15(0x3)
-	float                                                        ImpactResistance;                                  // 0x18(0x4)
-};
-
-
-// Size 0x20
-struct SimpleMemberReference
-{
-public:
-	class Object*                                                MemberParent;                                      // 0x0(0x8)
-	struct FName                                                 MemberName;                                        // 0x8(0x8)
-	struct Guid                                                  MemberGuid;                                        // 0x10(0x10)
-};
-
-
-// Size 0x8
-struct PresortedBillboardsParams
-{
-public:
-	char                                                         Mode;                                              // 0x0(0x1)
-	char                                                         pad0x3_0BWN6[0x3];                                 // 0x1(0x3)
-	int                                                          NumDirections;                                     // 0x4(0x4)
-};
-
-
-// Size 0x14
-struct RadialDamageParams
-{
-public:
-	float                                                        BaseDamage;                                        // 0x0(0x4)
-	float                                                        MinimumDamage;                                     // 0x4(0x4)
-	float                                                        InnerRadius;                                       // 0x8(0x4)
-	float                                                        OuterRadius;                                       // 0xc(0x4)
-	float                                                        DamageFalloff;                                     // 0x10(0x4)
-};
-
-
-// Size 0x18
-struct InterpEdSelKey
-{
-public:
-	class InterpGroup*                                           Group;                                             // 0x0(0x8)
-	class InterpTrack*                                           Track;                                             // 0x8(0x8)
-	int                                                          KeyIndex;                                          // 0x10(0x4)
-	float                                                        UnsnappedPosition;                                 // 0x14(0x4)
-};
-
-
-// Size 0x140
-struct DebuggingInfoForSingleFunction
-{
-public:
-	char                                                         pad0x140_K4BDW[0x140];                             // 0x0(0x140)
-};
-
-
-// Size 0x58
-struct HIKElements
-{
-public:
-	char                                                         pad0x58_IG8L2[0x58];                               // 0x0(0x58)
-};
-
-
-// Size 0x30
-struct KSphereElem
-{
-public:
-	char                                                         pad0x20_7G5GO[0x20];                               // 0x0(0x20)
-	struct Vector                                                Center;                                            // 0x20(0xc)
-	float                                                        Radius;                                            // 0x2c(0x4)
-};
-
-
-// Size 0x20
-struct BlendSampleData
-{
-public:
-	int                                                          SampleDataIndex;                                   // 0x0(0x4)
-	float                                                        TotalWeight;                                       // 0x4(0x4)
-	float                                                        Time;                                              // 0x8(0x4)
-	char                                                         pad0x14_LI4JO[0x14];                               // 0xc(0x14)
-};
-
-
-// Size 0x50
-struct InstancedStaticMeshInstanceData
-{
-public:
-	struct Matrix                                                Transform;                                         // 0x0(0x40)
-	struct Vector2D                                              LightmapUVBias;                                    // 0x40(0x8)
-	struct Vector2D                                              ShadowmapUVBias;                                   // 0x48(0x8)
-};
-
-
-// Size 0x50
-struct SkeletalMeshComponentPreClothTickFunction
-{
-public:
-	char                                                         pad0x50_ZYU6A[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0xc
-struct ResponseChannel
-{
-public:
-	struct FName                                                 Channel;                                           // 0x0(0x8)
-	char                                                         Response;                                          // 0x8(0x1)
-	char                                                         pad0x3_5WZI9[0x3];                                 // 0x9(0x3)
-};
-
-
-// Size 0x20
-struct GraphReference
-{
-public:
-	class EdGraph*                                               MacroGraph;                                        // 0x0(0x8)
-	class Blueprint*                                             GraphBlueprint;                                    // 0x8(0x8)
-	struct Guid                                                  GraphGuid;                                         // 0x10(0x10)
-};
-
-
-// Size 0x30
-struct AnimNode_MeshSpaceRefPose
-{
-public:
-	char                                                         pad0x30_ERME5[0x30];                               // 0x0(0x30)
-};
-
-
-// Size 0x40
-struct NetGuidResolveStackEntry
-{
-public:
-	char                                                         pad0x8_D5JA0[0x8];                                 // 0x0(0x8)
-	struct FString                                               ObjectPath;                                        // 0x8(0x10)
-	struct FString                                               path;                                              // 0x18(0x10)
-	struct FString                                               AdditionalDetails;                                 // 0x28(0x10)
-	char                                                         Result;                                            // 0x38(0x1)
-	char                                                         pad0x7_AB8HT[0x7];                                 // 0x39(0x7)
-};
-
-
-// Size 0x8
-struct InputScaleBias
-{
-public:
-	float                                                        Scale;                                             // 0x0(0x4)
-	float                                                        Bias;                                              // 0x4(0x4)
-};
-
-
-// Size 0x40
-struct MergedCollisionComponentStaticMeshInstanceData
-{
-public:
-	struct Transform                                             RelativeTransform;                                 // 0x0(0x30)
-	class StaticMesh*                                            StaticMesh;                                        // 0x30(0x8)
-	int                                                          OwningActorCrc32;                                  // 0x38(0x4)
-	char                                                         pad0x4_JKJEF[0x4];                                 // 0x3c(0x4)
-};
-
-
-// Size 0x50
-struct CharacterMovementComponentPreClothTickFunction
-{
-public:
-	char                                                         pad0x50_81HKI[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0x40
-struct AnimNode_TransitionResult
-{
-public:
-	char                                                         pad0x30_R2SCE[0x30];                               // 0x0(0x30)
-	bool                                                         bCanEnterTransition;                               // 0x30(0x1)
-	char                                                         pad0xf_UNQGX[0xf];                                 // 0x31(0xf)
-};
-
-
-// Size 0x14
-struct DirectorTrackCut
-{
-public:
-	float                                                        Time;                                              // 0x0(0x4)
-	float                                                        TransitionTime;                                    // 0x4(0x4)
-	struct FName                                                 TargetCamGroup;                                    // 0x8(0x8)
-	int                                                          ShotNumber;                                        // 0x10(0x4)
-};
-
-
-// Size 0x48
-struct NavigationLink
-{
-public:
-	char                                                         pad0x30_7IH9G[0x30];                               // 0x0(0x30)
-	struct Vector                                                Left;                                              // 0x30(0xc)
-	struct Vector                                                Right;                                             // 0x3c(0xc)
-};
-
-
-// Size 0x10
-struct NamedNetDriver
-{
-public:
-	class NetDriver*                                             NetDriver;                                         // 0x0(0x8)
-	char                                                         pad0x8_JFVMG[0x8];                                 // 0x8(0x8)
-};
-
-
-// Size 0xc
-struct FeatureFlag
-{
-public:
-	struct FName                                                 FeatureName;                                       // 0x0(0x8)
-	bool                                                         InverseToggle;                                     // 0x8(0x1)
-	char                                                         pad0x3_82BSZ[0x3];                                 // 0x9(0x3)
-};
-
-
-// Size 0xc
-struct TriangleSortSettings
-{
-public:
-	char                                                         TriangleSorting;                                   // 0x0(0x1)
-	char                                                         CustomLeftRightAxis;                               // 0x1(0x1)
-	char                                                         pad0x2_7N2PO[0x2];                                 // 0x2(0x2)
-	struct FName                                                 CustomLeftRightBoneName;                           // 0x4(0x8)
-};
-
-
-// Size 0x50
-struct KeyHandleMap
-{
-public:
-	char                                                         pad0x50_MATGK[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0x20
-struct ModulatorContinuousParams
-{
-public:
-	struct FName                                                 ParameterName;                                     // 0x0(0x8)
-	float                                                        Default;                                           // 0x8(0x4)
-	float                                                        MinInput;                                          // 0xc(0x4)
-	float                                                        MaxInput;                                          // 0x10(0x4)
-	float                                                        MinOutput;                                         // 0x14(0x4)
-	float                                                        MaxOutput;                                         // 0x18(0x4)
-	char                                                         ParamMode;                                         // 0x1c(0x1)
-	char                                                         pad0x3_4NHGO[0x3];                                 // 0x1d(0x3)
-};
-
-
-// Size 0x8
-struct InstancedStaticMeshMappingInfo
-{
-public:
-	char                                                         pad0x8_M7ZZG[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x14
-struct NetObjectPtr
-{
-public:
-	char                                                         pad0x14_ZXV9Q[0x14];                               // 0x0(0x14)
-};
-
-
-// Size 0x40
-struct ClientReceiveData
-{
-public:
-	class PlayerController*                                      LocalPC;                                           // 0x0(0x8)
-	struct FName                                                 MessageType;                                       // 0x8(0x8)
-	int                                                          MessageIndex;                                      // 0x10(0x4)
-	char                                                         pad0x4_8SFWS[0x4];                                 // 0x14(0x4)
-	struct FString                                               MessageString;                                     // 0x18(0x10)
-	class PlayerState*                                           RelatedPlayerState;                                // 0x28(0x8)
-	class PlayerState*                                           RelatedPlayerState;                                // 0x30(0x8)
-	class Object*                                                OptionalObject;                                    // 0x38(0x8)
-};
-
-
-// Size 0x38
-struct ExpressionInput
-{
-public:
-	class MaterialExpression*                                    Expression;                                        // 0x0(0x8)
-	int                                                          OutputIndex;                                       // 0x8(0x4)
-	char                                                         pad0x4_2EUGL[0x4];                                 // 0xc(0x4)
-	struct FString                                               InputName;                                         // 0x10(0x10)
-	int                                                          Mask;                                              // 0x20(0x4)
-	int                                                          MaskR;                                             // 0x24(0x4)
-	int                                                          MaskG;                                             // 0x28(0x4)
-	int                                                          MaskB;                                             // 0x2c(0x4)
-	int                                                          MaskA;                                             // 0x30(0x4)
-	int                                                          GCC64_Padding;                                     // 0x34(0x4)
-};
-
-
-// Size 0xa8
-struct FastArraySerializer
-{
-public:
-	char                                                         pad0xa8_V4377[0xa8];                               // 0x0(0xa8)
-};
-
-
-// Size 0x18
-struct ActiveForceFeedbackEffect
-{
-public:
-	class ForceFeedbackEffect*                                   ForceFeedbackEffect;                               // 0x0(0x8)
-	char                                                         pad0x10_8W9N1[0x10];                               // 0x8(0x10)
-};
-
-
-// Size 0x28
-struct AssetEditorOrbitCameraPosition
-{
-public:
-	bool                                                         bIsSet;                                            // 0x0(0x1)
-	char                                                         pad0x3_TH0PZ[0x3];                                 // 0x1(0x3)
-	struct Vector                                                CamOrbitPoint;                                     // 0x4(0xc)
-	struct Vector                                                CamOrbitZoom;                                      // 0x10(0xc)
-	struct Rotator                                               CamOrbitRotation;                                  // 0x1c(0xc)
-};
-
-
-// Size 0x1c
-struct CollectionScalarParameter
-{
-public:
-	char                                                         pad0x18_CWNDY[0x18];                               // 0x0(0x18)
-	float                                                        DefaultValue;                                      // 0x18(0x4)
-};
-
-
-// Size 0x4
-struct TrackToSkeletonMap
-{
-public:
-	int                                                          BoneTreeIndex;                                     // 0x0(0x4)
-};
-
-
-// Size 0x18
-struct AnimGroupInstance
-{
-public:
-	char                                                         pad0x18_GY29P[0x18];                               // 0x0(0x18)
-};
-
-
-// Size 0x20
-struct GameNameRedirect
-{
-public:
-	struct FString                                               OldGameName;                                       // 0x0(0x10)
-	struct FString                                               NewGameName;                                       // 0x10(0x10)
-};
-
-
-// Size 0x20
-struct BuilderPoly
-{
-public:
-	TArray<int>                                                  VertexIndices;                                     // 0x0(0x10)
-	int                                                          Direction;                                         // 0x10(0x4)
-	struct FName                                                 ItemName;                                          // 0x14(0x8)
-	int                                                          PolyFlags;                                         // 0x1c(0x4)
-};
-
-
-// Size 0x70
-struct ExposedValueCopyRecord
-{
-public:
-	class Property*                                              SourceProperty;                                    // 0x0(0x8)
-	struct FName                                                 SourcePropertyName;                                // 0x8(0x8)
-	TArray<struct Name>                                          SourceSubPropertyNames;                            // 0x10(0x10)
-	int                                                          SourceArrayIndex;                                  // 0x20(0x4)
-	char                                                         pad0x4_36WCB[0x4];                                 // 0x24(0x4)
-	class Property*                                              DestProperty;                                      // 0x28(0x8)
-	int                                                          DestArrayIndex;                                    // 0x30(0x4)
-	int                                                          Size;                                              // 0x34(0x4)
-	char                                                         PostCopyOperation;                                 // 0x38(0x1)
-	char                                                         pad0x7_NL1Z4[0x7];                                 // 0x39(0x7)
-	class BoolProperty*                                          CachedBoolSourceProperty;                          // 0x40(0x8)
-	class BoolProperty*                                          CachedBoolDestProperty;                            // 0x48(0x8)
-	char                                                         pad0x20_5RGUL[0x20];                               // 0x50(0x20)
-};
-
-
-// Size 0xc
-struct ParticleReplayTrackKey
-{
-public:
-	float                                                        Time;                                              // 0x0(0x4)
-	float                                                        Duration;                                          // 0x4(0x4)
-	int                                                          ClipIDNumber;                                      // 0x8(0x4)
-};
-
-
-// Size 0x10
-struct DamageEvent
-{
-public:
-	char                                                         pad0x8_Q7AU0[0x8];                                 // 0x0(0x8)
-	class UClass*                                                DamageTypeClass;                                   // 0x8(0x8)
-};
-
-
-// Size 0xc
-struct NameCurveKey
-{
-public:
-	float                                                        Time;                                              // 0x0(0x4)
-	struct FName                                                 Value;                                             // 0x4(0x8)
-};
-
-
-// Size 0x58
-struct NavDataConfig
-{
-public:
-	char                                                         pad0x30_MUU7H[0x30];                               // 0x0(0x30)
-	struct Color                                                 Color;                                             // 0x30(0x4)
-	struct Vector                                                DefaultQueryExtent;                                // 0x34(0xc)
-	class UClass*                                                NavigationDataClass;                               // 0x40(0x8)
-	struct StringClassReference                                  NavigationDataClassName;                           // 0x48(0x10)
-};
-
-
-// Size 0x14
-struct PaintedVertex
-{
-public:
-	struct Vector                                                Position;                                          // 0x0(0xc)
-	struct PackedNormal                                          Normal;                                            // 0xc(0x4)
-	struct Color                                                 Color;                                             // 0x10(0x4)
-};
-
-
-// Size 0x10
-struct ServerMigrationTelemetryFailedData
-{
-public:
-	struct FString                                               Stage;                                             // 0x0(0x10)
-};
-
-
-// Size 0xc
-struct FOscillator
-{
-public:
-	float                                                        Amplitude;                                         // 0x0(0x4)
-	float                                                        Frequency;                                         // 0x4(0x4)
-	char                                                         InitialOffset;                                     // 0x8(0x1)
-	char                                                         pad0x3_LVHJ1[0x3];                                 // 0x9(0x3)
-};
-
-
-// Size 0x80
-struct AnimNode_HIKReach
-{
-public:
-	char                                                         pad0x48_KX0I1[0x48];                               // 0x0(0x48)
-	float                                                        Alpha;                                             // 0x48(0x4)
-	float                                                        ReachT;                                            // 0x4c(0x4)
-	float                                                        ReachR;                                            // 0x50(0x4)
-	struct Vector                                                Translation;                                       // 0x54(0xc)
-	struct Quat                                                  Orientation;                                       // 0x60(0x10)
-	char                                                         Effector;                                          // 0x70(0x1)
-	char                                                         EffectorSpace;                                     // 0x71(0x1)
-	char                                                         pad0x2_RGP8B[0x2];                                 // 0x72(0x2)
-	struct FName                                                 ParentBone;                                        // 0x74(0x8)
-	char                                                         pad0x4_OY1QJ[0x4];                                 // 0x7c(0x4)
-};
-
-
-// Size 0x1
-struct BlueprintDebugData
-{
-public:
-	char                                                         pad0x1_SFC8G[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x48
-struct VectorMaterialInput
-{
-public:
-	char                                                         pad0x38_X22RJ[0x38];                               // 0x0(0x38)
-	bool                                                         UseConstant;                                       // 0x38(0x1)
-	char                                                         pad0x3_H8AK8[0x3];                                 // 0x39(0x3)
-	struct Vector                                                Constant;                                          // 0x3c(0xc)
-};
-
-
-// Size 0x50
-struct AnimNode_HIKResist
-{
-public:
-	char                                                         pad0x48_E6JMV[0x48];                               // 0x0(0x48)
-	float                                                        Alpha;                                             // 0x48(0x4)
-	char                                                         Effector;                                          // 0x4c(0x1)
-	char                                                         pad0x3_SVWUH[0x3];                                 // 0x4d(0x3)
-};
-
-
-// Size 0x1c
-struct StaticMeshOptimizationSettings
-{
-public:
-	char                                                         ReductionMethod;                                   // 0x0(0x1)
-	char                                                         pad0x3_MO7DE[0x3];                                 // 0x1(0x3)
-	float                                                        NumOfTrianglesPercentage;                          // 0x4(0x4)
-	float                                                        MaxDeviationPercentage;                            // 0x8(0x4)
-	float                                                        WeldingThreshold;                                  // 0xc(0x4)
-	bool                                                         bRecalcNormals;                                    // 0x10(0x1)
-	char                                                         pad0x3_8ZC4X[0x3];                                 // 0x11(0x3)
-	float                                                        NormalsThreshold;                                  // 0x14(0x4)
-	char                                                         SilhouetteImportance;                              // 0x18(0x1)
-	char                                                         TextureImportance;                                 // 0x19(0x1)
-	char                                                         ShadingImportance;                                 // 0x1a(0x1)
-	char                                                         pad0x1_1ZVI8[0x1];                                 // 0x1b(0x1)
-};
-
-
-// Size 0x10
-struct SkelMeshComponentLODInfo
-{
-public:
-	TArray<bool>                                                 HiddenMaterials;                                   // 0x0(0x10)
-};
-
-
-// Size 0x18
-struct NavigationFilterArea
-{
-public:
-	class UClass*                                                AreaClass;                                         // 0x0(0x8)
-	float                                                        TravelCostOverride;                                // 0x8(0x4)
-	float                                                        EnteringCostOverride;                              // 0xc(0x4)
-	bool                                                         bIsExcluded;                                       // 0x10(0x1)
-	bool                                                         bOverrideTravelCost;                               // 0x10(0x1)
-	bool                                                         bOverrideEnteringCost;                             // 0x10(0x1)
-	char                                                         pad0x7_DO5B3[0x7];                                 // 0x11(0x7)
-};
-
-
-// Size 0x10
-struct ParticleSystemReplayFrame
-{
-public:
-	char                                                         pad0x10_SYZR9[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0xa60
-struct GPUSpriteResourceData
-{
-public:
-	TArray<struct Color>                                         QuantizedColorSamples;                             // 0x0(0x10)
-	TArray<struct Color>                                         QuantizedMiscSamples;                              // 0x10(0x10)
-	TArray<struct Color>                                         QuantizedDynamicParamSamples;                      // 0x20(0x10)
-	TArray<struct Color>                                         QuantizedSimulationAttrSamples;                    // 0x30(0x10)
-	TArray<struct Color>                                         QuantizedSizeOverVelocitySamples;                  // 0x40(0x10)
-	struct Vector4                                               ColorScale;                                        // 0x50(0x10)
-	struct Vector4                                               ColorBias;                                         // 0x60(0x10)
-	struct Vector4                                               MiscScale;                                         // 0x70(0x10)
-	struct Vector4                                               MiscBias;                                          // 0x80(0x10)
-	struct Vector4                                               DynParamScale;                                     // 0x90(0x10)
-	struct Vector4                                               DynParamBias;                                      // 0xa0(0x10)
-	struct Vector4                                               MurkyColorScale;                                   // 0xb0(0x10)
-	struct Vector4                                               SimulationAttrCurveScale;                          // 0xc0(0x10)
-	struct Vector4                                               SimulationAttrCurveBias;                           // 0xd0(0x10)
-	struct Vector4                                               SizeOverVelocityScale;                             // 0xe0(0x10)
-	struct Vector4                                               SizeOverVelocityBias;                              // 0xf0(0x10)
-	struct Vector4                                               SubImageSize;                                      // 0x100(0x10)
-	struct Vector4                                               SizeBySpeed;                                       // 0x110(0x10)
-	struct Vector                                                ConstantAcceleration;                              // 0x120(0xc)
-	struct Vector                                                OrbitOffsetBase;                                   // 0x12c(0xc)
-	struct Vector                                                OrbitOffsetRange;                                  // 0x138(0xc)
-	struct Vector                                                OrbitFrequencyBase;                                // 0x144(0xc)
-	struct Vector                                                OrbitFrequencyRange;                               // 0x150(0xc)
-	struct Vector                                                OrbitPhaseBase;                                    // 0x15c(0xc)
-	struct Vector                                                OrbitPhaseRange;                                   // 0x168(0xc)
-	float                                                        GlobalVectorFieldScale;                            // 0x174(0x4)
-	float                                                        GlobalVectorFieldTightness;                        // 0x178(0x4)
-	float                                                        PerParticleVectorFieldScale;                       // 0x17c(0x4)
-	float                                                        PerParticleVectorFieldBias;                        // 0x180(0x4)
-	float                                                        DragCoefficientScale;                              // 0x184(0x4)
-	char                                                         pad0x14_2OJUJ[0x14];                               // 0x188(0x14)
-	float                                                        DragCoefficientBias;                               // 0x19c(0x4)
-	char                                                         pad0x14_I2BNI[0x14];                               // 0x1a0(0x14)
-	float                                                        DragLocalVelocityScale;                            // 0x1b4(0x4)
-	char                                                         pad0x14_08HW5[0x14];                               // 0x1b8(0x14)
-	float                                                        DragLocalVelocityBias;                             // 0x1cc(0x4)
-	char                                                         pad0x14_J5F9J[0x14];                               // 0x1d0(0x14)
-	float                                                        ResilienceScale;                                   // 0x1e4(0x4)
-	float                                                        ResilienceBias;                                    // 0x1e8(0x4)
-	float                                                        CollisionRadiusScale;                              // 0x1ec(0x4)
-	float                                                        CollisionRadiusBias;                               // 0x1f0(0x4)
-	float                                                        CollisionTimeBias;                                 // 0x1f4(0x4)
-	float                                                        OneMinusFriction;                                  // 0x1f8(0x4)
-	float                                                        CameraMotionBlurAmount;                            // 0x1fc(0x4)
-	float                                                        AlphaThreshold;                                    // 0x200(0x4)
-	char                                                         ScreenAlignment;                                   // 0x204(0x1)
-	char                                                         pad0x5_9JL58[0x5];                                 // 0x205(0x5)
-	char                                                         LockAxisFlag;                                      // 0x20a(0x1)
-	char                                                         pad0x1_K95B7[0x1];                                 // 0x20b(0x1)
-	struct Vector2D                                              PivotOffset;                                       // 0x20c(0x8)
-	char                                                         pad0x46c_JMJWL[0x46c];                             // 0x214(0x46c)
-	float                                                        AlignmentInheritedVelocityScale;                   // 0x680(0x4)
-	char                                                         pad0x3d4_4VTS5[0x3d4];                             // 0x684(0x3d4)
-	char                                                         SpawnLocationValueSemantic;                        // 0xa58(0x1)
-	char                                                         pad0x7_1PEEB[0x7];                                 // 0xa59(0x7)
-};
-
-
-// Size 0x8
-struct WalkableSlopeOverride
-{
-public:
-	char                                                         WalkableSlopeBehavior;                             // 0x0(0x1)
-	char                                                         pad0x3_OERAP[0x3];                                 // 0x1(0x3)
-	float                                                        WalkableSlopeAngle;                                // 0x4(0x4)
-};
-
-
-// Size 0x20
-struct AnimControlTrackKey
-{
-public:
-	float                                                        StartTime;                                         // 0x0(0x4)
-	char                                                         pad0x4_E1JF1[0x4];                                 // 0x4(0x4)
-	class AnimSequence*                                          AnimSeq;                                           // 0x8(0x8)
-	float                                                        AnimStartOffset;                                   // 0x10(0x4)
-	float                                                        AnimEndOffset;                                     // 0x14(0x4)
-	float                                                        AnimPlayRate;                                      // 0x18(0x4)
-	bool                                                         bLooping;                                          // 0x1c(0x1)
-	bool                                                         bReverse;                                          // 0x1c(0x1)
-	char                                                         pad0x3_7GR5G[0x3];                                 // 0x1d(0x3)
-};
-
-
-// Size 0x28
-struct ParticleEvent_GenerateInfo
-{
-public:
-	char                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_C30BN[0x3];                                 // 0x1(0x3)
-	int                                                          Frequency;                                         // 0x4(0x4)
-	int                                                          ParticleFrequency;                                 // 0x8(0x4)
-	bool                                                         FirstTimeOnly;                                     // 0xc(0x1)
-	bool                                                         LastTimeOnly;                                      // 0xc(0x1)
-	bool                                                         UseReflectedImpactVector;                          // 0xc(0x1)
-	bool                                                         bUseOrbitOffset;                                   // 0xc(0x1)
-	char                                                         pad0x3_PJD6L[0x3];                                 // 0xd(0x3)
-	struct FName                                                 CustomName;                                        // 0x10(0x8)
-	TArray<class ParticleModuleEventSendToGame*>                 ParticleModuleEventsToSendToGame;                  // 0x18(0x10)
-};
-
-
-// Size 0x38
-struct FFTWaterComponentWaveParticleType
-{
-public:
-	struct Vector2D                                              SpawnRadiusRange;                                  // 0x0(0x8)
-	struct Vector2D                                              FoamRange;                                         // 0x8(0x8)
-	struct Vector2D                                              HeightRange;                                       // 0x10(0x8)
-	struct Vector2D                                              AngleRange;                                        // 0x18(0x8)
-	struct Vector2D                                              CalmWaterDampeningFactorRange;                     // 0x20(0x8)
-	float                                                        Density;                                           // 0x28(0x4)
-	char                                                         pad0x4_TS6EP[0x4];                                 // 0x2c(0x4)
-	class ParticleComputeShaderData*                             ParticleComputeShaderData;                         // 0x30(0x8)
-};
-
-
-// Size 0x130
-struct FogVolumeInfo
-{
-public:
-	class FogVolumeComponent*                                    Component;                                         // 0x0(0x8)
-	char                                                         pad0xf8_QC78C[0xf8];                               // 0x8(0xf8)
-	class Texture*                                               VolumeTexture;                                     // 0x100(0x8)
-	class Texture*                                               MeshFogVolumeTexture;                              // 0x108(0x8)
-	char                                                         pad0x20_SZ6DT[0x20];                               // 0x110(0x20)
-};
-
-
-// Size 0x58
-struct NetViewer
-{
-public:
-	class Actor*                                                 InViewer;                                          // 0x0(0x8)
-	class Actor*                                                 ViewTarget;                                        // 0x8(0x8)
-	TArray<struct Vector>                                        CachedViewLocations;                               // 0x10(0x10)
-	struct Vector                                                ViewDir;                                           // 0x20(0xc)
-	char                                                         pad0x2c_BUJCK[0x2c];                               // 0x2c(0x2c)
-};
-
-
-// Size 0x30
-struct BlueprintInputAxisKeyDelegateBinding
-{
-public:
-	char                                                         pad0x8_MUN55[0x8];                                 // 0x0(0x8)
-	struct Key                                                   AxisKey;                                           // 0x8(0x20)
-	struct FName                                                 FunctionNameToBind;                                // 0x28(0x8)
-};
-
-
-// Size 0x4
-struct SwarmDebugOptions
-{
-public:
-	bool                                                         bDistributionEnabled;                              // 0x0(0x1)
-	bool                                                         bForceContentExport;                               // 0x0(0x1)
-	bool                                                         bInitialized;                                      // 0x0(0x1)
-	char                                                         pad0x3_VCAIG[0x3];                                 // 0x1(0x3)
-};
-
-
-// Size 0x28
-struct TexturePlatformData
-{
-public:
-	char                                                         pad0x28_W1OKH[0x28];                               // 0x0(0x28)
-};
-
-
-// Size 0x28
-struct DistributionLookupTable
-{
-public:
-	char                                                         Op;                                                // 0x0(0x1)
-	char                                                         EntryCount;                                        // 0x1(0x1)
-	char                                                         EntryStride;                                       // 0x2(0x1)
-	char                                                         SubEntryStride;                                    // 0x3(0x1)
-	float                                                        TimeScale;                                         // 0x4(0x4)
-	float                                                        TimeBias;                                          // 0x8(0x4)
-	char                                                         pad0x4_RWKA9[0x4];                                 // 0xc(0x4)
-	TArray<float>                                                Values;                                            // 0x10(0x10)
-	char                                                         LockFlag;                                          // 0x20(0x1)
-	char                                                         pad0x7_CGILL[0x7];                                 // 0x21(0x7)
-};
-
-
-// Size 0xc
-struct Vector_NetQuantize10
-{
-public:
-	char                                                         pad0xc_VEA07[0xc];                                 // 0x0(0xc)
-};
-
-
-// Size 0x18
-struct CurveTrack
-{
-public:
-	struct FName                                                 CurveName;                                         // 0x0(0x8)
-	TArray<float>                                                CurveWeights;                                      // 0x8(0x10)
-};
-
-
-// Size 0x8
-struct InstancedCoverageMeshLOD
-{
-public:
-	float                                                        LODReduction;                                      // 0x0(0x4)
-	float                                                        DistanceToLOD;                                     // 0x4(0x4)
-};
-
-
-// Size 0x18
-struct DialogueContext
-{
-public:
-	class DialogueVoice*                                         Speaker;                                           // 0x0(0x8)
-	TArray<class DialogueVoice*>                                 Targets;                                           // 0x8(0x10)
-};
-
-
-// Size 0x50
-struct AnimNode_HIKSetProperty
-{
-public:
-	char                                                         pad0x48_A1I67[0x48];                               // 0x0(0x48)
-	char                                                         Property;                                          // 0x48(0x1)
-	char                                                         pad0x3_WEWFZ[0x3];                                 // 0x49(0x3)
-	float                                                        Value;                                             // 0x4c(0x4)
-};
-
-
-// Size 0x1
-struct TableRowBase
-{
-public:
-	char                                                         pad0x1_L916I[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0xc
-struct BeamTargetData
-{
-public:
-	struct FName                                                 TargetName;                                        // 0x0(0x8)
-	float                                                        TargetPercentage;                                  // 0x8(0x4)
-};
-
-
-// Size 0x3c
-struct NavAvoidanceData
-{
-public:
-	char                                                         pad0x3c_1CZS5[0x3c];                               // 0x0(0x3c)
-};
-
-
-// Size 0x50
-struct ActorComponentTickFunction
-{
-public:
-	char                                                         pad0x50_02AV7[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0x14
-struct DeformablesSettings
-{
-public:
-	float                                                        DistanceStiffness;                                 // 0x0(0x4)
-	float                                                        VolumeStiffness;                                   // 0x4(0x4)
-	float                                                        Damping;                                           // 0x8(0x4)
-	float                                                        MaxDistance;                                       // 0xc(0x4)
-	float                                                        WeightMultiplier;                                  // 0x10(0x4)
-};
-
-
-// Size 0x10
-struct AnimationTransitionRule
-{
-public:
-	struct FName                                                 RuleToExecute;                                     // 0x0(0x8)
-	bool                                                         TransitionReturnVal;                               // 0x8(0x1)
-	char                                                         pad0x3_6V9D4[0x3];                                 // 0x9(0x3)
-	int                                                          TransitionIndex;                                   // 0xc(0x4)
-};
-
-
-// Size 0x18
-struct CollectionParameterBase
-{
-public:
-	struct FName                                                 ParameterName;                                     // 0x0(0x8)
-	struct Guid                                                  Id;                                                // 0x8(0x10)
-};
-
-
-// Size 0x1c
-struct RigidBodyErrorCorrection
-{
-public:
-	float                                                        LinearDeltaThresholdSq;                            // 0x0(0x4)
-	float                                                        LinearInterpAlpha;                                 // 0x4(0x4)
-	float                                                        LinearRecipFixTime;                                // 0x8(0x4)
-	float                                                        AngularDeltaThreshold;                             // 0xc(0x4)
-	float                                                        AngularInterpAlpha;                                // 0x10(0x4)
-	float                                                        AngularRecipFixTime;                               // 0x14(0x4)
-	float                                                        BodySpeedThresholdSq;                              // 0x18(0x4)
-};
-
-
-// Size 0x70
-struct GPUSpriteLocalVectorFieldInfo
-{
-public:
-	class VectorField*                                           Field;                                             // 0x0(0x8)
-	char                                                         pad0x8_2T62A[0x8];                                 // 0x8(0x8)
-	struct Transform                                             Transform;                                         // 0x10(0x30)
-	struct Rotator                                               MinInitialRotation;                                // 0x40(0xc)
-	struct Rotator                                               MaxInitialRotation;                                // 0x4c(0xc)
-	struct Rotator                                               RotationRate;                                      // 0x58(0xc)
-	float                                                        Intensity;                                         // 0x64(0x4)
-	float                                                        Tightness;                                         // 0x68(0x4)
-	bool                                                         bIgnoreComponentTransform;                         // 0x6c(0x1)
-	bool                                                         bTileX;                                            // 0x6c(0x1)
-	bool                                                         bTileY;                                            // 0x6c(0x1)
-	bool                                                         bTileZ;                                            // 0x6c(0x1)
-	char                                                         pad0x3_X3TJX[0x3];                                 // 0x6d(0x3)
-};
-
-
-// Size 0x18
-struct TTEventTrack
-{
-public:
-	char                                                         pad0x10_UUA3D[0x10];                               // 0x0(0x10)
-	class CurveFloat*                                            CurveKeys;                                         // 0x10(0x8)
-};
-
-
-// Size 0x28
-struct VectorParameterValue
-{
-public:
-	struct FName                                                 ParameterName;                                     // 0x0(0x8)
-	struct LinearColor                                           ParameterValue;                                    // 0x8(0x10)
-	struct Guid                                                  ExpressionGUID;                                    // 0x18(0x10)
-};
-
-
-// Size 0x40
-struct AnimTickRecord
-{
-public:
-	class AnimationAsset*                                        SourceAsset;                                       // 0x0(0x8)
-	char                                                         pad0x38_SBMPO[0x38];                               // 0x8(0x38)
-};
-
-
-// Size 0x38
-struct MaterialInput
-{
-public:
-	class MaterialExpression*                                    Expression;                                        // 0x0(0x8)
-	int                                                          OutputIndex;                                       // 0x8(0x4)
-	char                                                         pad0x4_KYSAK[0x4];                                 // 0xc(0x4)
-	struct FString                                               InputName;                                         // 0x10(0x10)
-	int                                                          Mask;                                              // 0x20(0x4)
-	int                                                          MaskR;                                             // 0x24(0x4)
-	int                                                          MaskG;                                             // 0x28(0x4)
-	int                                                          MaskB;                                             // 0x2c(0x4)
-	int                                                          MaskA;                                             // 0x30(0x4)
-	int                                                          GCC64_Padding;                                     // 0x34(0x4)
-};
-
-
-// Size 0xc8
-struct EdGraphSchemaAction
-{
-public:
-	char                                                         pad0x8_N33M5[0x8];                                 // 0x0(0x8)
-	struct FText                                                 MenuDescription;                                   // 0x8(0x38)
-	struct FString                                               TooltipDescription;                                // 0x40(0x10)
-	struct FText                                                 Category;                                          // 0x50(0x38)
-	struct FText                                                 Keywords;                                          // 0x88(0x38)
-	int                                                          Grouping;                                          // 0xc0(0x4)
-	int                                                          SectionID;                                         // 0xc4(0x4)
-};
-
-
-// Size 0x14
-struct LocationBoneSocketInfo
-{
-public:
-	struct FName                                                 BoneSocketName;                                    // 0x0(0x8)
-	struct Vector                                                Offset;                                            // 0x8(0xc)
-};
-
-
-// Size 0x10
-struct LayerActorStats
-{
-public:
-	class UClass*                                                Type;                                              // 0x0(0x8)
-	int                                                          Total;                                             // 0x8(0x4)
-	char                                                         pad0x4_KG3O3[0x4];                                 // 0xc(0x4)
-};
-
-
-// Size 0x18
-struct SoundClassAdjuster
-{
-public:
-	class SoundClass*                                            SoundClassObject;                                  // 0x0(0x8)
-	float                                                        VolumeAdjuster;                                    // 0x8(0x4)
-	float                                                        PitchAdjuster;                                     // 0xc(0x4)
-	bool                                                         bApplyToChildren;                                  // 0x10(0x1)
-	char                                                         pad0x3_J7PP1[0x3];                                 // 0x11(0x3)
-	float                                                        VoiceCenterChannelVolumeAdjuster;                  // 0x14(0x4)
-};
-
-
-// Size 0x70
-struct NetTimeStampCalculator
-{
-public:
-	char                                                         pad0x70_48T97[0x70];                               // 0x0(0x70)
-};
-
-
-// Size 0x30
-struct PreviewAttachedObjectPair
-{
-public:
-	char                                                         pad0x20_HTTGQ[0x20];                               // 0x0(0x20)
-	class Object*                                                Object;                                            // 0x20(0x8)
-	struct FName                                                 AttachedTo;                                        // 0x28(0x8)
-};
-
-
-// Size 0x18
-struct ParticleCurvePair
-{
-public:
-	struct FString                                               CurveName;                                         // 0x0(0x10)
-	class Object*                                                CurveObject;                                       // 0x10(0x8)
-};
-
-
-// Size 0x44
-struct MaterialSimplificationSettings
-{
-public:
-	struct IntPoint                                              BaseColorMapSize;                                  // 0x0(0x8)
-	bool                                                         bNormalMap;                                        // 0x8(0x1)
-	char                                                         pad0x3_1YYGO[0x3];                                 // 0x9(0x3)
-	struct IntPoint                                              NormalMapSize;                                     // 0xc(0x8)
-	float                                                        MetallicConstant;                                  // 0x14(0x4)
-	bool                                                         bMetallicMap;                                      // 0x18(0x1)
-	char                                                         pad0x3_61QMQ[0x3];                                 // 0x19(0x3)
-	struct IntPoint                                              MetallicMapSize;                                   // 0x1c(0x8)
-	float                                                        RoughnessConstant;                                 // 0x24(0x4)
-	bool                                                         bRoughnessMap;                                     // 0x28(0x1)
-	char                                                         pad0x3_MB2LE[0x3];                                 // 0x29(0x3)
-	struct IntPoint                                              RoughnessMapSize;                                  // 0x2c(0x8)
-	float                                                        SpecularConstant;                                  // 0x34(0x4)
-	bool                                                         bSpecularMap;                                      // 0x38(0x1)
-	char                                                         pad0x3_WBOFK[0x3];                                 // 0x39(0x3)
-	struct IntPoint                                              SpecularMapSize;                                   // 0x3c(0x8)
-};
-
-
-// Size 0x2c
-struct AtmospherePrecomputeParameters
-{
-public:
-	float                                                        DensityHeight;                                     // 0x0(0x4)
-	float                                                        DecayHeight;                                       // 0x4(0x4)
-	int                                                          MaxScatteringOrder;                                // 0x8(0x4)
-	int                                                          TransmittanceTexWidth;                             // 0xc(0x4)
-	int                                                          TransmittanceTexHeight;                            // 0x10(0x4)
-	int                                                          IrradianceTexWidth;                                // 0x14(0x4)
-	int                                                          IrradianceTexHeight;                               // 0x18(0x4)
-	int                                                          InscatterAltitudeSampleNum;                        // 0x1c(0x4)
-	int                                                          InscatterMuNum;                                    // 0x20(0x4)
-	int                                                          InscatterMuSNum;                                   // 0x24(0x4)
-	int                                                          InscatterNuNum;                                    // 0x28(0x4)
-};
-
-
-// Size 0x18
-struct FontCharacter
-{
-public:
-	int                                                          StartU;                                            // 0x0(0x4)
-	int                                                          StartV;                                            // 0x4(0x4)
-	int                                                          USize;                                             // 0x8(0x4)
-	int                                                          VSize;                                             // 0xc(0x4)
-	char                                                         TextureIndex;                                      // 0x10(0x1)
-	char                                                         pad0x3_OIPMT[0x3];                                 // 0x11(0x3)
-	int                                                          VerticalOffset;                                    // 0x14(0x4)
-};
-
-
-// Size 0x24
-struct SoundClassProperties
-{
-public:
-	float                                                        Volume;                                            // 0x0(0x4)
-	float                                                        Pitch;                                             // 0x4(0x4)
-	float                                                        StereoBleed;                                       // 0x8(0x4)
-	float                                                        LFEBleed;                                          // 0xc(0x4)
-	float                                                        VoiceCenterChannelVolume;                          // 0x10(0x4)
-	float                                                        RadioFilterVolume;                                 // 0x14(0x4)
-	float                                                        RadioFilterVolumeThreshold;                        // 0x18(0x4)
-	bool                                                         bApplyEffects;                                     // 0x1c(0x1)
-	bool                                                         bAlwaysPlay;                                       // 0x1c(0x1)
-	bool                                                         bIsUISound;                                        // 0x1c(0x1)
-	bool                                                         bIsMusic;                                          // 0x1c(0x1)
-	bool                                                         bReverb;                                           // 0x1c(0x1)
-	bool                                                         bCenterChannelOnly;                                // 0x1c(0x1)
-	bool                                                         bApplyAmbientVolumes;                              // 0x1c(0x1)
-	char                                                         pad0x3_LBQST[0x3];                                 // 0x1d(0x3)
-	char                                                         OutputTarget;                                      // 0x20(0x1)
-	char                                                         pad0x3_83PHA[0x3];                                 // 0x21(0x3)
-};
-
-
-// Size 0x50
-struct ActorTickFunction
-{
-public:
-	char                                                         pad0x50_J2DZ2[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0x50
-struct KBoxElem
-{
-public:
-	char                                                         pad0x20_SUR33[0x20];                               // 0x0(0x20)
-	struct Vector                                                Center;                                            // 0x20(0xc)
-	char                                                         pad0x4_KBHPX[0x4];                                 // 0x2c(0x4)
-	struct Quat                                                  Orientation;                                       // 0x30(0x10)
-	float                                                        X;                                                 // 0x40(0x4)
-	float                                                        Y;                                                 // 0x44(0x4)
-	float                                                        Z;                                                 // 0x48(0x4)
-	char                                                         pad0x4_RZKJ3[0x4];                                 // 0x4c(0x4)
-};
-
-
-// Size 0x58
-struct AnimNode_HIKTest
-{
-public:
-	char                                                         pad0x48_MRZQ6[0x48];                               // 0x0(0x48)
-	float                                                        Alpha;                                             // 0x48(0x4)
-	float                                                        Param;                                             // 0x4c(0x4)
-	float                                                        Intensity;                                         // 0x50(0x4)
-	char                                                         pad0x4_VHU9H[0x4];                                 // 0x54(0x4)
-};
-
-
-// Size 0x4
-struct MovementProperties
-{
-public:
-	bool                                                         bCanCrouch;                                        // 0x0(0x1)
-	bool                                                         bCanJump;                                          // 0x0(0x1)
-	bool                                                         bCanWalk;                                          // 0x0(0x1)
-	bool                                                         bCanSwim;                                          // 0x0(0x1)
-	bool                                                         bCanFly;                                           // 0x0(0x1)
-	char                                                         pad0x3_JWW1E[0x3];                                 // 0x1(0x3)
-};
-
-
-// Size 0x70
-struct FormatTextArgument
-{
-public:
-	struct FText                                                 ArgumentName;                                      // 0x0(0x38)
-	struct FText                                                 TextValue;                                         // 0x38(0x38)
-};
-
-
-// Size 0x14
-struct NavCollisionCylinder
-{
-public:
-	struct Vector                                                Offset;                                            // 0x0(0xc)
-	float                                                        Radius;                                            // 0xc(0x4)
-	float                                                        Height;                                            // 0x10(0x4)
-};
-
-
-// Size 0x78
-struct TouchInputControl
-{
-public:
-	class Texture2D*                                             Image1;                                            // 0x0(0x8)
-	class Texture2D*                                             Image2;                                            // 0x8(0x8)
-	struct Vector2D                                              Center;                                            // 0x10(0x8)
-	struct Vector2D                                              VisualSize;                                        // 0x18(0x8)
-	struct Vector2D                                              ThumbSize;                                         // 0x20(0x8)
-	struct Vector2D                                              InteractionSize;                                   // 0x28(0x8)
-	struct Vector2D                                              InputScale;                                        // 0x30(0x8)
-	struct Key                                                   MainInputKey;                                      // 0x38(0x20)
-	struct Key                                                   AltInputKey;                                       // 0x58(0x20)
-};
-
-
-// Size 0x20
-struct KShapeElem
-{
-public:
-	char                                                         pad0x20_R0L6B[0x20];                               // 0x0(0x20)
-};
-
-
-// Size 0x24
-struct InteriorSettings
-{
-public:
-	bool                                                         bIsWorldSettings;                                  // 0x0(0x1)
-	char                                                         pad0x3_U70W9[0x3];                                 // 0x1(0x3)
-	float                                                        ExteriorVolume;                                    // 0x4(0x4)
-	float                                                        ExteriorTime;                                      // 0x8(0x4)
-	float                                                        ExteriorLPF;                                       // 0xc(0x4)
-	float                                                        ExteriorLPFTime;                                   // 0x10(0x4)
-	float                                                        InteriorVolume;                                    // 0x14(0x4)
-	float                                                        InteriorTime;                                      // 0x18(0x4)
-	float                                                        InteriorLPF;                                       // 0x1c(0x4)
-	float                                                        InteriorLPFTime;                                   // 0x20(0x4)
-};
-
-
-// Size 0x40
-struct ColorMaterialInput
-{
-public:
-	char                                                         pad0x38_QC1LK[0x38];                               // 0x0(0x38)
-	bool                                                         UseConstant;                                       // 0x38(0x1)
-	char                                                         pad0x3_SFCFY[0x3];                                 // 0x39(0x3)
-	struct Color                                                 Constant;                                          // 0x3c(0x4)
-};
-
-
-// Size 0x30
-struct AnimLinkableElement
-{
-public:
-	char                                                         pad0x8_KCZDF[0x8];                                 // 0x0(0x8)
-	class AnimMontage*                                           LinkedMontage;                                     // 0x8(0x8)
-	int                                                          SlotIndex;                                         // 0x10(0x4)
-	int                                                          SegmentIndex;                                      // 0x14(0x4)
-	char                                                         LinkMethod;                                        // 0x18(0x1)
-	char                                                         CachedLinkMethod;                                  // 0x19(0x1)
-	char                                                         pad0x2_HQB8D[0x2];                                 // 0x1a(0x2)
-	float                                                        SegmentBeginTime;                                  // 0x1c(0x4)
-	float                                                        SegmentLength;                                     // 0x20(0x4)
-	float                                                        LinkValue;                                         // 0x24(0x4)
-	class AnimSequenceBase*                                      LinkedSequence;                                    // 0x28(0x8)
-};
-
-
-// Size 0x1
-struct DestructibleDepthParameters
-{
-public:
-	char                                                         ImpactDamageOverride;                              // 0x0(0x1)
-};
-
-
-// Size 0xc
-struct LightmassLightSettings
-{
-public:
-	float                                                        IndirectLightingSaturation;                        // 0x0(0x4)
-	float                                                        ShadowExponent;                                    // 0x4(0x4)
-	bool                                                         bUseAreaShadowsForStationaryLight;                 // 0x8(0x1)
-	char                                                         pad0x3_NDBDT[0x3];                                 // 0x9(0x3)
-};
-
-
-// Size 0x10
-struct BlueprintInputTouchDelegateBinding
-{
-public:
-	char                                                         pad0x4_URYN1[0x4];                                 // 0x0(0x4)
-	char                                                         InputKeyEvent;                                     // 0x4(0x1)
-	char                                                         pad0x3_B9VSS[0x3];                                 // 0x5(0x3)
-	struct FName                                                 FunctionNameToBind;                                // 0x8(0x8)
-};
-
-
-// Size 0x10
-struct BoneReductionSetting
-{
-public:
-	TArray<struct Name>                                          BonesToRemove;                                     // 0x0(0x10)
-};
-
-
-// Size 0x8
-struct ActorPtr
-{
-public:
-	class Actor*                                                 Actor;                                             // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct InterpolationParameter
-{
-public:
-	float                                                        InterpolationTime;                                 // 0x0(0x4)
-	char                                                         InterpolationType;                                 // 0x4(0x1)
-	char                                                         pad0x3_LMCZ4[0x3];                                 // 0x5(0x3)
-};
-
-
-// Size 0x20
-struct BlendParameter
-{
-public:
-	struct FString                                               DisplayName;                                       // 0x0(0x10)
-	float                                                        Min;                                               // 0x10(0x4)
-	float                                                        Max;                                               // 0x14(0x4)
-	int                                                          GridNum;                                           // 0x18(0x4)
-	char                                                         pad0x4_J4VM4[0x4];                                 // 0x1c(0x4)
-};
-
-
-// Size 0x18
-struct EngineShowFlagsSetting
-{
-public:
-	struct FString                                               ShowFlagName;                                      // 0x0(0x10)
-	bool                                                         Enabled;                                           // 0x10(0x1)
-	char                                                         pad0x7_CJ245[0x7];                                 // 0x11(0x7)
-};
-
-
-// Size 0x40
-struct RootMotionMovementParams
-{
-public:
-	bool                                                         bHasRootMotion;                                    // 0x0(0x1)
-	char                                                         pad0x3_B07K2[0x3];                                 // 0x1(0x3)
-	float                                                        BlendWeight;                                       // 0x4(0x4)
-	char                                                         pad0x8_VQ7MZ[0x8];                                 // 0x8(0x8)
-	struct Transform                                             RootMotionTransform;                               // 0x10(0x30)
-};
-
-
-// Size 0x38
-struct FullyLoadedPackagesInfo
-{
-public:
-	char                                                         FullyLoadType;                                     // 0x0(0x1)
-	char                                                         pad0x7_P8K99[0x7];                                 // 0x1(0x7)
-	struct FString                                               Tag;                                               // 0x8(0x10)
-	TArray<struct Name>                                          PackagesToLoad;                                    // 0x18(0x10)
-	TArray<class Object*>                                        LoadedObjects;                                     // 0x28(0x10)
-};
-
-
-// Size 0x18
-struct NetDriverDefinition
-{
-public:
-	struct FName                                                 DefName;                                           // 0x0(0x8)
-	struct FName                                                 DriverClassName;                                   // 0x8(0x8)
-	struct FName                                                 DriverClassNameFallback;                           // 0x10(0x8)
-};
-
-
-// Size 0x10
-struct DataTableRowHandle
-{
-public:
-	class DataTable*                                             DataTable;                                         // 0x0(0x8)
-	struct FName                                                 RowName;                                           // 0x8(0x8)
-};
-
-
-// Size 0x60
-struct AnimNode_HIKPlant
-{
-public:
-	char                                                         pad0x48_FFXRM[0x48];                               // 0x0(0x48)
-	float                                                        Alpha;                                             // 0x48(0x4)
-	float                                                        HipsLevel;                                         // 0x4c(0x4)
-	float                                                        ProjectionDistance;                                // 0x50(0x4)
-	bool                                                         PullFeetInsteadOfAnkles;                           // 0x54(0x1)
-	bool                                                         IsQuadruped;                                       // 0x55(0x1)
-	char                                                         pad0x2_UAQPC[0x2];                                 // 0x56(0x2)
-	float                                                        ChestLevel;                                        // 0x58(0x4)
-	bool                                                         PullHandsInsteadOfWrists;                          // 0x5c(0x1)
-	char                                                         pad0x3_JYAAS[0x3];                                 // 0x5d(0x3)
-};
-
-
-// Size 0x80
-struct TextureSource
-{
-public:
-	char                                                         pad0x80_2QAOF[0x80];                               // 0x0(0x80)
-};
-
-
-// Size 0x1
-struct AnimBlueprintDebugData
-{
-public:
-	char                                                         pad0x1_6SDRV[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x10
-struct DestructibleAdvancedParameters
-{
-public:
-	float                                                        DamageCap;                                         // 0x0(0x4)
-	float                                                        ImpactVelocityThreshold;                           // 0x4(0x4)
-	float                                                        MaxChunkSpeed;                                     // 0x8(0x4)
-	float                                                        FractureImpulseScale;                              // 0xc(0x4)
-};
-
-
-// Size 0x40
-struct AnimNode_AssetPlayerBase
-{
-public:
-	char                                                         pad0x30_ZYN3E[0x30];                               // 0x0(0x30)
-	bool                                                         bIgnoreForRelevancyTest;                           // 0x30(0x1)
-	char                                                         pad0x3_DA8JF[0x3];                                 // 0x31(0x3)
-	float                                                        BlendWeight;                                       // 0x34(0x4)
-	float                                                        InternalTimeAccumulator;                           // 0x38(0x4)
-	char                                                         pad0x4_VB10D[0x4];                                 // 0x3c(0x4)
-};
-
-
-// Size 0x18
-struct BlueprintInputActionDelegateBinding
-{
-public:
-	char                                                         pad0x4_RWF5F[0x4];                                 // 0x0(0x4)
-	struct FName                                                 InputActionName;                                   // 0x4(0x8)
-	char                                                         InputKeyEvent;                                     // 0xc(0x1)
-	char                                                         pad0x3_OTG1Y[0x3];                                 // 0xd(0x3)
-	struct FName                                                 FunctionNameToBind;                                // 0x10(0x8)
-};
-
-
-// Size 0x8
-struct PerBoneBlendWeight
-{
-public:
-	int                                                          SourceIndex;                                       // 0x0(0x4)
-	float                                                        BlendWeight;                                       // 0x4(0x4)
-};
-
-
-// Size 0xc0
-struct RainPostProcessSettings
-{
-public:
-	bool                                                         bOverride_RainParticleTexture;                     // 0x0(0x1)
-	bool                                                         bOverride_RainMeshTexture;                         // 0x0(0x1)
-	bool                                                         bOverride_RainIntensity;                           // 0x0(0x1)
-	bool                                                         bOverride_RainParticleAlpha;                       // 0x0(0x1)
-	bool                                                         bOverride_RainCloseParticleAlphaReductionMultiplier; // 0x0(0x1)
-	bool                                                         bOverride_RainCloseParticleAlphaDistance;          // 0x0(0x1)
-	bool                                                         bOverride_RainParticleDensity;                     // 0x0(0x1)
-	bool                                                         bOverride_RainParticleSpeed;                       // 0x0(0x1)
-	bool                                                         bOverride_RainParticleWindVelocity;                // 0x1(0x1)
-	bool                                                         bOverride_RainParticleWidth;                       // 0x1(0x1)
-	bool                                                         bOverride_RainParticleLength;                      // 0x1(0x1)
-	bool                                                         bOverride_RainMeshScale;                           // 0x1(0x1)
-	bool                                                         bOverride_RainMeshTextureScroll;                   // 0x1(0x1)
-	bool                                                         bOverride_RainMeshTextureTiling;                   // 0x1(0x1)
-	bool                                                         bOverride_RainMeshAlpha;                           // 0x1(0x1)
-	bool                                                         bOverride_RainMeshRowDivision;                     // 0x1(0x1)
-	bool                                                         bOverride_RainMeshColumnDivision;                  // 0x2(0x1)
-	bool                                                         bOverride_RainMeshBrightness;                      // 0x2(0x1)
-	bool                                                         bOverride_RainBrightness;                          // 0x2(0x1)
-	bool                                                         bOverride_RainTint;                                // 0x2(0x1)
-	bool                                                         bOverride_RainMeshEndRadiusScale;                  // 0x2(0x1)
-	bool                                                         bOverride_RainMeshEndAlphaFade;                    // 0x2(0x1)
-	bool                                                         bOverride_RainMeshFadeDistance;                    // 0x2(0x1)
-	bool                                                         bOverride_RainAnimationFrameTime;                  // 0x2(0x1)
-	bool                                                         bOverride_RainSplashesPerSecond;                   // 0x3(0x1)
-	bool                                                         bOverride_RainSplashesPerSquareMetre;              // 0x3(0x1)
-	bool                                                         bOverride_RainSplashesMaxPlacementAngle;           // 0x3(0x1)
-	bool                                                         bOverride_RainSplashData;                          // 0x3(0x1)
-	bool                                                         bOverride_RainSplashesMaxDistance1;                // 0x3(0x1)
-	bool                                                         bOverride_RainSplashData2;                         // 0x3(0x1)
-	bool                                                         bOverride_RainSplashesMaxDistance2;                // 0x3(0x1)
-	char                                                         pad0x4_YIVBH[0x4];                                 // 0x4(0x4)
-	class Texture*                                               RainParticleTexture;                               // 0x8(0x8)
-	class Texture*                                               RainMeshTexture;                                   // 0x10(0x8)
-	float                                                        RainIntensity;                                     // 0x18(0x4)
-	float                                                        RainParticleAlpha;                                 // 0x1c(0x4)
-	float                                                        RainCloseParticleAlphaReductionMultiplier;         // 0x20(0x4)
-	float                                                        RainCloseParticleAlphaDistance;                    // 0x24(0x4)
-	float                                                        RainParticleDensity;                               // 0x28(0x4)
-	float                                                        RainParticleSpeed;                                 // 0x2c(0x4)
-	struct Vector                                                RainParticleWindVelocity;                          // 0x30(0xc)
-	float                                                        RainParticleWidth;                                 // 0x3c(0x4)
-	float                                                        RainParticleLength;                                // 0x40(0x4)
-	struct Vector                                                RainMeshScale;                                     // 0x44(0xc)
-	struct Vector2D                                              RainMeshTextureScroll;                             // 0x50(0x8)
-	struct Vector2D                                              RainMeshTextureTiling;                             // 0x58(0x8)
-	float                                                        RainMeshAlpha;                                     // 0x60(0x4)
-	int                                                          RainMeshRowDivision;                               // 0x64(0x4)
-	int                                                          RainMeshColumnDivision;                            // 0x68(0x4)
-	float                                                        RainMeshEndRadiusScale;                            // 0x6c(0x4)
-	float                                                        RainMeshEndAlphaFade;                              // 0x70(0x4)
-	float                                                        RainMeshFadeDistance;                              // 0x74(0x4)
-	float                                                        RainMeshBrightness;                                // 0x78(0x4)
-	float                                                        RainBrightness;                                    // 0x7c(0x4)
-	struct LinearColor                                           RainTint;                                          // 0x80(0x10)
-	float                                                        RainAnimationFrameTime;                            // 0x90(0x4)
-	int                                                          RainSplashesPerSecond;                             // 0x94(0x4)
-	float                                                        RainSplashesPerSquareMetre;                        // 0x98(0x4)
-	float                                                        RainSplashesMaxPlacementAngle;                     // 0x9c(0x4)
-	class ParticleComputeShaderData*                             RainSplashData;                                    // 0xa0(0x8)
-	float                                                        RainSplashesMaxDistance1;                          // 0xa8(0x4)
-	char                                                         pad0x4_416FE[0x4];                                 // 0xac(0x4)
-	class ParticleComputeShaderData*                             RainSplashData2;                                   // 0xb0(0x8)
-	float                                                        RainSplashesMaxDistance2;                          // 0xb8(0x4)
-	char                                                         pad0x4_J6X1E[0x4];                                 // 0xbc(0x4)
-};
-
-
-// Size 0xc
-struct AnimationGroupReference
-{
-public:
-	struct FName                                                 GroupName;                                         // 0x0(0x8)
-	char                                                         GroupRole;                                         // 0x8(0x1)
-	char                                                         pad0x3_M4FBJ[0x3];                                 // 0x9(0x3)
-};
-
-
-// Size 0x14
-struct StreamableTextureInstance
-{
-public:
-	char                                                         pad0x14_BG9EN[0x14];                               // 0x0(0x14)
-};
-
-
-// Size 0x28
-struct BatchedPoint
-{
-public:
-	struct Vector                                                Position;                                          // 0x0(0xc)
-	struct LinearColor                                           Color;                                             // 0xc(0x10)
-	float                                                        PointSize;                                         // 0x1c(0x4)
-	float                                                        RemainingLifeTime;                                 // 0x20(0x4)
-	char                                                         DepthPriority;                                     // 0x24(0x1)
-	char                                                         pad0x3_MI362[0x3];                                 // 0x25(0x3)
-};
-
-
-// Size 0x60
-struct AnimNode_HIKOffset
-{
-public:
-	char                                                         pad0x48_2ZLKB[0x48];                               // 0x0(0x48)
-	float                                                        Alpha;                                             // 0x48(0x4)
-	float                                                        ReachT;                                            // 0x4c(0x4)
-	struct Vector                                                Translation;                                       // 0x50(0xc)
-	char                                                         Effector;                                          // 0x5c(0x1)
-	char                                                         EffectorSpace;                                     // 0x5d(0x1)
-	char                                                         pad0x2_3ZFC8[0x2];                                 // 0x5e(0x2)
-};
-
-
-// Size 0x18
-struct ComponentReference
-{
-public:
-	class Actor*                                                 OtherActor;                                        // 0x0(0x8)
-	struct FName                                                 ComponentProperty;                                 // 0x8(0x8)
-	char                                                         pad0x8_OJ4NZ[0x8];                                 // 0x10(0x8)
-};
-
-
-// Size 0x20
-struct AnimSegment
-{
-public:
-	class AnimSequenceBase*                                      AnimReference;                                     // 0x0(0x8)
-	float                                                        StartPos;                                          // 0x8(0x4)
-	float                                                        AnimStartTime;                                     // 0xc(0x4)
-	float                                                        AnimEndTime;                                       // 0x10(0x4)
-	float                                                        AnimPlayRate;                                      // 0x14(0x4)
-	int                                                          LoopingCount;                                      // 0x18(0x4)
-	char                                                         pad0x4_3DYFT[0x4];                                 // 0x1c(0x4)
-};
-
-
-// Size 0x18
-struct UniqueNetIdRepl
-{
-public:
-	char                                                         pad0x18_Y8Z4R[0x18];                               // 0x0(0x18)
-};
-
-
-// Size 0x18
-struct LightmassPrimitiveSettings
-{
-public:
-	bool                                                         bUseTwoSidedLighting;                              // 0x0(0x1)
-	bool                                                         bShadowIndirectOnly;                               // 0x0(0x1)
-	bool                                                         bUseEmissiveForStaticLighting;                     // 0x0(0x1)
-	bool                                                         bUseVertexNormalForHemisphereGather;               // 0x0(0x1)
-	char                                                         pad0x3_JAOUG[0x3];                                 // 0x1(0x3)
-	float                                                        EmissiveLightFalloffExponent;                      // 0x4(0x4)
-	float                                                        EmissiveLightExplicitInfluenceRadius;              // 0x8(0x4)
-	float                                                        EmissiveBoost;                                     // 0xc(0x4)
-	float                                                        DiffuseBoost;                                      // 0x10(0x4)
-	float                                                        FullyOccludedSamplesFraction;                      // 0x14(0x4)
-};
-
-
-// Size 0x18
-struct StringCurveKey
-{
-public:
-	float                                                        Time;                                              // 0x0(0x4)
-	char                                                         pad0x4_WBWT1[0x4];                                 // 0x4(0x4)
-	struct FString                                               Value;                                             // 0x8(0x10)
-};
-
-
-// Size 0x40
-struct AudioQualitySettings
-{
-public:
-	struct FText                                                 DisplayName;                                       // 0x0(0x38)
-	int                                                          MaxChannels;                                       // 0x38(0x4)
-	char                                                         pad0x4_X6DMM[0x4];                                 // 0x3c(0x4)
-};
-
-
-// Size 0x40
-struct EmitterPointData
-{
-public:
-	struct Vector4                                               Position;                                          // 0x0(0x10)
-	struct Vector4                                               InheritedVelocity;                                 // 0x10(0x10)
-	struct Vector4                                               Orientation;                                       // 0x20(0x10)
-	struct Vector                                                Scale;                                             // 0x30(0xc)
-	char                                                         pad0x4_3Q8YM[0x4];                                 // 0x3c(0x4)
-};
-
-
-// Size 0x20
-struct SingleAnimationPlayData
-{
-public:
-	class AnimationAsset*                                        AnimToPlay;                                        // 0x0(0x8)
-	class VertexAnimation*                                       VertexAnimToPlay;                                  // 0x8(0x8)
-	bool                                                         bSavedLooping;                                     // 0x10(0x1)
-	bool                                                         bSavedPlaying;                                     // 0x10(0x1)
-	char                                                         pad0x3_B03LD[0x3];                                 // 0x11(0x3)
-	float                                                        SavedPosition;                                     // 0x14(0x4)
-	float                                                        SavedPlayRate;                                     // 0x18(0x4)
-	char                                                         pad0x4_IEGYP[0x4];                                 // 0x1c(0x4)
-};
-
-
-// Size 0x18
-struct DataTableCategoryHandle
-{
-public:
-	class DataTable*                                             DataTable;                                         // 0x0(0x8)
-	struct FName                                                 ColumnName;                                        // 0x8(0x8)
-	struct FName                                                 RowContents;                                       // 0x10(0x8)
-};
-
-
-// Size 0x30
-struct CameraPreviewInfo
-{
-public:
-	class UClass*                                                PawnClass;                                         // 0x0(0x8)
-	class AnimSequence*                                          AnimSeq;                                           // 0x8(0x8)
-	struct Vector                                                Location;                                          // 0x10(0xc)
-	struct Rotator                                               Rotation;                                          // 0x1c(0xc)
-	class Pawn*                                                  PawnInst;                                          // 0x28(0x8)
-};
-
-
-// Size 0x30
-struct RigidBodyContactInfo
-{
-public:
-	struct Vector                                                ContactPosition;                                   // 0x0(0xc)
-	struct Vector                                                ContactNormal;                                     // 0xc(0xc)
-	float                                                        ContactPenetration;                                // 0x18(0x4)
-	char                                                         pad0x4_8GXJG[0x4];                                 // 0x1c(0x4)
-	class PhysicalMaterial*                                      PhysMaterial;                                      // 0x20(0x8)
-	char                                                         pad0x8_GN0BL[0x8];                                 // 0x28(0x8)
-};
-
-
-// Size 0x1c
-struct RichCurveKey
-{
-public:
-	char                                                         InterpMode;                                        // 0x0(0x1)
-	char                                                         TangentMode;                                       // 0x1(0x1)
-	char                                                         TangentWeightMode;                                 // 0x2(0x1)
-	char                                                         pad0x1_71DVL[0x1];                                 // 0x3(0x1)
-	float                                                        Time;                                              // 0x4(0x4)
-	float                                                        Value;                                             // 0x8(0x4)
-	float                                                        ArriveTangent;                                     // 0xc(0x4)
-	float                                                        ArriveTangentWeight;                               // 0x10(0x4)
-	float                                                        LeaveTangent;                                      // 0x14(0x4)
-	float                                                        LeaveTangentWeight;                                // 0x18(0x4)
-};
-
-
-// Size 0xc
-struct AnimationRecordingSettings
-{
-public:
-	bool                                                         bRecordInWorldSpace;                               // 0x0(0x1)
-	bool                                                         bRemoveRootAnimation;                              // 0x1(0x1)
-	bool                                                         bAutoSaveAsset;                                    // 0x2(0x1)
-	char                                                         pad0x1_O9GNX[0x1];                                 // 0x3(0x1)
-	float                                                        SampleRate;                                        // 0x4(0x4)
-	float                                                        Length;                                            // 0x8(0x4)
-};
-
-
-// Size 0x50
-struct SmartNameContainer
-{
-public:
-	char                                                         pad0x50_62DFJ[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0x14
-struct DistanceDatum
-{
-public:
-	float                                                        FadeInDistanceStart;                               // 0x0(0x4)
-	float                                                        FadeInDistanceEnd;                                 // 0x4(0x4)
-	float                                                        FadeOutDistanceStart;                              // 0x8(0x4)
-	float                                                        FadeOutDistanceEnd;                                // 0xc(0x4)
-	float                                                        Volume;                                            // 0x10(0x4)
-};
-
-
-// Size 0x38
-struct RawDistributionVector
-{
-public:
-	char                                                         pad0x28_K5P8K[0x28];                               // 0x0(0x28)
-	float                                                        MinValue;                                          // 0x28(0x4)
-	float                                                        MaxValue;                                          // 0x2c(0x4)
-	class DistributionVector*                                    Distribution;                                      // 0x30(0x8)
-};
-
-
-// Size 0x10
-struct CameraCutInfo
-{
-public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
-	float                                                        TimeStamp;                                         // 0xc(0x4)
-};
-
-
-// Size 0xc
-struct InterpLookupPoint
-{
-public:
-	struct FName                                                 GroupName;                                         // 0x0(0x8)
-	float                                                        Time;                                              // 0x8(0x4)
-};
-
-
-// Size 0x68
-struct SmartNameMapping
-{
-public:
-	char                                                         pad0x68_QPJO7[0x68];                               // 0x0(0x68)
+	TArray<int>                                                  SkeletonToMeshTable;                               // 0x0(0x10)
+	TArray<int>                                                  MeshToSkeletonTable;                               // 0x10(0x10)
 };
 
 
@@ -2493,1922 +19,7 @@ struct AnimNotifyTrack
 {
 public:
 	struct FName                                                 TrackName;                                         // 0x0(0x8)
-	struct LinearColor                                           TrackColor;                                        // 0x8(0x10)
-	char                                                         pad0x10_1MD81[0x10];                               // 0x18(0x10)
-};
-
-
-// Size 0x80
-struct AnimNode_TransitionPoseEvaluator
-{
-public:
-	char                                                         pad0x30_SN3A8[0x30];                               // 0x0(0x30)
-	char                                                         DataSource;                                        // 0x30(0x1)
-	char                                                         EvaluatorMode;                                     // 0x31(0x1)
-	char                                                         pad0x2_2F5OH[0x2];                                 // 0x32(0x2)
-	int                                                          FramesToCachePose;                                 // 0x34(0x4)
-	char                                                         pad0x40_JJSU5[0x40];                               // 0x38(0x40)
-	int                                                          CacheFramesRemaining;                              // 0x78(0x4)
-	char                                                         pad0x4_DMZYC[0x4];                                 // 0x7c(0x4)
-};
-
-
-// Size 0x20
-struct DebugFloatHistory
-{
-public:
-	TArray<float>                                                Samples;                                           // 0x0(0x10)
-	float                                                        MaxSamples;                                        // 0x10(0x4)
-	float                                                        MinValue;                                          // 0x14(0x4)
-	float                                                        MaxValue;                                          // 0x18(0x4)
-	bool                                                         bAutoAdjustMinMax;                                 // 0x1c(0x1)
-	char                                                         pad0x3_J3B1E[0x3];                                 // 0x1d(0x3)
-};
-
-
-// Size 0xc
-struct DominanceGroupPair
-{
-public:
-	char                                                         FirstGroupId;                                      // 0x0(0x1)
-	char                                                         SecondGroupId;                                     // 0x1(0x1)
-	char                                                         pad0x2_UFBYY[0x2];                                 // 0x2(0x2)
-	int                                                          FirstDominanceValue;                               // 0x4(0x4)
-	int                                                          SecondDominanceValue;                              // 0x8(0x4)
-};
-
-
-// Size 0x8
-struct MobileInstancedStaticMeshLOD
-{
-public:
-	float                                                        LODReduction;                                      // 0x0(0x4)
-	float                                                        DistanceToLOD;                                     // 0x4(0x4)
-};
-
-
-// Size 0x10
-struct NamedEmitterMaterial
-{
-public:
-	struct FName                                                 Name;                                              // 0x0(0x8)
-	class MaterialInterface*                                     Material;                                          // 0x8(0x8)
-};
-
-
-// Size 0x78
-struct SpriteCategoryInfo
-{
-public:
-	struct FName                                                 Category;                                          // 0x0(0x8)
-	struct FText                                                 DisplayName;                                       // 0x8(0x38)
-	struct FText                                                 Description;                                       // 0x40(0x38)
-};
-
-
-// Size 0xc
-struct NameIndexPair
-{
-public:
-	char                                                         pad0xc_OJXDU[0xc];                                 // 0x0(0xc)
-};
-
-
-// Size 0xc
-struct DominanceGroupName
-{
-public:
-	char                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_A2YM7[0x3];                                 // 0x1(0x3)
-	struct FName                                                 Name;                                              // 0x4(0x8)
-};
-
-
-// Size 0x60
-struct AnimNode_SequencePlayer
-{
-public:
-	char                                                         pad0x40_I987N[0x40];                               // 0x0(0x40)
-	class AnimSequenceBase*                                      Sequence;                                          // 0x40(0x8)
-	bool                                                         bLoopAnimation;                                    // 0x48(0x1)
-	char                                                         pad0x3_6CRAM[0x3];                                 // 0x49(0x3)
-	float                                                        PlayRate;                                          // 0x4c(0x4)
-	int                                                          GroupIndex;                                        // 0x50(0x4)
-	char                                                         GroupRole;                                         // 0x54(0x1)
-	char                                                         pad0xb_J3AFX[0xb];                                 // 0x55(0xb)
-};
-
-
-// Size 0x50
-struct StartPhysicsTickFunction
-{
-public:
-	char                                                         pad0x50_WBC19[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0x1c
-struct InterpControlPoint
-{
-public:
-	struct Vector                                                PositionControlPoint;                              // 0x0(0xc)
-	bool                                                         bPositionIsRelative;                               // 0xc(0x1)
-	char                                                         pad0xf_IIHQ5[0xf];                                 // 0xd(0xf)
-};
-
-
-// Size 0x28
-struct ExternalMip
-{
-public:
-	char                                                         pad0x28_4EGT1[0x28];                               // 0x0(0x28)
-};
-
-
-// Size 0x18
-struct TTLinearColorTrack
-{
-public:
-	char                                                         pad0x10_9CQOB[0x10];                               // 0x0(0x10)
-	class CurveLinearColor*                                      CurveLinearColor;                                  // 0x10(0x8)
-};
-
-
-// Size 0x20
-struct ParticleRandomSeedInfo
-{
-public:
-	struct FName                                                 ParameterName;                                     // 0x0(0x8)
-	bool                                                         bGetSeedFromInstance;                              // 0x8(0x1)
-	bool                                                         bInstanceSeedIsIndex;                              // 0x8(0x1)
-	bool                                                         bResetSeedOnEmitterLooping;                        // 0x8(0x1)
-	bool                                                         bRandomlySelectSeedArray;                          // 0x8(0x1)
-	char                                                         pad0x7_4XVXQ[0x7];                                 // 0x9(0x7)
-	TArray<int>                                                  RandomSeeds;                                       // 0x10(0x10)
-};
-
-
-// Size 0x38
-struct KeyBind
-{
-public:
-	struct Key                                                   Key;                                               // 0x0(0x20)
-	struct FString                                               Command;                                           // 0x20(0x10)
-	bool                                                         Control;                                           // 0x30(0x1)
-	bool                                                         Shift;                                             // 0x30(0x1)
-	bool                                                         Alt;                                               // 0x30(0x1)
-	bool                                                         Cmd;                                               // 0x30(0x1)
-	bool                                                         bIgnoreCtrl;                                       // 0x30(0x1)
-	bool                                                         bIgnoreShift;                                      // 0x30(0x1)
-	bool                                                         bIgnoreAlt;                                        // 0x30(0x1)
-	bool                                                         bIgnoreCmd;                                        // 0x30(0x1)
-	char                                                         pad0x7_HS4DC[0x7];                                 // 0x31(0x7)
-};
-
-
-// Size 0x4
-struct NavAgentSelector
-{
-public:
-	bool                                                         bSupportsAgent0;                                   // 0x0(0x1)
-	bool                                                         bSupportsAgent1;                                   // 0x0(0x1)
-	bool                                                         bSupportsAgent2;                                   // 0x0(0x1)
-	bool                                                         bSupportsAgent3;                                   // 0x0(0x1)
-	bool                                                         bSupportsAgent4;                                   // 0x0(0x1)
-	bool                                                         bSupportsAgent5;                                   // 0x0(0x1)
-	bool                                                         bSupportsAgent6;                                   // 0x0(0x1)
-	bool                                                         bSupportsAgent7;                                   // 0x0(0x1)
-	bool                                                         bSupportsAgent8;                                   // 0x1(0x1)
-	bool                                                         bSupportsAgent9;                                   // 0x1(0x1)
-	bool                                                         bSupportsAgent10;                                  // 0x1(0x1)
-	bool                                                         bSupportsAgent11;                                  // 0x1(0x1)
-	bool                                                         bSupportsAgent12;                                  // 0x1(0x1)
-	bool                                                         bSupportsAgent13;                                  // 0x1(0x1)
-	bool                                                         bSupportsAgent14;                                  // 0x1(0x1)
-	bool                                                         bSupportsAgent15;                                  // 0x1(0x1)
-	char                                                         pad0x2_0Q7PL[0x2];                                 // 0x2(0x2)
-};
-
-
-// Size 0x10
-struct SkeletalMaterial
-{
-public:
-	class MaterialInterface*                                     MaterialInterface;                                 // 0x0(0x8)
-	bool                                                         bEnableShadowCasting;                              // 0x8(0x1)
-	char                                                         pad0x7_AXEFV[0x7];                                 // 0x9(0x7)
-};
-
-
-// Size 0x18
-struct AnimSlotGroup
-{
-public:
-	struct FName                                                 GroupName;                                         // 0x0(0x8)
-	TArray<struct Name>                                          SlotNames;                                         // 0x8(0x10)
-};
-
-
-// Size 0x30
-struct RawAnimSequenceTrack
-{
-public:
-	TArray<struct Vector>                                        PosKeys;                                           // 0x0(0x10)
-	TArray<struct Quat>                                          RotKeys;                                           // 0x10(0x10)
-	TArray<struct Vector>                                        ScaleKeys;                                         // 0x20(0x10)
-};
-
-
-// Size 0xc
-struct MaterialRelevance
-{
-public:
-	bool                                                         bOpaque;                                           // 0x0(0x1)
-	bool                                                         bMasked;                                           // 0x0(0x1)
-	bool                                                         bDistortion;                                       // 0x0(0x1)
-	bool                                                         bSeparateTranslucency;                             // 0x0(0x1)
-	bool                                                         bNormalTranslucency;                               // 0x0(0x1)
-	bool                                                         bDisableDepthTest;                                 // 0x0(0x1)
-	bool                                                         bOutputsVelocityInBasePass;                        // 0x0(0x1)
-	bool                                                         bUsesGlobalDistanceField;                          // 0x0(0x1)
-	char                                                         pad0x3_HXOQT[0x3];                                 // 0x1(0x3)
-	bool                                                         bOITTranslucencyRelevance;                         // 0x8(0x1)
-	bool                                                         bOITAfterTranslucencyRelevance;                    // 0x8(0x1)
-	bool                                                         bLowResTranslucencyRelevance;                      // 0x8(0x1)
-	bool                                                         bLowResCloudsRelevance;                            // 0x8(0x1)
-	bool                                                         bMaskPassRelevance;                                // 0x8(0x1)
-	bool                                                         bTranslucentBeforeTranslucency;                    // 0x8(0x1)
-	bool                                                         bTranslucentBeforeVolumeFog;                       // 0x8(0x1)
-	bool                                                         bTranslucentWithDepthWrite;                        // 0x8(0x1)
-	char                                                         pad0x3_MRYOL[0x3];                                 // 0x9(0x3)
-};
-
-
-// Size 0x28
-struct A2CSPose
-{
-public:
-	char                                                         pad0x18_2BN78[0x18];                               // 0x0(0x18)
-	TArray<char>                                                 ComponentSpaceFlags;                               // 0x18(0x10)
-};
-
-
-// Size 0x1
-struct AnimationFrameSnapshot
-{
-public:
-	char                                                         pad0x1_1DA76[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x84
-struct OverlapInfo
-{
-public:
-	char                                                         pad0x84_91AFS[0x84];                               // 0x0(0x84)
-};
-
-
-// Size 0x10
-struct LevelStreamingStatus
-{
-public:
-	struct FName                                                 PackageName;                                       // 0x0(0x8)
-	bool                                                         bShouldBeLoaded;                                   // 0x8(0x1)
-	bool                                                         bShouldBeVisible;                                  // 0x8(0x1)
-	char                                                         pad0x3_6CNQ1[0x3];                                 // 0x9(0x3)
-	char                                                         pad0x4_JC2ZX[0x4];                                 // 0xc(0x4)
-};
-
-
-// Size 0x20
-struct GameModePrefix
-{
-public:
-	struct FString                                               Prefix;                                            // 0x0(0x10)
-	struct FString                                               GameMode;                                          // 0x10(0x10)
-};
-
-
-// Size 0x38
-struct MaterialAttributesInput
-{
-public:
-	char                                                         pad0x38_4P5UL[0x38];                               // 0x0(0x38)
-};
-
-
-// Size 0xc
-struct PhysicalSurfaceName
-{
-public:
-	char                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_1M6EA[0x3];                                 // 0x1(0x3)
-	struct FName                                                 Name;                                              // 0x4(0x8)
-};
-
-
-// Size 0x10
-struct LightmassDirectionalLightSettings
-{
-public:
-	char                                                         pad0xc_W0D6B[0xc];                                 // 0x0(0xc)
-	float                                                        LightSourceAngle;                                  // 0xc(0x4)
-};
-
-
-// Size 0x18
-struct NetRelevancyLevelStat
-{
-public:
-	struct FString                                               Name;                                              // 0x0(0x10)
-	bool                                                         Visible;                                           // 0x10(0x1)
-	char                                                         pad0x3_X8XWZ[0x3];                                 // 0x11(0x3)
-	int                                                          LODIndex;                                          // 0x14(0x4)
-};
-
-
-// Size 0x10
-struct SimplygonChannelCastingSettings
-{
-public:
-	char                                                         MaterialChannel;                                   // 0x0(0x1)
-	char                                                         Caster;                                            // 0x1(0x1)
-	bool                                                         bActive;                                           // 0x2(0x1)
-	char                                                         ColorChannels;                                     // 0x3(0x1)
-	int                                                          BitsPerChannel;                                    // 0x4(0x4)
-	bool                                                         bUseSRGB;                                          // 0x8(0x1)
-	bool                                                         bBakeVertexColors;                                 // 0x9(0x1)
-	bool                                                         bFlipBackfacingNormals;                            // 0xa(0x1)
-	bool                                                         bUseTangentSpaceNormals;                           // 0xb(0x1)
-	bool                                                         bFlipGreenChannel;                                 // 0xc(0x1)
-	char                                                         pad0x3_KGX4I[0x3];                                 // 0xd(0x3)
-};
-
-
-// Size 0x20
-struct SoundGroup
-{
-public:
-	char                                                         SoundGroup;                                        // 0x0(0x1)
-	char                                                         pad0x7_TFYO1[0x7];                                 // 0x1(0x7)
-	struct FString                                               DisplayName;                                       // 0x8(0x10)
-	bool                                                         bAlwaysDecompressOnLoad;                           // 0x18(0x1)
-	char                                                         pad0x3_C76V8[0x3];                                 // 0x19(0x3)
-	float                                                        DecompressedDuration;                              // 0x1c(0x4)
-};
-
-
-// Size 0x10
-struct BlueprintInstancedActorDelegateBinding
-{
-public:
-	struct FName                                                 DelegatePropertyName;                              // 0x0(0x8)
-	struct FName                                                 FunctionNameToBind;                                // 0x8(0x8)
-};
-
-
-// Size 0x4
-struct NavigationFilterFlags
-{
-public:
-	bool                                                         bNavFlag0;                                         // 0x0(0x1)
-	bool                                                         bNavFlag1;                                         // 0x0(0x1)
-	bool                                                         bNavFlag2;                                         // 0x0(0x1)
-	bool                                                         bNavFlag3;                                         // 0x0(0x1)
-	bool                                                         bNavFlag4;                                         // 0x0(0x1)
-	bool                                                         bNavFlag5;                                         // 0x0(0x1)
-	bool                                                         bNavFlag6;                                         // 0x0(0x1)
-	bool                                                         bNavFlag7;                                         // 0x0(0x1)
-	bool                                                         bNavFlag8;                                         // 0x1(0x1)
-	bool                                                         bNavFlag9;                                         // 0x1(0x1)
-	bool                                                         bNavFlag10;                                        // 0x1(0x1)
-	bool                                                         bNavFlag11;                                        // 0x1(0x1)
-	bool                                                         bNavFlag12;                                        // 0x1(0x1)
-	bool                                                         bNavFlag13;                                        // 0x1(0x1)
-	bool                                                         bNavFlag14;                                        // 0x1(0x1)
-	bool                                                         bNavFlag15;                                        // 0x1(0x1)
-	char                                                         pad0x2_Q2WJ7[0x2];                                 // 0x2(0x2)
-};
-
-
-// Size 0xc
-struct Vector_NetQuantize
-{
-public:
-	char                                                         pad0xc_1AM0P[0xc];                                 // 0x0(0xc)
-};
-
-
-// Size 0x40
-struct BlueprintInputKeyDelegateBinding
-{
-public:
-	char                                                         pad0x8_YQ7RB[0x8];                                 // 0x0(0x8)
-	struct InputChord                                            InputChord;                                        // 0x8(0x28)
-	char                                                         InputKeyEvent;                                     // 0x30(0x1)
-	char                                                         pad0x3_71H6F[0x3];                                 // 0x31(0x3)
-	struct FName                                                 FunctionNameToBind;                                // 0x34(0x8)
-	char                                                         pad0x4_O5IDS[0x4];                                 // 0x3c(0x4)
-};
-
-
-// Size 0x10
-struct WeightedBlendable
-{
-public:
-	float                                                        Weight;                                            // 0x0(0x4)
-	char                                                         pad0x4_O2VEM[0x4];                                 // 0x4(0x4)
-	class Object*                                                Object;                                            // 0x8(0x8)
-};
-
-
-// Size 0x8
-struct ExposureSettings
-{
-public:
-	int                                                          LogOffset;                                         // 0x0(0x4)
-	bool                                                         bFixed;                                            // 0x4(0x1)
-	char                                                         pad0x3_DTJNN[0x3];                                 // 0x5(0x3)
-};
-
-
-// Size 0x28
-struct TextSizingParameters
-{
-public:
-	float                                                        DrawX;                                             // 0x0(0x4)
-	float                                                        DrawY;                                             // 0x4(0x4)
-	float                                                        DrawXL;                                            // 0x8(0x4)
-	float                                                        DrawYL;                                            // 0xc(0x4)
-	struct Vector2D                                              Scaling;                                           // 0x10(0x8)
-	class Font*                                                  DrawFont;                                          // 0x18(0x8)
-	struct Vector2D                                              SpacingAdjust;                                     // 0x20(0x8)
-};
-
-
-// Size 0x50
-struct EndPhysicsTickFunction
-{
-public:
-	char                                                         pad0x50_O2LRB[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0xc
-struct BranchFilter
-{
-public:
-	struct FName                                                 BoneName;                                          // 0x0(0x8)
-	int                                                          BlendDepth;                                        // 0x8(0x4)
-};
-
-
-// Size 0x28
-struct AudioEQEffect
-{
-public:
-	char                                                         pad0x8_5DF9J[0x8];                                 // 0x0(0x8)
-	float                                                        HFFrequency;                                       // 0x8(0x4)
-	float                                                        HFGain;                                            // 0xc(0x4)
-	float                                                        MFCutoffFrequency;                                 // 0x10(0x4)
-	float                                                        MFBandwidth;                                       // 0x14(0x4)
-	float                                                        MFGain;                                            // 0x18(0x4)
-	float                                                        LFFrequency;                                       // 0x1c(0x4)
-	float                                                        LFGain;                                            // 0x20(0x4)
-	char                                                         pad0x4_VVP59[0x4];                                 // 0x24(0x4)
-};
-
-
-// Size 0x18
-struct InterpGroupActorInfo
-{
-public:
-	struct FName                                                 ObjectName;                                        // 0x0(0x8)
-	TArray<class Actor*>                                         Actors;                                            // 0x8(0x10)
-};
-
-
-// Size 0x18
-struct PrimitiveMaterialRef
-{
-public:
-	class PrimitiveComponent*                                    Primitive;                                         // 0x0(0x8)
-	class DecalComponent*                                        Decal;                                             // 0x8(0x8)
-	int                                                          ElementIndex;                                      // 0x10(0x4)
-	char                                                         pad0x4_DPALC[0x4];                                 // 0x14(0x4)
-};
-
-
-// Size 0xc
-struct EventTrackKey
-{
-public:
-	float                                                        Time;                                              // 0x0(0x4)
-	struct FName                                                 EventName;                                         // 0x4(0x8)
-};
-
-
-// Size 0x14
-struct NodeToCodeAssociation
-{
-public:
-	char                                                         pad0x14_5I0PG[0x14];                               // 0x0(0x14)
-};
-
-
-// Size 0x14
-struct ParticleBurst
-{
-public:
-	int                                                          Count;                                             // 0x0(0x4)
-	int                                                          CountLow;                                          // 0x4(0x4)
-	float                                                        Time;                                              // 0x8(0x4)
-	float                                                        SpawnMultiplier;                                   // 0xc(0x4)
-	char                                                         Group;                                             // 0x10(0x1)
-	char                                                         pad0x3_8EKWL[0x3];                                 // 0x11(0x3)
-};
-
-
-// Size 0x10
-struct NameMapping
-{
-public:
-	struct FName                                                 NodeName;                                          // 0x0(0x8)
-	struct FName                                                 BoneName;                                          // 0x8(0x8)
-};
-
-
-// Size 0x50
-struct PrimitiveComponentPostPhysicsTickFunction
-{
-public:
-	char                                                         pad0x50_6I199[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0x10
-struct RotationAboutAxisParameters
-{
-public:
-	struct Vector                                                Rotation;                                          // 0x0(0xc)
-	bool                                                         bUseRotation;                                      // 0xc(0x1)
-	bool                                                         bUseLocalSpace;                                    // 0xc(0x1)
-	char                                                         pad0x3_QMLOU[0x3];                                 // 0xd(0x3)
-};
-
-
-// Size 0x24
-struct DepthFieldGlowInfo
-{
-public:
-	bool                                                         bEnableGlow;                                       // 0x0(0x1)
-	char                                                         pad0x3_EEQKA[0x3];                                 // 0x1(0x3)
-	struct LinearColor                                           GlowColor;                                         // 0x4(0x10)
-	struct Vector2D                                              GlowOuterRadius;                                   // 0x14(0x8)
-	struct Vector2D                                              GlowInnerRadius;                                   // 0x1c(0x8)
-};
-
-
-// Size 0x20
-struct GameClassShortName
-{
-public:
-	struct FString                                               ShortName;                                         // 0x0(0x10)
-	struct FString                                               GameClassName;                                     // 0x10(0x10)
-};
-
-
-// Size 0x8
-struct BoolTrackKey
-{
-public:
-	float                                                        Time;                                              // 0x0(0x4)
-	bool                                                         Value;                                             // 0x4(0x1)
-	char                                                         pad0x3_ZOZQF[0x3];                                 // 0x5(0x3)
-};
-
-
-// Size 0x18
-struct NavCollisionBox
-{
-public:
-	struct Vector                                                Offset;                                            // 0x0(0xc)
-	struct Vector                                                Extent;                                            // 0xc(0xc)
-};
-
-
-// Size 0x8
-struct CollisionProfileName
-{
-public:
-	struct FName                                                 Name;                                              // 0x0(0x8)
-};
-
-
-// Size 0x18
-struct EditorElement
-{
-public:
-	int                                                          Indices;                                           // 0x0(0x4)
-	char                                                         pad0x8_M2596[0x8];                                 // 0x4(0x8)
-	float                                                        Weights;                                           // 0xc(0x4)
-	char                                                         pad0x8_EQKL2[0x8];                                 // 0x10(0x8)
-};
-
-
-// Size 0x4
-struct BeamModifierOptions
-{
-public:
-	bool                                                         bModify;                                           // 0x0(0x1)
-	bool                                                         bScale;                                            // 0x0(0x1)
-	bool                                                         bLock;                                             // 0x0(0x1)
-	char                                                         pad0x3_8Q75Y[0x3];                                 // 0x1(0x3)
-};
-
-
-// Size 0x28
-struct ViewTargetTransitionParams
-{
-public:
-	float                                                        BlendTime;                                         // 0x0(0x4)
-	char                                                         BlendFunction;                                     // 0x4(0x1)
-	char                                                         pad0x3_C4UFI[0x3];                                 // 0x5(0x3)
-	float                                                        BlendExp;                                          // 0x8(0x4)
-	bool                                                         bLockOutgoing;                                     // 0xc(0x1)
-	char                                                         pad0x1b_5YKSS[0x1b];                               // 0xd(0x1b)
-};
-
-
-// Size 0x4
-struct NavAvoidanceMask
-{
-public:
-	bool                                                         bGroup0;                                           // 0x0(0x1)
-	bool                                                         bGroup1;                                           // 0x0(0x1)
-	bool                                                         bGroup2;                                           // 0x0(0x1)
-	bool                                                         bGroup3;                                           // 0x0(0x1)
-	bool                                                         bGroup4;                                           // 0x0(0x1)
-	bool                                                         bGroup5;                                           // 0x0(0x1)
-	bool                                                         bGroup6;                                           // 0x0(0x1)
-	bool                                                         bGroup7;                                           // 0x0(0x1)
-	bool                                                         bGroup8;                                           // 0x1(0x1)
-	bool                                                         bGroup9;                                           // 0x1(0x1)
-	bool                                                         bGroup10;                                          // 0x1(0x1)
-	bool                                                         bGroup11;                                          // 0x1(0x1)
-	bool                                                         bGroup12;                                          // 0x1(0x1)
-	bool                                                         bGroup13;                                          // 0x1(0x1)
-	bool                                                         bGroup14;                                          // 0x1(0x1)
-	bool                                                         bGroup15;                                          // 0x1(0x1)
-	bool                                                         bGroup16;                                          // 0x2(0x1)
-	bool                                                         bGroup17;                                          // 0x2(0x1)
-	bool                                                         bGroup18;                                          // 0x2(0x1)
-	bool                                                         bGroup19;                                          // 0x2(0x1)
-	bool                                                         bGroup20;                                          // 0x2(0x1)
-	bool                                                         bGroup21;                                          // 0x2(0x1)
-	bool                                                         bGroup22;                                          // 0x2(0x1)
-	bool                                                         bGroup23;                                          // 0x2(0x1)
-	bool                                                         bGroup24;                                          // 0x3(0x1)
-	bool                                                         bGroup25;                                          // 0x3(0x1)
-	bool                                                         bGroup26;                                          // 0x3(0x1)
-	bool                                                         bGroup27;                                          // 0x3(0x1)
-	bool                                                         bGroup28;                                          // 0x3(0x1)
-	bool                                                         bGroup29;                                          // 0x3(0x1)
-	bool                                                         bGroup30;                                          // 0x3(0x1)
-	bool                                                         bGroup31;                                          // 0x3(0x1)
-};
-
-
-// Size 0x38
-struct CurveEdEntry
-{
-public:
-	class Object*                                                CurveObject;                                       // 0x0(0x8)
-	struct Color                                                 CurveColor;                                        // 0x8(0x4)
-	char                                                         pad0x4_XF6QH[0x4];                                 // 0xc(0x4)
-	struct FString                                               CurveName;                                         // 0x10(0x10)
-	int                                                          bHideCurve;                                        // 0x20(0x4)
-	int                                                          bColorCurve;                                       // 0x24(0x4)
-	int                                                          bFloatingPointColorCurve;                          // 0x28(0x4)
-	int                                                          bClamp;                                            // 0x2c(0x4)
-	float                                                        ClampLow;                                          // 0x30(0x4)
-	float                                                        ClampHigh;                                         // 0x34(0x4)
-};
-
-
-// Size 0x10
-struct LightmassDebugOptions
-{
-public:
-	bool                                                         bDebugMode;                                        // 0x0(0x1)
-	bool                                                         bStatsEnabled;                                     // 0x0(0x1)
-	bool                                                         bGatherBSPSurfacesAcrossComponents;                // 0x0(0x1)
-	char                                                         pad0x3_UVU2H[0x3];                                 // 0x1(0x3)
-	float                                                        CoplanarTolerance;                                 // 0x4(0x4)
-	bool                                                         bUseImmediateImport;                               // 0x8(0x1)
-	bool                                                         bImmediateProcessMappings;                         // 0x8(0x1)
-	bool                                                         bSortMappings;                                     // 0x8(0x1)
-	bool                                                         bDumpBinaryFiles;                                  // 0x8(0x1)
-	bool                                                         bDebugMaterials;                                   // 0x8(0x1)
-	bool                                                         bPadMappings;                                      // 0x8(0x1)
-	bool                                                         bDebugPaddings;                                    // 0x8(0x1)
-	bool                                                         bOnlyCalcDebugTexelMappings;                       // 0x8(0x1)
-	bool                                                         bUseRandomColors;                                  // 0x9(0x1)
-	bool                                                         bColorBordersGreen;                                // 0x9(0x1)
-	bool                                                         bColorByExecutionTime;                             // 0x9(0x1)
-	char                                                         pad0x2_TR60Y[0x2];                                 // 0xa(0x2)
-	float                                                        ExecutionTimeDivisor;                              // 0xc(0x4)
-};
-
-
-// Size 0x28
-struct SubTrackGroup
-{
-public:
-	struct FString                                               GroupName;                                         // 0x0(0x10)
-	TArray<int>                                                  TrackIndices;                                      // 0x10(0x10)
-	bool                                                         bIsCollapsed;                                      // 0x20(0x1)
-	bool                                                         bIsSelected;                                       // 0x20(0x1)
-	char                                                         pad0x7_AP5PH[0x7];                                 // 0x21(0x7)
-};
-
-
-// Size 0x10
-struct RigTransformConstraint
-{
-public:
-	char                                                         TranformType;                                      // 0x0(0x1)
-	char                                                         pad0x3_CRBU6[0x3];                                 // 0x1(0x3)
-	struct FName                                                 ParentSpace;                                       // 0x4(0x8)
-	float                                                        Weight;                                            // 0xc(0x4)
-};
-
-
-// Size 0x10
-struct PrimitiveSphereEmitterAngleRanges
-{
-public:
-	struct Vector2D                                              HorizontalAngle;                                   // 0x0(0x8)
-	struct Vector2D                                              VerticalAngle;                                     // 0x8(0x8)
-};
-
-
-// Size 0x70
-struct AnimNode_HIKReachRotator
-{
-public:
-	char                                                         pad0x48_5B2F9[0x48];                               // 0x0(0x48)
-	float                                                        Alpha;                                             // 0x48(0x4)
-	float                                                        ReachT;                                            // 0x4c(0x4)
-	float                                                        ReachR;                                            // 0x50(0x4)
-	struct Vector                                                Translation;                                       // 0x54(0xc)
-	struct Rotator                                               Orientation;                                       // 0x60(0xc)
-	char                                                         Effector;                                          // 0x6c(0x1)
-	char                                                         EffectorSpace;                                     // 0x6d(0x1)
-	char                                                         pad0x2_UVWSS[0x2];                                 // 0x6e(0x2)
-};
-
-
-// Size 0x60
-struct DebugTextInfo
-{
-public:
-	class Actor*                                                 SrcActor;                                          // 0x0(0x8)
-	struct Vector                                                SrcActorOffset;                                    // 0x8(0xc)
-	struct Vector                                                SrcActorDesiredOffset;                             // 0x14(0xc)
-	struct FString                                               DebugText;                                         // 0x20(0x10)
-	float                                                        TimeRemaining;                                     // 0x30(0x4)
-	float                                                        Duration;                                          // 0x34(0x4)
-	struct Color                                                 TextColor;                                         // 0x38(0x4)
-	bool                                                         bAbsoluteLocation;                                 // 0x3c(0x1)
-	bool                                                         bKeepAttachedToActor;                              // 0x3c(0x1)
-	bool                                                         bDrawShadow;                                       // 0x3c(0x1)
-	char                                                         pad0x3_4KITU[0x3];                                 // 0x3d(0x3)
-	struct Vector                                                OrigActorLocation;                                 // 0x40(0xc)
-	char                                                         pad0x4_QI0HR[0x4];                                 // 0x4c(0x4)
-	class Font*                                                  Font;                                              // 0x50(0x8)
-	float                                                        FontScale;                                         // 0x58(0x4)
-	char                                                         pad0x4_GQBSY[0x4];                                 // 0x5c(0x4)
-};
-
-
-// Size 0x28
-struct CollectionVectorParameter
-{
-public:
-	char                                                         pad0x18_D4MCS[0x18];                               // 0x0(0x18)
-	struct LinearColor                                           DefaultValue;                                      // 0x18(0x10)
-};
-
-
-// Size 0x8
-struct MeshSectionInfo
-{
-public:
-	int                                                          MaterialIndex;                                     // 0x0(0x4)
-	bool                                                         bEnableCollision;                                  // 0x4(0x1)
-	bool                                                         bCastShadow;                                       // 0x5(0x1)
-	char                                                         pad0x2_EELOI[0x2];                                 // 0x6(0x2)
-};
-
-
-// Size 0x60
-struct CanvasUVTri
-{
-public:
-	struct Vector2D                                              V0_Pos;                                            // 0x0(0x8)
-	struct Vector2D                                              V0_UV;                                             // 0x8(0x8)
-	struct LinearColor                                           V0_Color;                                          // 0x10(0x10)
-	struct Vector2D                                              V1_Pos;                                            // 0x20(0x8)
-	struct Vector2D                                              V1_UV;                                             // 0x28(0x8)
-	struct LinearColor                                           V1_Color;                                          // 0x30(0x10)
-	struct Vector2D                                              V2_Pos;                                            // 0x40(0x8)
-	struct Vector2D                                              V2_UV;                                             // 0x48(0x8)
-	struct LinearColor                                           V2_Color;                                          // 0x50(0x10)
-};
-
-
-// Size 0x20
-struct SupportedAreaData
-{
-public:
-	struct FString                                               AreaClassName;                                     // 0x0(0x10)
-	int                                                          AreaID;                                            // 0x10(0x4)
-	char                                                         pad0x4_0TLI5[0x4];                                 // 0x14(0x4)
-	class UClass*                                                AreaClass;                                         // 0x18(0x8)
-};
-
-
-// Size 0x8
-struct SoundNodeEditorData
-{
-public:
-	char                                                         pad0x8_U1HYC[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x18
-struct BlendSample
-{
-public:
-	class AnimSequence*                                          Animation;                                         // 0x0(0x8)
-	struct Vector                                                SampleValue;                                       // 0x8(0xc)
-	char                                                         pad0x4_S4WJ4[0x4];                                 // 0x14(0x4)
-};
-
-
-// Size 0xc0
-struct AnimNode_BlendListByEnum
-{
-public:
-	char                                                         pad0xa8_PWDMS[0xa8];                               // 0x0(0xa8)
-	TArray<int>                                                  EnumToPoseIndex;                                   // 0xa8(0x10)
-	char                                                         ActiveEnumValue;                                   // 0xb8(0x1)
-	char                                                         pad0x7_KU2X2[0x7];                                 // 0xb9(0x7)
-};
-
-
-// Size 0x4
-struct TimerHandle
-{
-public:
-	char                                                         pad0x4_W5E11[0x4];                                 // 0x0(0x4)
-};
-
-
-// Size 0x18
-struct PlayerAmbientLightOverrideSettings
-{
-public:
-	bool                                                         OverrideBodyLightAmbience;                         // 0x0(0x1)
-	char                                                         pad0x3_7O3KL[0x3];                                 // 0x1(0x3)
-	float                                                        BodyLightAmbienceLightFactor;                      // 0x4(0x4)
-	float                                                        BodyLightAmbienceBlendWithDefault;                 // 0x8(0x4)
-	bool                                                         OverrideLanternAmbience;                           // 0xc(0x1)
-	char                                                         pad0x3_54G7B[0x3];                                 // 0xd(0x3)
-	float                                                        LanternAmbienceLightFactor;                        // 0x10(0x4)
-	float                                                        LanternAmbienceBlendWithDefault;                   // 0x14(0x4)
-};
-
-
-// Size 0x20
-struct ComponentKey
-{
-public:
-	class UClass*                                                OwnerClass;                                        // 0x0(0x8)
-	struct FName                                                 SCSVariableName;                                   // 0x8(0x8)
-	struct Guid                                                  AssociatedGuid;                                    // 0x10(0x10)
-};
-
-
-// Size 0x18
-struct PoseLinkBase
-{
-public:
-	int                                                          LinkID;                                            // 0x0(0x4)
-	char                                                         pad0x14_VVW5Z[0x14];                               // 0x4(0x14)
-};
-
-
-// Size 0x18
-struct NavGraphEdge
-{
-public:
-	char                                                         pad0x18_IG23F[0x18];                               // 0x0(0x18)
-};
-
-
-// Size 0x10
-struct ActiveVertexAnim
-{
-public:
-	class VertexAnimBase*                                        VertAnim;                                          // 0x0(0x8)
-	float                                                        Weight;                                            // 0x8(0x4)
-	float                                                        Time;                                              // 0xc(0x4)
-};
-
-
-// Size 0x8
-struct ConstrainComponentPropName
-{
-public:
-	struct FName                                                 ComponentName;                                     // 0x0(0x8)
-};
-
-
-// Size 0x20
-struct StructRedirect
-{
-public:
-	struct FString                                               OldStructName;                                     // 0x0(0x10)
-	struct FString                                               NewStructName;                                     // 0x10(0x10)
-};
-
-
-// Size 0x10
-struct CustomPrimitiveData
-{
-public:
-	TArray<float>                                                Data;                                              // 0x0(0x10)
-};
-
-
-// Size 0xb0
-struct FontImportOptionsData
-{
-public:
-	struct FString                                               FontName;                                          // 0x0(0x10)
-	float                                                        Height;                                            // 0x10(0x4)
-	bool                                                         bEnableAntialiasing;                               // 0x14(0x1)
-	bool                                                         bEnableBold;                                       // 0x14(0x1)
-	bool                                                         bEnableItalic;                                     // 0x14(0x1)
-	bool                                                         bEnableUnderline;                                  // 0x14(0x1)
-	bool                                                         bAlphaOnly;                                        // 0x14(0x1)
-	char                                                         pad0x3_KW3HZ[0x3];                                 // 0x15(0x3)
-	char                                                         CharacterSet;                                      // 0x18(0x1)
-	char                                                         pad0x7_PTLYW[0x7];                                 // 0x19(0x7)
-	struct FString                                               Chars;                                             // 0x20(0x10)
-	struct FString                                               UnicodeRange;                                      // 0x30(0x10)
-	struct FString                                               CharsFilePath;                                     // 0x40(0x10)
-	struct FString                                               CharsFileWildcard;                                 // 0x50(0x10)
-	bool                                                         bCreatePrintableOnly;                              // 0x60(0x1)
-	bool                                                         bIncludeASCIIRange;                                // 0x60(0x1)
-	char                                                         pad0x3_E93ZJ[0x3];                                 // 0x61(0x3)
-	struct LinearColor                                           ForegroundColor;                                   // 0x64(0x10)
-	bool                                                         bEnableDropShadow;                                 // 0x74(0x1)
-	char                                                         pad0x3_448DN[0x3];                                 // 0x75(0x3)
-	int                                                          TexturePageWidth;                                  // 0x78(0x4)
-	int                                                          TexturePageMaxHeight;                              // 0x7c(0x4)
-	int                                                          XPadding;                                          // 0x80(0x4)
-	int                                                          YPadding;                                          // 0x84(0x4)
-	int                                                          ExtendBoxTop;                                      // 0x88(0x4)
-	int                                                          ExtendBoxBottom;                                   // 0x8c(0x4)
-	int                                                          ExtendBoxRight;                                    // 0x90(0x4)
-	int                                                          ExtendBoxLeft;                                     // 0x94(0x4)
-	bool                                                         bEnableLegacyMode;                                 // 0x98(0x1)
-	char                                                         pad0x3_D572C[0x3];                                 // 0x99(0x3)
-	int                                                          Kerning;                                           // 0x9c(0x4)
-	bool                                                         bUseDistanceFieldAlpha;                            // 0xa0(0x1)
-	char                                                         pad0x3_VU6K5[0x3];                                 // 0xa1(0x3)
-	int                                                          DistanceFieldScaleFactor;                          // 0xa4(0x4)
-	float                                                        DistanceFieldScanRadiusScale;                      // 0xa8(0x4)
-	char                                                         pad0x4_3C9V7[0x4];                                 // 0xac(0x4)
-};
-
-
-// Size 0x30
-struct AlphaBlend
-{
-public:
-	char                                                         BlendOption;                                       // 0x0(0x1)
-	char                                                         pad0x3_OT3KL[0x3];                                 // 0x1(0x3)
-	float                                                        BeginValue;                                        // 0x4(0x4)
-	float                                                        DesiredValue;                                      // 0x8(0x4)
-	float                                                        BlendTime;                                         // 0xc(0x4)
-	class CurveFloat*                                            CustomCurve;                                       // 0x10(0x8)
-	float                                                        AlphaLerp;                                         // 0x18(0x4)
-	float                                                        AlphaBlend;                                        // 0x1c(0x4)
-	float                                                        AlphaTarget;                                       // 0x20(0x4)
-	float                                                        BlendTimeRemaining;                                // 0x24(0x4)
-	float                                                        BlendedValue;                                      // 0x28(0x4)
-	char                                                         pad0x4_8Q7DQ[0x4];                                 // 0x2c(0x4)
-};
-
-
-// Size 0x20
-struct ImportFactorySettingValues
-{
-public:
-	struct FString                                               SettingName;                                       // 0x0(0x10)
-	struct FString                                               Value;                                             // 0x10(0x10)
-};
-
-
-// Size 0x10
-struct AnimationPotentialTransition
-{
-public:
-	char                                                         pad0x10_UHC1B[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x50
-struct AnimNode_HIKPull
-{
-public:
-	char                                                         pad0x48_BT95P[0x48];                               // 0x0(0x48)
-	float                                                        Alpha;                                             // 0x48(0x4)
-	char                                                         Effector;                                          // 0x4c(0x1)
-	char                                                         pad0x3_YX4HB[0x3];                                 // 0x4d(0x3)
-};
-
-
-// Size 0xb0
-struct StateMachineDebugData
-{
-public:
-	char                                                         pad0xb0_JT5F3[0xb0];                               // 0x0(0xb0)
-};
-
-
-// Size 0x10
-struct FractureEffect
-{
-public:
-	class ParticleSystem*                                        ParticleSystem;                                    // 0x0(0x8)
-	class SoundBase*                                             Sound;                                             // 0x8(0x8)
-};
-
-
-// Size 0x50
-struct KSphylElem
-{
-public:
-	char                                                         pad0x20_QGDJK[0x20];                               // 0x0(0x20)
-	struct Vector                                                Center;                                            // 0x20(0xc)
-	char                                                         pad0x4_FCHTL[0x4];                                 // 0x2c(0x4)
-	struct Quat                                                  Orientation;                                       // 0x30(0x10)
-	float                                                        Radius;                                            // 0x40(0x4)
-	float                                                        Length;                                            // 0x44(0x4)
-	char                                                         pad0x8_N03A3[0x8];                                 // 0x48(0x8)
-};
-
-
-// Size 0x20
-struct PacketDiscardStats
-{
-public:
-	int                                                          DiscardCounts;                                     // 0x0(0x4)
-	char                                                         pad0x18_PNIZD[0x18];                               // 0x4(0x18)
-	int                                                          BytesDiscarded;                                    // 0x1c(0x4)
-};
-
-
-// Size 0x24
-struct FractureMaterial
-{
-public:
-	struct Vector2D                                              UVScale;                                           // 0x0(0x8)
-	struct Vector2D                                              UVOffset;                                          // 0x8(0x8)
-	struct Vector                                                Tangent;                                           // 0x10(0xc)
-	float                                                        UAngle;                                            // 0x1c(0x4)
-	int                                                          InteriorElementIndex;                              // 0x20(0x4)
-};
-
-
-// Size 0x50
-struct StartClothSimulationFunction
-{
-public:
-	char                                                         pad0x50_XI7MI[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0x160
-struct ConstraintInstance
-{
-public:
-	char                                                         pad0x8_XZM8O[0x8];                                 // 0x0(0x8)
-	class SceneComponent*                                        OwnerComponent;                                    // 0x8(0x8)
-	char                                                         pad0xc_A86GL[0xc];                                 // 0x10(0xc)
-	struct FName                                                 JointName;                                         // 0x1c(0x8)
-	struct FName                                                 ConstraintBone1;                                   // 0x24(0x8)
-	struct FName                                                 ConstraintBone2;                                   // 0x2c(0x8)
-	struct Vector                                                Pos1;                                              // 0x34(0xc)
-	struct Vector                                                PriAxis1;                                          // 0x40(0xc)
-	struct Vector                                                SecAxis1;                                          // 0x4c(0xc)
-	struct Vector                                                Pos2;                                              // 0x58(0xc)
-	struct Vector                                                PriAxis2;                                          // 0x64(0xc)
-	struct Vector                                                SecAxis2;                                          // 0x70(0xc)
-	bool                                                         bDisableCollision;                                 // 0x7c(0x1)
-	bool                                                         bEnableProjection;                                 // 0x7c(0x1)
-	char                                                         pad0x3_5WPUD[0x3];                                 // 0x7d(0x3)
-	float                                                        ProjectionLinearTolerance;                         // 0x80(0x4)
-	float                                                        ProjectionAngularTolerance;                        // 0x84(0x4)
-	char                                                         LinearXMotion;                                     // 0x88(0x1)
-	char                                                         LinearYMotion;                                     // 0x89(0x1)
-	char                                                         LinearZMotion;                                     // 0x8a(0x1)
-	char                                                         pad0x1_QS5CA[0x1];                                 // 0x8b(0x1)
-	float                                                        LinearLimitSize;                                   // 0x8c(0x4)
-	bool                                                         bLinearLimitSoft;                                  // 0x90(0x1)
-	char                                                         pad0x3_RXOQS[0x3];                                 // 0x91(0x3)
-	float                                                        LinearLimitStiffness;                              // 0x94(0x4)
-	float                                                        LinearLimitDamping;                                // 0x98(0x4)
-	bool                                                         bLinearBreakable;                                  // 0x9c(0x1)
-	char                                                         pad0x3_C088B[0x3];                                 // 0x9d(0x3)
-	float                                                        LinearBreakThreshold;                              // 0xa0(0x4)
-	char                                                         AngularSwing1Motion;                               // 0xa4(0x1)
-	char                                                         AngularTwistMotion;                                // 0xa5(0x1)
-	char                                                         AngularSwing2Motion;                               // 0xa6(0x1)
-	char                                                         pad0x1_DF2P7[0x1];                                 // 0xa7(0x1)
-	bool                                                         bSwingLimitSoft;                                   // 0xa8(0x1)
-	bool                                                         bTwistLimitSoft;                                   // 0xa8(0x1)
-	char                                                         pad0x3_U9ARP[0x3];                                 // 0xa9(0x3)
-	float                                                        Swing1LimitAngle;                                  // 0xac(0x4)
-	float                                                        TwistLimitAngle;                                   // 0xb0(0x4)
-	float                                                        Swing2LimitAngle;                                  // 0xb4(0x4)
-	float                                                        SwingLimitStiffness;                               // 0xb8(0x4)
-	float                                                        SwingLimitDamping;                                 // 0xbc(0x4)
-	float                                                        TwistLimitStiffness;                               // 0xc0(0x4)
-	float                                                        TwistLimitDamping;                                 // 0xc4(0x4)
-	struct Rotator                                               AngularRotationOffset;                             // 0xc8(0xc)
-	bool                                                         bAngularBreakable;                                 // 0xd4(0x1)
-	char                                                         pad0x3_J1T8P[0x3];                                 // 0xd5(0x3)
-	float                                                        AngularBreakThreshold;                             // 0xd8(0x4)
-	bool                                                         bLinearXPositionDrive;                             // 0xdc(0x1)
-	bool                                                         bLinearXVelocityDrive;                             // 0xdc(0x1)
-	bool                                                         bLinearYPositionDrive;                             // 0xdc(0x1)
-	bool                                                         bLinearYVelocityDrive;                             // 0xdc(0x1)
-	bool                                                         bLinearZPositionDrive;                             // 0xdc(0x1)
-	bool                                                         bLinearZVelocityDrive;                             // 0xdc(0x1)
-	bool                                                         bLinearPositionDrive;                              // 0xdc(0x1)
-	bool                                                         bLinearVelocityDrive;                              // 0xdc(0x1)
-	char                                                         pad0x3_GEQJ2[0x3];                                 // 0xdd(0x3)
-	struct Vector                                                LinearPositionTarget;                              // 0xe0(0xc)
-	struct Vector                                                LinearVelocityTarget;                              // 0xec(0xc)
-	float                                                        LinearDriveSpring;                                 // 0xf8(0x4)
-	float                                                        LinearDriveDamping;                                // 0xfc(0x4)
-	float                                                        LinearDriveForceLimit;                             // 0x100(0x4)
-	bool                                                         bSwingPositionDrive;                               // 0x104(0x1)
-	bool                                                         bSwingVelocityDrive;                               // 0x104(0x1)
-	bool                                                         bTwistPositionDrive;                               // 0x104(0x1)
-	bool                                                         bTwistVelocityDrive;                               // 0x104(0x1)
-	bool                                                         bAngularSlerpDrive;                                // 0x104(0x1)
-	bool                                                         bAngularOrientationDrive;                          // 0x104(0x1)
-	bool                                                         bEnableSwingDrive;                                 // 0x104(0x1)
-	bool                                                         bEnableTwistDrive;                                 // 0x104(0x1)
-	bool                                                         bAngularVelocityDrive;                             // 0x105(0x1)
-	char                                                         pad0xa_J0DE5[0xa];                                 // 0x106(0xa)
-	struct Quat                                                  AngularPositionTarget;                             // 0x110(0x10)
-	char                                                         AngularDriveMode;                                  // 0x120(0x1)
-	char                                                         pad0x3_PXNUK[0x3];                                 // 0x121(0x3)
-	struct Rotator                                               AngularOrientationTarget;                          // 0x124(0xc)
-	struct Vector                                                AngularVelocityTarget;                             // 0x130(0xc)
-	float                                                        AngularDriveSpring;                                // 0x13c(0x4)
-	float                                                        AngularDriveDamping;                               // 0x140(0x4)
-	float                                                        AngularDriveForceLimit;                            // 0x144(0x4)
-	char                                                         pad0x18_M0U48[0x18];                               // 0x148(0x18)
-};
-
-
-// Size 0x38
-struct RepMovement
-{
-public:
-	struct Vector                                                LinearVelocity;                                    // 0x0(0xc)
-	struct Vector                                                AngularVelocity;                                   // 0xc(0xc)
-	struct Vector                                                Location;                                          // 0x18(0xc)
-	struct Rotator                                               Rotation;                                          // 0x24(0xc)
-	bool                                                         bSimulatedPhysicSleep;                             // 0x30(0x1)
-	bool                                                         bRepPhysics;                                       // 0x30(0x1)
-	char                                                         LocationQuantizationLevel;                         // 0x31(0x1)
-	char                                                         VelocityQuantizationLevel;                         // 0x32(0x1)
-	char                                                         RotationQuantizationLevel;                         // 0x33(0x1)
-	char                                                         pad0x4_HI1SZ[0x4];                                 // 0x34(0x4)
-};
-
-
-// Size 0x8
-struct BoneMirrorInfo
-{
-public:
-	int                                                          SourceIndex;                                       // 0x0(0x4)
-	char                                                         BoneFlipAxis;                                      // 0x4(0x1)
-	char                                                         pad0x3_9TTJ3[0x3];                                 // 0x5(0x3)
-};
-
-
-// Size 0x28
-struct FontParameterValue
-{
-public:
-	struct FName                                                 ParameterName;                                     // 0x0(0x8)
-	class Font*                                                  FontValue;                                         // 0x8(0x8)
-	int                                                          FontPage;                                          // 0x10(0x4)
-	struct Guid                                                  ExpressionGUID;                                    // 0x14(0x10)
-	char                                                         pad0x4_VHY8L[0x4];                                 // 0x24(0x4)
-};
-
-
-// Size 0x4
-struct BlueprintInputDelegateBinding
-{
-public:
-	bool                                                         bConsumeInput;                                     // 0x0(0x1)
-	bool                                                         bExecuteWhenPaused;                                // 0x0(0x1)
-	bool                                                         bOverrideParentBinding;                            // 0x0(0x1)
-	char                                                         pad0x3_PPMDC[0x3];                                 // 0x1(0x3)
-};
-
-
-// Size 0x30
-struct ScreenMessageString
-{
-public:
-	char                                                         pad0x8_UIPDL[0x8];                                 // 0x0(0x8)
-	struct FString                                               ScreenMessage;                                     // 0x8(0x10)
-	struct Color                                                 DisplayColor;                                      // 0x18(0x4)
-	float                                                        TimeToDisplay;                                     // 0x1c(0x4)
-	float                                                        CurrentTimeDisplayed;                              // 0x20(0x4)
-	char                                                         pad0xc_XEIS1[0xc];                                 // 0x24(0xc)
-};
-
-
-// Size 0x20
-struct SupportedSubTrackInfo
-{
-public:
-	class UClass*                                                SupportedClass;                                    // 0x0(0x8)
-	struct FString                                               SubTrackName;                                      // 0x8(0x10)
-	int                                                          GroupIndex;                                        // 0x18(0x4)
-	char                                                         pad0x4_LNY7X[0x4];                                 // 0x1c(0x4)
-};
-
-
-// Size 0x4
-struct OrbitOptions
-{
-public:
-	bool                                                         bProcessDuringSpawn;                               // 0x0(0x1)
-	bool                                                         bProcessDuringUpdate;                              // 0x0(0x1)
-	bool                                                         bUseEmitterTime;                                   // 0x0(0x1)
-	char                                                         pad0x3_T63T1[0x3];                                 // 0x1(0x3)
-};
-
-
-// Size 0x18
-struct AnimCurveBase
-{
-public:
-	char                                                         pad0x8_MQQOE[0x8];                                 // 0x0(0x8)
-	struct FName                                                 LastObservedName;                                  // 0x8(0x8)
-	char                                                         pad0x4_LSOXE[0x4];                                 // 0x10(0x4)
-	int                                                          CurveTypeFlags;                                    // 0x14(0x4)
-};
-
-
-// Size 0x20
-struct BakedStateExitTransition
-{
-public:
-	int                                                          CanTakeDelegateIndex;                              // 0x0(0x4)
-	int                                                          CustomResultNodeIndex;                             // 0x4(0x4)
-	int                                                          TransitionIndex;                                   // 0x8(0x4)
-	bool                                                         bDesiredTransitionReturnValue;                     // 0xc(0x1)
-	bool                                                         bAutomaticRemainingTimeRule;                       // 0xd(0x1)
-	char                                                         pad0x2_M4QN4[0x2];                                 // 0xe(0x2)
-	TArray<int>                                                  PoseEvaluatorLinks;                                // 0x10(0x10)
-};
-
-
-// Size 0x30
-struct InputAxisKeyMapping
-{
-public:
-	struct FName                                                 AxisName;                                          // 0x0(0x8)
-	struct Key                                                   Key;                                               // 0x8(0x20)
-	float                                                        Scale;                                             // 0x28(0x4)
-	char                                                         pad0x4_5UXGW[0x4];                                 // 0x2c(0x4)
-};
-
-
-// Size 0xc
-struct TriIndices
-{
-public:
-	int                                                          v0;                                                // 0x0(0x4)
-	int                                                          v1;                                                // 0x4(0x4)
-	int                                                          v2;                                                // 0x8(0x4)
-};
-
-
-// Size 0x10
-struct TickPrerequisite
-{
-public:
-	char                                                         pad0x10_UKQK5[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x18
-struct AnimSlotInfo
-{
-public:
-	struct FName                                                 SlotName;                                          // 0x0(0x8)
-	TArray<float>                                                ChannelWeights;                                    // 0x8(0x10)
-};
-
-
-// Size 0xd0
-struct EdGraphSchemaAction_NewNode
-{
-public:
-	char                                                         pad0xc8_ARL2D[0xc8];                               // 0x0(0xc8)
-	class EdGraphNode*                                           NodeTemplate;                                      // 0xc8(0x8)
-};
-
-
-// Size 0x34
-struct BatchedLine
-{
-public:
-	struct Vector                                                Start;                                             // 0x0(0xc)
-	struct Vector                                                End;                                               // 0xc(0xc)
-	struct LinearColor                                           Color;                                             // 0x18(0x10)
-	float                                                        Thickness;                                         // 0x28(0x4)
-	float                                                        RemainingLifeTime;                                 // 0x2c(0x4)
-	char                                                         DepthPriority;                                     // 0x30(0x1)
-	char                                                         pad0x3_RPH0L[0x3];                                 // 0x31(0x3)
-};
-
-
-// Size 0x10
-struct RootMotionExtractionStep
-{
-public:
-	class AnimSequence*                                          AnimSequence;                                      // 0x0(0x8)
-	float                                                        StartPosition;                                     // 0x8(0x4)
-	float                                                        EndPosition;                                       // 0xc(0x4)
-};
-
-
-// Size 0x10
-struct DelegateArray
-{
-public:
-	TArray<uintptr_t>                                            Delegates;                                         // 0x0(0x10)
-};
-
-
-// Size 0x20
-struct FuncStatEntry
-{
-public:
-	struct FString                                               Name;                                              // 0x0(0x10)
-	char                                                         pad0x10_TJVSB[0x10];                               // 0x10(0x10)
-};
-
-
-// Size 0x18
-struct MaterialParameterCollectionInfo
-{
-public:
-	struct Guid                                                  StateId;                                           // 0x0(0x10)
-	class MaterialParameterCollection*                           ParameterCollection;                               // 0x10(0x8)
-};
-
-
-// Size 0x18
-struct TTVectorTrack
-{
-public:
-	char                                                         pad0x10_SLO1L[0x10];                               // 0x0(0x10)
-	class CurveVector*                                           CurveVector;                                       // 0x10(0x8)
-};
-
-
-// Size 0x10
-struct CurveTableRowHandle
-{
-public:
-	class CurveTable*                                            CurveTable;                                        // 0x0(0x8)
-	struct FName                                                 RowName;                                           // 0x8(0x8)
-};
-
-
-// Size 0xc0
-struct AnimNode_BlendListByObject
-{
-public:
-	char                                                         pad0xa8_I8PFO[0xa8];                               // 0x0(0xa8)
-	class UClass*                                                ActiveTypeValue;                                   // 0xa8(0x8)
-	TArray<class Class*>                                         ObjectToPoseIndex;                                 // 0xb0(0x10)
-};
-
-
-// Size 0x18
-struct CanvasIcon
-{
-public:
-	class Texture*                                               Texture;                                           // 0x0(0x8)
-	float                                                        U;                                                 // 0x8(0x4)
-	float                                                        V;                                                 // 0xc(0x4)
-	float                                                        UL;                                                // 0x10(0x4)
-	float                                                        VL;                                                // 0x14(0x4)
-};
-
-
-// Size 0x40
-struct BranchingPoint
-{
-public:
-	char                                                         pad0x30_QP2E9[0x30];                               // 0x0(0x30)
-	struct FName                                                 EventName;                                         // 0x30(0x8)
-	float                                                        DisplayTime;                                       // 0x38(0x4)
-	float                                                        TriggerTimeOffset;                                 // 0x3c(0x4)
-};
-
-
-// Size 0x48
-struct NetRelevancyActorClusterStat
-{
-public:
-	struct FString                                               Name;                                              // 0x0(0x10)
-	TArray<String>                                               SubClusters;                                       // 0x10(0x10)
-	struct FString                                               Type;                                              // 0x20(0x10)
-	struct FString                                               Owner;                                             // 0x30(0x10)
-	bool                                                         IsCustomNamed;                                     // 0x40(0x1)
-	bool                                                         NeedsPreparation;                                  // 0x41(0x1)
-	char                                                         pad0x6_YYPDZ[0x6];                                 // 0x42(0x6)
-};
-
-
-// Size 0x20
-struct AudioComponentParam
-{
-public:
-	struct FName                                                 ParamName;                                         // 0x0(0x8)
-	float                                                        FloatParam;                                        // 0x8(0x4)
-	bool                                                         BoolParam;                                         // 0xc(0x1)
-	char                                                         pad0x3_80JM7[0x3];                                 // 0xd(0x3)
-	int                                                          IntParam;                                          // 0x10(0x4)
-	char                                                         pad0x4_URQSZ[0x4];                                 // 0x14(0x4)
-	class SoundWave*                                             SoundWaveParam;                                    // 0x18(0x8)
-};
-
-
-// Size 0x24
-struct SubsurfaceProfileStruct
-{
-public:
-	float                                                        ScatterRadius;                                     // 0x0(0x4)
-	struct LinearColor                                           SubsurfaceColor;                                   // 0x4(0x10)
-	struct LinearColor                                           FalloffColor;                                      // 0x14(0x10)
-};
-
-
-// Size 0x58
-struct FFTWaterComponentIntersectParticleType
-{
-public:
-	struct Vector2D                                              VelocityRange;                                     // 0x0(0x8)
-	struct Vector2D                                              FoamRange;                                         // 0x8(0x8)
-	struct Vector2D                                              HeightRange;                                       // 0x10(0x8)
-	struct Vector2D                                              ParticleWaveVelocityRange;                         // 0x18(0x8)
-	struct Vector2D                                              ParticleWaveAbsoluteSpeedDifferenceRange;          // 0x20(0x8)
-	float                                                        Density;                                           // 0x28(0x4)
-	float                                                        VolumeHorizontalVelocityWeight;                    // 0x2c(0x4)
-	float                                                        HorizontalDirectionFromVolumeWeight;               // 0x30(0x4)
-	float                                                        HorizontalRandomVelocityWeight;                    // 0x34(0x4)
-	float                                                        VolumeVerticalVelocityWeight;                      // 0x38(0x4)
-	float                                                        VerticalRandomVelocityWeight;                      // 0x3c(0x4)
-	float                                                        WaterVelocityWeight;                               // 0x40(0x4)
-	float                                                        VelocityScaling;                                   // 0x44(0x4)
-	bool                                                         UnderwaterParticles;                               // 0x48(0x1)
-	char                                                         pad0x7_FXCBY[0x7];                                 // 0x49(0x7)
-	class ParticleComputeShaderData*                             ParticleComputeShaderData;                         // 0x50(0x8)
-};
-
-
-// Size 0x28
-struct DynamicTextureInstance
-{
-public:
-	char                                                         pad0x18_R1VST[0x18];                               // 0x0(0x18)
-	class Texture2D*                                             Texture;                                           // 0x18(0x8)
-	bool                                                         bAttached;                                         // 0x20(0x1)
-	char                                                         pad0x3_TFY6K[0x3];                                 // 0x21(0x3)
-	float                                                        OriginalRadius;                                    // 0x24(0x4)
-};
-
-
-// Size 0x30
-struct WaterSimPlane
-{
-public:
-	class UClass*                                                WaterId;                                           // 0x0(0x8)
-	class Object*                                                WaterOwner;                                        // 0x8(0x8)
-	struct Plane                                                 NonFFTPlane;                                       // 0x10(0x10)
-	bool                                                         bUseFFT;                                           // 0x20(0x1)
-	bool                                                         bActive;                                           // 0x21(0x1)
-	char                                                         pad0x2_CO1XU[0x2];                                 // 0x22(0x2)
-	float                                                        FFTBasePlaneHeight;                                // 0x24(0x4)
-	char                                                         pad0x8_3OZ59[0x8];                                 // 0x28(0x8)
-};
-
-
-// Size 0x38
-struct BasedPosition
-{
-public:
-	class Actor*                                                 Base;                                              // 0x0(0x8)
-	struct Vector                                                Position;                                          // 0x8(0xc)
-	struct Vector                                                CachedBaseLocation;                                // 0x14(0xc)
-	struct Rotator                                               CachedBaseRotation;                                // 0x20(0xc)
-	struct Vector                                                CachedTransPosition;                               // 0x2c(0xc)
-};
-
-
-// Size 0xc
-struct LightmassPointLightSettings
-{
-public:
-	char                                                         pad0xc_DFL3Q[0xc];                                 // 0x0(0xc)
-};
-
-
-// Size 0x18
-struct AnimParentNodeAssetOverride
-{
-public:
-	class AnimationAsset*                                        NewAsset;                                          // 0x0(0x8)
-	struct Guid                                                  ParentNodeGuid;                                    // 0x8(0x10)
-};
-
-
-// Size 0xb0
-struct AnimNode_BlendListByBool
-{
-public:
-	char                                                         pad0xa8_W8OFO[0xa8];                               // 0x0(0xa8)
-	bool                                                         bActiveValue;                                      // 0xa8(0x1)
-	char                                                         pad0x7_AKTER[0x7];                                 // 0xa9(0x7)
-};
-
-
-// Size 0x90
-struct AnimationActiveTransitionEntry
-{
-public:
-	char                                                         pad0x90_9XUMW[0x90];                               // 0x0(0x90)
-};
-
-
-// Size 0x24
-struct ClothPhysicsProperties
-{
-public:
-	float                                                        BendResistance;                                    // 0x0(0x4)
-	float                                                        ShearResistance;                                   // 0x4(0x4)
-	float                                                        StretchLimit;                                      // 0x8(0x4)
-	float                                                        Friction;                                          // 0xc(0x4)
-	float                                                        Damping;                                           // 0x10(0x4)
-	float                                                        Drag;                                              // 0x14(0x4)
-	float                                                        GravityScale;                                      // 0x18(0x4)
-	float                                                        InertiaBlend;                                      // 0x1c(0x4)
-	float                                                        SelfCollisionThickness;                            // 0x20(0x4)
-};
-
-
-// Size 0x84
-struct MaterialInstanceBasePropertyOverrides
-{
-public:
-	bool                                                         bOverride_OpacityMaskClipValue;                    // 0x0(0x1)
-	bool                                                         bOverride_BlendMode;                               // 0x1(0x1)
-	bool                                                         bOverride_ShadingModel;                            // 0x2(0x1)
-	bool                                                         bOverride_DitheredLODTransition;                   // 0x3(0x1)
-	bool                                                         bOverride_TwoSided;                                // 0x4(0x1)
-	bool                                                         bOverride_TessellationMode;                        // 0x5(0x1)
-	bool                                                         bOverride_LowResTranslucency;                      // 0x6(0x1)
-	bool                                                         bOverride_SkyLightWhenOccluded;                    // 0x7(0x1)
-	bool                                                         bOverride_CloudShadowInfluence;                    // 0x8(0x1)
-	bool                                                         bOverride_LightColorInfluence;                     // 0x9(0x1)
-	bool                                                         bOverride_AmbientLightColorInfluence;              // 0xa(0x1)
-	bool                                                         bOverride_LightIntensityInfluence;                 // 0xb(0x1)
-	bool                                                         bOverride_AmbientLightIntensityInfluence;          // 0xc(0x1)
-	bool                                                         bOverride_AlternativeAmbientLightColorInfluence;   // 0xd(0x1)
-	bool                                                         bOverride_AlternativeAmbientLightIntensityInfluence; // 0xe(0x1)
-	bool                                                         bOverride_EvaluateLightningAtParticleCenter;       // 0xf(0x1)
-	bool                                                         bOverride_DontRenderWhenPlayerInsideShip;          // 0x10(0x1)
-	bool                                                         bOverride_ObjectFadeEnabled;                       // 0x11(0x1)
-	bool                                                         bOverride_ObjectFadeRate;                          // 0x12(0x1)
-	bool                                                         bOverride_ObjectFadeDistanceThreshold;             // 0x13(0x1)
-	bool                                                         bOverride_TranslucencyDirectionalLightingIntensity; // 0x14(0x1)
-	bool                                                         bOverride_TranslucencyVolumeFogScale;              // 0x15(0x1)
-	bool                                                         bOverride_TranslucencyDistanceFog;                 // 0x16(0x1)
-	bool                                                         bOverride_TranslucencyPass;                        // 0x17(0x1)
-	bool                                                         bOverride_TranslucencyInReflection;                // 0x18(0x1)
-	char                                                         pad0x3_Y54GN[0x3];                                 // 0x19(0x3)
-	float                                                        OpacityMaskClipValue;                              // 0x1c(0x4)
-	char                                                         BlendMode;                                         // 0x20(0x1)
-	char                                                         ShadingModel;                                      // 0x21(0x1)
-	char                                                         pad0x2_4KWEH[0x2];                                 // 0x22(0x2)
-	bool                                                         TwoSided;                                          // 0x24(0x1)
-	bool                                                         DitheredLODTransition;                             // 0x24(0x1)
-	char                                                         pad0x3_KTAZ7[0x3];                                 // 0x25(0x3)
-	char                                                         D3D11TessellationMode;                             // 0x28(0x1)
-	char                                                         pad0x3_3M6VF[0x3];                                 // 0x29(0x3)
-	bool                                                         ForceResolution;                                   // 0x2c(0x1)
-	char                                                         pad0x3_6HKB7[0x3];                                 // 0x2d(0x3)
-	char                                                         ForcedResolution;                                  // 0x30(0x1)
-	char                                                         pad0x3_0D2WB[0x3];                                 // 0x31(0x3)
-	bool                                                         DisableTransition;                                 // 0x34(0x1)
-	char                                                         pad0x3_0M8O1[0x3];                                 // 0x35(0x3)
-	float                                                        FirstSplitDistance;                                // 0x38(0x4)
-	float                                                        SecondSplitDistance;                               // 0x3c(0x4)
-	float                                                        FullResInFrontMaxDistance;                         // 0x40(0x4)
-	bool                                                         FullResInFront;                                    // 0x44(0x1)
-	bool                                                         PopPerParticle;                                    // 0x44(0x1)
-	char                                                         pad0x3_DAB5B[0x3];                                 // 0x45(0x3)
-	float                                                        SkyLightWhenOccluded;                              // 0x48(0x4)
-	float                                                        CloudShadowInfluence;                              // 0x4c(0x4)
-	float                                                        LightIntensityInfluence;                           // 0x50(0x4)
-	float                                                        LightColorInfluence;                               // 0x54(0x4)
-	float                                                        AmbientLightIntensityInfluence;                    // 0x58(0x4)
-	float                                                        AmbientLightColorInfluence;                        // 0x5c(0x4)
-	float                                                        AlternativeAmbientLightIntensityInfluence;         // 0x60(0x4)
-	float                                                        AlternativeAmbientLightColorInfluence;             // 0x64(0x4)
-	bool                                                         bEvaluateLightningAtParticleCenter;                // 0x68(0x1)
-	bool                                                         bDontRenderWhenPlayerInsideShip;                   // 0x68(0x1)
-	bool                                                         ObjectFadeEnabled;                                 // 0x68(0x1)
-	char                                                         pad0x3_CKRPY[0x3];                                 // 0x69(0x3)
-	float                                                        ObjectFadeRate;                                    // 0x6c(0x4)
-	float                                                        ObjectFadeDistanceThreshold;                       // 0x70(0x4)
-	float                                                        TranslucencyDirectionalLightingIntensity;          // 0x74(0x4)
-	float                                                        TranslucencyVolumeFogScale;                        // 0x78(0x4)
-	bool                                                         TranslucencyDistanceFog;                           // 0x7c(0x1)
-	bool                                                         TranslucencyInReflection;                          // 0x7c(0x1)
-	char                                                         pad0x3_8GCW1[0x3];                                 // 0x7d(0x3)
-	char                                                         TranslucencyPass;                                  // 0x80(0x1)
-	char                                                         pad0x3_SXG8Z[0x3];                                 // 0x81(0x3)
-};
-
-
-// Size 0x58
-struct InputCombinedAxisKeyMapping
-{
-public:
-	struct FName                                                 AxisName;                                          // 0x0(0x8)
-	struct Key                                                   KeyX;                                              // 0x8(0x20)
-	struct Key                                                   KeyY;                                              // 0x28(0x20)
-	float                                                        Scale;                                             // 0x48(0x4)
-	float                                                        CircularDeadZoneLowerBound;                        // 0x4c(0x4)
-	float                                                        CircularDeadZoneUpperBound;                        // 0x50(0x4)
-	float                                                        Exponent;                                          // 0x54(0x4)
-};
-
-
-// Size 0xc
-struct Vector_NetQuantizeNormal
-{
-public:
-	char                                                         pad0xc_JTL6V[0xc];                                 // 0x0(0xc)
-};
-
-
-// Size 0x58
-struct SplineMeshParams
-{
-public:
-	struct Vector                                                StartPos;                                          // 0x0(0xc)
-	struct Vector                                                StartTangent;                                      // 0xc(0xc)
-	struct Vector2D                                              StartScale;                                        // 0x18(0x8)
-	float                                                        StartRoll;                                         // 0x20(0x4)
-	struct Vector2D                                              StartOffset;                                       // 0x24(0x8)
-	struct Vector                                                EndPos;                                            // 0x2c(0xc)
-	struct Vector                                                EndTangent;                                        // 0x38(0xc)
-	struct Vector2D                                              EndScale;                                          // 0x44(0x8)
-	float                                                        EndRoll;                                           // 0x4c(0x4)
-	struct Vector2D                                              EndOffset;                                         // 0x50(0x8)
-};
-
-
-// Size 0x28
-struct ClusterNode
-{
-public:
-	struct Vector                                                BoundMin;                                          // 0x0(0xc)
-	int                                                          FirstChild;                                        // 0xc(0x4)
-	struct Vector                                                BoundMax;                                          // 0x10(0xc)
-	int                                                          LastChild;                                         // 0x1c(0x4)
-	int                                                          FirstInstance;                                     // 0x20(0x4)
-	int                                                          LastInstance;                                      // 0x24(0x4)
-};
-
-
-// Size 0x38
-struct AnimationTransitionBetweenStates
-{
-public:
-	char                                                         pad0x8_58ARM[0x8];                                 // 0x0(0x8)
-	int                                                          PreviousState;                                     // 0x8(0x4)
-	int                                                          NextState;                                         // 0xc(0x4)
-	float                                                        CrossfadeDuration;                                 // 0x10(0x4)
-	int                                                          StartNotify;                                       // 0x14(0x4)
-	int                                                          EndNotify;                                         // 0x18(0x4)
-	int                                                          InterruptNotify;                                   // 0x1c(0x4)
-	char                                                         BlendMode;                                         // 0x20(0x1)
-	char                                                         pad0x7_E96S3[0x7];                                 // 0x21(0x7)
-	class CurveFloat*                                            CustomCurve;                                       // 0x28(0x8)
-	char                                                         LogicType;                                         // 0x30(0x1)
-	char                                                         pad0x7_QODM8[0x7];                                 // 0x31(0x7)
-};
-
-
-// Size 0x1
-struct BoneNode
-{
-public:
-	char                                                         TranslationRetargetingMode;                        // 0x0(0x1)
-};
-
-
-// Size 0x10
-struct CustomChannelSetup
-{
-public:
-	char                                                         Channel;                                           // 0x0(0x1)
-	char                                                         pad0x3_U46JI[0x3];                                 // 0x1(0x3)
-	struct FName                                                 Name;                                              // 0x4(0x8)
-	char                                                         DefaultResponse;                                   // 0xc(0x1)
-	bool                                                         bTraceType;                                        // 0xd(0x1)
-	bool                                                         bStaticObject;                                     // 0xe(0x1)
-	char                                                         pad0x1_INUGY[0x1];                                 // 0xf(0x1)
-};
-
-
-// Size 0x58
-struct CompositeSection
-{
-public:
-	char                                                         pad0x30_IR59I[0x30];                               // 0x0(0x30)
-	struct FName                                                 SectionName;                                       // 0x30(0x8)
-	float                                                        StartTime;                                         // 0x38(0x4)
-	struct FName                                                 NextSectionName;                                   // 0x3c(0x8)
-	char                                                         pad0x4_G15TQ[0x4];                                 // 0x44(0x4)
-	TArray<class AnimMetaData*>                                  MetaData;                                          // 0x48(0x10)
-};
-
-
-// Size 0xa8
-struct AnimNode_StateMachine
-{
-public:
-	char                                                         pad0x30_1HU67[0x30];                               // 0x0(0x30)
-	int                                                          StateMachineIndexInClass;                          // 0x30(0x4)
-	int                                                          MaxTransitionsPerFrame;                            // 0x34(0x4)
-	char                                                         pad0x8_G7L8D[0x8];                                 // 0x38(0x8)
-	int                                                          CurrentState;                                      // 0x40(0x4)
-	float                                                        ElapsedTime;                                       // 0x44(0x4)
-	char                                                         pad0x60_NYULW[0x60];                               // 0x48(0x60)
-};
-
-
-// Size 0x10
-struct AnimSetMeshLinkup
-{
-public:
-	TArray<int>                                                  BoneToTrackTable;                                  // 0x0(0x10)
-};
-
-
-// Size 0x8
-struct CullDistanceSizePair
-{
-public:
-	float                                                        Size;                                              // 0x0(0x4)
-	float                                                        CullDistance;                                      // 0x4(0x4)
-};
-
-
-// Size 0x30
-struct HIKBoneTransform
-{
-public:
-	int                                                          BoneID;                                            // 0x0(0x4)
-	struct Vector                                                Translation;                                       // 0x4(0xc)
-	struct Quat                                                  Orientation;                                       // 0x10(0x10)
-	struct Vector                                                Scale;                                             // 0x20(0xc)
-	char                                                         pad0x4_W2DY8[0x4];                                 // 0x2c(0x4)
-};
-
-
-// Size 0x10
-struct Redirector
-{
-public:
-	struct FName                                                 OldName;                                           // 0x0(0x8)
-	struct FName                                                 NewName;                                           // 0x8(0x8)
-};
-
-
-// Size 0x10
-struct MorphTargetMap
-{
-public:
-	struct FName                                                 Name;                                              // 0x0(0x8)
-	class MorphTarget*                                           MorphTarget;                                       // 0x8(0x8)
-};
-
-
-// Size 0x14
-struct TimelineEventEntry
-{
-public:
-	float                                                        Time;                                              // 0x0(0x4)
-	char                                                         pad0x10_0Q4S7[0x10];                               // 0x4(0x10)
-};
-
-
-// Size 0x40
-struct PurchaseInfo
-{
-public:
-	struct FString                                               Identifier;                                        // 0x0(0x10)
-	struct FString                                               DisplayName;                                       // 0x10(0x10)
-	struct FString                                               DisplayDescription;                                // 0x20(0x10)
-	struct FString                                               DisplayPrice;                                      // 0x30(0x10)
-};
-
-
-// Size 0x10
-struct FilePath
-{
-public:
-	struct FString                                               FilePath;                                          // 0x0(0x10)
-};
-
-
-// Size 0x48
-struct TextureRenderData
-{
-public:
-	class Texture*                                               RenderTexture;                                     // 0x0(0x8)
-	struct Vector2D                                              ScreenPosition;                                    // 0x8(0x8)
-	struct Vector2D                                              ScreenSize;                                        // 0x10(0x8)
-	struct Vector2D                                              CoordinatePosition;                                // 0x18(0x8)
-	struct Vector2D                                              CoordinateSize;                                    // 0x20(0x8)
-	struct LinearColor                                           RenderColor;                                       // 0x28(0x10)
-	char                                                         BlendMode;                                         // 0x38(0x1)
-	char                                                         pad0x3_ANYF1[0x3];                                 // 0x39(0x3)
-	float                                                        Rotation;                                          // 0x3c(0x4)
-	struct Vector2D                                              PivotPoint;                                        // 0x40(0x8)
-};
-
-
-// Size 0x8
-struct VisibilityTrackKey
-{
-public:
-	float                                                        Time;                                              // 0x0(0x4)
-	char                                                         Action;                                            // 0x4(0x1)
-	char                                                         ActiveCondition;                                   // 0x5(0x1)
-	char                                                         pad0x2_QU5JY[0x2];                                 // 0x6(0x2)
-};
-
-
-// Size 0x14
-struct DestructibleSpecialHierarchyDepths
-{
-public:
-	int                                                          SupportDepth;                                      // 0x0(0x4)
-	int                                                          MinimumFractureDepth;                              // 0x4(0x4)
-	bool                                                         bEnableDebris;                                     // 0x8(0x1)
-	char                                                         pad0x3_083P2[0x3];                                 // 0x9(0x3)
-	int                                                          DebrisDepth;                                       // 0xc(0x4)
-	int                                                          EssentialDepth;                                    // 0x10(0x4)
+	struct                                                       TrackColor;                                        // 0x8(0x10)
 };
 
 
@@ -4417,207 +28,19 @@ struct ReverbSettings
 {
 public:
 	bool                                                         bApplyReverb;                                      // 0x0(0x1)
-	char                                                         pad0x3_I1W30[0x3];                                 // 0x1(0x3)
 	char                                                         ReverbType;                                        // 0x4(0x1)
-	char                                                         pad0x3_JBJTR[0x3];                                 // 0x5(0x3)
 	class ReverbEffect*                                          ReverbEffect;                                      // 0x8(0x8)
 	float                                                        Volume;                                            // 0x10(0x4)
 	float                                                        FadeTime;                                          // 0x14(0x4)
 };
 
 
-// Size 0x38
-struct CompressedTrack
-{
-public:
-	TArray<char>                                                 ByteStream;                                        // 0x0(0x10)
-	TArray<float>                                                Times;                                             // 0x10(0x10)
-	float                                                        Mins;                                              // 0x20(0x4)
-	char                                                         pad0x8_3V0IV[0x8];                                 // 0x24(0x8)
-	float                                                        Ranges;                                            // 0x2c(0x4)
-	char                                                         pad0x8_O0U9A[0x8];                                 // 0x30(0x8)
-};
-
-
-// Size 0x48
-struct Vector2MaterialInput
-{
-public:
-	char                                                         pad0x38_GF631[0x38];                               // 0x0(0x38)
-	bool                                                         UseConstant;                                       // 0x38(0x1)
-	char                                                         pad0x3_FGSQ5[0x3];                                 // 0x39(0x3)
-	float                                                        ConstantX;                                         // 0x3c(0x4)
-	float                                                        ConstantY;                                         // 0x40(0x4)
-	char                                                         pad0x4_F4MB1[0x4];                                 // 0x44(0x4)
-};
-
-
-// Size 0xc
-struct BoneReference
-{
-public:
-	struct FName                                                 BoneName;                                          // 0x0(0x8)
-	char                                                         pad0x4_WC1UO[0x4];                                 // 0x8(0x4)
-};
-
-
-// Size 0x14
-struct BoxElement2D
-{
-public:
-	struct Vector2D                                              Center;                                            // 0x0(0x8)
-	float                                                        Width;                                             // 0x8(0x4)
-	float                                                        Height;                                            // 0xc(0x4)
-	float                                                        Angle;                                             // 0x10(0x4)
-};
-
-
-// Size 0xc
-struct TTTrackBase
-{
-public:
-	struct FName                                                 TrackName;                                         // 0x0(0x8)
-	bool                                                         bIsExternalCurve;                                  // 0x8(0x1)
-	char                                                         pad0x3_3QNQ0[0x3];                                 // 0x9(0x3)
-};
-
-
 // Size 0x28
-struct FuncStatHolder
+struct AutoCompleteNode
 {
 public:
-	char                                                         pad0x28_NS0K0[0x28];                               // 0x0(0x28)
-};
-
-
-// Size 0x1
-struct DummySpacerCameraTypes
-{
-public:
-	char                                                         pad0x1_F34SO[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x18
-struct MaterialFunctionInfo
-{
-public:
-	struct Guid                                                  StateId;                                           // 0x0(0x10)
-	class MaterialFunction*                                      Function;                                          // 0x10(0x8)
-};
-
-
-// Size 0x30
-struct TimelineVectorTrack
-{
-public:
-	class CurveVector*                                           VectorCurve;                                       // 0x0(0x8)
-	struct FName                                                 VectorPropertyName;                                // 0x18(0x8)
-	class StructProperty*                                        VectorProperty;                                    // 0x20(0x8)
-	char                                                         pad0x8_4CRR9[0x8];                                 // 0x28(0x8)
-};
-
-
-// Size 0x30
-struct InputActionKeyMapping
-{
-public:
-	struct FName                                                 ActionName;                                        // 0x0(0x8)
-	struct Key                                                   Key;                                               // 0x8(0x20)
-	bool                                                         bShift;                                            // 0x28(0x1)
-	bool                                                         bCtrl;                                             // 0x28(0x1)
-	bool                                                         bAlt;                                              // 0x28(0x1)
-	bool                                                         bCmd;                                              // 0x28(0x1)
-	char                                                         pad0x7_WE72X[0x7];                                 // 0x29(0x7)
-};
-
-
-// Size 0x30
-struct PlatformInterfaceData
-{
-public:
-	struct FName                                                 DataName;                                          // 0x0(0x8)
-	char                                                         Type;                                              // 0x8(0x1)
-	char                                                         pad0x3_N6LY7[0x3];                                 // 0x9(0x3)
-	int                                                          IntValue;                                          // 0xc(0x4)
-	float                                                        FloatValue;                                        // 0x10(0x4)
-	char                                                         pad0x4_YAZRY[0x4];                                 // 0x14(0x4)
-	struct FString                                               StringValue;                                       // 0x18(0x10)
-	class Object*                                                ObjectValue;                                       // 0x28(0x8)
-};
-
-
-// Size 0x10
-struct A2Pose
-{
-public:
-	TArray<struct Transform>                                     Bones;                                             // 0x0(0x10)
-};
-
-
-// Size 0x40
-struct ScalarMaterialInput
-{
-public:
-	char                                                         pad0x38_WXVBC[0x38];                               // 0x0(0x38)
-	bool                                                         UseConstant;                                       // 0x38(0x1)
-	char                                                         pad0x3_GJ2RW[0x3];                                 // 0x39(0x3)
-	float                                                        Constant;                                          // 0x3c(0x4)
-};
-
-
-// Size 0xc0
-struct StreamableManager
-{
-public:
-	char                                                         pad0xc0_5C1M6[0xc0];                               // 0x0(0xc0)
-};
-
-
-// Size 0x70
-struct LPVCascadeSettings
-{
-public:
-	bool                                                         bOverride_LPVIntensity;                            // 0x0(0x1)
-	bool                                                         bOverride_LPVDirectionalOcclusionIntensity;        // 0x0(0x1)
-	bool                                                         bOverride_LPVDirectionalOcclusionRadius;           // 0x0(0x1)
-	bool                                                         bOverride_LPVDiffuseOcclusionExponent;             // 0x0(0x1)
-	bool                                                         bOverride_LPVSpecularOcclusionExponent;            // 0x0(0x1)
-	bool                                                         bOverride_LPVDiffuseOcclusionIntensity;            // 0x0(0x1)
-	bool                                                         bOverride_LPVSpecularOcclusionIntensity;           // 0x0(0x1)
-	bool                                                         bOverride_LPVSize;                                 // 0x0(0x1)
-	bool                                                         bOverride_LPVSecondaryOcclusionIntensity;          // 0x1(0x1)
-	bool                                                         bOverride_LPVSecondaryBounceIntensity;             // 0x1(0x1)
-	bool                                                         bOverride_LPVGeometryVolumeBias;                   // 0x1(0x1)
-	bool                                                         bOverride_LPVVplInjectionBias;                     // 0x1(0x1)
-	bool                                                         bOverride_LPVEmissiveInjectionIntensity;           // 0x1(0x1)
-	bool                                                         bOverride_NumberOfPropagationSteps;                // 0x1(0x1)
-	bool                                                         bFreezeLPVUpdate;                                  // 0x1(0x1)
-	char                                                         pad0x2_6MYZU[0x2];                                 // 0x2(0x2)
-	float                                                        LPVIntensity;                                      // 0x4(0x4)
-	float                                                        LPVVplInjectionBias;                               // 0x8(0x4)
-	float                                                        LPVSize;                                           // 0xc(0x4)
-	float                                                        LPVSecondaryOcclusionIntensity;                    // 0x10(0x4)
-	float                                                        LPVSecondaryBounceIntensity;                       // 0x14(0x4)
-	float                                                        LPVGeometryVolumeBias;                             // 0x18(0x4)
-	float                                                        LPVEmissiveInjectionIntensity;                     // 0x1c(0x4)
-	float                                                        LPVDirectionalOcclusionIntensity;                  // 0x20(0x4)
-	float                                                        LPVDirectionalOcclusionRadius;                     // 0x24(0x4)
-	float                                                        LPVDiffuseOcclusionExponent;                       // 0x28(0x4)
-	float                                                        LPVSpecularOcclusionExponent;                      // 0x2c(0x4)
-	float                                                        LPVDiffuseOcclusionIntensity;                      // 0x30(0x4)
-	float                                                        LPVSpecularOcclusionIntensity;                     // 0x34(0x4)
-	int                                                          LPVNumberOfPropagationSteps;                       // 0x38(0x4)
-	char                                                         pad0x4_RQEP1[0x4];                                 // 0x3c(0x4)
-	struct Transform                                             LPVWorldRef;                                       // 0x40(0x30)
-};
-
-
-// Size 0x8
-struct SoundClassEditorData
-{
-public:
-	char                                                         pad0x8_YW3NI[0x8];                                 // 0x0(0x8)
+	int                                                          IndexChar;                                         // 0x0(0x4)
+	TArray<int>                                                  AutoCompleteListIndices;                           // 0x8(0x10)
 };
 
 
@@ -4634,7 +57,16 @@ public:
 	bool                                                         bAccurateRaycasts;                                 // 0x0(0x1)
 	bool                                                         bUseValidBounds;                                   // 0x0(0x1)
 	bool                                                         bFormExtendedStructures;                           // 0x1(0x1)
-	char                                                         pad0x2_JYJZO[0x2];                                 // 0x2(0x2)
+};
+
+
+// Size 0x20
+struct ComponentKey
+{
+public:
+	class UClass*                                                OwnerClass;                                        // 0x0(0x8)
+	struct FName                                                 SCSVariableName;                                   // 0x8(0x8)
+	struct                                                       AssociatedGuid;                                    // 0x10(0x10)
 };
 
 
@@ -4643,221 +75,203 @@ struct ParticleEventGPU_GenerateInfo
 {
 public:
 	char                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_2H4K6[0x3];                                 // 0x1(0x3)
 	int                                                          Frequency;                                         // 0x4(0x4)
 	struct FName                                                 CustomName;                                        // 0x8(0x8)
 	char                                                         CollisionEventLimit;                               // 0x10(0x1)
-	char                                                         pad0x7_XJ5F7[0x7];                                 // 0x11(0x7)
 	TArray<class ParticleModuleEventSendToGame*>                 ParticleModuleEventsToSendToGame;                  // 0x18(0x10)
 };
 
 
-// Size 0x18
-struct FeatureToggledStringAssetReferenceEntry
+// Size 0x14
+struct LightmassMaterialInterfaceSettings
 {
 public:
-	struct StringAssetReference                                  Asset;                                             // 0x0(0x10)
-	struct FName                                                 Feature;                                           // 0x10(0x8)
+	bool                                                         bCastShadowAsMasked;                               // 0x0(0x1)
+	float                                                        EmissiveBoost;                                     // 0x4(0x4)
+	float                                                        DiffuseBoost;                                      // 0x8(0x4)
+	float                                                        ExportResolutionScale;                             // 0xc(0x4)
+	bool                                                         bOverrideCastShadowAsMasked;                       // 0x10(0x1)
+	bool                                                         bOverrideEmissiveBoost;                            // 0x10(0x1)
+	bool                                                         bOverrideDiffuseBoost;                             // 0x10(0x1)
+	bool                                                         bOverrideExportResolutionScale;                    // 0x10(0x1)
 };
 
 
-// Size 0x10
-struct MTDResult
+// Size 0x180
+struct BodyInstance
 {
 public:
-	struct Vector                                                Direction;                                         // 0x0(0xc)
-	float                                                        Distance;                                          // 0xc(0x4)
-};
-
-
-// Size 0x1
-struct AssetImportInfo
-{
-public:
-	char                                                         pad0x1_4YET3[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x48
-struct SlotEvaluationPose
-{
-public:
-	char                                                         AdditiveType;                                      // 0x0(0x1)
-	char                                                         pad0x3_KQ2QR[0x3];                                 // 0x1(0x3)
-	float                                                        Weight;                                            // 0x4(0x4)
-	char                                                         pad0x40_MITBC[0x40];                               // 0x8(0x40)
-};
-
-
-// Size 0x50
-struct AnimNode_SequenceEvaluator
-{
-public:
-	char                                                         pad0x40_K3EHY[0x40];                               // 0x0(0x40)
-	class AnimSequenceBase*                                      Sequence;                                          // 0x40(0x8)
-	float                                                        ExplicitTime;                                      // 0x48(0x4)
-	char                                                         pad0x4_DETGT[0x4];                                 // 0x4c(0x4)
-};
-
-
-// Size 0x20
-struct LevelViewportInfo
-{
-public:
-	struct Vector                                                CamPosition;                                       // 0x0(0xc)
-	struct Rotator                                               CamRotation;                                       // 0xc(0xc)
-	float                                                        CamOrthoZoom;                                      // 0x18(0x4)
-	bool                                                         CamUpdated;                                        // 0x1c(0x1)
-	char                                                         pad0x3_98JK1[0x3];                                 // 0x1d(0x3)
-};
-
-
-// Size 0x88
-struct AnimNode_HIKLookAt
-{
-public:
-	char                                                         pad0x48_MSQTV[0x48];                               // 0x0(0x48)
-	float                                                        Alpha;                                             // 0x48(0x4)
-	struct Vector                                                TargetPosition;                                    // 0x4c(0xc)
-	float                                                        ChestContribution;                                 // 0x58(0x4)
-	bool                                                         XYOnly;                                            // 0x5c(0x1)
-	char                                                         Limits;                                            // 0x5d(0x1)
-	char                                                         pad0x2_DYAG5[0x2];                                 // 0x5e(0x2)
-	float                                                        LimitsHorizontalAngle;                             // 0x60(0x4)
-	float                                                        LimitsVerticalAngle;                               // 0x64(0x4)
-	float                                                        ActivationSpeed;                                   // 0x68(0x4)
-	float                                                        TargetPositionSpeed;                               // 0x6c(0x4)
-	char                                                         InterpolationMode;                                 // 0x70(0x1)
-	char                                                         pad0x17_CZ502[0x17];                               // 0x71(0x17)
-};
-
-
-// Size 0x118
-struct AnimNode_BlendSpaceEvaluator
-{
-public:
-	char                                                         pad0x110_Z9SOJ[0x110];                             // 0x0(0x110)
-	float                                                        NormalizedTime;                                    // 0x110(0x4)
-	char                                                         pad0x4_YO546[0x4];                                 // 0x114(0x4)
-};
-
-
-// Size 0x8
-struct PointerToUberGraphFrame
-{
-public:
-	char                                                         pad0x8_TMS6O[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x10
-struct ParticleEmitterReplayFrame
-{
-public:
-	char                                                         pad0x10_IBCXD[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct LODSoloTrack
-{
-public:
-	TArray<char>                                                 SoloEnableSetting;                                 // 0x0(0x10)
-};
-
-
-// Size 0x1
-struct ParticleSystemLOD
-{
-public:
-	char                                                         pad0x1_W4GIJ[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x28
-struct ExpressionOutput
-{
-public:
-	struct FString                                               OutputName;                                        // 0x0(0x10)
-	int                                                          Mask;                                              // 0x10(0x4)
-	int                                                          MaskR;                                             // 0x14(0x4)
-	int                                                          MaskG;                                             // 0x18(0x4)
-	int                                                          MaskB;                                             // 0x1c(0x4)
-	int                                                          MaskA;                                             // 0x20(0x4)
-	char                                                         pad0x4_DSL6Q[0x4];                                 // 0x24(0x4)
-};
-
-
-// Size 0x18
-struct RepTransform
-{
-public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
-	struct Rotator                                               Rotation;                                          // 0xc(0xc)
-};
-
-
-// Size 0x20
-struct ScaleTrack
-{
-public:
-	TArray<struct Vector>                                        ScaleKeys;                                         // 0x0(0x10)
-	TArray<float>                                                Times;                                             // 0x10(0x10)
-};
-
-
-// Size 0x18
-struct BPInterfaceDescription
-{
-public:
-	class UClass*                                                Interface;                                         // 0x0(0x8)
-	TArray<class EdGraph*>                                       Graphs;                                            // 0x8(0x10)
+	struct                                                       Scale3D;                                           // 0x4(0xc)
+	struct FName                                                 CollisionProfileName;                              // 0x14(0x8)
+	struct                                                       CollisionResponses;                                // 0x20(0x30)
+	bool                                                         bUseCCD;                                           // 0x50(0x1)
+	bool                                                         bNotifyRigidBodyCollision;                         // 0x50(0x1)
+	bool                                                         bSimulatePhysics;                                  // 0x50(0x1)
+	bool                                                         bOverrideMass;                                     // 0x50(0x1)
+	bool                                                         bOverrideMassProperties;                           // 0x50(0x1)
+	bool                                                         bEnableGravity;                                    // 0x50(0x1)
+	bool                                                         bAutoWeld;                                         // 0x50(0x1)
+	bool                                                         bStartAwake;                                       // 0x51(0x1)
+	bool                                                         bGenerateWakeEvents;                               // 0x51(0x1)
+	bool                                                         bUpdateMassWhenScaleChanges;                       // 0x51(0x1)
+	bool                                                         bLockTranslation;                                  // 0x51(0x1)
+	bool                                                         bLockRotation;                                     // 0x51(0x1)
+	bool                                                         bLockXTranslation;                                 // 0x51(0x1)
+	bool                                                         bLockYTranslation;                                 // 0x51(0x1)
+	bool                                                         bLockZTranslation;                                 // 0x51(0x1)
+	bool                                                         bLockXRotation;                                    // 0x52(0x1)
+	bool                                                         bLockYRotation;                                    // 0x52(0x1)
+	bool                                                         bLockZRotation;                                    // 0x52(0x1)
+	bool                                                         bOverrideMaxAngularVelocity;                       // 0x52(0x1)
+	bool                                                         bUseAsyncScene;                                    // 0x52(0x1)
+	bool                                                         bOverrideMaxDepenetrationVelocity;                 // 0x52(0x1)
+	bool                                                         bOverrideWalkableSlopeOnInstance;                  // 0x52(0x1)
+	float                                                        MaxDepenetrationVelocity;                          // 0x54(0x4)
+	float                                                        MassInKg;                                          // 0x58(0x4)
+	struct                                                       MassPropertiesOverride;                            // 0x5c(0x24)
+	float                                                        LinearDamping;                                     // 0x80(0x4)
+	float                                                        AngularDamping;                                    // 0x84(0x4)
+	struct                                                       COMNudge;                                          // 0x88(0xc)
+	float                                                        MassScale;                                         // 0x94(0x4)
+	struct                                                       WalkableSlopeOverride;                             // 0xa8(0x8)
+	class PhysicalMaterial*                                      PhysMaterialOverride;                              // 0xb0(0x8)
+	float                                                        MaxAngularVelocity;                                // 0xb8(0x4)
+	float                                                        CustomSleepThresholdMultiplier;                    // 0xbc(0x4)
+	float                                                        PhysicsBlendWeight;                                // 0xc0(0x4)
+	int                                                          PositionSolverIterationCount;                      // 0xc4(0x4)
+	char                                                         DominanceGroup;                                    // 0xc8(0x1)
+	uint64                                                       RigidActorSyncId;                                  // 0x100(0x8)
+	uint64                                                       RigidActorAsyncId;                                 // 0x108(0x8)
+	int                                                          VelocitySolverIterationCount;                      // 0x110(0x4)
+	char                                                         SleepFamily;                                       // 0x17c(0x1)
+	char                                                         DOFMode;                                           // 0x17d(0x1)
+	char                                                         CollisionEnabled;                                  // 0x17e(0x1)
+	char                                                         ObjectType;                                        // 0x17f(0x1)
 };
 
 
 // Size 0x70
-struct URL
+struct FormatTextArgument
 {
 public:
-	struct FString                                               Protocol;                                          // 0x0(0x10)
-	struct FString                                               Host;                                              // 0x10(0x10)
-	int                                                          Port;                                              // 0x20(0x4)
-	char                                                         pad0x4_8I91E[0x4];                                 // 0x24(0x4)
-	struct FString                                               Map;                                               // 0x28(0x10)
-	struct FString                                               RedirectURL;                                       // 0x38(0x10)
-	TArray<String>                                               Op;                                                // 0x48(0x10)
-	struct FString                                               Portal;                                            // 0x58(0x10)
-	int                                                          Valid;                                             // 0x68(0x4)
-	char                                                         pad0x4_Q2SCD[0x4];                                 // 0x6c(0x4)
+	struct FText                                                 ArgumentName;                                      // 0x0(0x38)
+	struct FText                                                 TextValue;                                         // 0x38(0x38)
 };
 
 
 // Size 0x20
-struct SkeletonToMeshLinkup
+struct BlendSampleData
 {
 public:
-	TArray<int>                                                  SkeletonToMeshTable;                               // 0x0(0x10)
-	TArray<int>                                                  MeshToSkeletonTable;                               // 0x10(0x10)
+	int                                                          SampleDataIndex;                                   // 0x0(0x4)
+	float                                                        TotalWeight;                                       // 0x4(0x4)
+	float                                                        Time;                                              // 0x8(0x4)
 };
 
 
-// Size 0x20
-struct RotationTrack
+// Size 0x40
+struct SubtitleCue
 {
 public:
-	TArray<struct Quat>                                          RotKeys;                                           // 0x0(0x10)
-	TArray<float>                                                Times;                                             // 0x10(0x10)
+	struct FText                                                 Text;                                              // 0x0(0x38)
+	float                                                        Time;                                              // 0x38(0x4)
 };
 
 
-// Size 0x14
-struct BoneMirrorExport
+// Size 0x18
+struct CanvasIcon
 {
 public:
-	struct FName                                                 BoneName;                                          // 0x0(0x8)
-	struct FName                                                 SourceBoneName;                                    // 0x8(0x8)
-	char                                                         BoneFlipAxis;                                      // 0x10(0x1)
-	char                                                         pad0x3_DSMIE[0x3];                                 // 0x11(0x3)
+	class Texture*                                               Texture;                                           // 0x0(0x8)
+	float                                                        U;                                                 // 0x8(0x4)
+	float                                                        V;                                                 // 0xc(0x4)
+	float                                                        UL;                                                // 0x10(0x4)
+	float                                                        VL;                                                // 0x14(0x4)
+};
+
+
+// Size 0x60
+struct DebugTextInfo
+{
+public:
+	class Actor*                                                 SrcActor;                                          // 0x0(0x8)
+	struct                                                       SrcActorOffset;                                    // 0x8(0xc)
+	struct                                                       SrcActorDesiredOffset;                             // 0x14(0xc)
+	struct FString                                               DebugText;                                         // 0x20(0x10)
+	float                                                        TimeRemaining;                                     // 0x30(0x4)
+	float                                                        Duration;                                          // 0x34(0x4)
+	struct                                                       TextColor;                                         // 0x38(0x4)
+	bool                                                         bAbsoluteLocation;                                 // 0x3c(0x1)
+	bool                                                         bKeepAttachedToActor;                              // 0x3c(0x1)
+	bool                                                         bDrawShadow;                                       // 0x3c(0x1)
+	struct                                                       OrigActorLocation;                                 // 0x40(0xc)
+	class Font*                                                  Font;                                              // 0x50(0x8)
+	float                                                        FontScale;                                         // 0x58(0x4)
+};
+
+
+// Size 0x50
+struct AnimNode_HIKPull
+{
+public:
+	float                                                        Alpha;                                             // 0x48(0x4)
+	char                                                         Effector;                                          // 0x4c(0x1)
+};
+
+
+// Size 0x10
+struct DestructibleAdvancedParameters
+{
+public:
+	float                                                        DamageCap;                                         // 0x0(0x4)
+	float                                                        ImpactVelocityThreshold;                           // 0x4(0x4)
+	float                                                        MaxChunkSpeed;                                     // 0x8(0x4)
+	float                                                        FractureImpulseScale;                              // 0xc(0x4)
+};
+
+
+// Size 0xc
+struct TTTrackBase
+{
+public:
+	struct FName                                                 TrackName;                                         // 0x0(0x8)
+	bool                                                         bIsExternalCurve;                                  // 0x8(0x1)
+};
+
+
+// Size 0xb0
+struct AnimNode_BlendListByInt
+{
+public:
+	int                                                          ActiveChildIndex;                                  // 0xa8(0x4)
+};
+
+
+// Size 0x80
+struct AnimNode_HIKSolve
+{
+public:
+	float                                                        Alpha;                                             // 0x48(0x4)
+	struct                                                       InputFKPose;                                       // 0x50(0x18)
+	bool                                                         enablePullEngine;                                  // 0x68(0x1)
+	bool                                                         enableBodyPartSolving;                             // 0x69(0x1)
+	bool                                                         enableLODSolver;                                   // 0x6a(0x1)
+	bool                                                         enableLegsSNS;                                     // 0x6b(0x1)
+	bool                                                         enableArmsSNS;                                     // 0x6c(0x1)
+	bool                                                         boneLengthFromInputPose;                           // 0x6d(0x1)
+	bool                                                         bodyPartSolveLeftShoulder;                         // 0x6e(0x1)
+	bool                                                         bodyPartSolveRightShoulder;                        // 0x6f(0x1)
+	bool                                                         bodyPartSolveLeftArm;                              // 0x70(0x1)
+	bool                                                         bodyPartSolveRightArm;                             // 0x71(0x1)
+	bool                                                         bodyPartSolveLeftLeg;                              // 0x72(0x1)
+	bool                                                         bodyPartSolveRightLeg;                             // 0x73(0x1)
+	bool                                                         bodyPartSolveLeftHand;                             // 0x74(0x1)
+	bool                                                         bodyPartSolveRightHand;                            // 0x75(0x1)
+	bool                                                         bodyPartSolveLeftFoot;                             // 0x76(0x1)
+	bool                                                         bodyPartSolveRightFoot;                            // 0x77(0x1)
+	bool                                                         bodyPartSolveHead;                                 // 0x78(0x1)
+	bool                                                         bodyPartSolveSpine;                                // 0x79(0x1)
+	bool                                                         checkOutputPoseContainsNaNs;                       // 0x7a(0x1)
 };
 
 
@@ -4866,7 +280,43 @@ struct ActiveHapticFeedbackEffect
 {
 public:
 	class HapticFeedbackEffect*                                  HapticEffect;                                      // 0x0(0x8)
-	char                                                         pad0x8_LF5NJ[0x8];                                 // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct InterpEdSelKey
+{
+public:
+	class InterpGroup*                                           Group;                                             // 0x0(0x8)
+	class InterpTrack*                                           Track;                                             // 0x8(0x8)
+	int                                                          KeyIndex;                                          // 0x10(0x4)
+	float                                                        UnsnappedPosition;                                 // 0x14(0x4)
+};
+
+
+// Size 0x80
+struct RuntimeFloatCurve
+{
+public:
+	struct                                                       EditorCurveData;                                   // 0x0(0x78)
+	class CurveFloat*                                            ExternalCurve;                                     // 0x78(0x8)
+};
+
+
+// Size 0x48
+struct SlotEvaluationPose
+{
+public:
+	char                                                         AdditiveType;                                      // 0x0(0x1)
+	float                                                        Weight;                                            // 0x4(0x4)
+};
+
+
+// Size 0xc0
+struct RPCStats
+{
+public:
+	struct                                                       Entries;                                           // 0x0(0x60)
 };
 
 
@@ -4909,138 +359,150 @@ public:
 };
 
 
-// Size 0x18
-struct CompressedOffsetData
+// Size 0x20
+struct TranslationTrack
 {
 public:
-	TArray<int>                                                  OffsetData;                                        // 0x0(0x10)
-	int                                                          StripSize;                                         // 0x10(0x4)
-	char                                                         pad0x4_6857Y[0x4];                                 // 0x14(0x4)
+	TArray<struct Vector>                                        PosKeys;                                           // 0x0(0x10)
+	TArray<float>                                                Times;                                             // 0x10(0x10)
 };
 
 
-// Size 0x38
-struct MemberReference
+// Size 0x18
+struct SlotAnimationTrack
 {
 public:
-	class Object*                                                MemberParent;                                      // 0x0(0x8)
-	struct FString                                               MemberScope;                                       // 0x8(0x10)
-	struct FName                                                 MemberName;                                        // 0x18(0x8)
-	struct Guid                                                  MemberGuid;                                        // 0x20(0x10)
-	bool                                                         bSelfContext;                                      // 0x30(0x1)
-	bool                                                         bWasDeprecated;                                    // 0x31(0x1)
-	char                                                         pad0x6_BMLMT[0x6];                                 // 0x32(0x6)
+	struct FName                                                 SlotName;                                          // 0x0(0x8)
+	struct                                                       AnimTrack;                                         // 0x8(0x10)
+};
+
+
+// Size 0x70
+struct LPVCascadeSettings
+{
+public:
+	bool                                                         bOverride_LPVIntensity;                            // 0x0(0x1)
+	bool                                                         bOverride_LPVDirectionalOcclusionIntensity;        // 0x0(0x1)
+	bool                                                         bOverride_LPVDirectionalOcclusionRadius;           // 0x0(0x1)
+	bool                                                         bOverride_LPVDiffuseOcclusionExponent;             // 0x0(0x1)
+	bool                                                         bOverride_LPVSpecularOcclusionExponent;            // 0x0(0x1)
+	bool                                                         bOverride_LPVDiffuseOcclusionIntensity;            // 0x0(0x1)
+	bool                                                         bOverride_LPVSpecularOcclusionIntensity;           // 0x0(0x1)
+	bool                                                         bOverride_LPVSize;                                 // 0x0(0x1)
+	bool                                                         bOverride_LPVSecondaryOcclusionIntensity;          // 0x1(0x1)
+	bool                                                         bOverride_LPVSecondaryBounceIntensity;             // 0x1(0x1)
+	bool                                                         bOverride_LPVGeometryVolumeBias;                   // 0x1(0x1)
+	bool                                                         bOverride_LPVVplInjectionBias;                     // 0x1(0x1)
+	bool                                                         bOverride_LPVEmissiveInjectionIntensity;           // 0x1(0x1)
+	bool                                                         bOverride_NumberOfPropagationSteps;                // 0x1(0x1)
+	bool                                                         bFreezeLPVUpdate;                                  // 0x1(0x1)
+	float                                                        LPVIntensity;                                      // 0x4(0x4)
+	float                                                        LPVVplInjectionBias;                               // 0x8(0x4)
+	float                                                        LPVSize;                                           // 0xc(0x4)
+	float                                                        LPVSecondaryOcclusionIntensity;                    // 0x10(0x4)
+	float                                                        LPVSecondaryBounceIntensity;                       // 0x14(0x4)
+	float                                                        LPVGeometryVolumeBias;                             // 0x18(0x4)
+	float                                                        LPVEmissiveInjectionIntensity;                     // 0x1c(0x4)
+	float                                                        LPVDirectionalOcclusionIntensity;                  // 0x20(0x4)
+	float                                                        LPVDirectionalOcclusionRadius;                     // 0x24(0x4)
+	float                                                        LPVDiffuseOcclusionExponent;                       // 0x28(0x4)
+	float                                                        LPVSpecularOcclusionExponent;                      // 0x2c(0x4)
+	float                                                        LPVDiffuseOcclusionIntensity;                      // 0x30(0x4)
+	float                                                        LPVSpecularOcclusionIntensity;                     // 0x34(0x4)
+	int                                                          LPVNumberOfPropagationSteps;                       // 0x38(0x4)
+	struct                                                       LPVWorldRef;                                       // 0x40(0x30)
+};
+
+
+// Size 0x210
+struct BuildPromotionTestSettings
+{
+public:
+	struct                                                       DefaultStaticMeshAsset;                            // 0x0(0x10)
+	struct                                                       ImportWorkflow;                                    // 0x10(0x150)
+	struct                                                       OpenAssets;                                        // 0x160(0x60)
+	struct                                                       BlueprintSettings;                                 // 0x1c0(0x20)
+	struct                                                       NewProjectSettings;                                // 0x1e0(0x20)
+	struct                                                       SourceControlMaterial;                             // 0x200(0x10)
 };
 
 
 // Size 0x8
-struct IntegralKey
+struct VisibilityTrackKey
 {
 public:
 	float                                                        Time;                                              // 0x0(0x4)
-	int                                                          Value;                                             // 0x4(0x4)
-};
-
-
-// Size 0x90
-struct BlendFilter
-{
-public:
-	char                                                         pad0x90_9OMVV[0x90];                               // 0x0(0x90)
-};
-
-
-// Size 0xc
-struct HIKBoneMapping
-{
-public:
-	struct FName                                                 UnrealBoneName;                                    // 0x0(0x8)
-	int                                                          HumanIKBone;                                       // 0x8(0x4)
-};
-
-
-// Size 0x10
-struct KillSphereGroupParams
-{
-public:
-	struct Vector                                                Centre;                                            // 0x0(0xc)
-	float                                                        Radius;                                            // 0xc(0x4)
+	char                                                         Action;                                            // 0x4(0x1)
+	char                                                         ActiveCondition;                                   // 0x5(0x1)
 };
 
 
 // Size 0x40
-struct SubtitleCue
+struct ClothingAssetData
 {
 public:
-	struct FText                                                 Text;                                              // 0x0(0x38)
-	float                                                        Time;                                              // 0x38(0x4)
-	char                                                         pad0x4_F1EM0[0x4];                                 // 0x3c(0x4)
+	struct FName                                                 AssetName;                                         // 0x0(0x8)
+	struct FString                                               ApexFileName;                                      // 0x8(0x10)
+	bool                                                         bClothPropertiesChanged;                           // 0x18(0x1)
+	struct                                                       PhysicsProperties;                                 // 0x1c(0x24)
 };
 
 
-// Size 0x1c
-struct ScalarParameterValue
+// Size 0x10
+struct NamedEmitterMaterial
 {
 public:
-	struct FName                                                 ParameterName;                                     // 0x0(0x8)
-	float                                                        ParameterValue;                                    // 0x8(0x4)
-	struct Guid                                                  ExpressionGUID;                                    // 0xc(0x10)
+	struct FName                                                 Name;                                              // 0x0(0x8)
+	class MaterialInterface*                                     Material;                                          // 0x8(0x8)
 };
 
 
-// Size 0xf0
-struct LatentActionManager
+// Size 0x50
+struct KSphylElem
 {
 public:
-	char                                                         pad0xf0_T1BGQ[0xf0];                               // 0x0(0xf0)
+	struct                                                       Center;                                            // 0x20(0xc)
+	struct                                                       Orientation;                                       // 0x30(0x10)
+	float                                                        Radius;                                            // 0x40(0x4)
+	float                                                        Length;                                            // 0x44(0x4)
 };
 
 
 // Size 0xc
-struct CircleElement2D
+struct PhysicalSurfaceName
 {
 public:
-	struct Vector2D                                              Center;                                            // 0x0(0x8)
-	float                                                        Radius;                                            // 0x8(0x4)
+	char                                                         Type;                                              // 0x0(0x1)
+	struct FName                                                 Name;                                              // 0x4(0x8)
 };
 
 
-// Size 0x48
-struct TickFunction
+// Size 0xa0
+struct PointDamageEvent
 {
 public:
-	char                                                         pad0x30_PHB6C[0x30];                               // 0x0(0x30)
-	char                                                         TickGroup;                                         // 0x30(0x1)
-	char                                                         pad0x1_HVVUF[0x1];                                 // 0x31(0x1)
-	bool                                                         bTickEvenWhenPaused;                               // 0x32(0x1)
-	bool                                                         bCanEverTick;                                      // 0x32(0x1)
-	bool                                                         bStartWithTickEnabled;                             // 0x32(0x1)
-	bool                                                         bAllowTickOnDedicatedServer;                       // 0x32(0x1)
-	char                                                         pad0xd_H62ST[0xd];                                 // 0x33(0xd)
-	float                                                        TickInterval;                                      // 0x40(0x4)
-	char                                                         pad0x4_8SSWT[0x4];                                 // 0x44(0x4)
+	float                                                        Damage;                                            // 0x10(0x4)
+	struct                                                       ShotDirection;                                     // 0x14(0xc)
+	struct                                                       HitInfo;                                           // 0x20(0x80)
 };
 
 
-// Size 0x1c
-struct POV
+// Size 0x40
+struct AnimTickRecord
 {
 public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
-	struct Rotator                                               Rotation;                                          // 0xc(0xc)
-	float                                                        FOV;                                               // 0x18(0x4)
+	class AnimationAsset*                                        SourceAsset;                                       // 0x0(0x8)
 };
 
 
-// Size 0x18
-struct SoundTrackKey
+// Size 0x28
+struct FontParameterValue
 {
 public:
-	float                                                        Time;                                              // 0x0(0x4)
-	float                                                        Volume;                                            // 0x4(0x4)
-	float                                                        Pitch;                                             // 0x8(0x4)
-	char                                                         pad0x4_L9LZN[0x4];                                 // 0xc(0x4)
-	class SoundBase*                                             Sound;                                             // 0x10(0x8)
+	struct FName                                                 ParameterName;                                     // 0x0(0x8)
+	class Font*                                                  FontValue;                                         // 0x8(0x8)
+	int                                                          FontPage;                                          // 0x10(0x4)
+	struct                                                       ExpressionGUID;                                    // 0x14(0x10)
 };
 
 
@@ -5053,264 +515,69 @@ public:
 };
 
 
-// Size 0x10
-struct InputAxisProperties
+// Size 0x8
+struct MobileInstancedStaticMeshLOD
 {
 public:
-	float                                                        DeadZone;                                          // 0x0(0x4)
-	float                                                        Sensitivity;                                       // 0x4(0x4)
-	float                                                        Exponent;                                          // 0x8(0x4)
-	bool                                                         bInvert;                                           // 0xc(0x1)
-	char                                                         pad0x3_WCODF[0x3];                                 // 0xd(0x3)
-};
-
-
-// Size 0x38
-struct SerializeNewActorFailureContext
-{
-public:
-	struct FString                                               Description;                                       // 0x0(0x10)
-	TArray<struct NetGuidResolveStackEntry>                      ActorGuidResolveStack;                             // 0x10(0x10)
-	TArray<struct NetGuidResolveStackEntry>                      ArchetypeGuidResolveStack;                         // 0x20(0x10)
-	bool                                                         IsCloseBunch;                                      // 0x30(0x1)
-	char                                                         pad0x7_90PI9[0x7];                                 // 0x31(0x7)
-};
-
-
-// Size 0x38
-struct BasedMovementInfo
-{
-public:
-	class PrimitiveComponent*                                    MovementBase;                                      // 0x0(0x8)
-	struct FName                                                 BoneName;                                          // 0x8(0x8)
-	struct Vector_NetQuantize100                                 Location;                                          // 0x10(0xc)
-	struct Rotator                                               Rotation;                                          // 0x1c(0xc)
-	bool                                                         bServerHasBaseComponent;                           // 0x28(0x1)
-	bool                                                         bRelativeRotation;                                 // 0x29(0x1)
-	char                                                         pad0x2_371C6[0x2];                                 // 0x2a(0x2)
-	struct Vector                                                LinearVelocity;                                    // 0x2c(0xc)
-};
-
-
-// Size 0x30
-struct NavigationLinkBase
-{
-public:
-	float                                                        LeftProjectHeight;                                 // 0x0(0x4)
-	float                                                        MaxFallDownLength;                                 // 0x4(0x4)
-	char                                                         Direction;                                         // 0x8(0x1)
-	char                                                         pad0x7_VSI17[0x7];                                 // 0x9(0x7)
-	float                                                        SnapRadius;                                        // 0x10(0x4)
-	float                                                        SnapHeight;                                        // 0x14(0x4)
-	bool                                                         bUseSnapHeight;                                    // 0x18(0x1)
-	bool                                                         bSnapToCheapestArea;                               // 0x18(0x1)
-	char                                                         pad0x7_8X03P[0x7];                                 // 0x19(0x7)
-	class UClass*                                                AreaClass;                                         // 0x20(0x8)
-	struct NavAgentSelector                                      SupportedAgents;                                   // 0x28(0x4)
-	bool                                                         bSupportsAgent0;                                   // 0x2c(0x1)
-	bool                                                         bSupportsAgent1;                                   // 0x2c(0x1)
-	bool                                                         bSupportsAgent2;                                   // 0x2c(0x1)
-	bool                                                         bSupportsAgent3;                                   // 0x2c(0x1)
-	bool                                                         bSupportsAgent4;                                   // 0x2c(0x1)
-	bool                                                         bSupportsAgent5;                                   // 0x2c(0x1)
-	bool                                                         bSupportsAgent6;                                   // 0x2c(0x1)
-	bool                                                         bSupportsAgent7;                                   // 0x2c(0x1)
-	bool                                                         bSupportsAgent8;                                   // 0x2d(0x1)
-	bool                                                         bSupportsAgent9;                                   // 0x2d(0x1)
-	bool                                                         bSupportsAgent10;                                  // 0x2d(0x1)
-	bool                                                         bSupportsAgent11;                                  // 0x2d(0x1)
-	bool                                                         bSupportsAgent12;                                  // 0x2d(0x1)
-	bool                                                         bSupportsAgent13;                                  // 0x2d(0x1)
-	bool                                                         bSupportsAgent14;                                  // 0x2d(0x1)
-	bool                                                         bSupportsAgent15;                                  // 0x2d(0x1)
-	char                                                         pad0x2_4SNXI[0x2];                                 // 0x2e(0x2)
-};
-
-
-// Size 0x60
-struct CollisionResponseTemplate
-{
-public:
-	struct FName                                                 Name;                                              // 0x0(0x8)
-	char                                                         CollisionEnabled;                                  // 0x8(0x1)
-	char                                                         pad0x3_SG10P[0x3];                                 // 0x9(0x3)
-	struct FName                                                 ObjectTypeName;                                    // 0xc(0x8)
-	char                                                         pad0x4_5W912[0x4];                                 // 0x14(0x4)
-	TArray<struct ResponseChannel>                               CustomResponses;                                   // 0x18(0x10)
-	struct FString                                               HelpMessage;                                       // 0x28(0x10)
-	bool                                                         bCanModify;                                        // 0x38(0x1)
-	char                                                         pad0x27_5G9YF[0x27];                               // 0x39(0x27)
-};
-
-
-// Size 0x60
-struct AnimNode_RotateRootBone
-{
-public:
-	char                                                         pad0x30_XUP9B[0x30];                               // 0x0(0x30)
-	struct PoseLink                                              BasePose;                                          // 0x30(0x18)
-	float                                                        Pitch;                                             // 0x48(0x4)
-	float                                                        Yaw;                                               // 0x4c(0x4)
-	struct Rotator                                               MeshToComponent;                                   // 0x50(0xc)
-	char                                                         pad0x4_UNXIA[0x4];                                 // 0x5c(0x4)
+	float                                                        LODReduction;                                      // 0x0(0x4)
+	float                                                        DistanceToLOD;                                     // 0x4(0x4)
 };
 
 
 // Size 0x10
-struct ParticleEditorPromotionSettings
+struct ActiveVertexAnim
 {
 public:
-	struct FilePath                                              DefaultParticleAsset;                              // 0x0(0x10)
+	class VertexAnimBase*                                        VertAnim;                                          // 0x0(0x8)
+	float                                                        Weight;                                            // 0x8(0x4)
+	float                                                        Time;                                              // 0xc(0x4)
 };
 
 
 // Size 0x20
-struct LaunchOnTestSettings
+struct ScaleTrack
 {
 public:
-	struct FilePath                                              LaunchOnTestmap;                                   // 0x0(0x10)
-	struct FString                                               DeviceID;                                          // 0x10(0x10)
+	TArray<struct Vector>                                        ScaleKeys;                                         // 0x0(0x10)
+	TArray<float>                                                Times;                                             // 0x10(0x10)
 };
 
 
-// Size 0x20
-struct BuildPromotionBlueprintSettings
+// Size 0x10
+struct ServerMigrationTelemetryFailedData
 {
 public:
-	struct FilePath                                              FirstMeshPath;                                     // 0x0(0x10)
-	struct FilePath                                              SecondMeshPath;                                    // 0x10(0x10)
-};
-
-
-// Size 0x28
-struct DialogueContextMapping
-{
-public:
-	struct DialogueContext                                       Context;                                           // 0x0(0x18)
-	class SoundWave*                                             SoundWave;                                         // 0x18(0x8)
-	class DialogueSoundWaveProxy*                                Proxy;                                             // 0x20(0x8)
+	struct FString                                               Stage;                                             // 0x0(0x10)
 };
 
 
 // Size 0x48
-struct AnimNode_ConvertComponentToLocalSpace
+struct NavigationLink
 {
 public:
-	char                                                         pad0x30_03NTH[0x30];                               // 0x0(0x30)
-	struct ComponentSpacePoseLink                                ComponentPose;                                     // 0x30(0x18)
+	struct                                                       Left;                                              // 0x30(0xc)
+	struct                                                       Right;                                             // 0x3c(0xc)
 };
 
 
-// Size 0x50
-struct BakedAnimationState
+// Size 0x20
+struct DialogueWaveParameter
 {
 public:
-	struct FName                                                 StateName;                                         // 0x0(0x8)
-	struct FName                                                 PathedStateName;                                   // 0x8(0x8)
-	TArray<struct BakedStateExitTransition>                      Transitions;                                       // 0x10(0x10)
-	int                                                          StateRootNodeIndex;                                // 0x20(0x4)
-	int                                                          StartNotify;                                       // 0x24(0x4)
-	int                                                          EndNotify;                                         // 0x28(0x4)
-	int                                                          FullyBlendedNotify;                                // 0x2c(0x4)
-	bool                                                         bIsAConduit;                                       // 0x30(0x1)
-	char                                                         pad0x3_XDOB0[0x3];                                 // 0x31(0x3)
-	int                                                          EntryRuleNodeIndex;                                // 0x34(0x4)
-	TArray<int>                                                  PlayerNodeIndices;                                 // 0x38(0x10)
-	bool                                                         CanBeReEntered;                                    // 0x48(0x1)
-	char                                                         pad0x7_ESDH6[0x7];                                 // 0x49(0x7)
+	class DialogueWave*                                          DialogueWave;                                      // 0x0(0x8)
+	struct                                                       Context;                                           // 0x8(0x18)
 };
 
 
-// Size 0x40
-struct ClothingAssetData
+// Size 0x60
+struct AnimNode_HIKOffset
 {
 public:
-	struct FName                                                 AssetName;                                         // 0x0(0x8)
-	struct FString                                               ApexFileName;                                      // 0x8(0x10)
-	bool                                                         bClothPropertiesChanged;                           // 0x18(0x1)
-	char                                                         pad0x3_39ZZ7[0x3];                                 // 0x19(0x3)
-	struct ClothPhysicsProperties                                PhysicsProperties;                                 // 0x1c(0x24)
-};
-
-
-// Size 0x28
-struct VectorDistribution
-{
-public:
-	struct DistributionLookupTable                               Table;                                             // 0x0(0x28)
-};
-
-
-// Size 0x80
-struct AnimNode_HIKSolve
-{
-public:
-	char                                                         pad0x48_JSILT[0x48];                               // 0x0(0x48)
 	float                                                        Alpha;                                             // 0x48(0x4)
-	char                                                         pad0x4_VOJTQ[0x4];                                 // 0x4c(0x4)
-	struct ComponentSpacePoseLink                                InputFKPose;                                       // 0x50(0x18)
-	bool                                                         enablePullEngine;                                  // 0x68(0x1)
-	bool                                                         enableBodyPartSolving;                             // 0x69(0x1)
-	bool                                                         enableLODSolver;                                   // 0x6a(0x1)
-	bool                                                         enableLegsSNS;                                     // 0x6b(0x1)
-	bool                                                         enableArmsSNS;                                     // 0x6c(0x1)
-	bool                                                         boneLengthFromInputPose;                           // 0x6d(0x1)
-	bool                                                         bodyPartSolveLeftShoulder;                         // 0x6e(0x1)
-	bool                                                         bodyPartSolveRightShoulder;                        // 0x6f(0x1)
-	bool                                                         bodyPartSolveLeftArm;                              // 0x70(0x1)
-	bool                                                         bodyPartSolveRightArm;                             // 0x71(0x1)
-	bool                                                         bodyPartSolveLeftLeg;                              // 0x72(0x1)
-	bool                                                         bodyPartSolveRightLeg;                             // 0x73(0x1)
-	bool                                                         bodyPartSolveLeftHand;                             // 0x74(0x1)
-	bool                                                         bodyPartSolveRightHand;                            // 0x75(0x1)
-	bool                                                         bodyPartSolveLeftFoot;                             // 0x76(0x1)
-	bool                                                         bodyPartSolveRightFoot;                            // 0x77(0x1)
-	bool                                                         bodyPartSolveHead;                                 // 0x78(0x1)
-	bool                                                         bodyPartSolveSpine;                                // 0x79(0x1)
-	bool                                                         checkOutputPoseContainsNaNs;                       // 0x7a(0x1)
-	char                                                         pad0x5_QI0ZD[0x5];                                 // 0x7b(0x5)
-};
-
-
-// Size 0x1c
-struct GridBlendSample
-{
-public:
-	struct EditorElement                                         GridElement;                                       // 0x0(0x18)
-	float                                                        BlendWeight;                                       // 0x18(0x4)
-};
-
-
-// Size 0x40
-struct MeshBuildSettings
-{
-public:
-	bool                                                         bUseMikkTSpace;                                    // 0x0(0x1)
-	bool                                                         bRecomputeNormals;                                 // 0x1(0x1)
-	bool                                                         bRecomputeTangents;                                // 0x2(0x1)
-	bool                                                         bRemoveDegenerates;                                // 0x3(0x1)
-	bool                                                         bBuildAdjacencyBuffer;                             // 0x4(0x1)
-	bool                                                         bUseFullPrecisionUVs;                              // 0x5(0x1)
-	bool                                                         bGenerateLightmapUVs;                              // 0x6(0x1)
-	char                                                         pad0x1_96KW4[0x1];                                 // 0x7(0x1)
-	struct PresortedBillboardsParams                             PresortedBillboardsParams;                         // 0x8(0x8)
-	int                                                          MinLightmapResolution;                             // 0x10(0x4)
-	int                                                          SrcLightmapIndex;                                  // 0x14(0x4)
-	int                                                          DstLightmapIndex;                                  // 0x18(0x4)
-	float                                                        BuildScale;                                        // 0x1c(0x4)
-	struct Vector                                                BuildScale3D;                                      // 0x20(0xc)
-	float                                                        DistanceFieldResolutionScale;                      // 0x2c(0x4)
-	bool                                                         bGenerateDistanceFieldAsIfTwoSided;                // 0x30(0x1)
-	char                                                         pad0x7_WFNQJ[0x7];                                 // 0x31(0x7)
-	class StaticMesh*                                            DistanceFieldReplacementMesh;                      // 0x38(0x8)
-};
-
-
-// Size 0x28
-struct Vector4Distribution
-{
-public:
-	struct DistributionLookupTable                               Table;                                             // 0x0(0x28)
+	float                                                        ReachT;                                            // 0x4c(0x4)
+	struct                                                       Translation;                                       // 0x50(0xc)
+	char                                                         Effector;                                          // 0x5c(0x1)
+	char                                                         EffectorSpace;                                     // 0x5d(0x1)
 };
 
 
@@ -5319,15 +586,12 @@ struct LevelSimplificationDetails
 {
 public:
 	bool                                                         bCreatePackagePerAsset;                            // 0x0(0x1)
-	char                                                         pad0x3_ILWGJ[0x3];                                 // 0x1(0x3)
 	float                                                        ProxyPixelSize;                                    // 0x4(0x4)
-	struct MaterialSimplificationSettings                        StaticMeshMaterial;                                // 0x8(0x44)
+	struct                                                       StaticMeshMaterial;                                // 0x8(0x44)
 	bool                                                         bOverrideLandscapeExportLOD;                       // 0x4c(0x1)
-	char                                                         pad0x3_77X0N[0x3];                                 // 0x4d(0x3)
 	int                                                          LandscapeExportLOD;                                // 0x50(0x4)
-	struct MaterialSimplificationSettings                        LandscapeMaterial;                                 // 0x54(0x44)
+	struct                                                       LandscapeMaterial;                                 // 0x54(0x44)
 	bool                                                         bRemoveDownwardFacingTriangles;                    // 0x98(0x1)
-	char                                                         pad0x3_K3K7Y[0x3];                                 // 0x99(0x3)
 	float                                                        CullAngleThreshold;                                // 0x9c(0x4)
 	bool                                                         bBakeFoliageToLandscape;                           // 0xa0(0x1)
 	bool                                                         bBakeGrassToLandscape;                             // 0xa1(0x1)
@@ -5339,303 +603,6 @@ public:
 	bool                                                         bGenerateLandscapeMetallicMap;                     // 0xa7(0x1)
 	bool                                                         bGenerateLandscapeRoughnessMap;                    // 0xa8(0x1)
 	bool                                                         bGenerateLandscapeSpecularMap;                     // 0xa9(0x1)
-	char                                                         pad0x2_ZP2NN[0x2];                                 // 0xaa(0x2)
-};
-
-
-// Size 0x18
-struct OpenTestAsset
-{
-public:
-	struct FilePath                                              AssetToOpen;                                       // 0x0(0x10)
-	bool                                                         bSkipTestWhenUnAttended;                           // 0x10(0x1)
-	char                                                         pad0x7_VC6KQ[0x7];                                 // 0x11(0x7)
-};
-
-
-// Size 0x18
-struct SpikeStatEntry
-{
-public:
-	TArray<struct FuncStatEntry>                                 WorstRPCs;                                         // 0x0(0x10)
-	char                                                         SpikeDetected;                                     // 0x14(0x1)
-	char                                                         pad0x3_DP2VN[0x3];                                 // 0x15(0x3)
-};
-
-
-// Size 0x70
-struct IntegralCurve
-{
-public:
-	char                                                         pad0x58_PRVWV[0x58];                               // 0x0(0x58)
-	TArray<struct IntegralKey>                                   Keys;                                              // 0x58(0x10)
-	int                                                          DefaultValue;                                      // 0x68(0x4)
-	bool                                                         bUseDefaultValueBeforeFirstKey;                    // 0x6c(0x1)
-	char                                                         pad0x3_NQPSU[0x3];                                 // 0x6d(0x3)
-};
-
-
-// Size 0x30
-struct AggregateGeometry2D
-{
-public:
-	TArray<struct CircleElement2D>                               CircleElements;                                    // 0x0(0x10)
-	TArray<struct BoxElement2D>                                  BoxElements;                                       // 0x10(0x10)
-	TArray<struct ConvexElement2D>                               ConvexElements;                                    // 0x20(0x10)
-};
-
-
-// Size 0x18
-struct InputAxisConfigEntry
-{
-public:
-	struct FName                                                 AxisKeyName;                                       // 0x0(0x8)
-	struct InputAxisProperties                                   AxisProperties;                                    // 0x8(0x10)
-};
-
-
-// Size 0x28
-struct StaticMeshComponentLODInfo
-{
-public:
-	char                                                         pad0x10_AYRIX[0x10];                               // 0x0(0x10)
-	TArray<struct PaintedVertex>                                 PaintedVertices;                                   // 0x10(0x10)
-	char                                                         pad0x8_JASWJ[0x8];                                 // 0x20(0x8)
-};
-
-
-// Size 0x70
-struct AnimNode_MultiWayBlend
-{
-public:
-	char                                                         pad0x30_HHXD8[0x30];                               // 0x0(0x30)
-	TArray<struct PoseLink>                                      Poses;                                             // 0x30(0x10)
-	TArray<float>                                                DesiredAlphas;                                     // 0x40(0x10)
-	bool                                                         bAdditiveNode;                                     // 0x50(0x1)
-	bool                                                         bNormalizeAlpha;                                   // 0x51(0x1)
-	char                                                         pad0x2_S2EFN[0x2];                                 // 0x52(0x2)
-	struct InputScaleBias                                        AlphaScaleBias;                                    // 0x54(0x8)
-	char                                                         pad0x14_AREIE[0x14];                               // 0x5c(0x14)
-};
-
-
-// Size 0x20
-struct ServerMigrationTelemetrySucceededData
-{
-public:
-	TArray<struct ServerMigrationTelemetryActorData>             ActorDetails;                                      // 0x0(0x10)
-	float                                                        TotalTime;                                         // 0x10(0x4)
-	int                                                          NumClients;                                        // 0x14(0x4)
-	int                                                          NumActorsMigrated;                                 // 0x18(0x4)
-	int                                                          ActorSerialisationBytes;                           // 0x1c(0x4)
-};
-
-
-// Size 0x10
-struct PerBoneInterpolation
-{
-public:
-	struct BoneReference                                         BoneReference;                                     // 0x0(0xc)
-	float                                                        InterpolationSpeedPerSec;                          // 0xc(0x4)
-};
-
-
-// Size 0x60
-struct ExternalToolDefinition
-{
-public:
-	struct FString                                               ToolName;                                          // 0x0(0x10)
-	struct FilePath                                              ExecutablePath;                                    // 0x10(0x10)
-	struct FString                                               CommandLineOptions;                                // 0x20(0x10)
-	struct DirectoryPath                                         WorkingDirectory;                                  // 0x30(0x10)
-	struct FString                                               ScriptExtension;                                   // 0x40(0x10)
-	struct DirectoryPath                                         ScriptDirectory;                                   // 0x50(0x10)
-};
-
-
-// Size 0x10
-struct InterpLookupTrack
-{
-public:
-	TArray<struct InterpLookupPoint>                             Points;                                            // 0x0(0x10)
-};
-
-
-// Size 0x28
-struct CollisionImpactData
-{
-public:
-	TArray<struct RigidBodyContactInfo>                          ContactInfos;                                      // 0x0(0x10)
-	struct Vector                                                TotalNormalImpulse;                                // 0x10(0xc)
-	struct Vector                                                TotalFrictionImpulse;                              // 0x1c(0xc)
-};
-
-
-// Size 0x50
-struct FunctionExpressionInput
-{
-public:
-	class MaterialExpressionFunctionInput*                       ExpressionInput;                                   // 0x0(0x8)
-	struct Guid                                                  ExpressionInputId;                                 // 0x8(0x10)
-	struct ExpressionInput                                       Input;                                             // 0x18(0x38)
-};
-
-
-// Size 0x20
-struct DialogueWaveParameter
-{
-public:
-	class DialogueWave*                                          DialogueWave;                                      // 0x0(0x8)
-	struct DialogueContext                                       Context;                                           // 0x8(0x18)
-};
-
-
-// Size 0x48
-struct AnimNode_UseCachedPose
-{
-public:
-	char                                                         pad0x30_HLR2R[0x30];                               // 0x0(0x30)
-	struct PoseLink                                              LinkToCachingNode;                                 // 0x30(0x18)
-};
-
-
-// Size 0xc
-struct MergedCollisionActorsSimplification
-{
-public:
-	struct CollisionMergingSettings                              MergeCollisionSettings;                            // 0x0(0x1)
-	char                                                         pad0x3_EZPS4[0x3];                                 // 0x1(0x3)
-	float                                                        MaxBoundRadius;                                    // 0x4(0x4)
-	int                                                          MinNumberOfComponentsToMerge;                      // 0x8(0x4)
-};
-
-
-// Size 0x28
-struct ExposedValueHandler
-{
-public:
-	struct FName                                                 BoundFunction;                                     // 0x0(0x8)
-	TArray<struct ExposedValueCopyRecord>                        CopyRecords;                                       // 0x8(0x10)
-	char                                                         pad0x10_HGNV1[0x10];                               // 0x18(0x10)
-};
-
-
-// Size 0xc0
-struct AnimNode_HIKFloorContact
-{
-public:
-	char                                                         pad0x48_YI82I[0x48];                               // 0x0(0x48)
-	bool                                                         FeetContact;                                       // 0x48(0x1)
-	bool                                                         HandsContact;                                      // 0x49(0x1)
-	bool                                                         FingersContact;                                    // 0x4a(0x1)
-	bool                                                         ToesContact;                                       // 0x4b(0x1)
-	char                                                         FeetContactType;                                   // 0x4c(0x1)
-	char                                                         HandsContactType;                                  // 0x4d(0x1)
-	char                                                         pad0x2_3956I[0x2];                                 // 0x4e(0x2)
-	float                                                        DistanceUp;                                        // 0x50(0x4)
-	float                                                        DistanceDown;                                      // 0x54(0x4)
-	int                                                          NbRays;                                            // 0x58(0x4)
-	float                                                        FootRadius;                                        // 0x5c(0x4)
-	float                                                        DeltaTime;                                         // 0x60(0x4)
-	float                                                        Smoothing;                                         // 0x64(0x4)
-	struct CollisionResponseContainer                            OverrideRaycastCollisionResponse;                  // 0x68(0x20)
-	float                                                        FeetHeight;                                        // 0x88(0x4)
-	float                                                        FeetBack;                                          // 0x8c(0x4)
-	float                                                        FeetMiddle;                                        // 0x90(0x4)
-	float                                                        FeetFront;                                         // 0x94(0x4)
-	float                                                        FeetInSide;                                        // 0x98(0x4)
-	float                                                        FeetOutSide;                                       // 0x9c(0x4)
-	float                                                        HandsHeight;                                       // 0xa0(0x4)
-	float                                                        HandsBack;                                         // 0xa4(0x4)
-	float                                                        HandsMiddle;                                       // 0xa8(0x4)
-	float                                                        HandsFront;                                        // 0xac(0x4)
-	float                                                        HandsInSide;                                       // 0xb0(0x4)
-	float                                                        HandsOutSide;                                      // 0xb4(0x4)
-	char                                                         pad0x8_ZDSXM[0x8];                                 // 0xb8(0x8)
-};
-
-
-// Size 0x24
-struct ROscillator
-{
-public:
-	struct FOscillator                                           Pitch;                                             // 0x0(0xc)
-	struct FOscillator                                           Yaw;                                               // 0xc(0xc)
-	struct FOscillator                                           Roll;                                              // 0x18(0xc)
-};
-
-
-// Size 0x48
-struct RepAttachment
-{
-public:
-	class Actor*                                                 AttachParent;                                      // 0x0(0x8)
-	struct Vector_NetQuantize100                                 LocationOffset;                                    // 0x8(0xc)
-	struct Vector_NetQuantize100                                 RelativeScale3D;                                   // 0x14(0xc)
-	struct Rotator                                               RotationOffset;                                    // 0x20(0xc)
-	struct FName                                                 AttachSocket;                                      // 0x2c(0x8)
-	char                                                         pad0x4_0HGP7[0x4];                                 // 0x34(0x4)
-	class SceneComponent*                                        AttachComponent;                                   // 0x38(0x8)
-	char                                                         pad0x8_MLOLV[0x8];                                 // 0x40(0x8)
-};
-
-
-// Size 0x60
-struct BuildPromotionOpenAssetSettings
-{
-public:
-	struct FilePath                                              BlueprintAsset;                                    // 0x0(0x10)
-	struct FilePath                                              MaterialAsset;                                     // 0x10(0x10)
-	struct FilePath                                              ParticleSystemAsset;                               // 0x20(0x10)
-	struct FilePath                                              SkeletalMeshAsset;                                 // 0x30(0x10)
-	struct FilePath                                              StaticMeshAsset;                                   // 0x40(0x10)
-	struct FilePath                                              TextureAsset;                                      // 0x50(0x10)
-};
-
-
-// Size 0x40
-struct RepRootMotionMontage
-{
-public:
-	class AnimMontage*                                           AnimMontage;                                       // 0x0(0x8)
-	float                                                        Position;                                          // 0x8(0x4)
-	struct Vector_NetQuantize10                                  Location;                                          // 0xc(0xc)
-	struct Rotator                                               Rotation;                                          // 0x18(0xc)
-	char                                                         pad0x4_RTBX9[0x4];                                 // 0x24(0x4)
-	class PrimitiveComponent*                                    MovementBase;                                      // 0x28(0x8)
-	struct FName                                                 MovementBaseBoneName;                              // 0x30(0x8)
-	bool                                                         bRelativePosition;                                 // 0x38(0x1)
-	bool                                                         bRelativeRotation;                                 // 0x39(0x1)
-	char                                                         pad0x6_ICVV4[0x6];                                 // 0x3a(0x6)
-};
-
-
-// Size 0x10
-struct InputBlendPose
-{
-public:
-	TArray<struct BranchFilter>                                  BranchFilters;                                     // 0x0(0x10)
-};
-
-
-// Size 0x110
-struct AnimNode_BlendSpacePlayer
-{
-public:
-	char                                                         pad0x40_1027I[0x40];                               // 0x0(0x40)
-	float                                                        X;                                                 // 0x40(0x4)
-	float                                                        Y;                                                 // 0x44(0x4)
-	float                                                        Z;                                                 // 0x48(0x4)
-	float                                                        PlayRate;                                          // 0x4c(0x4)
-	bool                                                         bLoop;                                             // 0x50(0x1)
-	char                                                         pad0x7_EB72C[0x7];                                 // 0x51(0x7)
-	class BlendSpaceBase*                                        BlendSpace;                                        // 0x58(0x8)
-	int                                                          GroupIndex;                                        // 0x60(0x4)
-	char                                                         GroupRole;                                         // 0x64(0x1)
-	char                                                         pad0x3_8FI1Q[0x3];                                 // 0x65(0x3)
-	struct BlendFilter                                           BlendFilter;                                       // 0x68(0x90)
-	TArray<struct BlendSampleData>                               BlendSampleDataCache;                              // 0xf8(0x10)
-	char                                                         pad0x8_6H2ZV[0x8];                                 // 0x108(0x8)
 };
 
 
@@ -5643,157 +610,339 @@ public:
 struct AnimNode_RotationOffsetBlendSpace
 {
 public:
-	char                                                         pad0x110_441MG[0x110];                             // 0x0(0x110)
-	struct PoseLink                                              BasePose;                                          // 0x110(0x18)
+	struct                                                       BasePose;                                          // 0x110(0x18)
 };
 
 
-// Size 0x30
-struct CollisionResponse
+// Size 0x18
+struct EditedDocumentInfo
 {
 public:
-	struct CollisionResponseContainer                            ResponseToChannels;                                // 0x0(0x20)
-	TArray<struct ResponseChannel>                               ResponseArray;                                     // 0x20(0x10)
+	class Object*                                                EditedObject;                                      // 0x0(0x8)
+	struct                                                       SavedViewOffset;                                   // 0x8(0x8)
+	float                                                        SavedZoomAmount;                                   // 0x10(0x4)
 };
 
 
-// Size 0x70
-struct MeshProxySettings
+// Size 0x5a0
+struct MinimalViewInfo
 {
 public:
-	int                                                          ScreenSize;                                        // 0x0(0x4)
-	struct MaterialSimplificationSettings                        Material;                                          // 0x4(0x44)
-	int                                                          TextureWidth;                                      // 0x48(0x4)
-	int                                                          TextureHeight;                                     // 0x4c(0x4)
-	bool                                                         bExportNormalMap;                                  // 0x50(0x1)
-	bool                                                         bExportMetallicMap;                                // 0x51(0x1)
-	bool                                                         bExportRoughnessMap;                               // 0x52(0x1)
-	bool                                                         bExportSpecularMap;                                // 0x53(0x1)
-	bool                                                         bRecalculateNormals;                               // 0x54(0x1)
-	char                                                         pad0x3_IOYCM[0x3];                                 // 0x55(0x3)
-	float                                                        HardAngleThreshold;                                // 0x58(0x4)
-	int                                                          MergeDistance;                                     // 0x5c(0x4)
-	bool                                                         bUseClippingPlane;                                 // 0x60(0x1)
-	char                                                         pad0x3_JOS3D[0x3];                                 // 0x61(0x3)
-	float                                                        ClippingLevel;                                     // 0x64(0x4)
-	int                                                          AxisIndex;                                         // 0x68(0x4)
-	bool                                                         bPlaneNegativeHalfspace;                           // 0x6c(0x1)
-	char                                                         pad0x3_NPTZZ[0x3];                                 // 0x6d(0x3)
-};
-
-
-// Size 0x98
-struct AnimNode_HIKRelativePlant
-{
-public:
-	char                                                         pad0x48_I82UD[0x48];                               // 0x0(0x48)
-	float                                                        Alpha;                                             // 0x48(0x4)
-	float                                                        Depth;                                             // 0x4c(0x4)
-	float                                                        HipsRotationFactor;                                // 0x50(0x4)
-	float                                                        ChestRotationFactor;                               // 0x54(0x4)
-	float                                                        DistanceUp;                                        // 0x58(0x4)
-	float                                                        DistanceDown;                                      // 0x5c(0x4)
-	int                                                          NbRays;                                            // 0x60(0x4)
-	float                                                        FootRadius;                                        // 0x64(0x4)
-	struct CollisionResponseContainer                            OverrideRaycastCollisionResponse;                  // 0x68(0x20)
-	float                                                        DeltaTime;                                         // 0x88(0x4)
-	float                                                        Smoothing;                                         // 0x8c(0x4)
-	char                                                         pad0x8_EOMA3[0x8];                                 // 0x90(0x8)
-};
-
-
-// Size 0x38
-struct EditorImportExportTestDefinition
-{
-public:
-	struct FilePath                                              ImportFilePath;                                    // 0x0(0x10)
-	struct FString                                               ExportFileExtension;                               // 0x10(0x10)
-	bool                                                         bSkipExport;                                       // 0x20(0x1)
-	char                                                         pad0x7_CCDGF[0x7];                                 // 0x21(0x7)
-	TArray<struct ImportFactorySettingValues>                    FactorySettings;                                   // 0x28(0x10)
-};
-
-
-// Size 0x50
-struct ReplicatedPhysicsState
-{
-public:
-	class PrimitiveComponent*                                    MovementBase;                                      // 0x0(0x8)
-	class SceneComponent*                                        AttachParent;                                      // 0x8(0x8)
-	struct RepMovement                                           ReplicatedMovement;                                // 0x10(0x38)
-	bool                                                         IsAttached;                                        // 0x48(0x1)
-	char                                                         pad0x7_K80OR[0x7];                                 // 0x49(0x7)
-};
-
-
-// Size 0x98
-struct Timeline
-{
-public:
-	char                                                         LengthMode;                                        // 0x0(0x1)
-	char                                                         pad0x3_9ZSQ2[0x3];                                 // 0x1(0x3)
-	float                                                        Length;                                            // 0x4(0x4)
-	bool                                                         bLooping;                                          // 0x8(0x1)
-	bool                                                         bReversePlayback;                                  // 0x8(0x1)
-	bool                                                         bPlaying;                                          // 0x8(0x1)
-	char                                                         pad0x3_7BFPW[0x3];                                 // 0x9(0x3)
-	float                                                        PlayRate;                                          // 0xc(0x4)
-	float                                                        Position;                                          // 0x10(0x4)
-	char                                                         pad0x4_HLH0M[0x4];                                 // 0x14(0x4)
-	TArray<struct TimelineEventEntry>                            Events;                                            // 0x18(0x10)
-	TArray<struct TimelineVectorTrack>                           InterpVectors;                                     // 0x28(0x10)
-	TArray<struct TimelineFloatTrack>                            InterpFloats;                                      // 0x38(0x10)
-	TArray<struct TimelineLinearColorTrack>                      InterpLinearColors;                                // 0x48(0x10)
-	struct FName                                                 DirectionPropertyName;                             // 0x88(0x8)
-	class ByteProperty*                                          DirectionProperty;                                 // 0x90(0x8)
-};
-
-
-// Size 0x58
-struct IndexedCurve
-{
-public:
-	char                                                         pad0x8_04OFV[0x8];                                 // 0x0(0x8)
-	struct KeyHandleMap                                          KeyHandlesToIndices;                               // 0x8(0x50)
-};
-
-
-// Size 0x30
-struct ReplicatedTransformState
-{
-public:
-	class SceneComponent*                                        MovementBase;                                      // 0x0(0x8)
-	class SceneComponent*                                        AttachParent;                                      // 0x8(0x8)
-	struct RepTransform                                          ReplicatedMovement;                                // 0x10(0x18)
-	bool                                                         IsAttached;                                        // 0x28(0x1)
-	char                                                         pad0x7_3TM15[0x7];                                 // 0x29(0x7)
-};
-
-
-// Size 0x14
-struct NetActorPtr
-{
-public:
-	struct NetObjectPtr                                          ObjectPtr;                                         // 0x0(0x14)
+	struct                                                       Location;                                          // 0x0(0xc)
+	struct                                                       Rotation;                                          // 0xc(0xc)
+	float                                                        FOV;                                               // 0x28(0x4)
+	float                                                        OrthoWidth;                                        // 0x2c(0x4)
+	float                                                        OrthoNearClipPlane;                                // 0x30(0x4)
+	float                                                        OrthoFarClipPlane;                                 // 0x34(0x4)
+	float                                                        AspectRatio;                                       // 0x38(0x4)
+	bool                                                         bConstrainAspectRatio;                             // 0x3c(0x1)
+	bool                                                         bUseFieldOfViewForLOD;                             // 0x3c(0x1)
+	char                                                         ProjectionMode;                                    // 0x40(0x1)
+	float                                                        PostProcessBlendWeight;                            // 0x44(0x4)
+	struct                                                       PostProcessSettings;                               // 0x50(0x540)
 };
 
 
 // Size 0x28
-struct FloatDistribution
+struct RawDistribution
 {
 public:
-	struct DistributionLookupTable                               Table;                                             // 0x0(0x28)
+	struct                                                       Table;                                             // 0x0(0x28)
+};
+
+
+// Size 0xc
+struct BranchingPointMarker
+{
+public:
+	int                                                          NotifyIndex;                                       // 0x0(0x4)
+	float                                                        TriggerTime;                                       // 0x4(0x4)
+	char                                                         NotifyEventType;                                   // 0x8(0x1)
 };
 
 
 // Size 0x38
-struct InstancedNavMesh
+struct AnimUpdateRateParameters
 {
 public:
-	char                                                         pad0x20_GHB5P[0x20];                               // 0x0(0x20)
-	struct Vector                                                Location;                                          // 0x20(0xc)
-	struct FName                                                 NavMeshName;                                       // 0x2c(0x8)
-	struct NavAgentSelector                                      SupportedAgents;                                   // 0x34(0x4)
+	int                                                          UpdateRate;                                        // 0x4(0x4)
+	int                                                          EvaluationRate;                                    // 0x8(0x4)
+	bool                                                         bInterpolateSkippedFrames;                         // 0xc(0x1)
+	bool                                                         bSkipUpdate;                                       // 0xd(0x1)
+	bool                                                         bSkipEvaluation;                                   // 0xe(0x1)
+	float                                                        TickedPoseOffestTime;                              // 0x10(0x4)
+	float                                                        AdditionalTime;                                    // 0x14(0x4)
+	int                                                          BaseNonRenderedUpdateRate;                         // 0x1c(0x4)
+	TArray<float>                                                BaseVisibleDistanceFactorThesholds;                // 0x28(0x10)
+};
+
+
+// Size 0x30
+struct WaterSimPlane
+{
+public:
+	class UClass*                                                WaterId;                                           // 0x0(0x8)
+	class Object*                                                WaterOwner;                                        // 0x8(0x8)
+	struct                                                       NonFFTPlane;                                       // 0x10(0x10)
+	bool                                                         bUseFFT;                                           // 0x20(0x1)
+	bool                                                         bActive;                                           // 0x21(0x1)
+	float                                                        FFTBasePlaneHeight;                                // 0x24(0x4)
+};
+
+
+// Size 0x8c
+struct FindFloorResult
+{
+public:
+	bool                                                         bBlockingHit;                                      // 0x0(0x1)
+	bool                                                         bWalkableFloor;                                    // 0x0(0x1)
+	bool                                                         bLineTrace;                                        // 0x0(0x1)
+	float                                                        FloorDist;                                         // 0x4(0x4)
+	float                                                        LineDist;                                          // 0x8(0x4)
+	struct                                                       HitResult;                                         // 0xc(0x80)
+};
+
+
+// Size 0x60
+struct Node
+{
+public:
+	struct FName                                                 Name;                                              // 0x0(0x8)
+	struct FName                                                 ParentName;                                        // 0x8(0x8)
+	struct                                                       Transform;                                         // 0x10(0x30)
+	struct FString                                               DisplayName;                                       // 0x40(0x10)
+	bool                                                         bAdvanced;                                         // 0x50(0x1)
+};
+
+
+// Size 0x38
+struct RepMovement
+{
+public:
+	struct                                                       LinearVelocity;                                    // 0x0(0xc)
+	struct                                                       AngularVelocity;                                   // 0xc(0xc)
+	struct                                                       Location;                                          // 0x18(0xc)
+	struct                                                       Rotation;                                          // 0x24(0xc)
+	bool                                                         bSimulatedPhysicSleep;                             // 0x30(0x1)
+	bool                                                         bRepPhysics;                                       // 0x30(0x1)
+	char                                                         LocationQuantizationLevel;                         // 0x31(0x1)
+	char                                                         VelocityQuantizationLevel;                         // 0x32(0x1)
+	char                                                         RotationQuantizationLevel;                         // 0x33(0x1)
+};
+
+
+// Size 0xc0
+struct AttenuationSettings
+{
+public:
+	bool                                                         bAttenuate;                                        // 0x0(0x1)
+	bool                                                         bSpatialize;                                       // 0x0(0x1)
+	bool                                                         bAttenuateWithLPF;                                 // 0x0(0x1)
+	char                                                         DistanceAlgorithm;                                 // 0x4(0x1)
+	struct                                                       CustomAttenuationCurve;                            // 0x8(0x80)
+	char                                                         DistanceType;                                      // 0x88(0x1)
+	char                                                         AttenuationShape;                                  // 0x89(0x1)
+	float                                                        dBAttenuationAtMax;                                // 0x8c(0x4)
+	float                                                        OmniRadius;                                        // 0x90(0x4)
+	char                                                         SpatializationAlgorithm;                           // 0x94(0x1)
+	float                                                        RadiusMin;                                         // 0x98(0x4)
+	float                                                        RadiusMax;                                         // 0x9c(0x4)
+	struct                                                       AttenuationShapeExtents;                           // 0xa0(0xc)
+	float                                                        ConeOffset;                                        // 0xac(0x4)
+	float                                                        FalloffDistance;                                   // 0xb0(0x4)
+	float                                                        LPFRadiusMin;                                      // 0xb4(0x4)
+	float                                                        LPFRadiusMax;                                      // 0xb8(0x4)
+};
+
+
+// Size 0x38
+struct RawDistributionFloat
+{
+public:
+	float                                                        MinValue;                                          // 0x28(0x4)
+	float                                                        MaxValue;                                          // 0x2c(0x4)
+	class DistributionFloat*                                     Distribution;                                      // 0x30(0x8)
+};
+
+
+// Size 0x10
+struct PerBoneInterpolation
+{
+public:
+	struct                                                       BoneReference;                                     // 0x0(0xc)
+	float                                                        InterpolationSpeedPerSec;                          // 0xc(0x4)
+};
+
+
+// Size 0x1c
+struct RigidBodyErrorCorrection
+{
+public:
+	float                                                        LinearDeltaThresholdSq;                            // 0x0(0x4)
+	float                                                        LinearInterpAlpha;                                 // 0x4(0x4)
+	float                                                        LinearRecipFixTime;                                // 0x8(0x4)
+	float                                                        AngularDeltaThreshold;                             // 0xc(0x4)
+	float                                                        AngularInterpAlpha;                                // 0x10(0x4)
+	float                                                        AngularRecipFixTime;                               // 0x14(0x4)
+	float                                                        BodySpeedThresholdSq;                              // 0x18(0x4)
+};
+
+
+// Size 0x38
+struct CurveEdEntry
+{
+public:
+	class Object*                                                CurveObject;                                       // 0x0(0x8)
+	struct                                                       CurveColor;                                        // 0x8(0x4)
+	struct FString                                               CurveName;                                         // 0x10(0x10)
+	int                                                          bHideCurve;                                        // 0x20(0x4)
+	int                                                          bColorCurve;                                       // 0x24(0x4)
+	int                                                          bFloatingPointColorCurve;                          // 0x28(0x4)
+	int                                                          bClamp;                                            // 0x2c(0x4)
+	float                                                        ClampLow;                                          // 0x30(0x4)
+	float                                                        ClampHigh;                                         // 0x34(0x4)
+};
+
+
+// Size 0x18
+struct AnimSlotInfo
+{
+public:
+	struct FName                                                 SlotName;                                          // 0x0(0x8)
+	TArray<float>                                                ChannelWeights;                                    // 0x8(0x10)
+};
+
+
+// Size 0x50
+struct AnimNode_HIKResist
+{
+public:
+	float                                                        Alpha;                                             // 0x48(0x4)
+	char                                                         Effector;                                          // 0x4c(0x1)
+};
+
+
+// Size 0xc0
+struct RainPostProcessSettings
+{
+public:
+	bool                                                         bOverride_RainParticleTexture;                     // 0x0(0x1)
+	bool                                                         bOverride_RainMeshTexture;                         // 0x0(0x1)
+	bool                                                         bOverride_RainIntensity;                           // 0x0(0x1)
+	bool                                                         bOverride_RainParticleAlpha;                       // 0x0(0x1)
+	bool                                                         bOverride_RainCloseParticleAlphaReductionMultiplier; // 0x0(0x1)
+	bool                                                         bOverride_RainCloseParticleAlphaDistance;          // 0x0(0x1)
+	bool                                                         bOverride_RainParticleDensity;                     // 0x0(0x1)
+	bool                                                         bOverride_RainParticleSpeed;                       // 0x0(0x1)
+	bool                                                         bOverride_RainParticleWindVelocity;                // 0x1(0x1)
+	bool                                                         bOverride_RainParticleWidth;                       // 0x1(0x1)
+	bool                                                         bOverride_RainParticleLength;                      // 0x1(0x1)
+	bool                                                         bOverride_RainMeshScale;                           // 0x1(0x1)
+	bool                                                         bOverride_RainMeshTextureScroll;                   // 0x1(0x1)
+	bool                                                         bOverride_RainMeshTextureTiling;                   // 0x1(0x1)
+	bool                                                         bOverride_RainMeshAlpha;                           // 0x1(0x1)
+	bool                                                         bOverride_RainMeshRowDivision;                     // 0x1(0x1)
+	bool                                                         bOverride_RainMeshColumnDivision;                  // 0x2(0x1)
+	bool                                                         bOverride_RainMeshBrightness;                      // 0x2(0x1)
+	bool                                                         bOverride_RainBrightness;                          // 0x2(0x1)
+	bool                                                         bOverride_RainTint;                                // 0x2(0x1)
+	bool                                                         bOverride_RainMeshEndRadiusScale;                  // 0x2(0x1)
+	bool                                                         bOverride_RainMeshEndAlphaFade;                    // 0x2(0x1)
+	bool                                                         bOverride_RainMeshFadeDistance;                    // 0x2(0x1)
+	bool                                                         bOverride_RainAnimationFrameTime;                  // 0x2(0x1)
+	bool                                                         bOverride_RainSplashesPerSecond;                   // 0x3(0x1)
+	bool                                                         bOverride_RainSplashesPerSquareMetre;              // 0x3(0x1)
+	bool                                                         bOverride_RainSplashesMaxPlacementAngle;           // 0x3(0x1)
+	bool                                                         bOverride_RainSplashData;                          // 0x3(0x1)
+	bool                                                         bOverride_RainSplashesMaxDistance1;                // 0x3(0x1)
+	bool                                                         bOverride_RainSplashData2;                         // 0x3(0x1)
+	bool                                                         bOverride_RainSplashesMaxDistance2;                // 0x3(0x1)
+	class Texture*                                               RainParticleTexture;                               // 0x8(0x8)
+	class Texture*                                               RainMeshTexture;                                   // 0x10(0x8)
+	float                                                        RainIntensity;                                     // 0x18(0x4)
+	float                                                        RainParticleAlpha;                                 // 0x1c(0x4)
+	float                                                        RainCloseParticleAlphaReductionMultiplier;         // 0x20(0x4)
+	float                                                        RainCloseParticleAlphaDistance;                    // 0x24(0x4)
+	float                                                        RainParticleDensity;                               // 0x28(0x4)
+	float                                                        RainParticleSpeed;                                 // 0x2c(0x4)
+	struct                                                       RainParticleWindVelocity;                          // 0x30(0xc)
+	float                                                        RainParticleWidth;                                 // 0x3c(0x4)
+	float                                                        RainParticleLength;                                // 0x40(0x4)
+	struct                                                       RainMeshScale;                                     // 0x44(0xc)
+	struct                                                       RainMeshTextureScroll;                             // 0x50(0x8)
+	struct                                                       RainMeshTextureTiling;                             // 0x58(0x8)
+	float                                                        RainMeshAlpha;                                     // 0x60(0x4)
+	int                                                          RainMeshRowDivision;                               // 0x64(0x4)
+	int                                                          RainMeshColumnDivision;                            // 0x68(0x4)
+	float                                                        RainMeshEndRadiusScale;                            // 0x6c(0x4)
+	float                                                        RainMeshEndAlphaFade;                              // 0x70(0x4)
+	float                                                        RainMeshFadeDistance;                              // 0x74(0x4)
+	float                                                        RainMeshBrightness;                                // 0x78(0x4)
+	float                                                        RainBrightness;                                    // 0x7c(0x4)
+	struct                                                       RainTint;                                          // 0x80(0x10)
+	float                                                        RainAnimationFrameTime;                            // 0x90(0x4)
+	int                                                          RainSplashesPerSecond;                             // 0x94(0x4)
+	float                                                        RainSplashesPerSquareMetre;                        // 0x98(0x4)
+	float                                                        RainSplashesMaxPlacementAngle;                     // 0x9c(0x4)
+	class ParticleComputeShaderData*                             RainSplashData;                                    // 0xa0(0x8)
+	float                                                        RainSplashesMaxDistance1;                          // 0xa8(0x4)
+	class ParticleComputeShaderData*                             RainSplashData2;                                   // 0xb0(0x8)
+	float                                                        RainSplashesMaxDistance2;                          // 0xb8(0x4)
+};
+
+
+// Size 0x10
+struct WeightedBlendable
+{
+public:
+	float                                                        Weight;                                            // 0x0(0x4)
+	class Object*                                                Object;                                            // 0x8(0x8)
+};
+
+
+// Size 0x20
+struct StructRedirect
+{
+public:
+	struct FString                                               OldStructName;                                     // 0x0(0x10)
+	struct FString                                               NewStructName;                                     // 0x10(0x10)
+};
+
+
+// Size 0x1c
+struct DestructibleDamageParameters
+{
+public:
+	float                                                        DamageThreshold;                                   // 0x0(0x4)
+	float                                                        DamageSpread;                                      // 0x4(0x4)
+	bool                                                         bEnableImpactDamage;                               // 0x8(0x1)
+	float                                                        ImpactDamage;                                      // 0xc(0x4)
+	int                                                          DefaultImpactDamageDepth;                          // 0x10(0x4)
+	bool                                                         bCustomImpactResistance;                           // 0x14(0x1)
+	float                                                        ImpactResistance;                                  // 0x18(0x4)
+};
+
+
+// Size 0x18
+struct SoundClassAdjuster
+{
+public:
+	class SoundClass*                                            SoundClassObject;                                  // 0x0(0x8)
+	float                                                        VolumeAdjuster;                                    // 0x8(0x4)
+	float                                                        PitchAdjuster;                                     // 0xc(0x4)
+	bool                                                         bApplyToChildren;                                  // 0x10(0x1)
+	float                                                        VoiceCenterChannelVolumeAdjuster;                  // 0x14(0x4)
+};
+
+
+// Size 0x20
+struct LevelViewportInfo
+{
+public:
+	struct                                                       CamPosition;                                       // 0x0(0xc)
+	struct                                                       CamRotation;                                       // 0xc(0xc)
+	float                                                        CamOrthoZoom;                                      // 0x18(0x4)
+	bool                                                         CamUpdated;                                        // 0x1c(0x1)
 };
 
 
@@ -5806,9 +955,8 @@ public:
 	struct FString                                               Owner;                                             // 0x20(0x10)
 	struct FString                                               AttachedParent;                                    // 0x30(0x10)
 	struct FString                                               AttachedParentOwner;                               // 0x40(0x10)
-	struct Vector                                                Location;                                          // 0x50(0xc)
-	char                                                         pad0x4_K0OD1[0x4];                                 // 0x5c(0x4)
-	struct NetRelevancyActorClusterStat                          Cluster;                                           // 0x60(0x48)
+	struct                                                       Location;                                          // 0x50(0xc)
+	struct                                                       Cluster;                                           // 0x60(0x48)
 	char                                                         ChannelState;                                      // 0xa8(0x1)
 	bool                                                         HasBegunPlay;                                      // 0xa9(0x1)
 	bool                                                         IsNetRelevant;                                     // 0xaa(0x1)
@@ -5819,22 +967,634 @@ public:
 	char                                                         ChannelDormancy;                                   // 0xaf(0x1)
 	struct FString                                               PushModelDormancy;                                 // 0xb0(0x10)
 	float                                                        NetUpdateFrequency;                                // 0xc0(0x4)
-	char                                                         pad0x4_1HVRK[0x4];                                 // 0xc4(0x4)
 };
 
 
-// Size 0x88
-struct DestructibleParameters
+// Size 0x18
+struct PoseLinkBase
 {
 public:
-	struct DestructibleDamageParameters                          DamageParameters;                                  // 0x0(0x1c)
-	struct DestructibleDebrisParameters                          DebrisParameters;                                  // 0x1c(0x2c)
-	struct DestructibleAdvancedParameters                        AdvancedParameters;                                // 0x48(0x10)
-	struct DestructibleSpecialHierarchyDepths                    SpecialHierarchyDepths;                            // 0x58(0x14)
-	char                                                         pad0x4_N7QNC[0x4];                                 // 0x6c(0x4)
-	TArray<struct DestructibleDepthParameters>                   DepthParameters;                                   // 0x70(0x10)
-	struct DestructibleParametersFlag                            Flags;                                             // 0x80(0x4)
-	char                                                         pad0x4_Q7CW4[0x4];                                 // 0x84(0x4)
+	int                                                          LinkID;                                            // 0x0(0x4)
+};
+
+
+// Size 0x14
+struct DestructibleSpecialHierarchyDepths
+{
+public:
+	int                                                          SupportDepth;                                      // 0x0(0x4)
+	int                                                          MinimumFractureDepth;                              // 0x4(0x4)
+	bool                                                         bEnableDebris;                                     // 0x8(0x1)
+	int                                                          DebrisDepth;                                       // 0xc(0x4)
+	int                                                          EssentialDepth;                                    // 0x10(0x4)
+};
+
+
+// Size 0x28
+struct ExternalMip
+{
+public:
+	uint32                                                       SizeX;                                             // 0x0(0x4)
+	uint32                                                       SizeY;                                             // 0x4(0x4)
+	uint32                                                       OffsetInFile;                                      // 0x8(0x4)
+	uint32                                                       DataSizeOnDisk;                                    // 0xc(0x4)
+	uint32                                                       DataSize;                                          // 0x10(0x4)
+	uint32                                                       DecompressionFlags;                                // 0x14(0x4)
+};
+
+
+// Size 0x130
+struct FogVolumeInfo
+{
+public:
+	class FogVolumeComponent*                                    Component;                                         // 0x0(0x8)
+	class Texture*                                               VolumeTexture;                                     // 0x100(0x8)
+	class Texture*                                               MeshFogVolumeTexture;                              // 0x108(0x8)
+};
+
+
+// Size 0x18
+struct EngineShowFlagsSetting
+{
+public:
+	struct FString                                               ShowFlagName;                                      // 0x0(0x10)
+	bool                                                         Enabled;                                           // 0x10(0x1)
+};
+
+
+// Size 0x4
+struct BlueprintInputDelegateBinding
+{
+public:
+	bool                                                         bConsumeInput;                                     // 0x0(0x1)
+	bool                                                         bExecuteWhenPaused;                                // 0x0(0x1)
+	bool                                                         bOverrideParentBinding;                            // 0x0(0x1)
+};
+
+
+// Size 0xc
+struct FOscillator
+{
+public:
+	float                                                        Amplitude;                                         // 0x0(0x4)
+	float                                                        Frequency;                                         // 0x4(0x4)
+	char                                                         InitialOffset;                                     // 0x8(0x1)
+};
+
+
+// Size 0x10
+struct RigTransformConstraint
+{
+public:
+	char                                                         TranformType;                                      // 0x0(0x1)
+	struct FName                                                 ParentSpace;                                       // 0x4(0x8)
+	float                                                        Weight;                                            // 0xc(0x4)
+};
+
+
+// Size 0x28
+struct ParticleEvent_GenerateInfo
+{
+public:
+	char                                                         Type;                                              // 0x0(0x1)
+	int                                                          Frequency;                                         // 0x4(0x4)
+	int                                                          ParticleFrequency;                                 // 0x8(0x4)
+	bool                                                         FirstTimeOnly;                                     // 0xc(0x1)
+	bool                                                         LastTimeOnly;                                      // 0xc(0x1)
+	bool                                                         UseReflectedImpactVector;                          // 0xc(0x1)
+	bool                                                         bUseOrbitOffset;                                   // 0xc(0x1)
+	struct FName                                                 CustomName;                                        // 0x10(0x8)
+	TArray<class ParticleModuleEventSendToGame*>                 ParticleModuleEventsToSendToGame;                  // 0x18(0x10)
+};
+
+
+// Size 0x8
+struct FastArraySerializerItem
+{
+public:
+	int                                                          ReplicationID;                                     // 0x0(0x4)
+	int                                                          ReplicationKey;                                    // 0x4(0x4)
+};
+
+
+// Size 0x48
+struct RepAttachment
+{
+public:
+	class Actor*                                                 AttachParent;                                      // 0x0(0x8)
+	struct                                                       LocationOffset;                                    // 0x8(0xc)
+	struct                                                       RelativeScale3D;                                   // 0x14(0xc)
+	struct                                                       RotationOffset;                                    // 0x20(0xc)
+	struct FName                                                 AttachSocket;                                      // 0x2c(0x8)
+	class SceneComponent*                                        AttachComponent;                                   // 0x38(0x8)
+};
+
+
+// Size 0x28
+struct AudioEQEffect
+{
+public:
+	float                                                        HFFrequency;                                       // 0x8(0x4)
+	float                                                        HFGain;                                            // 0xc(0x4)
+	float                                                        MFCutoffFrequency;                                 // 0x10(0x4)
+	float                                                        MFBandwidth;                                       // 0x14(0x4)
+	float                                                        MFGain;                                            // 0x18(0x4)
+	float                                                        LFFrequency;                                       // 0x1c(0x4)
+	float                                                        LFGain;                                            // 0x20(0x4)
+};
+
+
+// Size 0x38
+struct MaterialInput
+{
+public:
+	class MaterialExpression*                                    Expression;                                        // 0x0(0x8)
+	int                                                          OutputIndex;                                       // 0x8(0x4)
+	struct FString                                               InputName;                                         // 0x10(0x10)
+	int                                                          Mask;                                              // 0x20(0x4)
+	int                                                          MaskR;                                             // 0x24(0x4)
+	int                                                          MaskG;                                             // 0x28(0x4)
+	int                                                          MaskB;                                             // 0x2c(0x4)
+	int                                                          MaskA;                                             // 0x30(0x4)
+	int                                                          GCC64_Padding;                                     // 0x34(0x4)
+};
+
+
+// Size 0x20
+struct ParticleRandomSeedInfo
+{
+public:
+	struct FName                                                 ParameterName;                                     // 0x0(0x8)
+	bool                                                         bGetSeedFromInstance;                              // 0x8(0x1)
+	bool                                                         bInstanceSeedIsIndex;                              // 0x8(0x1)
+	bool                                                         bResetSeedOnEmitterLooping;                        // 0x8(0x1)
+	bool                                                         bRandomlySelectSeedArray;                          // 0x8(0x1)
+	TArray<int>                                                  RandomSeeds;                                       // 0x10(0x10)
+};
+
+
+// Size 0x160
+struct ConstraintInstance
+{
+public:
+	class SceneComponent*                                        OwnerComponent;                                    // 0x8(0x8)
+	struct FName                                                 JointName;                                         // 0x1c(0x8)
+	struct FName                                                 ConstraintBone1;                                   // 0x24(0x8)
+	struct FName                                                 ConstraintBone2;                                   // 0x2c(0x8)
+	struct                                                       Pos1;                                              // 0x34(0xc)
+	struct                                                       PriAxis1;                                          // 0x40(0xc)
+	struct                                                       SecAxis1;                                          // 0x4c(0xc)
+	struct                                                       Pos2;                                              // 0x58(0xc)
+	struct                                                       PriAxis2;                                          // 0x64(0xc)
+	struct                                                       SecAxis2;                                          // 0x70(0xc)
+	bool                                                         bDisableCollision;                                 // 0x7c(0x1)
+	bool                                                         bEnableProjection;                                 // 0x7c(0x1)
+	float                                                        ProjectionLinearTolerance;                         // 0x80(0x4)
+	float                                                        ProjectionAngularTolerance;                        // 0x84(0x4)
+	char                                                         LinearXMotion;                                     // 0x88(0x1)
+	char                                                         LinearYMotion;                                     // 0x89(0x1)
+	char                                                         LinearZMotion;                                     // 0x8a(0x1)
+	float                                                        LinearLimitSize;                                   // 0x8c(0x4)
+	bool                                                         bLinearLimitSoft;                                  // 0x90(0x1)
+	float                                                        LinearLimitStiffness;                              // 0x94(0x4)
+	float                                                        LinearLimitDamping;                                // 0x98(0x4)
+	bool                                                         bLinearBreakable;                                  // 0x9c(0x1)
+	float                                                        LinearBreakThreshold;                              // 0xa0(0x4)
+	char                                                         AngularSwing1Motion;                               // 0xa4(0x1)
+	char                                                         AngularTwistMotion;                                // 0xa5(0x1)
+	char                                                         AngularSwing2Motion;                               // 0xa6(0x1)
+	bool                                                         bSwingLimitSoft;                                   // 0xa8(0x1)
+	bool                                                         bTwistLimitSoft;                                   // 0xa8(0x1)
+	float                                                        Swing1LimitAngle;                                  // 0xac(0x4)
+	float                                                        TwistLimitAngle;                                   // 0xb0(0x4)
+	float                                                        Swing2LimitAngle;                                  // 0xb4(0x4)
+	float                                                        SwingLimitStiffness;                               // 0xb8(0x4)
+	float                                                        SwingLimitDamping;                                 // 0xbc(0x4)
+	float                                                        TwistLimitStiffness;                               // 0xc0(0x4)
+	float                                                        TwistLimitDamping;                                 // 0xc4(0x4)
+	struct                                                       AngularRotationOffset;                             // 0xc8(0xc)
+	bool                                                         bAngularBreakable;                                 // 0xd4(0x1)
+	float                                                        AngularBreakThreshold;                             // 0xd8(0x4)
+	bool                                                         bLinearXPositionDrive;                             // 0xdc(0x1)
+	bool                                                         bLinearXVelocityDrive;                             // 0xdc(0x1)
+	bool                                                         bLinearYPositionDrive;                             // 0xdc(0x1)
+	bool                                                         bLinearYVelocityDrive;                             // 0xdc(0x1)
+	bool                                                         bLinearZPositionDrive;                             // 0xdc(0x1)
+	bool                                                         bLinearZVelocityDrive;                             // 0xdc(0x1)
+	bool                                                         bLinearPositionDrive;                              // 0xdc(0x1)
+	bool                                                         bLinearVelocityDrive;                              // 0xdc(0x1)
+	struct                                                       LinearPositionTarget;                              // 0xe0(0xc)
+	struct                                                       LinearVelocityTarget;                              // 0xec(0xc)
+	float                                                        LinearDriveSpring;                                 // 0xf8(0x4)
+	float                                                        LinearDriveDamping;                                // 0xfc(0x4)
+	float                                                        LinearDriveForceLimit;                             // 0x100(0x4)
+	bool                                                         bSwingPositionDrive;                               // 0x104(0x1)
+	bool                                                         bSwingVelocityDrive;                               // 0x104(0x1)
+	bool                                                         bTwistPositionDrive;                               // 0x104(0x1)
+	bool                                                         bTwistVelocityDrive;                               // 0x104(0x1)
+	bool                                                         bAngularSlerpDrive;                                // 0x104(0x1)
+	bool                                                         bAngularOrientationDrive;                          // 0x104(0x1)
+	bool                                                         bEnableSwingDrive;                                 // 0x104(0x1)
+	bool                                                         bEnableTwistDrive;                                 // 0x104(0x1)
+	bool                                                         bAngularVelocityDrive;                             // 0x105(0x1)
+	struct                                                       AngularPositionTarget;                             // 0x110(0x10)
+	char                                                         AngularDriveMode;                                  // 0x120(0x1)
+	struct                                                       AngularOrientationTarget;                          // 0x124(0xc)
+	struct                                                       AngularVelocityTarget;                             // 0x130(0xc)
+	float                                                        AngularDriveSpring;                                // 0x13c(0x4)
+	float                                                        AngularDriveDamping;                               // 0x140(0x4)
+	float                                                        AngularDriveForceLimit;                            // 0x144(0x4)
+};
+
+
+// Size 0x10
+struct AutomaticInstancingMeshComponentArray
+{
+public:
+	TArray<class InstancedStaticMeshComponent*>                  Array;                                             // 0x0(0x10)
+};
+
+
+// Size 0x50
+struct KBoxElem
+{
+public:
+	struct                                                       Center;                                            // 0x20(0xc)
+	struct                                                       Orientation;                                       // 0x30(0x10)
+	float                                                        X;                                                 // 0x40(0x4)
+	float                                                        Y;                                                 // 0x44(0x4)
+	float                                                        Z;                                                 // 0x48(0x4)
+};
+
+
+// Size 0xc
+struct TriangleSortSettings
+{
+public:
+	char                                                         TriangleSorting;                                   // 0x0(0x1)
+	char                                                         CustomLeftRightAxis;                               // 0x1(0x1)
+	struct FName                                                 CustomLeftRightBoneName;                           // 0x4(0x8)
+};
+
+
+// Size 0x8
+struct InputScaleBias
+{
+public:
+	float                                                        Scale;                                             // 0x0(0x4)
+	float                                                        Bias;                                              // 0x4(0x4)
+};
+
+
+// Size 0x14
+struct DirectorTrackCut
+{
+public:
+	float                                                        Time;                                              // 0x0(0x4)
+	float                                                        TransitionTime;                                    // 0x4(0x4)
+	struct FName                                                 TargetCamGroup;                                    // 0x8(0x8)
+	int                                                          ShotNumber;                                        // 0x10(0x4)
+};
+
+
+// Size 0x4
+struct SwarmDebugOptions
+{
+public:
+	bool                                                         bDistributionEnabled;                              // 0x0(0x1)
+	bool                                                         bForceContentExport;                               // 0x0(0x1)
+	bool                                                         bInitialized;                                      // 0x0(0x1)
+};
+
+
+// Size 0x28
+struct FloatDistribution
+{
+public:
+	struct                                                       Table;                                             // 0x0(0x28)
+};
+
+
+// Size 0x8
+struct ConstrainComponentPropName
+{
+public:
+	struct FName                                                 ComponentName;                                     // 0x0(0x8)
+};
+
+
+// Size 0x28
+struct TextSizingParameters
+{
+public:
+	float                                                        DrawX;                                             // 0x0(0x4)
+	float                                                        DrawY;                                             // 0x4(0x4)
+	float                                                        DrawXL;                                            // 0x8(0x4)
+	float                                                        DrawYL;                                            // 0xc(0x4)
+	struct                                                       Scaling;                                           // 0x10(0x8)
+	class Font*                                                  DrawFont;                                          // 0x18(0x8)
+	struct                                                       SpacingAdjust;                                     // 0x20(0x8)
+};
+
+
+// Size 0x10
+struct EventGraphFastCallPair
+{
+public:
+	class Function*                                              FunctionToPatch;                                   // 0x0(0x8)
+	int                                                          EventGraphCallOffset;                              // 0x8(0x4)
+};
+
+
+// Size 0x60
+struct RPCStatEntry
+{
+public:
+	double                                                       AccumulatedPayloadInKB;                            // 0x30(0x8)
+	double                                                       TimeIntervalInSec;                                 // 0x38(0x8)
+	struct                                                       WorstSpike;                                        // 0x40(0x18)
+	uint32                                                       RPCCount;                                          // 0x58(0x4)
+};
+
+
+// Size 0x38
+struct RawDistributionVector
+{
+public:
+	float                                                        MinValue;                                          // 0x28(0x4)
+	float                                                        MaxValue;                                          // 0x2c(0x4)
+	class DistributionVector*                                    Distribution;                                      // 0x30(0x8)
+};
+
+
+// Size 0x30
+struct AnimLinkableElement
+{
+public:
+	class AnimMontage*                                           LinkedMontage;                                     // 0x8(0x8)
+	int                                                          SlotIndex;                                         // 0x10(0x4)
+	int                                                          SegmentIndex;                                      // 0x14(0x4)
+	char                                                         LinkMethod;                                        // 0x18(0x1)
+	char                                                         CachedLinkMethod;                                  // 0x19(0x1)
+	float                                                        SegmentBeginTime;                                  // 0x1c(0x4)
+	float                                                        SegmentLength;                                     // 0x20(0x4)
+	float                                                        LinkValue;                                         // 0x24(0x4)
+	class AnimSequenceBase*                                      LinkedSequence;                                    // 0x28(0x8)
+};
+
+
+// Size 0x10
+struct DelegateArray
+{
+public:
+	TArray<uintptr_t>                                            Delegates;                                         // 0x0(0x10)
+};
+
+
+// Size 0x30
+struct MaterialEditorPromotionSettings
+{
+public:
+	struct                                                       DefaultMaterialAsset;                              // 0x0(0x10)
+	struct                                                       DefaultDiffuseTexture;                             // 0x10(0x10)
+	struct                                                       DefaultNormalTexture;                              // 0x20(0x10)
+};
+
+
+// Size 0x30
+struct ScreenMessageString
+{
+public:
+	uint64                                                       Key;                                               // 0x0(0x8)
+	struct FString                                               ScreenMessage;                                     // 0x8(0x10)
+	struct                                                       DisplayColor;                                      // 0x18(0x4)
+	float                                                        TimeToDisplay;                                     // 0x1c(0x4)
+	float                                                        CurrentTimeDisplayed;                              // 0x20(0x4)
+};
+
+
+// Size 0xe8
+struct NetRelevancyStat
+{
+public:
+	struct                                                       RequestID;                                         // 0x0(0x10)
+	struct FString                                               Reason;                                            // 0x10(0x10)
+	struct                                                       State;                                             // 0x20(0xc8)
+};
+
+
+// Size 0x20
+struct SimpleMemberReference
+{
+public:
+	class Object*                                                MemberParent;                                      // 0x0(0x8)
+	struct FName                                                 MemberName;                                        // 0x8(0x8)
+	struct                                                       MemberGuid;                                        // 0x10(0x10)
+};
+
+
+// Size 0x10
+struct PassiveSoundMixModifier
+{
+public:
+	class SoundMix*                                              SoundMix;                                          // 0x0(0x8)
+	float                                                        MinVolumeThreshold;                                // 0x8(0x4)
+	float                                                        MaxVolumeThreshold;                                // 0xc(0x4)
+};
+
+
+// Size 0x18
+struct BlueprintInputActionDelegateBinding
+{
+public:
+	struct FName                                                 InputActionName;                                   // 0x4(0x8)
+	char                                                         InputKeyEvent;                                     // 0xc(0x1)
+	struct FName                                                 FunctionNameToBind;                                // 0x10(0x8)
+};
+
+
+// Size 0x28
+struct ServerMigrationTelemetryActorData
+{
+public:
+	assetclass                                                   ActorClass;                                        // 0x0(0x20)
+	int                                                          Count;                                             // 0x20(0x4)
+};
+
+
+// Size 0x18
+struct ActiveForceFeedbackEffect
+{
+public:
+	class ForceFeedbackEffect*                                   ForceFeedbackEffect;                               // 0x0(0x8)
+};
+
+
+// Size 0x20
+struct BuilderPoly
+{
+public:
+	TArray<int>                                                  VertexIndices;                                     // 0x0(0x10)
+	int                                                          Direction;                                         // 0x10(0x4)
+	struct FName                                                 ItemName;                                          // 0x14(0x8)
+	int                                                          PolyFlags;                                         // 0x1c(0x4)
+};
+
+
+// Size 0x28
+struct VectorDistribution
+{
+public:
+	struct                                                       Table;                                             // 0x0(0x28)
+};
+
+
+// Size 0x18
+struct NavCollisionBox
+{
+public:
+	struct                                                       Offset;                                            // 0x0(0xc)
+	struct                                                       Extent;                                            // 0xc(0xc)
+};
+
+
+// Size 0x30
+struct NavAgentProperties
+{
+public:
+	struct FName                                                 Name;                                              // 0x4(0x8)
+	float                                                        AgentRadius;                                       // 0xc(0x4)
+	float                                                        AgentHeight;                                       // 0x10(0x4)
+	float                                                        AgentStepHeight;                                   // 0x14(0x4)
+	float                                                        NavWalkingSearchHeightScale;                       // 0x18(0x4)
+	float                                                        NavWalkingSearchRadiusScale;                       // 0x1c(0x4)
+	float                                                        NavWalkingSearchRadiusScaleOffMesh;                // 0x20(0x4)
+	float                                                        AgentMaxSlope;                                     // 0x24(0x4)
+	float                                                        MinRegionArea;                                     // 0x28(0x4)
+};
+
+
+// Size 0x70
+struct AnimNode_ApplyAdditive
+{
+public:
+	struct                                                       Base;                                              // 0x30(0x18)
+	struct                                                       Additive;                                          // 0x48(0x18)
+	float                                                        Alpha;                                             // 0x60(0x4)
+	struct                                                       AlphaScaleBias;                                    // 0x64(0x8)
+};
+
+
+// Size 0x80
+struct AnimNode_HIKReach
+{
+public:
+	float                                                        Alpha;                                             // 0x48(0x4)
+	float                                                        ReachT;                                            // 0x4c(0x4)
+	float                                                        ReachR;                                            // 0x50(0x4)
+	struct                                                       Translation;                                       // 0x54(0xc)
+	struct                                                       Orientation;                                       // 0x60(0x10)
+	char                                                         Effector;                                          // 0x70(0x1)
+	char                                                         EffectorSpace;                                     // 0x71(0x1)
+	struct FName                                                 ParentBone;                                        // 0x74(0x8)
+};
+
+
+// Size 0x1c
+struct InterpControlPoint
+{
+public:
+	struct                                                       PositionControlPoint;                              // 0x0(0xc)
+	bool                                                         bPositionIsRelative;                               // 0xc(0x1)
+};
+
+
+// Size 0x10
+struct SimplygonChannelCastingSettings
+{
+public:
+	char                                                         MaterialChannel;                                   // 0x0(0x1)
+	char                                                         Caster;                                            // 0x1(0x1)
+	bool                                                         bActive;                                           // 0x2(0x1)
+	char                                                         ColorChannels;                                     // 0x3(0x1)
+	int                                                          BitsPerChannel;                                    // 0x4(0x4)
+	bool                                                         bUseSRGB;                                          // 0x8(0x1)
+	bool                                                         bBakeVertexColors;                                 // 0x9(0x1)
+	bool                                                         bFlipBackfacingNormals;                            // 0xa(0x1)
+	bool                                                         bUseTangentSpaceNormals;                           // 0xb(0x1)
+	bool                                                         bFlipGreenChannel;                                 // 0xc(0x1)
+};
+
+
+// Size 0x30
+struct TimelineLinearColorTrack
+{
+public:
+	class CurveLinearColor*                                      LinearColorCurve;                                  // 0x0(0x8)
+	delegate                                                     InterpFunc;                                        // 0x8(0x10)
+	struct FName                                                 LinearColorPropertyName;                           // 0x18(0x8)
+	class StructProperty*                                        LinearColorProperty;                               // 0x20(0x8)
+};
+
+
+// Size 0x24
+struct SoundClassProperties
+{
+public:
+	float                                                        Volume;                                            // 0x0(0x4)
+	float                                                        Pitch;                                             // 0x4(0x4)
+	float                                                        StereoBleed;                                       // 0x8(0x4)
+	float                                                        LFEBleed;                                          // 0xc(0x4)
+	float                                                        VoiceCenterChannelVolume;                          // 0x10(0x4)
+	float                                                        RadioFilterVolume;                                 // 0x14(0x4)
+	float                                                        RadioFilterVolumeThreshold;                        // 0x18(0x4)
+	bool                                                         bApplyEffects;                                     // 0x1c(0x1)
+	bool                                                         bAlwaysPlay;                                       // 0x1c(0x1)
+	bool                                                         bIsUISound;                                        // 0x1c(0x1)
+	bool                                                         bIsMusic;                                          // 0x1c(0x1)
+	bool                                                         bReverb;                                           // 0x1c(0x1)
+	bool                                                         bCenterChannelOnly;                                // 0x1c(0x1)
+	bool                                                         bApplyAmbientVolumes;                              // 0x1c(0x1)
+	char                                                         OutputTarget;                                      // 0x20(0x1)
+};
+
+
+// Size 0x28
+struct DropNoteInfo
+{
+public:
+	struct                                                       Location;                                          // 0x0(0xc)
+	struct                                                       Rotation;                                          // 0xc(0xc)
+	struct FString                                               Comment;                                           // 0x18(0x10)
+};
+
+
+// Size 0x28
+struct DialogueContextMapping
+{
+public:
+	struct                                                       Context;                                           // 0x0(0x18)
+	class SoundWave*                                             SoundWave;                                         // 0x18(0x8)
+	class DialogueSoundWaveProxy*                                Proxy;                                             // 0x20(0x8)
+};
+
+
+// Size 0x18
+struct TTVectorTrack
+{
+public:
+	class CurveVector*                                           CurveVector;                                       // 0x10(0x8)
+};
+
+
+// Size 0x58
+struct NavDataConfig
+{
+public:
+	struct                                                       Color;                                             // 0x30(0x4)
+	struct                                                       DefaultQueryExtent;                                // 0x34(0xc)
+	class UClass*                                                NavigationDataClass;                               // 0x40(0x8)
+	struct                                                       NavigationDataClassName;                           // 0x48(0x10)
 };
 
 
@@ -5842,14 +1602,12 @@ public:
 struct AnimNode_HIKRelativePlantAndFloorContact
 {
 public:
-	char                                                         pad0x48_9E15L[0x48];                               // 0x0(0x48)
 	bool                                                         FeetContact;                                       // 0x48(0x1)
 	bool                                                         HandsContact;                                      // 0x49(0x1)
 	bool                                                         FingersContact;                                    // 0x4a(0x1)
 	bool                                                         ToesContact;                                       // 0x4b(0x1)
 	char                                                         FeetContactType;                                   // 0x4c(0x1)
 	char                                                         HandsContactType;                                  // 0x4d(0x1)
-	char                                                         pad0x2_Y8JEO[0x2];                                 // 0x4e(0x2)
 	float                                                        Alpha;                                             // 0x50(0x4)
 	float                                                        Depth;                                             // 0x54(0x4)
 	float                                                        HipsRotationFactor;                                // 0x58(0x4)
@@ -5860,7 +1618,7 @@ public:
 	float                                                        FootRadius;                                        // 0x6c(0x4)
 	float                                                        DeltaTime;                                         // 0x70(0x4)
 	float                                                        Smoothing;                                         // 0x74(0x4)
-	struct CollisionResponseContainer                            OverrideRaycastCollisionResponse;                  // 0x78(0x20)
+	struct                                                       OverrideRaycastCollisionResponse;                  // 0x78(0x20)
 	float                                                        FeetHeight;                                        // 0x98(0x4)
 	float                                                        FeetBack;                                          // 0x9c(0x4)
 	float                                                        FeetMiddle;                                        // 0xa0(0x4)
@@ -5873,393 +1631,168 @@ public:
 	float                                                        HandsFront;                                        // 0xbc(0x4)
 	float                                                        HandsInSide;                                       // 0xc0(0x4)
 	float                                                        HandsOutSide;                                      // 0xc4(0x4)
-	char                                                         pad0x8_3JVSE[0x8];                                 // 0xc8(0x8)
 };
 
 
 // Size 0x10
-struct AnimTrack
+struct SkelMeshComponentLODInfo
 {
 public:
-	TArray<struct AnimSegment>                                   AnimSegments;                                      // 0x0(0x10)
+	TArray<bool>                                                 HiddenMaterials;                                   // 0x0(0x10)
 };
 
 
-// Size 0x78
-struct RichCurve
+// Size 0x38
+struct BasedMovementInfo
 {
 public:
-	char                                                         pad0x58_CUOSG[0x58];                               // 0x0(0x58)
-	char                                                         PreInfinityExtrap;                                 // 0x58(0x1)
-	char                                                         PostInfinityExtrap;                                // 0x59(0x1)
-	char                                                         pad0x6_GPTVZ[0x6];                                 // 0x5a(0x6)
-	TArray<struct RichCurveKey>                                  Keys;                                              // 0x60(0x10)
-	float                                                        DefaultValue;                                      // 0x70(0x4)
-	char                                                         pad0x4_FRKRW[0x4];                                 // 0x74(0x4)
+	class PrimitiveComponent*                                    MovementBase;                                      // 0x0(0x8)
+	struct FName                                                 BoneName;                                          // 0x8(0x8)
+	struct                                                       Location;                                          // 0x10(0xc)
+	struct                                                       Rotation;                                          // 0x1c(0xc)
+	bool                                                         bServerHasBaseComponent;                           // 0x28(0x1)
+	bool                                                         bRelativeRotation;                                 // 0x29(0x1)
+	struct                                                       LinearVelocity;                                    // 0x2c(0xc)
 };
 
 
-// Size 0x48
-struct CustomInput
+// Size 0x8
+struct StatColorMapEntry
 {
 public:
-	struct FString                                               InputName;                                         // 0x0(0x10)
-	struct ExpressionInput                                       Input;                                             // 0x10(0x38)
+	float                                                        In;                                                // 0x0(0x4)
+	struct                                                       Out;                                               // 0x4(0x4)
 };
 
 
-// Size 0x48
-struct KAggregateGeom
+// Size 0x10
+struct DataTableRowHandle
 {
 public:
-	TArray<struct KSphereElem>                                   SphereElems;                                       // 0x0(0x10)
-	TArray<struct KBoxElem>                                      BoxElems;                                          // 0x10(0x10)
-	TArray<struct KSphylElem>                                    SphylElems;                                        // 0x20(0x10)
-	TArray<struct KConvexElem>                                   ConvexElems;                                       // 0x30(0x10)
-	char                                                         pad0x8_1NMJB[0x8];                                 // 0x40(0x8)
+	class DataTable*                                             DataTable;                                         // 0x0(0x8)
+	struct FName                                                 RowName;                                           // 0x8(0x8)
 };
 
 
 // Size 0x20
-struct EditorImportWorkflowDefinition
+struct GraphReference
 {
 public:
-	struct FilePath                                              ImportFilePath;                                    // 0x0(0x10)
-	TArray<struct ImportFactorySettingValues>                    FactorySettings;                                   // 0x10(0x10)
-};
-
-
-// Size 0x80
-struct HitResult
-{
-public:
-	bool                                                         bBlockingHit;                                      // 0x0(0x1)
-	bool                                                         bStartPenetrating;                                 // 0x0(0x1)
-	char                                                         pad0x3_P7D2A[0x3];                                 // 0x1(0x3)
-	float                                                        Time;                                              // 0x4(0x4)
-	float                                                        Distance;                                          // 0x8(0x4)
-	struct Vector_NetQuantize                                    Location;                                          // 0xc(0xc)
-	struct Vector_NetQuantize                                    ImpactPoint;                                       // 0x18(0xc)
-	struct Vector_NetQuantizeNormal                              Normal;                                            // 0x24(0xc)
-	struct Vector_NetQuantizeNormal                              ImpactNormal;                                      // 0x30(0xc)
-	struct Vector_NetQuantize                                    TraceStart;                                        // 0x3c(0xc)
-	struct Vector_NetQuantize                                    TraceEnd;                                          // 0x48(0xc)
-	float                                                        PenetrationDepth;                                  // 0x54(0x4)
-	int                                                          Item;                                              // 0x58(0x4)
-	struct FName                                                 BoneName;                                          // 0x74(0x8)
-	int                                                          FaceIndex;                                         // 0x7c(0x4)
-};
-
-
-// Size 0x28
-struct LocalizedSubtitle
-{
-public:
-	struct FString                                               LanguageExt;                                       // 0x0(0x10)
-	TArray<struct SubtitleCue>                                   Subtitles;                                         // 0x10(0x10)
-	bool                                                         bMature;                                           // 0x20(0x1)
-	bool                                                         bManualWordWrap;                                   // 0x20(0x1)
-	bool                                                         bSingleLine;                                       // 0x20(0x1)
-	char                                                         pad0x7_T9Q9S[0x7];                                 // 0x21(0x7)
-};
-
-
-// Size 0x50
-struct ParticleSysParam
-{
-public:
-	struct FName                                                 Name;                                              // 0x0(0x8)
-	char                                                         ParamType;                                         // 0x8(0x1)
-	char                                                         pad0x3_7LW3S[0x3];                                 // 0x9(0x3)
-	float                                                        Scalar;                                            // 0xc(0x4)
-	float                                                        Scalar_Low;                                        // 0x10(0x4)
-	struct Vector                                                Vector;                                            // 0x14(0xc)
-	struct Vector                                                Vector_Low;                                        // 0x20(0xc)
-	struct Color                                                 Color;                                             // 0x2c(0x4)
-	class Actor*                                                 Actor;                                             // 0x30(0x8)
-	class MaterialInterface*                                     Material;                                          // 0x38(0x8)
-	TArray<struct EmitterPointData>                              EmitterPoints;                                     // 0x40(0x10)
-};
-
-
-// Size 0x40
-struct RigidBodyState
-{
-public:
-	struct Vector_NetQuantize100                                 Position;                                          // 0x0(0xc)
-	char                                                         pad0x4_OYQQG[0x4];                                 // 0xc(0x4)
-	struct Quat                                                  Quaternion;                                        // 0x10(0x10)
-	struct Vector_NetQuantize100                                 LinVel;                                            // 0x20(0xc)
-	struct Vector_NetQuantize100                                 AngVel;                                            // 0x2c(0xc)
-	char                                                         Flags;                                             // 0x38(0x1)
-	char                                                         pad0x7_TO0GN[0x7];                                 // 0x39(0x7)
-};
-
-
-// Size 0x38
-struct PlatformInterfaceDelegateResult
-{
-public:
-	bool                                                         bSuccessful;                                       // 0x0(0x1)
-	char                                                         pad0x7_NT15Q[0x7];                                 // 0x1(0x7)
-	struct PlatformInterfaceData                                 Data;                                              // 0x8(0x30)
-};
-
-
-// Size 0x24
-struct VOscillator
-{
-public:
-	struct FOscillator                                           X;                                                 // 0x0(0xc)
-	struct FOscillator                                           Y;                                                 // 0xc(0xc)
-	struct FOscillator                                           Z;                                                 // 0x18(0xc)
-};
-
-
-// Size 0x68
-struct NameCurve
-{
-public:
-	char                                                         pad0x58_UH5F7[0x58];                               // 0x0(0x58)
-	TArray<struct NameCurveKey>                                  Keys;                                              // 0x58(0x10)
-};
-
-
-// Size 0x28
-struct SimplygonMaterialLODSettings
-{
-public:
-	bool                                                         bActive;                                           // 0x0(0x1)
-	char                                                         MaterialLODType;                                   // 0x1(0x1)
-	bool                                                         bUseAutomaticSizes;                                // 0x2(0x1)
-	char                                                         TextureWidth;                                      // 0x3(0x1)
-	char                                                         TextureHeight;                                     // 0x4(0x1)
-	char                                                         SamplingQuality;                                   // 0x5(0x1)
-	char                                                         pad0x2_RSEAI[0x2];                                 // 0x6(0x2)
-	int                                                          GutterSpace;                                       // 0x8(0x4)
-	char                                                         TextureStrech;                                     // 0xc(0x1)
-	bool                                                         bReuseExistingCharts;                              // 0xd(0x1)
-	char                                                         pad0x2_Y8L6H[0x2];                                 // 0xe(0x2)
-	TArray<struct SimplygonChannelCastingSettings>               ChannelsToCast;                                    // 0x10(0x10)
-	bool                                                         bBakeVertexData;                                   // 0x20(0x1)
-	bool                                                         bBakeActorData;                                    // 0x21(0x1)
-	bool                                                         bAllowMultiMaterial;                               // 0x22(0x1)
-	bool                                                         bPreferTwoSideMaterials;                           // 0x23(0x1)
-	char                                                         pad0x4_MYVQK[0x4];                                 // 0x24(0x4)
-};
-
-
-// Size 0x28
-struct FontRenderInfo
-{
-public:
-	bool                                                         bClipText;                                         // 0x0(0x1)
-	bool                                                         bEnableShadow;                                     // 0x0(0x1)
-	char                                                         pad0x3_NA8NF[0x3];                                 // 0x1(0x3)
-	struct DepthFieldGlowInfo                                    GlowInfo;                                          // 0x4(0x24)
-};
-
-
-// Size 0x28
-struct ComponentOverrideRecord
-{
-public:
-	class ActorComponent*                                        ComponentTemplate;                                 // 0x0(0x8)
-	struct ComponentKey                                          ComponentKey;                                      // 0x8(0x20)
+	class EdGraph*                                               MacroGraph;                                        // 0x0(0x8)
+	class Blueprint*                                             GraphBlueprint;                                    // 0x8(0x8)
+	struct                                                       GraphGuid;                                         // 0x10(0x10)
 };
 
 
 // Size 0x10
-struct PerBoneBlendWeights
+struct CameraCutInfo
 {
 public:
-	TArray<struct PerBoneBlendWeight>                            BoneBlendWeights;                                  // 0x0(0x10)
-};
-
-
-// Size 0x298
-struct WorldContext
-{
-public:
-	char                                                         pad0xe0_IDITO[0xe0];                               // 0x0(0xe0)
-	struct URL                                                   LastURL;                                           // 0xe0(0x70)
-	struct URL                                                   LastRemoteURL;                                     // 0x150(0x70)
-	class PendingNetGame*                                        PendingNetGame;                                    // 0x1c0(0x8)
-	TArray<struct FullyLoadedPackagesInfo>                       PackagesToFullyLoad;                               // 0x1c8(0x10)
-	char                                                         pad0x10_LTV7G[0x10];                               // 0x1d8(0x10)
-	TArray<class Level*>                                         LoadedLevelsForPendingMapChange;                   // 0x1e8(0x10)
-	char                                                         pad0x18_X8FXW[0x18];                               // 0x1f8(0x18)
-	TArray<class ObjectReferencer*>                              ObjectReferencers;                                 // 0x210(0x10)
-	TArray<struct LevelStreamingStatus>                          PendingLevelStreamingStatusUpdates;                // 0x220(0x10)
-	class GameViewportClient*                                    GameViewport;                                      // 0x230(0x8)
-	class GameInstance*                                          OwningGameInstance;                                // 0x238(0x8)
-	TArray<struct NamedNetDriver>                                ActiveNetDrivers;                                  // 0x240(0x10)
-	char                                                         pad0x48_RXS6E[0x48];                               // 0x250(0x48)
-};
-
-
-// Size 0x28
-struct RawDistribution
-{
-public:
-	struct DistributionLookupTable                               Table;                                             // 0x0(0x28)
-};
-
-
-// Size 0xa8
-struct AnimNode_BlendListBase
-{
-public:
-	char                                                         pad0x30_EESMZ[0x30];                               // 0x0(0x30)
-	TArray<struct PoseLink>                                      BlendPose;                                         // 0x30(0x10)
-	TArray<float>                                                BlendTime;                                         // 0x40(0x10)
-	char                                                         BlendType;                                         // 0x50(0x1)
-	char                                                         pad0x7_221UM[0x7];                                 // 0x51(0x7)
-	class CurveFloat*                                            CustomBlendCurve;                                  // 0x58(0x8)
-	TArray<struct AlphaBlend>                                    Blends;                                            // 0x60(0x10)
-	TArray<float>                                                BlendWeights;                                      // 0x70(0x10)
-	TArray<float>                                                RemainingBlendTimes;                               // 0x80(0x10)
-	int                                                          LastActiveChildIndex;                              // 0x90(0x4)
-	char                                                         pad0x14_A6VKK[0x14];                               // 0x94(0x14)
-};
-
-
-// Size 0x78
-struct StringCurve
-{
-public:
-	char                                                         pad0x58_O5ISB[0x58];                               // 0x0(0x58)
-	struct FString                                               DefaultValue;                                      // 0x58(0x10)
-	TArray<struct StringCurveKey>                                Keys;                                              // 0x68(0x10)
-};
-
-
-// Size 0x90
-struct NetRelevancyConnectionStat
-{
-public:
-	int                                                          Id;                                                // 0x0(0x4)
-	char                                                         pad0x4_OPZP9[0x4];                                 // 0x4(0x4)
-	struct NetViewer                                             Viewer;                                            // 0x8(0x58)
-	TArray<struct IntPoint>                                      ViewerGridLocations;                               // 0x60(0x10)
-	TArray<String>                                               DormantActors;                                     // 0x70(0x10)
-	TArray<String>                                               ConsideredActors;                                  // 0x80(0x10)
-};
-
-
-// Size 0x48
-struct AnimNode_Root
-{
-public:
-	char                                                         pad0x30_XBKF2[0x30];                               // 0x0(0x30)
-	struct PoseLink                                              Result;                                            // 0x30(0x18)
-};
-
-
-// Size 0x38
-struct TriMeshCollisionData
-{
-public:
-	TArray<struct Vector>                                        Vertices;                                          // 0x0(0x10)
-	TArray<struct TriIndices>                                    Indices;                                           // 0x10(0x10)
-	bool                                                         bFlipNormals;                                      // 0x20(0x1)
-	char                                                         pad0x17_9G9GL[0x17];                               // 0x21(0x17)
+	struct                                                       Location;                                          // 0x0(0xc)
+	float                                                        TimeStamp;                                         // 0xc(0x4)
 };
 
 
 // Size 0x10
-struct WeightedBlendables
+struct NamedNetDriver
 {
 public:
-	TArray<struct WeightedBlendable>                             Array;                                             // 0x0(0x10)
+	class NetDriver*                                             NetDriver;                                         // 0x0(0x8)
+};
+
+
+// Size 0x30
+struct RawAnimSequenceTrack
+{
+public:
+	TArray<struct Vector>                                        PosKeys;                                           // 0x0(0x10)
+	TArray<struct Quat>                                          RotKeys;                                           // 0x10(0x10)
+	TArray<struct Vector>                                        ScaleKeys;                                         // 0x20(0x10)
 };
 
 
 // Size 0x70
-struct AnimNode_ApplyAdditive
+struct NetTimeStampCalculator
 {
 public:
-	char                                                         pad0x30_TIVS0[0x30];                               // 0x0(0x30)
-	struct PoseLink                                              Base;                                              // 0x30(0x18)
-	struct PoseLink                                              Additive;                                          // 0x48(0x18)
-	float                                                        Alpha;                                             // 0x60(0x4)
-	struct InputScaleBias                                        AlphaScaleBias;                                    // 0x64(0x8)
-	char                                                         pad0x4_UR0VB[0x4];                                 // 0x6c(0x4)
+	uint16                                                       TimesWrapped;                                      // 0x6a(0x2)
+	uint16                                                       PackedTimeStamp;                                   // 0x6c(0x2)
 };
 
 
-// Size 0x18
-struct RigConfiguration
+// Size 0x8
+struct BoolTrackKey
 {
 public:
-	class Rig*                                                   Rig;                                               // 0x0(0x8)
-	TArray<struct NameMapping>                                   BoneMappingTable;                                  // 0x8(0x10)
-};
-
-
-// Size 0x10
-struct TransformBaseConstraint
-{
-public:
-	TArray<struct RigTransformConstraint>                        TransformConstraints;                              // 0x0(0x10)
-};
-
-
-// Size 0x50
-struct EdGraphPinType
-{
-public:
-	struct FString                                               PinCategory;                                       // 0x0(0x10)
-	struct FString                                               PinSubCategory;                                    // 0x10(0x10)
-	struct SimpleMemberReference                                 PinSubCategoryMemberReference;                     // 0x28(0x20)
-	bool                                                         bIsArray;                                          // 0x48(0x1)
-	bool                                                         bIsReference;                                      // 0x49(0x1)
-	bool                                                         bIsConst;                                          // 0x4a(0x1)
-	bool                                                         bIsWeakPointer;                                    // 0x4b(0x1)
-	char                                                         pad0x4_FCL0Y[0x4];                                 // 0x4c(0x4)
+	float                                                        Time;                                              // 0x0(0x4)
+	bool                                                         Value;                                             // 0x4(0x1)
 };
 
 
 // Size 0x48
-struct AnimNode_HIKBase
+struct TickFunction
 {
 public:
-	char                                                         pad0x30_HPCP0[0x30];                               // 0x0(0x30)
-	struct ComponentSpacePoseLink                                HIKSettings;                                       // 0x30(0x18)
+	char                                                         TickGroup;                                         // 0x30(0x1)
+	bool                                                         bTickEvenWhenPaused;                               // 0x32(0x1)
+	bool                                                         bCanEverTick;                                      // 0x32(0x1)
+	bool                                                         bStartWithTickEnabled;                             // 0x32(0x1)
+	bool                                                         bAllowTickOnDedicatedServer;                       // 0x32(0x1)
+	float                                                        TickInterval;                                      // 0x40(0x4)
 };
 
 
-// Size 0x28
-struct StatColorMapping
+// Size 0x30
+struct PreviewAttachedObjectPair
 {
 public:
-	struct FString                                               StatName;                                          // 0x0(0x10)
-	TArray<struct StatColorMapEntry>                             ColorMap;                                          // 0x10(0x10)
-	bool                                                         DisableBlend;                                      // 0x20(0x1)
-	char                                                         pad0x7_AUOME[0x7];                                 // 0x21(0x7)
+	assetobject                                                  AttachedObject;                                    // 0x0(0x20)
+	class Object*                                                Object;                                            // 0x20(0x8)
+	struct FName                                                 AttachedTo;                                        // 0x28(0x8)
 };
 
 
-// Size 0x70
-struct AnimationNode_TwoWayBlend
+// Size 0x20
+struct RotationTrack
 {
 public:
-	char                                                         pad0x30_W25ZS[0x30];                               // 0x0(0x30)
-	struct PoseLink                                              A;                                                 // 0x30(0x18)
-	struct PoseLink                                              B;                                                 // 0x48(0x18)
-	float                                                        Alpha;                                             // 0x60(0x4)
-	struct InputScaleBias                                        AlphaScaleBias;                                    // 0x64(0x8)
-	char                                                         pad0x4_TG0I2[0x4];                                 // 0x6c(0x4)
+	TArray<struct Quat>                                          RotKeys;                                           // 0x0(0x10)
+	TArray<float>                                                Times;                                             // 0x10(0x10)
 };
 
 
-// Size 0x40
-struct FunctionExpressionOutput
+// Size 0xc
+struct DominanceGroupName
 {
 public:
-	class MaterialExpressionFunctionOutput*                      ExpressionOutput;                                  // 0x0(0x8)
-	struct Guid                                                  ExpressionOutputId;                                // 0x8(0x10)
-	struct ExpressionOutput                                      Output;                                            // 0x18(0x28)
+	char                                                         Type;                                              // 0x0(0x1)
+	struct FName                                                 Name;                                              // 0x4(0x8)
+};
+
+
+// Size 0x38
+struct KeyBind
+{
+public:
+	struct                                                       Key;                                               // 0x0(0x20)
+	struct FString                                               Command;                                           // 0x20(0x10)
+	bool                                                         Control;                                           // 0x30(0x1)
+	bool                                                         Shift;                                             // 0x30(0x1)
+	bool                                                         Alt;                                               // 0x30(0x1)
+	bool                                                         Cmd;                                               // 0x30(0x1)
+	bool                                                         bIgnoreCtrl;                                       // 0x30(0x1)
+	bool                                                         bIgnoreShift;                                      // 0x30(0x1)
+	bool                                                         bIgnoreAlt;                                        // 0x30(0x1)
+	bool                                                         bIgnoreCmd;                                        // 0x30(0x1)
+};
+
+
+// Size 0xc
+struct BranchFilter
+{
+public:
+	struct FName                                                 BoneName;                                          // 0x0(0x8)
+	int                                                          BlendDepth;                                        // 0x8(0x4)
 };
 
 
@@ -6267,445 +1800,97 @@ public:
 struct AnimNode_Slot
 {
 public:
-	char                                                         pad0x30_W3O9K[0x30];                               // 0x0(0x30)
-	struct PoseLink                                              Source;                                            // 0x30(0x18)
+	struct                                                       Source;                                            // 0x30(0x18)
 	struct FName                                                 SlotName;                                          // 0x48(0x8)
-	char                                                         pad0x8_19R5F[0x8];                                 // 0x50(0x8)
-	char                                                         pad0x8_B2GK4[0x8];                                 // 0x58(0x8)
+	int16                                                        LastSlotNodeInitializationCounter;                 // 0x58(0x2)
 };
 
 
 // Size 0x20
-struct BuildPromotionNewProjectSettings
+struct AudioComponentParam
 {
 public:
-	struct DirectoryPath                                         NewProjectFolderOverride;                          // 0x0(0x10)
-	struct FString                                               NewProjectNameOverride;                            // 0x10(0x10)
+	struct FName                                                 ParamName;                                         // 0x0(0x8)
+	float                                                        FloatParam;                                        // 0x8(0x4)
+	bool                                                         BoolParam;                                         // 0xc(0x1)
+	int                                                          IntParam;                                          // 0x10(0x4)
+	class SoundWave*                                             SoundWaveParam;                                    // 0x18(0x8)
 };
 
 
-// Size 0x10
-struct PreviewAssetAttachContainer
+// Size 0x18
+struct CompressedOffsetData
 {
 public:
-	TArray<struct PreviewAttachedObjectPair>                     AttachedObjects;                                   // 0x0(0x10)
+	TArray<int>                                                  OffsetData;                                        // 0x0(0x10)
+	int                                                          StripSize;                                         // 0x10(0x4)
+};
+
+
+// Size 0xc
+struct AnimSlotDesc
+{
+public:
+	struct FName                                                 SlotName;                                          // 0x0(0x8)
+	int                                                          NumChannels;                                       // 0x8(0x4)
+};
+
+
+// Size 0x20
+struct TextureParameterValue
+{
+public:
+	struct FName                                                 ParameterName;                                     // 0x0(0x8)
+	class Texture*                                               ParameterValue;                                    // 0x8(0x8)
+	struct                                                       ExpressionGUID;                                    // 0x10(0x10)
 };
 
 
 // Size 0x48
-struct AnimNode_ConvertLocalToComponentSpace
+struct AnimNode_UseCachedPose
 {
 public:
-	char                                                         pad0x30_RLPAF[0x30];                               // 0x0(0x30)
-	struct PoseLink                                              LocalPose;                                         // 0x30(0x18)
-};
-
-
-// Size 0x18
-struct CustomProfile
-{
-public:
-	struct FName                                                 Name;                                              // 0x0(0x8)
-	TArray<struct ResponseChannel>                               CustomResponses;                                   // 0x8(0x10)
-};
-
-
-// Size 0x18
-struct EditorMapPerformanceTestDefinition
-{
-public:
-	struct FilePath                                              PerformanceTestmap;                                // 0x0(0x10)
-	int                                                          TestTimer;                                         // 0x10(0x4)
-	char                                                         pad0x4_XKE1K[0x4];                                 // 0x14(0x4)
-};
-
-
-// Size 0x80
-struct VelocityConeGroupParams
-{
-public:
-	struct RawDistributionFloat                                  Angle;                                             // 0x0(0x38)
-	struct RawDistributionFloat                                  Velocity;                                          // 0x38(0x38)
-	struct Vector                                                Direction;                                         // 0x70(0xc)
-	char                                                         pad0x4_KNM72[0x4];                                 // 0x7c(0x4)
-};
-
-
-// Size 0x28
-struct AnimationState
-{
-public:
-	char                                                         pad0x8_U5B2C[0x8];                                 // 0x0(0x8)
-	TArray<struct AnimationTransitionRule>                       Transitions;                                       // 0x8(0x10)
-	int                                                          StateRootNodeIndex;                                // 0x18(0x4)
-	int                                                          StartNotify;                                       // 0x1c(0x4)
-	int                                                          EndNotify;                                         // 0x20(0x4)
-	int                                                          FullyBlendedNotify;                                // 0x24(0x4)
-};
-
-
-// Size 0x50
-struct EmitterDynamicParameter
-{
-public:
-	struct FName                                                 ParamName;                                         // 0x0(0x8)
-	bool                                                         bUseEmitterTime;                                   // 0x8(0x1)
-	bool                                                         bSpawnTimeOnly;                                    // 0x8(0x1)
-	char                                                         pad0x3_YX4FC[0x3];                                 // 0x9(0x3)
-	char                                                         ValueMethod;                                       // 0xc(0x1)
-	char                                                         pad0x3_NR5MN[0x3];                                 // 0xd(0x3)
-	bool                                                         bScaleVelocityByParamValue;                        // 0x10(0x1)
-	char                                                         pad0x7_FO0R6[0x7];                                 // 0x11(0x7)
-	struct RawDistributionFloat                                  ParamValue;                                        // 0x18(0x38)
-};
-
-
-// Size 0x30
-struct MaterialEditorPromotionSettings
-{
-public:
-	struct FilePath                                              DefaultMaterialAsset;                              // 0x0(0x10)
-	struct FilePath                                              DefaultDiffuseTexture;                             // 0x10(0x10)
-	struct FilePath                                              DefaultNormalTexture;                              // 0x20(0x10)
-};
-
-
-// Size 0x30
-struct CurveEdTab
-{
-public:
-	struct FString                                               TabName;                                           // 0x0(0x10)
-	TArray<struct CurveEdEntry>                                  Curves;                                            // 0x10(0x10)
-	float                                                        ViewStartInput;                                    // 0x20(0x4)
-	float                                                        ViewEndInput;                                      // 0x24(0x4)
-	float                                                        ViewStartOutput;                                   // 0x28(0x4)
-	float                                                        ViewEndOutput;                                     // 0x2c(0x4)
+	struct                                                       LinkToCachingNode;                                 // 0x30(0x18)
 };
 
 
 // Size 0x14
-struct NetSubObjectPtr
+struct ParticleBurst
 {
 public:
-	struct NetObjectPtr                                          SubObject;                                         // 0x0(0x14)
+	int                                                          Count;                                             // 0x0(0x4)
+	int                                                          CountLow;                                          // 0x4(0x4)
+	float                                                        Time;                                              // 0x8(0x4)
+	float                                                        SpawnMultiplier;                                   // 0xc(0x4)
+	char                                                         Group;                                             // 0x10(0x1)
 };
 
 
-// Size 0xb0
-struct AnimNotifyEvent
+// Size 0x40
+struct ColorMaterialInput
 {
 public:
-	char                                                         pad0x30_W14XV[0x30];                               // 0x0(0x30)
-	float                                                        DisplayTime;                                       // 0x30(0x4)
-	float                                                        TriggerTimeOffset;                                 // 0x34(0x4)
-	float                                                        EndTriggerTimeOffset;                              // 0x38(0x4)
-	float                                                        TriggerWeightThreshold;                            // 0x3c(0x4)
-	struct FName                                                 NotifyName;                                        // 0x40(0x8)
-	class AnimNotify*                                            Notify;                                            // 0x48(0x8)
-	class AnimNotifyState*                                       NotifyStateClass;                                  // 0x50(0x8)
-	class AnimNotifyCondition*                                   NotifyCondition;                                   // 0x58(0x8)
-	float                                                        Duration;                                          // 0x60(0x4)
-	char                                                         pad0x4_3JMPZ[0x4];                                 // 0x64(0x4)
-	struct AnimLinkableElement                                   EndLink;                                           // 0x68(0x30)
-	bool                                                         bConvertedFromBranchingPoint;                      // 0x98(0x1)
-	char                                                         MontageTickType;                                   // 0x99(0x1)
-	char                                                         pad0x2_5HLIK[0x2];                                 // 0x9a(0x2)
-	float                                                        NotifyTriggerChance;                               // 0x9c(0x4)
-	char                                                         NotifyFilterType;                                  // 0xa0(0x1)
-	char                                                         pad0x3_D3HVR[0x3];                                 // 0xa1(0x3)
-	int                                                          NotifyFilterLOD;                                   // 0xa4(0x4)
-	int                                                          TrackIndex;                                        // 0xa8(0x4)
-	char                                                         pad0x4_ISYNY[0x4];                                 // 0xac(0x4)
+	bool                                                         UseConstant;                                       // 0x38(0x1)
+	struct                                                       Constant;                                          // 0x3c(0x4)
 };
 
 
-// Size 0x90
-struct AnimNode_SaveCachedPose
+// Size 0x44
+struct MaterialSimplificationSettings
 {
 public:
-	char                                                         pad0x38_LIAXU[0x38];                               // 0x0(0x38)
-	struct PoseLink                                              Pose;                                              // 0x38(0x18)
-	char                                                         pad0x40_B9JUG[0x40];                               // 0x50(0x40)
-};
-
-
-// Size 0x20
-struct AnimSequenceTrackContainer
-{
-public:
-	TArray<struct RawAnimSequenceTrack>                          AnimationTracks;                                   // 0x0(0x10)
-	TArray<struct Name>                                          TrackNames;                                        // 0x10(0x10)
-};
-
-
-// Size 0x248
-struct FFTWaterComponentParticleParams
-{
-public:
-	int                                                          MaxParticlesPerFrame;                              // 0x0(0x4)
-	char                                                         pad0x4_JXVQD[0x4];                                 // 0x4(0x4)
-	struct FFTWaterComponentWaveParticleType                     WaveParticles;                                     // 0x8(0x38)
-	char                                                         pad0xa8_MXSV1[0xa8];                               // 0x40(0xa8)
-	struct FFTWaterComponentIntersectParticleType                IntersectionParticles;                             // 0xe8(0x58)
-	char                                                         pad0x108_0MICH[0x108];                             // 0x140(0x108)
-};
-
-
-// Size 0x30
-struct AnimNode_Base
-{
-public:
-	char                                                         pad0x8_EBWUQ[0x8];                                 // 0x0(0x8)
-	struct ExposedValueHandler                                   EvaluateGraphExposedInputs;                        // 0x8(0x28)
-};
-
-
-// Size 0x170
-struct RuntimeVectorCurve
-{
-public:
-	struct RichCurve                                             FloatCurves;                                       // 0x0(0x78)
-	char                                                         pad0xf0_Q0Z8Z[0xf0];                               // 0x78(0xf0)
-	class CurveVector*                                           ExternalCurve;                                     // 0x168(0x8)
-};
-
-
-// Size 0xa0
-struct PointDamageEvent
-{
-public:
-	char                                                         pad0x10_O2HTG[0x10];                               // 0x0(0x10)
-	float                                                        Damage;                                            // 0x10(0x4)
-	struct Vector_NetQuantizeNormal                              ShotDirection;                                     // 0x14(0xc)
-	struct HitResult                                             HitInfo;                                           // 0x20(0x80)
-};
-
-
-// Size 0x180
-struct BodyInstance
-{
-public:
-	char                                                         pad0x4_P05U8[0x4];                                 // 0x0(0x4)
-	struct Vector                                                Scale3D;                                           // 0x4(0xc)
-	char                                                         pad0x4_JBCLM[0x4];                                 // 0x10(0x4)
-	struct FName                                                 CollisionProfileName;                              // 0x14(0x8)
-	char                                                         pad0x4_KMH5R[0x4];                                 // 0x1c(0x4)
-	struct CollisionResponse                                     CollisionResponses;                                // 0x20(0x30)
-	bool                                                         bUseCCD;                                           // 0x50(0x1)
-	bool                                                         bNotifyRigidBodyCollision;                         // 0x50(0x1)
-	bool                                                         bSimulatePhysics;                                  // 0x50(0x1)
-	bool                                                         bOverrideMass;                                     // 0x50(0x1)
-	bool                                                         bOverrideMassProperties;                           // 0x50(0x1)
-	bool                                                         bEnableGravity;                                    // 0x50(0x1)
-	bool                                                         bAutoWeld;                                         // 0x50(0x1)
-	bool                                                         bStartAwake;                                       // 0x51(0x1)
-	bool                                                         bGenerateWakeEvents;                               // 0x51(0x1)
-	bool                                                         bUpdateMassWhenScaleChanges;                       // 0x51(0x1)
-	bool                                                         bLockTranslation;                                  // 0x51(0x1)
-	bool                                                         bLockRotation;                                     // 0x51(0x1)
-	bool                                                         bLockXTranslation;                                 // 0x51(0x1)
-	bool                                                         bLockYTranslation;                                 // 0x51(0x1)
-	bool                                                         bLockZTranslation;                                 // 0x51(0x1)
-	bool                                                         bLockXRotation;                                    // 0x52(0x1)
-	bool                                                         bLockYRotation;                                    // 0x52(0x1)
-	bool                                                         bLockZRotation;                                    // 0x52(0x1)
-	bool                                                         bOverrideMaxAngularVelocity;                       // 0x52(0x1)
-	bool                                                         bUseAsyncScene;                                    // 0x52(0x1)
-	bool                                                         bOverrideMaxDepenetrationVelocity;                 // 0x52(0x1)
-	bool                                                         bOverrideWalkableSlopeOnInstance;                  // 0x52(0x1)
-	char                                                         pad0x1_A77DT[0x1];                                 // 0x53(0x1)
-	float                                                        MaxDepenetrationVelocity;                          // 0x54(0x4)
-	float                                                        MassInKg;                                          // 0x58(0x4)
-	struct MassPropertiesOverride                                MassPropertiesOverride;                            // 0x5c(0x24)
-	float                                                        LinearDamping;                                     // 0x80(0x4)
-	float                                                        AngularDamping;                                    // 0x84(0x4)
-	struct Vector                                                COMNudge;                                          // 0x88(0xc)
-	float                                                        MassScale;                                         // 0x94(0x4)
-	char                                                         pad0x10_KGGII[0x10];                               // 0x98(0x10)
-	struct WalkableSlopeOverride                                 WalkableSlopeOverride;                             // 0xa8(0x8)
-	class PhysicalMaterial*                                      PhysMaterialOverride;                              // 0xb0(0x8)
-	float                                                        MaxAngularVelocity;                                // 0xb8(0x4)
-	float                                                        CustomSleepThresholdMultiplier;                    // 0xbc(0x4)
-	float                                                        PhysicsBlendWeight;                                // 0xc0(0x4)
-	int                                                          PositionSolverIterationCount;                      // 0xc4(0x4)
-	char                                                         DominanceGroup;                                    // 0xc8(0x1)
-	char                                                         pad0x37_QUG0W[0x37];                               // 0xc9(0x37)
-	int                                                          VelocitySolverIterationCount;                      // 0x110(0x4)
-	char                                                         pad0x68_DOO3L[0x68];                               // 0x114(0x68)
-	char                                                         SleepFamily;                                       // 0x17c(0x1)
-	char                                                         DOFMode;                                           // 0x17d(0x1)
-	char                                                         CollisionEnabled;                                  // 0x17e(0x1)
-	char                                                         ObjectType;                                        // 0x17f(0x1)
-};
-
-
-// Size 0x150
-struct BuildPromotionImportWorkflowSettings
-{
-public:
-	struct EditorImportWorkflowDefinition                        Diffuse;                                           // 0x0(0x20)
-	struct EditorImportWorkflowDefinition                        Normal;                                            // 0x20(0x20)
-	struct EditorImportWorkflowDefinition                        StaticMesh;                                        // 0x40(0x20)
-	struct EditorImportWorkflowDefinition                        ReimportStaticMesh;                                // 0x60(0x20)
-	struct EditorImportWorkflowDefinition                        BlendShapeMesh;                                    // 0x80(0x20)
-	struct EditorImportWorkflowDefinition                        MorphMesh;                                         // 0xa0(0x20)
-	struct EditorImportWorkflowDefinition                        SkeletalMesh;                                      // 0xc0(0x20)
-	struct EditorImportWorkflowDefinition                        Animation;                                         // 0xe0(0x20)
-	struct EditorImportWorkflowDefinition                        Sound;                                             // 0x100(0x20)
-	struct EditorImportWorkflowDefinition                        SurroundSound;                                     // 0x120(0x20)
-	TArray<struct EditorImportWorkflowDefinition>                OtherAssetsToImport;                               // 0x140(0x10)
-};
-
-
-// Size 0x90
-struct FloatCurve
-{
-public:
-	char                                                         pad0x18_6B8T5[0x18];                               // 0x0(0x18)
-	struct RichCurve                                             FloatCurve;                                        // 0x18(0x78)
-};
-
-
-// Size 0x310
-struct FFTWaterComponentParams
-{
-public:
-	struct LinearColor                                           AmbientColour;                                     // 0x0(0x10)
-	struct LinearColor                                           WaterColour;                                       // 0x10(0x10)
-	struct LinearColor                                           ShallowWaterColour;                                // 0x20(0x10)
-	struct LinearColor                                           BackLitColour;                                     // 0x30(0x10)
-	struct LinearColor                                           FoamColour;                                        // 0x40(0x10)
-	struct LinearColor                                           FoamHighlightColour;                               // 0x50(0x10)
-	float                                                        FresnelPower;                                      // 0x60(0x4)
-	float                                                        SpecularBrightness;                                // 0x64(0x4)
-	float                                                        FoamBrightness;                                    // 0x68(0x4)
-	float                                                        ReflectionBrightness;                              // 0x6c(0x4)
-	float                                                        FoamFadeStart;                                     // 0x70(0x4)
-	float                                                        FoamFadeEnd;                                       // 0x74(0x4)
-	bool                                                         DEBUG_Wireframe;                                   // 0x78(0x1)
-	char                                                         pad0x3_8EZTF[0x3];                                 // 0x79(0x3)
-	float                                                        Size;                                              // 0x7c(0x4)
-	float                                                        WindSpeed;                                         // 0x80(0x4)
-	float                                                        WindSpeedInEditor;                                 // 0x84(0x4)
-	float                                                        CarrierWaveAmplitude;                              // 0x88(0x4)
-	float                                                        CarrierWaveWaveLength;                             // 0x8c(0x4)
-	float                                                        CarrierWavePropagationSpeed;                       // 0x90(0x4)
-	float                                                        HorizonFadeDistance;                               // 0x94(0x4)
-	float                                                        HorizonDarkenStart;                                // 0x98(0x4)
-	float                                                        HorizonDarkenRange;                                // 0x9c(0x4)
-	float                                                        CloudShadowDarkenStart;                            // 0xa0(0x4)
-	float                                                        CloudShadowDarkenRange;                            // 0xa4(0x4)
-	float                                                        CausticsDepth;                                     // 0xa8(0x4)
-	char                                                         pad0x4_F7H6S[0x4];                                 // 0xac(0x4)
-	class Texture*                                               FoamColourTex;                                     // 0xb0(0x8)
-	struct FFTWaterComponentParticleParams                       ParticleParams;                                    // 0xb8(0x248)
-	float                                                        ExtendedPlaneSize;                                 // 0x300(0x4)
-	float                                                        ExtendedPlaneFadeDistance;                         // 0x304(0x4)
-	struct Vector2D                                              PositionOffset;                                    // 0x308(0x8)
-};
-
-
-// Size 0x70
-struct SkeletalMeshOptimizationSettings
-{
-public:
-	char                                                         ReductionMethod;                                   // 0x0(0x1)
-	char                                                         pad0x3_MI4LM[0x3];                                 // 0x1(0x3)
-	float                                                        NumOfTrianglesPercentage;                          // 0x4(0x4)
-	float                                                        MaxDeviationPercentage;                            // 0x8(0x4)
-	float                                                        WeldingThreshold;                                  // 0xc(0x4)
-	bool                                                         bRecalcNormals;                                    // 0x10(0x1)
-	char                                                         pad0x3_K0RXS[0x3];                                 // 0x11(0x3)
-	float                                                        NormalsThreshold;                                  // 0x14(0x4)
-	char                                                         SilhouetteImportance;                              // 0x18(0x1)
-	char                                                         TextureImportance;                                 // 0x19(0x1)
-	char                                                         ShadingImportance;                                 // 0x1a(0x1)
-	char                                                         SkinningImportance;                                // 0x1b(0x1)
-	float                                                        BoneReductionRatio;                                // 0x1c(0x4)
-	int                                                          MaxBonesPerVertex;                                 // 0x20(0x4)
-	char                                                         pad0x4_Z5L4W[0x4];                                 // 0x24(0x4)
-	TArray<struct BoneReference>                                 BonesToRemove;                                     // 0x28(0x10)
-	int                                                          BaseLODModel;                                      // 0x38(0x4)
-	int                                                          LODChainLastIndex;                                 // 0x3c(0x4)
-	bool                                                         bForceRebuild;                                     // 0x40(0x1)
-	char                                                         pad0x7_Q9EE5[0x7];                                 // 0x41(0x7)
-	struct SimplygonMaterialLODSettings                          MaterialLODSettings;                               // 0x48(0x28)
-};
-
-
-// Size 0x60
-struct RPCStatEntry
-{
-public:
-	char                                                         pad0x30_N1PY3[0x30];                               // 0x0(0x30)
-	double                                                       AccumulatedPayloadInKB;                            // 0x30(0x8)
-	double                                                       TimeIntervalInSec;                                 // 0x38(0x8)
-	struct SpikeStatEntry                                        WorstSpike;                                        // 0x40(0x18)
-	char                                                         pad0x8_ZFZRT[0x8];                                 // 0x58(0x8)
-};
-
-
-// Size 0xa0
-struct AnimMontageInstance
-{
-public:
-	class AnimMontage*                                           Montage;                                           // 0x0(0x8)
-	float                                                        DesiredWeight;                                     // 0x8(0x4)
-	float                                                        Weight;                                            // 0xc(0x4)
-	float                                                        BlendTime;                                         // 0x10(0x4)
-	float                                                        DefaultBlendTimeMultiplier;                        // 0x14(0x4)
-	TArray<int>                                                  NextSections;                                      // 0x18(0x10)
-	TArray<int>                                                  PrevSections;                                      // 0x28(0x10)
-	bool                                                         bPlaying;                                          // 0x38(0x1)
-	char                                                         pad0x2f_80FK7[0x2f];                               // 0x39(0x2f)
-	TArray<struct AnimNotifyEvent>                               ActiveStateBranchingPoints;                        // 0x68(0x10)
-	float                                                        Position;                                          // 0x78(0x4)
-	float                                                        PlayRate;                                          // 0x7c(0x4)
-	char                                                         pad0x20_E0H29[0x20];                               // 0x80(0x20)
-};
-
-
-// Size 0x180
-struct VectorCurve
-{
-public:
-	char                                                         pad0x18_814NO[0x18];                               // 0x0(0x18)
-	struct RichCurve                                             FloatCurves;                                       // 0x18(0x78)
-	char                                                         pad0xf0_S8JZY[0xf0];                               // 0x90(0xf0)
-};
-
-
-// Size 0x28
-struct TransformBase
-{
-public:
-	struct FName                                                 Node;                                              // 0x0(0x8)
-	struct TransformBaseConstraint                               Constraints;                                       // 0x8(0x10)
-	char                                                         pad0x10_8JZYV[0x10];                               // 0x18(0x10)
-};
-
-
-// Size 0x80
-struct RuntimeFloatCurve
-{
-public:
-	struct RichCurve                                             EditorCurveData;                                   // 0x0(0x78)
-	class CurveFloat*                                            ExternalCurve;                                     // 0x78(0x8)
-};
-
-
-// Size 0xa0
-struct AnimNode_LayeredBoneBlend
-{
-public:
-	char                                                         pad0x30_W3TDV[0x30];                               // 0x0(0x30)
-	struct PoseLink                                              BasePose;                                          // 0x30(0x18)
-	TArray<struct PoseLink>                                      BlendPoses;                                        // 0x48(0x10)
-	TArray<struct InputBlendPose>                                LayerSetup;                                        // 0x58(0x10)
-	TArray<float>                                                BlendWeights;                                      // 0x68(0x10)
-	bool                                                         bMeshSpaceRotationBlend;                           // 0x78(0x1)
-	char                                                         CurveBlendOption;                                  // 0x79(0x1)
-	char                                                         pad0x26_8A9WS[0x26];                               // 0x7a(0x26)
+	struct                                                       BaseColorMapSize;                                  // 0x0(0x8)
+	bool                                                         bNormalMap;                                        // 0x8(0x1)
+	struct                                                       NormalMapSize;                                     // 0xc(0x8)
+	float                                                        MetallicConstant;                                  // 0x14(0x4)
+	bool                                                         bMetallicMap;                                      // 0x18(0x1)
+	struct                                                       MetallicMapSize;                                   // 0x1c(0x8)
+	float                                                        RoughnessConstant;                                 // 0x24(0x4)
+	bool                                                         bRoughnessMap;                                     // 0x28(0x1)
+	struct                                                       RoughnessMapSize;                                  // 0x2c(0x8)
+	float                                                        SpecularConstant;                                  // 0x34(0x4)
+	bool                                                         bSpecularMap;                                      // 0x38(0x1)
+	struct                                                       SpecularMapSize;                                   // 0x3c(0x8)
 };
 
 
@@ -6722,39 +1907,672 @@ public:
 	char                                                         ShadingImportance;                                 // 0x12(0x1)
 	bool                                                         bActive;                                           // 0x13(0x1)
 	bool                                                         bRecalculateNormals;                               // 0x14(0x1)
-	char                                                         pad0x3_2OT57[0x3];                                 // 0x15(0x3)
 	int                                                          BaseLODModel;                                      // 0x18(0x4)
 	bool                                                         bGenerateUniqueLightmapUVs;                        // 0x1c(0x1)
 	bool                                                         bKeepSymmetry;                                     // 0x1d(0x1)
 	bool                                                         bVisibilityAided;                                  // 0x1e(0x1)
 	bool                                                         bCullOccluded;                                     // 0x1f(0x1)
 	char                                                         VisibilityAggressiveness;                          // 0x20(0x1)
-	char                                                         pad0x7_F59Q8[0x7];                                 // 0x21(0x7)
-	struct SimplygonMaterialLODSettings                          MaterialLODSettings;                               // 0x28(0x28)
+	struct                                                       MaterialLODSettings;                               // 0x28(0x28)
 	char                                                         VertexColorImportance;                             // 0x50(0x1)
 	bool                                                         bForceRebuild;                                     // 0x51(0x1)
-	char                                                         pad0x6_LBCHB[0x6];                                 // 0x52(0x6)
+};
+
+
+// Size 0x8
+struct InterpolationParameter
+{
+public:
+	float                                                        InterpolationTime;                                 // 0x0(0x4)
+	char                                                         InterpolationType;                                 // 0x4(0x1)
 };
 
 
 // Size 0x40
-struct RadialDamageEvent
+struct FunctionExpressionOutput
 {
 public:
-	char                                                         pad0x10_67RZV[0x10];                               // 0x0(0x10)
-	struct RadialDamageParams                                    Params;                                            // 0x10(0x14)
-	struct Vector                                                Origin;                                            // 0x24(0xc)
-	TArray<struct HitResult>                                     ComponentHits;                                     // 0x30(0x10)
+	class MaterialExpressionFunctionOutput*                      ExpressionOutput;                                  // 0x0(0x8)
+	struct                                                       ExpressionOutputId;                                // 0x8(0x10)
+	struct                                                       Output;                                            // 0x18(0x28)
+};
+
+
+// Size 0x14
+struct LocationBoneSocketInfo
+{
+public:
+	struct FName                                                 BoneSocketName;                                    // 0x0(0x8)
+	struct                                                       Offset;                                            // 0x8(0xc)
+};
+
+
+// Size 0x10
+struct DamageEvent
+{
+public:
+	class UClass*                                                DamageTypeClass;                                   // 0x8(0x8)
+};
+
+
+// Size 0x8
+struct InstancedCoverageMeshLOD
+{
+public:
+	float                                                        LODReduction;                                      // 0x0(0x4)
+	float                                                        DistanceToLOD;                                     // 0x4(0x4)
+};
+
+
+// Size 0x10
+struct BoneReductionSetting
+{
+public:
+	TArray<struct Name>                                          BonesToRemove;                                     // 0x0(0x10)
+};
+
+
+// Size 0x84
+struct MaterialInstanceBasePropertyOverrides
+{
+public:
+	bool                                                         bOverride_OpacityMaskClipValue;                    // 0x0(0x1)
+	bool                                                         bOverride_BlendMode;                               // 0x1(0x1)
+	bool                                                         bOverride_ShadingModel;                            // 0x2(0x1)
+	bool                                                         bOverride_DitheredLODTransition;                   // 0x3(0x1)
+	bool                                                         bOverride_TwoSided;                                // 0x4(0x1)
+	bool                                                         bOverride_TessellationMode;                        // 0x5(0x1)
+	bool                                                         bOverride_LowResTranslucency;                      // 0x6(0x1)
+	bool                                                         bOverride_SkyLightWhenOccluded;                    // 0x7(0x1)
+	bool                                                         bOverride_CloudShadowInfluence;                    // 0x8(0x1)
+	bool                                                         bOverride_LightColorInfluence;                     // 0x9(0x1)
+	bool                                                         bOverride_AmbientLightColorInfluence;              // 0xa(0x1)
+	bool                                                         bOverride_LightIntensityInfluence;                 // 0xb(0x1)
+	bool                                                         bOverride_AmbientLightIntensityInfluence;          // 0xc(0x1)
+	bool                                                         bOverride_AlternativeAmbientLightColorInfluence;   // 0xd(0x1)
+	bool                                                         bOverride_AlternativeAmbientLightIntensityInfluence; // 0xe(0x1)
+	bool                                                         bOverride_EvaluateLightningAtParticleCenter;       // 0xf(0x1)
+	bool                                                         bOverride_DontRenderWhenPlayerInsideShip;          // 0x10(0x1)
+	bool                                                         bOverride_ObjectFadeEnabled;                       // 0x11(0x1)
+	bool                                                         bOverride_ObjectFadeRate;                          // 0x12(0x1)
+	bool                                                         bOverride_ObjectFadeDistanceThreshold;             // 0x13(0x1)
+	bool                                                         bOverride_TranslucencyDirectionalLightingIntensity; // 0x14(0x1)
+	bool                                                         bOverride_TranslucencyVolumeFogScale;              // 0x15(0x1)
+	bool                                                         bOverride_TranslucencyDistanceFog;                 // 0x16(0x1)
+	bool                                                         bOverride_TranslucencyPass;                        // 0x17(0x1)
+	bool                                                         bOverride_TranslucencyInReflection;                // 0x18(0x1)
+	float                                                        OpacityMaskClipValue;                              // 0x1c(0x4)
+	char                                                         BlendMode;                                         // 0x20(0x1)
+	char                                                         ShadingModel;                                      // 0x21(0x1)
+	bool                                                         TwoSided;                                          // 0x24(0x1)
+	bool                                                         DitheredLODTransition;                             // 0x24(0x1)
+	char                                                         D3D11TessellationMode;                             // 0x28(0x1)
+	bool                                                         ForceResolution;                                   // 0x2c(0x1)
+	char                                                         ForcedResolution;                                  // 0x30(0x1)
+	bool                                                         DisableTransition;                                 // 0x34(0x1)
+	float                                                        FirstSplitDistance;                                // 0x38(0x4)
+	float                                                        SecondSplitDistance;                               // 0x3c(0x4)
+	float                                                        FullResInFrontMaxDistance;                         // 0x40(0x4)
+	bool                                                         FullResInFront;                                    // 0x44(0x1)
+	bool                                                         PopPerParticle;                                    // 0x44(0x1)
+	float                                                        SkyLightWhenOccluded;                              // 0x48(0x4)
+	float                                                        CloudShadowInfluence;                              // 0x4c(0x4)
+	float                                                        LightIntensityInfluence;                           // 0x50(0x4)
+	float                                                        LightColorInfluence;                               // 0x54(0x4)
+	float                                                        AmbientLightIntensityInfluence;                    // 0x58(0x4)
+	float                                                        AmbientLightColorInfluence;                        // 0x5c(0x4)
+	float                                                        AlternativeAmbientLightIntensityInfluence;         // 0x60(0x4)
+	float                                                        AlternativeAmbientLightColorInfluence;             // 0x64(0x4)
+	bool                                                         bEvaluateLightningAtParticleCenter;                // 0x68(0x1)
+	bool                                                         bDontRenderWhenPlayerInsideShip;                   // 0x68(0x1)
+	bool                                                         ObjectFadeEnabled;                                 // 0x68(0x1)
+	float                                                        ObjectFadeRate;                                    // 0x6c(0x4)
+	float                                                        ObjectFadeDistanceThreshold;                       // 0x70(0x4)
+	float                                                        TranslucencyDirectionalLightingIntensity;          // 0x74(0x4)
+	float                                                        TranslucencyVolumeFogScale;                        // 0x78(0x4)
+	bool                                                         TranslucencyDistanceFog;                           // 0x7c(0x1)
+	bool                                                         TranslucencyInReflection;                          // 0x7c(0x1)
+	char                                                         TranslucencyPass;                                  // 0x80(0x1)
+};
+
+
+// Size 0x88
+struct AnimNode_HIKLookAt
+{
+public:
+	float                                                        Alpha;                                             // 0x48(0x4)
+	struct                                                       TargetPosition;                                    // 0x4c(0xc)
+	float                                                        ChestContribution;                                 // 0x58(0x4)
+	bool                                                         XYOnly;                                            // 0x5c(0x1)
+	char                                                         Limits;                                            // 0x5d(0x1)
+	float                                                        LimitsHorizontalAngle;                             // 0x60(0x4)
+	float                                                        LimitsVerticalAngle;                               // 0x64(0x4)
+	float                                                        ActivationSpeed;                                   // 0x68(0x4)
+	float                                                        TargetPositionSpeed;                               // 0x6c(0x4)
+	char                                                         InterpolationMode;                                 // 0x70(0x1)
+};
+
+
+// Size 0x10
+struct LODSoloTrack
+{
+public:
+	TArray<char>                                                 SoloEnableSetting;                                 // 0x0(0x10)
+};
+
+
+// Size 0x20
+struct GameNameRedirect
+{
+public:
+	struct FString                                               OldGameName;                                       // 0x0(0x10)
+	struct FString                                               NewGameName;                                       // 0x10(0x10)
+};
+
+
+// Size 0x10
+struct LayerActorStats
+{
+public:
+	class UClass*                                                Type;                                              // 0x0(0x8)
+	int                                                          Total;                                             // 0x8(0x4)
+};
+
+
+// Size 0xc
+struct AnimationRecordingSettings
+{
+public:
+	bool                                                         bRecordInWorldSpace;                               // 0x0(0x1)
+	bool                                                         bRemoveRootAnimation;                              // 0x1(0x1)
+	bool                                                         bAutoSaveAsset;                                    // 0x2(0x1)
+	float                                                        SampleRate;                                        // 0x4(0x4)
+	float                                                        Length;                                            // 0x8(0x4)
 };
 
 
 // Size 0x48
-struct SimulatedRootMotionReplicatedMove
+struct AnimNode_Root
 {
 public:
-	float                                                        Time;                                              // 0x0(0x4)
-	char                                                         pad0x4_KDFPR[0x4];                                 // 0x4(0x4)
-	struct RepRootMotionMontage                                  RootMotion;                                        // 0x8(0x40)
+	struct                                                       Result;                                            // 0x30(0x18)
+};
+
+
+// Size 0x14
+struct PaintedVertex
+{
+public:
+	struct                                                       Position;                                          // 0x0(0xc)
+	struct                                                       Normal;                                            // 0xc(0x4)
+	struct                                                       Color;                                             // 0x10(0x4)
+};
+
+
+// Size 0xc0
+struct AnimNode_BlendListByEnum
+{
+public:
+	TArray<int>                                                  EnumToPoseIndex;                                   // 0xa8(0x10)
+	char                                                         ActiveEnumValue;                                   // 0xb8(0x1)
+};
+
+
+// Size 0x30
+struct InputActionKeyMapping
+{
+public:
+	struct FName                                                 ActionName;                                        // 0x0(0x8)
+	struct                                                       Key;                                               // 0x8(0x20)
+	bool                                                         bShift;                                            // 0x28(0x1)
+	bool                                                         bCtrl;                                             // 0x28(0x1)
+	bool                                                         bAlt;                                              // 0x28(0x1)
+	bool                                                         bCmd;                                              // 0x28(0x1)
+};
+
+
+// Size 0x40
+struct BlueprintInputKeyDelegateBinding
+{
+public:
+	struct                                                       InputChord;                                        // 0x8(0x28)
+	char                                                         InputKeyEvent;                                     // 0x30(0x1)
+	struct FName                                                 FunctionNameToBind;                                // 0x34(0x8)
+};
+
+
+// Size 0x98
+struct AnimNode_HIKRelativePlant
+{
+public:
+	float                                                        Alpha;                                             // 0x48(0x4)
+	float                                                        Depth;                                             // 0x4c(0x4)
+	float                                                        HipsRotationFactor;                                // 0x50(0x4)
+	float                                                        ChestRotationFactor;                               // 0x54(0x4)
+	float                                                        DistanceUp;                                        // 0x58(0x4)
+	float                                                        DistanceDown;                                      // 0x5c(0x4)
+	int                                                          NbRays;                                            // 0x60(0x4)
+	float                                                        FootRadius;                                        // 0x64(0x4)
+	struct                                                       OverrideRaycastCollisionResponse;                  // 0x68(0x20)
+	float                                                        DeltaTime;                                         // 0x88(0x4)
+	float                                                        Smoothing;                                         // 0x8c(0x4)
+};
+
+
+// Size 0x4
+struct NavigationFilterFlags
+{
+public:
+	bool                                                         bNavFlag0;                                         // 0x0(0x1)
+	bool                                                         bNavFlag1;                                         // 0x0(0x1)
+	bool                                                         bNavFlag2;                                         // 0x0(0x1)
+	bool                                                         bNavFlag3;                                         // 0x0(0x1)
+	bool                                                         bNavFlag4;                                         // 0x0(0x1)
+	bool                                                         bNavFlag5;                                         // 0x0(0x1)
+	bool                                                         bNavFlag6;                                         // 0x0(0x1)
+	bool                                                         bNavFlag7;                                         // 0x0(0x1)
+	bool                                                         bNavFlag8;                                         // 0x1(0x1)
+	bool                                                         bNavFlag9;                                         // 0x1(0x1)
+	bool                                                         bNavFlag10;                                        // 0x1(0x1)
+	bool                                                         bNavFlag11;                                        // 0x1(0x1)
+	bool                                                         bNavFlag12;                                        // 0x1(0x1)
+	bool                                                         bNavFlag13;                                        // 0x1(0x1)
+	bool                                                         bNavFlag14;                                        // 0x1(0x1)
+	bool                                                         bNavFlag15;                                        // 0x1(0x1)
+};
+
+
+// Size 0x60
+struct AnimNode_SequencePlayer
+{
+public:
+	class AnimSequenceBase*                                      Sequence;                                          // 0x40(0x8)
+	bool                                                         bLoopAnimation;                                    // 0x48(0x1)
+	float                                                        PlayRate;                                          // 0x4c(0x4)
+	int                                                          GroupIndex;                                        // 0x50(0x4)
+	char                                                         GroupRole;                                         // 0x54(0x1)
+};
+
+
+// Size 0x58
+struct FFTWaterComponentIntersectParticleType
+{
+public:
+	struct                                                       VelocityRange;                                     // 0x0(0x8)
+	struct                                                       FoamRange;                                         // 0x8(0x8)
+	struct                                                       HeightRange;                                       // 0x10(0x8)
+	struct                                                       ParticleWaveVelocityRange;                         // 0x18(0x8)
+	struct                                                       ParticleWaveAbsoluteSpeedDifferenceRange;          // 0x20(0x8)
+	float                                                        Density;                                           // 0x28(0x4)
+	float                                                        VolumeHorizontalVelocityWeight;                    // 0x2c(0x4)
+	float                                                        HorizontalDirectionFromVolumeWeight;               // 0x30(0x4)
+	float                                                        HorizontalRandomVelocityWeight;                    // 0x34(0x4)
+	float                                                        VolumeVerticalVelocityWeight;                      // 0x38(0x4)
+	float                                                        VerticalRandomVelocityWeight;                      // 0x3c(0x4)
+	float                                                        WaterVelocityWeight;                               // 0x40(0x4)
+	float                                                        VelocityScaling;                                   // 0x44(0x4)
+	bool                                                         UnderwaterParticles;                               // 0x48(0x1)
+	class ParticleComputeShaderData*                             ParticleComputeShaderData;                         // 0x50(0x8)
+};
+
+
+// Size 0x310
+struct FFTWaterComponentParams
+{
+public:
+	struct                                                       AmbientColour;                                     // 0x0(0x10)
+	struct                                                       WaterColour;                                       // 0x10(0x10)
+	struct                                                       ShallowWaterColour;                                // 0x20(0x10)
+	struct                                                       BackLitColour;                                     // 0x30(0x10)
+	struct                                                       FoamColour;                                        // 0x40(0x10)
+	struct                                                       FoamHighlightColour;                               // 0x50(0x10)
+	float                                                        FresnelPower;                                      // 0x60(0x4)
+	float                                                        SpecularBrightness;                                // 0x64(0x4)
+	float                                                        FoamBrightness;                                    // 0x68(0x4)
+	float                                                        ReflectionBrightness;                              // 0x6c(0x4)
+	float                                                        FoamFadeStart;                                     // 0x70(0x4)
+	float                                                        FoamFadeEnd;                                       // 0x74(0x4)
+	bool                                                         DEBUG_Wireframe;                                   // 0x78(0x1)
+	float                                                        Size;                                              // 0x7c(0x4)
+	float                                                        WindSpeed;                                         // 0x80(0x4)
+	float                                                        WindSpeedInEditor;                                 // 0x84(0x4)
+	float                                                        CarrierWaveAmplitude;                              // 0x88(0x4)
+	float                                                        CarrierWaveWaveLength;                             // 0x8c(0x4)
+	float                                                        CarrierWavePropagationSpeed;                       // 0x90(0x4)
+	float                                                        HorizonFadeDistance;                               // 0x94(0x4)
+	float                                                        HorizonDarkenStart;                                // 0x98(0x4)
+	float                                                        HorizonDarkenRange;                                // 0x9c(0x4)
+	float                                                        CloudShadowDarkenStart;                            // 0xa0(0x4)
+	float                                                        CloudShadowDarkenRange;                            // 0xa4(0x4)
+	float                                                        CausticsDepth;                                     // 0xa8(0x4)
+	class Texture*                                               FoamColourTex;                                     // 0xb0(0x8)
+	struct                                                       ParticleParams;                                    // 0xb8(0x248)
+	float                                                        ExtendedPlaneSize;                                 // 0x300(0x4)
+	float                                                        ExtendedPlaneFadeDistance;                         // 0x304(0x4)
+	struct                                                       PositionOffset;                                    // 0x308(0x8)
+};
+
+
+// Size 0x38
+struct PlatformInterfaceDelegateResult
+{
+public:
+	bool                                                         bSuccessful;                                       // 0x0(0x1)
+	struct                                                       Data;                                              // 0x8(0x30)
+};
+
+
+// Size 0x18
+struct ParticleCurvePair
+{
+public:
+	struct FString                                               CurveName;                                         // 0x0(0x10)
+	class Object*                                                CurveObject;                                       // 0x10(0x8)
+};
+
+
+// Size 0x1c
+struct POV
+{
+public:
+	struct                                                       Location;                                          // 0x0(0xc)
+	struct                                                       Rotation;                                          // 0xc(0xc)
+	float                                                        FOV;                                               // 0x18(0x4)
+};
+
+
+// Size 0x38
+struct FFTWaterComponentWaveParticleType
+{
+public:
+	struct                                                       SpawnRadiusRange;                                  // 0x0(0x8)
+	struct                                                       FoamRange;                                         // 0x8(0x8)
+	struct                                                       HeightRange;                                       // 0x10(0x8)
+	struct                                                       AngleRange;                                        // 0x18(0x8)
+	struct                                                       CalmWaterDampeningFactorRange;                     // 0x20(0x8)
+	float                                                        Density;                                           // 0x28(0x4)
+	class ParticleComputeShaderData*                             ParticleComputeShaderData;                         // 0x30(0x8)
+};
+
+
+// Size 0x18
+struct EditorElement
+{
+public:
+	int                                                          Indices;                                           // 0x0(0x4)
+	float                                                        Weights;                                           // 0xc(0x4)
+};
+
+
+// Size 0x30
+struct TimelineVectorTrack
+{
+public:
+	class CurveVector*                                           VectorCurve;                                       // 0x0(0x8)
+	delegate                                                     InterpFunc;                                        // 0x8(0x10)
+	struct FName                                                 VectorPropertyName;                                // 0x18(0x8)
+	class StructProperty*                                        VectorProperty;                                    // 0x20(0x8)
+};
+
+
+// Size 0x10
+struct RootMotionExtractionStep
+{
+public:
+	class AnimSequence*                                          AnimSequence;                                      // 0x0(0x8)
+	float                                                        StartPosition;                                     // 0x8(0x4)
+	float                                                        EndPosition;                                       // 0xc(0x4)
+};
+
+
+// Size 0x80
+struct VelocityConeGroupParams
+{
+public:
+	struct                                                       Angle;                                             // 0x0(0x38)
+	struct                                                       Velocity;                                          // 0x38(0x38)
+	struct                                                       Direction;                                         // 0x70(0xc)
+};
+
+
+// Size 0x14
+struct NavCollisionCylinder
+{
+public:
+	struct                                                       Offset;                                            // 0x0(0xc)
+	float                                                        Radius;                                            // 0xc(0x4)
+	float                                                        Height;                                            // 0x10(0x4)
+};
+
+
+// Size 0x40
+struct PurchaseInfo
+{
+public:
+	struct FString                                               Identifier;                                        // 0x0(0x10)
+	struct FString                                               DisplayName;                                       // 0x10(0x10)
+	struct FString                                               DisplayDescription;                                // 0x20(0x10)
+	struct FString                                               DisplayPrice;                                      // 0x30(0x10)
+};
+
+
+// Size 0x10
+struct KillSphereGroupParams
+{
+public:
+	struct                                                       Centre;                                            // 0x0(0xc)
+	float                                                        Radius;                                            // 0xc(0x4)
+};
+
+
+// Size 0x2c
+struct DestructibleDebrisParameters
+{
+public:
+	float                                                        DebrisLifetimeMin;                                 // 0x0(0x4)
+	float                                                        DebrisLifetimeMax;                                 // 0x4(0x4)
+	float                                                        DebrisMaxSeparationMin;                            // 0x8(0x4)
+	float                                                        DebrisMaxSeparationMax;                            // 0xc(0x4)
+	struct                                                       ValidBounds;                                       // 0x10(0x1c)
+};
+
+
+// Size 0x60
+struct AnimNode_RotateRootBone
+{
+public:
+	struct                                                       BasePose;                                          // 0x30(0x18)
+	float                                                        Pitch;                                             // 0x48(0x4)
+	float                                                        Yaw;                                               // 0x4c(0x4)
+	struct                                                       MeshToComponent;                                   // 0x50(0xc)
+};
+
+
+// Size 0x58
+struct SplineMeshParams
+{
+public:
+	struct                                                       StartPos;                                          // 0x0(0xc)
+	struct                                                       StartTangent;                                      // 0xc(0xc)
+	struct                                                       StartScale;                                        // 0x18(0x8)
+	float                                                        StartRoll;                                         // 0x20(0x4)
+	struct                                                       StartOffset;                                       // 0x24(0x8)
+	struct                                                       EndPos;                                            // 0x2c(0xc)
+	struct                                                       EndTangent;                                        // 0x38(0xc)
+	struct                                                       EndScale;                                          // 0x44(0x8)
+	float                                                        EndRoll;                                           // 0x4c(0x4)
+	struct                                                       EndOffset;                                         // 0x50(0x8)
+};
+
+
+// Size 0x38
+struct InstancedNavMesh
+{
+public:
+	assetclass                                                   AssetClass;                                        // 0x0(0x20)
+	struct                                                       Location;                                          // 0x20(0xc)
+	struct FName                                                 NavMeshName;                                       // 0x2c(0x8)
+	struct                                                       SupportedAgents;                                   // 0x34(0x4)
+};
+
+
+// Size 0x20
+struct ModulatorContinuousParams
+{
+public:
+	struct FName                                                 ParameterName;                                     // 0x0(0x8)
+	float                                                        Default;                                           // 0x8(0x4)
+	float                                                        MinInput;                                          // 0xc(0x4)
+	float                                                        MaxInput;                                          // 0x10(0x4)
+	float                                                        MinOutput;                                         // 0x14(0x4)
+	float                                                        MaxOutput;                                         // 0x18(0x4)
+	char                                                         ParamMode;                                         // 0x1c(0x1)
+};
+
+
+// Size 0x24
+struct ROscillator
+{
+public:
+	struct                                                       Pitch;                                             // 0x0(0xc)
+	struct                                                       Yaw;                                               // 0xc(0xc)
+	struct                                                       Roll;                                              // 0x18(0xc)
+};
+
+
+// Size 0x18
+struct ComponentReference
+{
+public:
+	class Actor*                                                 OtherActor;                                        // 0x0(0x8)
+	struct FName                                                 ComponentProperty;                                 // 0x8(0x8)
+};
+
+
+// Size 0x88
+struct ForceFeedbackChannelDetails
+{
+public:
+	bool                                                         bAffectsLeftLarge;                                 // 0x0(0x1)
+	bool                                                         bAffectsLeftSmall;                                 // 0x0(0x1)
+	bool                                                         bAffectsRightLarge;                                // 0x0(0x1)
+	bool                                                         bAffectsRightSmall;                                // 0x0(0x1)
+	bool                                                         bAffectsLeftTrigger;                               // 0x0(0x1)
+	bool                                                         bAffectsRightTrigger;                              // 0x0(0x1)
+	struct                                                       Curve;                                             // 0x8(0x80)
+};
+
+
+// Size 0x24
+struct InteriorSettings
+{
+public:
+	bool                                                         bIsWorldSettings;                                  // 0x0(0x1)
+	float                                                        ExteriorVolume;                                    // 0x4(0x4)
+	float                                                        ExteriorTime;                                      // 0x8(0x4)
+	float                                                        ExteriorLPF;                                       // 0xc(0x4)
+	float                                                        ExteriorLPFTime;                                   // 0x10(0x4)
+	float                                                        InteriorVolume;                                    // 0x14(0x4)
+	float                                                        InteriorTime;                                      // 0x18(0x4)
+	float                                                        InteriorLPF;                                       // 0x1c(0x4)
+	float                                                        InteriorLPFTime;                                   // 0x20(0x4)
+};
+
+
+// Size 0x40
+struct EmitterPointData
+{
+public:
+	struct                                                       Position;                                          // 0x0(0x10)
+	struct                                                       InheritedVelocity;                                 // 0x10(0x10)
+	struct                                                       Orientation;                                       // 0x20(0x10)
+	struct                                                       Scale;                                             // 0x30(0xc)
+};
+
+
+// Size 0x20
+struct AnimSegment
+{
+public:
+	class AnimSequenceBase*                                      AnimReference;                                     // 0x0(0x8)
+	float                                                        StartPos;                                          // 0x8(0x4)
+	float                                                        AnimStartTime;                                     // 0xc(0x4)
+	float                                                        AnimEndTime;                                       // 0x10(0x4)
+	float                                                        AnimPlayRate;                                      // 0x14(0x4)
+	int                                                          LoopingCount;                                      // 0x18(0x4)
+};
+
+
+// Size 0x78
+struct TouchInputControl
+{
+public:
+	class Texture2D*                                             Image1;                                            // 0x0(0x8)
+	class Texture2D*                                             Image2;                                            // 0x8(0x8)
+	struct                                                       Center;                                            // 0x10(0x8)
+	struct                                                       VisualSize;                                        // 0x18(0x8)
+	struct                                                       ThumbSize;                                         // 0x20(0x8)
+	struct                                                       InteractionSize;                                   // 0x28(0x8)
+	struct                                                       InputScale;                                        // 0x30(0x8)
+	struct                                                       MainInputKey;                                      // 0x38(0x20)
+	struct                                                       AltInputKey;                                       // 0x58(0x20)
+};
+
+
+// Size 0x28
+struct Vector4Distribution
+{
+public:
+	struct                                                       Table;                                             // 0x0(0x28)
+};
+
+
+// Size 0x24
+struct FractureMaterial
+{
+public:
+	struct                                                       UVScale;                                           // 0x0(0x8)
+	struct                                                       UVOffset;                                          // 0x8(0x8)
+	struct                                                       Tangent;                                           // 0x10(0xc)
+	float                                                        UAngle;                                            // 0x1c(0x4)
+	int                                                          InteriorElementIndex;                              // 0x20(0x4)
+};
+
+
+// Size 0x50
+struct AnimNode_HIKSetProperty
+{
+public:
+	char                                                         Property;                                          // 0x48(0x1)
+	float                                                        Value;                                             // 0x4c(0x4)
+};
+
+
+// Size 0x18
+struct OpenTestAsset
+{
+public:
+	struct                                                       AssetToOpen;                                       // 0x0(0x10)
+	bool                                                         bSkipTestWhenUnAttended;                           // 0x10(0x1)
+};
+
+
+// Size 0x30
+struct InputAxisKeyMapping
+{
+public:
+	struct FName                                                 AxisName;                                          // 0x0(0x8)
+	struct                                                       Key;                                               // 0x8(0x20)
+	float                                                        Scale;                                             // 0x28(0x4)
+};
+
+
+// Size 0x18
+struct AnimSlotGroup
+{
+public:
+	struct FName                                                 GroupName;                                         // 0x0(0x8)
+	TArray<struct Name>                                          SlotNames;                                         // 0x8(0x10)
 };
 
 
@@ -6770,24 +2588,21 @@ public:
 	class ParticleModuleParametersOverVelocity*                  ParametersOverVelocity;                            // 0x28(0x8)
 	class ParticleModuleParametersOverCustom*                    ParametersOverCustom;                              // 0x30(0x8)
 	TArray<class ParticleModule*>                                SpawnModules;                                      // 0x38(0x10)
-	char                                                         pad0x8_RVO2Y[0x8];                                 // 0x48(0x8)
-	struct GPUSpriteLocalVectorFieldInfo                         LocalVectorField;                                  // 0x50(0x70)
-	struct FloatDistribution                                     VectorFieldScale;                                  // 0xc0(0x28)
-	struct FloatDistribution                                     PointAttractorStrength;                            // 0xe8(0x28)
-	struct FloatDistribution                                     Resilience;                                        // 0x110(0x28)
-	struct Vector                                                ConstantAcceleration;                              // 0x138(0xc)
-	struct Vector                                                PointAttractorPosition;                            // 0x144(0xc)
+	struct                                                       LocalVectorField;                                  // 0x50(0x70)
+	struct                                                       VectorFieldScale;                                  // 0xc0(0x28)
+	struct                                                       PointAttractorStrength;                            // 0xe8(0x28)
+	struct                                                       Resilience;                                        // 0x110(0x28)
+	struct                                                       ConstantAcceleration;                              // 0x138(0xc)
+	struct                                                       PointAttractorPosition;                            // 0x144(0xc)
 	float                                                        PointAttractorRadiusSq;                            // 0x150(0x4)
-	struct Vector                                                OrbitOffsetBase;                                   // 0x154(0xc)
-	struct Vector                                                OrbitOffsetRange;                                  // 0x160(0xc)
-	struct Vector2D                                              InvMaxSize;                                        // 0x16c(0x8)
+	struct                                                       OrbitOffsetBase;                                   // 0x154(0xc)
+	struct                                                       OrbitOffsetRange;                                  // 0x160(0xc)
+	struct                                                       InvMaxSize;                                        // 0x16c(0x8)
 	float                                                        MaxLifetime;                                       // 0x174(0x4)
 	int                                                          MaxParticleCount;                                  // 0x178(0x4)
 	int                                                          MaxDeathRate;                                      // 0x17c(0x4)
 	char                                                         ScreenAlignment;                                   // 0x180(0x1)
-	char                                                         pad0x5_WGSZO[0x5];                                 // 0x181(0x5)
 	char                                                         LockAxisFlag;                                      // 0x186(0x1)
-	char                                                         pad0x1_MFO7U[0x1];                                 // 0x187(0x1)
 	bool                                                         bLockToOwnerAxis;                                  // 0x188(0x1)
 	bool                                                         bEnableCollision;                                  // 0x188(0x1)
 	bool                                                         bNeedsVectorFields;                                // 0x188(0x1)
@@ -6798,22 +2613,3423 @@ public:
 	bool                                                         bGeneratesDeathEvents;                             // 0x188(0x1)
 	bool                                                         bGeneratesCollisionEvents;                         // 0x189(0x1)
 	bool                                                         bHasSpawnEventModule;                              // 0x189(0x1)
-	char                                                         pad0x2_EZ3J8[0x2];                                 // 0x18a(0x2)
 	char                                                         CollisionMode;                                     // 0x18c(0x1)
-	char                                                         pad0x3_YJQZB[0x3];                                 // 0x18d(0x3)
-	struct RawDistributionVector                                 DynamicColor;                                      // 0x190(0x38)
-	struct RawDistributionFloat                                  DynamicAlpha;                                      // 0x1c8(0x38)
-	struct RawDistributionVector                                 DynamicColorScale;                                 // 0x200(0x38)
-	struct RawDistributionFloat                                  DynamicAlphaScale;                                 // 0x238(0x38)
-	struct Vector4                                               MurkyColorScale;                                   // 0x270(0x10)
+	struct                                                       DynamicColor;                                      // 0x190(0x38)
+	struct                                                       DynamicAlpha;                                      // 0x1c8(0x38)
+	struct                                                       DynamicColorScale;                                 // 0x200(0x38)
+	struct                                                       DynamicAlphaScale;                                 // 0x238(0x38)
+	struct                                                       MurkyColorScale;                                   // 0x270(0x10)
 	struct FName                                                 LocationEmitterName;                               // 0x280(0x8)
 	bool                                                         bUseInheritedVelocityLocationEmitter;              // 0x288(0x1)
-	char                                                         pad0x3_WC7ZD[0x3];                                 // 0x289(0x3)
-	struct Vector2D                                              InheritedVelocityScaleLocationEmitter;             // 0x28c(0x8)
+	struct                                                       InheritedVelocityScaleLocationEmitter;             // 0x28c(0x8)
 	char                                                         MissingParentParticlesBehaviour;                   // 0x294(0x1)
-	char                                                         pad0x3_IY45J[0x3];                                 // 0x295(0x3)
 	bool                                                         bKillParticlesOnFFTWater;                          // 0x298(0x1)
-	char                                                         pad0x17_6MFVN[0x17];                               // 0x299(0x17)
+};
+
+
+// Size 0x58
+struct ClassRedirect
+{
+public:
+	struct FString                                               ObjectName;                                        // 0x0(0x10)
+	struct FString                                               OldClassName;                                      // 0x10(0x10)
+	struct FString                                               NewClassName;                                      // 0x20(0x10)
+	struct FString                                               OldSubobjName;                                     // 0x30(0x10)
+	struct FString                                               NewSubobjName;                                     // 0x40(0x10)
+	bool                                                         InstanceOnly;                                      // 0x50(0x1)
+};
+
+
+// Size 0x10
+struct LightmassDebugOptions
+{
+public:
+	bool                                                         bDebugMode;                                        // 0x0(0x1)
+	bool                                                         bStatsEnabled;                                     // 0x0(0x1)
+	bool                                                         bGatherBSPSurfacesAcrossComponents;                // 0x0(0x1)
+	float                                                        CoplanarTolerance;                                 // 0x4(0x4)
+	bool                                                         bUseImmediateImport;                               // 0x8(0x1)
+	bool                                                         bImmediateProcessMappings;                         // 0x8(0x1)
+	bool                                                         bSortMappings;                                     // 0x8(0x1)
+	bool                                                         bDumpBinaryFiles;                                  // 0x8(0x1)
+	bool                                                         bDebugMaterials;                                   // 0x8(0x1)
+	bool                                                         bPadMappings;                                      // 0x8(0x1)
+	bool                                                         bDebugPaddings;                                    // 0x8(0x1)
+	bool                                                         bOnlyCalcDebugTexelMappings;                       // 0x8(0x1)
+	bool                                                         bUseRandomColors;                                  // 0x9(0x1)
+	bool                                                         bColorBordersGreen;                                // 0x9(0x1)
+	bool                                                         bColorByExecutionTime;                             // 0x9(0x1)
+	float                                                        ExecutionTimeDivisor;                              // 0xc(0x4)
+};
+
+
+// Size 0x14
+struct RadialDamageParams
+{
+public:
+	float                                                        BaseDamage;                                        // 0x0(0x4)
+	float                                                        MinimumDamage;                                     // 0x4(0x4)
+	float                                                        InnerRadius;                                       // 0x8(0x4)
+	float                                                        OuterRadius;                                       // 0xc(0x4)
+	float                                                        DamageFalloff;                                     // 0x10(0x4)
+};
+
+
+// Size 0xb0
+struct AnimNotifyEvent
+{
+public:
+	float                                                        DisplayTime;                                       // 0x30(0x4)
+	float                                                        TriggerTimeOffset;                                 // 0x34(0x4)
+	float                                                        EndTriggerTimeOffset;                              // 0x38(0x4)
+	float                                                        TriggerWeightThreshold;                            // 0x3c(0x4)
+	struct FName                                                 NotifyName;                                        // 0x40(0x8)
+	class AnimNotify*                                            Notify;                                            // 0x48(0x8)
+	class AnimNotifyState*                                       NotifyStateClass;                                  // 0x50(0x8)
+	class AnimNotifyCondition*                                   NotifyCondition;                                   // 0x58(0x8)
+	float                                                        Duration;                                          // 0x60(0x4)
+	struct                                                       EndLink;                                           // 0x68(0x30)
+	bool                                                         bConvertedFromBranchingPoint;                      // 0x98(0x1)
+	char                                                         MontageTickType;                                   // 0x99(0x1)
+	float                                                        NotifyTriggerChance;                               // 0x9c(0x4)
+	char                                                         NotifyFilterType;                                  // 0xa0(0x1)
+	int                                                          NotifyFilterLOD;                                   // 0xa4(0x4)
+	int                                                          TrackIndex;                                        // 0xa8(0x4)
+};
+
+
+// Size 0x170
+struct RuntimeVectorCurve
+{
+public:
+	struct                                                       FloatCurves;                                       // 0x0(0x78)
+	class CurveVector*                                           ExternalCurve;                                     // 0x168(0x8)
+};
+
+
+// Size 0xc
+struct BeamTargetData
+{
+public:
+	struct FName                                                 TargetName;                                        // 0x0(0x8)
+	float                                                        TargetPercentage;                                  // 0x8(0x4)
+};
+
+
+// Size 0x18
+struct AnimCurveBase
+{
+public:
+	struct FName                                                 LastObservedName;                                  // 0x8(0x8)
+	int                                                          CurveTypeFlags;                                    // 0x14(0x4)
+};
+
+
+// Size 0x30
+struct KSphereElem
+{
+public:
+	struct                                                       Center;                                            // 0x20(0xc)
+	float                                                        Radius;                                            // 0x2c(0x4)
+};
+
+
+// Size 0x40
+struct NetGuidResolveStackEntry
+{
+public:
+	uint32                                                       NetGuid;                                           // 0x0(0x4)
+	struct FString                                               ObjectPath;                                        // 0x8(0x10)
+	struct FString                                               path;                                              // 0x18(0x10)
+	struct FString                                               AdditionalDetails;                                 // 0x28(0x10)
+	char                                                         Result;                                            // 0x38(0x1)
+};
+
+
+// Size 0x10
+struct DirectoryPath
+{
+public:
+	struct FString                                               path;                                              // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct BlueprintInstancedActorDelegateBinding
+{
+public:
+	struct FName                                                 DelegatePropertyName;                              // 0x0(0x8)
+	struct FName                                                 FunctionNameToBind;                                // 0x8(0x8)
+};
+
+
+// Size 0x498
+struct TransformCurve
+{
+public:
+	struct                                                       TranslationCurve;                                  // 0x18(0x180)
+	struct                                                       RotationCurve;                                     // 0x198(0x180)
+	struct                                                       ScaleCurve;                                        // 0x318(0x180)
+};
+
+
+// Size 0x18
+struct NavigationFilterArea
+{
+public:
+	class UClass*                                                AreaClass;                                         // 0x0(0x8)
+	float                                                        TravelCostOverride;                                // 0x8(0x4)
+	float                                                        EnteringCostOverride;                              // 0xc(0x4)
+	bool                                                         bIsExcluded;                                       // 0x10(0x1)
+	bool                                                         bOverrideTravelCost;                               // 0x10(0x1)
+	bool                                                         bOverrideEnteringCost;                             // 0x10(0x1)
+};
+
+
+// Size 0x50
+struct SimplygonRemeshingSettings
+{
+public:
+	bool                                                         bActive;                                           // 0x0(0x1)
+	int                                                          ScreenSize;                                        // 0x4(0x4)
+	bool                                                         bRecalculateNormals;                               // 0x8(0x1)
+	float                                                        HardAngleThreshold;                                // 0xc(0x4)
+	int                                                          MergeDistance;                                     // 0x10(0x4)
+	bool                                                         bUseClippingPlane;                                 // 0x14(0x1)
+	float                                                        ClippingLevel;                                     // 0x18(0x4)
+	int                                                          AxisIndex;                                         // 0x1c(0x4)
+	bool                                                         bPlaneNegativeHalfspace;                           // 0x20(0x1)
+	bool                                                         bUseMassiveLOD;                                    // 0x21(0x1)
+	bool                                                         bUseAggregateLOD;                                  // 0x22(0x1)
+	struct                                                       MaterialLODSettings;                               // 0x28(0x28)
+};
+
+
+// Size 0x18
+struct NetDriverDefinition
+{
+public:
+	struct FName                                                 DefName;                                           // 0x0(0x8)
+	struct FName                                                 DriverClassName;                                   // 0x8(0x8)
+	struct FName                                                 DriverClassNameFallback;                           // 0x10(0x8)
+};
+
+
+// Size 0x50
+struct FunctionExpressionInput
+{
+public:
+	class MaterialExpressionFunctionInput*                       ExpressionInput;                                   // 0x0(0x8)
+	struct                                                       ExpressionInputId;                                 // 0x8(0x10)
+	struct                                                       Input;                                             // 0x18(0x38)
+};
+
+
+// Size 0x14
+struct BoneMirrorExport
+{
+public:
+	struct FName                                                 BoneName;                                          // 0x0(0x8)
+	struct FName                                                 SourceBoneName;                                    // 0x8(0x8)
+	char                                                         BoneFlipAxis;                                      // 0x10(0x1)
+};
+
+
+// Size 0x38
+struct ExpressionInput
+{
+public:
+	class MaterialExpression*                                    Expression;                                        // 0x0(0x8)
+	int                                                          OutputIndex;                                       // 0x8(0x4)
+	struct FString                                               InputName;                                         // 0x10(0x10)
+	int                                                          Mask;                                              // 0x20(0x4)
+	int                                                          MaskR;                                             // 0x24(0x4)
+	int                                                          MaskG;                                             // 0x28(0x4)
+	int                                                          MaskB;                                             // 0x2c(0x4)
+	int                                                          MaskA;                                             // 0x30(0x4)
+	int                                                          GCC64_Padding;                                     // 0x34(0x4)
+};
+
+
+// Size 0x8
+struct CollisionProfileName
+{
+public:
+	struct FName                                                 Name;                                              // 0x0(0x8)
+};
+
+
+// Size 0xc
+struct ParticleReplayTrackKey
+{
+public:
+	float                                                        Time;                                              // 0x0(0x4)
+	float                                                        Duration;                                          // 0x4(0x4)
+	int                                                          ClipIDNumber;                                      // 0x8(0x4)
+};
+
+
+// Size 0x90
+struct KConvexElem
+{
+public:
+	TArray<struct Vector>                                        VertexData;                                        // 0x20(0x10)
+	struct                                                       ElemBox;                                           // 0x30(0x1c)
+	struct                                                       Transform;                                         // 0x50(0x30)
+};
+
+
+// Size 0x10
+struct RotationAboutAxisParameters
+{
+public:
+	struct                                                       Rotation;                                          // 0x0(0xc)
+	bool                                                         bUseRotation;                                      // 0xc(0x1)
+	bool                                                         bUseLocalSpace;                                    // 0xc(0x1)
+};
+
+
+// Size 0x5c0
+struct TViewTarget
+{
+public:
+	class Actor*                                                 Target;                                            // 0x0(0x8)
+	struct                                                       POV;                                               // 0x10(0x5a0)
+	class PlayerState*                                           PlayerState;                                       // 0x5b0(0x8)
+};
+
+
+// Size 0x48
+struct TextureRenderData
+{
+public:
+	class Texture*                                               RenderTexture;                                     // 0x0(0x8)
+	struct                                                       ScreenPosition;                                    // 0x8(0x8)
+	struct                                                       ScreenSize;                                        // 0x10(0x8)
+	struct                                                       CoordinatePosition;                                // 0x18(0x8)
+	struct                                                       CoordinateSize;                                    // 0x20(0x8)
+	struct                                                       RenderColor;                                       // 0x28(0x10)
+	char                                                         BlendMode;                                         // 0x38(0x1)
+	float                                                        Rotation;                                          // 0x3c(0x4)
+	struct                                                       PivotPoint;                                        // 0x40(0x8)
+};
+
+
+// Size 0x18
+struct TTFloatTrack
+{
+public:
+	class CurveFloat*                                            CurveFloat;                                        // 0x10(0x8)
+};
+
+
+// Size 0x40
+struct AnimNode_AssetPlayerBase
+{
+public:
+	bool                                                         bIgnoreForRelevancyTest;                           // 0x30(0x1)
+	float                                                        BlendWeight;                                       // 0x34(0x4)
+	float                                                        InternalTimeAccumulator;                           // 0x38(0x4)
+};
+
+
+// Size 0x10
+struct LightmassDirectionalLightSettings
+{
+public:
+	float                                                        LightSourceAngle;                                  // 0xc(0x4)
+};
+
+
+// Size 0x18
+struct BPInterfaceDescription
+{
+public:
+	class UClass*                                                Interface;                                         // 0x0(0x8)
+	TArray<class EdGraph*>                                       Graphs;                                            // 0x8(0x10)
+};
+
+
+// Size 0x10
+struct PrimitiveSphereEmitterAngleRanges
+{
+public:
+	struct                                                       HorizontalAngle;                                   // 0x0(0x8)
+	struct                                                       VerticalAngle;                                     // 0x8(0x8)
+};
+
+
+// Size 0xd8
+struct HierarchicalSimplification
+{
+public:
+	bool                                                         bSimplifyMesh;                                     // 0x0(0x1)
+	float                                                        DrawDistance;                                      // 0x4(0x4)
+	float                                                        DesiredBoundRadius;                                // 0x8(0x4)
+	float                                                        DesiredFillingPercentage;                          // 0xc(0x4)
+	int                                                          MinNumberOfActorsToBuild;                          // 0x10(0x4)
+	struct                                                       ProxySetting;                                      // 0x14(0x70)
+	struct                                                       MergeSetting;                                      // 0x88(0x50)
+};
+
+
+// Size 0x40
+struct BranchingPoint
+{
+public:
+	struct FName                                                 EventName;                                         // 0x30(0x8)
+	float                                                        DisplayTime;                                       // 0x38(0x4)
+	float                                                        TriggerTimeOffset;                                 // 0x3c(0x4)
+};
+
+
+// Size 0x58
+struct CompositeSection
+{
+public:
+	struct FName                                                 SectionName;                                       // 0x30(0x8)
+	float                                                        StartTime;                                         // 0x38(0x4)
+	struct FName                                                 NextSectionName;                                   // 0x3c(0x8)
+	TArray<class AnimMetaData*>                                  MetaData;                                          // 0x48(0x10)
+};
+
+
+// Size 0x30
+struct RigidBodyContactInfo
+{
+public:
+	struct                                                       ContactPosition;                                   // 0x0(0xc)
+	struct                                                       ContactNormal;                                     // 0xc(0xc)
+	float                                                        ContactPenetration;                                // 0x18(0x4)
+	class PhysicalMaterial*                                      PhysMaterial;                                      // 0x20(0x8)
+};
+
+
+// Size 0x78
+struct SpriteCategoryInfo
+{
+public:
+	struct FName                                                 Category;                                          // 0x0(0x8)
+	struct FText                                                 DisplayName;                                       // 0x8(0x38)
+	struct FText                                                 Description;                                       // 0x40(0x38)
+};
+
+
+// Size 0x118
+struct AnimNode_BlendSpaceEvaluator
+{
+public:
+	float                                                        NormalizedTime;                                    // 0x110(0x4)
+};
+
+
+// Size 0xc
+struct MergedCollisionActorsSimplification
+{
+public:
+	struct                                                       MergeCollisionSettings;                            // 0x0(0x1)
+	float                                                        MaxBoundRadius;                                    // 0x4(0x4)
+	int                                                          MinNumberOfComponentsToMerge;                      // 0x8(0x4)
+};
+
+
+// Size 0x40
+struct RigidBodyState
+{
+public:
+	struct                                                       Position;                                          // 0x0(0xc)
+	struct                                                       Quaternion;                                        // 0x10(0x10)
+	struct                                                       LinVel;                                            // 0x20(0xc)
+	struct                                                       AngVel;                                            // 0x2c(0xc)
+	char                                                         Flags;                                             // 0x38(0x1)
+};
+
+
+// Size 0x10
+struct MTDResult
+{
+public:
+	struct                                                       Direction;                                         // 0x0(0xc)
+	float                                                        Distance;                                          // 0xc(0x4)
+};
+
+
+// Size 0x18
+struct SoundTrackKey
+{
+public:
+	float                                                        Time;                                              // 0x0(0x4)
+	float                                                        Volume;                                            // 0x4(0x4)
+	float                                                        Pitch;                                             // 0x8(0x4)
+	class SoundBase*                                             Sound;                                             // 0x10(0x8)
+};
+
+
+// Size 0x30
+struct AlphaBlend
+{
+public:
+	char                                                         BlendOption;                                       // 0x0(0x1)
+	float                                                        BeginValue;                                        // 0x4(0x4)
+	float                                                        DesiredValue;                                      // 0x8(0x4)
+	float                                                        BlendTime;                                         // 0xc(0x4)
+	class CurveFloat*                                            CustomCurve;                                       // 0x10(0x8)
+	float                                                        AlphaLerp;                                         // 0x18(0x4)
+	float                                                        AlphaBlend;                                        // 0x1c(0x4)
+	float                                                        AlphaTarget;                                       // 0x20(0x4)
+	float                                                        BlendTimeRemaining;                                // 0x24(0x4)
+	float                                                        BlendedValue;                                      // 0x28(0x4)
+};
+
+
+// Size 0x1c
+struct ScalarParameterValue
+{
+public:
+	struct FName                                                 ParameterName;                                     // 0x0(0x8)
+	float                                                        ParameterValue;                                    // 0x8(0x4)
+	struct                                                       ExpressionGUID;                                    // 0xc(0x10)
+};
+
+
+// Size 0x48
+struct CustomInput
+{
+public:
+	struct FString                                               InputName;                                         // 0x0(0x10)
+	struct                                                       Input;                                             // 0x10(0x38)
+};
+
+
+// Size 0x90
+struct FloatCurve
+{
+public:
+	struct                                                       FloatCurve;                                        // 0x18(0x78)
+};
+
+
+// Size 0x48
+struct NetRelevancyActorClusterStat
+{
+public:
+	struct FString                                               Name;                                              // 0x0(0x10)
+	TArray<String>                                               SubClusters;                                       // 0x10(0x10)
+	struct FString                                               Type;                                              // 0x20(0x10)
+	struct FString                                               Owner;                                             // 0x30(0x10)
+	bool                                                         IsCustomNamed;                                     // 0x40(0x1)
+	bool                                                         NeedsPreparation;                                  // 0x41(0x1)
+};
+
+
+// Size 0x18
+struct MaterialParameterCollectionInfo
+{
+public:
+	struct                                                       StateId;                                           // 0x0(0x10)
+	class MaterialParameterCollection*                           ParameterCollection;                               // 0x10(0x8)
+};
+
+
+// Size 0x28
+struct ViewTargetTransitionParams
+{
+public:
+	float                                                        BlendTime;                                         // 0x0(0x4)
+	char                                                         BlendFunction;                                     // 0x4(0x1)
+	float                                                        BlendExp;                                          // 0x8(0x4)
+	bool                                                         bLockOutgoing;                                     // 0xc(0x1)
+};
+
+
+// Size 0x18
+struct LatentActionInfo
+{
+public:
+	int                                                          Linkage;                                           // 0x0(0x4)
+	int                                                          UUID;                                              // 0x4(0x4)
+	struct FName                                                 ExecutionFunction;                                 // 0x8(0x8)
+	class Object*                                                CallbackTarget;                                    // 0x10(0x8)
+};
+
+
+// Size 0x28
+struct BatchedPoint
+{
+public:
+	struct                                                       Position;                                          // 0x0(0xc)
+	struct                                                       Color;                                             // 0xc(0x10)
+	float                                                        PointSize;                                         // 0x1c(0x4)
+	float                                                        RemainingLifeTime;                                 // 0x20(0x4)
+	char                                                         DepthPriority;                                     // 0x24(0x1)
+};
+
+
+// Size 0x18
+struct InterpGroupActorInfo
+{
+public:
+	struct FName                                                 ObjectName;                                        // 0x0(0x8)
+	TArray<class Actor*>                                         Actors;                                            // 0x8(0x10)
+};
+
+
+// Size 0x28
+struct ClusterNode
+{
+public:
+	struct                                                       BoundMin;                                          // 0x0(0xc)
+	int                                                          FirstChild;                                        // 0xc(0x4)
+	struct                                                       BoundMax;                                          // 0x10(0xc)
+	int                                                          LastChild;                                         // 0x1c(0x4)
+	int                                                          FirstInstance;                                     // 0x20(0x4)
+	int                                                          LastInstance;                                      // 0x24(0x4)
+};
+
+
+// Size 0x38
+struct BasedPosition
+{
+public:
+	class Actor*                                                 Base;                                              // 0x0(0x8)
+	struct                                                       Position;                                          // 0x8(0xc)
+	struct                                                       CachedBaseLocation;                                // 0x14(0xc)
+	struct                                                       CachedBaseRotation;                                // 0x20(0xc)
+	struct                                                       CachedTransPosition;                               // 0x2c(0xc)
+};
+
+
+// Size 0x8
+struct BoneMirrorInfo
+{
+public:
+	int                                                          SourceIndex;                                       // 0x0(0x4)
+	char                                                         BoneFlipAxis;                                      // 0x4(0x1)
+};
+
+
+// Size 0x24
+struct VOscillator
+{
+public:
+	struct                                                       X;                                                 // 0x0(0xc)
+	struct                                                       Y;                                                 // 0xc(0xc)
+	struct                                                       Z;                                                 // 0x18(0xc)
+};
+
+
+// Size 0x20
+struct SupportedSubTrackInfo
+{
+public:
+	class UClass*                                                SupportedClass;                                    // 0x0(0x8)
+	struct FString                                               SubTrackName;                                      // 0x8(0x10)
+	int                                                          GroupIndex;                                        // 0x18(0x4)
+};
+
+
+// Size 0x18
+struct TTEventTrack
+{
+public:
+	class CurveFloat*                                            CurveKeys;                                         // 0x10(0x8)
+};
+
+
+// Size 0x20
+struct MurkyRegion
+{
+public:
+	bool                                                         Enabled;                                           // 0x0(0x1)
+	struct                                                       Position;                                          // 0x4(0xc)
+	float                                                        InnerRadius;                                       // 0x10(0x4)
+	float                                                        OuterRadius;                                       // 0x14(0x4)
+	float                                                        Density;                                           // 0x18(0x4)
+	bool                                                         IsSuperHeatedWater;                                // 0x1c(0x1)
+};
+
+
+// Size 0x14
+struct BlueprintInputAxisDelegateBinding
+{
+public:
+	struct FName                                                 InputAxisName;                                     // 0x4(0x8)
+	struct FName                                                 FunctionNameToBind;                                // 0xc(0x8)
+};
+
+
+// Size 0x40
+struct MeshBuildSettings
+{
+public:
+	bool                                                         bUseMikkTSpace;                                    // 0x0(0x1)
+	bool                                                         bRecomputeNormals;                                 // 0x1(0x1)
+	bool                                                         bRecomputeTangents;                                // 0x2(0x1)
+	bool                                                         bRemoveDegenerates;                                // 0x3(0x1)
+	bool                                                         bBuildAdjacencyBuffer;                             // 0x4(0x1)
+	bool                                                         bUseFullPrecisionUVs;                              // 0x5(0x1)
+	bool                                                         bGenerateLightmapUVs;                              // 0x6(0x1)
+	struct                                                       PresortedBillboardsParams;                         // 0x8(0x8)
+	int                                                          MinLightmapResolution;                             // 0x10(0x4)
+	int                                                          SrcLightmapIndex;                                  // 0x14(0x4)
+	int                                                          DstLightmapIndex;                                  // 0x18(0x4)
+	float                                                        BuildScale;                                        // 0x1c(0x4)
+	struct                                                       BuildScale3D;                                      // 0x20(0xc)
+	float                                                        DistanceFieldResolutionScale;                      // 0x2c(0x4)
+	bool                                                         bGenerateDistanceFieldAsIfTwoSided;                // 0x30(0x1)
+	class StaticMesh*                                            DistanceFieldReplacementMesh;                      // 0x38(0x8)
+};
+
+
+// Size 0x14
+struct BoxElement2D
+{
+public:
+	struct                                                       Center;                                            // 0x0(0x8)
+	float                                                        Width;                                             // 0x8(0x4)
+	float                                                        Height;                                            // 0xc(0x4)
+	float                                                        Angle;                                             // 0x10(0x4)
+};
+
+
+// Size 0x14
+struct DeformablesSettings
+{
+public:
+	float                                                        DistanceStiffness;                                 // 0x0(0x4)
+	float                                                        VolumeStiffness;                                   // 0x4(0x4)
+	float                                                        Damping;                                           // 0x8(0x4)
+	float                                                        MaxDistance;                                       // 0xc(0x4)
+	float                                                        WeightMultiplier;                                  // 0x10(0x4)
+};
+
+
+// Size 0x50
+struct InstancedStaticMeshInstanceData
+{
+public:
+	struct                                                       Transform;                                         // 0x0(0x40)
+	struct                                                       LightmapUVBias;                                    // 0x40(0x8)
+	struct                                                       ShadowmapUVBias;                                   // 0x48(0x8)
+};
+
+
+// Size 0x90
+struct NetRelevancyConnectionStat
+{
+public:
+	int                                                          Id;                                                // 0x0(0x4)
+	struct                                                       Viewer;                                            // 0x8(0x58)
+	TArray<struct IntPoint>                                      ViewerGridLocations;                               // 0x60(0x10)
+	TArray<String>                                               DormantActors;                                     // 0x70(0x10)
+	TArray<String>                                               ConsideredActors;                                  // 0x80(0x10)
+};
+
+
+// Size 0x18
+struct AnimGroupInfo
+{
+public:
+	struct FName                                                 Name;                                              // 0x0(0x8)
+	struct                                                       Color;                                             // 0x8(0x10)
+};
+
+
+// Size 0x10
+struct CustomChannelSetup
+{
+public:
+	char                                                         Channel;                                           // 0x0(0x1)
+	struct FName                                                 Name;                                              // 0x4(0x8)
+	char                                                         DefaultResponse;                                   // 0xc(0x1)
+	bool                                                         bTraceType;                                        // 0xd(0x1)
+	bool                                                         bStaticObject;                                     // 0xe(0x1)
+};
+
+
+// Size 0x20
+struct LaunchOnTestSettings
+{
+public:
+	struct                                                       LaunchOnTestmap;                                   // 0x0(0x10)
+	struct FString                                               DeviceID;                                          // 0x10(0x10)
+};
+
+
+// Size 0x14
+struct NetActorPtr
+{
+public:
+	struct                                                       ObjectPtr;                                         // 0x0(0x14)
+};
+
+
+// Size 0x8
+struct WalkableSlopeOverride
+{
+public:
+	char                                                         WalkableSlopeBehavior;                             // 0x0(0x1)
+	float                                                        WalkableSlopeAngle;                                // 0x4(0x4)
+};
+
+
+// Size 0x70
+struct ExposedValueCopyRecord
+{
+public:
+	class Property*                                              SourceProperty;                                    // 0x0(0x8)
+	struct FName                                                 SourcePropertyName;                                // 0x8(0x8)
+	TArray<struct Name>                                          SourceSubPropertyNames;                            // 0x10(0x10)
+	int                                                          SourceArrayIndex;                                  // 0x20(0x4)
+	class Property*                                              DestProperty;                                      // 0x28(0x8)
+	int                                                          DestArrayIndex;                                    // 0x30(0x4)
+	int                                                          Size;                                              // 0x34(0x4)
+	char                                                         PostCopyOperation;                                 // 0x38(0x1)
+	class BoolProperty*                                          CachedBoolSourceProperty;                          // 0x40(0x8)
+	class BoolProperty*                                          CachedBoolDestProperty;                            // 0x48(0x8)
+};
+
+
+// Size 0x70
+struct GPUSpriteLocalVectorFieldInfo
+{
+public:
+	class VectorField*                                           Field;                                             // 0x0(0x8)
+	struct                                                       Transform;                                         // 0x10(0x30)
+	struct                                                       MinInitialRotation;                                // 0x40(0xc)
+	struct                                                       MaxInitialRotation;                                // 0x4c(0xc)
+	struct                                                       RotationRate;                                      // 0x58(0xc)
+	float                                                        Intensity;                                         // 0x64(0x4)
+	float                                                        Tightness;                                         // 0x68(0x4)
+	bool                                                         bIgnoreComponentTransform;                         // 0x6c(0x1)
+	bool                                                         bTileX;                                            // 0x6c(0x1)
+	bool                                                         bTileY;                                            // 0x6c(0x1)
+	bool                                                         bTileZ;                                            // 0x6c(0x1)
+};
+
+
+// Size 0x20
+struct DebugFloatHistory
+{
+public:
+	TArray<float>                                                Samples;                                           // 0x0(0x10)
+	float                                                        MaxSamples;                                        // 0x10(0x4)
+	float                                                        MinValue;                                          // 0x14(0x4)
+	float                                                        MaxValue;                                          // 0x18(0x4)
+	bool                                                         bAutoAdjustMinMax;                                 // 0x1c(0x1)
+};
+
+
+// Size 0x58
+struct IndexedCurve
+{
+public:
+	struct                                                       KeyHandlesToIndices;                               // 0x8(0x50)
+};
+
+
+// Size 0x38
+struct MemberReference
+{
+public:
+	class Object*                                                MemberParent;                                      // 0x0(0x8)
+	struct FString                                               MemberScope;                                       // 0x8(0x10)
+	struct FName                                                 MemberName;                                        // 0x18(0x8)
+	struct                                                       MemberGuid;                                        // 0x20(0x10)
+	bool                                                         bSelfContext;                                      // 0x30(0x1)
+	bool                                                         bWasDeprecated;                                    // 0x31(0x1)
+};
+
+
+// Size 0x28
+struct A2CSPose
+{
+public:
+	TArray<char>                                                 ComponentSpaceFlags;                               // 0x18(0x10)
+};
+
+
+// Size 0x40
+struct AnimNode_TransitionResult
+{
+public:
+	bool                                                         bCanEnterTransition;                               // 0x30(0x1)
+};
+
+
+// Size 0x30
+struct AnimNode_Base
+{
+public:
+	struct                                                       EvaluateGraphExposedInputs;                        // 0x8(0x28)
+};
+
+
+// Size 0x70
+struct AnimationNode_TwoWayBlend
+{
+public:
+	struct                                                       A;                                                 // 0x30(0x18)
+	struct                                                       B;                                                 // 0x48(0x18)
+	float                                                        Alpha;                                             // 0x60(0x4)
+	struct                                                       AlphaScaleBias;                                    // 0x64(0x8)
+};
+
+
+// Size 0x3c
+struct TextureLODGroup
+{
+public:
+	char                                                         Group;                                             // 0x0(0x1)
+	int                                                          LODBias;                                           // 0xc(0x4)
+	int                                                          NumStreamedMips;                                   // 0x14(0x4)
+	char                                                         MipGenSettings;                                    // 0x18(0x1)
+	int                                                          MinLODSize;                                        // 0x1c(0x4)
+	int                                                          MaxLODSize;                                        // 0x20(0x4)
+	struct FName                                                 MinMagFilter;                                      // 0x24(0x8)
+	struct FName                                                 MipFilter;                                         // 0x2c(0x8)
+	int                                                          TextureQualityReduction;                           // 0x34(0x4)
+	int                                                          bDisableMaxTextureResolutionOverride;              // 0x38(0x4)
+};
+
+
+// Size 0x18
+struct FontCharacter
+{
+public:
+	int                                                          StartU;                                            // 0x0(0x4)
+	int                                                          StartV;                                            // 0x4(0x4)
+	int                                                          USize;                                             // 0x8(0x4)
+	int                                                          VSize;                                             // 0xc(0x4)
+	char                                                         TextureIndex;                                      // 0x10(0x1)
+	int                                                          VerticalOffset;                                    // 0x14(0x4)
+};
+
+
+// Size 0x50
+struct MeshMergingSettings
+{
+public:
+	bool                                                         bGenerateLightMapUV;                               // 0x0(0x1)
+	int                                                          TargetLightMapUVChannel;                           // 0x4(0x4)
+	int                                                          TargetLightMapResolution;                          // 0x8(0x4)
+	bool                                                         bImportVertexColors;                               // 0xc(0x1)
+	bool                                                         bPivotPointAtZero;                                 // 0xd(0x1)
+	bool                                                         bMergePhysicsData;                                 // 0xe(0x1)
+	bool                                                         bMergeMaterials;                                   // 0xf(0x1)
+	bool                                                         bExportNormalMap;                                  // 0x10(0x1)
+	bool                                                         bExportMetallicMap;                                // 0x11(0x1)
+	bool                                                         bExportRoughnessMap;                               // 0x12(0x1)
+	bool                                                         bExportSpecularMap;                                // 0x13(0x1)
+	int                                                          MergedMaterialAtlasResolution;                     // 0x14(0x4)
+	bool                                                         bEnableCollisionMerging;                           // 0x18(0x1)
+	bool                                                         bUseRelativeTransform;                             // 0x19(0x1)
+	bool                                                         bMergeRelativeToFirstComponent;                    // 0x1a(0x1)
+	bool                                                         bDuplicateLODs;                                    // 0x1b(0x1)
+	TArray<float>                                                LODScreenSizes;                                    // 0x20(0x10)
+	int                                                          LODForCollision;                                   // 0x30(0x4)
+	TArray<float>                                                LODReductionPercentTriangles;                      // 0x38(0x10)
+	int                                                          MaxNumberOfLODs;                                   // 0x48(0x4)
+};
+
+
+// Size 0x38
+struct CompressedTrack
+{
+public:
+	TArray<char>                                                 ByteStream;                                        // 0x0(0x10)
+	TArray<float>                                                Times;                                             // 0x10(0x10)
+	float                                                        Mins;                                              // 0x20(0x4)
+	float                                                        Ranges;                                            // 0x2c(0x4)
+};
+
+
+// Size 0x18
+struct OverlapResult
+{
+public:
+	class Actor*                                                 Actor;                                             // 0x0(0x8)
+	class PrimitiveComponent*                                    Component;                                         // 0x8(0x8)
+	bool                                                         bBlockingHit;                                      // 0x14(0x1)
+};
+
+
+// Size 0x8
+struct ExposureSettings
+{
+public:
+	int                                                          LogOffset;                                         // 0x0(0x4)
+	bool                                                         bFixed;                                            // 0x4(0x1)
+};
+
+
+// Size 0x70
+struct AnimNode_MultiWayBlend
+{
+public:
+	TArray<struct PoseLink>                                      Poses;                                             // 0x30(0x10)
+	TArray<float>                                                DesiredAlphas;                                     // 0x40(0x10)
+	bool                                                         bAdditiveNode;                                     // 0x50(0x1)
+	bool                                                         bNormalizeAlpha;                                   // 0x51(0x1)
+	struct                                                       AlphaScaleBias;                                    // 0x54(0x8)
+};
+
+
+// Size 0x20
+struct SupportedAreaData
+{
+public:
+	struct FString                                               AreaClassName;                                     // 0x0(0x10)
+	int                                                          AreaID;                                            // 0x10(0x4)
+	class UClass*                                                AreaClass;                                         // 0x18(0x8)
+};
+
+
+// Size 0x8
+struct MeshSectionInfo
+{
+public:
+	int                                                          MaterialIndex;                                     // 0x0(0x4)
+	bool                                                         bEnableCollision;                                  // 0x4(0x1)
+	bool                                                         bCastShadow;                                       // 0x5(0x1)
+};
+
+
+// Size 0x8
+struct IntegralKey
+{
+public:
+	float                                                        Time;                                              // 0x0(0x4)
+	int                                                          Value;                                             // 0x4(0x4)
+};
+
+
+// Size 0xc
+struct FeatureFlag
+{
+public:
+	struct FName                                                 FeatureName;                                       // 0x0(0x8)
+	bool                                                         InverseToggle;                                     // 0x8(0x1)
+};
+
+
+// Size 0x8
+struct AnimExtractContext
+{
+public:
+	bool                                                         bExtractRootMotion;                                // 0x0(0x1)
+	float                                                        CurrentTime;                                       // 0x4(0x4)
+};
+
+
+// Size 0x50
+struct ReplicatedPhysicsState
+{
+public:
+	class PrimitiveComponent*                                    MovementBase;                                      // 0x0(0x8)
+	class SceneComponent*                                        AttachParent;                                      // 0x8(0x8)
+	struct                                                       ReplicatedMovement;                                // 0x10(0x38)
+	bool                                                         IsAttached;                                        // 0x48(0x1)
+};
+
+
+// Size 0x28
+struct FontRenderInfo
+{
+public:
+	bool                                                         bClipText;                                         // 0x0(0x1)
+	bool                                                         bEnableShadow;                                     // 0x0(0x1)
+	struct                                                       GlowInfo;                                          // 0x4(0x24)
+};
+
+
+// Size 0x30
+struct ReplicatedTransformState
+{
+public:
+	class SceneComponent*                                        MovementBase;                                      // 0x0(0x8)
+	class SceneComponent*                                        AttachParent;                                      // 0x8(0x8)
+	struct                                                       ReplicatedMovement;                                // 0x10(0x18)
+	bool                                                         IsAttached;                                        // 0x28(0x1)
+};
+
+
+// Size 0xc
+struct ResponseChannel
+{
+public:
+	struct FName                                                 Channel;                                           // 0x0(0x8)
+	char                                                         Response;                                          // 0x8(0x1)
+};
+
+
+// Size 0xc
+struct GeomSelection
+{
+public:
+	int                                                          Type;                                              // 0x0(0x4)
+	int                                                          Index;                                             // 0x4(0x4)
+	int                                                          SelectionIndex;                                    // 0x8(0x4)
+};
+
+
+// Size 0x48
+struct AnimNode_HIKBase
+{
+public:
+	struct                                                       HIKSettings;                                       // 0x30(0x18)
+};
+
+
+// Size 0x18
+struct DataTableCategoryHandle
+{
+public:
+	class DataTable*                                             DataTable;                                         // 0x0(0x8)
+	struct FName                                                 ColumnName;                                        // 0x8(0x8)
+	struct FName                                                 RowContents;                                       // 0x10(0x8)
+};
+
+
+// Size 0x24
+struct MassPropertiesOverride
+{
+public:
+	struct                                                       InertiaTensorOverride;                             // 0x0(0xc)
+	struct                                                       COMTranslationOverride;                            // 0xc(0xc)
+	struct                                                       COMRotatorOverride;                                // 0x18(0xc)
+};
+
+
+// Size 0x28
+struct ComponentOverrideRecord
+{
+public:
+	class ActorComponent*                                        ComponentTemplate;                                 // 0x0(0x8)
+	struct                                                       ComponentKey;                                      // 0x8(0x20)
+};
+
+
+// Size 0x18
+struct CollectionParameterBase
+{
+public:
+	struct FName                                                 ParameterName;                                     // 0x0(0x8)
+	struct                                                       Id;                                                // 0x8(0x10)
+};
+
+
+// Size 0x28
+struct AssetEditorOrbitCameraPosition
+{
+public:
+	bool                                                         bIsSet;                                            // 0x0(0x1)
+	struct                                                       CamOrbitPoint;                                     // 0x4(0xc)
+	struct                                                       CamOrbitZoom;                                      // 0x10(0xc)
+	struct                                                       CamOrbitRotation;                                  // 0x1c(0xc)
+};
+
+
+// Size 0x38
+struct FullyLoadedPackagesInfo
+{
+public:
+	char                                                         FullyLoadType;                                     // 0x0(0x1)
+	struct FString                                               Tag;                                               // 0x8(0x10)
+	TArray<struct Name>                                          PackagesToLoad;                                    // 0x18(0x10)
+	TArray<class Object*>                                        LoadedObjects;                                     // 0x28(0x10)
+};
+
+
+// Size 0x28
+struct VectorParameterValue
+{
+public:
+	struct FName                                                 ParameterName;                                     // 0x0(0x8)
+	struct                                                       ParameterValue;                                    // 0x8(0x10)
+	struct                                                       ExpressionGUID;                                    // 0x18(0x10)
+};
+
+
+// Size 0x1
+struct DestructibleDepthParameters
+{
+public:
+	char                                                         ImpactDamageOverride;                              // 0x0(0x1)
+};
+
+
+// Size 0x10
+struct ParticleEditorPromotionSettings
+{
+public:
+	struct                                                       DefaultParticleAsset;                              // 0x0(0x10)
+};
+
+
+// Size 0x48
+struct VectorMaterialInput
+{
+public:
+	bool                                                         UseConstant;                                       // 0x38(0x1)
+	struct                                                       Constant;                                          // 0x3c(0xc)
+};
+
+
+// Size 0xa8
+struct AnimNode_StateMachine
+{
+public:
+	int                                                          StateMachineIndexInClass;                          // 0x30(0x4)
+	int                                                          MaxTransitionsPerFrame;                            // 0x34(0x4)
+	int                                                          CurrentState;                                      // 0x40(0x4)
+	float                                                        ElapsedTime;                                       // 0x44(0x4)
+};
+
+
+// Size 0x18
+struct PlayerAmbientLightOverrideSettings
+{
+public:
+	bool                                                         OverrideBodyLightAmbience;                         // 0x0(0x1)
+	float                                                        BodyLightAmbienceLightFactor;                      // 0x4(0x4)
+	float                                                        BodyLightAmbienceBlendWithDefault;                 // 0x8(0x4)
+	bool                                                         OverrideLanternAmbience;                           // 0xc(0x1)
+	float                                                        LanternAmbienceLightFactor;                        // 0x10(0x4)
+	float                                                        LanternAmbienceBlendWithDefault;                   // 0x14(0x4)
+};
+
+
+// Size 0x5b0
+struct CameraCacheEntry
+{
+public:
+	float                                                        TimeStamp;                                         // 0x0(0x4)
+	struct                                                       POV;                                               // 0x10(0x5a0)
+};
+
+
+// Size 0x58
+struct AnimNode_HIKPin
+{
+public:
+	float                                                        Alpha;                                             // 0x48(0x4)
+	float                                                        PinTStrength;                                      // 0x4c(0x4)
+	float                                                        PinRStrength;                                      // 0x50(0x4)
+	char                                                         Effector;                                          // 0x54(0x1)
+};
+
+
+// Size 0x10
+struct FilePath
+{
+public:
+	struct FString                                               FilePath;                                          // 0x0(0x10)
+};
+
+
+// Size 0x20
+struct BakedStateExitTransition
+{
+public:
+	int                                                          CanTakeDelegateIndex;                              // 0x0(0x4)
+	int                                                          CustomResultNodeIndex;                             // 0x4(0x4)
+	int                                                          TransitionIndex;                                   // 0x8(0x4)
+	bool                                                         bDesiredTransitionReturnValue;                     // 0xc(0x1)
+	bool                                                         bAutomaticRemainingTimeRule;                       // 0xd(0x1)
+	TArray<int>                                                  PoseEvaluatorLinks;                                // 0x10(0x10)
+};
+
+
+// Size 0x50
+struct EmitterDynamicParameter
+{
+public:
+	struct FName                                                 ParamName;                                         // 0x0(0x8)
+	bool                                                         bUseEmitterTime;                                   // 0x8(0x1)
+	bool                                                         bSpawnTimeOnly;                                    // 0x8(0x1)
+	char                                                         ValueMethod;                                       // 0xc(0x1)
+	bool                                                         bScaleVelocityByParamValue;                        // 0x10(0x1)
+	struct                                                       ParamValue;                                        // 0x18(0x38)
+};
+
+
+// Size 0x80
+struct AnimNode_TransitionPoseEvaluator
+{
+public:
+	char                                                         DataSource;                                        // 0x30(0x1)
+	char                                                         EvaluatorMode;                                     // 0x31(0x1)
+	int                                                          FramesToCachePose;                                 // 0x34(0x4)
+	int                                                          CacheFramesRemaining;                              // 0x78(0x4)
+};
+
+
+// Size 0x20
+struct DebugDisplayProperty
+{
+public:
+	class Object*                                                Obj;                                               // 0x0(0x8)
+	class UClass*                                                WithinClass;                                       // 0x8(0x8)
+};
+
+
+// Size 0x38
+struct AnimNode_RefPose
+{
+public:
+	char                                                         RefPoseType;                                       // 0x30(0x1)
+};
+
+
+// Size 0x70
+struct MeshProxySettings
+{
+public:
+	int                                                          ScreenSize;                                        // 0x0(0x4)
+	struct                                                       Material;                                          // 0x4(0x44)
+	int                                                          TextureWidth;                                      // 0x48(0x4)
+	int                                                          TextureHeight;                                     // 0x4c(0x4)
+	bool                                                         bExportNormalMap;                                  // 0x50(0x1)
+	bool                                                         bExportMetallicMap;                                // 0x51(0x1)
+	bool                                                         bExportRoughnessMap;                               // 0x52(0x1)
+	bool                                                         bExportSpecularMap;                                // 0x53(0x1)
+	bool                                                         bRecalculateNormals;                               // 0x54(0x1)
+	float                                                        HardAngleThreshold;                                // 0x58(0x4)
+	int                                                          MergeDistance;                                     // 0x5c(0x4)
+	bool                                                         bUseClippingPlane;                                 // 0x60(0x1)
+	float                                                        ClippingLevel;                                     // 0x64(0x4)
+	int                                                          AxisIndex;                                         // 0x68(0x4)
+	bool                                                         bPlaneNegativeHalfspace;                           // 0x6c(0x1)
+};
+
+
+// Size 0xf8
+struct StaticMeshSourceModel
+{
+public:
+	struct                                                       BuildSettings;                                     // 0x0(0x40)
+	struct                                                       ReductionSettings;                                 // 0x40(0x58)
+	struct                                                       RemeshingSettings;                                 // 0x98(0x50)
+	int                                                          OverriddenLightMapRes;                             // 0xe8(0x4)
+	float                                                        LODDistance;                                       // 0xec(0x4)
+	float                                                        ScreenSize;                                        // 0xf0(0x4)
+	float                                                        MaxDeviation;                                      // 0xf4(0x4)
+};
+
+
+// Size 0x20
+struct AnimControlTrackKey
+{
+public:
+	float                                                        StartTime;                                         // 0x0(0x4)
+	class AnimSequence*                                          AnimSeq;                                           // 0x8(0x8)
+	float                                                        AnimStartOffset;                                   // 0x10(0x4)
+	float                                                        AnimEndOffset;                                     // 0x14(0x4)
+	float                                                        AnimPlayRate;                                      // 0x18(0x4)
+	bool                                                         bLooping;                                          // 0x1c(0x1)
+	bool                                                         bReverse;                                          // 0x1c(0x1)
+};
+
+
+// Size 0x24
+struct DepthFieldGlowInfo
+{
+public:
+	bool                                                         bEnableGlow;                                       // 0x0(0x1)
+	struct                                                       GlowColor;                                         // 0x4(0x10)
+	struct                                                       GlowOuterRadius;                                   // 0x14(0x8)
+	struct                                                       GlowInnerRadius;                                   // 0x1c(0x8)
+};
+
+
+// Size 0x38
+struct AnimationTransitionBetweenStates
+{
+public:
+	int                                                          PreviousState;                                     // 0x8(0x4)
+	int                                                          NextState;                                         // 0xc(0x4)
+	float                                                        CrossfadeDuration;                                 // 0x10(0x4)
+	int                                                          StartNotify;                                       // 0x14(0x4)
+	int                                                          EndNotify;                                         // 0x18(0x4)
+	int                                                          InterruptNotify;                                   // 0x1c(0x4)
+	char                                                         BlendMode;                                         // 0x20(0x1)
+	class CurveFloat*                                            CustomCurve;                                       // 0x28(0x8)
+	char                                                         LogicType;                                         // 0x30(0x1)
+};
+
+
+// Size 0x20
+struct GameModePrefix
+{
+public:
+	struct FString                                               Prefix;                                            // 0x0(0x10)
+	struct FString                                               GameMode;                                          // 0x10(0x10)
+};
+
+
+// Size 0x10
+struct BlueprintInputTouchDelegateBinding
+{
+public:
+	char                                                         InputKeyEvent;                                     // 0x4(0x1)
+	struct FName                                                 FunctionNameToBind;                                // 0x8(0x8)
+};
+
+
+// Size 0x8
+struct PerBoneBlendWeight
+{
+public:
+	int                                                          SourceIndex;                                       // 0x0(0x4)
+	float                                                        BlendWeight;                                       // 0x4(0x4)
+};
+
+
+// Size 0x44
+struct LightmassWorldInfoSettings
+{
+public:
+	float                                                        StaticLightingLevelScale;                          // 0x0(0x4)
+	int                                                          NumIndirectLightingBounces;                        // 0x4(0x4)
+	float                                                        IndirectLightingQuality;                           // 0x8(0x4)
+	float                                                        IndirectLightingSmoothness;                        // 0xc(0x4)
+	struct                                                       EnvironmentColor;                                  // 0x10(0x4)
+	float                                                        EnvironmentIntensity;                              // 0x14(0x4)
+	float                                                        EmissiveBoost;                                     // 0x18(0x4)
+	float                                                        DiffuseBoost;                                      // 0x1c(0x4)
+	bool                                                         bUseAmbientOcclusion;                              // 0x20(0x1)
+	bool                                                         bGenerateAmbientOcclusionMaterialMask;             // 0x20(0x1)
+	float                                                        DirectIlluminationOcclusionFraction;               // 0x24(0x4)
+	float                                                        IndirectIlluminationOcclusionFraction;             // 0x28(0x4)
+	float                                                        OcclusionExponent;                                 // 0x2c(0x4)
+	float                                                        FullyOccludedSamplesFraction;                      // 0x30(0x4)
+	float                                                        MaxOcclusionDistance;                              // 0x34(0x4)
+	bool                                                         bVisualizeMaterialDiffuse;                         // 0x38(0x1)
+	bool                                                         bVisualizeAmbientOcclusion;                        // 0x38(0x1)
+	float                                                        VolumeLightSamplePlacementScale;                   // 0x3c(0x4)
+	bool                                                         bCompressLightmaps;                                // 0x40(0x1)
+};
+
+
+// Size 0x70
+struct AnimNode_HIKReachRotator
+{
+public:
+	float                                                        Alpha;                                             // 0x48(0x4)
+	float                                                        ReachT;                                            // 0x4c(0x4)
+	float                                                        ReachR;                                            // 0x50(0x4)
+	struct                                                       Translation;                                       // 0x54(0xc)
+	struct                                                       Orientation;                                       // 0x60(0xc)
+	char                                                         Effector;                                          // 0x6c(0x1)
+	char                                                         EffectorSpace;                                     // 0x6d(0x1)
+};
+
+
+// Size 0x18
+struct CurveTrack
+{
+public:
+	struct FName                                                 CurveName;                                         // 0x0(0x8)
+	TArray<float>                                                CurveWeights;                                      // 0x8(0x10)
+};
+
+
+// Size 0x8
+struct ToggleTrackKey
+{
+public:
+	float                                                        Time;                                              // 0x0(0x4)
+	char                                                         ToggleAction;                                      // 0x4(0x1)
+};
+
+
+// Size 0x60
+struct CanvasUVTri
+{
+public:
+	struct                                                       V0_Pos;                                            // 0x0(0x8)
+	struct                                                       V0_UV;                                             // 0x8(0x8)
+	struct                                                       V0_Color;                                          // 0x10(0x10)
+	struct                                                       V1_Pos;                                            // 0x20(0x8)
+	struct                                                       V1_UV;                                             // 0x28(0x8)
+	struct                                                       V1_Color;                                          // 0x30(0x10)
+	struct                                                       V2_Pos;                                            // 0x40(0x8)
+	struct                                                       V2_UV;                                             // 0x48(0x8)
+	struct                                                       V2_Color;                                          // 0x50(0x10)
+};
+
+
+// Size 0x1e8
+struct RuntimeCurveLinearColor
+{
+public:
+	struct                                                       ColorCurves;                                       // 0x0(0x78)
+	class CurveLinearColor*                                      ExternalCurve;                                     // 0x1e0(0x8)
+};
+
+
+// Size 0x28
+struct SubTrackGroup
+{
+public:
+	struct FString                                               GroupName;                                         // 0x0(0x10)
+	TArray<int>                                                  TrackIndices;                                      // 0x10(0x10)
+	bool                                                         bIsCollapsed;                                      // 0x20(0x1)
+	bool                                                         bIsSelected;                                       // 0x20(0x1)
+};
+
+
+// Size 0x1c
+struct StaticMeshOptimizationSettings
+{
+public:
+	char                                                         ReductionMethod;                                   // 0x0(0x1)
+	float                                                        NumOfTrianglesPercentage;                          // 0x4(0x4)
+	float                                                        MaxDeviationPercentage;                            // 0x8(0x4)
+	float                                                        WeldingThreshold;                                  // 0xc(0x4)
+	bool                                                         bRecalcNormals;                                    // 0x10(0x1)
+	float                                                        NormalsThreshold;                                  // 0x14(0x4)
+	char                                                         SilhouetteImportance;                              // 0x18(0x1)
+	char                                                         TextureImportance;                                 // 0x19(0x1)
+	char                                                         ShadingImportance;                                 // 0x1a(0x1)
+};
+
+
+// Size 0x100
+struct HapticFeedbackDetails
+{
+public:
+	struct                                                       Frequency;                                         // 0x0(0x80)
+	struct                                                       Amplitude;                                         // 0x80(0x80)
+};
+
+
+// Size 0x8
+struct ActorPtr
+{
+public:
+	class Actor*                                                 Actor;                                             // 0x0(0x8)
+};
+
+
+// Size 0xc
+struct EventTrackKey
+{
+public:
+	float                                                        Time;                                              // 0x0(0x4)
+	struct FName                                                 EventName;                                         // 0x4(0x8)
+};
+
+
+// Size 0xc0
+struct AnimNode_BlendListByObject
+{
+public:
+	class UClass*                                                ActiveTypeValue;                                   // 0xa8(0x8)
+	TArray<class Class*>                                         ObjectToPoseIndex;                                 // 0xb0(0x10)
+};
+
+
+// Size 0x58
+struct AnimNode_HIKTest
+{
+public:
+	float                                                        Alpha;                                             // 0x48(0x4)
+	float                                                        Param;                                             // 0x4c(0x4)
+	float                                                        Intensity;                                         // 0x50(0x4)
+};
+
+
+// Size 0x28
+struct DistributionLookupTable
+{
+public:
+	char                                                         Op;                                                // 0x0(0x1)
+	char                                                         EntryCount;                                        // 0x1(0x1)
+	char                                                         EntryStride;                                       // 0x2(0x1)
+	char                                                         SubEntryStride;                                    // 0x3(0x1)
+	float                                                        TimeScale;                                         // 0x4(0x4)
+	float                                                        TimeBias;                                          // 0x8(0x4)
+	TArray<float>                                                Values;                                            // 0x10(0x10)
+	char                                                         LockFlag;                                          // 0x20(0x1)
+};
+
+
+// Size 0xa60
+struct GPUSpriteResourceData
+{
+public:
+	TArray<struct Color>                                         QuantizedColorSamples;                             // 0x0(0x10)
+	TArray<struct Color>                                         QuantizedMiscSamples;                              // 0x10(0x10)
+	TArray<struct Color>                                         QuantizedDynamicParamSamples;                      // 0x20(0x10)
+	TArray<struct Color>                                         QuantizedSimulationAttrSamples;                    // 0x30(0x10)
+	TArray<struct Color>                                         QuantizedSizeOverVelocitySamples;                  // 0x40(0x10)
+	struct                                                       ColorScale;                                        // 0x50(0x10)
+	struct                                                       ColorBias;                                         // 0x60(0x10)
+	struct                                                       MiscScale;                                         // 0x70(0x10)
+	struct                                                       MiscBias;                                          // 0x80(0x10)
+	struct                                                       DynParamScale;                                     // 0x90(0x10)
+	struct                                                       DynParamBias;                                      // 0xa0(0x10)
+	struct                                                       MurkyColorScale;                                   // 0xb0(0x10)
+	struct                                                       SimulationAttrCurveScale;                          // 0xc0(0x10)
+	struct                                                       SimulationAttrCurveBias;                           // 0xd0(0x10)
+	struct                                                       SizeOverVelocityScale;                             // 0xe0(0x10)
+	struct                                                       SizeOverVelocityBias;                              // 0xf0(0x10)
+	struct                                                       SubImageSize;                                      // 0x100(0x10)
+	struct                                                       SizeBySpeed;                                       // 0x110(0x10)
+	struct                                                       ConstantAcceleration;                              // 0x120(0xc)
+	struct                                                       OrbitOffsetBase;                                   // 0x12c(0xc)
+	struct                                                       OrbitOffsetRange;                                  // 0x138(0xc)
+	struct                                                       OrbitFrequencyBase;                                // 0x144(0xc)
+	struct                                                       OrbitFrequencyRange;                               // 0x150(0xc)
+	struct                                                       OrbitPhaseBase;                                    // 0x15c(0xc)
+	struct                                                       OrbitPhaseRange;                                   // 0x168(0xc)
+	float                                                        GlobalVectorFieldScale;                            // 0x174(0x4)
+	float                                                        GlobalVectorFieldTightness;                        // 0x178(0x4)
+	float                                                        PerParticleVectorFieldScale;                       // 0x17c(0x4)
+	float                                                        PerParticleVectorFieldBias;                        // 0x180(0x4)
+	float                                                        DragCoefficientScale;                              // 0x184(0x4)
+	float                                                        DragCoefficientBias;                               // 0x19c(0x4)
+	float                                                        DragLocalVelocityScale;                            // 0x1b4(0x4)
+	float                                                        DragLocalVelocityBias;                             // 0x1cc(0x4)
+	float                                                        ResilienceScale;                                   // 0x1e4(0x4)
+	float                                                        ResilienceBias;                                    // 0x1e8(0x4)
+	float                                                        CollisionRadiusScale;                              // 0x1ec(0x4)
+	float                                                        CollisionRadiusBias;                               // 0x1f0(0x4)
+	float                                                        CollisionTimeBias;                                 // 0x1f4(0x4)
+	float                                                        OneMinusFriction;                                  // 0x1f8(0x4)
+	float                                                        CameraMotionBlurAmount;                            // 0x1fc(0x4)
+	float                                                        AlphaThreshold;                                    // 0x200(0x4)
+	char                                                         ScreenAlignment;                                   // 0x204(0x1)
+	char                                                         LockAxisFlag;                                      // 0x20a(0x1)
+	struct                                                       PivotOffset;                                       // 0x20c(0x8)
+	float                                                        AlignmentInheritedVelocityScale;                   // 0x680(0x4)
+	char                                                         SpawnLocationValueSemantic;                        // 0xa58(0x1)
+};
+
+
+// Size 0xc0
+struct AnimNode_HIKFloorContact
+{
+public:
+	bool                                                         FeetContact;                                       // 0x48(0x1)
+	bool                                                         HandsContact;                                      // 0x49(0x1)
+	bool                                                         FingersContact;                                    // 0x4a(0x1)
+	bool                                                         ToesContact;                                       // 0x4b(0x1)
+	char                                                         FeetContactType;                                   // 0x4c(0x1)
+	char                                                         HandsContactType;                                  // 0x4d(0x1)
+	float                                                        DistanceUp;                                        // 0x50(0x4)
+	float                                                        DistanceDown;                                      // 0x54(0x4)
+	int                                                          NbRays;                                            // 0x58(0x4)
+	float                                                        FootRadius;                                        // 0x5c(0x4)
+	float                                                        DeltaTime;                                         // 0x60(0x4)
+	float                                                        Smoothing;                                         // 0x64(0x4)
+	struct                                                       OverrideRaycastCollisionResponse;                  // 0x68(0x20)
+	float                                                        FeetHeight;                                        // 0x88(0x4)
+	float                                                        FeetBack;                                          // 0x8c(0x4)
+	float                                                        FeetMiddle;                                        // 0x90(0x4)
+	float                                                        FeetFront;                                         // 0x94(0x4)
+	float                                                        FeetInSide;                                        // 0x98(0x4)
+	float                                                        FeetOutSide;                                       // 0x9c(0x4)
+	float                                                        HandsHeight;                                       // 0xa0(0x4)
+	float                                                        HandsBack;                                         // 0xa4(0x4)
+	float                                                        HandsMiddle;                                       // 0xa8(0x4)
+	float                                                        HandsFront;                                        // 0xac(0x4)
+	float                                                        HandsInSide;                                       // 0xb0(0x4)
+	float                                                        HandsOutSide;                                      // 0xb4(0x4)
+};
+
+
+// Size 0x30
+struct BlueprintInputAxisKeyDelegateBinding
+{
+public:
+	struct                                                       AxisKey;                                           // 0x8(0x20)
+	struct FName                                                 FunctionNameToBind;                                // 0x28(0x8)
+};
+
+
+// Size 0x48
+struct SimulatedRootMotionReplicatedMove
+{
+public:
+	float                                                        Time;                                              // 0x0(0x4)
+	struct                                                       RootMotion;                                        // 0x8(0x40)
+};
+
+
+// Size 0x248
+struct FFTWaterComponentParticleParams
+{
+public:
+	int                                                          MaxParticlesPerFrame;                              // 0x0(0x4)
+	struct                                                       WaveParticles;                                     // 0x8(0x38)
+	struct                                                       IntersectionParticles;                             // 0xe8(0x58)
+};
+
+
+// Size 0xc
+struct HIKBoneMapping
+{
+public:
+	struct FName                                                 UnrealBoneName;                                    // 0x0(0x8)
+	int                                                          HumanIKBone;                                       // 0x8(0x4)
+};
+
+
+// Size 0x10
+struct ConvexElement2D
+{
+public:
+	TArray<struct Vector2D>                                      VertexData;                                        // 0x0(0x10)
+};
+
+
+// Size 0x28
+struct TransformBase
+{
+public:
+	struct FName                                                 Node;                                              // 0x0(0x8)
+	struct                                                       Constraints;                                       // 0x8(0x10)
+};
+
+
+// Size 0x18
+struct FlatWaterMeshTextureOverride
+{
+public:
+	class Texture*                                               Texture;                                           // 0x10(0x8)
+};
+
+
+// Size 0x18
+struct DialogueContext
+{
+public:
+	class DialogueVoice*                                         Speaker;                                           // 0x0(0x8)
+	TArray<class DialogueVoice*>                                 Targets;                                           // 0x8(0x10)
+};
+
+
+// Size 0x70
+struct URL
+{
+public:
+	struct FString                                               Protocol;                                          // 0x0(0x10)
+	struct FString                                               Host;                                              // 0x10(0x10)
+	int                                                          Port;                                              // 0x20(0x4)
+	struct FString                                               Map;                                               // 0x28(0x10)
+	struct FString                                               RedirectURL;                                       // 0x38(0x10)
+	TArray<String>                                               Op;                                                // 0x48(0x10)
+	struct FString                                               Portal;                                            // 0x58(0x10)
+	int                                                          Valid;                                             // 0x68(0x4)
+};
+
+
+// Size 0x90
+struct AnimNode_SaveCachedPose
+{
+public:
+	int16                                                        LastInitializedContextCounter;                     // 0x30(0x2)
+	int16                                                        LastCacheBonesContextCounter;                      // 0x32(0x2)
+	int16                                                        LastUpdatedContextCounter;                         // 0x34(0x2)
+	int16                                                        LastEvaluatedContextCounter;                       // 0x36(0x2)
+	struct                                                       Pose;                                              // 0x38(0x18)
+};
+
+
+// Size 0x18
+struct WrappedStringElement
+{
+public:
+	struct FString                                               Value;                                             // 0x0(0x10)
+	struct                                                       LineExtent;                                        // 0x10(0x8)
+};
+
+
+// Size 0x40
+struct ScalarMaterialInput
+{
+public:
+	bool                                                         UseConstant;                                       // 0x38(0x1)
+	float                                                        Constant;                                          // 0x3c(0x4)
+};
+
+
+// Size 0x10
+struct CustomPrimitiveData
+{
+public:
+	TArray<float>                                                Data;                                              // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct AnimSetMeshLinkup
+{
+public:
+	TArray<int>                                                  BoneToTrackTable;                                  // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct SkeletalMaterial
+{
+public:
+	class MaterialInterface*                                     MaterialInterface;                                 // 0x0(0x8)
+	bool                                                         bEnableShadowCasting;                              // 0x8(0x1)
+};
+
+
+// Size 0x18
+struct LevelStreamingStatusUpdateInfo
+{
+public:
+	struct FString                                               PackageName;                                       // 0x0(0x10)
+	int                                                          LODIndex;                                          // 0x10(0x4)
+	bool                                                         bNewShouldBeLoaded;                                // 0x14(0x1)
+	bool                                                         bNewShouldBeVisible;                               // 0x14(0x1)
+	bool                                                         bNewShouldBlockOnLoad;                             // 0x14(0x1)
+};
+
+
+// Size 0x4
+struct GenericStruct
+{
+public:
+	int                                                          Data;                                              // 0x0(0x4)
+};
+
+
+// Size 0x18
+struct BlueprintComponentDelegateBinding
+{
+public:
+	struct FName                                                 ComponentPropertyName;                             // 0x0(0x8)
+	struct FName                                                 DelegatePropertyName;                              // 0x8(0x8)
+	struct FName                                                 FunctionNameToBind;                                // 0x10(0x8)
+};
+
+
+// Size 0x8
+struct CullDistanceSizePair
+{
+public:
+	float                                                        Size;                                              // 0x0(0x4)
+	float                                                        CullDistance;                                      // 0x4(0x4)
+};
+
+
+// Size 0x10
+struct FractureEffect
+{
+public:
+	class ParticleSystem*                                        ParticleSystem;                                    // 0x0(0x8)
+	class SoundBase*                                             Sound;                                             // 0x8(0x8)
+};
+
+
+// Size 0x80
+struct HitResult
+{
+public:
+	bool                                                         bBlockingHit;                                      // 0x0(0x1)
+	bool                                                         bStartPenetrating;                                 // 0x0(0x1)
+	float                                                        Time;                                              // 0x4(0x4)
+	float                                                        Distance;                                          // 0x8(0x4)
+	struct                                                       Location;                                          // 0xc(0xc)
+	struct                                                       ImpactPoint;                                       // 0x18(0xc)
+	struct                                                       Normal;                                            // 0x24(0xc)
+	struct                                                       ImpactNormal;                                      // 0x30(0xc)
+	struct                                                       TraceStart;                                        // 0x3c(0xc)
+	struct                                                       TraceEnd;                                          // 0x48(0xc)
+	float                                                        PenetrationDepth;                                  // 0x54(0x4)
+	int                                                          Item;                                              // 0x58(0x4)
+	class PhysicalMaterial*                                      PhysMaterial;                                      // 0x5c(0x8)
+	class Actor*                                                 Actor;                                             // 0x64(0x8)
+	class PrimitiveComponent*                                    Component;                                         // 0x6c(0x8)
+	struct FName                                                 BoneName;                                          // 0x74(0x8)
+	int                                                          FaceIndex;                                         // 0x7c(0x4)
+};
+
+
+// Size 0x10
+struct InputAxisProperties
+{
+public:
+	float                                                        DeadZone;                                          // 0x0(0x4)
+	float                                                        Sensitivity;                                       // 0x4(0x4)
+	float                                                        Exponent;                                          // 0x8(0x4)
+	bool                                                         bInvert;                                           // 0xc(0x1)
+};
+
+
+// Size 0x18
+struct InputAxisConfigEntry
+{
+public:
+	struct FName                                                 AxisKeyName;                                       // 0x0(0x8)
+	struct                                                       AxisProperties;                                    // 0x8(0x10)
+};
+
+
+// Size 0x2c
+struct AtmospherePrecomputeParameters
+{
+public:
+	float                                                        DensityHeight;                                     // 0x0(0x4)
+	float                                                        DecayHeight;                                       // 0x4(0x4)
+	int                                                          MaxScatteringOrder;                                // 0x8(0x4)
+	int                                                          TransmittanceTexWidth;                             // 0xc(0x4)
+	int                                                          TransmittanceTexHeight;                            // 0x10(0x4)
+	int                                                          IrradianceTexWidth;                                // 0x14(0x4)
+	int                                                          IrradianceTexHeight;                               // 0x18(0x4)
+	int                                                          InscatterAltitudeSampleNum;                        // 0x1c(0x4)
+	int                                                          InscatterMuNum;                                    // 0x20(0x4)
+	int                                                          InscatterMuSNum;                                   // 0x24(0x4)
+	int                                                          InscatterNuNum;                                    // 0x28(0x4)
+};
+
+
+// Size 0x60
+struct NavigationSegmentLink
+{
+public:
+	struct                                                       LeftStart;                                         // 0x30(0xc)
+	struct                                                       LeftEnd;                                           // 0x3c(0xc)
+	struct                                                       RightStart;                                        // 0x48(0xc)
+	struct                                                       RightEnd;                                          // 0x54(0xc)
+};
+
+
+// Size 0x20
+struct PluginRedirect
+{
+public:
+	struct FString                                               OldPluginName;                                     // 0x0(0x10)
+	struct FString                                               NewPluginName;                                     // 0x10(0x10)
+};
+
+
+// Size 0xc
+struct CircleElement2D
+{
+public:
+	struct                                                       Center;                                            // 0x0(0x8)
+	float                                                        Radius;                                            // 0x8(0x4)
+};
+
+
+// Size 0x18
+struct MaterialFunctionInfo
+{
+public:
+	struct                                                       StateId;                                           // 0x0(0x10)
+	class MaterialFunction*                                      Function;                                          // 0x10(0x8)
+};
+
+
+// Size 0x24
+struct ClothPhysicsProperties
+{
+public:
+	float                                                        BendResistance;                                    // 0x0(0x4)
+	float                                                        ShearResistance;                                   // 0x4(0x4)
+	float                                                        StretchLimit;                                      // 0x8(0x4)
+	float                                                        Friction;                                          // 0xc(0x4)
+	float                                                        Damping;                                           // 0x10(0x4)
+	float                                                        Drag;                                              // 0x14(0x4)
+	float                                                        GravityScale;                                      // 0x18(0x4)
+	float                                                        InertiaBlend;                                      // 0x1c(0x4)
+	float                                                        SelfCollisionThickness;                            // 0x20(0x4)
+};
+
+
+// Size 0x18
+struct StringCurveKey
+{
+public:
+	float                                                        Time;                                              // 0x0(0x4)
+	struct FString                                               Value;                                             // 0x8(0x10)
+};
+
+
+// Size 0x1c
+struct RichCurveKey
+{
+public:
+	char                                                         InterpMode;                                        // 0x0(0x1)
+	char                                                         TangentMode;                                       // 0x1(0x1)
+	char                                                         TangentWeightMode;                                 // 0x2(0x1)
+	float                                                        Time;                                              // 0x4(0x4)
+	float                                                        Value;                                             // 0x8(0x4)
+	float                                                        ArriveTangent;                                     // 0xc(0x4)
+	float                                                        ArriveTangentWeight;                               // 0x10(0x4)
+	float                                                        LeaveTangent;                                      // 0x14(0x4)
+	float                                                        LeaveTangentWeight;                                // 0x18(0x4)
+};
+
+
+// Size 0x14
+struct TimelineEventEntry
+{
+public:
+	float                                                        Time;                                              // 0x0(0x4)
+	delegate                                                     EventFunc;                                         // 0x4(0x10)
+};
+
+
+// Size 0xb0
+struct FontImportOptionsData
+{
+public:
+	struct FString                                               FontName;                                          // 0x0(0x10)
+	float                                                        Height;                                            // 0x10(0x4)
+	bool                                                         bEnableAntialiasing;                               // 0x14(0x1)
+	bool                                                         bEnableBold;                                       // 0x14(0x1)
+	bool                                                         bEnableItalic;                                     // 0x14(0x1)
+	bool                                                         bEnableUnderline;                                  // 0x14(0x1)
+	bool                                                         bAlphaOnly;                                        // 0x14(0x1)
+	char                                                         CharacterSet;                                      // 0x18(0x1)
+	struct FString                                               Chars;                                             // 0x20(0x10)
+	struct FString                                               UnicodeRange;                                      // 0x30(0x10)
+	struct FString                                               CharsFilePath;                                     // 0x40(0x10)
+	struct FString                                               CharsFileWildcard;                                 // 0x50(0x10)
+	bool                                                         bCreatePrintableOnly;                              // 0x60(0x1)
+	bool                                                         bIncludeASCIIRange;                                // 0x60(0x1)
+	struct                                                       ForegroundColor;                                   // 0x64(0x10)
+	bool                                                         bEnableDropShadow;                                 // 0x74(0x1)
+	int                                                          TexturePageWidth;                                  // 0x78(0x4)
+	int                                                          TexturePageMaxHeight;                              // 0x7c(0x4)
+	int                                                          XPadding;                                          // 0x80(0x4)
+	int                                                          YPadding;                                          // 0x84(0x4)
+	int                                                          ExtendBoxTop;                                      // 0x88(0x4)
+	int                                                          ExtendBoxBottom;                                   // 0x8c(0x4)
+	int                                                          ExtendBoxRight;                                    // 0x90(0x4)
+	int                                                          ExtendBoxLeft;                                     // 0x94(0x4)
+	bool                                                         bEnableLegacyMode;                                 // 0x98(0x1)
+	int                                                          Kerning;                                           // 0x9c(0x4)
+	bool                                                         bUseDistanceFieldAlpha;                            // 0xa0(0x1)
+	int                                                          DistanceFieldScaleFactor;                          // 0xa4(0x4)
+	float                                                        DistanceFieldScanRadiusScale;                      // 0xa8(0x4)
+};
+
+
+// Size 0x1c
+struct CollectionScalarParameter
+{
+public:
+	float                                                        DefaultValue;                                      // 0x18(0x4)
+};
+
+
+// Size 0x10
+struct LevelStreamingStatus
+{
+public:
+	struct FName                                                 PackageName;                                       // 0x0(0x8)
+	bool                                                         bShouldBeLoaded;                                   // 0x8(0x1)
+	bool                                                         bShouldBeVisible;                                  // 0x8(0x1)
+	uint32                                                       LODIndex;                                          // 0xc(0x4)
+};
+
+
+// Size 0x4
+struct BeamModifierOptions
+{
+public:
+	bool                                                         bModify;                                           // 0x0(0x1)
+	bool                                                         bScale;                                            // 0x0(0x1)
+	bool                                                         bLock;                                             // 0x0(0x1)
+};
+
+
+// Size 0x20
+struct FuncStatEntry
+{
+public:
+	struct FString                                               Name;                                              // 0x0(0x10)
+	uint64                                                       RPCId;                                             // 0x10(0x8)
+	uint32                                                       Count;                                             // 0x18(0x4)
+};
+
+
+// Size 0x34
+struct BatchedLine
+{
+public:
+	struct                                                       Start;                                             // 0x0(0xc)
+	struct                                                       End;                                               // 0xc(0xc)
+	struct                                                       Color;                                             // 0x18(0x10)
+	float                                                        Thickness;                                         // 0x28(0x4)
+	float                                                        RemainingLifeTime;                                 // 0x2c(0x4)
+	char                                                         DepthPriority;                                     // 0x30(0x1)
+};
+
+
+// Size 0xc
+struct DominanceGroupPair
+{
+public:
+	char                                                         FirstGroupId;                                      // 0x0(0x1)
+	char                                                         SecondGroupId;                                     // 0x1(0x1)
+	int                                                          FirstDominanceValue;                               // 0x4(0x4)
+	int                                                          SecondDominanceValue;                              // 0x8(0x4)
+};
+
+
+// Size 0x40
+struct MergedCollisionComponentStaticMeshInstanceData
+{
+public:
+	struct                                                       RelativeTransform;                                 // 0x0(0x30)
+	class StaticMesh*                                            StaticMesh;                                        // 0x30(0x8)
+	int                                                          OwningActorCrc32;                                  // 0x38(0x4)
+};
+
+
+// Size 0x28
+struct ExpressionOutput
+{
+public:
+	struct FString                                               OutputName;                                        // 0x0(0x10)
+	int                                                          Mask;                                              // 0x10(0x4)
+	int                                                          MaskR;                                             // 0x14(0x4)
+	int                                                          MaskG;                                             // 0x18(0x4)
+	int                                                          MaskB;                                             // 0x1c(0x4)
+	int                                                          MaskA;                                             // 0x20(0x4)
+};
+
+
+// Size 0x30
+struct NavigationLinkBase
+{
+public:
+	float                                                        LeftProjectHeight;                                 // 0x0(0x4)
+	float                                                        MaxFallDownLength;                                 // 0x4(0x4)
+	char                                                         Direction;                                         // 0x8(0x1)
+	float                                                        SnapRadius;                                        // 0x10(0x4)
+	float                                                        SnapHeight;                                        // 0x14(0x4)
+	bool                                                         bUseSnapHeight;                                    // 0x18(0x1)
+	bool                                                         bSnapToCheapestArea;                               // 0x18(0x1)
+	class UClass*                                                AreaClass;                                         // 0x20(0x8)
+	struct                                                       SupportedAgents;                                   // 0x28(0x4)
+	bool                                                         bSupportsAgent0;                                   // 0x2c(0x1)
+	bool                                                         bSupportsAgent1;                                   // 0x2c(0x1)
+	bool                                                         bSupportsAgent2;                                   // 0x2c(0x1)
+	bool                                                         bSupportsAgent3;                                   // 0x2c(0x1)
+	bool                                                         bSupportsAgent4;                                   // 0x2c(0x1)
+	bool                                                         bSupportsAgent5;                                   // 0x2c(0x1)
+	bool                                                         bSupportsAgent6;                                   // 0x2c(0x1)
+	bool                                                         bSupportsAgent7;                                   // 0x2c(0x1)
+	bool                                                         bSupportsAgent8;                                   // 0x2d(0x1)
+	bool                                                         bSupportsAgent9;                                   // 0x2d(0x1)
+	bool                                                         bSupportsAgent10;                                  // 0x2d(0x1)
+	bool                                                         bSupportsAgent11;                                  // 0x2d(0x1)
+	bool                                                         bSupportsAgent12;                                  // 0x2d(0x1)
+	bool                                                         bSupportsAgent13;                                  // 0x2d(0x1)
+	bool                                                         bSupportsAgent14;                                  // 0x2d(0x1)
+	bool                                                         bSupportsAgent15;                                  // 0x2d(0x1)
+};
+
+
+// Size 0x48
+struct Vector2MaterialInput
+{
+public:
+	bool                                                         UseConstant;                                       // 0x38(0x1)
+	float                                                        ConstantX;                                         // 0x3c(0x4)
+	float                                                        ConstantY;                                         // 0x40(0x4)
+};
+
+
+// Size 0x10
+struct A2Pose
+{
+public:
+	TArray<struct Transform>                                     Bones;                                             // 0x0(0x10)
+};
+
+
+// Size 0x20
+struct SingleAnimationPlayData
+{
+public:
+	class AnimationAsset*                                        AnimToPlay;                                        // 0x0(0x8)
+	class VertexAnimation*                                       VertexAnimToPlay;                                  // 0x8(0x8)
+	bool                                                         bSavedLooping;                                     // 0x10(0x1)
+	bool                                                         bSavedPlaying;                                     // 0x10(0x1)
+	float                                                        SavedPosition;                                     // 0x14(0x4)
+	float                                                        SavedPlayRate;                                     // 0x18(0x4)
+};
+
+
+// Size 0x18
+struct BlendSample
+{
+public:
+	class AnimSequence*                                          Animation;                                         // 0x0(0x8)
+	struct                                                       SampleValue;                                       // 0x8(0xc)
+};
+
+
+// Size 0x18
+struct LightmassPrimitiveSettings
+{
+public:
+	bool                                                         bUseTwoSidedLighting;                              // 0x0(0x1)
+	bool                                                         bShadowIndirectOnly;                               // 0x0(0x1)
+	bool                                                         bUseEmissiveForStaticLighting;                     // 0x0(0x1)
+	bool                                                         bUseVertexNormalForHemisphereGather;               // 0x0(0x1)
+	float                                                        EmissiveLightFalloffExponent;                      // 0x4(0x4)
+	float                                                        EmissiveLightExplicitInfluenceRadius;              // 0x8(0x4)
+	float                                                        EmissiveBoost;                                     // 0xc(0x4)
+	float                                                        DiffuseBoost;                                      // 0x10(0x4)
+	float                                                        FullyOccludedSamplesFraction;                      // 0x14(0x4)
+};
+
+
+// Size 0x18
+struct NetRelevancyLevelStat
+{
+public:
+	struct FString                                               Name;                                              // 0x0(0x10)
+	bool                                                         Visible;                                           // 0x10(0x1)
+	int                                                          LODIndex;                                          // 0x14(0x4)
+};
+
+
+// Size 0x18
+struct EditorMapPerformanceTestDefinition
+{
+public:
+	struct                                                       PerformanceTestmap;                                // 0x0(0x10)
+	int                                                          TestTimer;                                         // 0x10(0x4)
+};
+
+
+// Size 0x40
+struct RootMotionMovementParams
+{
+public:
+	bool                                                         bHasRootMotion;                                    // 0x0(0x1)
+	float                                                        BlendWeight;                                       // 0x4(0x4)
+	struct                                                       RootMotionTransform;                               // 0x10(0x30)
+};
+
+
+// Size 0x20
+struct ImportFactorySettingValues
+{
+public:
+	struct FString                                               SettingName;                                       // 0x0(0x10)
+	struct FString                                               Value;                                             // 0x10(0x10)
+};
+
+
+// Size 0x20
+struct GameClassShortName
+{
+public:
+	struct FString                                               ShortName;                                         // 0x0(0x10)
+	struct FString                                               GameClassName;                                     // 0x10(0x10)
+};
+
+
+// Size 0x4
+struct TrackToSkeletonMap
+{
+public:
+	int                                                          BoneTreeIndex;                                     // 0x0(0x4)
+};
+
+
+// Size 0x28
+struct DynamicTextureInstance
+{
+public:
+	class Texture2D*                                             Texture;                                           // 0x18(0x8)
+	bool                                                         bAttached;                                         // 0x20(0x1)
+	float                                                        OriginalRadius;                                    // 0x24(0x4)
+};
+
+
+// Size 0x1c
+struct GridBlendSample
+{
+public:
+	struct                                                       GridElement;                                       // 0x0(0x18)
+	float                                                        BlendWeight;                                       // 0x18(0x4)
+};
+
+
+// Size 0x4
+struct DestructibleChunkParameters
+{
+public:
+	bool                                                         bIsSupportChunk;                                   // 0x0(0x1)
+	bool                                                         bDoNotFracture;                                    // 0x1(0x1)
+	bool                                                         bDoNotDamage;                                      // 0x2(0x1)
+	bool                                                         bDoNotCrumble;                                     // 0x3(0x1)
+};
+
+
+// Size 0xc
+struct BoneReference
+{
+public:
+	struct FName                                                 BoneName;                                          // 0x0(0x8)
+};
+
+
+// Size 0x18
+struct PrimitiveMaterialRef
+{
+public:
+	class PrimitiveComponent*                                    Primitive;                                         // 0x0(0x8)
+	class DecalComponent*                                        Decal;                                             // 0x8(0x8)
+	int                                                          ElementIndex;                                      // 0x10(0x4)
+};
+
+
+// Size 0x18
+struct FeatureToggledStringAssetReferenceEntry
+{
+public:
+	struct                                                       Asset;                                             // 0x0(0x10)
+	struct FName                                                 Feature;                                           // 0x10(0x8)
+};
+
+
+// Size 0x14
+struct NetSubObjectPtr
+{
+public:
+	struct                                                       SubObject;                                         // 0x0(0x14)
+};
+
+
+// Size 0x20
+struct BuildPromotionNewProjectSettings
+{
+public:
+	struct                                                       NewProjectFolderOverride;                          // 0x0(0x10)
+	struct FString                                               NewProjectNameOverride;                            // 0x10(0x10)
+};
+
+
+// Size 0x60
+struct BuildPromotionOpenAssetSettings
+{
+public:
+	struct                                                       BlueprintAsset;                                    // 0x0(0x10)
+	struct                                                       MaterialAsset;                                     // 0x10(0x10)
+	struct                                                       ParticleSystemAsset;                               // 0x20(0x10)
+	struct                                                       SkeletalMeshAsset;                                 // 0x30(0x10)
+	struct                                                       StaticMeshAsset;                                   // 0x40(0x10)
+	struct                                                       TextureAsset;                                      // 0x50(0x10)
+};
+
+
+// Size 0x30
+struct TimelineFloatTrack
+{
+public:
+	class CurveFloat*                                            FloatCurve;                                        // 0x0(0x8)
+	delegate                                                     InterpFunc;                                        // 0x8(0x10)
+	struct FName                                                 FloatPropertyName;                                 // 0x18(0x8)
+	class FloatProperty*                                         FloatProperty;                                     // 0x20(0x8)
+};
+
+
+// Size 0x8
+struct PresortedBillboardsParams
+{
+public:
+	char                                                         Mode;                                              // 0x0(0x1)
+	int                                                          NumDirections;                                     // 0x4(0x4)
+};
+
+
+// Size 0x4
+struct NavAvoidanceMask
+{
+public:
+	bool                                                         bGroup0;                                           // 0x0(0x1)
+	bool                                                         bGroup1;                                           // 0x0(0x1)
+	bool                                                         bGroup2;                                           // 0x0(0x1)
+	bool                                                         bGroup3;                                           // 0x0(0x1)
+	bool                                                         bGroup4;                                           // 0x0(0x1)
+	bool                                                         bGroup5;                                           // 0x0(0x1)
+	bool                                                         bGroup6;                                           // 0x0(0x1)
+	bool                                                         bGroup7;                                           // 0x0(0x1)
+	bool                                                         bGroup8;                                           // 0x1(0x1)
+	bool                                                         bGroup9;                                           // 0x1(0x1)
+	bool                                                         bGroup10;                                          // 0x1(0x1)
+	bool                                                         bGroup11;                                          // 0x1(0x1)
+	bool                                                         bGroup12;                                          // 0x1(0x1)
+	bool                                                         bGroup13;                                          // 0x1(0x1)
+	bool                                                         bGroup14;                                          // 0x1(0x1)
+	bool                                                         bGroup15;                                          // 0x1(0x1)
+	bool                                                         bGroup16;                                          // 0x2(0x1)
+	bool                                                         bGroup17;                                          // 0x2(0x1)
+	bool                                                         bGroup18;                                          // 0x2(0x1)
+	bool                                                         bGroup19;                                          // 0x2(0x1)
+	bool                                                         bGroup20;                                          // 0x2(0x1)
+	bool                                                         bGroup21;                                          // 0x2(0x1)
+	bool                                                         bGroup22;                                          // 0x2(0x1)
+	bool                                                         bGroup23;                                          // 0x2(0x1)
+	bool                                                         bGroup24;                                          // 0x3(0x1)
+	bool                                                         bGroup25;                                          // 0x3(0x1)
+	bool                                                         bGroup26;                                          // 0x3(0x1)
+	bool                                                         bGroup27;                                          // 0x3(0x1)
+	bool                                                         bGroup28;                                          // 0x3(0x1)
+	bool                                                         bGroup29;                                          // 0x3(0x1)
+	bool                                                         bGroup30;                                          // 0x3(0x1)
+	bool                                                         bGroup31;                                          // 0x3(0x1)
+};
+
+
+// Size 0xc
+struct AnimationGroupReference
+{
+public:
+	struct FName                                                 GroupName;                                         // 0x0(0x8)
+	char                                                         GroupRole;                                         // 0x8(0x1)
+};
+
+
+// Size 0x20
+struct BuildPromotionBlueprintSettings
+{
+public:
+	struct                                                       FirstMeshPath;                                     // 0x0(0x10)
+	struct                                                       SecondMeshPath;                                    // 0x10(0x10)
+};
+
+
+// Size 0xc
+struct InterpLookupPoint
+{
+public:
+	struct FName                                                 GroupName;                                         // 0x0(0x8)
+	float                                                        Time;                                              // 0x8(0x4)
+};
+
+
+// Size 0x4
+struct MovementProperties
+{
+public:
+	bool                                                         bCanCrouch;                                        // 0x0(0x1)
+	bool                                                         bCanJump;                                          // 0x0(0x1)
+	bool                                                         bCanWalk;                                          // 0x0(0x1)
+	bool                                                         bCanSwim;                                          // 0x0(0x1)
+	bool                                                         bCanFly;                                           // 0x0(0x1)
+};
+
+
+// Size 0x18
+struct AnimParentNodeAssetOverride
+{
+public:
+	class AnimationAsset*                                        NewAsset;                                          // 0x0(0x8)
+	struct                                                       ParentNodeGuid;                                    // 0x8(0x10)
+};
+
+
+// Size 0x40
+struct RepRootMotionMontage
+{
+public:
+	class AnimMontage*                                           AnimMontage;                                       // 0x0(0x8)
+	float                                                        Position;                                          // 0x8(0x4)
+	struct                                                       Location;                                          // 0xc(0xc)
+	struct                                                       Rotation;                                          // 0x18(0xc)
+	class PrimitiveComponent*                                    MovementBase;                                      // 0x28(0x8)
+	struct FName                                                 MovementBaseBoneName;                              // 0x30(0x8)
+	bool                                                         bRelativePosition;                                 // 0x38(0x1)
+	bool                                                         bRelativeRotation;                                 // 0x39(0x1)
+};
+
+
+// Size 0xc
+struct NameCurveKey
+{
+public:
+	float                                                        Time;                                              // 0x0(0x4)
+	struct FName                                                 Value;                                             // 0x4(0x8)
+};
+
+
+// Size 0x1
+struct BoneNode
+{
+public:
+	char                                                         TranslationRetargetingMode;                        // 0x0(0x1)
+};
+
+
+// Size 0x50
+struct EdGraphPinType
+{
+public:
+	struct FString                                               PinCategory;                                       // 0x0(0x10)
+	struct FString                                               PinSubCategory;                                    // 0x10(0x10)
+	class Object*                                                PinSubCategoryObject;                              // 0x20(0x8)
+	struct                                                       PinSubCategoryMemberReference;                     // 0x28(0x20)
+	bool                                                         bIsArray;                                          // 0x48(0x1)
+	bool                                                         bIsReference;                                      // 0x49(0x1)
+	bool                                                         bIsConst;                                          // 0x4a(0x1)
+	bool                                                         bIsWeakPointer;                                    // 0x4b(0x1)
+};
+
+
+// Size 0x40
+struct AudioQualitySettings
+{
+public:
+	struct FText                                                 DisplayName;                                       // 0x0(0x38)
+	int                                                          MaxChannels;                                       // 0x38(0x4)
+};
+
+
+// Size 0x18
+struct NavGraphNode
+{
+public:
+	class Object*                                                Owner;                                             // 0x0(0x8)
+};
+
+
+// Size 0x30
+struct HIKBoneTransform
+{
+public:
+	int                                                          BoneID;                                            // 0x0(0x4)
+	struct                                                       Translation;                                       // 0x4(0xc)
+	struct                                                       Orientation;                                       // 0x10(0x10)
+	struct                                                       Scale;                                             // 0x20(0xc)
+};
+
+
+// Size 0x10
+struct MorphTargetMap
+{
+public:
+	struct FName                                                 Name;                                              // 0x0(0x8)
+	class MorphTarget*                                           MorphTarget;                                       // 0x8(0x8)
+};
+
+
+// Size 0x10
+struct NameMapping
+{
+public:
+	struct FName                                                 NodeName;                                          // 0x0(0x8)
+	struct FName                                                 BoneName;                                          // 0x8(0x8)
+};
+
+
+// Size 0xc
+struct MaterialRelevance
+{
+public:
+	bool                                                         bOpaque;                                           // 0x0(0x1)
+	bool                                                         bMasked;                                           // 0x0(0x1)
+	bool                                                         bDistortion;                                       // 0x0(0x1)
+	bool                                                         bSeparateTranslucency;                             // 0x0(0x1)
+	bool                                                         bNormalTranslucency;                               // 0x0(0x1)
+	bool                                                         bDisableDepthTest;                                 // 0x0(0x1)
+	bool                                                         bOutputsVelocityInBasePass;                        // 0x0(0x1)
+	bool                                                         bUsesGlobalDistanceField;                          // 0x0(0x1)
+	uint16                                                       ShadingModelMask;                                  // 0x4(0x2)
+	bool                                                         bOITTranslucencyRelevance;                         // 0x8(0x1)
+	bool                                                         bOITAfterTranslucencyRelevance;                    // 0x8(0x1)
+	bool                                                         bLowResTranslucencyRelevance;                      // 0x8(0x1)
+	bool                                                         bLowResCloudsRelevance;                            // 0x8(0x1)
+	bool                                                         bMaskPassRelevance;                                // 0x8(0x1)
+	bool                                                         bTranslucentBeforeTranslucency;                    // 0x8(0x1)
+	bool                                                         bTranslucentBeforeVolumeFog;                       // 0x8(0x1)
+	bool                                                         bTranslucentWithDepthWrite;                        // 0x8(0x1)
+};
+
+
+// Size 0x30
+struct CameraPreviewInfo
+{
+public:
+	class UClass*                                                PawnClass;                                         // 0x0(0x8)
+	class AnimSequence*                                          AnimSeq;                                           // 0x8(0x8)
+	struct                                                       Location;                                          // 0x10(0xc)
+	struct                                                       Rotation;                                          // 0x1c(0xc)
+	class Pawn*                                                  PawnInst;                                          // 0x28(0x8)
+};
+
+
+// Size 0x28
+struct MaterialSpriteElement
+{
+public:
+	class MaterialInterface*                                     Material;                                          // 0x0(0x8)
+	class CurveFloat*                                            DistanceToOpacityCurve;                            // 0x8(0x8)
+	bool                                                         bSizeIsInScreenSpace;                              // 0x10(0x1)
+	float                                                        BaseSizeX;                                         // 0x14(0x4)
+	float                                                        BaseSizeY;                                         // 0x18(0x4)
+	class CurveFloat*                                            DistanceToSizeCurve;                               // 0x20(0x8)
+};
+
+
+// Size 0x48
+struct AnimNode_ConvertComponentToLocalSpace
+{
+public:
+	struct                                                       ComponentPose;                                     // 0x30(0x18)
+};
+
+
+// Size 0x10
+struct AnimationTransitionRule
+{
+public:
+	struct FName                                                 RuleToExecute;                                     // 0x0(0x8)
+	bool                                                         TransitionReturnVal;                               // 0x8(0x1)
+	int                                                          TransitionIndex;                                   // 0xc(0x4)
+};
+
+
+// Size 0x18
+struct TTLinearColorTrack
+{
+public:
+	class CurveLinearColor*                                      CurveLinearColor;                                  // 0x10(0x8)
+};
+
+
+// Size 0x180
+struct VectorCurve
+{
+public:
+	struct                                                       FloatCurves;                                       // 0x18(0x78)
+};
+
+
+// Size 0x10
+struct Redirector
+{
+public:
+	struct FName                                                 OldName;                                           // 0x0(0x8)
+	struct FName                                                 NewName;                                           // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct RepTransform
+{
+public:
+	struct                                                       Location;                                          // 0x0(0xc)
+	struct                                                       Rotation;                                          // 0xc(0xc)
+};
+
+
+// Size 0x14
+struct DistanceDatum
+{
+public:
+	float                                                        FadeInDistanceStart;                               // 0x0(0x4)
+	float                                                        FadeInDistanceEnd;                                 // 0x4(0x4)
+	float                                                        FadeOutDistanceStart;                              // 0x8(0x4)
+	float                                                        FadeOutDistanceEnd;                                // 0xc(0x4)
+	float                                                        Volume;                                            // 0x10(0x4)
+};
+
+
+// Size 0x20
+struct BlendParameter
+{
+public:
+	struct FString                                               DisplayName;                                       // 0x0(0x10)
+	float                                                        Min;                                               // 0x10(0x4)
+	float                                                        Max;                                               // 0x14(0x4)
+	int                                                          GridNum;                                           // 0x18(0x4)
+};
+
+
+// Size 0x4
+struct NavAgentSelector
+{
+public:
+	bool                                                         bSupportsAgent0;                                   // 0x0(0x1)
+	bool                                                         bSupportsAgent1;                                   // 0x0(0x1)
+	bool                                                         bSupportsAgent2;                                   // 0x0(0x1)
+	bool                                                         bSupportsAgent3;                                   // 0x0(0x1)
+	bool                                                         bSupportsAgent4;                                   // 0x0(0x1)
+	bool                                                         bSupportsAgent5;                                   // 0x0(0x1)
+	bool                                                         bSupportsAgent6;                                   // 0x0(0x1)
+	bool                                                         bSupportsAgent7;                                   // 0x0(0x1)
+	bool                                                         bSupportsAgent8;                                   // 0x1(0x1)
+	bool                                                         bSupportsAgent9;                                   // 0x1(0x1)
+	bool                                                         bSupportsAgent10;                                  // 0x1(0x1)
+	bool                                                         bSupportsAgent11;                                  // 0x1(0x1)
+	bool                                                         bSupportsAgent12;                                  // 0x1(0x1)
+	bool                                                         bSupportsAgent13;                                  // 0x1(0x1)
+	bool                                                         bSupportsAgent14;                                  // 0x1(0x1)
+	bool                                                         bSupportsAgent15;                                  // 0x1(0x1)
+};
+
+
+// Size 0x60
+struct AnimNode_HIKPlant
+{
+public:
+	float                                                        Alpha;                                             // 0x48(0x4)
+	float                                                        HipsLevel;                                         // 0x4c(0x4)
+	float                                                        ProjectionDistance;                                // 0x50(0x4)
+	bool                                                         PullFeetInsteadOfAnkles;                           // 0x54(0x1)
+	bool                                                         IsQuadruped;                                       // 0x55(0x1)
+	float                                                        ChestLevel;                                        // 0x58(0x4)
+	bool                                                         PullHandsInsteadOfWrists;                          // 0x5c(0x1)
+};
+
+
+// Size 0xc
+struct TriIndices
+{
+public:
+	int                                                          v0;                                                // 0x0(0x4)
+	int                                                          v1;                                                // 0x4(0x4)
+	int                                                          v2;                                                // 0x8(0x4)
+};
+
+
+// Size 0x28
+struct CollectionVectorParameter
+{
+public:
+	struct                                                       DefaultValue;                                      // 0x18(0x10)
+};
+
+
+// Size 0x20
+struct SoundGroup
+{
+public:
+	char                                                         SoundGroup;                                        // 0x0(0x1)
+	struct FString                                               DisplayName;                                       // 0x8(0x10)
+	bool                                                         bAlwaysDecompressOnLoad;                           // 0x18(0x1)
+	float                                                        DecompressedDuration;                              // 0x1c(0x4)
+};
+
+
+// Size 0x48
+struct AnimNode_ConvertLocalToComponentSpace
+{
+public:
+	struct                                                       LocalPose;                                         // 0x30(0x18)
+};
+
+
+// Size 0x30
+struct PlatformInterfaceData
+{
+public:
+	struct FName                                                 DataName;                                          // 0x0(0x8)
+	char                                                         Type;                                              // 0x8(0x1)
+	int                                                          IntValue;                                          // 0xc(0x4)
+	float                                                        FloatValue;                                        // 0x10(0x4)
+	struct FString                                               StringValue;                                       // 0x18(0x10)
+	class Object*                                                ObjectValue;                                       // 0x28(0x8)
+};
+
+
+// Size 0x20
+struct PacketDiscardStats
+{
+public:
+	int                                                          DiscardCounts;                                     // 0x0(0x4)
+	int                                                          BytesDiscarded;                                    // 0x1c(0x4)
+};
+
+
+// Size 0xb0
+struct AnimNode_BlendListByBool
+{
+public:
+	bool                                                         bActiveValue;                                      // 0xa8(0x1)
+};
+
+
+// Size 0x40
+struct ClientReceiveData
+{
+public:
+	class PlayerController*                                      LocalPC;                                           // 0x0(0x8)
+	struct FName                                                 MessageType;                                       // 0x8(0x8)
+	int                                                          MessageIndex;                                      // 0x10(0x4)
+	struct FString                                               MessageString;                                     // 0x18(0x10)
+	class PlayerState*                                           RelatedPlayerState;                                // 0x28(0x8)
+	class PlayerState*                                           RelatedPlayerState;                                // 0x30(0x8)
+	class Object*                                                OptionalObject;                                    // 0x38(0x8)
+};
+
+
+// Size 0x4
+struct OrbitOptions
+{
+public:
+	bool                                                         bProcessDuringSpawn;                               // 0x0(0x1)
+	bool                                                         bProcessDuringUpdate;                              // 0x0(0x1)
+	bool                                                         bUseEmitterTime;                                   // 0x0(0x1)
+};
+
+
+// Size 0xd0
+struct EdGraphSchemaAction_NewNode
+{
+public:
+	class EdGraphNode*                                           NodeTemplate;                                      // 0xc8(0x8)
+};
+
+
+// Size 0x50
+struct AnimNode_SequenceEvaluator
+{
+public:
+	class AnimSequenceBase*                                      Sequence;                                          // 0x40(0x8)
+	float                                                        ExplicitTime;                                      // 0x48(0x4)
+};
+
+
+// Size 0x8
+struct AnimationStateBase
+{
+public:
+	struct FName                                                 StateName;                                         // 0x0(0x8)
+};
+
+
+// Size 0x18
+struct BPVariableMetaDataEntry
+{
+public:
+	struct FName                                                 DataKey;                                           // 0x0(0x8)
+	struct FString                                               DataValue;                                         // 0x8(0x10)
+};
+
+
+// Size 0xc8
+struct EdGraphSchemaAction
+{
+public:
+	struct FText                                                 MenuDescription;                                   // 0x8(0x38)
+	struct FString                                               TooltipDescription;                                // 0x40(0x10)
+	struct FText                                                 Category;                                          // 0x50(0x38)
+	struct FText                                                 Keywords;                                          // 0x88(0x38)
+	int                                                          Grouping;                                          // 0xc0(0x4)
+	int                                                          SectionID;                                         // 0xc4(0x4)
+};
+
+
+// Size 0x58
+struct InputCombinedAxisKeyMapping
+{
+public:
+	struct FName                                                 AxisName;                                          // 0x0(0x8)
+	struct                                                       KeyX;                                              // 0x8(0x20)
+	struct                                                       KeyY;                                              // 0x28(0x20)
+	float                                                        Scale;                                             // 0x48(0x4)
+	float                                                        CircularDeadZoneLowerBound;                        // 0x4c(0x4)
+	float                                                        CircularDeadZoneUpperBound;                        // 0x50(0x4)
+	float                                                        Exponent;                                          // 0x54(0x4)
+};
+
+
+// Size 0x10
+struct CurveTableRowHandle
+{
+public:
+	class CurveTable*                                            CurveTable;                                        // 0x0(0x8)
+	struct FName                                                 RowName;                                           // 0x8(0x8)
+};
+
+
+// Size 0xc
+struct LightmassLightSettings
+{
+public:
+	float                                                        IndirectLightingSaturation;                        // 0x0(0x4)
+	float                                                        ShadowExponent;                                    // 0x4(0x4)
+	bool                                                         bUseAreaShadowsForStationaryLight;                 // 0x8(0x1)
+};
+
+
+// Size 0x60
+struct ExternalToolDefinition
+{
+public:
+	struct FString                                               ToolName;                                          // 0x0(0x10)
+	struct                                                       ExecutablePath;                                    // 0x10(0x10)
+	struct FString                                               CommandLineOptions;                                // 0x20(0x10)
+	struct                                                       WorkingDirectory;                                  // 0x30(0x10)
+	struct FString                                               ScriptExtension;                                   // 0x40(0x10)
+	struct                                                       ScriptDirectory;                                   // 0x50(0x10)
+};
+
+
+// Size 0x24
+struct SubsurfaceProfileStruct
+{
+public:
+	float                                                        ScatterRadius;                                     // 0x0(0x4)
+	struct                                                       SubsurfaceColor;                                   // 0x4(0x10)
+	struct                                                       FalloffColor;                                      // 0x14(0x10)
+};
+
+
+// Size 0x58
+struct NetViewer
+{
+public:
+	class Actor*                                                 InViewer;                                          // 0x0(0x8)
+	class Actor*                                                 ViewTarget;                                        // 0x8(0x8)
+	TArray<struct Vector>                                        CachedViewLocations;                               // 0x10(0x10)
+	struct                                                       ViewDir;                                           // 0x20(0xc)
+};
+
+
+// Size 0x10
+struct PerBoneBlendWeights
+{
+public:
+	TArray<struct PerBoneBlendWeight>                            BoneBlendWeights;                                  // 0x0(0x10)
+};
+
+
+// Size 0x38
+struct SerializeNewActorFailureContext
+{
+public:
+	struct FString                                               Description;                                       // 0x0(0x10)
+	TArray<struct NetGuidResolveStackEntry>                      ActorGuidResolveStack;                             // 0x10(0x10)
+	TArray<struct NetGuidResolveStackEntry>                      ArchetypeGuidResolveStack;                         // 0x20(0x10)
+	bool                                                         IsCloseBunch;                                      // 0x30(0x1)
+};
+
+
+// Size 0x10
+struct TransformBaseConstraint
+{
+public:
+	TArray<struct RigTransformConstraint>                        TransformConstraints;                              // 0x0(0x10)
+};
+
+
+// Size 0x28
+struct SimplygonMaterialLODSettings
+{
+public:
+	bool                                                         bActive;                                           // 0x0(0x1)
+	char                                                         MaterialLODType;                                   // 0x1(0x1)
+	bool                                                         bUseAutomaticSizes;                                // 0x2(0x1)
+	char                                                         TextureWidth;                                      // 0x3(0x1)
+	char                                                         TextureHeight;                                     // 0x4(0x1)
+	char                                                         SamplingQuality;                                   // 0x5(0x1)
+	int                                                          GutterSpace;                                       // 0x8(0x4)
+	char                                                         TextureStrech;                                     // 0xc(0x1)
+	bool                                                         bReuseExistingCharts;                              // 0xd(0x1)
+	TArray<struct SimplygonChannelCastingSettings>               ChannelsToCast;                                    // 0x10(0x10)
+	bool                                                         bBakeVertexData;                                   // 0x20(0x1)
+	bool                                                         bBakeActorData;                                    // 0x21(0x1)
+	bool                                                         bAllowMultiMaterial;                               // 0x22(0x1)
+	bool                                                         bPreferTwoSideMaterials;                           // 0x23(0x1)
+};
+
+
+// Size 0x18
+struct CustomProfile
+{
+public:
+	struct FName                                                 Name;                                              // 0x0(0x8)
+	TArray<struct ResponseChannel>                               CustomResponses;                                   // 0x8(0x10)
+};
+
+
+// Size 0x28
+struct StaticMeshComponentLODInfo
+{
+public:
+	TArray<struct PaintedVertex>                                 PaintedVertices;                                   // 0x10(0x10)
+};
+
+
+// Size 0x50
+struct ParticleSysParam
+{
+public:
+	struct FName                                                 Name;                                              // 0x0(0x8)
+	char                                                         ParamType;                                         // 0x8(0x1)
+	float                                                        Scalar;                                            // 0xc(0x4)
+	float                                                        Scalar_Low;                                        // 0x10(0x4)
+	struct                                                       Vector;                                            // 0x14(0xc)
+	struct                                                       Vector_Low;                                        // 0x20(0xc)
+	struct                                                       Color;                                             // 0x2c(0x4)
+	class Actor*                                                 Actor;                                             // 0x30(0x8)
+	class MaterialInterface*                                     Material;                                          // 0x38(0x8)
+	TArray<struct EmitterPointData>                              EmitterPoints;                                     // 0x40(0x10)
+};
+
+
+// Size 0x38
+struct EditorImportExportTestDefinition
+{
+public:
+	struct                                                       ImportFilePath;                                    // 0x0(0x10)
+	struct FString                                               ExportFileExtension;                               // 0x10(0x10)
+	bool                                                         bSkipExport;                                       // 0x20(0x1)
+	TArray<struct ImportFactorySettingValues>                    FactorySettings;                                   // 0x28(0x10)
+};
+
+
+// Size 0x110
+struct AnimNode_BlendSpacePlayer
+{
+public:
+	float                                                        X;                                                 // 0x40(0x4)
+	float                                                        Y;                                                 // 0x44(0x4)
+	float                                                        Z;                                                 // 0x48(0x4)
+	float                                                        PlayRate;                                          // 0x4c(0x4)
+	bool                                                         bLoop;                                             // 0x50(0x1)
+	class BlendSpaceBase*                                        BlendSpace;                                        // 0x58(0x8)
+	int                                                          GroupIndex;                                        // 0x60(0x4)
+	char                                                         GroupRole;                                         // 0x64(0x1)
+	struct                                                       BlendFilter;                                       // 0x68(0x90)
+	TArray<struct BlendSampleData>                               BlendSampleDataCache;                              // 0xf8(0x10)
+};
+
+
+// Size 0x298
+struct WorldContext
+{
+public:
+	struct                                                       LastURL;                                           // 0xe0(0x70)
+	struct                                                       LastRemoteURL;                                     // 0x150(0x70)
+	class PendingNetGame*                                        PendingNetGame;                                    // 0x1c0(0x8)
+	TArray<struct FullyLoadedPackagesInfo>                       PackagesToFullyLoad;                               // 0x1c8(0x10)
+	TArray<class Level*>                                         LoadedLevelsForPendingMapChange;                   // 0x1e8(0x10)
+	TArray<class ObjectReferencer*>                              ObjectReferencers;                                 // 0x210(0x10)
+	TArray<struct LevelStreamingStatus>                          PendingLevelStreamingStatusUpdates;                // 0x220(0x10)
+	class GameViewportClient*                                    GameViewport;                                      // 0x230(0x8)
+	class GameInstance*                                          OwningGameInstance;                                // 0x238(0x8)
+	TArray<struct NamedNetDriver>                                ActiveNetDrivers;                                  // 0x240(0x10)
+};
+
+
+// Size 0x30
+struct CollisionResponse
+{
+public:
+	struct                                                       ResponseToChannels;                                // 0x0(0x20)
+	TArray<struct ResponseChannel>                               ResponseArray;                                     // 0x20(0x10)
+};
+
+
+// Size 0x20
+struct ServerMigrationTelemetrySucceededData
+{
+public:
+	TArray<struct ServerMigrationTelemetryActorData>             ActorDetails;                                      // 0x0(0x10)
+	float                                                        TotalTime;                                         // 0x10(0x4)
+	int                                                          NumClients;                                        // 0x14(0x4)
+	int                                                          NumActorsMigrated;                                 // 0x18(0x4)
+	int                                                          ActorSerialisationBytes;                           // 0x1c(0x4)
+};
+
+
+// Size 0x68
+struct NameCurve
+{
+public:
+	TArray<struct NameCurveKey>                                  Keys;                                              // 0x58(0x10)
+};
+
+
+// Size 0x28
+struct LocalizedSubtitle
+{
+public:
+	struct FString                                               LanguageExt;                                       // 0x0(0x10)
+	TArray<struct SubtitleCue>                                   Subtitles;                                         // 0x10(0x10)
+	bool                                                         bMature;                                           // 0x20(0x1)
+	bool                                                         bManualWordWrap;                                   // 0x20(0x1)
+	bool                                                         bSingleLine;                                       // 0x20(0x1)
+};
+
+
+// Size 0x10
+struct RawCurveTracks
+{
+public:
+	TArray<struct FloatCurve>                                    FloatCurves;                                       // 0x0(0x10)
+};
+
+
+// Size 0xa8
+struct AnimNode_BlendListBase
+{
+public:
+	TArray<struct PoseLink>                                      BlendPose;                                         // 0x30(0x10)
+	TArray<float>                                                BlendTime;                                         // 0x40(0x10)
+	char                                                         BlendType;                                         // 0x50(0x1)
+	class CurveFloat*                                            CustomBlendCurve;                                  // 0x58(0x8)
+	TArray<struct AlphaBlend>                                    Blends;                                            // 0x60(0x10)
+	TArray<float>                                                BlendWeights;                                      // 0x70(0x10)
+	TArray<float>                                                RemainingBlendTimes;                               // 0x80(0x10)
+	int                                                          LastActiveChildIndex;                              // 0x90(0x4)
+};
+
+
+// Size 0x60
+struct CollisionResponseTemplate
+{
+public:
+	struct FName                                                 Name;                                              // 0x0(0x8)
+	char                                                         CollisionEnabled;                                  // 0x8(0x1)
+	struct FName                                                 ObjectTypeName;                                    // 0xc(0x8)
+	TArray<struct ResponseChannel>                               CustomResponses;                                   // 0x18(0x10)
+	struct FString                                               HelpMessage;                                       // 0x28(0x10)
+	bool                                                         bCanModify;                                        // 0x38(0x1)
+};
+
+
+// Size 0x10
+struct PreviewAssetAttachContainer
+{
+public:
+	TArray<struct PreviewAttachedObjectPair>                     AttachedObjects;                                   // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct WeightedBlendables
+{
+public:
+	TArray<struct WeightedBlendable>                             Array;                                             // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct InterpLookupTrack
+{
+public:
+	TArray<struct InterpLookupPoint>                             Points;                                            // 0x0(0x10)
+};
+
+
+// Size 0x78
+struct StringCurve
+{
+public:
+	struct FString                                               DefaultValue;                                      // 0x58(0x10)
+	TArray<struct StringCurveKey>                                Keys;                                              // 0x68(0x10)
+};
+
+
+// Size 0x38
+struct TriMeshCollisionData
+{
+public:
+	TArray<struct Vector>                                        Vertices;                                          // 0x0(0x10)
+	TArray<struct TriIndices>                                    Indices;                                           // 0x10(0x10)
+	bool                                                         bFlipNormals;                                      // 0x20(0x1)
+};
+
+
+// Size 0x20
+struct EditorImportWorkflowDefinition
+{
+public:
+	struct                                                       ImportFilePath;                                    // 0x0(0x10)
+	TArray<struct ImportFactorySettingValues>                    FactorySettings;                                   // 0x10(0x10)
+};
+
+
+// Size 0x78
+struct RichCurve
+{
+public:
+	char                                                         PreInfinityExtrap;                                 // 0x58(0x1)
+	char                                                         PostInfinityExtrap;                                // 0x59(0x1)
+	TArray<struct RichCurveKey>                                  Keys;                                              // 0x60(0x10)
+	float                                                        DefaultValue;                                      // 0x70(0x4)
+};
+
+
+// Size 0x48
+struct KAggregateGeom
+{
+public:
+	TArray<struct KSphereElem>                                   SphereElems;                                       // 0x0(0x10)
+	TArray<struct KBoxElem>                                      BoxElems;                                          // 0x10(0x10)
+	TArray<struct KSphylElem>                                    SphylElems;                                        // 0x20(0x10)
+	TArray<struct KConvexElem>                                   ConvexElems;                                       // 0x30(0x10)
+};
+
+
+// Size 0x28
+struct ExposedValueHandler
+{
+public:
+	struct FName                                                 BoundFunction;                                     // 0x0(0x8)
+	TArray<struct ExposedValueCopyRecord>                        CopyRecords;                                       // 0x8(0x10)
+};
+
+
+// Size 0xf0
+struct SkeletalMeshLODInfo
+{
+public:
+	float                                                        ScreenSize;                                        // 0x0(0x4)
+	float                                                        LODHysteresis;                                     // 0x4(0x4)
+	TArray<int>                                                  LODMaterialMap;                                    // 0x8(0x10)
+	TArray<struct TriangleSortSettings>                          TriangleSortSettings;                              // 0x18(0x10)
+	bool                                                         bHasBeenSimplified;                                // 0x28(0x1)
+	struct                                                       ReductionSettings;                                 // 0x30(0x70)
+	struct                                                       RemeshingSettings;                                 // 0xa0(0x50)
+};
+
+
+// Size 0x10
+struct AnimTrack
+{
+public:
+	TArray<struct AnimSegment>                                   AnimSegments;                                      // 0x0(0x10)
+};
+
+
+// Size 0x30
+struct CurveEdTab
+{
+public:
+	struct FString                                               TabName;                                           // 0x0(0x10)
+	TArray<struct CurveEdEntry>                                  Curves;                                            // 0x10(0x10)
+	float                                                        ViewStartInput;                                    // 0x20(0x4)
+	float                                                        ViewEndInput;                                      // 0x24(0x4)
+	float                                                        ViewStartOutput;                                   // 0x28(0x4)
+	float                                                        ViewEndOutput;                                     // 0x2c(0x4)
+};
+
+
+// Size 0x28
+struct CollisionImpactData
+{
+public:
+	TArray<struct RigidBodyContactInfo>                          ContactInfos;                                      // 0x0(0x10)
+	struct                                                       TotalNormalImpulse;                                // 0x10(0xc)
+	struct                                                       TotalFrictionImpulse;                              // 0x1c(0xc)
+};
+
+
+// Size 0xc8
+struct NetRelevancyStateStat
+{
+public:
+	float                                                        Duration;                                          // 0x0(0x4)
+	int                                                          RemainingCycles;                                   // 0x4(0x4)
+	struct FString                                               StreamingMode;                                     // 0x8(0x10)
+	struct                                                       Connection;                                        // 0x18(0x90)
+	TArray<struct NetRelevancyActorStat>                         Actors;                                            // 0xa8(0x10)
+	TArray<struct NetRelevancyLevelStat>                         Levels;                                            // 0xb8(0x10)
+};
+
+
+// Size 0xa0
+struct AnimMontageInstance
+{
+public:
+	class AnimMontage*                                           Montage;                                           // 0x0(0x8)
+	float                                                        DesiredWeight;                                     // 0x8(0x4)
+	float                                                        Weight;                                            // 0xc(0x4)
+	float                                                        BlendTime;                                         // 0x10(0x4)
+	float                                                        DefaultBlendTimeMultiplier;                        // 0x14(0x4)
+	TArray<int>                                                  NextSections;                                      // 0x18(0x10)
+	TArray<int>                                                  PrevSections;                                      // 0x28(0x10)
+	bool                                                         bPlaying;                                          // 0x38(0x1)
+	TArray<struct AnimNotifyEvent>                               ActiveStateBranchingPoints;                        // 0x68(0x10)
+	float                                                        Position;                                          // 0x78(0x4)
+	float                                                        PlayRate;                                          // 0x7c(0x4)
+};
+
+
+// Size 0x70
+struct SkeletalMeshOptimizationSettings
+{
+public:
+	char                                                         ReductionMethod;                                   // 0x0(0x1)
+	float                                                        NumOfTrianglesPercentage;                          // 0x4(0x4)
+	float                                                        MaxDeviationPercentage;                            // 0x8(0x4)
+	float                                                        WeldingThreshold;                                  // 0xc(0x4)
+	bool                                                         bRecalcNormals;                                    // 0x10(0x1)
+	float                                                        NormalsThreshold;                                  // 0x14(0x4)
+	char                                                         SilhouetteImportance;                              // 0x18(0x1)
+	char                                                         TextureImportance;                                 // 0x19(0x1)
+	char                                                         ShadingImportance;                                 // 0x1a(0x1)
+	char                                                         SkinningImportance;                                // 0x1b(0x1)
+	float                                                        BoneReductionRatio;                                // 0x1c(0x4)
+	int                                                          MaxBonesPerVertex;                                 // 0x20(0x4)
+	TArray<struct BoneReference>                                 BonesToRemove;                                     // 0x28(0x10)
+	int                                                          BaseLODModel;                                      // 0x38(0x4)
+	int                                                          LODChainLastIndex;                                 // 0x3c(0x4)
+	bool                                                         bForceRebuild;                                     // 0x40(0x1)
+	struct                                                       MaterialLODSettings;                               // 0x48(0x28)
+};
+
+
+// Size 0x98
+struct Timeline
+{
+public:
+	char                                                         LengthMode;                                        // 0x0(0x1)
+	float                                                        Length;                                            // 0x4(0x4)
+	bool                                                         bLooping;                                          // 0x8(0x1)
+	bool                                                         bReversePlayback;                                  // 0x8(0x1)
+	bool                                                         bPlaying;                                          // 0x8(0x1)
+	float                                                        PlayRate;                                          // 0xc(0x4)
+	float                                                        Position;                                          // 0x10(0x4)
+	TArray<struct TimelineEventEntry>                            Events;                                            // 0x18(0x10)
+	TArray<struct TimelineVectorTrack>                           InterpVectors;                                     // 0x28(0x10)
+	TArray<struct TimelineFloatTrack>                            InterpFloats;                                      // 0x38(0x10)
+	TArray<struct TimelineLinearColorTrack>                      InterpLinearColors;                                // 0x48(0x10)
+	delegate                                                     TimelinePostUpdateFunc;                            // 0x58(0x10)
+	delegate                                                     TimelineFinishedFunc;                              // 0x68(0x10)
+	class Object*                                                PropertySetObject;                                 // 0x80(0x8)
+	struct FName                                                 DirectionPropertyName;                             // 0x88(0x8)
+	class ByteProperty*                                          DirectionProperty;                                 // 0x90(0x8)
+};
+
+
+// Size 0x10
+struct InputBlendPose
+{
+public:
+	TArray<struct BranchFilter>                                  BranchFilters;                                     // 0x0(0x10)
+};
+
+
+// Size 0x30
+struct AggregateGeometry2D
+{
+public:
+	TArray<struct CircleElement2D>                               CircleElements;                                    // 0x0(0x10)
+	TArray<struct BoxElement2D>                                  BoxElements;                                       // 0x10(0x10)
+	TArray<struct ConvexElement2D>                               ConvexElements;                                    // 0x20(0x10)
+};
+
+
+// Size 0x18
+struct SpikeStatEntry
+{
+public:
+	TArray<struct FuncStatEntry>                                 WorstRPCs;                                         // 0x0(0x10)
+	uint32                                                       TotalRPCCount;                                     // 0x10(0x4)
+	char                                                         SpikeDetected;                                     // 0x14(0x1)
+};
+
+
+// Size 0x28
+struct AnimationState
+{
+public:
+	TArray<struct AnimationTransitionRule>                       Transitions;                                       // 0x8(0x10)
+	int                                                          StateRootNodeIndex;                                // 0x18(0x4)
+	int                                                          StartNotify;                                       // 0x1c(0x4)
+	int                                                          EndNotify;                                         // 0x20(0x4)
+	int                                                          FullyBlendedNotify;                                // 0x24(0x4)
+};
+
+
+// Size 0x88
+struct DestructibleParameters
+{
+public:
+	struct                                                       DamageParameters;                                  // 0x0(0x1c)
+	struct                                                       DebrisParameters;                                  // 0x1c(0x2c)
+	struct                                                       AdvancedParameters;                                // 0x48(0x10)
+	struct                                                       SpecialHierarchyDepths;                            // 0x58(0x14)
+	TArray<struct DestructibleDepthParameters>                   DepthParameters;                                   // 0x70(0x10)
+	struct                                                       Flags;                                             // 0x80(0x4)
+};
+
+
+// Size 0x40
+struct RadialDamageEvent
+{
+public:
+	struct                                                       Params;                                            // 0x10(0x14)
+	struct                                                       Origin;                                            // 0x24(0xc)
+	TArray<struct HitResult>                                     ComponentHits;                                     // 0x30(0x10)
+};
+
+
+// Size 0x20
+struct AnimSequenceTrackContainer
+{
+public:
+	TArray<struct RawAnimSequenceTrack>                          AnimationTracks;                                   // 0x0(0x10)
+	TArray<struct Name>                                          TrackNames;                                        // 0x10(0x10)
+};
+
+
+// Size 0xe0
+struct BPVariableDescription
+{
+public:
+	struct FName                                                 VarName;                                           // 0x0(0x8)
+	struct                                                       VarGuid;                                           // 0x8(0x10)
+	struct                                                       VarType;                                           // 0x18(0x50)
+	struct FString                                               FriendlyName;                                      // 0x68(0x10)
+	struct FText                                                 Category;                                          // 0x78(0x38)
+	uint64                                                       PropertyFlags;                                     // 0xb0(0x8)
+	struct FName                                                 RepNotifyFunc;                                     // 0xb8(0x8)
+	TArray<struct BPVariableMetaDataEntry>                       MetaDataArray;                                     // 0xc0(0x10)
+	struct FString                                               DefaultValue;                                      // 0xd0(0x10)
+};
+
+
+// Size 0x18
+struct RigConfiguration
+{
+public:
+	class Rig*                                                   Rig;                                               // 0x0(0x8)
+	TArray<struct NameMapping>                                   BoneMappingTable;                                  // 0x8(0x10)
+};
+
+
+// Size 0x28
+struct StatColorMapping
+{
+public:
+	struct FString                                               StatName;                                          // 0x0(0x10)
+	TArray<struct StatColorMapEntry>                             ColorMap;                                          // 0x10(0x10)
+	bool                                                         DisableBlend;                                      // 0x20(0x1)
+};
+
+
+// Size 0x50
+struct BakedAnimationState
+{
+public:
+	struct FName                                                 StateName;                                         // 0x0(0x8)
+	struct FName                                                 PathedStateName;                                   // 0x8(0x8)
+	TArray<struct BakedStateExitTransition>                      Transitions;                                       // 0x10(0x10)
+	int                                                          StateRootNodeIndex;                                // 0x20(0x4)
+	int                                                          StartNotify;                                       // 0x24(0x4)
+	int                                                          EndNotify;                                         // 0x28(0x4)
+	int                                                          FullyBlendedNotify;                                // 0x2c(0x4)
+	bool                                                         bIsAConduit;                                       // 0x30(0x1)
+	int                                                          EntryRuleNodeIndex;                                // 0x34(0x4)
+	TArray<int>                                                  PlayerNodeIndices;                                 // 0x38(0x10)
+	bool                                                         CanBeReEntered;                                    // 0x48(0x1)
 };
 
 
@@ -6970,22 +6186,21 @@ public:
 	bool                                                         bOverride_DisableShadowMapMethod;                  // 0x12(0x1)
 	bool                                                         bOverride_UseVolumeFogScale;                       // 0x12(0x1)
 	bool                                                         bOverride_VolumeFogScale;                          // 0x12(0x1)
-	char                                                         pad0x1_K9ATB[0x1];                                 // 0x13(0x1)
 	float                                                        WhiteTemp;                                         // 0x14(0x4)
 	float                                                        WhiteTint;                                         // 0x18(0x4)
-	struct Vector                                                ColorSaturation;                                   // 0x1c(0xc)
-	struct Vector                                                ColorContrast;                                     // 0x28(0xc)
-	struct Vector                                                ColorGamma;                                        // 0x34(0xc)
-	struct Vector                                                ColorGain;                                         // 0x40(0xc)
-	struct Vector                                                ColorOffset;                                       // 0x4c(0xc)
-	struct LinearColor                                           FilmWhitePoint;                                    // 0x58(0x10)
-	struct LinearColor                                           FilmShadowTint;                                    // 0x68(0x10)
+	struct                                                       ColorSaturation;                                   // 0x1c(0xc)
+	struct                                                       ColorContrast;                                     // 0x28(0xc)
+	struct                                                       ColorGamma;                                        // 0x34(0xc)
+	struct                                                       ColorGain;                                         // 0x40(0xc)
+	struct                                                       ColorOffset;                                       // 0x4c(0xc)
+	struct                                                       FilmWhitePoint;                                    // 0x58(0x10)
+	struct                                                       FilmShadowTint;                                    // 0x68(0x10)
 	float                                                        FilmShadowTintBlend;                               // 0x78(0x4)
 	float                                                        FilmShadowTintAmount;                              // 0x7c(0x4)
 	float                                                        FilmSaturation;                                    // 0x80(0x4)
-	struct LinearColor                                           FilmChannelMixerRed;                               // 0x84(0x10)
-	struct LinearColor                                           FilmChannelMixerGreen;                             // 0x94(0x10)
-	struct LinearColor                                           FilmChannelMixerBlue;                              // 0xa4(0x10)
+	struct                                                       FilmChannelMixerRed;                               // 0x84(0x10)
+	struct                                                       FilmChannelMixerGreen;                             // 0x94(0x10)
+	struct                                                       FilmChannelMixerBlue;                              // 0xa4(0x10)
 	float                                                        FilmContrast;                                      // 0xb4(0x4)
 	float                                                        FilmToeAmount;                                     // 0xb8(0x4)
 	float                                                        FilmHealAmount;                                    // 0xbc(0x4)
@@ -6995,7 +6210,7 @@ public:
 	float                                                        FilmShoulder;                                      // 0xcc(0x4)
 	float                                                        FilmBlackClip;                                     // 0xd0(0x4)
 	float                                                        FilmWhiteClip;                                     // 0xd4(0x4)
-	struct LinearColor                                           SceneColorTint;                                    // 0xd8(0x10)
+	struct                                                       SceneColorTint;                                    // 0xd8(0x10)
 	float                                                        SceneFringeIntensity;                              // 0xe8(0x4)
 	float                                                        SceneFringeSaturation;                             // 0xec(0x4)
 	float                                                        BloomIntensity;                                    // 0xf0(0x4)
@@ -7007,14 +6222,14 @@ public:
 	float                                                        Bloom4Size;                                        // 0x108(0x4)
 	float                                                        Bloom5Size;                                        // 0x10c(0x4)
 	float                                                        Bloom6Size;                                        // 0x110(0x4)
-	struct LinearColor                                           Bloom1Tint;                                        // 0x114(0x10)
-	struct LinearColor                                           Bloom2Tint;                                        // 0x124(0x10)
-	struct LinearColor                                           Bloom3Tint;                                        // 0x134(0x10)
-	struct LinearColor                                           Bloom4Tint;                                        // 0x144(0x10)
-	struct LinearColor                                           Bloom5Tint;                                        // 0x154(0x10)
-	struct LinearColor                                           Bloom6Tint;                                        // 0x164(0x10)
+	struct                                                       Bloom1Tint;                                        // 0x114(0x10)
+	struct                                                       Bloom2Tint;                                        // 0x124(0x10)
+	struct                                                       Bloom3Tint;                                        // 0x134(0x10)
+	struct                                                       Bloom4Tint;                                        // 0x144(0x10)
+	struct                                                       Bloom5Tint;                                        // 0x154(0x10)
+	struct                                                       Bloom6Tint;                                        // 0x164(0x10)
 	float                                                        BloomDirtMaskIntensity;                            // 0x174(0x4)
-	struct LinearColor                                           BloomDirtMaskTint;                                 // 0x178(0x10)
+	struct                                                       BloomDirtMaskTint;                                 // 0x178(0x10)
 	class Texture*                                               BloomDirtMask;                                     // 0x188(0x8)
 	float                                                        LPVIntensity;                                      // 0x190(0x4)
 	float                                                        LPVVplInjectionBias;                               // 0x194(0x4)
@@ -7024,13 +6239,13 @@ public:
 	float                                                        LPVGeometryVolumeBias;                             // 0x1a4(0x4)
 	float                                                        LPVEmissiveInjectionIntensity;                     // 0x1a8(0x4)
 	float                                                        LPVDirectionalOcclusionIntensity;                  // 0x1ac(0x4)
-	struct Transform                                             LPVWorldRef;                                       // 0x1b0(0x30)
+	struct                                                       LPVWorldRef;                                       // 0x1b0(0x30)
 	float                                                        LPVDirectionalOcclusionRadius;                     // 0x1e0(0x4)
 	float                                                        LPVDiffuseOcclusionExponent;                       // 0x1e4(0x4)
 	float                                                        LPVSpecularOcclusionExponent;                      // 0x1e8(0x4)
 	float                                                        LPVDiffuseOcclusionIntensity;                      // 0x1ec(0x4)
 	float                                                        LPVSpecularOcclusionIntensity;                     // 0x1f0(0x4)
-	struct LinearColor                                           AmbientCubemapTint;                                // 0x1f4(0x10)
+	struct                                                       AmbientCubemapTint;                                // 0x1f4(0x10)
 	float                                                        AmbientCubemapIntensity;                           // 0x204(0x4)
 	class TextureCube*                                           AmbientCubemap;                                    // 0x208(0x8)
 	float                                                        AutoExposureLowPercent;                            // 0x210(0x4)
@@ -7043,12 +6258,11 @@ public:
 	float                                                        HistogramLogMin;                                   // 0x22c(0x4)
 	float                                                        HistogramLogMax;                                   // 0x230(0x4)
 	float                                                        LensFlareIntensity;                                // 0x234(0x4)
-	struct LinearColor                                           LensFlareTint;                                     // 0x238(0x10)
+	struct                                                       LensFlareTint;                                     // 0x238(0x10)
 	float                                                        LensFlareBokehSize;                                // 0x248(0x4)
 	float                                                        LensFlareThreshold;                                // 0x24c(0x4)
 	class Texture*                                               LensFlareBokehShape;                               // 0x250(0x8)
-	struct LinearColor                                           LensFlareTints;                                    // 0x258(0x10)
-	char                                                         pad0x70_FM9U6[0x70];                               // 0x268(0x70)
+	struct                                                       LensFlareTints;                                    // 0x258(0x10)
 	float                                                        VignetteIntensity;                                 // 0x2d8(0x4)
 	float                                                        GrainJitter;                                       // 0x2dc(0x4)
 	float                                                        GrainIntensity;                                    // 0x2e0(0x4)
@@ -7056,7 +6270,6 @@ public:
 	float                                                        AmbientOcclusionStaticFraction;                    // 0x2e8(0x4)
 	float                                                        AmbientOcclusionRadius;                            // 0x2ec(0x4)
 	bool                                                         AmbientOcclusionRadiusInWS;                        // 0x2f0(0x1)
-	char                                                         pad0x3_5B6WA[0x3];                                 // 0x2f1(0x3)
 	float                                                        AmbientOcclusionFadeDistance;                      // 0x2f4(0x4)
 	float                                                        AmbientOcclusionFadeRadius;                        // 0x2f8(0x4)
 	float                                                        AmbientOcclusionDistance;                          // 0x2fc(0x4)
@@ -7078,18 +6291,15 @@ public:
 	bool                                                         AmbientOcclusionHemiUseNormals;                    // 0x338(0x1)
 	bool                                                         AmbientOcclusionHemiCombineBeforeBlur;             // 0x338(0x1)
 	bool                                                         AmbientOcclusionHemiCombineWithMultiply;           // 0x338(0x1)
-	char                                                         pad0x3_92RZY[0x3];                                 // 0x339(0x3)
 	float                                                        MinOverdrawCount;                                  // 0x33c(0x4)
 	float                                                        MaxOverdrawCount;                                  // 0x340(0x4)
-	struct LinearColor                                           MinOverdrawColour;                                 // 0x344(0x10)
-	struct LinearColor                                           MaxOverdrawColour;                                 // 0x354(0x10)
-	struct LinearColor                                           IndirectLightingColor;                             // 0x364(0x10)
+	struct                                                       MinOverdrawColour;                                 // 0x344(0x10)
+	struct                                                       MaxOverdrawColour;                                 // 0x354(0x10)
+	struct                                                       IndirectLightingColor;                             // 0x364(0x10)
 	float                                                        IndirectLightingIntensity;                         // 0x374(0x4)
 	float                                                        ColorGradingIntensity;                             // 0x378(0x4)
-	char                                                         pad0x4_P00ZD[0x4];                                 // 0x37c(0x4)
 	class Texture*                                               ColorGradingLUT;                                   // 0x380(0x8)
 	char                                                         DepthOfFieldMethod;                                // 0x388(0x1)
-	char                                                         pad0x3_0GSW0[0x3];                                 // 0x389(0x3)
 	float                                                        DepthOfFieldDepthBlurAmount;                       // 0x38c(0x4)
 	float                                                        DepthOfFieldDepthBlurRadius;                       // 0x390(0x4)
 	float                                                        DepthOfFieldFstop;                                 // 0x394(0x4)
@@ -7111,7 +6321,6 @@ public:
 	float                                                        MotionBlurPerObjectSize;                           // 0x3d8(0x4)
 	float                                                        ScreenPercentage;                                  // 0x3dc(0x4)
 	char                                                         AntiAliasingMethod;                                // 0x3e0(0x1)
-	char                                                         pad0x3_JDYL0[0x3];                                 // 0x3e1(0x3)
 	float                                                        ScreenSpaceReflectionIntensity;                    // 0x3e4(0x4)
 	float                                                        ScreenSpaceReflectionQuality;                      // 0x3e8(0x4)
 	float                                                        ScreenSpaceReflectionMaxRoughness;                 // 0x3ec(0x4)
@@ -7119,120 +6328,27 @@ public:
 	float                                                        SkyLightIntensityScaleForMinSpec;                  // 0x3f4(0x4)
 	float                                                        SkyLightIntensityScaleInteriorInfluence;           // 0x3f8(0x4)
 	bool                                                         bUseVolumeFogScale;                                // 0x3fc(0x1)
-	char                                                         pad0x3_IQ2X0[0x3];                                 // 0x3fd(0x3)
 	float                                                        VolumeFogScale;                                    // 0x400(0x4)
-	struct LinearColor                                           GlobalReflectionTint;                              // 0x404(0x10)
+	struct                                                       GlobalReflectionTint;                              // 0x404(0x10)
 	float                                                        InsideAmbientColourForParticlesInfluence;          // 0x414(0x4)
-	struct LinearColor                                           InsideAmbientColourForParticles;                   // 0x418(0x10)
-	struct RainPostProcessSettings                               RainSettings;                                      // 0x428(0xc0)
+	struct                                                       InsideAmbientColourForParticles;                   // 0x418(0x10)
+	struct                                                       RainSettings;                                      // 0x428(0xc0)
 	TArray<struct LPVCascadeSettings>                            LPVSettings;                                       // 0x4e8(0x10)
-	struct PlayerAmbientLightOverrideSettings                    PlayerAmbientLightOverrideSettings;                // 0x4f8(0x18)
+	struct                                                       PlayerAmbientLightOverrideSettings;                // 0x4f8(0x18)
 	float                                                        GaussianBlurIntensity;                             // 0x510(0x4)
 	char                                                         DisableShadowMethod;                               // 0x514(0x1)
-	char                                                         pad0x3_BWP0B[0x3];                                 // 0x515(0x3)
-	struct WeightedBlendables                                    WeightedBlendables;                                // 0x518(0x10)
+	struct                                                       WeightedBlendables;                                // 0x518(0x10)
 	TArray<class Object*>                                        Blendables;                                        // 0x528(0x10)
-	char                                                         pad0x8_X8XYR[0x8];                                 // 0x538(0x8)
 };
 
 
-// Size 0xc8
-struct NetRelevancyStateStat
+// Size 0x70
+struct IntegralCurve
 {
 public:
-	float                                                        Duration;                                          // 0x0(0x4)
-	int                                                          RemainingCycles;                                   // 0x4(0x4)
-	struct FString                                               StreamingMode;                                     // 0x8(0x10)
-	struct NetRelevancyConnectionStat                            Connection;                                        // 0x18(0x90)
-	TArray<struct NetRelevancyActorStat>                         Actors;                                            // 0xa8(0x10)
-	TArray<struct NetRelevancyLevelStat>                         Levels;                                            // 0xb8(0x10)
-};
-
-
-// Size 0x18
-struct SlotAnimationTrack
-{
-public:
-	struct FName                                                 SlotName;                                          // 0x0(0x8)
-	struct AnimTrack                                             AnimTrack;                                         // 0x8(0x10)
-};
-
-
-// Size 0xd8
-struct HierarchicalSimplification
-{
-public:
-	bool                                                         bSimplifyMesh;                                     // 0x0(0x1)
-	char                                                         pad0x3_Y5CGO[0x3];                                 // 0x1(0x3)
-	float                                                        DrawDistance;                                      // 0x4(0x4)
-	float                                                        DesiredBoundRadius;                                // 0x8(0x4)
-	float                                                        DesiredFillingPercentage;                          // 0xc(0x4)
-	int                                                          MinNumberOfActorsToBuild;                          // 0x10(0x4)
-	struct MeshProxySettings                                     ProxySetting;                                      // 0x14(0x70)
-	char                                                         pad0x4_F4L0Y[0x4];                                 // 0x84(0x4)
-	struct MeshMergingSettings                                   MergeSetting;                                      // 0x88(0x50)
-};
-
-
-// Size 0xe0
-struct BPVariableDescription
-{
-public:
-	struct FName                                                 VarName;                                           // 0x0(0x8)
-	struct Guid                                                  VarGuid;                                           // 0x8(0x10)
-	struct EdGraphPinType                                        VarType;                                           // 0x18(0x50)
-	struct FString                                               FriendlyName;                                      // 0x68(0x10)
-	struct FText                                                 Category;                                          // 0x78(0x38)
-	struct FName                                                 RepNotifyFunc;                                     // 0xb8(0x8)
-	TArray<struct BPVariableMetaDataEntry>                       MetaDataArray;                                     // 0xc0(0x10)
-	struct FString                                               DefaultValue;                                      // 0xd0(0x10)
-};
-
-
-// Size 0x50
-struct SimplygonRemeshingSettings
-{
-public:
-	bool                                                         bActive;                                           // 0x0(0x1)
-	char                                                         pad0x3_ZYLQD[0x3];                                 // 0x1(0x3)
-	int                                                          ScreenSize;                                        // 0x4(0x4)
-	bool                                                         bRecalculateNormals;                               // 0x8(0x1)
-	char                                                         pad0x3_T5QTB[0x3];                                 // 0x9(0x3)
-	float                                                        HardAngleThreshold;                                // 0xc(0x4)
-	int                                                          MergeDistance;                                     // 0x10(0x4)
-	bool                                                         bUseClippingPlane;                                 // 0x14(0x1)
-	char                                                         pad0x3_KN4NA[0x3];                                 // 0x15(0x3)
-	float                                                        ClippingLevel;                                     // 0x18(0x4)
-	int                                                          AxisIndex;                                         // 0x1c(0x4)
-	bool                                                         bPlaneNegativeHalfspace;                           // 0x20(0x1)
-	bool                                                         bUseMassiveLOD;                                    // 0x21(0x1)
-	bool                                                         bUseAggregateLOD;                                  // 0x22(0x1)
-	char                                                         pad0x5_RPA1N[0x5];                                 // 0x23(0x5)
-	struct SimplygonMaterialLODSettings                          MaterialLODSettings;                               // 0x28(0x28)
-};
-
-
-// Size 0x8c
-struct FindFloorResult
-{
-public:
-	bool                                                         bBlockingHit;                                      // 0x0(0x1)
-	bool                                                         bWalkableFloor;                                    // 0x0(0x1)
-	bool                                                         bLineTrace;                                        // 0x0(0x1)
-	char                                                         pad0x3_BOBLJ[0x3];                                 // 0x1(0x3)
-	float                                                        FloorDist;                                         // 0x4(0x4)
-	float                                                        LineDist;                                          // 0x8(0x4)
-	struct HitResult                                             HitResult;                                         // 0xc(0x80)
-};
-
-
-// Size 0x1e8
-struct RuntimeCurveLinearColor
-{
-public:
-	struct RichCurve                                             ColorCurves;                                       // 0x0(0x78)
-	char                                                         pad0x168_VSCK8[0x168];                             // 0x78(0x168)
-	class CurveLinearColor*                                      ExternalCurve;                                     // 0x1e0(0x8)
+	TArray<struct IntegralKey>                                   Keys;                                              // 0x58(0x10)
+	int                                                          DefaultValue;                                      // 0x68(0x4)
+	bool                                                         bUseDefaultValueBeforeFirstKey;                    // 0x6c(0x1)
 };
 
 
@@ -7242,188 +6358,39 @@ struct BakedAnimationStateMachine
 public:
 	struct FName                                                 MachineName;                                       // 0x0(0x8)
 	int                                                          InitialState;                                      // 0x8(0x4)
-	char                                                         pad0x4_CCZ55[0x4];                                 // 0xc(0x4)
 	TArray<struct BakedAnimationState>                           States;                                            // 0x10(0x10)
 	TArray<struct AnimationTransitionBetweenStates>              Transitions;                                       // 0x20(0x10)
 };
 
 
-// Size 0x498
-struct TransformCurve
+// Size 0xa0
+struct AnimNode_LayeredBoneBlend
 {
 public:
-	char                                                         pad0x18_QR4ZO[0x18];                               // 0x0(0x18)
-	struct VectorCurve                                           TranslationCurve;                                  // 0x18(0x180)
-	struct VectorCurve                                           RotationCurve;                                     // 0x198(0x180)
-	struct VectorCurve                                           ScaleCurve;                                        // 0x318(0x180)
+	struct                                                       BasePose;                                          // 0x30(0x18)
+	TArray<struct PoseLink>                                      BlendPoses;                                        // 0x48(0x10)
+	TArray<struct InputBlendPose>                                LayerSetup;                                        // 0x58(0x10)
+	TArray<float>                                                BlendWeights;                                      // 0x68(0x10)
+	bool                                                         bMeshSpaceRotationBlend;                           // 0x78(0x1)
+	char                                                         CurveBlendOption;                                  // 0x79(0x1)
 };
 
 
-// Size 0x210
-struct BuildPromotionTestSettings
+// Size 0x150
+struct BuildPromotionImportWorkflowSettings
 {
 public:
-	struct FilePath                                              DefaultStaticMeshAsset;                            // 0x0(0x10)
-	struct BuildPromotionImportWorkflowSettings                  ImportWorkflow;                                    // 0x10(0x150)
-	struct BuildPromotionOpenAssetSettings                       OpenAssets;                                        // 0x160(0x60)
-	struct BuildPromotionBlueprintSettings                       BlueprintSettings;                                 // 0x1c0(0x20)
-	struct BuildPromotionNewProjectSettings                      NewProjectSettings;                                // 0x1e0(0x20)
-	struct FilePath                                              SourceControlMaterial;                             // 0x200(0x10)
-};
-
-
-// Size 0x100
-struct HapticFeedbackDetails
-{
-public:
-	struct RuntimeFloatCurve                                     Frequency;                                         // 0x0(0x80)
-	struct RuntimeFloatCurve                                     Amplitude;                                         // 0x80(0x80)
-};
-
-
-// Size 0x5a0
-struct MinimalViewInfo
-{
-public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
-	struct Rotator                                               Rotation;                                          // 0xc(0xc)
-	char                                                         pad0x10_MDQG4[0x10];                               // 0x18(0x10)
-	float                                                        FOV;                                               // 0x28(0x4)
-	float                                                        OrthoWidth;                                        // 0x2c(0x4)
-	float                                                        OrthoNearClipPlane;                                // 0x30(0x4)
-	float                                                        OrthoFarClipPlane;                                 // 0x34(0x4)
-	float                                                        AspectRatio;                                       // 0x38(0x4)
-	bool                                                         bConstrainAspectRatio;                             // 0x3c(0x1)
-	bool                                                         bUseFieldOfViewForLOD;                             // 0x3c(0x1)
-	char                                                         pad0x3_YWYJF[0x3];                                 // 0x3d(0x3)
-	char                                                         ProjectionMode;                                    // 0x40(0x1)
-	char                                                         pad0x3_4ZHBM[0x3];                                 // 0x41(0x3)
-	float                                                        PostProcessBlendWeight;                            // 0x44(0x4)
-	char                                                         pad0x8_BJLWW[0x8];                                 // 0x48(0x8)
-	struct PostProcessSettings                                   PostProcessSettings;                               // 0x50(0x540)
-	char                                                         pad0x10_62YCH[0x10];                               // 0x590(0x10)
-};
-
-
-// Size 0xf0
-struct SkeletalMeshLODInfo
-{
-public:
-	float                                                        ScreenSize;                                        // 0x0(0x4)
-	float                                                        LODHysteresis;                                     // 0x4(0x4)
-	TArray<int>                                                  LODMaterialMap;                                    // 0x8(0x10)
-	TArray<struct TriangleSortSettings>                          TriangleSortSettings;                              // 0x18(0x10)
-	bool                                                         bHasBeenSimplified;                                // 0x28(0x1)
-	char                                                         pad0x7_519YB[0x7];                                 // 0x29(0x7)
-	struct SkeletalMeshOptimizationSettings                      ReductionSettings;                                 // 0x30(0x70)
-	struct SimplygonRemeshingSettings                            RemeshingSettings;                                 // 0xa0(0x50)
-};
-
-
-// Size 0xf8
-struct StaticMeshSourceModel
-{
-public:
-	struct MeshBuildSettings                                     BuildSettings;                                     // 0x0(0x40)
-	struct MeshReductionSettings                                 ReductionSettings;                                 // 0x40(0x58)
-	struct SimplygonRemeshingSettings                            RemeshingSettings;                                 // 0x98(0x50)
-	int                                                          OverriddenLightMapRes;                             // 0xe8(0x4)
-	float                                                        LODDistance;                                       // 0xec(0x4)
-	float                                                        ScreenSize;                                        // 0xf0(0x4)
-	float                                                        MaxDeviation;                                      // 0xf4(0x4)
-};
-
-
-// Size 0xc0
-struct RPCStats
-{
-public:
-	struct RPCStatEntry                                          Entries;                                           // 0x0(0x60)
-	char                                                         pad0x60_R9W7Z[0x60];                               // 0x60(0x60)
-};
-
-
-// Size 0xc0
-struct AttenuationSettings
-{
-public:
-	bool                                                         bAttenuate;                                        // 0x0(0x1)
-	bool                                                         bSpatialize;                                       // 0x0(0x1)
-	bool                                                         bAttenuateWithLPF;                                 // 0x0(0x1)
-	char                                                         pad0x3_31UJF[0x3];                                 // 0x1(0x3)
-	char                                                         DistanceAlgorithm;                                 // 0x4(0x1)
-	char                                                         pad0x3_7DZFZ[0x3];                                 // 0x5(0x3)
-	struct RuntimeFloatCurve                                     CustomAttenuationCurve;                            // 0x8(0x80)
-	char                                                         DistanceType;                                      // 0x88(0x1)
-	char                                                         AttenuationShape;                                  // 0x89(0x1)
-	char                                                         pad0x2_LNFD5[0x2];                                 // 0x8a(0x2)
-	float                                                        dBAttenuationAtMax;                                // 0x8c(0x4)
-	float                                                        OmniRadius;                                        // 0x90(0x4)
-	char                                                         SpatializationAlgorithm;                           // 0x94(0x1)
-	char                                                         pad0x3_WQTRY[0x3];                                 // 0x95(0x3)
-	float                                                        RadiusMin;                                         // 0x98(0x4)
-	float                                                        RadiusMax;                                         // 0x9c(0x4)
-	struct Vector                                                AttenuationShapeExtents;                           // 0xa0(0xc)
-	float                                                        ConeOffset;                                        // 0xac(0x4)
-	float                                                        FalloffDistance;                                   // 0xb0(0x4)
-	float                                                        LPFRadiusMin;                                      // 0xb4(0x4)
-	float                                                        LPFRadiusMax;                                      // 0xb8(0x4)
-	char                                                         pad0x4_VVMVH[0x4];                                 // 0xbc(0x4)
-};
-
-
-// Size 0xe8
-struct NetRelevancyStat
-{
-public:
-	struct Guid                                                  RequestID;                                         // 0x0(0x10)
-	struct FString                                               Reason;                                            // 0x10(0x10)
-	struct NetRelevancyStateStat                                 State;                                             // 0x20(0xc8)
-};
-
-
-// Size 0x88
-struct ForceFeedbackChannelDetails
-{
-public:
-	bool                                                         bAffectsLeftLarge;                                 // 0x0(0x1)
-	bool                                                         bAffectsLeftSmall;                                 // 0x0(0x1)
-	bool                                                         bAffectsRightLarge;                                // 0x0(0x1)
-	bool                                                         bAffectsRightSmall;                                // 0x0(0x1)
-	bool                                                         bAffectsLeftTrigger;                               // 0x0(0x1)
-	bool                                                         bAffectsRightTrigger;                              // 0x0(0x1)
-	char                                                         pad0x7_FDM7F[0x7];                                 // 0x1(0x7)
-	struct RuntimeFloatCurve                                     Curve;                                             // 0x8(0x80)
-};
-
-
-// Size 0x10
-struct RawCurveTracks
-{
-public:
-	TArray<struct FloatCurve>                                    FloatCurves;                                       // 0x0(0x10)
-};
-
-
-// Size 0x5b0
-struct CameraCacheEntry
-{
-public:
-	float                                                        TimeStamp;                                         // 0x0(0x4)
-	char                                                         pad0xc_I0BO5[0xc];                                 // 0x4(0xc)
-	struct MinimalViewInfo                                       POV;                                               // 0x10(0x5a0)
-};
-
-
-// Size 0x5c0
-struct TViewTarget
-{
-public:
-	class Actor*                                                 Target;                                            // 0x0(0x8)
-	char                                                         pad0x8_1X5CF[0x8];                                 // 0x8(0x8)
-	struct MinimalViewInfo                                       POV;                                               // 0x10(0x5a0)
-	class PlayerState*                                           PlayerState;                                       // 0x5b0(0x8)
-	char                                                         pad0x8_6Y79O[0x8];                                 // 0x5b8(0x8)
+	struct                                                       Diffuse;                                           // 0x0(0x20)
+	struct                                                       Normal;                                            // 0x20(0x20)
+	struct                                                       StaticMesh;                                        // 0x40(0x20)
+	struct                                                       ReimportStaticMesh;                                // 0x60(0x20)
+	struct                                                       BlendShapeMesh;                                    // 0x80(0x20)
+	struct                                                       MorphMesh;                                         // 0xa0(0x20)
+	struct                                                       SkeletalMesh;                                      // 0xc0(0x20)
+	struct                                                       Animation;                                         // 0xe0(0x20)
+	struct                                                       Sound;                                             // 0x100(0x20)
+	struct                                                       SurroundSound;                                     // 0x120(0x20)
+	TArray<struct EditorImportWorkflowDefinition>                OtherAssetsToImport;                               // 0x140(0x10)
 };
 
 

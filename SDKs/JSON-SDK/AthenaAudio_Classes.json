@@ -1,57 +1,4 @@
 {
-  "AudioPortalInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AudioPortalService": {
-    "Super": "Object",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "pad0xb0_QHIRU[0xb0]",
-        "Type": "char",
-        "Size": "0xb0",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AthenaAudioConfig": {
-    "Super": "WwiseCoreAssets",
-    "FullSize": "0x108",
-    "InheritedSize": "0x58",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "ItemProxyPool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "AnimNotifyPool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "GameStateSettings",
-        "Type": "struct AthenaAudioGameStateSettings",
-        "Size": "0x20",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "BootflowEvents",
-        "Type": "struct AthenaAudioBootflowEvents",
-        "Size": "0x80",
-        "Offset": "0x88"
-      }
-    ]
-  },
   "AudioPortalComponent": {
     "Super": "SceneComponent",
     "FullSize": "0x340",
@@ -83,12 +30,6 @@
         "Offset": "0x2ec"
       },
       {
-        "Name": "pad0x3_T58NQ[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x2ed"
-      },
-      {
         "Name": "AudioInsideSpace",
         "Type": "class AudioSpaceDataAsset*",
         "Size": "0x8",
@@ -117,32 +58,32 @@
         "Type": "class StoryDrivenAudioPortalDataAsset*",
         "Size": "0x8",
         "Offset": "0x310"
-      },
-      {
-        "Name": "pad0x28_SATWE[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x318"
       }
     ]
   },
-  "MultiEmitter": {
-    "Super": "Actor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x10",
+  "AudioSpaceComponent": {
+    "Super": "StaticMeshComponent",
+    "FullSize": "0x660",
+    "InheritedSize": "0x630",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "MultiEmitterRootComponent",
-        "Type": "class MultiEmitterRootComponent*",
+        "Name": "AudioSpace",
+        "Type": "class AudioSpaceDataAsset*",
         "Size": "0x8",
-        "Offset": "0x3c8"
+        "Offset": "0x630"
       },
       {
-        "Name": "pad0x8_P6WSU[0x8]",
-        "Type": "char",
+        "Name": "ActiveAudioSpace",
+        "Type": "class AudioSpaceDataAsset*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x638"
+      },
+      {
+        "Name": "CollectionAsset",
+        "Type": "class StoryDrivenAudioPortalDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x640"
       }
     ]
   },
@@ -154,15 +95,9 @@
     "Attributes": [
       {
         "Name": "Feature",
-        "Type": "struct FeatureFlag",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_C0WGL[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
       },
       {
         "Name": "StoryResponses",
@@ -216,27 +151,75 @@
       },
       {
         "Name": "EmitterOffset",
-        "Type": "struct Vector",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0x310"
-      },
-      {
-        "Name": "pad0x14_9L72K[0x14]",
-        "Type": "char",
-        "Size": "0x14",
-        "Offset": "0x31c"
       },
       {
         "Name": "LocalPlayer",
         "Type": "class Character*",
         "Size": "0x8",
         "Offset": "0x330"
+      }
+    ]
+  },
+  "AthenaAudioModuleSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AudioConfigAsset",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "MultiEmitter": {
+    "Super": "Actor",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MultiEmitterRootComponent",
+        "Type": "class MultiEmitterRootComponent*",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      }
+    ]
+  },
+  "AthenaAudioConfig": {
+    "Super": "WwiseCoreAssets",
+    "FullSize": "0x108",
+    "InheritedSize": "0x58",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "ItemProxyPool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x58"
       },
       {
-        "Name": "pad0x38_JVNBS[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x338"
+        "Name": "AnimNotifyPool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "GameStateSettings",
+        "Type": "struct",
+        "Size": "0x20",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "BootflowEvents",
+        "Type": "struct",
+        "Size": "0x80",
+        "Offset": "0x88"
       }
     ]
   },
@@ -251,52 +234,6 @@
         "Type": "TArray<class AudioSpaceComponent*>",
         "Size": "0x10",
         "Offset": "0xc8"
-      }
-    ]
-  },
-  "AudioSpaceComponent": {
-    "Super": "StaticMeshComponent",
-    "FullSize": "0x650",
-    "InheritedSize": "0x620",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "AudioSpace",
-        "Type": "class AudioSpaceDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x620"
-      },
-      {
-        "Name": "ActiveAudioSpace",
-        "Type": "class AudioSpaceDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x628"
-      },
-      {
-        "Name": "CollectionAsset",
-        "Type": "class StoryDrivenAudioPortalDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x630"
-      },
-      {
-        "Name": "pad0x18_03YUJ[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x638"
-      }
-    ]
-  },
-  "AthenaAudioModuleSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AudioConfigAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
       }
     ]
   },

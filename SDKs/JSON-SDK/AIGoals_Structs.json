@@ -3,12 +3,6 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x28_6QHXP[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
         "Name": "RequiredContextTags",
         "Type": "TArray<class Class*>",
         "Size": "0x10",
@@ -19,12 +13,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x7_I1STA[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x39"
       }
     ]
   },
@@ -36,12 +24,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_XIL2A[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
       },
       {
         "Name": "ForwardFacingPreferenceMinAngleInDegrees",
@@ -74,12 +56,6 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_HTFOK[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x15"
-      },
-      {
         "Name": "StayingPreferenceDistance",
         "Type": "float",
         "Size": "0x4",
@@ -90,12 +66,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1c"
-      },
-      {
-        "Name": "pad0x3_SDG7B[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1d"
       },
       {
         "Name": "MaximumDistanceAllowedFromTarget",
@@ -116,12 +86,6 @@
         "Offset": "0x25"
       },
       {
-        "Name": "pad0x2_8XQ1C[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x26"
-      },
-      {
         "Name": "TargetMovementRefreshThresholdDistance",
         "Type": "float",
         "Size": "0x4",
@@ -132,12 +96,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x2c"
-      },
-      {
-        "Name": "pad0x3_IQC1I[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x2d"
       },
       {
         "Name": "RefreshTimeInSeconds",

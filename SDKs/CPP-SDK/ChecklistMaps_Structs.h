@@ -9,9 +9,26 @@
 struct ChecklistMapItemData
 {
 public:
-	struct TreasureMapTextDesc                                   Description;                                       // 0x0(0x48)
+	struct                                                       Description;                                       // 0x0(0x48)
 	bool                                                         IsComplete;                                        // 0x48(0x1)
-	char                                                         pad0x7_5UFK4[0x7];                                 // 0x49(0x7)
+};
+
+
+// Size 0x8
+struct ChecklistCompletionEvent
+{
+public:
+	class ChecklistActionData*                                   ActionData;                                        // 0x0(0x8)
+};
+
+
+// Size 0x28
+struct ChecklistItemCompletedTelemetryEvent
+{
+public:
+	struct                                                       ChecklistMapId;                                    // 0x0(0x10)
+	char                                                         ReceivedActionType;                                // 0x10(0x1)
+	struct FString                                               ActionDescryption;                                 // 0x18(0x10)
 };
 
 
@@ -24,41 +41,13 @@ public:
 };
 
 
-// Size 0x8
-struct ChecklistCompletionEvent
-{
-public:
-	class ChecklistActionData*                                   ActionData;                                        // 0x0(0x8)
-};
-
-
 // Size 0x50
 struct ChecklistItem
 {
 public:
 	struct FText                                                 Description;                                       // 0x0(0x38)
 	int                                                          NumRequiredActionCompletions;                      // 0x38(0x4)
-	char                                                         pad0x4_D5XTL[0x4];                                 // 0x3c(0x4)
 	TArray<class ChecklistActionData*>                           ActionData;                                        // 0x40(0x10)
-};
-
-
-// Size 0x28
-struct ChecklistItemCompletedTelemetryEvent
-{
-public:
-	struct Guid                                                  ChecklistMapId;                                    // 0x0(0x10)
-	char                                                         ReceivedActionType;                                // 0x10(0x1)
-	char                                                         pad0x7_POAS2[0x7];                                 // 0x11(0x7)
-	struct FString                                               ActionDescryption;                                 // 0x18(0x10)
-};
-
-
-// Size 0x1
-struct CompleteEntireChecklistEvent
-{
-public:
-	char                                                         pad0x1_Z227U[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -66,10 +55,10 @@ public:
 struct ChecklistMapContents
 {
 public:
-	struct TreasureMapTextDesc                                   Title;                                             // 0x0(0x48)
-	struct TreasureMapTextDesc                                   Description;                                       // 0x48(0x48)
+	struct                                                       Title;                                             // 0x0(0x48)
+	struct                                                       Description;                                       // 0x48(0x48)
 	TArray<struct ChecklistMapItemData>                          ChecklistItems;                                    // 0x90(0x10)
-	struct TreasureMapTextDesc                                   Afternote;                                         // 0xa0(0x48)
+	struct                                                       Afternote;                                         // 0xa0(0x48)
 };
 
 

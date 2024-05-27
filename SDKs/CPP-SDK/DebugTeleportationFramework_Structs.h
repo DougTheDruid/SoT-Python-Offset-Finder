@@ -10,10 +10,9 @@ struct DebugTeleportDestinationEntry
 {
 public:
 	struct FString                                               DebugMenuSubPath;                                  // 0x0(0x10)
-	struct Vector                                                Destination;                                       // 0x10(0xc)
-	struct Guid                                                  AssociatedCrew;                                    // 0x1c(0x10)
-	struct Guid                                                  Id;                                                // 0x2c(0x10)
-	char                                                         pad0x4_YA3BE[0x4];                                 // 0x3c(0x4)
+	struct                                                       Destination;                                       // 0x10(0xc)
+	struct                                                       AssociatedCrew;                                    // 0x1c(0x10)
+	struct                                                       Id;                                                // 0x2c(0x10)
 };
 
 

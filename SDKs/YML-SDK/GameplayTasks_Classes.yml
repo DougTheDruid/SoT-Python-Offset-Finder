@@ -6,48 +6,34 @@ GameplayTask:
     Offset: '0x28'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x28_N2YDN[0x28]
-    Offset: '0x30'
-    Size: '0x28'
-    Type: char
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
   Super: Object
-GameplayTaskOwnerInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 GameplayTaskResource:
   Attributes:
   - Name: ManualResourceID
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_252ZE[0x4]
-    Offset: '0x2c'
-    Size: '0x4'
-    Type: char
   - Name: bManuallySetID
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_4106K[0x7]
-    Offset: '0x31'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
 GameplayTask_SpawnActor:
   Attributes:
-  - Name: pad0x38_HMG34[0x38]
+  - Name: Success
     Offset: '0x58'
-    Size: '0x38'
-    Type: char
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: DidNotSpawn
+    Offset: '0x68'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   - Name: ClassToSpawn
     Offset: '0x90'
     Size: '0x8'
@@ -58,20 +44,16 @@ GameplayTask_SpawnActor:
   Super: GameplayTask
 GameplayTask_WaitDelay:
   Attributes:
-  - Name: pad0x18_I1BSO[0x18]
+  - Name: OnFinish
     Offset: '0x58'
-    Size: '0x18'
-    Type: char
+    Size: '0x10'
+    Type: multicastinlinedelegate
   ClassSize: '0x18'
   FullSize: '0x70'
   InheritedSize: '0x58'
   Super: GameplayTask
 GameplayTasksComponent:
   Attributes:
-  - Name: pad0x8_ZZFSH[0x8]
-    Offset: '0xc8'
-    Size: '0x8'
-    Type: char
   - Name: SimulatedTasks
     Offset: '0xd0'
     Size: '0x10'
@@ -80,14 +62,10 @@ GameplayTasksComponent:
     Offset: '0xe0'
     Size: '0x10'
     Type: TArray<class GameplayTask*>
-  - Name: pad0x28_STXSK[0x28]
-    Offset: '0xf0'
-    Size: '0x28'
-    Type: char
-  - Name: pad0x10_BF63M[0x10]
+  - Name: OnClaimedResourcesChange
     Offset: '0x118'
     Size: '0x10'
-    Type: char
+    Type: multicastinlinedelegate
   ClassSize: '0x60'
   FullSize: '0x128'
   InheritedSize: '0xc8'

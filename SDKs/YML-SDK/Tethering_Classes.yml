@@ -2,38 +2,20 @@
 # https://github.com/DougTheDruid
 CordRenderComponent:
   Attributes:
-  - Name: pad0x8_XQT1L[0x8]
-    Offset: '0x620'
-    Size: '0x8'
-    Type: char
   - Name: CordMaterials
-    Offset: '0x628'
+    Offset: '0x638'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
   - Name: ThicknessCm
-    Offset: '0x638'
+    Offset: '0x648'
     Size: '0x4'
     Type: float
-  - Name: pad0x24_ZPLL9[0x24]
-    Offset: '0x63c'
-    Size: '0x24'
-    Type: char
   ClassSize: '0x40'
-  FullSize: '0x660'
-  InheritedSize: '0x620'
+  FullSize: '0x670'
+  InheritedSize: '0x630'
   Super: StaticMeshComponent
-CordRenderInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 DistanceJointComponent:
   Attributes:
-  - Name: pad0x70_4IEOE[0x70]
-    Offset: '0xc8'
-    Size: '0x70'
-    Type: char
   - Name: MinDistance
     Offset: '0x138'
     Size: '0x4'
@@ -62,10 +44,6 @@ DistanceJointComponent:
     Offset: '0x14a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_R2YNU[0x5]
-    Offset: '0x14b'
-    Size: '0x5'
-    Type: char
   ClassSize: '0x88'
   FullSize: '0x150'
   InheritedSize: '0xc8'
@@ -73,67 +51,45 @@ DistanceJointComponent:
 DynamicCordRenderComponent:
   Attributes:
   - Name: BoundsPadding
-    Offset: '0x658'
+    Offset: '0x668'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_BP3Z7[0x4]
-    Offset: '0x65c'
-    Size: '0x4'
-    Type: char
   - Name: EndPointA
-    Offset: '0x660'
+    Offset: '0x670'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: EndPointB
-    Offset: '0x668'
+    Offset: '0x678'
     Size: '0x8'
     Type: class SceneComponent*
-  - Name: pad0x50_69Y5P[0x50]
-    Offset: '0x670'
-    Size: '0x50'
-    Type: char
   ClassSize: '0x60'
-  FullSize: '0x6c0'
-  InheritedSize: '0x660'
+  FullSize: '0x6d0'
+  InheritedSize: '0x670'
   Super: CordRenderComponent
 HarpoonRenderComponent:
   Attributes:
   - Name: HarpoonMaterials
-    Offset: '0x658'
+    Offset: '0x668'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
   - Name: LaunchAnimationDurationSecs
-    Offset: '0x668'
+    Offset: '0x678'
     Size: '0x4'
     Type: float
   - Name: HitAnimationDurationSecs
-    Offset: '0x66c'
+    Offset: '0x67c'
     Size: '0x4'
     Type: float
   - Name: QuickRetractAnimationSpeed
-    Offset: '0x670'
+    Offset: '0x680'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_AMFTJ[0xc]
-    Offset: '0x674'
-    Size: '0xc'
-    Type: char
   ClassSize: '0x20'
-  FullSize: '0x680'
-  InheritedSize: '0x660'
+  FullSize: '0x690'
+  InheritedSize: '0x670'
   Super: CordRenderComponent
-ShouldTetherInWorldSpaceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 Tether:
   Attributes:
-  - Name: pad0xf8_OL5R7[0xf8]
-    Offset: '0x3c8'
-    Size: '0xf8'
-    Type: char
   - Name: TetherPositionAnchorComponent
     Offset: '0x4c0'
     Size: '0x8'
@@ -166,10 +122,6 @@ Tether:
     Offset: '0x4f4'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_5T9BS[0x8]
-    Offset: '0x4f8'
-    Size: '0x8'
-    Type: char
   - Name: HasAttached
     Offset: '0x500'
     Size: '0x1'
@@ -190,34 +142,16 @@ Tether:
     Offset: '0x504'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_8NFMP[0x3]
-    Offset: '0x505'
-    Size: '0x3'
-    Type: char
   ClassSize: '0x140'
   FullSize: '0x508'
   InheritedSize: '0x3c8'
   Super: Actor
-TetherConstraintInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 TetherCustomisationComponent:
   Attributes:
-  - Name: pad0x8_4CRM8[0x8]
-    Offset: '0xc8'
-    Size: '0x8'
-    Type: char
   - Name: ComponentToTetherTo
     Offset: '0xd0'
     Size: '0x8'
     Type: class SceneComponent*
-  - Name: pad0x48_UPSMA[0x48]
-    Offset: '0xd8'
-    Size: '0x48'
-    Type: char
   - Name: MassIntertiaScale
     Offset: '0x120'
     Size: '0x4'
@@ -230,39 +164,7 @@ TetherCustomisationComponent:
     Offset: '0x125'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_EF619[0x2]
-    Offset: '0x126'
-    Size: '0x2'
-    Type: char
   ClassSize: '0x60'
   FullSize: '0x128'
   InheritedSize: '0xc8'
   Super: ActorComponent
-TetherCustomisationInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: TetherQueriableInterface
-TetherInWorldSpaceComponent:
-  Attributes:
-  - Name: pad0x8_NS3OD[0x8]
-    Offset: '0xc8'
-    Size: '0x8'
-    Type: char
-  ClassSize: '0x8'
-  FullSize: '0xd0'
-  InheritedSize: '0xc8'
-  Super: ActorComponent
-TetherInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-TetherQueriableInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

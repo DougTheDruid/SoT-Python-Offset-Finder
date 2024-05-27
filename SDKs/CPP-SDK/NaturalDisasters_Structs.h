@@ -5,27 +5,30 @@
 
 
 
-// Size 0x10
-struct VolcanoStoryCustomisationData
+// Size 0x1c
+struct VolcanoProjectileData
 {
 public:
-	struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
-	class VolcanoSetupDataAsset*                                 VolcanoSetupData;                                  // 0x8(0x8)
+	int                                                          WeightedVolcanoProjectileIndex;                    // 0x0(0x4)
+	struct                                                       LaunchVelocity;                                    // 0x4(0xc)
+	struct                                                       RotationRate;                                      // 0x10(0xc)
 };
 
 
-// Size 0x58
-struct VolcanoTargetChances
+// Size 0x10
+struct VolcanoSetupDataEmbersEntry
 {
 public:
-	float                                                        OnTarget;                                          // 0x0(0x4)
-	float                                                        NearMiss;                                          // 0x4(0x4)
-	float                                                        Random;                                            // 0x8(0x4)
-	char                                                         pad0x4_L2UY7[0x4];                                 // 0xc(0x4)
-	struct WeightedProbabilityRange                              OnTargetNumExtraShots;                             // 0x10(0x20)
-	struct WeightedProbabilityRange                              NearMissNumExtraShots;                             // 0x30(0x20)
-	float                                                        CoolDownDuration;                                  // 0x50(0x4)
-	char                                                         pad0x4_K2UG6[0x4];                                 // 0x54(0x4)
+	float                                                        MaxDistanceInMetres;                               // 0x0(0x4)
+	class Object*                                                Effect;                                            // 0x8(0x8)
+};
+
+
+// Size 0x1
+struct EventVolcanoStateChanged
+{
+public:
+	char                                                         State;                                             // 0x0(0x1)
 };
 
 
@@ -39,101 +42,30 @@ public:
 
 
 // Size 0xc
-struct GeyserSpawnAngleOption
-{
-public:
-	float                                                        Weight;                                            // 0x0(0x4)
-	float                                                        Direction;                                         // 0x4(0x4)
-	float                                                        Range;                                             // 0x8(0x4)
-};
-
-
-// Size 0x1c
-struct VolcanoProjectileData
-{
-public:
-	int                                                          WeightedVolcanoProjectileIndex;                    // 0x0(0x4)
-	struct Vector                                                LaunchVelocity;                                    // 0x4(0xc)
-	struct Vector                                                RotationRate;                                      // 0x10(0xc)
-};
-
-
-// Size 0x10
-struct GeyserManagerStoryCustomisationData
-{
-public:
-	struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
-	class GeyserManagerSetupDataAsset*                           GeyserManagerSetupData;                            // 0x8(0x8)
-};
-
-
-// Size 0xc
 struct VolcanoStateData
 {
 public:
 	char                                                         State;                                             // 0x0(0x1)
-	char                                                         pad0x3_M6F1K[0x3];                                 // 0x1(0x3)
 	float                                                        StateDuration;                                     // 0x4(0x4)
 	float                                                        PercentageOfMaxTargetingRange;                     // 0x8(0x4)
 };
 
 
-// Size 0x10
-struct VolcanoSetupDataEmbersEntry
-{
-public:
-	float                                                        MaxDistanceInMetres;                               // 0x0(0x4)
-	char                                                         pad0x4_2EFZY[0x4];                                 // 0x4(0x4)
-	class Object*                                                Effect;                                            // 0x8(0x8)
-};
-
-
-// Size 0x1
-struct EventVolcanoStateChanged
-{
-public:
-	char                                                         State;                                             // 0x0(0x1)
-};
-
-
-// Size 0x10
-struct GeyserStoryCustomisationData
-{
-public:
-	struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
-	class GeyserSetupDataAsset*                                  GeyserSetupData;                                   // 0x8(0x8)
-};
-
-
-// Size 0xd0
-struct WeightedAshenLordVolcanoProjectile
+// Size 0xc0
+struct WeightedVolcanoProjectile
 {
 public:
 	float                                                        Weight;                                            // 0x0(0x4)
-	float                                                        GravityMultiplier;                                 // 0x4(0x4)
-	struct WeightedProbabilityRangeOfRanges                      Speed;                                             // 0x8(0x30)
-	struct WeightedProbabilityRangeOfRanges                      RotationRatePitch;                                 // 0x38(0x30)
-	struct WeightedProbabilityRangeOfRanges                      RotationRateRoll;                                  // 0x68(0x30)
-	struct WeightedProbabilityRangeOfRanges                      RotationRateYaw;                                   // 0x98(0x30)
-	class UClass*                                                ProjectileClass;                                   // 0xc8(0x8)
-};
-
-
-// Size 0x10
-struct EarthquakeStoryCustomisationData
-{
-public:
-	struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
-	class EarthquakeSetupDataAsset*                              EarthquakeSetupData;                               // 0x8(0x8)
-};
-
-
-// Size 0x10
-struct VolcanoTargetCoolDown
-{
-public:
-	class Actor*                                                 Target;                                            // 0x0(0x8)
-	char                                                         pad0x8_W8OK8[0x8];                                 // 0x8(0x8)
+	class UClass*                                                ProjectileClass;                                   // 0x8(0x8)
+	float                                                        ProjectileSpeedMinAtInnerRadius;                   // 0x10(0x4)
+	float                                                        ProjectileSpeedMaxAtInnerRadius;                   // 0x14(0x4)
+	float                                                        ProjectileSpeedMinAtOuterRadius;                   // 0x18(0x4)
+	float                                                        ProjectileSpeedMaxAtOuterRadius;                   // 0x1c(0x4)
+	float                                                        ProjectileGravityScale;                            // 0x20(0x4)
+	struct                                                       RotationRatePitch;                                 // 0x28(0x30)
+	struct                                                       RotationRateRoll;                                  // 0x58(0x30)
+	struct                                                       RotationRateYaw;                                   // 0x88(0x30)
+	class WwiseEvent*                                            LaunchAudioPlayEvent;                              // 0xb8(0x8)
 };
 
 
@@ -143,30 +75,18 @@ struct VolcanoTarget
 public:
 	char                                                         Type;                                              // 0x0(0x1)
 	char                                                         HitType;                                           // 0x1(0x1)
-	char                                                         pad0x6_KXDYC[0x6];                                 // 0x2(0x6)
 	class Actor*                                                 Target;                                            // 0x8(0x8)
 	int                                                          NumExtraShots;                                     // 0x10(0x4)
-	char                                                         pad0x4_24P0O[0x4];                                 // 0x14(0x4)
 };
 
 
-// Size 0xc0
-struct WeightedVolcanoProjectile
+// Size 0x80
+struct PlayerFeedback
 {
 public:
-	float                                                        Weight;                                            // 0x0(0x4)
-	char                                                         pad0x4_ZAHKO[0x4];                                 // 0x4(0x4)
-	class UClass*                                                ProjectileClass;                                   // 0x8(0x8)
-	float                                                        ProjectileSpeedMinAtInnerRadius;                   // 0x10(0x4)
-	float                                                        ProjectileSpeedMaxAtInnerRadius;                   // 0x14(0x4)
-	float                                                        ProjectileSpeedMinAtOuterRadius;                   // 0x18(0x4)
-	float                                                        ProjectileSpeedMaxAtOuterRadius;                   // 0x1c(0x4)
-	float                                                        ProjectileGravityScale;                            // 0x20(0x4)
-	char                                                         pad0x4_OF4P9[0x4];                                 // 0x24(0x4)
-	struct WeightedProbabilityRangeOfRanges                      RotationRatePitch;                                 // 0x28(0x30)
-	struct WeightedProbabilityRangeOfRanges                      RotationRateRoll;                                  // 0x58(0x30)
-	struct WeightedProbabilityRangeOfRanges                      RotationRateYaw;                                   // 0x88(0x30)
-	class WwiseEvent*                                            LaunchAudioPlayEvent;                              // 0xb8(0x8)
+	struct                                                       ForceFeedback;                                     // 0x0(0x40)
+	TArray<class Class*>                                         CameraShakes;                                      // 0x40(0x10)
+	struct                                                       StaggerStrength;                                   // 0x50(0x30)
 };
 
 
@@ -178,22 +98,93 @@ public:
 };
 
 
+// Size 0xd0
+struct WeightedAshenLordVolcanoProjectile
+{
+public:
+	float                                                        Weight;                                            // 0x0(0x4)
+	float                                                        GravityMultiplier;                                 // 0x4(0x4)
+	struct                                                       Speed;                                             // 0x8(0x30)
+	struct                                                       RotationRatePitch;                                 // 0x38(0x30)
+	struct                                                       RotationRateRoll;                                  // 0x68(0x30)
+	struct                                                       RotationRateYaw;                                   // 0x98(0x30)
+	class UClass*                                                ProjectileClass;                                   // 0xc8(0x8)
+};
+
+
+// Size 0x10
+struct EarthquakeStoryCustomisationData
+{
+public:
+	struct                                                       StoryFlag;                                         // 0x0(0x8)
+	class EarthquakeSetupDataAsset*                              EarthquakeSetupData;                               // 0x8(0x8)
+};
+
+
+// Size 0x10
+struct GeyserManagerStoryCustomisationData
+{
+public:
+	struct                                                       StoryFlag;                                         // 0x0(0x8)
+	class GeyserManagerSetupDataAsset*                           GeyserManagerSetupData;                            // 0x8(0x8)
+};
+
+
+// Size 0x10
+struct VolcanoTargetCoolDown
+{
+public:
+	class Actor*                                                 Target;                                            // 0x0(0x8)
+};
+
+
+// Size 0xc
+struct GeyserSpawnAngleOption
+{
+public:
+	float                                                        Weight;                                            // 0x0(0x4)
+	float                                                        Direction;                                         // 0x4(0x4)
+	float                                                        Range;                                             // 0x8(0x4)
+};
+
+
+// Size 0x10
+struct VolcanoStoryCustomisationData
+{
+public:
+	struct                                                       StoryFlag;                                         // 0x0(0x8)
+	class VolcanoSetupDataAsset*                                 VolcanoSetupData;                                  // 0x8(0x8)
+};
+
+
+// Size 0x58
+struct VolcanoTargetChances
+{
+public:
+	float                                                        OnTarget;                                          // 0x0(0x4)
+	float                                                        NearMiss;                                          // 0x4(0x4)
+	float                                                        Random;                                            // 0x8(0x4)
+	struct                                                       OnTargetNumExtraShots;                             // 0x10(0x20)
+	struct                                                       NearMissNumExtraShots;                             // 0x30(0x20)
+	float                                                        CoolDownDuration;                                  // 0x50(0x4)
+};
+
+
+// Size 0x10
+struct GeyserStoryCustomisationData
+{
+public:
+	struct                                                       StoryFlag;                                         // 0x0(0x8)
+	class GeyserSetupDataAsset*                                  GeyserSetupData;                                   // 0x8(0x8)
+};
+
+
 // Size 0x40
 struct EarthquakeForceFeedback
 {
 public:
 	TArray<struct EarthquakeForceFeedbackOption>                 ForceFeedbackOptions;                              // 0x0(0x10)
-	struct WeightedProbabilityRangeOfRanges                      TimeBetweenRumbles;                                // 0x10(0x30)
-};
-
-
-// Size 0x80
-struct PlayerFeedback
-{
-public:
-	struct EarthquakeForceFeedback                               ForceFeedback;                                     // 0x0(0x40)
-	TArray<class Class*>                                         CameraShakes;                                      // 0x40(0x10)
-	struct WeightedProbabilityRangeOfRanges                      StaggerStrength;                                   // 0x50(0x30)
+	struct                                                       TimeBetweenRumbles;                                // 0x10(0x30)
 };
 
 

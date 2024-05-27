@@ -9,22 +9,14 @@ ItemAndReward:
   - Name: HandInOnTimeRewardId
     Offset: '0x8'
     Size: '0x8'
-    Type: struct RewardId
+    Type: struct
   ClassSize: '0x10'
 MerchantContract:
   Attributes:
-  - Name: pad0x18_I8Y2B[0x18]
-    Offset: '0x0'
-    Size: '0x18'
-    Type: char
   - Name: DeliveryRequests
     Offset: '0x18'
     Size: '0x10'
     Type: TArray<struct MerchantContractDeliveryRequest>
-  - Name: pad0x98_823HQ[0x98]
-    Offset: '0x28'
-    Size: '0x98'
-    Type: char
   ClassSize: '0xc0'
 MerchantContractDeliveryRequest:
   Attributes:
@@ -32,14 +24,10 @@ MerchantContractDeliveryRequest:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_21I4E[0x4]
-    Offset: '0x4'
-    Size: '0x4'
-    Type: char
   - Name: ItemDesc
     Offset: '0x8'
     Size: '0x28'
-    Type: struct MerchantContractItemDesc
+    Type: struct
   - Name: NumToAllocate
     Offset: '0x30'
     Size: '0x4'
@@ -52,10 +40,6 @@ MerchantContractDeliveryRequest:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_GZKIM[0x4]
-    Offset: '0x3c'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x40'
 MerchantContractItemDesc:
   Attributes:
@@ -81,7 +65,7 @@ PlayerMerchantContract:
   - Name: Id
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: IslandName
     Offset: '0x10'
     Size: '0x8'

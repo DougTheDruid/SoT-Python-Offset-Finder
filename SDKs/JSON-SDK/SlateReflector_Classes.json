@@ -7,15 +7,9 @@
     "Attributes": [
       {
         "Name": "Geometry",
-        "Type": "struct Geometry",
+        "Type": "struct",
         "Size": "0x34",
         "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_OSEI7[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x5c"
       },
       {
         "Name": "ChildNodes",
@@ -25,23 +19,9 @@
       },
       {
         "Name": "Tint",
-        "Type": "struct LinearColor",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x70"
-      }
-    ]
-  },
-  "LiveWidgetReflectorNode": {
-    "Super": "WidgetReflectorNodeBase",
-    "FullSize": "0x98",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_XJXWX[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x80"
       }
     ]
   },
@@ -89,19 +69,13 @@
       },
       {
         "Name": "CachedWidgetDesiredSize",
-        "Type": "struct Vector2D",
+        "Type": "struct",
         "Size": "0x8",
         "Offset": "0x144"
       },
       {
-        "Name": "pad0x4_59CJ2[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14c"
-      },
-      {
         "Name": "CachedWidgetForegroundColor",
-        "Type": "struct SlateColor",
+        "Type": "struct",
         "Size": "0x30",
         "Offset": "0x150"
       },
@@ -116,12 +90,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x190"
-      },
-      {
-        "Name": "pad0x7_0K34D[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x191"
       }
     ]
   },

@@ -6,63 +6,13 @@
 #include "TrinketFramework_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketLoadoutControlInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
-class TrinketCategory: public CategoryBase
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketSetControlInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketAudioInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketLoadoutFinderPolicyBase: public Object
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketLoadoutViewInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x30 (Full Size[0xf8] - InheritedSize[0xc8]
 class TrinketDesc: public EntitlementDesc
 {
 public:
-	struct StringClassReference                                  TrinketClass;                                      // 0xc8(0x10)
-	struct StringClassReference                                  PreviousItem;                                      // 0xd8(0x10)
-	struct StringClassReference                                  NextItem;                                          // 0xe8(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
-class TrinketReplacementActor: public Actor
-{
-public:
-	char                                                         pad0x10_PSSJF[0x10];                               // 0x3c8(0x10)
+	struct                                                       TrinketClass;                                      // 0xc8(0x10)
+	struct                                                       PreviousItem;                                      // 0xd8(0x10)
+	struct                                                       NextItem;                                          // 0xe8(0x10)
 };
 
 
@@ -74,21 +24,6 @@ public:
 	class WwiseEvent*                                            RemoveSfx;                                         // 0x30(0x8)
 	class WwiseEvent*                                            NudgeSfx;                                          // 0x38(0x8)
 	class WwiseEvent*                                            StraightenSfx;                                     // 0x40(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class SameActorTrinketLoadoutFinderPolicy: public TrinketLoadoutFinderPolicyBase
-{
-public:
-	char                                                         pad0x10_1ZCZM[0x10];                               // 0x28(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
-class InvalidTrinketCategory: public TrinketCategory
-{
-public:
 };
 
 

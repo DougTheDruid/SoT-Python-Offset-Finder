@@ -25,23 +25,23 @@ SeasonPopupAsset:
   - Name: SeasonInfo
     Offset: '0x70'
     Size: '0x68'
-    Type: struct SeasonIconPopupAsset
+    Type: struct
   - Name: LevelIncreaseInfo
     Offset: '0xd8'
     Size: '0x68'
-    Type: struct SeasonIconPopupAsset
+    Type: struct
   - Name: RewardInfo
     Offset: '0x140'
     Size: '0x68'
-    Type: struct SeasonIconPopupAsset
+    Type: struct
   - Name: MultipleRewardsInfo
     Offset: '0x1a8'
     Size: '0x68'
-    Type: struct SeasonIconPopupAsset
+    Type: struct
   - Name: BackgroundImage
     Offset: '0x210'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: DefaultToastSfxEventName
     Offset: '0x220'
     Size: '0x10'
@@ -90,10 +90,6 @@ SeasonPopupListAsset:
   Super: DataAsset
 SeasonProgressionUIComponent:
   Attributes:
-  - Name: pad0x20_CE2TI[0x20]
-    Offset: '0xc8'
-    Size: '0x20'
-    Type: char
   - Name: DetailsNavigationDesc
     Offset: '0xe8'
     Size: '0x10'
@@ -101,58 +97,28 @@ SeasonProgressionUIComponent:
   - Name: NextReceivedEventsTelemetryData
     Offset: '0xf8'
     Size: '0x18'
-    Type: struct SeasonProgressionUITelemetryFragment
-  - Name: pad0xb0_219FS[0xb0]
-    Offset: '0x110'
-    Size: '0xb0'
-    Type: char
-  ClassSize: '0xf8'
-  FullSize: '0x1c0'
+    Type: struct
+  ClassSize: '0x138'
+  FullSize: '0x200'
   InheritedSize: '0xc8'
   Super: ActorComponent
-SeasonProgressionUIInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 SeasonProgressionUIService:
   Attributes:
-  - Name: pad0x30_TCCTJ[0x30]
-    Offset: '0x3c8'
-    Size: '0x30'
-    Type: char
   - Name: SeasonPopupListAsset
     Offset: '0x3f8'
     Size: '0x8'
     Type: class SeasonPopupListAsset*
-  - Name: pad0x1a8_63Q97[0x1a8]
-    Offset: '0x400'
-    Size: '0x1a8'
-    Type: char
-  ClassSize: '0x1e0'
-  FullSize: '0x5a8'
+  ClassSize: '0x1f8'
+  FullSize: '0x5c0'
   InheritedSize: '0x3c8'
   Super: Actor
-SeasonProgressionUIServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 SeasonProgressionUISettings:
   Attributes:
   - Name: SeasonPopupListAsset
     Offset: '0x28'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
-SeasonProgressionUITelemetryInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

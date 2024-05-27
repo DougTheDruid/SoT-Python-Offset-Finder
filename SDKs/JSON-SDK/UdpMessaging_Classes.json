@@ -12,12 +12,6 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_SX9VV[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x29"
-      },
-      {
         "Name": "UnicastEndpoint",
         "Type": "struct FString",
         "Size": "0x10",
@@ -36,12 +30,6 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x7_LJ3Y7[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x51"
-      },
-      {
         "Name": "StaticEndpoints",
         "Type": "TArray<String>",
         "Size": "0x10",
@@ -52,12 +40,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x68"
-      },
-      {
-        "Name": "pad0x7_9BUN1[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x69"
       },
       {
         "Name": "TunnelUnicastEndpoint",

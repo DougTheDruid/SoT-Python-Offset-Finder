@@ -9,7 +9,7 @@
 struct BarrelsOfPlentyDebugLocationEntry
 {
 public:
-	struct Vector                                                WorldSpacePosition;                                // 0x0(0xc)
+	struct                                                       WorldSpacePosition;                                // 0x0(0xc)
 	float                                                        SinkTime;                                          // 0xc(0x4)
 };
 

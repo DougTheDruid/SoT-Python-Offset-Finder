@@ -24,16 +24,12 @@ EventOptimalInteractionObjectChanged:
   ClassSize: '0x10'
 IsNewInteractingPlayerCondition:
   Attributes:
-  - Name: pad0x8_YDT88[0x8]
-    Offset: '0x0'
-    Size: '0x8'
-    Type: char
   - Name: PlayerPayloadSelector
     Offset: '0x8'
     Size: '0x20'
-    Type: struct ConditionContextPayloadSelectorInstance
+    Type: struct
   - Name: InteractablePayloadSelector
     Offset: '0x28'
     Size: '0x20'
-    Type: struct ConditionContextPayloadSelectorInstance
+    Type: struct
   ClassSize: '0x48'

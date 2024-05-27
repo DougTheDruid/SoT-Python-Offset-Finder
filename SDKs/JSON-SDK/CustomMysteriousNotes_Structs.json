@@ -9,12 +9,6 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_A00PR[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
         "Name": "NoteType",
         "Type": "struct FString",
         "Size": "0x10",
@@ -37,23 +31,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x7_FY3RF[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x39"
-      }
-    ]
-  },
-  "CustomPlayerNoteList": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Notes",
-        "Type": "TArray<struct NotesRemoteServiceNoteDetailModel>",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },
@@ -67,14 +44,8 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_1WDHX[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
         "Name": "NoteId",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x4"
       }
@@ -91,9 +62,20 @@
       },
       {
         "Name": "NoteGUID",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x4"
+      }
+    ]
+  },
+  "CustomPlayerNoteList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Notes",
+        "Type": "TArray<struct NotesRemoteServiceNoteDetailModel>",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },

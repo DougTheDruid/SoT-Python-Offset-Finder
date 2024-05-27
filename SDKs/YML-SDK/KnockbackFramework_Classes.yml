@@ -3,52 +3,38 @@
 KnockbackColliderComponent:
   Attributes:
   - Name: SolidCollisionProfile
-    Offset: '0x5e8'
-    Size: '0x8'
-    Type: struct CollisionProfileName
-  - Name: KnockbackTraceProfile
-    Offset: '0x5f0'
-    Size: '0x8'
-    Type: struct CollisionProfileName
-  - Name: KnockbackType
     Offset: '0x5f8'
+    Size: '0x8'
+    Type: struct
+  - Name: KnockbackTraceProfile
+    Offset: '0x600'
+    Size: '0x8'
+    Type: struct
+  - Name: KnockbackType
+    Offset: '0x608'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_HU654[0x3]
-    Offset: '0x5f9'
-    Size: '0x3'
-    Type: char
   - Name: KnockbackParams
-    Offset: '0x5fc'
+    Offset: '0x60c'
     Size: '0x50'
-    Type: struct KnockBackInfo
+    Type: struct
+  - Name: ActorToTarget
+    Offset: '0x65c'
+    Size: '0x8'
+    Type: class Actor*
   - Name: KnockbackDamageType
-    Offset: '0x658'
+    Offset: '0x668'
     Size: '0x8'
     Type: class UClass*
   - Name: KnockbackInterval
-    Offset: '0x660'
+    Offset: '0x670'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_DB68Y[0x4]
-    Offset: '0x664'
-    Size: '0x4'
-    Type: char
   - Name: SolidState
-    Offset: '0x668'
+    Offset: '0x678'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_71HS0[0x7]
-    Offset: '0x669'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x80'
-  FullSize: '0x670'
-  InheritedSize: '0x5f0'
+  FullSize: '0x680'
+  InheritedSize: '0x600'
   Super: BoxComponent
-KnockbackInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

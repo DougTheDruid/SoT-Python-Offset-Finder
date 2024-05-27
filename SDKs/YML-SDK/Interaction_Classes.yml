@@ -3,37 +3,23 @@
 CharacterInteractionComponent:
   Attributes:
   - Name: CurrentOptimalInteractable
-    Offset: '0x5f0'
+    Offset: '0x600'
     Size: '0x8'
     Type: class InteractableArea*
-  - Name: pad0xc8_PEBX9[0xc8]
-    Offset: '0x5f8'
-    Size: '0xc8'
-    Type: char
   ClassSize: '0xd0'
-  FullSize: '0x6c0'
-  InheritedSize: '0x5f0'
+  FullSize: '0x6d0'
+  InheritedSize: '0x600'
   Super: BoxComponent
-GroupedInteractableAreaComponent:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0xc8'
-  InheritedSize: '0xc8'
-  Super: ActorComponent
 InteractableArea:
   Attributes:
   - Name: Bounds
     Offset: '0x28'
     Size: '0x1c'
-    Type: struct BoxSphereBounds
+    Type: struct
   - Name: Name
     Offset: '0x44'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_LZ8IH[0x4]
-    Offset: '0x4c'
-    Size: '0x4'
-    Type: char
   - Name: Interactable
     Offset: '0x50'
     Size: '0x8'
@@ -42,26 +28,12 @@ InteractableArea:
     Offset: '0x58'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x10_DCGSZ[0x10]
-    Offset: '0x60'
-    Size: '0x10'
-    Type: char
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
   Super: Object
-InteractableBlueprintFunctionLibrary:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: BlueprintFunctionLibrary
 InteractableComponent:
   Attributes:
-  - Name: pad0x8_KXNWT[0x8]
-    Offset: '0xc8'
-    Size: '0x8'
-    Type: char
   - Name: FeatureFlag
     Offset: '0xd0'
     Size: '0x8'
@@ -69,15 +41,15 @@ InteractableComponent:
   - Name: BoxExtent
     Offset: '0xd8'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: BoxOrigin
     Offset: '0xe4'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: BoxRotation
     Offset: '0xf0'
     Size: '0xc'
-    Type: struct Rotator
+    Type: struct
   - Name: MayBeGrouped
     Offset: '0xfc'
     Size: '0x1'
@@ -98,18 +70,10 @@ InteractableComponent:
     Offset: '0xfc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_P1P32[0x3]
-    Offset: '0xfd'
-    Size: '0x3'
-    Type: char
   - Name: InteractionRadius
     Offset: '0x100'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_7YWZC[0x4]
-    Offset: '0x104'
-    Size: '0x4'
-    Type: char
   - Name: InteractionPrerequisites
     Offset: '0x108'
     Size: '0x10'
@@ -122,56 +86,22 @@ InteractableComponent:
     Offset: '0x120'
     Size: '0x1'
     Type: byte
-  - Name: pad0x17_TYMC4[0x17]
-    Offset: '0x121'
-    Size: '0x17'
-    Type: char
   ClassSize: '0x70'
   FullSize: '0x138'
   InheritedSize: '0xc8'
   Super: ActorComponent
-InteractableIdentifierInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-InteractableInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 InteractableService:
   Attributes:
-  - Name: pad0x10_KQF3L[0x10]
-    Offset: '0x28'
-    Size: '0x10'
-    Type: char
   - Name: InteractableAreas
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<class InteractableArea*>
-  - Name: pad0x28_D48K9[0x28]
-    Offset: '0x48'
-    Size: '0x28'
-    Type: char
   ClassSize: '0x48'
   FullSize: '0x70'
   InheritedSize: '0x28'
   Super: Object
-InteractableServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 InteractionPreventionComponent:
   Attributes:
-  - Name: pad0x8_0QBD8[0x8]
-    Offset: '0xc8'
-    Size: '0x8'
-    Type: char
   - Name: ActorsToPreventInteractingWith
     Offset: '0xd0'
     Size: '0x10'
@@ -180,74 +110,18 @@ InteractionPreventionComponent:
   FullSize: '0xe0'
   InheritedSize: '0xc8'
   Super: ActorComponent
-InteractionPreventionInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-InteractionValidatorOwnerInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-InteractionValidatorSetterInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-InteractorComponent:
-  Attributes:
-  - Name: pad0x8_Y3EGK[0x8]
-    Offset: '0xc8'
-    Size: '0x8'
-    Type: char
-  ClassSize: '0x8'
-  FullSize: '0xd0'
-  InheritedSize: '0xc8'
-  Super: ActorComponent
-InteractorInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 MockActorWithCharacterInteractionComponent:
   Attributes:
-  - Name: pad0x8_74UTZ[0x8]
-    Offset: '0x5e0'
-    Size: '0x8'
-    Type: char
   - Name: CharacterInteractionComponent
     Offset: '0x5e8'
     Size: '0x8'
     Type: class CharacterInteractionComponent*
-  - Name: pad0xa0_TPXU9[0xa0]
-    Offset: '0x5f0'
-    Size: '0xa0'
-    Type: char
   ClassSize: '0xb0'
   FullSize: '0x690'
   InheritedSize: '0x5e0'
   Super: Character
-MockInteractableService:
-  Attributes:
-  - Name: pad0x18_H4X2X[0x18]
-    Offset: '0x28'
-    Size: '0x18'
-    Type: char
-  ClassSize: '0x18'
-  FullSize: '0x40'
-  InheritedSize: '0x28'
-  Super: Object
 MockInteractorActor:
   Attributes:
-  - Name: pad0x8_IRGI1[0x8]
-    Offset: '0x3c8'
-    Size: '0x8'
-    Type: char
   - Name: FocusedInteractable
     Offset: '0x3d0'
     Size: '0x8'
@@ -268,43 +142,13 @@ MockInteractorActor:
   FullSize: '0x3f8'
   InheritedSize: '0x3c8'
   Super: Actor
-ModalInteraction:
-  Attributes:
-  - Name: pad0x10_WZVWY[0x10]
-    Offset: '0x3c8'
-    Size: '0x10'
-    Type: char
-  ClassSize: '0x10'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3c8'
-  Super: Actor
 PlayerInteractionTrackerComponent:
   Attributes:
-  - Name: pad0x8_3ONSB[0x8]
-    Offset: '0xc8'
-    Size: '0x8'
-    Type: char
   - Name: InteractedPlayers
     Offset: '0xd0'
     Size: '0x10'
     Type: TArray<struct UniqueNetIdRepl>
-  - Name: pad0x10_PTRSE[0x10]
-    Offset: '0xe0'
-    Size: '0x10'
-    Type: char
   ClassSize: '0x28'
   FullSize: '0xf0'
   InheritedSize: '0xc8'
   Super: ActorComponent
-PlayerInteractionTrackerInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-SelfInteractionInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

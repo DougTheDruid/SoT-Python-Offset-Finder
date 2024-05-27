@@ -6,38 +6,10 @@ CreateActorInstanceOnExplodeComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x68_AY66P[0x68]
-    Offset: '0xd0'
-    Size: '0x68'
-    Type: char
   ClassSize: '0x70'
   FullSize: '0x138'
   InheritedSize: '0xc8'
   Super: ActorComponent
-ExplosionInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-ExplosionReceiverInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-ExplosiveComponentInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-FuseInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
 StatusResponseExplodeAfterTime:
   Attributes:
   - Name: MinTimeUntilExplosion
@@ -48,10 +20,6 @@ StatusResponseExplodeAfterTime:
     Offset: '0x34'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_EBC01[0x8]
-    Offset: '0x38'
-    Size: '0x8'
-    Type: char
   - Name: CachedWorld
     Offset: '0x40'
     Size: '0x8'
@@ -60,9 +28,3 @@ StatusResponseExplodeAfterTime:
   FullSize: '0x48'
   InheritedSize: '0x30'
   Super: StatusResponse
-TaleQuestFuseFunctionLibrary:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x180'
-  InheritedSize: '0x180'
-  Super: TaleQuestFunctionStepLibrary

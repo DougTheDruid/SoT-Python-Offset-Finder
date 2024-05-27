@@ -14,18 +14,26 @@ EnchantedCompassProximityAnnouncementComponent:
     Offset: '0xd8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_DJBK9[0x4]
-    Offset: '0xdc'
-    Size: '0x4'
-    Type: char
+  - Name: WielderOrientation
+    Offset: '0xe0'
+    Size: '0x10'
+    Type: interface
+  - Name: WielderWwiseEmitterInterface
+    Offset: '0xf0'
+    Size: '0x10'
+    Type: interface
+  - Name: OwnerWieldableInterface
+    Offset: '0x100'
+    Size: '0x10'
+    Type: interface
+  - Name: ObjectMessagingDispatcher
+    Offset: '0x110'
+    Size: '0x10'
+    Type: interface
   - Name: IsSettingEnabled
     Offset: '0x120'
     Size: '0x1'
     Type: bool
-  - Name: pad0xef_I0V90[0xef]
-    Offset: '0x121'
-    Size: '0xef'
-    Type: char
   ClassSize: '0x148'
   FullSize: '0x210'
   InheritedSize: '0xc8'
@@ -33,103 +41,71 @@ EnchantedCompassProximityAnnouncementComponent:
 MultiTargetEnchantedCompass:
   Attributes:
   - Name: Locations
-    Offset: '0x8d8'
+    Offset: '0x8e0'
     Size: '0x10'
     Type: TArray<struct Vector>
   - Name: LocationIds
-    Offset: '0x8e8'
+    Offset: '0x8f0'
     Size: '0x10'
     Type: TArray<struct Guid>
   - Name: InventoryItem
-    Offset: '0x8f8'
+    Offset: '0x900'
     Size: '0x8'
     Type: class InventoryItemComponent*
   - Name: ProximityAnnouncementComponent
-    Offset: '0x900'
-    Size: '0x8'
-    Type: class EnchantedCompassProximityAnnouncementComponent*
-  - Name: pad0x8_9PQI9[0x8]
     Offset: '0x908'
     Size: '0x8'
-    Type: char
+    Type: class EnchantedCompassProximityAnnouncementComponent*
   ClassSize: '0x30'
   FullSize: '0x910'
   InheritedSize: '0x8e0'
   Super: Compass
-PrototypeMultiTargetEnchantedCompass:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x910'
-  InheritedSize: '0x910'
-  Super: MultiTargetEnchantedCompass
 RotatingCompass:
   Attributes:
   - Name: PickupableComponent
-    Offset: '0x9c8'
+    Offset: '0x9d0'
     Size: '0x8'
     Type: class PickupableComponent*
   - Name: PoseableStashedMeshComponent
-    Offset: '0x9d0'
+    Offset: '0x9d8'
     Size: '0x8'
     Type: class PoseableMeshMemoryConstraintComponent*
   - Name: WieldableInteractableComponent
-    Offset: '0x9d8'
+    Offset: '0x9e0'
     Size: '0x8'
     Type: class WieldableInteractableComponent*
   - Name: SplinePathActor
-    Offset: '0x9e0'
+    Offset: '0x9e8'
     Size: '0x8'
     Type: class Actor*
   - Name: RotationSequenceCurve
-    Offset: '0x9e8'
+    Offset: '0x9f0'
     Size: '0x8'
     Type: class CurveFloat*
   - Name: StartRotationSequenceCurve
-    Offset: '0x9f0'
+    Offset: '0x9f8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_LUA1J[0x3]
-    Offset: '0x9f1'
-    Size: '0x3'
-    Type: char
   - Name: SplineDistanceOffset
-    Offset: '0x9f4'
+    Offset: '0x9fc'
     Size: '0x4'
     Type: float
   - Name: TargetYawAngleBeforeRotationSequence
-    Offset: '0x9f8'
-    Size: '0x4'
-    Type: float
-  - Name: pad0x4_VX08F[0x4]
-    Offset: '0x9fc'
-    Size: '0x4'
-    Type: char
-  - Name: AudioParams
     Offset: '0xa00'
-    Size: '0x48'
-    Type: struct RotatingCompassAudioParams
-  - Name: MaxSpeedToTriggerOneShotSfx
-    Offset: '0xa48'
     Size: '0x4'
     Type: float
-  - Name: pad0x14_N0FUX[0x14]
-    Offset: '0xa4c'
-    Size: '0x14'
-    Type: char
-  ClassSize: '0x90'
-  FullSize: '0xa60'
+  - Name: AudioParams
+    Offset: '0xa08'
+    Size: '0x48'
+    Type: struct
+  - Name: MaxSpeedToTriggerOneShotSfx
+    Offset: '0xa50'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xa0'
+  FullSize: '0xa70'
   InheritedSize: '0x9d0'
   Super: EnchantedCompass
-RotatingCompassSpinComponent:
-  Attributes:
-  - Name: pad0x8_VI0LS[0x8]
-    Offset: '0x1e8'
-    Size: '0x8'
-    Type: char
-  ClassSize: '0x8'
-  FullSize: '0x1f0'
-  InheritedSize: '0x1e8'
-  Super: CompassSpinComponent
 TaleQuestMultiTargetCompassAddTrackedLocationStep:
   Attributes:
   - Name: Desc
@@ -145,45 +121,25 @@ TaleQuestMultiTargetCompassAddTrackedLocationStepDesc:
   - Name: Location
     Offset: '0x80'
     Size: '0x30'
-    Type: struct QuestVariableVector
+    Type: struct
   - Name: TargetID
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct QuestVariableGuid
+    Type: struct
   ClassSize: '0x60'
   FullSize: '0xe0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
-TaleQuestMultiTargetCompassRemoveTrackedLocationStep:
-  Attributes:
-  - Name: pad0x10_1XFDV[0x10]
-    Offset: '0x98'
-    Size: '0x10'
-    Type: char
-  ClassSize: '0x10'
-  FullSize: '0xa8'
-  InheritedSize: '0x98'
-  Super: TaleQuestStep
 TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc:
   Attributes:
   - Name: TargetID
     Offset: '0x80'
     Size: '0x30'
-    Type: struct QuestVariableGuid
+    Type: struct
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
-TaleQuestMultiTargetCompassService:
-  Attributes:
-  - Name: pad0x20_0Y02B[0x20]
-    Offset: '0x170'
-    Size: '0x20'
-    Type: char
-  ClassSize: '0x20'
-  FullSize: '0x190'
-  InheritedSize: '0x170'
-  Super: TaleQuestToolService
 TaleQuestMultiTargetCompassServiceDesc:
   Attributes:
   - Name: CompassDesc
@@ -194,18 +150,8 @@ TaleQuestMultiTargetCompassServiceDesc:
   FullSize: '0x38'
   InheritedSize: '0x30'
   Super: TaleQuestToolServiceDesc
-TaleQuestRotatingCompassFunctionLibrary:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x180'
-  InheritedSize: '0x180'
-  Super: TaleQuestFunctionStepLibrary
 TaleQuestRotatingCompassService:
   Attributes:
-  - Name: pad0x18_SXUZ2[0x18]
-    Offset: '0x60'
-    Size: '0x18'
-    Type: char
   - Name: SplinePathActor
     Offset: '0x78'
     Size: '0x8'
@@ -214,36 +160,16 @@ TaleQuestRotatingCompassService:
     Offset: '0x80'
     Size: '0x8'
     Type: class RotatingCompass*
-  - Name: pad0x98_IIN3C[0x98]
-    Offset: '0x88'
-    Size: '0x98'
-    Type: char
   ClassSize: '0xc0'
   FullSize: '0x120'
   InheritedSize: '0x60'
   Super: TaleQuestService
-TaleQuestRotatingCompassServiceDesc:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: TaleQuestServiceDesc
-TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStep:
-  Attributes:
-  - Name: pad0x8_FP46D[0x8]
-    Offset: '0x98'
-    Size: '0x8'
-    Type: char
-  ClassSize: '0x8'
-  FullSize: '0xa0'
-  InheritedSize: '0x98'
-  Super: TaleQuestStep
 TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStepDesc:
   Attributes:
   - Name: SplinePathActor
     Offset: '0x80'
     Size: '0x30'
-    Type: struct QuestVariableActor
+    Type: struct
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
@@ -254,10 +180,6 @@ TaleQuestSetCompassTargetBaseStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_XUCXT[0x7]
-    Offset: '0x81'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x8'
   FullSize: '0x88'
   InheritedSize: '0x80'
@@ -267,7 +189,7 @@ TaleQuestSetCompassTargetToActorStepDesc:
   - Name: TargetActor
     Offset: '0x88'
     Size: '0x30'
-    Type: struct QuestVariableActor
+    Type: struct
   ClassSize: '0x30'
   FullSize: '0xb8'
   InheritedSize: '0x88'
@@ -277,27 +199,11 @@ TaleQuestSetCompassTargetToPointStepDesc:
   - Name: TargetPoint
     Offset: '0x88'
     Size: '0x30'
-    Type: struct QuestVariableOrientedPoint
+    Type: struct
   ClassSize: '0x30'
   FullSize: '0xb8'
   InheritedSize: '0x88'
   Super: TaleQuestSetCompassTargetBaseStepDesc
-TaleQuestSetCompassTargetToTargetStep:
-  Attributes:
-  - Name: pad0x60_6JNOU[0x60]
-    Offset: '0x98'
-    Size: '0x60'
-    Type: char
-  ClassSize: '0x60'
-  FullSize: '0xf8'
-  InheritedSize: '0x98'
-  Super: TaleQuestStep
-TaleQuestSetRotationCurveForRotatingCompassStep:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x98'
-  InheritedSize: '0x98'
-  Super: TaleQuestStep
 TaleQuestSetRotationCurveForRotatingCompassStepDesc:
   Attributes:
   - Name: RotationSequenceCurve

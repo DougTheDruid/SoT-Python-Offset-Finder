@@ -5,27 +5,21 @@
 
 
 
-// Size 0x1
-struct EventAthenaLoadingScreenOpen
+// Size 0x30
+struct SlateLoadingScreenImageParams
 {
 public:
-	char                                                         pad0x1_8F7TL[0x1];                                 // 0x0(0x1)
+	struct                                                       ImageAsset;                                        // 0x0(0x10)
+	TArray<struct Text>                                          ImageTips;                                         // 0x10(0x10)
+	struct                                                       AdvancedTips;                                      // 0x20(0x10)
 };
 
 
 // Size 0x1
-struct EventAthenaLoadingScreenStateRequest
+struct EventAthenaLoadingScreenStateResponse
 {
 public:
-	char                                                         pad0x1_UN6WR[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventAthenaLoadingScreenClose
-{
-public:
-	char                                                         pad0x1_WH98M[0x1];                                 // 0x0(0x1)
+	bool                                                         IsVisible;                                         // 0x0(0x1)
 };
 
 
@@ -38,10 +32,17 @@ public:
 	float                                                        TopEdge;                                           // 0x3c(0x4)
 	float                                                        Width;                                             // 0x40(0x4)
 	float                                                        Footer;                                            // 0x44(0x4)
-	struct SlateFontInfo                                         Font;                                              // 0x48(0x40)
-	struct SlateColor                                            Colour;                                            // 0x88(0x30)
+	struct                                                       Font;                                              // 0x48(0x40)
+	struct                                                       Colour;                                            // 0x88(0x30)
 	float                                                        LineHeightPercentage;                              // 0xb8(0x4)
-	char                                                         pad0x4_0EWP7[0x4];                                 // 0xbc(0x4)
+};
+
+
+// Size 0x10
+struct EventAthenaLoadingScreenBlockUntilUIIntialised
+{
+public:
+	struct FString                                               Description;                                       // 0x0(0x10)
 };
 
 
@@ -54,36 +55,10 @@ public:
 
 
 // Size 0x10
-struct EventAthenaLoadingScreenBlockUntilUIIntialised
-{
-public:
-	struct FString                                               Description;                                       // 0x0(0x10)
-};
-
-
-// Size 0x1
-struct EventAthenaLoadingScreenStateResponse
-{
-public:
-	bool                                                         IsVisible;                                         // 0x0(0x1)
-};
-
-
-// Size 0x10
 struct SlateLoadingScreenAdvancedTipsParams
 {
 public:
 	TArray<struct SlateLoadingScreenAdvancedTipDescription>      TipDescriptions;                                   // 0x0(0x10)
-};
-
-
-// Size 0x30
-struct SlateLoadingScreenImageParams
-{
-public:
-	struct StringAssetReference                                  ImageAsset;                                        // 0x0(0x10)
-	TArray<struct Text>                                          ImageTips;                                         // 0x10(0x10)
-	struct SlateLoadingScreenAdvancedTipsParams                  AdvancedTips;                                      // 0x20(0x10)
 };
 
 

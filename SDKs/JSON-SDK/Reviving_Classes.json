@@ -1,70 +1,10 @@
 {
-  "RevivableStatus": {
-    "Super": "StatusBase",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ReviveableCharacterInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DeathSelfInteractionComponent": {
-    "Super": "InteractableComponent",
-    "FullSize": "0x188",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x8_SMAR5[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "HasGivenUp",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "pad0x47_AWYGS[0x47]",
-        "Type": "char",
-        "Size": "0x47",
-        "Offset": "0x141"
-      }
-    ]
-  },
-  "RevivedActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ReviveableRepresentationInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ReviveComponent": {
     "Super": "InteractableComponent",
     "FullSize": "0x278",
     "InheritedSize": "0x138",
     "ClassSize": "0x140",
     "Attributes": [
-      {
-        "Name": "pad0x10_C554D[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x138"
-      },
       {
         "Name": "OwningCharacter",
         "Type": "class Character*",
@@ -90,22 +30,10 @@
         "Offset": "0x159"
       },
       {
-        "Name": "pad0x6_USBC8[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x15a"
-      },
-      {
         "Name": "ReviveableRepresentationClass",
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x160"
-      },
-      {
-        "Name": "pad0xc_MRUAU[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x168"
       },
       {
         "Name": "ReviveWindowIsOpen",
@@ -114,162 +42,10 @@
         "Offset": "0x174"
       },
       {
-        "Name": "pad0xd3_4BA0I[0xd3]",
-        "Type": "char",
-        "Size": "0xd3",
-        "Offset": "0x175"
-      },
-      {
         "Name": "RevivableStatus",
-        "Type": "struct Status",
+        "Type": "struct",
         "Size": "0x18",
         "Offset": "0x248"
-      },
-      {
-        "Name": "pad0x18_SZRNV[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x260"
-      }
-    ]
-  },
-  "ReviveConditionalStatTrigger": {
-    "Super": "ConditionalStatsTriggerType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ReviveSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x90",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "HealthRegained",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "MaximumReviveDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "FadeColour",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "ShouldFadeAudio",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "pad0x3_Z1SXD[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x51"
-      },
-      {
-        "Name": "ServerWaitTimeBeforeFullyReviving",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x54"
-      },
-      {
-        "Name": "ReviveTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "MaxRevertEvaporateDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x5c"
-      },
-      {
-        "Name": "UnsupportedPlayModes",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "ModeSpecificSettings",
-        "Type": "TArray<struct ModeSpecificReviveSettings>",
-        "Size": "0x10",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "GiveUpHoldTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "GiveUpFadeDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x84"
-      },
-      {
-        "Name": "GiveUpEvaporateDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "pad0x4_3GY9N[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x8c"
-      }
-    ]
-  },
-  "ReviveInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ReviveAudioComponent": {
-    "Super": "WwiseEmitterComponent",
-    "FullSize": "0x330",
-    "InheritedSize": "0x310",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ReviveEffectsDataAsset",
-        "Type": "class ReviveEffectsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x310"
-      },
-      {
-        "Name": "pad0x18_U13ZU[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x318"
-      }
-    ]
-  },
-  "ReviveDebugComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x160",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "pad0x98_62GLO[0x98]",
-        "Type": "char",
-        "Size": "0x98",
-        "Offset": "0xc8"
       }
     ]
   },
@@ -431,12 +207,99 @@
       }
     ]
   },
-  "ReviveableActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "ReviveAudioComponent": {
+    "Super": "WwiseEmitterComponent",
+    "FullSize": "0x330",
+    "InheritedSize": "0x310",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ReviveEffectsDataAsset",
+        "Type": "class ReviveEffectsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x310"
+      }
+    ]
+  },
+  "ReviveSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x90",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "HealthRegained",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "MaximumReviveDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "FadeColour",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "ShouldFadeAudio",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "ServerWaitTimeBeforeFullyReviving",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "ReviveTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "MaxRevertEvaporateDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5c"
+      },
+      {
+        "Name": "UnsupportedPlayModes",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "ModeSpecificSettings",
+        "Type": "TArray<struct ModeSpecificReviveSettings>",
+        "Size": "0x10",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "GiveUpHoldTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "GiveUpFadeDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "GiveUpEvaporateDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
+      }
+    ]
   },
   "ReviveGhost": {
     "Super": "Actor",
@@ -444,12 +307,6 @@
     "InheritedSize": "0x3c8",
     "ClassSize": "0x260",
     "Attributes": [
-      {
-        "Name": "pad0x10_FCJ48[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x3c8"
-      },
       {
         "Name": "CorpseMaterials",
         "Type": "TArray<class MaterialInstanceDynamic*>",
@@ -499,22 +356,10 @@
         "Offset": "0x418"
       },
       {
-        "Name": "pad0x10_W5C70[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x420"
-      },
-      {
         "Name": "RevivableOwnerNetRole",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x430"
-      },
-      {
-        "Name": "pad0x7_I7RTK[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x431"
       },
       {
         "Name": "ReviveGhostDataAsset",
@@ -530,21 +375,27 @@
       },
       {
         "Name": "ReviveEffectsValues",
-        "Type": "struct ReviveEffectsValues",
+        "Type": "struct",
         "Size": "0x20",
         "Offset": "0x448"
       },
       {
         "Name": "ReviveSettings",
-        "Type": "struct ModeSpecificReviveSettings",
+        "Type": "struct",
         "Size": "0x38",
         "Offset": "0x468"
       },
       {
-        "Name": "pad0x13c_C95PM[0x13c]",
-        "Type": "char",
-        "Size": "0x13c",
-        "Offset": "0x4a0"
+        "Name": "ContinuousOnTheBodyLoopingVFX",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x5dc"
+      },
+      {
+        "Name": "ReviveInProgressLoopingVFX",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x5e4"
       },
       {
         "Name": "AstralCordDynamicMaterials",
@@ -554,31 +405,25 @@
       },
       {
         "Name": "GhostPlayModeSpecificParameters",
-        "Type": "struct GhostPlayModeParameters",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0x618"
-      },
-      {
-        "Name": "pad0x4_L9E5W[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x624"
       }
     ]
   },
-  "RevivePlayerActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PostReviveLocomotionActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "DeathSelfInteractionComponent": {
+    "Super": "InteractableComponent",
+    "FullSize": "0x188",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "HasGivenUp",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x140"
+      }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

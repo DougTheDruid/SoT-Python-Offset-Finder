@@ -20,7 +20,7 @@ EarthquakeForceFeedback:
   - Name: TimeBetweenRumbles
     Offset: '0x10'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   ClassSize: '0x40'
 EarthquakeForceFeedbackOption:
   Attributes:
@@ -34,7 +34,7 @@ EarthquakeStoryCustomisationData:
   - Name: StoryFlag
     Offset: '0x0'
     Size: '0x8'
-    Type: struct StoryFlag
+    Type: struct
   - Name: EarthquakeSetupData
     Offset: '0x8'
     Size: '0x8'
@@ -52,7 +52,7 @@ GeyserManagerStoryCustomisationData:
   - Name: StoryFlag
     Offset: '0x0'
     Size: '0x8'
-    Type: struct StoryFlag
+    Type: struct
   - Name: GeyserManagerSetupData
     Offset: '0x8'
     Size: '0x8'
@@ -78,7 +78,7 @@ GeyserStoryCustomisationData:
   - Name: StoryFlag
     Offset: '0x0'
     Size: '0x8'
-    Type: struct StoryFlag
+    Type: struct
   - Name: GeyserSetupData
     Offset: '0x8'
     Size: '0x8'
@@ -89,7 +89,7 @@ PlayerFeedback:
   - Name: ForceFeedback
     Offset: '0x0'
     Size: '0x40'
-    Type: struct EarthquakeForceFeedback
+    Type: struct
   - Name: CameraShakes
     Offset: '0x40'
     Size: '0x10'
@@ -97,7 +97,7 @@ PlayerFeedback:
   - Name: StaggerStrength
     Offset: '0x50'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   ClassSize: '0x80'
 VolcanoProjectileData:
   Attributes:
@@ -108,11 +108,11 @@ VolcanoProjectileData:
   - Name: LaunchVelocity
     Offset: '0x4'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: RotationRate
     Offset: '0x10'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   ClassSize: '0x1c'
 VolcanoSetupDataEmbersEntry:
   Attributes:
@@ -120,10 +120,6 @@ VolcanoSetupDataEmbersEntry:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_2EFZY[0x4]
-    Offset: '0x4'
-    Size: '0x4'
-    Type: char
   - Name: Effect
     Offset: '0x8'
     Size: '0x8'
@@ -135,10 +131,6 @@ VolcanoStateData:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_M6F1K[0x3]
-    Offset: '0x1'
-    Size: '0x3'
-    Type: char
   - Name: StateDuration
     Offset: '0x4'
     Size: '0x4'
@@ -153,7 +145,7 @@ VolcanoStoryCustomisationData:
   - Name: StoryFlag
     Offset: '0x0'
     Size: '0x8'
-    Type: struct StoryFlag
+    Type: struct
   - Name: VolcanoSetupData
     Offset: '0x8'
     Size: '0x8'
@@ -169,10 +161,6 @@ VolcanoTarget:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_KXDYC[0x6]
-    Offset: '0x2'
-    Size: '0x6'
-    Type: char
   - Name: Target
     Offset: '0x8'
     Size: '0x8'
@@ -181,10 +169,6 @@ VolcanoTarget:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_24P0O[0x4]
-    Offset: '0x14'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x18'
 VolcanoTargetChances:
   Attributes:
@@ -200,26 +184,18 @@ VolcanoTargetChances:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_L2UY7[0x4]
-    Offset: '0xc'
-    Size: '0x4'
-    Type: char
   - Name: OnTargetNumExtraShots
     Offset: '0x10'
     Size: '0x20'
-    Type: struct WeightedProbabilityRange
+    Type: struct
   - Name: NearMissNumExtraShots
     Offset: '0x30'
     Size: '0x20'
-    Type: struct WeightedProbabilityRange
+    Type: struct
   - Name: CoolDownDuration
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_K2UG6[0x4]
-    Offset: '0x54'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x58'
 VolcanoTargetCoolDown:
   Attributes:
@@ -227,10 +203,6 @@ VolcanoTargetCoolDown:
     Offset: '0x0'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x8_W8OK8[0x8]
-    Offset: '0x8'
-    Size: '0x8'
-    Type: char
   ClassSize: '0x10'
 WeightedAshenLordVolcanoProjectile:
   Attributes:
@@ -245,19 +217,19 @@ WeightedAshenLordVolcanoProjectile:
   - Name: Speed
     Offset: '0x8'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: RotationRatePitch
     Offset: '0x38'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: RotationRateRoll
     Offset: '0x68'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: RotationRateYaw
     Offset: '0x98'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: ProjectileClass
     Offset: '0xc8'
     Size: '0x8'
@@ -269,10 +241,6 @@ WeightedVolcanoProjectile:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ZAHKO[0x4]
-    Offset: '0x4'
-    Size: '0x4'
-    Type: char
   - Name: ProjectileClass
     Offset: '0x8'
     Size: '0x8'
@@ -297,22 +265,18 @@ WeightedVolcanoProjectile:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_OF4P9[0x4]
-    Offset: '0x24'
-    Size: '0x4'
-    Type: char
   - Name: RotationRatePitch
     Offset: '0x28'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: RotationRateRoll
     Offset: '0x58'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: RotationRateYaw
     Offset: '0x88'
     Size: '0x30'
-    Type: struct WeightedProbabilityRangeOfRanges
+    Type: struct
   - Name: LaunchAudioPlayEvent
     Offset: '0xb8'
     Size: '0x8'

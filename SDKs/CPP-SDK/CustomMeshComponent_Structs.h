@@ -9,9 +9,9 @@
 struct CustomMeshTriangle
 {
 public:
-	struct Vector                                                Vertex0;                                           // 0x0(0xc)
-	struct Vector                                                Vertex1;                                           // 0xc(0xc)
-	struct Vector                                                Vertex2;                                           // 0x18(0xc)
+	struct                                                       Vertex0;                                           // 0x0(0xc)
+	struct                                                       Vertex1;                                           // 0xc(0xc)
+	struct                                                       Vertex2;                                           // 0x18(0xc)
 };
 
 

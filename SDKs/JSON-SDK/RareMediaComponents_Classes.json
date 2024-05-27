@@ -1,18 +1,4 @@
 {
-  "MediaSubtitleComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x130",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "pad0x68_94XJ9[0x68]",
-        "Type": "char",
-        "Size": "0x68",
-        "Offset": "0xc8"
-      }
-    ]
-  },
   "WwiseMediaSoundComponent": {
     "Super": "SceneComponent",
     "FullSize": "0x390",
@@ -20,22 +6,10 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x60_6828O[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x2e0"
-      },
-      {
         "Name": "MediaSoundEvent",
         "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x340"
-      },
-      {
-        "Name": "pad0x48_UNNQJ[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x348"
       }
     ]
   },

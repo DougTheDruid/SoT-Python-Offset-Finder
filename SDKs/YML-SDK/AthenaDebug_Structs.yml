@@ -10,34 +10,22 @@ DrawDebugItemBox:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_OGNYC[0x3]
-    Offset: '0x9'
-    Size: '0x3'
-    Type: char
   - Name: CentrePos
     Offset: '0xc'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: Box
     Offset: '0x18'
     Size: '0xc'
-    Type: struct Vector
-  - Name: pad0xc_AQT19[0xc]
-    Offset: '0x24'
-    Size: '0xc'
-    Type: char
+    Type: struct
   - Name: Rotation
     Offset: '0x30'
     Size: '0x10'
-    Type: struct Quat
+    Type: struct
   - Name: Colour
     Offset: '0x40'
     Size: '0x4'
-    Type: struct Color
-  - Name: pad0xc_X679Y[0xc]
-    Offset: '0x44'
-    Size: '0xc'
-    Type: char
+    Type: struct
   ClassSize: '0x50'
 DrawDebugItemCapsule:
   Attributes:
@@ -49,14 +37,10 @@ DrawDebugItemCapsule:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ZSE2O[0x3]
-    Offset: '0x9'
-    Size: '0x3'
-    Type: char
   - Name: CentrePos
     Offset: '0xc'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: HalfHeight
     Offset: '0x18'
     Size: '0x4'
@@ -68,15 +52,11 @@ DrawDebugItemCapsule:
   - Name: Rotation
     Offset: '0x20'
     Size: '0x10'
-    Type: struct Quat
+    Type: struct
   - Name: Colour
     Offset: '0x30'
     Size: '0x4'
-    Type: struct Color
-  - Name: pad0xc_CGTZM[0xc]
-    Offset: '0x34'
-    Size: '0xc'
-    Type: char
+    Type: struct
   ClassSize: '0x40'
 DrawDebugItemLine:
   Attributes:
@@ -88,22 +68,18 @@ DrawDebugItemLine:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_APSGQ[0x3]
-    Offset: '0x9'
-    Size: '0x3'
-    Type: char
   - Name: LineStart
     Offset: '0xc'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: LineEnd
     Offset: '0x18'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: Colour
     Offset: '0x24'
     Size: '0x4'
-    Type: struct Color
+    Type: struct
   - Name: Thickness
     Offset: '0x28'
     Size: '0x4'
@@ -119,10 +95,6 @@ DrawDebugItemMessage:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_Y5KHG[0x7]
-    Offset: '0x9'
-    Size: '0x7'
-    Type: char
   - Name: Message
     Offset: '0x10'
     Size: '0x10'
@@ -130,11 +102,7 @@ DrawDebugItemMessage:
   - Name: Colour
     Offset: '0x20'
     Size: '0x4'
-    Type: struct Color
-  - Name: pad0x4_B55UO[0x4]
-    Offset: '0x24'
-    Size: '0x4'
-    Type: char
+    Type: struct
   ClassSize: '0x28'
 DrawDebugItemSector:
   Attributes:
@@ -146,10 +114,6 @@ DrawDebugItemSector:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ZKSP5[0x3]
-    Offset: '0x9'
-    Size: '0x3'
-    Type: char
   - Name: RotationAngle
     Offset: '0xc'
     Size: '0x4'
@@ -157,7 +121,7 @@ DrawDebugItemSector:
   - Name: Centre
     Offset: '0x10'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: SectorAngle
     Offset: '0x1c'
     Size: '0x4'
@@ -169,15 +133,15 @@ DrawDebugItemSector:
   - Name: Colour
     Offset: '0x24'
     Size: '0x4'
-    Type: struct Color
+    Type: struct
   - Name: ZeroAngleVector
     Offset: '0x28'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: RotationAxis
     Offset: '0x34'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: SubAngles
     Offset: '0x40'
     Size: '0x4'
@@ -197,14 +161,10 @@ DrawDebugItemSphere:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_0EKUN[0x3]
-    Offset: '0x9'
-    Size: '0x3'
-    Type: char
   - Name: CentrePos
     Offset: '0xc'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: Radius
     Offset: '0x18'
     Size: '0x4'
@@ -212,7 +172,7 @@ DrawDebugItemSphere:
   - Name: Colour
     Offset: '0x1c'
     Size: '0x4'
-    Type: struct Color
+    Type: struct
   ClassSize: '0x20'
 DrawDebugItemString:
   Attributes:
@@ -224,10 +184,6 @@ DrawDebugItemString:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_IJM7T[0x7]
-    Offset: '0x9'
-    Size: '0x7'
-    Type: char
   - Name: String
     Offset: '0x10'
     Size: '0x10'
@@ -235,18 +191,18 @@ DrawDebugItemString:
   - Name: Colour
     Offset: '0x20'
     Size: '0x4'
-    Type: struct Color
+    Type: struct
   - Name: StringPos
     Offset: '0x24'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   ClassSize: '0x30'
 SphereData:
   Attributes:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: Radius
     Offset: '0xc'
     Size: '0x4'
@@ -258,5 +214,5 @@ SphereData:
   - Name: Colour
     Offset: '0x14'
     Size: '0x4'
-    Type: struct Color
+    Type: struct
   ClassSize: '0x18'

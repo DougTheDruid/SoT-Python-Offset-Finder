@@ -1,16 +1,114 @@
 {
+  "OneShotRewardableObjectBase": {
+    "Super": "InteractableObject",
+    "FullSize": "0x4e8",
+    "InheritedSize": "0x468",
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "InteractableComponent",
+        "Type": "class InteractableComponent*",
+        "Size": "0x8",
+        "Offset": "0x468"
+      },
+      {
+        "Name": "StaticMeshComponent",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x470"
+      },
+      {
+        "Name": "Reward",
+        "Type": "struct",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Name": "RewardEntitlement",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x480"
+      },
+      {
+        "Name": "InteractionHoldTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x488"
+      },
+      {
+        "Name": "InteractionRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48c"
+      },
+      {
+        "Name": "DisplayName",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x490"
+      }
+    ]
+  },
+  "PopUpNotificationOnItemWieldedComponent": {
+    "Super": "OnItemWieldedComponent",
+    "FullSize": "0x168",
+    "InheritedSize": "0x148",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "PopUpDesc",
+        "Type": "class PopUpMessageDesc*",
+        "Size": "0x8",
+        "Offset": "0x148"
+      }
+    ]
+  },
+  "AbandonedNoteWeightedTextSourceComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1a8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0xe0",
+    "Attributes": [
+      {
+        "Name": "WeightedText",
+        "Type": "assetobject",
+        "Size": "0x20",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "ClueText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "TitleText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x140"
+      }
+    ]
+  },
+  "AbandonedNoteWeightedTextDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Entries",
+        "Type": "TArray<struct AbandonedNoteWeightedTextEntry>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "SirenPuzzleContext": {
     "Super": "Actor",
     "FullSize": "0x4b8",
     "InheritedSize": "0x3c8",
     "ClassSize": "0xf0",
     "Attributes": [
-      {
-        "Name": "pad0x8_GE0YL[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      },
       {
         "Name": "Root",
         "Type": "class SceneComponent*",
@@ -40,134 +138,6 @@
         "Type": "TArray<char>",
         "Size": "0x10",
         "Offset": "0x408"
-      },
-      {
-        "Name": "pad0xa0_2HSHE[0xa0]",
-        "Type": "char",
-        "Size": "0xa0",
-        "Offset": "0x418"
-      }
-    ]
-  },
-  "OneShotRewardableObjectBase": {
-    "Super": "InteractableObject",
-    "FullSize": "0x4e8",
-    "InheritedSize": "0x468",
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "InteractableComponent",
-        "Type": "class InteractableComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "StaticMeshComponent",
-        "Type": "class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "Reward",
-        "Type": "struct RewardId",
-        "Size": "0x8",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "RewardEntitlement",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x480"
-      },
-      {
-        "Name": "InteractionHoldTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x488"
-      },
-      {
-        "Name": "InteractionRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x48c"
-      },
-      {
-        "Name": "DisplayName",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x490"
-      },
-      {
-        "Name": "pad0x20_QQ2AM[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x4c8"
-      }
-    ]
-  },
-  "PopUpNotificationOnItemWieldedComponent": {
-    "Super": "OnItemWieldedComponent",
-    "FullSize": "0x168",
-    "InheritedSize": "0x148",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "PopUpDesc",
-        "Type": "class PopUpMessageDesc*",
-        "Size": "0x8",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "pad0x18_4U41W[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x150"
-      }
-    ]
-  },
-  "AbandonedNoteWeightedTextDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Entries",
-        "Type": "TArray<struct AbandonedNoteWeightedTextEntry>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AbandonedNoteWeightedTextSourceComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x1a8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0xe0",
-    "Attributes": [
-      {
-        "Name": "pad0x40_BQWJR[0x40]",
-        "Type": "char",
-        "Size": "0x40",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "ClueText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x108"
-      },
-      {
-        "Name": "TitleText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "pad0x30_JEL9P[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x178"
       }
     ]
   },

@@ -5,7 +5,7 @@ AdvertiseGameEventOnDemandAvailabilityTelemetryEvent:
   - Name: GameEventAvailability
     Offset: '0x0'
     Size: '0x20'
-    Type: struct GameEventAvailabilityModel
+    Type: struct
   ClassSize: '0x20'
 GameEventAvailabilityTelemetryData:
   Attributes:
@@ -21,25 +21,17 @@ GameEventAvailabilityTelemetryData:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_RQ0EY[0x6]
-    Offset: '0x12'
-    Size: '0x6'
-    Type: char
   ClassSize: '0x18'
 GameEventsOnDemandLoserTunnelCrewData:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: GameEventType
     Offset: '0x10'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x8_0SRUI[0x8]
-    Offset: '0x18'
-    Size: '0x8'
-    Type: char
   ClassSize: '0x20'
 ProcessGameEventOnDemandAvailabilityTelemetryEvent:
   Attributes:

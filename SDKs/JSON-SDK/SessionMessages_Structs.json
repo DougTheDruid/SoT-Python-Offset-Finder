@@ -16,7 +16,7 @@
       },
       {
         "Name": "InstanceId",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -31,45 +31,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x7_YAWUJ[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x31"
-      }
-    ]
-  },
-  "SessionServiceLogSubscribe": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_Q0FJ3[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SessionServiceLogUnsubscribe": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_43X1D[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SessionServicePing": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_546DT[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -90,7 +51,7 @@
       },
       {
         "Name": "InstanceId",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -107,12 +68,6 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_UQCUA[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x41"
-      },
-      {
         "Name": "PlatformName",
         "Type": "struct FString",
         "Size": "0x10",
@@ -120,7 +75,7 @@
       },
       {
         "Name": "SessionId",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x58"
       },
@@ -141,12 +96,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x88"
-      },
-      {
-        "Name": "pad0x7_NKXR3[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x89"
       }
     ]
   },

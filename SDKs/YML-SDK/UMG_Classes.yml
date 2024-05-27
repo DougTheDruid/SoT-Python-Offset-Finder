@@ -2,30 +2,32 @@
 # https://github.com/DougTheDruid
 AsyncTaskDownloadImage:
   Attributes:
-  - Name: pad0x20_Y6O0L[0x20]
+  - Name: OnSuccess
     Offset: '0x28'
-    Size: '0x20'
-    Type: char
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnFail
+    Offset: '0x38'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
   Super: BlueprintAsyncActionBase
-BoolBinding:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x48'
-  InheritedSize: '0x48'
-  Super: PropertyBinding
 Border:
   Attributes:
   - Name: ContentColorAndOpacity
     Offset: '0x150'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
+  - Name: ContentColorAndOpacityDelegate
+    Offset: '0x160'
+    Size: '0x10'
+    Type: delegate
   - Name: Padding
     Offset: '0x170'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: HorizontalAlignment
     Offset: '0x180'
     Size: '0x1'
@@ -34,26 +36,42 @@ Border:
     Offset: '0x181'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_IBQUB[0x6]
-    Offset: '0x182'
-    Size: '0x6'
-    Type: char
   - Name: Background
     Offset: '0x188'
     Size: '0x90'
-    Type: struct SlateBrush
+    Type: struct
+  - Name: BackgroundDelegate
+    Offset: '0x218'
+    Size: '0x10'
+    Type: delegate
   - Name: BrushColor
     Offset: '0x228'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
+  - Name: BrushColorDelegate
+    Offset: '0x238'
+    Size: '0x10'
+    Type: delegate
   - Name: bShowEffectWhenDisabled
     Offset: '0x248'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_N1FVU[0x3]
-    Offset: '0x249'
-    Size: '0x3'
-    Type: char
+  - Name: OnMouseButtonDownEvent
+    Offset: '0x24c'
+    Size: '0x10'
+    Type: delegate
+  - Name: OnMouseButtonUpEvent
+    Offset: '0x25c'
+    Size: '0x10'
+    Type: delegate
+  - Name: OnMouseMoveEvent
+    Offset: '0x26c'
+    Size: '0x10'
+    Type: delegate
+  - Name: OnMouseDoubleClickEvent
+    Offset: '0x27c'
+    Size: '0x10'
+    Type: delegate
   - Name: Brush
     Offset: '0x2a8'
     Size: '0x8'
@@ -67,7 +85,7 @@ BorderSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: HorizontalAlignment
     Offset: '0x48'
     Size: '0x1'
@@ -76,24 +94,10 @@ BorderSlot:
     Offset: '0x49'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1e_VSCHH[0x1e]
-    Offset: '0x4a'
-    Size: '0x1e'
-    Type: char
   ClassSize: '0x30'
   FullSize: '0x68'
   InheritedSize: '0x38'
   Super: PanelSlot
-BrushBinding:
-  Attributes:
-  - Name: pad0x8_S4F8B[0x8]
-    Offset: '0x48'
-    Size: '0x8'
-    Type: char
-  ClassSize: '0x8'
-  FullSize: '0x50'
-  InheritedSize: '0x48'
-  Super: PropertyBinding
 Button:
   Attributes:
   - Name: Style
@@ -103,15 +107,15 @@ Button:
   - Name: WidgetStyle
     Offset: '0x158'
     Size: '0x2a8'
-    Type: struct ButtonStyle
+    Type: struct
   - Name: ColorAndOpacity
     Offset: '0x400'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
   - Name: BackgroundColor
     Offset: '0x410'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
   - Name: ClickMethod
     Offset: '0x420'
     Size: '0x1'
@@ -124,14 +128,18 @@ Button:
     Offset: '0x422'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_9LHXD[0x5]
-    Offset: '0x423'
-    Size: '0x5'
-    Type: char
-  - Name: pad0x48_GIPC8[0x48]
+  - Name: OnClicked
     Offset: '0x428'
-    Size: '0x48'
-    Type: char
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnPressed
+    Offset: '0x438'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnReleased
+    Offset: '0x448'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   ClassSize: '0x320'
   FullSize: '0x470'
   InheritedSize: '0x150'
@@ -141,7 +149,7 @@ ButtonSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: HorizontalAlignment
     Offset: '0x48'
     Size: '0x1'
@@ -150,46 +158,24 @@ ButtonSlot:
     Offset: '0x49'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1e_9HUJK[0x1e]
-    Offset: '0x4a'
-    Size: '0x1e'
-    Type: char
   ClassSize: '0x30'
   FullSize: '0x68'
   InheritedSize: '0x38'
   Super: PanelSlot
-CanvasPanel:
-  Attributes:
-  - Name: pad0x18_WKRPP[0x18]
-    Offset: '0x150'
-    Size: '0x18'
-    Type: char
-  ClassSize: '0x18'
-  FullSize: '0x168'
-  InheritedSize: '0x150'
-  Super: PanelWidget
 CanvasPanelSlot:
   Attributes:
   - Name: LayoutData
     Offset: '0x38'
     Size: '0x28'
-    Type: struct AnchorData
+    Type: struct
   - Name: bAutoSize
     Offset: '0x60'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_50IWN[0x3]
-    Offset: '0x61'
-    Size: '0x3'
-    Type: char
   - Name: ZOrder
     Offset: '0x64'
     Size: '0x4'
     Type: int
-  - Name: pad0x8_B231I[0x8]
-    Offset: '0x68'
-    Size: '0x8'
-    Type: char
   ClassSize: '0x38'
   FullSize: '0x70'
   InheritedSize: '0x38'
@@ -200,14 +186,14 @@ CheckBox:
     Offset: '0x150'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_NGF1B[0x3]
-    Offset: '0x151'
-    Size: '0x3'
-    Type: char
+  - Name: CheckedStateDelegate
+    Offset: '0x154'
+    Size: '0x10'
+    Type: delegate
   - Name: WidgetStyle
     Offset: '0x168'
     Size: '0x5f0'
-    Type: struct CheckBoxStyle
+    Type: struct
   - Name: Style
     Offset: '0x758'
     Size: '0x8'
@@ -252,40 +238,22 @@ CheckBox:
     Offset: '0x7a8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_JF4V0[0x3]
-    Offset: '0x7a9'
-    Size: '0x3'
-    Type: char
   - Name: Padding
     Offset: '0x7ac'
     Size: '0x10'
-    Type: struct Margin
-  - Name: pad0x4_GKEDP[0x4]
-    Offset: '0x7bc'
-    Size: '0x4'
-    Type: char
+    Type: struct
   - Name: BorderBackgroundColor
     Offset: '0x7c0'
     Size: '0x30'
-    Type: struct SlateColor
-  - Name: pad0x28_7DXZJ[0x28]
+    Type: struct
+  - Name: OnCheckStateChanged
     Offset: '0x7f0'
-    Size: '0x28'
-    Type: char
+    Size: '0x10'
+    Type: multicastinlinedelegate
   ClassSize: '0x6c8'
   FullSize: '0x818'
   InheritedSize: '0x150'
   Super: ContentWidget
-CheckedStateBinding:
-  Attributes:
-  - Name: pad0x8_AGELN[0x8]
-    Offset: '0x48'
-    Size: '0x8'
-    Type: char
-  ClassSize: '0x8'
-  FullSize: '0x50'
-  InheritedSize: '0x48'
-  Super: PropertyBinding
 CircularThrobber:
   Attributes:
   - Name: NumberOfPieces
@@ -300,10 +268,6 @@ CircularThrobber:
     Offset: '0x140'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_WIJNA[0x4]
-    Offset: '0x144'
-    Size: '0x4'
-    Type: char
   - Name: PieceImage
     Offset: '0x148'
     Size: '0x8'
@@ -311,35 +275,21 @@ CircularThrobber:
   - Name: Image
     Offset: '0x150'
     Size: '0x90'
-    Type: struct SlateBrush
-  - Name: pad0x18_UKIH4[0x18]
-    Offset: '0x1e0'
-    Size: '0x18'
-    Type: char
+    Type: struct
   ClassSize: '0xc0'
   FullSize: '0x1f8'
   InheritedSize: '0x138'
   Super: Widget
-ColorBinding:
-  Attributes:
-  - Name: pad0x8_8BI1B[0x8]
-    Offset: '0x48'
-    Size: '0x8'
-    Type: char
-  ClassSize: '0x8'
-  FullSize: '0x50'
-  InheritedSize: '0x48'
-  Super: PropertyBinding
 ComboBox:
   Attributes:
   - Name: Items
     Offset: '0x138'
     Size: '0x10'
     Type: TArray<class Object*>
-  - Name: pad0x28_X8XWS[0x28]
+  - Name: OnGenerateWidgetEvent
     Offset: '0x148'
-    Size: '0x28'
-    Type: char
+    Size: '0x10'
+    Type: delegate
   ClassSize: '0x38'
   FullSize: '0x170'
   InheritedSize: '0x138'
@@ -357,11 +307,11 @@ ComboBoxString:
   - Name: WidgetStyle
     Offset: '0x158'
     Size: '0x428'
-    Type: struct ComboBoxStyle
+    Type: struct
   - Name: ContentPadding
     Offset: '0x580'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: MaxListHeight
     Offset: '0x590'
     Size: '0x4'
@@ -370,24 +320,22 @@ ComboBoxString:
     Offset: '0x594'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_RM5OE[0x3]
-    Offset: '0x595'
-    Size: '0x3'
-    Type: char
-  - Name: pad0x88_2IY9H[0x88]
+  - Name: OnGenerateWidgetEvent
     Offset: '0x598'
-    Size: '0x88'
-    Type: char
+    Size: '0x10'
+    Type: delegate
+  - Name: OnSelectionChanged
+    Offset: '0x5a8'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnOpening
+    Offset: '0x5b8'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   ClassSize: '0x4e8'
   FullSize: '0x620'
   InheritedSize: '0x138'
   Super: Widget
-ContentWidget:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x150'
-  InheritedSize: '0x150'
-  Super: PanelWidget
 DragDropOperation:
   Attributes:
   - Name: Tag
@@ -406,22 +354,22 @@ DragDropOperation:
     Offset: '0x48'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_9U0MI[0x3]
-    Offset: '0x49'
-    Size: '0x3'
-    Type: char
   - Name: Offset
     Offset: '0x4c'
     Size: '0x8'
-    Type: struct Vector2D
-  - Name: pad0x4_4YJEX[0x4]
-    Offset: '0x54'
-    Size: '0x4'
-    Type: char
-  - Name: pad0x30_WJBGN[0x30]
+    Type: struct
+  - Name: OnDrop
     Offset: '0x58'
-    Size: '0x30'
-    Type: char
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnDragCancelled
+    Offset: '0x68'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnDragged
+    Offset: '0x78'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
@@ -432,14 +380,22 @@ EditableText:
     Offset: '0x138'
     Size: '0x38'
     Type: struct FText
+  - Name: TextDelegate
+    Offset: '0x170'
+    Size: '0x10'
+    Type: delegate
   - Name: HintText
     Offset: '0x180'
     Size: '0x38'
     Type: struct FText
+  - Name: HintTextDelegate
+    Offset: '0x1b8'
+    Size: '0x10'
+    Type: delegate
   - Name: WidgetStyle
     Offset: '0x1c8'
     Size: '0x228'
-    Type: struct EditableTextStyle
+    Type: struct
   - Name: Style
     Offset: '0x3f0'
     Size: '0x8'
@@ -459,11 +415,11 @@ EditableText:
   - Name: Font
     Offset: '0x410'
     Size: '0x40'
-    Type: struct SlateFontInfo
+    Type: struct
   - Name: ColorAndOpacity
     Offset: '0x450'
     Size: '0x30'
-    Type: struct SlateColor
+    Type: struct
   - Name: IsReadOnly
     Offset: '0x480'
     Size: '0x1'
@@ -472,10 +428,6 @@ EditableText:
     Offset: '0x481'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_EF4LN[0x2]
-    Offset: '0x482'
-    Size: '0x2'
-    Type: char
   - Name: MinimumDesiredWidth
     Offset: '0x484'
     Size: '0x4'
@@ -500,14 +452,14 @@ EditableText:
     Offset: '0x48c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_MGTBP[0x3]
-    Offset: '0x48d'
-    Size: '0x3'
-    Type: char
-  - Name: pad0x38_F9XMU[0x38]
+  - Name: OnTextChanged
     Offset: '0x490'
-    Size: '0x38'
-    Type: char
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnTextCommitted
+    Offset: '0x4a0'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   ClassSize: '0x390'
   FullSize: '0x4c8'
   InheritedSize: '0x138'
@@ -518,10 +470,14 @@ EditableTextBox:
     Offset: '0x138'
     Size: '0x38'
     Type: struct FText
+  - Name: TextDelegate
+    Offset: '0x170'
+    Size: '0x10'
+    Type: delegate
   - Name: WidgetStyle
     Offset: '0x180'
     Size: '0x860'
-    Type: struct EditableTextBoxStyle
+    Type: struct
   - Name: Style
     Offset: '0x9e0'
     Size: '0x8'
@@ -530,22 +486,26 @@ EditableTextBox:
     Offset: '0x9e8'
     Size: '0x38'
     Type: struct FText
+  - Name: HintTextDelegate
+    Offset: '0xa20'
+    Size: '0x10'
+    Type: delegate
   - Name: Font
     Offset: '0xa30'
     Size: '0x40'
-    Type: struct SlateFontInfo
+    Type: struct
   - Name: ForegroundColor
     Offset: '0xa70'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
   - Name: BackgroundColor
     Offset: '0xa80'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
   - Name: ReadOnlyForegroundColor
     Offset: '0xa90'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
   - Name: IsReadOnly
     Offset: '0xaa0'
     Size: '0x1'
@@ -554,10 +514,6 @@ EditableTextBox:
     Offset: '0xaa1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_NGN9F[0x2]
-    Offset: '0xaa2'
-    Size: '0x2'
-    Type: char
   - Name: MinimumDesiredWidth
     Offset: '0xaa4'
     Size: '0x4'
@@ -565,7 +521,7 @@ EditableTextBox:
   - Name: Padding
     Offset: '0xaa8'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: IsCaretMovedWhenGainFocus
     Offset: '0xab8'
     Size: '0x1'
@@ -586,32 +542,24 @@ EditableTextBox:
     Offset: '0xabc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_EMHAT[0x3]
-    Offset: '0xabd'
-    Size: '0x3'
-    Type: char
-  - Name: pad0x38_8YBGJ[0x38]
+  - Name: OnTextChanged
     Offset: '0xac0'
-    Size: '0x38'
-    Type: char
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnTextCommitted
+    Offset: '0xad0'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   ClassSize: '0x9c0'
   FullSize: '0xaf8'
   InheritedSize: '0x138'
   Super: Widget
 ExpandableArea:
   Attributes:
-  - Name: pad0x8_MQIAV[0x8]
-    Offset: '0x138'
-    Size: '0x8'
-    Type: char
   - Name: bIsExpanded
     Offset: '0x140'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_XIYAM[0x3]
-    Offset: '0x141'
-    Size: '0x3'
-    Type: char
   - Name: MaxHeight
     Offset: '0x144'
     Size: '0x4'
@@ -619,7 +567,11 @@ ExpandableArea:
   - Name: AreaPadding
     Offset: '0x148'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
+  - Name: OnExpansionChanged
+    Offset: '0x158'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   - Name: HeaderContent
     Offset: '0x168'
     Size: '0x8'
@@ -628,20 +580,10 @@ ExpandableArea:
     Offset: '0x170'
     Size: '0x8'
     Type: class Widget*
-  - Name: pad0x18_R0C4W[0x18]
-    Offset: '0x178'
-    Size: '0x18'
-    Type: char
   ClassSize: '0x58'
   FullSize: '0x190'
   InheritedSize: '0x138'
   Super: Widget
-FloatBinding:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x48'
-  InheritedSize: '0x48'
-  Super: PropertyBinding
 GridPanel:
   Attributes:
   - Name: ColumnFill
@@ -652,10 +594,6 @@ GridPanel:
     Offset: '0x160'
     Size: '0x10'
     Type: TArray<float>
-  - Name: pad0x18_VK786[0x18]
-    Offset: '0x170'
-    Size: '0x18'
-    Type: char
   ClassSize: '0x38'
   FullSize: '0x188'
   InheritedSize: '0x150'
@@ -670,10 +608,6 @@ GridSlot:
     Offset: '0x39'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_PIRE8[0x2]
-    Offset: '0x3a'
-    Size: '0x2'
-    Type: char
   - Name: Row
     Offset: '0x3c'
     Size: '0x4'
@@ -697,35 +631,21 @@ GridSlot:
   - Name: Nudge
     Offset: '0x50'
     Size: '0x8'
-    Type: struct Vector2D
-  - Name: pad0x8_F7MCN[0x8]
-    Offset: '0x58'
-    Size: '0x8'
-    Type: char
+    Type: struct
   ClassSize: '0x28'
   FullSize: '0x60'
   InheritedSize: '0x38'
   Super: PanelSlot
-HorizontalBox:
-  Attributes:
-  - Name: pad0x18_IPGOC[0x18]
-    Offset: '0x150'
-    Size: '0x18'
-    Type: char
-  ClassSize: '0x18'
-  FullSize: '0x168'
-  InheritedSize: '0x150'
-  Super: PanelWidget
 HorizontalBoxSlot:
   Attributes:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: Size
     Offset: '0x48'
     Size: '0x8'
-    Type: struct SlateChildSize
+    Type: struct
   - Name: HorizontalAlignment
     Offset: '0x50'
     Size: '0x1'
@@ -734,10 +654,6 @@ HorizontalBoxSlot:
     Offset: '0x51'
     Size: '0x1'
     Type: byte
-  - Name: pad0xe_MCNP3[0xe]
-    Offset: '0x52'
-    Size: '0xe'
-    Type: char
   ClassSize: '0x28'
   FullSize: '0x60'
   InheritedSize: '0x38'
@@ -751,35 +667,33 @@ Image:
   - Name: Brush
     Offset: '0x140'
     Size: '0x90'
-    Type: struct SlateBrush
+    Type: struct
+  - Name: BrushDelegate
+    Offset: '0x1d0'
+    Size: '0x10'
+    Type: delegate
   - Name: ColorAndOpacity
     Offset: '0x1e0'
     Size: '0x10'
-    Type: struct LinearColor
-  - Name: pad0x38_08EQK[0x38]
+    Type: struct
+  - Name: ColorAndOpacityDelegate
     Offset: '0x1f0'
-    Size: '0x38'
-    Type: char
+    Size: '0x10'
+    Type: delegate
+  - Name: OnMouseButtonDownEvent
+    Offset: '0x200'
+    Size: '0x10'
+    Type: delegate
   ClassSize: '0xf0'
   FullSize: '0x228'
   InheritedSize: '0x138'
   Super: Widget
-Int32Binding:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x48'
-  InheritedSize: '0x48'
-  Super: PropertyBinding
 InvalidationBox:
   Attributes:
   - Name: CacheRelativeTransforms
     Offset: '0x150'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1f_HS8Z9[0x1f]
-    Offset: '0x151'
-    Size: '0x1f'
-    Type: char
   ClassSize: '0x20'
   FullSize: '0x170'
   InheritedSize: '0x150'
@@ -790,10 +704,6 @@ ListView:
     Offset: '0x138'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_64ZNZ[0x4]
-    Offset: '0x13c'
-    Size: '0x4'
-    Type: char
   - Name: Items
     Offset: '0x140'
     Size: '0x10'
@@ -802,14 +712,10 @@ ListView:
     Offset: '0x150'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_NIPG9[0x3]
-    Offset: '0x151'
-    Size: '0x3'
-    Type: char
-  - Name: pad0x2c_VNX1H[0x2c]
+  - Name: OnGenerateRowEvent
     Offset: '0x154'
-    Size: '0x2c'
-    Type: char
+    Size: '0x10'
+    Type: delegate
   ClassSize: '0x48'
   FullSize: '0x180'
   InheritedSize: '0x138'
@@ -820,104 +726,66 @@ MenuAnchor:
     Offset: '0x150'
     Size: '0x8'
     Type: class UClass*
+  - Name: OnGetMenuContentEvent
+    Offset: '0x158'
+    Size: '0x10'
+    Type: delegate
   - Name: Placement
     Offset: '0x168'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_B4JXQ[0x7]
-    Offset: '0x169'
-    Size: '0x7'
-    Type: char
-  - Name: pad0x28_LD5VZ[0x28]
+  - Name: OnMenuOpenChanged
     Offset: '0x170'
-    Size: '0x28'
-    Type: char
+    Size: '0x10'
+    Type: multicastinlinedelegate
   ClassSize: '0x48'
   FullSize: '0x198'
   InheritedSize: '0x150'
   Super: ContentWidget
-MouseCursorBinding:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x48'
-  InheritedSize: '0x48'
-  Super: PropertyBinding
 MovieScene2DTransformSection:
   Attributes:
-  - Name: pad0x8_EPZXU[0x8]
-    Offset: '0x98'
-    Size: '0x8'
-    Type: char
   - Name: Translation
     Offset: '0xa0'
     Size: '0x78'
-    Type: struct RichCurve
-  - Name: pad0x78_VYS45[0x78]
-    Offset: '0x118'
-    Size: '0x78'
-    Type: char
+    Type: struct
   - Name: Rotation
     Offset: '0x190'
     Size: '0x78'
-    Type: struct RichCurve
+    Type: struct
   - Name: Scale
     Offset: '0x208'
     Size: '0x78'
-    Type: struct RichCurve
-  - Name: pad0x78_60R7Q[0x78]
-    Offset: '0x280'
-    Size: '0x78'
-    Type: char
+    Type: struct
   - Name: Shear
     Offset: '0x2f8'
     Size: '0x78'
-    Type: struct RichCurve
-  - Name: pad0x78_3HTBV[0x78]
-    Offset: '0x370'
-    Size: '0x78'
-    Type: char
+    Type: struct
   ClassSize: '0x350'
   FullSize: '0x3e8'
   InheritedSize: '0x98'
   Super: MovieSceneSection
-MovieScene2DTransformTrack:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0xb0'
-  InheritedSize: '0xb0'
-  Super: MovieScenePropertyTrack
 MovieSceneMarginSection:
   Attributes:
-  - Name: pad0x8_36CLT[0x8]
-    Offset: '0x98'
-    Size: '0x8'
-    Type: char
   - Name: TopCurve
     Offset: '0xa0'
     Size: '0x78'
-    Type: struct RichCurve
+    Type: struct
   - Name: LeftCurve
     Offset: '0x118'
     Size: '0x78'
-    Type: struct RichCurve
+    Type: struct
   - Name: RightCurve
     Offset: '0x190'
     Size: '0x78'
-    Type: struct RichCurve
+    Type: struct
   - Name: BottomCurve
     Offset: '0x208'
     Size: '0x78'
-    Type: struct RichCurve
+    Type: struct
   ClassSize: '0x1e8'
   FullSize: '0x280'
   InheritedSize: '0x98'
   Super: MovieSceneSection
-MovieSceneMarginTrack:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0xb0'
-  InheritedSize: '0xb0'
-  Super: MovieScenePropertyTrack
 MovieSceneWidgetMaterialTrack:
   Attributes:
   - Name: BrushPropertyNamePath
@@ -941,7 +809,7 @@ MultiLineEditableText:
   - Name: WidgetStyle
     Offset: '0x170'
     Size: '0x160'
-    Type: struct TextBlockStyle
+    Type: struct
   - Name: Justification
     Offset: '0x2d0'
     Size: '0x1'
@@ -950,10 +818,6 @@ MultiLineEditableText:
     Offset: '0x2d1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_GVO2F[0x2]
-    Offset: '0x2d2'
-    Size: '0x2'
-    Type: char
   - Name: WrapTextAt
     Offset: '0x2d4'
     Size: '0x4'
@@ -961,11 +825,15 @@ MultiLineEditableText:
   - Name: Font
     Offset: '0x2d8'
     Size: '0x40'
-    Type: struct SlateFontInfo
-  - Name: pad0x38_MIPX4[0x38]
+    Type: struct
+  - Name: OnTextChanged
     Offset: '0x318'
-    Size: '0x38'
-    Type: char
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnTextCommitted
+    Offset: '0x328'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   ClassSize: '0x218'
   FullSize: '0x350'
   InheritedSize: '0x138'
@@ -979,11 +847,11 @@ MultiLineEditableTextBox:
   - Name: WidgetStyle
     Offset: '0x170'
     Size: '0x860'
-    Type: struct EditableTextBoxStyle
+    Type: struct
   - Name: TextStyle
     Offset: '0x9d0'
     Size: '0x160'
-    Type: struct TextBlockStyle
+    Type: struct
   - Name: Style
     Offset: '0xb30'
     Size: '0x8'
@@ -996,10 +864,6 @@ MultiLineEditableTextBox:
     Offset: '0xb39'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_P329K[0x2]
-    Offset: '0xb3a'
-    Size: '0x2'
-    Type: char
   - Name: WrapTextAt
     Offset: '0xb3c'
     Size: '0x4'
@@ -1007,69 +871,37 @@ MultiLineEditableTextBox:
   - Name: Font
     Offset: '0xb40'
     Size: '0x40'
-    Type: struct SlateFontInfo
+    Type: struct
   - Name: ForegroundColor
     Offset: '0xb80'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
   - Name: BackgroundColor
     Offset: '0xb90'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
   - Name: ReadOnlyForegroundColor
     Offset: '0xba0'
     Size: '0x10'
-    Type: struct LinearColor
-  - Name: pad0x38_8LIX2[0x38]
+    Type: struct
+  - Name: OnTextChanged
     Offset: '0xbb0'
-    Size: '0x38'
-    Type: char
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnTextCommitted
+    Offset: '0xbc0'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   ClassSize: '0xab0'
   FullSize: '0xbe8'
   InheritedSize: '0x138'
   Super: Widget
-NamedSlot:
-  Attributes:
-  - Name: pad0x18_CGFF0[0x18]
-    Offset: '0x150'
-    Size: '0x18'
-    Type: char
-  ClassSize: '0x18'
-  FullSize: '0x168'
-  InheritedSize: '0x150'
-  Super: ContentWidget
-NamedSlotInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface
-NativeWidgetHost:
-  Attributes:
-  - Name: pad0x18_5JWH3[0x18]
-    Offset: '0x138'
-    Size: '0x18'
-    Type: char
-  ClassSize: '0x18'
-  FullSize: '0x150'
-  InheritedSize: '0x138'
-  Super: Widget
-Overlay:
-  Attributes:
-  - Name: pad0x18_CO7EJ[0x18]
-    Offset: '0x150'
-    Size: '0x18'
-    Type: char
-  ClassSize: '0x18'
-  FullSize: '0x168'
-  InheritedSize: '0x150'
-  Super: PanelWidget
 OverlaySlot:
   Attributes:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: HorizontalAlignment
     Offset: '0x48'
     Size: '0x1'
@@ -1078,10 +910,6 @@ OverlaySlot:
     Offset: '0x49'
     Size: '0x1'
     Type: byte
-  - Name: pad0xe_SUVX1[0xe]
-    Offset: '0x4a'
-    Size: '0xe'
-    Type: char
   ClassSize: '0x20'
   FullSize: '0x58'
   InheritedSize: '0x38'
@@ -1106,10 +934,6 @@ PanelWidget:
     Offset: '0x138'
     Size: '0x10'
     Type: TArray<class PanelSlot*>
-  - Name: pad0x8_56S75[0x8]
-    Offset: '0x148'
-    Size: '0x8'
-    Type: char
   ClassSize: '0x18'
   FullSize: '0x150'
   InheritedSize: '0x138'
@@ -1119,7 +943,7 @@ ProgressBar:
   - Name: WidgetStyle
     Offset: '0x138'
     Size: '0x1b8'
-    Type: struct ProgressBarStyle
+    Type: struct
   - Name: Style
     Offset: '0x2f0'
     Size: '0x8'
@@ -1148,32 +972,32 @@ ProgressBar:
     Offset: '0x315'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_XPNUH[0x2]
-    Offset: '0x316'
-    Size: '0x2'
-    Type: char
+  - Name: PercentDelegate
+    Offset: '0x318'
+    Size: '0x10'
+    Type: delegate
   - Name: FillColorAndOpacity
     Offset: '0x328'
     Size: '0x10'
-    Type: struct LinearColor
-  - Name: pad0x28_IJ9KX[0x28]
+    Type: struct
+  - Name: FillColorAndOpacityDelegate
     Offset: '0x338'
-    Size: '0x28'
-    Type: char
+    Size: '0x10'
+    Type: delegate
   ClassSize: '0x228'
   FullSize: '0x360'
   InheritedSize: '0x138'
   Super: Widget
 PropertyBinding:
   Attributes:
-  - Name: pad0x8_RU37N[0x8]
+  - Name: SourceObject
     Offset: '0x28'
     Size: '0x8'
-    Type: char
+    Type: class Object*
   - Name: SourcePath
     Offset: '0x30'
     Size: '0x10'
-    Type: struct DynamicPropertyPath
+    Type: struct
   - Name: DestinationProperty
     Offset: '0x40'
     Size: '0x8'
@@ -1188,14 +1012,18 @@ RichTextBlock:
     Offset: '0x138'
     Size: '0x38'
     Type: struct FText
+  - Name: TextDelegate
+    Offset: '0x170'
+    Size: '0x10'
+    Type: delegate
   - Name: Font
     Offset: '0x180'
     Size: '0x40'
-    Type: struct SlateFontInfo
+    Type: struct
   - Name: Color
     Offset: '0x1c0'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
   - Name: Justification
     Offset: '0x1d0'
     Size: '0x1'
@@ -1204,10 +1032,6 @@ RichTextBlock:
     Offset: '0x1d1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_I6COW[0x2]
-    Offset: '0x1d2'
-    Size: '0x2'
-    Type: char
   - Name: WrapTextAt
     Offset: '0x1d4'
     Size: '0x4'
@@ -1215,23 +1039,15 @@ RichTextBlock:
   - Name: Margin
     Offset: '0x1d8'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: LineHeightPercentage
     Offset: '0x1e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_QH75X[0x4]
-    Offset: '0x1ec'
-    Size: '0x4'
-    Type: char
   - Name: Decorators
     Offset: '0x1f0'
     Size: '0x10'
     Type: TArray<class RichTextBlockDecorator*>
-  - Name: pad0x178_I49GZ[0x178]
-    Offset: '0x200'
-    Size: '0x178'
-    Type: char
   ClassSize: '0x240'
   FullSize: '0x378'
   InheritedSize: '0x138'
@@ -1242,10 +1058,6 @@ RichTextBlockDecorator:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_Z88OY[0x3]
-    Offset: '0x29'
-    Size: '0x3'
-    Type: char
   - Name: RevealedIndex
     Offset: '0x2c'
     Size: '0x4'
@@ -1254,16 +1066,6 @@ RichTextBlockDecorator:
   FullSize: '0x30'
   InheritedSize: '0x28'
   Super: Object
-SafeZone:
-  Attributes:
-  - Name: pad0x18_3OHVJ[0x18]
-    Offset: '0x150'
-    Size: '0x18'
-    Type: char
-  ClassSize: '0x18'
-  FullSize: '0x168'
-  InheritedSize: '0x150'
-  Super: ContentWidget
 SafeZoneSlot:
   Attributes:
   - Name: bIsTitleSafe
@@ -1278,18 +1080,10 @@ SafeZoneSlot:
     Offset: '0x3a'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_BTJLA[0x1]
-    Offset: '0x3b'
-    Size: '0x1'
-    Type: char
   - Name: Padding
     Offset: '0x3c'
     Size: '0x10'
-    Type: struct Margin
-  - Name: pad0x4_MVAUW[0x4]
-    Offset: '0x4c'
-    Size: '0x4'
-    Type: char
+    Type: struct
   ClassSize: '0x18'
   FullSize: '0x50'
   InheritedSize: '0x38'
@@ -1304,18 +1098,10 @@ ScaleBox:
     Offset: '0x151'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_C9ZE4[0x2]
-    Offset: '0x152'
-    Size: '0x2'
-    Type: char
   - Name: UserSpecifiedScale
     Offset: '0x154'
     Size: '0x4'
     Type: float
-  - Name: pad0x18_D06DT[0x18]
-    Offset: '0x158'
-    Size: '0x18'
-    Type: char
   ClassSize: '0x20'
   FullSize: '0x170'
   InheritedSize: '0x150'
@@ -1325,7 +1111,7 @@ ScaleBoxSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: HorizontalAlignment
     Offset: '0x48'
     Size: '0x1'
@@ -1334,10 +1120,6 @@ ScaleBoxSlot:
     Offset: '0x49'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1e_89WS6[0x1e]
-    Offset: '0x4a'
-    Size: '0x1e'
-    Type: char
   ClassSize: '0x30'
   FullSize: '0x68'
   InheritedSize: '0x38'
@@ -1347,7 +1129,7 @@ ScrollBar:
   - Name: WidgetStyle
     Offset: '0x138'
     Size: '0x518'
-    Type: struct ScrollBarStyle
+    Type: struct
   - Name: Style
     Offset: '0x650'
     Size: '0x8'
@@ -1360,18 +1142,10 @@ ScrollBar:
     Offset: '0x659'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_IWON9[0x2]
-    Offset: '0x65a'
-    Size: '0x2'
-    Type: char
   - Name: Thickness
     Offset: '0x65c'
     Size: '0x8'
-    Type: struct Vector2D
-  - Name: pad0x1c_51SEC[0x1c]
-    Offset: '0x664'
-    Size: '0x1c'
-    Type: char
+    Type: struct
   ClassSize: '0x548'
   FullSize: '0x680'
   InheritedSize: '0x138'
@@ -1381,11 +1155,11 @@ ScrollBox:
   - Name: WidgetStyle
     Offset: '0x150'
     Size: '0x248'
-    Type: struct ScrollBoxStyle
+    Type: struct
   - Name: WidgetBarStyle
     Offset: '0x398'
     Size: '0x518'
-    Type: struct ScrollBarStyle
+    Type: struct
   - Name: Style
     Offset: '0x8b0'
     Size: '0x8'
@@ -1406,22 +1180,14 @@ ScrollBox:
     Offset: '0x8c2'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_7DQ12[0x1]
-    Offset: '0x8c3'
-    Size: '0x1'
-    Type: char
   - Name: ScrollbarThickness
     Offset: '0x8c4'
     Size: '0x8'
-    Type: struct Vector2D
+    Type: struct
   - Name: AlwaysShowScrollbar
     Offset: '0x8cc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x23_OARL5[0x23]
-    Offset: '0x8cd'
-    Size: '0x23'
-    Type: char
   ClassSize: '0x7a0'
   FullSize: '0x8f0'
   InheritedSize: '0x150'
@@ -1431,15 +1197,11 @@ ScrollBoxSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: HorizontalAlignment
     Offset: '0x48'
     Size: '0x1'
     Type: byte
-  - Name: pad0xf_W9A9A[0xf]
-    Offset: '0x49'
-    Size: '0xf'
-    Type: char
   ClassSize: '0x20'
   FullSize: '0x58'
   InheritedSize: '0x38'
@@ -1470,10 +1232,6 @@ SizeBox:
     Offset: '0x150'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_2NZBF[0x3]
-    Offset: '0x151'
-    Size: '0x3'
-    Type: char
   - Name: WidthOverride
     Offset: '0x154'
     Size: '0x4'
@@ -1498,10 +1256,6 @@ SizeBox:
     Offset: '0x168'
     Size: '0x4'
     Type: float
-  - Name: pad0x1c_M5428[0x1c]
-    Offset: '0x16c'
-    Size: '0x1c'
-    Type: char
   ClassSize: '0x38'
   FullSize: '0x188'
   InheritedSize: '0x150'
@@ -1511,7 +1265,7 @@ SizeBoxSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: HorizontalAlignment
     Offset: '0x48'
     Size: '0x1'
@@ -1520,46 +1274,36 @@ SizeBoxSlot:
     Offset: '0x49'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1e_3ZLLG[0x1e]
-    Offset: '0x4a'
-    Size: '0x1e'
-    Type: char
   ClassSize: '0x30'
   FullSize: '0x68'
   InheritedSize: '0x38'
   Super: PanelSlot
-SlateBlueprintLibrary:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: BlueprintFunctionLibrary
 Slider:
   Attributes:
   - Name: Value
     Offset: '0x138'
     Size: '0x4'
     Type: float
+  - Name: ValueDelegate
+    Offset: '0x13c'
+    Size: '0x10'
+    Type: delegate
   - Name: WidgetStyle
     Offset: '0x150'
     Size: '0x248'
-    Type: struct SliderStyle
+    Type: struct
   - Name: Orientation
     Offset: '0x398'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_2EB0X[0x3]
-    Offset: '0x399'
-    Size: '0x3'
-    Type: char
   - Name: SliderBarColor
     Offset: '0x39c'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
   - Name: SliderHandleColor
     Offset: '0x3ac'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
   - Name: IndentHandle
     Offset: '0x3bc'
     Size: '0x1'
@@ -1568,14 +1312,18 @@ Slider:
     Offset: '0x3bd'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_BB60X[0x2]
-    Offset: '0x3be'
-    Size: '0x2'
-    Type: char
-  - Name: pad0x48_FBHCY[0x48]
+  - Name: OnMouseCaptureBegin
     Offset: '0x3c0'
-    Size: '0x48'
-    Type: char
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnMouseCaptureEnd
+    Offset: '0x3d0'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnValueChanged
+    Offset: '0x3e0'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   ClassSize: '0x2d0'
   FullSize: '0x408'
   InheritedSize: '0x138'
@@ -1585,11 +1333,7 @@ Spacer:
   - Name: Size
     Offset: '0x138'
     Size: '0x8'
-    Type: struct Vector2D
-  - Name: pad0x18_9RROL[0x18]
-    Offset: '0x140'
-    Size: '0x18'
-    Type: char
+    Type: struct
   ClassSize: '0x20'
   FullSize: '0x158'
   InheritedSize: '0x138'
@@ -1600,10 +1344,14 @@ SpinBox:
     Offset: '0x138'
     Size: '0x4'
     Type: float
+  - Name: ValueDelegate
+    Offset: '0x13c'
+    Size: '0x10'
+    Type: delegate
   - Name: WidgetStyle
     Offset: '0x150'
     Size: '0x318'
-    Type: struct SpinBoxStyle
+    Type: struct
   - Name: Style
     Offset: '0x468'
     Size: '0x8'
@@ -1619,7 +1367,7 @@ SpinBox:
   - Name: Font
     Offset: '0x478'
     Size: '0x40'
-    Type: struct SlateFontInfo
+    Type: struct
   - Name: MinDesiredWidth
     Offset: '0x4b8'
     Size: '0x4'
@@ -1632,14 +1380,26 @@ SpinBox:
     Offset: '0x4bd'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_F0NUL[0x2]
-    Offset: '0x4be'
-    Size: '0x2'
-    Type: char
   - Name: ForegroundColor
     Offset: '0x4c0'
     Size: '0x30'
-    Type: struct SlateColor
+    Type: struct
+  - Name: OnValueChanged
+    Offset: '0x4f0'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnValueCommitted
+    Offset: '0x500'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnBeginSliderMovement
+    Offset: '0x510'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnEndSliderMovement
+    Offset: '0x520'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   - Name: bOverride_MinValue
     Offset: '0x530'
     Size: '0x1'
@@ -1656,10 +1416,6 @@ SpinBox:
     Offset: '0x530'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_GV57D[0x3]
-    Offset: '0x531'
-    Size: '0x3'
-    Type: char
   - Name: MinValue
     Offset: '0x534'
     Size: '0x4'
@@ -1676,30 +1432,10 @@ SpinBox:
     Offset: '0x540'
     Size: '0x4'
     Type: float
-  - Name: pad0x1c_TRFUT[0x1c]
-    Offset: '0x544'
-    Size: '0x1c'
-    Type: char
   ClassSize: '0x428'
   FullSize: '0x560'
   InheritedSize: '0x138'
   Super: Widget
-TableViewBase:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x138'
-  InheritedSize: '0x138'
-  Super: Widget
-TextBinding:
-  Attributes:
-  - Name: pad0x8_ZCW7F[0x8]
-    Offset: '0x48'
-    Size: '0x8'
-    Type: char
-  ClassSize: '0x8'
-  FullSize: '0x50'
-  InheritedSize: '0x48'
-  Super: PropertyBinding
 TextBlock:
   Attributes:
   - Name: Style
@@ -1710,22 +1446,34 @@ TextBlock:
     Offset: '0x140'
     Size: '0x38'
     Type: struct FText
+  - Name: TextDelegate
+    Offset: '0x178'
+    Size: '0x10'
+    Type: delegate
   - Name: ColorAndOpacity
     Offset: '0x188'
     Size: '0x30'
-    Type: struct SlateColor
+    Type: struct
+  - Name: ColorAndOpacityDelegate
+    Offset: '0x1b8'
+    Size: '0x10'
+    Type: delegate
   - Name: Font
     Offset: '0x1c8'
     Size: '0x40'
-    Type: struct SlateFontInfo
+    Type: struct
   - Name: ShadowOffset
     Offset: '0x208'
     Size: '0x8'
-    Type: struct Vector2D
+    Type: struct
   - Name: ShadowColorAndOpacity
     Offset: '0x210'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
+  - Name: ShadowColorAndOpacityDelegate
+    Offset: '0x220'
+    Size: '0x10'
+    Type: delegate
   - Name: Justification
     Offset: '0x230'
     Size: '0x1'
@@ -1734,10 +1482,6 @@ TextBlock:
     Offset: '0x231'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_G7ISA[0x2]
-    Offset: '0x232'
-    Size: '0x2'
-    Type: char
   - Name: WrapTextAt
     Offset: '0x234'
     Size: '0x4'
@@ -1749,15 +1493,11 @@ TextBlock:
   - Name: Margin
     Offset: '0x23c'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: LineHeightPercentage
     Offset: '0x24c'
     Size: '0x4'
     Type: float
-  - Name: pad0x18_4QOD2[0x18]
-    Offset: '0x250'
-    Size: '0x18'
-    Type: char
   ClassSize: '0x130'
   FullSize: '0x268'
   InheritedSize: '0x138'
@@ -1780,10 +1520,6 @@ Throbber:
     Offset: '0x13e'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_GVLJO[0x1]
-    Offset: '0x13f'
-    Size: '0x1'
-    Type: char
   - Name: PieceImage
     Offset: '0x140'
     Size: '0x8'
@@ -1791,11 +1527,7 @@ Throbber:
   - Name: Image
     Offset: '0x148'
     Size: '0x90'
-    Type: struct SlateBrush
-  - Name: pad0x18_9962I[0x18]
-    Offset: '0x1d8'
-    Size: '0x18'
-    Type: char
+    Type: struct
   ClassSize: '0xb8'
   FullSize: '0x1f0'
   InheritedSize: '0x138'
@@ -1818,32 +1550,20 @@ TileView:
     Offset: '0x150'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_IEYC4[0x3]
-    Offset: '0x151'
-    Size: '0x3'
-    Type: char
-  - Name: pad0x2c_DN1F1[0x2c]
+  - Name: OnGenerateTileEvent
     Offset: '0x154'
-    Size: '0x2c'
-    Type: char
+    Size: '0x10'
+    Type: delegate
   ClassSize: '0x48'
   FullSize: '0x180'
   InheritedSize: '0x138'
   Super: TableViewBase
 UMGSequencePlayer:
   Attributes:
-  - Name: pad0x368_BD13L[0x368]
-    Offset: '0x28'
-    Size: '0x368'
-    Type: char
   - Name: Animation
     Offset: '0x390'
     Size: '0x8'
     Type: class WidgetAnimation*
-  - Name: pad0x230_C3GS4[0x230]
-    Offset: '0x398'
-    Size: '0x230'
-    Type: char
   ClassSize: '0x5a0'
   FullSize: '0x5c8'
   InheritedSize: '0x28'
@@ -1853,7 +1573,7 @@ UniformGridPanel:
   - Name: SlotPadding
     Offset: '0x150'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: MinDesiredSlotWidth
     Offset: '0x160'
     Size: '0x4'
@@ -1862,10 +1582,6 @@ UniformGridPanel:
     Offset: '0x164'
     Size: '0x4'
     Type: float
-  - Name: pad0x18_KBLRY[0x18]
-    Offset: '0x168'
-    Size: '0x18'
-    Type: char
   ClassSize: '0x30'
   FullSize: '0x180'
   InheritedSize: '0x150'
@@ -1880,10 +1596,6 @@ UniformGridSlot:
     Offset: '0x39'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_GG87G[0x2]
-    Offset: '0x3a'
-    Size: '0x2'
-    Type: char
   - Name: Row
     Offset: '0x3c'
     Size: '0x4'
@@ -1892,36 +1604,32 @@ UniformGridSlot:
     Offset: '0x40'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_VGQ8S[0xc]
-    Offset: '0x44'
-    Size: '0xc'
-    Type: char
   ClassSize: '0x18'
   FullSize: '0x50'
   InheritedSize: '0x38'
   Super: PanelSlot
 UserWidget:
   Attributes:
-  - Name: pad0x8_MW3Q3[0x8]
-    Offset: '0x138'
-    Size: '0x8'
-    Type: char
   - Name: ColorAndOpacity
     Offset: '0x140'
     Size: '0x10'
-    Type: struct LinearColor
+    Type: struct
+  - Name: ColorAndOpacityDelegate
+    Offset: '0x150'
+    Size: '0x10'
+    Type: delegate
   - Name: ForegroundColor
     Offset: '0x160'
     Size: '0x30'
-    Type: struct SlateColor
+    Type: struct
+  - Name: ForegroundColorDelegate
+    Offset: '0x190'
+    Size: '0x10'
+    Type: delegate
   - Name: bSupportsKeyboardFocus
     Offset: '0x1a0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_U80UJ[0x7]
-    Offset: '0x1a1'
-    Size: '0x7'
-    Type: char
   - Name: WidgetTree
     Offset: '0x1a8'
     Size: '0x8'
@@ -1938,34 +1646,20 @@ UserWidget:
     Offset: '0x1d0'
     Size: '0x10'
     Type: TArray<struct NamedSlotBinding>
-  - Name: pad0x50_X8X7U[0x50]
-    Offset: '0x1e0'
-    Size: '0x50'
-    Type: char
   ClassSize: '0xf8'
   FullSize: '0x230'
   InheritedSize: '0x138'
   Super: Widget
-VerticalBox:
-  Attributes:
-  - Name: pad0x18_S6NSU[0x18]
-    Offset: '0x150'
-    Size: '0x18'
-    Type: char
-  ClassSize: '0x18'
-  FullSize: '0x168'
-  InheritedSize: '0x150'
-  Super: PanelWidget
 VerticalBoxSlot:
   Attributes:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: Size
     Offset: '0x48'
     Size: '0x8'
-    Type: struct SlateChildSize
+    Type: struct
   - Name: HorizontalAlignment
     Offset: '0x50'
     Size: '0x1'
@@ -1974,10 +1668,6 @@ VerticalBoxSlot:
     Offset: '0x51'
     Size: '0x1'
     Type: byte
-  - Name: pad0xe_USKHZ[0xe]
-    Offset: '0x52'
-    Size: '0xe'
-    Type: char
   ClassSize: '0x28'
   FullSize: '0x60'
   InheritedSize: '0x38'
@@ -1987,27 +1677,11 @@ Viewport:
   - Name: BackgroundColor
     Offset: '0x150'
     Size: '0x10'
-    Type: struct LinearColor
-  - Name: pad0x30_ZPNOM[0x30]
-    Offset: '0x160'
-    Size: '0x30'
-    Type: char
+    Type: struct
   ClassSize: '0x40'
   FullSize: '0x190'
   InheritedSize: '0x150'
   Super: ContentWidget
-VisibilityBinding:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x48'
-  InheritedSize: '0x48'
-  Super: PropertyBinding
-Visual:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Object
 Widget:
   Attributes:
   - Name: bIsVariable
@@ -2018,10 +1692,6 @@ Widget:
     Offset: '0x29'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_4AIEE[0x6]
-    Offset: '0x2a'
-    Size: '0x6'
-    Type: char
   - Name: Slot
     Offset: '0x30'
     Size: '0x8'
@@ -2030,18 +1700,26 @@ Widget:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_7B2R2[0x3]
-    Offset: '0x39'
-    Size: '0x3'
-    Type: char
+  - Name: bIsEnabledDelegate
+    Offset: '0x3c'
+    Size: '0x10'
+    Type: delegate
   - Name: ToolTipText
     Offset: '0x50'
     Size: '0x38'
     Type: struct FText
+  - Name: ToolTipTextDelegate
+    Offset: '0x88'
+    Size: '0x10'
+    Type: delegate
   - Name: ToolTipWidget
     Offset: '0x98'
     Size: '0x8'
     Type: class Widget*
+  - Name: ToolTipWidgetDelegate
+    Offset: '0xa0'
+    Size: '0x10'
+    Type: delegate
   - Name: Visiblity
     Offset: '0xb0'
     Size: '0x1'
@@ -2050,18 +1728,14 @@ Widget:
     Offset: '0xb1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_JGDDO[0x2]
-    Offset: '0xb2'
-    Size: '0x2'
-    Type: char
+  - Name: VisibilityDelegate
+    Offset: '0xb4'
+    Size: '0x10'
+    Type: delegate
   - Name: bOverride_Cursor
     Offset: '0xc4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_2GH23[0x3]
-    Offset: '0xc5'
-    Size: '0x3'
-    Type: char
   - Name: Cursor
     Offset: '0xc8'
     Size: '0x1'
@@ -2070,26 +1744,18 @@ Widget:
     Offset: '0xc9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_9ACM4[0x2]
-    Offset: '0xca'
-    Size: '0x2'
-    Type: char
   - Name: RenderTransform
     Offset: '0xcc'
     Size: '0x1c'
-    Type: struct WidgetTransform
+    Type: struct
   - Name: RenderTransformPivot
     Offset: '0xe8'
     Size: '0x8'
-    Type: struct Vector2D
+    Type: struct
   - Name: Navigation
     Offset: '0xf0'
     Size: '0x8'
     Type: class WidgetNavigation*
-  - Name: pad0x30_0ENE8[0x30]
-    Offset: '0xf8'
-    Size: '0x30'
-    Type: char
   - Name: NativeBindings
     Offset: '0x128'
     Size: '0x10'
@@ -2100,10 +1766,14 @@ Widget:
   Super: Visual
 WidgetAnimation:
   Attributes:
-  - Name: pad0x20_YR6XK[0x20]
+  - Name: OnAnimationStarted
     Offset: '0x2a8'
-    Size: '0x20'
-    Type: char
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: OnAnimationFinished
+    Offset: '0x2b8'
+    Size: '0x10'
+    Type: multicastinlinedelegate
   - Name: MovieScene
     Offset: '0x2c8'
     Size: '0x8'
@@ -2116,12 +1786,6 @@ WidgetAnimation:
   FullSize: '0x2e0'
   InheritedSize: '0x2a8'
   Super: MovieSceneSequence
-WidgetBinding:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x48'
-  InheritedSize: '0x48'
-  Super: PropertyBinding
 WidgetBlueprintGeneratedClass:
   Attributes:
   - Name: WidgetTree
@@ -2144,166 +1808,134 @@ WidgetBlueprintGeneratedClass:
   FullSize: '0x260'
   InheritedSize: '0x228'
   Super: BlueprintGeneratedClass
-WidgetBlueprintLibrary:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: BlueprintFunctionLibrary
 WidgetComponent:
   Attributes:
   - Name: Space
-    Offset: '0x5b8'
+    Offset: '0x5c8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_7PRRI[0x7]
-    Offset: '0x5b9'
-    Size: '0x7'
-    Type: char
   - Name: WidgetClass
-    Offset: '0x5c0'
+    Offset: '0x5d0'
     Size: '0x8'
     Type: class UClass*
   - Name: DrawSize
-    Offset: '0x5c8'
-    Size: '0x8'
-    Type: struct IntPoint
-  - Name: Pivot
-    Offset: '0x5d0'
-    Size: '0x8'
-    Type: struct Vector2D
-  - Name: MaxInteractionDistance
     Offset: '0x5d8'
+    Size: '0x8'
+    Type: struct
+  - Name: Pivot
+    Offset: '0x5e0'
+    Size: '0x8'
+    Type: struct
+  - Name: MaxInteractionDistance
+    Offset: '0x5e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_GFZ0G[0x4]
-    Offset: '0x5dc'
-    Size: '0x4'
-    Type: char
   - Name: OwnerPlayer
-    Offset: '0x5e0'
+    Offset: '0x5f0'
     Size: '0x8'
     Type: class LocalPlayer*
   - Name: BackgroundColor
-    Offset: '0x5e8'
-    Size: '0x10'
-    Type: struct LinearColor
-  - Name: BlendMode
     Offset: '0x5f8'
+    Size: '0x10'
+    Type: struct
+  - Name: BlendMode
+    Offset: '0x608'
     Size: '0x1'
     Type: byte
   - Name: bIsOpaque
-    Offset: '0x5f9'
+    Offset: '0x609'
     Size: '0x1'
     Type: bool
   - Name: bIsTwoSided
-    Offset: '0x5fa'
+    Offset: '0x60a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_FJVPG[0x1]
-    Offset: '0x5fb'
-    Size: '0x1'
-    Type: char
   - Name: ParabolaDistortion
-    Offset: '0x5fc'
+    Offset: '0x60c'
     Size: '0x4'
     Type: float
   - Name: TickWhenOffscreen
-    Offset: '0x600'
+    Offset: '0x610'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_AW59D[0x7]
-    Offset: '0x601'
-    Size: '0x7'
-    Type: char
   - Name: Widget
-    Offset: '0x608'
+    Offset: '0x618'
     Size: '0x8'
     Type: class UserWidget*
   - Name: BodySetup
-    Offset: '0x610'
+    Offset: '0x620'
     Size: '0x8'
     Type: class BodySetup*
   - Name: TranslucentMaterial
-    Offset: '0x618'
-    Size: '0x8'
-    Type: class MaterialInterface*
-  - Name: TranslucentMaterial_OneSided
-    Offset: '0x620'
-    Size: '0x8'
-    Type: class MaterialInterface*
-  - Name: OpaqueMaterial
     Offset: '0x628'
     Size: '0x8'
     Type: class MaterialInterface*
-  - Name: OpaqueMaterial_OneSided
+  - Name: TranslucentMaterial_OneSided
     Offset: '0x630'
     Size: '0x8'
     Type: class MaterialInterface*
-  - Name: MaskedMaterial
+  - Name: OpaqueMaterial
     Offset: '0x638'
     Size: '0x8'
     Type: class MaterialInterface*
-  - Name: MaskedMaterial_OneSided
+  - Name: OpaqueMaterial_OneSided
     Offset: '0x640'
     Size: '0x8'
     Type: class MaterialInterface*
-  - Name: RenderTarget
+  - Name: MaskedMaterial
     Offset: '0x648'
+    Size: '0x8'
+    Type: class MaterialInterface*
+  - Name: MaskedMaterial_OneSided
+    Offset: '0x650'
+    Size: '0x8'
+    Type: class MaterialInterface*
+  - Name: RenderTarget
+    Offset: '0x658'
     Size: '0x8'
     Type: class TextureRenderTarget2D*
   - Name: MaterialInstance
-    Offset: '0x650'
+    Offset: '0x660'
     Size: '0x8'
     Type: class MaterialInstanceDynamic*
   - Name: bUseLegacyRotation
-    Offset: '0x658'
+    Offset: '0x668'
     Size: '0x1'
     Type: bool
   - Name: bAddedToScreen
-    Offset: '0x659'
+    Offset: '0x669'
     Size: '0x1'
     Type: bool
-  - Name: pad0x56_VF5QE[0x56]
-    Offset: '0x65a'
-    Size: '0x56'
-    Type: char
   ClassSize: '0xf0'
-  FullSize: '0x6b0'
-  InheritedSize: '0x5c0'
+  FullSize: '0x6c0'
+  InheritedSize: '0x5d0'
   Super: PrimitiveComponent
-WidgetLayoutLibrary:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: BlueprintFunctionLibrary
 WidgetNavigation:
   Attributes:
   - Name: Up
     Offset: '0x28'
     Size: '0x14'
-    Type: struct WidgetNavigationData
+    Type: struct
   - Name: Down
     Offset: '0x3c'
     Size: '0x14'
-    Type: struct WidgetNavigationData
+    Type: struct
   - Name: Left
     Offset: '0x50'
     Size: '0x14'
-    Type: struct WidgetNavigationData
+    Type: struct
   - Name: Right
     Offset: '0x64'
     Size: '0x14'
-    Type: struct WidgetNavigationData
+    Type: struct
   - Name: Next
     Offset: '0x78'
     Size: '0x14'
-    Type: struct WidgetNavigationData
+    Type: struct
   - Name: Previous
     Offset: '0x8c'
     Size: '0x14'
-    Type: struct WidgetNavigationData
+    Type: struct
   ClassSize: '0x78'
   FullSize: '0xa0'
   InheritedSize: '0x28'
@@ -2314,10 +1946,6 @@ WidgetSwitcher:
     Offset: '0x150'
     Size: '0x4'
     Type: int
-  - Name: pad0x1c_M788L[0x1c]
-    Offset: '0x154'
-    Size: '0x1c'
-    Type: char
   ClassSize: '0x20'
   FullSize: '0x170'
   InheritedSize: '0x150'
@@ -2327,7 +1955,7 @@ WidgetSwitcherSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: HorizontalAlignment
     Offset: '0x48'
     Size: '0x1'
@@ -2336,10 +1964,6 @@ WidgetSwitcherSlot:
     Offset: '0x49'
     Size: '0x1'
     Type: byte
-  - Name: pad0xe_461FB[0xe]
-    Offset: '0x4a'
-    Size: '0xe'
-    Type: char
   ClassSize: '0x20'
   FullSize: '0x58'
   InheritedSize: '0x38'
@@ -2363,11 +1987,7 @@ WrapBox:
   - Name: InnerSlotPadding
     Offset: '0x150'
     Size: '0x8'
-    Type: struct Vector2D
-  - Name: pad0x18_24031[0x18]
-    Offset: '0x158'
-    Size: '0x18'
-    Type: char
+    Type: struct
   ClassSize: '0x20'
   FullSize: '0x170'
   InheritedSize: '0x150'
@@ -2377,15 +1997,11 @@ WrapBoxSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct Margin
+    Type: struct
   - Name: bFillEmptySpace
     Offset: '0x48'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_Z0XYX[0x3]
-    Offset: '0x49'
-    Size: '0x3'
-    Type: char
   - Name: FillSpanWhenLessThan
     Offset: '0x4c'
     Size: '0x4'
@@ -2398,10 +2014,6 @@ WrapBoxSlot:
     Offset: '0x51'
     Size: '0x1'
     Type: byte
-  - Name: pad0xe_IKD5U[0xe]
-    Offset: '0x52'
-    Size: '0xe'
-    Type: char
   ClassSize: '0x28'
   FullSize: '0x60'
   InheritedSize: '0x38'

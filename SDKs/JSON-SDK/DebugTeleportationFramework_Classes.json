@@ -1,37 +1,10 @@
 {
-  "DebugTeleportationLookupInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DebugTeleportationPresentationInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DebugTeleportationRegistrationInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "DebugTeleportationDestinationService": {
     "Super": "Actor",
     "FullSize": "0x3f0",
     "InheritedSize": "0x3c8",
     "ClassSize": "0x28",
     "Attributes": [
-      {
-        "Name": "pad0x18_NF27V[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x3c8"
-      },
       {
         "Name": "DebugTeleportationRegistry",
         "Type": "TArray<struct DebugTeleportDestinationEntry>",

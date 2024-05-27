@@ -1,18 +1,4 @@
 {
-  "ClientCommandHandler": {
-    "Super": "Actor",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "CommandQueue",
-        "Type": "struct ClientCommandQueue",
-        "Size": "0x18",
-        "Offset": "0x3c8"
-      }
-    ]
-  },
   "TaleStruct": {
     "Super": "Struct",
     "FullSize": "0xb8",
@@ -21,15 +7,23 @@
     "Attributes": [
       {
         "Name": "StructId",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x88"
-      },
+      }
+    ]
+  },
+  "ClientCommandHandler": {
+    "Super": "Actor",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x18",
+    "Attributes": [
       {
-        "Name": "pad0x20_0HHKB[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x98"
+        "Name": "CommandQueue",
+        "Type": "struct",
+        "Size": "0x18",
+        "Offset": "0x3c8"
       }
     ]
   },

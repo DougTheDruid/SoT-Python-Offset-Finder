@@ -5,63 +5,6 @@
 
 
 
-// Size 0x10
-struct StreakMesh
-{
-public:
-	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
-	char                                                         PartType;                                          // 0x8(0x1)
-	char                                                         pad0x7_HNYUI[0x7];                                 // 0x9(0x7)
-};
-
-
-// Size 0x18
-struct FactionPopupEvent
-{
-public:
-	char                                                         pad0x10_5ANAW[0x10];                               // 0x0(0x10)
-	class DataAsset*                                             PopUpDesc;                                         // 0x10(0x8)
-};
-
-
-// Size 0x10
-struct DeactivateKillStreakNetworkEvent
-{
-public:
-	char                                                         pad0x10_H9Z6F[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x20
-struct FactionShipSunkUIEvent
-{
-public:
-	char                                                         OpponentFaction;                                   // 0x0(0x1)
-	char                                                         pad0x7_ITDPK[0x7];                                 // 0x1(0x7)
-	struct FString                                               ShipName;                                          // 0x8(0x10)
-	int                                                          MyKillStreak;                                      // 0x18(0x4)
-	int                                                          TheirKillStreak;                                   // 0x1c(0x4)
-};
-
-
-// Size 0x18
-struct ActivateKillStreakNetworkEvent
-{
-public:
-	char                                                         pad0x10_LKAXY[0x10];                               // 0x0(0x10)
-	char                                                         FactionId;                                         // 0x10(0x1)
-	char                                                         pad0x7_LEQ93[0x7];                                 // 0x11(0x7)
-};
-
-
-// Size 0x1
-struct EventLocalPlayerApproachedHourglass
-{
-public:
-	char                                                         pad0x1_QWRT5[0x1];                                 // 0x0(0x1)
-};
-
-
 // Size 0x1
 struct ActivateKillStreakEvent
 {
@@ -70,31 +13,16 @@ public:
 };
 
 
-// Size 0x20
-struct FactionVoteAdded
-{
-public:
-	class Actor*                                                 Voter;                                             // 0x0(0x8)
-	struct Guid                                                  CrewId;                                            // 0x8(0x10)
-	bool                                                         VotePassed;                                        // 0x18(0x1)
-	char                                                         pad0x7_BBHZ8[0x7];                                 // 0x19(0x7)
-};
-
-
-// Size 0x8
-struct FactionBlockedTaleVoteAdded
-{
-public:
-	class Actor*                                                 Voter;                                             // 0x0(0x8)
-};
-
-
-// Size 0x20
-struct FactionRequest
+// Size 0xa0
+struct FactionDisplayInfo
 {
 public:
 	class UClass*                                                Faction;                                           // 0x0(0x8)
-	char                                                         pad0x18_BBPSD[0x18];                               // 0x8(0x18)
+	struct FText                                                 Title;                                             // 0x8(0x38)
+	struct FText                                                 Description;                                       // 0x40(0x38)
+	struct                                                       CardOffset;                                        // 0x78(0x8)
+	struct                                                       KeyArt;                                            // 0x80(0x10)
+	struct                                                       Icon;                                              // 0x90(0x10)
 };
 
 
@@ -104,65 +32,23 @@ struct StreakMaterial
 public:
 	class MaterialInstance*                                      Material;                                          // 0x0(0x8)
 	char                                                         PartType;                                          // 0x8(0x1)
-	char                                                         pad0x7_HU20K[0x7];                                 // 0x9(0x7)
 };
 
 
-// Size 0x10
-struct FactionStreakData
+// Size 0x20
+struct FactionPopupEvent
 {
 public:
-	class UClass*                                                Faction;                                           // 0x0(0x8)
-	int                                                          StreakLevel;                                       // 0x8(0x4)
-	char                                                         pad0x4_H7F4Q[0x4];                                 // 0xc(0x4)
+	class DataAsset*                                             PopUpDesc;                                         // 0x18(0x8)
 };
 
 
-// Size 0x1
-struct KillStreakShowEvent
-{
-public:
-	char                                                         pad0x1_3VFWN[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct DeactivateKillStreakEvent
-{
-public:
-	char                                                         pad0x1_L5SM0[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x28
-struct LootLevelReward
-{
-public:
-	char                                                         LootLevel;                                         // 0x0(0x1)
-	char                                                         pad0x3_TRY2V[0x3];                                 // 0x1(0x3)
-	struct RewardId                                              RewardId;                                          // 0x4(0x8)
-	char                                                         pad0x4_DMCTB[0x4];                                 // 0xc(0x4)
-	TArray<struct FactionServicePopUpData>                       LootLevelPopUpMessageDesc;                         // 0x10(0x10)
-	int                                                          PopUpIndex;                                        // 0x20(0x4)
-	char                                                         pad0x4_48CS9[0x4];                                 // 0x24(0x4)
-};
-
-
-// Size 0x88
-struct CinematicFactionEvent
+// Size 0x18
+struct StreakDynamicMaterials
 {
 public:
 	class UClass*                                                Company;                                           // 0x0(0x8)
-	struct CinematicQuestEvent                                   CinematicData;                                     // 0x8(0x80)
-};
-
-
-// Size 0x8
-struct StreakMaterialValue
-{
-public:
-	int                                                          Streak;                                            // 0x0(0x4)
-	float                                                        Length;                                            // 0x4(0x4)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x8(0x10)
 };
 
 
@@ -178,24 +64,113 @@ public:
 struct FactionBlockedTaleVoteConsensusReached
 {
 public:
-	struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	struct                                                       CrewId;                                            // 0x0(0x10)
 };
 
 
-// Size 0x38
+// Size 0x20
+struct FactionShipSunkUIEvent
+{
+public:
+	char                                                         OpponentFaction;                                   // 0x0(0x1)
+	struct FString                                               ShipName;                                          // 0x8(0x10)
+	int                                                          MyKillStreak;                                      // 0x18(0x4)
+	int                                                          TheirKillStreak;                                   // 0x1c(0x4)
+};
+
+
+// Size 0x88
+struct CinematicFactionEvent
+{
+public:
+	class UClass*                                                Company;                                           // 0x0(0x8)
+	struct                                                       CinematicData;                                     // 0x8(0x80)
+};
+
+
+// Size 0x20
+struct ActivateKillStreakNetworkEvent
+{
+public:
+	char                                                         FactionId;                                         // 0x18(0x1)
+};
+
+
+// Size 0x8
+struct StreakMaterialValue
+{
+public:
+	int                                                          Streak;                                            // 0x0(0x4)
+	float                                                        Length;                                            // 0x4(0x4)
+};
+
+
+// Size 0x8
+struct FactionBlockedTaleVoteAdded
+{
+public:
+	class Actor*                                                 Voter;                                             // 0x0(0x8)
+};
+
+
+// Size 0x20
+struct FactionVoteAdded
+{
+public:
+	class Actor*                                                 Voter;                                             // 0x0(0x8)
+	struct                                                       CrewId;                                            // 0x8(0x10)
+	bool                                                         VotePassed;                                        // 0x18(0x1)
+};
+
+
+// Size 0x20
+struct FactionRequest
+{
+public:
+	class UClass*                                                Faction;                                           // 0x0(0x8)
+};
+
+
+// Size 0x10
+struct StreakMesh
+{
+public:
+	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
+	char                                                         PartType;                                          // 0x8(0x1)
+};
+
+
+// Size 0x10
+struct FactionStreakData
+{
+public:
+	class UClass*                                                Faction;                                           // 0x0(0x8)
+	int                                                          StreakLevel;                                       // 0x8(0x4)
+};
+
+
+// Size 0x28
+struct LootLevelReward
+{
+public:
+	char                                                         LootLevel;                                         // 0x0(0x1)
+	struct                                                       RewardId;                                          // 0x4(0x8)
+	TArray<struct FactionServicePopUpData>                       LootLevelPopUpMessageDesc;                         // 0x10(0x10)
+	int                                                          PopUpIndex;                                        // 0x20(0x4)
+};
+
+
+// Size 0x40
 struct FactionShipSunkNetworkEvent
 {
 public:
-	char                                                         pad0x10_B728K[0x10];                               // 0x0(0x10)
-	char                                                         OpponentFaction;                                   // 0x10(0x1)
-	char                                                         pad0x3_QXZ7R[0x3];                                 // 0x11(0x3)
-	struct Guid                                                  OpponentCrewId;                                    // 0x14(0x10)
-	int                                                          MyKillStreak;                                      // 0x24(0x4)
-	int                                                          TheirKillStreak;                                   // 0x28(0x4)
-	int                                                          SandsOfFateBefore;                                 // 0x2c(0x4)
-	int                                                          SandsOfFateAfter;                                  // 0x30(0x4)
-	bool                                                         IsIntraFactionBattle;                              // 0x34(0x1)
-	char                                                         pad0x3_ZVUFG[0x3];                                 // 0x35(0x3)
+	char                                                         OpponentFaction;                                   // 0x18(0x1)
+	struct                                                       OpponentCrewId;                                    // 0x1c(0x10)
+	int                                                          MyKillStreak;                                      // 0x2c(0x4)
+	int                                                          TheirKillStreak;                                   // 0x30(0x4)
+	int                                                          SandsOfFateBefore;                                 // 0x34(0x4)
+	int                                                          SandsOfFateAfter;                                  // 0x38(0x4)
+	bool                                                         IsIntraFactionBattle;                              // 0x3c(0x1)
 };
 
 
@@ -206,36 +181,6 @@ public:
 	int                                                          HourGlassPreValue;                                 // 0x0(0x4)
 	int                                                          HourGlassPostValue;                                // 0x4(0x4)
 	int                                                          HourGlassIncrement;                                // 0x8(0x4)
-};
-
-
-// Size 0xa0
-struct FactionDisplayInfo
-{
-public:
-	class UClass*                                                Faction;                                           // 0x0(0x8)
-	struct FText                                                 Title;                                             // 0x8(0x38)
-	struct FText                                                 Description;                                       // 0x40(0x38)
-	struct Vector2D                                              CardOffset;                                        // 0x78(0x8)
-	struct StringAssetReference                                  KeyArt;                                            // 0x80(0x10)
-	struct StringAssetReference                                  Icon;                                              // 0x90(0x10)
-};
-
-
-// Size 0x1
-struct KillStreakHideEvent
-{
-public:
-	char                                                         pad0x1_VXCAZ[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x18
-struct StreakDynamicMaterials
-{
-public:
-	class UClass*                                                Company;                                           // 0x0(0x8)
-	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x8(0x10)
 };
 
 

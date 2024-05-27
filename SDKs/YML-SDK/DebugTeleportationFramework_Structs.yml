@@ -9,17 +9,13 @@ DebugTeleportDestinationEntry:
   - Name: Destination
     Offset: '0x10'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: AssociatedCrew
     Offset: '0x1c'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: Id
     Offset: '0x2c'
     Size: '0x10'
-    Type: struct Guid
-  - Name: pad0x4_YA3BE[0x4]
-    Offset: '0x3c'
-    Size: '0x4'
-    Type: char
+    Type: struct
   ClassSize: '0x40'

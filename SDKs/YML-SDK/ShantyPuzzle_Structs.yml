@@ -12,7 +12,7 @@ ShantyPuzzleInteractionZoneDefinition:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: Radius
     Offset: '0xc'
     Size: '0x4'
@@ -21,10 +21,6 @@ ShantyPuzzleInteractionZoneDefinition:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_6INBP[0x3]
-    Offset: '0x11'
-    Size: '0x3'
-    Type: char
   - Name: RequiredNumInteractors
     Offset: '0x14'
     Size: '0x4'
@@ -54,10 +50,6 @@ ShantyPuzzleSingleInteractionZoneStopInteractingEvent:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_CYZSW[0x4]
-    Offset: '0xc'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x10'
 ShantyPuzzleSingleInteractionZoneUnlockEvent:
   Attributes:
@@ -69,22 +61,4 @@ ShantyPuzzleSingleInteractionZoneUnlockEvent:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_442A0[0x4]
-    Offset: '0xc'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x10'
-ShantyPuzzleUnlockCanceledEvent:
-  Attributes:
-  - Name: pad0x1_P9KQH[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
-ShantyPuzzleUnlockedCompleteEvent:
-  Attributes:
-  - Name: pad0x1_ELMKU[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'

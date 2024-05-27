@@ -1,43 +1,10 @@
 {
-  "CaptureProtocolID": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Identifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CaptureResolution": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_MENDK[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CompositionGraphCapturePasses": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Value",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "MovieSceneCaptureSettings": {
     "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "OutputDirectory",
-        "Type": "struct DirectoryPath",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -46,12 +13,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_O8OQ6[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
       },
       {
         "Name": "GameModeOverride",
@@ -78,12 +39,6 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x2_QG1XS[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x32"
-      },
-      {
         "Name": "HandleFrames",
         "Type": "int",
         "Size": "0x4",
@@ -96,12 +51,6 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_IV5XN[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x39"
-      },
-      {
         "Name": "FrameRate",
         "Type": "int",
         "Size": "0x4",
@@ -109,7 +58,7 @@
       },
       {
         "Name": "Resolution",
-        "Type": "struct CaptureResolution",
+        "Type": "struct",
         "Size": "0x8",
         "Offset": "0x40"
       },
@@ -154,12 +103,45 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x4e"
+      }
+    ]
+  },
+  "CompositionGraphCapturePasses": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Value",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CaptureProtocolID": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Identifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CaptureResolution": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ResX",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x0"
       },
       {
-        "Name": "pad0x1_MBUNM[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x4f"
+        "Name": "ResY",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },

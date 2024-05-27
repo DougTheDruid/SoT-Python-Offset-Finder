@@ -6,10 +6,6 @@ CreateMysteriousNoteGameServerRequestModel:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_A00PR[0x4]
-    Offset: '0x4'
-    Size: '0x4'
-    Type: char
   - Name: NoteType
     Offset: '0x8'
     Size: '0x10'
@@ -26,10 +22,6 @@ CreateMysteriousNoteGameServerRequestModel:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_FY3RF[0x7]
-    Offset: '0x39'
-    Size: '0x7'
-    Type: char
   ClassSize: '0x40'
 CreateMysteriousNoteGameServerResponseModel:
   Attributes:
@@ -37,14 +29,10 @@ CreateMysteriousNoteGameServerResponseModel:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_1WDHX[0x3]
-    Offset: '0x1'
-    Size: '0x3'
-    Type: char
   - Name: NoteId
     Offset: '0x4'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x14'
 CustomPlayerNoteList:
   Attributes:
@@ -62,5 +50,5 @@ DestroyMysteriousNoteGameServerRequestModel:
   - Name: NoteGUID
     Offset: '0x4'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x14'

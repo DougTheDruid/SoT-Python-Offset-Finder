@@ -19,12 +19,6 @@
         "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x20_5CHA2[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x28"
       }
     ]
   },

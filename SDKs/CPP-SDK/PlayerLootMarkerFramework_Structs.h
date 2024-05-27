@@ -6,21 +6,21 @@
 
 
 // Size 0x20
-struct PlayerLootMarkerTelemetryEvent
+struct PlayerLootMarkerWorldEdgeBatchData
 {
 public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
-	int                                                          ItemCount;                                         // 0xc(0x4)
-	TArray<String>                                               LootTypes;                                         // 0x10(0x10)
+	struct                                                       BatchId;                                           // 0x0(0x10)
+	TArray<uintptr_t>                                            Actors;                                            // 0x10(0x10)
 };
 
 
 // Size 0x20
-struct PlayerLootMarkerWorldEdgeBatchData
+struct PlayerLootMarkerTelemetryEvent
 {
 public:
-	struct Guid                                                  BatchId;                                           // 0x0(0x10)
-	TArray<uintptr_t>                                            Actors;                                            // 0x10(0x10)
+	struct                                                       Location;                                          // 0x0(0xc)
+	int                                                          ItemCount;                                         // 0xc(0x4)
+	TArray<String>                                               LootTypes;                                         // 0x10(0x10)
 };
 
 

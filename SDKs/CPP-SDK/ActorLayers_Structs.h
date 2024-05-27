@@ -12,7 +12,6 @@ public:
 	class LayerActorsDataAsset*                                  LayerActors;                                       // 0x0(0x8)
 	TArray<struct Transform>                                     ActorTransforms;                                   // 0x8(0x10)
 	TArray<class Actor*>                                         SpawnedActors;                                     // 0x18(0x10)
-	char                                                         pad0x20_5CHA2[0x20];                               // 0x28(0x20)
 };
 
 

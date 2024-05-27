@@ -5,6 +5,17 @@
 
 
 
+// Size 0x30
+struct MediaPlayerOptions
+{
+public:
+	struct                                                       Tracks;                                            // 0x0(0x1c)
+	struct                                                       SeekTime;                                          // 0x20(0x8)
+	char                                                         PlayOnOpen;                                        // 0x28(0x1)
+	char                                                         Loop;                                              // 0x29(0x1)
+};
+
+
 // Size 0x1c
 struct MediaPlayerTrackOptions
 {
@@ -16,19 +27,6 @@ public:
 	int                                                          Subtitle;                                          // 0x10(0x4)
 	int                                                          Text;                                              // 0x14(0x4)
 	int                                                          Video;                                             // 0x18(0x4)
-};
-
-
-// Size 0x30
-struct MediaPlayerOptions
-{
-public:
-	struct MediaPlayerTrackOptions                               Tracks;                                            // 0x0(0x1c)
-	char                                                         pad0x4_D2CVZ[0x4];                                 // 0x1c(0x4)
-	struct Timespan                                              SeekTime;                                          // 0x20(0x8)
-	char                                                         PlayOnOpen;                                        // 0x28(0x1)
-	char                                                         Loop;                                              // 0x29(0x1)
-	char                                                         pad0x6_FQO9W[0x6];                                 // 0x2a(0x6)
 };
 
 

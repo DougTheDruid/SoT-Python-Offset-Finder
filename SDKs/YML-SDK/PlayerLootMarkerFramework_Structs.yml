@@ -5,7 +5,7 @@ PlayerLootMarkerTelemetryEvent:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct Vector
+    Type: struct
   - Name: ItemCount
     Offset: '0xc'
     Size: '0x4'
@@ -20,7 +20,7 @@ PlayerLootMarkerWorldEdgeBatchData:
   - Name: BatchId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   - Name: Actors
     Offset: '0x10'
     Size: '0x10'

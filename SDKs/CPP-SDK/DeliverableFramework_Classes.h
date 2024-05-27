@@ -6,11 +6,28 @@
 #include "DeliverableFramework_Structs.h"
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class DeliverableRequirementBase: public Object
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class DeliverableRequirementsDataAsset: public DataAsset
 {
 public:
-	char                                                         pad0x8_LNBEK[0x8];                                 // 0x28(0x8)
+	TArray<class DeliverableRequirementBase*>                    Requirements;                                      // 0x28(0x10)
+	struct                                                       FeatureOverrideRequirements;                       // 0x38(0x18)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class DeliverableRedirectionCompositeContext: public DeliverableRedirectionContextBase
+{
+public:
+	TArray<class DeliverableRedirectionContextBase*>             Contexts;                                          // 0x28(0x10)
+};
+
+
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+class DeliverableRedirectionComponent: public ActorComponent
+{
+public:
+	class DeliverableRedirectionContextBase*                     Context;                                           // 0xd0(0x8)
 };
 
 
@@ -18,30 +35,7 @@ public:
 class DeliverableComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x10_8RYC8[0x10];                               // 0xc8(0x10)
 	class DeliverableRequirementsDataAsset*                      DeliveryRequirementsAsset;                         // 0xd8(0x8)
-	char                                                         pad0x8_B0Y07[0x8];                                 // 0xe0(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DeliverableRedirectionInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DeliverableInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DeliverableTooltipCustomizerInterface: public Interface
-{
-public:
 };
 
 
@@ -53,59 +47,11 @@ public:
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class DeliverableRequirementsDataAsset: public DataAsset
-{
-public:
-	TArray<class DeliverableRequirementBase*>                    Requirements;                                      // 0x28(0x10)
-	struct DeliverableRequirementFeatureOverride                 FeatureOverrideRequirements;                       // 0x38(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DeliverableRedirectionDestinationDescriptorBase: public Object
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
-class DeliverableRedirectionComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_TWQ5I[0x8];                                 // 0xc8(0x8)
-	class DeliverableRedirectionContextBase*                     Context;                                           // 0xd0(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DeliverableRedirectionContextBase: public Object
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DeliverableRedirectionNoContext: public DeliverableRedirectionContextBase
-{
-public:
-};
-
-
 // Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
 class DeliverableRedirectionLiteralDestinationDescriptor: public DeliverableRedirectionDestinationDescriptorBase
 {
 public:
 	struct FText                                                 Destination;                                       // 0x28(0x38)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class DeliverableRedirectionCompositeContext: public DeliverableRedirectionContextBase
-{
-public:
-	TArray<class DeliverableRedirectionContextBase*>             Contexts;                                          // 0x28(0x10)
-	char                                                         pad0x18_F7I76[0x18];                               // 0x38(0x18)
 };
 
 

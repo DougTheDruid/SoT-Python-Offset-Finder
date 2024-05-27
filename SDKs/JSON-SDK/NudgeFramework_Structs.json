@@ -31,12 +31,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x7_7V9EY[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x19"
       }
     ]
   },
@@ -44,34 +38,16 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_Z55CY[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
         "Name": "TrinketRoot",
         "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x10_WWR1T[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
         "Name": "Curve",
         "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x8_UKG6N[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
       }
     ]
   },

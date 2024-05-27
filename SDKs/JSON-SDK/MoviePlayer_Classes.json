@@ -18,12 +18,6 @@
         "Offset": "0x29"
       },
       {
-        "Name": "pad0x6_17UIV[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x2a"
-      },
-      {
         "Name": "StartupMovies",
         "Type": "TArray<String>",
         "Size": "0x10",

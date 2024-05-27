@@ -1,24 +1,17 @@
 {
-  "FuseInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ExplosionReceiverInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ExplosionInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "CreateActorInstanceOnExplodeComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x138",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "ActorToInstance",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      }
+    ]
   },
   "StatusResponseExplodeAfterTime": {
     "Super": "StatusResponse",
@@ -39,50 +32,10 @@
         "Offset": "0x34"
       },
       {
-        "Name": "pad0x8_EBC01[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
         "Name": "CachedWorld",
         "Type": "class World*",
         "Size": "0x8",
         "Offset": "0x40"
-      }
-    ]
-  },
-  "ExplosiveComponentInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleQuestFuseFunctionLibrary": {
-    "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x180",
-    "InheritedSize": "0x180",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CreateActorInstanceOnExplodeComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x138",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "ActorToInstance",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x68_AY66P[0x68]",
-        "Type": "char",
-        "Size": "0x68",
-        "Offset": "0xd0"
       }
     ]
   },

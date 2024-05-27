@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "Description",
-        "Type": "struct TreasureMapTextDesc",
+        "Type": "struct",
         "Size": "0x48",
         "Offset": "0x0"
       },
@@ -13,12 +13,40 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x48"
+      }
+    ]
+  },
+  "ChecklistCompletionEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ActionData",
+        "Type": "class ChecklistActionData*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ChecklistItemCompletedTelemetryEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ChecklistMapId",
+        "Type": "struct",
+        "Size": "0x10",
+        "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_5UFK4[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x49"
+        "Name": "ReceivedActionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ActionDescryption",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
       }
     ]
   },
@@ -39,17 +67,6 @@
       }
     ]
   },
-  "ChecklistCompletionEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ActionData",
-        "Type": "class ChecklistActionData*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "ChecklistItem": {
     "ClassSize": "0x50",
     "Attributes": [
@@ -66,56 +83,10 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_D5XTL[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
         "Name": "ActionData",
         "Type": "TArray<class ChecklistActionData*>",
         "Size": "0x10",
         "Offset": "0x40"
-      }
-    ]
-  },
-  "ChecklistItemCompletedTelemetryEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "ChecklistMapId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ReceivedActionType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_POAS2[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "ActionDescryption",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "CompleteEntireChecklistEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_Z227U[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -124,13 +95,13 @@
     "Attributes": [
       {
         "Name": "Title",
-        "Type": "struct TreasureMapTextDesc",
+        "Type": "struct",
         "Size": "0x48",
         "Offset": "0x0"
       },
       {
         "Name": "Description",
-        "Type": "struct TreasureMapTextDesc",
+        "Type": "struct",
         "Size": "0x48",
         "Offset": "0x48"
       },
@@ -142,7 +113,7 @@
       },
       {
         "Name": "Afternote",
-        "Type": "struct TreasureMapTextDesc",
+        "Type": "struct",
         "Size": "0x48",
         "Offset": "0xa0"
       }

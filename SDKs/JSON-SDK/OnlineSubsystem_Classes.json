@@ -1,37 +1,4 @@
 {
-  "DefaultOnlineEnvironmentSettings": {
-    "Super": "Object",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "EnvironmentId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ServiceConfigId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "ClientCertificateThumbprint",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x50"
-      }
-    ]
-  },
-  "TurnBasedMatchInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "NamedInterfaces": {
     "Super": "Object",
     "FullSize": "0x60",
@@ -49,12 +16,38 @@
         "Type": "TArray<struct NamedInterfaceDef>",
         "Size": "0x10",
         "Offset": "0x38"
+      }
+    ]
+  },
+  "DefaultOnlineEnvironmentSettings": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "EnvironmentId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
       },
       {
-        "Name": "pad0x18_J177B[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x48"
+        "Name": "TitleId",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "ServiceConfigId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "ClientCertificateThumbprint",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x50"
       }
     ]
   },

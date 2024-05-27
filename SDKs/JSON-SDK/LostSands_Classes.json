@@ -6,12 +6,6 @@
     "ClassSize": "0x240",
     "Attributes": [
       {
-        "Name": "pad0xb8_K7DMN[0xb8]",
-        "Type": "char",
-        "Size": "0xb8",
-        "Offset": "0x3c8"
-      },
-      {
         "Name": "ActionRulesComponent",
         "Type": "class ActionRulesComponent*",
         "Size": "0x8",
@@ -84,6 +78,12 @@
         "Offset": "0x538"
       },
       {
+        "Name": "RangeReferenceNamedPointActor",
+        "Type": "assetobject",
+        "Size": "0x20",
+        "Offset": "0x540"
+      },
+      {
         "Name": "DistanceFromNamedPoints",
         "Type": "TArray<float>",
         "Size": "0x10",
@@ -91,21 +91,15 @@
       },
       {
         "Name": "RowboatDestroyedAtGoldenSandsStat",
-        "Type": "struct PlayerStat",
+        "Type": "struct",
         "Size": "0x4",
         "Offset": "0x570"
       },
       {
         "Name": "RowboatDestroyedAwayFromGoldenSandsStat",
-        "Type": "struct PlayerStat",
+        "Type": "struct",
         "Size": "0x4",
         "Offset": "0x574"
-      },
-      {
-        "Name": "pad0x90_ZEPGT[0x90]",
-        "Type": "char",
-        "Size": "0x90",
-        "Offset": "0x578"
       }
     ]
   },

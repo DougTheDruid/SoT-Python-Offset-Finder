@@ -9,23 +9,12 @@
 struct ProceduralFoliageInstance
 {
 public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
-	char                                                         pad0x4_ZCVRE[0x4];                                 // 0xc(0x4)
-	struct Quat                                                  Rotation;                                          // 0x10(0x10)
-	struct Vector                                                Normal;                                            // 0x20(0xc)
+	struct                                                       Location;                                          // 0x0(0xc)
+	struct                                                       Rotation;                                          // 0x10(0x10)
+	struct                                                       Normal;                                            // 0x20(0xc)
 	float                                                        Age;                                               // 0x2c(0x4)
 	float                                                        Scale;                                             // 0x30(0x4)
-	char                                                         pad0x4_AKX41[0x4];                                 // 0x34(0x4)
 	class FoliageType_InstancedStaticMesh*                       Type;                                              // 0x38(0x8)
-	char                                                         pad0x20_YIVC4[0x20];                               // 0x40(0x20)
-};
-
-
-// Size 0x1
-struct ConsoleCommands
-{
-public:
-	char                                                         pad0x1_ZO972[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -36,7 +25,6 @@ public:
 	class Object*                                                FoliageTypeObject;                                 // 0x0(0x8)
 	class FoliageType_InstancedStaticMesh*                       TypeInstance;                                      // 0x8(0x8)
 	bool                                                         bIsAsset;                                          // 0x10(0x1)
-	char                                                         pad0x7_UI7GA[0x7];                                 // 0x11(0x7)
 	class UClass*                                                Type;                                              // 0x18(0x8)
 };
 

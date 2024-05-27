@@ -1,76 +1,57 @@
 {
-  "KnockbackInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "KnockbackColliderComponent": {
     "Super": "BoxComponent",
-    "FullSize": "0x670",
-    "InheritedSize": "0x5f0",
+    "FullSize": "0x680",
+    "InheritedSize": "0x600",
     "ClassSize": "0x80",
     "Attributes": [
       {
         "Name": "SolidCollisionProfile",
-        "Type": "struct CollisionProfileName",
+        "Type": "struct",
         "Size": "0x8",
-        "Offset": "0x5e8"
+        "Offset": "0x5f8"
       },
       {
         "Name": "KnockbackTraceProfile",
-        "Type": "struct CollisionProfileName",
+        "Type": "struct",
         "Size": "0x8",
-        "Offset": "0x5f0"
+        "Offset": "0x600"
       },
       {
         "Name": "KnockbackType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x5f8"
-      },
-      {
-        "Name": "pad0x3_HU654[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5f9"
+        "Offset": "0x608"
       },
       {
         "Name": "KnockbackParams",
-        "Type": "struct KnockBackInfo",
+        "Type": "struct",
         "Size": "0x50",
-        "Offset": "0x5fc"
+        "Offset": "0x60c"
+      },
+      {
+        "Name": "ActorToTarget",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x65c"
       },
       {
         "Name": "KnockbackDamageType",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x658"
+        "Offset": "0x668"
       },
       {
         "Name": "KnockbackInterval",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x660"
-      },
-      {
-        "Name": "pad0x4_DB68Y[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x664"
+        "Offset": "0x670"
       },
       {
         "Name": "SolidState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x668"
-      },
-      {
-        "Name": "pad0x7_71HS0[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x669"
+        "Offset": "0x678"
       }
     ]
   },

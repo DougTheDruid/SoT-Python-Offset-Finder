@@ -14,27 +14,6 @@ EventAthenaLoadingScreenBlockUntilUIIntialisedClear:
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x10'
-EventAthenaLoadingScreenClose:
-  Attributes:
-  - Name: pad0x1_WH98M[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
-EventAthenaLoadingScreenOpen:
-  Attributes:
-  - Name: pad0x1_8F7TL[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
-EventAthenaLoadingScreenStateRequest:
-  Attributes:
-  - Name: pad0x1_UN6WR[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
 EventAthenaLoadingScreenStateResponse:
   Attributes:
   - Name: IsVisible
@@ -67,19 +46,15 @@ SlateLoadingScreenAdvancedTipDescription:
   - Name: Font
     Offset: '0x48'
     Size: '0x40'
-    Type: struct SlateFontInfo
+    Type: struct
   - Name: Colour
     Offset: '0x88'
     Size: '0x30'
-    Type: struct SlateColor
+    Type: struct
   - Name: LineHeightPercentage
     Offset: '0xb8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_0EWP7[0x4]
-    Offset: '0xbc'
-    Size: '0x4'
-    Type: char
   ClassSize: '0xc0'
 SlateLoadingScreenAdvancedTipsParams:
   Attributes:
@@ -93,7 +68,7 @@ SlateLoadingScreenImageParams:
   - Name: ImageAsset
     Offset: '0x0'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: ImageTips
     Offset: '0x10'
     Size: '0x10'
@@ -101,5 +76,5 @@ SlateLoadingScreenImageParams:
   - Name: AdvancedTips
     Offset: '0x20'
     Size: '0x10'
-    Type: struct SlateLoadingScreenAdvancedTipsParams
+    Type: struct
   ClassSize: '0x30'

@@ -14,14 +14,6 @@ public:
 };
 
 
-// Size 0x1
-struct DebugErrorHappeningEvent
-{
-public:
-	char                                                         pad0x1_BWTPI[0x1];                                 // 0x0(0x1)
-};
-
-
 // Size 0x40
 struct DebugMenuButtonShortcut
 {
@@ -31,7 +23,6 @@ public:
 	TArray<struct Key>                                           Buttons;                                           // 0x20(0x10)
 	float                                                        RequiredHoldTime;                                  // 0x30(0x4)
 	bool                                                         AvailableInShippingBuilds;                         // 0x34(0x1)
-	char                                                         pad0xb_BEDHC[0xb];                                 // 0x35(0xb)
 };
 
 
@@ -45,7 +36,6 @@ public:
 	bool                                                         CloseMenuWhenExecuted;                             // 0x30(0x1)
 	bool                                                         AvailableInShippingBuilds;                         // 0x31(0x1)
 	bool                                                         AddToCommonlyUsedMenu;                             // 0x32(0x1)
-	char                                                         pad0x5_7MA1U[0x5];                                 // 0x33(0x5)
 };
 
 

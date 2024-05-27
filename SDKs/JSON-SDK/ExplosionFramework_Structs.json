@@ -1,4 +1,15 @@
 {
+  "EventAffectedByExplosion": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "DamagerType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EventExplosionIgnitedActor": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -6,17 +17,6 @@
         "Name": "IgnitedActor",
         "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventOnExploded": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "pad0xc_1DKBP[0xc]",
-        "Type": "char",
-        "Size": "0xc",
         "Offset": "0x0"
       }
     ]
@@ -32,20 +32,20 @@
       }
     ]
   },
-  "EventAffectedByExplosion": {
-    "ClassSize": "0x18",
+  "EventOnExploded": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "DamagerType",
-        "Type": "class UClass*",
+        "Name": "RootInstigator",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x10_5ILU0[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x8"
+        "Name": "ImpactProjectileId",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x18"
       }
     ]
   },

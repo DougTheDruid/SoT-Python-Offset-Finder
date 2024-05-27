@@ -1,17 +1,31 @@
 {
-  "ShipDamagerType": {
-    "Super": "DamagerType",
-    "FullSize": "0x28",
+  "LevelOfDamagePropertiesDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "LevelOfDamageProperties",
+        "Type": "TArray<struct LevelOfDamageProperties>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
   },
-  "LandscapeDamagerType": {
-    "Super": "DamagerType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "GenericShipDamageablePart": {
+    "Super": "Actor",
+    "FullSize": "0x3e8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ShipDamageableComponent",
+        "Type": "class ShipDamageableComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      }
+    ]
   },
   "ShipPartsDamageTrackerComponent": {
     "Super": "ActorComponent",
@@ -24,94 +38,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x4_XE4MP[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xcc"
-      }
-    ]
-  },
-  "StrainDamagerType": {
-    "Super": "DamagerType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "GenericShipDamageablePart": {
-    "Super": "Actor",
-    "FullSize": "0x3e8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x8_03YFQ[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "ShipDamageableComponent",
-        "Type": "class ShipDamageableComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "pad0x10_WB0FH[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x3d8"
-      }
-    ]
-  },
-  "StormDamageParamsHandlerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ShipDamagePartInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DamageablePartsInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "HullDamageInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "HullDamageProviderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "LevelOfDamagePropertiesDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "LevelOfDamageProperties",
-        "Type": "TArray<struct LevelOfDamageProperties>",
-        "Size": "0x10",
-        "Offset": "0x28"
       }
     ]
   },
@@ -128,14 +54,8 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_WJVZT[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "pad0x8_O5J61[0x8]",
-        "Type": "char",
+        "Name": "RestorationCooldown",
+        "Type": "uint64",
         "Size": "0x8",
         "Offset": "0x40"
       }

@@ -2,34 +2,26 @@
 # https://github.com/DougTheDruid
 WwiseAudioSettings:
   Attributes:
-  - Name: pad0xc0_VBEQF[0xc0]
-    Offset: '0x28'
-    Size: '0xc0'
-    Type: char
   - Name: PlatformMappings
     Offset: '0xe8'
     Size: '0x20'
-    Type: struct WwisePlatformMappings
+    Type: struct
   - Name: ReverbPresetSettings
     Offset: '0x108'
     Size: '0x64'
-    Type: struct WwiseAudioReverbPresets
-  - Name: pad0x4_2DH3P[0x4]
-    Offset: '0x16c'
-    Size: '0x4'
-    Type: char
+    Type: struct
   - Name: WwiseCoreAssetsPath
     Offset: '0x170'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: WwiseSoundbanksRoot
     Offset: '0x180'
     Size: '0x10'
-    Type: struct DirectoryPath
+    Type: struct
   - Name: WwiseStreamedFilesRoot
     Offset: '0x190'
     Size: '0x10'
-    Type: struct DirectoryPath
+    Type: struct
   - Name: AsyncIOPriorityMappings
     Offset: '0x1a0'
     Size: '0x10'
@@ -37,7 +29,7 @@ WwiseAudioSettings:
   - Name: TritonAcousticMapsDirectory
     Offset: '0x1b0'
     Size: '0x10'
-    Type: struct DirectoryPath
+    Type: struct
   - Name: DefaultLanguage
     Offset: '0x1c0'
     Size: '0x10'
@@ -49,22 +41,16 @@ WwiseAudioSettings:
   - Name: NetworkRelationship
     Offset: '0x1e0'
     Size: '0x18'
-    Type: struct WwiseNetworkRelationship
+    Type: struct
+  - Name: WaapiInterpreterPort
+    Offset: '0x1f8'
+    Size: '0x4'
+    Type: uint32
   - Name: WwiseCoreAssets
     Offset: '0x200'
     Size: '0x8'
     Type: class WwiseCoreAssets*
-  - Name: pad0x58_7FA5T[0x58]
-    Offset: '0x208'
-    Size: '0x58'
-    Type: char
   ClassSize: '0x238'
   FullSize: '0x260'
   InheritedSize: '0x28'
   Super: Object
-WwiseSubSystemInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

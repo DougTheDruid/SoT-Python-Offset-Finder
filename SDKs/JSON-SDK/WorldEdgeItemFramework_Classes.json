@@ -6,12 +6,6 @@
     "ClassSize": "0x258",
     "Attributes": [
       {
-        "Name": "pad0x8_ETXGY[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      },
-      {
         "Name": "WorldEdgeItemParameters",
         "Type": "class WorldEdgeItemServiceParams*",
         "Size": "0x8",
@@ -19,24 +13,11 @@
       },
       {
         "Name": "SpawnItemEQSRequest",
-        "Type": "struct EnvQueryRequest",
+        "Type": "struct",
         "Size": "0x170",
         "Offset": "0x3d8"
-      },
-      {
-        "Name": "pad0xd8_6R1VG[0xd8]",
-        "Type": "char",
-        "Size": "0xd8",
-        "Offset": "0x548"
       }
     ]
-  },
-  "WorldEdgeItemServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "WorldEdgeItemServiceParams": {
     "Super": "DataAsset",

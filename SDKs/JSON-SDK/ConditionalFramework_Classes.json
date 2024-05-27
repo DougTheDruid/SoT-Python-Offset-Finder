@@ -7,18 +7,11 @@
     "Attributes": [
       {
         "Name": "ConditionRoot",
-        "Type": "struct ConditionInstance",
+        "Type": "struct",
         "Size": "0x20",
         "Offset": "0x28"
       }
     ]
-  },
-  "ActorSpecifierInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "ActorSpecifierComponent": {
     "Super": "ActorComponent",
@@ -26,12 +19,6 @@
     "InheritedSize": "0xc8",
     "ClassSize": "0x10",
     "Attributes": [
-      {
-        "Name": "pad0x8_DEC8X[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
       {
         "Name": "SpecifiedActor",
         "Type": "class Actor*",

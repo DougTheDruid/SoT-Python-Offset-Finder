@@ -1,30 +1,10 @@
 {
-  "CleanlinessTransferInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CleanlinessInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "CleanlinessComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x148",
     "InheritedSize": "0xc8",
     "ClassSize": "0x80",
     "Attributes": [
-      {
-        "Name": "pad0x10_7IAGR[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      },
       {
         "Name": "DirtinessStrengthToMaterialStrength",
         "Type": "class CurveFloat*",
@@ -33,7 +13,7 @@
       },
       {
         "Name": "CleanlinessInfo",
-        "Type": "struct CleanlinessInfo",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0xe0"
       },
@@ -48,12 +28,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xf0"
-      },
-      {
-        "Name": "pad0x54_JD49Y[0x54]",
-        "Type": "char",
-        "Size": "0x54",
-        "Offset": "0xf4"
       }
     ]
   },

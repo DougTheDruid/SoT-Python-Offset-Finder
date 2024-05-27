@@ -11,17 +11,6 @@ struct MeleeAttackIdWeights
 public:
 	class UClass*                                                MeleeAttackType;                                   // 0x0(0x8)
 	float                                                        Weight;                                            // 0x8(0x4)
-	char                                                         pad0x4_M53HE[0x4];                                 // 0xc(0x4)
-};
-
-
-// Size 0x18
-struct AshenLordFireShroudParams
-{
-public:
-	class UClass*                                                FireShroudZoneClass;                               // 0x0(0x8)
-	struct Vector                                                FireShroudCollisionVolume;                         // 0x8(0xc)
-	char                                                         pad0x4_KFJB7[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -30,7 +19,16 @@ struct AshenLordFireShroud
 {
 public:
 	class StatusEffectOverlapZone*                               FireShroudOverlapZone;                             // 0x0(0x8)
-	struct AshenLordFireShroudParams                             Params;                                            // 0x8(0x18)
+	struct                                                       Params;                                            // 0x8(0x18)
+};
+
+
+// Size 0x18
+struct AshenLordFireShroudParams
+{
+public:
+	class UClass*                                                FireShroudZoneClass;                               // 0x0(0x8)
+	struct                                                       FireShroudCollisionVolume;                         // 0x8(0xc)
 };
 
 

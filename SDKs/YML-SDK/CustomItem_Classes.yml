@@ -2,25 +2,11 @@
 # https://github.com/DougTheDruid
 CustomItemService:
   Attributes:
-  - Name: pad0x8_ESOQ5[0x8]
-    Offset: '0x28'
-    Size: '0x8'
-    Type: char
   - Name: World
     Offset: '0x30'
     Size: '0x8'
     Type: class World*
-  - Name: pad0x18_NURW1[0x18]
-    Offset: '0x38'
-    Size: '0x18'
-    Type: char
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
   Super: Object
-CustomItemServiceInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

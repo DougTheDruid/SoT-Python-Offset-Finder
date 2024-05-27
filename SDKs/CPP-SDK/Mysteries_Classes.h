@@ -6,32 +6,17 @@
 #include "Mysteries_Structs.h"
 
 
-// Size 0xf0 (Full Size[0x4b8] - InheritedSize[0x3c8]
-class SirenPuzzleContext: public Actor
-{
-public:
-	char                                                         pad0x8_GE0YL[0x8];                                 // 0x3c8(0x8)
-	class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
-	TArray<struct SirenPuzzleLockState>                          PuzzleLocks;                                       // 0x3d8(0x10)
-	TArray<struct LandmarkReactionKeyFrame>                      UnlockCompleteReactions;                           // 0x3e8(0x10)
-	TArray<struct LandmarkReactionKeyFrame>                      ResetLocksReactions;                               // 0x3f8(0x10)
-	TArray<char>                                                 LockStates;                                        // 0x408(0x10)
-	char                                                         pad0xa0_2HSHE[0xa0];                               // 0x418(0xa0)
-};
-
-
 // Size 0x80 (Full Size[0x4e8] - InheritedSize[0x468]
 class OneShotRewardableObjectBase: public InteractableObject
 {
 public:
 	class InteractableComponent*                                 InteractableComponent;                             // 0x468(0x8)
 	class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x470(0x8)
-	struct RewardId                                              Reward;                                            // 0x478(0x8)
+	struct                                                       Reward;                                            // 0x478(0x8)
 	class UClass*                                                RewardEntitlement;                                 // 0x480(0x8)
 	float                                                        InteractionHoldTime;                               // 0x488(0x4)
 	float                                                        InteractionRadius;                                 // 0x48c(0x4)
 	struct FText                                                 DisplayName;                                       // 0x490(0x38)
-	char                                                         pad0x20_QQ2AM[0x20];                               // 0x4c8(0x20)
 };
 
 
@@ -40,7 +25,16 @@ class PopUpNotificationOnItemWieldedComponent: public OnItemWieldedComponent
 {
 public:
 	class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x148(0x8)
-	char                                                         pad0x18_4U41W[0x18];                               // 0x150(0x18)
+};
+
+
+// Size 0xe0 (Full Size[0x1a8] - InheritedSize[0xc8]
+class AbandonedNoteWeightedTextSourceComponent: public ActorComponent
+{
+public:
+	assetobject                                                  WeightedText;                                      // 0xe8(0x20)
+	struct FText                                                 ClueText;                                          // 0x108(0x38)
+	struct FText                                                 TitleText;                                         // 0x140(0x38)
 };
 
 
@@ -52,14 +46,15 @@ public:
 };
 
 
-// Size 0xe0 (Full Size[0x1a8] - InheritedSize[0xc8]
-class AbandonedNoteWeightedTextSourceComponent: public ActorComponent
+// Size 0xf0 (Full Size[0x4b8] - InheritedSize[0x3c8]
+class SirenPuzzleContext: public Actor
 {
 public:
-	char                                                         pad0x40_BQWJR[0x40];                               // 0xc8(0x40)
-	struct FText                                                 ClueText;                                          // 0x108(0x38)
-	struct FText                                                 TitleText;                                         // 0x140(0x38)
-	char                                                         pad0x30_JEL9P[0x30];                               // 0x178(0x30)
+	class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
+	TArray<struct SirenPuzzleLockState>                          PuzzleLocks;                                       // 0x3d8(0x10)
+	TArray<struct LandmarkReactionKeyFrame>                      UnlockCompleteReactions;                           // 0x3e8(0x10)
+	TArray<struct LandmarkReactionKeyFrame>                      ResetLocksReactions;                               // 0x3f8(0x10)
+	TArray<char>                                                 LockStates;                                        // 0x408(0x10)
 };
 
 

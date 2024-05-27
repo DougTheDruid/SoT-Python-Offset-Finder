@@ -1,6 +1,23 @@
 {
+  "EmissaryLevelIncreaseOverrideData": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "EnableEmissaryLevelIncreaseOverride",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CustomEmissaryLevelIncrease",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "ComplexItemQualityEntry": {
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "OnTime",
@@ -39,16 +56,16 @@
         "Offset": "0x5"
       },
       {
-        "Name": "pad0x2_P5M0E[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x6"
+        "Name": "EmissaryLevelIncreaseOverride",
+        "Type": "struct",
+        "Size": "0x8",
+        "Offset": "0x8"
       },
       {
         "Name": "Rarity",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x8"
+        "Offset": "0x10"
       }
     ]
   },
@@ -66,12 +83,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_0X12Z[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
       }
     ]
   },

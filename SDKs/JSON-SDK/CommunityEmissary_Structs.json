@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "Story",
-        "Type": "struct StoryFlag",
+        "Type": "struct",
         "Size": "0x8",
         "Offset": "0x0"
       },

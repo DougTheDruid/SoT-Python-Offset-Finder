@@ -6,18 +6,10 @@ ActorSequenceObjectReference:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_HSL0J[0x3]
-    Offset: '0x1'
-    Size: '0x3'
-    Type: char
   - Name: ActorId
     Offset: '0x4'
     Size: '0x10'
-    Type: struct Guid
-  - Name: pad0x4_LWT7U[0x4]
-    Offset: '0x14'
-    Size: '0x4'
-    Type: char
+    Type: struct
   - Name: PathToComponent
     Offset: '0x18'
     Size: '0x10'

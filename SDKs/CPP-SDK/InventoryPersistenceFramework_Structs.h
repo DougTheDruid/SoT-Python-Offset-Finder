@@ -5,14 +5,6 @@
 
 
 
-// Size 0x8
-struct EventPlayerLoggedInPersistence
-{
-public:
-	class Controller*                                            PlayerController;                                  // 0x0(0x8)
-};
-
-
 // Size 0x18
 struct PlayerItemCategorySnapshots
 {
@@ -22,11 +14,11 @@ public:
 };
 
 
-// Size 0x1
-struct EventPlayerPawnLeavingGame
+// Size 0x8
+struct EventPlayerLoggedInPersistence
 {
 public:
-	char                                                         pad0x1_2Y5P2[0x1];                                 // 0x0(0x1)
+	class Controller*                                            PlayerController;                                  // 0x0(0x8)
 };
 
 
@@ -34,8 +26,8 @@ public:
 struct InventoryPersistencePlayerData
 {
 public:
-	struct PirateIdentity                                        PirateIdentity;                                    // 0x0(0x78)
-	struct Guid                                                  PirateCrewId;                                      // 0x78(0x10)
+	struct                                                       PirateIdentity;                                    // 0x0(0x78)
+	struct                                                       PirateCrewId;                                      // 0x78(0x10)
 	TArray<struct PlayerItemCategorySnapshots>                   ItemCategorySnapshots;                             // 0x88(0x10)
 };
 

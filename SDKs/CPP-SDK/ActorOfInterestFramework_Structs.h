@@ -6,14 +6,6 @@
 
 
 // Size 0x10
-struct ActorsOfInterestList
-{
-public:
-	TArray<class Actor*>                                         Actors;                                            // 0x0(0x10)
-};
-
-
-// Size 0x10
 struct ActorOfInterestRegisteredEvent
 {
 public:
@@ -28,6 +20,14 @@ struct ActorOfInterestUnregisteredEvent
 public:
 	class Actor*                                                 ActorOfInterest;                                   // 0x0(0x8)
 	class UClass*                                                ActorOfInterestId;                                 // 0x8(0x8)
+};
+
+
+// Size 0x10
+struct ActorsOfInterestList
+{
+public:
+	TArray<class Actor*>                                         Actors;                                            // 0x0(0x10)
 };
 
 

@@ -1,18 +1,4 @@
 {
-  "SeasonProgressionExclusionInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SeasonSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "SeasonProgressionExclusionComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xd8",
@@ -20,22 +6,10 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_0Q64E[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
         "Name": "ShouldBeExcludedFromSeasonProgessionValue",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xd0"
-      },
-      {
-        "Name": "pad0x7_HQWI1[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xd1"
       }
     ]
   },

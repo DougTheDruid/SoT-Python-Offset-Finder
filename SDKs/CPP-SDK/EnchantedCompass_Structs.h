@@ -5,27 +5,11 @@
 
 
 
-// Size 0x1
-struct RotatingCompassRotationCurveCompletedEvent
-{
-public:
-	char                                                         pad0x1_O21A8[0x1];                                 // 0x0(0x1)
-};
-
-
 // Size 0xc
 struct CompassTargetSet
 {
 public:
-	struct Vector                                                TargetLocation;                                    // 0x0(0xc)
-};
-
-
-// Size 0x1
-struct RotatingCompassSplinePathCompletedEvent
-{
-public:
-	char                                                         pad0x1_LXMZW[0x1];                                 // 0x0(0x1)
+	struct                                                       TargetLocation;                                    // 0x0(0xc)
 };
 
 
@@ -33,7 +17,6 @@ public:
 struct RotatingCompassAudioParams
 {
 public:
-	char                                                         pad0x20_21T6V[0x20];                               // 0x0(0x20)
 	class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x20(0x8)
 	struct FName                                                 EmitterName;                                       // 0x28(0x8)
 	class WwiseEvent*                                            OneShotRotationSfx;                                // 0x30(0x8)

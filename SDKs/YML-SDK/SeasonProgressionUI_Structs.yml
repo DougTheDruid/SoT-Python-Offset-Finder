@@ -13,7 +13,7 @@ DeedProgressDesc:
   - Name: NavigationDesc
     Offset: '0x20'
     Size: '0x14'
-    Type: struct NavigationDesc
+    Type: struct
   - Name: ProgressValue
     Offset: '0x34'
     Size: '0x4'
@@ -22,14 +22,10 @@ DeedProgressDesc:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_3PXY6[0x4]
-    Offset: '0x3c'
-    Size: '0x4'
-    Type: char
   - Name: Audio
     Offset: '0x40'
     Size: '0x40'
-    Type: struct GenericPopupAudioDescriptor
+    Type: struct
   ClassSize: '0x80'
 DisableMoreButtonEvent:
   Attributes:
@@ -44,14 +40,10 @@ EnableMoreButtonEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_BSUOA[0x3]
-    Offset: '0x1'
-    Size: '0x3'
-    Type: char
   - Name: Navigation
     Offset: '0x4'
     Size: '0x14'
-    Type: struct NavigationDesc
+    Type: struct
   ClassSize: '0x18'
 NavigationDesc:
   Attributes:
@@ -59,14 +51,10 @@ NavigationDesc:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_DU9PA[0x3]
-    Offset: '0x1'
-    Size: '0x3'
-    Type: char
   - Name: Id
     Offset: '0x4'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x14'
 OpenSeasonsMenuEvent:
   Attributes:
@@ -74,14 +62,10 @@ OpenSeasonsMenuEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_3OC8W[0x3]
-    Offset: '0x1'
-    Size: '0x3'
-    Type: char
   - Name: Id
     Offset: '0x4'
     Size: '0x10'
-    Type: struct Guid
+    Type: struct
   ClassSize: '0x14'
 SeasonGoalPopupAsset:
   Attributes:
@@ -92,15 +76,15 @@ SeasonGoalPopupAsset:
   - Name: GlowIcon
     Offset: '0x8'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: Icon
     Offset: '0x18'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: ChatIcon
     Offset: '0x28'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: ToastSfxEventName
     Offset: '0x38'
     Size: '0x10'
@@ -121,21 +105,17 @@ SeasonGoalPopupAsset:
     Offset: '0x78'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_DJ9ZR[0x4]
-    Offset: '0x7c'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x80'
 SeasonIconPopupAsset:
   Attributes:
   - Name: GlowIcon
     Offset: '0x0'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: Icon
     Offset: '0x10'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: ToastSfxEventName
     Offset: '0x20'
     Size: '0x10'
@@ -156,21 +136,17 @@ SeasonIconPopupAsset:
     Offset: '0x60'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_SHL5H[0x4]
-    Offset: '0x64'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x68'
 SeasonNotificationContent:
   Attributes:
   - Name: GlowIcon
     Offset: '0x0'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: Icon
     Offset: '0x10'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: SfxEventName
     Offset: '0x20'
     Size: '0x10'
@@ -191,10 +167,6 @@ SeasonNotificationContent:
     Offset: '0x60'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_522J0[0x4]
-    Offset: '0x64'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x68'
 SeasonProgressionUIEventTypeTelemetryFragment:
   Attributes:
@@ -206,10 +178,6 @@ SeasonProgressionUIEventTypeTelemetryFragment:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_UDI72[0x4]
-    Offset: '0x14'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x18'
 SeasonProgressionUITelemetryFragment:
   Attributes:
@@ -221,28 +189,24 @@ SeasonProgressionUITelemetryFragment:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_EZVBN[0x4]
-    Offset: '0x14'
-    Size: '0x4'
-    Type: char
   ClassSize: '0x18'
 SeasonProgressionUITelemetryFragmentInput:
   Attributes:
-  - Name: pad0x8_WK80F[0x8]
+  - Name: PlayerController
     Offset: '0x0'
     Size: '0x8'
-    Type: char
+    Type: class PlayerController*
   ClassSize: '0x8'
 SeasonTextPopupAsset:
   Attributes:
   - Name: GlowIcon
     Offset: '0x0'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: Icon
     Offset: '0x10'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: Message
     Offset: '0x20'
     Size: '0x38'
@@ -267,10 +231,6 @@ SeasonTextPopupAsset:
     Offset: '0x98'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_3CK0C[0x4]
-    Offset: '0x9c'
-    Size: '0x4'
-    Type: char
   ClassSize: '0xa0'
 SeasonsChatNotification:
   Attributes:
@@ -285,33 +245,22 @@ SeasonsChatNotification:
   - Name: Audio
     Offset: '0x20'
     Size: '0x40'
-    Type: struct GenericPopupAudioDescriptor
+    Type: struct
   ClassSize: '0x60'
 SeasonsChatNotificationEvent:
   Attributes:
   - Name: SeasonsChatNotification
     Offset: '0x0'
     Size: '0x60'
-    Type: struct SeasonsChatNotification
+    Type: struct
   ClassSize: '0x60'
 SeasonsChatNotificationNetworkEvent:
   Attributes:
-  - Name: pad0x10_2RF8D[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
   - Name: SeasonsChatNotificationEvent
-    Offset: '0x10'
+    Offset: '0x18'
     Size: '0x60'
-    Type: struct SeasonsChatNotificationEvent
-  ClassSize: '0x70'
-SeasonsDataRefreshEvent:
-  Attributes:
-  - Name: pad0x1_G6MEU[0x1]
-    Offset: '0x0'
-    Size: '0x1'
-    Type: char
-  ClassSize: '0x1'
+    Type: struct
+  ClassSize: '0x78'
 SeasonsPopupEvent:
   Attributes:
   - Name: Text
@@ -329,7 +278,7 @@ SeasonsPopupEvent:
   - Name: Audio
     Offset: '0x30'
     Size: '0x40'
-    Type: struct GenericPopupAudioDescriptor
+    Type: struct
   - Name: StyleModifiers
     Offset: '0x70'
     Size: '0x10'
@@ -341,22 +290,18 @@ SeasonsPopupEvent:
   - Name: NavigationDesc
     Offset: '0x84'
     Size: '0x14'
-    Type: struct NavigationDesc
+    Type: struct
   - Name: HoldDuration
     Offset: '0x98'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_T7K2J[0x4]
-    Offset: '0x9c'
-    Size: '0x4'
-    Type: char
   ClassSize: '0xa0'
 SeasonsTextNotification:
   Attributes:
   - Name: IconUrl
     Offset: '0x0'
     Size: '0x10'
-    Type: struct StringAssetReference
+    Type: struct
   - Name: Message
     Offset: '0x10'
     Size: '0x38'
@@ -364,23 +309,19 @@ SeasonsTextNotification:
   - Name: Audio
     Offset: '0x48'
     Size: '0x40'
-    Type: struct GenericPopupAudioDescriptor
+    Type: struct
   ClassSize: '0x88'
 SeasonsTextNotificationNetworkEvent:
   Attributes:
-  - Name: pad0x10_STBZC[0x10]
-    Offset: '0x0'
-    Size: '0x10'
-    Type: char
   - Name: SeasonsTextNotification
-    Offset: '0x10'
+    Offset: '0x18'
     Size: '0x88'
-    Type: struct SeasonsTextNotification
-  ClassSize: '0x98'
+    Type: struct
+  ClassSize: '0xa0'
 ShowDeedProgressEvent:
   Attributes:
   - Name: DeedProgressDesc
     Offset: '0x0'
     Size: '0x80'
-    Type: struct DeedProgressDesc
+    Type: struct
   ClassSize: '0x80'

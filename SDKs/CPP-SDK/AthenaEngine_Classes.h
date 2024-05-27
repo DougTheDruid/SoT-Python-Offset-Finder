@@ -6,14 +6,12 @@
 #include "AthenaEngine_Structs.h"
 
 
-// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
-class PrimitiveCollisionExtentAdjustOverTimeComponent: public ActorComponent
+// Size 0x130 (Full Size[0x5e0] - InheritedSize[0x4b0]
+class DynamicColourPointLightComponent: public PointLightComponent
 {
 public:
-	float                                                        DelayBeforeExtentAdjustment;                       // 0xc8(0x4)
-	char                                                         pad0x2c_2H1H8[0x2c];                               // 0xcc(0x2c)
-	class World*                                                 CachedWorld;                                       // 0xf8(0x8)
-	char                                                         pad0x8_6ZITW[0x8];                                 // 0x100(0x8)
+	struct                                                       ActivationCurve;                                   // 0x4a8(0x80)
+	struct                                                       DeactivationCurve;                                 // 0x528(0x80)
 };
 
 
@@ -22,7 +20,15 @@ class SkeletalMeshAggregateTickComponent: public ActorComponent
 {
 public:
 	class SkeletalMeshComponent*                                 Mesh;                                              // 0xc8(0x8)
-	char                                                         pad0x28_NUY5E[0x28];                               // 0xd0(0x28)
+};
+
+
+// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
+class PrimitiveCollisionExtentAdjustOverTimeComponent: public ActorComponent
+{
+public:
+	float                                                        DelayBeforeExtentAdjustment;                       // 0xc8(0x4)
+	class World*                                                 CachedWorld;                                       // 0xf8(0x8)
 };
 
 
@@ -35,41 +41,19 @@ public:
 	float                                                        CloseProximityRadius;                              // 0xd8(0x4)
 	bool                                                         Use2DDistanceForCloseProximityRadius;              // 0xdc(0x1)
 	bool                                                         WhenInCloseProximityKeepLastYaw;                   // 0xdd(0x1)
-	char                                                         pad0x2_ZIFF0[0x2];                                 // 0xde(0x2)
 	float                                                        RotationSpeed;                                     // 0xe0(0x4)
 	bool                                                         PreventPitchModification;                          // 0xe4(0x1)
-	char                                                         pad0x3_C6Y96[0x3];                                 // 0xe5(0x3)
 	float                                                        MaxPitch;                                          // 0xe8(0x4)
 	float                                                        CloseProximityYawRotation;                         // 0xec(0x4)
-	char                                                         pad0x8_KJRRV[0x8];                                 // 0xf0(0x8)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class PlayModeInterface: public Interface
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class PersistentAssetCollectionDataAsset: public DataAsset
 {
 public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ResourceProviderInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class OnlinePlayerPermissionsRetrieverInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ForceFeedbackCondition: public Object
-{
-public:
+	TArray<class Class*>                                         Blueprints;                                        // 0x28(0x10)
+	TArray<class DataAsset*>                                     DataAssets;                                        // 0x38(0x10)
 };
 
 
@@ -78,105 +62,6 @@ class StringToAssetClassMap: public DataAsset
 {
 public:
 	TArray<struct StringAssetClassPair>                          StringAssetClassPairs;                             // 0x28(0x10)
-	char                                                         pad0x18_K625I[0x18];                               // 0x38(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameInstanceSessionIdProviderInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AthenaGameStateInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class NestedWorldRootDataAsset: public DataAsset
-{
-public:
-	char                                                         pad0x10_L3F4R[0x10];                               // 0x28(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class EmptyObject: public Object
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AthenaEngineInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class PersistentAssetCollectionDataAsset: public DataAsset
-{
-public:
-	TArray<class Object*>                                        Blueprints;                                        // 0x28(0x10)
-	TArray<class Object*>                                        Assets;                                            // 0x38(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ServicesStampIdInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
-class BoxedRpcDispatcherComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_NG8MT[0x8];                                 // 0xc8(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class BoxedRpcDispatcherInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x130 (Full Size[0x5e0] - InheritedSize[0x4b0]
-class DynamicColourPointLightComponent: public PointLightComponent
-{
-public:
-	struct RuntimeFloatCurve                                     ActivationCurve;                                   // 0x4a8(0x80)
-	struct RuntimeFloatCurve                                     DeactivationCurve;                                 // 0x528(0x80)
-	char                                                         pad0x38_9UZUZ[0x38];                               // 0x5a8(0x38)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class PlayModeHelpers: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SyncedRandomRetrievalInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0xf8] - InheritedSize[0xf8]
-class RotateMeshToLocalPlayerComponent: public RotateMeshToActorComponent
-{
-public:
 };
 
 
@@ -185,10 +70,8 @@ class SphereCollisionExtentAdjustOverTimeComponent: public PrimitiveCollisionExt
 {
 public:
 	bool                                                         ShouldAdjustSphereRadius;                          // 0x108(0x1)
-	char                                                         pad0x3_A3CQL[0x3];                                 // 0x109(0x3)
 	float                                                        PostAdjustmentSphereRadius;                        // 0x10c(0x4)
 	float                                                        ServerSizeScale;                                   // 0x110(0x4)
-	char                                                         pad0x4_OSABZ[0x4];                                 // 0x114(0x4)
 	class SphereComponent*                                       SphereCollisionToAdjust;                           // 0x118(0x8)
 };
 
@@ -198,16 +81,12 @@ class BoxCollisionExtentAdjustOverTimeComponent: public PrimitiveCollisionExtent
 {
 public:
 	bool                                                         ShouldAdjustBoxExtentX;                            // 0x108(0x1)
-	char                                                         pad0x3_26VVC[0x3];                                 // 0x109(0x3)
 	float                                                        PostAdjustmentBoxExtentX;                          // 0x10c(0x4)
 	bool                                                         ShouldAdjustBoxExtentY;                            // 0x110(0x1)
-	char                                                         pad0x3_TLFLG[0x3];                                 // 0x111(0x3)
 	float                                                        PostAdjustmentBoxExtentY;                          // 0x114(0x4)
 	bool                                                         ShouldAdjustBoxExtentZ;                            // 0x118(0x1)
-	char                                                         pad0x3_U7WR9[0x3];                                 // 0x119(0x3)
 	float                                                        PostAdjustmentBoxExtentZ;                          // 0x11c(0x4)
-	struct Vector                                                ServerSizeScale;                                   // 0x120(0xc)
-	char                                                         pad0x4_OU7GD[0x4];                                 // 0x12c(0x4)
+	struct                                                       ServerSizeScale;                                   // 0x120(0xc)
 	class BoxComponent*                                          BoxCollisionToAdjust;                              // 0x130(0x8)
 };
 

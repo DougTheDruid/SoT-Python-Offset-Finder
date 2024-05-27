@@ -5,6 +5,36 @@
 
 
 
+// Size 0x14
+struct RiggingSystemPulleyAttachmentParams
+{
+public:
+	struct                                                       Visuals;                                           // 0x0(0xc)
+	float                                                        Length;                                            // 0xc(0x4)
+	float                                                        Sag;                                               // 0x10(0x4)
+};
+
+
+// Size 0x18
+struct RopeCatenaryShapeParams
+{
+public:
+	struct                                                       Length;                                            // 0x0(0x10)
+	struct                                                       Slope;                                             // 0x10(0x8)
+};
+
+
+// Size 0x50
+struct RiggingSystemPulleyParams
+{
+public:
+	struct                                                       Anchor;                                            // 0x0(0x20)
+	float                                                        OffsetFromAnchor;                                  // 0x20(0x4)
+	struct                                                       Visuals;                                           // 0x28(0x10)
+	struct                                                       AttachmentRope;                                    // 0x38(0x14)
+};
+
+
 // Size 0x60
 struct RiggingSystemPulleyData
 {
@@ -18,34 +48,23 @@ public:
 };
 
 
-// Size 0x8
-struct RopeCatenaryLengthPair
-{
-public:
-	float                                                        Taut;                                              // 0x0(0x4)
-	float                                                        Catenary;                                          // 0x4(0x4)
-};
-
-
 // Size 0x10
-struct PulleyVisualParams
+struct RiggingSystemLine
 {
 public:
-	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
-	float                                                        Scale;                                             // 0x8(0x4)
-	float                                                        Radius;                                            // 0xc(0x4)
+	uint32                                                       RopeStart;                                         // 0x0(0x4)
+	uint32                                                       SocketStart;                                       // 0x4(0x4)
+	uint32                                                       PulleyStart;                                       // 0x8(0x4)
+	uint32                                                       NumRopes;                                          // 0xc(0x4)
 };
 
 
-// Size 0x20
-struct RopeStyleParams
+// Size 0x8
+struct RopeCatenarySwingParams
 {
 public:
-	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
-	class Texture2D*                                             DiffuseTexture;                                    // 0x8(0x8)
-	class Texture2D*                                             NormalTexture;                                     // 0x10(0x8)
-	int                                                          ShadowLOD;                                         // 0x18(0x4)
-	char                                                         pad0x4_08BIC[0x4];                                 // 0x1c(0x4)
+	float                                                        LengthForNeutralSwing;                             // 0x0(0x4)
+	float                                                        LengthBias;                                        // 0x4(0x4)
 };
 
 
@@ -60,6 +79,53 @@ public:
 };
 
 
+// Size 0x54
+struct InstancedRopeParams
+{
+public:
+	struct                                                       Start;                                             // 0x0(0xc)
+	struct                                                       End;                                               // 0xc(0xc)
+	float                                                        Thickness;                                         // 0x18(0x4)
+	float                                                        UVScale;                                           // 0x1c(0x4)
+	float                                                        UVBase;                                            // 0x20(0x4)
+	float                                                        UVOffset;                                          // 0x24(0x4)
+	float                                                        Roughness;                                         // 0x28(0x4)
+	struct                                                       Shape;                                             // 0x2c(0x18)
+	struct                                                       Swing;                                             // 0x44(0x8)
+	struct                                                       Dynamics;                                          // 0x4c(0x8)
+};
+
+
+// Size 0x20
+struct RopeStyleParams
+{
+public:
+	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
+	class Texture2D*                                             DiffuseTexture;                                    // 0x8(0x8)
+	class Texture2D*                                             NormalTexture;                                     // 0x10(0x8)
+	int                                                          ShadowLOD;                                         // 0x18(0x4)
+};
+
+
+// Size 0x8
+struct RopeCatenaryDynamicsParams
+{
+public:
+	float                                                        CatenaryToTautLengthRatioToConsiderCatenary;       // 0x0(0x4)
+	bool                                                         ReactsToWind;                                      // 0x4(0x1)
+};
+
+
+// Size 0x10
+struct PulleyVisualParams
+{
+public:
+	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
+	float                                                        Scale;                                             // 0x8(0x4)
+	float                                                        Radius;                                            // 0xc(0x4)
+};
+
+
 // Size 0xc
 struct RopeVisualParams
 {
@@ -70,30 +136,12 @@ public:
 };
 
 
-// Size 0x10
-struct RiggingSystemLine
-{
-public:
-	char                                                         pad0x10_6IV2C[0x10];                               // 0x0(0x10)
-};
-
-
 // Size 0x8
-struct RopeCatenarySwingParams
+struct RopeCatenaryLengthPair
 {
 public:
-	float                                                        LengthForNeutralSwing;                             // 0x0(0x4)
-	float                                                        LengthBias;                                        // 0x4(0x4)
-};
-
-
-// Size 0x8
-struct RopeCatenaryDynamicsParams
-{
-public:
-	float                                                        CatenaryToTautLengthRatioToConsiderCatenary;       // 0x0(0x4)
-	bool                                                         ReactsToWind;                                      // 0x4(0x1)
-	char                                                         pad0x3_L5Z67[0x3];                                 // 0x5(0x3)
+	float                                                        Taut;                                              // 0x0(0x4)
+	float                                                        Catenary;                                          // 0x4(0x4)
 };
 
 
@@ -106,65 +154,15 @@ public:
 };
 
 
-// Size 0x18
-struct RopeCatenaryShapeParams
-{
-public:
-	struct RopeCatenaryLengthParams                              Length;                                            // 0x0(0x10)
-	struct RopeCatenarySlopeBlendParams                          Slope;                                             // 0x10(0x8)
-};
-
-
-// Size 0x14
-struct RiggingSystemPulleyAttachmentParams
-{
-public:
-	struct RopeVisualParams                                      Visuals;                                           // 0x0(0xc)
-	float                                                        Length;                                            // 0xc(0x4)
-	float                                                        Sag;                                               // 0x10(0x4)
-};
-
-
-// Size 0x54
-struct InstancedRopeParams
-{
-public:
-	struct Vector                                                Start;                                             // 0x0(0xc)
-	struct Vector                                                End;                                               // 0xc(0xc)
-	float                                                        Thickness;                                         // 0x18(0x4)
-	float                                                        UVScale;                                           // 0x1c(0x4)
-	float                                                        UVBase;                                            // 0x20(0x4)
-	float                                                        UVOffset;                                          // 0x24(0x4)
-	float                                                        Roughness;                                         // 0x28(0x4)
-	struct RopeCatenaryShapeParams                               Shape;                                             // 0x2c(0x18)
-	struct RopeCatenarySwingParams                               Swing;                                             // 0x44(0x8)
-	struct RopeCatenaryDynamicsParams                            Dynamics;                                          // 0x4c(0x8)
-};
-
-
-// Size 0x50
-struct RiggingSystemPulleyParams
-{
-public:
-	struct SocketId                                              Anchor;                                            // 0x0(0x20)
-	float                                                        OffsetFromAnchor;                                  // 0x20(0x4)
-	char                                                         pad0x4_6SCJU[0x4];                                 // 0x24(0x4)
-	struct PulleyVisualParams                                    Visuals;                                           // 0x28(0x10)
-	struct RiggingSystemPulleyAttachmentParams                   AttachmentRope;                                    // 0x38(0x14)
-	char                                                         pad0x4_I92DY[0x4];                                 // 0x4c(0x4)
-};
-
-
 // Size 0x78
 struct RiggingSystemLineParams
 {
 public:
-	struct SocketId                                              Start;                                             // 0x0(0x20)
+	struct                                                       Start;                                             // 0x0(0x20)
 	TArray<struct RiggingSystemPulleyParams>                     Pulleys;                                           // 0x20(0x10)
-	struct SocketId                                              End;                                               // 0x30(0x20)
-	struct RopeVisualParams                                      Visuals;                                           // 0x50(0xc)
-	struct RopeCatenaryShapeParams                               Shape;                                             // 0x5c(0x18)
-	char                                                         pad0x4_5ST21[0x4];                                 // 0x74(0x4)
+	struct                                                       End;                                               // 0x30(0x20)
+	struct                                                       Visuals;                                           // 0x50(0xc)
+	struct                                                       Shape;                                             // 0x5c(0x18)
 };
 
 

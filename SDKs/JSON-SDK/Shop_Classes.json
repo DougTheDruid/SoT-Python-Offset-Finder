@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "LicenceId",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x28"
       }

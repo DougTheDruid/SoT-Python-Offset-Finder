@@ -5,20 +5,11 @@
 
 
 
-// Size 0x18
-struct CachedShip
-{
-public:
-	char                                                         pad0x18_LTTY5[0x18];                               // 0x0(0x18)
-};
-
-
 // Size 0x28
 struct BumperZoneData
 {
 public:
 	class ShipBumperZone*                                        BumperZone;                                        // 0x0(0x8)
-	char                                                         pad0x20_WWOKO[0x20];                               // 0x8(0x20)
 };
 
 

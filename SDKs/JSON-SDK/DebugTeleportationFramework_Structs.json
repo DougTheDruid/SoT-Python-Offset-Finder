@@ -10,27 +10,21 @@
       },
       {
         "Name": "Destination",
-        "Type": "struct Vector",
+        "Type": "struct",
         "Size": "0xc",
         "Offset": "0x10"
       },
       {
         "Name": "AssociatedCrew",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x1c"
       },
       {
         "Name": "Id",
-        "Type": "struct Guid",
+        "Type": "struct",
         "Size": "0x10",
         "Offset": "0x2c"
-      },
-      {
-        "Name": "pad0x4_YA3BE[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
       }
     ]
   },
