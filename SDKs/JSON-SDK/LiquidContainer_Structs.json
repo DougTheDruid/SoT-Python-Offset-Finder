@@ -10,19 +10,19 @@
       },
       {
         "Name": "FogColour",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x4"
       },
       {
         "Name": "LiquidColour",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x10"
       },
       {
         "Name": "ScumColour",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x1c"
       },

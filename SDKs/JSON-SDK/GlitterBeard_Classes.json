@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "TreeActor",
-        "Type": "struct",
+        "Type": "struct ActorComponentSelector",
         "Size": "0x10",
         "Offset": "0xc8"
       },
@@ -22,40 +22,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xe0"
-      }
-    ]
-  },
-  "GlitterBeardTreeVisualFeedbackComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x118",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "FeedbackActions",
-        "Type": "TArray<struct VisualFeedbackList>",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "CurrentStates",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0xe8"
-      }
-    ]
-  },
-  "GlitterbeardSlidingDoor": {
-    "Super": "SlidingDoor",
-    "FullSize": "0x548",
-    "InheritedSize": "0x540",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DecalBlendComponent",
-        "Type": "class EffectBlendControllerComponent*",
-        "Size": "0x8",
-        "Offset": "0x540"
       }
     ]
   },
@@ -85,9 +51,23 @@
       },
       {
         "Name": "Emitter",
-        "Type": "struct",
+        "Type": "struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x50"
+      }
+    ]
+  },
+  "GlitterbeardSlidingDoor": {
+    "Super": "SlidingDoor",
+    "FullSize": "0x548",
+    "InheritedSize": "0x540",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DecalBlendComponent",
+        "Type": "class EffectBlendControllerComponent*",
+        "Size": "0x8",
+        "Offset": "0x540"
       }
     ]
   },
@@ -105,9 +85,29 @@
       },
       {
         "Name": "ReplicationState",
-        "Type": "struct",
+        "Type": "struct FinaleReplicationState",
         "Size": "0x10",
         "Offset": "0xd0"
+      }
+    ]
+  },
+  "GlitterBeardTreeVisualFeedbackComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x118",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "FeedbackActions",
+        "Type": "TArray<struct VisualFeedbackList>",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "CurrentStates",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0xe8"
       }
     ]
   },
@@ -197,7 +197,7 @@
       },
       {
         "Name": "SoundEmitter",
-        "Type": "struct",
+        "Type": "struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x6a0"
       }

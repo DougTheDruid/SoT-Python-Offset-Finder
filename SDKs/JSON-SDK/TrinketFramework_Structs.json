@@ -1,15 +1,4 @@
 {
-  "RequestTrinketLoadoutUIEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Categories",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "RequestTrinketEntitlementsUIEvent": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -21,12 +10,23 @@
       }
     ]
   },
+  "RequestTrinketLoadoutUIEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Categories",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "RemoveInteractingPlayerFromTrinketMountpointRpc": {
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "TrinketMountpointManager",
-        "Type": "struct",
+        "Type": "struct NetSubObjectPtr",
         "Size": "0x14",
         "Offset": "0x18"
       },
@@ -38,20 +38,32 @@
       }
     ]
   },
-  "TrinketLoadoutEntry": {
-    "ClassSize": "0x8",
+  "ChestEntitlementTrinketItem": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "TrinketEntitlementIndex",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "ItemDesc",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "TrinketOwnerPlayerXUIDIndex",
+        "Name": "PlacedValue",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x4"
+        "Offset": "0x10"
+      },
+      {
+        "Name": "PlacedThreshold",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "OwnerGamerTag",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
       }
     ]
   },
@@ -89,43 +101,20 @@
       }
     ]
   },
-  "ChestEntitlementTrinketItem": {
-    "ClassSize": "0x28",
+  "TrinketLoadoutEntry": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "ItemDesc",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "TrinketEntitlementIndex",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "PlacedValue",
+        "Name": "TrinketOwnerPlayerXUIDIndex",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "PlacedThreshold",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "OwnerGamerTag",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "TrinketLoadoutModel": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Trinkets",
-        "Type": "TArray<struct TrinketLoadoutModelEntry>",
-        "Size": "0x10",
-        "Offset": "0x0"
+        "Offset": "0x4"
       }
     ]
   },
@@ -143,6 +132,17 @@
         "Type": "TArray<struct UniqueNetIdRepl>",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "TrinketLoadoutModel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Trinkets",
+        "Type": "TArray<struct TrinketLoadoutModelEntry>",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },

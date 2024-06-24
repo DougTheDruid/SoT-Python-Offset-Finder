@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "QualityOverrides",
-        "Type": "struct",
+        "Type": "struct MaterialQualityOverrides",
         "Size": "0x4",
         "Offset": "0x28"
       }

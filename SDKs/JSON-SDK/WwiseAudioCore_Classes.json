@@ -7,31 +7,31 @@
     "Attributes": [
       {
         "Name": "PlatformMappings",
-        "Type": "struct",
+        "Type": "struct WwisePlatformMappings",
         "Size": "0x20",
         "Offset": "0xe8"
       },
       {
         "Name": "ReverbPresetSettings",
-        "Type": "struct",
+        "Type": "struct WwiseAudioReverbPresets",
         "Size": "0x64",
         "Offset": "0x108"
       },
       {
         "Name": "WwiseCoreAssetsPath",
-        "Type": "struct",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x170"
       },
       {
         "Name": "WwiseSoundbanksRoot",
-        "Type": "struct",
+        "Type": "struct DirectoryPath",
         "Size": "0x10",
         "Offset": "0x180"
       },
       {
         "Name": "WwiseStreamedFilesRoot",
-        "Type": "struct",
+        "Type": "struct DirectoryPath",
         "Size": "0x10",
         "Offset": "0x190"
       },
@@ -43,7 +43,7 @@
       },
       {
         "Name": "TritonAcousticMapsDirectory",
-        "Type": "struct",
+        "Type": "struct DirectoryPath",
         "Size": "0x10",
         "Offset": "0x1b0"
       },
@@ -61,7 +61,7 @@
       },
       {
         "Name": "NetworkRelationship",
-        "Type": "struct",
+        "Type": "struct WwiseNetworkRelationship",
         "Size": "0x18",
         "Offset": "0x1e0"
       },

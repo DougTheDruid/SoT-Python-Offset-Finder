@@ -119,11 +119,11 @@ Rowboat:
   - Name: WaterExclusionOffset
     Offset: '0x7d0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: OverrideMountedCollisionProfileName
     Offset: '0x7dc'
     Size: '0x8'
-    Type: struct
+    Type: struct CollisionProfileName
   - Name: TetherCustomisationComponent
     Offset: '0x7e8'
     Size: '0x8'
@@ -175,11 +175,11 @@ Rowboat:
   - Name: DamageEffectData
     Offset: '0x848'
     Size: '0x18'
-    Type: struct
+    Type: struct RowboatDamageEffectData
   - Name: StrainDamageData
     Offset: '0x860'
     Size: '0x20'
-    Type: struct
+    Type: struct RowboatStrainDamageData
   - Name: AlwaysEnabledInteractables
     Offset: '0x880'
     Size: '0x10'
@@ -395,7 +395,7 @@ RowboatDescDataAsset:
   - Name: PartDesc
     Offset: '0x28'
     Size: '0x20'
-    Type: struct
+    Type: struct PartDesc
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -405,7 +405,7 @@ RowboatEntitlementDesc:
   - Name: Rowboat
     Offset: '0xc8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringClassReference
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'
@@ -415,7 +415,7 @@ RowboatLiveryDesc:
   - Name: RowboatDescDataAsset
     Offset: '0xc8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'
@@ -459,7 +459,7 @@ RowingSeatAdaptiveTriggerComponent:
   - Name: BothTriggers_Row
     Offset: '0xd0'
     Size: '0x3'
-    Type: struct
+    Type: struct AdaptiveTriggerEffectMode_Feedback
   ClassSize: '0x8'
   FullSize: '0xd8'
   InheritedSize: '0xd0'
@@ -477,7 +477,7 @@ ScrapeableComponent:
   - Name: SafeZoneCenterDirection
     Offset: '0xe0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: SafeZoneMaximumAngle
     Offset: '0xec'
     Size: '0x4'
@@ -503,23 +503,23 @@ ScrapeableDamageDataAsset:
 StorageSeat:
   Attributes:
   - Name: StorageInteractionInput
-    Offset: '0x680'
+    Offset: '0x688'
     Size: '0x8'
     Type: class UClass*
   - Name: StorageContainerComponent
-    Offset: '0x688'
+    Offset: '0x690'
     Size: '0x8'
     Type: class StorageContainerComponent*
   ClassSize: '0x30'
-  FullSize: '0x6b0'
-  InheritedSize: '0x680'
+  FullSize: '0x6b8'
+  InheritedSize: '0x688'
   Super: Seat
 TaleQuestSinkWatercraftStepDesc:
   Attributes:
   - Name: Watercraft
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableWatercraft
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
@@ -529,7 +529,7 @@ TaleQuestSpawnWatercraftStepDesc:
   - Name: SpawnLocation
     Offset: '0x80'
     Size: '0x38'
-    Type: struct
+    Type: struct QuestVariableTransform
   - Name: WatercraftClass
     Offset: '0xb8'
     Size: '0x20'
@@ -541,7 +541,7 @@ TaleQuestSpawnWatercraftStepDesc:
   - Name: Watercraft
     Offset: '0xf8'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableWatercraft
   ClassSize: '0xa8'
   FullSize: '0x128'
   InheritedSize: '0x80'
@@ -555,7 +555,7 @@ Watercraft:
   - Name: RolloverCorrector
     Offset: '0x408'
     Size: '0xc'
-    Type: struct
+    Type: struct WatercraftRolloverCorrector
   - Name: NosediveBrake
     Offset: '0x418'
     Size: '0x8'
@@ -591,15 +591,15 @@ Watercraft:
   - Name: MovementTimeStamp
     Offset: '0x458'
     Size: '0x70'
-    Type: struct
+    Type: struct NetTimeStampCalculator
   - Name: PhysicsErrorCorrection
     Offset: '0x4c8'
     Size: '0x1c'
-    Type: struct
+    Type: struct RigidBodyErrorCorrection
   - Name: BuoyancySampleMovement
     Offset: '0x520'
     Size: '0x68'
-    Type: struct
+    Type: struct BuoyancySampleMovement
   - Name: SpeedToChoppinessScalarCurve
     Offset: '0x588'
     Size: '0x8'
@@ -669,11 +669,11 @@ WatercraftsSettings:
   - Name: RowboatTypesEntitlementsMapDataAsset
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: RowboatLiveryEntitlementsMapDataAsset
     Offset: '0x48'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x20'
   FullSize: '0x58'
   InheritedSize: '0x38'

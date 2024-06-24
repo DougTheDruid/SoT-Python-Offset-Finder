@@ -1,18 +1,53 @@
 {
-  "SlateChildSize": {
-    "ClassSize": "0x8",
+  "WidgetAnimationBinding": {
+    "ClassSize": "0x24",
     "Attributes": [
       {
-        "Name": "Value",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "WidgetName",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "SizeRule",
-        "Type": "byte",
+        "Name": "SlotWidgetName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "AnimationGuid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "bIsRootWidget",
+        "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x4"
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "AnchorData": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Offsets",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Anchors",
+        "Type": "struct Anchors",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Alignment",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },
@@ -33,38 +68,112 @@
       }
     ]
   },
-  "DelegateRuntimeBinding": {
-    "ClassSize": "0x38",
+  "SlateChildSize": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "ObjectName",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "Value",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "PropertyName",
+        "Name": "SizeRule",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "WidgetNavigationData": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "Rule",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WidgetToFocus",
         "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "MovieScene2DTransformSectionTemplate": {
+    "ClassSize": "0x380",
+    "Attributes": [
+      {
+        "Name": "PropertyData",
+        "Type": "struct MovieScenePropertySectionData",
+        "Size": "0x20",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Translation",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "Scale",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x1a0"
+      },
+      {
+        "Name": "Shear",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x290"
+      }
+    ]
+  },
+  "MovieSceneWidgetMaterialSectionTemplate": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "BrushPropertyNamePath",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "WidgetTransform": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "Translation",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Scale",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Shear",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
-        "Name": "FunctionName",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "Angle",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x18"
-      },
-      {
-        "Name": "SourcePath",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "Kind",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x30"
       }
     ]
   },
@@ -97,182 +206,38 @@
       }
     ]
   },
-  "WidgetAnimationBinding": {
-    "ClassSize": "0x24",
-    "Attributes": [
-      {
-        "Name": "WidgetName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SlotWidgetName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "AnimationGuid",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "bIsRootWidget",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "WidgetTransform": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "Translation",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Scale",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Shear",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Angle",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "MovieSceneWidgetMaterialSectionTemplate": {
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "BrushPropertyNamePath",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "AnchorData": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Offsets",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Anchors",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Alignment",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "WidgetNavigationData": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "Rule",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WidgetToFocus",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "MovieSceneMarginSectionTemplate": {
     "ClassSize": "0x218",
     "Attributes": [
       {
         "Name": "PropertyData",
-        "Type": "struct",
+        "Type": "struct MovieScenePropertySectionData",
         "Size": "0x20",
         "Offset": "0x18"
       },
       {
         "Name": "TopCurve",
-        "Type": "struct",
+        "Type": "struct RichCurve",
         "Size": "0x78",
         "Offset": "0x38"
       },
       {
         "Name": "LeftCurve",
-        "Type": "struct",
+        "Type": "struct RichCurve",
         "Size": "0x78",
         "Offset": "0xb0"
       },
       {
         "Name": "RightCurve",
-        "Type": "struct",
+        "Type": "struct RichCurve",
         "Size": "0x78",
         "Offset": "0x128"
       },
       {
         "Name": "BottomCurve",
-        "Type": "struct",
+        "Type": "struct RichCurve",
         "Size": "0x78",
         "Offset": "0x1a0"
-      }
-    ]
-  },
-  "MovieScene2DTransformSectionTemplate": {
-    "ClassSize": "0x380",
-    "Attributes": [
-      {
-        "Name": "PropertyData",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Translation",
-        "Type": "struct",
-        "Size": "0x78",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "struct",
-        "Size": "0x78",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "Scale",
-        "Type": "struct",
-        "Size": "0x78",
-        "Offset": "0x1a0"
-      },
-      {
-        "Name": "Shear",
-        "Type": "struct",
-        "Size": "0x78",
-        "Offset": "0x290"
       }
     ]
   },
@@ -284,6 +249,41 @@
         "Type": "TArray<struct PropertyPathSegment>",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "DelegateRuntimeBinding": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "ObjectName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PropertyName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "FunctionName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "SourcePath",
+        "Type": "struct DynamicPropertyPath",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Kind",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
       }
     ]
   },

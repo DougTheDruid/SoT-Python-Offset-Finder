@@ -9,7 +9,7 @@ LevelSequence:
   - Name: ObjectReferences
     Offset: '0x2b0'
     Size: '0xa0'
-    Type: struct
+    Type: struct LevelSequenceObjectReferenceMap
   - Name: PossessedObjects
     Offset: '0x350'
     Size: '0x50'
@@ -27,7 +27,7 @@ LevelSequenceActor:
   - Name: PlaybackSettings
     Offset: '0x3d8'
     Size: '0x28'
-    Type: struct
+    Type: struct MovieSceneSequencePlaybackSettings
   - Name: SequencePlayer
     Offset: '0x400'
     Size: '0x8'
@@ -35,7 +35,7 @@ LevelSequenceActor:
   - Name: LevelSequence
     Offset: '0x408'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: BurnInOptions
     Offset: '0x418'
     Size: '0x8'
@@ -61,7 +61,7 @@ LevelSequenceBurnIn:
   - Name: FrameInformation
     Offset: '0x230'
     Size: '0x90'
-    Type: struct
+    Type: struct LevelSequencePlayerSnapshot
   - Name: LevelSequenceActor
     Offset: '0x2c0'
     Size: '0x8'
@@ -79,7 +79,7 @@ LevelSequenceBurnInOptions:
   - Name: BurnInClass
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct StringClassReference
   - Name: Settings
     Offset: '0x40'
     Size: '0x8'

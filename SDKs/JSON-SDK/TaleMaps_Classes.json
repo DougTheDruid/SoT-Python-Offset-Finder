@@ -1,4 +1,36 @@
 {
+  "TaleQuestAddTradeRouteMapStepDesc": {
+    "Super": "TaleQuestMapStepDescBase",
+    "FullSize": "0x118",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "TradeRouteData",
+        "Type": "struct QuestVariableDataAsset",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "VesselName",
+        "Type": "struct QuestVariableText",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "MapID",
+        "Type": "struct QuestVariableGuid",
+        "Size": "0x30",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "ClueSiteToMapMarkIdMap",
+        "Type": "class ClueSiteTypeToMapMarkIdDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x110"
+      }
+    ]
+  },
   "AddMarkToTornMapStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xc0",
@@ -10,6 +42,302 @@
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xb8"
+      }
+    ]
+  },
+  "SelectIslandsFromRegionStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xf8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "RegionData",
+        "Type": "class RegionMapDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "SelectionStrategy",
+        "Type": "class RegionIslandSelectionStrategyBase*",
+        "Size": "0x8",
+        "Offset": "0xa0"
+      }
+    ]
+  },
+  "AddMarkToTornMapStepDescBase": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "MapID",
+        "Type": "struct QuestVariableGuid",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "MapMark",
+        "Type": "struct TaleQuestVariableMapMarkType",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      }
+    ]
+  },
+  "TaleQuestAddLocationMapStepDesc": {
+    "Super": "TaleQuestMapStepDescBase",
+    "FullSize": "0x148",
+    "InheritedSize": "0x80",
+    "ClassSize": "0xc8",
+    "Attributes": [
+      {
+        "Name": "MapID",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "NumberOfChests",
+        "Type": "struct QuestVariableInt",
+        "Size": "0x30",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "RegionMapData",
+        "Type": "struct QuestVariableDataAsset",
+        "Size": "0x30",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "VaultData",
+        "Type": "struct QuestVariableDataAsset",
+        "Size": "0x30",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "MapParams",
+        "Type": "struct QuestVariableDataAsset",
+        "Size": "0x30",
+        "Offset": "0x118"
+      }
+    ]
+  },
+  "SelectWayfinderIslandsFromRegionStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x1b0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x130",
+    "Attributes": [
+      {
+        "Name": "Region",
+        "Type": "struct QuestVariableDataAsset",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "NumIslands",
+        "Type": "struct QuestVariableInt",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "MaxDifferentIslands",
+        "Type": "struct QuestVariableInt",
+        "Size": "0x30",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "VaultActor",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "KeyIslandName",
+        "Type": "struct QuestVariableName",
+        "Size": "0x30",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "SelectedIslands",
+        "Type": "struct QuestVariableNameArray",
+        "Size": "0x30",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "SelectionStrategy",
+        "Type": "class RegionIslandWayfinderSelectionStrategy*",
+        "Size": "0x8",
+        "Offset": "0x1a0"
+      },
+      {
+        "Name": "DefaultNumIslands",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x1a8"
+      },
+      {
+        "Name": "DefaultMaxDifferentIslands",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x1ac"
+      }
+    ]
+  },
+  "GetNumberOfCollectedTornMapPiecesStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "MapID",
+        "Type": "struct QuestVariableGuid",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "NumPieces",
+        "Type": "struct QuestVariableInt",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      }
+    ]
+  },
+  "TaleQuestLocationMapChestFoundStepDesc": {
+    "Super": "TaleQuestMapStepDescBase",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MapID",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "TaleQuestAddTornMapStepDesc": {
+    "Super": "TaleQuestMapStepDescBase",
+    "FullSize": "0x140",
+    "InheritedSize": "0x80",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "IslandName",
+        "Type": "struct QuestVariableName",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "NumberOfPieces",
+        "Type": "struct QuestVariableInt",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "MapParams",
+        "Type": "struct QuestVariableDataAsset",
+        "Size": "0x30",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "MapID",
+        "Type": "struct QuestVariableGuid",
+        "Size": "0x30",
+        "Offset": "0x110"
+      }
+    ]
+  },
+  "TaleQuestTriggerNamedChecklistEventStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Event",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "SelectWayfinderIslandsFromRegionStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x130",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "RegionData",
+        "Type": "class RegionMapDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "SelectionStrategy",
+        "Type": "class RegionIslandWayfinderSelectionStrategy*",
+        "Size": "0x8",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "VaultActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0xa8"
+      }
+    ]
+  },
+  "SelectIslandsFromRegionStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x150",
+    "InheritedSize": "0x80",
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "Region",
+        "Type": "struct QuestVariableDataAsset",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "NumIslands",
+        "Type": "struct QuestVariableInt",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "MaxDifferentIslands",
+        "Type": "struct QuestVariableInt",
+        "Size": "0x30",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "SelectedIslands",
+        "Type": "struct QuestVariableNameArray",
+        "Size": "0x30",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "SelectionStrategy",
+        "Type": "class RegionIslandSelectionStrategyBase*",
+        "Size": "0x8",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "DefaultNumIslands",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "DefaultMaxDifferentIslands",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14c"
       }
     ]
   },
@@ -45,300 +373,6 @@
       }
     ]
   },
-  "SelectIslandsFromRegionStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xf8",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "RegionData",
-        "Type": "class RegionMapDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "SelectionStrategy",
-        "Type": "class RegionIslandSelectionStrategyBase*",
-        "Size": "0x8",
-        "Offset": "0xa0"
-      }
-    ]
-  },
-  "TaleQuestAddTornMapStepDesc": {
-    "Super": "TaleQuestMapStepDescBase",
-    "FullSize": "0x140",
-    "InheritedSize": "0x80",
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "IslandName",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "NumberOfPieces",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "MapParams",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "MapID",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x110"
-      }
-    ]
-  },
-  "TaleQuestAddTradeRouteMapStepDesc": {
-    "Super": "TaleQuestMapStepDescBase",
-    "FullSize": "0x118",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "TradeRouteData",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "VesselName",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "MapID",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "ClueSiteToMapMarkIdMap",
-        "Type": "class ClueSiteTypeToMapMarkIdDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x110"
-      }
-    ]
-  },
-  "SelectWayfinderIslandsFromRegionStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x130",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "RegionData",
-        "Type": "class RegionMapDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "SelectionStrategy",
-        "Type": "class RegionIslandWayfinderSelectionStrategy*",
-        "Size": "0x8",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "VaultActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0xa8"
-      }
-    ]
-  },
-  "TaleQuestLocationMapChestFoundStepDesc": {
-    "Super": "TaleQuestMapStepDescBase",
-    "FullSize": "0x88",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "MapID",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x80"
-      }
-    ]
-  },
-  "SelectIslandsFromRegionStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x150",
-    "InheritedSize": "0x80",
-    "ClassSize": "0xd0",
-    "Attributes": [
-      {
-        "Name": "Region",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "NumIslands",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "MaxDifferentIslands",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "SelectedIslands",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "SelectionStrategy",
-        "Type": "class RegionIslandSelectionStrategyBase*",
-        "Size": "0x8",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "DefaultNumIslands",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "DefaultMaxDifferentIslands",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14c"
-      }
-    ]
-  },
-  "TaleQuestAddLocationMapStepDesc": {
-    "Super": "TaleQuestMapStepDescBase",
-    "FullSize": "0x148",
-    "InheritedSize": "0x80",
-    "ClassSize": "0xc8",
-    "Attributes": [
-      {
-        "Name": "MapID",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "NumberOfChests",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "RegionMapData",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "VaultData",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "MapParams",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x118"
-      }
-    ]
-  },
-  "SelectWayfinderIslandsFromRegionStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x1b0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x130",
-    "Attributes": [
-      {
-        "Name": "Region",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "NumIslands",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "MaxDifferentIslands",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "VaultActor",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "KeyIslandName",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "SelectedIslands",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x170"
-      },
-      {
-        "Name": "SelectionStrategy",
-        "Type": "class RegionIslandWayfinderSelectionStrategy*",
-        "Size": "0x8",
-        "Offset": "0x1a0"
-      },
-      {
-        "Name": "DefaultNumIslands",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x1a8"
-      },
-      {
-        "Name": "DefaultMaxDifferentIslands",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x1ac"
-      }
-    ]
-  },
-  "GetNumberOfCollectedTornMapPiecesStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "MapID",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "NumPieces",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      }
-    ]
-  },
   "RegionIslandFilteredSelectionStrategy": {
     "Super": "RegionIslandSelectionStrategyBase",
     "FullSize": "0x40",
@@ -365,37 +399,17 @@
       }
     ]
   },
-  "AddMarkToTornMapStepDescBase": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x60",
+  "AddMarkToTornMapAtActorLocationStepDesc": {
+    "Super": "AddMarkToTornMapStepDescBase",
+    "FullSize": "0x110",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "MapID",
-        "Type": "struct",
+        "Name": "MarkLocation",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "MapMark",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      }
-    ]
-  },
-  "TaleQuestTriggerNamedChecklistEventStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x88",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Event",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x80"
+        "Offset": "0xe0"
       }
     ]
   },
@@ -407,21 +421,7 @@
     "Attributes": [
       {
         "Name": "MarkLocation",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xe0"
-      }
-    ]
-  },
-  "AddMarkToTornMapAtActorLocationStepDesc": {
-    "Super": "AddMarkToTornMapStepDescBase",
-    "FullSize": "0x110",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "MarkLocation",
-        "Type": "struct",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0xe0"
       }

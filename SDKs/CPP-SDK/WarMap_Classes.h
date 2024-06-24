@@ -6,6 +6,27 @@
 #include "WarMap_Structs.h"
 
 
+// Size 0xe0 (Full Size[0x110] - InheritedSize[0x30]
+class WarMapVoteConsumerBase: public VoteConsumerInlineBase
+{
+public:
+	class WarMapVoteValidatorBase*                               Validator;                                         // 0x30(0x8)
+	class Actor*                                                 OwningActor;                                       // 0x38(0x8)
+	bool                                                         IsHardMode;                                        // 0x40(0x1)
+	TArray<class PlayerState*>                                   Votes;                                             // 0xa8(0x10)
+};
+
+
+// Size 0xa0 (Full Size[0x1d8] - InheritedSize[0x138]
+class WarMapInteractionComponent: public InteractableComponent
+{
+public:
+	struct FText                                                 OpenMapInteractionText;                            // 0x140(0x38)
+	struct FText                                                 CannotOpenMapInteractionText;                      // 0x178(0x38)
+	class UClass*                                                OpenMapInputId;                                    // 0x1b0(0x8)
+};
+
+
 // Size 0x100 (Full Size[0x130] - InheritedSize[0x30]
 class WarMapVoteValidatorBase: public VoteValidatorInlineBase
 {
@@ -21,32 +42,11 @@ class WarMapVoteInteractionActor: public Actor
 {
 public:
 	float                                                        TooltipUIFadeDuration;                             // 0x3d8(0x4)
-	struct                                                       TooltipUIScreenSpaceOffsetRatio;                   // 0x3dc(0x8)
+	struct Vector2D                                              TooltipUIScreenSpaceOffsetRatio;                   // 0x3dc(0x8)
 	class StaticMeshComponent*                                   InvasionActiveMesh;                                // 0x3e8(0x8)
 	class BoxedRpcDispatcherComponent*                           BoxedRpcDispatcherComponent;                       // 0x3f0(0x8)
 	TArray<struct FactionDisplayInfo>                            FactionInfos;                                      // 0x3f8(0x10)
 	TArray<struct FactionRequest>                                FactionInfoPtrs;                                   // 0x408(0x10)
-};
-
-
-// Size 0xa0 (Full Size[0x1d8] - InheritedSize[0x138]
-class WarMapInteractionComponent: public InteractableComponent
-{
-public:
-	struct FText                                                 OpenMapInteractionText;                            // 0x140(0x38)
-	struct FText                                                 CannotOpenMapInteractionText;                      // 0x178(0x38)
-	class UClass*                                                OpenMapInputId;                                    // 0x1b0(0x8)
-};
-
-
-// Size 0xe0 (Full Size[0x110] - InheritedSize[0x30]
-class WarMapVoteConsumerBase: public VoteConsumerInlineBase
-{
-public:
-	class WarMapVoteValidatorBase*                               Validator;                                         // 0x30(0x8)
-	class Actor*                                                 OwningActor;                                       // 0x38(0x8)
-	bool                                                         IsHardMode;                                        // 0x40(0x1)
-	TArray<class PlayerState*>                                   Votes;                                             // 0xa8(0x10)
 };
 
 
@@ -55,6 +55,17 @@ class StopWarMapVoyageVoteValidator: public WarMapVoteValidatorBase
 {
 public:
 	bool                                                         ShowWhenInHardModeMatchmaking;                     // 0x130(0x1)
+};
+
+
+// Size 0xe0 (Full Size[0x1f0] - InheritedSize[0x110]
+class StopWarMapVoyageVoteConsumer: public WarMapVoteConsumerBase
+{
+public:
+	struct FText                                                 WarMapVotingCastVote;                              // 0x110(0x38)
+	struct FText                                                 WarMapVotingCantVote;                              // 0x148(0x38)
+	struct FText                                                 WarMapVotingRemoveVote;                            // 0x180(0x38)
+	struct FText                                                 WarMapVotingCantRemoveVote;                        // 0x1b8(0x38)
 };
 
 
@@ -71,17 +82,6 @@ public:
 	struct FText                                                 WarMapVotingCantVoteReasonCrewIsInPVEEncounter;    // 0x260(0x38)
 	struct FText                                                 WarMapVotingCantVoteReasonInTunnelOfTheDamned;     // 0x298(0x38)
 	struct FText                                                 WarMapVotingCantVoteReasonCrewIsActiveInCompetitiveVoyage; // 0x2d0(0x38)
-};
-
-
-// Size 0xe0 (Full Size[0x1f0] - InheritedSize[0x110]
-class StopWarMapVoyageVoteConsumer: public WarMapVoteConsumerBase
-{
-public:
-	struct FText                                                 WarMapVotingCastVote;                              // 0x110(0x38)
-	struct FText                                                 WarMapVotingCantVote;                              // 0x148(0x38)
-	struct FText                                                 WarMapVotingRemoveVote;                            // 0x180(0x38)
-	struct FText                                                 WarMapVotingCantRemoveVote;                        // 0x1b8(0x38)
 };
 
 

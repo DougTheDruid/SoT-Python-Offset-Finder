@@ -13,7 +13,7 @@ EditableGameplayTagQuery:
   - Name: TagQueryExportText_Helper
     Offset: '0x50'
     Size: '0x48'
-    Type: struct
+    Type: struct GameplayTagQuery
   ClassSize: '0x70'
   FullSize: '0x98'
   InheritedSize: '0x28'
@@ -33,7 +33,7 @@ EditableGameplayTagQueryExpression_AllTagsMatch:
   - Name: Tags
     Offset: '0x28'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -53,7 +53,7 @@ EditableGameplayTagQueryExpression_AnyTagsMatch:
   - Name: Tags
     Offset: '0x28'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -73,7 +73,7 @@ EditableGameplayTagQueryExpression_NoTagsMatch:
   - Name: Tags
     Offset: '0x28'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'

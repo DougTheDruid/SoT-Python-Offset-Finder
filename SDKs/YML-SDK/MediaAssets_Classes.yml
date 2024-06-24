@@ -75,15 +75,15 @@ MediaPlayer:
   - Name: CacheAhead
     Offset: '0xa8'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   - Name: CacheBehind
     Offset: '0xb0'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   - Name: CacheBehindGame
     Offset: '0xb8'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   - Name: NativeAudioOut
     Offset: '0xc0'
     Size: '0x1'
@@ -111,7 +111,7 @@ MediaPlayer:
   - Name: TimeDelay
     Offset: '0xd8'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   - Name: HorizontalFieldOfView
     Offset: '0xe0'
     Size: '0x4'
@@ -123,11 +123,11 @@ MediaPlayer:
   - Name: ViewRotation
     Offset: '0xe8'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: PlayerGuid
     Offset: '0x158'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x148'
   FullSize: '0x170'
   InheritedSize: '0x28'
@@ -159,7 +159,7 @@ MediaTexture:
   - Name: ClearColor
     Offset: '0x144'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: EnableGenMips
     Offset: '0x154'
     Size: '0x1'
@@ -197,7 +197,7 @@ MediaTimeStampInfo:
   - Name: Time
     Offset: '0x28'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

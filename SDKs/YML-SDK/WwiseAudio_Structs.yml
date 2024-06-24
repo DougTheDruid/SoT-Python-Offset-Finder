@@ -16,7 +16,7 @@ MovieSceneAkAudioRTPCSectionData:
   - Name: RTPCCurve
     Offset: '0x10'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   ClassSize: '0x88'
 MovieSceneAkAudioRTPCTemplate:
   Attributes:
@@ -42,7 +42,7 @@ MultiEmitterData:
   - Name: Offset
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x28'
 WwiseAudioAcousticSurfaceParams:
   Attributes:
@@ -78,23 +78,23 @@ WwiseListenerInfo:
   - Name: Position
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Up
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Right
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Front
     Offset: '0x24'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Velocity
     Offset: '0x30'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x3c'
 WwiseNativeEmitterPoolDensityParams:
   Attributes:

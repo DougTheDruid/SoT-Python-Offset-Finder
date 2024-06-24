@@ -9,7 +9,7 @@ AshenLordFireShroud:
   - Name: Params
     Offset: '0x8'
     Size: '0x18'
-    Type: struct
+    Type: struct AshenLordFireShroudParams
   ClassSize: '0x20'
 AshenLordFireShroudParams:
   Attributes:
@@ -20,7 +20,7 @@ AshenLordFireShroudParams:
   - Name: FireShroudCollisionVolume
     Offset: '0x8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x18'
 MeleeAttackIdWeights:
   Attributes:

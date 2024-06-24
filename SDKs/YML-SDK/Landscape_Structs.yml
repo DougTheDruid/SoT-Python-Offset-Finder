@@ -13,7 +13,7 @@ GrassInput:
   - Name: Input
     Offset: '0x10'
     Size: '0x38'
-    Type: struct
+    Type: struct ExpressionInput
   ClassSize: '0x48'
 GrassVariety:
   Attributes:
@@ -96,23 +96,23 @@ LandscapeSplineInterpPoint:
   - Name: Center
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Left
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Right
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: FalloffLeft
     Offset: '0x24'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: FalloffRight
     Offset: '0x30'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: StartEndFalloff
     Offset: '0x3c'
     Size: '0x4'
@@ -135,7 +135,7 @@ LandscapeSplineMeshEntry:
   - Name: CenterAdjust
     Offset: '0x1c'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: bScaleToWidth
     Offset: '0x24'
     Size: '0x1'
@@ -143,7 +143,7 @@ LandscapeSplineMeshEntry:
   - Name: Scale
     Offset: '0x28'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Orientation
     Offset: '0x34'
     Size: '0x1'
@@ -192,11 +192,11 @@ LayerBlendInput:
   - Name: LayerInput
     Offset: '0x10'
     Size: '0x38'
-    Type: struct
+    Type: struct ExpressionInput
   - Name: HeightInput
     Offset: '0x48'
     Size: '0x38'
-    Type: struct
+    Type: struct ExpressionInput
   - Name: PreviewWeight
     Offset: '0x80'
     Size: '0x4'
@@ -204,7 +204,7 @@ LayerBlendInput:
   - Name: ConstLayerInput
     Offset: '0x84'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ConstHeightInput
     Offset: '0x90'
     Size: '0x4'

@@ -13,5 +13,5 @@ TriggerPlayerControllerHitNotificationNetworkEvent:
   - Name: OptionalClientAttackId
     Offset: '0x1c'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x30'

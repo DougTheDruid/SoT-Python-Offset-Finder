@@ -52,23 +52,6 @@
       }
     ]
   },
-  "AnimNotify_SoundSwitch": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "SkeletalMeshReference",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SkeletalMeshCategoryName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "AthenaAudioGameStateSettings": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -103,7 +86,7 @@
     "Attributes": [
       {
         "Name": "Story",
-        "Type": "struct",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -116,6 +99,23 @@
       {
         "Name": "AudioOutsideSpace",
         "Type": "class AudioSpaceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AnimNotify_SoundSwitch": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "SkeletalMeshReference",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SkeletalMeshCategoryName",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       }

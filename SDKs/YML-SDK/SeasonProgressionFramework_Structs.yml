@@ -5,7 +5,7 @@ LevelCompletionEvent:
   - Name: SeasonId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Level
     Offset: '0x10'
     Size: '0x4'
@@ -36,11 +36,11 @@ LevelProgressionEvent:
   - Name: SeasonId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: SourceGoalId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: XpChange
     Offset: '0x20'
     Size: '0x4'
@@ -63,18 +63,18 @@ PlayerTrackedObjective:
   - Name: ObjectiveId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 SeasonGoalCompletionEvent:
   Attributes:
   - Name: SeasonId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: GoalId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: GoalType
     Offset: '0x20'
     Size: '0x1'
@@ -82,7 +82,7 @@ SeasonGoalCompletionEvent:
   - Name: GoalGroupId
     Offset: '0x24'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x34'
 SeasonGoalProgressionEvent:
   Attributes:
@@ -101,11 +101,11 @@ SeasonGoalProgressionEvent:
   - Name: SeasonId
     Offset: '0xc'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: GoalId
     Offset: '0x1c'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: GoalType
     Offset: '0x2c'
     Size: '0x1'
@@ -113,7 +113,7 @@ SeasonGoalProgressionEvent:
   - Name: GoalGroupId
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x40'
 SeasonPopupAssetLoadCompleted:
   Attributes:
@@ -127,7 +127,7 @@ SeasonReward:
   - Name: Id
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Tier
     Offset: '0x10'
     Size: '0x8'
@@ -142,7 +142,7 @@ SeasonRewardEarnedEvent:
   - Name: SeasonId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: MultipleRewards
     Offset: '0x10'
     Size: '0x1'
@@ -157,15 +157,15 @@ TrackedObjectiveCompletionMessage:
   - Name: ObjectiveId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: PirateIdentity
     Offset: '0x10'
     Size: '0x78'
-    Type: struct
+    Type: struct PirateIdentity
   - Name: PlayerInfo
     Offset: '0x88'
     Size: '0x48'
-    Type: struct
+    Type: struct PlayerBaseTelemetryFragment
   - Name: PlayMode
     Offset: '0xd0'
     Size: '0x1'
@@ -184,15 +184,15 @@ TrackedObjectiveProgressUpdateMessage:
   - Name: ObjectiveId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: PirateIdentity
     Offset: '0x10'
     Size: '0x78'
-    Type: struct
+    Type: struct PirateIdentity
   - Name: PlayerInfo
     Offset: '0x88'
     Size: '0x48'
-    Type: struct
+    Type: struct PlayerBaseTelemetryFragment
   - Name: PlayMode
     Offset: '0xd0'
     Size: '0x1'

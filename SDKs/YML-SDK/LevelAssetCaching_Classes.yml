@@ -27,7 +27,7 @@ RegionLookupGeneratedGrid:
   - Name: WorldSetup
     Offset: '0x30'
     Size: '0x28'
-    Type: struct
+    Type: struct WorldRegionSetup
   ClassSize: '0x88'
   FullSize: '0xb0'
   InheritedSize: '0x28'

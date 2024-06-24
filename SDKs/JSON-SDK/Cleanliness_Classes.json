@@ -13,7 +13,7 @@
       },
       {
         "Name": "CleanlinessInfo",
-        "Type": "struct",
+        "Type": "struct CleanlinessInfo",
         "Size": "0xc",
         "Offset": "0xe0"
       },

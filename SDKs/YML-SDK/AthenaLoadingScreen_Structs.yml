@@ -46,11 +46,11 @@ SlateLoadingScreenAdvancedTipDescription:
   - Name: Font
     Offset: '0x48'
     Size: '0x40'
-    Type: struct
+    Type: struct SlateFontInfo
   - Name: Colour
     Offset: '0x88'
     Size: '0x30'
-    Type: struct
+    Type: struct SlateColor
   - Name: LineHeightPercentage
     Offset: '0xb8'
     Size: '0x4'
@@ -68,7 +68,7 @@ SlateLoadingScreenImageParams:
   - Name: ImageAsset
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: ImageTips
     Offset: '0x10'
     Size: '0x10'
@@ -76,5 +76,5 @@ SlateLoadingScreenImageParams:
   - Name: AdvancedTips
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct SlateLoadingScreenAdvancedTipsParams
   ClassSize: '0x30'

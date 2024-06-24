@@ -5,18 +5,18 @@ Anchors:
   - Name: Minimum
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Maximum
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x10'
 InputChord:
   Attributes:
   - Name: Key
     Offset: '0x0'
     Size: '0x20'
-    Type: struct
+    Type: struct Key
   - Name: bShift
     Offset: '0x20'
     Size: '0x1'

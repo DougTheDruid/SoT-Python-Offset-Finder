@@ -23,7 +23,7 @@ public:
 	int                                                          MaxEncounters;                                     // 0x414(0x4)
 	TArray<struct TreasuryWaveEncounter>                         WaveEncounters;                                    // 0x418(0x10)
 	struct FText                                                 OnTreasuryRoomCompleteEmergentBannerText;          // 0x428(0x38)
-	struct                                                       SunkenTreasuryAvailabilityParamsAssetFileLocation; // 0x460(0x10)
+	struct StringAssetReference                                  SunkenTreasuryAvailabilityParamsAssetFileLocation; // 0x460(0x10)
 	class Actor*                                                 FloodMechanismActor;                               // 0x470(0x8)
 	class Actor*                                                 FloodTriggerActor;                                 // 0x478(0x8)
 	class Actor*                                                 DrainMechanismActor;                               // 0x480(0x8)
@@ -38,14 +38,14 @@ public:
 	TArray<class Actor*>                                         OverlappingActors;                                 // 0x4e0(0x10)
 	TArray<uintptr_t>                                            CachedParticipantControllers;                      // 0x4f0(0x10)
 	class Actor*                                                 VaultLootSpawnerActor;                             // 0x500(0x8)
-	struct                                                       VaultOpenStat;                                     // 0x508(0x4)
+	struct PlayerStat                                            VaultOpenStat;                                     // 0x508(0x4)
 	class MechanismActionComponent*                              FloodMechanismComponent;                           // 0x510(0x8)
 	class MechanismActionComponent*                              DrainMechanismComponent;                           // 0x518(0x8)
 	class MechanismActionComponent*                              VaultMechanismComponent;                           // 0x520(0x8)
 	interface                                                    FloodTriggerComponent;                             // 0x528(0x10)
 	interface                                                    DrainTriggerComponent;                             // 0x538(0x10)
 	interface                                                    VaultTriggerComponent;                             // 0x548(0x10)
-	struct                                                       EventDispatcher;                                   // 0x558(0xa0)
+	struct ObjectMessagingDispatcher                             EventDispatcher;                                   // 0x558(0xa0)
 };
 
 
@@ -55,7 +55,7 @@ class SunkenKingdomShrineEventRoom: public EventRoom
 public:
 	class Actor*                                                 EntranceActor;                                     // 0x510(0x8)
 	class GameEventOnDemandAvailabilityHandler*                  GameEventOnDemandAvailabilityHandler;              // 0x518(0x8)
-	struct                                                       AvailabilityParamsAssetFileLocation;               // 0x520(0x10)
+	struct StringAssetReference                                  AvailabilityParamsAssetFileLocation;               // 0x520(0x10)
 	class ObjectProximityResetComponent*                         PuzzleResetComponent;                              // 0x530(0x8)
 	class GameEventItemSpawnSelectorComponent*                   ItemSpawnSelectorComponent;                        // 0x538(0x8)
 };

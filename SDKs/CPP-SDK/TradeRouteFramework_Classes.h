@@ -6,6 +6,17 @@
 #include "TradeRouteFramework_Structs.h"
 
 
+// Size 0x98 (Full Size[0x118] - InheritedSize[0x80]
+class TaleQuestGetProjectionPointOnTradeRouteStepDesc: public TaleQuestStepDesc
+{
+public:
+	float                                                        ProjectionProportion;                              // 0x80(0x4)
+	struct QuestVariableVector                                   SourcePoint;                                       // 0x88(0x30)
+	struct QuestVariableTradeRouteData                           TradeRouteData;                                    // 0xb8(0x30)
+	struct QuestVariableVector                                   ProjectedPoint;                                    // 0xe8(0x30)
+};
+
+
 // Size 0x20 (Full Size[0xb8] - InheritedSize[0x98]
 class TaleQuestSelectTradeRouteStep: public TaleQuestStep
 {
@@ -14,15 +25,28 @@ public:
 };
 
 
+// Size 0xf8 (Full Size[0x178] - InheritedSize[0x80]
+class TaleQuestSelectTradeRouteStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct TradeRouteMappingFilterQuestVariable                  TradeRouteMappingFilter;                           // 0x80(0x30)
+	int                                                          NumSelectFromClosestIslands;                       // 0xb0(0x4)
+	struct QuestVariableVector                                   SelectionOriginPointVar;                           // 0xb8(0x30)
+	struct QuestVariableInt                                      TradeRouteDifficulty;                              // 0xe8(0x30)
+	struct QuestVariableTradeRouteData                           TradeRoute;                                        // 0x118(0x30)
+	struct QuestVariableTaleResourceHandle                       AllocatedTradeRouteHandleVar;                      // 0x148(0x30)
+};
+
+
 // Size 0x98 (Full Size[0xc0] - InheritedSize[0x28]
 class TradeRouteData: public DataAsset
 {
 public:
-	struct                                                       StartIsland;                                       // 0x28(0x8)
-	struct                                                       EndIsland;                                         // 0x30(0x8)
-	struct                                                       RouteCompletionStat;                               // 0x38(0x4)
+	struct IslandSelectionType                                   StartIsland;                                       // 0x28(0x8)
+	struct IslandSelectionType                                   EndIsland;                                         // 0x30(0x8)
+	struct PlayerStat                                            RouteCompletionStat;                               // 0x38(0x4)
 	char                                                         MapOrientation;                                    // 0x3c(0x1)
-	struct                                                       TradeRouteMapData;                                 // 0x40(0x80)
+	struct TradeRouteMapData                                     TradeRouteMapData;                                 // 0x40(0x80)
 };
 
 
@@ -39,30 +63,6 @@ class TradeRouteDifficultyBand: public Object
 {
 public:
 	int                                                          MinimumRank;                                       // 0x28(0x4)
-};
-
-
-// Size 0xf8 (Full Size[0x178] - InheritedSize[0x80]
-class TaleQuestSelectTradeRouteStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct                                                       TradeRouteMappingFilter;                           // 0x80(0x30)
-	int                                                          NumSelectFromClosestIslands;                       // 0xb0(0x4)
-	struct                                                       SelectionOriginPointVar;                           // 0xb8(0x30)
-	struct                                                       TradeRouteDifficulty;                              // 0xe8(0x30)
-	struct                                                       TradeRoute;                                        // 0x118(0x30)
-	struct                                                       AllocatedTradeRouteHandleVar;                      // 0x148(0x30)
-};
-
-
-// Size 0x98 (Full Size[0x118] - InheritedSize[0x80]
-class TaleQuestGetProjectionPointOnTradeRouteStepDesc: public TaleQuestStepDesc
-{
-public:
-	float                                                        ProjectionProportion;                              // 0x80(0x4)
-	struct                                                       SourcePoint;                                       // 0x88(0x30)
-	struct                                                       TradeRouteData;                                    // 0xb8(0x30)
-	struct                                                       ProjectedPoint;                                    // 0xe8(0x30)
 };
 
 

@@ -109,5 +109,5 @@ LightPropagationVolumeSettings:
   - Name: LPVWorldRef
     Offset: '0x40'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   ClassSize: '0x70'

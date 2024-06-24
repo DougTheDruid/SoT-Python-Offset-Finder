@@ -5,7 +5,7 @@ OceanCrawlerAnimationDataStructure:
   - Name: LocomotionData
     Offset: '0x0'
     Size: '0x30'
-    Type: struct
+    Type: struct OceanCrawlerLocomotionAnimationDataStructure
   - Name: MontageData
     Offset: '0x30'
     Size: '0x8'
@@ -17,11 +17,11 @@ OceanCrawlerAnimationDataStructure:
   - Name: HitReactionData
     Offset: '0x40'
     Size: '0x8'
-    Type: struct
+    Type: struct HitReactionAnimationData
   - Name: SporeBreathData
     Offset: '0x48'
     Size: '0x18'
-    Type: struct
+    Type: struct OceanCrawlerSporeBreathAnimationData
   - Name: AttackInterruptMontages
     Offset: '0x60'
     Size: '0x10'
@@ -29,19 +29,19 @@ OceanCrawlerAnimationDataStructure:
   - Name: DeathMontageId
     Offset: '0x70'
     Size: '0x8'
-    Type: struct
+    Type: struct CustomAnimationMontageId
   - Name: SpawnMontageId
     Offset: '0x78'
     Size: '0x8'
-    Type: struct
+    Type: struct CustomAnimationMontageId
   - Name: SpawnOnShipMontageId
     Offset: '0x80'
     Size: '0x8'
-    Type: struct
+    Type: struct CustomAnimationMontageId
   - Name: SpawnBoardedMontageId
     Offset: '0x88'
     Size: '0x8'
-    Type: struct
+    Type: struct CustomAnimationMontageId
   ClassSize: '0x90'
 OceanCrawlerLocomotionAnimationDataStructure:
   Attributes:

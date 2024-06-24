@@ -10,7 +10,7 @@
 class ConditionRootAsset: public DataAsset
 {
 public:
-	struct                                                       ConditionRoot;                                     // 0x28(0x20)
+	struct ConditionInstance                                     ConditionRoot;                                     // 0x28(0x20)
 };
 
 

@@ -61,11 +61,11 @@ LostSandsRowboatGunpowderBarrel:
   - Name: RowboatDestroyedAtGoldenSandsStat
     Offset: '0x570'
     Size: '0x4'
-    Type: struct
+    Type: struct PlayerStat
   - Name: RowboatDestroyedAwayFromGoldenSandsStat
     Offset: '0x574'
     Size: '0x4'
-    Type: struct
+    Type: struct PlayerStat
   ClassSize: '0x240'
   FullSize: '0x608'
   InheritedSize: '0x3c8'

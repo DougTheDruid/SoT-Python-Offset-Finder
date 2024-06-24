@@ -12,7 +12,7 @@ ConditionContextPayloadSelectorBase:
   - Name: PayloadTarget
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct ConditionContextPayloadTarget
   ClassSize: '0x18'
 ConditionContextPayloadTarget:
   Attributes:
@@ -44,7 +44,7 @@ IsFeatureEnabledCondition:
   - Name: Feature
     Offset: '0x8'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   ClassSize: '0x18'
 IsGameOnSpecificPlayModeCondition:
   Attributes:
@@ -72,18 +72,18 @@ IsSpecifiedActorCondition:
   - Name: SpecifyingActorPayloadSelector
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct ConditionContextPayloadSelectorInstance
   - Name: TargetActorPayloadSelector
     Offset: '0x28'
     Size: '0x20'
-    Type: struct
+    Type: struct ConditionContextPayloadSelectorInstance
   ClassSize: '0x48'
 NotCondition:
   Attributes:
   - Name: Condition
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct ConditionInstance
   ClassSize: '0x28'
 OrCondition:
   Attributes:
@@ -104,7 +104,7 @@ TargetedPayloadConditionBase:
   - Name: PayloadSelector
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct ConditionContextPayloadSelectorInstance
   ClassSize: '0x28'
 WorldObjectConditionContextPayload:
   Attributes:

@@ -41,19 +41,19 @@ OceanCrawlerAudioParamsDataAsset:
   - Name: BuffThankDelay
     Offset: '0x40'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: CrabBuffAudioSettings
     Offset: '0x70'
     Size: '0x10'
-    Type: struct
+    Type: struct OceanCrawlerBuffAudioSettings
   - Name: EelBuffAudioSettings
     Offset: '0x80'
     Size: '0x10'
-    Type: struct
+    Type: struct OceanCrawlerBuffAudioSettings
   - Name: HermitBuffAudioSettings
     Offset: '0x90'
     Size: '0x10'
-    Type: struct
+    Type: struct OceanCrawlerBuffAudioSettings
   ClassSize: '0x78'
   FullSize: '0xa0'
   InheritedSize: '0x28'

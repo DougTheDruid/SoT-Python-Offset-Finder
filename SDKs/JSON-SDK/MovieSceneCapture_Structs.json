@@ -1,10 +1,49 @@
 {
+  "CompositionGraphCapturePasses": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Value",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CaptureProtocolID": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Identifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CaptureResolution": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ResX",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ResY",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "MovieSceneCaptureSettings": {
     "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "OutputDirectory",
-        "Type": "struct",
+        "Type": "struct DirectoryPath",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -58,7 +97,7 @@
       },
       {
         "Name": "Resolution",
-        "Type": "struct",
+        "Type": "struct CaptureResolution",
         "Size": "0x8",
         "Offset": "0x40"
       },
@@ -103,45 +142,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x4e"
-      }
-    ]
-  },
-  "CompositionGraphCapturePasses": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Value",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CaptureProtocolID": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Identifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CaptureResolution": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ResX",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ResY",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x4"
       }
     ]
   },

@@ -1,17 +1,6 @@
 {
-  "TalkingIndicatorUpdateEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "TalkingIndicatorState",
-        "Type": "struct",
-        "Size": "0x28",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "TalkingIndicatorState": {
-    "ClassSize": "0x28",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "GamerTag",
@@ -30,6 +19,23 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x18"
+      },
+      {
+        "Name": "Attitude",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TalkingIndicatorUpdateEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TalkingIndicatorState",
+        "Type": "struct TalkingIndicatorState",
+        "Size": "0x30",
+        "Offset": "0x0"
       }
     ]
   },

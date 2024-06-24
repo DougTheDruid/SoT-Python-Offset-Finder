@@ -25,23 +25,23 @@ SeasonPopupAsset:
   - Name: SeasonInfo
     Offset: '0x70'
     Size: '0x68'
-    Type: struct
+    Type: struct SeasonIconPopupAsset
   - Name: LevelIncreaseInfo
     Offset: '0xd8'
     Size: '0x68'
-    Type: struct
+    Type: struct SeasonIconPopupAsset
   - Name: RewardInfo
     Offset: '0x140'
     Size: '0x68'
-    Type: struct
+    Type: struct SeasonIconPopupAsset
   - Name: MultipleRewardsInfo
     Offset: '0x1a8'
     Size: '0x68'
-    Type: struct
+    Type: struct SeasonIconPopupAsset
   - Name: BackgroundImage
     Offset: '0x210'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: DefaultToastSfxEventName
     Offset: '0x220'
     Size: '0x10'
@@ -97,7 +97,7 @@ SeasonProgressionUIComponent:
   - Name: NextReceivedEventsTelemetryData
     Offset: '0xf8'
     Size: '0x18'
-    Type: struct
+    Type: struct SeasonProgressionUITelemetryFragment
   ClassSize: '0x138'
   FullSize: '0x200'
   InheritedSize: '0xc8'
@@ -117,7 +117,7 @@ SeasonProgressionUISettings:
   - Name: SeasonPopupListAsset
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

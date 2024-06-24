@@ -9,11 +9,11 @@ CrewTrackedItemOwnershipChanged:
   - Name: CrewId
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: PreviousCrewId
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: IsFirstTimeOwnedByThisCrew
     Offset: '0x28'
     Size: '0x1'
@@ -28,7 +28,7 @@ CrewTrackedItemOwnershipSet:
   - Name: CrewId
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x18'
 OwnerListEntry:
   Attributes:

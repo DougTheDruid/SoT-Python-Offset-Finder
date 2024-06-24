@@ -26,7 +26,7 @@ public:
 class BreakableActorVfxComponent: public ActorComponent
 {
 public:
-	struct                                                       VFXTintColour;                                     // 0xc8(0x4)
+	struct Color                                                 VFXTintColour;                                     // 0xc8(0x4)
 	class Object*                                                DamagedParticleSystem;                             // 0xd0(0x8)
 	class Object*                                                DestroyedParticleSystem;                           // 0xd8(0x8)
 	int                                                          GlowMaterialIndex;                                 // 0xe0(0x4)
@@ -36,6 +36,19 @@ public:
 	float                                                        GlowUpdateSpeed;                                   // 0xf4(0x4)
 	class BreakableActorBase*                                    BreakableActor;                                    // 0xf8(0x8)
 	class MaterialInstanceDynamic*                               GlowMaterial;                                      // 0x100(0x8)
+};
+
+
+// Size 0x100 (Full Size[0x1c8] - InheritedSize[0xc8]
+class BreakableActorAudioComponent: public ActorComponent
+{
+public:
+	bool                                                         UseParentEmitter;                                  // 0xc8(0x1)
+	class WwiseObjectPoolWrapper*                                AudioPool;                                         // 0xd0(0x8)
+	class WwiseEvent*                                            PlayMusicEvent;                                    // 0xd8(0x8)
+	class WwiseEvent*                                            StopMusicEvent;                                    // 0xe0(0x8)
+	class WwiseEvent*                                            PlayDamagedEvent;                                  // 0xe8(0x8)
+	class WwiseEvent*                                            PlayDestroyedEvent;                                // 0xf0(0x8)
 };
 
 
@@ -52,19 +65,6 @@ public:
 	class PrimitiveComponent*                                    TargetMesh;                                        // 0xf8(0x8)
 	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x100(0x10)
 	class BreakableActorBase*                                    BreakableActor;                                    // 0x110(0x8)
-};
-
-
-// Size 0x100 (Full Size[0x1c8] - InheritedSize[0xc8]
-class BreakableActorAudioComponent: public ActorComponent
-{
-public:
-	bool                                                         UseParentEmitter;                                  // 0xc8(0x1)
-	class WwiseObjectPoolWrapper*                                AudioPool;                                         // 0xd0(0x8)
-	class WwiseEvent*                                            PlayMusicEvent;                                    // 0xd8(0x8)
-	class WwiseEvent*                                            StopMusicEvent;                                    // 0xe0(0x8)
-	class WwiseEvent*                                            PlayDamagedEvent;                                  // 0xe8(0x8)
-	class WwiseEvent*                                            PlayDestroyedEvent;                                // 0xf0(0x8)
 };
 
 

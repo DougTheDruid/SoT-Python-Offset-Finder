@@ -6,17 +6,15 @@
 #include "MovieSceneCapture_Structs.h"
 
 
-// Size 0x1b8 (Full Size[0x1e0] - InheritedSize[0x28]
-class MovieSceneCapture: public Object
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class CompositionGraphCaptureSettings: public MovieSceneCaptureProtocolSettings
 {
 public:
-	struct                                                       CaptureType;                                       // 0x38(0x8)
-	class MovieSceneCaptureProtocolSettings*                     ProtocolSettings;                                  // 0x40(0x8)
-	struct                                                       Settings;                                          // 0x48(0x50)
-	bool                                                         bUseSeparateProcess;                               // 0x98(0x1)
-	bool                                                         bCloseEditorWhenCaptureStarts;                     // 0x99(0x1)
-	struct FString                                               AdditionalCommandLineArguments;                    // 0xa0(0x10)
-	struct FString                                               InheritedCommandLineArguments;                     // 0xb0(0x10)
+	struct CompositionGraphCapturePasses                         IncludeRenderPasses;                               // 0x28(0x10)
+	bool                                                         bCaptureFramesInHDR;                               // 0x38(0x1)
+	int                                                          HDRCompressionQuality;                             // 0x3c(0x4)
+	char                                                         CaptureGamut;                                      // 0x40(0x1)
+	struct StringAssetReference                                  PostProcessingMaterial;                            // 0x48(0x10)
 };
 
 
@@ -38,15 +36,17 @@ public:
 };
 
 
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class CompositionGraphCaptureSettings: public MovieSceneCaptureProtocolSettings
+// Size 0x1b8 (Full Size[0x1e0] - InheritedSize[0x28]
+class MovieSceneCapture: public Object
 {
 public:
-	struct                                                       IncludeRenderPasses;                               // 0x28(0x10)
-	bool                                                         bCaptureFramesInHDR;                               // 0x38(0x1)
-	int                                                          HDRCompressionQuality;                             // 0x3c(0x4)
-	char                                                         CaptureGamut;                                      // 0x40(0x1)
-	struct                                                       PostProcessingMaterial;                            // 0x48(0x10)
+	struct CaptureProtocolID                                     CaptureType;                                       // 0x38(0x8)
+	class MovieSceneCaptureProtocolSettings*                     ProtocolSettings;                                  // 0x40(0x8)
+	struct MovieSceneCaptureSettings                             Settings;                                          // 0x48(0x50)
+	bool                                                         bUseSeparateProcess;                               // 0x98(0x1)
+	bool                                                         bCloseEditorWhenCaptureStarts;                     // 0x99(0x1)
+	struct FString                                               AdditionalCommandLineArguments;                    // 0xa0(0x10)
+	struct FString                                               InheritedCommandLineArguments;                     // 0xb0(0x10)
 };
 
 
@@ -55,7 +55,7 @@ class LevelCapture: public MovieSceneCapture
 {
 public:
 	bool                                                         bAutoStartCapture;                                 // 0x1e0(0x1)
-	struct                                                       PrerequisiteActorId;                               // 0x1ec(0x10)
+	struct Guid                                                  PrerequisiteActorId;                               // 0x1ec(0x10)
 };
 
 

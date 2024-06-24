@@ -19,13 +19,13 @@
       },
       {
         "Name": "SirenAnimationData",
-        "Type": "struct",
+        "Type": "struct SirenAnimationDataStructure",
         "Size": "0x60",
         "Offset": "0x460"
       },
       {
         "Name": "AttackAnimations",
-        "Type": "struct",
+        "Type": "struct AthenaAnimationWeapon",
         "Size": "0xb8",
         "Offset": "0x4c0"
       },
@@ -91,7 +91,7 @@
       },
       {
         "Name": "TimeBeforeAlternativeAggressiveAnimationToggleFlips",
-        "Type": "struct",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x5b0"
       },
@@ -115,13 +115,13 @@
       },
       {
         "Name": "FullBodyStateMachine",
-        "Type": "struct",
+        "Type": "struct CustomAnimationMontageStateMachine",
         "Size": "0xd8",
         "Offset": "0x5d8"
       },
       {
         "Name": "HitReacts",
-        "Type": "struct",
+        "Type": "struct HitReactionAnimationState",
         "Size": "0x28",
         "Offset": "0x6b0"
       }
@@ -135,7 +135,7 @@
     "Attributes": [
       {
         "Name": "SirenAnimationData",
-        "Type": "struct",
+        "Type": "struct SirenAnimationDataStructure",
         "Size": "0x60",
         "Offset": "0x28"
       }

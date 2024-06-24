@@ -40,7 +40,7 @@ LevelSequencePlayerSnapshot:
   - Name: Settings
     Offset: '0x88'
     Size: '0x8'
-    Type: struct
+    Type: struct LevelSequenceSnapshotSettings
   ClassSize: '0x90'
 LevelSequenceSnapshotSettings:
   Attributes:

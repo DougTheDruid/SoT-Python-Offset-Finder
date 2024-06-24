@@ -1,38 +1,4 @@
 {
-  "DynamicColourPointLightComponent": {
-    "Super": "PointLightComponent",
-    "FullSize": "0x5e0",
-    "InheritedSize": "0x4b0",
-    "ClassSize": "0x130",
-    "Attributes": [
-      {
-        "Name": "ActivationCurve",
-        "Type": "struct",
-        "Size": "0x80",
-        "Offset": "0x4a8"
-      },
-      {
-        "Name": "DeactivationCurve",
-        "Type": "struct",
-        "Size": "0x80",
-        "Offset": "0x528"
-      }
-    ]
-  },
-  "SkeletalMeshAggregateTickComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Mesh",
-        "Type": "class SkeletalMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      }
-    ]
-  },
   "PrimitiveCollisionExtentAdjustOverTimeComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x108",
@@ -50,6 +16,40 @@
         "Type": "class World*",
         "Size": "0x8",
         "Offset": "0xf8"
+      }
+    ]
+  },
+  "BoxedRpcDispatcherComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "AckPendingClientRPCs",
+        "Type": "TArray<struct SerialisedRpc>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "DynamicColourPointLightComponent": {
+    "Super": "PointLightComponent",
+    "FullSize": "0x5e0",
+    "InheritedSize": "0x4b0",
+    "ClassSize": "0x130",
+    "Attributes": [
+      {
+        "Name": "ActivationCurve",
+        "Type": "struct RuntimeFloatCurve",
+        "Size": "0x80",
+        "Offset": "0x4a8"
+      },
+      {
+        "Name": "DeactivationCurve",
+        "Type": "struct RuntimeFloatCurve",
+        "Size": "0x80",
+        "Offset": "0x528"
       }
     ]
   },
@@ -115,6 +115,20 @@
       }
     ]
   },
+  "StringToAssetClassMap": {
+    "Super": "DataAsset",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "StringAssetClassPairs",
+        "Type": "TArray<struct StringAssetClassPair>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "PersistentAssetCollectionDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x48",
@@ -135,49 +149,17 @@
       }
     ]
   },
-  "StringToAssetClassMap": {
-    "Super": "DataAsset",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
+  "SkeletalMeshAggregateTickComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "StringAssetClassPairs",
-        "Type": "TArray<struct StringAssetClassPair>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "SphereCollisionExtentAdjustOverTimeComponent": {
-    "Super": "PrimitiveCollisionExtentAdjustOverTimeComponent",
-    "FullSize": "0x120",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ShouldAdjustSphereRadius",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x108"
-      },
-      {
-        "Name": "PostAdjustmentSphereRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10c"
-      },
-      {
-        "Name": "ServerSizeScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "SphereCollisionToAdjust",
-        "Type": "class SphereComponent*",
+        "Name": "Mesh",
+        "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0xc8"
       }
     ]
   },
@@ -225,7 +207,7 @@
       },
       {
         "Name": "ServerSizeScale",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x120"
       },
@@ -234,6 +216,38 @@
         "Type": "class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x130"
+      }
+    ]
+  },
+  "SphereCollisionExtentAdjustOverTimeComponent": {
+    "Super": "PrimitiveCollisionExtentAdjustOverTimeComponent",
+    "FullSize": "0x120",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ShouldAdjustSphereRadius",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "PostAdjustmentSphereRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10c"
+      },
+      {
+        "Name": "ServerSizeScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "SphereCollisionToAdjust",
+        "Type": "class SphereComponent*",
+        "Size": "0x8",
+        "Offset": "0x118"
       }
     ]
   },

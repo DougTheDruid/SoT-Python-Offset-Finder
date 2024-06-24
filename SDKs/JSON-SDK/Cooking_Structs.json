@@ -1,70 +1,18 @@
 {
-  "CookStartTelemetryEvent": {
-    "ClassSize": "0x30",
+  "CookerSmokeFeedbackEntry": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ItemName",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "FeedbackLevel",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "CookState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "CookId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "CookEndTelemetryEvent": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "ItemName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CookState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "CookId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "OnRemovedItemFromCookingPot": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Interactor",
-        "Type": "class Actor*",
+        "Name": "SmokeVFX",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
-        "Offset": "0x0"
+        "Offset": "0x8"
       }
     ]
   },
@@ -127,37 +75,61 @@
       }
     ]
   },
-  "CookerSmokeFeedbackEntry": {
-    "ClassSize": "0x10",
+  "CookEndTelemetryEvent": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "FeedbackLevel",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "ItemName",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "SmokeVFX",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Name": "CookState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "CookId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },
-  "OnPlacedItemInCookingPot": {
-    "ClassSize": "0x10",
+  "CookStartTelemetryEvent": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "Interactor",
-        "Type": "class Actor*",
-        "Size": "0x8",
+        "Name": "ItemName",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "ItemToCook",
-        "Type": "class ItemInfo*",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Name": "CookState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "CookId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },
@@ -175,6 +147,34 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x4"
+      }
+    ]
+  },
+  "OnRemovedItemFromCookingPot": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Interactor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "OnPlacedItemInCookingPot": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Interactor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ItemToCook",
+        "Type": "class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },

@@ -91,13 +91,13 @@
       },
       {
         "Name": "RowboatDestroyedAtGoldenSandsStat",
-        "Type": "struct",
+        "Type": "struct PlayerStat",
         "Size": "0x4",
         "Offset": "0x570"
       },
       {
         "Name": "RowboatDestroyedAwayFromGoldenSandsStat",
-        "Type": "struct",
+        "Type": "struct PlayerStat",
         "Size": "0x4",
         "Offset": "0x574"
       }

@@ -1,76 +1,4 @@
 {
-  "SerialisedConstructionInfoStore": {
-    "ClassSize": "0x140",
-    "Attributes": [
-      {
-        "Name": "SerialisedConstructionInfo",
-        "Type": "struct",
-        "Size": "0x40",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestActionStateMessage": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "TestProperty",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "InnerWithObjTestStruct": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ObjPointer",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestActionStateConstructionInfo": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "IntProp",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "ActionStateConstructionInfo": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Id",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Type",
-        "Type": "class ScriptStruct*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "TestActionStateSerialisableData": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "IntProp",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "InnerTestStruct": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -88,49 +16,98 @@
       }
     ]
   },
-  "TestActionStateConstructionInfoWithInner": {
-    "ClassSize": "0x48",
+  "TestActionStateMessage": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "FloatProp",
-        "Type": "float",
+        "Name": "TestProperty",
+        "Type": "int",
         "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "InnerStruct",
-        "Type": "struct",
-        "Size": "0x18",
-        "Offset": "0x30"
+        "Offset": "0x10"
       }
     ]
   },
-  "ResetStateMachineRpc": {
-    "ClassSize": "0x150",
+  "ActorActionStateConstructionInfo": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "LatestEpochIds",
-        "Type": "struct",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
+        "Name": "ActorOwner",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TestActionStateSerialisableData": {
+    "ClassSize": "0x38",
+    "Attributes": [
       {
-        "Name": "LatestRequestIds",
-        "Type": "struct",
-        "Size": "0x1",
-        "Offset": "0x5"
-      },
-      {
-        "Name": "PerTrackConstructionInfoStore",
-        "Type": "struct",
-        "Size": "0x140",
-        "Offset": "0x10"
+        "Name": "IntProp",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
       }
     ]
   },
   "ActionStateMessage": {
     "ClassSize": "0x10",
     "Attributes": [
+      {
+        "Name": "Type",
+        "Type": "class ScriptStruct*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ActionStatePriorityRelationship": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "State",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Priority",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "TestActorActionStateConstructionInfo": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "IntProp",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "SerialisedConstructionInfoStore": {
+    "ClassSize": "0x140",
+    "Attributes": [
+      {
+        "Name": "SerialisedConstructionInfo",
+        "Type": "struct SerialisedActionStateInfo",
+        "Size": "0x40",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ActionStateConstructionInfo": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
       {
         "Name": "Type",
         "Type": "class ScriptStruct*",
@@ -156,40 +133,6 @@
       }
     ]
   },
-  "TestActionStateConstructionInfoWithObjPointers": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "ObjPointer",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Inner",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "Array",
-        "Type": "TArray<class Object*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "ActorActionStateConstructionInfo": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "ActorOwner",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "ActionStateChangeRequestId": {
     "ClassSize": "0x1",
     "Attributes": [
@@ -201,31 +144,71 @@
       }
     ]
   },
-  "TestActorActionStateConstructionInfo": {
-    "ClassSize": "0x38",
+  "InnerWithObjTestStruct": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ObjPointer",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestActionStateConstructionInfo": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "IntProp",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x30"
+        "Offset": "0x28"
       }
     ]
   },
-  "ActionStatePriorityRelationship": {
-    "ClassSize": "0x10",
+  "ResetStateMachineRpc": {
+    "ClassSize": "0x150",
     "Attributes": [
       {
-        "Name": "State",
-        "Type": "class UClass*",
-        "Size": "0x8",
+        "Name": "LatestEpochIds",
+        "Type": "struct ActionStateChangeRequestId",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "Priority",
-        "Type": "byte",
+        "Name": "LatestRequestIds",
+        "Type": "struct ActionStateChangeRequestId",
         "Size": "0x1",
-        "Offset": "0x8"
+        "Offset": "0x5"
+      },
+      {
+        "Name": "PerTrackConstructionInfoStore",
+        "Type": "struct SerialisedConstructionInfoStore",
+        "Size": "0x140",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "TestActionStateConstructionInfoWithObjPointers": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "ObjPointer",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Inner",
+        "Type": "struct InnerWithObjTestStruct",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "Array",
+        "Type": "TArray<class Object*>",
+        "Size": "0x10",
+        "Offset": "0x38"
       }
     ]
   },
@@ -243,6 +226,23 @@
         "Type": "TArray<struct ActionStatePriorityRelationship>",
         "Size": "0x10",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "TestActionStateConstructionInfoWithInner": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "FloatProp",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "InnerStruct",
+        "Type": "struct InnerTestStruct",
+        "Size": "0x18",
+        "Offset": "0x30"
       }
     ]
   },

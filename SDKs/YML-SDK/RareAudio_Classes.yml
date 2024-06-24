@@ -27,7 +27,7 @@ AnimNotify_WwiseSound:
   - Name: OwnedByWorldEmitterOffset
     Offset: '0x44'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: PerspectiveRestriction
     Offset: '0x50'
     Size: '0x1'
@@ -139,7 +139,7 @@ WwiseEmitterComponent:
   - Name: Emitter
     Offset: '0x2e8'
     Size: '0x20'
-    Type: struct
+    Type: struct WwiseEmitter
   - Name: WwiseObjectPoolWrapper
     Offset: '0x308'
     Size: '0x8'
@@ -169,7 +169,7 @@ WwiseObjectPoolWrapper:
   - Name: PoolDensityParams
     Offset: '0x38'
     Size: '0x28'
-    Type: struct
+    Type: struct WwiseNativeEmitterPoolDensityParams
   ClassSize: '0x50'
   FullSize: '0x78'
   InheritedSize: '0x28'

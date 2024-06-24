@@ -5,15 +5,15 @@ AthenaLoadingScreenParams:
   - Name: BootLoadingScreen
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: TeleportLoadingScreen
     Offset: '0x48'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: AdventureLoadingScreens
     Offset: '0x58'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x30'
   FullSize: '0x68'
   InheritedSize: '0x38'
@@ -55,15 +55,15 @@ SlateLoadingScreenParams:
   - Name: PlaceholderSpinnerTexture
     Offset: '0x40'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: BackgroundColour
     Offset: '0x50'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: PrimaryImage
     Offset: '0x60'
     Size: '0x30'
-    Type: struct
+    Type: struct SlateLoadingScreenImageParams
   - Name: RandomisedPrimaryImages
     Offset: '0x90'
     Size: '0x10'
@@ -83,11 +83,11 @@ SlateLoadingScreenParams:
   - Name: SpinnerTextColour
     Offset: '0xf0'
     Size: '0x30'
-    Type: struct
+    Type: struct SlateColor
   - Name: SpinnerTextFont
     Offset: '0x120'
     Size: '0x40'
-    Type: struct
+    Type: struct SlateFontInfo
   - Name: SpinnerSize
     Offset: '0x160'
     Size: '0x4'
@@ -95,7 +95,7 @@ SlateLoadingScreenParams:
   - Name: SpinnerMargin
     Offset: '0x164'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: SpinnerPadding
     Offset: '0x174'
     Size: '0x4'
@@ -103,11 +103,11 @@ SlateLoadingScreenParams:
   - Name: SpinnerIcon
     Offset: '0x178'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: TipsMargin
     Offset: '0x188'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: TipWrapLength
     Offset: '0x198'
     Size: '0x4'
@@ -127,7 +127,7 @@ SlateLoadingScreenParams:
   - Name: LoadingTipFont
     Offset: '0x1a8'
     Size: '0x40'
-    Type: struct
+    Type: struct SlateFontInfo
   - Name: LoadingTipFontLineHeightPercentage
     Offset: '0x1e8'
     Size: '0x4'
@@ -139,7 +139,7 @@ SlateLoadingScreenParams:
   - Name: LoadingScreenTipColour
     Offset: '0x200'
     Size: '0x30'
-    Type: struct
+    Type: struct SlateColor
   - Name: AllowSyncronousAssetLoad
     Offset: '0x230'
     Size: '0x1'

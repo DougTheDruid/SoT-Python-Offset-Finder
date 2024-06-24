@@ -13,11 +13,11 @@ DisplayInvasionBannersStepDesc:
   - Name: DisplayShipsNameForCrewId
     Offset: '0xc0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableGuid
   - Name: DisplayBannersForFaction
     Offset: '0xf0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableName
   ClassSize: '0xa0'
   FullSize: '0x120'
   InheritedSize: '0x80'
@@ -27,11 +27,11 @@ GetInvasionBattleLocationStepDesc:
   - Name: Location
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableVector
   - Name: Radius
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableFloat
   ClassSize: '0x60'
   FullSize: '0xe0'
   InheritedSize: '0x80'
@@ -41,39 +41,39 @@ GetInvasionShipsStepDesc:
   - Name: AggressiveShip
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   - Name: AggressiveShip
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   - Name: PassiveShip
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   - Name: AggressiveCrewId
     Offset: '0x110'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableGuid
   - Name: AggressiveCrewId
     Offset: '0x140'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableGuid
   - Name: PassiveCrewId
     Offset: '0x170'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableGuid
   - Name: AggressiveFaction
     Offset: '0x1a0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableName
   - Name: AggressiveFaction
     Offset: '0x1d0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableName
   - Name: PassiveFaction
     Offset: '0x200'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableName
   ClassSize: '0x1b0'
   FullSize: '0x230'
   InheritedSize: '0x80'
@@ -271,7 +271,7 @@ InvasionSettings:
   - Name: InvasionServiceDataAsset
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -291,11 +291,11 @@ TaleQuestInvasionCreateBattleBoundsStepDesc:
   - Name: Ship1
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   - Name: Ship2
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   ClassSize: '0x60'
   FullSize: '0xe0'
   InheritedSize: '0x80'
@@ -329,7 +329,7 @@ TaleQuestInvasionRemoveBattleBoundsStepDesc:
   - Name: ShipInBattleBounds
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
@@ -371,27 +371,27 @@ WaitForShipToBeDefeatedStepDesc:
   - Name: WinningShip
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   - Name: DefeatedShip
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   - Name: WinningCrewId
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableGuid
   - Name: DefeatedCrewId
     Offset: '0x110'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableGuid
   - Name: WinningFaction
     Offset: '0x140'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableName
   - Name: DefeatedFaction
     Offset: '0x170'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableName
   - Name: TimeoutTimerIntervalInMinutes
     Offset: '0x1a0'
     Size: '0x4'

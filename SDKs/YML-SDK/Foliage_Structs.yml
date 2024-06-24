@@ -24,15 +24,15 @@ ProceduralFoliageInstance:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Rotation
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: Normal
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Age
     Offset: '0x2c'
     Size: '0x4'

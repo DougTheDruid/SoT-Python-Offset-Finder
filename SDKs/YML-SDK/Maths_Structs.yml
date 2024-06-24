@@ -5,11 +5,11 @@ FixedStepInterpCurvePointVector2D:
   - Name: OutVal
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Tangent
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x10'
 FixedStepInterpCurveVector2D:
   Attributes:
@@ -50,11 +50,11 @@ OrientedPoint:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Rotation
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   ClassSize: '0x18'
 Pendulum:
   Attributes:
@@ -97,14 +97,14 @@ Pendulum:
   - Name: InterpolationAsTransform
     Offset: '0x30'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   ClassSize: '0x60'
 RotationUpdateResult:
   Attributes:
   - Name: UpdatedRotation
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: SpinAngle
     Offset: '0xc'
     Size: '0x4'

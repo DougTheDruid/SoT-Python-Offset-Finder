@@ -27,9 +27,9 @@ IsNewInteractingPlayerCondition:
   - Name: PlayerPayloadSelector
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct ConditionContextPayloadSelectorInstance
   - Name: InteractablePayloadSelector
     Offset: '0x28'
     Size: '0x20'
-    Type: struct
+    Type: struct ConditionContextPayloadSelectorInstance
   ClassSize: '0x48'

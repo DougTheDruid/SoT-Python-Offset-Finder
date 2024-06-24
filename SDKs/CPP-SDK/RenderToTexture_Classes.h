@@ -8,7 +8,7 @@ class RenderToTextureSceneDetails: public Object
 {
 public:
 	class UClass*                                                ClassToSpawn;                                      // 0x28(0x8)
-	struct                                                       Resolution;                                        // 0x30(0x8)
+	struct IntPoint                                              Resolution;                                        // 0x30(0x8)
 	class World*                                                 World;                                             // 0x38(0x8)
 	class World*                                                 ParentWorld;                                       // 0x40(0x8)
 	class Actor*                                                 SpawnedActor;                                      // 0x48(0x8)

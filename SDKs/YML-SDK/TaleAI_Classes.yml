@@ -29,7 +29,7 @@ TaleQuestSpawnAICustomOnDespawnFrame:
   - Name: Data
     Offset: '0x30'
     Size: '0x20'
-    Type: struct
+    Type: struct SpawnAICustomOnDespawnTaskData
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -43,7 +43,7 @@ TaleQuestSpawnAICustomOnDespawnTask:
   - Name: TaskData
     Offset: '0x88'
     Size: '0x20'
-    Type: struct
+    Type: struct SpawnAICustomOnDespawnTaskData
   ClassSize: '0x30'
   FullSize: '0xa8'
   InheritedSize: '0x78'
@@ -53,7 +53,7 @@ TaleQuestSpawnAICustomOnSpawnFrame:
   - Name: Data
     Offset: '0x30'
     Size: '0x18'
-    Type: struct
+    Type: struct SpawnAICustomOnSpawnTaskData
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
@@ -67,7 +67,7 @@ TaleQuestSpawnAICustomOnSpawnTask:
   - Name: TaskData
     Offset: '0x88'
     Size: '0x18'
-    Type: struct
+    Type: struct SpawnAICustomOnSpawnTaskData
   ClassSize: '0xa8'
   FullSize: '0x120'
   InheritedSize: '0x78'
@@ -81,7 +81,7 @@ TaleQuestSpawnAICustomPreSpawnTask:
   - Name: TaskData
     Offset: '0x90'
     Size: '0x78'
-    Type: struct
+    Type: struct SpawnAICustomPreSpawnTaskData
   ClassSize: '0x98'
   FullSize: '0x110'
   InheritedSize: '0x78'
@@ -91,7 +91,7 @@ TaleQuestSpawnAICustomRootStep:
   - Name: Params
     Offset: '0xa8'
     Size: '0x10'
-    Type: struct
+    Type: struct TaleStructInstance
   - Name: ActiveTasks
     Offset: '0xb8'
     Size: '0x10'
@@ -109,27 +109,27 @@ TaleQuestSpawnAICustomRootStepDesc:
   - Name: SetupTaskData
     Offset: '0x88'
     Size: '0x18'
-    Type: struct
+    Type: struct SpawnAICustomSetupTaskData
   - Name: OnTriggerWaveTaskData
     Offset: '0xa0'
     Size: '0x10'
-    Type: struct
+    Type: struct SpawnActorCustomOnTriggerWaveTaskData
   - Name: OnCompleteWaveTaskData
     Offset: '0xb0'
     Size: '0x8'
-    Type: struct
+    Type: struct SpawnActorCustomOnCompleteWaveTaskData
   - Name: PreSpawnTaskData
     Offset: '0xb8'
     Size: '0x78'
-    Type: struct
+    Type: struct SpawnAICustomPreSpawnTaskData
   - Name: OnSpawnTaskData
     Offset: '0x130'
     Size: '0x18'
-    Type: struct
+    Type: struct SpawnAICustomOnSpawnTaskData
   - Name: OnDespawnTaskData
     Offset: '0x148'
     Size: '0x20'
-    Type: struct
+    Type: struct SpawnAICustomOnDespawnTaskData
   ClassSize: '0xe8'
   FullSize: '0x168'
   InheritedSize: '0x80'
@@ -139,7 +139,7 @@ TaleQuestSpawnAICustomSetupTask:
   - Name: TaskData
     Offset: '0x78'
     Size: '0x18'
-    Type: struct
+    Type: struct SpawnAICustomSetupTaskData
   - Name: Body
     Offset: '0x90'
     Size: '0x10'
@@ -153,7 +153,7 @@ TaleQuestSpawnAICustomSpawnerOnCompleteWaveTask:
   - Name: TaskData
     Offset: '0x78'
     Size: '0x8'
-    Type: struct
+    Type: struct SpawnActorCustomOnCompleteWaveTaskData
   - Name: Body
     Offset: '0x80'
     Size: '0x10'
@@ -167,7 +167,7 @@ TaleQuestSpawnAICustomSpawnerOnTriggerWaveTask:
   - Name: TaskData
     Offset: '0x78'
     Size: '0x10'
-    Type: struct
+    Type: struct SpawnActorCustomOnTriggerWaveTaskData
   - Name: Body
     Offset: '0x88'
     Size: '0x10'
@@ -215,7 +215,7 @@ TaleQuestSpawnAICustomStepDesc:
   - Name: ParamterInstance
     Offset: '0xf0'
     Size: '0x10'
-    Type: struct
+    Type: struct TaleStructInstance
   ClassSize: '0x80'
   FullSize: '0x100'
   InheritedSize: '0x80'

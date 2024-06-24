@@ -1,4 +1,44 @@
 {
+  "LevelSequenceSnapshotSettings": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ZeroPadAmount",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FrameRate",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "LevelSequenceObject": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "ObjectOrOwner",
+        "Type": "lazyobject",
+        "Size": "0x1c",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ComponentName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "CachedComponent",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "LevelSequencePlayerSnapshot": {
     "ClassSize": "0x90",
     "Attributes": [
@@ -34,49 +74,9 @@
       },
       {
         "Name": "Settings",
-        "Type": "struct",
+        "Type": "struct LevelSequenceSnapshotSettings",
         "Size": "0x8",
         "Offset": "0x88"
-      }
-    ]
-  },
-  "LevelSequenceObject": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "ObjectOrOwner",
-        "Type": "lazyobject",
-        "Size": "0x1c",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ComponentName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "CachedComponent",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "LevelSequenceSnapshotSettings": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ZeroPadAmount",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FrameRate",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
       }
     ]
   },

@@ -5,7 +5,7 @@ BarrelsOfPlentyDebugLocationEntry:
   - Name: WorldSpacePosition
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: SinkTime
     Offset: '0xc'
     Size: '0x4'

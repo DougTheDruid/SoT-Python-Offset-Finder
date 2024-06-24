@@ -5,7 +5,7 @@ OceanCrawlerAnimationData:
   - Name: OceanCrawlerAnimationDataStructure
     Offset: '0x28'
     Size: '0x90'
-    Type: struct
+    Type: struct OceanCrawlerAnimationDataStructure
   ClassSize: '0x90'
   FullSize: '0xb8'
   InheritedSize: '0x28'
@@ -15,11 +15,11 @@ OceanCrawlerAnimationInstance:
   - Name: LoadedAnimations
     Offset: '0x458'
     Size: '0x90'
-    Type: struct
+    Type: struct OceanCrawlerAnimationDataStructure
   - Name: MovementData
     Offset: '0x4e8'
     Size: '0x18'
-    Type: struct
+    Type: struct ActorVelocityData
   - Name: CurrentDirection
     Offset: '0x500'
     Size: '0x4'
@@ -27,7 +27,7 @@ OceanCrawlerAnimationInstance:
   - Name: AttackAnims
     Offset: '0x508'
     Size: '0xb8'
-    Type: struct
+    Type: struct AthenaAnimationWeapon
   - Name: UseDefaultAnimations
     Offset: '0x5c0'
     Size: '0x1'
@@ -47,11 +47,11 @@ OceanCrawlerAnimationInstance:
   - Name: MontagePlayer
     Offset: '0x5d0'
     Size: '0xd8'
-    Type: struct
+    Type: struct CustomAnimationMontageStateMachine
   - Name: HitReacts
     Offset: '0x6a8'
     Size: '0x28'
-    Type: struct
+    Type: struct HitReactionAnimationState
   ClassSize: '0x2e0'
   FullSize: '0x720'
   InheritedSize: '0x440'

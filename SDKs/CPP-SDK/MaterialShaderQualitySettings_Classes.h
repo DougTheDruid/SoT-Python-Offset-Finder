@@ -10,7 +10,7 @@
 class ShaderPlatformQualitySettings: public Object
 {
 public:
-	struct                                                       QualityOverrides;                                  // 0x28(0x4)
+	struct MaterialQualityOverrides                              QualityOverrides;                                  // 0x28(0x4)
 };
 
 

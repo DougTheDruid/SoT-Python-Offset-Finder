@@ -1,10 +1,21 @@
 {
+  "AdvertiseGameEventOnDemandAvailabilityTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "GameEventAvailability",
+        "Type": "struct GameEventAvailabilityModel",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "GameEventsOnDemandLoserTunnelCrewData": {
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -36,17 +47,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x11"
-      }
-    ]
-  },
-  "AdvertiseGameEventOnDemandAvailabilityTelemetryEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "GameEventAvailability",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x0"
       }
     ]
   },

@@ -30,7 +30,7 @@ MovieSceneCaptureSettings:
   - Name: OutputDirectory
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct DirectoryPath
   - Name: bCreateTemporaryCopiesOfLevels
     Offset: '0x10'
     Size: '0x1'
@@ -66,7 +66,7 @@ MovieSceneCaptureSettings:
   - Name: Resolution
     Offset: '0x40'
     Size: '0x8'
-    Type: struct
+    Type: struct CaptureResolution
   - Name: bEnableTextureStreaming
     Offset: '0x48'
     Size: '0x1'

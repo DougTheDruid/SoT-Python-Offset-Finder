@@ -1,12 +1,18 @@
 {
-  "OwnerListEntry": {
-    "ClassSize": "0x10",
+  "CrewTrackedItemOwnershipSet": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "OwnerList",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
+        "Name": "Item",
+        "Type": "class Actor*",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -27,23 +33,6 @@
       }
     ]
   },
-  "CrewTrackedItemOwnershipSet": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Item",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CrewId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "CrewTrackedItemOwnershipChanged": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -55,13 +44,13 @@
       },
       {
         "Name": "CrewId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
         "Name": "PreviousCrewId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -70,6 +59,17 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "OwnerListEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "OwnerList",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },

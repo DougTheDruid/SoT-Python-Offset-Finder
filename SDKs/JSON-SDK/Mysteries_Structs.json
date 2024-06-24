@@ -1,27 +1,4 @@
 {
-  "SirenPuzzleLockState": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "LockId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UnlockReactions",
-        "Type": "TArray<struct LandmarkReactionKeyFrame>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "UnlockingCrews",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
   "AbandonedNoteWeightedTextEntry": {
     "ClassSize": "0x78",
     "Attributes": [
@@ -42,6 +19,29 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x70"
+      }
+    ]
+  },
+  "SirenPuzzleLockState": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "LockId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UnlockReactions",
+        "Type": "TArray<struct LandmarkReactionKeyFrame>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "UnlockingCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },

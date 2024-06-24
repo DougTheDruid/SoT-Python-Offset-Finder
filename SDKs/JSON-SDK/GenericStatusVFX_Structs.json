@@ -1,21 +1,4 @@
 {
-  "StatusAudioChangedEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "StatusApplied",
-        "Type": "struct",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IsActive",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x18"
-      }
-    ]
-  },
   "StatusVFXChangedEvent": {
     "ClassSize": "0x1",
     "Attributes": [
@@ -24,6 +7,23 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "StatusAudioChangedEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StatusApplied",
+        "Type": "struct Status",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IsActive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
       }
     ]
   },

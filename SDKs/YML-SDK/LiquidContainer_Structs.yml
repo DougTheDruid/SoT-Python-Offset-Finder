@@ -9,15 +9,15 @@ LiquidTypeParams:
   - Name: FogColour
     Offset: '0x4'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: LiquidColour
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ScumColour
     Offset: '0x1c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: EdgeScumStart
     Offset: '0x28'
     Size: '0x4'

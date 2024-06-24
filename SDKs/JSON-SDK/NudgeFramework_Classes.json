@@ -1,4 +1,24 @@
 {
+  "NudgeInterpolationParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "NudgeInterpParams",
+        "Type": "struct NudgeInterpolationParams",
+        "Size": "0x20",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ControllerForceFeedbackEffect",
+        "Type": "class ForceFeedbackEffect*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      }
+    ]
+  },
   "NudgePolicy": {
     "Super": "Object",
     "FullSize": "0xc8",
@@ -16,26 +36,6 @@
         "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0xc0"
-      }
-    ]
-  },
-  "NudgeInterpolationParamsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "NudgeInterpParams",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ControllerForceFeedbackEffect",
-        "Type": "class ForceFeedbackEffect*",
-        "Size": "0x8",
-        "Offset": "0x48"
       }
     ]
   },

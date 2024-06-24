@@ -6,6 +6,20 @@
 #include "AdventureOnDemand_Structs.h"
 
 
+// Size 0x128 (Full Size[0x158] - InheritedSize[0x30]
+class GameEventOnDemandArrivalTunnelWorkerBase: public AdventureOnDemandArrivalTunnelWorkerBase
+{
+public:
+	float                                                        TriggerTunnelFailureTimeout;                       // 0x30(0x4)
+	float                                                        MinRangeFromTarget;                                // 0x34(0x4)
+	float                                                        MaxRangeFromTarget;                                // 0x38(0x4)
+	float                                                        SubsequentCrewJoinRadiusModifier;                  // 0x3c(0x4)
+	class UClass*                                                GameEventType;                                     // 0x40(0x8)
+	class VoyageDescDataAsset*                                   LeaveTunnelVoyageDesc;                             // 0x128(0x8)
+	float                                                        RetryRequestEventFrequency;                        // 0x144(0x4)
+};
+
+
 // Size 0x310 (Full Size[0x6d8] - InheritedSize[0x3c8]
 class AdventureOnDemandService: public Actor
 {
@@ -19,20 +33,6 @@ public:
 	TArray<struct Guid>                                          CrewsDivingToTunnel;                               // 0x4b8(0x10)
 	TArray<struct Guid>                                          CrewsInArrivalTunnel;                              // 0x4c8(0x10)
 	TArray<struct Guid>                                          CrewsOnCooldown;                                   // 0x4d8(0x10)
-};
-
-
-// Size 0x128 (Full Size[0x158] - InheritedSize[0x30]
-class GameEventOnDemandArrivalTunnelWorkerBase: public AdventureOnDemandArrivalTunnelWorkerBase
-{
-public:
-	float                                                        TriggerTunnelFailureTimeout;                       // 0x30(0x4)
-	float                                                        MinRangeFromTarget;                                // 0x34(0x4)
-	float                                                        MaxRangeFromTarget;                                // 0x38(0x4)
-	float                                                        SubsequentCrewJoinRadiusModifier;                  // 0x3c(0x4)
-	class UClass*                                                GameEventType;                                     // 0x40(0x8)
-	class VoyageDescDataAsset*                                   LeaveTunnelVoyageDesc;                             // 0x128(0x8)
-	float                                                        RetryRequestEventFrequency;                        // 0x144(0x4)
 };
 
 

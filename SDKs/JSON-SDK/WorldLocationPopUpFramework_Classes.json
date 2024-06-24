@@ -1,4 +1,24 @@
 {
+  "TaleAllowWorldLocationPopUpStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "MaxDistanceFromWorldLocationPopUp",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "NearbyActor",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x88"
+      }
+    ]
+  },
   "TaleWorldLocationPopUpService": {
     "Super": "TaleQuestService",
     "FullSize": "0x90",
@@ -10,6 +30,78 @@
         "Type": "TArray<struct TaleWorldLocationPopUpServiceEntry>",
         "Size": "0x10",
         "Offset": "0x60"
+      }
+    ]
+  },
+  "TalePreventWorldLocationPopUpStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "DisableEntireIsland",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "MaxDistanceFromWorldLocationPopUp",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "NearbyLocation",
+        "Type": "struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "WorldLocationPopUpDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x80",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "BannerIcon",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "DisplayText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "AudioOverride",
+        "Type": "class PopUpAudioDesc*",
+        "Size": "0x8",
+        "Offset": "0x78"
+      }
+    ]
+  },
+  "WorldLocationVisitorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x108",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "RevisitCooldown",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xd0"
       }
     ]
   },
@@ -48,98 +140,6 @@
         "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x358"
-      }
-    ]
-  },
-  "TaleAllowWorldLocationPopUpStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "MaxDistanceFromWorldLocationPopUp",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "NearbyActor",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x88"
-      }
-    ]
-  },
-  "WorldLocationPopUpDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x80",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "Id",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "BannerIcon",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "DisplayText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "AudioOverride",
-        "Type": "class PopUpAudioDesc*",
-        "Size": "0x8",
-        "Offset": "0x78"
-      }
-    ]
-  },
-  "TalePreventWorldLocationPopUpStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "DisableEntireIsland",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "MaxDistanceFromWorldLocationPopUp",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x84"
-      },
-      {
-        "Name": "NearbyLocation",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x88"
-      }
-    ]
-  },
-  "WorldLocationVisitorComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x108",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "RevisitCooldown",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xd0"
       }
     ]
   },

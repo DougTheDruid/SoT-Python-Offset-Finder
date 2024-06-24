@@ -1,4 +1,44 @@
 {
+  "StructSerializerObjectTestStruct": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Class",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ObjectPtr",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "StructSerializerBooleanTestStruct": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "BoolFalse",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BoolTrue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "Bitfield",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "StructSerializerArrayTestStruct": {
     "ClassSize": "0x40",
     "Attributes": [
@@ -34,29 +74,12 @@
       }
     ]
   },
-  "StructSerializerObjectTestStruct": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Class",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ObjectPtr",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "StructSerializerBuiltinTestStruct": {
     "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "Guid",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -74,73 +97,15 @@
       },
       {
         "Name": "Rotator",
-        "Type": "struct",
+        "Type": "struct Rotator",
         "Size": "0xc",
         "Offset": "0x28"
       },
       {
         "Name": "Vector",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x34"
-      }
-    ]
-  },
-  "StructSerializerTestStruct": {
-    "ClassSize": "0xc8",
-    "Attributes": [
-      {
-        "Name": "Numerics",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Booleans",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "Objects",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "Builtins",
-        "Type": "struct",
-        "Size": "0x40",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "Arrays",
-        "Type": "struct",
-        "Size": "0x40",
-        "Offset": "0x88"
-      }
-    ]
-  },
-  "StructSerializerBooleanTestStruct": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "BoolFalse",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BoolTrue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "Bitfield",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x4"
       }
     ]
   },
@@ -206,6 +171,41 @@
         "Type": "double",
         "Size": "0x8",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "StructSerializerTestStruct": {
+    "ClassSize": "0xc8",
+    "Attributes": [
+      {
+        "Name": "Numerics",
+        "Type": "struct StructSerializerNumericTestStruct",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Booleans",
+        "Type": "struct StructSerializerBooleanTestStruct",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "Objects",
+        "Type": "struct StructSerializerObjectTestStruct",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Builtins",
+        "Type": "struct StructSerializerBuiltinTestStruct",
+        "Size": "0x40",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "Arrays",
+        "Type": "struct StructSerializerArrayTestStruct",
+        "Size": "0x40",
+        "Offset": "0x88"
       }
     ]
   },

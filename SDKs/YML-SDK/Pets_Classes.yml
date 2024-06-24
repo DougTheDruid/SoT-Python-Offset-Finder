@@ -109,7 +109,7 @@ BTTask_SelectPetHangoutSpot:
   - Name: ForcedId
     Offset: '0x8c'
     Size: '0x8'
-    Type: struct
+    Type: struct HangoutSpotId
   ClassSize: '0x10'
   FullSize: '0x98'
   InheritedSize: '0x88'
@@ -119,11 +119,11 @@ BTTask_SelectWanderFlyStrategy:
   - Name: WanderRange
     Offset: '0x88'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: LowFlyRange
     Offset: '0xb8'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: WanderStrategy
     Offset: '0xe8'
     Size: '0x8'
@@ -287,7 +287,7 @@ PetFeedingDataAsset:
   - Name: PetFeedingParams
     Offset: '0x28'
     Size: '0x38'
-    Type: struct
+    Type: struct PetFeedingParams
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
@@ -395,7 +395,7 @@ PetItemInfo:
   - Name: PetCustomisation
     Offset: '0x570'
     Size: '0x28'
-    Type: struct
+    Type: struct PetCustomisation
   - Name: PetUGCNameComponent
     Offset: '0x598'
     Size: '0x8'
@@ -441,7 +441,7 @@ PetPerchComponent:
   - Name: InteractionPointLocation
     Offset: '0x16c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Enabled
     Offset: '0x178'
     Size: '0x1'
@@ -511,7 +511,7 @@ PetsService:
   - Name: PetsServiceParams
     Offset: '0xa8'
     Size: '0x38'
-    Type: struct
+    Type: struct PetsServiceParams
   - Name: OwnersToRemove
     Offset: '0xe0'
     Size: '0x10'
@@ -545,7 +545,7 @@ PetsServiceParamsDataAsset:
   - Name: Params
     Offset: '0x28'
     Size: '0x38'
-    Type: struct
+    Type: struct PetsServiceParams
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'
@@ -555,19 +555,19 @@ PetsSettings:
   - Name: PetHangoutSpotsDataAsset
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: PetListingDataAsset
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: PetsServiceParamsDataAsset
     Offset: '0x48'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: PetSpawnDefinitionsDataAsset
     Offset: '0x58'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: ExcludedStatesForRoamingAssetGeneration
     Offset: '0x68'
     Size: '0x10'
@@ -589,96 +589,96 @@ ReactStateMappingsDataAsset:
 WieldablePet:
   Attributes:
   - Name: ThirdPersonScalingModifier
-    Offset: '0x820'
+    Offset: '0x848'
     Size: '0x4'
     Type: float
   - Name: WieldablePetComponent
-    Offset: '0x828'
+    Offset: '0x850'
     Size: '0x8'
     Type: class WieldablePetComponent*
   - Name: AIPartsRetrievalComponent
-    Offset: '0x830'
+    Offset: '0x858'
     Size: '0x8'
     Type: class AIPartsRetrievalComponent*
   - Name: PetPartCustomisationComponent
-    Offset: '0x838'
+    Offset: '0x860'
     Size: '0x8'
     Type: class PetPartCustomisationComponent*
   - Name: AnimNotifyWwiseEmitterComponent
-    Offset: '0x840'
+    Offset: '0x868'
     Size: '0x8'
     Type: class AnimNotifyWwiseEmitterComponent*
   - Name: WaterExposureComponent
-    Offset: '0x848'
+    Offset: '0x870'
     Size: '0x8'
     Type: class WaterExposureComponent*
   - Name: UsableWieldableComponent
-    Offset: '0x850'
+    Offset: '0x878'
     Size: '0x8'
     Type: class UsableWieldableComponent*
   - Name: PickupableComponent
-    Offset: '0x858'
+    Offset: '0x880'
     Size: '0x8'
     Type: class PickupableComponent*
   - Name: WieldableInteractableComponent
-    Offset: '0x860'
+    Offset: '0x888'
     Size: '0x8'
     Type: class WieldableInteractableComponent*
   - Name: CleanlinessComponent
-    Offset: '0x868'
+    Offset: '0x890'
     Size: '0x8'
     Type: class CleanlinessComponent*
   - Name: LightWeightStatusEffectManagerComponent
-    Offset: '0x870'
+    Offset: '0x898'
     Size: '0x8'
     Type: class LightWeightStatusEffectManagerComponent*
   - Name: PetDitherComponent
-    Offset: '0x878'
+    Offset: '0x8a0'
     Size: '0x8'
     Type: class PetDitherComponent*
   - Name: PetOwner
-    Offset: '0x880'
+    Offset: '0x8a8'
     Size: '0x8'
     Type: class Actor*
   - Name: FeedingComponent
-    Offset: '0x888'
+    Offset: '0x8b0'
     Size: '0x8'
     Type: class FeedingComponent*
   - Name: SicknessComponent
-    Offset: '0x890'
+    Offset: '0x8b8'
     Size: '0x8'
     Type: class PetSicknessComponent*
   - Name: HungerComponent
-    Offset: '0x898'
+    Offset: '0x8c0'
     Size: '0x8'
     Type: class WieldablePetHungerComponent*
   - Name: StarvingComponent
-    Offset: '0x8a0'
+    Offset: '0x8c8'
     Size: '0x8'
     Type: class StarvingComponent*
   - Name: TelemetryComponent
-    Offset: '0x8a8'
+    Offset: '0x8d0'
     Size: '0x8'
     Type: class PetTelemetryComponent*
   - Name: AnimationDataStoreComponent
-    Offset: '0x8b0'
+    Offset: '0x8d8'
     Size: '0x8'
     Type: class AnimationDataStoreComponent*
   - Name: SubmergedStrokingEnabled
-    Offset: '0x8b8'
+    Offset: '0x8e0'
     Size: '0x1'
     Type: bool
   - Name: HungerReactAnimationState
-    Offset: '0x928'
+    Offset: '0x950'
     Size: '0x1'
     Type: byte
   - Name: DropRequest
-    Offset: '0x929'
+    Offset: '0x951'
     Size: '0x1'
     Type: byte
   ClassSize: '0x150'
-  FullSize: '0x940'
-  InheritedSize: '0x7f0'
+  FullSize: '0x960'
+  InheritedSize: '0x810'
   Super: SkeletalMeshWieldableItem
 WieldablePetComponent:
   Attributes:
@@ -695,15 +695,15 @@ WieldablePetComponentDataAsset:
   - Name: FriendlyTimeUntilEscape
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: NormalTimeUntilEscape
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: SubmergedTimeUntilEscape
     Offset: '0x48'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: DamageToOwnerDropThreshold
     Offset: '0x58'
     Size: '0x4'
@@ -751,19 +751,19 @@ WieldablePetHungerDataAsset:
   - Name: EatingAnimData
     Offset: '0x30'
     Size: '0x8'
-    Type: struct
+    Type: struct WieldablePetHungerAnimationData
   - Name: FedAnimData
     Offset: '0x38'
     Size: '0x8'
-    Type: struct
+    Type: struct WieldablePetHungerAnimationData
   - Name: SickAnimData
     Offset: '0x40'
     Size: '0x8'
-    Type: struct
+    Type: struct WieldablePetHungerAnimationData
   - Name: RefuseAnimData
     Offset: '0x48'
     Size: '0x8'
-    Type: struct
+    Type: struct WieldablePetHungerAnimationData
   - Name: CollisionChannel
     Offset: '0x50'
     Size: '0x1'

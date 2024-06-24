@@ -6,6 +6,24 @@
 #include "AthenaDebug_Structs.h"
 
 
+// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
+class ShippingDebugActorSphereCollection: public Actor
+{
+public:
+	TArray<struct SphereData>                                    SphereList;                                        // 0x3c8(0x10)
+};
+
+
+// Size 0x28 (Full Size[0x3f0] - InheritedSize[0x3c8]
+class Videprinter: public Actor
+{
+public:
+	TArray<String>                                               OutputRingBuffer;                                  // 0x3c8(0x10)
+	int                                                          AddAt;                                             // 0x3d8(0x4)
+	struct FName                                                 Id;                                                // 0x3dc(0x8)
+};
+
+
 // Size 0xf8 (Full Size[0x4c0] - InheritedSize[0x3c8]
 class DrawDebugService: public Actor
 {
@@ -26,24 +44,6 @@ class VideprinterService: public Object
 {
 public:
 	TArray<class Videprinter*>                                   Videprinters;                                      // 0x30(0x10)
-};
-
-
-// Size 0x28 (Full Size[0x3f0] - InheritedSize[0x3c8]
-class Videprinter: public Actor
-{
-public:
-	TArray<String>                                               OutputRingBuffer;                                  // 0x3c8(0x10)
-	int                                                          AddAt;                                             // 0x3d8(0x4)
-	struct FName                                                 Id;                                                // 0x3dc(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
-class ShippingDebugActorSphereCollection: public Actor
-{
-public:
-	TArray<struct SphereData>                                    SphereList;                                        // 0x3c8(0x10)
 };
 
 

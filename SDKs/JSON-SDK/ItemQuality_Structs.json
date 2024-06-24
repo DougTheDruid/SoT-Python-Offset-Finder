@@ -16,6 +16,23 @@
       }
     ]
   },
+  "PerComanyItemQualityEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Company",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Quality",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "ComplexItemQualityEntry": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -57,7 +74,7 @@
       },
       {
         "Name": "EmissaryLevelIncreaseOverride",
-        "Type": "struct",
+        "Type": "struct EmissaryLevelIncreaseOverrideData",
         "Size": "0x8",
         "Offset": "0x8"
       },
@@ -66,23 +83,6 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "PerComanyItemQualityEntry": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Company",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Quality",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
       }
     ]
   },

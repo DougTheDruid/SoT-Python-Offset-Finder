@@ -73,7 +73,7 @@ AIDataProvider_QueryParamFromCustomObjectProperty:
   - Name: ObjectProperty
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct CustomDataProviderObjectPropertySelector
   - Name: FloatValue
     Offset: '0x38'
     Size: '0x4'
@@ -191,7 +191,7 @@ AISense:
   - Name: DebugDrawColor
     Offset: '0x28'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   - Name: DebugName
     Offset: '0x30'
     Size: '0x10'
@@ -275,7 +275,7 @@ AISenseConfig_Hearing:
   - Name: DetectionByAffiliation
     Offset: '0x44'
     Size: '0x4'
-    Type: struct
+    Type: struct AISenseAffiliationFilter
   ClassSize: '0x18'
   FullSize: '0x48'
   InheritedSize: '0x30'
@@ -301,7 +301,7 @@ AISenseConfig_Sight:
   - Name: DetectionByAffiliation
     Offset: '0x44'
     Size: '0x4'
-    Type: struct
+    Type: struct AISenseAffiliationFilter
   - Name: AutoSuccessRangeFromLastSeenLocation
     Offset: '0x48'
     Size: '0x4'
@@ -315,7 +315,7 @@ AISenseEvent_Damage:
   - Name: Event
     Offset: '0x28'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDamageEvent
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -325,7 +325,7 @@ AISenseEvent_Hearing:
   - Name: Event
     Offset: '0x28'
     Size: '0x30'
-    Type: struct
+    Type: struct AINoiseEvent
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -441,11 +441,11 @@ AISystem:
   - Name: PerceptionSystemClassName
     Offset: '0x40'
     Size: '0x10'
-    Type: struct
+    Type: struct StringClassReference
   - Name: HotSpotManagerClassName
     Offset: '0x50'
     Size: '0x10'
-    Type: struct
+    Type: struct StringClassReference
   - Name: AcceptanceRadius
     Offset: '0x60'
     Size: '0x4'
@@ -513,7 +513,7 @@ AITask_MoveTo:
   - Name: MoveGoalLocation
     Offset: '0x80'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: MoveGoalActor
     Offset: '0x98'
     Size: '0x8'
@@ -611,7 +611,7 @@ BTDecorator_BlackboardBase:
   - Name: BlackboardKey
     Offset: '0x68'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   ClassSize: '0x28'
   FullSize: '0x90'
   InheritedSize: '0x68'
@@ -651,7 +651,7 @@ BTDecorator_CheckGameplayTagsOnActor:
   - Name: ActorToCheck
     Offset: '0x68'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: TagsToMatch
     Offset: '0x90'
     Size: '0x1'
@@ -659,7 +659,7 @@ BTDecorator_CheckGameplayTagsOnActor:
   - Name: GameplayTags
     Offset: '0x98'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: CachedDescription
     Offset: '0xc0'
     Size: '0x10'
@@ -677,11 +677,11 @@ BTDecorator_CompareBBEntries:
   - Name: BlackboardKeyA
     Offset: '0x70'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: BlackboardKeyB
     Offset: '0x98'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   ClassSize: '0x58'
   FullSize: '0xc0'
   InheritedSize: '0x68'
@@ -695,15 +695,15 @@ BTDecorator_ConeCheck:
   - Name: ConeOrigin
     Offset: '0x70'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: ConeDirection
     Offset: '0x98'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: Observed
     Offset: '0xc0'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   ClassSize: '0x88'
   FullSize: '0xf0'
   InheritedSize: '0x68'
@@ -723,11 +723,11 @@ BTDecorator_DoesPathExist:
   - Name: BlackboardKeyA
     Offset: '0x68'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: BlackboardKeyB
     Offset: '0x90'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: bUseSelf
     Offset: '0xb8'
     Size: '0x1'
@@ -777,11 +777,11 @@ BTDecorator_KeepInCone:
   - Name: ConeOrigin
     Offset: '0x70'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: Observed
     Offset: '0x98'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: bUseSelfAsOrigin
     Offset: '0xc0'
     Size: '0x1'
@@ -813,7 +813,7 @@ BTDecorator_SetTagCooldown:
   - Name: CooldownTag
     Offset: '0x68'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: CoolDownDuration
     Offset: '0x70'
     Size: '0x4'
@@ -831,7 +831,7 @@ BTDecorator_TagCooldown:
   - Name: CooldownTag
     Offset: '0x68'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: CoolDownDuration
     Offset: '0x70'
     Size: '0x4'
@@ -903,7 +903,7 @@ BTService_BlackboardBase:
   - Name: BlackboardKey
     Offset: '0x70'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   ClassSize: '0x28'
   FullSize: '0x98'
   InheritedSize: '0x70'
@@ -945,7 +945,7 @@ BTTask_BlackboardBase:
   - Name: BlackboardKey
     Offset: '0x60'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   ClassSize: '0x28'
   FullSize: '0x88'
   InheritedSize: '0x60'
@@ -1101,7 +1101,7 @@ BTTask_RunBehaviorDynamic:
   - Name: InjectionTag
     Offset: '0x60'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: DefaultBehaviorAsset
     Offset: '0x68'
     Size: '0x8'
@@ -1137,7 +1137,7 @@ BTTask_SetTagCooldown:
   - Name: CooldownTag
     Offset: '0x60'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: bAddToExistingDuration
     Offset: '0x68'
     Size: '0x1'
@@ -1169,7 +1169,7 @@ BTTask_WaitBlackboardTime:
   - Name: BlackboardKey
     Offset: '0x68'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   ClassSize: '0x28'
   FullSize: '0x90'
   InheritedSize: '0x68'
@@ -1341,7 +1341,7 @@ CrowdFollowingComponent:
   - Name: CrowdAgentMoveDirection
     Offset: '0x2c0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: CharacterMovement
     Offset: '0x2d0'
     Size: '0x8'
@@ -1349,15 +1349,15 @@ CrowdFollowingComponent:
   - Name: AvoidanceGroup
     Offset: '0x2d8'
     Size: '0x4'
-    Type: struct
+    Type: struct NavAvoidanceMask
   - Name: GroupsToAvoid
     Offset: '0x2dc'
     Size: '0x4'
-    Type: struct
+    Type: struct NavAvoidanceMask
   - Name: GroupsToIgnore
     Offset: '0x2e0'
     Size: '0x4'
-    Type: struct
+    Type: struct NavAvoidanceMask
   ClassSize: '0x50'
   FullSize: '0x308'
   InheritedSize: '0x2b8'
@@ -1481,7 +1481,7 @@ EnvQueryGenerator:
   - Name: Feature
     Offset: '0x44'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   - Name: ItemType
     Offset: '0x50'
     Size: '0x8'
@@ -1495,7 +1495,7 @@ EnvQueryGenerator_ActorsOfClass:
   - Name: SearchRadius
     Offset: '0x58'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: SearchedActorClass
     Offset: '0x88'
     Size: '0x8'
@@ -1545,27 +1545,27 @@ EnvQueryGenerator_Donut:
   - Name: InnerRadius
     Offset: '0x98'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: OuterRadius
     Offset: '0xc8'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: NumberOfRings
     Offset: '0xf8'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderIntValue
   - Name: PointsPerRing
     Offset: '0x128'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderIntValue
   - Name: ArcDirection
     Offset: '0x158'
     Size: '0x20'
-    Type: struct
+    Type: struct EnvDirection
   - Name: ArcAngle
     Offset: '0x178'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: RandomiseRadius
     Offset: '0x1a8'
     Size: '0x1'
@@ -1587,19 +1587,19 @@ EnvQueryGenerator_OnCircle:
   - Name: CircleRadius
     Offset: '0x98'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: SpaceBetween
     Offset: '0xc8'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: ArcDirection
     Offset: '0xf8'
     Size: '0x20'
-    Type: struct
+    Type: struct EnvDirection
   - Name: ArcAngle
     Offset: '0x118'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: AngleRadians
     Offset: '0x148'
     Size: '0x4'
@@ -1611,7 +1611,7 @@ EnvQueryGenerator_OnCircle:
   - Name: TraceData
     Offset: '0x158'
     Size: '0x40'
-    Type: struct
+    Type: struct EnvTraceData
   - Name: bDefineArc
     Offset: '0x198'
     Size: '0x1'
@@ -1625,7 +1625,7 @@ EnvQueryGenerator_PathingGrid:
   - Name: PathToItem
     Offset: '0x100'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderBoolValue
   - Name: NavigationFilter
     Offset: '0x130'
     Size: '0x8'
@@ -1633,7 +1633,7 @@ EnvQueryGenerator_PathingGrid:
   - Name: ScanRangeMultiplier
     Offset: '0x138'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   ClassSize: '0x68'
   FullSize: '0x168'
   InheritedSize: '0x100'
@@ -1643,7 +1643,7 @@ EnvQueryGenerator_ProjectedPoints:
   - Name: ProjectionData
     Offset: '0x58'
     Size: '0x40'
-    Type: struct
+    Type: struct EnvTraceData
   ClassSize: '0x40'
   FullSize: '0x98'
   InheritedSize: '0x58'
@@ -1653,11 +1653,11 @@ EnvQueryGenerator_SimpleGrid:
   - Name: GridSize
     Offset: '0x98'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: SpaceBetween
     Offset: '0xc8'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: GenerateAround
     Offset: '0xf8'
     Size: '0x8'
@@ -1751,15 +1751,15 @@ EnvQueryTest:
   - Name: BoolValue
     Offset: '0x38'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderBoolValue
   - Name: FloatValueMin
     Offset: '0x68'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: FloatValueMax
     Offset: '0x98'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: ScoringEquation
     Offset: '0xc9'
     Size: '0x1'
@@ -1775,15 +1775,15 @@ EnvQueryTest:
   - Name: ScoreClampMin
     Offset: '0xd0'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: ScoreClampMax
     Offset: '0x100'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: ScoringFactor
     Offset: '0x130'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: bWorkOnFloatValues
     Offset: '0x168'
     Size: '0x1'
@@ -1811,11 +1811,11 @@ EnvQueryTest_Dot:
   - Name: LineA
     Offset: '0x170'
     Size: '0x20'
-    Type: struct
+    Type: struct EnvDirection
   - Name: LineB
     Offset: '0x190'
     Size: '0x20'
-    Type: struct
+    Type: struct EnvDirection
   - Name: TestMode
     Offset: '0x1b0'
     Size: '0x1'
@@ -1837,7 +1837,7 @@ EnvQueryTest_GameplayTags:
   - Name: GameplayTags
     Offset: '0x178'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   ClassSize: '0x30'
   FullSize: '0x1a0'
   InheritedSize: '0x170'
@@ -1855,19 +1855,19 @@ EnvQueryTest_Pathfinding:
   - Name: PathFromContext
     Offset: '0x180'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderBoolValue
   - Name: SkipUnreachable
     Offset: '0x1b0'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderBoolValue
   - Name: MaxNumPathSegments
     Offset: '0x1e0'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderIntValue
   - Name: PassThroughUnreachable
     Offset: '0x210'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderBoolValue
   - Name: FilterClass
     Offset: '0x240'
     Size: '0x8'
@@ -1881,7 +1881,7 @@ EnvQueryTest_PathfindingBatch:
   - Name: ScanRangeMultiplier
     Offset: '0x248'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   ClassSize: '0x30'
   FullSize: '0x278'
   InheritedSize: '0x248'
@@ -1891,19 +1891,19 @@ EnvQueryTest_Trace:
   - Name: TraceData
     Offset: '0x170'
     Size: '0x40'
-    Type: struct
+    Type: struct EnvTraceData
   - Name: TraceFromContext
     Offset: '0x1b0'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderBoolValue
   - Name: ItemHeightOffset
     Offset: '0x1e0'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: ContextHeightOffset
     Offset: '0x210'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: Context
     Offset: '0x240'
     Size: '0x8'
@@ -1977,7 +1977,7 @@ PawnAction_Move:
   - Name: GoalLocation
     Offset: '0x98'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: AcceptableRadius
     Offset: '0xa4'
     Size: '0x4'

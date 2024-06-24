@@ -1,41 +1,23 @@
 {
-  "MovieSceneSequenceHierarchy": {
-    "ClassSize": "0xa0",
+  "MovieSceneObjectBindingPtr": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "SubSequences",
-        "Type": "map",
-        "Size": "0x50",
+        "Name": "Guid",
+        "Type": "struct Guid",
+        "Size": "0x10",
         "Offset": "0x0"
-      },
-      {
-        "Name": "Hierarchy",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x50"
       }
     ]
   },
-  "MovieSceneBindingOverrideData": {
-    "ClassSize": "0x1c",
+  "MovieSceneExpansionState": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "ObjectBindingId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Object",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "bOverridesDefault",
+        "Name": "bExpanded",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x18"
+        "Offset": "0x0"
       }
     ]
   },
@@ -80,109 +62,6 @@
       }
     ]
   },
-  "MovieSceneLegacyTrackInstanceTemplate": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Track",
-        "Type": "class MovieSceneTrack*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "MovieSceneEvaluationTemplate": {
-    "ClassSize": "0x220",
-    "Attributes": [
-      {
-        "Name": "Tracks",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "EvaluationField",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "Hierarchy",
-        "Type": "struct",
-        "Size": "0xa0",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "Ledger",
-        "Type": "struct",
-        "Size": "0xa8",
-        "Offset": "0x170"
-      },
-      {
-        "Name": "bHasLegacyTrackInstances",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x218"
-      },
-      {
-        "Name": "bKeepStaleTracks",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x218"
-      }
-    ]
-  },
-  "MovieSceneTrackIdentifier": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "Value",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "MovieSceneSectionParameters": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "StartOffset",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TimeScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "PrerollTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "PostrollTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "MovieSceneEvaluationFieldSegmentPtr": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "SegmentIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "SectionEvaluationData": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -200,25 +79,20 @@
       }
     ]
   },
-  "MovieSceneSequenceID": {
-    "ClassSize": "0x4",
+  "MovieSceneSectionEvalOptions": {
+    "ClassSize": "0x2",
     "Attributes": [
       {
-        "Name": "Value",
-        "Type": "uint32",
-        "Size": "0x4",
+        "Name": "bCanEditCompletionMode",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "MovieSceneTrackLabels": {
-    "ClassSize": "0x10",
-    "Attributes": [
+      },
       {
-        "Name": "Strings",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x0"
+        "Name": "CompletionMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
       }
     ]
   },
@@ -233,67 +107,15 @@
       },
       {
         "Name": "WorkingRange",
-        "Type": "struct",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "ViewRange",
-        "Type": "struct",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x60"
-      }
-    ]
-  },
-  "MovieSceneSpawnable": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "IsCameraDockable",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Guid",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Name",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "ObjectTemplate",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ChildPossessables",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "Ownership",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "MovieSceneObjectBindingPtr": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Guid",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },
@@ -302,7 +124,7 @@
     "Attributes": [
       {
         "Name": "Guid",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -320,130 +142,54 @@
       },
       {
         "Name": "ParentGuid",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x28"
       }
     ]
   },
-  "MovieSceneEvalTemplate": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "CompletionMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "MovieSceneTrackCompilationParams": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "bForEditorPreview",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "MovieSceneEvaluationTrack": {
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "ObjectBindingId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "EvaluationPriority",
-        "Type": "uint16",
-        "Size": "0x2",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "EvaluationMethod",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x12"
-      },
-      {
-        "Name": "Segments",
-        "Type": "TArray<struct MovieSceneSegment>",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "ChildTemplates",
-        "Type": "TArray<struct MovieSceneEvalTemplatePtr>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "TrackTemplate",
-        "Type": "struct",
-        "Size": "0x38",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "EvaluationGroup",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "bEvaluateInPreroll",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "bEvaluateInPostroll",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x78"
-      }
-    ]
-  },
-  "MovieSceneTrackEvalOptions": {
+  "MovieSceneTrackIdentifier": {
     "ClassSize": "0x4",
     "Attributes": [
       {
-        "Name": "bCanEvaluateNearestSection",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "bEvaluateNearestSection",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "bEvaluateInPreroll",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "bEvaluateInPostroll",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "Value",
+        "Type": "uint32",
+        "Size": "0x4",
         "Offset": "0x0"
       }
     ]
   },
-  "MovieSceneExpansionState": {
-    "ClassSize": "0x1",
+  "MovieSceneBinding": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "bExpanded",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "ObjectGuid",
+        "Type": "struct Guid",
+        "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "BindingName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Tracks",
+        "Type": "TArray<class MovieSceneTrack*>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "MovieSceneEvaluationFieldSegmentPtr": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "SegmentIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
       }
     ]
   },
@@ -476,6 +222,98 @@
       }
     ]
   },
+  "MovieSceneTrackLabels": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Strings",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MovieSceneTrackCompilationParams": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "bForEditorPreview",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MovieSceneEvalTemplate": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "CompletionMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "MovieSceneEvaluationTrack": {
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "ObjectBindingId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "EvaluationPriority",
+        "Type": "uint16",
+        "Size": "0x2",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "EvaluationMethod",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x12"
+      },
+      {
+        "Name": "Segments",
+        "Type": "TArray<struct MovieSceneSegment>",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "ChildTemplates",
+        "Type": "TArray<struct MovieSceneEvalTemplatePtr>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "TrackTemplate",
+        "Type": "struct MovieSceneTrackImplementationPtr",
+        "Size": "0x38",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "EvaluationGroup",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "bEvaluateInPreroll",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "bEvaluateInPostroll",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x78"
+      }
+    ]
+  },
   "MovieSceneSequenceTransform": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -493,43 +331,60 @@
       }
     ]
   },
-  "MovieSceneSectionEvalOptions": {
-    "ClassSize": "0x2",
+  "MovieSceneLegacyTrackInstanceTemplate": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "bCanEditCompletionMode",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CompletionMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1"
+        "Name": "Track",
+        "Type": "class MovieSceneTrack*",
+        "Size": "0x8",
+        "Offset": "0x18"
       }
     ]
   },
-  "MovieSceneBinding": {
-    "ClassSize": "0x30",
+  "MovieSceneSectionParameters": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ObjectGuid",
-        "Type": "struct",
-        "Size": "0x10",
+        "Name": "StartOffset",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "BindingName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
+        "Name": "TimeScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
-        "Name": "Tracks",
-        "Type": "TArray<class MovieSceneTrack*>",
-        "Size": "0x10",
-        "Offset": "0x20"
+        "Name": "PrerollTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "PostrollTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "MovieSceneSequenceHierarchy": {
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "SubSequences",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Hierarchy",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x50"
       }
     ]
   },
@@ -567,9 +422,130 @@
       },
       {
         "Name": "CachedSignature",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "MovieSceneSpawnable": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "IsCameraDockable",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Guid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Name",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "ObjectTemplate",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ChildPossessables",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "Ownership",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "MovieSceneSequenceID": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "Value",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MovieSceneTrackEvalOptions": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "bCanEvaluateNearestSection",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "bEvaluateNearestSection",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "bEvaluateInPreroll",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "bEvaluateInPostroll",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MovieSceneBindingOverrideData": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "ObjectBindingId",
+        "Type": "struct MovieSceneObjectBindingPtr",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Object",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "bOverridesDefault",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "MovieSceneEvaluationFieldTrackPtr": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "SequenceID",
+        "Type": "struct MovieSceneSequenceID",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TrackIdentifier",
+        "Type": "struct MovieSceneTrackIdentifier",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },
@@ -584,38 +560,38 @@
       },
       {
         "Name": "RootToSequenceTransform",
-        "Type": "struct",
+        "Type": "struct MovieSceneSequenceTransform",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
         "Name": "SourceSequenceSignature",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "DeterministicSequenceID",
-        "Type": "struct",
+        "Type": "struct MovieSceneSequenceID",
         "Size": "0x4",
         "Offset": "0x20"
       }
     ]
   },
-  "MovieSceneEvaluationFieldTrackPtr": {
-    "ClassSize": "0x8",
+  "MovieSceneEvaluationGroup": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "SequenceID",
-        "Type": "struct",
-        "Size": "0x4",
+        "Name": "LUTIndices",
+        "Type": "TArray<struct MovieSceneEvaluationGroupLUTIndex>",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "TrackIdentifier",
-        "Type": "struct",
-        "Size": "0x4",
-        "Offset": "0x4"
+        "Name": "SegmentPtrLUT",
+        "Type": "TArray<struct MovieSceneEvaluationFieldSegmentPtr>",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -624,7 +600,7 @@
     "Attributes": [
       {
         "Name": "ParentID",
-        "Type": "struct",
+        "Type": "struct MovieSceneSequenceID",
         "Size": "0x4",
         "Offset": "0x0"
       },
@@ -644,23 +620,6 @@
         "Type": "TArray<struct MovieSceneSequenceID>",
         "Size": "0x10",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "MovieSceneEvaluationGroup": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "LUTIndices",
-        "Type": "TArray<struct MovieSceneEvaluationGroupLUTIndex>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SegmentPtrLUT",
-        "Type": "TArray<struct MovieSceneEvaluationFieldSegmentPtr>",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },
@@ -684,6 +643,47 @@
         "Type": "TArray<struct MovieSceneEvaluationMetaData>",
         "Size": "0x10",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "MovieSceneEvaluationTemplate": {
+    "ClassSize": "0x220",
+    "Attributes": [
+      {
+        "Name": "Tracks",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "EvaluationField",
+        "Type": "struct MovieSceneEvaluationField",
+        "Size": "0x30",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "Hierarchy",
+        "Type": "struct MovieSceneSequenceHierarchy",
+        "Size": "0xa0",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "Ledger",
+        "Type": "struct MovieSceneGenerationLedger",
+        "Size": "0xa8",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "bHasLegacyTrackInstances",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x218"
+      },
+      {
+        "Name": "bKeepStaleTracks",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x218"
       }
     ]
   },

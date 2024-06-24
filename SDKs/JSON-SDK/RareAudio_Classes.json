@@ -1,15 +1,39 @@
 {
-  "StaticMeshAudioEmittersComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x2f0",
-    "InheritedSize": "0x2e0",
-    "ClassSize": "0x10",
+  "WwiseObjectPoolWrapper": {
+    "Super": "Object",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "InstanceAssociations",
-        "Type": "TArray<struct StaticMeshComponentAudioAssociation>",
-        "Size": "0x10",
-        "Offset": "0x2e0"
+        "Name": "PoolName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MaxResources",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "DisableOcclusion",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "DisableReverb",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x35"
+      },
+      {
+        "Name": "PoolDensityParams",
+        "Type": "struct WwiseNativeEmitterPoolDensityParams",
+        "Size": "0x28",
+        "Offset": "0x38"
       }
     ]
   },
@@ -33,23 +57,37 @@
       }
     ]
   },
-  "AnimNotifyState_WwiseSound": {
-    "Super": "AnimNotifyState",
-    "FullSize": "0x90",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x60",
+  "TritonService": {
+    "Super": "Object",
+    "FullSize": "0x150",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "WwiseEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x30"
+        "Name": "RegisteredTritonComponents",
+        "Type": "TArray<class TritonComponent*>",
+        "Size": "0x10",
+        "Offset": "0x38"
       },
       {
-        "Name": "WwiseEventEnd",
-        "Type": "class WwiseEvent*",
+        "Name": "CachedListenerInfo",
+        "Type": "class TritonComponent*",
         "Size": "0x8",
-        "Offset": "0x38"
+        "Offset": "0xf0"
+      }
+    ]
+  },
+  "StaticMeshAudioEmittersComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x2f0",
+    "InheritedSize": "0x2e0",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "InstanceAssociations",
+        "Type": "TArray<struct StaticMeshComponentAudioAssociation>",
+        "Size": "0x10",
+        "Offset": "0x2e0"
       }
     ]
   },
@@ -87,7 +125,7 @@
     "Attributes": [
       {
         "Name": "Emitter",
-        "Type": "struct",
+        "Type": "struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x2e8"
       },
@@ -113,26 +151,6 @@
       }
     ]
   },
-  "TritonService": {
-    "Super": "Object",
-    "FullSize": "0x150",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x128",
-    "Attributes": [
-      {
-        "Name": "RegisteredTritonComponents",
-        "Type": "TArray<class TritonComponent*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "CachedListenerInfo",
-        "Type": "class TritonComponent*",
-        "Size": "0x8",
-        "Offset": "0xf0"
-      }
-    ]
-  },
   "TritonComponent": {
     "Super": "SceneComponent",
     "FullSize": "0x2f0",
@@ -150,6 +168,26 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2e8"
+      }
+    ]
+  },
+  "AnimNotifyState_WwiseSound": {
+    "Super": "AnimNotifyState",
+    "FullSize": "0x90",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "WwiseEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "WwiseEventEnd",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x38"
       }
     ]
   },
@@ -173,7 +211,7 @@
       },
       {
         "Name": "OwnedByWorldEmitterOffset",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x44"
       },
@@ -188,44 +226,6 @@
         "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
         "Offset": "0x58"
-      }
-    ]
-  },
-  "WwiseObjectPoolWrapper": {
-    "Super": "Object",
-    "FullSize": "0x78",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "PoolName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MaxResources",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "DisableOcclusion",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "DisableReverb",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x35"
-      },
-      {
-        "Name": "PoolDensityParams",
-        "Type": "struct",
-        "Size": "0x28",
-        "Offset": "0x38"
       }
     ]
   },

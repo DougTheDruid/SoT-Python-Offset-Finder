@@ -17,7 +17,7 @@ EmoteCard:
   - Name: RandomCardParameterRange
     Offset: '0x3e8'
     Size: '0x10'
-    Type: struct
+    Type: struct Int32Range
   ClassSize: '0x150'
   FullSize: '0x518'
   InheritedSize: '0x3c8'

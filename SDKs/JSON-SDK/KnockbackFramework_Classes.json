@@ -7,13 +7,13 @@
     "Attributes": [
       {
         "Name": "SolidCollisionProfile",
-        "Type": "struct",
+        "Type": "struct CollisionProfileName",
         "Size": "0x8",
         "Offset": "0x5f8"
       },
       {
         "Name": "KnockbackTraceProfile",
-        "Type": "struct",
+        "Type": "struct CollisionProfileName",
         "Size": "0x8",
         "Offset": "0x600"
       },
@@ -25,7 +25,7 @@
       },
       {
         "Name": "KnockbackParams",
-        "Type": "struct",
+        "Type": "struct KnockBackInfo",
         "Size": "0x50",
         "Offset": "0x60c"
       },

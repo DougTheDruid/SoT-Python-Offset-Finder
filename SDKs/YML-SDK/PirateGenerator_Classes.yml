@@ -61,7 +61,7 @@ ColorTexture:
   - Name: Color
     Offset: '0x140'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   ClassSize: '0x10'
   FullSize: '0x150'
   InheritedSize: '0x140'
@@ -105,7 +105,7 @@ PirateGeneratorSettings:
   - Name: WardrobeDataAsset
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: EditorWardrobeDataAsset
     Offset: '0x48'
     Size: '0x8'
@@ -129,11 +129,11 @@ PirateGeneratorSettings:
   - Name: MaterialReferencesDataAsset
     Offset: '0x90'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: SkeletonsDataAsset
     Offset: '0xa0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: BaseSkeletonMeshes
     Offset: '0xb0'
     Size: '0x10'
@@ -149,11 +149,11 @@ PirateGeneratorSettings:
   - Name: FirstPersonAnimations
     Offset: '0xe0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: ThirdPersonAnimations
     Offset: '0xf0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: LODScreenSizes
     Offset: '0x100'
     Size: '0x10'
@@ -183,7 +183,7 @@ TextureSwitch:
   - Name: DefaultParameters
     Offset: '0x1d0'
     Size: '0x58'
-    Type: struct
+    Type: struct TextureSwitchParameters
   ClassSize: '0xe0'
   FullSize: '0x228'
   InheritedSize: '0x148'
@@ -223,7 +223,7 @@ TextureSwitchByItem:
   - Name: FallbackTexture
     Offset: '0x228'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Entries
     Offset: '0x238'
     Size: '0x10'
@@ -249,7 +249,7 @@ TextureSwitchBySeed:
   - Name: FallbackTexture
     Offset: '0x240'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Entries
     Offset: '0x250'
     Size: '0x10'

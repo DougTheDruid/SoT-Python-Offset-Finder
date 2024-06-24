@@ -29,12 +29,12 @@ public:
 class GenericStatusVFXDataAsset: public DataAsset
 {
 public:
-	struct                                                       VFXStatus;                                         // 0x28(0x18)
+	struct Status                                                VFXStatus;                                         // 0x28(0x18)
 	class ParticleSystem*                                        VFXSystem;                                         // 0x40(0x8)
 	float                                                        VFXFalloffDuration;                                // 0x48(0x4)
 	float                                                        VFXFalloffMultiplier;                              // 0x4c(0x4)
 	struct FName                                                 VfxSocketName;                                     // 0x50(0x8)
-	struct                                                       SocketRelativeOffset;                              // 0x60(0x30)
+	struct Transform                                             SocketRelativeOffset;                              // 0x60(0x30)
 };
 
 

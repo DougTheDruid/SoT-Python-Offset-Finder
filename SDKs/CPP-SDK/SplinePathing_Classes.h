@@ -10,7 +10,7 @@
 class SplinePathingActor: public Actor
 {
 public:
-	struct                                                       ObjectMessageDispatcher;                           // 0x3d0(0xa0)
+	struct ObjectMessagingDispatcher                             ObjectMessageDispatcher;                           // 0x3d0(0xa0)
 	class SceneComponent*                                        Root;                                              // 0x480(0x8)
 	class SplineComponent*                                       Spline;                                            // 0x488(0x8)
 	float                                                        Force;                                             // 0x490(0x4)

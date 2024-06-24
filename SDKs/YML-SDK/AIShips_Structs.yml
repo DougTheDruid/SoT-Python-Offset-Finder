@@ -17,7 +17,7 @@ AIShipBattleEncounterDescGenerationParams:
   - Name: DynamicBalancingDesc
     Offset: '0x28'
     Size: '0x58'
-    Type: struct
+    Type: struct AIShipEncounterDynamicBalancingDesc
   ClassSize: '0x80'
 AIShipBattleParams:
   Attributes:
@@ -32,7 +32,7 @@ AIShipBattleParams:
   - Name: Location
     Offset: '0x40'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Radius
     Offset: '0x48'
     Size: '0x4'
@@ -103,7 +103,7 @@ AIShipContextDescGenerationParams:
   - Name: SharedParams
     Offset: '0x0'
     Size: '0x60'
-    Type: struct
+    Type: struct AIShipContextDescGenerationSharedParams
   - Name: EncounterSpecificParams
     Offset: '0x60'
     Size: '0x10'
@@ -172,7 +172,7 @@ AIShipCrewAmmoType:
   - Name: AmmoType
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x18'
 AIShipCrewFormType:
   Attributes:
@@ -183,7 +183,7 @@ AIShipCrewFormType:
   - Name: IconColour
     Offset: '0x4'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   - Name: IconIndex
     Offset: '0x8'
     Size: '0x1'
@@ -195,7 +195,7 @@ AIShipCrewFormType:
   - Name: Form
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x20'
 AIShipCrewSizeSpecificSpawnerEntry:
   Attributes:
@@ -217,7 +217,7 @@ AIShipDamagedTelemetryEvent:
   - Name: DamageLocation
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: DamagedShipPart
     Offset: '0x20'
     Size: '0x10'
@@ -229,7 +229,7 @@ AIShipDamagedTelemetryEvent:
   - Name: AttackId
     Offset: '0x34'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x48'
 AIShipDespawnTelemetryEvent:
   Attributes:
@@ -258,11 +258,11 @@ AIShipEncounterBattleGenerationParams:
   - Name: NumberOfWaves
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   - Name: MinMaxNumberOfShips
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct Int32Range
   - Name: MinNumberOfShipsInFinalWave
     Offset: '0x38'
     Size: '0x4'
@@ -368,7 +368,7 @@ AIShipEncounterDynamicWaveShipSpawnedTelemetryEvent:
   - Name: EncounterId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: WaveIndex
     Offset: '0x10'
     Size: '0x4'
@@ -383,7 +383,7 @@ AIShipEncounterDynamicWaveTelemetryEvent:
   - Name: EncounterId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: WaveIndex
     Offset: '0x10'
     Size: '0x4'
@@ -450,7 +450,15 @@ AIShipEncounterParamsSpawnerData:
     Offset: '0x1f'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x20'
+  - Name: EnableRespawnLimit
+    Offset: '0x20'
+    Size: '0x1'
+    Type: bool
+  - Name: MaxNumberOfRespawns
+    Offset: '0x24'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x28'
 AIShipEncounterWave:
   Attributes:
   - Name: AIShipsInWave
@@ -490,18 +498,18 @@ AIShipGenerationParams:
   - Name: DamageParams
     Offset: '0x30'
     Size: '0x14'
-    Type: struct
+    Type: struct AIShipContextDescDamageParams
   ClassSize: '0x48'
 AIShipSailData:
   Attributes:
   - Name: SailRGB
     Offset: '0x0'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   - Name: IconRGB
     Offset: '0x4'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   - Name: CrewIndex
     Offset: '0x8'
     Size: '0x4'
@@ -549,7 +557,7 @@ AIShipSkeletonSkillsetOverride:
   - Name: Skillset
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x18'
 AIShipSpawnTelemetryEvent:
   Attributes:
@@ -572,7 +580,7 @@ AIShipSpawnTelemetryEvent:
   - Name: SpawnConfigId
     Offset: '0x40'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: AIShipSize
     Offset: '0x50'
     Size: '0x10'
@@ -580,7 +588,7 @@ AIShipSpawnTelemetryEvent:
   - Name: SpawnLocation
     Offset: '0x60'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: AIShipWaveIndex
     Offset: '0x6c'
     Size: '0x4'
@@ -644,7 +652,7 @@ FeatureLockedAIShipEncounterBattleGenerationParams:
   - Name: Params
     Offset: '0x8'
     Size: '0x60'
-    Type: struct
+    Type: struct AIShipEncounterBattleGenerationParams
   ClassSize: '0x78'
 RelativeSpawnLocationGeneratorParams:
   Attributes:
@@ -732,7 +740,7 @@ ToggleableAIShipsServiceDataAssetFileLocation:
   - Name: Location
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x18'
 TrackingNoiseGenerator:
   Attributes:
@@ -754,11 +762,11 @@ WeightedAIShipCrewAmmoType:
   - Name: Params
     Offset: '0x8'
     Size: '0x18'
-    Type: struct
+    Type: struct AIShipCrewAmmoType
   - Name: FeatureFlag
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   ClassSize: '0x30'
 WeightedAIShipCrewFormType:
   Attributes:
@@ -769,7 +777,7 @@ WeightedAIShipCrewFormType:
   - Name: Params
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct AIShipCrewFormType
   ClassSize: '0x28'
 WeightedSpawnDirection:
   Attributes:
@@ -807,5 +815,5 @@ WeightedSpawnOffset:
   - Name: SpawnRotations
     Offset: '0x10'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   ClassSize: '0x40'

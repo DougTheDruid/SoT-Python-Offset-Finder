@@ -5,7 +5,7 @@ StatusResponseApplyOneShotStatus:
   - Name: StatusToApply
     Offset: '0x30'
     Size: '0x18'
-    Type: struct
+    Type: struct Status
   ClassSize: '0x18'
   FullSize: '0x48'
   InheritedSize: '0x30'
@@ -15,7 +15,7 @@ StatusResponseApplyPersistentStatus:
   - Name: StatusToApply
     Offset: '0x30'
     Size: '0x18'
-    Type: struct
+    Type: struct Status
   - Name: DurationMultiplier
     Offset: '0x48'
     Size: '0x4'

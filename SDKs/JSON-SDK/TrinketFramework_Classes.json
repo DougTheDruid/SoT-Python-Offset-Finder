@@ -1,30 +1,4 @@
 {
-  "TrinketDesc": {
-    "Super": "EntitlementDesc",
-    "FullSize": "0xf8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "TrinketClass",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "PreviousItem",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "NextItem",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0xe8"
-      }
-    ]
-  },
   "TrinketSfxDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x48",
@@ -54,6 +28,32 @@
         "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x40"
+      }
+    ]
+  },
+  "TrinketDesc": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TrinketClass",
+        "Type": "struct StringClassReference",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "PreviousItem",
+        "Type": "struct StringClassReference",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "NextItem",
+        "Type": "struct StringClassReference",
+        "Size": "0x10",
+        "Offset": "0xe8"
       }
     ]
   },

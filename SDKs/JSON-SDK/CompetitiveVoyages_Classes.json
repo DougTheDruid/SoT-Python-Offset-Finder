@@ -1,76 +1,4 @@
 {
-  "SetCrewOptInNPCDataStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Actor",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x80"
-      }
-    ]
-  },
-  "CompetitiveVoyagesService": {
-    "Super": "Actor",
-    "FullSize": "0x8b0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x4e8",
-    "Attributes": [
-      {
-        "Name": "MainVoyageCrews",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x4d0"
-      },
-      {
-        "Name": "ServiceParams",
-        "Type": "class CompetitiveVoyagesServiceParams*",
-        "Size": "0x8",
-        "Offset": "0x4e0"
-      },
-      {
-        "Name": "VoyageEventItems",
-        "Type": "TArray<struct CompetitiveVoyageEventItem>",
-        "Size": "0x10",
-        "Offset": "0x788"
-      }
-    ]
-  },
-  "CompetitiveVoyageVoteConsumerBase": {
-    "Super": "VoteConsumerInlineBase",
-    "FullSize": "0xc8",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "Validator",
-        "Type": "class CompetitiveVoyageVoteValidatorBase*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "OwningActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "OwningComponent",
-        "Type": "class ActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "Votes",
-        "Type": "TArray<struct CrewMemberVotes>",
-        "Size": "0x10",
-        "Offset": "0xa0"
-      }
-    ]
-  },
   "CompetitiveVoyageVoteValidatorBase": {
     "Super": "VoteValidatorInlineBase",
     "FullSize": "0xb8",
@@ -109,53 +37,43 @@
       }
     ]
   },
-  "CompetitiveVoyagesServiceParams": {
-    "Super": "DataAsset",
-    "FullSize": "0x160",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x138",
+  "CompetitiveVoyagesService": {
+    "Super": "Actor",
+    "FullSize": "0x8b0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x4e8",
     "Attributes": [
       {
-        "Name": "OptInVoyageDesc",
-        "Type": "class VoyageDescDataAsset*",
+        "Name": "MainVoyageCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x4d0"
+      },
+      {
+        "Name": "ServiceParams",
+        "Type": "class CompetitiveVoyagesServiceParams*",
         "Size": "0x8",
-        "Offset": "0x28"
+        "Offset": "0x4e0"
       },
       {
-        "Name": "MainVoyageDesc",
-        "Type": "class VoyageDescDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
+        "Name": "VoyageEventItems",
+        "Type": "TArray<struct CompetitiveVoyageEventItem>",
+        "Size": "0x10",
+        "Offset": "0x788"
+      }
+    ]
+  },
+  "TaleQuestCompetitiveVoyagesService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x258",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x1f8",
+    "Attributes": [
       {
-        "Name": "OptOutNoteDataAsset",
-        "Type": "class NPCOnShipDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "RespawnConfig",
-        "Type": "struct",
-        "Size": "0x108",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "ShipSpeedCurseModifyingValues",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "OptOutDelay",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x154"
-      },
-      {
-        "Name": "SinkShipWithVoyageItemAchievementStat",
-        "Type": "struct",
-        "Size": "0x4",
-        "Offset": "0x158"
+        "Name": "PhasedMarkerItems",
+        "Type": "TArray<struct PhasedMarkerItem>",
+        "Size": "0x10",
+        "Offset": "0xe8"
       }
     ]
   },
@@ -191,6 +109,102 @@
       }
     ]
   },
+  "CompetitiveVoyagesServiceParams": {
+    "Super": "DataAsset",
+    "FullSize": "0x160",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x138",
+    "Attributes": [
+      {
+        "Name": "OptInVoyageDesc",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MainVoyageDesc",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "OptOutNoteDataAsset",
+        "Type": "class NPCOnShipDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "RespawnConfig",
+        "Type": "struct CompetitiveVoyagesRespawnConfig",
+        "Size": "0x108",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "ShipSpeedCurseModifyingValues",
+        "Type": "struct ShipSpeedCurseModifyingValues",
+        "Size": "0xc",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "OptOutDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x154"
+      },
+      {
+        "Name": "SinkShipWithVoyageItemAchievementStat",
+        "Type": "struct PlayerStat",
+        "Size": "0x4",
+        "Offset": "0x158"
+      }
+    ]
+  },
+  "SetCrewOptInNPCDataStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Actor",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "CompetitiveVoyageVoteConsumerBase": {
+    "Super": "VoteConsumerInlineBase",
+    "FullSize": "0xc8",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "Validator",
+        "Type": "class CompetitiveVoyageVoteValidatorBase*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "OwningActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "OwningComponent",
+        "Type": "class ActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "Votes",
+        "Type": "TArray<struct CrewMemberVotes>",
+        "Size": "0x10",
+        "Offset": "0xa0"
+      }
+    ]
+  },
   "WaitForCompVoyageOptInStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xe0",
@@ -199,29 +213,15 @@
     "Attributes": [
       {
         "Name": "NPCOnShipManager",
-        "Type": "struct",
+        "Type": "struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
         "Name": "NPCActor",
-        "Type": "struct",
+        "Type": "struct QuestVariableActor",
         "Size": "0x30",
         "Offset": "0xb0"
-      }
-    ]
-  },
-  "TaleQuestCompetitiveVoyagesService": {
-    "Super": "TaleQuestService",
-    "FullSize": "0x258",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x1f8",
-    "Attributes": [
-      {
-        "Name": "PhasedMarkerItems",
-        "Type": "TArray<struct PhasedMarkerItem>",
-        "Size": "0x10",
-        "Offset": "0xe8"
       }
     ]
   },

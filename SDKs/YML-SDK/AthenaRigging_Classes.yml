@@ -53,7 +53,7 @@ RiggingSystem:
   - Name: Pulleys
     Offset: '0x410'
     Size: '0x60'
-    Type: struct
+    Type: struct RiggingSystemPulleyData
   - Name: Sockets
     Offset: '0x470'
     Size: '0x10'
@@ -71,7 +71,7 @@ RiggingSystemComponent:
   - Name: RopeStyle
     Offset: '0x2e0'
     Size: '0x20'
-    Type: struct
+    Type: struct RopeStyleParams
   - Name: LineGroups
     Offset: '0x300'
     Size: '0x10'

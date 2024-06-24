@@ -9,7 +9,7 @@ RetractableComponent:
   - Name: OrientationAdjustmentOnRetractFlags
     Offset: '0x108'
     Size: '0x3'
-    Type: struct
+    Type: struct RetractorOrientationAdjustmentFlags
   - Name: RetractorBoxAxis
     Offset: '0x10b'
     Size: '0x1'

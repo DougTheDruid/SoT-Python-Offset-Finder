@@ -5,7 +5,7 @@ AbilityTriggerData:
   - Name: TriggerTag
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: TriggerSource
     Offset: '0x8'
     Size: '0x1'
@@ -16,11 +16,11 @@ ActiveGameplayCue:
   - Name: GameplayCueTag
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: PredictionKey
     Offset: '0x10'
     Size: '0x18'
-    Type: struct
+    Type: struct PredictionKey
   - Name: bPredictivelyRemoved
     Offset: '0x28'
     Size: '0x1'
@@ -42,11 +42,11 @@ ActiveGameplayEffect:
   - Name: Spec
     Offset: '0x10'
     Size: '0x2a0'
-    Type: struct
+    Type: struct GameplayEffectSpec
   - Name: PredictionKey
     Offset: '0x2b0'
     Size: '0x18'
-    Type: struct
+    Type: struct PredictionKey
   - Name: StartServerWorldTime
     Offset: '0x2c8'
     Size: '0x4'
@@ -83,23 +83,23 @@ AttributeBasedFloat:
   - Name: Coefficient
     Offset: '0x0'
     Size: '0x20'
-    Type: struct
+    Type: struct ScalableFloat
   - Name: PreMultiplyAdditiveValue
     Offset: '0x20'
     Size: '0x20'
-    Type: struct
+    Type: struct ScalableFloat
   - Name: PostMultiplyAdditiveValue
     Offset: '0x40'
     Size: '0x20'
-    Type: struct
+    Type: struct ScalableFloat
   - Name: BackingAttribute
     Offset: '0x60'
     Size: '0x10'
-    Type: struct
+    Type: struct GameplayEffectAttributeCaptureDefinition
   - Name: AttributeCurve
     Offset: '0x70'
     Size: '0x10'
-    Type: struct
+    Type: struct CurveTableRowHandle
   - Name: AttributeCalculationType
     Offset: '0x80'
     Size: '0x1'
@@ -107,11 +107,11 @@ AttributeBasedFloat:
   - Name: SourceTagFilter
     Offset: '0x88'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: TargetTagFilter
     Offset: '0xb0'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   ClassSize: '0xd8'
 AttributeDefaults:
   Attributes:
@@ -156,15 +156,15 @@ CustomCalculationBasedFloat:
   - Name: Coefficient
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct ScalableFloat
   - Name: PreMultiplyAdditiveValue
     Offset: '0x28'
     Size: '0x20'
-    Type: struct
+    Type: struct ScalableFloat
   - Name: PostMultiplyAdditiveValue
     Offset: '0x48'
     Size: '0x20'
-    Type: struct
+    Type: struct ScalableFloat
   ClassSize: '0x68'
 GameplayAbilityActivationInfo:
   Attributes:
@@ -179,7 +179,7 @@ GameplayAbilityActivationInfo:
   - Name: PredictionKeyWhenActivated
     Offset: '0x8'
     Size: '0x18'
-    Type: struct
+    Type: struct PredictionKey
   ClassSize: '0x20'
 GameplayAbilityActorInfo:
   Attributes:
@@ -232,7 +232,7 @@ GameplayAbilityLocalAnimMontage:
   - Name: PredictionKey
     Offset: '0x10'
     Size: '0x18'
-    Type: struct
+    Type: struct PredictionKey
   - Name: AnimatingAbility
     Offset: '0x28'
     Size: '0x8'
@@ -271,14 +271,14 @@ GameplayAbilityRepAnimMontage:
   - Name: PredictionKey
     Offset: '0x18'
     Size: '0x18'
-    Type: struct
+    Type: struct PredictionKey
   ClassSize: '0x30'
 GameplayAbilitySpec:
   Attributes:
   - Name: Handle
     Offset: '0x8'
     Size: '0x4'
-    Type: struct
+    Type: struct GameplayAbilitySpecHandle
   - Name: Ability
     Offset: '0x10'
     Size: '0x8'
@@ -310,7 +310,7 @@ GameplayAbilitySpec:
   - Name: ActivationInfo
     Offset: '0x30'
     Size: '0x20'
-    Type: struct
+    Type: struct GameplayAbilityActivationInfo
   - Name: NonReplicatedInstances
     Offset: '0x50'
     Size: '0x10'
@@ -322,7 +322,7 @@ GameplayAbilitySpec:
   - Name: GameplayEffectHandle
     Offset: '0x70'
     Size: '0x4'
-    Type: struct
+    Type: struct ActiveGameplayEffectHandle
   - Name: PendingRemove
     Offset: '0x74'
     Size: '0x1'
@@ -360,7 +360,7 @@ GameplayAbilitySpecDef:
   - Name: AssignedHandle
     Offset: '0x20'
     Size: '0x4'
-    Type: struct
+    Type: struct GameplayAbilitySpecHandle
   ClassSize: '0x28'
 GameplayAbilitySpecHandle:
   Attributes:
@@ -374,7 +374,7 @@ GameplayAbilitySpecHandleAndPredictionKey:
   - Name: AbilityHandle
     Offset: '0x0'
     Size: '0x4'
-    Type: struct
+    Type: struct GameplayAbilitySpecHandle
   - Name: PredictionKeyAtCreation
     Offset: '0x4'
     Size: '0x4'
@@ -385,7 +385,7 @@ GameplayAbilityTargetData_ActorArray:
   - Name: SourceLocation
     Offset: '0x10'
     Size: '0x70'
-    Type: struct
+    Type: struct GameplayAbilityTargetingLocationInfo
   - Name: TargetActorArray
     Offset: '0x80'
     Size: '0x10'
@@ -396,18 +396,18 @@ GameplayAbilityTargetData_LocationInfo:
   - Name: SourceLocation
     Offset: '0x10'
     Size: '0x70'
-    Type: struct
+    Type: struct GameplayAbilityTargetingLocationInfo
   - Name: TargetLocation
     Offset: '0x80'
     Size: '0x70'
-    Type: struct
+    Type: struct GameplayAbilityTargetingLocationInfo
   ClassSize: '0xf0'
 GameplayAbilityTargetData_SingleTargetHit:
   Attributes:
   - Name: HitResult
     Offset: '0x8'
     Size: '0x80'
-    Type: struct
+    Type: struct HitResult
   ClassSize: '0x88'
 GameplayAbilityTargetingLocationInfo:
   Attributes:
@@ -418,7 +418,7 @@ GameplayAbilityTargetingLocationInfo:
   - Name: LiteralTransform
     Offset: '0x20'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: SourceActor
     Offset: '0x50'
     Size: '0x8'
@@ -448,11 +448,11 @@ GameplayCueNotifyData:
   - Name: GameplayCueTag
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: GameplayCueNotifyObj
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: LoadedGameplayCueClass
     Offset: '0x18'
     Size: '0x8'
@@ -471,7 +471,7 @@ GameplayCueParameters:
   - Name: EffectContext
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct GameplayEffectContextHandle
   - Name: MatchedTagName
     Offset: '0x28'
     Size: '0x8'
@@ -479,26 +479,26 @@ GameplayCueParameters:
   - Name: OriginalTag
     Offset: '0x30'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: AggregatedSourceTags
     Offset: '0x38'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: AggregatedTargetTags
     Offset: '0x60'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   ClassSize: '0x88'
 GameplayCuePendingExecute:
   Attributes:
   - Name: GameplayCueTag
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: PredictionKey
     Offset: '0x8'
     Size: '0x18'
-    Type: struct
+    Type: struct PredictionKey
   - Name: PayloadType
     Offset: '0x20'
     Size: '0x1'
@@ -510,18 +510,18 @@ GameplayCuePendingExecute:
   - Name: FromSpec
     Offset: '0x30'
     Size: '0x90'
-    Type: struct
+    Type: struct GameplayEffectSpecForRPC
   - Name: CueParameters
     Offset: '0xc0'
     Size: '0x88'
-    Type: struct
+    Type: struct GameplayCueParameters
   ClassSize: '0x148'
 GameplayEffectAttributeCaptureDefinition:
   Attributes:
   - Name: AttributeToCapture
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayAttribute
   - Name: AttributeSource
     Offset: '0x8'
     Size: '0x1'
@@ -536,7 +536,7 @@ GameplayEffectAttributeCaptureSpec:
   - Name: BackingDefinition
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct GameplayEffectAttributeCaptureDefinition
   ClassSize: '0x28'
 GameplayEffectAttributeCaptureSpecContainer:
   Attributes:
@@ -578,7 +578,7 @@ GameplayEffectContext:
   - Name: WorldOrigin
     Offset: '0x50'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: bHasWorldOrigin
     Offset: '0x5c'
     Size: '0x1'
@@ -589,7 +589,7 @@ GameplayEffectCue:
   - Name: MagnitudeAttribute
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayAttribute
   - Name: MinLevel
     Offset: '0x8'
     Size: '0x4'
@@ -601,7 +601,7 @@ GameplayEffectCue:
   - Name: GameplayCueTags
     Offset: '0x10'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   ClassSize: '0x38'
 GameplayEffectCustomExecutionOutput:
   Attributes:
@@ -631,7 +631,7 @@ GameplayEffectExecutionDefinition:
   - Name: PassedInTags
     Offset: '0x8'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: CalculationModifiers
     Offset: '0x30'
     Size: '0x10'
@@ -646,7 +646,7 @@ GameplayEffectExecutionScopedModifierInfo:
   - Name: CapturedAttribute
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct GameplayEffectAttributeCaptureDefinition
   - Name: ModifierOp
     Offset: '0x10'
     Size: '0x1'
@@ -654,22 +654,22 @@ GameplayEffectExecutionScopedModifierInfo:
   - Name: ModifierMagnitude
     Offset: '0x18'
     Size: '0x170'
-    Type: struct
+    Type: struct GameplayEffectModifierMagnitude
   - Name: SourceTags
     Offset: '0x188'
     Size: '0x50'
-    Type: struct
+    Type: struct GameplayTagRequirements
   - Name: TargetTags
     Offset: '0x1d8'
     Size: '0x50'
-    Type: struct
+    Type: struct GameplayTagRequirements
   ClassSize: '0x228'
 GameplayEffectModifiedAttribute:
   Attributes:
   - Name: Attribute
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayAttribute
   - Name: TotalMagnitude
     Offset: '0x8'
     Size: '0x4'
@@ -684,19 +684,19 @@ GameplayEffectModifierMagnitude:
   - Name: ScalableFloatMagnitude
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct ScalableFloat
   - Name: AttributeBasedMagnitude
     Offset: '0x28'
     Size: '0xd8'
-    Type: struct
+    Type: struct AttributeBasedFloat
   - Name: CustomMagnitude
     Offset: '0x100'
     Size: '0x68'
-    Type: struct
+    Type: struct CustomCalculationBasedFloat
   - Name: SetByCallerMagnitude
     Offset: '0x168'
     Size: '0x8'
-    Type: struct
+    Type: struct SetByCallerFloat
   ClassSize: '0x170'
 GameplayEffectQuery:
   Attributes:
@@ -707,15 +707,15 @@ GameplayEffectQuery:
   - Name: OwningTagQuery
     Offset: '0x18'
     Size: '0x48'
-    Type: struct
+    Type: struct GameplayTagQuery
   - Name: EffectTagQuery
     Offset: '0x60'
     Size: '0x48'
-    Type: struct
+    Type: struct GameplayTagQuery
   - Name: ModifyingAttribute
     Offset: '0xa8'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayAttribute
   - Name: EffectSource
     Offset: '0xb0'
     Size: '0x8'
@@ -738,7 +738,7 @@ GameplayEffectSpec:
   - Name: CapturedRelevantAttributes
     Offset: '0x18'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayEffectAttributeCaptureSpecContainer
   - Name: Duration
     Offset: '0x50'
     Size: '0x4'
@@ -754,19 +754,19 @@ GameplayEffectSpec:
   - Name: CapturedSourceTags
     Offset: '0x60'
     Size: '0xa8'
-    Type: struct
+    Type: struct TagContainerAggregator
   - Name: CapturedTargetTags
     Offset: '0x108'
     Size: '0xa8'
-    Type: struct
+    Type: struct TagContainerAggregator
   - Name: DynamicGrantedTags
     Offset: '0x1b0'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: DynamicAssetTags
     Offset: '0x1d8'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: Modifiers
     Offset: '0x200'
     Size: '0x10'
@@ -794,7 +794,7 @@ GameplayEffectSpec:
   - Name: EffectContext
     Offset: '0x278'
     Size: '0x20'
-    Type: struct
+    Type: struct GameplayEffectContextHandle
   - Name: Level
     Offset: '0x298'
     Size: '0x4'
@@ -813,15 +813,15 @@ GameplayEffectSpecForRPC:
   - Name: EffectContext
     Offset: '0x18'
     Size: '0x20'
-    Type: struct
+    Type: struct GameplayEffectContextHandle
   - Name: AggregatedSourceTags
     Offset: '0x38'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: AggregatedTargetTags
     Offset: '0x60'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: Level
     Offset: '0x88'
     Size: '0x4'
@@ -832,7 +832,7 @@ GameplayEventData:
   - Name: EventTag
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: Instigator
     Offset: '0x8'
     Size: '0x8'
@@ -852,15 +852,15 @@ GameplayEventData:
   - Name: ContextHandle
     Offset: '0x28'
     Size: '0x20'
-    Type: struct
+    Type: struct GameplayEffectContextHandle
   - Name: InstigatorTags
     Offset: '0x48'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: TargetTags
     Offset: '0x70'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: EventMagnitude
     Offset: '0x98'
     Size: '0x4'
@@ -871,7 +871,7 @@ GameplayModifierEvaluatedData:
   - Name: Attribute
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayAttribute
   - Name: ModifierOp
     Offset: '0x8'
     Size: '0x1'
@@ -883,7 +883,7 @@ GameplayModifierEvaluatedData:
   - Name: Handle
     Offset: '0x10'
     Size: '0x4'
-    Type: struct
+    Type: struct ActiveGameplayEffectHandle
   - Name: IsValid
     Offset: '0x14'
     Size: '0x1'
@@ -894,7 +894,7 @@ GameplayModifierInfo:
   - Name: Attribute
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayAttribute
   - Name: ModifierOp
     Offset: '0x8'
     Size: '0x1'
@@ -902,26 +902,26 @@ GameplayModifierInfo:
   - Name: Magnitude
     Offset: '0x10'
     Size: '0x20'
-    Type: struct
+    Type: struct ScalableFloat
   - Name: ModifierMagnitude
     Offset: '0x30'
     Size: '0x170'
-    Type: struct
+    Type: struct GameplayEffectModifierMagnitude
   - Name: SourceTags
     Offset: '0x1a0'
     Size: '0x50'
-    Type: struct
+    Type: struct GameplayTagRequirements
   - Name: TargetTags
     Offset: '0x1f0'
     Size: '0x50'
-    Type: struct
+    Type: struct GameplayTagRequirements
   ClassSize: '0x240'
 GameplayTagReponsePair:
   Attributes:
   - Name: Tag
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: ResponseGameplayEffect
     Offset: '0x8'
     Size: '0x8'
@@ -932,22 +932,22 @@ GameplayTagRequirements:
   - Name: RequireTags
     Offset: '0x0'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: IgnoreTags
     Offset: '0x28'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   ClassSize: '0x50'
 GameplayTagResponseTableEntry:
   Attributes:
   - Name: Positive
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct GameplayTagReponsePair
   - Name: Negative
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct GameplayTagReponsePair
   ClassSize: '0x20'
 GameplayTargetDataFilter:
   Attributes:
@@ -973,15 +973,15 @@ InheritedTagContainer:
   - Name: CombinedTags
     Offset: '0x0'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: Added
     Offset: '0x28'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: Removed
     Offset: '0x50'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   ClassSize: '0x78'
 ModifierSpec:
   Attributes:
@@ -1022,7 +1022,7 @@ ScalableFloat:
   - Name: Curve
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct CurveTableRowHandle
   ClassSize: '0x20'
 SetByCallerFloat:
   Attributes:
@@ -1036,20 +1036,20 @@ TagContainerAggregator:
   - Name: CapturedActorTags
     Offset: '0x0'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: CapturedSpecTags
     Offset: '0x28'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: ScopedTags
     Offset: '0x50'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   ClassSize: '0xa8'
 WorldReticleParameters:
   Attributes:
   - Name: AOEScale
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0xc'

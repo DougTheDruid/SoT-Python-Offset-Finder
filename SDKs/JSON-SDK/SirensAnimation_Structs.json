@@ -63,7 +63,7 @@
     "Attributes": [
       {
         "Name": "LocomotionAnims",
-        "Type": "struct",
+        "Type": "struct SirenAnimationLocomotion",
         "Size": "0x48",
         "Offset": "0x0"
       },
@@ -81,7 +81,7 @@
       },
       {
         "Name": "HitReactAnimationData",
-        "Type": "struct",
+        "Type": "struct HitReactionAnimationData",
         "Size": "0x8",
         "Offset": "0x58"
       }

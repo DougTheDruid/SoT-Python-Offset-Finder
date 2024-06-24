@@ -25,7 +25,7 @@ SaferSeasSettings:
   - Name: SaferSeasBlacklistAsset
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'

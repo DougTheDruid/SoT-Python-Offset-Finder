@@ -1,15 +1,29 @@
 {
-  "InteractionPreventionComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x18",
+  "MockActorWithCharacterInteractionComponent": {
+    "Super": "Character",
+    "FullSize": "0x690",
+    "InheritedSize": "0x5e0",
+    "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "ActorsToPreventInteractingWith",
-        "Type": "TArray<class Actor*>",
+        "Name": "CharacterInteractionComponent",
+        "Type": "class CharacterInteractionComponent*",
+        "Size": "0x8",
+        "Offset": "0x5e8"
+      }
+    ]
+  },
+  "InteractableService": {
+    "Super": "Object",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "InteractableAreas",
+        "Type": "TArray<class InteractableArea*>",
         "Size": "0x10",
-        "Offset": "0xd0"
+        "Offset": "0x38"
       }
     ]
   },
@@ -35,7 +49,7 @@
     "Attributes": [
       {
         "Name": "Bounds",
-        "Type": "struct",
+        "Type": "struct BoxSphereBounds",
         "Size": "0x1c",
         "Offset": "0x28"
       },
@@ -59,6 +73,66 @@
       }
     ]
   },
+  "CharacterInteractionComponent": {
+    "Super": "BoxComponent",
+    "FullSize": "0x6d0",
+    "InheritedSize": "0x600",
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "CurrentOptimalInteractable",
+        "Type": "class InteractableArea*",
+        "Size": "0x8",
+        "Offset": "0x600"
+      }
+    ]
+  },
+  "InteractionPreventionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ActorsToPreventInteractingWith",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "MockInteractorActor": {
+    "Super": "Actor",
+    "FullSize": "0x3f8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "FocusedInteractable",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "InteractedObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "InteractNotificationType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "ValidInteractNotificationIds",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x3e8"
+      }
+    ]
+  },
   "InteractableComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x138",
@@ -73,19 +147,19 @@
       },
       {
         "Name": "BoxExtent",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xd8"
       },
       {
         "Name": "BoxOrigin",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xe4"
       },
       {
         "Name": "BoxRotation",
-        "Type": "struct",
+        "Type": "struct Rotator",
         "Size": "0xc",
         "Offset": "0xf0"
       },
@@ -142,80 +216,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x120"
-      }
-    ]
-  },
-  "CharacterInteractionComponent": {
-    "Super": "BoxComponent",
-    "FullSize": "0x6d0",
-    "InheritedSize": "0x600",
-    "ClassSize": "0xd0",
-    "Attributes": [
-      {
-        "Name": "CurrentOptimalInteractable",
-        "Type": "class InteractableArea*",
-        "Size": "0x8",
-        "Offset": "0x600"
-      }
-    ]
-  },
-  "MockActorWithCharacterInteractionComponent": {
-    "Super": "Character",
-    "FullSize": "0x690",
-    "InheritedSize": "0x5e0",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "CharacterInteractionComponent",
-        "Type": "class CharacterInteractionComponent*",
-        "Size": "0x8",
-        "Offset": "0x5e8"
-      }
-    ]
-  },
-  "InteractableService": {
-    "Super": "Object",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "InteractableAreas",
-        "Type": "TArray<class InteractableArea*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "MockInteractorActor": {
-    "Super": "Actor",
-    "FullSize": "0x3f8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "FocusedInteractable",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "InteractedObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "InteractNotificationType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "ValidInteractNotificationIds",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x3e8"
       }
     ]
   },

@@ -25,11 +25,11 @@ MovieScene:
   - Name: SelectionRange
     Offset: '0xc8'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: PlaybackRange
     Offset: '0xd8'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: bForceFixedFrameIntervalPlayback
     Offset: '0xe8'
     Size: '0x1'
@@ -95,7 +95,7 @@ MovieSceneSection:
   - Name: EvalOptions
     Offset: '0x80'
     Size: '0x2'
-    Type: struct
+    Type: struct MovieSceneSectionEvalOptions
   - Name: StartTime
     Offset: '0x84'
     Size: '0x4'
@@ -133,11 +133,11 @@ MovieSceneSequence:
   - Name: EvaluationTemplate
     Offset: '0x80'
     Size: '0x220'
-    Type: struct
+    Type: struct CachedMovieSceneEvaluationTemplate
   - Name: TemplateParameters
     Offset: '0x2a0'
     Size: '0x1'
-    Type: struct
+    Type: struct MovieSceneTrackCompilationParams
   - Name: bParentContextsAreSignificant
     Offset: '0x2a1'
     Size: '0x1'
@@ -195,7 +195,7 @@ MovieSceneSequencePlayer:
   - Name: PlaybackSettings
     Offset: '0x3f0'
     Size: '0x28'
-    Type: struct
+    Type: struct MovieSceneSequencePlaybackSettings
   - Name: InteractingCharacter
     Offset: '0x5e8'
     Size: '0x8'
@@ -209,7 +209,7 @@ MovieSceneSignedObject:
   - Name: Signature
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x58'
   FullSize: '0x80'
   InheritedSize: '0x28'
@@ -219,7 +219,7 @@ MovieSceneTrack:
   - Name: EvalOptions
     Offset: '0x80'
     Size: '0x4'
-    Type: struct
+    Type: struct MovieSceneTrackEvalOptions
   ClassSize: '0x8'
   FullSize: '0x88'
   InheritedSize: '0x80'

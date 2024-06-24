@@ -20,7 +20,7 @@ EventRepairableObjectRepairEndedEvent:
   - Name: Position
     Offset: '0x8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: RepairerActor
     Offset: '0x18'
     Size: '0x8'
@@ -39,11 +39,11 @@ RepairObjectActionStateConstructionInfo:
   - Name: RepairableObject
     Offset: '0x30'
     Size: '0x14'
-    Type: struct
+    Type: struct NetSubObjectPtr
   - Name: WieldedItem
     Offset: '0x44'
     Size: '0x14'
-    Type: struct
+    Type: struct NetActorPtr
   - Name: InputID
     Offset: '0x58'
     Size: '0x8'

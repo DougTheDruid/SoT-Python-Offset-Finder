@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "ConditionRoot",
-        "Type": "struct",
+        "Type": "struct ConditionInstance",
         "Size": "0x20",
         "Offset": "0x28"
       }

@@ -5,14 +5,14 @@ CrewSessionBaseSessionTelemetryEvent:
   - Name: Session
     Offset: '0x10'
     Size: '0x40'
-    Type: struct
+    Type: struct CrewSessionTelemetry
   ClassSize: '0x50'
 CrewSessionBaseTelemetryEvent:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 CrewSessionCreatedTelemetryEvent:
   Attributes:
@@ -37,7 +37,7 @@ CrewSessionKeepAliveFailedTelemetryEvent:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: UserStatus
     Offset: '0x10'
     Size: '0x10'
@@ -56,11 +56,11 @@ CrewSessionMatchmakingEndedTelemetryEvent:
   - Name: NewCrewId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: CrewMatchmakingAttemptId
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: SessionType
     Offset: '0x30'
     Size: '0x10'
@@ -99,7 +99,7 @@ CrewSessionMatchmakingFollowedTelemetryEvent:
   - Name: NewCrewId
     Offset: '0x50'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: ResultCode
     Offset: '0x60'
     Size: '0x4'
@@ -114,7 +114,7 @@ CrewSessionMatchmakingStartedTelemetryEvent:
   - Name: CrewMatchmakingAttemptId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: SessionType
     Offset: '0x20'
     Size: '0x10'
@@ -251,14 +251,14 @@ SessionHostChangedEvent:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x40'
 SessionHostDeviceChangedEvent:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: NewHostDevice
     Offset: '0x10'
     Size: '0x10'
@@ -269,7 +269,7 @@ SessionInfoUpdateAvailableEvent:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 SessionTemplate:
   Attributes:

@@ -1,11 +1,40 @@
 {
-  "CollectionAnimSequenceLimits": {
-    "ClassSize": "0x4",
+  "CollectionTotalsLimits": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "MaxMemory",
+        "Name": "MaxTotalVerts",
         "Type": "int",
         "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxTotalMemory",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "MostExpensiveAssetsSetSize",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ExpensiveAssetSetMaxTotalMemory",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "ClientPawnDetails": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Pawns",
+        "Type": "TArray<class Pawn*>",
+        "Size": "0x10",
         "Offset": "0x0"
       }
     ]
@@ -39,30 +68,53 @@
       }
     ]
   },
-  "TestLevelMetadataEntry": {
-    "ClassSize": "0x20",
+  "AssetAuditConstantEntry": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Property",
+        "Name": "Name",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Value",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x10"
       }
     ]
   },
-  "ClientPawnDetails": {
-    "ClassSize": "0x10",
+  "SubstringAuditQueryData": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Pawns",
-        "Type": "TArray<class Pawn*>",
+        "Name": "QueryStringArray",
+        "Type": "TArray<String>",
         "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SearchSetSize",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MemoryLimitForSet",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "CollectionAnimSequenceLimits": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "MaxMemory",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
       }
     ]
@@ -87,6 +139,85 @@
         "Type": "TArray<struct Name>",
         "Size": "0x10",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "TestLevelMetadataEntry": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Property",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Value",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CollectionMeshLimitsBase": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MaxVerts",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxMemory",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "MeshAuditLimits": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "SubstringQueries",
+        "Type": "TArray<struct SubstringAuditQueryData>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FolderMeshLimits",
+        "Type": "struct FolderTotals",
+        "Size": "0x28",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AssetAuditConstants": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AssetAuditConstants",
+        "Type": "TArray<struct AssetAuditConstantEntry>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TextureAuditorGroupProperties": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "TextureGroup",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Properties",
+        "Type": "struct TextureAuditorProperties",
+        "Size": "0x20",
+        "Offset": "0x8"
       }
     ]
   },
@@ -119,25 +250,25 @@
       },
       {
         "Name": "CollectionTotals",
-        "Type": "struct",
+        "Type": "struct CollectionTotalsLimits",
         "Size": "0x10",
         "Offset": "0xc"
       },
       {
         "Name": "StaticMeshLimits",
-        "Type": "struct",
+        "Type": "struct CollectionStaticMeshLimits",
         "Size": "0x8",
         "Offset": "0x1c"
       },
       {
         "Name": "SkeleMeshLimits",
-        "Type": "struct",
+        "Type": "struct CollectionSkeleMeshLimits",
         "Size": "0x8",
         "Offset": "0x24"
       },
       {
         "Name": "AnimLimits",
-        "Type": "struct",
+        "Type": "struct CollectionAnimSequenceLimits",
         "Size": "0x4",
         "Offset": "0x2c"
       },
@@ -152,137 +283,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x31"
-      }
-    ]
-  },
-  "AssetAuditConstantEntry": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Name",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Value",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "CollectionTotalsLimits": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MaxTotalVerts",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxTotalMemory",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "MostExpensiveAssetsSetSize",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ExpensiveAssetSetMaxTotalMemory",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "SubstringAuditQueryData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "QueryStringArray",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SearchSetSize",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MemoryLimitForSet",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "CollectionMeshLimitsBase": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "MaxVerts",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxMemory",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "TextureAuditorGroupProperties": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "TextureGroup",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Properties",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "MeshAuditLimits": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "SubstringQueries",
-        "Type": "TArray<struct SubstringAuditQueryData>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FolderMeshLimits",
-        "Type": "struct",
-        "Size": "0x28",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "AssetAuditConstants": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AssetAuditConstants",
-        "Type": "TArray<struct AssetAuditConstantEntry>",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },

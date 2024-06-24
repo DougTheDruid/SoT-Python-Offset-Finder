@@ -6,36 +6,6 @@
 #include "TaleAI_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class TaleQuestAIAsset: public DataAsset
-{
-public:
-	class TaleQuestSpawnAICustomRootStepDesc*                    SpawnerRoot;                                       // 0x28(0x8)
-	class TaleStruct*                                            SpawnerParameters;                                 // 0x30(0x8)
-};
-
-
-// Size 0xe8 (Full Size[0x168] - InheritedSize[0x80]
-class TaleQuestSpawnAICustomRootStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct                                                       SetupTaskData;                                     // 0x88(0x18)
-	struct                                                       OnTriggerWaveTaskData;                             // 0xa0(0x10)
-	struct                                                       OnCompleteWaveTaskData;                            // 0xb0(0x8)
-	struct                                                       PreSpawnTaskData;                                  // 0xb8(0x78)
-	struct                                                       OnSpawnTaskData;                                   // 0x130(0x18)
-	struct                                                       OnDespawnTaskData;                                 // 0x148(0x20)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class TaleQuestSpawnAICustomOnDespawnFrame: public Object
-{
-public:
-	struct                                                       Data;                                              // 0x30(0x20)
-};
-
-
 // Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
 class TaleAIRegionBase: public Object
 {
@@ -44,11 +14,34 @@ public:
 };
 
 
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class TaleQuestSpawnAICustomTaskBase: public Object
+// Size 0xe8 (Full Size[0x168] - InheritedSize[0x80]
+class TaleQuestSpawnAICustomRootStepDesc: public TaleQuestStepDesc
 {
 public:
-	class TaleQuestSpawnAICustomRootStep*                        MyRootStep;                                        // 0x30(0x8)
+	struct SpawnAICustomSetupTaskData                            SetupTaskData;                                     // 0x88(0x18)
+	struct SpawnActorCustomOnTriggerWaveTaskData                 OnTriggerWaveTaskData;                             // 0xa0(0x10)
+	struct SpawnActorCustomOnCompleteWaveTaskData                OnCompleteWaveTaskData;                            // 0xb0(0x8)
+	struct SpawnAICustomPreSpawnTaskData                         PreSpawnTaskData;                                  // 0xb8(0x78)
+	struct SpawnAICustomOnSpawnTaskData                          OnSpawnTaskData;                                   // 0x130(0x18)
+	struct SpawnAICustomOnDespawnTaskData                        OnDespawnTaskData;                                 // 0x148(0x20)
+};
+
+
+// Size 0xf0 (Full Size[0x188] - InheritedSize[0x98]
+class TaleQuestSpawnAICustomRootStep: public TaleQuestStep
+{
+public:
+	struct TaleStructInstance                                    Params;                                            // 0xa8(0x10)
+	TArray<class TaleQuestSpawnAICustomTaskBase*>                ActiveTasks;                                       // 0xb8(0x10)
+	class TaleAIRegionBase*                                      Region;                                            // 0xd8(0x8)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class TaleQuestSpawnAICustomOnDespawnFrame: public Object
+{
+public:
+	struct SpawnAICustomOnDespawnTaskData                        Data;                                              // 0x30(0x20)
 };
 
 
@@ -66,17 +59,15 @@ public:
 class TaleQuestSpawnAICustomOnSpawnFrame: public Object
 {
 public:
-	struct                                                       Data;                                              // 0x30(0x18)
+	struct SpawnAICustomOnSpawnTaskData                          Data;                                              // 0x30(0x18)
 };
 
 
-// Size 0xf0 (Full Size[0x188] - InheritedSize[0x98]
-class TaleQuestSpawnAICustomRootStep: public TaleQuestStep
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class TaleQuestSpawnAICustomTaskBase: public Object
 {
 public:
-	struct                                                       Params;                                            // 0xa8(0x10)
-	TArray<class TaleQuestSpawnAICustomTaskBase*>                ActiveTasks;                                       // 0xb8(0x10)
-	class TaleAIRegionBase*                                      Region;                                            // 0xd8(0x8)
+	class TaleQuestSpawnAICustomRootStep*                        MyRootStep;                                        // 0x30(0x8)
 };
 
 
@@ -88,16 +79,34 @@ public:
 	class TaleQuestStepDesc*                                     OnSpawn;                                           // 0x90(0x8)
 	class TaleQuestStepDesc*                                     OnDespawn;                                         // 0x98(0x8)
 	map                                                          ParameterMapping;                                  // 0xa0(0x50)
-	struct                                                       ParamterInstance;                                  // 0xf0(0x10)
+	struct TaleStructInstance                                    ParamterInstance;                                  // 0xf0(0x10)
 };
 
 
-// Size 0x98 (Full Size[0x110] - InheritedSize[0x78]
-class TaleQuestSpawnAICustomPreSpawnTask: public TaleQuestSpawnAICustomTaskBase
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class TaleQuestAIAsset: public DataAsset
 {
 public:
-	interface                                                    Body;                                              // 0x80(0x10)
-	struct                                                       TaskData;                                          // 0x90(0x78)
+	class TaleQuestSpawnAICustomRootStepDesc*                    SpawnerRoot;                                       // 0x28(0x8)
+	class TaleStruct*                                            SpawnerParameters;                                 // 0x30(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x98] - InheritedSize[0x78]
+class TaleQuestSpawnAICustomSpawnerOnTriggerWaveTask: public TaleQuestSpawnAICustomTaskBase
+{
+public:
+	struct SpawnActorCustomOnTriggerWaveTaskData                 TaskData;                                          // 0x78(0x10)
+	interface                                                    Body;                                              // 0x88(0x10)
+};
+
+
+// Size 0x28 (Full Size[0xa0] - InheritedSize[0x78]
+class TaleQuestSpawnAICustomSetupTask: public TaleQuestSpawnAICustomTaskBase
+{
+public:
+	struct SpawnAICustomSetupTaskData                            TaskData;                                          // 0x78(0x18)
+	interface                                                    Body;                                              // 0x90(0x10)
 };
 
 
@@ -106,34 +115,16 @@ class TaleQuestSpawnAICustomOnSpawnTask: public TaleQuestSpawnAICustomTaskBase
 {
 public:
 	interface                                                    Body;                                              // 0x78(0x10)
-	struct                                                       TaskData;                                          // 0x88(0x18)
+	struct SpawnAICustomOnSpawnTaskData                          TaskData;                                          // 0x88(0x18)
 };
 
 
-// Size 0x28 (Full Size[0xa0] - InheritedSize[0x78]
-class TaleQuestSpawnAICustomSetupTask: public TaleQuestSpawnAICustomTaskBase
+// Size 0x98 (Full Size[0x110] - InheritedSize[0x78]
+class TaleQuestSpawnAICustomPreSpawnTask: public TaleQuestSpawnAICustomTaskBase
 {
 public:
-	struct                                                       TaskData;                                          // 0x78(0x18)
-	interface                                                    Body;                                              // 0x90(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x90] - InheritedSize[0x78]
-class TaleQuestSpawnAICustomSpawnerOnCompleteWaveTask: public TaleQuestSpawnAICustomTaskBase
-{
-public:
-	struct                                                       TaskData;                                          // 0x78(0x8)
 	interface                                                    Body;                                              // 0x80(0x10)
-};
-
-
-// Size 0x20 (Full Size[0x98] - InheritedSize[0x78]
-class TaleQuestSpawnAICustomSpawnerOnTriggerWaveTask: public TaleQuestSpawnAICustomTaskBase
-{
-public:
-	struct                                                       TaskData;                                          // 0x78(0x10)
-	interface                                                    Body;                                              // 0x88(0x10)
+	struct SpawnAICustomPreSpawnTaskData                         TaskData;                                          // 0x90(0x78)
 };
 
 
@@ -142,7 +133,16 @@ class TaleQuestSpawnAICustomOnDespawnTask: public TaleQuestSpawnAICustomTaskBase
 {
 public:
 	interface                                                    Body;                                              // 0x78(0x10)
-	struct                                                       TaskData;                                          // 0x88(0x20)
+	struct SpawnAICustomOnDespawnTaskData                        TaskData;                                          // 0x88(0x20)
+};
+
+
+// Size 0x18 (Full Size[0x90] - InheritedSize[0x78]
+class TaleQuestSpawnAICustomSpawnerOnCompleteWaveTask: public TaleQuestSpawnAICustomTaskBase
+{
+public:
+	struct SpawnActorCustomOnCompleteWaveTaskData                TaskData;                                          // 0x78(0x8)
+	interface                                                    Body;                                              // 0x80(0x10)
 };
 
 

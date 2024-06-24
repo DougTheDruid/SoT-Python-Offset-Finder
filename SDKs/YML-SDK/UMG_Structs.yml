@@ -5,15 +5,15 @@ AnchorData:
   - Name: Offsets
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: Anchors
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Anchors
   - Name: Alignment
     Offset: '0x20'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x28'
 DelegateRuntimeBinding:
   Attributes:
@@ -32,7 +32,7 @@ DelegateRuntimeBinding:
   - Name: SourcePath
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct DynamicPropertyPath
   - Name: Kind
     Offset: '0x30'
     Size: '0x1'
@@ -50,46 +50,46 @@ MovieScene2DTransformSectionTemplate:
   - Name: PropertyData
     Offset: '0x18'
     Size: '0x20'
-    Type: struct
+    Type: struct MovieScenePropertySectionData
   - Name: Translation
     Offset: '0x38'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: Rotation
     Offset: '0x128'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: Scale
     Offset: '0x1a0'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: Shear
     Offset: '0x290'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   ClassSize: '0x380'
 MovieSceneMarginSectionTemplate:
   Attributes:
   - Name: PropertyData
     Offset: '0x18'
     Size: '0x20'
-    Type: struct
+    Type: struct MovieScenePropertySectionData
   - Name: TopCurve
     Offset: '0x38'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: LeftCurve
     Offset: '0xb0'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: RightCurve
     Offset: '0x128'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: BottomCurve
     Offset: '0x1a0'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   ClassSize: '0x218'
 MovieSceneWidgetMaterialSectionTemplate:
   Attributes:
@@ -152,7 +152,7 @@ WidgetAnimationBinding:
   - Name: AnimationGuid
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: bIsRootWidget
     Offset: '0x20'
     Size: '0x1'
@@ -174,15 +174,15 @@ WidgetTransform:
   - Name: Translation
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Scale
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Shear
     Offset: '0x10'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Angle
     Offset: '0x18'
     Size: '0x4'

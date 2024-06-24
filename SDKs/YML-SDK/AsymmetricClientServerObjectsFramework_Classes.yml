@@ -25,7 +25,7 @@ AsymmetricClientObject:
   - Name: RotationWhenPlacingWorldProxy
     Offset: '0x408'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: ZOffsetWhenPlacingWorldProxy
     Offset: '0x414'
     Size: '0x4'
@@ -47,7 +47,7 @@ AsymmetricObjectServerManager:
   - Name: AsymmetricObjectAsset
     Offset: '0x3f0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: ForcedAsymmetricObjectAsset
     Offset: '0x400'
     Size: '0x20'

@@ -1,15 +1,61 @@
 {
-  "RegionLookupGeneratedGrid": {
+  "LevelAssetCachingService": {
     "Super": "Object",
-    "FullSize": "0xb0",
+    "FullSize": "0x70",
     "InheritedSize": "0x28",
-    "ClassSize": "0x88",
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "WorldSetup",
-        "Type": "struct",
-        "Size": "0x28",
-        "Offset": "0x30"
+        "Name": "CurrentRegion",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "AssetCache",
+        "Type": "interface",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "RegionLookup",
+        "Type": "interface",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "CachedPawn",
+        "Type": "class Pawn*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "RegionalAssetListWorldSetupDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "WorldSetups",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "RegionalAssetListSetupDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "ListMapping",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x28"
       }
     ]
   },
@@ -41,63 +87,17 @@
       }
     ]
   },
-  "RegionalAssetListSetupDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x78",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "ListMapping",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "RegionalAssetListWorldSetupDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x78",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "WorldSetups",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "LevelAssetCachingService": {
+  "RegionLookupGeneratedGrid": {
     "Super": "Object",
-    "FullSize": "0x70",
+    "FullSize": "0xb0",
     "InheritedSize": "0x28",
-    "ClassSize": "0x48",
+    "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "CurrentRegion",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "AssetCache",
-        "Type": "interface",
-        "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "RegionLookup",
-        "Type": "interface",
-        "Size": "0x10",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "CachedPawn",
-        "Type": "class Pawn*",
-        "Size": "0x8",
-        "Offset": "0x68"
+        "Name": "WorldSetup",
+        "Type": "struct WorldRegionSetup",
+        "Size": "0x28",
+        "Offset": "0x30"
       }
     ]
   },

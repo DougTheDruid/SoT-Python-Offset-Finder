@@ -69,7 +69,7 @@
     "Attributes": [
       {
         "Name": "VFXTintColour",
-        "Type": "struct",
+        "Type": "struct Color",
         "Size": "0x4",
         "Offset": "0xc8"
       },
@@ -126,6 +126,50 @@
         "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x100"
+      }
+    ]
+  },
+  "BreakableActorAudioComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1c8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x100",
+    "Attributes": [
+      {
+        "Name": "UseParentEmitter",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "AudioPool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "PlayMusicEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "StopMusicEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "PlayDamagedEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "PlayDestroyedEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xf0"
       }
     ]
   },
@@ -188,50 +232,6 @@
         "Type": "class BreakableActorBase*",
         "Size": "0x8",
         "Offset": "0x110"
-      }
-    ]
-  },
-  "BreakableActorAudioComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x1c8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x100",
-    "Attributes": [
-      {
-        "Name": "UseParentEmitter",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "AudioPool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "PlayMusicEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "StopMusicEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "PlayDamagedEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "PlayDestroyedEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xf0"
       }
     ]
   },

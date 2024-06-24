@@ -1,82 +1,4 @@
 {
-  "TaleQuestAIAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SpawnerRoot",
-        "Type": "class TaleQuestSpawnAICustomRootStepDesc*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "SpawnerParameters",
-        "Type": "class TaleStruct*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "TaleQuestSpawnAICustomRootStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x168",
-    "InheritedSize": "0x80",
-    "ClassSize": "0xe8",
-    "Attributes": [
-      {
-        "Name": "SetupTaskData",
-        "Type": "struct",
-        "Size": "0x18",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "OnTriggerWaveTaskData",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "OnCompleteWaveTaskData",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "PreSpawnTaskData",
-        "Type": "struct",
-        "Size": "0x78",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "OnSpawnTaskData",
-        "Type": "struct",
-        "Size": "0x18",
-        "Offset": "0x130"
-      },
-      {
-        "Name": "OnDespawnTaskData",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x148"
-      }
-    ]
-  },
-  "TaleQuestSpawnAICustomOnDespawnFrame": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Data",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "TaleAIRegionBase": {
     "Super": "Object",
     "FullSize": "0x70",
@@ -91,16 +13,86 @@
       }
     ]
   },
-  "TaleQuestSpawnAICustomTaskBase": {
-    "Super": "Object",
-    "FullSize": "0x78",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x50",
+  "TaleQuestSpawnAICustomRootStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x168",
+    "InheritedSize": "0x80",
+    "ClassSize": "0xe8",
     "Attributes": [
       {
-        "Name": "MyRootStep",
-        "Type": "class TaleQuestSpawnAICustomRootStep*",
+        "Name": "SetupTaskData",
+        "Type": "struct SpawnAICustomSetupTaskData",
+        "Size": "0x18",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "OnTriggerWaveTaskData",
+        "Type": "struct SpawnActorCustomOnTriggerWaveTaskData",
+        "Size": "0x10",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "OnCompleteWaveTaskData",
+        "Type": "struct SpawnActorCustomOnCompleteWaveTaskData",
         "Size": "0x8",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "PreSpawnTaskData",
+        "Type": "struct SpawnAICustomPreSpawnTaskData",
+        "Size": "0x78",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "OnSpawnTaskData",
+        "Type": "struct SpawnAICustomOnSpawnTaskData",
+        "Size": "0x18",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "OnDespawnTaskData",
+        "Type": "struct SpawnAICustomOnDespawnTaskData",
+        "Size": "0x20",
+        "Offset": "0x148"
+      }
+    ]
+  },
+  "TaleQuestSpawnAICustomRootStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x188",
+    "InheritedSize": "0x98",
+    "ClassSize": "0xf0",
+    "Attributes": [
+      {
+        "Name": "Params",
+        "Type": "struct TaleStructInstance",
+        "Size": "0x10",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "ActiveTasks",
+        "Type": "TArray<class TaleQuestSpawnAICustomTaskBase*>",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "Region",
+        "Type": "class TaleAIRegionBase*",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      }
+    ]
+  },
+  "TaleQuestSpawnAICustomOnDespawnFrame": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Data",
+        "Type": "struct SpawnAICustomOnDespawnTaskData",
+        "Size": "0x20",
         "Offset": "0x30"
       }
     ]
@@ -139,35 +131,23 @@
     "Attributes": [
       {
         "Name": "Data",
-        "Type": "struct",
+        "Type": "struct SpawnAICustomOnSpawnTaskData",
         "Size": "0x18",
         "Offset": "0x30"
       }
     ]
   },
-  "TaleQuestSpawnAICustomRootStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x188",
-    "InheritedSize": "0x98",
-    "ClassSize": "0xf0",
+  "TaleQuestSpawnAICustomTaskBase": {
+    "Super": "Object",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "Params",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0xa8"
-      },
-      {
-        "Name": "ActiveTasks",
-        "Type": "TArray<class TaleQuestSpawnAICustomTaskBase*>",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "Region",
-        "Type": "class TaleAIRegionBase*",
+        "Name": "MyRootStep",
+        "Type": "class TaleQuestSpawnAICustomRootStep*",
         "Size": "0x8",
-        "Offset": "0xd8"
+        "Offset": "0x30"
       }
     ]
   },
@@ -203,28 +183,68 @@
       },
       {
         "Name": "ParamterInstance",
-        "Type": "struct",
+        "Type": "struct TaleStructInstance",
         "Size": "0x10",
         "Offset": "0xf0"
       }
     ]
   },
-  "TaleQuestSpawnAICustomPreSpawnTask": {
-    "Super": "TaleQuestSpawnAICustomTaskBase",
-    "FullSize": "0x110",
-    "InheritedSize": "0x78",
-    "ClassSize": "0x98",
+  "TaleQuestAIAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
     "Attributes": [
+      {
+        "Name": "SpawnerRoot",
+        "Type": "class TaleQuestSpawnAICustomRootStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "SpawnerParameters",
+        "Type": "class TaleStruct*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "TaleQuestSpawnAICustomSpawnerOnTriggerWaveTask": {
+    "Super": "TaleQuestSpawnAICustomTaskBase",
+    "FullSize": "0x98",
+    "InheritedSize": "0x78",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "TaskData",
+        "Type": "struct SpawnActorCustomOnTriggerWaveTaskData",
+        "Size": "0x10",
+        "Offset": "0x78"
+      },
       {
         "Name": "Body",
         "Type": "interface",
         "Size": "0x10",
-        "Offset": "0x80"
-      },
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "TaleQuestSpawnAICustomSetupTask": {
+    "Super": "TaleQuestSpawnAICustomTaskBase",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x78",
+    "ClassSize": "0x28",
+    "Attributes": [
       {
         "Name": "TaskData",
-        "Type": "struct",
-        "Size": "0x78",
+        "Type": "struct SpawnAICustomSetupTaskData",
+        "Size": "0x18",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "Body",
+        "Type": "interface",
+        "Size": "0x10",
         "Offset": "0x90"
       }
     ]
@@ -243,69 +263,29 @@
       },
       {
         "Name": "TaskData",
-        "Type": "struct",
+        "Type": "struct SpawnAICustomOnSpawnTaskData",
         "Size": "0x18",
         "Offset": "0x88"
       }
     ]
   },
-  "TaleQuestSpawnAICustomSetupTask": {
+  "TaleQuestSpawnAICustomPreSpawnTask": {
     "Super": "TaleQuestSpawnAICustomTaskBase",
-    "FullSize": "0xa0",
+    "FullSize": "0x110",
     "InheritedSize": "0x78",
-    "ClassSize": "0x28",
+    "ClassSize": "0x98",
     "Attributes": [
-      {
-        "Name": "TaskData",
-        "Type": "struct",
-        "Size": "0x18",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "Body",
-        "Type": "interface",
-        "Size": "0x10",
-        "Offset": "0x90"
-      }
-    ]
-  },
-  "TaleQuestSpawnAICustomSpawnerOnCompleteWaveTask": {
-    "Super": "TaleQuestSpawnAICustomTaskBase",
-    "FullSize": "0x90",
-    "InheritedSize": "0x78",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "TaskData",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x78"
-      },
       {
         "Name": "Body",
         "Type": "interface",
         "Size": "0x10",
         "Offset": "0x80"
-      }
-    ]
-  },
-  "TaleQuestSpawnAICustomSpawnerOnTriggerWaveTask": {
-    "Super": "TaleQuestSpawnAICustomTaskBase",
-    "FullSize": "0x98",
-    "InheritedSize": "0x78",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "TaskData",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x78"
       },
       {
-        "Name": "Body",
-        "Type": "interface",
-        "Size": "0x10",
-        "Offset": "0x88"
+        "Name": "TaskData",
+        "Type": "struct SpawnAICustomPreSpawnTaskData",
+        "Size": "0x78",
+        "Offset": "0x90"
       }
     ]
   },
@@ -323,9 +303,29 @@
       },
       {
         "Name": "TaskData",
-        "Type": "struct",
+        "Type": "struct SpawnAICustomOnDespawnTaskData",
         "Size": "0x20",
         "Offset": "0x88"
+      }
+    ]
+  },
+  "TaleQuestSpawnAICustomSpawnerOnCompleteWaveTask": {
+    "Super": "TaleQuestSpawnAICustomTaskBase",
+    "FullSize": "0x90",
+    "InheritedSize": "0x78",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "TaskData",
+        "Type": "struct SpawnActorCustomOnCompleteWaveTaskData",
+        "Size": "0x8",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "Body",
+        "Type": "interface",
+        "Size": "0x10",
+        "Offset": "0x80"
       }
     ]
   },

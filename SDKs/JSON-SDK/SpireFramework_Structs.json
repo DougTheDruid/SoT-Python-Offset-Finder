@@ -1,10 +1,33 @@
 {
+  "SpireInfo": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "LevelId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ShouldBeLoaded",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "ShouldBeVisible",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5"
+      }
+    ]
+  },
   "SpireEntry": {
     "ClassSize": "0x14",
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
@@ -27,7 +50,7 @@
       },
       {
         "Name": "Location",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x4"
       },
@@ -42,29 +65,6 @@
         "Type": "map",
         "Size": "0x50",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "SpireInfo": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "LevelId",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ShouldBeLoaded",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "ShouldBeVisible",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x5"
       }
     ]
   },

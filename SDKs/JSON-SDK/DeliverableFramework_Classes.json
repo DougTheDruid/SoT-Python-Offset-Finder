@@ -1,4 +1,18 @@
 {
+  "DeliverableRedirectionLiteralDestinationDescriptor": {
+    "Super": "DeliverableRedirectionDestinationDescriptorBase",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Destination",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "DeliverableRequirementsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x50",
@@ -13,23 +27,9 @@
       },
       {
         "Name": "FeatureOverrideRequirements",
-        "Type": "struct",
+        "Type": "struct DeliverableRequirementFeatureOverride",
         "Size": "0x18",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "DeliverableRedirectionCompositeContext": {
-    "Super": "DeliverableRedirectionContextBase",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Contexts",
-        "Type": "TArray<class DeliverableRedirectionContextBase*>",
-        "Size": "0x10",
-        "Offset": "0x28"
       }
     ]
   },
@@ -44,6 +44,20 @@
         "Type": "class DeliverableRedirectionContextBase*",
         "Size": "0x8",
         "Offset": "0xd0"
+      }
+    ]
+  },
+  "DeliverableRedirectionCompositeContext": {
+    "Super": "DeliverableRedirectionContextBase",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Contexts",
+        "Type": "TArray<class DeliverableRedirectionContextBase*>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },
@@ -71,20 +85,6 @@
         "Name": "DestinationDescriptor",
         "Type": "class DeliverableRedirectionDestinationDescriptorBase*",
         "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "DeliverableRedirectionLiteralDestinationDescriptor": {
-    "Super": "DeliverableRedirectionDestinationDescriptorBase",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Destination",
-        "Type": "struct FText",
-        "Size": "0x38",
         "Offset": "0x28"
       }
     ]

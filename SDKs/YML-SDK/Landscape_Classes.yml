@@ -49,7 +49,7 @@ LandscapeComponent:
   - Name: WeightmapScaleBias
     Offset: '0x620'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: WeightmapSubsectionOffset
     Offset: '0x630'
     Size: '0x4'
@@ -57,7 +57,7 @@ LandscapeComponent:
   - Name: HeightmapScaleBias
     Offset: '0x640'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: HeightmapTexture
     Offset: '0x650'
     Size: '0x8'
@@ -65,7 +65,7 @@ LandscapeComponent:
   - Name: CachedLocalBox
     Offset: '0x658'
     Size: '0x1c'
-    Type: struct
+    Type: struct Box
   - Name: CollisionComponent
     Offset: '0x674'
     Size: '0x1c'
@@ -93,11 +93,11 @@ LandscapeComponent:
   - Name: StateId
     Offset: '0x6c0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: BakedTextureMaterialGuid
     Offset: '0x6d0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: GIBakedBaseColorTexture
     Offset: '0x6e0'
     Size: '0x8'
@@ -185,11 +185,11 @@ LandscapeHeightfieldCollisionComponent:
   - Name: HeightfieldGuid
     Offset: '0x5f8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: CachedLocalBox
     Offset: '0x608'
     Size: '0x1c'
-    Type: struct
+    Type: struct Box
   - Name: RenderComponent
     Offset: '0x624'
     Size: '0x1c'
@@ -211,7 +211,7 @@ LandscapeInfo:
   - Name: LandscapeGuid
     Offset: '0x44'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: ComponentSizeQuads
     Offset: '0x54'
     Size: '0x4'
@@ -227,7 +227,7 @@ LandscapeInfo:
   - Name: DrawScale
     Offset: '0x60'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x1e8'
   FullSize: '0x210'
   InheritedSize: '0x28'
@@ -273,7 +273,7 @@ LandscapeMeshCollisionComponent:
   - Name: MeshGuid
     Offset: '0x6a0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
   FullSize: '0x6c0'
   InheritedSize: '0x6a0'
@@ -293,7 +293,7 @@ LandscapeMeshProxyComponent:
   - Name: LandscapeGuid
     Offset: '0x630'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: ProxyComponentBases
     Offset: '0x640'
     Size: '0x10'
@@ -315,11 +315,11 @@ LandscapeProxy:
   - Name: LandscapeGuid
     Offset: '0x3d8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: LandscapeSectionOffset
     Offset: '0x3e8'
     Size: '0x8'
-    Type: struct
+    Type: struct IntPoint
   - Name: MaxLODLevel
     Offset: '0x3f0'
     Size: '0x4'
@@ -407,7 +407,7 @@ LandscapeProxy:
   - Name: LightmassSettings
     Offset: '0x4f0'
     Size: '0x18'
-    Type: struct
+    Type: struct LightmassPrimitiveSettings
   - Name: CollisionMipLevel
     Offset: '0x508'
     Size: '0x4'
@@ -419,7 +419,7 @@ LandscapeProxy:
   - Name: BodyInstance
     Offset: '0x510'
     Size: '0x180'
-    Type: struct
+    Type: struct BodyInstance
   - Name: ComponentSizeQuads
     Offset: '0x690'
     Size: '0x4'
@@ -457,11 +457,11 @@ LandscapeSplineControlPoint:
   - Name: Location
     Offset: '0x28'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Rotation
     Offset: '0x34'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: Width
     Offset: '0x40'
     Size: '0x4'
@@ -485,7 +485,7 @@ LandscapeSplineControlPoint:
   - Name: Bounds
     Offset: '0x70'
     Size: '0x1c'
-    Type: struct
+    Type: struct Box
   - Name: LocalMeshComponent
     Offset: '0x90'
     Size: '0x8'
@@ -499,11 +499,11 @@ LandscapeSplineSegment:
   - Name: Connections
     Offset: '0x28'
     Size: '0x18'
-    Type: struct
+    Type: struct LandscapeSplineSegmentConnection
   - Name: SplineInfo
     Offset: '0x58'
     Size: '0x18'
-    Type: struct
+    Type: struct InterpCurveVector
   - Name: Points
     Offset: '0x70'
     Size: '0x10'
@@ -511,7 +511,7 @@ LandscapeSplineSegment:
   - Name: Bounds
     Offset: '0x80'
     Size: '0x1c'
-    Type: struct
+    Type: struct Box
   - Name: LocalMeshComponents
     Offset: '0xa0'
     Size: '0x10'
@@ -557,7 +557,7 @@ MaterialExpressionLandscapeLayerBlend:
   - Name: ExpressionGUID
     Offset: '0x80'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
   FullSize: '0x90'
   InheritedSize: '0x70'
@@ -605,7 +605,7 @@ MaterialExpressionLandscapeLayerSample:
   - Name: ExpressionGUID
     Offset: '0x7c'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
   FullSize: '0x90'
   InheritedSize: '0x70'
@@ -615,11 +615,11 @@ MaterialExpressionLandscapeLayerSwitch:
   - Name: LayerUsed
     Offset: '0x70'
     Size: '0x38'
-    Type: struct
+    Type: struct ExpressionInput
   - Name: LayerNotUsed
     Offset: '0xa8'
     Size: '0x38'
-    Type: struct
+    Type: struct ExpressionInput
   - Name: ParameterName
     Offset: '0xe0'
     Size: '0x8'
@@ -631,7 +631,7 @@ MaterialExpressionLandscapeLayerSwitch:
   - Name: ExpressionGUID
     Offset: '0xec'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x90'
   FullSize: '0x100'
   InheritedSize: '0x70'
@@ -641,11 +641,11 @@ MaterialExpressionLandscapeLayerWeight:
   - Name: Base
     Offset: '0x70'
     Size: '0x38'
-    Type: struct
+    Type: struct ExpressionInput
   - Name: Layer
     Offset: '0xa8'
     Size: '0x38'
-    Type: struct
+    Type: struct ExpressionInput
   - Name: ParameterName
     Offset: '0xe0'
     Size: '0x8'
@@ -657,11 +657,11 @@ MaterialExpressionLandscapeLayerWeight:
   - Name: ConstBase
     Offset: '0xec'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ExpressionGUID
     Offset: '0xf8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x98'
   FullSize: '0x108'
   InheritedSize: '0x70'
@@ -671,7 +671,7 @@ MaterialExpressionLandscapeVisibilityMask:
   - Name: ExpressionGUID
     Offset: '0x70'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
   FullSize: '0x80'
   InheritedSize: '0x70'

@@ -13,7 +13,7 @@ DeedProgressDesc:
   - Name: NavigationDesc
     Offset: '0x20'
     Size: '0x14'
-    Type: struct
+    Type: struct NavigationDesc
   - Name: ProgressValue
     Offset: '0x34'
     Size: '0x4'
@@ -25,7 +25,7 @@ DeedProgressDesc:
   - Name: Audio
     Offset: '0x40'
     Size: '0x40'
-    Type: struct
+    Type: struct GenericPopupAudioDescriptor
   ClassSize: '0x80'
 DisableMoreButtonEvent:
   Attributes:
@@ -43,7 +43,7 @@ EnableMoreButtonEvent:
   - Name: Navigation
     Offset: '0x4'
     Size: '0x14'
-    Type: struct
+    Type: struct NavigationDesc
   ClassSize: '0x18'
 NavigationDesc:
   Attributes:
@@ -54,7 +54,7 @@ NavigationDesc:
   - Name: Id
     Offset: '0x4'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x14'
 OpenSeasonsMenuEvent:
   Attributes:
@@ -65,7 +65,7 @@ OpenSeasonsMenuEvent:
   - Name: Id
     Offset: '0x4'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x14'
 SeasonGoalPopupAsset:
   Attributes:
@@ -76,15 +76,15 @@ SeasonGoalPopupAsset:
   - Name: GlowIcon
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Icon
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: ChatIcon
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: ToastSfxEventName
     Offset: '0x38'
     Size: '0x10'
@@ -111,11 +111,11 @@ SeasonIconPopupAsset:
   - Name: GlowIcon
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Icon
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: ToastSfxEventName
     Offset: '0x20'
     Size: '0x10'
@@ -142,11 +142,11 @@ SeasonNotificationContent:
   - Name: GlowIcon
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Icon
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: SfxEventName
     Offset: '0x20'
     Size: '0x10'
@@ -202,11 +202,11 @@ SeasonTextPopupAsset:
   - Name: GlowIcon
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Icon
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Message
     Offset: '0x20'
     Size: '0x38'
@@ -245,21 +245,21 @@ SeasonsChatNotification:
   - Name: Audio
     Offset: '0x20'
     Size: '0x40'
-    Type: struct
+    Type: struct GenericPopupAudioDescriptor
   ClassSize: '0x60'
 SeasonsChatNotificationEvent:
   Attributes:
   - Name: SeasonsChatNotification
     Offset: '0x0'
     Size: '0x60'
-    Type: struct
+    Type: struct SeasonsChatNotification
   ClassSize: '0x60'
 SeasonsChatNotificationNetworkEvent:
   Attributes:
   - Name: SeasonsChatNotificationEvent
     Offset: '0x18'
     Size: '0x60'
-    Type: struct
+    Type: struct SeasonsChatNotificationEvent
   ClassSize: '0x78'
 SeasonsPopupEvent:
   Attributes:
@@ -278,7 +278,7 @@ SeasonsPopupEvent:
   - Name: Audio
     Offset: '0x30'
     Size: '0x40'
-    Type: struct
+    Type: struct GenericPopupAudioDescriptor
   - Name: StyleModifiers
     Offset: '0x70'
     Size: '0x10'
@@ -290,7 +290,7 @@ SeasonsPopupEvent:
   - Name: NavigationDesc
     Offset: '0x84'
     Size: '0x14'
-    Type: struct
+    Type: struct NavigationDesc
   - Name: HoldDuration
     Offset: '0x98'
     Size: '0x4'
@@ -301,7 +301,7 @@ SeasonsTextNotification:
   - Name: IconUrl
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Message
     Offset: '0x10'
     Size: '0x38'
@@ -309,19 +309,19 @@ SeasonsTextNotification:
   - Name: Audio
     Offset: '0x48'
     Size: '0x40'
-    Type: struct
+    Type: struct GenericPopupAudioDescriptor
   ClassSize: '0x88'
 SeasonsTextNotificationNetworkEvent:
   Attributes:
   - Name: SeasonsTextNotification
     Offset: '0x18'
     Size: '0x88'
-    Type: struct
+    Type: struct SeasonsTextNotification
   ClassSize: '0xa0'
 ShowDeedProgressEvent:
   Attributes:
   - Name: DeedProgressDesc
     Offset: '0x0'
     Size: '0x80'
-    Type: struct
+    Type: struct DeedProgressDesc
   ClassSize: '0x80'

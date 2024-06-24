@@ -4,7 +4,7 @@
 // https://github.com/DougTheDruid
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class JwtAuthenticationTokenSettings: public Object
+class JwtAuthenticationTokenEditorSettings: public Object
 {
 public:
 	struct FString                                               TokenSecretKey;                                    // 0x28(0x10)
@@ -12,7 +12,7 @@ public:
 
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class JwtAuthenticationTokenEditorSettings: public Object
+class JwtAuthenticationTokenSettings: public Object
 {
 public:
 	struct FString                                               TokenSecretKey;                                    // 0x28(0x10)

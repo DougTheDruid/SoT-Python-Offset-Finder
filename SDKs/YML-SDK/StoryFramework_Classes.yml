@@ -37,7 +37,7 @@ IsStoryActiveNPCDialogConditional:
   - Name: StoryFlag
     Offset: '0x30'
     Size: '0x8'
-    Type: struct
+    Type: struct StoryFlag
   ClassSize: '0x18'
   FullSize: '0x48'
   InheritedSize: '0x30'
@@ -67,7 +67,7 @@ StoryClaimableResourceComponent:
   - Name: ClaimedStoryFlag
     Offset: '0xc8'
     Size: '0x8'
-    Type: struct
+    Type: struct StoryFlag
   ClassSize: '0x28'
   FullSize: '0xf0'
   InheritedSize: '0xc8'
@@ -95,7 +95,7 @@ StoryDrivenBlendedLightingZoneComponent:
   - Name: CurrentStoryResponse
     Offset: '0x330'
     Size: '0x10'
-    Type: struct
+    Type: struct LightingZoneStoryRelatedSettings
   ClassSize: '0x30'
   FullSize: '0x360'
   InheritedSize: '0x330'
@@ -105,7 +105,7 @@ StoryDrivenBlendedLightingZoneComponentDataAsset:
   - Name: Feature
     Offset: '0x28'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
@@ -123,7 +123,7 @@ StoryDrivenSalvageItemSpawnComponent:
   - Name: Story
     Offset: '0x5d8'
     Size: '0x8'
-    Type: struct
+    Type: struct StoryFlag
   ClassSize: '0x20'
   FullSize: '0x600'
   InheritedSize: '0x5e0'
@@ -161,7 +161,7 @@ StorySettings:
   - Name: StoryNamesCollectionDataAssetLocation
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -181,7 +181,7 @@ StorySpawnedActorsComponentDataAsset:
   - Name: Feature
     Offset: '0x28'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
@@ -199,7 +199,7 @@ StorySpawnedActorsDataAsset:
   - Name: Feature
     Offset: '0x28'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
@@ -231,7 +231,7 @@ StorySpawnedActorsSettings:
   - Name: StorySpawnActorsDataAssetLocation
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'

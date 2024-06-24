@@ -19,7 +19,7 @@ FoliageType:
   - Name: UpdateGuid
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Density
     Offset: '0x38'
     Size: '0x4'
@@ -39,15 +39,15 @@ FoliageType:
   - Name: ScaleX
     Offset: '0x48'
     Size: '0x8'
-    Type: struct
+    Type: struct FloatInterval
   - Name: ScaleY
     Offset: '0x50'
     Size: '0x8'
-    Type: struct
+    Type: struct FloatInterval
   - Name: ScaleZ
     Offset: '0x58'
     Size: '0x8'
-    Type: struct
+    Type: struct FloatInterval
   - Name: VertexColorMask
     Offset: '0x60'
     Size: '0x1'
@@ -63,7 +63,7 @@ FoliageType:
   - Name: ZOffset
     Offset: '0x6c'
     Size: '0x8'
-    Type: struct
+    Type: struct FloatInterval
   - Name: AlignToNormal
     Offset: '0x74'
     Size: '0x1'
@@ -83,11 +83,11 @@ FoliageType:
   - Name: GroundSlopeAngle
     Offset: '0x84'
     Size: '0x8'
-    Type: struct
+    Type: struct FloatInterval
   - Name: Height
     Offset: '0x8c'
     Size: '0x8'
-    Type: struct
+    Type: struct FloatInterval
   - Name: LandscapeLayers
     Offset: '0x98'
     Size: '0x10'
@@ -103,7 +103,7 @@ FoliageType:
   - Name: CollisionScale
     Offset: '0xb4'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: MinimumLayerWeight
     Offset: '0xc0'
     Size: '0x4'
@@ -111,11 +111,11 @@ FoliageType:
   - Name: MeshBounds
     Offset: '0xc4'
     Size: '0x1c'
-    Type: struct
+    Type: struct BoxSphereBounds
   - Name: LowBoundOriginRadius
     Offset: '0xe0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Mobility
     Offset: '0xec'
     Size: '0x1'
@@ -123,7 +123,7 @@ FoliageType:
   - Name: CullDistance
     Offset: '0xf0'
     Size: '0x8'
-    Type: struct
+    Type: struct Int32Interval
   - Name: bEnableStaticLighting
     Offset: '0xf8'
     Size: '0x1'
@@ -171,7 +171,7 @@ FoliageType:
   - Name: BodyInstance
     Offset: '0x108'
     Size: '0x180'
-    Type: struct
+    Type: struct BodyInstance
   - Name: CustomNavigableGeometry
     Offset: '0x288'
     Size: '0x1'
@@ -243,11 +243,11 @@ FoliageType:
   - Name: ProceduralScale
     Offset: '0x2d0'
     Size: '0x8'
-    Type: struct
+    Type: struct FloatInterval
   - Name: ScaleCurve
     Offset: '0x2d8'
     Size: '0x80'
-    Type: struct
+    Type: struct RuntimeFloatCurve
   - Name: ChangeCount
     Offset: '0x358'
     Size: '0x4'
@@ -343,19 +343,19 @@ InteractiveFoliageActor:
   - Name: TouchingActorEntryPosition
     Offset: '0x3e0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: FoliageVelocity
     Offset: '0x3ec'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: FoliageForce
     Offset: '0x3f8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: FoliagePosition
     Offset: '0x404'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: FoliageDamageImpulseScale
     Offset: '0x410'
     Size: '0x4'
@@ -423,7 +423,7 @@ ProceduralFoliageComponent:
   - Name: ProceduralGuid
     Offset: '0xe0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x28'
   FullSize: '0xf0'
   InheritedSize: '0xc8'

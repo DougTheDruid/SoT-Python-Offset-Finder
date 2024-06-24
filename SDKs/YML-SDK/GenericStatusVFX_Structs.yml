@@ -5,7 +5,7 @@ StatusAudioChangedEvent:
   - Name: StatusApplied
     Offset: '0x0'
     Size: '0x18'
-    Type: struct
+    Type: struct Status
   - Name: IsActive
     Offset: '0x18'
     Size: '0x1'

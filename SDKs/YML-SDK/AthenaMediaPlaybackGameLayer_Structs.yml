@@ -9,15 +9,15 @@ MediaPlayedTelemetryEvent:
   - Name: LowestResolution
     Offset: '0x10'
     Size: '0x8'
-    Type: struct
+    Type: struct IntPoint
   - Name: MedianResolution
     Offset: '0x18'
     Size: '0x8'
-    Type: struct
+    Type: struct IntPoint
   - Name: HighestResolution
     Offset: '0x20'
     Size: '0x8'
-    Type: struct
+    Type: struct IntPoint
   - Name: TimestampWhenEnded
     Offset: '0x28'
     Size: '0x4'

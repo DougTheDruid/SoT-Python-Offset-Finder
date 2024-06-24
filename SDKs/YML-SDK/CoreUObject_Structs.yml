@@ -5,11 +5,11 @@ Box:
   - Name: Min
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Max
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: IsValid
     Offset: '0x18'
     Size: '0x1'
@@ -20,11 +20,11 @@ Box2D:
   - Name: Min
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Max
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: IsValid
     Offset: '0x10'
     Size: '0x1'
@@ -35,11 +35,11 @@ BoxSphereBounds:
   - Name: Origin
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: BoxExtent
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: SphereRadius
     Offset: '0x18'
     Size: '0x4'
@@ -80,11 +80,11 @@ FloatRange:
   - Name: LowerBound
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct FloatRangeBound
   - Name: UpperBound
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct FloatRangeBound
   ClassSize: '0x10'
 FloatRangeBound:
   Attributes:
@@ -132,11 +132,11 @@ Int32Range:
   - Name: LowerBound
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Int32RangeBound
   - Name: UpperBound
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct Int32RangeBound
   ClassSize: '0x10'
 Int32RangeBound:
   Attributes:
@@ -237,15 +237,15 @@ InterpCurvePointLinearColor:
   - Name: OutVal
     Offset: '0x4'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: ArriveTangent
     Offset: '0x14'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: LeaveTangent
     Offset: '0x24'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: InterpMode
     Offset: '0x34'
     Size: '0x1'
@@ -260,15 +260,15 @@ InterpCurvePointQuat:
   - Name: OutVal
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: ArriveTangent
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: LeaveTangent
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: InterpMode
     Offset: '0x40'
     Size: '0x1'
@@ -283,15 +283,15 @@ InterpCurvePointTwoVectors:
   - Name: OutVal
     Offset: '0x4'
     Size: '0x18'
-    Type: struct
+    Type: struct TwoVectors
   - Name: ArriveTangent
     Offset: '0x1c'
     Size: '0x18'
-    Type: struct
+    Type: struct TwoVectors
   - Name: LeaveTangent
     Offset: '0x34'
     Size: '0x18'
-    Type: struct
+    Type: struct TwoVectors
   - Name: InterpMode
     Offset: '0x4c'
     Size: '0x1'
@@ -306,15 +306,15 @@ InterpCurvePointVector:
   - Name: OutVal
     Offset: '0x4'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ArriveTangent
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: LeaveTangent
     Offset: '0x1c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: InterpMode
     Offset: '0x28'
     Size: '0x1'
@@ -329,15 +329,15 @@ InterpCurvePointVector2D:
   - Name: OutVal
     Offset: '0x4'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: ArriveTangent
     Offset: '0xc'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: LeaveTangent
     Offset: '0x14'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: InterpMode
     Offset: '0x1c'
     Size: '0x1'
@@ -427,38 +427,38 @@ Matrix:
   - Name: XPlane
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Plane
   - Name: YPlane
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Plane
   - Name: ZPlane
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Plane
   - Name: WPlane
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct Plane
   ClassSize: '0x40'
 OrientedBox:
   Attributes:
   - Name: Center
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: AxisX
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: AxisY
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: AxisZ
     Offset: '0x24'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ExtentX
     Offset: '0x30'
     Size: '0x4'
@@ -555,26 +555,26 @@ Transform:
   - Name: Rotation
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: Translation
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Scale3D
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x30'
 TwoVectors:
   Attributes:
   - Name: v1
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: v2
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x18'
 Vector:
   Attributes:

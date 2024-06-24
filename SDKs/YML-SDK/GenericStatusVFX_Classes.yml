@@ -27,7 +27,7 @@ GenericStatusVFXDataAsset:
   - Name: VFXStatus
     Offset: '0x28'
     Size: '0x18'
-    Type: struct
+    Type: struct Status
   - Name: VFXSystem
     Offset: '0x40'
     Size: '0x8'
@@ -47,7 +47,7 @@ GenericStatusVFXDataAsset:
   - Name: SocketRelativeOffset
     Offset: '0x60'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   ClassSize: '0x68'
   FullSize: '0x90'
   InheritedSize: '0x28'

@@ -5,7 +5,7 @@ ActivateEmissaryForCrew:
   - Name: SessionId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Company
     Offset: '0x10'
     Size: '0x8'
@@ -13,7 +13,7 @@ ActivateEmissaryForCrew:
   - Name: AssociatedCrew
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x28'
 ChaliceStatuePhaseUpdate:
   Attributes:
@@ -27,7 +27,7 @@ CrewMemberVotes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: CompanyVotes
     Offset: '0x10'
     Size: '0x10'
@@ -38,11 +38,11 @@ DeactivateEmissaryForCrew:
   - Name: SessionId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: GuildId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Company
     Offset: '0x20'
     Size: '0x8'
@@ -50,7 +50,7 @@ DeactivateEmissaryForCrew:
   - Name: AssociatedCrew
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: EmissaryDeactivateReason
     Offset: '0x38'
     Size: '0x1'
@@ -73,7 +73,7 @@ EmissaryActionRewardData:
   - Name: KillPlayerReward
     Offset: '0x20'
     Size: '0x28'
-    Type: struct
+    Type: struct EmissaryKillPlayerReward
   - Name: GameEventsRewards
     Offset: '0x48'
     Size: '0x10'
@@ -107,7 +107,7 @@ EmissaryColourSwatchInformation:
   - Name: EmissaryFlagMeshAssetReferences
     Offset: '0x10'
     Size: '0x20'
-    Type: struct
+    Type: struct EmissaryFlagMeshReferences
   - Name: EmissaryFlotsamSpawnDataAsset
     Offset: '0x30'
     Size: '0x20'
@@ -115,7 +115,7 @@ EmissaryColourSwatchInformation:
   - Name: EmissaryFlagTextureReference
     Offset: '0x50'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x60'
 EmissaryCompanyActionReward:
   Attributes:
@@ -141,7 +141,7 @@ EmissaryCompanyActionRewardBoostServiceEvent:
   - Name: AssociatedCrew
     Offset: '0xc'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x1c'
 EmissaryCompanyCampaignGameEvent:
   Attributes:
@@ -249,7 +249,7 @@ EmissaryEntitlementPurchasedEvent:
   - Name: OfferId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 EmissaryEventAward:
   Attributes:
@@ -290,18 +290,18 @@ EmissaryFactionActionRewardBoostServiceEvent:
   - Name: AssociatedCrew
     Offset: '0x4'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x14'
 EmissaryFlagMeshReferences:
   Attributes:
   - Name: BackOfShipEmissaryFlagMeshAssetReference
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: MastEmissaryFlagMeshAssetReference
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x20'
 EmissaryGameEventsReward:
   Attributes:
@@ -330,7 +330,7 @@ EmissaryGlobalActionRewardBoostServiceEvent:
   - Name: AssociatedCrew
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x18'
 EmissaryJoinedNetworkEvent:
   Attributes:
@@ -341,7 +341,7 @@ EmissaryJoinedNetworkEvent:
   - Name: GuildId
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x30'
 EmissaryKillPlayerReward:
   Attributes:
@@ -396,7 +396,7 @@ EmissaryLevelChanged:
   - Name: AssociatedCrew
     Offset: '0x4'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: CompanyName
     Offset: '0x14'
     Size: '0x8'
@@ -411,7 +411,7 @@ EmissaryLevelData:
   - Name: EmissaryFlagMeshAssetReferences
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct EmissaryFlagMeshReferences
   - Name: EmissaryFlotsamSpawnDataAsset
     Offset: '0x28'
     Size: '0x20'
@@ -427,7 +427,7 @@ EmissaryLevelData:
   - Name: EmissaryDeactivationReward
     Offset: '0x70'
     Size: '0x8'
-    Type: struct
+    Type: struct RewardId
   - Name: StatsToFireOnEmissaryLevelReached
     Offset: '0x78'
     Size: '0x10'
@@ -447,11 +447,11 @@ EmissaryLevelData:
   - Name: TreasureSoldNotificationFlag
     Offset: '0xb8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: EmissaryFlagTextureReference
     Offset: '0xc8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0xd8'
 EmissaryLevelEntry:
   Attributes:
@@ -478,11 +478,11 @@ EmissaryLevelEntry:
   - Name: CompanyCosmetics
     Offset: '0x30'
     Size: '0x20'
-    Type: struct
+    Type: struct EmissaryCompanyCosmetics
   - Name: TimeSpentAtMaxRankStat
     Offset: '0x50'
     Size: '0x4'
-    Type: struct
+    Type: struct PlayerStat
   - Name: StatsToFireOnFullEmissaryClothing
     Offset: '0x58'
     Size: '0x10'
@@ -505,7 +505,7 @@ EmissaryLevelProgressUpdatedEvent:
   - Name: AssociatedCrew
     Offset: '0x4'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x14'
 EmissaryLevelRankChange:
   Attributes:
@@ -523,7 +523,7 @@ EmissaryLevelStatusStatInfo:
   - Name: StatToFire
     Offset: '0x0'
     Size: '0x4'
-    Type: struct
+    Type: struct PlayerStat
   ClassSize: '0x4'
 EmissaryMaxLevelReachedNetworkEvent:
   Attributes:
@@ -534,18 +534,18 @@ EmissaryMaxLevelReachedNetworkEvent:
   - Name: GuildId
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x30'
 EmissaryMaxRankQuestProviderQuestOverrides:
   Attributes:
   - Name: FeatureFlag
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   - Name: QuestDesc
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x20'
 EmissaryNonQuestCompanyActionRewardBoostEvent:
   Attributes:
@@ -589,7 +589,7 @@ EmissaryQuestCompanyActionRewardBoostEvent:
   - Name: QuestId
     Offset: '0x4'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x14'
 EmissaryRewardEntry:
   Attributes:
@@ -600,14 +600,14 @@ EmissaryRewardEntry:
   - Name: ActionRewardData
     Offset: '0x8'
     Size: '0x88'
-    Type: struct
+    Type: struct EmissaryActionRewardData
   ClassSize: '0x90'
 EmissaryRoleplayActionTelemetryEvent:
   Attributes:
   - Name: EmissarySessionId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: EmissaryCompany
     Offset: '0x10'
     Size: '0x8'
@@ -645,7 +645,7 @@ EmissarySessionEndTelemetryEvent:
   - Name: EmissarySessionId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: EmissaryCompany
     Offset: '0x10'
     Size: '0x8'
@@ -660,7 +660,7 @@ EmissarySessionStartTelemetryEvent:
   - Name: EmissarySessionId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: EmissaryCompany
     Offset: '0x10'
     Size: '0x8'
@@ -672,7 +672,7 @@ EmissarySessionStartTelemetryEvent:
   - Name: GuildId
     Offset: '0x1c'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x2c'
 EmissarySoldLootNetworkEvent:
   Attributes:
@@ -712,7 +712,7 @@ EmissarySunkNetworkEvent:
   - Name: GuildId
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x38'
 EmissaryVoteAddedEvent:
   Attributes:
@@ -733,7 +733,7 @@ LightVisualisation:
   - Name: TargetLight
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct ActorComponentSelector
   - Name: TransitionTime
     Offset: '0x10'
     Size: '0x4'
@@ -756,7 +756,7 @@ MaterialVisualisation:
   - Name: TargetMesh
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct ActorComponentSelector
   - Name: TransitionTime
     Offset: '0x10'
     Size: '0x4'
@@ -787,7 +787,7 @@ ParticleVisualisation:
   - Name: TargetParticles
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct ActorComponentSelector
   - Name: Delay
     Offset: '0x10'
     Size: '0x4'
@@ -836,7 +836,7 @@ ReactivateEmissaryForMigratedCrew:
   - Name: SessionId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Company
     Offset: '0x10'
     Size: '0x8'
@@ -844,7 +844,7 @@ ReactivateEmissaryForMigratedCrew:
   - Name: AssociatedCrew
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x28'
 TrackedPlayerKillEntry:
   Attributes:
@@ -866,7 +866,7 @@ UpdateEmissaryValueForCompany:
   - Name: SessionId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Company
     Offset: '0x10'
     Size: '0x8'
@@ -874,7 +874,7 @@ UpdateEmissaryValueForCompany:
   - Name: AssociatedCrew
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: RewardType
     Offset: '0x28'
     Size: '0x1'
@@ -889,7 +889,7 @@ UpdateGuildEmissaryValueForCompany:
   - Name: GuildId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Company
     Offset: '0x10'
     Size: '0x8'
@@ -897,7 +897,7 @@ UpdateGuildEmissaryValueForCompany:
   - Name: AssociatedCrew
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: UpdateAmount
     Offset: '0x28'
     Size: '0x4'

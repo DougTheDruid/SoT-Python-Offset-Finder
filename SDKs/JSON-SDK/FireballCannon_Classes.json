@@ -1,4 +1,174 @@
 {
+  "FireballCannonComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x2f0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x228",
+    "Attributes": [
+      {
+        "Name": "FireballCannonProjectileFirePoints",
+        "Type": "TArray<struct FireballCannonProjectileFirePoint>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "FireballCannonMaterialParameters",
+        "Type": "TArray<struct FireballCannonDynamicMaterialParameters>",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "LaunchableProjectileClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "ProjectileLaunchVelocity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "FireballCannonStartUpTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xfc"
+      },
+      {
+        "Name": "FireballCannonCooldownTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "InheritOwnerForwardVelocityScalar",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x104"
+      },
+      {
+        "Name": "FireballCannonReadyToFireMaterialDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "CooldownStartedTimestamp",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "ActiveProjectiles",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "FireballCannonFiringState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "ActorsInsideFlame",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "FireRadiusCollisionChannel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x180"
+      },
+      {
+        "Name": "FireRadiusCollisionResponse",
+        "Type": "struct CollisionResponseContainer",
+        "Size": "0x20",
+        "Offset": "0x181"
+      },
+      {
+        "Name": "FlamethrowerFirePropagationIgnitionParams",
+        "Type": "class FireGridCellSelectionParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x1a8"
+      },
+      {
+        "Name": "FlamethrowerCollisionStatusEffect",
+        "Type": "struct Status",
+        "Size": "0x18",
+        "Offset": "0x1b0"
+      },
+      {
+        "Name": "UseScalingFlameCollisionRadius",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1c8"
+      },
+      {
+        "Name": "FlameCollisionRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1cc"
+      },
+      {
+        "Name": "DynamicFlameCollisionRadiusCurve",
+        "Type": "struct RuntimeFloatCurve",
+        "Size": "0x80",
+        "Offset": "0x1d0"
+      },
+      {
+        "Name": "TimeUntilApplyStatusEffect",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x250"
+      },
+      {
+        "Name": "TimeUntilIgniteFirePropagation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x254"
+      },
+      {
+        "Name": "TimeToConsiderActorOutsideFlame",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x258"
+      },
+      {
+        "Name": "FlamethrowerCollisionDamageAmount",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x25c"
+      },
+      {
+        "Name": "DamagePerSecondInsideFlame",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x260"
+      },
+      {
+        "Name": "DamagerTypeClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x268"
+      },
+      {
+        "Name": "HealthChangedReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x270"
+      },
+      {
+        "Name": "OnFiringStateChangedDelegate",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x278"
+      }
+    ]
+  },
   "FireballCannonActivationLever": {
     "Super": "InteractableBase",
     "FullSize": "0x5f0",
@@ -85,19 +255,19 @@
       },
       {
         "Name": "Curve",
-        "Type": "struct",
+        "Type": "struct RuntimeFloatCurve",
         "Size": "0x80",
         "Offset": "0x4c0"
       },
       {
         "Name": "LeverStartingTransform",
-        "Type": "struct",
+        "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0x540"
       },
       {
         "Name": "LeverEndingTransform",
-        "Type": "struct",
+        "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0x570"
       },
@@ -112,164 +282,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x5a4"
-      }
-    ]
-  },
-  "FireballCannonComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x268",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x1a0",
-    "Attributes": [
-      {
-        "Name": "FireballCannonProjectileFirePoints",
-        "Type": "TArray<struct FireballCannonProjectileFirePoint>",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "FireballCannonMaterialParameters",
-        "Type": "TArray<struct FireballCannonDynamicMaterialParameters>",
-        "Size": "0x10",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "LaunchableProjectileClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "ProjectileLaunchVelocity",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "FireballCannonStartUpTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xfc"
-      },
-      {
-        "Name": "FireballCannonCooldownTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "InheritOwnerForwardVelocityScalar",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x104"
-      },
-      {
-        "Name": "FireballCannonReadyToFireMaterialDelay",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x108"
-      },
-      {
-        "Name": "CooldownStartedTimestamp",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "ActiveProjectiles",
-        "Type": "TArray<uintptr_t>",
-        "Size": "0x10",
-        "Offset": "0x118"
-      },
-      {
-        "Name": "FireballCannonFiringState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "ActorsInsideFlame",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x130"
-      },
-      {
-        "Name": "FireRadiusCollisionChannel",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x180"
-      },
-      {
-        "Name": "FireRadiusCollisionResponse",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x181"
-      },
-      {
-        "Name": "FlamethrowerFirePropagationIgnitionParams",
-        "Type": "class FireGridCellSelectionParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x1a8"
-      },
-      {
-        "Name": "FlamethrowerCollisionStatusEffect",
-        "Type": "struct",
-        "Size": "0x18",
-        "Offset": "0x1b0"
-      },
-      {
-        "Name": "FlameCollisionRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1c8"
-      },
-      {
-        "Name": "TimeUntilApplyStatusEffect",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1cc"
-      },
-      {
-        "Name": "TimeUntilIgniteFirePropagation",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1d0"
-      },
-      {
-        "Name": "TimeToConsiderActorOutsideFlame",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1d4"
-      },
-      {
-        "Name": "FlamethrowerCollisionDamageAmount",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1d8"
-      },
-      {
-        "Name": "DamagePerSecondInsideFlame",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1dc"
-      },
-      {
-        "Name": "DamagerTypeClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x1e0"
-      },
-      {
-        "Name": "HealthChangedReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1e8"
-      },
-      {
-        "Name": "OnFiringStateChangedDelegate",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x1f0"
       }
     ]
   },

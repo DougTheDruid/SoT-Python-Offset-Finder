@@ -13,11 +13,11 @@ CookEndTelemetryEvent:
   - Name: Location
     Offset: '0x14'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: CookId
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x30'
 CookStartTelemetryEvent:
   Attributes:
@@ -32,11 +32,11 @@ CookStartTelemetryEvent:
   - Name: Location
     Offset: '0x14'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: CookId
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x30'
 CookableComponentSmokeFeedbackTimingEntry:
   Attributes:

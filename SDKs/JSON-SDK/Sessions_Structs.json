@@ -1,35 +1,117 @@
 {
-  "SessionHostChangedEvent": {
-    "ClassSize": "0x40",
+  "CrewSessionQoSMeasurementTelemetry": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "CrewId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CrewSessionTemplate": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "MatchmakingHopper",
+        "Name": "Location",
         "Type": "struct FString",
         "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AvgLatency",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "NumReceivedPings",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "NumFailedPings",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x18"
       },
       {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
+        "Name": "ResolveResult",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1c"
       },
       {
-        "Name": "MaxMatchmakingPlayers",
+        "Name": "LocationWasConsidered",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1d"
+      }
+    ]
+  },
+  "CrewSessionMatchmakingFollowedTelemetryEvent": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "NewCrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "ResultCode",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x30"
+        "Offset": "0x60"
+      },
+      {
+        "Name": "Message",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "SessionTemplate": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "TemplateName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SessionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MaxPlayers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "CrewSessionKeepAliveFailedTelemetryEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UserStatus",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ErrorCode",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "KeepAliveCounter",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
@@ -38,13 +120,13 @@
     "Attributes": [
       {
         "Name": "NewCrewId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "CrewMatchmakingAttemptId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -98,46 +180,6 @@
       }
     ]
   },
-  "CrewSessionKeepAliveFailedTelemetryEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UserStatus",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ErrorCode",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "KeepAliveCounter",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x24"
-      }
-    ]
-  },
-  "SessionInfoUpdateAvailableEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "JupiterSessionJoinThroughServiceRequestModel": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -152,64 +194,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "SessionHostDeviceChangedEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NewHostDevice",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "CrewSessionQoSMeasurementTelemetry": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AvgLatency",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "NumReceivedPings",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "NumFailedPings",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "ResolveResult",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "LocationWasConsidered",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1d"
       }
     ]
   },
@@ -236,37 +220,26 @@
       }
     ]
   },
-  "CrewSessionMatchmakingFollowedTelemetryEvent": {
-    "ClassSize": "0x78",
+  "CrewSessionMemberTelemetry": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "NewCrewId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "ResultCode",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "Message",
+        "Name": "UserId",
         "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x68"
-      }
-    ]
-  },
-  "CrewSessionBaseSessionTelemetryEvent": {
-    "ClassSize": "0x50",
-    "Attributes": [
+        "Offset": "0x0"
+      },
       {
-        "Name": "Session",
-        "Type": "struct",
-        "Size": "0x40",
+        "Name": "StatusString",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x10"
+      },
+      {
+        "Name": "IsSessionHost",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x20"
       }
     ]
   },
@@ -275,7 +248,7 @@
     "Attributes": [
       {
         "Name": "CrewMatchmakingAttemptId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -323,60 +296,93 @@
       }
     ]
   },
+  "SessionHostDeviceChangedEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NewHostDevice",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "SessionInfoUpdateAvailableEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CrewSessionTemplate": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "MatchmakingHopper",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MaxMatchmakingPlayers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "SessionHostChangedEvent": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "CrewSessionBaseTelemetryEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }
     ]
   },
-  "SessionTemplate": {
-    "ClassSize": "0x18",
+  "CrewSessionJoinedTelemetryEvent": {
+    "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "TemplateName",
+        "Name": "JoinMethod",
         "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x0"
+        "Offset": "0x50"
       },
       {
-        "Name": "SessionType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MaxPlayers",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "CrewSessionMemberTelemetry": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "struct FString",
+        "Name": "QoSTelemetry",
+        "Type": "TArray<struct CrewSessionQoSMeasurementTelemetry>",
         "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "StatusString",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "IsSessionHost",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x20"
+        "Offset": "0x60"
       }
     ]
   },
@@ -420,20 +426,14 @@
       }
     ]
   },
-  "CrewSessionJoinedTelemetryEvent": {
-    "ClassSize": "0x70",
+  "CrewSessionBaseSessionTelemetryEvent": {
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "JoinMethod",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "QoSTelemetry",
-        "Type": "TArray<struct CrewSessionQoSMeasurementTelemetry>",
-        "Size": "0x10",
-        "Offset": "0x60"
+        "Name": "Session",
+        "Type": "struct CrewSessionTelemetry",
+        "Size": "0x40",
+        "Offset": "0x10"
       }
     ]
   },

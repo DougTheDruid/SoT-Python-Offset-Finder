@@ -1,30 +1,4 @@
 {
-  "AthenaLoadingScreenParams": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x68",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "BootLoadingScreen",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "TeleportLoadingScreen",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "AdventureLoadingScreens",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x58"
-      }
-    ]
-  },
   "SlateLoadingScreenParams": {
     "Super": "DataAsset",
     "FullSize": "0x238",
@@ -81,19 +55,19 @@
       },
       {
         "Name": "PlaceholderSpinnerTexture",
-        "Type": "struct",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x40"
       },
       {
         "Name": "BackgroundColour",
-        "Type": "struct",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
         "Name": "PrimaryImage",
-        "Type": "struct",
+        "Type": "struct SlateLoadingScreenImageParams",
         "Size": "0x30",
         "Offset": "0x60"
       },
@@ -123,13 +97,13 @@
       },
       {
         "Name": "SpinnerTextColour",
-        "Type": "struct",
+        "Type": "struct SlateColor",
         "Size": "0x30",
         "Offset": "0xf0"
       },
       {
         "Name": "SpinnerTextFont",
-        "Type": "struct",
+        "Type": "struct SlateFontInfo",
         "Size": "0x40",
         "Offset": "0x120"
       },
@@ -141,7 +115,7 @@
       },
       {
         "Name": "SpinnerMargin",
-        "Type": "struct",
+        "Type": "struct Margin",
         "Size": "0x10",
         "Offset": "0x164"
       },
@@ -153,13 +127,13 @@
       },
       {
         "Name": "SpinnerIcon",
-        "Type": "struct",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x178"
       },
       {
         "Name": "TipsMargin",
-        "Type": "struct",
+        "Type": "struct Margin",
         "Size": "0x10",
         "Offset": "0x188"
       },
@@ -189,7 +163,7 @@
       },
       {
         "Name": "LoadingTipFont",
-        "Type": "struct",
+        "Type": "struct SlateFontInfo",
         "Size": "0x40",
         "Offset": "0x1a8"
       },
@@ -207,7 +181,7 @@
       },
       {
         "Name": "LoadingScreenTipColour",
-        "Type": "struct",
+        "Type": "struct SlateColor",
         "Size": "0x30",
         "Offset": "0x200"
       },
@@ -216,6 +190,32 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x230"
+      }
+    ]
+  },
+  "AthenaLoadingScreenParams": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x68",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "BootLoadingScreen",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "TeleportLoadingScreen",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "AdventureLoadingScreens",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x58"
       }
     ]
   },

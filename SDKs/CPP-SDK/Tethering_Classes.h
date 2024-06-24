@@ -6,15 +6,6 @@
 #include "Tethering_Structs.h"
 
 
-// Size 0x40 (Full Size[0x670] - InheritedSize[0x630]
-class CordRenderComponent: public StaticMeshComponent
-{
-public:
-	TArray<class MaterialInstanceDynamic*>                       CordMaterials;                                     // 0x638(0x10)
-	float                                                        ThicknessCm;                                       // 0x648(0x4)
-};
-
-
 // Size 0x140 (Full Size[0x508] - InheritedSize[0x3c8]
 class Tether: public Actor
 {
@@ -32,6 +23,15 @@ public:
 	bool                                                         HasTargetActor;                                    // 0x502(0x1)
 	bool                                                         IsSlackEnabled;                                    // 0x503(0x1)
 	char                                                         CurrentTetherMode;                                 // 0x504(0x1)
+};
+
+
+// Size 0x40 (Full Size[0x670] - InheritedSize[0x630]
+class CordRenderComponent: public StaticMeshComponent
+{
+public:
+	TArray<class MaterialInstanceDynamic*>                       CordMaterials;                                     // 0x638(0x10)
+	float                                                        ThicknessCm;                                       // 0x648(0x4)
 };
 
 

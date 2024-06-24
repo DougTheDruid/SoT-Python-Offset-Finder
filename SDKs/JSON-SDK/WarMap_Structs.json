@@ -1,15 +1,4 @@
 {
-  "EventWarMapStateChanged": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "WarMapProposalContainer",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "EventLocalPlayerOpenedWarMap": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -18,6 +7,17 @@
         "Type": "class Company*",
         "Size": "0x8",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "EventWarMapStateChanged": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "WarMapProposalContainer",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },

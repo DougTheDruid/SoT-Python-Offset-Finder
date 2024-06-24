@@ -44,35 +44,6 @@
       }
     ]
   },
-  "MemoryVisualiserClass": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "ClassType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MemoryGatheringMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "DisplayName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MemoryUsageMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      }
-    ]
-  },
   "MemoryCommonData": {
     "ClassSize": "0x50",
     "Attributes": [
@@ -195,6 +166,35 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x4c"
+      }
+    ]
+  },
+  "MemoryVisualiserClass": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ClassType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MemoryGatheringMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "DisplayName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MemoryUsageMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
       }
     ]
   },

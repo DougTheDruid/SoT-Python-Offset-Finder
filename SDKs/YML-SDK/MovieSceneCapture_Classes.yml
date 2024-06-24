@@ -5,7 +5,7 @@ CompositionGraphCaptureSettings:
   - Name: IncludeRenderPasses
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct CompositionGraphCapturePasses
   - Name: bCaptureFramesInHDR
     Offset: '0x38'
     Size: '0x1'
@@ -21,7 +21,7 @@ CompositionGraphCaptureSettings:
   - Name: PostProcessingMaterial
     Offset: '0x48'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -45,7 +45,7 @@ LevelCapture:
   - Name: PrerequisiteActorId
     Offset: '0x1ec'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
   FullSize: '0x200'
   InheritedSize: '0x1e0'
@@ -55,7 +55,7 @@ MovieSceneCapture:
   - Name: CaptureType
     Offset: '0x38'
     Size: '0x8'
-    Type: struct
+    Type: struct CaptureProtocolID
   - Name: ProtocolSettings
     Offset: '0x40'
     Size: '0x8'
@@ -63,7 +63,7 @@ MovieSceneCapture:
   - Name: Settings
     Offset: '0x48'
     Size: '0x50'
-    Type: struct
+    Type: struct MovieSceneCaptureSettings
   - Name: bUseSeparateProcess
     Offset: '0x98'
     Size: '0x1'

@@ -1,4 +1,27 @@
 {
+  "GlobalDigSpotStatusUpdateTelemetryEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "DigSpotEventId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "VoyageID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "DigSpotStatus",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
   "GlobalDigSpotPopupEvent": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -15,7 +38,7 @@
     "Attributes": [
       {
         "Name": "Story",
-        "Type": "struct",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -27,7 +50,7 @@
       },
       {
         "Name": "ActorWithNamedPointComponent",
-        "Type": "struct",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -39,32 +62,9 @@
       },
       {
         "Name": "Rewards",
-        "Type": "class WeightedItemDescSpawnDataAsset*",
+        "Type": "class TaleQuestWeightedItemDescSpawnDataAsset*",
         "Size": "0x8",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "GlobalDigSpotStatusUpdateTelemetryEvent": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "DigSpotEventId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "VoyageID",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "DigSpotStatus",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x20"
       }
     ]
   },

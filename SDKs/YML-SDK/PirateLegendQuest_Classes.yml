@@ -5,7 +5,7 @@ GetVeilOfTheAncientsStepDesc:
   - Name: QuestVeil
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'

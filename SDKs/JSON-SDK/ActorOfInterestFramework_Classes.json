@@ -1,18 +1,4 @@
 {
-  "ActorOfInterestComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ActorOfInterestId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      }
-    ]
-  },
   "ActorOfInterestService": {
     "Super": "Actor",
     "FullSize": "0x4c8",
@@ -27,9 +13,23 @@
       },
       {
         "Name": "EventDispatcher",
-        "Type": "struct",
+        "Type": "struct ObjectMessagingDispatcher",
         "Size": "0xa0",
         "Offset": "0x428"
+      }
+    ]
+  },
+  "ActorOfInterestComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ActorOfInterestId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xc8"
       }
     ]
   },

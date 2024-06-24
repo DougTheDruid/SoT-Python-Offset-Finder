@@ -9,7 +9,7 @@ ActorSequence:
   - Name: ObjectReferences
     Offset: '0x2b0'
     Size: '0x20'
-    Type: struct
+    Type: struct ActorSequenceObjectReferenceMap
   ClassSize: '0x28'
   FullSize: '0x2d0'
   InheritedSize: '0x2a8'
@@ -19,7 +19,7 @@ ActorSequenceComponent:
   - Name: PlaybackSettings
     Offset: '0xc8'
     Size: '0x28'
-    Type: struct
+    Type: struct MovieSceneSequencePlaybackSettings
   - Name: Sequence
     Offset: '0xf0'
     Size: '0x8'

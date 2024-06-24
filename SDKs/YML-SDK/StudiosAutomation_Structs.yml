@@ -53,19 +53,19 @@ CollectionLimits:
   - Name: CollectionTotals
     Offset: '0xc'
     Size: '0x10'
-    Type: struct
+    Type: struct CollectionTotalsLimits
   - Name: StaticMeshLimits
     Offset: '0x1c'
     Size: '0x8'
-    Type: struct
+    Type: struct CollectionStaticMeshLimits
   - Name: SkeleMeshLimits
     Offset: '0x24'
     Size: '0x8'
-    Type: struct
+    Type: struct CollectionSkeleMeshLimits
   - Name: AnimLimits
     Offset: '0x2c'
     Size: '0x4'
-    Type: struct
+    Type: struct CollectionAnimSequenceLimits
   - Name: CanUseComplexCollisionAsSimple
     Offset: '0x30'
     Size: '0x1'
@@ -136,7 +136,7 @@ MeshAuditLimits:
   - Name: FolderMeshLimits
     Offset: '0x10'
     Size: '0x28'
-    Type: struct
+    Type: struct FolderTotals
   ClassSize: '0x38'
 SubstringAuditQueryData:
   Attributes:
@@ -173,7 +173,7 @@ TextureAuditorGroupProperties:
   - Name: Properties
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct TextureAuditorProperties
   ClassSize: '0x28'
 TextureAuditorProperties:
   Attributes:

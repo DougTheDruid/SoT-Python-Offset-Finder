@@ -119,7 +119,7 @@ TextureAuditorSettings:
   - Name: DefaultTextureProperties
     Offset: '0x58'
     Size: '0x20'
-    Type: struct
+    Type: struct TextureAuditorProperties
   - Name: PerTextureGroupPropertiesOverrides
     Offset: '0x78'
     Size: '0x10'

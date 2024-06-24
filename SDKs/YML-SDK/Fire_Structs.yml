@@ -9,7 +9,7 @@ ActorFireDamageParams:
   - Name: TimeInFireBeforeDamage
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: LevelsOfDamage
     Offset: '0x30'
     Size: '0x4'
@@ -43,15 +43,15 @@ CookerIgnitionParams:
   - Name: InitialIgnitionTime
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: SuccessIgnitionTime
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: FailureIgnitionTime
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: ChanceToIgnite
     Offset: '0x30'
     Size: '0x4'
@@ -59,7 +59,7 @@ CookerIgnitionParams:
   - Name: IgnitionSelection
     Offset: '0x34'
     Size: '0x44'
-    Type: struct
+    Type: struct FireGridCellSelection
   ClassSize: '0x78'
 FireCellAudioParams:
   Attributes:
@@ -101,15 +101,15 @@ FireCellDesc:
   - Name: Position
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: BoundingBox
     Offset: '0xc'
     Size: '0x1c'
-    Type: struct
+    Type: struct Box
   - Name: GridPosition
     Offset: '0x28'
     Size: '0xc'
-    Type: struct
+    Type: struct IntVector
   - Name: CanBurn
     Offset: '0x34'
     Size: '0x1'
@@ -137,11 +137,11 @@ FireCellDesc:
   - Name: DefaultParticleEffectSpawnTransform
     Offset: '0x50'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: DefaultParticleEffectPlane
     Offset: '0x80'
     Size: '0x10'
-    Type: struct
+    Type: struct Plane
   - Name: CustomParticleEffectTemplates
     Offset: '0x90'
     Size: '0x10'
@@ -149,7 +149,7 @@ FireCellDesc:
   - Name: CustomParticleEffectSpawnTransform
     Offset: '0xa0'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: NeighbourCellIndices
     Offset: '0xd0'
     Size: '0x10'
@@ -188,7 +188,7 @@ FireCellStateParticleTemplate:
   - Name: MeshScale
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: State
     Offset: '0x2c'
     Size: '0x1'
@@ -215,15 +215,15 @@ FireCellStateTimingParams:
   - Name: KindleTime
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: BurningTime
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: RainExposureTime
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: CharringTime
     Offset: '0x30'
     Size: '0x4'
@@ -231,45 +231,45 @@ FireCellStateTimingParams:
   - Name: SmoulderingTime
     Offset: '0x34'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: SteamingTime
     Offset: '0x44'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: WetTime
     Offset: '0x54'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: SidewaysPropagationTime
     Offset: '0x64'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: UpwardPropagationTime
     Offset: '0x74'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: DownwardPropagationTime
     Offset: '0x84'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   ClassSize: '0x94'
 FireDefaultVFXSpawnData:
   Attributes:
   - Name: Template
     Offset: '0x0'
     Size: '0x38'
-    Type: struct
+    Type: struct FireCellStateParticleTemplate
   - Name: CellDesc
     Offset: '0x40'
     Size: '0x100'
-    Type: struct
+    Type: struct FireCellDesc
   ClassSize: '0x140'
 FireExtinguishedEvent:
   Attributes:
   - Name: ExtinguishLocation
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0xc'
 FireGridCellSelection:
   Attributes:
@@ -300,15 +300,15 @@ FireGridCellSelection:
   - Name: SidewaysPropagationTimeOverride
     Offset: '0x14'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: UpwardPropagationTimeOverride
     Offset: '0x24'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: DownwardPropagationTimeOverride
     Offset: '0x34'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   ClassSize: '0x44'
 FireGridCellSelectionParams:
   Attributes:
@@ -323,7 +323,7 @@ FireGridCellSelectionParams:
   - Name: FireGridCellSelectionParams
     Offset: '0xc'
     Size: '0x44'
-    Type: struct
+    Type: struct FireGridCellSelection
   ClassSize: '0x50'
 FireGridCharringManager:
   Attributes:
@@ -334,7 +334,7 @@ FireGridCharringManager:
   - Name: AdditionalGridOffsetForCharring
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: FireGridTexture
     Offset: '0x20'
     Size: '0x8'
@@ -352,11 +352,11 @@ FireGridRelativeSpawnDesc:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: GridLocation
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct IntVector
   - Name: NumCellRowsToSpawnFor
     Offset: '0x18'
     Size: '0x4'
@@ -430,7 +430,7 @@ FireGridVfxSpawnSettings:
   - Name: LowFrequencyParticleSpawnSettings
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct FireParticleSpawnData
   - Name: ExteriorSmokeVFXSpawnDescs
     Offset: '0x40'
     Size: '0x10'
@@ -474,7 +474,7 @@ FireParticleSystem:
   - Name: ParticleTemplate
     Offset: '0x10'
     Size: '0x38'
-    Type: struct
+    Type: struct FireCellStateParticleTemplate
   ClassSize: '0x48'
 HullCharringPersistenceModel:
   Attributes:
@@ -539,7 +539,7 @@ ShipFireLight:
   - Name: Desc
     Offset: '0x0'
     Size: '0x58'
-    Type: struct
+    Type: struct ShipFireLightRelativeSpawnDesc
   - Name: PointLight
     Offset: '0x58'
     Size: '0x8'
@@ -562,7 +562,7 @@ ShipFireLightManager:
   - Name: LightTemplate
     Offset: '0x10'
     Size: '0xd0'
-    Type: struct
+    Type: struct GenericLightTemplate
   - Name: Lights
     Offset: '0xe0'
     Size: '0x10'
@@ -628,7 +628,7 @@ ShipFireLightRelativeSpawnDesc:
   - Name: LightPositionOffset
     Offset: '0x30'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: DormantShipRegions
     Offset: '0x40'
     Size: '0x10'

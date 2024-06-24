@@ -5,7 +5,7 @@ EmoteData:
   - Name: EmoteId
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct EmoteId
   - Name: EmoteDisplayName
     Offset: '0x8'
     Size: '0x38'
@@ -56,7 +56,7 @@ EmoteDiceOutcomeTelemetryEvent:
   - Name: OrientationUsed
     Offset: '0x8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x14'
 EmoteId:
   Attributes:
@@ -82,7 +82,7 @@ EmotePropRandomObjectInfo:
   - Name: RandomParameterRange
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Int32Range
   ClassSize: '0x30'
 EmotePropRandomObjectResult:
   Attributes:
@@ -97,7 +97,7 @@ EmotePropRandomObjectResult:
   - Name: Transform
     Offset: '0x10'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: TextureParameterName
     Offset: '0x40'
     Size: '0x8'
@@ -116,7 +116,7 @@ EmoteRandomObjectOutcomeTelemetryEvent:
   - Name: Transform
     Offset: '0x10'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: TextureParameterName
     Offset: '0x40'
     Size: '0x10'
@@ -153,7 +153,7 @@ EventEmoteRequested:
   - Name: EmoteData
     Offset: '0x0'
     Size: '0xa0'
-    Type: struct
+    Type: struct EmoteData
   - Name: ForcedEmoteIdentifier
     Offset: '0xa0'
     Size: '0x8'
@@ -168,14 +168,14 @@ EventEmoteStarted:
   - Name: EmoteData
     Offset: '0x0'
     Size: '0xa0'
-    Type: struct
+    Type: struct EmoteData
   ClassSize: '0xa0'
 EventEmoteSwapped:
   Attributes:
   - Name: EmoteData
     Offset: '0x0'
     Size: '0xa0'
-    Type: struct
+    Type: struct EmoteData
   ClassSize: '0xa0'
 EventEnableLookAtEmoteCamera:
   Attributes:

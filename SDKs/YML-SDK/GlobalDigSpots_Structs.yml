@@ -5,7 +5,7 @@ GlobalDigSpotDefinition:
   - Name: Story
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct StoryFlag
   - Name: VoyageDesc
     Offset: '0x8'
     Size: '0x8'
@@ -13,7 +13,7 @@ GlobalDigSpotDefinition:
   - Name: ActorWithNamedPointComponent
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: NamedPoint
     Offset: '0x20'
     Size: '0x8'
@@ -21,7 +21,7 @@ GlobalDigSpotDefinition:
   - Name: Rewards
     Offset: '0x28'
     Size: '0x8'
-    Type: class WeightedItemDescSpawnDataAsset*
+    Type: class TaleQuestWeightedItemDescSpawnDataAsset*
   ClassSize: '0x30'
 GlobalDigSpotPopupEvent:
   Attributes:
@@ -39,7 +39,7 @@ GlobalDigSpotStatusUpdateTelemetryEvent:
   - Name: VoyageID
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: DigSpotStatus
     Offset: '0x20'
     Size: '0x10'

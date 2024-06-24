@@ -55,7 +55,7 @@ AshenLordAshCloudSetupDataAsset:
   - Name: AshCloudRadiusInMetres
     Offset: '0x28'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: AshCloudHeightCoefficient
     Offset: '0x58'
     Size: '0x4'
@@ -63,7 +63,7 @@ AshenLordAshCloudSetupDataAsset:
   - Name: AshCloudLifetime
     Offset: '0x60'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: ScaleUpSpeedCurve
     Offset: '0x90'
     Size: '0x8'
@@ -91,27 +91,27 @@ AshenLordVolcanoSetupDataAsset:
   - Name: ProjectileTriggerFrequency
     Offset: '0x28'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: NumProjectilesToTrigger
     Offset: '0x58'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   - Name: SpawnHeightInMetres
     Offset: '0x78'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: TargetDistanceFromCenterInMetres
     Offset: '0xa8'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: TimeBetweenSpawns
     Offset: '0xd8'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: StartPositionOffsetInMetres
     Offset: '0x108'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: Projectiles
     Offset: '0x138'
     Size: '0x10'
@@ -119,11 +119,11 @@ AshenLordVolcanoSetupDataAsset:
   - Name: PoolableProjectilesConfig
     Offset: '0x148'
     Size: '0x18'
-    Type: struct
+    Type: struct PoolableCollectionMapConfiguration
   - Name: Embers
     Offset: '0x160'
     Size: '0x10'
-    Type: struct
+    Type: struct VolcanoSetupDataEmbersEntry
   - Name: EmberSpawnHeightInMeters
     Offset: '0x170'
     Size: '0x4'
@@ -149,7 +149,7 @@ AshenLordWorldEndCloud:
   - Name: CurrentCloudAnimation
     Offset: '0x3d0'
     Size: '0x8'
-    Type: struct
+    Type: struct AshenLordWorldEndCloudAnimation
   ClassSize: '0x18'
   FullSize: '0x3e0'
   InheritedSize: '0x3c8'
@@ -259,19 +259,19 @@ EarthquakeSetupDataAsset:
   - Name: WarmUpDuration
     Offset: '0x30'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: EarthquakeDuration
     Offset: '0x60'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: CoolDownDuration
     Offset: '0x90'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: DormantDuration
     Offset: '0xc0'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: ChanceOfTriggeringAVolcano
     Offset: '0xf0'
     Size: '0x4'
@@ -279,19 +279,19 @@ EarthquakeSetupDataAsset:
   - Name: PercentageThroughEarthquakeToStartVolcano
     Offset: '0xf4'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: WarmupPlayerFeedback
     Offset: '0x108'
     Size: '0x80'
-    Type: struct
+    Type: struct PlayerFeedback
   - Name: ActivePlayerFeedback
     Offset: '0x188'
     Size: '0x80'
-    Type: struct
+    Type: struct PlayerFeedback
   - Name: StaggerStrengthDuration
     Offset: '0x208'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: StaggerStrengthModifierWhenOnAShip
     Offset: '0x238'
     Size: '0x4'
@@ -299,15 +299,15 @@ EarthquakeSetupDataAsset:
   - Name: PercentageThroughCameraShakeToStartNextOne
     Offset: '0x23c'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: TimeToShipPush
     Offset: '0x24c'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: ForceToApplyToShip
     Offset: '0x260'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: MaximumShipSpeedToBePushed
     Offset: '0x290'
     Size: '0x4'
@@ -319,11 +319,11 @@ EarthquakeSetupDataAsset:
   - Name: TimeBetweenLocalEffects
     Offset: '0x298'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: NumberOfLocalEffectsToTrigger
     Offset: '0x2c8'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   - Name: EffectConeAngle
     Offset: '0x2e8'
     Size: '0x4'
@@ -335,7 +335,7 @@ EarthquakeSetupDataAsset:
   - Name: EarthquakeEffects
     Offset: '0x2f0'
     Size: '0x10'
-    Type: struct
+    Type: struct DistanceThrottledRandomParticleSystemPicker
   - Name: WarmupWindTurbulence
     Offset: '0x300'
     Size: '0x4'
@@ -343,7 +343,7 @@ EarthquakeSetupDataAsset:
   - Name: WarmupGustPower
     Offset: '0x304'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: ActiveWindTurbulence
     Offset: '0x314'
     Size: '0x4'
@@ -351,7 +351,7 @@ EarthquakeSetupDataAsset:
   - Name: ActiveGustPower
     Offset: '0x318'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   ClassSize: '0x300'
   FullSize: '0x328'
   InheritedSize: '0x28'
@@ -465,15 +465,15 @@ GeyserManagerSetupDataAsset:
   - Name: DormantDuration
     Offset: '0x30'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: ActiveDuration
     Offset: '0x60'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: DelayBetweenGeyserGroupsDuringGeyserEvent
     Offset: '0x90'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: StartInactive
     Offset: '0xc0'
     Size: '0x1'
@@ -501,19 +501,19 @@ GeyserManagerSetupDataAsset:
   - Name: NumGeyserGroupsToSpawn
     Offset: '0xd8'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   - Name: NumGeysersToSpawnPerGroup
     Offset: '0xf8'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   - Name: SpawnDistanceFromPlayerInMetres
     Offset: '0x118'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: SpawnRadiusInMetres
     Offset: '0x148'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: SpawnAngleRelativeToPlayerDirection
     Offset: '0x178'
     Size: '0x10'
@@ -521,7 +521,7 @@ GeyserManagerSetupDataAsset:
   - Name: DelayBetweenEachGeyserSpawningInAGroup
     Offset: '0x188'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: MaximumDensityRadiusInMetres
     Offset: '0x1b8'
     Size: '0x4'
@@ -543,19 +543,19 @@ GeyserSetupDataAsset:
   - Name: DormantDuration
     Offset: '0x30'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: InitialWarningDuration
     Offset: '0x60'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: NumSpurtsPerActivation
     Offset: '0x90'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   - Name: TimeBetweenSpurts
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: ShouldDestroyOnDeactivation
     Offset: '0xe0'
     Size: '0x1'
@@ -573,15 +573,15 @@ LavaZone:
   - Name: TimeBetweenActivations
     Offset: '0x3c8'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: ActiveDuration
     Offset: '0x3f8'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: StoryFlag
     Offset: '0x428'
     Size: '0x8'
-    Type: struct
+    Type: struct StoryFlag
   - Name: LavaMaterial
     Offset: '0x430'
     Size: '0x8'
@@ -677,7 +677,7 @@ SuperheatedWaterSetupDataAsset:
   - Name: TimeBetweenLargeSurfaceEffects
     Offset: '0x30'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: LargeSurfaceEffectMinimumDistanceInMetres
     Offset: '0x60'
     Size: '0x4'
@@ -685,7 +685,7 @@ SuperheatedWaterSetupDataAsset:
   - Name: LargeSurfaceEffects
     Offset: '0x68'
     Size: '0x10'
-    Type: struct
+    Type: struct RandomParticleSystemPicker
   - Name: EffectSpawnHeight
     Offset: '0x78'
     Size: '0x4'
@@ -697,15 +697,15 @@ SuperheatedWaterSetupDataAsset:
   - Name: TimeBetweenSmallSurfaceEffects
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: NumSmallSurfaceEffects
     Offset: '0xb0'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   - Name: SmallSurfaceEffects
     Offset: '0xd0'
     Size: '0x10'
-    Type: struct
+    Type: struct DistanceThrottledRandomParticleSystemPicker
   - Name: SmallSurfaceEffectNearbyPlayerRadiusInMetres
     Offset: '0xe0'
     Size: '0x4'
@@ -791,7 +791,7 @@ Volcano:
   - Name: ProjectileLaunchOffset
     Offset: '0x460'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: AudioPool
     Offset: '0x470'
     Size: '0x8'
@@ -823,7 +823,7 @@ Volcano:
   - Name: StateData
     Offset: '0x4a4'
     Size: '0xc'
-    Type: struct
+    Type: struct VolcanoStateData
   - Name: AssociatedIslandName
     Offset: '0x4b0'
     Size: '0x8'
@@ -841,15 +841,15 @@ VolcanoSetupDataAsset:
   - Name: WarmUpDuration
     Offset: '0x30'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: EruptionDuration
     Offset: '0x60'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: DormantDuration
     Offset: '0x90'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: MinimumDurationForTheEffects
     Offset: '0xc0'
     Size: '0x4'
@@ -857,15 +857,15 @@ VolcanoSetupDataAsset:
   - Name: GroundAndWaterStayHotDurationAfterVolcanoFinishesDuration
     Offset: '0xc8'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: ProjectileTriggerFrequency
     Offset: '0xf8'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: PercentageOfMaxTargetingRange
     Offset: '0x128'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: MinNumProjectilesToTrigger
     Offset: '0x158'
     Size: '0x4'
@@ -881,19 +881,19 @@ VolcanoSetupDataAsset:
   - Name: ChanceToTargetPlayers
     Offset: '0x168'
     Size: '0x58'
-    Type: struct
+    Type: struct VolcanoTargetChances
   - Name: ChanceToTargetShips
     Offset: '0x1c0'
     Size: '0x58'
-    Type: struct
+    Type: struct VolcanoTargetChances
   - Name: ChanceToTargetWatercraft
     Offset: '0x218'
     Size: '0x58'
-    Type: struct
+    Type: struct VolcanoTargetChances
   - Name: PlayerNearMissDistanceInMetres
     Offset: '0x270'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: InnerShipNearMissRadiusInMetres
     Offset: '0x2a0'
     Size: '0x4'
@@ -925,23 +925,23 @@ VolcanoSetupDataAsset:
   - Name: LocalMiniProjectilesSpawnHeightAbovePlayerInMetres
     Offset: '0x2d8'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: LocalMiniProjectilesSpawnDistanceFromPlayerInMetres
     Offset: '0x308'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: LocalMiniProjectilesTimeBetweenSpawns
     Offset: '0x338'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: NumLocalMiniProjectilesToTrigger
     Offset: '0x368'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   - Name: LocalMiniProjectilesSpeed
     Offset: '0x388'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: LocalMiniProjectilesGravityScale
     Offset: '0x3b8'
     Size: '0x4'
@@ -949,11 +949,11 @@ VolcanoSetupDataAsset:
   - Name: LocalMiniProjectilesSpawnAngleRange
     Offset: '0x3c0'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: LocalMiniProjectilesSpawnStartPositionOffsetInMetres
     Offset: '0x3f0'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: LocalMiniProjectilesSpawnDistanceSpeedScalar
     Offset: '0x420'
     Size: '0x4'

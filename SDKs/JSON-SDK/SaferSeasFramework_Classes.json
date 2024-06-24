@@ -21,7 +21,7 @@
     "Attributes": [
       {
         "Name": "SaferSeasBlacklistAsset",
-        "Type": "struct",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
       }

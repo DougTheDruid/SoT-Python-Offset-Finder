@@ -27,7 +27,7 @@ Oar:
   - Name: OarParams
     Offset: '0x0'
     Size: '0x38'
-    Type: struct
+    Type: struct OarParams
   ClassSize: '0x60'
 OarParams:
   Attributes:
@@ -42,11 +42,11 @@ OarParams:
   - Name: OarOffsetDirection
     Offset: '0x8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: OarForwardForceDirection
     Offset: '0x14'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: TimeForCompleteStroke
     Offset: '0x20'
     Size: '0x4'
@@ -103,14 +103,14 @@ RowboatLiveryPickerDataAssetConditions:
   - Name: Feature
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   ClassSize: '0x18'
 RowboatMountStateTelemetryEvent:
   Attributes:
   - Name: WatercraftId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: ActionName
     Offset: '0x10'
     Size: '0x1'
@@ -171,11 +171,11 @@ WatercraftDespawnTelemetryEvent:
   - Name: WatercraftId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Location
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: DespawnReason
     Offset: '0x1c'
     Size: '0x1'
@@ -197,7 +197,7 @@ WatercraftSpawnTelemetryEvent:
   - Name: WatercraftId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: WatercraftType
     Offset: '0x10'
     Size: '0x10'
@@ -209,9 +209,9 @@ WatercraftSpawnTelemetryEvent:
   - Name: Location
     Offset: '0x30'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Forward
     Offset: '0x3c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x48'

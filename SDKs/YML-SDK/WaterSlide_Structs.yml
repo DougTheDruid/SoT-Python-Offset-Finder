@@ -109,7 +109,7 @@ WaterSlideActionStateParams:
   - Name: LookAtOffsetParams
     Offset: '0x8'
     Size: '0x1c'
-    Type: struct
+    Type: struct LookAtOffsetParams
   ClassSize: '0x24'
 WaterSlideParams:
   Attributes:
@@ -140,7 +140,7 @@ WaterSlideParams:
   - Name: StatToFireForRouteChange
     Offset: '0x18'
     Size: '0x4'
-    Type: struct
+    Type: struct PlayerStat
   - Name: PlayerSplashingVFXOverride
     Offset: '0x20'
     Size: '0x8'
@@ -151,7 +151,7 @@ ZipLineActionStateParams:
   - Name: LookAtOffsetParams
     Offset: '0x0'
     Size: '0x1c'
-    Type: struct
+    Type: struct LookAtOffsetParams
   ClassSize: '0x1c'
 ZiplineActionStateConstructionInfo:
   Attributes:
@@ -197,21 +197,21 @@ ZiplineFeelParameters:
   - Name: SwingAngleControlDegrees
     Offset: '0x18'
     Size: '0x170'
-    Type: struct
+    Type: struct RuntimeVectorCurve
   - Name: SwingSpeedControlRPM
     Offset: '0x188'
     Size: '0x170'
-    Type: struct
+    Type: struct RuntimeVectorCurve
   - Name: WindResistanceMinMaxAngleDegrees
     Offset: '0x2f8'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: FOVMinMaxSpeed
     Offset: '0x300'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: FOVMinMaxAngleDegrees
     Offset: '0x308'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x310'

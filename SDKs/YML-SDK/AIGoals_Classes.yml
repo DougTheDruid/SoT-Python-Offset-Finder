@@ -15,15 +15,15 @@ BTService_SetBestActionSpotNearTarget:
   - Name: TargetKey
     Offset: '0x70'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: BestActionSpotKey
     Offset: '0x98'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: BestActionSpotSelectionCriteria
     Offset: '0xc0'
     Size: '0x34'
-    Type: struct
+    Type: struct BestActionSpotSelectionCriteria
   ClassSize: '0xa0'
   FullSize: '0x110'
   InheritedSize: '0x70'
@@ -69,7 +69,7 @@ WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal:
   - Name: MovementModeFilter
     Offset: '0x48'
     Size: '0x20'
-    Type: struct
+    Type: struct AIGoalMovementModeFilter
   - Name: ShouldOnlyActivateWhileDocked
     Offset: '0x68'
     Size: '0x1'
@@ -95,7 +95,7 @@ WhilePlayerWithinAreaAIGoal:
   - Name: MovementModeFilter
     Offset: '0x48'
     Size: '0x20'
-    Type: struct
+    Type: struct AIGoalMovementModeFilter
   - Name: TargetPlayerPawn
     Offset: '0x68'
     Size: '0x8'

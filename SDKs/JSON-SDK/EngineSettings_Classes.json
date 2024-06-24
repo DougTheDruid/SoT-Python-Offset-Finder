@@ -1,4 +1,104 @@
 {
+  "GeneralProjectSettings": {
+    "Super": "Object",
+    "FullSize": "0x110",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xe8",
+    "Attributes": [
+      {
+        "Name": "CompanyName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "CompanyDistinguishedName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "CopyrightNotice",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "Description",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "Homepage",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "LicensingTerms",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "PrivacyPolicy",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "ProjectID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "ProjectName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "ProjectVersion",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "SupportContact",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "ProjectDisplayedTitle",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0xd8"
+      }
+    ]
+  },
+  "HudSettings": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "bShowHUD",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "DebugDisplay",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "ConsoleSettings": {
     "Super": "Object",
     "FullSize": "0x50",
@@ -99,6 +199,32 @@
       }
     ]
   },
+  "GameSessionSettings": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MaxSpectators",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MaxPlayers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "bRequiresPushToTalk",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "GameMapsSettings": {
     "Super": "Object",
     "FullSize": "0xb0",
@@ -143,7 +269,7 @@
       },
       {
         "Name": "GameInstanceClass",
-        "Type": "struct",
+        "Type": "struct StringClassReference",
         "Size": "0x10",
         "Offset": "0x60"
       },
@@ -161,141 +287,15 @@
       },
       {
         "Name": "GlobalDefaultGameMode",
-        "Type": "struct",
+        "Type": "struct StringClassReference",
         "Size": "0x10",
         "Offset": "0x90"
       },
       {
         "Name": "GlobalDefaultServerGameMode",
-        "Type": "struct",
+        "Type": "struct StringClassReference",
         "Size": "0x10",
         "Offset": "0xa0"
-      }
-    ]
-  },
-  "HudSettings": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "bShowHUD",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "DebugDisplay",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "GameSessionSettings": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MaxSpectators",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MaxPlayers",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "bRequiresPushToTalk",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "GeneralProjectSettings": {
-    "Super": "Object",
-    "FullSize": "0x110",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xe8",
-    "Attributes": [
-      {
-        "Name": "CompanyName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "CompanyDistinguishedName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "CopyrightNotice",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "Description",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "Homepage",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "LicensingTerms",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "PrivacyPolicy",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "ProjectID",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "ProjectName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0xa8"
-      },
-      {
-        "Name": "ProjectVersion",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "SupportContact",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "ProjectDisplayedTitle",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0xd8"
       }
     ]
   },

@@ -6,6 +6,19 @@
 #include "Retraction_Structs.h"
 
 
+// Size 0x48 (Full Size[0x110] - InheritedSize[0xc8]
+class RetractableComponent: public ActorComponent
+{
+public:
+	struct FName                                                 FeatureToggle;                                     // 0x100(0x8)
+	struct RetractorOrientationAdjustmentFlags                   OrientationAdjustmentOnRetractFlags;               // 0x108(0x3)
+	char                                                         RetractorBoxAxis;                                  // 0x10b(0x1)
+	bool                                                         ShouldAutoReleaseOnSuccessfulRetract;              // 0x10c(0x1)
+	bool                                                         MigrateAttachedWithRetractor;                      // 0x10d(0x1)
+	bool                                                         WasSimulatingPhysicsBeforeRetract;                 // 0x10e(0x1)
+};
+
+
 // Size 0x60 (Full Size[0x128] - InheritedSize[0xc8]
 class RetractorComponent: public ActorComponent
 {
@@ -13,19 +26,6 @@ public:
 	interface                                                    AttachedRetractable;                               // 0xd0(0x10)
 	class SceneComponent*                                        RetractDestinationComponent;                       // 0x110(0x8)
 	class SceneComponent*                                        RetractingComponent;                               // 0x118(0x8)
-};
-
-
-// Size 0x48 (Full Size[0x110] - InheritedSize[0xc8]
-class RetractableComponent: public ActorComponent
-{
-public:
-	struct FName                                                 FeatureToggle;                                     // 0x100(0x8)
-	struct                                                       OrientationAdjustmentOnRetractFlags;               // 0x108(0x3)
-	char                                                         RetractorBoxAxis;                                  // 0x10b(0x1)
-	bool                                                         ShouldAutoReleaseOnSuccessfulRetract;              // 0x10c(0x1)
-	bool                                                         MigrateAttachedWithRetractor;                      // 0x10d(0x1)
-	bool                                                         WasSimulatingPhysicsBeforeRetract;                 // 0x10e(0x1)
 };
 
 

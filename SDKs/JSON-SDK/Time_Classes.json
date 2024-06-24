@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "GameWorldTimeOffset",
-        "Type": "struct",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x400"
       },
@@ -97,7 +97,7 @@
       },
       {
         "Name": "ReplicatedServerTime",
-        "Type": "struct",
+        "Type": "struct ReplicatedAuthoritativeTime",
         "Size": "0x10",
         "Offset": "0x498"
       }

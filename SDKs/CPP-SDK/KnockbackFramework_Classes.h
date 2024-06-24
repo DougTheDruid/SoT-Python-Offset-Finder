@@ -7,10 +7,10 @@
 class KnockbackColliderComponent: public BoxComponent
 {
 public:
-	struct                                                       SolidCollisionProfile;                             // 0x5f8(0x8)
-	struct                                                       KnockbackTraceProfile;                             // 0x600(0x8)
+	struct CollisionProfileName                                  SolidCollisionProfile;                             // 0x5f8(0x8)
+	struct CollisionProfileName                                  KnockbackTraceProfile;                             // 0x600(0x8)
 	char                                                         KnockbackType;                                     // 0x608(0x1)
-	struct                                                       KnockbackParams;                                   // 0x60c(0x50)
+	struct KnockBackInfo                                         KnockbackParams;                                   // 0x60c(0x50)
 	class Actor*                                                 ActorToTarget;                                     // 0x65c(0x8)
 	class UClass*                                                KnockbackDamageType;                               // 0x668(0x8)
 	float                                                        KnockbackInterval;                                 // 0x670(0x4)

@@ -31,7 +31,7 @@ SplinePathingActor:
   - Name: ObjectMessageDispatcher
     Offset: '0x3d0'
     Size: '0xa0'
-    Type: struct
+    Type: struct ObjectMessagingDispatcher
   - Name: Root
     Offset: '0x480'
     Size: '0x8'

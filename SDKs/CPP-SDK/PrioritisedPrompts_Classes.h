@@ -6,24 +6,6 @@
 #include "PrioritisedPrompts_Structs.h"
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class GetPromptsLocalService: public BlueprintAsyncActionBase
-{
-public:
-	multicastinlinedelegate                                      Loaded;                                            // 0x28(0x10)
-	class Object*                                                WorldContextObject;                                // 0x38(0x8)
-};
-
-
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class PrioritisedPromptsManager: public Object
-{
-public:
-	TArray<struct PrioritisedPromptWithHandle>                   AllPrompts;                                        // 0x30(0x10)
-	class PlayerController*                                      PlayerController;                                  // 0x40(0x8)
-};
-
-
 // Size 0xf0 (Full Size[0x118] - InheritedSize[0x28]
 class BasePromptCoordinator: public Object
 {
@@ -39,6 +21,24 @@ class PromptCounterAccessKey: public Object
 {
 public:
 	struct FString                                               Key;                                               // 0x28(0x10)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class GetPromptsLocalService: public BlueprintAsyncActionBase
+{
+public:
+	multicastinlinedelegate                                      Loaded;                                            // 0x28(0x10)
+	class Object*                                                WorldContextObject;                                // 0x38(0x8)
+};
+
+
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class PrioritisedPromptsManager: public Object
+{
+public:
+	TArray<struct PrioritisedPromptWithHandle>                   AllPrompts;                                        // 0x30(0x10)
+	class PlayerController*                                      PlayerController;                                  // 0x40(0x8)
 };
 
 

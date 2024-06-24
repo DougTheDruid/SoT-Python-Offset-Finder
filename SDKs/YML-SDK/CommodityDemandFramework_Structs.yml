@@ -27,7 +27,7 @@ CommodityDescWithRedeemId:
   - Name: RedeemId
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct CommoditySelectionType
   - Name: RedeemItemDesc
     Offset: '0x8'
     Size: '0x8'
@@ -71,7 +71,7 @@ CommodityTrackingModel:
   - Name: ItemOfferId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: NPCName
     Offset: '0x10'
     Size: '0x1'
@@ -138,7 +138,7 @@ TrackCommodityPurchaseOnServerRpc:
   - Name: ItemOfferId
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: ItemClientId
     Offset: '0x38'
     Size: '0x10'

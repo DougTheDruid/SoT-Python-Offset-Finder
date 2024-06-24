@@ -5,5 +5,5 @@ IdleTimeTracker:
   - Name: InactivityThreshold
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   ClassSize: '0x38'

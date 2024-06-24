@@ -1,62 +1,4 @@
 {
-  "OceanCrawlerAudioParamsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "WwiseObjectPoolWrapper",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "AudioKeyPairs",
-        "Type": "TArray<struct OceanCrawlerAudioKeyPair>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "BuffThankDelay",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "CrabBuffAudioSettings",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "EelBuffAudioSettings",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "HermitBuffAudioSettings",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x90"
-      }
-    ]
-  },
-  "BTTask_BroadcastOceanCrawlerAbilityAudioEvent": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x68",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "OceanCrawlerAudioKeyToBroadcast",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x60"
-      }
-    ]
-  },
   "OceanCrawlerAudioBroadcaster": {
     "Super": "ActorComponent",
     "FullSize": "0x1f8",
@@ -80,6 +22,64 @@
         "Type": "class OceanCrawlerAudioParamsDataAsset*",
         "Size": "0x8",
         "Offset": "0x1f0"
+      }
+    ]
+  },
+  "BTTask_BroadcastOceanCrawlerAbilityAudioEvent": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x68",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "OceanCrawlerAudioKeyToBroadcast",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "OceanCrawlerAudioParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "WwiseObjectPoolWrapper",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "AudioKeyPairs",
+        "Type": "TArray<struct OceanCrawlerAudioKeyPair>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "BuffThankDelay",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "CrabBuffAudioSettings",
+        "Type": "struct OceanCrawlerBuffAudioSettings",
+        "Size": "0x10",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "EelBuffAudioSettings",
+        "Type": "struct OceanCrawlerBuffAudioSettings",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "HermitBuffAudioSettings",
+        "Type": "struct OceanCrawlerBuffAudioSettings",
+        "Size": "0x10",
+        "Offset": "0x90"
       }
     ]
   },

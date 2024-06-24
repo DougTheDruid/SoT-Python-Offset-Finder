@@ -91,7 +91,7 @@
       },
       {
         "Name": "RepelForceGradientCurve",
-        "Type": "struct",
+        "Type": "struct RuntimeFloatCurve",
         "Size": "0x80",
         "Offset": "0x640"
       },

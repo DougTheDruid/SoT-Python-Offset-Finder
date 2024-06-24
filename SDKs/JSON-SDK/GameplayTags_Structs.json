@@ -1,4 +1,15 @@
 {
+  "GameplayTag": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TagName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "GameplayTagTableRow": {
     "ClassSize": "0x48",
     "Attributes": [
@@ -16,14 +27,20 @@
       }
     ]
   },
-  "GameplayTag": {
-    "ClassSize": "0x8",
+  "GameplayTagContainer": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "TagName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
+        "Name": "GameplayTags",
+        "Type": "TArray<struct GameplayTag>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Tags",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x18"
       }
     ]
   },
@@ -59,23 +76,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "GameplayTagContainer": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "GameplayTags",
-        "Type": "TArray<struct GameplayTag>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Tags",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x18"
       }
     ]
   },

@@ -1,35 +1,18 @@
 {
-  "ClueDestinationToTextIndex": {
-    "ClassSize": "0x28",
+  "GenderSpecificTextPairings": {
+    "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "DestinationType",
-        "Type": "class UClass*",
-        "Size": "0x8",
+        "Name": "MasculineClueDestinationDescription",
+        "Type": "struct FText",
+        "Size": "0x38",
         "Offset": "0x0"
       },
       {
-        "Name": "RequiredIndexAsset",
-        "Type": "assetobject",
-        "Size": "0x20",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "MapRadialIconData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "AssetReference",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
+        "Name": "FeminineClueDestinationDescription",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x38"
       }
     ]
   },
@@ -50,19 +33,53 @@
       }
     ]
   },
-  "GenderSpecificTextPairings": {
-    "ClassSize": "0x70",
+  "MapRadialIconData": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "MasculineClueDestinationDescription",
+        "Name": "AssetReference",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "ClueDestinationToTextIndex": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "DestinationType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RequiredIndexAsset",
+        "Type": "assetobject",
+        "Size": "0x20",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "TextEntryWithLayout": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "TextEntry",
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x0"
       },
       {
-        "Name": "FeminineClueDestinationDescription",
-        "Type": "struct FText",
-        "Size": "0x38",
+        "Name": "TextLayout",
+        "Type": "struct TreasureMapWidgetText",
+        "Size": "0x3c",
         "Offset": "0x38"
       }
     ]
@@ -81,23 +98,6 @@
         "Type": "int16",
         "Size": "0x2",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "TextEntryWithLayout": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "TextEntry",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TextLayout",
-        "Type": "struct",
-        "Size": "0x3c",
-        "Offset": "0x38"
       }
     ]
   },

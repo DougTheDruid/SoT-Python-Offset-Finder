@@ -13,7 +13,7 @@ ClueSite:
   - Name: Location
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x20'
 ClueSiteLootHistory:
   Attributes:
@@ -49,7 +49,7 @@ DebrisToRangeDist:
   - Name: NumberOfDebrisItemsToSpawn
     Offset: '0x0'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   - Name: WeightedDebrisTypeAsset
     Offset: '0x20'
     Size: '0x8'
@@ -90,7 +90,7 @@ LootSpawnedAtClueSite:
   - Name: SiteLocation
     Offset: '0x8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: NumLoot
     Offset: '0x14'
     Size: '0x4'
@@ -101,7 +101,7 @@ LootToRangeDist:
   - Name: NumberOfLootItemsToSpawn
     Offset: '0x0'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   - Name: WeightedLootDescAsset
     Offset: '0x20'
     Size: '0x8'

@@ -5,21 +5,21 @@ AdventureOnDemandCrewReachedSurfaceEvent:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 AdventureOnDemandCrewReadyToResurfaceEvent:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 AdventureOnDemandDiveCrewAlreadyAtDestinationEvent:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 AdventureOnDemandTallTaleCheckpoint:
   Attributes:
@@ -44,11 +44,11 @@ AdventureOnDemandTallTaleProposalGroup:
   - Name: BackgroundImageUrl
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: SmallBackgroundImageUrl
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Rewards
     Offset: '0x20'
     Size: '0x10'
@@ -64,7 +64,7 @@ AdventureOnDemandTallTaleProposalGroup:
   - Name: StatForNewTag
     Offset: '0x50'
     Size: '0x4'
-    Type: struct
+    Type: struct PlayerStat
   - Name: SailToQuestAvailability
     Offset: '0x54'
     Size: '0x1'
@@ -106,7 +106,7 @@ AdventureOnDemandVoyageSelectionVoyageProposal:
   - Name: Feature
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   - Name: Prerequisites
     Offset: '0x10'
     Size: '0x10'
@@ -114,7 +114,7 @@ AdventureOnDemandVoyageSelectionVoyageProposal:
   - Name: StatForNewTag
     Offset: '0x20'
     Size: '0x4'
-    Type: struct
+    Type: struct PlayerStat
   - Name: SailToQuestAvailability
     Offset: '0x24'
     Size: '0x1'
@@ -149,7 +149,7 @@ AdventureOnDemandVoyageSelectionVoyageProposalGroup:
   - Name: Feature
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   - Name: CategoryType
     Offset: '0x24'
     Size: '0x1'
@@ -168,7 +168,7 @@ ContendedResourceGameEventOnDemandArrivalTunnelWorkerFailedTelemetryEvent:
   - Name: TunnelInstanceId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: GameEventType
     Offset: '0x10'
     Size: '0x10'
@@ -213,7 +213,7 @@ GameEventOnDemandArrivalTunnelWorkerCompletedTelemetryEvent:
   - Name: TunnelInstanceId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: ArrivalTunnelWorkerLifetimeSeconds
     Offset: '0x10'
     Size: '0x8'
@@ -251,14 +251,14 @@ GameEventOnDemandCompanyStatData:
   - Name: Stat
     Offset: '0x8'
     Size: '0x4'
-    Type: struct
+    Type: struct PlayerStat
   ClassSize: '0x10'
 QuestTableBakedDiscoverTile:
   Attributes:
   - Name: TileId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: CondensedTitle
     Offset: '0x10'
     Size: '0x38'
@@ -282,19 +282,19 @@ QuestTableBakedDiscoverTile:
   - Name: BackgroundImageUrl
     Offset: '0xf8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: PreviewTileIconImageUrl
     Offset: '0x108'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: BladeFrameImageURL
     Offset: '0x118'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: WatermarkImageUrl
     Offset: '0x128'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x138'
 QuestTableBakedInfoDiscoverTile:
   Attributes:

@@ -37,7 +37,7 @@ TestMessageDateTime:
   - Name: DateTime
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct DateTime
   ClassSize: '0x8'
 TestMessageInt64:
   Attributes:
@@ -51,7 +51,7 @@ TestMessageTimespan:
   - Name: Timespan
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   ClassSize: '0x8'
 TestMessageUInt64:
   Attributes:
@@ -65,7 +65,7 @@ TestSerializationNestedObject:
   - Name: NestedObject
     Offset: '0x0'
     Size: '0x28'
-    Type: struct
+    Type: struct TestSerializationObject
   ClassSize: '0x28'
 TestSerializationObject:
   Attributes:
@@ -84,7 +84,7 @@ TestSerializationObject:
   - Name: TestGuid
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x28'
 TestStringMapSerializationObject:
   Attributes:

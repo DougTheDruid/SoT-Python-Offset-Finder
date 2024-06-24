@@ -21,7 +21,7 @@ public:
 	float                                                        RepelForceMin;                                     // 0x630(0x4)
 	float                                                        RepelForceMax;                                     // 0x634(0x4)
 	bool                                                         ApplyRepelForceAtCentreOfMass;                     // 0x638(0x1)
-	struct                                                       RepelForceGradientCurve;                           // 0x640(0x80)
+	struct RuntimeFloatCurve                                     RepelForceGradientCurve;                           // 0x640(0x80)
 	bool                                                         UseAngularImpulse;                                 // 0x6c0(0x1)
 	float                                                        AngularImpulseRadius;                              // 0x6c4(0x4)
 	float                                                        AngularImpulseForce;                               // 0x6cc(0x4)

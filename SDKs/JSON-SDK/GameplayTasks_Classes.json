@@ -1,4 +1,38 @@
 {
+  "GameplayTaskResource": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ManualResourceID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "bManuallySetID",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "GameplayTask": {
+    "Super": "Object",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "InstanceName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "GameplayTasksComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x128",
@@ -22,40 +56,6 @@
         "Type": "multicastinlinedelegate",
         "Size": "0x10",
         "Offset": "0x118"
-      }
-    ]
-  },
-  "GameplayTask": {
-    "Super": "Object",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "InstanceName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "GameplayTaskResource": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ManualResourceID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "bManuallySetID",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
       }
     ]
   },

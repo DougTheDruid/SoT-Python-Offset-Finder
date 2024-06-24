@@ -1,4 +1,18 @@
 {
+  "NudgeFromExplosionsPolicy": {
+    "Super": "NudgePolicy",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AcceptedDamagerTypes",
+        "Type": "TArray<struct NudgeChancePerDamagerType>",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      }
+    ]
+  },
   "NudgeFromWaterLevelPolicy": {
     "Super": "NudgePolicy",
     "FullSize": "0xf0",
@@ -25,26 +39,6 @@
       }
     ]
   },
-  "NudgeFromStormPolicy": {
-    "Super": "NudgePolicy",
-    "FullSize": "0x158",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "ChanceOfNudge",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "WeightedTimers",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xd0"
-      }
-    ]
-  },
   "NudgeFromShipCollisionPolicy": {
     "Super": "NudgePolicy",
     "FullSize": "0xd0",
@@ -65,17 +59,23 @@
       }
     ]
   },
-  "NudgeFromExplosionsPolicy": {
+  "NudgeFromStormPolicy": {
     "Super": "NudgePolicy",
-    "FullSize": "0xd8",
+    "FullSize": "0x158",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
+    "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "AcceptedDamagerTypes",
-        "Type": "TArray<struct NudgeChancePerDamagerType>",
-        "Size": "0x10",
+        "Name": "ChanceOfNudge",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0xc8"
+      },
+      {
+        "Name": "WeightedTimers",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0xd0"
       }
     ]
   },

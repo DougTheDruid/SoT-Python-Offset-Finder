@@ -6,16 +6,6 @@
 #include "BarrelsOfPlenty_Structs.h"
 
 
-// Size 0x20 (Full Size[0x3e8] - InheritedSize[0x3c8]
-class BarrelsOfPlentyDebugSpawnLocation: public Actor
-{
-public:
-	TArray<struct BarrelsOfPlentyDebugLocationEntry>             Objects;                                           // 0x3c8(0x10)
-	struct                                                       SpawnCentre;                                       // 0x3d8(0xc)
-	float                                                        Radius;                                            // 0x3e4(0x4)
-};
-
-
 // Size 0x28 (Full Size[0x3f0] - InheritedSize[0x3c8]
 class BarrelsOfPlentySpawnProxy: public Actor
 {
@@ -29,7 +19,17 @@ public:
 class SpawnBarrelsOfPlentyStepDesc: public TaleQuestStepDesc
 {
 public:
-	struct                                                       LocatorVar;                                        // 0x80(0x30)
+	struct QuestVariableVector                                   LocatorVar;                                        // 0x80(0x30)
+};
+
+
+// Size 0x20 (Full Size[0x3e8] - InheritedSize[0x3c8]
+class BarrelsOfPlentyDebugSpawnLocation: public Actor
+{
+public:
+	TArray<struct BarrelsOfPlentyDebugLocationEntry>             Objects;                                           // 0x3c8(0x10)
+	struct Vector                                                SpawnCentre;                                       // 0x3d8(0xc)
+	float                                                        Radius;                                            // 0x3e4(0x4)
 };
 
 

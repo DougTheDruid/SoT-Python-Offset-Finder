@@ -5,7 +5,7 @@ NudgeInterpolationParamsDataAsset:
   - Name: NudgeInterpParams
     Offset: '0x28'
     Size: '0x20'
-    Type: struct
+    Type: struct NudgeInterpolationParams
   - Name: ControllerForceFeedbackEffect
     Offset: '0x48'
     Size: '0x8'

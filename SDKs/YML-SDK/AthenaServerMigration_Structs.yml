@@ -12,7 +12,7 @@ IncomingMigrationPreventionZone:
   - Name: Location
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Radius
     Offset: '0x8'
     Size: '0x4'
@@ -23,18 +23,18 @@ ServerMigrationInstanceEventBase:
   - Name: ServerId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: MigrationId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
 ServerMigrationRefusedEvent:
   Attributes:
   - Name: MigrationId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: CrewIds
     Offset: '0x10'
     Size: '0x10'
@@ -49,14 +49,14 @@ ServerMigrationRequestBroadcastEvent:
   - Name: CrewId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
 ServerMigrationRequestEvent:
   Attributes:
   - Name: MigrationId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: DestinationAddress
     Offset: '0x10'
     Size: '0x10'

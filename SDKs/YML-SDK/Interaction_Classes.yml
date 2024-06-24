@@ -15,7 +15,7 @@ InteractableArea:
   - Name: Bounds
     Offset: '0x28'
     Size: '0x1c'
-    Type: struct
+    Type: struct BoxSphereBounds
   - Name: Name
     Offset: '0x44'
     Size: '0x8'
@@ -41,15 +41,15 @@ InteractableComponent:
   - Name: BoxExtent
     Offset: '0xd8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: BoxOrigin
     Offset: '0xe4'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: BoxRotation
     Offset: '0xf0'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: MayBeGrouped
     Offset: '0xfc'
     Size: '0x1'

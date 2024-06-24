@@ -1,39 +1,11 @@
 {
-  "CycleFlameOfFateSequence": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "FlameTypeSequence",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "FlameData": {
-    "ClassSize": "0x2",
+  "SetFlameOfFateEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "FlameOfFateType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SkipChangeAnimation",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
-      }
-    ]
-  },
-  "PlayerTookFlameOfFateEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "PlayerCharacter",
-        "Type": "class Character*",
-        "Size": "0x8",
         "Offset": "0x0"
       },
       {
@@ -41,12 +13,6 @@
         "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x8"
-      },
-      {
-        "Name": "FlameOfFateType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
       }
     ]
   },
@@ -73,8 +39,8 @@
       }
     ]
   },
-  "SetFlameOfFateEvent": {
-    "ClassSize": "0x10",
+  "FlameData": {
+    "ClassSize": "0x2",
     "Attributes": [
       {
         "Name": "FlameOfFateType",
@@ -83,10 +49,10 @@
         "Offset": "0x0"
       },
       {
-        "Name": "Source",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Name": "SkipChangeAnimation",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
       }
     ]
   },
@@ -110,6 +76,40 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "PlayerTookFlameOfFateEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PlayerCharacter",
+        "Type": "class Character*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Source",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "FlameOfFateType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CycleFlameOfFateSequence": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "FlameTypeSequence",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },

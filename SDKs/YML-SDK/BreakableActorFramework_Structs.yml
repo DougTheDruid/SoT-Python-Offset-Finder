@@ -5,7 +5,7 @@ EventBreakableActorWasDamaged:
   - Name: ImpactDamageEvent
     Offset: '0x0'
     Size: '0x58'
-    Type: struct
+    Type: struct ImpactDamageEvent
   ClassSize: '0x58'
 EventBreakableActorWasDestroyed:
   Attributes:

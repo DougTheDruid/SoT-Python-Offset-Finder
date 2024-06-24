@@ -10,7 +10,7 @@
 class TaleStruct: public Struct
 {
 public:
-	struct                                                       StructId;                                          // 0x88(0x10)
+	struct Guid                                                  StructId;                                          // 0x88(0x10)
 };
 
 
@@ -18,7 +18,7 @@ public:
 class ClientCommandHandler: public Actor
 {
 public:
-	struct                                                       CommandQueue;                                      // 0x3c8(0x18)
+	struct ClientCommandQueue                                    CommandQueue;                                      // 0x3c8(0x18)
 };
 
 

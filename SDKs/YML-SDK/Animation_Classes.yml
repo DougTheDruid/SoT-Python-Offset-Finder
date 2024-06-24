@@ -105,7 +105,7 @@ AnimNotify_DetachAndMaintainWorldPosition:
   - Name: PreviewLocationOffset
     Offset: '0x3c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: PreviewScaleMultiplier
     Offset: '0x48'
     Size: '0x4'
@@ -313,7 +313,7 @@ AnimationEditorSettings:
   - Name: CustomAnimationMontageIdListings
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -323,11 +323,11 @@ CharacterAnimationInstance:
   - Name: IKLeftHandUpdateParams
     Offset: '0x450'
     Size: '0x40'
-    Type: struct
+    Type: struct CharacterAnimationIKUpdateParams
   - Name: IKRightHandUpdateParams
     Offset: '0x490'
     Size: '0x40'
-    Type: struct
+    Type: struct CharacterAnimationIKUpdateParams
   - Name: RightHandIKSocketName
     Offset: '0x4d0'
     Size: '0x8'
@@ -339,19 +339,19 @@ CharacterAnimationInstance:
   - Name: RightHandIK
     Offset: '0x4e0'
     Size: '0x60'
-    Type: struct
+    Type: struct LimbIK
   - Name: LeftHandIK
     Offset: '0x540'
     Size: '0x60'
-    Type: struct
+    Type: struct LimbIK
   - Name: RightFootIK
     Offset: '0x5a0'
     Size: '0x60'
-    Type: struct
+    Type: struct LimbIK
   - Name: LeftFootIK
     Offset: '0x600'
     Size: '0x60'
-    Type: struct
+    Type: struct LimbIK
   ClassSize: '0x220'
   FullSize: '0x660'
   InheritedSize: '0x440'
@@ -409,7 +409,7 @@ CosmeticItemAnimationSetDataAsset:
   - Name: LoopData
     Offset: '0x28'
     Size: '0x20'
-    Type: struct
+    Type: struct CosmeticItemAnimationSetLoopData
   - Name: OneShotSequences
     Offset: '0x48'
     Size: '0x10'
@@ -423,7 +423,7 @@ CustomAnimationMontageComponent:
   - Name: ReplicatedData
     Offset: '0xd0'
     Size: '0xc'
-    Type: struct
+    Type: struct CustomAnimationMontageComponentReplicatedData
   ClassSize: '0x80'
   FullSize: '0x148'
   InheritedSize: '0xc8'
@@ -445,7 +445,7 @@ CustomAnimationMontageDefinitionDataAsset:
   - Name: LoopingData
     Offset: '0x40'
     Size: '0x28'
-    Type: struct
+    Type: struct CustomAnimationMontageStagedLoopingData
   - Name: Interrupts
     Offset: '0x68'
     Size: '0x1'
@@ -533,7 +533,7 @@ TransformBlendCurveComponent:
   - Name: Curve
     Offset: '0xd0'
     Size: '0x500'
-    Type: struct
+    Type: struct TransformBlendCurve
   ClassSize: '0x508'
   FullSize: '0x5d0'
   InheritedSize: '0xc8'

@@ -19,7 +19,7 @@ Border:
   - Name: ContentColorAndOpacity
     Offset: '0x150'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: ContentColorAndOpacityDelegate
     Offset: '0x160'
     Size: '0x10'
@@ -27,7 +27,7 @@ Border:
   - Name: Padding
     Offset: '0x170'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: HorizontalAlignment
     Offset: '0x180'
     Size: '0x1'
@@ -39,7 +39,7 @@ Border:
   - Name: Background
     Offset: '0x188'
     Size: '0x90'
-    Type: struct
+    Type: struct SlateBrush
   - Name: BackgroundDelegate
     Offset: '0x218'
     Size: '0x10'
@@ -47,7 +47,7 @@ Border:
   - Name: BrushColor
     Offset: '0x228'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: BrushColorDelegate
     Offset: '0x238'
     Size: '0x10'
@@ -85,7 +85,7 @@ BorderSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: HorizontalAlignment
     Offset: '0x48'
     Size: '0x1'
@@ -107,15 +107,15 @@ Button:
   - Name: WidgetStyle
     Offset: '0x158'
     Size: '0x2a8'
-    Type: struct
+    Type: struct ButtonStyle
   - Name: ColorAndOpacity
     Offset: '0x400'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: BackgroundColor
     Offset: '0x410'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: ClickMethod
     Offset: '0x420'
     Size: '0x1'
@@ -149,7 +149,7 @@ ButtonSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: HorizontalAlignment
     Offset: '0x48'
     Size: '0x1'
@@ -167,7 +167,7 @@ CanvasPanelSlot:
   - Name: LayoutData
     Offset: '0x38'
     Size: '0x28'
-    Type: struct
+    Type: struct AnchorData
   - Name: bAutoSize
     Offset: '0x60'
     Size: '0x1'
@@ -193,7 +193,7 @@ CheckBox:
   - Name: WidgetStyle
     Offset: '0x168'
     Size: '0x5f0'
-    Type: struct
+    Type: struct CheckBoxStyle
   - Name: Style
     Offset: '0x758'
     Size: '0x8'
@@ -241,11 +241,11 @@ CheckBox:
   - Name: Padding
     Offset: '0x7ac'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: BorderBackgroundColor
     Offset: '0x7c0'
     Size: '0x30'
-    Type: struct
+    Type: struct SlateColor
   - Name: OnCheckStateChanged
     Offset: '0x7f0'
     Size: '0x10'
@@ -275,7 +275,7 @@ CircularThrobber:
   - Name: Image
     Offset: '0x150'
     Size: '0x90'
-    Type: struct
+    Type: struct SlateBrush
   ClassSize: '0xc0'
   FullSize: '0x1f8'
   InheritedSize: '0x138'
@@ -307,11 +307,11 @@ ComboBoxString:
   - Name: WidgetStyle
     Offset: '0x158'
     Size: '0x428'
-    Type: struct
+    Type: struct ComboBoxStyle
   - Name: ContentPadding
     Offset: '0x580'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: MaxListHeight
     Offset: '0x590'
     Size: '0x4'
@@ -357,7 +357,7 @@ DragDropOperation:
   - Name: Offset
     Offset: '0x4c'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: OnDrop
     Offset: '0x58'
     Size: '0x10'
@@ -395,7 +395,7 @@ EditableText:
   - Name: WidgetStyle
     Offset: '0x1c8'
     Size: '0x228'
-    Type: struct
+    Type: struct EditableTextStyle
   - Name: Style
     Offset: '0x3f0'
     Size: '0x8'
@@ -415,11 +415,11 @@ EditableText:
   - Name: Font
     Offset: '0x410'
     Size: '0x40'
-    Type: struct
+    Type: struct SlateFontInfo
   - Name: ColorAndOpacity
     Offset: '0x450'
     Size: '0x30'
-    Type: struct
+    Type: struct SlateColor
   - Name: IsReadOnly
     Offset: '0x480'
     Size: '0x1'
@@ -477,7 +477,7 @@ EditableTextBox:
   - Name: WidgetStyle
     Offset: '0x180'
     Size: '0x860'
-    Type: struct
+    Type: struct EditableTextBoxStyle
   - Name: Style
     Offset: '0x9e0'
     Size: '0x8'
@@ -493,19 +493,19 @@ EditableTextBox:
   - Name: Font
     Offset: '0xa30'
     Size: '0x40'
-    Type: struct
+    Type: struct SlateFontInfo
   - Name: ForegroundColor
     Offset: '0xa70'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: BackgroundColor
     Offset: '0xa80'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: ReadOnlyForegroundColor
     Offset: '0xa90'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: IsReadOnly
     Offset: '0xaa0'
     Size: '0x1'
@@ -521,7 +521,7 @@ EditableTextBox:
   - Name: Padding
     Offset: '0xaa8'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: IsCaretMovedWhenGainFocus
     Offset: '0xab8'
     Size: '0x1'
@@ -567,7 +567,7 @@ ExpandableArea:
   - Name: AreaPadding
     Offset: '0x148'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: OnExpansionChanged
     Offset: '0x158'
     Size: '0x10'
@@ -631,7 +631,7 @@ GridSlot:
   - Name: Nudge
     Offset: '0x50'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x28'
   FullSize: '0x60'
   InheritedSize: '0x38'
@@ -641,11 +641,11 @@ HorizontalBoxSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: Size
     Offset: '0x48'
     Size: '0x8'
-    Type: struct
+    Type: struct SlateChildSize
   - Name: HorizontalAlignment
     Offset: '0x50'
     Size: '0x1'
@@ -667,7 +667,7 @@ Image:
   - Name: Brush
     Offset: '0x140'
     Size: '0x90'
-    Type: struct
+    Type: struct SlateBrush
   - Name: BrushDelegate
     Offset: '0x1d0'
     Size: '0x10'
@@ -675,7 +675,7 @@ Image:
   - Name: ColorAndOpacity
     Offset: '0x1e0'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: ColorAndOpacityDelegate
     Offset: '0x1f0'
     Size: '0x10'
@@ -747,19 +747,19 @@ MovieScene2DTransformSection:
   - Name: Translation
     Offset: '0xa0'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: Rotation
     Offset: '0x190'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: Scale
     Offset: '0x208'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: Shear
     Offset: '0x2f8'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   ClassSize: '0x350'
   FullSize: '0x3e8'
   InheritedSize: '0x98'
@@ -769,19 +769,19 @@ MovieSceneMarginSection:
   - Name: TopCurve
     Offset: '0xa0'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: LeftCurve
     Offset: '0x118'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: RightCurve
     Offset: '0x190'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: BottomCurve
     Offset: '0x208'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   ClassSize: '0x1e8'
   FullSize: '0x280'
   InheritedSize: '0x98'
@@ -809,7 +809,7 @@ MultiLineEditableText:
   - Name: WidgetStyle
     Offset: '0x170'
     Size: '0x160'
-    Type: struct
+    Type: struct TextBlockStyle
   - Name: Justification
     Offset: '0x2d0'
     Size: '0x1'
@@ -825,7 +825,7 @@ MultiLineEditableText:
   - Name: Font
     Offset: '0x2d8'
     Size: '0x40'
-    Type: struct
+    Type: struct SlateFontInfo
   - Name: OnTextChanged
     Offset: '0x318'
     Size: '0x10'
@@ -847,11 +847,11 @@ MultiLineEditableTextBox:
   - Name: WidgetStyle
     Offset: '0x170'
     Size: '0x860'
-    Type: struct
+    Type: struct EditableTextBoxStyle
   - Name: TextStyle
     Offset: '0x9d0'
     Size: '0x160'
-    Type: struct
+    Type: struct TextBlockStyle
   - Name: Style
     Offset: '0xb30'
     Size: '0x8'
@@ -871,19 +871,19 @@ MultiLineEditableTextBox:
   - Name: Font
     Offset: '0xb40'
     Size: '0x40'
-    Type: struct
+    Type: struct SlateFontInfo
   - Name: ForegroundColor
     Offset: '0xb80'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: BackgroundColor
     Offset: '0xb90'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: ReadOnlyForegroundColor
     Offset: '0xba0'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: OnTextChanged
     Offset: '0xbb0'
     Size: '0x10'
@@ -901,7 +901,7 @@ OverlaySlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: HorizontalAlignment
     Offset: '0x48'
     Size: '0x1'
@@ -943,7 +943,7 @@ ProgressBar:
   - Name: WidgetStyle
     Offset: '0x138'
     Size: '0x1b8'
-    Type: struct
+    Type: struct ProgressBarStyle
   - Name: Style
     Offset: '0x2f0'
     Size: '0x8'
@@ -979,7 +979,7 @@ ProgressBar:
   - Name: FillColorAndOpacity
     Offset: '0x328'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: FillColorAndOpacityDelegate
     Offset: '0x338'
     Size: '0x10'
@@ -997,7 +997,7 @@ PropertyBinding:
   - Name: SourcePath
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct DynamicPropertyPath
   - Name: DestinationProperty
     Offset: '0x40'
     Size: '0x8'
@@ -1019,11 +1019,11 @@ RichTextBlock:
   - Name: Font
     Offset: '0x180'
     Size: '0x40'
-    Type: struct
+    Type: struct SlateFontInfo
   - Name: Color
     Offset: '0x1c0'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: Justification
     Offset: '0x1d0'
     Size: '0x1'
@@ -1039,7 +1039,7 @@ RichTextBlock:
   - Name: Margin
     Offset: '0x1d8'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: LineHeightPercentage
     Offset: '0x1e8'
     Size: '0x4'
@@ -1083,7 +1083,7 @@ SafeZoneSlot:
   - Name: Padding
     Offset: '0x3c'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   ClassSize: '0x18'
   FullSize: '0x50'
   InheritedSize: '0x38'
@@ -1111,7 +1111,7 @@ ScaleBoxSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: HorizontalAlignment
     Offset: '0x48'
     Size: '0x1'
@@ -1129,7 +1129,7 @@ ScrollBar:
   - Name: WidgetStyle
     Offset: '0x138'
     Size: '0x518'
-    Type: struct
+    Type: struct ScrollBarStyle
   - Name: Style
     Offset: '0x650'
     Size: '0x8'
@@ -1145,7 +1145,7 @@ ScrollBar:
   - Name: Thickness
     Offset: '0x65c'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x548'
   FullSize: '0x680'
   InheritedSize: '0x138'
@@ -1155,11 +1155,11 @@ ScrollBox:
   - Name: WidgetStyle
     Offset: '0x150'
     Size: '0x248'
-    Type: struct
+    Type: struct ScrollBoxStyle
   - Name: WidgetBarStyle
     Offset: '0x398'
     Size: '0x518'
-    Type: struct
+    Type: struct ScrollBarStyle
   - Name: Style
     Offset: '0x8b0'
     Size: '0x8'
@@ -1183,7 +1183,7 @@ ScrollBox:
   - Name: ScrollbarThickness
     Offset: '0x8c4'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: AlwaysShowScrollbar
     Offset: '0x8cc'
     Size: '0x1'
@@ -1197,7 +1197,7 @@ ScrollBoxSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: HorizontalAlignment
     Offset: '0x48'
     Size: '0x1'
@@ -1265,7 +1265,7 @@ SizeBoxSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: HorizontalAlignment
     Offset: '0x48'
     Size: '0x1'
@@ -1291,7 +1291,7 @@ Slider:
   - Name: WidgetStyle
     Offset: '0x150'
     Size: '0x248'
-    Type: struct
+    Type: struct SliderStyle
   - Name: Orientation
     Offset: '0x398'
     Size: '0x1'
@@ -1299,11 +1299,11 @@ Slider:
   - Name: SliderBarColor
     Offset: '0x39c'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: SliderHandleColor
     Offset: '0x3ac'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: IndentHandle
     Offset: '0x3bc'
     Size: '0x1'
@@ -1333,7 +1333,7 @@ Spacer:
   - Name: Size
     Offset: '0x138'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x20'
   FullSize: '0x158'
   InheritedSize: '0x138'
@@ -1351,7 +1351,7 @@ SpinBox:
   - Name: WidgetStyle
     Offset: '0x150'
     Size: '0x318'
-    Type: struct
+    Type: struct SpinBoxStyle
   - Name: Style
     Offset: '0x468'
     Size: '0x8'
@@ -1367,7 +1367,7 @@ SpinBox:
   - Name: Font
     Offset: '0x478'
     Size: '0x40'
-    Type: struct
+    Type: struct SlateFontInfo
   - Name: MinDesiredWidth
     Offset: '0x4b8'
     Size: '0x4'
@@ -1383,7 +1383,7 @@ SpinBox:
   - Name: ForegroundColor
     Offset: '0x4c0'
     Size: '0x30'
-    Type: struct
+    Type: struct SlateColor
   - Name: OnValueChanged
     Offset: '0x4f0'
     Size: '0x10'
@@ -1453,7 +1453,7 @@ TextBlock:
   - Name: ColorAndOpacity
     Offset: '0x188'
     Size: '0x30'
-    Type: struct
+    Type: struct SlateColor
   - Name: ColorAndOpacityDelegate
     Offset: '0x1b8'
     Size: '0x10'
@@ -1461,15 +1461,15 @@ TextBlock:
   - Name: Font
     Offset: '0x1c8'
     Size: '0x40'
-    Type: struct
+    Type: struct SlateFontInfo
   - Name: ShadowOffset
     Offset: '0x208'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: ShadowColorAndOpacity
     Offset: '0x210'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: ShadowColorAndOpacityDelegate
     Offset: '0x220'
     Size: '0x10'
@@ -1493,7 +1493,7 @@ TextBlock:
   - Name: Margin
     Offset: '0x23c'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: LineHeightPercentage
     Offset: '0x24c'
     Size: '0x4'
@@ -1527,7 +1527,7 @@ Throbber:
   - Name: Image
     Offset: '0x148'
     Size: '0x90'
-    Type: struct
+    Type: struct SlateBrush
   ClassSize: '0xb8'
   FullSize: '0x1f0'
   InheritedSize: '0x138'
@@ -1573,7 +1573,7 @@ UniformGridPanel:
   - Name: SlotPadding
     Offset: '0x150'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: MinDesiredSlotWidth
     Offset: '0x160'
     Size: '0x4'
@@ -1613,7 +1613,7 @@ UserWidget:
   - Name: ColorAndOpacity
     Offset: '0x140'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: ColorAndOpacityDelegate
     Offset: '0x150'
     Size: '0x10'
@@ -1621,7 +1621,7 @@ UserWidget:
   - Name: ForegroundColor
     Offset: '0x160'
     Size: '0x30'
-    Type: struct
+    Type: struct SlateColor
   - Name: ForegroundColorDelegate
     Offset: '0x190'
     Size: '0x10'
@@ -1655,11 +1655,11 @@ VerticalBoxSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: Size
     Offset: '0x48'
     Size: '0x8'
-    Type: struct
+    Type: struct SlateChildSize
   - Name: HorizontalAlignment
     Offset: '0x50'
     Size: '0x1'
@@ -1677,7 +1677,7 @@ Viewport:
   - Name: BackgroundColor
     Offset: '0x150'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   ClassSize: '0x40'
   FullSize: '0x190'
   InheritedSize: '0x150'
@@ -1747,11 +1747,11 @@ Widget:
   - Name: RenderTransform
     Offset: '0xcc'
     Size: '0x1c'
-    Type: struct
+    Type: struct WidgetTransform
   - Name: RenderTransformPivot
     Offset: '0xe8'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Navigation
     Offset: '0xf0'
     Size: '0x8'
@@ -1821,11 +1821,11 @@ WidgetComponent:
   - Name: DrawSize
     Offset: '0x5d8'
     Size: '0x8'
-    Type: struct
+    Type: struct IntPoint
   - Name: Pivot
     Offset: '0x5e0'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: MaxInteractionDistance
     Offset: '0x5e8'
     Size: '0x4'
@@ -1837,7 +1837,7 @@ WidgetComponent:
   - Name: BackgroundColor
     Offset: '0x5f8'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: BlendMode
     Offset: '0x608'
     Size: '0x1'
@@ -1915,27 +1915,27 @@ WidgetNavigation:
   - Name: Up
     Offset: '0x28'
     Size: '0x14'
-    Type: struct
+    Type: struct WidgetNavigationData
   - Name: Down
     Offset: '0x3c'
     Size: '0x14'
-    Type: struct
+    Type: struct WidgetNavigationData
   - Name: Left
     Offset: '0x50'
     Size: '0x14'
-    Type: struct
+    Type: struct WidgetNavigationData
   - Name: Right
     Offset: '0x64'
     Size: '0x14'
-    Type: struct
+    Type: struct WidgetNavigationData
   - Name: Next
     Offset: '0x78'
     Size: '0x14'
-    Type: struct
+    Type: struct WidgetNavigationData
   - Name: Previous
     Offset: '0x8c'
     Size: '0x14'
-    Type: struct
+    Type: struct WidgetNavigationData
   ClassSize: '0x78'
   FullSize: '0xa0'
   InheritedSize: '0x28'
@@ -1955,7 +1955,7 @@ WidgetSwitcherSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: HorizontalAlignment
     Offset: '0x48'
     Size: '0x1'
@@ -1987,7 +1987,7 @@ WrapBox:
   - Name: InnerSlotPadding
     Offset: '0x150'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x20'
   FullSize: '0x170'
   InheritedSize: '0x150'
@@ -1997,7 +1997,7 @@ WrapBoxSlot:
   - Name: Padding
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct Margin
   - Name: bFillEmptySpace
     Offset: '0x48'
     Size: '0x1'

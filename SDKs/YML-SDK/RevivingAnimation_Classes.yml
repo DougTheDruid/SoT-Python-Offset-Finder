@@ -15,7 +15,7 @@ ReviveGhostAnimationDataAsset:
   - Name: Animations
     Offset: '0x28'
     Size: '0x28'
-    Type: struct
+    Type: struct ReviveGhostAnimations
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -25,7 +25,7 @@ ReviveGhostAnimationInstance:
   - Name: ReviveAnimations
     Offset: '0x448'
     Size: '0x28'
-    Type: struct
+    Type: struct ReviveGhostAnimations
   - Name: FullyInitialised
     Offset: '0x470'
     Size: '0x1'

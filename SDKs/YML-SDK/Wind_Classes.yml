@@ -41,7 +41,7 @@ WindSettings:
   - Name: WindParams
     Offset: '0x38'
     Size: '0x24'
-    Type: struct
+    Type: struct WindServiceParams
   ClassSize: '0x28'
   FullSize: '0x60'
   InheritedSize: '0x38'
@@ -51,11 +51,11 @@ WindZoneComponent:
   - Name: TurbulenceParams
     Offset: '0x2e8'
     Size: '0x70'
-    Type: struct
+    Type: struct WindTurbulenceParameters
   - Name: WindZoneParams
     Offset: '0x358'
     Size: '0x10'
-    Type: struct
+    Type: struct WindZoneParams
   ClassSize: '0x90'
   FullSize: '0x370'
   InheritedSize: '0x2e0'

@@ -1,27 +1,4 @@
 {
-  "SlateLoadingScreenImageParams": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "ImageAsset",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ImageTips",
-        "Type": "TArray<struct Text>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "AdvancedTips",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
   "EventAthenaLoadingScreenStateResponse": {
     "ClassSize": "0x1",
     "Attributes": [
@@ -29,6 +6,28 @@
         "Name": "IsVisible",
         "Type": "bool",
         "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventAthenaLoadingScreenBlockUntilUIIntialised": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Description",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventAthenaLoadingScreenBlockUntilUIIntialisedClear": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Description",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x0"
       }
     ]
@@ -68,13 +67,13 @@
       },
       {
         "Name": "Font",
-        "Type": "struct",
+        "Type": "struct SlateFontInfo",
         "Size": "0x40",
         "Offset": "0x48"
       },
       {
         "Name": "Colour",
-        "Type": "struct",
+        "Type": "struct SlateColor",
         "Size": "0x30",
         "Offset": "0x88"
       },
@@ -86,28 +85,6 @@
       }
     ]
   },
-  "EventAthenaLoadingScreenBlockUntilUIIntialised": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Description",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventAthenaLoadingScreenBlockUntilUIIntialisedClear": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Description",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "SlateLoadingScreenAdvancedTipsParams": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -116,6 +93,29 @@
         "Type": "TArray<struct SlateLoadingScreenAdvancedTipDescription>",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "SlateLoadingScreenImageParams": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "ImageAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ImageTips",
+        "Type": "TArray<struct Text>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "AdvancedTips",
+        "Type": "struct SlateLoadingScreenAdvancedTipsParams",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },

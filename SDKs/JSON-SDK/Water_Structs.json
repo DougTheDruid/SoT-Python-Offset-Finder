@@ -1,98 +1,10 @@
 {
-  "SplashProbe": {
-    "ClassSize": "0x128",
-    "Attributes": [
-      {
-        "Name": "Probe",
-        "Type": "struct",
-        "Size": "0xd8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ProbeSamplingTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "TimeBetweenProbeVfx",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xe4"
-      },
-      {
-        "Name": "ParticleSystem",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "UnderwaterUsage",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "SpawnAttached",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xf1"
-      },
-      {
-        "Name": "AttachToWaterSurface",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xf2"
-      },
-      {
-        "Name": "SplashAttachType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xf3"
-      },
-      {
-        "Name": "VfxSpawnOffset",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0xf4"
-      },
-      {
-        "Name": "Enabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "CurrentlyPlayingVFX",
-        "Type": "class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x108"
-      }
-    ]
-  },
-  "WaterInformation": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "WaterType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CanSwim",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "BuoyancyVolumeSample": {
     "ClassSize": "0x58",
     "Attributes": [
       {
         "Name": "Offset",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
@@ -164,20 +76,84 @@
       }
     ]
   },
-  "EventCurrentWaterPlaneChange": {
+  "BuoyancyDragSample": {
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "Offset",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Normal",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "Tangent",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "DragCoefficient",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Type",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "WaterInformation": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "FormerWaterPlane",
-        "Type": "class BaseWaterComponent*",
+        "Name": "WaterType",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "NewWaterPlane",
-        "Type": "class BaseWaterComponent*",
-        "Size": "0x8",
+        "Name": "CanSwim",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "WaterSpout": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "SpoutLocatorTransform",
+        "Type": "struct Transform",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SpoutParticleSystem",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "SplashParticleSystem",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x38"
       }
     ]
   },
@@ -192,7 +168,7 @@
       },
       {
         "Name": "LocalOffset",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x18"
       },
@@ -228,7 +204,7 @@
       },
       {
         "Name": "LocalOffsetAdjustment",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x38"
       },
@@ -258,26 +234,20 @@
       }
     ]
   },
-  "WaterSpout": {
-    "ClassSize": "0x70",
+  "EventCurrentWaterPlaneChange": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "SpoutLocatorTransform",
-        "Type": "struct",
-        "Size": "0x30",
+        "Name": "FormerWaterPlane",
+        "Type": "class BaseWaterComponent*",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "SpoutParticleSystem",
-        "Type": "class ParticleSystemComponent*",
+        "Name": "NewWaterPlane",
+        "Type": "class BaseWaterComponent*",
         "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "SplashParticleSystem",
-        "Type": "class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x38"
+        "Offset": "0x8"
       }
     ]
   },
@@ -286,7 +256,7 @@
     "Attributes": [
       {
         "Name": "SampleOffset",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
@@ -309,13 +279,13 @@
       },
       {
         "Name": "Choppiness",
-        "Type": "struct",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x4"
       },
       {
         "Name": "Normal",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
@@ -324,47 +294,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "BuoyancyDragSample": {
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "Offset",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Normal",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "Tangent",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "DragCoefficient",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Type",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x2c"
       }
     ]
   },
@@ -459,6 +388,77 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x40"
+      }
+    ]
+  },
+  "SplashProbe": {
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Name": "Probe",
+        "Type": "struct WaterSplashProbe",
+        "Size": "0xd8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ProbeSamplingTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "TimeBetweenProbeVfx",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe4"
+      },
+      {
+        "Name": "ParticleSystem",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "UnderwaterUsage",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "SpawnAttached",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xf1"
+      },
+      {
+        "Name": "AttachToWaterSurface",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xf2"
+      },
+      {
+        "Name": "SplashAttachType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xf3"
+      },
+      {
+        "Name": "VfxSpawnOffset",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xf4"
+      },
+      {
+        "Name": "Enabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "CurrentlyPlayingVFX",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x108"
       }
     ]
   },

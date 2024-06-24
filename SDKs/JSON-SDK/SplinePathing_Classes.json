@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "ObjectMessageDispatcher",
-        "Type": "struct",
+        "Type": "struct ObjectMessagingDispatcher",
         "Size": "0xa0",
         "Offset": "0x3d0"
       },

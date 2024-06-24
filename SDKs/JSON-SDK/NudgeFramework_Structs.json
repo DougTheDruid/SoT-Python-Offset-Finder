@@ -1,4 +1,21 @@
 {
+  "TrinketNudgeProgress": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TrinketRoot",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Curve",
+        "Type": "class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
   "NudgeInterpolationParams": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -31,23 +48,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "TrinketNudgeProgress": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "TrinketRoot",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Curve",
-        "Type": "class CurveFloat*",
-        "Size": "0x8",
-        "Offset": "0x20"
       }
     ]
   },

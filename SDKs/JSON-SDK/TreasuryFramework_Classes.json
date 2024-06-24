@@ -85,7 +85,7 @@
       },
       {
         "Name": "SunkenTreasuryAvailabilityParamsAssetFileLocation",
-        "Type": "struct",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x460"
       },
@@ -175,7 +175,7 @@
       },
       {
         "Name": "VaultOpenStat",
-        "Type": "struct",
+        "Type": "struct PlayerStat",
         "Size": "0x4",
         "Offset": "0x508"
       },
@@ -217,7 +217,7 @@
       },
       {
         "Name": "EventDispatcher",
-        "Type": "struct",
+        "Type": "struct ObjectMessagingDispatcher",
         "Size": "0xa0",
         "Offset": "0x558"
       }
@@ -243,7 +243,7 @@
       },
       {
         "Name": "AvailabilityParamsAssetFileLocation",
-        "Type": "struct",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x520"
       },

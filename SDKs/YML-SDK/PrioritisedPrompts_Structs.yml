@@ -5,7 +5,7 @@ PermanentPromptNetworkEvent:
   - Name: Prompt
     Offset: '0x18'
     Size: '0x70'
-    Type: struct
+    Type: struct PrioritisedPromptWithHandle
   - Name: StartOrStop
     Offset: '0x88'
     Size: '0x1'
@@ -54,18 +54,18 @@ PrioritisedPromptHandle:
   - Name: Id
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 PrioritisedPromptWithHandle:
   Attributes:
   - Name: PromptHandle
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct PrioritisedPromptHandle
   - Name: Prompt
     Offset: '0x10'
     Size: '0x60'
-    Type: struct
+    Type: struct PrioritisedPrompt
   ClassSize: '0x70'
 PromptEvaluation:
   Attributes:
@@ -76,7 +76,7 @@ PromptEvaluation:
   - Name: Prompt
     Offset: '0x8'
     Size: '0x70'
-    Type: struct
+    Type: struct PrioritisedPromptWithHandle
   ClassSize: '0x78'
 PromptsCounterIncrementEvent:
   Attributes:

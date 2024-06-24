@@ -160,7 +160,7 @@
       },
       {
         "Name": "LPVWorldRef",
-        "Type": "struct",
+        "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0x40"
       }

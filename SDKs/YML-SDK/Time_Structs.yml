@@ -28,29 +28,29 @@ GameTime:
   - Name: DateTimeRepresentation
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct DateTime
   ClassSize: '0x8'
 GameTimeRange:
   Attributes:
   - Name: Start
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct GameTime
   - Name: End
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct GameTime
   ClassSize: '0x10'
 ReplicatedAuthoritativeTime:
   Attributes:
   - Name: WorldTime
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct ReplicatedDateTime
   - Name: SyncTime
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct ReplicatedDateTime
   ClassSize: '0x10'
 ReplicatedDateTime:
   Attributes:

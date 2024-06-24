@@ -1,35 +1,24 @@
 {
-  "ClueSiteLootRestriction": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SiteType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LootMax",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "WeightedClueDescriptor": {
+  "LandClueCreationChoice": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Descriptor",
+        "Name": "ClueSiteType",
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "DifficultyWeightings",
-        "Type": "TArray<float>",
-        "Size": "0x10",
+        "Name": "IslandIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "ClueCreator",
+        "Type": "class LandClueCreator*",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },
@@ -84,69 +73,12 @@
       }
     ]
   },
-  "LootSpawnedAtClueSite": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "SiteType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SiteLocation",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "NumLoot",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "LootToRangeDist": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "NumberOfLootItemsToSpawn",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WeightedLootDescAsset",
-        "Type": "class WeightedTreasureChestDescAsset*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "EventClueObtained": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ObtainedClue",
-        "Type": "class ClueDescriptor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ObtainedSiteType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "DebrisToRangeDist": {
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "NumberOfDebrisItemsToSpawn",
-        "Type": "struct",
+        "Type": "struct WeightedProbabilityRange",
         "Size": "0x20",
         "Offset": "0x0"
       },
@@ -155,6 +87,23 @@
         "Type": "class WeightedDebrisDataAsset*",
         "Size": "0x8",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "ClueSiteLootRestriction": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SiteType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LootMax",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
       }
     ]
   },
@@ -175,9 +124,66 @@
       },
       {
         "Name": "Location",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "LootSpawnedAtClueSite": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "SiteType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SiteLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "NumLoot",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "WeightedClueDescriptor": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Descriptor",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DifficultyWeightings",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "LootToRangeDist": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "NumberOfLootItemsToSpawn",
+        "Type": "struct WeightedProbabilityRange",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WeightedLootDescAsset",
+        "Type": "class WeightedTreasureChestDescAsset*",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },
@@ -198,26 +204,20 @@
       }
     ]
   },
-  "LandClueCreationChoice": {
-    "ClassSize": "0x18",
+  "EventClueObtained": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "ClueSiteType",
-        "Type": "class UClass*",
+        "Name": "ObtainedClue",
+        "Type": "class ClueDescriptor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "IslandIdentifier",
-        "Type": "struct FName",
+        "Name": "ObtainedSiteType",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x8"
-      },
-      {
-        "Name": "ClueCreator",
-        "Type": "class LandClueCreator*",
-        "Size": "0x8",
-        "Offset": "0x10"
       }
     ]
   },

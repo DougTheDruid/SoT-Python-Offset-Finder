@@ -5,7 +5,7 @@ CompassTargetSet:
   - Name: TargetLocation
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0xc'
 RotatingCompassAudioParams:
   Attributes:

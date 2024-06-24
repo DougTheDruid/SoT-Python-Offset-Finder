@@ -43,7 +43,7 @@ StructSerializerBuiltinTestStruct:
   - Name: Guid
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Name
     Offset: '0x10'
     Size: '0x8'
@@ -55,11 +55,11 @@ StructSerializerBuiltinTestStruct:
   - Name: Rotator
     Offset: '0x28'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: Vector
     Offset: '0x34'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x40'
 StructSerializerNumericTestStruct:
   Attributes:
@@ -120,21 +120,21 @@ StructSerializerTestStruct:
   - Name: Numerics
     Offset: '0x0'
     Size: '0x30'
-    Type: struct
+    Type: struct StructSerializerNumericTestStruct
   - Name: Booleans
     Offset: '0x30'
     Size: '0x8'
-    Type: struct
+    Type: struct StructSerializerBooleanTestStruct
   - Name: Objects
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct StructSerializerObjectTestStruct
   - Name: Builtins
     Offset: '0x48'
     Size: '0x40'
-    Type: struct
+    Type: struct StructSerializerBuiltinTestStruct
   - Name: Arrays
     Offset: '0x88'
     Size: '0x40'
-    Type: struct
+    Type: struct StructSerializerArrayTestStruct
   ClassSize: '0xc8'

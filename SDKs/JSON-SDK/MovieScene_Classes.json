@@ -1,32 +1,4 @@
 {
-  "MovieSceneSignedObject": {
-    "Super": "Object",
-    "FullSize": "0x80",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "Signature",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "MovieSceneBindingOverrides": {
-    "Super": "Object",
-    "FullSize": "0x98",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "BindingData",
-        "Type": "TArray<struct MovieSceneBindingOverrideData>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "MovieSceneFolder": {
     "Super": "Object",
     "FullSize": "0x70",
@@ -56,6 +28,20 @@
         "Type": "TArray<String>",
         "Size": "0x10",
         "Offset": "0x50"
+      }
+    ]
+  },
+  "MovieSceneSignedObject": {
+    "Super": "Object",
+    "FullSize": "0x80",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "Signature",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },
@@ -133,7 +119,7 @@
       },
       {
         "Name": "PlaybackSettings",
-        "Type": "struct",
+        "Type": "struct MovieSceneSequencePlaybackSettings",
         "Size": "0x28",
         "Offset": "0x3f0"
       },
@@ -145,59 +131,17 @@
       }
     ]
   },
-  "MovieSceneSection": {
-    "Super": "MovieSceneSignedObject",
+  "MovieSceneBindingOverrides": {
+    "Super": "Object",
     "FullSize": "0x98",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x18",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "EvalOptions",
-        "Type": "struct",
-        "Size": "0x2",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "StartTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x84"
-      },
-      {
-        "Name": "EndTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "RowIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8c"
-      },
-      {
-        "Name": "OverlapPriority",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "bIsActive",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x94"
-      },
-      {
-        "Name": "bIsLocked",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x94"
-      },
-      {
-        "Name": "bIsInfinite",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x94"
+        "Name": "BindingData",
+        "Type": "TArray<struct MovieSceneBindingOverrideData>",
+        "Size": "0x10",
+        "Offset": "0x30"
       }
     ]
   },
@@ -209,7 +153,7 @@
     "Attributes": [
       {
         "Name": "EvalOptions",
-        "Type": "struct",
+        "Type": "struct MovieSceneTrackEvalOptions",
         "Size": "0x4",
         "Offset": "0x80"
       }
@@ -253,13 +197,13 @@
       },
       {
         "Name": "SelectionRange",
-        "Type": "struct",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
         "Name": "PlaybackRange",
-        "Type": "struct",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0xd8"
       },
@@ -309,13 +253,13 @@
     "Attributes": [
       {
         "Name": "EvaluationTemplate",
-        "Type": "struct",
+        "Type": "struct CachedMovieSceneEvaluationTemplate",
         "Size": "0x220",
         "Offset": "0x80"
       },
       {
         "Name": "TemplateParameters",
-        "Type": "struct",
+        "Type": "struct MovieSceneTrackCompilationParams",
         "Size": "0x1",
         "Offset": "0x2a0"
       },
@@ -324,6 +268,62 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x2a1"
+      }
+    ]
+  },
+  "MovieSceneSection": {
+    "Super": "MovieSceneSignedObject",
+    "FullSize": "0x98",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "EvalOptions",
+        "Type": "struct MovieSceneSectionEvalOptions",
+        "Size": "0x2",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "StartTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "EndTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "RowIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "OverlapPriority",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "bIsActive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x94"
+      },
+      {
+        "Name": "bIsLocked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x94"
+      },
+      {
+        "Name": "bIsInfinite",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x94"
       }
     ]
   },

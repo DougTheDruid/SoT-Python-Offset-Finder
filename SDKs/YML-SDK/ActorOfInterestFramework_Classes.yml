@@ -19,7 +19,7 @@ ActorOfInterestService:
   - Name: EventDispatcher
     Offset: '0x428'
     Size: '0xa0'
-    Type: struct
+    Type: struct ObjectMessagingDispatcher
   ClassSize: '0x100'
   FullSize: '0x4c8'
   InheritedSize: '0x3c8'

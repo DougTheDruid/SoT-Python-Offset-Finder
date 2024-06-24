@@ -29,7 +29,7 @@ ComplexItemQualityEntry:
   - Name: EmissaryLevelIncreaseOverride
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct EmissaryLevelIncreaseOverrideData
   - Name: Rarity
     Offset: '0x10'
     Size: '0x8'

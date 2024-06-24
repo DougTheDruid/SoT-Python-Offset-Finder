@@ -1,50 +1,4 @@
 {
-  "ServerMigrationSerialisationDetailsTestsUStruct": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "FloatWithNoMarkup",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UInt16WithMigrationMarkup",
-        "Type": "uint16",
-        "Size": "0x2",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "UInt16WithNotReplicatedMarkup",
-        "Type": "uint16",
-        "Size": "0x2",
-        "Offset": "0x6"
-      },
-      {
-        "Name": "UInt16WithMigrationAndNotReplicatedMarkup",
-        "Type": "uint16",
-        "Size": "0x2",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "ClientSettings": {
-    "ClassSize": "0x2",
-    "Attributes": [
-      {
-        "Name": "FailToConnectToServer",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PauseMigrationBeforeOwnershipTransfer",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
-      }
-    ]
-  },
   "ServerSettings": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -71,6 +25,52 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x4"
+      }
+    ]
+  },
+  "ClientSettings": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Name": "FailToConnectToServer",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PauseMigrationBeforeOwnershipTransfer",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      }
+    ]
+  },
+  "ServerMigrationSerialisationDetailsTestsUStruct": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "FloatWithNoMarkup",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UInt16WithMigrationMarkup",
+        "Type": "uint16",
+        "Size": "0x2",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "UInt16WithNotReplicatedMarkup",
+        "Type": "uint16",
+        "Size": "0x2",
+        "Offset": "0x6"
+      },
+      {
+        "Name": "UInt16WithMigrationAndNotReplicatedMarkup",
+        "Type": "uint16",
+        "Size": "0x2",
+        "Offset": "0x8"
       }
     ]
   },

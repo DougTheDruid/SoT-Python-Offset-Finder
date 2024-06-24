@@ -1,4 +1,56 @@
 {
+  "InstancedRopeComponent": {
+    "Super": "PrimitiveComponent",
+    "FullSize": "0x690",
+    "InheritedSize": "0x5d0",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "StaticMesh",
+        "Type": "class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "Ropes",
+        "Type": "TArray<struct InstancedRopeParams>",
+        "Size": "0x10",
+        "Offset": "0x5d0"
+      },
+      {
+        "Name": "ShadowLOD",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5e0"
+      }
+    ]
+  },
+  "RiggingSystemComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x320",
+    "InheritedSize": "0x2e0",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "RopeStyle",
+        "Type": "struct RopeStyleParams",
+        "Size": "0x20",
+        "Offset": "0x2e0"
+      },
+      {
+        "Name": "LineGroups",
+        "Type": "TArray<struct RiggingSystemLineGroup>",
+        "Size": "0x10",
+        "Offset": "0x300"
+      },
+      {
+        "Name": "Impl",
+        "Type": "class RiggingSystem*",
+        "Size": "0x8",
+        "Offset": "0x310"
+      }
+    ]
+  },
   "RiggingSystem": {
     "Super": "Actor",
     "FullSize": "0x518",
@@ -37,7 +89,7 @@
       },
       {
         "Name": "Pulleys",
-        "Type": "struct",
+        "Type": "struct RiggingSystemPulleyData",
         "Size": "0x60",
         "Offset": "0x410"
       },
@@ -55,32 +107,6 @@
       }
     ]
   },
-  "InstancedRopeComponent": {
-    "Super": "PrimitiveComponent",
-    "FullSize": "0x690",
-    "InheritedSize": "0x5d0",
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "StaticMesh",
-        "Type": "class StaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x5c8"
-      },
-      {
-        "Name": "Ropes",
-        "Type": "TArray<struct InstancedRopeParams>",
-        "Size": "0x10",
-        "Offset": "0x5d0"
-      },
-      {
-        "Name": "ShadowLOD",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5e0"
-      }
-    ]
-  },
   "MaterialExpressionRopeParameter": {
     "Super": "MaterialExpression",
     "FullSize": "0x78",
@@ -92,32 +118,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x70"
-      }
-    ]
-  },
-  "RiggingSystemComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x320",
-    "InheritedSize": "0x2e0",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "RopeStyle",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x2e0"
-      },
-      {
-        "Name": "LineGroups",
-        "Type": "TArray<struct RiggingSystemLineGroup>",
-        "Size": "0x10",
-        "Offset": "0x300"
-      },
-      {
-        "Name": "Impl",
-        "Type": "class RiggingSystem*",
-        "Size": "0x8",
-        "Offset": "0x310"
       }
     ]
   },

@@ -1,33 +1,11 @@
 {
-  "ConditionFromAsset": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ConditionAsset",
-        "Type": "class ConditionRootAsset*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "ConditionContextPayloadSelectorBase": {
+  "IsFeatureEnabledCondition": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "PayloadTarget",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "WorldObjectConditionContextPayload": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "WorldObject",
-        "Type": "class World*",
-        "Size": "0x8",
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
         "Offset": "0x8"
       }
     ]
@@ -49,12 +27,23 @@
       }
     ]
   },
-  "TargetConditionContextPayload": {
+  "TargetedPayloadConditionBase": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "PayloadSelector",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
+        "Size": "0x20",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ConditionFromAsset": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Target",
-        "Type": "class Actor*",
+        "Name": "ConditionAsset",
+        "Type": "class ConditionRootAsset*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -76,48 +65,26 @@
     "Attributes": [
       {
         "Name": "SpecifyingActorPayloadSelector",
-        "Type": "struct",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
         "Size": "0x20",
         "Offset": "0x8"
       },
       {
         "Name": "TargetActorPayloadSelector",
-        "Type": "struct",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
         "Size": "0x20",
         "Offset": "0x28"
       }
     ]
   },
-  "AndCondition": {
-    "ClassSize": "0x18",
+  "InstigatorConditionContextPayload": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Conditions",
-        "Type": "TArray<struct ConditionInstance>",
-        "Size": "0x10",
+        "Name": "Instigator",
+        "Type": "class Actor*",
+        "Size": "0x8",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "TargetedPayloadConditionBase": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "PayloadSelector",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "IsGameOnSpecificPlayModeVariantCondition": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "TargetMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x28"
       }
     ]
   },
@@ -126,19 +93,19 @@
     "Attributes": [
       {
         "Name": "Condition",
-        "Type": "struct",
+        "Type": "struct ConditionInstance",
         "Size": "0x20",
         "Offset": "0x8"
       }
     ]
   },
-  "IsFeatureEnabledCondition": {
-    "ClassSize": "0x18",
+  "WorldObjectConditionContextPayload": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Feature",
-        "Type": "struct",
-        "Size": "0xc",
+        "Name": "WorldObject",
+        "Type": "class World*",
+        "Size": "0x8",
         "Offset": "0x8"
       }
     ]
@@ -154,11 +121,22 @@
       }
     ]
   },
-  "InstigatorConditionContextPayload": {
+  "AndCondition": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Conditions",
+        "Type": "TArray<struct ConditionInstance>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "TargetConditionContextPayload": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Instigator",
+        "Name": "Target",
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
@@ -173,6 +151,28 @@
         "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "IsGameOnSpecificPlayModeVariantCondition": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TargetMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ConditionContextPayloadSelectorBase": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PayloadTarget",
+        "Type": "struct ConditionContextPayloadTarget",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },

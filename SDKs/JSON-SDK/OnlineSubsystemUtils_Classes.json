@@ -1,21 +1,41 @@
 {
-  "OnlineSessionClient": {
-    "Super": "OnlineSession",
-    "FullSize": "0x178",
+  "InAppPurchaseCallbackProxy": {
+    "Super": "Object",
+    "FullSize": "0x88",
     "InheritedSize": "0x28",
-    "ClassSize": "0x150",
+    "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "bIsFromInvite",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x170"
+        "Name": "OnSuccess",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x28"
       },
       {
-        "Name": "bHandlingDisconnect",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x171"
+        "Name": "OnFailure",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "AchievementQueryCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "OnSuccess",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OnFailure",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x38"
       }
     ]
   },
@@ -59,66 +79,6 @@
       }
     ]
   },
-  "ShowLoginUICallbackProxy": {
-    "Super": "BlueprintAsyncActionBase",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "OnSuccess",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "OnFailure",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "DestroySessionCallbackProxy": {
-    "Super": "OnlineBlueprintCallProxyBase",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "OnSuccess",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "OnFailure",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "CreateSessionCallbackProxy": {
-    "Super": "OnlineBlueprintCallProxyBase",
-    "FullSize": "0x80",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "OnSuccess",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "OnFailure",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "AchievementWriteCallbackProxy": {
     "Super": "OnlineBlueprintCallProxyBase",
     "FullSize": "0x80",
@@ -139,11 +99,11 @@
       }
     ]
   },
-  "InAppPurchaseCallbackProxy": {
-    "Super": "Object",
-    "FullSize": "0x88",
+  "ShowLoginUICallbackProxy": {
+    "Super": "BlueprintAsyncActionBase",
+    "FullSize": "0x58",
     "InheritedSize": "0x28",
-    "ClassSize": "0x60",
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "OnSuccess",
@@ -159,7 +119,27 @@
       }
     ]
   },
-  "InAppPurchaseQueryCallbackProxy": {
+  "ConnectionCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "OnSuccess",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OnFailure",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "InAppPurchaseRestoreCallbackProxy": {
     "Super": "Object",
     "FullSize": "0x98",
     "InheritedSize": "0x28",
@@ -179,69 +159,23 @@
       }
     ]
   },
-  "LeaderboardFlushCallbackProxy": {
-    "Super": "Object",
-    "FullSize": "0x60",
+  "OnlineSessionClient": {
+    "Super": "OnlineSession",
+    "FullSize": "0x178",
     "InheritedSize": "0x28",
-    "ClassSize": "0x38",
+    "ClassSize": "0x150",
     "Attributes": [
       {
-        "Name": "OnSuccess",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Name": "bIsFromInvite",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x170"
       },
       {
-        "Name": "OnFailure",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "OnlineBeaconHostObject": {
-    "Super": "Actor",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "BeaconTypeName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "ClientBeaconActorClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "ClientActors",
-        "Type": "TArray<class OnlineBeaconClient*>",
-        "Size": "0x10",
-        "Offset": "0x3e0"
-      }
-    ]
-  },
-  "AchievementQueryCallbackProxy": {
-    "Super": "OnlineBlueprintCallProxyBase",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "OnSuccess",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "OnFailure",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x38"
+        "Name": "bHandlingDisconnect",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x171"
       }
     ]
   },
@@ -271,31 +205,11 @@
       }
     ]
   },
-  "EndMatchCallbackProxy": {
+  "FindTurnBasedMatchCallbackProxy": {
     "Super": "OnlineBlueprintCallProxyBase",
-    "FullSize": "0x78",
+    "FullSize": "0x88",
     "InheritedSize": "0x28",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "OnSuccess",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "OnFailure",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "LeaderboardQueryCallbackProxy": {
-    "Super": "Object",
-    "FullSize": "0x90",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x68",
+    "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "OnSuccess",
@@ -367,11 +281,77 @@
       }
     ]
   },
-  "FindTurnBasedMatchCallbackProxy": {
+  "CreateSessionCallbackProxy": {
     "Super": "OnlineBlueprintCallProxyBase",
-    "FullSize": "0x88",
+    "FullSize": "0x80",
     "InheritedSize": "0x28",
-    "ClassSize": "0x60",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "OnSuccess",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OnFailure",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "InAppPurchaseQueryCallbackProxy": {
+    "Super": "Object",
+    "FullSize": "0x98",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "OnSuccess",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OnFailure",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "OnlineBeaconHostObject": {
+    "Super": "Actor",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "BeaconTypeName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "ClientBeaconActorClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "ClientActors",
+        "Type": "TArray<class OnlineBeaconClient*>",
+        "Size": "0x10",
+        "Offset": "0x3e0"
+      }
+    ]
+  },
+  "LeaderboardFlushCallbackProxy": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "OnSuccess",
@@ -392,6 +372,46 @@
     "FullSize": "0x88",
     "InheritedSize": "0x28",
     "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "OnSuccess",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OnFailure",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "DestroySessionCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "OnSuccess",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OnFailure",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "EndMatchCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
     "Attributes": [
       {
         "Name": "OnSuccess",
@@ -433,6 +453,26 @@
       }
     ]
   },
+  "QuitMatchCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "OnSuccess",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OnFailure",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "JoinSessionCallbackProxy": {
     "Super": "OnlineBlueprintCallProxyBase",
     "FullSize": "0x158",
@@ -453,51 +493,11 @@
       }
     ]
   },
-  "InAppPurchaseRestoreCallbackProxy": {
+  "LeaderboardQueryCallbackProxy": {
     "Super": "Object",
-    "FullSize": "0x98",
+    "FullSize": "0x90",
     "InheritedSize": "0x28",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "OnSuccess",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "OnFailure",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "ConnectionCallbackProxy": {
-    "Super": "OnlineBlueprintCallProxyBase",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "OnSuccess",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "OnFailure",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "QuitMatchCallbackProxy": {
-    "Super": "OnlineBlueprintCallProxyBase",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
+    "ClassSize": "0x68",
     "Attributes": [
       {
         "Name": "OnSuccess",
@@ -599,7 +599,7 @@
       },
       {
         "Name": "PendingReservation",
-        "Type": "struct",
+        "Type": "struct PartyReservation",
         "Size": "0x30",
         "Offset": "0x438"
       },

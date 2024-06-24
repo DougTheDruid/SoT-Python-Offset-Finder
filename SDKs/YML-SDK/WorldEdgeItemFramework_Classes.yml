@@ -9,7 +9,7 @@ WorldEdgeItemService:
   - Name: SpawnItemEQSRequest
     Offset: '0x3d8'
     Size: '0x170'
-    Type: struct
+    Type: struct EnvQueryRequest
   ClassSize: '0x258'
   FullSize: '0x620'
   InheritedSize: '0x3c8'

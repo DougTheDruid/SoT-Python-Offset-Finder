@@ -30,7 +30,16 @@ public:
 	bool                                                         DisableAfterPlayThrough;                           // 0x330(0x1)
 	bool                                                         ActivateOnBeginPlay;                               // 0x331(0x1)
 	multicastinlinedelegate                                      OnMusicZoneStarted;                                // 0x338(0x10)
-	struct                                                       EmitterRemoteValues;                               // 0x370(0x20)
+	struct MusicZoneRemoteValues                                 EmitterRemoteValues;                               // 0x370(0x20)
+};
+
+
+// Size 0x30 (Full Size[0x400] - InheritedSize[0x3d0]
+class SynchedMusicZoneComponent: public MusicZoneComponent
+{
+public:
+	float                                                        StartDelayTime;                                    // 0x3c8(0x4)
+	int                                                          PlayFromStartTimeMS;                               // 0x3cc(0x4)
 };
 
 
@@ -42,15 +51,6 @@ public:
 	class AISpawner*                                             AISpawner;                                         // 0x3d0(0x8)
 	TArray<class Pawn*>                                          SpawnerPawns;                                      // 0x3d8(0x10)
 	char                                                         SpawnerState;                                      // 0x3e8(0x1)
-};
-
-
-// Size 0x30 (Full Size[0x400] - InheritedSize[0x3d0]
-class SynchedMusicZoneComponent: public MusicZoneComponent
-{
-public:
-	float                                                        StartDelayTime;                                    // 0x3c8(0x4)
-	int                                                          PlayFromStartTimeMS;                               // 0x3cc(0x4)
 };
 
 

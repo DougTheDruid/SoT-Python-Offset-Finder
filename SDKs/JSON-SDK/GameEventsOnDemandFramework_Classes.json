@@ -1,4 +1,36 @@
 {
+  "GameEventOnDemandAvailabilityHandler": {
+    "Super": "Object",
+    "FullSize": "0x178",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x150",
+    "Attributes": [
+      {
+        "Name": "AvailabilityParamsAsset",
+        "Type": "class GameEventAvailabilityParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "AvailabilityStateTracker",
+        "Type": "class GameEventOnDemandAvailabilityStateTracker*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "GameEventType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "CompletedState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xa0"
+      }
+    ]
+  },
   "GameEventAvailabilityParamsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x90",
@@ -7,13 +39,13 @@
     "Attributes": [
       {
         "Name": "MatchmakingCooldownRanges",
-        "Type": "struct",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x28"
       },
       {
         "Name": "CrewsJoinedOnDemandLimitRange",
-        "Type": "struct",
+        "Type": "struct WeightedProbabilityRange",
         "Size": "0x20",
         "Offset": "0x58"
       },
@@ -90,38 +122,6 @@
         "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0xc8"
-      }
-    ]
-  },
-  "GameEventOnDemandAvailabilityHandler": {
-    "Super": "Object",
-    "FullSize": "0x178",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x150",
-    "Attributes": [
-      {
-        "Name": "AvailabilityParamsAsset",
-        "Type": "class GameEventAvailabilityParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "AvailabilityStateTracker",
-        "Type": "class GameEventOnDemandAvailabilityStateTracker*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "GameEventType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "CompletedState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xa0"
       }
     ]
   },

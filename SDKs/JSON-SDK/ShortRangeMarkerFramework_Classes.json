@@ -1,4 +1,24 @@
 {
+  "ShortRangeMarkerDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "RewardMarker",
+        "Type": "class ActorSpawnData*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "RewardMarkerHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "ShortRangeMarker": {
     "Super": "Actor",
     "FullSize": "0x420",
@@ -40,26 +60,6 @@
         "Type": "TArray<uintptr_t>",
         "Size": "0x10",
         "Offset": "0x410"
-      }
-    ]
-  },
-  "ShortRangeMarkerDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RewardMarker",
-        "Type": "class ActorSpawnData*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "RewardMarkerHeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
       }
     ]
   },

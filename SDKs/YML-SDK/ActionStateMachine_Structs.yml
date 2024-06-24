@@ -88,22 +88,22 @@ ResetStateMachineRpc:
   - Name: LatestEpochIds
     Offset: '0x0'
     Size: '0x1'
-    Type: struct
+    Type: struct ActionStateChangeRequestId
   - Name: LatestRequestIds
     Offset: '0x5'
     Size: '0x1'
-    Type: struct
+    Type: struct ActionStateChangeRequestId
   - Name: PerTrackConstructionInfoStore
     Offset: '0x10'
     Size: '0x140'
-    Type: struct
+    Type: struct SerialisedConstructionInfoStore
   ClassSize: '0x150'
 SerialisedConstructionInfoStore:
   Attributes:
   - Name: SerialisedConstructionInfo
     Offset: '0x0'
     Size: '0x40'
-    Type: struct
+    Type: struct SerialisedActionStateInfo
   ClassSize: '0x140'
 TestActionStateConstructionInfo:
   Attributes:
@@ -121,7 +121,7 @@ TestActionStateConstructionInfoWithInner:
   - Name: InnerStruct
     Offset: '0x30'
     Size: '0x18'
-    Type: struct
+    Type: struct InnerTestStruct
   ClassSize: '0x48'
 TestActionStateConstructionInfoWithObjPointers:
   Attributes:
@@ -132,7 +132,7 @@ TestActionStateConstructionInfoWithObjPointers:
   - Name: Inner
     Offset: '0x30'
     Size: '0x8'
-    Type: struct
+    Type: struct InnerWithObjTestStruct
   - Name: Array
     Offset: '0x38'
     Size: '0x10'

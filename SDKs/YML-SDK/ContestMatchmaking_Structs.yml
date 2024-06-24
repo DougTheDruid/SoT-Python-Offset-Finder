@@ -5,11 +5,11 @@ ClientMatchmakingResponseModel:
   - Name: EstimatedWaitTime
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   - Name: RetryAfter
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   ClassSize: '0x10'
 ContestMatchmakingFactionMapEntry:
   Attributes:
@@ -27,7 +27,7 @@ ContestMatchmakingServerRequestModel:
   - Name: ServerId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: ServerAddress
     Offset: '0x10'
     Size: '0x10'
@@ -71,18 +71,18 @@ ContestMatchmakingServerRequestModel:
   - Name: RequestCorrelationId
     Offset: '0x9c'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: SaferSeasServerIdOverride
     Offset: '0xac'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0xc0'
 ExistingServerCrewModel:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: SessionType
     Offset: '0x10'
     Size: '0x4'
@@ -98,7 +98,7 @@ ExistingServerCrewModel:
   - Name: TimeInMatchmaking
     Offset: '0x20'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   - Name: ForcedStamp
     Offset: '0x28'
     Size: '0x10'
@@ -106,7 +106,7 @@ ExistingServerCrewModel:
   - Name: GuildId
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: CrewMemberUserIds
     Offset: '0x48'
     Size: '0x10'
@@ -184,15 +184,15 @@ ServerCrewModel:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: UserId
     Offset: '0x10'
     Size: '0x18'
-    Type: struct
+    Type: struct UniqueNetIdRepl
   - Name: ServerId
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: ServerAddress
     Offset: '0x38'
     Size: '0x10'
@@ -224,7 +224,7 @@ ServerCrewModel:
   - Name: RivalCrewId
     Offset: '0x7c'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: MatchmakingRequestReason
     Offset: '0x8c'
     Size: '0x1'
@@ -236,7 +236,7 @@ ServerCrewModel:
   - Name: TimeWaitingForMatch
     Offset: '0xa0'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   - Name: ForcedStamp
     Offset: '0xa8'
     Size: '0x10'
@@ -244,7 +244,7 @@ ServerCrewModel:
   - Name: GuildId
     Offset: '0xb8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: CrewMemberUserIds
     Offset: '0xc8'
     Size: '0x10'
@@ -255,7 +255,7 @@ ServerCrewRequestModel:
   - Name: ServerId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: VmId
     Offset: '0x10'
     Size: '0x10'
@@ -267,7 +267,7 @@ ServerCrewRequestModel:
   - Name: SaferSeasServerId
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: ServerLocation
     Offset: '0x40'
     Size: '0x10'
@@ -319,15 +319,15 @@ ServerCrewRequestModel:
   - Name: Uptime
     Offset: '0xc8'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   - Name: Contended
     Offset: '0xd0'
     Size: '0x30'
-    Type: struct
+    Type: struct ServerContendedModel
   - Name: GameEvents
     Offset: '0x100'
     Size: '0x20'
-    Type: struct
+    Type: struct GameEventAvailabilityModel
   ClassSize: '0x120'
 ServerCrewResponseModel:
   Attributes:
@@ -346,15 +346,15 @@ ServerCrewResponseModel:
   - Name: RetryAfter
     Offset: '0x68'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   - Name: MigrationThreshold
     Offset: '0x70'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   - Name: ExpireAfter
     Offset: '0x78'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   ClassSize: '0x80'
 ServerQueueWaitTimeModel:
   Attributes:
@@ -365,18 +365,18 @@ ServerQueueWaitTimeModel:
   - Name: AvgWaitTime
     Offset: '0x10'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   - Name: MaxWaitTime
     Offset: '0x18'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   ClassSize: '0x20'
 ServerQueueWaitTimesRequestModel:
   Attributes:
   - Name: ServerId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: ServerLocation
     Offset: '0x10'
     Size: '0x10'
@@ -414,7 +414,7 @@ ServerRegionModel:
   - Name: Position
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Radius
     Offset: '0x8'
     Size: '0x4'

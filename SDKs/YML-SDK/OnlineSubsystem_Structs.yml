@@ -139,7 +139,7 @@ OnlineStoreCatalogItem:
   - Name: SaleEndDate
     Offset: '0x58'
     Size: '0x8'
-    Type: struct
+    Type: struct DateTime
   - Name: ImageUri
     Offset: '0x60'
     Size: '0x10'

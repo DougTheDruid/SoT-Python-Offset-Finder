@@ -11,7 +11,7 @@ class ActorSequence: public MovieSceneSequence
 {
 public:
 	class MovieScene*                                            MovieScene;                                        // 0x2a8(0x8)
-	struct                                                       ObjectReferences;                                  // 0x2b0(0x20)
+	struct ActorSequenceObjectReferenceMap                       ObjectReferences;                                  // 0x2b0(0x20)
 };
 
 
@@ -19,7 +19,7 @@ public:
 class ActorSequenceComponent: public ActorComponent
 {
 public:
-	struct                                                       PlaybackSettings;                                  // 0xc8(0x28)
+	struct MovieSceneSequencePlaybackSettings                    PlaybackSettings;                                  // 0xc8(0x28)
 	class ActorSequence*                                         Sequence;                                          // 0xf0(0x8)
 	class ActorSequencePlayer*                                   SequencePlayer;                                    // 0xf8(0x8)
 	bool                                                         bAutoPlay;                                         // 0x100(0x1)

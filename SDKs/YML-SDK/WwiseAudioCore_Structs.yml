@@ -84,7 +84,7 @@ WwiseAudioReverbPresets:
   - Name: SamplingSettings
     Offset: '0x3c'
     Size: '0x28'
-    Type: struct
+    Type: struct ReverbPresetControllerSettings
   ClassSize: '0x64'
 WwiseEventParam:
   Attributes:

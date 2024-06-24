@@ -5,11 +5,11 @@ AIAbilityContinuousCooldownParameterData:
   - Name: InitialCooldown
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct AthenaAIAbilityPlayerBasedRanges
   - Name: CooldownBetweenActivations
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct AthenaAIAbilityPlayerBasedRanges
   ClassSize: '0x20'
 AIAbilityDebugReplicatedIntervals:
   Attributes:
@@ -105,7 +105,7 @@ AIBountySpawnerParams:
   - Name: TeamColor
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: NumTargetsInWave
     Offset: '0x20'
     Size: '0x10'
@@ -133,11 +133,11 @@ AIBountySpawnerParams:
   - Name: WavesPerRelocate
     Offset: '0x50'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   - Name: WaveSplitChance
     Offset: '0x70'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   - Name: WaveSuicideTime
     Offset: '0x90'
     Size: '0x10'
@@ -254,7 +254,7 @@ AIBountySpawnerWaveLocation:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: SelectionWeight
     Offset: '0xc'
     Size: '0x4'
@@ -358,15 +358,15 @@ AIDebugVisualisationBox:
   - Name: Centre
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Extents
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Rotation
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: LifeTime
     Offset: '0x30'
     Size: '0x4'
@@ -381,11 +381,11 @@ AIDebugVisualisationCone:
   - Name: Origin
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Direction
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Length
     Offset: '0x18'
     Size: '0x4'
@@ -412,11 +412,11 @@ AIDebugVisualisationCylinder:
   - Name: To
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: From
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Radius
     Offset: '0x18'
     Size: '0x4'
@@ -435,11 +435,11 @@ AIDebugVisualisationLine:
   - Name: From
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: To
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: LifeTime
     Offset: '0x18'
     Size: '0x4'
@@ -454,7 +454,7 @@ AIDebugVisualisationSphere:
   - Name: Centre
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Radius
     Offset: '0xc'
     Size: '0x4'
@@ -473,7 +473,7 @@ AIDioramaLocationSourceComponentData:
   - Name: RelativeTransform
     Offset: '0x0'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: Interactable
     Offset: '0x30'
     Size: '0x8'
@@ -495,7 +495,7 @@ AIDioramaRoleDesc:
   - Name: CustomAnimationAsset
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: CustomAnimationToRunOnSpawn
     Offset: '0x18'
     Size: '0x8'
@@ -595,7 +595,7 @@ AIEncounterSpecification:
   - Name: EncounterTrackingParams
     Offset: '0xb8'
     Size: '0xc'
-    Type: struct
+    Type: struct EncounterParams
   - Name: MinPlayersToEnable
     Offset: '0xc4'
     Size: '0x4'
@@ -625,11 +625,11 @@ AIExclusionZone:
   - Name: Id
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Location
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: RadiusSquared
     Offset: '0x1c'
     Size: '0x4'
@@ -645,7 +645,7 @@ AIExclusionZone:
   - Name: RemoveTimer
     Offset: '0x28'
     Size: '0x4'
-    Type: struct
+    Type: struct TimerHandle
   ClassSize: '0x2c'
 AIFixedWavesSpawnerArchive:
   Attributes:
@@ -697,11 +697,11 @@ AIFormVarietyEntry:
   - Name: FeatureFlag
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   - Name: Form
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Weight
     Offset: '0x20'
     Size: '0x4'
@@ -720,7 +720,7 @@ AIHealthChangeTelemetryEvent:
   - Name: AttackId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: CurrentHealth
     Offset: '0x10'
     Size: '0x4'
@@ -736,7 +736,7 @@ AIHealthChangeTelemetryEvent:
   - Name: Position
     Offset: '0x1c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Reason
     Offset: '0x28'
     Size: '0x1'
@@ -747,7 +747,7 @@ AIIncrementalWaveSpawnerArchive:
   - Name: LastTargetPosition
     Offset: '0x8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: CurrentNumSpawnedPawns
     Offset: '0x14'
     Size: '0x4'
@@ -758,7 +758,7 @@ AIIndividualVarietyEntry:
   - Name: FeatureFlag
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   - Name: Loadouts
     Offset: '0x10'
     Size: '0x10'
@@ -858,11 +858,11 @@ AIPerCrewSpawnerStoryBasedRespawnSettings:
   - Name: RespawnSettings
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct AIPerCrewSpawnerRespawnSettings
   - Name: Story
     Offset: '0xc'
     Size: '0x8'
-    Type: struct
+    Type: struct StoryFlag
   ClassSize: '0x14'
 AIPersistentSpawnerWave:
   Attributes:
@@ -932,7 +932,7 @@ AISpawnOverride:
   - Name: FormOverride
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x10'
 AISpawnTelemetryEvent:
   Attributes:
@@ -950,19 +950,19 @@ AISpawnTypeParams:
   - Name: SkillsetOverride
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: LoadoutOverride
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: FormOverride
     Offset: '0x40'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: AmmoOverride
     Offset: '0x50'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: ItemDropComponentClassOverride
     Offset: '0x60'
     Size: '0x20'
@@ -974,11 +974,11 @@ AISpawnTypeParams:
   - Name: TeamColorOverride
     Offset: '0x88'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: EncounterTrackingParams
     Offset: '0x98'
     Size: '0xc'
-    Type: struct
+    Type: struct EncounterParams
   - Name: DioramaRole
     Offset: '0xa4'
     Size: '0x8'
@@ -1046,23 +1046,23 @@ AISpawnerWave:
   - Name: NumOfSpawnsInWave
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   - Name: SpawnTypeParamsOverride
     Offset: '0x28'
     Size: '0x48'
-    Type: struct
+    Type: struct AISpawnTypeParamsCollection
   - Name: DelayBeforeWave
     Offset: '0x70'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: DelayBetweenSpawns
     Offset: '0xa0'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: DelayBeforeNextWaveIfSuccessful
     Offset: '0xd0'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   ClassSize: '0x100'
 AIStategyControllerMovementMod:
   Attributes:
@@ -1114,26 +1114,26 @@ AITargetBounds:
   - Name: Offset
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Extents
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x18'
 AITargetInfo:
   Attributes:
   - Name: Bounds
     Offset: '0x0'
     Size: '0x18'
-    Type: struct
+    Type: struct AITargetBounds
   - Name: TargetPos
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: TargetVelocity
     Offset: '0x24'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: TargetYaw
     Offset: '0x30'
     Size: '0x4'
@@ -1179,7 +1179,7 @@ AITelemetryFragmentInput:
   - Name: AIEncounterSpecification
     Offset: '0x8'
     Size: '0xd0'
-    Type: struct
+    Type: struct AIEncounterSpecification
   ClassSize: '0xd8'
 AITypeData:
   Attributes:
@@ -1190,15 +1190,15 @@ AITypeData:
   - Name: AIPawnClass
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringClassReference
   - Name: DefaultDebugSkillset
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: DefaultDebugLoadout
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: DefaultDebugAIClassId
     Offset: '0x38'
     Size: '0x8'
@@ -1254,7 +1254,7 @@ AthenaAIAbilityPlayerBasedRange:
   - Name: WeightedArray
     Offset: '0x8'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   ClassSize: '0x38'
 AthenaAIAbilityPlayerBasedRanges:
   Attributes:
@@ -1376,7 +1376,7 @@ AthenaAIControllerFeatureToggledParams:
   - Name: Feature
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   - Name: Params
     Offset: '0x10'
     Size: '0x10'
@@ -1421,7 +1421,7 @@ AthenaAIControllerSenseSettingOverride:
   - Name: SenseSettings
     Offset: '0x8'
     Size: '0x14'
-    Type: struct
+    Type: struct AthenaAIControllerSenseSettings
   - Name: ClearPerceivedData
     Offset: '0x1c'
     Size: '0x1'
@@ -1518,7 +1518,7 @@ AthenaAIControllerWeightedRangesParamValue:
   - Name: Value
     Offset: '0x8'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   ClassSize: '0x38'
 AthenaAIFormComponentVfxCustomisation:
   Attributes:
@@ -1559,7 +1559,7 @@ AthenaAISharedControllerParamToggledValues:
   - Name: FeatureName
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   ClassSize: '0x20'
 AttackableTypeToAnimMapping:
   Attributes:
@@ -1608,7 +1608,7 @@ BlackboardValueCondition:
   - Name: BlackboardKey
     Offset: '0x0'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: Comparison
     Offset: '0x28'
     Size: '0x1'
@@ -1643,7 +1643,7 @@ BountySpawnerAudioChangedNetworkEvent:
   - Name: BountyPosition
     Offset: '0x24'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x30'
 BountySpawnerIntensityUpdateNetworkEvent:
   Attributes:
@@ -1714,11 +1714,11 @@ ChanceAndBlackboardKeyPair:
   - Name: Chance
     Offset: '0x0'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   - Name: BlackboardKey
     Offset: '0x30'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   ClassSize: '0x58'
 ChanceForSharksToBlockSirenEncounterData:
   Attributes:
@@ -1744,7 +1744,7 @@ ConditionalAISpawnOverride:
   - Name: Override
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct AISpawnOverride
   ClassSize: '0x18'
 ConditionalBasedOnBlackboardKey:
   Attributes:
@@ -1755,7 +1755,7 @@ ConditionalBasedOnBlackboardKey:
   - Name: BlackboardKey
     Offset: '0x8'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: NegateCondition
     Offset: '0x30'
     Size: '0x1'
@@ -1799,7 +1799,7 @@ EscalatingWave:
   - Name: SpawnedWave
     Offset: '0x8'
     Size: '0x100'
-    Type: struct
+    Type: struct AISpawnerWave
   ClassSize: '0x108'
 EventAIAbilityStarted:
   Attributes:
@@ -1840,7 +1840,7 @@ EventAIBountySpawnerTargetKilled:
   - Name: DeathLocation
     Offset: '0x54'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Instigator
     Offset: '0x60'
     Size: '0x8'
@@ -1888,7 +1888,7 @@ EventAILoadoutSelected:
   - Name: Loadout
     Offset: '0x0'
     Size: '0x20'
-    Type: struct
+    Type: struct ItemLoadout
   - Name: NonStorableItem
     Offset: '0x20'
     Size: '0x8'
@@ -2035,7 +2035,7 @@ EventOwnedPawnFinishedSpawning:
   - Name: SpawnPos
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ActorToPerceiveOnSpawn
     Offset: '0x20'
     Size: '0x8'
@@ -2160,7 +2160,7 @@ EventTinySharkDamaged:
   - Name: ImpactDamageEvent
     Offset: '0x0'
     Size: '0x58'
-    Type: struct
+    Type: struct ImpactDamageEvent
   ClassSize: '0x58'
 EventTinySharkDespawned:
   Attributes:
@@ -2178,11 +2178,11 @@ EventTinySharkSpawned:
   - Name: SpawnConfigId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: SpawnLocation
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x30'
 EventVisualAppearanceSelected:
   Attributes:
@@ -2193,7 +2193,7 @@ EventVisualAppearanceSelected:
   - Name: AIPartId
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct AIPartId
   - Name: PartsIndexToUse
     Offset: '0x10'
     Size: '0x4'
@@ -2237,11 +2237,11 @@ FeatureToggledAIEncounterSpecificSkillSet:
   - Name: ToggledSpecificSkillset
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Feature
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   ClassSize: '0x20'
 FeatureToggledAIEncounterSpecificSkillSetCollection:
   Attributes:
@@ -2300,7 +2300,7 @@ MerchantCrateMetaWrapper:
   - Name: FaunaType
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: TimeSpentStarving
     Offset: '0x30'
     Size: '0x4'
@@ -2312,7 +2312,7 @@ MerchantCrateMetaWrapper:
   - Name: TempSpawnLocationForActor
     Offset: '0x38'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x48'
 MinMaxAbilityRange:
   Attributes:
@@ -2386,7 +2386,7 @@ PetMaterialEntry:
   - Name: MaterialReference
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: CastShadows
     Offset: '0x10'
     Size: '0x1'
@@ -2445,7 +2445,7 @@ PlayerKillAITelemetryEvent:
   - Name: AttackId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 ReplicatedAIPartsData:
   Attributes:
@@ -2456,7 +2456,7 @@ ReplicatedAIPartsData:
   - Name: AIPartId
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct AIPartId
   - Name: MeshIndex
     Offset: '0x10'
     Size: '0x4'
@@ -2517,7 +2517,7 @@ SwimAttackTargetShipImpulseData:
   - Name: PushImpulseLocation
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: PushForceScalingFactorForeAndAftOfShipLowerBound
     Offset: '0x18'
     Size: '0x4'
@@ -2533,7 +2533,7 @@ SwimAttackTargetShipImpulseData:
   - Name: RollImpulseLocation
     Offset: '0x24'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: RollForceScalingFactorForeAndAftOfShipLowerBound
     Offset: '0x30'
     Size: '0x4'
@@ -2548,22 +2548,22 @@ TargetItemDropProgressionPair:
   - Name: CrewItemSpawn
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: CaptainItemSpawn
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x20'
 TargetSkillsetProgressionPair:
   Attributes:
   - Name: CrewSkillset
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: CaptainSkillset
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x20'
 TinySharkCollidedTelemetryEvent:
   Attributes:
@@ -2582,11 +2582,11 @@ TinySharkCollidedTelemetryEvent:
   - Name: CollisionLocation
     Offset: '0x30'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: HomeLocation
     Offset: '0x3c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: BehaviourTreeInfo
     Offset: '0x48'
     Size: '0x10'
@@ -2620,7 +2620,7 @@ TinySharkParams:
   - Name: SpawnOffset
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: TinySharkAIType
     Offset: '0x18'
     Size: '0x20'
@@ -2640,7 +2640,7 @@ TinySharkParams:
   - Name: LifetimeTimeout
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: TrackedShipDistanceThresholdByFeatureInPriorityOrder
     Offset: '0xb0'
     Size: '0x10'
@@ -2678,7 +2678,7 @@ TinySharkShipSpawnData:
   - Name: Timer
     Offset: '0x8'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: ControllerParams
     Offset: '0x38'
     Size: '0x10'
@@ -2686,7 +2686,7 @@ TinySharkShipSpawnData:
   - Name: ControllerParamsToUse
     Offset: '0x48'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   ClassSize: '0x68'
 TinySharkSpawnTelemetryEvent:
   Attributes:
@@ -2701,18 +2701,18 @@ TinySharkSpawnTelemetryEvent:
   - Name: ConfigSpawnId
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: SpawnLocation
     Offset: '0x30'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x40'
 TinySharkTrackedShipDistanceThresholdByFeature:
   Attributes:
   - Name: Feature
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   - Name: TrackedShipDistanceThreshold
     Offset: '0xc'
     Size: '0x4'
@@ -2738,7 +2738,7 @@ WeightedAISpawnTypeParams:
   - Name: Params
     Offset: '0x8'
     Size: '0xe8'
-    Type: struct
+    Type: struct AISpawnTypeParams
   ClassSize: '0xf0'
 WeightedAIStrategyChance:
   Attributes:
@@ -2749,7 +2749,7 @@ WeightedAIStrategyChance:
   - Name: WeightedChance
     Offset: '0x8'
     Size: '0x30'
-    Type: struct
+    Type: struct AIDataProviderFloatValue
   ClassSize: '0x38'
 WeightedAmmoType:
   Attributes:

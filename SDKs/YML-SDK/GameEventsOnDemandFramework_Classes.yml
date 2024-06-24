@@ -5,11 +5,11 @@ GameEventAvailabilityParamsDataAsset:
   - Name: MatchmakingCooldownRanges
     Offset: '0x28'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: CrewsJoinedOnDemandLimitRange
     Offset: '0x58'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   - Name: InitialCooldown
     Offset: '0x78'
     Size: '0x4'

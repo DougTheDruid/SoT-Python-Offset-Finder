@@ -32,7 +32,7 @@ CreateMysteriousNoteGameServerResponseModel:
   - Name: NoteId
     Offset: '0x4'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x14'
 CustomPlayerNoteList:
   Attributes:
@@ -50,5 +50,5 @@ DestroyMysteriousNoteGameServerRequestModel:
   - Name: NoteGUID
     Offset: '0x4'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x14'

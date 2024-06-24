@@ -119,7 +119,7 @@ BreakableActorVfxComponent:
   - Name: VFXTintColour
     Offset: '0xc8'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   - Name: DamagedParticleSystem
     Offset: '0xd0'
     Size: '0x8'

@@ -1,4 +1,84 @@
 {
+  "WwiseIOPriorityMappingConfig": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "WwisePriority",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AsyncIOPriority",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "WwiseNetworkRelationship": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "SwitchGroupName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RemotePlayerSwitchValue",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "LocalPlayerSwitchValue",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WwisePlatformMapping": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "UnrealPlatform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WwisePlatform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WwiseEventParam": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "WwiseEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SourcePath",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SourceObj",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "ReverbPresetControllerSettings": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -64,86 +144,6 @@
       }
     ]
   },
-  "WwisePlatformMapping": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "UnrealPlatform",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WwisePlatform",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "WwiseNetworkRelationship": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "SwitchGroupName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RemotePlayerSwitchValue",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "LocalPlayerSwitchValue",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "WwiseEventParam": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "WwiseEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SourcePath",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SourceObj",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "WwiseIOPriorityMappingConfig": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "WwisePriority",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AsyncIOPriority",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "WwiseAudioReverbPresets": {
     "ClassSize": "0x64",
     "Attributes": [
@@ -203,7 +203,7 @@
       },
       {
         "Name": "SamplingSettings",
-        "Type": "struct",
+        "Type": "struct ReverbPresetControllerSettings",
         "Size": "0x28",
         "Offset": "0x3c"
       }

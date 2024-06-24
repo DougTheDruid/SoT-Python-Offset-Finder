@@ -3,16 +3,16 @@
 CustomMap:
   Attributes:
   - Name: Font
-    Offset: '0x8a0'
+    Offset: '0x8c8'
     Size: '0x8'
     Type: class Font*
   - Name: DisplayItems
-    Offset: '0x8a8'
+    Offset: '0x8d0'
     Size: '0x10'
     Type: TArray<class CustomMapDisplayObjectBase*>
   ClassSize: '0x30'
-  FullSize: '0x8d0'
-  InheritedSize: '0x8a0'
+  FullSize: '0x8f0'
+  InheritedSize: '0x8c0'
   Super: RenderToTextureMapBase
 CustomMapData:
   Attributes:
@@ -37,7 +37,7 @@ CustomMapDataTypeBase:
   - Name: Guid
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -47,7 +47,7 @@ CustomMapDataTypePositional:
   - Name: Position
     Offset: '0x38'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Orientation
     Offset: '0x40'
     Size: '0x4'
@@ -83,7 +83,7 @@ CustomMapDisplayObjectBase:
   - Name: Guid
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
@@ -93,7 +93,7 @@ CustomMapDisplayObjectPositional:
   - Name: Position
     Offset: '0x38'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Orientation
     Offset: '0x40'
     Size: '0x4'

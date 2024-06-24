@@ -51,23 +51,23 @@ AIShipContextDescDataAsset:
   - Name: DamageParams
     Offset: '0x68'
     Size: '0x14'
-    Type: struct
+    Type: struct AIShipContextDescDamageParams
   - Name: SailsCustomisation
     Offset: '0x7c'
     Size: '0x10'
-    Type: struct
+    Type: struct AIShipSailData
   - Name: SailColour
     Offset: '0x8c'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   - Name: FormType
     Offset: '0x90'
     Size: '0x20'
-    Type: struct
+    Type: struct AIShipCrewFormType
   - Name: AmmoType
     Offset: '0xb0'
     Size: '0x18'
-    Type: struct
+    Type: struct AIShipCrewAmmoType
   - Name: RewardMarkerParams
     Offset: '0xc8'
     Size: '0x8'
@@ -191,7 +191,7 @@ AIShipEncounterDesc:
   - Name: Location
     Offset: '0x28'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Radius
     Offset: '0x30'
     Size: '0x4'
@@ -257,83 +257,87 @@ AIShipEncounterDynamicDesc:
   - Name: DynamicBalancingDesc
     Offset: '0x40'
     Size: '0x58'
-    Type: struct
+    Type: struct AIShipEncounterDynamicBalancingDesc
   ClassSize: '0x70'
   FullSize: '0x98'
   InheritedSize: '0x28'
   Super: Object
 AIShipEncounterParamsDataAsset:
   Attributes:
-  - Name: SpawnParams
+  - Name: EventType
     Offset: '0x28'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: SpawnParams
+    Offset: '0x30'
     Size: '0x8'
     Type: class AIShipEncounterSpawnParamsDataAsset*
   - Name: ContextParams
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x8'
     Type: class AIShipContextParamsDataAsset*
   - Name: DefaultContextDesc
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x8'
     Type: class AIShipContextDescDataAsset*
   - Name: ShipPawnClass
-    Offset: '0x40'
+    Offset: '0x48'
     Size: '0x8'
     Type: class UClass*
   - Name: BuoyantObjectSpawnProfileAsset
-    Offset: '0x48'
+    Offset: '0x50'
     Size: '0x8'
     Type: class BuoyantObjectSpawnProfileDataAsset*
   - Name: EventSignalAssetClass
-    Offset: '0x50'
+    Offset: '0x58'
     Size: '0x8'
     Type: class UClass*
   - Name: EventSignalHeight
-    Offset: '0x58'
-    Size: '0x4'
-    Type: float
-  - Name: OuterRadiusMultiplier
-    Offset: '0x5c'
-    Size: '0x4'
-    Type: float
-  - Name: MigrationRadiusMultiplier
     Offset: '0x60'
     Size: '0x4'
     Type: float
-  - Name: InitialEncounterEntryDelay
+  - Name: OuterRadiusMultiplier
     Offset: '0x64'
     Size: '0x4'
     Type: float
-  - Name: MinEngagedDistanceFromPlayers
+  - Name: MigrationRadiusMultiplier
     Offset: '0x68'
     Size: '0x4'
     Type: float
-  - Name: MinEngagedDistanceFromPlayersRemoteConfigKey
+  - Name: InitialEncounterEntryDelay
+    Offset: '0x6c'
+    Size: '0x4'
+    Type: float
+  - Name: MinEngagedDistanceFromPlayers
     Offset: '0x70'
+    Size: '0x4'
+    Type: float
+  - Name: MinEngagedDistanceFromPlayersRemoteConfigKey
+    Offset: '0x78'
     Size: '0x10'
     Type: struct FString
   - Name: EnableMusicWhenShipsHaveNoTarget
-    Offset: '0x80'
+    Offset: '0x88'
     Size: '0x1'
     Type: bool
   - Name: SecondsUntilEncounterEndsAfterLastCrewLeft
-    Offset: '0x84'
+    Offset: '0x8c'
     Size: '0x4'
     Type: int
   - Name: MaximumEncounterDuration
-    Offset: '0x88'
+    Offset: '0x90'
     Size: '0x4'
     Type: int
   - Name: OnDemandAvailabilityRadius
-    Offset: '0x8c'
+    Offset: '0x94'
     Size: '0x4'
     Type: float
   - Name: RegisterAsMigrationBlocker
-    Offset: '0x90'
+    Offset: '0x98'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x70'
-  FullSize: '0x98'
+  ClassSize: '0x78'
+  FullSize: '0xa0'
   InheritedSize: '0x28'
   Super: DataAsset
 AIShipEncounterSpawnParamsDataAsset:
@@ -357,7 +361,7 @@ AIShipEncounterSpawnParamsDataAsset:
   - Name: RelativeSpawnLocationParams
     Offset: '0x38'
     Size: '0xa0'
-    Type: struct
+    Type: struct RelativeSpawnLocationGeneratorParams
   ClassSize: '0xb0'
   FullSize: '0xd8'
   InheritedSize: '0x28'
@@ -367,11 +371,11 @@ AIShipGameSettings:
   - Name: AIShipServiceDataAssetFileLocation
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: AIShipServiceDataAssetFileLocationOverride
     Offset: '0x48'
     Size: '0x18'
-    Type: struct
+    Type: struct ToggleableAIShipsServiceDataAssetFileLocation
   ClassSize: '0x28'
   FullSize: '0x60'
   InheritedSize: '0x38'
@@ -413,15 +417,15 @@ AIShipServiceDataAsset:
   - Name: AggressiveEncounterParams
     Offset: '0x38'
     Size: '0x28'
-    Type: struct
+    Type: struct AIShipEncounterParams
   - Name: PassiveEncounterParams
     Offset: '0x60'
     Size: '0x28'
-    Type: struct
+    Type: struct AIShipEncounterParams
   - Name: ObstacleBucketDimensions
     Offset: '0x88'
     Size: '0x8'
-    Type: struct
+    Type: struct IntPoint
   - Name: ShipwreckObstacleRadius
     Offset: '0x90'
     Size: '0x4'
@@ -429,27 +433,27 @@ AIShipServiceDataAsset:
   - Name: ContextDescGenerationParams
     Offset: '0x98'
     Size: '0x80'
-    Type: struct
+    Type: struct AIShipContextDescGenerationParams
   - Name: EncounterGenerationParams
     Offset: '0x118'
     Size: '0x80'
-    Type: struct
+    Type: struct AIShipBattleEncounterDescGenerationParams
   - Name: AggressiveEncounterGenerationParams
     Offset: '0x198'
     Size: '0x10'
-    Type: struct
+    Type: struct AIShipSingleWaveEncounterDescGenerationParams
   - Name: PassiveEncounterGenerationParams
     Offset: '0x1a8'
     Size: '0x10'
-    Type: struct
+    Type: struct AIShipSingleWaveEncounterDescGenerationParams
   - Name: TimerBattleFirstRegenInterval
     Offset: '0x1b8'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: TimerBattleRegenInterval
     Offset: '0x1e8'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: TimerBattleFinderThrottle
     Offset: '0x218'
     Size: '0x4'
@@ -457,7 +461,7 @@ AIShipServiceDataAsset:
   - Name: TimerBattleRetryRegenInterval
     Offset: '0x220'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: TimerBattleMinActivationDistanceFromPlayers
     Offset: '0x250'
     Size: '0x4'
@@ -499,7 +503,7 @@ AthenaAIShipController:
   - Name: AnchorDynamicsParams
     Offset: '0x658'
     Size: '0x28'
-    Type: struct
+    Type: struct StandardAnchorDynamicsParameters
   ClassSize: '0x188'
   FullSize: '0x798'
   InheritedSize: '0x610'
@@ -509,19 +513,19 @@ AthenaAIShipControllerParamsDataAsset:
   - Name: TrackingMovementParams
     Offset: '0x138'
     Size: '0x38'
-    Type: struct
+    Type: struct ShipMovementParams
   - Name: TimesToSailBesideTarget
     Offset: '0x170'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: PerpendicularDistanceOffsets
     Offset: '0x1a0'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: TimesBeforeDistanceChange
     Offset: '0x1d0'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: MaxParallelDistanceOffset
     Offset: '0x200'
     Size: '0x4'
@@ -541,7 +545,7 @@ AthenaAIShipControllerParamsDataAsset:
   - Name: TrackingNoiseGenerator
     Offset: '0x210'
     Size: '0x18'
-    Type: struct
+    Type: struct TrackingNoiseGenerator
   - Name: WheelAngleMonitorDuration
     Offset: '0x228'
     Size: '0x4'
@@ -565,11 +569,11 @@ AthenaAIShipControllerParamsDataAsset:
   - Name: TrackingLatencyTimes
     Offset: '0x240'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: TrackingLatencyTimesWhenAnchorLowered
     Offset: '0x270'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: DistToTargetShipVSTrackingLatencyCurve
     Offset: '0x2a0'
     Size: '0x8'
@@ -577,7 +581,7 @@ AthenaAIShipControllerParamsDataAsset:
   - Name: CirclingMovementParams
     Offset: '0x2a8'
     Size: '0x38'
-    Type: struct
+    Type: struct ShipMovementParams
   - Name: TargetSpeedThresholdInKnots
     Offset: '0x2e0'
     Size: '0x4'
@@ -589,15 +593,15 @@ AthenaAIShipControllerParamsDataAsset:
   - Name: CircleRadiuses
     Offset: '0x2e8'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: CirclingSpeedsInDegreesPerSecond
     Offset: '0x318'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: TimesToCircleBeforeChangingRadius
     Offset: '0x348'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: MinDistanceFromTargetToStartRam
     Offset: '0x378'
     Size: '0x4'
@@ -625,11 +629,11 @@ AthenaAIShipControllerParamsDataAsset:
   - Name: RammingLocationOffsets
     Offset: '0x390'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: SailingForwardMovementParams
     Offset: '0x3c0'
     Size: '0x38'
-    Type: struct
+    Type: struct ShipMovementParams
   - Name: MinAllowedDistanceToObstacle
     Offset: '0x3f8'
     Size: '0x4'
@@ -641,7 +645,7 @@ AthenaAIShipControllerParamsDataAsset:
   - Name: PassiveSailingMovementParams
     Offset: '0x400'
     Size: '0x38'
-    Type: struct
+    Type: struct ShipMovementParams
   - Name: ChanceToAnchor
     Offset: '0x438'
     Size: '0x4'
@@ -649,7 +653,7 @@ AthenaAIShipControllerParamsDataAsset:
   - Name: TimesToStayAnchored
     Offset: '0x440'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: NumIslandsToVisitBeforeReturning
     Offset: '0x470'
     Size: '0x4'
@@ -675,23 +679,23 @@ BTService_UpdateIfShipShouldBreakTracking:
   - Name: TargetActorKey
     Offset: '0x70'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: DisableTrackingKey
     Offset: '0x98'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: ShouldSailForwardKey
     Offset: '0xc0'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: TimeToSailForwardKey
     Offset: '0xe8'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: CaptainIsPresentKey
     Offset: '0x110'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   ClassSize: '0xe0'
   FullSize: '0x150'
   InheritedSize: '0x70'
@@ -701,11 +705,11 @@ BTService_UpdateLocationWithActorLocation:
   - Name: LocationKey
     Offset: '0x70'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: ActorKey
     Offset: '0x98'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   ClassSize: '0x50'
   FullSize: '0xc0'
   InheritedSize: '0x70'
@@ -715,7 +719,7 @@ BTService_UpdateTargetLocationForPassiveShip:
   - Name: TargetLocationKey
     Offset: '0x70'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: AngleOffsetFromForwardDegreesWhenNoIslands
     Offset: '0x98'
     Size: '0x4'
@@ -747,7 +751,7 @@ BTTask_SailShipBesideTarget:
   - Name: TrackingNoiseGenerator
     Offset: '0xa8'
     Size: '0x18'
-    Type: struct
+    Type: struct TrackingNoiseGenerator
   ClassSize: '0x50'
   FullSize: '0xd8'
   InheritedSize: '0x88'
@@ -757,15 +761,15 @@ BTTask_SailShipForward:
   - Name: ShouldSailForwardKey
     Offset: '0x88'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: TimeToSailForwardKey
     Offset: '0xb0'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: IsCaptainPresentKey
     Offset: '0xd8'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   ClassSize: '0xa8'
   FullSize: '0x130'
   InheritedSize: '0x88'
@@ -775,7 +779,7 @@ BTTask_SailShipToLocation:
   - Name: TargetLocationKey
     Offset: '0x88'
     Size: '0x28'
-    Type: struct
+    Type: struct BlackboardKeySelector
   - Name: DistanceThresholdToConsiderTargetReached
     Offset: '0xb0'
     Size: '0x4'

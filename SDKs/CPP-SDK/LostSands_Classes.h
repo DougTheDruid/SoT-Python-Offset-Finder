@@ -21,8 +21,8 @@ public:
 	struct FName                                                 NamedPointsGroupName;                              // 0x538(0x8)
 	assetobject                                                  RangeReferenceNamedPointActor;                     // 0x540(0x20)
 	TArray<float>                                                DistanceFromNamedPoints;                           // 0x560(0x10)
-	struct                                                       RowboatDestroyedAtGoldenSandsStat;                 // 0x570(0x4)
-	struct                                                       RowboatDestroyedAwayFromGoldenSandsStat;           // 0x574(0x4)
+	struct PlayerStat                                            RowboatDestroyedAtGoldenSandsStat;                 // 0x570(0x4)
+	struct PlayerStat                                            RowboatDestroyedAwayFromGoldenSandsStat;           // 0x574(0x4)
 };
 
 

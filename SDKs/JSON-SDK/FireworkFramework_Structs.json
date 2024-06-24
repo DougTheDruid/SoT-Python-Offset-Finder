@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "AnimationCurve",
-        "Type": "struct",
+        "Type": "struct RuntimeVectorCurve",
         "Size": "0x170",
         "Offset": "0x0"
       },
@@ -13,6 +13,29 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x170"
+      }
+    ]
+  },
+  "FireworkExplosionData": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "VFX",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Sfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SecondarySFX",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x18"
       }
     ]
   },
@@ -30,6 +53,41 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
+      }
+    ]
+  },
+  "WeightedFireworkVFXData": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "VFX",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Sfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SecondarySFX",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "AmbientLightColour",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x1c"
       }
     ]
   },
@@ -68,70 +126,12 @@
       }
     ]
   },
-  "FireworkExplosionData": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "VFX",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Sfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SecondarySFX",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "WeightedFireworkVFXData": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "VFX",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Sfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SecondarySFX",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "AmbientLightColour",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x1c"
-      }
-    ]
-  },
   "GeneratedFireworkData": {
     "ClassSize": "0x58",
     "Attributes": [
       {
         "Name": "FireworkAmbientLightData",
-        "Type": "struct",
+        "Type": "struct FireworkAmbientLightData",
         "Size": "0x14",
         "Offset": "0xc"
       },

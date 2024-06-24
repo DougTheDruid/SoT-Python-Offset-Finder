@@ -1,51 +1,39 @@
 {
-  "MovieSceneCapture": {
-    "Super": "Object",
-    "FullSize": "0x1e0",
+  "CompositionGraphCaptureSettings": {
+    "Super": "MovieSceneCaptureProtocolSettings",
+    "FullSize": "0x58",
     "InheritedSize": "0x28",
-    "ClassSize": "0x1b8",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "CaptureType",
-        "Type": "struct",
-        "Size": "0x8",
+        "Name": "IncludeRenderPasses",
+        "Type": "struct CompositionGraphCapturePasses",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "bCaptureFramesInHDR",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x38"
       },
       {
-        "Name": "ProtocolSettings",
-        "Type": "class MovieSceneCaptureProtocolSettings*",
-        "Size": "0x8",
+        "Name": "HDRCompressionQuality",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "CaptureGamut",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x40"
       },
       {
-        "Name": "Settings",
-        "Type": "struct",
-        "Size": "0x50",
+        "Name": "PostProcessingMaterial",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
         "Offset": "0x48"
-      },
-      {
-        "Name": "bUseSeparateProcess",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "bCloseEditorWhenCaptureStarts",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x99"
-      },
-      {
-        "Name": "AdditionalCommandLineArguments",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "InheritedCommandLineArguments",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0xb0"
       }
     ]
   },
@@ -89,41 +77,53 @@
       }
     ]
   },
-  "CompositionGraphCaptureSettings": {
-    "Super": "MovieSceneCaptureProtocolSettings",
-    "FullSize": "0x58",
+  "MovieSceneCapture": {
+    "Super": "Object",
+    "FullSize": "0x1e0",
     "InheritedSize": "0x28",
-    "ClassSize": "0x30",
+    "ClassSize": "0x1b8",
     "Attributes": [
       {
-        "Name": "IncludeRenderPasses",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "bCaptureFramesInHDR",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "CaptureType",
+        "Type": "struct CaptureProtocolID",
+        "Size": "0x8",
         "Offset": "0x38"
       },
       {
-        "Name": "HDRCompressionQuality",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "CaptureGamut",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "ProtocolSettings",
+        "Type": "class MovieSceneCaptureProtocolSettings*",
+        "Size": "0x8",
         "Offset": "0x40"
       },
       {
-        "Name": "PostProcessingMaterial",
-        "Type": "struct",
-        "Size": "0x10",
+        "Name": "Settings",
+        "Type": "struct MovieSceneCaptureSettings",
+        "Size": "0x50",
         "Offset": "0x48"
+      },
+      {
+        "Name": "bUseSeparateProcess",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "bCloseEditorWhenCaptureStarts",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x99"
+      },
+      {
+        "Name": "AdditionalCommandLineArguments",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "InheritedCommandLineArguments",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0xb0"
       }
     ]
   },
@@ -141,7 +141,7 @@
       },
       {
         "Name": "PrerequisiteActorId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x1ec"
       }

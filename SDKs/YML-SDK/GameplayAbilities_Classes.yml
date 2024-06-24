@@ -13,7 +13,7 @@ AbilitySystemComponent:
   - Name: ReplicatedPredictionKey
     Offset: '0x150'
     Size: '0x18'
-    Type: struct
+    Type: struct PredictionKey
   - Name: OutgoingDuration
     Offset: '0x1e0'
     Size: '0x4'
@@ -25,7 +25,7 @@ AbilitySystemComponent:
   - Name: ActivatableAbilities
     Offset: '0x1e8'
     Size: '0xc0'
-    Type: struct
+    Type: struct GameplayAbilitySpecContainer
   - Name: AllReplicatedInstancedAbilities
     Offset: '0x2f8'
     Size: '0x10'
@@ -37,11 +37,11 @@ AbilitySystemComponent:
   - Name: RepAnimMontageInfo
     Offset: '0x4c8'
     Size: '0x30'
-    Type: struct
+    Type: struct GameplayAbilityRepAnimMontage
   - Name: LocalAnimMontageInfo
     Offset: '0x4f8'
     Size: '0x30'
-    Type: struct
+    Type: struct GameplayAbilityLocalAnimMontage
   - Name: OwnerActor
     Offset: '0x5c8'
     Size: '0x8'
@@ -53,11 +53,11 @@ AbilitySystemComponent:
   - Name: ActiveGameplayEffects
     Offset: '0x5f0'
     Size: '0x368'
-    Type: struct
+    Type: struct ActiveGameplayEffectsContainer
   - Name: ActiveGameplayCues
     Offset: '0x958'
     Size: '0xc0'
-    Type: struct
+    Type: struct ActiveGameplayCueContainer
   - Name: BlockedAbilityBindings
     Offset: '0xb48'
     Size: '0x10'
@@ -71,11 +71,11 @@ AbilitySystemGlobals:
   - Name: AbilitySystemGlobalsClassName
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct StringClassReference
   - Name: ActivateFailCooldownTag
     Offset: '0x38'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: ActivateFailCooldownName
     Offset: '0x40'
     Size: '0x8'
@@ -83,7 +83,7 @@ AbilitySystemGlobals:
   - Name: ActivateFailCostTag
     Offset: '0x48'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: ActivateFailCostName
     Offset: '0x50'
     Size: '0x8'
@@ -91,7 +91,7 @@ AbilitySystemGlobals:
   - Name: ActivateFailTagsBlockedTag
     Offset: '0x58'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: ActivateFailTagsBlockedName
     Offset: '0x60'
     Size: '0x8'
@@ -99,7 +99,7 @@ AbilitySystemGlobals:
   - Name: ActivateFailTagsMissingTag
     Offset: '0x68'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: ActivateFailTagsMissingName
     Offset: '0x70'
     Size: '0x8'
@@ -107,7 +107,7 @@ AbilitySystemGlobals:
   - Name: ActivateFailNetworkingTag
     Offset: '0x78'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: ActivateFailNetworkingName
     Offset: '0x80'
     Size: '0x8'
@@ -127,7 +127,7 @@ AbilitySystemGlobals:
   - Name: GlobalGameplayCueManagerName
     Offset: '0xb8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: GameplayCueNotifyPaths
     Offset: '0xc8'
     Size: '0x10'
@@ -135,7 +135,7 @@ AbilitySystemGlobals:
   - Name: GameplayTagResponseTableName
     Offset: '0xd8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: GameplayTagResponseTable
     Offset: '0xe8'
     Size: '0x8'
@@ -253,11 +253,11 @@ AbilityTask_MoveToLocation:
   - Name: StartLocation
     Offset: '0x7c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: TargetLocation
     Offset: '0x88'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: DurationOfMovement
     Offset: '0x94'
     Size: '0x4'
@@ -555,7 +555,7 @@ GameplayAbility:
   - Name: AbilityTags
     Offset: '0x68'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: bReplicateInputDirectly
     Offset: '0xa8'
     Size: '0x1'
@@ -579,11 +579,11 @@ GameplayAbility:
   - Name: CurrentActivationInfo
     Offset: '0xd8'
     Size: '0x20'
-    Type: struct
+    Type: struct GameplayAbilityActivationInfo
   - Name: CurrentEventData
     Offset: '0xf8'
     Size: '0xa0'
-    Type: struct
+    Type: struct GameplayEventData
   - Name: NetExecutionPolicy
     Offset: '0x198'
     Size: '0x1'
@@ -611,47 +611,47 @@ GameplayAbility:
   - Name: CancelAbilitiesMatchingTagQuery
     Offset: '0x1d0'
     Size: '0x48'
-    Type: struct
+    Type: struct GameplayTagQuery
   - Name: ConstTagQuery
     Offset: '0x218'
     Size: '0x48'
-    Type: struct
+    Type: struct GameplayTagQuery
   - Name: CancelAbilitiesWithTag
     Offset: '0x260'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: BlockAbilitiesWithTag
     Offset: '0x288'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: ActivationOwnedTags
     Offset: '0x2b0'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: ActivationRequiredTags
     Offset: '0x2d8'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: ActivationBlockedTags
     Offset: '0x300'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: SourceRequiredTags
     Offset: '0x328'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: SourceBlockedTags
     Offset: '0x350'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: TargetRequiredTags
     Offset: '0x378'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: TargetBlockedTags
     Offset: '0x3a0'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: CurrentMontage
     Offset: '0x438'
     Size: '0x8'
@@ -691,7 +691,7 @@ GameplayAbilityTargetActor:
   - Name: StartLocation
     Offset: '0x3d0'
     Size: '0x70'
-    Type: struct
+    Type: struct GameplayAbilityTargetingLocationInfo
   - Name: MasterPC
     Offset: '0x470'
     Size: '0x8'
@@ -711,7 +711,7 @@ GameplayAbilityTargetActor:
   - Name: ReticleParams
     Offset: '0x490'
     Size: '0xc'
-    Type: struct
+    Type: struct WorldReticleParameters
   - Name: ReticleClass
     Offset: '0x4a0'
     Size: '0x8'
@@ -719,7 +719,7 @@ GameplayAbilityTargetActor:
   - Name: Filter
     Offset: '0x4a8'
     Size: '0x18'
-    Type: struct
+    Type: struct GameplayTargetDataFilterHandle
   - Name: bDebug
     Offset: '0x4c0'
     Size: '0x1'
@@ -775,7 +775,7 @@ GameplayAbilityTargetActor_Trace:
   - Name: TraceProfile
     Offset: '0x4dc'
     Size: '0x8'
-    Type: struct
+    Type: struct CollisionProfileName
   - Name: bTraceAffectsAimPitch
     Offset: '0x4e4'
     Size: '0x1'
@@ -789,7 +789,7 @@ GameplayAbilityWorldReticle:
   - Name: Parameters
     Offset: '0x3c8'
     Size: '0xc'
-    Type: struct
+    Type: struct WorldReticleParameters
   - Name: bFaceOwnerFlat
     Offset: '0x3d4'
     Size: '0x1'
@@ -875,7 +875,7 @@ GameplayCueManager:
   - Name: StreamableManager
     Offset: '0x40'
     Size: '0xc0'
-    Type: struct
+    Type: struct StreamableManager
   - Name: PendingExecuteCues
     Offset: '0x160'
     Size: '0x10'
@@ -893,7 +893,7 @@ GameplayCueNotify_Actor:
   - Name: GameplayCueTag
     Offset: '0x3c8'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: GameplayCueName
     Offset: '0x3d0'
     Size: '0x8'
@@ -941,7 +941,7 @@ GameplayCueNotify_Static:
   - Name: GameplayCueTag
     Offset: '0x28'
     Size: '0x8'
-    Type: struct
+    Type: struct GameplayTag
   - Name: GameplayCueName
     Offset: '0x30'
     Size: '0x8'
@@ -973,11 +973,11 @@ GameplayEffect:
   - Name: DurationMagnitude
     Offset: '0x38'
     Size: '0x170'
-    Type: struct
+    Type: struct GameplayEffectModifierMagnitude
   - Name: Period
     Offset: '0x1a8'
     Size: '0x20'
-    Type: struct
+    Type: struct ScalableFloat
   - Name: bExecutePeriodicEffectOnApplication
     Offset: '0x1c8'
     Size: '0x1'
@@ -993,7 +993,7 @@ GameplayEffect:
   - Name: ChanceToApplyToTarget
     Offset: '0x1f0'
     Size: '0x20'
-    Type: struct
+    Type: struct ScalableFloat
   - Name: TargetEffectClasses
     Offset: '0x210'
     Size: '0x10'
@@ -1037,39 +1037,39 @@ GameplayEffect:
   - Name: InheritableGameplayEffectTags
     Offset: '0x288'
     Size: '0x78'
-    Type: struct
+    Type: struct InheritedTagContainer
   - Name: GameplayEffectTags
     Offset: '0x300'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: InheritableOwnedTagsContainer
     Offset: '0x328'
     Size: '0x78'
-    Type: struct
+    Type: struct InheritedTagContainer
   - Name: OwnedTagsContainer
     Offset: '0x3a0'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: OngoingTagRequirements
     Offset: '0x3c8'
     Size: '0x50'
-    Type: struct
+    Type: struct GameplayTagRequirements
   - Name: ApplicationTagRequirements
     Offset: '0x418'
     Size: '0x50'
-    Type: struct
+    Type: struct GameplayTagRequirements
   - Name: RemoveGameplayEffectsWithTags
     Offset: '0x468'
     Size: '0x78'
-    Type: struct
+    Type: struct InheritedTagContainer
   - Name: ClearTagsContainer
     Offset: '0x4e0'
     Size: '0x28'
-    Type: struct
+    Type: struct GameplayTagContainer
   - Name: GrantedApplicationImmunityTags
     Offset: '0x508'
     Size: '0x50'
-    Type: struct
+    Type: struct GameplayTagRequirements
   - Name: StackingType
     Offset: '0x558'
     Size: '0x1'

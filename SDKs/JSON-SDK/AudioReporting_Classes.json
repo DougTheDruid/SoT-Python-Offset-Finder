@@ -1,29 +1,15 @@
 {
-  "AudioReportingComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x240",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x178",
-    "Attributes": [
-      {
-        "Name": "CachedOwningController",
-        "Type": "class PlayerController*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      }
-    ]
-  },
-  "AudioReportingConfig": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
+  "EventReactionsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "AudioReportingSettings",
-        "Type": "struct",
+        "Name": "Reactions",
+        "Type": "TArray<struct EventReactionDesc>",
         "Size": "0x10",
-        "Offset": "0x38"
+        "Offset": "0x28"
       }
     ]
   },
@@ -59,17 +45,31 @@
       }
     ]
   },
-  "EventReactionsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
+  "AudioReportingConfig": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Reactions",
-        "Type": "TArray<struct EventReactionDesc>",
+        "Name": "AudioReportingSettings",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "AudioReportingComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x240",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x178",
+    "Attributes": [
+      {
+        "Name": "CachedOwningController",
+        "Type": "class PlayerController*",
+        "Size": "0x8",
+        "Offset": "0xc8"
       }
     ]
   },

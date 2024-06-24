@@ -1,16 +1,950 @@
 {
+  "AIWeightedProbabilityRangeOfRangesRankMapping": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "RangeOfRanges",
+        "Type": "class AIWeightedProbabilityRangeOfRangesAsset*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weights",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AthenaAIControllerDamageTargetScoreFromPerceivedTarget": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "MinDamageTargetScore",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxDamageTargetScore",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "DamageForMinDamageTargetScore",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "DamageForMaxDamageTargetScore",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "RateToDecayDamagedFromTarget",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AIIndividualVarietyEntry": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "FeatureFlag",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Loadouts",
+        "Type": "TArray<struct StringAssetReference>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "RankOffset",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "MaxPerEncounter",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AIEncounterSpecification": {
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "PawnClass",
+        "Type": "assetclass",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Skillset",
+        "Type": "class AthenaAIControllerParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Loadout",
+        "Type": "class LoadoutAsset*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Form",
+        "Type": "class AthenaAIFormDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "Ammo",
+        "Type": "class AthenaAIAmmoDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "AIClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "PartsCategory",
+        "Type": "class AIPartsCategory*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "ItemDropComponentClass",
+        "Type": "assetclass",
+        "Size": "0x20",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "TeamColorIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "DioramaRole",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x74"
+      },
+      {
+        "Name": "LocalisableName",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "EncounterTrackingParams",
+        "Type": "struct EncounterParams",
+        "Size": "0xc",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "MinPlayersToEnable",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "ShowNameplate",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "IsUsingDialogue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc9"
+      }
+    ]
+  },
+  "AIAbilityDebugReplicatedIntervals": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "ActivationTimerCooldown",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TimeBeforeNextExecution",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "DamageBeforeNextExecution",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AthenaAICharacterControllerSpawnItemDescForItemCategory": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ItemCategory",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ItemDesc",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AthenaAIAbilityDamageStage": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AbilitiesInStage",
+        "Type": "TArray<class AthenaAIAbilityStageParams*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "DamageModifierCrewProximityVulnerabilityPairs": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "NumPlayersInRange",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GlobalDamageMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "DamageMultipliers",
+        "Type": "TArray<struct DamageableVulnerabilityPair>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PlayerKillAITelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AttackId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AthenaAISharedControllerParamToggledValues": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Assets",
+        "Type": "TArray<class AthenaAIControllerSharedParamValuesDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FeatureName",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EventPlayerEnterAISpawnableWater": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventAILoadoutSelected": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Loadout",
+        "Type": "struct ItemLoadout",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NonStorableItem",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "AISpawnOverride": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FormOverride",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AISpawnTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "LocationName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AITelemetryFragment": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "AIType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AIId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "AILoadOut",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "AIPawnType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "AISkillset",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "AIForm",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "AIClass",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "PetMovementRequest": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "State",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TargetMeshZOffset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "AdjustingFlight",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "SwimAttackTargetShipImpulseData": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PushImpulseForce",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "PushImpulseLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "PushForceScalingFactorForeAndAftOfShipLowerBound",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "PushForceScalingFactorForeAndAftOfShipUpperBound",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "RollImpulseForce",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "RollImpulseLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "RollForceScalingFactorForeAndAftOfShipLowerBound",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "RollForceScalingFactorForeAndAftOfShipUpperBound",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "EventPlayerLeftAISpawnRegion": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SirenEncounterData": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "GameWorld",
+        "Type": "class World*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SirenSpawner",
+        "Type": "class AIPerPlayerSpawner*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "AIRegion",
+        "Type": "class SimpleAIRegion*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ProximityPlayerTracker",
+        "Type": "class AIProximityPlayerTracker*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "ShutdownTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "SirenEncounterState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x24"
+      }
+    ]
+  },
+  "PetPartSizeMapping": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "PetSize",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PetScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "AttackableTypeToAnimMapping": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "AttackType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AnimMontage",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "PlayAsDynamicMontage",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "AnimLength",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "TimeIntoAnimOfAttack",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "TargetKnockBackStrength",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "RumbleTag",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "EventAIAbilityStarted": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "AbilityTypeCategory",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AIDebugVisualisationCylinder": {
+    "ClassSize": "0x24",
+    "Attributes": [
+      {
+        "Name": "To",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "From",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "LifeTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "Colour",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "PerDepthSpawnChance": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "DepthUpperBound",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DepthLowerBound",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "ChanceToSpawn",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "TinySharkDespawnTelemetryEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "TinySharkId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TinySharkDespawnReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AIProgressiveWavesSpawnerArchive": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CurrentWaveIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "TargetItemDropProgressionPair": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "CrewItemSpawn",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CaptainItemSpawn",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "HearingThreat": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SoundTag",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Threat",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "CarrierSpeedThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "EventOwnedPawnFinishedSpawning": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "AICoordinator",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Region",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SpawnPos",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ActorToPerceiveOnSpawn",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "MaximumDistanceToPerceiveOnSpawn",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Skillset",
+        "Type": "class AthenaAIControllerParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "HomeRegionZone",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "TargetInteractableOnSpawn",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "OwnerAISpawner",
+        "Type": "class AISpawner*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "AIDebugVisualisationLine": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "From",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "To",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "LifeTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Colour",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "TinySharkShipSpawnData": {
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Timer",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ControllerParams",
+        "Type": "TArray<Class>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "ControllerParamsToUse",
+        "Type": "struct WeightedProbabilityRange",
+        "Size": "0x20",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "ChanceAndBlackboardKeyPair": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "Chance",
+        "Type": "struct AIDataProviderFloatValue",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BlackboardKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "EventFaunaThreatLevelChanged": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "ThreatLevel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventOceanCrawlerAIAbilityAudioRequest": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "RequestAudioKey",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AudioDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "AIEncounterGenerationRecipeFeatureBasedRankOrderList": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "FeatureName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Recipes",
+        "Type": "TArray<class AIEncounterGenerationRecipe*>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventNewAIStrategy": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "NewAIStrategy",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventPlayerLeftAISpawnableWater": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SpawnLocationGroup": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "AllowedSpawnTypes",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SpawnLocations",
+        "Type": "TArray<struct Vector>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "AIExclusionZone": {
     "ClassSize": "0x2c",
     "Attributes": [
       {
         "Name": "Id",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "Location",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x10"
       },
@@ -34,13 +968,219 @@
       },
       {
         "Name": "RemoveTimer",
-        "Type": "struct",
+        "Type": "struct TimerHandle",
         "Size": "0x4",
         "Offset": "0x28"
       }
     ]
   },
-  "EventNewAIStrategy": {
+  "AthenaAIControllerParamValue": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "ParamName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Value",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventAIAmmoSelected": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Ammo",
+        "Type": "class AthenaAIAmmoDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AIStrategyVulnerabilityData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Strategy",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PreventedHealthChanges",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventFaunaAgitationBegun": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "SourceActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AIBountySpawnerWave": {
+    "ClassSize": "0x188",
+    "Attributes": [
+      {
+        "Name": "IsTarget",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "IsUsingDialogue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x129"
+      },
+      {
+        "Name": "MinPlayersToEnable",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x12c"
+      },
+      {
+        "Name": "Gender",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "Rank",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x131"
+      },
+      {
+        "Name": "PostSpawnAction",
+        "Type": "class PostBountyAIPawnSpawnedAction*",
+        "Size": "0x8",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "BountyReward",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x178"
+      },
+      {
+        "Name": "BountyRewardSpawnData",
+        "Type": "class ItemSpawnData*",
+        "Size": "0x8",
+        "Offset": "0x180"
+      }
+    ]
+  },
+  "EventOwnedPawnStartedDying": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "DeathType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Instigator",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "KillReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AthenaAIItemParamValue": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "ItemClass",
+        "Type": "assetclass",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ParamName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Value",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "MinMaxBurrowAbility": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MinValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "AIPerCrewSpawnerRespawnSettings": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "MinRespawnTimeInterval",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxRespawnTimeInterval",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "RespawnChance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "DioramaCategoryEntries": {
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "EntriesByIslandName",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventNewAIStrategyBPReadable": {
     "ClassSize": "0x8",
     "Attributes": [
       {
@@ -51,13 +1191,232 @@
       }
     ]
   },
-  "EventOwnedPawnFinishedDying": {
-    "ClassSize": "0x1",
+  "EventAIPawnCarrierChange": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "DeathType",
+        "Name": "Carrier",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PetLoadedMaterial": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MaterialInstance",
+        "Type": "class MaterialInstance*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CastShadows",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AIFixedWavesSpawnerArchive": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "NumSpawnedPawnsInWaves",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "WavesSpawnedOnSpottedNewTarget",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "EventAIStartedDeadActionState": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DeathReason",
         "Type": "byte",
         "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Killer",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PetTurnRateModifier": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Strategy",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TurnRateModifier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AIDebugVisualisationCone": {
+    "ClassSize": "0x2c",
+    "Attributes": [
+      {
+        "Name": "Origin",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Direction",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "Length",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "AngleWidthRadians",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "AngleHeightRadians",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "LifeTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "Colour",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "EventAIBountySpawnerTargetKilled": {
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "TargetName",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TargetActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "RewardId",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "ItemDropped",
+        "Type": "class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "Rank",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "DeathLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "Instigator",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "AIStrategyMovementProperties": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "AIStrategy",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxSpeedAmp",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MaxAccelAmp",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "OverrideRVOAvoidanceRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "OverrideBlendSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "EventAIFormEncounteredByLocalPlayer": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "FormType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "AIBountySpawnerArchiveWaveEntry": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "NumPawnsToSpawn",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
       }
     ]
@@ -109,81 +1468,86 @@
       }
     ]
   },
-  "EventPlayerSetFootUponAISpawnRegion": {
+  "AthenaAICharacterCannonTarget": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TargetLocation",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "CustomPlayersAITrackerData": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Player",
-        "Type": "class Actor*",
+        "Name": "Tracker",
+        "Type": "class AIPlayerTracker*",
         "Size": "0x8",
         "Offset": "0x0"
       }
     ]
   },
-  "AISpawnTelemetryEvent": {
-    "ClassSize": "0x10",
+  "BountySpawnerAudioChangedNetworkEvent": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "LocationName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TinySharkCollidedTelemetryEvent": {
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "TinySharkId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
+        "Name": "AudioState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x18"
       },
       {
-        "Name": "TinySharkName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
+        "Name": "Intensity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
       },
       {
-        "Name": "ObstacleName",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "BountyType",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x20"
       },
       {
-        "Name": "CollisionLocation",
-        "Type": "struct",
+        "Name": "BountyPosition",
+        "Type": "struct Vector",
         "Size": "0xc",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "HomeLocation",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "BehaviourTreeInfo",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "BlackboardInfo",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x58"
+        "Offset": "0x24"
       }
     ]
   },
-  "AIFormRankMapping": {
+  "AthenaAIControllerWeightedRangesParamValue": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "ParamName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Value",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AISkillsetRankMapping": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Form",
-        "Type": "class AthenaAIFormDataAsset*",
+        "Name": "Skillset",
+        "Type": "class AthenaAIControllerParamsDataAsset*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -195,37 +1559,120 @@
       }
     ]
   },
-  "EventPawnRemoveOwnership": {
+  "MinMaxAbilityRange": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "AIPawn",
-        "Type": "class Pawn*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "PetMovementRequest": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "State",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "MinDistanceToTarget",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "TargetMeshZOffset",
+        "Name": "MaxDistanceToTarget",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
+      }
+    ]
+  },
+  "AISpawnTypeParams": {
+    "ClassSize": "0xe8",
+    "Attributes": [
+      {
+        "Name": "AIClass",
+        "Type": "assetclass",
+        "Size": "0x20",
+        "Offset": "0x0"
       },
       {
-        "Name": "AdjustingFlight",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "SkillsetOverride",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "LoadoutOverride",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "FormOverride",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "AmmoOverride",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "ItemDropComponentClassOverride",
+        "Type": "assetclass",
+        "Size": "0x20",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "AIClassIdOverride",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "TeamColorOverride",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "EncounterTrackingParams",
+        "Type": "struct EncounterParams",
+        "Size": "0xc",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "DioramaRole",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xa4"
+      },
+      {
+        "Name": "LocalisableName",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0xb0"
+      }
+    ]
+  },
+  "LimitedInteractbaleAICreatureSplineInteractionParams": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "PressedNotificationInputId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ReleasedNotificationInputId",
+        "Type": "class UClass*",
+        "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "DescriptorVerb",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "HoldTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48"
       }
     ]
   },
@@ -252,202 +1699,76 @@
       }
     ]
   },
-  "EscalatingWave": {
-    "ClassSize": "0x108",
+  "AttitudeOverrideEntry": {
+    "ClassSize": "0x2",
     "Attributes": [
       {
-        "Name": "WaveNumber",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "TeamToOverride",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "SpawnedWave",
-        "Type": "struct",
-        "Size": "0x100",
-        "Offset": "0x8"
+        "Name": "AttitudeOverride",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
       }
     ]
   },
-  "AIControllerDynamicBalancingPlayerShipValueDesc": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ShipValue",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AIPartId": {
+  "EventSwimRotationModeChanged": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "PartId",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AIEncounterGenerationRecipeFeatureBasedRankOrderList": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "FeatureName",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "NewSwimRotationMode",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "Recipes",
-        "Type": "TArray<class AIEncounterGenerationRecipe*>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AITargetInfo": {
-    "ClassSize": "0x34",
-    "Attributes": [
-      {
-        "Name": "Bounds",
-        "Type": "struct",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TargetPos",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "TargetVelocity",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "TargetYaw",
+        "Name": "NewRotationRate",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x30"
+        "Offset": "0x4"
       }
     ]
   },
-  "EventAIAmmoSelected": {
-    "ClassSize": "0x8",
+  "AIEncounterAndWaveSettingsOverride": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Ammo",
-        "Type": "class AthenaAIAmmoDataAsset*",
+        "Name": "EncounterSettings",
+        "Type": "class AIEncounterSettings*",
         "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AIHealthChangeTelemetryEvent": {
-    "ClassSize": "0x2c",
-    "Attributes": [
-      {
-        "Name": "AttackId",
-        "Type": "struct",
-        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "CurrentHealth",
+        "Name": "SpawnWaveProgression",
+        "Type": "class AISpawnWaveSequenceRankProgression*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Chance",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
       },
       {
-        "Name": "PreviousHealth",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "HealthDelta",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "Prerequisites",
+        "Type": "TArray<class AISpawnerPrerequisiteBase*>",
+        "Size": "0x10",
         "Offset": "0x18"
-      },
+      }
+    ]
+  },
+  "EventTinySharkDespawned": {
+    "ClassSize": "0x1",
+    "Attributes": [
       {
-        "Name": "Position",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "Reason",
+        "Name": "DespawnReason",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "TinySharkShipSpawnData": {
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Timer",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ControllerParams",
-        "Type": "TArray<Class>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "ControllerParamsToUse",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "AIDioramaLocationSourceComponentData": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "RelativeTransform",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Interactable",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "DioramaCategoryEntries": {
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "EntriesByIslandName",
-        "Type": "map",
-        "Size": "0x50",
         "Offset": "0x0"
       }
     ]
@@ -463,7 +1784,7 @@
       },
       {
         "Name": "BlackboardKey",
-        "Type": "struct",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x8"
       },
@@ -475,134 +1796,64 @@
       }
     ]
   },
-  "AIAbilityDebugReplicatedIntervals": {
-    "ClassSize": "0xc",
+  "TinySharkSpawnTelemetryEvent": {
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "ActivationTimerCooldown",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "TinySharkId",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "TimeBeforeNextExecution",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
+        "Name": "TinySharkType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       },
       {
-        "Name": "DamageBeforeNextExecution",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
+        "Name": "ConfigSpawnId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "SpawnLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x30"
       }
     ]
   },
-  "BountySpawnerIntensityUpdateNetworkEvent": {
+  "BountySpawnerTargetDesc": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "IsFinalWave",
-        "Type": "bool",
+        "Name": "Gender",
+        "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Intensity",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      }
-    ]
-  },
-  "AITypeData": {
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "AITypeName",
-        "Type": "struct FName",
-        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "AIPawnClass",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x8"
+        "Name": "Rank",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
       },
       {
-        "Name": "DefaultDebugSkillset",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "DefaultDebugLoadout",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "DefaultDebugAIClassId",
+        "Name": "AIClassIdOverride",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "RequireNavMesh",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "AIRegionCostUnits",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "AIWorldCostUnits",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "FeatureToggle",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x4c"
-      }
-    ]
-  },
-  "DamageModifierCrewProximityVulnerabilityPairs": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "NumPlayersInRange",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "GlobalDamageMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "DamageMultipliers",
-        "Type": "TArray<struct DamageableVulnerabilityPair>",
-        "Size": "0x10",
         "Offset": "0x8"
       }
     ]
   },
-  "HearingThreat": {
+  "CarriedItemThreatOverride": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "SoundTag",
-        "Type": "struct FName",
+        "Name": "ItemDesc",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -611,86 +1862,73 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "EventAIFormSelected": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Form",
+        "Type": "class AthenaAIFormDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventCrewedShipLeftAISpawnRegion": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Ship",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ExperienceTracker": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Tracker",
+        "Type": "class TaleQuestTinySharkExperienceTracker*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TinySharkTrackedShipDistanceThresholdByFeature": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x0"
       },
       {
-        "Name": "CarrierSpeedThreshold",
+        "Name": "TrackedShipDistanceThreshold",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc"
       }
     ]
   },
-  "AIDioramaPawn": {
-    "ClassSize": "0x48",
+  "AITargetBounds": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Pawn",
-        "Type": "class Pawn*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AICountTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "NumTotalSpawns",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "Offset",
+        "Type": "struct Vector",
+        "Size": "0xc",
         "Offset": "0x0"
       },
       {
-        "Name": "CurrentTotalWorldAICostUnits",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "NumActiveRegions",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "NumPlayers",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "Extents",
+        "Type": "struct Vector",
+        "Size": "0xc",
         "Offset": "0xc"
-      }
-    ]
-  },
-  "TargetItemDropProgressionPair": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "CrewItemSpawn",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CaptainItemSpawn",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "PetLoadedMaterial": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MaterialInstance",
-        "Type": "class MaterialInstance*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CastShadows",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8"
       }
     ]
   },
@@ -699,7 +1937,7 @@
     "Attributes": [
       {
         "Name": "MaterialReference",
-        "Type": "struct",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -711,240 +1949,88 @@
       }
     ]
   },
-  "EventOwnedPawnFinishedSpawning": {
-    "ClassSize": "0x50",
+  "AIDioramaLocationSourceComponentData": {
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "AICoordinator",
-        "Type": "class Object*",
-        "Size": "0x8",
+        "Name": "RelativeTransform",
+        "Type": "struct Transform",
+        "Size": "0x30",
         "Offset": "0x0"
       },
       {
-        "Name": "Region",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SpawnPos",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ActorToPerceiveOnSpawn",
+        "Name": "Interactable",
         "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "MaximumDistanceToPerceiveOnSpawn",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Skillset",
-        "Type": "class AthenaAIControllerParamsDataAsset*",
-        "Size": "0x8",
         "Offset": "0x30"
-      },
-      {
-        "Name": "HomeRegionZone",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "TargetInteractableOnSpawn",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "OwnerAISpawner",
-        "Type": "class AISpawner*",
-        "Size": "0x8",
-        "Offset": "0x48"
       }
     ]
   },
-  "AthenaAIControllerDamageTargetScoreFromPerceivedTarget": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "MinDamageTargetScore",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxDamageTargetScore",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "DamageForMinDamageTargetScore",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "DamageForMaxDamageTargetScore",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "RateToDecayDamagedFromTarget",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "AITelemetryFragment": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "AIType",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AIId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "AILoadOut",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "AIPawnType",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "AISkillset",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "AIForm",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "AIClass",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "WeightedAISpawnTypeParams": {
-    "ClassSize": "0xf0",
-    "Attributes": [
-      {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxTimesCanBeSelected",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Params",
-        "Type": "struct",
-        "Size": "0xe8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AILoadoutRankMapping": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Loadout",
-        "Type": "class LoadoutAsset*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weights",
-        "Type": "TArray<float>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EventTinySharkDamaged": {
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "ImpactDamageEvent",
-        "Type": "struct",
-        "Size": "0x58",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AIDebugVisualisationSphere": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Centre",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "LifeTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Colour",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "AthenaAICharacterControllerSpawnItemDescForItemCategory": {
+  "AthenaAICharacterControllerWeightedAmmoType": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ItemCategory",
+        "Name": "AmmoType",
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "ItemDesc",
+        "Name": "Weighting",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "MerchantCrateMetaWrapper": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "Health",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "FaunaType",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "TimeSpentStarving",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "TimeToStarveInSeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "TempSpawnLocationForActor",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "WeightedAIStrategyChance": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Strategy",
         "Type": "class UClass*",
         "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WeightedChance",
+        "Type": "struct AIDataProviderFloatValue",
+        "Size": "0x30",
         "Offset": "0x8"
       }
     ]
@@ -984,416 +2070,6 @@
       }
     ]
   },
-  "AIBountySpawnerWaveLocation": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SelectionWeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "AllowForTarget",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EventFaunaAgitationBegun": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "SourceActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AdditionalSpawnerBehaviour": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "BehaviourStrategy",
-        "Type": "class SpawnerBehaviourStrategy*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "PetPartSizeMapping": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "PetSize",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PetScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "AthenaAIControllerSenseSettingOverride": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "AIStrategy",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SenseSettings",
-        "Type": "struct",
-        "Size": "0x14",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ClearPerceivedData",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1c"
-      }
-    ]
-  },
-  "AIIncrementalWaveSpawnerArchive": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "LastTargetPosition",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "CurrentNumSpawnedPawns",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "AISkillsetRankMapping": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Skillset",
-        "Type": "class AthenaAIControllerParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weights",
-        "Type": "TArray<float>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AIFormDamageResponse": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "DamagerType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DamageMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "HitReaction",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "IsKnockbackDisabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xd"
-      },
-      {
-        "Name": "IsStunDisabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xe"
-      }
-    ]
-  },
-  "PlayerKillAITelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AttackId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventPawnStartedDying": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "AIPawn",
-        "Type": "class Pawn*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DeathType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Instigator",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EventFaunaThreatLevelChanged": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "ThreatLevel",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AIPartIdNumVariantInfo": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "AIPartId",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NumVariants",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AIDebugVisualisationCone": {
-    "ClassSize": "0x2c",
-    "Attributes": [
-      {
-        "Name": "Origin",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Direction",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "Length",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "AngleWidthRadians",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "AngleHeightRadians",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "LifeTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "Colour",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AISpawnTypeParams": {
-    "ClassSize": "0xe8",
-    "Attributes": [
-      {
-        "Name": "AIClass",
-        "Type": "assetclass",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SkillsetOverride",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "LoadoutOverride",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "FormOverride",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "AmmoOverride",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "ItemDropComponentClassOverride",
-        "Type": "assetclass",
-        "Size": "0x20",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "AIClassIdOverride",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "TeamColorOverride",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "EncounterTrackingParams",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "DioramaRole",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xa4"
-      },
-      {
-        "Name": "LocalisableName",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0xb0"
-      }
-    ]
-  },
-  "SirenEncounterData": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "GameWorld",
-        "Type": "class World*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SirenSpawner",
-        "Type": "class AIPerPlayerSpawner*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "AIRegion",
-        "Type": "class SimpleAIRegion*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ProximityPlayerTracker",
-        "Type": "class AIProximityPlayerTracker*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "ShutdownTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "SirenEncounterState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x24"
-      }
-    ]
-  },
-  "EventAIBountySpawnerWaveCompleted": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "IslandName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ParticipatingCrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "WaveIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "TotalWaves",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "InstigatorOfFinalAIPawnDeath",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
   "EventOceanCrawlerAIBuffAudioRequest": {
     "ClassSize": "0x1",
     "Attributes": [
@@ -1405,313 +2081,31 @@
       }
     ]
   },
-  "AIDropSpawnerRankMapping": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "SpawnerClass",
-        "Type": "assetclass",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weights",
-        "Type": "TArray<float>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "AISpawnWaveSequenceRankMapping": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "SpawnWaveSequence",
-        "Type": "class AISpawnWaveSequence*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weights",
-        "Type": "TArray<float>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EventAthenaAISpawnBeginAnim": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "SpawnType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventVisualAppearanceSelected": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "PartsCategory",
-        "Type": "class AIPartsCategory*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AIPartId",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "PartsIndexToUse",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ColorTextureIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "EventOceanCrawlerAIAbilityAudioRequest": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "RequestAudioKey",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AudioDelay",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "EventNewAIStrategyBPReadable": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "NewAIStrategy",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AthenaAIControllerHealthCustomisation": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "OverrideMaxHealth",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "OverrideMaxHealthWithMinMax",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "MinHealth",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "MaxHealth",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AISpawnerWave": {
-    "ClassSize": "0x100",
-    "Attributes": [
-      {
-        "Name": "SpawnChance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NumOfSpawnsInWave",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SpawnTypeParamsOverride",
-        "Type": "struct",
-        "Size": "0x48",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "DelayBeforeWave",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "DelayBetweenSpawns",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "DelayBeforeNextWaveIfSuccessful",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "AttackableTypeToAnimMapping": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "AttackType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AnimMontage",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "PlayAsDynamicMontage",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "AnimLength",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "TimeIntoAnimOfAttack",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "TargetKnockBackStrength",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "RumbleTag",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "SpawnLocationGroup": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "AllowedSpawnTypes",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SpawnLocations",
-        "Type": "TArray<struct Vector>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "AIFixedWavesSpawnerArchive": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "NumSpawnedPawnsInWaves",
-        "Type": "TArray<int>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "WavesSpawnedOnSpottedNewTarget",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "PetWieldableReactMapping": {
+  "EventFaunaPickedup": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "WieldableType",
-        "Type": "class UClass*",
+        "Name": "Interactor",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "ReactId",
-        "Type": "struct FName",
+        "Name": "PickedUpFauna",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
       }
     ]
   },
-  "EventAIAbilityStarted": {
-    "ClassSize": "0x8",
+  "AIDioramaPawn": {
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "AbilityTypeCategory",
-        "Type": "class UClass*",
+        "Name": "Pawn",
+        "Type": "class Pawn*",
         "Size": "0x8",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "AIDebugVisualisationLine": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "From",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "To",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "LifeTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Colour",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1c"
       }
     ]
   },
@@ -1792,681 +2186,14 @@
       }
     ]
   },
-  "AthenaAIAbilityDamageStage": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AbilitiesInStage",
-        "Type": "TArray<class AthenaAIAbilityStageParams*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AIPartsCategoryMapping": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ClassId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PartsCategory",
-        "Type": "class AIPartsCategory*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AITargetBounds": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Offset",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Extents",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "BountySpawnerNewWaveGroupSpawnedEvent": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "IsFinalWave",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IslandName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "ParticipatingCrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "WaveIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "TotalWaves",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "Instigator",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AIAbilityContinuousCooldownParameterData": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "InitialCooldown",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CooldownBetweenActivations",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "AIPerCrewSpawnerRespawnSettings": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "MinRespawnTimeInterval",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxRespawnTimeInterval",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "RespawnChance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AIEncounterAndWaveSettingsOverride": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "EncounterSettings",
-        "Type": "class AIEncounterSettings*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SpawnWaveProgression",
-        "Type": "class AISpawnWaveSequenceRankProgression*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Chance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Prerequisites",
-        "Type": "TArray<class AISpawnerPrerequisiteBase*>",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "AICustomClassIdNameOverrides": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ClassIds",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Names",
-        "Type": "TArray<struct Text>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "AthenaAIAbilityPlayerBasedRange": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "MaxPlayers",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WeightedArray",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AthenaAIItemParamValue": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "ItemClass",
-        "Type": "assetclass",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ParamName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "Value",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "EventPlayerEnteredAISpawnRegion": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Player",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventAthenaAISpawnActive": {
-    "ClassSize": "0x2",
-    "Attributes": [
-      {
-        "Name": "SpawnType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SpawnActive",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
-      }
-    ]
-  },
-  "WeightedAmmoType": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ProbabilityAtRange",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AmmoType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AISpawnOverride": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "FormOverride",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AIAmmoRankMapping": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Ammo",
-        "Type": "class AthenaAIAmmoDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weights",
-        "Type": "TArray<float>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EventTinySharkDespawned": {
+  "EventOwnedPawnFinishedDying": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "DespawnReason",
+        "Name": "DeathType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "PetFlyingStrategyProperties": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Strategy",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ChanceOfFlying",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "MinFlyingMeshZOffset",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "MaxFlyingMeshZOffset",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ItemCategory",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DistanceInMToProjectileHitChanceCurve",
-        "Type": "class CurveFloat*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AICustomNameTitleMapping": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "AIClassId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Title",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "TargetSkillsetProgressionPair": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "CrewSkillset",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CaptainSkillset",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "BountySpawnerAudioChangedNetworkEvent": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "AudioState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Intensity",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "BountyType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "BountyPosition",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x24"
-      }
-    ]
-  },
-  "MinMaxBurrowAbility": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "MinValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "ConditionalAISpawnOverride": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Condition",
-        "Type": "class AISpawnOverrideCondition*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Override",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EventAIBountySpawnerTargetKilled": {
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "TargetName",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TargetActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "RewardId",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "ItemDropped",
-        "Type": "class ItemInfo*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "Rank",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "DeathLocation",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x54"
-      },
-      {
-        "Name": "Instigator",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "ChanceForSharksToBlockSirenEncounterData": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "NumberOfSharks",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ChanceToSpawn",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "RadiusToCheck",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "WeightedAIStrategyChance": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Strategy",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WeightedChance",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AIStrategyMovementProperties": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "AIStrategy",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxSpeedAmp",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "MaxAccelAmp",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "OverrideRVOAvoidanceRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "OverrideBlendSpeed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "AIProgressiveWavesSpawnerArchive": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CurrentWaveIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "IslandDioramas": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Entries",
-        "Type": "TArray<class Interface*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AIEncounterSpecification": {
-    "ClassSize": "0xd0",
-    "Attributes": [
-      {
-        "Name": "PawnClass",
-        "Type": "assetclass",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Skillset",
-        "Type": "class AthenaAIControllerParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "Loadout",
-        "Type": "class LoadoutAsset*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Form",
-        "Type": "class AthenaAIFormDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "Ammo",
-        "Type": "class AthenaAIAmmoDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "AIClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "PartsCategory",
-        "Type": "class AIPartsCategory*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "ItemDropComponentClass",
-        "Type": "assetclass",
-        "Size": "0x20",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "TeamColorIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "DioramaRole",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x74"
-      },
-      {
-        "Name": "LocalisableName",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "EncounterTrackingParams",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "MinPlayersToEnable",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0xc4"
-      },
-      {
-        "Name": "ShowNameplate",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "IsUsingDialogue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc9"
       }
     ]
   },
@@ -2517,59 +2244,163 @@
       }
     ]
   },
-  "AIActorTimeout": {
-    "ClassSize": "0x10",
+  "AIHealthChangeTelemetryEvent": {
+    "ClassSize": "0x2c",
     "Attributes": [
       {
-        "Name": "AIActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
+        "Name": "AttackId",
+        "Type": "struct Guid",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "Timer",
+        "Name": "CurrentHealth",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x8"
+        "Offset": "0x10"
+      },
+      {
+        "Name": "PreviousHealth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "HealthDelta",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Position",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "Reason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
       }
     ]
   },
-  "EventFaunaPickedup": {
-    "ClassSize": "0x10",
+  "EventAIBountySpawnerWaveCompleted": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Interactor",
-        "Type": "class Actor*",
+        "Name": "IslandName",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "PickedUpFauna",
+        "Name": "ParticipatingCrewIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "WaveIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "TotalWaves",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "InstigatorOfFinalAIPawnDeath",
         "Type": "class Actor*",
         "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "AISpawnWaveSequenceRankMapping": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "SpawnWaveSequence",
+        "Type": "class AISpawnWaveSequence*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weights",
+        "Type": "TArray<float>",
+        "Size": "0x10",
         "Offset": "0x8"
       }
     ]
   },
-  "FaunaBreedRequirement": {
+  "PetWieldableReactMapping": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Breed",
+        "Name": "WieldableType",
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "Count",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "ReactId",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x8"
       }
     ]
   },
-  "PetTurnRateModifier": {
+  "EventPawnFinishedDying": {
     "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AIPawn",
+        "Type": "class Pawn*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DeathType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventAIPawnRemovedFromAIRegion": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AIPawn",
+        "Type": "class Pawn*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ItemCategory",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DistanceInMToProjectileHitChanceCurve",
+        "Type": "class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PetFlyingStrategyProperties": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "Strategy",
@@ -2578,133 +2409,44 @@
         "Offset": "0x0"
       },
       {
-        "Name": "TurnRateModifier",
+        "Name": "ChanceOfFlying",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "EventAIPawnCarrierChange": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Carrier",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventPlayerLeftAISpawnRegion": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Player",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ExperienceTracker": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Tracker",
-        "Type": "class TaleQuestTinySharkExperienceTracker*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AIPerCrewSpawnerStoryBasedRespawnSettings": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "RespawnSettings",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x0"
       },
       {
-        "Name": "Story",
-        "Type": "struct",
-        "Size": "0x8",
+        "Name": "MinFlyingMeshZOffset",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0xc"
+      },
+      {
+        "Name": "MaxFlyingMeshZOffset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
       }
     ]
   },
-  "ChanceAndBlackboardKeyPair": {
-    "ClassSize": "0x58",
+  "AICustomNameTitleMapping": {
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "Chance",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BlackboardKey",
-        "Type": "struct",
-        "Size": "0x28",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "AttitudeOverrideEntry": {
-    "ClassSize": "0x2",
-    "Attributes": [
-      {
-        "Name": "TeamToOverride",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AttitudeOverride",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1"
-      }
-    ]
-  },
-  "EventAILoadoutSelected": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Loadout",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NonStorableItem",
+        "Name": "AIClassId",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "AITelemetryFragmentInput": {
-    "ClassSize": "0xd8",
-    "Attributes": [
-      {
-        "Name": "AIPawn",
-        "Type": "class Pawn*",
-        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "AIEncounterSpecification",
-        "Type": "struct",
-        "Size": "0xd0",
+        "Name": "Title",
+        "Type": "struct FText",
+        "Size": "0x38",
         "Offset": "0x8"
       }
     ]
   },
-  "TinySharkDespawnTelemetryEvent": {
-    "ClassSize": "0x18",
+  "TinySharkCollidedTelemetryEvent": {
+    "ClassSize": "0x68",
     "Attributes": [
       {
         "Name": "TinySharkId",
@@ -2713,233 +2455,79 @@
         "Offset": "0x0"
       },
       {
-        "Name": "TinySharkDespawnReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "LimitedInteractbaleAICreatureSplineInteractionParams": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "PressedNotificationInputId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ReleasedNotificationInputId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "DescriptorVerb",
-        "Type": "struct FText",
-        "Size": "0x38",
+        "Name": "TinySharkName",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x10"
       },
       {
-        "Name": "HoldTime",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "ObstacleName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "CollisionLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "HomeLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "BehaviourTreeInfo",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x48"
-      }
-    ]
-  },
-  "AthenaAICharacterCannonTarget": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
       },
       {
-        "Name": "TargetLocation",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x4"
+        "Name": "BlackboardInfo",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x58"
       }
     ]
   },
-  "EventAIPawnAddedToAIRegion": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AIPawn",
-        "Type": "class Pawn*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "FeatureToggledAIEncounterSpecificSkillSet": {
+  "BountySpawnerIntensityUpdateNetworkEvent": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "ToggledSpecificSkillset",
-        "Type": "struct",
+        "Name": "IsFinalWave",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Intensity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "EventTinySharkSpawned": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TinySharkPartTag",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "Feature",
-        "Type": "struct",
-        "Size": "0xc",
+        "Name": "SpawnConfigId",
+        "Type": "struct Guid",
+        "Size": "0x10",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "EventCrewedShipLeftAISpawnRegion": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Ship",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CarriedItemThreatOverride": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ItemDesc",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
       },
       {
-        "Name": "Threat",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "MinMaxAbilityRange": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "MinDistanceToTarget",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxDistanceToTarget",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "AIBountySpawnerWave": {
-    "ClassSize": "0x188",
-    "Attributes": [
-      {
-        "Name": "IsTarget",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "IsUsingDialogue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x129"
-      },
-      {
-        "Name": "MinPlayersToEnable",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x12c"
-      },
-      {
-        "Name": "Gender",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x130"
-      },
-      {
-        "Name": "Rank",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x131"
-      },
-      {
-        "Name": "PostSpawnAction",
-        "Type": "class PostBountyAIPawnSpawnedAction*",
-        "Size": "0x8",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "BountyReward",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x178"
-      },
-      {
-        "Name": "BountyRewardSpawnData",
-        "Type": "class ItemSpawnData*",
-        "Size": "0x8",
-        "Offset": "0x180"
-      }
-    ]
-  },
-  "AthenaAIControllerWeightedRangesParamValue": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "ParamName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Value",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AIDebugVisualisationCylinder": {
-    "ClassSize": "0x24",
-    "Attributes": [
-      {
-        "Name": "To",
-        "Type": "struct",
+        "Name": "SpawnLocation",
+        "Type": "struct Vector",
         "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "From",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "LifeTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "Colour",
-        "Type": "byte",
-        "Size": "0x1",
         "Offset": "0x20"
       }
     ]
@@ -2961,72 +2549,20 @@
       }
     ]
   },
-  "AIWeightedProbabilityRangeOfRangesRankMapping": {
-    "ClassSize": "0x18",
+  "AIDropSpawnerRankMapping": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "RangeOfRanges",
-        "Type": "class AIWeightedProbabilityRangeOfRangesAsset*",
-        "Size": "0x8",
+        "Name": "SpawnerClass",
+        "Type": "assetclass",
+        "Size": "0x20",
         "Offset": "0x0"
       },
       {
         "Name": "Weights",
         "Type": "TArray<float>",
         "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AIStrategyVulnerabilityData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Strategy",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PreventedHealthChanges",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "MerchantCrateMetaWrapper": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "Health",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "FaunaType",
-        "Type": "struct",
-        "Size": "0x10",
         "Offset": "0x20"
-      },
-      {
-        "Name": "TimeSpentStarving",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "TimeToStarveInSeconds",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "TempSpawnLocationForActor",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x38"
       }
     ]
   },
@@ -3047,144 +2583,405 @@
       }
     ]
   },
-  "BountySpawnerTargetDesc": {
+  "EventCrewedShipEnteredAISpawnRegion": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Gender",
-        "Type": "byte",
+        "Name": "Ship",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AIPersistentSpawnerWave": {
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Name": "CacheHealthOnDespawn",
+        "Type": "bool",
         "Size": "0x1",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "AITypeToCache",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x108"
+      }
+    ]
+  },
+  "WeightedAmmoType": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ProbabilityAtRange",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "Rank",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "AIClassIdOverride",
+        "Name": "AmmoType",
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x8"
       }
     ]
   },
-  "EventOwnedPawnStartedDying": {
-    "ClassSize": "0x18",
+  "AIBountySpawnerWaveLocation": {
+    "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "DeathType",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
         "Offset": "0x0"
       },
       {
-        "Name": "Instigator",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Name": "SelectionWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
       },
       {
-        "Name": "KillReason",
-        "Type": "byte",
+        "Name": "AllowForTarget",
+        "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
       }
     ]
   },
-  "EventAIStartedDeadActionState": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "DeathReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Killer",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AthenaAISharedControllerParamToggledValues": {
+  "EventPlayerSetFootUponAISpawnRegion": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Assets",
-        "Type": "TArray<class AthenaAIControllerSharedParamValuesDataAsset*>",
-        "Size": "0x10",
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "FeatureName",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x10"
       }
     ]
   },
-  "AthenaAIControllerParamValue": {
-    "ClassSize": "0xc",
+  "IslandDioramas": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ParamName",
+        "Name": "Entries",
+        "Type": "TArray<class Interface*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AIDebugVisualisationSphere": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Centre",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "LifeTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Colour",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "AISpawnContextData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "Value",
+        "Name": "Id",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "TargetSkillsetProgressionPair": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "CrewSkillset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CaptainSkillset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EventPawnStartedDying": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "AIPawn",
+        "Type": "class Pawn*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DeathType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Instigator",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AthenaAIControllerHealthCustomisation": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "OverrideMaxHealth",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "OverrideMaxHealthWithMinMax",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "MinHealth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "MaxHealth",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
       }
     ]
   },
-  "CustomPlayersAITrackerData": {
-    "ClassSize": "0x20",
+  "AIDebugVisualisationBox": {
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "Tracker",
-        "Type": "class AIPlayerTracker*",
-        "Size": "0x8",
+        "Name": "Centre",
+        "Type": "struct Vector",
+        "Size": "0xc",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Extents",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct Quat",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "LifeTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "Colour",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x34"
       }
     ]
   },
-  "ReplicatedAIPartsData": {
+  "AIIncrementalWaveSpawnerArchive": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "PartsCategory",
-        "Type": "class AIPartsCategory*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AIPartId",
-        "Type": "struct",
-        "Size": "0x8",
+        "Name": "LastTargetPosition",
+        "Type": "struct Vector",
+        "Size": "0xc",
         "Offset": "0x8"
       },
       {
-        "Name": "MeshIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "TeamColorIndex",
+        "Name": "CurrentNumSpawnedPawns",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x14"
       }
     ]
   },
-  "EventAIPawnRemovedFromAIRegion": {
+  "ChanceForSharksToBlockSirenEncounterData": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "NumberOfSharks",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ChanceToSpawn",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "RadiusToCheck",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventPlayerEnteredAISpawnRegion": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AIControllerDynamicBalancingPlayerShipValueDesc": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ShipValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AIPartId": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "PartId",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventAthenaAISpawnBeginAnim": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "SpawnType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AICustomClassIdNameOverrides": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ClassIds",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Names",
+        "Type": "TArray<struct Text>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AthenaAIAbilityPlayerBasedRange": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "MaxPlayers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WeightedArray",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AIPartIdNumVariantInfo": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "AIPartId",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumVariants",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AIAmmoRankMapping": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Ammo",
+        "Type": "class AthenaAIAmmoDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weights",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventAIPawnAddedToAIRegion": {
     "ClassSize": "0x10",
     "Attributes": [
       {
@@ -3195,122 +2992,118 @@
       }
     ]
   },
-  "TinySharkWorldSettingsParams": {
-    "ClassSize": "0x1",
+  "AdditionalSpawnerBehaviour": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "TinySharkEnabled",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "BehaviourStrategy",
+        "Type": "class SpawnerBehaviourStrategy*",
+        "Size": "0x8",
         "Offset": "0x0"
       }
     ]
   },
-  "EventAIFormEncounteredByLocalPlayer": {
-    "ClassSize": "0x20",
+  "EventAthenaAISpawnActive": {
+    "ClassSize": "0x2",
     "Attributes": [
       {
-        "Name": "FormType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "EventSwimRotationModeChanged": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "NewSwimRotationMode",
+        "Name": "SpawnType",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "NewRotationRate",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
+        "Name": "SpawnActive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
       }
     ]
   },
-  "EventTinySharkSpawned": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "TinySharkPartTag",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SpawnConfigId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SpawnLocation",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "PerDepthSpawnChance": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "DepthUpperBound",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DepthLowerBound",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "ChanceToSpawn",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "TinySharkTrackedShipDistanceThresholdByFeature": {
+  "AIActorTimeout": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Feature",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TrackedShipDistanceThreshold",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "AIAbilityFollowUp": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AbilityType",
-        "Type": "class UClass*",
+        "Name": "AIActor",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "Chance",
+        "Name": "Timer",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "AITypeData": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "AITypeName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AIPawnClass",
+        "Type": "struct StringClassReference",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "DefaultDebugSkillset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "DefaultDebugLoadout",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "DefaultDebugAIClassId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "RequireNavMesh",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "AIRegionCostUnits",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "AIWorldCostUnits",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "FeatureToggle",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x4c"
+      }
+    ]
+  },
+  "EventTinySharkDamaged": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "ImpactDamageEvent",
+        "Type": "struct ImpactDamageEvent",
+        "Size": "0x58",
+        "Offset": "0x0"
       }
     ]
   },
@@ -3319,7 +3112,7 @@
     "Attributes": [
       {
         "Name": "BlackboardKey",
-        "Type": "struct",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
         "Offset": "0x0"
       },
@@ -3349,14 +3142,54 @@
       }
     ]
   },
-  "EventPlayerLeftAISpawnableWater": {
-    "ClassSize": "0x8",
+  "AIAbilityFollowUp": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Player",
-        "Type": "class Actor*",
+        "Name": "AbilityType",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Chance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "FeatureToggledAIEncounterSpecificSkillSet": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ToggledSpecificSkillset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AIFormRankMapping": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Form",
+        "Type": "class AthenaAIFormDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weights",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -3371,7 +3204,7 @@
       },
       {
         "Name": "CustomAnimationAsset",
-        "Type": "struct",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       },
@@ -3389,282 +3222,574 @@
       }
     ]
   },
-  "TinySharkSpawnTelemetryEvent": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "TinySharkId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TinySharkType",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ConfigSpawnId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "SpawnLocation",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "AIPersistentSpawnerWave": {
-    "ClassSize": "0x128",
-    "Attributes": [
-      {
-        "Name": "CacheHealthOnDespawn",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "AITypeToCache",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x108"
-      }
-    ]
-  },
-  "AIIndividualVarietyEntry": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "FeatureFlag",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Loadouts",
-        "Type": "TArray<struct StringAssetReference>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "RankOffset",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "MaxPerEncounter",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "EventPawnFinishedDying": {
+  "AICountTelemetryEvent": {
     "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NumTotalSpawns",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CurrentTotalWorldAICostUnits",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "NumActiveRegions",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "NumPlayers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "EventPawnRemoveOwnership": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "AIPawn",
         "Type": "class Pawn*",
         "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "DeathType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
       }
     ]
   },
-  "EventPlayerEnterAISpawnableWater": {
-    "ClassSize": "0x18",
+  "TinySharkWorldSettingsParams": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "Player",
-        "Type": "class Actor*",
-        "Size": "0x8",
+        "Name": "TinySharkEnabled",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "AthenaAICharacterControllerWeightedAmmoType": {
+  "AILoadoutRankMapping": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Loadout",
+        "Type": "class LoadoutAsset*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weights",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "BountySpawnerNewWaveGroupSpawnedEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "IsFinalWave",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IslandName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "ParticipatingCrewIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "WaveIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "TotalWaves",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "Instigator",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "FaunaBreedRequirement": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "AmmoType",
+        "Name": "Breed",
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "Weighting",
-        "Type": "float",
+        "Name": "Count",
+        "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
       }
     ]
   },
-  "AISpawnContextData": {
+  "AIPartsCategoryMapping": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Name",
-        "Type": "struct FName",
+        "Name": "ClassId",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "Id",
-        "Type": "class UClass*",
+        "Name": "PartsCategory",
+        "Type": "class AIPartsCategory*",
         "Size": "0x8",
         "Offset": "0x8"
       }
     ]
   },
-  "EventAIFormSelected": {
-    "ClassSize": "0x8",
+  "AIFormDamageResponse": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DamagerType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DamageMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "HitReaction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "IsKnockbackDisabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd"
+      },
+      {
+        "Name": "IsStunDisabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xe"
+      }
+    ]
+  },
+  "TinySharkServiceParams": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "TinySharkParams",
+        "Type": "class TinySharkParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SpawnForShipData",
+        "Type": "TArray<struct TinySharkShipSpawnData>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SpawnForShipQuery",
+        "Type": "class EnvQuery*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "SpawnFailureTimer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "AthenaAIControllerFeatureToggledParams": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Params",
+        "Type": "TArray<struct AthenaAIControllerParamValue>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AIControllerDynamicBalancingNamedParamMapping": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MaxCrewStrength",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewStrengthDynamicNamedParamOverrides",
+        "Type": "TArray<struct AthenaAIControllerParamValue>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AITargetInfo": {
+    "ClassSize": "0x34",
+    "Attributes": [
+      {
+        "Name": "Bounds",
+        "Type": "struct AITargetBounds",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TargetPos",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "TargetVelocity",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "TargetYaw",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "AIDebugSpawnConfiguration": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "NumIslandsToSpawnOn",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SpecificRegionsToSpawnOn",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "WhatToSpawn",
+        "Type": "TArray<struct AIDebugSpawnAmount>",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "AthenaAICharacterControllerItemCategoryNamedParams": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ItemCategory",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NamedControllerParams",
+        "Type": "TArray<struct AthenaAIControllerParamValue>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "FaunaSpeciesRequirement": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Species",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Breeds",
+        "Type": "TArray<struct FaunaBreedRequirement>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AIBountySpawnerArchiveWaveGroupEntry": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "NumNonTargetAIKills",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumTargetAIKills",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "WaveEntries",
+        "Type": "TArray<struct AIBountySpawnerArchiveWaveEntry>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ReplicatedAIPartsData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PartsCategory",
+        "Type": "class AIPartsCategory*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AIPartId",
+        "Type": "struct AIPartId",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MeshIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "TeamColorIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "AIEncounterWave": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Specifications",
+        "Type": "TArray<struct AIEncounterSpecification>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SpecificationSpawnOrder",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AthenaAIAbilityPlayerBasedRanges": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AbilityRanges",
+        "Type": "TArray<struct AthenaAIAbilityPlayerBasedRange>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventVisualAppearanceSelected": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PartsCategory",
+        "Type": "class AIPartsCategory*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AIPartId",
+        "Type": "struct AIPartId",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "PartsIndexToUse",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ColorTextureIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "ConditionalAISpawnOverride": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Condition",
+        "Type": "class AISpawnOverrideCondition*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Override",
+        "Type": "struct AISpawnOverride",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "FeatureToggledAIEncounterSpecificSkillSetCollection": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ToggledSkillsets",
+        "Type": "TArray<struct FeatureToggledAIEncounterSpecificSkillSet>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AIPerCrewSpawnerStoryBasedRespawnSettings": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "RespawnSettings",
+        "Type": "struct AIPerCrewSpawnerRespawnSettings",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Story",
+        "Type": "struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "WeightedAISpawnTypeParams": {
+    "ClassSize": "0xf0",
+    "Attributes": [
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxTimesCanBeSelected",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Params",
+        "Type": "struct AISpawnTypeParams",
+        "Size": "0xe8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AISpawnContextIdEncounterSettingsPair": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "SpawnContexts",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DisableSpawning",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "EncounterSettings",
+        "Type": "class AIEncounterSettings*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "SpawnWaveProgression",
+        "Type": "class AISpawnWaveSequenceRankProgression*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "EncounterAndWaveSettingsOverride",
+        "Type": "TArray<struct AIEncounterAndWaveSettingsOverride>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WeightedAmmoTypeRange": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MinRange",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AmmoTypeProbabilities",
+        "Type": "TArray<struct WeightedAmmoType>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AIPartsCategoryFormMapping": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "Form",
         "Type": "class AthenaAIFormDataAsset*",
         "Size": "0x8",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "AIDebugVisualisationBox": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "Centre",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x0"
       },
       {
-        "Name": "Extents",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "LifeTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "Colour",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "EventCrewedShipEnteredAISpawnRegion": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Ship",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SwimAttackTargetShipImpulseData": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PushImpulseForce",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "PushImpulseLocation",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "PushForceScalingFactorForeAndAftOfShipLowerBound",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "PushForceScalingFactorForeAndAftOfShipUpperBound",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "RollImpulseForce",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "RollImpulseLocation",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "RollForceScalingFactorForeAndAftOfShipLowerBound",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "RollForceScalingFactorForeAndAftOfShipUpperBound",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "AIBountySpawnerArchiveWaveEntry": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "NumPawnsToSpawn",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AISpawnTypeParamsCollection": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "SpawnParams",
-        "Type": "TArray<struct WeightedAISpawnTypeParams>",
+        "Name": "CategoryMappings",
+        "Type": "TArray<struct AIPartsCategoryMapping>",
         "Size": "0x10",
         "Offset": "0x8"
       }
@@ -3729,37 +3854,14 @@
       }
     ]
   },
-  "FaunaSpeciesRequirement": {
-    "ClassSize": "0x18",
+  "AthenaAICharacterCannonTargetingParams": {
+    "ClassSize": "0x10",
     "Attributes": [
-      {
-        "Name": "Species",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Breeds",
-        "Type": "TArray<struct FaunaBreedRequirement>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AthenaAIControllerFeatureToggledParams": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Feature",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
       {
         "Name": "Params",
-        "Type": "TArray<struct AthenaAIControllerParamValue>",
+        "Type": "TArray<struct AthenaAICharacterCannonTarget>",
         "Size": "0x10",
-        "Offset": "0x10"
+        "Offset": "0x0"
       }
     ]
   },
@@ -3780,7 +3882,7 @@
       },
       {
         "Name": "SpawnOffset",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
       },
@@ -3810,7 +3912,7 @@
       },
       {
         "Name": "LifetimeTimeout",
-        "Type": "struct",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x80"
       },
@@ -3828,144 +3930,18 @@
       }
     ]
   },
-  "WeightedAmmoTypeRange": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "MinRange",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AmmoTypeProbabilities",
-        "Type": "TArray<struct WeightedAmmoType>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AIPerCrewSpawnerCrewUnit": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "SelectedWaves",
-        "Type": "TArray<struct AISpawnerWave>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "Prerequisites",
-        "Type": "TArray<class AISpawnerPrerequisiteBase*>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "TinySharkServiceParams": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "TinySharkParams",
-        "Type": "class TinySharkParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SpawnForShipData",
-        "Type": "TArray<struct TinySharkShipSpawnData>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SpawnForShipQuery",
-        "Type": "class EnvQuery*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "SpawnFailureTimer",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "AISpawnContextIdEncounterSettingsPair": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "SpawnContexts",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DisableSpawning",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "EncounterSettings",
-        "Type": "class AIEncounterSettings*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "SpawnWaveProgression",
-        "Type": "class AISpawnWaveSequenceRankProgression*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "EncounterAndWaveSettingsOverride",
-        "Type": "TArray<struct AIEncounterAndWaveSettingsOverride>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AthenaAIAbilityPlayerBasedRanges": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AbilityRanges",
-        "Type": "TArray<struct AthenaAIAbilityPlayerBasedRange>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AIEncounterWave": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Specifications",
-        "Type": "TArray<struct AIEncounterSpecification>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SpecificationSpawnOrder",
-        "Type": "TArray<int>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "AIFormVarietyEntry": {
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "FeatureFlag",
-        "Type": "struct",
+        "Type": "struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x0"
       },
       {
         "Name": "Form",
-        "Type": "struct",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -3989,122 +3965,83 @@
       }
     ]
   },
-  "AIDebugSpawnConfiguration": {
-    "ClassSize": "0x28",
+  "AthenaAIControllerSenseSettingOverride": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "NumIslandsToSpawnOn",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SpecificRegionsToSpawnOn",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "WhatToSpawn",
-        "Type": "TArray<struct AIDebugSpawnAmount>",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "FeatureToggledAIEncounterSpecificSkillSetCollection": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ToggledSkillsets",
-        "Type": "TArray<struct FeatureToggledAIEncounterSpecificSkillSet>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AIPartsCategoryFormMapping": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Form",
-        "Type": "class AthenaAIFormDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CategoryMappings",
-        "Type": "TArray<struct AIPartsCategoryMapping>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AthenaAICharacterCannonTargetingParams": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Params",
-        "Type": "TArray<struct AthenaAICharacterCannonTarget>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AIControllerDynamicBalancingNamedParamMapping": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "MaxCrewStrength",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CrewStrengthDynamicNamedParamOverrides",
-        "Type": "TArray<struct AthenaAIControllerParamValue>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AIBountySpawnerArchiveWaveGroupEntry": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "NumNonTargetAIKills",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NumTargetAIKills",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "WaveEntries",
-        "Type": "TArray<struct AIBountySpawnerArchiveWaveEntry>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AthenaAICharacterControllerItemCategoryNamedParams": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ItemCategory",
+        "Name": "AIStrategy",
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "NamedControllerParams",
-        "Type": "TArray<struct AthenaAIControllerParamValue>",
-        "Size": "0x10",
+        "Name": "SenseSettings",
+        "Type": "struct AthenaAIControllerSenseSettings",
+        "Size": "0x14",
         "Offset": "0x8"
+      },
+      {
+        "Name": "ClearPerceivedData",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "AITelemetryFragmentInput": {
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Name": "AIPawn",
+        "Type": "class Pawn*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AIEncounterSpecification",
+        "Type": "struct AIEncounterSpecification",
+        "Size": "0xd0",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AIBountySpawnerArchive": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "CurrentWaveIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "WaveGroupEntries",
+        "Type": "TArray<struct AIBountySpawnerArchiveWaveGroupEntry>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "BountyAudioIntensity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "AIAbilityContinuousCooldownParameterData": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "InitialCooldown",
+        "Type": "struct AthenaAIAbilityPlayerBasedRanges",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CooldownBetweenActivations",
+        "Type": "struct AthenaAIAbilityPlayerBasedRanges",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -4119,7 +4056,7 @@
       },
       {
         "Name": "TeamColor",
-        "Type": "struct",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x10"
       },
@@ -4161,13 +4098,13 @@
       },
       {
         "Name": "WavesPerRelocate",
-        "Type": "struct",
+        "Type": "struct WeightedProbabilityRange",
         "Size": "0x20",
         "Offset": "0x50"
       },
       {
         "Name": "WaveSplitChance",
-        "Type": "struct",
+        "Type": "struct WeightedProbabilityRange",
         "Size": "0x20",
         "Offset": "0x70"
       },
@@ -4227,26 +4164,89 @@
       }
     ]
   },
-  "AIBountySpawnerArchive": {
-    "ClassSize": "0x28",
+  "AISpawnTypeParamsCollection": {
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "CurrentWaveIndex",
-        "Type": "int",
+        "Name": "SpawnParams",
+        "Type": "TArray<struct WeightedAISpawnTypeParams>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AISpawnerWave": {
+    "ClassSize": "0x100",
+    "Attributes": [
+      {
+        "Name": "SpawnChance",
+        "Type": "float",
         "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumOfSpawnsInWave",
+        "Type": "struct WeightedProbabilityRange",
+        "Size": "0x20",
         "Offset": "0x8"
       },
       {
-        "Name": "WaveGroupEntries",
-        "Type": "TArray<struct AIBountySpawnerArchiveWaveGroupEntry>",
-        "Size": "0x10",
-        "Offset": "0x10"
+        "Name": "SpawnTypeParamsOverride",
+        "Type": "struct AISpawnTypeParamsCollection",
+        "Size": "0x48",
+        "Offset": "0x28"
       },
       {
-        "Name": "BountyAudioIntensity",
-        "Type": "float",
+        "Name": "DelayBeforeWave",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "DelayBetweenSpawns",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "DelayBeforeNextWaveIfSuccessful",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "EscalatingWave": {
+    "ClassSize": "0x108",
+    "Attributes": [
+      {
+        "Name": "WaveNumber",
+        "Type": "int",
         "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SpawnedWave",
+        "Type": "struct AISpawnerWave",
+        "Size": "0x100",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AIPerCrewSpawnerCrewUnit": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "SelectedWaves",
+        "Type": "TArray<struct AISpawnerWave>",
+        "Size": "0x10",
         "Offset": "0x20"
+      },
+      {
+        "Name": "Prerequisites",
+        "Type": "TArray<class AISpawnerPrerequisiteBase*>",
+        "Size": "0x10",
+        "Offset": "0x30"
       }
     ]
   },

@@ -41,7 +41,7 @@ OneShotRewardableObjectBase:
   - Name: Reward
     Offset: '0x478'
     Size: '0x8'
-    Type: struct
+    Type: struct RewardId
   - Name: RewardEntitlement
     Offset: '0x480'
     Size: '0x8'

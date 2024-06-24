@@ -9,11 +9,11 @@ AIDamageEvent:
   - Name: Location
     Offset: '0x4'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: HitLocation
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: DamagedActor
     Offset: '0x20'
     Size: '0x8'
@@ -78,7 +78,7 @@ AINoiseEvent:
   - Name: NoiseLocation
     Offset: '0x4'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Loudness
     Offset: '0x10'
     Size: '0x4'
@@ -157,11 +157,11 @@ AIStimulus:
   - Name: StimulusLocation
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ReceiverLocation
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Tag
     Offset: '0x24'
     Size: '0x8'

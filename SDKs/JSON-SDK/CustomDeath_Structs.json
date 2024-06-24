@@ -1,5 +1,16 @@
 {
-  "ForcePlayerRespawnGameServerRequestModel": {
+  "GameModeDeathPenaltyRespawnTimerGameServerRequestModel": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "SpawnTimer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SetShouldSkipFerryOfTheDamnedGameServerRequestModel": {
     "ClassSize": "0x8",
     "Attributes": [
       {
@@ -9,7 +20,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "bRespawnAsGhost",
+        "Name": "bShouldSkipFerryOfTheDamned",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x4"
@@ -33,14 +44,71 @@
       }
     ]
   },
-  "KillPlayerGameServerRequestModel": {
-    "ClassSize": "0x4",
+  "ForcePlayerRespawnGameServerRequestModel": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "PlayerNetGUID",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "bRespawnAsGhost",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "CustomPlayerStartConfigGameServerRequestModel": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct Quat",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Tags",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "KillCrewGameServerRequestModel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewNetGUID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SetCustomPlayerStartGameServerRequestModel": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "PlayerNetGUID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PlayerStartActorNetID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },
@@ -61,20 +129,14 @@
       }
     ]
   },
-  "SetCustomPlayerStartGameServerRequestModel": {
-    "ClassSize": "0x8",
+  "KillPlayerGameServerRequestModel": {
+    "ClassSize": "0x4",
     "Attributes": [
       {
         "Name": "PlayerNetGUID",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
-      },
-      {
-        "Name": "PlayerStartActorNetID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
       }
     ]
   },
@@ -102,68 +164,6 @@
         "Name": "PlayerStartId",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "GameModeDeathPenaltyRespawnTimerGameServerRequestModel": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "SpawnTimer",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "KillCrewGameServerRequestModel": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CrewNetGUID",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CustomPlayerStartConfigGameServerRequestModel": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Tags",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "SetShouldSkipFerryOfTheDamnedGameServerRequestModel": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "PlayerNetGUID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "bShouldSkipFerryOfTheDamned",
-        "Type": "bool",
-        "Size": "0x1",
         "Offset": "0x4"
       }
     ]

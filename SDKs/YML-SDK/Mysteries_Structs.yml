@@ -20,7 +20,7 @@ SirenPuzzleLockState:
   - Name: LockId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: UnlockReactions
     Offset: '0x10'
     Size: '0x10'

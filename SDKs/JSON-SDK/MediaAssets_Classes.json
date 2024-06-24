@@ -1,35 +1,21 @@
 {
-  "MediaComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
+  "MovieAssetContainer": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "MediaTexture",
-        "Type": "class MediaTexture*",
-        "Size": "0x8",
-        "Offset": "0xc8"
+        "Name": "MediaTextures",
+        "Type": "TArray<class MediaTexture*>",
+        "Size": "0x10",
+        "Offset": "0x28"
       },
       {
-        "Name": "MediaPlayer",
-        "Type": "class MediaPlayer*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "PlatformMediaSource": {
-    "Super": "MediaSource",
-    "FullSize": "0x88",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "MediaSource",
-        "Type": "class MediaSource*",
-        "Size": "0x8",
-        "Offset": "0x80"
+        "Name": "MediaPlayers",
+        "Type": "TArray<class MediaPlayer*>",
+        "Size": "0x10",
+        "Offset": "0x38"
       }
     ]
   },
@@ -73,7 +59,7 @@
       },
       {
         "Name": "ClearColor",
-        "Type": "struct",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x144"
       },
@@ -118,6 +104,54 @@
         "Type": "class MediaPlayer*",
         "Size": "0x8",
         "Offset": "0x160"
+      }
+    ]
+  },
+  "PlatformMediaSource": {
+    "Super": "MediaSource",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MediaSource",
+        "Type": "class MediaSource*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "MediaPlaylist": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Items",
+        "Type": "TArray<class MediaSource*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "MediaComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MediaTexture",
+        "Type": "class MediaTexture*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "MediaPlayer",
+        "Type": "class MediaPlayer*",
+        "Size": "0x8",
+        "Offset": "0xd0"
       }
     ]
   },
@@ -177,19 +211,19 @@
       },
       {
         "Name": "CacheAhead",
-        "Type": "struct",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0xa8"
       },
       {
         "Name": "CacheBehind",
-        "Type": "struct",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0xb0"
       },
       {
         "Name": "CacheBehindGame",
-        "Type": "struct",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0xb8"
       },
@@ -231,7 +265,7 @@
       },
       {
         "Name": "TimeDelay",
-        "Type": "struct",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0xd8"
       },
@@ -249,13 +283,13 @@
       },
       {
         "Name": "ViewRotation",
-        "Type": "struct",
+        "Type": "struct Rotator",
         "Size": "0xc",
         "Offset": "0xe8"
       },
       {
         "Name": "PlayerGuid",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x158"
       }
@@ -269,42 +303,8 @@
     "Attributes": [
       {
         "Name": "Time",
-        "Type": "struct",
+        "Type": "struct Timespan",
         "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "MovieAssetContainer": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "MediaTextures",
-        "Type": "TArray<class MediaTexture*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MediaPlayers",
-        "Type": "TArray<class MediaPlayer*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "MediaPlaylist": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Items",
-        "Type": "TArray<class MediaSource*>",
-        "Size": "0x10",
         "Offset": "0x28"
       }
     ]
@@ -335,20 +335,6 @@
       }
     ]
   },
-  "StreamMediaSource": {
-    "Super": "BaseMediaSource",
-    "FullSize": "0x98",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "StreamUrl",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x88"
-      }
-    ]
-  },
   "FileMediaSource": {
     "Super": "BaseMediaSource",
     "FullSize": "0xb0",
@@ -366,6 +352,20 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x98"
+      }
+    ]
+  },
+  "StreamMediaSource": {
+    "Super": "BaseMediaSource",
+    "FullSize": "0x98",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StreamUrl",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x88"
       }
     ]
   },

@@ -6,258 +6,12 @@
 #include "AIModule_Structs.h"
 
 
-// Size 0x60 (Full Size[0x640] - InheritedSize[0x5e0]
-class EQSTestingPawn: public Character
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class AIAsyncTaskBlueprintProxy: public Object
 {
 public:
-	class EnvQuery*                                              QueryTemplate;                                     // 0x5e0(0x8)
-	TArray<struct EnvNamedValue>                                 QueryParams;                                       // 0x5e8(0x10)
-	class UClass*                                                ContextToLinkWithThis;                             // 0x5f8(0x8)
-	float                                                        TimeLimitPerStep;                                  // 0x600(0x4)
-	int                                                          StepToDebugDraw;                                   // 0x604(0x4)
-	char                                                         HighlightMode;                                     // 0x608(0x1)
-	bool                                                         bDrawLabels;                                       // 0x60c(0x1)
-	bool                                                         bDrawFailedItems;                                  // 0x60c(0x1)
-	bool                                                         bReRunQueryOnlyOnFinishedMove;                     // 0x60c(0x1)
-	bool                                                         bShouldBeVisibleInGame;                            // 0x60c(0x1)
-	char                                                         QueryingMode;                                      // 0x610(0x1)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class BTNode: public Object
-{
-public:
-	struct FString                                               NodeName;                                          // 0x30(0x10)
-	class BehaviorTree*                                          TreeAsset;                                         // 0x40(0x8)
-	class BTCompositeNode*                                       ParentNode;                                        // 0x48(0x8)
-};
-
-
-// Size 0x100 (Full Size[0x1c8] - InheritedSize[0xc8]
-class AIPerceptionComponent: public ActorComponent
-{
-public:
-	float                                                        HearingRange;                                      // 0xc8(0x4)
-	float                                                        LoSHearingRange;                                   // 0xcc(0x4)
-	float                                                        SightRadius;                                       // 0xd0(0x4)
-	float                                                        LoseSightRadius;                                   // 0xd4(0x4)
-	float                                                        PeripheralVisionAngle;                             // 0xd8(0x4)
-	TArray<class AISenseConfig*>                                 SensesConfig;                                      // 0xe0(0x10)
-	class UClass*                                                DominantSense;                                     // 0xf0(0x8)
-	class AIController*                                          AIOwner;                                           // 0x108(0x8)
-	multicastinlinedelegate                                      OnPerceptionUpdated;                               // 0x190(0x10)
-	multicastinlinedelegate                                      OnTargetPerceptionUpdated;                         // 0x1a0(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x70] - InheritedSize[0x60]
-class BTService: public BTAuxiliaryNode
-{
-public:
-	float                                                        Interval;                                          // 0x60(0x4)
-	float                                                        RandomDeviation;                                   // 0x64(0x4)
-	bool                                                         bCallTickOnSearchStart;                            // 0x68(0x1)
-	bool                                                         bRestartTimerOnEachActivation;                     // 0x68(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
-class BTTask_PushPawnAction: public BTTask_PawnActionBase
-{
-public:
-	class PawnAction*                                            Action;                                            // 0x60(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
-class BlackboardKeyType_String: public BlackboardKeyType
-{
-public:
-	struct FString                                               StringValue;                                       // 0x30(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x78] - InheritedSize[0x60]
-class BTTask_RunBehaviorDynamic: public BTTaskNode
-{
-public:
-	struct                                                       InjectionTag;                                      // 0x60(0x8)
-	class BehaviorTree*                                          DefaultBehaviorAsset;                              // 0x68(0x8)
-	class BehaviorTree*                                          BehaviorAsset;                                     // 0x70(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x60] - InheritedSize[0x58]
-class AITask: public GameplayTask
-{
-public:
-	class AIController*                                          OwnerController;                                   // 0x58(0x8)
-};
-
-
-// Size 0x38 (Full Size[0x98] - InheritedSize[0x60]
-class BTTask_PlayAnimation: public BTTaskNode
-{
-public:
-	class AnimationAsset*                                        AnimationToPlay;                                   // 0x60(0x8)
-	bool                                                         bLooping;                                          // 0x68(0x1)
-	bool                                                         bNonBlocking;                                      // 0x68(0x1)
-	class BehaviorTreeComponent*                                 MyOwnerComp;                                       // 0x70(0x8)
-	class SkeletalMeshComponent*                                 CachedSkelMesh;                                    // 0x78(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
-class BTDecorator: public BTAuxiliaryNode
-{
-public:
-	bool                                                         bInverseCondition;                                 // 0x60(0x1)
-	char                                                         FlowAbortMode;                                     // 0x64(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
-class BTTask_RunBehavior: public BTTaskNode
-{
-public:
-	class BehaviorTree*                                          BehaviorAsset;                                     // 0x60(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class AISenseConfig: public Object
-{
-public:
-	float                                                        MaxAge;                                            // 0x28(0x4)
-	bool                                                         bStartsEnabled;                                    // 0x2c(0x1)
-};
-
-
-// Size 0xb0 (Full Size[0xf0] - InheritedSize[0x40]
-class AISystem: public AISystemBase
-{
-public:
-	struct                                                       PerceptionSystemClassName;                         // 0x40(0x10)
-	struct                                                       HotSpotManagerClassName;                           // 0x50(0x10)
-	float                                                        AcceptanceRadius;                                  // 0x60(0x4)
-	bool                                                         bFinishMoveOnGoalOverlap;                          // 0x64(0x1)
-	bool                                                         bAcceptPartialPaths;                               // 0x65(0x1)
-	bool                                                         bAllowStrafing;                                    // 0x66(0x1)
-	bool                                                         bEnableBTAITasks;                                  // 0x67(0x1)
-	class BehaviorTreeManager*                                   BehaviorTreeManager;                               // 0x68(0x8)
-	class EnvQueryManager*                                       EnvironmentQueryManager;                           // 0x70(0x8)
-	class AIPerceptionSystem*                                    PerceptionSystem;                                  // 0x78(0x8)
-	TArray<class AIAsyncTaskBlueprintProxy*>                     AllProxyObjects;                                   // 0x80(0x10)
-	class AIHotSpotManager*                                      HotSpotManager;                                    // 0x90(0x8)
-};
-
-
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class AISense: public Object
-{
-public:
-	struct                                                       DebugDrawColor;                                    // 0x28(0x4)
-	struct FString                                               DebugName;                                         // 0x30(0x10)
-	float                                                        DefaultExpirationAge;                              // 0x40(0x4)
-	char                                                         NotifyType;                                        // 0x44(0x1)
-	bool                                                         bWantsNewPawnNotification;                         // 0x48(0x1)
-	bool                                                         bAutoRegisterAllPawnsAsSources;                    // 0x48(0x1)
-	class AIPerceptionSystem*                                    PerceptionSystemInstance;                          // 0x50(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class BlackboardData: public DataAsset
-{
-public:
-	class BlackboardData*                                        Parent;                                            // 0x28(0x8)
-	TArray<struct BlackboardEntry>                               Keys;                                              // 0x30(0x10)
-	bool                                                         bHasSynchronizedKeys;                              // 0x40(0x1)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class EnvQueryOption: public Object
-{
-public:
-	class EnvQueryGenerator*                                     Generator;                                         // 0x28(0x8)
-	TArray<class EnvQueryTest*>                                  Tests;                                             // 0x30(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class BlackboardKeyType_Object: public BlackboardKeyType
-{
-public:
-	class UClass*                                                BaseClass;                                         // 0x30(0x8)
-};
-
-
-// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
-class PawnAction: public Object
-{
-public:
-	class PawnAction*                                            ChildAction;                                       // 0x28(0x8)
-	class PawnAction*                                            ParentAction;                                      // 0x30(0x8)
-	class PawnActionsComponent*                                  OwnerComponent;                                    // 0x38(0x8)
-	class Object*                                                Instigator;                                        // 0x40(0x8)
-	class BrainComponent*                                        BrainComp;                                         // 0x48(0x8)
-	bool                                                         bAllowNewSameClassInstance;                        // 0x78(0x1)
-	bool                                                         bReplaceActiveSameClassInstance;                   // 0x78(0x1)
-	bool                                                         bShouldPauseMovement;                              // 0x78(0x1)
-};
-
-
-// Size 0x28 (Full Size[0x88] - InheritedSize[0x60]
-class BTTask_BlackboardBase: public BTTaskNode
-{
-public:
-	struct                                                       BlackboardKey;                                     // 0x60(0x28)
-};
-
-
-// Size 0x1f0 (Full Size[0x2b8] - InheritedSize[0xc8]
-class PathFollowingComponent: public ActorComponent
-{
-public:
-	class NavMovementComponent*                                  MovementComp;                                      // 0x120(0x8)
-	class NavigationData*                                        MyNavData;                                         // 0x130(0x8)
-	bool                                                         bUseVisibilityTestsSimplification;                 // 0x1f4(0x1)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class AISenseEvent_Hearing: public AISenseEvent
-{
-public:
-	struct                                                       Event;                                             // 0x28(0x30)
-};
-
-
-// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
-class BTTask_PlaySound: public BTTaskNode
-{
-public:
-	class SoundCue*                                              SoundToPlay;                                       // 0x60(0x8)
-};
-
-
-// Size 0x60 (Full Size[0x128] - InheritedSize[0xc8]
-class BrainComponent: public ActorComponent
-{
-public:
-	class BlackboardComponent*                                   BlackboardComp;                                    // 0xd0(0x8)
-	class AIController*                                          AIOwner;                                           // 0xd8(0x8)
-};
-
-
-// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
-class AIPerceptionStimuliSourceComponent: public ActorComponent
-{
-public:
-	bool                                                         bAutoRegisterAsSource;                             // 0xc8(0x1)
-	TArray<class Class*>                                         RegisterAsSourceForSenses;                         // 0xd0(0x10)
+	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
+	multicastinlinedelegate                                      OnFail;                                            // 0x38(0x10)
 };
 
 
@@ -272,22 +26,12 @@ public:
 };
 
 
-// Size 0x90 (Full Size[0x4b8] - InheritedSize[0x428]
-class AIController: public Controller
+// Size 0xe8 (Full Size[0x110] - InheritedSize[0x28]
+class EnvQueryManager: public Object
 {
 public:
-	bool                                                         bLOSflag;                                          // 0x450(0x1)
-	bool                                                         bSkipExtraLOSChecks;                               // 0x450(0x1)
-	bool                                                         bAllowStrafe;                                      // 0x450(0x1)
-	bool                                                         bWantsPlayerState;                                 // 0x450(0x1)
-	bool                                                         bDisableControlRotation;                           // 0x450(0x1)
-	class PathFollowingComponent*                                PathFollowingComponent;                            // 0x458(0x8)
-	class BrainComponent*                                        BrainComponent;                                    // 0x460(0x8)
-	class AIPerceptionComponent*                                 PerceptionComponent;                               // 0x468(0x8)
-	class PawnActionsComponent*                                  ActionsComp;                                       // 0x470(0x8)
-	class BlackboardComponent*                                   Blackboard;                                        // 0x478(0x8)
-	class GameplayTasksComponent*                                CachedGameplayTasksComponent;                      // 0x480(0x8)
-	multicastinlinedelegate                                      ReceiveMoveCompleted;                              // 0x498(0x10)
+	TArray<struct EnvQueryInstanceCache>                         InstanceCache;                                     // 0x98(0x10)
+	TArray<class EnvQueryContext*>                               LocalContexts;                                     // 0xa8(0x10)
 };
 
 
@@ -300,146 +44,13 @@ public:
 };
 
 
-// Size 0x100 (Full Size[0x128] - InheritedSize[0x28]
-class AIPerceptionSystem: public Object
+// Size 0x18 (Full Size[0x78] - InheritedSize[0x60]
+class BTTask_RunBehaviorDynamic: public BTTaskNode
 {
 public:
-	TArray<class AISense*>                                       Senses;                                            // 0x80(0x10)
-	float                                                        PerceptionAgingRate;                               // 0x90(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EnvQuery: public Object
-{
-public:
-	TArray<class EnvQueryOption*>                                Options;                                           // 0x28(0x10)
-};
-
-
-// Size 0x30 (Full Size[0x90] - InheritedSize[0x60]
-class BTTask_BlueprintBase: public BTTaskNode
-{
-public:
-	class AIController*                                          AIOwner;                                           // 0x60(0x8)
-	class Actor*                                                 ActorOwner;                                        // 0x68(0x8)
-	bool                                                         bShowPropertyDetails;                              // 0x88(0x1)
-};
-
-
-// Size 0xb8 (Full Size[0xe0] - InheritedSize[0x28]
-class CrowdManager: public Object
-{
-public:
-	class NavigationData*                                        MyNavData;                                         // 0x28(0x8)
-	TArray<struct CrowdAvoidanceConfig>                          AvoidanceConfig;                                   // 0x30(0x10)
-	TArray<struct CrowdAvoidanceSamplingPattern>                 SamplingPatterns;                                  // 0x40(0x10)
-	int                                                          MaxAgents;                                         // 0x50(0x4)
-	float                                                        MaxAgentRadius;                                    // 0x54(0x4)
-	int                                                          MaxAvoidedAgents;                                  // 0x58(0x4)
-	int                                                          MaxAvoidedWalls;                                   // 0x5c(0x4)
-	float                                                        NavmeshCheckInterval;                              // 0x60(0x4)
-	float                                                        PathOptimizationInterval;                          // 0x64(0x4)
-	bool                                                         bResolveCollisions;                                // 0x68(0x1)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class AIDataProvider_QueryParamFromCustomObjectProperty: public AIDataProvider
-{
-public:
-	struct                                                       ObjectProperty;                                    // 0x28(0x10)
-	float                                                        FloatValue;                                        // 0x38(0x4)
-	int                                                          IntValue;                                          // 0x3c(0x4)
-	bool                                                         BoolValue;                                         // 0x40(0x1)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class AIDataProvider_QueryParams: public AIDataProvider
-{
-public:
-	struct FName                                                 ParamName;                                         // 0x28(0x8)
-	float                                                        FloatValue;                                        // 0x30(0x4)
-	int                                                          IntValue;                                          // 0x34(0x4)
-	bool                                                         BoolValue;                                         // 0x38(0x1)
-};
-
-
-// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
-class BlackboardKeyType_Enum: public BlackboardKeyType
-{
-public:
-	class Enum*                                                  EnumType;                                          // 0x30(0x8)
-	struct FString                                               EnumName;                                          // 0x38(0x10)
-	bool                                                         bIsEnumNameValid;                                  // 0x48(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
-class BTTask_Wait: public BTTaskNode
-{
-public:
-	float                                                        WaitTime;                                          // 0x60(0x4)
-	float                                                        RandomDeviation;                                   // 0x64(0x4)
-};
-
-
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class BehaviorTree: public Object
-{
-public:
-	class BTCompositeNode*                                       RootNode;                                          // 0x28(0x8)
-	class BlackboardData*                                        BlackboardAsset;                                   // 0x30(0x8)
-	TArray<class BTDecorator*>                                   RootDecorators;                                    // 0x38(0x10)
-	TArray<struct BTDecoratorLogic>                              RootDecoratorOps;                                  // 0x48(0x10)
-};
-
-
-// Size 0x38 (Full Size[0x100] - InheritedSize[0xc8]
-class PawnActionsComponent: public ActorComponent
-{
-public:
-	class Pawn*                                                  ControlledPawn;                                    // 0xc8(0x8)
-	TArray<struct PawnActionStack>                               ActionStacks;                                      // 0xd0(0x10)
-	TArray<struct PawnActionEvent>                               ActionEvents;                                      // 0xe0(0x10)
-	class PawnAction*                                            CurrentAction;                                     // 0xf0(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x70] - InheritedSize[0x60]
-class BTTask_SetTagCooldown: public BTTaskNode
-{
-public:
-	struct                                                       CooldownTag;                                       // 0x60(0x8)
-	bool                                                         bAddToExistingDuration;                            // 0x68(0x1)
-	float                                                        CoolDownDuration;                                  // 0x6c(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class EnvQueryNode: public Object
-{
-public:
-	int                                                          VerNum;                                            // 0x28(0x4)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class AISenseEvent_Damage: public AISenseEvent
-{
-public:
-	struct                                                       Event;                                             // 0x28(0x30)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class BehaviorTreeManager: public Object
-{
-public:
-	int                                                          MaxDebuggerSteps;                                  // 0x28(0x4)
-	TArray<struct BehaviorTreeTemplateInfo>                      LoadedTemplates;                                   // 0x30(0x10)
-	TArray<class BehaviorTreeComponent*>                         ActiveComponents;                                  // 0x40(0x10)
+	struct GameplayTag                                           InjectionTag;                                      // 0x60(0x8)
+	class BehaviorTree*                                          DefaultBehaviorAsset;                              // 0x68(0x8)
+	class BehaviorTree*                                          BehaviorAsset;                                     // 0x70(0x8)
 };
 
 
@@ -463,6 +74,156 @@ public:
 };
 
 
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class EnvQueryOption: public Object
+{
+public:
+	class EnvQueryGenerator*                                     Generator;                                         // 0x28(0x8)
+	TArray<class EnvQueryTest*>                                  Tests;                                             // 0x30(0x10)
+};
+
+
+// Size 0xb0 (Full Size[0xf0] - InheritedSize[0x40]
+class AISystem: public AISystemBase
+{
+public:
+	struct StringClassReference                                  PerceptionSystemClassName;                         // 0x40(0x10)
+	struct StringClassReference                                  HotSpotManagerClassName;                           // 0x50(0x10)
+	float                                                        AcceptanceRadius;                                  // 0x60(0x4)
+	bool                                                         bFinishMoveOnGoalOverlap;                          // 0x64(0x1)
+	bool                                                         bAcceptPartialPaths;                               // 0x65(0x1)
+	bool                                                         bAllowStrafing;                                    // 0x66(0x1)
+	bool                                                         bEnableBTAITasks;                                  // 0x67(0x1)
+	class BehaviorTreeManager*                                   BehaviorTreeManager;                               // 0x68(0x8)
+	class EnvQueryManager*                                       EnvironmentQueryManager;                           // 0x70(0x8)
+	class AIPerceptionSystem*                                    PerceptionSystem;                                  // 0x78(0x8)
+	TArray<class AIAsyncTaskBlueprintProxy*>                     AllProxyObjects;                                   // 0x80(0x10)
+	class AIHotSpotManager*                                      HotSpotManager;                                    // 0x90(0x8)
+};
+
+
+// Size 0x90 (Full Size[0x4b8] - InheritedSize[0x428]
+class AIController: public Controller
+{
+public:
+	bool                                                         bLOSflag;                                          // 0x450(0x1)
+	bool                                                         bSkipExtraLOSChecks;                               // 0x450(0x1)
+	bool                                                         bAllowStrafe;                                      // 0x450(0x1)
+	bool                                                         bWantsPlayerState;                                 // 0x450(0x1)
+	bool                                                         bDisableControlRotation;                           // 0x450(0x1)
+	class PathFollowingComponent*                                PathFollowingComponent;                            // 0x458(0x8)
+	class BrainComponent*                                        BrainComponent;                                    // 0x460(0x8)
+	class AIPerceptionComponent*                                 PerceptionComponent;                               // 0x468(0x8)
+	class PawnActionsComponent*                                  ActionsComp;                                       // 0x470(0x8)
+	class BlackboardComponent*                                   Blackboard;                                        // 0x478(0x8)
+	class GameplayTasksComponent*                                CachedGameplayTasksComponent;                      // 0x480(0x8)
+	multicastinlinedelegate                                      ReceiveMoveCompleted;                              // 0x498(0x10)
+};
+
+
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class AISense: public Object
+{
+public:
+	struct Color                                                 DebugDrawColor;                                    // 0x28(0x4)
+	struct FString                                               DebugName;                                         // 0x30(0x10)
+	float                                                        DefaultExpirationAge;                              // 0x40(0x4)
+	char                                                         NotifyType;                                        // 0x44(0x1)
+	bool                                                         bWantsNewPawnNotification;                         // 0x48(0x1)
+	bool                                                         bAutoRegisterAllPawnsAsSources;                    // 0x48(0x1)
+	class AIPerceptionSystem*                                    PerceptionSystemInstance;                          // 0x50(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
+class BTTask_Wait: public BTTaskNode
+{
+public:
+	float                                                        WaitTime;                                          // 0x60(0x4)
+	float                                                        RandomDeviation;                                   // 0x64(0x4)
+};
+
+
+// Size 0x100 (Full Size[0x128] - InheritedSize[0x28]
+class AIPerceptionSystem: public Object
+{
+public:
+	TArray<class AISense*>                                       Senses;                                            // 0x80(0x10)
+	float                                                        PerceptionAgingRate;                               // 0x90(0x4)
+};
+
+
+// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
+class BlackboardKeyType_Enum: public BlackboardKeyType
+{
+public:
+	class Enum*                                                  EnumType;                                          // 0x30(0x8)
+	struct FString                                               EnumName;                                          // 0x38(0x10)
+	bool                                                         bIsEnumNameValid;                                  // 0x48(0x1)
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class BTNode: public Object
+{
+public:
+	struct FString                                               NodeName;                                          // 0x30(0x10)
+	class BehaviorTree*                                          TreeAsset;                                         // 0x40(0x8)
+	class BTCompositeNode*                                       ParentNode;                                        // 0x48(0x8)
+};
+
+
+// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
+class PawnAction: public Object
+{
+public:
+	class PawnAction*                                            ChildAction;                                       // 0x28(0x8)
+	class PawnAction*                                            ParentAction;                                      // 0x30(0x8)
+	class PawnActionsComponent*                                  OwnerComponent;                                    // 0x38(0x8)
+	class Object*                                                Instigator;                                        // 0x40(0x8)
+	class BrainComponent*                                        BrainComp;                                         // 0x48(0x8)
+	bool                                                         bAllowNewSameClassInstance;                        // 0x78(0x1)
+	bool                                                         bReplaceActiveSameClassInstance;                   // 0x78(0x1)
+	bool                                                         bShouldPauseMovement;                              // 0x78(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
+class BTTask_PlaySound: public BTTaskNode
+{
+public:
+	class SoundCue*                                              SoundToPlay;                                       // 0x60(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class EnvQuery: public Object
+{
+public:
+	TArray<class EnvQueryOption*>                                Options;                                           // 0x28(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x70] - InheritedSize[0x60]
+class BTService: public BTAuxiliaryNode
+{
+public:
+	float                                                        Interval;                                          // 0x60(0x4)
+	float                                                        RandomDeviation;                                   // 0x64(0x4)
+	bool                                                         bCallTickOnSearchStart;                            // 0x68(0x1)
+	bool                                                         bRestartTimerOnEachActivation;                     // 0x68(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
+class BTDecorator: public BTAuxiliaryNode
+{
+public:
+	bool                                                         bInverseCondition;                                 // 0x60(0x1)
+	char                                                         FlowAbortMode;                                     // 0x64(0x1)
+};
+
+
 // Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
 class BTTask_MakeNoise: public BTTaskNode
 {
@@ -471,11 +232,131 @@ public:
 };
 
 
+// Size 0x60 (Full Size[0x640] - InheritedSize[0x5e0]
+class EQSTestingPawn: public Character
+{
+public:
+	class EnvQuery*                                              QueryTemplate;                                     // 0x5e0(0x8)
+	TArray<struct EnvNamedValue>                                 QueryParams;                                       // 0x5e8(0x10)
+	class UClass*                                                ContextToLinkWithThis;                             // 0x5f8(0x8)
+	float                                                        TimeLimitPerStep;                                  // 0x600(0x4)
+	int                                                          StepToDebugDraw;                                   // 0x604(0x4)
+	char                                                         HighlightMode;                                     // 0x608(0x1)
+	bool                                                         bDrawLabels;                                       // 0x60c(0x1)
+	bool                                                         bDrawFailedItems;                                  // 0x60c(0x1)
+	bool                                                         bReRunQueryOnlyOnFinishedMove;                     // 0x60c(0x1)
+	bool                                                         bShouldBeVisibleInGame;                            // 0x60c(0x1)
+	char                                                         QueryingMode;                                      // 0x610(0x1)
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class BehaviorTree: public Object
+{
+public:
+	class BTCompositeNode*                                       RootNode;                                          // 0x28(0x8)
+	class BlackboardData*                                        BlackboardAsset;                                   // 0x30(0x8)
+	TArray<class BTDecorator*>                                   RootDecorators;                                    // 0x38(0x10)
+	TArray<struct BTDecoratorLogic>                              RootDecoratorOps;                                  // 0x48(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class AISenseConfig: public Object
+{
+public:
+	float                                                        MaxAge;                                            // 0x28(0x4)
+	bool                                                         bStartsEnabled;                                    // 0x2c(0x1)
+};
+
+
+// Size 0x38 (Full Size[0x100] - InheritedSize[0xc8]
+class PawnActionsComponent: public ActorComponent
+{
+public:
+	class Pawn*                                                  ControlledPawn;                                    // 0xc8(0x8)
+	TArray<struct PawnActionStack>                               ActionStacks;                                      // 0xd0(0x10)
+	TArray<struct PawnActionEvent>                               ActionEvents;                                      // 0xe0(0x10)
+	class PawnAction*                                            CurrentAction;                                     // 0xf0(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class AIDataProvider_QueryParamFromCustomObjectProperty: public AIDataProvider
+{
+public:
+	struct CustomDataProviderObjectPropertySelector              ObjectProperty;                                    // 0x28(0x10)
+	float                                                        FloatValue;                                        // 0x38(0x4)
+	int                                                          IntValue;                                          // 0x3c(0x4)
+	bool                                                         BoolValue;                                         // 0x40(0x1)
+};
+
+
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
+class BlackboardKeyType_String: public BlackboardKeyType
+{
+public:
+	struct FString                                               StringValue;                                       // 0x30(0x10)
+};
+
+
+// Size 0x28 (Full Size[0x88] - InheritedSize[0x60]
+class BTTask_BlackboardBase: public BTTaskNode
+{
+public:
+	struct BlackboardKeySelector                                 BlackboardKey;                                     // 0x60(0x28)
+};
+
+
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
+class AIPerceptionStimuliSourceComponent: public ActorComponent
+{
+public:
+	bool                                                         bAutoRegisterAsSource;                             // 0xc8(0x1)
+	TArray<class Class*>                                         RegisterAsSourceForSenses;                         // 0xd0(0x10)
+};
+
+
 // Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class BlackboardKeyType_Class: public BlackboardKeyType
+class BlackboardKeyType_Object: public BlackboardKeyType
 {
 public:
 	class UClass*                                                BaseClass;                                         // 0x30(0x8)
+};
+
+
+// Size 0xb8 (Full Size[0xe0] - InheritedSize[0x28]
+class CrowdManager: public Object
+{
+public:
+	class NavigationData*                                        MyNavData;                                         // 0x28(0x8)
+	TArray<struct CrowdAvoidanceConfig>                          AvoidanceConfig;                                   // 0x30(0x10)
+	TArray<struct CrowdAvoidanceSamplingPattern>                 SamplingPatterns;                                  // 0x40(0x10)
+	int                                                          MaxAgents;                                         // 0x50(0x4)
+	float                                                        MaxAgentRadius;                                    // 0x54(0x4)
+	int                                                          MaxAvoidedAgents;                                  // 0x58(0x4)
+	int                                                          MaxAvoidedWalls;                                   // 0x5c(0x4)
+	float                                                        NavmeshCheckInterval;                              // 0x60(0x4)
+	float                                                        PathOptimizationInterval;                          // 0x64(0x4)
+	bool                                                         bResolveCollisions;                                // 0x68(0x1)
+};
+
+
+// Size 0x1f0 (Full Size[0x2b8] - InheritedSize[0xc8]
+class PathFollowingComponent: public ActorComponent
+{
+public:
+	class NavMovementComponent*                                  MovementComp;                                      // 0x120(0x8)
+	class NavigationData*                                        MyNavData;                                         // 0x130(0x8)
+	bool                                                         bUseVisibilityTestsSimplification;                 // 0x1f4(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x60] - InheritedSize[0x58]
+class AITask: public GameplayTask
+{
+public:
+	class AIController*                                          OwnerController;                                   // 0x58(0x8)
 };
 
 
@@ -489,81 +370,183 @@ public:
 };
 
 
-// Size 0xe8 (Full Size[0x110] - InheritedSize[0x28]
-class EnvQueryManager: public Object
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class AISenseEvent_Damage: public AISenseEvent
 {
 public:
-	TArray<struct EnvQueryInstanceCache>                         InstanceCache;                                     // 0x98(0x10)
-	TArray<class EnvQueryContext*>                               LocalContexts;                                     // 0xa8(0x10)
+	struct AIDamageEvent                                         Event;                                             // 0x28(0x30)
 };
 
 
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class AIAsyncTaskBlueprintProxy: public Object
+// Size 0x60 (Full Size[0x128] - InheritedSize[0xc8]
+class BrainComponent: public ActorComponent
 {
 public:
-	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
-	multicastinlinedelegate                                      OnFail;                                            // 0x38(0x10)
+	class BlackboardComponent*                                   BlackboardComp;                                    // 0xd0(0x8)
+	class AIController*                                          AIOwner;                                           // 0xd8(0x8)
 };
 
 
-// Size 0x20 (Full Size[0xa8] - InheritedSize[0x88]
-class BTTask_RunEQSQuery: public BTTask_BlackboardBase
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class BlackboardData: public DataAsset
 {
 public:
-	class EnvQuery*                                              QueryTemplate;                                     // 0x88(0x8)
-	TArray<struct EnvNamedValue>                                 QueryParams;                                       // 0x90(0x10)
-	char                                                         RunMode;                                           // 0xa0(0x1)
+	class BlackboardData*                                        Parent;                                            // 0x28(0x8)
+	TArray<struct BlackboardEntry>                               Keys;                                              // 0x30(0x10)
+	bool                                                         bHasSynchronizedKeys;                              // 0x40(0x1)
 };
 
 
-// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
-class AISense_Team: public AISense
+// Size 0x30 (Full Size[0x90] - InheritedSize[0x60]
+class BTTask_BlueprintBase: public BTTaskNode
 {
 public:
-	TArray<struct AITeamStimulusEvent>                           RegisteredEvents;                                  // 0x88(0x10)
+	class AIController*                                          AIOwner;                                           // 0x60(0x8)
+	class Actor*                                                 ActorOwner;                                        // 0x68(0x8)
+	bool                                                         bShowPropertyDetails;                              // 0x88(0x1)
 };
 
 
-// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
-class AISenseConfig_Hearing: public AISenseConfig
+// Size 0x100 (Full Size[0x1c8] - InheritedSize[0xc8]
+class AIPerceptionComponent: public ActorComponent
 {
 public:
-	class UClass*                                                Implementation;                                    // 0x30(0x8)
-	float                                                        HearingRange;                                      // 0x38(0x4)
-	float                                                        LoSHearingRange;                                   // 0x3c(0x4)
-	bool                                                         bUseLoSHearing;                                    // 0x40(0x1)
-	struct                                                       DetectionByAffiliation;                            // 0x44(0x4)
+	float                                                        HearingRange;                                      // 0xc8(0x4)
+	float                                                        LoSHearingRange;                                   // 0xcc(0x4)
+	float                                                        SightRadius;                                       // 0xd0(0x4)
+	float                                                        LoseSightRadius;                                   // 0xd4(0x4)
+	float                                                        PeripheralVisionAngle;                             // 0xd8(0x4)
+	TArray<class AISenseConfig*>                                 SensesConfig;                                      // 0xe0(0x10)
+	class UClass*                                                DominantSense;                                     // 0xf0(0x8)
+	class AIController*                                          AIOwner;                                           // 0x108(0x8)
+	multicastinlinedelegate                                      OnPerceptionUpdated;                               // 0x190(0x10)
+	multicastinlinedelegate                                      OnTargetPerceptionUpdated;                         // 0x1a0(0x10)
 };
 
 
-// Size 0xc8 (Full Size[0x150] - InheritedSize[0x88]
-class AISense_Sight: public AISense
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class EnvQueryNode: public Object
 {
 public:
-	int                                                          MaxTracesPerTick;                                  // 0x138(0x4)
-	float                                                        HighImportanceQueryDistanceThreshold;              // 0x13c(0x4)
-	float                                                        MaxQueryImportance;                                // 0x144(0x4)
-	float                                                        SightLimitQueryImportance;                         // 0x148(0x4)
+	int                                                          VerNum;                                            // 0x28(0x4)
 };
 
 
-// Size 0x88 (Full Size[0xf0] - InheritedSize[0x68]
-class BTDecorator_ConeCheck: public BTDecorator
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class BehaviorTreeManager: public Object
+{
+public:
+	int                                                          MaxDebuggerSteps;                                  // 0x28(0x4)
+	TArray<struct BehaviorTreeTemplateInfo>                      LoadedTemplates;                                   // 0x30(0x10)
+	TArray<class BehaviorTreeComponent*>                         ActiveComponents;                                  // 0x40(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class AISenseEvent_Hearing: public AISenseEvent
+{
+public:
+	struct AINoiseEvent                                          Event;                                             // 0x28(0x30)
+};
+
+
+// Size 0x38 (Full Size[0x98] - InheritedSize[0x60]
+class BTTask_PlayAnimation: public BTTaskNode
+{
+public:
+	class AnimationAsset*                                        AnimationToPlay;                                   // 0x60(0x8)
+	bool                                                         bLooping;                                          // 0x68(0x1)
+	bool                                                         bNonBlocking;                                      // 0x68(0x1)
+	class BehaviorTreeComponent*                                 MyOwnerComp;                                       // 0x70(0x8)
+	class SkeletalMeshComponent*                                 CachedSkelMesh;                                    // 0x78(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class BlackboardKeyType_Class: public BlackboardKeyType
+{
+public:
+	class UClass*                                                BaseClass;                                         // 0x30(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class AIDataProvider_QueryParams: public AIDataProvider
+{
+public:
+	struct FName                                                 ParamName;                                         // 0x28(0x8)
+	float                                                        FloatValue;                                        // 0x30(0x4)
+	int                                                          IntValue;                                          // 0x34(0x4)
+	bool                                                         BoolValue;                                         // 0x38(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
+class BTTask_RunBehavior: public BTTaskNode
+{
+public:
+	class BehaviorTree*                                          BehaviorAsset;                                     // 0x60(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x70] - InheritedSize[0x60]
+class BTTask_SetTagCooldown: public BTTaskNode
+{
+public:
+	struct GameplayTag                                           CooldownTag;                                       // 0x60(0x8)
+	bool                                                         bAddToExistingDuration;                            // 0x68(0x1)
+	float                                                        CoolDownDuration;                                  // 0x6c(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
+class BTTask_PushPawnAction: public BTTask_PawnActionBase
+{
+public:
+	class PawnAction*                                            Action;                                            // 0x60(0x8)
+};
+
+
+// Size 0x28 (Full Size[0x90] - InheritedSize[0x68]
+class BTDecorator_BlackboardBase: public BTDecorator
+{
+public:
+	struct BlackboardKeySelector                                 BlackboardKey;                                     // 0x68(0x28)
+};
+
+
+// Size 0x60 (Full Size[0xc8] - InheritedSize[0x68]
+class BTDecorator_KeepInCone: public BTDecorator
 {
 public:
 	float                                                        ConeHalfAngle;                                     // 0x68(0x4)
-	struct                                                       ConeOrigin;                                        // 0x70(0x28)
-	struct                                                       ConeDirection;                                     // 0x98(0x28)
-	struct                                                       Observed;                                          // 0xc0(0x28)
+	struct BlackboardKeySelector                                 ConeOrigin;                                        // 0x70(0x28)
+	struct BlackboardKeySelector                                 Observed;                                          // 0x98(0x28)
+	bool                                                         bUseSelfAsOrigin;                                  // 0xc0(0x1)
+	bool                                                         bUseSelfAsObserved;                                // 0xc0(0x1)
 };
 
 
-// Size 0x8 (Full Size[0x70] - InheritedSize[0x68]
-class BTDecorator_TimeLimit: public BTDecorator
+// Size 0x10 (Full Size[0x78] - InheritedSize[0x68]
+class BTDecorator_TagCooldown: public BTDecorator
 {
 public:
-	float                                                        TimeLimit;                                         // 0x68(0x4)
+	struct GameplayTag                                           CooldownTag;                                       // 0x68(0x8)
+	float                                                        CoolDownDuration;                                  // 0x70(0x4)
+	bool                                                         bAddToExistingDuration;                            // 0x74(0x1)
+	bool                                                         bActivatesCooldown;                                // 0x75(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
+class BTTask_MoveDirectlyToward: public BTTask_BlackboardBase
+{
+public:
+	float                                                        AcceptableRadius;                                  // 0x88(0x4)
+	bool                                                         bDisablePathUpdateOnGoalLocationChange;            // 0x8c(0x1)
+	bool                                                         bProjectVectorGoalToNavigation;                    // 0x8c(0x1)
+	bool                                                         bAllowStrafe;                                      // 0x8c(0x1)
+	bool                                                         bStopOnOverlap;                                    // 0x8c(0x1)
 };
 
 
@@ -579,94 +562,6 @@ public:
 };
 
 
-// Size 0x140 (Full Size[0x170] - InheritedSize[0x30]
-class EnvQueryTest: public EnvQueryNode
-{
-public:
-	int                                                          TestOrder;                                         // 0x30(0x4)
-	char                                                         TestPurpose;                                       // 0x34(0x1)
-	char                                                         MultipleContextFilterOp;                           // 0x35(0x1)
-	char                                                         MultipleContextScoreOp;                            // 0x36(0x1)
-	char                                                         FilterType;                                        // 0x37(0x1)
-	struct                                                       BoolValue;                                         // 0x38(0x30)
-	struct                                                       FloatValueMin;                                     // 0x68(0x30)
-	struct                                                       FloatValueMax;                                     // 0x98(0x30)
-	char                                                         ScoringEquation;                                   // 0xc9(0x1)
-	char                                                         ClampMinType;                                      // 0xca(0x1)
-	char                                                         ClampMaxType;                                      // 0xcb(0x1)
-	struct                                                       ScoreClampMin;                                     // 0xd0(0x30)
-	struct                                                       ScoreClampMax;                                     // 0x100(0x30)
-	struct                                                       ScoringFactor;                                     // 0x130(0x30)
-	bool                                                         bWorkOnFloatValues;                                // 0x168(0x1)
-};
-
-
-// Size 0x50 (Full Size[0xb0] - InheritedSize[0x60]
-class AITask_MoveTo: public AITask
-{
-public:
-	multicastinlinedelegate                                      OnRequestFailed;                                   // 0x60(0x10)
-	multicastinlinedelegate                                      OnMoveFinished;                                    // 0x70(0x10)
-	struct                                                       MoveGoalLocation;                                  // 0x80(0xc)
-	class Actor*                                                 MoveGoalActor;                                     // 0x98(0x8)
-	float                                                        MoveAcceptanceRadius;                              // 0xa0(0x4)
-	bool                                                         bShouldStopOnOverlap;                              // 0xa4(0x1)
-	bool                                                         bShouldAcceptPartialPath;                          // 0xa5(0x1)
-	bool                                                         bShouldUsePathfinding;                             // 0xa6(0x1)
-};
-
-
-// Size 0x50 (Full Size[0x308] - InheritedSize[0x2b8]
-class CrowdFollowingComponent: public PathFollowingComponent
-{
-public:
-	struct                                                       CrowdAgentMoveDirection;                           // 0x2c0(0xc)
-	class CharacterMovementComponent*                            CharacterMovement;                                 // 0x2d0(0x8)
-	struct                                                       AvoidanceGroup;                                    // 0x2d8(0x4)
-	struct                                                       GroupsToAvoid;                                     // 0x2dc(0x4)
-	struct                                                       GroupsToIgnore;                                    // 0x2e0(0x4)
-};
-
-
-// Size 0x28 (Full Size[0x90] - InheritedSize[0x68]
-class BTDecorator_BlackboardBase: public BTDecorator
-{
-public:
-	struct                                                       BlackboardKey;                                     // 0x68(0x28)
-};
-
-
-// Size 0x8 (Full Size[0x70] - InheritedSize[0x68]
-class BTDecorator_Loop: public BTDecorator
-{
-public:
-	int                                                          NumLoops;                                          // 0x68(0x4)
-	bool                                                         bInfiniteLoop;                                     // 0x6c(0x1)
-};
-
-
-// Size 0x10 (Full Size[0x78] - InheritedSize[0x68]
-class BTDecorator_TagCooldown: public BTDecorator
-{
-public:
-	struct                                                       CooldownTag;                                       // 0x68(0x8)
-	float                                                        CoolDownDuration;                                  // 0x70(0x4)
-	bool                                                         bAddToExistingDuration;                            // 0x74(0x1)
-	bool                                                         bActivatesCooldown;                                // 0x75(0x1)
-};
-
-
-// Size 0x28 (Full Size[0x58] - InheritedSize[0x30]
-class EnvQueryGenerator: public EnvQueryNode
-{
-public:
-	struct FString                                               OptionName;                                        // 0x30(0x10)
-	bool                                                         NonShippingOnly;                                   // 0x40(0x1)
-	struct                                                       Feature;                                           // 0x44(0xc)
-	class UClass*                                                ItemType;                                          // 0x50(0x8)
-};
-
-
 // Size 0x10 (Full Size[0xa0] - InheritedSize[0x90]
 class PawnAction_Wait: public PawnAction
 {
@@ -675,28 +570,15 @@ public:
 };
 
 
-// Size 0x30 (Full Size[0x88] - InheritedSize[0x58]
-class BTCompositeNode: public BTNode
+// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
+class AISenseConfig_Hearing: public AISenseConfig
 {
 public:
-	TArray<struct BTCompositeChild>                              Children;                                          // 0x58(0x10)
-	TArray<class BTService*>                                     Services;                                          // 0x68(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x70] - InheritedSize[0x68]
-class BTDecorator_Cooldown: public BTDecorator
-{
-public:
-	float                                                        CoolDownTime;                                      // 0x68(0x4)
-};
-
-
-// Size 0x28 (Full Size[0x90] - InheritedSize[0x68]
-class BTTask_WaitBlackboardTime: public BTTask_Wait
-{
-public:
-	struct                                                       BlackboardKey;                                     // 0x68(0x28)
+	class UClass*                                                Implementation;                                    // 0x30(0x8)
+	float                                                        HearingRange;                                      // 0x38(0x4)
+	float                                                        LoSHearingRange;                                   // 0x3c(0x4)
+	bool                                                         bUseLoSHearing;                                    // 0x40(0x1)
+	struct AISenseAffiliationFilter                              DetectionByAffiliation;                            // 0x44(0x4)
 };
 
 
@@ -711,43 +593,21 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
-class BTTask_RotateToFaceBBEntry: public BTTask_BlackboardBase
+// Size 0x50 (Full Size[0xe0] - InheritedSize[0x90]
+class PawnAction_Move: public PawnAction
 {
 public:
-	float                                                        Precision;                                         // 0x88(0x4)
-};
-
-
-// Size 0x98 (Full Size[0x120] - InheritedSize[0x88]
-class AISense_Hearing: public AISense
-{
-public:
-	int                                                          MaxNoisesPerTick;                                  // 0x88(0x4)
-	int                                                          MaxNoisesStored;                                   // 0x8c(0x4)
-	TArray<struct AINoiseEvent>                                  NoiseEventsArrayA;                                 // 0x98(0x10)
-	TArray<struct AINoiseEvent>                                  NoiseEventsArrayB;                                 // 0xa8(0x10)
-	float                                                        SpeedOfSoundSq;                                    // 0xc8(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x78] - InheritedSize[0x68]
-class BTDecorator_SetTagCooldown: public BTDecorator
-{
-public:
-	struct                                                       CooldownTag;                                       // 0x68(0x8)
-	float                                                        CoolDownDuration;                                  // 0x70(0x4)
-	bool                                                         bAddToExistingDuration;                            // 0x74(0x1)
-};
-
-
-// Size 0x20 (Full Size[0xb0] - InheritedSize[0x90]
-class PawnAction_Repeat: public PawnAction
-{
-public:
-	class PawnAction*                                            ActionToRepeat;                                    // 0x90(0x8)
-	class PawnAction*                                            RecentActionCopy;                                  // 0x98(0x8)
-	char                                                         ChildFailureHandlingMode;                          // 0xa0(0x1)
+	class Actor*                                                 GoalActor;                                         // 0x90(0x8)
+	struct Vector                                                GoalLocation;                                      // 0x98(0xc)
+	float                                                        AcceptableRadius;                                  // 0xa4(0x4)
+	class UClass*                                                FilterClass;                                       // 0xa8(0x8)
+	bool                                                         bAllowStrafe;                                      // 0xb0(0x1)
+	bool                                                         bFinishOnOverlap;                                  // 0xb0(0x1)
+	bool                                                         bUsePathfinding;                                   // 0xb0(0x1)
+	bool                                                         bAllowPartialPath;                                 // 0xb0(0x1)
+	bool                                                         bProjectGoalToNavigation;                          // 0xb0(0x1)
+	bool                                                         bUpdatePathToGoal;                                 // 0xb0(0x1)
+	bool                                                         bAbortChildActionOnPathChange;                     // 0xb0(0x1)
 };
 
 
@@ -759,11 +619,127 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
-class AISense_Prediction: public AISense
+// Size 0xc8 (Full Size[0x150] - InheritedSize[0x88]
+class AISense_Sight: public AISense
 {
 public:
-	TArray<struct AIPredictionEvent>                             RegisteredEvents;                                  // 0x88(0x10)
+	int                                                          MaxTracesPerTick;                                  // 0x138(0x4)
+	float                                                        HighImportanceQueryDistanceThreshold;              // 0x13c(0x4)
+	float                                                        MaxQueryImportance;                                // 0x144(0x4)
+	float                                                        SightLimitQueryImportance;                         // 0x148(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class AISenseConfig_Damage: public AISenseConfig
+{
+public:
+	class UClass*                                                Implementation;                                    // 0x30(0x8)
+};
+
+
+// Size 0x68 (Full Size[0xd0] - InheritedSize[0x68]
+class BTDecorator_CheckGameplayTagsOnActor: public BTDecorator
+{
+public:
+	struct BlackboardKeySelector                                 ActorToCheck;                                      // 0x68(0x28)
+	char                                                         TagsToMatch;                                       // 0x90(0x1)
+	struct GameplayTagContainer                                  GameplayTags;                                      // 0x98(0x28)
+	struct FString                                               CachedDescription;                                 // 0xc0(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x78] - InheritedSize[0x68]
+class BTDecorator_SetTagCooldown: public BTDecorator
+{
+public:
+	struct GameplayTag                                           CooldownTag;                                       // 0x68(0x8)
+	float                                                        CoolDownDuration;                                  // 0x70(0x4)
+	bool                                                         bAddToExistingDuration;                            // 0x74(0x1)
+};
+
+
+// Size 0x50 (Full Size[0x308] - InheritedSize[0x2b8]
+class CrowdFollowingComponent: public PathFollowingComponent
+{
+public:
+	struct Vector                                                CrowdAgentMoveDirection;                           // 0x2c0(0xc)
+	class CharacterMovementComponent*                            CharacterMovement;                                 // 0x2d0(0x8)
+	struct NavAvoidanceMask                                      AvoidanceGroup;                                    // 0x2d8(0x4)
+	struct NavAvoidanceMask                                      GroupsToAvoid;                                     // 0x2dc(0x4)
+	struct NavAvoidanceMask                                      GroupsToIgnore;                                    // 0x2e0(0x4)
+};
+
+
+// Size 0x28 (Full Size[0x90] - InheritedSize[0x68]
+class BTTask_WaitBlackboardTime: public BTTask_Wait
+{
+public:
+	struct BlackboardKeySelector                                 BlackboardKey;                                     // 0x68(0x28)
+};
+
+
+// Size 0x8 (Full Size[0x70] - InheritedSize[0x68]
+class BTDecorator_TimeLimit: public BTDecorator
+{
+public:
+	float                                                        TimeLimit;                                         // 0x68(0x4)
+};
+
+
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
+class AISense_Team: public AISense
+{
+public:
+	TArray<struct AITeamStimulusEvent>                           RegisteredEvents;                                  // 0x88(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
+class AISense_Damage: public AISense
+{
+public:
+	TArray<struct AIDamageEvent>                                 RegisteredEvents;                                  // 0x88(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x70] - InheritedSize[0x68]
+class BTDecorator_Cooldown: public BTDecorator
+{
+public:
+	float                                                        CoolDownTime;                                      // 0x68(0x4)
+};
+
+
+// Size 0x140 (Full Size[0x170] - InheritedSize[0x30]
+class EnvQueryTest: public EnvQueryNode
+{
+public:
+	int                                                          TestOrder;                                         // 0x30(0x4)
+	char                                                         TestPurpose;                                       // 0x34(0x1)
+	char                                                         MultipleContextFilterOp;                           // 0x35(0x1)
+	char                                                         MultipleContextScoreOp;                            // 0x36(0x1)
+	char                                                         FilterType;                                        // 0x37(0x1)
+	struct AIDataProviderBoolValue                               BoolValue;                                         // 0x38(0x30)
+	struct AIDataProviderFloatValue                              FloatValueMin;                                     // 0x68(0x30)
+	struct AIDataProviderFloatValue                              FloatValueMax;                                     // 0x98(0x30)
+	char                                                         ScoringEquation;                                   // 0xc9(0x1)
+	char                                                         ClampMinType;                                      // 0xca(0x1)
+	char                                                         ClampMaxType;                                      // 0xcb(0x1)
+	struct AIDataProviderFloatValue                              ScoreClampMin;                                     // 0xd0(0x30)
+	struct AIDataProviderFloatValue                              ScoreClampMax;                                     // 0x100(0x30)
+	struct AIDataProviderFloatValue                              ScoringFactor;                                     // 0x130(0x30)
+	bool                                                         bWorkOnFloatValues;                                // 0x168(0x1)
+};
+
+
+// Size 0x20 (Full Size[0xa8] - InheritedSize[0x88]
+class BTTask_RunEQSQuery: public BTTask_BlackboardBase
+{
+public:
+	class EnvQuery*                                              QueryTemplate;                                     // 0x88(0x8)
+	TArray<struct EnvNamedValue>                                 QueryParams;                                       // 0x90(0x10)
+	char                                                         RunMode;                                           // 0xa0(0x1)
 };
 
 
@@ -780,21 +756,54 @@ public:
 };
 
 
-// Size 0x28 (Full Size[0xb0] - InheritedSize[0x88]
-class AISense_Blueprint: public AISense
+// Size 0x30 (Full Size[0x88] - InheritedSize[0x58]
+class BTCompositeNode: public BTNode
 {
 public:
-	class UClass*                                                ListenerDataType;                                  // 0x88(0x8)
-	TArray<class AIPerceptionComponent*>                         ListenerContainer;                                 // 0x90(0x10)
-	TArray<class AISenseEvent*>                                  UnprocessedEvents;                                 // 0xa0(0x10)
+	TArray<struct BTCompositeChild>                              Children;                                          // 0x58(0x10)
+	TArray<class BTService*>                                     Services;                                          // 0x68(0x10)
 };
 
 
-// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
-class AISense_Damage: public AISense
+// Size 0x8 (Full Size[0x70] - InheritedSize[0x68]
+class BTDecorator_Loop: public BTDecorator
 {
 public:
-	TArray<struct AIDamageEvent>                                 RegisteredEvents;                                  // 0x88(0x10)
+	int                                                          NumLoops;                                          // 0x68(0x4)
+	bool                                                         bInfiniteLoop;                                     // 0x6c(0x1)
+};
+
+
+// Size 0x28 (Full Size[0x98] - InheritedSize[0x70]
+class BTService_BlackboardBase: public BTService
+{
+public:
+	struct BlackboardKeySelector                                 BlackboardKey;                                     // 0x70(0x28)
+};
+
+
+// Size 0x50 (Full Size[0xb0] - InheritedSize[0x60]
+class AITask_MoveTo: public AITask
+{
+public:
+	multicastinlinedelegate                                      OnRequestFailed;                                   // 0x60(0x10)
+	multicastinlinedelegate                                      OnMoveFinished;                                    // 0x70(0x10)
+	struct Vector                                                MoveGoalLocation;                                  // 0x80(0xc)
+	class Actor*                                                 MoveGoalActor;                                     // 0x98(0x8)
+	float                                                        MoveAcceptanceRadius;                              // 0xa0(0x4)
+	bool                                                         bShouldStopOnOverlap;                              // 0xa4(0x1)
+	bool                                                         bShouldAcceptPartialPath;                          // 0xa5(0x1)
+	bool                                                         bShouldUsePathfinding;                             // 0xa6(0x1)
+};
+
+
+// Size 0x58 (Full Size[0xc0] - InheritedSize[0x68]
+class BTDecorator_CompareBBEntries: public BTDecorator
+{
+public:
+	char                                                         Operator;                                          // 0x68(0x1)
+	struct BlackboardKeySelector                                 BlackboardKeyA;                                    // 0x70(0x28)
+	struct BlackboardKeySelector                                 BlackboardKeyB;                                    // 0x98(0x28)
 };
 
 
@@ -806,6 +815,35 @@ public:
 };
 
 
+// Size 0x28 (Full Size[0x58] - InheritedSize[0x30]
+class EnvQueryGenerator: public EnvQueryNode
+{
+public:
+	struct FString                                               OptionName;                                        // 0x30(0x10)
+	bool                                                         NonShippingOnly;                                   // 0x40(0x1)
+	struct FeatureFlag                                           Feature;                                           // 0x44(0xc)
+	class UClass*                                                ItemType;                                          // 0x50(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
+class BTTask_RotateToFaceBBEntry: public BTTask_BlackboardBase
+{
+public:
+	float                                                        Precision;                                         // 0x88(0x4)
+};
+
+
+// Size 0x20 (Full Size[0xb0] - InheritedSize[0x90]
+class PawnAction_Repeat: public PawnAction
+{
+public:
+	class PawnAction*                                            ActionToRepeat;                                    // 0x90(0x8)
+	class PawnAction*                                            RecentActionCopy;                                  // 0x98(0x8)
+	char                                                         ChildFailureHandlingMode;                          // 0xa0(0x1)
+};
+
+
 // Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
 class AISenseConfig_Sight: public AISenseConfig
 {
@@ -814,47 +852,20 @@ public:
 	float                                                        SightRadius;                                       // 0x38(0x4)
 	float                                                        LoseSightRadius;                                   // 0x3c(0x4)
 	float                                                        PeripheralVisionAngleDegrees;                      // 0x40(0x4)
-	struct                                                       DetectionByAffiliation;                            // 0x44(0x4)
+	struct AISenseAffiliationFilter                              DetectionByAffiliation;                            // 0x44(0x4)
 	float                                                        AutoSuccessRangeFromLastSeenLocation;              // 0x48(0x4)
 };
 
 
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class AISenseConfig_Damage: public AISenseConfig
+// Size 0x98 (Full Size[0x120] - InheritedSize[0x88]
+class AISense_Hearing: public AISense
 {
 public:
-	class UClass*                                                Implementation;                                    // 0x30(0x8)
-};
-
-
-// Size 0x28 (Full Size[0x98] - InheritedSize[0x70]
-class BTService_BlackboardBase: public BTService
-{
-public:
-	struct                                                       BlackboardKey;                                     // 0x70(0x28)
-};
-
-
-// Size 0x60 (Full Size[0xc8] - InheritedSize[0x68]
-class BTDecorator_KeepInCone: public BTDecorator
-{
-public:
-	float                                                        ConeHalfAngle;                                     // 0x68(0x4)
-	struct                                                       ConeOrigin;                                        // 0x70(0x28)
-	struct                                                       Observed;                                          // 0x98(0x28)
-	bool                                                         bUseSelfAsOrigin;                                  // 0xc0(0x1)
-	bool                                                         bUseSelfAsObserved;                                // 0xc0(0x1)
-};
-
-
-// Size 0x68 (Full Size[0xd0] - InheritedSize[0x68]
-class BTDecorator_CheckGameplayTagsOnActor: public BTDecorator
-{
-public:
-	struct                                                       ActorToCheck;                                      // 0x68(0x28)
-	char                                                         TagsToMatch;                                       // 0x90(0x1)
-	struct                                                       GameplayTags;                                      // 0x98(0x28)
-	struct FString                                               CachedDescription;                                 // 0xc0(0x10)
+	int                                                          MaxNoisesPerTick;                                  // 0x88(0x4)
+	int                                                          MaxNoisesStored;                                   // 0x8c(0x4)
+	TArray<struct AINoiseEvent>                                  NoiseEventsArrayA;                                 // 0x98(0x10)
+	TArray<struct AINoiseEvent>                                  NoiseEventsArrayB;                                 // 0xa8(0x10)
+	float                                                        SpeedOfSoundSq;                                    // 0xc8(0x4)
 };
 
 
@@ -862,11 +873,29 @@ public:
 class BTDecorator_DoesPathExist: public BTDecorator
 {
 public:
-	struct                                                       BlackboardKeyA;                                    // 0x68(0x28)
-	struct                                                       BlackboardKeyB;                                    // 0x90(0x28)
+	struct BlackboardKeySelector                                 BlackboardKeyA;                                    // 0x68(0x28)
+	struct BlackboardKeySelector                                 BlackboardKeyB;                                    // 0x90(0x28)
 	bool                                                         bUseSelf;                                          // 0xb8(0x1)
 	char                                                         PathQueryType;                                     // 0xbc(0x1)
 	class UClass*                                                FilterClass;                                       // 0xc0(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
+class AISense_Prediction: public AISense
+{
+public:
+	TArray<struct AIPredictionEvent>                             RegisteredEvents;                                  // 0x88(0x10)
+};
+
+
+// Size 0x28 (Full Size[0xb0] - InheritedSize[0x88]
+class AISense_Blueprint: public AISense
+{
+public:
+	class UClass*                                                ListenerDataType;                                  // 0x88(0x8)
+	TArray<class AIPerceptionComponent*>                         ListenerContainer;                                 // 0x90(0x10)
+	TArray<class AISenseEvent*>                                  UnprocessedEvents;                                 // 0xa0(0x10)
 };
 
 
@@ -875,46 +904,6 @@ class BehaviorTreeComponent: public BrainComponent
 {
 public:
 	TArray<class BTNode*>                                        NodeInstances;                                     // 0x148(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
-class BTTask_MoveDirectlyToward: public BTTask_BlackboardBase
-{
-public:
-	float                                                        AcceptableRadius;                                  // 0x88(0x4)
-	bool                                                         bDisablePathUpdateOnGoalLocationChange;            // 0x8c(0x1)
-	bool                                                         bProjectVectorGoalToNavigation;                    // 0x8c(0x1)
-	bool                                                         bAllowStrafe;                                      // 0x8c(0x1)
-	bool                                                         bStopOnOverlap;                                    // 0x8c(0x1)
-};
-
-
-// Size 0x58 (Full Size[0xc0] - InheritedSize[0x68]
-class BTDecorator_CompareBBEntries: public BTDecorator
-{
-public:
-	char                                                         Operator;                                          // 0x68(0x1)
-	struct                                                       BlackboardKeyA;                                    // 0x70(0x28)
-	struct                                                       BlackboardKeyB;                                    // 0x98(0x28)
-};
-
-
-// Size 0x50 (Full Size[0xe0] - InheritedSize[0x90]
-class PawnAction_Move: public PawnAction
-{
-public:
-	class Actor*                                                 GoalActor;                                         // 0x90(0x8)
-	struct                                                       GoalLocation;                                      // 0x98(0xc)
-	float                                                        AcceptableRadius;                                  // 0xa4(0x4)
-	class UClass*                                                FilterClass;                                       // 0xa8(0x8)
-	bool                                                         bAllowStrafe;                                      // 0xb0(0x1)
-	bool                                                         bFinishOnOverlap;                                  // 0xb0(0x1)
-	bool                                                         bUsePathfinding;                                   // 0xb0(0x1)
-	bool                                                         bAllowPartialPath;                                 // 0xb0(0x1)
-	bool                                                         bProjectGoalToNavigation;                          // 0xb0(0x1)
-	bool                                                         bUpdatePathToGoal;                                 // 0xb0(0x1)
-	bool                                                         bAbortChildActionOnPathChange;                     // 0xb0(0x1)
 };
 
 
@@ -928,6 +917,55 @@ public:
 };
 
 
+// Size 0x88 (Full Size[0xf0] - InheritedSize[0x68]
+class BTDecorator_ConeCheck: public BTDecorator
+{
+public:
+	float                                                        ConeHalfAngle;                                     // 0x68(0x4)
+	struct BlackboardKeySelector                                 ConeOrigin;                                        // 0x70(0x28)
+	struct BlackboardKeySelector                                 ConeDirection;                                     // 0x98(0x28)
+	struct BlackboardKeySelector                                 Observed;                                          // 0xc0(0x28)
+};
+
+
+// Size 0xd8 (Full Size[0x248] - InheritedSize[0x170]
+class EnvQueryTest_Trace: public EnvQueryTest
+{
+public:
+	struct EnvTraceData                                          TraceData;                                         // 0x170(0x40)
+	struct AIDataProviderBoolValue                               TraceFromContext;                                  // 0x1b0(0x30)
+	struct AIDataProviderFloatValue                              ItemHeightOffset;                                  // 0x1e0(0x30)
+	struct AIDataProviderFloatValue                              ContextHeightOffset;                               // 0x210(0x30)
+	class UClass*                                                Context;                                           // 0x240(0x8)
+};
+
+
+// Size 0x40 (Full Size[0x98] - InheritedSize[0x58]
+class EnvQueryGenerator_ActorsOfClass: public EnvQueryGenerator
+{
+public:
+	struct AIDataProviderFloatValue                              SearchRadius;                                      // 0x58(0x30)
+	class UClass*                                                SearchedActorClass;                                // 0x88(0x8)
+	class UClass*                                                SearchCenter;                                      // 0x90(0x8)
+};
+
+
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class BTService_DefaultFocus: public BTService_BlackboardBase
+{
+public:
+	char                                                         FocusPriority;                                     // 0x98(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
+class BTComposite_SimpleParallel: public BTCompositeNode
+{
+public:
+	char                                                         FinishMode;                                        // 0x88(0x1)
+};
+
+
 // Size 0x50 (Full Size[0xa8] - InheritedSize[0x58]
 class EnvQueryGenerator_BlueprintBase: public EnvQueryGenerator
 {
@@ -938,38 +976,11 @@ public:
 };
 
 
-// Size 0x48 (Full Size[0x1b8] - InheritedSize[0x170]
-class EnvQueryTest_Dot: public EnvQueryTest
+// Size 0x8 (Full Size[0x98] - InheritedSize[0x90]
+class BTDecorator_IsBBEntryOfClass: public BTDecorator_BlackboardBase
 {
 public:
-	struct                                                       LineA;                                             // 0x170(0x20)
-	struct                                                       LineB;                                             // 0x190(0x20)
-	char                                                         TestMode;                                          // 0x1b0(0x1)
-	bool                                                         bAbsoluteValue;                                    // 0x1b1(0x1)
-};
-
-
-// Size 0xd8 (Full Size[0x248] - InheritedSize[0x170]
-class EnvQueryTest_Pathfinding: public EnvQueryTest
-{
-public:
-	char                                                         TestMode;                                          // 0x170(0x1)
-	class UClass*                                                Context;                                           // 0x178(0x8)
-	struct                                                       PathFromContext;                                   // 0x180(0x30)
-	struct                                                       SkipUnreachable;                                   // 0x1b0(0x30)
-	struct                                                       MaxNumPathSegments;                                // 0x1e0(0x30)
-	struct                                                       PassThroughUnreachable;                            // 0x210(0x30)
-	class UClass*                                                FilterClass;                                       // 0x240(0x8)
-};
-
-
-// Size 0x40 (Full Size[0x98] - InheritedSize[0x58]
-class EnvQueryGenerator_ActorsOfClass: public EnvQueryGenerator
-{
-public:
-	struct                                                       SearchRadius;                                      // 0x58(0x30)
-	class UClass*                                                SearchedActorClass;                                // 0x88(0x8)
-	class UClass*                                                SearchCenter;                                      // 0x90(0x8)
+	class UClass*                                                TestClass;                                         // 0x90(0x8)
 };
 
 
@@ -978,15 +989,27 @@ class EnvQueryTest_GameplayTags: public EnvQueryTest
 {
 public:
 	char                                                         TagsToMatch;                                       // 0x170(0x1)
-	struct                                                       GameplayTags;                                      // 0x178(0x28)
+	struct GameplayTagContainer                                  GameplayTags;                                      // 0x178(0x28)
 };
 
 
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class BTService_DefaultFocus: public BTService_BlackboardBase
+// Size 0x48 (Full Size[0x1b8] - InheritedSize[0x170]
+class EnvQueryTest_Dot: public EnvQueryTest
 {
 public:
-	char                                                         FocusPriority;                                     // 0x98(0x1)
+	struct EnvDirection                                          LineA;                                             // 0x170(0x20)
+	struct EnvDirection                                          LineB;                                             // 0x190(0x20)
+	char                                                         TestMode;                                          // 0x1b0(0x1)
+	bool                                                         bAbsoluteValue;                                    // 0x1b1(0x1)
+};
+
+
+// Size 0x10 (Full Size[0x180] - InheritedSize[0x170]
+class EnvQueryTest_Distance: public EnvQueryTest
+{
+public:
+	char                                                         TestMode;                                          // 0x170(0x1)
+	class UClass*                                                DistanceTo;                                        // 0x178(0x8)
 };
 
 
@@ -1003,19 +1026,11 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x98] - InheritedSize[0x90]
-class BTDecorator_IsBBEntryOfClass: public BTDecorator_BlackboardBase
-{
-public:
-	class UClass*                                                TestClass;                                         // 0x90(0x8)
-};
-
-
 // Size 0x40 (Full Size[0x98] - InheritedSize[0x58]
 class EnvQueryGenerator_ProjectedPoints: public EnvQueryGenerator
 {
 public:
-	struct                                                       ProjectionData;                                    // 0x58(0x40)
+	struct EnvTraceData                                          ProjectionData;                                    // 0x58(0x40)
 };
 
 
@@ -1028,27 +1043,6 @@ public:
 };
 
 
-// Size 0xd8 (Full Size[0x248] - InheritedSize[0x170]
-class EnvQueryTest_Trace: public EnvQueryTest
-{
-public:
-	struct                                                       TraceData;                                         // 0x170(0x40)
-	struct                                                       TraceFromContext;                                  // 0x1b0(0x30)
-	struct                                                       ItemHeightOffset;                                  // 0x1e0(0x30)
-	struct                                                       ContextHeightOffset;                               // 0x210(0x30)
-	class UClass*                                                Context;                                           // 0x240(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x180] - InheritedSize[0x170]
-class EnvQueryTest_Distance: public EnvQueryTest
-{
-public:
-	char                                                         TestMode;                                          // 0x170(0x1)
-	class UClass*                                                DistanceTo;                                        // 0x178(0x8)
-};
-
-
 // Size 0x18 (Full Size[0x70] - InheritedSize[0x58]
 class EnvQueryGenerator_Composite: public EnvQueryGenerator
 {
@@ -1058,26 +1052,17 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
-class BTComposite_SimpleParallel: public BTCompositeNode
+// Size 0xd8 (Full Size[0x248] - InheritedSize[0x170]
+class EnvQueryTest_Pathfinding: public EnvQueryTest
 {
 public:
-	char                                                         FinishMode;                                        // 0x88(0x1)
-};
-
-
-// Size 0x108 (Full Size[0x1a0] - InheritedSize[0x98]
-class EnvQueryGenerator_OnCircle: public EnvQueryGenerator_ProjectedPoints
-{
-public:
-	struct                                                       CircleRadius;                                      // 0x98(0x30)
-	struct                                                       SpaceBetween;                                      // 0xc8(0x30)
-	struct                                                       ArcDirection;                                      // 0xf8(0x20)
-	struct                                                       ArcAngle;                                          // 0x118(0x30)
-	float                                                        AngleRadians;                                      // 0x148(0x4)
-	class UClass*                                                CircleCenter;                                      // 0x150(0x8)
-	struct                                                       TraceData;                                         // 0x158(0x40)
-	bool                                                         bDefineArc;                                        // 0x198(0x1)
+	char                                                         TestMode;                                          // 0x170(0x1)
+	class UClass*                                                Context;                                           // 0x178(0x8)
+	struct AIDataProviderBoolValue                               PathFromContext;                                   // 0x180(0x30)
+	struct AIDataProviderBoolValue                               SkipUnreachable;                                   // 0x1b0(0x30)
+	struct AIDataProviderIntValue                                MaxNumPathSegments;                                // 0x1e0(0x30)
+	struct AIDataProviderBoolValue                               PassThroughUnreachable;                            // 0x210(0x30)
+	class UClass*                                                FilterClass;                                       // 0x240(0x8)
 };
 
 
@@ -1085,25 +1070,9 @@ public:
 class EnvQueryGenerator_SimpleGrid: public EnvQueryGenerator_ProjectedPoints
 {
 public:
-	struct                                                       GridSize;                                          // 0x98(0x30)
-	struct                                                       SpaceBetween;                                      // 0xc8(0x30)
+	struct AIDataProviderFloatValue                              GridSize;                                          // 0x98(0x30)
+	struct AIDataProviderFloatValue                              SpaceBetween;                                      // 0xc8(0x30)
 	class UClass*                                                GenerateAround;                                    // 0xf8(0x8)
-};
-
-
-// Size 0x128 (Full Size[0x1c0] - InheritedSize[0x98]
-class EnvQueryGenerator_Donut: public EnvQueryGenerator_ProjectedPoints
-{
-public:
-	struct                                                       InnerRadius;                                       // 0x98(0x30)
-	struct                                                       OuterRadius;                                       // 0xc8(0x30)
-	struct                                                       NumberOfRings;                                     // 0xf8(0x30)
-	struct                                                       PointsPerRing;                                     // 0x128(0x30)
-	struct                                                       ArcDirection;                                      // 0x158(0x20)
-	struct                                                       ArcAngle;                                          // 0x178(0x30)
-	bool                                                         RandomiseRadius;                                   // 0x1a8(0x1)
-	class UClass*                                                Center;                                            // 0x1b0(0x8)
-	bool                                                         bDefineArc;                                        // 0x1b8(0x1)
 };
 
 
@@ -1111,7 +1080,38 @@ public:
 class EnvQueryTest_PathfindingBatch: public EnvQueryTest_Pathfinding
 {
 public:
-	struct                                                       ScanRangeMultiplier;                               // 0x248(0x30)
+	struct AIDataProviderFloatValue                              ScanRangeMultiplier;                               // 0x248(0x30)
+};
+
+
+// Size 0x108 (Full Size[0x1a0] - InheritedSize[0x98]
+class EnvQueryGenerator_OnCircle: public EnvQueryGenerator_ProjectedPoints
+{
+public:
+	struct AIDataProviderFloatValue                              CircleRadius;                                      // 0x98(0x30)
+	struct AIDataProviderFloatValue                              SpaceBetween;                                      // 0xc8(0x30)
+	struct EnvDirection                                          ArcDirection;                                      // 0xf8(0x20)
+	struct AIDataProviderFloatValue                              ArcAngle;                                          // 0x118(0x30)
+	float                                                        AngleRadians;                                      // 0x148(0x4)
+	class UClass*                                                CircleCenter;                                      // 0x150(0x8)
+	struct EnvTraceData                                          TraceData;                                         // 0x158(0x40)
+	bool                                                         bDefineArc;                                        // 0x198(0x1)
+};
+
+
+// Size 0x128 (Full Size[0x1c0] - InheritedSize[0x98]
+class EnvQueryGenerator_Donut: public EnvQueryGenerator_ProjectedPoints
+{
+public:
+	struct AIDataProviderFloatValue                              InnerRadius;                                       // 0x98(0x30)
+	struct AIDataProviderFloatValue                              OuterRadius;                                       // 0xc8(0x30)
+	struct AIDataProviderIntValue                                NumberOfRings;                                     // 0xf8(0x30)
+	struct AIDataProviderIntValue                                PointsPerRing;                                     // 0x128(0x30)
+	struct EnvDirection                                          ArcDirection;                                      // 0x158(0x20)
+	struct AIDataProviderFloatValue                              ArcAngle;                                          // 0x178(0x30)
+	bool                                                         RandomiseRadius;                                   // 0x1a8(0x1)
+	class UClass*                                                Center;                                            // 0x1b0(0x8)
+	bool                                                         bDefineArc;                                        // 0x1b8(0x1)
 };
 
 
@@ -1119,9 +1119,9 @@ public:
 class EnvQueryGenerator_PathingGrid: public EnvQueryGenerator_SimpleGrid
 {
 public:
-	struct                                                       PathToItem;                                        // 0x100(0x30)
+	struct AIDataProviderBoolValue                               PathToItem;                                        // 0x100(0x30)
 	class UClass*                                                NavigationFilter;                                  // 0x130(0x8)
-	struct                                                       ScanRangeMultiplier;                               // 0x138(0x30)
+	struct AIDataProviderFloatValue                              ScanRangeMultiplier;                               // 0x138(0x30)
 };
 
 

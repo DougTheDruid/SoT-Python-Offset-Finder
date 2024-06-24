@@ -170,7 +170,7 @@ AnimGroupInfo:
   - Name: Color
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   ClassSize: '0x18'
 AnimLinkableElement:
   Attributes:
@@ -263,11 +263,11 @@ AnimNode_ApplyAdditive:
   - Name: Base
     Offset: '0x30'
     Size: '0x18'
-    Type: struct
+    Type: struct PoseLink
   - Name: Additive
     Offset: '0x48'
     Size: '0x18'
-    Type: struct
+    Type: struct PoseLink
   - Name: Alpha
     Offset: '0x60'
     Size: '0x4'
@@ -275,7 +275,7 @@ AnimNode_ApplyAdditive:
   - Name: AlphaScaleBias
     Offset: '0x64'
     Size: '0x8'
-    Type: struct
+    Type: struct InputScaleBias
   ClassSize: '0x70'
 AnimNode_AssetPlayerBase:
   Attributes:
@@ -297,7 +297,7 @@ AnimNode_Base:
   - Name: EvaluateGraphExposedInputs
     Offset: '0x8'
     Size: '0x28'
-    Type: struct
+    Type: struct ExposedValueHandler
   ClassSize: '0x30'
 AnimNode_BlendListBase:
   Attributes:
@@ -414,7 +414,7 @@ AnimNode_BlendSpacePlayer:
   - Name: BlendFilter
     Offset: '0x68'
     Size: '0x90'
-    Type: struct
+    Type: struct BlendFilter
   - Name: BlendSampleDataCache
     Offset: '0xf8'
     Size: '0x10'
@@ -425,21 +425,21 @@ AnimNode_ConvertComponentToLocalSpace:
   - Name: ComponentPose
     Offset: '0x30'
     Size: '0x18'
-    Type: struct
+    Type: struct ComponentSpacePoseLink
   ClassSize: '0x48'
 AnimNode_ConvertLocalToComponentSpace:
   Attributes:
   - Name: LocalPose
     Offset: '0x30'
     Size: '0x18'
-    Type: struct
+    Type: struct PoseLink
   ClassSize: '0x48'
 AnimNode_HIKBase:
   Attributes:
   - Name: HIKSettings
     Offset: '0x30'
     Size: '0x18'
-    Type: struct
+    Type: struct ComponentSpacePoseLink
   ClassSize: '0x48'
 AnimNode_HIKFloorContact:
   Attributes:
@@ -494,7 +494,7 @@ AnimNode_HIKFloorContact:
   - Name: OverrideRaycastCollisionResponse
     Offset: '0x68'
     Size: '0x20'
-    Type: struct
+    Type: struct CollisionResponseContainer
   - Name: FeetHeight
     Offset: '0x88'
     Size: '0x4'
@@ -553,7 +553,7 @@ AnimNode_HIKLookAt:
   - Name: TargetPosition
     Offset: '0x4c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ChestContribution
     Offset: '0x58'
     Size: '0x4'
@@ -600,7 +600,7 @@ AnimNode_HIKOffset:
   - Name: Translation
     Offset: '0x50'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Effector
     Offset: '0x5c'
     Size: '0x1'
@@ -688,11 +688,11 @@ AnimNode_HIKReach:
   - Name: Translation
     Offset: '0x54'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Orientation
     Offset: '0x60'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: Effector
     Offset: '0x70'
     Size: '0x1'
@@ -723,11 +723,11 @@ AnimNode_HIKReachRotator:
   - Name: Translation
     Offset: '0x54'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Orientation
     Offset: '0x60'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: Effector
     Offset: '0x6c'
     Size: '0x1'
@@ -774,7 +774,7 @@ AnimNode_HIKRelativePlant:
   - Name: OverrideRaycastCollisionResponse
     Offset: '0x68'
     Size: '0x20'
-    Type: struct
+    Type: struct CollisionResponseContainer
   - Name: DeltaTime
     Offset: '0x88'
     Size: '0x4'
@@ -853,7 +853,7 @@ AnimNode_HIKRelativePlantAndFloorContact:
   - Name: OverrideRaycastCollisionResponse
     Offset: '0x78'
     Size: '0x20'
-    Type: struct
+    Type: struct CollisionResponseContainer
   - Name: FeetHeight
     Offset: '0x98'
     Size: '0x4'
@@ -934,7 +934,7 @@ AnimNode_HIKSolve:
   - Name: InputFKPose
     Offset: '0x50'
     Size: '0x18'
-    Type: struct
+    Type: struct ComponentSpacePoseLink
   - Name: enablePullEngine
     Offset: '0x68'
     Size: '0x1'
@@ -1032,7 +1032,7 @@ AnimNode_LayeredBoneBlend:
   - Name: BasePose
     Offset: '0x30'
     Size: '0x18'
-    Type: struct
+    Type: struct PoseLink
   - Name: BlendPoses
     Offset: '0x48'
     Size: '0x10'
@@ -1075,7 +1075,7 @@ AnimNode_MultiWayBlend:
   - Name: AlphaScaleBias
     Offset: '0x54'
     Size: '0x8'
-    Type: struct
+    Type: struct InputScaleBias
   ClassSize: '0x70'
 AnimNode_RefPose:
   Attributes:
@@ -1089,14 +1089,14 @@ AnimNode_Root:
   - Name: Result
     Offset: '0x30'
     Size: '0x18'
-    Type: struct
+    Type: struct PoseLink
   ClassSize: '0x48'
 AnimNode_RotateRootBone:
   Attributes:
   - Name: BasePose
     Offset: '0x30'
     Size: '0x18'
-    Type: struct
+    Type: struct PoseLink
   - Name: Pitch
     Offset: '0x48'
     Size: '0x4'
@@ -1108,14 +1108,14 @@ AnimNode_RotateRootBone:
   - Name: MeshToComponent
     Offset: '0x50'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   ClassSize: '0x60'
 AnimNode_RotationOffsetBlendSpace:
   Attributes:
   - Name: BasePose
     Offset: '0x110'
     Size: '0x18'
-    Type: struct
+    Type: struct PoseLink
   ClassSize: '0x128'
 AnimNode_SaveCachedPose:
   Attributes:
@@ -1138,7 +1138,7 @@ AnimNode_SaveCachedPose:
   - Name: Pose
     Offset: '0x38'
     Size: '0x18'
-    Type: struct
+    Type: struct PoseLink
   ClassSize: '0x90'
 AnimNode_SequenceEvaluator:
   Attributes:
@@ -1179,7 +1179,7 @@ AnimNode_Slot:
   - Name: Source
     Offset: '0x30'
     Size: '0x18'
-    Type: struct
+    Type: struct PoseLink
   - Name: SlotName
     Offset: '0x48'
     Size: '0x8'
@@ -1239,7 +1239,7 @@ AnimNode_UseCachedPose:
   - Name: LinkToCachingNode
     Offset: '0x30'
     Size: '0x18'
-    Type: struct
+    Type: struct PoseLink
   ClassSize: '0x48'
 AnimNotifyEvent:
   Attributes:
@@ -1282,7 +1282,7 @@ AnimNotifyEvent:
   - Name: EndLink
     Offset: '0x68'
     Size: '0x30'
-    Type: struct
+    Type: struct AnimLinkableElement
   - Name: bConvertedFromBranchingPoint
     Offset: '0x98'
     Size: '0x1'
@@ -1317,7 +1317,7 @@ AnimNotifyTrack:
   - Name: TrackColor
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   ClassSize: '0x28'
 AnimParentNodeAssetOverride:
   Attributes:
@@ -1328,7 +1328,7 @@ AnimParentNodeAssetOverride:
   - Name: ParentNodeGuid
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x18'
 AnimSegment:
   Attributes:
@@ -1477,11 +1477,11 @@ AnimationNode_TwoWayBlend:
   - Name: A
     Offset: '0x30'
     Size: '0x18'
-    Type: struct
+    Type: struct PoseLink
   - Name: B
     Offset: '0x48'
     Size: '0x18'
-    Type: struct
+    Type: struct PoseLink
   - Name: Alpha
     Offset: '0x60'
     Size: '0x4'
@@ -1489,7 +1489,7 @@ AnimationNode_TwoWayBlend:
   - Name: AlphaScaleBias
     Offset: '0x64'
     Size: '0x8'
-    Type: struct
+    Type: struct InputScaleBias
   ClassSize: '0x70'
 AnimationRecordingSettings:
   Attributes:
@@ -1607,15 +1607,15 @@ AssetEditorOrbitCameraPosition:
   - Name: CamOrbitPoint
     Offset: '0x4'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: CamOrbitZoom
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: CamOrbitRotation
     Offset: '0x1c'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   ClassSize: '0x28'
 AtmospherePrecomputeParameters:
   Attributes:
@@ -1685,7 +1685,7 @@ AttenuationSettings:
   - Name: CustomAttenuationCurve
     Offset: '0x8'
     Size: '0x80'
-    Type: struct
+    Type: struct RuntimeFloatCurve
   - Name: DistanceType
     Offset: '0x88'
     Size: '0x1'
@@ -1717,7 +1717,7 @@ AttenuationSettings:
   - Name: AttenuationShapeExtents
     Offset: '0xa0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ConeOffset
     Offset: '0xac'
     Size: '0x4'
@@ -1838,11 +1838,11 @@ BPVariableDescription:
   - Name: VarGuid
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: VarType
     Offset: '0x18'
     Size: '0x50'
-    Type: struct
+    Type: struct EdGraphPinType
   - Name: FriendlyName
     Offset: '0x68'
     Size: '0x10'
@@ -1985,11 +1985,11 @@ BasedMovementInfo:
   - Name: Location
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector_NetQuantize100
   - Name: Rotation
     Offset: '0x1c'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: bServerHasBaseComponent
     Offset: '0x28'
     Size: '0x1'
@@ -2001,7 +2001,7 @@ BasedMovementInfo:
   - Name: LinearVelocity
     Offset: '0x2c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x38'
 BasedPosition:
   Attributes:
@@ -2012,34 +2012,34 @@ BasedPosition:
   - Name: Position
     Offset: '0x8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: CachedBaseLocation
     Offset: '0x14'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: CachedBaseRotation
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: CachedTransPosition
     Offset: '0x2c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x38'
 BatchedLine:
   Attributes:
   - Name: Start
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: End
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Color
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: Thickness
     Offset: '0x28'
     Size: '0x4'
@@ -2058,11 +2058,11 @@ BatchedPoint:
   - Name: Position
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Color
     Offset: '0xc'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: PointSize
     Offset: '0x1c'
     Size: '0x4'
@@ -2130,7 +2130,7 @@ BlendSample:
   - Name: SampleValue
     Offset: '0x8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x18'
 BlendSampleData:
   Attributes:
@@ -2193,7 +2193,7 @@ BlueprintInputAxisKeyDelegateBinding:
   - Name: AxisKey
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct Key
   - Name: FunctionNameToBind
     Offset: '0x28'
     Size: '0x8'
@@ -2219,7 +2219,7 @@ BlueprintInputKeyDelegateBinding:
   - Name: InputChord
     Offset: '0x8'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   - Name: InputKeyEvent
     Offset: '0x30'
     Size: '0x1'
@@ -2256,7 +2256,7 @@ BodyInstance:
   - Name: Scale3D
     Offset: '0x4'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: CollisionProfileName
     Offset: '0x14'
     Size: '0x8'
@@ -2264,7 +2264,7 @@ BodyInstance:
   - Name: CollisionResponses
     Offset: '0x20'
     Size: '0x30'
-    Type: struct
+    Type: struct CollisionResponse
   - Name: bUseCCD
     Offset: '0x50'
     Size: '0x1'
@@ -2364,7 +2364,7 @@ BodyInstance:
   - Name: MassPropertiesOverride
     Offset: '0x5c'
     Size: '0x24'
-    Type: struct
+    Type: struct MassPropertiesOverride
   - Name: LinearDamping
     Offset: '0x80'
     Size: '0x4'
@@ -2376,7 +2376,7 @@ BodyInstance:
   - Name: COMNudge
     Offset: '0x88'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: MassScale
     Offset: '0x94'
     Size: '0x4'
@@ -2384,7 +2384,7 @@ BodyInstance:
   - Name: WalkableSlopeOverride
     Offset: '0xa8'
     Size: '0x8'
-    Type: struct
+    Type: struct WalkableSlopeOverride
   - Name: PhysMaterialOverride
     Offset: '0xb0'
     Size: '0x8'
@@ -2501,7 +2501,7 @@ BoxElement2D:
   - Name: Center
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Width
     Offset: '0x8'
     Size: '0x4'
@@ -2561,54 +2561,54 @@ BuildPromotionBlueprintSettings:
   - Name: FirstMeshPath
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   - Name: SecondMeshPath
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   ClassSize: '0x20'
 BuildPromotionImportWorkflowSettings:
   Attributes:
   - Name: Diffuse
     Offset: '0x0'
     Size: '0x20'
-    Type: struct
+    Type: struct EditorImportWorkflowDefinition
   - Name: Normal
     Offset: '0x20'
     Size: '0x20'
-    Type: struct
+    Type: struct EditorImportWorkflowDefinition
   - Name: StaticMesh
     Offset: '0x40'
     Size: '0x20'
-    Type: struct
+    Type: struct EditorImportWorkflowDefinition
   - Name: ReimportStaticMesh
     Offset: '0x60'
     Size: '0x20'
-    Type: struct
+    Type: struct EditorImportWorkflowDefinition
   - Name: BlendShapeMesh
     Offset: '0x80'
     Size: '0x20'
-    Type: struct
+    Type: struct EditorImportWorkflowDefinition
   - Name: MorphMesh
     Offset: '0xa0'
     Size: '0x20'
-    Type: struct
+    Type: struct EditorImportWorkflowDefinition
   - Name: SkeletalMesh
     Offset: '0xc0'
     Size: '0x20'
-    Type: struct
+    Type: struct EditorImportWorkflowDefinition
   - Name: Animation
     Offset: '0xe0'
     Size: '0x20'
-    Type: struct
+    Type: struct EditorImportWorkflowDefinition
   - Name: Sound
     Offset: '0x100'
     Size: '0x20'
-    Type: struct
+    Type: struct EditorImportWorkflowDefinition
   - Name: SurroundSound
     Offset: '0x120'
     Size: '0x20'
-    Type: struct
+    Type: struct EditorImportWorkflowDefinition
   - Name: OtherAssetsToImport
     Offset: '0x140'
     Size: '0x10'
@@ -2619,7 +2619,7 @@ BuildPromotionNewProjectSettings:
   - Name: NewProjectFolderOverride
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct DirectoryPath
   - Name: NewProjectNameOverride
     Offset: '0x10'
     Size: '0x10'
@@ -2630,54 +2630,54 @@ BuildPromotionOpenAssetSettings:
   - Name: BlueprintAsset
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   - Name: MaterialAsset
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   - Name: ParticleSystemAsset
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   - Name: SkeletalMeshAsset
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   - Name: StaticMeshAsset
     Offset: '0x40'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   - Name: TextureAsset
     Offset: '0x50'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   ClassSize: '0x60'
 BuildPromotionTestSettings:
   Attributes:
   - Name: DefaultStaticMeshAsset
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   - Name: ImportWorkflow
     Offset: '0x10'
     Size: '0x150'
-    Type: struct
+    Type: struct BuildPromotionImportWorkflowSettings
   - Name: OpenAssets
     Offset: '0x160'
     Size: '0x60'
-    Type: struct
+    Type: struct BuildPromotionOpenAssetSettings
   - Name: BlueprintSettings
     Offset: '0x1c0'
     Size: '0x20'
-    Type: struct
+    Type: struct BuildPromotionBlueprintSettings
   - Name: NewProjectSettings
     Offset: '0x1e0'
     Size: '0x20'
-    Type: struct
+    Type: struct BuildPromotionNewProjectSettings
   - Name: SourceControlMaterial
     Offset: '0x200'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   ClassSize: '0x210'
 BuilderPoly:
   Attributes:
@@ -2707,14 +2707,14 @@ CameraCacheEntry:
   - Name: POV
     Offset: '0x10'
     Size: '0x5a0'
-    Type: struct
+    Type: struct MinimalViewInfo
   ClassSize: '0x5b0'
 CameraCutInfo:
   Attributes:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: TimeStamp
     Offset: '0xc'
     Size: '0x4'
@@ -2733,11 +2733,11 @@ CameraPreviewInfo:
   - Name: Location
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Rotation
     Offset: '0x1c'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: PawnInst
     Offset: '0x28'
     Size: '0x8'
@@ -2771,46 +2771,46 @@ CanvasUVTri:
   - Name: V0_Pos
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: V0_UV
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: V0_Color
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: V1_Pos
     Offset: '0x20'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: V1_UV
     Offset: '0x28'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: V1_Color
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: V2_Pos
     Offset: '0x40'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: V2_UV
     Offset: '0x48'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: V2_Color
     Offset: '0x50'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   ClassSize: '0x60'
 CircleElement2D:
   Attributes:
   - Name: Center
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Radius
     Offset: '0x8'
     Size: '0x4'
@@ -2930,14 +2930,14 @@ ClothingAssetData:
   - Name: PhysicsProperties
     Offset: '0x1c'
     Size: '0x24'
-    Type: struct
+    Type: struct ClothPhysicsProperties
   ClassSize: '0x40'
 ClusterNode:
   Attributes:
   - Name: BoundMin
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: FirstChild
     Offset: '0xc'
     Size: '0x4'
@@ -2945,7 +2945,7 @@ ClusterNode:
   - Name: BoundMax
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: LastChild
     Offset: '0x1c'
     Size: '0x4'
@@ -2968,7 +2968,7 @@ CollectionParameterBase:
   - Name: Id
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x18'
 CollectionScalarParameter:
   Attributes:
@@ -2982,7 +2982,7 @@ CollectionVectorParameter:
   - Name: DefaultValue
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   ClassSize: '0x28'
 CollisionImpactData:
   Attributes:
@@ -2993,11 +2993,11 @@ CollisionImpactData:
   - Name: TotalNormalImpulse
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: TotalFrictionImpulse
     Offset: '0x1c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x28'
 CollisionProfileName:
   Attributes:
@@ -3011,7 +3011,7 @@ CollisionResponse:
   - Name: ResponseToChannels
     Offset: '0x0'
     Size: '0x20'
-    Type: struct
+    Type: struct CollisionResponseContainer
   - Name: ResponseArray
     Offset: '0x20'
     Size: '0x10'
@@ -3184,7 +3184,7 @@ ColorMaterialInput:
   - Name: Constant
     Offset: '0x3c'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   ClassSize: '0x40'
 ComponentKey:
   Attributes:
@@ -3199,7 +3199,7 @@ ComponentKey:
   - Name: AssociatedGuid
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
 ComponentOverrideRecord:
   Attributes:
@@ -3210,7 +3210,7 @@ ComponentOverrideRecord:
   - Name: ComponentKey
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct ComponentKey
   ClassSize: '0x28'
 ComponentReference:
   Attributes:
@@ -3300,27 +3300,27 @@ ConstraintInstance:
   - Name: Pos1
     Offset: '0x34'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: PriAxis1
     Offset: '0x40'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: SecAxis1
     Offset: '0x4c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Pos2
     Offset: '0x58'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: PriAxis2
     Offset: '0x64'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: SecAxis2
     Offset: '0x70'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: bDisableCollision
     Offset: '0x7c'
     Size: '0x1'
@@ -3424,7 +3424,7 @@ ConstraintInstance:
   - Name: AngularRotationOffset
     Offset: '0xc8'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: bAngularBreakable
     Offset: '0xd4'
     Size: '0x1'
@@ -3468,11 +3468,11 @@ ConstraintInstance:
   - Name: LinearPositionTarget
     Offset: '0xe0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: LinearVelocityTarget
     Offset: '0xec'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: LinearDriveSpring
     Offset: '0xf8'
     Size: '0x4'
@@ -3524,7 +3524,7 @@ ConstraintInstance:
   - Name: AngularPositionTarget
     Offset: '0x110'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: AngularDriveMode
     Offset: '0x120'
     Size: '0x1'
@@ -3532,11 +3532,11 @@ ConstraintInstance:
   - Name: AngularOrientationTarget
     Offset: '0x124'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: AngularVelocityTarget
     Offset: '0x130'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: AngularDriveSpring
     Offset: '0x13c'
     Size: '0x4'
@@ -3577,7 +3577,7 @@ CurveEdEntry:
   - Name: CurveColor
     Offset: '0x8'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   - Name: CurveName
     Offset: '0x10'
     Size: '0x10'
@@ -3688,7 +3688,7 @@ CustomInput:
   - Name: Input
     Offset: '0x10'
     Size: '0x38'
-    Type: struct
+    Type: struct ExpressionInput
   ClassSize: '0x48'
 CustomPrimitiveData:
   Attributes:
@@ -3784,11 +3784,11 @@ DebugTextInfo:
   - Name: SrcActorOffset
     Offset: '0x8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: SrcActorDesiredOffset
     Offset: '0x14'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: DebugText
     Offset: '0x20'
     Size: '0x10'
@@ -3804,7 +3804,7 @@ DebugTextInfo:
   - Name: TextColor
     Offset: '0x38'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   - Name: bAbsoluteLocation
     Offset: '0x3c'
     Size: '0x1'
@@ -3820,7 +3820,7 @@ DebugTextInfo:
   - Name: OrigActorLocation
     Offset: '0x40'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Font
     Offset: '0x50'
     Size: '0x8'
@@ -3869,15 +3869,15 @@ DepthFieldGlowInfo:
   - Name: GlowColor
     Offset: '0x4'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: GlowOuterRadius
     Offset: '0x14'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: GlowInnerRadius
     Offset: '0x1c'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x24'
 DestructibleAdvancedParameters:
   Attributes:
@@ -3969,7 +3969,7 @@ DestructibleDebrisParameters:
   - Name: ValidBounds
     Offset: '0x10'
     Size: '0x1c'
-    Type: struct
+    Type: struct Box
   ClassSize: '0x2c'
 DestructibleDepthParameters:
   Attributes:
@@ -3983,19 +3983,19 @@ DestructibleParameters:
   - Name: DamageParameters
     Offset: '0x0'
     Size: '0x1c'
-    Type: struct
+    Type: struct DestructibleDamageParameters
   - Name: DebrisParameters
     Offset: '0x1c'
     Size: '0x2c'
-    Type: struct
+    Type: struct DestructibleDebrisParameters
   - Name: AdvancedParameters
     Offset: '0x48'
     Size: '0x10'
-    Type: struct
+    Type: struct DestructibleAdvancedParameters
   - Name: SpecialHierarchyDepths
     Offset: '0x58'
     Size: '0x14'
-    Type: struct
+    Type: struct DestructibleSpecialHierarchyDepths
   - Name: DepthParameters
     Offset: '0x70'
     Size: '0x10'
@@ -4003,7 +4003,7 @@ DestructibleParameters:
   - Name: Flags
     Offset: '0x80'
     Size: '0x4'
-    Type: struct
+    Type: struct DestructibleParametersFlag
   ClassSize: '0x88'
 DestructibleParametersFlag:
   Attributes:
@@ -4083,7 +4083,7 @@ DialogueContextMapping:
   - Name: Context
     Offset: '0x0'
     Size: '0x18'
-    Type: struct
+    Type: struct DialogueContext
   - Name: SoundWave
     Offset: '0x18'
     Size: '0x8'
@@ -4102,7 +4102,7 @@ DialogueWaveParameter:
   - Name: Context
     Offset: '0x8'
     Size: '0x18'
-    Type: struct
+    Type: struct DialogueContext
   ClassSize: '0x20'
 DirectorTrackCut:
   Attributes:
@@ -4223,11 +4223,11 @@ DropNoteInfo:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Rotation
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: Comment
     Offset: '0x18'
     Size: '0x10'
@@ -4265,7 +4265,7 @@ EdGraphPinType:
   - Name: PinSubCategoryMemberReference
     Offset: '0x28'
     Size: '0x20'
-    Type: struct
+    Type: struct SimpleMemberReference
   - Name: bIsArray
     Offset: '0x48'
     Size: '0x1'
@@ -4326,7 +4326,7 @@ EditedDocumentInfo:
   - Name: SavedViewOffset
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: SavedZoomAmount
     Offset: '0x10'
     Size: '0x4'
@@ -4348,7 +4348,7 @@ EditorImportExportTestDefinition:
   - Name: ImportFilePath
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   - Name: ExportFileExtension
     Offset: '0x10'
     Size: '0x10'
@@ -4367,7 +4367,7 @@ EditorImportWorkflowDefinition:
   - Name: ImportFilePath
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   - Name: FactorySettings
     Offset: '0x10'
     Size: '0x10'
@@ -4378,7 +4378,7 @@ EditorMapPerformanceTestDefinition:
   - Name: PerformanceTestmap
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   - Name: TestTimer
     Offset: '0x10'
     Size: '0x4'
@@ -4409,26 +4409,26 @@ EmitterDynamicParameter:
   - Name: ParamValue
     Offset: '0x18'
     Size: '0x38'
-    Type: struct
+    Type: struct RawDistributionFloat
   ClassSize: '0x50'
 EmitterPointData:
   Attributes:
   - Name: Position
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: InheritedVelocity
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: Orientation
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: Scale
     Offset: '0x30'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x40'
 EngineShowFlagsSetting:
   Attributes:
@@ -4630,7 +4630,7 @@ ExternalToolDefinition:
   - Name: ExecutablePath
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   - Name: CommandLineOptions
     Offset: '0x20'
     Size: '0x10'
@@ -4638,7 +4638,7 @@ ExternalToolDefinition:
   - Name: WorkingDirectory
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct DirectoryPath
   - Name: ScriptExtension
     Offset: '0x40'
     Size: '0x10'
@@ -4646,30 +4646,30 @@ ExternalToolDefinition:
   - Name: ScriptDirectory
     Offset: '0x50'
     Size: '0x10'
-    Type: struct
+    Type: struct DirectoryPath
   ClassSize: '0x60'
 FFTWaterComponentIntersectParticleType:
   Attributes:
   - Name: VelocityRange
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: FoamRange
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: HeightRange
     Offset: '0x10'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: ParticleWaveVelocityRange
     Offset: '0x18'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: ParticleWaveAbsoluteSpeedDifferenceRange
     Offset: '0x20'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Density
     Offset: '0x28'
     Size: '0x4'
@@ -4716,27 +4716,27 @@ FFTWaterComponentParams:
   - Name: AmbientColour
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: WaterColour
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: ShallowWaterColour
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: BackLitColour
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: FoamColour
     Offset: '0x40'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: FoamHighlightColour
     Offset: '0x50'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: FresnelPower
     Offset: '0x60'
     Size: '0x4'
@@ -4820,7 +4820,7 @@ FFTWaterComponentParams:
   - Name: ParticleParams
     Offset: '0xb8'
     Size: '0x248'
-    Type: struct
+    Type: struct FFTWaterComponentParticleParams
   - Name: ExtendedPlaneSize
     Offset: '0x300'
     Size: '0x4'
@@ -4832,7 +4832,7 @@ FFTWaterComponentParams:
   - Name: PositionOffset
     Offset: '0x308'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x310'
 FFTWaterComponentParticleParams:
   Attributes:
@@ -4843,34 +4843,34 @@ FFTWaterComponentParticleParams:
   - Name: WaveParticles
     Offset: '0x8'
     Size: '0x38'
-    Type: struct
+    Type: struct FFTWaterComponentWaveParticleType
   - Name: IntersectionParticles
     Offset: '0xe8'
     Size: '0x58'
-    Type: struct
+    Type: struct FFTWaterComponentIntersectParticleType
   ClassSize: '0x248'
 FFTWaterComponentWaveParticleType:
   Attributes:
   - Name: SpawnRadiusRange
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: FoamRange
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: HeightRange
     Offset: '0x10'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: AngleRange
     Offset: '0x18'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: CalmWaterDampeningFactorRange
     Offset: '0x20'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Density
     Offset: '0x28'
     Size: '0x4'
@@ -4922,7 +4922,7 @@ FeatureToggledStringAssetReferenceEntry:
   - Name: Asset
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Feature
     Offset: '0x10'
     Size: '0x8'
@@ -4960,7 +4960,7 @@ FindFloorResult:
   - Name: HitResult
     Offset: '0xc'
     Size: '0x80'
-    Type: struct
+    Type: struct HitResult
   ClassSize: '0x8c'
 FlatWaterMeshTextureOverride:
   Attributes:
@@ -4974,14 +4974,14 @@ FloatCurve:
   - Name: FloatCurve
     Offset: '0x18'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   ClassSize: '0x90'
 FloatDistribution:
   Attributes:
   - Name: Table
     Offset: '0x0'
     Size: '0x28'
-    Type: struct
+    Type: struct DistributionLookupTable
   ClassSize: '0x28'
 FogVolumeInfo:
   Attributes:
@@ -5086,7 +5086,7 @@ FontImportOptionsData:
   - Name: ForegroundColor
     Offset: '0x64'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: bEnableDropShadow
     Offset: '0x74'
     Size: '0x1'
@@ -5161,7 +5161,7 @@ FontParameterValue:
   - Name: ExpressionGUID
     Offset: '0x14'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x28'
 FontRenderInfo:
   Attributes:
@@ -5176,7 +5176,7 @@ FontRenderInfo:
   - Name: GlowInfo
     Offset: '0x4'
     Size: '0x24'
-    Type: struct
+    Type: struct DepthFieldGlowInfo
   ClassSize: '0x28'
 ForceFeedbackChannelDetails:
   Attributes:
@@ -5207,7 +5207,7 @@ ForceFeedbackChannelDetails:
   - Name: Curve
     Offset: '0x8'
     Size: '0x80'
-    Type: struct
+    Type: struct RuntimeFloatCurve
   ClassSize: '0x88'
 FormatTextArgument:
   Attributes:
@@ -5236,15 +5236,15 @@ FractureMaterial:
   - Name: UVScale
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: UVOffset
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Tangent
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: UAngle
     Offset: '0x1c'
     Size: '0x4'
@@ -5297,11 +5297,11 @@ FunctionExpressionInput:
   - Name: ExpressionInputId
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Input
     Offset: '0x18'
     Size: '0x38'
-    Type: struct
+    Type: struct ExpressionInput
   ClassSize: '0x50'
 FunctionExpressionOutput:
   Attributes:
@@ -5312,11 +5312,11 @@ FunctionExpressionOutput:
   - Name: ExpressionOutputId
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Output
     Offset: '0x18'
     Size: '0x28'
-    Type: struct
+    Type: struct ExpressionOutput
   ClassSize: '0x40'
 GPUSpriteEmitterInfo:
   Attributes:
@@ -5355,27 +5355,27 @@ GPUSpriteEmitterInfo:
   - Name: LocalVectorField
     Offset: '0x50'
     Size: '0x70'
-    Type: struct
+    Type: struct GPUSpriteLocalVectorFieldInfo
   - Name: VectorFieldScale
     Offset: '0xc0'
     Size: '0x28'
-    Type: struct
+    Type: struct FloatDistribution
   - Name: PointAttractorStrength
     Offset: '0xe8'
     Size: '0x28'
-    Type: struct
+    Type: struct FloatDistribution
   - Name: Resilience
     Offset: '0x110'
     Size: '0x28'
-    Type: struct
+    Type: struct FloatDistribution
   - Name: ConstantAcceleration
     Offset: '0x138'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: PointAttractorPosition
     Offset: '0x144'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: PointAttractorRadiusSq
     Offset: '0x150'
     Size: '0x4'
@@ -5383,15 +5383,15 @@ GPUSpriteEmitterInfo:
   - Name: OrbitOffsetBase
     Offset: '0x154'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: OrbitOffsetRange
     Offset: '0x160'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: InvMaxSize
     Offset: '0x16c'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: MaxLifetime
     Offset: '0x174'
     Size: '0x4'
@@ -5459,23 +5459,23 @@ GPUSpriteEmitterInfo:
   - Name: DynamicColor
     Offset: '0x190'
     Size: '0x38'
-    Type: struct
+    Type: struct RawDistributionVector
   - Name: DynamicAlpha
     Offset: '0x1c8'
     Size: '0x38'
-    Type: struct
+    Type: struct RawDistributionFloat
   - Name: DynamicColorScale
     Offset: '0x200'
     Size: '0x38'
-    Type: struct
+    Type: struct RawDistributionVector
   - Name: DynamicAlphaScale
     Offset: '0x238'
     Size: '0x38'
-    Type: struct
+    Type: struct RawDistributionFloat
   - Name: MurkyColorScale
     Offset: '0x270'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: LocationEmitterName
     Offset: '0x280'
     Size: '0x8'
@@ -5487,7 +5487,7 @@ GPUSpriteEmitterInfo:
   - Name: InheritedVelocityScaleLocationEmitter
     Offset: '0x28c'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: MissingParentParticlesBehaviour
     Offset: '0x294'
     Size: '0x1'
@@ -5506,19 +5506,19 @@ GPUSpriteLocalVectorFieldInfo:
   - Name: Transform
     Offset: '0x10'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: MinInitialRotation
     Offset: '0x40'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: MaxInitialRotation
     Offset: '0x4c'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: RotationRate
     Offset: '0x58'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: Intensity
     Offset: '0x64'
     Size: '0x4'
@@ -5569,83 +5569,83 @@ GPUSpriteResourceData:
   - Name: ColorScale
     Offset: '0x50'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: ColorBias
     Offset: '0x60'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: MiscScale
     Offset: '0x70'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: MiscBias
     Offset: '0x80'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: DynParamScale
     Offset: '0x90'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: DynParamBias
     Offset: '0xa0'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: MurkyColorScale
     Offset: '0xb0'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: SimulationAttrCurveScale
     Offset: '0xc0'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: SimulationAttrCurveBias
     Offset: '0xd0'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: SizeOverVelocityScale
     Offset: '0xe0'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: SizeOverVelocityBias
     Offset: '0xf0'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: SubImageSize
     Offset: '0x100'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: SizeBySpeed
     Offset: '0x110'
     Size: '0x10'
-    Type: struct
+    Type: struct Vector4
   - Name: ConstantAcceleration
     Offset: '0x120'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: OrbitOffsetBase
     Offset: '0x12c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: OrbitOffsetRange
     Offset: '0x138'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: OrbitFrequencyBase
     Offset: '0x144'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: OrbitFrequencyRange
     Offset: '0x150'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: OrbitPhaseBase
     Offset: '0x15c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: OrbitPhaseRange
     Offset: '0x168'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: GlobalVectorFieldScale
     Offset: '0x174'
     Size: '0x4'
@@ -5721,7 +5721,7 @@ GPUSpriteResourceData:
   - Name: PivotOffset
     Offset: '0x20c'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: AlignmentInheritedVelocityScale
     Offset: '0x680'
     Size: '0x4'
@@ -5799,14 +5799,14 @@ GraphReference:
   - Name: GraphGuid
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
 GridBlendSample:
   Attributes:
   - Name: GridElement
     Offset: '0x0'
     Size: '0x18'
-    Type: struct
+    Type: struct EditorElement
   - Name: BlendWeight
     Offset: '0x18'
     Size: '0x4'
@@ -5832,26 +5832,26 @@ HIKBoneTransform:
   - Name: Translation
     Offset: '0x4'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Orientation
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: Scale
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x30'
 HapticFeedbackDetails:
   Attributes:
   - Name: Frequency
     Offset: '0x0'
     Size: '0x80'
-    Type: struct
+    Type: struct RuntimeFloatCurve
   - Name: Amplitude
     Offset: '0x80'
     Size: '0x80'
-    Type: struct
+    Type: struct RuntimeFloatCurve
   ClassSize: '0x100'
 HierarchicalSimplification:
   Attributes:
@@ -5878,11 +5878,11 @@ HierarchicalSimplification:
   - Name: ProxySetting
     Offset: '0x14'
     Size: '0x70'
-    Type: struct
+    Type: struct MeshProxySettings
   - Name: MergeSetting
     Offset: '0x88'
     Size: '0x50'
-    Type: struct
+    Type: struct MeshMergingSettings
   ClassSize: '0xd8'
 HitResult:
   Attributes:
@@ -5905,27 +5905,27 @@ HitResult:
   - Name: Location
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector_NetQuantize
   - Name: ImpactPoint
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector_NetQuantize
   - Name: Normal
     Offset: '0x24'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector_NetQuantizeNormal
   - Name: ImpactNormal
     Offset: '0x30'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector_NetQuantizeNormal
   - Name: TraceStart
     Offset: '0x3c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector_NetQuantize
   - Name: TraceEnd
     Offset: '0x48'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector_NetQuantize
   - Name: PenetrationDepth
     Offset: '0x54'
     Size: '0x4'
@@ -5971,7 +5971,7 @@ IndexedCurve:
   - Name: KeyHandlesToIndices
     Offset: '0x8'
     Size: '0x50'
-    Type: struct
+    Type: struct KeyHandleMap
   ClassSize: '0x58'
 InputActionKeyMapping:
   Attributes:
@@ -5982,7 +5982,7 @@ InputActionKeyMapping:
   - Name: Key
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct Key
   - Name: bShift
     Offset: '0x28'
     Size: '0x1'
@@ -6009,7 +6009,7 @@ InputAxisConfigEntry:
   - Name: AxisProperties
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct InputAxisProperties
   ClassSize: '0x18'
 InputAxisKeyMapping:
   Attributes:
@@ -6020,7 +6020,7 @@ InputAxisKeyMapping:
   - Name: Key
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct Key
   - Name: Scale
     Offset: '0x28'
     Size: '0x4'
@@ -6061,11 +6061,11 @@ InputCombinedAxisKeyMapping:
   - Name: KeyX
     Offset: '0x8'
     Size: '0x20'
-    Type: struct
+    Type: struct Key
   - Name: KeyY
     Offset: '0x28'
     Size: '0x20'
-    Type: struct
+    Type: struct Key
   - Name: Scale
     Offset: '0x48'
     Size: '0x4'
@@ -6114,7 +6114,7 @@ InstancedNavMesh:
   - Name: Location
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: NavMeshName
     Offset: '0x2c'
     Size: '0x8'
@@ -6122,22 +6122,22 @@ InstancedNavMesh:
   - Name: SupportedAgents
     Offset: '0x34'
     Size: '0x4'
-    Type: struct
+    Type: struct NavAgentSelector
   ClassSize: '0x38'
 InstancedStaticMeshInstanceData:
   Attributes:
   - Name: Transform
     Offset: '0x0'
     Size: '0x40'
-    Type: struct
+    Type: struct Matrix
   - Name: LightmapUVBias
     Offset: '0x40'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: ShadowmapUVBias
     Offset: '0x48'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x50'
 IntegralCurve:
   Attributes:
@@ -6209,7 +6209,7 @@ InterpControlPoint:
   - Name: PositionControlPoint
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: bPositionIsRelative
     Offset: '0xc'
     Size: '0x1'
@@ -6298,11 +6298,11 @@ KBoxElem:
   - Name: Center
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Orientation
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: X
     Offset: '0x40'
     Size: '0x4'
@@ -6325,18 +6325,18 @@ KConvexElem:
   - Name: ElemBox
     Offset: '0x30'
     Size: '0x1c'
-    Type: struct
+    Type: struct Box
   - Name: Transform
     Offset: '0x50'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   ClassSize: '0x90'
 KSphereElem:
   Attributes:
   - Name: Center
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Radius
     Offset: '0x2c'
     Size: '0x4'
@@ -6347,11 +6347,11 @@ KSphylElem:
   - Name: Center
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Orientation
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: Radius
     Offset: '0x40'
     Size: '0x4'
@@ -6366,7 +6366,7 @@ KeyBind:
   - Name: Key
     Offset: '0x0'
     Size: '0x20'
-    Type: struct
+    Type: struct Key
   - Name: Command
     Offset: '0x20'
     Size: '0x10'
@@ -6409,7 +6409,7 @@ KillSphereGroupParams:
   - Name: Centre
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Radius
     Offset: '0xc'
     Size: '0x4'
@@ -6543,7 +6543,7 @@ LPVCascadeSettings:
   - Name: LPVWorldRef
     Offset: '0x40'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   ClassSize: '0x70'
 LatentActionInfo:
   Attributes:
@@ -6569,7 +6569,7 @@ LaunchOnTestSettings:
   - Name: LaunchOnTestmap
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   - Name: DeviceID
     Offset: '0x10'
     Size: '0x10'
@@ -6599,7 +6599,7 @@ LevelSimplificationDetails:
   - Name: StaticMeshMaterial
     Offset: '0x8'
     Size: '0x44'
-    Type: struct
+    Type: struct MaterialSimplificationSettings
   - Name: bOverrideLandscapeExportLOD
     Offset: '0x4c'
     Size: '0x1'
@@ -6611,7 +6611,7 @@ LevelSimplificationDetails:
   - Name: LandscapeMaterial
     Offset: '0x54'
     Size: '0x44'
-    Type: struct
+    Type: struct MaterialSimplificationSettings
   - Name: bRemoveDownwardFacingTriangles
     Offset: '0x98'
     Size: '0x1'
@@ -6708,11 +6708,11 @@ LevelViewportInfo:
   - Name: CamPosition
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: CamRotation
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: CamOrthoZoom
     Offset: '0x18'
     Size: '0x4'
@@ -6906,7 +6906,7 @@ LightmassWorldInfoSettings:
   - Name: EnvironmentColor
     Offset: '0x10'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   - Name: EnvironmentIntensity
     Offset: '0x14'
     Size: '0x4'
@@ -6996,14 +6996,14 @@ LocationBoneSocketInfo:
   - Name: Offset
     Offset: '0x8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x14'
 MTDResult:
   Attributes:
   - Name: Direction
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Distance
     Offset: '0xc'
     Size: '0x4'
@@ -7014,37 +7014,37 @@ MassPropertiesOverride:
   - Name: InertiaTensorOverride
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: COMTranslationOverride
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: COMRotatorOverride
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   ClassSize: '0x24'
 MaterialEditorPromotionSettings:
   Attributes:
   - Name: DefaultMaterialAsset
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   - Name: DefaultDiffuseTexture
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   - Name: DefaultNormalTexture
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   ClassSize: '0x30'
 MaterialFunctionInfo:
   Attributes:
   - Name: StateId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Function
     Offset: '0x10'
     Size: '0x8'
@@ -7325,7 +7325,7 @@ MaterialParameterCollectionInfo:
   - Name: StateId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: ParameterCollection
     Offset: '0x10'
     Size: '0x8'
@@ -7407,7 +7407,7 @@ MaterialSimplificationSettings:
   - Name: BaseColorMapSize
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct IntPoint
   - Name: bNormalMap
     Offset: '0x8'
     Size: '0x1'
@@ -7415,7 +7415,7 @@ MaterialSimplificationSettings:
   - Name: NormalMapSize
     Offset: '0xc'
     Size: '0x8'
-    Type: struct
+    Type: struct IntPoint
   - Name: MetallicConstant
     Offset: '0x14'
     Size: '0x4'
@@ -7427,7 +7427,7 @@ MaterialSimplificationSettings:
   - Name: MetallicMapSize
     Offset: '0x1c'
     Size: '0x8'
-    Type: struct
+    Type: struct IntPoint
   - Name: RoughnessConstant
     Offset: '0x24'
     Size: '0x4'
@@ -7439,7 +7439,7 @@ MaterialSimplificationSettings:
   - Name: RoughnessMapSize
     Offset: '0x2c'
     Size: '0x8'
-    Type: struct
+    Type: struct IntPoint
   - Name: SpecularConstant
     Offset: '0x34'
     Size: '0x4'
@@ -7451,7 +7451,7 @@ MaterialSimplificationSettings:
   - Name: SpecularMapSize
     Offset: '0x3c'
     Size: '0x8'
-    Type: struct
+    Type: struct IntPoint
   ClassSize: '0x44'
 MaterialSpriteElement:
   Attributes:
@@ -7497,7 +7497,7 @@ MemberReference:
   - Name: MemberGuid
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: bSelfContext
     Offset: '0x30'
     Size: '0x1'
@@ -7512,7 +7512,7 @@ MergedCollisionActorsSimplification:
   - Name: MergeCollisionSettings
     Offset: '0x0'
     Size: '0x1'
-    Type: struct
+    Type: struct CollisionMergingSettings
   - Name: MaxBoundRadius
     Offset: '0x4'
     Size: '0x4'
@@ -7527,7 +7527,7 @@ MergedCollisionComponentStaticMeshInstanceData:
   - Name: RelativeTransform
     Offset: '0x0'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: StaticMesh
     Offset: '0x30'
     Size: '0x8'
@@ -7570,7 +7570,7 @@ MeshBuildSettings:
   - Name: PresortedBillboardsParams
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct PresortedBillboardsParams
   - Name: MinLightmapResolution
     Offset: '0x10'
     Size: '0x4'
@@ -7590,7 +7590,7 @@ MeshBuildSettings:
   - Name: BuildScale3D
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: DistanceFieldResolutionScale
     Offset: '0x2c'
     Size: '0x4'
@@ -7696,7 +7696,7 @@ MeshProxySettings:
   - Name: Material
     Offset: '0x4'
     Size: '0x44'
-    Type: struct
+    Type: struct MaterialSimplificationSettings
   - Name: TextureWidth
     Offset: '0x48'
     Size: '0x4'
@@ -7815,7 +7815,7 @@ MeshReductionSettings:
   - Name: MaterialLODSettings
     Offset: '0x28'
     Size: '0x28'
-    Type: struct
+    Type: struct SimplygonMaterialLODSettings
   - Name: VertexColorImportance
     Offset: '0x50'
     Size: '0x1'
@@ -7845,11 +7845,11 @@ MinimalViewInfo:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Rotation
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: FOV
     Offset: '0x28'
     Size: '0x4'
@@ -7889,7 +7889,7 @@ MinimalViewInfo:
   - Name: PostProcessSettings
     Offset: '0x50'
     Size: '0x540'
-    Type: struct
+    Type: struct PostProcessSettings
   ClassSize: '0x5a0'
 MobileInstancedStaticMeshLOD:
   Attributes:
@@ -7976,7 +7976,7 @@ MurkyRegion:
   - Name: Position
     Offset: '0x4'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: InnerRadius
     Offset: '0x10'
     Size: '0x4'
@@ -8283,18 +8283,18 @@ NavCollisionBox:
   - Name: Offset
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Extent
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x18'
 NavCollisionCylinder:
   Attributes:
   - Name: Offset
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Radius
     Offset: '0xc'
     Size: '0x4'
@@ -8309,11 +8309,11 @@ NavDataConfig:
   - Name: Color
     Offset: '0x30'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   - Name: DefaultQueryExtent
     Offset: '0x34'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: NavigationDataClass
     Offset: '0x40'
     Size: '0x8'
@@ -8321,7 +8321,7 @@ NavDataConfig:
   - Name: NavigationDataClassName
     Offset: '0x48'
     Size: '0x10'
-    Type: struct
+    Type: struct StringClassReference
   ClassSize: '0x58'
 NavGraphNode:
   Attributes:
@@ -8429,11 +8429,11 @@ NavigationLink:
   - Name: Left
     Offset: '0x30'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Right
     Offset: '0x3c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x48'
 NavigationLinkBase:
   Attributes:
@@ -8472,7 +8472,7 @@ NavigationLinkBase:
   - Name: SupportedAgents
     Offset: '0x28'
     Size: '0x4'
-    Type: struct
+    Type: struct NavAgentSelector
   - Name: bSupportsAgent0
     Offset: '0x2c'
     Size: '0x1'
@@ -8543,26 +8543,26 @@ NavigationSegmentLink:
   - Name: LeftStart
     Offset: '0x30'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: LeftEnd
     Offset: '0x3c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: RightStart
     Offset: '0x48'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: RightEnd
     Offset: '0x54'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x60'
 NetActorPtr:
   Attributes:
   - Name: ObjectPtr
     Offset: '0x0'
     Size: '0x14'
-    Type: struct
+    Type: struct NetObjectPtr
   ClassSize: '0x14'
 NetDriverDefinition:
   Attributes:
@@ -8654,11 +8654,11 @@ NetRelevancyActorStat:
   - Name: Location
     Offset: '0x50'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Cluster
     Offset: '0x60'
     Size: '0x48'
-    Type: struct
+    Type: struct NetRelevancyActorClusterStat
   - Name: ChannelState
     Offset: '0xa8'
     Size: '0x1'
@@ -8709,7 +8709,7 @@ NetRelevancyConnectionStat:
   - Name: Viewer
     Offset: '0x8'
     Size: '0x58'
-    Type: struct
+    Type: struct NetViewer
   - Name: ViewerGridLocations
     Offset: '0x60'
     Size: '0x10'
@@ -8743,7 +8743,7 @@ NetRelevancyStat:
   - Name: RequestID
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Reason
     Offset: '0x10'
     Size: '0x10'
@@ -8751,7 +8751,7 @@ NetRelevancyStat:
   - Name: State
     Offset: '0x20'
     Size: '0xc8'
-    Type: struct
+    Type: struct NetRelevancyStateStat
   ClassSize: '0xe8'
 NetRelevancyStateStat:
   Attributes:
@@ -8770,7 +8770,7 @@ NetRelevancyStateStat:
   - Name: Connection
     Offset: '0x18'
     Size: '0x90'
-    Type: struct
+    Type: struct NetRelevancyConnectionStat
   - Name: Actors
     Offset: '0xa8'
     Size: '0x10'
@@ -8785,7 +8785,7 @@ NetSubObjectPtr:
   - Name: SubObject
     Offset: '0x0'
     Size: '0x14'
-    Type: struct
+    Type: struct NetObjectPtr
   ClassSize: '0x14'
 NetTimeStampCalculator:
   Attributes:
@@ -8815,7 +8815,7 @@ NetViewer:
   - Name: ViewDir
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x58'
 Node:
   Attributes:
@@ -8830,7 +8830,7 @@ Node:
   - Name: Transform
     Offset: '0x10'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: DisplayName
     Offset: '0x40'
     Size: '0x10'
@@ -8845,7 +8845,7 @@ OpenTestAsset:
   - Name: AssetToOpen
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   - Name: bSkipTestWhenUnAttended
     Offset: '0x10'
     Size: '0x1'
@@ -8886,11 +8886,11 @@ POV:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Rotation
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: FOV
     Offset: '0x18'
     Size: '0x4'
@@ -8912,15 +8912,15 @@ PaintedVertex:
   - Name: Position
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Normal
     Offset: '0xc'
     Size: '0x4'
-    Type: struct
+    Type: struct PackedNormal
   - Name: Color
     Offset: '0x10'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   ClassSize: '0x14'
 ParticleBurst:
   Attributes:
@@ -8961,7 +8961,7 @@ ParticleEditorPromotionSettings:
   - Name: DefaultParticleAsset
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct FilePath
   ClassSize: '0x10'
 ParticleEventGPU_GenerateInfo:
   Attributes:
@@ -9088,15 +9088,15 @@ ParticleSysParam:
   - Name: Vector
     Offset: '0x14'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Vector_Low
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Color
     Offset: '0x2c'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   - Name: Actor
     Offset: '0x30'
     Size: '0x8'
@@ -9148,7 +9148,7 @@ PerBoneInterpolation:
   - Name: BoneReference
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: InterpolationSpeedPerSec
     Offset: '0xc'
     Size: '0x4'
@@ -9201,7 +9201,7 @@ PlatformInterfaceDelegateResult:
   - Name: Data
     Offset: '0x8'
     Size: '0x30'
-    Type: struct
+    Type: struct PlatformInterfaceData
   ClassSize: '0x38'
 PlayerAmbientLightOverrideSettings:
   Attributes:
@@ -9250,11 +9250,11 @@ PointDamageEvent:
   - Name: ShotDirection
     Offset: '0x14'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector_NetQuantizeNormal
   - Name: HitInfo
     Offset: '0x20'
     Size: '0x80'
-    Type: struct
+    Type: struct HitResult
   ClassSize: '0xa0'
 PoseLinkBase:
   Attributes:
@@ -9872,31 +9872,31 @@ PostProcessSettings:
   - Name: ColorSaturation
     Offset: '0x1c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ColorContrast
     Offset: '0x28'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ColorGamma
     Offset: '0x34'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ColorGain
     Offset: '0x40'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ColorOffset
     Offset: '0x4c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: FilmWhitePoint
     Offset: '0x58'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: FilmShadowTint
     Offset: '0x68'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: FilmShadowTintBlend
     Offset: '0x78'
     Size: '0x4'
@@ -9912,15 +9912,15 @@ PostProcessSettings:
   - Name: FilmChannelMixerRed
     Offset: '0x84'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: FilmChannelMixerGreen
     Offset: '0x94'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: FilmChannelMixerBlue
     Offset: '0xa4'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: FilmContrast
     Offset: '0xb4'
     Size: '0x4'
@@ -9960,7 +9960,7 @@ PostProcessSettings:
   - Name: SceneColorTint
     Offset: '0xd8'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: SceneFringeIntensity
     Offset: '0xe8'
     Size: '0x4'
@@ -10008,27 +10008,27 @@ PostProcessSettings:
   - Name: Bloom1Tint
     Offset: '0x114'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: Bloom2Tint
     Offset: '0x124'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: Bloom3Tint
     Offset: '0x134'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: Bloom4Tint
     Offset: '0x144'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: Bloom5Tint
     Offset: '0x154'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: Bloom6Tint
     Offset: '0x164'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: BloomDirtMaskIntensity
     Offset: '0x174'
     Size: '0x4'
@@ -10036,7 +10036,7 @@ PostProcessSettings:
   - Name: BloomDirtMaskTint
     Offset: '0x178'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: BloomDirtMask
     Offset: '0x188'
     Size: '0x8'
@@ -10076,7 +10076,7 @@ PostProcessSettings:
   - Name: LPVWorldRef
     Offset: '0x1b0'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: LPVDirectionalOcclusionRadius
     Offset: '0x1e0'
     Size: '0x4'
@@ -10100,7 +10100,7 @@ PostProcessSettings:
   - Name: AmbientCubemapTint
     Offset: '0x1f4'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: AmbientCubemapIntensity
     Offset: '0x204'
     Size: '0x4'
@@ -10152,7 +10152,7 @@ PostProcessSettings:
   - Name: LensFlareTint
     Offset: '0x238'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: LensFlareBokehSize
     Offset: '0x248'
     Size: '0x4'
@@ -10168,7 +10168,7 @@ PostProcessSettings:
   - Name: LensFlareTints
     Offset: '0x258'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: VignetteIntensity
     Offset: '0x2d8'
     Size: '0x4'
@@ -10292,15 +10292,15 @@ PostProcessSettings:
   - Name: MinOverdrawColour
     Offset: '0x344'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: MaxOverdrawColour
     Offset: '0x354'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: IndirectLightingColor
     Offset: '0x364'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: IndirectLightingIntensity
     Offset: '0x374'
     Size: '0x4'
@@ -10436,7 +10436,7 @@ PostProcessSettings:
   - Name: GlobalReflectionTint
     Offset: '0x404'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: InsideAmbientColourForParticlesInfluence
     Offset: '0x414'
     Size: '0x4'
@@ -10444,11 +10444,11 @@ PostProcessSettings:
   - Name: InsideAmbientColourForParticles
     Offset: '0x418'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: RainSettings
     Offset: '0x428'
     Size: '0xc0'
-    Type: struct
+    Type: struct RainPostProcessSettings
   - Name: LPVSettings
     Offset: '0x4e8'
     Size: '0x10'
@@ -10456,7 +10456,7 @@ PostProcessSettings:
   - Name: PlayerAmbientLightOverrideSettings
     Offset: '0x4f8'
     Size: '0x18'
-    Type: struct
+    Type: struct PlayerAmbientLightOverrideSettings
   - Name: GaussianBlurIntensity
     Offset: '0x510'
     Size: '0x4'
@@ -10468,7 +10468,7 @@ PostProcessSettings:
   - Name: WeightedBlendables
     Offset: '0x518'
     Size: '0x10'
-    Type: struct
+    Type: struct WeightedBlendables
   - Name: Blendables
     Offset: '0x528'
     Size: '0x10'
@@ -10527,11 +10527,11 @@ PrimitiveSphereEmitterAngleRanges:
   - Name: HorizontalAngle
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: VerticalAngle
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x10'
 PurchaseInfo:
   Attributes:
@@ -10557,15 +10557,15 @@ ROscillator:
   - Name: Pitch
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct FOscillator
   - Name: Yaw
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct FOscillator
   - Name: Roll
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct FOscillator
   ClassSize: '0x24'
 RPCStatEntry:
   Attributes:
@@ -10580,7 +10580,7 @@ RPCStatEntry:
   - Name: WorstSpike
     Offset: '0x40'
     Size: '0x18'
-    Type: struct
+    Type: struct SpikeStatEntry
   - Name: RPCCount
     Offset: '0x58'
     Size: '0x4'
@@ -10591,18 +10591,18 @@ RPCStats:
   - Name: Entries
     Offset: '0x0'
     Size: '0x60'
-    Type: struct
+    Type: struct RPCStatEntry
   ClassSize: '0xc0'
 RadialDamageEvent:
   Attributes:
   - Name: Params
     Offset: '0x10'
     Size: '0x14'
-    Type: struct
+    Type: struct RadialDamageParams
   - Name: Origin
     Offset: '0x24'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ComponentHits
     Offset: '0x30'
     Size: '0x10'
@@ -10792,7 +10792,7 @@ RainPostProcessSettings:
   - Name: RainParticleWindVelocity
     Offset: '0x30'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: RainParticleWidth
     Offset: '0x3c'
     Size: '0x4'
@@ -10804,15 +10804,15 @@ RainPostProcessSettings:
   - Name: RainMeshScale
     Offset: '0x44'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: RainMeshTextureScroll
     Offset: '0x50'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: RainMeshTextureTiling
     Offset: '0x58'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: RainMeshAlpha
     Offset: '0x60'
     Size: '0x4'
@@ -10848,7 +10848,7 @@ RainPostProcessSettings:
   - Name: RainTint
     Offset: '0x80'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: RainAnimationFrameTime
     Offset: '0x90'
     Size: '0x4'
@@ -10909,7 +10909,7 @@ RawDistribution:
   - Name: Table
     Offset: '0x0'
     Size: '0x28'
-    Type: struct
+    Type: struct DistributionLookupTable
   ClassSize: '0x28'
 RawDistributionFloat:
   Attributes:
@@ -10972,15 +10972,15 @@ RepAttachment:
   - Name: LocationOffset
     Offset: '0x8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector_NetQuantize100
   - Name: RelativeScale3D
     Offset: '0x14'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector_NetQuantize100
   - Name: RotationOffset
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: AttachSocket
     Offset: '0x2c'
     Size: '0x8'
@@ -10995,19 +10995,19 @@ RepMovement:
   - Name: LinearVelocity
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: AngularVelocity
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Location
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Rotation
     Offset: '0x24'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: bSimulatedPhysicSleep
     Offset: '0x30'
     Size: '0x1'
@@ -11042,11 +11042,11 @@ RepRootMotionMontage:
   - Name: Location
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector_NetQuantize10
   - Name: Rotation
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: MovementBase
     Offset: '0x28'
     Size: '0x8'
@@ -11069,11 +11069,11 @@ RepTransform:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Rotation
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   ClassSize: '0x18'
 ReplicatedPhysicsState:
   Attributes:
@@ -11088,7 +11088,7 @@ ReplicatedPhysicsState:
   - Name: ReplicatedMovement
     Offset: '0x10'
     Size: '0x38'
-    Type: struct
+    Type: struct RepMovement
   - Name: IsAttached
     Offset: '0x48'
     Size: '0x1'
@@ -11107,7 +11107,7 @@ ReplicatedTransformState:
   - Name: ReplicatedMovement
     Offset: '0x10'
     Size: '0x18'
-    Type: struct
+    Type: struct RepTransform
   - Name: IsAttached
     Offset: '0x28'
     Size: '0x1'
@@ -11236,11 +11236,11 @@ RigidBodyContactInfo:
   - Name: ContactPosition
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ContactNormal
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ContactPenetration
     Offset: '0x18'
     Size: '0x4'
@@ -11286,19 +11286,19 @@ RigidBodyState:
   - Name: Position
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector_NetQuantize100
   - Name: Quaternion
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: LinVel
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector_NetQuantize100
   - Name: AngVel
     Offset: '0x2c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector_NetQuantize100
   - Name: Flags
     Offset: '0x38'
     Size: '0x1'
@@ -11332,14 +11332,14 @@ RootMotionMovementParams:
   - Name: RootMotionTransform
     Offset: '0x10'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   ClassSize: '0x40'
 RotationAboutAxisParameters:
   Attributes:
   - Name: Rotation
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: bUseRotation
     Offset: '0xc'
     Size: '0x1'
@@ -11365,7 +11365,7 @@ RuntimeCurveLinearColor:
   - Name: ColorCurves
     Offset: '0x0'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: ExternalCurve
     Offset: '0x1e0'
     Size: '0x8'
@@ -11376,7 +11376,7 @@ RuntimeFloatCurve:
   - Name: EditorCurveData
     Offset: '0x0'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: ExternalCurve
     Offset: '0x78'
     Size: '0x8'
@@ -11387,7 +11387,7 @@ RuntimeVectorCurve:
   - Name: FloatCurves
     Offset: '0x0'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: ExternalCurve
     Offset: '0x168'
     Size: '0x8'
@@ -11417,7 +11417,7 @@ ScalarParameterValue:
   - Name: ExpressionGUID
     Offset: '0xc'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x1c'
 ScaleTrack:
   Attributes:
@@ -11443,7 +11443,7 @@ ScreenMessageString:
   - Name: DisplayColor
     Offset: '0x18'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   - Name: TimeToDisplay
     Offset: '0x1c'
     Size: '0x4'
@@ -11526,7 +11526,7 @@ SimpleMemberReference:
   - Name: MemberGuid
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
 SimplygonChannelCastingSettings:
   Attributes:
@@ -11679,7 +11679,7 @@ SimplygonRemeshingSettings:
   - Name: MaterialLODSettings
     Offset: '0x28'
     Size: '0x28'
-    Type: struct
+    Type: struct SimplygonMaterialLODSettings
   ClassSize: '0x50'
 SimulatedRootMotionReplicatedMove:
   Attributes:
@@ -11690,7 +11690,7 @@ SimulatedRootMotionReplicatedMove:
   - Name: RootMotion
     Offset: '0x8'
     Size: '0x40'
-    Type: struct
+    Type: struct RepRootMotionMontage
   ClassSize: '0x48'
 SingleAnimationPlayData:
   Attributes:
@@ -11762,11 +11762,11 @@ SkeletalMeshLODInfo:
   - Name: ReductionSettings
     Offset: '0x30'
     Size: '0x70'
-    Type: struct
+    Type: struct SkeletalMeshOptimizationSettings
   - Name: RemeshingSettings
     Offset: '0xa0'
     Size: '0x50'
-    Type: struct
+    Type: struct SimplygonRemeshingSettings
   ClassSize: '0xf0'
 SkeletalMeshOptimizationSettings:
   Attributes:
@@ -11837,7 +11837,7 @@ SkeletalMeshOptimizationSettings:
   - Name: MaterialLODSettings
     Offset: '0x48'
     Size: '0x28'
-    Type: struct
+    Type: struct SimplygonMaterialLODSettings
   ClassSize: '0x70'
 SkeletonToMeshLinkup:
   Attributes:
@@ -11859,7 +11859,7 @@ SlotAnimationTrack:
   - Name: AnimTrack
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct AnimTrack
   ClassSize: '0x18'
 SlotEvaluationPose:
   Attributes:
@@ -12016,15 +12016,15 @@ SplineMeshParams:
   - Name: StartPos
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: StartTangent
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: StartScale
     Offset: '0x18'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: StartRoll
     Offset: '0x20'
     Size: '0x4'
@@ -12032,19 +12032,19 @@ SplineMeshParams:
   - Name: StartOffset
     Offset: '0x24'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: EndPos
     Offset: '0x2c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: EndTangent
     Offset: '0x38'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: EndScale
     Offset: '0x44'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: EndRoll
     Offset: '0x4c'
     Size: '0x4'
@@ -12052,7 +12052,7 @@ SplineMeshParams:
   - Name: EndOffset
     Offset: '0x50'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x58'
 SpriteCategoryInfo:
   Attributes:
@@ -12078,7 +12078,7 @@ StatColorMapEntry:
   - Name: Out
     Offset: '0x4'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   ClassSize: '0x8'
 StatColorMapping:
   Attributes:
@@ -12146,15 +12146,15 @@ StaticMeshSourceModel:
   - Name: BuildSettings
     Offset: '0x0'
     Size: '0x40'
-    Type: struct
+    Type: struct MeshBuildSettings
   - Name: ReductionSettings
     Offset: '0x40'
     Size: '0x58'
-    Type: struct
+    Type: struct MeshReductionSettings
   - Name: RemeshingSettings
     Offset: '0x98'
     Size: '0x50'
-    Type: struct
+    Type: struct SimplygonRemeshingSettings
   - Name: OverriddenLightMapRes
     Offset: '0xe8'
     Size: '0x4'
@@ -12233,11 +12233,11 @@ SubsurfaceProfileStruct:
   - Name: SubsurfaceColor
     Offset: '0x4'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: FalloffColor
     Offset: '0x14'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   ClassSize: '0x24'
 SubtitleCue:
   Attributes:
@@ -12343,7 +12343,7 @@ TViewTarget:
   - Name: POV
     Offset: '0x10'
     Size: '0x5a0'
-    Type: struct
+    Type: struct MinimalViewInfo
   - Name: PlayerState
     Offset: '0x5b0'
     Size: '0x8'
@@ -12370,7 +12370,7 @@ TextSizingParameters:
   - Name: Scaling
     Offset: '0x10'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: DrawFont
     Offset: '0x18'
     Size: '0x8'
@@ -12378,7 +12378,7 @@ TextSizingParameters:
   - Name: SpacingAdjust
     Offset: '0x20'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x28'
 TextureLODGroup:
   Attributes:
@@ -12436,7 +12436,7 @@ TextureParameterValue:
   - Name: ExpressionGUID
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
 TextureRenderData:
   Attributes:
@@ -12447,23 +12447,23 @@ TextureRenderData:
   - Name: ScreenPosition
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: ScreenSize
     Offset: '0x10'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: CoordinatePosition
     Offset: '0x18'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: CoordinateSize
     Offset: '0x20'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: RenderColor
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: BlendMode
     Offset: '0x38'
     Size: '0x1'
@@ -12475,7 +12475,7 @@ TextureRenderData:
   - Name: PivotPoint
     Offset: '0x40'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x48'
 TickFunction:
   Attributes:
@@ -12663,31 +12663,31 @@ TouchInputControl:
   - Name: Center
     Offset: '0x10'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: VisualSize
     Offset: '0x18'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: ThumbSize
     Offset: '0x20'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: InteractionSize
     Offset: '0x28'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: InputScale
     Offset: '0x30'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: MainInputKey
     Offset: '0x38'
     Size: '0x20'
-    Type: struct
+    Type: struct Key
   - Name: AltInputKey
     Offset: '0x58'
     Size: '0x20'
-    Type: struct
+    Type: struct Key
   ClassSize: '0x78'
 TrackToSkeletonMap:
   Attributes:
@@ -12705,7 +12705,7 @@ TransformBase:
   - Name: Constraints
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct TransformBaseConstraint
   ClassSize: '0x28'
 TransformBaseConstraint:
   Attributes:
@@ -12719,15 +12719,15 @@ TransformCurve:
   - Name: TranslationCurve
     Offset: '0x18'
     Size: '0x180'
-    Type: struct
+    Type: struct VectorCurve
   - Name: RotationCurve
     Offset: '0x198'
     Size: '0x180'
-    Type: struct
+    Type: struct VectorCurve
   - Name: ScaleCurve
     Offset: '0x318'
     Size: '0x180'
-    Type: struct
+    Type: struct VectorCurve
   ClassSize: '0x498'
 TranslationTrack:
   Attributes:
@@ -12825,15 +12825,15 @@ VOscillator:
   - Name: X
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct FOscillator
   - Name: Y
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct FOscillator
   - Name: Z
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct FOscillator
   ClassSize: '0x24'
 Vector2MaterialInput:
   Attributes:
@@ -12855,21 +12855,21 @@ Vector4Distribution:
   - Name: Table
     Offset: '0x0'
     Size: '0x28'
-    Type: struct
+    Type: struct DistributionLookupTable
   ClassSize: '0x28'
 VectorCurve:
   Attributes:
   - Name: FloatCurves
     Offset: '0x18'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   ClassSize: '0x180'
 VectorDistribution:
   Attributes:
   - Name: Table
     Offset: '0x0'
     Size: '0x28'
-    Type: struct
+    Type: struct DistributionLookupTable
   ClassSize: '0x28'
 VectorMaterialInput:
   Attributes:
@@ -12880,7 +12880,7 @@ VectorMaterialInput:
   - Name: Constant
     Offset: '0x3c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x48'
 VectorParameterValue:
   Attributes:
@@ -12891,26 +12891,26 @@ VectorParameterValue:
   - Name: ParameterValue
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: ExpressionGUID
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x28'
 VelocityConeGroupParams:
   Attributes:
   - Name: Angle
     Offset: '0x0'
     Size: '0x38'
-    Type: struct
+    Type: struct RawDistributionFloat
   - Name: Velocity
     Offset: '0x38'
     Size: '0x38'
-    Type: struct
+    Type: struct RawDistributionFloat
   - Name: Direction
     Offset: '0x70'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x80'
 ViewTargetTransitionParams:
   Attributes:
@@ -12970,7 +12970,7 @@ WaterSimPlane:
   - Name: NonFFTPlane
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Plane
   - Name: bUseFFT
     Offset: '0x20'
     Size: '0x1'
@@ -13007,11 +13007,11 @@ WorldContext:
   - Name: LastURL
     Offset: '0xe0'
     Size: '0x70'
-    Type: struct
+    Type: struct URL
   - Name: LastRemoteURL
     Offset: '0x150'
     Size: '0x70'
-    Type: struct
+    Type: struct URL
   - Name: PendingNetGame
     Offset: '0x1c0'
     Size: '0x8'
@@ -13054,5 +13054,5 @@ WrappedStringElement:
   - Name: LineExtent
     Offset: '0x10'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x18'

@@ -23,7 +23,7 @@ CinematicFactionEvent:
   - Name: CinematicData
     Offset: '0x8'
     Size: '0x80'
-    Type: struct
+    Type: struct CinematicQuestEvent
   ClassSize: '0x88'
 FactionBlockedTaleVoteAdded:
   Attributes:
@@ -37,7 +37,7 @@ FactionBlockedTaleVoteConsensusReached:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 FactionDisplayInfo:
   Attributes:
@@ -56,15 +56,15 @@ FactionDisplayInfo:
   - Name: CardOffset
     Offset: '0x78'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: KeyArt
     Offset: '0x80'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Icon
     Offset: '0x90'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0xa0'
 FactionPopupEvent:
   Attributes:
@@ -89,7 +89,7 @@ FactionShipSunkNetworkEvent:
   - Name: OpponentCrewId
     Offset: '0x1c'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: MyKillStreak
     Offset: '0x2c'
     Size: '0x4'
@@ -150,7 +150,7 @@ FactionVoteAdded:
   - Name: CrewId
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: VotePassed
     Offset: '0x18'
     Size: '0x1'
@@ -180,7 +180,7 @@ LootLevelReward:
   - Name: RewardId
     Offset: '0x4'
     Size: '0x8'
-    Type: struct
+    Type: struct RewardId
   - Name: LootLevelPopUpMessageDesc
     Offset: '0x10'
     Size: '0x10'

@@ -61,7 +61,7 @@ EngineServicePong:
   - Name: InstanceId
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: InstanceType
     Offset: '0x28'
     Size: '0x10'
@@ -69,7 +69,7 @@ EngineServicePong:
   - Name: SessionId
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: WorldTimeSeconds
     Offset: '0x48'
     Size: '0x4'

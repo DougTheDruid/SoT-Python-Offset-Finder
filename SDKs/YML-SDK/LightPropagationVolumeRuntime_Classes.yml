@@ -5,7 +5,7 @@ LightPropagationVolumeBlendable:
   - Name: Settings
     Offset: '0x30'
     Size: '0x70'
-    Type: struct
+    Type: struct LightPropagationVolumeSettings
   - Name: BlendWeight
     Offset: '0xa0'
     Size: '0x4'

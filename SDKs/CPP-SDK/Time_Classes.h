@@ -10,7 +10,7 @@
 class TimeService: public Actor
 {
 public:
-	struct                                                       GameWorldTimeOffset;                               // 0x400(0x8)
+	struct Timespan                                              GameWorldTimeOffset;                               // 0x400(0x8)
 	uint32                                                       TimeScalar;                                        // 0x40c(0x4)
 	uint32                                                       NumberOfDaysInEachGameMonth;                       // 0x410(0x4)
 	double                                                       ServiceTimeQueryRapidFrequencyOffsetMax;           // 0x418(0x8)
@@ -25,7 +25,7 @@ public:
 	float                                                        MinLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x440(0x4)
 	float                                                        MaxLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x444(0x4)
 	uint32                                                       MaxNumReplicatedTimeEntriesToAverage;              // 0x448(0x4)
-	struct                                                       ReplicatedServerTime;                              // 0x498(0x10)
+	struct ReplicatedAuthoritativeTime                           ReplicatedServerTime;                              // 0x498(0x10)
 };
 
 

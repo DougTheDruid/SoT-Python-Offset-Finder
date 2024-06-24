@@ -5,7 +5,7 @@ MovieSceneBinding:
   - Name: ObjectGuid
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: BindingName
     Offset: '0x10'
     Size: '0x10'
@@ -20,7 +20,7 @@ MovieSceneBindingOverrideData:
   - Name: ObjectBindingId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct MovieSceneObjectBindingPtr
   - Name: Object
     Offset: '0x10'
     Size: '0x8'
@@ -39,11 +39,11 @@ MovieSceneEditorData:
   - Name: WorkingRange
     Offset: '0x50'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: ViewRange
     Offset: '0x60'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   ClassSize: '0x70'
 MovieSceneEvalTemplate:
   Attributes:
@@ -79,11 +79,11 @@ MovieSceneEvaluationFieldTrackPtr:
   - Name: SequenceID
     Offset: '0x0'
     Size: '0x4'
-    Type: struct
+    Type: struct MovieSceneSequenceID
   - Name: TrackIdentifier
     Offset: '0x4'
     Size: '0x4'
-    Type: struct
+    Type: struct MovieSceneTrackIdentifier
   ClassSize: '0x8'
 MovieSceneEvaluationGroup:
   Attributes:
@@ -131,15 +131,15 @@ MovieSceneEvaluationTemplate:
   - Name: EvaluationField
     Offset: '0xa0'
     Size: '0x30'
-    Type: struct
+    Type: struct MovieSceneEvaluationField
   - Name: Hierarchy
     Offset: '0xd0'
     Size: '0xa0'
-    Type: struct
+    Type: struct MovieSceneSequenceHierarchy
   - Name: Ledger
     Offset: '0x170'
     Size: '0xa8'
-    Type: struct
+    Type: struct MovieSceneGenerationLedger
   - Name: bHasLegacyTrackInstances
     Offset: '0x218'
     Size: '0x1'
@@ -154,7 +154,7 @@ MovieSceneEvaluationTrack:
   - Name: ObjectBindingId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: EvaluationPriority
     Offset: '0x10'
     Size: '0x2'
@@ -174,7 +174,7 @@ MovieSceneEvaluationTrack:
   - Name: TrackTemplate
     Offset: '0x38'
     Size: '0x38'
-    Type: struct
+    Type: struct MovieSceneTrackImplementationPtr
   - Name: EvaluationGroup
     Offset: '0x70'
     Size: '0x8'
@@ -207,14 +207,14 @@ MovieSceneObjectBindingPtr:
   - Name: Guid
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 MovieScenePossessable:
   Attributes:
   - Name: Guid
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Name
     Offset: '0x10'
     Size: '0x10'
@@ -226,7 +226,7 @@ MovieScenePossessable:
   - Name: ParentGuid
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x38'
 MovieScenePropertySectionData:
   Attributes:
@@ -282,7 +282,7 @@ MovieSceneSequenceCachedSignature:
   - Name: CachedSignature
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x18'
 MovieSceneSequenceHierarchy:
   Attributes:
@@ -300,7 +300,7 @@ MovieSceneSequenceHierarchyNode:
   - Name: ParentID
     Offset: '0x0'
     Size: '0x4'
-    Type: struct
+    Type: struct MovieSceneSequenceID
   - Name: Children
     Offset: '0x8'
     Size: '0x10'
@@ -360,7 +360,7 @@ MovieSceneSpawnable:
   - Name: Guid
     Offset: '0x4'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Name
     Offset: '0x18'
     Size: '0x10'
@@ -387,15 +387,15 @@ MovieSceneSubSequenceData:
   - Name: RootToSequenceTransform
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct MovieSceneSequenceTransform
   - Name: SourceSequenceSignature
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: DeterministicSequenceID
     Offset: '0x20'
     Size: '0x4'
-    Type: struct
+    Type: struct MovieSceneSequenceID
   ClassSize: '0x28'
 MovieSceneTrackCompilationParams:
   Attributes:

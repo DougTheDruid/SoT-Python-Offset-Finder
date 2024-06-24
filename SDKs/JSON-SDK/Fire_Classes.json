@@ -1,55 +1,55 @@
 {
-  "FireGridVFXParamsDataAsset": {
+  "FireCellStateTimingParamsDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x68",
+    "FullSize": "0xc0",
     "InheritedSize": "0x28",
-    "ClassSize": "0x40",
+    "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "Params",
-        "Type": "struct",
-        "Size": "0x40",
+        "Name": "TimingParams",
+        "Type": "struct FireCellStateTimingParams",
+        "Size": "0x94",
         "Offset": "0x28"
       }
     ]
   },
-  "CookerIgnitionComponent": {
+  "FlammableComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x140",
+    "FullSize": "0xe0",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x78",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "CookerIgnitionParams",
-        "Type": "struct",
-        "Size": "0x78",
-        "Offset": "0xc8"
+        "Name": "OnFire",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd8"
       }
     ]
   },
-  "FireGridAudioManager": {
-    "Super": "Object",
-    "FullSize": "0xd0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xa8",
+  "OilSpill": {
+    "Super": "ItemProxy",
+    "FullSize": "0x740",
+    "InheritedSize": "0x710",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "FireAudioParams",
-        "Type": "struct",
-        "Size": "0x40",
-        "Offset": "0x28"
+        "Name": "BaseComponent",
+        "Type": "class BoxComponent*",
+        "Size": "0x8",
+        "Offset": "0x718"
       },
       {
-        "Name": "OwningActor",
-        "Type": "class Actor*",
+        "Name": "FlammableComponent",
+        "Type": "class ActorFlammableComponent*",
         "Size": "0x8",
-        "Offset": "0x68"
+        "Offset": "0x720"
       },
       {
-        "Name": "FirePropagator",
-        "Type": "class FirePropagator*",
+        "Name": "StatusEffectManagerComponent",
+        "Type": "class StatusEffectManagerComponent*",
         "Size": "0x8",
-        "Offset": "0x70"
+        "Offset": "0x728"
       }
     ]
   },
@@ -67,31 +67,17 @@
       }
     ]
   },
-  "ShipFireLightParamsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
+  "CookerIgnitionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x140",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "Params",
-        "Type": "struct",
-        "Size": "0x14",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "FireCellStateTimingParamsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0xc0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "TimingParams",
-        "Type": "struct",
-        "Size": "0x94",
-        "Offset": "0x28"
+        "Name": "CookerIgnitionParams",
+        "Type": "struct CookerIgnitionParams",
+        "Size": "0x78",
+        "Offset": "0xc8"
       }
     ]
   },
@@ -193,6 +179,48 @@
       }
     ]
   },
+  "ShipFireDamageParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "FireDamageParams",
+        "Type": "struct ShipFireDamageParams",
+        "Size": "0x18",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ShipFireLightParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Params",
+        "Type": "struct ShipFireLightParams",
+        "Size": "0x14",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "FireGridCellSelectionParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FireGridCellSelectionParams",
+        "Type": "TArray<struct FireGridCellSelectionParams>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "ShipFirePropagationComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x4a8",
@@ -219,13 +247,13 @@
       },
       {
         "Name": "GridDimensions",
-        "Type": "struct",
+        "Type": "struct IntVector",
         "Size": "0xc",
         "Offset": "0xf4"
       },
       {
         "Name": "GridOffset",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x100"
       },
@@ -249,7 +277,7 @@
       },
       {
         "Name": "BurnStatus",
-        "Type": "struct",
+        "Type": "struct Status",
         "Size": "0x18",
         "Offset": "0x140"
       },
@@ -261,19 +289,19 @@
       },
       {
         "Name": "VfxSpawnSettings",
-        "Type": "struct",
+        "Type": "struct FireGridVfxSpawnSettings",
         "Size": "0x58",
         "Offset": "0x160"
       },
       {
         "Name": "FireLightManager",
-        "Type": "struct",
+        "Type": "struct ShipFireLightManager",
         "Size": "0x150",
         "Offset": "0x1b8"
       },
       {
         "Name": "FireCharringManager",
-        "Type": "struct",
+        "Type": "struct FireGridCharringManager",
         "Size": "0xd8",
         "Offset": "0x308"
       },
@@ -285,7 +313,7 @@
       },
       {
         "Name": "ReplicatedCellCharringData",
-        "Type": "struct",
+        "Type": "struct ReplicatedFireCellCharringData",
         "Size": "0x18",
         "Offset": "0x3f0"
       },
@@ -297,7 +325,7 @@
       },
       {
         "Name": "FireAudioParams",
-        "Type": "struct",
+        "Type": "struct FireCellAudioParams",
         "Size": "0x40",
         "Offset": "0x410"
       }
@@ -323,71 +351,43 @@
       }
     ]
   },
-  "FlammableComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "OnFire",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xd8"
-      }
-    ]
-  },
-  "OilSpill": {
-    "Super": "ItemProxy",
-    "FullSize": "0x740",
-    "InheritedSize": "0x710",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "BaseComponent",
-        "Type": "class BoxComponent*",
-        "Size": "0x8",
-        "Offset": "0x718"
-      },
-      {
-        "Name": "FlammableComponent",
-        "Type": "class ActorFlammableComponent*",
-        "Size": "0x8",
-        "Offset": "0x720"
-      },
-      {
-        "Name": "StatusEffectManagerComponent",
-        "Type": "class StatusEffectManagerComponent*",
-        "Size": "0x8",
-        "Offset": "0x728"
-      }
-    ]
-  },
-  "ShipFireDamageParamsDataAsset": {
+  "FireGridVFXParamsDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x40",
+    "FullSize": "0x68",
     "InheritedSize": "0x28",
-    "ClassSize": "0x18",
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "FireDamageParams",
-        "Type": "struct",
-        "Size": "0x18",
+        "Name": "Params",
+        "Type": "struct FireGridVFXParams",
+        "Size": "0x40",
         "Offset": "0x28"
       }
     ]
   },
-  "FireGridCellSelectionParamsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
+  "FireGridAudioManager": {
+    "Super": "Object",
+    "FullSize": "0xd0",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+    "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "FireGridCellSelectionParams",
-        "Type": "TArray<struct FireGridCellSelectionParams>",
-        "Size": "0x10",
+        "Name": "FireAudioParams",
+        "Type": "struct FireCellAudioParams",
+        "Size": "0x40",
         "Offset": "0x28"
+      },
+      {
+        "Name": "OwningActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "FirePropagator",
+        "Type": "class FirePropagator*",
+        "Size": "0x8",
+        "Offset": "0x70"
       }
     ]
   },
@@ -399,35 +399,9 @@
     "Attributes": [
       {
         "Name": "IgnitedStatus",
-        "Type": "struct",
+        "Type": "struct Status",
         "Size": "0x18",
         "Offset": "0xe0"
-      }
-    ]
-  },
-  "TimedFlammableComponent": {
-    "Super": "FlammableComponent",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "UseExtinguishTimer",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "AllowFireToBeReplenishedBeforeExtinguishTimerExpired",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xe1"
-      },
-      {
-        "Name": "TimeInSecondsUntilFireExtinguished",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xe4"
       }
     ]
   },
@@ -481,13 +455,13 @@
       },
       {
         "Name": "FireStatus",
-        "Type": "struct",
+        "Type": "struct Status",
         "Size": "0x18",
         "Offset": "0x120"
       },
       {
         "Name": "BurnStatus",
-        "Type": "struct",
+        "Type": "struct Status",
         "Size": "0x18",
         "Offset": "0x138"
       },
@@ -505,6 +479,32 @@
       }
     ]
   },
+  "TimedFlammableComponent": {
+    "Super": "FlammableComponent",
+    "FullSize": "0xe8",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "UseExtinguishTimer",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "AllowFireToBeReplenishedBeforeExtinguishTimerExpired",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xe1"
+      },
+      {
+        "Name": "TimeInSecondsUntilFireExtinguished",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe4"
+      }
+    ]
+  },
   "MastFlammableComponent": {
     "Super": "ActorFlammableComponent",
     "FullSize": "0x218",
@@ -513,7 +513,7 @@
     "Attributes": [
       {
         "Name": "FireGridLocation",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x1f8"
       }

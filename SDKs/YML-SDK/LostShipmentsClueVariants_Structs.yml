@@ -49,7 +49,7 @@ MapRadialIconData:
   - Name: AssetReference
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Rotation
     Offset: '0x10'
     Size: '0x4'
@@ -64,5 +64,5 @@ TextEntryWithLayout:
   - Name: TextLayout
     Offset: '0x38'
     Size: '0x3c'
-    Type: struct
+    Type: struct TreasureMapWidgetText
   ClassSize: '0x78'

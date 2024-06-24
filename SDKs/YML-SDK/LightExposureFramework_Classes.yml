@@ -10,3 +10,39 @@ DebugLightSensitiveComponent:
   FullSize: '0x128'
   InheritedSize: '0xc8'
   Super: ActorComponent
+LightSensitiveComponent:
+  Attributes:
+  - Name: LightSourceManager
+    Offset: '0x128'
+    Size: '0x8'
+    Type: class LightSourceManager*
+  ClassSize: '0x68'
+  FullSize: '0x130'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
+LightSourceManager:
+  Attributes:
+  - Name: LightEmittingActors
+    Offset: '0x3d0'
+    Size: '0x10'
+    Type: TArray<class Actor*>
+  - Name: LightSensitiveActors
+    Offset: '0x3e0'
+    Size: '0x10'
+    Type: TArray<class Actor*>
+  - Name: UpdateTimeThreshold
+    Offset: '0x3f0'
+    Size: '0x4'
+    Type: float
+  - Name: ShouldUseTimeThreshold
+    Offset: '0x3f4'
+    Size: '0x1'
+    Type: bool
+  - Name: MaxLightsourceParamCount
+    Offset: '0x414'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x50'
+  FullSize: '0x418'
+  InheritedSize: '0x3c8'
+  Super: Actor

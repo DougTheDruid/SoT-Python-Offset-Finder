@@ -105,7 +105,7 @@ EelThrowAIAbilityParams:
   - Name: MinMaxNumberOfAttacksBeforeEnd
     Offset: '0xc8'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   ClassSize: '0x20'
   FullSize: '0xe8'
   InheritedSize: '0xc8'

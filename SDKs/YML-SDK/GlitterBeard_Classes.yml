@@ -9,7 +9,7 @@ GlitterBeardFinaleCoordinatorComponent:
   - Name: ReplicationState
     Offset: '0xd0'
     Size: '0x10'
-    Type: struct
+    Type: struct FinaleReplicationState
   ClassSize: '0xa8'
   FullSize: '0x170'
   InheritedSize: '0xc8'
@@ -31,7 +31,7 @@ GlitterBeardLanternSoundEffect:
   - Name: Emitter
     Offset: '0x50'
     Size: '0x20'
-    Type: struct
+    Type: struct WwiseEmitter
   ClassSize: '0x48'
   FullSize: '0x80'
   InheritedSize: '0x38'
@@ -93,7 +93,7 @@ GlitterBeardTree:
   - Name: SoundEmitter
     Offset: '0x6a0'
     Size: '0x20'
-    Type: struct
+    Type: struct WwiseEmitter
   ClassSize: '0x328'
   FullSize: '0x6f0'
   InheritedSize: '0x3c8'
@@ -117,7 +117,7 @@ GlitterBeardUnlockVFXCoordinatorComponent:
   - Name: TreeActor
     Offset: '0xc8'
     Size: '0x10'
-    Type: struct
+    Type: struct ActorComponentSelector
   - Name: TreeMaterialInstanceDynamic
     Offset: '0xd8'
     Size: '0x8'

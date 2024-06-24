@@ -1,9 +1,60 @@
 {
+  "EventOnBoneCallerExploded": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "RootInstigator",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HitActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "BoneCallerSpawnId",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "PlayerBoneCallerData": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Spawner",
+        "Type": "class AIFixedWavesSpawner*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventOnBoneCallerDidKillEvent": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "KilledCharacter",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DamageInstance",
+        "Type": "struct DamageInstance",
+        "Size": "0x30",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "BoneCallerImpactIdToSpawner": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "ImpactProjectileId",
+        "Name": "BoneCallerSpawnId",
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
@@ -28,20 +79,20 @@
       }
     ]
   },
-  "EventOnBoneCallerDidKillEvent": {
-    "ClassSize": "0x38",
+  "BoneCallerUsageTelemetry": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "KilledCharacter",
-        "Type": "class Actor*",
-        "Size": "0x8",
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
         "Offset": "0x0"
       },
       {
-        "Name": "DamageInstance",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x8"
+        "Name": "Region",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -59,57 +110,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "EventOnBoneCallerExploded": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "RootInstigator",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "HitActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ImpactProjectileId",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "BoneCallerUsageTelemetry": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Region",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "PlayerBoneCallerData": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Spawner",
-        "Type": "class AIFixedWavesSpawner*",
-        "Size": "0x8",
-        "Offset": "0x0"
       }
     ]
   },

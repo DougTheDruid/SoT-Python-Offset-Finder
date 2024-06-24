@@ -1,97 +1,45 @@
 {
-  "WwiseIDsDatabase": {
+  "WwiseCoreAssets": {
     "Super": "DataAsset",
-    "FullSize": "0xa8",
+    "FullSize": "0x58",
     "InheritedSize": "0x28",
-    "ClassSize": "0x80",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "StateGroupIDs",
-        "Type": "TArray<int>",
-        "Size": "0x10",
+        "Name": "PauseEventStart",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
         "Offset": "0x28"
       },
       {
-        "Name": "StateGroupNames",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
+        "Name": "PauseEventRelease",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "StopAllEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
         "Offset": "0x38"
       },
       {
-        "Name": "StateValueIDs",
-        "Type": "TArray<int>",
-        "Size": "0x10",
+        "Name": "WwiseMediaSoundComponentEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "NonShippingAudioRootAsset",
+        "Type": "class WwiseNonShippingAudioRootAsset*",
+        "Size": "0x8",
         "Offset": "0x48"
       },
       {
-        "Name": "StateValueNames",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "SwitchGroupIDs",
-        "Type": "TArray<int>",
-        "Size": "0x10",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "SwitchGroupNames",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "SwitchStateIDs",
-        "Type": "TArray<int>",
-        "Size": "0x10",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "SwitchStateNames",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "WwiseBank": {
-    "Super": "Object",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "path",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "WwiseId",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "InitBank",
-        "Type": "class WwiseBank*",
+        "Name": "WwiseIDsDatabase",
+        "Type": "class WwiseIDsDatabase*",
         "Size": "0x8",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "WwiseNonShippingAudioRootAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "NonShippingAudioAssets",
-        "Type": "TArray<class WwiseNonShippingAudioAsset*>",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x50"
       }
     ]
   },
@@ -109,43 +57,9 @@
       },
       {
         "Name": "FloatCurve",
-        "Type": "struct",
+        "Type": "struct RichCurve",
         "Size": "0x78",
         "Offset": "0xb0"
-      }
-    ]
-  },
-  "MovieSceneAkTrack": {
-    "Super": "MovieSceneTrack",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Sections",
-        "Type": "TArray<class MovieSceneSection*>",
-        "Size": "0x10",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "bIsAMasterTrack",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "MovieSceneAkAudioEventSection": {
-    "Super": "MovieSceneSection",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Event",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x98"
       }
     ]
   },
@@ -205,73 +119,17 @@
       }
     ]
   },
-  "WwiseNonShippingAudioAsset": {
+  "WwiseNonShippingAudioRootAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x58",
+    "FullSize": "0x48",
     "InheritedSize": "0x28",
-    "ClassSize": "0x30",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "CodeName",
-        "Type": "struct FString",
+        "Name": "NonShippingAudioAssets",
+        "Type": "TArray<class WwiseNonShippingAudioAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
-      },
-      {
-        "Name": "UAssetRelativePath",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "StreamRelativePath",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "WwiseCoreAssets": {
-    "Super": "DataAsset",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "PauseEventStart",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "PauseEventRelease",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "StopAllEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "WwiseMediaSoundComponentEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "NonShippingAudioRootAsset",
-        "Type": "class WwiseNonShippingAudioRootAsset*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "WwiseIDsDatabase",
-        "Type": "class WwiseIDsDatabase*",
-        "Size": "0x8",
-        "Offset": "0x50"
       }
     ]
   },
@@ -295,6 +153,52 @@
       }
     ]
   },
+  "MovieSceneAkTrack": {
+    "Super": "MovieSceneTrack",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Sections",
+        "Type": "TArray<class MovieSceneSection*>",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "bIsAMasterTrack",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "WwiseBank": {
+    "Super": "Object",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "path",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "WwiseId",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "InitBank",
+        "Type": "class WwiseBank*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      }
+    ]
+  },
   "MultiEmitterRootComponent": {
     "Super": "SceneComponent",
     "FullSize": "0x300",
@@ -312,6 +216,102 @@
         "Type": "TArray<struct WwiseEmitter>",
         "Size": "0x10",
         "Offset": "0x2f0"
+      }
+    ]
+  },
+  "WwiseIDsDatabase": {
+    "Super": "DataAsset",
+    "FullSize": "0xa8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "StateGroupIDs",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "StateGroupNames",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "StateValueIDs",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "StateValueNames",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "SwitchGroupIDs",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "SwitchGroupNames",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "SwitchStateIDs",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "SwitchStateNames",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "MovieSceneAkAudioEventSection": {
+    "Super": "MovieSceneSection",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Event",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "WwiseNonShippingAudioAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "CodeName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "UAssetRelativePath",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "StreamRelativePath",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x48"
       }
     ]
   },

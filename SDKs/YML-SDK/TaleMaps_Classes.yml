@@ -5,7 +5,7 @@ AddMarkToTornMapAtActorLocationStepDesc:
   - Name: MarkLocation
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   ClassSize: '0x30'
   FullSize: '0x110'
   InheritedSize: '0xe0'
@@ -15,7 +15,7 @@ AddMarkToTornMapAtLocationStepDesc:
   - Name: MarkLocation
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableVector
   ClassSize: '0x30'
   FullSize: '0x110'
   InheritedSize: '0xe0'
@@ -35,11 +35,11 @@ AddMarkToTornMapStepDescBase:
   - Name: MapID
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableGuid
   - Name: MapMark
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct TaleQuestVariableMapMarkType
   ClassSize: '0x60'
   FullSize: '0xe0'
   InheritedSize: '0x80'
@@ -49,11 +49,11 @@ GetNumberOfCollectedTornMapPiecesStepDesc:
   - Name: MapID
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableGuid
   - Name: NumPieces
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableInt
   ClassSize: '0x60'
   FullSize: '0xe0'
   InheritedSize: '0x80'
@@ -117,19 +117,19 @@ SelectIslandsFromRegionStepDesc:
   - Name: Region
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableDataAsset
   - Name: NumIslands
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableInt
   - Name: MaxDifferentIslands
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableInt
   - Name: SelectedIslands
     Offset: '0x110'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableNameArray
   - Name: SelectionStrategy
     Offset: '0x140'
     Size: '0x8'
@@ -169,27 +169,27 @@ SelectWayfinderIslandsFromRegionStepDesc:
   - Name: Region
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableDataAsset
   - Name: NumIslands
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableInt
   - Name: MaxDifferentIslands
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableInt
   - Name: VaultActor
     Offset: '0x110'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   - Name: KeyIslandName
     Offset: '0x140'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableName
   - Name: SelectedIslands
     Offset: '0x170'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableNameArray
   - Name: SelectionStrategy
     Offset: '0x1a0'
     Size: '0x8'
@@ -215,19 +215,19 @@ TaleQuestAddLocationMapStepDesc:
   - Name: NumberOfChests
     Offset: '0x88'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableInt
   - Name: RegionMapData
     Offset: '0xb8'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableDataAsset
   - Name: VaultData
     Offset: '0xe8'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableDataAsset
   - Name: MapParams
     Offset: '0x118'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableDataAsset
   ClassSize: '0xc8'
   FullSize: '0x148'
   InheritedSize: '0x80'
@@ -237,19 +237,19 @@ TaleQuestAddTornMapStepDesc:
   - Name: IslandName
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableName
   - Name: NumberOfPieces
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableInt
   - Name: MapParams
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableDataAsset
   - Name: MapID
     Offset: '0x110'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableGuid
   ClassSize: '0xc0'
   FullSize: '0x140'
   InheritedSize: '0x80'
@@ -259,15 +259,15 @@ TaleQuestAddTradeRouteMapStepDesc:
   - Name: TradeRouteData
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableDataAsset
   - Name: VesselName
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableText
   - Name: MapID
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableGuid
   - Name: ClueSiteToMapMarkIdMap
     Offset: '0x110'
     Size: '0x8'

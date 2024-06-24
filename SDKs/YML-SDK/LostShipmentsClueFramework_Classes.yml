@@ -231,19 +231,19 @@ TaleQuestChooseLandOrSeaStepDesc:
   - Name: ProjectionPoint
     Offset: '0xa0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableVector
   - Name: TradeRouteData
     Offset: '0xd0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableTradeRouteData
   - Name: IsSeaLocation
     Offset: '0x100'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableBool
   - Name: ValidIslandNames
     Offset: '0x130'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableNameArray
   ClassSize: '0xe0'
   FullSize: '0x160'
   InheritedSize: '0x80'
@@ -275,19 +275,19 @@ TaleQuestGenerateCluePointingToSiteStepDesc:
   - Name: Difficulty
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableInt
   - Name: SourceLocation
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableVector
   - Name: TargetClueSite
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClueSite
   - Name: GeneratedClue
     Offset: '0x110'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClueDescriptor
   - Name: AllowedClueTypes
     Offset: '0x140'
     Size: '0x10'
@@ -305,11 +305,11 @@ TaleQuestGenerateClueSiteAtSeaLocationStepDesc:
   - Name: ApproximateLocation
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableVector
   - Name: ClueSite
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClueSite
   - Name: ClueFactoryConfiguration
     Offset: '0xe0'
     Size: '0x8'
@@ -323,11 +323,11 @@ TaleQuestGenerateClueSiteOnIslandStepDesc:
   - Name: IslandName
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableName
   - Name: ClueSite
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClueSite
   - Name: ClueGenerationConfiguration
     Offset: '0xe0'
     Size: '0x8'
@@ -341,11 +341,11 @@ TaleQuestGenerateDebrisTypeForVoyageRankStepDesc:
   - Name: VoyageRank
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableInt
   - Name: DebrisTypeArray
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActorAssetTypeArray
   - Name: DebrisForRankDescAsset
     Offset: '0xe0'
     Size: '0x8'
@@ -359,11 +359,11 @@ TaleQuestGenerateLootDescForVoyageRankStepDesc:
   - Name: VoyageRank
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableInt
   - Name: LootDescArray
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableItemDescTypeArray
   - Name: LootForRankDescAsset
     Offset: '0xe0'
     Size: '0x8'
@@ -381,11 +381,11 @@ TaleQuestIsClueOfTypeStepDesc:
   - Name: ClueSite
     Offset: '0x88'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClueSite
   - Name: IsMatchingType
     Offset: '0xb8'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableBool
   ClassSize: '0x68'
   FullSize: '0xe8'
   InheritedSize: '0x80'
@@ -417,11 +417,11 @@ TaleQuestSelectClueSiteForLootStepDesc:
   - Name: OutputClueSite
     Offset: '0x98'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClueSite
   - Name: MaxedAllClueSites
     Offset: '0xc8'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableBool
   ClassSize: '0x78'
   FullSize: '0xf8'
   InheritedSize: '0x80'
@@ -431,15 +431,15 @@ TaleQuestSpawnDebrisAtClueSiteStepDesc:
   - Name: ClueSiteVar
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClueSite
   - Name: DebrisTypeVar
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActorAssetType
   - Name: OutDebrisActorVar
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   ClassSize: '0x90'
   FullSize: '0x110'
   InheritedSize: '0x80'
@@ -449,15 +449,15 @@ TaleQuestSpawnLootItemInClueSiteStepDesc:
   - Name: LootItem
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClass
   - Name: ClueSite
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClueSite
   - Name: SpawnedLootItem
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableItemInfo
   - Name: Tracked
     Offset: '0x110'
     Size: '0x1'
@@ -471,15 +471,15 @@ TaleQuestStoreClueOnActorStepDesc:
   - Name: ClueDescriptor
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClueDescriptor
   - Name: Actor
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   - Name: ClueActor
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   ClassSize: '0x90'
   FullSize: '0x110'
   InheritedSize: '0x80'
@@ -489,7 +489,7 @@ TaleQuestUpdateBuoyancyAutoSinkSettingForItemStepDesc:
   - Name: Item
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableItemInfo
   - Name: EnableAutoSink
     Offset: '0xb0'
     Size: '0x1'

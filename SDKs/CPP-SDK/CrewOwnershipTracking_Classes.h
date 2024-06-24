@@ -10,9 +10,9 @@
 class CrewOwnershipTrackingComponent: public ActorComponent
 {
 public:
-	struct                                                       SpawningCrewId;                                    // 0xe0(0x10)
-	struct                                                       CurrentOwnedByCrewId;                              // 0xf0(0x10)
-	struct                                                       PreviousOwnedByCrewIdList;                         // 0x100(0x10)
+	struct Guid                                                  SpawningCrewId;                                    // 0xe0(0x10)
+	struct Guid                                                  CurrentOwnedByCrewId;                              // 0xf0(0x10)
+	struct OwnerListEntry                                        PreviousOwnedByCrewIdList;                         // 0x100(0x10)
 	map                                                          CustomTrackingMap;                                 // 0x110(0x50)
 };
 

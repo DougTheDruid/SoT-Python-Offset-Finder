@@ -12,8 +12,8 @@ class SirenAnimationInstance: public AnimInstance
 public:
 	class Pawn*                                                  PawnOwner;                                         // 0x450(0x8)
 	struct FName                                                 PropAttachmentSocket;                              // 0x458(0x8)
-	struct                                                       SirenAnimationData;                                // 0x460(0x60)
-	struct                                                       AttackAnimations;                                  // 0x4c0(0xb8)
+	struct SirenAnimationDataStructure                           SirenAnimationData;                                // 0x460(0x60)
+	struct AthenaAnimationWeapon                                 AttackAnimations;                                  // 0x4c0(0xb8)
 	float                                                        ForwardSpeed;                                      // 0x578(0x4)
 	float                                                        TiltDirectionAngleDegrees;                         // 0x588(0x4)
 	float                                                        TiltAngleAlpha;                                    // 0x58c(0x4)
@@ -24,12 +24,12 @@ public:
 	bool                                                         UseAggressiveAnimations;                           // 0x59a(0x1)
 	bool                                                         UseAlternativeAggressiveAnimation;                 // 0x59b(0x1)
 	TArray<class Class*>                                         StrategiesForAggressiveAnimations;                 // 0x5a0(0x10)
-	struct                                                       TimeBeforeAlternativeAggressiveAnimationToggleFlips; // 0x5b0(0x10)
+	struct FloatRange                                            TimeBeforeAlternativeAggressiveAnimationToggleFlips; // 0x5b0(0x10)
 	bool                                                         AnimationsLoaded;                                  // 0x5c8(0x1)
 	float                                                        AimUpAlpha;                                        // 0x5cc(0x4)
 	float                                                        AimDownAlpha;                                      // 0x5d0(0x4)
-	struct                                                       FullBodyStateMachine;                              // 0x5d8(0xd8)
-	struct                                                       HitReacts;                                         // 0x6b0(0x28)
+	struct CustomAnimationMontageStateMachine                    FullBodyStateMachine;                              // 0x5d8(0xd8)
+	struct HitReactionAnimationState                             HitReacts;                                         // 0x6b0(0x28)
 };
 
 
@@ -37,7 +37,7 @@ public:
 class SirenAnimationData: public AnimationData
 {
 public:
-	struct                                                       SirenAnimationData;                                // 0x28(0x60)
+	struct SirenAnimationDataStructure                           SirenAnimationData;                                // 0x28(0x60)
 };
 
 

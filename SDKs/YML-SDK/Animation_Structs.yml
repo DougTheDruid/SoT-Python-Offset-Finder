@@ -5,7 +5,7 @@ ActorVelocityData:
   - Name: ActorsVelocityVector
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ActorSpeed
     Offset: '0xc'
     Size: '0x4'
@@ -99,11 +99,11 @@ AnimationLookAt:
   - Name: Params
     Offset: '0x8'
     Size: '0xc'
-    Type: struct
+    Type: struct AnimationLookAtParams
   - Name: LookAtTarget
     Offset: '0x14'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: IKLookAtActive
     Offset: '0x20'
     Size: '0x1'
@@ -148,11 +148,11 @@ CharacterAnimationIKUpdateParams:
   - Name: Location
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Orientation
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: EffectorSpace
     Offset: '0x30'
     Size: '0x1'
@@ -204,7 +204,7 @@ CustomAnimationMontageComponentReplicatedData:
   - Name: CustomMontageId
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct CustomAnimationMontageId
   - Name: AnimationCallId
     Offset: '0x8'
     Size: '0x4'
@@ -219,7 +219,7 @@ CustomAnimationMontageDefinitionEntry:
   - Name: Definition
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x18'
 CustomAnimationMontageId:
   Attributes:
@@ -303,11 +303,11 @@ EventHitReactAnimationRequested:
   - Name: HitNormal
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: HitVelocity
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: ReactionAnimType
     Offset: '0x18'
     Size: '0x1'
@@ -370,7 +370,7 @@ TransformBlendCurve:
   - Name: LocationCurve
     Offset: '0x8'
     Size: '0x170'
-    Type: struct
+    Type: struct RuntimeVectorCurve
   - Name: UseRotationCurve
     Offset: '0x178'
     Size: '0x1'
@@ -378,7 +378,7 @@ TransformBlendCurve:
   - Name: RotationCurve
     Offset: '0x180'
     Size: '0x170'
-    Type: struct
+    Type: struct RuntimeVectorCurve
   - Name: UseScaleCurve
     Offset: '0x2f0'
     Size: '0x1'
@@ -386,22 +386,22 @@ TransformBlendCurve:
   - Name: ScaleCurve
     Offset: '0x2f8'
     Size: '0x170'
-    Type: struct
+    Type: struct RuntimeVectorCurve
   - Name: SourceTransform
     Offset: '0x470'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: TargetTransform
     Offset: '0x4a0'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   ClassSize: '0x500'
 WeightedAnimationData:
   Attributes:
   - Name: Animation
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Weighting
     Offset: '0x10'
     Size: '0x4'
@@ -431,7 +431,7 @@ WeightedAnimationTimeout:
   - Name: TimeoutRange
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: Weighting
     Offset: '0x10'
     Size: '0x4'

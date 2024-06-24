@@ -13,19 +13,19 @@ DrawDebugItemBox:
   - Name: CentrePos
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Box
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Rotation
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: Colour
     Offset: '0x40'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   ClassSize: '0x50'
 DrawDebugItemCapsule:
   Attributes:
@@ -40,7 +40,7 @@ DrawDebugItemCapsule:
   - Name: CentrePos
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: HalfHeight
     Offset: '0x18'
     Size: '0x4'
@@ -52,11 +52,11 @@ DrawDebugItemCapsule:
   - Name: Rotation
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: Colour
     Offset: '0x30'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   ClassSize: '0x40'
 DrawDebugItemLine:
   Attributes:
@@ -71,15 +71,15 @@ DrawDebugItemLine:
   - Name: LineStart
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: LineEnd
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Colour
     Offset: '0x24'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   - Name: Thickness
     Offset: '0x28'
     Size: '0x4'
@@ -102,7 +102,7 @@ DrawDebugItemMessage:
   - Name: Colour
     Offset: '0x20'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   ClassSize: '0x28'
 DrawDebugItemSector:
   Attributes:
@@ -121,7 +121,7 @@ DrawDebugItemSector:
   - Name: Centre
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: SectorAngle
     Offset: '0x1c'
     Size: '0x4'
@@ -133,15 +133,15 @@ DrawDebugItemSector:
   - Name: Colour
     Offset: '0x24'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   - Name: ZeroAngleVector
     Offset: '0x28'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: RotationAxis
     Offset: '0x34'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: SubAngles
     Offset: '0x40'
     Size: '0x4'
@@ -164,7 +164,7 @@ DrawDebugItemSphere:
   - Name: CentrePos
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Radius
     Offset: '0x18'
     Size: '0x4'
@@ -172,7 +172,7 @@ DrawDebugItemSphere:
   - Name: Colour
     Offset: '0x1c'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   ClassSize: '0x20'
 DrawDebugItemString:
   Attributes:
@@ -191,18 +191,22 @@ DrawDebugItemString:
   - Name: Colour
     Offset: '0x20'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   - Name: StringPos
     Offset: '0x24'
     Size: '0xc'
-    Type: struct
-  ClassSize: '0x30'
+    Type: struct Vector
+  - Name: DrawShadow
+    Offset: '0x30'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x38'
 SphereData:
   Attributes:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Radius
     Offset: '0xc'
     Size: '0x4'
@@ -214,5 +218,5 @@ SphereData:
   - Name: Colour
     Offset: '0x14'
     Size: '0x4'
-    Type: struct
+    Type: struct Color
   ClassSize: '0x18'

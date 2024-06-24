@@ -1,53 +1,65 @@
 {
-  "BurrowHealVFXComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x118",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x50",
+  "BullRushAIAbilityParams": {
+    "Super": "MeleeChargeAIAbilityParams",
+    "FullSize": "0x100",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "VFXAsset",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
+        "Name": "StaticCollisionWarmup",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "ValidatorEQSystems",
+        "Type": "TArray<class EnvQuery*>",
+        "Size": "0x10",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "TimeBetweenCanExecuteChecks",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xf8"
+      }
+    ]
+  },
+  "AreaOfEffectHealAIAbilityParams": {
+    "Super": "AthenaAIAbilityParams",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ChanceToGoOnCooldownInsteadOfExecuting",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0xc8"
       },
       {
-        "Name": "VfxSocketName",
-        "Type": "struct FName",
+        "Name": "HealthPercentageThresholdToHeal",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "StatusEffectZone",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
       {
-        "Name": "VFXDuration",
+        "Name": "MinimumTimeSpentHealing",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xd8"
       },
       {
-        "Name": "SpawnedVFXSystem",
-        "Type": "class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "IsVFXActive",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xe8"
-      }
-    ]
-  },
-  "BullRushAIAbility": {
-    "Super": "MeleeChargeAIAbility",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "CachedWorld",
-        "Type": "class World*",
-        "Size": "0x8",
-        "Offset": "0x98"
+        "Name": "MaximumTimeSpentHealing",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xdc"
       }
     ]
   },
@@ -59,7 +71,7 @@
     "Attributes": [
       {
         "Name": "MinMaxNumberOfAttacksBeforeEnd",
-        "Type": "struct",
+        "Type": "struct WeightedProbabilityRange",
         "Size": "0x20",
         "Offset": "0xc8"
       }
@@ -79,20 +91,6 @@
       }
     ]
   },
-  "MeleeAIAbilityParams": {
-    "Super": "AthenaAIAbilityParams",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MeleeAttacks",
-        "Type": "TArray<struct MeleeAttackIdWeights>",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      }
-    ]
-  },
   "AreaOfEffectHealAIAbility": {
     "Super": "AthenaAIAbility",
     "FullSize": "0xa0",
@@ -104,6 +102,20 @@
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x88"
+      }
+    ]
+  },
+  "EelThrowAIAbility": {
+    "Super": "AthenaAIAbility",
+    "FullSize": "0x80",
+    "InheritedSize": "0x78",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CachedBlackboardComponent",
+        "Type": "class BlackboardComponent*",
+        "Size": "0x8",
+        "Offset": "0x78"
       }
     ]
   },
@@ -151,81 +163,69 @@
       }
     ]
   },
-  "EelThrowAIAbility": {
-    "Super": "AthenaAIAbility",
-    "FullSize": "0x80",
-    "InheritedSize": "0x78",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CachedBlackboardComponent",
-        "Type": "class BlackboardComponent*",
-        "Size": "0x8",
-        "Offset": "0x78"
-      }
-    ]
-  },
-  "AreaOfEffectHealAIAbilityParams": {
-    "Super": "AthenaAIAbilityParams",
-    "FullSize": "0xe0",
+  "BurrowHealVFXComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x118",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x18",
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "ChanceToGoOnCooldownInsteadOfExecuting",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "VFXAsset",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
         "Offset": "0xc8"
       },
       {
-        "Name": "HealthPercentageThresholdToHeal",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "StatusEffectZone",
-        "Type": "class UClass*",
+        "Name": "VfxSocketName",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0xd0"
       },
       {
-        "Name": "MinimumTimeSpentHealing",
+        "Name": "VFXDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xd8"
       },
       {
-        "Name": "MaximumTimeSpentHealing",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xdc"
-      }
-    ]
-  },
-  "BullRushAIAbilityParams": {
-    "Super": "MeleeChargeAIAbilityParams",
-    "FullSize": "0x100",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "StaticCollisionWarmup",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "SpawnedVFXSystem",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
         "Offset": "0xe0"
       },
       {
-        "Name": "ValidatorEQSystems",
-        "Type": "TArray<class EnvQuery*>",
-        "Size": "0x10",
+        "Name": "IsVFXActive",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0xe8"
-      },
+      }
+    ]
+  },
+  "MeleeAIAbilityParams": {
+    "Super": "AthenaAIAbilityParams",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
       {
-        "Name": "TimeBetweenCanExecuteChecks",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xf8"
+        "Name": "MeleeAttacks",
+        "Type": "TArray<struct MeleeAttackIdWeights>",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "BullRushAIAbility": {
+    "Super": "MeleeChargeAIAbility",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "CachedWorld",
+        "Type": "class World*",
+        "Size": "0x8",
+        "Offset": "0x98"
       }
     ]
   },

@@ -16,23 +16,6 @@
       }
     ]
   },
-  "AshenLordFireShroud": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "FireShroudOverlapZone",
-        "Type": "class StatusEffectOverlapZone*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Params",
-        "Type": "struct",
-        "Size": "0x18",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "AshenLordFireShroudParams": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -44,8 +27,25 @@
       },
       {
         "Name": "FireShroudCollisionVolume",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AshenLordFireShroud": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "FireShroudOverlapZone",
+        "Type": "class StatusEffectOverlapZone*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Params",
+        "Type": "struct AshenLordFireShroudParams",
+        "Size": "0x18",
         "Offset": "0x8"
       }
     ]

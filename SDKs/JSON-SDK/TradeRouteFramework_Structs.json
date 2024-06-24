@@ -10,7 +10,7 @@
       },
       {
         "Name": "StartIsland",
-        "Type": "struct",
+        "Type": "struct IslandSelectionType",
         "Size": "0x8",
         "Offset": "0x4"
       },
@@ -22,7 +22,7 @@
       },
       {
         "Name": "TradeRouteReference",
-        "Type": "struct",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x18"
       }

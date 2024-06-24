@@ -1,4 +1,44 @@
 {
+  "RepairableAuthoritiveRepairState": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "RepairableState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RepairingList",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "RepairObjectActionStateConstructionInfo": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "RepairableObject",
+        "Type": "struct NetSubObjectPtr",
+        "Size": "0x14",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "WieldedItem",
+        "Type": "struct NetActorPtr",
+        "Size": "0x14",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "InputID",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x58"
+      }
+    ]
+  },
   "ShipPartDamagePersistenceModel": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -16,52 +56,12 @@
       }
     ]
   },
-  "RepairableComponentMaxDamageLevelOverride": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "FeatureName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxDamageLevel",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "RepairObjectActionStateConstructionInfo": {
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "RepairableObject",
-        "Type": "struct",
-        "Size": "0x14",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "WieldedItem",
-        "Type": "struct",
-        "Size": "0x14",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "InputID",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x58"
-      }
-    ]
-  },
-  "DamageZoneRepairableStateChangedEvent": {
+  "RepairableComponentRepairableStateChangedEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "DamageZoneActor",
-        "Type": "class Actor*",
+        "Name": "RepairableComponent",
+        "Type": "class ActorComponent*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -84,7 +84,7 @@
       },
       {
         "Name": "Position",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x8"
       },
@@ -108,29 +108,29 @@
       }
     ]
   },
-  "RepairableAuthoritiveRepairState": {
-    "ClassSize": "0x18",
+  "RepairableComponentMaxDamageLevelOverride": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "RepairableState",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "FeatureName",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "RepairingList",
-        "Type": "TArray<uintptr_t>",
-        "Size": "0x10",
+        "Name": "MaxDamageLevel",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x8"
       }
     ]
   },
-  "RepairableComponentRepairableStateChangedEvent": {
+  "DamageZoneRepairableStateChangedEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "RepairableComponent",
-        "Type": "class ActorComponent*",
+        "Name": "DamageZoneActor",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },

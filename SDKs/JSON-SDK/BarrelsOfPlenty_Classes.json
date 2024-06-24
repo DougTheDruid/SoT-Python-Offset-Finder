@@ -1,30 +1,4 @@
 {
-  "BarrelsOfPlentyDebugSpawnLocation": {
-    "Super": "Actor",
-    "FullSize": "0x3e8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Objects",
-        "Type": "TArray<struct BarrelsOfPlentyDebugLocationEntry>",
-        "Size": "0x10",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "SpawnCentre",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3e4"
-      }
-    ]
-  },
   "BarrelsOfPlentySpawnProxy": {
     "Super": "Actor",
     "FullSize": "0x3f0",
@@ -53,9 +27,35 @@
     "Attributes": [
       {
         "Name": "LocatorVar",
-        "Type": "struct",
+        "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0x80"
+      }
+    ]
+  },
+  "BarrelsOfPlentyDebugSpawnLocation": {
+    "Super": "Actor",
+    "FullSize": "0x3e8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Objects",
+        "Type": "TArray<struct BarrelsOfPlentyDebugLocationEntry>",
+        "Size": "0x10",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "SpawnCentre",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3e4"
       }
     ]
   },

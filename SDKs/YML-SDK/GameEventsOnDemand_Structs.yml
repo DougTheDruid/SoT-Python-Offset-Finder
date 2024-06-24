@@ -5,7 +5,7 @@ AdvertiseGameEventOnDemandAvailabilityTelemetryEvent:
   - Name: GameEventAvailability
     Offset: '0x0'
     Size: '0x20'
-    Type: struct
+    Type: struct GameEventAvailabilityModel
   ClassSize: '0x20'
 GameEventAvailabilityTelemetryData:
   Attributes:
@@ -27,7 +27,7 @@ GameEventsOnDemandLoserTunnelCrewData:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: GameEventType
     Offset: '0x10'
     Size: '0x8'

@@ -6,11 +6,49 @@
 #include "WorldLocationPopUpFramework_Structs.h"
 
 
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
+class TaleAllowWorldLocationPopUpStepDesc: public TaleQuestStepDesc
+{
+public:
+	float                                                        MaxDistanceFromWorldLocationPopUp;                 // 0x80(0x4)
+	struct QuestVariableActor                                    NearbyActor;                                       // 0x88(0x30)
+};
+
+
 // Size 0x30 (Full Size[0x90] - InheritedSize[0x60]
 class TaleWorldLocationPopUpService: public TaleQuestService
 {
 public:
 	TArray<struct TaleWorldLocationPopUpServiceEntry>            SuppressedWorldLocationPopUpNearbyLocations;       // 0x60(0x10)
+};
+
+
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
+class TalePreventWorldLocationPopUpStepDesc: public TaleQuestStepDesc
+{
+public:
+	bool                                                         DisableEntireIsland;                               // 0x80(0x1)
+	float                                                        MaxDistanceFromWorldLocationPopUp;                 // 0x84(0x4)
+	struct QuestVariableVector                                   NearbyLocation;                                    // 0x88(0x30)
+};
+
+
+// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
+class WorldLocationPopUpDataAsset: public DataAsset
+{
+public:
+	struct FName                                                 Id;                                                // 0x28(0x8)
+	struct StringAssetReference                                  BannerIcon;                                        // 0x30(0x10)
+	struct FText                                                 DisplayText;                                       // 0x40(0x38)
+	class PopUpAudioDesc*                                        AudioOverride;                                     // 0x78(0x8)
+};
+
+
+// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
+class WorldLocationVisitorComponent: public ActorComponent
+{
+public:
+	float                                                        RevisitCooldown;                                   // 0xd0(0x4)
 };
 
 
@@ -23,44 +61,6 @@ public:
 	float                                                        LocationCooldown;                                  // 0x2f0(0x4)
 	bool                                                         AlwaysShowPopUp;                                   // 0x2f4(0x1)
 	TArray<struct Guid>                                          SuppressedCrews;                                   // 0x358(0x10)
-};
-
-
-// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
-class TaleAllowWorldLocationPopUpStepDesc: public TaleQuestStepDesc
-{
-public:
-	float                                                        MaxDistanceFromWorldLocationPopUp;                 // 0x80(0x4)
-	struct                                                       NearbyActor;                                       // 0x88(0x30)
-};
-
-
-// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
-class WorldLocationPopUpDataAsset: public DataAsset
-{
-public:
-	struct FName                                                 Id;                                                // 0x28(0x8)
-	struct                                                       BannerIcon;                                        // 0x30(0x10)
-	struct FText                                                 DisplayText;                                       // 0x40(0x38)
-	class PopUpAudioDesc*                                        AudioOverride;                                     // 0x78(0x8)
-};
-
-
-// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
-class TalePreventWorldLocationPopUpStepDesc: public TaleQuestStepDesc
-{
-public:
-	bool                                                         DisableEntireIsland;                               // 0x80(0x1)
-	float                                                        MaxDistanceFromWorldLocationPopUp;                 // 0x84(0x4)
-	struct                                                       NearbyLocation;                                    // 0x88(0x30)
-};
-
-
-// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
-class WorldLocationVisitorComponent: public ActorComponent
-{
-public:
-	float                                                        RevisitCooldown;                                   // 0xd0(0x4)
 };
 
 

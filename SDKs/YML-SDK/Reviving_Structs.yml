@@ -84,11 +84,11 @@ RevivePlayerActionStateConstructionInfo:
   - Name: CharacterReviving
     Offset: '0x30'
     Size: '0x14'
-    Type: struct
+    Type: struct NetActorPtr
   - Name: CharacterBeingRevived
     Offset: '0x44'
     Size: '0x14'
-    Type: struct
+    Type: struct NetSubObjectPtr
   - Name: InputID
     Offset: '0x58'
     Size: '0x8'
@@ -103,7 +103,7 @@ ReviveableActionStateConstructionInfo:
   - Name: DamageInstance
     Offset: '0x38'
     Size: '0x30'
-    Type: struct
+    Type: struct DamageInstance
   - Name: CharacterDeathType
     Offset: '0x68'
     Size: '0x1'
@@ -133,7 +133,7 @@ RevivingWindowStart:
   - Name: DamageInstance
     Offset: '0x0'
     Size: '0x30'
-    Type: struct
+    Type: struct DamageInstance
   - Name: CharacterDeathType
     Offset: '0x30'
     Size: '0x1'

@@ -1,4 +1,36 @@
 {
+  "CountMaterialDisplayComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ScalarParameterNameToOverride",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "CountType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "MaximumCountForDynamicMaterialParameterAlphaValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "OverridenMaterials",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      }
+    ]
+  },
   "CountHolderComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xe0",
@@ -13,6 +45,26 @@
       }
     ]
   },
+  "IsCountAmountMetStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CountAmount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "CountType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "CountType": {
     "Super": "Object",
     "FullSize": "0x30",
@@ -24,26 +76,6 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "IsCountAmountMetStatCondition": {
-    "Super": "StatCondition",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CountAmount",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "CountType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
       }
     ]
   },

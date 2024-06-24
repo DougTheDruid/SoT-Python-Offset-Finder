@@ -33,11 +33,11 @@ ActorFlammableComponent:
   - Name: FireStatus
     Offset: '0x120'
     Size: '0x18'
-    Type: struct
+    Type: struct Status
   - Name: BurnStatus
     Offset: '0x138'
     Size: '0x18'
-    Type: struct
+    Type: struct Status
   - Name: ShouldPropagateToShip
     Offset: '0x150'
     Size: '0x1'
@@ -55,7 +55,7 @@ CookerIgnitionComponent:
   - Name: CookerIgnitionParams
     Offset: '0xc8'
     Size: '0x78'
-    Type: struct
+    Type: struct CookerIgnitionParams
   ClassSize: '0x78'
   FullSize: '0x140'
   InheritedSize: '0xc8'
@@ -65,7 +65,7 @@ FireCellStateTimingParamsDataAsset:
   - Name: TimingParams
     Offset: '0x28'
     Size: '0x94'
-    Type: struct
+    Type: struct FireCellStateTimingParams
   ClassSize: '0x98'
   FullSize: '0xc0'
   InheritedSize: '0x28'
@@ -75,7 +75,7 @@ FireGridAudioManager:
   - Name: FireAudioParams
     Offset: '0x28'
     Size: '0x40'
-    Type: struct
+    Type: struct FireCellAudioParams
   - Name: OwningActor
     Offset: '0x68'
     Size: '0x8'
@@ -169,7 +169,7 @@ FireGridVFXParamsDataAsset:
   - Name: Params
     Offset: '0x28'
     Size: '0x40'
-    Type: struct
+    Type: struct FireGridVFXParams
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'
@@ -213,7 +213,7 @@ FlammableWieldableComponent:
   - Name: IgnitedStatus
     Offset: '0xe0'
     Size: '0x18'
-    Type: struct
+    Type: struct Status
   ClassSize: '0x18'
   FullSize: '0xf8'
   InheritedSize: '0xe0'
@@ -223,7 +223,7 @@ MastFlammableComponent:
   - Name: FireGridLocation
     Offset: '0x1f8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x28'
   FullSize: '0x218'
   InheritedSize: '0x1f0'
@@ -251,7 +251,7 @@ ShipFireDamageParamsDataAsset:
   - Name: FireDamageParams
     Offset: '0x28'
     Size: '0x18'
-    Type: struct
+    Type: struct ShipFireDamageParams
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -261,7 +261,7 @@ ShipFireLightParamsDataAsset:
   - Name: Params
     Offset: '0x28'
     Size: '0x14'
-    Type: struct
+    Type: struct ShipFireLightParams
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
@@ -283,11 +283,11 @@ ShipFirePropagationComponent:
   - Name: GridDimensions
     Offset: '0xf4'
     Size: '0xc'
-    Type: struct
+    Type: struct IntVector
   - Name: GridOffset
     Offset: '0x100'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Propagator
     Offset: '0x110'
     Size: '0x8'
@@ -303,7 +303,7 @@ ShipFirePropagationComponent:
   - Name: BurnStatus
     Offset: '0x140'
     Size: '0x18'
-    Type: struct
+    Type: struct Status
   - Name: VFXManager
     Offset: '0x158'
     Size: '0x8'
@@ -311,15 +311,15 @@ ShipFirePropagationComponent:
   - Name: VfxSpawnSettings
     Offset: '0x160'
     Size: '0x58'
-    Type: struct
+    Type: struct FireGridVfxSpawnSettings
   - Name: FireLightManager
     Offset: '0x1b8'
     Size: '0x150'
-    Type: struct
+    Type: struct ShipFireLightManager
   - Name: FireCharringManager
     Offset: '0x308'
     Size: '0xd8'
-    Type: struct
+    Type: struct FireGridCharringManager
   - Name: ReplicatedCellData
     Offset: '0x3e0'
     Size: '0x10'
@@ -327,7 +327,7 @@ ShipFirePropagationComponent:
   - Name: ReplicatedCellCharringData
     Offset: '0x3f0'
     Size: '0x18'
-    Type: struct
+    Type: struct ReplicatedFireCellCharringData
   - Name: FireAudioManager
     Offset: '0x408'
     Size: '0x8'
@@ -335,7 +335,7 @@ ShipFirePropagationComponent:
   - Name: FireAudioParams
     Offset: '0x410'
     Size: '0x40'
-    Type: struct
+    Type: struct FireCellAudioParams
   ClassSize: '0x3e0'
   FullSize: '0x4a8'
   InheritedSize: '0xc8'

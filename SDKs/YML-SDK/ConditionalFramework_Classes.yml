@@ -15,7 +15,7 @@ ConditionRootAsset:
   - Name: ConditionRoot
     Offset: '0x28'
     Size: '0x20'
-    Type: struct
+    Type: struct ConditionInstance
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'

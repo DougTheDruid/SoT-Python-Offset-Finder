@@ -1,32 +1,4 @@
 {
-  "ReviveGhostAnimationDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Animations",
-        "Type": "struct",
-        "Size": "0x28",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "ReviveGhostAnimationData": {
-    "Super": "AnimationData",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ReviveAnimationsDataAsset",
-        "Type": "class ReviveGhostAnimationDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "ReviveGhostAnimationInstance": {
     "Super": "AnimInstance",
     "FullSize": "0x490",
@@ -35,7 +7,7 @@
     "Attributes": [
       {
         "Name": "ReviveAnimations",
-        "Type": "struct",
+        "Type": "struct ReviveGhostAnimations",
         "Size": "0x28",
         "Offset": "0x448"
       },
@@ -56,6 +28,34 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x472"
+      }
+    ]
+  },
+  "ReviveGhostAnimationData": {
+    "Super": "AnimationData",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ReviveAnimationsDataAsset",
+        "Type": "class ReviveGhostAnimationDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ReviveGhostAnimationDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Animations",
+        "Type": "struct ReviveGhostAnimations",
+        "Size": "0x28",
+        "Offset": "0x28"
       }
     ]
   },

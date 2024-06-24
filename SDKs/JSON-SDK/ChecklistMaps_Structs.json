@@ -1,72 +1,4 @@
 {
-  "ChecklistMapItemData": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "Description",
-        "Type": "struct",
-        "Size": "0x48",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IsComplete",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "ChecklistCompletionEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ActionData",
-        "Type": "class ChecklistActionData*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ChecklistItemCompletedTelemetryEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "ChecklistMapId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ReceivedActionType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ActionDescryption",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "ChecklistBootyDeliveredEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Seller",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BuyingNPC",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "ChecklistItem": {
     "ClassSize": "0x50",
     "Attributes": [
@@ -90,18 +22,86 @@
       }
     ]
   },
+  "ChecklistCompletionEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ActionData",
+        "Type": "class ChecklistActionData*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ChecklistItemCompletedTelemetryEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ChecklistMapId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ReceivedActionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ActionDescryption",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "ChecklistMapItemData": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "Description",
+        "Type": "struct TreasureMapTextDesc",
+        "Size": "0x48",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IsComplete",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "ChecklistBootyDeliveredEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Seller",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BuyingNPC",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "ChecklistMapContents": {
     "ClassSize": "0xe8",
     "Attributes": [
       {
         "Name": "Title",
-        "Type": "struct",
+        "Type": "struct TreasureMapTextDesc",
         "Size": "0x48",
         "Offset": "0x0"
       },
       {
         "Name": "Description",
-        "Type": "struct",
+        "Type": "struct TreasureMapTextDesc",
         "Size": "0x48",
         "Offset": "0x48"
       },
@@ -113,7 +113,7 @@
       },
       {
         "Name": "Afternote",
-        "Type": "struct",
+        "Type": "struct TreasureMapTextDesc",
         "Size": "0x48",
         "Offset": "0xa0"
       }

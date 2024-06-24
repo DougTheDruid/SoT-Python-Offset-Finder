@@ -5,7 +5,7 @@ GameplayDebuggerSettings:
   - Name: CustomViewNames
     Offset: '0x28'
     Size: '0x50'
-    Type: struct
+    Type: struct GDTCustomViewNames
   - Name: OverHead
     Offset: '0x78'
     Size: '0x1'
@@ -159,7 +159,7 @@ GameplayDebuggingComponent:
   - Name: SensingComponentLocation
     Offset: '0x768'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: NextPathPointIndex
     Offset: '0x774'
     Size: '0x4'
@@ -209,63 +209,63 @@ GameplayDebuggingControllerComponent:
   - Name: ActivationKey
     Offset: '0x110'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   - Name: CategoryZeroBind
     Offset: '0x138'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   - Name: CategoryOneBind
     Offset: '0x160'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   - Name: CategoryTwoBind
     Offset: '0x188'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   - Name: CategoryThreeBind
     Offset: '0x1b0'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   - Name: CategoryFourBind
     Offset: '0x1d8'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   - Name: CategoryFiveBind
     Offset: '0x200'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   - Name: CategorySixBind
     Offset: '0x228'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   - Name: CategorySevenBind
     Offset: '0x250'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   - Name: CategoryEightBind
     Offset: '0x278'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   - Name: CategoryNineBind
     Offset: '0x2a0'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   - Name: CycleDetailsViewBind
     Offset: '0x2c8'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   - Name: DebugCameraBind
     Offset: '0x2f0'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   - Name: OnScreenDebugMessagesBind
     Offset: '0x318'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   - Name: GameHUDBind
     Offset: '0x340'
     Size: '0x28'
-    Type: struct
+    Type: struct InputChord
   ClassSize: '0x2a0'
   FullSize: '0x368'
   InheritedSize: '0xc8'

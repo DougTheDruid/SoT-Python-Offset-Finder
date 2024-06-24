@@ -61,7 +61,7 @@ SafeZoneComponent:
   - Name: RepelForceGradientCurve
     Offset: '0x640'
     Size: '0x80'
-    Type: struct
+    Type: struct RuntimeFloatCurve
   - Name: UseAngularImpulse
     Offset: '0x6c0'
     Size: '0x1'

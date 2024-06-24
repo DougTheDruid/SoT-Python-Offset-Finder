@@ -43,7 +43,7 @@ MovieScene3DConstraintSection:
   - Name: ConstraintId
     Offset: '0x98'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
   FullSize: '0xa8'
   InheritedSize: '0x98'
@@ -63,7 +63,7 @@ MovieScene3DPathSection:
   - Name: TimingCurve
     Offset: '0xa8'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: FrontAxisEnum
     Offset: '0x120'
     Size: '0x1'
@@ -93,15 +93,15 @@ MovieScene3DTransformSection:
   - Name: Translation
     Offset: '0xa0'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: Rotation
     Offset: '0x208'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: Scale
     Offset: '0x370'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   ClassSize: '0x440'
   FullSize: '0x4d8'
   InheritedSize: '0x98'
@@ -111,7 +111,7 @@ MovieSceneActorReferenceSection:
   - Name: ActorGuidIndexCurve
     Offset: '0xa0'
     Size: '0x70'
-    Type: struct
+    Type: struct IntegralCurve
   - Name: ActorGuidStrings
     Offset: '0x120'
     Size: '0x10'
@@ -145,11 +145,11 @@ MovieSceneAudioSection:
   - Name: SoundVolume
     Offset: '0xb0'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: PitchMultiplier
     Offset: '0x128'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: bSuppressSubtitles
     Offset: '0x1a0'
     Size: '0x1'
@@ -177,7 +177,7 @@ MovieSceneBoolSection:
   - Name: BoolCurve
     Offset: '0xa8'
     Size: '0x70'
-    Type: struct
+    Type: struct IntegralCurve
   ClassSize: '0x80'
   FullSize: '0x118'
   InheritedSize: '0x98'
@@ -187,7 +187,7 @@ MovieSceneByteSection:
   - Name: ByteCurve
     Offset: '0xa0'
     Size: '0x70'
-    Type: struct
+    Type: struct IntegralCurve
   ClassSize: '0x78'
   FullSize: '0x110'
   InheritedSize: '0x98'
@@ -207,7 +207,7 @@ MovieSceneCameraAnimSection:
   - Name: AnimData
     Offset: '0x98'
     Size: '0x20'
-    Type: struct
+    Type: struct MovieSceneCameraAnimSectionData
   - Name: CameraAnim
     Offset: '0xb8'
     Size: '0x8'
@@ -251,7 +251,7 @@ MovieSceneCameraCutSection:
   - Name: CameraGuid
     Offset: '0x98'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
   FullSize: '0xa8'
   InheritedSize: '0x98'
@@ -271,7 +271,7 @@ MovieSceneCameraShakeSection:
   - Name: ShakeData
     Offset: '0x98'
     Size: '0x20'
-    Type: struct
+    Type: struct MovieSceneCameraShakeSectionData
   - Name: ShakeClass
     Offset: '0xb8'
     Size: '0x8'
@@ -287,7 +287,7 @@ MovieSceneCameraShakeSection:
   - Name: UserDefinedPlaySpace
     Offset: '0xc8'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   ClassSize: '0x40'
   FullSize: '0xd8'
   InheritedSize: '0x98'
@@ -317,19 +317,19 @@ MovieSceneColorSection:
   - Name: RedCurve
     Offset: '0xa0'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: GreenCurve
     Offset: '0x118'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: BlueCurve
     Offset: '0x190'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: AlphaCurve
     Offset: '0x208'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   ClassSize: '0x1e8'
   FullSize: '0x280'
   InheritedSize: '0x98'
@@ -359,7 +359,7 @@ MovieSceneEnumSection:
   - Name: EnumCurve
     Offset: '0xa0'
     Size: '0x70'
-    Type: struct
+    Type: struct IntegralCurve
   ClassSize: '0x78'
   FullSize: '0x110'
   InheritedSize: '0x98'
@@ -379,11 +379,11 @@ MovieSceneEventSection:
   - Name: Events
     Offset: '0x98'
     Size: '0x68'
-    Type: struct
+    Type: struct NameCurve
   - Name: EventData
     Offset: '0x100'
     Size: '0x20'
-    Type: struct
+    Type: struct MovieSceneEventSectionData
   ClassSize: '0x110'
   FullSize: '0x1a8'
   InheritedSize: '0x98'
@@ -411,7 +411,7 @@ MovieSceneFadeSection:
   - Name: FadeColor
     Offset: '0x118'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: bFadeAudio
     Offset: '0x128'
     Size: '0x1'
@@ -425,7 +425,7 @@ MovieSceneFloatSection:
   - Name: FloatCurve
     Offset: '0xa0'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   ClassSize: '0x80'
   FullSize: '0x118'
   InheritedSize: '0x98'
@@ -435,7 +435,7 @@ MovieSceneIntegerSection:
   - Name: IntegerCurve
     Offset: '0xa0'
     Size: '0x70'
-    Type: struct
+    Type: struct IntegralCurve
   ClassSize: '0x78'
   FullSize: '0x110'
   InheritedSize: '0x98'
@@ -507,7 +507,7 @@ MovieSceneParticleSection:
   - Name: ParticleKeys
     Offset: '0x98'
     Size: '0x70'
-    Type: struct
+    Type: struct IntegralCurve
   ClassSize: '0x70'
   FullSize: '0x108'
   InheritedSize: '0x98'
@@ -545,7 +545,7 @@ MovieSceneSkeletalAnimationSection:
   - Name: Params
     Offset: '0x98'
     Size: '0x98'
-    Type: struct
+    Type: struct MovieSceneSkeletalAnimationParams
   - Name: AnimSequence
     Offset: '0x130'
     Size: '0x8'
@@ -601,7 +601,7 @@ MovieSceneSpawnTrack:
   - Name: ObjectGuid
     Offset: '0x98'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
   FullSize: '0xa8'
   InheritedSize: '0x88'
@@ -611,7 +611,7 @@ MovieSceneStringSection:
   - Name: StringCurve
     Offset: '0xa0'
     Size: '0x78'
-    Type: struct
+    Type: struct StringCurve
   ClassSize: '0x80'
   FullSize: '0x118'
   InheritedSize: '0x98'
@@ -621,7 +621,7 @@ MovieSceneSubSection:
   - Name: Parameters
     Offset: '0x98'
     Size: '0x10'
-    Type: struct
+    Type: struct MovieSceneSectionParameters
   - Name: StartOffset
     Offset: '0xa8'
     Size: '0x4'
@@ -649,7 +649,7 @@ MovieSceneSubSection:
   - Name: TargetPathToRecordTo
     Offset: '0xf0'
     Size: '0x10'
-    Type: struct
+    Type: struct DirectoryPath
   ClassSize: '0x68'
   FullSize: '0x100'
   InheritedSize: '0x98'
@@ -669,7 +669,7 @@ MovieSceneVectorSection:
   - Name: Curves
     Offset: '0xa0'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   - Name: ChannelsUsed
     Offset: '0x280'
     Size: '0x4'

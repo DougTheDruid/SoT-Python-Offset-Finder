@@ -1,22 +1,5 @@
 {
-  "GameTimeRange": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Start",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "End",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "ReplicatedTimespan": {
+  "ReplicatedDateTime": {
     "ClassSize": "0x8",
     "Attributes": [
       {
@@ -24,34 +7,6 @@
         "Type": "int64",
         "Size": "0x8",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "GameTime": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DateTimeRepresentation",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ReplicatedAuthoritativeTime": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "WorldTime",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SyncTime",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
@@ -90,7 +45,7 @@
       }
     ]
   },
-  "ReplicatedDateTime": {
+  "ReplicatedTimespan": {
     "ClassSize": "0x8",
     "Attributes": [
       {
@@ -98,6 +53,51 @@
         "Type": "int64",
         "Size": "0x8",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "GameTime": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DateTimeRepresentation",
+        "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GameTimeRange": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Start",
+        "Type": "struct GameTime",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "End",
+        "Type": "struct GameTime",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ReplicatedAuthoritativeTime": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "WorldTime",
+        "Type": "struct ReplicatedDateTime",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SyncTime",
+        "Type": "struct ReplicatedDateTime",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },

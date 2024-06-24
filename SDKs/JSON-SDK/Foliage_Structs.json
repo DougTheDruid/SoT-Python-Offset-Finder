@@ -4,19 +4,19 @@
     "Attributes": [
       {
         "Name": "Location",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },
       {
         "Name": "Rotation",
-        "Type": "struct",
+        "Type": "struct Quat",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "Normal",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x20"
       },

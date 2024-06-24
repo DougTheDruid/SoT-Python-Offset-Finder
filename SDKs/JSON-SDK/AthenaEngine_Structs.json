@@ -1,12 +1,51 @@
 {
-  "BoxedRpc": {
-    "ClassSize": "0x18",
+  "PlaySoundRpc": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Type",
+        "Name": "WwiseEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "PlayOnTarget",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "UserDefinedStructWithSerialisableValue": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "InternalStruct",
         "Type": "class ScriptStruct*",
         "Size": "0x8",
-        "Offset": "0x8"
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SerialisedRpc": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ContentsType",
+        "Type": "class ScriptStruct*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "ServicesStampId": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StampId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -18,6 +57,69 @@
         "Type": "class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "AdaptiveTriggerEffectMode_Feedback": {
+    "ClassSize": "0x3",
+    "Attributes": [
+      {
+        "Name": "Position",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Strength",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "UseTriggerEffectForThreshold",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2"
+      }
+    ]
+  },
+  "StringAssetClassPairFeatureOverride": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "FeatureName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AssetClass",
+        "Type": "assetclass",
+        "Size": "0x20",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventTriggerForceFeedback": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ForceFeedbackEffect",
+        "Type": "class ForceFeedbackEffect*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Looping",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Tag",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xc"
       }
     ]
   },
@@ -79,67 +181,11 @@
       }
     ]
   },
-  "StringAssetClassPairFeatureOverride": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "FeatureName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AssetClass",
-        "Type": "assetclass",
-        "Size": "0x20",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "InlineUserDefinedStructDetails": {
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "Struct",
-        "Type": "class ScriptStruct*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SerialisedRpc": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ContentsType",
-        "Type": "class ScriptStruct*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "EventCancelForceFeedback": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ForceFeedbackEffect",
-        "Type": "class ForceFeedbackEffect*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Tag",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "UserDefinedStructWithSerialisableValue": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "InternalStruct",
         "Type": "class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x0"
@@ -175,19 +221,19 @@
       }
     ]
   },
-  "ConfigurableStructureInstanceWrapper": {
-    "ClassSize": "0x20",
+  "BoxedRpc": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Value",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x0"
+        "Name": "Type",
+        "Type": "class ScriptStruct*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
-  "EventTriggerForceFeedback": {
-    "ClassSize": "0x18",
+  "EventCancelForceFeedback": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "ForceFeedbackEffect",
@@ -196,56 +242,10 @@
         "Offset": "0x0"
       },
       {
-        "Name": "Looping",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
         "Name": "Tag",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "PlaySoundRpc": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "WwiseEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "PlayOnTarget",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "AdaptiveTriggerEffectMode_Feedback": {
-    "ClassSize": "0x3",
-    "Attributes": [
-      {
-        "Name": "Position",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Strength",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "UseTriggerEffectForThreshold",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2"
+        "Offset": "0x8"
       }
     ]
   },
@@ -266,13 +266,13 @@
       }
     ]
   },
-  "ServicesStampId": {
-    "ClassSize": "0x10",
+  "ConfigurableStructureInstanceWrapper": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "StampId",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "Value",
+        "Type": "struct UserDefinedStructWithSerialisableValue",
+        "Size": "0x20",
         "Offset": "0x0"
       }
     ]

@@ -9,7 +9,7 @@ BarrelsOfPlentyDebugSpawnLocation:
   - Name: SpawnCentre
     Offset: '0x3d8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Radius
     Offset: '0x3e4'
     Size: '0x4'
@@ -37,7 +37,7 @@ SpawnBarrelsOfPlentyStepDesc:
   - Name: LocatorVar
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableVector
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'

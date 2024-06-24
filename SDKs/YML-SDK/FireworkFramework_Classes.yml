@@ -5,11 +5,11 @@ FireworkDataAsset:
   - Name: PercentageTimeUntilTrailDisappears
     Offset: '0x28'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: TimeUntilExplosion
     Offset: '0x58'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: IsFlare
     Offset: '0x88'
     Size: '0x1'
@@ -21,7 +21,7 @@ FireworkDataAsset:
   - Name: FireworkAmbientLightData
     Offset: '0x8c'
     Size: '0x14'
-    Type: struct
+    Type: struct FireworkAmbientLightData
   - Name: Explosions
     Offset: '0xa0'
     Size: '0x10'
@@ -29,15 +29,15 @@ FireworkDataAsset:
   - Name: NumExplosions
     Offset: '0xb0'
     Size: '0x20'
-    Type: struct
+    Type: struct WeightedProbabilityRange
   - Name: TimeBetweenExplosions
     Offset: '0xd0'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: ExplosionLocationOffset
     Offset: '0x100'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: FlashbangRadius
     Offset: '0x130'
     Size: '0x4'
@@ -63,7 +63,7 @@ FireworkExplosion:
   - Name: GeneratedFireworkData
     Offset: '0x3d0'
     Size: '0x58'
-    Type: struct
+    Type: struct GeneratedFireworkData
   - Name: RootSceneComponent
     Offset: '0x428'
     Size: '0x8'
@@ -79,7 +79,7 @@ FireworkExplosion:
   - Name: AudioEmitter
     Offset: '0x440'
     Size: '0x20'
-    Type: struct
+    Type: struct WwiseEmitter
   ClassSize: '0xd8'
   FullSize: '0x4a0'
   InheritedSize: '0x3c8'
@@ -115,7 +115,7 @@ FireworkItemInfo:
   - Name: FireworkDataAsset
     Offset: '0x538'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: GeneratedDataRNGSeed
     Offset: '0x548'
     Size: '0x4'
@@ -153,7 +153,7 @@ FireworkProjectile:
   - Name: GeneratedFireworkData
     Offset: '0x650'
     Size: '0x58'
-    Type: struct
+    Type: struct GeneratedFireworkData
   ClassSize: '0x108'
   FullSize: '0x718'
   InheritedSize: '0x610'
@@ -255,7 +255,7 @@ FireworksSettingsDataAsset:
   - Name: FuseMeshAssetReference
     Offset: '0x58'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'
@@ -303,7 +303,7 @@ ProjectileAnimationComponent:
   - Name: AnimationOffsetCurve
     Offset: '0xe0'
     Size: '0x170'
-    Type: struct
+    Type: struct RuntimeVectorCurve
   ClassSize: '0x1c8'
   FullSize: '0x290'
   InheritedSize: '0xc8'

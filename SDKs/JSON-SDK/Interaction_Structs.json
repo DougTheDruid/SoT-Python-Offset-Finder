@@ -1,33 +1,16 @@
 {
-  "EventOptimalInteractionObjectChanged": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "PreviousFocusObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NewFocusObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "IsNewInteractingPlayerCondition": {
     "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "PlayerPayloadSelector",
-        "Type": "struct",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
         "Size": "0x20",
         "Offset": "0x8"
       },
       {
         "Name": "InteractablePayloadSelector",
-        "Type": "struct",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
         "Size": "0x20",
         "Offset": "0x28"
       }
@@ -47,6 +30,23 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x1"
+      }
+    ]
+  },
+  "EventOptimalInteractionObjectChanged": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "PreviousFocusObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NewFocusObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },

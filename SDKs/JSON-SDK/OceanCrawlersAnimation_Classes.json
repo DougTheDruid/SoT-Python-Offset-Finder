@@ -1,18 +1,4 @@
 {
-  "OceanCrawlerAnimationData": {
-    "Super": "AnimationData",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "OceanCrawlerAnimationDataStructure",
-        "Type": "struct",
-        "Size": "0x90",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "OceanCrawlerAnimationServerData": {
     "Super": "AnimationServerData",
     "FullSize": "0x48",
@@ -45,6 +31,20 @@
       }
     ]
   },
+  "OceanCrawlerAnimationData": {
+    "Super": "AnimationData",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "OceanCrawlerAnimationDataStructure",
+        "Type": "struct OceanCrawlerAnimationDataStructure",
+        "Size": "0x90",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "OceanCrawlerAnimationInstance": {
     "Super": "AnimInstance",
     "FullSize": "0x720",
@@ -53,13 +53,13 @@
     "Attributes": [
       {
         "Name": "LoadedAnimations",
-        "Type": "struct",
+        "Type": "struct OceanCrawlerAnimationDataStructure",
         "Size": "0x90",
         "Offset": "0x458"
       },
       {
         "Name": "MovementData",
-        "Type": "struct",
+        "Type": "struct ActorVelocityData",
         "Size": "0x18",
         "Offset": "0x4e8"
       },
@@ -71,7 +71,7 @@
       },
       {
         "Name": "AttackAnims",
-        "Type": "struct",
+        "Type": "struct AthenaAnimationWeapon",
         "Size": "0xb8",
         "Offset": "0x508"
       },
@@ -101,13 +101,13 @@
       },
       {
         "Name": "MontagePlayer",
-        "Type": "struct",
+        "Type": "struct CustomAnimationMontageStateMachine",
         "Size": "0xd8",
         "Offset": "0x5d0"
       },
       {
         "Name": "HitReacts",
-        "Type": "struct",
+        "Type": "struct HitReactionAnimationState",
         "Size": "0x28",
         "Offset": "0x6a8"
       }

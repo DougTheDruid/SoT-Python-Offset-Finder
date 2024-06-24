@@ -105,11 +105,11 @@ CompetitiveVoyagesServiceParams:
   - Name: RespawnConfig
     Offset: '0x40'
     Size: '0x108'
-    Type: struct
+    Type: struct CompetitiveVoyagesRespawnConfig
   - Name: ShipSpeedCurseModifyingValues
     Offset: '0x148'
     Size: '0xc'
-    Type: struct
+    Type: struct ShipSpeedCurseModifyingValues
   - Name: OptOutDelay
     Offset: '0x154'
     Size: '0x4'
@@ -117,7 +117,7 @@ CompetitiveVoyagesServiceParams:
   - Name: SinkShipWithVoyageItemAchievementStat
     Offset: '0x158'
     Size: '0x4'
-    Type: struct
+    Type: struct PlayerStat
   ClassSize: '0x138'
   FullSize: '0x160'
   InheritedSize: '0x28'
@@ -127,7 +127,7 @@ SetCrewOptInNPCDataStepDesc:
   - Name: Actor
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
@@ -179,11 +179,11 @@ WaitForCompVoyageOptInStepDesc:
   - Name: NPCOnShipManager
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableGuid
   - Name: NPCActor
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   ClassSize: '0x60'
   FullSize: '0xe0'
   InheritedSize: '0x80'

@@ -1,84 +1,4 @@
 {
-  "FoliageInstancedStaticMeshComponent": {
-    "Super": "HierarchicalInstancedStaticMeshComponent",
-    "FullSize": "0x7d0",
-    "InheritedSize": "0x7b0",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "OnInstanceTakePointDamage",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x7a8"
-      },
-      {
-        "Name": "OnInstanceTakeRadialDamage",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x7b8"
-      }
-    ]
-  },
-  "ProceduralFoliageBlockingVolume": {
-    "Super": "Volume",
-    "FullSize": "0x408",
-    "InheritedSize": "0x400",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ProceduralFoliageVolume",
-        "Type": "class ProceduralFoliageVolume*",
-        "Size": "0x8",
-        "Offset": "0x400"
-      }
-    ]
-  },
-  "ProceduralFoliageVolume": {
-    "Super": "Volume",
-    "FullSize": "0x408",
-    "InheritedSize": "0x400",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ProceduralComponent",
-        "Type": "class ProceduralFoliageComponent*",
-        "Size": "0x8",
-        "Offset": "0x400"
-      }
-    ]
-  },
-  "ProceduralFoliageComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "FoliageSpawner",
-        "Type": "class ProceduralFoliageSpawner*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "TileOverlap",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "SpawningVolume",
-        "Type": "class Volume*",
-        "Size": "0x8",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "ProceduralGuid",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0xe0"
-      }
-    ]
-  },
   "ProceduralFoliageTile": {
     "Super": "Object",
     "FullSize": "0x150",
@@ -99,6 +19,26 @@
       }
     ]
   },
+  "FoliageInstancedStaticMeshComponent": {
+    "Super": "HierarchicalInstancedStaticMeshComponent",
+    "FullSize": "0x7d0",
+    "InheritedSize": "0x7b0",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "OnInstanceTakePointDamage",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x7a8"
+      },
+      {
+        "Name": "OnInstanceTakeRadialDamage",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x7b8"
+      }
+    ]
+  },
   "InteractiveFoliageActor": {
     "Super": "StaticMeshActor",
     "FullSize": "0x438",
@@ -113,25 +53,25 @@
       },
       {
         "Name": "TouchingActorEntryPosition",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x3e0"
       },
       {
         "Name": "FoliageVelocity",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x3ec"
       },
       {
         "Name": "FoliageForce",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x3f8"
       },
       {
         "Name": "FoliagePosition",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x404"
       },
@@ -191,6 +131,66 @@
       }
     ]
   },
+  "ProceduralFoliageVolume": {
+    "Super": "Volume",
+    "FullSize": "0x408",
+    "InheritedSize": "0x400",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ProceduralComponent",
+        "Type": "class ProceduralFoliageComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  },
+  "ProceduralFoliageComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "FoliageSpawner",
+        "Type": "class ProceduralFoliageSpawner*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "TileOverlap",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "SpawningVolume",
+        "Type": "class Volume*",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "ProceduralGuid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      }
+    ]
+  },
+  "ProceduralFoliageBlockingVolume": {
+    "Super": "Volume",
+    "FullSize": "0x408",
+    "InheritedSize": "0x400",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ProceduralFoliageVolume",
+        "Type": "class ProceduralFoliageVolume*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  },
   "ProceduralFoliageSpawner": {
     "Super": "Object",
     "FullSize": "0x68",
@@ -237,7 +237,7 @@
     "Attributes": [
       {
         "Name": "UpdateGuid",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -267,19 +267,19 @@
       },
       {
         "Name": "ScaleX",
-        "Type": "struct",
+        "Type": "struct FloatInterval",
         "Size": "0x8",
         "Offset": "0x48"
       },
       {
         "Name": "ScaleY",
-        "Type": "struct",
+        "Type": "struct FloatInterval",
         "Size": "0x8",
         "Offset": "0x50"
       },
       {
         "Name": "ScaleZ",
-        "Type": "struct",
+        "Type": "struct FloatInterval",
         "Size": "0x8",
         "Offset": "0x58"
       },
@@ -303,7 +303,7 @@
       },
       {
         "Name": "ZOffset",
-        "Type": "struct",
+        "Type": "struct FloatInterval",
         "Size": "0x8",
         "Offset": "0x6c"
       },
@@ -333,13 +333,13 @@
       },
       {
         "Name": "GroundSlopeAngle",
-        "Type": "struct",
+        "Type": "struct FloatInterval",
         "Size": "0x8",
         "Offset": "0x84"
       },
       {
         "Name": "Height",
-        "Type": "struct",
+        "Type": "struct FloatInterval",
         "Size": "0x8",
         "Offset": "0x8c"
       },
@@ -363,7 +363,7 @@
       },
       {
         "Name": "CollisionScale",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xb4"
       },
@@ -375,13 +375,13 @@
       },
       {
         "Name": "MeshBounds",
-        "Type": "struct",
+        "Type": "struct BoxSphereBounds",
         "Size": "0x1c",
         "Offset": "0xc4"
       },
       {
         "Name": "LowBoundOriginRadius",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xe0"
       },
@@ -393,7 +393,7 @@
       },
       {
         "Name": "CullDistance",
-        "Type": "struct",
+        "Type": "struct Int32Interval",
         "Size": "0x8",
         "Offset": "0xf0"
       },
@@ -465,7 +465,7 @@
       },
       {
         "Name": "BodyInstance",
-        "Type": "struct",
+        "Type": "struct BodyInstance",
         "Size": "0x180",
         "Offset": "0x108"
       },
@@ -573,13 +573,13 @@
       },
       {
         "Name": "ProceduralScale",
-        "Type": "struct",
+        "Type": "struct FloatInterval",
         "Size": "0x8",
         "Offset": "0x2d0"
       },
       {
         "Name": "ScaleCurve",
-        "Type": "struct",
+        "Type": "struct RuntimeFloatCurve",
         "Size": "0x80",
         "Offset": "0x2d8"
       },

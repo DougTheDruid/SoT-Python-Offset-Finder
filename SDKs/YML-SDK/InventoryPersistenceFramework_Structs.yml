@@ -12,11 +12,11 @@ InventoryPersistencePlayerData:
   - Name: PirateIdentity
     Offset: '0x0'
     Size: '0x78'
-    Type: struct
+    Type: struct PirateIdentity
   - Name: PirateCrewId
     Offset: '0x78'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: ItemCategorySnapshots
     Offset: '0x88'
     Size: '0x10'

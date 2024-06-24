@@ -13,7 +13,7 @@ SessionServiceLog:
   - Name: InstanceId
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: TimeSeconds
     Offset: '0x28'
     Size: '0x8'
@@ -36,7 +36,7 @@ SessionServicePong:
   - Name: InstanceId
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: InstanceName
     Offset: '0x30'
     Size: '0x10'
@@ -52,7 +52,7 @@ SessionServicePong:
   - Name: SessionId
     Offset: '0x58'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: SessionName
     Offset: '0x68'
     Size: '0x10'

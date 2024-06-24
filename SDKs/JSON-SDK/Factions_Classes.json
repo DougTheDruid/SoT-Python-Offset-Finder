@@ -1,117 +1,45 @@
 {
-  "FactionLootLevelRewardsAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+  "FactionFlipMeshComponent": {
+    "Super": "StaticMeshComponent",
+    "FullSize": "0x8a0",
+    "InheritedSize": "0x630",
+    "ClassSize": "0x270",
     "Attributes": [
       {
-        "Name": "LootLevelRewards",
-        "Type": "TArray<struct LootLevelReward>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "FactionParticleComponent": {
-    "Super": "ParticleSystemComponent",
-    "FullSize": "0xa60",
-    "InheritedSize": "0x8c0",
-    "ClassSize": "0x1a0",
-    "Attributes": [
-      {
-        "Name": "Faction",
-        "Type": "class UClass*",
+        "Name": "FlipCurve",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0xa38"
+        "Offset": "0x630"
       },
       {
-        "Name": "JoinedFaction",
+        "Name": "FlippedFaction",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0xa40"
+        "Offset": "0x638"
+      },
+      {
+        "Name": "FactionJoinedLerpDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x640"
       },
       {
         "Name": "OwningShipCrewId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
-        "Offset": "0xa48"
+        "Offset": "0x888"
       },
       {
         "Name": "OwningShipCrewStreak",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0xa58"
+        "Offset": "0x898"
       },
       {
-        "Name": "ServerMigrationEnded",
+        "Name": "ServerTargetFlipped",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xa5c"
-      }
-    ]
-  },
-  "FactionVoteConsumerBase": {
-    "Super": "VoteConsumerInlineBase",
-    "FullSize": "0xd0",
-    "InheritedSize": "0x30",
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "Validator",
-        "Type": "class FactionVoteValidatorBase*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "OwningActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "FactionBannerData",
-        "Type": "TArray<struct CinematicFactionEvent>",
-        "Size": "0x10",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "Votes",
-        "Type": "TArray<struct CrewMemberVotes>",
-        "Size": "0x10",
-        "Offset": "0xa8"
-      }
-    ]
-  },
-  "FactionOutpostVoteInteractionActor": {
-    "Super": "Actor",
-    "FullSize": "0x5f8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x230",
-    "Attributes": [
-      {
-        "Name": "FadeDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "FactionInactiveInfo",
-        "Type": "struct",
-        "Size": "0xa0",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "FactionActiveInfo",
-        "Type": "struct",
-        "Size": "0xa0",
-        "Offset": "0x480"
-      },
-      {
-        "Name": "FactionActiveInfoPtr",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x538"
+        "Offset": "0x89c"
       }
     ]
   },
@@ -126,238 +54,6 @@
         "Type": "TArray<struct StreakMesh>",
         "Size": "0x10",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "FactionVoteValidatorBase": {
-    "Super": "VoteValidatorInlineBase",
-    "FullSize": "0x108",
-    "InheritedSize": "0x30",
-    "ClassSize": "0xd8",
-    "Attributes": [
-      {
-        "Name": "TargetCompanies",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "EdgeOfWorldWarningWeightForFactionLock",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "Consumer",
-        "Type": "class FactionVoteConsumerBase*",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "CurrentCompany",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "FlipTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xf4"
-      },
-      {
-        "Name": "OwningActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x100"
-      }
-    ]
-  },
-  "ShipFactionCustomisation": {
-    "Super": "ActorComponent",
-    "FullSize": "0x150",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "StreakMaterialData",
-        "Type": "class StreakMaterialDataAsset*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "ShipStreakData",
-        "Type": "class FactionShipStreakDataAsset*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "CachedStaticMeshComponents",
-        "Type": "TArray<class ActorComponent*>",
-        "Size": "0x10",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "CachedDynamicMaterials",
-        "Type": "TArray<struct StreakDynamicMaterials>",
-        "Size": "0x10",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "FactionStreakData",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x140"
-      }
-    ]
-  },
-  "FactionInteractionVoteComponent": {
-    "Super": "InlineVotingInteractionComponent",
-    "FullSize": "0x168",
-    "InheritedSize": "0x160",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TurnHourglassInteractionHoldTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x160"
-      },
-      {
-        "Name": "WaitTimeSimilarityThresholdSeconds",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x164"
-      }
-    ]
-  },
-  "FactionServiceDebugRepActor": {
-    "Super": "Actor",
-    "FullSize": "0x3e8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "bDebugEnabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "FactionAlignedCrewData",
-        "Type": "TArray<struct CrewFactionEntryData>",
-        "Size": "0x10",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "FactionService",
-        "Type": "class FactionService*",
-        "Size": "0x8",
-        "Offset": "0x3e0"
-      }
-    ]
-  },
-  "IsInFactionStatCondition": {
-    "Super": "TargetedStatCondition",
-    "FullSize": "0x50",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "CheckOwnerFaction",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "RequiresOwnerMaxStreakLevel",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x31"
-      },
-      {
-        "Name": "RequiredOwnerFaction",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "CheckTargetFaction",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "RequiresTargetMaxStreakLevel",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x41"
-      },
-      {
-        "Name": "RequiredTargetFaction",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "IsWearingCursePrerequisite": {
-    "Super": "InteractionPrerequisiteBase",
-    "FullSize": "0x98",
-    "InheritedSize": "0x90",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "AnyCurse",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "SkeletonCurse",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x91"
-      },
-      {
-        "Name": "GhostCurse",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x92"
-      }
-    ]
-  },
-  "StreakMaterialDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "MaterialValues",
-        "Type": "TArray<struct StreakMaterialValue>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "StreakMaterials",
-        "Type": "TArray<struct StreakCompanyMaterials>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "FactionIntervoteService": {
-    "Super": "Actor",
-    "FullSize": "0x410",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "FactionVoteConsumers",
-        "Type": "TArray<class FactionVoteConsumerBase*>",
-        "Size": "0x10",
-        "Offset": "0x3d0"
       }
     ]
   },
@@ -417,85 +113,211 @@
       }
     ]
   },
-  "FactionVoteAudioComponent": {
-    "Super": "VoteAudioComponent",
-    "FullSize": "0x218",
-    "InheritedSize": "0xe8",
-    "ClassSize": "0x130",
+  "FactionLootLevelRewardsAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "FactionStart",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "Flip",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "Levelup",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "LevelupSwitchGroup",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "LevelupSwitchValues",
-        "Type": "TArray<struct Name>",
+        "Name": "LootLevelRewards",
+        "Type": "TArray<struct LootLevelReward>",
         "Size": "0x10",
-        "Offset": "0x108"
+        "Offset": "0x28"
       }
     ]
   },
-  "FactionFlipMeshComponent": {
-    "Super": "StaticMeshComponent",
-    "FullSize": "0x8a0",
-    "InheritedSize": "0x630",
-    "ClassSize": "0x270",
+  "FactionServiceDebugRepActor": {
+    "Super": "Actor",
+    "FullSize": "0x3e8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "FlipCurve",
-        "Type": "class CurveFloat*",
-        "Size": "0x8",
-        "Offset": "0x630"
+        "Name": "bDebugEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3c8"
       },
       {
-        "Name": "FlippedFaction",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x638"
+        "Name": "FactionAlignedCrewData",
+        "Type": "TArray<struct CrewFactionEntryData>",
+        "Size": "0x10",
+        "Offset": "0x3d0"
       },
       {
-        "Name": "FactionJoinedLerpDuration",
+        "Name": "FactionService",
+        "Type": "class FactionService*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      }
+    ]
+  },
+  "ShipSunkTrackingComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "CrewRange",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x640"
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "FactionParticleComponent": {
+    "Super": "ParticleSystemComponent",
+    "FullSize": "0xa60",
+    "InheritedSize": "0x8c0",
+    "ClassSize": "0x1a0",
+    "Attributes": [
+      {
+        "Name": "Faction",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xa38"
+      },
+      {
+        "Name": "JoinedFaction",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xa40"
       },
       {
         "Name": "OwningShipCrewId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
-        "Offset": "0x888"
+        "Offset": "0xa48"
       },
       {
         "Name": "OwningShipCrewStreak",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x898"
+        "Offset": "0xa58"
       },
       {
-        "Name": "ServerTargetFlipped",
+        "Name": "ServerMigrationEnded",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x89c"
+        "Offset": "0xa5c"
+      }
+    ]
+  },
+  "FactionIntervoteService": {
+    "Super": "Actor",
+    "FullSize": "0x410",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "FactionVoteConsumers",
+        "Type": "TArray<class FactionVoteConsumerBase*>",
+        "Size": "0x10",
+        "Offset": "0x3d0"
+      }
+    ]
+  },
+  "IsWearingCursePrerequisite": {
+    "Super": "InteractionPrerequisiteBase",
+    "FullSize": "0x98",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "AnyCurse",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "SkeletonCurse",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x91"
+      },
+      {
+        "Name": "GhostCurse",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x92"
+      }
+    ]
+  },
+  "FactionOutpostVoteInteractionActor": {
+    "Super": "Actor",
+    "FullSize": "0x5f8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x230",
+    "Attributes": [
+      {
+        "Name": "FadeDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "FactionInactiveInfo",
+        "Type": "struct FactionDisplayInfo",
+        "Size": "0xa0",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "FactionActiveInfo",
+        "Type": "struct FactionDisplayInfo",
+        "Size": "0xa0",
+        "Offset": "0x480"
+      },
+      {
+        "Name": "FactionActiveInfoPtr",
+        "Type": "struct FactionRequest",
+        "Size": "0x20",
+        "Offset": "0x538"
+      }
+    ]
+  },
+  "IsInFactionStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x50",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "CheckOwnerFaction",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "RequiresOwnerMaxStreakLevel",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x31"
+      },
+      {
+        "Name": "RequiredOwnerFaction",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "CheckTargetFaction",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "RequiresTargetMaxStreakLevel",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x41"
+      },
+      {
+        "Name": "RequiredTargetFaction",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x48"
       }
     ]
   },
@@ -633,17 +455,157 @@
       }
     ]
   },
-  "ShipSunkTrackingComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x30",
+  "FactionVoteConsumerBase": {
+    "Super": "VoteConsumerInlineBase",
+    "FullSize": "0xd0",
+    "InheritedSize": "0x30",
+    "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "CrewRange",
+        "Name": "Validator",
+        "Type": "class FactionVoteValidatorBase*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "OwningActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "FactionBannerData",
+        "Type": "TArray<struct CinematicFactionEvent>",
+        "Size": "0x10",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "Votes",
+        "Type": "TArray<struct CrewMemberVotes>",
+        "Size": "0x10",
+        "Offset": "0xa8"
+      }
+    ]
+  },
+  "StreakMaterialDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MaterialValues",
+        "Type": "TArray<struct StreakMaterialValue>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "StreakMaterials",
+        "Type": "TArray<struct StreakCompanyMaterials>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "FactionInteractionVoteComponent": {
+    "Super": "InlineVotingInteractionComponent",
+    "FullSize": "0x168",
+    "InheritedSize": "0x160",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TurnHourglassInteractionHoldTime",
         "Type": "float",
         "Size": "0x4",
+        "Offset": "0x160"
+      },
+      {
+        "Name": "WaitTimeSimilarityThresholdSeconds",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x164"
+      }
+    ]
+  },
+  "ShipFactionCustomisation": {
+    "Super": "ActorComponent",
+    "FullSize": "0x150",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "StreakMaterialData",
+        "Type": "class StreakMaterialDataAsset*",
+        "Size": "0x8",
         "Offset": "0xc8"
+      },
+      {
+        "Name": "ShipStreakData",
+        "Type": "class FactionShipStreakDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "CachedStaticMeshComponents",
+        "Type": "TArray<class ActorComponent*>",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "CachedDynamicMaterials",
+        "Type": "TArray<struct StreakDynamicMaterials>",
+        "Size": "0x10",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "FactionStreakData",
+        "Type": "struct FactionStreakData",
+        "Size": "0x10",
+        "Offset": "0x140"
+      }
+    ]
+  },
+  "FactionVoteValidatorBase": {
+    "Super": "VoteValidatorInlineBase",
+    "FullSize": "0x108",
+    "InheritedSize": "0x30",
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Name": "TargetCompanies",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "EdgeOfWorldWarningWeightForFactionLock",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "Consumer",
+        "Type": "class FactionVoteConsumerBase*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "CurrentCompany",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "FlipTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xf4"
+      },
+      {
+        "Name": "OwningActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x100"
       }
     ]
   },
@@ -694,6 +656,44 @@
         "Type": "TArray<struct FactionRequest>",
         "Size": "0x10",
         "Offset": "0x430"
+      }
+    ]
+  },
+  "FactionVoteAudioComponent": {
+    "Super": "VoteAudioComponent",
+    "FullSize": "0x218",
+    "InheritedSize": "0xe8",
+    "ClassSize": "0x130",
+    "Attributes": [
+      {
+        "Name": "FactionStart",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "Flip",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "Levelup",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "LevelupSwitchGroup",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "LevelupSwitchValues",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x108"
       }
     ]
   },

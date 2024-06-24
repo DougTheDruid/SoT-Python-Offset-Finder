@@ -32,13 +32,13 @@
     "Attributes": [
       {
         "Name": "PirateIdentity",
-        "Type": "struct",
+        "Type": "struct PirateIdentity",
         "Size": "0x78",
         "Offset": "0x0"
       },
       {
         "Name": "PirateCrewId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x78"
       },

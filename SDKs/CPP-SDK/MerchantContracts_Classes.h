@@ -6,19 +6,19 @@
 #include "MerchantContracts_Structs.h"
 
 
-// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
-class PlayerMerchantContractsComponent: public ActorComponent
-{
-public:
-	TArray<struct PlayerMerchantContract>                        Contracts;                                         // 0xd0(0x10)
-};
-
-
 // Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
 class MerchantContractsService: public Object
 {
 public:
 	TArray<struct MerchantContract>                              Contracts;                                         // 0x30(0x10)
+};
+
+
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
+class PlayerMerchantContractsComponent: public ActorComponent
+{
+public:
+	TArray<struct PlayerMerchantContract>                        Contracts;                                         // 0xd0(0x10)
 };
 
 

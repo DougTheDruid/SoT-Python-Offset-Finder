@@ -21,7 +21,7 @@ public:
 	class MaterialInstanceDynamic*                               DynamicCardSelectionMaterialInstance;              // 0x3d0(0x8)
 	class StaticMeshComponent*                                   MeshComponent;                                     // 0x3d8(0x8)
 	struct FName                                                 RandomCardParameterName;                           // 0x3e0(0x8)
-	struct                                                       RandomCardParameterRange;                          // 0x3e8(0x10)
+	struct Int32Range                                            RandomCardParameterRange;                          // 0x3e8(0x10)
 };
 
 
@@ -42,6 +42,14 @@ public:
 };
 
 
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class EmoteRandomFromListAsset: public DataAsset
+{
+public:
+	TArray<struct EmoteData>                                     EmoteDataList;                                     // 0x28(0x10)
+};
+
+
 // Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
 class EmotePropDiceData: public EmotePropData
 {
@@ -56,14 +64,6 @@ class EmoteIdListingAsset: public DataAsset
 {
 public:
 	TArray<struct Name>                                          EmoteIds;                                          // 0x28(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EmoteRandomFromListAsset: public DataAsset
-{
-public:
-	TArray<struct EmoteData>                                     EmoteDataList;                                     // 0x28(0x10)
 };
 
 

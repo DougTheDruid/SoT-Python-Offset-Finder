@@ -5,11 +5,11 @@ MediaPlayerOptions:
   - Name: Tracks
     Offset: '0x0'
     Size: '0x1c'
-    Type: struct
+    Type: struct MediaPlayerTrackOptions
   - Name: SeekTime
     Offset: '0x20'
     Size: '0x8'
-    Type: struct
+    Type: struct Timespan
   - Name: PlayOnOpen
     Offset: '0x28'
     Size: '0x1'

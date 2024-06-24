@@ -1,4 +1,24 @@
 {
+  "WindZoneComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x370",
+    "InheritedSize": "0x2e0",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "TurbulenceParams",
+        "Type": "struct WindTurbulenceParameters",
+        "Size": "0x70",
+        "Offset": "0x2e8"
+      },
+      {
+        "Name": "WindZoneParams",
+        "Type": "struct WindZoneParams",
+        "Size": "0x10",
+        "Offset": "0x358"
+      }
+    ]
+  },
   "TestWindInterface": {
     "Super": "Object",
     "FullSize": "0x68",
@@ -10,26 +30,6 @@
         "Type": "TArray<class Interface*>",
         "Size": "0x10",
         "Offset": "0x58"
-      }
-    ]
-  },
-  "WindZoneComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x370",
-    "InheritedSize": "0x2e0",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "TurbulenceParams",
-        "Type": "struct",
-        "Size": "0x70",
-        "Offset": "0x2e8"
-      },
-      {
-        "Name": "WindZoneParams",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x358"
       }
     ]
   },
@@ -79,7 +79,7 @@
     "Attributes": [
       {
         "Name": "WindParams",
-        "Type": "struct",
+        "Type": "struct WindServiceParams",
         "Size": "0x24",
         "Offset": "0x38"
       }

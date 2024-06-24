@@ -47,7 +47,7 @@ ShantyPuzzleComponent:
   - Name: ActiveTimeRange
     Offset: '0x308'
     Size: '0x10'
-    Type: struct
+    Type: struct GameTimeRange
   - Name: ShantyPuzzleInteractionZones
     Offset: '0x318'
     Size: '0x10'

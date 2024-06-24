@@ -9,7 +9,7 @@ TaleAllowWorldLocationPopUpStepDesc:
   - Name: NearbyActor
     Offset: '0x88'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   ClassSize: '0x38'
   FullSize: '0xb8'
   InheritedSize: '0x80'
@@ -27,7 +27,7 @@ TalePreventWorldLocationPopUpStepDesc:
   - Name: NearbyLocation
     Offset: '0x88'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableVector
   ClassSize: '0x38'
   FullSize: '0xb8'
   InheritedSize: '0x80'
@@ -77,7 +77,7 @@ WorldLocationPopUpDataAsset:
   - Name: BannerIcon
     Offset: '0x30'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: DisplayText
     Offset: '0x40'
     Size: '0x38'

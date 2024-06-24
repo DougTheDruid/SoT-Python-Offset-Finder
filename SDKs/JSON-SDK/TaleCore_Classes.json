@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "StructId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x88"
       }
@@ -21,7 +21,7 @@
     "Attributes": [
       {
         "Name": "CommandQueue",
-        "Type": "struct",
+        "Type": "struct ClientCommandQueue",
         "Size": "0x18",
         "Offset": "0x3c8"
       }

@@ -5,14 +5,14 @@ CrewFailedToJoinGameEventOnDemand:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 CrewJoinedGameEventOnDemand:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 GameEventAvailabilityData:
   Attributes:
@@ -53,7 +53,7 @@ GameEventOnDemandBaseTelemetryFragment:
   - Name: GameEventOnDemandId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
 GameEventOnDemandBaseTelemetryFragmentInput:
   Attributes:
@@ -64,7 +64,7 @@ GameEventOnDemandBaseTelemetryFragmentInput:
   - Name: GameEventOnDemandId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
 GameEventOnDemandCompletedTelemetryEvent:
   Attributes:
@@ -97,7 +97,7 @@ GameEventOnDemandCrewSentToSinkingTunnel:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 GameEventOnDemandDeactivated:
   Attributes:

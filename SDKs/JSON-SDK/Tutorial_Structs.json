@@ -28,20 +28,14 @@
       }
     ]
   },
-  "IntroductionToSOTIntroAnimatic": {
-    "ClassSize": "0x38",
+  "EventTutorialTypeDecided": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
-        "Size": "0x8",
+        "Name": "TutorialType",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
-      },
-      {
-        "Name": "IntroAnimationSettings",
-        "Type": "struct",
-        "Size": "0x2c",
-        "Offset": "0x8"
       }
     ]
   },
@@ -67,6 +61,23 @@
       }
     ]
   },
+  "IntroductionToSOTIntroAnimatic": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IntroAnimationSettings",
+        "Type": "struct FirstPersonAnimaticSettings",
+        "Size": "0x2c",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "ContextualTutorialPromptDesc": {
     "ClassSize": "0x38",
     "Attributes": [
@@ -84,7 +95,7 @@
       },
       {
         "Name": "Feature",
-        "Type": "struct",
+        "Type": "struct FeatureFlag",
         "Size": "0xc",
         "Offset": "0x28"
       },
@@ -93,17 +104,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x34"
-      }
-    ]
-  },
-  "EventTutorialTypeDecided": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "TutorialType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },

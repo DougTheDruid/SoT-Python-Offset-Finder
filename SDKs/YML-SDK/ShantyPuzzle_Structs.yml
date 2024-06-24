@@ -12,7 +12,7 @@ ShantyPuzzleInteractionZoneDefinition:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Radius
     Offset: '0xc'
     Size: '0x4'

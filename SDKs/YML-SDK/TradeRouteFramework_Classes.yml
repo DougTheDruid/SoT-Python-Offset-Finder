@@ -9,15 +9,15 @@ TaleQuestGetProjectionPointOnTradeRouteStepDesc:
   - Name: SourcePoint
     Offset: '0x88'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableVector
   - Name: TradeRouteData
     Offset: '0xb8'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableTradeRouteData
   - Name: ProjectedPoint
     Offset: '0xe8'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableVector
   ClassSize: '0x98'
   FullSize: '0x118'
   InheritedSize: '0x80'
@@ -37,7 +37,7 @@ TaleQuestSelectTradeRouteStepDesc:
   - Name: TradeRouteMappingFilter
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct TradeRouteMappingFilterQuestVariable
   - Name: NumSelectFromClosestIslands
     Offset: '0xb0'
     Size: '0x4'
@@ -45,19 +45,19 @@ TaleQuestSelectTradeRouteStepDesc:
   - Name: SelectionOriginPointVar
     Offset: '0xb8'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableVector
   - Name: TradeRouteDifficulty
     Offset: '0xe8'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableInt
   - Name: TradeRoute
     Offset: '0x118'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableTradeRouteData
   - Name: AllocatedTradeRouteHandleVar
     Offset: '0x148'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableTaleResourceHandle
   ClassSize: '0xf8'
   FullSize: '0x178'
   InheritedSize: '0x80'
@@ -67,15 +67,15 @@ TradeRouteData:
   - Name: StartIsland
     Offset: '0x28'
     Size: '0x8'
-    Type: struct
+    Type: struct IslandSelectionType
   - Name: EndIsland
     Offset: '0x30'
     Size: '0x8'
-    Type: struct
+    Type: struct IslandSelectionType
   - Name: RouteCompletionStat
     Offset: '0x38'
     Size: '0x4'
-    Type: struct
+    Type: struct PlayerStat
   - Name: MapOrientation
     Offset: '0x3c'
     Size: '0x1'
@@ -83,7 +83,7 @@ TradeRouteData:
   - Name: TradeRouteMapData
     Offset: '0x40'
     Size: '0x80'
-    Type: struct
+    Type: struct TradeRouteMapData
   ClassSize: '0x98'
   FullSize: '0xc0'
   InheritedSize: '0x28'

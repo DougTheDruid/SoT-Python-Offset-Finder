@@ -6,19 +6,19 @@
 #include "Cooking_Structs.h"
 
 
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class HasRequiredCookingStateStatCondition: public TargetedStatCondition
+// Size 0x1e0 (Full Size[0x5e0] - InheritedSize[0x400]
+class CookingPot: public InteractableBase
 {
 public:
-	char                                                         RequiredState;                                     // 0x30(0x1)
-};
-
-
-// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
-class PottableComponent: public ActorComponent
-{
-public:
-	bool                                                         CanBePutInPot;                                     // 0xd0(0x1)
+	class StaticMeshComponent*                                   MeshComponent;                                     // 0x408(0x8)
+	class ActionRulesInteractableComponent*                      InteractableComponent;                             // 0x410(0x8)
+	class CookerComponent*                                       CookerComponent;                                   // 0x418(0x8)
+	float                                                        HoldToInteractTime;                                // 0x420(0x4)
+	struct FText                                                 NotWieldingCookableItemTooltip;                    // 0x428(0x38)
+	struct FText                                                 WieldingCookableItemTooltip;                       // 0x460(0x38)
+	struct FText                                                 TakeItemTooltip;                                   // 0x498(0x38)
+	struct FText                                                 CannotTakeItemTooltip;                             // 0x4d0(0x38)
+	struct FText                                                 MixInItemTooltip;                                  // 0x508(0x38)
 };
 
 
@@ -27,7 +27,7 @@ class CookingComponentAudioParams: public DataAsset
 {
 public:
 	class WwiseObjectPoolWrapper*                                CookingPool;                                       // 0x28(0x8)
-	struct                                                       EmitterOffsetVector;                               // 0x30(0xc)
+	struct Vector                                                EmitterOffsetVector;                               // 0x30(0xc)
 	class WwiseEvent*                                            FoodPlaceInPot;                                    // 0x40(0x8)
 	class WwiseEvent*                                            CookingStart;                                      // 0x48(0x8)
 	class WwiseEvent*                                            CookingStop;                                       // 0x50(0x8)
@@ -40,6 +40,25 @@ public:
 	struct FName                                                 FoodTypeRareMeat;                                  // 0x88(0x8)
 	struct FName                                                 FoodCookedAmount;                                  // 0x90(0x8)
 	float                                                        MaxCookingRtpcAmount;                              // 0x98(0x4)
+};
+
+
+// Size 0x60 (Full Size[0x128] - InheritedSize[0xc8]
+class CookableComponent: public ActorComponent
+{
+public:
+	class UClass*                                                NextCookState;                                     // 0xe8(0x8)
+	float                                                        TimeToNextCookState;                               // 0xf0(0x4)
+	TArray<struct CookableComponentSmokeFeedbackTimingEntry>     SmokeFeedbackLevels;                               // 0xf8(0x10)
+	class CurveFloat*                                            VisibleCookedExtentOverTime;                       // 0x108(0x8)
+	float                                                        DefaultVisibleCookedExtent;                        // 0x110(0x4)
+	struct FName                                                 CookableTypeName;                                  // 0x114(0x8)
+	struct PlayerStat                                            CookedStat;                                        // 0x11c(0x4)
+	struct PlayerStat                                            ShipCookedStat;                                    // 0x120(0x4)
+	char                                                         CookingState;                                      // 0x124(0x1)
+	char                                                         InitialCookingState;                               // 0x125(0x1)
+	char                                                         RemovedCookingState;                               // 0x126(0x1)
+	bool                                                         IgnoreCookedFromRawStats;                          // 0x127(0x1)
 };
 
 
@@ -58,7 +77,7 @@ public:
 	class CookingComponentAudioParams*                           AudioParams;                                       // 0x118(0x8)
 	char                                                         VfxLocation;                                       // 0x120(0x1)
 	class ItemInfo*                                              CurrentlyCookingItem;                              // 0x128(0x8)
-	struct                                                       CookingState;                                      // 0x130(0x68)
+	struct CookingClientRepresentation                           CookingState;                                      // 0x130(0x68)
 	class ParticleSystemComponent*                               SmokeParticleComponent;                            // 0x198(0x8)
 	class MaterialInstanceDynamic*                               VisibleCookableMaterial;                           // 0x1a0(0x8)
 	bool                                                         TurnedOn;                                          // 0x1a8(0x1)
@@ -66,38 +85,19 @@ public:
 };
 
 
-// Size 0x60 (Full Size[0x128] - InheritedSize[0xc8]
-class CookableComponent: public ActorComponent
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+class PottableComponent: public ActorComponent
 {
 public:
-	class UClass*                                                NextCookState;                                     // 0xe8(0x8)
-	float                                                        TimeToNextCookState;                               // 0xf0(0x4)
-	TArray<struct CookableComponentSmokeFeedbackTimingEntry>     SmokeFeedbackLevels;                               // 0xf8(0x10)
-	class CurveFloat*                                            VisibleCookedExtentOverTime;                       // 0x108(0x8)
-	float                                                        DefaultVisibleCookedExtent;                        // 0x110(0x4)
-	struct FName                                                 CookableTypeName;                                  // 0x114(0x8)
-	struct                                                       CookedStat;                                        // 0x11c(0x4)
-	struct                                                       ShipCookedStat;                                    // 0x120(0x4)
-	char                                                         CookingState;                                      // 0x124(0x1)
-	char                                                         InitialCookingState;                               // 0x125(0x1)
-	char                                                         RemovedCookingState;                               // 0x126(0x1)
-	bool                                                         IgnoreCookedFromRawStats;                          // 0x127(0x1)
+	bool                                                         CanBePutInPot;                                     // 0xd0(0x1)
 };
 
 
-// Size 0x1e0 (Full Size[0x5e0] - InheritedSize[0x400]
-class CookingPot: public InteractableBase
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class HasRequiredCookingStateStatCondition: public TargetedStatCondition
 {
 public:
-	class StaticMeshComponent*                                   MeshComponent;                                     // 0x408(0x8)
-	class ActionRulesInteractableComponent*                      InteractableComponent;                             // 0x410(0x8)
-	class CookerComponent*                                       CookerComponent;                                   // 0x418(0x8)
-	float                                                        HoldToInteractTime;                                // 0x420(0x4)
-	struct FText                                                 NotWieldingCookableItemTooltip;                    // 0x428(0x38)
-	struct FText                                                 WieldingCookableItemTooltip;                       // 0x460(0x38)
-	struct FText                                                 TakeItemTooltip;                                   // 0x498(0x38)
-	struct FText                                                 CannotTakeItemTooltip;                             // 0x4d0(0x38)
-	struct FText                                                 MixInItemTooltip;                                  // 0x508(0x38)
+	char                                                         RequiredState;                                     // 0x30(0x1)
 };
 
 

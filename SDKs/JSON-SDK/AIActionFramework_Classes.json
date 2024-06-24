@@ -1,4 +1,30 @@
 {
+  "AIActionInstigatorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "CurrentRoles",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "InitialActivity",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "CurrentActivity",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      }
+    ]
+  },
   "AIActionSpotComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x120",
@@ -42,32 +68,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xd0"
-      }
-    ]
-  },
-  "AIActionInstigatorComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "CurrentRoles",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "InitialActivity",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "CurrentActivity",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xe8"
       }
     ]
   },

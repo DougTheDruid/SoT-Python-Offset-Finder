@@ -17,7 +17,7 @@ FactionFlipMeshComponent:
   - Name: OwningShipCrewId
     Offset: '0x888'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: OwningShipCrewStreak
     Offset: '0x898'
     Size: '0x4'
@@ -73,15 +73,15 @@ FactionOutpostVoteInteractionActor:
   - Name: FactionInactiveInfo
     Offset: '0x3e0'
     Size: '0xa0'
-    Type: struct
+    Type: struct FactionDisplayInfo
   - Name: FactionActiveInfo
     Offset: '0x480'
     Size: '0xa0'
-    Type: struct
+    Type: struct FactionDisplayInfo
   - Name: FactionActiveInfoPtr
     Offset: '0x538'
     Size: '0x20'
-    Type: struct
+    Type: struct FactionRequest
   ClassSize: '0x230'
   FullSize: '0x5f8'
   InheritedSize: '0x3c8'
@@ -99,7 +99,7 @@ FactionParticleComponent:
   - Name: OwningShipCrewId
     Offset: '0xa48'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: OwningShipCrewStreak
     Offset: '0xa58'
     Size: '0x4'
@@ -449,7 +449,7 @@ ShipFactionCustomisation:
   - Name: FactionStreakData
     Offset: '0x140'
     Size: '0x10'
-    Type: struct
+    Type: struct FactionStreakData
   ClassSize: '0x88'
   FullSize: '0x150'
   InheritedSize: '0xc8'

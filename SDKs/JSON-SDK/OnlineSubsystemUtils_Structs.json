@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "UniqueId",
-        "Type": "struct",
+        "Type": "struct UniqueNetIdRepl",
         "Size": "0x18",
         "Offset": "0x0"
       },
@@ -33,7 +33,7 @@
       },
       {
         "Name": "PartyLeader",
-        "Type": "struct",
+        "Type": "struct UniqueNetIdRepl",
         "Size": "0x18",
         "Offset": "0x8"
       },

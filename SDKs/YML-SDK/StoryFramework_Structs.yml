@@ -5,7 +5,7 @@ ActorLocationPair:
   - Name: SpawnLocation
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: ActorToSpawn
     Offset: '0x10'
     Size: '0x20'
@@ -23,7 +23,7 @@ InstancedLayerLocation:
   - Name: ActorWithInstancedLayerComponent
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: LayerToSpawn
     Offset: '0x10'
     Size: '0x8'
@@ -41,7 +41,7 @@ LightingZoneStoryRelatedSettings:
   - Name: Story
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct StoryFlag
   - Name: TargetPointOnCurve
     Offset: '0x8'
     Size: '0x4'
@@ -56,7 +56,7 @@ NamedPointsActorLocation:
   - Name: ActorWithNamedPointsComponent
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: GroupLocations
     Offset: '0x10'
     Size: '0x10'
@@ -104,7 +104,7 @@ StoryClaimableResourcesList:
   - Name: StoryFlag
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct StoryFlag
   - Name: AreResourcesClaimed
     Offset: '0x8'
     Size: '0x1'
@@ -189,7 +189,7 @@ StorySpawnedActorsComponentList:
   - Name: Story
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct StoryFlag
   - Name: GroupLocations
     Offset: '0x8'
     Size: '0x10'
@@ -219,7 +219,7 @@ StorySpawnedActorsList:
   - Name: Story
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct StoryFlag
   - Name: ActorLocations
     Offset: '0x8'
     Size: '0x10'

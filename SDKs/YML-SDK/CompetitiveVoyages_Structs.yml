@@ -9,7 +9,7 @@ CompetitiveVoyageEventItem:
   - Name: EventID
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x18'
 CompetitiveVoyageItemData:
   Attributes:
@@ -20,15 +20,15 @@ CompetitiveVoyageItemData:
   - Name: FirstHoldingCrewId
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: PreviousHoldingCrewId
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: CurrentHoldingCrewId
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: NumTimesSwappedHands
     Offset: '0x38'
     Size: '0x4'
@@ -39,26 +39,26 @@ CompetitiveVoyagesCrewShipRespawnTelemetryEvent:
   - Name: EventID
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: CrewId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: SinkLocation
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: SpawnLocation
     Offset: '0x2c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x38'
 CompetitiveVoyagesEventCompletedTelemetryEvent:
   Attributes:
   - Name: EventID
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: NumParticipatingCrews
     Offset: '0x10'
     Size: '0x4'
@@ -81,14 +81,14 @@ CompetitiveVoyagesEventCreatedTelemetryEvent:
   - Name: EventID
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 CompetitiveVoyagesItemUsageTelemetryEvent:
   Attributes:
   - Name: EventID
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: ClassName
     Offset: '0x10'
     Size: '0x8'
@@ -114,11 +114,11 @@ CompetitiveVoyagesRespawnConfig:
   - Name: ScuttleRespawnParams
     Offset: '0x0'
     Size: '0x50'
-    Type: struct
+    Type: struct CompetitiveVoyagesRespawnParams
   - Name: NormalRespawnParams
     Offset: '0x50'
     Size: '0x50'
-    Type: struct
+    Type: struct CompetitiveVoyagesRespawnParams
   - Name: GenerateRespawnVisualizationImages
     Offset: '0xa0'
     Size: '0x1'
@@ -130,15 +130,15 @@ CompetitiveVoyagesRespawnConfig:
   - Name: MapMin
     Offset: '0xa8'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: MapMax
     Offset: '0xb0'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: RespawnParamsToUse
     Offset: '0xb8'
     Size: '0x50'
-    Type: struct
+    Type: struct CompetitiveVoyagesRespawnParams
   ClassSize: '0x108'
 CompetitiveVoyagesRespawnPOIData:
   Attributes:
@@ -200,18 +200,18 @@ CompetitiveVoyagesRespawnParams:
   - Name: TreasureHuntPOIData
     Offset: '0x18'
     Size: '0x1c'
-    Type: struct
+    Type: struct CompetitiveVoyagesRespawnPOIData
   - Name: HandInPOIData
     Offset: '0x34'
     Size: '0x1c'
-    Type: struct
+    Type: struct CompetitiveVoyagesRespawnPOIData
   ClassSize: '0x50'
 MigratingEventTelemetryData:
   Attributes:
   - Name: EventID
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: NumMigratingCrews
     Offset: '0x10'
     Size: '0x4'
@@ -222,22 +222,22 @@ OnCompetitiveVoyageCrewOptInEvent:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 OnCompetitiveVoyageCrewRespawned:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: SinkLocation
     Offset: '0x10'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: SpawnLocation
     Offset: '0x1c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x28'
 OnCompetitiveVoyageItemAdded:
   Attributes:
@@ -248,7 +248,7 @@ OnCompetitiveVoyageItemAdded:
   - Name: CompetitiveVoyageEventId
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x18'
 OnCompetitiveVoyageItemRemoved:
   Attributes:
@@ -259,14 +259,14 @@ OnCompetitiveVoyageItemRemoved:
   - Name: CompetitiveVoyageEventId
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x18'
 OnCompetitiveVoyageOptOutVotePassed:
   Attributes:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 ShipSpeedCurseModifyingValues:
   Attributes:

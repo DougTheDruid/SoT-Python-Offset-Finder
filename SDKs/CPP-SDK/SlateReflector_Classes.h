@@ -7,9 +7,9 @@
 class WidgetReflectorNodeBase: public Object
 {
 public:
-	struct                                                       Geometry;                                          // 0x28(0x34)
+	struct Geometry                                              Geometry;                                          // 0x28(0x34)
 	TArray<class WidgetReflectorNodeBase*>                       ChildNodes;                                        // 0x60(0x10)
-	struct                                                       Tint;                                              // 0x70(0x10)
+	struct LinearColor                                           Tint;                                              // 0x70(0x10)
 };
 
 
@@ -23,8 +23,8 @@ public:
 	struct FString                                               CachedWidgetFile;                                  // 0x128(0x10)
 	int                                                          CachedWidgetLineNumber;                            // 0x138(0x4)
 	struct FName                                                 CachedWidgetAssetName;                             // 0x13c(0x8)
-	struct                                                       CachedWidgetDesiredSize;                           // 0x144(0x8)
-	struct                                                       CachedWidgetForegroundColor;                       // 0x150(0x30)
+	struct Vector2D                                              CachedWidgetDesiredSize;                           // 0x144(0x8)
+	struct SlateColor                                            CachedWidgetForegroundColor;                       // 0x150(0x30)
 	struct FString                                               CachedWidgetAddress;                               // 0x180(0x10)
 	bool                                                         CachedWidgetEnabled;                               // 0x190(0x1)
 };

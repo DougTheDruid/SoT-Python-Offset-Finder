@@ -33,7 +33,7 @@ NudgeFromStormPolicy:
   - Name: WeightedTimers
     Offset: '0xd0'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   ClassSize: '0x90'
   FullSize: '0x158'
   InheritedSize: '0xc8'

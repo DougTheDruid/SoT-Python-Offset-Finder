@@ -29,11 +29,11 @@ CookableComponent:
   - Name: CookedStat
     Offset: '0x11c'
     Size: '0x4'
-    Type: struct
+    Type: struct PlayerStat
   - Name: ShipCookedStat
     Offset: '0x120'
     Size: '0x4'
-    Type: struct
+    Type: struct PlayerStat
   - Name: CookingState
     Offset: '0x124'
     Size: '0x1'
@@ -103,7 +103,7 @@ CookerComponent:
   - Name: CookingState
     Offset: '0x130'
     Size: '0x68'
-    Type: struct
+    Type: struct CookingClientRepresentation
   - Name: SmokeParticleComponent
     Offset: '0x198'
     Size: '0x8'
@@ -133,7 +133,7 @@ CookingComponentAudioParams:
   - Name: EmitterOffsetVector
     Offset: '0x30'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: FoodPlaceInPot
     Offset: '0x40'
     Size: '0x8'

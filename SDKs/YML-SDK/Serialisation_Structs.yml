@@ -44,5 +44,5 @@ SerialisedTestStruct:
   - Name: NestedStruct
     Offset: '0x38'
     Size: '0x28'
-    Type: struct
+    Type: struct SerialisedNestedStruct
   ClassSize: '0x60'

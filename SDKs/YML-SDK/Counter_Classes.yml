@@ -10,6 +10,28 @@ CountHolderComponent:
   FullSize: '0xe0'
   InheritedSize: '0xc8'
   Super: ActorComponent
+CountMaterialDisplayComponent:
+  Attributes:
+  - Name: ScalarParameterNameToOverride
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: struct FName
+  - Name: CountType
+    Offset: '0xd0'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: MaximumCountForDynamicMaterialParameterAlphaValue
+    Offset: '0xd8'
+    Size: '0x4'
+    Type: float
+  - Name: OverridenMaterials
+    Offset: '0xe0'
+    Size: '0x10'
+    Type: TArray<class MaterialInstanceDynamic*>
+  ClassSize: '0x28'
+  FullSize: '0xf0'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
 CountType:
   Attributes:
   - Name: UniqueTextIdentifier
@@ -23,14 +45,14 @@ CountType:
 IsCountAmountMetStatCondition:
   Attributes:
   - Name: CountAmount
-    Offset: '0x28'
+    Offset: '0x30'
     Size: '0x4'
     Type: int
   - Name: CountType
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x8'
     Type: class UClass*
   ClassSize: '0x10'
-  FullSize: '0x38'
-  InheritedSize: '0x28'
-  Super: StatCondition
+  FullSize: '0x40'
+  InheritedSize: '0x30'
+  Super: TargetedStatCondition

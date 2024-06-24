@@ -1,4 +1,21 @@
 {
+  "PlayerPromptTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Message",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Key",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "PromptsCounterIncrementEvent": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -10,20 +27,14 @@
       }
     ]
   },
-  "PrioritisedPromptWithHandle": {
-    "ClassSize": "0x70",
+  "PrioritisedPromptHandle": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "PromptHandle",
-        "Type": "struct",
+        "Name": "Id",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
-      },
-      {
-        "Name": "Prompt",
-        "Type": "struct",
-        "Size": "0x60",
-        "Offset": "0x10"
       }
     ]
   },
@@ -68,6 +79,23 @@
       }
     ]
   },
+  "PrioritisedPromptWithHandle": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "PromptHandle",
+        "Type": "struct PrioritisedPromptHandle",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Prompt",
+        "Type": "struct PrioritisedPrompt",
+        "Size": "0x60",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "PromptEvaluation": {
     "ClassSize": "0x78",
     "Attributes": [
@@ -79,37 +107,9 @@
       },
       {
         "Name": "Prompt",
-        "Type": "struct",
+        "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "PlayerPromptTelemetryEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Message",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Key",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "PrioritisedPromptHandle": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Id",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },
@@ -118,7 +118,7 @@
     "Attributes": [
       {
         "Name": "Prompt",
-        "Type": "struct",
+        "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
         "Offset": "0x18"
       },

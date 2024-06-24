@@ -6,20 +6,20 @@
 #include "NetworkRegions_Structs.h"
 
 
-// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
-class NetworkRegionService: public Object
-{
-public:
-	TArray<class PlayerController*>                              PlayersThatNeedToBeTicked;                         // 0xb8(0x10)
-};
-
-
 // Size 0x40 (Full Size[0x408] - InheritedSize[0x3c8]
 class RegionAssetCacheActor: public Actor
 {
 public:
 	TArray<struct RegionAssetsList>                              RegionData;                                        // 0x3c8(0x10)
 	TArray<class Object*>                                        LoadedAssets;                                      // 0x3d8(0x10)
+};
+
+
+// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
+class NetworkRegionService: public Object
+{
+public:
+	TArray<class PlayerController*>                              PlayersThatNeedToBeTicked;                         // 0xb8(0x10)
 };
 
 

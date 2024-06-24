@@ -9,7 +9,7 @@ RenderToTextureSceneDetails:
   - Name: Resolution
     Offset: '0x30'
     Size: '0x8'
-    Type: struct
+    Type: struct IntPoint
   - Name: World
     Offset: '0x38'
     Size: '0x8'

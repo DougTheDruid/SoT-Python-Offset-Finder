@@ -213,7 +213,7 @@ TutorialStarter:
   - Name: IntroAnimationSettings
     Offset: '0x34'
     Size: '0x2c'
-    Type: struct
+    Type: struct FirstPersonAnimaticSettings
   ClassSize: '0x38'
   FullSize: '0x60'
   InheritedSize: '0x28'

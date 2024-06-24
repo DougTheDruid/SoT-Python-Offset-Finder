@@ -1,42 +1,4 @@
 {
-  "DevelopmentAuthenticationSettings": {
-    "Super": "Object",
-    "FullSize": "0x78",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "SandboxId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "TokenServiceUrl",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "ClientId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "ClientSecret",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "LivePrivileges",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x68"
-      }
-    ]
-  },
   "ServiceHttpSettings": {
     "Super": "Object",
     "FullSize": "0x70",
@@ -78,6 +40,44 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x60"
+      }
+    ]
+  },
+  "DevelopmentAuthenticationSettings": {
+    "Super": "Object",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "SandboxId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "TokenServiceUrl",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "ClientId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "ClientSecret",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "LivePrivileges",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x68"
       }
     ]
   },

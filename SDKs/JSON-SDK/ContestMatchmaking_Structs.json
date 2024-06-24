@@ -1,18 +1,58 @@
 {
+  "ServerQueueWaitTimeModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "QueueScopeId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AvgWaitTime",
+        "Type": "struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MaxWaitTime",
+        "Type": "struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "ClientMatchmakingResponseModel": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "EstimatedWaitTime",
-        "Type": "struct",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
         "Name": "RetryAfter",
-        "Type": "struct",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "GameSubEventTypeModel": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "EventName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxCount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
       }
     ]
   },
@@ -51,169 +91,24 @@
       }
     ]
   },
-  "ExistingServerCrewModel": {
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SessionType",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "AlignedFaction",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "PvPSkillLevel",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "TimeInMatchmaking",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "ForcedStamp",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "GuildId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "CrewMemberUserIds",
-        "Type": "TArray<struct UniqueNetIdRepl>",
-        "Size": "0x10",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "ServerRegionModel": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "Position",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "ServerQueueWaitTimesRequestModel": {
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "ServerId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ServerLocation",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "FeatureHash",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "PrivateServerId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ServerForcedPlatform",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "PlayModeTags",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "PlayModeState",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x58"
-      }
-    ]
-  },
-  "OptionalPlayModeModel": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "OptionalPlayModeMap",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GameSubEventTypeModel": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "EventName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxCount",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "ServerCrewModel": {
     "ClassSize": "0xd8",
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "UserId",
-        "Type": "struct",
+        "Type": "struct UniqueNetIdRepl",
         "Size": "0x18",
         "Offset": "0x10"
       },
       {
         "Name": "ServerId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x28"
       },
@@ -261,7 +156,7 @@
       },
       {
         "Name": "RivalCrewId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x7c"
       },
@@ -279,7 +174,7 @@
       },
       {
         "Name": "TimeWaitingForMatch",
-        "Type": "struct",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0xa0"
       },
@@ -291,7 +186,7 @@
       },
       {
         "Name": "GuildId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0xb8"
       },
@@ -300,6 +195,134 @@
         "Type": "TArray<struct UniqueNetIdRepl>",
         "Size": "0x10",
         "Offset": "0xc8"
+      }
+    ]
+  },
+  "ServerQueueWaitTimesRequestModel": {
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "ServerId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ServerLocation",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "FeatureHash",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "PrivateServerId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ServerForcedPlatform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "PlayModeTags",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "PlayModeState",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "ExistingServerCrewModel": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SessionType",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "AlignedFaction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "PvPSkillLevel",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "TimeInMatchmaking",
+        "Type": "struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "ForcedStamp",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "GuildId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "CrewMemberUserIds",
+        "Type": "TArray<struct UniqueNetIdRepl>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "ServerRegionModel": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "Position",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "OptionalPlayModeModel": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "OptionalPlayModeMap",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x0"
       }
     ]
   },
@@ -317,80 +340,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "ServerQueueWaitTimeModel": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "QueueScopeId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AvgWaitTime",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MaxWaitTime",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "ServerQueueWaitTimesResponseModel": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "QueueWaitTimes",
-        "Type": "TArray<struct ServerQueueWaitTimeModel>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ServerContendedModel": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Positions",
-        "Type": "TArray<struct Vector2D>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Regions",
-        "Type": "TArray<struct ServerRegionModel>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Resources",
-        "Type": "TArray<int>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "GameEventAvailabilityModel": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "MainEvents",
-        "Type": "TArray<struct GameMainEventTypeModel>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SubEvents",
-        "Type": "TArray<struct GameSubEventTypeModel>",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },
@@ -417,21 +366,155 @@
       },
       {
         "Name": "RetryAfter",
-        "Type": "struct",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x68"
       },
       {
         "Name": "MigrationThreshold",
-        "Type": "struct",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x70"
       },
       {
         "Name": "ExpireAfter",
-        "Type": "struct",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x78"
+      }
+    ]
+  },
+  "GameEventAvailabilityModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MainEvents",
+        "Type": "TArray<struct GameMainEventTypeModel>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SubEvents",
+        "Type": "TArray<struct GameSubEventTypeModel>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "ServerContendedModel": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Positions",
+        "Type": "TArray<struct Vector2D>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Regions",
+        "Type": "TArray<struct ServerRegionModel>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Resources",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "ContestMatchmakingServerRequestModel": {
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "ServerId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ServerAddress",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "VmId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "PrivateServerId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ServerLocation",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "ServerForcedPlatform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "FeatureHash",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "PlayModeTags",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "PlayModeStates",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "Crews",
+        "Type": "TArray<struct ServerCrewModel>",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "MatchmakingRequestReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "RequestCorrelationId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x9c"
+      },
+      {
+        "Name": "SaferSeasServerIdOverride",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0xac"
+      }
+    ]
+  },
+  "ServerQueueWaitTimesResponseModel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "QueueWaitTimes",
+        "Type": "TArray<struct ServerQueueWaitTimeModel>",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -440,7 +523,7 @@
     "Attributes": [
       {
         "Name": "ServerId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -458,7 +541,7 @@
       },
       {
         "Name": "SaferSeasServerId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x30"
       },
@@ -536,104 +619,21 @@
       },
       {
         "Name": "Uptime",
-        "Type": "struct",
+        "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0xc8"
       },
       {
         "Name": "Contended",
-        "Type": "struct",
+        "Type": "struct ServerContendedModel",
         "Size": "0x30",
         "Offset": "0xd0"
       },
       {
         "Name": "GameEvents",
-        "Type": "struct",
+        "Type": "struct GameEventAvailabilityModel",
         "Size": "0x20",
         "Offset": "0x100"
-      }
-    ]
-  },
-  "ContestMatchmakingServerRequestModel": {
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "ServerId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ServerAddress",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "VmId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "PrivateServerId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "ServerLocation",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "ServerForcedPlatform",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "FeatureHash",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "PlayModeTags",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "PlayModeStates",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "Crews",
-        "Type": "TArray<struct ServerCrewModel>",
-        "Size": "0x10",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "MatchmakingRequestReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "RequestCorrelationId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x9c"
-      },
-      {
-        "Name": "SaferSeasServerIdOverride",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0xac"
       }
     ]
   },

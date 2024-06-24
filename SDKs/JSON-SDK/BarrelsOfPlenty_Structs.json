@@ -4,7 +4,7 @@
     "Attributes": [
       {
         "Name": "WorldSpacePosition",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
       },

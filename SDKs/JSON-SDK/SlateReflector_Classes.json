@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "Geometry",
-        "Type": "struct",
+        "Type": "struct Geometry",
         "Size": "0x34",
         "Offset": "0x28"
       },
@@ -19,7 +19,7 @@
       },
       {
         "Name": "Tint",
-        "Type": "struct",
+        "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x70"
       }
@@ -69,13 +69,13 @@
       },
       {
         "Name": "CachedWidgetDesiredSize",
-        "Type": "struct",
+        "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x144"
       },
       {
         "Name": "CachedWidgetForegroundColor",
-        "Type": "struct",
+        "Type": "struct SlateColor",
         "Size": "0x30",
         "Offset": "0x150"
       },

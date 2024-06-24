@@ -5,7 +5,7 @@ AnimNode_BoneDrivenController:
   - Name: SourceBone
     Offset: '0x58'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: SourceComponent
     Offset: '0x64'
     Size: '0x1'
@@ -41,7 +41,7 @@ AnimNode_BoneDrivenController:
   - Name: TargetBone
     Offset: '0x88'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: TargetComponent
     Offset: '0x94'
     Size: '0x1'
@@ -92,11 +92,11 @@ AnimNode_CopyBone:
   - Name: SourceBone
     Offset: '0x58'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: TargetBone
     Offset: '0x64'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: bCopyTranslation
     Offset: '0x70'
     Size: '0x1'
@@ -126,7 +126,7 @@ AnimNode_Fabrik:
   - Name: EffectorTransform
     Offset: '0x60'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: EffectorTransformSpace
     Offset: '0x90'
     Size: '0x1'
@@ -134,7 +134,7 @@ AnimNode_Fabrik:
   - Name: EffectorTransformBone
     Offset: '0x94'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: EffectorRotationSource
     Offset: '0xa0'
     Size: '0x1'
@@ -142,11 +142,11 @@ AnimNode_Fabrik:
   - Name: TipBone
     Offset: '0xa4'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: RootBone
     Offset: '0xb0'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: Precision
     Offset: '0xbc'
     Size: '0x4'
@@ -165,19 +165,19 @@ AnimNode_HandIKRetargeting:
   - Name: RightHandFK
     Offset: '0x58'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: LeftHandFK
     Offset: '0x64'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: RightHandIK
     Offset: '0x70'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: LeftHandIK
     Offset: '0x7c'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: IKBonesToMove
     Offset: '0x88'
     Size: '0x10'
@@ -192,15 +192,15 @@ AnimNode_LookAt:
   - Name: BoneToModify
     Offset: '0x58'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: LookAtBone
     Offset: '0x64'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: LookAtLocation
     Offset: '0x70'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: LookAtAxis
     Offset: '0x7c'
     Size: '0x1'
@@ -239,19 +239,19 @@ AnimNode_ModifyBone:
   - Name: BoneToModify
     Offset: '0x58'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: Translation
     Offset: '0x64'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Rotation
     Offset: '0x70'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: Scale
     Offset: '0x7c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: TranslationMode
     Offset: '0x88'
     Size: '0x1'
@@ -282,7 +282,7 @@ AnimNode_ObserveBone:
   - Name: BoneToObserve
     Offset: '0x58'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: DisplaySpace
     Offset: '0x64'
     Size: '0x1'
@@ -294,26 +294,26 @@ AnimNode_ObserveBone:
   - Name: Translation
     Offset: '0x68'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Rotation
     Offset: '0x74'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: Scale
     Offset: '0x80'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x90'
 AnimNode_RotationMultiplier:
   Attributes:
   - Name: TargetBone
     Offset: '0x58'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: SourceBone
     Offset: '0x64'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: Multiplier
     Offset: '0x70'
     Size: '0x4'
@@ -332,7 +332,7 @@ AnimNode_SkeletalControlBase:
   - Name: ComponentPose
     Offset: '0x30'
     Size: '0x18'
-    Type: struct
+    Type: struct ComponentSpacePoseLink
   - Name: Alpha
     Offset: '0x48'
     Size: '0x4'
@@ -340,14 +340,14 @@ AnimNode_SkeletalControlBase:
   - Name: AlphaScaleBias
     Offset: '0x4c'
     Size: '0x8'
-    Type: struct
+    Type: struct InputScaleBias
   ClassSize: '0x58'
 AnimNode_SpringBone:
   Attributes:
   - Name: SpringBone
     Offset: '0x58'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: bLimitDisplacement
     Offset: '0x64'
     Size: '0x1'
@@ -402,7 +402,7 @@ AnimNode_Trail:
   - Name: TrailBone
     Offset: '0x58'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: ChainLength
     Offset: '0x64'
     Size: '0x4'
@@ -430,7 +430,7 @@ AnimNode_Trail:
   - Name: FakeVelocity
     Offset: '0x74'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: bActorSpaceFakeVel
     Offset: '0x80'
     Size: '0x1'
@@ -441,19 +441,19 @@ AnimNode_TwoBoneIK:
   - Name: IKBone
     Offset: '0x58'
     Size: '0xc'
-    Type: struct
+    Type: struct BoneReference
   - Name: EffectorLocation
     Offset: '0x64'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: JointTargetLocation
     Offset: '0x70'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: StretchLimits
     Offset: '0x7c'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: EffectorSpaceBoneName
     Offset: '0x84'
     Size: '0x8'

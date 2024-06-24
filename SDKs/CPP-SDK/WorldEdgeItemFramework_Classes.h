@@ -6,15 +6,6 @@
 #include "WorldEdgeItemFramework_Structs.h"
 
 
-// Size 0x258 (Full Size[0x620] - InheritedSize[0x3c8]
-class WorldEdgeItemService: public Actor
-{
-public:
-	class WorldEdgeItemServiceParams*                            WorldEdgeItemParameters;                           // 0x3d0(0x8)
-	struct                                                       SpawnItemEQSRequest;                               // 0x3d8(0x170)
-};
-
-
 // Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class WorldEdgeItemServiceParams: public DataAsset
 {
@@ -24,6 +15,15 @@ public:
 	float                                                        TimeToSinkFor;                                     // 0x34(0x4)
 	float                                                        AdditionalMoveDistance;                            // 0x38(0x4)
 	int                                                          MaxBatchItemsPerSlice;                             // 0x3c(0x4)
+};
+
+
+// Size 0x258 (Full Size[0x620] - InheritedSize[0x3c8]
+class WorldEdgeItemService: public Actor
+{
+public:
+	class WorldEdgeItemServiceParams*                            WorldEdgeItemParameters;                           // 0x3d0(0x8)
+	struct EnvQueryRequest                                       SpawnItemEQSRequest;                               // 0x3d8(0x170)
 };
 
 

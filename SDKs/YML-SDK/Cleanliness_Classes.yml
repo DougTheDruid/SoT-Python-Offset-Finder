@@ -9,7 +9,7 @@ CleanlinessComponent:
   - Name: CleanlinessInfo
     Offset: '0xe0'
     Size: '0xc'
-    Type: struct
+    Type: struct CleanlinessInfo
   - Name: DirtinessDecayRatePerSecond
     Offset: '0xec'
     Size: '0x4'

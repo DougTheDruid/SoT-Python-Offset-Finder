@@ -6,6 +6,15 @@
 #include "Foliage_Structs.h"
 
 
+// Size 0x128 (Full Size[0x150] - InheritedSize[0x28]
+class ProceduralFoliageTile: public Object
+{
+public:
+	class ProceduralFoliageSpawner*                              FoliageSpawner;                                    // 0x28(0x8)
+	TArray<struct ProceduralFoliageInstance>                     InstancesArray;                                    // 0xd0(0x10)
+};
+
+
 // Size 0x20 (Full Size[0x7d0] - InheritedSize[0x7b0]
 class FoliageInstancedStaticMeshComponent: public HierarchicalInstancedStaticMeshComponent
 {
@@ -15,11 +24,24 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x408] - InheritedSize[0x400]
-class ProceduralFoliageBlockingVolume: public Volume
+// Size 0x60 (Full Size[0x438] - InheritedSize[0x3d8]
+class InteractiveFoliageActor: public StaticMeshActor
 {
 public:
-	class ProceduralFoliageVolume*                               ProceduralFoliageVolume;                           // 0x400(0x8)
+	class CapsuleComponent*                                      CapsuleComponent;                                  // 0x3d8(0x8)
+	struct Vector                                                TouchingActorEntryPosition;                        // 0x3e0(0xc)
+	struct Vector                                                FoliageVelocity;                                   // 0x3ec(0xc)
+	struct Vector                                                FoliageForce;                                      // 0x3f8(0xc)
+	struct Vector                                                FoliagePosition;                                   // 0x404(0xc)
+	float                                                        FoliageDamageImpulseScale;                         // 0x410(0x4)
+	float                                                        FoliageTouchImpulseScale;                          // 0x414(0x4)
+	float                                                        FoliageStiffness;                                  // 0x418(0x4)
+	float                                                        FoliageStiffnessQuadratic;                         // 0x41c(0x4)
+	float                                                        FoliageDamping;                                    // 0x420(0x4)
+	float                                                        MaxDamageImpulse;                                  // 0x424(0x4)
+	float                                                        MaxTouchImpulse;                                   // 0x428(0x4)
+	float                                                        MaxForce;                                          // 0x42c(0x4)
+	float                                                        Mass;                                              // 0x430(0x4)
 };
 
 
@@ -38,37 +60,15 @@ public:
 	class ProceduralFoliageSpawner*                              FoliageSpawner;                                    // 0xc8(0x8)
 	float                                                        TileOverlap;                                       // 0xd0(0x4)
 	class Volume*                                                SpawningVolume;                                    // 0xd8(0x8)
-	struct                                                       ProceduralGuid;                                    // 0xe0(0x10)
+	struct Guid                                                  ProceduralGuid;                                    // 0xe0(0x10)
 };
 
 
-// Size 0x128 (Full Size[0x150] - InheritedSize[0x28]
-class ProceduralFoliageTile: public Object
+// Size 0x8 (Full Size[0x408] - InheritedSize[0x400]
+class ProceduralFoliageBlockingVolume: public Volume
 {
 public:
-	class ProceduralFoliageSpawner*                              FoliageSpawner;                                    // 0x28(0x8)
-	TArray<struct ProceduralFoliageInstance>                     InstancesArray;                                    // 0xd0(0x10)
-};
-
-
-// Size 0x60 (Full Size[0x438] - InheritedSize[0x3d8]
-class InteractiveFoliageActor: public StaticMeshActor
-{
-public:
-	class CapsuleComponent*                                      CapsuleComponent;                                  // 0x3d8(0x8)
-	struct                                                       TouchingActorEntryPosition;                        // 0x3e0(0xc)
-	struct                                                       FoliageVelocity;                                   // 0x3ec(0xc)
-	struct                                                       FoliageForce;                                      // 0x3f8(0xc)
-	struct                                                       FoliagePosition;                                   // 0x404(0xc)
-	float                                                        FoliageDamageImpulseScale;                         // 0x410(0x4)
-	float                                                        FoliageTouchImpulseScale;                          // 0x414(0x4)
-	float                                                        FoliageStiffness;                                  // 0x418(0x4)
-	float                                                        FoliageStiffnessQuadratic;                         // 0x41c(0x4)
-	float                                                        FoliageDamping;                                    // 0x420(0x4)
-	float                                                        MaxDamageImpulse;                                  // 0x424(0x4)
-	float                                                        MaxTouchImpulse;                                   // 0x428(0x4)
-	float                                                        MaxForce;                                          // 0x42c(0x4)
-	float                                                        Mass;                                              // 0x430(0x4)
+	class ProceduralFoliageVolume*                               ProceduralFoliageVolume;                           // 0x400(0x8)
 };
 
 
@@ -88,33 +88,33 @@ public:
 class FoliageType: public Object
 {
 public:
-	struct                                                       UpdateGuid;                                        // 0x28(0x10)
+	struct Guid                                                  UpdateGuid;                                        // 0x28(0x10)
 	float                                                        Density;                                           // 0x38(0x4)
 	float                                                        DensityAdjustmentFactor;                           // 0x3c(0x4)
 	float                                                        Radius;                                            // 0x40(0x4)
 	char                                                         Scaling;                                           // 0x44(0x1)
-	struct                                                       ScaleX;                                            // 0x48(0x8)
-	struct                                                       ScaleY;                                            // 0x50(0x8)
-	struct                                                       ScaleZ;                                            // 0x58(0x8)
+	struct FloatInterval                                         ScaleX;                                            // 0x48(0x8)
+	struct FloatInterval                                         ScaleY;                                            // 0x50(0x8)
+	struct FloatInterval                                         ScaleZ;                                            // 0x58(0x8)
 	char                                                         VertexColorMask;                                   // 0x60(0x1)
 	float                                                        VertexColorMaskThreshold;                          // 0x64(0x4)
 	bool                                                         VertexColorMaskInvert;                             // 0x68(0x1)
-	struct                                                       ZOffset;                                           // 0x6c(0x8)
+	struct FloatInterval                                         ZOffset;                                           // 0x6c(0x8)
 	bool                                                         AlignToNormal;                                     // 0x74(0x1)
 	float                                                        AlignMaxAngle;                                     // 0x78(0x4)
 	bool                                                         RandomYaw;                                         // 0x7c(0x1)
 	float                                                        RandomPitchAngle;                                  // 0x80(0x4)
-	struct                                                       GroundSlopeAngle;                                  // 0x84(0x8)
-	struct                                                       Height;                                            // 0x8c(0x8)
+	struct FloatInterval                                         GroundSlopeAngle;                                  // 0x84(0x8)
+	struct FloatInterval                                         Height;                                            // 0x8c(0x8)
 	TArray<struct Name>                                          LandscapeLayers;                                   // 0x98(0x10)
 	struct FName                                                 LandscapeLayer;                                    // 0xa8(0x8)
 	bool                                                         CollisionWithWorld;                                // 0xb0(0x1)
-	struct                                                       CollisionScale;                                    // 0xb4(0xc)
+	struct Vector                                                CollisionScale;                                    // 0xb4(0xc)
 	float                                                        MinimumLayerWeight;                                // 0xc0(0x4)
-	struct                                                       MeshBounds;                                        // 0xc4(0x1c)
-	struct                                                       LowBoundOriginRadius;                              // 0xe0(0xc)
+	struct BoxSphereBounds                                       MeshBounds;                                        // 0xc4(0x1c)
+	struct Vector                                                LowBoundOriginRadius;                              // 0xe0(0xc)
 	char                                                         Mobility;                                          // 0xec(0x1)
-	struct                                                       CullDistance;                                      // 0xf0(0x8)
+	struct Int32Interval                                         CullDistance;                                      // 0xf0(0x8)
 	bool                                                         bEnableStaticLighting;                             // 0xf8(0x1)
 	bool                                                         CastShadow;                                        // 0xf8(0x1)
 	bool                                                         bAffectDynamicIndirectLighting;                    // 0xf8(0x1)
@@ -126,7 +126,7 @@ public:
 	bool                                                         bOverrideLightMapRes;                              // 0xf9(0x1)
 	int                                                          OverriddenLightMapRes;                             // 0xfc(0x4)
 	bool                                                         bUseAsOccluder;                                    // 0x100(0x1)
-	struct                                                       BodyInstance;                                      // 0x108(0x180)
+	struct BodyInstance                                          BodyInstance;                                      // 0x108(0x180)
 	char                                                         CustomNavigableGeometry;                           // 0x288(0x1)
 	uint64                                                       HiddenEditorViews;                                 // 0x290(0x8)
 	bool                                                         IsSelected;                                        // 0x298(0x1)
@@ -144,8 +144,8 @@ public:
 	float                                                        MaxInitialAge;                                     // 0x2c4(0x4)
 	float                                                        MaxAge;                                            // 0x2c8(0x4)
 	float                                                        OverlapPriority;                                   // 0x2cc(0x4)
-	struct                                                       ProceduralScale;                                   // 0x2d0(0x8)
-	struct                                                       ScaleCurve;                                        // 0x2d8(0x80)
+	struct FloatInterval                                         ProceduralScale;                                   // 0x2d0(0x8)
+	struct RuntimeFloatCurve                                     ScaleCurve;                                        // 0x2d8(0x80)
 	int                                                          ChangeCount;                                       // 0x358(0x4)
 	bool                                                         ReapplyDensity;                                    // 0x35c(0x1)
 	bool                                                         ReapplyRadius;                                     // 0x35c(0x1)

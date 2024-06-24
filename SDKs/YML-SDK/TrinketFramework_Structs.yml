@@ -24,7 +24,7 @@ RemoveInteractingPlayerFromTrinketMountpointRpc:
   - Name: TrinketMountpointManager
     Offset: '0x18'
     Size: '0x14'
-    Type: struct
+    Type: struct NetSubObjectPtr
   - Name: MountpointIndex
     Offset: '0x2c'
     Size: '0x4'

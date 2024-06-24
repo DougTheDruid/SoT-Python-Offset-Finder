@@ -6,20 +6,20 @@
 #include "Wind_Structs.h"
 
 
+// Size 0x90 (Full Size[0x370] - InheritedSize[0x2e0]
+class WindZoneComponent: public SceneComponent
+{
+public:
+	struct WindTurbulenceParameters                              TurbulenceParams;                                  // 0x2e8(0x70)
+	struct WindZoneParams                                        WindZoneParams;                                    // 0x358(0x10)
+};
+
+
 // Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
 class TestWindInterface: public Object
 {
 public:
 	TArray<class Interface*>                                     WindZones;                                         // 0x58(0x10)
-};
-
-
-// Size 0x90 (Full Size[0x370] - InheritedSize[0x2e0]
-class WindZoneComponent: public SceneComponent
-{
-public:
-	struct                                                       TurbulenceParams;                                  // 0x2e8(0x70)
-	struct                                                       WindZoneParams;                                    // 0x358(0x10)
 };
 
 
@@ -39,7 +39,7 @@ public:
 class WindSettings: public DeveloperSettings
 {
 public:
-	struct                                                       WindParams;                                        // 0x38(0x24)
+	struct WindServiceParams                                     WindParams;                                        // 0x38(0x24)
 };
 
 

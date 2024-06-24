@@ -16,7 +16,7 @@
       },
       {
         "Name": "InstanceId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -51,7 +51,7 @@
       },
       {
         "Name": "InstanceId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x20"
       },
@@ -75,7 +75,7 @@
       },
       {
         "Name": "SessionId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x58"
       },

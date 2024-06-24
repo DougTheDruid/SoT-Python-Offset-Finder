@@ -1,196 +1,30 @@
 {
-  "OnCompetitiveVoyageCrewRespawned": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SinkLocation",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SpawnLocation",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x1c"
-      }
-    ]
-  },
   "CompetitiveVoyagesCrewShipRespawnTelemetryEvent": {
     "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "EventID",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
         "Name": "CrewId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
         "Name": "SinkLocation",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x20"
       },
       {
         "Name": "SpawnLocation",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x2c"
-      }
-    ]
-  },
-  "OnCompetitiveVoyageItemRemoved": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "RemovedItem",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CompetitiveVoyageEventId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "CompetitiveVoyagesRespawnConfig": {
-    "ClassSize": "0x108",
-    "Attributes": [
-      {
-        "Name": "ScuttleRespawnParams",
-        "Type": "struct",
-        "Size": "0x50",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NormalRespawnParams",
-        "Type": "struct",
-        "Size": "0x50",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "GenerateRespawnVisualizationImages",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "NumDebugGenerations",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0xa4"
-      },
-      {
-        "Name": "MapMin",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0xa8"
-      },
-      {
-        "Name": "MapMax",
-        "Type": "struct",
-        "Size": "0x8",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "RespawnParamsToUse",
-        "Type": "struct",
-        "Size": "0x50",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "OnCompetitiveVoyageCrewOptInEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CompetitiveVoyagesEventCreatedTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "EventID",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CompetitiveVoyageEventItem": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "VoyageItem",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "EventID",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "ShipSpeedCurseModifyingValues": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "SloopSpeedCurseModifier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BrigantineSpeedCurseModifier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "GalleonSpeedCurseModifier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "OnCompetitiveVoyageItemAdded": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "AddedItem",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CompetitiveVoyageEventId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x8"
       }
     ]
   },
@@ -199,7 +33,7 @@
     "Attributes": [
       {
         "Name": "EventID",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -217,102 +51,14 @@
       }
     ]
   },
-  "OnCompetitiveVoyageOptOutVotePassed": {
+  "CompetitiveVoyagesEventCreatedTelemetryEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "CrewId",
-        "Type": "struct",
+        "Name": "EventID",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "CompetitiveVoyageItemData": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "ItemInfo",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FirstHoldingCrewId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "PreviousHoldingCrewId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "CurrentHoldingCrewId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "NumTimesSwappedHands",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "CompetitiveVoyagesRespawnParams": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "ScorePenaltyForEachMeterAwayFromShipwreck",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MinRespawnLocDistanceFromSunkShip",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "MinScorePenaltyForEnemyShipProximity",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "MaxScorePenaltyForEnemyShipProximity",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "MinDistanceFromEnemyShipToApplyPenalty",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MaxDistanceFromEnemyShipToApplyPenalty",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "TreasureHuntPOIData",
-        "Type": "struct",
-        "Size": "0x1c",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "HandInPOIData",
-        "Type": "struct",
-        "Size": "0x1c",
-        "Offset": "0x34"
       }
     ]
   },
@@ -363,12 +109,57 @@
       }
     ]
   },
+  "OnCompetitiveVoyageOptOutVotePassed": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "OnCompetitiveVoyageItemRemoved": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "RemovedItem",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CompetitiveVoyageEventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "MigratingEventTelemetryData": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "EventID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumMigratingCrews",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "CompetitiveVoyagesEventCompletedTelemetryEvent": {
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "EventID",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -398,20 +189,129 @@
       }
     ]
   },
-  "MigratingEventTelemetryData": {
-    "ClassSize": "0x14",
+  "OnCompetitiveVoyageCrewOptInEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "EventID",
-        "Type": "struct",
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "OnCompetitiveVoyageItemAdded": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "AddedItem",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CompetitiveVoyageEventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "OnCompetitiveVoyageCrewRespawned": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "NumMigratingCrews",
+        "Name": "SinkLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SpawnLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "ShipSpeedCurseModifyingValues": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "SloopSpeedCurseModifier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BrigantineSpeedCurseModifier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "GalleonSpeedCurseModifier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CompetitiveVoyageItemData": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "ItemInfo",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FirstHoldingCrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "PreviousHoldingCrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "CurrentHoldingCrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "NumTimesSwappedHands",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x10"
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "CompetitiveVoyageEventItem": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "VoyageItem",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "EventID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -429,6 +329,106 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "CompetitiveVoyagesRespawnParams": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "ScorePenaltyForEachMeterAwayFromShipwreck",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MinRespawnLocDistanceFromSunkShip",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "MinScorePenaltyForEnemyShipProximity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MaxScorePenaltyForEnemyShipProximity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "MinDistanceFromEnemyShipToApplyPenalty",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MaxDistanceFromEnemyShipToApplyPenalty",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "TreasureHuntPOIData",
+        "Type": "struct CompetitiveVoyagesRespawnPOIData",
+        "Size": "0x1c",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "HandInPOIData",
+        "Type": "struct CompetitiveVoyagesRespawnPOIData",
+        "Size": "0x1c",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "CompetitiveVoyagesRespawnConfig": {
+    "ClassSize": "0x108",
+    "Attributes": [
+      {
+        "Name": "ScuttleRespawnParams",
+        "Type": "struct CompetitiveVoyagesRespawnParams",
+        "Size": "0x50",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NormalRespawnParams",
+        "Type": "struct CompetitiveVoyagesRespawnParams",
+        "Size": "0x50",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "GenerateRespawnVisualizationImages",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "NumDebugGenerations",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xa4"
+      },
+      {
+        "Name": "MapMin",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "MapMax",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "RespawnParamsToUse",
+        "Type": "struct CompetitiveVoyagesRespawnParams",
+        "Size": "0x50",
+        "Offset": "0xb8"
       }
     ]
   },

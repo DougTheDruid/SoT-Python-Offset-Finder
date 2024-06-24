@@ -161,14 +161,14 @@ ColorTextureSwitchSeedEntry:
   - Name: Color
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   ClassSize: '0x18'
 Config:
   Attributes:
   - Name: IPG
     Offset: '0x0'
     Size: '0x48'
-    Type: struct
+    Type: struct IPGData
   - Name: MaleBaseShape
     Offset: '0x48'
     Size: '0x8'
@@ -180,7 +180,7 @@ Config:
   - Name: BodyShapes
     Offset: '0x58'
     Size: '0x20'
-    Type: struct
+    Type: struct IPGBodyShapes
   ClassSize: '0x78'
 IPGBlendNode:
   Attributes:
@@ -397,11 +397,11 @@ IPGTestClass:
   - Name: ObjectTest
     Offset: '0x14'
     Size: '0xc'
-    Type: struct
+    Type: struct IPGTestSimpleType
   - Name: ObjectNoneTest
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct IPGTestSimpleType
   - Name: VectorTest
     Offset: '0x30'
     Size: '0x10'
@@ -465,7 +465,7 @@ MeshPatchEntry:
   - Name: Reference
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x18'
 Outfit:
   Attributes:
@@ -511,7 +511,7 @@ PirateDescription:
   - Name: BodyShapeCoordinate
     Offset: '0xc'
     Size: '0x8'
-    Type: struct
+    Type: struct RadialCoordinate
   - Name: BlendShapes
     Offset: '0x18'
     Size: '0x10'
@@ -583,7 +583,7 @@ TextureSwitchBodyShapeEntry:
   - Name: Texture
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x18'
 TextureSwitchEthnicityEntry:
   Attributes:
@@ -594,7 +594,7 @@ TextureSwitchEthnicityEntry:
   - Name: Texture
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x18'
 TextureSwitchGenderEntry:
   Attributes:
@@ -605,7 +605,7 @@ TextureSwitchGenderEntry:
   - Name: Texture
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x18'
 TextureSwitchItemEntry:
   Attributes:
@@ -616,7 +616,7 @@ TextureSwitchItemEntry:
   - Name: Texture
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x18'
 TextureSwitchParameters:
   Attributes:
@@ -662,7 +662,7 @@ TextureSwitchSeedEntry:
   - Name: Texture
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x18'
 WardrobeConfig:
   Attributes:

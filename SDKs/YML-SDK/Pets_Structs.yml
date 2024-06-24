@@ -37,7 +37,7 @@ EventPetFoodBase:
   - Name: FeedingInteractionId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 EventPetInfoAssigned:
   Attributes:
@@ -207,11 +207,11 @@ HangoutSpotPosition:
   - Name: Id
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct HangoutSpotId
   - Name: Transform
     Offset: '0x10'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: RotationMode
     Offset: '0x40'
     Size: '0x1'
@@ -235,7 +235,7 @@ HangoutSpotPosition:
   - Name: OverrideInteractionPointPosition
     Offset: '0x64'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: BlockPetEmoteReactions
     Offset: '0x70'
     Size: '0x1'
@@ -262,7 +262,7 @@ PetBaseTelemetryFragment:
   - Name: PetLocation
     Offset: '0x24'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x30'
 PetBaseTelemetryFragmentInput:
   Attributes:
@@ -302,7 +302,7 @@ PetCustomisation:
   - Name: PetPartId
     Offset: '0x20'
     Size: '0x8'
-    Type: struct
+    Type: struct AIPartId
   ClassSize: '0x28'
 PetDangerHearingThreat:
   Attributes:
@@ -359,7 +359,7 @@ PetDespawnActionStateParams:
   - Name: DespawnVFXColour
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: DespawnSFX
     Offset: '0x28'
     Size: '0x8'
@@ -386,7 +386,7 @@ PetFedTelemetryEvent:
   - Name: FeedingInteractionId
     Offset: '0x20'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x30'
 PetFeedingAnimationData:
   Attributes:
@@ -404,23 +404,23 @@ PetFeedingParams:
   - Name: EatingAnimData
     Offset: '0x0'
     Size: '0x8'
-    Type: struct
+    Type: struct PetFeedingAnimationData
   - Name: FedAnimData
     Offset: '0x8'
     Size: '0x8'
-    Type: struct
+    Type: struct PetFeedingAnimationData
   - Name: NotFedAnimData
     Offset: '0x10'
     Size: '0x8'
-    Type: struct
+    Type: struct PetFeedingAnimationData
   - Name: SickAnimData
     Offset: '0x18'
     Size: '0x8'
-    Type: struct
+    Type: struct PetFeedingAnimationData
   - Name: RefusalAnimData
     Offset: '0x20'
     Size: '0x8'
-    Type: struct
+    Type: struct PetFeedingAnimationData
   - Name: TimeToStartEating
     Offset: '0x28'
     Size: '0x4'
@@ -447,22 +447,22 @@ PetHangoutSpotParams:
   - Name: HangoutTime
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: AnimationSelector
     Offset: '0x18'
     Size: '0xa0'
-    Type: struct
+    Type: struct WeightedPetAnimationSelector
   ClassSize: '0xb8'
 PetListingTypeEntry:
   Attributes:
   - Name: PetPartsCategory
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: PetType
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct StringClassReference
   - Name: FeatureToggleName
     Offset: '0x20'
     Size: '0x8'
@@ -481,7 +481,7 @@ PetNotFedTelemetryEvent:
   - Name: FeedingInteractionId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
 PetPickedUpTelemetryEvent:
   Attributes:
@@ -506,7 +506,7 @@ PetReactedToFoodTelemetryEvent:
   - Name: FeedingInteractionId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: FeedingReaction
     Offset: '0x10'
     Size: '0x1'
@@ -521,7 +521,7 @@ PetRefusedFoodTelemetryEvent:
   - Name: FeedingInteractionId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
 PetRelationship:
   Attributes:
@@ -555,7 +555,7 @@ PetSpawnActionStateParams:
   - Name: SpawnVFXColour
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: SpawnSFX
     Offset: '0x28'
     Size: '0x8'
@@ -574,7 +574,7 @@ PetTurnToFaceData:
   - Name: EndRotation
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: RotationTime
     Offset: '0x10'
     Size: '0x4'
@@ -644,7 +644,7 @@ ReactStateMapping:
   - Name: PetStateSelector
     Offset: '0x10'
     Size: '0xa0'
-    Type: struct
+    Type: struct WeightedPetAnimationSelector
   - Name: AnimationChance
     Offset: '0xb0'
     Size: '0x4'
@@ -652,7 +652,7 @@ ReactStateMapping:
   - Name: AnimationDelay
     Offset: '0xb4'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: IgnoringStrategies
     Offset: '0xc8'
     Size: '0x10'

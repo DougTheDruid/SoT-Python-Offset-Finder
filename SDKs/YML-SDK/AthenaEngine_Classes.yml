@@ -29,7 +29,7 @@ BoxCollisionExtentAdjustOverTimeComponent:
   - Name: ServerSizeScale
     Offset: '0x120'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: BoxCollisionToAdjust
     Offset: '0x130'
     Size: '0x8'
@@ -38,16 +38,26 @@ BoxCollisionExtentAdjustOverTimeComponent:
   FullSize: '0x138'
   InheritedSize: '0x108'
   Super: PrimitiveCollisionExtentAdjustOverTimeComponent
+BoxedRpcDispatcherComponent:
+  Attributes:
+  - Name: AckPendingClientRPCs
+    Offset: '0xd0'
+    Size: '0x10'
+    Type: TArray<struct SerialisedRpc>
+  ClassSize: '0x18'
+  FullSize: '0xe0'
+  InheritedSize: '0xc8'
+  Super: ActorComponent
 DynamicColourPointLightComponent:
   Attributes:
   - Name: ActivationCurve
     Offset: '0x4a8'
     Size: '0x80'
-    Type: struct
+    Type: struct RuntimeFloatCurve
   - Name: DeactivationCurve
     Offset: '0x528'
     Size: '0x80'
-    Type: struct
+    Type: struct RuntimeFloatCurve
   ClassSize: '0x130'
   FullSize: '0x5e0'
   InheritedSize: '0x4b0'

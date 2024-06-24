@@ -1,4 +1,18 @@
 {
+  "AbandonedNoteWeightedTextDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Entries",
+        "Type": "TArray<struct AbandonedNoteWeightedTextEntry>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "OneShotRewardableObjectBase": {
     "Super": "InteractableObject",
     "FullSize": "0x4e8",
@@ -19,7 +33,7 @@
       },
       {
         "Name": "Reward",
-        "Type": "struct",
+        "Type": "struct RewardId",
         "Size": "0x8",
         "Offset": "0x478"
       },
@@ -49,20 +63,6 @@
       }
     ]
   },
-  "PopUpNotificationOnItemWieldedComponent": {
-    "Super": "OnItemWieldedComponent",
-    "FullSize": "0x168",
-    "InheritedSize": "0x148",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "PopUpDesc",
-        "Type": "class PopUpMessageDesc*",
-        "Size": "0x8",
-        "Offset": "0x148"
-      }
-    ]
-  },
   "AbandonedNoteWeightedTextSourceComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x1a8",
@@ -86,20 +86,6 @@
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x140"
-      }
-    ]
-  },
-  "AbandonedNoteWeightedTextDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Entries",
-        "Type": "TArray<struct AbandonedNoteWeightedTextEntry>",
-        "Size": "0x10",
-        "Offset": "0x28"
       }
     ]
   },
@@ -138,6 +124,20 @@
         "Type": "TArray<char>",
         "Size": "0x10",
         "Offset": "0x408"
+      }
+    ]
+  },
+  "PopUpNotificationOnItemWieldedComponent": {
+    "Super": "OnItemWieldedComponent",
+    "FullSize": "0x168",
+    "InheritedSize": "0x148",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "PopUpDesc",
+        "Type": "class PopUpMessageDesc*",
+        "Size": "0x8",
+        "Offset": "0x148"
       }
     ]
   },

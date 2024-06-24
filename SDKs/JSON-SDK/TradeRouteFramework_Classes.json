@@ -1,4 +1,36 @@
 {
+  "TaleQuestGetProjectionPointOnTradeRouteStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x118",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "ProjectionProportion",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "SourcePoint",
+        "Type": "struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "TradeRouteData",
+        "Type": "struct QuestVariableTradeRouteData",
+        "Size": "0x30",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "ProjectedPoint",
+        "Type": "struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0xe8"
+      }
+    ]
+  },
   "TaleQuestSelectTradeRouteStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0xb8",
@@ -13,6 +45,50 @@
       }
     ]
   },
+  "TaleQuestSelectTradeRouteStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x178",
+    "InheritedSize": "0x80",
+    "ClassSize": "0xf8",
+    "Attributes": [
+      {
+        "Name": "TradeRouteMappingFilter",
+        "Type": "struct TradeRouteMappingFilterQuestVariable",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "NumSelectFromClosestIslands",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "SelectionOriginPointVar",
+        "Type": "struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "TradeRouteDifficulty",
+        "Type": "struct QuestVariableInt",
+        "Size": "0x30",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "TradeRoute",
+        "Type": "struct QuestVariableTradeRouteData",
+        "Size": "0x30",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "AllocatedTradeRouteHandleVar",
+        "Type": "struct QuestVariableTaleResourceHandle",
+        "Size": "0x30",
+        "Offset": "0x148"
+      }
+    ]
+  },
   "TradeRouteData": {
     "Super": "DataAsset",
     "FullSize": "0xc0",
@@ -21,19 +97,19 @@
     "Attributes": [
       {
         "Name": "StartIsland",
-        "Type": "struct",
+        "Type": "struct IslandSelectionType",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
         "Name": "EndIsland",
-        "Type": "struct",
+        "Type": "struct IslandSelectionType",
         "Size": "0x8",
         "Offset": "0x30"
       },
       {
         "Name": "RouteCompletionStat",
-        "Type": "struct",
+        "Type": "struct PlayerStat",
         "Size": "0x4",
         "Offset": "0x38"
       },
@@ -45,7 +121,7 @@
       },
       {
         "Name": "TradeRouteMapData",
-        "Type": "struct",
+        "Type": "struct TradeRouteMapData",
         "Size": "0x80",
         "Offset": "0x40"
       }
@@ -76,82 +152,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "TaleQuestSelectTradeRouteStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x178",
-    "InheritedSize": "0x80",
-    "ClassSize": "0xf8",
-    "Attributes": [
-      {
-        "Name": "TradeRouteMappingFilter",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "NumSelectFromClosestIslands",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "SelectionOriginPointVar",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "TradeRouteDifficulty",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "TradeRoute",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x118"
-      },
-      {
-        "Name": "AllocatedTradeRouteHandleVar",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x148"
-      }
-    ]
-  },
-  "TaleQuestGetProjectionPointOnTradeRouteStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x118",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "ProjectionProportion",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "SourcePoint",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "TradeRouteData",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "ProjectedPoint",
-        "Type": "struct",
-        "Size": "0x30",
-        "Offset": "0xe8"
       }
     ]
   },

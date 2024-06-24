@@ -29,11 +29,11 @@ SnapshotWidgetReflectorNode:
   - Name: CachedWidgetDesiredSize
     Offset: '0x144'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: CachedWidgetForegroundColor
     Offset: '0x150'
     Size: '0x30'
-    Type: struct
+    Type: struct SlateColor
   - Name: CachedWidgetAddress
     Offset: '0x180'
     Size: '0x10'
@@ -51,7 +51,7 @@ WidgetReflectorNodeBase:
   - Name: Geometry
     Offset: '0x28'
     Size: '0x34'
-    Type: struct
+    Type: struct Geometry
   - Name: ChildNodes
     Offset: '0x60'
     Size: '0x10'
@@ -59,7 +59,7 @@ WidgetReflectorNodeBase:
   - Name: Tint
     Offset: '0x70'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   ClassSize: '0x58'
   FullSize: '0x80'
   InheritedSize: '0x28'

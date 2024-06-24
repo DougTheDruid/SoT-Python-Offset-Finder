@@ -59,15 +59,15 @@ Kraken:
   - Name: SightingEncounterParams
     Offset: '0x688'
     Size: '0xc'
-    Type: struct
+    Type: struct EncounterParams
   - Name: CloseEncounterParams
     Offset: '0x694'
     Size: '0xc'
-    Type: struct
+    Type: struct EncounterParams
   - Name: Params
     Offset: '0x6b0'
     Size: '0x160'
-    Type: struct
+    Type: struct KrakenParams
   - Name: NumTentaclesRemaining
     Offset: '0x810'
     Size: '0x4'
@@ -205,7 +205,7 @@ KrakenHead:
   - Name: RoarKnockbackInfo
     Offset: '0x450'
     Size: '0x50'
-    Type: struct
+    Type: struct KnockBackInfo
   - Name: HeadAnimInstance
     Offset: '0x4a0'
     Size: '0x8'
@@ -213,7 +213,7 @@ KrakenHead:
   - Name: EQSQuerierLocation
     Offset: '0x4a8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: KrakenHeadHealthParams
     Offset: '0x4b8'
     Size: '0x8'
@@ -221,7 +221,7 @@ KrakenHead:
   - Name: HeadStateRequest
     Offset: '0x4c0'
     Size: '0x18'
-    Type: struct
+    Type: struct HeadStateChangeRequest
   - Name: IsDamageEnabled
     Offset: '0x4d8'
     Size: '0x1'
@@ -311,7 +311,7 @@ KrakenIdleBehaviourParamsDataAsset:
   - Name: Params
     Offset: '0x28'
     Size: '0xc0'
-    Type: struct
+    Type: struct KrakenIdleBehaviourParams
   ClassSize: '0xc0'
   FullSize: '0xe8'
   InheritedSize: '0x28'
@@ -321,7 +321,7 @@ KrakenParamsDataAsset:
   - Name: Params
     Offset: '0x28'
     Size: '0x160'
-    Type: struct
+    Type: struct KrakenParams
   ClassSize: '0x160'
   FullSize: '0x188'
   InheritedSize: '0x28'
@@ -331,7 +331,7 @@ KrakenPlayerGrabbingBehaviourParamsDataAsset:
   - Name: Params
     Offset: '0x28'
     Size: '0xe8'
-    Type: struct
+    Type: struct KrakenPlayerGrabbingBehaviourParams
   ClassSize: '0xe8'
   FullSize: '0x110'
   InheritedSize: '0x28'
@@ -341,7 +341,7 @@ KrakenService:
   - Name: KrakenServiceParams
     Offset: '0x3d0'
     Size: '0x40'
-    Type: struct
+    Type: struct KrakenServiceParams
   - Name: Kraken
     Offset: '0x4b0'
     Size: '0x8'
@@ -355,7 +355,7 @@ KrakenServiceParamsDataAsset:
   - Name: Params
     Offset: '0x28'
     Size: '0x40'
-    Type: struct
+    Type: struct KrakenServiceParams
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'
@@ -365,7 +365,7 @@ KrakenShipHittingBehaviourParamsDataAsset:
   - Name: Params
     Offset: '0x28'
     Size: '0x60'
-    Type: struct
+    Type: struct KrakenShipHittingBehaviourParams
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
@@ -375,7 +375,7 @@ KrakenShipWrappingBehaviourParamsDataAsset:
   - Name: Params
     Offset: '0x30'
     Size: '0x420'
-    Type: struct
+    Type: struct KrakenShipWrappingBehaviourParams
   ClassSize: '0x428'
   FullSize: '0x450'
   InheritedSize: '0x28'
@@ -389,7 +389,7 @@ KrakenShipWrappingKnockbackRegionComponent:
   - Name: KnockbackDirection
     Offset: '0x2e8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: KnockbackTime
     Offset: '0x2f4'
     Size: '0x4'
@@ -397,7 +397,7 @@ KrakenShipWrappingKnockbackRegionComponent:
   - Name: KnockbackParams
     Offset: '0x2f8'
     Size: '0x50'
-    Type: struct
+    Type: struct KnockBackInfo
   ClassSize: '0xa0'
   FullSize: '0x380'
   InheritedSize: '0x2e0'
@@ -447,11 +447,11 @@ KrakenShipWrappingTentacle:
   - Name: HighDetailTentacleMeshAsset
     Offset: '0x560'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: Params
     Offset: '0x570'
     Size: '0xf0'
-    Type: struct
+    Type: struct KrakenShipWrappingTentacleParams
   - Name: TentacleDynamicMaterialInstance
     Offset: '0x660'
     Size: '0x8'
@@ -463,11 +463,11 @@ KrakenShipWrappingTentacle:
   - Name: CurrentServerAnimationState
     Offset: '0x670'
     Size: '0x10'
-    Type: struct
+    Type: struct KrakenShipWrappingTentacleAnimationState
   - Name: PendingServerAnimationState
     Offset: '0x680'
     Size: '0x10'
-    Type: struct
+    Type: struct KrakenShipWrappingTentacleAnimationState
   ClassSize: '0x1f0'
   FullSize: '0x700'
   InheritedSize: '0x510'

@@ -6,24 +6,44 @@
 #include "AIGoals_Structs.h"
 
 
+// Size 0x38 (Full Size[0x78] - InheritedSize[0x40]
+class WhileActionSpotAvailableForPatrolAIGoal: public AIGoal
+{
+public:
+	float                                                        MinTimeToChangePatrolSpot;                         // 0x40(0x4)
+	float                                                        MaxTimeToChangePatrolSpot;                         // 0x44(0x4)
+	interface                                                    TargetActionSpotInterface;                         // 0x48(0x10)
+};
+
+
+// Size 0x38 (Full Size[0x78] - InheritedSize[0x40]
+class WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal: public AIGoal
+{
+public:
+	float                                                        InnerRadius;                                       // 0x40(0x4)
+	float                                                        OuterRadius;                                       // 0x44(0x4)
+	struct AIGoalMovementModeFilter                              MovementModeFilter;                                // 0x48(0x20)
+	bool                                                         ShouldOnlyActivateWhileDocked;                     // 0x68(0x1)
+	class Pawn*                                                  TargetPlayerPawn;                                  // 0x70(0x8)
+};
+
+
 // Size 0xb0 (Full Size[0xf0] - InheritedSize[0x40]
 class WhilePlayerWithinAreaAIGoal: public AIGoal
 {
 public:
 	float                                                        EnterAreaTriggerDistance;                          // 0x40(0x4)
 	float                                                        ExitAreaTriggerDistance;                           // 0x44(0x4)
-	struct                                                       MovementModeFilter;                                // 0x48(0x20)
+	struct AIGoalMovementModeFilter                              MovementModeFilter;                                // 0x48(0x20)
 	class Pawn*                                                  TargetPlayerPawn;                                  // 0x68(0x8)
 };
 
 
-// Size 0xa0 (Full Size[0x110] - InheritedSize[0x70]
-class BTService_SetBestActionSpotNearTarget: public BTService
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+class AIHomeComponent: public ActorComponent
 {
 public:
-	struct                                                       TargetKey;                                         // 0x70(0x28)
-	struct                                                       BestActionSpotKey;                                 // 0x98(0x28)
-	struct                                                       BestActionSpotSelectionCriteria;                   // 0xc0(0x34)
+	class Actor*                                                 HomeActor;                                         // 0xd0(0x8)
 };
 
 
@@ -35,33 +55,13 @@ public:
 };
 
 
-// Size 0x38 (Full Size[0x78] - InheritedSize[0x40]
-class WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal: public AIGoal
+// Size 0xa0 (Full Size[0x110] - InheritedSize[0x70]
+class BTService_SetBestActionSpotNearTarget: public BTService
 {
 public:
-	float                                                        InnerRadius;                                       // 0x40(0x4)
-	float                                                        OuterRadius;                                       // 0x44(0x4)
-	struct                                                       MovementModeFilter;                                // 0x48(0x20)
-	bool                                                         ShouldOnlyActivateWhileDocked;                     // 0x68(0x1)
-	class Pawn*                                                  TargetPlayerPawn;                                  // 0x70(0x8)
-};
-
-
-// Size 0x38 (Full Size[0x78] - InheritedSize[0x40]
-class WhileActionSpotAvailableForPatrolAIGoal: public AIGoal
-{
-public:
-	float                                                        MinTimeToChangePatrolSpot;                         // 0x40(0x4)
-	float                                                        MaxTimeToChangePatrolSpot;                         // 0x44(0x4)
-	interface                                                    TargetActionSpotInterface;                         // 0x48(0x10)
-};
-
-
-// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
-class AIHomeComponent: public ActorComponent
-{
-public:
-	class Actor*                                                 HomeActor;                                         // 0xd0(0x8)
+	struct BlackboardKeySelector                                 TargetKey;                                         // 0x70(0x28)
+	struct BlackboardKeySelector                                 BestActionSpotKey;                                 // 0x98(0x28)
+	struct BestActionSpotSelectionCriteria                       BestActionSpotSelectionCriteria;                   // 0xc0(0x34)
 };
 
 

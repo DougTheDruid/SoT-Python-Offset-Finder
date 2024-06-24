@@ -23,7 +23,7 @@ AbandonedNoteClueDestinationContainerComponent:
   - Name: CurrentClueDestination
     Offset: '0x100'
     Size: '0x10'
-    Type: struct
+    Type: struct ClueDestinationChoice
   - Name: CurrentTitleText
     Offset: '0x110'
     Size: '0x38'
@@ -107,28 +107,28 @@ AbandonedNoteClueTextIndexAssetMap:
 AbandonedNoteWieldable:
   Attributes:
   - Name: WieldableItemCanvasRenderingComponent
-    Offset: '0x7f8'
+    Offset: '0x820'
     Size: '0x8'
     Type: class WieldableItemCanvasRenderingComponent*
   - Name: AbandonedNoteRenderingComponent
-    Offset: '0x800'
+    Offset: '0x828'
     Size: '0x8'
     Type: class AbandonedNoteWieldableRenderingComponent*
   - Name: InventoryItemComponent
-    Offset: '0x808'
+    Offset: '0x830'
     Size: '0x8'
     Type: class InventoryItemComponent*
   - Name: UsableWieldableComponent
-    Offset: '0x810'
+    Offset: '0x838'
     Size: '0x8'
     Type: class UsableWieldableComponent*
   - Name: QuestMapIcon
-    Offset: '0x818'
+    Offset: '0x840'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x30'
-  FullSize: '0x820'
-  InheritedSize: '0x7f0'
+  ClassSize: '0x40'
+  FullSize: '0x850'
+  InheritedSize: '0x810'
   Super: SkeletalMeshWieldableItem
 AbandonedNoteWieldableRenderingComponent:
   Attributes:
@@ -159,11 +159,11 @@ AbandonedNoteWieldableRenderingComponent:
   - Name: BodyTextLayout
     Offset: '0xe8'
     Size: '0x3c'
-    Type: struct
+    Type: struct TreasureMapWidgetText
   - Name: TitleTextLayout
     Offset: '0x124'
     Size: '0x3c'
-    Type: struct
+    Type: struct TreasureMapWidgetText
   - Name: ExtraTextFields
     Offset: '0x160'
     Size: '0x10'
@@ -181,7 +181,7 @@ BarrelsOfPlentyClueSiteData:
   - Name: SpawnLocation
     Offset: '0x38'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x38'
   FullSize: '0x70'
   InheritedSize: '0x38'
@@ -255,16 +255,16 @@ CircleMapClueDestinationContainerComponent:
 ClueSiteCircleMapWieldable:
   Attributes:
   - Name: InventoryRadialBackgroundTexture
-    Offset: '0x898'
+    Offset: '0x8c0'
     Size: '0x20'
     Type: assetobject
   - Name: MapRadialIconData
-    Offset: '0x8b8'
+    Offset: '0x8e0'
     Size: '0x18'
-    Type: struct
-  ClassSize: '0x30'
-  FullSize: '0x8d0'
-  InheritedSize: '0x8a0'
+    Type: struct MapRadialIconData
+  ClassSize: '0x40'
+  FullSize: '0x900'
+  InheritedSize: '0x8c0'
   Super: RenderToTextureMapBase
 CompositeClueDestinationDescriptor:
   Attributes:
@@ -295,7 +295,7 @@ FloatingMessageInABottleClueSiteData:
   - Name: SpawnLocation
     Offset: '0x38'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x38'
   FullSize: '0x70'
   InheritedSize: '0x38'
@@ -363,7 +363,7 @@ LocationOnIslandClueDestinationDescriptor:
   - Name: WorldPosition
     Offset: '0x48'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x18'
   FullSize: '0x58'
   InheritedSize: '0x40'
@@ -373,7 +373,7 @@ NPCByNameClueDestinationDescriptor:
   - Name: NPCIdentifier
     Offset: '0x40'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
   FullSize: '0x50'
   InheritedSize: '0x40'
@@ -405,7 +405,7 @@ NPCHintDialogueClueSiteData:
   - Name: NPCData
     Offset: '0x38'
     Size: '0xb8'
-    Type: struct
+    Type: struct NPCData
   ClassSize: '0xe8'
   FullSize: '0x120'
   InheritedSize: '0x38'
@@ -429,7 +429,7 @@ SeaLocationByGridSquareClueDestinationDescriptor:
   - Name: SeaLocationIdentifier
     Offset: '0x40'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x10'
   FullSize: '0x50'
   InheritedSize: '0x40'
@@ -475,11 +475,11 @@ TaleQuestGetNPCActorFromClueSiteStepDesc:
   - Name: ClueSite
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClueSite
   - Name: NPCFromClueSite
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   ClassSize: '0x60'
   FullSize: '0xe0'
   InheritedSize: '0x80'
@@ -499,15 +499,15 @@ TaleQuestGetPhasedVersionOfActorFromAssetMapStepDesc:
   - Name: ExistingNPCActor
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   - Name: ObtainedPhasedNPCActorType
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActorAssetType
   - Name: PhasingSourceActor
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   - Name: IndexAssetMap
     Offset: '0x110'
     Size: '0x8'
@@ -521,11 +521,11 @@ TaleQuestRetrieveSpawnedMerchantCaptainFromShipwreckStepDesc:
   - Name: ShipwreckSpawnedOn
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableShipwreck
   - Name: SpawnedMerchantCaptain
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   ClassSize: '0x60'
   FullSize: '0xe0'
   InheritedSize: '0x80'
@@ -535,15 +535,15 @@ TaleQuestSpawnWashedUpMessageInABottleClueStepDesc:
   - Name: ClueSite
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClueSite
   - Name: ClueDescriptor
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClueDescriptor
   - Name: MessageInABottle
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   ClassSize: '0x90'
   FullSize: '0x110'
   InheritedSize: '0x80'
@@ -553,19 +553,19 @@ TaleQuestSpawnWashedUpSkeletonClueStepDesc:
   - Name: ClueSite
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClueSite
   - Name: ClueDescriptor
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClueDescriptor
   - Name: SkeletonActor
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   - Name: ClueItem
     Offset: '0x110'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableItemInfo
   - Name: SkeletonClueSocketName
     Offset: '0x140'
     Size: '0x8'
@@ -593,15 +593,15 @@ WaitForClueCollectedStepDesc:
   - Name: Clue
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableClueDescriptor
   - Name: ClueActor
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   - Name: Discoverer
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   ClassSize: '0x90'
   FullSize: '0x110'
   InheritedSize: '0x80'
@@ -661,11 +661,11 @@ WashedUpMessageInABottleClueSiteData:
   - Name: IslandSpawnLocationReservationId
     Offset: '0x48'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: SpawnTransform
     Offset: '0x60'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: SinkIntoSandItems
     Offset: '0x90'
     Size: '0x10'
@@ -691,11 +691,11 @@ WashedUpSkeletonClueSiteData:
   - Name: IslandSpawnLocationReservationId
     Offset: '0x50'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: SpawnTransform
     Offset: '0x60'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   ClassSize: '0x88'
   FullSize: '0xc0'
   InheritedSize: '0x38'

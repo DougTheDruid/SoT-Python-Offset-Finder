@@ -6,16 +6,13 @@
 #include "OceanCrawlers_Structs.h"
 
 
-// Size 0x78 (Full Size[0xa0] - InheritedSize[0x28]
-class OceanCrawlerAudioParamsDataAsset: public DataAsset
+// Size 0x130 (Full Size[0x1f8] - InheritedSize[0xc8]
+class OceanCrawlerAudioBroadcaster: public ActorComponent
 {
 public:
-	class WwiseObjectPoolWrapper*                                WwiseObjectPoolWrapper;                            // 0x28(0x8)
-	TArray<struct OceanCrawlerAudioKeyPair>                      AudioKeyPairs;                                     // 0x30(0x10)
-	struct                                                       BuffThankDelay;                                    // 0x40(0x30)
-	struct                                                       CrabBuffAudioSettings;                             // 0x70(0x10)
-	struct                                                       EelBuffAudioSettings;                              // 0x80(0x10)
-	struct                                                       HermitBuffAudioSettings;                           // 0x90(0x10)
+	assetclass                                                   AudioDataAsset;                                    // 0xc8(0x20)
+	class Actor*                                                 CachedOwner;                                       // 0xe8(0x8)
+	class OceanCrawlerAudioParamsDataAsset*                      LoadedAudioDataAsset;                              // 0x1f0(0x8)
 };
 
 
@@ -27,13 +24,16 @@ public:
 };
 
 
-// Size 0x130 (Full Size[0x1f8] - InheritedSize[0xc8]
-class OceanCrawlerAudioBroadcaster: public ActorComponent
+// Size 0x78 (Full Size[0xa0] - InheritedSize[0x28]
+class OceanCrawlerAudioParamsDataAsset: public DataAsset
 {
 public:
-	assetclass                                                   AudioDataAsset;                                    // 0xc8(0x20)
-	class Actor*                                                 CachedOwner;                                       // 0xe8(0x8)
-	class OceanCrawlerAudioParamsDataAsset*                      LoadedAudioDataAsset;                              // 0x1f0(0x8)
+	class WwiseObjectPoolWrapper*                                WwiseObjectPoolWrapper;                            // 0x28(0x8)
+	TArray<struct OceanCrawlerAudioKeyPair>                      AudioKeyPairs;                                     // 0x30(0x10)
+	struct WeightedProbabilityRangeOfRanges                      BuffThankDelay;                                    // 0x40(0x30)
+	struct OceanCrawlerBuffAudioSettings                         CrabBuffAudioSettings;                             // 0x70(0x10)
+	struct OceanCrawlerBuffAudioSettings                         EelBuffAudioSettings;                              // 0x80(0x10)
+	struct OceanCrawlerBuffAudioSettings                         HermitBuffAudioSettings;                           // 0x90(0x10)
 };
 
 

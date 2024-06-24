@@ -14,11 +14,12 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0x3e8] - InheritedSize[0x3c8]
-class GenericShipDamageablePart: public Actor
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class ShipRestorationSettings: public DeveloperSettings
 {
 public:
-	class ShipDamageableComponent*                               ShipDamageableComponent;                           // 0x3d0(0x8)
+	float                                                        MaxDistanceSquared;                                // 0x38(0x4)
+	uint64                                                       RestorationCooldown;                               // 0x40(0x8)
 };
 
 
@@ -30,12 +31,11 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class ShipRestorationSettings: public DeveloperSettings
+// Size 0x20 (Full Size[0x3e8] - InheritedSize[0x3c8]
+class GenericShipDamageablePart: public Actor
 {
 public:
-	float                                                        MaxDistanceSquared;                                // 0x38(0x4)
-	uint64                                                       RestorationCooldown;                               // 0x40(0x8)
+	class ShipDamageableComponent*                               ShipDamageableComponent;                           // 0x3d0(0x8)
 };
 
 

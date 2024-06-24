@@ -10,16 +10,16 @@
 class WwiseAudioSettings: public Object
 {
 public:
-	struct                                                       PlatformMappings;                                  // 0xe8(0x20)
-	struct                                                       ReverbPresetSettings;                              // 0x108(0x64)
-	struct                                                       WwiseCoreAssetsPath;                               // 0x170(0x10)
-	struct                                                       WwiseSoundbanksRoot;                               // 0x180(0x10)
-	struct                                                       WwiseStreamedFilesRoot;                            // 0x190(0x10)
+	struct WwisePlatformMappings                                 PlatformMappings;                                  // 0xe8(0x20)
+	struct WwiseAudioReverbPresets                               ReverbPresetSettings;                              // 0x108(0x64)
+	struct StringAssetReference                                  WwiseCoreAssetsPath;                               // 0x170(0x10)
+	struct DirectoryPath                                         WwiseSoundbanksRoot;                               // 0x180(0x10)
+	struct DirectoryPath                                         WwiseStreamedFilesRoot;                            // 0x190(0x10)
 	TArray<struct WwiseIOPriorityMappingConfig>                  AsyncIOPriorityMappings;                           // 0x1a0(0x10)
-	struct                                                       TritonAcousticMapsDirectory;                       // 0x1b0(0x10)
+	struct DirectoryPath                                         TritonAcousticMapsDirectory;                       // 0x1b0(0x10)
 	struct FString                                               DefaultLanguage;                                   // 0x1c0(0x10)
 	struct FString                                               SinkSharesetName;                                  // 0x1d0(0x10)
-	struct                                                       NetworkRelationship;                               // 0x1e0(0x18)
+	struct WwiseNetworkRelationship                              NetworkRelationship;                               // 0x1e0(0x18)
 	uint32                                                       WaapiInterpreterPort;                              // 0x1f8(0x4)
 	class WwiseCoreAssets*                                       WwiseCoreAssets;                                   // 0x200(0x8)
 };

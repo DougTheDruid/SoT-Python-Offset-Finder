@@ -54,7 +54,7 @@ GeneratedFireworkData:
   - Name: FireworkAmbientLightData
     Offset: '0xc'
     Size: '0x14'
-    Type: struct
+    Type: struct FireworkAmbientLightData
   - Name: ExplosionData
     Offset: '0x28'
     Size: '0x10'
@@ -93,14 +93,14 @@ WeightedFireworkVFXData:
   - Name: AmbientLightColour
     Offset: '0x1c'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   ClassSize: '0x30'
 WeightedProjectileMeshAnimationData:
   Attributes:
   - Name: AnimationCurve
     Offset: '0x0'
     Size: '0x170'
-    Type: struct
+    Type: struct RuntimeVectorCurve
   - Name: Weight
     Offset: '0x170'
     Size: '0x4'

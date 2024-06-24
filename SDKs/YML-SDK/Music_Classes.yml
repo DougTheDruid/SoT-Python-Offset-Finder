@@ -75,7 +75,7 @@ MusicZoneComponent:
   - Name: EmitterRemoteValues
     Offset: '0x370'
     Size: '0x20'
-    Type: struct
+    Type: struct MusicZoneRemoteValues
   ClassSize: '0xf0'
   FullSize: '0x3d0'
   InheritedSize: '0x2e0'

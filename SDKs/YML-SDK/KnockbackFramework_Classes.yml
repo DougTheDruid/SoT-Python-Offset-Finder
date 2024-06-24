@@ -5,11 +5,11 @@ KnockbackColliderComponent:
   - Name: SolidCollisionProfile
     Offset: '0x5f8'
     Size: '0x8'
-    Type: struct
+    Type: struct CollisionProfileName
   - Name: KnockbackTraceProfile
     Offset: '0x600'
     Size: '0x8'
-    Type: struct
+    Type: struct CollisionProfileName
   - Name: KnockbackType
     Offset: '0x608'
     Size: '0x1'
@@ -17,7 +17,7 @@ KnockbackColliderComponent:
   - Name: KnockbackParams
     Offset: '0x60c'
     Size: '0x50'
-    Type: struct
+    Type: struct KnockBackInfo
   - Name: ActorToTarget
     Offset: '0x65c'
     Size: '0x8'

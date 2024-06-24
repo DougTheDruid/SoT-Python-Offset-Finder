@@ -53,7 +53,7 @@
     "Attributes": [
       {
         "Name": "VFXStatus",
-        "Type": "struct",
+        "Type": "struct Status",
         "Size": "0x18",
         "Offset": "0x28"
       },
@@ -83,7 +83,7 @@
       },
       {
         "Name": "SocketRelativeOffset",
-        "Type": "struct",
+        "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0x60"
       }

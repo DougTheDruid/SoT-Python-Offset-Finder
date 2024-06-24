@@ -1,15 +1,26 @@
 {
-  "EngineServiceExecuteCommand": {
+  "EngineServiceTerminate": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "UserName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EngineServiceAuthGrant": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Command",
+        "Name": "UserName",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "UserName",
+        "Name": "UserToGrant",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
@@ -29,6 +40,23 @@
         "Name": "UserToDeny",
         "Type": "struct FString",
         "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EngineServiceNotification": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Text",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TimeSeconds",
+        "Type": "double",
+        "Size": "0x8",
         "Offset": "0x10"
       }
     ]
@@ -56,7 +84,7 @@
       },
       {
         "Name": "InstanceId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
       },
@@ -68,7 +96,7 @@
       },
       {
         "Name": "SessionId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x38"
       },
@@ -80,48 +108,20 @@
       }
     ]
   },
-  "EngineServiceNotification": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Text",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TimeSeconds",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EngineServiceAuthGrant": {
+  "EngineServiceExecuteCommand": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "UserName",
+        "Name": "Command",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "UserToGrant",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EngineServiceTerminate": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
         "Name": "UserName",
         "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x0"
+        "Offset": "0x10"
       }
     ]
   },

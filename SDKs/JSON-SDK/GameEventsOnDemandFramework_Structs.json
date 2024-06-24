@@ -1,12 +1,63 @@
 {
-  "GameEventOnDemandCrewSentToSinkingTunnel": {
+  "CrewJoinedGameEventOnDemand": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "struct",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "GameEventOnDemandActivatedTelemetryEvent": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "NumCrewsOnDemandLimit",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GameEventOnDemandBaseTelemetryFragmentInput": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "GameEventType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GameEventOnDemandId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "GameEventOnDemandCompletedTelemetryEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Company",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ParticipatingOnDemandCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ParticipatingCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },
@@ -33,41 +84,30 @@
       }
     ]
   },
-  "GameEventOnDemandCrewJoinedTelemetryEvent": {
+  "GameEventOnDemandBaseTelemetryFragment": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "ShipType",
+        "Name": "GameEventType",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "Company",
-        "Type": "struct FString",
+        "Name": "GameEventOnDemandId",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       }
     ]
   },
-  "CrewFailedToJoinGameEventOnDemand": {
+  "GameEventOnDemandDeactivated": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "CrewId",
-        "Type": "struct",
+        "Name": "OnDemandCrewIds",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GameEventOnDemandActivatedTelemetryEvent": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "NumCrewsOnDemandLimit",
-        "Type": "int",
-        "Size": "0x4",
         "Offset": "0x0"
       }
     ]
@@ -118,80 +158,40 @@
       }
     ]
   },
-  "GameEventOnDemandBaseTelemetryFragmentInput": {
+  "GameEventOnDemandCrewJoinedTelemetryEvent": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "GameEventType",
+        "Name": "ShipType",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
-        "Name": "GameEventOnDemandId",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "GameEventOnDemandCompletedTelemetryEvent": {
-    "ClassSize": "0x30",
-    "Attributes": [
       {
         "Name": "Company",
         "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ParticipatingOnDemandCrews",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ParticipatingCrews",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "GameEventOnDemandBaseTelemetryFragment": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "GameEventType",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "GameEventOnDemandId",
-        "Type": "struct",
-        "Size": "0x10",
         "Offset": "0x10"
       }
     ]
   },
-  "GameEventOnDemandDeactivated": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "OnDemandCrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CrewJoinedGameEventOnDemand": {
+  "CrewFailedToJoinGameEventOnDemand": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "CrewId",
-        "Type": "struct",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GameEventOnDemandCrewSentToSinkingTunnel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       }

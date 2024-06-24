@@ -5,15 +5,15 @@ TrinketDesc:
   - Name: TrinketClass
     Offset: '0xc8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringClassReference
   - Name: PreviousItem
     Offset: '0xd8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringClassReference
   - Name: NextItem
     Offset: '0xe8'
     Size: '0x10'
-    Type: struct
+    Type: struct StringClassReference
   ClassSize: '0x30'
   FullSize: '0xf8'
   InheritedSize: '0xc8'

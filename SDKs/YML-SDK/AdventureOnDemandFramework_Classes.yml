@@ -5,7 +5,7 @@ AdventureOnDemandAreCrewNearQuestTargetStepDesc:
   - Name: AreCrewNearQuestTarget
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableBool
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
@@ -29,7 +29,7 @@ AdventureOnDemandArrivalTunnelDesc:
   - Name: ResurfaceLocationOffset
     Offset: '0xa0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: DefaultArrivalLocationWorkerClass
     Offset: '0xb0'
     Size: '0x8'
@@ -53,24 +53,24 @@ AdventureOnDemandArrivalTunnelDesc:
 AdventureOnDemandArrivalTunnelOfTheDamned:
   Attributes:
   - Name: AdventureOnDemandArrivalTunnelDesc
-    Offset: '0x6c8'
+    Offset: '0x6d0'
     Size: '0x8'
     Type: class AdventureOnDemandArrivalTunnelDesc*
   - Name: ArrivalLocationWorker
-    Offset: '0x6d0'
+    Offset: '0x6d8'
     Size: '0x8'
     Type: class AdventureOnDemandArrivalTunnelWorkerBase*
   - Name: AdventureOnDemandServiceWeakPtr
-    Offset: '0x6d8'
+    Offset: '0x6e0'
     Size: '0x10'
     Type: interface
   - Name: GameEventSchedulerServiceWeakPtr
-    Offset: '0x6e8'
+    Offset: '0x6f0'
     Size: '0x10'
     Type: interface
-  ClassSize: '0x60'
+  ClassSize: '0x50'
   FullSize: '0x700'
-  InheritedSize: '0x6a0'
+  InheritedSize: '0x6b0'
   Super: ClientDestinationPreLoadingArrivalTunnelOfTheDamned
 AdventureOnDemandArrivalTunnelWorkerBase:
   Attributes:
@@ -95,34 +95,34 @@ AdventureOnDemandDepartureTunnelDependencies:
 AdventureOnDemandDepartureTunnelDesc:
   Attributes:
   - Name: SecondsAfterCrewArriveInTunnelBeforeAllowingTunnelCancellation
-    Offset: '0x118'
+    Offset: '0x120'
     Size: '0x4'
     Type: float
   - Name: SecondsBetweenTunnelCancellationPopupReminder
-    Offset: '0x11c'
+    Offset: '0x124'
     Size: '0x4'
     Type: float
   - Name: DefaultTunnelCancellationAvailableReminderPopup
-    Offset: '0x120'
+    Offset: '0x128'
     Size: '0x8'
     Type: class PopUpMessageDesc*
   ClassSize: '0x10'
-  FullSize: '0x128'
-  InheritedSize: '0x118'
+  FullSize: '0x130'
+  InheritedSize: '0x120'
   Super: DepartureTunnelDesc
 AdventureOnDemandDepartureTunnelOfTheDamned:
   Attributes:
   - Name: AdventureOnDemandDepartureTunnelDesc
-    Offset: '0x8b8'
+    Offset: '0x8b0'
     Size: '0x8'
     Type: class AdventureOnDemandDepartureTunnelDesc*
   - Name: AdventureOnDemandService
-    Offset: '0x8c0'
+    Offset: '0x8b8'
     Size: '0x10'
     Type: interface
-  ClassSize: '0x30'
+  ClassSize: '0x40'
   FullSize: '0x8f0'
-  InheritedSize: '0x8c0'
+  InheritedSize: '0x8b0'
   Super: DepartureTunnelOfTheDamned
 AdventureOnDemandDiscoveryPageMysteryDataAsset:
   Attributes:
@@ -163,7 +163,7 @@ AdventureOnDemandGetIsDivingToTunnelStepDesc:
   - Name: IsCrewDivingToTunnel
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableBool
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
@@ -173,7 +173,7 @@ AdventureOnDemandGetTunnelDescStepDesc:
   - Name: TunnelDesc
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableDataAsset
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
@@ -221,15 +221,15 @@ AdventureOnDemandSetDirectionToApproachTargetFromStepDesc:
   - Name: DirectionToApproachTargetFrom
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableVector
   - Name: PointOfInterestToGetDirectionToTargetFrom
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableVector
   - Name: ActorToGetDirectionToTargetFrom
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   ClassSize: '0x90'
   FullSize: '0x110'
   InheritedSize: '0x80'
@@ -249,23 +249,23 @@ AdventureOnDemandSetTargetLocationStepDesc:
   - Name: IslandName
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableName
   - Name: IslandData
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableActor
   - Name: TargetLocation
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableVector
   - Name: RadiusFromTarget
     Offset: '0x110'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableFloat
   - Name: DefaultRadiusModifier
     Offset: '0x140'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableFloat
   ClassSize: '0xf0'
   FullSize: '0x170'
   InheritedSize: '0x80'
@@ -325,11 +325,11 @@ AdventureOnDemandTallTaleCategoryDataAsset:
   - Name: BackgroundImageUrl
     Offset: '0xb0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: IconImageUrl
     Offset: '0xc0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: LockedDescriptions
     Offset: '0xd0'
     Size: '0x10'
@@ -363,7 +363,7 @@ AdventureOnDemandVoyageSelectionCompanyDataAsset:
   - Name: Feature
     Offset: '0x40'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   - Name: Prerequisites
     Offset: '0x50'
     Size: '0x10'
@@ -399,7 +399,7 @@ AdventureOnDemandYieldQuestResumeOnConditionsStepDesc:
   - Name: OutConditionsMetReason
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct OnDemandQuestResumeConditionMetReasonQuestVariable
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'
@@ -417,21 +417,21 @@ FriendsInCrewPrerequisite:
 GameEventOnDemandDepartureTunnelDesc:
   Attributes:
   - Name: GameEventType
-    Offset: '0x128'
+    Offset: '0x130'
     Size: '0x20'
     Type: assetclass
   ClassSize: '0x20'
-  FullSize: '0x148'
-  InheritedSize: '0x128'
+  FullSize: '0x150'
+  InheritedSize: '0x130'
   Super: AdventureOnDemandDepartureTunnelDesc
 GameEventOnDemandDepartureTunnelOfTheDamned:
   Attributes:
   - Name: GameEventOnDemandDepartureTunnelDesc
-    Offset: '0x8f0'
+    Offset: '0x8e8'
     Size: '0x8'
     Type: class GameEventOnDemandDepartureTunnelDesc*
-  ClassSize: '0x10'
-  FullSize: '0x900'
+  ClassSize: '0x0'
+  FullSize: '0x8f0'
   InheritedSize: '0x8f0'
   Super: AdventureOnDemandDepartureTunnelOfTheDamned
 GameEventsOnDemandBannerDataAsset:
@@ -487,11 +487,11 @@ QuestTableAdventureOnDemandParams:
   - Name: NewPlayerTutorialDiscoverTabTile
     Offset: '0x50'
     Size: '0x148'
-    Type: struct
+    Type: struct QuestTableBakedInfoDiscoverTile
   - Name: EmptyCompanyRequirementImageUrl
     Offset: '0x198'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: SailToQuestText_Default
     Offset: '0x1a8'
     Size: '0x38'
@@ -545,10 +545,10 @@ TradingCompanyPopUpBackgroundCollectionDataAsset:
 VoyageOnDemandDepartureTunnelOfTheDamned:
   Attributes:
   - Name: VoyageOnDemandDepartureTunnelDesc
-    Offset: '0x8f0'
+    Offset: '0x8e8'
     Size: '0x8'
     Type: class VoyageOnDemandDepartureTunnelDesc*
-  ClassSize: '0x10'
-  FullSize: '0x900'
+  ClassSize: '0x0'
+  FullSize: '0x8f0'
   InheritedSize: '0x8f0'
   Super: AdventureOnDemandDepartureTunnelOfTheDamned

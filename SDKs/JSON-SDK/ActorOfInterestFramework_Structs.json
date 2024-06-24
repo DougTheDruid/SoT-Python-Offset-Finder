@@ -1,18 +1,12 @@
 {
-  "ActorOfInterestRegisteredEvent": {
+  "ActorsOfInterestList": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ActorOfInterest",
-        "Type": "class Actor*",
-        "Size": "0x8",
+        "Name": "Actors",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
         "Offset": "0x0"
-      },
-      {
-        "Name": "ActorOfInterestId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
@@ -33,14 +27,20 @@
       }
     ]
   },
-  "ActorsOfInterestList": {
+  "ActorOfInterestRegisteredEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Actors",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
+        "Name": "ActorOfInterest",
+        "Type": "class Actor*",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "ActorOfInterestId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },

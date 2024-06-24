@@ -16,11 +16,11 @@ StaticMeshComponentAudioAssociation:
   - Name: PlaybackData
     Offset: '0x0'
     Size: '0x38'
-    Type: struct
+    Type: struct StaticMeshWwiseEmitterData
   - Name: EmitterPositionRelativeToComponentOrigin
     Offset: '0x38'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x68'
 StaticMeshWwiseEmitterData:
   Attributes:
@@ -31,7 +31,7 @@ StaticMeshWwiseEmitterData:
   - Name: LocalOriginOffset
     Offset: '0x8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: StartEvents
     Offset: '0x18'
     Size: '0x10'

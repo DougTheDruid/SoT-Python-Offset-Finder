@@ -55,7 +55,7 @@ SplashProbeVFXComponent:
   - Name: AttachProbesToOwner
     Offset: '0x100'
     Size: '0x10'
-    Type: struct
+    Type: struct ActorComponentSelector
   - Name: AttachProbesToComponent
     Offset: '0x110'
     Size: '0x8'
@@ -83,7 +83,7 @@ WaterPlaneExclusionComponent:
   - Name: UseSpecificComponentForOverlaps
     Offset: '0xc8'
     Size: '0x10'
-    Type: struct
+    Type: struct ActorComponentSelector
   ClassSize: '0x10'
   FullSize: '0xd8'
   InheritedSize: '0xc8'
@@ -107,7 +107,7 @@ WaterSpoutVFXComponent:
   - Name: SplashEffectPointBottomZ
     Offset: '0xd8'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: SpoutParticleSystem
     Offset: '0xe8'
     Size: '0x8'
@@ -143,7 +143,7 @@ WaterSpoutVFXComponent:
   - Name: SplashKillPlaneScale
     Offset: '0x118'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: SplashKillPlane
     Offset: '0x128'
     Size: '0x8'

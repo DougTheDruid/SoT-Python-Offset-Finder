@@ -19,6 +19,26 @@
       }
     ]
   },
+  "ContextualTutorialComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x140",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "ContextualTutorialClasses",
+        "Type": "TArray<struct ContextualTutorialPromptDesc>",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "SpawnedPromptActors",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      }
+    ]
+  },
   "TutorialStarter": {
     "Super": "Object",
     "FullSize": "0x60",
@@ -45,9 +65,23 @@
       },
       {
         "Name": "IntroAnimationSettings",
-        "Type": "struct",
+        "Type": "struct FirstPersonAnimaticSettings",
         "Size": "0x2c",
         "Offset": "0x34"
+      }
+    ]
+  },
+  "HasTutorialStarterBegunNPCDialogConditional": {
+    "Super": "NPCDialogConditional",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TutorialStarterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
       }
     ]
   },
@@ -181,37 +215,37 @@
       }
     ]
   },
-  "HasTutorialStarterBegunNPCDialogConditional": {
-    "Super": "NPCDialogConditional",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TutorialStarterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "ContextualTutorialComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x140",
-    "InheritedSize": "0xc8",
+  "IntroductionToSOTFlowStarter": {
+    "Super": "TutorialStarter",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x60",
     "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "ContextualTutorialClasses",
-        "Type": "TArray<struct ContextualTutorialPromptDesc>",
-        "Size": "0x10",
-        "Offset": "0xc8"
+        "Name": "TutorialTale",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x60"
       },
       {
-        "Name": "SpawnedPromptActors",
-        "Type": "TArray<class Actor*>",
+        "Name": "ShipSizeBasedIntroAnimatics",
+        "Type": "TArray<struct IntroductionToSOTIntroAnimatic>",
         "Size": "0x10",
-        "Offset": "0xd8"
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "Tutorial2019ContextualDelegatingComponent": {
+    "Super": "Tutorial2019Component",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ContextualTutorialComponent",
+        "Type": "class ContextualTutorialComponent*",
+        "Size": "0x8",
+        "Offset": "0xd0"
       }
     ]
   },
@@ -280,40 +314,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x90"
-      }
-    ]
-  },
-  "Tutorial2019ContextualDelegatingComponent": {
-    "Super": "Tutorial2019Component",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xd0",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ContextualTutorialComponent",
-        "Type": "class ContextualTutorialComponent*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "IntroductionToSOTFlowStarter": {
-    "Super": "TutorialStarter",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "TutorialTale",
-        "Type": "class VoyageDescDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "ShipSizeBasedIntroAnimatics",
-        "Type": "TArray<struct IntroductionToSOTIntroAnimatic>",
-        "Size": "0x10",
-        "Offset": "0x68"
       }
     ]
   },

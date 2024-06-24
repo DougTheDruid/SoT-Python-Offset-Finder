@@ -113,7 +113,7 @@ StatusApplicationDesc:
   - Name: ApplicationEvent
     Offset: '0x28'
     Size: '0x28'
-    Type: struct
+    Type: struct EventAppliedStatusToTargets
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -171,7 +171,7 @@ StatusEffectsSettings:
   - Name: DebugMenuStatusDefinitionsDataAsset
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'

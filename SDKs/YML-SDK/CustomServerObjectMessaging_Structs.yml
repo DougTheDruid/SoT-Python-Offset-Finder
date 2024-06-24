@@ -66,7 +66,7 @@ CustomServerEvent:
   - Name: ServerTimeUTC
     Offset: '0x10'
     Size: '0x8'
-    Type: struct
+    Type: struct DateTime
   ClassSize: '0x18'
 CustomTriggerOverlapBeginCustomServerEvent:
   Attributes:
@@ -134,7 +134,7 @@ KrakenSpawnCustomServerEvent:
   - Name: SpawnLocation
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: TrackedShipId
     Offset: '0x24'
     Size: '0x4'
@@ -164,7 +164,7 @@ MermaidSpawnedCustomServerEvent:
   - Name: Position
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: PlayerId
     Offset: '0x24'
     Size: '0x4'
@@ -218,7 +218,7 @@ OnPlayerDigCustomServerEvent:
   - Name: Location
     Offset: '0x20'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x30'
 OnPlayerStartsNPCInteractionCustomServerEvent:
   Attributes:
@@ -236,7 +236,7 @@ OnQuestStartedCustomServerEvent:
   - Name: CrewId
     Offset: '0x1c'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x30'
 OnRelaodAmmoCustomServerEvent:
   Attributes:
@@ -288,7 +288,7 @@ OnVoyageStartedCustomServerEvent:
   - Name: CrewId
     Offset: '0x40'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x50'
 PlayerActionCannonCustomServerEvent:
   Attributes:
@@ -484,7 +484,7 @@ TinySharkSpawnCustomServerEvent:
   - Name: SpawnLocation
     Offset: '0x1c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: TrackedShipId
     Offset: '0x28'
     Size: '0x4'
@@ -499,7 +499,7 @@ TreasureDroppedCustomServerEvent:
   - Name: Position
     Offset: '0x30'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x40'
 TreasureFoundCustomServerEvent:
   Attributes:

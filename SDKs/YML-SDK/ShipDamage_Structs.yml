@@ -69,7 +69,7 @@ EventShipDamageApplied:
   - Name: ImpactDamageEvent
     Offset: '0x18'
     Size: '0x58'
-    Type: struct
+    Type: struct ImpactDamageEvent
   ClassSize: '0x70'
 EventShipDamaged:
   Attributes:
@@ -80,18 +80,18 @@ EventShipDamaged:
   - Name: ImpactDamageEvent
     Offset: '0x8'
     Size: '0x58'
-    Type: struct
+    Type: struct ImpactDamageEvent
   ClassSize: '0x60'
 HullDamageHit:
   Attributes:
   - Name: HitPosition
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: HitNormal
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: HasDecal
     Offset: '0x18'
     Size: '0x1'
@@ -152,11 +152,11 @@ LevelOfDamageProperties:
   - Name: HoleDecalComponentTransform
     Offset: '0x20'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: ParticleSystemComponentLocation
     Offset: '0x50'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: InternalWaterSamplePositionTopOffset
     Offset: '0x5c'
     Size: '0x4'
@@ -191,7 +191,7 @@ SendShipRestoredRpc:
   - Name: CrewId
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x28'
 ShipDamageParams:
   Attributes:
@@ -213,5 +213,5 @@ ShipPartLevelsOfDamage:
   - Name: FeatureName
     Offset: '0x30'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   ClassSize: '0x40'

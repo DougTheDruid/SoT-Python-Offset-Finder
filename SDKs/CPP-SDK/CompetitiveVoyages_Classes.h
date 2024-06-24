@@ -6,11 +6,15 @@
 #include "CompetitiveVoyages_Structs.h"
 
 
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class SetCrewOptInNPCDataStepDesc: public TaleQuestStepDesc
+// Size 0x88 (Full Size[0xb8] - InheritedSize[0x30]
+class CompetitiveVoyageVoteValidatorBase: public VoteValidatorInlineBase
 {
 public:
-	struct                                                       Actor;                                             // 0x80(0x30)
+	TArray<class Class*>                                         TargetCompanies;                                   // 0x30(0x10)
+	float                                                        EdgeOfWorldWarningWeightForFactionLock;            // 0x40(0x4)
+	class CompetitiveVoyageVoteConsumerBase*                     Consumer;                                          // 0xa0(0x8)
+	int                                                          CurrentCompany;                                    // 0xa8(0x4)
+	class Actor*                                                 OwningActor;                                       // 0xb0(0x8)
 };
 
 
@@ -24,40 +28,11 @@ public:
 };
 
 
-// Size 0x98 (Full Size[0xc8] - InheritedSize[0x30]
-class CompetitiveVoyageVoteConsumerBase: public VoteConsumerInlineBase
+// Size 0x1f8 (Full Size[0x258] - InheritedSize[0x60]
+class TaleQuestCompetitiveVoyagesService: public TaleQuestService
 {
 public:
-	class CompetitiveVoyageVoteValidatorBase*                    Validator;                                         // 0x40(0x8)
-	class Actor*                                                 OwningActor;                                       // 0x90(0x8)
-	class ActorComponent*                                        OwningComponent;                                   // 0x98(0x8)
-	TArray<struct CrewMemberVotes>                               Votes;                                             // 0xa0(0x10)
-};
-
-
-// Size 0x88 (Full Size[0xb8] - InheritedSize[0x30]
-class CompetitiveVoyageVoteValidatorBase: public VoteValidatorInlineBase
-{
-public:
-	TArray<class Class*>                                         TargetCompanies;                                   // 0x30(0x10)
-	float                                                        EdgeOfWorldWarningWeightForFactionLock;            // 0x40(0x4)
-	class CompetitiveVoyageVoteConsumerBase*                     Consumer;                                          // 0xa0(0x8)
-	int                                                          CurrentCompany;                                    // 0xa8(0x4)
-	class Actor*                                                 OwningActor;                                       // 0xb0(0x8)
-};
-
-
-// Size 0x138 (Full Size[0x160] - InheritedSize[0x28]
-class CompetitiveVoyagesServiceParams: public DataAsset
-{
-public:
-	class VoyageDescDataAsset*                                   OptInVoyageDesc;                                   // 0x28(0x8)
-	class VoyageDescDataAsset*                                   MainVoyageDesc;                                    // 0x30(0x8)
-	class NPCOnShipDataAsset*                                    OptOutNoteDataAsset;                               // 0x38(0x8)
-	struct                                                       RespawnConfig;                                     // 0x40(0x108)
-	struct                                                       ShipSpeedCurseModifyingValues;                     // 0x148(0xc)
-	float                                                        OptOutDelay;                                       // 0x154(0x4)
-	struct                                                       SinkShipWithVoyageItemAchievementStat;             // 0x158(0x4)
+	TArray<struct PhasedMarkerItem>                              PhasedMarkerItems;                                 // 0xe8(0x10)
 };
 
 
@@ -72,20 +47,45 @@ public:
 };
 
 
+// Size 0x138 (Full Size[0x160] - InheritedSize[0x28]
+class CompetitiveVoyagesServiceParams: public DataAsset
+{
+public:
+	class VoyageDescDataAsset*                                   OptInVoyageDesc;                                   // 0x28(0x8)
+	class VoyageDescDataAsset*                                   MainVoyageDesc;                                    // 0x30(0x8)
+	class NPCOnShipDataAsset*                                    OptOutNoteDataAsset;                               // 0x38(0x8)
+	struct CompetitiveVoyagesRespawnConfig                       RespawnConfig;                                     // 0x40(0x108)
+	struct ShipSpeedCurseModifyingValues                         ShipSpeedCurseModifyingValues;                     // 0x148(0xc)
+	float                                                        OptOutDelay;                                       // 0x154(0x4)
+	struct PlayerStat                                            SinkShipWithVoyageItemAchievementStat;             // 0x158(0x4)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class SetCrewOptInNPCDataStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    Actor;                                             // 0x80(0x30)
+};
+
+
+// Size 0x98 (Full Size[0xc8] - InheritedSize[0x30]
+class CompetitiveVoyageVoteConsumerBase: public VoteConsumerInlineBase
+{
+public:
+	class CompetitiveVoyageVoteValidatorBase*                    Validator;                                         // 0x40(0x8)
+	class Actor*                                                 OwningActor;                                       // 0x90(0x8)
+	class ActorComponent*                                        OwningComponent;                                   // 0x98(0x8)
+	TArray<struct CrewMemberVotes>                               Votes;                                             // 0xa0(0x10)
+};
+
+
 // Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
 class WaitForCompVoyageOptInStepDesc: public TaleQuestStepDesc
 {
 public:
-	struct                                                       NPCOnShipManager;                                  // 0x80(0x30)
-	struct                                                       NPCActor;                                          // 0xb0(0x30)
-};
-
-
-// Size 0x1f8 (Full Size[0x258] - InheritedSize[0x60]
-class TaleQuestCompetitiveVoyagesService: public TaleQuestService
-{
-public:
-	TArray<struct PhasedMarkerItem>                              PhasedMarkerItems;                                 // 0xe8(0x10)
+	struct QuestVariableGuid                                     NPCOnShipManager;                                  // 0x80(0x30)
+	struct QuestVariableActor                                    NPCActor;                                          // 0xb0(0x30)
 };
 
 

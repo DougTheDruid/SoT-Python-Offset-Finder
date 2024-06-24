@@ -20,7 +20,7 @@ public:
 class BoneCallerOwnershipComponent: public ActorComponent
 {
 public:
-	struct                                                       OwningCrewID;                                      // 0xd0(0x10)
+	struct Guid                                                  OwningCrewID;                                      // 0xd0(0x10)
 };
 
 
@@ -30,6 +30,15 @@ class BoneCallerService: public Actor
 public:
 	class BoneCallerServiceParams*                               ServiceParams;                                     // 0x660(0x8)
 	map                                                          PlayerBoneCallerData;                              // 0x668(0x50)
+};
+
+
+// Size 0x10 (Full Size[0x6e8] - InheritedSize[0x6d8]
+class BoneCallerCannonProjectile: public CannonProjectile
+{
+public:
+	class UClass*                                                BoneCallerSpawnId;                                 // 0x6d8(0x8)
+	class UClass*                                                FiredFromReapersTributeShipBoneCallerSpawnId;      // 0x6e0(0x8)
 };
 
 

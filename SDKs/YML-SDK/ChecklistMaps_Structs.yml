@@ -38,7 +38,7 @@ ChecklistItemCompletedTelemetryEvent:
   - Name: ChecklistMapId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: ReceivedActionType
     Offset: '0x10'
     Size: '0x1'
@@ -53,11 +53,11 @@ ChecklistMapContents:
   - Name: Title
     Offset: '0x0'
     Size: '0x48'
-    Type: struct
+    Type: struct TreasureMapTextDesc
   - Name: Description
     Offset: '0x48'
     Size: '0x48'
-    Type: struct
+    Type: struct TreasureMapTextDesc
   - Name: ChecklistItems
     Offset: '0x90'
     Size: '0x10'
@@ -65,14 +65,14 @@ ChecklistMapContents:
   - Name: Afternote
     Offset: '0xa0'
     Size: '0x48'
-    Type: struct
+    Type: struct TreasureMapTextDesc
   ClassSize: '0xe8'
 ChecklistMapItemData:
   Attributes:
   - Name: Description
     Offset: '0x0'
     Size: '0x48'
-    Type: struct
+    Type: struct TreasureMapTextDesc
   - Name: IsComplete
     Offset: '0x48'
     Size: '0x1'

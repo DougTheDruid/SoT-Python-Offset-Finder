@@ -35,11 +35,11 @@ FireballCannonProjectileFirePoint:
   - Name: FireFromLocation
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: FireFromRotation
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Rotator
   - Name: FireDelay
     Offset: '0x18'
     Size: '0x4'

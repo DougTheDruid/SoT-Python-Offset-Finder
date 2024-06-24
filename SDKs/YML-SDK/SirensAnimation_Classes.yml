@@ -5,7 +5,7 @@ SirenAnimationData:
   - Name: SirenAnimationData
     Offset: '0x28'
     Size: '0x60'
-    Type: struct
+    Type: struct SirenAnimationDataStructure
   ClassSize: '0x60'
   FullSize: '0x88'
   InheritedSize: '0x28'
@@ -23,11 +23,11 @@ SirenAnimationInstance:
   - Name: SirenAnimationData
     Offset: '0x460'
     Size: '0x60'
-    Type: struct
+    Type: struct SirenAnimationDataStructure
   - Name: AttackAnimations
     Offset: '0x4c0'
     Size: '0xb8'
-    Type: struct
+    Type: struct AthenaAnimationWeapon
   - Name: ForwardSpeed
     Offset: '0x578'
     Size: '0x4'
@@ -71,7 +71,7 @@ SirenAnimationInstance:
   - Name: TimeBeforeAlternativeAggressiveAnimationToggleFlips
     Offset: '0x5b0'
     Size: '0x10'
-    Type: struct
+    Type: struct FloatRange
   - Name: AnimationsLoaded
     Offset: '0x5c8'
     Size: '0x1'
@@ -87,11 +87,11 @@ SirenAnimationInstance:
   - Name: FullBodyStateMachine
     Offset: '0x5d8'
     Size: '0xd8'
-    Type: struct
+    Type: struct CustomAnimationMontageStateMachine
   - Name: HitReacts
     Offset: '0x6b0'
     Size: '0x28'
-    Type: struct
+    Type: struct HitReactionAnimationState
   ClassSize: '0x2d0'
   FullSize: '0x710'
   InheritedSize: '0x440'

@@ -1,26 +1,4 @@
 {
-  "GlitterBeardVFXTransitionCompletedEvent": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "Index",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "UnlockEventData": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "Idx",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "FinaleReplicationState": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -35,6 +13,28 @@
         "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "UnlockEventData": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "Idx",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterBeardVFXTransitionCompletedEvent": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "Index",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
       }
     ]
   },

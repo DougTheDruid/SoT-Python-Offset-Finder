@@ -7,7 +7,7 @@
     "Attributes": [
       {
         "Name": "Settings",
-        "Type": "struct",
+        "Type": "struct LightPropagationVolumeSettings",
         "Size": "0x70",
         "Offset": "0x30"
       },

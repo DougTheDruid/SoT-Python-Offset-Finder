@@ -9,7 +9,7 @@ PartyReservation:
   - Name: PartyLeader
     Offset: '0x8'
     Size: '0x18'
-    Type: struct
+    Type: struct UniqueNetIdRepl
   - Name: PartyMembers
     Offset: '0x20'
     Size: '0x10'
@@ -20,7 +20,7 @@ PlayerReservation:
   - Name: UniqueId
     Offset: '0x0'
     Size: '0x18'
-    Type: struct
+    Type: struct UniqueNetIdRepl
   - Name: ValidationStr
     Offset: '0x18'
     Size: '0x10'

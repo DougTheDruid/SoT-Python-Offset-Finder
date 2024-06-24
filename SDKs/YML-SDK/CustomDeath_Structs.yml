@@ -5,11 +5,11 @@ CustomPlayerStartConfigGameServerRequestModel:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Rotation
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Quat
   - Name: Tags
     Offset: '0x20'
     Size: '0x10'
@@ -60,7 +60,7 @@ KillCrewGameServerRequestModel:
   - Name: CrewNetGUID
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'
 KillPlayerGameServerRequestModel:
   Attributes:

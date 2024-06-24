@@ -13,7 +13,7 @@
       },
       {
         "Name": "ObjectReferences",
-        "Type": "struct",
+        "Type": "struct ActorSequenceObjectReferenceMap",
         "Size": "0x20",
         "Offset": "0x2b0"
       }
@@ -27,7 +27,7 @@
     "Attributes": [
       {
         "Name": "PlaybackSettings",
-        "Type": "struct",
+        "Type": "struct MovieSceneSequencePlaybackSettings",
         "Size": "0x28",
         "Offset": "0xc8"
       },

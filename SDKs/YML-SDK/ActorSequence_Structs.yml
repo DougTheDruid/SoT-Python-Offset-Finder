@@ -9,7 +9,7 @@ ActorSequenceObjectReference:
   - Name: ActorId
     Offset: '0x4'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: PathToComponent
     Offset: '0x18'
     Size: '0x10'

@@ -5,23 +5,23 @@ WwiseAudioSettings:
   - Name: PlatformMappings
     Offset: '0xe8'
     Size: '0x20'
-    Type: struct
+    Type: struct WwisePlatformMappings
   - Name: ReverbPresetSettings
     Offset: '0x108'
     Size: '0x64'
-    Type: struct
+    Type: struct WwiseAudioReverbPresets
   - Name: WwiseCoreAssetsPath
     Offset: '0x170'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: WwiseSoundbanksRoot
     Offset: '0x180'
     Size: '0x10'
-    Type: struct
+    Type: struct DirectoryPath
   - Name: WwiseStreamedFilesRoot
     Offset: '0x190'
     Size: '0x10'
-    Type: struct
+    Type: struct DirectoryPath
   - Name: AsyncIOPriorityMappings
     Offset: '0x1a0'
     Size: '0x10'
@@ -29,7 +29,7 @@ WwiseAudioSettings:
   - Name: TritonAcousticMapsDirectory
     Offset: '0x1b0'
     Size: '0x10'
-    Type: struct
+    Type: struct DirectoryPath
   - Name: DefaultLanguage
     Offset: '0x1c0'
     Size: '0x10'
@@ -41,7 +41,7 @@ WwiseAudioSettings:
   - Name: NetworkRelationship
     Offset: '0x1e0'
     Size: '0x18'
-    Type: struct
+    Type: struct WwiseNetworkRelationship
   - Name: WaapiInterpreterPort
     Offset: '0x1f8'
     Size: '0x4'

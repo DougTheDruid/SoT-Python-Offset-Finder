@@ -13,11 +13,11 @@ AthenaAudioConfig:
   - Name: GameStateSettings
     Offset: '0x68'
     Size: '0x20'
-    Type: struct
+    Type: struct AthenaAudioGameStateSettings
   - Name: BootflowEvents
     Offset: '0x88'
     Size: '0x80'
-    Type: struct
+    Type: struct AthenaAudioBootflowEvents
   ClassSize: '0xb0'
   FullSize: '0x108'
   InheritedSize: '0x58'
@@ -27,7 +27,7 @@ AthenaAudioModuleSettings:
   - Name: AudioConfigAsset
     Offset: '0x38'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   ClassSize: '0x10'
   FullSize: '0x48'
   InheritedSize: '0x38'
@@ -117,7 +117,7 @@ StoryDrivenAudioPortalDataAsset:
   - Name: Feature
     Offset: '0x28'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
@@ -155,7 +155,7 @@ WwiseEventsTriggerRegionComponent:
   - Name: EmitterOffset
     Offset: '0x310'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: LocalPlayer
     Offset: '0x330'
     Size: '0x8'

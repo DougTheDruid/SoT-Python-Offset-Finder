@@ -39,11 +39,11 @@ HeightTriggerableEffectsComponent:
   - Name: EmitterOwner
     Offset: '0xd0'
     Size: '0x10'
-    Type: struct
+    Type: struct ActorComponentSelector
   - Name: EmitterOffset
     Offset: '0xe0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: UseParentEmitter
     Offset: '0xec'
     Size: '0x1'
@@ -139,19 +139,19 @@ TaleRegisterSpireStepDesc:
   - Name: SelectionOriginPoint
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableVector
   - Name: PlayerExclusionSelectionRadius
     Offset: '0xb0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableFloat
   - Name: AllocatedSpireHandle
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableTaleResourceHandle
   - Name: AllocatedSpireLocation
     Offset: '0x110'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableVector
   ClassSize: '0xc0'
   FullSize: '0x140'
   InheritedSize: '0x80'
@@ -161,7 +161,7 @@ TaleReleaseSpireStepDesc:
   - Name: SpireHandle
     Offset: '0x80'
     Size: '0x30'
-    Type: struct
+    Type: struct QuestVariableTaleResourceHandle
   ClassSize: '0x30'
   FullSize: '0xb0'
   InheritedSize: '0x80'

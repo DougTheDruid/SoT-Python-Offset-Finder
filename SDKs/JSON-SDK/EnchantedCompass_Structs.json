@@ -1,15 +1,4 @@
 {
-  "CompassTargetSet": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "TargetLocation",
-        "Type": "struct",
-        "Size": "0xc",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "RotatingCompassAudioParams": {
     "ClassSize": "0x48",
     "Attributes": [
@@ -42,6 +31,17 @@
         "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x40"
+      }
+    ]
+  },
+  "CompassTargetSet": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "TargetLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
       }
     ]
   },

@@ -57,15 +57,15 @@ FireballCannonActivationLever:
   - Name: Curve
     Offset: '0x4c0'
     Size: '0x80'
-    Type: struct
+    Type: struct RuntimeFloatCurve
   - Name: LeverStartingTransform
     Offset: '0x540'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: LeverEndingTransform
     Offset: '0x570'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: LeverActivationState
     Offset: '0x5a0'
     Size: '0x1'
@@ -135,7 +135,7 @@ FireballCannonComponent:
   - Name: FireRadiusCollisionResponse
     Offset: '0x181'
     Size: '0x20'
-    Type: struct
+    Type: struct CollisionResponseContainer
   - Name: FlamethrowerFirePropagationIgnitionParams
     Offset: '0x1a8'
     Size: '0x8'
@@ -143,44 +143,52 @@ FireballCannonComponent:
   - Name: FlamethrowerCollisionStatusEffect
     Offset: '0x1b0'
     Size: '0x18'
-    Type: struct
-  - Name: FlameCollisionRadius
+    Type: struct Status
+  - Name: UseScalingFlameCollisionRadius
     Offset: '0x1c8'
-    Size: '0x4'
-    Type: float
-  - Name: TimeUntilApplyStatusEffect
+    Size: '0x1'
+    Type: bool
+  - Name: FlameCollisionRadius
     Offset: '0x1cc'
     Size: '0x4'
     Type: float
-  - Name: TimeUntilIgniteFirePropagation
+  - Name: DynamicFlameCollisionRadiusCurve
     Offset: '0x1d0'
+    Size: '0x80'
+    Type: struct RuntimeFloatCurve
+  - Name: TimeUntilApplyStatusEffect
+    Offset: '0x250'
+    Size: '0x4'
+    Type: float
+  - Name: TimeUntilIgniteFirePropagation
+    Offset: '0x254'
     Size: '0x4'
     Type: float
   - Name: TimeToConsiderActorOutsideFlame
-    Offset: '0x1d4'
+    Offset: '0x258'
     Size: '0x4'
     Type: float
   - Name: FlamethrowerCollisionDamageAmount
-    Offset: '0x1d8'
+    Offset: '0x25c'
     Size: '0x4'
     Type: float
   - Name: DamagePerSecondInsideFlame
-    Offset: '0x1dc'
+    Offset: '0x260'
     Size: '0x4'
     Type: float
   - Name: DamagerTypeClass
-    Offset: '0x1e0'
+    Offset: '0x268'
     Size: '0x8'
     Type: class UClass*
   - Name: HealthChangedReason
-    Offset: '0x1e8'
+    Offset: '0x270'
     Size: '0x1'
     Type: byte
   - Name: OnFiringStateChangedDelegate
-    Offset: '0x1f0'
+    Offset: '0x278'
     Size: '0x10'
     Type: multicastinlinedelegate
-  ClassSize: '0x1a0'
-  FullSize: '0x268'
+  ClassSize: '0x228'
+  FullSize: '0x2f0'
   InheritedSize: '0xc8'
   Super: ActorComponent

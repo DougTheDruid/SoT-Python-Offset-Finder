@@ -35,7 +35,7 @@ EventMarkNoteDeleted:
   - Name: NoteId
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x18'
 EventMarkNoteRead:
   Attributes:
@@ -46,7 +46,7 @@ EventMarkNoteRead:
   - Name: NoteId
     Offset: '0x8'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x18'
 EventNoteClientCompletionStep:
   Attributes:
@@ -93,7 +93,7 @@ MysteriousNoteInfo:
   - Name: NoteId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: NoteRead
     Offset: '0x10'
     Size: '0x1'
@@ -112,7 +112,7 @@ MysteriousNoteRequest:
   - Name: PirateIdentity
     Offset: '0x8'
     Size: '0x78'
-    Type: struct
+    Type: struct PirateIdentity
   ClassSize: '0x80'
 MysteriousNoteTheme:
   Attributes:
@@ -140,7 +140,7 @@ NoteCompletionEntry:
   - Name: NoteId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: CompletionEventIds
     Offset: '0x10'
     Size: '0x10'
@@ -151,7 +151,7 @@ PlayerMysteriousNoteItem:
   - Name: OriginalNoteID
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: LocalisedTitle
     Offset: '0x10'
     Size: '0x10'
@@ -170,7 +170,7 @@ PlayerNoteStateChangeTelemetryEvent:
   - Name: NoteId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: NoteState
     Offset: '0x10'
     Size: '0x10'
@@ -196,19 +196,19 @@ WieldableMysteriousNoteLayoutItem:
   - Name: Image
     Offset: '0x18'
     Size: '0x38'
-    Type: struct
+    Type: struct TreasureMapWidgetStreamedTexture
   - Name: RadialIcon
     Offset: '0x50'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: NoteTitleWidgetText
     Offset: '0x60'
     Size: '0x3c'
-    Type: struct
+    Type: struct TreasureMapWidgetText
   - Name: NoteBodyWidgetText
     Offset: '0x9c'
     Size: '0x3c'
-    Type: struct
+    Type: struct TreasureMapWidgetText
   - Name: NoteWidth
     Offset: '0xd8'
     Size: '0x4'

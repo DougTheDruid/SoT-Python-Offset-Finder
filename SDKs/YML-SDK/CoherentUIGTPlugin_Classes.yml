@@ -143,7 +143,7 @@ CoherentUIGTHUD:
   - Name: HUDMaterialName
     Offset: '0x310'
     Size: '0x10'
-    Type: struct
+    Type: struct StringAssetReference
   - Name: HUDMaterial
     Offset: '0x320'
     Size: '0x8'

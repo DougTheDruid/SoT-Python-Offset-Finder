@@ -5,15 +5,15 @@ BuoyancyDragSample:
   - Name: Offset
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Normal
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Tangent
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Radius
     Offset: '0x24'
     Size: '0x4'
@@ -74,7 +74,7 @@ BuoyancySampleMovementConfigurationEntry:
   - Name: SampleOffset
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: BuoyancyScaleCurve
     Offset: '0x10'
     Size: '0x8'
@@ -85,7 +85,7 @@ BuoyancyVolumeSample:
   - Name: Offset
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Radius
     Offset: '0xc'
     Size: '0x4'
@@ -151,11 +151,11 @@ FFTWaterQueryResult:
   - Name: Choppiness
     Offset: '0x4'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: Normal
     Offset: '0xc'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: WaterQueryResult
     Offset: '0x18'
     Size: '0x1'
@@ -166,7 +166,7 @@ SplashProbe:
   - Name: Probe
     Offset: '0x8'
     Size: '0xd8'
-    Type: struct
+    Type: struct WaterSplashProbe
   - Name: ProbeSamplingTime
     Offset: '0xe0'
     Size: '0x4'
@@ -198,7 +198,7 @@ SplashProbe:
   - Name: VfxSpawnOffset
     Offset: '0xf4'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Enabled
     Offset: '0x100'
     Size: '0x1'
@@ -263,7 +263,7 @@ WaterSplashProbe:
   - Name: LocalOffset
     Offset: '0x18'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Height
     Offset: '0x24'
     Size: '0x4'
@@ -287,7 +287,7 @@ WaterSplashProbe:
   - Name: LocalOffsetAdjustment
     Offset: '0x38'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: LocalOffsetAdjustmentDuration
     Offset: '0x44'
     Size: '0x4'
@@ -321,7 +321,7 @@ WaterSpout:
   - Name: SpoutLocatorTransform
     Offset: '0x0'
     Size: '0x30'
-    Type: struct
+    Type: struct Transform
   - Name: SpoutParticleSystem
     Offset: '0x30'
     Size: '0x8'

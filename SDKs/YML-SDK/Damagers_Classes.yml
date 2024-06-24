@@ -29,7 +29,7 @@ RadialDamagerComponent:
   - Name: LocalOffset
     Offset: '0xec'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   ClassSize: '0x58'
   FullSize: '0x120'
   InheritedSize: '0xc8'
@@ -51,11 +51,11 @@ ShipDamagerComponent:
   - Name: ShipStrainDamage
     Offset: '0xf8'
     Size: '0x28'
-    Type: struct
+    Type: struct StrainDamage
   - Name: TimeBetweenWatercraftDamage
     Offset: '0x120'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: WatercraftDamage
     Offset: '0x150'
     Size: '0x4'
@@ -85,7 +85,7 @@ ShockwaveDamagerComponent:
   - Name: ForceToApplyToShip
     Offset: '0xe0'
     Size: '0x30'
-    Type: struct
+    Type: struct WeightedProbabilityRangeOfRanges
   - Name: ApplyDamageToShips
     Offset: '0x110'
     Size: '0x1'

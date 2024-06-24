@@ -14,6 +14,43 @@ public:
 };
 
 
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class MysteriousNoteSettings: public Object
+{
+public:
+	int                                                          LookAheadInMinutes;                                // 0x28(0x4)
+	float                                                        RequestTimeout;                                    // 0x2c(0x4)
+	struct StringAssetReference                                  MysteriousNotesCompletionStringsAsset;             // 0x30(0x10)
+	struct StringAssetReference                                  WieldableNoteDataAsset;                            // 0x40(0x10)
+	struct StringAssetReference                                  Image;                                             // 0x50(0x10)
+	struct StringAssetReference                                  NotificationBackground;                            // 0x60(0x10)
+};
+
+
+// Size 0x1a0 (Full Size[0x9b0] - InheritedSize[0x810]
+class WieldableMysteriousNote: public SkeletalMeshWieldableItem
+{
+public:
+	class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x820(0x8)
+	int                                                          CanvasWidth;                                       // 0x828(0x4)
+	int                                                          CanvasHeight;                                      // 0x82c(0x4)
+	float                                                        FontScale;                                         // 0x830(0x4)
+	class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x890(0x8)
+	class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x898(0x8)
+	class InventoryItemComponent*                                InventoryItemComponent;                            // 0x8a0(0x8)
+};
+
+
+// Size 0x1a0 (Full Size[0x268] - InheritedSize[0xc8]
+class PlayerMysteriousNoteComponent: public ActorComponent
+{
+public:
+	bool                                                         CinematicPlayed;                                   // 0xd0(0x1)
+	struct ClientNoteData                                        NoteData;                                          // 0x1c0(0x18)
+	bool                                                         BeenPossessed;                                     // 0x1d8(0x1)
+};
+
+
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class WieldableMysteriousNoteDataAsset: public DataAsset
 {
@@ -29,45 +66,8 @@ class WieldableMysteriousNoteLayout: public DataAsset
 public:
 	struct FText                                                 DefaultTitle;                                      // 0x28(0x38)
 	struct FText                                                 DefaultBody;                                       // 0x60(0x38)
-	struct                                                       DefaultNoteLayoutItem;                             // 0x98(0xe0)
+	struct WieldableMysteriousNoteLayoutItem                     DefaultNoteLayoutItem;                             // 0x98(0xe0)
 	TArray<struct WieldableMysteriousNoteLayoutItem>             NoteLayoutItems;                                   // 0x178(0x10)
-};
-
-
-// Size 0x1a0 (Full Size[0x268] - InheritedSize[0xc8]
-class PlayerMysteriousNoteComponent: public ActorComponent
-{
-public:
-	bool                                                         CinematicPlayed;                                   // 0xd0(0x1)
-	struct                                                       NoteData;                                          // 0x1c0(0x18)
-	bool                                                         BeenPossessed;                                     // 0x1d8(0x1)
-};
-
-
-// Size 0x1a0 (Full Size[0x990] - InheritedSize[0x7f0]
-class WieldableMysteriousNote: public SkeletalMeshWieldableItem
-{
-public:
-	class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x7f8(0x8)
-	int                                                          CanvasWidth;                                       // 0x800(0x4)
-	int                                                          CanvasHeight;                                      // 0x804(0x4)
-	float                                                        FontScale;                                         // 0x808(0x4)
-	class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x868(0x8)
-	class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x870(0x8)
-	class InventoryItemComponent*                                InventoryItemComponent;                            // 0x878(0x8)
-};
-
-
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class MysteriousNoteSettings: public Object
-{
-public:
-	int                                                          LookAheadInMinutes;                                // 0x28(0x4)
-	float                                                        RequestTimeout;                                    // 0x2c(0x4)
-	struct                                                       MysteriousNotesCompletionStringsAsset;             // 0x30(0x10)
-	struct                                                       WieldableNoteDataAsset;                            // 0x40(0x10)
-	struct                                                       Image;                                             // 0x50(0x10)
-	struct                                                       NotificationBackground;                            // 0x60(0x10)
 };
 
 

@@ -9,7 +9,7 @@ ActiveStatusEffect:
   - Name: Descriptor
     Offset: '0x10'
     Size: '0x4'
-    Type: struct
+    Type: struct StatusDescriptor
   - Name: ResponseTemplates
     Offset: '0x18'
     Size: '0x10'
@@ -28,7 +28,7 @@ ApplyStatusEvent:
   - Name: StatusToApply
     Offset: '0x0'
     Size: '0x18'
-    Type: struct
+    Type: struct Status
   ClassSize: '0x18'
 BuffedTargetData:
   Attributes:
@@ -50,14 +50,14 @@ DebugMenuStatusDefinition:
   - Name: Status
     Offset: '0x8'
     Size: '0x18'
-    Type: struct
+    Type: struct Status
   ClassSize: '0x20'
 DelayedStatusEffect:
   Attributes:
   - Name: StatusEffect
     Offset: '0x0'
     Size: '0x18'
-    Type: struct
+    Type: struct Status
   - Name: InEffectTime
     Offset: '0x18'
     Size: '0x4'
@@ -117,7 +117,7 @@ EventStatusMaterialEffectStarted:
   - Name: TintColor
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: TargetEffectStrength
     Offset: '0x28'
     Size: '0x4'
@@ -151,7 +151,7 @@ EventStatusScreenEffectStarted:
   - Name: TintColor
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct LinearColor
   - Name: TargetEffectStrength
     Offset: '0x20'
     Size: '0x4'
@@ -195,14 +195,14 @@ Status:
   - Name: Descriptor
     Offset: '0x10'
     Size: '0x4'
-    Type: struct
+    Type: struct StatusDescriptor
   ClassSize: '0x18'
 StatusActivatedEvent:
   Attributes:
   - Name: Id
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: StatusName
     Offset: '0x10'
     Size: '0x8'
@@ -213,7 +213,7 @@ StatusDeactivatedEvent:
   - Name: Id
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: StatusName
     Offset: '0x10'
     Size: '0x8'
@@ -231,5 +231,5 @@ StatusEffectPersistenceKey:
   - Name: AppliedStatuses
     Offset: '0x0'
     Size: '0x18'
-    Type: struct
+    Type: struct Status
   ClassSize: '0x18'

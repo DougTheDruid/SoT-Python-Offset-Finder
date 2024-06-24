@@ -20,7 +20,7 @@ ContextualTutorialPromptDesc:
   - Name: Feature
     Offset: '0x28'
     Size: '0xc'
-    Type: struct
+    Type: struct FeatureFlag
   - Name: MustBeUnderCount
     Offset: '0x34'
     Size: '0x4'
@@ -49,7 +49,7 @@ IntroductionToSOTIntroAnimatic:
   - Name: IntroAnimationSettings
     Offset: '0x8'
     Size: '0x2c'
-    Type: struct
+    Type: struct FirstPersonAnimaticSettings
   ClassSize: '0x38'
 TutorialStepEndedTelemetryEvent:
   Attributes:

@@ -1,4 +1,46 @@
 {
+  "WaterInteractionComponent": {
+    "Super": "BoxComponent",
+    "FullSize": "0x620",
+    "InheritedSize": "0x600",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ServerCorrectedWaterExclusionZoneCount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x614"
+      }
+    ]
+  },
+  "WaterPlaneExclusionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "UseSpecificComponentForOverlaps",
+        "Type": "struct ActorComponentSelector",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "MockWaterServiceWithValidWaterPlane": {
+    "Super": "MockWaterInterface",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DefaultWaterComponent",
+        "Type": "class FFTWaterComponent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "WaterSpoutVFXComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x158",
@@ -13,7 +55,7 @@
       },
       {
         "Name": "SplashEffectPointBottomZ",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xd8"
       },
@@ -67,7 +109,7 @@
       },
       {
         "Name": "SplashKillPlaneScale",
-        "Type": "struct",
+        "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x118"
       },
@@ -82,48 +124,6 @@
         "Type": "TArray<struct WaterSpout>",
         "Size": "0x10",
         "Offset": "0x130"
-      }
-    ]
-  },
-  "WaterProperties": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "WaterInfo",
-        "Type": "TArray<struct WaterInformation>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "WaterInteractionComponent": {
-    "Super": "BoxComponent",
-    "FullSize": "0x620",
-    "InheritedSize": "0x600",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ServerCorrectedWaterExclusionZoneCount",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x614"
-      }
-    ]
-  },
-  "SplashProbeDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Probes",
-        "Type": "TArray<struct SplashProbe>",
-        "Size": "0x10",
-        "Offset": "0x28"
       }
     ]
   },
@@ -147,7 +147,7 @@
       },
       {
         "Name": "AttachProbesToOwner",
-        "Type": "struct",
+        "Type": "struct ActorComponentSelector",
         "Size": "0x10",
         "Offset": "0x100"
       },
@@ -162,6 +162,34 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x118"
+      }
+    ]
+  },
+  "WaterProperties": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "WaterInfo",
+        "Type": "TArray<struct WaterInformation>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "SplashProbeDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Probes",
+        "Type": "TArray<struct SplashProbe>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },
@@ -194,34 +222,6 @@
         "Type": "double",
         "Size": "0x8",
         "Offset": "0x440"
-      }
-    ]
-  },
-  "MockWaterServiceWithValidWaterPlane": {
-    "Super": "MockWaterInterface",
-    "FullSize": "0x40",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DefaultWaterComponent",
-        "Type": "class FFTWaterComponent*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "WaterPlaneExclusionComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "UseSpecificComponentForOverlaps",
-        "Type": "struct",
-        "Size": "0x10",
-        "Offset": "0xc8"
       }
     ]
   },

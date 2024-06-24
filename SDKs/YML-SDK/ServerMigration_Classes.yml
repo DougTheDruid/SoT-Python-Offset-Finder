@@ -53,7 +53,7 @@ ServerMigrationSerialisationDetailsTestsActorWithNetActorPtr:
   - Name: ActorPtr
     Offset: '0x3c8'
     Size: '0x14'
-    Type: struct
+    Type: struct NetActorPtr
   ClassSize: '0x18'
   FullSize: '0x3e0'
   InheritedSize: '0x3c8'
@@ -73,7 +73,7 @@ ServerMigrationSerialisationDetailsTestsActorWithUniqueNetId:
   - Name: UniqueId
     Offset: '0x3c8'
     Size: '0x18'
-    Type: struct
+    Type: struct UniqueNetIdRepl
   ClassSize: '0x18'
   FullSize: '0x3e0'
   InheritedSize: '0x3c8'
@@ -127,7 +127,7 @@ ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseActor:
   - Name: TestStruct
     Offset: '0x3c8'
     Size: '0x4'
-    Type: struct
+    Type: struct ServerMigrationCustomMigrationSerialisationStruct
   ClassSize: '0x8'
   FullSize: '0x3d0'
   InheritedSize: '0x3c8'
@@ -189,7 +189,7 @@ ServerMigrationSerialisationDetailsTestsUStructProperty:
   - Name: SubStructWithMigrationMarkup
     Offset: '0x28'
     Size: '0xc'
-    Type: struct
+    Type: struct ServerMigrationSerialisationDetailsTestsUStruct
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

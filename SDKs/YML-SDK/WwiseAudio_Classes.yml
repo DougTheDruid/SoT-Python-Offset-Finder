@@ -33,7 +33,7 @@ MovieSceneAkAudioRTPCSection:
   - Name: FloatCurve
     Offset: '0xb0'
     Size: '0x78'
-    Type: struct
+    Type: struct RichCurve
   ClassSize: '0x90'
   FullSize: '0x128'
   InheritedSize: '0x98'

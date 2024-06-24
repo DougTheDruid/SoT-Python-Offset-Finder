@@ -1,114 +1,4 @@
 {
-  "WhilePlayerWithinAreaAIGoal": {
-    "Super": "AIGoal",
-    "FullSize": "0xf0",
-    "InheritedSize": "0x40",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "EnterAreaTriggerDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "ExitAreaTriggerDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "MovementModeFilter",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "TargetPlayerPawn",
-        "Type": "class Pawn*",
-        "Size": "0x8",
-        "Offset": "0x68"
-      }
-    ]
-  },
-  "BTService_SetBestActionSpotNearTarget": {
-    "Super": "BTService",
-    "FullSize": "0x110",
-    "InheritedSize": "0x70",
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "TargetKey",
-        "Type": "struct",
-        "Size": "0x28",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "BestActionSpotKey",
-        "Type": "struct",
-        "Size": "0x28",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "BestActionSpotSelectionCriteria",
-        "Type": "struct",
-        "Size": "0x34",
-        "Offset": "0xc0"
-      }
-    ]
-  },
-  "WhileBlackboardKeySetAIGoal": {
-    "Super": "AIGoal",
-    "FullSize": "0x48",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "BlackboardKey",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal": {
-    "Super": "AIGoal",
-    "FullSize": "0x78",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "InnerRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "OuterRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "MovementModeFilter",
-        "Type": "struct",
-        "Size": "0x20",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "ShouldOnlyActivateWhileDocked",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "TargetPlayerPawn",
-        "Type": "class Pawn*",
-        "Size": "0x8",
-        "Offset": "0x70"
-      }
-    ]
-  },
   "WhileActionSpotAvailableForPatrolAIGoal": {
     "Super": "AIGoal",
     "FullSize": "0x78",
@@ -135,6 +25,76 @@
       }
     ]
   },
+  "WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal": {
+    "Super": "AIGoal",
+    "FullSize": "0x78",
+    "InheritedSize": "0x40",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "InnerRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "OuterRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "MovementModeFilter",
+        "Type": "struct AIGoalMovementModeFilter",
+        "Size": "0x20",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "ShouldOnlyActivateWhileDocked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "TargetPlayerPawn",
+        "Type": "class Pawn*",
+        "Size": "0x8",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "WhilePlayerWithinAreaAIGoal": {
+    "Super": "AIGoal",
+    "FullSize": "0xf0",
+    "InheritedSize": "0x40",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "EnterAreaTriggerDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "ExitAreaTriggerDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "MovementModeFilter",
+        "Type": "struct AIGoalMovementModeFilter",
+        "Size": "0x20",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "TargetPlayerPawn",
+        "Type": "class Pawn*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      }
+    ]
+  },
   "AIHomeComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xd8",
@@ -146,6 +106,46 @@
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0xd0"
+      }
+    ]
+  },
+  "WhileBlackboardKeySetAIGoal": {
+    "Super": "AIGoal",
+    "FullSize": "0x48",
+    "InheritedSize": "0x40",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "BlackboardKey",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "BTService_SetBestActionSpotNearTarget": {
+    "Super": "BTService",
+    "FullSize": "0x110",
+    "InheritedSize": "0x70",
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "TargetKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "BestActionSpotKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "BestActionSpotSelectionCriteria",
+        "Type": "struct BestActionSpotSelectionCriteria",
+        "Size": "0x34",
+        "Offset": "0xc0"
       }
     ]
   },

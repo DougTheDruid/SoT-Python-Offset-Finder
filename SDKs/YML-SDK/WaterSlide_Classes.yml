@@ -17,7 +17,7 @@ InteractableZipline:
   - Name: AttachPointLocationOffset
     Offset: '0x788'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x20'
   FullSize: '0x790'
   InheritedSize: '0x770'
@@ -69,7 +69,7 @@ RidePlayerComponent:
   - Name: PlayerZiplineTrailVFXSpawnLocation
     Offset: '0x120'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: CurrentRide
     Offset: '0x140'
     Size: '0x8'
@@ -107,7 +107,7 @@ WaterSlide:
   - Name: EndOfSlideLaunchForce
     Offset: '0x40c'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: WaterSlideAudioParams
     Offset: '0x418'
     Size: '0x8'
@@ -155,7 +155,7 @@ WaterSlideParamsDataAsset:
   - Name: WaterSlideParams
     Offset: '0x28'
     Size: '0x28'
-    Type: struct
+    Type: struct WaterSlideParams
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
@@ -177,7 +177,7 @@ Zipline:
   - Name: ZiplineFeelParameters
     Offset: '0x3e8'
     Size: '0x310'
-    Type: struct
+    Type: struct ZiplineFeelParameters
   - Name: ZiplineFXParams
     Offset: '0x6f8'
     Size: '0x8'
@@ -189,11 +189,11 @@ Zipline:
   - Name: ForwardsAttachDetachOffsets
     Offset: '0x704'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: BackwardsAttachDetachOffsets
     Offset: '0x70c'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   - Name: ZiplineGeometry
     Offset: '0x740'
     Size: '0x8'
@@ -213,7 +213,7 @@ Zipline:
   - Name: PlayerAttachStat
     Offset: '0x760'
     Size: '0x4'
-    Type: struct
+    Type: struct PlayerStat
   ClassSize: '0x390'
   FullSize: '0x770'
   InheritedSize: '0x3e0'
@@ -259,7 +259,7 @@ ZiplineFXParams:
   - Name: SpawnParticleSpeedThreshold
     Offset: '0x70'
     Size: '0x8'
-    Type: struct
+    Type: struct Vector2D
   ClassSize: '0x50'
   FullSize: '0x78'
   InheritedSize: '0x28'

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BoneCallerImpactIdToSpawner:
   Attributes:
-  - Name: ImpactProjectileId
+  - Name: BoneCallerSpawnId
     Offset: '0x0'
     Size: '0x8'
     Type: class UClass*
@@ -35,7 +35,7 @@ BoneCallerUsageTelemetry:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
-    Type: struct
+    Type: struct Vector
   - Name: Region
     Offset: '0x10'
     Size: '0x10'
@@ -50,7 +50,7 @@ EventOnBoneCallerDidKillEvent:
   - Name: DamageInstance
     Offset: '0x8'
     Size: '0x30'
-    Type: struct
+    Type: struct DamageInstance
   ClassSize: '0x38'
 EventOnBoneCallerExploded:
   Attributes:
@@ -62,7 +62,7 @@ EventOnBoneCallerExploded:
     Offset: '0x8'
     Size: '0x8'
     Type: class Actor*
-  - Name: ImpactProjectileId
+  - Name: BoneCallerSpawnId
     Offset: '0x20'
     Size: '0x8'
     Type: class Object*

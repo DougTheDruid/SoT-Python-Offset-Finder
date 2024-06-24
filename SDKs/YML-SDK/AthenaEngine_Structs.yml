@@ -76,7 +76,7 @@ ConfigurableStructureInstanceWrapper:
   - Name: Value
     Offset: '0x0'
     Size: '0x20'
-    Type: struct
+    Type: struct UserDefinedStructWithSerialisableValue
   ClassSize: '0x20'
 EventCancelForceFeedback:
   Attributes:

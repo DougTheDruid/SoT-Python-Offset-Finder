@@ -10,7 +10,7 @@
 class LightPropagationVolumeBlendable: public Object
 {
 public:
-	struct                                                       Settings;                                          // 0x30(0x70)
+	struct LightPropagationVolumeSettings                        Settings;                                          // 0x30(0x70)
 	float                                                        BlendWeight;                                       // 0xa0(0x4)
 };
 

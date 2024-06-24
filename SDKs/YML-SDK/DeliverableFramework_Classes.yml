@@ -59,7 +59,7 @@ DeliverableRequirementsDataAsset:
   - Name: FeatureOverrideRequirements
     Offset: '0x38'
     Size: '0x18'
-    Type: struct
+    Type: struct DeliverableRequirementFeatureOverride
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'

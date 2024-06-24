@@ -16,7 +16,7 @@ CrewFactionEntry:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Faction
     Offset: '0x10'
     Size: '0x8'
@@ -47,11 +47,11 @@ CrewFactionEntryData:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: SessionId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Faction
     Offset: '0x20'
     Size: '0x8'
@@ -86,11 +86,11 @@ CrewFactionTelemetryData:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: SessionId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Faction
     Offset: '0x20'
     Size: '0x8'
@@ -109,7 +109,7 @@ CrewJoinedFaction:
   - Name: JoiningCrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: FactionJoined
     Offset: '0x10'
     Size: '0x8'
@@ -120,7 +120,7 @@ CrewJoinedFactionSuccess:
   - Name: JoiningCrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: FactionJoined
     Offset: '0x10'
     Size: '0x8'
@@ -131,7 +131,7 @@ CrewLeavingFaction:
   - Name: LeavingCrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: FactionToLeave
     Offset: '0x10'
     Size: '0x8'
@@ -146,7 +146,7 @@ CrewLeftFaction:
   - Name: LeavingCrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: FactionLeft
     Offset: '0x10'
     Size: '0x8'
@@ -161,7 +161,7 @@ CrewStreakLevelIncreased:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: StreakLevel
     Offset: '0x10'
     Size: '0x4'
@@ -176,14 +176,14 @@ CrewsSunkShipEvent:
   - Name: SunkShipCrewId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
 FactionCrewAttackedPreviouslySunkCrewTelemetryEvent:
   Attributes:
   - Name: FactionSessionId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: AlignedFactionName
     Offset: '0x10'
     Size: '0x8'
@@ -191,18 +191,18 @@ FactionCrewAttackedPreviouslySunkCrewTelemetryEvent:
   - Name: AttackingCrewId
     Offset: '0x18'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: SunkCrewId
     Offset: '0x28'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x38'
 FactionJoinedTelemetryEvent:
   Attributes:
   - Name: FactionSessionId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: AlignedFactionName
     Offset: '0x10'
     Size: '0x8'
@@ -213,7 +213,7 @@ FactionLeftTelemetryEvent:
   - Name: FactionSessionId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: AlignedFactionName
     Offset: '0x10'
     Size: '0x8'
@@ -239,7 +239,7 @@ FactionServicePostMigrationEvent:
   - Name: CrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: Faction
     Offset: '0x10'
     Size: '0x8'
@@ -254,14 +254,14 @@ FactionShipDefeatedEvent:
   - Name: DefeatedCrewId
     Offset: '0x10'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x20'
 FactionStreakIncreasedTelemetryEvent:
   Attributes:
   - Name: CrewFactionData
     Offset: '0x0'
     Size: '0x30'
-    Type: struct
+    Type: struct CrewFactionTelemetryData
   ClassSize: '0x30'
 FactionStreakLevelData:
   Attributes:
@@ -309,5 +309,5 @@ ShipDestroyedByBattleBoundsEvent:
   - Name: SunkShipCrewId
     Offset: '0x0'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   ClassSize: '0x10'

@@ -15,7 +15,7 @@ public:
 class SaferSeasSettings: public DeveloperSettings
 {
 public:
-	struct                                                       SaferSeasBlacklistAsset;                           // 0x38(0x10)
+	struct StringAssetReference                                  SaferSeasBlacklistAsset;                           // 0x38(0x10)
 };
 
 

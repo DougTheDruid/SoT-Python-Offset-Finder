@@ -1,44 +1,4 @@
 {
-  "GetPromptsLocalService": {
-    "Super": "BlueprintAsyncActionBase",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Loaded",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "WorldContextObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "PrioritisedPromptsManager": {
-    "Super": "Object",
-    "FullSize": "0x78",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "AllPrompts",
-        "Type": "TArray<struct PrioritisedPromptWithHandle>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "PlayerController",
-        "Type": "class PlayerController*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      }
-    ]
-  },
   "BasePromptCoordinator": {
     "Super": "Object",
     "FullSize": "0x118",
@@ -76,6 +36,46 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "GetPromptsLocalService": {
+    "Super": "BlueprintAsyncActionBase",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Loaded",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "WorldContextObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "PrioritisedPromptsManager": {
+    "Super": "Object",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "AllPrompts",
+        "Type": "TArray<struct PrioritisedPromptWithHandle>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "PlayerController",
+        "Type": "class PlayerController*",
+        "Size": "0x8",
+        "Offset": "0x40"
       }
     ]
   },

@@ -47,7 +47,7 @@ GameMapsSettings:
   - Name: GameInstanceClass
     Offset: '0x60'
     Size: '0x10'
-    Type: struct
+    Type: struct StringClassReference
   - Name: GameDefaultMap
     Offset: '0x70'
     Size: '0x10'
@@ -59,11 +59,11 @@ GameMapsSettings:
   - Name: GlobalDefaultGameMode
     Offset: '0x90'
     Size: '0x10'
-    Type: struct
+    Type: struct StringClassReference
   - Name: GlobalDefaultServerGameMode
     Offset: '0xa0'
     Size: '0x10'
-    Type: struct
+    Type: struct StringClassReference
   ClassSize: '0x88'
   FullSize: '0xb0'
   InheritedSize: '0x28'
@@ -169,7 +169,7 @@ GeneralProjectSettings:
   - Name: ProjectID
     Offset: '0x98'
     Size: '0x10'
-    Type: struct
+    Type: struct Guid
   - Name: ProjectName
     Offset: '0xa8'
     Size: '0x10'
