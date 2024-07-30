@@ -1,4 +1,55 @@
 {
+  "ContextualTutorialPromptDesc": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "PromptActorClass",
+        "Type": "assetclass",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AccessKey",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MustBeUnderCount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "HasTutorialStarterBegunCondition": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TutorialStarterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "EventTutorialTypeDecided": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "TutorialType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TutorialStepEndedTelemetryEvent": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -28,28 +79,6 @@
       }
     ]
   },
-  "EventTutorialTypeDecided": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "TutorialType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "HasTutorialStarterBegunCondition": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "TutorialStarterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "BeachNPCSpawnFlowNetworkEvent": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -75,35 +104,6 @@
         "Type": "struct FirstPersonAnimaticSettings",
         "Size": "0x2c",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "ContextualTutorialPromptDesc": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "PromptActorClass",
-        "Type": "assetclass",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AccessKey",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MustBeUnderCount",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x34"
       }
     ]
   },

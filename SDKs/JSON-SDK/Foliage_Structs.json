@@ -1,4 +1,33 @@
 {
+  "FoliageTypeObject": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "FoliageTypeObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TypeInstance",
+        "Type": "class FoliageType_InstancedStaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "bIsAsset",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Type",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "ProceduralFoliageInstance": {
     "ClassSize": "0x60",
     "Attributes": [
@@ -37,35 +66,6 @@
         "Type": "class FoliageType_InstancedStaticMesh*",
         "Size": "0x8",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "FoliageTypeObject": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "FoliageTypeObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TypeInstance",
-        "Type": "class FoliageType_InstancedStaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "bIsAsset",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Type",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x18"
       }
     ]
   },

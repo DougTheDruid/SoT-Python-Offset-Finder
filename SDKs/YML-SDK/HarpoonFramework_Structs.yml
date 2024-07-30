@@ -6,19 +6,35 @@ EventPortableHarpoonProjectileClientStateChanged:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x1'
+  - Name: IsPredicted
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x2'
 EventPortableHarpoonProjectileImpact:
   Attributes:
   - Name: HitActor
     Offset: '0x0'
     Size: '0x8'
     Type: class Actor*
-  - Name: HitMaterial
+  - Name: LocationIsRelative
     Offset: '0x8'
-    Size: '0x8'
-    Type: class PhysicalMaterial*
-  - Name: HitNormal
+    Size: '0x1'
+    Type: bool
+  - Name: RelativeComponent
     Offset: '0x10'
+    Size: '0x8'
+    Type: class SceneComponent*
+  - Name: HitLocation
+    Offset: '0x18'
     Size: '0xc'
     Type: struct Vector
-  ClassSize: '0x20'
+  - Name: HitNormal
+    Offset: '0x24'
+    Size: '0xc'
+    Type: struct Vector
+  - Name: HitMaterial
+    Offset: '0x30'
+    Size: '0x8'
+    Type: class PhysicalMaterial*
+  ClassSize: '0x38'

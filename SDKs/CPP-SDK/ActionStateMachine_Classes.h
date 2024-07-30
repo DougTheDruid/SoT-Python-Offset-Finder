@@ -6,6 +6,14 @@
 #include "ActionStateMachine_Structs.h"
 
 
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class CustomClientValidityCheckCallback: public Object
+{
+public:
+	bool                                                         ShouldPassClientValidation;                        // 0x28(0x1)
+};
+
+
 // Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class ActionStatePriorityTableData: public DataAsset
 {
@@ -15,11 +23,11 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class CustomClientValidityCheckCallback: public Object
+// Size 0x790 (Full Size[0x858] - InheritedSize[0xc8]
+class ActionStateMachineComponent: public ActorComponent
 {
 public:
-	bool                                                         ShouldPassClientValidation;                        // 0x28(0x1)
+	multicastinlinedelegate                                      OnActionChangedOnTrack;                            // 0xe0(0x10)
 };
 
 
@@ -31,14 +39,6 @@ public:
 	class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x5e8(0x8)
 	class UClass*                                                ActionStateCreatorDefinition;                      // 0x5f0(0x8)
 	class UClass*                                                ActionStateInitialStateCreatorDefinition;          // 0x5f8(0x8)
-};
-
-
-// Size 0x790 (Full Size[0x858] - InheritedSize[0xc8]
-class ActionStateMachineComponent: public ActorComponent
-{
-public:
-	multicastinlinedelegate                                      OnActionChangedOnTrack;                            // 0xe0(0x10)
 };
 
 

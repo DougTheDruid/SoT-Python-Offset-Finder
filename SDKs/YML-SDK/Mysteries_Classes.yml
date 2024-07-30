@@ -31,36 +31,36 @@ AbandonedNoteWeightedTextSourceComponent:
 OneShotRewardableObjectBase:
   Attributes:
   - Name: InteractableComponent
-    Offset: '0x468'
+    Offset: '0x460'
     Size: '0x8'
     Type: class InteractableComponent*
   - Name: StaticMeshComponent
-    Offset: '0x470'
+    Offset: '0x468'
     Size: '0x8'
     Type: class StaticMeshComponent*
   - Name: Reward
-    Offset: '0x478'
+    Offset: '0x470'
     Size: '0x8'
     Type: struct RewardId
   - Name: RewardEntitlement
-    Offset: '0x480'
+    Offset: '0x478'
     Size: '0x8'
     Type: class UClass*
   - Name: InteractionHoldTime
-    Offset: '0x488'
+    Offset: '0x480'
     Size: '0x4'
     Type: float
   - Name: InteractionRadius
-    Offset: '0x48c'
+    Offset: '0x484'
     Size: '0x4'
     Type: float
   - Name: DisplayName
-    Offset: '0x490'
+    Offset: '0x488'
     Size: '0x38'
     Type: struct FText
   ClassSize: '0x80'
-  FullSize: '0x4e8'
-  InheritedSize: '0x468'
+  FullSize: '0x4e0'
+  InheritedSize: '0x460'
   Super: InteractableObject
 PopUpNotificationOnItemWieldedComponent:
   Attributes:

@@ -1,90 +1,4 @@
 {
-  "GameplayDebuggerSettings": {
-    "Super": "Object",
-    "FullSize": "0xa8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "CustomViewNames",
-        "Type": "struct GDTCustomViewNames",
-        "Size": "0x50",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "OverHead",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "Basic",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x79"
-      },
-      {
-        "Name": "BehaviorTree",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x7a"
-      },
-      {
-        "Name": "EQS",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x7b"
-      },
-      {
-        "Name": "EnableEQSOnHUD",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x7c"
-      },
-      {
-        "Name": "ActiveEQSIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "Perception",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x84"
-      },
-      {
-        "Name": "GameView1",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x85"
-      },
-      {
-        "Name": "GameView2",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x86"
-      },
-      {
-        "Name": "GameView3",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x87"
-      },
-      {
-        "Name": "GameView4",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "GameView5",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x89"
-      }
-    ]
-  },
   "GameplayDebuggingReplicator": {
     "Super": "Actor",
     "FullSize": "0x478",
@@ -576,6 +490,92 @@
         "Type": "class PlayerController*",
         "Size": "0x8",
         "Offset": "0x3e0"
+      }
+    ]
+  },
+  "GameplayDebuggerSettings": {
+    "Super": "Object",
+    "FullSize": "0xa8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "CustomViewNames",
+        "Type": "struct GDTCustomViewNames",
+        "Size": "0x50",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OverHead",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "Basic",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x79"
+      },
+      {
+        "Name": "BehaviorTree",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x7a"
+      },
+      {
+        "Name": "EQS",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x7b"
+      },
+      {
+        "Name": "EnableEQSOnHUD",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x7c"
+      },
+      {
+        "Name": "ActiveEQSIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "Perception",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "GameView1",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x85"
+      },
+      {
+        "Name": "GameView2",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x86"
+      },
+      {
+        "Name": "GameView3",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x87"
+      },
+      {
+        "Name": "GameView4",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "GameView5",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x89"
       }
     ]
   },

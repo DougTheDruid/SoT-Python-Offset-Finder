@@ -10,29 +10,6 @@
       }
     ]
   },
-  "EmoteDiceOutcomeTelemetryEvent": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "MaxLimit",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RollNumber",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "OrientationUsed",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "EmotePropRandomObjectInfo": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -62,6 +39,75 @@
       }
     ]
   },
+  "EmoteDiceOutcomeTelemetryEvent": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "MaxLimit",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RollNumber",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "OrientationUsed",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EmoteInteractionTooltipInstance": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "InteractionTooltipType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DisplayString",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "DisplayStringArgs",
+        "Type": "TArray<struct Text>",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "IsProgressBar",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "EventEmoteEndRequested": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "EmoteIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "EndForcedEmote",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "EmoteRandomObjectOutcomeTelemetryEvent": {
     "ClassSize": "0x60",
     "Attributes": [
@@ -88,17 +134,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x50"
-      }
-    ]
-  },
-  "EventEnableLookAtEmoteCamera": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "LookAtTarget",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
       }
     ]
   },
@@ -137,6 +172,17 @@
       }
     ]
   },
+  "EventEnableLookAtEmoteCamera": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "LookAtTarget",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EventEmoteCompleted": {
     "ClassSize": "0xc",
     "Attributes": [
@@ -154,25 +200,8 @@
       }
     ]
   },
-  "EventEmoteEndRequested": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "EmoteIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "EndForcedEmote",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "EmoteData": {
-    "ClassSize": "0xa0",
+    "ClassSize": "0xd0",
     "Attributes": [
       {
         "Name": "EmoteId",
@@ -233,51 +262,115 @@
         "Type": "class AthenaSpringArmComponentParams*",
         "Size": "0x8",
         "Offset": "0x98"
+      },
+      {
+        "Name": "DurationUntilPlayerHiddenFromAI",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "OverrideInteractableBoxData",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xa4"
+      },
+      {
+        "Name": "BoxExtent",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "BoxOrigin",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xb4"
+      },
+      {
+        "Name": "BoxRotation",
+        "Type": "struct Rotator",
+        "Size": "0xc",
+        "Offset": "0xc0"
+      }
+    ]
+  },
+  "EmoteInteractionTooltipData": {
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "Tooltip",
+        "Type": "struct EmoteInteractionTooltipInstance",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GreyedOut",
+        "Type": "struct EmoteInteractionTooltipInstance",
+        "Size": "0x58",
+        "Offset": "0x58"
       }
     ]
   },
   "EventEmoteSwapped": {
-    "ClassSize": "0xa0",
+    "ClassSize": "0xd0",
     "Attributes": [
       {
         "Name": "EmoteData",
         "Type": "struct EmoteData",
-        "Size": "0xa0",
+        "Size": "0xd0",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventEmoteStarted": {
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "EmoteData",
+        "Type": "struct EmoteData",
+        "Size": "0xd0",
         "Offset": "0x0"
       }
     ]
   },
   "EventEmoteRequested": {
-    "ClassSize": "0xb0",
+    "ClassSize": "0xe0",
     "Attributes": [
       {
         "Name": "EmoteData",
         "Type": "struct EmoteData",
-        "Size": "0xa0",
+        "Size": "0xd0",
         "Offset": "0x0"
       },
       {
         "Name": "ForcedEmoteIdentifier",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0xa0"
+        "Offset": "0xd0"
       },
       {
         "Name": "ForcedEmote",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xa8"
+        "Offset": "0xd8"
       }
     ]
   },
-  "EventEmoteStarted": {
-    "ClassSize": "0xa0",
+  "WalkableEmoteData": {
+    "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "EmoteData",
-        "Type": "struct EmoteData",
-        "Size": "0xa0",
-        "Offset": "0x0"
+        "Name": "EmotePrimaryInteractionTooltipData",
+        "Type": "TArray<struct EmoteInteractionTooltipData>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "EmoteSecondaryInteractionTooltipData",
+        "Type": "TArray<struct EmoteInteractionTooltipData>",
+        "Size": "0x10",
+        "Offset": "0xe0"
       }
     ]
   },

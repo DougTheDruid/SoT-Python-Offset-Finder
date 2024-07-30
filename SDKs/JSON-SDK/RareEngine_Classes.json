@@ -1,15 +1,15 @@
 {
-  "MemoryUsageVisualiserSettings": {
+  "StallDetector": {
     "Super": "Object",
-    "FullSize": "0x38",
+    "FullSize": "0x50",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "VisualiserCategories",
-        "Type": "TArray<struct MemoryVisualiserCategory>",
+        "Name": "Callback",
+        "Type": "multicastinlinedelegate",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x30"
       }
     ]
   },
@@ -27,17 +27,17 @@
       }
     ]
   },
-  "StallDetector": {
+  "MemoryUsageVisualiserSettings": {
     "Super": "Object",
-    "FullSize": "0x50",
+    "FullSize": "0x38",
     "InheritedSize": "0x28",
-    "ClassSize": "0x28",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Callback",
-        "Type": "multicastinlinedelegate",
+        "Name": "VisualiserCategories",
+        "Type": "TArray<struct MemoryVisualiserCategory>",
         "Size": "0x10",
-        "Offset": "0x30"
+        "Offset": "0x28"
       }
     ]
   },

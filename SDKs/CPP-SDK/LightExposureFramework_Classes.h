@@ -11,7 +11,15 @@ public:
 };
 
 
-// Size 0x50 (Full Size[0x418] - InheritedSize[0x3c8]
+// Size 0x70 (Full Size[0x138] - InheritedSize[0xc8]
+class LightSensitiveComponent: public ActorComponent
+{
+public:
+	class LightSourceManager*                                    LightSourceManager;                                // 0x130(0x8)
+};
+
+
+// Size 0x58 (Full Size[0x420] - InheritedSize[0x3c8]
 class LightSourceManager: public Actor
 {
 public:
@@ -19,15 +27,8 @@ public:
 	TArray<class Actor*>                                         LightSensitiveActors;                              // 0x3e0(0x10)
 	float                                                        UpdateTimeThreshold;                               // 0x3f0(0x4)
 	bool                                                         ShouldUseTimeThreshold;                            // 0x3f4(0x1)
-	int                                                          MaxLightsourceParamCount;                          // 0x414(0x4)
-};
-
-
-// Size 0x68 (Full Size[0x130] - InheritedSize[0xc8]
-class LightSensitiveComponent: public ActorComponent
-{
-public:
-	class LightSourceManager*                                    LightSourceManager;                                // 0x128(0x8)
+	uint32                                                       StayActiveForNumberOfTicks;                        // 0x414(0x4)
+	int                                                          MaxLightsourceParamCount;                          // 0x41c(0x4)
 };
 
 

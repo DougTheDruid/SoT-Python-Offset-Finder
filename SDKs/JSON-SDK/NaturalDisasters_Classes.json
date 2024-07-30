@@ -1,162 +1,4 @@
 {
-  "AshenLordAshCloud": {
-    "Super": "Actor",
-    "FullSize": "0x450",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "CloudMesh",
-        "Type": "class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "SetupData",
-        "Type": "class AshenLordAshCloudSetupDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "InnerRangeStartOffset",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "OuterRangeStart",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3dc"
-      },
-      {
-        "Name": "NormalisedEngulfedRTPC",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "RTPCSecondsBetweenUpdates",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3e8"
-      },
-      {
-        "Name": "LifeTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "StartTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3f4"
-      },
-      {
-        "Name": "TimeOffset",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "CloudState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x3fc"
-      },
-      {
-        "Name": "MaxRadiusMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x434"
-      }
-    ]
-  },
-  "GeyserSetupDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0xe8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "IsEnabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "DormantDuration",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "InitialWarningDuration",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "NumSpurtsPerActivation",
-        "Type": "struct WeightedProbabilityRange",
-        "Size": "0x20",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "TimeBetweenSpurts",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "ShouldDestroyOnDeactivation",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "DestroyAfterDeactivationDelay",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xe4"
-      }
-    ]
-  },
-  "AshenLordVolcano": {
-    "Super": "Actor",
-    "FullSize": "0x438",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "VolcanoSetupData",
-        "Type": "class AshenLordVolcanoSetupDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      }
-    ]
-  },
-  "DisableGeyserMechanismAction": {
-    "Super": "Actor",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "MechanismActionComponent",
-        "Type": "class MechanismActionComponent*",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "GeysersToDisable",
-        "Type": "TArray<class Geyser*>",
-        "Size": "0x10",
-        "Offset": "0x3d0"
-      }
-    ]
-  },
   "EarthquakeSetupDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x328",
@@ -315,128 +157,6 @@
       }
     ]
   },
-  "Earthquake": {
-    "Super": "Actor",
-    "FullSize": "0x5b8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x1f0",
-    "Attributes": [
-      {
-        "Name": "EarthquakeSetupData",
-        "Type": "class EarthquakeSetupDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "EarthquakeSetupDataOverride",
-        "Type": "class EarthquakeSetupDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "SelectedEarthquakeDataForNextQuake",
-        "Type": "class EarthquakeSetupDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x3e8"
-      },
-      {
-        "Name": "StoryCustomisationData",
-        "Type": "TArray<struct EarthquakeStoryCustomisationData>",
-        "Size": "0x10",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "AssociatedVolcano",
-        "Type": "class Volcano*",
-        "Size": "0x8",
-        "Offset": "0x400"
-      },
-      {
-        "Name": "AssociatedGeyserManager",
-        "Type": "class GeyserManager*",
-        "Size": "0x8",
-        "Offset": "0x408"
-      },
-      {
-        "Name": "EarthquakeEffectInnerRadiusOffsetInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "AudioPool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "PlayEarthquakeLarge",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "StopEarthquakeLarge",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "PlayEarthquakeSmall",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "StopEarthquakeSmall",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "EarthquakeRtpcName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "EarthquakeRtpcMin",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "EarthquakeRtpcMax",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44c"
-      },
-      {
-        "Name": "EarthquakeSizeToUseLargeAttenuation",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "HitDetectionVolume",
-        "Type": "class CapsuleComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "WindZone",
-        "Type": "class WindZoneComponent*",
-        "Size": "0x8",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "EarthquakeState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x468"
-      }
-    ]
-  },
   "GeyserManager": {
     "Super": "Actor",
     "FullSize": "0x448",
@@ -481,261 +201,191 @@
       }
     ]
   },
-  "SeatStat_IslandVolcanoActive": {
-    "Super": "SeatStat",
-    "FullSize": "0xc0",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x78",
+  "GeyserSetupDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0xe8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "VolcanoIslandName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x48"
+        "Name": "IsEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "DormantDuration",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "InitialWarningDuration",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "NumSpurtsPerActivation",
+        "Type": "struct WeightedProbabilityRange",
+        "Size": "0x20",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "TimeBetweenSpurts",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "ShouldDestroyOnDeactivation",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "DestroyAfterDeactivationDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe4"
       }
     ]
   },
-  "Volcano": {
+  "AshenLordAshCloud": {
     "Super": "Actor",
-    "FullSize": "0x5f0",
+    "FullSize": "0x450",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x228",
+    "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "VolcanoSetupDataOverride",
-        "Type": "class VolcanoSetupDataAsset*",
+        "Name": "CloudMesh",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "SetupData",
+        "Type": "class AshenLordAshCloudSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "InnerRangeStartOffset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "OuterRangeStart",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3dc"
+      },
+      {
+        "Name": "NormalisedEngulfedRTPC",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x3e0"
       },
       {
-        "Name": "SelectedVolcanoDataForNextEruption",
-        "Type": "class VolcanoSetupDataAsset*",
-        "Size": "0x8",
+        "Name": "RTPCSecondsBetweenUpdates",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x3e8"
       },
       {
-        "Name": "StoryCustomisationData",
-        "Type": "TArray<struct VolcanoStoryCustomisationData>",
-        "Size": "0x10",
+        "Name": "LifeTime",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x3f0"
       },
       {
-        "Name": "HitDetectionVolume",
-        "Type": "class CapsuleComponent*",
-        "Size": "0x8",
-        "Offset": "0x400"
+        "Name": "StartTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3f4"
       },
       {
-        "Name": "UseDormantDuration",
-        "Type": "bool",
+        "Name": "TimeOffset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "CloudState",
+        "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x408"
+        "Offset": "0x3fc"
       },
       {
-        "Name": "VolcanoSetupData",
-        "Type": "class VolcanoSetupDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "AssociatedSuperheatedWater",
-        "Type": "class Murk*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "AssociatedLavaZone",
-        "Type": "class LavaZone*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "InnerTargetRadiusInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "OuterTargetRadiusInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x42c"
-      },
-      {
-        "Name": "NearbyPlayerRangeToFireProjectilesInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "RandomShipPositionScale",
+        "Name": "MaxRadiusMultiplier",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x434"
-      },
-      {
-        "Name": "WarmingUpEmitter",
-        "Type": "class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "EruptingEmitter",
-        "Type": "class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "BlendedLightingZoneComponent",
-        "Type": "class BlendedLightingZoneComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "BlendedAtmosphericPressureZoneComponent",
-        "Type": "class BlendedAtmosphericPressureZoneComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "BlendedPostProcessingRainZoneComponent",
-        "Type": "class BlendedPostProcessingRainZoneComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "ProjectileLaunchOffset",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "AudioPool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "WarmupAudioPlayEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "WarmupAudioStopEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x480"
-      },
-      {
-        "Name": "EruptingAudioPlayEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x488"
-      },
-      {
-        "Name": "EruptingAudioStopEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x490"
-      },
-      {
-        "Name": "InstantKillZone",
-        "Type": "class CapsuleComponent*",
-        "Size": "0x8",
-        "Offset": "0x498"
-      },
-      {
-        "Name": "InstantKillZoneTestInterval",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4a0"
-      },
-      {
-        "Name": "StateData",
-        "Type": "struct VolcanoStateData",
-        "Size": "0xc",
-        "Offset": "0x4a4"
-      },
-      {
-        "Name": "AssociatedIslandName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x4b0"
       }
     ]
   },
-  "AshenLordVolcanoSetupDataAsset": {
+  "AshenLordAshCloudSetupDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x178",
+    "FullSize": "0xa0",
     "InheritedSize": "0x28",
-    "ClassSize": "0x150",
+    "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "ProjectileTriggerFrequency",
+        "Name": "AshCloudRadiusInMetres",
         "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
         "Offset": "0x28"
       },
       {
-        "Name": "NumProjectilesToTrigger",
-        "Type": "struct WeightedProbabilityRange",
-        "Size": "0x20",
+        "Name": "AshCloudHeightCoefficient",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x58"
       },
       {
-        "Name": "SpawnHeightInMetres",
+        "Name": "AshCloudLifetime",
         "Type": "struct WeightedProbabilityRangeOfRanges",
         "Size": "0x30",
-        "Offset": "0x78"
+        "Offset": "0x60"
       },
       {
-        "Name": "TargetDistanceFromCenterInMetres",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0xa8"
+        "Name": "ScaleUpSpeedCurve",
+        "Type": "class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0x90"
       },
       {
-        "Name": "TimeBetweenSpawns",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0xd8"
-      },
+        "Name": "DissipationCurve",
+        "Type": "class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "AshenLordWorldEndCloud": {
+    "Super": "Actor",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x18",
+    "Attributes": [
       {
-        "Name": "StartPositionOffsetInMetres",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x108"
-      },
-      {
-        "Name": "Projectiles",
-        "Type": "TArray<struct WeightedAshenLordVolcanoProjectile>",
-        "Size": "0x10",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "PoolableProjectilesConfig",
-        "Type": "struct PoolableCollectionMapConfiguration",
-        "Size": "0x18",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "Embers",
-        "Type": "struct VolcanoSetupDataEmbersEntry",
-        "Size": "0x10",
-        "Offset": "0x160"
-      },
-      {
-        "Name": "EmberSpawnHeightInMeters",
+        "Name": "SelfDestructDelayOnComplete",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x170"
+        "Offset": "0x3c8"
       },
       {
-        "Name": "TimeBetweenEmbers",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x174"
+        "Name": "CloudState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3cc"
+      },
+      {
+        "Name": "CurrentCloudAnimation",
+        "Type": "struct AshenLordWorldEndCloudAnimation",
+        "Size": "0x8",
+        "Offset": "0x3d0"
       }
     ]
   },
@@ -911,301 +561,17 @@
       }
     ]
   },
-  "AshenLordAshCloudSetupDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x28",
+  "SeatStat_IslandVolcanoActive": {
+    "Super": "SeatStat",
+    "FullSize": "0xc0",
+    "InheritedSize": "0x48",
     "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "AshCloudRadiusInMetres",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "AshCloudHeightCoefficient",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "AshCloudLifetime",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "ScaleUpSpeedCurve",
-        "Type": "class CurveFloat*",
+        "Name": "VolcanoIslandName",
+        "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "DissipationCurve",
-        "Type": "class CurveFloat*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "AshenLordWorldEndCloud": {
-    "Super": "Actor",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "SelfDestructDelayOnComplete",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "CloudState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x3cc"
-      },
-      {
-        "Name": "CurrentCloudAnimation",
-        "Type": "struct AshenLordWorldEndCloudAnimation",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      }
-    ]
-  },
-  "GeyserManagerSetupDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x1c0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x198",
-    "Attributes": [
-      {
-        "Name": "IsEnabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "DormantDuration",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "ActiveDuration",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "DelayBetweenGeyserGroupsDuringGeyserEvent",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "StartInactive",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "NoRestartAfterGeyserSpurtComplete",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc1"
-      },
-      {
-        "Name": "UseUniqueLocationsForEachGeyser",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc2"
-      },
-      {
-        "Name": "MinDistanceFromPlayerInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc4"
-      },
-      {
-        "Name": "MinGeyserSequenceSpacing",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "GeyserToSpawn",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "NumGeyserGroupsToSpawn",
-        "Type": "struct WeightedProbabilityRange",
-        "Size": "0x20",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "NumGeysersToSpawnPerGroup",
-        "Type": "struct WeightedProbabilityRange",
-        "Size": "0x20",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "SpawnDistanceFromPlayerInMetres",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x118"
-      },
-      {
-        "Name": "SpawnRadiusInMetres",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "SpawnAngleRelativeToPlayerDirection",
-        "Type": "TArray<struct GeyserSpawnAngleOption>",
-        "Size": "0x10",
-        "Offset": "0x178"
-      },
-      {
-        "Name": "DelayBetweenEachGeyserSpawningInAGroup",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x188"
-      },
-      {
-        "Name": "MaximumDensityRadiusInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1b8"
-      },
-      {
-        "Name": "MaximumDensityMaxNumGeysersWithinRadius",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x1bc"
-      }
-    ]
-  },
-  "SuperheatedWaterSetupDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0xe8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "TimeBetweenHealthReduction",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MinimumWaterDepthToCauseDamage",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "TimeBetweenLargeSurfaceEffects",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "LargeSurfaceEffectMinimumDistanceInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "LargeSurfaceEffects",
-        "Type": "struct RandomParticleSystemPicker",
-        "Size": "0x10",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "EffectSpawnHeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "MurkStrengthToStartEffects",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x7c"
-      },
-      {
-        "Name": "TimeBetweenSmallSurfaceEffects",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "NumSmallSurfaceEffects",
-        "Type": "struct WeightedProbabilityRange",
-        "Size": "0x20",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "SmallSurfaceEffects",
-        "Type": "struct DistanceThrottledRandomParticleSystemPicker",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "SmallSurfaceEffectNearbyPlayerRadiusInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "SmallSurfaceEffectOffsetRadiusInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xe4"
-      }
-    ]
-  },
-  "SuperheatedWater": {
-    "Super": "Murk",
-    "FullSize": "0x570",
-    "InheritedSize": "0x468",
-    "ClassSize": "0x108",
-    "Attributes": [
-      {
-        "Name": "SetupData",
-        "Type": "class SuperheatedWaterSetupDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "HitDetectionVolume",
-        "Type": "class CapsuleComponent*",
-        "Size": "0x8",
-        "Offset": "0x480"
-      },
-      {
-        "Name": "FakeUnderwaterLocationsMinDistanceInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x488"
-      },
-      {
-        "Name": "FakeUnderwaterLocationsDistanceBetweenPointsInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x48c"
-      },
-      {
-        "Name": "PlayersInZone",
-        "Type": "TArray<uintptr_t>",
-        "Size": "0x10",
-        "Offset": "0x490"
+        "Offset": "0x48"
       }
     ]
   },
@@ -1430,6 +796,640 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x444"
+      }
+    ]
+  },
+  "SuperheatedWaterSetupDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0xe8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "TimeBetweenHealthReduction",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MinimumWaterDepthToCauseDamage",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "TimeBetweenLargeSurfaceEffects",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "LargeSurfaceEffectMinimumDistanceInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "LargeSurfaceEffects",
+        "Type": "struct RandomParticleSystemPicker",
+        "Size": "0x10",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "EffectSpawnHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "MurkStrengthToStartEffects",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x7c"
+      },
+      {
+        "Name": "TimeBetweenSmallSurfaceEffects",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "NumSmallSurfaceEffects",
+        "Type": "struct WeightedProbabilityRange",
+        "Size": "0x20",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "SmallSurfaceEffects",
+        "Type": "struct DistanceThrottledRandomParticleSystemPicker",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "SmallSurfaceEffectNearbyPlayerRadiusInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "SmallSurfaceEffectOffsetRadiusInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe4"
+      }
+    ]
+  },
+  "Volcano": {
+    "Super": "Actor",
+    "FullSize": "0x5f0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x228",
+    "Attributes": [
+      {
+        "Name": "VolcanoSetupDataOverride",
+        "Type": "class VolcanoSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "SelectedVolcanoDataForNextEruption",
+        "Type": "class VolcanoSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "StoryCustomisationData",
+        "Type": "TArray<struct VolcanoStoryCustomisationData>",
+        "Size": "0x10",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "HitDetectionVolume",
+        "Type": "class CapsuleComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "UseDormantDuration",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "VolcanoSetupData",
+        "Type": "class VolcanoSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "AssociatedSuperheatedWater",
+        "Type": "class Murk*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "AssociatedLavaZone",
+        "Type": "class LavaZone*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "InnerTargetRadiusInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "OuterTargetRadiusInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x42c"
+      },
+      {
+        "Name": "NearbyPlayerRangeToFireProjectilesInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "RandomShipPositionScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x434"
+      },
+      {
+        "Name": "WarmingUpEmitter",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "EruptingEmitter",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "BlendedLightingZoneComponent",
+        "Type": "class BlendedLightingZoneComponent*",
+        "Size": "0x8",
+        "Offset": "0x448"
+      },
+      {
+        "Name": "BlendedAtmosphericPressureZoneComponent",
+        "Type": "class BlendedAtmosphericPressureZoneComponent*",
+        "Size": "0x8",
+        "Offset": "0x450"
+      },
+      {
+        "Name": "BlendedPostProcessingRainZoneComponent",
+        "Type": "class BlendedPostProcessingRainZoneComponent*",
+        "Size": "0x8",
+        "Offset": "0x458"
+      },
+      {
+        "Name": "ProjectileLaunchOffset",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "AudioPool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x470"
+      },
+      {
+        "Name": "WarmupAudioPlayEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Name": "WarmupAudioStopEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x480"
+      },
+      {
+        "Name": "EruptingAudioPlayEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x488"
+      },
+      {
+        "Name": "EruptingAudioStopEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x490"
+      },
+      {
+        "Name": "InstantKillZone",
+        "Type": "class CapsuleComponent*",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Name": "InstantKillZoneTestInterval",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4a0"
+      },
+      {
+        "Name": "StateData",
+        "Type": "struct VolcanoStateData",
+        "Size": "0xc",
+        "Offset": "0x4a4"
+      },
+      {
+        "Name": "AssociatedIslandName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x4b0"
+      }
+    ]
+  },
+  "AshenLordVolcano": {
+    "Super": "Actor",
+    "FullSize": "0x438",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "VolcanoSetupData",
+        "Type": "class AshenLordVolcanoSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      }
+    ]
+  },
+  "GeyserManagerSetupDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x1c0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x198",
+    "Attributes": [
+      {
+        "Name": "IsEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "DormantDuration",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ActiveDuration",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "DelayBetweenGeyserGroupsDuringGeyserEvent",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "StartInactive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "NoRestartAfterGeyserSpurtComplete",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc1"
+      },
+      {
+        "Name": "UseUniqueLocationsForEachGeyser",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc2"
+      },
+      {
+        "Name": "MinDistanceFromPlayerInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "MinGeyserSequenceSpacing",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "GeyserToSpawn",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "NumGeyserGroupsToSpawn",
+        "Type": "struct WeightedProbabilityRange",
+        "Size": "0x20",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "NumGeysersToSpawnPerGroup",
+        "Type": "struct WeightedProbabilityRange",
+        "Size": "0x20",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "SpawnDistanceFromPlayerInMetres",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "SpawnRadiusInMetres",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "SpawnAngleRelativeToPlayerDirection",
+        "Type": "TArray<struct GeyserSpawnAngleOption>",
+        "Size": "0x10",
+        "Offset": "0x178"
+      },
+      {
+        "Name": "DelayBetweenEachGeyserSpawningInAGroup",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x188"
+      },
+      {
+        "Name": "MaximumDensityRadiusInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1b8"
+      },
+      {
+        "Name": "MaximumDensityMaxNumGeysersWithinRadius",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x1bc"
+      }
+    ]
+  },
+  "AshenLordVolcanoSetupDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x178",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x150",
+    "Attributes": [
+      {
+        "Name": "ProjectileTriggerFrequency",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "NumProjectilesToTrigger",
+        "Type": "struct WeightedProbabilityRange",
+        "Size": "0x20",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "SpawnHeightInMetres",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "TargetDistanceFromCenterInMetres",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "TimeBetweenSpawns",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "StartPositionOffsetInMetres",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "Projectiles",
+        "Type": "TArray<struct WeightedAshenLordVolcanoProjectile>",
+        "Size": "0x10",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "PoolableProjectilesConfig",
+        "Type": "struct PoolableCollectionMapConfiguration",
+        "Size": "0x18",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "Embers",
+        "Type": "struct VolcanoSetupDataEmbersEntry",
+        "Size": "0x10",
+        "Offset": "0x160"
+      },
+      {
+        "Name": "EmberSpawnHeightInMeters",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "TimeBetweenEmbers",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x174"
+      }
+    ]
+  },
+  "SuperheatedWater": {
+    "Super": "Murk",
+    "FullSize": "0x570",
+    "InheritedSize": "0x468",
+    "ClassSize": "0x108",
+    "Attributes": [
+      {
+        "Name": "SetupData",
+        "Type": "class SuperheatedWaterSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Name": "HitDetectionVolume",
+        "Type": "class CapsuleComponent*",
+        "Size": "0x8",
+        "Offset": "0x480"
+      },
+      {
+        "Name": "FakeUnderwaterLocationsMinDistanceInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x488"
+      },
+      {
+        "Name": "FakeUnderwaterLocationsDistanceBetweenPointsInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48c"
+      },
+      {
+        "Name": "PlayersInZone",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x490"
+      }
+    ]
+  },
+  "Earthquake": {
+    "Super": "Actor",
+    "FullSize": "0x5b8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x1f0",
+    "Attributes": [
+      {
+        "Name": "EarthquakeSetupData",
+        "Type": "class EarthquakeSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "EarthquakeSetupDataOverride",
+        "Type": "class EarthquakeSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "SelectedEarthquakeDataForNextQuake",
+        "Type": "class EarthquakeSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "StoryCustomisationData",
+        "Type": "TArray<struct EarthquakeStoryCustomisationData>",
+        "Size": "0x10",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "AssociatedVolcano",
+        "Type": "class Volcano*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "AssociatedGeyserManager",
+        "Type": "class GeyserManager*",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "EarthquakeEffectInnerRadiusOffsetInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "AudioPool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "PlayEarthquakeLarge",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "StopEarthquakeLarge",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "PlayEarthquakeSmall",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "StopEarthquakeSmall",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "EarthquakeRtpcName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "EarthquakeRtpcMin",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x448"
+      },
+      {
+        "Name": "EarthquakeRtpcMax",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44c"
+      },
+      {
+        "Name": "EarthquakeSizeToUseLargeAttenuation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x450"
+      },
+      {
+        "Name": "HitDetectionVolume",
+        "Type": "class CapsuleComponent*",
+        "Size": "0x8",
+        "Offset": "0x458"
+      },
+      {
+        "Name": "WindZone",
+        "Type": "class WindZoneComponent*",
+        "Size": "0x8",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "EarthquakeState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x468"
+      }
+    ]
+  },
+  "DisableGeyserMechanismAction": {
+    "Super": "Actor",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MechanismActionComponent",
+        "Type": "class MechanismActionComponent*",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "GeysersToDisable",
+        "Type": "TArray<class Geyser*>",
+        "Size": "0x10",
+        "Offset": "0x3d0"
       }
     ]
   },

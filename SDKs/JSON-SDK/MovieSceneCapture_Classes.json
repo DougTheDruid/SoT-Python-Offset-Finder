@@ -1,4 +1,18 @@
 {
+  "ImageCaptureSettings": {
+    "Super": "FrameGrabberProtocolSettings",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CompressionQuality",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "CompositionGraphCaptureSettings": {
     "Super": "MovieSceneCaptureProtocolSettings",
     "FullSize": "0x58",
@@ -60,20 +74,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "ImageCaptureSettings": {
-    "Super": "FrameGrabberProtocolSettings",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CompressionQuality",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
       }
     ]
   },

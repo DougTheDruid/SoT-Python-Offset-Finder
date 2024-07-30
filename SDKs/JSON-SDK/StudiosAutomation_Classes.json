@@ -109,52 +109,6 @@
       }
     ]
   },
-  "TextureAuditorSettings": {
-    "Super": "TestSettings",
-    "FullSize": "0x88",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "SpecificTexturesToNotAudit",
-        "Type": "TArray<struct StringAssetReference>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "TextureDirectoriesToNotAudit",
-        "Type": "TArray<struct DirectoryPath>",
-        "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "DefaultTextureProperties",
-        "Type": "struct TextureAuditorProperties",
-        "Size": "0x20",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "PerTextureGroupPropertiesOverrides",
-        "Type": "TArray<struct TextureAuditorGroupProperties>",
-        "Size": "0x10",
-        "Offset": "0x78"
-      }
-    ]
-  },
-  "ObjectWithSettableWorld": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "World",
-        "Type": "class World*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "AssetAuditSettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x78",
@@ -184,6 +138,52 @@
         "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x68"
+      }
+    ]
+  },
+  "ObjectWithSettableWorld": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "World",
+        "Type": "class World*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TextureAuditorSettings": {
+    "Super": "TestSettings",
+    "FullSize": "0x88",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "SpecificTexturesToNotAudit",
+        "Type": "TArray<struct StringAssetReference>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "TextureDirectoriesToNotAudit",
+        "Type": "TArray<struct DirectoryPath>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "DefaultTextureProperties",
+        "Type": "struct TextureAuditorProperties",
+        "Size": "0x20",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "PerTextureGroupPropertiesOverrides",
+        "Type": "TArray<struct TextureAuditorGroupProperties>",
+        "Size": "0x10",
+        "Offset": "0x78"
       }
     ]
   },

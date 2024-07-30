@@ -19,6 +19,20 @@
       }
     ]
   },
+  "WindSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x60",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "WindParams",
+        "Type": "struct WindServiceParams",
+        "Size": "0x24",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "TestWindInterface": {
     "Super": "Object",
     "FullSize": "0x68",
@@ -68,20 +82,6 @@
         "Type": "TArray<struct ExtraWind>",
         "Size": "0x10",
         "Offset": "0x4f0"
-      }
-    ]
-  },
-  "WindSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x60",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "WindParams",
-        "Type": "struct WindServiceParams",
-        "Size": "0x24",
-        "Offset": "0x38"
       }
     ]
   },

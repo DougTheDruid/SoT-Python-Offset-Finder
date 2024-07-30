@@ -14,6 +14,22 @@ public:
 };
 
 
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class DeliverableRedirectionContextHandlerBase: public Object
+{
+public:
+	class DeliverableRedirectionDestinationDescriptorBase*       DestinationDescriptor;                             // 0x28(0x8)
+};
+
+
+// Size 0x20 (Full Size[0xe8] - InheritedSize[0xc8]
+class DeliverableComponent: public ActorComponent
+{
+public:
+	class DeliverableRequirementsDataAsset*                      DeliveryRequirementsAsset;                         // 0xd8(0x8)
+};
+
+
 // Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
 class DeliverableRequirementsDataAsset: public DataAsset
 {
@@ -36,22 +52,6 @@ class DeliverableRedirectionCompositeContext: public DeliverableRedirectionConte
 {
 public:
 	TArray<class DeliverableRedirectionContextBase*>             Contexts;                                          // 0x28(0x10)
-};
-
-
-// Size 0x20 (Full Size[0xe8] - InheritedSize[0xc8]
-class DeliverableComponent: public ActorComponent
-{
-public:
-	class DeliverableRequirementsDataAsset*                      DeliveryRequirementsAsset;                         // 0xd8(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class DeliverableRedirectionContextHandlerBase: public Object
-{
-public:
-	class DeliverableRedirectionDestinationDescriptorBase*       DestinationDescriptor;                             // 0x28(0x8)
 };
 
 

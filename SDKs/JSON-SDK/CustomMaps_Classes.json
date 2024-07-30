@@ -1,44 +1,4 @@
 {
-  "CustomMapSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x40",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CustomMapItemDescClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "CustomMapData": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "CustomMapItemDescClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Font",
-        "Type": "class Font*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "MapDisplayItemList",
-        "Type": "TArray<class CustomMapDataTypeBase*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "CustomMapDisplayObjectBase": {
     "Super": "Object",
     "FullSize": "0x38",
@@ -69,21 +29,61 @@
   },
   "CustomMap": {
     "Super": "RenderToTextureMapBase",
-    "FullSize": "0x8f0",
-    "InheritedSize": "0x8c0",
+    "FullSize": "0x8d0",
+    "InheritedSize": "0x8a0",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "Font",
         "Type": "class Font*",
         "Size": "0x8",
-        "Offset": "0x8c8"
+        "Offset": "0x8a0"
       },
       {
         "Name": "DisplayItems",
         "Type": "TArray<class CustomMapDisplayObjectBase*>",
         "Size": "0x10",
-        "Offset": "0x8d0"
+        "Offset": "0x8a8"
+      }
+    ]
+  },
+  "CustomMapData": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "CustomMapItemDescClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Font",
+        "Type": "class Font*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "MapDisplayItemList",
+        "Type": "TArray<class CustomMapDataTypeBase*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "CustomMapSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CustomMapItemDescClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
       }
     ]
   },

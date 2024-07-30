@@ -1,4 +1,54 @@
 {
+  "MovieSceneAkAudioRTPCSectionData": {
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "RTPCName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RTPCCurve",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "MovieSceneAkAudioEventTemplate": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Section",
+        "Type": "class MovieSceneAkAudioEventSection*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "MovieSceneAkAudioRTPCTemplate": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Section",
+        "Type": "class MovieSceneAkAudioRTPCSection*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "WwiseSubtitle": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Subtitle",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "WwiseNativeEmitterPoolDensityParams": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -40,23 +90,6 @@
       }
     ]
   },
-  "MovieSceneAkAudioRTPCSectionData": {
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "RTPCName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RTPCCurve",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "WwiseAudioAcousticSurfaceParams": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -71,34 +104,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
-      }
-    ]
-  },
-  "MovieSceneAkAudioRTPCTemplate": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Section",
-        "Type": "class MovieSceneAkAudioRTPCSection*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "WwiseEmitterParams": {
-    "ClassSize": "0x2",
-    "Attributes": [
-      {
-        "Name": "bEnableObstructionAndOcclusion",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "bEnableAccoustics",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
       }
     ]
   },
@@ -128,6 +133,34 @@
         "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "WwiseEmitterParams": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Name": "bEnableObstructionAndOcclusion",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "bEnableAccoustics",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      }
+    ]
+  },
+  "WwiseExternalSource": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "path",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -163,39 +196,6 @@
         "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x30"
-      }
-    ]
-  },
-  "MovieSceneAkAudioEventTemplate": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Section",
-        "Type": "class MovieSceneAkAudioEventSection*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "WwiseSubtitle": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Subtitle",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "WwiseExternalSource": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "path",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },

@@ -3,16 +3,16 @@
 CustomMap:
   Attributes:
   - Name: Font
-    Offset: '0x8c8'
+    Offset: '0x8a0'
     Size: '0x8'
     Type: class Font*
   - Name: DisplayItems
-    Offset: '0x8d0'
+    Offset: '0x8a8'
     Size: '0x10'
     Type: TArray<class CustomMapDisplayObjectBase*>
   ClassSize: '0x30'
-  FullSize: '0x8f0'
-  InheritedSize: '0x8c0'
+  FullSize: '0x8d0'
+  InheritedSize: '0x8a0'
   Super: RenderToTextureMapBase
 CustomMapData:
   Attributes:

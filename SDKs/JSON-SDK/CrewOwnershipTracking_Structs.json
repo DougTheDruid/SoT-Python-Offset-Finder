@@ -1,38 +1,4 @@
 {
-  "CrewTrackedItemOwnershipSet": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Item",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "TrackItemOwnershipEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "TrackedItem",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CrewMembershipInterface",
-        "Type": "interface",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "CrewTrackedItemOwnershipChanged": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -59,6 +25,40 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "TrackItemOwnershipEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "TrackedItem",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewMembershipInterface",
+        "Type": "interface",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CrewTrackedItemOwnershipSet": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Item",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },

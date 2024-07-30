@@ -141,31 +141,31 @@ InvasionService:
     Size: '0x8'
     Type: class InvasionLocationsDataAsset*
   - Name: MatchmakingCrews
-    Offset: '0x598'
+    Offset: '0x550'
     Size: '0x10'
     Type: TArray<struct InvasionParticipatingCrewData>
   - Name: InvadingCrews
-    Offset: '0x5a8'
+    Offset: '0x560'
     Size: '0x10'
     Type: TArray<struct InvasionParticipatingCrewData>
   - Name: ReplicatedInvasionCrewMusicStates
-    Offset: '0x5b8'
+    Offset: '0x570'
     Size: '0x10'
     Type: TArray<struct ReplicatedInvasionCrewMusicState>
   - Name: MatchmakingCrewsReplicated
-    Offset: '0x5c8'
+    Offset: '0x580'
     Size: '0x10'
     Type: TArray<struct InvasionServiceMatchmakingCrewInfo>
   - Name: InvadingCrewsReplicated
-    Offset: '0x5d8'
+    Offset: '0x590'
     Size: '0x10'
     Type: TArray<struct Guid>
   - Name: InvasionBattleBoundsList
-    Offset: '0x5e8'
+    Offset: '0x5a0'
     Size: '0x10'
     Type: TArray<class InvasionBattleBounds*>
-  ClassSize: '0x298'
-  FullSize: '0x660'
+  ClassSize: '0x268'
+  FullSize: '0x630'
   InheritedSize: '0x3c8'
   Super: Actor
 InvasionServiceDataAsset:
@@ -254,12 +254,8 @@ InvasionServiceDataAsset:
     Offset: '0xa0'
     Size: '0x8'
     Type: class VoyageDescDataAsset*
-  - Name: StopPlayingEmergeMusicAfterSeconds
-    Offset: '0xa8'
-    Size: '0x4'
-    Type: float
   - Name: WorldEventsCooldown
-    Offset: '0xac'
+    Offset: '0xa8'
     Size: '0x4'
     Type: float
   ClassSize: '0x88'

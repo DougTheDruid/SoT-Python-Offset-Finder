@@ -6,11 +6,11 @@
 #include "Interaction_Structs.h"
 
 
-// Size 0xb0 (Full Size[0x690] - InheritedSize[0x5e0]
-class MockActorWithCharacterInteractionComponent: public Character
+// Size 0xd0 (Full Size[0x6d0] - InheritedSize[0x600]
+class CharacterInteractionComponent: public BoxComponent
 {
 public:
-	class CharacterInteractionComponent*                         CharacterInteractionComponent;                     // 0x5e8(0x8)
+	class InteractableArea*                                      CurrentOptimalInteractable;                        // 0x600(0x8)
 };
 
 
@@ -19,14 +19,6 @@ class InteractableService: public Object
 {
 public:
 	TArray<class InteractableArea*>                              InteractableAreas;                                 // 0x38(0x10)
-};
-
-
-// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
-class PlayerInteractionTrackerComponent: public ActorComponent
-{
-public:
-	TArray<struct UniqueNetIdRepl>                               InteractedPlayers;                                 // 0xd0(0x10)
 };
 
 
@@ -41,22 +33,6 @@ public:
 };
 
 
-// Size 0xd0 (Full Size[0x6d0] - InheritedSize[0x600]
-class CharacterInteractionComponent: public BoxComponent
-{
-public:
-	class InteractableArea*                                      CurrentOptimalInteractable;                        // 0x600(0x8)
-};
-
-
-// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
-class InteractionPreventionComponent: public ActorComponent
-{
-public:
-	TArray<class Actor*>                                         ActorsToPreventInteractingWith;                    // 0xd0(0x10)
-};
-
-
 // Size 0x30 (Full Size[0x3f8] - InheritedSize[0x3c8]
 class MockInteractorActor: public Actor
 {
@@ -65,6 +41,14 @@ public:
 	class Object*                                                InteractedObject;                                  // 0x3d8(0x8)
 	class UClass*                                                InteractNotificationType;                          // 0x3e0(0x8)
 	TArray<class Class*>                                         ValidInteractNotificationIds;                      // 0x3e8(0x10)
+};
+
+
+// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
+class PlayerInteractionTrackerComponent: public ActorComponent
+{
+public:
+	TArray<struct UniqueNetIdRepl>                               InteractedPlayers;                                 // 0xd0(0x10)
 };
 
 
@@ -85,6 +69,22 @@ public:
 	TArray<class InteractionPrerequisiteBase*>                   InteractionPrerequisites;                          // 0x108(0x10)
 	class InteractableArea*                                      InteractableArea;                                  // 0x118(0x8)
 	char                                                         CurrentInteractionState;                           // 0x120(0x1)
+};
+
+
+// Size 0xb0 (Full Size[0x690] - InheritedSize[0x5e0]
+class MockActorWithCharacterInteractionComponent: public Character
+{
+public:
+	class CharacterInteractionComponent*                         CharacterInteractionComponent;                     // 0x5e8(0x8)
+};
+
+
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
+class InteractionPreventionComponent: public ActorComponent
+{
+public:
+	TArray<class Actor*>                                         ActorsToPreventInteractingWith;                    // 0xd0(0x10)
 };
 
 

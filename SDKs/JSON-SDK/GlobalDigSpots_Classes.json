@@ -1,4 +1,32 @@
 {
+  "GlobalDigSpotDefinitionList": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DigSpotDefinitions",
+        "Type": "TArray<struct GlobalDigSpotDefinition>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "GlobalDigSpotSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "GlobalDigSpotServiceClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "GlobalDigSpotService": {
     "Super": "Actor",
     "FullSize": "0x3f8",
@@ -22,34 +50,6 @@
         "Type": "class GlobalDigSpotDefinitionList*",
         "Size": "0x8",
         "Offset": "0x3e0"
-      }
-    ]
-  },
-  "GlobalDigSpotSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x40",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "GlobalDigSpotServiceClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "GlobalDigSpotDefinitionList": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "DigSpotDefinitions",
-        "Type": "TArray<struct GlobalDigSpotDefinition>",
-        "Size": "0x10",
-        "Offset": "0x28"
       }
     ]
   },

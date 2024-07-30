@@ -12,7 +12,7 @@ public:
 
 
 // Size 0x10
-struct ActorOfInterestUnregisteredEvent
+struct ActorOfInterestRegisteredEvent
 {
 public:
 	class Actor*                                                 ActorOfInterest;                                   // 0x0(0x8)
@@ -21,7 +21,7 @@ public:
 
 
 // Size 0x10
-struct ActorOfInterestRegisteredEvent
+struct ActorOfInterestUnregisteredEvent
 {
 public:
 	class Actor*                                                 ActorOfInterest;                                   // 0x0(0x8)

@@ -1,15 +1,4 @@
 {
-  "EventBreakableActorWasDamaged": {
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "ImpactDamageEvent",
-        "Type": "struct ImpactDamageEvent",
-        "Size": "0x58",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "EventBreakableActorWasDestroyed": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -24,6 +13,17 @@
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "EventBreakableActorWasDamaged": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "ImpactDamageEvent",
+        "Type": "struct ImpactDamageEvent",
+        "Size": "0x58",
+        "Offset": "0x0"
       }
     ]
   },

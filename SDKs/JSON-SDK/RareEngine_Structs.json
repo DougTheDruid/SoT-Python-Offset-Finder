@@ -22,14 +22,32 @@
       }
     ]
   },
-  "StaticMeshComponentList": {
-    "ClassSize": "0x10",
+  "MemoryVisualiserClass": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Components",
-        "Type": "TArray<class StaticMeshComponent*>",
-        "Size": "0x10",
+        "Name": "ClassType",
+        "Type": "class UClass*",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "MemoryGatheringMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "DisplayName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MemoryUsageMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
       }
     ]
   },
@@ -169,32 +187,14 @@
       }
     ]
   },
-  "MemoryVisualiserClass": {
-    "ClassSize": "0x28",
+  "StaticMeshComponentList": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ClassType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MemoryGatheringMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "DisplayName",
-        "Type": "struct FString",
+        "Name": "Components",
+        "Type": "TArray<class StaticMeshComponent*>",
         "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MemoryUsageMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
+        "Offset": "0x0"
       }
     ]
   },

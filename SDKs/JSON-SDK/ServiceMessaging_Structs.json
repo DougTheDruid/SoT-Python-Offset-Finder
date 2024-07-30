@@ -10,6 +10,17 @@
       }
     ]
   },
+  "ServiceMessagingSubscribedEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "RoutingKey",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TestStructWithNetId": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -22,17 +33,6 @@
     ]
   },
   "ServiceMessagingUnsubscribedEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RoutingKey",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ServiceMessagingSubscribedEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {

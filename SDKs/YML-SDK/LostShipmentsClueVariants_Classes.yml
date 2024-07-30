@@ -107,28 +107,28 @@ AbandonedNoteClueTextIndexAssetMap:
 AbandonedNoteWieldable:
   Attributes:
   - Name: WieldableItemCanvasRenderingComponent
-    Offset: '0x820'
+    Offset: '0x7f8'
     Size: '0x8'
     Type: class WieldableItemCanvasRenderingComponent*
   - Name: AbandonedNoteRenderingComponent
-    Offset: '0x828'
+    Offset: '0x800'
     Size: '0x8'
     Type: class AbandonedNoteWieldableRenderingComponent*
   - Name: InventoryItemComponent
-    Offset: '0x830'
+    Offset: '0x808'
     Size: '0x8'
     Type: class InventoryItemComponent*
   - Name: UsableWieldableComponent
-    Offset: '0x838'
+    Offset: '0x810'
     Size: '0x8'
     Type: class UsableWieldableComponent*
   - Name: QuestMapIcon
-    Offset: '0x840'
+    Offset: '0x818'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x40'
-  FullSize: '0x850'
-  InheritedSize: '0x810'
+  ClassSize: '0x30'
+  FullSize: '0x820'
+  InheritedSize: '0x7f0'
   Super: SkeletalMeshWieldableItem
 AbandonedNoteWieldableRenderingComponent:
   Attributes:
@@ -255,16 +255,16 @@ CircleMapClueDestinationContainerComponent:
 ClueSiteCircleMapWieldable:
   Attributes:
   - Name: InventoryRadialBackgroundTexture
-    Offset: '0x8c0'
+    Offset: '0x898'
     Size: '0x20'
     Type: assetobject
   - Name: MapRadialIconData
-    Offset: '0x8e0'
+    Offset: '0x8b8'
     Size: '0x18'
     Type: struct MapRadialIconData
-  ClassSize: '0x40'
-  FullSize: '0x900'
-  InheritedSize: '0x8c0'
+  ClassSize: '0x30'
+  FullSize: '0x8d0'
+  InheritedSize: '0x8a0'
   Super: RenderToTextureMapBase
 CompositeClueDestinationDescriptor:
   Attributes:

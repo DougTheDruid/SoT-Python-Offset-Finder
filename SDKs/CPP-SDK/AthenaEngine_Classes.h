@@ -6,32 +6,6 @@
 #include "AthenaEngine_Structs.h"
 
 
-// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
-class PrimitiveCollisionExtentAdjustOverTimeComponent: public ActorComponent
-{
-public:
-	float                                                        DelayBeforeExtentAdjustment;                       // 0xc8(0x4)
-	class World*                                                 CachedWorld;                                       // 0xf8(0x8)
-};
-
-
-// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
-class BoxedRpcDispatcherComponent: public ActorComponent
-{
-public:
-	TArray<struct SerialisedRpc>                                 AckPendingClientRPCs;                              // 0xd0(0x10)
-};
-
-
-// Size 0x130 (Full Size[0x5e0] - InheritedSize[0x4b0]
-class DynamicColourPointLightComponent: public PointLightComponent
-{
-public:
-	struct RuntimeFloatCurve                                     ActivationCurve;                                   // 0x4a8(0x80)
-	struct RuntimeFloatCurve                                     DeactivationCurve;                                 // 0x528(0x80)
-};
-
-
 // Size 0x30 (Full Size[0xf8] - InheritedSize[0xc8]
 class RotateMeshToActorComponent: public ActorComponent
 {
@@ -45,6 +19,40 @@ public:
 	bool                                                         PreventPitchModification;                          // 0xe4(0x1)
 	float                                                        MaxPitch;                                          // 0xe8(0x4)
 	float                                                        CloseProximityYawRotation;                         // 0xec(0x4)
+};
+
+
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
+class BoxedRpcDispatcherComponent: public ActorComponent
+{
+public:
+	TArray<struct SerialisedRpc>                                 AckPendingClientRPCs;                              // 0xd0(0x10)
+};
+
+
+// Size 0x30 (Full Size[0xf8] - InheritedSize[0xc8]
+class SkeletalMeshAggregateTickComponent: public ActorComponent
+{
+public:
+	class SkeletalMeshComponent*                                 Mesh;                                              // 0xc8(0x8)
+};
+
+
+// Size 0x130 (Full Size[0x5e0] - InheritedSize[0x4b0]
+class DynamicColourPointLightComponent: public PointLightComponent
+{
+public:
+	struct RuntimeFloatCurve                                     ActivationCurve;                                   // 0x4a8(0x80)
+	struct RuntimeFloatCurve                                     DeactivationCurve;                                 // 0x528(0x80)
+};
+
+
+// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
+class PrimitiveCollisionExtentAdjustOverTimeComponent: public ActorComponent
+{
+public:
+	float                                                        DelayBeforeExtentAdjustment;                       // 0xc8(0x4)
+	class World*                                                 CachedWorld;                                       // 0xf8(0x8)
 };
 
 
@@ -62,14 +70,6 @@ class PersistentAssetCollectionDataAsset: public DataAsset
 public:
 	TArray<class Class*>                                         Blueprints;                                        // 0x28(0x10)
 	TArray<class DataAsset*>                                     DataAssets;                                        // 0x38(0x10)
-};
-
-
-// Size 0x30 (Full Size[0xf8] - InheritedSize[0xc8]
-class SkeletalMeshAggregateTickComponent: public ActorComponent
-{
-public:
-	class SkeletalMeshComponent*                                 Mesh;                                              // 0xc8(0x8)
 };
 
 

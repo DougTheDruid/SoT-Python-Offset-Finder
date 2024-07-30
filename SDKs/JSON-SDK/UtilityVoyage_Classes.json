@@ -13,26 +13,6 @@
       }
     ]
   },
-  "DispatchUtilityVoyageTaleStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x90",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "UtilityVoyageDesc",
-        "Type": "class VoyageDescDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "Migratable",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x88"
-      }
-    ]
-  },
   "UtilityVoyageService": {
     "Super": "Object",
     "FullSize": "0xd8",
@@ -50,6 +30,26 @@
         "Type": "TArray<struct UtilityVoyageData>",
         "Size": "0x10",
         "Offset": "0xc8"
+      }
+    ]
+  },
+  "DispatchUtilityVoyageTaleStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x90",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "UtilityVoyageDesc",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "Migratable",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x88"
       }
     ]
   },

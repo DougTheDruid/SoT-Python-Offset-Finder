@@ -393,15 +393,19 @@ EmissaryLevelChanged:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: AssociatedCrew
+  - Name: OldLevel
     Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: AssociatedCrew
+    Offset: '0x8'
     Size: '0x10'
     Type: struct Guid
   - Name: CompanyName
-    Offset: '0x14'
+    Offset: '0x18'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x1c'
+  ClassSize: '0x20'
 EmissaryLevelData:
   Attributes:
   - Name: LevelTarget

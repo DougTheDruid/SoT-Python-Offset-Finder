@@ -6,6 +6,63 @@
 #include "Factions_Structs.h"
 
 
+// Size 0x130 (Full Size[0x218] - InheritedSize[0xe8]
+class FactionVoteAudioComponent: public VoteAudioComponent
+{
+public:
+	class WwiseEvent*                                            FactionStart;                                      // 0xe8(0x8)
+	class WwiseEvent*                                            Flip;                                              // 0xf0(0x8)
+	class WwiseEvent*                                            Levelup;                                           // 0xf8(0x8)
+	struct FName                                                 LevelupSwitchGroup;                                // 0x100(0x8)
+	TArray<struct Name>                                          LevelupSwitchValues;                               // 0x108(0x10)
+};
+
+
+// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
+class IsInFactionStatCondition: public TargetedStatCondition
+{
+public:
+	bool                                                         CheckOwnerFaction;                                 // 0x30(0x1)
+	bool                                                         RequiresOwnerMaxStreakLevel;                       // 0x31(0x1)
+	class UClass*                                                RequiredOwnerFaction;                              // 0x38(0x8)
+	bool                                                         CheckTargetFaction;                                // 0x40(0x1)
+	bool                                                         RequiresTargetMaxStreakLevel;                      // 0x41(0x1)
+	class UClass*                                                RequiredTargetFaction;                             // 0x48(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class StreakMaterialDataAsset: public DataAsset
+{
+public:
+	TArray<struct StreakMaterialValue>                           MaterialValues;                                    // 0x28(0x10)
+	TArray<struct StreakCompanyMaterials>                        StreakMaterials;                                   // 0x38(0x10)
+};
+
+
+// Size 0xa0 (Full Size[0xd0] - InheritedSize[0x30]
+class FactionVoteConsumerBase: public VoteConsumerInlineBase
+{
+public:
+	class FactionVoteValidatorBase*                              Validator;                                         // 0x40(0x8)
+	class Actor*                                                 OwningActor;                                       // 0x90(0x8)
+	TArray<struct CinematicFactionEvent>                         FactionBannerData;                                 // 0x98(0x10)
+	TArray<struct CrewMemberVotes>                               Votes;                                             // 0xa8(0x10)
+};
+
+
+// Size 0x1a0 (Full Size[0xa60] - InheritedSize[0x8c0]
+class FactionParticleComponent: public ParticleSystemComponent
+{
+public:
+	class UClass*                                                Faction;                                           // 0xa38(0x8)
+	class UClass*                                                JoinedFaction;                                     // 0xa40(0x8)
+	struct Guid                                                  OwningShipCrewId;                                  // 0xa48(0x10)
+	int                                                          OwningShipCrewStreak;                              // 0xa58(0x4)
+	bool                                                         ServerMigrationEnded;                              // 0xa5c(0x1)
+};
+
+
 // Size 0x270 (Full Size[0x8a0] - InheritedSize[0x630]
 class FactionFlipMeshComponent: public StaticMeshComponent
 {
@@ -19,11 +76,26 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class FactionShipStreakDataAsset: public DataAsset
+// Size 0x8 (Full Size[0x168] - InheritedSize[0x160]
+class FactionInteractionVoteComponent: public InlineVotingInteractionComponent
 {
 public:
-	TArray<struct StreakMesh>                                    StreakMeshes;                                      // 0x28(0x10)
+	float                                                        TurnHourglassInteractionHoldTime;                  // 0x160(0x4)
+	int                                                          WaitTimeSimilarityThresholdSeconds;                // 0x164(0x4)
+};
+
+
+// Size 0x118 (Full Size[0x4e0] - InheritedSize[0x3c8]
+class FactionVoteInteractionActor: public Actor
+{
+public:
+	float                                                        FadeDuration;                                      // 0x3d8(0x4)
+	TArray<struct FactionDisplayInfo>                            NoFactionInfos;                                    // 0x3e0(0x10)
+	TArray<struct FactionDisplayInfo>                            FactionInfos;                                      // 0x3f0(0x10)
+	TArray<struct FactionDisplayInfo>                            SaferSeasDisplayInfos;                             // 0x400(0x10)
+	TArray<struct FactionRequest>                                NoFactionInfoPtrs;                                 // 0x410(0x10)
+	TArray<struct FactionRequest>                                FactionInfoPtrs;                                   // 0x420(0x10)
+	TArray<struct FactionRequest>                                SaferSeasDisplayInfoPtrs;                          // 0x430(0x10)
 };
 
 
@@ -42,41 +114,27 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class FactionLootLevelRewardsAsset: public DataAsset
+// Size 0xd8 (Full Size[0x108] - InheritedSize[0x30]
+class FactionVoteValidatorBase: public VoteValidatorInlineBase
 {
 public:
-	TArray<struct LootLevelReward>                               LootLevelRewards;                                  // 0x28(0x10)
+	TArray<class Class*>                                         TargetCompanies;                                   // 0x30(0x10)
+	float                                                        EdgeOfWorldWarningWeightForFactionLock;            // 0x40(0x4)
+	class FactionVoteConsumerBase*                               Consumer;                                          // 0xe8(0x8)
+	int                                                          CurrentCompany;                                    // 0xf0(0x4)
+	float                                                        FlipTime;                                          // 0xf4(0x4)
+	class Actor*                                                 OwningActor;                                       // 0x100(0x8)
 };
 
 
-// Size 0x20 (Full Size[0x3e8] - InheritedSize[0x3c8]
-class FactionServiceDebugRepActor: public Actor
+// Size 0x230 (Full Size[0x5f8] - InheritedSize[0x3c8]
+class FactionOutpostVoteInteractionActor: public Actor
 {
 public:
-	bool                                                         bDebugEnabled;                                     // 0x3c8(0x1)
-	TArray<struct CrewFactionEntryData>                          FactionAlignedCrewData;                            // 0x3d0(0x10)
-	class FactionService*                                        FactionService;                                    // 0x3e0(0x8)
-};
-
-
-// Size 0x30 (Full Size[0xf8] - InheritedSize[0xc8]
-class ShipSunkTrackingComponent: public ActorComponent
-{
-public:
-	float                                                        CrewRange;                                         // 0xc8(0x4)
-};
-
-
-// Size 0x1a0 (Full Size[0xa60] - InheritedSize[0x8c0]
-class FactionParticleComponent: public ParticleSystemComponent
-{
-public:
-	class UClass*                                                Faction;                                           // 0xa38(0x8)
-	class UClass*                                                JoinedFaction;                                     // 0xa40(0x8)
-	struct Guid                                                  OwningShipCrewId;                                  // 0xa48(0x10)
-	int                                                          OwningShipCrewStreak;                              // 0xa58(0x4)
-	bool                                                         ServerMigrationEnded;                              // 0xa5c(0x1)
+	float                                                        FadeDuration;                                      // 0x3d8(0x4)
+	struct FactionDisplayInfo                                    FactionInactiveInfo;                               // 0x3e0(0xa0)
+	struct FactionDisplayInfo                                    FactionActiveInfo;                                 // 0x480(0xa0)
+	struct FactionRequest                                        FactionActiveInfoPtr;                              // 0x538(0x20)
 };
 
 
@@ -98,27 +156,15 @@ public:
 };
 
 
-// Size 0x230 (Full Size[0x5f8] - InheritedSize[0x3c8]
-class FactionOutpostVoteInteractionActor: public Actor
+// Size 0x88 (Full Size[0x150] - InheritedSize[0xc8]
+class ShipFactionCustomisation: public ActorComponent
 {
 public:
-	float                                                        FadeDuration;                                      // 0x3d8(0x4)
-	struct FactionDisplayInfo                                    FactionInactiveInfo;                               // 0x3e0(0xa0)
-	struct FactionDisplayInfo                                    FactionActiveInfo;                                 // 0x480(0xa0)
-	struct FactionRequest                                        FactionActiveInfoPtr;                              // 0x538(0x20)
-};
-
-
-// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
-class IsInFactionStatCondition: public TargetedStatCondition
-{
-public:
-	bool                                                         CheckOwnerFaction;                                 // 0x30(0x1)
-	bool                                                         RequiresOwnerMaxStreakLevel;                       // 0x31(0x1)
-	class UClass*                                                RequiredOwnerFaction;                              // 0x38(0x8)
-	bool                                                         CheckTargetFaction;                                // 0x40(0x1)
-	bool                                                         RequiresTargetMaxStreakLevel;                      // 0x41(0x1)
-	class UClass*                                                RequiredTargetFaction;                             // 0x48(0x8)
+	class StreakMaterialDataAsset*                               StreakMaterialData;                                // 0xc8(0x8)
+	class FactionShipStreakDataAsset*                            ShipStreakData;                                    // 0xd0(0x8)
+	TArray<class ActorComponent*>                                CachedStaticMeshComponents;                        // 0xd8(0x10)
+	TArray<struct StreakDynamicMaterials>                        CachedDynamicMaterials;                            // 0xe8(0x10)
+	struct FactionStreakData                                     FactionStreakData;                                 // 0x140(0x10)
 };
 
 
@@ -150,83 +196,37 @@ public:
 };
 
 
-// Size 0xa0 (Full Size[0xd0] - InheritedSize[0x30]
-class FactionVoteConsumerBase: public VoteConsumerInlineBase
+// Size 0x30 (Full Size[0xf8] - InheritedSize[0xc8]
+class ShipSunkTrackingComponent: public ActorComponent
 {
 public:
-	class FactionVoteValidatorBase*                              Validator;                                         // 0x40(0x8)
-	class Actor*                                                 OwningActor;                                       // 0x90(0x8)
-	TArray<struct CinematicFactionEvent>                         FactionBannerData;                                 // 0x98(0x10)
-	TArray<struct CrewMemberVotes>                               Votes;                                             // 0xa8(0x10)
+	float                                                        CrewRange;                                         // 0xc8(0x4)
 };
 
 
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class StreakMaterialDataAsset: public DataAsset
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class FactionShipStreakDataAsset: public DataAsset
 {
 public:
-	TArray<struct StreakMaterialValue>                           MaterialValues;                                    // 0x28(0x10)
-	TArray<struct StreakCompanyMaterials>                        StreakMaterials;                                   // 0x38(0x10)
+	TArray<struct StreakMesh>                                    StreakMeshes;                                      // 0x28(0x10)
 };
 
 
-// Size 0x8 (Full Size[0x168] - InheritedSize[0x160]
-class FactionInteractionVoteComponent: public InlineVotingInteractionComponent
+// Size 0x20 (Full Size[0x3e8] - InheritedSize[0x3c8]
+class FactionServiceDebugRepActor: public Actor
 {
 public:
-	float                                                        TurnHourglassInteractionHoldTime;                  // 0x160(0x4)
-	int                                                          WaitTimeSimilarityThresholdSeconds;                // 0x164(0x4)
+	bool                                                         bDebugEnabled;                                     // 0x3c8(0x1)
+	TArray<struct CrewFactionEntryData>                          FactionAlignedCrewData;                            // 0x3d0(0x10)
+	class FactionService*                                        FactionService;                                    // 0x3e0(0x8)
 };
 
 
-// Size 0x88 (Full Size[0x150] - InheritedSize[0xc8]
-class ShipFactionCustomisation: public ActorComponent
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class FactionLootLevelRewardsAsset: public DataAsset
 {
 public:
-	class StreakMaterialDataAsset*                               StreakMaterialData;                                // 0xc8(0x8)
-	class FactionShipStreakDataAsset*                            ShipStreakData;                                    // 0xd0(0x8)
-	TArray<class ActorComponent*>                                CachedStaticMeshComponents;                        // 0xd8(0x10)
-	TArray<struct StreakDynamicMaterials>                        CachedDynamicMaterials;                            // 0xe8(0x10)
-	struct FactionStreakData                                     FactionStreakData;                                 // 0x140(0x10)
-};
-
-
-// Size 0xd8 (Full Size[0x108] - InheritedSize[0x30]
-class FactionVoteValidatorBase: public VoteValidatorInlineBase
-{
-public:
-	TArray<class Class*>                                         TargetCompanies;                                   // 0x30(0x10)
-	float                                                        EdgeOfWorldWarningWeightForFactionLock;            // 0x40(0x4)
-	class FactionVoteConsumerBase*                               Consumer;                                          // 0xe8(0x8)
-	int                                                          CurrentCompany;                                    // 0xf0(0x4)
-	float                                                        FlipTime;                                          // 0xf4(0x4)
-	class Actor*                                                 OwningActor;                                       // 0x100(0x8)
-};
-
-
-// Size 0x118 (Full Size[0x4e0] - InheritedSize[0x3c8]
-class FactionVoteInteractionActor: public Actor
-{
-public:
-	float                                                        FadeDuration;                                      // 0x3d8(0x4)
-	TArray<struct FactionDisplayInfo>                            NoFactionInfos;                                    // 0x3e0(0x10)
-	TArray<struct FactionDisplayInfo>                            FactionInfos;                                      // 0x3f0(0x10)
-	TArray<struct FactionDisplayInfo>                            SaferSeasDisplayInfos;                             // 0x400(0x10)
-	TArray<struct FactionRequest>                                NoFactionInfoPtrs;                                 // 0x410(0x10)
-	TArray<struct FactionRequest>                                FactionInfoPtrs;                                   // 0x420(0x10)
-	TArray<struct FactionRequest>                                SaferSeasDisplayInfoPtrs;                          // 0x430(0x10)
-};
-
-
-// Size 0x130 (Full Size[0x218] - InheritedSize[0xe8]
-class FactionVoteAudioComponent: public VoteAudioComponent
-{
-public:
-	class WwiseEvent*                                            FactionStart;                                      // 0xe8(0x8)
-	class WwiseEvent*                                            Flip;                                              // 0xf0(0x8)
-	class WwiseEvent*                                            Levelup;                                           // 0xf8(0x8)
-	struct FName                                                 LevelupSwitchGroup;                                // 0x100(0x8)
-	TArray<struct Name>                                          LevelupSwitchValues;                               // 0x108(0x10)
+	TArray<struct LootLevelReward>                               LootLevelRewards;                                  // 0x28(0x10)
 };
 
 

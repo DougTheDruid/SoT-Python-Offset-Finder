@@ -4,11 +4,39 @@
 // https://github.com/DougTheDruid
 
 // Size 0x10
-struct CookerSmokeFeedbackEntry
+struct OnPlacedItemInCookingPot
 {
 public:
-	char                                                         FeedbackLevel;                                     // 0x0(0x1)
-	class ParticleSystem*                                        SmokeVFX;                                          // 0x8(0x8)
+	class Actor*                                                 Interactor;                                        // 0x0(0x8)
+	class ItemInfo*                                              ItemToCook;                                        // 0x8(0x8)
+};
+
+
+// Size 0x8
+struct OnRemovedItemFromCookingPot
+{
+public:
+	class Actor*                                                 Interactor;                                        // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct CookableComponentSmokeFeedbackTimingEntry
+{
+public:
+	float                                                        StateDuration;                                     // 0x0(0x4)
+	char                                                         StateFeedbackLevel;                                // 0x4(0x1)
+};
+
+
+// Size 0x30
+struct CookEndTelemetryEvent
+{
+public:
+	struct FString                                               ItemName;                                          // 0x0(0x10)
+	char                                                         CookState;                                         // 0x10(0x1)
+	struct Vector                                                Location;                                          // 0x14(0xc)
+	struct Guid                                                  CookId;                                            // 0x20(0x10)
 };
 
 
@@ -29,17 +57,6 @@ public:
 
 
 // Size 0x30
-struct CookEndTelemetryEvent
-{
-public:
-	struct FString                                               ItemName;                                          // 0x0(0x10)
-	char                                                         CookState;                                         // 0x10(0x1)
-	struct Vector                                                Location;                                          // 0x14(0xc)
-	struct Guid                                                  CookId;                                            // 0x20(0x10)
-};
-
-
-// Size 0x30
 struct CookStartTelemetryEvent
 {
 public:
@@ -50,29 +67,12 @@ public:
 };
 
 
-// Size 0x8
-struct CookableComponentSmokeFeedbackTimingEntry
-{
-public:
-	float                                                        StateDuration;                                     // 0x0(0x4)
-	char                                                         StateFeedbackLevel;                                // 0x4(0x1)
-};
-
-
-// Size 0x8
-struct OnRemovedItemFromCookingPot
-{
-public:
-	class Actor*                                                 Interactor;                                        // 0x0(0x8)
-};
-
-
 // Size 0x10
-struct OnPlacedItemInCookingPot
+struct CookerSmokeFeedbackEntry
 {
 public:
-	class Actor*                                                 Interactor;                                        // 0x0(0x8)
-	class ItemInfo*                                              ItemToCook;                                        // 0x8(0x8)
+	char                                                         FeedbackLevel;                                     // 0x0(0x1)
+	class ParticleSystem*                                        SmokeVFX;                                          // 0x8(0x8)
 };
 
 

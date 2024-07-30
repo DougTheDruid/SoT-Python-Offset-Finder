@@ -4,68 +4,6 @@
 // https://github.com/DougTheDruid
 
 // Size 0x10
-struct CrewJoinedGameEventOnDemand
-{
-public:
-	struct Guid                                                  CrewId;                                            // 0x0(0x10)
-};
-
-
-// Size 0x4
-struct GameEventOnDemandActivatedTelemetryEvent
-{
-public:
-	int                                                          NumCrewsOnDemandLimit;                             // 0x0(0x4)
-};
-
-
-// Size 0x20
-struct GameEventOnDemandBaseTelemetryFragmentInput
-{
-public:
-	struct FString                                               GameEventType;                                     // 0x0(0x10)
-	struct Guid                                                  GameEventOnDemandId;                               // 0x10(0x10)
-};
-
-
-// Size 0x30
-struct GameEventOnDemandCompletedTelemetryEvent
-{
-public:
-	struct FString                                               Company;                                           // 0x0(0x10)
-	TArray<struct Guid>                                          ParticipatingOnDemandCrews;                        // 0x10(0x10)
-	TArray<struct Guid>                                          ParticipatingCrews;                                // 0x20(0x10)
-};
-
-
-// Size 0x30
-struct GameEventOnDemandDeactivatedTelemetryEvent
-{
-public:
-	struct FString                                               ShipSizeLimit;                                     // 0x0(0x10)
-	TArray<struct Guid>                                          ParticipatingOnDemandCrews;                        // 0x10(0x10)
-	TArray<struct Guid>                                          ParticipatingCrews;                                // 0x20(0x10)
-};
-
-
-// Size 0x20
-struct GameEventOnDemandBaseTelemetryFragment
-{
-public:
-	struct FString                                               GameEventType;                                     // 0x0(0x10)
-	struct Guid                                                  GameEventOnDemandId;                               // 0x10(0x10)
-};
-
-
-// Size 0x10
-struct GameEventOnDemandDeactivated
-{
-public:
-	TArray<struct Guid>                                          OnDemandCrewIds;                                   // 0x0(0x10)
-};
-
-
-// Size 0x10
 struct GameEventOnDemandFailedTelemetryEvent
 {
 public:
@@ -86,11 +24,11 @@ public:
 
 
 // Size 0x20
-struct GameEventOnDemandCrewJoinedTelemetryEvent
+struct GameEventOnDemandBaseTelemetryFragmentInput
 {
 public:
-	struct FString                                               ShipType;                                          // 0x0(0x10)
-	struct FString                                               Company;                                           // 0x10(0x10)
+	struct FString                                               GameEventType;                                     // 0x0(0x10)
+	struct Guid                                                  GameEventOnDemandId;                               // 0x10(0x10)
 };
 
 
@@ -103,10 +41,72 @@ public:
 
 
 // Size 0x10
+struct GameEventOnDemandDeactivated
+{
+public:
+	TArray<struct Guid>                                          OnDemandCrewIds;                                   // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct CrewJoinedGameEventOnDemand
+{
+public:
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
+};
+
+
+// Size 0x4
+struct GameEventOnDemandActivatedTelemetryEvent
+{
+public:
+	int                                                          NumCrewsOnDemandLimit;                             // 0x0(0x4)
+};
+
+
+// Size 0x20
+struct GameEventOnDemandCrewJoinedTelemetryEvent
+{
+public:
+	struct FString                                               ShipType;                                          // 0x0(0x10)
+	struct FString                                               Company;                                           // 0x10(0x10)
+};
+
+
+// Size 0x20
+struct GameEventOnDemandBaseTelemetryFragment
+{
+public:
+	struct FString                                               GameEventType;                                     // 0x0(0x10)
+	struct Guid                                                  GameEventOnDemandId;                               // 0x10(0x10)
+};
+
+
+// Size 0x30
+struct GameEventOnDemandCompletedTelemetryEvent
+{
+public:
+	struct FString                                               Company;                                           // 0x0(0x10)
+	TArray<struct Guid>                                          ParticipatingOnDemandCrews;                        // 0x10(0x10)
+	TArray<struct Guid>                                          ParticipatingCrews;                                // 0x20(0x10)
+};
+
+
+// Size 0x10
 struct GameEventOnDemandCrewSentToSinkingTunnel
 {
 public:
 	struct Guid                                                  CrewId;                                            // 0x0(0x10)
+};
+
+
+// Size 0x30
+struct GameEventOnDemandDeactivatedTelemetryEvent
+{
+public:
+	struct FString                                               ShipSizeLimit;                                     // 0x0(0x10)
+	TArray<struct Guid>                                          ParticipatingOnDemandCrews;                        // 0x10(0x10)
+	TArray<struct Guid>                                          ParticipatingCrews;                                // 0x20(0x10)
 };
 
 

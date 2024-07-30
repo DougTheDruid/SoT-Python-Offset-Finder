@@ -48,12 +48,16 @@ LevelSequenceActor:
     Offset: '0x428'
     Size: '0x8'
     Type: class Actor*
-  - Name: BurnInInstance
+  - Name: OnSequenceReadyToPlay
     Offset: '0x430'
+    Size: '0x10'
+    Type: multicastinlinedelegate
+  - Name: BurnInInstance
+    Offset: '0x440'
     Size: '0x8'
     Type: class LevelSequenceBurnIn*
-  ClassSize: '0x70'
-  FullSize: '0x438'
+  ClassSize: '0x80'
+  FullSize: '0x448'
   InheritedSize: '0x3c8'
   Super: Actor
 LevelSequenceBurnIn:

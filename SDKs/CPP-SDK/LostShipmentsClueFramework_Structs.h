@@ -14,20 +14,12 @@ public:
 
 
 // Size 0x18
-struct WeightedClueDestinationDescriptor
+struct LootSpawnedAtClueSite
 {
 public:
-	class UClass*                                                DestinationType;                                   // 0x0(0x8)
-	TArray<float>                                                DifficultyWeightings;                              // 0x8(0x10)
-};
-
-
-// Size 0x28
-struct WeightedDebris
-{
-public:
-	assetclass                                                   DebrisClass;                                       // 0x0(0x20)
-	float                                                        Weight;                                            // 0x20(0x4)
+	class UClass*                                                SiteType;                                          // 0x0(0x8)
+	struct Vector                                                SiteLocation;                                      // 0x8(0xc)
+	int                                                          NumLoot;                                           // 0x14(0x4)
 };
 
 
@@ -37,6 +29,52 @@ struct RestrictedClueType
 public:
 	class UClass*                                                Type;                                              // 0x0(0x8)
 	int                                                          Max;                                               // 0x8(0x4)
+};
+
+
+// Size 0x28
+struct LootToRangeDist
+{
+public:
+	struct WeightedProbabilityRange                              NumberOfLootItemsToSpawn;                          // 0x0(0x20)
+	class WeightedTreasureChestDescAsset*                        WeightedLootDescAsset;                             // 0x20(0x8)
+};
+
+
+// Size 0x20
+struct ClueSite
+{
+public:
+	class UClass*                                                SiteType;                                          // 0x0(0x8)
+	class ClueSiteData*                                          SiteData;                                          // 0x8(0x8)
+	struct Vector                                                Location;                                          // 0x10(0xc)
+};
+
+
+// Size 0x18
+struct WeightedClueDestinationDescriptor
+{
+public:
+	class UClass*                                                DestinationType;                                   // 0x0(0x8)
+	TArray<float>                                                DifficultyWeightings;                              // 0x8(0x10)
+};
+
+
+// Size 0x20
+struct SeaClueCreationChoice
+{
+public:
+	class UClass*                                                SiteType;                                          // 0x0(0x8)
+	class SeaClueCreator*                                        ClueCreator;                                       // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct WeightedClueDescriptor
+{
+public:
+	class UClass*                                                Descriptor;                                        // 0x0(0x8)
+	TArray<float>                                                DifficultyWeightings;                              // 0x8(0x10)
 };
 
 
@@ -58,50 +96,12 @@ public:
 };
 
 
-// Size 0x20
-struct ClueSite
-{
-public:
-	class UClass*                                                SiteType;                                          // 0x0(0x8)
-	class ClueSiteData*                                          SiteData;                                          // 0x8(0x8)
-	struct Vector                                                Location;                                          // 0x10(0xc)
-};
-
-
-// Size 0x18
-struct LootSpawnedAtClueSite
-{
-public:
-	class UClass*                                                SiteType;                                          // 0x0(0x8)
-	struct Vector                                                SiteLocation;                                      // 0x8(0xc)
-	int                                                          NumLoot;                                           // 0x14(0x4)
-};
-
-
-// Size 0x18
-struct WeightedClueDescriptor
-{
-public:
-	class UClass*                                                Descriptor;                                        // 0x0(0x8)
-	TArray<float>                                                DifficultyWeightings;                              // 0x8(0x10)
-};
-
-
 // Size 0x28
-struct LootToRangeDist
+struct WeightedDebris
 {
 public:
-	struct WeightedProbabilityRange                              NumberOfLootItemsToSpawn;                          // 0x0(0x20)
-	class WeightedTreasureChestDescAsset*                        WeightedLootDescAsset;                             // 0x20(0x8)
-};
-
-
-// Size 0x20
-struct SeaClueCreationChoice
-{
-public:
-	class UClass*                                                SiteType;                                          // 0x0(0x8)
-	class SeaClueCreator*                                        ClueCreator;                                       // 0x8(0x8)
+	assetclass                                                   DebrisClass;                                       // 0x0(0x20)
+	float                                                        Weight;                                            // 0x20(0x4)
 };
 
 

@@ -4,57 +4,31 @@
 // https://github.com/DougTheDruid
 
 // Size 0x18
-struct StoryInfo
+struct StorySpawnedActorsIndividualStoryInfo
 {
 public:
-	struct FName                                                 Name;                                              // 0x0(0x8)
-	int64                                                        StartTimeTicks;                                    // 0x8(0x8)
-	int64                                                        EndTimeTicks;                                      // 0x10(0x8)
+	struct FString                                               StoryName;                                         // 0x0(0x10)
+	int                                                          NumActorsSpawned;                                  // 0x10(0x4)
+	int                                                          NumActorsDespawned;                                // 0x14(0x4)
 };
 
 
 // Size 0x18
-struct StoryNameInfo
+struct InstancedLayerLocation
 {
 public:
-	struct FName                                                 StoryName;                                         // 0x0(0x8)
-	struct FString                                               StoryDesc;                                         // 0x8(0x10)
+	struct StringAssetReference                                  ActorWithInstancedLayerComponent;                  // 0x0(0x10)
+	class LayerActorsDataAsset*                                  LayerToSpawn;                                      // 0x10(0x8)
 };
 
 
-// Size 0x10
-struct DuplicateStoriesReceivedTelemetryEvent
+// Size 0x38
+struct ActorLocationPair
 {
 public:
-	TArray<String>                                               DuplicateStoriesReceived;                          // 0x0(0x10)
-};
-
-
-// Size 0x1
-struct StoriesRefreshRequestedTelemetryEvent
-{
-public:
-	bool                                                         IsForcedRefresh;                                   // 0x0(0x1)
-};
-
-
-// Size 0x28
-struct StoriesChangedTelemetryEvent
-{
-public:
-	TArray<String>                                               AllStories;                                        // 0x0(0x10)
-	TArray<String>                                               ActiveStories;                                     // 0x10(0x10)
-	bool                                                         DidStoriesChange;                                  // 0x20(0x1)
-	bool                                                         WereStoriesRefreshed;                              // 0x21(0x1)
-};
-
-
-// Size 0x28
-struct NamedPointsGroupActorLocation
-{
-public:
-	struct FName                                                 NamedPointsGroup;                                  // 0x0(0x8)
-	assetclass                                                   ActorToSpawn;                                      // 0x8(0x20)
+	struct StringAssetReference                                  SpawnLocation;                                     // 0x0(0x10)
+	assetclass                                                   ActorToSpawn;                                      // 0x10(0x20)
+	bool                                                         AttachToWorld;                                     // 0x30(0x1)
 };
 
 
@@ -67,30 +41,12 @@ public:
 
 
 // Size 0x18
-struct StorySpawnedActorsIndividualStoryInfo
+struct StoryInfo
 {
 public:
-	struct FString                                               StoryName;                                         // 0x0(0x10)
-	int                                                          NumActorsSpawned;                                  // 0x10(0x4)
-	int                                                          NumActorsDespawned;                                // 0x14(0x4)
-};
-
-
-// Size 0x30
-struct ActorLocationPair
-{
-public:
-	struct StringAssetReference                                  SpawnLocation;                                     // 0x0(0x10)
-	assetclass                                                   ActorToSpawn;                                      // 0x10(0x20)
-};
-
-
-// Size 0x18
-struct InstancedLayerLocation
-{
-public:
-	struct StringAssetReference                                  ActorWithInstancedLayerComponent;                  // 0x0(0x10)
-	class LayerActorsDataAsset*                                  LayerToSpawn;                                      // 0x10(0x8)
+	struct FName                                                 Name;                                              // 0x0(0x8)
+	int64                                                        StartTimeTicks;                                    // 0x8(0x8)
+	int64                                                        EndTimeTicks;                                      // 0x10(0x8)
 };
 
 
@@ -105,13 +61,49 @@ public:
 };
 
 
-// Size 0x20
-struct StorySpawnedActorsComponentList
+// Size 0x18
+struct StoryNameInfo
 {
 public:
-	struct StoryFlag                                             Story;                                             // 0x0(0x8)
-	TArray<struct NamedPointsGroupActorLocation>                 GroupLocations;                                    // 0x8(0x10)
-	class LayerActorsDataAsset*                                  LayerToSpawn;                                      // 0x18(0x8)
+	struct FName                                                 StoryName;                                         // 0x0(0x8)
+	struct FString                                               StoryDesc;                                         // 0x8(0x10)
+};
+
+
+// Size 0x28
+struct StoriesChangedTelemetryEvent
+{
+public:
+	TArray<String>                                               AllStories;                                        // 0x0(0x10)
+	TArray<String>                                               ActiveStories;                                     // 0x10(0x10)
+	bool                                                         DidStoriesChange;                                  // 0x20(0x1)
+	bool                                                         WereStoriesRefreshed;                              // 0x21(0x1)
+};
+
+
+// Size 0x10
+struct DuplicateStoriesReceivedTelemetryEvent
+{
+public:
+	TArray<String>                                               DuplicateStoriesReceived;                          // 0x0(0x10)
+};
+
+
+// Size 0x30
+struct NamedPointsGroupActorLocation
+{
+public:
+	struct FName                                                 NamedPointsGroup;                                  // 0x0(0x8)
+	assetclass                                                   ActorToSpawn;                                      // 0x8(0x20)
+	bool                                                         AttachToWorld;                                     // 0x28(0x1)
+};
+
+
+// Size 0x1
+struct StoriesRefreshRequestedTelemetryEvent
+{
+public:
+	bool                                                         IsForcedRefresh;                                   // 0x0(0x1)
 };
 
 
@@ -125,14 +117,6 @@ public:
 };
 
 
-// Size 0x10
-struct StoryClaimedResourcesChangedTelemetryEvent
-{
-public:
-	TArray<struct StoryResourceStateChanged>                     StoryResourceStateChanges;                         // 0x0(0x10)
-};
-
-
 // Size 0x48
 struct IsStoryActiveConditionBase
 {
@@ -142,12 +126,11 @@ public:
 
 
 // Size 0x20
-struct StoryClaimableResourcesList
+struct StorySpawnedActorsChangeTelemetryEvent
 {
 public:
-	struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
-	bool                                                         AreResourcesClaimed;                               // 0x8(0x1)
-	TArray<uintptr_t>                                            ClaimableResources;                                // 0x10(0x10)
+	TArray<struct StorySpawnedActorsIndividualStoryInfo>         StorySpawnedActors;                                // 0x0(0x10)
+	TArray<struct StorySpawnedActorsIndividualStoryInfo>         StoryDespawnedActors;                              // 0x10(0x10)
 };
 
 
@@ -161,11 +144,39 @@ public:
 
 
 // Size 0x20
-struct StorySpawnedActorsChangeTelemetryEvent
+struct StorySpawnedActorsComponentList
 {
 public:
-	TArray<struct StorySpawnedActorsIndividualStoryInfo>         StorySpawnedActors;                                // 0x0(0x10)
-	TArray<struct StorySpawnedActorsIndividualStoryInfo>         StoryDespawnedActors;                              // 0x10(0x10)
+	struct StoryFlag                                             Story;                                             // 0x0(0x8)
+	TArray<struct NamedPointsGroupActorLocation>                 GroupLocations;                                    // 0x8(0x10)
+	class LayerActorsDataAsset*                                  LayerToSpawn;                                      // 0x18(0x8)
+};
+
+
+// Size 0x20
+struct StoryClaimableResourcesList
+{
+public:
+	struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
+	bool                                                         AreResourcesClaimed;                               // 0x8(0x1)
+	TArray<uintptr_t>                                            ClaimableResources;                                // 0x10(0x10)
+};
+
+
+// Size 0x10
+struct StoryClaimedResourcesChangedTelemetryEvent
+{
+public:
+	TArray<struct StoryResourceStateChanged>                     StoryResourceStateChanges;                         // 0x0(0x10)
+};
+
+
+// Size 0x18
+struct StoryFlagContainer
+{
+public:
+	TArray<struct StoryFlag>                                     StoryFlags;                                        // 0x0(0x10)
+	bool                                                         AllStoriesRequired;                                // 0x10(0x1)
 };
 
 

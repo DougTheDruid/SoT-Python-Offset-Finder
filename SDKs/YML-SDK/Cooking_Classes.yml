@@ -189,44 +189,44 @@ CookingComponentAudioParams:
 CookingPot:
   Attributes:
   - Name: MeshComponent
-    Offset: '0x408'
+    Offset: '0x400'
     Size: '0x8'
     Type: class StaticMeshComponent*
   - Name: InteractableComponent
-    Offset: '0x410'
+    Offset: '0x408'
     Size: '0x8'
     Type: class ActionRulesInteractableComponent*
   - Name: CookerComponent
-    Offset: '0x418'
+    Offset: '0x410'
     Size: '0x8'
     Type: class CookerComponent*
   - Name: HoldToInteractTime
-    Offset: '0x420'
+    Offset: '0x418'
     Size: '0x4'
     Type: float
   - Name: NotWieldingCookableItemTooltip
-    Offset: '0x428'
+    Offset: '0x420'
     Size: '0x38'
     Type: struct FText
   - Name: WieldingCookableItemTooltip
-    Offset: '0x460'
+    Offset: '0x458'
     Size: '0x38'
     Type: struct FText
   - Name: TakeItemTooltip
-    Offset: '0x498'
+    Offset: '0x490'
     Size: '0x38'
     Type: struct FText
   - Name: CannotTakeItemTooltip
-    Offset: '0x4d0'
+    Offset: '0x4c8'
     Size: '0x38'
     Type: struct FText
   - Name: MixInItemTooltip
-    Offset: '0x508'
+    Offset: '0x500'
     Size: '0x38'
     Type: struct FText
   ClassSize: '0x1e0'
-  FullSize: '0x5e0'
-  InheritedSize: '0x400'
+  FullSize: '0x5d8'
+  InheritedSize: '0x3f8'
   Super: InteractableBase
 HasRequiredCookingStateStatCondition:
   Attributes:

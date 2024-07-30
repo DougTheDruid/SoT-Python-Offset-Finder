@@ -6,18 +6,6 @@
 #include "ShantyPuzzle_Structs.h"
 
 
-// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
-class ShantyPuzzleCompletionComponent: public ActorComponent
-{
-public:
-	float                                                        CompletionTime;                                    // 0xc8(0x4)
-	TArray<struct LandmarkReactionKeyFrame>                      StartCompletionReaction;                           // 0xd0(0x10)
-	TArray<struct LandmarkReactionKeyFrame>                      AbortCompletionReaction;                           // 0xe0(0x10)
-	TArray<struct LandmarkReactionKeyFrame>                      PuzzleCompletedReaction;                           // 0xf0(0x10)
-	class LandmarkReactionPlayer*                                ReactionPlayer;                                    // 0x100(0x8)
-};
-
-
 // Size 0x110 (Full Size[0x3f0] - InheritedSize[0x2e0]
 class ShantyPuzzleComponent: public SceneComponent
 {
@@ -29,6 +17,18 @@ public:
 	struct GameTimeRange                                         ActiveTimeRange;                                   // 0x308(0x10)
 	TArray<class ShantyPuzzleInteractionZoneComponent*>          ShantyPuzzleInteractionZones;                      // 0x318(0x10)
 	class Ensemble*                                              CurrentlyPlayingShantyPuzzleEnsemble;              // 0x328(0x8)
+};
+
+
+// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
+class ShantyPuzzleCompletionComponent: public ActorComponent
+{
+public:
+	float                                                        CompletionTime;                                    // 0xc8(0x4)
+	TArray<struct LandmarkReactionKeyFrame>                      StartCompletionReaction;                           // 0xd0(0x10)
+	TArray<struct LandmarkReactionKeyFrame>                      AbortCompletionReaction;                           // 0xe0(0x10)
+	TArray<struct LandmarkReactionKeyFrame>                      PuzzleCompletedReaction;                           // 0xf0(0x10)
+	class LandmarkReactionPlayer*                                ReactionPlayer;                                    // 0x100(0x8)
 };
 
 

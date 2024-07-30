@@ -127,36 +127,36 @@ FireworkItemInfo:
 FireworkProjectile:
   Attributes:
   - Name: CollisionComponent
-    Offset: '0x620'
+    Offset: '0x6a0'
     Size: '0x8'
     Type: class SphereComponent*
   - Name: MeshComponent
-    Offset: '0x628'
+    Offset: '0x6a8'
     Size: '0x8'
     Type: class StaticMeshComponent*
   - Name: ExplosionComponent
-    Offset: '0x630'
+    Offset: '0x6b0'
     Size: '0x8'
     Type: class ExplosionComponent*
   - Name: FireworkStatsComponent
-    Offset: '0x638'
+    Offset: '0x6b8'
     Size: '0x8'
     Type: class FireworkStatsComponent*
   - Name: MeshDirectionComponent
-    Offset: '0x640'
+    Offset: '0x6c0'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: AnimationComponent
-    Offset: '0x648'
+    Offset: '0x6c8'
     Size: '0x8'
     Type: class ProjectileAnimationComponent*
   - Name: GeneratedFireworkData
-    Offset: '0x650'
+    Offset: '0x6d0'
     Size: '0x58'
     Type: struct GeneratedFireworkData
   ClassSize: '0x108'
-  FullSize: '0x718'
-  InheritedSize: '0x610'
+  FullSize: '0x798'
+  InheritedSize: '0x690'
   Super: LaunchableProjectile
 FireworkSequentialDataAsset:
   Attributes:

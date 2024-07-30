@@ -6,6 +6,18 @@
 #include "TreasuryFramework_Structs.h"
 
 
+// Size 0xb0 (Full Size[0x5b0] - InheritedSize[0x500]
+class SunkenKingdomShrineEventRoom: public EventRoom
+{
+public:
+	class Actor*                                                 EntranceActor;                                     // 0x510(0x8)
+	class GameEventOnDemandAvailabilityHandler*                  GameEventOnDemandAvailabilityHandler;              // 0x518(0x8)
+	struct StringAssetReference                                  AvailabilityParamsAssetFileLocation;               // 0x520(0x10)
+	class ObjectProximityResetComponent*                         PuzzleResetComponent;                              // 0x530(0x8)
+	class GameEventItemSpawnSelectorComponent*                   ItemSpawnSelectorComponent;                        // 0x538(0x8)
+};
+
+
 // Size 0x248 (Full Size[0x610] - InheritedSize[0x3c8]
 class TreasuryRoom: public Actor
 {
@@ -46,18 +58,6 @@ public:
 	interface                                                    DrainTriggerComponent;                             // 0x538(0x10)
 	interface                                                    VaultTriggerComponent;                             // 0x548(0x10)
 	struct ObjectMessagingDispatcher                             EventDispatcher;                                   // 0x558(0xa0)
-};
-
-
-// Size 0xb0 (Full Size[0x5b0] - InheritedSize[0x500]
-class SunkenKingdomShrineEventRoom: public EventRoom
-{
-public:
-	class Actor*                                                 EntranceActor;                                     // 0x510(0x8)
-	class GameEventOnDemandAvailabilityHandler*                  GameEventOnDemandAvailabilityHandler;              // 0x518(0x8)
-	struct StringAssetReference                                  AvailabilityParamsAssetFileLocation;               // 0x520(0x10)
-	class ObjectProximityResetComponent*                         PuzzleResetComponent;                              // 0x530(0x8)
-	class GameEventItemSpawnSelectorComponent*                   ItemSpawnSelectorComponent;                        // 0x538(0x8)
 };
 
 

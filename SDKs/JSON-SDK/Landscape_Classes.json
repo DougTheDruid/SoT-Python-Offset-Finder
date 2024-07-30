@@ -1,4 +1,56 @@
 {
+  "MaterialExpressionLandscapeGrassOutput": {
+    "Super": "MaterialExpressionCustomOutput",
+    "FullSize": "0x80",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "GrassTypes",
+        "Type": "TArray<struct GrassInput>",
+        "Size": "0x10",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "LandscapeSplineSegment": {
+    "Super": "Object",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "Connections",
+        "Type": "struct LandscapeSplineSegmentConnection",
+        "Size": "0x18",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "SplineInfo",
+        "Type": "struct InterpCurveVector",
+        "Size": "0x18",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "Points",
+        "Type": "TArray<struct LandscapeSplineInterpPoint>",
+        "Size": "0x10",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "Bounds",
+        "Type": "struct Box",
+        "Size": "0x1c",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "LocalMeshComponents",
+        "Type": "TArray<class SplineMeshComponent*>",
+        "Size": "0x10",
+        "Offset": "0xa0"
+      }
+    ]
+  },
   "LandscapeGrassType": {
     "Super": "Object",
     "FullSize": "0x58",
@@ -55,6 +107,68 @@
       }
     ]
   },
+  "LandscapeSplineControlPoint": {
+    "Super": "Object",
+    "FullSize": "0x98",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct Rotator",
+        "Size": "0xc",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "Width",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "SideFalloff",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "EndFalloff",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "ConnectedSegments",
+        "Type": "TArray<struct LandscapeSplineConnection>",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "Points",
+        "Type": "TArray<struct LandscapeSplineInterpPoint>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "Bounds",
+        "Type": "struct Box",
+        "Size": "0x1c",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "LocalMeshComponent",
+        "Type": "class ControlPointMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x90"
+      }
+    ]
+  },
   "MaterialExpressionLandscapeLayerWeight": {
     "Super": "MaterialExpression",
     "FullSize": "0x108",
@@ -96,6 +210,152 @@
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0xf8"
+      }
+    ]
+  },
+  "LandscapeLayerInfoObject": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "LayerName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "PhysMaterial",
+        "Type": "class PhysicalMaterial*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "Hardness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "MaterialExpressionLandscapeLayerSample": {
+    "Super": "MaterialExpression",
+    "FullSize": "0x90",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ParameterName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "PreviewWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "ExpressionGUID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x7c"
+      }
+    ]
+  },
+  "LandscapeMaterialInstanceConstant": {
+    "Super": "MaterialInstanceConstant",
+    "FullSize": "0x1c8",
+    "InheritedSize": "0x1b8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "bIsLayerThumbnail",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1b8"
+      },
+      {
+        "Name": "DataWeightmapIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x1bc"
+      },
+      {
+        "Name": "DataWeightmapSize",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x1c0"
+      }
+    ]
+  },
+  "LandscapeHeightfieldCollisionComponent": {
+    "Super": "PrimitiveComponent",
+    "FullSize": "0x6a0",
+    "InheritedSize": "0x5d0",
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "ComponentLayerInfos",
+        "Type": "TArray<class LandscapeLayerInfoObject*>",
+        "Size": "0x10",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "SectionBaseX",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5d8"
+      },
+      {
+        "Name": "SectionBaseY",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5dc"
+      },
+      {
+        "Name": "CollisionSizeQuads",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5e0"
+      },
+      {
+        "Name": "CollisionScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5e4"
+      },
+      {
+        "Name": "CollisionQuadFlags",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x5e8"
+      },
+      {
+        "Name": "HeightfieldGuid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x5f8"
+      },
+      {
+        "Name": "CachedLocalBox",
+        "Type": "struct Box",
+        "Size": "0x1c",
+        "Offset": "0x608"
+      },
+      {
+        "Name": "RenderComponent",
+        "Type": "lazyobject",
+        "Size": "0x1c",
+        "Offset": "0x624"
+      },
+      {
+        "Name": "CookedPhysicalMaterials",
+        "Type": "TArray<class PhysicalMaterial*>",
+        "Size": "0x10",
+        "Offset": "0x650"
       }
     ]
   },
@@ -143,46 +403,6 @@
       }
     ]
   },
-  "MaterialExpressionLandscapeVisibilityMask": {
-    "Super": "MaterialExpression",
-    "FullSize": "0x80",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ExpressionGUID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x70"
-      }
-    ]
-  },
-  "MaterialExpressionLandscapeLayerSample": {
-    "Super": "MaterialExpression",
-    "FullSize": "0x90",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ParameterName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "PreviewWeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "ExpressionGUID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x7c"
-      }
-    ]
-  },
   "MaterialExpressionLandscapeLayerBlend": {
     "Super": "MaterialExpression",
     "FullSize": "0x90",
@@ -200,6 +420,32 @@
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x80"
+      }
+    ]
+  },
+  "LandscapeMeshProxyComponent": {
+    "Super": "StaticMeshComponent",
+    "FullSize": "0x660",
+    "InheritedSize": "0x630",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "LandscapeGuid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x630"
+      },
+      {
+        "Name": "ProxyComponentBases",
+        "Type": "TArray<struct IntPoint>",
+        "Size": "0x10",
+        "Offset": "0x640"
+      },
+      {
+        "Name": "ProxyLOD",
+        "Type": "int8",
+        "Size": "0x1",
+        "Offset": "0x650"
       }
     ]
   },
@@ -238,72 +484,6 @@
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0xec"
-      }
-    ]
-  },
-  "LandscapeMaterialInstanceConstant": {
-    "Super": "MaterialInstanceConstant",
-    "FullSize": "0x1c8",
-    "InheritedSize": "0x1b8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "bIsLayerThumbnail",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1b8"
-      },
-      {
-        "Name": "DataWeightmapIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x1bc"
-      },
-      {
-        "Name": "DataWeightmapSize",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x1c0"
-      }
-    ]
-  },
-  "LandscapeMeshProxyComponent": {
-    "Super": "StaticMeshComponent",
-    "FullSize": "0x660",
-    "InheritedSize": "0x630",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "LandscapeGuid",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x630"
-      },
-      {
-        "Name": "ProxyComponentBases",
-        "Type": "TArray<struct IntPoint>",
-        "Size": "0x10",
-        "Offset": "0x640"
-      },
-      {
-        "Name": "ProxyLOD",
-        "Type": "int8",
-        "Size": "0x1",
-        "Offset": "0x650"
-      }
-    ]
-  },
-  "LandscapeMeshProxyActor": {
-    "Super": "Actor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "LandscapeMeshProxyComponent",
-        "Type": "class LandscapeMeshProxyComponent*",
-        "Size": "0x8",
-        "Offset": "0x3c8"
       }
     ]
   },
@@ -480,162 +660,6 @@
         "Type": "class Texture2D*",
         "Size": "0x8",
         "Offset": "0x6f8"
-      }
-    ]
-  },
-  "LandscapeHeightfieldCollisionComponent": {
-    "Super": "PrimitiveComponent",
-    "FullSize": "0x6a0",
-    "InheritedSize": "0x5d0",
-    "ClassSize": "0xd0",
-    "Attributes": [
-      {
-        "Name": "ComponentLayerInfos",
-        "Type": "TArray<class LandscapeLayerInfoObject*>",
-        "Size": "0x10",
-        "Offset": "0x5c8"
-      },
-      {
-        "Name": "SectionBaseX",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5d8"
-      },
-      {
-        "Name": "SectionBaseY",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5dc"
-      },
-      {
-        "Name": "CollisionSizeQuads",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5e0"
-      },
-      {
-        "Name": "CollisionScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x5e4"
-      },
-      {
-        "Name": "CollisionQuadFlags",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x5e8"
-      },
-      {
-        "Name": "HeightfieldGuid",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x5f8"
-      },
-      {
-        "Name": "CachedLocalBox",
-        "Type": "struct Box",
-        "Size": "0x1c",
-        "Offset": "0x608"
-      },
-      {
-        "Name": "RenderComponent",
-        "Type": "lazyobject",
-        "Size": "0x1c",
-        "Offset": "0x624"
-      },
-      {
-        "Name": "CookedPhysicalMaterials",
-        "Type": "TArray<class PhysicalMaterial*>",
-        "Size": "0x10",
-        "Offset": "0x650"
-      }
-    ]
-  },
-  "LandscapeLayerInfoObject": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "LayerName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "PhysMaterial",
-        "Type": "class PhysicalMaterial*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "Hardness",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "LandscapeSplineControlPoint": {
-    "Super": "Object",
-    "FullSize": "0x98",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "struct Rotator",
-        "Size": "0xc",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "Width",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "SideFalloff",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "EndFalloff",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "ConnectedSegments",
-        "Type": "TArray<struct LandscapeSplineConnection>",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "Points",
-        "Type": "TArray<struct LandscapeSplineInterpPoint>",
-        "Size": "0x10",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "Bounds",
-        "Type": "struct Box",
-        "Size": "0x1c",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "LocalMeshComponent",
-        "Type": "class ControlPointMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x90"
       }
     ]
   },
@@ -857,6 +881,46 @@
       }
     ]
   },
+  "MaterialExpressionLandscapeVisibilityMask": {
+    "Super": "MaterialExpression",
+    "FullSize": "0x80",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ExpressionGUID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "LandscapeSplinesComponent": {
+    "Super": "PrimitiveComponent",
+    "FullSize": "0x600",
+    "InheritedSize": "0x5d0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "ControlPoints",
+        "Type": "TArray<class LandscapeSplineControlPoint*>",
+        "Size": "0x10",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "Segments",
+        "Type": "TArray<class LandscapeSplineSegment*>",
+        "Size": "0x10",
+        "Offset": "0x5d8"
+      },
+      {
+        "Name": "CookedForeignMeshComponents",
+        "Type": "TArray<class MeshComponent*>",
+        "Size": "0x10",
+        "Offset": "0x5e8"
+      }
+    ]
+  },
   "MaterialExpressionLandscapeLayerCoords": {
     "Super": "MaterialExpression",
     "FullSize": "0x88",
@@ -901,81 +965,17 @@
       }
     ]
   },
-  "MaterialExpressionLandscapeGrassOutput": {
-    "Super": "MaterialExpressionCustomOutput",
-    "FullSize": "0x80",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x10",
+  "LandscapeMeshProxyActor": {
+    "Super": "Actor",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "GrassTypes",
-        "Type": "TArray<struct GrassInput>",
-        "Size": "0x10",
-        "Offset": "0x70"
-      }
-    ]
-  },
-  "LandscapeSplinesComponent": {
-    "Super": "PrimitiveComponent",
-    "FullSize": "0x600",
-    "InheritedSize": "0x5d0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "ControlPoints",
-        "Type": "TArray<class LandscapeSplineControlPoint*>",
-        "Size": "0x10",
-        "Offset": "0x5c8"
-      },
-      {
-        "Name": "Segments",
-        "Type": "TArray<class LandscapeSplineSegment*>",
-        "Size": "0x10",
-        "Offset": "0x5d8"
-      },
-      {
-        "Name": "CookedForeignMeshComponents",
-        "Type": "TArray<class MeshComponent*>",
-        "Size": "0x10",
-        "Offset": "0x5e8"
-      }
-    ]
-  },
-  "LandscapeSplineSegment": {
-    "Super": "Object",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "Connections",
-        "Type": "struct LandscapeSplineSegmentConnection",
-        "Size": "0x18",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "SplineInfo",
-        "Type": "struct InterpCurveVector",
-        "Size": "0x18",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "Points",
-        "Type": "TArray<struct LandscapeSplineInterpPoint>",
-        "Size": "0x10",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "Bounds",
-        "Type": "struct Box",
-        "Size": "0x1c",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "LocalMeshComponents",
-        "Type": "TArray<class SplineMeshComponent*>",
-        "Size": "0x10",
-        "Offset": "0xa0"
+        "Name": "LandscapeMeshProxyComponent",
+        "Type": "class LandscapeMeshProxyComponent*",
+        "Size": "0x8",
+        "Offset": "0x3c8"
       }
     ]
   },

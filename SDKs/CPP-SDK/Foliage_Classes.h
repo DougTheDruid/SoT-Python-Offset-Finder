@@ -15,15 +15,6 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0x7d0] - InheritedSize[0x7b0]
-class FoliageInstancedStaticMeshComponent: public HierarchicalInstancedStaticMeshComponent
-{
-public:
-	multicastinlinedelegate                                      OnInstanceTakePointDamage;                         // 0x7a8(0x10)
-	multicastinlinedelegate                                      OnInstanceTakeRadialDamage;                        // 0x7b8(0x10)
-};
-
-
 // Size 0x60 (Full Size[0x438] - InheritedSize[0x3d8]
 class InteractiveFoliageActor: public StaticMeshActor
 {
@@ -45,14 +36,6 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x408] - InheritedSize[0x400]
-class ProceduralFoliageVolume: public Volume
-{
-public:
-	class ProceduralFoliageComponent*                            ProceduralComponent;                               // 0x400(0x8)
-};
-
-
 // Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
 class ProceduralFoliageComponent: public ActorComponent
 {
@@ -64,11 +47,12 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x408] - InheritedSize[0x400]
-class ProceduralFoliageBlockingVolume: public Volume
+// Size 0x20 (Full Size[0x7d0] - InheritedSize[0x7b0]
+class FoliageInstancedStaticMeshComponent: public HierarchicalInstancedStaticMeshComponent
 {
 public:
-	class ProceduralFoliageVolume*                               ProceduralFoliageVolume;                           // 0x400(0x8)
+	multicastinlinedelegate                                      OnInstanceTakePointDamage;                         // 0x7a8(0x10)
+	multicastinlinedelegate                                      OnInstanceTakeRadialDamage;                        // 0x7b8(0x10)
 };
 
 
@@ -81,6 +65,22 @@ public:
 	int                                                          NumUniqueTiles;                                    // 0x30(0x4)
 	TArray<struct FoliageTypeObject>                             FoliageTypes;                                      // 0x38(0x10)
 	bool                                                         bNeedsSimulation;                                  // 0x48(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x408] - InheritedSize[0x400]
+class ProceduralFoliageVolume: public Volume
+{
+public:
+	class ProceduralFoliageComponent*                            ProceduralComponent;                               // 0x400(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x408] - InheritedSize[0x400]
+class ProceduralFoliageBlockingVolume: public Volume
+{
+public:
+	class ProceduralFoliageVolume*                               ProceduralFoliageVolume;                           // 0x400(0x8)
 };
 
 

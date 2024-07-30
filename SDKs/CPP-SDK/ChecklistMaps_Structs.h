@@ -13,6 +13,15 @@ public:
 };
 
 
+// Size 0x50
+struct ChecklistMapItemData
+{
+public:
+	struct TreasureMapTextDesc                                   Description;                                       // 0x0(0x48)
+	bool                                                         IsComplete;                                        // 0x48(0x1)
+};
+
+
 // Size 0x8
 struct ChecklistCompletionEvent
 {
@@ -28,15 +37,6 @@ public:
 	struct Guid                                                  ChecklistMapId;                                    // 0x0(0x10)
 	char                                                         ReceivedActionType;                                // 0x10(0x1)
 	struct FString                                               ActionDescryption;                                 // 0x18(0x10)
-};
-
-
-// Size 0x50
-struct ChecklistMapItemData
-{
-public:
-	struct TreasureMapTextDesc                                   Description;                                       // 0x0(0x48)
-	bool                                                         IsComplete;                                        // 0x48(0x1)
 };
 
 

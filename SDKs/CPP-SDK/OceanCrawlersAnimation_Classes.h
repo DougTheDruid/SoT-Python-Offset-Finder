@@ -6,25 +6,6 @@
 #include "OceanCrawlersAnimation_Structs.h"
 
 
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class OceanCrawlerAnimationServerData: public AnimationServerData
-{
-public:
-	class UClass*                                                AnimInstanceType;                                  // 0x30(0x8)
-	float                                                        MaxSpawnAnimDuration;                              // 0x38(0x4)
-	float                                                        MaxSpawnOnShipAnimDuration;                        // 0x3c(0x4)
-	float                                                        MaxSpawnBoardingAnimDuration;                      // 0x40(0x4)
-};
-
-
-// Size 0x90 (Full Size[0xb8] - InheritedSize[0x28]
-class OceanCrawlerAnimationData: public AnimationData
-{
-public:
-	struct OceanCrawlerAnimationDataStructure                    OceanCrawlerAnimationDataStructure;                // 0x28(0x90)
-};
-
-
 // Size 0x2e0 (Full Size[0x720] - InheritedSize[0x440]
 class OceanCrawlerAnimationInstance: public AnimInstance
 {
@@ -39,6 +20,25 @@ public:
 	struct FName                                                 PropAttachmentSocket;                              // 0x5c4(0x8)
 	struct CustomAnimationMontageStateMachine                    MontagePlayer;                                     // 0x5d0(0xd8)
 	struct HitReactionAnimationState                             HitReacts;                                         // 0x6a8(0x28)
+};
+
+
+// Size 0x90 (Full Size[0xb8] - InheritedSize[0x28]
+class OceanCrawlerAnimationData: public AnimationData
+{
+public:
+	struct OceanCrawlerAnimationDataStructure                    OceanCrawlerAnimationDataStructure;                // 0x28(0x90)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class OceanCrawlerAnimationServerData: public AnimationServerData
+{
+public:
+	class UClass*                                                AnimInstanceType;                                  // 0x30(0x8)
+	float                                                        MaxSpawnAnimDuration;                              // 0x38(0x4)
+	float                                                        MaxSpawnOnShipAnimDuration;                        // 0x3c(0x4)
+	float                                                        MaxSpawnBoardingAnimDuration;                      // 0x40(0x4)
 };
 
 

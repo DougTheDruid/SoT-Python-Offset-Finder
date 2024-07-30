@@ -1,56 +1,4 @@
 {
-  "DebugMenuButtonShortcut": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "DisplayName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ConsoleCommand",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Buttons",
-        "Type": "TArray<struct Key>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "RequiredHoldTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "AvailableInShippingBuilds",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "DebugMenuOptionExecutedEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "DebugMenuItemName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ConsoleCommand",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "DebugMenuUserItem": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -106,6 +54,58 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x32"
+      }
+    ]
+  },
+  "DebugMenuOptionExecutedEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DebugMenuItemName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ConsoleCommand",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "DebugMenuButtonShortcut": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "DisplayName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ConsoleCommand",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Buttons",
+        "Type": "TArray<struct Key>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "RequiredHoldTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "AvailableInShippingBuilds",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x34"
       }
     ]
   },

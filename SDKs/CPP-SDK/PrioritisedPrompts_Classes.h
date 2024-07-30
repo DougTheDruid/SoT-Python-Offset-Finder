@@ -6,13 +6,12 @@
 #include "PrioritisedPrompts_Structs.h"
 
 
-// Size 0xf0 (Full Size[0x118] - InheritedSize[0x28]
-class BasePromptCoordinator: public Object
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class PrioritisedPromptsManager: public Object
 {
 public:
-	class AthenaPlayerController*                                PlayerController;                                  // 0x28(0x8)
-	class PrioritisedPromptsManager*                             PrioritisedPromptsManager;                         // 0x40(0x8)
-	class Character*                                             CharacterWithRegisteredEvents;                     // 0x48(0x8)
+	TArray<struct PrioritisedPromptWithHandle>                   AllPrompts;                                        // 0x30(0x10)
+	class PlayerController*                                      PlayerController;                                  // 0x40(0x8)
 };
 
 
@@ -33,12 +32,13 @@ public:
 };
 
 
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class PrioritisedPromptsManager: public Object
+// Size 0xf0 (Full Size[0x118] - InheritedSize[0x28]
+class BasePromptCoordinator: public Object
 {
 public:
-	TArray<struct PrioritisedPromptWithHandle>                   AllPrompts;                                        // 0x30(0x10)
-	class PlayerController*                                      PlayerController;                                  // 0x40(0x8)
+	class AthenaPlayerController*                                PlayerController;                                  // 0x28(0x8)
+	class PrioritisedPromptsManager*                             PrioritisedPromptsManager;                         // 0x40(0x8)
+	class Character*                                             CharacterWithRegisteredEvents;                     // 0x48(0x8)
 };
 
 

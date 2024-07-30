@@ -1,4 +1,18 @@
 {
+  "GameplayTask": {
+    "Super": "Object",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "InstanceName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "GameplayTaskResource": {
     "Super": "Object",
     "FullSize": "0x38",
@@ -16,20 +30,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x30"
-      }
-    ]
-  },
-  "GameplayTask": {
-    "Super": "Object",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "InstanceName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x28"
       }
     ]
   },
@@ -59,6 +59,20 @@
       }
     ]
   },
+  "GameplayTask_WaitDelay": {
+    "Super": "GameplayTask",
+    "FullSize": "0x70",
+    "InheritedSize": "0x58",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "OnFinish",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x58"
+      }
+    ]
+  },
   "GameplayTask_SpawnActor": {
     "Super": "GameplayTask",
     "FullSize": "0x98",
@@ -82,20 +96,6 @@
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x90"
-      }
-    ]
-  },
-  "GameplayTask_WaitDelay": {
-    "Super": "GameplayTask",
-    "FullSize": "0x70",
-    "InheritedSize": "0x58",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "OnFinish",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x58"
       }
     ]
   },

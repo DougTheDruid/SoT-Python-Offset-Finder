@@ -1,18 +1,4 @@
 {
-  "ShaderPlatformQualitySettings": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "QualityOverrides",
-        "Type": "struct MaterialQualityOverrides",
-        "Size": "0x4",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "MaterialShaderQualitySettings": {
     "Super": "Object",
     "FullSize": "0x80",
@@ -23,6 +9,20 @@
         "Name": "ForwardSettingMap",
         "Type": "map",
         "Size": "0x50",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ShaderPlatformQualitySettings": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "QualityOverrides",
+        "Type": "struct MaterialQualityOverrides",
+        "Size": "0x4",
         "Offset": "0x28"
       }
     ]

@@ -6,6 +6,19 @@
 #include "GenericStatusVFX_Structs.h"
 
 
+// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
+class GenericStatusVFXDataAsset: public DataAsset
+{
+public:
+	struct Status                                                VFXStatus;                                         // 0x28(0x18)
+	class ParticleSystem*                                        VFXSystem;                                         // 0x40(0x8)
+	float                                                        VFXFalloffDuration;                                // 0x48(0x4)
+	float                                                        VFXFalloffMultiplier;                              // 0x4c(0x4)
+	struct FName                                                 VfxSocketName;                                     // 0x50(0x8)
+	struct Transform                                             SocketRelativeOffset;                              // 0x60(0x30)
+};
+
+
 // Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
 class GenericStatusVFXResponse: public StatusResponse
 {
@@ -22,19 +35,6 @@ public:
 	class World*                                                 CachedWorld;                                       // 0xd8(0x8)
 	class GenericStatusVFXDataAsset*                             VFXDataAsset;                                      // 0x100(0x8)
 	bool                                                         ContainsVFXSource;                                 // 0x120(0x1)
-};
-
-
-// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
-class GenericStatusVFXDataAsset: public DataAsset
-{
-public:
-	struct Status                                                VFXStatus;                                         // 0x28(0x18)
-	class ParticleSystem*                                        VFXSystem;                                         // 0x40(0x8)
-	float                                                        VFXFalloffDuration;                                // 0x48(0x4)
-	float                                                        VFXFalloffMultiplier;                              // 0x4c(0x4)
-	struct FName                                                 VfxSocketName;                                     // 0x50(0x8)
-	struct Transform                                             SocketRelativeOffset;                              // 0x60(0x30)
 };
 
 

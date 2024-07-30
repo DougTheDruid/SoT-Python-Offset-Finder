@@ -1,21 +1,4 @@
 {
-  "VolcanoSetupDataEmbersEntry": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MaxDistanceInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Effect",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "WeightedAshenLordVolcanoProjectile": {
     "ClassSize": "0xd0",
     "Attributes": [
@@ -60,6 +43,97 @@
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xc8"
+      }
+    ]
+  },
+  "VolcanoStateData": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "State",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "StateDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "PercentageOfMaxTargetingRange",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "VolcanoStoryCustomisationData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StoryFlag",
+        "Type": "struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "VolcanoSetupData",
+        "Type": "class VolcanoSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EarthquakeForceFeedbackOption": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ForceFeedback",
+        "Type": "TArray<struct LandmarkReactionEventPlayForceFeedbackEntry>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GeyserManagerStoryCustomisationData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StoryFlag",
+        "Type": "struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GeyserManagerSetupData",
+        "Type": "class GeyserManagerSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "VolcanoProjectileData": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "WeightedVolcanoProjectileIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LaunchVelocity",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "RotationRate",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x10"
       }
     ]
   },
@@ -134,94 +208,43 @@
       }
     ]
   },
-  "AshenLordWorldEndCloudAnimation": {
-    "ClassSize": "0x8",
+  "VolcanoTarget": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "ServerStartTime",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "Type",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "ServerLifeTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "VolcanoStoryCustomisationData": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "StoryFlag",
-        "Type": "struct StoryFlag",
-        "Size": "0x8",
-        "Offset": "0x0"
+        "Name": "HitType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
       },
       {
-        "Name": "VolcanoSetupData",
-        "Type": "class VolcanoSetupDataAsset*",
+        "Name": "Target",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "VolcanoProjectileData": {
-    "ClassSize": "0x1c",
-    "Attributes": [
+      },
       {
-        "Name": "WeightedVolcanoProjectileIndex",
+        "Name": "NumExtraShots",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LaunchVelocity",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "RotationRate",
-        "Type": "struct Vector",
-        "Size": "0xc",
         "Offset": "0x10"
       }
     ]
   },
-  "GeyserManagerStoryCustomisationData": {
+  "VolcanoTargetCoolDown": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "StoryFlag",
-        "Type": "struct StoryFlag",
+        "Name": "Target",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "GeyserManagerSetupData",
-        "Type": "class GeyserManagerSetupDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "GeyserStoryCustomisationData": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "StoryFlag",
-        "Type": "struct StoryFlag",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "GeyserSetupData",
-        "Type": "class GeyserSetupDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
@@ -253,55 +276,37 @@
       }
     ]
   },
-  "VolcanoStateData": {
-    "ClassSize": "0xc",
+  "AshenLordWorldEndCloudAnimation": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "State",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "ServerStartTime",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "StateDuration",
+        "Name": "ServerLifeTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
-      },
-      {
-        "Name": "PercentageOfMaxTargetingRange",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
       }
     ]
   },
-  "VolcanoTarget": {
-    "ClassSize": "0x18",
+  "VolcanoSetupDataEmbersEntry": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Type",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "MaxDistanceInMetres",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "HitType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "Target",
-        "Type": "class Actor*",
+        "Name": "Effect",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x8"
-      },
-      {
-        "Name": "NumExtraShots",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
       }
     ]
   },
@@ -328,14 +333,20 @@
       }
     ]
   },
-  "VolcanoTargetCoolDown": {
+  "GeyserStoryCustomisationData": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Target",
-        "Type": "class Actor*",
+        "Name": "StoryFlag",
+        "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "GeyserSetupData",
+        "Type": "class GeyserSetupDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -377,17 +388,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x50"
-      }
-    ]
-  },
-  "EarthquakeForceFeedbackOption": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ForceFeedback",
-        "Type": "TArray<struct LandmarkReactionEventPlayForceFeedbackEntry>",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },

@@ -73,4 +73,8 @@ ServerMigrationRequestEvent:
     Offset: '0x40'
     Size: '0x10'
     Type: TArray<char>
-  ClassSize: '0x50'
+  - Name: RequestedGameEvents
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<String>
+  ClassSize: '0x60'

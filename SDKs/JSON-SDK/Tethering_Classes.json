@@ -1,4 +1,36 @@
 {
+  "TetherCustomisationComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x128",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "ComponentToTetherTo",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "MassIntertiaScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x120"
+      },
+      {
+        "Name": "CanBeTethered",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x124"
+      },
+      {
+        "Name": "IsMassInertiaScalingEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x125"
+      }
+    ]
+  },
   "Tether": {
     "Super": "Actor",
     "FullSize": "0x508",
@@ -102,38 +134,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x648"
-      }
-    ]
-  },
-  "TetherCustomisationComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x128",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "ComponentToTetherTo",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "MassIntertiaScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x120"
-      },
-      {
-        "Name": "CanBeTethered",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x124"
-      },
-      {
-        "Name": "IsMassInertiaScalingEnabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x125"
       }
     ]
   },

@@ -24,7 +24,8 @@ public:
 	float                                                        MaxLocalTimeUpdateAdjustPercentageToSlowDown;      // 0x43c(0x4)
 	float                                                        MinLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x440(0x4)
 	float                                                        MaxLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x444(0x4)
-	uint32                                                       MaxNumReplicatedTimeEntriesToAverage;              // 0x448(0x4)
+	float                                                        MaxTimeJumpToCatchUpInSeconds;                     // 0x448(0x4)
+	uint32                                                       MaxNumReplicatedTimeEntriesToAverage;              // 0x44c(0x4)
 	struct ReplicatedAuthoritativeTime                           ReplicatedServerTime;                              // 0x498(0x10)
 };
 

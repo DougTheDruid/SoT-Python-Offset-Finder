@@ -1,15 +1,15 @@
 {
-  "MockActorWithCharacterInteractionComponent": {
-    "Super": "Character",
-    "FullSize": "0x690",
-    "InheritedSize": "0x5e0",
-    "ClassSize": "0xb0",
+  "CharacterInteractionComponent": {
+    "Super": "BoxComponent",
+    "FullSize": "0x6d0",
+    "InheritedSize": "0x600",
+    "ClassSize": "0xd0",
     "Attributes": [
       {
-        "Name": "CharacterInteractionComponent",
-        "Type": "class CharacterInteractionComponent*",
+        "Name": "CurrentOptimalInteractable",
+        "Type": "class InteractableArea*",
         "Size": "0x8",
-        "Offset": "0x5e8"
+        "Offset": "0x600"
       }
     ]
   },
@@ -24,20 +24,6 @@
         "Type": "TArray<class InteractableArea*>",
         "Size": "0x10",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "PlayerInteractionTrackerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "InteractedPlayers",
-        "Type": "TArray<struct UniqueNetIdRepl>",
-        "Size": "0x10",
-        "Offset": "0xd0"
       }
     ]
   },
@@ -73,34 +59,6 @@
       }
     ]
   },
-  "CharacterInteractionComponent": {
-    "Super": "BoxComponent",
-    "FullSize": "0x6d0",
-    "InheritedSize": "0x600",
-    "ClassSize": "0xd0",
-    "Attributes": [
-      {
-        "Name": "CurrentOptimalInteractable",
-        "Type": "class InteractableArea*",
-        "Size": "0x8",
-        "Offset": "0x600"
-      }
-    ]
-  },
-  "InteractionPreventionComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ActorsToPreventInteractingWith",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      }
-    ]
-  },
   "MockInteractorActor": {
     "Super": "Actor",
     "FullSize": "0x3f8",
@@ -130,6 +88,20 @@
         "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x3e8"
+      }
+    ]
+  },
+  "PlayerInteractionTrackerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "InteractedPlayers",
+        "Type": "TArray<struct UniqueNetIdRepl>",
+        "Size": "0x10",
+        "Offset": "0xd0"
       }
     ]
   },
@@ -216,6 +188,34 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x120"
+      }
+    ]
+  },
+  "MockActorWithCharacterInteractionComponent": {
+    "Super": "Character",
+    "FullSize": "0x690",
+    "InheritedSize": "0x5e0",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "CharacterInteractionComponent",
+        "Type": "class CharacterInteractionComponent*",
+        "Size": "0x8",
+        "Offset": "0x5e8"
+      }
+    ]
+  },
+  "InteractionPreventionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ActorsToPreventInteractingWith",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0xd0"
       }
     ]
   },

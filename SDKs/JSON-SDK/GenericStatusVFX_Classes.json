@@ -1,4 +1,48 @@
 {
+  "GenericStatusVFXDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x90",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "VFXStatus",
+        "Type": "struct Status",
+        "Size": "0x18",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "VFXSystem",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "VFXFalloffDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "VFXFalloffMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
+        "Name": "VfxSocketName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "SocketRelativeOffset",
+        "Type": "struct Transform",
+        "Size": "0x30",
+        "Offset": "0x60"
+      }
+    ]
+  },
   "GenericStatusVFXResponse": {
     "Super": "StatusResponse",
     "FullSize": "0x38",
@@ -42,50 +86,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x120"
-      }
-    ]
-  },
-  "GenericStatusVFXDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x90",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "VFXStatus",
-        "Type": "struct Status",
-        "Size": "0x18",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "VFXSystem",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "VFXFalloffDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "VFXFalloffMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4c"
-      },
-      {
-        "Name": "VfxSocketName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "SocketRelativeOffset",
-        "Type": "struct Transform",
-        "Size": "0x30",
-        "Offset": "0x60"
       }
     ]
   },

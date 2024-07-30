@@ -1,17 +1,17 @@
 {
-  "GenderSpecificTextPairings": {
-    "ClassSize": "0x70",
+  "TextEntryWithLayout": {
+    "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "MasculineClueDestinationDescription",
+        "Name": "TextEntry",
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x0"
       },
       {
-        "Name": "FeminineClueDestinationDescription",
-        "Type": "struct FText",
-        "Size": "0x38",
+        "Name": "TextLayout",
+        "Type": "struct TreasureMapWidgetText",
+        "Size": "0x3c",
         "Offset": "0x38"
       }
     ]
@@ -30,6 +30,40 @@
         "Type": "assetclass",
         "Size": "0x20",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "ClueDestinationChoice": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Destination",
+        "Type": "class ClueDestinationDescriptor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ClueChoice",
+        "Type": "int16",
+        "Size": "0x2",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "GenderSpecificTextPairings": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "MasculineClueDestinationDescription",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FeminineClueDestinationDescription",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x38"
       }
     ]
   },
@@ -63,40 +97,6 @@
         "Name": "RequiredIndexAsset",
         "Type": "assetobject",
         "Size": "0x20",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "TextEntryWithLayout": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "TextEntry",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TextLayout",
-        "Type": "struct TreasureMapWidgetText",
-        "Size": "0x3c",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "ClueDestinationChoice": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Destination",
-        "Type": "class ClueDestinationDescriptor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ClueChoice",
-        "Type": "int16",
-        "Size": "0x2",
         "Offset": "0x8"
       }
     ]

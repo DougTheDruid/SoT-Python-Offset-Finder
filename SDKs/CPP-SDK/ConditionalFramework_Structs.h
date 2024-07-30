@@ -4,6 +4,30 @@
 // https://github.com/DougTheDruid
 
 // Size 0x18
+struct OrCondition
+{
+public:
+	TArray<struct ConditionInstance>                             Conditions;                                        // 0x8(0x10)
+};
+
+
+// Size 0x10
+struct ConditionFromAsset
+{
+public:
+	class ConditionRootAsset*                                    ConditionAsset;                                    // 0x8(0x8)
+};
+
+
+// Size 0x28
+struct NotCondition
+{
+public:
+	struct ConditionInstance                                     Condition;                                         // 0x8(0x20)
+};
+
+
+// Size 0x18
 struct IsFeatureEnabledCondition
 {
 public:
@@ -11,12 +35,27 @@ public:
 };
 
 
-// Size 0x10
-struct ConditionContextPayloadTarget
+// Size 0x18
+struct AndCondition
 {
 public:
-	class ScriptStruct*                                          PayloadStruct;                                     // 0x0(0x8)
-	struct FName                                                 PayloadMember;                                     // 0x8(0x8)
+	TArray<struct ConditionInstance>                             Conditions;                                        // 0x8(0x10)
+};
+
+
+// Size 0x38
+struct IsObjectOfTypeCondition
+{
+public:
+	TArray<Class>                                                TargetObjectClasses;                               // 0x28(0x10)
+};
+
+
+// Size 0x10
+struct InstigatorConditionContextPayload
+{
+public:
+	class Actor*                                                 Instigator;                                        // 0x8(0x8)
 };
 
 
@@ -28,11 +67,28 @@ public:
 };
 
 
-// Size 0x10
-struct ConditionFromAsset
+// Size 0x30
+struct IsGameOnSpecificPlayModeVariantCondition
 {
 public:
-	class ConditionRootAsset*                                    ConditionAsset;                                    // 0x8(0x8)
+	char                                                         TargetMode;                                        // 0x28(0x1)
+};
+
+
+// Size 0x10
+struct TargetConditionContextPayload
+{
+public:
+	class Actor*                                                 Target;                                            // 0x8(0x8)
+};
+
+
+// Size 0x10
+struct ConditionContextPayloadTarget
+{
+public:
+	class ScriptStruct*                                          PayloadStruct;                                     // 0x0(0x8)
+	struct FName                                                 PayloadMember;                                     // 0x8(0x8)
 };
 
 
@@ -54,66 +110,10 @@ public:
 
 
 // Size 0x10
-struct InstigatorConditionContextPayload
-{
-public:
-	class Actor*                                                 Instigator;                                        // 0x8(0x8)
-};
-
-
-// Size 0x28
-struct NotCondition
-{
-public:
-	struct ConditionInstance                                     Condition;                                         // 0x8(0x20)
-};
-
-
-// Size 0x10
 struct WorldObjectConditionContextPayload
 {
 public:
 	class World*                                                 WorldObject;                                       // 0x8(0x8)
-};
-
-
-// Size 0x18
-struct OrCondition
-{
-public:
-	TArray<struct ConditionInstance>                             Conditions;                                        // 0x8(0x10)
-};
-
-
-// Size 0x18
-struct AndCondition
-{
-public:
-	TArray<struct ConditionInstance>                             Conditions;                                        // 0x8(0x10)
-};
-
-
-// Size 0x10
-struct TargetConditionContextPayload
-{
-public:
-	class Actor*                                                 Target;                                            // 0x8(0x8)
-};
-
-
-// Size 0x38
-struct IsObjectOfTypeCondition
-{
-public:
-	TArray<Class>                                                TargetObjectClasses;                               // 0x28(0x10)
-};
-
-
-// Size 0x30
-struct IsGameOnSpecificPlayModeVariantCondition
-{
-public:
-	char                                                         TargetMode;                                        // 0x28(0x1)
 };
 
 

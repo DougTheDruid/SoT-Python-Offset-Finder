@@ -1,44 +1,4 @@
 {
-  "SeasonGoalCompletionEvent": {
-    "ClassSize": "0x34",
-    "Attributes": [
-      {
-        "Name": "SeasonId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "GoalId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "GoalType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "GoalGroupId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x24"
-      }
-    ]
-  },
-  "PlayerTrackedObjective": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ObjectiveId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "LevelCompletionEvent": {
     "ClassSize": "0x24",
     "Attributes": [
@@ -83,17 +43,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x21"
-      }
-    ]
-  },
-  "SeasonPopupAssetLoadCompleted": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "LoadSuccessful",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -144,6 +93,17 @@
       }
     ]
   },
+  "SeasonPopupAssetLoadCompleted": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "LoadSuccessful",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "LevelProgressionEvent": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -185,26 +145,32 @@
       }
     ]
   },
-  "SeasonReward": {
-    "ClassSize": "0x20",
+  "SeasonGoalCompletionEvent": {
+    "ClassSize": "0x34",
     "Attributes": [
       {
-        "Name": "Id",
+        "Name": "SeasonId",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "Tier",
-        "Type": "int64",
-        "Size": "0x8",
+        "Name": "GoalId",
+        "Type": "struct Guid",
+        "Size": "0x10",
         "Offset": "0x10"
       },
       {
-        "Name": "Level",
-        "Type": "int64",
-        "Size": "0x8",
-        "Offset": "0x18"
+        "Name": "GoalType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "GoalGroupId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x24"
       }
     ]
   },
@@ -246,6 +212,17 @@
         "Type": "double",
         "Size": "0x8",
         "Offset": "0xd8"
+      }
+    ]
+  },
+  "PlayerTrackedObjective": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ObjectiveId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -293,6 +270,29 @@
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x30"
+      }
+    ]
+  },
+  "SeasonReward": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Tier",
+        "Type": "int64",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Level",
+        "Type": "int64",
+        "Size": "0x8",
+        "Offset": "0x18"
       }
     ]
   },

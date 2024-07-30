@@ -3,16 +3,16 @@
 BoneCallerCannonProjectile:
   Attributes:
   - Name: BoneCallerSpawnId
-    Offset: '0x6d8'
+    Offset: '0x758'
     Size: '0x8'
     Type: class UClass*
   - Name: FiredFromReapersTributeShipBoneCallerSpawnId
-    Offset: '0x6e0'
+    Offset: '0x760'
     Size: '0x8'
     Type: class UClass*
   ClassSize: '0x10'
-  FullSize: '0x6e8'
-  InheritedSize: '0x6d8'
+  FullSize: '0x768'
+  InheritedSize: '0x758'
   Super: CannonProjectile
 BoneCallerOwnershipComponent:
   Attributes:

@@ -30,14 +30,14 @@ public:
 };
 
 
-// Size 0x50 (Full Size[0x88] - InheritedSize[0x38]
-class TextureAuditorSettings: public TestSettings
+// Size 0x40 (Full Size[0x78] - InheritedSize[0x38]
+class AssetAuditSettings: public DeveloperSettings
 {
 public:
-	TArray<struct StringAssetReference>                          SpecificTexturesToNotAudit;                        // 0x38(0x10)
-	TArray<struct DirectoryPath>                                 TextureDirectoriesToNotAudit;                      // 0x48(0x10)
-	struct TextureAuditorProperties                              DefaultTextureProperties;                          // 0x58(0x20)
-	TArray<struct TextureAuditorGroupProperties>                 PerTextureGroupPropertiesOverrides;                // 0x78(0x10)
+	TArray<String>                                               PathsToAuditOnSave;                                // 0x38(0x10)
+	TArray<Class>                                                TypesToIgnoreInFeatureToggleAudits;                // 0x48(0x10)
+	TArray<String>                                               AssetAuditorsLoadExceptionList;                    // 0x58(0x10)
+	TArray<Class>                                                IgnoreReferencersForClasses;                       // 0x68(0x10)
 };
 
 
@@ -49,14 +49,14 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0x78] - InheritedSize[0x38]
-class AssetAuditSettings: public DeveloperSettings
+// Size 0x50 (Full Size[0x88] - InheritedSize[0x38]
+class TextureAuditorSettings: public TestSettings
 {
 public:
-	TArray<String>                                               PathsToAuditOnSave;                                // 0x38(0x10)
-	TArray<Class>                                                TypesToIgnoreInFeatureToggleAudits;                // 0x48(0x10)
-	TArray<String>                                               AssetAuditorsLoadExceptionList;                    // 0x58(0x10)
-	TArray<Class>                                                IgnoreReferencersForClasses;                       // 0x68(0x10)
+	TArray<struct StringAssetReference>                          SpecificTexturesToNotAudit;                        // 0x38(0x10)
+	TArray<struct DirectoryPath>                                 TextureDirectoriesToNotAudit;                      // 0x48(0x10)
+	struct TextureAuditorProperties                              DefaultTextureProperties;                          // 0x58(0x20)
+	TArray<struct TextureAuditorGroupProperties>                 PerTextureGroupPropertiesOverrides;                // 0x78(0x10)
 };
 
 

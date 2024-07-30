@@ -1,15 +1,4 @@
 {
-  "StatusVFXChangedEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "HasSource",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "StatusAudioChangedEvent": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -24,6 +13,17 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "StatusVFXChangedEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "HasSource",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

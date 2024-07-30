@@ -15,6 +15,14 @@ public:
 };
 
 
+// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
+class WindSettings: public DeveloperSettings
+{
+public:
+	struct WindServiceParams                                     WindParams;                                        // 0x38(0x24)
+};
+
+
 // Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
 class TestWindInterface: public Object
 {
@@ -32,14 +40,6 @@ public:
 	float                                                        CurrentWindMagnitude;                              // 0x3f4(0x4)
 	TArray<class Interface*>                                     WindZones;                                         // 0x4e0(0x10)
 	TArray<struct ExtraWind>                                     ExtraWind;                                         // 0x4f0(0x10)
-};
-
-
-// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
-class WindSettings: public DeveloperSettings
-{
-public:
-	struct WindServiceParams                                     WindParams;                                        // 0x38(0x24)
 };
 
 

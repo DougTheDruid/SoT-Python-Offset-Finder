@@ -1,18 +1,4 @@
 {
-  "CreateActorInstanceOnExplodeComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x138",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "ActorToInstance",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      }
-    ]
-  },
   "StatusResponseExplodeAfterTime": {
     "Super": "StatusResponse",
     "FullSize": "0x48",
@@ -36,6 +22,20 @@
         "Type": "class World*",
         "Size": "0x8",
         "Offset": "0x40"
+      }
+    ]
+  },
+  "CreateActorInstanceOnExplodeComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x138",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "ActorToInstance",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xc8"
       }
     ]
   },

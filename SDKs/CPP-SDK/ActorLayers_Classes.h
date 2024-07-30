@@ -6,20 +6,20 @@
 #include "ActorLayers_Structs.h"
 
 
-// Size 0x30 (Full Size[0x310] - InheritedSize[0x2e0]
-class InstancedLayerComponent: public SceneComponent
-{
-public:
-	TArray<struct InstancedLayer>                                InstancedLayers;                                   // 0x2e8(0x10)
-};
-
-
 // Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class LayerActorsDataAsset: public DataAsset
 {
 public:
 	TArray<Class>                                                Actors;                                            // 0x28(0x10)
 	TArray<Class>                                                Items;                                             // 0x38(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x310] - InheritedSize[0x2e0]
+class InstancedLayerComponent: public SceneComponent
+{
+public:
+	TArray<struct InstancedLayer>                                InstancedLayers;                                   // 0x2e8(0x10)
 };
 
 

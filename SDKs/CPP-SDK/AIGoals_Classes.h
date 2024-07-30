@@ -16,6 +16,16 @@ public:
 };
 
 
+// Size 0xa0 (Full Size[0x110] - InheritedSize[0x70]
+class BTService_SetBestActionSpotNearTarget: public BTService
+{
+public:
+	struct BlackboardKeySelector                                 TargetKey;                                         // 0x70(0x28)
+	struct BlackboardKeySelector                                 BestActionSpotKey;                                 // 0x98(0x28)
+	struct BestActionSpotSelectionCriteria                       BestActionSpotSelectionCriteria;                   // 0xc0(0x34)
+};
+
+
 // Size 0x38 (Full Size[0x78] - InheritedSize[0x40]
 class WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal: public AIGoal
 {
@@ -25,6 +35,14 @@ public:
 	struct AIGoalMovementModeFilter                              MovementModeFilter;                                // 0x48(0x20)
 	bool                                                         ShouldOnlyActivateWhileDocked;                     // 0x68(0x1)
 	class Pawn*                                                  TargetPlayerPawn;                                  // 0x70(0x8)
+};
+
+
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+class AIHomeComponent: public ActorComponent
+{
+public:
+	class Actor*                                                 HomeActor;                                         // 0xd0(0x8)
 };
 
 
@@ -39,29 +57,11 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
-class AIHomeComponent: public ActorComponent
-{
-public:
-	class Actor*                                                 HomeActor;                                         // 0xd0(0x8)
-};
-
-
 // Size 0x8 (Full Size[0x48] - InheritedSize[0x40]
 class WhileBlackboardKeySetAIGoal: public AIGoal
 {
 public:
 	struct FName                                                 BlackboardKey;                                     // 0x40(0x8)
-};
-
-
-// Size 0xa0 (Full Size[0x110] - InheritedSize[0x70]
-class BTService_SetBestActionSpotNearTarget: public BTService
-{
-public:
-	struct BlackboardKeySelector                                 TargetKey;                                         // 0x70(0x28)
-	struct BlackboardKeySelector                                 BestActionSpotKey;                                 // 0x98(0x28)
-	struct BestActionSpotSelectionCriteria                       BestActionSpotSelectionCriteria;                   // 0xc0(0x34)
 };
 
 

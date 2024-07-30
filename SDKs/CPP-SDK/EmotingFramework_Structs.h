@@ -11,16 +11,6 @@ public:
 };
 
 
-// Size 0x14
-struct EmoteDiceOutcomeTelemetryEvent
-{
-public:
-	int                                                          MaxLimit;                                          // 0x0(0x4)
-	int                                                          RollNumber;                                        // 0x4(0x4)
-	struct Vector                                                OrientationUsed;                                   // 0x8(0xc)
-};
-
-
 // Size 0x30
 struct EmotePropRandomObjectInfo
 {
@@ -32,6 +22,36 @@ public:
 };
 
 
+// Size 0x14
+struct EmoteDiceOutcomeTelemetryEvent
+{
+public:
+	int                                                          MaxLimit;                                          // 0x0(0x4)
+	int                                                          RollNumber;                                        // 0x4(0x4)
+	struct Vector                                                OrientationUsed;                                   // 0x8(0xc)
+};
+
+
+// Size 0x58
+struct EmoteInteractionTooltipInstance
+{
+public:
+	char                                                         InteractionTooltipType;                            // 0x0(0x1)
+	struct FText                                                 DisplayString;                                     // 0x8(0x38)
+	TArray<struct Text>                                          DisplayStringArgs;                                 // 0x40(0x10)
+	bool                                                         IsProgressBar;                                     // 0x50(0x1)
+};
+
+
+// Size 0xc
+struct EventEmoteEndRequested
+{
+public:
+	struct FName                                                 EmoteIdentifier;                                   // 0x0(0x8)
+	bool                                                         EndForcedEmote;                                    // 0x8(0x1)
+};
+
+
 // Size 0x60
 struct EmoteRandomObjectOutcomeTelemetryEvent
 {
@@ -40,14 +60,6 @@ public:
 	struct Transform                                             Transform;                                         // 0x10(0x30)
 	struct FString                                               TextureParameterName;                              // 0x40(0x10)
 	int                                                          TextureParameterValue;                             // 0x50(0x4)
-};
-
-
-// Size 0x8
-struct EventEnableLookAtEmoteCamera
-{
-public:
-	class Actor*                                                 LookAtTarget;                                      // 0x0(0x8)
 };
 
 
@@ -63,6 +75,14 @@ public:
 };
 
 
+// Size 0x8
+struct EventEnableLookAtEmoteCamera
+{
+public:
+	class Actor*                                                 LookAtTarget;                                      // 0x0(0x8)
+};
+
+
 // Size 0xc
 struct EventEmoteCompleted
 {
@@ -72,16 +92,7 @@ public:
 };
 
 
-// Size 0xc
-struct EventEmoteEndRequested
-{
-public:
-	struct FName                                                 EmoteIdentifier;                                   // 0x0(0x8)
-	bool                                                         EndForcedEmote;                                    // 0x8(0x1)
-};
-
-
-// Size 0xa0
+// Size 0xd0
 struct EmoteData
 {
 public:
@@ -95,32 +106,55 @@ public:
 	bool                                                         CanPlayInSuccession;                               // 0x90(0x1)
 	bool                                                         ShowDescriptionInTextChat;                         // 0x91(0x1)
 	class AthenaSpringArmComponentParams*                        CustomSpringArmParamsAsset;                        // 0x98(0x8)
-};
-
-
-// Size 0xa0
-struct EventEmoteSwapped
-{
-public:
-	struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
+	float                                                        DurationUntilPlayerHiddenFromAI;                   // 0xa0(0x4)
+	bool                                                         OverrideInteractableBoxData;                       // 0xa4(0x1)
+	struct Vector                                                BoxExtent;                                         // 0xa8(0xc)
+	struct Vector                                                BoxOrigin;                                         // 0xb4(0xc)
+	struct Rotator                                               BoxRotation;                                       // 0xc0(0xc)
 };
 
 
 // Size 0xb0
-struct EventEmoteRequested
+struct EmoteInteractionTooltipData
 {
 public:
-	struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
-	struct FName                                                 ForcedEmoteIdentifier;                             // 0xa0(0x8)
-	bool                                                         ForcedEmote;                                       // 0xa8(0x1)
+	struct EmoteInteractionTooltipInstance                       Tooltip;                                           // 0x0(0x58)
+	struct EmoteInteractionTooltipInstance                       GreyedOut;                                         // 0x58(0x58)
 };
 
 
-// Size 0xa0
+// Size 0xd0
+struct EventEmoteSwapped
+{
+public:
+	struct EmoteData                                             EmoteData;                                         // 0x0(0xd0)
+};
+
+
+// Size 0xd0
 struct EventEmoteStarted
 {
 public:
-	struct EmoteData                                             EmoteData;                                         // 0x0(0xa0)
+	struct EmoteData                                             EmoteData;                                         // 0x0(0xd0)
+};
+
+
+// Size 0xe0
+struct EventEmoteRequested
+{
+public:
+	struct EmoteData                                             EmoteData;                                         // 0x0(0xd0)
+	struct FName                                                 ForcedEmoteIdentifier;                             // 0xd0(0x8)
+	bool                                                         ForcedEmote;                                       // 0xd8(0x1)
+};
+
+
+// Size 0xf0
+struct WalkableEmoteData
+{
+public:
+	TArray<struct EmoteInteractionTooltipData>                   EmotePrimaryInteractionTooltipData;                // 0xd0(0x10)
+	TArray<struct EmoteInteractionTooltipData>                   EmoteSecondaryInteractionTooltipData;              // 0xe0(0x10)
 };
 
 

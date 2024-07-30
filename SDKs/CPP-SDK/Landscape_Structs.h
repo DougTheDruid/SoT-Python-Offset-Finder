@@ -14,14 +14,6 @@ public:
 };
 
 
-// Size 0x20
-struct LandscapeWeightmapUsage
-{
-public:
-	class LandscapeComponent*                                    ChannelUsage;                                      // 0x0(0x8)
-};
-
-
 // Size 0x18
 struct LandscapeSplineSegmentConnection
 {
@@ -29,6 +21,14 @@ public:
 	class LandscapeSplineControlPoint*                           ControlPoint;                                      // 0x0(0x8)
 	float                                                        TangentLen;                                        // 0x8(0x4)
 	struct FName                                                 SocketName;                                        // 0xc(0x8)
+};
+
+
+// Size 0x20
+struct LandscapeWeightmapUsage
+{
+public:
+	class LandscapeComponent*                                    ChannelUsage;                                      // 0x0(0x8)
 };
 
 
@@ -62,50 +62,6 @@ public:
 };
 
 
-// Size 0x30
-struct GrassVariety
-{
-public:
-	class StaticMesh*                                            GrassMesh;                                         // 0x0(0x8)
-	float                                                        GrassDensity;                                      // 0x8(0x4)
-	bool                                                         bUseGrid;                                          // 0xc(0x1)
-	float                                                        PlacementJitter;                                   // 0x10(0x4)
-	int                                                          StartCullDistance;                                 // 0x14(0x4)
-	int                                                          EndCullDistance;                                   // 0x18(0x4)
-	int                                                          MinLOD;                                            // 0x1c(0x4)
-	bool                                                         RandomRotation;                                    // 0x20(0x1)
-	float                                                        AlignToSurface;                                    // 0x24(0x4)
-	float                                                        ScaleVariationMin;                                 // 0x28(0x4)
-	float                                                        ScaleVariationMax;                                 // 0x2c(0x4)
-};
-
-
-// Size 0x10
-struct LandscapeInfoLayerSettings
-{
-public:
-	class LandscapeLayerInfoObject*                              LayerInfoObj;                                      // 0x0(0x8)
-	struct FName                                                 LayerName;                                         // 0x8(0x8)
-};
-
-
-// Size 0x10
-struct LandscapeSplineConnection
-{
-public:
-	class LandscapeSplineSegment*                                Segment;                                           // 0x0(0x8)
-	bool                                                         End;                                               // 0x8(0x1)
-};
-
-
-// Size 0x8
-struct LandscapeLayerStruct
-{
-public:
-	class LandscapeLayerInfoObject*                              LayerInfoObj;                                      // 0x0(0x8)
-};
-
-
 // Size 0x40
 struct LandscapeSplineInterpPoint
 {
@@ -126,6 +82,50 @@ public:
 	struct FName                                                 Name;                                              // 0x0(0x8)
 	class LandscapeGrassType*                                    GrassType;                                         // 0x8(0x8)
 	struct ExpressionInput                                       Input;                                             // 0x10(0x38)
+};
+
+
+// Size 0x10
+struct LandscapeSplineConnection
+{
+public:
+	class LandscapeSplineSegment*                                Segment;                                           // 0x0(0x8)
+	bool                                                         End;                                               // 0x8(0x1)
+};
+
+
+// Size 0x10
+struct LandscapeInfoLayerSettings
+{
+public:
+	class LandscapeLayerInfoObject*                              LayerInfoObj;                                      // 0x0(0x8)
+	struct FName                                                 LayerName;                                         // 0x8(0x8)
+};
+
+
+// Size 0x8
+struct LandscapeLayerStruct
+{
+public:
+	class LandscapeLayerInfoObject*                              LayerInfoObj;                                      // 0x0(0x8)
+};
+
+
+// Size 0x30
+struct GrassVariety
+{
+public:
+	class StaticMesh*                                            GrassMesh;                                         // 0x0(0x8)
+	float                                                        GrassDensity;                                      // 0x8(0x4)
+	bool                                                         bUseGrid;                                          // 0xc(0x1)
+	float                                                        PlacementJitter;                                   // 0x10(0x4)
+	int                                                          StartCullDistance;                                 // 0x14(0x4)
+	int                                                          EndCullDistance;                                   // 0x18(0x4)
+	int                                                          MinLOD;                                            // 0x1c(0x4)
+	bool                                                         RandomRotation;                                    // 0x20(0x1)
+	float                                                        AlignToSurface;                                    // 0x24(0x4)
+	float                                                        ScaleVariationMin;                                 // 0x28(0x4)
+	float                                                        ScaleVariationMax;                                 // 0x2c(0x4)
 };
 
 

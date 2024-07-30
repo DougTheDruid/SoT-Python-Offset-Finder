@@ -80,17 +80,6 @@
       }
     ]
   },
-  "MerchantContract": {
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "DeliveryRequests",
-        "Type": "TArray<struct MerchantContractDeliveryRequest>",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
   "PlayerMerchantContract": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -108,6 +97,17 @@
       },
       {
         "Name": "Requests",
+        "Type": "TArray<struct MerchantContractDeliveryRequest>",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "MerchantContract": {
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "DeliveryRequests",
         "Type": "TArray<struct MerchantContractDeliveryRequest>",
         "Size": "0x10",
         "Offset": "0x18"

@@ -6,47 +6,19 @@
 #include "Kraken_Structs.h"
 
 
-// Size 0x160 (Full Size[0x188] - InheritedSize[0x28]
-class KrakenParamsDataAsset: public DataAsset
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class KrakenAnimatedTentacleAnimationSpecDataAsset: public DataAsset
 {
 public:
-	struct KrakenParams                                          Params;                                            // 0x28(0x160)
+	TArray<struct KrakenAnimatedTentacleAnimationSpecBone>       Bones;                                             // 0x28(0x10)
 };
 
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class KrakenAnimatedTentacleAnimationMappingDataAsset: public DataAsset
+class KrakenHeadHitReactAnimationsDataAsset: public DataAsset
 {
 public:
-	TArray<struct KrakenAnimatedTentacleMappedAnimation>         Animations;                                        // 0x28(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class KrakenHeadHealthParamsDataAsset: public DataAsset
-{
-public:
-	TArray<struct KrakenHeadHealthPair>                          KrakenHeadHealthPairs;                             // 0x28(0x10)
-};
-
-
-// Size 0x578 (Full Size[0x940] - InheritedSize[0x3c8]
-class Kraken: public Actor
-{
-public:
-	float                                                        RelevancyDistance;                                 // 0x3e0(0x4)
-	float                                                        InnerRadius;                                       // 0x3f8(0x4)
-	float                                                        OuterRadius;                                       // 0x3fc(0x4)
-	float                                                        AreaOfEffectOfShipHitAttack;                       // 0x400(0x4)
-	char                                                         CollisionChannelForGunpowderKegs;                  // 0x404(0x1)
-	char                                                         CurrentState;                                      // 0x405(0x1)
-	class Murk*                                                  MurkActor;                                         // 0x5b8(0x8)
-	class KrakenAICharacterAudioComponent*                       KrakenAudioComponent;                              // 0x678(0x8)
-	class KrakenTelemetryComponent*                              KrakenTelemetryComponent;                          // 0x680(0x8)
-	struct EncounterParams                                       SightingEncounterParams;                           // 0x688(0xc)
-	struct EncounterParams                                       CloseEncounterParams;                              // 0x694(0xc)
-	struct KrakenParams                                          Params;                                            // 0x6b0(0x160)
-	int                                                          NumTentaclesRemaining;                             // 0x810(0x4)
+	TArray<struct KrakenHeadHitReactAnimations>                  HitReactionAnimations;                             // 0x28(0x10)
 };
 
 
@@ -66,126 +38,6 @@ class KrakenIdleBehaviourParamsDataAsset: public DataAsset
 {
 public:
 	struct KrakenIdleBehaviourParams                             Params;                                            // 0x28(0xc0)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class KrakenAnimatedTentacleStateAnimationsDataAsset: public DataAsset
-{
-public:
-	assetobject                                                  MappingAssetReference;                             // 0x28(0x20)
-	TArray<struct KrakenAnimatedTentacleStateAnimationMapping>   States;                                            // 0x48(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class KrakenAnimatedTentacleAnimationSpecDataAsset: public DataAsset
-{
-public:
-	TArray<struct KrakenAnimatedTentacleAnimationSpecBone>       Bones;                                             // 0x28(0x10)
-};
-
-
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class KrakenShipHittingBehaviourParamsDataAsset: public DataAsset
-{
-public:
-	struct KrakenShipHittingBehaviourParams                      Params;                                            // 0x28(0x60)
-};
-
-
-// Size 0xa0 (Full Size[0x468] - InheritedSize[0x3c8]
-class Murk: public Actor
-{
-public:
-	class MurkWaterModifierZoneComponent*                        WaterModifierZone;                                 // 0x3c8(0x8)
-	class SceneComponent*                                        SceneRootComponent;                                // 0x3d0(0x8)
-	class StaticMeshComponent*                                   InnerSheet;                                        // 0x3d8(0x8)
-	class StaticMeshComponent*                                   OuterSheet;                                        // 0x3e0(0x8)
-	float                                                        UnderwaterSheetHeightScale;                        // 0x3e8(0x4)
-	class MaterialInstanceDynamic*                               InnerSheetMaterialInstance;                        // 0x3f0(0x8)
-	class MaterialInstanceDynamic*                               OuterSheetMaterialInstance;                        // 0x3f8(0x8)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class CoordinatedKrakenPhaseActionsDataAsset: public DataAsset
-{
-public:
-	TArray<int>                                                  TentaclesUsed;                                     // 0x28(0x10)
-	bool                                                         KrakenHeadUsed;                                    // 0x38(0x1)
-	TArray<struct CoordinatedKrakenAction>                       Actions;                                           // 0x40(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class KrakenHeadHitReactAnimationsDataAsset: public DataAsset
-{
-public:
-	TArray<struct KrakenHeadHitReactAnimations>                  HitReactionAnimations;                             // 0x28(0x10)
-};
-
-
-// Size 0x338 (Full Size[0x700] - InheritedSize[0x3c8]
-class KrakenService: public Actor
-{
-public:
-	struct KrakenServiceParams                                   KrakenServiceParams;                               // 0x3d0(0x40)
-	class Kraken*                                                Kraken;                                            // 0x4b0(0x8)
-};
-
-
-// Size 0xe8 (Full Size[0x110] - InheritedSize[0x28]
-class KrakenPlayerGrabbingBehaviourParamsDataAsset: public DataAsset
-{
-public:
-	struct KrakenPlayerGrabbingBehaviourParams                   Params;                                            // 0x28(0xe8)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class KrakenAnimatedTentacleAnimationDataAsset: public DataAsset
-{
-public:
-	class KrakenAnimatedTentacleAnimationSpecDataAsset*          AnimationSpec;                                     // 0x28(0x8)
-	float                                                        FrameTimeDelta;                                    // 0x30(0x4)
-	float                                                        AnimationLength;                                   // 0x34(0x4)
-	int                                                          NumFrames;                                         // 0x38(0x4)
-	bool                                                         AllowLookAround;                                   // 0x3c(0x1)
-	bool                                                         RequiresWaterHeightQuery;                          // 0x3d(0x1)
-	float                                                        AnimationPlayRateScale;                            // 0x40(0x4)
-	TArray<struct KrakenAnimatedTentacleAnimationBoneTrack>      Bones;                                             // 0x48(0x10)
-};
-
-
-// Size 0x428 (Full Size[0x450] - InheritedSize[0x28]
-class KrakenShipWrappingBehaviourParamsDataAsset: public DataAsset
-{
-public:
-	struct KrakenShipWrappingBehaviourParams                     Params;                                            // 0x30(0x420)
-};
-
-
-// Size 0x60 (Full Size[0x4a0] - InheritedSize[0x440]
-class KrakenHeadAnimationInstance: public AnimInstance
-{
-public:
-	class UClass*                                                CurrentState;                                      // 0x440(0x8)
-	class UClass*                                                PreviousState;                                     // 0x448(0x8)
-	class KrakenHeadStateAnimationsDataAsset*                    MappingAsset;                                      // 0x450(0x8)
-	float                                                        SpawnBlendTime;                                    // 0x458(0x4)
-	float                                                        DefaultBlendTime;                                  // 0x45c(0x4)
-	bool                                                         IsInIntro;                                         // 0x460(0x1)
-	class AnimMontage*                                           PlayingMontage;                                    // 0x468(0x8)
-	class KrakenHeadHitReactAnimationsDataAsset*                 KrakenHeadHitReactionAsset;                        // 0x480(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class KrakenHeadStateAnimationsDataAsset: public DataAsset
-{
-public:
-	TArray<struct KrakenHeadStateAnimationMapping>               States;                                            // 0x28(0x10)
 };
 
 
@@ -228,11 +80,159 @@ public:
 };
 
 
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class KrakenAnimatedTentacleStateAnimationsDataAsset: public DataAsset
+{
+public:
+	assetobject                                                  MappingAssetReference;                             // 0x28(0x20)
+	TArray<struct KrakenAnimatedTentacleStateAnimationMapping>   States;                                            // 0x48(0x10)
+};
+
+
+// Size 0x160 (Full Size[0x188] - InheritedSize[0x28]
+class KrakenParamsDataAsset: public DataAsset
+{
+public:
+	struct KrakenParams                                          Params;                                            // 0x28(0x160)
+};
+
+
+// Size 0xa0 (Full Size[0x468] - InheritedSize[0x3c8]
+class Murk: public Actor
+{
+public:
+	class MurkWaterModifierZoneComponent*                        WaterModifierZone;                                 // 0x3c8(0x8)
+	class SceneComponent*                                        SceneRootComponent;                                // 0x3d0(0x8)
+	class StaticMeshComponent*                                   InnerSheet;                                        // 0x3d8(0x8)
+	class StaticMeshComponent*                                   OuterSheet;                                        // 0x3e0(0x8)
+	float                                                        UnderwaterSheetHeightScale;                        // 0x3e8(0x4)
+	class MaterialInstanceDynamic*                               InnerSheetMaterialInstance;                        // 0x3f0(0x8)
+	class MaterialInstanceDynamic*                               OuterSheetMaterialInstance;                        // 0x3f8(0x8)
+};
+
+
+// Size 0x338 (Full Size[0x700] - InheritedSize[0x3c8]
+class KrakenService: public Actor
+{
+public:
+	struct KrakenServiceParams                                   KrakenServiceParams;                               // 0x3d0(0x40)
+	class Kraken*                                                Kraken;                                            // 0x4b0(0x8)
+};
+
+
+// Size 0x60 (Full Size[0x4a0] - InheritedSize[0x440]
+class KrakenHeadAnimationInstance: public AnimInstance
+{
+public:
+	class UClass*                                                CurrentState;                                      // 0x440(0x8)
+	class UClass*                                                PreviousState;                                     // 0x448(0x8)
+	class KrakenHeadStateAnimationsDataAsset*                    MappingAsset;                                      // 0x450(0x8)
+	float                                                        SpawnBlendTime;                                    // 0x458(0x4)
+	float                                                        DefaultBlendTime;                                  // 0x45c(0x4)
+	bool                                                         IsInIntro;                                         // 0x460(0x1)
+	class AnimMontage*                                           PlayingMontage;                                    // 0x468(0x8)
+	class KrakenHeadHitReactAnimationsDataAsset*                 KrakenHeadHitReactionAsset;                        // 0x480(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class KrakenAnimatedTentacleAnimationMappingDataAsset: public DataAsset
+{
+public:
+	TArray<struct KrakenAnimatedTentacleMappedAnimation>         Animations;                                        // 0x28(0x10)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class CoordinatedKrakenPhaseActionsDataAsset: public DataAsset
+{
+public:
+	TArray<int>                                                  TentaclesUsed;                                     // 0x28(0x10)
+	bool                                                         KrakenHeadUsed;                                    // 0x38(0x1)
+	TArray<struct CoordinatedKrakenAction>                       Actions;                                           // 0x40(0x10)
+};
+
+
+// Size 0x428 (Full Size[0x450] - InheritedSize[0x28]
+class KrakenShipWrappingBehaviourParamsDataAsset: public DataAsset
+{
+public:
+	struct KrakenShipWrappingBehaviourParams                     Params;                                            // 0x30(0x420)
+};
+
+
+// Size 0xe8 (Full Size[0x110] - InheritedSize[0x28]
+class KrakenPlayerGrabbingBehaviourParamsDataAsset: public DataAsset
+{
+public:
+	struct KrakenPlayerGrabbingBehaviourParams                   Params;                                            // 0x28(0xe8)
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class KrakenAnimatedTentacleAnimationDataAsset: public DataAsset
+{
+public:
+	class KrakenAnimatedTentacleAnimationSpecDataAsset*          AnimationSpec;                                     // 0x28(0x8)
+	float                                                        FrameTimeDelta;                                    // 0x30(0x4)
+	float                                                        AnimationLength;                                   // 0x34(0x4)
+	int                                                          NumFrames;                                         // 0x38(0x4)
+	bool                                                         AllowLookAround;                                   // 0x3c(0x1)
+	bool                                                         RequiresWaterHeightQuery;                          // 0x3d(0x1)
+	float                                                        AnimationPlayRateScale;                            // 0x40(0x4)
+	TArray<struct KrakenAnimatedTentacleAnimationBoneTrack>      Bones;                                             // 0x48(0x10)
+};
+
+
 // Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
 class KrakenServiceParamsDataAsset: public DataAsset
 {
 public:
 	struct KrakenServiceParams                                   Params;                                            // 0x28(0x40)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class KrakenHeadStateAnimationsDataAsset: public DataAsset
+{
+public:
+	TArray<struct KrakenHeadStateAnimationMapping>               States;                                            // 0x28(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class KrakenHeadHealthParamsDataAsset: public DataAsset
+{
+public:
+	TArray<struct KrakenHeadHealthPair>                          KrakenHeadHealthPairs;                             // 0x28(0x10)
+};
+
+
+// Size 0x578 (Full Size[0x940] - InheritedSize[0x3c8]
+class Kraken: public Actor
+{
+public:
+	float                                                        RelevancyDistance;                                 // 0x3e0(0x4)
+	float                                                        InnerRadius;                                       // 0x3f8(0x4)
+	float                                                        OuterRadius;                                       // 0x3fc(0x4)
+	float                                                        AreaOfEffectOfShipHitAttack;                       // 0x400(0x4)
+	char                                                         CollisionChannelForGunpowderKegs;                  // 0x404(0x1)
+	char                                                         CurrentState;                                      // 0x405(0x1)
+	class Murk*                                                  MurkActor;                                         // 0x5b8(0x8)
+	class KrakenAICharacterAudioComponent*                       KrakenAudioComponent;                              // 0x678(0x8)
+	class KrakenTelemetryComponent*                              KrakenTelemetryComponent;                          // 0x680(0x8)
+	struct EncounterParams                                       SightingEncounterParams;                           // 0x688(0xc)
+	struct EncounterParams                                       CloseEncounterParams;                              // 0x694(0xc)
+	struct KrakenParams                                          Params;                                            // 0x6b0(0x160)
+	int                                                          NumTentaclesRemaining;                             // 0x810(0x4)
+};
+
+
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class KrakenShipHittingBehaviourParamsDataAsset: public DataAsset
+{
+public:
+	struct KrakenShipHittingBehaviourParams                      Params;                                            // 0x28(0x60)
 };
 
 

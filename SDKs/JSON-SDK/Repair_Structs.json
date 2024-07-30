@@ -16,63 +16,6 @@
       }
     ]
   },
-  "RepairObjectActionStateConstructionInfo": {
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "RepairableObject",
-        "Type": "struct NetSubObjectPtr",
-        "Size": "0x14",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "WieldedItem",
-        "Type": "struct NetActorPtr",
-        "Size": "0x14",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "InputID",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x58"
-      }
-    ]
-  },
-  "ShipPartDamagePersistenceModel": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ComponentRepairableStates",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Identifier",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "RepairableComponentRepairableStateChangedEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RepairableComponent",
-        "Type": "class ActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RepairableState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "EventRepairableObjectRepairEndedEvent": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -108,6 +51,23 @@
       }
     ]
   },
+  "DamageZoneRepairableStateChangedEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DamageZoneActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RepairableState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "RepairableComponentMaxDamageLevelOverride": {
     "ClassSize": "0xc",
     "Attributes": [
@@ -125,12 +85,35 @@
       }
     ]
   },
-  "DamageZoneRepairableStateChangedEvent": {
+  "RepairObjectActionStateConstructionInfo": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "RepairableObject",
+        "Type": "struct NetSubObjectPtr",
+        "Size": "0x14",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "WieldedItem",
+        "Type": "struct NetActorPtr",
+        "Size": "0x14",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "InputID",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "RepairableComponentRepairableStateChangedEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "DamageZoneActor",
-        "Type": "class Actor*",
+        "Name": "RepairableComponent",
+        "Type": "class ActorComponent*",
         "Size": "0x8",
         "Offset": "0x0"
       },
@@ -139,6 +122,23 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "ShipPartDamagePersistenceModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ComponentRepairableStates",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Identifier",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

@@ -1,18 +1,4 @@
 {
-  "ShippingDebugActorSphereCollection": {
-    "Super": "Actor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SphereList",
-        "Type": "TArray<struct SphereData>",
-        "Size": "0x10",
-        "Offset": "0x3c8"
-      }
-    ]
-  },
   "Videprinter": {
     "Super": "Actor",
     "FullSize": "0x3f0",
@@ -39,11 +25,39 @@
       }
     ]
   },
+  "VideprinterService": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Videprinters",
+        "Type": "TArray<class Videprinter*>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ShippingDebugActorSphereCollection": {
+    "Super": "Actor",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SphereList",
+        "Type": "TArray<struct SphereData>",
+        "Size": "0x10",
+        "Offset": "0x3c8"
+      }
+    ]
+  },
   "DrawDebugService": {
     "Super": "Actor",
-    "FullSize": "0x4c0",
+    "FullSize": "0x4e0",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0xf8",
+    "ClassSize": "0x118",
     "Attributes": [
       {
         "Name": "MessagesReplicated",
@@ -58,54 +72,46 @@
         "Offset": "0x3e0"
       },
       {
+        "Name": "CirclesReplicated",
+        "Type": "TArray<struct DrawDebugItemCircle>",
+        "Size": "0x10",
+        "Offset": "0x3f0"
+      },
+      {
         "Name": "BoxesReplicated",
         "Type": "TArray<struct DrawDebugItemBox>",
         "Size": "0x10",
-        "Offset": "0x3f0"
+        "Offset": "0x400"
       },
       {
         "Name": "CapsulesReplicated",
         "Type": "TArray<struct DrawDebugItemCapsule>",
         "Size": "0x10",
-        "Offset": "0x400"
+        "Offset": "0x410"
       },
       {
         "Name": "LinesReplicated",
         "Type": "TArray<struct DrawDebugItemLine>",
         "Size": "0x10",
-        "Offset": "0x410"
+        "Offset": "0x420"
       },
       {
         "Name": "SectorsReplicated",
         "Type": "TArray<struct DrawDebugItemSector>",
         "Size": "0x10",
-        "Offset": "0x420"
+        "Offset": "0x430"
       },
       {
         "Name": "StringsReplicated",
         "Type": "TArray<struct DrawDebugItemString>",
         "Size": "0x10",
-        "Offset": "0x430"
+        "Offset": "0x440"
       },
       {
         "Name": "IsDrawDebugActive",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x440"
-      }
-    ]
-  },
-  "VideprinterService": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Videprinters",
-        "Type": "TArray<class Videprinter*>",
-        "Size": "0x10",
-        "Offset": "0x30"
+        "Offset": "0x450"
       }
     ]
   },

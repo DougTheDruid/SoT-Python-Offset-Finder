@@ -298,16 +298,32 @@ AISenseConfig_Sight:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: DetectionByAffiliation
+  - Name: SightRadiusForCrouching
     Offset: '0x44'
     Size: '0x4'
-    Type: struct AISenseAffiliationFilter
-  - Name: AutoSuccessRangeFromLastSeenLocation
+    Type: float
+  - Name: LoseSightRadiusForCrouching
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  ClassSize: '0x20'
-  FullSize: '0x50'
+  - Name: PeripheralVisionAngleDegreesForCrouching
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: float
+  - Name: DetectionByAffiliation
+    Offset: '0x50'
+    Size: '0x4'
+    Type: struct AISenseAffiliationFilter
+  - Name: AutoSuccessRangeFromLastSeenLocation
+    Offset: '0x54'
+    Size: '0x4'
+    Type: float
+  - Name: AutoSuccessRangeFromLastSeenLocationForCrouching
+    Offset: '0x58'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x30'
+  FullSize: '0x60'
   InheritedSize: '0x30'
   Super: AISenseConfig
 AISenseEvent_Damage:
@@ -404,16 +420,20 @@ AISense_Sight:
     Offset: '0x13c'
     Size: '0x4'
     Type: float
-  - Name: MaxQueryImportance
+  - Name: HighImportanceQueryDistanceThresholdForCrouching
     Offset: '0x144'
     Size: '0x4'
     Type: float
-  - Name: SightLimitQueryImportance
-    Offset: '0x148'
+  - Name: MaxQueryImportance
+    Offset: '0x14c'
     Size: '0x4'
     Type: float
-  ClassSize: '0xc8'
-  FullSize: '0x150'
+  - Name: SightLimitQueryImportance
+    Offset: '0x150'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0xd0'
+  FullSize: '0x158'
   InheritedSize: '0x88'
   Super: AISense
 AISense_Team:

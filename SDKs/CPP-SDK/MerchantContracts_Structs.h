@@ -35,14 +35,6 @@ public:
 };
 
 
-// Size 0xc0
-struct MerchantContract
-{
-public:
-	TArray<struct MerchantContractDeliveryRequest>               DeliveryRequests;                                  // 0x18(0x10)
-};
-
-
 // Size 0x28
 struct PlayerMerchantContract
 {
@@ -50,6 +42,14 @@ public:
 	struct Guid                                                  Id;                                                // 0x0(0x10)
 	struct FName                                                 IslandName;                                        // 0x10(0x8)
 	TArray<struct MerchantContractDeliveryRequest>               Requests;                                          // 0x18(0x10)
+};
+
+
+// Size 0xc0
+struct MerchantContract
+{
+public:
+	TArray<struct MerchantContractDeliveryRequest>               DeliveryRequests;                                  // 0x18(0x10)
 };
 
 

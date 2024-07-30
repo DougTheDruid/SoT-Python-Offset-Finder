@@ -1420,13 +1420,13 @@ AthenaAIControllerSenseSettingOverride:
     Type: class UClass*
   - Name: SenseSettings
     Offset: '0x8'
-    Size: '0x14'
+    Size: '0x20'
     Type: struct AthenaAIControllerSenseSettings
   - Name: ClearPerceivedData
-    Offset: '0x1c'
+    Offset: '0x28'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x20'
+  ClassSize: '0x30'
 AthenaAIControllerSenseSettings:
   Attributes:
   - Name: EnableSight
@@ -1457,7 +1457,19 @@ AthenaAIControllerSenseSettings:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  ClassSize: '0x14'
+  - Name: SightRadiusForCrouching
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: LoseSightRadiusForCrouching
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: PeripheralVisionAngleDegreesForCrouching
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x20'
 AthenaAIControllerTargetPickingData:
   Attributes:
   - Name: TargetName

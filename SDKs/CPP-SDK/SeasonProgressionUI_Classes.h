@@ -6,23 +6,6 @@
 #include "SeasonProgressionUI_Structs.h"
 
 
-// Size 0x138 (Full Size[0x200] - InheritedSize[0xc8]
-class SeasonProgressionUIComponent: public ActorComponent
-{
-public:
-	TArray<struct EnableMoreButtonEvent>                         DetailsNavigationDesc;                             // 0xe8(0x10)
-	struct SeasonProgressionUITelemetryFragment                  NextReceivedEventsTelemetryData;                   // 0xf8(0x18)
-};
-
-
-// Size 0x1f8 (Full Size[0x5c0] - InheritedSize[0x3c8]
-class SeasonProgressionUIService: public Actor
-{
-public:
-	class SeasonPopupListAsset*                                  SeasonPopupListAsset;                              // 0x3f8(0x8)
-};
-
-
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class SeasonProgressionUISettings: public Object
 {
@@ -31,11 +14,11 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class SeasonPopupListAsset: public DataAsset
+// Size 0x1f8 (Full Size[0x5c0] - InheritedSize[0x3c8]
+class SeasonProgressionUIService: public Actor
 {
 public:
-	TArray<class SeasonPopupAsset*>                              SeasonPopups;                                      // 0x28(0x10)
+	class SeasonPopupListAsset*                                  SeasonPopupListAsset;                              // 0x3f8(0x8)
 };
 
 
@@ -61,6 +44,23 @@ public:
 	struct FString                                               DefaultChatEventName;                              // 0x270(0x10)
 	struct FString                                               DefaultChatSwitchName;                             // 0x280(0x10)
 	struct FString                                               DefaultChatSwitchValue;                            // 0x290(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class SeasonPopupListAsset: public DataAsset
+{
+public:
+	TArray<class SeasonPopupAsset*>                              SeasonPopups;                                      // 0x28(0x10)
+};
+
+
+// Size 0x138 (Full Size[0x200] - InheritedSize[0xc8]
+class SeasonProgressionUIComponent: public ActorComponent
+{
+public:
+	TArray<struct EnableMoreButtonEvent>                         DetailsNavigationDesc;                             // 0xe8(0x10)
+	struct SeasonProgressionUITelemetryFragment                  NextReceivedEventsTelemetryData;                   // 0xf8(0x18)
 };
 
 

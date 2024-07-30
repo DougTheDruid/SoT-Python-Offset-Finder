@@ -6,11 +6,11 @@
 #include "RareEngine_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class MemoryUsageVisualiserSettings: public Object
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class StallDetector: public Object
 {
 public:
-	TArray<struct MemoryVisualiserCategory>                      VisualiserCategories;                              // 0x28(0x10)
+	multicastinlinedelegate                                      Callback;                                          // 0x30(0x10)
 };
 
 
@@ -22,11 +22,11 @@ public:
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class StallDetector: public Object
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class MemoryUsageVisualiserSettings: public Object
 {
 public:
-	multicastinlinedelegate                                      Callback;                                          // 0x30(0x10)
+	TArray<struct MemoryVisualiserCategory>                      VisualiserCategories;                              // 0x28(0x10)
 };
 
 

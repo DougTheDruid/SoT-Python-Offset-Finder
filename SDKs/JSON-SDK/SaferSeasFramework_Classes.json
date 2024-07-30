@@ -1,18 +1,4 @@
 {
-  "SaferSeasEntitlementBlacklistDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "BlacklistedEntitlements",
-        "Type": "TArray<Class>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "SaferSeasSettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x48",
@@ -38,6 +24,20 @@
         "Type": "class SaferSeasEntitlementBlacklistDataAsset*",
         "Size": "0x8",
         "Offset": "0x3d0"
+      }
+    ]
+  },
+  "SaferSeasEntitlementBlacklistDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "BlacklistedEntitlements",
+        "Type": "TArray<Class>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },

@@ -25,22 +25,30 @@ public:
 };
 
 
+// Size 0x88 (Full Size[0xb0] - InheritedSize[0x28]
+class GameMapsSettings: public Object
+{
+public:
+	struct FString                                               EditorStartupMap;                                  // 0x28(0x10)
+	struct FString                                               LocalMapOptions;                                   // 0x38(0x10)
+	struct FString                                               TransitionMap;                                     // 0x48(0x10)
+	bool                                                         bUseSplitscreen;                                   // 0x58(0x1)
+	char                                                         TwoPlayerSplitscreenLayout;                        // 0x59(0x1)
+	char                                                         ThreePlayerSplitscreenLayout;                      // 0x5a(0x1)
+	struct StringClassReference                                  GameInstanceClass;                                 // 0x60(0x10)
+	struct FString                                               GameDefaultMap;                                    // 0x70(0x10)
+	struct FString                                               ServerDefaultMap;                                  // 0x80(0x10)
+	struct StringClassReference                                  GlobalDefaultGameMode;                             // 0x90(0x10)
+	struct StringClassReference                                  GlobalDefaultServerGameMode;                       // 0xa0(0x10)
+};
+
+
 // Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class HudSettings: public Object
 {
 public:
 	bool                                                         bShowHUD;                                          // 0x28(0x1)
 	TArray<struct Name>                                          DebugDisplay;                                      // 0x30(0x10)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class ConsoleSettings: public Object
-{
-public:
-	int                                                          MaxScrollbackSize;                                 // 0x28(0x4)
-	TArray<struct AutoCompleteCommand>                           ManualAutoCompleteList;                            // 0x30(0x10)
-	TArray<String>                                               AutoCompleteMapPaths;                              // 0x40(0x10)
 };
 
 
@@ -72,21 +80,13 @@ public:
 };
 
 
-// Size 0x88 (Full Size[0xb0] - InheritedSize[0x28]
-class GameMapsSettings: public Object
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class ConsoleSettings: public Object
 {
 public:
-	struct FString                                               EditorStartupMap;                                  // 0x28(0x10)
-	struct FString                                               LocalMapOptions;                                   // 0x38(0x10)
-	struct FString                                               TransitionMap;                                     // 0x48(0x10)
-	bool                                                         bUseSplitscreen;                                   // 0x58(0x1)
-	char                                                         TwoPlayerSplitscreenLayout;                        // 0x59(0x1)
-	char                                                         ThreePlayerSplitscreenLayout;                      // 0x5a(0x1)
-	struct StringClassReference                                  GameInstanceClass;                                 // 0x60(0x10)
-	struct FString                                               GameDefaultMap;                                    // 0x70(0x10)
-	struct FString                                               ServerDefaultMap;                                  // 0x80(0x10)
-	struct StringClassReference                                  GlobalDefaultGameMode;                             // 0x90(0x10)
-	struct StringClassReference                                  GlobalDefaultServerGameMode;                       // 0xa0(0x10)
+	int                                                          MaxScrollbackSize;                                 // 0x28(0x4)
+	TArray<struct AutoCompleteCommand>                           ManualAutoCompleteList;                            // 0x30(0x10)
+	TArray<String>                                               AutoCompleteMapPaths;                              // 0x40(0x10)
 };
 
 

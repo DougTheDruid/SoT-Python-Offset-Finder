@@ -1,50 +1,4 @@
 {
-  "OceanCrawlerAnimationServerData": {
-    "Super": "AnimationServerData",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "AnimInstanceType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "MaxSpawnAnimDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "MaxSpawnOnShipAnimDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "MaxSpawnBoardingAnimDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "OceanCrawlerAnimationData": {
-    "Super": "AnimationData",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "OceanCrawlerAnimationDataStructure",
-        "Type": "struct OceanCrawlerAnimationDataStructure",
-        "Size": "0x90",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "OceanCrawlerAnimationInstance": {
     "Super": "AnimInstance",
     "FullSize": "0x720",
@@ -110,6 +64,52 @@
         "Type": "struct HitReactionAnimationState",
         "Size": "0x28",
         "Offset": "0x6a8"
+      }
+    ]
+  },
+  "OceanCrawlerAnimationData": {
+    "Super": "AnimationData",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "OceanCrawlerAnimationDataStructure",
+        "Type": "struct OceanCrawlerAnimationDataStructure",
+        "Size": "0x90",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "OceanCrawlerAnimationServerData": {
+    "Super": "AnimationServerData",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "AnimInstanceType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "MaxSpawnAnimDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "MaxSpawnOnShipAnimDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "MaxSpawnBoardingAnimDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
       }
     ]
   },

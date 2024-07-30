@@ -1,18 +1,4 @@
 {
-  "ConditionRootAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ConditionRoot",
-        "Type": "struct ConditionInstance",
-        "Size": "0x20",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "ActorSpecifierComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xd8",
@@ -24,6 +10,20 @@
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0xd0"
+      }
+    ]
+  },
+  "ConditionRootAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ConditionRoot",
+        "Type": "struct ConditionInstance",
+        "Size": "0x20",
+        "Offset": "0x28"
       }
     ]
   },

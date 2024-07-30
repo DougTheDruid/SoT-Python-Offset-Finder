@@ -1,27 +1,21 @@
 {
-  "GlitterBeardUnlockVFXCoordinatorComponent": {
+  "GlitterBeardTreeVisualFeedbackComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0xf0",
+    "FullSize": "0x118",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x28",
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "TreeActor",
-        "Type": "struct ActorComponentSelector",
+        "Name": "FeedbackActions",
+        "Type": "TArray<struct VisualFeedbackList>",
         "Size": "0x10",
         "Offset": "0xc8"
       },
       {
-        "Name": "TreeMaterialInstanceDynamic",
-        "Type": "class MaterialInstanceDynamic*",
-        "Size": "0x8",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "TreeBlendTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xe0"
+        "Name": "CurrentStates",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0xe8"
       }
     ]
   },
@@ -54,60 +48,6 @@
         "Type": "struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x50"
-      }
-    ]
-  },
-  "GlitterbeardSlidingDoor": {
-    "Super": "SlidingDoor",
-    "FullSize": "0x548",
-    "InheritedSize": "0x540",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DecalBlendComponent",
-        "Type": "class EffectBlendControllerComponent*",
-        "Size": "0x8",
-        "Offset": "0x540"
-      }
-    ]
-  },
-  "GlitterBeardFinaleCoordinatorComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x170",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0xa8",
-    "Attributes": [
-      {
-        "Name": "AudioEventToSynchronise",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "ReplicationState",
-        "Type": "struct FinaleReplicationState",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "GlitterBeardTreeVisualFeedbackComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x118",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "FeedbackActions",
-        "Type": "TArray<struct VisualFeedbackList>",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "CurrentStates",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0xe8"
       }
     ]
   },
@@ -200,6 +140,66 @@
         "Type": "struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x6a0"
+      }
+    ]
+  },
+  "GlitterbeardSlidingDoor": {
+    "Super": "SlidingDoor",
+    "FullSize": "0x540",
+    "InheritedSize": "0x538",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DecalBlendComponent",
+        "Type": "class EffectBlendControllerComponent*",
+        "Size": "0x8",
+        "Offset": "0x538"
+      }
+    ]
+  },
+  "GlitterBeardUnlockVFXCoordinatorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "TreeActor",
+        "Type": "struct ActorComponentSelector",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "TreeMaterialInstanceDynamic",
+        "Type": "class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "TreeBlendTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe0"
+      }
+    ]
+  },
+  "GlitterBeardFinaleCoordinatorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x170",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0xa8",
+    "Attributes": [
+      {
+        "Name": "AudioEventToSynchronise",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "ReplicationState",
+        "Type": "struct FinaleReplicationState",
+        "Size": "0x10",
+        "Offset": "0xd0"
       }
     ]
   },

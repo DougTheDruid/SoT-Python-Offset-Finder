@@ -6,11 +6,11 @@
 #include "AudioReporting_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EventReactionsDataAsset: public DataAsset
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class AudioReportingConfig: public DeveloperSettings
 {
 public:
-	TArray<struct EventReactionDesc>                             Reactions;                                         // 0x28(0x10)
+	struct StringAssetReference                                  AudioReportingSettings;                            // 0x38(0x10)
 };
 
 
@@ -25,19 +25,19 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class AudioReportingConfig: public DeveloperSettings
-{
-public:
-	struct StringAssetReference                                  AudioReportingSettings;                            // 0x38(0x10)
-};
-
-
 // Size 0x178 (Full Size[0x240] - InheritedSize[0xc8]
 class AudioReportingComponent: public ActorComponent
 {
 public:
 	class PlayerController*                                      CachedOwningController;                            // 0xc8(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class EventReactionsDataAsset: public DataAsset
+{
+public:
+	TArray<struct EventReactionDesc>                             Reactions;                                         // 0x28(0x10)
 };
 
 

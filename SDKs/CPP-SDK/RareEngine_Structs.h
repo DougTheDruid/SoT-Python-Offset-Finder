@@ -13,11 +13,14 @@ public:
 };
 
 
-// Size 0x10
-struct StaticMeshComponentList
+// Size 0x28
+struct MemoryVisualiserClass
 {
 public:
-	TArray<class StaticMeshComponent*>                           Components;                                        // 0x0(0x10)
+	class UClass*                                                ClassType;                                         // 0x0(0x8)
+	char                                                         MemoryGatheringMode;                               // 0x8(0x1)
+	struct FString                                               DisplayName;                                       // 0x10(0x10)
+	float                                                        MemoryUsageMB;                                     // 0x20(0x4)
 };
 
 
@@ -56,14 +59,11 @@ public:
 };
 
 
-// Size 0x28
-struct MemoryVisualiserClass
+// Size 0x10
+struct StaticMeshComponentList
 {
 public:
-	class UClass*                                                ClassType;                                         // 0x0(0x8)
-	char                                                         MemoryGatheringMode;                               // 0x8(0x1)
-	struct FString                                               DisplayName;                                       // 0x10(0x10)
-	float                                                        MemoryUsageMB;                                     // 0x20(0x4)
+	TArray<class StaticMeshComponent*>                           Components;                                        // 0x0(0x10)
 };
 
 

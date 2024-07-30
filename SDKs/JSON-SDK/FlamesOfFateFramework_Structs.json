@@ -16,6 +16,34 @@
       }
     ]
   },
+  "FlameData": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Name": "FlameOfFateType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SkipChangeAnimation",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      }
+    ]
+  },
+  "CycleFlameOfFateSequence": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "FlameTypeSequence",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "SetShipFlameOfFateEvent": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -36,23 +64,6 @@
         "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "FlameData": {
-    "ClassSize": "0x2",
-    "Attributes": [
-      {
-        "Name": "FlameOfFateType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SkipChangeAnimation",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
       }
     ]
   },
@@ -99,17 +110,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "CycleFlameOfFateSequence": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "FlameTypeSequence",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },

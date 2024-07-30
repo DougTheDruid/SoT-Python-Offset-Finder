@@ -25,6 +25,32 @@
       }
     ]
   },
+  "BTService_SetBestActionSpotNearTarget": {
+    "Super": "BTService",
+    "FullSize": "0x110",
+    "InheritedSize": "0x70",
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "TargetKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "BestActionSpotKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "BestActionSpotSelectionCriteria",
+        "Type": "struct BestActionSpotSelectionCriteria",
+        "Size": "0x34",
+        "Offset": "0xc0"
+      }
+    ]
+  },
   "WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal": {
     "Super": "AIGoal",
     "FullSize": "0x78",
@@ -63,6 +89,20 @@
       }
     ]
   },
+  "AIHomeComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "HomeActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      }
+    ]
+  },
   "WhilePlayerWithinAreaAIGoal": {
     "Super": "AIGoal",
     "FullSize": "0xf0",
@@ -95,20 +135,6 @@
       }
     ]
   },
-  "AIHomeComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "HomeActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      }
-    ]
-  },
   "WhileBlackboardKeySetAIGoal": {
     "Super": "AIGoal",
     "FullSize": "0x48",
@@ -120,32 +146,6 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x40"
-      }
-    ]
-  },
-  "BTService_SetBestActionSpotNearTarget": {
-    "Super": "BTService",
-    "FullSize": "0x110",
-    "InheritedSize": "0x70",
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "TargetKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "BestActionSpotKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "BestActionSpotSelectionCriteria",
-        "Type": "struct BestActionSpotSelectionCriteria",
-        "Size": "0x34",
-        "Offset": "0xc0"
       }
     ]
   },

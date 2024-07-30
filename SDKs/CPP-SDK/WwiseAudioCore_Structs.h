@@ -22,6 +22,23 @@ public:
 };
 
 
+// Size 0x28
+struct ReverbPresetControllerSettings
+{
+public:
+	uint32                                                       VectorsPerSegment;                                 // 0x0(0x4)
+	uint32                                                       TracesPerSegmentPerFrame;                          // 0x4(0x4)
+	uint32                                                       HorizontalSegments;                                // 0x8(0x4)
+	float                                                        HorizontalConeSegmentElevationAngle;               // 0xc(0x4)
+	float                                                        UpwardsConeAngle;                                  // 0x10(0x4)
+	float                                                        TraceVectorLength;                                 // 0x14(0x4)
+	float                                                        TimeToDiscardSample;                               // 0x18(0x4)
+	float                                                        DistanceToDiscardSample;                           // 0x1c(0x4)
+	float                                                        BiasTowardsVerticalSegment;                        // 0x20(0x4)
+	uint32                                                       MaxNumSampleFramesInHistory;                       // 0x24(0x4)
+};
+
+
 // Size 0x20
 struct WwisePlatformMapping
 {
@@ -41,20 +58,12 @@ public:
 };
 
 
-// Size 0x28
-struct ReverbPresetControllerSettings
+// Size 0x20
+struct WwisePlatformMappings
 {
 public:
-	uint32                                                       VectorsPerSegment;                                 // 0x0(0x4)
-	uint32                                                       TracesPerSegmentPerFrame;                          // 0x4(0x4)
-	uint32                                                       HorizontalSegments;                                // 0x8(0x4)
-	float                                                        HorizontalConeSegmentElevationAngle;               // 0xc(0x4)
-	float                                                        UpwardsConeAngle;                                  // 0x10(0x4)
-	float                                                        TraceVectorLength;                                 // 0x14(0x4)
-	float                                                        TimeToDiscardSample;                               // 0x18(0x4)
-	float                                                        DistanceToDiscardSample;                           // 0x1c(0x4)
-	float                                                        BiasTowardsVerticalSegment;                        // 0x20(0x4)
-	uint32                                                       MaxNumSampleFramesInHistory;                       // 0x24(0x4)
+	struct FString                                               DefaultWwisePlatform;                              // 0x0(0x10)
+	TArray<struct WwisePlatformMapping>                          Mappings;                                          // 0x10(0x10)
 };
 
 
@@ -72,15 +81,6 @@ public:
 	float                                                        MinSpaceSizeWindowForEarlyReflections;             // 0x34(0x4)
 	float                                                        MaxSpaceSizeWindowforEarlyReflections;             // 0x38(0x4)
 	struct ReverbPresetControllerSettings                        SamplingSettings;                                  // 0x3c(0x28)
-};
-
-
-// Size 0x20
-struct WwisePlatformMappings
-{
-public:
-	struct FString                                               DefaultWwisePlatform;                              // 0x0(0x10)
-	TArray<struct WwisePlatformMapping>                          Mappings;                                          // 0x10(0x10)
 };
 
 

@@ -12,34 +12,6 @@ public:
 };
 
 
-// Size 0x60
-struct RepairObjectActionStateConstructionInfo
-{
-public:
-	struct NetSubObjectPtr                                       RepairableObject;                                  // 0x30(0x14)
-	struct NetActorPtr                                           WieldedItem;                                       // 0x44(0x14)
-	class UClass*                                                InputID;                                           // 0x58(0x8)
-};
-
-
-// Size 0x20
-struct ShipPartDamagePersistenceModel
-{
-public:
-	TArray<char>                                                 ComponentRepairableStates;                         // 0x0(0x10)
-	struct FString                                               Identifier;                                        // 0x10(0x10)
-};
-
-
-// Size 0x10
-struct RepairableComponentRepairableStateChangedEvent
-{
-public:
-	class ActorComponent*                                        RepairableComponent;                               // 0x0(0x8)
-	char                                                         RepairableState;                                   // 0x8(0x1)
-};
-
-
 // Size 0x28
 struct EventRepairableObjectRepairEndedEvent
 {
@@ -52,6 +24,15 @@ public:
 };
 
 
+// Size 0x10
+struct DamageZoneRepairableStateChangedEvent
+{
+public:
+	class Actor*                                                 DamageZoneActor;                                   // 0x0(0x8)
+	char                                                         RepairableState;                                   // 0x8(0x1)
+};
+
+
 // Size 0xc
 struct RepairableComponentMaxDamageLevelOverride
 {
@@ -61,12 +42,31 @@ public:
 };
 
 
-// Size 0x10
-struct DamageZoneRepairableStateChangedEvent
+// Size 0x60
+struct RepairObjectActionStateConstructionInfo
 {
 public:
-	class Actor*                                                 DamageZoneActor;                                   // 0x0(0x8)
+	struct NetSubObjectPtr                                       RepairableObject;                                  // 0x30(0x14)
+	struct NetActorPtr                                           WieldedItem;                                       // 0x44(0x14)
+	class UClass*                                                InputID;                                           // 0x58(0x8)
+};
+
+
+// Size 0x10
+struct RepairableComponentRepairableStateChangedEvent
+{
+public:
+	class ActorComponent*                                        RepairableComponent;                               // 0x0(0x8)
 	char                                                         RepairableState;                                   // 0x8(0x1)
+};
+
+
+// Size 0x20
+struct ShipPartDamagePersistenceModel
+{
+public:
+	TArray<char>                                                 ComponentRepairableStates;                         // 0x0(0x10)
+	struct FString                                               Identifier;                                        // 0x10(0x10)
 };
 
 

@@ -6,26 +6,6 @@
 #include "GameplayDebugger_Structs.h"
 
 
-// Size 0x80 (Full Size[0xa8] - InheritedSize[0x28]
-class GameplayDebuggerSettings: public Object
-{
-public:
-	struct GDTCustomViewNames                                    CustomViewNames;                                   // 0x28(0x50)
-	bool                                                         OverHead;                                          // 0x78(0x1)
-	bool                                                         Basic;                                             // 0x79(0x1)
-	bool                                                         BehaviorTree;                                      // 0x7a(0x1)
-	bool                                                         EQS;                                               // 0x7b(0x1)
-	bool                                                         EnableEQSOnHUD;                                    // 0x7c(0x1)
-	int                                                          ActiveEQSIndex;                                    // 0x80(0x4)
-	bool                                                         Perception;                                        // 0x84(0x1)
-	bool                                                         GameView1;                                         // 0x85(0x1)
-	bool                                                         GameView2;                                         // 0x86(0x1)
-	bool                                                         GameView3;                                         // 0x87(0x1)
-	bool                                                         GameView4;                                         // 0x88(0x1)
-	bool                                                         GameView5;                                         // 0x89(0x1)
-};
-
-
 // Size 0xb0 (Full Size[0x478] - InheritedSize[0x3c8]
 class GameplayDebuggingReplicator: public Actor
 {
@@ -128,6 +108,26 @@ public:
 	float                                                        DebugInfoStartY;                                   // 0x3d4(0x4)
 	class Canvas*                                                Canvas;                                            // 0x3d8(0x8)
 	class PlayerController*                                      PlayerOwner;                                       // 0x3e0(0x8)
+};
+
+
+// Size 0x80 (Full Size[0xa8] - InheritedSize[0x28]
+class GameplayDebuggerSettings: public Object
+{
+public:
+	struct GDTCustomViewNames                                    CustomViewNames;                                   // 0x28(0x50)
+	bool                                                         OverHead;                                          // 0x78(0x1)
+	bool                                                         Basic;                                             // 0x79(0x1)
+	bool                                                         BehaviorTree;                                      // 0x7a(0x1)
+	bool                                                         EQS;                                               // 0x7b(0x1)
+	bool                                                         EnableEQSOnHUD;                                    // 0x7c(0x1)
+	int                                                          ActiveEQSIndex;                                    // 0x80(0x4)
+	bool                                                         Perception;                                        // 0x84(0x1)
+	bool                                                         GameView1;                                         // 0x85(0x1)
+	bool                                                         GameView2;                                         // 0x86(0x1)
+	bool                                                         GameView3;                                         // 0x87(0x1)
+	bool                                                         GameView4;                                         // 0x88(0x1)
+	bool                                                         GameView5;                                         // 0x89(0x1)
 };
 
 

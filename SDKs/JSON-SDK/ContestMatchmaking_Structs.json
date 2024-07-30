@@ -39,55 +39,61 @@
       }
     ]
   },
-  "GameSubEventTypeModel": {
-    "ClassSize": "0x18",
+  "OptionalPlayModeModel": {
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "EventName",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "OptionalPlayModeMap",
+        "Type": "map",
+        "Size": "0x50",
         "Offset": "0x0"
-      },
-      {
-        "Name": "MaxCount",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
       }
     ]
   },
-  "GameMainEventTypeModel": {
-    "ClassSize": "0x38",
+  "ServerQueueWaitTimesRequestModel": {
+    "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "EventName",
-        "Type": "struct FString",
+        "Name": "ServerId",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "ExcludedEvents",
-        "Type": "TArray<String>",
+        "Name": "ServerLocation",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
-        "Name": "ExcludedCrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
+        "Name": "FeatureHash",
+        "Type": "uint32",
+        "Size": "0x4",
         "Offset": "0x20"
       },
       {
-        "Name": "Status",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x30"
+        "Name": "PrivateServerId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
       },
       {
-        "Name": "ShipSizeLimit",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x31"
+        "Name": "ServerForcedPlatform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "PlayModeTags",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "PlayModeState",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x58"
       }
     ]
   },
@@ -198,50 +204,89 @@
       }
     ]
   },
-  "ServerQueueWaitTimesRequestModel": {
-    "ClassSize": "0x68",
+  "GameMainEventTypeModel": {
+    "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "ServerId",
-        "Type": "struct Guid",
+        "Name": "EventName",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "ServerLocation",
-        "Type": "struct FString",
+        "Name": "ExcludedEvents",
+        "Type": "TArray<String>",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
-        "Name": "FeatureHash",
-        "Type": "uint32",
-        "Size": "0x4",
+        "Name": "ExcludedCrewIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
         "Offset": "0x20"
       },
       {
-        "Name": "PrivateServerId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Name": "Status",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
       },
       {
-        "Name": "ServerForcedPlatform",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x38"
+        "Name": "ShipSizeLimit",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x31"
+      }
+    ]
+  },
+  "ContestMatchmakingFactionMapEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "GameFaction",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
       },
       {
-        "Name": "PlayModeTags",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x48"
-      },
+        "Name": "MatchmakingFaction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "GameSubEventTypeModel": {
+    "ClassSize": "0x18",
+    "Attributes": [
       {
-        "Name": "PlayModeState",
+        "Name": "EventName",
         "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x58"
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxCount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "ServerRegionModel": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "Position",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
       }
     ]
   },
@@ -298,51 +343,6 @@
       }
     ]
   },
-  "ServerRegionModel": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "Position",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "OptionalPlayModeModel": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "OptionalPlayModeMap",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ContestMatchmakingFactionMapEntry": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "GameFaction",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MatchmakingFaction",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "ServerCrewResponseModel": {
     "ClassSize": "0x80",
     "Attributes": [
@@ -381,23 +381,6 @@
         "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x78"
-      }
-    ]
-  },
-  "GameEventAvailabilityModel": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "MainEvents",
-        "Type": "TArray<struct GameMainEventTypeModel>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SubEvents",
-        "Type": "TArray<struct GameSubEventTypeModel>",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },
@@ -504,6 +487,23 @@
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0xac"
+      }
+    ]
+  },
+  "GameEventAvailabilityModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MainEvents",
+        "Type": "TArray<struct GameMainEventTypeModel>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SubEvents",
+        "Type": "TArray<struct GameSubEventTypeModel>",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

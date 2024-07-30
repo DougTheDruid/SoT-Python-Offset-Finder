@@ -6,19 +6,19 @@
 #include "MaterialShaderQualitySettings_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class ShaderPlatformQualitySettings: public Object
-{
-public:
-	struct MaterialQualityOverrides                              QualityOverrides;                                  // 0x28(0x4)
-};
-
-
 // Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
 class MaterialShaderQualitySettings: public Object
 {
 public:
 	map                                                          ForwardSettingMap;                                 // 0x28(0x50)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class ShaderPlatformQualitySettings: public Object
+{
+public:
+	struct MaterialQualityOverrides                              QualityOverrides;                                  // 0x28(0x4)
 };
 
 

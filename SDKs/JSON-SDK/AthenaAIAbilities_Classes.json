@@ -1,124 +1,4 @@
 {
-  "BullRushAIAbilityParams": {
-    "Super": "MeleeChargeAIAbilityParams",
-    "FullSize": "0x100",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "StaticCollisionWarmup",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "ValidatorEQSystems",
-        "Type": "TArray<class EnvQuery*>",
-        "Size": "0x10",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "TimeBetweenCanExecuteChecks",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xf8"
-      }
-    ]
-  },
-  "AreaOfEffectHealAIAbilityParams": {
-    "Super": "AthenaAIAbilityParams",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ChanceToGoOnCooldownInsteadOfExecuting",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "HealthPercentageThresholdToHeal",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "StatusEffectZone",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "MinimumTimeSpentHealing",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "MaximumTimeSpentHealing",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xdc"
-      }
-    ]
-  },
-  "EelThrowAIAbilityParams": {
-    "Super": "AthenaAIAbilityParams",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "MinMaxNumberOfAttacksBeforeEnd",
-        "Type": "struct WeightedProbabilityRange",
-        "Size": "0x20",
-        "Offset": "0xc8"
-      }
-    ]
-  },
-  "StatusResponseActivateElectricShield": {
-    "Super": "StatusResponse",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Duration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "AreaOfEffectHealAIAbility": {
-    "Super": "AthenaAIAbility",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x78",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "HealAreaOfEffectActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x88"
-      }
-    ]
-  },
-  "EelThrowAIAbility": {
-    "Super": "AthenaAIAbility",
-    "FullSize": "0x80",
-    "InheritedSize": "0x78",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CachedBlackboardComponent",
-        "Type": "class BlackboardComponent*",
-        "Size": "0x8",
-        "Offset": "0x78"
-      }
-    ]
-  },
   "ElectricShieldBuffComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x1d0",
@@ -163,6 +43,116 @@
       }
     ]
   },
+  "MeleeAIAbilityParams": {
+    "Super": "AthenaAIAbilityParams",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MeleeAttacks",
+        "Type": "TArray<struct MeleeAttackIdWeights>",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "AreaOfEffectHealAIAbility": {
+    "Super": "AthenaAIAbility",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x78",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "HealAreaOfEffectActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "BullRushAIAbility": {
+    "Super": "MeleeChargeAIAbility",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "CachedWorld",
+        "Type": "class World*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "StatusResponseActivateElectricShield": {
+    "Super": "StatusResponse",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Duration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "EelThrowAIAbility": {
+    "Super": "AthenaAIAbility",
+    "FullSize": "0x80",
+    "InheritedSize": "0x78",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CachedBlackboardComponent",
+        "Type": "class BlackboardComponent*",
+        "Size": "0x8",
+        "Offset": "0x78"
+      }
+    ]
+  },
+  "BullRushAIAbilityParams": {
+    "Super": "MeleeChargeAIAbilityParams",
+    "FullSize": "0x100",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StaticCollisionWarmup",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "ValidatorEQSystems",
+        "Type": "TArray<class EnvQuery*>",
+        "Size": "0x10",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "TimeBetweenCanExecuteChecks",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xf8"
+      }
+    ]
+  },
+  "EelThrowAIAbilityParams": {
+    "Super": "AthenaAIAbilityParams",
+    "FullSize": "0xe8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MinMaxNumberOfAttacksBeforeEnd",
+        "Type": "struct WeightedProbabilityRange",
+        "Size": "0x20",
+        "Offset": "0xc8"
+      }
+    ]
+  },
   "BurrowHealVFXComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x118",
@@ -201,31 +191,41 @@
       }
     ]
   },
-  "MeleeAIAbilityParams": {
+  "AreaOfEffectHealAIAbilityParams": {
     "Super": "AthenaAIAbilityParams",
-    "FullSize": "0xd8",
+    "FullSize": "0xe0",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "MeleeAttacks",
-        "Type": "TArray<struct MeleeAttackIdWeights>",
-        "Size": "0x10",
+        "Name": "ChanceToGoOnCooldownInsteadOfExecuting",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0xc8"
-      }
-    ]
-  },
-  "BullRushAIAbility": {
-    "Super": "MeleeChargeAIAbility",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x20",
-    "Attributes": [
+      },
       {
-        "Name": "CachedWorld",
-        "Type": "class World*",
+        "Name": "HealthPercentageThresholdToHeal",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "StatusEffectZone",
+        "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x98"
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "MinimumTimeSpentHealing",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "MaximumTimeSpentHealing",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xdc"
       }
     ]
   },

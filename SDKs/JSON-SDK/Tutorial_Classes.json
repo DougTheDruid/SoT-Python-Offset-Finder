@@ -19,6 +19,40 @@
       }
     ]
   },
+  "HasTutorialStarterBegunNPCDialogConditional": {
+    "Super": "NPCDialogConditional",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TutorialStarterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "Tutorial2019Component": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "IsEnabledByServer",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "IsInTutorialTale",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc9"
+      }
+    ]
+  },
   "ContextualTutorialComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x140",
@@ -36,52 +70,6 @@
         "Type": "TArray<class Actor*>",
         "Size": "0x10",
         "Offset": "0xd8"
-      }
-    ]
-  },
-  "TutorialStarter": {
-    "Super": "Object",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "AthenaPlayerController",
-        "Type": "class AthenaPlayerController*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ShouldPlayIntroAnimatic",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "ShouldDisableAllIntroBehaviour",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x31"
-      },
-      {
-        "Name": "IntroAnimationSettings",
-        "Type": "struct FirstPersonAnimaticSettings",
-        "Size": "0x2c",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "HasTutorialStarterBegunNPCDialogConditional": {
-    "Super": "NPCDialogConditional",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TutorialStarterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x30"
       }
     ]
   },
@@ -195,43 +183,35 @@
       }
     ]
   },
-  "Tutorial2019Component": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x8",
+  "TutorialStarter": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "IsEnabledByServer",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "IsInTutorialTale",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc9"
-      }
-    ]
-  },
-  "IntroductionToSOTFlowStarter": {
-    "Super": "TutorialStarter",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "TutorialTale",
-        "Type": "class VoyageDescDataAsset*",
+        "Name": "AthenaPlayerController",
+        "Type": "class AthenaPlayerController*",
         "Size": "0x8",
-        "Offset": "0x60"
+        "Offset": "0x28"
       },
       {
-        "Name": "ShipSizeBasedIntroAnimatics",
-        "Type": "TArray<struct IntroductionToSOTIntroAnimatic>",
-        "Size": "0x10",
-        "Offset": "0x68"
+        "Name": "ShouldPlayIntroAnimatic",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ShouldDisableAllIntroBehaviour",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x31"
+      },
+      {
+        "Name": "IntroAnimationSettings",
+        "Type": "struct FirstPersonAnimaticSettings",
+        "Size": "0x2c",
+        "Offset": "0x34"
       }
     ]
   },
@@ -314,6 +294,26 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x90"
+      }
+    ]
+  },
+  "IntroductionToSOTFlowStarter": {
+    "Super": "TutorialStarter",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "TutorialTale",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "ShipSizeBasedIntroAnimatics",
+        "Type": "TArray<struct IntroductionToSOTIntroAnimatic>",
+        "Size": "0x10",
+        "Offset": "0x68"
       }
     ]
   },

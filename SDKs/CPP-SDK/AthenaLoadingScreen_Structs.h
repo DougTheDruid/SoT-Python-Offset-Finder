@@ -12,14 +12,6 @@ public:
 
 
 // Size 0x10
-struct EventAthenaLoadingScreenBlockUntilUIIntialised
-{
-public:
-	struct FString                                               Description;                                       // 0x0(0x10)
-};
-
-
-// Size 0x10
 struct EventAthenaLoadingScreenBlockUntilUIIntialisedClear
 {
 public:
@@ -39,6 +31,14 @@ public:
 	struct SlateFontInfo                                         Font;                                              // 0x48(0x40)
 	struct SlateColor                                            Colour;                                            // 0x88(0x30)
 	float                                                        LineHeightPercentage;                              // 0xb8(0x4)
+};
+
+
+// Size 0x10
+struct EventAthenaLoadingScreenBlockUntilUIIntialised
+{
+public:
+	struct FString                                               Description;                                       // 0x0(0x10)
 };
 
 

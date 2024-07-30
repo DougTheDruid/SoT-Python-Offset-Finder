@@ -42,7 +42,27 @@ EmoteData:
     Offset: '0x98'
     Size: '0x8'
     Type: class AthenaSpringArmComponentParams*
-  ClassSize: '0xa0'
+  - Name: DurationUntilPlayerHiddenFromAI
+    Offset: '0xa0'
+    Size: '0x4'
+    Type: float
+  - Name: OverrideInteractableBoxData
+    Offset: '0xa4'
+    Size: '0x1'
+    Type: bool
+  - Name: BoxExtent
+    Offset: '0xa8'
+    Size: '0xc'
+    Type: struct Vector
+  - Name: BoxOrigin
+    Offset: '0xb4'
+    Size: '0xc'
+    Type: struct Vector
+  - Name: BoxRotation
+    Offset: '0xc0'
+    Size: '0xc'
+    Type: struct Rotator
+  ClassSize: '0xd0'
 EmoteDiceOutcomeTelemetryEvent:
   Attributes:
   - Name: MaxLimit
@@ -65,6 +85,36 @@ EmoteId:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x8'
+EmoteInteractionTooltipData:
+  Attributes:
+  - Name: Tooltip
+    Offset: '0x0'
+    Size: '0x58'
+    Type: struct EmoteInteractionTooltipInstance
+  - Name: GreyedOut
+    Offset: '0x58'
+    Size: '0x58'
+    Type: struct EmoteInteractionTooltipInstance
+  ClassSize: '0xb0'
+EmoteInteractionTooltipInstance:
+  Attributes:
+  - Name: InteractionTooltipType
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: DisplayString
+    Offset: '0x8'
+    Size: '0x38'
+    Type: struct FText
+  - Name: DisplayStringArgs
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<struct Text>
+  - Name: IsProgressBar
+    Offset: '0x50'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x58'
 EmotePropRandomObjectInfo:
   Attributes:
   - Name: Mesh
@@ -152,31 +202,31 @@ EventEmoteRequested:
   Attributes:
   - Name: EmoteData
     Offset: '0x0'
-    Size: '0xa0'
+    Size: '0xd0'
     Type: struct EmoteData
   - Name: ForcedEmoteIdentifier
-    Offset: '0xa0'
+    Offset: '0xd0'
     Size: '0x8'
     Type: struct FName
   - Name: ForcedEmote
-    Offset: '0xa8'
+    Offset: '0xd8'
     Size: '0x1'
     Type: bool
-  ClassSize: '0xb0'
+  ClassSize: '0xe0'
 EventEmoteStarted:
   Attributes:
   - Name: EmoteData
     Offset: '0x0'
-    Size: '0xa0'
+    Size: '0xd0'
     Type: struct EmoteData
-  ClassSize: '0xa0'
+  ClassSize: '0xd0'
 EventEmoteSwapped:
   Attributes:
   - Name: EmoteData
     Offset: '0x0'
-    Size: '0xa0'
+    Size: '0xd0'
     Type: struct EmoteData
-  ClassSize: '0xa0'
+  ClassSize: '0xd0'
 EventEnableLookAtEmoteCamera:
   Attributes:
   - Name: LookAtTarget
@@ -184,3 +234,14 @@ EventEnableLookAtEmoteCamera:
     Size: '0x8'
     Type: class Actor*
   ClassSize: '0x8'
+WalkableEmoteData:
+  Attributes:
+  - Name: EmotePrimaryInteractionTooltipData
+    Offset: '0xd0'
+    Size: '0x10'
+    Type: TArray<struct EmoteInteractionTooltipData>
+  - Name: EmoteSecondaryInteractionTooltipData
+    Offset: '0xe0'
+    Size: '0x10'
+    Type: TArray<struct EmoteInteractionTooltipData>
+  ClassSize: '0xf0'

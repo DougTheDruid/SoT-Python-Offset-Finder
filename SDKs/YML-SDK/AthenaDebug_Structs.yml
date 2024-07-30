@@ -58,6 +58,45 @@ DrawDebugItemCapsule:
     Size: '0x4'
     Type: struct Color
   ClassSize: '0x40'
+DrawDebugItemCircle:
+  Attributes:
+  - Name: GroupName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ReplaceInGroup
+    Offset: '0x8'
+    Size: '0x1'
+    Type: bool
+  - Name: CentrePos
+    Offset: '0xc'
+    Size: '0xc'
+    Type: struct Vector
+  - Name: YAxis
+    Offset: '0x18'
+    Size: '0xc'
+    Type: struct Vector
+  - Name: ZAxis
+    Offset: '0x24'
+    Size: '0xc'
+    Type: struct Vector
+  - Name: Radius
+    Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  - Name: Segments
+    Offset: '0x34'
+    Size: '0x4'
+    Type: int
+  - Name: Colour
+    Offset: '0x38'
+    Size: '0x4'
+    Type: struct Color
+  - Name: LineThickness
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x40'
 DrawDebugItemLine:
   Attributes:
   - Name: GroupName

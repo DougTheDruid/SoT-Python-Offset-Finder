@@ -1,4 +1,37 @@
 {
+  "OrCondition": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Conditions",
+        "Type": "TArray<struct ConditionInstance>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ConditionFromAsset": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ConditionAsset",
+        "Type": "class ConditionRootAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "NotCondition": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Condition",
+        "Type": "struct ConditionInstance",
+        "Size": "0x20",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "IsFeatureEnabledCondition": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -10,18 +43,34 @@
       }
     ]
   },
-  "ConditionContextPayloadTarget": {
+  "AndCondition": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Conditions",
+        "Type": "TArray<struct ConditionInstance>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "IsObjectOfTypeCondition": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "TargetObjectClasses",
+        "Type": "TArray<Class>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "InstigatorConditionContextPayload": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "PayloadStruct",
-        "Type": "class ScriptStruct*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PayloadMember",
-        "Type": "struct FName",
+        "Name": "Instigator",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -38,12 +87,40 @@
       }
     ]
   },
-  "ConditionFromAsset": {
+  "IsGameOnSpecificPlayModeVariantCondition": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TargetMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TargetConditionContextPayload": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ConditionAsset",
-        "Type": "class ConditionRootAsset*",
+        "Name": "Target",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ConditionContextPayloadTarget": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "PayloadStruct",
+        "Type": "class ScriptStruct*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PayloadMember",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -77,28 +154,6 @@
       }
     ]
   },
-  "InstigatorConditionContextPayload": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Instigator",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "NotCondition": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Condition",
-        "Type": "struct ConditionInstance",
-        "Size": "0x20",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "WorldObjectConditionContextPayload": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -107,61 +162,6 @@
         "Type": "class World*",
         "Size": "0x8",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "OrCondition": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Conditions",
-        "Type": "TArray<struct ConditionInstance>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AndCondition": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Conditions",
-        "Type": "TArray<struct ConditionInstance>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "TargetConditionContextPayload": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Target",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "IsObjectOfTypeCondition": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "TargetObjectClasses",
-        "Type": "TArray<Class>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "IsGameOnSpecificPlayModeVariantCondition": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "TargetMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x28"
       }
     ]
   },

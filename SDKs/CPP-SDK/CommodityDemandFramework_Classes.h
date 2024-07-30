@@ -6,20 +6,12 @@
 #include "CommodityDemandFramework_Structs.h"
 
 
-// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
-class CommodityTokenEntitlementDesc: public EntitlementDesc
+// Size 0x10 (Full Size[0x130] - InheritedSize[0x120]
+class CommodityItemDesc: public BootyItemDesc
 {
 public:
-	struct FName                                                 NPCToRedeemAt;                                     // 0xc8(0x8)
-	class UClass*                                                ItemToRedeemFor;                                   // 0xd0(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
-class IsWieldedCommodityItemInDemandStatCondition: public TargetedStatCondition
-{
-public:
-	char                                                         CommodityDemand;                                   // 0x30(0x1)
+	struct CommoditySelectionType                                CommodityType;                                     // 0x120(0x8)
+	char                                                         CommodityDemand;                                   // 0x128(0x1)
 };
 
 
@@ -32,19 +24,11 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class CommodityDemandFrameworkEditorSettings: public DeveloperSettings
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class WasWieldedCommodityItemBoughtAtDemandStatCondition: public TargetedStatCondition
 {
 public:
-	struct StringAssetReference                                  CommodityDataFileLocation;                         // 0x38(0x10)
-};
-
-
-// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
-class SpecificItemsCrateFillerComponent: public ActorComponent
-{
-public:
-	TArray<struct StorageContainerNode>                          ItemsToFillCrateWith;                              // 0xd0(0x10)
+	char                                                         CommodityDemand;                                   // 0x30(0x1)
 };
 
 
@@ -56,11 +40,62 @@ public:
 };
 
 
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class CommodityDemandFrameworkEditorSettings: public DeveloperSettings
+{
+public:
+	struct StringAssetReference                                  CommodityDataFileLocation;                         // 0x38(0x10)
+};
+
+
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+class CommodityTokenEntitlementDesc: public EntitlementDesc
+{
+public:
+	struct FName                                                 NPCToRedeemAt;                                     // 0xc8(0x8)
+	class UClass*                                                ItemToRedeemFor;                                   // 0xd0(0x8)
+};
+
+
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
+class SpecificItemsCrateFillerComponent: public ActorComponent
+{
+public:
+	TArray<struct StorageContainerNode>                          ItemsToFillCrateWith;                              // 0xd0(0x10)
+};
+
+
+// Size 0x78 (Full Size[0x440] - InheritedSize[0x3c8]
+class CommodityDemandService: public Actor
+{
+public:
+	struct ActiveNPCDemands                                      ActiveCommodityDemands;                            // 0x3e8(0x20)
+	class MerchantSovereignHandInNameInformationDataAsset*       MerchantSovereignHandInNameInformationDataAsset;   // 0x408(0x8)
+};
+
+
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class CommodityEntitlementRedemptionAsset: public DataAsset
 {
 public:
 	TArray<struct EntitlementToRedeemItems>                      CommoditiesForRedemption;                          // 0x28(0x10)
+};
+
+
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
+class CommoditySourceComponent: public ActorComponent
+{
+public:
+	struct FName                                                 NPCIdentifier;                                     // 0xd0(0x8)
+	struct FName                                                 IslandIdentifier;                                  // 0xd8(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
+class IsWieldedCommodityItemInDemandStatCondition: public TargetedStatCondition
+{
+public:
+	char                                                         CommodityDemand;                                   // 0x30(0x1)
 };
 
 
@@ -83,41 +118,6 @@ public:
 	struct GameTime                                              CommodityRedemptionTimeOutPeriodInDays;            // 0x50(0x8)
 	struct StringAssetReference                                  NPCListAsset;                                      // 0x58(0x10)
 	struct StringAssetReference                                  MerchantSovereignHandInNameFileLocation;           // 0x68(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x130] - InheritedSize[0x120]
-class CommodityItemDesc: public BootyItemDesc
-{
-public:
-	struct CommoditySelectionType                                CommodityType;                                     // 0x120(0x8)
-	char                                                         CommodityDemand;                                   // 0x128(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class WasWieldedCommodityItemBoughtAtDemandStatCondition: public TargetedStatCondition
-{
-public:
-	char                                                         CommodityDemand;                                   // 0x30(0x1)
-};
-
-
-// Size 0x78 (Full Size[0x440] - InheritedSize[0x3c8]
-class CommodityDemandService: public Actor
-{
-public:
-	struct ActiveNPCDemands                                      ActiveCommodityDemands;                            // 0x3e8(0x20)
-	class MerchantSovereignHandInNameInformationDataAsset*       MerchantSovereignHandInNameInformationDataAsset;   // 0x408(0x8)
-};
-
-
-// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
-class CommoditySourceComponent: public ActorComponent
-{
-public:
-	struct FName                                                 NPCIdentifier;                                     // 0xd0(0x8)
-	struct FName                                                 IslandIdentifier;                                  // 0xd8(0x8)
 };
 
 

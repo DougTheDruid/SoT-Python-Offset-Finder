@@ -1,49 +1,61 @@
 {
-  "ActiveStorySpawnRequirement": {
-    "Super": "SpawnRequirement",
-    "FullSize": "0x80",
-    "InheritedSize": "0x50",
+  "StoryDrivenBlendedLightingZoneComponentDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "StoryNames",
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "StoryResponses",
+        "Type": "TArray<struct LightingZoneStoryRelatedSettings>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "AssetsList",
+        "Type": "TArray<class StoryDrivenBlendedLightingZoneComponentDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "IslandSpawnRequirement": {
+    "Super": "SpawnRequirement",
+    "FullSize": "0x60",
+    "InheritedSize": "0x50",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "IslandNames",
         "Type": "TArray<struct Name>",
         "Size": "0x10",
         "Offset": "0x50"
+      }
+    ]
+  },
+  "StoryClaimedResourcesService": {
+    "Super": "Actor",
+    "FullSize": "0x488",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "PendingClaims",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x428"
       },
       {
-        "Name": "AllStoriesRequired",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "StorySpawnedActorsComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x108",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "AssetsCollection",
-        "Type": "class StorySpawnedActorsComponentDataAsset*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      }
-    ]
-  },
-  "StoryDrivenSalvageItemSpawnComponent": {
-    "Super": "SalvageItemSpawnComponent",
-    "FullSize": "0x600",
-    "InheritedSize": "0x5e0",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Story",
-        "Type": "struct StoryFlag",
-        "Size": "0x8",
-        "Offset": "0x5d8"
+        "Name": "StoriesToClaimableResourcesMap",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x438"
       }
     ]
   },
@@ -73,168 +85,6 @@
       }
     ]
   },
-  "StorySettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "StoryNamesCollectionDataAssetLocation",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "StoryDrivenBlendedLightingZoneComponent": {
-    "Super": "BlendedLightingZoneComponent",
-    "FullSize": "0x360",
-    "InheritedSize": "0x330",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "StoryDrivenLightingAssetsCollection",
-        "Type": "class StoryDrivenBlendedLightingZoneComponentDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x328"
-      },
-      {
-        "Name": "CurrentStoryResponse",
-        "Type": "struct LightingZoneStoryRelatedSettings",
-        "Size": "0x10",
-        "Offset": "0x330"
-      }
-    ]
-  },
-  "StoryNamesCollectionDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Stories",
-        "Type": "TArray<struct StoryNameInfo>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "StoriesAssets",
-        "Type": "TArray<class StoryNamesCollectionDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "StoryClaimableResourceComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "ClaimedStoryFlag",
-        "Type": "struct StoryFlag",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      }
-    ]
-  },
-  "StorySpawnedActorsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "StoryResponses",
-        "Type": "TArray<struct StorySpawnedActorsList>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "AssetsList",
-        "Type": "TArray<class StorySpawnedActorsDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "IslandSpawnRequirement": {
-    "Super": "SpawnRequirement",
-    "FullSize": "0x60",
-    "InheritedSize": "0x50",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "IslandNames",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x50"
-      }
-    ]
-  },
-  "StoryDrivenBlendedLightingZoneComponentDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "StoryResponses",
-        "Type": "TArray<struct LightingZoneStoryRelatedSettings>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "AssetsList",
-        "Type": "TArray<class StoryDrivenBlendedLightingZoneComponentDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "IsStoryActiveNPCDialogConditional": {
-    "Super": "NPCDialogConditional",
-    "FullSize": "0x48",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "StoryFlag",
-        "Type": "struct StoryFlag",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "SeasSpawnRequirement": {
-    "Super": "SpawnRequirement",
-    "FullSize": "0x78",
-    "InheritedSize": "0x50",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Seas",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x50"
-      }
-    ]
-  },
   "StoryService": {
     "Super": "Actor",
     "FullSize": "0x4f8",
@@ -255,37 +105,51 @@
       }
     ]
   },
-  "StorySpawnedActorsSettings": {
+  "IsStoryActiveNPCDialogConditional": {
+    "Super": "NPCDialogConditional",
+    "FullSize": "0x48",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "StoryFlag",
+        "Type": "struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "StorySettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x48",
     "InheritedSize": "0x38",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "StorySpawnActorsDataAssetLocation",
+        "Name": "StoryNamesCollectionDataAssetLocation",
         "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
       }
     ]
   },
-  "StoryClaimedResourcesService": {
-    "Super": "Actor",
-    "FullSize": "0x488",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0xc0",
+  "ActiveStorySpawnRequirement": {
+    "Super": "SpawnRequirement",
+    "FullSize": "0x80",
+    "InheritedSize": "0x50",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "PendingClaims",
-        "Type": "TArray<uintptr_t>",
+        "Name": "StoryNames",
+        "Type": "TArray<struct Name>",
         "Size": "0x10",
-        "Offset": "0x428"
+        "Offset": "0x50"
       },
       {
-        "Name": "StoriesToClaimableResourcesMap",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x438"
+        "Name": "AllStoriesRequired",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x60"
       }
     ]
   },
@@ -315,6 +179,86 @@
       }
     ]
   },
+  "StoryDrivenBlendedLightingZoneComponent": {
+    "Super": "BlendedLightingZoneComponent",
+    "FullSize": "0x360",
+    "InheritedSize": "0x330",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "StoryDrivenLightingAssetsCollection",
+        "Type": "class StoryDrivenBlendedLightingZoneComponentDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x328"
+      },
+      {
+        "Name": "CurrentStoryResponse",
+        "Type": "struct LightingZoneStoryRelatedSettings",
+        "Size": "0x10",
+        "Offset": "0x330"
+      }
+    ]
+  },
+  "StorySpawnedActorsSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StorySpawnActorsDataAssetLocation",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "StorySpawnedActorsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "StoryResponses",
+        "Type": "TArray<struct StorySpawnedActorsList>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "AssetsList",
+        "Type": "TArray<class StorySpawnedActorsDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "StoryNamesCollectionDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Stories",
+        "Type": "TArray<struct StoryNameInfo>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "StoriesAssets",
+        "Type": "TArray<class StoryNamesCollectionDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "StorySpawnedActorsService": {
     "Super": "Actor",
     "FullSize": "0x500",
@@ -332,6 +276,62 @@
         "Type": "class StorySpawnedActorsDataAsset*",
         "Size": "0x8",
         "Offset": "0x3f0"
+      }
+    ]
+  },
+  "StorySpawnedActorsComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x108",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "AssetsCollection",
+        "Type": "class StorySpawnedActorsComponentDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "SeasSpawnRequirement": {
+    "Super": "SpawnRequirement",
+    "FullSize": "0x78",
+    "InheritedSize": "0x50",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Seas",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "StoryClaimableResourceComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ClaimedStoryFlag",
+        "Type": "struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "StoryDrivenSalvageItemSpawnComponent": {
+    "Super": "SalvageItemSpawnComponent",
+    "FullSize": "0x600",
+    "InheritedSize": "0x5e0",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Story",
+        "Type": "struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0x5d8"
       }
     ]
   },

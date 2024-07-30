@@ -4,14 +4,6 @@
 // https://github.com/DougTheDruid
 
 // Size 0x20
-struct AdvertiseGameEventOnDemandAvailabilityTelemetryEvent
-{
-public:
-	struct GameEventAvailabilityModel                            GameEventAvailability;                             // 0x0(0x20)
-};
-
-
-// Size 0x20
 struct GameEventsOnDemandLoserTunnelCrewData
 {
 public:
@@ -27,6 +19,14 @@ public:
 	struct FString                                               EventName;                                         // 0x0(0x10)
 	char                                                         EventCategory;                                     // 0x10(0x1)
 	char                                                         AvailabilityState;                                 // 0x11(0x1)
+};
+
+
+// Size 0x20
+struct AdvertiseGameEventOnDemandAvailabilityTelemetryEvent
+{
+public:
+	struct GameEventAvailabilityModel                            GameEventAvailability;                             // 0x0(0x20)
 };
 
 

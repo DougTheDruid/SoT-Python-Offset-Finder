@@ -6,14 +6,6 @@
 #include "ExplosionFramework_Structs.h"
 
 
-// Size 0x70 (Full Size[0x138] - InheritedSize[0xc8]
-class CreateActorInstanceOnExplodeComponent: public ActorComponent
-{
-public:
-	class UClass*                                                ActorToInstance;                                   // 0xc8(0x8)
-};
-
-
 // Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
 class StatusResponseExplodeAfterTime: public StatusResponse
 {
@@ -21,6 +13,14 @@ public:
 	float                                                        MinTimeUntilExplosion;                             // 0x30(0x4)
 	float                                                        MaxTimeUntilExplosion;                             // 0x34(0x4)
 	class World*                                                 CachedWorld;                                       // 0x40(0x8)
+};
+
+
+// Size 0x70 (Full Size[0x138] - InheritedSize[0xc8]
+class CreateActorInstanceOnExplodeComponent: public ActorComponent
+{
+public:
+	class UClass*                                                ActorToInstance;                                   // 0xc8(0x8)
 };
 
 

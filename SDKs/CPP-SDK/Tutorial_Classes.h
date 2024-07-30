@@ -15,31 +15,29 @@ public:
 };
 
 
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class HasTutorialStarterBegunNPCDialogConditional: public NPCDialogConditional
+{
+public:
+	char                                                         TutorialStarterType;                               // 0x30(0x1)
+};
+
+
+// Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
+class Tutorial2019Component: public ActorComponent
+{
+public:
+	bool                                                         IsEnabledByServer;                                 // 0xc8(0x1)
+	bool                                                         IsInTutorialTale;                                  // 0xc9(0x1)
+};
+
+
 // Size 0x78 (Full Size[0x140] - InheritedSize[0xc8]
 class ContextualTutorialComponent: public ActorComponent
 {
 public:
 	TArray<struct ContextualTutorialPromptDesc>                  ContextualTutorialClasses;                         // 0xc8(0x10)
 	TArray<class Actor*>                                         SpawnedPromptActors;                               // 0xd8(0x10)
-};
-
-
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class TutorialStarter: public Object
-{
-public:
-	class AthenaPlayerController*                                AthenaPlayerController;                            // 0x28(0x8)
-	bool                                                         ShouldPlayIntroAnimatic;                           // 0x30(0x1)
-	bool                                                         ShouldDisableAllIntroBehaviour;                    // 0x31(0x1)
-	struct FirstPersonAnimaticSettings                           IntroAnimationSettings;                            // 0x34(0x2c)
-};
-
-
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class HasTutorialStarterBegunNPCDialogConditional: public NPCDialogConditional
-{
-public:
-	char                                                         TutorialStarterType;                               // 0x30(0x1)
 };
 
 
@@ -67,21 +65,14 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
-class Tutorial2019Component: public ActorComponent
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class TutorialStarter: public Object
 {
 public:
-	bool                                                         IsEnabledByServer;                                 // 0xc8(0x1)
-	bool                                                         IsInTutorialTale;                                  // 0xc9(0x1)
-};
-
-
-// Size 0x78 (Full Size[0xd8] - InheritedSize[0x60]
-class IntroductionToSOTFlowStarter: public TutorialStarter
-{
-public:
-	class VoyageDescDataAsset*                                   TutorialTale;                                      // 0x60(0x8)
-	TArray<struct IntroductionToSOTIntroAnimatic>                ShipSizeBasedIntroAnimatics;                       // 0x68(0x10)
+	class AthenaPlayerController*                                AthenaPlayerController;                            // 0x28(0x8)
+	bool                                                         ShouldPlayIntroAnimatic;                           // 0x30(0x1)
+	bool                                                         ShouldDisableAllIntroBehaviour;                    // 0x31(0x1)
+	struct FirstPersonAnimaticSettings                           IntroAnimationSettings;                            // 0x34(0x2c)
 };
 
 
@@ -107,6 +98,15 @@ public:
 	bool                                                         CheckIfPlayerHasMadeAttempts;                      // 0x84(0x1)
 	class UClass*                                                PromptCounterKey;                                  // 0x88(0x8)
 	int                                                          MaxAttemptCount;                                   // 0x90(0x4)
+};
+
+
+// Size 0x78 (Full Size[0xd8] - InheritedSize[0x60]
+class IntroductionToSOTFlowStarter: public TutorialStarter
+{
+public:
+	class VoyageDescDataAsset*                                   TutorialTale;                                      // 0x60(0x8)
+	TArray<struct IntroductionToSOTIntroAnimatic>                ShipSizeBasedIntroAnimatics;                       // 0x68(0x10)
 };
 
 

@@ -1,12 +1,41 @@
 {
-  "EventCharacterDiedDuringReviving": {
-    "ClassSize": "0x8",
+  "ReviveEffectsValues": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "OwningCharacter",
-        "Type": "class Character*",
+        "Name": "AstralCordPostProcessMID",
+        "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "ReviveableActionStateConstructionInfo": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "ActionStateId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "DamageInstance",
+        "Type": "struct DamageInstance",
+        "Size": "0x30",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "CharacterDeathType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "CharacterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x69"
       }
     ]
   },
@@ -87,17 +116,6 @@
       }
     ]
   },
-  "EventRevivableRepresentationSpawnCompleted": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "FromSwimming",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "RevivedActionStateParams": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -155,6 +173,17 @@
       }
     ]
   },
+  "EventCharacterDiedDuringReviving": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "OwningCharacter",
+        "Type": "class Character*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "RevivingWindowStart": {
     "ClassSize": "0x40",
     "Attributes": [
@@ -178,42 +207,13 @@
       }
     ]
   },
-  "ReviveableActionStateConstructionInfo": {
-    "ClassSize": "0x70",
+  "EventRevivableRepresentationSpawnCompleted": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "ActionStateId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "DamageInstance",
-        "Type": "struct DamageInstance",
-        "Size": "0x30",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "CharacterDeathType",
-        "Type": "byte",
+        "Name": "FromSwimming",
+        "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "CharacterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x69"
-      }
-    ]
-  },
-  "ReviveEffectsValues": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "AstralCordPostProcessMID",
-        "Type": "class MaterialInstanceDynamic*",
-        "Size": "0x8",
         "Offset": "0x0"
       }
     ]

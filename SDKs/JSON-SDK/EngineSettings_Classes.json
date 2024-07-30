@@ -79,6 +79,80 @@
       }
     ]
   },
+  "GameMapsSettings": {
+    "Super": "Object",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "EditorStartupMap",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "LocalMapOptions",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "TransitionMap",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "bUseSplitscreen",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "TwoPlayerSplitscreenLayout",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x59"
+      },
+      {
+        "Name": "ThreePlayerSplitscreenLayout",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x5a"
+      },
+      {
+        "Name": "GameInstanceClass",
+        "Type": "struct StringClassReference",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "GameDefaultMap",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "ServerDefaultMap",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "GlobalDefaultGameMode",
+        "Type": "struct StringClassReference",
+        "Size": "0x10",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "GlobalDefaultServerGameMode",
+        "Type": "struct StringClassReference",
+        "Size": "0x10",
+        "Offset": "0xa0"
+      }
+    ]
+  },
   "HudSettings": {
     "Super": "Object",
     "FullSize": "0x40",
@@ -96,32 +170,6 @@
         "Type": "TArray<struct Name>",
         "Size": "0x10",
         "Offset": "0x30"
-      }
-    ]
-  },
-  "ConsoleSettings": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "MaxScrollbackSize",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ManualAutoCompleteList",
-        "Type": "TArray<struct AutoCompleteCommand>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "AutoCompleteMapPaths",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x40"
       }
     ]
   },
@@ -225,77 +273,29 @@
       }
     ]
   },
-  "GameMapsSettings": {
+  "ConsoleSettings": {
     "Super": "Object",
-    "FullSize": "0xb0",
+    "FullSize": "0x50",
     "InheritedSize": "0x28",
-    "ClassSize": "0x88",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "EditorStartupMap",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "MaxScrollbackSize",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x28"
       },
       {
-        "Name": "LocalMapOptions",
-        "Type": "struct FString",
+        "Name": "ManualAutoCompleteList",
+        "Type": "TArray<struct AutoCompleteCommand>",
         "Size": "0x10",
-        "Offset": "0x38"
+        "Offset": "0x30"
       },
       {
-        "Name": "TransitionMap",
-        "Type": "struct FString",
+        "Name": "AutoCompleteMapPaths",
+        "Type": "TArray<String>",
         "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "bUseSplitscreen",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "TwoPlayerSplitscreenLayout",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x59"
-      },
-      {
-        "Name": "ThreePlayerSplitscreenLayout",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x5a"
-      },
-      {
-        "Name": "GameInstanceClass",
-        "Type": "struct StringClassReference",
-        "Size": "0x10",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "GameDefaultMap",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "ServerDefaultMap",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "GlobalDefaultGameMode",
-        "Type": "struct StringClassReference",
-        "Size": "0x10",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "GlobalDefaultServerGameMode",
-        "Type": "struct StringClassReference",
-        "Size": "0x10",
-        "Offset": "0xa0"
+        "Offset": "0x40"
       }
     ]
   },

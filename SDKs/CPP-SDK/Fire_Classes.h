@@ -6,48 +6,6 @@
 #include "Fire_Structs.h"
 
 
-// Size 0x98 (Full Size[0xc0] - InheritedSize[0x28]
-class FireCellStateTimingParamsDataAsset: public DataAsset
-{
-public:
-	struct FireCellStateTimingParams                             TimingParams;                                      // 0x28(0x94)
-};
-
-
-// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
-class FlammableComponent: public ActorComponent
-{
-public:
-	bool                                                         OnFire;                                            // 0xd8(0x1)
-};
-
-
-// Size 0x30 (Full Size[0x740] - InheritedSize[0x710]
-class OilSpill: public ItemProxy
-{
-public:
-	class BoxComponent*                                          BaseComponent;                                     // 0x718(0x8)
-	class ActorFlammableComponent*                               FlammableComponent;                                // 0x720(0x8)
-	class StatusEffectManagerComponent*                          StatusEffectManagerComponent;                      // 0x728(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class FirePropagatorDataAsset: public DataAsset
-{
-public:
-	class FirePropagator*                                        FirePropagator;                                    // 0x28(0x8)
-};
-
-
-// Size 0x78 (Full Size[0x140] - InheritedSize[0xc8]
-class CookerIgnitionComponent: public ActorComponent
-{
-public:
-	struct CookerIgnitionParams                                  CookerIgnitionParams;                              // 0xc8(0x78)
-};
-
-
 // Size 0x1e8 (Full Size[0x210] - InheritedSize[0x28]
 class FireGridVFXManager: public Object
 {
@@ -70,27 +28,11 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class ShipFireDamageParamsDataAsset: public DataAsset
+// Size 0x98 (Full Size[0xc0] - InheritedSize[0x28]
+class FireCellStateTimingParamsDataAsset: public DataAsset
 {
 public:
-	struct ShipFireDamageParams                                  FireDamageParams;                                  // 0x28(0x18)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class ShipFireLightParamsDataAsset: public DataAsset
-{
-public:
-	struct ShipFireLightParams                                   Params;                                            // 0x28(0x14)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class FireGridCellSelectionParamsDataAsset: public DataAsset
-{
-public:
-	TArray<struct FireGridCellSelectionParams>                   FireGridCellSelectionParams;                       // 0x28(0x10)
+	struct FireCellStateTimingParams                             TimingParams;                                      // 0x28(0x94)
 };
 
 
@@ -118,20 +60,43 @@ public:
 };
 
 
-// Size 0xf8 (Full Size[0x120] - InheritedSize[0x28]
-class FirePropagator: public Object
-{
-public:
-	class FireCellStateTimingParamsDataAsset*                    CellStateTimingParams;                             // 0xb8(0x8)
-	float                                                        WaterHeightOffsetToFloodCells;                     // 0xc4(0x4)
-};
-
-
 // Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
 class FireGridVFXParamsDataAsset: public DataAsset
 {
 public:
 	struct FireGridVFXParams                                     Params;                                            // 0x28(0x40)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class FireGridCellSelectionParamsDataAsset: public DataAsset
+{
+public:
+	TArray<struct FireGridCellSelectionParams>                   FireGridCellSelectionParams;                       // 0x28(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class FirePropagatorDataAsset: public DataAsset
+{
+public:
+	class FirePropagator*                                        FirePropagator;                                    // 0x28(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class ShipFireLightParamsDataAsset: public DataAsset
+{
+public:
+	struct ShipFireLightParams                                   Params;                                            // 0x28(0x14)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class ShipFireDamageParamsDataAsset: public DataAsset
+{
+public:
+	struct ShipFireDamageParams                                  FireDamageParams;                                  // 0x28(0x18)
 };
 
 
@@ -145,11 +110,38 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0xf8] - InheritedSize[0xe0]
-class FlammableWieldableComponent: public FlammableComponent
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
+class FlammableComponent: public ActorComponent
 {
 public:
-	struct Status                                                IgnitedStatus;                                     // 0xe0(0x18)
+	bool                                                         OnFire;                                            // 0xd8(0x1)
+};
+
+
+// Size 0xf8 (Full Size[0x120] - InheritedSize[0x28]
+class FirePropagator: public Object
+{
+public:
+	class FireCellStateTimingParamsDataAsset*                    CellStateTimingParams;                             // 0xb8(0x8)
+	float                                                        WaterHeightOffsetToFloodCells;                     // 0xc4(0x4)
+};
+
+
+// Size 0x30 (Full Size[0x748] - InheritedSize[0x718]
+class OilSpill: public ItemProxy
+{
+public:
+	class BoxComponent*                                          BaseComponent;                                     // 0x720(0x8)
+	class ActorFlammableComponent*                               FlammableComponent;                                // 0x728(0x8)
+	class StatusEffectManagerComponent*                          StatusEffectManagerComponent;                      // 0x730(0x8)
+};
+
+
+// Size 0x78 (Full Size[0x140] - InheritedSize[0xc8]
+class CookerIgnitionComponent: public ActorComponent
+{
+public:
+	struct CookerIgnitionParams                                  CookerIgnitionParams;                              // 0xc8(0x78)
 };
 
 
@@ -168,6 +160,14 @@ public:
 	struct Status                                                BurnStatus;                                        // 0x138(0x18)
 	bool                                                         ShouldPropagateToShip;                             // 0x150(0x1)
 	class World*                                                 CachedWorld;                                       // 0x1e8(0x8)
+};
+
+
+// Size 0x18 (Full Size[0xf8] - InheritedSize[0xe0]
+class FlammableWieldableComponent: public FlammableComponent
+{
+public:
+	struct Status                                                IgnitedStatus;                                     // 0xe0(0x18)
 };
 
 

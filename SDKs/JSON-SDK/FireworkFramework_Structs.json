@@ -1,4 +1,56 @@
 {
+  "WeightedFireworkVFXData": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "VFX",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Sfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SecondarySFX",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "AmbientLightColour",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "FireworkSequentialSelectionType": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "SelectionIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TimeUntilNextExplosion",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "WeightedProjectileMeshAnimationData": {
     "ClassSize": "0x178",
     "Attributes": [
@@ -36,58 +88,6 @@
         "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "FireworkSequentialSelectionType": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "SelectionIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TimeUntilNextExplosion",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "WeightedFireworkVFXData": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "VFX",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Sfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SecondarySFX",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "AmbientLightColour",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x1c"
       }
     ]
   },

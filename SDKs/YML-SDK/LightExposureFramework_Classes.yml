@@ -13,11 +13,11 @@ DebugLightSensitiveComponent:
 LightSensitiveComponent:
   Attributes:
   - Name: LightSourceManager
-    Offset: '0x128'
+    Offset: '0x130'
     Size: '0x8'
     Type: class LightSourceManager*
-  ClassSize: '0x68'
-  FullSize: '0x130'
+  ClassSize: '0x70'
+  FullSize: '0x138'
   InheritedSize: '0xc8'
   Super: ActorComponent
 LightSourceManager:
@@ -38,11 +38,15 @@ LightSourceManager:
     Offset: '0x3f4'
     Size: '0x1'
     Type: bool
-  - Name: MaxLightsourceParamCount
+  - Name: StayActiveForNumberOfTicks
     Offset: '0x414'
     Size: '0x4'
+    Type: uint32
+  - Name: MaxLightsourceParamCount
+    Offset: '0x41c'
+    Size: '0x4'
     Type: int
-  ClassSize: '0x50'
-  FullSize: '0x418'
+  ClassSize: '0x58'
+  FullSize: '0x420'
   InheritedSize: '0x3c8'
   Super: Actor

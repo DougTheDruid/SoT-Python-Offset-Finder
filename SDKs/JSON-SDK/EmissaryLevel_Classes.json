@@ -1,33 +1,15 @@
 {
-  "EmissaryFlotsamItemInfo": {
-    "Super": "BootyItemInfo",
-    "FullSize": "0x798",
-    "InheritedSize": "0x750",
-    "ClassSize": "0x48",
+  "EmissaryColourSwatchSettingsAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "HandInOwnFlotsamReward",
-        "Type": "struct CompanySpecificBootyReward",
-        "Size": "0x18",
-        "Offset": "0x758"
-      },
-      {
-        "Name": "AlternateHandInOwnFlotsamReward",
-        "Type": "struct CompanySpecificBootyReward",
-        "Size": "0x18",
-        "Offset": "0x770"
-      },
-      {
-        "Name": "PermittedFlotsamPurchaseCompany",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x788"
-      },
-      {
-        "Name": "FlotsamCanBeDuplicated",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x790"
+        "Name": "ColourSwatchInformation",
+        "Type": "TArray<struct EmissaryColourSwatchInformation>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },
@@ -57,35 +39,105 @@
       }
     ]
   },
-  "EmissaryLevelSettingsAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
+  "EmissaryActiveTableVisualiserComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x158",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "EmissaryLevelData",
-        "Type": "TArray<struct EmissaryLevelEntry>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "BoostMultiplers",
-        "Type": "struct EmissaryPointBoostMultipliers",
+        "Name": "TargetCompany",
+        "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x38"
+        "Offset": "0xc8"
       },
       {
-        "Name": "DefaultEmissaryFlagAssetReferences",
-        "Type": "struct EmissaryFlagMeshReferences",
+        "Name": "MaterialChanges",
+        "Type": "TArray<struct MaterialVisualisation>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "LightChanges",
+        "Type": "TArray<struct LightVisualisation>",
+        "Size": "0x10",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "ParticleChanges",
+        "Type": "TArray<struct ParticleVisualisation>",
+        "Size": "0x10",
+        "Offset": "0x110"
+      }
+    ]
+  },
+  "EmissaryFlotsamTooltipCustomizerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "CheckForDelivery",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "CheckForPickup",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd9"
+      },
+      {
+        "Name": "WonInBattleFlag",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xda"
+      }
+    ]
+  },
+  "EmissaryShipAffiliationTrackerComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x350",
+    "InheritedSize": "0x2e0",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "TrackedCompany",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x2e0"
+      },
+      {
+        "Name": "EmissaryRepresentationMesh",
+        "Type": "assetclass",
         "Size": "0x20",
-        "Offset": "0x40"
+        "Offset": "0x2e8"
       },
       {
-        "Name": "NumberOfCustomisedShipPartsToGainBoost",
-        "Type": "uint32",
+        "Name": "EmissaryRepresentationTransforms",
+        "Type": "TArray<struct Transform>",
+        "Size": "0x10",
+        "Offset": "0x308"
+      },
+      {
+        "Name": "EmissaryRepresentationMeshes",
+        "Type": "TArray<class StaticMeshComponent*>",
+        "Size": "0x10",
+        "Offset": "0x318"
+      },
+      {
+        "Name": "LoadedEmissaryRepresentationMesh",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x328"
+      },
+      {
+        "Name": "EmissaryCount",
+        "Type": "int",
         "Size": "0x4",
-        "Offset": "0x60"
+        "Offset": "0x330"
       }
     ]
   },
@@ -124,52 +176,6 @@
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x110"
-      }
-    ]
-  },
-  "IsEmissaryStatCondition": {
-    "Super": "StatCondition",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RequiredEmissaryCompany",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "RequiresMaxEmissaryLevel",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "EmissaryFlotsamTooltipCustomizerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "CheckForDelivery",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "CheckForPickup",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xd9"
-      },
-      {
-        "Name": "WonInBattleFlag",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xda"
       }
     ]
   },
@@ -223,67 +229,35 @@
       }
     ]
   },
-  "EmissaryColourSwatchSettingsAsset": {
+  "EmissaryLevelSettingsAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x38",
+    "FullSize": "0x68",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "ColourSwatchInformation",
-        "Type": "TArray<struct EmissaryColourSwatchInformation>",
+        "Name": "EmissaryLevelData",
+        "Type": "TArray<struct EmissaryLevelEntry>",
         "Size": "0x10",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "EmissaryMaxRankQuestProvider": {
-    "Super": "ActorComponent",
-    "FullSize": "0x170",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0xa8",
-    "Attributes": [
+      },
       {
-        "Name": "MaxRankQuestNotificationID",
-        "Type": "class UClass*",
+        "Name": "BoostMultiplers",
+        "Type": "struct EmissaryPointBoostMultipliers",
         "Size": "0x8",
-        "Offset": "0xc8"
+        "Offset": "0x38"
       },
       {
-        "Name": "MaxRankQuestToolTipPriority",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xd0"
+        "Name": "DefaultEmissaryFlagAssetReferences",
+        "Type": "struct EmissaryFlagMeshReferences",
+        "Size": "0x20",
+        "Offset": "0x40"
       },
       {
-        "Name": "StartMaxRankQuestToolTipText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "CannotStartMaxRankQuestToolTipText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "QuestDesc",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "QuestDescOverrides",
-        "Type": "TArray<struct EmissaryMaxRankQuestProviderQuestOverrides>",
-        "Size": "0x10",
-        "Offset": "0x158"
-      },
-      {
-        "Name": "Company",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x168"
+        "Name": "NumberOfCustomisedShipPartsToGainBoost",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x60"
       }
     ]
   },
@@ -298,82 +272,6 @@
         "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x528"
-      }
-    ]
-  },
-  "EmissaryActiveTableVisualiserComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x158",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "TargetCompany",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "MaterialChanges",
-        "Type": "TArray<struct MaterialVisualisation>",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "LightChanges",
-        "Type": "TArray<struct LightVisualisation>",
-        "Size": "0x10",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "ParticleChanges",
-        "Type": "TArray<struct ParticleVisualisation>",
-        "Size": "0x10",
-        "Offset": "0x110"
-      }
-    ]
-  },
-  "EmissaryShipAffiliationTrackerComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x350",
-    "InheritedSize": "0x2e0",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "TrackedCompany",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x2e0"
-      },
-      {
-        "Name": "EmissaryRepresentationMesh",
-        "Type": "assetclass",
-        "Size": "0x20",
-        "Offset": "0x2e8"
-      },
-      {
-        "Name": "EmissaryRepresentationTransforms",
-        "Type": "TArray<struct Transform>",
-        "Size": "0x10",
-        "Offset": "0x308"
-      },
-      {
-        "Name": "EmissaryRepresentationMeshes",
-        "Type": "TArray<class StaticMeshComponent*>",
-        "Size": "0x10",
-        "Offset": "0x318"
-      },
-      {
-        "Name": "LoadedEmissaryRepresentationMesh",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x328"
-      },
-      {
-        "Name": "EmissaryCount",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x330"
       }
     ]
   },
@@ -431,6 +329,108 @@
       }
     ]
   },
+  "EmissaryMaxRankQuestProvider": {
+    "Super": "ActorComponent",
+    "FullSize": "0x170",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0xa8",
+    "Attributes": [
+      {
+        "Name": "MaxRankQuestNotificationID",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "MaxRankQuestToolTipPriority",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "StartMaxRankQuestToolTipText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "CannotStartMaxRankQuestToolTipText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "QuestDesc",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "QuestDescOverrides",
+        "Type": "TArray<struct EmissaryMaxRankQuestProviderQuestOverrides>",
+        "Size": "0x10",
+        "Offset": "0x158"
+      },
+      {
+        "Name": "Company",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x168"
+      }
+    ]
+  },
+  "IsEmissaryStatCondition": {
+    "Super": "StatCondition",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "RequiredEmissaryCompany",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "RequiresMaxEmissaryLevel",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "EmissaryFlotsamItemInfo": {
+    "Super": "BootyItemInfo",
+    "FullSize": "0x798",
+    "InheritedSize": "0x750",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "HandInOwnFlotsamReward",
+        "Type": "struct CompanySpecificBootyReward",
+        "Size": "0x18",
+        "Offset": "0x758"
+      },
+      {
+        "Name": "AlternateHandInOwnFlotsamReward",
+        "Type": "struct CompanySpecificBootyReward",
+        "Size": "0x18",
+        "Offset": "0x770"
+      },
+      {
+        "Name": "PermittedFlotsamPurchaseCompany",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x788"
+      },
+      {
+        "Name": "FlotsamCanBeDuplicated",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x790"
+      }
+    ]
+  },
   "EmissaryParticipantComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x118",
@@ -477,9 +477,9 @@
   },
   "StopEmissaryVoyageInlineVoteConsumer": {
     "Super": "EmissaryVoyageInlineVoteConsumerBase",
-    "FullSize": "0x330",
+    "FullSize": "0x368",
     "InheritedSize": "0x120",
-    "ClassSize": "0x210",
+    "ClassSize": "0x248",
     "Attributes": [
       {
         "Name": "EmissaryVotingCastVote",
@@ -524,24 +524,30 @@
         "Offset": "0x270"
       },
       {
-        "Name": "EmissaryVotingRemoveVote",
+        "Name": "EmissaryVotingCantVoteReasonCrewShipSinking",
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x2a8"
       },
       {
-        "Name": "EmissaryVotingCantRemoveVote",
+        "Name": "EmissaryVotingRemoveVote",
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x2e0"
+      },
+      {
+        "Name": "EmissaryVotingCantRemoveVote",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x318"
       }
     ]
   },
   "StartEmissaryVoyageInlineVoteConsumer": {
     "Super": "EmissaryVoyageInlineVoteConsumerBase",
-    "FullSize": "0x330",
+    "FullSize": "0x368",
     "InheritedSize": "0x120",
-    "ClassSize": "0x210",
+    "ClassSize": "0x248",
     "Attributes": [
       {
         "Name": "EmissaryVotingCastVote",
@@ -586,36 +592,42 @@
         "Offset": "0x270"
       },
       {
-        "Name": "EmissaryVotingRemoveVote",
+        "Name": "EmissaryVotingCantVoteReasonCrewShipSinking",
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x2a8"
       },
       {
-        "Name": "EmissaryVotingCantRemoveVote",
+        "Name": "EmissaryVotingRemoveVote",
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x2e0"
+      },
+      {
+        "Name": "EmissaryVotingCantRemoveVote",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x318"
       }
     ]
   },
   "StartGuildEmissaryVoyageInlineVoteConsumer": {
     "Super": "StartEmissaryVoyageInlineVoteConsumer",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x330",
+    "FullSize": "0x408",
+    "InheritedSize": "0x368",
     "ClassSize": "0xa0",
     "Attributes": [
       {
         "Name": "GuildEmissaryVotingCantVoteReasonGuildEmissaryNotUnlocked",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x330"
+        "Offset": "0x368"
       },
       {
         "Name": "GuildEmissaryVotingCantVoteReasonNoGuildShip",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x368"
+        "Offset": "0x3a0"
       }
     ]
   },

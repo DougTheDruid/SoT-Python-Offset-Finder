@@ -1,4 +1,42 @@
 {
+  "TradeRouteData": {
+    "Super": "DataAsset",
+    "FullSize": "0xc0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "StartIsland",
+        "Type": "struct IslandSelectionType",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "EndIsland",
+        "Type": "struct IslandSelectionType",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "RouteCompletionStat",
+        "Type": "struct PlayerStat",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "MapOrientation",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "TradeRouteMapData",
+        "Type": "struct TradeRouteMapData",
+        "Size": "0x80",
+        "Offset": "0x40"
+      }
+    ]
+  },
   "TaleQuestGetProjectionPointOnTradeRouteStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x118",
@@ -28,20 +66,6 @@
         "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0xe8"
-      }
-    ]
-  },
-  "TaleQuestSelectTradeRouteStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Desc",
-        "Type": "class TaleQuestSelectTradeRouteStepDesc*",
-        "Size": "0x8",
-        "Offset": "0x98"
       }
     ]
   },
@@ -89,44 +113,6 @@
       }
     ]
   },
-  "TradeRouteData": {
-    "Super": "DataAsset",
-    "FullSize": "0xc0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "StartIsland",
-        "Type": "struct IslandSelectionType",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "EndIsland",
-        "Type": "struct IslandSelectionType",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "RouteCompletionStat",
-        "Type": "struct PlayerStat",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "MapOrientation",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "TradeRouteMapData",
-        "Type": "struct TradeRouteMapData",
-        "Size": "0x80",
-        "Offset": "0x40"
-      }
-    ]
-  },
   "TradeRoutesDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -138,6 +124,20 @@
         "Type": "TArray<struct TradeRouteMapping>",
         "Size": "0x10",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "TaleQuestSelectTradeRouteStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Desc",
+        "Type": "class TaleQuestSelectTradeRouteStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x98"
       }
     ]
   },

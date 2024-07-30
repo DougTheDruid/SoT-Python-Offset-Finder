@@ -6,6 +6,17 @@
 #include "Tethering_Structs.h"
 
 
+// Size 0x60 (Full Size[0x128] - InheritedSize[0xc8]
+class TetherCustomisationComponent: public ActorComponent
+{
+public:
+	class SceneComponent*                                        ComponentToTetherTo;                               // 0xd0(0x8)
+	float                                                        MassIntertiaScale;                                 // 0x120(0x4)
+	bool                                                         CanBeTethered;                                     // 0x124(0x1)
+	bool                                                         IsMassInertiaScalingEnabled;                       // 0x125(0x1)
+};
+
+
 // Size 0x140 (Full Size[0x508] - InheritedSize[0x3c8]
 class Tether: public Actor
 {
@@ -32,17 +43,6 @@ class CordRenderComponent: public StaticMeshComponent
 public:
 	TArray<class MaterialInstanceDynamic*>                       CordMaterials;                                     // 0x638(0x10)
 	float                                                        ThicknessCm;                                       // 0x648(0x4)
-};
-
-
-// Size 0x60 (Full Size[0x128] - InheritedSize[0xc8]
-class TetherCustomisationComponent: public ActorComponent
-{
-public:
-	class SceneComponent*                                        ComponentToTetherTo;                               // 0xd0(0x8)
-	float                                                        MassIntertiaScale;                                 // 0x120(0x4)
-	bool                                                         CanBeTethered;                                     // 0x124(0x1)
-	bool                                                         IsMassInertiaScalingEnabled;                       // 0x125(0x1)
 };
 
 

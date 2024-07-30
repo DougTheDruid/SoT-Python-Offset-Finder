@@ -1,27 +1,21 @@
 {
-  "BasePromptCoordinator": {
+  "PrioritisedPromptsManager": {
     "Super": "Object",
-    "FullSize": "0x118",
+    "FullSize": "0x78",
     "InheritedSize": "0x28",
-    "ClassSize": "0xf0",
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "PlayerController",
-        "Type": "class AthenaPlayerController*",
-        "Size": "0x8",
-        "Offset": "0x28"
+        "Name": "AllPrompts",
+        "Type": "TArray<struct PrioritisedPromptWithHandle>",
+        "Size": "0x10",
+        "Offset": "0x30"
       },
       {
-        "Name": "PrioritisedPromptsManager",
-        "Type": "class PrioritisedPromptsManager*",
+        "Name": "PlayerController",
+        "Type": "class PlayerController*",
         "Size": "0x8",
         "Offset": "0x40"
-      },
-      {
-        "Name": "CharacterWithRegisteredEvents",
-        "Type": "class Character*",
-        "Size": "0x8",
-        "Offset": "0x48"
       }
     ]
   },
@@ -59,23 +53,29 @@
       }
     ]
   },
-  "PrioritisedPromptsManager": {
+  "BasePromptCoordinator": {
     "Super": "Object",
-    "FullSize": "0x78",
+    "FullSize": "0x118",
     "InheritedSize": "0x28",
-    "ClassSize": "0x50",
+    "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "AllPrompts",
-        "Type": "TArray<struct PrioritisedPromptWithHandle>",
-        "Size": "0x10",
-        "Offset": "0x30"
+        "Name": "PlayerController",
+        "Type": "class AthenaPlayerController*",
+        "Size": "0x8",
+        "Offset": "0x28"
       },
       {
-        "Name": "PlayerController",
-        "Type": "class PlayerController*",
+        "Name": "PrioritisedPromptsManager",
+        "Type": "class PrioritisedPromptsManager*",
         "Size": "0x8",
         "Offset": "0x40"
+      },
+      {
+        "Name": "CharacterWithRegisteredEvents",
+        "Type": "class Character*",
+        "Size": "0x8",
+        "Offset": "0x48"
       }
     ]
   },

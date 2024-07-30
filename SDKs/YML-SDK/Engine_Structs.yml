@@ -1598,6 +1598,80 @@ AnimationTransitionRule:
     Size: '0x4'
     Type: int
   ClassSize: '0x10'
+AnonymousClientReliabilityEvent:
+  Attributes:
+  - Name: ReliabilityEvent
+    Offset: '0x0'
+    Size: '0xa8'
+    Type: struct ReliabilityEvent
+  - Name: GameVersion
+    Offset: '0xa8'
+    Size: '0x10'
+    Type: struct FString
+  - Name: SandboxId
+    Offset: '0xb8'
+    Size: '0x10'
+    Type: struct FString
+  - Name: Uptime
+    Offset: '0xc8'
+    Size: '0x8'
+    Type: struct Timespan
+  ClassSize: '0xd0'
+AnonymousServerReliabilityEvent:
+  Attributes:
+  - Name: ReliabilityEvent
+    Offset: '0x0'
+    Size: '0xa8'
+    Type: struct ReliabilityEvent
+  - Name: GameVersion
+    Offset: '0xa8'
+    Size: '0x10'
+    Type: struct FString
+  - Name: Uptime
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: struct Timespan
+  - Name: Role
+    Offset: '0xc0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: RoleInstance
+    Offset: '0xd0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: Location
+    Offset: '0xe0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: Region
+    Offset: '0xf0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: SandboxId
+    Offset: '0x100'
+    Size: '0x10'
+    Type: struct FString
+  - Name: VmId
+    Offset: '0x110'
+    Size: '0x10'
+    Type: struct FString
+  - Name: ClusterId
+    Offset: '0x120'
+    Size: '0x10'
+    Type: struct FString
+  - Name: GsiId
+    Offset: '0x130'
+    Size: '0x10'
+    Type: struct FString
+  - Name: Active
+    Offset: '0x140'
+    Size: '0x1'
+    Type: bool
+  - Name: MagicKey
+    Offset: '0x148'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x158'
 AssetEditorOrbitCameraPosition:
   Attributes:
   - Name: bIsSet
@@ -5764,6 +5838,29 @@ GameNameRedirect:
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x20'
+GenericPlatformCrashModuleUStruct:
+  Attributes:
+  - Name: ModuleName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: PdbName
+    Offset: '0x10'
+    Size: '0x10'
+    Type: struct FString
+  - Name: PdbHash
+    Offset: '0x20'
+    Size: '0x10'
+    Type: struct FString
+  - Name: BaseAddress
+    Offset: '0x30'
+    Size: '0x8'
+    Type: uint64
+  - Name: Size
+    Offset: '0x38'
+    Size: '0x8'
+    Type: uint64
+  ClassSize: '0x40'
 GenericStruct:
   Attributes:
   - Name: Data
@@ -8907,6 +9004,29 @@ PacketDiscardStats:
     Size: '0x4'
     Type: int
   ClassSize: '0x20'
+PacketLossSpikeEventData:
+  Attributes:
+  - Name: StartTimeInMs
+    Offset: '0x0'
+    Size: '0x8'
+    Type: double
+  - Name: EventDurationInMs
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: TotalPacketsLost
+    Offset: '0xc'
+    Size: '0x4'
+    Type: int
+  - Name: PeakPacketLossCount
+    Offset: '0x10'
+    Size: '0x4'
+    Type: int
+  - Name: DiscardedInPackets
+    Offset: '0x14'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x18'
 PaintedVertex:
   Attributes:
   - Name: Position
@@ -10963,6 +11083,65 @@ ReferencePose:
     Size: '0x10'
     Type: TArray<struct Transform>
   ClassSize: '0x18'
+ReliabilityEvent:
+  Attributes:
+  - Name: RegRip
+    Offset: '0x0'
+    Size: '0x8'
+    Type: uint64
+  - Name: RegRax
+    Offset: '0x8'
+    Size: '0x8'
+    Type: uint64
+  - Name: RegRcx
+    Offset: '0x10'
+    Size: '0x8'
+    Type: uint64
+  - Name: RegRdx
+    Offset: '0x18'
+    Size: '0x8'
+    Type: uint64
+  - Name: RegR8
+    Offset: '0x20'
+    Size: '0x8'
+    Type: uint64
+  - Name: RegR9
+    Offset: '0x28'
+    Size: '0x8'
+    Type: uint64
+  - Name: ReportId
+    Offset: '0x30'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: EventType
+    Offset: '0x40'
+    Size: '0x10'
+    Type: struct FString
+  - Name: EventHash
+    Offset: '0x50'
+    Size: '0x10'
+    Type: struct FString
+  - Name: WatsonBucketId
+    Offset: '0x60'
+    Size: '0x10'
+    Type: struct FString
+  - Name: StackFrames
+    Offset: '0x70'
+    Size: '0x10'
+    Type: TArray<UInt64 StackFrames>
+  - Name: Modules
+    Offset: '0x80'
+    Size: '0x10'
+    Type: TArray<struct GenericPlatformCrashModuleUStruct>
+  - Name: ProcessVersion
+    Offset: '0x90'
+    Size: '0x10'
+    Type: struct FString
+  - Name: IsRequestingExit
+    Offset: '0xa0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0xa8'
 RepAttachment:
   Attributes:
   - Name: AttachParent

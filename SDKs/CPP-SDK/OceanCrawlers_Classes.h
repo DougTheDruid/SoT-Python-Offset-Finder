@@ -6,6 +6,14 @@
 #include "OceanCrawlers_Structs.h"
 
 
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
+class BTTask_BroadcastOceanCrawlerAbilityAudioEvent: public BTTaskNode
+{
+public:
+	char                                                         OceanCrawlerAudioKeyToBroadcast;                   // 0x60(0x1)
+};
+
+
 // Size 0x130 (Full Size[0x1f8] - InheritedSize[0xc8]
 class OceanCrawlerAudioBroadcaster: public ActorComponent
 {
@@ -13,14 +21,6 @@ public:
 	assetclass                                                   AudioDataAsset;                                    // 0xc8(0x20)
 	class Actor*                                                 CachedOwner;                                       // 0xe8(0x8)
 	class OceanCrawlerAudioParamsDataAsset*                      LoadedAudioDataAsset;                              // 0x1f0(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
-class BTTask_BroadcastOceanCrawlerAbilityAudioEvent: public BTTaskNode
-{
-public:
-	char                                                         OceanCrawlerAudioKeyToBroadcast;                   // 0x60(0x1)
 };
 
 

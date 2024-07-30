@@ -1,4 +1,15 @@
 {
+  "GlobalDigSpotPopupEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "PopUpDesc",
+        "Type": "class PopUpMessageDesc*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "GlobalDigSpotStatusUpdateTelemetryEvent": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -19,17 +30,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
-      }
-    ]
-  },
-  "GlobalDigSpotPopupEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "PopUpDesc",
-        "Type": "class PopUpMessageDesc*",
-        "Size": "0x8",
-        "Offset": "0x18"
       }
     ]
   },

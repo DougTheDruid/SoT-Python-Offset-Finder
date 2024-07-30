@@ -1,4 +1,88 @@
 {
+  "TaleQuestInvasionRemoveBattleBoundsStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "ShipInBattleBounds",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "InvasionSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "InvasionServiceDataAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "InvasionBattleBounds": {
+    "Super": "Actor",
+    "FullSize": "0x460",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "Root",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "ShipToTrack1",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "ShipToTrack2",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "InnerRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "OuterRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3e4"
+      },
+      {
+        "Name": "ShipThatWasDestroyed",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "HasLeftBattleBounds",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "TimeAsSubmarine",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x410"
+      }
+    ]
+  },
   "InvasionServiceDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0xb0",
@@ -132,72 +216,122 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "StopPlayingEmergeMusicAfterSeconds",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xa8"
-      },
-      {
         "Name": "WorldEventsCooldown",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xac"
+        "Offset": "0xa8"
       }
     ]
   },
-  "WaitForShipToBeDefeatedStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x1e0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x160",
+  "TaleQuestInvasionMatchmakingServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x98",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "WinningShip",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
+        "Name": "OnCrewLeftServerMessage",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OnCrewLeftFightMessage",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "TaleQuestInvasionMatchmakingService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x228",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x1c8",
+    "Attributes": [
+      {
+        "Name": "ServiceDesc",
+        "Type": "class TaleQuestInvasionMatchmakingServiceDesc*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "TaleQuestInvasionServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x108",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xe0",
+    "Attributes": [
+      {
+        "Name": "OnCrewLeftServerMessage",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OnCrewLeftFightMessage",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "FactionGBannerTag",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "FactionBBannerTag",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "DisplayInvasionBannersStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x120",
+    "InheritedSize": "0x80",
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "Message",
+        "Type": "struct FText",
+        "Size": "0x38",
         "Offset": "0x80"
       },
       {
-        "Name": "DefeatedShip",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0xb0"
+        "Name": "DisableMusic",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xb8"
       },
       {
-        "Name": "WinningCrewId",
+        "Name": "DisplayShipsNameForCrewId",
         "Type": "struct QuestVariableGuid",
         "Size": "0x30",
-        "Offset": "0xe0"
+        "Offset": "0xc0"
       },
       {
-        "Name": "DefeatedCrewId",
-        "Type": "struct QuestVariableGuid",
-        "Size": "0x30",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "WinningFaction",
+        "Name": "DisplayBannersForFaction",
         "Type": "struct QuestVariableName",
         "Size": "0x30",
-        "Offset": "0x140"
-      },
+        "Offset": "0xf0"
+      }
+    ]
+  },
+  "TaleQuestInvasionService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x208",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x1a8",
+    "Attributes": [
       {
-        "Name": "DefeatedFaction",
-        "Type": "struct QuestVariableName",
-        "Size": "0x30",
-        "Offset": "0x170"
-      },
-      {
-        "Name": "TimeoutTimerIntervalInMinutes",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1a0"
-      },
-      {
-        "Name": "FailMessage",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x1a8"
+        "Name": "ServiceDesc",
+        "Type": "class TaleQuestInvasionServiceDesc*",
+        "Size": "0x8",
+        "Offset": "0x60"
       }
     ]
   },
@@ -263,275 +397,11 @@
       }
     ]
   },
-  "DisplayInvasionBannersStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x120",
-    "InheritedSize": "0x80",
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "Message",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "DisableMusic",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "DisplayShipsNameForCrewId",
-        "Type": "struct QuestVariableGuid",
-        "Size": "0x30",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "DisplayBannersForFaction",
-        "Type": "struct QuestVariableName",
-        "Size": "0x30",
-        "Offset": "0xf0"
-      }
-    ]
-  },
-  "TaleQuestInvasionService": {
-    "Super": "TaleQuestService",
-    "FullSize": "0x208",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x1a8",
-    "Attributes": [
-      {
-        "Name": "ServiceDesc",
-        "Type": "class TaleQuestInvasionServiceDesc*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "TaleQuestInvasionServiceDesc": {
-    "Super": "TaleQuestServiceDesc",
-    "FullSize": "0x108",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xe0",
-    "Attributes": [
-      {
-        "Name": "OnCrewLeftServerMessage",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "OnCrewLeftFightMessage",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "FactionGBannerTag",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "FactionBBannerTag",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "GetInvasionBattleLocationStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct QuestVariableVector",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "Radius",
-        "Type": "struct QuestVariableFloat",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      }
-    ]
-  },
-  "SetInvasionMusicStateForCrewStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x88",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "MusicState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x80"
-      }
-    ]
-  },
-  "TaleQuestInvasionMatchmakingService": {
-    "Super": "TaleQuestService",
-    "FullSize": "0x228",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x1c8",
-    "Attributes": [
-      {
-        "Name": "ServiceDesc",
-        "Type": "class TaleQuestInvasionMatchmakingServiceDesc*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "InvasionSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "InvasionServiceDataAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "TaleQuestInvasionMatchmakingServiceDesc": {
-    "Super": "TaleQuestServiceDesc",
-    "FullSize": "0x98",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "OnCrewLeftServerMessage",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "OnCrewLeftFightMessage",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "TaleQuestInvasionRemoveBattleBoundsStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "ShipInBattleBounds",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0x80"
-      }
-    ]
-  },
-  "InvasionLocationsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AggressiveAggressiveLocations",
-        "Type": "TArray<struct Vector2D>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "TaleQuestInvasionCreateBattleBoundsStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "Ship1",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "Ship2",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      }
-    ]
-  },
-  "InvasionBattleBounds": {
-    "Super": "Actor",
-    "FullSize": "0x460",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "Root",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "ShipToTrack1",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "ShipToTrack2",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "InnerRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "OuterRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3e4"
-      },
-      {
-        "Name": "ShipThatWasDestroyed",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "HasLeftBattleBounds",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "TimeAsSubmarine",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x410"
-      }
-    ]
-  },
   "InvasionService": {
     "Super": "Actor",
-    "FullSize": "0x660",
+    "FullSize": "0x630",
     "InheritedSize": "0x3c8",
-    "ClassSize": "0x298",
+    "ClassSize": "0x268",
     "Attributes": [
       {
         "Name": "InvasionSettings",
@@ -555,37 +425,161 @@
         "Name": "MatchmakingCrews",
         "Type": "TArray<struct InvasionParticipatingCrewData>",
         "Size": "0x10",
-        "Offset": "0x598"
+        "Offset": "0x550"
       },
       {
         "Name": "InvadingCrews",
         "Type": "TArray<struct InvasionParticipatingCrewData>",
         "Size": "0x10",
-        "Offset": "0x5a8"
+        "Offset": "0x560"
       },
       {
         "Name": "ReplicatedInvasionCrewMusicStates",
         "Type": "TArray<struct ReplicatedInvasionCrewMusicState>",
         "Size": "0x10",
-        "Offset": "0x5b8"
+        "Offset": "0x570"
       },
       {
         "Name": "MatchmakingCrewsReplicated",
         "Type": "TArray<struct InvasionServiceMatchmakingCrewInfo>",
         "Size": "0x10",
-        "Offset": "0x5c8"
+        "Offset": "0x580"
       },
       {
         "Name": "InvadingCrewsReplicated",
         "Type": "TArray<struct Guid>",
         "Size": "0x10",
-        "Offset": "0x5d8"
+        "Offset": "0x590"
       },
       {
         "Name": "InvasionBattleBoundsList",
         "Type": "TArray<class InvasionBattleBounds*>",
         "Size": "0x10",
-        "Offset": "0x5e8"
+        "Offset": "0x5a0"
+      }
+    ]
+  },
+  "SetInvasionMusicStateForCrewStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MusicState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "GetInvasionBattleLocationStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "Radius",
+        "Type": "struct QuestVariableFloat",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      }
+    ]
+  },
+  "TaleQuestInvasionCreateBattleBoundsStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "Ship1",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "Ship2",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      }
+    ]
+  },
+  "InvasionLocationsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AggressiveAggressiveLocations",
+        "Type": "TArray<struct Vector2D>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WaitForShipToBeDefeatedStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x1e0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x160",
+    "Attributes": [
+      {
+        "Name": "WinningShip",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "DefeatedShip",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "WinningCrewId",
+        "Type": "struct QuestVariableGuid",
+        "Size": "0x30",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "DefeatedCrewId",
+        "Type": "struct QuestVariableGuid",
+        "Size": "0x30",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "WinningFaction",
+        "Type": "struct QuestVariableName",
+        "Size": "0x30",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "DefeatedFaction",
+        "Type": "struct QuestVariableName",
+        "Size": "0x30",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "TimeoutTimerIntervalInMinutes",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1a0"
+      },
+      {
+        "Name": "FailMessage",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x1a8"
       }
     ]
   },

@@ -1,21 +1,4 @@
 {
-  "OnEndWaterSlideActionStateEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "WaterSlideEnd",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "WaterSlideIsEndOneShot",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "WaterSlideActionStateParams": {
     "ClassSize": "0x24",
     "Attributes": [
@@ -39,14 +22,159 @@
       }
     ]
   },
-  "ZipLineActionStateParams": {
-    "ClassSize": "0x1c",
+  "ZiplineActionStateConstructionInfo": {
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "LookAtOffsetParams",
-        "Type": "struct LookAtOffsetParams",
-        "Size": "0x1c",
+        "Name": "SceneComponent",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "MovementDirection",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "InitialSwingDirection",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x39"
+      },
+      {
+        "Name": "ZiplineStartSmoothedTime",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "OnStartWaterSlideActionStateEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "WaterSlideStart",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "WaterSlideVfxOverride",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "WaterSlideParams": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ForwardSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IncreaseForwardSpeedMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "DecreaseForwardSpeedMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "VeeringSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "LeftVeeringDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "RightVeeringDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "StatToFireForRouteChange",
+        "Type": "struct PlayerStat",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "PlayerSplashingVFXOverride",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "RideTransitionActionStateParams": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "Duration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "OnPlayerChangedWaterSlideRouteActionStateEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "WaterSlideChangeForkOneShot",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "OnStartZiplineActionStateEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ZiplineStart",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AttachToZiplineAdditiveOneShot",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ZiplineLoopStart",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ZiplineWindVFX",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "ZiplineTrailVFX",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },
@@ -115,88 +243,31 @@
       }
     ]
   },
-  "OnStartZiplineActionStateEvent": {
-    "ClassSize": "0x28",
+  "ZipLineActionStateParams": {
+    "ClassSize": "0x1c",
     "Attributes": [
       {
-        "Name": "ZiplineStart",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
+        "Name": "LookAtOffsetParams",
+        "Type": "struct LookAtOffsetParams",
+        "Size": "0x1c",
         "Offset": "0x0"
-      },
+      }
+    ]
+  },
+  "OnEndWaterSlideActionStateEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
       {
-        "Name": "AttachToZiplineAdditiveOneShot",
+        "Name": "WaterSlideEnd",
         "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
-        "Name": "ZiplineLoopStart",
+        "Name": "WaterSlideIsEndOneShot",
         "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x10"
-      },
-      {
-        "Name": "ZiplineWindVFX",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "ZiplineTrailVFX",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "RideTransitionActionStateParams": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "Duration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "OnPlayerChangedWaterSlideRouteActionStateEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "WaterSlideChangeForkOneShot",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "WaterSlideActionStateConstructionInfo": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "SceneComponent",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "OnStartWaterSlideActionStateEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "WaterSlideStart",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WaterSlideVfxOverride",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
@@ -223,35 +294,6 @@
       }
     ]
   },
-  "ZiplineActionStateConstructionInfo": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "SceneComponent",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "MovementDirection",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "InitialSwingDirection",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x39"
-      },
-      {
-        "Name": "ZiplineStartSmoothedTime",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x40"
-      }
-    ]
-  },
   "OnEndZiplineActionStateEvent": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -275,56 +317,14 @@
       }
     ]
   },
-  "WaterSlideParams": {
-    "ClassSize": "0x28",
+  "WaterSlideActionStateConstructionInfo": {
+    "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "ForwardSpeed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IncreaseForwardSpeedMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "DecreaseForwardSpeedMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "VeeringSpeed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "LeftVeeringDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "RightVeeringDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "StatToFireForRouteChange",
-        "Type": "struct PlayerStat",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "PlayerSplashingVFXOverride",
-        "Type": "class ParticleSystem*",
+        "Name": "SceneComponent",
+        "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x20"
+        "Offset": "0x30"
       }
     ]
   },

@@ -1,4 +1,15 @@
 {
+  "CustomPlayerNoteList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Notes",
+        "Type": "TArray<struct NotesRemoteServiceNoteDetailModel>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "DestroyMysteriousNoteGameServerRequestModel": {
     "ClassSize": "0x14",
     "Attributes": [
@@ -13,17 +24,6 @@
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
-      }
-    ]
-  },
-  "CustomPlayerNoteList": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Notes",
-        "Type": "TArray<struct NotesRemoteServiceNoteDetailModel>",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },

@@ -13,6 +13,34 @@
       }
     ]
   },
+  "DeliverableRedirectionContextHandlerBase": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DestinationDescriptor",
+        "Type": "class DeliverableRedirectionDestinationDescriptorBase*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "DeliverableComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DeliveryRequirementsAsset",
+        "Type": "class DeliverableRequirementsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      }
+    ]
+  },
   "DeliverableRequirementsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x50",
@@ -57,34 +85,6 @@
         "Name": "Contexts",
         "Type": "TArray<class DeliverableRedirectionContextBase*>",
         "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "DeliverableComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "DeliveryRequirementsAsset",
-        "Type": "class DeliverableRequirementsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0xd8"
-      }
-    ]
-  },
-  "DeliverableRedirectionContextHandlerBase": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DestinationDescriptor",
-        "Type": "class DeliverableRedirectionDestinationDescriptorBase*",
-        "Size": "0x8",
         "Offset": "0x28"
       }
     ]

@@ -1,66 +1,4 @@
 {
-  "EngineServiceTerminate": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "UserName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EngineServiceAuthGrant": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "UserName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UserToGrant",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EngineServiceAuthDeny": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "UserName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UserToDeny",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EngineServiceNotification": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Text",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TimeSeconds",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "EngineServicePong": {
     "ClassSize": "0x50",
     "Attributes": [
@@ -105,6 +43,68 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x48"
+      }
+    ]
+  },
+  "EngineServiceAuthDeny": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "UserName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UserToDeny",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EngineServiceNotification": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Text",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TimeSeconds",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EngineServiceAuthGrant": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "UserName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UserToGrant",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EngineServiceTerminate": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "UserName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },

@@ -11,6 +11,14 @@ public:
 };
 
 
+// Size 0x10
+struct ServiceMessagingSubscribedEvent
+{
+public:
+	struct FString                                               RoutingKey;                                        // 0x0(0x10)
+};
+
+
 // Size 0x18
 struct TestStructWithNetId
 {
@@ -21,14 +29,6 @@ public:
 
 // Size 0x10
 struct ServiceMessagingUnsubscribedEvent
-{
-public:
-	struct FString                                               RoutingKey;                                        // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct ServiceMessagingSubscribedEvent
 {
 public:
 	struct FString                                               RoutingKey;                                        // 0x0(0x10)

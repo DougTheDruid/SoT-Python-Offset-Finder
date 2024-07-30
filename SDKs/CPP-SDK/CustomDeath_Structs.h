@@ -4,37 +4,27 @@
 // https://github.com/DougTheDruid
 
 // Size 0x4
-struct GameModeDeathPenaltyRespawnTimerGameServerRequestModel
+struct KillPlayerGameServerRequestModel
 {
 public:
-	float                                                        SpawnTimer;                                        // 0x0(0x4)
+	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
 };
 
 
 // Size 0x8
-struct SetShouldSkipFerryOfTheDamnedGameServerRequestModel
+struct CustomPlayerStartConfigResponseGameServerRequestModel
 {
 public:
-	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-	bool                                                         bShouldSkipFerryOfTheDamned;                       // 0x4(0x1)
+	bool                                                         Success;                                           // 0x0(0x1)
+	int                                                          PlayerStartId;                                     // 0x4(0x4)
 };
 
 
-// Size 0x8
-struct SetShouldUseRevivalFlowGameServerRequestModel
+// Size 0x4
+struct ResetCustomConfigForPlayerGameServerRequestModel
 {
 public:
 	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-	bool                                                         bShouldUseRevivalFlow;                             // 0x4(0x1)
-};
-
-
-// Size 0x8
-struct ForcePlayerRespawnGameServerRequestModel
-{
-public:
-	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-	bool                                                         bRespawnAsGhost;                                   // 0x4(0x1)
 };
 
 
@@ -48,11 +38,20 @@ public:
 };
 
 
-// Size 0x10
-struct KillCrewGameServerRequestModel
+// Size 0x8
+struct ForcePlayerRespawnGameServerRequestModel
 {
 public:
-	struct Guid                                                  CrewNetGUID;                                       // 0x0(0x10)
+	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
+	bool                                                         bRespawnAsGhost;                                   // 0x4(0x1)
+};
+
+
+// Size 0x4
+struct GameModeDeathPenaltyRespawnTimerGameServerRequestModel
+{
+public:
+	float                                                        SpawnTimer;                                        // 0x0(0x4)
 };
 
 
@@ -65,6 +64,23 @@ public:
 };
 
 
+// Size 0x8
+struct SetShouldUseRevivalFlowGameServerRequestModel
+{
+public:
+	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
+	bool                                                         bShouldUseRevivalFlow;                             // 0x4(0x1)
+};
+
+
+// Size 0x10
+struct KillCrewGameServerRequestModel
+{
+public:
+	struct Guid                                                  CrewNetGUID;                                       // 0x0(0x10)
+};
+
+
 // Size 0x18
 struct DestroyCustomPlayerStartGameServerRequestModel
 {
@@ -74,28 +90,12 @@ public:
 };
 
 
-// Size 0x4
-struct KillPlayerGameServerRequestModel
-{
-public:
-	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-};
-
-
-// Size 0x4
-struct ResetCustomConfigForPlayerGameServerRequestModel
-{
-public:
-	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
-};
-
-
 // Size 0x8
-struct CustomPlayerStartConfigResponseGameServerRequestModel
+struct SetShouldSkipFerryOfTheDamnedGameServerRequestModel
 {
 public:
-	bool                                                         Success;                                           // 0x0(0x1)
-	int                                                          PlayerStartId;                                     // 0x4(0x4)
+	int                                                          PlayerNetGUID;                                     // 0x0(0x4)
+	bool                                                         bShouldSkipFerryOfTheDamned;                       // 0x4(0x1)
 };
 
 

@@ -1,41 +1,66 @@
 {
-  "StructSerializerObjectTestStruct": {
-    "ClassSize": "0x10",
+  "StructSerializerNumericTestStruct": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "Class",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ObjectPtr",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "StructSerializerBooleanTestStruct": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "BoolFalse",
-        "Type": "bool",
+        "Name": "Int8",
+        "Type": "int8",
         "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "BoolTrue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
+        "Name": "Int16",
+        "Type": "int16",
+        "Size": "0x2",
+        "Offset": "0x2"
       },
       {
-        "Name": "Bitfield",
-        "Type": "uint32",
+        "Name": "Int32",
+        "Type": "int",
         "Size": "0x4",
         "Offset": "0x4"
+      },
+      {
+        "Name": "Int64",
+        "Type": "int64",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "UInt8",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "UInt16",
+        "Type": "uint16",
+        "Size": "0x2",
+        "Offset": "0x12"
+      },
+      {
+        "Name": "UInt32",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "UInt64",
+        "Type": "uint64",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Float",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Double",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x28"
       }
     ]
   },
@@ -109,68 +134,43 @@
       }
     ]
   },
-  "StructSerializerNumericTestStruct": {
-    "ClassSize": "0x30",
+  "StructSerializerObjectTestStruct": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Int8",
-        "Type": "int8",
+        "Name": "Class",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ObjectPtr",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "StructSerializerBooleanTestStruct": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "BoolFalse",
+        "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "Int16",
-        "Type": "int16",
-        "Size": "0x2",
-        "Offset": "0x2"
-      },
-      {
-        "Name": "Int32",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Int64",
-        "Type": "int64",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "UInt8",
-        "Type": "byte",
+        "Name": "BoolTrue",
+        "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x10"
+        "Offset": "0x1"
       },
       {
-        "Name": "UInt16",
-        "Type": "uint16",
-        "Size": "0x2",
-        "Offset": "0x12"
-      },
-      {
-        "Name": "UInt32",
+        "Name": "Bitfield",
         "Type": "uint32",
         "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "UInt64",
-        "Type": "uint64",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Float",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "Double",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x28"
+        "Offset": "0x4"
       }
     ]
   },

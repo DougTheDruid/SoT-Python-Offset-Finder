@@ -4,38 +4,10 @@
 // https://github.com/DougTheDruid
 
 // Size 0x10
-struct RequestTrinketEntitlementsUIEvent
+struct RequestUnequipTrinketsOfClassUIEvent
 {
 public:
-	struct FString                                               TrinketCategory;                                   // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct RequestTrinketLoadoutUIEvent
-{
-public:
-	TArray<String>                                               Categories;                                        // 0x0(0x10)
-};
-
-
-// Size 0x30
-struct RemoveInteractingPlayerFromTrinketMountpointRpc
-{
-public:
-	struct NetSubObjectPtr                                       TrinketMountpointManager;                          // 0x18(0x14)
-	int                                                          MountpointIndex;                                   // 0x2c(0x4)
-};
-
-
-// Size 0x28
-struct ChestEntitlementTrinketItem
-{
-public:
-	struct FString                                               ItemDesc;                                          // 0x0(0x10)
-	int                                                          PlacedValue;                                       // 0x10(0x4)
-	int                                                          PlacedThreshold;                                   // 0x14(0x4)
-	struct FString                                               OwnerGamerTag;                                     // 0x18(0x10)
+	struct FString                                               TrinketDesc;                                       // 0x0(0x10)
 };
 
 
@@ -50,10 +22,10 @@ public:
 
 
 // Size 0x10
-struct RequestUnequipTrinketsOfClassUIEvent
+struct RequestTrinketEntitlementsUIEvent
 {
 public:
-	struct FString                                               TrinketDesc;                                       // 0x0(0x10)
+	struct FString                                               TrinketCategory;                                   // 0x0(0x10)
 };
 
 
@@ -63,6 +35,34 @@ struct TrinketLoadoutEntry
 public:
 	int                                                          TrinketEntitlementIndex;                           // 0x0(0x4)
 	int                                                          TrinketOwnerPlayerXUIDIndex;                       // 0x4(0x4)
+};
+
+
+// Size 0x10
+struct RequestTrinketLoadoutUIEvent
+{
+public:
+	TArray<String>                                               Categories;                                        // 0x0(0x10)
+};
+
+
+// Size 0x28
+struct ChestEntitlementTrinketItem
+{
+public:
+	struct FString                                               ItemDesc;                                          // 0x0(0x10)
+	int                                                          PlacedValue;                                       // 0x10(0x4)
+	int                                                          PlacedThreshold;                                   // 0x14(0x4)
+	struct FString                                               OwnerGamerTag;                                     // 0x18(0x10)
+};
+
+
+// Size 0x30
+struct RemoveInteractingPlayerFromTrinketMountpointRpc
+{
+public:
+	struct NetSubObjectPtr                                       TrinketMountpointManager;                          // 0x18(0x14)
+	int                                                          MountpointIndex;                                   // 0x2c(0x4)
 };
 
 

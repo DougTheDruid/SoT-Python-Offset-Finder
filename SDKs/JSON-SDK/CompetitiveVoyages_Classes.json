@@ -1,68 +1,4 @@
 {
-  "CompetitiveVoyageVoteValidatorBase": {
-    "Super": "VoteValidatorInlineBase",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "TargetCompanies",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "EdgeOfWorldWarningWeightForFactionLock",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "Consumer",
-        "Type": "class CompetitiveVoyageVoteConsumerBase*",
-        "Size": "0x8",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "CurrentCompany",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0xa8"
-      },
-      {
-        "Name": "OwningActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0xb0"
-      }
-    ]
-  },
-  "CompetitiveVoyagesService": {
-    "Super": "Actor",
-    "FullSize": "0x8b0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x4e8",
-    "Attributes": [
-      {
-        "Name": "MainVoyageCrews",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x4d0"
-      },
-      {
-        "Name": "ServiceParams",
-        "Type": "class CompetitiveVoyagesServiceParams*",
-        "Size": "0x8",
-        "Offset": "0x4e0"
-      },
-      {
-        "Name": "VoyageEventItems",
-        "Type": "TArray<struct CompetitiveVoyageEventItem>",
-        "Size": "0x10",
-        "Offset": "0x788"
-      }
-    ]
-  },
   "TaleQuestCompetitiveVoyagesService": {
     "Super": "TaleQuestService",
     "FullSize": "0x258",
@@ -74,38 +10,6 @@
         "Type": "TArray<struct PhasedMarkerItem>",
         "Size": "0x10",
         "Offset": "0xe8"
-      }
-    ]
-  },
-  "CompetitiveVoyageItemRelocationVolume": {
-    "Super": "Actor",
-    "FullSize": "0x650",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x288",
-    "Attributes": [
-      {
-        "Name": "SceneComponentRoot",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "TriggerVolume",
-        "Type": "class BoxComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "RelocationPositions",
-        "Type": "TArray<struct Vector>",
-        "Size": "0x10",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "RelocatesIntoWater",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3f0"
       }
     ]
   },
@@ -156,20 +60,6 @@
         "Type": "struct PlayerStat",
         "Size": "0x4",
         "Offset": "0x158"
-      }
-    ]
-  },
-  "SetCrewOptInNPCDataStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Actor",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0x80"
       }
     ]
   },
@@ -225,17 +115,113 @@
       }
     ]
   },
-  "StopCompetitiveVoyageVoteValidator": {
-    "Super": "CompetitiveVoyageVoteValidatorBase",
-    "FullSize": "0xc0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x8",
+  "SetCrewOptInNPCDataStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "IsOptInNote",
+        "Name": "Actor",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "CompetitiveVoyagesService": {
+    "Super": "Actor",
+    "FullSize": "0x8b0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x4e8",
+    "Attributes": [
+      {
+        "Name": "MainVoyageCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x4d0"
+      },
+      {
+        "Name": "ServiceParams",
+        "Type": "class CompetitiveVoyagesServiceParams*",
+        "Size": "0x8",
+        "Offset": "0x4e0"
+      },
+      {
+        "Name": "VoyageEventItems",
+        "Type": "TArray<struct CompetitiveVoyageEventItem>",
+        "Size": "0x10",
+        "Offset": "0x788"
+      }
+    ]
+  },
+  "CompetitiveVoyageItemRelocationVolume": {
+    "Super": "Actor",
+    "FullSize": "0x650",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x288",
+    "Attributes": [
+      {
+        "Name": "SceneComponentRoot",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "TriggerVolume",
+        "Type": "class BoxComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "RelocationPositions",
+        "Type": "TArray<struct Vector>",
+        "Size": "0x10",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "RelocatesIntoWater",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xb8"
+        "Offset": "0x3f0"
+      }
+    ]
+  },
+  "CompetitiveVoyageVoteValidatorBase": {
+    "Super": "VoteValidatorInlineBase",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "TargetCompanies",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "EdgeOfWorldWarningWeightForFactionLock",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "Consumer",
+        "Type": "class CompetitiveVoyageVoteConsumerBase*",
+        "Size": "0x8",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "CurrentCompany",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "OwningActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0xb0"
       }
     ]
   },
@@ -268,6 +254,20 @@
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x170"
+      }
+    ]
+  },
+  "StopCompetitiveVoyageVoteValidator": {
+    "Super": "CompetitiveVoyageVoteValidatorBase",
+    "FullSize": "0xc0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "IsOptInNote",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xb8"
       }
     ]
   },

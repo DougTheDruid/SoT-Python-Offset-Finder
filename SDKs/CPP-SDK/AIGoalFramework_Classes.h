@@ -15,6 +15,14 @@ public:
 };
 
 
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class AIGoalAssetList: public DataAsset
+{
+public:
+	TArray<class AIGoal*>                                        GoalTemplates;                                     // 0x28(0x10)
+};
+
+
 // Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class AIGoal: public Object
 {
@@ -32,14 +40,6 @@ public:
 	class AIGoalAssetList*                                       AIGoalAssetList;                                   // 0xe0(0x8)
 	class AIGoal*                                                ActiveGoal;                                        // 0xe8(0x8)
 	TArray<class AIGoalAssetList*>                               AdditionalGoalLists;                               // 0xf0(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AIGoalAssetList: public DataAsset
-{
-public:
-	TArray<class AIGoal*>                                        GoalTemplates;                                     // 0x28(0x10)
 };
 
 

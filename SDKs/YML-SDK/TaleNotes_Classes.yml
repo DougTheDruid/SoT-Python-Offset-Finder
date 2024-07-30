@@ -3,74 +3,74 @@
 TaleNote:
   Attributes:
   - Name: CanvasWidth
-    Offset: '0x820'
+    Offset: '0x7f8'
     Size: '0x4'
     Type: int
   - Name: CanvasHeight
-    Offset: '0x824'
+    Offset: '0x7fc'
     Size: '0x4'
     Type: int
   - Name: FontScale
-    Offset: '0x828'
+    Offset: '0x800'
     Size: '0x4'
     Type: float
   - Name: Font
-    Offset: '0x830'
+    Offset: '0x808'
     Size: '0x8'
     Type: class Font*
   - Name: Image
-    Offset: '0x838'
+    Offset: '0x810'
     Size: '0x38'
     Type: struct TreasureMapWidgetStreamedTexture
   - Name: TitleWidgetText
-    Offset: '0x870'
+    Offset: '0x848'
     Size: '0x3c'
     Type: struct TreasureMapWidgetText
   - Name: BodyWidgetText
-    Offset: '0x8ac'
+    Offset: '0x884'
     Size: '0x3c'
     Type: struct TreasureMapWidgetText
   - Name: AdditionalBodyWidgetText
-    Offset: '0x8e8'
+    Offset: '0x8c0'
     Size: '0x10'
     Type: TArray<struct TreasureMapWidgetText>
   - Name: NoteWidth
-    Offset: '0x8f8'
+    Offset: '0x8d0'
     Size: '0x4'
     Type: float
   - Name: NoteLineSpacingMultiplier
-    Offset: '0x8fc'
+    Offset: '0x8d4'
     Size: '0x4'
     Type: float
   - Name: Title
-    Offset: '0x900'
+    Offset: '0x8d8'
     Size: '0x38'
     Type: struct FText
   - Name: Body
-    Offset: '0x938'
+    Offset: '0x910'
     Size: '0x38'
     Type: struct FText
   - Name: AdditionalBody
-    Offset: '0x970'
+    Offset: '0x948'
     Size: '0x10'
     Type: TArray<struct Text>
   - Name: RenderTarget
-    Offset: '0x980'
+    Offset: '0x958'
     Size: '0x8'
     Type: class MaybeCompressedCanvasRenderTarget2D*
   - Name: UsableWieldableComponent
-    Offset: '0x988'
+    Offset: '0x960'
     Size: '0x8'
     Type: class UsableWieldableComponent*
   - Name: InventoryItemComponent
-    Offset: '0x990'
+    Offset: '0x968'
     Size: '0x8'
     Type: class InventoryItemComponent*
   - Name: ZoomInOnWieldableComponent
-    Offset: '0x998'
+    Offset: '0x970'
     Size: '0x8'
     Type: class ZoomInOnWieldableItemComponent*
-  ClassSize: '0x270'
-  FullSize: '0xa80'
-  InheritedSize: '0x810'
+  ClassSize: '0x260'
+  FullSize: '0xa50'
+  InheritedSize: '0x7f0'
   Super: SkeletalMeshWieldableItem

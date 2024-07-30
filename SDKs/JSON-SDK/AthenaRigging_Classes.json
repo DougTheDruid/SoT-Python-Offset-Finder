@@ -1,27 +1,15 @@
 {
-  "InstancedRopeComponent": {
-    "Super": "PrimitiveComponent",
-    "FullSize": "0x690",
-    "InheritedSize": "0x5d0",
-    "ClassSize": "0xc0",
+  "MaterialExpressionRopeParameter": {
+    "Super": "MaterialExpression",
+    "FullSize": "0x78",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "StaticMesh",
-        "Type": "class StaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x5c8"
-      },
-      {
-        "Name": "Ropes",
-        "Type": "TArray<struct InstancedRopeParams>",
-        "Size": "0x10",
-        "Offset": "0x5d0"
-      },
-      {
-        "Name": "ShadowLOD",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5e0"
+        "Name": "RopeParameterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x70"
       }
     ]
   },
@@ -48,6 +36,32 @@
         "Type": "class RiggingSystem*",
         "Size": "0x8",
         "Offset": "0x310"
+      }
+    ]
+  },
+  "InstancedRopeComponent": {
+    "Super": "PrimitiveComponent",
+    "FullSize": "0x690",
+    "InheritedSize": "0x5d0",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "StaticMesh",
+        "Type": "class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "Ropes",
+        "Type": "TArray<struct InstancedRopeParams>",
+        "Size": "0x10",
+        "Offset": "0x5d0"
+      },
+      {
+        "Name": "ShadowLOD",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5e0"
       }
     ]
   },
@@ -104,20 +118,6 @@
         "Type": "TArray<float>",
         "Size": "0x10",
         "Offset": "0x480"
-      }
-    ]
-  },
-  "MaterialExpressionRopeParameter": {
-    "Super": "MaterialExpression",
-    "FullSize": "0x78",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "RopeParameterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x70"
       }
     ]
   },

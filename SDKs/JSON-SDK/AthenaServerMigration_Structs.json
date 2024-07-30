@@ -1,21 +1,4 @@
 {
-  "IncomingMigrationPreventionZone": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "ServerMigrationInstanceEventBase": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -33,14 +16,20 @@
       }
     ]
   },
-  "AthenaServerMigrationClientContext": {
-    "ClassSize": "0x10",
+  "IncomingMigrationPreventionZone": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "StampId",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "Location",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
       }
     ]
   },
@@ -61,25 +50,8 @@
       }
     ]
   },
-  "ServerMigrationRefusedEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "MigrationId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "ServerMigrationRequestEvent": {
-    "ClassSize": "0x50",
+    "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "MigrationId",
@@ -110,6 +82,40 @@
         "Type": "TArray<char>",
         "Size": "0x10",
         "Offset": "0x40"
+      },
+      {
+        "Name": "RequestedGameEvents",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "AthenaServerMigrationClientContext": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StampId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ServerMigrationRefusedEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MigrationId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

@@ -10,32 +10,36 @@ DrawDebugService:
     Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<struct DrawDebugItemSphere>
-  - Name: BoxesReplicated
+  - Name: CirclesReplicated
     Offset: '0x3f0'
+    Size: '0x10'
+    Type: TArray<struct DrawDebugItemCircle>
+  - Name: BoxesReplicated
+    Offset: '0x400'
     Size: '0x10'
     Type: TArray<struct DrawDebugItemBox>
   - Name: CapsulesReplicated
-    Offset: '0x400'
+    Offset: '0x410'
     Size: '0x10'
     Type: TArray<struct DrawDebugItemCapsule>
   - Name: LinesReplicated
-    Offset: '0x410'
+    Offset: '0x420'
     Size: '0x10'
     Type: TArray<struct DrawDebugItemLine>
   - Name: SectorsReplicated
-    Offset: '0x420'
+    Offset: '0x430'
     Size: '0x10'
     Type: TArray<struct DrawDebugItemSector>
   - Name: StringsReplicated
-    Offset: '0x430'
+    Offset: '0x440'
     Size: '0x10'
     Type: TArray<struct DrawDebugItemString>
   - Name: IsDrawDebugActive
-    Offset: '0x440'
+    Offset: '0x450'
     Size: '0x1'
     Type: bool
-  ClassSize: '0xf8'
-  FullSize: '0x4c0'
+  ClassSize: '0x118'
+  FullSize: '0x4e0'
   InheritedSize: '0x3c8'
   Super: Actor
 ShippingDebugActorSphereCollection:

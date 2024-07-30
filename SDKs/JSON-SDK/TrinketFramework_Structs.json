@@ -1,4 +1,38 @@
 {
+  "RequestUnequipTrinketsOfClassUIEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "TrinketDesc",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TrinketLoadoutModelEntry": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EntitlementId",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LocationIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "UserId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "RequestTrinketEntitlementsUIEvent": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -10,6 +44,23 @@
       }
     ]
   },
+  "TrinketLoadoutEntry": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TrinketEntitlementIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TrinketOwnerPlayerXUIDIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "RequestTrinketLoadoutUIEvent": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -18,23 +69,6 @@
         "Type": "TArray<String>",
         "Size": "0x10",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "RemoveInteractingPlayerFromTrinketMountpointRpc": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "TrinketMountpointManager",
-        "Type": "struct NetSubObjectPtr",
-        "Size": "0x14",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "MountpointIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x2c"
       }
     ]
   },
@@ -67,54 +101,20 @@
       }
     ]
   },
-  "TrinketLoadoutModelEntry": {
-    "ClassSize": "0x20",
+  "RemoveInteractingPlayerFromTrinketMountpointRpc": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "EntitlementId",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
+        "Name": "TrinketMountpointManager",
+        "Type": "struct NetSubObjectPtr",
+        "Size": "0x14",
+        "Offset": "0x18"
       },
       {
-        "Name": "LocationIndex",
+        "Name": "MountpointIndex",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "UserId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "RequestUnequipTrinketsOfClassUIEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "TrinketDesc",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TrinketLoadoutEntry": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TrinketEntitlementIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TrinketOwnerPlayerXUIDIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
+        "Offset": "0x2c"
       }
     ]
   },

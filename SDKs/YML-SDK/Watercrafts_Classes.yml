@@ -503,16 +503,16 @@ ScrapeableDamageDataAsset:
 StorageSeat:
   Attributes:
   - Name: StorageInteractionInput
-    Offset: '0x688'
+    Offset: '0x680'
     Size: '0x8'
     Type: class UClass*
   - Name: StorageContainerComponent
-    Offset: '0x690'
+    Offset: '0x688'
     Size: '0x8'
     Type: class StorageContainerComponent*
   ClassSize: '0x30'
-  FullSize: '0x6b8'
-  InheritedSize: '0x688'
+  FullSize: '0x6b0'
+  InheritedSize: '0x680'
   Super: Seat
 TaleQuestSinkWatercraftStepDesc:
   Attributes:

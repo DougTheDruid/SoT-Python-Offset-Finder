@@ -6,13 +6,11 @@
 #include "GlobalDigSpots_Structs.h"
 
 
-// Size 0x30 (Full Size[0x3f8] - InheritedSize[0x3c8]
-class GlobalDigSpotService: public Actor
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class GlobalDigSpotDefinitionList: public DataAsset
 {
 public:
-	class VoyageDescDataAsset*                                   DefaultVoyageDesc;                                 // 0x3d0(0x8)
-	class PopUpMessageDesc*                                      Notification;                                      // 0x3d8(0x8)
-	class GlobalDigSpotDefinitionList*                           DigSpotDefinitions;                                // 0x3e0(0x8)
+	TArray<struct GlobalDigSpotDefinition>                       DigSpotDefinitions;                                // 0x28(0x10)
 };
 
 
@@ -24,11 +22,13 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class GlobalDigSpotDefinitionList: public DataAsset
+// Size 0x30 (Full Size[0x3f8] - InheritedSize[0x3c8]
+class GlobalDigSpotService: public Actor
 {
 public:
-	TArray<struct GlobalDigSpotDefinition>                       DigSpotDefinitions;                                // 0x28(0x10)
+	class VoyageDescDataAsset*                                   DefaultVoyageDesc;                                 // 0x3d0(0x8)
+	class PopUpMessageDesc*                                      Notification;                                      // 0x3d8(0x8)
+	class GlobalDigSpotDefinitionList*                           DigSpotDefinitions;                                // 0x3e0(0x8)
 };
 
 

@@ -1,4 +1,15 @@
 {
+  "EventAttachedRetractableToItemProxy": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Item",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "RetractorOrientationAdjustmentFlags": {
     "ClassSize": "0x3",
     "Attributes": [
@@ -29,17 +40,6 @@
         "Name": "ItemLocation",
         "Type": "struct Vector",
         "Size": "0xc",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventAttachedRetractableToItemProxy": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Item",
-        "Type": "class Actor*",
-        "Size": "0x8",
         "Offset": "0x0"
       }
     ]

@@ -1,15 +1,21 @@
 {
-  "EnemyAIOnShipServiceDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
+  "EnemyAIOnShipService": {
+    "Super": "Actor",
+    "FullSize": "0x470",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "OceanCrawlersOnShipEncounterParams",
-        "Type": "class EnemyAIOnShipEncounterDesc*",
+        "Name": "Params",
+        "Type": "class EnemyAIOnShipServiceDataAsset*",
         "Size": "0x8",
-        "Offset": "0x28"
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "ReplicatedEncounters",
+        "Type": "TArray<struct EnemyAIOnShipActiveEncounters>",
+        "Size": "0x10",
+        "Offset": "0x3f0"
       }
     ]
   },
@@ -51,23 +57,17 @@
       }
     ]
   },
-  "EnemyAIOnShipService": {
-    "Super": "Actor",
-    "FullSize": "0x470",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0xa8",
+  "EnemyAIOnShipServiceDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Params",
-        "Type": "class EnemyAIOnShipServiceDataAsset*",
+        "Name": "OceanCrawlersOnShipEncounterParams",
+        "Type": "class EnemyAIOnShipEncounterDesc*",
         "Size": "0x8",
-        "Offset": "0x3e8"
-      },
-      {
-        "Name": "ReplicatedEncounters",
-        "Type": "TArray<struct EnemyAIOnShipActiveEncounters>",
-        "Size": "0x10",
-        "Offset": "0x3f0"
+        "Offset": "0x28"
       }
     ]
   },

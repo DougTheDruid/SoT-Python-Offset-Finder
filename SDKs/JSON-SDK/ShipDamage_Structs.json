@@ -1,27 +1,4 @@
 {
-  "HullDamageHit": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "HitPosition",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "HitNormal",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "HasDecal",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x18"
-      }
-    ]
-  },
   "EventShipDamageApplied": {
     "ClassSize": "0x70",
     "Attributes": [
@@ -47,6 +24,46 @@
         "Name": "ImpactDamageEvent",
         "Type": "struct ImpactDamageEvent",
         "Size": "0x58",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "EventShipDamaged": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "Ship",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ImpactDamageEvent",
+        "Type": "struct ImpactDamageEvent",
+        "Size": "0x58",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "HullDamageHit": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "HitPosition",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HitNormal",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "HasDecal",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x18"
       }
     ]
@@ -140,6 +157,34 @@
       }
     ]
   },
+  "AppliedDamageToShipEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Ship",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventRestoreShip": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "OnlyRepaired",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "DistanceAndLevelOfDamage": {
     "ClassSize": "0x14",
     "Attributes": [
@@ -175,6 +220,17 @@
       }
     ]
   },
+  "SendShipRestoredRpc": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "DamageZoneDamageLevelChanged": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -189,85 +245,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "EventShipDamaged": {
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "Ship",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ImpactDamageEvent",
-        "Type": "struct ImpactDamageEvent",
-        "Size": "0x58",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "SendShipRestoredRpc": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "AppliedDamageToShipEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ShipType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Ship",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EventRestoreShip": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "OnlyRepaired",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ShipPartLevelsOfDamage": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "ActorClass",
-        "Type": "assetclass",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DamagePerDistance",
-        "Type": "TArray<struct DistanceAndLevelOfDamage>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "FeatureName",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x30"
       }
     ]
   },
@@ -306,14 +283,26 @@
       }
     ]
   },
-  "HullDamagePersistenceModel": {
-    "ClassSize": "0x10",
+  "ShipPartLevelsOfDamage": {
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "DamageZones",
-        "Type": "TArray<struct HullDamageZoneInfo>",
-        "Size": "0x10",
+        "Name": "ActorClass",
+        "Type": "assetclass",
+        "Size": "0x20",
         "Offset": "0x0"
+      },
+      {
+        "Name": "DamagePerDistance",
+        "Type": "TArray<struct DistanceAndLevelOfDamage>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "FeatureName",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x30"
       }
     ]
   },
@@ -323,6 +312,17 @@
       {
         "Name": "DamageParams",
         "Type": "TArray<struct ShipPartLevelsOfDamage>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "HullDamagePersistenceModel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DamageZones",
+        "Type": "TArray<struct HullDamageZoneInfo>",
         "Size": "0x10",
         "Offset": "0x0"
       }

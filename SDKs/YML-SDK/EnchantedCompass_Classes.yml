@@ -41,70 +41,70 @@ EnchantedCompassProximityAnnouncementComponent:
 MultiTargetEnchantedCompass:
   Attributes:
   - Name: Locations
-    Offset: '0x908'
+    Offset: '0x8e0'
     Size: '0x10'
     Type: TArray<struct Vector>
   - Name: LocationIds
-    Offset: '0x918'
+    Offset: '0x8f0'
     Size: '0x10'
     Type: TArray<struct Guid>
   - Name: InventoryItem
-    Offset: '0x928'
+    Offset: '0x900'
     Size: '0x8'
     Type: class InventoryItemComponent*
   - Name: ProximityAnnouncementComponent
-    Offset: '0x930'
+    Offset: '0x908'
     Size: '0x8'
     Type: class EnchantedCompassProximityAnnouncementComponent*
   ClassSize: '0x30'
-  FullSize: '0x940'
-  InheritedSize: '0x910'
+  FullSize: '0x910'
+  InheritedSize: '0x8e0'
   Super: Compass
 RotatingCompass:
   Attributes:
   - Name: PickupableComponent
-    Offset: '0x9f8'
+    Offset: '0x9d0'
     Size: '0x8'
     Type: class PickupableComponent*
   - Name: PoseableStashedMeshComponent
-    Offset: '0xa00'
+    Offset: '0x9d8'
     Size: '0x8'
     Type: class PoseableMeshMemoryConstraintComponent*
   - Name: WieldableInteractableComponent
-    Offset: '0xa08'
+    Offset: '0x9e0'
     Size: '0x8'
     Type: class WieldableInteractableComponent*
   - Name: SplinePathActor
-    Offset: '0xa10'
+    Offset: '0x9e8'
     Size: '0x8'
     Type: class Actor*
   - Name: RotationSequenceCurve
-    Offset: '0xa18'
+    Offset: '0x9f0'
     Size: '0x8'
     Type: class CurveFloat*
   - Name: StartRotationSequenceCurve
-    Offset: '0xa20'
+    Offset: '0x9f8'
     Size: '0x1'
     Type: bool
   - Name: SplineDistanceOffset
-    Offset: '0xa24'
+    Offset: '0x9fc'
     Size: '0x4'
     Type: float
   - Name: TargetYawAngleBeforeRotationSequence
-    Offset: '0xa28'
+    Offset: '0xa00'
     Size: '0x4'
     Type: float
   - Name: AudioParams
-    Offset: '0xa30'
+    Offset: '0xa08'
     Size: '0x48'
     Type: struct RotatingCompassAudioParams
   - Name: MaxSpeedToTriggerOneShotSfx
-    Offset: '0xa78'
+    Offset: '0xa50'
     Size: '0x4'
     Type: float
-  ClassSize: '0x90'
-  FullSize: '0xa90'
-  InheritedSize: '0xa00'
+  ClassSize: '0xa0'
+  FullSize: '0xa70'
+  InheritedSize: '0x9d0'
   Super: EnchantedCompass
 TaleQuestMultiTargetCompassAddTrackedLocationStep:
   Attributes:

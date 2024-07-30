@@ -2021,252 +2021,252 @@ AthenaAIAmmoDataAsset:
 AthenaAICharacterController:
   Attributes:
   - Name: ItemParamsDataAsset
-    Offset: '0x978'
+    Offset: '0x9b0'
     Size: '0x8'
     Type: class AthenaAIItemParamsDataAsset*
   - Name: FallbackLoadoutIfAllEngageItemsDropped
-    Offset: '0x980'
+    Offset: '0x9b8'
     Size: '0x8'
     Type: class LoadoutAsset*
   - Name: ControlRotationInterpSpeed
-    Offset: '0x988'
+    Offset: '0x9c0'
     Size: '0x4'
     Type: float
   - Name: ControlRotationUseConstantInterp
-    Offset: '0x98c'
+    Offset: '0x9c4'
     Size: '0x1'
     Type: bool
   - Name: FaceTargetDisabled
-    Offset: '0x98d'
+    Offset: '0x9c5'
     Size: '0x1'
     Type: bool
   - Name: MinTurnAngleToPlayTurnAnim
-    Offset: '0x990'
+    Offset: '0x9c8'
     Size: '0x4'
     Type: float
   - Name: CharacterParamsDataAsset
-    Offset: '0x9a8'
+    Offset: '0x9e0'
     Size: '0x8'
     Type: class AthenaAICharacterControllerParamsDataAsset*
   - Name: SpawnItemDescForItemCategories
-    Offset: '0xa40'
+    Offset: '0xa78'
     Size: '0x10'
     Type: TArray<struct AthenaAICharacterControllerSpawnItemDescForItemCategory>
   - Name: AIAbilityParams
-    Offset: '0xa50'
+    Offset: '0xa88'
     Size: '0x10'
     Type: TArray<class AthenaAIAbilityParams*>
   - Name: AIAbilityStageParams
-    Offset: '0xa60'
+    Offset: '0xa98'
     Size: '0x10'
     Type: TArray<struct AthenaAIAbilityDamageStage>
   - Name: NonItemEngageOptions
-    Offset: '0xa70'
+    Offset: '0xaa8'
     Size: '0x10'
     Type: TArray<struct AthenaAIEngageEnemyData>
   - Name: DistanceInMToCannonShotHitChanceCurve
-    Offset: '0xa80'
+    Offset: '0xab8'
     Size: '0x8'
     Type: class CurveFloat*
   ClassSize: '0x260'
-  FullSize: '0xbd0'
-  InheritedSize: '0x970'
+  FullSize: '0xc08'
+  InheritedSize: '0x9a8'
   Super: AthenaAIController
 AthenaAICharacterControllerParamsDataAsset:
   Attributes:
   - Name: IndividualOverrideUseRVOAvoidance
-    Offset: '0x138'
+    Offset: '0x150'
     Size: '0x1'
     Type: bool
   - Name: IndividualUseRVOAvoidance
-    Offset: '0x139'
+    Offset: '0x151'
     Size: '0x1'
     Type: bool
   - Name: IndividualOverridePrioritiseInteractablesBeforeEnemies
-    Offset: '0x13a'
+    Offset: '0x152'
     Size: '0x1'
     Type: bool
   - Name: IndividualPrioritiseInteractablesBeforeEnemies
-    Offset: '0x13b'
+    Offset: '0x153'
     Size: '0x1'
     Type: bool
   - Name: IndividualDistanceInMToCannonShotHitChanceCurve
-    Offset: '0x140'
+    Offset: '0x158'
     Size: '0x8'
     Type: class CurveFloat*
   - Name: IndividualAIStrategyMovementProperties
-    Offset: '0x148'
+    Offset: '0x160'
     Size: '0x10'
     Type: TArray<struct AIStrategyMovementProperties>
   - Name: IndividualItemCategoryAIStrategyMovementPropertiesOverrides
-    Offset: '0x158'
+    Offset: '0x170'
     Size: '0x10'
     Type: TArray<struct ItemCategoryAIStrategyMovementPropertiesOverride>
   - Name: IndividualCannonTargetingParams
-    Offset: '0x168'
+    Offset: '0x180'
     Size: '0x10'
     Type: struct AthenaAICharacterCannonTargetingParams
   - Name: IndividualWieldedItemProjectileEffectivenessProperties
-    Offset: '0x178'
+    Offset: '0x190'
     Size: '0x10'
     Type: TArray<struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties>
   - Name: IndividualWieldedItemOverrideNamedControllerParams
-    Offset: '0x188'
+    Offset: '0x1a0'
     Size: '0x10'
     Type: TArray<struct AthenaAICharacterControllerItemCategoryNamedParams>
   - Name: IndividualNamedItemParams
-    Offset: '0x198'
+    Offset: '0x1b0'
     Size: '0x10'
     Type: TArray<struct AthenaAIItemParamValue>
   - Name: IndividualSpawnItemDescForItemCategories
-    Offset: '0x1a8'
+    Offset: '0x1c0'
     Size: '0x10'
     Type: TArray<struct AthenaAICharacterControllerSpawnItemDescForItemCategory>
   - Name: UseDamageBasedAbilityStages
-    Offset: '0x1b8'
+    Offset: '0x1d0'
     Size: '0x1'
     Type: bool
   - Name: HealthStages
-    Offset: '0x1c0'
+    Offset: '0x1d8'
     Size: '0x10'
     Type: TArray<float>
   - Name: IndividualDamageBasedAIAbilityStages
-    Offset: '0x1d0'
+    Offset: '0x1e8'
     Size: '0x10'
     Type: TArray<struct AthenaAIAbilityDamageStage>
   - Name: IndividualAIAbilityParams
-    Offset: '0x1e0'
+    Offset: '0x1f8'
     Size: '0x10'
     Type: TArray<class AthenaAIAbilityParams*>
   - Name: IndividualNonItemEngageOptions
-    Offset: '0x1f0'
+    Offset: '0x208'
     Size: '0x10'
     Type: TArray<struct AthenaAIEngageEnemyData>
   - Name: IndividualAnimationDataOverrideAsset
-    Offset: '0x200'
+    Offset: '0x218'
     Size: '0x10'
     Type: struct StringAssetReference
   - Name: IndividualCustomAnimationAsset
-    Offset: '0x210'
+    Offset: '0x228'
     Size: '0x10'
     Type: struct StringAssetReference
   - Name: IndividualOverrideNoInitialItem
-    Offset: '0x220'
+    Offset: '0x238'
     Size: '0x1'
     Type: bool
   - Name: IndividualNoInitialItem
-    Offset: '0x221'
+    Offset: '0x239'
     Size: '0x1'
     Type: bool
   - Name: IndividualOverrideBeginFleeing
-    Offset: '0x222'
+    Offset: '0x23a'
     Size: '0x1'
     Type: bool
   - Name: IndividualBeginFleeing
-    Offset: '0x223'
+    Offset: '0x23b'
     Size: '0x1'
     Type: bool
   - Name: IndividualFleeingEQS
-    Offset: '0x228'
+    Offset: '0x240'
     Size: '0x8'
     Type: class EnvQuery*
   ClassSize: '0xf8'
-  FullSize: '0x230'
-  InheritedSize: '0x138'
+  FullSize: '0x248'
+  InheritedSize: '0x150'
   Super: AthenaAIControllerParamsDataAsset
 AthenaAICharacterControllerSharedParamValuesDataAsset:
   Attributes:
   - Name: OverrideUseRVOAvoidance
-    Offset: '0xa8'
+    Offset: '0xb0'
     Size: '0x1'
     Type: bool
   - Name: UseRVOAvoidance
-    Offset: '0xa9'
+    Offset: '0xb1'
     Size: '0x1'
     Type: bool
   - Name: OverridePrioritiseInteractablesBeforeEnemies
-    Offset: '0xaa'
+    Offset: '0xb2'
     Size: '0x1'
     Type: bool
   - Name: PrioritiseInteractablesBeforeEnemies
-    Offset: '0xab'
+    Offset: '0xb3'
     Size: '0x1'
     Type: bool
   - Name: DistanceInMToCannonShotHitChanceCurve
-    Offset: '0xb0'
+    Offset: '0xb8'
     Size: '0x8'
     Type: class CurveFloat*
   - Name: AIStrategyMovementProperties
-    Offset: '0xb8'
+    Offset: '0xc0'
     Size: '0x10'
     Type: TArray<struct AIStrategyMovementProperties>
   - Name: ItemCategoryAIStrategyMovementPropertiesOverrides
-    Offset: '0xc8'
+    Offset: '0xd0'
     Size: '0x10'
     Type: TArray<struct ItemCategoryAIStrategyMovementPropertiesOverride>
   - Name: CannonTargetingParams
-    Offset: '0xd8'
+    Offset: '0xe0'
     Size: '0x10'
     Type: struct AthenaAICharacterCannonTargetingParams
   - Name: WieldedItemProjectileEffectivenessProperties
-    Offset: '0xe8'
+    Offset: '0xf0'
     Size: '0x10'
     Type: TArray<struct AthenaAICharacterControllerItemCategoryProjectileEffectivenessProperties>
   - Name: WieldedItemOverrideNamedControllerParams
-    Offset: '0xf8'
+    Offset: '0x100'
     Size: '0x10'
     Type: TArray<struct AthenaAICharacterControllerItemCategoryNamedParams>
   - Name: NamedItemParams
-    Offset: '0x108'
+    Offset: '0x110'
     Size: '0x10'
     Type: TArray<struct AthenaAIItemParamValue>
   - Name: SpawnItemDescForItemCategories
-    Offset: '0x118'
+    Offset: '0x120'
     Size: '0x10'
     Type: TArray<struct AthenaAICharacterControllerSpawnItemDescForItemCategory>
   - Name: AIAbilityParams
-    Offset: '0x128'
+    Offset: '0x130'
     Size: '0x10'
     Type: TArray<class AthenaAIAbilityParams*>
   - Name: IndividualDamageBasedAIAbilityStages
-    Offset: '0x138'
+    Offset: '0x140'
     Size: '0x10'
     Type: TArray<struct AthenaAIAbilityDamageStage>
   - Name: NonItemEngageOptions
-    Offset: '0x148'
+    Offset: '0x150'
     Size: '0x10'
     Type: TArray<struct AthenaAIEngageEnemyData>
   - Name: AnimationDataOverrideAsset
-    Offset: '0x158'
+    Offset: '0x160'
     Size: '0x10'
     Type: struct StringAssetReference
   - Name: CustomAnimationAsset
-    Offset: '0x168'
+    Offset: '0x170'
     Size: '0x10'
     Type: struct StringAssetReference
   - Name: OverrideNoInitialItem
-    Offset: '0x178'
+    Offset: '0x180'
     Size: '0x1'
     Type: bool
   - Name: NoInitialItem
-    Offset: '0x179'
+    Offset: '0x181'
     Size: '0x1'
     Type: bool
   - Name: OverrideBeginFleeing
-    Offset: '0x17a'
+    Offset: '0x182'
     Size: '0x1'
     Type: bool
   - Name: BeginFleeing
-    Offset: '0x17b'
+    Offset: '0x183'
     Size: '0x1'
     Type: bool
   - Name: FleeingEQS
-    Offset: '0x180'
+    Offset: '0x188'
     Size: '0x8'
     Type: class EnvQuery*
   ClassSize: '0xe0'
-  FullSize: '0x188'
-  InheritedSize: '0xa8'
+  FullSize: '0x190'
+  InheritedSize: '0xb0'
   Super: AthenaAIControllerSharedParamValuesDataAsset
 AthenaAICharacterPathFollowingComponent:
   Attributes:
@@ -2297,161 +2297,193 @@ AthenaAICharacterPathFollowingComponent:
 AthenaAIController:
   Attributes:
   - Name: CurrentTargetPerceivedNotVisibleAge
-    Offset: '0x634'
+    Offset: '0x640'
+    Size: '0x4'
+    Type: float
+  - Name: CurrentTargetPerceivedNotVisibleAgeForCrouching
+    Offset: '0x644'
     Size: '0x4'
     Type: float
   - Name: SightConfig
-    Offset: '0x678'
+    Offset: '0x688'
     Size: '0x8'
     Type: class AISenseConfig_Sight*
   - Name: HearingConfig
-    Offset: '0x680'
+    Offset: '0x690'
     Size: '0x8'
     Type: class AISenseConfig_Hearing*
   - Name: DamageSenseConfig
-    Offset: '0x688'
+    Offset: '0x698'
     Size: '0x8'
     Type: class AISenseConfig_Damage*
+  - Name: IgnoresSpawningPlayers
+    Offset: '0x6a0'
+    Size: '0x1'
+    Type: bool
+  - Name: DoesntAttackHidingPlayers
+    Offset: '0x6a1'
+    Size: '0x1'
+    Type: bool
+  - Name: MaxDistanceForWanderNearHidingPlayer
+    Offset: '0x6a4'
+    Size: '0x4'
+    Type: float
+  - Name: AIWanderNearHidingPlayerDuration
+    Offset: '0x6a8'
+    Size: '0x4'
+    Type: float
   - Name: HealthChangedReasonsExcludedFromKillNotifications
-    Offset: '0x690'
+    Offset: '0x6b0'
     Size: '0x10'
     Type: TArray<char>
   - Name: AIStrategySenseSettingOverrides
-    Offset: '0x6e8'
+    Offset: '0x708'
     Size: '0x10'
     Type: TArray<struct AthenaAIControllerSenseSettingOverride>
   - Name: CurrentNotSeenPerceivedActor
-    Offset: '0x940'
+    Offset: '0x960'
+    Size: '0x8'
+    Type: class Actor*
+  - Name: PreviousSeenPerceivedActor
+    Offset: '0x968'
     Size: '0x8'
     Type: class Actor*
   - Name: PendingSpawnTriggerActor
-    Offset: '0x948'
+    Offset: '0x970'
     Size: '0x8'
     Type: class Actor*
-  ClassSize: '0x360'
-  FullSize: '0x970'
+  ClassSize: '0x398'
+  FullSize: '0x9a8'
   InheritedSize: '0x610'
   Super: AthenaAIControllerBase
 AthenaAIControllerParamsDataAsset:
   Attributes:
   - Name: DefaultSenseSettings
     Offset: '0x28'
-    Size: '0x14'
+    Size: '0x20'
     Type: struct AthenaAIControllerSenseSettings
   - Name: AutoSuccessRangeFromLastSeenLocation
-    Offset: '0x3c'
-    Size: '0x4'
-    Type: float
-  - Name: DefaultPerceivedNotVisibleAge
-    Offset: '0x40'
-    Size: '0x4'
-    Type: float
-  - Name: CanTargetNotSeenPerceivedActors
-    Offset: '0x44'
-    Size: '0x1'
-    Type: bool
-  - Name: OverrideTeamID
-    Offset: '0x45'
-    Size: '0x1'
-    Type: bool
-  - Name: TeamID
-    Offset: '0x46'
-    Size: '0x1'
-    Type: byte
-  - Name: TargetSwitchScoreTolerance
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: TargetLoadWeightingBias
+  - Name: AutoSuccessRangeFromLastSeenLocationForCrouching
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: float
+  - Name: DefaultPerceivedNotVisibleAge
     Offset: '0x50'
+    Size: '0x4'
+    Type: float
+  - Name: CanTargetNotSeenPerceivedActors
+    Offset: '0x54'
+    Size: '0x1'
+    Type: bool
+  - Name: OverrideTeamID
+    Offset: '0x55'
+    Size: '0x1'
+    Type: bool
+  - Name: TeamID
+    Offset: '0x56'
+    Size: '0x1'
+    Type: byte
+  - Name: TargetSwitchScoreTolerance
+    Offset: '0x58'
+    Size: '0x4'
+    Type: float
+  - Name: TargetLoadWeightingBias
+    Offset: '0x60'
     Size: '0x10'
     Type: TArray<float>
   - Name: DistanceToStartTargetPickingDecrease
-    Offset: '0x60'
+    Offset: '0x70'
     Size: '0x4'
     Type: float
   - Name: TargetPickingDistScoreAtMaxSightRange
-    Offset: '0x64'
+    Offset: '0x74'
     Size: '0x4'
     Type: float
   - Name: VisionAngleToStartTargetPickingDecrease
-    Offset: '0x68'
+    Offset: '0x78'
     Size: '0x4'
     Type: float
   - Name: TargetPickingFacingScoreAtMaxPeripheralVisionAngle
-    Offset: '0x6c'
+    Offset: '0x7c'
     Size: '0x4'
     Type: float
   - Name: UseDamageAsFactorInTargetScore
-    Offset: '0x70'
+    Offset: '0x80'
     Size: '0x1'
     Type: bool
   - Name: DamageTargetScores
-    Offset: '0x74'
+    Offset: '0x84'
     Size: '0x14'
     Type: struct AthenaAIControllerDamageTargetScoreFromPerceivedTarget
   - Name: SharedParamValues
-    Offset: '0x88'
+    Offset: '0x98'
     Size: '0x10'
     Type: TArray<class AthenaAIControllerSharedParamValuesDataAsset*>
   - Name: AdditionalToggleableSharedParamValues
-    Offset: '0x98'
+    Offset: '0xa8'
     Size: '0x10'
     Type: TArray<struct AthenaAISharedControllerParamToggledValues>
   - Name: IndividualOverrideMeshScale
-    Offset: '0xa8'
+    Offset: '0xb8'
     Size: '0x1'
     Type: bool
   - Name: IndividualMeshScale
-    Offset: '0xac'
+    Offset: '0xbc'
     Size: '0x4'
     Type: float
   - Name: IndividualHealthCustomisationValues
-    Offset: '0xb0'
+    Offset: '0xc0'
     Size: '0xc'
     Type: struct AthenaAIControllerHealthCustomisation
   - Name: IndividualInitialBlackboardValues
-    Offset: '0xc0'
-    Size: '0x10'
-    Type: TArray<struct AthenaAIControllerParamValue>
-  - Name: IndividualNamedControllerParams
     Offset: '0xd0'
     Size: '0x10'
     Type: TArray<struct AthenaAIControllerParamValue>
-  - Name: FeatureToggleIndividualNamedParamOverrides
+  - Name: IndividualNamedControllerParams
     Offset: '0xe0'
+    Size: '0x10'
+    Type: TArray<struct AthenaAIControllerParamValue>
+  - Name: FeatureToggleIndividualNamedParamOverrides
+    Offset: '0xf0'
     Size: '0x10'
     Type: TArray<struct AthenaAIControllerFeatureToggledParams>
   - Name: IndividualNamedWeightedRangesControllerParams
-    Offset: '0xf0'
+    Offset: '0x100'
     Size: '0x10'
     Type: TArray<struct AthenaAIControllerWeightedRangesParamValue>
   - Name: IndividualAIStrategySenseSettingOverrides
-    Offset: '0x100'
+    Offset: '0x110'
     Size: '0x10'
     Type: TArray<struct AthenaAIControllerSenseSettingOverride>
   - Name: IndividualOverrideCurrentTargetPerceivedNotVisibleAge
-    Offset: '0x110'
+    Offset: '0x120'
     Size: '0x1'
     Type: bool
   - Name: IndividualCurrentTargetPerceivedNotVisibleAge
-    Offset: '0x114'
+    Offset: '0x124'
+    Size: '0x4'
+    Type: float
+  - Name: IndividualCurrentTargetPerceivedNotVisibleAgeForCrouching
+    Offset: '0x128'
     Size: '0x4'
     Type: float
   - Name: DamageModifiers
-    Offset: '0x118'
+    Offset: '0x130'
     Size: '0x10'
     Type: TArray<class AthenaAIDamageModifierBase*>
   - Name: CrewStrengthDynamicParams
-    Offset: '0x128'
+    Offset: '0x140'
     Size: '0x8'
     Type: class AthenaAICrewStrengthDynamicParamsDataAsset*
   - Name: FeatureName
-    Offset: '0x130'
+    Offset: '0x148'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x110'
-  FullSize: '0x138'
+  ClassSize: '0x128'
+  FullSize: '0x150'
   InheritedSize: '0x28'
   Super: DataAsset
 AthenaAIControllerParamsDataProvider:
@@ -2494,36 +2526,40 @@ AthenaAIControllerSharedParamValuesDataAsset:
     Offset: '0x34'
     Size: '0x4'
     Type: float
-  - Name: AIStrategySenseSettingOverrides
+  - Name: CurrentTargetPerceivedNotVisibleAgeForCrouching
     Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  - Name: AIStrategySenseSettingOverrides
+    Offset: '0x40'
     Size: '0x10'
     Type: TArray<struct AthenaAIControllerSenseSettingOverride>
   - Name: HealthCustomisationValues
-    Offset: '0x48'
+    Offset: '0x50'
     Size: '0xc'
     Type: struct AthenaAIControllerHealthCustomisation
   - Name: InitialBlackboardValues
-    Offset: '0x58'
+    Offset: '0x60'
     Size: '0x10'
     Type: TArray<struct AthenaAIControllerParamValue>
   - Name: NamedControllerParams
-    Offset: '0x68'
+    Offset: '0x70'
     Size: '0x10'
     Type: TArray<struct AthenaAIControllerParamValue>
   - Name: FeatureToggleNamedParamOverrides
-    Offset: '0x78'
+    Offset: '0x80'
     Size: '0x10'
     Type: TArray<struct AthenaAIControllerFeatureToggledParams>
   - Name: NamedWeightedRangesControllerParams
-    Offset: '0x88'
+    Offset: '0x90'
     Size: '0x10'
     Type: TArray<struct AthenaAIControllerWeightedRangesParamValue>
   - Name: DamageModifiers
-    Offset: '0x98'
+    Offset: '0xa0'
     Size: '0x10'
     Type: TArray<class AthenaAIDamageModifierBase*>
-  ClassSize: '0x80'
-  FullSize: '0xa8'
+  ClassSize: '0x88'
+  FullSize: '0xb0'
   InheritedSize: '0x28'
   Super: DataAsset
 AthenaAIDamageModifierCrewProximity:
@@ -2783,78 +2819,78 @@ AthenaAIWeightedRangesDataProvider:
 AthenaFaunaAIController:
   Attributes:
   - Name: MaxTimeBetweenThreatDetermination
-    Offset: '0x970'
+    Offset: '0x9a8'
     Size: '0x4'
     Type: float
   - Name: DefaultControlRotationInterpSpeed
-    Offset: '0x974'
+    Offset: '0x9ac'
     Size: '0x4'
     Type: float
   - Name: StrategyControllerMovementMods
-    Offset: '0x978'
+    Offset: '0x9b0'
     Size: '0x10'
     Type: TArray<struct AIStategyControllerMovementMod>
   - Name: MinAgentHalfHeightPctOverride
-    Offset: '0x988'
+    Offset: '0x9c0'
     Size: '0x4'
     Type: float
   - Name: FaunaDataAsset
-    Offset: '0x990'
+    Offset: '0x9c8'
     Size: '0x8'
     Type: class FaunaAIContollerParamsDataAsset*
   - Name: CarrierActor
-    Offset: '0x998'
+    Offset: '0x9d0'
     Size: '0x8'
     Type: class Actor*
   - Name: HighestDangerActor
-    Offset: '0xa68'
+    Offset: '0xaa0'
     Size: '0x8'
     Type: class Actor*
   - Name: PlayerTracker
-    Offset: '0xb08'
+    Offset: '0xb40'
     Size: '0x8'
     Type: class FaunaAIPlayerTracker*
   ClassSize: '0x1c8'
-  FullSize: '0xb38'
-  InheritedSize: '0x970'
+  FullSize: '0xb70'
+  InheritedSize: '0x9a8'
   Super: AthenaAIController
 AthenaSwimmingAIController:
   Attributes:
   - Name: SwimmingPathFollowingComponent
-    Offset: '0x970'
+    Offset: '0x9a8'
     Size: '0x8'
     Type: class SwimmingPathFollowingComponent*
   - Name: IgnoreTargetsOutOfWater
-    Offset: '0x978'
+    Offset: '0x9b0'
     Size: '0x1'
     Type: bool
   - Name: DistOfAttackerVsChanceToPursue
-    Offset: '0x980'
+    Offset: '0x9b8'
     Size: '0x8'
     Type: class CurveFloat*
   - Name: TimersToZeroIfStartingRevengeAttack
-    Offset: '0x988'
+    Offset: '0x9c0'
     Size: '0x10'
     Type: TArray<struct Name>
   - Name: DespawnRequiredBlackboardKey
-    Offset: '0x998'
+    Offset: '0x9d0'
     Size: '0x8'
     Type: struct FName
   - Name: DespawnRequiredReasonBlackboardKey
-    Offset: '0x9a0'
+    Offset: '0x9d8'
     Size: '0x8'
     Type: struct FName
   - Name: PathingFailedWeight
-    Offset: '0x9a8'
+    Offset: '0x9e0'
     Size: '0x4'
     Type: float
   - Name: PathingFailedThresholdToDespawn
-    Offset: '0x9ac'
+    Offset: '0x9e4'
     Size: '0x4'
     Type: float
   ClassSize: '0x100'
-  FullSize: '0xa70'
-  InheritedSize: '0x970'
+  FullSize: '0xaa8'
+  InheritedSize: '0x9a8'
   Super: AthenaAIController
 BTDecorator_ActionState:
   Attributes:
@@ -4489,16 +4525,16 @@ BurrowHealAIAbilityParams:
 ControllableAIActionSpot:
   Attributes:
   - Name: AIActionSpotComponent
-    Offset: '0x518'
+    Offset: '0x510'
     Size: '0x8'
     Type: class AIActionSpotComponent*
   - Name: SceneComponent
-    Offset: '0x520'
+    Offset: '0x518'
     Size: '0x8'
     Type: class SceneComponent*
   ClassSize: '0x10'
-  FullSize: '0x528'
-  InheritedSize: '0x518'
+  FullSize: '0x520'
+  InheritedSize: '0x510'
   Super: ControllableObject
 CoralShieldAbility:
   Attributes:
@@ -5341,76 +5377,76 @@ Fauna:
 FaunaAIContollerParamsDataAsset:
   Attributes:
   - Name: Courage
-    Offset: '0x138'
+    Offset: '0x150'
     Size: '0x20'
     Type: struct WeightedProbabilityRange
   - Name: CarriedItemThreatOverrides
-    Offset: '0x158'
+    Offset: '0x170'
     Size: '0x10'
     Type: TArray<struct CarriedItemThreatOverride>
   - Name: ThreatenedBySightOfCarrier
-    Offset: '0x168'
+    Offset: '0x180'
     Size: '0x1'
     Type: bool
   - Name: KnownHearingDangers
-    Offset: '0x170'
+    Offset: '0x188'
     Size: '0x10'
     Type: TArray<struct HearingThreat>
   - Name: CarrierHearingThreatSpeedThreshold
-    Offset: '0x180'
-    Size: '0x4'
-    Type: float
-  - Name: DamageThreat
-    Offset: '0x184'
-    Size: '0x4'
-    Type: float
-  - Name: CharacterDistanceToDangerRatingCurve
-    Offset: '0x188'
-    Size: '0x8'
-    Type: class CurveFloat*
-  - Name: DangerRatingToAgitationDurationCurve
-    Offset: '0x190'
-    Size: '0x8'
-    Type: class CurveFloat*
-  - Name: TimeToBecomeAgitatedMin
     Offset: '0x198'
     Size: '0x4'
     Type: float
-  - Name: TimeToBecomeAgitatedMax
+  - Name: DamageThreat
     Offset: '0x19c'
     Size: '0x4'
     Type: float
-  - Name: AgitationDurationVariance
+  - Name: CharacterDistanceToDangerRatingCurve
     Offset: '0x1a0'
-    Size: '0x4'
-    Type: float
-  - Name: AlertThreshold
-    Offset: '0x1a4'
-    Size: '0x4'
-    Type: int
-  - Name: FleeThreshold
+    Size: '0x8'
+    Type: class CurveFloat*
+  - Name: DangerRatingToAgitationDurationCurve
     Offset: '0x1a8'
-    Size: '0x4'
-    Type: int
-  - Name: TimeToBecomeCalm
-    Offset: '0x1ac'
-    Size: '0x4'
-    Type: float
-  - Name: CalmCooldownTime
+    Size: '0x8'
+    Type: class CurveFloat*
+  - Name: TimeToBecomeAgitatedMin
     Offset: '0x1b0'
     Size: '0x4'
     Type: float
-  - Name: MaxDistanceFromLeaderForIdle
+  - Name: TimeToBecomeAgitatedMax
     Offset: '0x1b4'
     Size: '0x4'
     Type: float
-  - Name: DistanceToLeaderPatrolChanceCurve
+  - Name: AgitationDurationVariance
     Offset: '0x1b8'
+    Size: '0x4'
+    Type: float
+  - Name: AlertThreshold
+    Offset: '0x1bc'
+    Size: '0x4'
+    Type: int
+  - Name: FleeThreshold
+    Offset: '0x1c0'
+    Size: '0x4'
+    Type: int
+  - Name: TimeToBecomeCalm
+    Offset: '0x1c4'
+    Size: '0x4'
+    Type: float
+  - Name: CalmCooldownTime
+    Offset: '0x1c8'
+    Size: '0x4'
+    Type: float
+  - Name: MaxDistanceFromLeaderForIdle
+    Offset: '0x1cc'
+    Size: '0x4'
+    Type: float
+  - Name: DistanceToLeaderPatrolChanceCurve
+    Offset: '0x1d0'
     Size: '0x8'
     Type: class CurveFloat*
   ClassSize: '0x88'
-  FullSize: '0x1c0'
-  InheritedSize: '0x138'
+  FullSize: '0x1d8'
+  InheritedSize: '0x150'
   Super: AthenaAIControllerParamsDataAsset
 HealthGemComponent:
   Attributes:

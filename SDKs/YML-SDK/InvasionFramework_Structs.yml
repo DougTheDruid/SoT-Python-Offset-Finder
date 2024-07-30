@@ -115,6 +115,118 @@ InvasionServiceMatchmakingCrewInfo:
     Size: '0x1'
     Type: byte
   ClassSize: '0x14'
+MatchesCreateMatchSuccessfulRpc:
+  Attributes:
+  - Name: MatchID
+    Offset: '0x18'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x28'
+MatchesTriggerCreateMatchRpc:
+  Attributes:
+  - Name: ActivityId
+    Offset: '0x18'
+    Size: '0x10'
+    Type: struct FString
+  - Name: InactivityExpirationTimeSeconds
+    Offset: '0x28'
+    Size: '0x4'
+    Type: int
+  - Name: PlayersTeamA
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<struct PlayerData>
+  - Name: PlayersTeamB
+    Offset: '0x40'
+    Size: '0x10'
+    Type: TArray<struct PlayerData>
+  - Name: TypeTeamA
+    Offset: '0x50'
+    Size: '0x1'
+    Type: byte
+  - Name: TypeTeamB
+    Offset: '0x51'
+    Size: '0x1'
+    Type: byte
+  - Name: IdTeamA
+    Offset: '0x58'
+    Size: '0x10'
+    Type: struct FString
+  - Name: IdTeamB
+    Offset: '0x68'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x78'
+MatchesTriggerEndMatchRpc:
+  Attributes:
+  - Name: MatchID
+    Offset: '0x18'
+    Size: '0x10'
+    Type: struct FString
+  - Name: WinningTeamId
+    Offset: '0x28'
+    Size: '0x10'
+    Type: struct FString
+  - Name: LosingTeamId
+    Offset: '0x38'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x48'
+MatchesTriggerPlayerJoinRpc:
+  Attributes:
+  - Name: MatchID
+    Offset: '0x18'
+    Size: '0x10'
+    Type: struct FString
+  - Name: PlayerData
+    Offset: '0x28'
+    Size: '0x28'
+    Type: struct PlayerData
+  - Name: CrewId
+    Offset: '0x50'
+    Size: '0x10'
+    Type: struct Guid
+  ClassSize: '0x60'
+MatchesTriggerPlayerLeaveRpc:
+  Attributes:
+  - Name: MatchID
+    Offset: '0x18'
+    Size: '0x10'
+    Type: struct FString
+  - Name: PlayerData
+    Offset: '0x28'
+    Size: '0x28'
+    Type: struct PlayerData
+  ClassSize: '0x50'
+MatchesTriggerStartMatchRpc:
+  Attributes:
+  - Name: MatchID
+    Offset: '0x18'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x28'
+MatchesTriggerUpdateMatchRpc:
+  Attributes:
+  - Name: MatchID
+    Offset: '0x18'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x28'
+PlayerData:
+  Attributes:
+  - Name: PlayerId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: PlayerName
+    Offset: '0x10'
+    Size: '0x10'
+    Type: struct FString
+  - Name: PlatformId
+    Offset: '0x20'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x28'
 ReplicatedInvasionCrewMusicState:
   Attributes:
   - Name: CrewId

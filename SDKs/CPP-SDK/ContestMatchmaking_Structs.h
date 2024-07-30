@@ -22,24 +22,25 @@ public:
 };
 
 
-// Size 0x18
-struct GameSubEventTypeModel
+// Size 0x50
+struct OptionalPlayModeModel
 {
 public:
-	struct FString                                               EventName;                                         // 0x0(0x10)
-	int                                                          MaxCount;                                          // 0x10(0x4)
+	map                                                          OptionalPlayModeMap;                               // 0x0(0x50)
 };
 
 
-// Size 0x38
-struct GameMainEventTypeModel
+// Size 0x68
+struct ServerQueueWaitTimesRequestModel
 {
 public:
-	struct FString                                               EventName;                                         // 0x0(0x10)
-	TArray<String>                                               ExcludedEvents;                                    // 0x10(0x10)
-	TArray<struct Guid>                                          ExcludedCrewIds;                                   // 0x20(0x10)
-	char                                                         Status;                                            // 0x30(0x1)
-	char                                                         ShipSizeLimit;                                     // 0x31(0x1)
+	struct Guid                                                  ServerId;                                          // 0x0(0x10)
+	struct FString                                               ServerLocation;                                    // 0x10(0x10)
+	uint32                                                       FeatureHash;                                       // 0x20(0x4)
+	struct FString                                               PrivateServerId;                                   // 0x28(0x10)
+	struct FString                                               ServerForcedPlatform;                              // 0x38(0x10)
+	TArray<String>                                               PlayModeTags;                                      // 0x48(0x10)
+	struct FString                                               PlayModeState;                                     // 0x58(0x10)
 };
 
 
@@ -67,17 +68,42 @@ public:
 };
 
 
-// Size 0x68
-struct ServerQueueWaitTimesRequestModel
+// Size 0x38
+struct GameMainEventTypeModel
 {
 public:
-	struct Guid                                                  ServerId;                                          // 0x0(0x10)
-	struct FString                                               ServerLocation;                                    // 0x10(0x10)
-	uint32                                                       FeatureHash;                                       // 0x20(0x4)
-	struct FString                                               PrivateServerId;                                   // 0x28(0x10)
-	struct FString                                               ServerForcedPlatform;                              // 0x38(0x10)
-	TArray<String>                                               PlayModeTags;                                      // 0x48(0x10)
-	struct FString                                               PlayModeState;                                     // 0x58(0x10)
+	struct FString                                               EventName;                                         // 0x0(0x10)
+	TArray<String>                                               ExcludedEvents;                                    // 0x10(0x10)
+	TArray<struct Guid>                                          ExcludedCrewIds;                                   // 0x20(0x10)
+	char                                                         Status;                                            // 0x30(0x1)
+	char                                                         ShipSizeLimit;                                     // 0x31(0x1)
+};
+
+
+// Size 0x10
+struct ContestMatchmakingFactionMapEntry
+{
+public:
+	class UClass*                                                GameFaction;                                       // 0x0(0x8)
+	char                                                         MatchmakingFaction;                                // 0x8(0x1)
+};
+
+
+// Size 0x18
+struct GameSubEventTypeModel
+{
+public:
+	struct FString                                               EventName;                                         // 0x0(0x10)
+	int                                                          MaxCount;                                          // 0x10(0x4)
+};
+
+
+// Size 0xc
+struct ServerRegionModel
+{
+public:
+	struct Vector2D                                              Position;                                          // 0x0(0x8)
+	float                                                        Radius;                                            // 0x8(0x4)
 };
 
 
@@ -96,32 +122,6 @@ public:
 };
 
 
-// Size 0xc
-struct ServerRegionModel
-{
-public:
-	struct Vector2D                                              Position;                                          // 0x0(0x8)
-	float                                                        Radius;                                            // 0x8(0x4)
-};
-
-
-// Size 0x50
-struct OptionalPlayModeModel
-{
-public:
-	map                                                          OptionalPlayModeMap;                               // 0x0(0x50)
-};
-
-
-// Size 0x10
-struct ContestMatchmakingFactionMapEntry
-{
-public:
-	class UClass*                                                GameFaction;                                       // 0x0(0x8)
-	char                                                         MatchmakingFaction;                                // 0x8(0x1)
-};
-
-
 // Size 0x80
 struct ServerCrewResponseModel
 {
@@ -132,15 +132,6 @@ public:
 	struct Timespan                                              RetryAfter;                                        // 0x68(0x8)
 	struct Timespan                                              MigrationThreshold;                                // 0x70(0x8)
 	struct Timespan                                              ExpireAfter;                                       // 0x78(0x8)
-};
-
-
-// Size 0x20
-struct GameEventAvailabilityModel
-{
-public:
-	TArray<struct GameMainEventTypeModel>                        MainEvents;                                        // 0x0(0x10)
-	TArray<struct GameSubEventTypeModel>                         SubEvents;                                         // 0x10(0x10)
 };
 
 
@@ -171,6 +162,15 @@ public:
 	char                                                         MatchmakingRequestReason;                          // 0x98(0x1)
 	struct Guid                                                  RequestCorrelationId;                              // 0x9c(0x10)
 	struct Guid                                                  SaferSeasServerIdOverride;                         // 0xac(0x10)
+};
+
+
+// Size 0x20
+struct GameEventAvailabilityModel
+{
+public:
+	TArray<struct GameMainEventTypeModel>                        MainEvents;                                        // 0x0(0x10)
+	TArray<struct GameSubEventTypeModel>                         SubEvents;                                         // 0x10(0x10)
 };
 
 

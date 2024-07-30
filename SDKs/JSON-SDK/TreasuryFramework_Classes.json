@@ -1,4 +1,42 @@
 {
+  "SunkenKingdomShrineEventRoom": {
+    "Super": "EventRoom",
+    "FullSize": "0x5b0",
+    "InheritedSize": "0x500",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "EntranceActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x510"
+      },
+      {
+        "Name": "GameEventOnDemandAvailabilityHandler",
+        "Type": "class GameEventOnDemandAvailabilityHandler*",
+        "Size": "0x8",
+        "Offset": "0x518"
+      },
+      {
+        "Name": "AvailabilityParamsAssetFileLocation",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x520"
+      },
+      {
+        "Name": "PuzzleResetComponent",
+        "Type": "class ObjectProximityResetComponent*",
+        "Size": "0x8",
+        "Offset": "0x530"
+      },
+      {
+        "Name": "ItemSpawnSelectorComponent",
+        "Type": "class GameEventItemSpawnSelectorComponent*",
+        "Size": "0x8",
+        "Offset": "0x538"
+      }
+    ]
+  },
   "TreasuryRoom": {
     "Super": "Actor",
     "FullSize": "0x610",
@@ -220,44 +258,6 @@
         "Type": "struct ObjectMessagingDispatcher",
         "Size": "0xa0",
         "Offset": "0x558"
-      }
-    ]
-  },
-  "SunkenKingdomShrineEventRoom": {
-    "Super": "EventRoom",
-    "FullSize": "0x5b0",
-    "InheritedSize": "0x500",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "EntranceActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x510"
-      },
-      {
-        "Name": "GameEventOnDemandAvailabilityHandler",
-        "Type": "class GameEventOnDemandAvailabilityHandler*",
-        "Size": "0x8",
-        "Offset": "0x518"
-      },
-      {
-        "Name": "AvailabilityParamsAssetFileLocation",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x520"
-      },
-      {
-        "Name": "PuzzleResetComponent",
-        "Type": "class ObjectProximityResetComponent*",
-        "Size": "0x8",
-        "Offset": "0x530"
-      },
-      {
-        "Name": "ItemSpawnSelectorComponent",
-        "Type": "class GameEventItemSpawnSelectorComponent*",
-        "Size": "0x8",
-        "Offset": "0x538"
       }
     ]
   },

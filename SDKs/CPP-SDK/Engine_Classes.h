@@ -6,28 +6,93 @@
 #include "Engine_Structs.h"
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class FeatureToggledStringAssetReference: public DataAsset
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class ParticleSystemAggregateTickSettings: public Object
 {
 public:
-	TArray<struct FeatureToggledStringAssetReferenceEntry>       Entries;                                           // 0x28(0x10)
-	class UClass*                                                ClassType;                                         // 0x38(0x8)
+	int                                                          FramesTickScaledOver;                              // 0x28(0x4)
+	int                                                          MaxTicksPerFrame;                                  // 0x2c(0x4)
+	float                                                        PriorityInflationPower;                            // 0x30(0x4)
 };
 
 
-// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
-class Channel: public Object
+// Size 0xd8 (Full Size[0x100] - InheritedSize[0x28]
+class PendingNetGame: public Object
 {
 public:
-	class NetConnection*                                         Connection;                                        // 0x28(0x8)
+	class NetDriver*                                             NetDriver;                                         // 0x30(0x8)
+	class Package*                                               PreLoadedMapPackage;                               // 0xe8(0x8)
+	class World*                                                 PreLoadedWorld;                                    // 0xf0(0x8)
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class InterpTrackInstDirector: public InterpTrackInst
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class ReverbEffect: public Object
 {
 public:
-	class Actor*                                                 OldViewTarget;                                     // 0x28(0x8)
+	float                                                        Density;                                           // 0x28(0x4)
+	float                                                        Diffusion;                                         // 0x2c(0x4)
+	float                                                        Gain;                                              // 0x30(0x4)
+	float                                                        GainHF;                                            // 0x34(0x4)
+	float                                                        DecayTime;                                         // 0x38(0x4)
+	float                                                        DecayHFRatio;                                      // 0x3c(0x4)
+	float                                                        ReflectionsGain;                                   // 0x40(0x4)
+	float                                                        ReflectionsDelay;                                  // 0x44(0x4)
+	float                                                        LateGain;                                          // 0x48(0x4)
+	float                                                        LateDelay;                                         // 0x4c(0x4)
+	float                                                        AirAbsorptionGainHF;                               // 0x50(0x4)
+	float                                                        RoomRolloffFactor;                                 // 0x54(0x4)
+};
+
+
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class SubUVAnimation: public Object
+{
+public:
+	class Texture2D*                                             SubUVTexture;                                      // 0x28(0x8)
+	int                                                          SubImages_Horizontal;                              // 0x30(0x4)
+	int                                                          SubImages_Vertical;                                // 0x34(0x4)
+	char                                                         BoundingMode;                                      // 0x38(0x1)
+	char                                                         OpacitySourceMode;                                 // 0x39(0x1)
+	float                                                        AlphaThreshold;                                    // 0x3c(0x4)
+	float                                                        SafeMarginSize;                                    // 0x40(0x4)
+};
+
+
+// Size 0x110 (Full Size[0x138] - InheritedSize[0x28]
+class StaticMesh: public Object
+{
+public:
+	int                                                          MinLOD;                                            // 0x40(0x4)
+	TArray<class MaterialInterface*>                             Materials;                                         // 0x48(0x10)
+	int                                                          LightMapResolution;                                // 0x58(0x4)
+	int                                                          LightMapCoordinateIndex;                           // 0x5c(0x4)
+	class BodySetup*                                             BodySetup;                                         // 0x60(0x8)
+	int                                                          LODForCollision;                                   // 0x68(0x4)
+	bool                                                         bUseMaximumStreamingTexelRatio;                    // 0x6c(0x1)
+	bool                                                         bStripComplexCollisionForConsole;                  // 0x6c(0x1)
+	bool                                                         bHasNavigationData;                                // 0x6c(0x1)
+	float                                                        StreamingDistanceMultiplier;                       // 0x70(0x4)
+	float                                                        LpvBiasMultiplier;                                 // 0x74(0x4)
+	TArray<class StaticMeshSocket*>                              Sockets;                                           // 0xa8(0x10)
+	struct Vector                                                PositiveBoundsExtension;                           // 0xd0(0xc)
+	struct Vector                                                NegativeBoundsExtension;                           // 0xdc(0xc)
+	struct BoxSphereBounds                                       ExtendedBounds;                                    // 0xe8(0x1c)
+	TArray<String>                                               SourceMaterials;                                   // 0x108(0x10)
+	int                                                          UVsForStreaming;                                   // 0x118(0x4)
+	int                                                          ElementToIgnoreForTexFactor;                       // 0x11c(0x4)
+	TArray<class AssetUserData*>                                 AssetUserData;                                     // 0x120(0x10)
+	class NavCollision*                                          NavCollision;                                      // 0x130(0x8)
+};
+
+
+// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
+class ParticleModuleCameraOffset: public ParticleModuleCameraBase
+{
+public:
+	struct RawDistributionFloat                                  CameraOffset;                                      // 0x50(0x38)
+	bool                                                         bSpawnTimeOnly;                                    // 0x88(0x1)
+	char                                                         UpdateMethod;                                      // 0x8c(0x1)
 };
 
 
@@ -41,58 +106,1141 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
-class ParticleModuleSizeScale: public ParticleModuleSizeBase
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class SoundNode: public Object
 {
 public:
-	struct RawDistributionVector                                 SizeScale;                                         // 0x50(0x38)
-	bool                                                         EnableX;                                           // 0x88(0x1)
-	bool                                                         EnableY;                                           // 0x88(0x1)
-	bool                                                         EnableZ;                                           // 0x88(0x1)
+	TArray<class SoundNode*>                                     ChildNodes;                                        // 0x28(0x10)
 };
 
 
 // Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class SimpleConstructionScript: public Object
+class ForceFeedbackEffect: public Object
 {
 public:
-	TArray<class SCS_Node*>                                      RootNodes;                                         // 0x28(0x10)
-	class SCS_Node*                                              DefaultSceneRootNode;                              // 0x38(0x8)
+	TArray<struct ForceFeedbackChannelDetails>                   ChannelDetails;                                    // 0x28(0x10)
+	float                                                        Duration;                                          // 0x38(0x4)
+};
+
+
+// Size 0x90 (Full Size[0xe0] - InheritedSize[0x50]
+class ParticleModuleAttractorParticle: public ParticleModuleAttractorBase
+{
+public:
+	struct FName                                                 EmitterName;                                       // 0x50(0x8)
+	struct RawDistributionFloat                                  Range;                                             // 0x58(0x38)
+	bool                                                         bStrengthByDistance;                               // 0x90(0x1)
+	struct RawDistributionFloat                                  Strength;                                          // 0x98(0x38)
+	bool                                                         bAffectBaseVelocity;                               // 0xd0(0x1)
+	char                                                         SelectionMethod;                                   // 0xd4(0x1)
+	bool                                                         bRenewSource;                                      // 0xd8(0x1)
+	bool                                                         bInheritSourceVel;                                 // 0xd8(0x1)
+	int                                                          LastSelIndex;                                      // 0xdc(0x4)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class TextureLODSettings: public Object
+{
+public:
+	TArray<struct TextureLODGroup>                               TextureLODGroups;                                  // 0x28(0x10)
+};
+
+
+// Size 0x78 (Full Size[0xc8] - InheritedSize[0x50]
+class ParticleModuleLocationPrimitiveBase: public ParticleModuleLocationBase
+{
+public:
+	bool                                                         Positive_X;                                        // 0x50(0x1)
+	bool                                                         Positive_Y;                                        // 0x50(0x1)
+	bool                                                         Positive_Z;                                        // 0x50(0x1)
+	bool                                                         Negative_X;                                        // 0x50(0x1)
+	bool                                                         Negative_Y;                                        // 0x50(0x1)
+	bool                                                         Negative_Z;                                        // 0x50(0x1)
+	bool                                                         SurfaceOnly;                                       // 0x50(0x1)
+	bool                                                         Velocity;                                          // 0x50(0x1)
+	struct RawDistributionFloat                                  VelocityScale;                                     // 0x58(0x38)
+	struct RawDistributionVector                                 StartLocation;                                     // 0x90(0x38)
+};
+
+
+// Size 0x158 (Full Size[0x1a8] - InheritedSize[0x50]
+class ParticleModuleRotation: public ParticleModuleRotationBase
+{
+public:
+	bool                                                         bUseGroupARotationForAllGroups;                    // 0x50(0x1)
+	struct RawDistributionFloat                                  StartRotation;                                     // 0x58(0x38)
+	struct RawDistributionFloat                                  AdditionalStartRotation;                           // 0x90(0x38)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class CameraModifier: public Object
+{
+public:
+	bool                                                         bDebug;                                            // 0x28(0x1)
+	bool                                                         bExclusive;                                        // 0x28(0x1)
+	char                                                         Priority;                                          // 0x2c(0x1)
+	class PlayerCameraManager*                                   CameraOwner;                                       // 0x30(0x8)
+	float                                                        AlphaInTime;                                       // 0x38(0x4)
+	float                                                        AlphaOutTime;                                      // 0x3c(0x4)
+	float                                                        Alpha;                                             // 0x40(0x4)
+	bool                                                         bAutoDestroyOnCompletion;                          // 0x44(0x1)
 };
 
 
 // Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
-class BrushBuilder: public Object
+class Commandlet: public Object
 {
 public:
-	struct FString                                               BitmapFilename;                                    // 0x28(0x10)
-	struct FString                                               ToolTip;                                           // 0x38(0x10)
-	bool                                                         NotifyBadParams;                                   // 0x48(0x1)
-	TArray<struct Vector>                                        Vertices;                                          // 0x50(0x10)
-	TArray<struct BuilderPoly>                                   Polys;                                             // 0x60(0x10)
-	struct FName                                                 Layer;                                             // 0x70(0x8)
-	bool                                                         MergeCoplanars;                                    // 0x78(0x1)
+	struct FString                                               HelpDescription;                                   // 0x28(0x10)
+	struct FString                                               HelpUsage;                                         // 0x38(0x10)
+	struct FString                                               HelpWebLink;                                       // 0x48(0x10)
+	TArray<String>                                               HelpParamNames;                                    // 0x58(0x10)
+	TArray<String>                                               HelpParamDescriptions;                             // 0x68(0x10)
+	bool                                                         IsServer;                                          // 0x78(0x1)
+	bool                                                         IsClient;                                          // 0x78(0x1)
+	bool                                                         IsEditor;                                          // 0x78(0x1)
+	bool                                                         LogToConsole;                                      // 0x78(0x1)
+	bool                                                         ShowErrorCount;                                    // 0x78(0x1)
 };
 
 
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class SkeletalMeshSocket: public Object
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class BlueprintCore: public Object
 {
 public:
-	struct FName                                                 SocketName;                                        // 0x28(0x8)
-	struct FName                                                 BoneName;                                          // 0x30(0x8)
-	struct Vector                                                RelativeLocation;                                  // 0x38(0xc)
-	struct Rotator                                               RelativeRotation;                                  // 0x44(0xc)
-	struct Vector                                                RelativeScale;                                     // 0x50(0xc)
-	bool                                                         bForceAlwaysAnimated;                              // 0x5c(0x1)
+	class UClass*                                                SkeletonGeneratedClass;                            // 0x28(0x8)
+	class UClass*                                                GeneratedClass;                                    // 0x30(0x8)
+	bool                                                         bLegacyNeedToPurgeSkelRefs;                        // 0x38(0x1)
+	bool                                                         bLegacyGeneratedClassIsAuthoritative;              // 0x39(0x1)
+	struct Guid                                                  BlueprintGuid;                                     // 0x3c(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class InputTouchDelegateBinding: public InputDelegateBinding
+{
+public:
+	TArray<struct BlueprintInputTouchDelegateBinding>            InputTouchDelegateBindings;                        // 0x28(0x10)
+};
+
+
+// Size 0xd30 (Full Size[0xd80] - InheritedSize[0x50]
+class ParticleModuleTypeDataGpu: public ParticleModuleTypeDataBase
+{
+public:
+	struct GPUSpriteEmitterInfo                                  EmitterInfo;                                       // 0x50(0x2b0)
+	struct GPUSpriteResourceData                                 ResourceData;                                      // 0x300(0xa60)
+	float                                                        CameraMotionBlurAmount;                            // 0xd60(0x4)
+	bool                                                         bClearExistingParticlesOnInit;                     // 0xd64(0x1)
+	char                                                         AlphaCullingAggressiveness;                        // 0xd68(0x1)
+	bool                                                         bOverrideAlphaThreshold;                           // 0xd6c(0x1)
+	float                                                        OverriddenAlphaThreshold;                          // 0xd70(0x4)
+	char                                                         InteractionWithKillPlane;                          // 0xd74(0x1)
+	char                                                         KillPlanePointLocation;                            // 0xd75(0x1)
+	float                                                        FadingTimeWhenKilled;                              // 0xd78(0x4)
+};
+
+
+// Size 0x168 (Full Size[0x198] - InheritedSize[0x30]
+class CurveVector: public CurveBase
+{
+public:
+	struct RichCurve                                             FloatCurves;                                       // 0x30(0x78)
+};
+
+
+// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
+class ParticleModuleSubUV: public ParticleModuleSubUVBase
+{
+public:
+	struct RawDistributionFloat                                  SubImageIndex;                                     // 0x50(0x38)
+	bool                                                         bUseRealTime;                                      // 0x88(0x1)
+};
+
+
+// Size 0x1e8 (Full Size[0x210] - InheritedSize[0x28]
+class LevelStreaming: public Object
+{
+public:
+	assetobject                                                  WorldAsset;                                        // 0x28(0x20)
+	struct FName                                                 PackageNameToLoad;                                 // 0x50(0x8)
+	TArray<struct Name>                                          LODPackageNames;                                   // 0x58(0x10)
+	struct Transform                                             LevelTransform;                                    // 0x80(0x30)
+	bool                                                         bShouldBeVisibleInEditor;                          // 0xbc(0x1)
+	bool                                                         Blocked;                                           // 0xbc(0x1)
+	bool                                                         bShouldBeLoaded;                                   // 0xbc(0x1)
+	bool                                                         bShouldBeVisible;                                  // 0xbc(0x1)
+	bool                                                         bShouldBlockOnLoad;                                // 0xbc(0x1)
+	int                                                          LevelLODIndex;                                     // 0xc0(0x4)
+	bool                                                         bDisableDistanceStreaming;                         // 0xc4(0x1)
+	bool                                                         bDrawOnLevelStatusMap;                             // 0xc4(0x1)
+	struct LinearColor                                           LevelColor;                                        // 0xc8(0x10)
+	TArray<class LevelStreamingVolume*>                          EditorStreamingVolumes;                            // 0xd8(0x10)
+	float                                                        MinTimeBetweenVolumeUnloadRequests;                // 0xe8(0x4)
+	TArray<String>                                               Keywords;                                          // 0xf0(0x10)
+	multicastinlinedelegate                                      OnLevelLoaded;                                     // 0x100(0x10)
+	multicastinlinedelegate                                      OnLevelUnloaded;                                   // 0x110(0x10)
+	multicastinlinedelegate                                      OnLevelShown;                                      // 0x120(0x10)
+	multicastinlinedelegate                                      OnLevelHidden;                                     // 0x130(0x10)
+	class Level*                                                 LoadedLevel;                                       // 0x200(0x8)
+	class Level*                                                 PendingUnloadLevel;                                // 0x208(0x8)
+};
+
+
+// Size 0x68 (Full Size[0xb8] - InheritedSize[0x50]
+class ParticleModuleKillSphere: public ParticleModuleKillBase
+{
+public:
+	struct Vector                                                Centre;                                            // 0x50(0xc)
+	float                                                        Radius;                                            // 0x5c(0x4)
+	bool                                                         bUseGroupAForAll;                                  // 0x60(0x1)
+	struct KillSphereGroupParams                                 AdditionalParams;                                  // 0x64(0x10)
+};
+
+
+// Size 0x48 (Full Size[0x80] - InheritedSize[0x38]
+class AudioSettings: public DeveloperSettings
+{
+public:
+	struct StringAssetReference                                  DefaultSoundClassName;                             // 0x38(0x10)
+	struct StringAssetReference                                  DefaultBaseSoundMix;                               // 0x48(0x10)
+	struct StringAssetReference                                  VoiPSoundClass;                                    // 0x58(0x10)
+	float                                                        LowPassFilterResonance;                            // 0x68(0x4)
+	int                                                          MaximumConcurrentStreams;                          // 0x6c(0x4)
+	TArray<struct AudioQualitySettings>                          QualityLevels;                                     // 0x70(0x10)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class InterpGroup: public Object
+{
+public:
+	TArray<class InterpTrack*>                                   InterpTracks;                                      // 0x30(0x10)
+	struct FName                                                 GroupName;                                         // 0x40(0x8)
+	struct Color                                                 GroupColor;                                        // 0x48(0x4)
+	bool                                                         bCollapsed;                                        // 0x4c(0x1)
+	bool                                                         bVisible;                                          // 0x4c(0x1)
+	bool                                                         bIsFolder;                                         // 0x4c(0x1)
+	bool                                                         bIsParented;                                       // 0x4c(0x1)
+	bool                                                         bIsSelected;                                       // 0x4c(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class InterpTrackInstEvent: public InterpTrackInst
+{
+public:
+	float                                                        LastUpdatePosition;                                // 0x28(0x4)
+};
+
+
+// Size 0x70 (Full Size[0xc0] - InheritedSize[0x50]
+class ParticleModuleTypeDataMesh: public ParticleModuleTypeDataBase
+{
+public:
+	class StaticMesh*                                            Mesh;                                              // 0x50(0x8)
+	bool                                                         CastShadows;                                       // 0x58(0x1)
+	bool                                                         DoCollisions;                                      // 0x58(0x1)
+	char                                                         MeshAlignment;                                     // 0x5c(0x1)
+	bool                                                         bOverrideMaterial;                                 // 0x60(0x1)
+	float                                                        Pitch;                                             // 0x64(0x4)
+	float                                                        Roll;                                              // 0x68(0x4)
+	float                                                        Yaw;                                               // 0x6c(0x4)
+	struct RawDistributionVector                                 RollPitchYawRange;                                 // 0x70(0x38)
+	char                                                         AxisLockOption;                                    // 0xb0(0x1)
+	bool                                                         bCameraFacing;                                     // 0xb4(0x1)
+	char                                                         CameraFacingUpAxisOption;                          // 0xb8(0x1)
+	char                                                         CameraFacingOption;                                // 0xb9(0x1)
+	bool                                                         bApplyParticleRotationAsSpin;                      // 0xbc(0x1)
+	bool                                                         bFaceCameraDirectionRatherThanPosition;            // 0xbc(0x1)
+	bool                                                         bFaceCameraOnlyOnSpawn;                            // 0xbc(0x1)
+	bool                                                         bCollisionsConsiderPartilceSize;                   // 0xbc(0x1)
+};
+
+
+// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
+class DataTable: public Object
+{
+public:
+	class ScriptStruct*                                          RowStruct;                                         // 0x28(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class BoneMaskFilter: public Object
+{
+public:
+	TArray<struct InputBlendPose>                                BlendPoses;                                        // 0x28(0x10)
+};
+
+
+// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
+class FontImportOptions: public Object
+{
+public:
+	struct FontImportOptionsData                                 Data;                                              // 0x28(0xb0)
+};
+
+
+// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
+class ParticleModuleKillHeight: public ParticleModuleKillBase
+{
+public:
+	struct RawDistributionFloat                                  Height;                                            // 0x50(0x38)
+	bool                                                         bAbsolute;                                         // 0x88(0x1)
+	bool                                                         bFloor;                                            // 0x88(0x1)
+	bool                                                         bApplyPSysScale;                                   // 0x88(0x1)
+};
+
+
+// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
+class ActorComponent: public Object
+{
+public:
+	struct ActorComponentTickFunction                            PrimaryComponentTick;                              // 0x30(0x50)
+	TArray<struct Name>                                          ComponentTags;                                     // 0x80(0x10)
+	TArray<struct SimpleMemberReference>                         UCSModifiedProperties;                             // 0x90(0x10)
+	TArray<class AssetUserData*>                                 AssetUserData;                                     // 0xb0(0x10)
+	bool                                                         bReplicates;                                       // 0xc0(0x1)
+	bool                                                         bNetAddressable;                                   // 0xc0(0x1)
+	bool                                                         bCreatedByConstructionScript;                      // 0xc1(0x1)
+	bool                                                         bInstanceComponent;                                // 0xc1(0x1)
+	bool                                                         bAutoActivate;                                     // 0xc2(0x1)
+	bool                                                         bIsActive;                                         // 0xc2(0x1)
+	bool                                                         bEditableWhenInherited;                            // 0xc2(0x1)
+	bool                                                         bNeedsLoadForClient;                               // 0xc3(0x1)
+	bool                                                         bNeedsLoadForServer;                               // 0xc3(0x1)
+	char                                                         TargetNetDormancy;                                 // 0xc4(0x1)
+	char                                                         CreationMethod;                                    // 0xc5(0x1)
+};
+
+
+// Size 0x68 (Full Size[0xb8] - InheritedSize[0x50]
+class ParticleModuleTrailSource: public ParticleModuleTrailBase
+{
+public:
+	char                                                         SourceMethod;                                      // 0x50(0x1)
+	struct FName                                                 SourceName;                                        // 0x54(0x8)
+	struct RawDistributionFloat                                  SourceStrength;                                    // 0x60(0x38)
+	bool                                                         bLockSourceStength;                                // 0x98(0x1)
+	int                                                          SourceOffsetCount;                                 // 0x9c(0x4)
+	TArray<struct Vector>                                        SourceOffsetDefaults;                              // 0xa0(0x10)
+	char                                                         SelectionMethod;                                   // 0xb0(0x1)
+	bool                                                         bInheritRotation;                                  // 0xb4(0x1)
+};
+
+
+// Size 0x90 (Full Size[0xb8] - InheritedSize[0x28]
+class SlateBrushAsset: public Object
+{
+public:
+	struct SlateBrush                                            Brush;                                             // 0x28(0x90)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class LevelActorContainer: public Object
+{
+public:
+	TArray<class Actor*>                                         Actors;                                            // 0x28(0x10)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class Rig: public Object
+{
+public:
+	TArray<struct TransformBase>                                 TransformBases;                                    // 0x28(0x10)
+	TArray<struct Node>                                          Nodes;                                             // 0x38(0x10)
+};
+
+
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class SoundMix: public Object
+{
+public:
+	bool                                                         bApplyEQ;                                          // 0x28(0x1)
+	float                                                        EQPriority;                                        // 0x2c(0x4)
+	struct AudioEQEffect                                         EQSettings;                                        // 0x30(0x28)
+	TArray<struct SoundClassAdjuster>                            SoundClassEffects;                                 // 0x58(0x10)
+	float                                                        InitialDelay;                                      // 0x68(0x4)
+	float                                                        FadeInTime;                                        // 0x6c(0x4)
+	float                                                        Duration;                                          // 0x70(0x4)
+	float                                                        FadeOutTime;                                       // 0x74(0x4)
+};
+
+
+// Size 0x20 (Full Size[0x3e8] - InheritedSize[0x3c8]
+class PhysicsConstraintActor: public RigidBodyBase
+{
+public:
+	class PhysicsConstraintComponent*                            ConstraintComp;                                    // 0x3c8(0x8)
+	class Actor*                                                 ConstraintActor1;                                  // 0x3d0(0x8)
+	class Actor*                                                 ConstraintActor2;                                  // 0x3d8(0x8)
+	bool                                                         bDisableCollision;                                 // 0x3e0(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
+class ParticleModuleOrientationAxisLock: public ParticleModuleOrientationBase
+{
+public:
+	char                                                         LockAxisFlags;                                     // 0x50(0x1)
+	bool                                                         bLockToOwnerAxis;                                  // 0x54(0x1)
+};
+
+
+// Size 0x218 (Full Size[0x240] - InheritedSize[0x28]
+class PhysicsConstraintTemplate: public Object
+{
+public:
+	struct FName                                                 JointName;                                         // 0x28(0x8)
+	struct FName                                                 ConstraintBone1;                                   // 0x30(0x8)
+	struct FName                                                 ConstraintBone2;                                   // 0x38(0x8)
+	struct Vector                                                Pos1;                                              // 0x40(0xc)
+	struct Vector                                                PriAxis1;                                          // 0x4c(0xc)
+	struct Vector                                                SecAxis1;                                          // 0x58(0xc)
+	struct Vector                                                Pos2;                                              // 0x64(0xc)
+	struct Vector                                                PriAxis2;                                          // 0x70(0xc)
+	struct Vector                                                SecAxis2;                                          // 0x7c(0xc)
+	bool                                                         bEnableProjection;                                 // 0x88(0x1)
+	float                                                        ProjectionLinearTolerance;                         // 0x8c(0x4)
+	float                                                        ProjectionAngularTolerance;                        // 0x90(0x4)
+	char                                                         LinearXMotion;                                     // 0x94(0x1)
+	char                                                         LinearYMotion;                                     // 0x95(0x1)
+	char                                                         LinearZMotion;                                     // 0x96(0x1)
+	float                                                        LinearLimitSize;                                   // 0x98(0x4)
+	bool                                                         bLinearLimitSoft;                                  // 0x9c(0x1)
+	float                                                        LinearLimitStiffness;                              // 0xa0(0x4)
+	float                                                        LinearLimitDamping;                                // 0xa4(0x4)
+	bool                                                         bLinearBreakable;                                  // 0xa8(0x1)
+	float                                                        LinearBreakThreshold;                              // 0xac(0x4)
+	char                                                         AngularSwing1Motion;                               // 0xb0(0x1)
+	char                                                         AngularSwing2Motion;                               // 0xb1(0x1)
+	char                                                         AngularTwistMotion;                                // 0xb2(0x1)
+	bool                                                         bSwingLimitSoft;                                   // 0xb4(0x1)
+	bool                                                         bTwistLimitSoft;                                   // 0xb4(0x1)
+	float                                                        Swing1LimitAngle;                                  // 0xb8(0x4)
+	float                                                        Swing2LimitAngle;                                  // 0xbc(0x4)
+	float                                                        TwistLimitAngle;                                   // 0xc0(0x4)
+	float                                                        SwingLimitStiffness;                               // 0xc4(0x4)
+	float                                                        SwingLimitDamping;                                 // 0xc8(0x4)
+	float                                                        TwistLimitStiffness;                               // 0xcc(0x4)
+	float                                                        TwistLimitDamping;                                 // 0xd0(0x4)
+	bool                                                         bAngularBreakable;                                 // 0xd4(0x1)
+	float                                                        AngularBreakThreshold;                             // 0xd8(0x4)
+	struct ConstraintInstance                                    DefaultInstance;                                   // 0xe0(0x160)
+};
+
+
+// Size 0x18 (Full Size[0x68] - InheritedSize[0x50]
+class ParticleModuleTypeDataAnimTrail: public ParticleModuleTypeDataBase
+{
+public:
+	bool                                                         bDeadTrailsOnDeactivate;                           // 0x50(0x1)
+	bool                                                         bEnablePreviousTangentRecalculation;               // 0x50(0x1)
+	bool                                                         bTangentRecalculationEveryFrame;                   // 0x50(0x1)
+	float                                                        TilingDistance;                                    // 0x54(0x4)
+	float                                                        DistanceTessellationStepSize;                      // 0x58(0x4)
+	float                                                        TangentTessellationStepSize;                       // 0x5c(0x4)
+	float                                                        WidthTessellationStepSize;                         // 0x60(0x4)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class BookMark: public Object
+{
+public:
+	struct Vector                                                Location;                                          // 0x28(0xc)
+	struct Rotator                                               Rotation;                                          // 0x34(0xc)
+	TArray<String>                                               HiddenLevels;                                      // 0x40(0x10)
+};
+
+
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
+class Exporter: public Object
+{
+public:
+	class UClass*                                                SupportedClass;                                    // 0x28(0x8)
+	class Object*                                                ExportRootScope;                                   // 0x30(0x8)
+	TArray<String>                                               FormatExtension;                                   // 0x38(0x10)
+	TArray<String>                                               FormatDescription;                                 // 0x48(0x10)
+	int                                                          PreferredFormatIndex;                              // 0x58(0x4)
+	int                                                          TextIndent;                                        // 0x5c(0x4)
+	bool                                                         bText;                                             // 0x60(0x1)
+	bool                                                         bSelectedOnly;                                     // 0x60(0x1)
+	bool                                                         bForceFileOperations;                              // 0x60(0x1)
+};
+
+
+// Size 0x88 (Full Size[0xd8] - InheritedSize[0x50]
+class ParticleModuleCollisionGPU: public ParticleModuleCollisionBase
+{
+public:
+	struct RawDistributionFloat                                  Resilience;                                        // 0x50(0x38)
+	struct RawDistributionFloat                                  ResilienceScaleOverLife;                           // 0x88(0x38)
+	float                                                        DampingFactorRotation;                             // 0xc0(0x4)
+	float                                                        Friction;                                          // 0xc4(0x4)
+	float                                                        RadiusScale;                                       // 0xc8(0x4)
+	float                                                        RadiusBias;                                        // 0xcc(0x4)
+	char                                                         Response;                                          // 0xd0(0x1)
+	char                                                         CollisionMode;                                     // 0xd1(0x1)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class InstancedActorDelegateBinding: public DynamicBlueprintBinding
+{
+public:
+	TArray<struct BlueprintInstancedActorDelegateBinding>        ActorDelegateBindings;                             // 0x28(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class InheritableComponentHandler: public Object
+{
+public:
+	TArray<struct ComponentOverrideRecord>                       Records;                                           // 0x28(0x10)
 };
 
 
 // Size 0x38 (Full Size[0x88] - InheritedSize[0x50]
-class ParticleModuleAlignRotationToVelocity: public ParticleModuleRotationBase
+class ParticleModuleMeshRotationRateMultiplyLife: public ParticleModuleRotationRateBase
 {
 public:
-	struct RawDistributionFloat                                  AdditionalAngle;                                   // 0x50(0x38)
+	struct RawDistributionVector                                 LifeMultiplier;                                    // 0x50(0x38)
+};
+
+
+// Size 0x18 (Full Size[0x418] - InheritedSize[0x400]
+class LevelStreamingVolume: public Volume
+{
+public:
+	TArray<struct Name>                                          StreamingLevelNames;                               // 0x400(0x10)
+	bool                                                         bEditorPreVisOnly;                                 // 0x410(0x1)
+	bool                                                         bDisabled;                                         // 0x410(0x1)
+	char                                                         StreamingUsage;                                    // 0x414(0x1)
+};
+
+
+// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
+class ParticleModuleSizeMultiplyLife: public ParticleModuleSizeBase
+{
+public:
+	struct RawDistributionVector                                 LifeMultiplier;                                    // 0x50(0x38)
+	bool                                                         MultiplyX;                                         // 0x88(0x1)
+	bool                                                         MultiplyY;                                         // 0x88(0x1)
+	bool                                                         MultiplyZ;                                         // 0x88(0x1)
+};
+
+
+// Size 0x118 (Full Size[0x140] - InheritedSize[0x28]
+class ParticleSystem: public Object
+{
+public:
+	char                                                         SystemUpdateMode;                                  // 0x28(0x1)
+	float                                                        UpdateTime_FPS;                                    // 0x2c(0x4)
+	float                                                        UpdateTime_Delta;                                  // 0x30(0x4)
+	float                                                        WarmUpTime;                                        // 0x34(0x4)
+	float                                                        WarmupTickRate;                                    // 0x38(0x4)
+	TArray<class ParticleEmitter*>                               Emitters;                                          // 0x40(0x10)
+	class ParticleSystemComponent*                               PreviewComponent;                                  // 0x50(0x8)
+	class InterpCurveEdSetup*                                    CurveEdSetup;                                      // 0x58(0x8)
+	bool                                                         bOrientZAxisTowardCamera;                          // 0x60(0x1)
+	float                                                        LODDistanceCheckTime;                              // 0x64(0x4)
+	char                                                         LODMethod;                                         // 0x68(0x1)
+	TArray<float>                                                LODDistances;                                      // 0x70(0x10)
+	bool                                                         bRegenerateLODDuplicate;                           // 0x80(0x1)
+	TArray<struct ParticleSystemLOD>                             LODSettings;                                       // 0x88(0x10)
+	bool                                                         bIgnoreBoundsRotation;                             // 0x98(0x1)
+	bool                                                         bBoostParticleAggregationPriority;                 // 0x98(0x1)
+	bool                                                         bUseFixedRelativeBoundingBox;                      // 0x98(0x1)
+	struct Box                                                   FixedRelativeBoundingBox;                          // 0x9c(0x1c)
+	bool                                                         bUseLowResTranslucencyBoundingBox;                 // 0xb8(0x1)
+	struct Box                                                   LowResTranslucencyBoundingBox;                     // 0xbc(0x1c)
+	float                                                        SecondsBeforeInactive;                             // 0xd8(0x4)
+	bool                                                         bShouldResetPeakCounts;                            // 0xdc(0x1)
+	bool                                                         bHasPhysics;                                       // 0xdc(0x1)
+	bool                                                         bPostPhysicsTick;                                  // 0xdc(0x1)
+	bool                                                         bUseRealtimeThumbnail;                             // 0xdc(0x1)
+	bool                                                         ThumbnailImageOutOfDate;                           // 0xdc(0x1)
+	float                                                        Delay;                                             // 0xe0(0x4)
+	float                                                        DelayLow;                                          // 0xe4(0x4)
+	bool                                                         bUseDelayRange;                                    // 0xe8(0x1)
+	struct Vector                                                MacroUVPosition;                                   // 0xec(0xc)
+	float                                                        MacroUVRadius;                                     // 0xf8(0x4)
+	char                                                         OcclusionBoundsMethod;                             // 0xfc(0x1)
+	struct Box                                                   CustomOcclusionBounds;                             // 0x100(0x1c)
+	TArray<struct LODSoloTrack>                                  SoloTracking;                                      // 0x120(0x10)
+	TArray<struct NamedEmitterMaterial>                          NamedMaterialSlots;                                // 0x130(0x10)
+};
+
+
+// Size 0xc8 (Full Size[0xf0] - InheritedSize[0x28]
+class Console: public Object
+{
+public:
+	class LocalPlayer*                                           ConsoleTargetPlayer;                               // 0x38(0x8)
+	class Texture2D*                                             DefaultTexture_Black;                              // 0x40(0x8)
+	class Texture2D*                                             DefaultTexture_White;                              // 0x48(0x8)
+	TArray<String>                                               HistoryBuffer;                                     // 0x68(0x10)
+};
+
+
+// Size 0x88 (Full Size[0xd8] - InheritedSize[0x50]
+class ParticleModuleAttractorLine: public ParticleModuleAttractorBase
+{
+public:
+	struct Vector                                                EndPoint0;                                         // 0x50(0xc)
+	struct Vector                                                EndPoint1;                                         // 0x5c(0xc)
+	struct RawDistributionFloat                                  Range;                                             // 0x68(0x38)
+	struct RawDistributionFloat                                  Strength;                                          // 0xa0(0x38)
+};
+
+
+// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
+class ParticleModuleEventGenerator: public ParticleModuleEventBase
+{
+public:
+	TArray<struct ParticleEvent_GenerateInfo>                    Events;                                            // 0x50(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
+class ParticleModuleVectorFieldGlobal: public ParticleModuleVectorFieldBase
+{
+public:
+	bool                                                         bOverrideGlobalVectorFieldTightness;               // 0x50(0x1)
+	float                                                        GlobalVectorFieldScale;                            // 0x54(0x4)
+	float                                                        GlobalVectorFieldTightness;                        // 0x58(0x4)
+};
+
+
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
+class StaticMeshSocket: public Object
+{
+public:
+	struct FName                                                 SocketName;                                        // 0x28(0x8)
+	struct Vector                                                RelativeLocation;                                  // 0x30(0xc)
+	struct Rotator                                               RelativeRotation;                                  // 0x3c(0xc)
+	struct Vector                                                RelativeScale;                                     // 0x48(0xc)
+	struct FString                                               Tag;                                               // 0x58(0x10)
+};
+
+
+// Size 0x50 (Full Size[0x450] - InheritedSize[0x400]
+class AudioVolume: public Volume
+{
+public:
+	float                                                        Priority;                                          // 0x400(0x4)
+	bool                                                         bEnabled;                                          // 0x404(0x1)
+	struct ReverbSettings                                        Settings;                                          // 0x408(0x18)
+	struct InteriorSettings                                      AmbientZoneSettings;                               // 0x420(0x24)
+	class AudioVolume*                                           NextLowerPriorityVolume;                           // 0x448(0x8)
+};
+
+
+// Size 0x2d8 (Full Size[0x300] - InheritedSize[0x28]
+class Level: public Object
+{
+public:
+	class LevelActorContainer*                                   ActorCluster;                                      // 0xc8(0x8)
+	class World*                                                 OwningWorld;                                       // 0xd0(0x8)
+	class Model*                                                 Model;                                             // 0xd8(0x8)
+	TArray<class ModelComponent*>                                ModelComponents;                                   // 0xe0(0x10)
+	class LevelScriptActor*                                      LevelScriptActor;                                  // 0xf0(0x8)
+	class NavigationObjectBase*                                  NavListStart;                                      // 0xf8(0x8)
+	class NavigationObjectBase*                                  NavListEnd;                                        // 0x100(0x8)
+	TArray<class NavigationDataChunk*>                           NavDataChunks;                                     // 0x108(0x10)
+	float                                                        LightmapTotalSize;                                 // 0x118(0x4)
+	float                                                        ShadowmapTotalSize;                                // 0x11c(0x4)
+	TArray<struct Vector>                                        StaticNavigableGeometry;                           // 0x120(0x10)
+	bool                                                         LevelVisibility;                                   // 0x260(0x1)
+	bool                                                         Blocked;                                           // 0x270(0x1)
+	TArray<class AssetUserData*>                                 AssetUserData;                                     // 0x2d8(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class DeviceProfileManager: public Object
+{
+public:
+	TArray<class Object*>                                        Profiles;                                          // 0x28(0x10)
+};
+
+
+// Size 0x58 (Full Size[0xa8] - InheritedSize[0x50]
+class ParticleModuleLocationEmitter: public ParticleModuleLocationBase
+{
+public:
+	struct FName                                                 EmitterName;                                       // 0x50(0x8)
+	char                                                         SelectionMethod;                                   // 0x58(0x1)
+	bool                                                         InheritSourceVelocity;                             // 0x5c(0x1)
+	struct RawDistributionFloat                                  InheritSourceVelocityScaleDistribution;            // 0x60(0x38)
+	bool                                                         bInheritSourceRotation;                            // 0x98(0x1)
+	float                                                        InheritSourceRotationScale;                        // 0x9c(0x4)
+	char                                                         MissingParentParticlesBehaviour;                   // 0xa0(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
+class ParticleModuleVectorFieldScale: public ParticleModuleVectorFieldBase
+{
+public:
+	class DistributionFloat*                                     VectorFieldScale;                                  // 0x50(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class AutomaticInstancingSettings: public DeveloperSettings
+{
+public:
+	bool                                                         IsEnabled;                                         // 0x38(0x1)
+};
+
+
+// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
+class AvoidanceManager: public Object
+{
+public:
+	float                                                        DefaultTimeToLive;                                 // 0x30(0x4)
+	float                                                        LockTimeAfterAvoid;                                // 0x34(0x4)
+	float                                                        LockTimeAfterClean;                                // 0x38(0x4)
+	float                                                        DeltaTimeToPredict;                                // 0x3c(0x4)
+	float                                                        ArtificialRadiusExpansion;                         // 0x40(0x4)
+	float                                                        TestHeightDifference;                              // 0x44(0x4)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class DialogueVoice: public Object
+{
+public:
+	char                                                         Gender;                                            // 0x28(0x1)
+	char                                                         Plurality;                                         // 0x29(0x1)
+	struct Guid                                                  LocalizationGUID;                                  // 0x2c(0x10)
+};
+
+
+// Size 0x450 (Full Size[0x478] - InheritedSize[0x28]
+class NetDriver: public Object
+{
+public:
+	struct FString                                               NetConnectionClassName;                            // 0x38(0x10)
+	int                                                          MaxDownloadSize;                                   // 0x48(0x4)
+	bool                                                         bClampListenServerTickRate;                        // 0x4c(0x1)
+	int                                                          NetServerMaxTickRate;                              // 0x50(0x4)
+	int                                                          MaxInternetClientRate;                             // 0x54(0x4)
+	int                                                          MaxClientRate;                                     // 0x58(0x4)
+	float                                                        ServerTravelPause;                                 // 0x5c(0x4)
+	float                                                        SpawnPrioritySeconds;                              // 0x60(0x4)
+	float                                                        RelevantTimeout;                                   // 0x64(0x4)
+	float                                                        KeepAliveTime;                                     // 0x68(0x4)
+	float                                                        InitialConnectTimeout;                             // 0x6c(0x4)
+	float                                                        ConnectionTimeout;                                 // 0x70(0x4)
+	class NetConnection*                                         ServerConnection;                                  // 0x78(0x8)
+	TArray<class NetConnection*>                                 ClientConnections;                                 // 0x80(0x10)
+	class World*                                                 World;                                             // 0x90(0x8)
+	class UClass*                                                NetConnectionClass;                                // 0xc8(0x8)
+	class Property*                                              RoleProperty;                                      // 0xd0(0x8)
+	class Property*                                              RemoteRoleProperty;                                // 0xd8(0x8)
+	struct FName                                                 NetDriverName;                                     // 0xe0(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x1d0] - InheritedSize[0x1c8]
+class MaterialExpressionAntialiasedTextureMask: public MaterialExpressionTextureSampleParameter2D
+{
+public:
+	float                                                        Threshold;                                         // 0x1c8(0x4)
+	char                                                         Channel;                                           // 0x1cc(0x1)
+};
+
+
+// Size 0x158 (Full Size[0x1a8] - InheritedSize[0x50]
+class ParticleModuleBeamNoise: public ParticleModuleBeamBase
+{
+public:
+	bool                                                         bLowFreq_Enabled;                                  // 0x50(0x1)
+	int                                                          Frequency;                                         // 0x54(0x4)
+	int                                                          Frequency_LowRange;                                // 0x58(0x4)
+	struct RawDistributionVector                                 NoiseRange;                                        // 0x60(0x38)
+	struct RawDistributionFloat                                  NoiseRangeScale;                                   // 0x98(0x38)
+	bool                                                         bNRScaleEmitterTime;                               // 0xd0(0x1)
+	struct RawDistributionVector                                 NoiseSpeed;                                        // 0xd8(0x38)
+	bool                                                         bSmooth;                                           // 0x110(0x1)
+	float                                                        NoiseLockRadius;                                   // 0x114(0x4)
+	bool                                                         bNoiseLock;                                        // 0x118(0x1)
+	bool                                                         bOscillate;                                        // 0x118(0x1)
+	float                                                        NoiseLockTime;                                     // 0x11c(0x4)
+	float                                                        NoiseTension;                                      // 0x120(0x4)
+	bool                                                         bUseNoiseTangents;                                 // 0x124(0x1)
+	struct RawDistributionFloat                                  NoiseTangentStrength;                              // 0x128(0x38)
+	int                                                          NoiseTessellation;                                 // 0x160(0x4)
+	bool                                                         bTargetNoise;                                      // 0x164(0x1)
+	float                                                        FrequencyDistance;                                 // 0x168(0x4)
+	bool                                                         bApplyNoiseScale;                                  // 0x16c(0x1)
+	struct RawDistributionFloat                                  NoiseScale;                                        // 0x170(0x38)
+};
+
+
+// Size 0x10 (Full Size[0x410] - InheritedSize[0x400]
+class PhysicsVolume: public Volume
+{
+public:
+	float                                                        TerminalVelocity;                                  // 0x400(0x4)
+	int                                                          Priority;                                          // 0x404(0x4)
+	float                                                        FluidFriction;                                     // 0x408(0x4)
+	bool                                                         bWaterVolume;                                      // 0x40c(0x1)
+	bool                                                         bPhysicsOnContact;                                 // 0x40c(0x1)
+};
+
+
+// Size 0xc8 (Full Size[0xf0] - InheritedSize[0x28]
+class MaterialParameterCollectionInstance: public Object
+{
+public:
+	class MaterialParameterCollection*                           Collection;                                        // 0x30(0x8)
+	class World*                                                 World;                                             // 0x38(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class InterpTrackInstProperty: public InterpTrackInst
+{
+public:
+	class Property*                                              InterpProperty;                                    // 0x28(0x8)
+	class Object*                                                PropertyOuterObjectInst;                           // 0x30(0x8)
+};
+
+
+// Size 0xd0 (Full Size[0xf8] - InheritedSize[0x28]
+class PhysicsAsset: public Object
+{
+public:
+	TArray<class BodySetup*>                                     BodySetup;                                         // 0x28(0x10)
+	TArray<int>                                                  BoundsBodies;                                      // 0x38(0x10)
+	TArray<class PhysicsConstraintTemplate*>                     ConstraintSetup;                                   // 0x48(0x10)
+};
+
+
+// Size 0x1b8 (Full Size[0x208] - InheritedSize[0x50]
+class ParticleModuleLocationPrimitiveSphereSlice: public ParticleModuleLocationBase
+{
+public:
+	struct RawDistributionFloat                                  StartRadius;                                       // 0x50(0x38)
+	struct RawDistributionFloat                                  AdditionalStartRadiuses;                           // 0x88(0x38)
+	bool                                                         StartRadiusUseGroupAForAll;                        // 0x168(0x1)
+	struct PrimitiveSphereEmitterAngleRanges                     AngleRanges;                                       // 0x16c(0x10)
+	float                                                        FirstSliceDistributionWeight;                      // 0x18c(0x4)
+	bool                                                         SurfaceOnly;                                       // 0x190(0x1)
+	bool                                                         Velocity;                                          // 0x190(0x1)
+	struct RawDistributionFloat                                  VelocityScale;                                     // 0x198(0x38)
+	struct RawDistributionVector                                 StartLocation;                                     // 0x1d0(0x38)
+};
+
+
+// Size 0x68 (Full Size[0x228] - InheritedSize[0x1c0]
+class BlueprintGeneratedClass: public Class
+{
+public:
+	int                                                          NumReplicatedProperties;                           // 0x1c0(0x4)
+	TArray<class DynamicBlueprintBinding*>                       DynamicBindingObjects;                             // 0x1c8(0x10)
+	TArray<class ActorComponent*>                                ComponentTemplates;                                // 0x1d8(0x10)
+	TArray<class TimelineTemplate*>                              Timelines;                                         // 0x1e8(0x10)
+	class SimpleConstructionScript*                              SimpleConstructionScript;                          // 0x1f8(0x8)
+	class InheritableComponentHandler*                           InheritableComponentHandler;                       // 0x200(0x8)
+	class StructProperty*                                        UberGraphFramePointerProperty;                     // 0x208(0x8)
+	class Function*                                              UberGraphFunction;                                 // 0x210(0x8)
+	TArray<struct EventGraphFastCallPair>                        FastCallPairs;                                     // 0x218(0x10)
+};
+
+
+// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
+class TimelineTemplate: public Object
+{
+public:
+	float                                                        TimelineLength;                                    // 0x28(0x4)
+	char                                                         LengthMode;                                        // 0x2c(0x1)
+	bool                                                         bAutoPlay;                                         // 0x30(0x1)
+	bool                                                         bLoop;                                             // 0x30(0x1)
+	bool                                                         bReplicated;                                       // 0x30(0x1)
+	bool                                                         bValidatedAsWired;                                 // 0x30(0x1)
+	TArray<struct TTEventTrack>                                  EventTracks;                                       // 0x38(0x10)
+	TArray<struct TTFloatTrack>                                  FloatTracks;                                       // 0x48(0x10)
+	TArray<struct TTVectorTrack>                                 VectorTracks;                                      // 0x58(0x10)
+	TArray<struct TTLinearColorTrack>                            LinearColorTracks;                                 // 0x68(0x10)
+	TArray<struct BPVariableMetaDataEntry>                       MetaDataArray;                                     // 0x78(0x10)
+	struct Guid                                                  TimelineGuid;                                      // 0x88(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x410] - InheritedSize[0x400]
+class NavModifierVolume: public Volume
+{
+public:
+	class UClass*                                                AreaClass;                                         // 0x408(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class NavigationQueryFilter: public Object
+{
+public:
+	TArray<struct NavigationFilterArea>                          Areas;                                             // 0x28(0x10)
+	struct NavigationFilterFlags                                 IncludeFlags;                                      // 0x38(0x4)
+	struct NavigationFilterFlags                                 ExcludeFlags;                                      // 0x3c(0x4)
+};
+
+
+// Size 0x80 (Full Size[0x448] - InheritedSize[0x3c8]
+class PlayerState: public Info
+{
+public:
+	float                                                        Score;                                             // 0x3c8(0x4)
+	char                                                         Ping;                                              // 0x3cc(0x1)
+	struct FString                                               PlayerName;                                        // 0x3d0(0x10)
+	int                                                          PlayerId;                                          // 0x3f0(0x4)
+	bool                                                         bIsSpectator;                                      // 0x3f4(0x1)
+	bool                                                         bOnlySpectator;                                    // 0x3f4(0x1)
+	bool                                                         bIsABot;                                           // 0x3f4(0x1)
+	bool                                                         bIsInactive;                                       // 0x3f4(0x1)
+	bool                                                         bFromPreviousLevel;                                // 0x3f4(0x1)
+	class UClass*                                                EngineMessageClass;                                // 0x3f8(0x8)
+	struct UniqueNetIdRepl                                       UniqueId;                                          // 0x418(0x18)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class ParticleSystemReplay: public Object
+{
+public:
+	int                                                          ClipIDNumber;                                      // 0x28(0x4)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class FFTWaterSettings: public Object
+{
+public:
+	struct StringAssetReference                                  FFTWaterMaterialName;                              // 0x28(0x10)
+	struct StringAssetReference                                  FFTWaterFoamTextureName;                           // 0x38(0x10)
+	int                                                          BaseMeshDetail;                                    // 0x48(0x4)
+};
+
+
+// Size 0x120 (Full Size[0x158] - InheritedSize[0x38]
+class UserInterfaceSettings: public DeveloperSettings
+{
+public:
+	char                                                         RenderFocusRule;                                   // 0x38(0x1)
+	struct StringClassReference                                  DefaultCursor;                                     // 0x40(0x10)
+	struct StringClassReference                                  TextEditBeamCursor;                                // 0x50(0x10)
+	struct StringClassReference                                  CrosshairsCursor;                                  // 0x60(0x10)
+	struct StringClassReference                                  GrabHandCursor;                                    // 0x70(0x10)
+	struct StringClassReference                                  GrabHandClosedCursor;                              // 0x80(0x10)
+	struct StringClassReference                                  SlashedCircleCursor;                               // 0x90(0x10)
+	float                                                        ApplicationScale;                                  // 0xa0(0x4)
+	char                                                         UIScaleRule;                                       // 0xa4(0x1)
+	struct StringClassReference                                  CustomScalingRuleClass;                            // 0xa8(0x10)
+	struct RuntimeFloatCurve                                     UIScaleCurve;                                      // 0xb8(0x80)
+	TArray<class Object*>                                        CursorClasses;                                     // 0x138(0x10)
+	class UClass*                                                CustomScalingRuleClassInstance;                    // 0x148(0x8)
+	class DPICustomScalingRule*                                  CustomScalingRule;                                 // 0x150(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class PlatformInterfaceBase: public Object
+{
+public:
+	TArray<struct DelegateArray>                                 AllDelegates;                                      // 0x28(0x10)
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class InterpTrackInstFloatMaterialParam: public InterpTrackInst
+{
+public:
+	TArray<class MaterialInstanceDynamic*>                       MaterialInstances;                                 // 0x28(0x10)
+	TArray<float>                                                ResetFloats;                                       // 0x38(0x10)
+	TArray<struct PrimitiveMaterialRef>                          PrimitiveMaterialRefs;                             // 0x48(0x10)
+	class InterpTrackFloatMaterialParam*                         InstancedTrack;                                    // 0x58(0x8)
+};
+
+
+// Size 0xe8 (Full Size[0x110] - InheritedSize[0x28]
+class NavCollision: public Object
+{
+public:
+	TArray<struct NavCollisionCylinder>                          CylinderCollision;                                 // 0x78(0x10)
+	TArray<struct NavCollisionBox>                               BoxCollision;                                      // 0x88(0x10)
+	class UClass*                                                AreaClass;                                         // 0x98(0x8)
+	bool                                                         bIsDynamicObstacle;                                // 0xa0(0x1)
+	bool                                                         bGatherConvexGeometry;                             // 0xa0(0x1)
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class InterpTrackInstVectorMaterialParam: public InterpTrackInst
+{
+public:
+	TArray<class MaterialInstanceDynamic*>                       MaterialInstances;                                 // 0x28(0x10)
+	TArray<struct Vector>                                        ResetVectors;                                      // 0x38(0x10)
+	TArray<struct PrimitiveMaterialRef>                          PrimitiveMaterialRefs;                             // 0x48(0x10)
+	class InterpTrackVectorMaterialParam*                        InstancedTrack;                                    // 0x58(0x8)
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class DialogueWave: public Object
+{
+public:
+	bool                                                         bMature;                                           // 0x28(0x1)
+	struct FString                                               SpokenText;                                        // 0x30(0x10)
+	TArray<struct DialogueContextMapping>                        ContextMappings;                                   // 0x40(0x10)
+	struct Guid                                                  LocalizationGUID;                                  // 0x50(0x10)
+};
+
+
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class GameUserSettings: public Object
+{
+public:
+	bool                                                         bUseVSync;                                         // 0x28(0x1)
+	uint32                                                       ResolutionSizeX;                                   // 0x48(0x4)
+	uint32                                                       ResolutionSizeY;                                   // 0x4c(0x4)
+	uint32                                                       LastUserConfirmedResolutionSizeX;                  // 0x50(0x4)
+	uint32                                                       LastUserConfirmedResolutionSizeY;                  // 0x54(0x4)
+	int                                                          WindowPosX;                                        // 0x58(0x4)
+	int                                                          WindowPosY;                                        // 0x5c(0x4)
+	bool                                                         bUseDesktopResolutionForFullscreen;                // 0x60(0x1)
+	int                                                          FullscreenMode;                                    // 0x64(0x4)
+	int                                                          LastConfirmedFullscreenMode;                       // 0x68(0x4)
+	uint32                                                       Version;                                           // 0x6c(0x4)
+	int                                                          AudioQualityLevel;                                 // 0x70(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class InterpTrackInstVisibility: public InterpTrackInst
+{
+public:
+	char                                                         Action;                                            // 0x28(0x1)
+	float                                                        LastUpdatePosition;                                // 0x2c(0x4)
+};
+
+
+// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
+class ParticleModuleEventGeneratorGPU: public ParticleModuleEventBase
+{
+public:
+	TArray<struct ParticleEventGPU_GenerateInfo>                 Events;                                            // 0x50(0x10)
+};
+
+
+// Size 0x80 (Full Size[0xa8] - InheritedSize[0x28]
+class EngineMessage: public LocalMessage
+{
+public:
+	struct FString                                               FailedPlaceMessage;                                // 0x28(0x10)
+	struct FString                                               MaxedOutMessage;                                   // 0x38(0x10)
+	struct FString                                               EnteredMessage;                                    // 0x48(0x10)
+	struct FString                                               LeftMessage;                                       // 0x58(0x10)
+	struct FString                                               GlobalNameChange;                                  // 0x68(0x10)
+	struct FString                                               SpecEnteredMessage;                                // 0x78(0x10)
+	struct FString                                               NewPlayerMessage;                                  // 0x88(0x10)
+	struct FString                                               NewSpecMessage;                                    // 0x98(0x10)
+};
+
+
+// Size 0x128 (Full Size[0x178] - InheritedSize[0x50]
+class ParticleModuleLocation: public ParticleModuleLocationBase
+{
+public:
+	struct RawDistributionVector                                 StartLocation;                                     // 0x50(0x38)
+	struct RawDistributionVector                                 AdditionalStartLocations;                          // 0x88(0x38)
+	bool                                                         StartLocationUseGroupAForAll;                      // 0x168(0x1)
+	float                                                        DistributeOverNPoints;                             // 0x16c(0x4)
+	float                                                        DistributeThreshold;                               // 0x170(0x4)
+};
+
+
+// Size 0x38 (Full Size[0x88] - InheritedSize[0x50]
+class ParticleModuleRotationRateMultiplyLife: public ParticleModuleRotationRateBase
+{
+public:
+	struct RawDistributionFloat                                  LifeMultiplier;                                    // 0x50(0x38)
+};
+
+
+// Size 0xe8 (Full Size[0x138] - InheritedSize[0x50]
+class ParticleModuleLight: public ParticleModuleLightBase
+{
+public:
+	bool                                                         bUseInverseSquaredFalloff;                         // 0x50(0x1)
+	bool                                                         bAffectsTranslucency;                              // 0x51(0x1)
+	bool                                                         bIgnoreComponentTint;                              // 0x52(0x1)
+	bool                                                         bPreviewLightRadius;                               // 0x53(0x1)
+	float                                                        SpawnFraction;                                     // 0x54(0x4)
+	struct RawDistributionVector                                 ColorScaleOverLife;                                // 0x58(0x38)
+	struct RawDistributionFloat                                  BrightnessOverLife;                                // 0x90(0x38)
+	struct RawDistributionFloat                                  RadiusScale;                                       // 0xc8(0x38)
+	struct RawDistributionFloat                                  LightExponent;                                     // 0x100(0x38)
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class MaterialParameterCollection: public Object
+{
+public:
+	struct Guid                                                  StateId;                                           // 0x28(0x10)
+	TArray<struct CollectionScalarParameter>                     ScalarParameters;                                  // 0x38(0x10)
+	TArray<struct CollectionVectorParameter>                     VectorParameters;                                  // 0x48(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class StringArrayDataAsset: public DataAsset
+{
+public:
+	TArray<String>                                               Array;                                             // 0x28(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class MaterialInterface: public Object
+{
+public:
+	class SubsurfaceProfile*                                     SubsurfaceProfile;                                 // 0x30(0x8)
+	struct LightmassMaterialInterfaceSettings                    LightmassSettings;                                 // 0x3c(0x14)
+};
+
+
+// Size 0x118 (Full Size[0x140] - InheritedSize[0x28]
+class CameraShake: public Object
+{
+public:
+	bool                                                         bSingleInstance;                                   // 0x28(0x1)
+	float                                                        OscillationDuration;                               // 0x2c(0x4)
+	float                                                        OscillationBlendInTime;                            // 0x30(0x4)
+	float                                                        OscillationBlendOutTime;                           // 0x34(0x4)
+	struct ROscillator                                           RotOscillation;                                    // 0x38(0x24)
+	struct VOscillator                                           LocOscillation;                                    // 0x5c(0x24)
+	struct FOscillator                                           FOVOscillation;                                    // 0x80(0xc)
+	float                                                        AnimPlayRate;                                      // 0x8c(0x4)
+	float                                                        AnimScale;                                         // 0x90(0x4)
+	float                                                        AnimBlendInTime;                                   // 0x94(0x4)
+	float                                                        AnimBlendOutTime;                                  // 0x98(0x4)
+	float                                                        RandomAnimSegmentDuration;                         // 0x9c(0x4)
+	class CameraAnim*                                            Anim;                                              // 0xa0(0x8)
+	bool                                                         bRandomAnimSegment;                                // 0xa8(0x1)
+	class PlayerCameraManager*                                   CameraOwner;                                       // 0xc0(0x8)
+	float                                                        ShakeScale;                                        // 0x130(0x4)
+	float                                                        OscillatorTimeRemaining;                           // 0x134(0x4)
+	class CameraAnimInst*                                        AnimInst;                                          // 0x138(0x8)
 };
 
 
@@ -113,60 +1261,69 @@ public:
 };
 
 
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class EdGraph: public Object
+// Size 0x88 (Full Size[0xb0] - InheritedSize[0x28]
+class ParticleEmitter: public Object
 {
 public:
-	class UClass*                                                Schema;                                            // 0x28(0x8)
-	TArray<class EdGraphNode*>                                   Nodes;                                             // 0x30(0x10)
-	bool                                                         bEditable;                                         // 0x40(0x1)
-	bool                                                         bAllowDeletion;                                    // 0x40(0x1)
-	bool                                                         bAllowRenaming;                                    // 0x40(0x1)
+	struct FName                                                 EmitterName;                                       // 0x28(0x8)
+	int                                                          SubUVDataOffset;                                   // 0x30(0x4)
+	char                                                         EmitterRenderMode;                                 // 0x34(0x1)
+	TArray<class ParticleLODLevel*>                              LODLevels;                                         // 0x38(0x10)
+	bool                                                         ConvertedModules;                                  // 0x48(0x1)
+	int                                                          PeakActiveParticles;                               // 0x4c(0x4)
+	int                                                          InitialAllocationCount;                            // 0x50(0x4)
+	float                                                        MediumDetailSpawnRateScale;                        // 0x54(0x4)
+	float                                                        QualityLevelSpawnRateScale;                        // 0x58(0x4)
+	char                                                         DetailMode;                                        // 0x5c(0x1)
+	char                                                         MaxEmitterQuality;                                 // 0x5d(0x1)
+	char                                                         MinEmitterQuality;                                 // 0x5e(0x1)
+	bool                                                         bIsSoloing;                                        // 0x60(0x1)
+	bool                                                         bCookedOut;                                        // 0x60(0x1)
+	bool                                                         bDisabledLODsKeepEmitterAlive;                     // 0x60(0x1)
+	bool                                                         bHasAnyEnabledLODs;                                // 0x60(0x1)
+	bool                                                         bHasAnyEnabledLODsValid;                           // 0x60(0x1)
+	TArray<class ParticleModule*>                                ModulesNeedingInstanceData;                        // 0xa0(0x10)
 };
 
 
-// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
-class ParticleModuleMeshRotation: public ParticleModuleRotationBase
+// Size 0x3b0 (Full Size[0x3d8] - InheritedSize[0x28]
+class NavigationSystem: public BlueprintFunctionLibrary
 {
 public:
-	struct RawDistributionVector                                 StartRotation;                                     // 0x50(0x38)
-	bool                                                         bInheritParent;                                    // 0x88(0x1)
+	class NavigationData*                                        MainNavData;                                       // 0x28(0x8)
+	class NavigationData*                                        AbstractNavData;                                   // 0x30(0x8)
+	bool                                                         bAutoCreateNavigationData;                         // 0x38(0x1)
+	bool                                                         bAllowClientSideNavigation;                        // 0x38(0x1)
+	bool                                                         bSupportRebuilding;                                // 0x38(0x1)
+	bool                                                         bInitialBuildingLocked;                            // 0x38(0x1)
+	bool                                                         bSkipAgentHeightCheckWhenPickingNavData;           // 0x38(0x1)
+	char                                                         DataGatheringMode;                                 // 0x3c(0x1)
+	bool                                                         bGenerateNavigationOnlyAroundNavigationInvokers;   // 0x40(0x1)
+	float                                                        ActiveTilesUpdateInterval;                         // 0x44(0x4)
+	TArray<struct NavDataConfig>                                 SupportedAgents;                                   // 0x48(0x10)
+	float                                                        DirtyAreasUpdateFreq;                              // 0x58(0x4)
+	TArray<class NavigationData*>                                NavDataSet;                                        // 0x60(0x10)
+	TArray<class NavigationData*>                                NavDataRegistrationQueue;                          // 0x70(0x10)
+	multicastinlinedelegate                                      OnNavDataRegisteredEvent;                          // 0xe0(0x10)
+	multicastinlinedelegate                                      OnNavigationGenerationFinishedDelegate;            // 0xf0(0x10)
+	char                                                         OperationMode;                                     // 0x1cc(0x1)
+	struct StringAssetReference                                  InstancedNavMeshesDataAsset;                       // 0x3c0(0x10)
+	class InstancedNavMeshesDataAsset*                           InstancedNavMeshesData;                            // 0x3d0(0x8)
 };
 
 
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class PhysicsThruster: public RigidBodyBase
+// Size 0x2b8 (Full Size[0x308] - InheritedSize[0x50]
+class ParticleModuleColor: public ParticleModuleColorBase
 {
 public:
-	class PhysicsThrusterComponent*                              ThrusterComponent;                                 // 0x3c8(0x8)
-};
-
-
-// Size 0x220 (Full Size[0x250] - InheritedSize[0x30]
-class GameViewportClient: public ScriptViewportClient
-{
-public:
-	class Console*                                               ViewportConsole;                                   // 0x38(0x8)
-	TArray<struct DebugDisplayProperty>                          DebugProperties;                                   // 0x40(0x10)
-	class World*                                                 World;                                             // 0x80(0x8)
-	class GameInstance*                                          GameInstance;                                      // 0x88(0x8)
-};
-
-
-// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
-class ParticleModuleLocationBoneSocket: public ParticleModuleLocationBase
-{
-public:
-	char                                                         SourceType;                                        // 0x50(0x1)
-	struct Vector                                                UniversalOffset;                                   // 0x54(0xc)
-	TArray<struct LocationBoneSocketInfo>                        SourceLocations;                                   // 0x60(0x10)
-	char                                                         SelectionMethod;                                   // 0x70(0x1)
-	bool                                                         bUpdatePositionEachFrame;                          // 0x74(0x1)
-	bool                                                         bOrientMeshEmitters;                               // 0x74(0x1)
-	bool                                                         bInheritBoneVelocity;                              // 0x74(0x1)
-	struct Vector                                                InheritVelocityScale;                              // 0x78(0xc)
-	float                                                        InheritedSpeedCap;                                 // 0x84(0x4)
-	struct FName                                                 SkelMeshActorParamName;                            // 0x88(0x8)
+	bool                                                         bUseGroupAColorForAllGroups;                       // 0x50(0x1)
+	struct RawDistributionVector                                 StartColor;                                        // 0x58(0x38)
+	struct RawDistributionVector                                 AdditionalStartColor;                              // 0x90(0x38)
+	bool                                                         bUseGroupAAlphaForAllGroups;                       // 0x1a8(0x1)
+	struct RawDistributionFloat                                  StartAlpha;                                        // 0x1b0(0x38)
+	struct RawDistributionFloat                                  AdditionalStartAlpha;                              // 0x1e8(0x38)
+	bool                                                         bClampAlpha;                                       // 0x300(0x1)
+	bool                                                         bIgnoreComponentColorTint;                         // 0x300(0x1)
 };
 
 
@@ -180,41 +1337,104 @@ public:
 };
 
 
-// Size 0x38 (Full Size[0x88] - InheritedSize[0x50]
-class ParticleModuleVectorFieldLocal: public ParticleModuleVectorFieldBase
+// Size 0x60 (Full Size[0xb0] - InheritedSize[0x50]
+class ParticleModuleLocationSkelVertSurface: public ParticleModuleLocationBase
 {
 public:
-	class VectorField*                                           VectorField;                                       // 0x50(0x8)
-	struct Vector                                                RelativeTranslation;                               // 0x58(0xc)
-	struct Rotator                                               RelativeRotation;                                  // 0x64(0xc)
-	struct Vector                                                RelativeScale3D;                                   // 0x70(0xc)
-	float                                                        Intensity;                                         // 0x7c(0x4)
-	float                                                        Tightness;                                         // 0x80(0x4)
-	bool                                                         bIgnoreComponentTransform;                         // 0x84(0x1)
-	bool                                                         bTileX;                                            // 0x84(0x1)
-	bool                                                         bTileY;                                            // 0x84(0x1)
-	bool                                                         bTileZ;                                            // 0x84(0x1)
+	char                                                         SourceType;                                        // 0x50(0x1)
+	struct Vector                                                UniversalOffset;                                   // 0x54(0xc)
+	bool                                                         bUpdatePositionEachFrame;                          // 0x60(0x1)
+	bool                                                         bOrientMeshEmitters;                               // 0x60(0x1)
+	bool                                                         bInheritBoneVelocity;                              // 0x60(0x1)
+	struct FName                                                 SkelMeshActorParamName;                            // 0x64(0x8)
+	TArray<struct Name>                                          ValidAssociatedBones;                              // 0x70(0x10)
+	bool                                                         bEnforceNormalCheck;                               // 0x80(0x1)
+	struct Vector                                                NormalToCompare;                                   // 0x84(0xc)
+	float                                                        NormalCheckToleranceDegrees;                       // 0x90(0x4)
+	float                                                        NormalCheckTolerance;                              // 0x94(0x4)
+	TArray<int>                                                  ValidMaterialIndices;                              // 0x98(0x10)
+	bool                                                         bInheritVertexColor;                               // 0xa8(0x1)
 };
 
 
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class ObjectLibrary: public Object
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class SoundClass: public Object
 {
 public:
-	class UClass*                                                ObjectBaseClass;                                   // 0x28(0x8)
-	bool                                                         bHasBlueprintClasses;                              // 0x30(0x1)
-	TArray<class Object*>                                        Objects;                                           // 0x38(0x10)
-	TArray<uintptr_t>                                            WeakObjects;                                       // 0x48(0x10)
-	bool                                                         bUseWeakReferences;                                // 0x58(0x1)
-	bool                                                         bIsFullyLoaded;                                    // 0x59(0x1)
+	struct SoundClassProperties                                  Properties;                                        // 0x28(0x24)
+	TArray<class SoundClass*>                                    ChildClasses;                                      // 0x50(0x10)
+	TArray<struct PassiveSoundMixModifier>                       PassiveSoundMixModifiers;                          // 0x60(0x10)
+	class SoundClass*                                            ParentClass;                                       // 0x70(0x8)
 };
 
 
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class SoundGroups: public Object
+// Size 0x30 (Full Size[0x430] - InheritedSize[0x400]
+class PrecomputedVisibilityOverrideVolume: public Volume
 {
 public:
-	TArray<struct SoundGroup>                                    SoundGroupProfiles;                                // 0x28(0x10)
+	TArray<class Actor*>                                         OverrideVisibleActors;                             // 0x400(0x10)
+	TArray<class Actor*>                                         OverrideInvisibleActors;                           // 0x410(0x10)
+	TArray<struct Name>                                          OverrideInvisibleLevels;                           // 0x420(0x10)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class AISystemBase: public Object
+{
+public:
+	struct StringClassReference                                  AISystemClassName;                                 // 0x28(0x10)
+	struct FName                                                 AISystemModuleName;                                // 0x38(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class InterpTrackInstFloatParticleParam: public InterpTrackInst
+{
+public:
+	float                                                        ResetFloat;                                        // 0x28(0x4)
+};
+
+
+// Size 0x20 (Full Size[0x198] - InheritedSize[0x178]
+class ParticleModuleLocationWorldOffset_Seeded: public ParticleModuleLocationWorldOffset
+{
+public:
+	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x178(0x20)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class MaybeCompressedCanvasRenderTarget2D: public Object
+{
+public:
+	multicastinlinedelegate                                      OnCanvasUpdate;                                    // 0x28(0x10)
+	int                                                          ChannelCount;                                      // 0x38(0x4)
+	class CanvasRenderTarget2D*                                  UncompressedRenderTarget;                          // 0x40(0x8)
+	class CompressedCanvasRenderTarget2D*                        CompressedRenderTarget;                            // 0x48(0x8)
+};
+
+
+// Size 0x48 (Full Size[0x80] - InheritedSize[0x38]
+class AnimationSettings: public DeveloperSettings
+{
+public:
+	TArray<float>                                                DefaultVisibleDistanceFactorThresholds;            // 0x38(0x10)
+	int                                                          CompressCommandletVersion;                         // 0x48(0x4)
+	TArray<String>                                               KeyEndEffectorsMatchNameArray;                     // 0x50(0x10)
+	class UClass*                                                DefaultCompressionAlgorithm;                       // 0x60(0x8)
+	char                                                         RotationCompressionFormat;                         // 0x68(0x1)
+	char                                                         TranslationCompressionFormat;                      // 0x69(0x1)
+	float                                                        AlternativeCompressionThreshold;                   // 0x6c(0x4)
+	bool                                                         ForceRecompression;                                // 0x70(0x1)
+	bool                                                         bOnlyCheckForMissingSkeletalMeshes;                // 0x71(0x1)
+	bool                                                         bForceBelowThreshold;                              // 0x72(0x1)
+	bool                                                         bFirstRecompressUsingCurrentOrDefault;             // 0x73(0x1)
+	bool                                                         bRaiseMaxErrorToExisting;                          // 0x74(0x1)
+	bool                                                         bTryFixedBitwiseCompression;                       // 0x75(0x1)
+	bool                                                         bTryPerTrackBitwiseCompression;                    // 0x76(0x1)
+	bool                                                         bTryLinearKeyRemovalCompression;                   // 0x77(0x1)
+	bool                                                         bTryIntervalKeyRemoval;                            // 0x78(0x1)
+	bool                                                         bStripAnimationDataOnDedicatedServer;              // 0x79(0x1)
 };
 
 
@@ -241,116 +1461,342 @@ public:
 };
 
 
-// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
-class ActorComponent: public Object
+// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
+class ParticleModulePivotOffset: public ParticleModuleLocationBase
 {
 public:
-	struct ActorComponentTickFunction                            PrimaryComponentTick;                              // 0x30(0x50)
-	TArray<struct Name>                                          ComponentTags;                                     // 0x80(0x10)
-	TArray<struct SimpleMemberReference>                         UCSModifiedProperties;                             // 0x90(0x10)
-	TArray<class AssetUserData*>                                 AssetUserData;                                     // 0xb0(0x10)
-	bool                                                         bReplicates;                                       // 0xc0(0x1)
-	bool                                                         bNetAddressable;                                   // 0xc0(0x1)
-	bool                                                         bCreatedByConstructionScript;                      // 0xc1(0x1)
-	bool                                                         bInstanceComponent;                                // 0xc1(0x1)
-	bool                                                         bAutoActivate;                                     // 0xc2(0x1)
-	bool                                                         bIsActive;                                         // 0xc2(0x1)
-	bool                                                         bEditableWhenInherited;                            // 0xc2(0x1)
-	bool                                                         bNeedsLoadForClient;                               // 0xc3(0x1)
-	bool                                                         bNeedsLoadForServer;                               // 0xc3(0x1)
-	char                                                         TargetNetDormancy;                                 // 0xc4(0x1)
-	char                                                         CreationMethod;                                    // 0xc5(0x1)
+	struct Vector2D                                              PivotOffset;                                       // 0x50(0x8)
 };
 
 
-// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
-class SoundNodeWavePlayer: public SoundNodeAssetReferencer
+// Size 0x78 (Full Size[0xc8] - InheritedSize[0x50]
+class ParticleModuleWindInfluence: public ParticleModuleWindBase
 {
 public:
-	assetobject                                                  SoundWaveAssetPtr;                                 // 0x38(0x20)
-	class SoundWave*                                             SoundWave;                                         // 0x58(0x8)
-	bool                                                         bLooping;                                          // 0x60(0x1)
+	float                                                        WindSpeedCap;                                      // 0x50(0x4)
+	float                                                        RandomFactorForWindDirection;                      // 0x54(0x4)
+	struct RawDistributionFloat                                  InfluenceOnAcceleration;                           // 0x58(0x38)
+	struct RawDistributionFloat                                  InfluenceOnVelocity;                               // 0x90(0x38)
+};
+
+
+// Size 0x78 (Full Size[0xc8] - InheritedSize[0x50]
+class ParticleModuleColorOverLife: public ParticleModuleColorBase
+{
+public:
+	struct RawDistributionVector                                 ColorOverLife;                                     // 0x50(0x38)
+	struct RawDistributionFloat                                  AlphaOverLife;                                     // 0x88(0x38)
+	bool                                                         bClampAlpha;                                       // 0xc0(0x1)
+};
+
+
+// Size 0x10 (Full Size[0x88] - InheritedSize[0x78]
+class AnimComposite: public AnimCompositeBase
+{
+public:
+	struct AnimTrack                                             AnimationTrack;                                    // 0x78(0x10)
+};
+
+
+// Size 0xd8 (Full Size[0x110] - InheritedSize[0x38]
+class RendererSettings: public DeveloperSettings
+{
+public:
+	bool                                                         bMobileHDR;                                        // 0x38(0x1)
+	uint32                                                       MobileNumDynamicPointLights;                       // 0x3c(0x4)
+	bool                                                         bMobileDynamicPointLightsUseStaticBranch;          // 0x40(0x1)
+	bool                                                         bOcclusionCulling;                                 // 0x40(0x1)
+	float                                                        MinScreenRadiusForLights;                          // 0x44(0x4)
+	float                                                        MinScreenRadiusForEarlyZPass;                      // 0x48(0x4)
+	float                                                        MinScreenRadiusForCSMdepth;                        // 0x4c(0x4)
+	bool                                                         bPrecomputedVisibilityWarning;                     // 0x50(0x1)
+	bool                                                         bTextureStreaming;                                 // 0x50(0x1)
+	bool                                                         bUseDXT5NormalMaps;                                // 0x50(0x1)
+	bool                                                         bAllowStaticLighting;                              // 0x50(0x1)
+	bool                                                         bUseNormalMapsForStaticLighting;                   // 0x50(0x1)
+	bool                                                         bGenerateMeshDistanceFields;                       // 0x50(0x1)
+	bool                                                         bGenerateLandscapeGIData;                          // 0x50(0x1)
+	float                                                        TessellationAdaptivePixelsPerTriangle;             // 0x54(0x4)
+	bool                                                         bSeparateTranslucency;                             // 0x58(0x1)
+	char                                                         TranslucentSortPolicy;                             // 0x5c(0x1)
+	struct Vector                                                TranslucentSortAxis;                               // 0x60(0xc)
+	char                                                         CustomDepthStencil;                                // 0x6c(0x1)
+	bool                                                         bDefaultFeatureBloom;                              // 0x70(0x1)
+	bool                                                         bDefaultFeatureAmbientOcclusion;                   // 0x70(0x1)
+	bool                                                         bDefaultFeatureAmbientOcclusionStaticFraction;     // 0x70(0x1)
+	bool                                                         bDefaultFeatureAutoExposure;                       // 0x70(0x1)
+	bool                                                         bDefaultFeatureMotionBlur;                         // 0x70(0x1)
+	bool                                                         bDefaultFeatureLensFlare;                          // 0x70(0x1)
+	char                                                         DefaultFeatureAntiAliasing;                        // 0x74(0x1)
+	char                                                         EarlyZPass;                                        // 0x75(0x1)
+	char                                                         bDepthSort;                                        // 0x76(0x1)
+	bool                                                         bEarlyZPassMovable;                                // 0x78(0x1)
+	bool                                                         bDBuffer;                                          // 0x78(0x1)
+	char                                                         ClearSceneMethod;                                  // 0x7c(0x1)
+	bool                                                         bBasePassOutputsVelocity;                          // 0x80(0x1)
+	float                                                        WireframeCullThreshold;                            // 0x84(0x4)
+	char                                                         UIScaleRule;                                       // 0x88(0x1)
+	struct RuntimeFloatCurve                                     UIScaleCurve;                                      // 0x90(0x80)
 };
 
 
 // Size 0x38 (Full Size[0x88] - InheritedSize[0x50]
-class ParticleModuleMeshRotationRateMultiplyLife: public ParticleModuleRotationRateBase
+class ParticleModuleMeshRotationRate: public ParticleModuleRotationRateBase
 {
 public:
-	struct RawDistributionVector                                 LifeMultiplier;                                    // 0x50(0x38)
+	struct RawDistributionVector                                 StartRotationRate;                                 // 0x50(0x38)
 };
 
 
-// Size 0x560 (Full Size[0x960] - InheritedSize[0x400]
-class PostProcessVolume: public Volume
+// Size 0x30 (Full Size[0x80] - InheritedSize[0x50]
+class ParticleModuleTypeDataRibbon: public ParticleModuleTypeDataBase
 {
 public:
-	struct PostProcessSettings                                   Settings;                                          // 0x410(0x540)
-	float                                                        Priority;                                          // 0x950(0x4)
-	float                                                        BlendRadius;                                       // 0x954(0x4)
-	float                                                        BlendWeight;                                       // 0x958(0x4)
-	bool                                                         bEnabled;                                          // 0x95c(0x1)
-	bool                                                         bUnbound;                                          // 0x95c(0x1)
+	int                                                          MaxTessellationBetweenParticles;                   // 0x50(0x4)
+	int                                                          SheetsPerTrail;                                    // 0x54(0x4)
+	int                                                          MaxTrailCount;                                     // 0x58(0x4)
+	int                                                          MaxParticleInTrailCount;                           // 0x5c(0x4)
+	bool                                                         bDeadTrailsOnDeactivate;                           // 0x60(0x1)
+	bool                                                         bDeadTrailsOnSourceLoss;                           // 0x60(0x1)
+	bool                                                         bClipSourceSegement;                               // 0x60(0x1)
+	bool                                                         bEnablePreviousTangentRecalculation;               // 0x60(0x1)
+	bool                                                         bTangentRecalculationEveryFrame;                   // 0x60(0x1)
+	bool                                                         bSpawnInitialParticle;                             // 0x60(0x1)
+	char                                                         RenderAxis;                                        // 0x64(0x1)
+	float                                                        TangentSpawningScalar;                             // 0x68(0x4)
+	bool                                                         bRenderGeometry;                                   // 0x6c(0x1)
+	bool                                                         bRenderSpawnPoints;                                // 0x6c(0x1)
+	bool                                                         bRenderTangents;                                   // 0x6c(0x1)
+	bool                                                         bRenderTessellation;                               // 0x6c(0x1)
+	float                                                        TilingDistance;                                    // 0x70(0x4)
+	float                                                        DistanceTessellationStepSize;                      // 0x74(0x4)
+	bool                                                         bEnableTangentDiffInterpScale;                     // 0x78(0x1)
+	float                                                        TangentTessellationScalar;                         // 0x7c(0x4)
 };
 
 
-// Size 0xd0 (Full Size[0x120] - InheritedSize[0x50]
-class ParticleModuleBeamTarget: public ParticleModuleBeamBase
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class DistributionFloat: public Distribution
 {
 public:
-	char                                                         TargetMethod;                                      // 0x50(0x1)
-	struct FName                                                 TargetName;                                        // 0x54(0x8)
-	struct RawDistributionVector                                 Target;                                            // 0x60(0x38)
-	bool                                                         bTargetAbsolute;                                   // 0x98(0x1)
-	bool                                                         bLockTarget;                                       // 0x98(0x1)
-	char                                                         TargetTangentMethod;                               // 0x9c(0x1)
-	struct RawDistributionVector                                 TargetTangent;                                     // 0xa0(0x38)
-	bool                                                         bLockTargetTangent;                                // 0xd8(0x1)
-	struct RawDistributionFloat                                  TargetStrength;                                    // 0xe0(0x38)
-	bool                                                         bLockTargetStength;                                // 0x118(0x1)
-	float                                                        LockRadius;                                        // 0x11c(0x4)
+	bool                                                         bCanBeBaked;                                       // 0x30(0x1)
 };
 
 
-// Size 0x90 (Full Size[0xb8] - InheritedSize[0x28]
-class ParticleLODLevel: public Object
+// Size 0x48 (Full Size[0x410] - InheritedSize[0x3c8]
+class GameState: public Info
 {
 public:
-	int                                                          Level;                                             // 0x28(0x4)
-	bool                                                         bEnabled;                                          // 0x2c(0x1)
-	class ParticleModuleRequired*                                RequiredModule;                                    // 0x30(0x8)
-	TArray<class ParticleModule*>                                Modules;                                           // 0x38(0x10)
-	class ParticleModule*                                        TypeDataModule;                                    // 0x48(0x8)
-	class ParticleModuleSpawn*                                   SpawnModule;                                       // 0x50(0x8)
-	class ParticleModuleEventGenerator*                          EventGenerator;                                    // 0x58(0x8)
-	TArray<class ParticleModuleSpawnBase*>                       SpawningModules;                                   // 0x60(0x10)
-	TArray<class ParticleModule*>                                SpawnModules;                                      // 0x70(0x10)
-	TArray<class ParticleModule*>                                UpdateModules;                                     // 0x80(0x10)
-	TArray<class ParticleModuleOrbit*>                           OrbitModules;                                      // 0x90(0x10)
-	TArray<class ParticleModuleEventReceiverBase*>               EventReceiverModules;                              // 0xa0(0x10)
-	bool                                                         ConvertedModules;                                  // 0xb0(0x1)
-	int                                                          PeakActiveParticles;                               // 0xb4(0x4)
+	class UClass*                                                GameModeClass;                                     // 0x3c8(0x8)
+	class GameMode*                                              AuthorityGameMode;                                 // 0x3d0(0x8)
+	class UClass*                                                SpectatorClass;                                    // 0x3d8(0x8)
+	struct FName                                                 MatchState;                                        // 0x3e0(0x8)
+	struct FName                                                 PreviousMatchState;                                // 0x3e8(0x8)
+	TArray<class PlayerState*>                                   PlayerArray;                                       // 0x3f0(0x10)
+	float                                                        ReplicatedWorldTimeSeconds;                        // 0x400(0x4)
+	float                                                        ServerWorldTimeSecondsDelta;                       // 0x404(0x4)
+	float                                                        ServerWorldTimeSecondsUpdateFrequency;             // 0x408(0x4)
 };
 
 
-// Size 0xc8 (Full Size[0xf0] - InheritedSize[0x28]
-class Canvas: public Object
+// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
+class ParticleModuleEventReceiverBase: public ParticleModuleEventBase
 {
 public:
-	float                                                        OrgX;                                              // 0x28(0x4)
-	float                                                        OrgY;                                              // 0x2c(0x4)
-	float                                                        ClipX;                                             // 0x30(0x4)
-	float                                                        ClipY;                                             // 0x34(0x4)
-	struct Color                                                 DrawColor;                                         // 0x38(0x4)
-	bool                                                         bCenterX;                                          // 0x3c(0x1)
-	bool                                                         bCenterY;                                          // 0x3c(0x1)
-	bool                                                         bNoSmooth;                                         // 0x3c(0x1)
-	int                                                          SizeX;                                             // 0x40(0x4)
-	int                                                          SizeY;                                             // 0x44(0x4)
-	struct Plane                                                 ColorModulate;                                     // 0x50(0x10)
-	class Texture2D*                                             DefaultTexture;                                    // 0x60(0x8)
-	class Texture2D*                                             GradientTexture0;                                  // 0x68(0x8)
-	class ReporterGraph*                                         ReporterGraph;                                     // 0x70(0x8)
+	char                                                         EventGeneratorType;                                // 0x50(0x1)
+	struct FName                                                 EventName;                                         // 0x54(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class InterpGroupInst: public Object
+{
+public:
+	class InterpGroup*                                           Group;                                             // 0x28(0x8)
+	class Actor*                                                 GroupActor;                                        // 0x30(0x8)
+	TArray<class InterpTrackInst*>                               TrackInst;                                         // 0x38(0x10)
+};
+
+
+// Size 0x1e0 (Full Size[0x210] - InheritedSize[0x30]
+class CurveLinearColor: public CurveBase
+{
+public:
+	struct RichCurve                                             FloatCurves;                                       // 0x30(0x78)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class InterpTrackInstFloatAnimBPParam: public InterpTrackInst
+{
+public:
+	class AnimInstance*                                          AnimScriptInstance;                                // 0x28(0x8)
+	float                                                        ResetFloat;                                        // 0x30(0x4)
+};
+
+
+// Size 0x5f0 (Full Size[0x618] - InheritedSize[0x28]
+class CheckBoxStyleAsset: public Object
+{
+public:
+	struct CheckBoxStyle                                         CheckBoxStyle;                                     // 0x28(0x5f0)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class LightmassPrimitiveSettingsObject: public Object
+{
+public:
+	struct LightmassPrimitiveSettings                            LightmassSettings;                                 // 0x28(0x18)
+};
+
+
+// Size 0x7d8 (Full Size[0x800] - InheritedSize[0x28]
+class World: public Object
+{
+public:
+	class Level*                                                 PersistentLevel;                                   // 0x30(0x8)
+	class NetDriver*                                             NetDriver;                                         // 0x38(0x8)
+	class LineBatchComponent*                                    LineBatcher;                                       // 0x40(0x8)
+	class LineBatchComponent*                                    PersistentLineBatcher;                             // 0x48(0x8)
+	class LineBatchComponent*                                    ForegroundLineBatcher;                             // 0x50(0x8)
+	class GameState*                                             GameState;                                         // 0x58(0x8)
+	class GameNetworkManager*                                    NetworkManager;                                    // 0x60(0x8)
+	class PhysicsCollisionHandler*                               PhysicsCollisionHandler;                           // 0x68(0x8)
+	TArray<class Object*>                                        ExtraReferencedObjects;                            // 0x70(0x10)
+	TArray<class Object*>                                        PerModuleDataObjects;                              // 0x80(0x10)
+	TArray<class LevelStreaming*>                                StreamingLevels;                                   // 0x90(0x10)
+	struct FString                                               StreamingLevelsPrefix;                             // 0xa0(0x10)
+	class Level*                                                 CurrentLevelPendingVisibility;                     // 0xb0(0x8)
+	class ParticleEventManager*                                  MyParticleEventManager;                            // 0xb8(0x8)
+	class PhysicsVolume*                                         DefaultPhysicsVolume;                              // 0xc0(0x8)
+	TArray<class LevelStreaming*>                                DirtyStreamingLevels;                              // 0xc8(0x10)
+	struct FName                                                 Feature;                                           // 0xf4(0x8)
+	TArray<struct Name>                                          FeatureReferences;                                 // 0x100(0x10)
+	bool                                                         ParticleLOD_bUseGameThread;                        // 0x110(0x1)
+	bool                                                         ParticleLOD_bUseMultipleViewportCase;              // 0x111(0x1)
+	struct Vector                                                ParticleLOD_PlayerViewpointLocation;               // 0x114(0xc)
+	struct FString                                               TestMetadata;                                      // 0x120(0x10)
+	class NavigationSystem*                                      NavigationSystem;                                  // 0x130(0x8)
+	class GameMode*                                              AuthorityGameMode;                                 // 0x138(0x8)
+	class AISystemBase*                                          AISystem;                                          // 0x140(0x8)
+	class AvoidanceManager*                                      AvoidanceManager;                                  // 0x148(0x8)
+	TArray<class Level*>                                         Levels;                                            // 0x150(0x10)
+	class Level*                                                 CurrentLevel;                                      // 0x1b0(0x8)
+	class GameInstance*                                          OwningGameInstance;                                // 0x1c0(0x8)
+	TArray<class MaterialParameterCollectionInstance*>           ParameterCollectionInstances;                      // 0x1c8(0x10)
+	class WorldComposition*                                      WorldComposition;                                  // 0x728(0x8)
+	bool                                                         bAreConstraintsDirty;                              // 0x76d(0x1)
+};
+
+
+// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
+class ParticleModuleSizeScale: public ParticleModuleSizeBase
+{
+public:
+	struct RawDistributionVector                                 SizeScale;                                         // 0x50(0x38)
+	bool                                                         EnableX;                                           // 0x88(0x1)
+	bool                                                         EnableY;                                           // 0x88(0x1)
+	bool                                                         EnableZ;                                           // 0x88(0x1)
+};
+
+
+// Size 0x2a0 (Full Size[0x2c8] - InheritedSize[0x28]
+class BodySetup: public Object
+{
+public:
+	struct KAggregateGeom                                        AggGeom;                                           // 0x28(0x48)
+	struct FName                                                 BoneName;                                          // 0x70(0x8)
+	char                                                         PhysicsType;                                       // 0x78(0x1)
+	bool                                                         bCookComplexGeometryOnServer;                      // 0x7c(0x1)
+	bool                                                         bConsiderForBounds;                                // 0x7c(0x1)
+	bool                                                         bMeshCollideAll;                                   // 0x7c(0x1)
+	bool                                                         bDoubleSidedGeometry;                              // 0x7c(0x1)
+	bool                                                         bGenerateNonMirroredCollision;                     // 0x7c(0x1)
+	bool                                                         bSharedCookedData;                                 // 0x7c(0x1)
+	bool                                                         bGenerateMirroredCollision;                        // 0x7c(0x1)
+	class PhysicalMaterial*                                      PhysMaterial;                                      // 0x80(0x8)
+	char                                                         CollisionReponse;                                  // 0x88(0x1)
+	char                                                         CollisionTraceFlag;                                // 0x89(0x1)
+	struct BodyInstance                                          DefaultInstance;                                   // 0x90(0x180)
+	struct WalkableSlopeOverride                                 WalkableSlopeOverride;                             // 0x210(0x8)
+	struct Vector                                                BuildScale3D;                                      // 0x218(0xc)
+};
+
+
+// Size 0x78 (Full Size[0xa0] - InheritedSize[0x28]
+class DestructibleFractureSettings: public Object
+{
+public:
+	int                                                          CellSiteCount;                                     // 0x28(0x4)
+	struct FractureMaterial                                      FractureMaterialDesc;                              // 0x2c(0x24)
+	int                                                          RandomSeed;                                        // 0x50(0x4)
+	TArray<struct Vector>                                        VoronoiSites;                                      // 0x58(0x10)
+	int                                                          OriginalSubmeshCount;                              // 0x68(0x4)
+	TArray<class MaterialInterface*>                             Materials;                                         // 0x70(0x10)
+	TArray<struct DestructibleChunkParameters>                   ChunkParameters;                                   // 0x80(0x10)
+	TArray<String>                                               MaterialNames;                                     // 0x90(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class PhysicsThruster: public RigidBodyBase
+{
+public:
+	class PhysicsThrusterComponent*                              ThrusterComponent;                                 // 0x3c8(0x8)
+};
+
+
+// Size 0x90 (Full Size[0xc8] - InheritedSize[0x38]
+class PhysicsSettings: public DeveloperSettings
+{
+public:
+	float                                                        DefaultGravityZ;                                   // 0x38(0x4)
+	float                                                        DefaultTerminalVelocity;                           // 0x3c(0x4)
+	float                                                        DefaultFluidFriction;                              // 0x40(0x4)
+	int                                                          SimulateScratchMemorySize;                         // 0x44(0x4)
+	int                                                          RagdollAggregateThreshold;                         // 0x48(0x4)
+	float                                                        TriangleMeshTriangleMinAreaThreshold;              // 0x4c(0x4)
+	bool                                                         bEnableAsyncScene;                                 // 0x50(0x1)
+	bool                                                         bEnableShapeSharing;                               // 0x51(0x1)
+	bool                                                         bEnablePCM;                                        // 0x52(0x1)
+	bool                                                         bWarnMissingLocks;                                 // 0x53(0x1)
+	bool                                                         bEnable2DPhysics;                                  // 0x54(0x1)
+	char                                                         LockedAxis;                                        // 0x55(0x1)
+	char                                                         DefaultDegreesOfFreedom;                           // 0x56(0x1)
+	float                                                        BounceThresholdVelocity;                           // 0x58(0x4)
+	char                                                         FrictionCombineMode;                               // 0x5c(0x1)
+	char                                                         RestitutionCombineMode;                            // 0x5d(0x1)
+	float                                                        MaxAngularVelocity;                                // 0x60(0x4)
+	float                                                        MaxDepenetrationVelocity;                          // 0x64(0x4)
+	bool                                                         bSimulateSkeletalMeshOnDedicatedServer;            // 0x68(0x1)
+	bool                                                         bDefaultHasComplexCollision;                       // 0x69(0x1)
+	float                                                        MaxPhysicsDeltaTime;                               // 0x6c(0x4)
+	bool                                                         bSubstepping;                                      // 0x70(0x1)
+	bool                                                         bSubsteppingAsync;                                 // 0x71(0x1)
+	float                                                        MaxSubstepDeltaTime;                               // 0x74(0x4)
+	int                                                          MaxSubsteps;                                       // 0x78(0x4)
+	float                                                        SyncSceneSmoothingFactor;                          // 0x7c(0x4)
+	float                                                        AsyncSceneSmoothingFactor;                         // 0x80(0x4)
+	float                                                        InitialAverageFrameRate;                           // 0x84(0x4)
+	TArray<struct PhysicalSurfaceName>                           PhysicalSurfaces;                                  // 0x88(0x10)
+	TArray<struct DominanceGroupPair>                            DominanceGroups;                                   // 0x98(0x10)
+	TArray<struct DominanceGroupName>                            DominanceGroupNames;                               // 0xa8(0x10)
+	char                                                         DefaultStaticDominanceGroup;                       // 0xb8(0x1)
+	char                                                         DefaultMovableDominanceGroup;                      // 0xb9(0x1)
+	bool                                                         bEnableMBP;                                        // 0xba(0x1)
+	int                                                          MBPSubdivisions;                                   // 0xbc(0x4)
+	float                                                        MBPWorldHalfExtentInCM;                            // 0xc0(0x4)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class InterpTrackInstToggle: public InterpTrackInst
+{
+public:
+	char                                                         Action;                                            // 0x28(0x1)
+	float                                                        LastUpdatePosition;                                // 0x2c(0x4)
+	bool                                                         bSavedActiveState;                                 // 0x30(0x1)
 };
 
 
@@ -400,133 +1846,453 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x68] - InheritedSize[0x50]
-class ParticleModuleVectorFieldRotation: public ParticleModuleVectorFieldBase
-{
-public:
-	struct Vector                                                MinInitialRotation;                                // 0x50(0xc)
-	struct Vector                                                MaxInitialRotation;                                // 0x5c(0xc)
-};
-
-
-// Size 0x38 (Full Size[0x88] - InheritedSize[0x50]
-class ParticleModuleMeshRotationRate: public ParticleModuleRotationRateBase
-{
-public:
-	struct RawDistributionVector                                 StartRotationRate;                                 // 0x50(0x38)
-};
-
-
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class MaterialParameterCollection: public Object
-{
-public:
-	struct Guid                                                  StateId;                                           // 0x28(0x10)
-	TArray<struct CollectionScalarParameter>                     ScalarParameters;                                  // 0x38(0x10)
-	TArray<struct CollectionVectorParameter>                     VectorParameters;                                  // 0x48(0x10)
-};
-
-
 // Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class InterpTrackInstVisibility: public InterpTrackInst
+class NavigationDataChunk: public Object
 {
 public:
-	char                                                         Action;                                            // 0x28(0x1)
-	float                                                        LastUpdatePosition;                                // 0x2c(0x4)
+	struct FName                                                 NavigationDataName;                                // 0x28(0x8)
 };
 
 
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class MaterialFunction: public Object
+// Size 0x78 (Full Size[0xc8] - InheritedSize[0x50]
+class ParticleModuleKillBox: public ParticleModuleKillBase
 {
 public:
-	struct Guid                                                  StateId;                                           // 0x28(0x10)
-	struct FString                                               Description;                                       // 0x38(0x10)
-	bool                                                         bExposeToLibrary;                                  // 0x48(0x1)
-	TArray<struct Text>                                          LibraryCategoriesText;                             // 0x50(0x10)
-	TArray<class MaterialExpression*>                            FunctionExpressions;                               // 0x60(0x10)
-	bool                                                         bReentrantFlag;                                    // 0x70(0x1)
+	struct RawDistributionVector                                 LowerLeftCorner;                                   // 0x50(0x38)
+	struct RawDistributionVector                                 UpperRightCorner;                                  // 0x88(0x38)
+	bool                                                         bAbsolute;                                         // 0xc0(0x1)
+	bool                                                         bKillInside;                                       // 0xc0(0x1)
+	bool                                                         bAxisAlignedAndFixedSize;                          // 0xc0(0x1)
 };
 
 
-// Size 0x68 (Full Size[0xb8] - InheritedSize[0x50]
-class ParticleModuleTrailSource: public ParticleModuleTrailBase
+// Size 0x10 (Full Size[0x68] - InheritedSize[0x58]
+class UserDefinedEnum: public Enum
 {
 public:
-	char                                                         SourceMethod;                                      // 0x50(0x1)
-	struct FName                                                 SourceName;                                        // 0x54(0x8)
-	struct RawDistributionFloat                                  SourceStrength;                                    // 0x60(0x38)
-	bool                                                         bLockSourceStength;                                // 0x98(0x1)
-	int                                                          SourceOffsetCount;                                 // 0x9c(0x4)
-	TArray<struct Vector>                                        SourceOffsetDefaults;                              // 0xa0(0x10)
-	char                                                         SelectionMethod;                                   // 0xb0(0x1)
-	bool                                                         bInheritRotation;                                  // 0xb4(0x1)
+	TArray<struct Text>                                          DisplayNames;                                      // 0x58(0x10)
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class TimecodeProvider: public Object
+// Size 0x30 (Full Size[0x3f8] - InheritedSize[0x3c8]
+class GameSession: public Info
 {
 public:
-	float                                                        FrameDelay;                                        // 0x28(0x4)
-};
-
-
-// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
-class ParticleModuleKillHeight: public ParticleModuleKillBase
-{
-public:
-	struct RawDistributionFloat                                  Height;                                            // 0x50(0x38)
-	bool                                                         bAbsolute;                                         // 0x88(0x1)
-	bool                                                         bFloor;                                            // 0x88(0x1)
-	bool                                                         bApplyPSysScale;                                   // 0x88(0x1)
-};
-
-
-// Size 0xa8 (Full Size[0xd0] - InheritedSize[0x28]
-class TextPropertyTestObject: public Object
-{
-public:
-	struct FText                                                 DefaultedText;                                     // 0x28(0x38)
-	struct FText                                                 UndefaultedText;                                   // 0x60(0x38)
-	struct FText                                                 TransientText;                                     // 0x98(0x38)
-};
-
-
-// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
-class ParticleModuleSizeMultiplyLife: public ParticleModuleSizeBase
-{
-public:
-	struct RawDistributionVector                                 LifeMultiplier;                                    // 0x50(0x38)
-	bool                                                         MultiplyX;                                         // 0x88(0x1)
-	bool                                                         MultiplyY;                                         // 0x88(0x1)
-	bool                                                         MultiplyZ;                                         // 0x88(0x1)
+	int                                                          MaxSpectators;                                     // 0x3c8(0x4)
+	int                                                          MaxPlayers;                                        // 0x3cc(0x4)
+	char                                                         MaxSplitscreensPerConnection;                      // 0x3d0(0x1)
+	bool                                                         bRequiresPushToTalk;                               // 0x3d1(0x1)
+	struct FName                                                 SessionName;                                       // 0x3d4(0x8)
 };
 
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AnimNotify: public Object
+class InterpFilter: public Object
 {
 public:
-	bool                                                         PlayedWithSequencer;                               // 0x28(0x1)
+	struct FString                                               Caption;                                           // 0x28(0x10)
 };
 
 
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class MaterialInterface: public Object
+// Size 0x240 (Full Size[0x268] - InheritedSize[0x28]
+class Skeleton: public Object
 {
 public:
-	class SubsurfaceProfile*                                     SubsurfaceProfile;                                 // 0x30(0x8)
-	struct LightmassMaterialInterfaceSettings                    LightmassSettings;                                 // 0x3c(0x14)
+	TArray<struct BoneNode>                                      BoneTree;                                          // 0x28(0x10)
+	TArray<struct SkeletonToMeshLinkup>                          LinkupCache;                                       // 0xb8(0x10)
+	TArray<class SkeletalMeshSocket*>                            Sockets;                                           // 0xc8(0x10)
+	struct SmartNameContainer                                    SmartNames;                                        // 0x128(0x50)
+	TArray<struct AnimSlotGroup>                                 SlotGroups;                                        // 0x178(0x10)
 };
 
 
-// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
-class ExponentialHeightFog: public Info
+// Size 0xf8 (Full Size[0x120] - InheritedSize[0x28]
+class CameraAnimInst: public Object
 {
 public:
-	class ExponentialHeightFogComponent*                         Component;                                         // 0x3c8(0x8)
-	bool                                                         bEnabled;                                          // 0x3d0(0x1)
+	class CameraAnim*                                            CamAnim;                                           // 0x28(0x8)
+	class InterpGroupInst*                                       InterpGroupInst;                                   // 0x30(0x8)
+	float                                                        PlayRate;                                          // 0x54(0x4)
+	class InterpTrackMove*                                       MoveTrack;                                         // 0x68(0x8)
+	class InterpTrackInstMove*                                   MoveInst;                                          // 0x70(0x8)
+	class CurveFloat*                                            BlendInCurve;                                      // 0x78(0x8)
+	char                                                         PlaySpace;                                         // 0x80(0x1)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class InterpCurveEdSetup: public Object
+{
+public:
+	TArray<struct CurveEdTab>                                    Tabs;                                              // 0x28(0x10)
+	int                                                          ActiveTab;                                         // 0x38(0x4)
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class EdGraph: public Object
+{
+public:
+	class UClass*                                                Schema;                                            // 0x28(0x8)
+	TArray<class EdGraphNode*>                                   Nodes;                                             // 0x30(0x10)
+	bool                                                         bEditable;                                         // 0x40(0x1)
+	bool                                                         bAllowDeletion;                                    // 0x40(0x1)
+	bool                                                         bAllowRenaming;                                    // 0x40(0x1)
+};
+
+
+// Size 0x170 (Full Size[0x1c0] - InheritedSize[0x50]
+class ParticleModuleLifetime: public ParticleModuleLifetimeBase
+{
+public:
+	bool                                                         bUseGroupAValuesForAllGroups;                      // 0x50(0x1)
+	struct RawDistributionFloat                                  LifeTime;                                          // 0x58(0x38)
+	struct RawDistributionFloat                                  AdditionalLifetimes;                               // 0x90(0x38)
+};
+
+
+// Size 0x18 (Full Size[0x68] - InheritedSize[0x50]
+class ParticleModuleParameterDynamic: public ParticleModuleParameterBase
+{
+public:
+	TArray<struct EmitterDynamicParameter>                       DynamicParams;                                     // 0x50(0x10)
+	int                                                          UpdateFlags;                                       // 0x60(0x4)
+	bool                                                         bUsesVelocity;                                     // 0x64(0x1)
+};
+
+
+// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
+class ParticleModuleVectorFieldRotationRate: public ParticleModuleVectorFieldBase
+{
+public:
+	struct Vector                                                RotationRate;                                      // 0x50(0xc)
+};
+
+
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class GameInstance: public Object
+{
+public:
+	TArray<class LocalPlayer*>                                   LocalPlayers;                                      // 0x38(0x10)
+	class OnlineSession*                                         OnlineSession;                                     // 0x50(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
+class ParticleModuleKillOnFFTWater: public ParticleModuleKillBase
+{
+public:
+	char                                                         FFTWaterKillPointLocation;                         // 0x50(0x1)
+	bool                                                         bUseGroupAFFTWaterKillPointForAllGroups;           // 0x54(0x1)
+	char                                                         AdditionalFFTWaterKillPointLocations;              // 0x58(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class InterpTrackInstParticleReplay: public InterpTrackInst
+{
+public:
+	float                                                        LastUpdatePosition;                                // 0x28(0x4)
+};
+
+
+// Size 0xd0 (Full Size[0x120] - InheritedSize[0x50]
+class ParticleModuleBeamTarget: public ParticleModuleBeamBase
+{
+public:
+	char                                                         TargetMethod;                                      // 0x50(0x1)
+	struct FName                                                 TargetName;                                        // 0x54(0x8)
+	struct RawDistributionVector                                 Target;                                            // 0x60(0x38)
+	bool                                                         bTargetAbsolute;                                   // 0x98(0x1)
+	bool                                                         bLockTarget;                                       // 0x98(0x1)
+	char                                                         TargetTangentMethod;                               // 0x9c(0x1)
+	struct RawDistributionVector                                 TargetTangent;                                     // 0xa0(0x38)
+	bool                                                         bLockTargetTangent;                                // 0xd8(0x1)
+	struct RawDistributionFloat                                  TargetStrength;                                    // 0xe0(0x38)
+	bool                                                         bLockTargetStength;                                // 0x118(0x1)
+	float                                                        LockRadius;                                        // 0x11c(0x4)
+};
+
+
+// Size 0x418 (Full Size[0x440] - InheritedSize[0x28]
+class AnimInstance: public Object
+{
+public:
+	class Skeleton*                                              CurrentSkeleton;                                   // 0x28(0x8)
+	TArray<struct AnimTickRecord>                                UngroupedActivePlayers;                            // 0x30(0x10)
+	TArray<struct AnimGroupInstance>                             SyncGroups;                                        // 0x40(0x10)
+	TArray<struct ActiveVertexAnim>                              VertexAnims;                                       // 0x50(0x10)
+	char                                                         RootMotionMode;                                    // 0x60(0x1)
+	bool                                                         bWarnAboutBlueprintUsage;                          // 0x61(0x1)
+	multicastinlinedelegate                                      OnMontageBlendingOut;                              // 0x68(0x10)
+	multicastinlinedelegate                                      OnMontageStarted;                                  // 0x78(0x10)
+	multicastinlinedelegate                                      OnMontageEnded;                                    // 0x88(0x10)
+	multicastinlinedelegate                                      OnStateEntered;                                    // 0x98(0x10)
+	multicastinlinedelegate                                      OnStateExited;                                     // 0xa8(0x10)
+	multicastinlinedelegate                                      OnStateInitialised;                                // 0xb8(0x10)
+	multicastinlinedelegate                                      OnAnimUpdated;                                     // 0xc8(0x10)
+	bool                                                         bQueueMontageEvents;                               // 0x148(0x1)
+	TArray<struct AnimNotifyEvent>                               ActiveAnimNotifyState;                             // 0x240(0x10)
+	int16                                                        SlotNodeInitializationCounter;                     // 0x350(0x2)
+	int16                                                        GraphTraversalCounter;                             // 0x352(0x2)
+	bool                                                         bBoneCachesInvalidated;                            // 0x3a8(0x1)
+	bool                                                         bBlueprintAnimUpdateEnabled;                       // 0x438(0x1)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class VectorField: public Object
+{
+public:
+	struct Box                                                   Bounds;                                            // 0x28(0x1c)
+	float                                                        Intensity;                                         // 0x44(0x4)
+};
+
+
+// Size 0x2a8 (Full Size[0x2d0] - InheritedSize[0x28]
+class ButtonStyleAsset: public Object
+{
+public:
+	struct ButtonStyle                                           ButtonStyle;                                       // 0x28(0x2a8)
+};
+
+
+// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
+class ParticleModuleMurkyColor: public ParticleModuleColorBase
+{
+public:
+	struct LinearColor                                           ColorScale;                                        // 0x50(0x10)
+};
+
+
+// Size 0x158 (Full Size[0x1a8] - InheritedSize[0x50]
+class ParticleModuleRotationRate: public ParticleModuleRotationRateBase
+{
+public:
+	bool                                                         bUseGroupARotationRateForAllGroups;                // 0x50(0x1)
+	struct RawDistributionFloat                                  StartRotationRate;                                 // 0x58(0x38)
+	struct RawDistributionFloat                                  AdditionalStartRotationRate;                       // 0x90(0x38)
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class AtmosphericFog: public Info
+{
+public:
+	class AtmosphericFogComponent*                               AtmosphericFogComponent;                           // 0x3c8(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class NetworkClusteringSettings: public DeveloperSettings
+{
+public:
+	float                                                        DynamicActorGridHalfSizeKm;                        // 0x38(0x4)
+	float                                                        DynamicActorGridCellSizeKm;                        // 0x3c(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class NetworkSettings: public DeveloperSettings
+{
+public:
+	bool                                                         bVerifyPeer;                                       // 0x38(0x1)
+};
+
+
+// Size 0x18 (Full Size[0x68] - InheritedSize[0x50]
+class ParticleModuleAttractorPointGravity: public ParticleModuleAttractorBase
+{
+public:
+	struct Vector                                                Position;                                          // 0x50(0xc)
+	float                                                        Radius;                                            // 0x5c(0x4)
+	class DistributionFloat*                                     Strength;                                          // 0x60(0x8)
+};
+
+
+// Size 0x80 (Full Size[0xb0] - InheritedSize[0x30]
+class CurveFloat: public CurveBase
+{
+public:
+	struct RichCurve                                             FloatCurve;                                        // 0x30(0x78)
+	bool                                                         bIsEventCurve;                                     // 0xa8(0x1)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class SubsurfaceProfile: public Object
+{
+public:
+	struct SubsurfaceProfileStruct                               Settings;                                          // 0x28(0x24)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class Layer: public Object
+{
+public:
+	struct FName                                                 LayerName;                                         // 0x28(0x8)
+	bool                                                         bIsVisible;                                        // 0x30(0x1)
+	TArray<struct LayerActorStats>                               ActorStats;                                        // 0x38(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class InterpTrackInstAnimControl: public InterpTrackInst
+{
+public:
+	float                                                        LastUpdatePosition;                                // 0x28(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
+class ParticleModuleLocationEmitterDirect: public ParticleModuleLocationBase
+{
+public:
+	struct FName                                                 EmitterName;                                       // 0x50(0x8)
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class InterpTrack: public Object
+{
+public:
+	TArray<class InterpTrack*>                                   SubTracks;                                         // 0x38(0x10)
+	class UClass*                                                TrackInstClass;                                    // 0x48(0x8)
+	char                                                         ActiveCondition;                                   // 0x50(0x1)
+	struct FString                                               TrackTitle;                                        // 0x58(0x10)
+	bool                                                         bOnePerGroup;                                      // 0x68(0x1)
+	bool                                                         bDirGroupOnly;                                     // 0x68(0x1)
+	bool                                                         bDisableTrack;                                     // 0x68(0x1)
+	bool                                                         bIsSelected;                                       // 0x68(0x1)
+	bool                                                         bIsAnimControlTrack;                               // 0x68(0x1)
+	bool                                                         bSubTrackOnly;                                     // 0x68(0x1)
+	bool                                                         bVisible;                                          // 0x68(0x1)
+	bool                                                         bIsRecording;                                      // 0x68(0x1)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class DamageType: public Object
+{
+public:
+	bool                                                         bCausedByWorld;                                    // 0x28(0x1)
+	bool                                                         bScaleMomentumByMass;                              // 0x28(0x1)
+	float                                                        DamageImpulse;                                     // 0x2c(0x4)
+	bool                                                         bRadialDamageVelChange;                            // 0x30(0x1)
+	float                                                        DestructibleImpulse;                               // 0x34(0x4)
+	float                                                        DestructibleDamageSpreadScale;                     // 0x38(0x4)
+	float                                                        DamageFalloff;                                     // 0x3c(0x4)
+};
+
+
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class NavigationPath: public Object
+{
+public:
+	multicastinlinedelegate                                      PathUpdatedNotifier;                               // 0x28(0x10)
+	TArray<struct Vector>                                        PathPoints;                                        // 0x38(0x10)
+	char                                                         RecalculateOnInvalidation;                         // 0x48(0x1)
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class PhysicalMaterial: public Object
+{
+public:
+	float                                                        Friction;                                          // 0x28(0x4)
+	char                                                         FrictionCombineMode;                               // 0x2c(0x1)
+	bool                                                         bOverrideFrictionCombineMode;                      // 0x2d(0x1)
+	float                                                        Restitution;                                       // 0x30(0x4)
+	char                                                         RestitutionCombineMode;                            // 0x34(0x1)
+	bool                                                         bOverrideRestitutionCombineMode;                   // 0x35(0x1)
+	float                                                        Density;                                           // 0x38(0x4)
+	float                                                        RaiseMassToPower;                                  // 0x3c(0x4)
+	float                                                        DestructibleDamageThresholdScale;                  // 0x40(0x4)
+	class PhysicalMaterialPropertyBase*                          PhysicalMaterialProperty;                          // 0x48(0x8)
+	char                                                         SurfaceType;                                       // 0x50(0x1)
+};
+
+
+// Size 0x160 (Full Size[0x1b0] - InheritedSize[0x50]
+class ParticleModuleSize: public ParticleModuleSizeBase
+{
+public:
+	bool                                                         bUseGroupAForAll;                                  // 0x50(0x1)
+	struct RawDistributionVector                                 StartSize;                                         // 0x58(0x38)
+	struct RawDistributionVector                                 AdditionalStartSizes;                              // 0x90(0x38)
+	bool                                                         bKeepAspectRatio;                                  // 0x1a8(0x1)
+	bool                                                         bIgnoreComponentScale;                             // 0x1a8(0x1)
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class SkeletalMeshSocket: public Object
+{
+public:
+	struct FName                                                 SocketName;                                        // 0x28(0x8)
+	struct FName                                                 BoneName;                                          // 0x30(0x8)
+	struct Vector                                                RelativeLocation;                                  // 0x38(0xc)
+	struct Rotator                                               RelativeRotation;                                  // 0x44(0xc)
+	struct Vector                                                RelativeScale;                                     // 0x50(0xc)
+	bool                                                         bForceAlwaysAnimated;                              // 0x5c(0x1)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class NavLinkDefinition: public Object
+{
+public:
+	TArray<struct NavigationLink>                                Links;                                             // 0x28(0x10)
+	TArray<struct NavigationSegmentLink>                         SegmentLinks;                                      // 0x38(0x10)
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class MaterialExpression: public Object
+{
+public:
+	class Material*                                              Material;                                          // 0x28(0x8)
+	class MaterialFunction*                                      Function;                                          // 0x30(0x8)
+	struct FString                                               Desc;                                              // 0x38(0x10)
+	struct Color                                                 BorderColor;                                       // 0x48(0x4)
+	bool                                                         bRealtimePreview;                                  // 0x4c(0x1)
+	bool                                                         bNeedToUpdatePreview;                              // 0x4c(0x1)
+	bool                                                         bIsParameterExpression;                            // 0x4c(0x1)
+	bool                                                         bCommentBubbleVisible;                             // 0x4c(0x1)
+	bool                                                         bShowOutputNameOnPin;                              // 0x4c(0x1)
+	bool                                                         bHidePreviewWindow;                                // 0x4c(0x1)
+	bool                                                         bCollapsed;                                        // 0x4c(0x1)
+	bool                                                         bShaderInputData;                                  // 0x4c(0x1)
+	bool                                                         bShowInputs;                                       // 0x4d(0x1)
+	bool                                                         bShowOutputs;                                      // 0x4d(0x1)
+	TArray<struct Text>                                          MenuCategories;                                    // 0x50(0x10)
+	TArray<struct ExpressionOutput>                              Outputs;                                           // 0x60(0x10)
+};
+
+
+// Size 0x220 (Full Size[0x250] - InheritedSize[0x30]
+class GameViewportClient: public ScriptViewportClient
+{
+public:
+	class Console*                                               ViewportConsole;                                   // 0x38(0x8)
+	TArray<struct DebugDisplayProperty>                          DebugProperties;                                   // 0x40(0x10)
+	class World*                                                 World;                                             // 0x80(0x8)
+	class GameInstance*                                          GameInstance;                                      // 0x88(0x8)
+};
+
+
+// Size 0x588 (Full Size[0x5b0] - InheritedSize[0x28]
+class CameraAnim: public Object
+{
+public:
+	class InterpGroup*                                           CameraInterpGroup;                                 // 0x28(0x8)
+	float                                                        AnimLength;                                        // 0x30(0x4)
+	struct Box                                                   BoundingBox;                                       // 0x34(0x1c)
+	bool                                                         bRelativeToInitialTransform;                       // 0x50(0x1)
+	float                                                        BaseFOV;                                           // 0x54(0x4)
+	struct PostProcessSettings                                   BasePostProcessSettings;                           // 0x60(0x540)
+	float                                                        BasePostProcessBlendWeight;                        // 0x5a0(0x4)
 };
 
 
@@ -552,62 +2318,37 @@ public:
 };
 
 
+// Size 0x158 (Full Size[0x1a8] - InheritedSize[0x50]
+class ParticleModuleLocationGPU: public ParticleModuleLocationBase
+{
+public:
+	struct RawDistributionVector                                 StartLocation;                                     // 0x50(0x38)
+	struct RawDistributionVector                                 AdditionalStartLocations;                          // 0x88(0x38)
+	bool                                                         bUseGroupAStartLocationForAllGroups;               // 0x1a0(0x1)
+};
+
+
+// Size 0x38 (Full Size[0x88] - InheritedSize[0x50]
+class ParticleModuleSizeOverVelocity: public ParticleModuleSizeBase
+{
+public:
+	struct RawDistributionFloat                                  SizeMultiplier;                                    // 0x50(0x38)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class AnimNotifyState: public Object
+{
+public:
+	bool                                                         PlayedWithSequencer;                               // 0x28(0x1)
+};
+
+
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class InputTouchDelegateBinding: public InputDelegateBinding
+class AnimNotify: public Object
 {
 public:
-	TArray<struct BlueprintInputTouchDelegateBinding>            InputTouchDelegateBindings;                        // 0x28(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x1d0] - InheritedSize[0x1c8]
-class MaterialExpressionTextureSampleParameterSubUV: public MaterialExpressionTextureSampleParameter2D
-{
-public:
-	bool                                                         bBlend;                                            // 0x1c8(0x1)
-	bool                                                         bMipBiasOnLowResolution;                           // 0x1c8(0x1)
-};
-
-
-// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
-class ParticleModuleVectorFieldGlobal: public ParticleModuleVectorFieldBase
-{
-public:
-	bool                                                         bOverrideGlobalVectorFieldTightness;               // 0x50(0x1)
-	float                                                        GlobalVectorFieldScale;                            // 0x54(0x4)
-	float                                                        GlobalVectorFieldTightness;                        // 0x58(0x4)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class PhysicsCollisionHandler: public Object
-{
-public:
-	float                                                        ImpactThreshold;                                   // 0x28(0x4)
-	float                                                        ImpactReFireDelay;                                 // 0x2c(0x4)
-	class SoundBase*                                             DefaultImpactSound;                                // 0x30(0x8)
-	float                                                        LastImpactSoundTime;                               // 0x38(0x4)
-};
-
-
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class InterpTrackInstFloatMaterialParam: public InterpTrackInst
-{
-public:
-	TArray<class MaterialInstanceDynamic*>                       MaterialInstances;                                 // 0x28(0x10)
-	TArray<float>                                                ResetFloats;                                       // 0x38(0x10)
-	TArray<struct PrimitiveMaterialRef>                          PrimitiveMaterialRefs;                             // 0x48(0x10)
-	class InterpTrackFloatMaterialParam*                         InstancedTrack;                                    // 0x58(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class Layer: public Object
-{
-public:
-	struct FName                                                 LayerName;                                         // 0x28(0x8)
-	bool                                                         bIsVisible;                                        // 0x30(0x1)
-	TArray<struct LayerActorStats>                               ActorStats;                                        // 0x38(0x10)
+	bool                                                         PlayedWithSequencer;                               // 0x28(0x1)
 };
 
 
@@ -622,41 +2363,34 @@ public:
 };
 
 
-// Size 0xf8 (Full Size[0x120] - InheritedSize[0x28]
-class CameraAnimInst: public Object
+// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
+class EdGraphNode: public Object
 {
 public:
-	class CameraAnim*                                            CamAnim;                                           // 0x28(0x8)
-	class InterpGroupInst*                                       InterpGroupInst;                                   // 0x30(0x8)
-	float                                                        PlayRate;                                          // 0x54(0x4)
-	class InterpTrackMove*                                       MoveTrack;                                         // 0x68(0x8)
-	class InterpTrackInstMove*                                   MoveInst;                                          // 0x70(0x8)
-	class CurveFloat*                                            BlendInCurve;                                      // 0x78(0x8)
-	char                                                         PlaySpace;                                         // 0x80(0x1)
+	TArray<class EdGraphPin*>                                    Pins;                                              // 0x28(0x10)
+	int                                                          NodePosX;                                          // 0x38(0x4)
+	int                                                          NodePosY;                                          // 0x3c(0x4)
+	int                                                          NodeWidth;                                         // 0x40(0x4)
+	int                                                          NodeHeight;                                        // 0x44(0x4)
+	bool                                                         bHasCompilerMessage;                               // 0x48(0x1)
+	struct FString                                               NodeComment;                                       // 0x50(0x10)
+	bool                                                         bCommentBubblePinned;                              // 0x60(0x1)
+	bool                                                         bCommentBubbleVisible;                             // 0x61(0x1)
+	int                                                          ErrorType;                                         // 0x64(0x4)
+	struct FString                                               ErrorMsg;                                          // 0x68(0x10)
+	struct Guid                                                  NodeGuid;                                          // 0x78(0x10)
+	char                                                         AdvancedPinDisplay;                                // 0x88(0x1)
+	bool                                                         bIsNodeEnabled;                                    // 0x89(0x1)
+	bool                                                         bIsDebugFunction;                                  // 0x8a(0x1)
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class InterpTrackInstEvent: public InterpTrackInst
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class DistributionVector: public Distribution
 {
 public:
-	float                                                        LastUpdatePosition;                                // 0x28(0x4)
-};
-
-
-// Size 0x20 (Full Size[0x198] - InheritedSize[0x178]
-class ParticleModuleLocationWorldOffset_Seeded: public ParticleModuleLocationWorldOffset
-{
-public:
-	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x178(0x20)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class ComponentDelegateBinding: public DynamicBlueprintBinding
-{
-public:
-	TArray<struct BlueprintComponentDelegateBinding>             ComponentDelegateBindings;                         // 0x28(0x10)
+	bool                                                         bCanBeBaked;                                       // 0x30(0x1)
+	bool                                                         bIsDirty;                                          // 0x30(0x1)
 };
 
 
@@ -669,10 +2403,683 @@ public:
 
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class InstancedActorDelegateBinding: public DynamicBlueprintBinding
+class InputKeyDelegateBinding: public InputDelegateBinding
 {
 public:
-	TArray<struct BlueprintInstancedActorDelegateBinding>        ActorDelegateBindings;                             // 0x28(0x10)
+	TArray<struct BlueprintInputKeyDelegateBinding>              InputKeyDelegateBindings;                          // 0x28(0x10)
+};
+
+
+// Size 0x98 (Full Size[0xc0] - InheritedSize[0x28]
+class InputSettings: public Object
+{
+public:
+	TArray<struct InputAxisConfigEntry>                          AxisConfig;                                        // 0x28(0x10)
+	bool                                                         bAltEnterTogglesFullscreen;                        // 0x38(0x1)
+	bool                                                         bUseMouseForTouch;                                 // 0x38(0x1)
+	bool                                                         bEnableMouseSmoothing;                             // 0x38(0x1)
+	bool                                                         bEnableFOVScaling;                                 // 0x38(0x1)
+	float                                                        FOVScale;                                          // 0x3c(0x4)
+	float                                                        DoubleClickTime;                                   // 0x40(0x4)
+	TArray<struct InputActionKeyMapping>                         ActionMappings;                                    // 0x48(0x10)
+	TArray<struct InputAxisKeyMapping>                           AxisMappings;                                      // 0x58(0x10)
+	TArray<struct InputCombinedAxisKeyMapping>                   CombinedAxisMappings;                              // 0x68(0x10)
+	bool                                                         bAlwaysShowTouchInterface;                         // 0x78(0x1)
+	bool                                                         bShowConsoleOnFourFingerTap;                       // 0x79(0x1)
+	struct StringAssetReference                                  DefaultTouchInterface;                             // 0x80(0x10)
+	struct Key                                                   ConsoleKey;                                        // 0x90(0x20)
+	TArray<struct Key>                                           ConsoleKeys;                                       // 0xb0(0x10)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class NavArea: public Object
+{
+public:
+	float                                                        DefaultCost;                                       // 0x28(0x4)
+	float                                                        FixedAreaEnteringCost;                             // 0x2c(0x4)
+	struct Color                                                 DrawColor;                                         // 0x30(0x4)
+	struct NavAgentSelector                                      SupportedAgents;                                   // 0x34(0x4)
+	bool                                                         bSupportsAgent0;                                   // 0x38(0x1)
+	bool                                                         bSupportsAgent1;                                   // 0x38(0x1)
+	bool                                                         bSupportsAgent2;                                   // 0x38(0x1)
+	bool                                                         bSupportsAgent3;                                   // 0x38(0x1)
+	bool                                                         bSupportsAgent4;                                   // 0x38(0x1)
+	bool                                                         bSupportsAgent5;                                   // 0x38(0x1)
+	bool                                                         bSupportsAgent6;                                   // 0x38(0x1)
+	bool                                                         bSupportsAgent7;                                   // 0x38(0x1)
+	bool                                                         bSupportsAgent8;                                   // 0x39(0x1)
+	bool                                                         bSupportsAgent9;                                   // 0x39(0x1)
+	bool                                                         bSupportsAgent10;                                  // 0x39(0x1)
+	bool                                                         bSupportsAgent11;                                  // 0x39(0x1)
+	bool                                                         bSupportsAgent12;                                  // 0x39(0x1)
+	bool                                                         bSupportsAgent13;                                  // 0x39(0x1)
+	bool                                                         bSupportsAgent14;                                  // 0x39(0x1)
+	bool                                                         bSupportsAgent15;                                  // 0x39(0x1)
+};
+
+
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class SoundGroups: public Object
+{
+public:
+	TArray<struct SoundGroup>                                    SoundGroupProfiles;                                // 0x28(0x10)
+};
+
+
+// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
+class ParticleModuleLocationBoneSocket: public ParticleModuleLocationBase
+{
+public:
+	char                                                         SourceType;                                        // 0x50(0x1)
+	struct Vector                                                UniversalOffset;                                   // 0x54(0xc)
+	TArray<struct LocationBoneSocketInfo>                        SourceLocations;                                   // 0x60(0x10)
+	char                                                         SelectionMethod;                                   // 0x70(0x1)
+	bool                                                         bUpdatePositionEachFrame;                          // 0x74(0x1)
+	bool                                                         bOrientMeshEmitters;                               // 0x74(0x1)
+	bool                                                         bInheritBoneVelocity;                              // 0x74(0x1)
+	struct Vector                                                InheritVelocityScale;                              // 0x78(0xc)
+	float                                                        InheritedSpeedCap;                                 // 0x84(0x4)
+	struct FName                                                 SkelMeshActorParamName;                            // 0x88(0x8)
+};
+
+
+// Size 0x400 (Full Size[0x428] - InheritedSize[0x28]
+class PlayerInput: public Object
+{
+public:
+	TArray<struct KeyBind>                                       DebugExecBindings;                                 // 0x120(0x10)
+	TArray<struct Name>                                          GamepadInvertedAxes;                               // 0x170(0x10)
+	TArray<struct Name>                                          MouseInvertedAxes;                                 // 0x180(0x10)
+	TArray<struct Name>                                          InvertedCombinedAxisY;                             // 0x190(0x10)
+	TArray<struct Name>                                          InvertedCombinedAxisX;                             // 0x1a0(0x10)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class InterpTrackInstMove: public InterpTrackInst
+{
+public:
+	struct Vector                                                ResetLocation;                                     // 0x28(0xc)
+	struct Rotator                                               ResetRotation;                                     // 0x34(0xc)
+};
+
+
+// Size 0xf8 (Full Size[0x4c0] - InheritedSize[0x3c8]
+class GameMode: public Info
+{
+public:
+	bool                                                         bDisableAsyncOcclusionChecking;                    // 0x3d0(0x1)
+	bool                                                         bUseSeamlessTravel;                                // 0x3d0(0x1)
+	bool                                                         bPauseable;                                        // 0x3d0(0x1)
+	bool                                                         bStartPlayersAsSpectators;                         // 0x3d0(0x1)
+	bool                                                         bDelayedStart;                                     // 0x3d0(0x1)
+	struct FString                                               OptionsString;                                     // 0x3d8(0x10)
+	class UClass*                                                DefaultPawnClass;                                  // 0x3e8(0x8)
+	class UClass*                                                HUDClass;                                          // 0x3f0(0x8)
+	int                                                          NumSpectators;                                     // 0x3f8(0x4)
+	int                                                          NumPlayers;                                        // 0x3fc(0x4)
+	int                                                          NumBots;                                           // 0x400(0x4)
+	float                                                        MinRespawnDelay;                                   // 0x404(0x4)
+	class GameSession*                                           GameSession;                                       // 0x408(0x8)
+	int                                                          NumTravellingPlayers;                              // 0x410(0x4)
+	struct FText                                                 DefaultPlayerName;                                 // 0x418(0x38)
+	class UClass*                                                EngineMessageClass;                                // 0x450(0x8)
+	class UClass*                                                PlayerControllerClass;                             // 0x458(0x8)
+	class UClass*                                                SpectatorClass;                                    // 0x460(0x8)
+	class UClass*                                                ReplaySpectatorPlayerControllerClass;              // 0x468(0x8)
+	class UClass*                                                PlayerStateClass;                                  // 0x470(0x8)
+	class UClass*                                                GameStateClass;                                    // 0x478(0x8)
+	class GameState*                                             GameState;                                         // 0x480(0x8)
+	TArray<class PlayerState*>                                   InactivePlayerArray;                               // 0x488(0x10)
+	TArray<struct GameClassShortName>                            GameModeClassAliases;                              // 0x4a8(0x10)
+	float                                                        InactivePlayerStateLifeSpan;                       // 0x4b8(0x4)
+	bool                                                         bHandleDedicatedServerReplays;                     // 0x4bc(0x1)
+};
+
+
+// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
+class ParticleModuleSizeScaleBySpeed: public ParticleModuleSizeBase
+{
+public:
+	struct Vector2D                                              SpeedScale;                                        // 0x50(0x8)
+	struct Vector2D                                              MaxScale;                                          // 0x58(0x8)
+};
+
+
+// Size 0x560 (Full Size[0x960] - InheritedSize[0x400]
+class PostProcessVolume: public Volume
+{
+public:
+	struct PostProcessSettings                                   Settings;                                          // 0x410(0x540)
+	float                                                        Priority;                                          // 0x950(0x4)
+	float                                                        BlendRadius;                                       // 0x954(0x4)
+	float                                                        BlendWeight;                                       // 0x958(0x4)
+	bool                                                         bEnabled;                                          // 0x95c(0x1)
+	bool                                                         bUnbound;                                          // 0x95c(0x1)
+};
+
+
+// Size 0x38 (Full Size[0x88] - InheritedSize[0x50]
+class ParticleModuleAlignRotationToVelocity: public ParticleModuleRotationBase
+{
+public:
+	struct RawDistributionFloat                                  AdditionalAngle;                                   // 0x50(0x38)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class SimpleConstructionScript: public Object
+{
+public:
+	TArray<class SCS_Node*>                                      RootNodes;                                         // 0x28(0x10)
+	class SCS_Node*                                              DefaultSceneRootNode;                              // 0x38(0x8)
+};
+
+
+// Size 0x120 (Full Size[0x158] - InheritedSize[0x38]
+class CollisionProfile: public DeveloperSettings
+{
+public:
+	TArray<struct CollisionResponseTemplate>                     Profiles;                                          // 0x38(0x10)
+	TArray<struct CustomChannelSetup>                            DefaultChannelResponses;                           // 0x48(0x10)
+	TArray<struct CustomProfile>                                 EditProfiles;                                      // 0x58(0x10)
+	TArray<struct Redirector>                                    ProfileRedirects;                                  // 0x68(0x10)
+	TArray<struct Redirector>                                    CollisionChannelRedirects;                         // 0x78(0x10)
+};
+
+
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class CheatManager: public Object
+{
+public:
+	class DebugCameraController*                                 DebugCameraControllerRef;                          // 0x28(0x8)
+	class UClass*                                                DebugCameraControllerClass;                        // 0x30(0x8)
+};
+
+
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
+class Channel: public Object
+{
+public:
+	class NetConnection*                                         Connection;                                        // 0x28(0x8)
+};
+
+
+// Size 0x1b0 (Full Size[0x1d8] - InheritedSize[0x28]
+class Font: public Object
+{
+public:
+	char                                                         FontCacheType;                                     // 0x30(0x1)
+	TArray<struct FontCharacter>                                 Characters;                                        // 0x38(0x10)
+	TArray<class Texture2D*>                                     Textures;                                          // 0x48(0x10)
+	int                                                          IsRemapped;                                        // 0x58(0x4)
+	float                                                        EmScale;                                           // 0x5c(0x4)
+	float                                                        Ascent;                                            // 0x60(0x4)
+	float                                                        Descent;                                           // 0x64(0x4)
+	float                                                        Leading;                                           // 0x68(0x4)
+	int                                                          Kerning;                                           // 0x6c(0x4)
+	struct FontImportOptionsData                                 ImportOptions;                                     // 0x70(0xb0)
+	int                                                          NumCharacters;                                     // 0x120(0x4)
+	TArray<int>                                                  MaxCharHeight;                                     // 0x128(0x10)
+	float                                                        ScalingFactor;                                     // 0x138(0x4)
+	int                                                          LegacyFontSize;                                    // 0x13c(0x4)
+	struct FName                                                 LegacyFontName;                                    // 0x140(0x8)
+	struct CompositeFont                                         CompositeFont;                                     // 0x148(0x28)
+};
+
+
+// Size 0x70 (Full Size[0x438] - InheritedSize[0x3c8]
+class GameNetworkManager: public Info
+{
+public:
+	int                                                          AdjustedNetSpeed;                                  // 0x3c8(0x4)
+	float                                                        LastNetSpeedUpdateTime;                            // 0x3cc(0x4)
+	int                                                          TotalNetBandwidth;                                 // 0x3d0(0x4)
+	int                                                          MinDynamicBandwidth;                               // 0x3d4(0x4)
+	int                                                          MaxDynamicBandwidth;                               // 0x3d8(0x4)
+	bool                                                         bIsStandbyCheckingEnabled;                         // 0x3dc(0x1)
+	bool                                                         bHasStandbyCheatTriggered;                         // 0x3dc(0x1)
+	float                                                        StandbyRxCheatTime;                                // 0x3e0(0x4)
+	float                                                        StandbyTxCheatTime;                                // 0x3e4(0x4)
+	int                                                          BadPingThreshold;                                  // 0x3e8(0x4)
+	float                                                        PercentMissingForRxStandby;                        // 0x3ec(0x4)
+	float                                                        PercentMissingForTxStandby;                        // 0x3f0(0x4)
+	float                                                        PercentForBadPing;                                 // 0x3f4(0x4)
+	float                                                        JoinInProgressStandbyWaitTime;                     // 0x3f8(0x4)
+	float                                                        MoveRepSize;                                       // 0x3fc(0x4)
+	float                                                        MAXPOSITIONERRORSQUARED;                           // 0x400(0x4)
+	float                                                        MAXNEARZEROVELOCITYSQUARED;                        // 0x404(0x4)
+	float                                                        CLIENTADJUSTUPDATECOST;                            // 0x408(0x4)
+	float                                                        MAXCLIENTUPDATEINTERVAL;                           // 0x40c(0x4)
+	float                                                        MaxMoveDeltaTime;                                  // 0x410(0x4)
+	bool                                                         ClientAuthorativePosition;                         // 0x414(0x1)
+	float                                                        ClientErrorUpdateRateLimit;                        // 0x418(0x4)
+	bool                                                         bMovementTimeDiscrepancyDetection;                 // 0x41c(0x1)
+	bool                                                         bMovementTimeDiscrepancyResolution;                // 0x41d(0x1)
+	float                                                        MovementTimeDiscrepancyMaxTimeMargin;              // 0x420(0x4)
+	float                                                        MovementTimeDiscrepancyMinTimeMargin;              // 0x424(0x4)
+	float                                                        MovementTimeDiscrepancyResolutionRate;             // 0x428(0x4)
+	float                                                        MovementTimeDiscrepancyDriftAllowance;             // 0x42c(0x4)
+	bool                                                         bMovementTimeDiscrepancyForceCorrectionsDuringResolution; // 0x430(0x1)
+	bool                                                         bUseDistanceBasedRelevancy;                        // 0x431(0x1)
+};
+
+
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class MaterialFunction: public Object
+{
+public:
+	struct Guid                                                  StateId;                                           // 0x28(0x10)
+	struct FString                                               Description;                                       // 0x38(0x10)
+	bool                                                         bExposeToLibrary;                                  // 0x48(0x1)
+	TArray<struct Text>                                          LibraryCategoriesText;                             // 0x50(0x10)
+	TArray<class MaterialExpression*>                            FunctionExpressions;                               // 0x60(0x10)
+	bool                                                         bReentrantFlag;                                    // 0x70(0x1)
+};
+
+
+// Size 0x2e0 (Full Size[0x308] - InheritedSize[0x28]
+class AutomationTestSettings: public Object
+{
+public:
+	struct FilePath                                              AutomationTestmap;                                 // 0x28(0x10)
+	TArray<struct EditorMapPerformanceTestDefinition>            EditorPerformanceTestMaps;                         // 0x38(0x10)
+	struct BuildPromotionTestSettings                            BuildPromotionTest;                                // 0x48(0x210)
+	struct MaterialEditorPromotionSettings                       MaterialEditorPromotionTest;                       // 0x258(0x30)
+	struct ParticleEditorPromotionSettings                       ParticleEditorPromotionTest;                       // 0x288(0x10)
+	TArray<String>                                               EngineTestModules;                                 // 0x298(0x10)
+	TArray<String>                                               EditorTestModules;                                 // 0x2a8(0x10)
+	TArray<String>                                               TestLevelFolders;                                  // 0x2b8(0x10)
+	TArray<struct OpenTestAsset>                                 TestAssetsToOpen;                                  // 0x2c8(0x10)
+	TArray<struct ExternalToolDefinition>                        ExternalTools;                                     // 0x2d8(0x10)
+	TArray<struct EditorImportExportTestDefinition>              ImportExportTestDefinitions;                       // 0x2e8(0x10)
+	TArray<struct LaunchOnTestSettings>                          LaunchOnSettings;                                  // 0x2f8(0x10)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class LightmappedSurfaceCollection: public Object
+{
+public:
+	class Model*                                                 SourceModel;                                       // 0x28(0x8)
+	TArray<int>                                                  Surfaces;                                          // 0x30(0x10)
+};
+
+
+// Size 0xc0 (Full Size[0x110] - InheritedSize[0x50]
+class ParticleModuleBeamModifier: public ParticleModuleBeamBase
+{
+public:
+	char                                                         ModifierType;                                      // 0x50(0x1)
+	struct BeamModifierOptions                                   PositionOptions;                                   // 0x54(0x4)
+	struct RawDistributionVector                                 Position;                                          // 0x58(0x38)
+	struct BeamModifierOptions                                   TangentOptions;                                    // 0x90(0x4)
+	struct RawDistributionVector                                 Tangent;                                           // 0x98(0x38)
+	bool                                                         bAbsoluteTangent;                                  // 0xd0(0x1)
+	struct BeamModifierOptions                                   StrengthOptions;                                   // 0xd4(0x4)
+	struct RawDistributionFloat                                  Strength;                                          // 0xd8(0x38)
+};
+
+
+// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
+class ParticleModuleMeshRotation: public ParticleModuleRotationBase
+{
+public:
+	struct RawDistributionVector                                 StartRotation;                                     // 0x50(0x38)
+	bool                                                         bInheritParent;                                    // 0x88(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class RadialForceActor: public RigidBodyBase
+{
+public:
+	class RadialForceComponent*                                  ForceComponent;                                    // 0x3c8(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class ObjectReferencer: public Object
+{
+public:
+	TArray<class Object*>                                        ReferencedObjects;                                 // 0x28(0x10)
+};
+
+
+// Size 0xe0 (Full Size[0x130] - InheritedSize[0x50]
+class ParticleModuleLocationDirect: public ParticleModuleLocationBase
+{
+public:
+	struct RawDistributionVector                                 Location;                                          // 0x50(0x38)
+	struct RawDistributionVector                                 LocationOffset;                                    // 0x88(0x38)
+	struct RawDistributionVector                                 ScaleFactor;                                       // 0xc0(0x38)
+	struct RawDistributionVector                                 Direction;                                         // 0xf8(0x38)
+};
+
+
+// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
+class ParticleModuleMeshMaterial: public ParticleModuleMaterialBase
+{
+public:
+	TArray<class MaterialInterface*>                             MeshMaterials;                                     // 0x50(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class WindDirectionalSource: public Info
+{
+public:
+	class WindDirectionalSourceComponent*                        Component;                                         // 0x3c8(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class Breakpoint: public Object
+{
+public:
+	bool                                                         bEnabled;                                          // 0x28(0x1)
+	class EdGraphNode*                                           Node;                                              // 0x30(0x8)
+	bool                                                         bStepOnce;                                         // 0x38(0x1)
+	bool                                                         bStepOnce_WasPreviouslyDisabled;                   // 0x38(0x1)
+	bool                                                         bStepOnce_RemoveAfterHit;                          // 0x38(0x1)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class InputActionDelegateBinding: public InputDelegateBinding
+{
+public:
+	TArray<struct BlueprintInputActionDelegateBinding>           InputActionDelegateBindings;                       // 0x28(0x10)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class AnimCompress: public Object
+{
+public:
+	struct FString                                               Description;                                       // 0x28(0x10)
+	bool                                                         bNeedsSkeleton;                                    // 0x38(0x1)
+	char                                                         TranslationCompressionFormat;                      // 0x3c(0x1)
+	char                                                         RotationCompressionFormat;                         // 0x3d(0x1)
+	char                                                         ScaleCompressionFormat;                            // 0x3e(0x1)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class HighLatencySettings: public Object
+{
+public:
+	bool                                                         UseHighLatency;                                    // 0x28(0x1)
+	int                                                          PktLag;                                            // 0x2c(0x4)
+	int                                                          PktLagVariance;                                    // 0x30(0x4)
+	bool                                                         PktOrder;                                          // 0x34(0x1)
+	int                                                          PktDup;                                            // 0x38(0x4)
+	int                                                          PktLoss;                                           // 0x3c(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class InterpTrackInstDirector: public InterpTrackInst
+{
+public:
+	class Actor*                                                 OldViewTarget;                                     // 0x28(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
+class GarbageCollectionSettings: public DeveloperSettings
+{
+public:
+	float                                                        TimeBetweenPurgingPendingKillObjects;              // 0x38(0x4)
+	bool                                                         FlushStreamingOnGC;                                // 0x3c(0x1)
+	bool                                                         AllowParallelGC;                                   // 0x3c(0x1)
+	bool                                                         CreateGCClusters;                                  // 0x3c(0x1)
+	bool                                                         MergeGCClusters;                                   // 0x3c(0x1)
+	int                                                          NumRetriesBeforeForcingGC;                         // 0x40(0x4)
+	int                                                          MaxObjectsNotConsideredByGC;                       // 0x44(0x4)
+	int                                                          SizeOfPermanentObjectPool;                         // 0x48(0x4)
+	int                                                          MaxObjectsInGame;                                  // 0x4c(0x4)
+	int                                                          MaxObjectsInEditor;                                // 0x50(0x4)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class AnimationAsset: public Object
+{
+public:
+	class Skeleton*                                              Skeleton;                                          // 0x28(0x8)
+	TArray<class AnimMetaData*>                                  MetaData;                                          // 0x40(0x10)
+};
+
+
+// Size 0x100 (Full Size[0x128] - InheritedSize[0x28]
+class EdGraphPin: public Object
+{
+public:
+	struct FString                                               PinName;                                           // 0x28(0x10)
+	struct FString                                               PinToolTip;                                        // 0x38(0x10)
+	char                                                         Direction;                                         // 0x48(0x1)
+	struct EdGraphPinType                                        PinType;                                           // 0x50(0x50)
+	struct FString                                               DefaultValue;                                      // 0xa0(0x10)
+	struct FString                                               AutogeneratedDefaultValue;                         // 0xb0(0x10)
+	class Object*                                                DefaultObject;                                     // 0xc0(0x8)
+	struct FText                                                 DefaultTextValue;                                  // 0xc8(0x38)
+	TArray<class EdGraphPin*>                                    LinkedTo;                                          // 0x100(0x10)
+	TArray<class EdGraphPin*>                                    SubPins;                                           // 0x110(0x10)
+	class EdGraphPin*                                            ParentPin;                                         // 0x120(0x8)
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class AutomationTestUserSettings: public Object
+{
+public:
+	bool                                                         FilterTests;                                       // 0x28(0x1)
+	TArray<String>                                               IncludedTestsPrefix;                               // 0x30(0x10)
+	TArray<String>                                               ExcludedTestsPrefix;                               // 0x40(0x10)
+	bool                                                         IncludeEpicTests;                                  // 0x50(0x1)
+};
+
+
+// Size 0xe0 (Full Size[0x130] - InheritedSize[0x50]
+class ParticleModuleLocationPrimitiveTriangle: public ParticleModuleLocationBase
+{
+public:
+	struct RawDistributionVector                                 StartOffset;                                       // 0x50(0x38)
+	struct RawDistributionFloat                                  Height;                                            // 0x88(0x38)
+	struct RawDistributionFloat                                  Angle;                                             // 0xc0(0x38)
+	struct RawDistributionFloat                                  Thickness;                                         // 0xf8(0x38)
+};
+
+
+// Size 0x38 (Full Size[0x88] - InheritedSize[0x50]
+class ParticleModuleSourceMovement: public ParticleModuleLocationBase
+{
+public:
+	struct RawDistributionVector                                 SourceMovementScale;                               // 0x50(0x38)
+};
+
+
+// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
+class ParticleModuleVectorFieldScaleOverLife: public ParticleModuleVectorFieldBase
+{
+public:
+	class DistributionFloat*                                     VectorFieldScaleOverLife;                          // 0x50(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class EndUserSettings: public Object
+{
+public:
+	bool                                                         bSendAnonymousUsageDataToEpic;                     // 0x30(0x1)
+};
+
+
+// Size 0x110 (Full Size[0x138] - InheritedSize[0x28]
+class HIKCharacterization: public Object
+{
+public:
+	struct FName                                                 Reference;                                         // 0x28(0x8)
+	struct FName                                                 Hips;                                              // 0x30(0x8)
+	struct FName                                                 LeftUpLeg;                                         // 0x38(0x8)
+	struct FName                                                 LeftLeg;                                           // 0x40(0x8)
+	struct FName                                                 LeftFoot;                                          // 0x48(0x8)
+	struct FName                                                 RightUpLeg;                                        // 0x50(0x8)
+	struct FName                                                 RightLeg;                                          // 0x58(0x8)
+	struct FName                                                 RightFoot;                                         // 0x60(0x8)
+	struct FName                                                 Spine;                                             // 0x68(0x8)
+	struct FName                                                 LeftArm;                                           // 0x70(0x8)
+	struct FName                                                 LeftForeArm;                                       // 0x78(0x8)
+	struct FName                                                 LeftHand;                                          // 0x80(0x8)
+	struct FName                                                 RightArm;                                          // 0x88(0x8)
+	struct FName                                                 RightForeArm;                                      // 0x90(0x8)
+	struct FName                                                 RightHand;                                         // 0x98(0x8)
+	struct FName                                                 Head;                                              // 0xa0(0x8)
+	TArray<struct HIKBoneTransform>                              BoneTransforms;                                    // 0xa8(0x10)
+	bool                                                         Locked;                                            // 0xb8(0x1)
+	TArray<int>                                                  UnrealToHumanIKBoneMapping;                        // 0xc0(0x10)
+	TArray<struct HIKBoneMapping>                                AdditionalBones;                                   // 0xd0(0x10)
+	bool                                                         LeftElbowInverted;                                 // 0xe0(0x1)
+	bool                                                         RightElbowInverted;                                // 0xe1(0x1)
+	bool                                                         LeftKneeInverted;                                  // 0xe2(0x1)
+	bool                                                         RightKneeInverted;                                 // 0xe3(0x1)
+	bool                                                         AdjustLeftShoulder;                                // 0xe4(0x1)
+	struct Vector                                                AdjustLeftShoulder_Axis;                           // 0xe8(0xc)
+	float                                                        AdjustLeftShoulder_Angle;                          // 0xf4(0x4)
+	bool                                                         AdjustRightShoulder;                               // 0xf8(0x1)
+	struct Vector                                                AdjustRightShoulder_Axis;                          // 0xfc(0xc)
+	float                                                        AdjustRightShoulder_Angle;                         // 0x108(0x4)
+	bool                                                         SpineSquashNStretch;                               // 0x10c(0x1)
+	bool                                                         NeckSquashNStretch;                                // 0x10d(0x1)
+	float                                                        SpineJointsMinSquashNStretchFactor;                // 0x110(0x4)
+	float                                                        SpineJointsMaxSquashNStretchFactor;                // 0x114(0x4)
+	float                                                        NeckJointsMinSquashNStretchFactor;                 // 0x118(0x4)
+	float                                                        NeckJointsMaxSquashNStretchFactor;                 // 0x11c(0x4)
+	bool                                                         bInitFromSkeleton;                                 // 0x120(0x1)
+	int                                                          InitFromSkeletonCount;                             // 0x124(0x4)
+	struct Rotator                                               ImportRotator;                                     // 0x128(0xc)
+};
+
+
+// Size 0x10 (Full Size[0x410] - InheritedSize[0x400]
+class FFTWater: public Volume
+{
+public:
+	class FFTWaterComponent*                                     FFTWaterComponent;                                 // 0x400(0x8)
+	class FFTWaterExtendedPlaneComponent*                        ExtendedPlaneComponent;                            // 0x408(0x8)
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class ObjectLibrary: public Object
+{
+public:
+	class UClass*                                                ObjectBaseClass;                                   // 0x28(0x8)
+	bool                                                         bHasBlueprintClasses;                              // 0x30(0x1)
+	TArray<class Object*>                                        Objects;                                           // 0x38(0x10)
+	TArray<uintptr_t>                                            WeakObjects;                                       // 0x48(0x10)
+	bool                                                         bUseWeakReferences;                                // 0x58(0x1)
+	bool                                                         bIsFullyLoaded;                                    // 0x59(0x1)
+};
+
+
+// Size 0x118 (Full Size[0x140] - InheritedSize[0x28]
+class Texture: public Object
+{
+public:
+	int                                                          LODBias;                                           // 0x28(0x4)
+	int                                                          NumCinematicMipLevels;                             // 0x2c(0x4)
+	bool                                                         SRGB;                                              // 0x30(0x1)
+	bool                                                         NeverStream;                                       // 0x30(0x1)
+	bool                                                         bNoTiling;                                         // 0x30(0x1)
+	bool                                                         bUseCinematicMipLevels;                            // 0x30(0x1)
+	bool                                                         CompressionNone;                                   // 0x30(0x1)
+	bool                                                         bUAV;                                              // 0x30(0x1)
+	uint32                                                       MaxQualityReduction;                               // 0x34(0x4)
+	int                                                          CachedCombinedLODBias;                             // 0x38(0x4)
+	bool                                                         bAsyncResourceReleaseHasBeenStarted;               // 0x3c(0x1)
+	char                                                         CompressionSettings;                               // 0x40(0x1)
+	char                                                         Filter;                                            // 0x41(0x1)
+	char                                                         LODGroup;                                          // 0x42(0x1)
+	float                                                        StreamingPriorityBoost;                            // 0x44(0x4)
+	TArray<struct ExternalMip>                                   ExternalMips;                                      // 0xa8(0x10)
+};
+
+
+// Size 0x38 (Full Size[0x88] - InheritedSize[0x50]
+class ParticleModuleVectorFieldLocal: public ParticleModuleVectorFieldBase
+{
+public:
+	class VectorField*                                           VectorField;                                       // 0x50(0x8)
+	struct Vector                                                RelativeTranslation;                               // 0x58(0xc)
+	struct Rotator                                               RelativeRotation;                                  // 0x64(0xc)
+	struct Vector                                                RelativeScale3D;                                   // 0x70(0xc)
+	float                                                        Intensity;                                         // 0x7c(0x4)
+	float                                                        Tightness;                                         // 0x80(0x4)
+	bool                                                         bIgnoreComponentTransform;                         // 0x84(0x1)
+	bool                                                         bTileX;                                            // 0x84(0x1)
+	bool                                                         bTileY;                                            // 0x84(0x1)
+	bool                                                         bTileZ;                                            // 0x84(0x1)
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class InterpData: public Object
+{
+public:
+	float                                                        InterpLength;                                      // 0x28(0x4)
+	float                                                        PathBuildTime;                                     // 0x2c(0x4)
+	TArray<class InterpGroup*>                                   InterpGroups;                                      // 0x30(0x10)
+	class InterpCurveEdSetup*                                    CurveEdSetup;                                      // 0x40(0x8)
+	float                                                        EdSectionStart;                                    // 0x48(0x4)
+	float                                                        EdSectionEnd;                                      // 0x4c(0x4)
+	bool                                                         bShouldBakeAndPrune;                               // 0x50(0x1)
+	class InterpGroupDirector*                                   CachedDirectorGroup;                               // 0x58(0x8)
+	TArray<struct Name>                                          AllEventNames;                                     // 0x60(0x10)
+};
+
+
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionCustomVelocity: public MaterialExpressionCustomOutput
+{
+public:
+	struct ExpressionInput                                       Velocity2D;                                        // 0x70(0x38)
+};
+
+
+// Size 0x18 (Full Size[0x418] - InheritedSize[0x400]
+class CullDistanceVolume: public Volume
+{
+public:
+	TArray<struct CullDistanceSizePair>                          CullDistances;                                     // 0x400(0x10)
+	bool                                                         bEnabled;                                          // 0x410(0x1)
+};
+
+
+// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
+class UserDefinedStruct: public ScriptStruct
+{
+public:
+	struct Guid                                                  Guid;                                              // 0x98(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class BookMark2D: public Object
+{
+public:
+	float                                                        Zoom2D;                                            // 0x28(0x4)
+	struct IntPoint                                              Location;                                          // 0x2c(0x8)
+};
+
+
+// Size 0x100 (Full Size[0x128] - InheritedSize[0x28]
+class HapticFeedbackEffect: public Object
+{
+public:
+	struct HapticFeedbackDetails                                 HapticDetails;                                     // 0x28(0x100)
 };
 
 
@@ -700,45 +3107,12 @@ public:
 };
 
 
-// Size 0x158 (Full Size[0x1a8] - InheritedSize[0x50]
-class ParticleModuleRotationRate: public ParticleModuleRotationRateBase
+// Size 0x10 (Full Size[0x410] - InheritedSize[0x400]
+class NavMeshBoundsVolume: public Volume
 {
 public:
-	bool                                                         bUseGroupARotationRateForAllGroups;                // 0x50(0x1)
-	struct RawDistributionFloat                                  StartRotationRate;                                 // 0x58(0x38)
-	struct RawDistributionFloat                                  AdditionalStartRotationRate;                       // 0x90(0x38)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class SoundNode: public Object
-{
-public:
-	TArray<class SoundNode*>                                     ChildNodes;                                        // 0x28(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
-class ParticleModuleMeshMaterial: public ParticleModuleMaterialBase
-{
-public:
-	TArray<class MaterialInterface*>                             MeshMaterials;                                     // 0x50(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class InterpTrackInstFloatParticleParam: public InterpTrackInst
-{
-public:
-	float                                                        ResetFloat;                                        // 0x28(0x4)
-};
-
-
-// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
-class UserDefinedStruct: public ScriptStruct
-{
-public:
-	struct Guid                                                  Guid;                                              // 0x98(0x10)
+	struct NavAgentSelector                                      SupportedAgents;                                   // 0x400(0x4)
+	struct FName                                                 OriginatingLevelName;                              // 0x404(0x8)
 };
 
 
@@ -750,66 +3124,106 @@ public:
 };
 
 
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionCustomVelocity: public MaterialExpressionCustomOutput
+// Size 0x90 (Full Size[0xb8] - InheritedSize[0x28]
+class WorldComposition: public Object
 {
 public:
-	struct ExpressionInput                                       Velocity2D;                                        // 0x70(0x38)
+	TArray<class LevelStreaming*>                                TilesStreaming;                                    // 0x98(0x10)
+	double                                                       TilesStreamingTimeThreshold;                       // 0xa8(0x8)
+	bool                                                         bLoadAllTilesDuringCinematic;                      // 0xb0(0x1)
+	bool                                                         bRebaseOriginIn3DSpace;                            // 0xb1(0x1)
+	float                                                        RebaseOriginDistance;                              // 0xb4(0x4)
 };
 
 
-// Size 0x118 (Full Size[0x140] - InheritedSize[0x28]
-class CameraShake: public Object
+// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
+class ParticleModuleRotationOverLifetime: public ParticleModuleRotationBase
 {
 public:
-	bool                                                         bSingleInstance;                                   // 0x28(0x1)
-	float                                                        OscillationDuration;                               // 0x2c(0x4)
-	float                                                        OscillationBlendInTime;                            // 0x30(0x4)
-	float                                                        OscillationBlendOutTime;                           // 0x34(0x4)
-	struct ROscillator                                           RotOscillation;                                    // 0x38(0x24)
-	struct VOscillator                                           LocOscillation;                                    // 0x5c(0x24)
-	struct FOscillator                                           FOVOscillation;                                    // 0x80(0xc)
-	float                                                        AnimPlayRate;                                      // 0x8c(0x4)
-	float                                                        AnimScale;                                         // 0x90(0x4)
-	float                                                        AnimBlendInTime;                                   // 0x94(0x4)
-	float                                                        AnimBlendOutTime;                                  // 0x98(0x4)
-	float                                                        RandomAnimSegmentDuration;                         // 0x9c(0x4)
-	class CameraAnim*                                            Anim;                                              // 0xa0(0x8)
-	bool                                                         bRandomAnimSegment;                                // 0xa8(0x1)
-	class PlayerCameraManager*                                   CameraOwner;                                       // 0xc0(0x8)
-	float                                                        ShakeScale;                                        // 0x130(0x4)
-	float                                                        OscillatorTimeRemaining;                           // 0x134(0x4)
-	class CameraAnimInst*                                        AnimInst;                                          // 0x138(0x8)
+	struct RawDistributionFloat                                  RotationOverLife;                                  // 0x50(0x38)
+	bool                                                         Scale;                                             // 0x88(0x1)
+};
+
+
+// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
+class SoundNodeWavePlayer: public SoundNodeAssetReferencer
+{
+public:
+	assetobject                                                  SoundWaveAssetPtr;                                 // 0x38(0x20)
+	class SoundWave*                                             SoundWave;                                         // 0x58(0x8)
+	bool                                                         bLooping;                                          // 0x60(0x1)
+};
+
+
+// Size 0x90 (Full Size[0xb8] - InheritedSize[0x28]
+class ParticleLODLevel: public Object
+{
+public:
+	int                                                          Level;                                             // 0x28(0x4)
+	bool                                                         bEnabled;                                          // 0x2c(0x1)
+	class ParticleModuleRequired*                                RequiredModule;                                    // 0x30(0x8)
+	TArray<class ParticleModule*>                                Modules;                                           // 0x38(0x10)
+	class ParticleModule*                                        TypeDataModule;                                    // 0x48(0x8)
+	class ParticleModuleSpawn*                                   SpawnModule;                                       // 0x50(0x8)
+	class ParticleModuleEventGenerator*                          EventGenerator;                                    // 0x58(0x8)
+	TArray<class ParticleModuleSpawnBase*>                       SpawningModules;                                   // 0x60(0x10)
+	TArray<class ParticleModule*>                                SpawnModules;                                      // 0x70(0x10)
+	TArray<class ParticleModule*>                                UpdateModules;                                     // 0x80(0x10)
+	TArray<class ParticleModuleOrbit*>                           OrbitModules;                                      // 0x90(0x10)
+	TArray<class ParticleModuleEventReceiverBase*>               EventReceiverModules;                              // 0xa0(0x10)
+	bool                                                         ConvertedModules;                                  // 0xb0(0x1)
+	int                                                          PeakActiveParticles;                               // 0xb4(0x4)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class IntSerialization: public Object
+{
+public:
+	uint16                                                       UnsignedInt16Variable;                             // 0x28(0x2)
+	uint32                                                       UnsignedInt32Variable;                             // 0x2c(0x4)
+	uint64                                                       UnsignedInt64Variable;                             // 0x30(0x8)
+	int8                                                         SignedInt8Variable;                                // 0x38(0x1)
+	int16                                                        SignedInt16Variable;                               // 0x3a(0x2)
+	int64                                                        SignedInt64Variable;                               // 0x40(0x8)
+	char                                                         UnsignedInt8Variable;                              // 0x48(0x1)
+	int                                                          SignedInt32Variable;                               // 0x4c(0x4)
 };
 
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class InputActionDelegateBinding: public InputDelegateBinding
+class InputAxisDelegateBinding: public InputDelegateBinding
 {
 public:
-	TArray<struct BlueprintInputActionDelegateBinding>           InputActionDelegateBindings;                       // 0x28(0x10)
+	TArray<struct BlueprintInputAxisDelegateBinding>             InputAxisDelegateBindings;                         // 0x28(0x10)
 };
 
 
-// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
-class EdGraphNode: public Object
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class InterpTrackInstSound: public InterpTrackInst
 {
 public:
-	TArray<class EdGraphPin*>                                    Pins;                                              // 0x28(0x10)
-	int                                                          NodePosX;                                          // 0x38(0x4)
-	int                                                          NodePosY;                                          // 0x3c(0x4)
-	int                                                          NodeWidth;                                         // 0x40(0x4)
-	int                                                          NodeHeight;                                        // 0x44(0x4)
-	bool                                                         bHasCompilerMessage;                               // 0x48(0x1)
-	struct FString                                               NodeComment;                                       // 0x50(0x10)
-	bool                                                         bCommentBubblePinned;                              // 0x60(0x1)
-	bool                                                         bCommentBubbleVisible;                             // 0x61(0x1)
-	int                                                          ErrorType;                                         // 0x64(0x4)
-	struct FString                                               ErrorMsg;                                          // 0x68(0x10)
-	struct Guid                                                  NodeGuid;                                          // 0x78(0x10)
-	char                                                         AdvancedPinDisplay;                                // 0x88(0x1)
-	bool                                                         bIsNodeEnabled;                                    // 0x89(0x1)
-	bool                                                         bIsDebugFunction;                                  // 0x8a(0x1)
+	float                                                        LastUpdatePosition;                                // 0x28(0x4)
+	class AudioComponent*                                        PlayAudioComp;                                     // 0x30(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class PhysicsCollisionHandler: public Object
+{
+public:
+	float                                                        ImpactThreshold;                                   // 0x28(0x4)
+	float                                                        ImpactReFireDelay;                                 // 0x2c(0x4)
+	class SoundBase*                                             DefaultImpactSound;                                // 0x30(0x8)
+	float                                                        LastImpactSoundTime;                               // 0x38(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class VertexAnimBase: public Object
+{
+public:
+	class SkeletalMesh*                                          BaseSkelMesh;                                      // 0x28(0x8)
 };
 
 
@@ -845,302 +3259,11 @@ public:
 };
 
 
-// Size 0x88 (Full Size[0xb0] - InheritedSize[0x28]
-class PlatformInterfaceWebResponse: public Object
-{
-public:
-	struct FString                                               OriginalURL;                                       // 0x28(0x10)
-	int                                                          ResponseCode;                                      // 0x38(0x4)
-	int                                                          Tag;                                               // 0x3c(0x4)
-	struct FString                                               StringResponse;                                    // 0x40(0x10)
-	TArray<char>                                                 BinaryResponse;                                    // 0x50(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class WindDirectionalSource: public Info
-{
-public:
-	class WindDirectionalSourceComponent*                        Component;                                         // 0x3c8(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class InheritableComponentHandler: public Object
-{
-public:
-	TArray<struct ComponentOverrideRecord>                       Records;                                           // 0x28(0x10)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class Rig: public Object
-{
-public:
-	TArray<struct TransformBase>                                 TransformBases;                                    // 0x28(0x10)
-	TArray<struct Node>                                          Nodes;                                             // 0x38(0x10)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class DeviceProfileManager: public Object
-{
-public:
-	TArray<class Object*>                                        Profiles;                                          // 0x28(0x10)
-};
-
-
-// Size 0x98 (Full Size[0xc0] - InheritedSize[0x28]
-class InputSettings: public Object
-{
-public:
-	TArray<struct InputAxisConfigEntry>                          AxisConfig;                                        // 0x28(0x10)
-	bool                                                         bAltEnterTogglesFullscreen;                        // 0x38(0x1)
-	bool                                                         bUseMouseForTouch;                                 // 0x38(0x1)
-	bool                                                         bEnableMouseSmoothing;                             // 0x38(0x1)
-	bool                                                         bEnableFOVScaling;                                 // 0x38(0x1)
-	float                                                        FOVScale;                                          // 0x3c(0x4)
-	float                                                        DoubleClickTime;                                   // 0x40(0x4)
-	TArray<struct InputActionKeyMapping>                         ActionMappings;                                    // 0x48(0x10)
-	TArray<struct InputAxisKeyMapping>                           AxisMappings;                                      // 0x58(0x10)
-	TArray<struct InputCombinedAxisKeyMapping>                   CombinedAxisMappings;                              // 0x68(0x10)
-	bool                                                         bAlwaysShowTouchInterface;                         // 0x78(0x1)
-	bool                                                         bShowConsoleOnFourFingerTap;                       // 0x79(0x1)
-	struct StringAssetReference                                  DefaultTouchInterface;                             // 0x80(0x10)
-	struct Key                                                   ConsoleKey;                                        // 0x90(0x20)
-	TArray<struct Key>                                           ConsoleKeys;                                       // 0xb0(0x10)
-};
-
-
-// Size 0x38 (Full Size[0x88] - InheritedSize[0x50]
-class ParticleModuleSizeOverVelocity: public ParticleModuleSizeBase
-{
-public:
-	struct RawDistributionFloat                                  SizeMultiplier;                                    // 0x50(0x38)
-};
-
-
-// Size 0x60 (Full Size[0xb0] - InheritedSize[0x50]
-class ParticleModuleLocationSkelVertSurface: public ParticleModuleLocationBase
-{
-public:
-	char                                                         SourceType;                                        // 0x50(0x1)
-	struct Vector                                                UniversalOffset;                                   // 0x54(0xc)
-	bool                                                         bUpdatePositionEachFrame;                          // 0x60(0x1)
-	bool                                                         bOrientMeshEmitters;                               // 0x60(0x1)
-	bool                                                         bInheritBoneVelocity;                              // 0x60(0x1)
-	struct FName                                                 SkelMeshActorParamName;                            // 0x64(0x8)
-	TArray<struct Name>                                          ValidAssociatedBones;                              // 0x70(0x10)
-	bool                                                         bEnforceNormalCheck;                               // 0x80(0x1)
-	struct Vector                                                NormalToCompare;                                   // 0x84(0xc)
-	float                                                        NormalCheckToleranceDegrees;                       // 0x90(0x4)
-	float                                                        NormalCheckTolerance;                              // 0x94(0x4)
-	TArray<int>                                                  ValidMaterialIndices;                              // 0x98(0x10)
-	bool                                                         bInheritVertexColor;                               // 0xa8(0x1)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class AnimationAsset: public Object
-{
-public:
-	class Skeleton*                                              Skeleton;                                          // 0x28(0x8)
-	TArray<class AnimMetaData*>                                  MetaData;                                          // 0x40(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class InputAxisDelegateBinding: public InputDelegateBinding
-{
-public:
-	TArray<struct BlueprintInputAxisDelegateBinding>             InputAxisDelegateBindings;                         // 0x28(0x10)
-};
-
-
-// Size 0xe8 (Full Size[0x110] - InheritedSize[0x28]
-class NavCollision: public Object
-{
-public:
-	TArray<struct NavCollisionCylinder>                          CylinderCollision;                                 // 0x78(0x10)
-	TArray<struct NavCollisionBox>                               BoxCollision;                                      // 0x88(0x10)
-	class UClass*                                                AreaClass;                                         // 0x98(0x8)
-	bool                                                         bIsDynamicObstacle;                                // 0xa0(0x1)
-	bool                                                         bGatherConvexGeometry;                             // 0xa0(0x1)
-};
-
-
-// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
-class ParticleModuleKillOnFFTWater: public ParticleModuleKillBase
-{
-public:
-	char                                                         FFTWaterKillPointLocation;                         // 0x50(0x1)
-	bool                                                         bUseGroupAFFTWaterKillPointForAllGroups;           // 0x54(0x1)
-	char                                                         AdditionalFFTWaterKillPointLocations;              // 0x58(0x1)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class BlueprintCore: public Object
-{
-public:
-	class UClass*                                                SkeletonGeneratedClass;                            // 0x28(0x8)
-	class UClass*                                                GeneratedClass;                                    // 0x30(0x8)
-	bool                                                         bLegacyNeedToPurgeSkelRefs;                        // 0x38(0x1)
-	bool                                                         bLegacyGeneratedClassIsAuthoritative;              // 0x39(0x1)
-	struct Guid                                                  BlueprintGuid;                                     // 0x3c(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class NavArea: public Object
-{
-public:
-	float                                                        DefaultCost;                                       // 0x28(0x4)
-	float                                                        FixedAreaEnteringCost;                             // 0x2c(0x4)
-	struct Color                                                 DrawColor;                                         // 0x30(0x4)
-	struct NavAgentSelector                                      SupportedAgents;                                   // 0x34(0x4)
-	bool                                                         bSupportsAgent0;                                   // 0x38(0x1)
-	bool                                                         bSupportsAgent1;                                   // 0x38(0x1)
-	bool                                                         bSupportsAgent2;                                   // 0x38(0x1)
-	bool                                                         bSupportsAgent3;                                   // 0x38(0x1)
-	bool                                                         bSupportsAgent4;                                   // 0x38(0x1)
-	bool                                                         bSupportsAgent5;                                   // 0x38(0x1)
-	bool                                                         bSupportsAgent6;                                   // 0x38(0x1)
-	bool                                                         bSupportsAgent7;                                   // 0x38(0x1)
-	bool                                                         bSupportsAgent8;                                   // 0x39(0x1)
-	bool                                                         bSupportsAgent9;                                   // 0x39(0x1)
-	bool                                                         bSupportsAgent10;                                  // 0x39(0x1)
-	bool                                                         bSupportsAgent11;                                  // 0x39(0x1)
-	bool                                                         bSupportsAgent12;                                  // 0x39(0x1)
-	bool                                                         bSupportsAgent13;                                  // 0x39(0x1)
-	bool                                                         bSupportsAgent14;                                  // 0x39(0x1)
-	bool                                                         bSupportsAgent15;                                  // 0x39(0x1)
-};
-
-
-// Size 0x30 (Full Size[0x3f8] - InheritedSize[0x3c8]
-class GameSession: public Info
-{
-public:
-	int                                                          MaxSpectators;                                     // 0x3c8(0x4)
-	int                                                          MaxPlayers;                                        // 0x3cc(0x4)
-	char                                                         MaxSplitscreensPerConnection;                      // 0x3d0(0x1)
-	bool                                                         bRequiresPushToTalk;                               // 0x3d1(0x1)
-	struct FName                                                 SessionName;                                       // 0x3d4(0x8)
-};
-
-
-// Size 0x100 (Full Size[0x128] - InheritedSize[0x28]
-class EdGraphPin: public Object
-{
-public:
-	struct FString                                               PinName;                                           // 0x28(0x10)
-	struct FString                                               PinToolTip;                                        // 0x38(0x10)
-	char                                                         Direction;                                         // 0x48(0x1)
-	struct EdGraphPinType                                        PinType;                                           // 0x50(0x50)
-	struct FString                                               DefaultValue;                                      // 0xa0(0x10)
-	struct FString                                               AutogeneratedDefaultValue;                         // 0xb0(0x10)
-	class Object*                                                DefaultObject;                                     // 0xc0(0x8)
-	struct FText                                                 DefaultTextValue;                                  // 0xc8(0x38)
-	TArray<class EdGraphPin*>                                    LinkedTo;                                          // 0x100(0x10)
-	TArray<class EdGraphPin*>                                    SubPins;                                           // 0x110(0x10)
-	class EdGraphPin*                                            ParentPin;                                         // 0x120(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x410] - InheritedSize[0x400]
-class FFTWater: public Volume
-{
-public:
-	class FFTWaterComponent*                                     FFTWaterComponent;                                 // 0x400(0x8)
-	class FFTWaterExtendedPlaneComponent*                        ExtendedPlaneComponent;                            // 0x408(0x8)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class LightmassPrimitiveSettingsObject: public Object
-{
-public:
-	struct LightmassPrimitiveSettings                            LightmassSettings;                                 // 0x28(0x18)
-};
-
-
-// Size 0x78 (Full Size[0xc8] - InheritedSize[0x50]
-class ParticleModuleLocationPrimitiveBase: public ParticleModuleLocationBase
-{
-public:
-	bool                                                         Positive_X;                                        // 0x50(0x1)
-	bool                                                         Positive_Y;                                        // 0x50(0x1)
-	bool                                                         Positive_Z;                                        // 0x50(0x1)
-	bool                                                         Negative_X;                                        // 0x50(0x1)
-	bool                                                         Negative_Y;                                        // 0x50(0x1)
-	bool                                                         Negative_Z;                                        // 0x50(0x1)
-	bool                                                         SurfaceOnly;                                       // 0x50(0x1)
-	bool                                                         Velocity;                                          // 0x50(0x1)
-	struct RawDistributionFloat                                  VelocityScale;                                     // 0x58(0x38)
-	struct RawDistributionVector                                 StartLocation;                                     // 0x90(0x38)
-};
-
-
-// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
-class ParticleModuleOrientationAxisLock: public ParticleModuleOrientationBase
-{
-public:
-	char                                                         LockAxisFlags;                                     // 0x50(0x1)
-	bool                                                         bLockToOwnerAxis;                                  // 0x54(0x1)
-};
-
-
-// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
-class ParticleModuleMurkyColor: public ParticleModuleColorBase
-{
-public:
-	struct LinearColor                                           ColorScale;                                        // 0x50(0x10)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class BookMark: public Object
-{
-public:
-	struct Vector                                                Location;                                          // 0x28(0xc)
-	struct Rotator                                               Rotation;                                          // 0x34(0xc)
-	TArray<String>                                               HiddenLevels;                                      // 0x40(0x10)
-};
-
-
-// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
-class AvoidanceManager: public Object
-{
-public:
-	float                                                        DefaultTimeToLive;                                 // 0x30(0x4)
-	float                                                        LockTimeAfterAvoid;                                // 0x34(0x4)
-	float                                                        LockTimeAfterClean;                                // 0x38(0x4)
-	float                                                        DeltaTimeToPredict;                                // 0x3c(0x4)
-	float                                                        ArtificialRadiusExpansion;                         // 0x40(0x4)
-	float                                                        TestHeightDifference;                              // 0x44(0x4)
-};
-
-
 // Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class NavigationDataChunk: public Object
+class TimecodeProvider: public Object
 {
 public:
-	struct FName                                                 NavigationDataName;                                // 0x28(0x8)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class DamageType: public Object
-{
-public:
-	bool                                                         bCausedByWorld;                                    // 0x28(0x1)
-	bool                                                         bScaleMomentumByMass;                              // 0x28(0x1)
-	float                                                        DamageImpulse;                                     // 0x2c(0x4)
-	bool                                                         bRadialDamageVelChange;                            // 0x30(0x1)
-	float                                                        DestructibleImpulse;                               // 0x34(0x4)
-	float                                                        DestructibleDamageSpreadScale;                     // 0x38(0x4)
-	float                                                        DamageFalloff;                                     // 0x3c(0x4)
+	float                                                        FrameDelay;                                        // 0x28(0x4)
 };
 
 
@@ -1152,266 +3275,88 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
-class ParticleModulePivotOffset: public ParticleModuleLocationBase
-{
-public:
-	struct Vector2D                                              PivotOffset;                                       // 0x50(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class ParticleSystemAggregateTickSettings: public Object
-{
-public:
-	int                                                          FramesTickScaledOver;                              // 0x28(0x4)
-	int                                                          MaxTicksPerFrame;                                  // 0x2c(0x4)
-	float                                                        PriorityInflationPower;                            // 0x30(0x4)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class CameraModifier: public Object
-{
-public:
-	bool                                                         bDebug;                                            // 0x28(0x1)
-	bool                                                         bExclusive;                                        // 0x28(0x1)
-	char                                                         Priority;                                          // 0x2c(0x1)
-	class PlayerCameraManager*                                   CameraOwner;                                       // 0x30(0x8)
-	float                                                        AlphaInTime;                                       // 0x38(0x4)
-	float                                                        AlphaOutTime;                                      // 0x3c(0x4)
-	float                                                        Alpha;                                             // 0x40(0x4)
-	bool                                                         bAutoDestroyOnCompletion;                          // 0x44(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class DistributionVector: public Distribution
-{
-public:
-	bool                                                         bCanBeBaked;                                       // 0x30(0x1)
-	bool                                                         bIsDirty;                                          // 0x30(0x1)
-};
-
-
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class CheatManager: public Object
-{
-public:
-	class DebugCameraController*                                 DebugCameraControllerRef;                          // 0x28(0x8)
-	class UClass*                                                DebugCameraControllerClass;                        // 0x30(0x8)
-};
-
-
-// Size 0x240 (Full Size[0x268] - InheritedSize[0x28]
-class Skeleton: public Object
-{
-public:
-	TArray<struct BoneNode>                                      BoneTree;                                          // 0x28(0x10)
-	TArray<struct SkeletonToMeshLinkup>                          LinkupCache;                                       // 0xb8(0x10)
-	TArray<class SkeletalMeshSocket*>                            Sockets;                                           // 0xc8(0x10)
-	struct SmartNameContainer                                    SmartNames;                                        // 0x128(0x50)
-	TArray<struct AnimSlotGroup>                                 SlotGroups;                                        // 0x178(0x10)
-};
-
-
-// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
-class FontImportOptions: public Object
-{
-public:
-	struct FontImportOptionsData                                 Data;                                              // 0x28(0xb0)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class NetworkClusteringSettings: public DeveloperSettings
-{
-public:
-	float                                                        DynamicActorGridHalfSizeKm;                        // 0x38(0x4)
-	float                                                        DynamicActorGridCellSizeKm;                        // 0x3c(0x4)
-};
-
-
-// Size 0x7d8 (Full Size[0x800] - InheritedSize[0x28]
-class World: public Object
-{
-public:
-	class Level*                                                 PersistentLevel;                                   // 0x30(0x8)
-	class NetDriver*                                             NetDriver;                                         // 0x38(0x8)
-	class LineBatchComponent*                                    LineBatcher;                                       // 0x40(0x8)
-	class LineBatchComponent*                                    PersistentLineBatcher;                             // 0x48(0x8)
-	class LineBatchComponent*                                    ForegroundLineBatcher;                             // 0x50(0x8)
-	class GameState*                                             GameState;                                         // 0x58(0x8)
-	class GameNetworkManager*                                    NetworkManager;                                    // 0x60(0x8)
-	class PhysicsCollisionHandler*                               PhysicsCollisionHandler;                           // 0x68(0x8)
-	TArray<class Object*>                                        ExtraReferencedObjects;                            // 0x70(0x10)
-	TArray<class Object*>                                        PerModuleDataObjects;                              // 0x80(0x10)
-	TArray<class LevelStreaming*>                                StreamingLevels;                                   // 0x90(0x10)
-	struct FString                                               StreamingLevelsPrefix;                             // 0xa0(0x10)
-	class Level*                                                 CurrentLevelPendingVisibility;                     // 0xb0(0x8)
-	class ParticleEventManager*                                  MyParticleEventManager;                            // 0xb8(0x8)
-	class PhysicsVolume*                                         DefaultPhysicsVolume;                              // 0xc0(0x8)
-	TArray<class LevelStreaming*>                                DirtyStreamingLevels;                              // 0xc8(0x10)
-	struct FName                                                 Feature;                                           // 0xf4(0x8)
-	TArray<struct Name>                                          FeatureReferences;                                 // 0x100(0x10)
-	bool                                                         ParticleLOD_bUseGameThread;                        // 0x110(0x1)
-	bool                                                         ParticleLOD_bUseMultipleViewportCase;              // 0x111(0x1)
-	struct Vector                                                ParticleLOD_PlayerViewpointLocation;               // 0x114(0xc)
-	struct FString                                               TestMetadata;                                      // 0x120(0x10)
-	class NavigationSystem*                                      NavigationSystem;                                  // 0x130(0x8)
-	class GameMode*                                              AuthorityGameMode;                                 // 0x138(0x8)
-	class AISystemBase*                                          AISystem;                                          // 0x140(0x8)
-	class AvoidanceManager*                                      AvoidanceManager;                                  // 0x148(0x8)
-	TArray<class Level*>                                         Levels;                                            // 0x150(0x10)
-	class Level*                                                 CurrentLevel;                                      // 0x1b0(0x8)
-	class GameInstance*                                          OwningGameInstance;                                // 0x1c0(0x8)
-	TArray<class MaterialParameterCollectionInstance*>           ParameterCollectionInstances;                      // 0x1c8(0x10)
-	class WorldComposition*                                      WorldComposition;                                  // 0x728(0x8)
-	bool                                                         bAreConstraintsDirty;                              // 0x76d(0x1)
-};
-
-
-// Size 0x50 (Full Size[0x450] - InheritedSize[0x400]
-class AudioVolume: public Volume
-{
-public:
-	float                                                        Priority;                                          // 0x400(0x4)
-	bool                                                         bEnabled;                                          // 0x404(0x1)
-	struct ReverbSettings                                        Settings;                                          // 0x408(0x18)
-	struct InteriorSettings                                      AmbientZoneSettings;                               // 0x420(0x24)
-	class AudioVolume*                                           NextLowerPriorityVolume;                           // 0x448(0x8)
-};
-
-
 // Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class AnimCompress: public Object
+class FeatureToggledStringAssetReference: public DataAsset
 {
 public:
-	struct FString                                               Description;                                       // 0x28(0x10)
-	bool                                                         bNeedsSkeleton;                                    // 0x38(0x1)
-	char                                                         TranslationCompressionFormat;                      // 0x3c(0x1)
-	char                                                         RotationCompressionFormat;                         // 0x3d(0x1)
-	char                                                         ScaleCompressionFormat;                            // 0x3e(0x1)
+	TArray<struct FeatureToggledStringAssetReferenceEntry>       Entries;                                           // 0x28(0x10)
+	class UClass*                                                ClassType;                                         // 0x38(0x8)
 };
 
 
-// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
-class StreamingSettings: public DeveloperSettings
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class TouchInterface: public Object
 {
 public:
-	bool                                                         AsyncLoadingThreadEnabled;                         // 0x38(0x1)
-	bool                                                         WarnIfTimeLimitExceeded;                           // 0x38(0x1)
-	float                                                        TimeLimitExceededMultiplier;                       // 0x3c(0x4)
-	float                                                        TimeLimitExceededMinTime;                          // 0x40(0x4)
-	int                                                          MinBulkDataSizeForAsyncLoading;                    // 0x44(0x4)
-	float                                                        AsyncIOBandwidthLimit;                             // 0x48(0x4)
-	bool                                                         UseBackgroundLevelStreaming;                       // 0x4c(0x1)
-	bool                                                         AsyncLoadingUseFullTimeLimit;                      // 0x4c(0x1)
-	float                                                        AsyncLoadingTimeLimit;                             // 0x50(0x4)
-	float                                                        PriorityAsyncLoadingExtraTime;                     // 0x54(0x4)
-	float                                                        LevelStreamingActorsUpdateTimeLimit;               // 0x58(0x4)
-	int                                                          LevelStreamingComponentsRegistrationGranularity;   // 0x5c(0x4)
+	TArray<struct TouchInputControl>                             Controls;                                          // 0x28(0x10)
+	float                                                        ActiveOpacity;                                     // 0x38(0x4)
+	float                                                        InactiveOpacity;                                   // 0x3c(0x4)
+	float                                                        TimeUntilDeactive;                                 // 0x40(0x4)
+	float                                                        TimeUntilReset;                                    // 0x44(0x4)
+	float                                                        ActivationDelay;                                   // 0x48(0x4)
+	bool                                                         bPreventRecenter;                                  // 0x4c(0x1)
+	float                                                        StartupDelay;                                      // 0x50(0x4)
 };
 
 
-// Size 0x128 (Full Size[0x178] - InheritedSize[0x50]
-class ParticleModuleLocation: public ParticleModuleLocationBase
+// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
+class ExponentialHeightFog: public Info
 {
 public:
-	struct RawDistributionVector                                 StartLocation;                                     // 0x50(0x38)
-	struct RawDistributionVector                                 AdditionalStartLocations;                          // 0x88(0x38)
-	bool                                                         StartLocationUseGroupAForAll;                      // 0x168(0x1)
-	float                                                        DistributeOverNPoints;                             // 0x16c(0x4)
-	float                                                        DistributeThreshold;                               // 0x170(0x4)
+	class ExponentialHeightFogComponent*                         Component;                                         // 0x3c8(0x8)
+	bool                                                         bEnabled;                                          // 0x3d0(0x1)
 };
 
 
-// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
-class Commandlet: public Object
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class SoundBase: public Object
 {
 public:
-	struct FString                                               HelpDescription;                                   // 0x28(0x10)
-	struct FString                                               HelpUsage;                                         // 0x38(0x10)
-	struct FString                                               HelpWebLink;                                       // 0x48(0x10)
-	TArray<String>                                               HelpParamNames;                                    // 0x58(0x10)
-	TArray<String>                                               HelpParamDescriptions;                             // 0x68(0x10)
-	bool                                                         IsServer;                                          // 0x78(0x1)
-	bool                                                         IsClient;                                          // 0x78(0x1)
-	bool                                                         IsEditor;                                          // 0x78(0x1)
-	bool                                                         LogToConsole;                                      // 0x78(0x1)
-	bool                                                         ShowErrorCount;                                    // 0x78(0x1)
+	class SoundClass*                                            SoundClassObject;                                  // 0x28(0x8)
+	bool                                                         bDebug;                                            // 0x30(0x1)
+	char                                                         MaxConcurrentResolutionRule;                       // 0x34(0x1)
+	int                                                          MaxConcurrentPlayCount;                            // 0x38(0x4)
+	float                                                        Duration;                                          // 0x3c(0x4)
+	class SoundAttenuation*                                      AttenuationSettings;                               // 0x40(0x8)
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class LevelActorContainer: public Object
+// Size 0x138 (Full Size[0x188] - InheritedSize[0x50]
+class ParticleModuleTypeDataBeam2: public ParticleModuleTypeDataBase
 {
 public:
-	TArray<class Actor*>                                         Actors;                                            // 0x28(0x10)
+	char                                                         BeamMethod;                                        // 0x50(0x1)
+	int                                                          TextureTile;                                       // 0x54(0x4)
+	float                                                        TextureTileDistance;                               // 0x58(0x4)
+	int                                                          Sheets;                                            // 0x5c(0x4)
+	int                                                          MaxBeamCount;                                      // 0x60(0x4)
+	float                                                        Speed;                                             // 0x64(0x4)
+	int                                                          InterpolationPoints;                               // 0x68(0x4)
+	bool                                                         bAlwaysOn;                                         // 0x6c(0x1)
+	int                                                          UpVectorStepSize;                                  // 0x70(0x4)
+	struct FName                                                 BranchParentName;                                  // 0x74(0x8)
+	struct RawDistributionFloat                                  Distance;                                          // 0x80(0x38)
+	char                                                         TaperMethod;                                       // 0xb8(0x1)
+	struct RawDistributionFloat                                  TaperFactor;                                       // 0xc0(0x38)
+	struct RawDistributionFloat                                  TaperScale;                                        // 0xf8(0x38)
+	bool                                                         RenderGeometry;                                    // 0x130(0x1)
+	bool                                                         RenderDirectLine;                                  // 0x130(0x1)
+	bool                                                         RenderLines;                                       // 0x130(0x1)
+	bool                                                         RenderTessellation;                                // 0x130(0x1)
+	TArray<class ParticleModuleBeamSource*>                      LOD_BeamModule_Source;                             // 0x138(0x10)
+	TArray<class ParticleModuleBeamTarget*>                      LOD_BeamModule_Target;                             // 0x148(0x10)
+	TArray<class ParticleModuleBeamNoise*>                       LOD_BeamModule_Noise;                              // 0x158(0x10)
+	TArray<class ParticleModuleBeamModifier*>                    LOD_BeamModule_SourceModifier;                     // 0x168(0x10)
+	TArray<class ParticleModuleBeamModifier*>                    LOD_BeamModule_TargetModifier;                     // 0x178(0x10)
 };
 
 
-// Size 0xe8 (Full Size[0x138] - InheritedSize[0x50]
-class ParticleModuleLight: public ParticleModuleLightBase
+// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
+class SkyLight: public Info
 {
 public:
-	bool                                                         bUseInverseSquaredFalloff;                         // 0x50(0x1)
-	bool                                                         bAffectsTranslucency;                              // 0x51(0x1)
-	bool                                                         bIgnoreComponentTint;                              // 0x52(0x1)
-	bool                                                         bPreviewLightRadius;                               // 0x53(0x1)
-	float                                                        SpawnFraction;                                     // 0x54(0x4)
-	struct RawDistributionVector                                 ColorScaleOverLife;                                // 0x58(0x38)
-	struct RawDistributionFloat                                  BrightnessOverLife;                                // 0x90(0x38)
-	struct RawDistributionFloat                                  RadiusScale;                                       // 0xc8(0x38)
-	struct RawDistributionFloat                                  LightExponent;                                     // 0x100(0x38)
-};
-
-
-// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
-class ParticleModuleMeshRotationRateOverLife: public ParticleModuleRotationRateBase
-{
-public:
-	struct RawDistributionVector                                 RotRate;                                           // 0x50(0x38)
-	bool                                                         bScaleRotRate;                                     // 0x88(0x1)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class InterpTrackInstMove: public InterpTrackInst
-{
-public:
-	struct Vector                                                ResetLocation;                                     // 0x28(0xc)
-	struct Rotator                                               ResetRotation;                                     // 0x34(0xc)
-};
-
-
-// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
-class ParticleModuleEventReceiverBase: public ParticleModuleEventBase
-{
-public:
-	char                                                         EventGeneratorType;                                // 0x50(0x1)
-	struct FName                                                 EventName;                                         // 0x54(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x410] - InheritedSize[0x400]
-class PhysicsVolume: public Volume
-{
-public:
-	float                                                        TerminalVelocity;                                  // 0x400(0x4)
-	int                                                          Priority;                                          // 0x404(0x4)
-	float                                                        FluidFriction;                                     // 0x408(0x4)
-	bool                                                         bWaterVolume;                                      // 0x40c(0x1)
-	bool                                                         bPhysicsOnContact;                                 // 0x40c(0x1)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class BookMark2D: public Object
-{
-public:
-	float                                                        Zoom2D;                                            // 0x28(0x4)
-	struct IntPoint                                              Location;                                          // 0x2c(0x8)
+	class SkyLightComponent*                                     LightComponent;                                    // 0x3c8(0x8)
+	bool                                                         bEnabled;                                          // 0x3d0(0x1)
 };
 
 
@@ -1487,263 +3432,33 @@ public:
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class FFTWaterSettings: public Object
+// Size 0xc8 (Full Size[0xf0] - InheritedSize[0x28]
+class Canvas: public Object
 {
 public:
-	struct StringAssetReference                                  FFTWaterMaterialName;                              // 0x28(0x10)
-	struct StringAssetReference                                  FFTWaterFoamTextureName;                           // 0x38(0x10)
-	int                                                          BaseMeshDetail;                                    // 0x48(0x4)
+	float                                                        OrgX;                                              // 0x28(0x4)
+	float                                                        OrgY;                                              // 0x2c(0x4)
+	float                                                        ClipX;                                             // 0x30(0x4)
+	float                                                        ClipY;                                             // 0x34(0x4)
+	struct Color                                                 DrawColor;                                         // 0x38(0x4)
+	bool                                                         bCenterX;                                          // 0x3c(0x1)
+	bool                                                         bCenterY;                                          // 0x3c(0x1)
+	bool                                                         bNoSmooth;                                         // 0x3c(0x1)
+	int                                                          SizeX;                                             // 0x40(0x4)
+	int                                                          SizeY;                                             // 0x44(0x4)
+	struct Plane                                                 ColorModulate;                                     // 0x50(0x10)
+	class Texture2D*                                             DefaultTexture;                                    // 0x60(0x8)
+	class Texture2D*                                             GradientTexture0;                                  // 0x68(0x8)
+	class ReporterGraph*                                         ReporterGraph;                                     // 0x70(0x8)
 };
 
 
-// Size 0xc0 (Full Size[0x110] - InheritedSize[0x50]
-class ParticleModuleBeamModifier: public ParticleModuleBeamBase
+// Size 0x18 (Full Size[0x68] - InheritedSize[0x50]
+class ParticleModuleVectorFieldRotation: public ParticleModuleVectorFieldBase
 {
 public:
-	char                                                         ModifierType;                                      // 0x50(0x1)
-	struct BeamModifierOptions                                   PositionOptions;                                   // 0x54(0x4)
-	struct RawDistributionVector                                 Position;                                          // 0x58(0x38)
-	struct BeamModifierOptions                                   TangentOptions;                                    // 0x90(0x4)
-	struct RawDistributionVector                                 Tangent;                                           // 0x98(0x38)
-	bool                                                         bAbsoluteTangent;                                  // 0xd0(0x1)
-	struct BeamModifierOptions                                   StrengthOptions;                                   // 0xd4(0x4)
-	struct RawDistributionFloat                                  Strength;                                          // 0xd8(0x38)
-};
-
-
-// Size 0x58 (Full Size[0xa8] - InheritedSize[0x50]
-class ParticleModuleLocationEmitter: public ParticleModuleLocationBase
-{
-public:
-	struct FName                                                 EmitterName;                                       // 0x50(0x8)
-	char                                                         SelectionMethod;                                   // 0x58(0x1)
-	bool                                                         InheritSourceVelocity;                             // 0x5c(0x1)
-	struct RawDistributionFloat                                  InheritSourceVelocityScaleDistribution;            // 0x60(0x38)
-	bool                                                         bInheritSourceRotation;                            // 0x98(0x1)
-	float                                                        InheritSourceRotationScale;                        // 0x9c(0x4)
-	char                                                         MissingParentParticlesBehaviour;                   // 0xa0(0x1)
-};
-
-
-// Size 0x90 (Full Size[0xc8] - InheritedSize[0x38]
-class PhysicsSettings: public DeveloperSettings
-{
-public:
-	float                                                        DefaultGravityZ;                                   // 0x38(0x4)
-	float                                                        DefaultTerminalVelocity;                           // 0x3c(0x4)
-	float                                                        DefaultFluidFriction;                              // 0x40(0x4)
-	int                                                          SimulateScratchMemorySize;                         // 0x44(0x4)
-	int                                                          RagdollAggregateThreshold;                         // 0x48(0x4)
-	float                                                        TriangleMeshTriangleMinAreaThreshold;              // 0x4c(0x4)
-	bool                                                         bEnableAsyncScene;                                 // 0x50(0x1)
-	bool                                                         bEnableShapeSharing;                               // 0x51(0x1)
-	bool                                                         bEnablePCM;                                        // 0x52(0x1)
-	bool                                                         bWarnMissingLocks;                                 // 0x53(0x1)
-	bool                                                         bEnable2DPhysics;                                  // 0x54(0x1)
-	char                                                         LockedAxis;                                        // 0x55(0x1)
-	char                                                         DefaultDegreesOfFreedom;                           // 0x56(0x1)
-	float                                                        BounceThresholdVelocity;                           // 0x58(0x4)
-	char                                                         FrictionCombineMode;                               // 0x5c(0x1)
-	char                                                         RestitutionCombineMode;                            // 0x5d(0x1)
-	float                                                        MaxAngularVelocity;                                // 0x60(0x4)
-	float                                                        MaxDepenetrationVelocity;                          // 0x64(0x4)
-	bool                                                         bSimulateSkeletalMeshOnDedicatedServer;            // 0x68(0x1)
-	bool                                                         bDefaultHasComplexCollision;                       // 0x69(0x1)
-	float                                                        MaxPhysicsDeltaTime;                               // 0x6c(0x4)
-	bool                                                         bSubstepping;                                      // 0x70(0x1)
-	bool                                                         bSubsteppingAsync;                                 // 0x71(0x1)
-	float                                                        MaxSubstepDeltaTime;                               // 0x74(0x4)
-	int                                                          MaxSubsteps;                                       // 0x78(0x4)
-	float                                                        SyncSceneSmoothingFactor;                          // 0x7c(0x4)
-	float                                                        AsyncSceneSmoothingFactor;                         // 0x80(0x4)
-	float                                                        InitialAverageFrameRate;                           // 0x84(0x4)
-	TArray<struct PhysicalSurfaceName>                           PhysicalSurfaces;                                  // 0x88(0x10)
-	TArray<struct DominanceGroupPair>                            DominanceGroups;                                   // 0x98(0x10)
-	TArray<struct DominanceGroupName>                            DominanceGroupNames;                               // 0xa8(0x10)
-	char                                                         DefaultStaticDominanceGroup;                       // 0xb8(0x1)
-	char                                                         DefaultMovableDominanceGroup;                      // 0xb9(0x1)
-	bool                                                         bEnableMBP;                                        // 0xba(0x1)
-	int                                                          MBPSubdivisions;                                   // 0xbc(0x4)
-	float                                                        MBPWorldHalfExtentInCM;                            // 0xc0(0x4)
-};
-
-
-// Size 0x18 (Full Size[0x418] - InheritedSize[0x400]
-class LevelStreamingVolume: public Volume
-{
-public:
-	TArray<struct Name>                                          StreamingLevelNames;                               // 0x400(0x10)
-	bool                                                         bEditorPreVisOnly;                                 // 0x410(0x1)
-	bool                                                         bDisabled;                                         // 0x410(0x1)
-	char                                                         StreamingUsage;                                    // 0x414(0x1)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class ParticleSystemReplay: public Object
-{
-public:
-	int                                                          ClipIDNumber;                                      // 0x28(0x4)
-};
-
-
-// Size 0x70 (Full Size[0xc0] - InheritedSize[0x50]
-class ParticleModuleTypeDataMesh: public ParticleModuleTypeDataBase
-{
-public:
-	class StaticMesh*                                            Mesh;                                              // 0x50(0x8)
-	bool                                                         CastShadows;                                       // 0x58(0x1)
-	bool                                                         DoCollisions;                                      // 0x58(0x1)
-	char                                                         MeshAlignment;                                     // 0x5c(0x1)
-	bool                                                         bOverrideMaterial;                                 // 0x60(0x1)
-	float                                                        Pitch;                                             // 0x64(0x4)
-	float                                                        Roll;                                              // 0x68(0x4)
-	float                                                        Yaw;                                               // 0x6c(0x4)
-	struct RawDistributionVector                                 RollPitchYawRange;                                 // 0x70(0x38)
-	char                                                         AxisLockOption;                                    // 0xb0(0x1)
-	bool                                                         bCameraFacing;                                     // 0xb4(0x1)
-	char                                                         CameraFacingUpAxisOption;                          // 0xb8(0x1)
-	char                                                         CameraFacingOption;                                // 0xb9(0x1)
-	bool                                                         bApplyParticleRotationAsSpin;                      // 0xbc(0x1)
-	bool                                                         bFaceCameraDirectionRatherThanPosition;            // 0xbc(0x1)
-	bool                                                         bFaceCameraOnlyOnSpawn;                            // 0xbc(0x1)
-	bool                                                         bCollisionsConsiderPartilceSize;                   // 0xbc(0x1)
-};
-
-
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class NavigationPath: public Object
-{
-public:
-	multicastinlinedelegate                                      PathUpdatedNotifier;                               // 0x28(0x10)
-	TArray<struct Vector>                                        PathPoints;                                        // 0x38(0x10)
-	char                                                         RecalculateOnInvalidation;                         // 0x48(0x1)
-};
-
-
-// Size 0x3b0 (Full Size[0x3d8] - InheritedSize[0x28]
-class NavigationSystem: public BlueprintFunctionLibrary
-{
-public:
-	class NavigationData*                                        MainNavData;                                       // 0x28(0x8)
-	class NavigationData*                                        AbstractNavData;                                   // 0x30(0x8)
-	bool                                                         bAutoCreateNavigationData;                         // 0x38(0x1)
-	bool                                                         bAllowClientSideNavigation;                        // 0x38(0x1)
-	bool                                                         bSupportRebuilding;                                // 0x38(0x1)
-	bool                                                         bInitialBuildingLocked;                            // 0x38(0x1)
-	bool                                                         bSkipAgentHeightCheckWhenPickingNavData;           // 0x38(0x1)
-	char                                                         DataGatheringMode;                                 // 0x3c(0x1)
-	bool                                                         bGenerateNavigationOnlyAroundNavigationInvokers;   // 0x40(0x1)
-	float                                                        ActiveTilesUpdateInterval;                         // 0x44(0x4)
-	TArray<struct NavDataConfig>                                 SupportedAgents;                                   // 0x48(0x10)
-	float                                                        DirtyAreasUpdateFreq;                              // 0x58(0x4)
-	TArray<class NavigationData*>                                NavDataSet;                                        // 0x60(0x10)
-	TArray<class NavigationData*>                                NavDataRegistrationQueue;                          // 0x70(0x10)
-	multicastinlinedelegate                                      OnNavDataRegisteredEvent;                          // 0xe0(0x10)
-	multicastinlinedelegate                                      OnNavigationGenerationFinishedDelegate;            // 0xf0(0x10)
-	char                                                         OperationMode;                                     // 0x1cc(0x1)
-	struct StringAssetReference                                  InstancedNavMeshesDataAsset;                       // 0x3c0(0x10)
-	class InstancedNavMeshesDataAsset*                           InstancedNavMeshesData;                            // 0x3d0(0x8)
-};
-
-
-// Size 0xd8 (Full Size[0x100] - InheritedSize[0x28]
-class PendingNetGame: public Object
-{
-public:
-	class NetDriver*                                             NetDriver;                                         // 0x30(0x8)
-	class Package*                                               PreLoadedMapPackage;                               // 0xe8(0x8)
-	class World*                                                 PreLoadedWorld;                                    // 0xf0(0x8)
-};
-
-
-// Size 0x70 (Full Size[0x438] - InheritedSize[0x3c8]
-class GameNetworkManager: public Info
-{
-public:
-	int                                                          AdjustedNetSpeed;                                  // 0x3c8(0x4)
-	float                                                        LastNetSpeedUpdateTime;                            // 0x3cc(0x4)
-	int                                                          TotalNetBandwidth;                                 // 0x3d0(0x4)
-	int                                                          MinDynamicBandwidth;                               // 0x3d4(0x4)
-	int                                                          MaxDynamicBandwidth;                               // 0x3d8(0x4)
-	bool                                                         bIsStandbyCheckingEnabled;                         // 0x3dc(0x1)
-	bool                                                         bHasStandbyCheatTriggered;                         // 0x3dc(0x1)
-	float                                                        StandbyRxCheatTime;                                // 0x3e0(0x4)
-	float                                                        StandbyTxCheatTime;                                // 0x3e4(0x4)
-	int                                                          BadPingThreshold;                                  // 0x3e8(0x4)
-	float                                                        PercentMissingForRxStandby;                        // 0x3ec(0x4)
-	float                                                        PercentMissingForTxStandby;                        // 0x3f0(0x4)
-	float                                                        PercentForBadPing;                                 // 0x3f4(0x4)
-	float                                                        JoinInProgressStandbyWaitTime;                     // 0x3f8(0x4)
-	float                                                        MoveRepSize;                                       // 0x3fc(0x4)
-	float                                                        MAXPOSITIONERRORSQUARED;                           // 0x400(0x4)
-	float                                                        MAXNEARZEROVELOCITYSQUARED;                        // 0x404(0x4)
-	float                                                        CLIENTADJUSTUPDATECOST;                            // 0x408(0x4)
-	float                                                        MAXCLIENTUPDATEINTERVAL;                           // 0x40c(0x4)
-	float                                                        MaxMoveDeltaTime;                                  // 0x410(0x4)
-	bool                                                         ClientAuthorativePosition;                         // 0x414(0x1)
-	float                                                        ClientErrorUpdateRateLimit;                        // 0x418(0x4)
-	bool                                                         bMovementTimeDiscrepancyDetection;                 // 0x41c(0x1)
-	bool                                                         bMovementTimeDiscrepancyResolution;                // 0x41d(0x1)
-	float                                                        MovementTimeDiscrepancyMaxTimeMargin;              // 0x420(0x4)
-	float                                                        MovementTimeDiscrepancyMinTimeMargin;              // 0x424(0x4)
-	float                                                        MovementTimeDiscrepancyResolutionRate;             // 0x428(0x4)
-	float                                                        MovementTimeDiscrepancyDriftAllowance;             // 0x42c(0x4)
-	bool                                                         bMovementTimeDiscrepancyForceCorrectionsDuringResolution; // 0x430(0x1)
-	bool                                                         bUseDistanceBasedRelevancy;                        // 0x431(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class AutomaticInstancingSettings: public DeveloperSettings
-{
-public:
-	bool                                                         IsEnabled;                                         // 0x38(0x1)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class InterpTrackInstFloatAnimBPParam: public InterpTrackInst
-{
-public:
-	class AnimInstance*                                          AnimScriptInstance;                                // 0x28(0x8)
-	float                                                        ResetFloat;                                        // 0x30(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class ObjectReferencer: public Object
-{
-public:
-	TArray<class Object*>                                        ReferencedObjects;                                 // 0x28(0x10)
-};
-
-
-// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
-class GarbageCollectionSettings: public DeveloperSettings
-{
-public:
-	float                                                        TimeBetweenPurgingPendingKillObjects;              // 0x38(0x4)
-	bool                                                         FlushStreamingOnGC;                                // 0x3c(0x1)
-	bool                                                         AllowParallelGC;                                   // 0x3c(0x1)
-	bool                                                         CreateGCClusters;                                  // 0x3c(0x1)
-	bool                                                         MergeGCClusters;                                   // 0x3c(0x1)
-	int                                                          NumRetriesBeforeForcingGC;                         // 0x40(0x4)
-	int                                                          MaxObjectsNotConsideredByGC;                       // 0x44(0x4)
-	int                                                          SizeOfPermanentObjectPool;                         // 0x48(0x4)
-	int                                                          MaxObjectsInGame;                                  // 0x4c(0x4)
-	int                                                          MaxObjectsInEditor;                                // 0x50(0x4)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class InterpGroupInst: public Object
-{
-public:
-	class InterpGroup*                                           Group;                                             // 0x28(0x8)
-	class Actor*                                                 GroupActor;                                        // 0x30(0x8)
-	TArray<class InterpTrackInst*>                               TrackInst;                                         // 0x38(0x10)
+	struct Vector                                                MinInitialRotation;                                // 0x50(0xc)
+	struct Vector                                                MaxInitialRotation;                                // 0x5c(0xc)
 };
 
 
@@ -1756,112 +3471,51 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
-class ParticleModuleSizeScaleBySpeed: public ParticleModuleSizeBase
+// Size 0x88 (Full Size[0xb0] - InheritedSize[0x28]
+class PlatformInterfaceWebResponse: public Object
 {
 public:
-	struct Vector2D                                              SpeedScale;                                        // 0x50(0x8)
-	struct Vector2D                                              MaxScale;                                          // 0x58(0x8)
+	struct FString                                               OriginalURL;                                       // 0x28(0x10)
+	int                                                          ResponseCode;                                      // 0x38(0x4)
+	int                                                          Tag;                                               // 0x3c(0x4)
+	struct FString                                               StringResponse;                                    // 0x40(0x10)
+	TArray<char>                                                 BinaryResponse;                                    // 0x50(0x10)
 };
 
 
-// Size 0x110 (Full Size[0x138] - InheritedSize[0x28]
-class HIKCharacterization: public Object
+// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
+class StreamingSettings: public DeveloperSettings
 {
 public:
-	struct FName                                                 Reference;                                         // 0x28(0x8)
-	struct FName                                                 Hips;                                              // 0x30(0x8)
-	struct FName                                                 LeftUpLeg;                                         // 0x38(0x8)
-	struct FName                                                 LeftLeg;                                           // 0x40(0x8)
-	struct FName                                                 LeftFoot;                                          // 0x48(0x8)
-	struct FName                                                 RightUpLeg;                                        // 0x50(0x8)
-	struct FName                                                 RightLeg;                                          // 0x58(0x8)
-	struct FName                                                 RightFoot;                                         // 0x60(0x8)
-	struct FName                                                 Spine;                                             // 0x68(0x8)
-	struct FName                                                 LeftArm;                                           // 0x70(0x8)
-	struct FName                                                 LeftForeArm;                                       // 0x78(0x8)
-	struct FName                                                 LeftHand;                                          // 0x80(0x8)
-	struct FName                                                 RightArm;                                          // 0x88(0x8)
-	struct FName                                                 RightForeArm;                                      // 0x90(0x8)
-	struct FName                                                 RightHand;                                         // 0x98(0x8)
-	struct FName                                                 Head;                                              // 0xa0(0x8)
-	TArray<struct HIKBoneTransform>                              BoneTransforms;                                    // 0xa8(0x10)
-	bool                                                         Locked;                                            // 0xb8(0x1)
-	TArray<int>                                                  UnrealToHumanIKBoneMapping;                        // 0xc0(0x10)
-	TArray<struct HIKBoneMapping>                                AdditionalBones;                                   // 0xd0(0x10)
-	bool                                                         LeftElbowInverted;                                 // 0xe0(0x1)
-	bool                                                         RightElbowInverted;                                // 0xe1(0x1)
-	bool                                                         LeftKneeInverted;                                  // 0xe2(0x1)
-	bool                                                         RightKneeInverted;                                 // 0xe3(0x1)
-	bool                                                         AdjustLeftShoulder;                                // 0xe4(0x1)
-	struct Vector                                                AdjustLeftShoulder_Axis;                           // 0xe8(0xc)
-	float                                                        AdjustLeftShoulder_Angle;                          // 0xf4(0x4)
-	bool                                                         AdjustRightShoulder;                               // 0xf8(0x1)
-	struct Vector                                                AdjustRightShoulder_Axis;                          // 0xfc(0xc)
-	float                                                        AdjustRightShoulder_Angle;                         // 0x108(0x4)
-	bool                                                         SpineSquashNStretch;                               // 0x10c(0x1)
-	bool                                                         NeckSquashNStretch;                                // 0x10d(0x1)
-	float                                                        SpineJointsMinSquashNStretchFactor;                // 0x110(0x4)
-	float                                                        SpineJointsMaxSquashNStretchFactor;                // 0x114(0x4)
-	float                                                        NeckJointsMinSquashNStretchFactor;                 // 0x118(0x4)
-	float                                                        NeckJointsMaxSquashNStretchFactor;                 // 0x11c(0x4)
-	bool                                                         bInitFromSkeleton;                                 // 0x120(0x1)
-	int                                                          InitFromSkeletonCount;                             // 0x124(0x4)
-	struct Rotator                                               ImportRotator;                                     // 0x128(0xc)
+	bool                                                         AsyncLoadingThreadEnabled;                         // 0x38(0x1)
+	bool                                                         WarnIfTimeLimitExceeded;                           // 0x38(0x1)
+	float                                                        TimeLimitExceededMultiplier;                       // 0x3c(0x4)
+	float                                                        TimeLimitExceededMinTime;                          // 0x40(0x4)
+	int                                                          MinBulkDataSizeForAsyncLoading;                    // 0x44(0x4)
+	float                                                        AsyncIOBandwidthLimit;                             // 0x48(0x4)
+	bool                                                         UseBackgroundLevelStreaming;                       // 0x4c(0x1)
+	bool                                                         AsyncLoadingUseFullTimeLimit;                      // 0x4c(0x1)
+	float                                                        AsyncLoadingTimeLimit;                             // 0x50(0x4)
+	float                                                        PriorityAsyncLoadingExtraTime;                     // 0x54(0x4)
+	float                                                        LevelStreamingActorsUpdateTimeLimit;               // 0x58(0x4)
+	int                                                          LevelStreamingComponentsRegistrationGranularity;   // 0x5c(0x4)
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class NavLinkDefinition: public Object
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class ComponentDelegateBinding: public DynamicBlueprintBinding
 {
 public:
-	TArray<struct NavigationLink>                                Links;                                             // 0x28(0x10)
-	TArray<struct NavigationSegmentLink>                         SegmentLinks;                                      // 0x38(0x10)
+	TArray<struct BlueprintComponentDelegateBinding>             ComponentDelegateBindings;                         // 0x28(0x10)
 };
 
 
-// Size 0x20 (Full Size[0x3e8] - InheritedSize[0x3c8]
-class PhysicsConstraintActor: public RigidBodyBase
+// Size 0x8 (Full Size[0x1d0] - InheritedSize[0x1c8]
+class MaterialExpressionTextureSampleParameterSubUV: public MaterialExpressionTextureSampleParameter2D
 {
 public:
-	class PhysicsConstraintComponent*                            ConstraintComp;                                    // 0x3c8(0x8)
-	class Actor*                                                 ConstraintActor1;                                  // 0x3d0(0x8)
-	class Actor*                                                 ConstraintActor2;                                  // 0x3d8(0x8)
-	bool                                                         bDisableCollision;                                 // 0x3e0(0x1)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class VectorField: public Object
-{
-public:
-	struct Box                                                   Bounds;                                            // 0x28(0x1c)
-	float                                                        Intensity;                                         // 0x44(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class DistributionFloat: public Distribution
-{
-public:
-	bool                                                         bCanBeBaked;                                       // 0x30(0x1)
-};
-
-
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class GameInstance: public Object
-{
-public:
-	TArray<class LocalPlayer*>                                   LocalPlayers;                                      // 0x38(0x10)
-	class OnlineSession*                                         OnlineSession;                                     // 0x50(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x410] - InheritedSize[0x400]
-class NavModifierVolume: public Volume
-{
-public:
-	class UClass*                                                AreaClass;                                         // 0x408(0x8)
+	bool                                                         bBlend;                                            // 0x1c8(0x1)
+	bool                                                         bMipBiasOnLowResolution;                           // 0x1c8(0x1)
 };
 
 
@@ -1882,479 +3536,31 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
-class ParticleModuleEventGenerator: public ParticleModuleEventBase
-{
-public:
-	TArray<struct ParticleEvent_GenerateInfo>                    Events;                                            // 0x50(0x10)
-};
-
-
-// Size 0x38 (Full Size[0x88] - InheritedSize[0x50]
-class ParticleModuleRotationRateMultiplyLife: public ParticleModuleRotationRateBase
-{
-public:
-	struct RawDistributionFloat                                  LifeMultiplier;                                    // 0x50(0x38)
-};
-
-
-// Size 0x218 (Full Size[0x240] - InheritedSize[0x28]
-class PhysicsConstraintTemplate: public Object
-{
-public:
-	struct FName                                                 JointName;                                         // 0x28(0x8)
-	struct FName                                                 ConstraintBone1;                                   // 0x30(0x8)
-	struct FName                                                 ConstraintBone2;                                   // 0x38(0x8)
-	struct Vector                                                Pos1;                                              // 0x40(0xc)
-	struct Vector                                                PriAxis1;                                          // 0x4c(0xc)
-	struct Vector                                                SecAxis1;                                          // 0x58(0xc)
-	struct Vector                                                Pos2;                                              // 0x64(0xc)
-	struct Vector                                                PriAxis2;                                          // 0x70(0xc)
-	struct Vector                                                SecAxis2;                                          // 0x7c(0xc)
-	bool                                                         bEnableProjection;                                 // 0x88(0x1)
-	float                                                        ProjectionLinearTolerance;                         // 0x8c(0x4)
-	float                                                        ProjectionAngularTolerance;                        // 0x90(0x4)
-	char                                                         LinearXMotion;                                     // 0x94(0x1)
-	char                                                         LinearYMotion;                                     // 0x95(0x1)
-	char                                                         LinearZMotion;                                     // 0x96(0x1)
-	float                                                        LinearLimitSize;                                   // 0x98(0x4)
-	bool                                                         bLinearLimitSoft;                                  // 0x9c(0x1)
-	float                                                        LinearLimitStiffness;                              // 0xa0(0x4)
-	float                                                        LinearLimitDamping;                                // 0xa4(0x4)
-	bool                                                         bLinearBreakable;                                  // 0xa8(0x1)
-	float                                                        LinearBreakThreshold;                              // 0xac(0x4)
-	char                                                         AngularSwing1Motion;                               // 0xb0(0x1)
-	char                                                         AngularSwing2Motion;                               // 0xb1(0x1)
-	char                                                         AngularTwistMotion;                                // 0xb2(0x1)
-	bool                                                         bSwingLimitSoft;                                   // 0xb4(0x1)
-	bool                                                         bTwistLimitSoft;                                   // 0xb4(0x1)
-	float                                                        Swing1LimitAngle;                                  // 0xb8(0x4)
-	float                                                        Swing2LimitAngle;                                  // 0xbc(0x4)
-	float                                                        TwistLimitAngle;                                   // 0xc0(0x4)
-	float                                                        SwingLimitStiffness;                               // 0xc4(0x4)
-	float                                                        SwingLimitDamping;                                 // 0xc8(0x4)
-	float                                                        TwistLimitStiffness;                               // 0xcc(0x4)
-	float                                                        TwistLimitDamping;                                 // 0xd0(0x4)
-	bool                                                         bAngularBreakable;                                 // 0xd4(0x1)
-	float                                                        AngularBreakThreshold;                             // 0xd8(0x4)
-	struct ConstraintInstance                                    DefaultInstance;                                   // 0xe0(0x160)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class TextureLODSettings: public Object
-{
-public:
-	TArray<struct TextureLODGroup>                               TextureLODGroups;                                  // 0x28(0x10)
-};
-
-
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class GameUserSettings: public Object
-{
-public:
-	bool                                                         bUseVSync;                                         // 0x28(0x1)
-	uint32                                                       ResolutionSizeX;                                   // 0x48(0x4)
-	uint32                                                       ResolutionSizeY;                                   // 0x4c(0x4)
-	uint32                                                       LastUserConfirmedResolutionSizeX;                  // 0x50(0x4)
-	uint32                                                       LastUserConfirmedResolutionSizeY;                  // 0x54(0x4)
-	int                                                          WindowPosX;                                        // 0x58(0x4)
-	int                                                          WindowPosY;                                        // 0x5c(0x4)
-	bool                                                         bUseDesktopResolutionForFullscreen;                // 0x60(0x1)
-	int                                                          FullscreenMode;                                    // 0x64(0x4)
-	int                                                          LastConfirmedFullscreenMode;                       // 0x68(0x4)
-	uint32                                                       Version;                                           // 0x6c(0x4)
-	int                                                          AudioQualityLevel;                                 // 0x70(0x4)
-};
-
-
 // Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
-class ParticleModuleSubUV: public ParticleModuleSubUVBase
+class ParticleModuleMeshRotationRateOverLife: public ParticleModuleRotationRateBase
 {
 public:
-	struct RawDistributionFloat                                  SubImageIndex;                                     // 0x50(0x38)
-	bool                                                         bUseRealTime;                                      // 0x88(0x1)
+	struct RawDistributionVector                                 RotRate;                                           // 0x50(0x38)
+	bool                                                         bScaleRotRate;                                     // 0x88(0x1)
 };
 
 
-// Size 0xe0 (Full Size[0x130] - InheritedSize[0x50]
-class ParticleModuleLocationDirect: public ParticleModuleLocationBase
+// Size 0x70 (Full Size[0xe8] - InheritedSize[0x78]
+class AnimMontage: public AnimCompositeBase
 {
 public:
-	struct RawDistributionVector                                 Location;                                          // 0x50(0x38)
-	struct RawDistributionVector                                 LocationOffset;                                    // 0x88(0x38)
-	struct RawDistributionVector                                 ScaleFactor;                                       // 0xc0(0x38)
-	struct RawDistributionVector                                 Direction;                                         // 0xf8(0x38)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class Breakpoint: public Object
-{
-public:
-	bool                                                         bEnabled;                                          // 0x28(0x1)
-	class EdGraphNode*                                           Node;                                              // 0x30(0x8)
-	bool                                                         bStepOnce;                                         // 0x38(0x1)
-	bool                                                         bStepOnce_WasPreviouslyDisabled;                   // 0x38(0x1)
-	bool                                                         bStepOnce_RemoveAfterHit;                          // 0x38(0x1)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class HighLatencySettings: public Object
-{
-public:
-	bool                                                         UseHighLatency;                                    // 0x28(0x1)
-	int                                                          PktLag;                                            // 0x2c(0x4)
-	int                                                          PktLagVariance;                                    // 0x30(0x4)
-	bool                                                         PktOrder;                                          // 0x34(0x1)
-	int                                                          PktDup;                                            // 0x38(0x4)
-	int                                                          PktLoss;                                           // 0x3c(0x4)
-};
-
-
-// Size 0x2d8 (Full Size[0x300] - InheritedSize[0x28]
-class Level: public Object
-{
-public:
-	class LevelActorContainer*                                   ActorCluster;                                      // 0xc8(0x8)
-	class World*                                                 OwningWorld;                                       // 0xd0(0x8)
-	class Model*                                                 Model;                                             // 0xd8(0x8)
-	TArray<class ModelComponent*>                                ModelComponents;                                   // 0xe0(0x10)
-	class LevelScriptActor*                                      LevelScriptActor;                                  // 0xf0(0x8)
-	class NavigationObjectBase*                                  NavListStart;                                      // 0xf8(0x8)
-	class NavigationObjectBase*                                  NavListEnd;                                        // 0x100(0x8)
-	TArray<class NavigationDataChunk*>                           NavDataChunks;                                     // 0x108(0x10)
-	float                                                        LightmapTotalSize;                                 // 0x118(0x4)
-	float                                                        ShadowmapTotalSize;                                // 0x11c(0x4)
-	TArray<struct Vector>                                        StaticNavigableGeometry;                           // 0x120(0x10)
-	bool                                                         LevelVisibility;                                   // 0x260(0x1)
-	bool                                                         Blocked;                                           // 0x270(0x1)
-	TArray<class AssetUserData*>                                 AssetUserData;                                     // 0x2d8(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class AnimNotifyState: public Object
-{
-public:
-	bool                                                         PlayedWithSequencer;                               // 0x28(0x1)
-};
-
-
-// Size 0x120 (Full Size[0x158] - InheritedSize[0x38]
-class CollisionProfile: public DeveloperSettings
-{
-public:
-	TArray<struct CollisionResponseTemplate>                     Profiles;                                          // 0x38(0x10)
-	TArray<struct CustomChannelSetup>                            DefaultChannelResponses;                           // 0x48(0x10)
-	TArray<struct CustomProfile>                                 EditProfiles;                                      // 0x58(0x10)
-	TArray<struct Redirector>                                    ProfileRedirects;                                  // 0x68(0x10)
-	TArray<struct Redirector>                                    CollisionChannelRedirects;                         // 0x78(0x10)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class SubsurfaceProfile: public Object
-{
-public:
-	struct SubsurfaceProfileStruct                               Settings;                                          // 0x28(0x24)
-};
-
-
-// Size 0x1b8 (Full Size[0x208] - InheritedSize[0x50]
-class ParticleModuleLocationPrimitiveSphereSlice: public ParticleModuleLocationBase
-{
-public:
-	struct RawDistributionFloat                                  StartRadius;                                       // 0x50(0x38)
-	struct RawDistributionFloat                                  AdditionalStartRadiuses;                           // 0x88(0x38)
-	bool                                                         StartRadiusUseGroupAForAll;                        // 0x168(0x1)
-	struct PrimitiveSphereEmitterAngleRanges                     AngleRanges;                                       // 0x16c(0x10)
-	float                                                        FirstSliceDistributionWeight;                      // 0x18c(0x4)
-	bool                                                         SurfaceOnly;                                       // 0x190(0x1)
-	bool                                                         Velocity;                                          // 0x190(0x1)
-	struct RawDistributionFloat                                  VelocityScale;                                     // 0x198(0x38)
-	struct RawDistributionVector                                 StartLocation;                                     // 0x1d0(0x38)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class InterpTrackInstProperty: public InterpTrackInst
-{
-public:
-	class Property*                                              InterpProperty;                                    // 0x28(0x8)
-	class Object*                                                PropertyOuterObjectInst;                           // 0x30(0x8)
-};
-
-
-// Size 0x158 (Full Size[0x1a8] - InheritedSize[0x50]
-class ParticleModuleRotation: public ParticleModuleRotationBase
-{
-public:
-	bool                                                         bUseGroupARotationForAllGroups;                    // 0x50(0x1)
-	struct RawDistributionFloat                                  StartRotation;                                     // 0x58(0x38)
-	struct RawDistributionFloat                                  AdditionalStartRotation;                           // 0x90(0x38)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class InterpTrackInstAnimControl: public InterpTrackInst
-{
-public:
-	float                                                        LastUpdatePosition;                                // 0x28(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class VertexAnimBase: public Object
-{
-public:
-	class SkeletalMesh*                                          BaseSkelMesh;                                      // 0x28(0x8)
-};
-
-
-// Size 0x88 (Full Size[0xd8] - InheritedSize[0x50]
-class ParticleModuleCollisionGPU: public ParticleModuleCollisionBase
-{
-public:
-	struct RawDistributionFloat                                  Resilience;                                        // 0x50(0x38)
-	struct RawDistributionFloat                                  ResilienceScaleOverLife;                           // 0x88(0x38)
-	float                                                        DampingFactorRotation;                             // 0xc0(0x4)
-	float                                                        Friction;                                          // 0xc4(0x4)
-	float                                                        RadiusScale;                                       // 0xc8(0x4)
-	float                                                        RadiusBias;                                        // 0xcc(0x4)
-	char                                                         Response;                                          // 0xd0(0x1)
-	char                                                         CollisionMode;                                     // 0xd1(0x1)
-};
-
-
-// Size 0xd8 (Full Size[0x110] - InheritedSize[0x38]
-class RendererSettings: public DeveloperSettings
-{
-public:
-	bool                                                         bMobileHDR;                                        // 0x38(0x1)
-	uint32                                                       MobileNumDynamicPointLights;                       // 0x3c(0x4)
-	bool                                                         bMobileDynamicPointLightsUseStaticBranch;          // 0x40(0x1)
-	bool                                                         bOcclusionCulling;                                 // 0x40(0x1)
-	float                                                        MinScreenRadiusForLights;                          // 0x44(0x4)
-	float                                                        MinScreenRadiusForEarlyZPass;                      // 0x48(0x4)
-	float                                                        MinScreenRadiusForCSMdepth;                        // 0x4c(0x4)
-	bool                                                         bPrecomputedVisibilityWarning;                     // 0x50(0x1)
-	bool                                                         bTextureStreaming;                                 // 0x50(0x1)
-	bool                                                         bUseDXT5NormalMaps;                                // 0x50(0x1)
-	bool                                                         bAllowStaticLighting;                              // 0x50(0x1)
-	bool                                                         bUseNormalMapsForStaticLighting;                   // 0x50(0x1)
-	bool                                                         bGenerateMeshDistanceFields;                       // 0x50(0x1)
-	bool                                                         bGenerateLandscapeGIData;                          // 0x50(0x1)
-	float                                                        TessellationAdaptivePixelsPerTriangle;             // 0x54(0x4)
-	bool                                                         bSeparateTranslucency;                             // 0x58(0x1)
-	char                                                         TranslucentSortPolicy;                             // 0x5c(0x1)
-	struct Vector                                                TranslucentSortAxis;                               // 0x60(0xc)
-	char                                                         CustomDepthStencil;                                // 0x6c(0x1)
-	bool                                                         bDefaultFeatureBloom;                              // 0x70(0x1)
-	bool                                                         bDefaultFeatureAmbientOcclusion;                   // 0x70(0x1)
-	bool                                                         bDefaultFeatureAmbientOcclusionStaticFraction;     // 0x70(0x1)
-	bool                                                         bDefaultFeatureAutoExposure;                       // 0x70(0x1)
-	bool                                                         bDefaultFeatureMotionBlur;                         // 0x70(0x1)
-	bool                                                         bDefaultFeatureLensFlare;                          // 0x70(0x1)
-	char                                                         DefaultFeatureAntiAliasing;                        // 0x74(0x1)
-	char                                                         EarlyZPass;                                        // 0x75(0x1)
-	char                                                         bDepthSort;                                        // 0x76(0x1)
-	bool                                                         bEarlyZPassMovable;                                // 0x78(0x1)
-	bool                                                         bDBuffer;                                          // 0x78(0x1)
-	char                                                         ClearSceneMethod;                                  // 0x7c(0x1)
-	bool                                                         bBasePassOutputsVelocity;                          // 0x80(0x1)
-	float                                                        WireframeCullThreshold;                            // 0x84(0x4)
-	char                                                         UIScaleRule;                                       // 0x88(0x1)
-	struct RuntimeFloatCurve                                     UIScaleCurve;                                      // 0x90(0x80)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class InterpFilter: public Object
-{
-public:
-	struct FString                                               Caption;                                           // 0x28(0x10)
-};
-
-
-// Size 0x418 (Full Size[0x440] - InheritedSize[0x28]
-class AnimInstance: public Object
-{
-public:
-	class Skeleton*                                              CurrentSkeleton;                                   // 0x28(0x8)
-	TArray<struct AnimTickRecord>                                UngroupedActivePlayers;                            // 0x30(0x10)
-	TArray<struct AnimGroupInstance>                             SyncGroups;                                        // 0x40(0x10)
-	TArray<struct ActiveVertexAnim>                              VertexAnims;                                       // 0x50(0x10)
-	char                                                         RootMotionMode;                                    // 0x60(0x1)
-	bool                                                         bWarnAboutBlueprintUsage;                          // 0x61(0x1)
-	multicastinlinedelegate                                      OnMontageBlendingOut;                              // 0x68(0x10)
-	multicastinlinedelegate                                      OnMontageStarted;                                  // 0x78(0x10)
-	multicastinlinedelegate                                      OnMontageEnded;                                    // 0x88(0x10)
-	multicastinlinedelegate                                      OnStateEntered;                                    // 0x98(0x10)
-	multicastinlinedelegate                                      OnStateExited;                                     // 0xa8(0x10)
-	multicastinlinedelegate                                      OnStateInitialised;                                // 0xb8(0x10)
-	multicastinlinedelegate                                      OnAnimUpdated;                                     // 0xc8(0x10)
-	bool                                                         bQueueMontageEvents;                               // 0x148(0x1)
-	TArray<struct AnimNotifyEvent>                               ActiveAnimNotifyState;                             // 0x240(0x10)
-	int16                                                        SlotNodeInitializationCounter;                     // 0x350(0x2)
-	int16                                                        GraphTraversalCounter;                             // 0x352(0x2)
-	bool                                                         bBoneCachesInvalidated;                            // 0x3a8(0x1)
-	bool                                                         bBlueprintAnimUpdateEnabled;                       // 0x438(0x1)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class DialogueVoice: public Object
-{
-public:
-	char                                                         Gender;                                            // 0x28(0x1)
-	char                                                         Plurality;                                         // 0x29(0x1)
-	struct Guid                                                  LocalizationGUID;                                  // 0x2c(0x10)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class InterpGroup: public Object
-{
-public:
-	TArray<class InterpTrack*>                                   InterpTracks;                                      // 0x30(0x10)
-	struct FName                                                 GroupName;                                         // 0x40(0x8)
-	struct Color                                                 GroupColor;                                        // 0x48(0x4)
-	bool                                                         bCollapsed;                                        // 0x4c(0x1)
-	bool                                                         bVisible;                                          // 0x4c(0x1)
-	bool                                                         bIsFolder;                                         // 0x4c(0x1)
-	bool                                                         bIsParented;                                       // 0x4c(0x1)
-	bool                                                         bIsSelected;                                       // 0x4c(0x1)
-};
-
-
-// Size 0x90 (Full Size[0xb8] - InheritedSize[0x28]
-class SlateBrushAsset: public Object
-{
-public:
-	struct SlateBrush                                            Brush;                                             // 0x28(0x90)
-};
-
-
-// Size 0x160 (Full Size[0x1b0] - InheritedSize[0x50]
-class ParticleModuleSize: public ParticleModuleSizeBase
-{
-public:
-	bool                                                         bUseGroupAForAll;                                  // 0x50(0x1)
-	struct RawDistributionVector                                 StartSize;                                         // 0x58(0x38)
-	struct RawDistributionVector                                 AdditionalStartSizes;                              // 0x90(0x38)
-	bool                                                         bKeepAspectRatio;                                  // 0x1a8(0x1)
-	bool                                                         bIgnoreComponentScale;                             // 0x1a8(0x1)
-};
-
-
-// Size 0x10 (Full Size[0x68] - InheritedSize[0x58]
-class UserDefinedEnum: public Enum
-{
-public:
-	TArray<struct Text>                                          DisplayNames;                                      // 0x58(0x10)
-};
-
-
-// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
-class TimelineTemplate: public Object
-{
-public:
-	float                                                        TimelineLength;                                    // 0x28(0x4)
-	char                                                         LengthMode;                                        // 0x2c(0x1)
-	bool                                                         bAutoPlay;                                         // 0x30(0x1)
-	bool                                                         bLoop;                                             // 0x30(0x1)
-	bool                                                         bReplicated;                                       // 0x30(0x1)
-	bool                                                         bValidatedAsWired;                                 // 0x30(0x1)
-	TArray<struct TTEventTrack>                                  EventTracks;                                       // 0x38(0x10)
-	TArray<struct TTFloatTrack>                                  FloatTracks;                                       // 0x48(0x10)
-	TArray<struct TTVectorTrack>                                 VectorTracks;                                      // 0x58(0x10)
-	TArray<struct TTLinearColorTrack>                            LinearColorTracks;                                 // 0x68(0x10)
-	TArray<struct BPVariableMetaDataEntry>                       MetaDataArray;                                     // 0x78(0x10)
-	struct Guid                                                  TimelineGuid;                                      // 0x88(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class NavigationQueryFilter: public Object
-{
-public:
-	TArray<struct NavigationFilterArea>                          Areas;                                             // 0x28(0x10)
-	struct NavigationFilterFlags                                 IncludeFlags;                                      // 0x38(0x4)
-	struct NavigationFilterFlags                                 ExcludeFlags;                                      // 0x3c(0x4)
-};
-
-
-// Size 0x48 (Full Size[0x410] - InheritedSize[0x3c8]
-class GameState: public Info
-{
-public:
-	class UClass*                                                GameModeClass;                                     // 0x3c8(0x8)
-	class GameMode*                                              AuthorityGameMode;                                 // 0x3d0(0x8)
-	class UClass*                                                SpectatorClass;                                    // 0x3d8(0x8)
-	struct FName                                                 MatchState;                                        // 0x3e0(0x8)
-	struct FName                                                 PreviousMatchState;                                // 0x3e8(0x8)
-	TArray<class PlayerState*>                                   PlayerArray;                                       // 0x3f0(0x10)
-	float                                                        ReplicatedWorldTimeSeconds;                        // 0x400(0x4)
-	float                                                        ServerWorldTimeSecondsDelta;                       // 0x404(0x4)
-	float                                                        ServerWorldTimeSecondsUpdateFrequency;             // 0x408(0x4)
-};
-
-
-// Size 0xb0 (Full Size[0x100] - InheritedSize[0x50]
-class ParticleModuleAttractorPoint: public ParticleModuleAttractorBase
-{
-public:
-	struct RawDistributionVector                                 Position;                                          // 0x50(0x38)
-	struct RawDistributionFloat                                  Range;                                             // 0x88(0x38)
-	struct RawDistributionFloat                                  Strength;                                          // 0xc0(0x38)
-	bool                                                         StrengthByDistance;                                // 0xf8(0x1)
-	bool                                                         bAffectBaseVelocity;                               // 0xf8(0x1)
-	bool                                                         bOverrideVelocity;                                 // 0xf8(0x1)
-	bool                                                         bUseWorldSpacePosition;                            // 0xf8(0x1)
-	bool                                                         Positive_X;                                        // 0xf8(0x1)
-	bool                                                         Positive_Y;                                        // 0xf8(0x1)
-	bool                                                         Positive_Z;                                        // 0xf8(0x1)
-	bool                                                         Negative_X;                                        // 0xf8(0x1)
-	bool                                                         Negative_Y;                                        // 0xf9(0x1)
-	bool                                                         Negative_Z;                                        // 0xf9(0x1)
-};
-
-
-// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
-class ParticleModuleRotationOverLifetime: public ParticleModuleRotationBase
-{
-public:
-	struct RawDistributionFloat                                  RotationOverLife;                                  // 0x50(0x38)
-	bool                                                         Scale;                                             // 0x88(0x1)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class IntSerialization: public Object
-{
-public:
-	uint16                                                       UnsignedInt16Variable;                             // 0x28(0x2)
-	uint32                                                       UnsignedInt32Variable;                             // 0x2c(0x4)
-	uint64                                                       UnsignedInt64Variable;                             // 0x30(0x8)
-	int8                                                         SignedInt8Variable;                                // 0x38(0x1)
-	int16                                                        SignedInt16Variable;                               // 0x3a(0x2)
-	int64                                                        SignedInt64Variable;                               // 0x40(0x8)
-	char                                                         UnsignedInt8Variable;                              // 0x48(0x1)
-	int                                                          SignedInt32Variable;                               // 0x4c(0x4)
-};
-
-
-// Size 0x78 (Full Size[0xc8] - InheritedSize[0x50]
-class ParticleModuleKillBox: public ParticleModuleKillBase
-{
-public:
-	struct RawDistributionVector                                 LowerLeftCorner;                                   // 0x50(0x38)
-	struct RawDistributionVector                                 UpperRightCorner;                                  // 0x88(0x38)
-	bool                                                         bAbsolute;                                         // 0xc0(0x1)
-	bool                                                         bKillInside;                                       // 0xc0(0x1)
-	bool                                                         bAxisAlignedAndFixedSize;                          // 0xc0(0x1)
+	float                                                        BlendInTime;                                       // 0x78(0x4)
+	float                                                        BlendOutTime;                                      // 0x7c(0x4)
+	float                                                        BlendOutTriggerTime;                               // 0x80(0x4)
+	TArray<struct CompositeSection>                              CompositeSections;                                 // 0x88(0x10)
+	TArray<struct SlotAnimationTrack>                            SlotAnimTracks;                                    // 0x98(0x10)
+	TArray<struct BranchingPoint>                                BranchingPoints;                                   // 0xa8(0x10)
+	bool                                                         bEnableRootMotionTranslation;                      // 0xb8(0x1)
+	bool                                                         bEnableRootMotionRotation;                         // 0xb9(0x1)
+	char                                                         RootMotionRootLock;                                // 0xba(0x1)
+	TArray<struct BranchingPointMarker>                          BranchingPointMarkers;                             // 0xc0(0x10)
+	bool                                                         bAnimBranchingPointNeedsSort;                      // 0xd0(0x1)
+	TArray<int>                                                  BranchingPointStateNotifyIndices;                  // 0xd8(0x10)
 };
 
 
@@ -2572,393 +3778,37 @@ public:
 };
 
 
-// Size 0x100 (Full Size[0x128] - InheritedSize[0x28]
-class HapticFeedbackEffect: public Object
+// Size 0xb0 (Full Size[0x100] - InheritedSize[0x50]
+class ParticleModuleAttractorPoint: public ParticleModuleAttractorBase
 {
 public:
-	struct HapticFeedbackDetails                                 HapticDetails;                                     // 0x28(0x100)
+	struct RawDistributionVector                                 Position;                                          // 0x50(0x38)
+	struct RawDistributionFloat                                  Range;                                             // 0x88(0x38)
+	struct RawDistributionFloat                                  Strength;                                          // 0xc0(0x38)
+	bool                                                         StrengthByDistance;                                // 0xf8(0x1)
+	bool                                                         bAffectBaseVelocity;                               // 0xf8(0x1)
+	bool                                                         bOverrideVelocity;                                 // 0xf8(0x1)
+	bool                                                         bUseWorldSpacePosition;                            // 0xf8(0x1)
+	bool                                                         Positive_X;                                        // 0xf8(0x1)
+	bool                                                         Positive_Y;                                        // 0xf8(0x1)
+	bool                                                         Positive_Z;                                        // 0xf8(0x1)
+	bool                                                         Negative_X;                                        // 0xf8(0x1)
+	bool                                                         Negative_Y;                                        // 0xf9(0x1)
+	bool                                                         Negative_Z;                                        // 0xf9(0x1)
 };
 
 
-// Size 0x118 (Full Size[0x140] - InheritedSize[0x28]
-class Texture: public Object
+// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
+class BrushBuilder: public Object
 {
 public:
-	int                                                          LODBias;                                           // 0x28(0x4)
-	int                                                          NumCinematicMipLevels;                             // 0x2c(0x4)
-	bool                                                         SRGB;                                              // 0x30(0x1)
-	bool                                                         NeverStream;                                       // 0x30(0x1)
-	bool                                                         bNoTiling;                                         // 0x30(0x1)
-	bool                                                         bUseCinematicMipLevels;                            // 0x30(0x1)
-	bool                                                         CompressionNone;                                   // 0x30(0x1)
-	bool                                                         bUAV;                                              // 0x30(0x1)
-	uint32                                                       MaxQualityReduction;                               // 0x34(0x4)
-	int                                                          CachedCombinedLODBias;                             // 0x38(0x4)
-	bool                                                         bAsyncResourceReleaseHasBeenStarted;               // 0x3c(0x1)
-	char                                                         CompressionSettings;                               // 0x40(0x1)
-	char                                                         Filter;                                            // 0x41(0x1)
-	char                                                         LODGroup;                                          // 0x42(0x1)
-	float                                                        StreamingPriorityBoost;                            // 0x44(0x4)
-	TArray<struct ExternalMip>                                   ExternalMips;                                      // 0xa8(0x10)
-};
-
-
-// Size 0xc8 (Full Size[0xf0] - InheritedSize[0x28]
-class Console: public Object
-{
-public:
-	class LocalPlayer*                                           ConsoleTargetPlayer;                               // 0x38(0x8)
-	class Texture2D*                                             DefaultTexture_Black;                              // 0x40(0x8)
-	class Texture2D*                                             DefaultTexture_White;                              // 0x48(0x8)
-	TArray<String>                                               HistoryBuffer;                                     // 0x68(0x10)
-};
-
-
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class InterpTrackInstVectorMaterialParam: public InterpTrackInst
-{
-public:
-	TArray<class MaterialInstanceDynamic*>                       MaterialInstances;                                 // 0x28(0x10)
-	TArray<struct Vector>                                        ResetVectors;                                      // 0x38(0x10)
-	TArray<struct PrimitiveMaterialRef>                          PrimitiveMaterialRefs;                             // 0x48(0x10)
-	class InterpTrackVectorMaterialParam*                        InstancedTrack;                                    // 0x58(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x88] - InheritedSize[0x78]
-class AnimComposite: public AnimCompositeBase
-{
-public:
-	struct AnimTrack                                             AnimationTrack;                                    // 0x78(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class ForceFeedbackEffect: public Object
-{
-public:
-	TArray<struct ForceFeedbackChannelDetails>                   ChannelDetails;                                    // 0x28(0x10)
-	float                                                        Duration;                                          // 0x38(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class BoneMaskFilter: public Object
-{
-public:
-	TArray<struct InputBlendPose>                                BlendPoses;                                        // 0x28(0x10)
-};
-
-
-// Size 0x30 (Full Size[0x430] - InheritedSize[0x400]
-class PrecomputedVisibilityOverrideVolume: public Volume
-{
-public:
-	TArray<class Actor*>                                         OverrideVisibleActors;                             // 0x400(0x10)
-	TArray<class Actor*>                                         OverrideInvisibleActors;                           // 0x410(0x10)
-	TArray<struct Name>                                          OverrideInvisibleLevels;                           // 0x420(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class InputKeyDelegateBinding: public InputDelegateBinding
-{
-public:
-	TArray<struct BlueprintInputKeyDelegateBinding>              InputKeyDelegateBindings;                          // 0x28(0x10)
-};
-
-
-// Size 0x400 (Full Size[0x428] - InheritedSize[0x28]
-class PlayerInput: public Object
-{
-public:
-	TArray<struct KeyBind>                                       DebugExecBindings;                                 // 0x120(0x10)
-	TArray<struct Name>                                          GamepadInvertedAxes;                               // 0x170(0x10)
-	TArray<struct Name>                                          MouseInvertedAxes;                                 // 0x180(0x10)
-	TArray<struct Name>                                          InvertedCombinedAxisY;                             // 0x190(0x10)
-	TArray<struct Name>                                          InvertedCombinedAxisX;                             // 0x1a0(0x10)
-};
-
-
-// Size 0x88 (Full Size[0xb0] - InheritedSize[0x28]
-class ParticleEmitter: public Object
-{
-public:
-	struct FName                                                 EmitterName;                                       // 0x28(0x8)
-	int                                                          SubUVDataOffset;                                   // 0x30(0x4)
-	char                                                         EmitterRenderMode;                                 // 0x34(0x1)
-	TArray<class ParticleLODLevel*>                              LODLevels;                                         // 0x38(0x10)
-	bool                                                         ConvertedModules;                                  // 0x48(0x1)
-	int                                                          PeakActiveParticles;                               // 0x4c(0x4)
-	int                                                          InitialAllocationCount;                            // 0x50(0x4)
-	float                                                        MediumDetailSpawnRateScale;                        // 0x54(0x4)
-	float                                                        QualityLevelSpawnRateScale;                        // 0x58(0x4)
-	char                                                         DetailMode;                                        // 0x5c(0x1)
-	char                                                         MaxEmitterQuality;                                 // 0x5d(0x1)
-	char                                                         MinEmitterQuality;                                 // 0x5e(0x1)
-	bool                                                         bIsSoloing;                                        // 0x60(0x1)
-	bool                                                         bCookedOut;                                        // 0x60(0x1)
-	bool                                                         bDisabledLODsKeepEmitterAlive;                     // 0x60(0x1)
-	bool                                                         bHasAnyEnabledLODs;                                // 0x60(0x1)
-	bool                                                         bHasAnyEnabledLODsValid;                           // 0x60(0x1)
-	TArray<class ParticleModule*>                                ModulesNeedingInstanceData;                        // 0xa0(0x10)
-};
-
-
-// Size 0xd30 (Full Size[0xd80] - InheritedSize[0x50]
-class ParticleModuleTypeDataGpu: public ParticleModuleTypeDataBase
-{
-public:
-	struct GPUSpriteEmitterInfo                                  EmitterInfo;                                       // 0x50(0x2b0)
-	struct GPUSpriteResourceData                                 ResourceData;                                      // 0x300(0xa60)
-	float                                                        CameraMotionBlurAmount;                            // 0xd60(0x4)
-	bool                                                         bClearExistingParticlesOnInit;                     // 0xd64(0x1)
-	char                                                         AlphaCullingAggressiveness;                        // 0xd68(0x1)
-	bool                                                         bOverrideAlphaThreshold;                           // 0xd6c(0x1)
-	float                                                        OverriddenAlphaThreshold;                          // 0xd70(0x4)
-	char                                                         InteractionWithKillPlane;                          // 0xd74(0x1)
-	char                                                         KillPlanePointLocation;                            // 0xd75(0x1)
-	float                                                        FadingTimeWhenKilled;                              // 0xd78(0x4)
-};
-
-
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class MaterialExpression: public Object
-{
-public:
-	class Material*                                              Material;                                          // 0x28(0x8)
-	class MaterialFunction*                                      Function;                                          // 0x30(0x8)
-	struct FString                                               Desc;                                              // 0x38(0x10)
-	struct Color                                                 BorderColor;                                       // 0x48(0x4)
-	bool                                                         bRealtimePreview;                                  // 0x4c(0x1)
-	bool                                                         bNeedToUpdatePreview;                              // 0x4c(0x1)
-	bool                                                         bIsParameterExpression;                            // 0x4c(0x1)
-	bool                                                         bCommentBubbleVisible;                             // 0x4c(0x1)
-	bool                                                         bShowOutputNameOnPin;                              // 0x4c(0x1)
-	bool                                                         bHidePreviewWindow;                                // 0x4c(0x1)
-	bool                                                         bCollapsed;                                        // 0x4c(0x1)
-	bool                                                         bShaderInputData;                                  // 0x4c(0x1)
-	bool                                                         bShowInputs;                                       // 0x4d(0x1)
-	bool                                                         bShowOutputs;                                      // 0x4d(0x1)
-	TArray<struct Text>                                          MenuCategories;                                    // 0x50(0x10)
-	TArray<struct ExpressionOutput>                              Outputs;                                           // 0x60(0x10)
-};
-
-
-// Size 0x118 (Full Size[0x140] - InheritedSize[0x28]
-class ParticleSystem: public Object
-{
-public:
-	char                                                         SystemUpdateMode;                                  // 0x28(0x1)
-	float                                                        UpdateTime_FPS;                                    // 0x2c(0x4)
-	float                                                        UpdateTime_Delta;                                  // 0x30(0x4)
-	float                                                        WarmUpTime;                                        // 0x34(0x4)
-	float                                                        WarmupTickRate;                                    // 0x38(0x4)
-	TArray<class ParticleEmitter*>                               Emitters;                                          // 0x40(0x10)
-	class ParticleSystemComponent*                               PreviewComponent;                                  // 0x50(0x8)
-	class InterpCurveEdSetup*                                    CurveEdSetup;                                      // 0x58(0x8)
-	bool                                                         bOrientZAxisTowardCamera;                          // 0x60(0x1)
-	float                                                        LODDistanceCheckTime;                              // 0x64(0x4)
-	char                                                         LODMethod;                                         // 0x68(0x1)
-	TArray<float>                                                LODDistances;                                      // 0x70(0x10)
-	bool                                                         bRegenerateLODDuplicate;                           // 0x80(0x1)
-	TArray<struct ParticleSystemLOD>                             LODSettings;                                       // 0x88(0x10)
-	bool                                                         bIgnoreBoundsRotation;                             // 0x98(0x1)
-	bool                                                         bBoostParticleAggregationPriority;                 // 0x98(0x1)
-	bool                                                         bUseFixedRelativeBoundingBox;                      // 0x98(0x1)
-	struct Box                                                   FixedRelativeBoundingBox;                          // 0x9c(0x1c)
-	bool                                                         bUseLowResTranslucencyBoundingBox;                 // 0xb8(0x1)
-	struct Box                                                   LowResTranslucencyBoundingBox;                     // 0xbc(0x1c)
-	float                                                        SecondsBeforeInactive;                             // 0xd8(0x4)
-	bool                                                         bShouldResetPeakCounts;                            // 0xdc(0x1)
-	bool                                                         bHasPhysics;                                       // 0xdc(0x1)
-	bool                                                         bPostPhysicsTick;                                  // 0xdc(0x1)
-	bool                                                         bUseRealtimeThumbnail;                             // 0xdc(0x1)
-	bool                                                         ThumbnailImageOutOfDate;                           // 0xdc(0x1)
-	float                                                        Delay;                                             // 0xe0(0x4)
-	float                                                        DelayLow;                                          // 0xe4(0x4)
-	bool                                                         bUseDelayRange;                                    // 0xe8(0x1)
-	struct Vector                                                MacroUVPosition;                                   // 0xec(0xc)
-	float                                                        MacroUVRadius;                                     // 0xf8(0x4)
-	char                                                         OcclusionBoundsMethod;                             // 0xfc(0x1)
-	struct Box                                                   CustomOcclusionBounds;                             // 0x100(0x1c)
-	TArray<struct LODSoloTrack>                                  SoloTracking;                                      // 0x120(0x10)
-	TArray<struct NamedEmitterMaterial>                          NamedMaterialSlots;                                // 0x130(0x10)
-};
-
-
-// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
-class StaticMeshSocket: public Object
-{
-public:
-	struct FName                                                 SocketName;                                        // 0x28(0x8)
-	struct Vector                                                RelativeLocation;                                  // 0x30(0xc)
-	struct Rotator                                               RelativeRotation;                                  // 0x3c(0xc)
-	struct Vector                                                RelativeScale;                                     // 0x48(0xc)
-	struct FString                                               Tag;                                               // 0x58(0x10)
-};
-
-
-// Size 0x78 (Full Size[0xc8] - InheritedSize[0x50]
-class ParticleModuleWindInfluence: public ParticleModuleWindBase
-{
-public:
-	float                                                        WindSpeedCap;                                      // 0x50(0x4)
-	float                                                        RandomFactorForWindDirection;                      // 0x54(0x4)
-	struct RawDistributionFloat                                  InfluenceOnAcceleration;                           // 0x58(0x38)
-	struct RawDistributionFloat                                  InfluenceOnVelocity;                               // 0x90(0x38)
-};
-
-
-// Size 0x48 (Full Size[0x80] - InheritedSize[0x38]
-class AudioSettings: public DeveloperSettings
-{
-public:
-	struct StringAssetReference                                  DefaultSoundClassName;                             // 0x38(0x10)
-	struct StringAssetReference                                  DefaultBaseSoundMix;                               // 0x48(0x10)
-	struct StringAssetReference                                  VoiPSoundClass;                                    // 0x58(0x10)
-	float                                                        LowPassFilterResonance;                            // 0x68(0x4)
-	int                                                          MaximumConcurrentStreams;                          // 0x6c(0x4)
-	TArray<struct AudioQualitySettings>                          QualityLevels;                                     // 0x70(0x10)
-};
-
-
-// Size 0x158 (Full Size[0x1a8] - InheritedSize[0x50]
-class ParticleModuleBeamNoise: public ParticleModuleBeamBase
-{
-public:
-	bool                                                         bLowFreq_Enabled;                                  // 0x50(0x1)
-	int                                                          Frequency;                                         // 0x54(0x4)
-	int                                                          Frequency_LowRange;                                // 0x58(0x4)
-	struct RawDistributionVector                                 NoiseRange;                                        // 0x60(0x38)
-	struct RawDistributionFloat                                  NoiseRangeScale;                                   // 0x98(0x38)
-	bool                                                         bNRScaleEmitterTime;                               // 0xd0(0x1)
-	struct RawDistributionVector                                 NoiseSpeed;                                        // 0xd8(0x38)
-	bool                                                         bSmooth;                                           // 0x110(0x1)
-	float                                                        NoiseLockRadius;                                   // 0x114(0x4)
-	bool                                                         bNoiseLock;                                        // 0x118(0x1)
-	bool                                                         bOscillate;                                        // 0x118(0x1)
-	float                                                        NoiseLockTime;                                     // 0x11c(0x4)
-	float                                                        NoiseTension;                                      // 0x120(0x4)
-	bool                                                         bUseNoiseTangents;                                 // 0x124(0x1)
-	struct RawDistributionFloat                                  NoiseTangentStrength;                              // 0x128(0x38)
-	int                                                          NoiseTessellation;                                 // 0x160(0x4)
-	bool                                                         bTargetNoise;                                      // 0x164(0x1)
-	float                                                        FrequencyDistance;                                 // 0x168(0x4)
-	bool                                                         bApplyNoiseScale;                                  // 0x16c(0x1)
-	struct RawDistributionFloat                                  NoiseScale;                                        // 0x170(0x38)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class AISystemBase: public Object
-{
-public:
-	struct StringClassReference                                  AISystemClassName;                                 // 0x28(0x10)
-	struct FName                                                 AISystemModuleName;                                // 0x38(0x8)
-};
-
-
-// Size 0x18 (Full Size[0x68] - InheritedSize[0x50]
-class ParticleModuleTypeDataAnimTrail: public ParticleModuleTypeDataBase
-{
-public:
-	bool                                                         bDeadTrailsOnDeactivate;                           // 0x50(0x1)
-	bool                                                         bEnablePreviousTangentRecalculation;               // 0x50(0x1)
-	bool                                                         bTangentRecalculationEveryFrame;                   // 0x50(0x1)
-	float                                                        TilingDistance;                                    // 0x54(0x4)
-	float                                                        DistanceTessellationStepSize;                      // 0x58(0x4)
-	float                                                        TangentTessellationStepSize;                       // 0x5c(0x4)
-	float                                                        WidthTessellationStepSize;                         // 0x60(0x4)
-};
-
-
-// Size 0x38 (Full Size[0x88] - InheritedSize[0x50]
-class ParticleModuleSourceMovement: public ParticleModuleLocationBase
-{
-public:
-	struct RawDistributionVector                                 SourceMovementScale;                               // 0x50(0x38)
-};
-
-
-// Size 0x18 (Full Size[0x418] - InheritedSize[0x400]
-class CullDistanceVolume: public Volume
-{
-public:
-	TArray<struct CullDistanceSizePair>                          CullDistances;                                     // 0x400(0x10)
-	bool                                                         bEnabled;                                          // 0x410(0x1)
-};
-
-
-// Size 0x138 (Full Size[0x188] - InheritedSize[0x50]
-class ParticleModuleTypeDataBeam2: public ParticleModuleTypeDataBase
-{
-public:
-	char                                                         BeamMethod;                                        // 0x50(0x1)
-	int                                                          TextureTile;                                       // 0x54(0x4)
-	float                                                        TextureTileDistance;                               // 0x58(0x4)
-	int                                                          Sheets;                                            // 0x5c(0x4)
-	int                                                          MaxBeamCount;                                      // 0x60(0x4)
-	float                                                        Speed;                                             // 0x64(0x4)
-	int                                                          InterpolationPoints;                               // 0x68(0x4)
-	bool                                                         bAlwaysOn;                                         // 0x6c(0x1)
-	int                                                          UpVectorStepSize;                                  // 0x70(0x4)
-	struct FName                                                 BranchParentName;                                  // 0x74(0x8)
-	struct RawDistributionFloat                                  Distance;                                          // 0x80(0x38)
-	char                                                         TaperMethod;                                       // 0xb8(0x1)
-	struct RawDistributionFloat                                  TaperFactor;                                       // 0xc0(0x38)
-	struct RawDistributionFloat                                  TaperScale;                                        // 0xf8(0x38)
-	bool                                                         RenderGeometry;                                    // 0x130(0x1)
-	bool                                                         RenderDirectLine;                                  // 0x130(0x1)
-	bool                                                         RenderLines;                                       // 0x130(0x1)
-	bool                                                         RenderTessellation;                                // 0x130(0x1)
-	TArray<class ParticleModuleBeamSource*>                      LOD_BeamModule_Source;                             // 0x138(0x10)
-	TArray<class ParticleModuleBeamTarget*>                      LOD_BeamModule_Target;                             // 0x148(0x10)
-	TArray<class ParticleModuleBeamNoise*>                       LOD_BeamModule_Noise;                              // 0x158(0x10)
-	TArray<class ParticleModuleBeamModifier*>                    LOD_BeamModule_SourceModifier;                     // 0x168(0x10)
-	TArray<class ParticleModuleBeamModifier*>                    LOD_BeamModule_TargetModifier;                     // 0x178(0x10)
-};
-
-
-// Size 0x68 (Full Size[0x228] - InheritedSize[0x1c0]
-class BlueprintGeneratedClass: public Class
-{
-public:
-	int                                                          NumReplicatedProperties;                           // 0x1c0(0x4)
-	TArray<class DynamicBlueprintBinding*>                       DynamicBindingObjects;                             // 0x1c8(0x10)
-	TArray<class ActorComponent*>                                ComponentTemplates;                                // 0x1d8(0x10)
-	TArray<class TimelineTemplate*>                              Timelines;                                         // 0x1e8(0x10)
-	class SimpleConstructionScript*                              SimpleConstructionScript;                          // 0x1f8(0x8)
-	class InheritableComponentHandler*                           InheritableComponentHandler;                       // 0x200(0x8)
-	class StructProperty*                                        UberGraphFramePointerProperty;                     // 0x208(0x8)
-	class Function*                                              UberGraphFunction;                                 // 0x210(0x8)
-	TArray<struct EventGraphFastCallPair>                        FastCallPairs;                                     // 0x218(0x10)
-};
-
-
-// Size 0x450 (Full Size[0x478] - InheritedSize[0x28]
-class NetDriver: public Object
-{
-public:
-	struct FString                                               NetConnectionClassName;                            // 0x38(0x10)
-	int                                                          MaxDownloadSize;                                   // 0x48(0x4)
-	bool                                                         bClampListenServerTickRate;                        // 0x4c(0x1)
-	int                                                          NetServerMaxTickRate;                              // 0x50(0x4)
-	int                                                          MaxInternetClientRate;                             // 0x54(0x4)
-	int                                                          MaxClientRate;                                     // 0x58(0x4)
-	float                                                        ServerTravelPause;                                 // 0x5c(0x4)
-	float                                                        SpawnPrioritySeconds;                              // 0x60(0x4)
-	float                                                        RelevantTimeout;                                   // 0x64(0x4)
-	float                                                        KeepAliveTime;                                     // 0x68(0x4)
-	float                                                        InitialConnectTimeout;                             // 0x6c(0x4)
-	float                                                        ConnectionTimeout;                                 // 0x70(0x4)
-	class NetConnection*                                         ServerConnection;                                  // 0x78(0x8)
-	TArray<class NetConnection*>                                 ClientConnections;                                 // 0x80(0x10)
-	class World*                                                 World;                                             // 0x90(0x8)
-	class UClass*                                                NetConnectionClass;                                // 0xc8(0x8)
-	class Property*                                              RoleProperty;                                      // 0xd0(0x8)
-	class Property*                                              RemoteRoleProperty;                                // 0xd8(0x8)
-	struct FName                                                 NetDriverName;                                     // 0xe0(0x8)
+	struct FString                                               BitmapFilename;                                    // 0x28(0x10)
+	struct FString                                               Tooltip;                                           // 0x38(0x10)
+	bool                                                         NotifyBadParams;                                   // 0x48(0x1)
+	TArray<struct Vector>                                        Vertices;                                          // 0x50(0x10)
+	TArray<struct BuilderPoly>                                   Polys;                                             // 0x60(0x10)
+	struct FName                                                 Layer;                                             // 0x70(0x8)
+	bool                                                         MergeCoplanars;                                    // 0x78(0x1)
 };
 
 
@@ -2978,871 +3828,363 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
-class Exporter: public Object
+// Size 0xa8 (Full Size[0xd0] - InheritedSize[0x28]
+class TextPropertyTestObject: public Object
 {
 public:
-	class UClass*                                                SupportedClass;                                    // 0x28(0x8)
-	class Object*                                                ExportRootScope;                                   // 0x30(0x8)
-	TArray<String>                                               FormatExtension;                                   // 0x38(0x10)
-	TArray<String>                                               FormatDescription;                                 // 0x48(0x10)
-	int                                                          PreferredFormatIndex;                              // 0x58(0x4)
-	int                                                          TextIndent;                                        // 0x5c(0x4)
-	bool                                                         bText;                                             // 0x60(0x1)
-	bool                                                         bSelectedOnly;                                     // 0x60(0x1)
-	bool                                                         bForceFileOperations;                              // 0x60(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class InterpTrackInstParticleReplay: public InterpTrackInst
-{
-public:
-	float                                                        LastUpdatePosition;                                // 0x28(0x4)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class LightmappedSurfaceCollection: public Object
-{
-public:
-	class Model*                                                 SourceModel;                                       // 0x28(0x8)
-	TArray<int>                                                  Surfaces;                                          // 0x30(0x10)
-};
-
-
-// Size 0x90 (Full Size[0xe0] - InheritedSize[0x50]
-class ParticleModuleAttractorParticle: public ParticleModuleAttractorBase
-{
-public:
-	struct FName                                                 EmitterName;                                       // 0x50(0x8)
-	struct RawDistributionFloat                                  Range;                                             // 0x58(0x38)
-	bool                                                         bStrengthByDistance;                               // 0x90(0x1)
-	struct RawDistributionFloat                                  Strength;                                          // 0x98(0x38)
-	bool                                                         bAffectBaseVelocity;                               // 0xd0(0x1)
-	char                                                         SelectionMethod;                                   // 0xd4(0x1)
-	bool                                                         bRenewSource;                                      // 0xd8(0x1)
-	bool                                                         bInheritSourceVel;                                 // 0xd8(0x1)
-	int                                                          LastSelIndex;                                      // 0xdc(0x4)
-};
-
-
-// Size 0x2a8 (Full Size[0x2d0] - InheritedSize[0x28]
-class ButtonStyleAsset: public Object
-{
-public:
-	struct ButtonStyle                                           ButtonStyle;                                       // 0x28(0x2a8)
-};
-
-
-// Size 0x78 (Full Size[0xc8] - InheritedSize[0x50]
-class ParticleModuleColorOverLife: public ParticleModuleColorBase
-{
-public:
-	struct RawDistributionVector                                 ColorOverLife;                                     // 0x50(0x38)
-	struct RawDistributionFloat                                  AlphaOverLife;                                     // 0x88(0x38)
-	bool                                                         bClampAlpha;                                       // 0xc0(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class RadialForceActor: public RigidBodyBase
-{
-public:
-	class RadialForceComponent*                                  ForceComponent;                                    // 0x3c8(0x8)
-};
-
-
-// Size 0x168 (Full Size[0x198] - InheritedSize[0x30]
-class CurveVector: public CurveBase
-{
-public:
-	struct RichCurve                                             FloatCurves;                                       // 0x30(0x78)
-};
-
-
-// Size 0x2b8 (Full Size[0x308] - InheritedSize[0x50]
-class ParticleModuleColor: public ParticleModuleColorBase
-{
-public:
-	bool                                                         bUseGroupAColorForAllGroups;                       // 0x50(0x1)
-	struct RawDistributionVector                                 StartColor;                                        // 0x58(0x38)
-	struct RawDistributionVector                                 AdditionalStartColor;                              // 0x90(0x38)
-	bool                                                         bUseGroupAAlphaForAllGroups;                       // 0x1a8(0x1)
-	struct RawDistributionFloat                                  StartAlpha;                                        // 0x1b0(0x38)
-	struct RawDistributionFloat                                  AdditionalStartAlpha;                              // 0x1e8(0x38)
-	bool                                                         bClampAlpha;                                       // 0x300(0x1)
-	bool                                                         bIgnoreComponentColorTint;                         // 0x300(0x1)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class InterpCurveEdSetup: public Object
-{
-public:
-	TArray<struct CurveEdTab>                                    Tabs;                                              // 0x28(0x10)
-	int                                                          ActiveTab;                                         // 0x38(0x4)
-};
-
-
-// Size 0x588 (Full Size[0x5b0] - InheritedSize[0x28]
-class CameraAnim: public Object
-{
-public:
-	class InterpGroup*                                           CameraInterpGroup;                                 // 0x28(0x8)
-	float                                                        AnimLength;                                        // 0x30(0x4)
-	struct Box                                                   BoundingBox;                                       // 0x34(0x1c)
-	bool                                                         bRelativeToInitialTransform;                       // 0x50(0x1)
-	float                                                        BaseFOV;                                           // 0x54(0x4)
-	struct PostProcessSettings                                   BasePostProcessSettings;                           // 0x60(0x540)
-	float                                                        BasePostProcessBlendWeight;                        // 0x5a0(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class AtmosphericFog: public Info
-{
-public:
-	class AtmosphericFogComponent*                               AtmosphericFogComponent;                           // 0x3c8(0x8)
-};
-
-
-// Size 0x120 (Full Size[0x158] - InheritedSize[0x38]
-class UserInterfaceSettings: public DeveloperSettings
-{
-public:
-	char                                                         RenderFocusRule;                                   // 0x38(0x1)
-	struct StringClassReference                                  DefaultCursor;                                     // 0x40(0x10)
-	struct StringClassReference                                  TextEditBeamCursor;                                // 0x50(0x10)
-	struct StringClassReference                                  CrosshairsCursor;                                  // 0x60(0x10)
-	struct StringClassReference                                  GrabHandCursor;                                    // 0x70(0x10)
-	struct StringClassReference                                  GrabHandClosedCursor;                              // 0x80(0x10)
-	struct StringClassReference                                  SlashedCircleCursor;                               // 0x90(0x10)
-	float                                                        ApplicationScale;                                  // 0xa0(0x4)
-	char                                                         UIScaleRule;                                       // 0xa4(0x1)
-	struct StringClassReference                                  CustomScalingRuleClass;                            // 0xa8(0x10)
-	struct RuntimeFloatCurve                                     UIScaleCurve;                                      // 0xb8(0x80)
-	TArray<class Object*>                                        CursorClasses;                                     // 0x138(0x10)
-	class UClass*                                                CustomScalingRuleClassInstance;                    // 0x148(0x8)
-	class DPICustomScalingRule*                                  CustomScalingRule;                                 // 0x150(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EndUserSettings: public Object
-{
-public:
-	bool                                                         bSendAnonymousUsageDataToEpic;                     // 0x30(0x1)
-};
-
-
-// Size 0x18 (Full Size[0x68] - InheritedSize[0x50]
-class ParticleModuleAttractorPointGravity: public ParticleModuleAttractorBase
-{
-public:
-	struct Vector                                                Position;                                          // 0x50(0xc)
-	float                                                        Radius;                                            // 0x5c(0x4)
-	class DistributionFloat*                                     Strength;                                          // 0x60(0x8)
-};
-
-
-// Size 0x170 (Full Size[0x1c0] - InheritedSize[0x50]
-class ParticleModuleLifetime: public ParticleModuleLifetimeBase
-{
-public:
-	bool                                                         bUseGroupAValuesForAllGroups;                      // 0x50(0x1)
-	struct RawDistributionFloat                                  LifeTime;                                          // 0x58(0x38)
-	struct RawDistributionFloat                                  AdditionalLifetimes;                               // 0x90(0x38)
-};
-
-
-// Size 0xd0 (Full Size[0xf8] - InheritedSize[0x28]
-class PhysicsAsset: public Object
-{
-public:
-	TArray<class BodySetup*>                                     BodySetup;                                         // 0x28(0x10)
-	TArray<int>                                                  BoundsBodies;                                      // 0x38(0x10)
-	TArray<class PhysicsConstraintTemplate*>                     ConstraintSetup;                                   // 0x48(0x10)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class TouchInterface: public Object
-{
-public:
-	TArray<struct TouchInputControl>                             Controls;                                          // 0x28(0x10)
-	float                                                        ActiveOpacity;                                     // 0x38(0x4)
-	float                                                        InactiveOpacity;                                   // 0x3c(0x4)
-	float                                                        TimeUntilDeactive;                                 // 0x40(0x4)
-	float                                                        TimeUntilReset;                                    // 0x44(0x4)
-	float                                                        ActivationDelay;                                   // 0x48(0x4)
-	bool                                                         bPreventRecenter;                                  // 0x4c(0x1)
-	float                                                        StartupDelay;                                      // 0x50(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
-class ParticleModuleEventGeneratorGPU: public ParticleModuleEventBase
-{
-public:
-	TArray<struct ParticleEventGPU_GenerateInfo>                 Events;                                            // 0x50(0x10)
-};
-
-
-// Size 0xf8 (Full Size[0x4c0] - InheritedSize[0x3c8]
-class GameMode: public Info
-{
-public:
-	bool                                                         bDisableAsyncOcclusionChecking;                    // 0x3d0(0x1)
-	bool                                                         bUseSeamlessTravel;                                // 0x3d0(0x1)
-	bool                                                         bPauseable;                                        // 0x3d0(0x1)
-	bool                                                         bStartPlayersAsSpectators;                         // 0x3d0(0x1)
-	bool                                                         bDelayedStart;                                     // 0x3d0(0x1)
-	struct FString                                               OptionsString;                                     // 0x3d8(0x10)
-	class UClass*                                                DefaultPawnClass;                                  // 0x3e8(0x8)
-	class UClass*                                                HUDClass;                                          // 0x3f0(0x8)
-	int                                                          NumSpectators;                                     // 0x3f8(0x4)
-	int                                                          NumPlayers;                                        // 0x3fc(0x4)
-	int                                                          NumBots;                                           // 0x400(0x4)
-	float                                                        MinRespawnDelay;                                   // 0x404(0x4)
-	class GameSession*                                           GameSession;                                       // 0x408(0x8)
-	int                                                          NumTravellingPlayers;                              // 0x410(0x4)
-	struct FText                                                 DefaultPlayerName;                                 // 0x418(0x38)
-	class UClass*                                                EngineMessageClass;                                // 0x450(0x8)
-	class UClass*                                                PlayerControllerClass;                             // 0x458(0x8)
-	class UClass*                                                SpectatorClass;                                    // 0x460(0x8)
-	class UClass*                                                ReplaySpectatorPlayerControllerClass;              // 0x468(0x8)
-	class UClass*                                                PlayerStateClass;                                  // 0x470(0x8)
-	class UClass*                                                GameStateClass;                                    // 0x478(0x8)
-	class GameState*                                             GameState;                                         // 0x480(0x8)
-	TArray<class PlayerState*>                                   InactivePlayerArray;                               // 0x488(0x10)
-	TArray<struct GameClassShortName>                            GameModeClassAliases;                              // 0x4a8(0x10)
-	float                                                        InactivePlayerStateLifeSpan;                       // 0x4b8(0x4)
-	bool                                                         bHandleDedicatedServerReplays;                     // 0x4bc(0x1)
-};
-
-
-// Size 0x68 (Full Size[0xb8] - InheritedSize[0x50]
-class ParticleModuleKillSphere: public ParticleModuleKillBase
-{
-public:
-	struct Vector                                                Centre;                                            // 0x50(0xc)
-	float                                                        Radius;                                            // 0x5c(0x4)
-	bool                                                         bUseGroupAForAll;                                  // 0x60(0x1)
-	struct KillSphereGroupParams                                 AdditionalParams;                                  // 0x64(0x10)
-};
-
-
-// Size 0x80 (Full Size[0xa8] - InheritedSize[0x28]
-class EngineMessage: public LocalMessage
-{
-public:
-	struct FString                                               FailedPlaceMessage;                                // 0x28(0x10)
-	struct FString                                               MaxedOutMessage;                                   // 0x38(0x10)
-	struct FString                                               EnteredMessage;                                    // 0x48(0x10)
-	struct FString                                               LeftMessage;                                       // 0x58(0x10)
-	struct FString                                               GlobalNameChange;                                  // 0x68(0x10)
-	struct FString                                               SpecEnteredMessage;                                // 0x78(0x10)
-	struct FString                                               NewPlayerMessage;                                  // 0x88(0x10)
-	struct FString                                               NewSpecMessage;                                    // 0x98(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x68] - InheritedSize[0x50]
-class ParticleModuleParameterDynamic: public ParticleModuleParameterBase
-{
-public:
-	TArray<struct EmitterDynamicParameter>                       DynamicParams;                                     // 0x50(0x10)
-	int                                                          UpdateFlags;                                       // 0x60(0x4)
-	bool                                                         bUsesVelocity;                                     // 0x64(0x1)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class PlatformInterfaceBase: public Object
-{
-public:
-	TArray<struct DelegateArray>                                 AllDelegates;                                      // 0x28(0x10)
-};
-
-
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class DialogueWave: public Object
-{
-public:
-	bool                                                         bMature;                                           // 0x28(0x1)
-	struct FString                                               SpokenText;                                        // 0x30(0x10)
-	TArray<struct DialogueContextMapping>                        ContextMappings;                                   // 0x40(0x10)
-	struct Guid                                                  LocalizationGUID;                                  // 0x50(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
-class SkyLight: public Info
-{
-public:
-	class SkyLightComponent*                                     LightComponent;                                    // 0x3c8(0x8)
-	bool                                                         bEnabled;                                          // 0x3d0(0x1)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class InterpTrackInstToggle: public InterpTrackInst
-{
-public:
-	char                                                         Action;                                            // 0x28(0x1)
-	float                                                        LastUpdatePosition;                                // 0x2c(0x4)
-	bool                                                         bSavedActiveState;                                 // 0x30(0x1)
-};
-
-
-// Size 0x1b0 (Full Size[0x1d8] - InheritedSize[0x28]
-class Font: public Object
-{
-public:
-	char                                                         FontCacheType;                                     // 0x30(0x1)
-	TArray<struct FontCharacter>                                 Characters;                                        // 0x38(0x10)
-	TArray<class Texture2D*>                                     Textures;                                          // 0x48(0x10)
-	int                                                          IsRemapped;                                        // 0x58(0x4)
-	float                                                        EmScale;                                           // 0x5c(0x4)
-	float                                                        Ascent;                                            // 0x60(0x4)
-	float                                                        Descent;                                           // 0x64(0x4)
-	float                                                        Leading;                                           // 0x68(0x4)
-	int                                                          Kerning;                                           // 0x6c(0x4)
-	struct FontImportOptionsData                                 ImportOptions;                                     // 0x70(0xb0)
-	int                                                          NumCharacters;                                     // 0x120(0x4)
-	TArray<int>                                                  MaxCharHeight;                                     // 0x128(0x10)
-	float                                                        ScalingFactor;                                     // 0x138(0x4)
-	int                                                          LegacyFontSize;                                    // 0x13c(0x4)
-	struct FName                                                 LegacyFontName;                                    // 0x140(0x8)
-	struct CompositeFont                                         CompositeFont;                                     // 0x148(0x28)
-};
-
-
-// Size 0x5f0 (Full Size[0x618] - InheritedSize[0x28]
-class CheckBoxStyleAsset: public Object
-{
-public:
-	struct CheckBoxStyle                                         CheckBoxStyle;                                     // 0x28(0x5f0)
-};
-
-
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class SubUVAnimation: public Object
-{
-public:
-	class Texture2D*                                             SubUVTexture;                                      // 0x28(0x8)
-	int                                                          SubImages_Horizontal;                              // 0x30(0x4)
-	int                                                          SubImages_Vertical;                                // 0x34(0x4)
-	char                                                         BoundingMode;                                      // 0x38(0x1)
-	char                                                         OpacitySourceMode;                                 // 0x39(0x1)
-	float                                                        AlphaThreshold;                                    // 0x3c(0x4)
-	float                                                        SafeMarginSize;                                    // 0x40(0x4)
+	struct FText                                                 DefaultedText;                                     // 0x28(0x38)
+	struct FText                                                 UndefaultedText;                                   // 0x60(0x38)
+	struct FText                                                 TransientText;                                     // 0x98(0x38)
 };
 
 
 // Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class NetworkSettings: public DeveloperSettings
+class SoundNodeWaveParam: public SoundNode
 {
 public:
-	bool                                                         bVerifyPeer;                                       // 0x38(0x1)
+	struct FName                                                 WaveParameterName;                                 // 0x38(0x8)
 };
 
 
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class ReverbEffect: public Object
+// Size 0x50 (Full Size[0x418] - InheritedSize[0x3c8]
+class Emitter: public Actor
 {
 public:
-	float                                                        Density;                                           // 0x28(0x4)
-	float                                                        Diffusion;                                         // 0x2c(0x4)
-	float                                                        Gain;                                              // 0x30(0x4)
-	float                                                        GainHF;                                            // 0x34(0x4)
-	float                                                        DecayTime;                                         // 0x38(0x4)
-	float                                                        DecayHFRatio;                                      // 0x3c(0x4)
-	float                                                        ReflectionsGain;                                   // 0x40(0x4)
-	float                                                        ReflectionsDelay;                                  // 0x44(0x4)
-	float                                                        LateGain;                                          // 0x48(0x4)
-	float                                                        LateDelay;                                         // 0x4c(0x4)
-	float                                                        AirAbsorptionGainHF;                               // 0x50(0x4)
-	float                                                        RoomRolloffFactor;                                 // 0x54(0x4)
+	class ParticleSystemComponent*                               ParticleSystemComponent;                           // 0x3c8(0x8)
+	bool                                                         bDestroyOnSystemFinish;                            // 0x3d0(0x1)
+	bool                                                         bPostUpdateTickGroup;                              // 0x3d0(0x1)
+	bool                                                         bCurrentlyActive;                                  // 0x3d0(0x1)
+	multicastinlinedelegate                                      OnParticleSpawn;                                   // 0x3d8(0x10)
+	multicastinlinedelegate                                      OnParticleBurst;                                   // 0x3e8(0x10)
+	multicastinlinedelegate                                      OnParticleDeath;                                   // 0x3f8(0x10)
+	multicastinlinedelegate                                      OnParticleCollide;                                 // 0x408(0x10)
 };
 
 
-// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
-class DataTable: public Object
+// Size 0x20 (Full Size[0x90] - InheritedSize[0x70]
+class InterpTrackLinearColorBase: public InterpTrack
 {
 public:
-	class ScriptStruct*                                          RowStruct;                                         // 0x28(0x8)
+	struct InterpCurveLinearColor                                LinearColorTrack;                                  // 0x70(0x18)
+	float                                                        CurveTension;                                      // 0x88(0x4)
 };
 
 
-// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
-class ParticleModuleVectorFieldScaleOverLife: public ParticleModuleVectorFieldBase
+// Size 0x18 (Full Size[0x158] - InheritedSize[0x140]
+class Texture2DDynamic: public Texture
 {
 public:
-	class DistributionFloat*                                     VectorFieldScaleOverLife;                          // 0x50(0x8)
+	char                                                         Format;                                            // 0x148(0x1)
 };
 
 
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class InterpData: public Object
+// Size 0x80 (Full Size[0xf0] - InheritedSize[0x70]
+class MaterialExpressionSceneColor: public MaterialExpression
 {
 public:
-	float                                                        InterpLength;                                      // 0x28(0x4)
-	float                                                        PathBuildTime;                                     // 0x2c(0x4)
-	TArray<class InterpGroup*>                                   InterpGroups;                                      // 0x30(0x10)
-	class InterpCurveEdSetup*                                    CurveEdSetup;                                      // 0x40(0x8)
-	float                                                        EdSectionStart;                                    // 0x48(0x4)
-	float                                                        EdSectionEnd;                                      // 0x4c(0x4)
-	bool                                                         bShouldBakeAndPrune;                               // 0x50(0x1)
-	class InterpGroupDirector*                                   CachedDirectorGroup;                               // 0x58(0x8)
-	TArray<struct Name>                                          AllEventNames;                                     // 0x60(0x10)
-};
-
-
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class InterpTrack: public Object
-{
-public:
-	TArray<class InterpTrack*>                                   SubTracks;                                         // 0x38(0x10)
-	class UClass*                                                TrackInstClass;                                    // 0x48(0x8)
-	char                                                         ActiveCondition;                                   // 0x50(0x1)
-	struct FString                                               TrackTitle;                                        // 0x58(0x10)
-	bool                                                         bOnePerGroup;                                      // 0x68(0x1)
-	bool                                                         bDirGroupOnly;                                     // 0x68(0x1)
-	bool                                                         bDisableTrack;                                     // 0x68(0x1)
-	bool                                                         bIsSelected;                                       // 0x68(0x1)
-	bool                                                         bIsAnimControlTrack;                               // 0x68(0x1)
-	bool                                                         bSubTrackOnly;                                     // 0x68(0x1)
-	bool                                                         bVisible;                                          // 0x68(0x1)
-	bool                                                         bIsRecording;                                      // 0x68(0x1)
-};
-
-
-// Size 0x70 (Full Size[0xe8] - InheritedSize[0x78]
-class AnimMontage: public AnimCompositeBase
-{
-public:
-	float                                                        BlendInTime;                                       // 0x78(0x4)
-	float                                                        BlendOutTime;                                      // 0x7c(0x4)
-	float                                                        BlendOutTriggerTime;                               // 0x80(0x4)
-	TArray<struct CompositeSection>                              CompositeSections;                                 // 0x88(0x10)
-	TArray<struct SlotAnimationTrack>                            SlotAnimTracks;                                    // 0x98(0x10)
-	TArray<struct BranchingPoint>                                BranchingPoints;                                   // 0xa8(0x10)
-	bool                                                         bEnableRootMotionTranslation;                      // 0xb8(0x1)
-	bool                                                         bEnableRootMotionRotation;                         // 0xb9(0x1)
-	char                                                         RootMotionRootLock;                                // 0xba(0x1)
-	TArray<struct BranchingPointMarker>                          BranchingPointMarkers;                             // 0xc0(0x10)
-	bool                                                         bAnimBranchingPointNeedsSort;                      // 0xd0(0x1)
-	TArray<int>                                                  BranchingPointStateNotifyIndices;                  // 0xd8(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
-class ParticleModuleVectorFieldScale: public ParticleModuleVectorFieldBase
-{
-public:
-	class DistributionFloat*                                     VectorFieldScale;                                  // 0x50(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x1d0] - InheritedSize[0x1c8]
-class MaterialExpressionAntialiasedTextureMask: public MaterialExpressionTextureSampleParameter2D
-{
-public:
-	float                                                        Threshold;                                         // 0x1c8(0x4)
-	char                                                         Channel;                                           // 0x1cc(0x1)
-};
-
-
-// Size 0x158 (Full Size[0x1a8] - InheritedSize[0x50]
-class ParticleModuleLocationGPU: public ParticleModuleLocationBase
-{
-public:
-	struct RawDistributionVector                                 StartLocation;                                     // 0x50(0x38)
-	struct RawDistributionVector                                 AdditionalStartLocations;                          // 0x88(0x38)
-	bool                                                         bUseGroupAStartLocationForAllGroups;               // 0x1a0(0x1)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class AutomationTestUserSettings: public Object
-{
-public:
-	bool                                                         FilterTests;                                       // 0x28(0x1)
-	TArray<String>                                               IncludedTestsPrefix;                               // 0x30(0x10)
-	TArray<String>                                               ExcludedTestsPrefix;                               // 0x40(0x10)
-	bool                                                         IncludeEpicTests;                                  // 0x50(0x1)
-};
-
-
-// Size 0x10 (Full Size[0x410] - InheritedSize[0x400]
-class NavMeshBoundsVolume: public Volume
-{
-public:
-	struct NavAgentSelector                                      SupportedAgents;                                   // 0x400(0x4)
-	struct FName                                                 OriginatingLevelName;                              // 0x404(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class StringArrayDataAsset: public DataAsset
-{
-public:
-	TArray<String>                                               Array;                                             // 0x28(0x10)
-};
-
-
-// Size 0x48 (Full Size[0x80] - InheritedSize[0x38]
-class AnimationSettings: public DeveloperSettings
-{
-public:
-	TArray<float>                                                DefaultVisibleDistanceFactorThresholds;            // 0x38(0x10)
-	int                                                          CompressCommandletVersion;                         // 0x48(0x4)
-	TArray<String>                                               KeyEndEffectorsMatchNameArray;                     // 0x50(0x10)
-	class UClass*                                                DefaultCompressionAlgorithm;                       // 0x60(0x8)
-	char                                                         RotationCompressionFormat;                         // 0x68(0x1)
-	char                                                         TranslationCompressionFormat;                      // 0x69(0x1)
-	float                                                        AlternativeCompressionThreshold;                   // 0x6c(0x4)
-	bool                                                         ForceRecompression;                                // 0x70(0x1)
-	bool                                                         bOnlyCheckForMissingSkeletalMeshes;                // 0x71(0x1)
-	bool                                                         bForceBelowThreshold;                              // 0x72(0x1)
-	bool                                                         bFirstRecompressUsingCurrentOrDefault;             // 0x73(0x1)
-	bool                                                         bRaiseMaxErrorToExisting;                          // 0x74(0x1)
-	bool                                                         bTryFixedBitwiseCompression;                       // 0x75(0x1)
-	bool                                                         bTryPerTrackBitwiseCompression;                    // 0x76(0x1)
-	bool                                                         bTryLinearKeyRemovalCompression;                   // 0x77(0x1)
-	bool                                                         bTryIntervalKeyRemoval;                            // 0x78(0x1)
-	bool                                                         bStripAnimationDataOnDedicatedServer;              // 0x79(0x1)
-};
-
-
-// Size 0x1e8 (Full Size[0x210] - InheritedSize[0x28]
-class LevelStreaming: public Object
-{
-public:
-	assetobject                                                  WorldAsset;                                        // 0x28(0x20)
-	struct FName                                                 PackageNameToLoad;                                 // 0x50(0x8)
-	TArray<struct Name>                                          LODPackageNames;                                   // 0x58(0x10)
-	struct Transform                                             LevelTransform;                                    // 0x80(0x30)
-	bool                                                         bShouldBeVisibleInEditor;                          // 0xbc(0x1)
-	bool                                                         Blocked;                                           // 0xbc(0x1)
-	bool                                                         bShouldBeLoaded;                                   // 0xbc(0x1)
-	bool                                                         bShouldBeVisible;                                  // 0xbc(0x1)
-	bool                                                         bShouldBlockOnLoad;                                // 0xbc(0x1)
-	int                                                          LevelLODIndex;                                     // 0xc0(0x4)
-	bool                                                         bDisableDistanceStreaming;                         // 0xc4(0x1)
-	bool                                                         bDrawOnLevelStatusMap;                             // 0xc4(0x1)
-	struct LinearColor                                           LevelColor;                                        // 0xc8(0x10)
-	TArray<class LevelStreamingVolume*>                          EditorStreamingVolumes;                            // 0xd8(0x10)
-	float                                                        MinTimeBetweenVolumeUnloadRequests;                // 0xe8(0x4)
-	TArray<String>                                               Keywords;                                          // 0xf0(0x10)
-	multicastinlinedelegate                                      OnLevelLoaded;                                     // 0x100(0x10)
-	multicastinlinedelegate                                      OnLevelUnloaded;                                   // 0x110(0x10)
-	multicastinlinedelegate                                      OnLevelShown;                                      // 0x120(0x10)
-	multicastinlinedelegate                                      OnLevelHidden;                                     // 0x130(0x10)
-	class Level*                                                 LoadedLevel;                                       // 0x200(0x8)
-	class Level*                                                 PendingUnloadLevel;                                // 0x208(0x8)
-};
-
-
-// Size 0x110 (Full Size[0x138] - InheritedSize[0x28]
-class StaticMesh: public Object
-{
-public:
-	int                                                          MinLOD;                                            // 0x40(0x4)
-	TArray<class MaterialInterface*>                             Materials;                                         // 0x48(0x10)
-	int                                                          LightMapResolution;                                // 0x58(0x4)
-	int                                                          LightMapCoordinateIndex;                           // 0x5c(0x4)
-	class BodySetup*                                             BodySetup;                                         // 0x60(0x8)
-	int                                                          LODForCollision;                                   // 0x68(0x4)
-	bool                                                         bUseMaximumStreamingTexelRatio;                    // 0x6c(0x1)
-	bool                                                         bStripComplexCollisionForConsole;                  // 0x6c(0x1)
-	bool                                                         bHasNavigationData;                                // 0x6c(0x1)
-	float                                                        StreamingDistanceMultiplier;                       // 0x70(0x4)
-	float                                                        LpvBiasMultiplier;                                 // 0x74(0x4)
-	TArray<class StaticMeshSocket*>                              Sockets;                                           // 0xa8(0x10)
-	struct Vector                                                PositiveBoundsExtension;                           // 0xd0(0xc)
-	struct Vector                                                NegativeBoundsExtension;                           // 0xdc(0xc)
-	struct BoxSphereBounds                                       ExtendedBounds;                                    // 0xe8(0x1c)
-	TArray<String>                                               SourceMaterials;                                   // 0x108(0x10)
-	int                                                          UVsForStreaming;                                   // 0x118(0x4)
-	int                                                          ElementToIgnoreForTexFactor;                       // 0x11c(0x4)
-	TArray<class AssetUserData*>                                 AssetUserData;                                     // 0x120(0x10)
-	class NavCollision*                                          NavCollision;                                      // 0x130(0x8)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class MaybeCompressedCanvasRenderTarget2D: public Object
-{
-public:
-	multicastinlinedelegate                                      OnCanvasUpdate;                                    // 0x28(0x10)
-	int                                                          ChannelCount;                                      // 0x38(0x4)
-	class CanvasRenderTarget2D*                                  UncompressedRenderTarget;                          // 0x40(0x8)
-	class CompressedCanvasRenderTarget2D*                        CompressedRenderTarget;                            // 0x48(0x8)
-};
-
-
-// Size 0x30 (Full Size[0x80] - InheritedSize[0x50]
-class ParticleModuleTypeDataRibbon: public ParticleModuleTypeDataBase
-{
-public:
-	int                                                          MaxTessellationBetweenParticles;                   // 0x50(0x4)
-	int                                                          SheetsPerTrail;                                    // 0x54(0x4)
-	int                                                          MaxTrailCount;                                     // 0x58(0x4)
-	int                                                          MaxParticleInTrailCount;                           // 0x5c(0x4)
-	bool                                                         bDeadTrailsOnDeactivate;                           // 0x60(0x1)
-	bool                                                         bDeadTrailsOnSourceLoss;                           // 0x60(0x1)
-	bool                                                         bClipSourceSegement;                               // 0x60(0x1)
-	bool                                                         bEnablePreviousTangentRecalculation;               // 0x60(0x1)
-	bool                                                         bTangentRecalculationEveryFrame;                   // 0x60(0x1)
-	bool                                                         bSpawnInitialParticle;                             // 0x60(0x1)
-	char                                                         RenderAxis;                                        // 0x64(0x1)
-	float                                                        TangentSpawningScalar;                             // 0x68(0x4)
-	bool                                                         bRenderGeometry;                                   // 0x6c(0x1)
-	bool                                                         bRenderSpawnPoints;                                // 0x6c(0x1)
-	bool                                                         bRenderTangents;                                   // 0x6c(0x1)
-	bool                                                         bRenderTessellation;                               // 0x6c(0x1)
-	float                                                        TilingDistance;                                    // 0x70(0x4)
-	float                                                        DistanceTessellationStepSize;                      // 0x74(0x4)
-	bool                                                         bEnableTangentDiffInterpScale;                     // 0x78(0x1)
-	float                                                        TangentTessellationScalar;                         // 0x7c(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
-class ParticleModuleLocationEmitterDirect: public ParticleModuleLocationBase
-{
-public:
-	struct FName                                                 EmitterName;                                       // 0x50(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
-class ParticleModuleVectorFieldRotationRate: public ParticleModuleVectorFieldBase
-{
-public:
-	struct Vector                                                RotationRate;                                      // 0x50(0xc)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class SoundBase: public Object
-{
-public:
-	class SoundClass*                                            SoundClassObject;                                  // 0x28(0x8)
-	bool                                                         bDebug;                                            // 0x30(0x1)
-	char                                                         MaxConcurrentResolutionRule;                       // 0x34(0x1)
-	int                                                          MaxConcurrentPlayCount;                            // 0x38(0x4)
-	float                                                        Duration;                                          // 0x3c(0x4)
-	class SoundAttenuation*                                      AttenuationSettings;                               // 0x40(0x8)
-};
-
-
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class SoundClass: public Object
-{
-public:
-	struct SoundClassProperties                                  Properties;                                        // 0x28(0x24)
-	TArray<class SoundClass*>                                    ChildClasses;                                      // 0x50(0x10)
-	TArray<struct PassiveSoundMixModifier>                       PassiveSoundMixModifiers;                          // 0x60(0x10)
-	class SoundClass*                                            ParentClass;                                       // 0x70(0x8)
-};
-
-
-// Size 0xc8 (Full Size[0xf0] - InheritedSize[0x28]
-class MaterialParameterCollectionInstance: public Object
-{
-public:
-	class MaterialParameterCollection*                           Collection;                                        // 0x30(0x8)
-	class World*                                                 World;                                             // 0x38(0x8)
-};
-
-
-// Size 0x80 (Full Size[0x448] - InheritedSize[0x3c8]
-class PlayerState: public Info
-{
-public:
-	float                                                        Score;                                             // 0x3c8(0x4)
-	char                                                         Ping;                                              // 0x3cc(0x1)
-	struct FString                                               PlayerName;                                        // 0x3d0(0x10)
-	int                                                          PlayerId;                                          // 0x3f0(0x4)
-	bool                                                         bIsSpectator;                                      // 0x3f4(0x1)
-	bool                                                         bOnlySpectator;                                    // 0x3f4(0x1)
-	bool                                                         bIsABot;                                           // 0x3f4(0x1)
-	bool                                                         bIsInactive;                                       // 0x3f4(0x1)
-	bool                                                         bFromPreviousLevel;                                // 0x3f4(0x1)
-	class UClass*                                                EngineMessageClass;                                // 0x3f8(0x8)
-	struct UniqueNetIdRepl                                       UniqueId;                                          // 0x418(0x18)
-};
-
-
-// Size 0x80 (Full Size[0xb0] - InheritedSize[0x30]
-class CurveFloat: public CurveBase
-{
-public:
-	struct RichCurve                                             FloatCurve;                                        // 0x30(0x78)
-	bool                                                         bIsEventCurve;                                     // 0xa8(0x1)
-};
-
-
-// Size 0x1e0 (Full Size[0x210] - InheritedSize[0x30]
-class CurveLinearColor: public CurveBase
-{
-public:
-	struct RichCurve                                             FloatCurves;                                       // 0x30(0x78)
-};
-
-
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class SoundMix: public Object
-{
-public:
-	bool                                                         bApplyEQ;                                          // 0x28(0x1)
-	float                                                        EQPriority;                                        // 0x2c(0x4)
-	struct AudioEQEffect                                         EQSettings;                                        // 0x30(0x28)
-	TArray<struct SoundClassAdjuster>                            SoundClassEffects;                                 // 0x58(0x10)
-	float                                                        InitialDelay;                                      // 0x68(0x4)
-	float                                                        FadeInTime;                                        // 0x6c(0x4)
-	float                                                        Duration;                                          // 0x70(0x4)
-	float                                                        FadeOutTime;                                       // 0x74(0x4)
-};
-
-
-// Size 0x90 (Full Size[0xb8] - InheritedSize[0x28]
-class WorldComposition: public Object
-{
-public:
-	TArray<class LevelStreaming*>                                TilesStreaming;                                    // 0x98(0x10)
-	double                                                       TilesStreamingTimeThreshold;                       // 0xa8(0x8)
-	bool                                                         bLoadAllTilesDuringCinematic;                      // 0xb0(0x1)
-	bool                                                         bRebaseOriginIn3DSpace;                            // 0xb1(0x1)
-	float                                                        RebaseOriginDistance;                              // 0xb4(0x4)
-};
-
-
-// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
-class ParticleModuleCameraOffset: public ParticleModuleCameraBase
-{
-public:
-	struct RawDistributionFloat                                  CameraOffset;                                      // 0x50(0x38)
-	bool                                                         bSpawnTimeOnly;                                    // 0x88(0x1)
-	char                                                         UpdateMethod;                                      // 0x8c(0x1)
-};
-
-
-// Size 0x88 (Full Size[0xd8] - InheritedSize[0x50]
-class ParticleModuleAttractorLine: public ParticleModuleAttractorBase
-{
-public:
-	struct Vector                                                EndPoint0;                                         // 0x50(0xc)
-	struct Vector                                                EndPoint1;                                         // 0x5c(0xc)
-	struct RawDistributionFloat                                  Range;                                             // 0x68(0x38)
-	struct RawDistributionFloat                                  Strength;                                          // 0xa0(0x38)
-};
-
-
-// Size 0x2a0 (Full Size[0x2c8] - InheritedSize[0x28]
-class BodySetup: public Object
-{
-public:
-	struct KAggregateGeom                                        AggGeom;                                           // 0x28(0x48)
-	struct FName                                                 BoneName;                                          // 0x70(0x8)
-	char                                                         PhysicsType;                                       // 0x78(0x1)
-	bool                                                         bCookComplexGeometryOnServer;                      // 0x7c(0x1)
-	bool                                                         bConsiderForBounds;                                // 0x7c(0x1)
-	bool                                                         bMeshCollideAll;                                   // 0x7c(0x1)
-	bool                                                         bDoubleSidedGeometry;                              // 0x7c(0x1)
-	bool                                                         bGenerateNonMirroredCollision;                     // 0x7c(0x1)
-	bool                                                         bSharedCookedData;                                 // 0x7c(0x1)
-	bool                                                         bGenerateMirroredCollision;                        // 0x7c(0x1)
-	class PhysicalMaterial*                                      PhysMaterial;                                      // 0x80(0x8)
-	char                                                         CollisionReponse;                                  // 0x88(0x1)
-	char                                                         CollisionTraceFlag;                                // 0x89(0x1)
-	struct BodyInstance                                          DefaultInstance;                                   // 0x90(0x180)
-	struct WalkableSlopeOverride                                 WalkableSlopeOverride;                             // 0x210(0x8)
-	struct Vector                                                BuildScale3D;                                      // 0x218(0xc)
-};
-
-
-// Size 0x78 (Full Size[0xa0] - InheritedSize[0x28]
-class DestructibleFractureSettings: public Object
-{
-public:
-	int                                                          CellSiteCount;                                     // 0x28(0x4)
-	struct FractureMaterial                                      FractureMaterialDesc;                              // 0x2c(0x24)
-	int                                                          RandomSeed;                                        // 0x50(0x4)
-	TArray<struct Vector>                                        VoronoiSites;                                      // 0x58(0x10)
-	int                                                          OriginalSubmeshCount;                              // 0x68(0x4)
-	TArray<class MaterialInterface*>                             Materials;                                         // 0x70(0x10)
-	TArray<struct DestructibleChunkParameters>                   ChunkParameters;                                   // 0x80(0x10)
-	TArray<String>                                               MaterialNames;                                     // 0x90(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class InterpTrackInstSound: public InterpTrackInst
-{
-public:
-	float                                                        LastUpdatePosition;                                // 0x28(0x4)
-	class AudioComponent*                                        PlayAudioComp;                                     // 0x30(0x8)
-};
-
-
-// Size 0xe0 (Full Size[0x130] - InheritedSize[0x50]
-class ParticleModuleLocationPrimitiveTriangle: public ParticleModuleLocationBase
-{
-public:
-	struct RawDistributionVector                                 StartOffset;                                       // 0x50(0x38)
-	struct RawDistributionFloat                                  Height;                                            // 0x88(0x38)
-	struct RawDistributionFloat                                  Angle;                                             // 0xc0(0x38)
-	struct RawDistributionFloat                                  Thickness;                                         // 0xf8(0x38)
-};
-
-
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class PhysicalMaterial: public Object
-{
-public:
-	float                                                        Friction;                                          // 0x28(0x4)
-	char                                                         FrictionCombineMode;                               // 0x2c(0x1)
-	bool                                                         bOverrideFrictionCombineMode;                      // 0x2d(0x1)
-	float                                                        Restitution;                                       // 0x30(0x4)
-	char                                                         RestitutionCombineMode;                            // 0x34(0x1)
-	bool                                                         bOverrideRestitutionCombineMode;                   // 0x35(0x1)
-	float                                                        Density;                                           // 0x38(0x4)
-	float                                                        RaiseMassToPower;                                  // 0x3c(0x4)
-	float                                                        DestructibleDamageThresholdScale;                  // 0x40(0x4)
-	class PhysicalMaterialPropertyBase*                          PhysicalMaterialProperty;                          // 0x48(0x8)
-	char                                                         SurfaceType;                                       // 0x50(0x1)
-};
-
-
-// Size 0x2e0 (Full Size[0x308] - InheritedSize[0x28]
-class AutomationTestSettings: public Object
-{
-public:
-	struct FilePath                                              AutomationTestmap;                                 // 0x28(0x10)
-	TArray<struct EditorMapPerformanceTestDefinition>            EditorPerformanceTestMaps;                         // 0x38(0x10)
-	struct BuildPromotionTestSettings                            BuildPromotionTest;                                // 0x48(0x210)
-	struct MaterialEditorPromotionSettings                       MaterialEditorPromotionTest;                       // 0x258(0x30)
-	struct ParticleEditorPromotionSettings                       ParticleEditorPromotionTest;                       // 0x288(0x10)
-	TArray<String>                                               EngineTestModules;                                 // 0x298(0x10)
-	TArray<String>                                               EditorTestModules;                                 // 0x2a8(0x10)
-	TArray<String>                                               TestLevelFolders;                                  // 0x2b8(0x10)
-	TArray<struct OpenTestAsset>                                 TestAssetsToOpen;                                  // 0x2c8(0x10)
-	TArray<struct ExternalToolDefinition>                        ExternalTools;                                     // 0x2d8(0x10)
-	TArray<struct EditorImportExportTestDefinition>              ImportExportTestDefinitions;                       // 0x2e8(0x10)
-	TArray<struct LaunchOnTestSettings>                          LaunchOnSettings;                                  // 0x2f8(0x10)
+	char                                                         InputMode;                                         // 0x70(0x1)
+	struct ExpressionInput                                       Input;                                             // 0x78(0x38)
+	struct ExpressionInput                                       OffsetFraction;                                    // 0xb0(0x38)
+	struct Vector2D                                              ConstInput;                                        // 0xe8(0x8)
 };
 
 
 // Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class SoundNodeDistanceCrossFade: public SoundNode
+class SoundNodeMixer: public SoundNode
 {
 public:
-	TArray<struct DistanceDatum>                                 CrossFadeInput;                                    // 0x38(0x10)
+	TArray<float>                                                InputVolume;                                       // 0x38(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class CalmWaterZone: public Actor
+{
+public:
+	class CalmWaterComponent*                                    CalmWaterComponent;                                // 0x3c8(0x8)
+};
+
+
+// Size 0x40 (Full Size[0x88] - InheritedSize[0x48]
+class VectorFieldAnimated: public VectorField
+{
+public:
+	class Texture2D*                                             Texture;                                           // 0x48(0x8)
+	char                                                         ConstructionOp;                                    // 0x50(0x1)
+	int                                                          VolumeSizeX;                                       // 0x54(0x4)
+	int                                                          VolumeSizeY;                                       // 0x58(0x4)
+	int                                                          VolumeSizeZ;                                       // 0x5c(0x4)
+	int                                                          SubImagesX;                                        // 0x60(0x4)
+	int                                                          SubImagesY;                                        // 0x64(0x4)
+	int                                                          FrameCount;                                        // 0x68(0x4)
+	float                                                        FramesPerSecond;                                   // 0x6c(0x4)
+	bool                                                         bLoop;                                             // 0x70(0x1)
+	class VectorFieldStatic*                                     NoiseField;                                        // 0x78(0x8)
+	float                                                        NoiseScale;                                        // 0x80(0x4)
+	float                                                        NoiseMax;                                          // 0x84(0x4)
+};
+
+
+// Size 0x78 (Full Size[0x440] - InheritedSize[0x3c8]
+class Pawn: public Actor
+{
+public:
+	bool                                                         bUseControllerRotationPitch;                       // 0x3d0(0x1)
+	bool                                                         bUseControllerRotationYaw;                         // 0x3d0(0x1)
+	bool                                                         bUseControllerRotationRoll;                        // 0x3d0(0x1)
+	bool                                                         bCanAffectNavigationGeneration;                    // 0x3d0(0x1)
+	float                                                        BaseEyeHeight;                                     // 0x3d4(0x4)
+	char                                                         AutoPossessPlayer;                                 // 0x3d8(0x1)
+	char                                                         AutoPossessAI;                                     // 0x3d9(0x1)
+	class UClass*                                                AIControllerClass;                                 // 0x3e0(0x8)
+	class PlayerState*                                           PlayerState;                                       // 0x3e8(0x8)
+	char                                                         RemoteViewPitch;                                   // 0x3f0(0x1)
+	class Controller*                                            LastHitBy;                                         // 0x3f8(0x8)
+	class Controller*                                            Controller;                                        // 0x400(0x8)
+	struct Vector                                                ControlInputVector;                                // 0x420(0xc)
+	struct Vector                                                LastControlInputVector;                            // 0x42c(0xc)
+};
+
+
+// Size 0x1898 (Full Size[0x1c60] - InheritedSize[0x3c8]
+class PlayerCameraManager: public Actor
+{
+public:
+	class PlayerController*                                      PCOwner;                                           // 0x3c8(0x8)
+	class SceneComponent*                                        TransformComponent;                                // 0x3d0(0x8)
+	float                                                        DefaultFOV;                                        // 0x3e0(0x4)
+	float                                                        DefaultOrthoWidth;                                 // 0x3e8(0x4)
+	float                                                        DefaultAspectRatio;                                // 0x3f0(0x4)
+	struct CameraCacheEntry                                      CameraCache;                                       // 0x440(0x5b0)
+	struct CameraCacheEntry                                      LastFrameCameraCache;                              // 0x9f0(0x5b0)
+	struct TViewTarget                                           ViewTarget;                                        // 0xfa0(0x5c0)
+	struct TViewTarget                                           PendingViewTarget;                                 // 0x1560(0x5c0)
+	TArray<class CameraModifier*>                                ModifierList;                                      // 0x1b50(0x10)
+	TArray<class Class*>                                         DefaultModifiers;                                  // 0x1b60(0x10)
+	float                                                        FreeCamDistance;                                   // 0x1b70(0x4)
+	struct Vector                                                FreeCamOffset;                                     // 0x1b74(0xc)
+	struct Vector                                                ViewTargetOffset;                                  // 0x1b80(0xc)
+	TArray<class EmitterCameraLensEffectBase*>                   CameraLensEffects;                                 // 0x1ba0(0x10)
+	class CameraModifier_CameraShake*                            CachedCameraShakeMod;                              // 0x1bb0(0x8)
+	class CameraAnimInst*                                        AnimInstPool;                                      // 0x1bb8(0x8)
+	TArray<struct PostProcessSettings>                           PostProcessBlendCache;                             // 0x1bf8(0x10)
+	TArray<class CameraAnimInst*>                                ActiveAnims;                                       // 0x1c18(0x10)
+	TArray<class CameraAnimInst*>                                FreeAnims;                                         // 0x1c28(0x10)
+	class CameraActor*                                           AnimCameraActor;                                   // 0x1c38(0x8)
+	bool                                                         bIsOrthographic;                                   // 0x1c40(0x1)
+	bool                                                         bUseClientSideCameraUpdates;                       // 0x1c40(0x1)
+	bool                                                         bFollowHmdOrientation;                             // 0x1c41(0x1)
+	float                                                        ViewPitchMin;                                      // 0x1c44(0x4)
+	float                                                        ViewPitchMax;                                      // 0x1c48(0x4)
+	float                                                        ViewYawMin;                                        // 0x1c4c(0x4)
+	float                                                        ViewYawMax;                                        // 0x1c50(0x4)
+	float                                                        ViewRollMin;                                       // 0x1c54(0x4)
+	float                                                        ViewRollMax;                                       // 0x1c58(0x4)
+};
+
+
+// Size 0x28 (Full Size[0x98] - InheritedSize[0x70]
+class MaterialExpressionComment: public MaterialExpression
+{
+public:
+	int                                                          SizeX;                                             // 0x70(0x4)
+	int                                                          SizeY;                                             // 0x74(0x4)
+	struct FString                                               Text;                                              // 0x78(0x10)
+	struct LinearColor                                           CommentColor;                                      // 0x88(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class SoundNodeDoppler: public SoundNode
+{
+public:
+	float                                                        DopplerIntensity;                                  // 0x38(0x4)
+};
+
+
+// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
+class InGameAdManager: public PlatformInterfaceBase
+{
+public:
+	bool                                                         bShouldPauseWhileAdOpen;                           // 0x38(0x1)
+	TArray<uintptr_t>                                            ClickedBannerDelegates;                            // 0x40(0x10)
+	TArray<uintptr_t>                                            ClosedAdDelegates;                                 // 0x50(0x10)
+};
+
+
+// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
+class MaterialExpressionPower: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Base;                                              // 0x70(0x38)
+	struct ExpressionInput                                       Exponent;                                          // 0xa8(0x38)
+	float                                                        ConstExponent;                                     // 0xe0(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class VectorFieldVolume: public Actor
+{
+public:
+	class VectorFieldComponent*                                  VectorFieldComponent;                              // 0x3c8(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x1c8] - InheritedSize[0x1a8]
+class ParticleModuleRotation_Seeded: public ParticleModuleRotation
+{
+public:
+	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x1a8(0x20)
+};
+
+
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionFloor: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
+};
+
+
+// Size 0x30 (Full Size[0x2f8] - InheritedSize[0x2c8]
+class BodySetup2D: public BodySetup
+{
+public:
+	struct AggregateGeometry2D                                   AggGeom2D;                                         // 0x2c8(0x30)
+};
+
+
+// Size 0xe8 (Full Size[0x158] - InheritedSize[0x70]
+class MaterialExpressionRotateAboutAxis: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       NormalizedRotationAxis;                            // 0x70(0x38)
+	struct ExpressionInput                                       RotationAngle;                                     // 0xa8(0x38)
+	struct ExpressionInput                                       PivotPoint;                                        // 0xe0(0x38)
+	struct ExpressionInput                                       Position;                                          // 0x118(0x38)
+	float                                                        Period;                                            // 0x150(0x4)
+};
+
+
+// Size 0x18 (Full Size[0x68] - InheritedSize[0x50]
+class ParticleModuleParametersOverX: public ParticleModule
+{
+public:
+	float                                                        GroupScales;                                       // 0x50(0x4)
+};
+
+
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionLogarithm2: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       X;                                                 // 0x70(0x38)
+};
+
+
+// Size 0x50 (Full Size[0x118] - InheritedSize[0xc8]
+class ApplicationLifecycleComponent: public ActorComponent
+{
+public:
+	multicastinlinedelegate                                      ApplicationWillDeactivateDelegate;                 // 0xc8(0x10)
+	multicastinlinedelegate                                      ApplicationHasReactivatedDelegate;                 // 0xd8(0x10)
+	multicastinlinedelegate                                      ApplicationWillEnterBackgroundDelegate;            // 0xe8(0x10)
+	multicastinlinedelegate                                      ApplicationHasEnteredForegroundDelegate;           // 0xf8(0x10)
+	multicastinlinedelegate                                      ApplicationWillTerminateDelegate;                  // 0x108(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x3f8] - InheritedSize[0x3c8]
+class SkeletalMeshActor: public Actor
+{
+public:
+	bool                                                         bShouldDoAnimNotifies;                             // 0x3d0(0x1)
+	bool                                                         bWakeOnLevelStart;                                 // 0x3d0(0x1)
+	class SkeletalMeshComponent*                                 SkeletalMeshComponent;                             // 0x3d8(0x8)
+	class SkeletalMesh*                                          ReplicatedMesh;                                    // 0x3e0(0x8)
+	class PhysicsAsset*                                          ReplicatedPhysAsset;                               // 0x3e8(0x8)
+};
+
+
+// Size 0x38 (Full Size[0x400] - InheritedSize[0x3c8]
+class LODActor: public Actor
+{
+public:
+	class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x3c8(0x8)
+	TArray<class Actor*>                                         SubActors;                                         // 0x3d0(0x10)
+	float                                                        LODDrawDistance;                                   // 0x3e0(0x4)
+	int                                                          LodLevel;                                          // 0x3e4(0x4)
+	TArray<class Object*>                                        SubObjects;                                        // 0x3e8(0x10)
+};
+
+
+// Size 0x20 (Full Size[0x158] - InheritedSize[0x138]
+class ParticleModuleLight_Seeded: public ParticleModuleLight
+{
+public:
+	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x138(0x20)
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class ActorWithComponentWithDerivedTestInterface: public Actor
+{
+public:
+	class ComponentWithDerivedTestInterface*                     ComponentWithDerivedTestInterface;                 // 0x3c8(0x8)
+};
+
+
+// Size 0xd0 (Full Size[0x498] - InheritedSize[0x3c8]
+class NavigationTestingActor: public Actor
+{
+public:
+	class CapsuleComponent*                                      CapsuleComponent;                                  // 0x3d8(0x8)
+	class NavigationInvokerComponent*                            InvokerComponent;                                  // 0x3e0(0x8)
+	bool                                                         bActAsNavigationInvoker;                           // 0x3e8(0x1)
+	struct NavAgentProperties                                    NavAgentProps;                                     // 0x3ec(0x30)
+	struct Vector                                                QueryingExtent;                                    // 0x41c(0xc)
+	class NavigationData*                                        MyNavData;                                         // 0x428(0x8)
+	struct Vector                                                ProjectedLocation;                                 // 0x430(0xc)
+	bool                                                         bProjectedLocationValid;                           // 0x43c(0x1)
+	bool                                                         bSearchStart;                                      // 0x43c(0x1)
+	bool                                                         bUseHierarchicalPathfinding;                       // 0x43c(0x1)
+	bool                                                         bGatherDetailedInfo;                               // 0x43c(0x1)
+	bool                                                         bShowNodePool;                                     // 0x43c(0x1)
+	bool                                                         bShowBestPath;                                     // 0x43c(0x1)
+	bool                                                         bShowDiffWithPreviousStep;                         // 0x43c(0x1)
+	bool                                                         bShouldBeVisibleInGame;                            // 0x43c(0x1)
+	char                                                         CostDisplayMode;                                   // 0x440(0x1)
+	struct Vector2D                                              TextCanvasOffset;                                  // 0x444(0x8)
+	bool                                                         bPathExist;                                        // 0x44c(0x1)
+	bool                                                         bPathIsPartial;                                    // 0x44c(0x1)
+	bool                                                         bPathSearchOutOfNodes;                             // 0x44c(0x1)
+	float                                                        PathfindingTime;                                   // 0x450(0x4)
+	float                                                        PathCost;                                          // 0x454(0x4)
+	int                                                          PathfindingSteps;                                  // 0x458(0x4)
+	class NavigationTestingActor*                                OtherActor;                                        // 0x460(0x8)
+	class UClass*                                                FilterClass;                                       // 0x468(0x8)
+	int                                                          ShowStepIndex;                                     // 0x470(0x4)
+	float                                                        OffsetFromCornersDistance;                         // 0x474(0x4)
+};
+
+
+// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
+class MaterialExpressionComponentMask: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
+	bool                                                         R;                                                 // 0xa8(0x1)
+	bool                                                         G;                                                 // 0xa8(0x1)
+	bool                                                         B;                                                 // 0xa8(0x1)
+	bool                                                         A;                                                 // 0xa8(0x1)
+};
+
+
+// Size 0x10 (Full Size[0x80] - InheritedSize[0x70]
+class MaterialExpressionConstant3Vector: public MaterialExpression
+{
+public:
+	struct LinearColor                                           Constant;                                          // 0x70(0x10)
 };
 
 
@@ -3863,13 +4205,85 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
-class DistributionVectorConstant: public DistributionVector
+// Size 0x1f8 (Full Size[0x260] - InheritedSize[0x68]
+class ActorChannel: public Channel
 {
 public:
-	struct Vector                                                Constant;                                          // 0x38(0xc)
-	bool                                                         bLockAxes;                                         // 0x44(0x1)
-	char                                                         LockedAxes;                                        // 0x48(0x1)
+	class Actor*                                                 Actor;                                             // 0x68(0x8)
+	TArray<class Object*>                                        ObjectsRequiredForQueuedBunches;                   // 0x158(0x10)
+};
+
+
+// Size 0x118 (Full Size[0x188] - InheritedSize[0x70]
+class MaterialExpressionFeatureLevelSwitch: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Default;                                           // 0x70(0x38)
+	struct ExpressionInput                                       Inputs;                                            // 0xa8(0x38)
+};
+
+
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionLocalDisturbanceTexture: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Coordinates;                                       // 0x70(0x38)
+};
+
+
+// Size 0x8 (Full Size[0x148] - InheritedSize[0x140]
+class TextureProxy: public Texture
+{
+public:
+	class Texture*                                               Texture;                                           // 0x140(0x8)
+};
+
+
+// Size 0x70 (Full Size[0xe0] - InheritedSize[0x70]
+class MaterialExpressionIfShadowPass: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Shadow;                                            // 0x70(0x38)
+	struct ExpressionInput                                       NotShadow;                                         // 0xa8(0x38)
+};
+
+
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionSquareRoot: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
+};
+
+
+// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
+class InterpTrackInstBoolProp: public InterpTrackInstProperty
+{
+public:
+	class BoolProperty*                                          BoolProperty;                                      // 0x40(0x8)
+	bool                                                         ResetBool;                                         // 0x48(0x1)
+};
+
+
+// Size 0x68 (Full Size[0x290] - InheritedSize[0x228]
+class AnimBlueprintGeneratedClass: public BlueprintGeneratedClass
+{
+public:
+	TArray<struct BakedAnimationStateMachine>                    BakedStateMachines;                                // 0x228(0x10)
+	class Skeleton*                                              TargetSkeleton;                                    // 0x238(0x8)
+	TArray<struct AnimNotifyEvent>                               AnimNotifies;                                      // 0x240(0x10)
+	int                                                          RootAnimNodeIndex;                                 // 0x250(0x4)
+	TArray<struct AnimGroupInfo>                                 Groups;                                            // 0x270(0x10)
+	TArray<struct Name>                                          SkeletonSlotNames;                                 // 0x280(0x10)
+};
+
+
+// Size 0x20 (Full Size[0xe8] - InheritedSize[0xc8]
+class PlatformEventsComponent: public ActorComponent
+{
+public:
+	multicastinlinedelegate                                      PlatformChangedToLaptopModeDelegate;               // 0xc8(0x10)
+	multicastinlinedelegate                                      PlatformChangedToTabletModeDelegate;               // 0xd8(0x10)
 };
 
 
@@ -3888,71 +4302,231 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
-class ParticleModuleOrbitBase: public ParticleModule
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class SoundNodeGroupControl: public SoundNode
 {
 public:
-	bool                                                         bUseEmitterTime;                                   // 0x50(0x1)
-};
-
-
-// Size 0xb8 (Full Size[0x128] - InheritedSize[0x70]
-class MaterialExpressionFresnel: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       ExponentIn;                                        // 0x70(0x38)
-	float                                                        Exponent;                                          // 0xa8(0x4)
-	struct ExpressionInput                                       BaseReflectFractionIn;                             // 0xb0(0x38)
-	float                                                        BaseReflectFraction;                               // 0xe8(0x4)
-	struct ExpressionInput                                       Normal;                                            // 0xf0(0x38)
-};
-
-
-// Size 0x578 (Full Size[0x5e8] - InheritedSize[0x70]
-class MaterialExpressionMakeMaterialAttributes: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       BaseColor;                                         // 0x70(0x38)
-	struct ExpressionInput                                       Metallic;                                          // 0xa8(0x38)
-	struct ExpressionInput                                       Specular;                                          // 0xe0(0x38)
-	struct ExpressionInput                                       Roughness;                                         // 0x118(0x38)
-	struct ExpressionInput                                       EmissiveColor;                                     // 0x150(0x38)
-	struct ExpressionInput                                       Opacity;                                           // 0x188(0x38)
-	struct ExpressionInput                                       OpacityMask;                                       // 0x1c0(0x38)
-	struct ExpressionInput                                       Normal;                                            // 0x1f8(0x38)
-	struct ExpressionInput                                       WorldPositionOffset;                               // 0x230(0x38)
-	struct ExpressionInput                                       WorldDisplacement;                                 // 0x268(0x38)
-	struct ExpressionInput                                       TessellationMultiplier;                            // 0x2a0(0x38)
-	struct ExpressionInput                                       SubsurfaceColor;                                   // 0x2d8(0x38)
-	struct ExpressionInput                                       ClearCoat;                                         // 0x310(0x38)
-	struct ExpressionInput                                       ClearCoatRoughness;                                // 0x348(0x38)
-	struct ExpressionInput                                       AmbientOcclusion;                                  // 0x380(0x38)
-	struct ExpressionInput                                       Refraction;                                        // 0x3b8(0x38)
-	struct ExpressionInput                                       CustomizedUVs;                                     // 0x3f0(0x38)
-	struct ExpressionInput                                       PixelDepthOffset;                                  // 0x5b0(0x38)
+	TArray<int>                                                  GroupSizes;                                        // 0x38(0x10)
 };
 
 
 // Size 0x80 (Full Size[0xf0] - InheritedSize[0x70]
-class MaterialExpressionSceneColor: public MaterialExpression
+class MaterialExpressionDesaturation: public MaterialExpression
 {
 public:
-	char                                                         InputMode;                                         // 0x70(0x1)
-	struct ExpressionInput                                       Input;                                             // 0x78(0x38)
-	struct ExpressionInput                                       OffsetFraction;                                    // 0xb0(0x38)
-	struct Vector2D                                              ConstInput;                                        // 0xe8(0x8)
+	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
+	struct ExpressionInput                                       Fraction;                                          // 0xa8(0x38)
+	struct LinearColor                                           LuminanceFactors;                                  // 0xe0(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x60] - InheritedSize[0x30]
+class AnimNotifyState_TimedParticleEffect: public AnimNotifyState
+{
+public:
+	class ParticleSystem*                                        PSTemplate;                                        // 0x30(0x8)
+	struct FName                                                 SocketName;                                        // 0x38(0x8)
+	struct Vector                                                LocationOffset;                                    // 0x40(0xc)
+	struct Rotator                                               RotationOffset;                                    // 0x4c(0xc)
+	bool                                                         bOwnerOnlySee;                                     // 0x58(0x1)
+	bool                                                         bOwnerNoSee;                                       // 0x59(0x1)
+	bool                                                         bDestroyAtEnd;                                     // 0x5a(0x1)
+	bool                                                         bWorldOwnedEffect;                                 // 0x5b(0x1)
+};
+
+
+// Size 0x38 (Full Size[0x400] - InheritedSize[0x3c8]
+class Brush: public Actor
+{
+public:
+	char                                                         BrushType;                                         // 0x3c8(0x1)
+	struct Color                                                 BrushColor;                                        // 0x3cc(0x4)
+	int                                                          PolyFlags;                                         // 0x3d0(0x4)
+	bool                                                         bColored;                                          // 0x3d4(0x1)
+	bool                                                         bSolidWhenSelected;                                // 0x3d4(0x1)
+	bool                                                         bPlaceableFromClassBrowser;                        // 0x3d4(0x1)
+	bool                                                         bNotForClientOrServer;                             // 0x3d4(0x1)
+	class Model*                                                 Brush;                                             // 0x3d8(0x8)
+	class BrushComponent*                                        BrushComponent;                                    // 0x3e0(0x8)
+	bool                                                         bInManipulation;                                   // 0x3e8(0x1)
+	TArray<struct GeomSelection>                                 SavedSelections;                                   // 0x3f0(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class SoundNodeSwitch: public SoundNode
+{
+public:
+	struct FName                                                 IntParameterName;                                  // 0x38(0x8)
+};
+
+
+// Size 0x48 (Full Size[0x110] - InheritedSize[0xc8]
+class MovementComponent: public ActorComponent
+{
+public:
+	class SceneComponent*                                        UpdatedComponent;                                  // 0xc8(0x8)
+	class PrimitiveComponent*                                    UpdatedPrimitive;                                  // 0xd0(0x8)
+	struct Vector                                                Velocity;                                          // 0xdc(0xc)
+	bool                                                         bConstrainToPlane;                                 // 0xe8(0x1)
+	bool                                                         bSnapToPlaneAtStart;                               // 0xe8(0x1)
+	char                                                         PlaneConstraintAxisSetting;                        // 0xec(0x1)
+	struct Vector                                                PlaneConstraintNormal;                             // 0xf0(0xc)
+	struct Vector                                                PlaneConstraintOrigin;                             // 0xfc(0xc)
+	bool                                                         bUpdateOnlyIfRendered;                             // 0x108(0x1)
+	bool                                                         bAutoUpdateTickRegistration;                       // 0x108(0x1)
+	bool                                                         bAutoRegisterUpdatedComponent;                     // 0x108(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
+class ParticleModuleVelocityBase: public ParticleModule
+{
+public:
+	bool                                                         bInWorldSpace;                                     // 0x50(0x1)
+	bool                                                         bApplyOwnerScale;                                  // 0x50(0x1)
+};
+
+
+// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
+class DistributionFloatConstantCurve: public DistributionFloat
+{
+public:
+	struct InterpCurveFloat                                      ConstantCurve;                                     // 0x38(0x18)
+};
+
+
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
+class ParticleModuleEventReceiverKillParticles: public ParticleModuleEventReceiverBase
+{
+public:
+	bool                                                         bStopSpawning;                                     // 0x60(0x1)
+};
+
+
+// Size 0x20 (Full Size[0xa8] - InheritedSize[0x88]
+class ParticleModuleMeshRotationRate_Seeded: public ParticleModuleMeshRotationRate
+{
+public:
+	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x88(0x20)
+};
+
+
+// Size 0x58 (Full Size[0x198] - InheritedSize[0x140]
+class Texture2D: public Texture
+{
+public:
+	int                                                          RequestedMips;                                     // 0x140(0x4)
+	int                                                          ResidentMips;                                      // 0x144(0x4)
+	int                                                          StreamingIndex;                                    // 0x148(0x4)
+	int                                                          FirstResourceMemMip;                               // 0x14c(0x4)
+	struct IntPoint                                              ImportedSize;                                      // 0x154(0x8)
+	float                                                        ForceMipLevelsToBeResidentTimestamp;               // 0x15c(0x4)
+	bool                                                         bTemporarilyDisableStreaming;                      // 0x160(0x1)
+	bool                                                         bIsStreamable;                                     // 0x160(0x1)
+	bool                                                         bHasCancelationPending;                            // 0x160(0x1)
+	bool                                                         bForceMiplevelsToBeResident;                       // 0x160(0x1)
+	bool                                                         bGlobalForceMipLevelsToBeResident;                 // 0x160(0x1)
+	char                                                         AddressX;                                          // 0x164(0x1)
+	char                                                         AddressY;                                          // 0x165(0x1)
+	int                                                          MinimumLoadedMips;                                 // 0x168(0x4)
+};
+
+
+// Size 0x18 (Full Size[0x60] - InheritedSize[0x48]
+class CameraModifier_CameraShake: public CameraModifier
+{
+public:
+	TArray<class CameraShake*>                                   ActiveShakes;                                      // 0x48(0x10)
+	float                                                        SplitScreenShakeScale;                             // 0x58(0x4)
+};
+
+
+// Size 0xa8 (Full Size[0x118] - InheritedSize[0x70]
+class MaterialExpressionGIReplace: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Default;                                           // 0x70(0x38)
+	struct ExpressionInput                                       StaticIndirect;                                    // 0xa8(0x38)
+	struct ExpressionInput                                       DynamicIndirect;                                   // 0xe0(0x38)
+};
+
+
+// Size 0x150 (Full Size[0x218] - InheritedSize[0xc8]
+class ParticleModuleLocationPrimitiveSphere: public ParticleModuleLocationPrimitiveBase
+{
+public:
+	struct RawDistributionFloat                                  StartRadius;                                       // 0xc8(0x38)
+	struct RawDistributionFloat                                  AdditionalStartRadiuses;                           // 0x100(0x38)
+	bool                                                         StartRadiusUseGroupAForAll;                        // 0x1e0(0x1)
+	struct Vector2D                                              PositiveXAngleRange;                               // 0x1e4(0x8)
+	struct Vector2D                                              NegativeXAngleRange;                               // 0x1ec(0x8)
+	struct Vector2D                                              PositiveYAngleRange;                               // 0x1f4(0x8)
+	struct Vector2D                                              NegativeYAngleRange;                               // 0x1fc(0x8)
+	struct Vector2D                                              PositiveZAngleRange;                               // 0x204(0x8)
+	struct Vector2D                                              NegativeZAngleRange;                               // 0x20c(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class MergedCollisionActor: public Actor
+{
+public:
+	class MergedCollisionComponent*                              MergedCollisionComponent;                          // 0x3c8(0x8)
+};
+
+
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionCausticTexture: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Coordinates;                                       // 0x70(0x38)
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class LevelBounds: public Actor
+{
+public:
+	bool                                                         bAutoUpdateBounds;                                 // 0x3c8(0x1)
+};
+
+
+// Size 0x20 (Full Size[0x90] - InheritedSize[0x70]
+class MaterialExpressionCollectionParameter: public MaterialExpression
+{
+public:
+	class MaterialParameterCollection*                           Collection;                                        // 0x70(0x8)
+	struct FName                                                 ParameterName;                                     // 0x78(0x8)
+	struct Guid                                                  ParameterId;                                       // 0x80(0x10)
+};
+
+
+// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
+class MaterialExpressionTransformPosition: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
+	char                                                         TransformSourceType;                               // 0xa8(0x1)
+	char                                                         TransformType;                                     // 0xa9(0x1)
 };
 
 
 // Size 0x10 (Full Size[0x80] - InheritedSize[0x70]
-class MaterialExpressionTextureCoordinate: public MaterialExpression
+class MaterialExpressionConstant4Vector: public MaterialExpression
 {
 public:
-	int                                                          CoordinateIndex;                                   // 0x70(0x4)
-	float                                                        UTiling;                                           // 0x74(0x4)
-	float                                                        VTiling;                                           // 0x78(0x4)
-	bool                                                         UnMirrorU;                                         // 0x7c(0x1)
-	bool                                                         UnMirrorV;                                         // 0x7c(0x1)
+	struct LinearColor                                           Constant;                                          // 0x70(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
+class StaticMeshActor: public Actor
+{
+public:
+	class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x3c8(0x8)
+	bool                                                         bStaticMeshReplicateMovement;                      // 0x3d0(0x1)
+	char                                                         NavigationGeometryGatheringMode;                   // 0x3d1(0x1)
 };
 
 
@@ -3964,20 +4538,271 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0x78] - InheritedSize[0x38]
-class SoundNodeModulatorContinuous: public SoundNode
+// Size 0xe0 (Full Size[0x520] - InheritedSize[0x440]
+class AnimSingleNodeInstance: public AnimInstance
 {
 public:
-	struct ModulatorContinuousParams                             PitchModulationParams;                             // 0x38(0x20)
-	struct ModulatorContinuousParams                             VolumeModulationParams;                            // 0x58(0x20)
+	class AnimationAsset*                                        CurrentAsset;                                      // 0x440(0x8)
+	class VertexAnimation*                                       CurrentVertexAnim;                                 // 0x448(0x8)
+	struct Vector                                                BlendSpaceInput;                                   // 0x450(0xc)
+	TArray<struct BlendSampleData>                               BlendSampleData;                                   // 0x460(0x10)
+	struct BlendFilter                                           BlendFilter;                                       // 0x470(0x90)
+	float                                                        CurrentTime;                                       // 0x500(0x4)
+	float                                                        PlayRate;                                          // 0x504(0x4)
+	delegate                                                     PostEvaluateAnimEvent;                             // 0x508(0x10)
+	bool                                                         bLooping;                                          // 0x518(0x1)
+	bool                                                         bPlaying;                                          // 0x518(0x1)
+	bool                                                         bReverse;                                          // 0x518(0x1)
+};
+
+
+// Size 0x28 (Full Size[0x58] - InheritedSize[0x30]
+class AnimNotifyState_Trail: public AnimNotifyState
+{
+public:
+	class ParticleSystem*                                        PSTemplate;                                        // 0x30(0x8)
+	struct FName                                                 FirstSocketName;                                   // 0x38(0x8)
+	struct FName                                                 SecondSocketName;                                  // 0x40(0x8)
+	char                                                         WidthScaleMode;                                    // 0x48(0x1)
+	struct FName                                                 WidthScaleCurve;                                   // 0x4c(0x8)
+};
+
+
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionLowResClouds: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Coordinates;                                       // 0x70(0x38)
+};
+
+
+// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
+class MaterialExpressionSceneTexture: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Coordinates;                                       // 0x70(0x38)
+	char                                                         SceneTextureId;                                    // 0xa8(0x1)
+	bool                                                         bClampUVs;                                         // 0xa9(0x1)
+	bool                                                         bFiltered;                                         // 0xaa(0x1)
+};
+
+
+// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
+class MaterialExpressionSubtract: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
+	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
+	float                                                        ConstA;                                            // 0xe0(0x4)
+	float                                                        ConstB;                                            // 0xe4(0x4)
+};
+
+
+// Size 0xe0 (Full Size[0x130] - InheritedSize[0x50]
+class SoundCue: public SoundBase
+{
+public:
+	bool                                                         bOverrideAttenuation;                              // 0x50(0x1)
+	class SoundNode*                                             FirstNode;                                         // 0x58(0x8)
+	float                                                        VolumeMultiplier;                                  // 0x60(0x4)
+	float                                                        PitchMultiplier;                                   // 0x64(0x4)
+	struct AttenuationSettings                                   AttenuationOverrides;                              // 0x68(0xc0)
+};
+
+
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionNormalize: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       VectorInput;                                       // 0x70(0x38)
+};
+
+
+// Size 0x80 (Full Size[0xf0] - InheritedSize[0x70]
+class MaterialExpressionSceneDepth: public MaterialExpression
+{
+public:
+	char                                                         InputMode;                                         // 0x70(0x1)
+	struct ExpressionInput                                       Input;                                             // 0x78(0x38)
+	struct ExpressionInput                                       Coordinates;                                       // 0xb0(0x38)
+	struct Vector2D                                              ConstInput;                                        // 0xe8(0x8)
+};
+
+
+// Size 0x60 (Full Size[0xa30] - InheritedSize[0x9d0]
+class GameEngine: public Engine
+{
+public:
+	float                                                        MaxDeltaTime;                                      // 0x9d0(0x4)
+	float                                                        ServerFlushLogInterval;                            // 0x9d4(0x4)
+};
+
+
+// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
+class MaterialExpressionReflectionVectorWS: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       CustomWorldNormal;                                 // 0x70(0x38)
+	bool                                                         bNormalizeCustomWorldNormal;                       // 0xa8(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
+class MaterialExpressionConstant2Vector: public MaterialExpression
+{
+public:
+	float                                                        R;                                                 // 0x70(0x4)
+	float                                                        G;                                                 // 0x74(0x4)
+};
+
+
+// Size 0x80 (Full Size[0xf0] - InheritedSize[0x70]
+class MaterialExpressionBreakMaterialAttributes: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Struct;                                            // 0x70(0x38)
+	struct MaterialAttributesInput                               MaterialAttributes;                                // 0xa8(0x38)
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class SceneCapture: public Actor
+{
+public:
+	class StaticMeshComponent*                                   MeshComp;                                          // 0x3c8(0x8)
+};
+
+
+// Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
+class NavigationInvokerComponent: public ActorComponent
+{
+public:
+	float                                                        TileGenerationRadius;                              // 0xc8(0x4)
+	float                                                        TileRemovalRadius;                                 // 0xcc(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class SplineMeshActor: public Actor
+{
+public:
+	class SplineMeshComponent*                                   SplineMeshComponent;                               // 0x3c8(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x1d0] - InheritedSize[0x1b0]
+class ParticleModuleSize_Seeded: public ParticleModuleSize
+{
+public:
+	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x1b0(0x20)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class SoundNodeDelay: public SoundNode
+{
+public:
+	float                                                        DelayMin;                                          // 0x38(0x4)
+	float                                                        DelayMax;                                          // 0x3c(0x4)
+};
+
+
+// Size 0x1c0 (Full Size[0x588] - InheritedSize[0x3c8]
+class NavigationData: public Actor
+{
+public:
+	class PrimitiveComponent*                                    RenderingComp;                                     // 0x3c8(0x8)
+	struct NavDataConfig                                         NavDataConfig;                                     // 0x3d0(0x58)
+	bool                                                         bEnableDrawing;                                    // 0x428(0x1)
+	bool                                                         bRebuildAtRuntime;                                 // 0x428(0x1)
+	char                                                         RuntimeGeneration;                                 // 0x42c(0x1)
+	bool                                                         bForceRebuildOnLoad;                               // 0x430(0x1)
+	float                                                        ObservedPathsTickInterval;                         // 0x434(0x4)
+	TArray<struct SupportedAreaData>                             SupportedAreas;                                    // 0x520(0x10)
+};
+
+
+// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
+class MaterialExpressionDivide: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
+	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
+	float                                                        ConstA;                                            // 0xe0(0x4)
+	float                                                        ConstB;                                            // 0xe4(0x4)
+};
+
+
+// Size 0xb8 (Full Size[0x108] - InheritedSize[0x50]
+class BlendSpaceBase: public AnimationAsset
+{
+public:
+	struct BlendParameter                                        BlendParameters;                                   // 0x50(0x20)
+	struct InterpolationParameter                                InterpolationParam;                                // 0xb0(0x8)
+	float                                                        TargetWeightInterpolationSpeedPerSec;              // 0xc8(0x4)
+	char                                                         NotifyTriggerMode;                                 // 0xcc(0x1)
+	bool                                                         bRotationBlendInMeshSpace;                         // 0xcd(0x1)
+	int                                                          NumOfDimension;                                    // 0xd0(0x4)
+	float                                                        AnimLength;                                        // 0xd4(0x4)
+	TArray<struct PerBoneInterpolation>                          PerBoneBlend;                                      // 0xd8(0x10)
+	TArray<struct BlendSample>                                   SampleData;                                        // 0xe8(0x10)
+	TArray<struct EditorElement>                                 GridSamples;                                       // 0xf8(0x10)
+};
+
+
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionHash: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
+};
+
+
+// Size 0x28 (Full Size[0x3f0] - InheritedSize[0x3c8]
+class NavigationObjectBase: public Actor
+{
+public:
+	class CapsuleComponent*                                      CapsuleComponent;                                  // 0x3d0(0x8)
+	class BillboardComponent*                                    GoodSprite;                                        // 0x3d8(0x8)
+	class BillboardComponent*                                    BadSprite;                                         // 0x3e0(0x8)
+	bool                                                         bIsPIEPlayerStart;                                 // 0x3e8(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class DistributionFloatConstant: public DistributionFloat
+{
+public:
+	float                                                        Constant;                                          // 0x38(0x4)
+};
+
+
+// Size 0x30 (Full Size[0xf8] - InheritedSize[0xc8]
+class NavRelevantComponent: public ActorComponent
+{
+public:
+	bool                                                         bNavigationRelevant;                               // 0xec(0x1)
+	bool                                                         bAttachToOwnersRoot;                               // 0xec(0x1)
+	class Object*                                                CachedNavParent;                                   // 0xf0(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class DistributionFloatUniform: public DistributionFloat
+{
+public:
+	float                                                        Max;                                               // 0x38(0x4)
+	float                                                        Min;                                               // 0x3c(0x4)
 };
 
 
 // Size 0x18 (Full Size[0x88] - InheritedSize[0x70]
-class InterpTrackVisibility: public InterpTrack
+class InterpTrackToggle: public InterpTrack
 {
 public:
-	TArray<struct VisibilityTrackKey>                            VisibilityTrack;                                   // 0x70(0x10)
+	TArray<struct ToggleTrackKey>                                ToggleTrack;                                       // 0x70(0x10)
+	bool                                                         bActivateSystemEachUpdate;                         // 0x80(0x1)
+	bool                                                         bActivateWithJustAttachedFlag;                     // 0x80(0x1)
 	bool                                                         bFireEventsWhenForwards;                           // 0x80(0x1)
 	bool                                                         bFireEventsWhenBackwards;                          // 0x80(0x1)
 	bool                                                         bFireEventsWhenJumpingForwards;                    // 0x80(0x1)
@@ -3985,11 +4810,56 @@ public:
 
 
 // Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
-class InterpTrackInstBoolProp: public InterpTrackInstProperty
+class InterpTrackInstVectorProp: public InterpTrackInstProperty
 {
 public:
-	class BoolProperty*                                          BoolProperty;                                      // 0x40(0x8)
-	bool                                                         ResetBool;                                         // 0x48(0x1)
+	struct Vector                                                ResetVector;                                       // 0x40(0xc)
+};
+
+
+// Size 0x70 (Full Size[0xe0] - InheritedSize[0x70]
+class MaterialExpressionCrossProduct: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
+	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
+};
+
+
+// Size 0x90 (Full Size[0x100] - InheritedSize[0x70]
+class MaterialExpressionFunctionInput: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Preview;                                           // 0x70(0x38)
+	struct FString                                               InputName;                                         // 0xa8(0x10)
+	struct FString                                               Description;                                       // 0xb8(0x10)
+	struct Guid                                                  Id;                                                // 0xc8(0x10)
+	char                                                         InputType;                                         // 0xd8(0x1)
+	struct Vector4                                               PreviewValue;                                      // 0xe0(0x10)
+	bool                                                         bUsePreviewValueAsDefault;                         // 0xf0(0x1)
+	int                                                          SortPriority;                                      // 0xf4(0x4)
+	bool                                                         bCompilingFunctionPreview;                         // 0xf8(0x1)
+};
+
+
+// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
+class MaterialExpressionMin: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
+	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
+	float                                                        ConstA;                                            // 0xe0(0x4)
+	float                                                        ConstB;                                            // 0xe4(0x4)
+};
+
+
+// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
+class MaterialExpressionTransform: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
+	char                                                         TransformSourceType;                               // 0xa8(0x1)
+	char                                                         TransformType;                                     // 0xa9(0x1)
 };
 
 
@@ -4006,83 +4876,190 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
-class MaterialExpressionTranslucencyShadows: public MaterialExpression
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class DecalActor: public Actor
 {
 public:
-	int                                                          Quality;                                           // 0x70(0x4)
+	class DecalComponent*                                        Decal;                                             // 0x3c8(0x8)
 };
 
 
-// Size 0x70 (Full Size[0xe0] - InheritedSize[0x70]
-class MaterialExpressionIfShadowPass: public MaterialExpression
+// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
+class MaterialExpressionMultiply: public MaterialExpression
 {
 public:
-	struct ExpressionInput                                       Shadow;                                            // 0x70(0x38)
-	struct ExpressionInput                                       NotShadow;                                         // 0xa8(0x38)
+	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
+	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
+	float                                                        ConstA;                                            // 0xe0(0x4)
+	float                                                        ConstB;                                            // 0xe4(0x4)
 };
 
 
 // Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionUnderwaterTranslucencyTexture: public MaterialExpression
+class MaterialExpressionDDX: public MaterialExpression
 {
 public:
-	struct ExpressionInput                                       Coordinates;                                       // 0x70(0x38)
+	struct ExpressionInput                                       Value;                                             // 0x70(0x38)
 };
 
 
-// Size 0x30 (Full Size[0x3f8] - InheritedSize[0x3c8]
-class SkeletalMeshActor: public Actor
+// Size 0x48 (Full Size[0xd8] - InheritedSize[0x90]
+class ParticleModuleSubUVMovie: public ParticleModuleSubUV
 {
 public:
-	bool                                                         bShouldDoAnimNotifies;                             // 0x3d0(0x1)
-	bool                                                         bWakeOnLevelStart;                                 // 0x3d0(0x1)
-	class SkeletalMeshComponent*                                 SkeletalMeshComponent;                             // 0x3d8(0x8)
-	class SkeletalMesh*                                          ReplicatedMesh;                                    // 0x3e0(0x8)
-	class PhysicsAsset*                                          ReplicatedPhysAsset;                               // 0x3e8(0x8)
+	bool                                                         bUseEmitterTime;                                   // 0x90(0x1)
+	struct RawDistributionFloat                                  FrameRate;                                         // 0x98(0x38)
+	int                                                          StartingFrame;                                     // 0xd0(0x4)
 };
 
 
-// Size 0x10 (Full Size[0x80] - InheritedSize[0x70]
-class MaterialExpressionFontSample: public MaterialExpression
+// Size 0x8 (Full Size[0x48] - InheritedSize[0x40]
+class AnimCompress_Automatic: public AnimCompress
 {
 public:
-	class Font*                                                  Font;                                              // 0x70(0x8)
-	int                                                          FontTexturePage;                                   // 0x78(0x4)
+	float                                                        MaxEndEffectorError;                               // 0x40(0x4)
+	bool                                                         bTryFixedBitwiseCompression;                       // 0x44(0x1)
+	bool                                                         bTryPerTrackBitwiseCompression;                    // 0x44(0x1)
+	bool                                                         bTryLinearKeyRemovalCompression;                   // 0x44(0x1)
+	bool                                                         bTryIntervalKeyRemoval;                            // 0x44(0x1)
+	bool                                                         bRunCurrentDefaultCompressor;                      // 0x44(0x1)
+	bool                                                         bAutoReplaceIfExistingErrorTooGreat;               // 0x44(0x1)
+	bool                                                         bRaiseMaxErrorToExisting;                          // 0x44(0x1)
+};
+
+
+// Size 0x28 (Full Size[0x98] - InheritedSize[0x70]
+class MaterialExpressionMaterialFunctionCall: public MaterialExpression
+{
+public:
+	class MaterialFunction*                                      MaterialFunction;                                  // 0x70(0x8)
+	TArray<struct FunctionExpressionInput>                       FunctionInputs;                                    // 0x78(0x10)
+	TArray<struct FunctionExpressionOutput>                      FunctionOutputs;                                   // 0x88(0x10)
+};
+
+
+// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
+class MaterialExpressionCosine: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
+	float                                                        Period;                                            // 0xa8(0x4)
 };
 
 
 // Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class LevelBounds: public Actor
+class LevelScriptActor: public Actor
 {
 public:
-	bool                                                         bAutoUpdateBounds;                                 // 0x3c8(0x1)
+	bool                                                         bInputEnabled;                                     // 0x3c8(0x1)
 };
 
 
-// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
-class InterpTrackInstLinearColorProp: public InterpTrackInstProperty
+// Size 0x70 (Full Size[0xe0] - InheritedSize[0x70]
+class MaterialExpressionFmod: public MaterialExpression
 {
 public:
-	struct LinearColor                                           ResetColor;                                        // 0x40(0x10)
+	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
+	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
 };
 
 
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionSquareRoot: public MaterialExpression
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class SoundNodeModulator: public SoundNode
 {
 public:
-	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
+	float                                                        PitchMin;                                          // 0x38(0x4)
+	float                                                        PitchMax;                                          // 0x3c(0x4)
+	float                                                        VolumeMin;                                         // 0x40(0x4)
+	float                                                        VolumeMax;                                         // 0x44(0x4)
 };
 
 
-// Size 0x10 (Full Size[0x1b8] - InheritedSize[0x1a8]
-class ParticleModuleLocationGPU2: public ParticleModuleLocationGPU
+// Size 0x20 (Full Size[0xb0] - InheritedSize[0x90]
+class ParticleModuleMeshRotation_Seeded: public ParticleModuleMeshRotation
 {
 public:
-	char                                                         SpawnLocationValueSemantic;                        // 0x1a8(0x1)
-	char                                                         AdditionalSpawnLocationValueSemantics;             // 0x1a9(0x1)
-	bool                                                         bUseGroupASpawnLocationValueSemanticForAllGroups;  // 0x1b0(0x1)
+	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x90(0x20)
+};
+
+
+// Size 0xb8 (Full Size[0x128] - InheritedSize[0x70]
+class MaterialExpressionBumpOffset: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Coordinate;                                        // 0x70(0x38)
+	struct ExpressionInput                                       Height;                                            // 0xa8(0x38)
+	struct ExpressionInput                                       HeightRatioInput;                                  // 0xe0(0x38)
+	float                                                        HeightRatio;                                       // 0x118(0x4)
+	float                                                        ReferencePlane;                                    // 0x11c(0x4)
+	uint32                                                       ConstCoordinate;                                   // 0x120(0x4)
+};
+
+
+// Size 0xf8 (Full Size[0x4c0] - InheritedSize[0x3c8]
+class HUD: public Actor
+{
+public:
+	struct Color                                                 WhiteColor;                                        // 0x3c8(0x4)
+	struct Color                                                 GreenColor;                                        // 0x3cc(0x4)
+	struct Color                                                 RedColor;                                          // 0x3d0(0x4)
+	class PlayerController*                                      PlayerOwner;                                       // 0x3d8(0x8)
+	bool                                                         bLostFocusPaused;                                  // 0x3e0(0x1)
+	bool                                                         bShowHUD;                                          // 0x3e0(0x1)
+	bool                                                         bShowDebugInfo;                                    // 0x3e0(0x1)
+	bool                                                         bShowHitBoxDebugInfo;                              // 0x3e0(0x1)
+	bool                                                         bShowOverlays;                                     // 0x3e0(0x1)
+	bool                                                         bEnableDebugTextShadow;                            // 0x3e0(0x1)
+	TArray<class Actor*>                                         PostRenderedActors;                                // 0x3e8(0x10)
+	float                                                        LastHUDRenderTime;                                 // 0x3f8(0x4)
+	float                                                        RenderDelta;                                       // 0x3fc(0x4)
+	TArray<struct Name>                                          DebugDisplay;                                      // 0x400(0x10)
+	TArray<struct Name>                                          ToggledDebugCategories;                            // 0x410(0x10)
+	class Canvas*                                                Canvas;                                            // 0x420(0x8)
+	class Canvas*                                                DebugCanvas;                                       // 0x428(0x8)
+	TArray<struct DebugTextInfo>                                 DebugTextList;                                     // 0x430(0x10)
+	class UClass*                                                ShowDebugTargetDesiredClass;                       // 0x440(0x8)
+	class Actor*                                                 ShowDebugTargetActor;                              // 0x448(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x80] - InheritedSize[0x70]
+class MaterialExpressionTextureBase: public MaterialExpression
+{
+public:
+	class Texture*                                               Texture;                                           // 0x70(0x8)
+	char                                                         SamplerType;                                       // 0x78(0x1)
+	bool                                                         IsDefaultMeshpaintTexture;                         // 0x7c(0x1)
+};
+
+
+// Size 0x568 (Full Size[0x930] - InheritedSize[0x3c8]
+class CameraActor: public Actor
+{
+public:
+	char                                                         AutoActivateForPlayer;                             // 0x3c8(0x1)
+	class CameraComponent*                                       CameraComponent;                                   // 0x3d0(0x8)
+	bool                                                         bConstrainAspectRatio;                             // 0x3e0(0x1)
+	float                                                        AspectRatio;                                       // 0x3e4(0x4)
+	float                                                        FOVAngle;                                          // 0x3e8(0x4)
+	float                                                        PostProcessBlendWeight;                            // 0x3ec(0x4)
+	struct PostProcessSettings                                   PostProcessSettings;                               // 0x3f0(0x540)
+};
+
+
+// Size 0x8 (Full Size[0x148] - InheritedSize[0x140]
+class TextureRenderTarget: public Texture
+{
+public:
+	float                                                        TargetGamma;                                       // 0x140(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class TextRenderActor: public Actor
+{
+public:
+	class TextRenderComponent*                                   TextRender;                                        // 0x3c8(0x8)
 };
 
 
@@ -4103,32 +5080,94 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0xb0] - InheritedSize[0x90]
-class ParticleModuleMeshRotation_Seeded: public ParticleModuleMeshRotation
+// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
+class ParticleModuleOrbitBase: public ParticleModule
 {
 public:
-	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x90(0x20)
+	bool                                                         bUseEmitterTime;                                   // 0x50(0x1)
 };
 
 
-// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
-class DistributionVectorUniformCurve: public DistributionVector
+// Size 0xa8 (Full Size[0x170] - InheritedSize[0xc8]
+class PhysicsHandleComponent: public ActorComponent
 {
 public:
-	struct InterpCurveTwoVectors                                 ConstantCurve;                                     // 0x38(0x18)
-	bool                                                         bLockAxes1;                                        // 0x50(0x1)
-	bool                                                         bLockAxes2;                                        // 0x50(0x1)
-	char                                                         LockedAxes;                                        // 0x54(0x1)
-	char                                                         MirrorFlags;                                       // 0x56(0x1)
-	bool                                                         bUseExtremes;                                      // 0x5c(0x1)
+	class PrimitiveComponent*                                    GrabbedComponent;                                  // 0xc8(0x8)
+	float                                                        LinearDamping;                                     // 0xe0(0x4)
+	float                                                        LinearStiffness;                                   // 0xe4(0x4)
+	float                                                        AngularDamping;                                    // 0xe8(0x4)
+	float                                                        AngularStiffness;                                  // 0xec(0x4)
+	float                                                        InterpolationSpeed;                                // 0x150(0x4)
 };
 
 
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionDistanceFieldGradient: public MaterialExpression
+// Size 0x280 (Full Size[0x348] - InheritedSize[0xc8]
+class ParticleModuleLocationPrimitiveCylinder: public ParticleModuleLocationPrimitiveBase
 {
 public:
-	struct ExpressionInput                                       Position;                                          // 0x70(0x38)
+	bool                                                         RadialVelocity;                                    // 0xc8(0x1)
+	struct RawDistributionFloat                                  StartRadius;                                       // 0xd0(0x38)
+	struct RawDistributionFloat                                  AdditionalStartRadiuses;                           // 0x108(0x38)
+	bool                                                         StartRadiusUseGroupAForAll;                        // 0x1e8(0x1)
+	struct Vector2D                                              RadiusScale;                                       // 0x1ec(0x8)
+	struct RawDistributionFloat                                  StartHeight;                                       // 0x1f8(0x38)
+	bool                                                         StartHeightUseGroupAForAll;                        // 0x230(0x1)
+	struct RawDistributionFloat                                  AdditionalStartHeights;                            // 0x238(0x38)
+	struct Vector2D                                              AngleRange;                                        // 0x318(0x8)
+	struct Vector2D                                              AdditionalAngleRanges;                             // 0x320(0x8)
+	bool                                                         AngleRangeUseGroupAForAll;                         // 0x340(0x1)
+	char                                                         HeightAxis;                                        // 0x344(0x1)
+};
+
+
+// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
+class InterpGroupCamera: public InterpGroup
+{
+public:
+	class CameraAnim*                                            CameraAnimInst;                                    // 0x50(0x8)
+	float                                                        CompressTolerance;                                 // 0x58(0x4)
+};
+
+
+// Size 0x20 (Full Size[0x60] - InheritedSize[0x40]
+class AnimCompress_RemoveLinearKeys: public AnimCompress
+{
+public:
+	float                                                        MaxPosDiff;                                        // 0x40(0x4)
+	float                                                        MaxAngleDiff;                                      // 0x44(0x4)
+	float                                                        MaxScaleDiff;                                      // 0x48(0x4)
+	float                                                        MaxEffectorDiff;                                   // 0x4c(0x4)
+	float                                                        MinEffectorDiff;                                   // 0x50(0x4)
+	float                                                        EffectorDiffSocket;                                // 0x54(0x4)
+	float                                                        ParentKeyScale;                                    // 0x58(0x4)
+	bool                                                         bRetarget;                                         // 0x5c(0x1)
+	bool                                                         bActuallyFilterLinearKeys;                         // 0x5c(0x1)
+};
+
+
+// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
+class MicroTransactionBase: public PlatformInterfaceBase
+{
+public:
+	TArray<struct PurchaseInfo>                                  AvailableProducts;                                 // 0x38(0x10)
+	struct FString                                               LastError;                                         // 0x48(0x10)
+	struct FString                                               LastErrorSolution;                                 // 0x58(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class WaterEmissionVolume: public Actor
+{
+public:
+	class WaterEmissionVolumeComponent*                          WaterEmissionVolumeComponent;                      // 0x3c8(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class SoundNodeConcatenator: public SoundNode
+{
+public:
+	TArray<float>                                                InputVolume;                                       // 0x38(0x10)
 };
 
 
@@ -4141,20 +5180,65 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x220] - InheritedSize[0x210]
-class LevelStreamingKismet: public LevelStreaming
+// Size 0xf0 (Full Size[0x1b8] - InheritedSize[0xc8]
+class ParticleModuleLocationVelocityComputeShaderOutput: public ParticleModuleLocationPrimitiveBase
 {
 public:
-	bool                                                         bInitiallyLoaded;                                  // 0x210(0x1)
-	bool                                                         bInitiallyVisible;                                 // 0x210(0x1)
+	class ParticleComputeShaderData*                             PositionData;                                      // 0xc8(0x8)
+	struct RawDistributionVector                                 ComputedVelocityScale;                             // 0xd0(0x38)
+	float                                                        SpeedCap;                                          // 0x108(0x4)
+	struct RawDistributionVector                                 BaseVelocity;                                      // 0x110(0x38)
+	struct RawDistributionVector                                 LocationOffset;                                    // 0x148(0x38)
+	struct RawDistributionVector                                 LocationOffsetScaledDirection;                     // 0x180(0x38)
 };
 
 
-// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
-class DistributionFloatUniformCurve: public DistributionFloat
+// Size 0x20 (Full Size[0x90] - InheritedSize[0x70]
+class MaterialExpressionParameter: public MaterialExpression
 {
 public:
-	struct InterpCurveVector2D                                   ConstantCurve;                                     // 0x38(0x18)
+	struct FName                                                 ParameterName;                                     // 0x70(0x8)
+	struct Guid                                                  ExpressionGUID;                                    // 0x78(0x10)
+	struct FName                                                 Group;                                             // 0x88(0x8)
+};
+
+
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionDDY: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Value;                                             // 0x70(0x38)
+};
+
+
+// Size 0x80 (Full Size[0xf0] - InheritedSize[0x70]
+class MaterialExpressionRotator: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Coordinate;                                        // 0x70(0x38)
+	struct ExpressionInput                                       Time;                                              // 0xa8(0x38)
+	float                                                        CenterX;                                           // 0xe0(0x4)
+	float                                                        CenterY;                                           // 0xe4(0x4)
+	float                                                        Speed;                                             // 0xe8(0x4)
+	uint32                                                       ConstCoordinate;                                   // 0xec(0x4)
+};
+
+
+// Size 0x88 (Full Size[0xd8] - InheritedSize[0x50]
+class Blueprint: public BlueprintCore
+{
+public:
+	bool                                                         bRecompileOnLoad;                                  // 0x50(0x1)
+	class UClass*                                                ParentClass;                                       // 0x58(0x8)
+	class Object*                                                PRIVATE_InnermostPreviousCDO;                      // 0x60(0x8)
+	bool                                                         bHasBeenRegenerated;                               // 0x68(0x1)
+	bool                                                         bIsRegeneratingOnLoad;                             // 0x68(0x1)
+	class SimpleConstructionScript*                              SimpleConstructionScript;                          // 0x70(0x8)
+	TArray<class ActorComponent*>                                ComponentTemplates;                                // 0x78(0x10)
+	TArray<class TimelineTemplate*>                              Timelines;                                         // 0x88(0x10)
+	class InheritableComponentHandler*                           InheritableComponentHandler;                       // 0x98(0x8)
+	char                                                         BlueprintType;                                     // 0xa0(0x1)
+	int                                                          BlueprintSystemVersion;                            // 0xa4(0x4)
 };
 
 
@@ -4315,155 +5399,310 @@ public:
 };
 
 
-// Size 0x1c0 (Full Size[0x588] - InheritedSize[0x3c8]
-class NavigationData: public Actor
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionAtmosphericFogColor: public MaterialExpression
 {
 public:
-	class PrimitiveComponent*                                    RenderingComp;                                     // 0x3c8(0x8)
-	struct NavDataConfig                                         NavDataConfig;                                     // 0x3d0(0x58)
-	bool                                                         bEnableDrawing;                                    // 0x428(0x1)
-	bool                                                         bRebuildAtRuntime;                                 // 0x428(0x1)
-	char                                                         RuntimeGeneration;                                 // 0x42c(0x1)
-	bool                                                         bForceRebuildOnLoad;                               // 0x430(0x1)
-	float                                                        ObservedPathsTickInterval;                         // 0x434(0x4)
-	TArray<struct SupportedAreaData>                             SupportedAreas;                                    // 0x520(0x10)
+	struct ExpressionInput                                       WorldPosition;                                     // 0x70(0x38)
 };
 
 
-// Size 0x78 (Full Size[0x440] - InheritedSize[0x3c8]
-class Pawn: public Actor
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionBlackBody: public MaterialExpression
 {
 public:
-	bool                                                         bUseControllerRotationPitch;                       // 0x3d0(0x1)
-	bool                                                         bUseControllerRotationYaw;                         // 0x3d0(0x1)
-	bool                                                         bUseControllerRotationRoll;                        // 0x3d0(0x1)
-	bool                                                         bCanAffectNavigationGeneration;                    // 0x3d0(0x1)
-	float                                                        BaseEyeHeight;                                     // 0x3d4(0x4)
-	char                                                         AutoPossessPlayer;                                 // 0x3d8(0x1)
-	char                                                         AutoPossessAI;                                     // 0x3d9(0x1)
-	class UClass*                                                AIControllerClass;                                 // 0x3e0(0x8)
-	class PlayerState*                                           PlayerState;                                       // 0x3e8(0x8)
-	char                                                         RemoteViewPitch;                                   // 0x3f0(0x1)
-	class Controller*                                            LastHitBy;                                         // 0x3f8(0x8)
-	class Controller*                                            Controller;                                        // 0x400(0x8)
-	struct Vector                                                ControlInputVector;                                // 0x420(0xc)
-	struct Vector                                                LastControlInputVector;                            // 0x42c(0xc)
-};
-
-
-// Size 0x58 (Full Size[0x420] - InheritedSize[0x3c8]
-class AutomaticInstancingActor: public Actor
-{
-public:
-	class SceneComponent*                                        DummyRoot;                                         // 0x3c8(0x8)
-	map                                                          CookedInstancedStaticMeshes;                       // 0x3d0(0x50)
+	struct ExpressionInput                                       Temp;                                              // 0x70(0x38)
 };
 
 
 // Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class ActorWithComponentWithDerivedTestInterface: public Actor
+class ReflectionCapture: public Actor
 {
 public:
-	class ComponentWithDerivedTestInterface*                     ComponentWithDerivedTestInterface;                 // 0x3c8(0x8)
-};
-
-
-// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
-class ComponentAggregatorComponent: public ActorComponent
-{
-public:
-	TArray<class Object*>                                        Aggregatables;                                     // 0xd0(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class SoundNodeDoppler: public SoundNode
-{
-public:
-	float                                                        DopplerIntensity;                                  // 0x38(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class LevelScriptActor: public Actor
-{
-public:
-	bool                                                         bInputEnabled;                                     // 0x3c8(0x1)
+	class ReflectionCaptureComponent*                            CaptureComponent;                                  // 0x3c8(0x8)
 };
 
 
 // Size 0x10 (Full Size[0x80] - InheritedSize[0x70]
-class MaterialExpressionBoneMatrix: public MaterialExpression
+class MaterialExpressionSpeedTree: public MaterialExpression
 {
 public:
-	int                                                          ReferenceIndex;                                    // 0x70(0x4)
-	struct FName                                                 BoneName;                                          // 0x74(0x8)
-	bool                                                         bPosition;                                         // 0x7c(0x1)
+	char                                                         GeometryType;                                      // 0x70(0x1)
+	char                                                         WindType;                                          // 0x71(0x1)
+	char                                                         LODType;                                           // 0x72(0x1)
+	float                                                        BillboardThreshold;                                // 0x74(0x4)
+	bool                                                         bAccurateWindVelocities;                           // 0x78(0x1)
 };
 
 
-// Size 0x20 (Full Size[0xb0] - InheritedSize[0x90]
-class EdGraphNode_Documentation: public EdGraphNode
+// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
+class MaterialExpressionAdd: public MaterialExpression
 {
 public:
-	struct FString                                               Link;                                              // 0x90(0x10)
-	struct FString                                               Excerpt;                                           // 0xa0(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class SplineMeshActor: public Actor
-{
-public:
-	class SplineMeshComponent*                                   SplineMeshComponent;                               // 0x3c8(0x8)
-};
-
-
-// Size 0x18 (Full Size[0x60] - InheritedSize[0x48]
-class CameraModifier_CameraShake: public CameraModifier
-{
-public:
-	TArray<class CameraShake*>                                   ActiveShakes;                                      // 0x48(0x10)
-	float                                                        SplitScreenShakeScale;                             // 0x58(0x4)
-};
-
-
-// Size 0x38 (Full Size[0x400] - InheritedSize[0x3c8]
-class LODActor: public Actor
-{
-public:
-	class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x3c8(0x8)
-	TArray<class Actor*>                                         SubActors;                                         // 0x3d0(0x10)
-	float                                                        LODDrawDistance;                                   // 0x3e0(0x4)
-	int                                                          LodLevel;                                          // 0x3e4(0x4)
-	TArray<class Object*>                                        SubObjects;                                        // 0x3e8(0x10)
+	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
+	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
+	float                                                        ConstA;                                            // 0xe0(0x4)
+	float                                                        ConstB;                                            // 0xe4(0x4)
 };
 
 
 // Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class SoundNodeWaveParam: public SoundNode
+class SoundNodeLooping: public SoundNode
 {
 public:
-	struct FName                                                 WaveParameterName;                                 // 0x38(0x8)
+	int                                                          LoopCount;                                         // 0x38(0x4)
+	bool                                                         bLoopIndefinitely;                                 // 0x3c(0x1)
 };
 
 
-// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
-class MaterialExpressionSphericalParticleOpacity: public MaterialExpression
+// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
+class DistributionVectorUniform: public DistributionVector
 {
 public:
-	struct ExpressionInput                                       Density;                                           // 0x70(0x38)
-	float                                                        ConstantDensity;                                   // 0xa8(0x4)
+	struct Vector                                                Max;                                               // 0x38(0xc)
+	struct Vector                                                Min;                                               // 0x44(0xc)
+	bool                                                         bLockAxes;                                         // 0x50(0x1)
+	char                                                         LockedAxes;                                        // 0x54(0x1)
+	char                                                         MirrorFlags;                                       // 0x55(0x1)
+	bool                                                         bUseExtremes;                                      // 0x58(0x1)
 };
 
 
-// Size 0x28 (Full Size[0x98] - InheritedSize[0x70]
-class MaterialExpressionMaterialFunctionCall: public MaterialExpression
+// Size 0xd0 (Full Size[0x108] - InheritedSize[0x38]
+class SoundNodeAttenuation: public SoundNode
 {
 public:
-	class MaterialFunction*                                      MaterialFunction;                                  // 0x70(0x8)
-	TArray<struct FunctionExpressionInput>                       FunctionInputs;                                    // 0x78(0x10)
-	TArray<struct FunctionExpressionOutput>                      FunctionOutputs;                                   // 0x88(0x10)
+	class SoundAttenuation*                                      AttenuationSettings;                               // 0x38(0x8)
+	struct AttenuationSettings                                   AttenuationOverrides;                              // 0x40(0xc0)
+	bool                                                         bOverrideAttenuation;                              // 0x100(0x1)
+};
+
+
+// Size 0x20 (Full Size[0x90] - InheritedSize[0x70]
+class InterpTrackFloatBase: public InterpTrack
+{
+public:
+	struct InterpCurveFloat                                      FloatTrack;                                        // 0x70(0x18)
+	float                                                        CurveTension;                                      // 0x88(0x4)
+};
+
+
+// Size 0xb0 (Full Size[0x120] - InheritedSize[0x70]
+class MaterialExpressionStaticSwitch: public MaterialExpression
+{
+public:
+	bool                                                         DefaultValue;                                      // 0x70(0x1)
+	struct ExpressionInput                                       A;                                                 // 0x78(0x38)
+	struct ExpressionInput                                       B;                                                 // 0xb0(0x38)
+	struct ExpressionInput                                       Value;                                             // 0xe8(0x38)
+};
+
+
+// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
+class DistributionVectorConstantCurve: public DistributionVector
+{
+public:
+	struct InterpCurveVector                                     ConstantCurve;                                     // 0x38(0x18)
+	bool                                                         bLockAxes;                                         // 0x50(0x1)
+	char                                                         LockedAxes;                                        // 0x54(0x1)
+};
+
+
+// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
+class CloudStorageBase: public PlatformInterfaceBase
+{
+public:
+	TArray<String>                                               LocalCloudFiles;                                   // 0x38(0x10)
+	bool                                                         bSuppressDelegateCalls;                            // 0x48(0x1)
+};
+
+
+// Size 0x18 (Full Size[0x88] - InheritedSize[0x70]
+class InterpTrackDirector: public InterpTrack
+{
+public:
+	TArray<struct DirectorTrackCut>                              CutTrack;                                          // 0x70(0x10)
+	bool                                                         bSimulateCameraCutsOnClients;                      // 0x80(0x1)
+};
+
+
+// Size 0x98 (Full Size[0x2d0] - InheritedSize[0x238]
+class DestructibleMesh: public SkeletalMesh
+{
+public:
+	struct DestructibleParameters                                DefaultDestructibleParameters;                     // 0x238(0x88)
+	TArray<struct FractureEffect>                                FractureEffects;                                   // 0x2c0(0x10)
+};
+
+
+// Size 0x40 (Full Size[0x78] - InheritedSize[0x38]
+class SoundNodeModulatorContinuous: public SoundNode
+{
+public:
+	struct ModulatorContinuousParams                             PitchModulationParams;                             // 0x38(0x20)
+	struct ModulatorContinuousParams                             VolumeModulationParams;                            // 0x58(0x20)
+};
+
+
+// Size 0x48 (Full Size[0xb8] - InheritedSize[0x70]
+class MaterialExpressionCustom: public MaterialExpression
+{
+public:
+	struct FString                                               Code;                                              // 0x70(0x10)
+	char                                                         OutputType;                                        // 0x80(0x1)
+	struct FString                                               Description;                                       // 0x88(0x10)
+	TArray<struct CustomInput>                                   Inputs;                                            // 0x98(0x10)
+	struct FString                                               DeclarationCode;                                   // 0xa8(0x10)
+};
+
+
+// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
+class DistributionFloatUniformCurve: public DistributionFloat
+{
+public:
+	struct InterpCurveVector2D                                   ConstantCurve;                                     // 0x38(0x18)
+};
+
+
+// Size 0xf0 (Full Size[0x160] - InheritedSize[0x70]
+class MaterialExpressionIfCondition: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
+	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
+	struct ExpressionInput                                       IfTrue;                                            // 0xe0(0x38)
+	struct ExpressionInput                                       IfFalse;                                           // 0x118(0x38)
+	char                                                         Condition;                                         // 0x150(0x1)
+	char                                                         Attribute;                                         // 0x151(0x1)
+	float                                                        ConstB;                                            // 0x154(0x4)
+	float                                                        ConstIfTrue;                                       // 0x158(0x4)
+	float                                                        ConstIfFalse;                                      // 0x15c(0x4)
+};
+
+
+// Size 0x98 (Full Size[0x160] - InheritedSize[0xc8]
+class TimelineComponent: public ActorComponent
+{
+public:
+	struct Timeline                                              TheTimeline;                                       // 0xc8(0x98)
+};
+
+
+// Size 0x70 (Full Size[0xe0] - InheritedSize[0x70]
+class MaterialExpressionDotProduct: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
+	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class Light: public Actor
+{
+public:
+	class LightComponent*                                        LightComponent;                                    // 0x3c8(0x8)
+};
+
+
+// Size 0x88 (Full Size[0xd0] - InheritedSize[0x48]
+class VectorFieldStatic: public VectorField
+{
+public:
+	int                                                          SizeX;                                             // 0x48(0x4)
+	int                                                          SizeY;                                             // 0x4c(0x4)
+	int                                                          SizeZ;                                             // 0x50(0x4)
+};
+
+
+// Size 0x20 (Full Size[0x90] - InheritedSize[0x70]
+class MaterialExpressionDynamicParameter: public MaterialExpression
+{
+public:
+	TArray<String>                                               ParamNames;                                        // 0x70(0x10)
+	struct LinearColor                                           DefaultValue;                                      // 0x80(0x10)
+};
+
+
+// Size 0xb8 (Full Size[0x128] - InheritedSize[0x70]
+class MaterialExpressionClamp: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
+	struct ExpressionInput                                       Min;                                               // 0xa8(0x38)
+	struct ExpressionInput                                       Max;                                               // 0xe0(0x38)
+	char                                                         ClampMode;                                         // 0x118(0x1)
+	float                                                        MinDefault;                                        // 0x11c(0x4)
+	float                                                        MaxDefault;                                        // 0x120(0x4)
+};
+
+
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class SoundNodeDistanceCrossFade: public SoundNode
+{
+public:
+	TArray<struct DistanceDatum>                                 CrossFadeInput;                                    // 0x38(0x10)
+};
+
+
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionUnderwaterTranslucencyTexture: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Coordinates;                                       // 0x70(0x38)
+};
+
+
+// Size 0x578 (Full Size[0x5e8] - InheritedSize[0x70]
+class MaterialExpressionMakeMaterialAttributes: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       BaseColor;                                         // 0x70(0x38)
+	struct ExpressionInput                                       Metallic;                                          // 0xa8(0x38)
+	struct ExpressionInput                                       Specular;                                          // 0xe0(0x38)
+	struct ExpressionInput                                       Roughness;                                         // 0x118(0x38)
+	struct ExpressionInput                                       EmissiveColor;                                     // 0x150(0x38)
+	struct ExpressionInput                                       Opacity;                                           // 0x188(0x38)
+	struct ExpressionInput                                       OpacityMask;                                       // 0x1c0(0x38)
+	struct ExpressionInput                                       Normal;                                            // 0x1f8(0x38)
+	struct ExpressionInput                                       WorldPositionOffset;                               // 0x230(0x38)
+	struct ExpressionInput                                       WorldDisplacement;                                 // 0x268(0x38)
+	struct ExpressionInput                                       TessellationMultiplier;                            // 0x2a0(0x38)
+	struct ExpressionInput                                       SubsurfaceColor;                                   // 0x2d8(0x38)
+	struct ExpressionInput                                       ClearCoat;                                         // 0x310(0x38)
+	struct ExpressionInput                                       ClearCoatRoughness;                                // 0x348(0x38)
+	struct ExpressionInput                                       AmbientOcclusion;                                  // 0x380(0x38)
+	struct ExpressionInput                                       Refraction;                                        // 0x3b8(0x38)
+	struct ExpressionInput                                       CustomizedUVs;                                     // 0x3f0(0x38)
+	struct ExpressionInput                                       PixelDepthOffset;                                  // 0x5b0(0x38)
+};
+
+
+// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
+class FogVolume: public Actor
+{
+public:
+	class SphereComponent*                                       SphereComponent;                                   // 0x3c8(0x8)
+	class FogVolumeComponent*                                    FogVolumeComponent;                                // 0x3d0(0x8)
+};
+
+
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionFrac: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
+};
+
+
+// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
+class MaterialExpressionMax: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
+	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
+	float                                                        ConstA;                                            // 0xe0(0x4)
+	float                                                        ConstB;                                            // 0xe4(0x4)
 };
 
 
@@ -4479,358 +5718,71 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class SceneCapture: public Actor
-{
-public:
-	class StaticMeshComponent*                                   MeshComp;                                          // 0x3c8(0x8)
-};
-
-
-// Size 0x1f8 (Full Size[0x260] - InheritedSize[0x68]
-class ActorChannel: public Channel
-{
-public:
-	class Actor*                                                 Actor;                                             // 0x68(0x8)
-	TArray<class Object*>                                        ObjectsRequiredForQueuedBunches;                   // 0x158(0x10)
-};
-
-
-// Size 0x80 (Full Size[0xf0] - InheritedSize[0x70]
-class MaterialExpressionDesaturation: public MaterialExpression
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionOneMinus: public MaterialExpression
 {
 public:
 	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
-	struct ExpressionInput                                       Fraction;                                          // 0xa8(0x38)
-	struct LinearColor                                           LuminanceFactors;                                  // 0xe0(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class VectorFieldVolume: public Actor
-{
-public:
-	class VectorFieldComponent*                                  VectorFieldComponent;                              // 0x3c8(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class SoundNodeModulator: public SoundNode
-{
-public:
-	float                                                        PitchMin;                                          // 0x38(0x4)
-	float                                                        PitchMax;                                          // 0x3c(0x4)
-	float                                                        VolumeMin;                                         // 0x40(0x4)
-	float                                                        VolumeMax;                                         // 0x44(0x4)
-};
-
-
-// Size 0x2f0 (Full Size[0x3b8] - InheritedSize[0xc8]
-class ParticleModuleLocationPrimitiveSphereGPU: public ParticleModuleLocationPrimitiveBase
-{
-public:
-	struct RawDistributionFloat                                  StartRadius;                                       // 0xc8(0x38)
-	struct RawDistributionFloat                                  AdditionalStartRadius;                             // 0x100(0x38)
-	bool                                                         bUseGroupAStartRadiusForAllGroups;                 // 0x1e0(0x1)
-	struct RawDistributionFloat                                  AdditionalVelocityScales;                          // 0x1e8(0x38)
-	bool                                                         bUseGroupAVelocityScaleForAllGroups;               // 0x2c8(0x1)
-	struct RawDistributionVector                                 AdditionalStartLocations;                          // 0x2d0(0x38)
-	bool                                                         bUseGroupAStartLocationForAllGroups;               // 0x3b0(0x1)
-};
-
-
-// Size 0x88 (Full Size[0xd8] - InheritedSize[0x50]
-class Blueprint: public BlueprintCore
-{
-public:
-	bool                                                         bRecompileOnLoad;                                  // 0x50(0x1)
-	class UClass*                                                ParentClass;                                       // 0x58(0x8)
-	class Object*                                                PRIVATE_InnermostPreviousCDO;                      // 0x60(0x8)
-	bool                                                         bHasBeenRegenerated;                               // 0x68(0x1)
-	bool                                                         bIsRegeneratingOnLoad;                             // 0x68(0x1)
-	class SimpleConstructionScript*                              SimpleConstructionScript;                          // 0x70(0x8)
-	TArray<class ActorComponent*>                                ComponentTemplates;                                // 0x78(0x10)
-	TArray<class TimelineTemplate*>                              Timelines;                                         // 0x88(0x10)
-	class InheritableComponentHandler*                           InheritableComponentHandler;                       // 0x98(0x8)
-	char                                                         BlueprintType;                                     // 0xa0(0x1)
-	int                                                          BlueprintSystemVersion;                            // 0xa4(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
-class MaterialExpressionStaticBool: public MaterialExpression
-{
-public:
-	bool                                                         Value;                                             // 0x70(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class DecalActor: public Actor
-{
-public:
-	class DecalComponent*                                        Decal;                                             // 0x3c8(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class SoundNodeSoundClass: public SoundNode
-{
-public:
-	class SoundClass*                                            SoundClassOverride;                                // 0x38(0x8)
-};
-
-
-// Size 0x70 (Full Size[0xe0] - InheritedSize[0x70]
-class MaterialExpressionDotProduct: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
-	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
-};
-
-
-// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
-class MaterialExpressionSine: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
-	float                                                        Period;                                            // 0xa8(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class InterpTrackInstFloatProp: public InterpTrackInstProperty
-{
-public:
-	float                                                        ResetFloat;                                        // 0x40(0x4)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionLocalDisturbanceTexture: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Coordinates;                                       // 0x70(0x38)
-};
-
-
-// Size 0x28 (Full Size[0x98] - InheritedSize[0x70]
-class MaterialExpressionComment: public MaterialExpression
-{
-public:
-	int                                                          SizeX;                                             // 0x70(0x4)
-	int                                                          SizeY;                                             // 0x74(0x4)
-	struct FString                                               Text;                                              // 0x78(0x10)
-	struct LinearColor                                           CommentColor;                                      // 0x88(0x10)
-};
-
-
-// Size 0x50 (Full Size[0x418] - InheritedSize[0x3c8]
-class Emitter: public Actor
-{
-public:
-	class ParticleSystemComponent*                               ParticleSystemComponent;                           // 0x3c8(0x8)
-	bool                                                         bDestroyOnSystemFinish;                            // 0x3d0(0x1)
-	bool                                                         bPostUpdateTickGroup;                              // 0x3d0(0x1)
-	bool                                                         bCurrentlyActive;                                  // 0x3d0(0x1)
-	multicastinlinedelegate                                      OnParticleSpawn;                                   // 0x3d8(0x10)
-	multicastinlinedelegate                                      OnParticleBurst;                                   // 0x3e8(0x10)
-	multicastinlinedelegate                                      OnParticleDeath;                                   // 0x3f8(0x10)
-	multicastinlinedelegate                                      OnParticleCollide;                                 // 0x408(0x10)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionDeriveNormalZ: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       InXY;                                              // 0x70(0x38)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionBlackBody: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Temp;                                              // 0x70(0x38)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class DistributionFloatConstant: public DistributionFloat
-{
-public:
-	float                                                        Constant;                                          // 0x38(0x4)
-};
-
-
-// Size 0xf0 (Full Size[0x1b8] - InheritedSize[0xc8]
-class ParticleModuleLocationVelocityComputeShaderOutput: public ParticleModuleLocationPrimitiveBase
-{
-public:
-	class ParticleComputeShaderData*                             PositionData;                                      // 0xc8(0x8)
-	struct RawDistributionVector                                 ComputedVelocityScale;                             // 0xd0(0x38)
-	float                                                        SpeedCap;                                          // 0x108(0x4)
-	struct RawDistributionVector                                 BaseVelocity;                                      // 0x110(0x38)
-	struct RawDistributionVector                                 LocationOffset;                                    // 0x148(0x38)
-	struct RawDistributionVector                                 LocationOffsetScaledDirection;                     // 0x180(0x38)
-};
-
-
-// Size 0x48 (Full Size[0x110] - InheritedSize[0xc8]
-class MovementComponent: public ActorComponent
-{
-public:
-	class SceneComponent*                                        UpdatedComponent;                                  // 0xc8(0x8)
-	class PrimitiveComponent*                                    UpdatedPrimitive;                                  // 0xd0(0x8)
-	struct Vector                                                Velocity;                                          // 0xdc(0xc)
-	bool                                                         bConstrainToPlane;                                 // 0xe8(0x1)
-	bool                                                         bSnapToPlaneAtStart;                               // 0xe8(0x1)
-	char                                                         PlaneConstraintAxisSetting;                        // 0xec(0x1)
-	struct Vector                                                PlaneConstraintNormal;                             // 0xf0(0xc)
-	struct Vector                                                PlaneConstraintOrigin;                             // 0xfc(0xc)
-	bool                                                         bUpdateOnlyIfRendered;                             // 0x108(0x1)
-	bool                                                         bAutoUpdateTickRegistration;                       // 0x108(0x1)
-	bool                                                         bAutoRegisterUpdatedComponent;                     // 0x108(0x1)
-};
-
-
-// Size 0x10 (Full Size[0x80] - InheritedSize[0x70]
-class InterpTrackParticleReplay: public InterpTrack
-{
-public:
-	TArray<struct ParticleReplayTrackKey>                        TrackKeys;                                         // 0x70(0x10)
 };
 
 
 // Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
-class MaterialExpressionMax: public MaterialExpression
+class MaterialExpressionDepthFade: public MaterialExpression
 {
 public:
-	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
-	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
-	float                                                        ConstA;                                            // 0xe0(0x4)
-	float                                                        ConstB;                                            // 0xe4(0x4)
+	struct ExpressionInput                                       InOpacity;                                         // 0x70(0x38)
+	struct ExpressionInput                                       FadeDistance;                                      // 0xa8(0x38)
+	float                                                        OpacityDefault;                                    // 0xe0(0x4)
+	float                                                        FadeDistanceDefault;                               // 0xe4(0x4)
 };
 
 
-// Size 0x8 (Full Size[0x148] - InheritedSize[0x140]
-class TextureRenderTarget: public Texture
+// Size 0x345e0 (Full Size[0x34628] - InheritedSize[0x48]
+class NetConnection: public Player
 {
 public:
-	float                                                        TargetGamma;                                       // 0x140(0x4)
+	TArray<class ChildConnection*>                               Children;                                          // 0x50(0x10)
+	class NetDriver*                                             Driver;                                            // 0x60(0x8)
+	class PackageMap*                                            PackageMap;                                        // 0x68(0x8)
+	TArray<class Channel*>                                       OpenChannels;                                      // 0x70(0x10)
+	TArray<class Actor*>                                         SentTemporaries;                                   // 0x80(0x10)
+	class Actor*                                                 ViewTarget;                                        // 0x90(0x8)
+	class Actor*                                                 OwningActor;                                       // 0x98(0x8)
+	int                                                          MaxPacket;                                         // 0xa0(0x4)
+	bool                                                         InternalAck;                                       // 0xa4(0x1)
+	double                                                       LastReceiveTime;                                   // 0x3a0(0x8)
+	TArray<class Actor*>                                         ConsideredActorsList;                              // 0x344c8(0x10)
+	int                                                          MaxDormantActorsCheckedFromRelevancy;              // 0x344e8(0x4)
+	TArray<class Channel*>                                       DeferredCloseChannels;                             // 0x34548(0x10)
 };
 
 
-// Size 0x20 (Full Size[0x1c8] - InheritedSize[0x1a8]
-class ParticleModuleRotationRate_Seeded: public ParticleModuleRotationRate
+// Size 0x20 (Full Size[0x328] - InheritedSize[0x308]
+class ParticleModuleColor_Seeded: public ParticleModuleColor
 {
 public:
-	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x1a8(0x20)
+	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x308(0x20)
 };
 
 
-// Size 0x28 (Full Size[0x78] - InheritedSize[0x50]
-class AnimSequenceBase: public AnimationAsset
+// Size 0x138 (Full Size[0x170] - InheritedSize[0x38]
+class SoundNodeEnveloper: public SoundNode
 {
 public:
-	TArray<struct AnimNotifyEvent>                               Notifies;                                          // 0x50(0x10)
-	float                                                        SequenceLength;                                    // 0x60(0x4)
-	float                                                        RateScale;                                         // 0x64(0x4)
-	struct RawCurveTracks                                        RawCurveData;                                      // 0x68(0x10)
-};
-
-
-// Size 0x60 (Full Size[0xa30] - InheritedSize[0x9d0]
-class GameEngine: public Engine
-{
-public:
-	float                                                        MaxDeltaTime;                                      // 0x9d0(0x4)
-	float                                                        ServerFlushLogInterval;                            // 0x9d4(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
-class TriggerBase: public Actor
-{
-public:
-	class ShapeComponent*                                        CollisionComponent;                                // 0x3c8(0x8)
-	class BillboardComponent*                                    SpriteComponent;                                   // 0x3d0(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class InterpTrackInstColorProp: public InterpTrackInstProperty
-{
-public:
-	struct Color                                                 ResetColor;                                        // 0x40(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class Light: public Actor
-{
-public:
-	class LightComponent*                                        LightComponent;                                    // 0x3c8(0x8)
-};
-
-
-// Size 0x68 (Full Size[0x290] - InheritedSize[0x228]
-class AnimBlueprintGeneratedClass: public BlueprintGeneratedClass
-{
-public:
-	TArray<struct BakedAnimationStateMachine>                    BakedStateMachines;                                // 0x228(0x10)
-	class Skeleton*                                              TargetSkeleton;                                    // 0x238(0x8)
-	TArray<struct AnimNotifyEvent>                               AnimNotifies;                                      // 0x240(0x10)
-	int                                                          RootAnimNodeIndex;                                 // 0x250(0x4)
-	TArray<struct AnimGroupInfo>                                 Groups;                                            // 0x270(0x10)
-	TArray<struct Name>                                          SkeletonSlotNames;                                 // 0x280(0x10)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionCausticTexture: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Coordinates;                                       // 0x70(0x38)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionFloor: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionFrac: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
-};
-
-
-// Size 0x58 (Full Size[0x198] - InheritedSize[0x140]
-class Texture2D: public Texture
-{
-public:
-	int                                                          RequestedMips;                                     // 0x140(0x4)
-	int                                                          ResidentMips;                                      // 0x144(0x4)
-	int                                                          StreamingIndex;                                    // 0x148(0x4)
-	int                                                          FirstResourceMemMip;                               // 0x14c(0x4)
-	struct IntPoint                                              ImportedSize;                                      // 0x154(0x8)
-	float                                                        ForceMipLevelsToBeResidentTimestamp;               // 0x15c(0x4)
-	bool                                                         bTemporarilyDisableStreaming;                      // 0x160(0x1)
-	bool                                                         bIsStreamable;                                     // 0x160(0x1)
-	bool                                                         bHasCancelationPending;                            // 0x160(0x1)
-	bool                                                         bForceMiplevelsToBeResident;                       // 0x160(0x1)
-	bool                                                         bGlobalForceMipLevelsToBeResident;                 // 0x160(0x1)
-	char                                                         AddressX;                                          // 0x164(0x1)
-	char                                                         AddressY;                                          // 0x165(0x1)
-	int                                                          MinimumLoadedMips;                                 // 0x168(0x4)
+	float                                                        LoopStart;                                         // 0x38(0x4)
+	float                                                        LoopEnd;                                           // 0x3c(0x4)
+	float                                                        DurationAfterLoop;                                 // 0x40(0x4)
+	int                                                          LoopCount;                                         // 0x44(0x4)
+	bool                                                         bLoopIndefinitely;                                 // 0x48(0x1)
+	bool                                                         bLoop;                                             // 0x48(0x1)
+	class DistributionFloatConstantCurve*                        VolumeInterpCurve;                                 // 0x50(0x8)
+	class DistributionFloatConstantCurve*                        PitchInterpCurve;                                  // 0x58(0x8)
+	struct RuntimeFloatCurve                                     VolumeCurve;                                       // 0x60(0x80)
+	struct RuntimeFloatCurve                                     PitchCurve;                                        // 0xe0(0x80)
+	float                                                        PitchMin;                                          // 0x160(0x4)
+	float                                                        PitchMax;                                          // 0x164(0x4)
+	float                                                        VolumeMin;                                         // 0x168(0x4)
+	float                                                        VolumeMax;                                         // 0x16c(0x4)
 };
 
 
@@ -4851,6 +5803,207 @@ public:
 };
 
 
+// Size 0x48 (Full Size[0x80] - InheritedSize[0x38]
+class DeviceProfile: public TextureLODSettings
+{
+public:
+	struct FString                                               DeviceType;                                        // 0x38(0x10)
+	struct FString                                               BaseProfileName;                                   // 0x48(0x10)
+	class Object*                                                Parent;                                            // 0x58(0x8)
+	TArray<String>                                               CVars;                                             // 0x68(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class InterpTrackInstFloatProp: public InterpTrackInstProperty
+{
+public:
+	float                                                        ResetFloat;                                        // 0x40(0x4)
+};
+
+
+// Size 0x10 (Full Size[0x80] - InheritedSize[0x70]
+class MaterialExpressionFontSample: public MaterialExpression
+{
+public:
+	class Font*                                                  Font;                                              // 0x70(0x8)
+	int                                                          FontTexturePage;                                   // 0x78(0x4)
+};
+
+
+// Size 0x190 (Full Size[0x1f0] - InheritedSize[0x60]
+class ParticleModuleEventReceiverSpawn: public ParticleModuleEventReceiverBase
+{
+public:
+	struct RawDistributionFloat                                  SpawnCount;                                        // 0x60(0x38)
+	struct RawDistributionFloat                                  AdditionalSpawnCounts;                             // 0x98(0x38)
+	bool                                                         bUseGroupAForAll;                                  // 0x1b0(0x1)
+	bool                                                         bUseParticleTime;                                  // 0x1b0(0x1)
+	bool                                                         bUsePSysLocation;                                  // 0x1b0(0x1)
+	bool                                                         bInheritVelocity;                                  // 0x1b0(0x1)
+	struct RawDistributionVector                                 InheritVelocityScale;                              // 0x1b8(0x38)
+};
+
+
+// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
+class MaterialExpressionStaticBool: public MaterialExpression
+{
+public:
+	bool                                                         Value;                                             // 0x70(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class SoundNodeSoundClass: public SoundNode
+{
+public:
+	class SoundClass*                                            SoundClassOverride;                                // 0x38(0x8)
+};
+
+
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
+class ComponentAggregatorComponent: public ActorComponent
+{
+public:
+	TArray<class Object*>                                        Aggregatables;                                     // 0xd0(0x10)
+};
+
+
+// Size 0x18 (Full Size[0x88] - InheritedSize[0x70]
+class InterpTrackVisibility: public InterpTrack
+{
+public:
+	TArray<struct VisibilityTrackKey>                            VisibilityTrack;                                   // 0x70(0x10)
+	bool                                                         bFireEventsWhenForwards;                           // 0x80(0x1)
+	bool                                                         bFireEventsWhenBackwards;                          // 0x80(0x1)
+	bool                                                         bFireEventsWhenJumpingForwards;                    // 0x80(0x1)
+};
+
+
+// Size 0x1e0 (Full Size[0x228] - InheritedSize[0x48]
+class LocalPlayer: public Player
+{
+public:
+	class GameViewportClient*                                    ViewportClient;                                    // 0x78(0x8)
+	char                                                         AspectRatioAxisConstraint;                         // 0xc0(0x1)
+	class UClass*                                                PendingLevelPlayerControllerClass;                 // 0xc8(0x8)
+	bool                                                         bSentSplitJoin;                                    // 0xd0(0x1)
+	float                                                        MinimumAspectRatio;                                // 0xd4(0x4)
+};
+
+
+// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
+class InterpTrackInstLinearColorProp: public InterpTrackInstProperty
+{
+public:
+	struct LinearColor                                           ResetColor;                                        // 0x40(0x10)
+};
+
+
+// Size 0x218 (Full Size[0x2e0] - InheritedSize[0xc8]
+class SceneComponent: public ActorComponent
+{
+public:
+	TArray<class SceneComponent*>                                AttachChildren;                                    // 0xc8(0x10)
+	bool                                                         bRequiresCustomLocation;                           // 0xd8(0x1)
+	class SceneComponent*                                        AttachParent;                                      // 0xe0(0x8)
+	struct FName                                                 AttachSocketName;                                  // 0xe8(0x8)
+	bool                                                         bAbsoluteLocation;                                 // 0xf0(0x1)
+	bool                                                         bAbsoluteRotation;                                 // 0xf0(0x1)
+	bool                                                         bAbsoluteScale;                                    // 0xf0(0x1)
+	bool                                                         bVisible;                                          // 0xf0(0x1)
+	bool                                                         bAbsoluteTranslation;                              // 0xf0(0x1)
+	bool                                                         bHiddenInGame;                                     // 0xf0(0x1)
+	bool                                                         bShouldUpdatePhysicsVolume;                        // 0xf0(0x1)
+	bool                                                         bBoundsChangeTriggersStreamingDataRebuild;         // 0xf0(0x1)
+	bool                                                         bUseAttachParentBound;                             // 0xf1(0x1)
+	bool                                                         bComponentIsUnionOfChildren;                       // 0xf1(0x1)
+	bool                                                         bJitterReduction;                                  // 0xf1(0x1)
+	bool                                                         CacheRootVelocity;                                 // 0xf1(0x1)
+	bool                                                         bWorldToComponentUpdated;                          // 0xf1(0x1)
+	class PhysicsVolume*                                         PhysicsVolume;                                     // 0x100(0x8)
+	struct Vector                                                RelativeLocation;                                  // 0x108(0xc)
+	struct Rotator                                               RelativeRotation;                                  // 0x114(0xc)
+	struct Vector                                                RelativeScale3D;                                   // 0x120(0xc)
+	char                                                         Mobility;                                          // 0x230(0x1)
+	char                                                         DetailMode;                                        // 0x231(0x1)
+	struct Vector                                                ComponentVelocity;                                 // 0x23c(0xc)
+	multicastinlinedelegate                                      PhysicsVolumeChangedDelegate;                      // 0x248(0x10)
+	TArray<struct Name>                                          SocketVelocitiesToCache;                           // 0x268(0x10)
+	TArray<class Actor*>                                         MovedActors;                                       // 0x278(0x10)
+};
+
+
+// Size 0xe8 (Full Size[0x158] - InheritedSize[0x70]
+class MaterialExpressionSphereMask: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
+	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
+	struct ExpressionInput                                       Radius;                                            // 0xe0(0x38)
+	struct ExpressionInput                                       Hardness;                                          // 0x118(0x38)
+	float                                                        AttenuationRadius;                                 // 0x150(0x4)
+	float                                                        HardnessPercent;                                   // 0x154(0x4)
+};
+
+
+// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
+class MaterialExpressionSphericalParticleOpacity: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Density;                                           // 0x70(0x38)
+	float                                                        ConstantDensity;                                   // 0xa8(0x4)
+};
+
+
+// Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
+class ParticleModuleLocationComputeShaderOutput: public ParticleModuleLocationPrimitiveBase
+{
+public:
+	class ParticleComputeShaderData*                             PositionData;                                      // 0xc8(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
+class DistributionVectorConstant: public DistributionVector
+{
+public:
+	struct Vector                                                Constant;                                          // 0x38(0xc)
+	bool                                                         bLockAxes;                                         // 0x44(0x1)
+	char                                                         LockedAxes;                                        // 0x48(0x1)
+};
+
+
+// Size 0x18 (Full Size[0x88] - InheritedSize[0x70]
+class InterpTrackEvent: public InterpTrack
+{
+public:
+	TArray<struct EventTrackKey>                                 EventTrack;                                        // 0x70(0x10)
+	bool                                                         bFireEventsWhenForwards;                           // 0x80(0x1)
+	bool                                                         bFireEventsWhenBackwards;                          // 0x80(0x1)
+	bool                                                         bFireEventsWhenJumpingForwards;                    // 0x80(0x1)
+	bool                                                         bUseCustomEventName;                               // 0x80(0x1)
+};
+
+
+// Size 0x20 (Full Size[0xb0] - InheritedSize[0x90]
+class EdGraphNode_Documentation: public EdGraphNode
+{
+public:
+	struct FString                                               Link;                                              // 0x90(0x10)
+	struct FString                                               Excerpt;                                           // 0xa0(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
+class ParticleModuleSpawnBase: public ParticleModule
+{
+public:
+	bool                                                         bProcessSpawnRate;                                 // 0x50(0x1)
+	bool                                                         bProcessBurstList;                                 // 0x50(0x1)
+};
+
+
 // Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
 class VertexAnimation: public VertexAnimBase
 {
@@ -4859,37 +6012,163 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
-class MaterialExpressionConstant2Vector: public MaterialExpression
+// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
+class PawnNoiseEmitterComponent: public ActorComponent
 {
 public:
-	float                                                        R;                                                 // 0x70(0x4)
-	float                                                        G;                                                 // 0x74(0x4)
+	bool                                                         bAIPerceptionSystemCompatibilityMode;              // 0xc8(0x1)
+	struct Vector                                                LastRemoteNoisePosition;                           // 0xcc(0xc)
+	float                                                        NoiseLifetime;                                     // 0xd8(0x4)
+	float                                                        LastRemoteNoiseVolume;                             // 0xdc(0x4)
+	float                                                        LastRemoteNoiseTime;                               // 0xe0(0x4)
+	float                                                        LastLocalNoiseVolume;                              // 0xe4(0x4)
+	float                                                        LastLocalNoiseTime;                                // 0xe8(0x4)
+};
+
+
+// Size 0xb8 (Full Size[0x128] - InheritedSize[0x70]
+class MaterialExpressionFresnel: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       ExponentIn;                                        // 0x70(0x38)
+	float                                                        Exponent;                                          // 0xa8(0x4)
+	struct ExpressionInput                                       BaseReflectFractionIn;                             // 0xb0(0x38)
+	float                                                        BaseReflectFraction;                               // 0xe8(0x4)
+	struct ExpressionInput                                       Normal;                                            // 0xf0(0x38)
+};
+
+
+// Size 0x58 (Full Size[0xc8] - InheritedSize[0x70]
+class InterpTrackMove: public InterpTrack
+{
+public:
+	struct InterpCurveVector                                     PosTrack;                                          // 0x70(0x18)
+	struct InterpCurveVector                                     EulerTrack;                                        // 0x88(0x18)
+	struct InterpLookupTrack                                     LookupTrack;                                       // 0xa0(0x10)
+	struct FName                                                 LookAtGroupName;                                   // 0xb0(0x8)
+	float                                                        LinCurveTension;                                   // 0xb8(0x4)
+	float                                                        AngCurveTension;                                   // 0xbc(0x4)
+	bool                                                         bUseQuatInterpolation;                             // 0xc0(0x1)
+	bool                                                         bShowArrowAtKeys;                                  // 0xc0(0x1)
+	bool                                                         bDisableMovement;                                  // 0xc0(0x1)
+	bool                                                         bShowTranslationOnCurveEd;                         // 0xc0(0x1)
+	bool                                                         bShowRotationOnCurveEd;                            // 0xc0(0x1)
+	bool                                                         bHide3DTrack;                                      // 0xc0(0x1)
+	char                                                         RotMode;                                           // 0xc4(0x1)
+};
+
+
+// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
+class MaterialExpressionFunctionOutput: public MaterialExpression
+{
+public:
+	struct FString                                               OutputName;                                        // 0x70(0x10)
+	struct FString                                               Description;                                       // 0x80(0x10)
+	int                                                          SortPriority;                                      // 0x90(0x4)
+	struct ExpressionInput                                       A;                                                 // 0x98(0x38)
+	bool                                                         bLastPreviewed;                                    // 0xd0(0x1)
+	struct Guid                                                  Id;                                                // 0xd4(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
+class MaterialInstanceActor: public Actor
+{
+public:
+	TArray<class Actor*>                                         TargetActors;                                      // 0x3c8(0x10)
 };
 
 
 // Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
-class MaterialExpressionTime: public MaterialExpression
+class MaterialExpressionViewProperty: public MaterialExpression
 {
 public:
-	bool                                                         bIgnorePause;                                      // 0x70(0x1)
-	bool                                                         bOverride_Period;                                  // 0x70(0x1)
-	float                                                        Period;                                            // 0x74(0x4)
+	char                                                         Property;                                          // 0x70(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
+class MaterialExpressionWorldPosition: public MaterialExpression
+{
+public:
+	char                                                         WorldPositionShaderOffset;                         // 0x70(0x1)
+};
+
+
+// Size 0x20 (Full Size[0x198] - InheritedSize[0x178]
+class ParticleModuleLocation_Seeded: public ParticleModuleLocation
+{
+public:
+	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x178(0x20)
 };
 
 
 // Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
-class MaterialExpressionConstantBiasScale: public MaterialExpression
+class MaterialExpressionSine: public MaterialExpression
 {
 public:
 	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
-	float                                                        Bias;                                              // 0xa8(0x4)
-	float                                                        Scale;                                             // 0xac(0x4)
+	float                                                        Period;                                            // 0xa8(0x4)
+};
+
+
+// Size 0x18 (Full Size[0x88] - InheritedSize[0x70]
+class InterpTrackBoolProp: public InterpTrack
+{
+public:
+	TArray<struct BoolTrackKey>                                  BoolTrack;                                         // 0x70(0x10)
+	struct FName                                                 PropertyName;                                      // 0x80(0x8)
+};
+
+
+// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
+class MaterialExpressionDecalMipmapLevel: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       TextureSize;                                       // 0x70(0x38)
+	float                                                        ConstWidth;                                        // 0xa8(0x4)
+	float                                                        ConstHeight;                                       // 0xac(0x4)
+};
+
+
+// Size 0x60 (Full Size[0x428] - InheritedSize[0x3c8]
+class Controller: public Actor
+{
+public:
+	class Pawn*                                                  Pawn;                                              // 0x3d0(0x8)
+	class Character*                                             Character;                                         // 0x3e0(0x8)
+	class PlayerState*                                           PlayerState;                                       // 0x3e8(0x8)
+	class SceneComponent*                                        TransformComponent;                                // 0x3f0(0x8)
+	struct Rotator                                               ControlRotation;                                   // 0x3f8(0xc)
+	bool                                                         bAttachToPawn;                                     // 0x404(0x1)
+	struct FName                                                 StateName;                                         // 0x410(0x8)
+	multicastinlinedelegate                                      OnInstigatedAnyDamage;                             // 0x418(0x10)
+};
+
+
+// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
+class DistributionVectorUniformCurve: public DistributionVector
+{
+public:
+	struct InterpCurveTwoVectors                                 ConstantCurve;                                     // 0x38(0x18)
+	bool                                                         bLockAxes1;                                        // 0x50(0x1)
+	bool                                                         bLockAxes2;                                        // 0x50(0x1)
+	char                                                         LockedAxes;                                        // 0x54(0x1)
+	char                                                         MirrorFlags;                                       // 0x56(0x1)
+	bool                                                         bUseExtremes;                                      // 0x5c(0x1)
+};
+
+
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class InterpTrackInstColorProp: public InterpTrackInstProperty
+{
+public:
+	struct Color                                                 ResetColor;                                        // 0x40(0x4)
 };
 
 
 // Size 0x70 (Full Size[0xe0] - InheritedSize[0x70]
-class MaterialExpressionFmod: public MaterialExpression
+class MaterialExpressionAppendVector: public MaterialExpression
 {
 public:
 	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
@@ -4897,30 +6176,12 @@ public:
 };
 
 
-// Size 0x88 (Full Size[0xd0] - InheritedSize[0x48]
-class VectorFieldStatic: public VectorField
-{
-public:
-	int                                                          SizeX;                                             // 0x48(0x4)
-	int                                                          SizeY;                                             // 0x4c(0x4)
-	int                                                          SizeZ;                                             // 0x50(0x4)
-};
-
-
 // Size 0x70 (Full Size[0xe0] - InheritedSize[0x70]
-class MaterialExpressionCrossProduct: public MaterialExpression
+class MaterialExpressionLightmassReplace: public MaterialExpression
 {
 public:
-	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
-	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionOneMinus: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
+	struct ExpressionInput                                       Realtime;                                          // 0x70(0x38)
+	struct ExpressionInput                                       Lightmass;                                         // 0xa8(0x38)
 };
 
 
@@ -4947,38 +6208,81 @@ public:
 };
 
 
-// Size 0x138 (Full Size[0x170] - InheritedSize[0x38]
-class SoundNodeEnveloper: public SoundNode
+// Size 0x28 (Full Size[0x78] - InheritedSize[0x50]
+class AnimSequenceBase: public AnimationAsset
 {
 public:
-	float                                                        LoopStart;                                         // 0x38(0x4)
-	float                                                        LoopEnd;                                           // 0x3c(0x4)
-	float                                                        DurationAfterLoop;                                 // 0x40(0x4)
-	int                                                          LoopCount;                                         // 0x44(0x4)
-	bool                                                         bLoopIndefinitely;                                 // 0x48(0x1)
-	bool                                                         bLoop;                                             // 0x48(0x1)
-	class DistributionFloatConstantCurve*                        VolumeInterpCurve;                                 // 0x50(0x8)
-	class DistributionFloatConstantCurve*                        PitchInterpCurve;                                  // 0x58(0x8)
-	struct RuntimeFloatCurve                                     VolumeCurve;                                       // 0x60(0x80)
-	struct RuntimeFloatCurve                                     PitchCurve;                                        // 0xe0(0x80)
-	float                                                        PitchMin;                                          // 0x160(0x4)
-	float                                                        PitchMax;                                          // 0x164(0x4)
-	float                                                        VolumeMin;                                         // 0x168(0x4)
-	float                                                        VolumeMax;                                         // 0x16c(0x4)
+	TArray<struct AnimNotifyEvent>                               Notifies;                                          // 0x50(0x10)
+	float                                                        SequenceLength;                                    // 0x60(0x4)
+	float                                                        RateScale;                                         // 0x64(0x4)
+	struct RawCurveTracks                                        RawCurveData;                                      // 0x68(0x10)
 };
 
 
-// Size 0x190 (Full Size[0x1f0] - InheritedSize[0x60]
-class ParticleModuleEventReceiverSpawn: public ParticleModuleEventReceiverBase
+// Size 0x10 (Full Size[0x80] - InheritedSize[0x70]
+class MaterialExpressionBoneMatrix: public MaterialExpression
 {
 public:
-	struct RawDistributionFloat                                  SpawnCount;                                        // 0x60(0x38)
-	struct RawDistributionFloat                                  AdditionalSpawnCounts;                             // 0x98(0x38)
-	bool                                                         bUseGroupAForAll;                                  // 0x1b0(0x1)
-	bool                                                         bUseParticleTime;                                  // 0x1b0(0x1)
-	bool                                                         bUsePSysLocation;                                  // 0x1b0(0x1)
-	bool                                                         bInheritVelocity;                                  // 0x1b0(0x1)
-	struct RawDistributionVector                                 InheritVelocityScale;                              // 0x1b8(0x38)
+	int                                                          ReferenceIndex;                                    // 0x70(0x4)
+	struct FName                                                 BoneName;                                          // 0x74(0x8)
+	bool                                                         bPosition;                                         // 0x7c(0x1)
+};
+
+
+// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
+class MaterialExpressionConstantBiasScale: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
+	float                                                        Bias;                                              // 0xa8(0x4)
+	float                                                        Scale;                                             // 0xac(0x4)
+};
+
+
+// Size 0x10 (Full Size[0x220] - InheritedSize[0x210]
+class LevelStreamingKismet: public LevelStreaming
+{
+public:
+	bool                                                         bInitiallyLoaded;                                  // 0x210(0x1)
+	bool                                                         bInitiallyVisible;                                 // 0x210(0x1)
+};
+
+
+// Size 0x50 (Full Size[0x418] - InheritedSize[0x3c8]
+class NavLinkProxy: public Actor
+{
+public:
+	TArray<struct NavigationLink>                                PointLinks;                                        // 0x3d8(0x10)
+	TArray<struct NavigationSegmentLink>                         SegmentLinks;                                      // 0x3e8(0x10)
+	class NavLinkCustomComponent*                                SmartLinkComp;                                     // 0x3f8(0x8)
+	bool                                                         bSmartLinkIsRelevant;                              // 0x400(0x1)
+	multicastinlinedelegate                                      OnSmartLinkReached;                                // 0x408(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x1b8] - InheritedSize[0x1a8]
+class ParticleModuleLocationGPU2: public ParticleModuleLocationGPU
+{
+public:
+	char                                                         SpawnLocationValueSemantic;                        // 0x1a8(0x1)
+	char                                                         AdditionalSpawnLocationValueSemantics;             // 0x1a9(0x1)
+	bool                                                         bUseGroupASpawnLocationValueSemanticForAllGroups;  // 0x1b0(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class SoundNodeBranch: public SoundNode
+{
+public:
+	struct FName                                                 BoolParameterName;                                 // 0x38(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
+class AmbientSound: public Actor
+{
+public:
+	class AudioComponent*                                        AudioComponent;                                    // 0x3c8(0x8)
 };
 
 
@@ -4992,28 +6296,67 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class SoundNodeMixer: public SoundNode
+// Size 0x58 (Full Size[0x420] - InheritedSize[0x3c8]
+class AutomaticInstancingActor: public Actor
 {
 public:
-	TArray<float>                                                InputVolume;                                       // 0x38(0x10)
+	class SceneComponent*                                        DummyRoot;                                         // 0x3c8(0x8)
+	map                                                          CookedInstancedStaticMeshes;                       // 0x3d0(0x50)
 };
 
 
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class TextRenderActor: public Actor
+// Size 0x20 (Full Size[0x90] - InheritedSize[0x70]
+class InterpTrackVectorBase: public InterpTrack
 {
 public:
-	class TextRenderComponent*                                   TextRender;                                        // 0x3c8(0x8)
+	struct InterpCurveVector                                     VectorTrack;                                       // 0x70(0x18)
+	float                                                        CurveTension;                                      // 0x88(0x4)
 };
 
 
-// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
-class InterpGroupCamera: public InterpGroup
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionAbs: public MaterialExpression
 {
 public:
-	class CameraAnim*                                            CameraAnimInst;                                    // 0x50(0x8)
-	float                                                        CompressTolerance;                                 // 0x58(0x4)
+	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
+};
+
+
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionDistanceFieldGradient: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       Position;                                          // 0x70(0x38)
+};
+
+
+// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
+class MaterialExpressionTime: public MaterialExpression
+{
+public:
+	bool                                                         bIgnorePause;                                      // 0x70(0x1)
+	bool                                                         bOverride_Period;                                  // 0x70(0x1)
+	float                                                        Period;                                            // 0x74(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
+class MaterialExpressionTranslucencyShadows: public MaterialExpression
+{
+public:
+	int                                                          Quality;                                           // 0x70(0x4)
+};
+
+
+// Size 0x10 (Full Size[0x80] - InheritedSize[0x70]
+class MaterialExpressionTextureCoordinate: public MaterialExpression
+{
+public:
+	int                                                          CoordinateIndex;                                   // 0x70(0x4)
+	float                                                        UTiling;                                           // 0x74(0x4)
+	float                                                        VTiling;                                           // 0x78(0x4)
+	bool                                                         UnMirrorU;                                         // 0x7c(0x1)
+	bool                                                         UnMirrorV;                                         // 0x7c(0x1)
 };
 
 
@@ -5025,26 +6368,6 @@ public:
 };
 
 
-// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
-class MaterialExpressionMultiply: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
-	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
-	float                                                        ConstA;                                            // 0xe0(0x4)
-	float                                                        ConstB;                                            // 0xe4(0x4)
-};
-
-
-// Size 0x118 (Full Size[0x188] - InheritedSize[0x70]
-class MaterialExpressionFeatureLevelSwitch: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Default;                                           // 0x70(0x38)
-	struct ExpressionInput                                       Inputs;                                            // 0xa8(0x38)
-};
-
-
 // Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
 class MaterialExpressionDistanceToNearestSurface: public MaterialExpression
 {
@@ -5053,91 +6376,64 @@ public:
 };
 
 
-// Size 0x1e0 (Full Size[0x228] - InheritedSize[0x48]
-class LocalPlayer: public Player
+// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
+class SoundNodeDialoguePlayer: public SoundNode
 {
 public:
-	class GameViewportClient*                                    ViewportClient;                                    // 0x78(0x8)
-	char                                                         AspectRatioAxisConstraint;                         // 0xc0(0x1)
-	class UClass*                                                PendingLevelPlayerControllerClass;                 // 0xc8(0x8)
-	bool                                                         bSentSplitJoin;                                    // 0xd0(0x1)
-	float                                                        MinimumAspectRatio;                                // 0xd4(0x4)
+	struct DialogueWaveParameter                                 DialogueWaveParameter;                             // 0x38(0x20)
+	bool                                                         bLooping;                                          // 0x58(0x1)
 };
 
 
-// Size 0x20 (Full Size[0x90] - InheritedSize[0x70]
-class InterpTrackFloatBase: public InterpTrack
+// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
+class MaterialExpressionConstant: public MaterialExpression
 {
 public:
-	struct InterpCurveFloat                                      FloatTrack;                                        // 0x70(0x18)
-	float                                                        CurveTension;                                      // 0x88(0x4)
+	float                                                        R;                                                 // 0x70(0x4)
 };
 
 
-// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
-class MaterialExpressionDivide: public MaterialExpression
+// Size 0x10 (Full Size[0x50] - InheritedSize[0x40]
+class AnimCompress_RemoveTrivialKeys: public AnimCompress
 {
 public:
-	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
-	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
-	float                                                        ConstA;                                            // 0xe0(0x4)
-	float                                                        ConstB;                                            // 0xe4(0x4)
+	float                                                        MaxPosDiff;                                        // 0x40(0x4)
+	float                                                        MaxAngleDiff;                                      // 0x44(0x4)
+	float                                                        MaxScaleDiff;                                      // 0x48(0x4)
 };
 
 
-// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
-class ParticleModuleAccelerationBase: public ParticleModule
+// Size 0x28 (Full Size[0x90] - InheritedSize[0x68]
+class VoiceChannel: public Channel
 {
 public:
-	bool                                                         bAlwaysInWorldSpace;                               // 0x50(0x1)
-};
-
-
-// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
-class MicroTransactionBase: public PlatformInterfaceBase
-{
-public:
-	TArray<struct PurchaseInfo>                                  AvailableProducts;                                 // 0x38(0x10)
-	struct FString                                               LastError;                                         // 0x48(0x10)
-	struct FString                                               LastErrorSolution;                                 // 0x58(0x10)
-};
-
-
-// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
-class MaterialExpressionAdd: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
-	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
-	float                                                        ConstA;                                            // 0xe0(0x4)
-	float                                                        ConstB;                                            // 0xe4(0x4)
+	int                                                          BandwidthPerSecondReservationInBytes;              // 0x80(0x4)
+	float                                                        SaturationCooloffPeriodInSeconds;                  // 0x88(0x4)
 };
 
 
 // Size 0x10 (Full Size[0x80] - InheritedSize[0x70]
-class MaterialExpressionSpeedTree: public MaterialExpression
+class InterpTrackParticleReplay: public InterpTrack
 {
 public:
-	char                                                         GeometryType;                                      // 0x70(0x1)
-	char                                                         WindType;                                          // 0x71(0x1)
-	char                                                         LODType;                                           // 0x72(0x1)
-	float                                                        BillboardThreshold;                                // 0x74(0x4)
-	bool                                                         bAccurateWindVelocities;                           // 0x78(0x1)
+	TArray<struct ParticleReplayTrackKey>                        TrackKeys;                                         // 0x70(0x10)
 };
 
 
-// Size 0x60 (Full Size[0x428] - InheritedSize[0x3c8]
-class Controller: public Actor
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MaterialExpressionDeriveNormalZ: public MaterialExpression
 {
 public:
-	class Pawn*                                                  Pawn;                                              // 0x3d0(0x8)
-	class Character*                                             Character;                                         // 0x3e0(0x8)
-	class PlayerState*                                           PlayerState;                                       // 0x3e8(0x8)
-	class SceneComponent*                                        TransformComponent;                                // 0x3f0(0x8)
-	struct Rotator                                               ControlRotation;                                   // 0x3f8(0xc)
-	bool                                                         bAttachToPawn;                                     // 0x404(0x1)
-	struct FName                                                 StateName;                                         // 0x410(0x8)
-	multicastinlinedelegate                                      OnInstigatedAnyDamage;                             // 0x418(0x10)
+	struct ExpressionInput                                       InXY;                                              // 0x70(0x38)
+};
+
+
+// Size 0x70 (Full Size[0xe0] - InheritedSize[0x70]
+class MaterialExpressionDistance: public MaterialExpression
+{
+public:
+	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
+	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
 };
 
 
@@ -5154,412 +6450,12 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
-class ParticleModuleEventReceiverKillParticles: public ParticleModuleEventReceiverBase
+// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
+class TriggerBase: public Actor
 {
 public:
-	bool                                                         bStopSpawning;                                     // 0x60(0x1)
-};
-
-
-// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
-class SoundNodeDialoguePlayer: public SoundNode
-{
-public:
-	struct DialogueWaveParameter                                 DialogueWaveParameter;                             // 0x38(0x20)
-	bool                                                         bLooping;                                          // 0x58(0x1)
-};
-
-
-// Size 0x78 (Full Size[0x440] - InheritedSize[0x3c8]
-class MatineeActor: public Actor
-{
-public:
-	class InterpData*                                            MatineeData;                                       // 0x3c8(0x8)
-	struct FName                                                 MatineeControllerName;                             // 0x3d0(0x8)
-	float                                                        PlayRate;                                          // 0x3d8(0x4)
-	bool                                                         bPlayOnLevelLoad;                                  // 0x3dc(0x1)
-	bool                                                         bForceStartPos;                                    // 0x3dc(0x1)
-	float                                                        ForceStartPosition;                                // 0x3e0(0x4)
-	bool                                                         bLooping;                                          // 0x3e4(0x1)
-	bool                                                         bRewindOnPlay;                                     // 0x3e4(0x1)
-	bool                                                         bNoResetOnRewind;                                  // 0x3e4(0x1)
-	bool                                                         bRewindIfAlreadyPlaying;                           // 0x3e4(0x1)
-	bool                                                         bDisableRadioFilter;                               // 0x3e4(0x1)
-	bool                                                         bClientSideOnly;                                   // 0x3e4(0x1)
-	bool                                                         bSkipUpdateIfNotVisible;                           // 0x3e4(0x1)
-	bool                                                         bIsSkippable;                                      // 0x3e4(0x1)
-	int                                                          PreferredSplitScreenNum;                           // 0x3e8(0x4)
-	bool                                                         bDisableMovementInput;                             // 0x3ec(0x1)
-	bool                                                         bDisableLookAtInput;                               // 0x3ec(0x1)
-	bool                                                         bHidePlayer;                                       // 0x3ec(0x1)
-	bool                                                         bHideHud;                                          // 0x3ec(0x1)
-	TArray<struct InterpGroupActorInfo>                          GroupActorInfos;                                   // 0x3f0(0x10)
-	bool                                                         bShouldShowGore;                                   // 0x400(0x1)
-	TArray<class InterpGroupInst*>                               GroupInst;                                         // 0x408(0x10)
-	TArray<struct CameraCutInfo>                                 CameraCuts;                                        // 0x418(0x10)
-	bool                                                         bIsPlaying;                                        // 0x428(0x1)
-	bool                                                         bReversePlayback;                                  // 0x428(0x1)
-	bool                                                         bPaused;                                           // 0x428(0x1)
-	bool                                                         bPendingStop;                                      // 0x428(0x1)
-	float                                                        InterpPosition;                                    // 0x42c(0x4)
-	char                                                         ReplicationForceIsPlaying;                         // 0x434(0x1)
-	bool                                                         bServerInitialLevelStreamingComplete;              // 0x43c(0x1)
-};
-
-
-// Size 0xa8 (Full Size[0x118] - InheritedSize[0x70]
-class MaterialExpressionGIReplace: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Default;                                           // 0x70(0x38)
-	struct ExpressionInput                                       StaticIndirect;                                    // 0xa8(0x38)
-	struct ExpressionInput                                       DynamicIndirect;                                   // 0xe0(0x38)
-};
-
-
-// Size 0x10 (Full Size[0x50] - InheritedSize[0x40]
-class AnimCompress_RemoveTrivialKeys: public AnimCompress
-{
-public:
-	float                                                        MaxPosDiff;                                        // 0x40(0x4)
-	float                                                        MaxAngleDiff;                                      // 0x44(0x4)
-	float                                                        MaxScaleDiff;                                      // 0x48(0x4)
-};
-
-
-// Size 0x20 (Full Size[0x90] - InheritedSize[0x70]
-class MaterialExpressionParameter: public MaterialExpression
-{
-public:
-	struct FName                                                 ParameterName;                                     // 0x70(0x8)
-	struct Guid                                                  ExpressionGUID;                                    // 0x78(0x10)
-	struct FName                                                 Group;                                             // 0x88(0x8)
-};
-
-
-// Size 0x30 (Full Size[0x60] - InheritedSize[0x30]
-class AnimNotifyState_TimedParticleEffect: public AnimNotifyState
-{
-public:
-	class ParticleSystem*                                        PSTemplate;                                        // 0x30(0x8)
-	struct FName                                                 SocketName;                                        // 0x38(0x8)
-	struct Vector                                                LocationOffset;                                    // 0x40(0xc)
-	struct Rotator                                               RotationOffset;                                    // 0x4c(0xc)
-	bool                                                         bOwnerOnlySee;                                     // 0x58(0x1)
-	bool                                                         bOwnerNoSee;                                       // 0x59(0x1)
-	bool                                                         bDestroyAtEnd;                                     // 0x5a(0x1)
-	bool                                                         bWorldOwnedEffect;                                 // 0x5b(0x1)
-};
-
-
-// Size 0x10 (Full Size[0x80] - InheritedSize[0x70]
-class MaterialExpressionConstant4Vector: public MaterialExpression
-{
-public:
-	struct LinearColor                                           Constant;                                          // 0x70(0x10)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionAtmosphericFogColor: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       WorldPosition;                                     // 0x70(0x38)
-};
-
-
-// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
-class PawnNoiseEmitterComponent: public ActorComponent
-{
-public:
-	bool                                                         bAIPerceptionSystemCompatibilityMode;              // 0xc8(0x1)
-	struct Vector                                                LastRemoteNoisePosition;                           // 0xcc(0xc)
-	float                                                        NoiseLifetime;                                     // 0xd8(0x4)
-	float                                                        LastRemoteNoiseVolume;                             // 0xdc(0x4)
-	float                                                        LastRemoteNoiseTime;                               // 0xe0(0x4)
-	float                                                        LastLocalNoiseVolume;                              // 0xe4(0x4)
-	float                                                        LastLocalNoiseTime;                                // 0xe8(0x4)
-};
-
-
-// Size 0x28 (Full Size[0x90] - InheritedSize[0x68]
-class VoiceChannel: public Channel
-{
-public:
-	int                                                          BandwidthPerSecondReservationInBytes;              // 0x80(0x4)
-	float                                                        SaturationCooloffPeriodInSeconds;                  // 0x88(0x4)
-};
-
-
-// Size 0xe8 (Full Size[0x158] - InheritedSize[0x70]
-class MaterialExpressionSphereMask: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
-	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
-	struct ExpressionInput                                       Radius;                                            // 0xe0(0x38)
-	struct ExpressionInput                                       Hardness;                                          // 0x118(0x38)
-	float                                                        AttenuationRadius;                                 // 0x150(0x4)
-	float                                                        HardnessPercent;                                   // 0x154(0x4)
-};
-
-
-// Size 0x70 (Full Size[0xe0] - InheritedSize[0x70]
-class MaterialExpressionAppendVector: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
-	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
-};
-
-
-// Size 0xe0 (Full Size[0x520] - InheritedSize[0x440]
-class AnimSingleNodeInstance: public AnimInstance
-{
-public:
-	class AnimationAsset*                                        CurrentAsset;                                      // 0x440(0x8)
-	class VertexAnimation*                                       CurrentVertexAnim;                                 // 0x448(0x8)
-	struct Vector                                                BlendSpaceInput;                                   // 0x450(0xc)
-	TArray<struct BlendSampleData>                               BlendSampleData;                                   // 0x460(0x10)
-	struct BlendFilter                                           BlendFilter;                                       // 0x470(0x90)
-	float                                                        CurrentTime;                                       // 0x500(0x4)
-	float                                                        PlayRate;                                          // 0x504(0x4)
-	delegate                                                     PostEvaluateAnimEvent;                             // 0x508(0x10)
-	bool                                                         bLooping;                                          // 0x518(0x1)
-	bool                                                         bPlaying;                                          // 0x518(0x1)
-	bool                                                         bReverse;                                          // 0x518(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class SoundNodeSwitch: public SoundNode
-{
-public:
-	struct FName                                                 IntParameterName;                                  // 0x38(0x8)
-};
-
-
-// Size 0x30 (Full Size[0xf8] - InheritedSize[0xc8]
-class NavRelevantComponent: public ActorComponent
-{
-public:
-	bool                                                         bNavigationRelevant;                               // 0xec(0x1)
-	bool                                                         bAttachToOwnersRoot;                               // 0xec(0x1)
-	class Object*                                                CachedNavParent;                                   // 0xf0(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x328] - InheritedSize[0x308]
-class ParticleModuleColor_Seeded: public ParticleModuleColor
-{
-public:
-	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x308(0x20)
-};
-
-
-// Size 0x48 (Full Size[0xd8] - InheritedSize[0x90]
-class ParticleModuleSubUVMovie: public ParticleModuleSubUV
-{
-public:
-	bool                                                         bUseEmitterTime;                                   // 0x90(0x1)
-	struct RawDistributionFloat                                  FrameRate;                                         // 0x98(0x38)
-	int                                                          StartingFrame;                                     // 0xd0(0x4)
-};
-
-
-// Size 0x70 (Full Size[0xe0] - InheritedSize[0x70]
-class MaterialExpressionLightmassReplace: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Realtime;                                          // 0x70(0x38)
-	struct ExpressionInput                                       Lightmass;                                         // 0xa8(0x38)
-};
-
-
-// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
-class MaterialExpressionDepthOfFieldFunction: public MaterialExpression
-{
-public:
-	char                                                         FunctionValue;                                     // 0x70(0x1)
-	struct ExpressionInput                                       Depth;                                             // 0x78(0x38)
-};
-
-
-// Size 0x48 (Full Size[0x80] - InheritedSize[0x38]
-class DeviceProfile: public TextureLODSettings
-{
-public:
-	struct FString                                               DeviceType;                                        // 0x38(0x10)
-	struct FString                                               BaseProfileName;                                   // 0x48(0x10)
-	class Object*                                                Parent;                                            // 0x58(0x8)
-	TArray<String>                                               CVars;                                             // 0x68(0x10)
-};
-
-
-// Size 0x58 (Full Size[0xc8] - InheritedSize[0x70]
-class InterpTrackMove: public InterpTrack
-{
-public:
-	struct InterpCurveVector                                     PosTrack;                                          // 0x70(0x18)
-	struct InterpCurveVector                                     EulerTrack;                                        // 0x88(0x18)
-	struct InterpLookupTrack                                     LookupTrack;                                       // 0xa0(0x10)
-	struct FName                                                 LookAtGroupName;                                   // 0xb0(0x8)
-	float                                                        LinCurveTension;                                   // 0xb8(0x4)
-	float                                                        AngCurveTension;                                   // 0xbc(0x4)
-	bool                                                         bUseQuatInterpolation;                             // 0xc0(0x1)
-	bool                                                         bShowArrowAtKeys;                                  // 0xc0(0x1)
-	bool                                                         bDisableMovement;                                  // 0xc0(0x1)
-	bool                                                         bShowTranslationOnCurveEd;                         // 0xc0(0x1)
-	bool                                                         bShowRotationOnCurveEd;                            // 0xc0(0x1)
-	bool                                                         bHide3DTrack;                                      // 0xc0(0x1)
-	char                                                         RotMode;                                           // 0xc4(0x1)
-};
-
-
-// Size 0x18 (Full Size[0x88] - InheritedSize[0x70]
-class InterpTrackBoolProp: public InterpTrack
-{
-public:
-	TArray<struct BoolTrackKey>                                  BoolTrack;                                         // 0x70(0x10)
-	struct FName                                                 PropertyName;                                      // 0x80(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class SoundNodeBranch: public SoundNode
-{
-public:
-	struct FName                                                 BoolParameterName;                                 // 0x38(0x8)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionLogarithm2: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       X;                                                 // 0x70(0x38)
-};
-
-
-// Size 0xf8 (Full Size[0x4c0] - InheritedSize[0x3c8]
-class HUD: public Actor
-{
-public:
-	struct Color                                                 WhiteColor;                                        // 0x3c8(0x4)
-	struct Color                                                 GreenColor;                                        // 0x3cc(0x4)
-	struct Color                                                 RedColor;                                          // 0x3d0(0x4)
-	class PlayerController*                                      PlayerOwner;                                       // 0x3d8(0x8)
-	bool                                                         bLostFocusPaused;                                  // 0x3e0(0x1)
-	bool                                                         bShowHUD;                                          // 0x3e0(0x1)
-	bool                                                         bShowDebugInfo;                                    // 0x3e0(0x1)
-	bool                                                         bShowHitBoxDebugInfo;                              // 0x3e0(0x1)
-	bool                                                         bShowOverlays;                                     // 0x3e0(0x1)
-	bool                                                         bEnableDebugTextShadow;                            // 0x3e0(0x1)
-	TArray<class Actor*>                                         PostRenderedActors;                                // 0x3e8(0x10)
-	float                                                        LastHUDRenderTime;                                 // 0x3f8(0x4)
-	float                                                        RenderDelta;                                       // 0x3fc(0x4)
-	TArray<struct Name>                                          DebugDisplay;                                      // 0x400(0x10)
-	TArray<struct Name>                                          ToggledDebugCategories;                            // 0x410(0x10)
-	class Canvas*                                                Canvas;                                            // 0x420(0x8)
-	class Canvas*                                                DebugCanvas;                                       // 0x428(0x8)
-	TArray<struct DebugTextInfo>                                 DebugTextList;                                     // 0x430(0x10)
-	class UClass*                                                ShowDebugTargetDesiredClass;                       // 0x440(0x8)
-	class Actor*                                                 ShowDebugTargetActor;                              // 0x448(0x8)
-};
-
-
-// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
-class MaterialExpressionMin: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
-	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
-	float                                                        ConstA;                                            // 0xe0(0x4)
-	float                                                        ConstB;                                            // 0xe4(0x4)
-};
-
-
-// Size 0xb0 (Full Size[0x120] - InheritedSize[0x70]
-class MaterialExpressionStaticSwitch: public MaterialExpression
-{
-public:
-	bool                                                         DefaultValue;                                      // 0x70(0x1)
-	struct ExpressionInput                                       A;                                                 // 0x78(0x38)
-	struct ExpressionInput                                       B;                                                 // 0xb0(0x38)
-	struct ExpressionInput                                       Value;                                             // 0xe8(0x38)
-};
-
-
-// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
-class InGameAdManager: public PlatformInterfaceBase
-{
-public:
-	bool                                                         bShouldPauseWhileAdOpen;                           // 0x38(0x1)
-	TArray<uintptr_t>                                            ClickedBannerDelegates;                            // 0x40(0x10)
-	TArray<uintptr_t>                                            ClosedAdDelegates;                                 // 0x50(0x10)
-};
-
-
-// Size 0x80 (Full Size[0xf0] - InheritedSize[0x70]
-class MaterialExpressionSceneDepth: public MaterialExpression
-{
-public:
-	char                                                         InputMode;                                         // 0x70(0x1)
-	struct ExpressionInput                                       Input;                                             // 0x78(0x38)
-	struct ExpressionInput                                       Coordinates;                                       // 0xb0(0x38)
-	struct Vector2D                                              ConstInput;                                        // 0xe8(0x8)
-};
-
-
-// Size 0x40 (Full Size[0x88] - InheritedSize[0x48]
-class VectorFieldAnimated: public VectorField
-{
-public:
-	class Texture2D*                                             Texture;                                           // 0x48(0x8)
-	char                                                         ConstructionOp;                                    // 0x50(0x1)
-	int                                                          VolumeSizeX;                                       // 0x54(0x4)
-	int                                                          VolumeSizeY;                                       // 0x58(0x4)
-	int                                                          VolumeSizeZ;                                       // 0x5c(0x4)
-	int                                                          SubImagesX;                                        // 0x60(0x4)
-	int                                                          SubImagesY;                                        // 0x64(0x4)
-	int                                                          FrameCount;                                        // 0x68(0x4)
-	float                                                        FramesPerSecond;                                   // 0x6c(0x4)
-	bool                                                         bLoop;                                             // 0x70(0x1)
-	class VectorFieldStatic*                                     NoiseField;                                        // 0x78(0x8)
-	float                                                        NoiseScale;                                        // 0x80(0x4)
-	float                                                        NoiseMax;                                          // 0x84(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x48] - InheritedSize[0x40]
-class AnimCompress_Automatic: public AnimCompress
-{
-public:
-	float                                                        MaxEndEffectorError;                               // 0x40(0x4)
-	bool                                                         bTryFixedBitwiseCompression;                       // 0x44(0x1)
-	bool                                                         bTryPerTrackBitwiseCompression;                    // 0x44(0x1)
-	bool                                                         bTryLinearKeyRemovalCompression;                   // 0x44(0x1)
-	bool                                                         bTryIntervalKeyRemoval;                            // 0x44(0x1)
-	bool                                                         bRunCurrentDefaultCompressor;                      // 0x44(0x1)
-	bool                                                         bAutoReplaceIfExistingErrorTooGreat;               // 0x44(0x1)
-	bool                                                         bRaiseMaxErrorToExisting;                          // 0x44(0x1)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionHash: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class SoundNodeGroupControl: public SoundNode
-{
-public:
-	TArray<int>                                                  GroupSizes;                                        // 0x38(0x10)
+	class ShapeComponent*                                        CollisionComponent;                                // 0x3c8(0x8)
+	class BillboardComponent*                                    SpriteComponent;                                   // 0x3d0(0x8)
 };
 
 
@@ -5572,256 +6468,25 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0x1e0] - InheritedSize[0x1c0]
-class ParticleModuleLifetime_Seeded: public ParticleModuleLifetime
-{
-public:
-	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x1c0(0x20)
-};
-
-
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class WaterEmissionVolume: public Actor
-{
-public:
-	class WaterEmissionVolumeComponent*                          WaterEmissionVolumeComponent;                      // 0x3c8(0x8)
-};
-
-
-// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
-class MaterialExpressionPower: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Base;                                              // 0x70(0x38)
-	struct ExpressionInput                                       Exponent;                                          // 0xa8(0x38)
-	float                                                        ConstExponent;                                     // 0xe0(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
-class MaterialExpressionViewProperty: public MaterialExpression
-{
-public:
-	char                                                         Property;                                          // 0x70(0x1)
-};
-
-
-// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
-class MaterialExpressionTransform: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
-	char                                                         TransformSourceType;                               // 0xa8(0x1)
-	char                                                         TransformType;                                     // 0xa9(0x1)
-};
-
-
-// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
-class MaterialExpressionSceneTexture: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Coordinates;                                       // 0x70(0x38)
-	char                                                         SceneTextureId;                                    // 0xa8(0x1)
-	bool                                                         bClampUVs;                                         // 0xa9(0x1)
-	bool                                                         bFiltered;                                         // 0xaa(0x1)
-};
-
-
-// Size 0x34588 (Full Size[0x345d0] - InheritedSize[0x48]
-class NetConnection: public Player
-{
-public:
-	TArray<class ChildConnection*>                               Children;                                          // 0x50(0x10)
-	class NetDriver*                                             Driver;                                            // 0x60(0x8)
-	class PackageMap*                                            PackageMap;                                        // 0x68(0x8)
-	TArray<class Channel*>                                       OpenChannels;                                      // 0x70(0x10)
-	TArray<class Actor*>                                         SentTemporaries;                                   // 0x80(0x10)
-	class Actor*                                                 ViewTarget;                                        // 0x90(0x8)
-	class Actor*                                                 OwningActor;                                       // 0x98(0x8)
-	int                                                          MaxPacket;                                         // 0xa0(0x4)
-	bool                                                         InternalAck;                                       // 0xa4(0x1)
-	double                                                       LastReceiveTime;                                   // 0x3a0(0x8)
-	TArray<class Actor*>                                         ConsideredActorsList;                              // 0x34470(0x10)
-	int                                                          MaxDormantActorsCheckedFromRelevancy;              // 0x34490(0x4)
-	TArray<class Channel*>                                       DeferredCloseChannels;                             // 0x344f0(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
-class DistributionFloatConstantCurve: public DistributionFloat
-{
-public:
-	struct InterpCurveFloat                                      ConstantCurve;                                     // 0x38(0x18)
-};
-
-
-// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
-class MaterialExpressionSubtract: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
-	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
-	float                                                        ConstA;                                            // 0xe0(0x4)
-	float                                                        ConstB;                                            // 0xe4(0x4)
-};
-
-
-// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
-class DistributionVectorUniform: public DistributionVector
-{
-public:
-	struct Vector                                                Max;                                               // 0x38(0xc)
-	struct Vector                                                Min;                                               // 0x44(0xc)
-	bool                                                         bLockAxes;                                         // 0x50(0x1)
-	char                                                         LockedAxes;                                        // 0x54(0x1)
-	char                                                         MirrorFlags;                                       // 0x55(0x1)
-	bool                                                         bUseExtremes;                                      // 0x58(0x1)
-};
-
-
-// Size 0x50 (Full Size[0x418] - InheritedSize[0x3c8]
-class NavLinkProxy: public Actor
-{
-public:
-	TArray<struct NavigationLink>                                PointLinks;                                        // 0x3d8(0x10)
-	TArray<struct NavigationSegmentLink>                         SegmentLinks;                                      // 0x3e8(0x10)
-	class NavLinkCustomComponent*                                SmartLinkComp;                                     // 0x3f8(0x8)
-	bool                                                         bSmartLinkIsRelevant;                              // 0x400(0x1)
-	multicastinlinedelegate                                      OnSmartLinkReached;                                // 0x408(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
-class InterpTrackInstVectorProp: public InterpTrackInstProperty
-{
-public:
-	struct Vector                                                ResetVector;                                       // 0x40(0xc)
-};
-
-
-// Size 0xb8 (Full Size[0x128] - InheritedSize[0x70]
-class MaterialExpressionClamp: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
-	struct ExpressionInput                                       Min;                                               // 0xa8(0x38)
-	struct ExpressionInput                                       Max;                                               // 0xe0(0x38)
-	char                                                         ClampMode;                                         // 0x118(0x1)
-	float                                                        MinDefault;                                        // 0x11c(0x4)
-	float                                                        MaxDefault;                                        // 0x120(0x4)
-};
-
-
-// Size 0x150 (Full Size[0x218] - InheritedSize[0xc8]
-class ParticleModuleLocationPrimitiveSphere: public ParticleModuleLocationPrimitiveBase
+// Size 0x2f0 (Full Size[0x3b8] - InheritedSize[0xc8]
+class ParticleModuleLocationPrimitiveSphereGPU: public ParticleModuleLocationPrimitiveBase
 {
 public:
 	struct RawDistributionFloat                                  StartRadius;                                       // 0xc8(0x38)
-	struct RawDistributionFloat                                  AdditionalStartRadiuses;                           // 0x100(0x38)
-	bool                                                         StartRadiusUseGroupAForAll;                        // 0x1e0(0x1)
-	struct Vector2D                                              PositiveXAngleRange;                               // 0x1e4(0x8)
-	struct Vector2D                                              NegativeXAngleRange;                               // 0x1ec(0x8)
-	struct Vector2D                                              PositiveYAngleRange;                               // 0x1f4(0x8)
-	struct Vector2D                                              NegativeYAngleRange;                               // 0x1fc(0x8)
-	struct Vector2D                                              PositiveZAngleRange;                               // 0x204(0x8)
-	struct Vector2D                                              NegativeZAngleRange;                               // 0x20c(0x8)
+	struct RawDistributionFloat                                  AdditionalStartRadius;                             // 0x100(0x38)
+	bool                                                         bUseGroupAStartRadiusForAllGroups;                 // 0x1e0(0x1)
+	struct RawDistributionFloat                                  AdditionalVelocityScales;                          // 0x1e8(0x38)
+	bool                                                         bUseGroupAVelocityScaleForAllGroups;               // 0x2c8(0x1)
+	struct RawDistributionVector                                 AdditionalStartLocations;                          // 0x2d0(0x38)
+	bool                                                         bUseGroupAStartLocationForAllGroups;               // 0x3b0(0x1)
 };
 
 
-// Size 0x568 (Full Size[0x930] - InheritedSize[0x3c8]
-class CameraActor: public Actor
+// Size 0x20 (Full Size[0x1c8] - InheritedSize[0x1a8]
+class ParticleModuleRotationRate_Seeded: public ParticleModuleRotationRate
 {
 public:
-	char                                                         AutoActivateForPlayer;                             // 0x3c8(0x1)
-	class CameraComponent*                                       CameraComponent;                                   // 0x3d0(0x8)
-	bool                                                         bConstrainAspectRatio;                             // 0x3e0(0x1)
-	float                                                        AspectRatio;                                       // 0x3e4(0x4)
-	float                                                        FOVAngle;                                          // 0x3e8(0x4)
-	float                                                        PostProcessBlendWeight;                            // 0x3ec(0x4)
-	struct PostProcessSettings                                   PostProcessSettings;                               // 0x3f0(0x540)
-};
-
-
-// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
-class MaterialExpressionDecalMipmapLevel: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       TextureSize;                                       // 0x70(0x38)
-	float                                                        ConstWidth;                                        // 0xa8(0x4)
-	float                                                        ConstHeight;                                       // 0xac(0x4)
-};
-
-
-// Size 0x50 (Full Size[0x118] - InheritedSize[0xc8]
-class ApplicationLifecycleComponent: public ActorComponent
-{
-public:
-	multicastinlinedelegate                                      ApplicationWillDeactivateDelegate;                 // 0xc8(0x10)
-	multicastinlinedelegate                                      ApplicationHasReactivatedDelegate;                 // 0xd8(0x10)
-	multicastinlinedelegate                                      ApplicationWillEnterBackgroundDelegate;            // 0xe8(0x10)
-	multicastinlinedelegate                                      ApplicationHasEnteredForegroundDelegate;           // 0xf8(0x10)
-	multicastinlinedelegate                                      ApplicationWillTerminateDelegate;                  // 0x108(0x10)
-};
-
-
-// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
-class DistributionVectorConstantCurve: public DistributionVector
-{
-public:
-	struct InterpCurveVector                                     ConstantCurve;                                     // 0x38(0x18)
-	bool                                                         bLockAxes;                                         // 0x50(0x1)
-	char                                                         LockedAxes;                                        // 0x54(0x1)
-};
-
-
-// Size 0x18 (Full Size[0x88] - InheritedSize[0x70]
-class InterpTrackDirector: public InterpTrack
-{
-public:
-	TArray<struct DirectorTrackCut>                              CutTrack;                                          // 0x70(0x10)
-	bool                                                         bSimulateCameraCutsOnClients;                      // 0x80(0x1)
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class SoundNodeConcatenator: public SoundNode
-{
-public:
-	TArray<float>                                                InputVolume;                                       // 0x38(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x158] - InheritedSize[0x140]
-class Texture2DDynamic: public Texture
-{
-public:
-	char                                                         Format;                                            // 0x148(0x1)
-};
-
-
-// Size 0x38 (Full Size[0x400] - InheritedSize[0x3c8]
-class Brush: public Actor
-{
-public:
-	char                                                         BrushType;                                         // 0x3c8(0x1)
-	struct Color                                                 BrushColor;                                        // 0x3cc(0x4)
-	int                                                          PolyFlags;                                         // 0x3d0(0x4)
-	bool                                                         bColored;                                          // 0x3d4(0x1)
-	bool                                                         bSolidWhenSelected;                                // 0x3d4(0x1)
-	bool                                                         bPlaceableFromClassBrowser;                        // 0x3d4(0x1)
-	bool                                                         bNotForClientOrServer;                             // 0x3d4(0x1)
-	class Model*                                                 Brush;                                             // 0x3d8(0x8)
-	class BrushComponent*                                        BrushComponent;                                    // 0x3e0(0x8)
-	bool                                                         bInManipulation;                                   // 0x3e8(0x1)
-	TArray<struct GeomSelection>                                 SavedSelections;                                   // 0x3f0(0x10)
-};
-
-
-// Size 0x20 (Full Size[0x1d0] - InheritedSize[0x1b0]
-class ParticleModuleSize_Seeded: public ParticleModuleSize
-{
-public:
-	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x1b0(0x20)
+	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x1a8(0x20)
 };
 
 
@@ -5911,33 +6576,65 @@ public:
 };
 
 
-// Size 0x98 (Full Size[0x2d0] - InheritedSize[0x238]
-class DestructibleMesh: public SkeletalMesh
+// Size 0x20 (Full Size[0x1e0] - InheritedSize[0x1c0]
+class ParticleModuleLifetime_Seeded: public ParticleModuleLifetime
 {
 public:
-	struct DestructibleParameters                                DefaultDestructibleParameters;                     // 0x238(0x88)
-	TArray<struct FractureEffect>                                FractureEffects;                                   // 0x2c0(0x10)
+	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x1c0(0x20)
 };
 
 
-// Size 0x28 (Full Size[0x58] - InheritedSize[0x30]
-class AnimNotifyState_Trail: public AnimNotifyState
+// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
+class ParticleModuleAccelerationBase: public ParticleModule
 {
 public:
-	class ParticleSystem*                                        PSTemplate;                                        // 0x30(0x8)
-	struct FName                                                 FirstSocketName;                                   // 0x38(0x8)
-	struct FName                                                 SecondSocketName;                                  // 0x40(0x8)
-	char                                                         WidthScaleMode;                                    // 0x48(0x1)
-	struct FName                                                 WidthScaleCurve;                                   // 0x4c(0x8)
+	bool                                                         bAlwaysInWorldSpace;                               // 0x50(0x1)
 };
 
 
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class SoundNodeLooping: public SoundNode
+// Size 0x78 (Full Size[0x440] - InheritedSize[0x3c8]
+class MatineeActor: public Actor
 {
 public:
-	int                                                          LoopCount;                                         // 0x38(0x4)
-	bool                                                         bLoopIndefinitely;                                 // 0x3c(0x1)
+	class InterpData*                                            MatineeData;                                       // 0x3c8(0x8)
+	struct FName                                                 MatineeControllerName;                             // 0x3d0(0x8)
+	float                                                        PlayRate;                                          // 0x3d8(0x4)
+	bool                                                         bPlayOnLevelLoad;                                  // 0x3dc(0x1)
+	bool                                                         bForceStartPos;                                    // 0x3dc(0x1)
+	float                                                        ForceStartPosition;                                // 0x3e0(0x4)
+	bool                                                         bLooping;                                          // 0x3e4(0x1)
+	bool                                                         bRewindOnPlay;                                     // 0x3e4(0x1)
+	bool                                                         bNoResetOnRewind;                                  // 0x3e4(0x1)
+	bool                                                         bRewindIfAlreadyPlaying;                           // 0x3e4(0x1)
+	bool                                                         bDisableRadioFilter;                               // 0x3e4(0x1)
+	bool                                                         bClientSideOnly;                                   // 0x3e4(0x1)
+	bool                                                         bSkipUpdateIfNotVisible;                           // 0x3e4(0x1)
+	bool                                                         bIsSkippable;                                      // 0x3e4(0x1)
+	int                                                          PreferredSplitScreenNum;                           // 0x3e8(0x4)
+	bool                                                         bDisableMovementInput;                             // 0x3ec(0x1)
+	bool                                                         bDisableLookAtInput;                               // 0x3ec(0x1)
+	bool                                                         bHidePlayer;                                       // 0x3ec(0x1)
+	bool                                                         bHideHud;                                          // 0x3ec(0x1)
+	TArray<struct InterpGroupActorInfo>                          GroupActorInfos;                                   // 0x3f0(0x10)
+	bool                                                         bShouldShowGore;                                   // 0x400(0x1)
+	TArray<class InterpGroupInst*>                               GroupInst;                                         // 0x408(0x10)
+	TArray<struct CameraCutInfo>                                 CameraCuts;                                        // 0x418(0x10)
+	bool                                                         bIsPlaying;                                        // 0x428(0x1)
+	bool                                                         bReversePlayback;                                  // 0x428(0x1)
+	bool                                                         bPaused;                                           // 0x428(0x1)
+	bool                                                         bPendingStop;                                      // 0x428(0x1)
+	float                                                        InterpPosition;                                    // 0x42c(0x4)
+	char                                                         ReplicationForceIsPlaying;                         // 0x434(0x1)
+	bool                                                         bServerInitialLevelStreamingComplete;              // 0x43c(0x1)
+};
+
+
+// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
+class MaterialExpressionDepthOfFieldFunction: public MaterialExpression
+{
+public:
+	char                                                         FunctionValue;                                     // 0x70(0x1)
+	struct ExpressionInput                                       Depth;                                             // 0x78(0x38)
 };
 
 
@@ -5955,885 +6652,12 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
-class MaterialExpressionComponentMask: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
-	bool                                                         R;                                                 // 0xa8(0x1)
-	bool                                                         G;                                                 // 0xa8(0x1)
-	bool                                                         B;                                                 // 0xa8(0x1)
-	bool                                                         A;                                                 // 0xa8(0x1)
-};
-
-
-// Size 0x20 (Full Size[0x158] - InheritedSize[0x138]
-class ParticleModuleLight_Seeded: public ParticleModuleLight
-{
-public:
-	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x138(0x20)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionNormalize: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       VectorInput;                                       // 0x70(0x38)
-};
-
-
-// Size 0xb8 (Full Size[0x128] - InheritedSize[0x70]
-class MaterialExpressionBumpOffset: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Coordinate;                                        // 0x70(0x38)
-	struct ExpressionInput                                       Height;                                            // 0xa8(0x38)
-	struct ExpressionInput                                       HeightRatioInput;                                  // 0xe0(0x38)
-	float                                                        HeightRatio;                                       // 0x118(0x4)
-	float                                                        ReferencePlane;                                    // 0x11c(0x4)
-	uint32                                                       ConstCoordinate;                                   // 0x120(0x4)
-};
-
-
-// Size 0xe0 (Full Size[0x130] - InheritedSize[0x50]
-class SoundCue: public SoundBase
-{
-public:
-	bool                                                         bOverrideAttenuation;                              // 0x50(0x1)
-	class SoundNode*                                             FirstNode;                                         // 0x58(0x8)
-	float                                                        VolumeMultiplier;                                  // 0x60(0x4)
-	float                                                        PitchMultiplier;                                   // 0x64(0x4)
-	struct AttenuationSettings                                   AttenuationOverrides;                              // 0x68(0xc0)
-};
-
-
-// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
-class MaterialExpressionFunctionOutput: public MaterialExpression
-{
-public:
-	struct FString                                               OutputName;                                        // 0x70(0x10)
-	struct FString                                               Description;                                       // 0x80(0x10)
-	int                                                          SortPriority;                                      // 0x90(0x4)
-	struct ExpressionInput                                       A;                                                 // 0x98(0x38)
-	bool                                                         bLastPreviewed;                                    // 0xd0(0x1)
-	struct Guid                                                  Id;                                                // 0xd4(0x10)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionDDX: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Value;                                             // 0x70(0x38)
-};
-
-
-// Size 0xe8 (Full Size[0x158] - InheritedSize[0x70]
-class MaterialExpressionRotateAboutAxis: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       NormalizedRotationAxis;                            // 0x70(0x38)
-	struct ExpressionInput                                       RotationAngle;                                     // 0xa8(0x38)
-	struct ExpressionInput                                       PivotPoint;                                        // 0xe0(0x38)
-	struct ExpressionInput                                       Position;                                          // 0x118(0x38)
-	float                                                        Period;                                            // 0x150(0x4)
-};
-
-
-// Size 0x20 (Full Size[0x90] - InheritedSize[0x70]
-class InterpTrackVectorBase: public InterpTrack
-{
-public:
-	struct InterpCurveVector                                     VectorTrack;                                       // 0x70(0x18)
-	float                                                        CurveTension;                                      // 0x88(0x4)
-};
-
-
-// Size 0x48 (Full Size[0xb8] - InheritedSize[0x70]
-class MaterialExpressionCustom: public MaterialExpression
-{
-public:
-	struct FString                                               Code;                                              // 0x70(0x10)
-	char                                                         OutputType;                                        // 0x80(0x1)
-	struct FString                                               Description;                                       // 0x88(0x10)
-	TArray<struct CustomInput>                                   Inputs;                                            // 0x98(0x10)
-	struct FString                                               DeclarationCode;                                   // 0xa8(0x10)
-};
-
-
-// Size 0xf0 (Full Size[0x160] - InheritedSize[0x70]
-class MaterialExpressionIfCondition: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
-	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
-	struct ExpressionInput                                       IfTrue;                                            // 0xe0(0x38)
-	struct ExpressionInput                                       IfFalse;                                           // 0x118(0x38)
-	char                                                         Condition;                                         // 0x150(0x1)
-	char                                                         Attribute;                                         // 0x151(0x1)
-	float                                                        ConstB;                                            // 0x154(0x4)
-	float                                                        ConstIfTrue;                                       // 0x158(0x4)
-	float                                                        ConstIfFalse;                                      // 0x15c(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
-class MaterialExpressionConstant: public MaterialExpression
-{
-public:
-	float                                                        R;                                                 // 0x70(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
-class FogVolume: public Actor
-{
-public:
-	class SphereComponent*                                       SphereComponent;                                   // 0x3c8(0x8)
-	class FogVolumeComponent*                                    FogVolumeComponent;                                // 0x3d0(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class MergedCollisionActor: public Actor
-{
-public:
-	class MergedCollisionComponent*                              MergedCollisionComponent;                          // 0x3c8(0x8)
-};
-
-
-// Size 0x18 (Full Size[0x88] - InheritedSize[0x70]
-class InterpTrackEvent: public InterpTrack
-{
-public:
-	TArray<struct EventTrackKey>                                 EventTrack;                                        // 0x70(0x10)
-	bool                                                         bFireEventsWhenForwards;                           // 0x80(0x1)
-	bool                                                         bFireEventsWhenBackwards;                          // 0x80(0x1)
-	bool                                                         bFireEventsWhenJumpingForwards;                    // 0x80(0x1)
-	bool                                                         bUseCustomEventName;                               // 0x80(0x1)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionLowResClouds: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Coordinates;                                       // 0x70(0x38)
-};
-
-
-// Size 0xd0 (Full Size[0x108] - InheritedSize[0x38]
-class SoundNodeAttenuation: public SoundNode
-{
-public:
-	class SoundAttenuation*                                      AttenuationSettings;                               // 0x38(0x8)
-	struct AttenuationSettings                                   AttenuationOverrides;                              // 0x40(0xc0)
-	bool                                                         bOverrideAttenuation;                              // 0x100(0x1)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionDDY: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Value;                                             // 0x70(0x38)
-};
-
-
-// Size 0x280 (Full Size[0x348] - InheritedSize[0xc8]
-class ParticleModuleLocationPrimitiveCylinder: public ParticleModuleLocationPrimitiveBase
-{
-public:
-	bool                                                         RadialVelocity;                                    // 0xc8(0x1)
-	struct RawDistributionFloat                                  StartRadius;                                       // 0xd0(0x38)
-	struct RawDistributionFloat                                  AdditionalStartRadiuses;                           // 0x108(0x38)
-	bool                                                         StartRadiusUseGroupAForAll;                        // 0x1e8(0x1)
-	struct Vector2D                                              RadiusScale;                                       // 0x1ec(0x8)
-	struct RawDistributionFloat                                  StartHeight;                                       // 0x1f8(0x38)
-	bool                                                         StartHeightUseGroupAForAll;                        // 0x230(0x1)
-	struct RawDistributionFloat                                  AdditionalStartHeights;                            // 0x238(0x38)
-	struct Vector2D                                              AngleRange;                                        // 0x318(0x8)
-	struct Vector2D                                              AdditionalAngleRanges;                             // 0x320(0x8)
-	bool                                                         AngleRangeUseGroupAForAll;                         // 0x340(0x1)
-	char                                                         HeightAxis;                                        // 0x344(0x1)
-};
-
-
-// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
-class CloudStorageBase: public PlatformInterfaceBase
-{
-public:
-	TArray<String>                                               LocalCloudFiles;                                   // 0x38(0x10)
-	bool                                                         bSuppressDelegateCalls;                            // 0x48(0x1)
-};
-
-
-// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
-class MaterialExpressionTransformPosition: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
-	char                                                         TransformSourceType;                               // 0xa8(0x1)
-	char                                                         TransformType;                                     // 0xa9(0x1)
-};
-
-
-// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
-class MaterialExpressionReflectionVectorWS: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       CustomWorldNormal;                                 // 0x70(0x38)
-	bool                                                         bNormalizeCustomWorldNormal;                       // 0xa8(0x1)
-};
-
-
-// Size 0x20 (Full Size[0x90] - InheritedSize[0x70]
-class MaterialExpressionCollectionParameter: public MaterialExpression
-{
-public:
-	class MaterialParameterCollection*                           Collection;                                        // 0x70(0x8)
-	struct FName                                                 ParameterName;                                     // 0x78(0x8)
-	struct Guid                                                  ParameterId;                                       // 0x80(0x10)
-};
-
-
-// Size 0x20 (Full Size[0x90] - InheritedSize[0x70]
-class InterpTrackLinearColorBase: public InterpTrack
-{
-public:
-	struct InterpCurveLinearColor                                LinearColorTrack;                                  // 0x70(0x18)
-	float                                                        CurveTension;                                      // 0x88(0x4)
-};
-
-
-// Size 0x20 (Full Size[0x60] - InheritedSize[0x40]
-class AnimCompress_RemoveLinearKeys: public AnimCompress
-{
-public:
-	float                                                        MaxPosDiff;                                        // 0x40(0x4)
-	float                                                        MaxAngleDiff;                                      // 0x44(0x4)
-	float                                                        MaxScaleDiff;                                      // 0x48(0x4)
-	float                                                        MaxEffectorDiff;                                   // 0x4c(0x4)
-	float                                                        MinEffectorDiff;                                   // 0x50(0x4)
-	float                                                        EffectorDiffSocket;                                // 0x54(0x4)
-	float                                                        ParentKeyScale;                                    // 0x58(0x4)
-	bool                                                         bRetarget;                                         // 0x5c(0x1)
-	bool                                                         bActuallyFilterLinearKeys;                         // 0x5c(0x1)
-};
-
-
-// Size 0x40 (Full Size[0xb0] - InheritedSize[0x70]
-class MaterialExpressionCosine: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
-	float                                                        Period;                                            // 0xa8(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x80] - InheritedSize[0x70]
-class MaterialExpressionTextureBase: public MaterialExpression
-{
-public:
-	class Texture*                                               Texture;                                           // 0x70(0x8)
-	char                                                         SamplerType;                                       // 0x78(0x1)
-	bool                                                         IsDefaultMeshpaintTexture;                         // 0x7c(0x1)
-};
-
-
-// Size 0x1898 (Full Size[0x1c60] - InheritedSize[0x3c8]
-class PlayerCameraManager: public Actor
-{
-public:
-	class PlayerController*                                      PCOwner;                                           // 0x3c8(0x8)
-	class SceneComponent*                                        TransformComponent;                                // 0x3d0(0x8)
-	float                                                        DefaultFOV;                                        // 0x3e0(0x4)
-	float                                                        DefaultOrthoWidth;                                 // 0x3e8(0x4)
-	float                                                        DefaultAspectRatio;                                // 0x3f0(0x4)
-	struct CameraCacheEntry                                      CameraCache;                                       // 0x440(0x5b0)
-	struct CameraCacheEntry                                      LastFrameCameraCache;                              // 0x9f0(0x5b0)
-	struct TViewTarget                                           ViewTarget;                                        // 0xfa0(0x5c0)
-	struct TViewTarget                                           PendingViewTarget;                                 // 0x1560(0x5c0)
-	TArray<class CameraModifier*>                                ModifierList;                                      // 0x1b50(0x10)
-	TArray<class Class*>                                         DefaultModifiers;                                  // 0x1b60(0x10)
-	float                                                        FreeCamDistance;                                   // 0x1b70(0x4)
-	struct Vector                                                FreeCamOffset;                                     // 0x1b74(0xc)
-	struct Vector                                                ViewTargetOffset;                                  // 0x1b80(0xc)
-	TArray<class EmitterCameraLensEffectBase*>                   CameraLensEffects;                                 // 0x1ba0(0x10)
-	class CameraModifier_CameraShake*                            CachedCameraShakeMod;                              // 0x1bb0(0x8)
-	class CameraAnimInst*                                        AnimInstPool;                                      // 0x1bb8(0x8)
-	TArray<struct PostProcessSettings>                           PostProcessBlendCache;                             // 0x1bf8(0x10)
-	TArray<class CameraAnimInst*>                                ActiveAnims;                                       // 0x1c18(0x10)
-	TArray<class CameraAnimInst*>                                FreeAnims;                                         // 0x1c28(0x10)
-	class CameraActor*                                           AnimCameraActor;                                   // 0x1c38(0x8)
-	bool                                                         bIsOrthographic;                                   // 0x1c40(0x1)
-	bool                                                         bUseClientSideCameraUpdates;                       // 0x1c40(0x1)
-	bool                                                         bFollowHmdOrientation;                             // 0x1c41(0x1)
-	float                                                        ViewPitchMin;                                      // 0x1c44(0x4)
-	float                                                        ViewPitchMax;                                      // 0x1c48(0x4)
-	float                                                        ViewYawMin;                                        // 0x1c4c(0x4)
-	float                                                        ViewYawMax;                                        // 0x1c50(0x4)
-	float                                                        ViewRollMin;                                       // 0x1c54(0x4)
-	float                                                        ViewRollMax;                                       // 0x1c58(0x4)
-};
-
-
-// Size 0x78 (Full Size[0xe8] - InheritedSize[0x70]
-class MaterialExpressionDepthFade: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       InOpacity;                                         // 0x70(0x38)
-	struct ExpressionInput                                       FadeDistance;                                      // 0xa8(0x38)
-	float                                                        OpacityDefault;                                    // 0xe0(0x4)
-	float                                                        FadeDistanceDefault;                               // 0xe4(0x4)
-};
-
-
-// Size 0x20 (Full Size[0x90] - InheritedSize[0x70]
-class MaterialExpressionDynamicParameter: public MaterialExpression
-{
-public:
-	TArray<String>                                               ParamNames;                                        // 0x70(0x10)
-	struct LinearColor                                           DefaultValue;                                      // 0x80(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x68] - InheritedSize[0x50]
-class ParticleModuleParametersOverX: public ParticleModule
-{
-public:
-	float                                                        GroupScales;                                       // 0x50(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class CalmWaterZone: public Actor
-{
-public:
-	class CalmWaterComponent*                                    CalmWaterComponent;                                // 0x3c8(0x8)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MaterialExpressionAbs: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Input;                                             // 0x70(0x38)
-};
-
-
-// Size 0x90 (Full Size[0x100] - InheritedSize[0x70]
-class MaterialExpressionFunctionInput: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Preview;                                           // 0x70(0x38)
-	struct FString                                               InputName;                                         // 0xa8(0x10)
-	struct FString                                               Description;                                       // 0xb8(0x10)
-	struct Guid                                                  Id;                                                // 0xc8(0x10)
-	char                                                         InputType;                                         // 0xd8(0x1)
-	struct Vector4                                               PreviewValue;                                      // 0xe0(0x10)
-	bool                                                         bUsePreviewValueAsDefault;                         // 0xf0(0x1)
-	int                                                          SortPriority;                                      // 0xf4(0x4)
-	bool                                                         bCompilingFunctionPreview;                         // 0xf8(0x1)
-};
-
-
-// Size 0x20 (Full Size[0x1c8] - InheritedSize[0x1a8]
-class ParticleModuleRotation_Seeded: public ParticleModuleRotation
-{
-public:
-	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x1a8(0x20)
-};
-
-
-// Size 0xa8 (Full Size[0x170] - InheritedSize[0xc8]
-class PhysicsHandleComponent: public ActorComponent
-{
-public:
-	class PrimitiveComponent*                                    GrabbedComponent;                                  // 0xc8(0x8)
-	float                                                        LinearDamping;                                     // 0xe0(0x4)
-	float                                                        LinearStiffness;                                   // 0xe4(0x4)
-	float                                                        AngularDamping;                                    // 0xe8(0x4)
-	float                                                        AngularStiffness;                                  // 0xec(0x4)
-	float                                                        InterpolationSpeed;                                // 0x150(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class AmbientSound: public Actor
-{
-public:
-	class AudioComponent*                                        AudioComponent;                                    // 0x3c8(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x3d0] - InheritedSize[0x3c8]
-class ReflectionCapture: public Actor
-{
-public:
-	class ReflectionCaptureComponent*                            CaptureComponent;                                  // 0x3c8(0x8)
-};
-
-
-// Size 0x20 (Full Size[0xe8] - InheritedSize[0xc8]
-class PlatformEventsComponent: public ActorComponent
-{
-public:
-	multicastinlinedelegate                                      PlatformChangedToLaptopModeDelegate;               // 0xc8(0x10)
-	multicastinlinedelegate                                      PlatformChangedToTabletModeDelegate;               // 0xd8(0x10)
-};
-
-
-// Size 0x30 (Full Size[0x2f8] - InheritedSize[0x2c8]
-class BodySetup2D: public BodySetup
-{
-public:
-	struct AggregateGeometry2D                                   AggGeom2D;                                         // 0x2c8(0x30)
-};
-
-
-// Size 0x20 (Full Size[0x198] - InheritedSize[0x178]
-class ParticleModuleLocation_Seeded: public ParticleModuleLocation
-{
-public:
-	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x178(0x20)
-};
-
-
-// Size 0xd0 (Full Size[0x498] - InheritedSize[0x3c8]
-class NavigationTestingActor: public Actor
-{
-public:
-	class CapsuleComponent*                                      CapsuleComponent;                                  // 0x3d8(0x8)
-	class NavigationInvokerComponent*                            InvokerComponent;                                  // 0x3e0(0x8)
-	bool                                                         bActAsNavigationInvoker;                           // 0x3e8(0x1)
-	struct NavAgentProperties                                    NavAgentProps;                                     // 0x3ec(0x30)
-	struct Vector                                                QueryingExtent;                                    // 0x41c(0xc)
-	class NavigationData*                                        MyNavData;                                         // 0x428(0x8)
-	struct Vector                                                ProjectedLocation;                                 // 0x430(0xc)
-	bool                                                         bProjectedLocationValid;                           // 0x43c(0x1)
-	bool                                                         bSearchStart;                                      // 0x43c(0x1)
-	bool                                                         bUseHierarchicalPathfinding;                       // 0x43c(0x1)
-	bool                                                         bGatherDetailedInfo;                               // 0x43c(0x1)
-	bool                                                         bShowNodePool;                                     // 0x43c(0x1)
-	bool                                                         bShowBestPath;                                     // 0x43c(0x1)
-	bool                                                         bShowDiffWithPreviousStep;                         // 0x43c(0x1)
-	bool                                                         bShouldBeVisibleInGame;                            // 0x43c(0x1)
-	char                                                         CostDisplayMode;                                   // 0x440(0x1)
-	struct Vector2D                                              TextCanvasOffset;                                  // 0x444(0x8)
-	bool                                                         bPathExist;                                        // 0x44c(0x1)
-	bool                                                         bPathIsPartial;                                    // 0x44c(0x1)
-	bool                                                         bPathSearchOutOfNodes;                             // 0x44c(0x1)
-	float                                                        PathfindingTime;                                   // 0x450(0x4)
-	float                                                        PathCost;                                          // 0x454(0x4)
-	int                                                          PathfindingSteps;                                  // 0x458(0x4)
-	class NavigationTestingActor*                                OtherActor;                                        // 0x460(0x8)
-	class UClass*                                                FilterClass;                                       // 0x468(0x8)
-	int                                                          ShowStepIndex;                                     // 0x470(0x4)
-	float                                                        OffsetFromCornersDistance;                         // 0x474(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
-class ParticleModuleSpawnBase: public ParticleModule
-{
-public:
-	bool                                                         bProcessSpawnRate;                                 // 0x50(0x1)
-	bool                                                         bProcessBurstList;                                 // 0x50(0x1)
-};
-
-
-// Size 0x20 (Full Size[0xa8] - InheritedSize[0x88]
-class ParticleModuleMeshRotationRate_Seeded: public ParticleModuleMeshRotationRate
-{
-public:
-	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x88(0x20)
-};
-
-
-// Size 0x10 (Full Size[0x80] - InheritedSize[0x70]
-class MaterialExpressionConstant3Vector: public MaterialExpression
-{
-public:
-	struct LinearColor                                           Constant;                                          // 0x70(0x10)
-};
-
-
-// Size 0x70 (Full Size[0xe0] - InheritedSize[0x70]
-class MaterialExpressionDistance: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       A;                                                 // 0x70(0x38)
-	struct ExpressionInput                                       B;                                                 // 0xa8(0x38)
-};
-
-
-// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
-class StaticMeshActor: public Actor
-{
-public:
-	class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x3c8(0x8)
-	bool                                                         bStaticMeshReplicateMovement;                      // 0x3d0(0x1)
-	char                                                         NavigationGeometryGatheringMode;                   // 0x3d1(0x1)
-};
-
-
-// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
-class MaterialInstanceActor: public Actor
-{
-public:
-	TArray<class Actor*>                                         TargetActors;                                      // 0x3c8(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
-class MaterialExpressionWorldPosition: public MaterialExpression
-{
-public:
-	char                                                         WorldPositionShaderOffset;                         // 0x70(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class DistributionFloatUniform: public DistributionFloat
-{
-public:
-	float                                                        Max;                                               // 0x38(0x4)
-	float                                                        Min;                                               // 0x3c(0x4)
-};
-
-
-// Size 0xb8 (Full Size[0x108] - InheritedSize[0x50]
-class BlendSpaceBase: public AnimationAsset
-{
-public:
-	struct BlendParameter                                        BlendParameters;                                   // 0x50(0x20)
-	struct InterpolationParameter                                InterpolationParam;                                // 0xb0(0x8)
-	float                                                        TargetWeightInterpolationSpeedPerSec;              // 0xc8(0x4)
-	char                                                         NotifyTriggerMode;                                 // 0xcc(0x1)
-	bool                                                         bRotationBlendInMeshSpace;                         // 0xcd(0x1)
-	int                                                          NumOfDimension;                                    // 0xd0(0x4)
-	float                                                        AnimLength;                                        // 0xd4(0x4)
-	TArray<struct PerBoneInterpolation>                          PerBoneBlend;                                      // 0xd8(0x10)
-	TArray<struct BlendSample>                                   SampleData;                                        // 0xe8(0x10)
-	TArray<struct EditorElement>                                 GridSamples;                                       // 0xf8(0x10)
-};
-
-
-// Size 0x80 (Full Size[0xf0] - InheritedSize[0x70]
-class MaterialExpressionRotator: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Coordinate;                                        // 0x70(0x38)
-	struct ExpressionInput                                       Time;                                              // 0xa8(0x38)
-	float                                                        CenterX;                                           // 0xe0(0x4)
-	float                                                        CenterY;                                           // 0xe4(0x4)
-	float                                                        Speed;                                             // 0xe8(0x4)
-	uint32                                                       ConstCoordinate;                                   // 0xec(0x4)
-};
-
-
-// Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
-class ParticleModuleLocationComputeShaderOutput: public ParticleModuleLocationPrimitiveBase
-{
-public:
-	class ParticleComputeShaderData*                             PositionData;                                      // 0xc8(0x8)
-};
-
-
-// Size 0x98 (Full Size[0x160] - InheritedSize[0xc8]
-class TimelineComponent: public ActorComponent
-{
-public:
-	struct Timeline                                              TheTimeline;                                       // 0xc8(0x98)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class SoundNodeDelay: public SoundNode
-{
-public:
-	float                                                        DelayMin;                                          // 0x38(0x4)
-	float                                                        DelayMax;                                          // 0x3c(0x4)
-};
-
-
-// Size 0x218 (Full Size[0x2e0] - InheritedSize[0xc8]
-class SceneComponent: public ActorComponent
-{
-public:
-	TArray<class SceneComponent*>                                AttachChildren;                                    // 0xc8(0x10)
-	bool                                                         bRequiresCustomLocation;                           // 0xd8(0x1)
-	class SceneComponent*                                        AttachParent;                                      // 0xe0(0x8)
-	struct FName                                                 AttachSocketName;                                  // 0xe8(0x8)
-	bool                                                         bAbsoluteLocation;                                 // 0xf0(0x1)
-	bool                                                         bAbsoluteRotation;                                 // 0xf0(0x1)
-	bool                                                         bAbsoluteScale;                                    // 0xf0(0x1)
-	bool                                                         bVisible;                                          // 0xf0(0x1)
-	bool                                                         bAbsoluteTranslation;                              // 0xf0(0x1)
-	bool                                                         bHiddenInGame;                                     // 0xf0(0x1)
-	bool                                                         bShouldUpdatePhysicsVolume;                        // 0xf0(0x1)
-	bool                                                         bBoundsChangeTriggersStreamingDataRebuild;         // 0xf0(0x1)
-	bool                                                         bUseAttachParentBound;                             // 0xf1(0x1)
-	bool                                                         bComponentIsUnionOfChildren;                       // 0xf1(0x1)
-	bool                                                         bJitterReduction;                                  // 0xf1(0x1)
-	bool                                                         CacheRootVelocity;                                 // 0xf1(0x1)
-	bool                                                         bWorldToComponentUpdated;                          // 0xf1(0x1)
-	class PhysicsVolume*                                         PhysicsVolume;                                     // 0x100(0x8)
-	struct Vector                                                RelativeLocation;                                  // 0x108(0xc)
-	struct Rotator                                               RelativeRotation;                                  // 0x114(0xc)
-	struct Vector                                                RelativeScale3D;                                   // 0x120(0xc)
-	char                                                         Mobility;                                          // 0x230(0x1)
-	char                                                         DetailMode;                                        // 0x231(0x1)
-	struct Vector                                                ComponentVelocity;                                 // 0x23c(0xc)
-	multicastinlinedelegate                                      PhysicsVolumeChangedDelegate;                      // 0x248(0x10)
-	TArray<struct Name>                                          SocketVelocitiesToCache;                           // 0x268(0x10)
-	TArray<class Actor*>                                         MovedActors;                                       // 0x278(0x10)
-};
-
-
-// Size 0x80 (Full Size[0xf0] - InheritedSize[0x70]
-class MaterialExpressionBreakMaterialAttributes: public MaterialExpression
-{
-public:
-	struct ExpressionInput                                       Struct;                                            // 0x70(0x38)
-	struct MaterialAttributesInput                               MaterialAttributes;                                // 0xa8(0x38)
-};
-
-
-// Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
-class ParticleModuleVelocityBase: public ParticleModule
-{
-public:
-	bool                                                         bInWorldSpace;                                     // 0x50(0x1)
-	bool                                                         bApplyOwnerScale;                                  // 0x50(0x1)
-};
-
-
-// Size 0x28 (Full Size[0x3f0] - InheritedSize[0x3c8]
-class NavigationObjectBase: public Actor
-{
-public:
-	class CapsuleComponent*                                      CapsuleComponent;                                  // 0x3d0(0x8)
-	class BillboardComponent*                                    GoodSprite;                                        // 0x3d8(0x8)
-	class BillboardComponent*                                    BadSprite;                                         // 0x3e0(0x8)
-	bool                                                         bIsPIEPlayerStart;                                 // 0x3e8(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x148] - InheritedSize[0x140]
-class TextureProxy: public Texture
-{
-public:
-	class Texture*                                               Texture;                                           // 0x140(0x8)
-};
-
-
-// Size 0x18 (Full Size[0x88] - InheritedSize[0x70]
-class InterpTrackToggle: public InterpTrack
-{
-public:
-	TArray<struct ToggleTrackKey>                                ToggleTrack;                                       // 0x70(0x10)
-	bool                                                         bActivateSystemEachUpdate;                         // 0x80(0x1)
-	bool                                                         bActivateWithJustAttachedFlag;                     // 0x80(0x1)
-	bool                                                         bFireEventsWhenForwards;                           // 0x80(0x1)
-	bool                                                         bFireEventsWhenBackwards;                          // 0x80(0x1)
-	bool                                                         bFireEventsWhenJumpingForwards;                    // 0x80(0x1)
-};
-
-
-// Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
-class NavigationInvokerComponent: public ActorComponent
-{
-public:
-	float                                                        TileGenerationRadius;                              // 0xc8(0x4)
-	float                                                        TileRemovalRadius;                                 // 0xcc(0x4)
-};
-
-
-// Size 0x18 (Full Size[0x1b0] - InheritedSize[0x198]
-class CompressedCanvasRenderTarget2D: public Texture2D
-{
-public:
-	class World*                                                 World;                                             // 0x198(0x8)
-	class CanvasRenderTarget2D*                                  RenderTarget;                                      // 0x1a0(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x3d8] - InheritedSize[0x3d0]
-class PointLight: public Light
-{
-public:
-	class PointLightComponent*                                   PointLightComponent;                               // 0x3d0(0x8)
-};
-
-
-// Size 0x128 (Full Size[0x1a8] - InheritedSize[0x80]
-class MaterialExpressionTextureSample: public MaterialExpressionTextureBase
-{
-public:
-	struct ExpressionInput                                       Coordinates;                                       // 0x80(0x38)
-	struct ExpressionInput                                       TextureObject;                                     // 0xb8(0x38)
-	struct ExpressionInput                                       MipValue;                                          // 0xf0(0x38)
-	struct ExpressionInput                                       CoordinatesDX;                                     // 0x128(0x38)
-	struct ExpressionInput                                       CoordinatesDY;                                     // 0x160(0x38)
-	char                                                         MipValueMode;                                      // 0x198(0x1)
-	char                                                         SamplerSource;                                     // 0x199(0x1)
-	uint32                                                       ConstCoordinate;                                   // 0x19c(0x4)
-	int                                                          ConstMipValue;                                     // 0x1a0(0x4)
-};
-
-
-// Size 0x20 (Full Size[0x130] - InheritedSize[0x110]
-class RotatingMovementComponent: public MovementComponent
-{
-public:
-	struct Rotator                                               RotationRate;                                      // 0x110(0xc)
-	struct Vector                                                PivotTranslation;                                  // 0x11c(0xc)
-	bool                                                         bRotationInLocalSpace;                             // 0x128(0x1)
-};
-
-
-// Size 0x28 (Full Size[0x468] - InheritedSize[0x440]
-class DefaultPawn: public Pawn
-{
-public:
-	float                                                        BaseTurnRate;                                      // 0x440(0x4)
-	float                                                        BaseLookUpRate;                                    // 0x444(0x4)
-	class PawnMovementComponent*                                 MovementComponent;                                 // 0x448(0x8)
-	class SphereComponent*                                       CollisionComponent;                                // 0x450(0x8)
-	class StaticMeshComponent*                                   MeshComponent;                                     // 0x458(0x8)
-	bool                                                         bAddDefaultMovementBindings;                       // 0x460(0x1)
-};
-
-
-// Size 0x330 (Full Size[0x388] - InheritedSize[0x58]
-class ParticleModuleVelocityCone: public ParticleModuleVelocityBase
-{
-public:
-	struct RawDistributionFloat                                  Angle;                                             // 0x58(0x38)
-	struct RawDistributionFloat                                  Velocity;                                          // 0x90(0x38)
-	struct Vector                                                Direction;                                         // 0xc8(0xc)
-	bool                                                         bUseGroupAForAll;                                  // 0xd4(0x1)
-	struct VelocityConeGroupParams                               AdditionalParams;                                  // 0xd8(0x80)
-	uint32                                                       VelocityDistributeOverNPoints;                     // 0x358(0x4)
-	float                                                        VelocityNPointsRandomness;                         // 0x35c(0x4)
-	struct Vector                                                AdditiveVelocity;                                  // 0x360(0xc)
-	float                                                        ConeDepthScale;                                    // 0x36c(0x4)
-	bool                                                         WorldSpaceOffset;                                  // 0x370(0x1)
-	struct Vector                                                EmitterOriginOffset;                               // 0x374(0xc)
-	float                                                        PushAwayFromCenterFactor;                          // 0x380(0x4)
-};
-
-
-// Size 0x28 (Full Size[0x100] - InheritedSize[0xd8]
-class AnimBlueprint: public Blueprint
-{
-public:
-	class Skeleton*                                              TargetSkeleton;                                    // 0xd8(0x8)
-	TArray<struct AnimGroupInfo>                                 Groups;                                            // 0xe0(0x10)
-	TArray<struct Name>                                          SkeletonSlotNames;                                 // 0xf0(0x10)
-};
-
-
 // Size 0x18 (Full Size[0xa8] - InheritedSize[0x90]
-class InterpTrackFloatAnimBPParam: public InterpTrackFloatBase
+class InterpTrackFloatMaterialParam: public InterpTrackFloatBase
 {
 public:
-	class UClass*                                                AnimBlueprintClass;                                // 0x90(0x8)
-	struct FName                                                 ParamName;                                         // 0x98(0x8)
-};
-
-
-// Size 0x18 (Full Size[0xa8] - InheritedSize[0x90]
-class InterpTrackSound: public InterpTrackVectorBase
-{
-public:
-	TArray<struct SoundTrackKey>                                 Sounds;                                            // 0x90(0x10)
-	bool                                                         bPlayOnReverse;                                    // 0xa0(0x1)
-	bool                                                         bContinueSoundOnMatineeEnd;                        // 0xa0(0x1)
-	bool                                                         bSuppressSubtitles;                                // 0xa0(0x1)
-	bool                                                         bTreatAsDialogue;                                  // 0xa0(0x1)
-	bool                                                         bAttach;                                           // 0xa0(0x1)
-};
-
-
-// Size 0x1e0 (Full Size[0x4c0] - InheritedSize[0x2e0]
-class AtmosphericFogComponent: public SceneComponent
-{
-public:
-	float                                                        SunMultiplier;                                     // 0x2e0(0x4)
-	float                                                        FogMultiplier;                                     // 0x2e4(0x4)
-	float                                                        DensityMultiplier;                                 // 0x2e8(0x4)
-	float                                                        DensityOffset;                                     // 0x2ec(0x4)
-	float                                                        DistanceScale;                                     // 0x2f0(0x4)
-	float                                                        AltitudeScale;                                     // 0x2f4(0x4)
-	float                                                        DistanceOffset;                                    // 0x2f8(0x4)
-	float                                                        GroundOffset;                                      // 0x2fc(0x4)
-	float                                                        StartDistance;                                     // 0x300(0x4)
-	float                                                        SunDiscScale;                                      // 0x304(0x4)
-	float                                                        DefaultBrightness;                                 // 0x308(0x4)
-	struct Color                                                 DefaultLightColor;                                 // 0x30c(0x4)
-	bool                                                         bDisableSunDisk;                                   // 0x310(0x1)
-	bool                                                         bDisableGroundScattering;                          // 0x310(0x1)
-	struct AtmospherePrecomputeParameters                        PrecomputeParams;                                  // 0x314(0x2c)
-	class Texture2D*                                             TransmittanceTexture;                              // 0x340(0x8)
-	class Texture2D*                                             IrradianceTexture;                                 // 0x348(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x50] - InheritedSize[0x48]
-class SoundNodeParamCrossFade: public SoundNodeDistanceCrossFade
-{
-public:
-	struct FName                                                 ParamName;                                         // 0x48(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x168] - InheritedSize[0x148]
-class TextureRenderTargetCube: public TextureRenderTarget
-{
-public:
-	int                                                          SizeX;                                             // 0x148(0x4)
-	struct LinearColor                                           ClearColor;                                        // 0x14c(0x10)
-	char                                                         OverrideFormat;                                    // 0x15c(0x1)
-	bool                                                         bHDR;                                              // 0x160(0x1)
-	bool                                                         bForceLinearGamma;                                 // 0x160(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x98] - InheritedSize[0x90]
-class InterpTrackFloatProp: public InterpTrackFloatBase
-{
-public:
-	struct FName                                                 PropertyName;                                      // 0x90(0x8)
-};
-
-
-// Size 0x220 (Full Size[0x278] - InheritedSize[0x58]
-class ParticleModuleSpawn: public ParticleModuleSpawnBase
-{
-public:
-	struct RawDistributionFloat                                  Rate;                                              // 0x58(0x38)
-	struct RawDistributionFloat                                  AdditionalRates;                                   // 0x90(0x38)
-	float                                                        StartScaleDistance;                                // 0x1a8(0x4)
-	float                                                        EndScaleDistance;                                  // 0x1ac(0x4)
-	struct RawDistributionFloat                                  RateScaleOverDistance;                             // 0x1b0(0x38)
-	struct RawDistributionFloat                                  RateScale;                                         // 0x1e8(0x38)
-	char                                                         ParticleBurstMethod;                               // 0x220(0x1)
-	TArray<struct ParticleBurst>                                 BurstList;                                         // 0x228(0x10)
-	struct RawDistributionFloat                                  BurstScale;                                        // 0x238(0x38)
-	bool                                                         bApplyGlobalSpawnRateScale;                        // 0x270(0x1)
-	bool                                                         bBurstTreatedAsLoopingForLODs;                     // 0x270(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x3e0] - InheritedSize[0x3d8]
-class CoveredMeshActor: public StaticMeshActor
-{
-public:
-	class InstancedCoverageMeshComponent*                        InstancedCoverageMeshComponent;                    // 0x3d8(0x8)
+	TArray<class MaterialInterface*>                             TargetMaterials;                                   // 0x90(0x10)
+	struct FName                                                 ParamName;                                         // 0xa0(0x8)
 };
 
 
@@ -6845,147 +6669,68 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0xa8] - InheritedSize[0x90]
-class InterpTrackVectorMaterialParam: public InterpTrackVectorBase
+// Size 0x10 (Full Size[0x68] - InheritedSize[0x58]
+class ParticleModuleAccelerationDragScaleOverLife: public ParticleModuleAccelerationBase
 {
 public:
-	TArray<class MaterialInterface*>                             TargetMaterials;                                   // 0x90(0x10)
-	struct FName                                                 ParamName;                                         // 0xa0(0x8)
+	class DistributionFloat*                                     DragScale;                                         // 0x58(0x8)
+	class DistributionFloat*                                     DragLocalVelocityScale;                            // 0x60(0x8)
 };
 
 
-// Size 0x90 (Full Size[0x370] - InheritedSize[0x2e0]
-class ReflectionCaptureComponent: public SceneComponent
+// Size 0xe0 (Full Size[0x158] - InheritedSize[0x78]
+class AnimSequence: public AnimSequenceBase
 {
 public:
-	bool                                                         bLockSettings;                                     // 0x2e0(0x1)
-	float                                                        Brightness;                                        // 0x2e4(0x4)
-	float                                                        ShadowBrightness;                                  // 0x2e8(0x4)
-	float                                                        LPVOcclusionBrightness;                            // 0x2ec(0x4)
-	struct LinearColor                                           ReflectionTint;                                    // 0x2f0(0x10)
-	struct Guid                                                  StateId;                                           // 0x30c(0x10)
+	int                                                          NumFrames;                                         // 0x78(0x4)
+	TArray<struct TrackToSkeletonMap>                            TrackToSkeletonMapTable;                           // 0x80(0x10)
+	TArray<struct TranslationTrack>                              TranslationData;                                   // 0xa0(0x10)
+	TArray<struct RotationTrack>                                 RotationData;                                      // 0xb0(0x10)
+	TArray<struct ScaleTrack>                                    ScaleData;                                         // 0xc0(0x10)
+	char                                                         TranslationCompressionFormat;                      // 0xd0(0x1)
+	char                                                         RotationCompressionFormat;                         // 0xd1(0x1)
+	char                                                         ScaleCompressionFormat;                            // 0xd2(0x1)
+	TArray<int>                                                  CompressedTrackOffsets;                            // 0xd8(0x10)
+	struct CompressedOffsetData                                  CompressedScaleOffsets;                            // 0xe8(0x18)
+	char                                                         KeyEncodingFormat;                                 // 0x110(0x1)
+	char                                                         AdditiveAnimType;                                  // 0x130(0x1)
+	char                                                         RefPoseType;                                       // 0x131(0x1)
+	class AnimSequence*                                          RefPoseSeq;                                        // 0x138(0x8)
+	int                                                          RefFrameIndex;                                     // 0x140(0x4)
+	int                                                          EncodingPkgVersion;                                // 0x144(0x4)
+	struct FName                                                 RetargetSource;                                    // 0x148(0x8)
+	bool                                                         bEnableRootMotion;                                 // 0x150(0x1)
+	char                                                         RootMotionRootLock;                                // 0x151(0x1)
+	bool                                                         bRootMotionSettingsCopiedFromMontage;              // 0x152(0x1)
 };
 
 
-// Size 0x38 (Full Size[0x90] - InheritedSize[0x58]
-class ParticleModuleAccelerationOverLifetime: public ParticleModuleAccelerationBase
+// Size 0x20 (Full Size[0xa0] - InheritedSize[0x80]
+class MaterialExpressionFontSampleParameter: public MaterialExpressionFontSample
 {
 public:
-	struct RawDistributionVector                                 AccelOverLife;                                     // 0x58(0x38)
+	struct FName                                                 ParameterName;                                     // 0x80(0x8)
+	struct Guid                                                  ExpressionGUID;                                    // 0x88(0x10)
+	struct FName                                                 Group;                                             // 0x98(0x8)
 };
 
 
-// Size 0x70 (Full Size[0xc8] - InheritedSize[0x58]
-class ParticleModuleAccelerationDrag: public ParticleModuleAccelerationBase
+// Size 0x20 (Full Size[0x300] - InheritedSize[0x2e0]
+class ChildActorComponent: public SceneComponent
 {
 public:
-	class DistributionFloat*                                     DragCoefficient;                                   // 0x58(0x8)
-	class DistributionFloat*                                     DragOnLocalVelocity;                               // 0x60(0x8)
-	bool                                                         bUseGroupADragCoefficientForAllGroups;             // 0x68(0x1)
-	class DistributionFloat*                                     AdditionalDragCoefficient;                         // 0x70(0x8)
-	bool                                                         bUseGroupADragOnLocalVelocityForAllGroups;         // 0x98(0x1)
-	class DistributionFloat*                                     AdditionalDragOnLocalVelocity;                     // 0xa0(0x8)
+	class UClass*                                                ChildActorClass;                                   // 0x2e0(0x8)
+	class Actor*                                                 ChildActor;                                        // 0x2e8(0x8)
 };
 
 
-// Size 0x38 (Full Size[0x450] - InheritedSize[0x418]
-class EmitterCameraLensEffectBase: public Emitter
+// Size 0x10 (Full Size[0x2f0] - InheritedSize[0x2e0]
+class CalmWaterComponent: public SceneComponent
 {
 public:
-	class ParticleSystem*                                        PS_CameraEffect;                                   // 0x418(0x8)
-	class ParticleSystem*                                        PS_CameraEffectNonExtremeContent;                  // 0x420(0x8)
-	float                                                        BaseFOV;                                           // 0x428(0x4)
-	float                                                        DistFromCamera;                                    // 0x42c(0x4)
-	bool                                                         bAllowMultipleInstances;                           // 0x430(0x1)
-	TArray<class Class*>                                         EmittersToTreatAsSame;                             // 0x438(0x10)
-	class PlayerCameraManager*                                   BaseCamera;                                        // 0x448(0x8)
-};
-
-
-// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
-class DistributionVectorParameterBase: public DistributionVectorConstant
-{
-public:
-	struct FName                                                 ParameterName;                                     // 0x50(0x8)
-	struct Vector                                                MinInput;                                          // 0x58(0xc)
-	struct Vector                                                MaxInput;                                          // 0x64(0xc)
-	struct Vector                                                MinOutput;                                         // 0x70(0xc)
-	struct Vector                                                MaxOutput;                                         // 0x7c(0xc)
-	char                                                         ParamModes;                                        // 0x88(0x1)
-};
-
-
-// Size 0x78 (Full Size[0xd0] - InheritedSize[0x58]
-class ParticleModuleVelocityInheritParent: public ParticleModuleVelocityBase
-{
-public:
-	struct RawDistributionVector                                 Scale;                                             // 0x58(0x38)
-	struct RawDistributionVector                                 CustomParentScale;                                 // 0x90(0x38)
-	bool                                                         ScalesRespectEmitterRotation;                      // 0xc8(0x1)
-	bool                                                         UseCustomLocalSpace;                               // 0xc8(0x1)
-	float                                                        SpeedCap;                                          // 0xcc(0x4)
-};
-
-
-// Size 0x28 (Full Size[0x170] - InheritedSize[0x148]
-class TextureRenderTarget2D: public TextureRenderTarget
-{
-public:
-	int                                                          SizeX;                                             // 0x148(0x4)
-	int                                                          SizeY;                                             // 0x14c(0x4)
-	struct LinearColor                                           ClearColor;                                        // 0x150(0x10)
-	char                                                         AddressX;                                          // 0x160(0x1)
-	char                                                         AddressY;                                          // 0x161(0x1)
-	bool                                                         bForceLinearGamma;                                 // 0x164(0x1)
-	bool                                                         bHDR;                                              // 0x164(0x1)
-	bool                                                         bAutoGenerateMips;                                 // 0x164(0x1)
-	char                                                         OverrideFormat;                                    // 0x168(0x1)
-	bool                                                         bDontClearOnCreation;                              // 0x169(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x110] - InheritedSize[0x108]
-class BlendSpace1D: public BlendSpaceBase
-{
-public:
-	bool                                                         bScaleAnimation;                                   // 0x108(0x1)
-};
-
-
-// Size 0x38 (Full Size[0x90] - InheritedSize[0x58]
-class ParticleModuleEmitterPointVelocity: public ParticleModuleVelocityBase
-{
-public:
-	struct RawDistributionFloat                                  VelocityScale;                                     // 0x58(0x38)
-};
-
-
-// Size 0x48 (Full Size[0x158] - InheritedSize[0x110]
-class NavMovementComponent: public MovementComponent
-{
-public:
-	struct NavAgentProperties                                    NavAgentProps;                                     // 0x110(0x30)
-	bool                                                         bUpdateNavAgentWithOwnersCollision;                // 0x140(0x1)
-	struct MovementProperties                                    MovementState;                                     // 0x144(0x4)
-	bool                                                         UseDefaultNavWalkingSearchRadiusScale;             // 0x150(0x1)
-	bool                                                         UseDefaultNavWalkingSearchHeightScale;             // 0x151(0x1)
-};
-
-
-// Size 0x40 (Full Size[0x98] - InheritedSize[0x58]
-class ParticleModuleAccelerationEmitterPoint: public ParticleModuleAccelerationBase
-{
-public:
-	struct RawDistributionFloat                                  AccelerationScale;                                 // 0x58(0x38)
-	bool                                                         bApplyOwnerScale;                                  // 0x90(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x3d8] - InheritedSize[0x3d0]
-class AmbientLightSource: public Light
-{
-public:
-	class AmbientLightSourceComponent*                           AmbientLightSourceComponent;                       // 0x3d0(0x8)
+	float                                                        Radius;                                            // 0x2e0(0x4)
+	float                                                        RadiusPercentageToStartLerp;                       // 0x2e4(0x4)
+	float                                                        DampeningFactor;                                   // 0x2e8(0x4)
 };
 
 
@@ -7002,38 +6747,44 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0xa8] - InheritedSize[0x90]
-class MaterialExpressionVectorParameter: public MaterialExpressionParameter
+// Size 0x8 (Full Size[0x1a0] - InheritedSize[0x198]
+class TextureLightProfile: public Texture2D
 {
 public:
-	struct LinearColor                                           DefaultValue;                                      // 0x90(0x10)
-	bool                                                         bUseCustomPrimitiveData;                           // 0xa0(0x1)
-	char                                                         PrimitiveDataIndex;                                // 0xa1(0x1)
+	float                                                        Brightness;                                        // 0x198(0x4)
+	float                                                        TextureMultiplier;                                 // 0x19c(0x4)
 };
 
 
-// Size 0x18 (Full Size[0xa8] - InheritedSize[0x90]
-class InterpTrackMoveAxis: public InterpTrackFloatBase
+// Size 0x60 (Full Size[0x340] - InheritedSize[0x2e0]
+class ExponentialHeightFogComponent: public SceneComponent
 {
 public:
-	char                                                         MoveAxis;                                          // 0x90(0x1)
-	struct InterpLookupTrack                                     LookupTrack;                                       // 0x98(0x10)
+	float                                                        FogDensity;                                        // 0x2e0(0x4)
+	struct LinearColor                                           FogInscatteringColor;                              // 0x2e4(0x10)
+	struct LinearColor                                           FarFogInscatteringColor;                           // 0x2f4(0x10)
+	float                                                        DirectionalInscatteringExponent;                   // 0x304(0x4)
+	float                                                        DirectionalInscatteringStartDistance;              // 0x308(0x4)
+	float                                                        StartScaleDirectionalInscattering;                 // 0x30c(0x4)
+	float                                                        FarScaleDirectionalInscattering;                   // 0x310(0x4)
+	struct LinearColor                                           DirectionalInscatteringColor;                      // 0x314(0x10)
+	float                                                        FogHeightFalloff;                                  // 0x324(0x4)
+	float                                                        FogMaxOpacity;                                     // 0x328(0x4)
+	float                                                        StartDistance;                                     // 0x32c(0x4)
+	float                                                        FarDistance;                                       // 0x330(0x4)
+	float                                                        StartScale;                                        // 0x334(0x4)
+	float                                                        FarScale;                                          // 0x338(0x4)
+	bool                                                         bIsUnderwater;                                     // 0x33c(0x1)
 };
 
 
-// Size 0x20 (Full Size[0x238] - InheritedSize[0x218]
-class ParticleModuleLocationPrimitiveSphere_Seeded: public ParticleModuleLocationPrimitiveSphere
+// Size 0x28 (Full Size[0x100] - InheritedSize[0xd8]
+class AnimBlueprint: public Blueprint
 {
 public:
-	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x218(0x20)
-};
-
-
-// Size 0x8 (Full Size[0x3f8] - InheritedSize[0x3f0]
-class PlayerStart: public NavigationObjectBase
-{
-public:
-	struct FName                                                 PlayerStartTag;                                    // 0x3f0(0x8)
+	class Skeleton*                                              TargetSkeleton;                                    // 0xd8(0x8)
+	TArray<struct AnimGroupInfo>                                 Groups;                                            // 0xe0(0x10)
+	TArray<struct Name>                                          SkeletonSlotNames;                                 // 0xf0(0x10)
 };
 
 
@@ -7068,52 +6819,260 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x1a0] - InheritedSize[0x198]
-class TextureLightProfile: public Texture2D
+// Size 0x150 (Full Size[0x430] - InheritedSize[0x2e0]
+class AudioComponent: public SceneComponent
 {
 public:
-	float                                                        Brightness;                                        // 0x198(0x4)
-	float                                                        TextureMultiplier;                                 // 0x19c(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x98] - InheritedSize[0x90]
-class MaterialExpressionStaticBoolParameter: public MaterialExpressionParameter
-{
-public:
-	bool                                                         DefaultValue;                                      // 0x90(0x1)
+	class SoundBase*                                             Sound;                                             // 0x2e0(0x8)
+	TArray<struct AudioComponentParam>                           InstanceParameters;                                // 0x2e8(0x10)
+	class SoundClass*                                            SoundClassOverride;                                // 0x2f8(0x8)
+	bool                                                         bAutoDestroy;                                      // 0x300(0x1)
+	bool                                                         bStopWhenOwnerDestroyed;                           // 0x300(0x1)
+	bool                                                         bShouldRemainActiveIfDropped;                      // 0x300(0x1)
+	bool                                                         bAllowSpatialization;                              // 0x300(0x1)
+	bool                                                         bOverrideAttenuation;                              // 0x300(0x1)
+	bool                                                         bIsUISound;                                        // 0x300(0x1)
+	float                                                        PitchModulationMin;                                // 0x304(0x4)
+	float                                                        PitchModulationMax;                                // 0x308(0x4)
+	float                                                        VolumeModulationMin;                               // 0x30c(0x4)
+	float                                                        VolumeModulationMax;                               // 0x310(0x4)
+	float                                                        VolumeMultiplier;                                  // 0x314(0x4)
+	float                                                        PitchMultiplier;                                   // 0x318(0x4)
+	float                                                        HighFrequencyGainMultiplier;                       // 0x31c(0x4)
+	class SoundAttenuation*                                      AttenuationSettings;                               // 0x320(0x8)
+	struct AttenuationSettings                                   AttenuationOverrides;                              // 0x328(0xc0)
+	multicastinlinedelegate                                      OnAudioFinished;                                   // 0x3f0(0x10)
+	delegate                                                     OnQueueSubtitles;                                  // 0x418(0x10)
 };
 
 
 // Size 0x18 (Full Size[0xa8] - InheritedSize[0x90]
-class InterpTrackFade: public InterpTrackFloatBase
+class InterpTrackVectorMaterialParam: public InterpTrackVectorBase
 {
 public:
-	bool                                                         bPersistFade;                                      // 0x90(0x1)
-	bool                                                         bFadeAudio;                                        // 0x90(0x1)
-	struct LinearColor                                           FadeColor;                                         // 0x94(0x10)
+	TArray<class MaterialInterface*>                             TargetMaterials;                                   // 0x90(0x10)
+	struct FName                                                 ParamName;                                         // 0xa0(0x8)
 };
 
 
-// Size 0x188 (Full Size[0x1f0] - InheritedSize[0x68]
-class ParticleModuleParametersOverCustom: public ParticleModuleParametersOverX
+// Size 0x98 (Full Size[0x190] - InheritedSize[0xf8]
+class NavLinkCustomComponent: public NavRelevantComponent
 {
 public:
-	struct RawDistributionFloat                                  DynamicParamScaleOverCustomScale;                  // 0x68(0x38)
-	struct RawDistributionFloat                                  SpawnRateOverCustomScale;                          // 0xa0(0x38)
-	struct RawDistributionFloat                                  LifetimeOverCustomScale;                           // 0xd8(0x38)
-	struct RawDistributionFloat                                  SizeOverCustomScale;                               // 0x110(0x38)
-	struct RawDistributionFloat                                  InitialVelocityOverCustomScale;                    // 0x148(0x38)
-	struct RawDistributionFloat                                  OpacityOverCustomScale;                            // 0x180(0x38)
-	struct RawDistributionFloat                                  CylinderRadiusOverCustomScale;                     // 0x1b8(0x38)
+	uint32                                                       NavLinkUserId;                                     // 0x100(0x4)
+	class UClass*                                                EnabledAreaClass;                                  // 0x108(0x8)
+	class UClass*                                                DisabledAreaClass;                                 // 0x110(0x8)
+	struct Vector                                                LinkRelativeStart;                                 // 0x118(0xc)
+	struct Vector                                                LinkRelativeEnd;                                   // 0x124(0xc)
+	char                                                         LinkDirection;                                     // 0x130(0x1)
+	bool                                                         bLinkEnabled;                                      // 0x134(0x1)
+	bool                                                         bNotifyWhenEnabled;                                // 0x134(0x1)
+	bool                                                         bNotifyWhenDisabled;                               // 0x134(0x1)
+	bool                                                         bCreateBoxObstacle;                                // 0x134(0x1)
+	struct Vector                                                ObstacleOffset;                                    // 0x138(0xc)
+	struct Vector                                                ObstacleExtent;                                    // 0x144(0xc)
+	class UClass*                                                ObstacleAreaClass;                                 // 0x150(0x8)
+	float                                                        BroadcastRadius;                                   // 0x158(0x4)
+	float                                                        BroadcastInterval;                                 // 0x15c(0x4)
+	char                                                         BroadcastChannel;                                  // 0x160(0x1)
 };
 
 
-// Size 0x8 (Full Size[0x110] - InheritedSize[0x108]
-class BlendSpace: public BlendSpaceBase
+// Size 0x88 (Full Size[0xe0] - InheritedSize[0x58]
+class ParticleModuleVelocityConeEmitterPoint: public ParticleModuleVelocityBase
 {
 public:
-	char                                                         AxisToScaleAnimation;                              // 0x108(0x1)
+	struct RawDistributionFloat                                  Angle;                                             // 0x58(0x38)
+	struct RawDistributionFloat                                  VelocityScale;                                     // 0x90(0x38)
+	uint32                                                       VelocityDistributeOverNPoints;                     // 0xc8(0x4)
+	float                                                        VelocityNPointsRandomness;                         // 0xcc(0x4)
+	struct Vector                                                AdditiveVelocity;                                  // 0xd0(0xc)
+};
+
+
+// Size 0x20 (Full Size[0x300] - InheritedSize[0x2e0]
+class InstancedNavMeshComponent: public SceneComponent
+{
+public:
+	struct FName                                                 NavMeshName;                                       // 0x2e8(0x8)
+	bool                                                         UseAttachedParentAsPrimitiveBase;                  // 0x2f0(0x1)
+};
+
+
+// Size 0x70 (Full Size[0x350] - InheritedSize[0x2e0]
+class SceneCaptureComponent: public SceneComponent
+{
+public:
+	TArray<uintptr_t>                                            HiddenComponents;                                  // 0x2e0(0x10)
+	bool                                                         bCaptureEveryFrame;                                // 0x2f0(0x1)
+	float                                                        MaxViewDistanceOverride;                           // 0x2f4(0x4)
+	TArray<struct EngineShowFlagsSetting>                        ShowFlagSettings;                                  // 0x2f8(0x10)
+};
+
+
+// Size 0x20 (Full Size[0x368] - InheritedSize[0x348]
+class ParticleModuleLocationPrimitiveCylinder_Seeded: public ParticleModuleLocationPrimitiveCylinder
+{
+public:
+	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x348(0x20)
+};
+
+
+// Size 0x40 (Full Size[0x90] - InheritedSize[0x50]
+class DistributionVectorParameterBase: public DistributionVectorConstant
+{
+public:
+	struct FName                                                 ParameterName;                                     // 0x50(0x8)
+	struct Vector                                                MinInput;                                          // 0x58(0xc)
+	struct Vector                                                MaxInput;                                          // 0x64(0xc)
+	struct Vector                                                MinOutput;                                         // 0x70(0xc)
+	struct Vector                                                MaxOutput;                                         // 0x7c(0xc)
+	char                                                         ParamModes;                                        // 0x88(0x1)
+};
+
+
+// Size 0x48 (Full Size[0x158] - InheritedSize[0x110]
+class NavMovementComponent: public MovementComponent
+{
+public:
+	struct NavAgentProperties                                    NavAgentProps;                                     // 0x110(0x30)
+	bool                                                         bUpdateNavAgentWithOwnersCollision;                // 0x140(0x1)
+	struct MovementProperties                                    MovementState;                                     // 0x144(0x4)
+	bool                                                         UseDefaultNavWalkingSearchRadiusScale;             // 0x150(0x1)
+	bool                                                         UseDefaultNavWalkingSearchHeightScale;             // 0x151(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x3d8] - InheritedSize[0x3d0]
+class SphereReflectionCapture: public ReflectionCapture
+{
+public:
+	class DrawSphereComponent*                                   DrawCaptureRadius;                                 // 0x3d0(0x8)
+};
+
+
+// Size 0x90 (Full Size[0x370] - InheritedSize[0x2e0]
+class SpringArmComponent: public SceneComponent
+{
+public:
+	float                                                        TargetArmLength;                                   // 0x2e0(0x4)
+	struct Vector                                                SocketOffset;                                      // 0x2e4(0xc)
+	struct Vector                                                TargetOffset;                                      // 0x2f0(0xc)
+	float                                                        ProbeSize;                                         // 0x2fc(0x4)
+	char                                                         ProbeChannel;                                      // 0x300(0x1)
+	bool                                                         bDoCollisionTest;                                  // 0x304(0x1)
+	bool                                                         bUsePawnControlRotation;                           // 0x304(0x1)
+	bool                                                         bInheritPitch;                                     // 0x304(0x1)
+	bool                                                         bInheritYaw;                                       // 0x304(0x1)
+	bool                                                         bInheritRoll;                                      // 0x304(0x1)
+	bool                                                         bEnableCameraLag;                                  // 0x304(0x1)
+	bool                                                         bEnableCameraRotationLag;                          // 0x304(0x1)
+	bool                                                         bUseCameraLagSubstepping;                          // 0x304(0x1)
+	bool                                                         bDrawDebugLagMarkers;                              // 0x305(0x1)
+	float                                                        CameraLagSpeed;                                    // 0x308(0x4)
+	float                                                        CameraRotationLagSpeed;                            // 0x30c(0x4)
+	float                                                        CameraLagMaxTimeStep;                              // 0x310(0x4)
+	float                                                        CameraLagMaxDistance;                              // 0x314(0x4)
+};
+
+
+// Size 0x38 (Full Size[0x450] - InheritedSize[0x418]
+class EmitterCameraLensEffectBase: public Emitter
+{
+public:
+	class ParticleSystem*                                        PS_CameraEffect;                                   // 0x418(0x8)
+	class ParticleSystem*                                        PS_CameraEffectNonExtremeContent;                  // 0x420(0x8)
+	float                                                        BaseFOV;                                           // 0x428(0x4)
+	float                                                        DistFromCamera;                                    // 0x42c(0x4)
+	bool                                                         bAllowMultipleInstances;                           // 0x430(0x1)
+	TArray<class Class*>                                         EmittersToTreatAsSame;                             // 0x438(0x10)
+	class PlayerCameraManager*                                   BaseCamera;                                        // 0x448(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x130] - InheritedSize[0x110]
+class RotatingMovementComponent: public MovementComponent
+{
+public:
+	struct Rotator                                               RotationRate;                                      // 0x110(0xc)
+	struct Vector                                                PivotTranslation;                                  // 0x11c(0xc)
+	bool                                                         bRotationInLocalSpace;                             // 0x128(0x1)
+};
+
+
+// Size 0x78 (Full Size[0xd0] - InheritedSize[0x58]
+class ParticleModuleVelocityInheritParent: public ParticleModuleVelocityBase
+{
+public:
+	struct RawDistributionVector                                 Scale;                                             // 0x58(0x38)
+	struct RawDistributionVector                                 CustomParentScale;                                 // 0x90(0x38)
+	bool                                                         ScalesRespectEmitterRotation;                      // 0xc8(0x1)
+	bool                                                         UseCustomLocalSpace;                               // 0xc8(0x1)
+	float                                                        SpeedCap;                                          // 0xcc(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x98] - InheritedSize[0x90]
+class InterpTrackFloatProp: public InterpTrackFloatBase
+{
+public:
+	struct FName                                                 PropertyName;                                      // 0x90(0x8)
+};
+
+
+// Size 0x50 (Full Size[0xa8] - InheritedSize[0x58]
+class ParticleModuleSpawnPerUnit: public ParticleModuleSpawnBase
+{
+public:
+	bool                                                         bAffectsGroupA;                                    // 0x58(0x1)
+	bool                                                         bAffectsGroupB;                                    // 0x58(0x1)
+	bool                                                         bAffectsGroupC;                                    // 0x58(0x1)
+	bool                                                         bAffectsGroupD;                                    // 0x58(0x1)
+	bool                                                         bAffectsGroupE;                                    // 0x58(0x1)
+	bool                                                         bAffectsReplacementGroup;                          // 0x58(0x1)
+	float                                                        UnitScalar;                                        // 0x5c(0x4)
+	struct RawDistributionFloat                                  SpawnPerUnit;                                      // 0x60(0x38)
+	bool                                                         bIgnoreSpawnRateWhenMoving;                        // 0x98(0x1)
+	float                                                        MovementTolerance;                                 // 0x9c(0x4)
+	float                                                        MaxFrameDistance;                                  // 0xa0(0x4)
+	bool                                                         bIgnoreMovementAlongX;                             // 0xa4(0x1)
+	bool                                                         bIgnoreMovementAlongY;                             // 0xa4(0x1)
+	bool                                                         bIgnoreMovementAlongZ;                             // 0xa4(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x3f8] - InheritedSize[0x3f0]
+class PlayerStart: public NavigationObjectBase
+{
+public:
+	struct FName                                                 PlayerStartTag;                                    // 0x3f0(0x8)
+};
+
+
+// Size 0x40 (Full Size[0x98] - InheritedSize[0x58]
+class ParticleModuleVelocityOverLifetime: public ParticleModuleVelocityBase
+{
+public:
+	struct RawDistributionVector                                 VelOverLife;                                       // 0x58(0x38)
+	bool                                                         Absolute;                                          // 0x90(0x1)
+};
+
+
+// Size 0x38 (Full Size[0x90] - InheritedSize[0x58]
+class ParticleModuleAccelerationOverLifetime: public ParticleModuleAccelerationBase
+{
+public:
+	struct RawDistributionVector                                 AccelOverLife;                                     // 0x58(0x38)
+};
+
+
+// Size 0x20 (Full Size[0xb0] - InheritedSize[0x90]
+class InterpTrackAnimControl: public InterpTrackFloatBase
+{
+public:
+	struct FName                                                 SlotName;                                          // 0x90(0x8)
+	TArray<struct AnimControlTrackKey>                           AnimSeqs;                                          // 0x98(0x10)
+	bool                                                         bSkipAnimNotifiers;                                // 0xa8(0x1)
 };
 
 
@@ -7135,6 +7094,22 @@ public:
 	float                                                        IndirectLightingIntensity;                         // 0x300(0x4)
 	float                                                        ScaleForTranslucency;                              // 0x304(0x4)
 	float                                                        CapForTranslucency;                                // 0x308(0x4)
+};
+
+
+// Size 0x38 (Full Size[0x90] - InheritedSize[0x58]
+class ParticleModuleEmitterPointVelocity: public ParticleModuleVelocityBase
+{
+public:
+	struct RawDistributionFloat                                  VelocityScale;                                     // 0x58(0x38)
+};
+
+
+// Size 0x8 (Full Size[0x110] - InheritedSize[0x108]
+class BlendSpace: public BlendSpaceBase
+{
+public:
+	char                                                         AxisToScaleAnimation;                              // 0x108(0x1)
 };
 
 
@@ -7184,34 +7159,17 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0xd0] - InheritedSize[0x90]
-class MaterialExpressionStaticComponentMaskParameter: public MaterialExpressionParameter
+// Size 0xc8 (Full Size[0x120] - InheritedSize[0x58]
+class ParticleModuleOrbit: public ParticleModuleOrbitBase
 {
 public:
-	struct ExpressionInput                                       Input;                                             // 0x90(0x38)
-	bool                                                         DefaultR;                                          // 0xc8(0x1)
-	bool                                                         DefaultG;                                          // 0xc8(0x1)
-	bool                                                         DefaultB;                                          // 0xc8(0x1)
-	bool                                                         DefaultA;                                          // 0xc8(0x1)
-};
-
-
-// Size 0x570 (Full Size[0x850] - InheritedSize[0x2e0]
-class CameraComponent: public SceneComponent
-{
-public:
-	float                                                        FieldOfView;                                       // 0x2e0(0x4)
-	float                                                        OrthoWidth;                                        // 0x2e4(0x4)
-	float                                                        OrthoNearClipPlane;                                // 0x2e8(0x4)
-	float                                                        OrthoFarClipPlane;                                 // 0x2ec(0x4)
-	float                                                        AspectRatio;                                       // 0x2f0(0x4)
-	bool                                                         bConstrainAspectRatio;                             // 0x2f4(0x1)
-	bool                                                         bUseFieldOfViewForLOD;                             // 0x2f4(0x1)
-	bool                                                         bUsePawnControlRotation;                           // 0x2f4(0x1)
-	char                                                         ProjectionMode;                                    // 0x2f8(0x1)
-	float                                                        PostProcessBlendWeight;                            // 0x2fc(0x4)
-	struct PostProcessSettings                                   PostProcessSettings;                               // 0x300(0x540)
-	bool                                                         bUseControllerViewRotation;                        // 0x840(0x1)
+	char                                                         ChainMode;                                         // 0x58(0x1)
+	struct RawDistributionVector                                 OffsetAmount;                                      // 0x60(0x38)
+	struct OrbitOptions                                          OffsetOptions;                                     // 0x98(0x4)
+	struct RawDistributionVector                                 RotationAmount;                                    // 0xa0(0x38)
+	struct OrbitOptions                                          RotationOptions;                                   // 0xd8(0x4)
+	struct RawDistributionVector                                 RotationRateAmount;                                // 0xe0(0x38)
+	struct OrbitOptions                                          RotationRateOptions;                               // 0x118(0x4)
 };
 
 
@@ -7226,12 +7184,68 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0x118] - InheritedSize[0xf8]
-class NavModifierComponent: public NavRelevantComponent
+// Size 0x1e0 (Full Size[0x4c0] - InheritedSize[0x2e0]
+class AtmosphericFogComponent: public SceneComponent
 {
 public:
-	class UClass*                                                AreaClass;                                         // 0xf8(0x8)
-	struct Vector                                                FailsafeExtent;                                    // 0x100(0xc)
+	float                                                        SunMultiplier;                                     // 0x2e0(0x4)
+	float                                                        FogMultiplier;                                     // 0x2e4(0x4)
+	float                                                        DensityMultiplier;                                 // 0x2e8(0x4)
+	float                                                        DensityOffset;                                     // 0x2ec(0x4)
+	float                                                        DistanceScale;                                     // 0x2f0(0x4)
+	float                                                        AltitudeScale;                                     // 0x2f4(0x4)
+	float                                                        DistanceOffset;                                    // 0x2f8(0x4)
+	float                                                        GroundOffset;                                      // 0x2fc(0x4)
+	float                                                        StartDistance;                                     // 0x300(0x4)
+	float                                                        SunDiscScale;                                      // 0x304(0x4)
+	float                                                        DefaultBrightness;                                 // 0x308(0x4)
+	struct Color                                                 DefaultLightColor;                                 // 0x30c(0x4)
+	bool                                                         bDisableSunDisk;                                   // 0x310(0x1)
+	bool                                                         bDisableGroundScattering;                          // 0x310(0x1)
+	struct AtmospherePrecomputeParameters                        PrecomputeParams;                                  // 0x314(0x2c)
+	class Texture2D*                                             TransmittanceTexture;                              // 0x340(0x8)
+	class Texture2D*                                             IrradianceTexture;                                 // 0x348(0x8)
+};
+
+
+// Size 0x18 (Full Size[0xa8] - InheritedSize[0x90]
+class InterpTrackSound: public InterpTrackVectorBase
+{
+public:
+	TArray<struct SoundTrackKey>                                 Sounds;                                            // 0x90(0x10)
+	bool                                                         bPlayOnReverse;                                    // 0xa0(0x1)
+	bool                                                         bContinueSoundOnMatineeEnd;                        // 0xa0(0x1)
+	bool                                                         bSuppressSubtitles;                                // 0xa0(0x1)
+	bool                                                         bTreatAsDialogue;                                  // 0xa0(0x1)
+	bool                                                         bAttach;                                           // 0xa0(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x3d8] - InheritedSize[0x3d0]
+class PointLight: public Light
+{
+public:
+	class PointLightComponent*                                   PointLightComponent;                               // 0x3d0(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x50] - InheritedSize[0x48]
+class SoundNodeParamCrossFade: public SoundNodeDistanceCrossFade
+{
+public:
+	struct FName                                                 ParamName;                                         // 0x48(0x8)
+};
+
+
+// Size 0x10 (Full Size[0xa0] - InheritedSize[0x90]
+class MaterialExpressionScalarParameter: public MaterialExpressionParameter
+{
+public:
+	float                                                        DefaultValue;                                      // 0x90(0x4)
+	float                                                        SliderMin;                                         // 0x94(0x4)
+	float                                                        SliderMax;                                         // 0x98(0x4)
+	bool                                                         bUseCustomPrimitiveData;                           // 0x9c(0x1)
+	char                                                         PrimitiveDataIndex;                                // 0x9d(0x1)
 };
 
 
@@ -7243,24 +7257,120 @@ public:
 };
 
 
-// Size 0x30 (Full Size[0x310] - InheritedSize[0x2e0]
-class DecalComponent: public SceneComponent
+// Size 0x28 (Full Size[0x170] - InheritedSize[0x148]
+class TextureRenderTarget2D: public TextureRenderTarget
 {
 public:
-	class MaterialInterface*                                     DecalMaterial;                                     // 0x2e0(0x8)
-	int                                                          SortOrder;                                         // 0x2e8(0x4)
-	float                                                        FadeScreenSize;                                    // 0x2ec(0x4)
-	class MaterialInstanceDynamic*                               MaterialInstanceDynamic;                           // 0x2f0(0x8)
+	int                                                          SizeX;                                             // 0x148(0x4)
+	int                                                          SizeY;                                             // 0x14c(0x4)
+	struct LinearColor                                           ClearColor;                                        // 0x150(0x10)
+	char                                                         AddressX;                                          // 0x160(0x1)
+	char                                                         AddressY;                                          // 0x161(0x1)
+	bool                                                         bForceLinearGamma;                                 // 0x164(0x1)
+	bool                                                         bHDR;                                              // 0x164(0x1)
+	bool                                                         bAutoGenerateMips;                                 // 0x164(0x1)
+	char                                                         OverrideFormat;                                    // 0x168(0x1)
+	bool                                                         bDontClearOnCreation;                              // 0x169(0x1)
 };
 
 
-// Size 0x20 (Full Size[0xb0] - InheritedSize[0x90]
-class InterpTrackAnimControl: public InterpTrackFloatBase
+// Size 0x8 (Full Size[0x110] - InheritedSize[0x108]
+class BlendSpace1D: public BlendSpaceBase
 {
 public:
-	struct FName                                                 SlotName;                                          // 0x90(0x8)
-	TArray<struct AnimControlTrackKey>                           AnimSeqs;                                          // 0x98(0x10)
-	bool                                                         bSkipAnimNotifiers;                                // 0xa8(0x1)
+	bool                                                         bScaleAnimation;                                   // 0x108(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x1a0] - InheritedSize[0x198]
+class ShadowMapTexture2D: public Texture2D
+{
+public:
+	char                                                         ShadowmapFlags;                                    // 0x198(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x448] - InheritedSize[0x440]
+class MatineeActorCameraAnim: public MatineeActor
+{
+public:
+	class CameraAnim*                                            CameraAnim;                                        // 0x440(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x238] - InheritedSize[0x218]
+class ParticleModuleLocationPrimitiveSphere_Seeded: public ParticleModuleLocationPrimitiveSphere
+{
+public:
+	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x218(0x20)
+};
+
+
+// Size 0x8 (Full Size[0x98] - InheritedSize[0x90]
+class InterpTrackVectorProp: public InterpTrackVectorBase
+{
+public:
+	struct FName                                                 PropertyName;                                      // 0x90(0x8)
+};
+
+
+// Size 0x190 (Full Size[0x1e8] - InheritedSize[0x58]
+class ParticleModuleVelocity: public ParticleModuleVelocityBase
+{
+public:
+	bool                                                         bUseGroupAForAll;                                  // 0x58(0x1)
+	struct RawDistributionVector                                 StartVelocity;                                     // 0x60(0x38)
+	struct RawDistributionVector                                 AdditionalStartVelocities;                         // 0x98(0x38)
+	struct RawDistributionFloat                                  StartVelocityRadial;                               // 0x1b0(0x38)
+};
+
+
+// Size 0x30 (Full Size[0x310] - InheritedSize[0x2e0]
+class NavigationGraphNodeComponent: public SceneComponent
+{
+public:
+	struct NavGraphNode                                          Node;                                              // 0x2e0(0x18)
+	class NavigationGraphNodeComponent*                          NextNodeComponent;                                 // 0x2f8(0x8)
+	class NavigationGraphNodeComponent*                          PrevNodeComponent;                                 // 0x300(0x8)
+};
+
+
+// Size 0x18 (Full Size[0xa8] - InheritedSize[0x90]
+class InterpTrackMoveAxis: public InterpTrackFloatBase
+{
+public:
+	char                                                         MoveAxis;                                          // 0x90(0x1)
+	struct InterpLookupTrack                                     LookupTrack;                                       // 0x98(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x310] - InheritedSize[0x2e0]
+class PhysicsSpringComponent: public SceneComponent
+{
+public:
+	float                                                        SpringStiffness;                                   // 0x2e0(0x4)
+	float                                                        SpringDamping;                                     // 0x2e4(0x4)
+	float                                                        SpringLengthAtRest;                                // 0x2e8(0x4)
+	float                                                        SpringRadius;                                      // 0x2ec(0x4)
+	char                                                         SpringChannel;                                     // 0x2f0(0x1)
+	bool                                                         bIgnoreSelf;                                       // 0x2f1(0x1)
+	float                                                        SpringCompression;                                 // 0x2f4(0x4)
+};
+
+
+// Size 0x128 (Full Size[0x1a8] - InheritedSize[0x80]
+class MaterialExpressionTextureSample: public MaterialExpressionTextureBase
+{
+public:
+	struct ExpressionInput                                       Coordinates;                                       // 0x80(0x38)
+	struct ExpressionInput                                       TextureObject;                                     // 0xb8(0x38)
+	struct ExpressionInput                                       MipValue;                                          // 0xf0(0x38)
+	struct ExpressionInput                                       CoordinatesDX;                                     // 0x128(0x38)
+	struct ExpressionInput                                       CoordinatesDY;                                     // 0x160(0x38)
+	char                                                         MipValueMode;                                      // 0x198(0x1)
+	char                                                         SamplerSource;                                     // 0x199(0x1)
+	uint32                                                       ConstCoordinate;                                   // 0x19c(0x4)
+	int                                                          ConstMipValue;                                     // 0x1a0(0x4)
 };
 
 
@@ -7279,21 +7389,159 @@ public:
 };
 
 
-// Size 0x30 (Full Size[0x310] - InheritedSize[0x2e0]
-class WaterEmissionVolumeComponent: public SceneComponent
+// Size 0x130 (Full Size[0x198] - InheritedSize[0x68]
+class ParticleModuleParametersOverVelocity: public ParticleModuleParametersOverX
 {
 public:
-	float                                                        Radius;                                            // 0x2e0(0x4)
-	float                                                        GenerationDensity;                                 // 0x2e4(0x4)
+	float                                                        MinSpeed;                                          // 0x68(0x4)
+	float                                                        MaxSpeed;                                          // 0x6c(0x4)
+	struct Vector                                                VelocityComponentsWeights;                         // 0x70(0xc)
+	struct RawDistributionFloat                                  SpawnRateOverSpeedScale;                           // 0x80(0x38)
+	struct RawDistributionFloat                                  LifetimeOverSpeedScale;                            // 0xb8(0x38)
+	struct RawDistributionFloat                                  SizeOverSpeedScale;                                // 0xf0(0x38)
+	struct RawDistributionFloat                                  InitialVelocityOverSpeedScale;                     // 0x128(0x38)
+	struct RawDistributionFloat                                  OpacityOverSpeedScale;                             // 0x160(0x38)
+};
+
+
+// Size 0x8 (Full Size[0x34630] - InheritedSize[0x34628]
+class ChildConnection: public NetConnection
+{
+public:
+	class NetConnection*                                         Parent;                                            // 0x34628(0x8)
+};
+
+
+// Size 0x40 (Full Size[0xd0] - InheritedSize[0x90]
+class MaterialExpressionStaticComponentMaskParameter: public MaterialExpressionParameter
+{
+public:
+	struct ExpressionInput                                       Input;                                             // 0x90(0x38)
+	bool                                                         DefaultR;                                          // 0xc8(0x1)
+	bool                                                         DefaultG;                                          // 0xc8(0x1)
+	bool                                                         DefaultB;                                          // 0xc8(0x1)
+	bool                                                         DefaultA;                                          // 0xc8(0x1)
+};
+
+
+// Size 0x40 (Full Size[0x98] - InheritedSize[0x58]
+class ParticleModuleAccelerationEmitterPoint: public ParticleModuleAccelerationBase
+{
+public:
+	struct RawDistributionFloat                                  AccelerationScale;                                 // 0x58(0x38)
+	bool                                                         bApplyOwnerScale;                                  // 0x90(0x1)
 };
 
 
 // Size 0x10 (Full Size[0x68] - InheritedSize[0x58]
-class ParticleModuleAccelerationDragScaleOverLife: public ParticleModuleAccelerationBase
+class ParticleModuleAccelerationConstant: public ParticleModuleAccelerationBase
 {
 public:
-	class DistributionFloat*                                     DragScale;                                         // 0x58(0x8)
-	class DistributionFloat*                                     DragLocalVelocityScale;                            // 0x60(0x8)
+	struct Vector                                                Acceleration;                                      // 0x58(0xc)
+};
+
+
+// Size 0x20 (Full Size[0x118] - InheritedSize[0xf8]
+class NavModifierComponent: public NavRelevantComponent
+{
+public:
+	class UClass*                                                AreaClass;                                         // 0xf8(0x8)
+	struct Vector                                                FailsafeExtent;                                    // 0x100(0xc)
+};
+
+
+// Size 0x90 (Full Size[0x370] - InheritedSize[0x2e0]
+class ReflectionCaptureComponent: public SceneComponent
+{
+public:
+	bool                                                         bLockSettings;                                     // 0x2e0(0x1)
+	float                                                        Brightness;                                        // 0x2e4(0x4)
+	float                                                        ShadowBrightness;                                  // 0x2e8(0x4)
+	float                                                        LPVOcclusionBrightness;                            // 0x2ec(0x4)
+	struct LinearColor                                           ReflectionTint;                                    // 0x2f0(0x10)
+	struct Guid                                                  StateId;                                           // 0x30c(0x10)
+};
+
+
+// Size 0x20 (Full Size[0x168] - InheritedSize[0x148]
+class TextureRenderTargetCube: public TextureRenderTarget
+{
+public:
+	int                                                          SizeX;                                             // 0x148(0x4)
+	struct LinearColor                                           ClearColor;                                        // 0x14c(0x10)
+	char                                                         OverrideFormat;                                    // 0x15c(0x1)
+	bool                                                         bHDR;                                              // 0x160(0x1)
+	bool                                                         bForceLinearGamma;                                 // 0x160(0x1)
+};
+
+
+// Size 0x330 (Full Size[0x388] - InheritedSize[0x58]
+class ParticleModuleVelocityCone: public ParticleModuleVelocityBase
+{
+public:
+	struct RawDistributionFloat                                  Angle;                                             // 0x58(0x38)
+	struct RawDistributionFloat                                  Velocity;                                          // 0x90(0x38)
+	struct Vector                                                Direction;                                         // 0xc8(0xc)
+	bool                                                         bUseGroupAForAll;                                  // 0xd4(0x1)
+	struct VelocityConeGroupParams                               AdditionalParams;                                  // 0xd8(0x80)
+	uint32                                                       VelocityDistributeOverNPoints;                     // 0x358(0x4)
+	float                                                        VelocityNPointsRandomness;                         // 0x35c(0x4)
+	struct Vector                                                AdditiveVelocity;                                  // 0x360(0xc)
+	float                                                        ConeDepthScale;                                    // 0x36c(0x4)
+	bool                                                         WorldSpaceOffset;                                  // 0x370(0x1)
+	struct Vector                                                EmitterOriginOffset;                               // 0x374(0xc)
+	float                                                        PushAwayFromCenterFactor;                          // 0x380(0x4)
+};
+
+
+// Size 0x10 (Full Size[0x3e0] - InheritedSize[0x3d0]
+class SceneCaptureCube: public SceneCapture
+{
+public:
+	class SceneCaptureComponentCube*                             CaptureComponentCube;                              // 0x3d0(0x8)
+	class DrawFrustumComponent*                                  DrawFrustum;                                       // 0x3d8(0x8)
+};
+
+
+// Size 0x560 (Full Size[0x840] - InheritedSize[0x2e0]
+class PostProcessComponent: public SceneComponent
+{
+public:
+	struct PostProcessSettings                                   Settings;                                          // 0x2f0(0x540)
+	float                                                        Priority;                                          // 0x830(0x4)
+	float                                                        BlendRadius;                                       // 0x834(0x4)
+	float                                                        BlendWeight;                                       // 0x838(0x4)
+	bool                                                         bEnabled;                                          // 0x83c(0x1)
+	bool                                                         bUnbound;                                          // 0x83c(0x1)
+};
+
+
+// Size 0x98 (Full Size[0x1a8] - InheritedSize[0x110]
+class InterpToMovementComponent: public MovementComponent
+{
+public:
+	float                                                        Duration;                                          // 0x110(0x4)
+	bool                                                         bPauseOnImpact;                                    // 0x114(0x1)
+	char                                                         BehaviourType;                                     // 0x118(0x1)
+	bool                                                         bForceSubStepping;                                 // 0x11c(0x1)
+	multicastinlinedelegate                                      OnInterpToReverse;                                 // 0x120(0x10)
+	multicastinlinedelegate                                      OnInterpToStop;                                    // 0x130(0x10)
+	multicastinlinedelegate                                      OnWaitBeginDelegate;                               // 0x140(0x10)
+	multicastinlinedelegate                                      OnWaitEndDelegate;                                 // 0x150(0x10)
+	multicastinlinedelegate                                      OnResetDelegate;                                   // 0x160(0x10)
+	float                                                        MaxSimulationTimeStep;                             // 0x170(0x4)
+	int                                                          MaxSimulationIterations;                           // 0x174(0x4)
+	TArray<struct InterpControlPoint>                            ControlPoints;                                     // 0x178(0x10)
+};
+
+
+// Size 0x18 (Full Size[0xa8] - InheritedSize[0x90]
+class MaterialExpressionVectorParameter: public MaterialExpressionParameter
+{
+public:
+	struct LinearColor                                           DefaultValue;                                      // 0x90(0x10)
+	bool                                                         bUseCustomPrimitiveData;                           // 0xa0(0x1)
+	char                                                         PrimitiveDataIndex;                                // 0xa1(0x1)
 };
 
 
@@ -7358,6 +7606,82 @@ public:
 };
 
 
+// Size 0x8 (Full Size[0x3e0] - InheritedSize[0x3d8]
+class CoveredMeshActor: public StaticMeshActor
+{
+public:
+	class InstancedCoverageMeshComponent*                        InstancedCoverageMeshComponent;                    // 0x3d8(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x300] - InheritedSize[0x2e0]
+class WindDirectionalSourceComponent: public SceneComponent
+{
+public:
+	float                                                        Strength;                                          // 0x2e0(0x4)
+	float                                                        Speed;                                             // 0x2e4(0x4)
+	float                                                        MinGustAmount;                                     // 0x2e8(0x4)
+	float                                                        MaxGustAmount;                                     // 0x2ec(0x4)
+};
+
+
+// Size 0x68 (Full Size[0x178] - InheritedSize[0x110]
+class ProjectileMovementComponent: public MovementComponent
+{
+public:
+	float                                                        InitialSpeed;                                      // 0x110(0x4)
+	float                                                        MaxSpeed;                                          // 0x114(0x4)
+	bool                                                         bRotationFollowsVelocity;                          // 0x118(0x1)
+	bool                                                         bShouldBounce;                                     // 0x118(0x1)
+	bool                                                         bInitialVelocityInLocalSpace;                      // 0x118(0x1)
+	bool                                                         bForceSubStepping;                                 // 0x118(0x1)
+	bool                                                         bIsHomingProjectile;                               // 0x118(0x1)
+	bool                                                         bBounceAngleAffectsFriction;                       // 0x118(0x1)
+	bool                                                         bIsSliding;                                        // 0x118(0x1)
+	float                                                        PreviousHitTime;                                   // 0x11c(0x4)
+	struct Vector                                                PreviousHitNormal;                                 // 0x120(0xc)
+	float                                                        ProjectileGravityScale;                            // 0x12c(0x4)
+	float                                                        Buoyancy;                                          // 0x130(0x4)
+	float                                                        Bounciness;                                        // 0x134(0x4)
+	float                                                        Friction;                                          // 0x138(0x4)
+	float                                                        BounceVelocityStopSimulatingThreshold;             // 0x13c(0x4)
+	multicastinlinedelegate                                      OnProjectileBounce;                                // 0x140(0x10)
+	multicastinlinedelegate                                      OnProjectileStop;                                  // 0x150(0x10)
+	float                                                        HomingAccelerationMagnitude;                       // 0x160(0x4)
+	class SceneComponent*                                        HomingTargetComponent;                             // 0x164(0x8)
+	float                                                        MaxSimulationTimeStep;                             // 0x16c(0x4)
+	int                                                          MaxSimulationIterations;                           // 0x170(0x4)
+};
+
+
+// Size 0x80 (Full Size[0xe0] - InheritedSize[0x60]
+class AnimCompress_PerTrackCompression: public AnimCompress_RemoveLinearKeys
+{
+public:
+	float                                                        MaxZeroingThreshold;                               // 0x60(0x4)
+	float                                                        MaxPosDiffBitwise;                                 // 0x64(0x4)
+	float                                                        MaxAngleDiffBitwise;                               // 0x68(0x4)
+	float                                                        MaxScaleDiffBitwise;                               // 0x6c(0x4)
+	TArray<char>                                                 AllowedRotationFormats;                            // 0x70(0x10)
+	TArray<char>                                                 AllowedTranslationFormats;                         // 0x80(0x10)
+	TArray<char>                                                 AllowedScaleFormats;                               // 0x90(0x10)
+	bool                                                         bResampleAnimation;                                // 0xa0(0x1)
+	float                                                        ResampledFramerate;                                // 0xa4(0x4)
+	int                                                          MinKeysForResampling;                              // 0xa8(0x4)
+	bool                                                         bUseAdaptiveError;                                 // 0xac(0x1)
+	bool                                                         bUseOverrideForEndEffectors;                       // 0xac(0x1)
+	int                                                          TrackHeightBias;                                   // 0xb0(0x4)
+	float                                                        ParentingDivisor;                                  // 0xb4(0x4)
+	float                                                        ParentingDivisorExponent;                          // 0xb8(0x4)
+	bool                                                         bUseAdaptiveError2;                                // 0xbc(0x1)
+	float                                                        RotationErrorSourceRatio;                          // 0xc0(0x4)
+	float                                                        TranslationErrorSourceRatio;                       // 0xc4(0x4)
+	float                                                        ScaleErrorSourceRatio;                             // 0xc8(0x4)
+	float                                                        MaxErrorPerTrackRatio;                             // 0xcc(0x4)
+	float                                                        PerturbationProbeSize;                             // 0xd0(0x4)
+};
+
+
 // Size 0x8 (Full Size[0x98] - InheritedSize[0x90]
 class InterpTrackFloatParticleParam: public InterpTrackFloatBase
 {
@@ -7366,92 +7690,86 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x2f0] - InheritedSize[0x2e0]
-class CalmWaterComponent: public SceneComponent
+// Size 0x18 (Full Size[0xa8] - InheritedSize[0x90]
+class InterpTrackFade: public InterpTrackFloatBase
 {
 public:
-	float                                                        Radius;                                            // 0x2e0(0x4)
-	float                                                        RadiusPercentageToStartLerp;                       // 0x2e4(0x4)
-	float                                                        DampeningFactor;                                   // 0x2e8(0x4)
+	bool                                                         bPersistFade;                                      // 0x90(0x1)
+	bool                                                         bFadeAudio;                                        // 0x90(0x1)
+	struct LinearColor                                           FadeColor;                                         // 0x94(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x3d8] - InheritedSize[0x3d0]
+class SpotLight: public Light
+{
+public:
+	class SpotLightComponent*                                    SpotLightComponent;                                // 0x3d0(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x1b0] - InheritedSize[0x198]
+class CompressedCanvasRenderTarget2D: public Texture2D
+{
+public:
+	class World*                                                 World;                                             // 0x198(0x8)
+	class CanvasRenderTarget2D*                                  RenderTarget;                                      // 0x1a0(0x8)
+};
+
+
+// Size 0x188 (Full Size[0x1f0] - InheritedSize[0x68]
+class ParticleModuleParametersOverCustom: public ParticleModuleParametersOverX
+{
+public:
+	struct RawDistributionFloat                                  DynamicParamScaleOverCustomScale;                  // 0x68(0x38)
+	struct RawDistributionFloat                                  SpawnRateOverCustomScale;                          // 0xa0(0x38)
+	struct RawDistributionFloat                                  LifetimeOverCustomScale;                           // 0xd8(0x38)
+	struct RawDistributionFloat                                  SizeOverCustomScale;                               // 0x110(0x38)
+	struct RawDistributionFloat                                  InitialVelocityOverCustomScale;                    // 0x148(0x38)
+	struct RawDistributionFloat                                  OpacityOverCustomScale;                            // 0x180(0x38)
+	struct RawDistributionFloat                                  CylinderRadiusOverCustomScale;                     // 0x1b8(0x38)
+};
+
+
+// Size 0x1b0 (Full Size[0x490] - InheritedSize[0x2e0]
+class PhysicsConstraintComponent: public SceneComponent
+{
+public:
+	class Actor*                                                 ConstraintActor1;                                  // 0x2e0(0x8)
+	struct ConstrainComponentPropName                            ComponentName1;                                    // 0x2e8(0x8)
+	class Actor*                                                 ConstraintActor2;                                  // 0x2f0(0x8)
+	struct ConstrainComponentPropName                            ComponentName2;                                    // 0x2f8(0x8)
+	class PhysicsConstraintTemplate*                             ConstraintSetup;                                   // 0x310(0x8)
+	multicastinlinedelegate                                      OnConstraintBroken;                                // 0x318(0x10)
+	struct ConstraintInstance                                    ConstraintInstance;                                // 0x330(0x160)
 };
 
 
 // Size 0x30 (Full Size[0x310] - InheritedSize[0x2e0]
-class NavigationGraphNodeComponent: public SceneComponent
+class WaterEmissionVolumeComponent: public SceneComponent
 {
 public:
-	struct NavGraphNode                                          Node;                                              // 0x2e0(0x18)
-	class NavigationGraphNodeComponent*                          NextNodeComponent;                                 // 0x2f8(0x8)
-	class NavigationGraphNodeComponent*                          PrevNodeComponent;                                 // 0x300(0x8)
+	float                                                        Radius;                                            // 0x2e0(0x4)
+	float                                                        GenerationDensity;                                 // 0x2e4(0x4)
 };
 
 
-// Size 0x560 (Full Size[0x840] - InheritedSize[0x2e0]
-class PostProcessComponent: public SceneComponent
+// Size 0x570 (Full Size[0x850] - InheritedSize[0x2e0]
+class CameraComponent: public SceneComponent
 {
 public:
-	struct PostProcessSettings                                   Settings;                                          // 0x2f0(0x540)
-	float                                                        Priority;                                          // 0x830(0x4)
-	float                                                        BlendRadius;                                       // 0x834(0x4)
-	float                                                        BlendWeight;                                       // 0x838(0x4)
-	bool                                                         bEnabled;                                          // 0x83c(0x1)
-	bool                                                         bUnbound;                                          // 0x83c(0x1)
-};
-
-
-// Size 0x90 (Full Size[0x370] - InheritedSize[0x2e0]
-class SpringArmComponent: public SceneComponent
-{
-public:
-	float                                                        TargetArmLength;                                   // 0x2e0(0x4)
-	struct Vector                                                SocketOffset;                                      // 0x2e4(0xc)
-	struct Vector                                                TargetOffset;                                      // 0x2f0(0xc)
-	float                                                        ProbeSize;                                         // 0x2fc(0x4)
-	char                                                         ProbeChannel;                                      // 0x300(0x1)
-	bool                                                         bDoCollisionTest;                                  // 0x304(0x1)
-	bool                                                         bUsePawnControlRotation;                           // 0x304(0x1)
-	bool                                                         bInheritPitch;                                     // 0x304(0x1)
-	bool                                                         bInheritYaw;                                       // 0x304(0x1)
-	bool                                                         bInheritRoll;                                      // 0x304(0x1)
-	bool                                                         bEnableCameraLag;                                  // 0x304(0x1)
-	bool                                                         bEnableCameraRotationLag;                          // 0x304(0x1)
-	bool                                                         bUseCameraLagSubstepping;                          // 0x304(0x1)
-	bool                                                         bDrawDebugLagMarkers;                              // 0x305(0x1)
-	float                                                        CameraLagSpeed;                                    // 0x308(0x4)
-	float                                                        CameraRotationLagSpeed;                            // 0x30c(0x4)
-	float                                                        CameraLagMaxTimeStep;                              // 0x310(0x4)
-	float                                                        CameraLagMaxDistance;                              // 0x314(0x4)
-};
-
-
-// Size 0xc8 (Full Size[0x120] - InheritedSize[0x58]
-class ParticleModuleOrbit: public ParticleModuleOrbitBase
-{
-public:
-	char                                                         ChainMode;                                         // 0x58(0x1)
-	struct RawDistributionVector                                 OffsetAmount;                                      // 0x60(0x38)
-	struct OrbitOptions                                          OffsetOptions;                                     // 0x98(0x4)
-	struct RawDistributionVector                                 RotationAmount;                                    // 0xa0(0x38)
-	struct OrbitOptions                                          RotationOptions;                                   // 0xd8(0x4)
-	struct RawDistributionVector                                 RotationRateAmount;                                // 0xe0(0x38)
-	struct OrbitOptions                                          RotationRateOptions;                               // 0x118(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x3e0] - InheritedSize[0x3d0]
-class SceneCapture2D: public SceneCapture
-{
-public:
-	class SceneCaptureComponent2D*                               CaptureComponent2D;                                // 0x3d0(0x8)
-	class DrawFrustumComponent*                                  DrawFrustum;                                       // 0x3d8(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x98] - InheritedSize[0x90]
-class InterpTrackLinearColorProp: public InterpTrackLinearColorBase
-{
-public:
-	struct FName                                                 PropertyName;                                      // 0x90(0x8)
+	float                                                        FieldOfView;                                       // 0x2e0(0x4)
+	float                                                        OrthoWidth;                                        // 0x2e4(0x4)
+	float                                                        OrthoNearClipPlane;                                // 0x2e8(0x4)
+	float                                                        OrthoFarClipPlane;                                 // 0x2ec(0x4)
+	float                                                        AspectRatio;                                       // 0x2f0(0x4)
+	bool                                                         bConstrainAspectRatio;                             // 0x2f4(0x1)
+	bool                                                         bUseFieldOfViewForLOD;                             // 0x2f4(0x1)
+	bool                                                         bUsePawnControlRotation;                           // 0x2f4(0x1)
+	char                                                         ProjectionMode;                                    // 0x2f8(0x1)
+	float                                                        PostProcessBlendWeight;                            // 0x2fc(0x4)
+	struct PostProcessSettings                                   PostProcessSettings;                               // 0x300(0x540)
+	bool                                                         bUseControllerViewRotation;                        // 0x840(0x1)
 };
 
 
@@ -7508,406 +7826,45 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0xa0] - InheritedSize[0x80]
-class MaterialExpressionFontSampleParameter: public MaterialExpressionFontSample
+// Size 0x30 (Full Size[0x310] - InheritedSize[0x2e0]
+class DecalComponent: public SceneComponent
 {
 public:
-	struct FName                                                 ParameterName;                                     // 0x80(0x8)
-	struct Guid                                                  ExpressionGUID;                                    // 0x88(0x10)
-	struct FName                                                 Group;                                             // 0x98(0x8)
+	class MaterialInterface*                                     DecalMaterial;                                     // 0x2e0(0x8)
+	int                                                          SortOrder;                                         // 0x2e8(0x4)
+	float                                                        FadeScreenSize;                                    // 0x2ec(0x4)
+	class MaterialInstanceDynamic*                               MaterialInstanceDynamic;                           // 0x2f0(0x8)
 };
 
 
 // Size 0x18 (Full Size[0xa8] - InheritedSize[0x90]
-class InterpTrackFloatMaterialParam: public InterpTrackFloatBase
+class InterpTrackFloatAnimBPParam: public InterpTrackFloatBase
 {
 public:
-	TArray<class MaterialInterface*>                             TargetMaterials;                                   // 0x90(0x10)
-	struct FName                                                 ParamName;                                         // 0xa0(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x300] - InheritedSize[0x2e0]
-class ChildActorComponent: public SceneComponent
-{
-public:
-	class UClass*                                                ChildActorClass;                                   // 0x2e0(0x8)
-	class Actor*                                                 ChildActor;                                        // 0x2e8(0x8)
-};
-
-
-// Size 0x1b0 (Full Size[0x490] - InheritedSize[0x2e0]
-class PhysicsConstraintComponent: public SceneComponent
-{
-public:
-	class Actor*                                                 ConstraintActor1;                                  // 0x2e0(0x8)
-	struct ConstrainComponentPropName                            ComponentName1;                                    // 0x2e8(0x8)
-	class Actor*                                                 ConstraintActor2;                                  // 0x2f0(0x8)
-	struct ConstrainComponentPropName                            ComponentName2;                                    // 0x2f8(0x8)
-	class PhysicsConstraintTemplate*                             ConstraintSetup;                                   // 0x310(0x8)
-	multicastinlinedelegate                                      OnConstraintBroken;                                // 0x318(0x10)
-	struct ConstraintInstance                                    ConstraintInstance;                                // 0x330(0x160)
-};
-
-
-// Size 0x70 (Full Size[0x350] - InheritedSize[0x2e0]
-class SceneCaptureComponent: public SceneComponent
-{
-public:
-	TArray<uintptr_t>                                            HiddenComponents;                                  // 0x2e0(0x10)
-	bool                                                         bCaptureEveryFrame;                                // 0x2f0(0x1)
-	float                                                        MaxViewDistanceOverride;                           // 0x2f4(0x4)
-	TArray<struct EngineShowFlagsSetting>                        ShowFlagSettings;                                  // 0x2f8(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x3d8] - InheritedSize[0x3d0]
-class SpotLight: public Light
-{
-public:
-	class SpotLightComponent*                                    SpotLightComponent;                                // 0x3d0(0x8)
-};
-
-
-// Size 0x80 (Full Size[0xe0] - InheritedSize[0x60]
-class AnimCompress_PerTrackCompression: public AnimCompress_RemoveLinearKeys
-{
-public:
-	float                                                        MaxZeroingThreshold;                               // 0x60(0x4)
-	float                                                        MaxPosDiffBitwise;                                 // 0x64(0x4)
-	float                                                        MaxAngleDiffBitwise;                               // 0x68(0x4)
-	float                                                        MaxScaleDiffBitwise;                               // 0x6c(0x4)
-	TArray<char>                                                 AllowedRotationFormats;                            // 0x70(0x10)
-	TArray<char>                                                 AllowedTranslationFormats;                         // 0x80(0x10)
-	TArray<char>                                                 AllowedScaleFormats;                               // 0x90(0x10)
-	bool                                                         bResampleAnimation;                                // 0xa0(0x1)
-	float                                                        ResampledFramerate;                                // 0xa4(0x4)
-	int                                                          MinKeysForResampling;                              // 0xa8(0x4)
-	bool                                                         bUseAdaptiveError;                                 // 0xac(0x1)
-	bool                                                         bUseOverrideForEndEffectors;                       // 0xac(0x1)
-	int                                                          TrackHeightBias;                                   // 0xb0(0x4)
-	float                                                        ParentingDivisor;                                  // 0xb4(0x4)
-	float                                                        ParentingDivisorExponent;                          // 0xb8(0x4)
-	bool                                                         bUseAdaptiveError2;                                // 0xbc(0x1)
-	float                                                        RotationErrorSourceRatio;                          // 0xc0(0x4)
-	float                                                        TranslationErrorSourceRatio;                       // 0xc4(0x4)
-	float                                                        ScaleErrorSourceRatio;                             // 0xc8(0x4)
-	float                                                        MaxErrorPerTrackRatio;                             // 0xcc(0x4)
-	float                                                        PerturbationProbeSize;                             // 0xd0(0x4)
-};
-
-
-// Size 0x98 (Full Size[0x1a8] - InheritedSize[0x110]
-class InterpToMovementComponent: public MovementComponent
-{
-public:
-	float                                                        Duration;                                          // 0x110(0x4)
-	bool                                                         bPauseOnImpact;                                    // 0x114(0x1)
-	char                                                         BehaviourType;                                     // 0x118(0x1)
-	bool                                                         bForceSubStepping;                                 // 0x11c(0x1)
-	multicastinlinedelegate                                      OnInterpToReverse;                                 // 0x120(0x10)
-	multicastinlinedelegate                                      OnInterpToStop;                                    // 0x130(0x10)
-	multicastinlinedelegate                                      OnWaitBeginDelegate;                               // 0x140(0x10)
-	multicastinlinedelegate                                      OnWaitEndDelegate;                                 // 0x150(0x10)
-	multicastinlinedelegate                                      OnResetDelegate;                                   // 0x160(0x10)
-	float                                                        MaxSimulationTimeStep;                             // 0x170(0x4)
-	int                                                          MaxSimulationIterations;                           // 0x174(0x4)
-	TArray<struct InterpControlPoint>                            ControlPoints;                                     // 0x178(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x448] - InheritedSize[0x440]
-class MatineeActorCameraAnim: public MatineeActor
-{
-public:
-	class CameraAnim*                                            CameraAnim;                                        // 0x440(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x300] - InheritedSize[0x2e0]
-class WindDirectionalSourceComponent: public SceneComponent
-{
-public:
-	float                                                        Strength;                                          // 0x2e0(0x4)
-	float                                                        Speed;                                             // 0x2e4(0x4)
-	float                                                        MinGustAmount;                                     // 0x2e8(0x4)
-	float                                                        MaxGustAmount;                                     // 0x2ec(0x4)
-};
-
-
-// Size 0x150 (Full Size[0x430] - InheritedSize[0x2e0]
-class AudioComponent: public SceneComponent
-{
-public:
-	class SoundBase*                                             Sound;                                             // 0x2e0(0x8)
-	TArray<struct AudioComponentParam>                           InstanceParameters;                                // 0x2e8(0x10)
-	class SoundClass*                                            SoundClassOverride;                                // 0x2f8(0x8)
-	bool                                                         bAutoDestroy;                                      // 0x300(0x1)
-	bool                                                         bStopWhenOwnerDestroyed;                           // 0x300(0x1)
-	bool                                                         bShouldRemainActiveIfDropped;                      // 0x300(0x1)
-	bool                                                         bAllowSpatialization;                              // 0x300(0x1)
-	bool                                                         bOverrideAttenuation;                              // 0x300(0x1)
-	bool                                                         bIsUISound;                                        // 0x300(0x1)
-	float                                                        PitchModulationMin;                                // 0x304(0x4)
-	float                                                        PitchModulationMax;                                // 0x308(0x4)
-	float                                                        VolumeModulationMin;                               // 0x30c(0x4)
-	float                                                        VolumeModulationMax;                               // 0x310(0x4)
-	float                                                        VolumeMultiplier;                                  // 0x314(0x4)
-	float                                                        PitchMultiplier;                                   // 0x318(0x4)
-	float                                                        HighFrequencyGainMultiplier;                       // 0x31c(0x4)
-	class SoundAttenuation*                                      AttenuationSettings;                               // 0x320(0x8)
-	struct AttenuationSettings                                   AttenuationOverrides;                              // 0x328(0xc0)
-	multicastinlinedelegate                                      OnAudioFinished;                                   // 0x3f0(0x10)
-	delegate                                                     OnQueueSubtitles;                                  // 0x418(0x10)
-};
-
-
-// Size 0x68 (Full Size[0x178] - InheritedSize[0x110]
-class ProjectileMovementComponent: public MovementComponent
-{
-public:
-	float                                                        InitialSpeed;                                      // 0x110(0x4)
-	float                                                        MaxSpeed;                                          // 0x114(0x4)
-	bool                                                         bRotationFollowsVelocity;                          // 0x118(0x1)
-	bool                                                         bShouldBounce;                                     // 0x118(0x1)
-	bool                                                         bInitialVelocityInLocalSpace;                      // 0x118(0x1)
-	bool                                                         bForceSubStepping;                                 // 0x118(0x1)
-	bool                                                         bIsHomingProjectile;                               // 0x118(0x1)
-	bool                                                         bBounceAngleAffectsFriction;                       // 0x118(0x1)
-	bool                                                         bIsSliding;                                        // 0x118(0x1)
-	float                                                        PreviousHitTime;                                   // 0x11c(0x4)
-	struct Vector                                                PreviousHitNormal;                                 // 0x120(0xc)
-	float                                                        ProjectileGravityScale;                            // 0x12c(0x4)
-	float                                                        Buoyancy;                                          // 0x130(0x4)
-	float                                                        Bounciness;                                        // 0x134(0x4)
-	float                                                        Friction;                                          // 0x138(0x4)
-	float                                                        BounceVelocityStopSimulatingThreshold;             // 0x13c(0x4)
-	multicastinlinedelegate                                      OnProjectileBounce;                                // 0x140(0x10)
-	multicastinlinedelegate                                      OnProjectileStop;                                  // 0x150(0x10)
-	float                                                        HomingAccelerationMagnitude;                       // 0x160(0x4)
-	class SceneComponent*                                        HomingTargetComponent;                             // 0x164(0x8)
-	float                                                        MaxSimulationTimeStep;                             // 0x16c(0x4)
-	int                                                          MaxSimulationIterations;                           // 0x170(0x4)
-};
-
-
-// Size 0xe0 (Full Size[0x158] - InheritedSize[0x78]
-class AnimSequence: public AnimSequenceBase
-{
-public:
-	int                                                          NumFrames;                                         // 0x78(0x4)
-	TArray<struct TrackToSkeletonMap>                            TrackToSkeletonMapTable;                           // 0x80(0x10)
-	TArray<struct TranslationTrack>                              TranslationData;                                   // 0xa0(0x10)
-	TArray<struct RotationTrack>                                 RotationData;                                      // 0xb0(0x10)
-	TArray<struct ScaleTrack>                                    ScaleData;                                         // 0xc0(0x10)
-	char                                                         TranslationCompressionFormat;                      // 0xd0(0x1)
-	char                                                         RotationCompressionFormat;                         // 0xd1(0x1)
-	char                                                         ScaleCompressionFormat;                            // 0xd2(0x1)
-	TArray<int>                                                  CompressedTrackOffsets;                            // 0xd8(0x10)
-	struct CompressedOffsetData                                  CompressedScaleOffsets;                            // 0xe8(0x18)
-	char                                                         KeyEncodingFormat;                                 // 0x110(0x1)
-	char                                                         AdditiveAnimType;                                  // 0x130(0x1)
-	char                                                         RefPoseType;                                       // 0x131(0x1)
-	class AnimSequence*                                          RefPoseSeq;                                        // 0x138(0x8)
-	int                                                          RefFrameIndex;                                     // 0x140(0x4)
-	int                                                          EncodingPkgVersion;                                // 0x144(0x4)
-	struct FName                                                 RetargetSource;                                    // 0x148(0x8)
-	bool                                                         bEnableRootMotion;                                 // 0x150(0x1)
-	char                                                         RootMotionRootLock;                                // 0x151(0x1)
-	bool                                                         bRootMotionSettingsCopiedFromMontage;              // 0x152(0x1)
-};
-
-
-// Size 0x30 (Full Size[0x310] - InheritedSize[0x2e0]
-class PhysicsSpringComponent: public SceneComponent
-{
-public:
-	float                                                        SpringStiffness;                                   // 0x2e0(0x4)
-	float                                                        SpringDamping;                                     // 0x2e4(0x4)
-	float                                                        SpringLengthAtRest;                                // 0x2e8(0x4)
-	float                                                        SpringRadius;                                      // 0x2ec(0x4)
-	char                                                         SpringChannel;                                     // 0x2f0(0x1)
-	bool                                                         bIgnoreSelf;                                       // 0x2f1(0x1)
-	float                                                        SpringCompression;                                 // 0x2f4(0x4)
-};
-
-
-// Size 0x60 (Full Size[0x340] - InheritedSize[0x2e0]
-class ExponentialHeightFogComponent: public SceneComponent
-{
-public:
-	float                                                        FogDensity;                                        // 0x2e0(0x4)
-	struct LinearColor                                           FogInscatteringColor;                              // 0x2e4(0x10)
-	struct LinearColor                                           FarFogInscatteringColor;                           // 0x2f4(0x10)
-	float                                                        DirectionalInscatteringExponent;                   // 0x304(0x4)
-	float                                                        DirectionalInscatteringStartDistance;              // 0x308(0x4)
-	float                                                        StartScaleDirectionalInscattering;                 // 0x30c(0x4)
-	float                                                        FarScaleDirectionalInscattering;                   // 0x310(0x4)
-	struct LinearColor                                           DirectionalInscatteringColor;                      // 0x314(0x10)
-	float                                                        FogHeightFalloff;                                  // 0x324(0x4)
-	float                                                        FogMaxOpacity;                                     // 0x328(0x4)
-	float                                                        StartDistance;                                     // 0x32c(0x4)
-	float                                                        FarDistance;                                       // 0x330(0x4)
-	float                                                        StartScale;                                        // 0x334(0x4)
-	float                                                        FarScale;                                          // 0x338(0x4)
-	bool                                                         bIsUnderwater;                                     // 0x33c(0x1)
-};
-
-
-// Size 0x8 (Full Size[0x98] - InheritedSize[0x90]
-class InterpTrackVectorProp: public InterpTrackVectorBase
-{
-public:
-	struct FName                                                 PropertyName;                                      // 0x90(0x8)
-};
-
-
-// Size 0x190 (Full Size[0x1e8] - InheritedSize[0x58]
-class ParticleModuleVelocity: public ParticleModuleVelocityBase
-{
-public:
-	bool                                                         bUseGroupAForAll;                                  // 0x58(0x1)
-	struct RawDistributionVector                                 StartVelocity;                                     // 0x60(0x38)
-	struct RawDistributionVector                                 AdditionalStartVelocities;                         // 0x98(0x38)
-	struct RawDistributionFloat                                  StartVelocityRadial;                               // 0x1b0(0x38)
-};
-
-
-// Size 0x40 (Full Size[0x98] - InheritedSize[0x58]
-class ParticleModuleVelocityOverLifetime: public ParticleModuleVelocityBase
-{
-public:
-	struct RawDistributionVector                                 VelOverLife;                                       // 0x58(0x38)
-	bool                                                         Absolute;                                          // 0x90(0x1)
-};
-
-
-// Size 0x20 (Full Size[0x368] - InheritedSize[0x348]
-class ParticleModuleLocationPrimitiveCylinder_Seeded: public ParticleModuleLocationPrimitiveCylinder
-{
-public:
-	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x348(0x20)
-};
-
-
-// Size 0x8 (Full Size[0x3d8] - InheritedSize[0x3d0]
-class SphereReflectionCapture: public ReflectionCapture
-{
-public:
-	class DrawSphereComponent*                                   DrawCaptureRadius;                                 // 0x3d0(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x1a0] - InheritedSize[0x198]
-class ShadowMapTexture2D: public Texture2D
-{
-public:
-	char                                                         ShadowmapFlags;                                    // 0x198(0x1)
+	class UClass*                                                AnimBlueprintClass;                                // 0x90(0x8)
+	struct FName                                                 ParamName;                                         // 0x98(0x8)
 };
 
 
 // Size 0x10 (Full Size[0x3e0] - InheritedSize[0x3d0]
-class SceneCaptureCube: public SceneCapture
+class SceneCapture2D: public SceneCapture
 {
 public:
-	class SceneCaptureComponentCube*                             CaptureComponentCube;                              // 0x3d0(0x8)
+	class SceneCaptureComponent2D*                               CaptureComponent2D;                                // 0x3d0(0x8)
 	class DrawFrustumComponent*                                  DrawFrustum;                                       // 0x3d8(0x8)
 };
 
 
-// Size 0x20 (Full Size[0x300] - InheritedSize[0x2e0]
-class InstancedNavMeshComponent: public SceneComponent
+// Size 0x70 (Full Size[0xc8] - InheritedSize[0x58]
+class ParticleModuleAccelerationDrag: public ParticleModuleAccelerationBase
 {
 public:
-	struct FName                                                 NavMeshName;                                       // 0x2e8(0x8)
-	bool                                                         UseAttachedParentAsPrimitiveBase;                  // 0x2f0(0x1)
-};
-
-
-// Size 0x10 (Full Size[0xa0] - InheritedSize[0x90]
-class MaterialExpressionScalarParameter: public MaterialExpressionParameter
-{
-public:
-	float                                                        DefaultValue;                                      // 0x90(0x4)
-	float                                                        SliderMin;                                         // 0x94(0x4)
-	float                                                        SliderMax;                                         // 0x98(0x4)
-	bool                                                         bUseCustomPrimitiveData;                           // 0x9c(0x1)
-	char                                                         PrimitiveDataIndex;                                // 0x9d(0x1)
-};
-
-
-// Size 0x50 (Full Size[0xa8] - InheritedSize[0x58]
-class ParticleModuleSpawnPerUnit: public ParticleModuleSpawnBase
-{
-public:
-	bool                                                         bAffectsGroupA;                                    // 0x58(0x1)
-	bool                                                         bAffectsGroupB;                                    // 0x58(0x1)
-	bool                                                         bAffectsGroupC;                                    // 0x58(0x1)
-	bool                                                         bAffectsGroupD;                                    // 0x58(0x1)
-	bool                                                         bAffectsGroupE;                                    // 0x58(0x1)
-	bool                                                         bAffectsReplacementGroup;                          // 0x58(0x1)
-	float                                                        UnitScalar;                                        // 0x5c(0x4)
-	struct RawDistributionFloat                                  SpawnPerUnit;                                      // 0x60(0x38)
-	bool                                                         bIgnoreSpawnRateWhenMoving;                        // 0x98(0x1)
-	float                                                        MovementTolerance;                                 // 0x9c(0x4)
-	float                                                        MaxFrameDistance;                                  // 0xa0(0x4)
-	bool                                                         bIgnoreMovementAlongX;                             // 0xa4(0x1)
-	bool                                                         bIgnoreMovementAlongY;                             // 0xa4(0x1)
-	bool                                                         bIgnoreMovementAlongZ;                             // 0xa4(0x1)
-};
-
-
-// Size 0x10 (Full Size[0x68] - InheritedSize[0x58]
-class ParticleModuleAccelerationConstant: public ParticleModuleAccelerationBase
-{
-public:
-	struct Vector                                                Acceleration;                                      // 0x58(0xc)
-};
-
-
-// Size 0x8 (Full Size[0x345d8] - InheritedSize[0x345d0]
-class ChildConnection: public NetConnection
-{
-public:
-	class NetConnection*                                         Parent;                                            // 0x345d0(0x8)
-};
-
-
-// Size 0x130 (Full Size[0x198] - InheritedSize[0x68]
-class ParticleModuleParametersOverVelocity: public ParticleModuleParametersOverX
-{
-public:
-	float                                                        MinSpeed;                                          // 0x68(0x4)
-	float                                                        MaxSpeed;                                          // 0x6c(0x4)
-	struct Vector                                                VelocityComponentsWeights;                         // 0x70(0xc)
-	struct RawDistributionFloat                                  SpawnRateOverSpeedScale;                           // 0x80(0x38)
-	struct RawDistributionFloat                                  LifetimeOverSpeedScale;                            // 0xb8(0x38)
-	struct RawDistributionFloat                                  SizeOverSpeedScale;                                // 0xf0(0x38)
-	struct RawDistributionFloat                                  InitialVelocityOverSpeedScale;                     // 0x128(0x38)
-	struct RawDistributionFloat                                  OpacityOverSpeedScale;                             // 0x160(0x38)
-};
-
-
-// Size 0x98 (Full Size[0x190] - InheritedSize[0xf8]
-class NavLinkCustomComponent: public NavRelevantComponent
-{
-public:
-	uint32                                                       NavLinkUserId;                                     // 0x100(0x4)
-	class UClass*                                                EnabledAreaClass;                                  // 0x108(0x8)
-	class UClass*                                                DisabledAreaClass;                                 // 0x110(0x8)
-	struct Vector                                                LinkRelativeStart;                                 // 0x118(0xc)
-	struct Vector                                                LinkRelativeEnd;                                   // 0x124(0xc)
-	char                                                         LinkDirection;                                     // 0x130(0x1)
-	bool                                                         bLinkEnabled;                                      // 0x134(0x1)
-	bool                                                         bNotifyWhenEnabled;                                // 0x134(0x1)
-	bool                                                         bNotifyWhenDisabled;                               // 0x134(0x1)
-	bool                                                         bCreateBoxObstacle;                                // 0x134(0x1)
-	struct Vector                                                ObstacleOffset;                                    // 0x138(0xc)
-	struct Vector                                                ObstacleExtent;                                    // 0x144(0xc)
-	class UClass*                                                ObstacleAreaClass;                                 // 0x150(0x8)
-	float                                                        BroadcastRadius;                                   // 0x158(0x4)
-	float                                                        BroadcastInterval;                                 // 0x15c(0x4)
-	char                                                         BroadcastChannel;                                  // 0x160(0x1)
+	class DistributionFloat*                                     DragCoefficient;                                   // 0x58(0x8)
+	class DistributionFloat*                                     DragOnLocalVelocity;                               // 0x60(0x8)
+	bool                                                         bUseGroupADragCoefficientForAllGroups;             // 0x68(0x1)
+	class DistributionFloat*                                     AdditionalDragCoefficient;                         // 0x70(0x8)
+	bool                                                         bUseGroupADragOnLocalVelocityForAllGroups;         // 0x98(0x1)
+	class DistributionFloat*                                     AdditionalDragOnLocalVelocity;                     // 0xa0(0x8)
 };
 
 
@@ -8007,15 +7964,171 @@ public:
 };
 
 
-// Size 0x88 (Full Size[0xe0] - InheritedSize[0x58]
-class ParticleModuleVelocityConeEmitterPoint: public ParticleModuleVelocityBase
+// Size 0x8 (Full Size[0x98] - InheritedSize[0x90]
+class InterpTrackLinearColorProp: public InterpTrackLinearColorBase
 {
 public:
-	struct RawDistributionFloat                                  Angle;                                             // 0x58(0x38)
-	struct RawDistributionFloat                                  VelocityScale;                                     // 0x90(0x38)
-	uint32                                                       VelocityDistributeOverNPoints;                     // 0xc8(0x4)
-	float                                                        VelocityNPointsRandomness;                         // 0xcc(0x4)
-	struct Vector                                                AdditiveVelocity;                                  // 0xd0(0xc)
+	struct FName                                                 PropertyName;                                      // 0x90(0x8)
+};
+
+
+// Size 0x220 (Full Size[0x278] - InheritedSize[0x58]
+class ParticleModuleSpawn: public ParticleModuleSpawnBase
+{
+public:
+	struct RawDistributionFloat                                  Rate;                                              // 0x58(0x38)
+	struct RawDistributionFloat                                  AdditionalRates;                                   // 0x90(0x38)
+	float                                                        StartScaleDistance;                                // 0x1a8(0x4)
+	float                                                        EndScaleDistance;                                  // 0x1ac(0x4)
+	struct RawDistributionFloat                                  RateScaleOverDistance;                             // 0x1b0(0x38)
+	struct RawDistributionFloat                                  RateScale;                                         // 0x1e8(0x38)
+	char                                                         ParticleBurstMethod;                               // 0x220(0x1)
+	TArray<struct ParticleBurst>                                 BurstList;                                         // 0x228(0x10)
+	struct RawDistributionFloat                                  BurstScale;                                        // 0x238(0x38)
+	bool                                                         bApplyGlobalSpawnRateScale;                        // 0x270(0x1)
+	bool                                                         bBurstTreatedAsLoopingForLODs;                     // 0x270(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x3d8] - InheritedSize[0x3d0]
+class AmbientLightSource: public Light
+{
+public:
+	class AmbientLightSourceComponent*                           AmbientLightSourceComponent;                       // 0x3d0(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x98] - InheritedSize[0x90]
+class MaterialExpressionStaticBoolParameter: public MaterialExpressionParameter
+{
+public:
+	bool                                                         DefaultValue;                                      // 0x90(0x1)
+};
+
+
+// Size 0x28 (Full Size[0x468] - InheritedSize[0x440]
+class DefaultPawn: public Pawn
+{
+public:
+	float                                                        BaseTurnRate;                                      // 0x440(0x4)
+	float                                                        BaseLookUpRate;                                    // 0x444(0x4)
+	class PawnMovementComponent*                                 MovementComponent;                                 // 0x448(0x8)
+	class SphereComponent*                                       CollisionComponent;                                // 0x450(0x8)
+	class StaticMeshComponent*                                   MeshComponent;                                     // 0x458(0x8)
+	bool                                                         bAddDefaultMovementBindings;                       // 0x460(0x1)
+};
+
+
+// Size 0x10 (Full Size[0x310] - InheritedSize[0x300]
+class EditorOnlyChildActorComponent: public ChildActorComponent
+{
+public:
+	class UClass*                                                CachedChildActorClass;                             // 0x300(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x390] - InheritedSize[0x370]
+class BoxReflectionCaptureComponent: public ReflectionCaptureComponent
+{
+public:
+	float                                                        BoxTransitionDistance;                             // 0x370(0x4)
+	class BoxComponent*                                          PreviewInfluenceBox;                               // 0x378(0x8)
+	class BoxComponent*                                          PreviewCaptureBox;                                 // 0x380(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x5f0] - InheritedSize[0x5d0]
+class MergedCollisionComponent: public PrimitiveComponent
+{
+public:
+	TArray<struct MergedCollisionComponentStaticMeshInstanceData> PerInstanceData;                                   // 0x5c8(0x10)
+};
+
+
+// Size 0x20 (Full Size[0x5f0] - InheritedSize[0x5d0]
+class DrawFrustumComponent: public PrimitiveComponent
+{
+public:
+	struct Color                                                 FrustumColor;                                      // 0x5c8(0x4)
+	float                                                        FrustumAngle;                                      // 0x5cc(0x4)
+	float                                                        FrustumAspectRatio;                                // 0x5d0(0x4)
+	float                                                        FrustumStartDist;                                  // 0x5d4(0x4)
+	float                                                        FrustumEndDist;                                    // 0x5d8(0x4)
+	class Texture*                                               Texture;                                           // 0x5e0(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x188] - InheritedSize[0x170]
+class CanvasRenderTarget2D: public TextureRenderTarget2D
+{
+public:
+	multicastinlinedelegate                                      OnCanvasRenderTargetUpdate;                        // 0x170(0x10)
+	class World*                                                 World;                                             // 0x180(0x8)
+};
+
+
+// Size 0x570 (Full Size[0x8c0] - InheritedSize[0x350]
+class SceneCaptureComponent2D: public SceneCaptureComponent
+{
+public:
+	float                                                        FOVAngle;                                          // 0x348(0x4)
+	class TextureRenderTarget2D*                                 TextureTarget;                                     // 0x350(0x8)
+	char                                                         CaptureSource;                                     // 0x358(0x1)
+	struct PostProcessSettings                                   PostProcessSettings;                               // 0x360(0x540)
+	float                                                        PostProcessBlendWeight;                            // 0x8a0(0x4)
+	float                                                        OrthoWidth;                                        // 0x8a4(0x4)
+	float                                                        OrthoNearClipPlane;                                // 0x8a8(0x4)
+	float                                                        OrthoFarClipPlane;                                 // 0x8ac(0x4)
+	char                                                         ProjectionMode;                                    // 0x8b0(0x1)
+	float                                                        AspectRatio;                                       // 0x8b4(0x4)
+	bool                                                         bConstrainAspectRatio;                             // 0x8b8(0x1)
+	int                                                          LandscapeLODOverride;                              // 0x8bc(0x4)
+};
+
+
+// Size 0x20 (Full Size[0x390] - InheritedSize[0x370]
+class PlaneReflectionCaptureComponent: public ReflectionCaptureComponent
+{
+public:
+	float                                                        InfluenceRadiusScale;                              // 0x370(0x4)
+	class DrawSphereComponent*                                   PreviewInfluenceRadius;                            // 0x378(0x8)
+	class BoxComponent*                                          PreviewCaptureBox;                                 // 0x380(0x8)
+};
+
+
+// Size 0x80 (Full Size[0x650] - InheritedSize[0x5d0]
+class SplineComponent: public PrimitiveComponent
+{
+public:
+	struct InterpCurveVector                                     SplineInfo;                                        // 0x5c8(0x18)
+	struct InterpCurveQuat                                       SplineRotInfo;                                     // 0x5e0(0x18)
+	struct InterpCurveVector                                     SplineScaleInfo;                                   // 0x5f8(0x18)
+	struct InterpCurveFloat                                      SplineReparamTable;                                // 0x610(0x18)
+	bool                                                         bAllowSplineEditingPerInstance;                    // 0x628(0x1)
+	int                                                          ReparamStepsPerSegment;                            // 0x62c(0x4)
+	float                                                        Duration;                                          // 0x630(0x4)
+	bool                                                         bStationaryEndpoints;                              // 0x634(0x1)
+	bool                                                         bSplineHasBeenEdited;                              // 0x635(0x1)
+	bool                                                         bClosedLoop;                                       // 0x636(0x1)
+	struct Vector                                                DefaultUpVector;                                   // 0x638(0xc)
+};
+
+
+// Size 0x20 (Full Size[0x1c8] - InheritedSize[0x1a8]
+class MaterialExpressionTextureSampleParameter: public MaterialExpressionTextureSample
+{
+public:
+	struct FName                                                 ParameterName;                                     // 0x1a8(0x8)
+	struct Guid                                                  ExpressionGUID;                                    // 0x1b0(0x10)
+	struct FName                                                 Group;                                             // 0x1c0(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x5e0] - InheritedSize[0x5d0]
+class MaterialBillboardComponent: public PrimitiveComponent
+{
+public:
+	TArray<struct MaterialSpriteElement>                         Elements;                                          // 0x5c8(0x10)
 };
 
 
@@ -8038,38 +8151,6 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x310] - InheritedSize[0x300]
-class EditorOnlyChildActorComponent: public ChildActorComponent
-{
-public:
-	class UClass*                                                CachedChildActorClass;                             // 0x300(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x5e0] - InheritedSize[0x5d0]
-class MeshComponent: public PrimitiveComponent
-{
-public:
-	TArray<class MaterialInterface*>                             OverrideMaterials;                                 // 0x5c8(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x160] - InheritedSize[0x158]
-class PawnMovementComponent: public NavMovementComponent
-{
-public:
-	class Pawn*                                                  PawnOwner;                                         // 0x158(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x208] - InheritedSize[0x1e8]
-class ParticleModuleVelocity_Seeded: public ParticleModuleVelocity
-{
-public:
-	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x1e8(0x20)
-};
-
-
 // Size 0x40 (Full Size[0x610] - InheritedSize[0x5d0]
 class ModelComponent: public PrimitiveComponent
 {
@@ -8078,42 +8159,11 @@ public:
 };
 
 
-// Size 0x60 (Full Size[0x630] - InheritedSize[0x5d0]
-class TextRenderComponent: public PrimitiveComponent
+// Size 0x10 (Full Size[0x5e0] - InheritedSize[0x5d0]
+class MeshComponent: public PrimitiveComponent
 {
 public:
-	struct FText                                                 Text;                                              // 0x5c8(0x38)
-	class MaterialInterface*                                     TextMaterial;                                      // 0x600(0x8)
-	class Font*                                                  Font;                                              // 0x608(0x8)
-	char                                                         HorizontalAlignment;                               // 0x610(0x1)
-	char                                                         VerticalAlignment;                                 // 0x611(0x1)
-	struct Color                                                 TextRenderColor;                                   // 0x614(0x4)
-	float                                                        XScale;                                            // 0x618(0x4)
-	float                                                        YScale;                                            // 0x61c(0x4)
-	float                                                        WorldSize;                                         // 0x620(0x4)
-	float                                                        InvDefaultSize;                                    // 0x624(0x4)
-	float                                                        HorizSpacingAdjust;                                // 0x628(0x4)
-	bool                                                         bAlwaysRenderAsText;                               // 0x62c(0x1)
-};
-
-
-// Size 0x10 (Full Size[0x380] - InheritedSize[0x370]
-class SphereReflectionCaptureComponent: public ReflectionCaptureComponent
-{
-public:
-	float                                                        InfluenceRadius;                                   // 0x370(0x4)
-	float                                                        CaptureDistanceScale;                              // 0x374(0x4)
-	class DrawSphereComponent*                                   PreviewInfluenceRadius;                            // 0x378(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x390] - InheritedSize[0x370]
-class PlaneReflectionCaptureComponent: public ReflectionCaptureComponent
-{
-public:
-	float                                                        InfluenceRadiusScale;                              // 0x370(0x4)
-	class DrawSphereComponent*                                   PreviewInfluenceRadius;                            // 0x378(0x8)
-	class BoxComponent*                                          PreviewCaptureBox;                                 // 0x380(0x8)
+	TArray<class MaterialInterface*>                             OverrideMaterials;                                 // 0x5c8(0x10)
 };
 
 
@@ -8154,44 +8204,32 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0x1e8] - InheritedSize[0x1a8]
-class MaterialExpressionPredicatedTextureSample: public MaterialExpressionTextureSample
-{
-public:
-	struct ExpressionInput                                       Predicate;                                         // 0x1a8(0x38)
-	struct Color                                                 DefaultColour;                                     // 0x1e0(0x4)
-};
-
-
-// Size 0x18 (Full Size[0x188] - InheritedSize[0x170]
-class CanvasRenderTarget2D: public TextureRenderTarget2D
-{
-public:
-	multicastinlinedelegate                                      OnCanvasRenderTargetUpdate;                        // 0x170(0x10)
-	class World*                                                 World;                                             // 0x180(0x8)
-};
-
-
-// Size 0x70 (Full Size[0x108] - InheritedSize[0x98]
-class MaterialExpressionStaticSwitchParameter: public MaterialExpressionStaticBoolParameter
-{
-public:
-	struct ExpressionInput                                       A;                                                 // 0x98(0x38)
-	struct ExpressionInput                                       B;                                                 // 0xd0(0x38)
-};
-
-
 // Size 0x20 (Full Size[0x5f0] - InheritedSize[0x5d0]
-class BillboardComponent: public PrimitiveComponent
+class ShapeComponent: public PrimitiveComponent
 {
 public:
-	class Texture2D*                                             Sprite;                                            // 0x5c8(0x8)
-	bool                                                         bIsScreenSizeScaled;                               // 0x5d0(0x1)
-	float                                                        ScreenSize;                                        // 0x5d4(0x4)
-	float                                                        U;                                                 // 0x5d8(0x4)
-	float                                                        UL;                                                // 0x5dc(0x4)
-	float                                                        V;                                                 // 0x5e0(0x4)
-	float                                                        VL;                                                // 0x5e4(0x4)
+	struct Color                                                 ShapeColor;                                        // 0x5c8(0x4)
+	class BodySetup*                                             ShapeBodySetup;                                    // 0x5d0(0x8)
+	bool                                                         bDrawOnlyIfSelected;                               // 0x5d8(0x1)
+	bool                                                         bShouldCollideWhenPlacing;                         // 0x5d8(0x1)
+	bool                                                         bDynamicObstacle;                                  // 0x5d8(0x1)
+	class UClass*                                                AreaClass;                                         // 0x5e0(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x208] - InheritedSize[0x1e8]
+class ParticleModuleVelocity_Seeded: public ParticleModuleVelocity
+{
+public:
+	struct ParticleRandomSeedInfo                                RandomSeedInfo;                                    // 0x1e8(0x20)
+};
+
+
+// Size 0x8 (Full Size[0x160] - InheritedSize[0x158]
+class PawnMovementComponent: public NavMovementComponent
+{
+public:
+	class Pawn*                                                  PawnOwner;                                         // 0x158(0x8)
 };
 
 
@@ -8227,122 +8265,17 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0x1c8] - InheritedSize[0x1a8]
-class MaterialExpressionTextureSampleParameter: public MaterialExpressionTextureSample
-{
-public:
-	struct FName                                                 ParameterName;                                     // 0x1a8(0x8)
-	struct Guid                                                  ExpressionGUID;                                    // 0x1b0(0x10)
-	struct FName                                                 Group;                                             // 0x1c0(0x8)
-};
-
-
-// Size 0x80 (Full Size[0x650] - InheritedSize[0x5d0]
-class SplineComponent: public PrimitiveComponent
-{
-public:
-	struct InterpCurveVector                                     SplineInfo;                                        // 0x5c8(0x18)
-	struct InterpCurveQuat                                       SplineRotInfo;                                     // 0x5e0(0x18)
-	struct InterpCurveVector                                     SplineScaleInfo;                                   // 0x5f8(0x18)
-	struct InterpCurveFloat                                      SplineReparamTable;                                // 0x610(0x18)
-	bool                                                         bAllowSplineEditingPerInstance;                    // 0x628(0x1)
-	int                                                          ReparamStepsPerSegment;                            // 0x62c(0x4)
-	float                                                        Duration;                                          // 0x630(0x4)
-	bool                                                         bStationaryEndpoints;                              // 0x634(0x1)
-	bool                                                         bSplineHasBeenEdited;                              // 0x635(0x1)
-	bool                                                         bClosedLoop;                                       // 0x636(0x1)
-	struct Vector                                                DefaultUpVector;                                   // 0x638(0xc)
-};
-
-
 // Size 0x20 (Full Size[0x5f0] - InheritedSize[0x5d0]
-class DrawFrustumComponent: public PrimitiveComponent
+class BillboardComponent: public PrimitiveComponent
 {
 public:
-	struct Color                                                 FrustumColor;                                      // 0x5c8(0x4)
-	float                                                        FrustumAngle;                                      // 0x5cc(0x4)
-	float                                                        FrustumAspectRatio;                                // 0x5d0(0x4)
-	float                                                        FrustumStartDist;                                  // 0x5d4(0x4)
-	float                                                        FrustumEndDist;                                    // 0x5d8(0x4)
-	class Texture*                                               Texture;                                           // 0x5e0(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x5e0] - InheritedSize[0x5d0]
-class MaterialBillboardComponent: public PrimitiveComponent
-{
-public:
-	TArray<struct MaterialSpriteElement>                         Elements;                                          // 0x5c8(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x5e0] - InheritedSize[0x5d0]
-class ArrowComponent: public PrimitiveComponent
-{
-public:
-	struct Color                                                 ArrowColor;                                        // 0x5c8(0x4)
-	float                                                        ArrowSize;                                         // 0x5cc(0x4)
+	class Texture2D*                                             Sprite;                                            // 0x5c8(0x8)
 	bool                                                         bIsScreenSizeScaled;                               // 0x5d0(0x1)
 	float                                                        ScreenSize;                                        // 0x5d4(0x4)
-	bool                                                         bTreatAsASprite;                                   // 0x5d8(0x1)
-};
-
-
-// Size 0x20 (Full Size[0x5f0] - InheritedSize[0x5d0]
-class ShapeComponent: public PrimitiveComponent
-{
-public:
-	struct Color                                                 ShapeColor;                                        // 0x5c8(0x4)
-	class BodySetup*                                             ShapeBodySetup;                                    // 0x5d0(0x8)
-	bool                                                         bDrawOnlyIfSelected;                               // 0x5d8(0x1)
-	bool                                                         bShouldCollideWhenPlacing;                         // 0x5d8(0x1)
-	bool                                                         bDynamicObstacle;                                  // 0x5d8(0x1)
-	class UClass*                                                AreaClass;                                         // 0x5e0(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x5e0] - InheritedSize[0x5d0]
-class BaseWaterComponent: public PrimitiveComponent
-{
-public:
-	class UClass*                                                WaterId;                                           // 0x5c8(0x8)
-	bool                                                         ActiveInExclusionZone;                             // 0x5d0(0x1)
-};
-
-
-// Size 0x20 (Full Size[0x390] - InheritedSize[0x370]
-class BoxReflectionCaptureComponent: public ReflectionCaptureComponent
-{
-public:
-	float                                                        BoxTransitionDistance;                             // 0x370(0x4)
-	class BoxComponent*                                          PreviewInfluenceBox;                               // 0x378(0x8)
-	class BoxComponent*                                          PreviewCaptureBox;                                 // 0x380(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x5f0] - InheritedSize[0x5d0]
-class BrushComponent: public PrimitiveComponent
-{
-public:
-	class Model*                                                 Brush;                                             // 0x5c8(0x8)
-	class BodySetup*                                             BrushBodySetup;                                    // 0x5d0(0x8)
-	struct Vector                                                PrePivot;                                          // 0x5d8(0xc)
-};
-
-
-// Size 0x20 (Full Size[0x5f0] - InheritedSize[0x5d0]
-class MergedCollisionComponent: public PrimitiveComponent
-{
-public:
-	TArray<struct MergedCollisionComponentStaticMeshInstanceData> PerInstanceData;                                   // 0x5c8(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x350] - InheritedSize[0x350]
-class SceneCaptureComponentCube: public SceneCaptureComponent
-{
-public:
-	class TextureRenderTargetCube*                               TextureTarget;                                     // 0x348(0x8)
+	float                                                        U;                                                 // 0x5d8(0x4)
+	float                                                        UL;                                                // 0x5dc(0x4)
+	float                                                        V;                                                 // 0x5e0(0x4)
+	float                                                        VL;                                                // 0x5e4(0x4)
 };
 
 
@@ -8357,22 +8290,59 @@ public:
 };
 
 
-// Size 0x570 (Full Size[0x8c0] - InheritedSize[0x350]
-class SceneCaptureComponent2D: public SceneCaptureComponent
+// Size 0x10 (Full Size[0x5e0] - InheritedSize[0x5d0]
+class BaseWaterComponent: public PrimitiveComponent
 {
 public:
-	float                                                        FOVAngle;                                          // 0x348(0x4)
-	class TextureRenderTarget2D*                                 TextureTarget;                                     // 0x350(0x8)
-	char                                                         CaptureSource;                                     // 0x358(0x1)
-	struct PostProcessSettings                                   PostProcessSettings;                               // 0x360(0x540)
-	float                                                        PostProcessBlendWeight;                            // 0x8a0(0x4)
-	float                                                        OrthoWidth;                                        // 0x8a4(0x4)
-	float                                                        OrthoNearClipPlane;                                // 0x8a8(0x4)
-	float                                                        OrthoFarClipPlane;                                 // 0x8ac(0x4)
-	char                                                         ProjectionMode;                                    // 0x8b0(0x1)
-	float                                                        AspectRatio;                                       // 0x8b4(0x4)
-	bool                                                         bConstrainAspectRatio;                             // 0x8b8(0x1)
-	int                                                          LandscapeLODOverride;                              // 0x8bc(0x4)
+	class UClass*                                                WaterId;                                           // 0x5c8(0x8)
+	bool                                                         ActiveInExclusionZone;                             // 0x5d0(0x1)
+};
+
+
+// Size 0x20 (Full Size[0x5f0] - InheritedSize[0x5d0]
+class BrushComponent: public PrimitiveComponent
+{
+public:
+	class Model*                                                 Brush;                                             // 0x5c8(0x8)
+	class BodySetup*                                             BrushBodySetup;                                    // 0x5d0(0x8)
+	struct Vector                                                PrePivot;                                          // 0x5d8(0xc)
+};
+
+
+// Size 0x60 (Full Size[0x630] - InheritedSize[0x5d0]
+class TextRenderComponent: public PrimitiveComponent
+{
+public:
+	struct FText                                                 Text;                                              // 0x5c8(0x38)
+	class MaterialInterface*                                     TextMaterial;                                      // 0x600(0x8)
+	class Font*                                                  Font;                                              // 0x608(0x8)
+	char                                                         HorizontalAlignment;                               // 0x610(0x1)
+	char                                                         VerticalAlignment;                                 // 0x611(0x1)
+	struct Color                                                 TextRenderColor;                                   // 0x614(0x4)
+	float                                                        XScale;                                            // 0x618(0x4)
+	float                                                        YScale;                                            // 0x61c(0x4)
+	float                                                        WorldSize;                                         // 0x620(0x4)
+	float                                                        InvDefaultSize;                                    // 0x624(0x4)
+	float                                                        HorizSpacingAdjust;                                // 0x628(0x4)
+	bool                                                         bAlwaysRenderAsText;                               // 0x62c(0x1)
+};
+
+
+// Size 0x40 (Full Size[0x1e8] - InheritedSize[0x1a8]
+class MaterialExpressionPredicatedTextureSample: public MaterialExpressionTextureSample
+{
+public:
+	struct ExpressionInput                                       Predicate;                                         // 0x1a8(0x38)
+	struct Color                                                 DefaultColour;                                     // 0x1e0(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x1b0] - InheritedSize[0x1a8]
+class MaterialExpressionParticleSubUV: public MaterialExpressionTextureSample
+{
+public:
+	bool                                                         bBlend;                                            // 0x1a8(0x1)
+	bool                                                         bMipBiasOnLowResolution;                           // 0x1a8(0x1)
 };
 
 
@@ -8393,70 +8363,50 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x1b0] - InheritedSize[0x1a8]
-class MaterialExpressionParticleSubUV: public MaterialExpressionTextureSample
+// Size 0x0 (Full Size[0x350] - InheritedSize[0x350]
+class SceneCaptureComponentCube: public SceneCaptureComponent
 {
 public:
-	bool                                                         bBlend;                                            // 0x1a8(0x1)
-	bool                                                         bMipBiasOnLowResolution;                           // 0x1a8(0x1)
+	class TextureRenderTargetCube*                               TextureTarget;                                     // 0x348(0x8)
 };
 
 
-// Size 0x50 (Full Size[0x630] - InheritedSize[0x5e0]
-class StaticMeshComponent: public MeshComponent
+// Size 0x10 (Full Size[0x380] - InheritedSize[0x370]
+class SphereReflectionCaptureComponent: public ReflectionCaptureComponent
 {
 public:
-	int                                                          ForcedLodModel;                                    // 0x5d8(0x4)
-	bool                                                         bOverrideMinLOD;                                   // 0x5dc(0x1)
-	bool                                                         bOverrideNavigationToDefaultObstacle;              // 0x5dd(0x1)
-	int                                                          MinLOD;                                            // 0x5e0(0x4)
-	class StaticMesh*                                            StaticMesh;                                        // 0x5e8(0x8)
-	bool                                                         bOverrideWireframeColor;                           // 0x5f0(0x1)
-	struct Color                                                 WireframeColorOverride;                            // 0x5f4(0x4)
-	bool                                                         bIgnoreInstanceForTextureStreaming;                // 0x5f8(0x1)
-	bool                                                         bOverrideLightMapRes;                              // 0x5f8(0x1)
-	int                                                          OverriddenLightMapRes;                             // 0x5fc(0x4)
-	float                                                        StreamingDistanceMultiplier;                       // 0x600(0x4)
-	TArray<struct Guid>                                          IrrelevantLights;                                  // 0x608(0x10)
-	TArray<struct StaticMeshComponentLODInfo>                    LODData;                                           // 0x618(0x10)
-	class MaterialInterface*                                     CustomDepthMaterial;                               // 0x628(0x8)
+	float                                                        InfluenceRadius;                                   // 0x370(0x4)
+	float                                                        CaptureDistanceScale;                              // 0x374(0x4)
+	class DrawSphereComponent*                                   PreviewInfluenceRadius;                            // 0x378(0x8)
 };
 
 
-// Size 0x18 (Full Size[0x7d8] - InheritedSize[0x7c0]
-class LogVisualizerCameraController: public DebugCameraController
+// Size 0x70 (Full Size[0x108] - InheritedSize[0x98]
+class MaterialExpressionStaticSwitchParameter: public MaterialExpressionStaticBoolParameter
 {
 public:
-	class Actor*                                                 PickedActor;                                       // 0x7c0(0x8)
+	struct ExpressionInput                                       A;                                                 // 0x98(0x38)
+	struct ExpressionInput                                       B;                                                 // 0xd0(0x38)
 };
 
 
-// Size 0x320 (Full Size[0x900] - InheritedSize[0x5e0]
-class FFTWaterExtendedPlaneComponent: public BaseWaterComponent
+// Size 0x10 (Full Size[0x5e0] - InheritedSize[0x5d0]
+class ArrowComponent: public PrimitiveComponent
 {
 public:
-	struct FFTWaterComponentParams                               WaterParams;                                       // 0x5d8(0x310)
-	class Material*                                              Material;                                          // 0x8e8(0x8)
+	struct Color                                                 ArrowColor;                                        // 0x5c8(0x4)
+	float                                                        ArrowSize;                                         // 0x5cc(0x4)
+	bool                                                         bIsScreenSizeScaled;                               // 0x5d0(0x1)
+	float                                                        ScreenSize;                                        // 0x5d4(0x4)
+	bool                                                         bTreatAsASprite;                                   // 0x5d8(0x1)
 };
 
 
-// Size 0x10 (Full Size[0x600] - InheritedSize[0x5f0]
-class BoxComponent: public ShapeComponent
+// Size 0x0 (Full Size[0x5f0] - InheritedSize[0x5f0]
+class SphereComponent: public ShapeComponent
 {
 public:
-	struct Vector                                                BoxExtent;                                         // 0x5e8(0xc)
-};
-
-
-// Size 0x18 (Full Size[0x178] - InheritedSize[0x160]
-class FloatingPawnMovement: public PawnMovementComponent
-{
-public:
-	float                                                        MaxSpeed;                                          // 0x160(0x4)
-	float                                                        Acceleration;                                      // 0x164(0x4)
-	float                                                        Deceleration;                                      // 0x168(0x4)
-	float                                                        TurningBoost;                                      // 0x16c(0x4)
-	bool                                                         bPositionCorrected;                                // 0x170(0x1)
+	float                                                        SphereRadius;                                      // 0x5e8(0x4)
 };
 
 
@@ -8490,46 +8440,6 @@ public:
 	bool                                                         bCastModulatedShadows;                             // 0x4d8(0x1)
 	struct Color                                                 ModulatedShadowColor;                              // 0x4dc(0x4)
 	bool                                                         bUsedAsAtmosphereSunLight;                         // 0x4e0(0x1)
-};
-
-
-// Size 0x40 (Full Size[0x4b0] - InheritedSize[0x470]
-class PointLightComponent: public LightComponent
-{
-public:
-	float                                                        Radius;                                            // 0x468(0x4)
-	float                                                        AttenuationRadius;                                 // 0x46c(0x4)
-	bool                                                         bUseInverseSquaredFalloff;                         // 0x470(0x1)
-	float                                                        LightFalloffExponent;                              // 0x474(0x4)
-	float                                                        IntensityScaleForWater;                            // 0x478(0x4)
-	float                                                        MinDistanceToLightAssumed;                         // 0x47c(0x4)
-	float                                                        SourceRadius;                                      // 0x480(0x4)
-	float                                                        SourceLength;                                      // 0x484(0x4)
-	char                                                         SimpleFunctionType;                                // 0x488(0x1)
-	float                                                        ScaleOffset;                                       // 0x48c(0x4)
-	float                                                        PulsePhase;                                        // 0x490(0x4)
-	float                                                        FlickerFrequency;                                  // 0x494(0x4)
-	int                                                          FlickerPerlinRow;                                  // 0x498(0x4)
-	struct LightmassPointLightSettings                           LightmassSettings;                                 // 0x49c(0xc)
-};
-
-
-// Size 0x30 (Full Size[0x4a0] - InheritedSize[0x470]
-class AmbientLightSourceComponent: public LightComponent
-{
-public:
-	float                                                        Radius;                                            // 0x468(0x4)
-	float                                                        AmbientIntensity;                                  // 0x46c(0x4)
-	struct LinearColor                                           Tint;                                              // 0x470(0x10)
-	bool                                                         QuadraticFalloff;                                  // 0x480(0x1)
-	char                                                         Shape;                                             // 0x484(0x1)
-	char                                                         SimpleFunctionType;                                // 0x485(0x1)
-	float                                                        ScaleOffset;                                       // 0x488(0x4)
-	float                                                        PulsePhase;                                        // 0x48c(0x4)
-	float                                                        FlickerFrequency;                                  // 0x490(0x4)
-	int                                                          FlickerPerlinRow;                                  // 0x494(0x4)
-	bool                                                         bShadowed;                                         // 0x498(0x1)
-	char                                                         GroupingPolicy;                                    // 0x499(0x1)
 };
 
 
@@ -8570,6 +8480,36 @@ public:
 	bool                                                         bCachedLocalBoundsUpToDate;                        // 0x6e8(0x1)
 	bool                                                         bEnableUpdateRateOptimizations;                    // 0x6e9(0x1)
 	bool                                                         bDisplayDebugUpdateRateOptimizations;              // 0x6ea(0x1)
+};
+
+
+// Size 0x50 (Full Size[0x630] - InheritedSize[0x5e0]
+class StaticMeshComponent: public MeshComponent
+{
+public:
+	int                                                          ForcedLodModel;                                    // 0x5d8(0x4)
+	bool                                                         bOverrideMinLOD;                                   // 0x5dc(0x1)
+	bool                                                         bOverrideNavigationToDefaultObstacle;              // 0x5dd(0x1)
+	int                                                          MinLOD;                                            // 0x5e0(0x4)
+	class StaticMesh*                                            StaticMesh;                                        // 0x5e8(0x8)
+	bool                                                         bOverrideWireframeColor;                           // 0x5f0(0x1)
+	struct Color                                                 WireframeColorOverride;                            // 0x5f4(0x4)
+	bool                                                         bIgnoreInstanceForTextureStreaming;                // 0x5f8(0x1)
+	bool                                                         bOverrideLightMapRes;                              // 0x5f8(0x1)
+	int                                                          OverriddenLightMapRes;                             // 0x5fc(0x4)
+	float                                                        StreamingDistanceMultiplier;                       // 0x600(0x4)
+	TArray<struct Guid>                                          IrrelevantLights;                                  // 0x608(0x10)
+	TArray<struct StaticMeshComponentLODInfo>                    LODData;                                           // 0x618(0x10)
+	class MaterialInterface*                                     CustomDepthMaterial;                               // 0x628(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x5f0] - InheritedSize[0x5f0]
+class CapsuleComponent: public ShapeComponent
+{
+public:
+	float                                                        CapsuleHalfHeight;                                 // 0x5e8(0x4)
+	float                                                        CapsuleRadius;                                     // 0x5ec(0x4)
 };
 
 
@@ -8716,20 +8656,60 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x5f0] - InheritedSize[0x5f0]
-class CapsuleComponent: public ShapeComponent
+// Size 0x40 (Full Size[0x4b0] - InheritedSize[0x470]
+class PointLightComponent: public LightComponent
 {
 public:
-	float                                                        CapsuleHalfHeight;                                 // 0x5e8(0x4)
-	float                                                        CapsuleRadius;                                     // 0x5ec(0x4)
+	float                                                        Radius;                                            // 0x468(0x4)
+	float                                                        AttenuationRadius;                                 // 0x46c(0x4)
+	bool                                                         bUseInverseSquaredFalloff;                         // 0x470(0x1)
+	float                                                        LightFalloffExponent;                              // 0x474(0x4)
+	float                                                        IntensityScaleForWater;                            // 0x478(0x4)
+	float                                                        MinDistanceToLightAssumed;                         // 0x47c(0x4)
+	float                                                        SourceRadius;                                      // 0x480(0x4)
+	float                                                        SourceLength;                                      // 0x484(0x4)
+	char                                                         SimpleFunctionType;                                // 0x488(0x1)
+	float                                                        ScaleOffset;                                       // 0x48c(0x4)
+	float                                                        PulsePhase;                                        // 0x490(0x4)
+	float                                                        FlickerFrequency;                                  // 0x494(0x4)
+	int                                                          FlickerPerlinRow;                                  // 0x498(0x4)
+	struct LightmassPointLightSettings                           LightmassSettings;                                 // 0x49c(0xc)
 };
 
 
-// Size 0x0 (Full Size[0x5f0] - InheritedSize[0x5f0]
-class SphereComponent: public ShapeComponent
+// Size 0x30 (Full Size[0x4a0] - InheritedSize[0x470]
+class AmbientLightSourceComponent: public LightComponent
 {
 public:
-	float                                                        SphereRadius;                                      // 0x5e8(0x4)
+	float                                                        Radius;                                            // 0x468(0x4)
+	float                                                        AmbientIntensity;                                  // 0x46c(0x4)
+	struct LinearColor                                           Tint;                                              // 0x470(0x10)
+	bool                                                         QuadraticFalloff;                                  // 0x480(0x1)
+	char                                                         Shape;                                             // 0x484(0x1)
+	char                                                         SimpleFunctionType;                                // 0x485(0x1)
+	float                                                        ScaleOffset;                                       // 0x488(0x4)
+	float                                                        PulsePhase;                                        // 0x48c(0x4)
+	float                                                        FlickerFrequency;                                  // 0x490(0x4)
+	int                                                          FlickerPerlinRow;                                  // 0x494(0x4)
+	bool                                                         bShadowed;                                         // 0x498(0x1)
+	char                                                         GroupingPolicy;                                    // 0x499(0x1)
+};
+
+
+// Size 0x320 (Full Size[0x900] - InheritedSize[0x5e0]
+class FFTWaterExtendedPlaneComponent: public BaseWaterComponent
+{
+public:
+	struct FFTWaterComponentParams                               WaterParams;                                       // 0x5d8(0x310)
+	class Material*                                              Material;                                          // 0x8e8(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x7d8] - InheritedSize[0x7c0]
+class LogVisualizerCameraController: public DebugCameraController
+{
+public:
+	class Actor*                                                 PickedActor;                                       // 0x7c0(0x8)
 };
 
 
@@ -8746,43 +8726,23 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x4c0] - InheritedSize[0x4b0]
-class SpotLightComponent: public PointLightComponent
+// Size 0x18 (Full Size[0x178] - InheritedSize[0x160]
+class FloatingPawnMovement: public PawnMovementComponent
 {
 public:
-	float                                                        InnerConeAngle;                                    // 0x4a8(0x4)
-	float                                                        OuterConeAngle;                                    // 0x4ac(0x4)
-	float                                                        LightShaftConeAngle;                               // 0x4b0(0x4)
-	float                                                        KickBackRatio;                                     // 0x4b4(0x4)
+	float                                                        MaxSpeed;                                          // 0x160(0x4)
+	float                                                        Acceleration;                                      // 0x164(0x4)
+	float                                                        Deceleration;                                      // 0x168(0x4)
+	float                                                        TurningBoost;                                      // 0x16c(0x4)
+	bool                                                         bPositionCorrected;                                // 0x170(0x1)
 };
 
 
-// Size 0xc0 (Full Size[0x7c0] - InheritedSize[0x700]
-class DestructibleComponent: public SkinnedMeshComponent
+// Size 0x10 (Full Size[0x600] - InheritedSize[0x5f0]
+class BoxComponent: public ShapeComponent
 {
 public:
-	bool                                                         bFractureEffectOverride;                           // 0x700(0x1)
-	TArray<struct FractureEffect>                                FractureEffects;                                   // 0x708(0x10)
-	bool                                                         bEnableHardSleeping;                               // 0x718(0x1)
-	float                                                        LargeChunkThreshold;                               // 0x71c(0x4)
-	multicastinlinedelegate                                      OnComponentFracture;                               // 0x730(0x10)
-};
-
-
-// Size 0xa0 (Full Size[0x6d0] - InheritedSize[0x630]
-class SplineMeshComponent: public StaticMeshComponent
-{
-public:
-	struct SplineMeshParams                                      SplineParams;                                      // 0x638(0x58)
-	struct Vector                                                SplineUpDir;                                       // 0x690(0xc)
-	bool                                                         bAllowSplineEditingPerInstance;                    // 0x69c(0x1)
-	bool                                                         bSmoothInterpRollScale;                            // 0x69c(0x1)
-	char                                                         ForwardAxis;                                       // 0x6a0(0x1)
-	float                                                        SplineBoundaryMin;                                 // 0x6a4(0x4)
-	float                                                        SplineBoundaryMax;                                 // 0x6a8(0x4)
-	class BodySetup*                                             BodySetup;                                         // 0x6b0(0x8)
-	struct Guid                                                  CachedMeshBodySetupGuid;                           // 0x6b8(0x10)
-	bool                                                         bMeshDirty;                                        // 0x6c8(0x1)
+	struct Vector                                                BoxExtent;                                         // 0x5e8(0xc)
 };
 
 
@@ -8807,6 +8767,17 @@ public:
 };
 
 
+// Size 0x10 (Full Size[0x4c0] - InheritedSize[0x4b0]
+class SpotLightComponent: public PointLightComponent
+{
+public:
+	float                                                        InnerConeAngle;                                    // 0x4a8(0x4)
+	float                                                        OuterConeAngle;                                    // 0x4ac(0x4)
+	float                                                        LightShaftConeAngle;                               // 0x4b0(0x4)
+	float                                                        KickBackRatio;                                     // 0x4b4(0x4)
+};
+
+
 // Size 0xb0 (Full Size[0x6e0] - InheritedSize[0x630]
 class InstancedStaticMeshComponent: public StaticMeshComponent
 {
@@ -8820,6 +8791,57 @@ public:
 	class PhysicsSerializer*                                     PhysicsSerializer;                                 // 0x6b8(0x8)
 	int                                                          NumPendingLightmaps;                               // 0x6c0(0x4)
 	TArray<struct InstancedStaticMeshMappingInfo>                CachedMappings;                                    // 0x6c8(0x10)
+};
+
+
+// Size 0xc0 (Full Size[0x7c0] - InheritedSize[0x700]
+class DestructibleComponent: public SkinnedMeshComponent
+{
+public:
+	bool                                                         bFractureEffectOverride;                           // 0x700(0x1)
+	TArray<struct FractureEffect>                                FractureEffects;                                   // 0x708(0x10)
+	bool                                                         bEnableHardSleeping;                               // 0x718(0x1)
+	float                                                        LargeChunkThreshold;                               // 0x71c(0x4)
+	multicastinlinedelegate                                      OnComponentFracture;                               // 0x730(0x10)
+};
+
+
+// Size 0xa0 (Full Size[0x6d0] - InheritedSize[0x630]
+class FlatWaterMeshComponent: public StaticMeshComponent
+{
+public:
+	int                                                          RandomDropRate;                                    // 0x630(0x4)
+	float                                                        RandomDropSize;                                    // 0x634(0x4)
+	float                                                        RandomDropHeight;                                  // 0x638(0x4)
+	float                                                        RestorationScale;                                  // 0x63c(0x4)
+	float                                                        ForceScale;                                        // 0x640(0x4)
+	float                                                        DampHeight;                                        // 0x644(0x4)
+	float                                                        NormalMapScale;                                    // 0x648(0x4)
+	int                                                          TextureWidth;                                      // 0x64c(0x4)
+	int                                                          TextureHeight;                                     // 0x650(0x4)
+	class StaticMesh*                                            ClippingHull;                                      // 0x658(0x8)
+	float                                                        MaxSimulationDistance;                             // 0x660(0x4)
+	float                                                        InitialRandomHeight;                               // 0x664(0x4)
+	float                                                        InitialRandomVelocity;                             // 0x668(0x4)
+	class Texture2D*                                             Texture;                                           // 0x670(0x8)
+	class Texture2D*                                             NormalTexture;                                     // 0x678(0x8)
+	class TextureRenderTarget2D*                                 WaterMaskTexture;                                  // 0x680(0x8)
+	TArray<class MaterialInterface*>                             OriginalMaterials;                                 // 0x6a0(0x10)
+	TArray<struct FlatWaterMeshTextureOverride>                  TextureOverrides;                                  // 0x6b0(0x10)
+};
+
+
+// Size 0x40 (Full Size[0x670] - InheritedSize[0x630]
+class MergedStaticMeshComponent: public StaticMeshComponent
+{
+public:
+	bool                                                         bDisplayMergedInEditor;                            // 0x630(0x1)
+	TArray<float>                                                LODScreenSizes;                                    // 0x638(0x10)
+	TArray<float>                                                LODReductionPercentTriangles;                      // 0x648(0x10)
+	int                                                          LODForCollision;                                   // 0x658(0x4)
+	bool                                                         ClampNumberOfLODs;                                 // 0x65c(0x1)
+	int                                                          MaxNumberOfLODs;                                   // 0x660(0x4)
+	bool                                                         bMergeVertexColours;                               // 0x664(0x1)
 };
 
 
@@ -8868,42 +8890,20 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0x670] - InheritedSize[0x630]
-class MergedStaticMeshComponent: public StaticMeshComponent
-{
-public:
-	bool                                                         bDisplayMergedInEditor;                            // 0x630(0x1)
-	TArray<float>                                                LODScreenSizes;                                    // 0x638(0x10)
-	TArray<float>                                                LODReductionPercentTriangles;                      // 0x648(0x10)
-	int                                                          LODForCollision;                                   // 0x658(0x4)
-	bool                                                         ClampNumberOfLODs;                                 // 0x65c(0x1)
-	int                                                          MaxNumberOfLODs;                                   // 0x660(0x4)
-	bool                                                         bMergeVertexColours;                               // 0x664(0x1)
-};
-
-
 // Size 0xa0 (Full Size[0x6d0] - InheritedSize[0x630]
-class FlatWaterMeshComponent: public StaticMeshComponent
+class SplineMeshComponent: public StaticMeshComponent
 {
 public:
-	int                                                          RandomDropRate;                                    // 0x630(0x4)
-	float                                                        RandomDropSize;                                    // 0x634(0x4)
-	float                                                        RandomDropHeight;                                  // 0x638(0x4)
-	float                                                        RestorationScale;                                  // 0x63c(0x4)
-	float                                                        ForceScale;                                        // 0x640(0x4)
-	float                                                        DampHeight;                                        // 0x644(0x4)
-	float                                                        NormalMapScale;                                    // 0x648(0x4)
-	int                                                          TextureWidth;                                      // 0x64c(0x4)
-	int                                                          TextureHeight;                                     // 0x650(0x4)
-	class StaticMesh*                                            ClippingHull;                                      // 0x658(0x8)
-	float                                                        MaxSimulationDistance;                             // 0x660(0x4)
-	float                                                        InitialRandomHeight;                               // 0x664(0x4)
-	float                                                        InitialRandomVelocity;                             // 0x668(0x4)
-	class Texture2D*                                             Texture;                                           // 0x670(0x8)
-	class Texture2D*                                             NormalTexture;                                     // 0x678(0x8)
-	class TextureRenderTarget2D*                                 WaterMaskTexture;                                  // 0x680(0x8)
-	TArray<class MaterialInterface*>                             OriginalMaterials;                                 // 0x6a0(0x10)
-	TArray<struct FlatWaterMeshTextureOverride>                  TextureOverrides;                                  // 0x6b0(0x10)
+	struct SplineMeshParams                                      SplineParams;                                      // 0x638(0x58)
+	struct Vector                                                SplineUpDir;                                       // 0x690(0xc)
+	bool                                                         bAllowSplineEditingPerInstance;                    // 0x69c(0x1)
+	bool                                                         bSmoothInterpRollScale;                            // 0x69c(0x1)
+	char                                                         ForwardAxis;                                       // 0x6a0(0x1)
+	float                                                        SplineBoundaryMin;                                 // 0x6a4(0x4)
+	float                                                        SplineBoundaryMax;                                 // 0x6a8(0x4)
+	class BodySetup*                                             BodySetup;                                         // 0x6b0(0x8)
+	struct Guid                                                  CachedMeshBodySetupGuid;                           // 0x6b8(0x10)
+	bool                                                         bMeshDirty;                                        // 0x6c8(0x1)
 };
 
 

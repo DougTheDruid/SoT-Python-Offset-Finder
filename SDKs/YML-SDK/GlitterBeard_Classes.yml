@@ -133,10 +133,10 @@ GlitterBeardUnlockVFXCoordinatorComponent:
 GlitterbeardSlidingDoor:
   Attributes:
   - Name: DecalBlendComponent
-    Offset: '0x540'
+    Offset: '0x538'
     Size: '0x8'
     Type: class EffectBlendControllerComponent*
   ClassSize: '0x8'
-  FullSize: '0x548'
-  InheritedSize: '0x540'
+  FullSize: '0x540'
+  InheritedSize: '0x538'
   Super: SlidingDoor

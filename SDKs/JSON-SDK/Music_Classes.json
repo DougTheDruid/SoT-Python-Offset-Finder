@@ -99,26 +99,6 @@
       }
     ]
   },
-  "SynchedMusicZoneComponent": {
-    "Super": "MusicZoneComponent",
-    "FullSize": "0x400",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "StartDelayTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "PlayFromStartTimeMS",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3cc"
-      }
-    ]
-  },
   "AISpawnerMusicZoneComponent": {
     "Super": "MusicZoneComponent",
     "FullSize": "0x3f0",
@@ -148,6 +128,26 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x3e8"
+      }
+    ]
+  },
+  "SynchedMusicZoneComponent": {
+    "Super": "MusicZoneComponent",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "StartDelayTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "PlayFromStartTimeMS",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3cc"
       }
     ]
   },

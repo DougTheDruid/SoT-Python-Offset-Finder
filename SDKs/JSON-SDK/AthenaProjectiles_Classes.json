@@ -1,18 +1,4 @@
 {
-  "ProjectileLauncherSpecificSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "GlobalSettings",
-        "Type": "TArray<struct GlobalProjectileSettings>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "AthenaProjectilesThrottledTickCollectionAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -24,6 +10,20 @@
         "Type": "TArray<struct ThrottledProjectileTickPool>",
         "Size": "0x10",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "ProjectileLauncherSpecificSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "GlobalSettings",
+        "Type": "TArray<struct GlobalProjectileSettings>",
+        "Size": "0x10",
+        "Offset": "0x38"
       }
     ]
   },

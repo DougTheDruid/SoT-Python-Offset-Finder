@@ -6,14 +6,6 @@
 #include "CoherentUIGTPlugin_Structs.h"
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class CoherentUIGTJSPayload: public Object
-{
-public:
-	struct FString                                               EventName;                                         // 0x28(0x10)
-};
-
-
 // Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
 class CoherentUIGTSettings: public Object
 {
@@ -39,43 +31,12 @@ public:
 };
 
 
-// Size 0x98 (Full Size[0x558] - InheritedSize[0x4c0]
-class CoherentUIGTGameHUD: public HUD
+// Size 0x30 (Full Size[0xf8] - InheritedSize[0xc8]
+class CoherentUIGTLiveView: public ActorComponent
 {
 public:
-	class CoherentUIGTHUD*                                       CoherentUIGTHUD;                                   // 0x4c0(0x8)
-};
-
-
-// Size 0x2a0 (Full Size[0x3d8] - InheritedSize[0x138]
-class CoherentUIGTWidget: public Widget
-{
-public:
-	class Actor*                                                 Owner;                                             // 0x158(0x8)
-	multicastinlinedelegate                                      ReadyForBindings;                                  // 0x160(0x10)
-	multicastinlinedelegate                                      BindingsReleased;                                  // 0x170(0x10)
-	multicastinlinedelegate                                      FinishLoad;                                        // 0x180(0x10)
-	multicastinlinedelegate                                      FailLoad;                                          // 0x190(0x10)
-	multicastinlinedelegate                                      StartLoading;                                      // 0x1a0(0x10)
-	multicastinlinedelegate                                      NavigateTo;                                        // 0x1b0(0x10)
-	multicastinlinedelegate                                      JavaScriptEvent;                                   // 0x1c0(0x10)
-	multicastinlinedelegate                                      UIGTScriptingReady;                                // 0x1d0(0x10)
-	char                                                         Filter;                                            // 0x1f8(0x1)
-	bool                                                         bReceiveInput;                                     // 0x1f9(0x1)
-	bool                                                         bReceiveInputWhenTransparent;                      // 0x1fa(0x1)
-	bool                                                         bGammaCorrectedMaterial;                           // 0x1fb(0x1)
-	bool                                                         AllowPerformanceWarnings;                          // 0x1fc(0x1)
-	float                                                        ExecuteJSTimersThresholdMs;                        // 0x200(0x4)
-	float                                                        UpdateStylesAndLayoutThresholdMs;                  // 0x204(0x4)
-	float                                                        RecordRenderingCommandsThresholdMs;                // 0x208(0x4)
-	float                                                        PaintWarningThresholdMs;                           // 0x20c(0x4)
-	int                                                          LayersCountThreshold;                              // 0x210(0x4)
-	int                                                          LayerWidthThreshold;                               // 0x214(0x4)
-	int                                                          LayerHeightThreshold;                              // 0x218(0x4)
-	bool                                                         bEnableAdditionalDefaultStyles;                    // 0x21c(0x1)
-	struct FString                                               URL;                                               // 0x3c0(0x10)
-	float                                                        ClickThroughAlphaThreshold;                        // 0x3d0(0x4)
-	bool                                                         Transparent;                                       // 0x3d4(0x1)
+	struct FString                                               LinkName;                                          // 0xc8(0x10)
+	class TextureRenderTarget2D*                                 Texture;                                           // 0xd8(0x8)
 };
 
 
@@ -109,12 +70,19 @@ public:
 };
 
 
-// Size 0x30 (Full Size[0xf8] - InheritedSize[0xc8]
-class CoherentUIGTLiveView: public ActorComponent
+// Size 0x98 (Full Size[0x558] - InheritedSize[0x4c0]
+class CoherentUIGTGameHUD: public HUD
 {
 public:
-	struct FString                                               LinkName;                                          // 0xc8(0x10)
-	class TextureRenderTarget2D*                                 Texture;                                           // 0xd8(0x8)
+	class CoherentUIGTHUD*                                       CoherentUIGTHUD;                                   // 0x4c0(0x8)
+};
+
+
+// Size 0x90 (Full Size[0xb8] - InheritedSize[0x28]
+class CoherentUIGTJSEvent: public Object
+{
+public:
+	TArray<class Struct*>                                        StructTypes;                                       // 0xa8(0x10)
 };
 
 
@@ -129,11 +97,43 @@ public:
 };
 
 
-// Size 0x90 (Full Size[0xb8] - InheritedSize[0x28]
-class CoherentUIGTJSEvent: public Object
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class CoherentUIGTJSPayload: public Object
 {
 public:
-	TArray<class Struct*>                                        StructTypes;                                       // 0xa8(0x10)
+	struct FString                                               EventName;                                         // 0x28(0x10)
+};
+
+
+// Size 0x2a0 (Full Size[0x3d8] - InheritedSize[0x138]
+class CoherentUIGTWidget: public Widget
+{
+public:
+	class Actor*                                                 Owner;                                             // 0x158(0x8)
+	multicastinlinedelegate                                      ReadyForBindings;                                  // 0x160(0x10)
+	multicastinlinedelegate                                      BindingsReleased;                                  // 0x170(0x10)
+	multicastinlinedelegate                                      FinishLoad;                                        // 0x180(0x10)
+	multicastinlinedelegate                                      FailLoad;                                          // 0x190(0x10)
+	multicastinlinedelegate                                      StartLoading;                                      // 0x1a0(0x10)
+	multicastinlinedelegate                                      NavigateTo;                                        // 0x1b0(0x10)
+	multicastinlinedelegate                                      JavaScriptEvent;                                   // 0x1c0(0x10)
+	multicastinlinedelegate                                      UIGTScriptingReady;                                // 0x1d0(0x10)
+	char                                                         Filter;                                            // 0x1f8(0x1)
+	bool                                                         bReceiveInput;                                     // 0x1f9(0x1)
+	bool                                                         bReceiveInputWhenTransparent;                      // 0x1fa(0x1)
+	bool                                                         bGammaCorrectedMaterial;                           // 0x1fb(0x1)
+	bool                                                         AllowPerformanceWarnings;                          // 0x1fc(0x1)
+	float                                                        ExecuteJSTimersThresholdMs;                        // 0x200(0x4)
+	float                                                        UpdateStylesAndLayoutThresholdMs;                  // 0x204(0x4)
+	float                                                        RecordRenderingCommandsThresholdMs;                // 0x208(0x4)
+	float                                                        PaintWarningThresholdMs;                           // 0x20c(0x4)
+	int                                                          LayersCountThreshold;                              // 0x210(0x4)
+	int                                                          LayerWidthThreshold;                               // 0x214(0x4)
+	int                                                          LayerHeightThreshold;                              // 0x218(0x4)
+	bool                                                         bEnableAdditionalDefaultStyles;                    // 0x21c(0x1)
+	struct FString                                               URL;                                               // 0x3c0(0x10)
+	float                                                        ClickThroughAlphaThreshold;                        // 0x3d0(0x4)
+	bool                                                         Transparent;                                       // 0x3d4(0x1)
 };
 
 

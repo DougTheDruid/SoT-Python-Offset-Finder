@@ -1,21 +1,4 @@
 {
-  "EventFireballCannonFiringStateChanged": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "FireballCannonFiringState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FireballCannonObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "FireballCannonDynamicMaterialParameters": {
     "ClassSize": "0x14",
     "Attributes": [
@@ -42,6 +25,23 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "EventFireballCannonFiringStateChanged": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FireballCannonFiringState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FireballCannonObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },

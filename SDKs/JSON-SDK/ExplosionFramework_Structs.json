@@ -1,15 +1,4 @@
 {
-  "EventExplosionIgnitedActor": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "IgnitedActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "EventExplosionOverlap": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -21,12 +10,12 @@
       }
     ]
   },
-  "EventAffectedByExplosion": {
-    "ClassSize": "0x18",
+  "EventExplosionIgnitedActor": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "DamagerType",
-        "Type": "class UClass*",
+        "Name": "IgnitedActor",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -46,6 +35,17 @@
         "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "EventAffectedByExplosion": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "DamagerType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },

@@ -6,6 +6,18 @@
 #include "TradeRouteFramework_Structs.h"
 
 
+// Size 0x98 (Full Size[0xc0] - InheritedSize[0x28]
+class TradeRouteData: public DataAsset
+{
+public:
+	struct IslandSelectionType                                   StartIsland;                                       // 0x28(0x8)
+	struct IslandSelectionType                                   EndIsland;                                         // 0x30(0x8)
+	struct PlayerStat                                            RouteCompletionStat;                               // 0x38(0x4)
+	char                                                         MapOrientation;                                    // 0x3c(0x1)
+	struct TradeRouteMapData                                     TradeRouteMapData;                                 // 0x40(0x80)
+};
+
+
 // Size 0x98 (Full Size[0x118] - InheritedSize[0x80]
 class TaleQuestGetProjectionPointOnTradeRouteStepDesc: public TaleQuestStepDesc
 {
@@ -14,14 +26,6 @@ public:
 	struct QuestVariableVector                                   SourcePoint;                                       // 0x88(0x30)
 	struct QuestVariableTradeRouteData                           TradeRouteData;                                    // 0xb8(0x30)
 	struct QuestVariableVector                                   ProjectedPoint;                                    // 0xe8(0x30)
-};
-
-
-// Size 0x20 (Full Size[0xb8] - InheritedSize[0x98]
-class TaleQuestSelectTradeRouteStep: public TaleQuestStep
-{
-public:
-	class TaleQuestSelectTradeRouteStepDesc*                     Desc;                                              // 0x98(0x8)
 };
 
 
@@ -38,23 +42,19 @@ public:
 };
 
 
-// Size 0x98 (Full Size[0xc0] - InheritedSize[0x28]
-class TradeRouteData: public DataAsset
-{
-public:
-	struct IslandSelectionType                                   StartIsland;                                       // 0x28(0x8)
-	struct IslandSelectionType                                   EndIsland;                                         // 0x30(0x8)
-	struct PlayerStat                                            RouteCompletionStat;                               // 0x38(0x4)
-	char                                                         MapOrientation;                                    // 0x3c(0x1)
-	struct TradeRouteMapData                                     TradeRouteMapData;                                 // 0x40(0x80)
-};
-
-
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class TradeRoutesDataAsset: public DataAsset
 {
 public:
 	TArray<struct TradeRouteMapping>                             TradeRouteMappings;                                // 0x28(0x10)
+};
+
+
+// Size 0x20 (Full Size[0xb8] - InheritedSize[0x98]
+class TaleQuestSelectTradeRouteStep: public TaleQuestStep
+{
+public:
+	class TaleQuestSelectTradeRouteStepDesc*                     Desc;                                              // 0x98(0x8)
 };
 
 

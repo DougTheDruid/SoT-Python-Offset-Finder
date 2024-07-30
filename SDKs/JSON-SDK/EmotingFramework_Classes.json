@@ -1,13 +1,13 @@
 {
-  "EmotePropRandomObjectData": {
-    "Super": "EmotePropData",
+  "EmoteRandomFromListAsset": {
+    "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "PossibleObjects",
-        "Type": "TArray<struct EmotePropRandomObjectInfo>",
+        "Name": "EmoteDataList",
+        "Type": "TArray<struct EmoteData>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -45,6 +45,20 @@
       }
     ]
   },
+  "EmoteSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "NumPages",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "EmoteRandomObject": {
     "Super": "Actor",
     "FullSize": "0x508",
@@ -65,34 +79,6 @@
       }
     ]
   },
-  "EmoteSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x40",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "NumPages",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "EmoteRandomFromListAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "EmoteDataList",
-        "Type": "TArray<struct EmoteData>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "EmotePropDiceData": {
     "Super": "EmotePropData",
     "FullSize": "0x30",
@@ -110,6 +96,20 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x2c"
+      }
+    ]
+  },
+  "EmotePropRandomObjectData": {
+    "Super": "EmotePropData",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "PossibleObjects",
+        "Type": "TArray<struct EmotePropRandomObjectInfo>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },

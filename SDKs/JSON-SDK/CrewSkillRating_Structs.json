@@ -1,4 +1,21 @@
 {
+  "ReportMatchConclusionRequest": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "WinningUserIds",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LosingUserIds",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "ReportMatchConclusionResponse": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -35,23 +52,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "ReportMatchConclusionRequest": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "WinningUserIds",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LosingUserIds",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },

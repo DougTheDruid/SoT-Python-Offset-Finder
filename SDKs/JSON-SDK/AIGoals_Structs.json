@@ -1,21 +1,4 @@
 {
-  "HasAllActionContextTagsCondition": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "RequiredContextTags",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ExpectedValue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "BestActionSpotSelectionCriteria": {
     "ClassSize": "0x34",
     "Attributes": [
@@ -102,6 +85,23 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x30"
+      }
+    ]
+  },
+  "HasAllActionContextTagsCondition": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "RequiredContextTags",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ExpectedValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
       }
     ]
   },

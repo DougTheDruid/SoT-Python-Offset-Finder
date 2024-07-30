@@ -14,12 +14,16 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
-class StatusResponseApplyPersistentStatus: public StatusResponse
+// Size 0x40 (Full Size[0x70] - InheritedSize[0x30]
+class StatusResponseReportNoiseEvent: public StatusResponse
 {
 public:
-	struct Status                                                StatusToApply;                                     // 0x30(0x18)
-	float                                                        DurationMultiplier;                                // 0x48(0x4)
+	class UClass*                                                NoiseInstigator;                                   // 0x30(0x8)
+	struct FName                                                 NoiseTag;                                          // 0x38(0x8)
+	float                                                        NoiseRange;                                        // 0x40(0x4)
+	float                                                        NoiseLoudness;                                     // 0x44(0x4)
+	bool                                                         NoiseMultipleTicks;                                // 0x48(0x1)
+	float                                                        NoiseTimerTick;                                    // 0x4c(0x4)
 };
 
 
@@ -32,14 +36,6 @@ public:
 
 
 // Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
-class StatusResponseCancelStatus: public StatusResponse
-{
-public:
-	TArray<class Class*>                                         Status;                                            // 0x30(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class StatusResponseSuspendStatus: public StatusResponse
 {
 public:
@@ -47,16 +43,20 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0x70] - InheritedSize[0x30]
-class StatusResponseReportNoiseEvent: public StatusResponse
+// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
+class StatusResponseApplyPersistentStatus: public StatusResponse
 {
 public:
-	class UClass*                                                NoiseInstigator;                                   // 0x30(0x8)
-	struct FName                                                 NoiseTag;                                          // 0x38(0x8)
-	float                                                        NoiseRange;                                        // 0x40(0x4)
-	float                                                        NoiseLoudness;                                     // 0x44(0x4)
-	bool                                                         NoiseMultipleTicks;                                // 0x48(0x1)
-	float                                                        NoiseTimerTick;                                    // 0x4c(0x4)
+	struct Status                                                StatusToApply;                                     // 0x30(0x18)
+	float                                                        DurationMultiplier;                                // 0x48(0x4)
+};
+
+
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
+class StatusResponseCancelStatus: public StatusResponse
+{
+public:
+	TArray<class Class*>                                         Status;                                            // 0x30(0x10)
 };
 
 

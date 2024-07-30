@@ -1,109 +1,21 @@
 {
-  "MysteriousNotesCompletionEventsModelDataAsset": {
+  "WieldableMysteriousNoteDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "MysteriousNoteCompletionEvents",
-        "Type": "TArray<struct MysteriousNotesCompletionEventsModel>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "MysteriousNoteSettings": {
-    "Super": "Object",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "LookAheadInMinutes",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "RequestTimeout",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "MysteriousNotesCompletionStringsAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "WieldableNoteDataAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "Image",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "NotificationBackground",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "WieldableMysteriousNote": {
-    "Super": "SkeletalMeshWieldableItem",
-    "FullSize": "0x9b0",
-    "InheritedSize": "0x810",
-    "ClassSize": "0x1a0",
-    "Attributes": [
-      {
-        "Name": "RenderTarget",
-        "Type": "class MaybeCompressedCanvasRenderTarget2D*",
+        "Name": "WieldableNoteDesc",
+        "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x820"
-      },
-      {
-        "Name": "CanvasWidth",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x828"
-      },
-      {
-        "Name": "CanvasHeight",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x82c"
-      },
-      {
-        "Name": "FontScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x830"
+        "Offset": "0x28"
       },
       {
         "Name": "NoteLayout",
         "Type": "class WieldableMysteriousNoteLayout*",
         "Size": "0x8",
-        "Offset": "0x890"
-      },
-      {
-        "Name": "UsableWieldableComponent",
-        "Type": "class UsableWieldableComponent*",
-        "Size": "0x8",
-        "Offset": "0x898"
-      },
-      {
-        "Name": "InventoryItemComponent",
-        "Type": "class InventoryItemComponent*",
-        "Size": "0x8",
-        "Offset": "0x8a0"
+        "Offset": "0x30"
       }
     ]
   },
@@ -130,26 +42,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1d8"
-      }
-    ]
-  },
-  "WieldableMysteriousNoteDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "WieldableNoteDesc",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "NoteLayout",
-        "Type": "class WieldableMysteriousNoteLayout*",
-        "Size": "0x8",
-        "Offset": "0x30"
       }
     ]
   },
@@ -208,6 +100,114 @@
         "Type": "class MysteriousNotesCompletionEventsModelDataAsset*",
         "Size": "0x8",
         "Offset": "0x400"
+      }
+    ]
+  },
+  "MysteriousNoteSettings": {
+    "Super": "Object",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "LookAheadInMinutes",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "RequestTimeout",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "MysteriousNotesCompletionStringsAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "WieldableNoteDataAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "Image",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "NotificationBackground",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "WieldableMysteriousNote": {
+    "Super": "SkeletalMeshWieldableItem",
+    "FullSize": "0x990",
+    "InheritedSize": "0x7f0",
+    "ClassSize": "0x1a0",
+    "Attributes": [
+      {
+        "Name": "RenderTarget",
+        "Type": "class MaybeCompressedCanvasRenderTarget2D*",
+        "Size": "0x8",
+        "Offset": "0x7f8"
+      },
+      {
+        "Name": "CanvasWidth",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x800"
+      },
+      {
+        "Name": "CanvasHeight",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x804"
+      },
+      {
+        "Name": "FontScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x808"
+      },
+      {
+        "Name": "NoteLayout",
+        "Type": "class WieldableMysteriousNoteLayout*",
+        "Size": "0x8",
+        "Offset": "0x868"
+      },
+      {
+        "Name": "UsableWieldableComponent",
+        "Type": "class UsableWieldableComponent*",
+        "Size": "0x8",
+        "Offset": "0x870"
+      },
+      {
+        "Name": "InventoryItemComponent",
+        "Type": "class InventoryItemComponent*",
+        "Size": "0x8",
+        "Offset": "0x878"
+      }
+    ]
+  },
+  "MysteriousNotesCompletionEventsModelDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MysteriousNoteCompletionEvents",
+        "Type": "TArray<struct MysteriousNotesCompletionEventsModel>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },

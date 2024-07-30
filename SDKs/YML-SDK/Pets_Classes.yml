@@ -153,60 +153,60 @@ BTTask_SetDebugPetStateDescriptor:
 PetAIController:
   Attributes:
   - Name: StrategyControllerMovementMods
-    Offset: '0x990'
+    Offset: '0x9c8'
     Size: '0x10'
     Type: TArray<struct AIStategyControllerMovementMod>
   - Name: DefaultControlRotationInterpSpeed
-    Offset: '0x9a0'
+    Offset: '0x9d8'
     Size: '0x4'
     Type: float
   - Name: DefaultStrategy
-    Offset: '0x9a8'
+    Offset: '0x9e0'
     Size: '0x8'
     Type: class UClass*
   - Name: ReactMappings
-    Offset: '0x9b0'
+    Offset: '0x9e8'
     Size: '0x8'
     Type: class ReactStateMappingsDataAsset*
   - Name: HangoutSpotSelectorComponent
-    Offset: '0x9c0'
+    Offset: '0x9f8'
     Size: '0x8'
     Type: class PetHangoutSpotSelectorComponent*
   - Name: ForcedHangoutSpotComponent
-    Offset: '0x9c8'
+    Offset: '0xa00'
     Size: '0x8'
     Type: class PetHangoutSpotComponent*
   - Name: DefaultBlackboardAsset
-    Offset: '0x9d0'
+    Offset: '0xa08'
     Size: '0x8'
     Type: class BlackboardData*
   - Name: DefaultTree
-    Offset: '0x9d8'
+    Offset: '0xa10'
     Size: '0x8'
     Type: class BehaviorTree*
   - Name: HangoutTree
-    Offset: '0x9e0'
+    Offset: '0xa18'
     Size: '0x8'
     Type: class BehaviorTree*
   - Name: IdleTree
-    Offset: '0x9e8'
+    Offset: '0xa20'
     Size: '0x8'
     Type: class BehaviorTree*
   - Name: MaximumReactRange
-    Offset: '0x9f0'
+    Offset: '0xa28'
     Size: '0x4'
     Type: float
   - Name: DangerComponent
-    Offset: '0x9f8'
+    Offset: '0xa30'
     Size: '0x8'
     Type: class PetDangerComponent*
   - Name: MinAgentHalfHeightPctOverride
-    Offset: '0xa00'
+    Offset: '0xa38'
     Size: '0x4'
     Type: float
   ClassSize: '0xe8'
-  FullSize: '0xa58'
-  InheritedSize: '0x970'
+  FullSize: '0xa90'
+  InheritedSize: '0x9a8'
   Super: AthenaAIController
 PetCustomisationOverrideDataAsset:
   Attributes:
@@ -589,96 +589,96 @@ ReactStateMappingsDataAsset:
 WieldablePet:
   Attributes:
   - Name: ThirdPersonScalingModifier
-    Offset: '0x848'
+    Offset: '0x820'
     Size: '0x4'
     Type: float
   - Name: WieldablePetComponent
-    Offset: '0x850'
+    Offset: '0x828'
     Size: '0x8'
     Type: class WieldablePetComponent*
   - Name: AIPartsRetrievalComponent
-    Offset: '0x858'
+    Offset: '0x830'
     Size: '0x8'
     Type: class AIPartsRetrievalComponent*
   - Name: PetPartCustomisationComponent
-    Offset: '0x860'
+    Offset: '0x838'
     Size: '0x8'
     Type: class PetPartCustomisationComponent*
   - Name: AnimNotifyWwiseEmitterComponent
-    Offset: '0x868'
+    Offset: '0x840'
     Size: '0x8'
     Type: class AnimNotifyWwiseEmitterComponent*
   - Name: WaterExposureComponent
-    Offset: '0x870'
+    Offset: '0x848'
     Size: '0x8'
     Type: class WaterExposureComponent*
   - Name: UsableWieldableComponent
-    Offset: '0x878'
+    Offset: '0x850'
     Size: '0x8'
     Type: class UsableWieldableComponent*
   - Name: PickupableComponent
-    Offset: '0x880'
+    Offset: '0x858'
     Size: '0x8'
     Type: class PickupableComponent*
   - Name: WieldableInteractableComponent
-    Offset: '0x888'
+    Offset: '0x860'
     Size: '0x8'
     Type: class WieldableInteractableComponent*
   - Name: CleanlinessComponent
-    Offset: '0x890'
+    Offset: '0x868'
     Size: '0x8'
     Type: class CleanlinessComponent*
   - Name: LightWeightStatusEffectManagerComponent
-    Offset: '0x898'
+    Offset: '0x870'
     Size: '0x8'
     Type: class LightWeightStatusEffectManagerComponent*
   - Name: PetDitherComponent
-    Offset: '0x8a0'
+    Offset: '0x878'
     Size: '0x8'
     Type: class PetDitherComponent*
   - Name: PetOwner
-    Offset: '0x8a8'
+    Offset: '0x880'
     Size: '0x8'
     Type: class Actor*
   - Name: FeedingComponent
-    Offset: '0x8b0'
+    Offset: '0x888'
     Size: '0x8'
     Type: class FeedingComponent*
   - Name: SicknessComponent
-    Offset: '0x8b8'
+    Offset: '0x890'
     Size: '0x8'
     Type: class PetSicknessComponent*
   - Name: HungerComponent
-    Offset: '0x8c0'
+    Offset: '0x898'
     Size: '0x8'
     Type: class WieldablePetHungerComponent*
   - Name: StarvingComponent
-    Offset: '0x8c8'
+    Offset: '0x8a0'
     Size: '0x8'
     Type: class StarvingComponent*
   - Name: TelemetryComponent
-    Offset: '0x8d0'
+    Offset: '0x8a8'
     Size: '0x8'
     Type: class PetTelemetryComponent*
   - Name: AnimationDataStoreComponent
-    Offset: '0x8d8'
+    Offset: '0x8b0'
     Size: '0x8'
     Type: class AnimationDataStoreComponent*
   - Name: SubmergedStrokingEnabled
-    Offset: '0x8e0'
+    Offset: '0x8b8'
     Size: '0x1'
     Type: bool
   - Name: HungerReactAnimationState
-    Offset: '0x950'
+    Offset: '0x928'
     Size: '0x1'
     Type: byte
   - Name: DropRequest
-    Offset: '0x951'
+    Offset: '0x929'
     Size: '0x1'
     Type: byte
   ClassSize: '0x150'
-  FullSize: '0x960'
-  InheritedSize: '0x810'
+  FullSize: '0x940'
+  InheritedSize: '0x7f0'
   Super: SkeletalMeshWieldableItem
 WieldablePetComponent:
   Attributes:

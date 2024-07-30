@@ -4,6 +4,14 @@
 // https://github.com/DougTheDruid
 
 // Size 0x8
+struct WarMapVoteAddedEvent
+{
+public:
+	class Actor*                                                 Voter;                                             // 0x0(0x8)
+};
+
+
+// Size 0x8
 struct EventLocalPlayerOpenedWarMap
 {
 public:
@@ -16,14 +24,6 @@ struct EventWarMapStateChanged
 {
 public:
 	class Actor*                                                 WarMapProposalContainer;                           // 0x8(0x8)
-};
-
-
-// Size 0x8
-struct WarMapVoteAddedEvent
-{
-public:
-	class Actor*                                                 Voter;                                             // 0x0(0x8)
 };
 
 

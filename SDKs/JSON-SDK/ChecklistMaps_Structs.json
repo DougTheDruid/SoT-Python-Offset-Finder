@@ -22,6 +22,23 @@
       }
     ]
   },
+  "ChecklistMapItemData": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "Description",
+        "Type": "struct TreasureMapTextDesc",
+        "Size": "0x48",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IsComplete",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48"
+      }
+    ]
+  },
   "ChecklistCompletionEvent": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -53,23 +70,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "ChecklistMapItemData": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "Description",
-        "Type": "struct TreasureMapTextDesc",
-        "Size": "0x48",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IsComplete",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x48"
       }
     ]
   },

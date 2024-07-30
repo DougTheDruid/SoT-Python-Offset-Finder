@@ -1,21 +1,4 @@
 {
-  "MeleeAttackIdWeights": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MeleeAttackType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "AshenLordFireShroudParams": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -29,6 +12,23 @@
         "Name": "FireShroudCollisionVolume",
         "Type": "struct Vector",
         "Size": "0xc",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "MeleeAttackIdWeights": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MeleeAttackType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x8"
       }
     ]

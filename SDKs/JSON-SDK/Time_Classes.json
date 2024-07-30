@@ -90,10 +90,16 @@
         "Offset": "0x444"
       },
       {
+        "Name": "MaxTimeJumpToCatchUpInSeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x448"
+      },
+      {
         "Name": "MaxNumReplicatedTimeEntriesToAverage",
         "Type": "uint32",
         "Size": "0x4",
-        "Offset": "0x448"
+        "Offset": "0x44c"
       },
       {
         "Name": "ReplicatedServerTime",

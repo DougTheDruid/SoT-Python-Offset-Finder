@@ -358,31 +358,35 @@ StartEmissaryVoyageInlineVoteConsumer:
     Offset: '0x270'
     Size: '0x38'
     Type: struct FText
-  - Name: EmissaryVotingRemoveVote
+  - Name: EmissaryVotingCantVoteReasonCrewShipSinking
     Offset: '0x2a8'
     Size: '0x38'
     Type: struct FText
-  - Name: EmissaryVotingCantRemoveVote
+  - Name: EmissaryVotingRemoveVote
     Offset: '0x2e0'
     Size: '0x38'
     Type: struct FText
-  ClassSize: '0x210'
-  FullSize: '0x330'
+  - Name: EmissaryVotingCantRemoveVote
+    Offset: '0x318'
+    Size: '0x38'
+    Type: struct FText
+  ClassSize: '0x248'
+  FullSize: '0x368'
   InheritedSize: '0x120'
   Super: EmissaryVoyageInlineVoteConsumerBase
 StartGuildEmissaryVoyageInlineVoteConsumer:
   Attributes:
   - Name: GuildEmissaryVotingCantVoteReasonGuildEmissaryNotUnlocked
-    Offset: '0x330'
-    Size: '0x38'
-    Type: struct FText
-  - Name: GuildEmissaryVotingCantVoteReasonNoGuildShip
     Offset: '0x368'
     Size: '0x38'
     Type: struct FText
+  - Name: GuildEmissaryVotingCantVoteReasonNoGuildShip
+    Offset: '0x3a0'
+    Size: '0x38'
+    Type: struct FText
   ClassSize: '0xa0'
-  FullSize: '0x3d0'
-  InheritedSize: '0x330'
+  FullSize: '0x408'
+  InheritedSize: '0x368'
   Super: StartEmissaryVoyageInlineVoteConsumer
 StopEmissaryVoyageInlineVoteConsumer:
   Attributes:
@@ -414,15 +418,19 @@ StopEmissaryVoyageInlineVoteConsumer:
     Offset: '0x270'
     Size: '0x38'
     Type: struct FText
-  - Name: EmissaryVotingRemoveVote
+  - Name: EmissaryVotingCantVoteReasonCrewShipSinking
     Offset: '0x2a8'
     Size: '0x38'
     Type: struct FText
-  - Name: EmissaryVotingCantRemoveVote
+  - Name: EmissaryVotingRemoveVote
     Offset: '0x2e0'
     Size: '0x38'
     Type: struct FText
-  ClassSize: '0x210'
-  FullSize: '0x330'
+  - Name: EmissaryVotingCantRemoveVote
+    Offset: '0x318'
+    Size: '0x38'
+    Type: struct FText
+  ClassSize: '0x248'
+  FullSize: '0x368'
   InheritedSize: '0x120'
   Super: EmissaryVoyageInlineVoteConsumerBase

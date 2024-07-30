@@ -58,8 +58,12 @@ TimeService:
     Offset: '0x444'
     Size: '0x4'
     Type: float
-  - Name: MaxNumReplicatedTimeEntriesToAverage
+  - Name: MaxTimeJumpToCatchUpInSeconds
     Offset: '0x448'
+    Size: '0x4'
+    Type: float
+  - Name: MaxNumReplicatedTimeEntriesToAverage
+    Offset: '0x44c'
     Size: '0x4'
     Type: uint32
   - Name: ReplicatedServerTime

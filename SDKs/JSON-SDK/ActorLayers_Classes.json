@@ -1,18 +1,4 @@
 {
-  "InstancedLayerComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x310",
-    "InheritedSize": "0x2e0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "InstancedLayers",
-        "Type": "TArray<struct InstancedLayer>",
-        "Size": "0x10",
-        "Offset": "0x2e8"
-      }
-    ]
-  },
   "LayerActorsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x48",
@@ -30,6 +16,20 @@
         "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x38"
+      }
+    ]
+  },
+  "InstancedLayerComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x310",
+    "InheritedSize": "0x2e0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "InstancedLayers",
+        "Type": "TArray<struct InstancedLayer>",
+        "Size": "0x10",
+        "Offset": "0x2e8"
       }
     ]
   },

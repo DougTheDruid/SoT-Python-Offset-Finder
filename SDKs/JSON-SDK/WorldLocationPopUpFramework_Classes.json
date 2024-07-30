@@ -1,4 +1,18 @@
 {
+  "TaleWorldLocationPopUpService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x90",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "SuppressedWorldLocationPopUpNearbyLocations",
+        "Type": "TArray<struct TaleWorldLocationPopUpServiceEntry>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      }
+    ]
+  },
   "TaleAllowWorldLocationPopUpStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0xb8",
@@ -19,43 +33,17 @@
       }
     ]
   },
-  "TaleWorldLocationPopUpService": {
-    "Super": "TaleQuestService",
-    "FullSize": "0x90",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x30",
+  "WorldLocationVisitorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x108",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "SuppressedWorldLocationPopUpNearbyLocations",
-        "Type": "TArray<struct TaleWorldLocationPopUpServiceEntry>",
-        "Size": "0x10",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "TalePreventWorldLocationPopUpStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "DisableEntireIsland",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "MaxDistanceFromWorldLocationPopUp",
+        "Name": "RevisitCooldown",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x84"
-      },
-      {
-        "Name": "NearbyLocation",
-        "Type": "struct QuestVariableVector",
-        "Size": "0x30",
-        "Offset": "0x88"
+        "Offset": "0xd0"
       }
     ]
   },
@@ -91,17 +79,29 @@
       }
     ]
   },
-  "WorldLocationVisitorComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x108",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x40",
+  "TalePreventWorldLocationPopUpStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "RevisitCooldown",
+        "Name": "DisableEntireIsland",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "MaxDistanceFromWorldLocationPopUp",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xd0"
+        "Offset": "0x84"
+      },
+      {
+        "Name": "NearbyLocation",
+        "Type": "struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0x88"
       }
     ]
   },

@@ -1,27 +1,4 @@
 {
-  "AbandonedNoteWeightedTextEntry": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "Title",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Body",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x70"
-      }
-    ]
-  },
   "SirenPuzzleLockState": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -42,6 +19,29 @@
         "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "AbandonedNoteWeightedTextEntry": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "Title",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Body",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x70"
       }
     ]
   },

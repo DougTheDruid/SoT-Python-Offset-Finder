@@ -1,4 +1,15 @@
 {
+  "EventTreasuryRoomFlooded": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Treasury",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "TreasuryWaveEncounter": {
     "ClassSize": "0x48",
     "Attributes": [
@@ -55,17 +66,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x40"
-      }
-    ]
-  },
-  "EventTreasuryRoomFlooded": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Treasury",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },

@@ -20,14 +20,6 @@ public:
 };
 
 
-// Size 0x10
-struct PrioritisedPromptHandle
-{
-public:
-	struct Guid                                                  Id;                                                // 0x0(0x10)
-};
-
-
 // Size 0x60
 struct PrioritisedPrompt
 {
@@ -38,6 +30,14 @@ public:
 	class PopUpMessageDesc*                                      PopUpMessageDesc;                                  // 0x50(0x8)
 	char                                                         BasePriority;                                      // 0x58(0x1)
 	char                                                         MenuNavigation;                                    // 0x59(0x1)
+};
+
+
+// Size 0x10
+struct PrioritisedPromptHandle
+{
+public:
+	struct Guid                                                  Id;                                                // 0x0(0x10)
 };
 
 

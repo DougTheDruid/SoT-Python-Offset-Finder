@@ -231,20 +231,20 @@ MastFlammableComponent:
 OilSpill:
   Attributes:
   - Name: BaseComponent
-    Offset: '0x718'
+    Offset: '0x720'
     Size: '0x8'
     Type: class BoxComponent*
   - Name: FlammableComponent
-    Offset: '0x720'
+    Offset: '0x728'
     Size: '0x8'
     Type: class ActorFlammableComponent*
   - Name: StatusEffectManagerComponent
-    Offset: '0x728'
+    Offset: '0x730'
     Size: '0x8'
     Type: class StatusEffectManagerComponent*
   ClassSize: '0x30'
-  FullSize: '0x740'
-  InheritedSize: '0x710'
+  FullSize: '0x748'
+  InheritedSize: '0x718'
   Super: ItemProxy
 ShipFireDamageParamsDataAsset:
   Attributes:

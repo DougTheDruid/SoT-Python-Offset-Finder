@@ -1,153 +1,4 @@
 {
-  "WidgetAnimationBinding": {
-    "ClassSize": "0x24",
-    "Attributes": [
-      {
-        "Name": "WidgetName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SlotWidgetName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "AnimationGuid",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "bIsRootWidget",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "AnchorData": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Offsets",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Anchors",
-        "Type": "struct Anchors",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Alignment",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "NamedSlotBinding": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Name",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Content",
-        "Type": "class Widget*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "SlateChildSize": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Value",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SizeRule",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "WidgetNavigationData": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "Rule",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WidgetToFocus",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "MovieScene2DTransformSectionTemplate": {
-    "ClassSize": "0x380",
-    "Attributes": [
-      {
-        "Name": "PropertyData",
-        "Type": "struct MovieScenePropertySectionData",
-        "Size": "0x20",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Translation",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "Scale",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x1a0"
-      },
-      {
-        "Name": "Shear",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x290"
-      }
-    ]
-  },
-  "MovieSceneWidgetMaterialSectionTemplate": {
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "BrushPropertyNamePath",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x48"
-      }
-    ]
-  },
   "WidgetTransform": {
     "ClassSize": "0x1c",
     "Attributes": [
@@ -177,8 +28,8 @@
       }
     ]
   },
-  "PropertyPathSegment": {
-    "ClassSize": "0x20",
+  "NamedSlotBinding": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "Name",
@@ -187,22 +38,10 @@
         "Offset": "0x0"
       },
       {
-        "Name": "ArrayIndex",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "Content",
+        "Type": "class Widget*",
+        "Size": "0x8",
         "Offset": "0x8"
-      },
-      {
-        "Name": "Struct",
-        "Type": "class Struct*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Field",
-        "Type": "class Field*",
-        "Size": "0x8",
-        "Offset": "0x18"
       }
     ]
   },
@@ -238,6 +77,167 @@
         "Type": "struct RichCurve",
         "Size": "0x78",
         "Offset": "0x1a0"
+      }
+    ]
+  },
+  "MovieSceneWidgetMaterialSectionTemplate": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "BrushPropertyNamePath",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "AnchorData": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Offsets",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Anchors",
+        "Type": "struct Anchors",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Alignment",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "WidgetNavigationData": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "Rule",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WidgetToFocus",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "WidgetAnimationBinding": {
+    "ClassSize": "0x24",
+    "Attributes": [
+      {
+        "Name": "WidgetName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SlotWidgetName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "AnimationGuid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "bIsRootWidget",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "SlateChildSize": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Value",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SizeRule",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "PropertyPathSegment": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ArrayIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Struct",
+        "Type": "class Struct*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Field",
+        "Type": "class Field*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "MovieScene2DTransformSectionTemplate": {
+    "ClassSize": "0x380",
+    "Attributes": [
+      {
+        "Name": "PropertyData",
+        "Type": "struct MovieScenePropertySectionData",
+        "Size": "0x20",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Translation",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "Scale",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x1a0"
+      },
+      {
+        "Name": "Shear",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x290"
       }
     ]
   },

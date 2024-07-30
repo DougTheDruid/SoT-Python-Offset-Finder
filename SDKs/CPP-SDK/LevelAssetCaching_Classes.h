@@ -6,6 +6,14 @@
 #include "LevelAssetCaching_Structs.h"
 
 
+// Size 0x88 (Full Size[0xb0] - InheritedSize[0x28]
+class RegionLookupGeneratedGrid: public Object
+{
+public:
+	struct WorldRegionSetup                                      WorldSetup;                                        // 0x30(0x28)
+};
+
+
 // Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
 class LevelAssetCachingService: public Object
 {
@@ -18,26 +26,10 @@ public:
 
 
 // Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class RegionalAssetListWorldSetupDataAsset: public DataAsset
-{
-public:
-	map                                                          WorldSetups;                                       // 0x28(0x50)
-};
-
-
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
 class RegionalAssetListSetupDataAsset: public DataAsset
 {
 public:
 	map                                                          ListMapping;                                       // 0x28(0x50)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class RegionalAssetListDataAsset: public DataAsset
-{
-public:
-	TArray<struct StringAssetReference>                          RegionAssets;                                      // 0x28(0x10)
 };
 
 
@@ -49,11 +41,19 @@ public:
 };
 
 
-// Size 0x88 (Full Size[0xb0] - InheritedSize[0x28]
-class RegionLookupGeneratedGrid: public Object
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class RegionalAssetListWorldSetupDataAsset: public DataAsset
 {
 public:
-	struct WorldRegionSetup                                      WorldSetup;                                        // 0x30(0x28)
+	map                                                          WorldSetups;                                       // 0x28(0x50)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class RegionalAssetListDataAsset: public DataAsset
+{
+public:
+	TArray<struct StringAssetReference>                          RegionAssets;                                      // 0x28(0x10)
 };
 
 

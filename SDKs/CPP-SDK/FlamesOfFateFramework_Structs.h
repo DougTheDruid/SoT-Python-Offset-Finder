@@ -12,6 +12,23 @@ public:
 };
 
 
+// Size 0x2
+struct FlameData
+{
+public:
+	char                                                         FlameOfFateType;                                   // 0x0(0x1)
+	bool                                                         SkipChangeAnimation;                               // 0x1(0x1)
+};
+
+
+// Size 0x18
+struct CycleFlameOfFateSequence
+{
+public:
+	TArray<char>                                                 FlameTypeSequence;                                 // 0x0(0x10)
+};
+
+
 // Size 0x18
 struct SetShipFlameOfFateEvent
 {
@@ -19,15 +36,6 @@ public:
 	char                                                         FlameOfFateType;                                   // 0x0(0x1)
 	class Object*                                                Source;                                            // 0x8(0x8)
 	class Object*                                                Ship;                                              // 0x10(0x8)
-};
-
-
-// Size 0x2
-struct FlameData
-{
-public:
-	char                                                         FlameOfFateType;                                   // 0x0(0x1)
-	bool                                                         SkipChangeAnimation;                               // 0x1(0x1)
 };
 
 
@@ -48,14 +56,6 @@ public:
 	class Character*                                             PlayerCharacter;                                   // 0x0(0x8)
 	class Object*                                                Source;                                            // 0x8(0x8)
 	char                                                         FlameOfFateType;                                   // 0x10(0x1)
-};
-
-
-// Size 0x18
-struct CycleFlameOfFateSequence
-{
-public:
-	TArray<char>                                                 FlameTypeSequence;                                 // 0x0(0x10)
 };
 
 

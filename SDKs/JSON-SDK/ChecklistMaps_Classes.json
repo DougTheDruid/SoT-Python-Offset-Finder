@@ -1,4 +1,94 @@
 {
+  "ChecklistActionData": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "NumRequiredActions",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ActionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "ChecklistMap": {
+    "Super": "TreasureMap",
+    "FullSize": "0x990",
+    "InheritedSize": "0x830",
+    "ClassSize": "0x160",
+    "Attributes": [
+      {
+        "Name": "CanvasWidth",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x830"
+      },
+      {
+        "Name": "CanvasHeight",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x834"
+      },
+      {
+        "Name": "Font",
+        "Type": "class Font*",
+        "Size": "0x8",
+        "Offset": "0x838"
+      },
+      {
+        "Name": "FontScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x840"
+      },
+      {
+        "Name": "FontLineSpacingScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x844"
+      },
+      {
+        "Name": "ChecklistMapLayout",
+        "Type": "class ChecklistMapLayout*",
+        "Size": "0x8",
+        "Offset": "0x850"
+      },
+      {
+        "Name": "Contents",
+        "Type": "struct ChecklistMapContents",
+        "Size": "0xe8",
+        "Offset": "0x858"
+      }
+    ]
+  },
+  "ChecklistMapSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x58",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ChecklistMapItemDescClass",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "ChecklistEvents",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
   "ChecklistItemsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -24,116 +114,6 @@
         "Type": "class ChecklistActionData*",
         "Size": "0x8",
         "Offset": "0xc8"
-      }
-    ]
-  },
-  "ChecklistActionData": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "NumRequiredActions",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ActionType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x2c"
-      }
-    ]
-  },
-  "ChecklistMapSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x58",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ChecklistMapItemDescClass",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "ChecklistEvents",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "ChecklistMap": {
-    "Super": "TreasureMap",
-    "FullSize": "0x9b0",
-    "InheritedSize": "0x860",
-    "ClassSize": "0x150",
-    "Attributes": [
-      {
-        "Name": "CanvasWidth",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x858"
-      },
-      {
-        "Name": "CanvasHeight",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x85c"
-      },
-      {
-        "Name": "Font",
-        "Type": "class Font*",
-        "Size": "0x8",
-        "Offset": "0x860"
-      },
-      {
-        "Name": "FontScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x868"
-      },
-      {
-        "Name": "FontLineSpacingScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x86c"
-      },
-      {
-        "Name": "ChecklistMapLayout",
-        "Type": "class ChecklistMapLayout*",
-        "Size": "0x8",
-        "Offset": "0x878"
-      },
-      {
-        "Name": "Contents",
-        "Type": "struct ChecklistMapContents",
-        "Size": "0xe8",
-        "Offset": "0x880"
-      }
-    ]
-  },
-  "DeliverBootyChecklistActionData": {
-    "Super": "ChecklistActionData",
-    "FullSize": "0x50",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "TargetBootyTypes",
-        "Type": "TArray<Class>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "TargetCompanies",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x40"
       }
     ]
   },
@@ -176,6 +156,26 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x30"
+      }
+    ]
+  },
+  "DeliverBootyChecklistActionData": {
+    "Super": "ChecklistActionData",
+    "FullSize": "0x50",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "TargetBootyTypes",
+        "Type": "TArray<Class>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "TargetCompanies",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x40"
       }
     ]
   },

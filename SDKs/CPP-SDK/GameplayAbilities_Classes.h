@@ -6,19 +6,13 @@
 #include "GameplayAbilities_Structs.h"
 
 
-// Size 0x18 (Full Size[0x148] - InheritedSize[0x130]
-class AbilityTask_WaitGameplayEffectApplied_Self: public AbilityTask_WaitGameplayEffectApplied
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class GameplayCueNotify_Static: public Object
 {
 public:
-	multicastinlinedelegate                                      OnApplied;                                         // 0x130(0x10)
-};
-
-
-// Size 0x20 (Full Size[0x488] - InheritedSize[0x468]
-class AbilitySystemTestPawn: public DefaultPawn
-{
-public:
-	class AbilitySystemComponent*                                AbilitySystemComponent;                            // 0x480(0x8)
+	struct GameplayTag                                           GameplayCueTag;                                    // 0x28(0x8)
+	struct FName                                                 GameplayCueName;                                   // 0x30(0x8)
+	bool                                                         IsOverride;                                        // 0x38(0x1)
 };
 
 
@@ -31,156 +25,11 @@ public:
 };
 
 
-// Size 0x30 (Full Size[0x98] - InheritedSize[0x68]
-class AbilityTask_SpawnActor: public AbilityTask
-{
-public:
-	multicastinlinedelegate                                      Success;                                           // 0x68(0x10)
-	multicastinlinedelegate                                      DidNotSpawn;                                       // 0x78(0x10)
-};
-
-
-// Size 0x48 (Full Size[0xb0] - InheritedSize[0x68]
-class AbilityTask_MoveToLocation: public AbilityTask
-{
-public:
-	multicastinlinedelegate                                      OnTargetLocationReached;                           // 0x68(0x10)
-	struct Vector                                                StartLocation;                                     // 0x7c(0xc)
-	struct Vector                                                TargetLocation;                                    // 0x88(0xc)
-	float                                                        DurationOfMovement;                                // 0x94(0x4)
-	class CurveFloat*                                            LerpCurve;                                         // 0xa0(0x8)
-	class CurveVector*                                           LerpCurveVector;                                   // 0xa8(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class GameplayEffectCalculation: public Object
-{
-public:
-	TArray<struct GameplayEffectAttributeCaptureDefinition>      RelevantAttributesToCapture;                       // 0x28(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x80] - InheritedSize[0x68]
-class AbilityTask_WaitCancel: public AbilityTask
-{
-public:
-	multicastinlinedelegate                                      OnCancel;                                          // 0x68(0x10)
-};
-
-
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class GameplayCueSet: public DataAsset
-{
-public:
-	TArray<struct GameplayCueNotifyData>                         GameplayCueData;                                   // 0x28(0x10)
-};
-
-
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class GameplayEffectUIData_TextOnly: public GameplayEffectUIData
-{
-public:
-	struct FText                                                 Description;                                       // 0x28(0x38)
-};
-
-
-// Size 0x18 (Full Size[0x80] - InheritedSize[0x68]
-class AbilityTask_NetworkSyncPoint: public AbilityTask
-{
-public:
-	multicastinlinedelegate                                      OnSync;                                            // 0x68(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
-class AbilityTask_WaitGameplayTagRemoved: public AbilityTask_WaitGameplayTag
-{
-public:
-	multicastinlinedelegate                                      Removed;                                           // 0x88(0x10)
-};
-
-
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class GameplayTagReponseTable: public DataAsset
-{
-public:
-	TArray<struct GameplayTagResponseTableEntry>                 Entries;                                           // 0x28(0x10)
-};
-
-
-// Size 0x20 (Full Size[0x3e8] - InheritedSize[0x3c8]
-class GameplayCueNotify_Actor: public Actor
-{
-public:
-	struct GameplayTag                                           GameplayCueTag;                                    // 0x3c8(0x8)
-	struct FName                                                 GameplayCueName;                                   // 0x3d0(0x8)
-	bool                                                         bAutoDestroyOnRemove;                              // 0x3d8(0x1)
-	float                                                        AutoDestroyDelay;                                  // 0x3dc(0x4)
-	bool                                                         IsOverride;                                        // 0x3e0(0x1)
-	bool                                                         bUniqueInstancePerInstigator;                      // 0x3e1(0x1)
-	bool                                                         bUniqueInstancePerSourceObject;                    // 0x3e2(0x1)
-};
-
-
-// Size 0x30 (Full Size[0x98] - InheritedSize[0x68]
-class AbilityTask_WaitAbilityCommit: public AbilityTask
-{
-public:
-	multicastinlinedelegate                                      OnCommit;                                          // 0x68(0x10)
-};
-
-
-// Size 0x158 (Full Size[0x180] - InheritedSize[0x28]
-class GameplayCueManager: public DataAsset
-{
-public:
-	class GameplayCueSet*                                        GlobalCueSet;                                      // 0x28(0x8)
-	class ObjectLibrary*                                         GameplayCueNotifyActorObjectLibrary;               // 0x30(0x8)
-	class ObjectLibrary*                                         GameplayCueNotifyStaticObjectLibrary;              // 0x38(0x8)
-	struct StreamableManager                                     StreamableManager;                                 // 0x40(0xc0)
-	TArray<struct GameplayCuePendingExecute>                     PendingExecuteCues;                                // 0x160(0x10)
-	int                                                          GameplayCueSendContextCount;                       // 0x170(0x4)
-};
-
-
-// Size 0x40 (Full Size[0x70] - InheritedSize[0x30]
-class AbilitySystemTestAttributeSet: public AttributeSet
-{
-public:
-	float                                                        MaxHealth;                                         // 0x30(0x4)
-	float                                                        Health;                                            // 0x34(0x4)
-	float                                                        Mana;                                              // 0x38(0x4)
-	float                                                        MaxMana;                                           // 0x3c(0x4)
-	float                                                        Damage;                                            // 0x40(0x4)
-	float                                                        SpellDamage;                                       // 0x44(0x4)
-	float                                                        PhysicalDamage;                                    // 0x48(0x4)
-	float                                                        CritChance;                                        // 0x4c(0x4)
-	float                                                        CritMultiplier;                                    // 0x50(0x4)
-	float                                                        ArmorDamageReduction;                              // 0x54(0x4)
-	float                                                        DodgeChance;                                       // 0x58(0x4)
-	float                                                        LifeSteal;                                         // 0x5c(0x4)
-	float                                                        Strength;                                          // 0x60(0x4)
-	float                                                        StackingAttribute1;                                // 0x64(0x4)
-	float                                                        StackingAttribute2;                                // 0x68(0x4)
-	float                                                        NoStackAttribute;                                  // 0x6c(0x4)
-};
-
-
 // Size 0x20 (Full Size[0x88] - InheritedSize[0x68]
-class AbilityTask_WaitMovementModeChange: public AbilityTask
+class AbilityTask_WaitInputRelease: public AbilityTask
 {
 public:
-	multicastinlinedelegate                                      OnChange;                                          // 0x68(0x10)
-};
-
-
-// Size 0x28 (Full Size[0x90] - InheritedSize[0x68]
-class AbilityTask_WaitConfirmCancel: public AbilityTask
-{
-public:
-	multicastinlinedelegate                                      OnConfirm;                                         // 0x68(0x10)
-	multicastinlinedelegate                                      OnCancel;                                          // 0x78(0x10)
+	multicastinlinedelegate                                      OnRelease;                                         // 0x68(0x10)
 };
 
 
@@ -220,30 +69,6 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x78] - InheritedSize[0x68]
-class AbilityTask_WaitOverlap: public AbilityTask
-{
-public:
-	multicastinlinedelegate                                      OnOverlap;                                         // 0x68(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
-class AbilityTask_WaitGameplayTagAdded: public AbilityTask_WaitGameplayTag
-{
-public:
-	multicastinlinedelegate                                      Added;                                             // 0x88(0x10)
-};
-
-
-// Size 0x20 (Full Size[0x88] - InheritedSize[0x68]
-class AbilityTask_WaitInputPress: public AbilityTask
-{
-public:
-	multicastinlinedelegate                                      OnPress;                                           // 0x68(0x10)
-};
-
-
 // Size 0x20 (Full Size[0x3e8] - InheritedSize[0x3c8]
 class GameplayAbilityWorldReticle: public Actor
 {
@@ -258,12 +83,26 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0xa8] - InheritedSize[0x68]
-class AbilityTask_WaitTargetData: public AbilityTask
+// Size 0x40 (Full Size[0x70] - InheritedSize[0x30]
+class AbilitySystemTestAttributeSet: public AttributeSet
 {
 public:
-	multicastinlinedelegate                                      ValidData;                                         // 0x68(0x10)
-	multicastinlinedelegate                                      Cancelled;                                         // 0x78(0x10)
+	float                                                        MaxHealth;                                         // 0x30(0x4)
+	float                                                        Health;                                            // 0x34(0x4)
+	float                                                        Mana;                                              // 0x38(0x4)
+	float                                                        MaxMana;                                           // 0x3c(0x4)
+	float                                                        Damage;                                            // 0x40(0x4)
+	float                                                        SpellDamage;                                       // 0x44(0x4)
+	float                                                        PhysicalDamage;                                    // 0x48(0x4)
+	float                                                        CritChance;                                        // 0x4c(0x4)
+	float                                                        CritMultiplier;                                    // 0x50(0x4)
+	float                                                        ArmorDamageReduction;                              // 0x54(0x4)
+	float                                                        DodgeChance;                                       // 0x58(0x4)
+	float                                                        LifeSteal;                                         // 0x5c(0x4)
+	float                                                        Strength;                                          // 0x60(0x4)
+	float                                                        StackingAttribute1;                                // 0x64(0x4)
+	float                                                        StackingAttribute2;                                // 0x68(0x4)
+	float                                                        NoStackAttribute;                                  // 0x6c(0x4)
 };
 
 
@@ -276,54 +115,20 @@ public:
 };
 
 
+// Size 0x28 (Full Size[0x90] - InheritedSize[0x68]
+class AbilityTask_WaitConfirmCancel: public AbilityTask
+{
+public:
+	multicastinlinedelegate                                      OnConfirm;                                         // 0x68(0x10)
+	multicastinlinedelegate                                      OnCancel;                                          // 0x78(0x10)
+};
+
+
 // Size 0x20 (Full Size[0x88] - InheritedSize[0x68]
-class AbilityTask_WaitInputRelease: public AbilityTask
+class AbilityTask_WaitMovementModeChange: public AbilityTask
 {
 public:
-	multicastinlinedelegate                                      OnRelease;                                         // 0x68(0x10)
-};
-
-
-// Size 0x58 (Full Size[0xc0] - InheritedSize[0x68]
-class AbilityTask_PlayMontageAndWait: public AbilityTask
-{
-public:
-	multicastinlinedelegate                                      OnComplete;                                        // 0x68(0x10)
-	multicastinlinedelegate                                      OnInterrupted;                                     // 0x78(0x10)
-	multicastinlinedelegate                                      OnCancelled;                                       // 0x88(0x10)
-};
-
-
-// Size 0x118 (Full Size[0x4e0] - InheritedSize[0x3c8]
-class GameplayAbilityTargetActor: public Actor
-{
-public:
-	bool                                                         ShouldProduceTargetDataOnServer;                   // 0x3c8(0x1)
-	struct GameplayAbilityTargetingLocationInfo                  StartLocation;                                     // 0x3d0(0x70)
-	class PlayerController*                                      MasterPC;                                          // 0x470(0x8)
-	class GameplayAbility*                                       OwningAbility;                                     // 0x478(0x8)
-	bool                                                         bDestroyOnConfirmation;                            // 0x480(0x1)
-	class Actor*                                                 SourceActor;                                       // 0x488(0x8)
-	struct WorldReticleParameters                                ReticleParams;                                     // 0x490(0xc)
-	class UClass*                                                ReticleClass;                                      // 0x4a0(0x8)
-	struct GameplayTargetDataFilterHandle                        Filter;                                            // 0x4a8(0x18)
-	bool                                                         bDebug;                                            // 0x4c0(0x1)
-};
-
-
-// Size 0x18 (Full Size[0x148] - InheritedSize[0x130]
-class AbilityTask_WaitGameplayEffectApplied_Target: public AbilityTask_WaitGameplayEffectApplied
-{
-public:
-	multicastinlinedelegate                                      OnApplied;                                         // 0x130(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class GameplayAbilitySet: public DataAsset
-{
-public:
-	TArray<struct GameplayAbilityBindInfo>                       Abilities;                                         // 0x28(0x10)
+	multicastinlinedelegate                                      OnChange;                                          // 0x68(0x10)
 };
 
 
@@ -365,77 +170,41 @@ public:
 };
 
 
-// Size 0x30 (Full Size[0x98] - InheritedSize[0x68]
-class AbilityTask_WaitGameplayEffectRemoved: public AbilityTask
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class GameplayCueSet: public DataAsset
 {
 public:
-	multicastinlinedelegate                                      OnRemoved;                                         // 0x68(0x10)
-	multicastinlinedelegate                                      InvalidHandle;                                     // 0x78(0x10)
+	TArray<struct GameplayCueNotifyData>                         GameplayCueData;                                   // 0x28(0x10)
 };
 
 
-// Size 0xb70 (Full Size[0xc98] - InheritedSize[0x128]
-class AbilitySystemComponent: public GameplayTasksComponent
+// Size 0x20 (Full Size[0x3e8] - InheritedSize[0x3c8]
+class GameplayCueNotify_Actor: public Actor
 {
 public:
-	TArray<struct AttributeDefaults>                             DefaultStartingData;                               // 0x130(0x10)
-	TArray<class AttributeSet*>                                  SpawnedAttributes;                                 // 0x140(0x10)
-	struct PredictionKey                                         ReplicatedPredictionKey;                           // 0x150(0x18)
-	float                                                        OutgoingDuration;                                  // 0x1e0(0x4)
-	float                                                        IncomingDuration;                                  // 0x1e4(0x4)
-	struct GameplayAbilitySpecContainer                          ActivatableAbilities;                              // 0x1e8(0xc0)
-	TArray<class GameplayAbility*>                               AllReplicatedInstancedAbilities;                   // 0x2f8(0x10)
-	TArray<class GameplayAbilityTargetActor*>                    SpawnedTargetActors;                               // 0x4b8(0x10)
-	struct GameplayAbilityRepAnimMontage                         RepAnimMontageInfo;                                // 0x4c8(0x30)
-	struct GameplayAbilityLocalAnimMontage                       LocalAnimMontageInfo;                              // 0x4f8(0x30)
-	class Actor*                                                 OwnerActor;                                        // 0x5c8(0x8)
-	class Actor*                                                 AvatarActor;                                       // 0x5d0(0x8)
-	struct ActiveGameplayEffectsContainer                        ActiveGameplayEffects;                             // 0x5f0(0x368)
-	struct ActiveGameplayCueContainer                            ActiveGameplayCues;                                // 0x958(0xc0)
-	TArray<char>                                                 BlockedAbilityBindings;                            // 0xb48(0x10)
+	struct GameplayTag                                           GameplayCueTag;                                    // 0x3c8(0x8)
+	struct FName                                                 GameplayCueName;                                   // 0x3d0(0x8)
+	bool                                                         bAutoDestroyOnRemove;                              // 0x3d8(0x1)
+	float                                                        AutoDestroyDelay;                                  // 0x3dc(0x4)
+	bool                                                         IsOverride;                                        // 0x3e0(0x1)
+	bool                                                         bUniqueInstancePerInstigator;                      // 0x3e1(0x1)
+	bool                                                         bUniqueInstancePerSourceObject;                    // 0x3e2(0x1)
 };
 
 
-// Size 0x20 (Full Size[0x88] - InheritedSize[0x68]
-class AbilityTask_WaitConfirm: public AbilityTask
+// Size 0x18 (Full Size[0x80] - InheritedSize[0x68]
+class AbilityTask_NetworkSyncPoint: public AbilityTask
 {
 public:
-	multicastinlinedelegate                                      OnConfirm;                                         // 0x68(0x10)
+	multicastinlinedelegate                                      OnSync;                                            // 0x68(0x10)
 };
 
 
-// Size 0x28 (Full Size[0x90] - InheritedSize[0x68]
-class AbilityTask_VisualizeTargeting: public AbilityTask
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
+class AbilityTask_WaitGameplayTagRemoved: public AbilityTask_WaitGameplayTag
 {
 public:
-	multicastinlinedelegate                                      TimeElapsed;                                       // 0x68(0x10)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class GameplayEffectExtension: public Object
-{
-public:
-	TArray<struct GameplayAttribute>                             RelevantSourceAttributes;                          // 0x28(0x10)
-	TArray<struct GameplayAttribute>                             RelevantTargetAttributes;                          // 0x38(0x10)
-};
-
-
-// Size 0x30 (Full Size[0x98] - InheritedSize[0x68]
-class AbilityTask_WaitAbilityActivate: public AbilityTask
-{
-public:
-	multicastinlinedelegate                                      OnActivate;                                        // 0x68(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class GameplayCueNotify_Static: public Object
-{
-public:
-	struct GameplayTag                                           GameplayCueTag;                                    // 0x28(0x8)
-	struct FName                                                 GameplayCueName;                                   // 0x30(0x8)
-	bool                                                         IsOverride;                                        // 0x38(0x1)
+	multicastinlinedelegate                                      Removed;                                           // 0x88(0x10)
 };
 
 
@@ -445,22 +214,6 @@ class AbilityTask_WaitVelocityChange: public AbilityTask
 public:
 	multicastinlinedelegate                                      OnVelocityChage;                                   // 0x68(0x10)
 	class MovementComponent*                                     CachedMovementComponent;                           // 0x78(0x8)
-};
-
-
-// Size 0x40 (Full Size[0xa8] - InheritedSize[0x68]
-class AbilityTask_WaitAttributeChange: public AbilityTask
-{
-public:
-	multicastinlinedelegate                                      OnChange;                                          // 0x68(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x80] - InheritedSize[0x68]
-class AbilityTask_WaitDelay: public AbilityTask
-{
-public:
-	multicastinlinedelegate                                      OnFinish;                                          // 0x68(0x10)
 };
 
 
@@ -494,30 +247,250 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x50] - InheritedSize[0x40]
-class GameplayCueNotify_HitImpact: public GameplayCueNotify_Static
+// Size 0x20 (Full Size[0x88] - InheritedSize[0x68]
+class AbilityTask_WaitInputPress: public AbilityTask
 {
 public:
-	class SoundBase*                                             Sound;                                             // 0x40(0x8)
-	class ParticleSystem*                                        ParticleSystem;                                    // 0x48(0x8)
+	multicastinlinedelegate                                      OnPress;                                           // 0x68(0x10)
 };
 
 
-// Size 0x0 (Full Size[0x4e0] - InheritedSize[0x4e0]
-class GameplayAbilityTargetActor_Radius: public GameplayAbilityTargetActor
+// Size 0x28 (Full Size[0x90] - InheritedSize[0x68]
+class AbilityTask_VisualizeTargeting: public AbilityTask
 {
 public:
-	float                                                        Radius;                                            // 0x4d8(0x4)
+	multicastinlinedelegate                                      TimeElapsed;                                       // 0x68(0x10)
 };
 
 
-// Size 0x10 (Full Size[0x4f0] - InheritedSize[0x4e0]
-class GameplayAbilityTargetActor_Trace: public GameplayAbilityTargetActor
+// Size 0x30 (Full Size[0x98] - InheritedSize[0x68]
+class AbilityTask_WaitGameplayEffectRemoved: public AbilityTask
 {
 public:
-	float                                                        MaxRange;                                          // 0x4d8(0x4)
-	struct CollisionProfileName                                  TraceProfile;                                      // 0x4dc(0x8)
-	bool                                                         bTraceAffectsAimPitch;                             // 0x4e4(0x1)
+	multicastinlinedelegate                                      OnRemoved;                                         // 0x68(0x10)
+	multicastinlinedelegate                                      InvalidHandle;                                     // 0x78(0x10)
+};
+
+
+// Size 0x20 (Full Size[0x88] - InheritedSize[0x68]
+class AbilityTask_WaitConfirm: public AbilityTask
+{
+public:
+	multicastinlinedelegate                                      OnConfirm;                                         // 0x68(0x10)
+};
+
+
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class GameplayTagReponseTable: public DataAsset
+{
+public:
+	TArray<struct GameplayTagResponseTableEntry>                 Entries;                                           // 0x28(0x10)
+};
+
+
+// Size 0x20 (Full Size[0x488] - InheritedSize[0x468]
+class AbilitySystemTestPawn: public DefaultPawn
+{
+public:
+	class AbilitySystemComponent*                                AbilitySystemComponent;                            // 0x480(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x148] - InheritedSize[0x130]
+class AbilityTask_WaitGameplayEffectApplied_Self: public AbilityTask_WaitGameplayEffectApplied
+{
+public:
+	multicastinlinedelegate                                      OnApplied;                                         // 0x130(0x10)
+};
+
+
+// Size 0x118 (Full Size[0x4e0] - InheritedSize[0x3c8]
+class GameplayAbilityTargetActor: public Actor
+{
+public:
+	bool                                                         ShouldProduceTargetDataOnServer;                   // 0x3c8(0x1)
+	struct GameplayAbilityTargetingLocationInfo                  StartLocation;                                     // 0x3d0(0x70)
+	class PlayerController*                                      MasterPC;                                          // 0x470(0x8)
+	class GameplayAbility*                                       OwningAbility;                                     // 0x478(0x8)
+	bool                                                         bDestroyOnConfirmation;                            // 0x480(0x1)
+	class Actor*                                                 SourceActor;                                       // 0x488(0x8)
+	struct WorldReticleParameters                                ReticleParams;                                     // 0x490(0xc)
+	class UClass*                                                ReticleClass;                                      // 0x4a0(0x8)
+	struct GameplayTargetDataFilterHandle                        Filter;                                            // 0x4a8(0x18)
+	bool                                                         bDebug;                                            // 0x4c0(0x1)
+};
+
+
+// Size 0x18 (Full Size[0x80] - InheritedSize[0x68]
+class AbilityTask_WaitDelay: public AbilityTask
+{
+public:
+	multicastinlinedelegate                                      OnFinish;                                          // 0x68(0x10)
+};
+
+
+// Size 0xb70 (Full Size[0xc98] - InheritedSize[0x128]
+class AbilitySystemComponent: public GameplayTasksComponent
+{
+public:
+	TArray<struct AttributeDefaults>                             DefaultStartingData;                               // 0x130(0x10)
+	TArray<class AttributeSet*>                                  SpawnedAttributes;                                 // 0x140(0x10)
+	struct PredictionKey                                         ReplicatedPredictionKey;                           // 0x150(0x18)
+	float                                                        OutgoingDuration;                                  // 0x1e0(0x4)
+	float                                                        IncomingDuration;                                  // 0x1e4(0x4)
+	struct GameplayAbilitySpecContainer                          ActivatableAbilities;                              // 0x1e8(0xc0)
+	TArray<class GameplayAbility*>                               AllReplicatedInstancedAbilities;                   // 0x2f8(0x10)
+	TArray<class GameplayAbilityTargetActor*>                    SpawnedTargetActors;                               // 0x4b8(0x10)
+	struct GameplayAbilityRepAnimMontage                         RepAnimMontageInfo;                                // 0x4c8(0x30)
+	struct GameplayAbilityLocalAnimMontage                       LocalAnimMontageInfo;                              // 0x4f8(0x30)
+	class Actor*                                                 OwnerActor;                                        // 0x5c8(0x8)
+	class Actor*                                                 AvatarActor;                                       // 0x5d0(0x8)
+	struct ActiveGameplayEffectsContainer                        ActiveGameplayEffects;                             // 0x5f0(0x368)
+	struct ActiveGameplayCueContainer                            ActiveGameplayCues;                                // 0x958(0xc0)
+	TArray<char>                                                 BlockedAbilityBindings;                            // 0xb48(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x78] - InheritedSize[0x68]
+class AbilityTask_WaitOverlap: public AbilityTask
+{
+public:
+	multicastinlinedelegate                                      OnOverlap;                                         // 0x68(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class GameplayEffectCalculation: public Object
+{
+public:
+	TArray<struct GameplayEffectAttributeCaptureDefinition>      RelevantAttributesToCapture;                       // 0x28(0x10)
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class GameplayEffectUIData_TextOnly: public GameplayEffectUIData
+{
+public:
+	struct FText                                                 Description;                                       // 0x28(0x38)
+};
+
+
+// Size 0x18 (Full Size[0x148] - InheritedSize[0x130]
+class AbilityTask_WaitGameplayEffectApplied_Target: public AbilityTask_WaitGameplayEffectApplied
+{
+public:
+	multicastinlinedelegate                                      OnApplied;                                         // 0x130(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x98] - InheritedSize[0x68]
+class AbilityTask_SpawnActor: public AbilityTask
+{
+public:
+	multicastinlinedelegate                                      Success;                                           // 0x68(0x10)
+	multicastinlinedelegate                                      DidNotSpawn;                                       // 0x78(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
+class AbilityTask_WaitGameplayTagAdded: public AbilityTask_WaitGameplayTag
+{
+public:
+	multicastinlinedelegate                                      Added;                                             // 0x88(0x10)
+};
+
+
+// Size 0x18 (Full Size[0x80] - InheritedSize[0x68]
+class AbilityTask_WaitCancel: public AbilityTask
+{
+public:
+	multicastinlinedelegate                                      OnCancel;                                          // 0x68(0x10)
+};
+
+
+// Size 0x40 (Full Size[0xa8] - InheritedSize[0x68]
+class AbilityTask_WaitAttributeChange: public AbilityTask
+{
+public:
+	multicastinlinedelegate                                      OnChange;                                          // 0x68(0x10)
+};
+
+
+// Size 0x58 (Full Size[0xc0] - InheritedSize[0x68]
+class AbilityTask_PlayMontageAndWait: public AbilityTask
+{
+public:
+	multicastinlinedelegate                                      OnComplete;                                        // 0x68(0x10)
+	multicastinlinedelegate                                      OnInterrupted;                                     // 0x78(0x10)
+	multicastinlinedelegate                                      OnCancelled;                                       // 0x88(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class GameplayAbilitySet: public DataAsset
+{
+public:
+	TArray<struct GameplayAbilityBindInfo>                       Abilities;                                         // 0x28(0x10)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class GameplayEffectExtension: public Object
+{
+public:
+	TArray<struct GameplayAttribute>                             RelevantSourceAttributes;                          // 0x28(0x10)
+	TArray<struct GameplayAttribute>                             RelevantTargetAttributes;                          // 0x38(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x98] - InheritedSize[0x68]
+class AbilityTask_WaitAbilityActivate: public AbilityTask
+{
+public:
+	multicastinlinedelegate                                      OnActivate;                                        // 0x68(0x10)
+};
+
+
+// Size 0x48 (Full Size[0xb0] - InheritedSize[0x68]
+class AbilityTask_MoveToLocation: public AbilityTask
+{
+public:
+	multicastinlinedelegate                                      OnTargetLocationReached;                           // 0x68(0x10)
+	struct Vector                                                StartLocation;                                     // 0x7c(0xc)
+	struct Vector                                                TargetLocation;                                    // 0x88(0xc)
+	float                                                        DurationOfMovement;                                // 0x94(0x4)
+	class CurveFloat*                                            LerpCurve;                                         // 0xa0(0x8)
+	class CurveVector*                                           LerpCurveVector;                                   // 0xa8(0x8)
+};
+
+
+// Size 0x40 (Full Size[0xa8] - InheritedSize[0x68]
+class AbilityTask_WaitTargetData: public AbilityTask
+{
+public:
+	multicastinlinedelegate                                      ValidData;                                         // 0x68(0x10)
+	multicastinlinedelegate                                      Cancelled;                                         // 0x78(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x98] - InheritedSize[0x68]
+class AbilityTask_WaitAbilityCommit: public AbilityTask
+{
+public:
+	multicastinlinedelegate                                      OnCommit;                                          // 0x68(0x10)
+};
+
+
+// Size 0x158 (Full Size[0x180] - InheritedSize[0x28]
+class GameplayCueManager: public DataAsset
+{
+public:
+	class GameplayCueSet*                                        GlobalCueSet;                                      // 0x28(0x8)
+	class ObjectLibrary*                                         GameplayCueNotifyActorObjectLibrary;               // 0x30(0x8)
+	class ObjectLibrary*                                         GameplayCueNotifyStaticObjectLibrary;              // 0x38(0x8)
+	struct StreamableManager                                     StreamableManager;                                 // 0x40(0xc0)
+	TArray<struct GameplayCuePendingExecute>                     PendingExecuteCues;                                // 0x160(0x10)
+	int                                                          GameplayCueSendContextCount;                       // 0x170(0x4)
 };
 
 
@@ -530,6 +503,22 @@ public:
 };
 
 
+// Size 0x0 (Full Size[0x4e0] - InheritedSize[0x4e0]
+class GameplayAbilityTargetActor_Radius: public GameplayAbilityTargetActor
+{
+public:
+	float                                                        Radius;                                            // 0x4d8(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x50] - InheritedSize[0x48]
+class GameplayEffectExtension_LifestealTest: public GameplayEffectExtension
+{
+public:
+	class GameplayEffect*                                        HealthRestoreGameplayEffect;                       // 0x48(0x8)
+};
+
+
 // Size 0x38 (Full Size[0x480] - InheritedSize[0x448]
 class GameplayAbility_Montage: public GameplayAbility
 {
@@ -539,6 +528,16 @@ public:
 	struct FName                                                 SectionName;                                       // 0x454(0x8)
 	TArray<class Class*>                                         GameplayEffectClassesWhileAnimating;               // 0x460(0x10)
 	TArray<class GameplayEffect*>                                GameplayEffectsWhileAnimating;                     // 0x470(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x4f0] - InheritedSize[0x4e0]
+class GameplayAbilityTargetActor_Trace: public GameplayAbilityTargetActor
+{
+public:
+	float                                                        MaxRange;                                          // 0x4d8(0x4)
+	struct CollisionProfileName                                  TraceProfile;                                      // 0x4dc(0x8)
+	bool                                                         bTraceAffectsAimPitch;                             // 0x4e4(0x1)
 };
 
 
@@ -558,11 +557,12 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x50] - InheritedSize[0x48]
-class GameplayEffectExtension_LifestealTest: public GameplayEffectExtension
+// Size 0x10 (Full Size[0x50] - InheritedSize[0x40]
+class GameplayCueNotify_HitImpact: public GameplayCueNotify_Static
 {
 public:
-	class GameplayEffect*                                        HealthRestoreGameplayEffect;                       // 0x48(0x8)
+	class SoundBase*                                             Sound;                                             // 0x40(0x8)
+	class ParticleSystem*                                        ParticleSystem;                                    // 0x48(0x8)
 };
 
 

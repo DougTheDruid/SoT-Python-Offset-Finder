@@ -19,26 +19,6 @@
       }
     ]
   },
-  "FoliageInstancedStaticMeshComponent": {
-    "Super": "HierarchicalInstancedStaticMeshComponent",
-    "FullSize": "0x7d0",
-    "InheritedSize": "0x7b0",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "OnInstanceTakePointDamage",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x7a8"
-      },
-      {
-        "Name": "OnInstanceTakeRadialDamage",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x7b8"
-      }
-    ]
-  },
   "InteractiveFoliageActor": {
     "Super": "StaticMeshActor",
     "FullSize": "0x438",
@@ -131,20 +111,6 @@
       }
     ]
   },
-  "ProceduralFoliageVolume": {
-    "Super": "Volume",
-    "FullSize": "0x408",
-    "InheritedSize": "0x400",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ProceduralComponent",
-        "Type": "class ProceduralFoliageComponent*",
-        "Size": "0x8",
-        "Offset": "0x400"
-      }
-    ]
-  },
   "ProceduralFoliageComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xf0",
@@ -177,17 +143,23 @@
       }
     ]
   },
-  "ProceduralFoliageBlockingVolume": {
-    "Super": "Volume",
-    "FullSize": "0x408",
-    "InheritedSize": "0x400",
-    "ClassSize": "0x8",
+  "FoliageInstancedStaticMeshComponent": {
+    "Super": "HierarchicalInstancedStaticMeshComponent",
+    "FullSize": "0x7d0",
+    "InheritedSize": "0x7b0",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "ProceduralFoliageVolume",
-        "Type": "class ProceduralFoliageVolume*",
-        "Size": "0x8",
-        "Offset": "0x400"
+        "Name": "OnInstanceTakePointDamage",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x7a8"
+      },
+      {
+        "Name": "OnInstanceTakeRadialDamage",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x7b8"
       }
     ]
   },
@@ -226,6 +198,34 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x48"
+      }
+    ]
+  },
+  "ProceduralFoliageVolume": {
+    "Super": "Volume",
+    "FullSize": "0x408",
+    "InheritedSize": "0x400",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ProceduralComponent",
+        "Type": "class ProceduralFoliageComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  },
+  "ProceduralFoliageBlockingVolume": {
+    "Super": "Volume",
+    "FullSize": "0x408",
+    "InheritedSize": "0x400",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ProceduralFoliageVolume",
+        "Type": "class ProceduralFoliageVolume*",
+        "Size": "0x8",
+        "Offset": "0x400"
       }
     ]
   },

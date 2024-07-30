@@ -12,64 +12,11 @@ public:
 };
 
 
-// Size 0x20
-struct UserDefinedStructWithSerialisableValue
-{
-public:
-	class ScriptStruct*                                          InternalStruct;                                    // 0x0(0x8)
-};
-
-
-// Size 0x20
-struct SerialisedRpc
-{
-public:
-	class ScriptStruct*                                          ContentsType;                                      // 0x18(0x8)
-};
-
-
-// Size 0x10
-struct ServicesStampId
-{
-public:
-	struct FString                                               StampId;                                           // 0x0(0x10)
-};
-
-
 // Size 0x8
 struct NativeAndUserDefinedStructSelector
 {
 public:
 	class ScriptStruct*                                          Struct;                                            // 0x0(0x8)
-};
-
-
-// Size 0x3
-struct AdaptiveTriggerEffectMode_Feedback
-{
-public:
-	char                                                         Position;                                          // 0x0(0x1)
-	char                                                         Strength;                                          // 0x1(0x1)
-	bool                                                         UseTriggerEffectForThreshold;                      // 0x2(0x1)
-};
-
-
-// Size 0x28
-struct StringAssetClassPairFeatureOverride
-{
-public:
-	struct FName                                                 FeatureName;                                       // 0x0(0x8)
-	assetclass                                                   AssetClass;                                        // 0x8(0x20)
-};
-
-
-// Size 0x18
-struct EventTriggerForceFeedback
-{
-public:
-	class ForceFeedbackEffect*                                   ForceFeedbackEffect;                               // 0x0(0x8)
-	bool                                                         Looping;                                           // 0x8(0x1)
-	struct FName                                                 Tag;                                               // 0xc(0x8)
 };
 
 
@@ -95,11 +42,13 @@ public:
 };
 
 
-// Size 0x8
-struct InlineUserDefinedStructDetails
+// Size 0x3
+struct AdaptiveTriggerEffectMode_Feedback
 {
 public:
-	class ScriptStruct*                                          Struct;                                            // 0x0(0x8)
+	char                                                         Position;                                          // 0x0(0x1)
+	char                                                         Strength;                                          // 0x1(0x1)
+	bool                                                         UseTriggerEffectForThreshold;                      // 0x2(0x1)
 };
 
 
@@ -114,20 +63,46 @@ public:
 };
 
 
-// Size 0x18
-struct BoxedRpc
-{
-public:
-	class ScriptStruct*                                          Type;                                              // 0x8(0x8)
-};
-
-
 // Size 0x10
 struct EventCancelForceFeedback
 {
 public:
 	class ForceFeedbackEffect*                                   ForceFeedbackEffect;                               // 0x0(0x8)
 	struct FName                                                 Tag;                                               // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct EventTriggerForceFeedback
+{
+public:
+	class ForceFeedbackEffect*                                   ForceFeedbackEffect;                               // 0x0(0x8)
+	bool                                                         Looping;                                           // 0x8(0x1)
+	struct FName                                                 Tag;                                               // 0xc(0x8)
+};
+
+
+// Size 0x8
+struct InlineUserDefinedStructDetails
+{
+public:
+	class ScriptStruct*                                          Struct;                                            // 0x0(0x8)
+};
+
+
+// Size 0x20
+struct UserDefinedStructWithSerialisableValue
+{
+public:
+	class ScriptStruct*                                          InternalStruct;                                    // 0x0(0x8)
+};
+
+
+// Size 0x10
+struct ServicesStampId
+{
+public:
+	struct FString                                               StampId;                                           // 0x0(0x10)
 };
 
 
@@ -141,10 +116,27 @@ public:
 
 
 // Size 0x20
-struct ConfigurableStructureInstanceWrapper
+struct SerialisedRpc
 {
 public:
-	struct UserDefinedStructWithSerialisableValue                Value;                                             // 0x0(0x20)
+	class ScriptStruct*                                          ContentsType;                                      // 0x18(0x8)
+};
+
+
+// Size 0x18
+struct BoxedRpc
+{
+public:
+	class ScriptStruct*                                          Type;                                              // 0x8(0x8)
+};
+
+
+// Size 0x28
+struct StringAssetClassPairFeatureOverride
+{
+public:
+	struct FName                                                 FeatureName;                                       // 0x0(0x8)
+	assetclass                                                   AssetClass;                                        // 0x8(0x20)
 };
 
 
@@ -155,6 +147,14 @@ public:
 	struct FString                                               String;                                            // 0x0(0x10)
 	assetclass                                                   AssetClass;                                        // 0x10(0x20)
 	TArray<struct StringAssetClassPairFeatureOverride>           FeatureOverrides;                                  // 0x30(0x10)
+};
+
+
+// Size 0x20
+struct ConfigurableStructureInstanceWrapper
+{
+public:
+	struct UserDefinedStructWithSerialisableValue                Value;                                             // 0x0(0x20)
 };
 
 

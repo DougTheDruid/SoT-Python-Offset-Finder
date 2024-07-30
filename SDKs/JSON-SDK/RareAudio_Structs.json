@@ -1,21 +1,4 @@
 {
-  "WWiseEmitterCreationRTPCSetting": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "RTPCName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RTPCValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "WWiseEmitterCreationSwitchSetting": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -29,6 +12,23 @@
         "Name": "SwitchValue",
         "Type": "struct FName",
         "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "WWiseEmitterCreationRTPCSetting": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "RTPCName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RTPCValue",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x8"
       }
     ]
@@ -62,40 +62,6 @@
       }
     ]
   },
-  "StaticMeshComponentAudioAssociation": {
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "PlaybackData",
-        "Type": "struct StaticMeshWwiseEmitterData",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "EmitterPositionRelativeToComponentOrigin",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "StaticMeshAudioAssociation": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "PlaybackDataArray",
-        "Type": "TArray<struct StaticMeshWwiseEmitterData>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Meshes",
-        "Type": "TArray<class StaticMesh*>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "WwiseEmitterCreationParams": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -116,6 +82,40 @@
         "Type": "TArray<struct WWiseEmitterCreationSwitchSetting>",
         "Size": "0x10",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "StaticMeshAudioAssociation": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "PlaybackDataArray",
+        "Type": "TArray<struct StaticMeshWwiseEmitterData>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Meshes",
+        "Type": "TArray<class StaticMesh*>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "StaticMeshComponentAudioAssociation": {
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "PlaybackData",
+        "Type": "struct StaticMeshWwiseEmitterData",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "EmitterPositionRelativeToComponentOrigin",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x38"
       }
     ]
   },

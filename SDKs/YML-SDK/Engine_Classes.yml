@@ -2110,7 +2110,7 @@ BrushBuilder:
     Offset: '0x28'
     Size: '0x10'
     Type: struct FString
-  - Name: ToolTip
+  - Name: Tooltip
     Offset: '0x38'
     Size: '0x10'
     Type: struct FString
@@ -3273,12 +3273,12 @@ ChildActorComponent:
 ChildConnection:
   Attributes:
   - Name: Parent
-    Offset: '0x345d0'
+    Offset: '0x34628'
     Size: '0x8'
     Type: class NetConnection*
   ClassSize: '0x8'
-  FullSize: '0x345d8'
-  InheritedSize: '0x345d0'
+  FullSize: '0x34630'
+  InheritedSize: '0x34628'
   Super: NetConnection
 CloudStorageBase:
   Attributes:
@@ -12203,19 +12203,19 @@ NetConnection:
     Size: '0x8'
     Type: double
   - Name: ConsideredActorsList
-    Offset: '0x34470'
+    Offset: '0x344c8'
     Size: '0x10'
     Type: TArray<class Actor*>
   - Name: MaxDormantActorsCheckedFromRelevancy
-    Offset: '0x34490'
+    Offset: '0x344e8'
     Size: '0x4'
     Type: int
   - Name: DeferredCloseChannels
-    Offset: '0x344f0'
+    Offset: '0x34548'
     Size: '0x10'
     Type: TArray<class Channel*>
-  ClassSize: '0x34588'
-  FullSize: '0x345d0'
+  ClassSize: '0x345e0'
+  FullSize: '0x34628'
   InheritedSize: '0x48'
   Super: Player
 NetDriver:

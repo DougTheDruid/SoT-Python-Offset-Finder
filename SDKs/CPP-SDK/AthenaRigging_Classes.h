@@ -6,13 +6,11 @@
 #include "AthenaRigging_Structs.h"
 
 
-// Size 0xc0 (Full Size[0x690] - InheritedSize[0x5d0]
-class InstancedRopeComponent: public PrimitiveComponent
+// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
+class MaterialExpressionRopeParameter: public MaterialExpression
 {
 public:
-	class StaticMesh*                                            StaticMesh;                                        // 0x5c8(0x8)
-	TArray<struct InstancedRopeParams>                           Ropes;                                             // 0x5d0(0x10)
-	int                                                          ShadowLOD;                                         // 0x5e0(0x4)
+	char                                                         RopeParameterType;                                 // 0x70(0x1)
 };
 
 
@@ -23,6 +21,16 @@ public:
 	struct RopeStyleParams                                       RopeStyle;                                         // 0x2e0(0x20)
 	TArray<struct RiggingSystemLineGroup>                        LineGroups;                                        // 0x300(0x10)
 	class RiggingSystem*                                         Impl;                                              // 0x310(0x8)
+};
+
+
+// Size 0xc0 (Full Size[0x690] - InheritedSize[0x5d0]
+class InstancedRopeComponent: public PrimitiveComponent
+{
+public:
+	class StaticMesh*                                            StaticMesh;                                        // 0x5c8(0x8)
+	TArray<struct InstancedRopeParams>                           Ropes;                                             // 0x5d0(0x10)
+	int                                                          ShadowLOD;                                         // 0x5e0(0x4)
 };
 
 
@@ -38,14 +46,6 @@ public:
 	struct RiggingSystemPulleyData                               Pulleys;                                           // 0x410(0x60)
 	TArray<struct SocketId>                                      Sockets;                                           // 0x470(0x10)
 	TArray<float>                                                InitialMainRopeLengths;                            // 0x480(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
-class MaterialExpressionRopeParameter: public MaterialExpression
-{
-public:
-	char                                                         RopeParameterType;                                 // 0x70(0x1)
 };
 
 

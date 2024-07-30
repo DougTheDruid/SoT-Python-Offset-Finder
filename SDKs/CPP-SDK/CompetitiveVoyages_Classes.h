@@ -6,44 +6,11 @@
 #include "CompetitiveVoyages_Structs.h"
 
 
-// Size 0x88 (Full Size[0xb8] - InheritedSize[0x30]
-class CompetitiveVoyageVoteValidatorBase: public VoteValidatorInlineBase
-{
-public:
-	TArray<class Class*>                                         TargetCompanies;                                   // 0x30(0x10)
-	float                                                        EdgeOfWorldWarningWeightForFactionLock;            // 0x40(0x4)
-	class CompetitiveVoyageVoteConsumerBase*                     Consumer;                                          // 0xa0(0x8)
-	int                                                          CurrentCompany;                                    // 0xa8(0x4)
-	class Actor*                                                 OwningActor;                                       // 0xb0(0x8)
-};
-
-
-// Size 0x4e8 (Full Size[0x8b0] - InheritedSize[0x3c8]
-class CompetitiveVoyagesService: public Actor
-{
-public:
-	TArray<struct Guid>                                          MainVoyageCrews;                                   // 0x4d0(0x10)
-	class CompetitiveVoyagesServiceParams*                       ServiceParams;                                     // 0x4e0(0x8)
-	TArray<struct CompetitiveVoyageEventItem>                    VoyageEventItems;                                  // 0x788(0x10)
-};
-
-
 // Size 0x1f8 (Full Size[0x258] - InheritedSize[0x60]
 class TaleQuestCompetitiveVoyagesService: public TaleQuestService
 {
 public:
 	TArray<struct PhasedMarkerItem>                              PhasedMarkerItems;                                 // 0xe8(0x10)
-};
-
-
-// Size 0x288 (Full Size[0x650] - InheritedSize[0x3c8]
-class CompetitiveVoyageItemRelocationVolume: public Actor
-{
-public:
-	class SceneComponent*                                        SceneComponentRoot;                                // 0x3d0(0x8)
-	class BoxComponent*                                          TriggerVolume;                                     // 0x3d8(0x8)
-	TArray<struct Vector>                                        RelocationPositions;                               // 0x3e0(0x10)
-	bool                                                         RelocatesIntoWater;                                // 0x3f0(0x1)
 };
 
 
@@ -58,14 +25,6 @@ public:
 	struct ShipSpeedCurseModifyingValues                         ShipSpeedCurseModifyingValues;                     // 0x148(0xc)
 	float                                                        OptOutDelay;                                       // 0x154(0x4)
 	struct PlayerStat                                            SinkShipWithVoyageItemAchievementStat;             // 0x158(0x4)
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class SetCrewOptInNPCDataStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    Actor;                                             // 0x80(0x30)
 };
 
 
@@ -89,11 +48,44 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0xc0] - InheritedSize[0xb8]
-class StopCompetitiveVoyageVoteValidator: public CompetitiveVoyageVoteValidatorBase
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class SetCrewOptInNPCDataStepDesc: public TaleQuestStepDesc
 {
 public:
-	bool                                                         IsOptInNote;                                       // 0xb8(0x1)
+	struct QuestVariableActor                                    Actor;                                             // 0x80(0x30)
+};
+
+
+// Size 0x4e8 (Full Size[0x8b0] - InheritedSize[0x3c8]
+class CompetitiveVoyagesService: public Actor
+{
+public:
+	TArray<struct Guid>                                          MainVoyageCrews;                                   // 0x4d0(0x10)
+	class CompetitiveVoyagesServiceParams*                       ServiceParams;                                     // 0x4e0(0x8)
+	TArray<struct CompetitiveVoyageEventItem>                    VoyageEventItems;                                  // 0x788(0x10)
+};
+
+
+// Size 0x288 (Full Size[0x650] - InheritedSize[0x3c8]
+class CompetitiveVoyageItemRelocationVolume: public Actor
+{
+public:
+	class SceneComponent*                                        SceneComponentRoot;                                // 0x3d0(0x8)
+	class BoxComponent*                                          TriggerVolume;                                     // 0x3d8(0x8)
+	TArray<struct Vector>                                        RelocationPositions;                               // 0x3e0(0x10)
+	bool                                                         RelocatesIntoWater;                                // 0x3f0(0x1)
+};
+
+
+// Size 0x88 (Full Size[0xb8] - InheritedSize[0x30]
+class CompetitiveVoyageVoteValidatorBase: public VoteValidatorInlineBase
+{
+public:
+	TArray<class Class*>                                         TargetCompanies;                                   // 0x30(0x10)
+	float                                                        EdgeOfWorldWarningWeightForFactionLock;            // 0x40(0x4)
+	class CompetitiveVoyageVoteConsumerBase*                     Consumer;                                          // 0xa0(0x8)
+	int                                                          CurrentCompany;                                    // 0xa8(0x4)
+	class Actor*                                                 OwningActor;                                       // 0xb0(0x8)
 };
 
 
@@ -105,6 +97,14 @@ public:
 	struct FText                                                 CompetitiveVoyageCantCastOptOutVoteText;           // 0x100(0x38)
 	struct FText                                                 CompetitiveVoyageRemoveOptOutVoteText;             // 0x138(0x38)
 	struct FText                                                 CompetitiveVoyageCantRemoveOptOutVoteText;         // 0x170(0x38)
+};
+
+
+// Size 0x8 (Full Size[0xc0] - InheritedSize[0xb8]
+class StopCompetitiveVoyageVoteValidator: public CompetitiveVoyageVoteValidatorBase
+{
+public:
+	bool                                                         IsOptInNote;                                       // 0xb8(0x1)
 };
 
 

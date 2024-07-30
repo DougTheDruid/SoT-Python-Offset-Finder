@@ -1,4 +1,107 @@
 {
+  "AdventureOnDemandCrewReadyToResurfaceEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AdventureOnDemandVoyageSelectionVoyageProposal": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Prerequisites",
+        "Type": "TArray<class InteractionPrerequisiteBase*>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "StatForNewTag",
+        "Type": "struct PlayerStat",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "SailToQuestAvailability",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "DiveToQuestAvailability",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x25"
+      },
+      {
+        "Name": "VoyageType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x26"
+      },
+      {
+        "Name": "Proposal",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ExtraSpawnDistanceByIslandType": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "IslandType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ExtraSpawnDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "AdventureOnDemandDiveCrewAlreadyAtDestinationEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AdventureOnDemandTallTaleCheckpointProposal": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Prerequisites",
+        "Type": "TArray<class InteractionPrerequisiteBase*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Proposal",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "GameEventOnDemandCompanyStatData": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -16,7 +119,75 @@
       }
     ]
   },
-  "AdventureOnDemandDiveCrewAlreadyAtDestinationEvent": {
+  "QuestTableBakedQuestDiscoverTile": {
+    "ClassSize": "0x140",
+    "Attributes": [
+      {
+        "Name": "Proposal",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x138"
+      }
+    ]
+  },
+  "TradingCompanyPopUpBackgroundEntry": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "TradingCompany",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BackgroundImages",
+        "Type": "TArray<struct StringAssetReference>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "QuestTableBakedInfoDiscoverTile": {
+    "ClassSize": "0x148",
+    "Attributes": [
+      {
+        "Name": "InfoTipIdClientConfigName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x138"
+      }
+    ]
+  },
+  "AdventureOnDemandVoyageDiscoveryPageMysteryProposal": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "MysteryName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Prerequisites",
+        "Type": "TArray<class InteractionPrerequisiteBase*>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MysteryProposalTemplate",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "SelectTallTales",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "AdventureOnDemandCrewReachedSurfaceEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
@@ -24,6 +195,75 @@
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "VoyageHintPopupDescEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "QuestType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HintPopUpMessageDesc",
+        "Type": "class PopUpMessageDesc*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ContendedResourceGameEventOnDemandArrivalTunnelWorkerFailedTelemetryEvent": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "TunnelInstanceId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GameEventType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "InvalidReasons",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "NumLockedEvents",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "NumAvailableEvents",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "QuestTableCompanyTutorialPrerequisites": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Company",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Prerequisites",
+        "Type": "TArray<class InteractionPrerequisiteBase*>",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -109,126 +349,6 @@
       }
     ]
   },
-  "AdventureOnDemandCrewReadyToResurfaceEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ContendedResourceGameEventOnDemandArrivalTunnelWorkerFailedTelemetryEvent": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "TunnelInstanceId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "GameEventType",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "InvalidReasons",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "NumLockedEvents",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "NumAvailableEvents",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "QuestTableBakedQuestDiscoverTile": {
-    "ClassSize": "0x140",
-    "Attributes": [
-      {
-        "Name": "Proposal",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x138"
-      }
-    ]
-  },
-  "AdventureOnDemandTallTaleCheckpointProposal": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Prerequisites",
-        "Type": "TArray<class InteractionPrerequisiteBase*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Proposal",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "AdventureOnDemandVoyageDiscoveryPageMysteryProposal": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "MysteryName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Prerequisites",
-        "Type": "TArray<class InteractionPrerequisiteBase*>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "MysteryProposalTemplate",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "SelectTallTales",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "ExtraSpawnDistanceByIslandType": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "IslandType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ExtraSpawnDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "GameEventOnDemandBannerTextData": {
     "ClassSize": "0xf0",
     "Attributes": [
@@ -261,154 +381,6 @@
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0xb8"
-      }
-    ]
-  },
-  "QuestTableCompanyTutorialPrerequisites": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Company",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Prerequisites",
-        "Type": "TArray<class InteractionPrerequisiteBase*>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "VoyageHintPopupDescEntry": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "QuestType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "HintPopUpMessageDesc",
-        "Type": "class PopUpMessageDesc*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "QuestTableBakedInfoDiscoverTile": {
-    "ClassSize": "0x148",
-    "Attributes": [
-      {
-        "Name": "InfoTipIdClientConfigName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x138"
-      }
-    ]
-  },
-  "AdventureOnDemandVoyageSelectionVoyageProposal": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Prerequisites",
-        "Type": "TArray<class InteractionPrerequisiteBase*>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "StatForNewTag",
-        "Type": "struct PlayerStat",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "SailToQuestAvailability",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "DiveToQuestAvailability",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x25"
-      },
-      {
-        "Name": "VoyageType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x26"
-      },
-      {
-        "Name": "Proposal",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "TradingCompanyPopUpBackgroundEntry": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "TradingCompany",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BackgroundImages",
-        "Type": "TArray<struct StringAssetReference>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AdventureOnDemandCrewReachedSurfaceEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AdventureOnDemandTallTaleCheckpoint": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Proposals",
-        "Type": "TArray<struct AdventureOnDemandTallTaleCheckpointProposal>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ExtraSpawnDistanceFromIsland": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DistanceByIslandType",
-        "Type": "TArray<struct ExtraSpawnDistanceByIslandType>",
-        "Size": "0x10",
-        "Offset": "0x8"
       }
     ]
   },
@@ -456,6 +428,34 @@
         "Type": "TArray<struct AdventureOnDemandVoyageSelectionVoyageProposal>",
         "Size": "0x10",
         "Offset": "0x38"
+      }
+    ]
+  },
+  "ExtraSpawnDistanceFromIsland": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DistanceByIslandType",
+        "Type": "TArray<struct ExtraSpawnDistanceByIslandType>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AdventureOnDemandTallTaleCheckpoint": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Proposals",
+        "Type": "TArray<struct AdventureOnDemandTallTaleCheckpointProposal>",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },

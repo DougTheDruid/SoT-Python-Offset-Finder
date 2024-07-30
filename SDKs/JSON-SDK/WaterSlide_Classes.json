@@ -1,51 +1,63 @@
 {
-  "WaterSlideAudioParams": {
-    "Super": "DataAsset",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
+  "RidePlayerComponent": {
+    "Super": "DoubleIntentComponent",
+    "FullSize": "0x148",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "WaterSlideStart",
-        "Type": "class WwiseEvent*",
+        "Name": "PlayerWaterSlideVFXComponent",
+        "Type": "class ParticleSystemComponent*",
         "Size": "0x8",
-        "Offset": "0x28"
+        "Offset": "0xe8"
       },
       {
-        "Name": "WaterSlideEnd",
-        "Type": "class WwiseEvent*",
+        "Name": "PlayerWaterSlideVFX",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
-        "Offset": "0x30"
+        "Offset": "0xf0"
       },
       {
-        "Name": "WaterSlideIsEndOneShot",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "WaterSlideChangeForkOneShot",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "PlayerSpeedOnWaterSlideRTPC",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "PlayerSpeedThatMapsToOne",
+        "Name": "PlayerWaterSlideVFXSpawnLocationZOffset",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x50"
+        "Offset": "0xf8"
       },
       {
-        "Name": "PlayerSpeedThatMapsToZero",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x54"
+        "Name": "PlayerZiplineWindVFXComponent",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "PlayerZiplineTrailVFXComponent",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "PlayerZiplineTrailVFX",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "PlayerZiplineWindVFX",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "PlayerZiplineTrailVFXSpawnLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x120"
+      },
+      {
+        "Name": "CurrentRide",
+        "Type": "class Ride*",
+        "Size": "0x8",
+        "Offset": "0x140"
       }
     ]
   },
@@ -131,68 +143,6 @@
       }
     ]
   },
-  "RidePlayerComponent": {
-    "Super": "DoubleIntentComponent",
-    "FullSize": "0x148",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "PlayerWaterSlideVFXComponent",
-        "Type": "class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "PlayerWaterSlideVFX",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "PlayerWaterSlideVFXSpawnLocationZOffset",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "PlayerZiplineWindVFXComponent",
-        "Type": "class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "PlayerZiplineTrailVFXComponent",
-        "Type": "class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x108"
-      },
-      {
-        "Name": "PlayerZiplineTrailVFX",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "PlayerZiplineWindVFX",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0x118"
-      },
-      {
-        "Name": "PlayerZiplineTrailVFXSpawnLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x120"
-      },
-      {
-        "Name": "CurrentRide",
-        "Type": "class Ride*",
-        "Size": "0x8",
-        "Offset": "0x140"
-      }
-    ]
-  },
   "Ride": {
     "Super": "Actor",
     "FullSize": "0x3e0",
@@ -210,6 +160,56 @@
         "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3d8"
+      }
+    ]
+  },
+  "WaterSlideAudioParams": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "WaterSlideStart",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "WaterSlideEnd",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "WaterSlideIsEndOneShot",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "WaterSlideChangeForkOneShot",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "PlayerSpeedOnWaterSlideRTPC",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "PlayerSpeedThatMapsToOne",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "PlayerSpeedThatMapsToZero",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x54"
       }
     ]
   },

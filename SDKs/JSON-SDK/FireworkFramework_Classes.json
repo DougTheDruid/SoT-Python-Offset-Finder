@@ -1,4 +1,260 @@
 {
+  "ProjectileAnimationComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x290",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x1c8",
+    "Attributes": [
+      {
+        "Name": "ProjectileAnimationCurves",
+        "Type": "TArray<struct WeightedProjectileMeshAnimationData>",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "MeshComponent",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "AnimationOffsetCurve",
+        "Type": "struct RuntimeVectorCurve",
+        "Size": "0x170",
+        "Offset": "0xe0"
+      }
+    ]
+  },
+  "FireworkExplosion": {
+    "Super": "Actor",
+    "FullSize": "0x4a0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Name": "GeneratedFireworkData",
+        "Type": "struct GeneratedFireworkData",
+        "Size": "0x58",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "RootSceneComponent",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "FireworkAmbientLightComponent",
+        "Type": "class FireworkAmbientLightComponent*",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "SpawnedExplosionParticles",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "AudioEmitter",
+        "Type": "struct WwiseEmitter",
+        "Size": "0x20",
+        "Offset": "0x440"
+      }
+    ]
+  },
+  "FireworksSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x50",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "FlashbangRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "FlashbangFlashTimer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "FlashbangFadeOutTimer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "FlashbangCooldown",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "LoadedFuseTimer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "FireworksSettingsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "LoadedFuseTimer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "FuseSoundWisePool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "FuseActivateSoundPlayEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "FuseSoundPlayEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "FuseSoundStopEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "FuseParticleSystem",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "FuseMeshAssetReference",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "FireworkStatsComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x198",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "FlareRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "NumberOfFireworksFiredAtNight",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "FireworksFiredAtNightRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xd4"
+      },
+      {
+        "Name": "FiredFireworksAtNightTimer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xd8"
+      }
+    ]
+  },
+  "FireworkItemInfo": {
+    "Super": "ItemInfo",
+    "FullSize": "0x550",
+    "InheritedSize": "0x530",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "LoadableProjectileComponent",
+        "Type": "class LoadableFireworkComponent*",
+        "Size": "0x8",
+        "Offset": "0x530"
+      },
+      {
+        "Name": "FireworkDataAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x538"
+      },
+      {
+        "Name": "GeneratedDataRNGSeed",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x548"
+      }
+    ]
+  },
+  "FireworkFeedbackDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MaxExplosionRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "CameraShake",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "CameraShakeInnerRadiusMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "ExplosionRumble",
+        "Type": "class ForceFeedbackEffect*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "FireworkService": {
+    "Super": "Actor",
+    "FullSize": "0x460",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "NumberOfCachedFlares",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x440"
+      }
+    ]
+  },
   "FireworkDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x150",
@@ -85,108 +341,6 @@
       }
     ]
   },
-  "FireworksSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x50",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "FlashbangRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "FlashbangFlashTimer",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "FlashbangFadeOutTimer",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "FlashbangCooldown",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "LoadedFuseTimer",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "FireworkService": {
-    "Super": "Actor",
-    "FullSize": "0x460",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "NumberOfCachedFlares",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x440"
-      }
-    ]
-  },
-  "FireworkProjectile": {
-    "Super": "LaunchableProjectile",
-    "FullSize": "0x718",
-    "InheritedSize": "0x610",
-    "ClassSize": "0x108",
-    "Attributes": [
-      {
-        "Name": "CollisionComponent",
-        "Type": "class SphereComponent*",
-        "Size": "0x8",
-        "Offset": "0x620"
-      },
-      {
-        "Name": "MeshComponent",
-        "Type": "class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x628"
-      },
-      {
-        "Name": "ExplosionComponent",
-        "Type": "class ExplosionComponent*",
-        "Size": "0x8",
-        "Offset": "0x630"
-      },
-      {
-        "Name": "FireworkStatsComponent",
-        "Type": "class FireworkStatsComponent*",
-        "Size": "0x8",
-        "Offset": "0x638"
-      },
-      {
-        "Name": "MeshDirectionComponent",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x640"
-      },
-      {
-        "Name": "AnimationComponent",
-        "Type": "class ProjectileAnimationComponent*",
-        "Size": "0x8",
-        "Offset": "0x648"
-      },
-      {
-        "Name": "GeneratedFireworkData",
-        "Type": "struct GeneratedFireworkData",
-        "Size": "0x58",
-        "Offset": "0x650"
-      }
-    ]
-  },
   "LoadableFireworkComponent": {
     "Super": "LoadableProjectileComponent",
     "FullSize": "0x140",
@@ -231,207 +385,53 @@
       }
     ]
   },
-  "FireworksSettingsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
+  "FireworkProjectile": {
+    "Super": "LaunchableProjectile",
+    "FullSize": "0x798",
+    "InheritedSize": "0x690",
+    "ClassSize": "0x108",
     "Attributes": [
       {
-        "Name": "LoadedFuseTimer",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "FuseSoundWisePool",
-        "Type": "class WwiseObjectPoolWrapper*",
+        "Name": "CollisionComponent",
+        "Type": "class SphereComponent*",
         "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "FuseActivateSoundPlayEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "FuseSoundPlayEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "FuseSoundStopEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "FuseParticleSystem",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "FuseMeshAssetReference",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x58"
-      }
-    ]
-  },
-  "ProjectileAnimationComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x290",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x1c8",
-    "Attributes": [
-      {
-        "Name": "ProjectileAnimationCurves",
-        "Type": "TArray<struct WeightedProjectileMeshAnimationData>",
-        "Size": "0x10",
-        "Offset": "0xc8"
+        "Offset": "0x6a0"
       },
       {
         "Name": "MeshComponent",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0xd8"
+        "Offset": "0x6a8"
       },
       {
-        "Name": "AnimationOffsetCurve",
-        "Type": "struct RuntimeVectorCurve",
-        "Size": "0x170",
-        "Offset": "0xe0"
-      }
-    ]
-  },
-  "FireworkExplosion": {
-    "Super": "Actor",
-    "FullSize": "0x4a0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0xd8",
-    "Attributes": [
+        "Name": "ExplosionComponent",
+        "Type": "class ExplosionComponent*",
+        "Size": "0x8",
+        "Offset": "0x6b0"
+      },
+      {
+        "Name": "FireworkStatsComponent",
+        "Type": "class FireworkStatsComponent*",
+        "Size": "0x8",
+        "Offset": "0x6b8"
+      },
+      {
+        "Name": "MeshDirectionComponent",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x6c0"
+      },
+      {
+        "Name": "AnimationComponent",
+        "Type": "class ProjectileAnimationComponent*",
+        "Size": "0x8",
+        "Offset": "0x6c8"
+      },
       {
         "Name": "GeneratedFireworkData",
         "Type": "struct GeneratedFireworkData",
         "Size": "0x58",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "RootSceneComponent",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "FireworkAmbientLightComponent",
-        "Type": "class FireworkAmbientLightComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "SpawnedExplosionParticles",
-        "Type": "class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "AudioEmitter",
-        "Type": "struct WwiseEmitter",
-        "Size": "0x20",
-        "Offset": "0x440"
-      }
-    ]
-  },
-  "FireworkFeedbackDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "MaxExplosionRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "CameraShake",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "CameraShakeInnerRadiusMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "ExplosionRumble",
-        "Type": "class ForceFeedbackEffect*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "FireworkItemInfo": {
-    "Super": "ItemInfo",
-    "FullSize": "0x550",
-    "InheritedSize": "0x530",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "LoadableProjectileComponent",
-        "Type": "class LoadableFireworkComponent*",
-        "Size": "0x8",
-        "Offset": "0x530"
-      },
-      {
-        "Name": "FireworkDataAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x538"
-      },
-      {
-        "Name": "GeneratedDataRNGSeed",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x548"
-      }
-    ]
-  },
-  "FireworkStatsComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x198",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0xd0",
-    "Attributes": [
-      {
-        "Name": "FlareRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "NumberOfFireworksFiredAtNight",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "FireworksFiredAtNightRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xd4"
-      },
-      {
-        "Name": "FiredFireworksAtNightTimer",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xd8"
+        "Offset": "0x6d0"
       }
     ]
   },

@@ -6,15 +6,6 @@
 #include "WorldLocationPopUpFramework_Structs.h"
 
 
-// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
-class TaleAllowWorldLocationPopUpStepDesc: public TaleQuestStepDesc
-{
-public:
-	float                                                        MaxDistanceFromWorldLocationPopUp;                 // 0x80(0x4)
-	struct QuestVariableActor                                    NearbyActor;                                       // 0x88(0x30)
-};
-
-
 // Size 0x30 (Full Size[0x90] - InheritedSize[0x60]
 class TaleWorldLocationPopUpService: public TaleQuestService
 {
@@ -24,12 +15,19 @@ public:
 
 
 // Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
-class TalePreventWorldLocationPopUpStepDesc: public TaleQuestStepDesc
+class TaleAllowWorldLocationPopUpStepDesc: public TaleQuestStepDesc
 {
 public:
-	bool                                                         DisableEntireIsland;                               // 0x80(0x1)
-	float                                                        MaxDistanceFromWorldLocationPopUp;                 // 0x84(0x4)
-	struct QuestVariableVector                                   NearbyLocation;                                    // 0x88(0x30)
+	float                                                        MaxDistanceFromWorldLocationPopUp;                 // 0x80(0x4)
+	struct QuestVariableActor                                    NearbyActor;                                       // 0x88(0x30)
+};
+
+
+// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
+class WorldLocationVisitorComponent: public ActorComponent
+{
+public:
+	float                                                        RevisitCooldown;                                   // 0xd0(0x4)
 };
 
 
@@ -44,11 +42,13 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
-class WorldLocationVisitorComponent: public ActorComponent
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
+class TalePreventWorldLocationPopUpStepDesc: public TaleQuestStepDesc
 {
 public:
-	float                                                        RevisitCooldown;                                   // 0xd0(0x4)
+	bool                                                         DisableEntireIsland;                               // 0x80(0x1)
+	float                                                        MaxDistanceFromWorldLocationPopUp;                 // 0x84(0x4)
+	struct QuestVariableVector                                   NearbyLocation;                                    // 0x88(0x30)
 };
 
 

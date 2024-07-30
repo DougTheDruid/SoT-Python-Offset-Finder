@@ -6,6 +6,22 @@
 #include "PirateGenerator_Structs.h"
 
 
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class PirateGeneratorMaterials: public Object
+{
+public:
+	TArray<class MaterialInterface*>                             Materials;                                         // 0x28(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x150] - InheritedSize[0x140]
+class ColorTexture: public Texture
+{
+public:
+	struct LinearColor                                           Color;                                             // 0x140(0x10)
+};
+
+
 // Size 0x100 (Full Size[0x138] - InheritedSize[0x38]
 class PirateGeneratorSettings: public DeveloperSettings
 {
@@ -30,39 +46,6 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class MaterialReferencesDataAsset: public DataAsset
-{
-public:
-	TArray<struct MaterialReferencesEntry>                       MaterialReferences;                                // 0x28(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class AnimationSwitchDataAsset: public DataAsset
-{
-public:
-	float                                                        Threshold;                                         // 0x28(0x4)
-	TArray<struct AnimationSwitchEntry>                          Entries;                                           // 0x30(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class PirateGeneratorMaterials: public Object
-{
-public:
-	TArray<class MaterialInterface*>                             Materials;                                         // 0x28(0x10)
-};
-
-
-// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
-class WardrobeDataAsset: public DataAsset
-{
-public:
-	TArray<struct MeshPatchEntry>                                AssetMap;                                          // 0xc8(0x10)
-};
-
-
 // Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
 class WardrobeOutfitDataAsset: public DataAsset
 {
@@ -82,6 +65,31 @@ public:
 };
 
 
+// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
+class WardrobeDataAsset: public DataAsset
+{
+public:
+	TArray<struct MeshPatchEntry>                                AssetMap;                                          // 0xc8(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class MaterialReferencesDataAsset: public DataAsset
+{
+public:
+	TArray<struct MaterialReferencesEntry>                       MaterialReferences;                                // 0x28(0x10)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class AnimationSwitchDataAsset: public DataAsset
+{
+public:
+	float                                                        Threshold;                                         // 0x28(0x4)
+	TArray<struct AnimationSwitchEntry>                          Entries;                                           // 0x30(0x10)
+};
+
+
 // Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
 class CharacterMeshBakeSpecification: public Object
 {
@@ -98,28 +106,20 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x150] - InheritedSize[0x140]
-class ColorTexture: public Texture
-{
-public:
-	struct LinearColor                                           Color;                                             // 0x140(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x238] - InheritedSize[0x228]
-class TextureSwitchByEthnicity: public TextureSwitch
-{
-public:
-	TArray<struct TextureSwitchEthnicityEntry>                   Entries;                                           // 0x228(0x10)
-};
-
-
 // Size 0x18 (Full Size[0x240] - InheritedSize[0x228]
 class ColorTextureSwitchBySeed: public TextureSwitch
 {
 public:
 	struct FName                                                 HashSource;                                        // 0x228(0x8)
 	TArray<struct ColorTextureSwitchSeedEntry>                   Entries;                                           // 0x230(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x238] - InheritedSize[0x228]
+class TextureSwitchByGender: public TextureSwitch
+{
+public:
+	TArray<struct TextureSwitchGenderEntry>                      Entries;                                           // 0x228(0x10)
 };
 
 
@@ -153,10 +153,10 @@ public:
 
 
 // Size 0x10 (Full Size[0x238] - InheritedSize[0x228]
-class TextureSwitchByGender: public TextureSwitch
+class TextureSwitchByEthnicity: public TextureSwitch
 {
 public:
-	TArray<struct TextureSwitchGenderEntry>                      Entries;                                           // 0x228(0x10)
+	TArray<struct TextureSwitchEthnicityEntry>                   Entries;                                           // 0x228(0x10)
 };
 
 

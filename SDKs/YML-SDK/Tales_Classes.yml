@@ -1918,6 +1918,76 @@ TaleQuestLockGhostShipDoorService:
   FullSize: '0x68'
   InheritedSize: '0x60'
   Super: TaleQuestService
+TaleQuestMacroAsset:
+  Attributes:
+  - Name: MacroRoot
+    Offset: '0x28'
+    Size: '0x8'
+    Type: class TaleQuestStepDesc*
+  - Name: MacroTooltip
+    Offset: '0x30'
+    Size: '0x38'
+    Type: struct FText
+  - Name: MacroParameters
+    Offset: '0x68'
+    Size: '0x8'
+    Type: class TaleStruct*
+  ClassSize: '0x48'
+  FullSize: '0x70'
+  InheritedSize: '0x28'
+  Super: DataAsset
+TaleQuestMacroRootStep:
+  Attributes:
+  - Name: Params
+    Offset: '0xa0'
+    Size: '0x10'
+    Type: struct TaleStructInstance
+  - Name: ToStep
+    Offset: '0xb0'
+    Size: '0x10'
+    Type: interface
+  ClassSize: '0x60'
+  FullSize: '0xf8'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestMacroRootStepDesc:
+  Attributes:
+  - Name: BodyDesc
+    Offset: '0x80'
+    Size: '0x8'
+    Type: class TaleQuestStepDesc*
+  ClassSize: '0x8'
+  FullSize: '0x88'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleQuestMacroStep:
+  Attributes:
+  - Name: MacroInstance
+    Offset: '0x98'
+    Size: '0x10'
+    Type: interface
+  ClassSize: '0x10'
+  FullSize: '0xa8'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestMacroStepDesc:
+  Attributes:
+  - Name: MacroAsset
+    Offset: '0x80'
+    Size: '0x8'
+    Type: class TaleQuestMacroAsset*
+  - Name: ParameterMapping
+    Offset: '0x88'
+    Size: '0x50'
+    Type: map
+  - Name: ParameterInstance
+    Offset: '0xd8'
+    Size: '0x10'
+    Type: struct TaleStructInstance
+  ClassSize: '0x68'
+  FullSize: '0xe8'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
 TaleQuestMerchantContract:
   Attributes:
   - Name: OnCompleted

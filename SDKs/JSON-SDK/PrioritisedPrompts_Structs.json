@@ -27,17 +27,6 @@
       }
     ]
   },
-  "PrioritisedPromptHandle": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Id",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "PrioritisedPrompt": {
     "ClassSize": "0x60",
     "Attributes": [
@@ -76,6 +65,17 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x59"
+      }
+    ]
+  },
+  "PrioritisedPromptHandle": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },

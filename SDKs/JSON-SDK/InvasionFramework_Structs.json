@@ -1,4 +1,55 @@
 {
+  "InvasionCrewData": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InvasionStatus",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "FactionIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "ReadyForInvasion",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "TaleDisplayedInvasionBanner": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MatchesTriggerStartMatchRpc": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "MatchID",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "InvasionServiceMatchmakingCrewInfo": {
     "ClassSize": "0x14",
     "Attributes": [
@@ -16,13 +67,30 @@
       }
     ]
   },
-  "TaleDisplayedInvasionBanner": {
-    "ClassSize": "0x8",
+  "ReplicatedInvasionCrewMusicState": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Player",
-        "Type": "class Actor*",
-        "Size": "0x8",
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CurrentTimeStampedMusicState",
+        "Type": "struct TimeStampedShipDiveMusicState",
+        "Size": "0x18",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CrewMatchmakingCancelledDueToInvasion": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
         "Offset": "0x0"
       }
     ]
@@ -62,32 +130,37 @@
       }
     ]
   },
-  "InvasionCrewData": {
-    "ClassSize": "0x20",
+  "MatchesTriggerUpdateMatchRpc": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "CrewId",
-        "Type": "struct Guid",
+        "Name": "MatchID",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "PlayerData": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "PlayerId",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "InvasionStatus",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "PlayerName",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x10"
       },
       {
-        "Name": "FactionIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "ReadyForInvasion",
-        "Type": "bool",
+        "Name": "PlatformId",
+        "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x1c"
+        "Offset": "0x20"
       }
     ]
   },
@@ -113,6 +186,40 @@
       }
     ]
   },
+  "MatchesTriggerEndMatchRpc": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "MatchID",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "WinningTeamId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "LosingTeamId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "MatchesCreateMatchSuccessfulRpc": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "MatchID",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "CrewStoppedInvasion": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -124,48 +231,96 @@
       }
     ]
   },
-  "ReplicatedInvasionCrewMusicState": {
-    "ClassSize": "0x28",
+  "MatchesTriggerPlayerJoinRpc": {
+    "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "CrewId",
-        "Type": "struct Guid",
+        "Name": "MatchID",
+        "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x0"
+        "Offset": "0x18"
       },
       {
-        "Name": "CurrentTimeStampedMusicState",
-        "Type": "struct TimeStampedShipDiveMusicState",
-        "Size": "0x18",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "CrewMatchmakingCancelledDueToInvasion": {
-    "ClassSize": "0x10",
-    "Attributes": [
+        "Name": "PlayerData",
+        "Type": "struct PlayerData",
+        "Size": "0x28",
+        "Offset": "0x28"
+      },
       {
         "Name": "CrewId",
         "Type": "struct Guid",
         "Size": "0x10",
-        "Offset": "0x0"
+        "Offset": "0x50"
       }
     ]
   },
-  "InvasionParticipatingCrewData": {
+  "MatchesTriggerCreateMatchRpc": {
     "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "CrewIds",
-        "Type": "TArray<struct InvasionCrewData>",
+        "Name": "ActivityId",
+        "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x0"
+        "Offset": "0x18"
       },
       {
-        "Name": "Participants",
-        "Type": "TArray<class CrewVoyageParticipant*>",
+        "Name": "InactivityExpirationTimeSeconds",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "PlayersTeamA",
+        "Type": "TArray<struct PlayerData>",
         "Size": "0x10",
-        "Offset": "0x10"
+        "Offset": "0x30"
+      },
+      {
+        "Name": "PlayersTeamB",
+        "Type": "TArray<struct PlayerData>",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "TypeTeamA",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "TypeTeamB",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x51"
+      },
+      {
+        "Name": "IdTeamA",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "IdTeamB",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "MatchesTriggerPlayerLeaveRpc": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "MatchID",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "PlayerData",
+        "Type": "struct PlayerData",
+        "Size": "0x28",
+        "Offset": "0x28"
       }
     ]
   },
@@ -201,6 +356,23 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x48"
+      }
+    ]
+  },
+  "InvasionParticipatingCrewData": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "CrewIds",
+        "Type": "TArray<struct InvasionCrewData>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Participants",
+        "Type": "TArray<class CrewVoyageParticipant*>",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

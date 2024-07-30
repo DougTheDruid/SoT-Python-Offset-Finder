@@ -1,21 +1,4 @@
 {
-  "EmissaryLevelIncreaseOverrideData": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "EnableEmissaryLevelIncreaseOverride",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CustomEmissaryLevelIncrease",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "PerComanyItemQualityEntry": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -30,6 +13,23 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "EmissaryLevelIncreaseOverrideData": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "EnableEmissaryLevelIncreaseOverride",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CustomEmissaryLevelIncrease",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },
